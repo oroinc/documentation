@@ -29,5 +29,5 @@ References
    how-to-change-textarea-field-to-wysiwyg-field
    wysiwyg-field-validation
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

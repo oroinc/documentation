@@ -48,7 +48,6 @@ To create a new customer:
    .. image:: /user/img/customers/customers/unable_to_delete_customers.png
       :alt: A note appears when deleting a customer warning that no entities can be deleted
 
-
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

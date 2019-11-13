@@ -722,7 +722,7 @@ display a :ref:`form to create and update vehicles <book-crud-create-update>`. R
 section for an explanation of the different blocks.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

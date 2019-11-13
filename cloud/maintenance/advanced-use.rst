@@ -365,6 +365,6 @@ You can use separate synonym lists for each index, or use '*' as index name in o
 
 .. note:: Please keep in mind that synonyms configuration will be not applied immediately. All changes made in orocloud.yaml require up to 40 minutes to apply. More details for synonyms usage may be found in |official Elasticsearch documentation|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-cloud.rst
    :start-after: begin
 

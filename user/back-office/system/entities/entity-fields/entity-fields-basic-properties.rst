@@ -56,6 +56,6 @@ The first step of creating a new entity field is providing information on its ba
 
 4. Once you have provided the basic entity properties, click **Continue** to move on to the next step and specify the :ref:`advanced entity properties <admin-guide-create-entity-fields-advanced>`.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

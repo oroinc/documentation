@@ -1269,5 +1269,5 @@ a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
               - { name: oro.api.processor, action: customize_form_data, event: post_submit, class: Acme\DemoBundle\Entity\SomeEntity }
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

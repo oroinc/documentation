@@ -28,7 +28,7 @@ Once all the necessary actions are performed, you need to create a tax rule for 
 4. Describe this tax rule if necessary in the **Description** field.
 5. Click **Save and Close**.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
 .. stop

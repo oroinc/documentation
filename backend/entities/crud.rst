@@ -319,5 +319,5 @@ If the default configuration is not valid for your particular case, create your 
 .. note:: When creating your own operation, make sure to exclude the entity from the default operation. See more details on |available operations and their configuration| in the related article.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

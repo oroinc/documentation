@@ -82,6 +82,6 @@ Oro applications are scalable.
     get more information.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

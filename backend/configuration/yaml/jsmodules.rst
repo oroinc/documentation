@@ -156,6 +156,6 @@ configures the module must be specified. It can consist of the following keys:
         oroui/js/app/services/app-ready-load-modules:
             expose: loadModules
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

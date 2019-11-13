@@ -123,5 +123,5 @@ To subscribe a **frontend client** to and unsubscribe it from the topic, use the
        });
     </script>
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

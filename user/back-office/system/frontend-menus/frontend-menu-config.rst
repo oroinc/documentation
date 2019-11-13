@@ -23,6 +23,6 @@ In the Oro applications, you can customize the storefront menus look, and the el
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

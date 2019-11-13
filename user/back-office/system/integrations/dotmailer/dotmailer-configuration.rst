@@ -90,5 +90,5 @@ Related Articles
 - :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

@@ -135,5 +135,5 @@ This can be achieved in two ways:
                               1002: 'SET @@SESSION.optimizer_switch="block_nested_loop=off";'
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

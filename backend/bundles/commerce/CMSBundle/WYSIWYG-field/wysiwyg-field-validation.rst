@@ -87,5 +87,5 @@ After this, you can use the ``content_restrictions_additional`` or  ``content_re
 The ``lax_restrictions`` key in configuration is used to limit the usage of the HTML Purifier mode. It specifies the user role, entity, and entity field to which your HTML Purifier mode will be applied.
 For example, the above mentioned user with the ``ROLE_ADMINISTRATOR`` role can use ``example.com`` for iframe domain when editing the ``Landing Page`` ``content`` field. At the same time, this user is not allowed to use this iframe domain in other WYSIWYG fields.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

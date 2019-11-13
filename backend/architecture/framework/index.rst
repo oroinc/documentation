@@ -97,5 +97,5 @@ Related Cookbook Articles
 
 .. Currently we describe only Symfony, PlatformBundle and DistributionBundle parts
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

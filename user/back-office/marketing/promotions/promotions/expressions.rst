@@ -289,5 +289,5 @@ Inside the loop, OroCommerce checks every inventory level to find the one that i
 .. promotion_expressions_end
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

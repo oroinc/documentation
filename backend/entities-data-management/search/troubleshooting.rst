@@ -50,5 +50,5 @@ Website search index provides following command (|here are examples of work with
 
 * **oro:website-search:reindex** - allows to reindex all entities, or only of a specific entity class, or entities for a specific website, or specific entities by their identifiers; indexation can be synchronous (default behaviour) or asynchronous.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

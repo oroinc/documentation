@@ -104,5 +104,5 @@ Used client software: OpenVPN GUI 2.4.6
 
 8. Now you are able to connect environment using SSH.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-cloud.rst
    :start-after: begin

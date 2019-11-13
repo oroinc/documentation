@@ -50,5 +50,5 @@ Once saved, the business unit is available on the list of all business units und
 * :ref:`Work with Multiple Organizations <user-ee-multi-org>`
 * :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

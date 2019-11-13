@@ -36,5 +36,5 @@ them in parallel.
 Documentation on Message Queue implementation, including information on messages, jobs, consumers, etc., can be found
 in |OroMessageQueueComponent| and |OroMessageQueueBundle|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

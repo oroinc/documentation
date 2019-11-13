@@ -262,6 +262,6 @@ In the example above, you can see the three kinds of events defined for the Jack
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

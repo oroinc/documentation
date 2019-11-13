@@ -28,5 +28,5 @@ Related Documentation
 * |Create and Manage an Entity Model|
 * |Get the EntityStructureDataProvider Instance|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

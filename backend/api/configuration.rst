@@ -697,7 +697,7 @@ The ``subresources`` configuration section enables you to provide options for su
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

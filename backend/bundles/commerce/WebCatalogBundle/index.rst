@@ -11,5 +11,5 @@ Related Documentation
 * |Override the Default Breadcrumbs Data Source|
 * |Create a Content Variant|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

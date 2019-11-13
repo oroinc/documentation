@@ -70,6 +70,6 @@ All contact requests can be viewed from the page of all contact requests under *
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

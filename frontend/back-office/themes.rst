@@ -180,5 +180,5 @@ So, place the ``settings.yml`` file in the ``Resources/public/themes/oro`` direc
             // ...
         }
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

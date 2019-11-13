@@ -15,5 +15,5 @@ Related Documentation
 * |Add Inheritance of Activity Lists to the Target Entity|
 * |Permissions in ActivityList Bundle|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

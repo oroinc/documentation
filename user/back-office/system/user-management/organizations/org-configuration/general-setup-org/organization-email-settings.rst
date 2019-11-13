@@ -124,6 +124,6 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

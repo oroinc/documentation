@@ -20,5 +20,5 @@ Related Documentation
 * |Search Index Structure|
 * |ORM Search Engine|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

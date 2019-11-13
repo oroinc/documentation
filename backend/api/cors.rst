@@ -45,5 +45,5 @@ You can also configure other CORS options. Here is the default configuration:
             expose_headers: []
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

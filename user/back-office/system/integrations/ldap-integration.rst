@@ -135,5 +135,5 @@ usual credentials to log into the Oro application.
    The system administrators will be able to tell if a user has been added via LDAP integration. Their profile will contain the LDAP Distinguished Names value, which will only be visible to users who have permission to manage LDAP integrations.
    
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

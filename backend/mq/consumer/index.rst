@@ -98,7 +98,7 @@ To disable the Consumer Heartbeat notifications, set the `heartbeat_update_perio
    reset-container
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

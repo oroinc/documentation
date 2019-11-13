@@ -127,7 +127,7 @@ To configure notification options to receive emails on activities performed thro
       :class: with-border
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
 

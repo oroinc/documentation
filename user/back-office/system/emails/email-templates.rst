@@ -643,5 +643,5 @@ To enable the email template fallback to the parent localization, select the **U
    :start-after: begin
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

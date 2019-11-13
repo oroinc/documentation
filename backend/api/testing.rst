@@ -253,5 +253,5 @@ To simplify |unit testing| of :ref:`API processors <web-api--processors>`, one o
     "|ConfigProcessorTestCase|",":ref:`get_config <get-config-action>`"
     "|MetadataProcessorTestCase|",":ref:`get_metadata <get-metadata-action>`"
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

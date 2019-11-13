@@ -207,6 +207,6 @@ The default output of log records is stdout.
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

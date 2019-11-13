@@ -319,5 +319,5 @@ transition_definition
 
 A transition definition to be applied to this transition.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

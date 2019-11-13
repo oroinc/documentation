@@ -16,5 +16,5 @@ Related Documentation
 * |Temporarily Decrease Log Level|
 * |Log Console Commands|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

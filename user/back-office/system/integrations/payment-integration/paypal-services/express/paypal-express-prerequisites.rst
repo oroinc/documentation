@@ -128,5 +128,5 @@ Once you have successfully configured the PayPal Express integration as describe
 .. note:: Remember NOT to select the **Sandbox Mode** check box as you are configuring the production integration.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

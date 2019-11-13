@@ -270,5 +270,5 @@ in the ``address.js`` file in the Locale bundle and contains a ``format()``
 method which behaves exactly like the backend formatter does.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -12,5 +12,5 @@ Related Documentation
 * |Javascript Widgets (Frontend Side Filter)|
 * |Grid Extension|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -105,5 +105,5 @@ command in the DB. After that, the Cron command will be ready to evaluate and ex
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

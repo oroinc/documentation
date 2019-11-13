@@ -167,5 +167,5 @@ All credit card and bank account payment profiles are synchronized with Authoriz
    :start-after: begin
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

@@ -89,5 +89,5 @@ Add a new menu item to the existing featured menu block in the storefront:
 * |OroCommerce Blog: Customizable Web Catalogs in OroCommerce|
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

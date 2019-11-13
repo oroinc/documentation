@@ -181,5 +181,5 @@ Elasticsearch
 * Information on how OroCloud team :ref:`handles incidents <cloud_monitoring>`
 * Technical :ref:`support <cloud_support>` service details (exclusions, priorities, SLA, etc).
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-cloud.rst
    :start-after: begin

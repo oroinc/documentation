@@ -48,5 +48,5 @@ Now, when you use the ``http://localhost/<yoursitename>/index_dev.php`` address,
 * :ref:`Manage a Website <user-guide--system-websites--manage-websites>`
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

@@ -384,5 +384,5 @@ Using Blackfire, you can find and fix performance issues by using the following 
 
 Read more on how to use |Blackfire in its documentation portal|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

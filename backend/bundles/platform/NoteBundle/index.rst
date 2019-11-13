@@ -11,5 +11,5 @@ Related Documentation
 * |Enable Notes Using Migrations|
 * |Actions (Activity Note)|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

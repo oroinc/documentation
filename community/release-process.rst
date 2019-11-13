@@ -123,5 +123,5 @@ Community developers and users have access to the following two product branches
 +-------------------------------+-------------------+--------------------------------+
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -559,5 +559,5 @@ Overall, there can be three cases:
 * :ref:`Message Queue Developer Guide <op-structure--mq>`
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

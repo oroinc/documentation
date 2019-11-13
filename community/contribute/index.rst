@@ -63,5 +63,5 @@ Although signing the |Contributor License Agreement| is a prerequisite for accep
    documentation
    code-logging
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

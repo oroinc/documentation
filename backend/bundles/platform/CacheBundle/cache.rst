@@ -239,5 +239,5 @@ validation caching suit some custom requirements. To do this, you need
 to redefine the ``oro_cache.provider.validation`` service.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

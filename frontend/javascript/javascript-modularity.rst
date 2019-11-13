@@ -100,5 +100,5 @@ It takes care of downloading and evaluating the external script at runtime.
 
     export default MyView
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

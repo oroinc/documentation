@@ -84,5 +84,5 @@ You can use it as any other parameter but remember to add a specific path to you
      arguments:
        - '%sftp_root_path%/myusername/uploads'
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-cloud.rst
    :start-after: begin

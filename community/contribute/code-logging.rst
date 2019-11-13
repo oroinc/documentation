@@ -283,5 +283,5 @@ Never log sensitive data. Under any circumstances. We mean it. Use data anonymiz
 
 * |How to Do Application Logging Right|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -362,5 +362,5 @@ file:
    instruction that will :ref:`apply block theme <dev-doc-frontend-apply-block-theme>` Twig file from step 4.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -144,7 +144,7 @@ Recommended and supported browsers are:
 
     Any browser needs to have cookies and JavaScript turned on.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

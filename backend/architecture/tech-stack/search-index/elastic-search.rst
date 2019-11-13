@@ -452,5 +452,5 @@ The following is the example of a valid response when the Elasticsearch is avail
     }
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

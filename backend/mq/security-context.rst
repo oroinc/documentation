@@ -65,5 +65,5 @@ Here is an example how to add a processor to the list of security agnostic proce
             - 'oro_message_queue.client.route_message_processor'
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

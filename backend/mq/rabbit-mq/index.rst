@@ -223,5 +223,5 @@ RabbitMQ Useful Hints
    backup-and-restore
    troubleshooting
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

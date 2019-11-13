@@ -43,5 +43,5 @@ To create a custom entity field:
    create-entity-field-example
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

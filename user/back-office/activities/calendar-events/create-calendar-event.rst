@@ -132,5 +132,5 @@ To add an event to a system calendar from its page:
 4. The **Create Calendar Event** page appears. Specify the event details.
 5. Click **Save and Close**.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

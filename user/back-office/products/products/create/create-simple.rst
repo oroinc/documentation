@@ -122,5 +122,5 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

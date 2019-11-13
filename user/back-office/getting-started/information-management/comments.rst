@@ -44,5 +44,5 @@ To add a comment:
 
  .. note:: Comments for cases have an additional **Make Public** check box when your Oro application is integrated with Zendesk. This enables you to make a specific comment  public in :ref:`Zendesk <user-guide-zendesk-integration>`.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

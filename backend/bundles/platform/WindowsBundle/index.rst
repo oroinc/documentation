@@ -11,5 +11,5 @@ Related Documentation
 * |JavaScript Components API|
 * |Windows as Widget|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

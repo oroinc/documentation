@@ -38,5 +38,5 @@ To add an attachment to a record:
           .. image:: /user/img/getting_started/records/add_attachment_view.png
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

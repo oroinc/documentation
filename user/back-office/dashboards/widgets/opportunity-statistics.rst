@@ -37,5 +37,5 @@ You can adjust the following settings for the opportunity statistics widget:
 
 .. image:: /user/img/dashboards/opportunity_statistics_2.png
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

@@ -34,6 +34,6 @@ All the notes added to a record are displayed and can be reached from the **Acti
 
 .. image:: /user/img/getting_started/records/add_note_view.png
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

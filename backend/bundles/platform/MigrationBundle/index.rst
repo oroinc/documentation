@@ -14,5 +14,5 @@ Related Documentation
 * |Use Data Fixtures|
 * |Use Versioned Data Fixtures|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

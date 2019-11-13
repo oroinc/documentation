@@ -40,5 +40,5 @@ When creating a new record in the global organization, you first need to select 
    organization-frontend-menus
    org-configuration/index
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

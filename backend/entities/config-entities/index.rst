@@ -378,5 +378,5 @@ method afterwards:
     Use the ``oro:entity-config:debug`` command to access or modify configuration values from the
     command line.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

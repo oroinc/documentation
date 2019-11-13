@@ -3,7 +3,6 @@
 .. _user-guide-productivity-tools:
 .. _user-guide-activities:
 
-
 Activities
 ==========
 

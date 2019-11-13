@@ -82,5 +82,5 @@ Now, you need to update the translation cache so that all the changes could ente
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

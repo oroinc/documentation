@@ -562,5 +562,5 @@ Finally, you have to update the database schema and clear the application cache:
     # warm up the application cache
     $ php bin/console cache:warmup
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

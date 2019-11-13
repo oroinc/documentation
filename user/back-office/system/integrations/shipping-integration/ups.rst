@@ -102,5 +102,5 @@ Once the shipping method is added to the shipping rule, provide the information 
 * :ref:`Shipping Rules Configuration <sys--shipping-rules>`
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

@@ -118,5 +118,5 @@ The directory you extracted the files to, will be used in the following steps an
 
 .. |main_app_in_this_topic| replace:: OroCommerce
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

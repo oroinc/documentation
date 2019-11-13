@@ -10,5 +10,5 @@ Related Documentation
 
 * |Configure and Use OroEmbeddedBundle|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

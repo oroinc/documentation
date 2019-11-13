@@ -118,5 +118,5 @@ To load your own data fixtures, you will need to implement Doctrine's *"FixtureI
 .. |main_app_in_this_topic| replace:: OroCommerce
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

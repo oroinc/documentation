@@ -100,5 +100,5 @@ Use sandbox account when customizing the Authorize.Net integration or if you do 
 
 For more information about how to use the sandbox, see |Authorize.Net Testing Guide|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

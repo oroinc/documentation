@@ -403,5 +403,5 @@ All API logs are written into the api channel. To inject the API logger directly
                 - { name: monolog.logger, channel: api }
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

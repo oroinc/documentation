@@ -63,5 +63,5 @@ In the :ref:`Google Hangouts <user-guide-hangouts>` section, provide the followi
 By default, **Enable For Emails** and **Enable For Phones** are enabled.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

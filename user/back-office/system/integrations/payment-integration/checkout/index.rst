@@ -108,5 +108,5 @@ Once the payment is made, the customer receives the notification email to view t
 
 .. image:: /user/img/system/integrations/checkout/checkout_apruve_10.png
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

@@ -36,5 +36,5 @@ from the DataGridBundle, create a new template file located at
    can be overridden only in ``src/Resources``. To be on the safe side, it is recommended
    to override everything only in ``src/Resources``.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -54,5 +54,5 @@ In Oro applications, opportunities can either be created from scratch, or conver
    flows
    multi-currency
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

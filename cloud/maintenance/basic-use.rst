@@ -512,5 +512,5 @@ To purge the messages from the RabbitMQ,  use the `rabbitmq:queue:purge` command
 
 .. note:: The ``vhost`` and ``queue`` argument values can be retrieved with the `rabbitmq:queue:list` command.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-cloud.rst
    :start-after: begin

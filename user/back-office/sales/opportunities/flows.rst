@@ -168,6 +168,6 @@ You can create any number of quotes for one open opportunity.
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

@@ -244,5 +244,8 @@ In the **System > Entity Management**, you can create a data model for a new bus
 
 In the **System > Workflows**, you can automate a workflow to reflect a custom business process in your organization. See :ref:`Workflows <doc--system--workflow-management>` for detailed information.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin

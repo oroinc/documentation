@@ -108,5 +108,5 @@ Finally, create a tax rule that associates the customer tax code, the product ta
 .. finish
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

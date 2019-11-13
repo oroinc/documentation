@@ -41,5 +41,5 @@ JS Components
        * In the category, use the elements navigation tree on the left to jump to the element`s description, preview, and a code sample.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

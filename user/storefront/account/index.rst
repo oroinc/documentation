@@ -36,5 +36,5 @@ Your account menu has the following sections:
    quotes
    cim/index
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

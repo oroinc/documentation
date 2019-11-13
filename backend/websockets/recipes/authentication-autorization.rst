@@ -35,5 +35,5 @@ Authentication tickets have a limited lifetime of 300 seconds by default.
 
 If the authentication was successful, the client will be able to subscribe and send new messages to topics.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

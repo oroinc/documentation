@@ -1574,7 +1574,7 @@ will a plain format rather than JSON API.
 
 For more information about the API client requirements, see the |JSON Specifications|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 Developer's Reference to Oro APIBundle

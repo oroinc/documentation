@@ -17,5 +17,5 @@ Related Documentation
 * |Prevent Displaying the Back-Office Datagrids in the Storefront|
 * |Access Frontend REST API|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

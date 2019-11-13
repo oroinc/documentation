@@ -178,7 +178,7 @@ In order to add this bundle to your application:
   `app oro:migration:load --force --bundles=OroBlogPostExampleBundle`
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

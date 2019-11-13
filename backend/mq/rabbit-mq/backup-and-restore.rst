@@ -101,5 +101,5 @@ For more information, see the following external resources:
 * |RabbitMQ Backup and Restore|
 * |RabbitMQ File and Directory Locations|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

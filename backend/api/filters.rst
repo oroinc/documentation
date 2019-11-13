@@ -308,5 +308,5 @@ Consider checking out the list of other classes below as they can provide insigh
 * |RegisterDynamicFilters| - a processor that registers nested filters.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

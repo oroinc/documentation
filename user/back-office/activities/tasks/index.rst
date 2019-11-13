@@ -25,6 +25,6 @@ Before reading on, consider watching a short demo from our media library on |how
    <iframe width="560" height="315" src="https://www.youtube.com/embed/TIeEKgUJIu8" frameborder="0" allowfullscreen></iframe>
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

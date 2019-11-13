@@ -285,5 +285,5 @@ It is recommended to use same code style that is used in |Bootstrap|.
 
 * :ref:`Release Process <doc--community--release>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -89,6 +89,6 @@ Once you decide on the Web Catalog, click **Save Settings**, and the detailed co
 
 4. Click **Save**.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

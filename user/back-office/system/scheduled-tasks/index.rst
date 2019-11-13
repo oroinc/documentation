@@ -169,5 +169,8 @@ sync command, it can check that there are more than 0 active integrations.
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-dev.rst
    :start-after: begin

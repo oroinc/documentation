@@ -230,5 +230,5 @@ Segments
 
 For the detailed information on the segments entities that the application users can create, refer to the :ref:`OroSegmentBundle <bundle-docs-platform-segment-bundle>` topic or read the |relevant OroSegmentBundle documentation|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

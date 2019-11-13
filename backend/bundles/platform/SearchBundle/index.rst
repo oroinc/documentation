@@ -20,5 +20,5 @@ Related Documentation
 * |Configure ORM Search Engine|
 * |Customize Relevance Weight in Standard Search Index|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

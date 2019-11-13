@@ -173,7 +173,7 @@ value of a configuration option:
     ``acme_demo`` for AcmeDemoBundle).
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

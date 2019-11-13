@@ -261,5 +261,5 @@ To check that your configuration section is added correctly, run ``php bin/conso
                     my_option: ~
                 ...
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

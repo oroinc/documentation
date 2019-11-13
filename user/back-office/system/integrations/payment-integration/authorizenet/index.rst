@@ -64,5 +64,5 @@ Transaction response from the payment gateway also does not contain sensitive in
    authorizenet-prerequisites
    authorizenet-integration
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

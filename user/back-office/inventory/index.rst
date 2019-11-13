@@ -27,7 +27,7 @@ Learn more about warehouses and inventory in the following topics:
 
 * :ref:`Configure System-wide Inventory <configuration--guide--commerce--inventory>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
 .. toctree::

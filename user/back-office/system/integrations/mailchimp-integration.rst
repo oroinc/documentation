@@ -106,5 +106,5 @@ In order to sync your integration:
 
 * :ref:`Sending Email Campaign via MailChimp <user-guide-mailchimp-campaign>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

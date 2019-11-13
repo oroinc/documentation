@@ -254,5 +254,5 @@ Uncomment this line.
     after the uprgade to flush cached bytecode from the previous installation.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

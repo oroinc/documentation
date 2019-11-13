@@ -62,7 +62,7 @@ Third Party Side: Generate Token
 
 .. finish_user_oauth
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
 

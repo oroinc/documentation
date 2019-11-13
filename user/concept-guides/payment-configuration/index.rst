@@ -64,7 +64,7 @@ In OroCommerce, payment methods are conditions required for a sale to be complet
 * :ref:`Payments at Checkout (Illustration) <doc--payment--checkout>`
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
 

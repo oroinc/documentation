@@ -42,5 +42,5 @@ For more information, see the following external resources:
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

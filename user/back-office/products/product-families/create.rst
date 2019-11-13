@@ -33,5 +33,5 @@ Default Product Family may not be enough to cover all your needs. To create a ne
 6. Once you are happy with the product attribute organization, click **Save**.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

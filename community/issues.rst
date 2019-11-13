@@ -120,5 +120,5 @@ To report an issue in the Oro documentation, file a suggestion for improvement, 
 
 .. note:: You are welcome to contribute to the Oro documentation. See more information :ref:`here <documentation-standards>`.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

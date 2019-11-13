@@ -253,6 +253,6 @@ This list is now displayed on the :ref:`Marketing List Page <user-guide-marketin
 
 * :ref:`Configure MailChimp Integration <user-guide-mc-integration>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

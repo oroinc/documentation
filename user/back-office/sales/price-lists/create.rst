@@ -76,5 +76,5 @@ To create a new price list:
 
 6. Click **Save**.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

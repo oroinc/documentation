@@ -13,5 +13,5 @@ Related Documentation
 * |Backend Implementation (Entities, Query Builder, Datagrid)|
 * |Use OroSegmentBundle (Example)|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

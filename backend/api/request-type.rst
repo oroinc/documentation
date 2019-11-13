@@ -21,5 +21,5 @@ Such combinations of aspects enable you to configure different sets of processor
 See examples of configuring processors for different aspects and their combinations in the
 :ref:`Processor Conditions <processor-conditions>` topic.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -25,5 +25,5 @@ instance has dead by any reason.
     redirect_stderr=true
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -21,5 +21,5 @@ To add OroCommerce to an existing instance of OroCRM, please follow the ordinary
 where `https://unsecure.url` and `http://secure.url` are urls for the OroCommerce storefront.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

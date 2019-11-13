@@ -72,5 +72,5 @@ To add a translation to the cookie banner to present information in the desired 
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 * :ref:`Build Reports with Accepted Consents <user-guide-reports>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

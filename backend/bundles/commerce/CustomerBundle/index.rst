@@ -14,7 +14,7 @@ Related Documentation
 * |Configure Anonymous Customer User|
 * |Configure Guest Access and Permissions|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

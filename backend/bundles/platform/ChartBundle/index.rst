@@ -11,5 +11,5 @@ Related Documentation
 * |Use Charts|
 * |Configure Charts|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

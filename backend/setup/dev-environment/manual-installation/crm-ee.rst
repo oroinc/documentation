@@ -717,5 +717,5 @@ If you need to customize the described installation scenario, refer to the follo
 .. |recommended_OS| replace:: CentOS v7.4
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

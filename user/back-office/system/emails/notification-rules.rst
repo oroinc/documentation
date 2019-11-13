@@ -86,5 +86,5 @@ To create a notification rule:
    :start-after: begin
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
