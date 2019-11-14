@@ -70,7 +70,7 @@ Install most of the required |oro_app_name| application environment components u
 
 .. code:: bash
 
-   yum install -y rh-postgresql96 rh-postgresql96-postgresql rh-postgresql96-postgresql-server rh-postgresql96-postgresql-contrib rh-postgresql96-postgresql-syspaths oro-elasticsearch62 oro-elasticsearch62-runtime oro-elasticsearch62-elasticsearch oro-redis4 oro-redis4-runtime oro-redis4-redis oro-rabbitmq-server36 oro-rabbitmq-server36-runtime oro-rabbitmq-server36-rabbitmq-server nginx nodejs npm git bzip2 supervisor
+   yum install -y rh-postgresql96 rh-postgresql96-postgresql rh-postgresql96-postgresql-server rh-postgresql96-postgresql-contrib rh-postgresql96-postgresql-syspaths oro-elasticsearch6 oro-elasticsearch6-runtime oro-elasticsearch6-elasticsearch oro-redis4 oro-redis4-runtime oro-redis4-redis oro-rabbitmq-server36 oro-rabbitmq-server36-runtime oro-rabbitmq-server36-rabbitmq-server nginx nodejs npm git bzip2 supervisor
 
 Install PHP
 ^^^^^^^^^^^
@@ -443,8 +443,8 @@ Enable Installed Services
 
 .. code:: bash
 
-   systemctl restart rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch62-elasticsearch oro-php71-php-fpm nginx supervisord
-   systemctl enable rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch62-elasticsearch oro-php71-php-fpm nginx supervisord
+   systemctl restart rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch6-elasticsearch oro-php71-php-fpm nginx supervisord
+   systemctl enable rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch6-elasticsearch oro-php71-php-fpm nginx supervisord
 
 
 .. _installation--orocrm-ee--part-3:
