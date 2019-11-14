@@ -190,6 +190,6 @@ For detailed information about EC2 instances management features please see the 
 
 .. |oro_app_name| replace:: OroCommerce Community Edition
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

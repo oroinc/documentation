@@ -32,5 +32,5 @@ You can adjust the following settings for the opportunities by status widget:
 
 You can select whether to display opportunities amount or count, as well as select the necessary data range, role, owner, etc.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

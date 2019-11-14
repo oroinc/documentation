@@ -52,5 +52,5 @@ Finally, make sure to properly clean the cache:
     $ php bin/console cache:clear --env=prod
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

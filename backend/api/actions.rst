@@ -1168,5 +1168,5 @@ If you need to create groups for your action, register them in the ApiBundle con
 
 Please note that the ``priority`` attribute is used to control the order in which groups of processors are executed. The higher the priority, the earlier a group of processors is executed. Default value is 0. The possible range is from -254 to 252. For details on processor creation, see the :ref:`Processors <web-api--processors>` section.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

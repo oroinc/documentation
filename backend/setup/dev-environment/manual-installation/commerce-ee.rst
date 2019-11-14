@@ -711,7 +711,7 @@ If you need to customize the described installation scenario, refer to the follo
 * :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>`
 * :ref:`Silent Installation <silent-installation>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

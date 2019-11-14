@@ -58,5 +58,5 @@ If **Zero Amount Authorization** is disabled in the PayPal integration settings,
 After the buyer submits the order on the Order Review step, the total purchase amount is captured from their account. This is executed as another transaction.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

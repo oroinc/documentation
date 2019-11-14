@@ -39,6 +39,6 @@ All email settings are located in the system, organization, website, or user con
    email-templates
    notification-rules
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

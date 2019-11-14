@@ -12,5 +12,5 @@ Related Documentation
 * |Handle Pagination Process in System Configuration|
 * |Backend Pagination Processing|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

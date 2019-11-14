@@ -13,6 +13,6 @@ Related Documentation
 * |Precise File Reference|
 * |Manage Packages|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

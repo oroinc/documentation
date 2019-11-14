@@ -15,5 +15,5 @@ Related Documentation
 * |Mark Doctrine Listeners as Lazy|
 * |Global Options for Console Commands|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -88,5 +88,6 @@ Usually configuration extras are added to the context by the ``InitializeConfigE
 
 The |CompleteDescriptions| processor adds descriptions for entity, fields, and filters. This processor is registered as a service in |processors.get_config.yml|. Please note, the processor tag contains the ``extra`` attribute with ``descriptions&definition`` value. This means that the processor will be executed only if the extra configuration (in this case ``description`` and ``definition``) were requested. For more details see :ref:`processor conditions <web-api--processors>`.
 
-.. include:: /include/include-links.rst
+
+.. include:: /include/include-links-dev.rst
    :start-after: begin

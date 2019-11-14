@@ -463,5 +463,5 @@ To check a storage type of a field:
 
    .. image:: /user/img/sales/pricelist/field_storage_type.png
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

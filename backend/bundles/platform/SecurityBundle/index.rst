@@ -45,5 +45,5 @@ Related Documentation
 * :ref:`Access Levels and Ownership Illustration <bundle-docs-platform-security-bundle-example>`
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

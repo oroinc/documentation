@@ -21,5 +21,5 @@ Related Documentation
 * |Set Up a Price Storage|
 * |Replace the Default Storage|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

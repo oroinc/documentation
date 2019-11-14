@@ -125,5 +125,5 @@ You can add as many custom fields as necessary, and also edit or remove them fro
 
 For more information on working with custom fields, refer to Google's |Custom Fields| documentation.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-cloud.rst
    :start-after: begin

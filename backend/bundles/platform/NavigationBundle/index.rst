@@ -14,5 +14,5 @@ Related Documentation
 * |Disable Menu Items|
 * |Configure Breadcrumbs|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

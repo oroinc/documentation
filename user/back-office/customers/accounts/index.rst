@@ -56,5 +56,5 @@ In case of installation of OroCRM over an existing OroCommerce instance, new acc
    import
    export
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

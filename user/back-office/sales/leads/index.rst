@@ -47,5 +47,5 @@ In order to save and process the details of commercial activity with people or b
    import
    export
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

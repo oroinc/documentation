@@ -388,5 +388,5 @@ A fully working example, organized into a custom bundle is available |the Custom
 In order to add this bundle to your application please extract the content of the zip archive into a source code directory that is recognized by your composer autoload settings.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -128,5 +128,5 @@ The type of resource that should be protected. Possible values are:
     access can be granted based on a particular domain object.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

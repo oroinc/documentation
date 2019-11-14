@@ -14,5 +14,5 @@ Related Documentation
 * |Configure Custom Grid for Activity Context Dialog|
 * |Enable Contexts Column in Activity Entity Grids|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

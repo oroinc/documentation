@@ -11,7 +11,7 @@ In compliance with our release process, we no longer maintain the documentation 
 +----------------------------------------+----------------------------------------+
 | User Documentation                     | Developer Documentation                |
 +========================================+========================================+
-| |OroCRM 2.6 User|                      | |OroCRM 2.6 Dev|                       |
+| :ref:`OroCRM 2.6 <user-documentation>` | |OroCRM 2.6|                           |
 +----------------------------------------+----------------------------------------+
 | |OroCRM 2.3 User|                      | |OroCRM 2.3 Dev|                       |
 +----------------------------------------+----------------------------------------+
@@ -30,5 +30,5 @@ Please be aware that we no longer accept issue reports for the previous version 
 
 If you have encountered a documentation issue in OroCRM v. 2.6, 2.3, 2.0, 1.12, check documentation for the latest version, as your issue may have already been fixed. To report an issue in the current documentation, file a suggestion for improvement, or share your feedback, please, follow contribution instructions in the :ref:`Community Guide <report-doc-issue>`.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

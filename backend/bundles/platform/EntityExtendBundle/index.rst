@@ -24,6 +24,6 @@ Related Documentation
 * |Extend Fields View|
 * |Make Custom Entities and Fields Searchable|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

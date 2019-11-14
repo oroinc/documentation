@@ -168,5 +168,5 @@ Use the following command to retrieve the selected consumer unit output:
    sudo journalctl -f -u oro-message-queue@search:3.service
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

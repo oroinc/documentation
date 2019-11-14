@@ -278,5 +278,5 @@ Inside the loop, OroCommerce checks every inventory level to find the one that i
 .. payment_expressions_end
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

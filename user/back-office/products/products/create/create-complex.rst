@@ -114,7 +114,7 @@ To add a new configurable product and make it available in the master catalog (f
 
 #. Click **Save** to save your configurable product.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
 .. stop_product_create_configurable

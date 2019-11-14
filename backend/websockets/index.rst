@@ -57,5 +57,5 @@ To start use websockets messages for your custom functionality, please, refer to
    recipes/index
    configuration/index
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

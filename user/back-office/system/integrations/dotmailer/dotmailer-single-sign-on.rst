@@ -29,5 +29,5 @@ Related articles
 - :ref:`Sending Email Campaign via dotmailer <user-guide-dotmailer-campaign>`
 - :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

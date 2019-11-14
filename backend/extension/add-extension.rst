@@ -110,5 +110,5 @@ Note that admin review is necessary only for the initial publication; all subseq
 will not require admin approbation and will be published immediately.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

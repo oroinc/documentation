@@ -154,9 +154,9 @@ To define which columns to show in the table, click |IcSettings| above the table
 
 .. stop
 
-.. include:: /include/include-images.rst
+
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
-
-.. include:: /include/include-links.rst
+.. include:: /include/include-images.rst
    :start-after: begin

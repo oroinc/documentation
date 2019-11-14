@@ -25,8 +25,10 @@ To open the page of a specific organization:
 
 .. note:: Keep in mind that only those customer user roles that have been created in the current organization are displayed in the Customer User Roles grid of the current organization.
 
-.. include:: /include/include-images.rst
+
+
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-images.rst
    :start-after: begin

@@ -98,5 +98,5 @@ References
 
 * |How to use Bundle Inheritance to Override parts of a Bundle|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

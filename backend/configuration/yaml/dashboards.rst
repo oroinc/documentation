@@ -186,5 +186,5 @@ widget options:
     The Symfony form type name that is used to define what kind of input will be used to ask for
     user input.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

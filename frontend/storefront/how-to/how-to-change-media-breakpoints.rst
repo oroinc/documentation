@@ -40,5 +40,5 @@ To disable a media query theme, a developer must set breakpoint to null
 .. note:: You have to put this code into your own **settings/global-settings.scss** file as described in
     the :ref:`CSS Files Structure <dev-doc-frontend-css-theme-structure>` article.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

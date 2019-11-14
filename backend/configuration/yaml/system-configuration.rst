@@ -230,5 +230,5 @@ The trees from the configuration files of all bundles will be merged into one la
 files will be merged into the final tree. Nodes with a higher priority are shown first.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

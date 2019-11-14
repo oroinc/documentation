@@ -109,6 +109,6 @@ Related Documentation
   * :ref:`Process Single Reference <process-single-reference>`
   * :ref:`Dump Response Into Yaml Template <dump-response-into-yaml-template>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

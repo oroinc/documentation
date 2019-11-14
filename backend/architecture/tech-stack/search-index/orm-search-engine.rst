@@ -67,5 +67,5 @@ shorter than this limit, the fulltext index will not be used. It is
 recommended to |change this value to 3|.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

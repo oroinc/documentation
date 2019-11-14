@@ -77,7 +77,10 @@ Update Translation in Oro Application
 
 4. If you see *Update is available* in the **Updates** column, click |IcCloudDownload| **Update** at the end of the row to update translations from the Crowdin project.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
 .. _translations-contact:

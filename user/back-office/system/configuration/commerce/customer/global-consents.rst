@@ -83,5 +83,5 @@ To add consents to the list of enabled consents:
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

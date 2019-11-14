@@ -506,5 +506,5 @@ Once the integration is saved, it becomes available in the Integrations grid und
 .. important:: To enable a Google Tag Manager integration for data mapping, connect it to the application in the system settings :ref:`globally <admin-configuration-integrations-google>`, :ref:`per organization <organization-google-settings>` or :ref:`website <website-google-settings>`.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

@@ -33,5 +33,5 @@ You can adjust the following settings for the lead statistics widget:
 .. image:: /user/img/dashboards/lead_statistics_2.png
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

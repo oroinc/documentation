@@ -10,5 +10,5 @@ Related Documentation
 
 * |Configure Datagrid to Enable Multi Currency Inline Edit|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

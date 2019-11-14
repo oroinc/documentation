@@ -278,5 +278,5 @@ The ``type`` option can be used to choose one of the defined `templates`_ to ren
 
     This option can only be used for the root item of a menu.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

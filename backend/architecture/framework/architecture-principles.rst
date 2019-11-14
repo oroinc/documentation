@@ -269,5 +269,5 @@ You have to be familiar with these components in order to work comfortably with 
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

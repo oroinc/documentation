@@ -395,5 +395,5 @@ If you need to manually check the access of the current user to a certain object
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

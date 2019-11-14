@@ -14,6 +14,10 @@ Create a Tax Rule
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Ma0JOwn9VVs" frameborder="0" allowfullscreen></iframe>
 
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+
 To create tax rules for a particular tax jurisdiction, you need to complete the configuration of the tax options described in the :ref:`Tax Rule Prerequisites <tax-rule--prerequisites>` section.
 
 Once all the necessary actions are performed, you need to create a tax rule for every valid combination of the tax rates, product types, and customer types to ensure that they are properly taxed at every checkout.
@@ -28,10 +32,9 @@ Once all the necessary actions are performed, you need to create a tax rule for 
 4. Describe this tax rule if necessary in the **Description** field.
 5. Click **Save and Close**.
 
-.. include:: /include/include-links.rst
-   :start-after: begin
 
 .. stop
+
 
 **Related Articles**
 

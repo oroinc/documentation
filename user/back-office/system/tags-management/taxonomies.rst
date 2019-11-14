@@ -46,8 +46,8 @@ Within the taxonomies list, you can:
 .. image:: /user/img/system/tags_management/manage_tags_grid_7.png
    :alt: The actions available for the taxonomies in the grid
 
-.. include:: /include/include-images.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-images.rst
    :start-after: begin

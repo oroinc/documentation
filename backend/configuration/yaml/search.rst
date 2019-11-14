@@ -217,5 +217,5 @@ The list of fields to build the title for the result set. The value used here de
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

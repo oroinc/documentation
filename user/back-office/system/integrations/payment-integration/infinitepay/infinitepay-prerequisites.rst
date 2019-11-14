@@ -34,5 +34,5 @@ To start using InfinitePay with OroCommerce application, do the following:
 
 Now you are ready to accept card payments with the InfinitePay protection.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

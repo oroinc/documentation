@@ -85,5 +85,5 @@ you want to use your own minimized scripts in the theme, define the
 `oro_layout_requirejs_config_provider` is alias of
 `oro_layout.provider.requirejs_config`.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

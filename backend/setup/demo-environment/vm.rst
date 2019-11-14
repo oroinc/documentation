@@ -46,6 +46,6 @@ To import the virtual machine into VirtualBox:
 
 .. finish_virtual_machine_deployment
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

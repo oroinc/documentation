@@ -94,5 +94,5 @@ Just add the ``--watch`` (or ``-w``) option to the build command.
 
 Refer to |Asset Commands| for more information.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

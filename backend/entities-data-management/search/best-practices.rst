@@ -147,5 +147,5 @@ Here are couple of recommendations how to work properly with search index with a
 * **Increase RAM** - the recommended amount of RAM for search index is a half of index size or more, i.e. if you have 50GB of index data, it is recommended to have 25GB+ of RAM.
 * **Use SSD** - this type of disk provides faster read/write access than HDD and allows to request parts of search index data faster.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

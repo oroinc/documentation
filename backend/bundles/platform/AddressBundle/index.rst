@@ -14,5 +14,5 @@ Related Documentation
 * |Address Type Entity|
 * |Validate Addresses and Address Collection|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

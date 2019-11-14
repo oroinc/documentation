@@ -14,5 +14,5 @@ Related Documentation
 * |Define Owner for Related Entities on Integration Level|
 * |Save Service Data Between Synchronizations|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

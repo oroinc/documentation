@@ -485,16 +485,12 @@ The new classes must be declared as services:
 .. code-block:: yaml
     :linenos:
 
-    parameters:
-        oro_importexport.reader.csv.class: Acme\DemoBundle\ImportExport\Reader\ExcelFileReader
-        oro_importexport.writer.csv.class: Acme\DemoBundle\ImportExport\Writer\ExcelFileWriter
-
     services:
         oro_importexport.reader.csv:
-            class: "%oro_importexport.reader.csv.class%"
+            class: Acme\DemoBundle\ImportExport\Reader\ExcelFileReader
 
         oro_importexport.writer.csv:
-            class: "%oro_importexport.writer.csv.class%"
+            class: Oro\Bundle\ImportExportBundle\Writer\CsvFileWriter
 
 Change Import Strategy
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -548,5 +544,5 @@ the following methods:
 More information is available in the |ImportExportBundle documentation|.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

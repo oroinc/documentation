@@ -27,7 +27,6 @@ all dependencies are injected into the module following the |inversion of contro
 
     You can find more information on how to write modular JavaScript using AMD in:
 
-    * |RequireJS API|
     * |Writing Modular JavaScript|
 
 .. _module-definition:
@@ -353,5 +352,5 @@ A full working example of a RequireJS configuration in a bundle can look like th
             'bootstrap': 'empty:'
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

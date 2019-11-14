@@ -152,9 +152,8 @@ To delete an existing role:
 * :ref:`Entity and System Capabilities <admin-capabilities>`
 
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+
 .. include:: /include/include-images.rst
    :start-after: begin
-
-.. include:: /include/include-links.rst
-   :start-after: begin
-

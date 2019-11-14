@@ -639,9 +639,9 @@ To enable the email template fallback to the parent localization, select the **U
    :align: middle
 
 
-.. include:: /include/include-images.rst
+
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
-
-.. include:: /include/include-links.rst
+.. include:: /include/include-images.rst
    :start-after: begin

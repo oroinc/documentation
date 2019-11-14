@@ -185,6 +185,6 @@ To create an API Transaction User:
 
 The basic user login information is securely delivered to the provided email.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

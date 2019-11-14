@@ -67,9 +67,7 @@ The ability to view and edit contact requests depends on the specific :ref:`role
 All contact requests can be viewed from the page of all contact requests under **Activities > Contact Requests** in the main menu. From this page, you can view, edit, and delete contact requests.
 
 
-.. include:: /include/include-images.rst
-   :start-after: begin
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

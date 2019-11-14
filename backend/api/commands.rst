@@ -204,5 +204,5 @@ This command shows the structure of ``Resources/config/oro/api.yml``.
 
     php bin/console oro:api:config:dump-reference
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

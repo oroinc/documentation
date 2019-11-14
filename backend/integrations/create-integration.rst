@@ -189,5 +189,5 @@ the connector's ``getType()`` method:
                     - { name: oro_integration.connector, channel_type: app_channel, type: task }
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

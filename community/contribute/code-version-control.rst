@@ -62,5 +62,5 @@ The merge commit message contains the message from the author of the changes. Th
 
 :ref:`Release Process <doc--community--release>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

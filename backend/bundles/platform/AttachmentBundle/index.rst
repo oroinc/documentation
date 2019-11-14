@@ -17,5 +17,5 @@ Related Documentation
 * |Image Formatters|
 * |Enable Debugging Images|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -24,5 +24,5 @@ Related Documentation
 * |Add User Interface Buttons|
 * |Add Custom and Configurable Conditions|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

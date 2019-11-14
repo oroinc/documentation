@@ -133,5 +133,5 @@ You can use the same options to configure entity fields that you can use when co
 :ref:`options for an entity class <reference-entity-config-entity-items>`.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

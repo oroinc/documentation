@@ -161,5 +161,5 @@ To override the template, we need to create a block theme twig file in the same 
            # ...
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

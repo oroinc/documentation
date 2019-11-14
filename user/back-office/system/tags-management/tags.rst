@@ -151,9 +151,11 @@ It is possible to filter your reports by tags. For instance, we can create a rep
 
 You can create any reports of your choice and filter them by tag in a similar manner.
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. include:: /include/include-links.rst
-   :start-after: begin
+
 

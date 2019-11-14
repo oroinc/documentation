@@ -198,5 +198,5 @@ Replace a Logo
 4. Rebuild the assets as described in the `Replace Favicons`_ section above.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

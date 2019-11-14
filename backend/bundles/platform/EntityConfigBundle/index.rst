@@ -17,5 +17,5 @@ Related Documentation
 * |Debug Configuration Data|
 * |Configure Entity Scope (Example)|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

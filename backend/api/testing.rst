@@ -227,5 +227,5 @@ When you develop new tests for REST API, it may be convenient to dump responses 
 .. important:: Do not forget to check references after you dump a response for the first time: there can be collisions if references have the same IDs.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

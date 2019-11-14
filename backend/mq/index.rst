@@ -177,5 +177,8 @@ We can also move the specified options to the ``parameters.yml``:
 
 * :ref:`Message Queue Architecture Guide <op-structure--mq--complete>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin

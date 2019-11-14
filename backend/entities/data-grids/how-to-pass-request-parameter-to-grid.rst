@@ -205,5 +205,5 @@ References
 
 * |Symfony Cookbook How to Register Event Listeners and Subscribers|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

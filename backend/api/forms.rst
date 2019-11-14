@@ -121,5 +121,5 @@ To switch between the general and data API forms, use the |ProcessorSharedInitia
 The |ProcessorSharedBuildFormBuilder| processor builds the form for a particular entity on the fly based on the data :ref:`API configuration <web-api--configuration>` and the entity metadata.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

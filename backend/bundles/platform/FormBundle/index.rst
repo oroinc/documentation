@@ -19,5 +19,5 @@ Related Documentation
 * |Expression Editor|
 * |Allow Custom HTML Tags in WYSIWYG Editor|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

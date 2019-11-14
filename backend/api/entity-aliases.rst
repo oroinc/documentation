@@ -133,5 +133,5 @@ To solve the conflict situations when the auto-generated entity alias is already
 - For non-Oro entities, if not sure that the auto-generated alias is unique enough and it is likely (usually it is) that such entity will be added in the Oro core, you can prefix the alias with the bundle vendor (and category if needed), e.g., ``Acme\Bundle\BlogBundle\Entity\MyEntity`` = ``acmeblogmyentity``, ``Acme\Bundle\Social\BlogBundle\Entity\MyEntity`` = ``acmesocialblogmyentity``.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

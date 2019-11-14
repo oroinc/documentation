@@ -38,5 +38,5 @@ The following topics will delve into how to view, create, and manage promotions 
    price-calculation-sample
    faqs
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

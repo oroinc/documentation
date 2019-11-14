@@ -129,5 +129,5 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    monitoring/index
    vagrant
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

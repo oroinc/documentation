@@ -450,7 +450,7 @@ To retrieve a name for the `Localization`, it is enough to use the `getName()` m
 * |Data Localization and Translation (Slideshare)|
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

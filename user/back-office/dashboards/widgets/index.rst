@@ -81,11 +81,7 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
 * **Compare with previous period** --- Select this option if you wish to compare statistics for the current and the previous periods and have it displayed in the dashboard widget.
 * Other widget details (depending on widget type).
 
-.. include:: /include/include-images.rst
-   :start-after: begin
 
-.. include:: /include/include-links.rst
-   :start-after: begin
 
 .. toctree::
    :hidden:
@@ -111,6 +107,11 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
    recently-accessed-contacts
    todays-calendar
 
+.. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 
 

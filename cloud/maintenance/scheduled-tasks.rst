@@ -28,5 +28,5 @@ Scheduled (|cron|) tasks can be configured, as illustrated below:
   * `monthday` - execution time, day of the month. Allowed values 1 - 31, ``*/x`` where x is a number. Optional, by default '*', which means every day of the month.
   * `weekday` - execution time, day of week. Allowed values 0 - 7, where 0,7 are "Sunday"; ``*/x`` where x is a number. Optional, by default '*', which means every day.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-cloud.rst
    :start-after: begin

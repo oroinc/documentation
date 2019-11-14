@@ -19,5 +19,5 @@ Related Documentation
 * |Origin Checking|
 * |SyncBundle Mediator Handlers|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

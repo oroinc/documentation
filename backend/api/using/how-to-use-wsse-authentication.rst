@@ -88,5 +88,5 @@ This rule is aimed to improve safety of the application and prevent *"replay"* a
 Therefore, the header generation algorithm should be implemented on the side of the client application and headers should be re-generated for each request.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

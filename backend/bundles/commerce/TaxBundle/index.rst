@@ -16,5 +16,5 @@ Related Documentation
 
 * |Create a Custom Tax Provider|
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

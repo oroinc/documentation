@@ -130,5 +130,5 @@ click the **Login using Google** link to get into Oro application.
 .. note:: Note that the email used for the Google account and the primary email of the user in Oro application must be the same.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

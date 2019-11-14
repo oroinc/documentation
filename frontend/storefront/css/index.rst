@@ -317,5 +317,5 @@ We recommend to use them as examples for your custom code.
     oro-frontend-development-guidelines
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

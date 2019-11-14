@@ -114,7 +114,7 @@ All systems and elements of the Oro application may be hosted on their own dedic
 * :ref:`Search Index <search_index_overview>`
 * :ref:`Message Queue <op-structure--mq--index>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 .. toctree::

@@ -99,5 +99,5 @@ Also, you can override the placeholders configuration in another ``placeholders.
 
 Find more examples in |placeholders.yml files defined in OroPlatform bundles|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

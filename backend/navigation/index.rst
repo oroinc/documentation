@@ -197,5 +197,5 @@ Title can be defined with annotation together with route annotation:
    @TitleTemplate("Route title with %parameter%")
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

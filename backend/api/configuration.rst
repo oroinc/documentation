@@ -707,7 +707,7 @@ The ``subresources`` configuration section enables you to provide options for su
 The ``relations`` Configuration section describes a configuration of an entity used in a relationship. This section is not used for JSON.API but can be helpful for other types of API. This section is similar to the :ref:`entities <entities-config>` section.
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 
 

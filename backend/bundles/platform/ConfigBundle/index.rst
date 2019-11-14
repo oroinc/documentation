@@ -14,5 +14,5 @@ Related Documentation
 
 .. Conditions https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/reference/conditions.md
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -87,5 +87,5 @@ If it is, the consumer is interrupted after processing the current message, so t
 
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

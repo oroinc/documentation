@@ -833,5 +833,5 @@ uses Doctrine ORM without mocking its classes and using real Doctrine services:
     results are valid. Checking DQL is enough in this case because this it
     is the sole responsibility of this class to modify the query.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

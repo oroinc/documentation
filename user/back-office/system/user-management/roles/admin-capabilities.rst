@@ -232,5 +232,5 @@ Entity
 
 .. |oro_application| replace:: OroCommerce
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

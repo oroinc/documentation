@@ -20,5 +20,5 @@ Search Index
 
 .. note:: For architecture guide, see :ref:`Search Index Architecture <search_index_overview>`.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -312,5 +312,5 @@ To define which columns to show in the table, click |IcSettings| above the table
    expression-lang
 
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

@@ -390,5 +390,5 @@ After documentation review, your changes will be merged to the Oro documentation
 
 * :ref:`Release Process <doc--community--release>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

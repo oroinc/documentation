@@ -22,6 +22,6 @@ On top of the features available in Oro CE, Oro EE provides:
 
 Complete information on differences between Community and Enterprise editions is illustrated in |OroCommerce Editions| and |OroCRM Editions|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

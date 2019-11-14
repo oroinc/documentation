@@ -5,5 +5,5 @@ Scopes
 
 For the detailed information on the scope entity in the Oro applications, refer to the :ref:`OroScopeBundle <bundle-docs-platform-scope-bundle>` topic or read the |relevant ScopeBundle documentation|.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

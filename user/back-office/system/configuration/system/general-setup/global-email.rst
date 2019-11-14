@@ -176,5 +176,5 @@ To configure a system mailbox globally:
 
 11. Click **Save Settings**.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin

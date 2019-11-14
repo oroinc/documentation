@@ -15,5 +15,5 @@ Related Documentation
 .. Data Audit Filter <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataAuditBundle/Resources/doc/segment.md
 .. comment: there's an article on entity documentation but in :ref:`CRM documentation <data-audit>`
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin

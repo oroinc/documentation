@@ -104,13 +104,13 @@ configures the module. It can consist of the following keys:
 
     If the library depends on other libraries, these dependencies can be listed here. Note that the
     dependencies are treated as Require.js modules. This means that you may have to create more
-    modules if your library depends on other traditionall built libraries.
+    modules if your library depends on other traditional built libraries.
 
 ``exports`` (**type**: ``string``)
 
     The name of a JavaScript symbol that will be exposed to other parts of the system that use this
     module.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

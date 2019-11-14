@@ -94,7 +94,7 @@ To configure machine-to-machine authentication and retrieve the access token:
 
    .. note:: Access tokens for backend and frontend API are not interchangeable. If you attempt to request data for the frontend API with a token generated for the backend application (i.e., a back-office user), access will be denied.
 
-.. include:: /include/include-links.rst
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
 .. finish_2
