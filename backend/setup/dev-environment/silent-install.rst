@@ -12,15 +12,15 @@ For silent installation, use -n (no interaction) and -q (silence the output mess
 .. code-block:: bash
 
 	php -dxcache.cacher=0 bin/console oro:install
-           --application-url=**<URL that is configured as an entry point for Oro application>**
+           --application-url=<URL that is configured as an entry point for Oro application>
            --env=prod
-           --user-name=**admin**
-           --user-email=**admin@example.com**
-           --user-firstname=**John**
-           --user-lastname=**Doe**
-           --user-password=**admin**
-           --sample-data=**y**
-           --organization-name="**Acme, Inc**"
+           --user-name=admin
+           --user-email=admin@example.com
+           --user-firstname=John
+           --user-lastname=Doe
+           --user-password=admin
+           --sample-data=y
+           --organization-name="Acme, Inc"
            --language=en
            --formatting-code=en
            --timeout=10000
