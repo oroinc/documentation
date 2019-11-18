@@ -3,10 +3,10 @@
 Storefront OAuth Applications
 -----------------------------
 
- The section contains the list of all OAuth applications created for customer users in the back-office. You can view and manage the existing OAuth applications, create new applications selecting the necessary grant type depending on your business needs, either client credentials or a password.
+The section contains the list of all OAuth applications created for customer users in the back-office. You can view and manage the existing OAuth applications, create new applications selecting the necessary grant type depending on your business needs, either client credentials or a password.
 
-   .. image:: /user/img/system/storefront_oauth_app/storefront_oauth_app_list.png
-      :alt: A lis of all existing oauth applications
+.. image:: /user/img/system/storefront_oauth_app/storefront_oauth_app_list.png
+   :alt: A lis of all existing oauth applications
 
 
 .. include:: /user/back-office/system/user-management/oauth-app.rst

@@ -248,11 +248,8 @@ OroCommerce supports line charts. To create a line chart for the report, define 
 
 For more details, see the :ref:`chart example <user-guide--business-intelligence--reports--chart-examples>`.
 
-View a Report
--------------
-
 View a Custom Report
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 From the Custom Reports List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -300,7 +297,7 @@ From the Custom Reports Grid
 4. Click **Save**.
 
 From the Custom Report View Page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. In the main menu, navigate to **Reports & Segments > Manage Reports**.
 
@@ -327,7 +324,7 @@ From the Custom Reports Grid
 3. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
 
 From the Custom Report View Page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Alternatively, you can delete a custom report from the reports view page by clicking **Delete** in the upper-right corner.
 
@@ -350,8 +347,8 @@ You can delete multiple custom reports at a time.
 
 **Related Topics**
 
-:ref:`Use System Reports <user-guide--business-intelligence--reports--use-system-reports>`
-:ref:`Reports Examples <user-guide--business-intelligence--reports--reports-examples>`
+* :ref:`Use System Reports <user-guide--business-intelligence--reports--use-system-reports>`
+* :ref:`Reports Examples <user-guide--business-intelligence--reports--reports-examples>`
 
 
 .. include:: /include/include-images.rst
