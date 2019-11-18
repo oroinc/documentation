@@ -10,13 +10,19 @@ In the system configuration, you can define the :ref:`localization options <loca
 
 .. begin_content_translation
 
-Additionally, you can provide the translation for all the content elements of your storefront (e.g. product names, descriptions, catalog titles, SEO attributes, etc.):
+Additionally, you can provide the translation for all the content elements of your storefront (e.g., product names, descriptions, catalog titles, SEO attributes, etc.):
 
-1. Click the |IcTranslations| **Translations** icon next to the required content element to provide spelling for different languages.
+1. Create a necessary :ref:`localization <localization--localizations>` under **System > Localization > Localizations**.
+
+2. Add the required localization to the list of enabled localizations under **System > Configuration > System Configuration > General Setup > Localization**. It enables customers to select a desired language of the website content in the storefront.
+
+3. Navigate to the content element you want to provide the translation for.
+
+4. Click the |IcTranslations| **Translations** icon next to the required content element to provide spelling for different languages.
 
 .. image:: /user/img/system/localization/content_translation.png
 
-2. When the corresponding localization is enabled in the system configuration, the corresponding content translation is displayed in the storefront upon selecting this localisation.
+The corresponding content translation is displayed in the storefront upon selecting this localisation.
 
 .. image:: /user/img/system/localization/translation_frontstore.png
 

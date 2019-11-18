@@ -73,9 +73,9 @@ Update Translation in Oro Application
 
 3. Import the system elements translation from the |Crowdin| project by clicking the |IcCloudDownload| icon at the end of the row and then **Install** in the popup form. The import is available if the status in the **Updates** column is set to **Can be installed** signifying that the corresponding translation has been provided on the Crowdin website.
 
-3. If the status for your target language is *Disabled*, click the |IcCheck| **Enable** icon at the end of the row.
+4. If the status for your target language is *Disabled*, click the |IcCheck| **Enable** icon at the end of the row.
 
-4. If you see *Update is available* in the **Updates** column, click |IcCloudDownload| **Update** at the end of the row to update translations from the Crowdin project.
+5. If you see *Update is available* in the **Updates** column, click |IcCloudDownload| **Update** at the end of the row to update translations from the Crowdin project.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

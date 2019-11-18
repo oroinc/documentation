@@ -3,7 +3,9 @@
 Storefront Localization and Translation
 =======================================
 
-In the Oro application, you can provide the translation for all the content elements of your storefront (e.g. product names, descriptions, catalog titles, SEO attributes, and product attribute labels, etc.).
+In the Oro application, you can provide the translation for all the content elements of your storefront (e.g., product names, descriptions, catalog titles, SEO attributes, and product attribute labels, etc.).
+
+The storefront localization process as well as the back-office one follows the logic described in the :ref:`Localization <sys--config--sysconfig--general-setup--localization>` section.
 
 Learn more in the following topics:
 

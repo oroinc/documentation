@@ -10,57 +10,29 @@ Localization
 
 Oro application supports localization and provides decent out-of-the-box translation coverage for the most used languages. With out-of-the-box integration to CrowdIn service, Oro applications have live access to the most recent updates from the Oro team and community.
 
-See :ref:`Translating Oro applications into your Native Language <doc--community--ui-translations>` for more information about the translation process.
+See :ref:`How to Contribute to Translations <doc--community--ui-translations>` for more information about the translation process.
 
 .. Keep reading to learn about the localization process (:ref:`open the quick visual guide <config-localization-quick-start>`):
 
-+-------------+-----------------------------------+--------------------------------------------------------------------+
-| Process     | Back-Office Localization          | Storefront Localization                                            |
-+=============+===================================+====================================================================+
-| **Step 1**  | In the :ref:`Languages <localization--languages>` section,                                             |
-|             | you can add more languages to the system, enable/disable                                               |
-|             | them, import and export translation texts for the language,                                            |
-|             | and install translation updates from the CrowdIn project.                                              |
-|             |                                                                                                        |
-+-------------+--------------------------------------------------------------------------------------------------------+
-| **Step 2**  | In the :ref:`Translations <localization--translations>` section, you can view the                      |
-|             | items available for translation to the enabled and disabled languages in your Oro application,         |
-|             | add and modify translation text for these items, and delete these items if necessary.                  |
-|             |                                                                                                        |
-+-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 3**  | N/a                               | In the :ref:`Localizations <localization--localizations>` section, |
-|             |                                   | you can create a system where localization inherits a translation  |
-|             |                                   | from another language when the translation to the main language of |
-|             |                                   | the localization is not available. This helps to avoid double      |
-|             |                                   | efforts when translating to similar and related languages and      |
-|             |                                   | dialects of the same language.                                     |
-|             |                                   |                                                                    |
-+-------------+-----------------------------------+--------------------------------------------------------------------+
-|             |                                                                                                        |
-| **Note**    | Once the required languages and localizations are created, you can set up the translation frame        |
-|             | for the in-place UI and content elements displayed to the user both in the storefront and              |
-|             | the back-office.                                                                                       |
-+-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 4**  | N/a                               | In the :ref:`Localization Settings <localization--localization>`,  |
-|             |                                   | you can configure the default or custom localization and select    |
-|             |                                   | the language of the text system elements displayed in the front    |
-|             |                                   | store.                                                             |
-|             |                                   |                                                                    |
-+-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 5**  |                                   | Use inline :ref:`content translation <content-translation>`        |
-|             |                                   | available for most of the text                                     |
-|             |                                   | fields (e.g. names, titles, labels, descriptions, etc.)            |
-|             |                                   |                                                                    |
-|             |                                   | To enter translation manually, click |IcTranslations| next to the  |
-|             |                                   | field, clear the                                                   |
-|             |                                   | **Use <parent translation>** check box next to the required        |
-|             |                                   | language, and provide your version of the translation.             |
-|             |                                   |                                                                    |
-|             |                                   | |Translation_img|                                                  |
-+-------------+-----------------------------------+--------------------------------------------------------------------+
+Localization Process
+--------------------
 
-.. |Translation_img| image:: /user/img/system/localization/ProductsCreateTranslation.png
-                     :width: 200px
+To translate the Oro application's storefront and back-office to a desired language, make sure to take the following steps in the localization process:
+
+    **Step 1**. In the :ref:`Languages <localization--languages>` section, add desired languages to the system, enable them, import translation texts for the language or install translation updates from the CrowdIn project.
+
+    **Step 2**. In the :ref:`Translations <localization--translations>` section, check the existing and imported translations for the UI system elements (e.g., labels, checkboxes, buttons, notifications, etc.). There, you can add, modify, or delete translation texts for these items if necessary.
+
+              .. note:: Remember to :ref:`update the cache <update-translation-cache>` after each translation adjustment.
+
+    **Step 3**. In the :ref:`Localizations <localization--localizations>` section, create a localization that inherits a translation from another language when the translation to the main language of the localization is not available. This helps avoid double efforts when translating to similar and related languages and dialects of the same language.
+
+    **Step 4**. Once the necessary localizations are created, you can now translate the content elements (e.g., names, titles, labels, descriptions, etc.) using inline :ref:`content translation <content-translation>` available for most of the text fields.
+
+                .. image:: /user/img/system/localization/ProductsCreateTranslation.png
+                   :width: 400px
+
+    **Step 5**. Now, enable all the necessary localizations of the UI system and content elements to be displayed to the user both in the storefront and the back-office in the :ref:`Localization Settings <localization--localization>` section.
 
 For detailed information on these topics, please see the following sections:
 
