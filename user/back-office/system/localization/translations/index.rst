@@ -51,6 +51,8 @@ Verify Translations
 
 View and check the validity of all the available UI element translations. Use search and filters to help find the necessary text element.
 
+.. _update-translation-cache:
+
 Update Cached Translated Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -10,20 +10,20 @@ There are two ways to translate product attribute labels in OroCommerce:
 * By changing the source language to the target language for the label and then adding the label translation to the required attribute on its edit page.
 * By updating the attribute label translation directly on the Translations page.
 
-You may find option 1 less time consuming and more straightforward. However, with option 2 you can search for any attribute labels or entity fields within a single Translations table.
+You may find option 1 less time consuming and more straightforward. However, with option 2, you can search for any attribute labels or entity fields within a single Translations table.
 
 Method 1
 --------
 
 To translate a product attribute label from English into the required language, change the default language first:
 
-1. Navigate to **System > Configuration > System Configuration > General Setup > Language Settings** in the main menu.
-2. In the **Language Settings**, select the required language from the list to add to **Supported Languages**.
+1. Navigate to **System > Configuration > System Configuration > General Setup > Localization** in the main menu.
+2. In the **Localization Settings**, select the required localization from the list to add to **Enabled Localizations**.
 
    .. image:: /user/img/system/localization/labels/add_supported_language.png
       :alt: Add another supported language to the application in the system configuration
 
-   .. note:: Make sure you have enabled the corresponding language(s) in the **System > Localization > Languages** menu to make them available in the list.
+   .. note:: Make sure you have created the corresponding localization in the **System > Localization > Localizations** menu to make them available in the list.
 
 3. Click **Save Settings**.
 4. Navigate to your user configuration by clicking on your user name on the top right of the page and clicking **My Configuration**.
@@ -31,7 +31,7 @@ To translate a product attribute label from English into the required language, 
    .. image:: /user/img/system/localization/labels/user_config_menu.png
       :alt: User configuration menu
 
-5. Clear the **Use Organization** checkbox and set the language that you have just added (e.g. German) as the default language for the UI elements displayed in the back-office.
+5. Clear the **Use Organization** checkbox and set the localization that you have just added (e.g., German) as the default language for your application and for the UI system elements and content displayed in the back-office and in the storefront.
 
    .. image:: /user/img/system/localization/labels/user_config_language_settings.png
       :alt: Changing the default language on user level
@@ -82,13 +82,13 @@ Method 2
 
 To translate a product attribute label from within the Translations grid, navigate to **System > Localization > Translations** in the main menu.
 
-**If the attribute has been created in one of the supported languages in a language other than English, use the following filters to narrow down the search and locate the attribute label key:**
+**If the attribute has been created in a language other than English, use the following filters to narrow down the search and locate the attribute label key:**
 
 * **Languages** --- The language in which the attribute was created
 * **Translated Value** --- [Attribute Name] or its part, e.g, demo_attribute
 * **English Translation** -- Not available
 
-  Please note that when an attribute is created under a non-English localization, English translation is absent.
+  .. note:: Please note that when an attribute is created under a non-English localization, the English translation is absent.
 
 * **Key** --- oro.product.
 
