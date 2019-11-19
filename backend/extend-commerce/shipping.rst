@@ -173,7 +173,7 @@ Add an Installer
 
 An installer ensures that upon the application installation, the database will contain the entity that you defined within your bundle.
 
-Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic. After you complete it, you will have the class <bundle_root>/Migrations/Schema/FastShippingBundleInstaller.php with the following content:
+Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic to apply the changes without migration and generate an installer file based on the current schema of the DB. After you complete the process, you will have the <bundle_root>/Migrations/Schema/FastShippingBundleInstaller.php class with the following content:
 
 .. oro_integrity_check:: d9330c1d8d52507ccd51f8838043ad649d3b5d7f
 
@@ -413,3 +413,5 @@ Create actions.yml in the <bundle_root>/Resources/config/oro/ directory:
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/oro/actions.yml
        :language: yaml
        :linenos:
+
+.. important:: To enable this shipping method, you need to set up a corresponding shipping rule. Follow the :ref:`Shipping Rules Configuration <sys--shipping-rules>` topic for more details.
