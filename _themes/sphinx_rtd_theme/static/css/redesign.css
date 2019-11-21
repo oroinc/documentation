@@ -1015,7 +1015,7 @@ body {
     color: #b84926;
     text-decoration: none;
 }
-.contents-table li.active > a {
+.contents-table li.active > a, .contents-table li.active > a > code.docutils.literal {
     color: #252525;
 }
 .contents-table ul ul ul {
@@ -1034,6 +1034,16 @@ body {
     border-radius: 50%;
     overflow: hidden;
     background: #b84926;
+}
+.contents-table code.docutils.literal {
+    background: none;
+    border: none;
+    color: #b84926;
+    padding: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .breadcrumbs-container {
     padding: 0 15px;
@@ -1596,7 +1606,9 @@ body {
         margin-bottom: 0;
     }
     .contents-table ul a:hover,
-    .contents-table > ul > li > a:hover {
+    .contents-table ul a:hover > code.docutils.literal,
+    .contents-table > ul > li > a:hover,
+    .contents-table > ul > li > a:hover > code.docutils.literal {
         color: #252525 !important;
     }
     .footer-content {
