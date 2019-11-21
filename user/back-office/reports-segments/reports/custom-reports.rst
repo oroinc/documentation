@@ -328,7 +328,7 @@ From the Custom Reports Grid
 3. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
 
 From the Custom Report View Page
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Alternatively, you can delete a custom report from the reports view page by clicking **Delete** in the upper-right corner.
 
