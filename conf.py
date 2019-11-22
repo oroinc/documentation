@@ -374,3 +374,10 @@ scv_version_human_readable_names = {
     'doc-2.6': '1.6',
     'master': '4.1 beta (master)',
 }
+
+# Add custom parameters for each version build based on the branch name
+scv_build_args_per_version = {
+    # Exclude cloud doc for master branch.
+    # LTS version must have it only
+    'master': ('-D', 'exclude_patterns=cloud')
+}
