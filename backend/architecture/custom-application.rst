@@ -78,7 +78,7 @@ Oro applications are scalable.
 
 .. note::
     As an alternative to the on-premise deployment, when you created your application following recommendations
-    :ref:`above <application-custom-code>`, you can put your application into :ref:`OroCloud <orocloud>`. Please contact us to
+    :ref:`above <application-custom-code>`, you can put your application into |OroCloud|. Please contact us to
     get more information.
 
 

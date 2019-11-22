@@ -12,10 +12,6 @@ Explore comprehensive knowledge base and learn OroCommerce, OroCRM and OroPlatfo
    :includehidden:
    :titlesonly:
    :maxdepth: 6
+   :glob:
 
-   user/index
-   cloud/index
-   developer/index
-   backend/index
-   frontend/index
-   community/index
+   */index

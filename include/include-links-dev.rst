@@ -5181,3 +5181,6 @@ Links (Dev)
 
    <a href="https://grapesjs.com/docs/" target="_blank">GrapesJS</a>
 
+.. |OroCloud| raw:: html
+
+   <a href="/cloud">OroCloud</a>
