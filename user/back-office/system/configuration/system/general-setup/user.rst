@@ -9,7 +9,6 @@ To apply user-related options in your Oro application instance:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. Click **System Configuration > General Setup > User Settings**.
-3. The following page opens:
 
    .. image:: /user/img/system/config_system/user.png
       :alt: User settings on global level
@@ -34,7 +33,6 @@ Configure Login Attempts
 .. note:: This feature is only available in the Enterprise edition.
 
 .. csv-table::
-  :header: "Option", "Description" 
   :widths: 10, 30 
 
   "**Enable Failed Logins Limit**","Specify whether you wish to enable failed logins limit. By default, the option is enabled."
@@ -46,7 +44,6 @@ Configure Password Change Policy
 .. note:: This feature is only available in the Enterprise edition.
 
 .. csv-table::
-  :header: "Option", "Description"
   :widths: 10, 30 
 
   "**Enable Password Change Policy**","Enable this option to mandate your users to change their passwords after a certain period. The option is disabled by default."
@@ -54,13 +51,12 @@ Configure Password Change Policy
   "**Enable Password History Policy**","This setting determines the number of unique new passwords that must be associated with a user account before an old password can be reused. The option is disabled by default."
   "**Enforce Password History**","The number of previous user passwords which the new password cannot match. The number is set to 12 by default."
 
-Configure Two-factor Authentication
+Configure Two-Factor Authentication
 -----------------------------------
 
 .. note:: This feature is only available in the Enterprise edition.
 
 .. csv-table::
-  :header: "Option", "Description" 
   :widths: 10, 30 
 
   "**Security Level**","Determines how often to require authentication via email: never, upon first login from a new computer, or at every login.
@@ -71,5 +67,20 @@ Configure Two-factor Authentication
   The option is disabled by default."
   "**Code Validity Period**","This option determines how long the authentication code will be valid. If not used within the validity period, the code expires and the user must log in again. By default, the option is set to 1 hour."
   "**Code Length**","This option determines the number of characters in authentication code. By default, the option is set to 6."
+
+.. _system-configuration-user-impersonation:
+
+Configure User Impersonation
+----------------------------
+
+.. note:: This feature is only available in the Enterprise edition.
+
+.. csv-table::
+  :widths: 10, 30
+
+  "**Enable User Impersonation**","This option enables back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront as a specific customer user. This option is disabled by default. User impersonation is also available at :ref:`organization level <organization-user-settings>`.
+
+                                    .. image:: /user/img/system/config_system/user_impersonation.png
+                                       :alt: User impersonation config option"
 
 

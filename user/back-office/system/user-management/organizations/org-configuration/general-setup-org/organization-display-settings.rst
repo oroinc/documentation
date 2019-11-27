@@ -7,9 +7,9 @@ Display Settings per Organization
 
 .. begin_display_set_org
 
-In this section, you can specify display settings for the organization.
+In this section, you can specify the display settings for the organization.
 
-.. note:: The organization-level configuration has higher priority and overrides the system setting.
+.. note:: The organization-level configuration has higher priority and overrides the system settings.
 
 1. Navigate to **System > User Management > Organization** in the main menu.
 
@@ -17,9 +17,9 @@ In this section, you can specify display settings for the organization.
 
 3. Select **System Configuration > General Setup > Display Settings** in the menu to the left.
 
-.. image:: /user/img/system/user_management/org_configuration/general/organization_display_settings.png
-   :width: 500
-   :alt: Settings menu configuration for organization
+   .. image:: /user/img/system/user_management/org_configuration/general/organization_display_settings.png
+      :width: 500
+      :alt: Settings menu configuration for organization
 
 4. Clear the **Use System** check box to change the system-wide setting.
 

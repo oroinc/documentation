@@ -36,7 +36,12 @@ In the Account Management section, the following capabilities are available:
 
 .. comment: Enables to change the existing payment term for the customer and its customer users.
 
-* **Receive Notification Messages For The System Mailboxes That Were Configured Incorrectly** -- Enable this option to receive an email notification if synchronization of the system mailbox is unsuccessful as the result of incorrect credentials. 
+* **Impersonate User** --- Enables a back-office user to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
+
+  .. image:: /user/img/system/user_management/user-impersonation-button.png
+     :alt: User impersonation button
+
+* **Receive Notification Messages For The System Mailboxes That Were Configured Incorrectly** --- Enable this option to receive an email notification if synchronization of the system mailbox is unsuccessful as the result of incorrect credentials.
 * **Use Any Billing Address From The Customer User's Address Book** --- Enables a user to select any billing address available in the customer user's address book from the list. 
 * **Use Any Billing Address From The Customer's Address Book** --- Enables a user to select any billing address available in the customer's address book from the list. 
 * **Use Any Shipping Address From The Customer Address Book** --- Enables a user to select any shipping address available in the customer's address book from the list. 

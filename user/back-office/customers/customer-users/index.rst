@@ -37,7 +37,6 @@ Hover over the |IcMore| **More Options** menu to the right of the necessary cust
 * |IcEdit| **Edit** customer user details.
 * |IcDelete| **Delete** existing customer users.
 
-
 Create a Customer User
 ----------------------
 
@@ -102,6 +101,32 @@ You may want to delegate some of the customer user management capabilities to th
 
 .. image:: /user/img/customers/customer_user_roles/CustomerUserRolesManageAccounts_cust.png
    :alt: The list of account management capabilities
+
+Impersonate a Customer User
+---------------------------
+
+For troubleshooting purposes, user impersonation allows back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user. Such back-office user is redirected to the website assigned to the customer user that they are impersonating (i.e. the website where the customer user registered).
+
+.. hint:: Before proceeding, make sure this feature is enabled in the system configuration :ref:`globally <system-configuration-user-impersonation>` or :ref:`per organization <organization-user-settings>`.
+
+You can perform impersonation from the customer user grid, or from the view page of the selected customer.
+
+To impersonate a customer user from the customer user grid, hover over the |IcMore| **More Options** menu to the right of the selected customer user and click |IcImpersonation|.
+
+.. image:: /user/img/customers/customer_user_roles/impersonate-customer-user-grid-icon.png
+   :alt: Impersonating a customer user from the customer user grid
+
+To impersonate a customer user from the customer user view page, click |IcImpersonation| **Log in as a User** on the top right.
+
+.. image:: /user/img/system/user_management/user-impersonation-button.png
+   :alt: Impersonating a customer user from the customer user view page
+
+The storefront session in impersonation mode opens in a new browser tab.
+
+.. image:: /user/img/customers/customer_user_roles/impersonation-mode.png
+   :alt: Impersonation mode in the storefront
+
+To exit impersonation mode, click **Log out** in the blue banner.
 
 .. _user-guide--customers--customer-users--oauth:
 

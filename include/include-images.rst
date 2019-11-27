@@ -557,3 +557,7 @@ Images
 .. |CRMIcon| image:: /user/img/doctypes/crm-icon-logo.png
    :align: middle
    :alt: Available in OroCRM
+
+.. |IcImpersonation| raw:: html
+
+   <i class="fas fa-user-secret" aria-hidden="true"></i>
