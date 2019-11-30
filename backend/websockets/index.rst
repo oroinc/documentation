@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _dev-guide-system-websockets:
 .. _dev-guide-system-websockets-architecture:
 

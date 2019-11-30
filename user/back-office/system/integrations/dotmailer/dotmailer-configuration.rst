@@ -80,8 +80,7 @@ To sync dotmailer integration:
 2.  Select the newly created integration.
 3.  Click **Schedule Sync** in the upper-right corner of the page.
    
-Related Articles
-----------------
+**Related Articles**
 
 - :ref:`dotmailer Overview <user-guide-dotmailer-overview>`
 - :ref:`dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`

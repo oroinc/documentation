@@ -324,8 +324,7 @@ in the Chaplin lifecycle.
 
     For more details, see |Chaplin documentation| and |Client Side Architecture|.
 
-Related Topics
---------------
+**Related Topics**
 
 .. toctree::
     :titlesonly:

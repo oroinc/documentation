@@ -29,7 +29,7 @@ Here, you can perform the following actions:
 .. finish_grid_actions
 
 View Shopping List Details
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To view a specific shopping list in the back-office:
 
@@ -72,7 +72,7 @@ To view a specific shopping list in the back-office:
 7. The **Marketing Activity** section shows any activity of this kind associated with the shopping list.
 
 Manage Shopping List
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 From the shopping List view page, you can perform the following actions for the shopping list:
 
@@ -80,7 +80,7 @@ From the shopping List view page, you can perform the following actions for the 
    :alt: The actions you can perform from the shopping list view page
 
 Add a Line Item from the Shopping List
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To add a line item to the shopping list:
 
@@ -103,7 +103,7 @@ To add a line item to the shopping list:
        :class: with-border
 
 Remove a Line Item from the Shopping List
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To delete a line item from the shopping list:
 
@@ -115,7 +115,7 @@ To delete a line item from the shopping list:
 3. Navigate to the **Shopping List Line Items** section, and click |IcDelete| at the end of the line next to the necessary line item.
 
 Duplicate a Shopping List
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Make a copy of the current shopping list to create multiple similar orders. Do the following:
 
@@ -132,7 +132,7 @@ The copy of the shopping list is created. You can now modify it or convert it in
       :class: with-border
 
 Create an Order from the Shopping List
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On the Shopping List view page, click **Create Order**.
 

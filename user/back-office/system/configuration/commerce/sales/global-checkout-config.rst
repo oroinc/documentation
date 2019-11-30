@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCommerce
+:oro_show_local_toc: false
 
 .. _admin-guide--system-configuration--commerce-sales--checkout--single-page-checkout:
 .. _user-guide--system-configuration--commerce-sales-checkout-global:

@@ -1,6 +1,7 @@
 .. _user-guide--business-intelligence--widgets--opportunity-list:
 
 :oro_documentation_types: OroCRM
+:oro_show_local_toc: false
 
 Opportunities List
 ------------------

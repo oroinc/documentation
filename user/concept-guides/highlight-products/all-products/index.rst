@@ -1,6 +1,7 @@
 .. _sys--conf--commerce--catalog--special-pages:
 
 :oro_documentation_types: OroCommerce
+:oro_show_local_toc: false
 
 Configure All Products Page
 ===========================

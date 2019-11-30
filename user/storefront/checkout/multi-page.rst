@@ -5,8 +5,7 @@ Multi Page Checkout
 
 **Step 1: Billing Information**
 
-1. Enter billing information for the order by selecting an existing address from the address book, or creating a new
-    one.
+1. Enter billing information for the order by selecting an existing address from the address book, or creating a new one.
 
 2. If you wish to use the provided billing address for shipping, select the **Ship to this address** check box.
 

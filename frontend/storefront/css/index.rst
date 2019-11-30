@@ -300,8 +300,7 @@ Themes Settings and Useful Recommendation
 4. Form styles **default theme**:
    package/platform/src/Oro/Bundle/FormBundle/Resources/public/default/scss
 
-Related Topics
---------------
+**Related Topics**
 
 The best practices of the frontend development in Oro applications are provided in the :ref:`Oro Frontend Development Guidelines <dev-doc-frontend-css-frontend-dev-guidelines>`.
 

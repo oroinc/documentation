@@ -10,7 +10,7 @@ The integration between OroCRM and OroCommerce provides seamless experience of t
 
 OroCommerce comes with OroCRM integration enabled out of the box. If you are using OroCRM, you can install OroCommerce on top of it and enable the integration.
 
-OroCommerce customers are treated the same way as OroCRM Business customers. Their data and business transactions are displayed on the Account page, and their activities are added to the account's activity list. Lifetime sales values metric is calculated for OroCommerce customers based on orders placed.
+OroCommerce customers are treated the same way as OroCRM Business customers. Their data and business transactions are displayed on the Account page, and their activities are added to the account's activity list. Lifetime sales values metric is calculated for OroCommerce customers based on placed orders.
 
 When a customer is created or edited at backend, the account can be specified directly. When a new customer is self-registering in the storefront, a new account of the same name will be created automatically.
 

@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCRM, OroCommerce
+:oro_show_local_toc: false
 
 .. _user-guide-dotmailer-single-sign-on:
 
@@ -20,8 +21,7 @@ Once the connection is established, you will be able to see your dotmailer accou
 With the help of single sign-on, there will be no need of logging into dotmailer account every time and it will be possible to access it straight from the Oro application.
 
 
-Related articles
-----------------
+**Related Articles**
 
 - :ref:`dotmailer Overview <user-guide-dotmailer-overview>`
 - :ref:`dotmailer Configuration <user-guide-dotmailer-configuration>`

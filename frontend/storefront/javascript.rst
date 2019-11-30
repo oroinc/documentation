@@ -1,5 +1,7 @@
-JavaScript (RequireJS)
-======================
+:oro_show_local_toc: false
+
+JavaScript
+==========
 
 Javascript in OroCommerce has a modular architecture based on RequireJS, Chaplin, and Backbone.
 

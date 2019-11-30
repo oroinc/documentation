@@ -1,6 +1,7 @@
 .. _user-guide--business-intelligence--widgets--close-revenue:
 
 :oro_documentation_types: OroCRM, OroCommerce
+:oro_show_local_toc: false
 
 Campaigns by Close Revenue
 --------------------------

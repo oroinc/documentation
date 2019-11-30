@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCRM
+:oro_show_local_toc: false
 
 .. _admin-configuration-dotmailer-integration-settings:
 
@@ -25,8 +26,7 @@ To configure dotmailer synchronization settings:
 
 3. Click **Save Settings**.
 
-Related Articles
-----------------
+**Related Articles**
 
 - :ref:`dotmailer Integration Overview <user-guide-dotmailer-overview>`
 - :ref:`Configure dotmailer Integration <user-guide-dotmailer-configuration>`

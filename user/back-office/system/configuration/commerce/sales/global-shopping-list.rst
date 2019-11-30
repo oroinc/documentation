@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCommerce
+:oro_show_local_toc: false
 
 .. _user-guide--system-configuration--commerce-sales-shopping-list--mass-action:
 .. _user-guide--system-configuration--commerce-sales-shopping-list-global:

@@ -210,7 +210,7 @@ Import Product Attributes
    :start-after: start_import
 
 
-**Related topics**
+**Related Topics**
 
 * :ref:`Using product attributes in product families <product--product-families--product-attribute-in-families>`
 * :ref:`Translate Product Attribute Labels <localization--translations--labels>`

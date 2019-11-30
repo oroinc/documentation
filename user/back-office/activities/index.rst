@@ -13,7 +13,9 @@ In Oro application, capabilities for managing activities are quite wide. Mainly,
 .. image:: /user/img/activities/activities.png
    :alt: The types of activities available in the Oro application
 
-To each activity, you can add links to the related records, such as a link to an email with the discussion in which the activity emerged. These links are called **contexts**, and they make it much easier to take account of all the details connected with the activity. 
+To each activity, you can add links to the related records, such as a link to an email with the discussion in which the activity emerged. These links are called **contexts**, and they make it much easier to take account of all the details connected with the activity.
+
+.. note:: Keep in mind that the ability to view and edit activities depends on specific roles and permissions defined in the system.
 
 The Activities topic introduces you to the following types of activities:
 

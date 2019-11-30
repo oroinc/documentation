@@ -1,6 +1,7 @@
 .. _user-guide--business-intelligence--widgets--opportunity-by-status:
 
 :oro_documentation_types: OroCRM
+:oro_show_local_toc: false
 
 Opportunities by Status
 -----------------------
