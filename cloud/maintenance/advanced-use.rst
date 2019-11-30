@@ -254,6 +254,30 @@ Webserver configuration can be modified, as illustrated below:
    * `log_level` — Blackfire agent log verbosity.
    * `log_path` — path to the log file location.
 
+.. note:: Allowing access via WAF does not affect simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connectios for a client IP or URI on the server.
+
+Mail Settings
+-------------
+You can customize mail settings for the application:
+
+.. code-block:: none
+    :linenos:
+
+    ---
+    orocloud_options:
+      mail:
+        whitelist:
+          - 'example.com'
+          - 'examlpe.org'
+          - 'example.net'
+
+Where:
+
+* **mail** is a hash of mail-related settings
+* **whitelist** is an array of whitelisted mail domains
+
+.. note:: On production environments all domains are whitelisted. When you create a whitelist, it blocks all mail except for listed domains.
+
 .. _orocloud-maintenance-advanced-use-sanitization-conf:
 
 Sanitizing Configuration
@@ -367,4 +391,3 @@ You can use separate synonym lists for each index, or use '*' as index name in o
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
-
