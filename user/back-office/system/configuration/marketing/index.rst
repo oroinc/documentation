@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCRM, OroCommerce
+:oro_show_local_toc: false
 
 .. _configuration--guide--marketing--configuration:
 
@@ -16,10 +17,9 @@ Learn how to enable and set up marketing-related features such as marketing list
 
 * :ref:`Features <configuration--guide--marketing--configuration--general-setup>`
 
-Related Articles
-----------------
+**Related Articles**
 
-:ref:`Website Tracking Settings <admin-configuration-tracking-settings>`
+* :ref:`Website Tracking Settings <admin-configuration-tracking-settings>`
 
 .. finish_landing_marketing
 

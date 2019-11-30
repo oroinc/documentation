@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _bundle-docs-platform-email-bundle:
 
 OroEmailBundle

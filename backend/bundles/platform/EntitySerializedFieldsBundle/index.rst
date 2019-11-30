@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _bundle-docs-platform-entity-serialized-bundle:
 
 OroEntitySerializedFieldsBundle

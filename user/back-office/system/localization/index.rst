@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCRM, OroCommerce
+:oro_show_local_toc: false
 
 .. _sys--config--sysconfig--general-setup--localization:
 .. _doc-user-management-users-configuration-localization:

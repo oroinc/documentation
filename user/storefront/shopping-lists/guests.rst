@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _frontstore-guide--shopping-lists-guest:
 
 Shopping Lists for Guest Users

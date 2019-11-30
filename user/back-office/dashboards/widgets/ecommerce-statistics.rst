@@ -1,6 +1,7 @@
 .. _user-guide--business-intelligence--widgets--ecommerce-statistics:
 
 :oro_documentation_types: OroCRM, OroCommerce
+:oro_show_local_toc: false
 
 Ecommerce Statistics
 --------------------
@@ -33,7 +34,7 @@ You can adjust the following settings for the ecommerce statistics widget:
   * Order conversion rate
   * Customer conversion rate
   * Revenue
-  * Orders places
+  * Placed orders
   * Discounted orders
   * Average order value
   * Abandoned revenue

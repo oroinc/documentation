@@ -46,8 +46,7 @@ To tune the tracking configuration:
 
 .. finish
 
-Related Articles
-^^^^^^^^^^^^^^^^
+**Related Articles**
 
 * :ref:`Marketing Features <marketing-system-configuration>`
 * :ref:`Tracking Websites <user-guide-marketing-tracking>`

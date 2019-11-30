@@ -21,7 +21,7 @@ On a landing page, you can:
 
 * Share a promo (e.g., use a promo code to get 10% discount off the *Winter items*).
 
-* Offer an ebook download, webinar registration, or notification of a new product line launch in exchange to registering an account in your eCommerce website.
+* Offer an ebook download, webinar registration, or notification of a new product line launch in exchange for registering an account in your eCommerce website.
 
 .. _user-guide--landing-pages-create:
 

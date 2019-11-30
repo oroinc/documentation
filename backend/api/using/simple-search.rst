@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _simple_search:
 
 Simple Search API

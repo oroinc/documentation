@@ -32,8 +32,7 @@ Read more on RFQs in the topic below:
 * :ref:`Manage RFQs <mc-sales-rfq-manage>`
 * :ref:`Use RFQ Workflows <mc-sales-rfq-wf>`
 
-Related Topics
---------------
+**Related Topics**
 
 * :ref:`Quotes <user-guide--sales--quotes>`
 * :ref:`Orders <user-guide--sales--orders>`

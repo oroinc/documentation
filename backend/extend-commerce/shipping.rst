@@ -173,13 +173,18 @@ Add an Installer
 
 An installer ensures that upon the application installation, the database will contain the entity that you defined within your bundle.
 
-Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic to apply the changes without migration and generate an installer file based on the current schema of the DB. After you complete the process, you will have the <bundle_root>/Migrations/Schema/FastShippingBundleInstaller.php class with the following content:
+Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic to apply the changes without migration and generate an installer file based on the current schema of the DB.
+
+.. note:: If you have not performed the steps mentioned in :ref:`How to generate an installer <installer_generate>`, because you already have the installer file, then make sure to run the ``php bin/console oro:migration:load --force`` command to apply the changes from the file.
+
+After you complete the process, you will have the <bundle_root>/Migrations/Schema/FastShippingBundleInstaller.php class with the following content:
 
 .. oro_integrity_check:: d9330c1d8d52507ccd51f8838043ad649d3b5d7f
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Migrations/Schema/FastShippingBundleInstaller.php
        :language: php
        :linenos:
+
 
 Check That the Integration is Created Successfully
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

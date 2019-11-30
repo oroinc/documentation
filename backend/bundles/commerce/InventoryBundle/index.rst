@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _bundle-docs-commerce-inventory-bundle:
 
 OroInventoryBundle

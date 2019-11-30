@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _WYSIWYG-Field:
 
 WYSIWYG Field
@@ -17,6 +19,7 @@ When using Entity Management UI, the system takes care of managing the additiona
 
 References
 ----------
+
 |WYSIWYG|
 |GrapesJS|
 

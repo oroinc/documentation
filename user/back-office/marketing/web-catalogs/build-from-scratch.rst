@@ -70,7 +70,6 @@ To set up content nodes in the back-office:
 
 This way, we create all the required second level menus.  
 
-.. image:: /user/img/marketing/web_catalogs/use_case/Catalog.png
 
 Each of such levels can be populated with more levels, or nodes, if necessary, and each node can have a page (:ref:`system <user-guide--marketing--web-catalog--content-variant-system-page>`, :ref:`landing <user-guide--marketing--web-catalog--content-variant-landing page>`, :ref:`product <user-guide--marketing--web-catalog--content-variant-product-page>`), a :ref:`product collection <user-guide--marketing--web-catalog--content-variant-product-collection>`, or a :ref:`category <user-guide--marketing--web-catalog--content-variant-category>` mapped into it.
 

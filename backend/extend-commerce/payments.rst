@@ -189,7 +189,11 @@ Add an Installer
 
 An installer ensures that upon the application installation, the database will contain the entity that you defined within your bundle.
 
-Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic. After you complete it, you will have the class <bundle_root>/Migrations/Schema/CollectOnDeliveryBundleInstaller.php with the following content:
+Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic to apply the changes without migration and generate an installer file based on the current schema of the DB.
+
+.. note:: If you have not performed the steps mentioned in :ref:`How to generate an installer <installer_generate>`, because you already have the installer file, then make sure to run the ``php bin/console oro:migration:load --force`` command to apply the changes from the file.
+
+ After you complete it, you will have the class <bundle_root>/Migrations/Schema/CollectOnDeliveryBundleInstaller.php with the following content:
 
 .. oro_integrity_check:: 5179cea0cc73d864dc7e3d64223431b399e1644f
 

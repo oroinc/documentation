@@ -2,7 +2,7 @@
 
 .. begin_multi_currency_opportunities
 
-Multi-currency Opportunities
+Multi-Currency Opportunities
 ============================
 
 Multi-currency feature is available for Enterprise Edition only. You can find a complete guide on multi-currency in :ref:`multi-currency guide <user-guide-multi-currency>`.

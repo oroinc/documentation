@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCommerce
+:oro_show_local_toc: false
 
 .. _sys--conf--commerce--sales--contacts:
 .. _user-guide--system-configuration--display-sales-rep-info--display-options:

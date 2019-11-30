@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCommerce
+:oro_show_local_toc: false
 
 .. _sys--commerce--orders--previously-purchased--main:
 

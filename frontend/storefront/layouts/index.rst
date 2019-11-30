@@ -721,8 +721,7 @@ Then, we modified the code as follows:
         </div>
     {% endblock %}
 
-Related Topics
---------------
+**Related Topics**
 
 .. toctree::
     :titlesonly:

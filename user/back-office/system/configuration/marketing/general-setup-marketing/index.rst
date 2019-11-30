@@ -1,4 +1,5 @@
 :oro_documentation_types: OroCRM, OroCommerce
+:oro_show_local_toc: false
 
 .. _configuration--guide--marketing--configuration--general-setup:
 .. _marketing-system-configuration:
@@ -25,8 +26,7 @@ You can customize marketing features, such as :ref:`marketing lists <user-guide-
 
 4. Click **Save Setting**.
 
-Related Articles
-^^^^^^^^^^^^^^^^
+**Related Articles**
 
 * :ref:`Tracking Settings <admin-configuration-tracking-settings>`
 * :ref:`Tracking Websites <user-guide-marketing-tracking>`

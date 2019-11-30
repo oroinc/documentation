@@ -1,6 +1,7 @@
 .. _user-guide--business-intelligence--widgets--average-lifetime-sales:
 
 :oro_documentation_types: OroCRM, OroCommerce
+:oro_show_local_toc: false
 
 Average Lifetime Sales
 ----------------------

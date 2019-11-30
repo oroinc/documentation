@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _web-api--doc:
 
 Documenting API Resources

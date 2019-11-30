@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 :orphan:
 
 .. _op-structure--cache:
