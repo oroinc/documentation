@@ -132,6 +132,29 @@ seconds keeps broken message that have to be delayed and redelivered
 later. You can still have more queues by explicitly configuring the message
 processor ``destinationName`` option.
 
+Default Queue Presets
+---------------------
+
+Exchanges
+^^^^^^^^^
+
++---------------------+-------------------+----------------------------------------+
+| Name                | Type              | Features                               |
++=====================+===================+========================================+
+| oro.default         | fanout            | durable: true                          |
++---------------------+-------------------+----------------------------------------+
+| oro.default.delayed | x-delayed-message | durable: true; x-delayed-type: fanout  |
++---------------------+-------------------+----------------------------------------+
+
+Queues
+^^^^^^
+
++---------------------+----------------------------------+
+| Name                | Features                         |
++=====================+==================================+
+| oro.default         | durable: true; x-max-priority: 4 |
++---------------------+----------------------------------+
+
 Delaying Messages
 -----------------
 
@@ -218,8 +241,10 @@ RabbitMQ Useful Hints
    :maxdepth: 1
 
    rabbitmq-command-lines
+   rabbitmq-exchanges
    divide-single-queue-to-separate-queues
    rabbit-mq-in-production
+   redeliver-with-limited-attempts
    backup-and-restore
    troubleshooting
 
