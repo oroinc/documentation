@@ -54,5 +54,6 @@ You can also customize the content of :ref:`Customer Login Page <customer-login-
    landing-pages/index
    content-blocks/index
    customer-login-pages/index
+   content-widgets/index
    digital-assets/index
 
