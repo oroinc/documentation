@@ -140,7 +140,7 @@ For the Buy X Get Y (Same Product) discount, provide the following information:
 
   * The discount for *X+Y Total* will equal $2 ($1 for each bundle of 5).
 
-    .. image:: /user/img/marketing/promotions/EachYItemSteparately.png
+    .. image:: /user/img/marketing/promotions/XYTotal.png
        :alt: The illustration of a promotion for the x+y total
 
 * **Limit, Times** --- Provide the quantity of discounted groups (X+Y) of the same type eligible for a discount in a line item/order. For example, when the limit is set to 2 and a buyer orders 3 groups of 3+2 items (15 in total), they will be charged the discounted price for 2 groups out of 3 and will pay the full price for the remaining one group.

@@ -29,7 +29,7 @@ With the customer user role, you can manage the following :ref:`access- and perm
 
 * Profile management permission: A user may be able to view and edit their user profile when the **Self-Managed** option is enabled for their role.
 * Permissions to view workflows and/or perform transitions through the workflow steps.
-* Data access/management permissions and capabilities. 
+* Data access/management permissions and capabilities.
 
 .. _user-guide--customers--customer-user-roles--create:
 
@@ -37,7 +37,7 @@ Create a Customer User Role
 ---------------------------
 
 To create a new customer user role:
- 
+
 1. Navigate to **Customers > Customer User Roles** in the main menu.
 2. Click **Create Customer User Role**.
 
@@ -53,7 +53,7 @@ To create a new customer user role:
 
    .. note:: Please note that there are two ways to control the capability of a customer user to update their profile details in the storefront. One is defined by the **Edit** permission for customer users. When set to **Same Level/All Levels**, editing will become possible under **Account > All Users** in the storefront. The second one is defined by the **Update User Profile** capability which, when enabled, gives the customer user permissions to update details under **Account > My Profile** in the storefront.
 
-5. In the **Workflows** section, specify access levels for workflows and workflow transitions. There are two permissions for workflows, **view** and **perform transitions**. By default, all workflow access levels are set to **None**. Choose the workflow or the transition to which you want to assign different permissions, click on the action name and select the required access level from the list. 
+5. In the **Workflows** section, specify access levels for workflows and workflow transitions. There are two permissions for workflows, **view** and **perform transitions**. By default, all workflow access levels are set to **None**. Choose the workflow or the transition to which you want to assign different permissions, click on the action name and select the required access level from the list.
 
 6. In the **Customer Users** section, select check boxes in front of the customer users to whom you want to assign this role.
 
@@ -67,7 +67,7 @@ To view all customer user roles:
 Navigate to **Customers > Customer User Roles** in the main menu.
 
 You can view, edit and :ref:`filter <doc-grids-actions-filters-apply>` every item in the Customer User Roles record table:
-   
+
 * To view, click on the item once (or |IcView| at the end of the row) to open its details page.
 * To edit, click |IcEdit| at the end of the row.
 * To filter, click |IcFilter| above the table on your right, and specify the query.
@@ -88,4 +88,3 @@ You can view, edit and :ref:`filter <doc-grids-actions-filters-apply>` every ite
 .. `Admin and System Capabilities <admin-capabilities>`
 
 .. finish
-
