@@ -12,6 +12,8 @@ Software Development Lifecycle (SDLC) involves multiple activities, such as plan
 
 Let’s consider the main differences between these environments and why you may need them all during eCommerce implementation.
 
+.. _cloud-environments-production:
+
 Production Environment
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -21,15 +23,21 @@ Now, before you can deploy your code from your **development environment** into 
 
 The second activity you usually need to do before placing your code to production is the **user-acceptance testing**. This is when you check the entire system in the exact way it is going to be used in production, including live data volumes and types of data as well as user behavior. This type of testing requires a **staging environment**, which is identical to your production environment except that it’s not publicly accessible to end-users.
 
+.. _cloud-environments-development:
+
 Development Environment
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 A **development environment** is configured to enable developers to write code quickly, verify it by creating basic tests, and be productive. This environment resources are much smaller than what it takes to run an entire application in real-life implementation. It also features developer-specific tools that may at times hinder rigorous QA validation. And most importantly, the development environment is constantly changing – with new functionality being added all the time – which makes it difficult for QA team to run time-consuming tests, e.g., regression or integration tests, without disrupting the development process.
 
+.. _cloud-environments-testing:
+
 Testing Environment
 ^^^^^^^^^^^^^^^^^^^
 
 A **testing environment** is where the QA team can use a variety of testing tools to run all their different tests over the application code taken from the development environment. While developers check their code for simple bugs before passing it for quality assurance, QA engineers execute more complex and time-consuming types of tests to check the compatibility of the new and old code, the correct integration of different modules, the system’s performance, etc. Running such tests on the development environment would lead to a huge waste of the developers’ time.
+
+.. _cloud-environments-staging:
 
 Staging Environment
 ^^^^^^^^^^^^^^^^^^^
@@ -67,3 +75,4 @@ The following table outlines what features are included in different types of Or
   "App Dev Mode"," "," ","x","x"
   "Live data","x"," "," "," "
 
+.. note:: To use a different default configurations based on the application environment type, please see the :ref:`Environment Type Based Application Configuration <environment-type-based-configuration>` topic.

@@ -126,6 +126,7 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
 
    manual-installation/index
    web-server-config/index
+   environment-type-based-configuration
    monitoring/index
    vagrant
 
