@@ -26,4 +26,4 @@ For example:
    :hidden:
 
    how-to-create-content-widget-type
-   user-guide
+

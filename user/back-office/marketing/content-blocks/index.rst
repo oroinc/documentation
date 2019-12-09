@@ -27,14 +27,14 @@ To edit a defined content block:
 
    .. note:: To enable/disable the content block, select/clear the **Enabled** check box.
  
- 4. In the *Restrictions* section, you can specify or edit visibility restrictions for the content block.
+4. In the *Restrictions* section, you can specify or edit visibility restrictions for the content block.
    
    By default, the content block is displayed for any localization, on any website, and for any customer.
    To make OroCommerce apply a content block to the storefront only for the particular combination of these facts, create a restriction by selecting all or some of the following: target localization, website, customer, or customer group.
 
    .. note:: Only one field must be chosen for customers at a time, either a customer group or a customer.
 
- 5. In the *Content Variants* section, you can add (click **Add Content**) or remove (click |IcDeactivate|) various content variants for the content block. Once you add more than one content variant, you will have to apply restrictions to any non-default variants. These restrictions help you set up the conditions where content should override the default option.
+5. In the *Content Variants* section, you can add (click **Add Content**) or remove (click |IcDeactivate|) various content variants for the content block. Once you add more than one content variant, you will have to apply restrictions to any non-default variants. These restrictions help you set up the conditions where content should override the default option.
 
    .. warning:: Never leave the restrictions for non-default variant empty. This may cause unexpected priority collision between the default and non-default variant.
 

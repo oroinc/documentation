@@ -5049,6 +5049,14 @@ Links (Dev)
 
    <a href="https://www.rabbitmq.com/plugins.html" target="_blank">RabbitMQ Plugins</a>
 
+.. |RabbitMQ AMQP Concepts| raw:: html
+
+   <a href="https://www.rabbitmq.com/tutorials/amqp-concepts.html" target="_blank">RabbitMQ documentation</a>
+
+.. |RabbitMQ AMQP Model Explained| raw:: html
+
+   <a href="https://www.rabbitmq.com/tutorials/amqp-concepts.html" target="_blank">RabbitMQ AMQP Model Explained</a>
+
 .. |here6| raw:: html
 
    <a href="https://github.com/oroinc/OroMessageQueueBundle/blob/master/Resources/doc/container_in_consumer.md" target="_blank">here</a>
