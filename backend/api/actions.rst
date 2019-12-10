@@ -763,7 +763,7 @@ The context class: |CustomizeLoadedDataContext|.
 
 The main processor class: |CustomizeLoadedDataProcessor|.
 
-As example of a processor used to modify the loaded data: |ComputePrimaryField| or |Add a Computed Field|. Run ``php bin/console oro:api:debug customize_loaded_data`` to display other processors registered in this action.
+As example of a processor used to modify the loaded data: |ComputePrimaryField| or :ref:`Add a Computed Field <add-computed-field>`. Run ``php bin/console oro:api:debug customize_loaded_data`` to display other processors registered in this action.
 
 The ``collection`` tag attribute can be used for processors of this action to process all primary entities in `get\_list <#get_list-action>`__ or `get\_subresource <#get_subresource-action>`__ actions or all entities in ``to-many`` associations for `get <#get-action>`__, `get\_list <#get_list-action>`__ or `get\_subresource <#get_subresource-action>`__ actions. An example of a case when using of this attribute can be helpful is if you want to execute one SQL query for all entities in a collection to get an additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
 

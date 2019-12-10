@@ -37,6 +37,7 @@ extensions = [
     'sensio.sphinx.phpcode',
     'oro.integrity_check',
     'builders.orohtml',
+    'builders.orohtml-dev',
     'ext.orotoc',
     'ext.assets-timestamp',
     'ext.sitemap',

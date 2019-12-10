@@ -107,10 +107,6 @@ Links (User)
 
    <a href="https://mailchimp.com/help/customize-email-campaign-urls/?_ga=2.63720488.668787307.1531314044-10372005.1530783947" target="_blank">campaign URLs</a>
 
-.. |code| raw:: html
-
-   <a href="https://github.com/orocommerce/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Migrations/Data/ORM/LoadHomePageSlider.php" target="_blank">code</a>
-
 .. |configuration| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/views/layouts/blank/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>

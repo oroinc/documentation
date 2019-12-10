@@ -1168,99 +1168,6 @@ Links (Dev)
 
    <a href="https://github.com/doctrine/doctrine2/blob/master/lib/Doctrine/ORM/Query/QueryExpressionVisitor.php" target="_blank">Doctrine QueryExpressionVisitor</a>
 
-
-.. |How to| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md" target="_blank">How to</a>
-
-.. |Turn on API for an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#turn-on-api-for-an-entity" target="_blank">Turn on API for an Entity</a>
-
-.. |Turn on API for an Entity Disabled in "Resources/config/oro/entity.yml| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#turn-on-api-for-an-entity-disabled-in-resourcesconfigoroentityyml" target="_blank">Turn on API for an Entity Disabled in "Resources/config/oro/entity.yml</a>
-
-.. |Enable Advanced Operators for String Filter| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#enable-advanced-operators-for-string-filter" target="_blank">Enable Advanced Operators for String Filter</a>
-
-.. |Enable Case-insensitive String Filter| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#enable-case-insensitive-string-filter" target="_blank">Enable Case-insensitive String Filter</a>
-
-.. |Change an ACL Resource for an Action| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#change-an-acl-resource-for-an-action" target="_blank">Change an ACL Resource for an Action</a>
-
-.. |Disable Access Checks for an Action| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#disable-access-checks-for-an-action" target="_blank">Disable Access Checks for an Action</a>
-
-.. |Disable an Entity Action| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#disable-an-entity-action" target="_blank">Disable an Entity Action</a>
-
-.. |Change the Delete Handler for an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#change-the-delete-handler-for-an-entity" target="_blank">Change the Delete Handler for an Entity</a>
-
-.. |Change the Maximum Number of Entities that Can Be Deleted by One Request| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#change-the-maximum-number-of-entities-that-can-be-deleted-by-one-request" target="_blank">Change the Maximum Number of Entities that Can Be Deleted by One Request</a>
-
-.. |Configure a Nested Object| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-a-nested-object" target="_blank">Configure a Nested Object</a>
-
-.. |Configure a Nested Association| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-a-nested-association" target="_blank">Configure a Nested Association</a>
-
-.. |Configure an Extended Many-To-One Association| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-an-extended-many-to-one-association" target="_blank">Configure an Extended Many-To-One Association</a>
-
-.. |Configure an Extended Many-To-Many Association| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-an-extended-many-to-many-association" target="_blank">Configure an Extended Many-To-Many Association</a>
-
-.. |Configure an Extended Multiple Many-To-One Association| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-an-extended-many-to-one-association" target="_blank">Configure an Extended Many-To-Many Association</a>
-
-.. |Add a Custom Controller| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#add-a-custom-controller" target="_blank">Add a Custom Controller</a>
-
-.. |Add a Custom Route| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#add-a-custom-route" target="_blank">Add a Custom Route</a>
-
-.. |Using a Non-primary Key to Identify an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#using-a-non-primary-key-to-identify-an-entity" target="_blank">Using a Non-primary Key to Identify an Entity</a>
-
-.. |Enable API for an Entity Without Identifier| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#enable-api-for-an-entity-without-identifier" target="_blank">Enable API for an Entity Without Identifier</a>
-
-.. |Enable Custom API| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#enable-custom-api" target="_blank">Enable Custom API</a>
-
-.. |Add a Predefined Identifier for API Resource| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#add-a-predefined-identifier-for-api-resource" target="_blank">Add a Predefined Identifier for API Resource</a>
-
-.. |Add a Computed Field| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#add-a-computed-field" target="_blank">Add a Computed Field</a>
-
-.. |Disable HATEOAS| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#disable-hateoas" target="_blank">Disable HATEOAS</a>
-
 .. |CORS preflight requests| raw:: html
 
    <a href="https://www.w3.org/TR/cors/#resource-preflight-requests" target="_blank">CORS preflight requests</a>
@@ -2094,10 +2001,6 @@ Links (Dev)
 .. |routing.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/config/oro/routing.yml" target="_blank">routing.yml</a>
-
-.. |API request type| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/request_type.md" target="_blank">API request type</a>
 
 .. |EntityIdResolverInterface| raw:: html
 
@@ -4775,7 +4678,7 @@ Links (Dev)
 
 .. |CustomDataTypeCompleterInterface| raw:: html
 
-  <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/ApiBundle/Processor/GetConfig/CompleteDefinition/CustomDataTypeCompleterInterface.php" target="_blank">CustomDataTypeCompleterInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/GetConfig/CompleteDefinition/CustomDataTypeCompleterInterface.php" target="_blank">CustomDataTypeCompleterInterface</a>
 
 .. |markdown| raw:: html
 

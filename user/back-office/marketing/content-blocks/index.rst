@@ -9,7 +9,7 @@ Content Blocks
 
 Content Blocks are the foundation of your site, and they can help create a custom layout. In Oro applications, you can modify the existing content blocks, or create your own.
 
-.. note:: Creating a new content block requires developers' assistance. As a sample, use Home Page Slider content block, the |code| and |configuration| in the yaml file that helps embed it into the website homepage.
+.. note:: Creating a new content block requires developers' assistance. As a sample, use Home Page Slider content block, |configuration| in the yaml file that helps embed it into the website homepage.
 
 To edit a defined content block:
 

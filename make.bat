@@ -28,6 +28,7 @@ if "%1" == "help" (
 	echo.Please use `make ^<target^>` where ^<target^> is one of
 	echo.  html       to make standalone HTML files
 	echo.  orohtml    to make standalone HTML files with Oro requirements ^(disabled internal search^)
+    echo.  orohtml-dev to make standalone HTML files with Oro requirements ^(disabled internal search^)
 	echo.  dirhtml    to make HTML files named index.html in directories
 	echo.  singlehtml to make a single large HTML file
 	echo.  pickle     to make pickle files
@@ -65,6 +66,15 @@ if "%1" == "html" (
 if "%1" == "orohtml" (
         mkdir %BUILDDIR%
 	%SPHINXBUILD% -b orohtml %ALLSPHINXOPTS% %BUILDDIR%/html -w %BUILDDIR%/sphinxbuild.log
+	if errorlevel 1 exit /b 1
+	echo.
+	echo.Build finished. The HTML pages are in %BUILDDIR%/html.
+	goto end
+)
+
+if "%1" == "orohtml-dev" (
+        mkdir %BUILDDIR%
+	%SPHINXBUILD% -b orohtml-dev %ALLSPHINXOPTS% %BUILDDIR%/html -w %BUILDDIR%/sphinxbuild.log
 	if errorlevel 1 exit /b 1
 	echo.
 	echo.Build finished. The HTML pages are in %BUILDDIR%/html.
