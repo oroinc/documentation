@@ -17,8 +17,8 @@ Related Documentation
 * |Create Entity Aliases|
 * |Create Entity Class Name Provider|
 
-.. Events <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/events.md
-.. Entity structure data provider <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_structure_data_provider.md
+.. Events <https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/EntityBundle/Resources/doc/events.md
+.. Entity structure data provider <https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/EntityBundle/Resources/doc/entity_structure_data_provider.md
 
 * |Resolve ORM Query Hints|
 * |Create a Dictionary|

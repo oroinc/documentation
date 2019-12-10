@@ -704,7 +704,7 @@ The following steps describe how to create such API resources:
 Enable Custom API
 -----------------
 
-Before you begin, ensure that you are familiar with |API request type|.
+Before you begin, ensure that you are familiar with :ref:`The Request Type <api-request-type>`.
 
 Let us consider a case when you need API for integration with some ERP system. In this case,
 to simplify the development and to avoid unnecessary API calls, your API resources should have the same identifiers as the ERP system. The easiest way to achieve this is to create the ``erpId`` field for each entity and map this field as the identifier of API resource via the :ref:`identifier_field_names <using-a-non-primary-key-to-identify-an-entity>` configuration option. But the drawback of this

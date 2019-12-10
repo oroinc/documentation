@@ -19,6 +19,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  orohtml            to make standalone HTML files with Oro requirements"
+	@echo "  orohtml-dev        to make standalone HTML files with Oro requirements. All files will be suffixed with .html"
 	@echo "  html               to make standalone HTML files"
 	@echo "  dirhtml            to make HTML files named index.html in directories"
 	@echo "  singlehtml         to make a single large HTML file"
@@ -49,6 +50,12 @@ html:
 
 orohtml:
 	$(SPHINXBUILD) -b orohtml $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+
+orohtml-dev:
+	$(SPHINXBUILD) -b orohtml-dev $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 

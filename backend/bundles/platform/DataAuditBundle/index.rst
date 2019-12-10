@@ -14,7 +14,7 @@ Related Documentation
 * |Additional Fields|
 * |Add New Auditable Types|
 
-.. Data Audit Filter <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataAuditBundle/Resources/doc/segment.md
+.. Data Audit Filter <https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/DataAuditBundle/Resources/doc/segment.md
 .. comment: there's an article on entity documentation but in :ref:`CRM documentation <data-audit>`
 
 .. include:: /include/include-links-dev.rst

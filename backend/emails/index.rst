@@ -238,8 +238,7 @@ processor performs the following steps:
 #. The sent email is persisted to the database storing all necessary information to be able to
    view it again in the future through the user interface.
 
-#. All the persisted data is returned as an instance of the
-   :class:`Oro\\EmailBundle\\Entity\\EmailUser`.
+#. All the persisted data is returned as an instance of the `Oro\\EmailBundle\\Entity\\EmailUser`.
 
 Receive Email Notifications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

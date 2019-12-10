@@ -14,7 +14,7 @@ Related Documentation
 * |Config Management|
 * |Add a New Configuration Scope|
 
-.. Conditions https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/reference/conditions.md
+.. Conditions https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ConfigBundle/Resources/doc/reference/conditions.md
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
