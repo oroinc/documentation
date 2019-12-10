@@ -30,7 +30,7 @@ class CopyrightContentWidgetTypeTest extends \PHPUnit\Framework\TestCase
 
     public function testIsInline(): void
     {
-        $this->assertFalse($this->contentWidgetType->isInline());
+        $this->assertTrue($this->contentWidgetType->isInline());
     }
 
     public function testGetWidgetData(): void

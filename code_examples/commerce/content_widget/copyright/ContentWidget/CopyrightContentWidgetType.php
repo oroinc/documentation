@@ -48,4 +48,12 @@ class CopyrightContentWidgetType extends AbstractContentWidgetType
     {
         return $formFactory->create(FormType::class);
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isInline(): bool
+    {
+        return true;
+    }
 }
