@@ -739,8 +739,8 @@ To do this, you need to perform the following:
           api_doc_views:
               erp_rest_json_api:
                   label: ERP Integration
+                  underlying_view: rest_json_api
                   headers:
-                      Content-Type: application/vnd.api+json
                       X-Integration-Type: ERP
                   request_type: ['rest', 'json_api', 'erp']
 
@@ -795,10 +795,15 @@ To do this, you need to perform the following:
               - { name: oro.api.processor, action: create, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: update, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: get_subresource, group: initialize, priority: 250 }
+              - { name: oro.api.processor, action: delete_subresource, group: initialize, priority: 250 }
+              - { name: oro.api.processor, action: add_subresource, group: initialize, priority: 250 }
+              - { name: oro.api.processor, action: update_subresource, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: get_relationship, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: delete_relationship, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: add_relationship, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: update_relationship, group: initialize, priority: 250 }
+              - { name: oro.api.processor, action: not_allowed, group: initialize, priority: 250 }
+              - { name: oro.api.processor, action: options, group: initialize, priority: 250 }
 
 
 7. Execute the ``cache:clear`` command to apply the changes and the ``oro:api:doc:cache:clear`` command to build API Sandbox.
