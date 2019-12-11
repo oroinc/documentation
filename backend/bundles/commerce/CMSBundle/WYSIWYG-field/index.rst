@@ -20,8 +20,8 @@ When using Entity Management UI, the system takes care of managing the additiona
 References
 ----------
 
-|WYSIWYG|
-|GrapesJS|
+* |WYSIWYG|
+* |GrapesJS|
 
 
 .. toctree::

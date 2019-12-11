@@ -7,6 +7,22 @@ Links (Cloud)
 
 .. begin
 
+.. |Production Environment| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/environments/#production-environment" target="_blank">Production Environment</a>
+
+.. |Development Environment| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/environments/#development-environment" target="_blank">Development Environment</a>
+
+.. |Testing Environment| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/environments/#testing-environment" target="_blank">Testing Environment</a>
+
+.. |Staging Environment| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/environments/#staging-environment" target="_blank">Staging Environment</a>
+
 .. |Custom Fields| raw:: html
 
    <a href="https://cloud.google.com/logging/docs/view/overview#custom-fields" target="_blank">Custom Fields</a>

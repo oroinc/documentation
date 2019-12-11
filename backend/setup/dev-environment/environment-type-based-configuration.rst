@@ -5,10 +5,10 @@ Environment Type Based Application Configuration
 
 Use different default configurations based on the environment where the application is deployed:
 
-* :ref:`Production Environment <cloud-environments-production>`
-* :ref:`Development Environment <cloud-environments-development>`
-* :ref:`Testing Environment <cloud-environments-testing>`
-* :ref:`Staging Environment <cloud-environments-staging>`
+* |Production Environment|
+* |Development Environment|
+* |Testing Environment|
+* |Staging Environment|
 * Local Development Machine
 * etc.
 
@@ -50,3 +50,5 @@ For example:
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-cloud.rst
+   :start-after: begin
