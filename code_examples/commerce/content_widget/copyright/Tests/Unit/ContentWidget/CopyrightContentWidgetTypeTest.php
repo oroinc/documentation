@@ -64,4 +64,18 @@ class CopyrightContentWidgetTypeTest extends \PHPUnit\Framework\TestCase
             $this->contentWidgetType->getBackOfficeViewSubBlocks(new ContentWidget(), $twig)
         );
     }
+
+    public function testGetDefaultTemplate(): void
+    {
+        $contentWidget = new ContentWidget();
+        $contentWidget->setSettings(['param' => 'value']);
+
+        $twig = $this->createMock(Environment::class);
+        $twig->expects($this->once())
+            ->method('render')
+            ->with('@ACMECopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings())
+            ->willReturn('rendered template');
+
+        $this->assertEquals('rendered template', $this->contentWidgetType->getDefaultTemplate($contentWidget, $twig));
+    }
 }

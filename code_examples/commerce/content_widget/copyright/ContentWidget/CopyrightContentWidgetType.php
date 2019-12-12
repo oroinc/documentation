@@ -52,6 +52,14 @@ class CopyrightContentWidgetType extends AbstractContentWidgetType
     /**
      * {@inheritdoc}
      */
+    public function getDefaultTemplate(ContentWidget $contentWidget, Environment $twig): string
+    {
+        return $twig->render('@ACMECopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings());
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function isInline(): bool
     {
         return true;
