@@ -229,6 +229,14 @@ Example:
 
     **The required field.**
 
+Use the ``{@feature}`` tag to add documentation depends on a feature (see :ref:`FeatureToggleBundle <bundle-docs-platform-feature-toggle-bundle>`). The full signature of this tag is ``{@feature:expression}some text{@/feature}``. The expression can contain the following operators:
+
+-  ``&`` - logical AND
+-  ``|`` - logical OR
+-  ``!`` - logical NOT
+
+For example, to add a text when ``feature1`` is enabled and ``feature2`` is disabled, use the following expression: ``feature1&!feature2``.
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
