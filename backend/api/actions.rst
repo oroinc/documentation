@@ -439,7 +439,7 @@ An example how to register a processor to build a form builder:
         arguments:
             - '@oro_api.form_helper'
         tags:
-            - { name: oro.api.processor, action: update_subresource, group: transform_data, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, association: items, priority: 100 }
+            - { name: oro.api.processor, action: update_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, priority: 100 }
 
 .. _add-subresource-action:
 
@@ -494,7 +494,7 @@ An example how to register a processor to build a form builder:
         arguments:
             - '@oro_api.form_helper'
         tags:
-            - { name: oro.api.processor, action: add_subresource, group: transform_data, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, association: items, priority: 100 }
+            - { name: oro.api.processor, action: add_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, priority: 100 }
 
 .. _delete-subresource-action:
 
@@ -549,7 +549,7 @@ An example how to register a processor to build a form builder:
         arguments:
             - '@oro_api.form_helper'
         tags:
-            - { name: oro.api.processor, action: delete_subresource, group: transform_data, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, association: items, priority: 100 }
+            - { name: oro.api.processor, action: delete_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, priority: 100 }
 
 .. _get-relationship-action:
 
@@ -773,7 +773,7 @@ The ``collection`` tag attribute can be used for processors of this action to pr
     acme.api.process_my_collection:
         class: Acme\Bundle\AppBundle\Api\Processor\ProcessMyCollection
         tags:
-            - { name: oro.api.processor, action: customize_loaded_data, class: Acme\Bundle\AppBundle\Entity\MyEntity, collection: true }
+            - { name: oro.api.processor, action: customize_loaded_data, collection: true, class: Acme\Bundle\AppBundle\Entity\MyEntity }
 
 .. important:: The collection elements are an associative array and processors responsible to customize the collection must keep keys in this array without changes.
 
@@ -785,7 +785,7 @@ Note: All processors for this action has ``identifier_only`` tag attribute set t
     acme.api.compute_my_field:
         class: Acme\Bundle\AppBundle\Api\Processor\ComputeMyField
         tags:
-            - { name: oro.api.processor, action: customize_loaded_data, class: Acme\Bundle\AppBundle\Entity\MyEntity, identifier_only: true }
+            - { name: oro.api.processor, action: customize_loaded_data, identifier_only: true, class: Acme\Bundle\AppBundle\Entity\MyEntity }
 
 
 .. note:: The ``identifier_only`` tag attribute is not supported if the ``collection`` tag attribute equals ``true``. All processors intended for the modification of collections are executed when loading primary entities and entities in to-many associations, even if only identifier field is requested.

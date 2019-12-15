@@ -912,7 +912,7 @@ If a predefined identifier should be available only for a specific request type,
 .. code:: yaml
 
     tags:
-            - { name: oro.api.entity_id_resolver, id: mine, class: Oro\Bundle\UserBundle\Entity\User, requestType: json_api }
+            - { name: oro.api.entity_id_resolver, id: mine, requestType: json_api, class: Oro\Bundle\UserBundle\Entity\User }
 
 .. _add-computed-field:
 
@@ -1200,8 +1200,8 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
                   arguments:
                       - '@oro_api.doctrine_helper'
                   tags:
-                      - { name: oro.api.processor, action: get_subresource, group: build_query, parentClass: Acme\Bundle\AppBundle\Entity\Account, association: contacts, priority: -90 }
-                      - { name: oro.api.processor, action: get_relationship, group: build_query, parentClass: Acme\Bundle\AppBundle\Entity\Account, association: contacts, priority: -90 }
+                      - { name: oro.api.processor, action: get_subresource, group: build_query, association: contacts, parentClass: Acme\Bundle\AppBundle\Entity\Account, priority: -90 }
+                      - { name: oro.api.processor, action: get_relationship, group: build_query, association: contacts, parentClass: Acme\Bundle\AppBundle\Entity\Account, priority: -90 }
 
 
 .. _disable-hateoas:
