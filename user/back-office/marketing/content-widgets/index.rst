@@ -63,6 +63,11 @@ To create a new content widget:
 
 4. Once you have provided all widget-specific details, click **Save and Close**.
 
+   .. image:: /user/img/marketing/content_widgets/widget-view.png
+      :alt: Content widget view page
+
+   .. hint:: Each content widget may have various representations in the form of layouts. Layouts are defined by developers using the existing :ref:`layout update functionality <dev-doc-frontend-layouts-layout>`, which enables you to alternate between the pre-configured designs for each widget in the back-office. For more information, please refer to the frontend developer documentation.
+
 Add a Content Widget to WYSIWYG Fields
 --------------------------------------
 
