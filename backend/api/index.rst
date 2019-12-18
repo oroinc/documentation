@@ -19,6 +19,7 @@ API Developer Guide
    how-to
    processors
    security
+   firewall-listeners
    testing
    request-type
    cors

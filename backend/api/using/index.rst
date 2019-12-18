@@ -24,6 +24,19 @@ on readability, flexibility or discoverability.
 Therefore, here and below the term *API* will refer to the REST JSON API that gives programmatic access
 to read and write data. Request and response body should use JSON format.
 
+Enabling an API Feature
+-----------------------
+
+By default, the API feature is disabled.
+
+To enable it, use **System Configuration > Application Settings > Web API** config section.
+
+.. image:: /img/backend/api/api_configuration.png
+
+By default, the API feature is disabled for back-office and storefront. For the back-office, you can enable API
+on the :ref:`global <admin-configuration-application>` and :ref:`organization <admin-configuration-application-org>` levels in the system configuration. For the storefront, you can enable API
+on the :ref:`global <admin-configuration-application>`, :ref:`organization <admin-configuration-application-org>`, and :ref:`website <admin-configuration-application-website>` levels.
+
 Creating an API Key
 -------------------
 

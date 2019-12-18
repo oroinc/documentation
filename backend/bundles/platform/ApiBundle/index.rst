@@ -26,6 +26,7 @@ Related Documentation
 
 * :ref:`CLI Commands <web-api--commands>`
 * :ref:`Configure Stateless Security Firewalls <web-api--security>`
+* :ref:`Configure Feature Depended Firewall Listeners <web-api--firewall-listeners>`
 * :ref:`Configuration Reference <web-api--configuration>`
 
   * :ref:`exclude Option <exclude-option>`
