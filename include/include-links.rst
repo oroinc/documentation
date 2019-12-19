@@ -114,7 +114,7 @@ Links
 
 .. |configuration| raw:: html
 
-   <a href="https://github.com/orocommerce/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/views/layouts/default/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/1.6/src/Oro/Bundle/CMSBundle/Resources/views/layouts/blank/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>
 
 .. |how to create a web catalog in OroCommerce| raw:: html
 
@@ -343,7 +343,7 @@ Links
 
 .. |TrackingBundle| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/TrackingBundle" target="_blank">TrackingBundle</a>
+   <a href="https://github.com/oroinc/OroCRMMarketingBundle/tree/2.6/src/Oro/Bundle/TrackingBundle" target="_blank">TrackingBundle</a>
 
 .. |IntegrationBundle| raw:: html
 
@@ -491,7 +491,7 @@ Links
 
 .. |oro_format_short_product_unit_value| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-value-formatting.md#oro_format_short_product_unit_value" target="_blank">oro_format_short_product_unit_value</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/1.6/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#oro_format_short_product_unit_label" target="_blank">oro_format_short_product_unit_value</a>
 
 .. |join| raw:: html
 
@@ -544,10 +544,6 @@ Links
 .. |how to create payment rules| raw:: html
 
    <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-rules" target="_blank">how to create payment rules</a>
-
-.. |http://localhost/<yoursitename>/index_dev.php| raw:: html
-
-   <a href="http://localhost/<yoursitename>/index_dev.php" target="_blank">http://localhost/<yoursitename>/index_dev.php</a>
 
 .. |Workflow Documentation| raw:: html
 
@@ -615,7 +611,7 @@ Links
 
 .. |Authorize.Net Support| raw:: html
 
-   <a href="https://support.authorize.net/authkb/index?page=content&id=A414" target="_blank">Authorize.Net Support</a>
+   <a href="https://support.authorize.net/s/" target="_blank">Authorize.Net Support</a>
 
 .. |https://account.authorize.net/| raw:: html
 
@@ -647,7 +643,7 @@ Links
 
 .. |wirecard.com| raw:: html
 
-   <a href="http://wirecard.com" target="_blank">wirecard.com</a>
+   <a href="https://www.wirecard.com/" target="_blank">wirecard.com</a>
 
 .. |Wirecard Demo Mode| raw:: html
 
@@ -675,7 +671,7 @@ Links
 
 .. |sign-on| raw:: html
 
-   <a href="https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer" target="_blank">sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">sign-on</a>
 
 .. |https://r1-app.dotmailer.com/| raw:: html
 
@@ -683,7 +679,7 @@ Links
 
 .. |Single sign-on| raw:: html
 
-   <a href="https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer" target="_blank">Single sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">Single sign-on</a>
 
 .. |here4| raw:: html
 
@@ -763,7 +759,7 @@ Links
 
 .. |contact| raw:: html
 
-   <a href="https://crowdin.com/mail/compose/oro" target="_blank">contact</a>
+   <a href="https://crowdin.com/project/orocommerce" target="_blank">contact</a>
 
 .. |specification| raw:: html
 

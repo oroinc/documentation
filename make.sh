@@ -5,6 +5,8 @@
 function usage() {
   echo "  Please use 'make ^<target^>' where ^<target^> is one of"
   echo "  html       to make standalone HTML files"
+  echo "  orohtml    to make standalone HTML files with Oro requirements (disabled internal search)"
+  echo "  orohtml-dev to make standalone HTML files with Oro requirements (disabled internal search). All files will be suffixed with .html"
   echo "  dirhtml    to make HTML files named index.html in directories"
   echo "  singlehtml to make a single large HTML file"
   echo "  pickle     to make pickle files"
@@ -25,7 +27,7 @@ function usage() {
 }
 
 case "$1" in 
-  clean|gettext|htmlhelp|qthelp|html|dirhtml|singlehtml|pickle|json|epub|latex|text|man|texinfo|changes|linkcheck|doctest)
+  clean|gettext|htmlhelp|qthelp|html|orohtml|orohtml-dev|dirhtml|singlehtml|pickle|json|epub|latex|text|man|texinfo|changes|linkcheck|doctest)
   #do nothing
   ;;
     *)
