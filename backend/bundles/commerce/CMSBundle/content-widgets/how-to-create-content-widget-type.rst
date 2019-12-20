@@ -5,15 +5,12 @@ Create a Content Widget Type
 
 We are going to illustrate how to create a content widget type to render the copyright. It should have an option to control the display format (short or long).
 
-You can create a content widget type in four steps:
-
-.. contents:: :local:
-   :depth: 1
+You can create a content widget type in four steps outlined below.
 
 1. Extend *AbstractContentWidgetType*
 -------------------------------------
 
-To implement a new content widget, create a class that stores content widget type configuration and renders the content widget. The class should extend *AbstractContentWidgetType*.
+To implement a new content widget, create a class that stores content widget type configuration, and renders the content widget. The class should extend *AbstractContentWidgetType*.
 
 .. code-block:: php
     :linenos:
@@ -47,6 +44,11 @@ To implement a new content widget, create a class that stores content widget typ
                 ->add('isShort', CheckboxType::class, ['label' => 'acme.copyright.settings.is_short.label', 'required' => false])
                 ->getForm();
         }
+
+        public function getDefaultTemplate(ContentWidget $contentWidget, Environment $twig): string
+        {
+            return $twig->render('@ACMECopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings());
+        }
     }
 
 .. note:: When you want to use an existing form type in you content widget type:
@@ -58,7 +60,7 @@ To implement a new content widget, create a class that stores content widget typ
            :lines: 47-50
            :linenos:
 
-   Form type has the following code:
+   The form type has the following code:
 
    .. oro_integrity_check:: d9257e8f8d3ebfe55c8d026867750288807d5e98
 
@@ -128,14 +130,14 @@ Add translations to strings in the template.
 3.2 Implement *getAdditionalInformationBlock* Method in the Content Widget Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   .. oro_integrity_check:: 9f6a119139eda728feea25e073048c52a631e5ca
+.. oro_integrity_check:: 9f6a119139eda728feea25e073048c52a631e5ca
 
-       .. literalinclude:: /code_examples/commerce/content_widget/copyright/ContentWidget/CopyrightContentWidgetType.php
-           :language: php
-           :lines: 36-42
-           :linenos:
+    .. literalinclude:: /code_examples/commerce/content_widget/copyright/ContentWidget/CopyrightContentWidgetType.php
+        :language: php
+        :lines: 36-42
+        :linenos:
 
-.. note:: To pass additional data to the template, you can override *getBackOfficeViewSubBlocks* method. The example below illustrates how add two blocks with two subblocks in each block.
+.. note:: To pass additional data to the template, you can override *getBackOfficeViewSubBlocks* method. The example below illustrates how to add two blocks with two subblocks in each block.
 
     .. code-block:: php
         :linenos:
@@ -235,8 +237,58 @@ Override *getWidgetData* method in the Content Widget Type.
         }
     }
 
-What's next
------------
+5. (Optionally) Add Content Widget Templates
+---------------------------------------------
 
-Now an administrator can create content widgets of new type from the UI by following steps outlined in the :ref:`Content Widgets User Guide <content-widgets-user-guide>` user documentation.
+It is possible to provide multiple templates for some content widget types.
+This allows the user to select which template to use when creating a content widget instance.
+
+If there is a least one template defined, a list of all templates collected from all themes for this widget type is displayed on the content widget create/edit form drop-down.
+
+During rendering on the storefront, if the template selected by the user is not available in the current theme,
+the widget is rendered using its default template (set in the getDefaultTemplate method). To add a new layout template
+for a widget type, follow the steps below:
+
+5.1 Add Template Definition to Theme Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create a `widgets.yml` file for certain theme (e.g., blank) in the config folder `Resources/views/layouts/blank/config/widgets.yml`:
+
+.. code-block:: xml
+    :linenos:
+
+    layouts:
+        copyright:
+            first: 'acme.copyright.content_widget.copyright.label'
+
+* `copyright` stands for the widget type to which template is added.
+* `first` key represents a particular theme with its name (translation key) as a value.
+
+5.2 Add Layout Update File and Template
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create a layout update file in the appropriate content widget folder inside the desired theme.
+Keep in mind that all widget layout update files should follow a naming convention: `content_widget/{your_unique_widget_type_name}`, e.g.: `Resources/views/layouts/blank/content_widget/copyright/content_widget.yml`.
+
+.. code-block:: xml
+    :linenos:
+
+    layout:
+        actions:
+            - '@setBlockTheme':
+                themes: 'content_widget.html.twig'
+    ...
+
+Follow the same steps with templates for the layout update with customized markup `Resources/views/layouts/blank/content_widget/copyright/content_widget.html.twig`:
+
+.. code-block:: html
+    :linenos:
+
+    {% block _copyright_content_widget_layout_name_widget %}
+        <p>{{ block_widget(block) }}</p>
+    {% endblock %}
+
+The widget template for the Copyright widget should be available after clearing the cache. To define templates for other themes, apply the same actions, making sure you place files in the appropriate theme folders and follow the naming conventions.
+
+Now an administrator can create content widgets of a new type from the UI by following steps outlined in the :ref:`Content Widgets User Guide <content-widgets-user-guide>` user documentation.
 

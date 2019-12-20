@@ -66,7 +66,14 @@ To create a new content widget:
    .. image:: /user/img/marketing/content_widgets/widget-view.png
       :alt: Content widget view page
 
-   .. hint:: Each content widget may have various representations in the form of layouts. Layouts are defined by developers using the existing :ref:`layout update functionality <dev-doc-frontend-layouts-layout>`, which enables you to alternate between the pre-configured designs for each widget in the back-office. For more information, please refer to the frontend developer documentation.
+   .. hint:: Each content widget may have various representations in the form of layouts. Layouts are defined by developers using the existing :ref:`layout update functionality <dev-doc-frontend-layouts-layout>`, which enables you to alternate between the pre-configured designs for each widget in the back-office.
+
+             .. image:: /user/img/marketing/content_widgets/layout-dropdown.png
+                :scale: 50%
+                :align: center
+                :alt: Select Layouts in the back-office
+
+             Please be aware that layouts are theme-specific. For more information, please refer to the :ref:`CMS bundle documentation <how-to_create-content-widget-type>`.
 
 Add a Content Widget to WYSIWYG Fields
 --------------------------------------
