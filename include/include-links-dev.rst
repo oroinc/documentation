@@ -2804,62 +2804,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-capabilities.md" target="_blank">Save Service Data Between Synchronizations</a>
 
-.. |Layout Definition| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/what_is_layout.md" target="_blank">Layout Definition</a>
-
-.. |Configure Layout Context| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_context.md" target="_blank">Configure Layout Context</a>
-
-.. |Create and Use Layout Themes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md" target="_blank">Create and Use Layout Themes</a>
-
-.. |Use Layout Data| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_data.md" target="_blank">Use Layout Data</a>
-
-.. |Expressions| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/expressions.md" target="_blank">Expressions</a>
-
-.. |Define and Develop Themes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/theme_definition.md" target="_blank">Define and Develop Themes</a>
-
-.. |Use a Different Configuration for a Theme (Assets, Images, RequireJS, Page Templates)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/config_definition.md" target="_blank">Use a Different Configuration for a Theme (Assets, Images, RequireJS, Page Templates)</a>
-
-.. |Perform Layout Update| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_update.md" target="_blank">Perform Layout Update</a>
-
-.. |Import Layout Updates| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/imports.md" target="_blank">Import Layout Updates</a>
-
-.. |Implement Layouts (Example)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/example.md" target="_blank">Implement Layouts (Example)</a>
-
-.. |Debug Information| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/debug_information.md" target="_blank">Debug Information</a>
-
-.. |Use PHP Templating Instead of Twig| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/php_templates.md" target="_blank">Use PHP Templating Instead of Twig</a>
-
-.. |Layout Cache| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_cache.md" target="_blank">Layout Cache</a>
-
-.. |Returning Custom Status Code| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/custom_status_code.md" target="_blank">Returning Custom Status Code</a>
-
 .. |Locale Settings| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md" target="_blank">Locale Settings</a>
@@ -5175,3 +5119,41 @@ Links (Dev)
 .. |OroCloud| raw:: html
 
    <a href="/cloud">OroCloud</a>
+
+.. |Context::getHash| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Layout/ContextInterface.php#L94" target="_blank">Context::getHash</a>
+
+.. |BlockViewCache| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Layout/BlockViewCache.php" target="_blank">BlockViewCache</a>
+
+.. |LastModifiedDateContextConfigurator| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/LayoutBundle/Layout/Extension/LastModifiedDateContextConfigurator.php" target="_blank">LastModifiedDateContextConfigurator</a>
+
+.. |BlockView| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Layout/BlockView.php" target="_blank">BlockView</a>
+
+.. |BlockViewNormalizer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/LayoutBundle/Layout/Serializer/BlockViewNormalizer.php" target="_blank">BlockViewNormalizer</a>
+
+.. |ExpressionNormalizer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/LayoutBundle/Layout/Serializer/ExpressionNormalizer.php" target="_blank">ExpressionNormalizer</a>
+
+.. |OptionValueBagNormalizer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/LayoutBundle/Layout/Serializer/OptionValueBagNormalizer.php" target="_blank">OptionValueBagNormalizer</a>
+
+.. |BlockTypeInterface::buildBlock| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Layout/BlockTypeInterface.php#L19" target="_blank">BlockTypeInterface::buildBlock</a>
+
+.. |BlockTypeInterface::finishView| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Layout/BlockTypeInterface.php#L51" target="_blank">BlockTypeInterface::finishView</a>
+
+

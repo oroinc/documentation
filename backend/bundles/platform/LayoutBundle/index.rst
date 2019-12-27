@@ -10,21 +10,22 @@ OroLayoutBundle integrates the OroLayout Component into OroPlatform and enables 
 Related Documentation
 ---------------------
 
-* |Layout Definition|
-* |Create and Use Layout Themes|
-* |Configure Layout Context|
-* |Use Layout Data|
-* |Expressions|
-* |Define and Develop Themes|
-* |Use a Different Configuration for a Theme (Assets, Images, RequireJS, Page Templates)|
-* |Perform Layout Update|
-* |Import Layout Updates|
-* |Implement Layouts (Example)|
-* |Debug Information|
-* |Use PHP Templating Instead of Twig|
-* |Layout Cache|
-* |Returning Custom Status Code|
+* :ref:`Layout Definition <dev-doc-frontend-layouts-layout>`
+* :ref:`Create and Use Layout Themes <dev-doc-frontend-layouts-quick-start>`
+* :ref:`Configure Layout Context <dev-doc-frontend-layouts-layout-context>`
+* :ref:`Use Layout Data <dev-doc-frontend-layouts-layout-data-providers>`
+* :ref:`Expressions to Access Data and Context in Layouts <dev-doc-frontend-layouts-layout-data>`
+* :ref:`Define and Develop Themes <dev-doc-frontend-layouts-theming>`
+* :ref:`Perform Layout Update <dev-doc-frontend-layouts-layout-updates>`
+* :ref:`Import Layout Updates <import-layout-updates>`
+* :ref:`Debug Information <dev-doc-frontend-layouts-debugging>`
+* :ref:`Layout Cache <layouts-layout-cache>`
+* :ref:`Returning Custom Status Code <dev-doc-frontend-layouts-returning-custom-status-code>`
 
+.. toctree::
+   :hidden:
+
+   layout-cache
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
