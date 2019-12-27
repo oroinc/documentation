@@ -11,7 +11,7 @@ Related Documentation
 ---------------------
 
 * :ref:`Content Widgets <content-widgets>`
-* `Content Blocks <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/doc/reference/content_blocks.md>`__
+* |Content Blocks md|
 
 .. toctree::
    :maxdepth: 1
@@ -19,4 +19,7 @@ Related Documentation
 
    content-widgets/index
    WYSIWYG-field/index
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
 

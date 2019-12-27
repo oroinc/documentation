@@ -10,7 +10,7 @@ You can create a content widget type in four steps outlined below.
 1. Extend *AbstractContentWidgetType*
 -------------------------------------
 
-To implement a new content widget, create a class that stores content widget type configuration, and renders the content widget. The class should extend *AbstractContentWidgetType*.
+To implement a new content widget, create a class that stores content widget type configuration and renders the content widget. The class should extend *AbstractContentWidgetType*.
 
 .. code-block:: php
     :linenos:
@@ -78,7 +78,7 @@ It should be registered in a service container with the *oro_cms.content_widget.
             tags:
                 - {name: 'oro_cms.content_widget.type'}
 
-.. note:: When `autoconfiguration <https://symfony.com/doc/current/service_container.html#the-autoconfigure-option>`__ is enabled, tagging the service manually is unnecessary.
+.. note:: When |autoconfiguration| is enabled, tagging the service manually is unnecessary.
 
    .. oro_integrity_check:: c5e6c446b6f4fe694b278a9ff2fd7ef75c2fefd2
 
@@ -127,8 +127,8 @@ Add translations to strings in the template.
         :language: html
         :linenos:
 
-3.2 Implement *getAdditionalInformationBlock* Method in the Content Widget Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3.2 Implement the *getAdditionalInformationBlock* Method in the Content Widget Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. oro_integrity_check:: 9f6a119139eda728feea25e073048c52a631e5ca
 
@@ -252,7 +252,7 @@ for a widget type, follow the steps below:
 5.1 Add Template Definition to Theme Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a `widgets.yml` file for certain theme (e.g., blank) in the config folder `Resources/views/layouts/blank/config/widgets.yml`:
+Create a ``widgets.yml`` file for certain theme (e.g., blank) in the config folder ``Resources/views/layouts/blank/config/widgets.yml``:
 
 .. code-block:: xml
     :linenos:
@@ -261,14 +261,14 @@ Create a `widgets.yml` file for certain theme (e.g., blank) in the config folder
         copyright:
             first: 'acme.copyright.content_widget.copyright.label'
 
-* `copyright` stands for the widget type to which template is added.
-* `first` key represents a particular theme with its name (translation key) as a value.
+* ``copyright`` stands for the widget type to which template is added.
+* ``first`` key represents a particular theme with its name (translation key) as a value.
 
 5.2 Add Layout Update File and Template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a layout update file in the appropriate content widget folder inside the desired theme.
-Keep in mind that all widget layout update files should follow a naming convention: `content_widget/{your_unique_widget_type_name}`, e.g.: `Resources/views/layouts/blank/content_widget/copyright/content_widget.yml`.
+Keep in mind that all widget layout update files should follow a naming convention: ``content_widget/{your_unique_widget_type_name}``, e.g.,: ``Resources/views/layouts/blank/content_widget/copyright/content_widget.yml``.
 
 .. code-block:: xml
     :linenos:
@@ -279,7 +279,7 @@ Keep in mind that all widget layout update files should follow a naming conventi
                 themes: 'content_widget.html.twig'
     ...
 
-Follow the same steps with templates for the layout update with customized markup `Resources/views/layouts/blank/content_widget/copyright/content_widget.html.twig`:
+Follow the same steps with templates for the layout update with customized markup ``Resources/views/layouts/blank/content_widget/copyright/content_widget.html.twig``:
 
 .. code-block:: html
     :linenos:
@@ -288,7 +288,11 @@ Follow the same steps with templates for the layout update with customized marku
         <p>{{ block_widget(block) }}</p>
     {% endblock %}
 
-The widget template for the Copyright widget should be available after clearing the cache. To define templates for other themes, apply the same actions, making sure you place files in the appropriate theme folders and follow the naming conventions.
+The widget template for the Copyright widget should be available after clearing the cache. To define templates for other themes, apply the same actions making sure you place files in the appropriate theme folders and follow the naming conventions.
 
 Now an administrator can create content widgets of a new type from the UI by following steps outlined in the :ref:`Content Widgets User Guide <content-widgets-user-guide>` user documentation.
+
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
 

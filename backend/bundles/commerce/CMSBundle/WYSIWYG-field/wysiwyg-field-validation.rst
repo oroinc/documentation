@@ -13,6 +13,7 @@ HTML Purifier Modes
 -------------------
 
 Out of the box, there are two HTML Purifier modes available:
+
 **``default``** - it has only secure elements and attributes and is used in common cases;
 **``lax``** - this mode extends ``default`` mode and includes additional allowed HTML elements and attributes.
 
@@ -40,7 +41,7 @@ Validator for WYSIWYG fields validates the content based on the content restrict
 Customization
 -------------
 
-Creating custom HTML purifier modes
+Creating Custom HTML Purifier Modes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can create your own HTML Purifier mode using the inheritance hierarchy:
@@ -52,12 +53,12 @@ You can create your own HTML Purifier mode using the inheritance hierarchy:
             :lines: 8-26
             :linenos:
 
-The ``extends`` key allows to reuse the existing config from the extended scope, that will be merged with your configuration.
+The ``extends`` key allows to reuse the existing config from the extended scope that will be merged with your configuration.
 
-Creating custom content restrictions
+Creating Custom Content Restrictions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The ``addScopeMapping`` method of the ``oro_cms.provider.html_purifier_scope_provider`` service provides the  possibility to connect the HTML Purifier mode with content restrictions modes.
+The ``addScopeMapping`` method of the ``oro_cms.provider.html_purifier_scope_provider`` service provides the possibility to connect the HTML Purifier mode with content restrictions modes.
 The ``oro_cms.provider.html_purifier_scope_provide`` class enables to get an appropriate scope based on the entity and entity field names taking into account current user roles.
 To connect your custom HTML Purifier mode with the content restrictions mode, you should configure the container to call ``addScopeMapping``.
 

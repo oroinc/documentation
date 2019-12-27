@@ -5040,13 +5040,13 @@ Links (Dev)
 
    <a href="/cloud">OroCloud</a>
 
-.. |How to Customize Form Rendering| raw:: html
+.. |Content Blocks md| raw:: html
 
-   <a href="http://symfony.com/doc/current/cookbook/form/form_customization.html" target="_blank">How to Customize Form Rendering</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/doc/reference/content_blocks.md" target="_blank">Content Blocks</a>
 
-.. |How to Use PHP instead of Twig for Templates| raw:: html
+.. |autoconfiguration| raw:: html
 
-   <a href="http://symfony.com/doc/current/templating/PHP.html" target="_blank">How to Use PHP instead of Twig for Templates</a>
+   <a href="https://symfony.com/doc/current/service_container.html#the-autoconfigure-option" target="_blank">autoconfiguration</a>
 
 .. |Layoutphp| raw:: html
 
