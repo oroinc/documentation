@@ -90,7 +90,7 @@ To perform Oro application upgrade with minimal downtime, run the `upgrade:rolli
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file. Use valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
 
-This command enables maintenance mode just for switching between the previous and the new application versions (in most cases, it takes approximately 10 seconds). In the normal operation mode, this command executes the following operations:
+This command enables maintenance mode just for switching between the previous and new application versions (in most cases, this step takes up to 2 minutes).  In the normal operation mode, this command executes the following operations:
 
 1. Checks out the code from a tag or branch of the configured repository
 #. Installs the external dependencies via the composer install
@@ -110,7 +110,8 @@ To perform Oro application upgrade with minimal downtime, run the `upgrade:sourc
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file. Use valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
 
-This command enables maintenance mode just for switching between previous and new application version (in most cases this step takes approximately 10 second).
+This command enables maintenance mode just for switching between the previous and new application versions (in most cases, this step takes up to 2 minutes).
+
 The purpose of this command is to deploy code changes (without updating dependencies) as quickly as possible.
 The difference between this command and original upgrade:
 
