@@ -177,7 +177,7 @@ becomes really slim. It basically just needs to return the name of the grid:
          */
         public function indexAction()
         {
-            return array('gridName' => 'vehicles-grid');
+            return ['gridName' => 'vehicles-grid'];
         }
     }
 
@@ -394,9 +394,9 @@ and register it as a service:
 
         public function configureOptions(OptionsResolver $resolver)
         {
-            $resolver->setDefaults(array(
+            $resolver->setDefaults([
                 'data_class' => 'InventoryBundle\Entity\Vehicle',
-            ));
+            ]);
         }
 
         public function getName()
@@ -491,19 +491,19 @@ create a dedicated method that is handling the form submission:
                 $entityManager->flush();
 
                 return $this->get('oro_ui.router')->redirectAfterSave(
-                    array(
+                    [
                         'route' => 'inventory.vehicle_update',
-                        'parameters' => array('id' => $vehicle->getId()),
-                    ),
-                    array('route' => 'inventory.vehicle_index'),
+                        'parameters' => ['id' => $vehicle->getId()],
+                    ],
+                    ['route' => 'inventory.vehicle_index'],
                     $vehicle
                 );
             }
 
-            return array(
+            return [
                 'entity' => $vehicle,
                 'form' => $form->createView(),
-            );
+            ];
         }
     }
 
@@ -646,7 +646,7 @@ controller that fetches the object from the database and passes it to a template
          */
         public function viewAction(Vehicle $vehicle)
         {
-            return array('vehicle' => $vehicle);
+            return ['vehicle' => $vehicle];
         }
     }
 
