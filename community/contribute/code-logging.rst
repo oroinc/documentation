@@ -12,10 +12,10 @@ Use Monolog logger that implements the PSR-3 LoggerInterface, de-facto logging s
 
 .. code:: php
 
-   $logger->critical('I left the oven on!', array(
+   $logger->critical('I left the oven on!', [
        // include extra "context" info in your logs
        'cause' => 'in_hurry',
-   ));
+   ]);
 
 Debug, info, notice, warning, error, critical, and alert methods have two arguments:
 * A string with a human readable message.
@@ -71,7 +71,7 @@ How to Use Logger
 
       $this->logger->debug(
           'Authentication failure, forward triggered.',
-          array('failure_path'=>$path)
+          ['failure_path' => $path]
       );
 
 #. When you need a user-friendly message on production instead of a real one, use the following approach (see this sample): when something goes wrong for the user, but the system is still usable, display a message like "Something has gone wrong, contact the system administrator" and log the real exception to facilitate the future debug process.

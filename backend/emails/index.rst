@@ -120,13 +120,13 @@ the setter methods for all the properties you want to be set:
             $email->setFrom('chris@example.com');
 
             // recipient(s)
-            $email->setTo(array('alice@example.com', 'bob@example.com'));
+            $email->setTo(['alice@example.com', 'bob@example.com']);
 
             // CC recipient(s)
-            $email->setCc(array('dave@example.com', 'eric@example.com'));
+            $email->setCc(['dave@example.com', 'eric@example.com']);
 
             // BCC recipient(s)
-            $email->setBcc(array('ryan@example.com', 'jonathan@example.com'));
+            $email->setBcc(['ryan@example.com', 'jonathan@example.com']);
 
             // the subject
             $email->setSubject(...);
@@ -136,7 +136,7 @@ the setter methods for all the properties you want to be set:
             $email->setTemplate(...);
 
             // a context that will be passed to the template set with setTemplate()
-            $email->setContexts(array(...));
+            $email->setContexts([...]);
 
             // the email type (either html or text)
             $email->setType(...);
@@ -458,7 +458,7 @@ For ``Applicant`` entity, the implementation should be similar to the following:
 
         public function getEmailFields()
         {
-            return array('email');
+            return ['email'];
         }
 
         public function getId()
@@ -523,7 +523,7 @@ The provider class should then look like this:
         {
             $applicantEmailRepo = $em->getRepository('AcmeDemoBundle:ApplicantEmail');
             /** @var ApplicantEmail $applicantEmail */
-            $applicantEmail = $applicantEmailRepo->findOneBy(array('email' => $email));
+            $applicantEmail = $applicantEmailRepo->findOneBy(['email' => $email]);
 
             if (null !== $applicantEmail) {
                 return $applicantEmail->getEmailOwner();

@@ -243,7 +243,7 @@ which will serve a view that renders the configured datagrid:
          */
         public function indexAction()
         {
-            return array();
+            return [];
         }
     }
 

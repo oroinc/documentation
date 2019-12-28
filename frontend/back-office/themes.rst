@@ -166,13 +166,13 @@ So, place the ``settings.yml`` file in the ``Resources/public/themes/oro`` direc
         {
             public function registerBundles()
             {
-                $bundles = array(
+                $bundles = [
                     // ...
                     new ThirdParty\Bundle\ThirdPartyBundle(),
                     // ...
                     new Acme\DemoBundle\AcmeDemoBundle(),
                     // ...
-                );
+                ];
 
                 // ...
             }

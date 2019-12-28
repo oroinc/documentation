@@ -119,7 +119,7 @@ The controller receives a contact entity and passes it to the view:
              */
             public function contactTasksAction(Contact $contact)
             {
-                return array('contact' => $contact);
+                return ['contact' => $contact];
             }
 
             // ...
