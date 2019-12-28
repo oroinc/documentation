@@ -40,15 +40,15 @@ To define your own configuration settings in a bundle, you use the
 
             // provide your regular Symfony configuration here
 
-            SettingsBuilder::append($rootNode, array(
-                'foo' => array(
+            SettingsBuilder::append($rootNode, [
+                'foo' => [
                     'value' => true,
                     'type' => 'boolean',
-                ),
-                'bar' => array(
+                ],
+                'bar' => [
                     'value' => 10,
-                ),
-            ));
+                ],
+            ]);
 
             return $treeBuilder;
         }

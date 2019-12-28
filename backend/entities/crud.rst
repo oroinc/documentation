@@ -45,9 +45,9 @@ needed to describe a task:
 
         public function configureOptions(OptionsResolver $resolver)
         {
-            $resolver->setDefaults(array(
+            $resolver->setDefaults([
                 'data_class' => 'AppBundle\Entity\Task',
-            ));
+            ]);
         }
     }
 
@@ -101,10 +101,10 @@ its data:
         {
             $form = $this->createForm(new TaskType(), $task);
 
-            return array(
+            return [
                 'entity' => $task,
                 'form' => $form->createView(),
-            );
+            ];
         }
     }
 

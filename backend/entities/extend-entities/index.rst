@@ -123,14 +123,14 @@ Create Extended Entities
                $table->addColumn(
                    'hotel_rating',
                    'string',
-                   array('oro_options' => array(
-                       'extend' => array(
+                   ['oro_options' => [
+                       'extend' => [
                            'is_extend' => true,
                            'owner' => ExtendScope::OWNER_CUSTOM
-                       ),
-                       'entity' => array('label' => 'Hotel rating'),
-                       'datagrid' => array('is_visible' => false)
-                   ))
+                       ],
+                       'entity' => ['label' => 'Hotel rating'],
+                       'datagrid' => ['is_visible' => false]
+                   ]]
                );
            }
        }

@@ -188,10 +188,10 @@ method to load a fixture in a test:
 
             // loading fixtures will be executed once, use the second parameter
             // $force = true to force the loading
-            $this->loadFixtures(array(
+            $this->loadFixtures([
                 'Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadFooData',
                 '@OroFooBarBundle/Tests/Functional/DataFixtures/bar_data.yml',
-            ));
+            ]);
         }
 
         // ...
@@ -252,7 +252,7 @@ which enables to load fixtures depending on other fixtures being already loaded:
 
         public function getDependencies()
         {
-            return array('Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData');
+            return ['Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData'];
         }
     }
 
@@ -282,7 +282,7 @@ Further, you can use reference-specific entities from fixtures, e.g.:
 
         public function getDependencies()
         {
-            return array('Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData');
+            return ['Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData'];
         }
     }
 
@@ -388,7 +388,7 @@ Initialization with custom AppKernel options:
         protected function setUp()
         {
             // first array is Kernel options
-            $this->initClient(array('debug' => false));
+            $this->initClient(['debug' => false]);
         }
         // ...
     }
@@ -408,13 +408,13 @@ Initialization with authentication:
         protected function setUp()
         {
             // second array is service options
-            // this example will create client with server options array('PHP_AUTH_USER' =>  'admin@example.com', 'PHP_AUTH_PW' => 'admin')
+            // this example will create client with server options ['PHP_AUTH_USER' => 'admin@example.com', 'PHP_AUTH_PW' => 'admin']
             // make sure you loaded fixture with test user
             // bin/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures src/Oro/src/Oro/Bundle/TestFrameworkBundle/Fixtures
-            $this->initClient(array(), $this->generateBasicAuthHeader());
+            $this->initClient([], $this->generateBasicAuthHeader());
 
             // init client with custom username and password
-            $this->initClient(array(), $this->generateBasicAuthHeader('custom_username', 'custom_password'));
+            $this->initClient([], $this->generateBasicAuthHeader('custom_username', 'custom_password'));
         }
         // ...
     }
@@ -444,7 +444,7 @@ Have a look at an example of a controller test from OroCRM:
     {
         protected function setUp()
         {
-            $this->initClient(array(), $this->generateBasicAuthHeader());
+            $this->initClient([], $this->generateBasicAuthHeader());
         }
 
         public function testCreate()
@@ -472,7 +472,7 @@ Have a look at an example of a controller test from OroCRM:
         {
             $response = $this->client->requestGrid(
                 'tasks-grid',
-                array('tasks-grid[_filter][reporterName][value]' => 'John Doe')
+                ['tasks-grid[_filter][reporterName][value]' => 'John Doe']
             );
 
             $result = $this->getJsonResponseContent($response, 200);
@@ -480,7 +480,7 @@ Have a look at an example of a controller test from OroCRM:
 
             $crawler = $this->client->request(
                 'GET',
-                $this->getUrl('orocrm_task_update', array('id' => $result['id']))
+                $this->getUrl('orocrm_task_update', ['id' => $result['id']])
             );
 
             $form = $crawler->selectButton('Save and Close')->form();
@@ -502,7 +502,7 @@ Have a look at an example of a controller test from OroCRM:
         {
             $response = $this->client->requestGrid(
                 'tasks-grid',
-                array('tasks-grid[_filter][reporterName][value]' => 'John Doe')
+                ['tasks-grid[_filter][reporterName][value]' => 'John Doe']
             );
 
             $result = $this->getJsonResponseContent($response, 200);
@@ -510,7 +510,7 @@ Have a look at an example of a controller test from OroCRM:
 
             $this->client->request(
                 'GET',
-                $this->getUrl('orocrm_task_view', array('id' => $result['id']))
+                $this->getUrl('orocrm_task_view', ['id' => $result['id']])
             );
             $result = $this->client->getResponse();
 
@@ -557,7 +557,7 @@ denied for the user:
         protected function setUp()
         {
             $this->initClient();
-            $this->loadFixtures(array('Oro\Bundle\UserBundle\Tests\Functional\API\DataFixtures\LoadUserData'));
+            $this->loadFixtures(['Oro\Bundle\UserBundle\Tests\Functional\API\DataFixtures\LoadUserData']);
         }
 
         public function testUsersIndex()
@@ -565,8 +565,8 @@ denied for the user:
             $this->client->request(
                 'GET',
                 $this->getUrl('oro_user_index'),
-                array(),
-                array(),
+                [],
+                [],
                 $this->generateBasicAuthHeader(LoadUserData::USER_NAME, LoadUserData::USER_PASSWORD)
             );
             $result = $this->client->getResponse();
@@ -578,8 +578,8 @@ denied for the user:
             $this->client->request(
                 'GET',
                 $this->getUrl('oro_api_get_users'),
-                array('limit' => 100),
-                array(),
+                ['limit' => 100],
+                [],
                 $this->generateWsseAuthHeader(LoadUserData::USER_NAME, LoadUserData::USER_API_KEY)
             );
             $result = $this->client->getResponse();
@@ -625,7 +625,7 @@ Here is an example of a fixture that adds a user without permissions:
             // Find role for user to able to authenticate in test.
             // You can use any available role that you want dependently on test logic.
             $role = $manager->getRepository(Role::class)
-                ->findOneBy(array('role' => 'IS_AUTHENTICATED_ANONYMOUSLY'));
+                ->findOneBy(['role' => 'IS_AUTHENTICATED_ANONYMOUSLY']);
 
             // Creating new user
             $user = $userManager->createUser();
@@ -744,7 +744,7 @@ method:
         protected function setUp()
         {
             $this->initClient();
-            $this->loadFixtures(array('Oro\Bundle\FooBarBundle\Tests\Functional\API\DataFixtures\LoadFooBarData'));
+            $this->loadFixtures(['Oro\Bundle\FooBarBundle\Tests\Functional\API\DataFixtures\LoadFooBarData']);
             $this->repositoryOrService = $this->getContainer()->get('repository_or_service_id');
         }
 
@@ -799,20 +799,20 @@ uses Doctrine ORM without mocking its classes and using real Doctrine services:
             self::initClient();
             $em = self::getContainer()->get('doctrine.orm.entity_manager');
 
-            return array(
-                'simple' => array(
+            return [
+                'simple' => [
                     'queryBuilder' => self::createQueryBuilder($em)
                         ->from('OroUserBundle:User', 'u')
-                        ->select(array('u.id', 'u.username')),
+                        ->select(['u.id', 'u.username']),
                     'expectedDQL' => 'SELECT u.id FROM OroUserBundle:User u'
-                ),
-                'group_test' => array(
+                ],
+                'group_test' => [
                     'queryBuilder' => self::createQueryBuilder($em)
                         ->from('OroUserBundle:User', 'u')
-                        ->select(array('u.id', 'u.username as uName'))
+                        ->select(['u.id', 'u.username as uName'])
                         ->groupBy('uName'),
                     'expectedDQL' => 'SELECT u.id, u.username as uName FROM OroUserBundle:User u GROUP BY uName'
-                )
+                ]
             );
         }
 
