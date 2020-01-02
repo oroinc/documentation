@@ -27,7 +27,6 @@ TEMPLATE = """<html>
 
 
 def generate_redirects(app):
-
     path = os.path.join(app.srcdir, app.config.redirects_file)
     if not os.path.exists(path):
         app.info("Could not find redirects file at '%s'" % path)
