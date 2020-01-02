@@ -364,21 +364,25 @@ redirects_file = 'redirects.txt'
 # Mappings of git branches and directory name for this branch in build directory
 # Branch names not mentioned here will be used "as is"
 scv_version_dirs = {
-    # Test dirs from public rep
     'doc-2.6': '1.6',
 }
 
 # Mappings of git branches version names for this branch in build directory
 # Branch names not mentioned here will be used "as is"
 scv_version_human_readable_names = {
-    # Test dirs from public rep
     'doc-2.6': '1.6',
     'master': '4.1 beta (master)',
+    # NEXT VERSION: Add mapping between branch name and human readable names
 }
 
 # Add custom parameters for each version build based on the branch name
 scv_build_args_per_version = {
-    # Exclude cloud doc for master branch.
-    # LTS version must have it only
-    'master': ('-D', 'exclude_patterns=cloud')
+    # Exclude cloud doc for master and other branches. Latest LTS version must have it only
+    # use redirect.html for index page for all versions except LTS (root) version
+    'master': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
+    'doc-2.6': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
+    # NEXT LTS:
+    # For the next LTS version we need to build previous LTS without cloud doc (as only last LTS contains actual)
+    # And previous LTS should be built in the subdirectory, that's why we use redirect.html as index
+    # '3.1': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
 }
