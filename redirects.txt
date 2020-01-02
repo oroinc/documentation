@@ -1,1 +1,1 @@
-documentation/backend/bundles/commerce/CMSBundle/content-widgets/user-guide.rst documentation/user/back-office/marketing/content-widgets/index.rst
+backend/bundles/commerce/CMSBundle/content-widgets/user-guide /user/back-office/marketing/content-widgets/index
