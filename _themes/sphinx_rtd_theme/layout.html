@@ -11,7 +11,7 @@
 {%- set link_prefix = '' %}
 
 {# Namespace for metadata from rst documents #}
-{% set layout_ns = namespace(show_global_toc=true, show_local_toc=true, local_toc_max_depth=-1, documentation_types='') %}
+{% set layout_ns = namespace(show_global_toc=true, show_local_toc=true, local_toc_max_depth=-1, documentation_types='', title=false) %}
 {%- if meta is defined %}
     {%- if 'oro_show_global_toc' in meta.viewkeys() %}
         {%- set layout_ns.show_global_toc = meta.get('oro_show_global_toc')|tobool %}
@@ -25,7 +25,16 @@
     {%- if 'oro_documentation_types' in meta.viewkeys() %}
         {%- set layout_ns.documentation_types = meta.get('oro_documentation_types') %}
     {%- endif %}
+    {%- if 'title' in meta.viewkeys() %}
+        {%- set layout_ns.title = meta.get('title') %}
+    {%- endif %}
 {%- endif %}
+
+{% if layout_ns.title %}
+  {%- set current_title = layout_ns.title|striptags|e %}
+{% else %}
+  {%- set current_title = title|striptags|e ~ titlesuffix %}
+{% endif %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="{{ lang_attr }}" >
@@ -33,7 +42,7 @@
   <meta charset="utf-8">
   {{ metatags }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="{{ title|striptags|e }}"/>
+  <meta property="og:title" content="{{ current_title }}"/>
   <meta property="og:type" content="website" />
   {% if theme_canonical_url and oro_current_version and versions %}
       <meta property="og:image" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/_static/images/OroDocs.png', 1) }}" />
@@ -47,7 +56,7 @@
       <meta name="docsearch:version" content="{{ oro_current_version }}" />
   {% endif %}
   {% block htmltitle %}
-  <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+  <title>{{ current_title }}</title>
   {% endblock %}
 
   {# FAVICON #}
