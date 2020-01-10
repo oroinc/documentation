@@ -21,7 +21,7 @@ These methods are detailed below.
 Method 1: Create a Project with Composer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Make sure you are using PHP 7.1.26 or higher and have Composer installed. If you do not, use Composer
+1. Make sure you are using PHP 7.3.13 or higher and have Composer installed. If you do not, use Composer
 installation process described in the |Composer installation documentation|.
 
 2. Create your new project in the directory where you plan to put the Oro application source files (``[$folder_location]``) by running:
