@@ -1,0 +1,14 @@
+services:
+    acme.cms.form.type.block:
+        class: ACME\Bundle\CMSBundle\Form\Type\BlockType
+        tags:
+            - { name: form.type, alias: acme_cms_block }
+
+    acme.cms.validator_constraints.unique_title_draft_field_validator:
+        class: ACME\Bundle\CMSBundle\Validator\Constraints\UniqueTitleDraftValidator
+        arguments:
+            - '@doctrine'
+            - '@oro_draft.manager.draftable_filter'
+            - '@translator'
+        tags:
+            - { name: validator.constraint_validator, alias: acme_cms_unique_title_draft_validator }

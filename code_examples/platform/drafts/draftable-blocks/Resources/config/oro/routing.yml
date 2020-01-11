@@ -1,0 +1,4 @@
+acme_cms_block:
+    resource:     "@ACMECMSBundle/Controller/BlockController.php"
+    type:         annotation
+    prefix:       /acme_cms

@@ -1,0 +1,29 @@
+oro_behat_extension:
+    elements:
+        ACME Block Form:
+            selector: 'form[name="acme_cms_block"]'
+            class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+            options:
+                mapping:
+                    Title: 'acme_cms_block[title]'
+                    Content: 'acme_cms_block[content]'
+
+        ACME Block drafts Grid:
+            selector: 'div[data-page-component-name="acme-cms-block-drafts-grid"]'
+            class: Oro\Bundle\DataGridBundle\Tests\Behat\Element\Grid
+
+    suites:
+        ACMECMSBundle:
+            contexts:
+                - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
+                - OroDataGridBundle::GridContext
+                - OroFormBundle::FormContext
+                - OroCMSBundle::FeatureContext
+                - OroApplicationBundle::CommerceMainContext
+                - OroNavigationBundle::TabContext
+                - OroNavigationBundle::FeatureContext
+                - OroUserBundle::FeatureContext
+                - OroActionBundle::OroActionContext
+                - OroSecurityBundle::ACLContext
+            paths:
+                - '@ACMECMSBundle/Tests/Behat/Features'

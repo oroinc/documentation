@@ -1,0 +1,56 @@
+datagrids:
+    acme-cms-block-grid:
+        acl_resource: acme_cms_block_view
+        options:
+            entity_pagination: true
+            entityHint: acme.cms.block.entity_label
+        source:
+            type: orm
+            query:
+                select:
+                    - acme_cms_block.id
+                    - acme_cms_block.title
+                from:
+                    - { table: 'ACMECMSBundle:Block', alias: acme_cms_block }
+        columns:
+            id:
+                label: acme.cms.block.id.label
+            title:
+                label: acme.cms.block.title.label
+        properties:
+            id: ~
+            view_link:
+                type:   url
+                route:  acme_cms_block_view
+                params: [ id ]
+        actions:
+            view:
+                type:          navigate
+                label:         oro.grid.action.view
+                link:          view_link
+                icon:          eye
+                acl_resource:  acme_cms_block_view
+                rowAction:     true
+
+    acme-cms-block-drafts-grid:
+        extends: acme-cms-block-grid
+        options:
+            entity_pagination: true
+            entityHint: acme.cms.block.draft.entity_plural_label
+            showDrafts: true
+        source:
+            query:
+                select:
+                    - CONCAT(draftOwner.firstName, ' ', draftOwner.lastName) as ownerName
+                join:
+                    left:
+                        - { join: acme_cms_block.draftOwner, alias: draftOwner }
+                where:
+                    and:
+                        - acme_cms_block.draftSource = :draft_source_id
+                        - acme_cms_block.draftUuid IS NOT NULL
+            bind_parameters:
+                - draft_source_id
+        columns:
+            ownerName:
+                label: acme.cms.block.draft.owner.label

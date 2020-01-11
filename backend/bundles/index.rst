@@ -117,6 +117,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    platform/UIBundle/index
    platform/WindowsBundle/index
    platform/WorkflowBundle/index
+   platform/DraftBundle/index
    commerce/CatalogBundle/index
    commerce/CheckoutBundle/index
    commerce/CMSBundle/index

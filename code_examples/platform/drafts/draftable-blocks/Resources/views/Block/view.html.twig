@@ -1,0 +1,69 @@
+{% extends 'OroUIBundle:actions:view.html.twig' %}
+{% import 'OroUIBundle::macros.html.twig' as UI %}
+{% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
+
+{% oro_title_set({params : {"%title%": entity.title }}) %}
+
+{% set gridName = 'acme-cms-block-drafts-grid' %}
+
+{% block pageHeader %}
+    {% set breadcrumbs = {
+        'entity': entity,
+        'indexPath': path('acme_cms_block_index'),
+        'indexLabel': 'acme.cms.block.entity_plural_label'|trans,
+        'entityTitle': entity.title
+    } %}
+    {{ parent() }}
+{% endblock pageHeader %}
+
+{% block breadcrumbs %}
+    {% import 'OroUIBundle::macros.html.twig' as UI %}
+    {{ parent() }}
+    {% if entity.draftUuid %}
+        <span class="page-title-draft">
+            {{ UI.badge('oro.draft.label'|trans, 'tentatively') }}
+        </span>
+    {% endif %}
+{% endblock breadcrumbs %}
+
+{% block content_data %}
+    {% set id = 'acme-cms-block-view' %}
+
+    {% set blockInfo %}
+        {{ UI.renderProperty('oro.calendar.calendarevent.title.label'|trans, entity.title) }}
+    {% endset %}
+
+    {% set blockContent %}
+        <div class="row-fluid form-horizontal">
+            <div class="cms-content">
+                {{ entity.content|render_content|oro_html_sanitize|raw }}
+            </div>
+        </div>
+    {% endset %}
+
+    {% set dataBlocks = [
+        {
+            'title': 'acme.cms.sections.general'|trans,
+            'class': 'active',
+            'subblocks': [{'data' : [blockInfo]}]
+        },
+        {
+            'title': 'acme.cms.sections.content'|trans,
+            'class': 'active',
+            'subblocks': [{'data' : [blockContent]}]
+        }
+    ] %}
+
+    {% if entity.draftUuid is null %}
+        {% set draftsGrid = dataGrid.renderGrid(gridName, {draft_source_id: entity.id}, { cssClass: 'inner-grid' }) %}
+        {% set dataBlocks = dataBlocks|merge([
+            {
+                'title': 'acme.cms.sections.drafts'|trans,
+                'subblocks': [{'data' : [draftsGrid]}]
+            }
+        ]) %}
+    {% endif %}
+
+    {% set data = {'dataBlocks': dataBlocks} %}
+    {{ parent() }}
+{% endblock content_data %}

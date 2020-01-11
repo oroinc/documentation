@@ -5091,3 +5091,7 @@ Links (Dev)
 .. |BlockTypeInterface::finishView| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout/BlockTypeInterface.php#L51" target="_blank">BlockTypeInterface::finishView</a>
+
+.. |Doctrine Filters| raw:: html
+
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/filters.html" target="_blank">Doctrine Filters</a>

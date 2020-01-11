@@ -1,0 +1,29 @@
+operations:
+    ACME_BLOCK_CREATE_DRAFT:
+        extends: CREATE_DRAFT
+        entities:
+            - ACME\Bundle\CMSBundle\Entity\Block
+
+    ACME_BLOCK_PUBLISH_DRAFT:
+        extends: PUBLISH_DRAFT
+        entities:
+            - ACME\Bundle\CMSBundle\Entity\Block
+        datagrids:
+            - acme-cms-block-drafts-grid
+
+    ACME_BLOCK_DUPLICATE_DRAFT:
+        extends: DUPLICATE_DRAFT
+        entities:
+            - ACME\Bundle\CMSBundle\Entity\Block
+        datagrids:
+            - acme-cms-block-drafts-grid
+
+    ACME_BLOCK_UPDATE_DRAFT:
+        extends: UPDATE_DRAFT
+        datagrids:
+            - acme-cms-block-drafts-grid
+
+    ACME_BLOCK_DELETE_DRAFT:
+        extends: DELETE_DRAFT
+        datagrids:
+            - acme-cms-block-drafts-grid

@@ -1,0 +1,5 @@
+services:
+    acme.cms.duplicator_extension.acmecms_block_title_extension:
+        class: ACME\Bundle\CMSBundle\Duplicator\Extension\BlockTitleExtension
+        tags:
+            - { name: oro_draft.duplicator.extension, priority: 255 }
