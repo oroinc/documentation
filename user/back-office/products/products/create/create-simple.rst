@@ -29,14 +29,20 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
 7. In the **General** section:
 
-   a) Enter the product SKU, name, description that will appear on the product view, and a short description that best positions the product for your target audience and will appear in the catalog listing. Use the WISIWIG editor to format the information.
+   a) Enter the product SKU and name.
 
-      .. image:: /user/img/products/products/ProductsCreate0_1.png
-         :alt: The product creation page
+   b) Enter a URL slug that is used to build a human-readable URL for the product page on the storefront.
 
-   b) Select the product status: *Enabled* or *Disabled*. When disabled, the product is not included in the catalog and is considered to be a draft.
+   #) Select the product status: *Enabled* or *Disabled*. When disabled, the product is not included in the catalog and is considered to be a draft.
 
-   #) Enter a URL slug that is used to build a human-readable URL for the product page on the storefront.
+   #) Specify whether the product should be featured or not by selecting *Yes* or *No* respectively.
+
+   #) Specify whether the product is a new arrival. When set to *Yes*, the product is highlighted in the storefront.
+
+      .. image:: /user/img/products/products/create_product.png
+         :alt: A simple product creation page
+
+   #) For **Brand**, select a :ref:`brand <user-guide--product-brands>` from the list. Use |IcBars| to view the list of all available brands. To create a new brand, click **+**.
 
    #) Configure units of quantity:
 
@@ -59,24 +65,29 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
       The tax calculation process depends on the tax jurisdiction that you decided to use in OroCommerce and other tax calculation options.
 
-   #) For **Brand**, select a :ref:`brand <user-guide--product-brands>` from the list. Use |IcBars| to view the list of all available brands. To create a new brand, click **+**.
+8. In the **Short Description** section, provide a short but meaningful default description that best positions the product for your target audience and will appear in the catalog listing. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fallback to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the short description in the WYSIWYG field.
 
-8. In the **Image** section, add a new image to the product by clicking **+Add Image** and then **Choose Image**. You can either upload a new image or select the required one from the list of available :ref:`digital assets <digital-assets>` records.
+    .. image:: /user/img/products/products/localize_short_descriptions_product.png
+       :alt: Localization fallback option for the short description of the simple product
+
+9. In the **Description** section, provide a long default description of the product that will appear on the product view page. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fallback to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field.
+
+10. In the **Image** section, add a new image to the product by clicking **+Add Image** and then **Choose Image**. You can either upload a new image or select the required one from the list of available :ref:`digital assets <digital-assets>` records.
 
    Then, select whether to show the image as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove the image, click the |IcClose| **Delete** icon next to it.
 
-9. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the drop-down.
+11. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the drop-down.
 
    .. image:: /user/img/products/products/SimpleProductDesign.png
       :alt: The list of available page templates in the dropdown of the Page Template field
 
-10. In the **SEO** section, provide the following information:
+12. In the **SEO** section, provide the following information:
 
    * **Meta Keywords** --- Enter the meta keywords for the product. A meta keyword is a specific type of a meta tag that appears in the HTML code of a web page and helps tell search engines what the topic of the page is.
    * **Meta Title** --- Enter the meta title for the product. A meta title is what is seen by search engine users and helps a search engine to index the page.
    * **Meta Description** --- Enter the meta description for the product. A meta description summarizes a page content. Search engines show a meta description in search results if they see the searched phrase in the description.
 
-11. In the **Inventory** section, provide the following information:
+13. In the **Inventory** section, provide the following information:
 
    .. start_inventory
 
@@ -101,23 +112,23 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
    .. image:: /user/img/products/products/simple_product_inventory.png
       :alt: The detailed settings of the inventory section
 
-12. In the **Product Price** section, add fixed product prices. Note that fixed prices override the automatically generated :ref:`price lists <user-guide--pricing>`.
+14. In the **Product Price** section, add fixed product prices. Note that fixed prices override the automatically generated :ref:`price lists <user-guide--pricing>`.
 
     Click **+Add**, select a price list, specify quantity, units, price value, and currency.
 
     .. image:: /user/img/products/products/SimpleProductPrices.png
        :alt: The product prices setting
 
-13. In the **Shipping Options** section, click **+Add Options** and provide unit, weight and weight measuring unit, dimensions (width, height, depth), and dimensions measuring unit and freight class.
+15. In the **Shipping Options** section, click **+Add Options** and provide unit, weight and weight measuring unit, dimensions (width, height, depth), and dimensions measuring unit and freight class.
 
-14. Review translation rules for a product name, URL slug, description, and short description.
+16. Review translation rules for a product name, URL slug, description, and short description.
 
     To enter translation manually, click |IcTranslations|, clear the **Use <parent translation>** check box next to the required language, and provide your version of the translation.
 
     .. image:: /user/img/products/products/ProductsCreateTranslation.png
        :alt: Provide the relevant translation
 
-15. Click **Save**.
+17. Click **Save**.
 
 .. stop_product_create_simple
 
