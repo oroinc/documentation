@@ -79,9 +79,11 @@ To add a new configurable product and make it available in the master catalog (f
 
    Also, specify the value of your configurable attributes and define any other custom attributes if required.
 
-#. In the **Image** section, add a new image to the product by clicking **+Add Image** and uploading the necessary file. You can select whether the image will be shown as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove an image, click |IcClose| next to it.
+8. In the **Image** section, add a new image to the product by clicking **+Add Image** and then **Choose Image**. You can either upload a new image or select the required one from the list of available :ref:`digital assets <digital-assets>` records.
 
-#. In the **SEO** section, specify the required attributes:
+   Then, select whether to show the image as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove an image, click |IcClose| next to it.
+
+9. In the **SEO** section, specify the required attributes:
 
    .. csv-table::
      :header: "Field", "Description"
@@ -93,26 +95,26 @@ To add a new configurable product and make it available in the master catalog (f
 
    And any other custom attributes if defined.
 
-#. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the list.
+10. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the list.
 
    .. image:: /user/img/products/products/SimpleProductDesign.png
       :alt: The list of available page templates in the dropdown of the Page Template field
 
-#. In the **Product Variants** section, select the configurable product variants by ticking the **Is Variant** check box next to the product.
+11. In the **Product Variants** section, select the configurable product variants by ticking the **Is Variant** check box next to the product.
 
    .. image:: /user/img/products/products/SampleProductVariantsForConfigProduct.png
       :alt: Selecting the configurable product variants
 
    .. note:: Make sure the configurable product has the same product unit as its product variants.
 
-#. Review translation rules for a product name, URL slug, description, and short description.
+12. Review translation rules for a product name, URL slug, description, and short description.
    
    To enter a translation manually, click |IcTranslations|, clear the **Use <parent translation>** check box next to the required language, and provide your version of the translation.
 
    .. image:: /user/img/products/products/ProductsCreateTranslation.png
       :alt: Provide the relevant translation
 
-#. Click **Save** to save your configurable product.
+13. Click **Save** to save your configurable product.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

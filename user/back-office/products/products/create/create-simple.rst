@@ -61,20 +61,22 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
    #) For **Brand**, select a :ref:`brand <user-guide--product-brands>` from the list. Use |IcBars| to view the list of all available brands. To create a new brand, click **+**.
 
-8. In the **Image** section, add a new image to the product by clicking **+Add Image** and uploading the necessary file. You can select whether the image will be shown as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove an image, click the |IcClose| **Delete** icon next to it.
+8. In the **Image** section, add a new image to the product by clicking **+Add Image** and then **Choose Image**. You can either upload a new image or select the required one from the list of available :ref:`digital assets <digital-assets>` records.
 
-#. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the drop-down.
+   Then, select whether to show the image as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove the image, click the |IcClose| **Delete** icon next to it.
+
+9. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the drop-down.
 
    .. image:: /user/img/products/products/SimpleProductDesign.png
       :alt: The list of available page templates in the dropdown of the Page Template field
 
-#. In the **SEO** section, provide the following information:
+10. In the **SEO** section, provide the following information:
 
    * **Meta Keywords** --- Enter the meta keywords for the product. A meta keyword is a specific type of a meta tag that appears in the HTML code of a web page and helps tell search engines what the topic of the page is.
    * **Meta Title** --- Enter the meta title for the product. A meta title is what is seen by search engine users and helps a search engine to index the page.
    * **Meta Description** --- Enter the meta description for the product. A meta description summarizes a page content. Search engines show a meta description in search results if they see the searched phrase in the description.
 
-#. In the **Inventory** section, provide the following information: 
+11. In the **Inventory** section, provide the following information:
 
    .. start_inventory
 
