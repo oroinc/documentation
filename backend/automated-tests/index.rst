@@ -55,7 +55,7 @@ Test Environment Setup
 
 You need to configure the following parameters for the testing environment:
 
-1. Create a separate database for tests (e.g. add "_test" suffix):
+1. Create a separate database for tests (e.g., add '_test' suffix):
 2. Set up host, port and authentication parameters for the database, the mail server, and the web socket server in the parameters_test.yml file:
 
    For example:
@@ -95,11 +95,11 @@ You need to configure the following parameters for the testing environment:
 
    .. code-block:: bash
 
-         $ php bin/phpunit -c ./ --testsuite="Functional Tests"
+         $ php bin/phpunit -c ./ --testsuite=functional
 
    .. code-block:: bash
 
-         $ php bin/phpunit -c ./ --testsuite=“Unit Tests"
+         $ php bin/phpunit -c ./ --testsuite=unit
 
 Database Isolation
 ^^^^^^^^^^^^^^^^^^
@@ -123,48 +123,6 @@ before a test starts and is rolled back when a test ends.
         // ...
     }
 
-The ``@dbIsolation`` (default behaviour) annotation adds a transaction that will be performed
-when a client is initialized for the first time and is rolled back when all
-test methods of the class have been executed.
-
-.. code-block:: php
-    :linenos:
-
-    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
-    namespace Oro\Bundle\FooBundle\Tests\Functional;
-
-    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
-
-    /**
-     * @dbIsolation
-     */
-    class FooBarTest extends WebTestCase
-    {
-        // ...
-    }
-
-Database Reindex
-^^^^^^^^^^^^^^^^
-
-The ``@dbReindex`` annotation triggers the execution of the ``oro:search:reindex``
-command when the client is first initialized. This is a workaround for MyISAM
-search tables that are not transactional.
-
-.. code-block:: php
-    :linenos:
-
-    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
-    namespace Oro\Bundle\FooBundle\Tests\Functional;
-
-    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
-
-    /**
-     * @dbReindex
-     */
-    class FooBarTest extends WebTestCase
-    {
-        // ...
-    }
 
 Loading Data Fixtures
 ^^^^^^^^^^^^^^^^^^^^^
@@ -437,8 +395,6 @@ Have a look at an example of a controller test from OroCRM:
 
     /**
      * @outputBuffering enabled
-     * @dbIsolation
-     * @dbReindex
      */
     class TaskControllersTest extends WebTestCase
     {
@@ -462,7 +418,7 @@ Have a look at an example of a controller test from OroCRM:
             $crawler = $this->client->submit($form);
             $result = $this->client->getResponse();
             $this->assertHtmlResponseStatusCodeEquals($result, 200);
-            $this->assertContains("Task saved", $crawler->html());
+            $this->assertContains('Task saved', $crawler->html());
         }
 
         /**
@@ -492,7 +448,7 @@ Have a look at an example of a controller test from OroCRM:
             $result = $this->client->getResponse();
 
             $this->assertHtmlResponseStatusCodeEquals($result, 200);
-            $this->assertContains("Task saved", $crawler->html());
+            $this->assertContains('Task saved', $crawler->html());
         }
 
         /**
@@ -550,7 +506,6 @@ denied for the user:
 
     /**
      * @outputBuffering enabled
-     * @dbIsolation
      */
     class UsersTest extends WebTestCase
     {
