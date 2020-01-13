@@ -11,9 +11,6 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "ACME\\Bundle\\CMSBundle\\": "drafts/draftable-blocks/"
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

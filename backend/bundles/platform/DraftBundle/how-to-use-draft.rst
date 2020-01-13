@@ -27,7 +27,7 @@ Create an entity with 2 fields: **title** and **content** and implement the enti
 
 .. oro_integrity_check:: fedf5a324b0fda71ee4434c2b1b1aebb3ed40ae7
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Entity/Block.php
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Entity/Block.php
         :language: php
         :linenos:
 
@@ -37,7 +37,7 @@ Follow the instructions provided in the :ref:`Configure Entities <book-entities-
 
 .. oro_integrity_check:: 9e6561168be7845f40da59f1e99965e27fa214bf
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Entity/Block.php
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Entity/Block.php
         :language: php
         :lines: 55-82
         :linenos:
@@ -71,7 +71,7 @@ After you complete it, you will have the ``installer`` with the following conten
 
 .. oro_integrity_check:: 578d4bce49529753b92a1539740d77af7b25acf7
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Migrations/Schema/ACMECMSBundleInstaller.php
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Migrations/Schema/ACMECMSBundleInstaller.php
         :language: php
         :linenos:
 
@@ -87,7 +87,7 @@ For more details on how to create a controller and navigation, see the following
 
 .. oro_integrity_check:: 6e5f50428ac12cc66fc5471ee1fa5a480bfca723
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Controller/BlockController.php
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Controller/BlockController.php
         :language: php
         :linenos:
 
@@ -104,7 +104,7 @@ To manage the entity, we need to create a grid to display original and draft ent
 
 .. oro_integrity_check:: 15fe8669d284167fe71738bcc885177c5d584562
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
         :language: php
         :lines: 2-33
         :linenos:
@@ -113,7 +113,7 @@ To manage the entity, we need to create a grid to display original and draft ent
 
 .. oro_integrity_check:: 07681c8ecdda003fcca3a71f26c0b6fab3f03229
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
         :language: php
         :lines: 35-57
         :linenos:
@@ -131,7 +131,7 @@ Follow the instructions provided in the |Work with Operations| topic.
 
 .. oro_integrity_check:: 4401fb14651162652e517d45aced91fbe9c8599b
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Resources/config/oro/actions.yml
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/actions.yml
         :language: php
         :lines: 2-33
         :linenos:
@@ -146,7 +146,7 @@ Follow the instructions provided in the :ref:`The Form Type <cookbook-entity-for
 
 .. oro_integrity_check:: fb58b4c11b130357b18d0f65b0e2cb56ebffe9f0
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Form/Type/BlockType.php
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Form/Type/BlockType.php
         :language: php
         :linenos:
 
@@ -168,7 +168,7 @@ Create a Filter
 
 .. oro_integrity_check:: 09bef5c13582568111d664616d4dc2e3b3a77d02
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Duplicator/Filter/UniqueTitleFilter.php
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Filter/UniqueTitleFilter.php
         :language: php
         :linenos:
 
@@ -179,7 +179,7 @@ Create a Matcher
 
 .. oro_integrity_check:: 8b45e8b9abde38dd19ff865a1054861b7b968f40
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Duplicator/Matcher/BlockTitleMatcher.php
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Matcher/BlockTitleMatcher.php
         :language: php
         :linenos:
 
@@ -190,7 +190,7 @@ Create an Extension
 
 .. oro_integrity_check:: 4ab142a5da68ddff0a35ee36658d11bbf34a96fc
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Duplicator/Extension/BlockTitleExtension.php
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Extension/BlockTitleExtension.php
         :language: php
         :linenos:
 
@@ -204,7 +204,7 @@ Follow the instructions provided in the :ref:`Template <templates-twig>` topic.
 
 .. oro_integrity_check:: 5ac712a78c7c3b59a018ca1f3df23131c9d5624d
 
-    .. literalinclude:: ../../../../code_examples/platform/drafts/draftable-blocks/Resources/views/Block/view.html.twig
+    .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/views/Block/view.html.twig
         :language: php
         :lines: 18-27
         :linenos:
