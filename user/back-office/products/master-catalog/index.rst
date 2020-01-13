@@ -148,6 +148,14 @@ Proceed with the following steps:
 
 * :ref:`Web Catalog <user-guide--web-catalog>`
 
+
+.. toctree::
+   :hidden:
+
+   import-categories
+   export-categories
+
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
