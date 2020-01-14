@@ -5,7 +5,7 @@
 Edit a Frontend Menu
 ====================
 
-A frontend menu may be multi-level like, and the child menu items are nested under parent menu items (e.g., **About**, **Customer Service**, **Privacy Policy**, and others are nested under **Information**).
+A frontend menu may be multi-level, and the child menu items are nested under parent menu items (e.g., **About**, **Customer Service**, **Privacy Policy**, and others are nested under **Information**).
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_2.png
 
@@ -17,7 +17,7 @@ To update the frontend menu contents, navigate to **System > Frontend Menus** in
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_1.png
 
-On the page that opens, the menu item tree is shown in the left panel. Center is reserved for the menu item configuration.
+On the page that opens, the menu item tree is displayed in the left panel. The center is reserved for the menu item configuration.
 
 Toggle the Frontend Menu Tree View
 ----------------------------------
@@ -38,26 +38,35 @@ Toggle the Frontend Menu Tree View
 
   .. image:: /user/img/system/frontend_menu/d&dsame.png
 
-- If and arrow appears in front of a menu item, then the moved item will become a child of the item that the arrow points to.
+- If and arrow appears in front of a menu item, then the moved item will become a child of the item to which the arrow points.
 
 Add a Menu Item
 ---------------
 
-1. In the left panel, click a menu item which will be parent for the menu item that you create.
+1. In the left panel, click a menu item that is going to be a parent for the menu item that you create.
 
 2. Click **Create Menu Item** on the top right and then **Create Menu Item** from the dropdown list.
 
-   The created menu item will appear as the last one on the list of children of the same parent item. You can move it to the position that you need, as described in the :ref:`Toggle the Menu Tree View <doc-config-menus-actions-draganddrop>` action description.
+   The created menu item is displayed as the last one on the list of children of the same parent item. You can move it to the position that you need, as described in the :ref:`Toggle the Menu Tree View <doc-config-menus-actions-draganddrop>` action description.
 
 3. In the right part of the page, specify the following information:
 
-* **Title** --- A name for the menu item. This is how this menu item will be represented in the menu. Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
+* **Title** --- A name for the menu item. This is how this menu item is going to be represented in the menu. Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-* **URI** --- A web address of the page or resource that this menu item opens. You can specify an absolute URI or one relative to the application URI (as specified in Application Settings in System Configuration).
+* **Target Type** --- Select the target of the frontend menu item: a URI link, a content node, or a system page. The fields below vary depending on the target type you choose.
 
-  If this menu item serves as a non-clickable parent that does not link itself to any resource (like **Customers** in the default main menu), type *\#*.
+  .. csv-table::
 
-* **Icon** --- From the list, select the icon that will denote the menu item. Sometimes menus (or menu levels) may not be supposed to display icons. For example, icons added to the first level of the main menu are displayed only when this menu is set to appear on the left.
+     "**URI**","URI is a web address of the page or resource that this menu item opens. You can specify an absolute URI or one relative to the application URI (as specified in Application Settings in the System Configuration)."
+     "**System Page**","Select one of the standard pre-designed pages of the OroCommerce storefront."
+     "**Content Node**","Select the :ref:`web catalog <user-guide--web-catalog>` from which you want to choose content node, and the :ref:`content node <user-guide--marketing--web-catalog--content-variant>` itself."
+
+  .. image:: /user/img/system/frontend_menu/target_type.png
+     :alt: Select the target type for a frontend menu item
+
+  .. hint:: If this menu item serves as a non-clickable parent that does not link itself to any resource (like **Customers** in the default main menu), type *\#*.
+
+* **Icon** --- From the list, select the icon that denotes the menu item. Sometimes menus (or menu levels) may not be supposed to display icons. For example, icons added to the first level of the main menu are displayed only when this menu is set to appear on the left.
 
 * **Description** --- Type a short but meaningful description of the menu item. Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
@@ -67,34 +76,34 @@ Add a Menu Item
 
   2) Fill in the text field with a user agent substring or a string, if required.
 
-     .. note:: A user agent string is a combination of user agent application versions, operating systems, crawlers, and other scripts which are specific for each user (e.g., Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36).
+     .. note:: A user agent string is a combination of user agent application versions, operating systems, crawlers, and other scripts that are specific for each user (e.g., Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36).
 
-        A user agent substring is a part of the aforementioned string (e.g., Mozilla, Windows, Safari, etc).
+        A user agent substring is a part of the string mentioned above (e.g., Mozilla, Windows, Safari, etc).
 
         .. image:: /user/img/system/frontend_menu/user_agent.png
 
   3) Select the corresponding operation from the list.
 
-     * The *contains* operation determines whether the specified substring is included in the user agent string (e.g., in case you mention Mozilla, all the versions of Mozilla in the user agent string will meet the requirements of this function).
+     * The *contains* operation determines whether the specified substring is included in the user agent string (e.g., if you mention Mozilla, all the versions of Mozilla in the user agent string will meet the requirements of this function).
 
      * The *does not contain* operation determines whether the specified substring is not included in the user agent string.
 
-     * The *matches* operation checks whether the specified value fully matches the user agent string (e.g. you need to provide a version of Mozilla to meet the requirements of this function).
+     * The *matches* operation checks whether the specified value fully matches the user agent string (e.g., you need to provide a version of Mozilla to meet the requirements of this function).
 
      * The *does not match* operation checks when the specified value does not match the user agent string.
 
    .. image:: /user/img/system/frontend_menu/frontend_menu_5.png
       :width: 70%
 
-  4) To create more advanced condition, you can combine constrains into the expression using logical AND and OR operators:
+  4) To create a more advanced condition, you can combine constraints into the expression using logical AND and OR operators:
 
-     * Click **+ And** below the operation field within the same block to add another constrain block into the expression via AND.
+     * Click **+ And** below the operation field within the same block to add another constraint block into the expression via AND.
 
        *AND* operation means that only those user agents that comply with all the specified conditions in a group will be selected.
 
      .. image:: /user/img/system/frontend_menu/frontend_menu_6.png
 
-     * Click **+ Add** at the bottom of the expression block to add another constrain block into the expression via OR.
+     * Click **+ Add** at the bottom of the expression block to add another constraint block into the expression via OR.
 
        *OR* operation activates the expression once any of the constraint blocks in a group evaluates to true.
 
@@ -102,11 +111,11 @@ Add a Menu Item
 
 * **Exclude On Screens** --- Enables you to hide the menu items on the specified screens sizes by clicking any screen size and selecting the one for which the menu will be hidden from the customer. Hold **Ctrl** and click the value to select/deselect multiple screens.
 
-    As an illustration, let us hide the **About** menu item from the desktops with 13 in. screen by enabling **Exclude On Screens** and selecting the corresponding screen size.
+    As an illustration, let us hide the **About** menu item from the desktops with a 13-inch screen by enabling **Exclude On Screens** and selecting the corresponding screen size.
 
     .. image:: /user/img/system/frontend_menu/frontend_menu_9.png
 
-* **Condition** --- Enables you to restrict visibility of a menu item using the following functions:
+* **Condition** --- Enables you to restrict the visibility of a menu item using the following functions:
 
   * The *is_logged_in()* function stands for the *registered users*. If entered, only the users who have logged into the Oro storefront are enabled to view the corresponding menu item.
 
@@ -139,9 +148,9 @@ Add a Menu Item
 Add a Divider
 -------------
 
-1. In the left panel, click a menu item which will be parent for the menu divider that you create.
+1. In the left panel, click a menu item which will be the parent for the menu divider that you create.
 
-2. Click **Create** drop-down on the top right and select **Create Divider**.
+2. Click **Create** drop-down on the top right, and select **Create Divider**.
 
 .. image:: /user/img/system/frontend_menu/menus_createdivider.png
 
@@ -164,7 +173,7 @@ Toggle Item Visibility
    .. note::
       If a menu item that you want to show has a parent, it will become visible too.
 
-3. **Find a Menu Item** ---  To quickly find a menu item, enter its name into the search field and click the |IcSearch| **Search** icon, or press **Enter**.
+3. **Find a Menu Item** ---  To quickly find a menu item, enter its name into the search field and click the |IcSearch| **Search** icon or press **Enter**.
 
    .. image:: /user/img/system/menus/menus_application_search.png
 
