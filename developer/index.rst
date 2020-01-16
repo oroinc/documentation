@@ -18,11 +18,10 @@ Developer Documentation is intended for developers and contains information abou
    <h2><a href="../frontend/">Frontend Developer Guide</a></h2>
    <p>Frontend Developer Guide provides the themes to prototype your application's storefront and back-office design.</p>
 
-..
-    .. raw:: html
+.. raw:: html
 
-       <h2><a href="../api/">Web Services API Guide</a></h2>
-       <p>Web Services API Guide enables developers to integrate Oro functionality into third-party software systems.</p>
+   <h2><a href="../api/">Web Services API Guide</a></h2>
+   <p>Web Services API Guide enables developers to integrate Oro functionality into third-party software systems.</p>
 
 .. raw:: html
 
@@ -41,5 +40,5 @@ Developer Documentation is intended for developers and contains information abou
   * Create a third-party integration through the OroIntegrationBundle
   * Create Twig email templates with certain pre-defined placeholders to define template metadata
   * Run regular time-based background tasks through cronjobs (on UNIX-based operating systems) or the Windows task scheduler
-  * Use OroCommerce REST API and WSSE Authentication to integrate Oro functionality into third-party software systems
+  * Use REST API and WSSE Authentication to integrate Oro functionality into third-party software systems
 

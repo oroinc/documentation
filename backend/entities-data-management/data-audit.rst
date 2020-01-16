@@ -128,7 +128,7 @@ API
 
 Along with browsing the audit history with your web browser, you can also access
 the data being stored via an API which provides methods to receive your stored
-results via either REST or SOAP.
+results via REST API.
 
 Both variants provide methods to retrieve:
 
@@ -143,8 +143,8 @@ the list of log entries.
 
     The audit log entry id isn't related to any of the entities being watched.
 
-REST
-~~~~
+REST API
+~~~~~~~~
 
 The two REST API endpoints are controlled by the ``oro_api_get_audit`` and
 ``oro_api_get_audits`` routes:
@@ -162,18 +162,6 @@ by the API controller if you omit it. Use the special ``latest`` value to
 access the most recent version of the API. At the moment, this is equivalent
 to ``v1`` which is the only available version.
 
-SOAP
-~~~~
-
-To access the SOAP API, you use one of the two functions provided by the API:
-
-============= ==============================
-Function      Use case
-============= ==============================
-``getAudits`` Retrieve all audit log entries
-------------- ------------------------------
-``getAudit``  Retrieve an audit log entry
-============= ==============================
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

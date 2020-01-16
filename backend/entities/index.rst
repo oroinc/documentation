@@ -16,6 +16,7 @@ entities in the Oro application.
    crud
    data-grids/index
    acls
+   entity-aliases
    entity-activities
    attachments
    customize-crud

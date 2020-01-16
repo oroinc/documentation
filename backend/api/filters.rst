@@ -270,7 +270,7 @@ To create a new filter:
   Register the factory as a service in the dependency injection container.
 * Register this class in `oro_api / filters` section using `Resources/config/oro/app.yml`.
   Examples of filters registration can be found in
-  |ApiBundleResourcesconfigoroapp.yml|.
+  |api app.yml|.
 
 To configure your filter to be used for an API resource, use the :ref:`type <filters-config>` option of the filter.
 

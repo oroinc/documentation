@@ -1,1 +1,2 @@
 backend/bundles/commerce/CMSBundle/content-widgets/user-guide /user/back-office/marketing/content-widgets/index
+backend/api/using /api/

@@ -53,10 +53,10 @@ To create a new processor, create a class that implements |ProcessorInterface| a
 Please note that:
 
 *  The name of a processor usually starts with a verb and the ``Processor`` suffix is not used.
-*  The ``priority`` attribute is used to control the order in which processors are executed. The higher the priority, the earlier a processor is executed. The default value is 0. The possible range is from -255 to 255. But for some types of processors the range can be different. For details, see the |documentation of the ChainProcessor| component. If several processors have the same priority the order they are executed is unpredictable.
+*  The ``priority`` attribute is used to control the order in which processors are executed. The higher the priority, the earlier a processor is executed. The default value is 0. The possible range is from -255 to 255. But for some types of processors the range can be different. For details, see the documentation of the |ChainProcessor| component. If several processors have the same priority the order they are executed is unpredictable.
 *  Each processor should check whether its work is already done, because there may be a processor with a higher priority which does the same but in different way. For example, such processors can be created for customization purposes.
 * Prefer `Processor Conditions`_ over a conditional logic inside a processor to avoid loading of unnecessary processors.
-*  As API resources can be created for any type of objects, not only ORM entities, it is always a good idea to check whether a processor is applicable to ORM entities. This check is very fast and allows avoiding possible logic issues and performance impact. Please use the ``oro_api.doctrine_helper`` service to get an instance of |OroBundleApiBundleUtilDoctrineHelper|, as this class is optimized to be used in the API stack.
+*  As API resources can be created for any type of objects, not only ORM entities, it is always a good idea to check whether a processor is applicable to ORM entities. This check is very fast and allows avoiding possible logic issues and performance impact. Please use the ``oro_api.doctrine_helper`` service to get an instance of |Api DoctrineHelper|, as this class is optimized to be used in the API stack.
 
 An example:
 
@@ -260,7 +260,7 @@ An error is represented by the |Error| class. Additionally, the |ErrorSource| cl
 -  **createByParameter(parameter)** *static* - Creates an instance of the **ErrorSource** class that represents URI query parameter caused the error.
 -  **getPropertyPath()** - Retrieves the path to a property that caused the error. For example, ``title`` or ``author.name``.
 -  **setPropertyPath(propertyPath)** - Sets the path to a property that caused the error.
--  **getPointer()** - Retrieves a pointer to a property in the request document that caused the error. For JSON, the pointer conforms |RFC 6901|. For example, ``/data`` for a primary data object, or "/data/attributes/title" for a specific attribute.
+-  **getPointer()** - Retrieves a pointer to a property in the request document that caused the error. For JSON, the pointer conforms |RFC 6901|. For example, ``/data`` for a primary data object, or ``/data/attributes/title`` for a specific attribute.
 -  **setPointer(pointer)** - Sets a pointer to a property in the request document that caused the error.
 -  **getParameter()** - Retrieves URI query parameter that caused the error.
 -  **setParameter(parameter)** - Sets URI query parameter that caused the error.

@@ -17,7 +17,7 @@ Related Documentation
 * |Organize Setup Mass Action on Datagrid|
 * |Close Website for Non-authenticated Visitors|
 * |Prevent Displaying the Back-Office Datagrids in the Storefront|
-* |Access Frontend REST API|
+* :ref:`Storefront REST API <web-api--storefront>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

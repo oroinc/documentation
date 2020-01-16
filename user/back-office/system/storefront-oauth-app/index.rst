@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCommerce
+
 .. _storefront-oauth-app:
 
 Storefront OAuth Applications
@@ -6,13 +8,12 @@ Storefront OAuth Applications
 The section contains the list of all OAuth applications created for customer users in the back-office. You can view and manage the existing OAuth applications, create new applications selecting the necessary grant type depending on your business needs, either client credentials or a password.
 
 .. image:: /user/img/system/storefront_oauth_app/storefront_oauth_app_list.png
-   :alt: A lis of all existing oauth applications
+   :alt: A list of all existing oauth applications
 
 
 .. include:: /user/back-office/system/user-management/oauth-app.rst
    :start-after: begin_oauth1
-   :end-before: finish_oauth3
-
+   :end-before: finish_oauth2
 
 .. note:: For the details on how to add an OAuth application to a selected user in the back-office, refer to the :ref:`Add OAuth applications to a selected customer user <user-guide--customers--customer-users--oauth>` topic.
 

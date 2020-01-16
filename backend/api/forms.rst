@@ -8,7 +8,7 @@ The Symfony |Validation Component| and |Forms Component| are used to validate an
 Validation
 ----------
 
-The validation rules are loaded from ``Resources/config/validation.yml`` and annotations as it is commonly done in Symfony applications. So, all validation rules defined for an entity are applicable to the API as well. By default, API uses two validation groups: **Default** and **api**. If you need to add validation constrains that should be applicable in Data API only you should add them in **api** validation group.
+The validation rules are loaded from ``Resources/config/validation.yml`` and annotations as it is commonly done in Symfony applications. So, all validation rules defined for an entity are applicable to the API as well. By default, API uses two validation groups: **Default** and **api**. If you need to add validation constrains that should be applicable in API only you should add them in **api** validation group.
 
 In case a validation rule cannot be implemented as a regular validation constraint due to its complexity you can implement it as a processor for ``post_validate`` event of :ref:`customize_form_data <customize-form-data-action>` action. Pay your attention on |FormUtil class|, it contains methods that may be useful in such processor.
 
@@ -96,19 +96,19 @@ Example:
             class: Acme\Bundle\AcmeBundle\Form\Type\DateTimeType
             tags:
                 - { name: form.type, alias: acme_datetime } # allow to use the form type on UI 
-                - { name: oro.api.form.type, alias: acme_datetime } # allow to use the form type in Data API
+                - { name: oro.api.form.type, alias: acme_datetime } # allow to use the form type in API
 
         acme.form.extension.datetime:
             class: Acme\Bundle\AcmeBundle\Form\Extension\DateTimeExtension
             tags:
                 - { name: form.type_extension, alias: acme_datetime } # add the form extension to UI forms
-                - { name: oro.api.form.type_extension, alias: acme_datetime } # add the form extension to Data API forms
+                - { name: oro.api.form.type_extension, alias: acme_datetime } # add the form extension to API forms
 
         acme.form.guesser.test:
             class: Acme\Bundle\AcmeBundle\Form\Guesser\TestGuesser
             tags:
                 - { name: form.type_guesser } # add the form type guesser to UI forms
-                - { name: oro.api.form.type_guesser } # add the form type guesser to Data API forms
+                - { name: oro.api.form.type_guesser } # add the form type guesser to API forms
 
 To switch between the general and API forms, use the |ProcessorSharedInitializeApiFormExtension| and |ProcessorSharedRestoreDefaultFormExtension| processors.
 
