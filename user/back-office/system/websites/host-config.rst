@@ -11,7 +11,7 @@ For the websites with dedicated domains, you may use default OroCommerce install
 
 To prepare files for the website located in the sub-directory (e.g, /uk), do the following:
 
-1. Copy app.php from *web* directory into the new location (e.g., web/uk/) and modify it to update the relative paths (e.g. adding extra */..* prefix to the path).
+1. Copy index.php from *web* directory into the new location (e.g., web/uk/) and modify it to update the relative paths (e.g. adding extra */..* prefix to the path).
 
    For example:
 
@@ -40,7 +40,8 @@ To prepare files for the website located in the sub-directory (e.g, /uk), do the
 
 where <yoursitename> is *uk* in our example.
 
-Now, when you use the ``http://localhost/<yoursitename>/index_dev.php`` address, the asset files (styles.css, require.js, etc.) are taken from the root folder on the domain instead of the dedicated website sub-folder.
+Now, when you use the ``http://localhost/<yoursitename>/index.php`` address, the asset files (styles.css, app.js, etc.) are taken from the root folder on the domain instead of the dedicated website sub-folder.
+
 
 **Related Topics**
 
