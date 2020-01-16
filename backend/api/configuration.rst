@@ -78,7 +78,7 @@ The top level configuration example:
 
 .. _exclude-option:
 
-`Exclude` Option
+`exclude` Option
 ----------------
 
 The ``exclude`` configuration option describes whether an entity or its fields should be excluded from the API.

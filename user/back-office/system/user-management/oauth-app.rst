@@ -6,7 +6,7 @@ OAuth Applications
  The section contains the list of all OAuth applications created for users in the back-office. You can view and manage the existing OAuth applications, create new applications selecting the necessary grant type depending on your business needs, either client credentials or a password.
 
    .. image:: /user/img/system/user_management/oauth/oauth_app_list.png
-      :alt: A lis of all existing oauth applications
+      :alt: A list of all existing oauth applications
 
 Overview
 ^^^^^^^^
@@ -28,8 +28,8 @@ To be able to create an OAuth application, make sure that you generate private a
 
 .. finish_oauth1
 
-Oro Side: Create an Application
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create an Application
+^^^^^^^^^^^^^^^^^^^^^
 
 To create a new OAuth application in the back-office:
 
@@ -42,7 +42,7 @@ To create a new OAuth application in the back-office:
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations.
    * **Application Name** --- Provide a meaningful name for the application you are adding.
    * **Active** --- Select the **Active** check box to activate the new application.
-   * **Grants** --- Select the grant type to apply to the new application. Currently, the available grant types are *Client Credentials* and *Password*. The |Client Credentials| type is used for machine-to-machine authentication (e.g., in a cron job that performs maintenance tasks over an API) and |Password| is used by trusted first-party clients to exchange the credentials (username and password) for an access token.
+   * **Grants** --- Select the grant type to apply to the new application. Currently, the available grant types are *Client Credentials* and *Password*. The |OAuth Client Credentials Grant| type is used for machine-to-machine authentication (e.g., in a cron job that performs maintenance tasks over an API) and |OAuth Password Grant| is used by trusted first-party clients to exchange the credentials (username and password) for an access token.
    * **Users** --- The field appears when selecting *Client Credentials* as a grant type in the previous field. Select a customer user who you want to assign the new application to.
 
 4. Click **Create**.
@@ -63,105 +63,7 @@ You can create as many applications as you need for any of your existing organiz
 
 Use the generated Client ID and Client Secret to retrieve an access token to connect to your Oro application.
 
-Client Credentials Grant Type: Generate Token
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin_oauth2
-
-To configure the authentication via the client credentials grant type and retrieve the access token:
-
-1. Provide your **Request URL**.
-
-   The Request URL consists of your application URL and the /oauth2-token slug, e.g., ``https://yourapplication/oauth2-token``
-
-2. Specify the content-type in headers:
-
-   `Content-Type: application/json`
-
-3. Send a POST request with the following body parameters to the authorization server:
-
-   * `grant_type` with the value `client_credentials`
-   * `client_id` with the client’s ID
-   * `client_secret` with the client’s secret ID
-
-4. Receive response from the authorization server with a JSON object containing the following properties:
-
-   * `token_type` with the value `Bearer`
-   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in config.yml.
-   * `access_token` a JSON web token signed with the authorization server’s private key
-
-5. Use the generated access token to make requests to the API.
-
-.. note:: Access tokens for backend and frontend API are not interchangeable. If you attempt to request data for the frontend API with a token generated for the backend application (i.e., a back-office user), access will be denied.
-
 .. finish_oauth2
-
-Password Grant Type: Generate Token
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To configure the authentication via the password grant type and retrieve the access token:
-
-1. Provide your **Request URL**.
-
-   The Request URL consists of your application URL and the /oauth2-token slug, e.g., ``https://yourapplication/oauth2-token``
-
-2. Specify the content-type in headers:
-
-   `Content-Type: application/json`
-
-3. Send a POST request with the following body parameters to the authorization server:
-
-   * `grant_type` with the value `password`
-   * `client_id` with the client identifier
-   * `client_secret` with the client’s secret
-   * `username` with the user's username
-   * `password` with the user's password
-
-4. Receive response from the authorization server with a JSON object containing the following properties:
-
-   * `token_type` with the value `Bearer`
-   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in config.yml
-   * `access_token` a JSON web token signed with the authorization server’s private key
-   * `refresh_token` a JSON web token used to request a new token when the `access_token` expires
-
-5. Use the generated access token to make requests to the API.
-
-   .. note:: Access tokens for backend and frontend API are not interchangeable. If you attempt to request data for the frontend API with a token generated for the backend application (i.e., a back-office user), access will be denied.
-
-Password Grant Type: Refresh Token
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-When the access token expires, you can retrieve the new one with the refresh token. It applies only to the OAuth applications with the Password grant type. The main advantage of using the refresh token is that you do not need to pass login and password every time you request data.
-
-Follow the next steps to get a new token:
-
-1. Provide your **Request URL**.
-
-   The Request URL consists of your application URL and the /oauth2-token slug, e.g., `https://yourapplication/oauth2-token``
-
-2. Specify the content-type in headers:
-
-   `Content-Type: application/json`
-
-3. Send a POST request with the following body parameters to the authorization server:
-
-   * `grant_type` with the value `refresh_token`
-   * `client_id` with the client identifier
-   * `client_secret` with the client’s secret
-   * `refresh_token` with the refresh token that was returned with an access token
-
-4. Receive response from the authorization server with a JSON object containing the following properties:
-
-   * `token_type` with the value `Bearer`
-   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in config.yml
-   * `access_token` - a new access token
-   * `refresh_token` - a new refresh token used to request a new token when the `access_token` expires
-
-5. Use the generated access token to make requests to the API.
-
-You can also disable the refresh token due to certain reasons in config.yml.
-
-.. finish_oauth3
 
 .. note:: For the details on how to add an OAuth application to a selected customer user in the back-office, refer to the :ref:`Add OAuth applications to your profile <user-guide-my-profile-oauth>` and :ref:`Add OAuth applications to a selected user <user-guide-add-oauth-to-user>` topics.
 
@@ -179,9 +81,3 @@ You can also disable the refresh token due to certain reasons in config.yml.
 .. |image_credentials| image:: /user/img/getting_started/user_menu/oauth/oauth_credentials1.png
 
 .. |image_app_actions| image:: /user/img/system/user_management/oauth/oauth_app_actions.png
-
-
-
-
-
-

@@ -707,13 +707,13 @@ Links (User)
 
    <a href="http://developer.paypal.com" target="_blank">http://developer.paypal.com</a>
 
-.. |Client Credentials| raw:: html
+.. |OAuth Client Credentials Grant| raw:: html
 
-   <a href="https://oauth2.thephpleague.com/authorization-server/client-credentials-grant/" target="_blank">Client Credentials</a>
+   <a href="https://oauth.net/2/grant-types/client-credentials/" target="_blank">Client Credentials</a>
 
-.. |Password| raw:: html
+.. |OAuth Password Grant| raw:: html
 
-   <a href="https://oauth2.thephpleague.com/authorization-server/resource-owner-password-credentials-grant/" target="_blank">Password</a>
+   <a href="https://oauth.net/2/grant-types/password/" target="_blank">Password</a>
 
 .. |Symfony Expression Language| raw:: html
 

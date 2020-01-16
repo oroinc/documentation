@@ -17,19 +17,19 @@ The following table shows all actions provided out-of-the-box:
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Action Name                | Description                                                                                                        |
 +============================+====================================================================================================================+
-| get                        | Returns an entity by its identifier                                                                                |
+| get                        | Returns an entity by its identifier.                                                                               |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_list                  | Returns a list of entities                                                                                         |
+| get\_list                  | Returns a list of entities.                                                                                        |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete                     | Deletes an entity by its identifier                                                                                |
+| delete                     | Deletes an entity by its identifier.                                                                               |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete\_list               | Deletes a list of entities                                                                                         |
+| delete\_list               | Deletes a list of entities.                                                                                        |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| create                     | Creates a new entity                                                                                               |
+| create                     | Creates a new entity.                                                                                              |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update                     | Updates an existing entity                                                                                         |
+| update                     | Updates an existing entity.                                                                                        |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_subresource           | Returns a list of related entities represented by a relationship                                                   |
+| get\_subresource           | Returns a list of related entities represented by a relationship.                                                  |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | update\_subresource        | Updates an entity (or entities, it depends on the association type) connected to an entity the sub-resource        |
 |                            | belongs to. This action do not have default implementation, additional processors should be added for each         |
@@ -43,29 +43,29 @@ The following table shows all actions provided out-of-the-box:
 |                            | belongs to. This action do not have default implementation, additional processors should be added for each         |
 |                            | sub-resource.                                                                                                      |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_relationship          | Returns a relationship data                                                                                        |
+| get\_relationship          | Returns a relationship data.                                                                                       |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | update_relationship        | Updates "to-one" relationship and completely replaces all members of "to-many" relationship.                       |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| add\_relationship          | Adds one or several entities to a relationship. This action is applicable only for "to-many" relationships         |
+| add\_relationship          | Adds one or several entities to a relationship. This action is applicable only for "to-many" relationships.        |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete\_relationship       | Deletes one or several entities from a relationship. This action is applicable only for "to-many" relationships    |
+| delete\_relationship       | Deletes one or several entities from a relationship. This action is applicable only for "to-many" relationships.   |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | options                    | Returns the communication options for a resource.                                                                  |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | customize\_loaded\_data    | Makes modifications of data loaded by *get*, *get\_list* and *get\_subresourceactions*                             |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| customize\_form\_data      | Makes modifications of submitted form data for *create* and *update* actions                                       |
+| customize\_form\_data      | Makes modifications of submitted form data for *create* and *update* actions.                                      |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_config                | Returns a configuration of an entity                                                                               |
+| get\_config                | Returns a configuration of an entity.                                                                              |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_metadata              | Returns metadata of an entity                                                                                      |
+| get\_metadata              | Returns metadata of an entity.                                                                                     |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| normalize\_value           | Converts a value to a requested data type                                                                          |
+| normalize\_value           | Converts a value to a requested data type.                                                                         |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| collect\_resources         | Returns a list of all resources accessible through Data API                                                        |
+| collect\_resources         | Returns a list of all resources accessible through API.                                                            |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| collect\_subresources      | Returns a list of all sub-resources accessible through Data API for a given entity type                            |
+| collect\_subresources      | Returns a list of all sub-resources accessible through API for a given entity type.                                |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | not_allowed                | Builds a response for case when a request does not match any public action.                                        |
 |                            | E.g. when HTTP method is not supported for REST API request.                                                       |
@@ -217,7 +217,7 @@ This action deletes a list of entities.
 
 The entities list is built based on input filters. Please take into account that at least one filter must be specified. Otherwise, an error raises.
 
-By default, the maximum number of entities that can be deleted by one request is 100. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``. However, please test your limit carefully because a higher limit may make a more significant impact on the server. An example of how to change the default limit is available in the :ref:`How-to <web-api--how-to>` topic.
+By default, the maximum number of entities that can be deleted by one request is 100. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``. However, please test your limit carefully because a higher limit may make a more significant impact on the server. An example of how to change the default limit is available in the :ref:`How-to <max-number-of-entities-to-be-deleted>` topic.
 
 The route name for REST API: ``oro_rest_api_list``.
 
@@ -324,7 +324,7 @@ This action has the following processor groups:
    :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
-   "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
+   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
    "security\_check","Checking whether access to the requested resource is granted.","When you add a new processor to the security_check group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
@@ -368,7 +368,7 @@ This action has the following processor groups:
    :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
-   "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
+   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
    "security\_check","Checking whether access to the requested resource type is granted.","--"
@@ -411,7 +411,7 @@ This action has the following processor groups:
    :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
-   "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
+   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
    "security\_check","Checking whether access to the requested resource type is granted.","--"
@@ -466,7 +466,7 @@ This action has the following processor groups:
    :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
-   "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
+   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing the input data for to use by processors from the next groups.","--"
    "security\_check","Checking whether access to the requested resource type is granted.","--"
@@ -521,7 +521,7 @@ This action has the following processor groups:
    :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
-   "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
+   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
    "security\_check","Checking whether access to the requested resource type is granted.","--"
@@ -757,7 +757,7 @@ Auxiliary Actions
 customize\_loaded\_data Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action makes modifications to the data loaded by the `get <#get-action>`__, `get\_list <#get_list-action>`__ and `get\_subresource <#get_subresource-action>`__ actions.
+This action makes modifications to the data loaded by the `get <#get-action>`__, `get\_list <#get-list-action>`__ and `get\_subresource <#get-subresource-action>`__ actions.
 
 The context class: |CustomizeLoadedDataContext|.
 
@@ -765,7 +765,7 @@ The main processor class: |CustomizeLoadedDataProcessor|.
 
 As example of a processor used to modify the loaded data: |ComputePrimaryField| or :ref:`Add a Computed Field <add-computed-field>`. Run ``php bin/console oro:api:debug customize_loaded_data`` to display other processors registered in this action.
 
-The ``collection`` tag attribute can be used for processors of this action to process all primary entities in `get\_list <#get_list-action>`__ or `get\_subresource <#get_subresource-action>`__ actions or all entities in ``to-many`` associations for `get <#get-action>`__, `get\_list <#get_list-action>`__ or `get\_subresource <#get_subresource-action>`__ actions. An example of a case when using of this attribute can be helpful is if you want to execute one SQL query for all entities in a collection to get an additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
+The ``collection`` tag attribute can be used for processors of this action to process all primary entities in `get\_list <#get-list-action>`__ or `get\_subresource <#get-subresource-action>`__ actions or all entities in ``to-many`` associations for `get <#get-action>`__, `get\_list <#get-list-action>`__ or `get\_subresource <#get-subresource-action>`__ actions. An example of a case when using of this attribute can be helpful is if you want to execute one SQL query for all entities in a collection to get an additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
 
 .. code-block:: php
 
@@ -969,7 +969,7 @@ For examples of usage, see the ``handleNotAllowedItem``, ``handleNotAllowedList`
 Context Class
 -------------
 
-The |Context|  class is used as a superclass for the context classes of CRUD actions such as `get <#get-action>`__, `get\_list <#get_list-action>`__, `create <#create-action>`__, `update <#update-action>`__, `delete <#delete-action>`__, and `delete\_list <#delete_list-action>`__.
+The |Context|  class is used as a superclass for the context classes of CRUD actions such as `get <#get-action>`__, `get\_list <#get-list-action>`__, `create <#create-action>`__, `update <#update-action>`__, `delete <#delete-action>`__, and `delete\_list <#delete-list-action>`__.
 
 General methods:
 
@@ -1058,8 +1058,8 @@ Entity metadata related methods:
 SubresourceContext Class
 ------------------------
 
-The |SubresourceContext| class is used as a superclass for the context classes of sub-resources related actions such as `get\_subresource <#get_subresource-action>`__, `get\_relationship <#get_relationship-action>`__, `update\_relationship <#update_relationship-action>`__, `add\_relationship <#add_relationship-action>`__ and
-`delete\_relationship <#delete_relationship-action>`__. Additionally to the :ref:`Context <context-class>` class, this class provides methods to work with parent entities.
+The |SubresourceContext| class is used as a superclass for the context classes of sub-resources related actions such as `get\_subresource <#get-subresource-action>`__, `get\_relationship <#get-relationship-action>`__, `update\_relationship <#update-relationship-action>`__, `add\_relationship <#add-relationship-action>`__ and
+`delete\_relationship <#delete-relationship-action>`__. Additionally to the :ref:`Context <context-class>` class, this class provides methods to work with parent entities.
 
 General methods:
 

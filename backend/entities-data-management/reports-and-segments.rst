@@ -186,7 +186,7 @@ The definition of a data grid consists of the following sections:
     This example is taken from |ReportBundle| which is part of OroPlatform. Refer to it for more
     examples.
 
-    You can also find more information on data grids in the |DataGridBundle documentation|.
+    You can also find more information on data grids in the |DataGridBundle| documentation.
 
 Access the Report
 ~~~~~~~~~~~~~~~~~

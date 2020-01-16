@@ -137,8 +137,8 @@ Add OAuth Applications
    :start-after: begin_oauth1
    :end-before: finish_oauth1
 
-Oro Side: Add an Application
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Add an Application
+^^^^^^^^^^^^^^^^^^
 
 To add a new OAuth application for a customer user in the back-office:
 
@@ -169,14 +169,6 @@ You can add as many applications as you need for any of your existing organizati
              :alt: Manage auth applications
 
 Use the generated Client ID and Client Secret to retrieve an access token to connect to your Oro application.
-
-Third Party Side: Generate Token
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. include:: /user/back-office/system/user-management/oauth-app.rst
-   :start-after: begin_oauth2
-   :end-before: finish_oauth2
-
 
 .. note:: For the aggregated information on all OAuth applications created by customer users in the back-office, refer to the general :ref:`Storefront OAuth Applications <storefront-oauth-app>` topic.
 

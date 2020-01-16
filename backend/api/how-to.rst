@@ -209,7 +209,7 @@ You can use the short syntax:
 Change the Maximum Number of Entities that Can Be Deleted by One Request
 ------------------------------------------------------------------------
 
-By default, the ``delete\_list`` action can delete not more than 100 entities. This limit is set by the |SetDeleteLimit| processor.
+By default, the ``delete_list`` action can delete not more than 100 entities. This limit is set by the |SetDeleteLimit| processor.
 
 If your want to use another limit, set it using the ``max_results`` option in ``Resources/config/oro/api.yml``:
 
@@ -527,7 +527,7 @@ An example of the ``Resources/config/oro/routing.yml`` configuration file:
 
 For the information on the ``ApiDoc`` annotation, see |the Symfony documentation|. To learn about all possible properties of the ``fields`` option, see |AbstractFormatter class in NelmioApiDocBundle|. Please note that the ``fields`` option can be used inside the ``input`` and ``output`` options.
 
-Use the :ref:`oro:api:doc:cache:clear <oroapidoccacheclear-command>` command to apply changes in the ``ApiDoc`` annotation to :ref:`API Sandbox <api-sandbox>`.
+Use the :ref:`oro:api:doc:cache:clear <oroapidoccacheclear-command>` command to apply changes in the ``ApiDoc`` annotation to :ref:`API Sandbox <web-services-api--sandbox>`.
 
 .. _add-custom-route:
 
@@ -541,7 +541,7 @@ For example, imagine that URI of the REST API resource for the registered user's
 pattern works with a list of entities, not with a single entity. The challenge is to map ``/api/userprofile`` to the ``Oro\Bundle\ApiBundle\Controller\RestApiController::itemAction`` action that works with a single entity and to remove handling of
 ``/api/userprofile/{id}``. This can be achieved using own route definition with the ``override_path`` option.
 
-Use :ref:`oro:api:doc:cache:clear <oroapidoccacheclear>` command to apply changes in ``ApiDoc`` annotation to :ref:`API Sandbox <api-sandbox>`.
+Use :ref:`oro:api:doc:cache:clear <oroapidoccacheclear>` command to apply changes in ``ApiDoc`` annotation to :ref:`API Sandbox <web-services-api--sandbox>`.
 
 Here is an example of the ``Resources/config/oro/routing.yml`` configuration file:
 
@@ -808,7 +808,7 @@ To do this, you need to perform the following:
 
 7. Execute the ``cache:clear`` command to apply the changes and the ``oro:api:doc:cache:clear`` command to build API Sandbox.
 
-That is all. Now, you can open :ref:`API Sandbox <api-sandbox>` and check that it has the ``ERP Integration`` link at the top. Click on this link and try to perform any API request.
+That is all. Now, you can open :ref:`API Sandbox <web-services-api--sandbox>` and check that it has the ``ERP Integration`` link at the top. Click on this link and try to perform any API request.
 
 To configure the new API, use the ``Resources/config/oro/api_erp.yml`` configuration file.
 
