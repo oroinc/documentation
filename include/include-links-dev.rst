@@ -5090,3 +5090,54 @@ Links (Dev)
 .. |Doctrine Filters| raw:: html
 
    <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/filters.html" target="_blank">Doctrine Filters</a>
+
+.. |Sketch app| raw:: html
+
+   <a href="https://www.sketch.com/get/" target="_blank">Sketch app</a>
+
+.. |user guide| raw:: html
+
+   <a href="https://www.sketch.com/docs/" target="_blank">user guide</a>
+
+.. |Lato| raw:: html
+
+   <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a>
+
+.. |FontAwesome 4.7| raw:: html
+
+   <a href="https://fontawesome.com/v4.7.0/" target="_blank">FontAwesome 4.7</a>
+
+.. |Runner Pro| raw:: html
+
+   <a href="https://sketchrunner.com/" target="_blank">Runner Pro</a>
+
+.. |Merge Duplicates| raw:: html
+
+   <a href="http://www.mergeduplicates.com/" target="_blank">Merge Duplicates</a>
+
+.. |RenameIt| raw:: html
+
+   <a href="https://renameit.design/sketch/" target="_blank">RenameIt</a>
+
+.. |Symbol Name Autocomplete| raw:: html
+
+   <a href="https://github.com/griffin-stewie/SymbolNameAutocomplete" target="_blank">Symbol Name Autocomplete</a>
+
+.. |Symbol Organizer| raw:: html
+
+   <a href="https://github.com/sonburn/symbol-organizer" target="_blank">Symbol Organizer</a>
+
+.. |Unused Style Remover| raw:: html
+
+   <a href="https://github.com/sonburn/unused-style-remover" target="_blank">Unused Style Remover</a>
+
+.. |Sketch Image Compressor| raw:: html
+
+   <a href="https://github.com/sketch-hq/sketch-image-compressor" target="_blank">Sketch Image Compressor</a>
+
+.. |OroCommerce Storefront Style Guide on GitHub| raw:: html
+
+   <a href="https://github.com/oroinc/OroCommerceStorefrontStyleGuide" target="_blank">OroCommerce Storefront Style Guide on GitHub</a>
+
+
+

@@ -2018,3 +2018,36 @@ body {
     font-size: 18px;
     font-weight: 700;
 }
+.frontstore-button {
+    color: #fff;
+    background-color: #cc5c28;
+    border-color: #cc5c28;
+    display: inline-block;
+    font-family: "Lato", "Helvetica", Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.frontstore-button span {
+    display: inline-block;
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-right: 8px;
+}
+.frontstore-button span:before {
+    content: "";
+    font-size: 14px;
+}
