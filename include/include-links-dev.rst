@@ -2879,6 +2879,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#how-scopes-work" target="_blank">Scopes Overview</a>
 
+.. |ScopeBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">ScopeBundle</a>
+
 .. |Configure Scope Criteria Providers| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#configuring-scope-criteria-providers" target="_blank">Configure Scope Criteria Providers</a>
@@ -5031,13 +5035,25 @@ Links (Dev)
 
    <a href="https://grapesjs.com/docs/" target="_blank">GrapesJS</a>
 
+.. |GrapesJS Api Documentation| raw:: html
+
+   <a href="https://grapesjs.com/docs/api/component.html" target="_blank">GrapesJS documentation</a>
+
+.. |component model| raw:: html
+
+   <a href="https://grapesjs.com/docs/api/component.html#component" target="_blank">component model</a>
+
+.. |creating component types| raw:: html
+
+   <a href="https://grapesjs.com/docs/modules/Components.html#define-custom-component-type" target="_blank">creating component types</a>
+
+.. |the component type| raw:: html
+
+   <a href=" https://grapesjs.com/docs/modules/Components.html#iscomponent" target="_blank">the component type</a>
+
 .. |OroCloud| raw:: html
 
    <a href="/cloud">OroCloud</a>
-
-.. |Content Blocks md| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/doc/reference/content_blocks.md" target="_blank">Content Blocks</a>
 
 .. |autoconfiguration| raw:: html
 
