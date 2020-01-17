@@ -11,7 +11,8 @@ Related Documentation
 ---------------------
 
 * :ref:`Content Widgets <content-widgets>`
-* |Content Blocks md|
+* :ref:`Content Blocks <bundle-docs-commerce-cms-bundle-content-blocks>`
+* :ref:`Editor Components <bundle-docs-commerce-cms-bundle-editor-components>`
 
 .. toctree::
    :maxdepth: 1
@@ -19,6 +20,8 @@ Related Documentation
 
    content-widgets/index
    WYSIWYG-field/index
+   content-blocks
+   editor-components
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
