@@ -371,7 +371,7 @@ scv_version_dirs = {
 # Branch names not mentioned here will be used "as is"
 scv_version_human_readable_names = {
     'doc-2.6': '1.6',
-    'master': '4.1 beta (master)',
+    'master': '4.1 rc (master)',
     # NEXT VERSION: Add mapping between branch name and human readable names
 }
 
