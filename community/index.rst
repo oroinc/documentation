@@ -13,11 +13,11 @@ Join Oro community and contribute to the open-source OroCommerce Community Editi
 Contact Community
 -----------------
 
-If you have questions or ideas about how to use, configure, extend or customize OroPlatform, OroCommerce or OroCRM, please direct these to our community forums:
+If you have questions about how to use, configure, extend or customize OroPlatform, OroCommerce or OroCRM, please direct these to Stack Overflow:
 
-* |OroPlatform community forum|
-* |OroCommerce community forum|
-* |OroCRM community forum|
+* |"OroPlatform" tag on Stack Overflow|
+* |"OroCommerce" tag on Stack Overflow|
+* |"OroCRM" tag on Stack Overflow|
 
 You can also join our |community team chat channel on Slack|.
 
