@@ -3419,17 +3419,17 @@ Links (Dev)
 
    <a href="https://crowdin.com/messages/create/12416174/21370" target="_blank">contact</a>
 
-.. |OroPlatform community forum| raw:: html
+.. |"OroPlatform" tag on Stack Overflow| raw:: html
 
-   <a href="http://community.oroinc.com/forum/oro-platform" target="_blank">OroPlatform community forum</a>
+   <a href="https://stackoverflow.com/questions/tagged/oroplatform" target="_blank">"OroPlatform" tag on Stack Overflow</a>
 
-.. |OroCommerce community forum| raw:: html
+.. |"OroCommerce" tag on Stack Overflow| raw:: html
 
-   <a href="https://community.oroinc.com/forum/orocommerce/" target="_blank">OroCommerce community forum</a>
+   <a href="https://stackoverflow.com/questions/tagged/orocommerce" target="_blank">"OroCommerce" tag on Stack Overflow</a>
 
-.. |OroCRM community forum| raw:: html
+.. |"OroCRM" tag on Stack Overflow| raw:: html
 
-   <a href="http://community.oroinc.com/forum/orocrm" target="_blank">OroCRM community forum</a>
+   <a href="https://stackoverflow.com/questions/tagged/orocrm" target="_blank">"OroCRM" tag on Stack Overflow</a>
 
 .. |community team chat channel on Slack| raw:: html
 
