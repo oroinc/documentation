@@ -561,3 +561,7 @@ Images
 .. |IcImpersonation| raw:: html
 
    <i class="fas fa-user-secret" aria-hidden="true"></i>
+
+.. |IcPublish| raw:: html
+
+   <i class="fas fa-share-square" aria-hidden="true"></i>

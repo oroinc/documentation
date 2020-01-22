@@ -98,7 +98,7 @@ Here, you can perform the following actions:
  * Filter landing pages by ID or Title.
 
 View and Edit a Landing Page
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To view the landing page details:
 
@@ -109,6 +109,43 @@ To view the landing page details:
 #. Click |IcEdit| **Edit** on the top right of the page to update the landing page title and content, edit meta information, change slug prototypes and their translation.
 
 #. Click **Save** on the top right of the page.
+
+#. Click **Save as draft** to save the landing page as a draft. Find all the related drafts under the **Drafts** section of the landing page.
+
+Manage Landing Page Drafts
+--------------------------
+
+The landing page functionality enables you to create drafts, save them, and publish selected drafts when you are ready.
+
+.. note:: The ability to manage drafts depends on the :ref:`permissions and access levels <user-guide-user-management-permissions-roles>` defined for a user of the selected role.
+
+To create a draft of the required landing page:
+
+1. Navigate to **Marketing > Landing Pages** and click on the selected landing page.
+
+2. Click |IcCopy| **Create draft** on the top right.
+
+3. An action confirmation popup displays the fields that are to be copied from the selected landing page to its draft (e.g., content, titles, metaTitles, metaDescriptions, metaKeywords). Click **Yes** to proceed and edit the draft.
+
+   Be aware that you do not need to edit the URL Slug. Once the draft is published, it keeps the URL Slug of the original landing page and not a new slug that you may create for the draft.
+
+.. image:: /user/img/marketing/landing_pages/landing_page_draft.png
+   :alt: The edit page of the landing page draft
+
+4. Edit the information as required and select one of the further actions:
+
+  * **Save and Close** -- saves the current draft. You can find it under the **Drafts** section of the selected landing page.
+  * **Save as new draft** -- saves the draft as a new one without affecting the current draft. For example, you are editing *Draft 2*, and instead of applying the changes to *Draft 2*, you want to save your draft as a new one and called it *Draft 3*. When saved, *Draft 2* remains unchanged, and *Draft 3* is added to the list of the landing page drafts.
+  * **Cancel** -- cancels the draft creation.
+  * **Delete** -- deletes the draft.
+
+5. To view the saved drafts, navigate to the **Drafts** section of the required landing page. Click the desired draft to get to its details page. Alternatively, hover over the |IcMore| **More Actions** menu to |IcEdit| edit, |IcDelete| delete, |IcCopy| duplicate, or |IcPublish| publish the draft.
+
+   .. image:: /user/img/marketing/landing_pages/all_drafts.png
+      :alt: The list of all drafts for the Contact Us landing page
+
+6. To publish the draft, click |IcPublish| **Publish draft** on the top right of the draft's details page. Once the action is confirmed, the draft is published, substituting the original landing page. All the drafts previously created for this landing page are then deleted.
+
 
 
 .. include:: /include/include-images.rst
