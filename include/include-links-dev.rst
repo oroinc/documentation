@@ -3519,13 +3519,13 @@ Links (Dev)
 
    <a href="http://semver.org/" target="_blank">Semantic Versioning</a>
 
-.. |1.6 branch| raw:: html
+.. |4.1 branch| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce-application/tree/1.6" target="_blank">1.6 branch</a>
+   <a href="https://github.com/oroinc/orocommerce-application/tree/4.1" target="_blank">4.1 branch</a>
 
-.. |3.1 branch| raw:: html
+.. |4.2 branch| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce-application/tree/3.1" target="_blank">3.1 branch</a>
+   <a href="https://github.com/oroinc/orocommerce-application/tree/4.2" target="_blank">4.2 branch</a>
 
 .. |relevant FeatureToggleBundle documentation| raw:: html
 
