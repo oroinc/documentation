@@ -7,8 +7,7 @@ Price Calculation in the Storefront
 
 .. begin
 
-Product prices on the storefront are taken from the combination of the price lists that are enabled on the system level, website level,
-customer group and customer level.
+Product prices on the storefront are taken from the combination of the price lists that are enabled on the system level, website level, customer group and customer level.
 Based on the fallback configuration, OroCommerce identifies the enabled price lists (see scenarios below) and selects one price per product quantity tier in the active currency to show it to the buyer as the listing price on the storefront.
 As there might be multiple prices matching the selection criteria in the enabled price lists, OroCommerce follows the configured :ref:`price selection strategy <sys--config--commerce--catalog--pricing>` (minimal price vs priority-based).
 
