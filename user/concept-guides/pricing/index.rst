@@ -5,8 +5,7 @@
 Price Management
 ================
 
-Price list management is one of the most important aspects of any e-Commerce business and even more so for Business to Business (B2B) e-Commerce
-companies. B2B businesses require a high level of flexibility to support the most advanced use cases, including a highly structured approach to account management and versatile sales processes that are often customized to the needs of specific customer groups or large individual accounts. This is why OroCommerce has one of the most advanced price list management features.
+Price list management is one of the most important aspects of any e-Commerce business and even more so for Business to Business (B2B) e-Commerce companies. B2B businesses require a high level of flexibility to support the most advanced use cases, including a highly structured approach to account management and versatile sales processes that are often customized to the needs of specific customer groups or large individual accounts. This is why OroCommerce has one of the most advanced price list management features.
 
 Overall, price management enables you to:
 
