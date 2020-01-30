@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _bundle-docs-commerce-cms-bundle:
 
 OroCMSBundle
@@ -8,10 +10,12 @@ OroCMSBundle adds content management features to the Oro application. The bundle
 Related Documentation
 ---------------------
 
-* `Content Blocks <https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/CMSBundle/Resources/doc/reference/content_blocks.md>`__
+* :ref:`Content Blocks <bundle-docs-commerce-cms-bundle-content-blocks>`
+* :ref:`Widgets on a CMS Content Page <bundle-docs-commerce-cms-bundle-content-page>`
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   content_widgets/index
+   content-blocks
+   widgets

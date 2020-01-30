@@ -2932,6 +2932,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md" target="_blank">Configure Dedicated Database Connection for Reports</a>
 
+.. |ScopeBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/3.1/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">ScopeBundle</a>
+
 .. |RequireJS API Configuration| raw:: html
 
    <a href="https://requirejs.org/docs/api.html#config" target="_blank">RequireJS API Configuration</a>

@@ -44,9 +44,10 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
 ============================================================================    =======================================================================
 :ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`                      :ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`
 :ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`                    :ref:`ProductBundle <bundle-docs-commerce-product-bundle>`
-:ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`    :ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`
-:ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`    :ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`
-:ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`                  :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`
+:ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`                              :ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`
+:ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`    :ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`
+:ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`    :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`
+:ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`
 :ref:`OrderBundle <bundle-docs-commerce-order-bundle>`
 ============================================================================    =======================================================================
 
@@ -116,9 +117,9 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    platform/UIBundle/index
    platform/WindowsBundle/index
    platform/WorkflowBundle/index
-
    commerce/CatalogBundle/index
    commerce/CheckoutBundle/index
+   commerce/CMSBundle/index
    commerce/CustomerBundle/index
    commerce/FrontendBundle/index
    commerce/InventoryBundle/index
