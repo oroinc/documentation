@@ -10,11 +10,8 @@ OroActivityBundle helps classify certain entity types as activities and enables 
 Related Documentation
 ---------------------
 
-* |Enable Activity Association Using Migrations|
-* |Make an Entity an Activity|
-* |Configure UI for the Activity Entity|
-* |Configure Custom Grid for Activity Context Dialog|
-* |Enable Contexts Column in Activity Entity Grids|
-
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+* :ref:`Enable Activity Association Using Migrations <backend-entity-activities>`
+* :ref:`Make an Entity an Activity <backend-make-entity-activities>`
+* :ref:`Configure UI for the Activity Entity <backend-entity-activities-configure-ui>`
+* :ref:`Configure Custom Grid for Activity Context Dialog <backend-entity-activities-configure-custom-grid>`
+* :ref:`Enable Contexts Column in Activity Entity Grids <backend-entity-activities-enable-context-column>`

@@ -4,7 +4,7 @@ Reports & Segments
 Reports
 -------
 
-OroPlatform gives you the opportunity to create customized reports about the entities in your
+OroPlatform allows you to create customized reports about the entities in your
 application. For example, you may want to create a report that displays the achieved accounts by opportunity
 like this:
 
@@ -17,7 +17,7 @@ like this:
 .. _book-reports-configuration:
 
 Configure a Report
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Building a new report is as easy as defining a data grid. A data grid is a YAML configuration living in a
 file called ``datagrids.yml`` in the ``Resources/config/oro`` directory of your bundle. Take a look at the
@@ -125,7 +125,7 @@ The definition of a data grid consists of the following sections:
 
 ``source``
 
-    The ``source`` property describes which data need to be fetch from the database to collect all
+    The ``source`` property describes which data need to be fetched from the database to collect all
     data needed for the report. As you can see, you are able to use all the features that you
     already know from the Doctrine query builder. The ``acl_resource`` specifies the ACL a user has
     to fullfil to be able to access the data grid.
@@ -148,18 +148,17 @@ The definition of a data grid consists of the following sections:
 
     The ``columns`` option configures which columns will be visible in the data grid. As you can
     see, you can either refer to values that are produced by the ``source`` (like ``cnt`` or
-    ``value``) or to a kind of *virtual column* (like ``period``) which can defined through custom
+    ``value``) or to a kind of *virtual column* (like ``period``) which can be defined through custom
     ``filters`` (see below).
 
 ``sorters``
 
-    This option configures which columns can be used to sort entries by when the are displayed.
+    This option configures which columns can be used to sort entries by the time they are displayed.
     You can refer to the ``columns`` that you defined before.
 
 ``filters``
 
-    The ``filters`` option allows you to provide the user in interface to filter the report to only
-    display a subset of all available entries. In the example above, the ``period`` column which
+    The ``filters`` option allows you to provide the user interface to filter the report to display a subset of all available entries only. In the example above, the ``period`` column which
     was used in other options before lets the user select from a list for which period entries
     should be shown. The available choices directly refer to the fields that where selected with
     the ``source`` configuration. Additionally, the ``monthPeriod`` will be taken by default if the
@@ -189,7 +188,7 @@ The definition of a data grid consists of the following sections:
     You can also find more information on data grids in the |DataGridBundle| documentation.
 
 Access the Report
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 To be able to access the new report, you can add a custom item to the *Reports & Segments* menu in
 a configuration file named ``navigation.yml`` that is located in the ``Resources/config`` directory
@@ -225,10 +224,106 @@ items if you have more custom reports.
 Then, under the ``tree`` key you add the newly created item to the *Reports & Segments* tab of the
 application menu.
 
+.. _backend-segments-overview:
+
 Segments
 --------
 
-For the detailed information on the segments entities that the application users can create, refer to the :ref:`OroSegmentBundle <bundle-docs-platform-segment-bundle>` topic or read the |relevant OroSegmentBundle documentation|.
+A segment is a representation of some dataset and is based on an entity and a set of filters. It is filtered data of the provided entity type.
+
+There are two types of segments:
+
+ 1. **Static** (is also called ``On demand``)
+ 2. **Dynamic**
+
+The difference is that the dynamic segment displays real-time data, and static segment has a set of snapshots. It filters data in the same way as the dynamic one and stores the state in a service table (`oro_segment_snapshot`). So, even if the data is no longer correspond to the filtering criteria in real-time, it will still exist in the dataset of the static segment.
+ So, a static segment is a snapshot of the filtered data at some point of time.
+
+ Also, both segment types have a table representation of data. It can be configured from the segment management pages.
+
+.. _backend-segments-frontend-implementation:
+
+Frontend Implementation
+^^^^^^^^^^^^^^^^^^^^^^^
+
+A frontend part of the segment management is based on *condition builder* that comes from *OroQueryDesignerBundle*.
+See the |Condition Builder Component| topic for more details. A **segmentation filter** roots from *AbstractFilter* of *OroFilterBundle* and provides the ajax-based autocomplete field, which, in turn, is based on the *JQuery.Select2* plugin.
+
+.. _backend-segments-backend-implementation:
+
+Backend Implementation
+^^^^^^^^^^^^^^^^^^^^^^
+
+Entities
+~~~~~~~~
+
+**Segment** entity is descendant of the *AbstractQueryDesigner* model that comes from *OroQueryDesignerBundle*.
+ Basically, this entity contains an entity name (based on), a json encoded definition and service fields such as created/updated, owner etc. **SegmentType** is a representation of possible segment types.
+ Default types are loaded by the data fixture migration mechanism. **SegmentSnapshot** is a service entity.
+ It contains snapshots data for **static** segments. It also contains a link to the segment that it belongs to,
+ the *entityId* field that is linked to the entity of the type that the segment is based on, and the date when this link was created.
+
+Query Builders
+~~~~~~~~~~~~~~
+
+As described before, **static** and **dynamic** segments have different ways of applying a filtering tool.
+There are two strategies, the *DynamicSegmentQueryBuilder* and *StaticSegmentQueryBuilder* correspondent.
+
+Datagrid
+~~~~~~~~
+
+For a table representation of the segment, use **OroDataGridBundle**. A grid configuration comes from the segment definition in *SegmentBundle\Grid\ConfigurationProvider*.
+ It retrieves the segment identifier from the grid name and passes the loaded segment entity to *SegmentDatagridConfigurationBuilder*.
+ The datagrid configuration does not process filtering to encapsulate filtering logic in *SegmentFilter*.
+ So, for those purposes, two proxy classes, *DatagridSourceSegmentProxy* and *RestrictionSegmentProxy*, were created.
+
+ **DatagridSourceSegmentProxy** provides the definition to *segment filter* only. So, the datagrid configuration builder receives the definition for segment filter.
+
+*SegmentQueryConverter* uses *RestrictionSegmentProxy* to decline converting definition of the columns, as the query builder needs only one field in the *SELECT* statement, which is an entity identifier.
+
+.. _backend-segments-usage:
+
+Usage Examples
+^^^^^^^^^^^^^^
+
+The query is retrieved using the following code:
+
+.. code-block:: php
+    :linenos:
+
+    if ($segment->getType()->getName() === SegmentType::TYPE_DYNAMIC) {
+        $query = $this->dynamicSegmentQueryBuilder->build($segment);
+    } else {
+        $query = $this->staticSegmentQueryBuilder->build($segment);
+    }
+
+
+A `$query` variable contains instance of *\Doctrine\ORM\Query*. Add it to the statement of any doctrine query in the following way:
+
+.. code-block:: php
+    :linenos:
+
+    /** @var EntityManger $em */
+    $classMetadata = $em->getClassMetadata($segment->getEntity());
+    $identifiers   = $classMetadata->getIdentifier();
+
+    // SOME QUERY HERE
+    $qb = $em->createQueryBuilder()->select()
+        ->from($segment->getEntity());
+
+    $alias = 'u';
+    // only not composite identifiers are supported
+    $identifier = sprintf('%s.%s', $alias, reset($identifiers));
+    $expr       = $qb->expr()->in($identifier, $query->getDQL());
+
+    $qb->where($expr);
+
+    $params = $query->getParameters();
+    /** @var Parameter $param */
+    foreach ($params as $param) {
+        $qb->setParameter($param->getName(), $param->getValue(), $param->getType());
+    }
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

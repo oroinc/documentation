@@ -10,14 +10,18 @@ OroAttachmentBundle introduces two entity field types: an image and a file, and 
 Related Documentation
 ---------------------
 
-* |Configure Supported Mime Types|
-* |File Types|
-* |Image Type|
-* |Configure Storage|
-* |Use Migration Extension (Example)|
-* |Configure Attachments|
-* |Image Formatters|
-* |Enable Debugging Images|
+* :ref:`Configure Supported Mime Types <bundle-docs-platform-attachment-bundle-config>`
+* :ref:`File Types <attachment-bundle-file-types>`
+* :ref:`Image Types <attachment-bundle-image-types>`
+* :ref:`Configure Storage <attachment-bundle-storage>`
+* :ref:`Use Migration Extension (Example) <attachment-bundle-migration-extension>`
+* :ref:`Configure Attachments <backend--entity-attachments>`
+* :ref:`Image Formatters <attachment-bundle-image-formatters>`
+* :ref:`Enable Debugging Images <attachment-bundle-debug-img>`
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+
+
+.. toctree::
+   :hidden:
+
+   attachment_bundle_config
