@@ -109,6 +109,11 @@ Within **All Promotions**, you can view:
 * Promotions added automatically if the order qualifies
 * Coupon codes added manually
 
+.. note::
+    Promotions can be displayed for an order via REST API, in which case the following message is displayed:
+
+    *Promotions are disabled for the order.*
+
 Within **All Special Discounts**, you can view:
 
 * Special discounts added manually
