@@ -5,24 +5,22 @@ parameters:
 services:
     acme_fast_shipping.integration.channel:
         class: 'ACME\Bundle\FastShippingBundle\Integration\FastShippingChannelType'
-        public: false
         tags:
             - { name: oro_integration.channel, type: '%acme_fast_shipping.integration.type%' }
 
     acme_fast_shipping.integration.transport:
         class: 'ACME\Bundle\FastShippingBundle\Integration\FastShippingTransport'
-        public: false
         tags:
             - { name: oro_integration.transport, type: '%acme_fast_shipping.integration.type%', channel_type: '%acme_fast_shipping.integration.type%' }
 
     acme_fast_shipping.method.identifier_generator.method:
         parent: oro_integration.generator.prefixed_identifier_generator
+        public: true
         arguments:
             - '%acme_fast_shipping.integration.type%'
 
     acme_fast_shipping.factory.method:
         class: 'ACME\Bundle\FastShippingBundle\Factory\FastShippingMethodFromChannelFactory'
-        public: false
         arguments:
             - '@acme_fast_shipping.method.identifier_generator.method'
             - '@oro_locale.helper.localization'
