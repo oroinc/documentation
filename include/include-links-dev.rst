@@ -5035,6 +5035,14 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/OroCommerceStorefrontStyleGuide" target="_blank">OroCommerce Storefront Style Guide on GitHub</a>
 
+.. |Hot Module Replacement| raw:: html
+
+   <a href="https://webpack.js.org/concepts/hot-module-replacement/" target="_blank">Hot Module Replacement</a>
+
+..  |AssetBundle upgrade documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/CHANGELOG.md#assetbundle-1" target="_blank"> upgrade documentation</a>
+
 .. |KnpGaufretteBundle| raw:: html
 
    <a href="https://github.com/KnpLabs/KnpGaufretteBundle" target="_blank">KnpGaufretteBundle</a>
