@@ -1,3 +1,5 @@
+.. _system-websites-create:
+
 :oro_documentation_types: OroCommerce
 
 Create a Website
@@ -13,31 +15,38 @@ To create a new website in OroCommerce:
    .. image:: /user/img/system/websites/create_website_page.png
       :alt: The create website page
 
+
 3. In the **General** section, provide the following information:
 
    * **Owner** --- the field is prepopulated with the organization to which the user who creating a website belongs. You can change this value, if necessary.
    * **Name** --- the website name.
+   * **Configure For B2C** --- if set to *Yes*, some website configuration settings are modified to match the standard B2C setup. The changes affect the following options:
 
-4. In the **Additional** section, define the default customer user roles to be assigned to both guests and authenticated users.
+     .. image:: /user/img/system/websites/B2C_settings.png
+        :alt: The list of options that are modified for the B2C website
 
-   * **Guest Role** - select the :ref:`customer user role <user-guide--customers--customer-user-roles>` that will be applied to all guest visitors of the current website by default. A set of :ref:`permissions and access levels <user-guide-user-management-permissions-roles>` defined for the selected role affects the way guest users manage their data in the storefront.
+     You can always modify any of these options manually in the system configuration.
 
-   * **Default Self-Registration Role** - select the default :ref:`customer user role <user-guide--customers--customer-user-roles>` that will be applied to the users once they register an account on the website automatically. To enable this option, set the corresponding registration permission in the :ref:`website configuration <system--website--configuration--commerce--customers--customer-users>` under **Commerce > Customer > Customer Users**.
+     If set to *No*, the settings that you have configured for your website remain intact.
 
-5. In the **Price Lists** section, configure the following options:
+4. In the **Price Lists** section, configure the following options:
 
    * **Fallback** --- specify whether the website prices should reuse the global price list defined in the system configuration whenever the product price is not available in the price list specified for the website.
 
    * **Price Lists** --- select the price list to use for this website. You may add multiple price lists using the **+ Add Price List** option and specify the priority that controls the way the price is looked up.
-
-   .. image:: /user/img/system/websites/website_pricelists.png
-      :alt: Select the price list to use for the current website
 
    Priority defines the order in which OroCommerce walks through the price lists to find a product price. Whenever the price is not found in the higher priority price list, OroCommerce switches to the next one.
 
 .. To configure flexible price options, set **Merge** flags for the price lists you would like to combine to cover the most product units. The unit price from the lower priority price list is used when it is missing in the higher priority price list. This mechanism applies only to the price lists where the *merge* is enabled.
 
    .. note:: Price list configuration on the customer or customer group level may override the website configuration.
+
+
+5. In the **Additional** section, define the default customer user roles to be assigned to both guests and authenticated users.
+
+   * **Guest Role** - select the :ref:`customer user role <user-guide--customers--customer-user-roles>` that will be applied to all guest visitors of the current website by default. A set of :ref:`permissions and access levels <user-guide-user-management-permissions-roles>` defined for the selected role affects the way guest users manage their data in the storefront.
+
+   * **Default Self-Registration Role** - select the default :ref:`customer user role <user-guide--customers--customer-user-roles>` that will be applied to the users once they register an account on the website automatically. To enable this option, set the corresponding registration permission in the :ref:`website configuration <system--website--configuration--commerce--customers--customer-users>` under **Commerce > Customer > Customer Users**.
 
 6. Click **Save and Close**.
 

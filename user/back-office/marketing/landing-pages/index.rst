@@ -144,6 +144,8 @@ To create a draft of the required landing page:
    .. image:: /user/img/marketing/landing_pages/all_drafts.png
       :alt: The list of all drafts for the Contact Us landing page
 
+|
+
 6. To publish the draft, click |IcPublish| **Publish draft** on the top right of the draft's details page. Once the action is confirmed, the draft is published, substituting the original landing page. All the drafts previously created for this landing page are then deleted.
 
 
