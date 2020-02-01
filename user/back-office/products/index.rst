@@ -1,3 +1,8 @@
+:title: Products Information Management in the OroCommerce Back-Office
+
+.. meta::
+   :description: Product and master catalog management guides for the OroCommerce back-office users
+
 :oro_documentation_types: OroCommerce
 :oro_show_local_toc: false
 

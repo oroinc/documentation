@@ -1,3 +1,8 @@
+:title: OroCommerce, OroCRM, OroPlatform Developer Documentation
+
+.. meta::
+   :description: Guides and how-to manuals for developers and contributors
+
 .. _dev-guide:
 
 :oro_show_global_toc: false

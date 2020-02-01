@@ -1,3 +1,8 @@
+:title: Logging Concept and Strategy in OroCommerce, OroCRM, OroPlatform
+
+.. meta::
+   :description: An overview of the logging concept, strategy, and standards
+
 .. _dev-guide-system-logging:
 
 Logging

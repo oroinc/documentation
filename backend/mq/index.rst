@@ -1,3 +1,8 @@
+:title: Message Queue Concepts in OroCommerce, OroCRM, OroPlatform
+
+.. meta::
+   :description: Message queue concept and architecture guides
+
 .. _op-structure--mq--index:
 .. _op-structure--mq:
 

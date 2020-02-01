@@ -1,3 +1,8 @@
+:title: Cron Setup and Configuration in OroCommerce, OroCRM, OroPlatform
+
+.. meta::
+   :description: Instructions on the time-based cron jobs setup and configuration in the Oro applications for the backend developers
+
 .. _dev-guide-system-cron-jobs:
 
 Cron

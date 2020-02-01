@@ -1,3 +1,8 @@
+:title: OroPlatform and OroCommerce Bundles Documentation
+
+.. meta::
+   :description: A list of OroCommerce and OroCRM bundles
+
 .. _bundle-docs:
 
 Bundles Documentation
