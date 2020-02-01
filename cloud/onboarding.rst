@@ -1,3 +1,8 @@
+:title: OroCloud Onboarding Process
+
+.. meta::
+   :description: Instructions on the OroCloud onboarding process before the Oro application deployment
+
 :orphan:
 
 .. _cloud_onboarding:

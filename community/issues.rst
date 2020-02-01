@@ -1,3 +1,8 @@
+:title: Reporting Issues to the Oro GitHub Repository
+
+.. meta::
+   :description: Guidelines on reporting security, translation, or documentation issues to the Oro GitHub repository
+
 Report Issues
 =============
 

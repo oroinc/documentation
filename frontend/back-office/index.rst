@@ -1,3 +1,8 @@
+:title: OroCommerce, OroCRM, OroPlatform Back-Office Design Customization Guide
+
+.. meta::
+   :description: Practical guides on developing and customizing the OroCommerce back-office design for the frontend developers
+
 .. index::
     pair: Customization; Themes
 

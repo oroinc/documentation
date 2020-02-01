@@ -1,3 +1,8 @@
+:title: Backend Navigation Customization of OroCommerce, OroCRM, OroPlatform
+
+.. meta::
+   :description: Menus, breadcrumbs, and titles customization manual for the backend developers
+
 .. _doc-managing-app-menu:
 .. _doc-create-and-customize-app-menu:
 

@@ -1,3 +1,8 @@
+:title: Backend Emails Configuration in OroCommerce, OroCRM, OroPlatform
+
+.. meta::
+   :description: Emails and templates configuration manuals for the backend developers
+
 .. _dev-emails:
 
 Emails

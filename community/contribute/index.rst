@@ -1,3 +1,8 @@
+:title: Contributing to the Source Code, Translations, and Documentation
+
+.. meta::
+   :description: Guidelines and recommendations on contributing to the Oro application source code, documentation, and translation of the Oro products
+
 .. _contributing:
 
 Contribute

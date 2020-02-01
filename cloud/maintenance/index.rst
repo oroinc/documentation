@@ -1,3 +1,8 @@
+:title: OroCloud Application Maintenance Tools
+
+.. meta::
+   :description: Best practices for using the OroCloud application maintenance tools to control complex maintenance operations run on the Oro applications
+
 :orphan:
 
 .. _cloud_maintenance:
