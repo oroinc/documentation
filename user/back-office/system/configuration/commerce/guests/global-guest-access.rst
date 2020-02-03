@@ -1,13 +1,24 @@
 :oro_documentation_types: OroCommerce
 
 .. _sys--conf--commerce--guest-access--global:
+.. _sys--conf--commerce--guest--enable--access:
 
 Website Access
 ==============
 
 .. begin
 
-You can enable guest website access globally, :ref:`per organization <sys--conf--commerce--guest-access--org>` and :ref:`per website <sys--conf--commerce--guest-access--website>`:
+To prevent non-registered customers from accessing the OroCommerce storefront, you can disable website access by non-authenticated visitors. This can be done globally, :ref:`per organization <sys--conf--commerce--guest-access--org>` and :ref:`per website <sys--conf--commerce--guest-access--website>`:
+
+When guest access is disabled:
+
+* New users can register if self-registration is enabled in **Commerce > Customer > Customer Users > Registration Allowed**.
+* Guest users can register if self-registration is allowed, even if the website access is closed.
+* Guest users cannot access any website pages, except for the login/forgot/reset password page.
+* Guest users are redirected to the login page when they try to access the homepage.
+
+.. image:: /user/img/concept-guides/guests/sign_in.png
+
 
 To enable guest access globally:
 

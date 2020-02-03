@@ -70,9 +70,9 @@ To create a master catalog category:
 
 6. The **Activity** section displays all the :ref:`activities <user-guide-productivity-tools>` available for the selected category, such as *call*, *task*, *email*, *note*, or *calendar event*. You can use filters to select any activity type and date of its implementation.
 
-7. In the **Visibility** section, you can set a visibility restriction for the master catalog category and the products assigned to this category by clicking the necessary tab.
+.. _master-catalog-visibility:
 
-   .. image:: /user/img/products/master_catalog/master_catalog_5.png
+7. In the **Visibility** section, you can set a visibility restriction for the master catalog category and the products assigned to this category by clicking the necessary tab.
 
    * **Visibility to All** --- The default visibility settings of the selected category.
    * **Visibility to Customer Groups** --- The settings that define whether to show or hide the selected category from the group of customers in the storefront. Customers may be grouped based on authentication options or type of business that the customers are in.

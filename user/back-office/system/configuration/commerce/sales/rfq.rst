@@ -1,6 +1,8 @@
 :oro_documentation_types: OroCommerce
 
 .. _configuration--guide--commerce--configuration--sales-rfq:
+.. _user-guide--system-configuration--commerce-sales--rfq:
+
 
 Request for Quote
 =================
@@ -9,7 +11,7 @@ On the RFQ configuration page, you can control RFQ Notification options and Gues
 
 In your Oro back-office, you can control the way notifications are sent both to customers and sales representatives upon submitting a new request for quote. This can be done on two levels -- globally and :ref:`per website <sys--conf--commerce--sales--rfq-notifications--website>`.
 
-You can also enable Guest RFQ Forms in your Oro application to let unregistered customers request quotes on the items they are interested in.  This will also allow sales reps collect information on potential sales in the back-office. This can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales--rfq--organization>` and :ref:`website <user-guide--system-configuration--commerce-sales--rfq--website>`.
+You can also enable Guest RFQ Forms in your Oro application to let unregistered customers request quotes on the items they are interested in. This will also allow sales reps collect information on potential sales in the back-office. This can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales--rfq--organization>` and :ref:`website <user-guide--system-configuration--commerce-sales--rfq--website>`.
 
 .. hint:: Make sure you enable :ref:`Guest Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list>` in the back-office to let guest customers create RFQs from the shopping lists in their storefront.
 

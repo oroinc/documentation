@@ -23,7 +23,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
       <li><a class="tag-important" href="localization/">Storefront Localization</a></li>
       <li><a class="" href="localization/label-translation">Translation of Product Attribute Labels</a></li>
       <li><a class="" href="marketing-automation/">Track Marketing Activities</a></li>
-      <li><a class="tag-very-important" href="guests/">Storefront Guest Access Management</a></li>
+      <li><a class="tag-very-important" href="guests/">Guest Functions</a></li>
     </ul>
 
 .. toctree::

@@ -31,6 +31,8 @@ To create a new segment:
 
 #. Click **Create Segment**.
 
+   The *Create Segment page* emerges.
+
 #. In the *General Details*:
 
    .. image:: /user/img/reports/segment_general.png
