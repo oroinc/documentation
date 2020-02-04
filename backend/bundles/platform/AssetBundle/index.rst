@@ -331,6 +331,190 @@ https
 
 By default, dev-server will be served over HTTP. It can optionally be served over HTTP/2 with HTTPS.
 
+Migration from requirejs to jsmodules
+-------------------------------------
+
+.. note:: `Webpack` builder uses a different location to place the resulting files. If you override the root template or have a separate entry point for your theme, you should update the paths to the JS files accordingly.
+
+Create jsmodules.yml Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a quick overview of common migration cases. More detailed information about the new configuration is available in the :ref:`JS Modules <reference-format-jsmodules>` topic.
+
+Start the configuration by copying the config section of `requirejs.yml` to the root of `jsmodules.yml`.
+
+The following example illustrates the use of simplified `requirejs.yml` from `UIBundle`:
+
+.. code-block:: yaml
+   :linenos:
+   
+   config:
+       shim:
+           'jquery.select2':
+               deps:
+                   - 'jquery'
+               exports: 'Select2'
+       map:
+           '*':
+               'jquery': 'oroui/js/extend/jquery'
+           'oroui/js/extend/jquery':
+               'jquery': 'jquery'
+       paths:
+           'jquery': 'bundles/components/jquery/jquery.js'
+           'oroui/js/app/views/page-center-title-view': 'bundles/oroui/js/app/views/page-center-title-view.js'
+       appmodules:
+           - oroui/js/app/modules/init-layout
+
+Please see how each of the existing sections should be modified for `jsmodules.yml` below.
+
+.. note:: There is no need to use the ``bundle/`` prefix and ``.js`` extension in paths to the files.
+
+
+map
+~~~
+
+Move as is.
+
+appmodules
+~~~~~~~~~~
+
+Move as is.
+
+shim
+~~~~
+
+While `Webpack` places each module in its local scope, some third party libraries can either expect certain dependencies to be available globally (e.g., `jQuery.select2` expects global variable ``jQuery``), or attempt to export some variable to the global scope (e.g., ``jQuery``).
+
+To ensure that these libraries keep working, use the approach below.
+
+First, expose the variable needs to become available globally:
+
+.. code-block:: yaml
+   :linenos:
+   
+   shim:
+      jquery:
+          expose:
+              - $
+              - jQuery
+
+Next, convert `shim` from `requirejs.yml`
+
+.. code-block:: yaml
+   :linenos:
+   
+   shim:
+     'jquery.select2':
+         deps:
+             - 'jquery'
+         exports: 'Select2'
+
+to the new format
+
+.. code-block:: yaml
+   :linenos:
+   
+   shim:
+       jquery.select2:
+           imports:
+               - jQuery=jquery
+           exports: Select2
+
+The left part (``jQuery``) of the ``jQuery=jquery`` expression is the expected dependency, and the right part (``jquery``) is the module that provides (exports) this dependency.
+
+To define what to export from the non-standard module, use the `exports` directive.
+
+.. note:: This additional description of dependencies and exports in `jsmodules.yml` may be required only for third party libraries that are not developed as an ES6, an AMD or a CommonJS module. Use ES6 `import` and `export` constructions with your code.
+
+For more details, see the documentation for related Webpack loaders:
+
+* |Webpack Imports Loader|
+* |Webpack Exports Loader|
+* |Webpack Expose Loader|
+
+paths
+~~~~~
+
+This section serves two purposes:
+
+* It defines a module alias when the desired module name does not match its file path.
+* It includes a module into the built result even if no other modules import it. For example, you can use this for the components that are bound to DOM elements directly in the HTML with the `data-page-component-*` attributes).
+
+In `jsmodules.yml` it is replaced with two different sections (`aliases` and `dynamic-imports`), and the components can be moved to either of those based on the reason why the moved item was originally added to the `paths` section.
+
+aliases
+"""""""
+
+The items that were defined in `paths` to change their module name should be moved to `aliases`.
+
+Example:
+
+.. code-block:: yaml
+
+   paths:
+      'oro/block-widget': 'bundles/oroui/js/widget/block-widget.js'
+
+should be changed to
+
+.. code-block:: yaml
+   
+   aliases:
+      oro/block-widget$: oroui/js/widget/block-widget
+
+A trailing "`$`" is added to the given key to signify the exact match for the resource.
+
+For more details, see documentation for |aliases declaration|.
+
+dynamic-imports
+"""""""""""""""
+
+To include a component here, you should specify the target chunk for Webpack. Generally, you can use the bundle name as a chunk name and place all bundle modules into one chunk. If your bundle does not contain much code, use the `commons` chunk.
+
+Example:
+
+.. code-block:: yaml
+   :linenos:
+   
+   paths:
+       'mybundle/js/app/components/component1': 'bundles/mybundle/js/app/components/component1.js'
+       'mybundle/js/app/components/component2': 'bundles/mybundle/js/app/components/component2.js'
+       ...
+
+should be changed to
+
+.. code-block:: yaml
+   :linenos:
+   
+   dynamic-imports:
+       mybundle:
+           - mybundle/js/app/components/component1
+           - mybundle/js/app/components/component2
+           ...
+
+.. note:: If a module has an alias and you add this module to the `dynamic-imports` section as well - you have to use its alias instead of the file path.
+
+configs
+~~~~~~~
+
+If your module is expected to have configuration, the module name has to be mentioned in `configs` section with its default configuration.
+
+.. code-block:: yaml
+   :linenos:
+   
+   configs:
+      oro/dialog-widget:
+         stateEnabled: true
+         incrementalPosition: true
+
+In case there is no static configuration that can be defined in a yaml file, use an empty object as its default configuration.
+
+.. code-block:: yaml
+
+   configs:
+      oro/dialog-widget: {}
+
+.. note:: All modules that are expected to have configuration have to be mentioned in the `configs` section, even though there is no actual static configuration. Otherwise, Webpack will not be able to resolve config data for the module.
+
 Troubleshooting
 ---------------
 
@@ -368,6 +552,7 @@ Please follow |AssetBundle upgrade documentation| to update `assets.yml` files a
 
 Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 This happens because by default webpack-dev-server uses a self-signed SSL certificate.
 
 To fix an error we recommend to :ref:`provide your own SSL certificate <enable-https-hmr>`.

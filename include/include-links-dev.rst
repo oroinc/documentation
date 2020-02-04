@@ -4929,7 +4929,7 @@ Links (Dev)
 
 .. |the component type| raw:: html
 
-   <a href=" https://grapesjs.com/docs/modules/Components.html#iscomponent" target="_blank">the component type</a>
+   <a href="https://grapesjs.com/docs/modules/Components.html#iscomponent" target="_blank">the component type</a>
 
 .. |OroCloud| raw:: html
 
@@ -5070,3 +5070,10 @@ Links (Dev)
 .. |OroActivityBundle:Grid:Column/contexts.html.twig| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityBundle/Resources/views/Grid/Column/contexts.html.twig" target="_blank">OroActivityBundle:Grid:Column/contexts.html.twig</a>
+
+.. |aliases declaration| raw:: html
+
+   <a href="https://webpack.js.org/configuration/resolve/#resolvealias" target="_blank">aliases declaration</a>
+
+
+.. Webpack Resolve Alias <
