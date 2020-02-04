@@ -5,6 +5,8 @@
 Customer Groups
 ===============
 
+.. important:: This section is a part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
+
 In the Customer Group section, you can organize customers into groups and share the price lists, payment and tax-related settings between several customers.
 
 .. .. image:: /user/img/customers/customer_groups/CustomerGroups.png
