@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 :title: OroCommerce and OroCRM Back-Office Dashboards
 
 .. meta::
@@ -6,7 +8,6 @@
 .. _user-guide--business-intelligence:
 .. _business-intelligence:
 
-:oro_documentation_types: OroCRM, OroCommerce
 
 Dashboard
 =========
