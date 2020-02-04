@@ -6,6 +6,8 @@
 Customer Users
 ==============
 
+.. important:: This section is a part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
+
 :term:`Customer users <Customer User>` act on behalf of the company (i.e. customers in Oro context)  and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization.
 
 For customer user management, navigate to **Customers > Customer Users** in the main menu.

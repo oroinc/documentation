@@ -7,6 +7,8 @@ Customer User Roles
 
 .. begin
 
+.. important:: This section is a part of the :ref:`Customer Permissions <concept-guide-customers-permissions>` concept guide topic that provides the general understanding of permissions and access levels available to customers and customer users in Oro applications.
+
 .. note::
     See a short demo on |how to create customer roles in Oro applications|, or keep reading the step-by-step guidance below.
 
