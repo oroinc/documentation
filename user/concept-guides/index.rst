@@ -1,9 +1,9 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 :title: OroCommerce and OroCRM Concept Guides
 
 .. meta::
    :description: Key conceptual use cases and how-to guides
-
-:oro_documentation_types: OroCRM, OroCommerce
 
 Concept Guides
 ==============
