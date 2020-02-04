@@ -326,7 +326,7 @@ in the Chaplin lifecycle.
     :maxdepth: 1
 
     javascript-modularity
-
+    js-unittests
 
 
 

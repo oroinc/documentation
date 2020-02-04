@@ -211,6 +211,14 @@ Links (Dev)
 
    <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
 
+.. |Jasmine-jQuery| raw:: html
+
+   <a href="https://github.com/velesin/jasmine-jquery" target="_blank">Jasmine-jQuery</a>
+
+.. |karma-jsmodule-exposure| raw:: html
+
+   <a href="https://github.com/laboro/karma-jsmodule-exposure.git" target="_blank">karma-jsmodule-exposure</a>
+
 .. |Supervisor| raw:: html
 
    <a href="http://supervisord.org/" target="_blank">Supervisor</a>
@@ -247,6 +255,38 @@ Links (Dev)
 .. |Install Node.js| raw:: html
 
    <a href="https://nodejs.org/en/download/package-manager/" target="_blank">Install Node.js</a>
+
+.. |Node.js official website| raw:: html
+
+   <a href="https://nodejs.org/en/download/" target="_blank">official website</a>
+
+.. |Node Packaged Modules| raw:: html
+
+   <a href="https://npmjs.org/" target="_blank">Node Packaged Modules</a>
+
+.. |Karma documentation| raw:: html
+
+   <a href="http://karma-runner.github.io/4.0/config/configuration-file.html" target="_blank">Karma documentation</a>
+
+.. |Jasmine 3.5| raw:: html
+
+   <a href="https://jasmine.github.io/api/3.5/global" target="_blank">Jasmine 3.5</a>
+
+.. |Karma| raw:: html
+
+   <a href="http://karma-runner.github.io/4.0/index.html" target="_blank">Karma</a>
+
+
+
+.. |Karma plugin| raw:: html
+
+   <a href="https://plugins.jetbrains.com/plugin/7287-karma" target="_blank">Karma plugin</a>
+
+.. |ddescriber for jasmine| raw:: html
+
+   <a href="https://plugins.jetbrains.com/plugin/7233-ddescriber-for-jasmine" target="_blank">ddescriber for jasmine</a>
+
+
 
 .. |Install PHPStorm| raw:: html
 
@@ -420,17 +460,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#default-operations" target="_blank">DELETE operation</a>
 
-.. |JavaScript UnitTests| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/js_unittests.md" target="_blank">JavaScript UnitTests</a>
-
-.. |Oro Behat Extension| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TestFrameworkBundle/Behat/README.md" target="_blank">Oro Behat Extension</a>
-
 .. |Additional Doctrine Events| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/doctrine_events.md" target="_blank">Additional Doctrine Events</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/doctrine_events.rst" target="_blank">Additional Doctrine Events</a>
 
 .. |build ngx pagespeed from source| raw:: html
 
@@ -4411,6 +4443,10 @@ Links (Dev)
 
    <a href="https://github.com/nelmio/alice/blob/master/doc/relations-handling.md#references" target="_blank">Alice documentation</a>
 
+.. |Alice documentation2| raw:: html
+
+   <a href="https://github.com/nelmio/alice/blob/2.x/README.md" target="_blank">Alice documentation</a>
+
 .. |MonologBundle| raw:: html
 
    <a href="https://github.com/symfony/monolog-bundle" target="_blank">MonologBundle</a>
@@ -5034,6 +5070,58 @@ Links (Dev)
 .. |OroCommerce Storefront Style Guide on GitHub| raw:: html
 
    <a href="https://github.com/oroinc/OroCommerceStorefrontStyleGuide" target="_blank">OroCommerce Storefront Style Guide on GitHub</a>
+
+.. |Behavior Driven Development framework| raw:: html
+
+   <a href="https://docs.behat.org/en/v3.0/" target="_blank">Behavior Driven Development framework</a>
+
+.. |open source browser controller/emulator| raw:: html
+
+   <a href="http://mink.behat.org/en/latest/" target="_blank">open source browser controller/emulator</a>
+
+.. |Symfony2| raw:: html
+
+   <a href="https://github.com/Behat/Symfony2Extension/blob/master/doc/index.rst" target="_blank">Symfony2</a>
+
+.. |Driver Feature Support| raw:: html
+
+   <a href="http://mink.behat.org/en/latest/guides/drivers.html" target="_blank">Driver Feature Support</a>
+
+.. |WebDriver| raw:: html
+
+   <a href="https://sites.google.com/a/chromium.org/chromedriver/" target="_blank">WebDriver</a>
+
+.. |NodeElement| raw:: html
+
+   <a href="https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php" target="_blank">NodeElement</a>
+
+.. |css selector| raw:: html
+
+   <a href="http://mink.behat.org/en/latest/guides/traversing-pages.html#css-selector" target="_blank">css selector</a>
+
+.. |named field selector| raw:: html
+
+   <a href="http://mink.behat.org/en/latest/guides/traversing-pages.html#named-selectors" target="_blank">named field selector</a>
+
+.. |faker| raw:: html
+
+   <a href="https://github.com/fzaninotto/faker" target="_blank">faker</a>
+
+.. |include files| raw:: html
+
+   <a href="https://github.com/nelmio/alice/blob/a060587f3c90edd92a65c6c0d163972f49bc4e21/doc/fixtures-refactoring.md#including-files" target="_blank">include files</a>
+
+.. |alice fixtures| raw:: html
+
+   <a href="https://github.com/nelmio/alice/blob/2.x/doc/relations-handling.md#handling-relations" target="_blank">alice fixtures</a>
+
+.. |Cucumber doc reference| raw:: html
+
+   <a href="https://cucumber.io/docs/" target="_blank">Cucumber doc reference</a>
+
+.. |UserBundle/Tests/Behat/Features/login.feature| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/50047c1d8abc5f811d0db759b501b8d27b0bff65/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature" target="_blank">UserBundle/Tests/Behat/Features/login.feature</a>
 
 .. |Hot Module Replacement| raw:: html
 
