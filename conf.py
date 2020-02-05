@@ -371,7 +371,7 @@ scv_version_dirs = {
 # Branch names not mentioned here will be used "as is"
 scv_version_human_readable_names = {
     'doc-2.6': '1.6',
-    'master': '4.1 rc (master)',
+    'master': '4.2 Alpha1 (master)',
     # NEXT VERSION: Add mapping between branch name and human readable names
 }
 
@@ -384,5 +384,5 @@ scv_build_args_per_version = {
     # NEXT LTS:
     # For the next LTS version we need to build previous LTS without cloud doc (as only last LTS contains actual)
     # And previous LTS should be built in the subdirectory, that's why we use redirect.html as index
-    # '3.1': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
+    '3.1': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
 }
