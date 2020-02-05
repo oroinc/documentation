@@ -1,9 +1,9 @@
+:orphan:
+
 :title: OroCloud Customer Support Services
 
 .. meta::
    :description: Details of the OroCloud technical customer support service
-
-:orphan:
 
 .. _cloud_support:
 
