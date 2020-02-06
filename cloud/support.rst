@@ -1,11 +1,11 @@
 :orphan:
 
-.. _cloud_support:
-
 :title: OroCloud Customer Support Services
 
 .. meta::
    :description: Details of the OroCloud technical customer support service
+
+.. _cloud_support:
 
 Support
 =======

@@ -1,11 +1,11 @@
 :orphan:
 
-.. _cloud_security:
-
 :title: OroCloud Security Settings
 
 .. meta::
    :description: Guidance on security settings options, network segmentation, traffic and firewall rules, and DDoS protection for the OroCloud administrators
+
+.. _cloud_security:
 
 Security
 --------

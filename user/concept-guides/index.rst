@@ -19,7 +19,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
     <ul class="tag-cloud">
       <li><a class="tag-very-important" href="guests/">Guest Functions</a></li>
       <li><a class="tag-important" href="customers/">Customer Management</a></li>
-      <li><a class="tag-very-important" href="customers_permissions/">Customer Permissions</a></li>
+      <li><a class="tag-very-important" href="customer-permissions/">Customer Permissions</a></li>
       <li><a class="tag-important" href="highlight-products/">Products in the Storefront</a></li>
       <li><a class="" href="consents/">GDPR Compliance</a></li>
       <li><a class="" href="consents/add-consent/">Consents in the Storefront</a></li>
@@ -41,7 +41,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
 
    guests/index
    customers/index
-   customers_permissions/index
+   customer-permissions/index
    highlight-products/index
    pricing/index
    payment-configuration/index

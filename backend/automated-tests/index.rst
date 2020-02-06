@@ -1,5 +1,3 @@
-.. _automated-test:
-
 .. index::
     single: Testing; Functional Testing
 
@@ -7,6 +5,8 @@
 
 .. meta::
    :description: Principles of writing functional tests in the preconfigured testing environment with detailed guidance and examples
+
+.. _automated-test:
 
 
 Automated Tests
