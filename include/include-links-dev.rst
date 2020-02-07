@@ -5163,5 +5163,9 @@ Links (Dev)
 
    <a href="https://webpack.js.org/configuration/resolve/#resolvealias" target="_blank">aliases declaration</a>
 
+.. |Google Cloud Marketplace| raw:: html
+
+   <a href="https://cloud.google.com/marketplace" target="_blank">Google Cloud Marketplace</a>
+
 
 .. Webpack Resolve Alias <

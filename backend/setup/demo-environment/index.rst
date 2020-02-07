@@ -7,3 +7,4 @@ Demo Environment
 
    vm
    aws
+   gcp
