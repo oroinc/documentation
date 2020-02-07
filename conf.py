@@ -41,7 +41,8 @@ extensions = [
     'ext.orotoc',
     'ext.assets-timestamp',
     'ext.sitemap',
-    'ext.sitemap-index',
+    # Disable generating of sitemapindex.xml
+    # 'ext.sitemap-index',
     'ext.redirects'
 ]
 
@@ -386,3 +387,7 @@ scv_build_args_per_version = {
     # And previous LTS should be built in the subdirectory, that's why we use redirect.html as index
     # '3.1': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
 }
+
+# Generate sitemap.xml file only for current version (see ext.sitemap),
+# otherwise it will be generated for all versions of the documentation
+oro_sitemap_build_only_for_current = True
