@@ -4249,7 +4249,7 @@ Links (Dev)
 
 .. |RestDocHandler| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/ApiDoc/RestDocHandler.php" target="_blank">RestDocHandler</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/ApiDoc/AnnotationHandler/RestDocHandler.php" target="_blank">RestDocHandler</a>
 
 .. |CompleteDescriptions| raw:: html
 
