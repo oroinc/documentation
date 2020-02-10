@@ -7,24 +7,24 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 
 .. raw:: html
 
-   <h2><a href="https://doc.oroinc.com/user/concept-guides/">Concept Guides</a></h2>
+   <h2><a href="https://doc.oroinc.com/1.6/user/concept-guides/">Concept Guides</a></h2>
    <p>Concept Guides provide overviews of features and use-cases, help out with the general understanding of large topics.</p>
 
 .. raw:: html
 
-   <h2><a href="https://doc.oroinc.com/user/back-office/">Back-Office</a></h2>
+   <h2><a href="https://doc.oroinc.com/1.6/user/back-office/">Back-Office</a></h2>
    <p>Back-office documentation contains how-to topics grouped into sections that mirror the structure of back-office user interface.</p>
 
 .. note:: All section under Back-Office are relevant to OroCommerce application users. However, be aware that not all topics are relevant to OroCRM application. If you are an OroCRM user, please check what features are available in your installed OroCRM application, and search the documentation topics that correspond to your OroCRM menu layout.
 
 .. raw:: html
 
-   <h2><a href="https://doc.oroinc.com/user/storefront/">Commerce Storefront</a></h2>
+   <h2><a href="https://doc.oroinc.com/1.6/user/storefront/">Commerce Storefront</a></h2>
    <p>Commerce Storefront documentation illustrates how to navigate, browse, and interact with the default OroCommerce storefront.</p>
 
 .. raw:: html
 
-   <h2><a href="https://doc.oroinc.com/user/glossary/">Glossary</a></h2>
+   <h2><a href="https://doc.oroinc.com/1.6/user/glossary/">Glossary</a></h2>
    <p>Glossary is an alphabetical list of OroCRM and OroCommerce terms used throughout the documentation.</p>
 
 
