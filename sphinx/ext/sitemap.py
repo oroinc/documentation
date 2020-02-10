@@ -16,11 +16,16 @@
 
 import os
 import xml.etree.ElementTree as ET
-from sphinx.writers.html import HTMLTranslator
 
 
 def setup(app):
     """Setup connects events to the sitemap builder"""
+    app.add_config_value(
+        'oro_sitemap_build_only_for_current',
+        default=False,
+        rebuild=False
+    )
+
     app.add_config_value(
         'site_url',
         default=None,
@@ -35,9 +40,8 @@ def setup(app):
     except:
         pass
 
-    app.connect('html-page-context', http_page_context)
+    app.connect('html-page-context', html_page_context)
     app.connect('build-finished', create_sitemap)
-    app.oro_current_version = None
     app.sitemap_links = []
     app.locales = []
 
@@ -51,36 +55,14 @@ def get_locales(app, exception):
                     app.locales.append(locale)
 
 
-def http_page_context(app, pagename, templatename, context, doctree):
+def html_page_context(app, pagename, templatename, context, doctree):
     add_html_link(app, pagename, context)
-    save_current_version(app, context)
-    save_is_root_build(app, context)
 
 
 def add_html_link(app, pagename, context):
     """As each page is built, collect page names for the sitemap"""
     outfile = app.builder.get_target_uri(pagename)
     app.sitemap_links.append(outfile)
-
-
-def save_current_version(app, context):
-    if app.oro_current_version is not None:
-        return
-
-    if 'oro_current_version' not in context:
-        return
-
-    app.oro_current_version = context['oro_current_version']
-
-
-def save_is_root_build(app, context):
-    if app.sitemap_index_is_root_build is not None:
-        return
-
-    if 'scv_is_root' not in context:
-        return
-
-    app.sitemap_index_is_root_build = context['scv_is_root']
 
 
 def create_sitemap(app, exception):
@@ -101,13 +83,22 @@ def create_sitemap(app, exception):
 
     get_locales(app, exception)
 
+    # Check that it's a SCV build by checking that SCV option is exist
+    is_scv_build = hasattr(app, 'scv_is_root')
+    is_scv_root_build = is_scv_build and app.scv_is_root
+
     # Build sitemap for default sphinx-build call
-    if app.sitemap_index_is_root_build is False:
-        if app.oro_current_version is None:
-            print("sphinx-sitemap warning: Can not determine current version. Sitemap not built.")
+    if is_scv_build and not is_scv_root_build:
+        if not hasattr(app, 'scv_oro_current_version'):
+            print("sphinx-sitemap warning: Can not determine current version for SCV build. Sitemap not built.")
             return
 
-        version = app.oro_current_version + '/'
+        if app.builder.config.oro_sitemap_build_only_for_current is True:
+            print("sphinx-sitemap info: Build only root version is enabled in config. "
+                  "Sitemap not built for this version.")
+            return
+
+        version = app.scv_oro_current_version + '/'
     else:
         version = ''
 
