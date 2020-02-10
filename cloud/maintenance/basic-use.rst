@@ -3,19 +3,19 @@
 Maintenance Commands
 ====================
 
-Once you are connected to the OroCloud server you can run a series of maintenance commands.
+Once you are connected to the OroCloud server, you can run a series of maintenance commands.
 
-Review the List OroCloud Maintenance Management Commands
---------------------------------------------------------
+The List of OroCloud Maintenance Management Commands
+----------------------------------------------------
 
-To list the available OroCloud maintenance management commands, run `orocloud-cli` without parameters.
+To list available OroCloud maintenance management commands, run `orocloud-cli` without parameters.
 
 .. warning:: OroCloud maintenance commands may affect the application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
 
 Locks
 -----
 
-Any time the `orocloud-cli` command runs with any argument or options, the maintenance agent is locked to prevent simultaneous execution of itself. This is required to avoid cases when different users may execute commands that may lead to environment corruption, e.g. when different users run `deploy` and `upgrade` at the same time. If this happens, a warning message is displayed.
+Any time the `orocloud-cli` command runs with any argument or options, the maintenance agent is locked to prevent its simultaneous execution. This is required to avoid cases when different users execute commands that may lead to environment corruption, e.g., when different users run `deploy` and `upgrade` at the same time. If this happens, a warning message is displayed.
 
 As an example:
 
@@ -34,19 +34,19 @@ As an example:
 
 .. note:: When you need to check the current maintenance agent version or list all available commands, running `orocloud-cli` command without any arguments is allowed even when locked.
 
-.. note:: When the currently running command has finished or stopped with a warning or a notice, the maintenance agent is automatically unlocked.
+.. note:: When the currently running command is finished or stopped with a warning or a notice, the maintenance agent is automatically unlocked.
 
 Deploy
 ------
 
-To deploy Oro application in the OroCloud environment with default installation parameters, run the `orocloud-cli deploy` command.
+To deploy an Oro application in the OroCloud environment with default installation parameters, run the `orocloud-cli deploy` command.
 
-.. note:: If the application is already deployed the command execution is restricted. Please contact the OroCloud or Oro Support team in case full re-deploy from scratch is required.
+.. note:: If the application is already deployed, the command execution is restricted. Please contact the OroCloud or Oro Support team in case a full re-deploy from scratch is required.
 
 Upgrade
 -------
 
-During the Oro application upgrade, the Oro cloud maintenance tool pulls the new version of the application source code from the repository (either from new tag or branch) and runs the `oro:platform:update` command to launch upgrade and any data migrations.
+During the Oro application upgrade, the Oro cloud maintenance tool pulls the new version of the application source code from the repository (either from a new tag or branch) and runs the `oro:platform:update` command to launch the upgrade and any data migrations.
 
 .. note:: By default, `upgrade` commands are run with the `--skip-search-reindexation` option. However, you can use the `--schedule-search-reindexation` option if you require reindexation.
 
@@ -54,7 +54,7 @@ During the Oro application upgrade, the Oro cloud maintenance tool pulls the new
 
 To upgrade an Oro application, you can use the following modes:
 
-.. warning:: With the rolling upgrade, source upgrade the Oro application is not forced into the maintenance mode from the very beginning; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before and after the upgrade are compatible with the old and new database structure simultaneously. Usually these are upgrades to minor versions.
+.. warning:: With the rolling upgrade, source upgrade the Oro application is not forced into the maintenance mode from the very beginning; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before and after the upgrade are compatible with the old and new database structure simultaneously. Usually, these are upgrades to minor versions.
 
 Upgrade With Downtime
 ~~~~~~~~~~~~~~~~~~~~~
@@ -66,7 +66,7 @@ To upgrade the Oro application, run the `upgrade` command:
 
     orocloud-cli upgrade
 
-.. note:: You will be prompted to enter a tag or branch to clone the application source file from. Use valid tag or branch from the Oro application repository, for example, the |1.6| branch or the|1.6.1| tag.
+.. note:: You will be prompted to enter a tag or branch to clone the application source file from. Use a valid tag or branch from the Oro application repository, for example, the |1.6| branch or the|1.6.1| tag.
 
 This command executes the following operations:
 
@@ -76,7 +76,7 @@ This command executes the following operations:
 #. Performs oro:platform:update
 #. Launches a cache warmup
 
-Once the cache warmup is complete, the maintenance mode is turned off and the upgraded application is ready for use.
+Once the cache warmup is complete, the maintenance mode is turned off, and the upgraded application is ready for use.
 
 Upgrade With Minimal Downtime (Rolling Upgrade)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,7 +88,7 @@ To perform Oro application upgrade with minimal downtime, run the `upgrade:rolli
 
     orocloud-cli upgrade:rolling
 
-.. note:: You will be prompted to enter a tag or branch to clone the application source file. Use valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
+.. note:: You will be prompted to enter a tag or branch to clone the application source file. Use a valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
 
 This command enables maintenance mode just for switching between the previous and new application versions (in most cases, this step takes up to 2 minutes). In the normal operation mode, this command executes the following operations:
 
@@ -108,26 +108,26 @@ To perform Oro application upgrade with minimal downtime, run the `upgrade:sourc
 
     orocloud-cli upgrade:source
 
-.. note:: You will be prompted to enter a tag or branch to clone the application source file. Use valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
+.. note:: You will be prompted to enter a tag or branch to clone the application source file. Use a valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
 
 This command enables maintenance mode just for switching between the previous and new application versions (in most cases, this step takes up to 2 minutes).
 
 The purpose of this command is to deploy code changes (without updating dependencies) as quickly as possible.
-The difference between this command and original upgrade:
+The difference between this command and the original upgrade:
 
-1. dependencies are not updated (unless the `composer.lock` has not changed)
+1. dependencies are not updated (unless the `composer.lock` is changed)
 #. oro:platform:update is not executed
 #. cache:clear is executed optionally (add option skip-cache-rebuild if you do not need to rebuild cache with the new release)
 
 Backup
 ------
 
-Once you start using Oro application, you can set up a regular backup process.
+Once you start using the Oro application, you can set up a regular backup process.
 
 Backup Everything
 ~~~~~~~~~~~~~~~~~
 
-To backup the application state, run the `backup:create` command:
+To back up the application state, run the `backup:create` command:
 
 .. code-block:: none
     :linenos:
@@ -139,7 +139,7 @@ To backup the application state, run the `backup:create` command:
 The List of Existing Backups
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To view the list of the backups, run `backup:list` command:
+To view the list of the backups, run the `backup:list` command:
 
 .. code-block:: none
     :linenos:
@@ -175,44 +175,269 @@ To restore the information from backup, run the `backup:restore` command:
 
     orocloud-cli  backup:restore {backup_date}
 
-.. note:: The `{backup_date}` argument is the one of the available backups listed in `backup:list` command output, e.g. `2018-11-12-1425`.
+.. note:: The `{backup_date}` argument is the one of the available backups listed in the `backup:list` command output, e.g., `2018-11-12-1425`.
 
-The command enables the maintenance mode and restores the application. Once restoration is complete, the maintenance mode is turned off.
+The command enables the maintenance mode and restores the application. Once the restoration is complete, the maintenance mode is turned off.
 
 .. _orocloud-maintenance-use-sanitized-backup:
+
+Sanitized Backup
+----------------
+
+Use the sanitized backups:
+
+* to share the sanitized data with the OroCloud and OroSupport team,
+* for local debug and development, 
+* to sanitize and transfer database and media from the production to the staging environment, etc.
+
+The following commands are available:
+
+* **backup:create:sanitized** -- creates a sanitized backup of database data and media (for the `remote` backup type). Encryption is not applied (for the `local` backup type)
+* **backup:list:sanitized** -- lists available sanitized backups
+* **backup:restore:sanitized** -- restores the application from the sanitized backup
 
 Create a Sanitized Backup
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To share the sanitized data with the OroCloud and OroSupport team, create a sanitized backup using the following command:
+To display the command description and help, run:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli backup:create:sanitized --help
+
+.. code-block:: none
+    :linenos:
+
+    Description:
+      Creates a sanitized backup of database data and media (for the `remote` backup type). Encryption is not applied (for the `local` backup type)
+
+    Usage:
+      backup:create:sanitized [options]
+
+    Options:
+          --log=LOG                    Log to file
+      -t, --backup-type[=BACKUP-TYPE]  Determines backup type, local (DEFAULT) (not encrypted, for debug|development purposes) OR remote (to be restored on another environment). [default: "local"]
+      -e, --environment[=ENVIRONMENT]  Name of the destination environment where data dump will be copied (for 'remote' backup-type).
+          --exclude-media              Exclude media from the dump (for 'remote' backup-type).
+          --exclude-media-cache        Exclude media cache (resized images) from the dump (for 'remote' backup-type).
+      -h, --help                       Display a help message
+      -q, --quiet                      Do not output any message
+      -V, --version                    Display the application version
+      -n, --no-interaction             Do not ask any interactive question
+      -v|vv|vvv, --verbose             Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
+
+* **option "--backup-type"** - There are two backup types: `local` and `remote`. The `local` sanitized backup can be downloaded for development, testing, or debug purposes on the local machine and cannot contain media data. The `remote` backup type means it can be transferred to another OroCloud environment and may contain media data e.g. create sanitized backup on production environment and transfer it to staging environment for restoration.
+
+* **option "--environment"** - Allows to specify the destination environment for backup, and is applicable only for the `remote` backup types. For the `local` backup type, this option is ignored. If no environment is linked,  the appropriate message appears, for example:
+
+.. code-block:: none
+    :linenos:
+
+    Aborting!
+    Cannot proceed, as there is no linked environments yet.
+    Please, contact the support team.
+
+.. note:: In such case, you need to contact the support team to link the environment. Specify the environment name for `source` and `destination`. Keep in mind that the direction is **important**, you can create a remote sanitized backup only on the `source` environment and restore it only on the `destination` environment. Also, all the `remote` backups that you create are located under **only** on the `destination` environment.
+
+If only one environment is linked, it will be used by default, so the option can be omitted; otherwise, the destination environment will be requested interactively.
+
+* **option "--exclude-media"** - is applicable only for the `remote` backup type and is used in case media data is not needed.
+
+* **option "--exclude-media-cache"** - is applicable only for the `remote` backup type and is used in case media cache data is not needed (e.g., resized product images).
+
+To create the `local` backup, use the command:
 
 .. code-block:: none
     :linenos:
 
     orocloud-cli backup:create:sanitized
 
+The command output is similar to the following:
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task backup:create:sanitized
+    [localhost] Done, sanitized backup saved to: '/mnt/ocom/backup/20200101102000-sanitized-db.sql.gz'
+    ✔ Ok [59s 77ms]
+
 The resulting backup is not encrypted and is located next to the ordinary encrypted backups.
 
-To review the list of available sanitized backups, their creation timestamps and the precise location they are saved to, run:
+Once you have created the sanitized backup, you can determine its location with the `backup:list:sanitized` command and download it using:
+
+.. code-block:: none
+    :linenos:
+
+    scp oro_cloud_username@oro_cloud_hostname:/path/to/the/backup/file target_username@target_hostname:/path/to/the/target/backup/file
+
+To create the `remote` backup, use the command:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli backup:create:sanitized --backup-type remote
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task backup:create:sanitized
+    Please select an environment to copy the data dump:
+      [1] my-environment-dev
+      [2] my-environment-uat
+      [3] my-environment-staging
+     > 3
+    ✔ Ok [43s 297ms]
+
+See :ref:`Sanitizing Configuration <orocloud-maintenance-advanced-use-sanitization-conf>` for details on how to configure the sanitizing scope and strategy.
+
+The List of Existing Sanitized Backups
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To review the list of available sanitized backups, their creation timestamps and the location they reside in, run:
 
 .. code-block:: none
     :linenos:
 
     orocloud-cli backup:list:sanitized
 
-Once you have identified the backup file you need, download it using:
+The command output is similar to the following:
 
-  .. code-block:: none
-      :linenos:
+.. code-block:: none
+    :linenos:
 
-      scp oro_cloud_username@oro_cloud_hostname:/path/to/the/backup/file target_username@target_hostname:/path/to/the/target/backup/file
+    ➤ Executing task backup:list
+    +-----------------+-----------------------------------------------------+
+    | DATE            | PATH                                                |
+    +-----------------+-----------------------------------------------------+
+    | 2020-01-11-2121 | /mnt/ocom/backup/20200111212117-sanitized-db.sql.gz |
+    | 2020-01-10-1747 | /mnt/ocom/backup/20200110174752-sanitized-db.sql.gz |
+    +-----------------+-----------------------------------------------------+
+    [my-environment-staging] Total 2 item(s), 1 page(s). Current page: 1, items per page: 25.
 
-See :ref:`Sanitizing Configuration <orocloud-maintenance-advanced-use-sanitization-conf>` for details on how to configure the sanitizing scope and strategy.
+* **column "DATE"** - the date and time when a sanitized backup is created
+
+* **column "PATH"** - is applicable only for the `local` backup type. A full path where sanitized database dump is stored, so it can be used to download such backup.
+
+If the environment contains the `remote` backup types, the output is similar to the following:
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task backup:list:sanitized
+    +-----------------+-----------------------------------------------------+---------------------+-------+
+    | DATE            | PATH                                                | SOURCE              | MEDIA |
+    +-----------------+-----------------------------------------------------+---------------------+-------+
+    | 2020-01-16-1824 | -                                                   | my-environment-dev  | Yes   |
+    | 2020-01-11-2121 | /mnt/ocom/backup/20200111212117-sanitized-db.sql.gz | local               | No    |
+    | 2020-01-10-1747 | /mnt/ocom/backup/20200110174752-sanitized-db.sql.gz | local               | No    |
+    | 2019-12-12-1714 | -                                                   | my-environment-uat  | No    |
+    | 2019-12-11-1334 | /mnt/ocom/backup/20191211133414-sanitized-db.sql.gz | local               | No    |
+    +-----------------+-----------------------------------------------------+---------------------+-------+
+    [my-environment-staging] Total 5 item(s), 1 page(s). Current page: 1, items per page: 25.
+
+* **column "DATE"** - the date and time when the sanitized backup is created
+
+* **column "PATH"** - for the `remote` backup type, the column is empty
+
+* **column "SOURCE"** - the source of backup. For the `local` backup types, the value is always `local`. For the `remote` backup , the column contains the name of the environment that was used to create the backup
+
+* **column "MEDIA"** - for the `local` backups, the value is always `No`. For the `remote` backups, it notifies whether the backup contains media data or not
+
+Restore Sanitized Backup
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+To display the command description and help, run the following:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli backup:restore:sanitized --help
+
+.. code-block:: none
+    :linenos:
+
+    Description:
+      Restores the application from the sanitized backup.
+
+    Usage:
+      backup:restore:sanitized [options] [--] [<backup-date>]
+
+    Arguments:
+      backup-date                                  A full path of the sanitized backup archive (*.gz). Can be retrieved with the `backup:list:sanitized` command.
+
+    Options:
+          --log=LOG                                Log to file
+          --force                                  Force operation restoration; otherwise, confirmation is requested.
+          --skip-session-flush                     Skip session data flush.
+          --skip-assets-rebuild                    Skip application assets rebuild after backup restore.
+          --skip-cache-rebuild                     Skip application cache rebuild after backup restore.
+      -h, --help                                   Display a help message
+      -q, --quiet                                  Do not output any message
+      -V, --version                                Display the application version
+      -n, --no-interaction                         Do not ask any interactive question
+      -v|vv|vvv, --verbose                         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
+
+.. note:: For the cases when you are completely sure that application assets and cache are correct, for example, the restoration to the same backup, when the codebase is the same, and application cache is valid, it is possible to speed up the restore operation by disabling assets and cache rebuild with appropriate options **skip-assets-rebuild** and **skip-cache-rebuild**.
+
+To restore the information from the sanitized backup, run the `backup:restore:sanitized` command:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli  backup:restore:sanitized {backup_date}
+
+.. note:: The `{backup_date}` argument is one of the available backups listed in the `backup:list:sanitized` command output, e.g., `2020-01-01-1025`.
+
+.. note:: The command enables the maintenance mode, flushes Redis cache, stops PHP FPM, restores the application from sanitized backup, sets an application URL, rebuilds assets, rebuilds cache. Once the restoration is complete, the maintenance mode is turned off.
+
+The command output is similar to the following:
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task notification:start
+    ➤ Executing task notification:configure
+    ➤ Executing task deploy:get:current
+    Are you sure to restore application from sanitized backup `2020-01-01-1025`? [Y/n] Y
+    ➤ Executing task maintenance:lexik:create_lock_file
+    ➤ Executing task service:stop:consumer
+    ➤ Executing task service:stop:cron
+    ➤ Executing task service:stop:websocket
+    ➤ Executing task phpfpm:stop
+    ➤ Executing task redis:cache:flush
+    ➤ Executing task redis:doctrine:flush
+    ➤ Executing task redis:session:flush
+    ➤ Executing task redis:flush:not-used-db
+    ➤ Executing task backup:restore:sanitized:db
+    Done, 'local' sanitized backup '2020-01-01-1025' successfully restored.
+    ✔ Ok [8s 510ms] | [11s 55ms]
+    ➤ Executing task db:extensions:create
+    ➤ Executing task maintenance:update:application_url
+    Please provide application URL: [https://my-environment.oro-cloud.com]
+    ➤ Executing task backup:restore:sanitized:rebuild:assets
+    ➤ Executing task backup:restore:sanitized:rebuild:cache
+    ➤ Executing task phpfpm:restart
+    ➤ Executing task service:start:consumer
+    ➤ Executing task service:start:cron
+    ➤ Executing task service:start:websocket
+    ➤ Executing task maintenance:lexik:delete_lock_file
+    ➤ Executing task cache:front:warmup
+    [localhost]
+      Starting frontend check with URL:'https://my-environment.oro-cloud.com' and timeout '180' sec.
+    [localhost]
+      Frontend check completed with code '200' and took '10.76277' sec.
+    ➤ Executing task notification:finish
+    ✔ Ok [1ms] | [346s 741ms]
+
+.. note:: Keep in mind that after restoration from the sanitized backup, all application users credentials become invalid. To reset a password for the admin user, use the `orocloud-cli app:console "oro:user:update --user-password=new-admin-password admin"` command.
+
+.. note:: The ElasticSearch indices are NOT effected by restoration, so you may need to perform search reindex (for example, if a huge production sanitized database is restored on empty staging environment). For that, run the `orocloud-cli search:reindex` command.
 
 Application Commands
 --------------------
 
-Run application commands via the `app:console`, for example:
+Run application commands via `app:console`, for example:
 
 .. code-block:: none
     :linenos:
@@ -234,7 +459,7 @@ If a command contains quotes and is wrapped in the same quotes type, the inner q
     orocloud-cli app:console "oro:message-queue:consume --memory-limit=512 --time-limit=\"+30 seconds\""
 
 
-By default, the `app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g. to monitor command execution in real time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
+By default, the `app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g., to monitor command execution in real-time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
 
 .. code-block:: none
     :linenos:
@@ -245,7 +470,7 @@ By default, the `app:console` command runs in the `silent` mode, which means tha
 Application Cache
 -----------------
 
-Sometimes you may require to clear the application cache (for example, after applying a patch, or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache without downtime. This command does the following:
+Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache without downtime. This command does the following:
 
 * Stops `Consumer` and `Cron` jobs
 * Prepares `Redis` cache storage
@@ -262,24 +487,24 @@ Sometimes you may require to clear the application cache (for example, after app
 .. note:: Since the `cache:rebuild` operation requires the `Consumer` and `Cron` jobs to be stopped, a confirmation message is displayed before execution.
 
 * `--force` is optional, it allows to skip execution confirmation.
-* `--skip-session-flush` is optional, it allows to skip session data deletion (e.g. logged-in users are not logged out after command completion).
+* `--skip-session-flush` is optional, it allows to skip session data deletion (e.g., logged-in users are not logged out after the command completion).
 * `--cleanup-existing-cache` is optional, it allows to physically cleanup the existing cache and rebuild the new one from scratch (confirmation will be required).
 * `--force-cleanup-existing-cache` is optional, it allows to skip confirmation when using the `--cleanup-existing-cache` option.
 
-.. note:: When the option `--cleanup-existing-cache` is used the maintenance mode will be enabled.
+.. note:: When the `--cleanup-existing-cache` option is used, the maintenance mode is enabled.
 
 .. _orocloud-maintenance-use-media-upload:
 
 Media Upload
 ------------
 
-Sometimes you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` or ``import_export`` directory. This can be done with the ``media:upload`` command that allows to upload media files e.g. ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml`` to the ``[public|web]/media/uploads/`` or the  ``[app|var]/import_export/product_images/`` directory.
+Sometimes, you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` or ``import_export`` directory. This can be done with the ``media:upload`` command that allows to upload media files, e.g., ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml`` to the ``[public|web]/media/uploads/`` or the  ``[app|var]/import_export/product_images/`` directory.
 
-.. note:: By default, the command runs in ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with ``--force`` flag.
+.. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
 
 Usage examples:
 
-Show command description and help:
+To display the command description and help, run the following:
 
 .. code-block:: none
     :linenos:
@@ -299,28 +524,28 @@ Show command description and help:
       media:upload [options] [--] [<source> [<destination>]]
 
     Arguments:
-      source                Media source directory full path, e.g. `/tmp/media/`
-      destination           Media destination location. Allowed values: [ public | products ]
+      source                A media source directory full path, e.g., `/tmp/media/`
+      destination           A media destination location. Allowed values: [ public | products ]
 
     Options:
           --log=LOG         Log to file
-          --keep-source     Causes the media sources be kept, otherwise asks to delete after copying to destination.
-          --force           Causes the media source directory content be physically moved to destination.
-      -h, --help            Display this help message
+          --cleanup-source  Deletes media sources after copying to the destination; otherwise, keeps sources.
+          --force           Transfers the media source directory content to the destination; otherwise, DRY-RUN mode
+      -h, --help            Display a help message
       -q, --quiet           Do not output any message
-      -V, --version         Display this application version
+      -V, --version         Display the application version
           --ansi            Force ANSI output
           --no-ansi         Disable ANSI output
       -n, --no-interaction  Do not ask any interactive question
-      -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+      -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
 
-The following command simulates (the command is executed in ``DRY-RUN`` mode) transfer of media files from the `~/media` directory into the destination directory which will be asked.
+The following command simulates (the command is executed in the ``DRY-RUN`` mode) the transfer of media files from the `/tmp/media` directory into the destination directory, which will be asked.
 Also, if some files cannot be transferred due to particular restrictions, the appropriate notification is displayed.
 
 .. code-block:: none
     :linenos:
 
-    orocloud-cli media:upload ~/media
+    orocloud-cli media:upload /tmp/media
 
 .. code-block:: none
     :linenos:
@@ -335,27 +560,25 @@ Also, if some files cannot be transferred due to particular restrictions, the ap
     Source directory scan has finished. Starting transfer operation...
     24 files of 27 processed, last batch size is 10.22 MB.
 
-      Media transfer executed in DRY-RUN mode.
-      Please check output and if everything is fine - execute the command with the `--force` flag.
+      Media transfer is executed in the DRY-RUN mode.
+      Please check the output, and if everything is fine, execute the command with the `--force` flag.
 
-      The following files CAN NOT be transferred:
-    +---------------------------------------------------------+------------------------------------------------------+
-    | File path                                               | Error reason                                         |
-    +---------------------------------------------------------+--------------------------------------------------------------+
-    | /home/test_user/media_sources/no_read_permissions.jpeg  | The file CANNOT be read.                                     |
-    | /home/test_user/media_sources/test.txt                  | The file extension is NOT allowed.                           |
-    | /home/test_user/media_sources/test_wrong_type.png       | The file extension DOES NOT match the Mime Type of the file. |
-    +---------------------------------------------------------+--------------------------------------------------------------+
+      The following files CANNOT be transferred:
+    +--------------------------------------+--------------------------------------------------------------+
+    | File path                            | Error reason                                                 |
+    +--------------------------------------+--------------------------------------------------------------+
+    | /tmp/media/no_read_permissions.jpeg  | The file CANNOT be read.                                     |
+    | /tmp/media/test.txt                  | The file extension is NOT allowed.                           |
+    | /tmp/media/test_wrong_type.png       | The file extension DOES NOT match the Mime Type of the file. |
+    +--------------------------------------+--------------------------------------------------------------+
     ✔ Ok
 
-The following command transfers media files from the `~/media` directory into the destination directory which will be asked. The command is executed in the ``FORCED`` mode.
-
-.. note:: When the command runs with the --force flag, it asks whether to keep source files or remove them.
+The following command transfers media files from the `/tmp/media` directory into the destination directory which will be asked. The command is executed in the ``FORCED`` mode.
 
 .. code-block:: none
     :linenos:
 
-    orocloud-cli media:upload ~/media --force
+    orocloud-cli media:upload /tmp/media --force
 
 .. code-block:: none
     :linenos:
@@ -365,7 +588,6 @@ The following command transfers media files from the `~/media` directory into th
       [public  ] media/uploads/
       [products] import_export/product_images/
      > public
-    Keep source files (default "Y", any answer except "Y" would mean "n")? [Y/n] Y
     Source directory scan has started. The process may take a while, please be patient...
     Source directory scan has finished. Starting transfer operation...
     5 files of 5 processed, last batch size is 350.29 KB.
@@ -383,36 +605,34 @@ If source files cannot be removed, the appropriate notification is displayed. Fo
       [public  ] media/uploads/
       [products] import_export/product_images/
      > public
-    Keep source files (default "Y", any answer except "Y" would mean "n")? [Y/n] n
     Source directory scan has started. The process may take a while, please be patient...
     Source directory scan has finished. Starting transfer operation...
     5 files of 5 processed, last batch size is 350.29 KB.
 
       Media has been transferred successfully (5 of 5 (350.29 KB)).
 
-      The following files CAN NOT be removed due to insufficient permission:
+      The following files CANNOT be removed due to insufficient permission:
     +----------------------------------------------------------------------+
     | File path                                                            |
     +----------------------------------------------------------------------+
-    | /home/test_user/media_sources/sub_folder/test.jpeg                   |
-    | /home/test_user/media_sources/sub_folder/test.jpg                    |
-    | /home/test_user/media_sources/sub_folder/test.jxr                    |
-    | /home/test_user/media_sources/sub_folder/test.xml                    |
+    | /tmp/media/sub_folder/test.jpeg                                      |
+    | /tmp/media/sub_folder/test.jpg                                       |
+    | /tmp/media/sub_folder/test.jxr                                       |
+    | /tmp/media/sub_folder/test.xml                                       |
     +----------------------------------------------------------------------+
     ✔ Ok
 
-The following command transfers media files from the `~/media` directory into the destination directory which is provided as argument.  The command is executed in the ``FORCED`` mode.
+The following command transfers media files from the `/tmp/media` directory into the destination directory which is provided as an argument. The command is executed in the ``FORCED`` mode.
 
 .. code-block:: none
     :linenos:
 
-    orocloud-cli media:upload ~/media public --force
+    orocloud-cli media:upload /tmp/media public --force
 
 .. code-block:: none
     :linenos:
 
     ➤ Executing task media:upload
-    Keep source files (default "Y", any answer except "Y" would mean "n")? [Y/n] Y
     Source directory scan has started. The process may take a while, please be patient...
     Source directory scan has finished. Starting transfer operation...
     5 files of 5 processed, last batch size is 350.29 KB.
@@ -439,8 +659,8 @@ To view the messages list of the RabbitMQ, use the `rabbitmq:queue:list` command
 
     rabbitmq:queue:list [options] [--] [<vhost> [<queue>]]
 
-* `vhost` argument is required, RabbitMQ vhost name, e.g. `oro`.
-* `queue` argument is required, RabbitMQ queue name, e.g. `oro.default`.
+* `vhost` argument is required, RabbitMQ vhost name, e.g., `oro`.
+* `queue` argument is required, RabbitMQ queue name, e.g., `oro.default`.
 
 To get the list of available ``vhost`` values, please execute `rabbitmq:queue:list` without arguments, for example:
 
@@ -479,7 +699,7 @@ To get the list of available ``queue`` values, please execute `rabbitmq:queue:li
     | "oro.default" | "3"     |
     +---------------+---------+
 
-To get the list of messages, please execute the `rabbitmq:queue:list` with the ``vhost`` and ``queue`` arguments, for example:
+To get the list of messages, please execute `rabbitmq:queue:list` with the ``vhost`` and ``queue`` arguments, for example:
 
 .. code-block:: none
     :linenos:
@@ -501,15 +721,15 @@ To get the list of messages, please execute the `rabbitmq:queue:list` with the `
 RabbitMq Purge
 ~~~~~~~~~~~~~~
 
-To purge the messages from the RabbitMQ,  use the `rabbitmq:queue:purge` command.
+To purge the messages from the RabbitMQ, use the `rabbitmq:queue:purge` command.
 
 .. code-block:: none
     :linenos:
 
     rabbitmq:queue:purge [options] [--] [<vhost> [<queue>]]
 
-* `vhost` argument is required, RabbitMQ vhost name, e.g. `oro`.
-* `queue` argument is required, RabbitMQ queue name, e.g. `oro.default`.
+* `vhost` argument is required, RabbitMQ vhost name, e.g., `oro`.
+* `queue` argument is required, RabbitMQ queue name, e.g., `oro.default`.
 
 .. note:: The ``vhost`` and ``queue`` argument values can be retrieved with the `rabbitmq:queue:list` command.
 
