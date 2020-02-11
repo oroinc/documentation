@@ -264,6 +264,14 @@ Links (Dev)
 
    <a href="https://npmjs.org/" target="_blank">Node Packaged Modules</a>
 
+.. |NPM| raw:: html
+
+   <a href="https://npmjs.org/" target="_blank">NPM</a>
+
+.. |NPM documentation| raw:: html
+
+   <a href="https://docs.npmjs.com/" target="_blank">NPM documentation</a>
+
 .. |Karma documentation| raw:: html
 
    <a href="http://karma-runner.github.io/4.0/config/configuration-file.html" target="_blank">Karma documentation</a>
@@ -5166,6 +5174,4 @@ Links (Dev)
 .. |Google Cloud Marketplace| raw:: html
 
    <a href="https://cloud.google.com/marketplace" target="_blank">Google Cloud Marketplace</a>
-
-
 .. Webpack Resolve Alias <

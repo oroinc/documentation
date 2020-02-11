@@ -327,6 +327,7 @@ in the Chaplin lifecycle.
 
     javascript-modularity
     js-unittests
+    composer-js-dependencies
 
 
 
