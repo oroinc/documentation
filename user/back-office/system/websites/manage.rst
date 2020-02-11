@@ -5,6 +5,8 @@
 Manage a Website
 ================
 
+.. important:: Multi-website management is only available in the Enterprise edition.
+
 With OroCommerce, you can determine the way a particular website is operated by customizing it according to your business requirements.
 
 Once a website is created and properly configured, you can now:

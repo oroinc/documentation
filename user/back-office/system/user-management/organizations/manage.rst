@@ -5,6 +5,8 @@
 Manage Organizations
 ====================
 
+.. important:: Multi-organization management is only available in the Enterprise edition.
+
 From the page of the selected organization, you can edit its menu(s), access organization configuration settings, update the details for the selected organization, as well as manage its users. In OroCommerce, you can also edit the frontend menu for required organizations.
 
 To open the page of a specific organization:

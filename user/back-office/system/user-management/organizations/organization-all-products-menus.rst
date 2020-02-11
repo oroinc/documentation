@@ -5,6 +5,8 @@
 Add All Products Page to Frontend Menus per Organization
 --------------------------------------------------------
 
+.. important:: Multi-organization management is only available in the Enterprise edition.
+
 .. hint:: This topic is part of :ref:`Concept Guides: All Products <sys--conf--commerce--catalog--special-pages>`, where you can check out a sample of adding All Products page to the storefront and examine other All Products configuration options.
 
 To add the All Products page to the frontend menu of a particular organization:

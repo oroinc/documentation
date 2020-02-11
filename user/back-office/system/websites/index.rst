@@ -8,7 +8,7 @@ Websites
 
 You can create multiple :term:`websites <Website>` that target a particular audience, geography, a specific brand, and a segment of goods or services that your company is providing.
 
-.. note:: The multiple websites management is only available in the Enterprise edition.
+.. important:: Multi-website management is only available in the Enterprise edition.
 
 Every website may have:
 

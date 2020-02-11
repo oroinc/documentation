@@ -14,6 +14,7 @@ Based on the level where configuration has taken place, settings can fall back t
 * :ref:`Organization settings <doc-organization-configuration>` can fall back to the :ref:`system settings <configuration--guide--system--configuration>`.
 
 .. image:: /user/img/system/configuration/ConfigLevels.png
+   :align: center
    :alt: A fallback pattern of the configuration levels
 
 However:
@@ -26,16 +27,12 @@ However:
 
   .. image:: /user/img/system/configuration/org_checkbox.png
 
-.. hint:: By default, all configuration settings are available globally. Whenever you see the |IcOrganizationLevel| organization, |IcWebsiteLevel| website or |IcUserLevel| user icons, this means that the setting is also available on the organization, website, or user level respectively.
-
 .. hint:: To help you find the specific configuration option faster, use :ref:`Quick Search <user-guide--system-configuration--quick-search>` located in the configuration panel on the left (on all configuration levels).
 
             .. image:: /user/img/system/configuration/quick_search.png
                :class: with-border
                :alt: Quick search under System Configuration
 
-.. include:: /include/include-images.rst
-   :start-after: begin
 
 .. toctree::
    :hidden:

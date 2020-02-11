@@ -5,7 +5,9 @@
 Create an Organization
 ======================
 
-To create a new organization in the Enterprise edition of Oro applications:
+.. important:: Multi-organization management is only available in the Enterprise edition.
+
+To create a new organization in the Oro applications:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. Click **Create Organization** on the top right.
