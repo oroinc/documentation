@@ -5,6 +5,8 @@
 Configure Organization System Settings
 ======================================
 
+.. important:: Multi-organization management is only available in the Enterprise edition.
+
 You can configure available system settings on four configuration levels: system, organization, website and user.
 
 On organization level, there are a number of options that you can configure specifically for the organization, but which will not affect system-wide configuration or configuration for a particular user.

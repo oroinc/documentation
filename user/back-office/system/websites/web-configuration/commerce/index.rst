@@ -3,8 +3,9 @@
 Commerce Configuration Settings per Website
 ===========================================
 
-Learn how to configure commerce-specific settings for selected websites:
+.. important:: Multi-website management is only available in the Enterprise edition.
 
+Learn how to configure commerce-specific settings for selected websites:
 
 .. toctree::
    :maxdepth: 1

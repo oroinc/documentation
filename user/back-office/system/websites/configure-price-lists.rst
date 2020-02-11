@@ -7,6 +7,8 @@ Configure Price Lists per Website
 
 .. begin
 
+.. important:: Multi-website management is only available in the Enterprise edition.
+
 To change the default price list settings for the website:
 
 1. Navigate to **System > Websites** in the main menu.

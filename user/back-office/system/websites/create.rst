@@ -5,16 +5,15 @@
 Create a Website
 ^^^^^^^^^^^^^^^^
 
+.. important:: Multi-website management is only available in the Enterprise edition.
+
 To create a new website in OroCommerce:
 
 1. Navigate to **System > Websites** using the main menu.
 2. Click **Create Website**. 
 
-   The following page opens:
-
    .. image:: /user/img/system/websites/create_website_page.png
       :alt: The create website page
-
 
 3. In the **General** section, provide the following information:
 

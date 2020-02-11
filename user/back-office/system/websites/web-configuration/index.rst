@@ -6,6 +6,8 @@
 System Configuration for Website
 ================================
 
+.. important:: Multi-website management is only available in the Enterprise edition.
+
 You can configure available system settings on four :ref:`configuration levels <configuration--guide--config-levels>`: system, organization, website, and user.
 
 .. begin

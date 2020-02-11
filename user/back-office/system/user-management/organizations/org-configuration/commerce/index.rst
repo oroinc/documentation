@@ -3,6 +3,8 @@
 Commerce Configuration Settings per Organization
 ================================================
 
+.. important:: Multi-organization management is only available in the Enterprise edition.
+
 Learn how to configure commerce-specific settings:
 
 .. toctree::
