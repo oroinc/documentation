@@ -6,7 +6,7 @@
 Import Product Information
 --------------------------
 
-**Import File** option helps import a large bulk of product information into the product catalog using the .csv file.
+The **Import File** option helps import a large bulk of product information into the product catalog using the .csv file.
 
 Import Products
 ^^^^^^^^^^^^^^^
@@ -37,6 +37,76 @@ To import a bulk of product information:
 5. **Launch import:** After successful validation, click **Import File**.
 
 6. Click **Cancel** to decline the import.
+
+.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+
+Import Product Images
+^^^^^^^^^^^^^^^^^^^^^
+
+**Example of a product images import template**
+
+.. container:: scroll-table
+
+   .. csv-table::
+      :class: large-table
+      :header: "SKU","Name","Main","Listing","Additional"
+
+      "sku_001","001.jpg","1","0","1"
+
+To import a bulk of product images:
+
+1. In the main menu, navigate to **Products > Products**. The product list opens.
+
+2. Click **Import File** on the top right.
+
+3. In the **Import** dialog, select the **Product Images** tab.
+
+4. Click **Choose File** and select the .csv file you prepared.
+
+   .. image:: /user/img/products/products/import_product_images.png
+      :alt: The steps that are necessary to perform to import the product price attributes successfully
+
+5. Click **Export Template** to download a sample .csv file with the necessary headers.
+
+6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format.
+
+.. important:: Make sure to upload the image files for the related products to the appropriate location at the "{PROJECT}/app/import_export/product_images" path at the server where the Oro application is running. Then, fill the table with the name of the image file, the SKU name of the product, and a place for the image to be displayed, where **1** is **display** and **0** is **do not display**.
+
+Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
+
+7. **Validate import results**: Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
+
+8. **Launch import:** After successful validation, click **Import File**.
+
+9. Click **Cancel** to decline the import.
+
+Import Related Products
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The **Import Related Products** option enables you to import SKUs of related products.
+
+**Example of related products data import template**
+
+.. csv-table::
+   :header: "SKU","Related SKUs"
+
+   "sku-1","sku-2,sku-3"
+
+To import a bulk of related products:
+
+1. In the main menu, navigate to **Products > Products**. The product list opens.
+2. Click **Import File** on the top right.
+3. In the **Import** dialog, select the **Related Products** tab.
+4. Click **Choose File** and select the .csv file you prepared.
+
+   .. image:: /user/img/products/products/import_related_products.png
+      :alt:  The steps to perform to import of related products
+
+5. Click **Export Template** to download a sample .csv file with the necessary headers.
+6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
+7. **Validate import results**: Click Validate to check your import results. If there are any Records with errors, fix them in the .csv file before starting the import.
+8. **Launch import**: After successful validation, click Import File.
+9. **Click Cancel** to decline the import.
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
 
@@ -97,45 +167,4 @@ To import a bulk of product price attributes:
 10. Click **Cancel** to decline the import.
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
-
-
-Import Product Images
-^^^^^^^^^^^^^^^^^^^^^
-
-**Example of a product images import template**
-
-.. container:: scroll-table
-
-   .. csv-table::
-      :class: large-table
-      :header: "SKU","Name","Main","Listing","Additional"
-
-      "sku_001","001.jpg","1","0","1"
-
-To import a bulk of product images:
-
-1. In the main menu, navigate to **Products > Products**. The product list opens.
-
-2. Click **Import File** on the top right.
-
-3. In the **Import** dialog, select the **Product Images** tab.
-
-4. Click **Choose File** and select the .csv file you prepared.
-
-   .. image:: /user/img/products/products/import_product_images.png
-      :alt: The steps that are necessary to perform to import the product price attributes successfully
-
-5. Click **Export Template** to download a sample .csv file with the necessary headers.
-
-6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format.
-
-.. important:: Make sure to upload the image files for the related products to the appropriate location at the "{PROJECT}/app/import_export/product_images" path at the server where the Oro application is running. Then, fill the table with the name of the image file, the SKU name of the product, and a place for the image to be displayed, where **1** is **display** and **0** is **do not display**.
-
-Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
-
-7. **Validate import results**: Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
-
-8. **Launch import:** After successful validation, click **Import File**.
-
-9. Click **Cancel** to decline the import.
 
