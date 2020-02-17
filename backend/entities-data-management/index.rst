@@ -8,6 +8,8 @@
 Entities Data Management
 ========================
 
+This topic describes the elements of entities data management and their configuration:
+
 .. toctree::
    :maxdepth: 1
 
@@ -18,3 +20,4 @@ Entities Data Management
    operations
    processes
    data-audit
+

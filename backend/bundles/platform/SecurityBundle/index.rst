@@ -39,6 +39,7 @@ Related Documentation
 **Related Topics**
 
 * :ref:`Introduction to Security in Oro Applications <bundle-docs-platform-security-bundle-intro>`
+
   * :ref:`Access Control Lists <bundle-docs-platform-security-bundle-access-control-list>`
   * :ref:`Permissions for Entities <bundle-docs-platform-security-bundle-configure-entities>`
   * :ref:`Protecting Resources <bundle-docs-platform-security-bundle-protect-resources>`
