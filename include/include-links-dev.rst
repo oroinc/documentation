@@ -4557,11 +4557,11 @@ Links (Dev)
 
 .. |**include** request parameter| raw:: html
 
-   <a href="http://jsonapi.org/format/#fetching-includes" target="_blank">**include** request parameter</a>
+   <a href="http://jsonapi.org/format/#fetching-includes" target="_blank"><b>include</b> request parameter</a>
 
 .. |**fields** request parameter| raw:: html
 
-   <a href="http://jsonapi.org/format/#fetching-sparse-fieldsets" target="_blank">**fields** request parameter</a>
+   <a href="http://jsonapi.org/format/#fetching-sparse-fieldsets" target="_blank"><b>fields</b> request parameter</a>
 
 .. |Doctrine query hints| raw:: html
 

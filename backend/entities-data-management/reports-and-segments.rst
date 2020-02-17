@@ -272,7 +272,7 @@ There are two strategies, the *DynamicSegmentQueryBuilder* and *StaticSegmentQue
 Datagrid
 ~~~~~~~~
 
-For a table representation of the segment, use **OroDataGridBundle**. A grid configuration comes from the segment definition in *SegmentBundle\Grid\ConfigurationProvider*.
+For a table representation of the segment, use **OroDataGridBundle**. A grid configuration comes from the segment definition in *Oro\\Bundle\\SegmentBundle\\Grid\\ConfigurationProvider*.
  It retrieves the segment identifier from the grid name and passes the loaded segment entity to *SegmentDatagridConfigurationBuilder*.
  The datagrid configuration does not process filtering to encapsulate filtering logic in *SegmentFilter*.
  So, for those purposes, two proxy classes, *DatagridSourceSegmentProxy* and *RestrictionSegmentProxy*, were created.

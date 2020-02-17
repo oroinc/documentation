@@ -275,7 +275,7 @@ By default, the following form options are set:
 
 This section describes configuration of entity fields.
 
-*  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the :ref:`Exclude Option <exclude-option>` section.
+*  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the `"exclude" option <#exclude-option>`__ section.
 
 *  **description** *string* - A human-readable description of the field or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
 
@@ -659,9 +659,9 @@ The ``subresources`` configuration section enables you to provide options for su
 
 -  **target\_type** *string* - The type of a target association. Can be **to-one** or **to-many**. Also **collection** can be used as an alias for **to-many**. **to-one** can be omitted as it is used by default.
 
--  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions Configuration Section <actions-config>`. If an option exists in both entity actions section and sub-resource **actions** section the sub-resource option wins.
+-  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions <actions-config>` configuration section. If an option exists in both entity actions section and sub-resource **actions** section the sub-resource option wins.
 
--  **filters** - The filters supported by the sub-resource. This section has the same options as  :ref:`filters Configuration Section <filters-config>`. If an option exists in both `entity **filters** section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
+-  **filters** - The filters supported by the sub-resource. This section has the same options as  :ref:`filters <filters-config>` configuration section. If an option exists in both `entity "filters" section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
 
 - **sorters** - The sorters supported by the sub-resource. This section has the same options as the entity sorters section. If an option exists in both entity sorters section and sub-resource sorters section, the sub-resource option wins.
 
