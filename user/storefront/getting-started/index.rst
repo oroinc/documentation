@@ -1,4 +1,10 @@
+:title: Navigation and UI basics of the OroCommerce Storefront
+
+.. meta::
+   :description: Generic concepts of the OroCommerce storefront user interface and navigation
+
 .. _frontstore-guide--navigation:
+
 
 Navigation and UI
 =================

@@ -1,5 +1,10 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
+:title: OroCommerce and OroCRM Back-Office User Documentation
+
+.. meta::
+   :description: Back-office manuals for the OroCommerce and OroCRM users
+
 Back-Office
 ===========
 

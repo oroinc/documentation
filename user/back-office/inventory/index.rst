@@ -1,5 +1,10 @@
 :oro_documentation_types: OroCommerce
 
+:title: Inventory Management in the OroCommerce Back-Office
+
+.. meta::
+   :description: Inventory configuration and management guides for the OroCommerce back-office users
+
 .. _user-guide--inventory:
 
 Inventory

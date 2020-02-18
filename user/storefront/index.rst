@@ -1,5 +1,10 @@
 .. _frontstore-guide:
 
+:title: OroCommerce Storefront User Documentation
+
+.. meta::
+   :description: OroCommerce Storefront user's manuals and guides
+
 Commerce Storefront
 ===================
 

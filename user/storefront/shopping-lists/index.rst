@@ -1,4 +1,10 @@
+:title: Shopping Lists Management in the OroCommerce Storefront
+
+.. meta::
+   :description: Shopping lists management guides for the OroCommerce storefront users
+
 .. _frontstore-guide--shopping-lists:
+
 
 Shopping Lists
 ==============
