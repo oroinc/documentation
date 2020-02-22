@@ -11,10 +11,10 @@ To ensure that your REST API resources work properly, cover them with |functiona
 
    "request","Sends a REST API request."
    "options","Sends the OPTIONS request. See :ref:`options <options-action>`."
-   "cget","Sends the GET request for a list of entities. See :ref:`get_list <get-list-action>` action."
    "get","Sends the GET request for a single entity. See :ref:`get <get-action>` action."
+   "cget","Sends the GET request for a list of entities. See :ref:`get_list <get-list-action>` action."
    "post","Sends the POST request for an entity resource. See :ref:`create <create-action>` action. If the second parameter is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
-   "patch","Sends the PATCH request for a single entity. See update action. If the second parameter is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
+   "patch","Sends the PATCH request for a single entity. See :ref:`update <update-action>` action. If the second parameter is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
    "delete","Sends the DELETE request for a single entity. See :ref:`delete <delete-action>` action."
    "cdelete","Sends the DELETE request for a list of entities. See :ref:`delete_list <delete-list-action>` action."
    "getSubresource","Sends the GET request for a sub-resource of a single entity. See :ref:`get_subresource <get-subresource-action>` action."
