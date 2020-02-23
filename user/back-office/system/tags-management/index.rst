@@ -6,7 +6,11 @@
 Tags Management
 ===============
 
-In Oro, taxonomy is a way to color code and classify :term:`tags <Tag>` so that they stand out from other tags which may serve different purposes.  Tags are user-generated keywords or phrases created and assigned to records as a way to help organize them.
+The Oro applications support tags management functionality to organize the data extracted from various business information into logical categories and subcategories. By creating tags, you help structure large amounts of content by assigning user-generated keywords or phrases to your records. Taxonomies help color code and classify the tags so that they stand out from other tags which may serve different purposes.
+
+.. image:: /user/img/system/tags_management/tags_taxonomies.png
+   :alt: The actions available for the taxonomies in the grid
+
 
 .. toctree::
    :maxdepth: 1

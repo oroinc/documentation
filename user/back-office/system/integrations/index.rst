@@ -5,7 +5,18 @@
 Integrations
 ============
 
-OroCommerce supports the following pre-implemented integrations that can be enabled/disabled and configured in **System > Configuration > Integration**:
+OroCommerce fulfills individual customer wishes and provides miscellaneous extensions and third-party integration solutions to meet specific preferences of each business. Generally, the integrations are used for the operational routines digitalizing every possible area of your online webs store.
+
+The section focuses on the integrations pre-implemented for your Oro applications and illustrates:
+
+* what payment providers to use to help process different types of payments (PayPal, Apruve, Authorize.Net, etc.)
+* what shipping methods you can offer your OroCommerce customers (UPS, FedEx)
+* how to set up integrations with payment and shipping services
+* how to use email marketing activities and email marketing automation (Mailchimp, dotmailer)
+* how to configure Google single sign-on, Hangouts calls, and Tag Manager
+* how to create the code that may be embedded to a third-party website to enable communication between the third-party website users and the Oro application
+
+Check the following integrations that can be enabled/disabled and configured in **System > Configuration > Integration**:
 
 * :ref:`Manage Integrations: Payment Method Integration <sys--integrations--manage-integrations--payment-methods>`
 
@@ -30,7 +41,9 @@ OroCommerce supports the following pre-implemented integrations that can be enab
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
 * :ref:`LDAP Integration <user-guide-ldap-integration>`
 
-* :ref:`Embedded Forms <admin-embedded-forms>`
+* Embedded Forms
+
+  * :ref:`Embedded Forms <admin-embedded-forms>`
 
 
 .. toctree::
