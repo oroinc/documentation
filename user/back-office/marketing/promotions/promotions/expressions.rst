@@ -83,6 +83,7 @@ Attributes
 
 *Customer Group*
 
+* customerGroup.id *int*
 * customerGroup.name *string*
 
 
