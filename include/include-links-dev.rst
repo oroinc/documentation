@@ -1376,7 +1376,7 @@ Links (Dev)
 
 .. |http://demo.orocrm.com/api/doc| raw:: html
 
-   <a href="http://demo.orocrm.com/api/doc/rest_json_api" target="_blank">http://demo.orocrm.com/api/doc</a>
+   <a href="http://demo.orocrm.com/api/doc" target="_blank">http://demo.orocrm.com/api/doc</a>
 
 
 .. |ParamConverter| raw:: html

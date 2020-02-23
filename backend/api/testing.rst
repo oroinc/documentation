@@ -46,7 +46,7 @@ To ensure that your REST API resources work properly, cover them with |functiona
    "getApiBaseUrl","Returns the base URL for all REST API requests, e.g. ``http://localhost/api`` . "
    "appendEntityConfig","Appends a configuration of an entity. This method is helpful when you create a general functionality and need to test it for different configurations without creating a test entity for each of them. Please note that the configuration is restored after each test and thus, you do not need to do it manually."
 
-.. note:: By default, HATEOAS is disabled in functional tests, although it is enabled by default in production and API Sandbox. It was done to avoid cluttering up the tests with HATEOAS links. In case you want to enable HATEOAS for your test, use HTTP_HATEOAS server parameter, e.g. ``$this->cget(['entity' => 'products']), [],      ['HTTP_HATEOAS' => true]``.
+.. note:: By default, HATEOAS is disabled in functional tests, although it is enabled by default in production and API Sandbox. It was done to avoid cluttering up the tests with HATEOAS links. In case you want to enable HATEOAS for your test, use HTTP_HATEOAS server parameter, e.g. ``$this->cget(['entity' => 'products'], [], ['HTTP_HATEOAS' => true])``.
 
 .. _api-load-fixtures:
 

@@ -5,10 +5,12 @@
 Storefront REST API
 ===================
 
-The REST API resources for the storefront are accessible via ``http://<hostname>/api/``,
-while REST API resources for the back-office is accessible via ``http://<hostname>/admin/api/``.
+The REST API resources for the storefront are accessible via ``http://<hostname>/api``,
+while REST API resources for the back-office is accessible via ``http://<hostname>/admin/api``.
 There are also two REST API sandboxes, one for the storefront (``http://<hostname>/api/doc``) and another
 for the back-office (``http://<hostname>/admin/api/doc``).
+
+.. note:: Please note that the **admin** prefix is used by default and can be changed via the ``web_backend_prefix`` parameter.
 
 All approaches described in :ref:`API Developer Guide <web-api>` are applicable
 to REST API resources for the storefront but there are several differences:

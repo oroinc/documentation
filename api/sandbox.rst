@@ -52,7 +52,7 @@ To switch between different API types, click the required type at the top of the
 
 To retrieve a single record for a particular resource record with JSON API, perform the GET method with the id parameter specified:
 
-    1.  Click the API resource row on the ``http://<hostname_of_your_oro_application>/admin/api/doc/rest_json_api`` page to expand the methods block.
+    1.  Click the API resource row on the API sandbox page to expand the methods block.
 
     2.  Find the **/api/your_resource/{id}** block.
 
@@ -88,7 +88,7 @@ with |Curl|. This command may help emulate the real request to the API.
 
 To edit a record for a particular resource record with JSON API, perform the PATCH method with the specified id parameter:
 
-    1.  Click the API resource row on the ``http://<hostname_of_your_oro_application>/admin/api/doc/rest_json_api`` page to expand the method block.
+    1.  Click the API resource row on the API sandbox page to expand the method block.
 
     2.  Find the **/api/your_resource/{id}** block.
 
