@@ -18,7 +18,6 @@ Attributes
 **Financial**
 
 * shippingCost *float*
-* paymentMethod *string*
 * currency *string*
 * subtotal *float*
 
@@ -47,18 +46,6 @@ Attributes
 * shippingAddress.countryName *string*
 * shippingAddress.countryIso3 *string*
 * shippingAddress.countryIso2 *string*
-
-*shippingOrigin*
-
-* shippingOrigin.street *string*
-* shippingOrigin.street2 *string*
-* shippingOrigin.city *string*
-* shippingOrigin.regionName *string*
-* shippingOrigin.regionCode *string*
-* shippingOrigin.postalCode *string*
-* shippingOrigin.countryName *string*
-* shippingOrigin.countryIso3 *string*
-* shippingOrigin.countryIso2 *string*
 
 **Business**
 
