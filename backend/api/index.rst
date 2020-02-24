@@ -3,7 +3,7 @@
 API Developer Guide
 ===================
 
-This section describes the Web API development framework for the application data. It provides the ability to define API in the YAML configuration files regardless of standards or formats. Out-of-the-box, the framework opens REST API that conforms the JSON API specification and enables CRUD operations support for the application ORM entities.
+This section describes the Web API development framework for the application data. It provides the ability to define API in the YAML configuration files regardless of standards or formats. Out-of-the-box, the framework opens REST API that conforms the |JSON:API specification| and enables CRUD operations support for the application ORM entities.
 
 The Web API development framework is implemented by :ref:`OroApiBundle <bundle-docs-platform-api-bundle>` and based on the following components:
 
@@ -13,7 +13,7 @@ The Web API development framework is implemented by :ref:`OroApiBundle <bundle-d
 
 |FOSRestBundle| and |NelmioApiDocBundle| are also used for REST API.
 
-.. note:: The main format for REST API is described at |JSON API|. Please make sure that you are familiar with it before you start creating REST API for your entities.
+.. note:: The main format for REST API is described at |JSON:API|. Please make sure that you are familiar with it before you start creating REST API for your entities.
 
 The auto-generated documentation and sandbox for REST API is available at `/api/doc`, e.g. |http://demo.orocrm.com/api/doc|.
 

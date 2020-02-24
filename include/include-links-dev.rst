@@ -1056,10 +1056,6 @@ Links (Dev)
 
    <a href="https://github.com/nelmio/NelmioApiDocBundle" target="_blank">NelmioApiDocBundle</a>
 
-.. |JSON API| raw:: html
-
-   <a href="https://jsonapi.org/" target="_blank">JSON API</a>
-
 .. |FormUtil class| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Form/FormUtil.php" target="_blank">FormUtil class</a>
@@ -4435,9 +4431,9 @@ Links (Dev)
 
    <a href="https://oroinc.com/doc/orocrm/current/book/functional-tests" target="_blank">functional tests</a>
 
-.. |JSON.API specification| raw:: html
+.. |JSON:API specification| raw:: html
 
-   <a href="http://jsonapi.org/format/" target="_blank">JSON.API specification</a>
+   <a href="http://jsonapi.org/format/" target="_blank">JSON:API specification</a>
 
 .. |RestJsonApiTestCase| raw:: html
 
@@ -4691,9 +4687,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/OptimizedProcessorIterator.php" target="_blank">OptimizedProcessorIterator</a>
 
-.. |JSON.API| raw:: html
+.. |JSON:API| raw:: html
 
-   <a href="http://jsonapi.org/" target="_blank">JSON.API</a>
+   <a href="http://jsonapi.org/" target="_blank">JSON:API</a>
 
 .. |Error| raw:: html
 

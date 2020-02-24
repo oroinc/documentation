@@ -3,7 +3,7 @@
 Testing REST API
 ================
 
-To ensure that your REST API resources work properly, cover them with |functional tests|. To simplify creation of the functional test for REST API resources that conforms to  |JSON.API specification|, the |RestJsonApiTestCase| test case was created. The following table contains the list of the most useful methods of this class:
+To ensure that your REST API resources work properly, cover them with |functional tests|. To simplify creation of the functional test for REST API resources that conforms to  |JSON:API specification|, the |RestJsonApiTestCase| test case was created. The following table contains the list of the most useful methods of this class:
 
 .. csv-table::
    :header: "Method","Description"
@@ -37,11 +37,11 @@ To ensure that your REST API resources work properly, cover them with |functiona
    "assertAllowResponseHeader","Asserts ``Allow`` response header equals to the expected value."
    "assertMethodNotAllowedResponse","Asserts response status code equals to 405 (Method Not Allowed) and ``Allow`` response header equals to the expected value."
    "dumpYmlTemplate","Saves a response content to a YAML file. If the first parameter is a file name, the file is saved into the responses directory next to the PHP file that contains the test."
-   "getResourceId","Extracts the JSON:API resource identifier from the response. For details, see |JSON.API specification|."
+   "getResourceId","Extracts the JSON:API resource identifier from the response. For details, see |JSON:API specification|."
    "getNewResourceIdFromIncludedSection","Extracts the JSON:API resource identifier from the ``included`` section of the response. For details, see :ref:`Create and Update Related Resources Together with a Primary API Resource <web-services-api--create-update-related-resources>`"
    "getRequestData","Converts the given request to an array that can be sent to the server. The given request can be a path to a file that contains the request data or an array with the request data. If the request is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
    "getResponseData","Converts the given response to an array that can be used to compare it with a response received from the server. The given response can be a path to a file that contains the response data or an array with the response data. If the response is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
-   "getResponseErrors","Extracts the list of errors from the JSON:API response. For details, see |JSON.API specification|."
+   "getResponseErrors","Extracts the list of errors from the JSON:API response. For details, see |JSON:API specification|."
    "updateResponseContent","Replaces all values in the given expected response content with corresponding value from the actual response content when the key of an element is equal to the given key and the value of this element is equal to the given placeholder. If the first parameter is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
    "getApiBaseUrl","Returns the base URL for all REST API requests, e.g. ``http://localhost/api`` . "
    "appendEntityConfig","Appends a configuration of an entity. This method is helpful when you create a general functionality and need to test it for different configurations without creating a test entity for each of them. Please note that the configuration is restored after each test and thus, you do not need to do it manually."

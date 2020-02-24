@@ -48,7 +48,7 @@ At the same time, it **must** ignore any media type parameters received in the *
 
 
 Requests with the invalid **Content-Type** value in the header will be perceived as a plain request, so the response data
-will have a plain format rather than JSON API.
+will have a plain format rather than JSON:API.
 
 **Example of Invalid Content-Type**
 

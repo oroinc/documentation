@@ -263,7 +263,7 @@ Sometimes it is required to group several fields and expose them as a nested obj
 
 Please note that an entity, in this example *Oro\\Bundle\\ReminderBundle\\Entity\\Reminder*, should have ``setInterval`` method. This method is called by :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions to set the nested object.
 
-Here is an example how the nested objects looks in JSON.API:
+Here is an example how the nested objects looks in JSON:API:
 
 .. code:: json
 
@@ -301,7 +301,7 @@ Sometimes a relationship with a group of entities is implemented as two fields, 
                         id:
                             property_path: sourceEntityId
 
-Here is an example how the nested association looks in JSON.API:
+Here is an example how the nested association looks in JSON:API:
 
 .. code:: json
 

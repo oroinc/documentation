@@ -185,7 +185,7 @@ Use the ``{@request}`` tag to add documentation depends on the request type. The
 -  ``|`` - logical OR
 -  ``!`` - logical NOT
 
-For example, to add a text for the JSON API request type for all requests excluding REST API, use the following expression: ``json_api&!rest``.
+For example, to add a text for the |JSON:API| request type for all requests excluding REST API, use the following expression: ``json_api&!rest``.
 
 Example:
 
