@@ -7,7 +7,16 @@ Segment for Featured Products per Website
 
 .. begin
 
-To update the featured products segment for a particular website:
+You can control which segment is used to store featured products :ref:`globally <products--featured-products>`, :ref:`per organization <sys--users--organization--commerce--products--featured-products>`, and per website.
+
+Before enabling the featured products segment for a particular website, make sure you have performed the following actions:
+
+1. Mark the selected products as featured in the **General** section of the **Products > Products** main menu by setting **Is Featured** to *Yes*.
+
+2. Create a featured product segment under **Reports & Segments > Manage Segments** as described in the :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
+
+
+Now, update the featured products segment for a website:
 
 1. Navigate to **System > Website** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click the |IcConfig| **Configuration** icon to start editing the configuration.

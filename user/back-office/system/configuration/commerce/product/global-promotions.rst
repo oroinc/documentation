@@ -1,23 +1,32 @@
 :oro_documentation_types: OroCommerce
 
 .. _configuration--guide--commerce--configuration--promotions:
+.. _user-guide--new-products:
+.. _sys--commerce--product--new-arrivals:
+.. _sys--commerce--product--new-arrivals-block-global:
+
 
 Product Promotions
 ==================
 
-On the Product Promotions configuration page, you can control the following settings:
+On the Product Promotions configuration page, you can enable **New** product icons and set up a **New Arrivals** block globally, :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>` and :ref:`per website <sys--websites--commerce--products--new-arrivals>`.
 
-* :ref:`New Products Icon <sys--commerce--product--new-arrivals>`
-* :ref:`New Arrivals Block <sys--commerce--product--new-arrivals-block-global>`
+.. image:: /user/img/system/config_commerce/product/new_arrivals_diff.png
+   :alt: A new arrivals flag vs a new arrivals segment
 
-.. _sys--commerce--product--new-arrivals:
 
-Enable New Product Icons
-------------------------
+Prerequisites
+-------------
 
-.. hint:: You can enable new product icons globally, :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>` and :ref:`per website <sys--websites--commerce--products--new-arrivals>`.
+Before enabling the new product icons and new arrivals segment, make sure you have performed the following actions:
 
-To enable New Product icons globally:
+1. Mark the selected products as new arrivals in the **General** section of the **Products > Products** main menu by setting **Is New Arrival** to *Yes*.
+
+2. Create a new arrivals segment under **Reports & Segments > Manage Segments** as described in the :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
+
+
+Configure New Arrivals Globally
+-------------------------------
 
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Promotions** in the menu to the left.
@@ -26,27 +35,27 @@ To enable New Product icons globally:
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/product/NewArrivalsBlockSystemConfig.png
+      :alt: Global new arrivals configuration
 
-3. In the **New Product Icons** section, clear the **Use Default** check box and select **Yes** in the **Show on Product View** field.
+3. In the **New Product Icons**, clear the **Use Default** check box and select *Yes* in the **Show on Product View** list to enable new product icons. To disable the icons, select *No*.
 
-4. Click **Save**.
+    A new product icon will look differently for various layout options:
 
-.. note:: To disable 'New Product' icons, select **No** in the **Show on Product View** field, and click **Save**.
+    * **For tiles**:
 
-.. _sys--commerce--product--new-arrivals-block-global:
+    .. image:: /user/img/system/config_commerce/product/NewArrivalsFrontstoreTiles.png
+       :class: with-border
 
-Set Up New Arrivals
--------------------
+    * **For details**:
 
-.. hint:: You can enable new arrivals globally, :ref:`per organization <sys--commerce--product--new-arrivals-block-organization>` and :ref:`per website <sys--commerce--product--new-arrivals-block-website>`.
+    .. image:: /user/img/system/config_commerce/product/NewArrivalsFrontstoreDetails.png
+       :class: with-border
 
-To set up the New Arrivals block globally:
+    * **For compact details**:
 
-1. In the main menu, navigate to **System > Configuration**.
-2. Select **Commerce > Product > Promotions** in the menu to the left.
+    .. image:: /user/img/system/config_commerce/product/NewArrivalsFrontstoreCompactDetails.png
+       :class: with-border
 
-   .. note::
-      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 3. In the **New Arrivals** section provide the following information:
 

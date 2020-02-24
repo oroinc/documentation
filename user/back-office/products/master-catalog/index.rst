@@ -6,8 +6,7 @@
 Master Catalog
 ==============
 
-Overview
---------
+.. important:: This section is a part of the :ref:`Master Catalog <concept-guide-master-catalog>` concept guide topic that provides the general understanding of the master catalog concept in OroCommerce.
 
 :term:`Master Catalog` is a tree structure that organizes all the products of your store under corresponding categories. A category combines the products of the same type into groups and helps enforce the unified selling strategy by configuring a special set of product options, :ref:`visibility <products--product-visibility>`, and SEO settings that best fit the resulting product family.
 
@@ -69,7 +68,7 @@ To create a master catalog category:
       "**Unit Of Quantity**", "A product unit that is shown by default in the product details page in the storefront. Available options are *each*, *hour*, *item*, *kilogram*, *piece*, *set*, and *Parent Category*. The latter is used to refer to the same product quantity unit configured for the corresponding parent category."
       "**Precision**", "An acceptable value (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g. 0.5 kg)."
 
-.. include:: /user/back-office/products/products/create/create-simple.rst
+.. include:: /user/back-office/products/products/create-simple.rst
    :start-after: start_inventory
    :end-before: finish_inventory
 

@@ -96,5 +96,8 @@ To view the records selected using the segment filter:
 
 .. image:: /user/img/reports/segment_view.png
 
+
+
+
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -9,7 +9,7 @@ Organizations
 
 An :term:`organization <Organization>` represents a real enterprise, business, firm, company or another organization, to which users belong. In the Community Edition of Oro applications, only one organization is available in the system, and you cannot create more.
 
-In the Enterprise edition of Oro applications, you can :ref:`create <user-management-organization-create>` as many organizations as needed with any number of child business units within the application instance. A single user can belong to several different organization.
+In the Enterprise edition of Oro applications, you can :ref:`create <user-management-organization-create>` as many organizations as needed with any number of child business units within the application instance. Organizations cannot be nested under one another; however, a single organization can preside over all the others as the *Global Organization*. They can be thought of as tall walls, only those records explicitly granted specific access can be shared outside of the organization. A single user can belong to several different organizations.
 
 For example, one company can run three different stores under a franchise license. In the Oro application, each store can be an organization to isolate data managed by the unrelated business partners. Users within the organization would only see records that are relevant to their organization. However, the franchise owner could have access to all organizations to gather aggregated customer or order information. To enable that, the global organization should be created in the the Oro application.
 
