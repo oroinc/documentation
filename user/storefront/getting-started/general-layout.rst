@@ -1,3 +1,5 @@
+.. _storefront-general-layout:
+
 General Layout
 --------------
 
