@@ -5170,4 +5170,21 @@ Links (Dev)
 .. |Google Cloud Marketplace| raw:: html
 
    <a href="https://cloud.google.com/marketplace" target="_blank">Google Cloud Marketplace</a>
-.. Webpack Resolve Alias <
+
+.. |Azure portal account| raw:: html
+
+   <a href="https://portal.azure.com" target="_blank">Azure portal account</a>
+
+.. |Azure Marketplace| raw:: html
+
+   <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/" target="_blank">Azure Marketplace</a>
+
+.. |Azure blocking port 25| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/archive/blogs/azuresecurity/pro-tip-on-sending-email-from-azure-virtual-machines-to-external-domains" target="_blank">Azure blocking port 25</a>
+
+
+
+
+
+
