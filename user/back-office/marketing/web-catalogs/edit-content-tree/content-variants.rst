@@ -65,7 +65,7 @@ Add All Products Page to Web Catalog
 
 Once the All Products page has been enabled in the system configuration :ref:`globally <user-guide--marketing--web-catalog--node--visibility>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it as a part of your :ref:`web catalog <user-guide--web-catalog>`.
 
-.. note:: Please note that it is recommended to enable All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.\
+.. note:: Please note that it is recommended to enable All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
 
 1. Navigate to **Marketing > Web Catalogs** in the main menu.
 2. For the necessary web catalog, hover over the |IcMore| more actions menu to the right and click |IcEditContentTree| to start editing the catalog content tree.

@@ -15,8 +15,6 @@ To change the default customer user configuration settings for a website:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   The following page opens.
-
    .. image:: /user/img/system/websites/web_configuration/CustomerUsersPerWebsite.png
       :class: with-border
 

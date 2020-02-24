@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _concept-guide-customers:
 

@@ -6,8 +6,7 @@
 Master Catalog
 ==============
 
-Overview
---------
+.. important:: This section is a part of the :ref:`Master Catalog <concept-guide-master-catalog>` concept guide topic that provides the general understanding of the master catalog concept in OroCommerce.
 
 :term:`Master Catalog` is a tree structure that organizes all the products of your store under corresponding categories. A category combines the products of the same type into groups and helps enforce the unified selling strategy by configuring a special set of product options, :ref:`visibility <products--product-visibility>`, and SEO settings that best fit the resulting product family.
 
