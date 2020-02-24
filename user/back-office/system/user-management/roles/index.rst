@@ -124,6 +124,7 @@ Keep in mind that as soon as the entity is created, its ownership type cannot be
 .. |oro_application| replace:: OroCommerce
 
 .. toctree::
+   :hidden:
 
    admin-capabilities
    create-manage-roles
