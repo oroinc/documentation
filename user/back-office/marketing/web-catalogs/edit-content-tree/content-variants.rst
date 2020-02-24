@@ -63,16 +63,16 @@ Add All Products Page to Web Catalog
 
 .. begin_all_products
 
-Once the All Products page has been enabled in the system configuration :ref:`globally <user-guide--marketing--web-catalog--node--visibility>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it as a part of your :ref:`web catalog <user-guide--web-catalog>`.
+Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it as a part of your web catalog.
 
-.. note:: Please note that it is recommended to enable All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
+.. note:: Please note that it is recommended to enable the All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
 
 1. Navigate to **Marketing > Web Catalogs** in the main menu.
 2. For the necessary web catalog, hover over the |IcMore| more actions menu to the right and click |IcEditContentTree| to start editing the catalog content tree.
 
   .. image:: /user/img/marketing/web_catalogs/AllProductsEditContentTree.png
 
-3. In the **Content Nodes** menu on the left, select the node to which you need to add All Products page by clicking it.
+3. In the **Content Nodes** menu on the left, select the node to which you need to add the All Products page by clicking it.
 4. Click **Create Content Node** on the top right of the page.
 5. Complete the required fields to :ref:`configure the web catalog node <user-guide--marketing--web-catalog--content-node>`.
 6. In the **Content Variants** section, make sure to add the All Products as the system page. To do this:

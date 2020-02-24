@@ -5,6 +5,8 @@
 Product Brands
 ==============
 
+.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
+
 For enhanced eCommerce experience, Oro Application provides the ability to create and manage brands for your web store. This means that each product can be associated with a specific brand, created in the back-office.
 
 In this section you will learn how to:

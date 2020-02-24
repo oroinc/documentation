@@ -8,6 +8,10 @@ Related Items per Organization
 
 .. begin_related_products_body
 
+In the Related Items section, you can configure the settings for related and up-sell products for a particular organization. These settings may apply :ref:`globally <sys--commerce--catalog--relate-products--main>` and per :ref:`website <sys--websites--commerce--catalog--related-products>`.
+
+.. note:: Before configuring the related items settings, add the required related and up-sell products to the desired products as described in the :ref:`Add Related Items <products--related-items>` topic.
+
 To update the related products settings per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.

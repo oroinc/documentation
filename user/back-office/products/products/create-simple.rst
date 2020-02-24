@@ -1,11 +1,11 @@
 :oro_documentation_types: OroCommerce
 
-:orphan:
+.. _products--products--create-simple-product:
 
 Create a Simple Product
 -----------------------
 
-.. start_product_create_simple
+.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 
 See a short demo on |how to create a simple product|, or keep reading the step-by-step guidance below.
 
@@ -129,6 +129,67 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
        :alt: Provide the relevant translation
 
 17. Click **Save**.
+
+.. _products--related-items:
+
+Add Related Items
+^^^^^^^^^^^^^^^^^
+
+Once the core product information is saved, you may add related products and up-sell products to display them in the **Related Items** section in the product details in the back-office, and in the **Related Products** and **Up-sell Products** blocks next to the product details in the storefront.
+
+.. _products--related-products:
+
+To add related products to the product information:
+
+1. Navigate to the **Products > Products** using main menu.
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| **View** icon to preview its details.
+#. Navigate to the **Related Items** section and click the |IcEdit| **Quick Edit** link in the section header.
+
+   The **Related Items** page appears with the **Related Products** tab open by default.
+
+#. Click **Select Related Products**.
+
+#. In the **Select Related Products For** dialog:
+
+   a) Select the **Is Related** check boxes next to the products to mark them as related. Use filter to limit the number of listed products and find the necessary items.
+
+   b) Click **Select Products**.
+
+   This will close the dialog and update the related items list with the products you have selected.
+
+   .. note:: To delete a related item, click |IcDelete| **Delete**  next to it.
+
+#. Once you are done adding the related items, click **Save and Close**.
+
+Now, you can configure related products :ref:`globally <sys--commerce--catalog--relate-products>`, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>` in the system configuration.
+
+.. _products--upsell-items:
+
+To add up-sell items to the product information:
+
+1. Navigate to the **Products > Products** using the main menu.
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| **View** icon to preview its details.
+#. Navigate to the **Related Items** section and click the |IcEdit| **Quick Edit** link in the section header.
+
+   The Related Items page appears.
+
+#. Click the **Up-sell Products** tab.
+
+#. Click **Select Up-Sell Items**.
+
+#. In the **Select Up-Sell Items For** dialog:
+
+   a) Select the **Is Related** check boxes next to the products to mark them as related. Use filter to limit the number of listed products and find the necessary items.
+
+   b) Click **Select Products**.
+
+   This will close the dialog and update the related items list with the products you have selected.
+
+   .. note:: To delete a related item, click |IcDelete| **Delete**  next to it.
+
+#. Once you are done adding the related items, click **Save and Close**.
+
+Now, you can configure up-sell products :ref:`globally <sys--commerce--catalog--relate-products>`, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>` in the system configuration.
 
 .. stop_product_create_simple
 

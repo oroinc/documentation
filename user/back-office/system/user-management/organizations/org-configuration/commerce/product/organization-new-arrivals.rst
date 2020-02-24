@@ -6,9 +6,21 @@
 Product Promotions per Organization
 -----------------------------------
 
-.. begin
+In the Promotions section of Commerce configuration settings, you can enable new product icons and configure the new arrivals block for the storefront per organization. You can also enable them :ref:`globally <configuration--guide--commerce--configuration--promotions>` and :ref:`per website <sys--websites--commerce--products--new-arrivals>`.
 
-In the Promotions section of Commerce configuration settings, you can enable new product icons and configure the new arrivals block for the storefront per organization.
+Prerequisites
+-------------
+
+Before enabling the new product icons and new arrivals segment, make sure you have performed the following actions:
+
+1. Mark the selected products as new arrivals in the **General** section of the **Products > Products** main menu by setting **Is New Arrival** to *Yes*.
+
+2. Create a new arrivals segment under **Reports & Segments > Manage Segments** as described in the :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
+
+Configure New Arrivals per Organization
+---------------------------------------
+
+To set up the new arrivals icons and segment per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click the |IcConfig| **Configuration** icon to start editing the configuration.
@@ -20,7 +32,8 @@ In the Promotions section of Commerce configuration settings, you can enable new
    .. image:: /user/img/system/user_management/org_configuration/products/NewArrivalsBlockOrg.png
       :alt: New arrivals configuration per organization
 
-4. In the **New Product Icons**, clear the **Use Default** check box and select *Yes* in the **Show on Product View** list.
+4. In the **New Product Icons**, clear the **Use Default** check box and select *Yes* in the **Show on Product View** list to enable new product icons. To disable the icons, select *No*.
+
 5. In the **New Arrivals** section provide the following information:
 
    * **Product Segment** -- Select the segment that will include the items to be featured in the **New Arrivals** block.
@@ -38,7 +51,6 @@ In the Promotions section of Commerce configuration settings, you can enable new
 
 6. Click **Save Settings**.
 
-.. note:: To disable the 'New Product' icons, select *No* in the **Show on Product View** list, and click **Save Settings**.
 
 .. finish
 
