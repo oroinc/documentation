@@ -20,26 +20,23 @@ To change the default product collections indexation frequency:
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Product > Product Collections** in the menu to the left.
 
-.. note::
-   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. The following page opens.
+   .. image:: /user/img/system/config_commerce/product/product_collections_configuration.png
 
-                                 .. image:: /user/img/system/config_commerce/product/product_collections_configuration.png
+   Here, you can set the indexation cron schedule and the mass action limit.
 
-Here, you can set the indexation cron schedule and the mass action limit.
-
-4. To customize the Indexation Cron Schedule:
+3. To customize the Indexation Cron Schedule:
 
      a) Clear the **Use Default** box next to the option.
      b) Select the desired frequency from the list.
 
-5. To set the limit for mass actions:
+4. To set the limit for mass actions:
 
      a) Clear the **Use Default** box next to the option.
      b) Specify the limited number of products that can be handled when using mass action.
 
-6. Click **Save Settings**.
+5. Click **Save Settings**.
 
 
 .. finish

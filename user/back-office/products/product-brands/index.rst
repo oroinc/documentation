@@ -5,6 +5,8 @@
 Product Brands
 ==============
 
+.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
+
 For enhanced eCommerce experience, Oro Application provides the ability to create and manage brands for your web store. This means that each product can be associated with a specific brand, created in the back-office.
 
 In this section you will learn how to:
@@ -26,12 +28,12 @@ Create a New Brand from Scratch
    * **Slug** --- Enter a URL slug that is used when building a human-readable URL on the storefront. If the field is left blank, the slug will be generated automatically.
    * **Status** --- Select product brand status (*Enabled*/*Disabled*). The field is mandatory.
 
-4. In the **Short Description** section, provide a short but meaningful default description of the product brand to make identification of the brand easier. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fallback to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the short description in the WYSIWYG field.
+4. In the **Short Description** section, provide a short but meaningful default description of the product brand to make identification of the brand easier. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the short description in the WYSIWYG field.
 
     .. image:: /user/img/products/products/localize_short_descriptions_brands.png
        :alt: Localization fallback option for the short description of the master catalog
 
-5. In the **Long Description** section, enter a long default description of the product brand. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fallback to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field.
+5. In the **Long Description** section, enter a long default description of the product brand. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field.
    
 6. In the **SEO** section, provide the following information:
 

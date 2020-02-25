@@ -1,5 +1,10 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
+:title: OroCommerce and OroCRM Concept Guides
+
+.. meta::
+   :description: Key conceptual use cases and how-to guides
+
 Concept Guides
 ==============
 
@@ -12,18 +17,23 @@ Complementary to the how-to approach of the Back-office section of the documenta
 .. raw:: html
 
     <ul class="tag-cloud">
-      <li><a class="tag-very-important" href="highlight-products/">Products in the Storefront</a></li>
+
+      <li><a class="" href="master-catalog/">Master Catalog Management</a></li>
+      <li><a class="tag-important" href="web-catalog/">Web Catalog Management</a></li>
+      <li><a class="tag-important" href="product-management/">Product Management</a></li>
+      <li><a class="tag-important" href="customers/">Customer Management</a></li>
+      <li><a class="tag-very-important" href="customer-permissions/">Customer Permissions</a></li>
       <li><a class="tag-important" href="consents/">GDPR Compliance</a></li>
+      <li><a class="tag-very-important" href="guests/">Guest Functions</a></li>
       <li><a class="" href="consents/add-consent/">Consents in the Storefront</a></li>
-      <li><a class="tag-important" href="pricing/">Price Management</a></li>
+      <li><a class="tag-very-important" href="pricing/">Price Management</a></li>
       <li><a class="" href="pricing/pricing-overview/#understanding-price-lists">Price Lists</a></li>
-      <li><a class="tag-very-important" href="pricing/calculation/">Price Calculation</a></li>
+      <li><a class="tag-important" href="pricing/calculation/">Price Calculation</a></li>
       <li><a class="" href="payment-configuration/">Payment Configuration</a></li>
       <li><a class="" href="shipping-configuration/">Shipping Configuration</a></li>
       <li><a class="tag-important" href="localization/">Storefront Localization</a></li>
-      <li><a class="" href="localization/label-translation/">Translation of Product Attribute Labels</a></li>
+      <li><a class="tag-very-important" href="localization/label-translation/">Translation of Product Attribute Labels</a></li>
       <li><a class="" href="marketing-automation/">Track Marketing Activities</a></li>
-      <li><a class="tag-very-important" href="guests/">Storefront Guest Access Management</a></li>
     </ul>
 
 .. toctree::
@@ -31,8 +41,12 @@ Complementary to the how-to approach of the Back-office section of the documenta
    :titlesonly:
    :maxdepth: 1
 
+   master-catalog/index
+   web-catalog/index
+   product-management/index
+   customers/index
+   customer-permissions/index
    guests/index
-   highlight-products/index
    pricing/index
    payment-configuration/index
    shipping-configuration/index

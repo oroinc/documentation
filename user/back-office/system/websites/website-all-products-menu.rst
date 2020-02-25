@@ -6,9 +6,9 @@
 Add All Products Page to Frontend Menus per Website
 ---------------------------------------------------
 
-.. hint:: This topic is part of :ref:`Concept Guides: All Products <sys--conf--commerce--catalog--special-pages>`, where you can check out a sample of adding All Products page to the storefront and examine other All Products configuration options.
+.. important:: Multi-website management is only available in the Enterprise edition.
 
-To add the All Products page to the frontend menu of a particular website:
+Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it to a frontend menu of a particular website:
 
 1. Navigate **System > Websites** in the main menu.
 2. Click once on the required website to open its page.

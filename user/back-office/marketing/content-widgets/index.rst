@@ -6,13 +6,14 @@
 Content Widgets
 ===============
 
-Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. WYSIWYG fields are available throughout OroCommerce; for example, on edit pages of products, content blocks, and landing pages.
+Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. WYSIWYG fields are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
 
 There are three content widget types:
 
 * An Image Slider
 * A Contact Us form
 * A Copyright
+* A Product Mini Block
 
 Each of these widget types has a different set of options.
 
@@ -28,6 +29,8 @@ Please keep in mind that:
 |* Delete a widget if it is used in a content block or a landing page.|
 |* Change widget type for an already existing widget                  |
 +---------------------------------------------------------------------+
+
+.. note:: Whenever you modify a content widget, changes are applied everywhere the widget is used.
 
 Create a Content Widget
 -----------------------
@@ -51,6 +54,8 @@ To create a new content widget:
     .. image:: /user/img/marketing/content_widgets/image_slider_1.png
        :alt: Image slider content widget form
 
+    |
+
     .. note:: You can add as many slides as necessary by clicking **Add** at the bottom of the *Slides* section.
 
             .. image:: /user/img/marketing/content_widgets/image_slider_2.png
@@ -61,10 +66,17 @@ To create a new content widget:
     .. image:: /user/img/marketing/content_widgets/copyright.png
        :alt: Copyright content widget form
 
+   * **Product Mini Block** - Enables you to add a block with product information with or without prices and the **Add to Shopping List** button.
+
+     .. image:: /user/img/marketing/content_widgets/mini-block.png
+        :alt: A product mini block form
+
 4. Once you have provided all widget-specific details, click **Save and Close**.
 
    .. image:: /user/img/marketing/content_widgets/widget-view.png
       :alt: Content widget view page
+
+   |
 
    .. hint:: Each content widget may have various representations in the form of layouts. Layouts are defined by developers using the existing :ref:`layout update functionality <dev-doc-frontend-layouts-layout>`, which enables you to alternate between the pre-configured designs for each widget in the back-office.
 

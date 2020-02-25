@@ -7,6 +7,8 @@ Products
 
 .. begin_product_configuration
 
+.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
+
 The flow for creating and managing products may vary depending on the needs of your business, whether you have small scale operations or complicated product characteristics and visibility settings. With the help of OroCommerce flexible product management system, configuring products is simple to achieve. However, it may not be obvious where to start. This section is here to guide you through the process and refer you to suitable topics.
 
 Prepare for Product Creation
@@ -19,6 +21,8 @@ With this information in mind, here are the references to the elements that need
 * :ref:`Create product units <user-guide--products--product-units-in-use>` --- to select the primary product unit and its precision.
 * :ref:`Create product families <products--product-families>` and :ref:`product attributes <products--product-attributes>` --- to design a structure for product information and give the product-specific characteristics, such as color or size.
 * :ref:`Create price attributes <user-guide--products--price-attributes>` --- to add custom parameters where you can store the price-related information (e.g., MSRP) that may be used in the rule-based price lists to calculate the price for the buyer.
+
+.. _doc--products--actions--create:
 
 Create Your Products
 --------------------
@@ -39,19 +43,9 @@ Control Your Products
 Once you have created products, you can:
 
 * Discover what basic and advanced actions you can apply to products in the back-office in the :ref:`Products Grid <doc--products--characteristics>` section.
-* Proceed to managing the way products are displayed in the storefront, as described in the :ref:`Highlight and Illustrate Products <doc--products--manage-inventory-prices-look>` section.
+* Proceed to managing the way products are displayed in the storefront, as described in the :ref:`Highlight and Illustrate Products on the Storefront <highlight-products-on-the-storefront>` section.
 * Learn how to manage your product quantities and product prices in the :ref:`Manage the product inventory quantity <doc--products--actions--manage-inventory>` and :ref:`Manage product pricing <view-and-filter-product-prices>` topics.
 
-Products in a Multi-Org Application
------------------------------------
-
-Products, product attributes, and product families are managed per organization. Whenever you create a new organization, a default product family is created automatically.
-
-.. note:: Products from other organizations are not visible in the storefront. If you want multiple websites to share the same product collection, make sure that these websites are in the same organization.
-
-If you have a multi-org application, you can create products with the same SKU and URL slug in different organizations. You can also manage the product attributes of each organization independently of other organizations in the system. It means that any product attribute modifications fulfilled within one organization do not affect the product attributes available in others.
-
-Some product attributes are global, which means that they were created in the global organization and can only be managed by its admins. You can use global attributes in other organizations but not edit them or create a new product attribute with the same name as a global attribute.
 
 
 
@@ -62,7 +56,8 @@ Some product attributes are global, which means that they were created in the gl
    :hidden:
 
    manage/index
-   create/index
+   create-simple
+   create-complex
    managing-product-visibility
    import-products
    export-products

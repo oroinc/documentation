@@ -4,31 +4,30 @@
 .. _sys--commerce--catalog--upsell-products:
 .. _sys--commerce--catalog--relate-products:
 
-Related Products
-================
+Related Items
+=============
 
 .. hint:: Read more on this topic in :ref:`Products <doc--products>`.
 
-Related products listed for the product may include accessories, services, and other items that are likely to be purchased in the same order. They facilitate navigation through the product catalog in the back-office and help a buyer find the other products they may be interested in buying.
+In the Related Items section, you can configure the system settings for related and up-sell products. These settings may apply globally, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>`.
+
+Related products may include accessories, services, and other items that are likely to be purchased in the same order. They facilitate navigation through the product catalog in the back-office and help a buyer find the other products they may be interested in buying.
+
+Up-sell products may advertise more expensive alternatives to the product, like a newer and more advanced model, upgrades and add-ons that may look tempting when bundled with the product, etc.
+
+   .. image:: /user/img/system/config_commerce/catalog/related_upsell_products.png
+      :alt: Illustration of the related and up-sell products segments on the storefront
 
 In the system configuration, you can:
 
-* Enable and disable related product management for the products.
+* Enable and disable related and up-sell product management for the products.
 * Control the type of the relationship (one-way or bidirectional).
-* Limit the number of items displayed as related.
+* Limit the number of items displayed as related or up-sell.
 
-Up-sell products listed for the product in the OroCommerce storefront may advertise more expensive alternatives to the product, like a newer and more advanced model, upgrades and add-ons that may look tempting when bundled with the product, etc.
+.. note:: Before configuring the related items settings, add the required related and up-sell products to the desired products as described in the :ref:`Add Related Items <products--related-items>` topic.
 
-In the system configuration, you can:
 
-* Enable and disable up-sell product management for the products.
-* Limit the number of items displayed as up-sell.
-
-.. hint:: These settings may apply :ref:`globally <sys--commerce--catalog--relate-products>`, on the :ref:`organization level <sys--users--organization--commerce--catalog--related-products>`, and on the :ref:`website level <sys--websites--commerce--catalog--related-products>`.
-
-.. begin_related_products_body
-
-To update the related products settings globally:
+To update the related and up-sell products settings globally:
 
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Catalog > Related Items** in the menu to the left.
@@ -36,7 +35,8 @@ To update the related products settings globally:
    .. image:: /user/img/system/config_commerce/catalog/RelatedProductsGlobal.png
       :class: with-border
 
-   In the **Related Products** section, the following options are available:
+
+3. In the **Related Products** section, the following options are available:
 
    * **Enable Related Products** --- Toggles managing related products on/off. Enabled by default.
    * **Assign in Both Directions** --- When enabled, the products become mutually related. For example, when you add a lightning bulb as a related product for a standing lamp, the relation works both ways and the lamp automatically becomes related item of the lightning bulb. This option is disabled by default.
@@ -60,14 +60,11 @@ To update the related products settings globally:
 
    * **Use Slider On Mobile** --- When enabled, one related product is displayed below the main product information. Other related products are accessible using the horizontal slider. Click < and > to slide through the related products.
 
-   .. finish_related_products_option_description
-
      To customize any of these options:
 
      a) Clear the **Use Default** check box next to the option.
      b) Set or clear the option, or enter the quantity.
 
-.. begin_upsell_items_body
 
 4. In the **Up-Sell Products** section, the following options are available:
 
@@ -99,8 +96,7 @@ To update the related products settings globally:
 
 5. Click **Save**.
 
-.. finish_upsell_items_body
-.. finish_related_products_body
+
 
 .. include:: /include/include-images.rst
    :start-after: begin

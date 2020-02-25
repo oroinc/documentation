@@ -1,3 +1,8 @@
+:title: OroCloud Documentation
+
+.. meta::
+   :description: Guidance on the OroCloud onboarding process, maintenance tools, and technical support service
+
 .. _orocloud:
 
 OroCloud Documentation

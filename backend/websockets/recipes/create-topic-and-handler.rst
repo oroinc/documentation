@@ -22,7 +22,7 @@ If you decided to create a new topic for WebSocket messages in Oro application, 
 Declare Topic and Its Routing
 -----------------------------
 
-In order to declare a route for the topic, create a **websocket_routing.yml** file in the **Resources/config/oro/**
+In order to declare a route for the topic, create a **websocket_routing.yml** file in the **Resources/config/oro**
 directory of your bundle. Fill it with the following contents:
 
 .. code-block:: yaml
@@ -65,7 +65,7 @@ Each topic handler, according to its logic, decides what to do with the occurred
 **onSubscribe()** we can decide whether to allow subscription and in **onPublish()** we can broadcast the given
 message either to all subscribers or just to a restricted list.
 
-Topic handler must implement **Gos\Bundle\WebSocketBundle\Topic\TopicInterface** and be declared as a service with the tag
+Topic handler must implement *Gos\\Bundle\\WebSocketBundle\\Topic\\TopicInterface* and be declared as a service with the tag
 **gos_web_socket.topic**, e.g.:
 
 .. code-block:: twig
@@ -83,11 +83,11 @@ Topic handler must implement **Gos\Bundle\WebSocketBundle\Topic\TopicInterface**
 The **getName()** method of the topic handler must return its machine name which is used in the **websocket_routing.yml** file for
 the **handler.callback** configuration option.
 
-OroSyncBundle provides an abstract class *Oro\Bundle\SyncBundle\Topic\AbstractTopic* and two out-of-box implementations
+OroSyncBundle provides an abstract class *Oro\\Bundle\\SyncBundle\\Topic\\AbstractTopic* and two out-of-box implementations
 of topic handlers for common purposes:
 
-* **Oro\Bundle\SyncBundle\Topic\BroadcastTopic** broadcasts every published message to all subscribers. It is required for simple topics like oro_sync.maintenance which just informs about maintenance mode activation.
-* **Oro\Bundle\SyncBundle\Topic\SecuredTopic** checks if a client is allowed to subscribe to the topic. It broadcasts every published message to all subscribers. It is required for topics like oro_email.event which informs users about new emails.
+* **Oro\\Bundle\\SyncBundle\\Topic\\BroadcastTopic** broadcasts every published message to all subscribers. It is required for simple topics like oro_sync.maintenance which just informs about maintenance mode activation.
+* **Oro\\Bundle\\SyncBundle\\Topic\\SecuredTopic** checks if a client is allowed to subscribe to the topic. It broadcasts every published message to all subscribers. It is required for topics like oro_email.event which informs users about new emails.
 
 Therefore, if your topic handler is not intended to contain complex logic, you can use existing handlers, e.g.:
 

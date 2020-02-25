@@ -1,3 +1,8 @@
+:title: Checkout with the OroCommerce Storefront
+
+.. meta::
+   :description: Instructions on multi page, single page, and guest checkouts within the OroCommerce storefront
+
 .. _frontstore-guide--orders-checkout:
 .. _system--workflows--checkout-with-consents-workflow:
 

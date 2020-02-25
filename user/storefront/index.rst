@@ -1,3 +1,8 @@
+:title: OroCommerce Storefront User Documentation
+
+.. meta::
+   :description: OroCommerce Storefront user's manuals and guides
+
 .. _frontstore-guide:
 
 Commerce Storefront

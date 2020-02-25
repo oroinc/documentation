@@ -261,9 +261,9 @@ Sometimes it is required to group several fields and expose them as a nested obj
                     intervalUnit:
                         exclude: true
 
-Please note that an entity, in this example *Oro\Bundle\ReminderBundle\Entity\Reminder*, should have ``setInterval`` method. This method is called by :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions to set the nested object.
+Please note that an entity, in this example *Oro\\Bundle\\ReminderBundle\\Entity\\Reminder*, should have ``setInterval`` method. This method is called by :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions to set the nested object.
 
-Here is an example how the nested objects looks in JSON.API:
+Here is an example how the nested objects looks in JSON:API:
 
 .. code:: json
 
@@ -301,7 +301,7 @@ Sometimes a relationship with a group of entities is implemented as two fields, 
                         id:
                             property_path: sourceEntityId
 
-Here is an example how the nested association looks in JSON.API:
+Here is an example how the nested association looks in JSON:API:
 
 .. code:: json
 
@@ -409,7 +409,7 @@ Configure an Unidirectional Association
 
 To add an ORM association that is the inverse side of an unidirectional association to API, use a special ``unidirectionalAssociation`` data type. Its full definition is ``unidirectionalAssociation:targetAssociationName``, where ``targetAssociationName`` is the name of the owning side association. To specify the entity that contains the owning side association, use the ``target_class`` option.
 
-To illustrate the configuration of an unidirectional association, consider two entities, ``Product`` and ``Category``. The``Product`` entity has the ``category`` association that is an unidirectional many-to-one association to the ``Category`` entity. To add products to the ``Category`` API resource, use the following ``Resources/config/oro/api.yml``:
+To illustrate the configuration of an unidirectional association, consider two entities, ``Product`` and ``Category``. The ``Product`` entity has the ``category`` association that is an unidirectional many-to-one association to the ``Category`` entity. To add products to the ``Category`` API resource, use the following ``Resources/config/oro/api.yml``:
 
 .. code:: yaml
 

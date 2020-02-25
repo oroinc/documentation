@@ -8,7 +8,7 @@ Publish Messages from Backend
 
 To publish to and read messages from WebSocket connections topics on the backend side of Oro application,
 OroSyncBundle provides a WebSocket  **oro_sync.websocket_client** client which in is based on Gos
-WebSocketClient component *Gos\Component\WebSocketClient\Wamp\Client*.
+WebSocketClient component *Gos\\Component\\WebSocketClient\\Wamp\\Client*.
 
 WebSocket client makes use of
 :ref:`authentication tickets mechanism <dev-cookbook-system-websockets-authentication-autorization>`, so you should not

@@ -180,7 +180,7 @@ Here is an example of using the default theme. The aim is to change the global s
             - 'bundles/orofrontend/default/scss/variables/page-title-config.scss'
             - 'bundles/orofrontend/default/scss/styles.scss'
         filters: ['cssrewrite', 'cssmin']
-        output: 'css/layout/default/styles.css'
+        output: 'css/styles.css'
 
 *FormBundle/Resources/public/default/scss/*
 

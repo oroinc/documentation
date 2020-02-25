@@ -1,6 +1,11 @@
-.. _web-services-api:
-
 :oro_show_local_toc: false
+
+:title: OroCommerce and OroCRM Web API Development
+
+.. meta::
+   :description: WebAPI engine architecture and backend developer guides
+
+.. _web-services-api:
 
 Web Services API Guide
 ======================
@@ -18,13 +23,13 @@ interpretation of significant data elements. It encompasses the fundamental cons
 and data that define the basis of the Web architecture, and thus the essence of its behavior as a network-based
 application.
 
-|JSON API| is a specification for how a client should request those resources to
+|JSON:API| is a specification for how a client should request those resources to
 be fetched or modified, and how a server should respond to them. It is designed to minimize both the number of requests
 and the amount of data transmitted between the clients and the servers. This efficiency is achieved without compromising
 on readability, flexibility or discoverability.
 
-Therefore, here and below the term *API* will refer to the REST JSON API that gives programmatic access
-to read and write data. Request and response body should use JSON format.
+Therefore, here and below the term *API* will refer to the REST API that conforms the JSON:API specification that gives
+programmatic access to read and write data. Request and response body should use JSON format.
 
 Find more information about Web API in the following topics:
 

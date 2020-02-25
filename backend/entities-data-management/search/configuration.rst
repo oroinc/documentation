@@ -63,7 +63,7 @@ from the search.yml files and has only one configuration for each entity.
 
 **Example**
 
-`Acme\Bundle\DemoBundle\Resources\config\oro\search.yml`:
+`Acme/Bundle/DemoBundle/Resources/config/oro/search.yml`:
 
 .. code-block:: none
     :linenos:
@@ -82,7 +82,7 @@ from the search.yml files and has only one configuration for each entity.
                 target_type:            text
                 target_fields:          [name]
 
-`AcmeCRM\Bundle\DemoBundle\Resources\config\search.yml`:
+`AcmeCRM/Bundle/DemoBundle/Resources/config/search.yml`:
 
 .. code-block:: none
     :linenos:
@@ -197,20 +197,19 @@ configuration of search engine services that will be added to container
 services.
 
 To make the engine work, two services must be defined in the engine
-configuration: \* Search service *oro\_search.search.engine* must
-implement
-*Oro\Bundle`\SearchBundle`\Engine`\EngineInterface`*.
-\* Indexer service *oro\_search.search.engine.indexer* must implement
-*Oro\Bundle`\SearchBundle`\Engine`\IndexerInterface`*.
+configuration:
+
+  - search service *oro\_search.search.engine* must
+    implement *Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface*.
+  - indexer service *oro\_search.search.engine.indexer* must implement
+    *Oro\\Bundle\\SearchBundle\\Engine\\IndexerInterface*.
 
 To make implementation easier, there are abstract classes
-*Oro\Bundle`\SearchBundle`\Engine`\AbstractEngine`*
-and
-*Oro\Bundle`\SearchBundle`\Engine`\AbstractIndexer`*
+*Oro\\Bundle\\SearchBundle\\Engine\\AbstractEngine*
+and *Oro\\Bundle\\SearchBundle\\Engine\\AbstractIndexer*
 that provide useful functionality (such as logging, queuing etc).
 
-If the search engine requires some additional parameters (credentials, index configuration etc.), then they can be passed through the configuration using the
- *oro\_search.engine\_parameters* key, so these parameters can be injected into search services.
+If the search engine requires some additional parameters (credentials, index configuration etc.), then they can be passed through the configuration using the *oro\_search.engine\_parameters* key, so these parameters can be injected into search services.
 
 Also, engine configuration can override existing services to support some specific use cases of the search engine (e.g. ORM engine overrides index listener to support single flush).
 

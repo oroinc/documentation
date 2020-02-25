@@ -21,7 +21,7 @@ Register a Business Account with Apruve
 
 To register a business account and enable a checkout credit program integration with OroCommerce, follow the next steps:
 
-1. Contact |https://apruve.com/| to get started and schedule a time for a conversation with a member of the Apruve Sales Team.
+1. Contact |https://www.apruve.com/| to get started and schedule a time for a conversation with a member of the Apruve Sales Team.
 
    .. image:: /user/img/system/integrations/apruve/apruve_prerequisites_1.png
       :class: with-border

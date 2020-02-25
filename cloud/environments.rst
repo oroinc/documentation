@@ -1,3 +1,8 @@
+:title: OroCloud Environment Types
+
+.. meta::
+   :description: An overview and classification principles of the OroCloud development, testing, staging, and production environments
+
 .. _cloud-environments:
 
 Environment Types

@@ -1,5 +1,10 @@
 :orphan:
 
+:title: OroCloud VPN Connection Configuration
+
+.. meta::
+   :description: A detailed manual on the OroCloud VPN connection configuration on various operating systems for the OroCloud administrators
+
 .. _cloud_connect_vpn:
 
 VPN Connection

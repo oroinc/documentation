@@ -3,7 +3,7 @@
 Creating and Updating Related Resources with Primary API Resource
 =================================================================
 
-Sometimes, it is required to create or update the related resources while creating or updating the primary API resource, especially when creating a complex API resource object via a single API request. Unfortunately, the JSON API specification does not describe how to do this. The solution proposed by OroPlatform is to use the **included** section of a JSON request body as in the example below:
+Sometimes, it is required to create or update the related resources while creating or updating the primary API resource, especially when creating a complex API resource object via a single API request. Unfortunately, the |JSON:API specification| does not describe how to do this. The solution proposed by OroPlatform is to use the **included** section of a JSON request body as in the example below:
 
 **Request**
 
@@ -255,3 +255,6 @@ This request does the following:
 
 2. Sets the primary email for the contact with identifier '79' and makes it the default contact.
 
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

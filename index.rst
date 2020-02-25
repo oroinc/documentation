@@ -1,3 +1,9 @@
+:title: OroCommerce, OroCRM, OroPlatform Official Documentation
+
+.. meta::
+   :description: Comprehensive documentation for application users, developers, and cloud administrators.
+
+
 Welcome to Oro Documentation
 ============================
 

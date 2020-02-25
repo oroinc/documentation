@@ -5,6 +5,8 @@
 Product Families
 ================
 
+.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
+
 A :term:`Product Family` is a set of the :ref:`product attributes <products--product-attributes>` that are enough to store complete information about the products of a similar type (e.g., TV attributes vs T-shirts attributes).
 In the product family, attributes are organized into attribute groups that are displayed as titled sections on the OroCommerce storefront.
 

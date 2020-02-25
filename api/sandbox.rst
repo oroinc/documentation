@@ -11,10 +11,10 @@ The sandbox page is available at ``http://<hostname_of_your_oro_application>/api
 
     Please note that the **admin** prefix is used by default and can be changed by your administrator.
 
-This page represents a list of available JSON.API resources.
+This page represents a list of available JSON:API resources.
 
 .. image:: /img/backend/api/api_json_generalview.png
-   :alt: A list of available JSON.API resources
+   :alt: A list of available JSON:API resources
 
 To review available methods for the resource, click the resource row or the **List Operations** link to the right of the row. You will see the list of available methods grouped in blocks by the resource URI.
 
@@ -50,9 +50,9 @@ To switch between different API types, click the required type at the top of the
 
 *Retrieve a Single Record*
 
-To retrieve a single record for a particular resource record with JSON API, perform the GET method with the id parameter specified:
+To retrieve a single record for a particular resource record with JSON:API, perform the GET method with the id parameter specified:
 
-    1.  Click the API resource row on the ``http://<hostname_of_your_oro_application>/admin/api/doc/rest_json_api`` page to expand the methods block.
+    1.  Click the API resource row on the API sandbox page to expand the methods block.
 
     2.  Find the **/api/your_resource/{id}** block.
 
@@ -75,7 +75,7 @@ it contains the '200 OK' string.
 To see the list of headers which the server sent in the response, click the **Expand** link next to the section header.
 
 If the request is successful, you should see the output data of the request in the **Response Body** section. In the given
-case, entity data will be in the JSON format. Find more information on this format on the |JSON API| site.
+case, entity data will be in the JSON format. Find more information on this format on the |JSON:API| site.
 
 The **Curl Command Line** section contains an example of the CLI command to perform the request
 with |Curl|. This command may help emulate the real request to the API.
@@ -86,9 +86,9 @@ with |Curl|. This command may help emulate the real request to the API.
 
 *Edit a Record*
 
-To edit a record for a particular resource record with JSON API, perform the PATCH method with the specified id parameter:
+To edit a record for a particular resource record with JSON:API, perform the PATCH method with the specified id parameter:
 
-    1.  Click the API resource row on the ``http://<hostname_of_your_oro_application>/admin/api/doc/rest_json_api`` page to expand the method block.
+    1.  Click the API resource row on the API sandbox page to expand the method block.
 
     2.  Find the **/api/your_resource/{id}** block.
 

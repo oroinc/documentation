@@ -26,8 +26,6 @@ To change the default routing settings for the website:
 
 3. Select **System Configuration > Websites > Routing** in the menu to the left.
 
-   The following page opens.
-
    .. image:: /user/img/system/websites/web_configuration/website_routing.png
       :class: with-border
 

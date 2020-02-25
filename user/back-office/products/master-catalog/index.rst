@@ -6,8 +6,7 @@
 Master Catalog
 ==============
 
-Overview
---------
+.. important:: This section is a part of the :ref:`Master Catalog <concept-guide-master-catalog>` concept guide topic that provides the general understanding of the master catalog concept in OroCommerce.
 
 :term:`Master Catalog` is a tree structure that organizes all the products of your store under corresponding categories. A category combines the products of the same type into groups and helps enforce the unified selling strategy by configuring a special set of product options, :ref:`visibility <products--product-visibility>`, and SEO settings that best fit the resulting product family.
 
@@ -48,12 +47,12 @@ To create a master catalog category:
 
    * **Large Image** — An image reserved for customization purposes.
 
-4. In the **Short Description** section, provide a short but meaningful description of the category you are creating as a default value. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fallback to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the short description in the WYSIWYG field.
+4. In the **Short Description** section, provide a short but meaningful description of the category you are creating as a default value. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the short description in the WYSIWYG field.
 
     .. image:: /user/img/products/master_catalog/localize_short_descriptions_category.png
        :alt: Localization fallback option for the short description of the master catalog
 
-5. In the **Long Description** section, provide a long default description of the category. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fallback to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field.
+5. In the **Long Description** section, provide a long default description of the category. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field.
 
 6. In the **Products** section, select the items for the category you are creating. Use available filters to narrow down your search and speed up the selection of the necessary product items.
 
@@ -69,11 +68,13 @@ To create a master catalog category:
       "**Unit Of Quantity**", "A product unit that is shown by default in the product details page in the storefront. Available options are *each*, *hour*, *item*, *kilogram*, *piece*, *set*, and *Parent Category*. The latter is used to refer to the same product quantity unit configured for the corresponding parent category."
       "**Precision**", "An acceptable value (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g. 0.5 kg)."
 
-.. include:: /user/back-office/products/products/create/create-simple.rst
+.. include:: /user/back-office/products/products/create-simple.rst
    :start-after: start_inventory
    :end-before: finish_inventory
 
 8. The **Activity** section displays all the :ref:`activities <user-guide-productivity-tools>` available for the selected category, such as *call*, *task*, *email*, *note*, or *calendar event*. You can use filters to select any activity type and date of its implementation.
+
+.. _master-catalog-visibility:
 
 9. In the **Visibility** section, you can set a visibility restriction for the master catalog category and the products assigned to this category by clicking the necessary tab.
 

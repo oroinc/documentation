@@ -565,3 +565,7 @@ Images
 .. |IcPublish| raw:: html
 
    <i class="fas fa-share-square" aria-hidden="true"></i>
+
+.. |IcB2C| raw:: html
+
+   <i class="fas fa-shopping-bag" aria-hidden="true"></i>

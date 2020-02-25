@@ -39,13 +39,13 @@ The following table shows all actions provided out-of-the-box:
 |                            | belongs to. This action do not have default implementation, additional processors should be added                  |
 |                            | for each sub-resource.                                                                                             |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete_subresource         | Deletes an entity (or entities, it depends on the association type) connected to an entity the sub-resource        |
+| delete\_subresource        | Deletes an entity (or entities, it depends on the association type) connected to an entity the sub-resource        |
 |                            | belongs to. This action do not have default implementation, additional processors should be added for each         |
 |                            | sub-resource.                                                                                                      |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | get\_relationship          | Returns a relationship data.                                                                                       |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update_relationship        | Updates "to-one" relationship and completely replaces all members of "to-many" relationship.                       |
+| update\_relationship       | Updates "to-one" relationship and completely replaces all members of "to-many" relationship.                       |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | add\_relationship          | Adds one or several entities to a relationship. This action is applicable only for "to-many" relationships.        |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
@@ -53,7 +53,7 @@ The following table shows all actions provided out-of-the-box:
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | options                    | Returns the communication options for a resource.                                                                  |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| customize\_loaded\_data    | Makes modifications of data loaded by *get*, *get\_list* and *get\_subresourceactions*                             |
+| customize\_loaded\_data    | Makes modifications of data loaded by *get*, *get\_list* and *get\_subresource* actions.                           |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | customize\_form\_data      | Makes modifications of submitted form data for *create* and *update* actions.                                      |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
@@ -67,7 +67,7 @@ The following table shows all actions provided out-of-the-box:
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | collect\_subresources      | Returns a list of all sub-resources accessible through API for a given entity type.                                |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| not_allowed                | Builds a response for case when a request does not match any public action.                                        |
+| not\_allowed               | Builds a response for case when a request does not match any public action.                                        |
 |                            | E.g. when HTTP method is not supported for REST API request.                                                       |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 
@@ -229,7 +229,7 @@ The context class: |DeleteListContext|. Also see :ref:`Context <context-class>` 
 
 The main processor class: |DeleteListProcessor|.
 
-Existing worker processors: |processors.delete_list.yml|, |processors.shared.yml|. Run ``php bin/console oro:api:debug delete_list`` to display the list of processors..
+Existing worker processors: |processors.delete_list.yml|, |processors.shared.yml|. Run ``php bin/console oro:api:debug delete_list`` to display the list of processors.
 
 This action has the following processor groups:
 
@@ -272,7 +272,7 @@ The context class: |CreateContext|. Also see :ref:`Context <context-class>` clas
 
 The main processor class: |CreateProcessor|.
 
-Existing worker processors: |processors.create.yml|, |processors.shared.yml|. Run ``php bin/console oro:api:debug create`` to display the list of processors..
+Existing worker processors: |processors.create.yml|, |processors.shared.yml|. Run ``php bin/console oro:api:debug create`` to display the list of processors.
 
 This action has the following processor groups:
 
@@ -874,7 +874,7 @@ The context class: |NormalizeValueContext|.
 
 The main processor class: |NormalizeValueProcessor|.
 
-Existing worker processors: |processors.normalize_value.yml|. Run ``php bin/console oro:api:debug normalize_value`` to see the list of processors..
+Existing worker processors: |processors.normalize_value.yml|. Run ``php bin/console oro:api:debug normalize_value`` to see the list of processors.
 
 Additionally, |ValueNormalizer| and |ValueNormalizerUtil| were created to make usage of this action as easy as possible.
 
@@ -899,7 +899,7 @@ The context class: |CollectResourcesContext|.
 
 The main processor class: |CollectResourcesProcessor|.
 
-Existing worker processors:|processors.collect_resources.yml|. Run ``php bin/console oro:api:debug collect_resources`` to see the list of processors..
+Existing worker processors:|processors.collect_resources.yml|. Run ``php bin/console oro:api:debug collect_resources`` to see the list of processors.
 
 Additionally, |ResourcesProvider| was created to make usage of this action as easy as possible.
 
@@ -943,8 +943,8 @@ Example:
 
 .. _not-allowed-action:
 
-not_allowed Action
-^^^^^^^^^^^^^^^^^^
+not\_allowed Action
+^^^^^^^^^^^^^^^^^^^
 
 This action builds a response for case when a request does not match any public action. An example of such case can be for REST API request with not supported HTTP method.
 

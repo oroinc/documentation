@@ -5,6 +5,8 @@
 General Setup for Organization
 ==============================
 
+.. important:: Multi-organization management is only available in the Enterprise edition.
+
 Learn how to configure localization options, currency and tracking, as well and user, email, display and upload settings.
 
   * :ref:`Application Settings <admin-configuration-application-org>`

@@ -1,3 +1,8 @@
+:title: OroCommerce, OroCRM, OroPlatform JavaScript Architecture
+
+.. meta::
+   :description: Extensive documentation on the JavaScript web applications architecture for the frontend developers
+
 .. _dev-doc-frontend-javascript:
 
 
@@ -321,7 +326,8 @@ in the Chaplin lifecycle.
     :maxdepth: 1
 
     javascript-modularity
-
+    js-unittests
+    composer-js-dependencies
 
 
 

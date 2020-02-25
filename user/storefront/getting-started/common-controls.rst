@@ -1,3 +1,5 @@
+.. _storefront-common-controls:
+
 Common Controls
 ---------------
 

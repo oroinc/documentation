@@ -76,7 +76,7 @@ Advanced Product Management
 * :ref:`Manage Product Quantities in the Inventory <doc--products--actions--manage-inventory>`
 * :ref:`Manage Product Pricing <view-and-filter-product-prices>`
 * :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>`
-* :ref:`Highlight and Illustrate Products <doc--products--manage-inventory-prices-look>` by managing the following items:
+* :ref:`Highlight and Illustrate Products on the Storefront <highlight-products-on-the-storefront>` by managing the following items:
 
   * Product Images (watermark, image gallery and preview)
   * Featured Products

@@ -1,11 +1,19 @@
 :oro_documentation_types: OroCommerce
 :oro_show_local_toc: false
 
+:title: Product Information Management in the OroCommerce Back-Office
+
+.. meta::
+   :description: Product and master catalog management guides for the OroCommerce back-office users
+
+
 .. _doc--products:
 .. _user-guide--products--products:
 
 Products
 ========
+
+.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 
 OroCommerce enables you to create and manage products in the way that fits specifically your business strategies and requirements. As it may not be obvious where to start working with your product, several dedicated sections have been compiled to help you understand the full picture of creating and managing products, as well as some additional aspects that working with products may involve.
 
@@ -38,7 +46,7 @@ This section provides shortcuts to topics that may be useful for various types o
 
   * :ref:`Create a configurable product <products--products--create-config-product>`
   * :ref:`Set up a matrix form and variations of a configurable product <config-guide--landing-commerce--products--configurable-products>`
-  * :ref:`Highlight and illustrate products <doc--products--manage-inventory-prices-look>`
+  * :ref:`Highlight and illustrate products on the Storefront <highlight-products-on-the-storefront>`
   * :ref:`Manage product quantities <doc--products--actions--manage-inventory>`
   * :ref:`Configure product-related settings in system configuration <configuration--products>`
 

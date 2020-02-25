@@ -5,7 +5,7 @@
 Customize Frontend Menus per Website
 ------------------------------------
 
-.. note:: This option is available in the Enterprise edition only.
+.. important:: Multi-website management is only available in the Enterprise edition.
 
 .. hint:: This topic is part of :ref:`Frontend Menus <backend-frontend-menus>` where you can learn more about all available types of frontend menus, how to configure them on other levels, and edit their items.
 

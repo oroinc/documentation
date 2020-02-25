@@ -5,11 +5,14 @@
 Manage a Website
 ================
 
+.. important:: Multi-website management is only available in the Enterprise edition.
+
 With OroCommerce, you can determine the way a particular website is operated by customizing it according to your business requirements.
 
 Once a website is created and properly configured, you can now:
 
 * set the website as default
+* configure the website settings for the B2C market sector
 * customize the website storefront navigation and menus
 * add variable web catalog pages for different websites
 * limit price lists and content blocks to particular websites
@@ -40,6 +43,30 @@ Now the website is marked as default and will be used for the anonymous access.
 .. image:: /user/img/system/websites/default_australia_website.png
    :alt: Mark Australia website as the default one
 
+Configure a Website for B2C
+---------------------------
+
+OroCommerce enables you to customize the application for the B2C business type, modifying the default configuration to match the typical B2C setup. You can then change these settings manually in the system configuration, if necessary.
+
+A B2C website can be configured in two ways, either :ref:`during creation <system-websites-create>` or from the website's view page.
+
+1. Navigate to **System > Websites** using the main menu.
+2. Click the website you would like to configure for B2C (e.g., Australia).
+
+   .. image:: /user/img/system/websites/view_website_australia_B2C.png
+      :alt: View the details of Australia website
+
+3. On the website details page, click |IcB2C| **Configure for B2C**.
+
+4. The popup confirmation dialog displays the list of options that will be modified by this configuration.
+
+   .. image:: /user/img/system/websites/B2C_settings2.png
+      :alt: The list of options that are modified for the B2C website
+
+5. Click **Yes** to confirm.
+
+6. The changes apply automatically. You can view them in the system configuration and update if required.
+
 Edit a Storefront Menu
 ----------------------
 
@@ -51,7 +78,7 @@ To customize a storefront menu for the website:
 
 2. Click the website you would like to edit a menu for (e.g., Australia).
 
-   .. image:: /user/img/system/websites/view_website_australia.png
+   .. image:: /user/img/system/websites/view_website_australia1.png
       :alt: View the details of Australia website
 
 3. On the website details page, click |IcConfig| **Edit Frontend Menu**.

@@ -1,3 +1,8 @@
+:title: Security Settings in OroCommerce, OroCRM, OroPlatform
+
+.. meta::
+   :description: Guidance on security settings and access levels configuration for the backend developers
+
 .. _bundle-docs-platform-security-bundle-intro:
 
 Security

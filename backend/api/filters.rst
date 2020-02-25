@@ -167,7 +167,7 @@ StandaloneFilter Base Class
 
 The |StandaloneFilter| is the base class for filters that can be used independently of other filters.
 
-Examples of such filters areЖ
+Examples of such filters are:
 
 * :ref:`ComparisonFilter <comparisonfilter-filter>`
 * |ExtendedAssociationFilter|
@@ -290,8 +290,8 @@ Consider checking out the list of other classes below as they can provide insigh
 * |FilterCollection| - a collection of filters.
 * |SimpleFilterFactory| - the default implementation of a factory to create filters.
 * |FilterOperatorRegistry| - the container for all registered operators for filters.
-* |MetaPropertyFilter| - a filter that is used to request meta properties.
-* |AddMetaPropertyFilter| - a processor that adds the "meta" filter that is used to request meta properties.
+* |MetaPropertyFilter| - a filter that is used to request to add entity meta properties to the result or to request to perform some additional operations.
+* |AddMetaPropertyFilter| - a processor that adds the "meta" filter that is used to specify which entity meta properties should be returned or which additional operations should be performed.
 * |HandleMetaPropertyFilter| - a processor that handles the "meta" filter.
 * |AddMetaProperties| - a processor that adds configuration of meta properties requested via the "meta" filter.
 * |FieldsFilter| - a filter that is used to filter entity fields.

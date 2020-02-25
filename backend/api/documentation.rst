@@ -99,7 +99,7 @@ The third level ``###`` (h3) header depends on the section type and can be actio
 
 The fourth level ``####`` (h4) header can be used only for **FIELDS** and **SUBRESOURCES** sections. For **FIELDS** section it can be used for the case when it is needed to specify the description for a field in a particular action. For **SUBRESOURCES** section it is a sub-resource action name.
 
-The action names in **FIELDS** section can be combined using comma, e.g.: "Create, Update". It allows to avoid copy-paste when you need the same description for several actions.
+The action names in **FIELDS** section can be combined using comma, e.g.: "create, update". It allows to avoid copy-paste when you need the same description for several actions.
 
 Example:
 
@@ -185,7 +185,7 @@ Use the ``{@request}`` tag to add documentation depends on the request type. The
 -  ``|`` - logical OR
 -  ``!`` - logical NOT
 
-For example, to add a text for the JSON API request type for all requests excluding REST API, use the following expression: ``json_api&!rest``.
+For example, to add a text for the |JSON:API| request type for all requests excluding REST API, use the following expression: ``json_api&!rest``.
 
 Example:
 

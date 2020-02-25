@@ -216,7 +216,7 @@ The ``entities`` section describes the configuration of entities.
 
 *  **order\_by** *array* - The property can be used to configure default ordering of the result. The item key is the name of a field. The value can be ``ASC`` or ``DESC``. By default the result is ordered by an identifier field.
 
-*  **disable\_inclusion** *boolean* - Indicates whether an inclusion of related entities is disabled. In JSON.API the |**include** request parameter| can be used to customize which related entities should be returned. By default ``false``.
+*  **disable\_inclusion** *boolean* - Indicates whether an inclusion of related entities is disabled. In JSON:API the |**include** request parameter| can be used to customize which related entities should be returned. By default ``false``.
 
 *  **disable\_fieldset** *boolean* - Indicates whether one can request a restricted set of fields. In JSON:API, the |**fields** request parameter|  is used to customize which fields to return. By default ``false``.
 
@@ -275,7 +275,7 @@ By default, the following form options are set:
 
 This section describes configuration of entity fields.
 
-*  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the :ref:`Exclude Option <exclude-option>` section.
+*  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the `"exclude" option <#exclude-option>`__ section.
 
 *  **description** *string* - A human-readable description of the field or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
 
@@ -290,7 +290,7 @@ This section describes configuration of entity fields.
 
 *  **data\_type** *string* - The data type of the field value. Can be ``boolean``, ``integer``, ``string``, etc. If a field represents an association the data type should be a type of an identity field of the target entity.
 
-*  **meta\_property** *boolean* - A flag indicates whether the field represents a meta information. For JSON.API, such fields are returned in the |meta| section. By default, ``false``.
+*  **meta\_property** *boolean* - A flag indicates whether the field represents a meta information. For JSON:API, such fields are returned in the |meta| section. By default, ``false``.
 
 *  **target\_class** *string* - The class name of a target entity if a field represents an association. If the API resource is based on the non ORM entity, set the target class in a configuration file.
 
@@ -307,9 +307,9 @@ The **data\_type** attribute can be used to specify a data type of a field. Howe
    :header: "Data Type","Description"
    :widths: 15, 30
 
-   "scalar","Represents a field of a to-one association as a field of parent entity. In JSON.API it means that the association's field should be in ``attributes`` section instead of ``relationships``."
-   "object","Represents to-one association as a field. In JSON.API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
-   "array","Represents to-many association as a field. In JSON.API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
+   "scalar","Represents a field of a to-one association as a field of parent entity. In JSON:API it means that the association's field should be in ``attributes`` section instead of ``relationships``."
+   "object","Represents to-one association as a field. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
+   "array","Represents to-many association as a field. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
    "nestedObject","Helps configure nested objects. For details see :ref:`Configure a Nested Object <configure-nested-object>`."
    "nestedAssociation","Helps configure nested associations. For details see :ref:`Configure a Nested Association <configure-nested-association>`."
    "association:relationType[:associationKind]","Helps configure extended associations. For details, see :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`, :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>` and :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`."
@@ -486,9 +486,9 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 *  **disable\_sorting** *boolean* - Indicates whether to disable the sorting. By default, false.
 
-*  **disable\_inclusion** *boolean* - The flag indicates whether an inclusion of related entities is disabled. In JSON.API an |**include** request parameter| can be used to customize which related entities should be returned. By default ``false``.
+*  **disable\_inclusion** *boolean* - The flag indicates whether an inclusion of related entities is disabled. In JSON:API an |**include** request parameter| can be used to customize which related entities should be returned. By default ``false``.
 
-*  **disable\_fieldset** *boolean* - The flag indicates whether a requesting of a restricted set of fields is disabled. In JSON.API an |**fields** request parameter| can be used to customize which fields should be returned. By default ``false``.
+*  **disable\_fieldset** *boolean* - The flag indicates whether a requesting of a restricted set of fields is disabled. In JSON:API an |**fields** request parameter| can be used to customize which fields should be returned. By default ``false``.
 
 *  **disable\_meta\_properties** *boolean* - The flag indicates whether a requesting of additional meta properties is disabled. By default ``false``.
 
@@ -659,9 +659,9 @@ The ``subresources`` configuration section enables you to provide options for su
 
 -  **target\_type** *string* - The type of a target association. Can be **to-one** or **to-many**. Also **collection** can be used as an alias for **to-many**. **to-one** can be omitted as it is used by default.
 
--  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions Configuration Section <actions-config>`. If an option exists in both entity actions section and sub-resource **actions** section the sub-resource option wins.
+-  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions <actions-config>` configuration section. If an option exists in both entity actions section and sub-resource **actions** section the sub-resource option wins.
 
--  **filters** - The filters supported by the sub-resource. This section has the same options as  :ref:`filters Configuration Section <filters-config>`. If an option exists in both `entity **filters** section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
+-  **filters** - The filters supported by the sub-resource. This section has the same options as  :ref:`filters <filters-config>` configuration section. If an option exists in both `entity "filters" section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
 
 - **sorters** - The sorters supported by the sub-resource. This section has the same options as the entity sorters section. If an option exists in both entity sorters section and sub-resource sorters section, the sub-resource option wins.
 

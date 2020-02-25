@@ -1,3 +1,8 @@
+:title: Annotations and YAML Configuration References in Oro Applications
+
+.. meta::
+   :description: Examples of using annotations and YAML configuration references in the Oro applications
+
 .. _dev-config-reference:
 
 Configuration Reference

@@ -1,6 +1,11 @@
 .. index::
     single: Configuration
 
+:title: System Configuration Management in OroCommerce, OroCRM, OroPlatform
+
+.. meta::
+   :description: System configuration manuals and how-to guides for the Oro application backend developers
+
 System Configuration
 ====================
 

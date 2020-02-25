@@ -1,3 +1,8 @@
+:title: OroCommerce, OroCRM, OroPlatform Architecture Developer Guide
+
+.. meta::
+   :description: Fundamentals of the OroCommerce, OroCRM, OroPlatform applications architecture for the backend developers
+
 .. _architecture-guide:
 
 Application Architecture

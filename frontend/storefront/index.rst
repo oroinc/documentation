@@ -1,3 +1,8 @@
+:title: OroCommerce Storefront Design Customization Guide
+
+.. meta::
+   :description: Practical guides on developing and customizing the OroCommerce storefront design for the frontend developers
+
 .. _dev-doc-frontend-storefront:
 
 Storefront Customization

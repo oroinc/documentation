@@ -139,11 +139,11 @@ Add the Channel Type and Transport to the Services Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 To register the channel type and transport, append the following key-values to <bundle_root>/Resources/config/services.yml:
 
-.. oro_integrity_check:: eee4d98458e6277825ecca9b313281726e92f299
+.. oro_integrity_check:: 275174a664fc3b0b6e4cf880ce46af384d0859e1
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 1-2,4-16
+       :lines: 1-2,4-14
        :linenos:
 
 Set up Services with DependencyInjection
@@ -244,11 +244,11 @@ Add the Shipping Method Identifier Generator to the Services Container
 
 Append the following lines to <bundle_root>/Resources/config/services.yml:
 
-.. oro_integrity_check:: 363bf0d7a7bbf53dac5f75673128b0d6e74b8f7b
+.. oro_integrity_check:: c7255b0da9fb2b8b3fe9a9a982dcc4734fb53be6
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 18-21
+       :lines: 16-20
        :linenos:
 
 Create a Factory for the Shipping Method
@@ -269,11 +269,11 @@ Add the Shipping Method Factory to the Services Container
 
 To register the shipping method factory, append the following key-values to <bundle_root>/Resources/config/services.yml under the services section:
 
-.. oro_integrity_check:: b13ff51e4b1c431ad27cdddda8011e0ce51d2373
+.. oro_integrity_check:: 5003781a2531d0cdfdac202687cd64b7dc3cbddf
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 23-30
+       :lines: 22-29
        :linenos:
 
 Create a Shipping Method Provider
@@ -299,7 +299,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 32-40
+       :lines: 30-38
        :linenos:
 
 
@@ -364,7 +364,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 42-47
+       :lines: 40-45
        :linenos:
 
 Define Translation for the Shipping Method Form Options
@@ -405,7 +405,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 1,3-5,49-73
+       :lines: 1,3-5,47-71
        :linenos:
 
 Add Actions
