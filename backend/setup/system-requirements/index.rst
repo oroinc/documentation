@@ -28,64 +28,65 @@ Software
 
 Oro applications are compatible with most web servers with PHP support, but the following configuration is recommended:
 
-+-------------------+---------------------------------------------------+
-| *Web Server*      | * |Apache| 2.2.x or 2.4.x                         |
-|                   | * |Nginx| latest mainline or stable version       |
-|                   |                                                   |
-|                   | Web server configuration recommendations are well |
-|                   | described in |Symfony web server documentation|   |
-+-------------------+---------------------------------------------------+
-| *PHP*             | * |PHP| >=7.1.26 and 7.2                          |
-|                   | * PHP CLI, the same version as for the web server |
-+-------------------+---------------------------------------------------+
-| *PHP Settings*    | Few updates to default PHP configuration settings |
-|                   | should be done in php.ini for the web server and  |
-|                   | CLI:                                              |
-|                   |                                                   |
-|                   | * date.timezone must be set                       |
-|                   | * detect_unicode must be disabled                 |
-|                   | * memory_limit should be 512M or above            |
-|                   |                                                   |
-|                   | If the xdebug is installed (which is not          |
-|                   | recommended in the production setup):             |
-|                   |                                                   |
-|                   | * xdebug.scream must be disabled                  |
-|                   | * xdebug.show_exception_trace must be disabled    |
-|                   | * xdebug.max_nesting_level above 100              |
-|                   |                                                   |
-|                   | By default, max_execution_time value equals 30    |
-|                   | seconds. In case of using the **Schema update**   |
-|                   | option, it is recommended to increase this value. |
-|                   |                                                   |
-+-------------------+---------------------------------------------------+
-| *PHP Extensions*  | * ctype                                           |
-|                   | * curl                                            |
-|                   | * fileinfo                                        |
-|                   | * gd                                              |
-|                   | * intl (ICU library 4.4 and above)                |
-|                   | * json                                            |
-|                   | * mbstring                                        |
-|                   | * openssl                                         |
-|                   | * mysql                                           |
-|                   | * pcre                                            |
-|                   | * simplexml                                       |
-|                   | * tokenizer                                       |
-|                   | * xml                                             |
-|                   | * zip                                             |
-|                   | * imap                                            |
-+-------------------+---------------------------------------------------+
-| *Database*        | * |MySQL| 5.7                                     |
-|                   |                                                   |
-|                   | .. note:: The latest version of `mariaDB` may be  |
-|                   |    used at one's own risk. Oro applications are   |
-|                   |    not tested with `mariaDB`, and thus the correct|
-|                   |    operation cannot be guaranteed.                |
-+-------------------+---------------------------------------------------+
-| *Process Control* | * |Supervisor|  or alternative                    |
-+-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| used for JS assets minification       |
-|                   |   and SCSS assets build.                          |
-+-------------------+---------------------------------------------------+
++-------------------+---------------------------------------------------------+
+| *Web Server*      | * |Apache| 2.2.x or 2.4.x                               |
+|                   | * |Nginx| latest mainline or stable version             |
+|                   |                                                         |
+|                   | Web server configuration recommendations are well       |
+|                   | described in |Symfony web server documentation|         |
++-------------------+---------------------------------------------------------+
+| *PHP*             | * |PHP| for **v3.1.0 - v3.1.19** >= 7.1.26 and 7.2      |
+|                   | * |PHP| for **v3.1.20+** >= 7.1.26 < 7.4                |
+|                   | * PHP CLI, the same version as for the web server       |
++-------------------+---------------------------------------------------------+
+| *PHP Settings*    | Few updates to default PHP configuration settings       |
+|                   | should be done in php.ini for the web server and        |
+|                   | CLI:                                                    |
+|                   |                                                         |
+|                   | * date.timezone must be set                             |
+|                   | * detect_unicode must be disabled                       |
+|                   | * memory_limit should be 512M or above                  |
+|                   |                                                         |
+|                   | If the xdebug is installed (which is not                |
+|                   | recommended in the production setup):                   |
+|                   |                                                         |
+|                   | * xdebug.scream must be disabled                        |
+|                   | * xdebug.show_exception_trace must be disabled          |
+|                   | * xdebug.max_nesting_level above 100                    |
+|                   |                                                         |
+|                   | By default, max_execution_time value equals 30          |
+|                   | seconds. In case of using the **Schema update**         |
+|                   | option, it is recommended to increase this value.       |
+|                   |                                                         |
++-------------------+---------------------------------------------------------+
+| *PHP Extensions*  | * ctype                                                 |
+|                   | * curl                                                  |
+|                   | * fileinfo                                              |
+|                   | * gd                                                    |
+|                   | * intl (ICU library 4.4 and above)                      |
+|                   | * json                                                  |
+|                   | * mbstring                                              |
+|                   | * openssl                                               |
+|                   | * mysql                                                 |
+|                   | * pcre                                                  |
+|                   | * simplexml                                             |
+|                   | * tokenizer                                             |
+|                   | * xml                                                   |
+|                   | * zip                                                   |
+|                   | * imap                                                  |
++-------------------+---------------------------------------------------------+
+| *Database*        | * |MySQL| 5.7                                           |
+|                   |                                                         |
+|                   | .. note:: The latest version of `mariaDB` may be        |
+|                   |    used at one's own risk. Oro applications are         |
+|                   |    not tested with `mariaDB`, and thus the correct      |
+|                   |    operation cannot be guaranteed.                      |
++-------------------+---------------------------------------------------------+
+| *Process Control* | * |Supervisor|  or alternative                          |
++-------------------+---------------------------------------------------------+
+| *Assets*          | * |Node.js| used for JS assets minification             |
+|                   |   and SCSS assets build.                                |
++-------------------+---------------------------------------------------------+
 
 .. note::
 
