@@ -45,10 +45,11 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   |                                                         |
 |                   | * date.timezone must be set                             |
 |                   | * detect_unicode must be disabled                       |
-|                   | * memory_limit should be 512M or above                  |
+|                   | * memory_limit should be 1Gb or above                   |
 |                   |                                                         |
-|                   | If the xdebug is installed (which is not                |
-|                   | recommended in the production setup):                   |
+|                   | Depending on the debugging tools and extensions         |
+|                   | used during development, the memory_limit may be        |
+|                   | even higher in the development environment)             |
 |                   |                                                         |
 |                   | * xdebug.scream must be disabled                        |
 |                   | * xdebug.show_exception_trace must be disabled          |
