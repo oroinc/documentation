@@ -22,7 +22,7 @@ Deploy the Solution
     .. image:: /img/backend/setup/gcp/oro_solution_settings.png
        :alt: The details page of the Oro solution settings
 
-4. You can also select the image version, with or without demo data. The application with demo data provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master and web catalogs. You can also explore the storefront using one of the pre-configured demo user roles. Sign in either as a guest user, a buyer (Email Address: BrandaJSanborn@example.org ; Password: BrandaJSanborn@example.org), or a manager (Email Address: AmandaRCole@example.org ; Password: AmandaRCole@example.org).
+4. You can also select the image version, with or without demo data. The application with demo data provides all the necessary information for you to test the application, such as a preconfigured list of customers, products, submitted orders, quotes, the structured master and web catalogs. You can also explore the storefront using one of the pre-configured demo user roles. Sign in either as a guest user, a buyer (use *BrandaJSanborn@example.org* both as your login and password), or a manager (use *AmandaRCole@example.org* both as your login and password).
 
     .. image:: /img/backend/setup/gcp/oro_solution_image_version.png
        :alt: Selecting the image version
