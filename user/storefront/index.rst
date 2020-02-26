@@ -16,6 +16,8 @@ The following guide is intended as an introduction to the OroCommerce *default* 
 
 .. hint:: Navigate the left-panel menu to find the content you are interested in, or use the search bar above.
 
+If you are working with the OroCommerce application with demo data, you can explore all the features and capabilities that the storefront provides with preconfigured list of customers, products, submitted orders, the structured master and web catalogs. For that, sign into the storefront using one of the predefined demo user roles, such as a guest user, a buyer (use *BrandaJSanborn@example.org* both as your login and password), or a manager (use *AmandaRCole@example.org* both as your login and password).
+
 Before you proceed, consider watching the following media library tutorials:
 
 * |Set Up Your Website Storefront – Buyer’s Perspective|. It guides you through the storefront features and possibilities available in the storefront to both guest and authenticated users. The highlights of this video tutorial include:
