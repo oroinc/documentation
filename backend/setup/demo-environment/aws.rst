@@ -19,7 +19,7 @@ Every AMI (Amazon Machine Image) contains an installed Oro Application along wit
    "**OS**","CentOS 7"
    "**Web server**","Nginx v.1.12"
    "**Database**","MySQL 5.7"
-   "**PHP**","PHP-FPM and PHP CLI v.7.1"
+   "**PHP**","PHP-FPM and PHP CLI v.7.3"
    "**Other tools**","NodeJS v.12, Git v.2.7, Composer v.1.9"
 
 .. note: This deployment configuration is suitable for development or testing environments and for applications with a relatively small
@@ -146,8 +146,8 @@ with username **admin** and AWS **<Instance ID>** as a password.
 Access with SSH
 ^^^^^^^^^^^^^^^
 
-To connect to the EC2 instance using SSH, use the key pair file that you have downloaded previously and the ubuntu
-**username**.
+To connect to the EC2 instance using SSH, use the key pair file that you have downloaded previously and the **centos**
+username.
 
 1. Change the directory to the one where the .pem key file is stored.
 
@@ -171,7 +171,7 @@ To connect to the EC2 instance using SSH, use the key pair file that you have do
 
     .. code:: bash
 
-        ssh -i /path/to/file/filenamewithkeys.pem ubuntu@<Public DNS>
+        ssh -i /path/to/file/filenamewithkeys.pem centos@<Public DNS>
 
 For additional information, please see the AWS guide |Connecting to Your Linux Instance Using SSH|.
 
