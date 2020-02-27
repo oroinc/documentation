@@ -9,8 +9,8 @@ Warehouses per Website
 
 To enable and prioritize warehouses per website:
 
-1. Navigate to **System > User Management > Organizations** in the main menu.
-2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
+1. Navigate to **System > Websites** in the main menu.
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Inventory > Warehouses** in the menu to the left.
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
