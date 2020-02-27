@@ -63,10 +63,10 @@ You have two options to define your custom access control lists:
    .. code-block:: php
        :linenos:
 
-       // src/AppBunde/Controller/TaskController.php
+       // src/AppBundle/Controller/TaskController.php
        namespace AppBundle\Controller;
 
-       use AppBunde\Entity\Task;
+       use AppBundle\Entity\Task;
        use Oro\Bundle\SecurityBundle\Annotation\Acl;
        use Symfony\Bundle\FrameworkBundle\Controller\Controller;
        use Symfony\Component\HttpFoundation\Request;
@@ -125,26 +125,26 @@ You have two options to define your custom access control lists:
    .. code-block:: yaml
        :linenos:
 
-       # src/AppBunde/Resources/config/oro/acls.yml
+       # src/AppBundle/Resources/config/oro/acls.yml
        acls:
            app_task_create:
                type: entity
-               class: AppBunde\Entity\Task
+               class: AppBundle\Entity\Task
                permission: CREATE
 
            app_task_delete:
                type: entity
-               class: AppBunde\Entity\Task
+               class: AppBundle\Entity\Task
                permission: DELETE
 
            app_task_edit:
                type: entity
-               class: AppBunde\Entity\Task
+               class: AppBundle\Entity\Task
                permission: EDIT
 
            app_task_view:
                type: entity
-               class: AppBunde\Entity\Task
+               class: AppBundle\Entity\Task
                permission: VIEW
 
 .. sidebar:: Security Actions that Are not Related to an Entity
@@ -156,8 +156,8 @@ You have two options to define your custom access control lists:
     .. code-block:: php
         :linenos:
 
-        // src/AppBunde/Controller/PageController.php
-        namespace AppBunde\Controller;
+        // src/AppBundle/Controller/PageController.php
+        namespace AppBundle\Controller;
 
         use Oro\Bundle\SecurityBundle\Annotation\Acl;
         use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -184,12 +184,12 @@ You have two options to define your custom access control lists:
     .. code-block:: yaml
         :linenos:
 
-        # src/AppBunde/Resources/config/oro/acls.yml
+        # src/AppBundle/Resources/config/oro/acls.yml
         acls:
             app_static_pages:
                 type: action
                 bindings:
-                    class: AppBunde\Controller\PageController
+                    class: AppBundle\Controller\PageController
                     method: showAction
 
     .. seealso::
@@ -212,7 +212,7 @@ PHP code you can use the ``isGranted()`` method of the ``security.authorization_
 
     $authorizationChecker = $this->get('security.authorization_checker');
 
-    if ($authorizationChecker->isGranted('app_task_create')) {
+    if ($authorizationChecker->isGranted('app_static_pages')) {
         // do something when the user is granted permissions for the app_static_pages ACL
     }
 
@@ -225,8 +225,8 @@ You can set the second parameter to check access on Object level (with Access Le
 
     $authorizationChecker = $this->get('security.authorization_checker');
 
-    if ($authorizationChecker->isGranted('app_task_update', $taskEntity)) {
-        // do something when the user is granted permissions for the app_static_pages ACL
+    if ($authorizationChecker->isGranted('app_task_edit', $taskEntity)) {
+         // do something when the user is granted permissions for the app_task_edit ACL of the entity in $taskEntity
     }
 
 In case if you does not have proper ACL annotation, you can set the first parameter as the
@@ -240,7 +240,7 @@ permission name you want to check:
     $authorizationChecker = $this->get('security.authorization_checker');
 
     if ($authorizationChecker->isGranted('EDIT', $taskEntity)) {
-        // do something when the user is granted permissions for the app_static_pages ACL
+        // do something when the user is granted EDIT permission for the $taskEntity
     }
 
 This example will work the same as before. It will check an EDIT permission for the Task instance object.
@@ -250,19 +250,19 @@ However, there are ways to make this checks in different parts of your applicati
 Hiding Menu Items
 ~~~~~~~~~~~~~~~~~
 
-Use the ``aclResourceId`` option to hide navigation items from users who are not granted to access
+Use the ``acl_resource_id`` option to hide navigation items from users who are not granted to access
 the action being linked. The value of this option is the name of the ACL to check for:
 
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBunde/Resources/config/oro/navigation.yml
+    # src/AppBundle/Resources/config/oro/navigation.yml
     menu_config:
         items:
             task_list:
                 label: Tasks
                 route: app_task_index
-                aclResourceId: app_task_view
+                acl_resource_id: app_task_view
 
 Protecting Controllers Refering to Existing ACLs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -274,10 +274,10 @@ to an existing access control list using the ``@AclAncestor`` annotation:
 .. code-block:: php
     :linenos:
 
-    // src/AppBunde/Controller/TaskController.php
+    // src/AppBundle/Controller/TaskController.php
     namespace AppBundle\Controller;
 
-    use AppBunde\Entity\Task;
+    use AppBundle\Entity\Task;
     use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
