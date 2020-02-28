@@ -64,8 +64,9 @@ value is **5 0 \* \* \***.
     use Oro\Bundle\CronBundle\Command\CronCommandInterface;
     use Symfony\Component\Console\Input\InputInterface;
     use Symfony\Component\Console\Output\OutputInterface;
+    use Symfony\Component\Console\Command\Command;
 
-    class DemoCommand implements CronCommandInterface
+    class DemoCommand extends Command implements CronCommandInterface
     {
         public function getDefaultDefinition()
         {
