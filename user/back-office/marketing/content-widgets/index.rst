@@ -14,6 +14,7 @@ There are three content widget types:
 * A Contact Us form
 * A Copyright
 * A Product Mini Block
+* A Product Segment
 
 Each of these widget types has a different set of options.
 
@@ -66,9 +67,14 @@ To create a new content widget:
     .. image:: /user/img/marketing/content_widgets/copyright.png
        :alt: Copyright content widget form
 
-   * **Product Mini Block** - Enables you to add a block with product information with or without prices and the **Add to Shopping List** button.
+   * **Product Mini Block** - Enables you to add a block with product information with or without prices, and/or the **Add to Shopping List** button.
 
      .. image:: /user/img/marketing/content_widgets/mini-block.png
+        :alt: A product mini block form
+
+   * **Product Segment** - Enables you to add a product segment content widget, and configure how many max and min items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Only segments with type *Product* are listed in the **Segment** field dropdown. You can modify an existing :ref:`segment <user-guide--business-intelligence--filters-segments>` or create a new one under **Reports&Segments > Manage Segments**.
+
+     .. image:: /user/img/marketing/content_widgets/product-segment.png
         :alt: A product mini block form
 
 4. Once you have provided all widget-specific details, click **Save and Close**.
