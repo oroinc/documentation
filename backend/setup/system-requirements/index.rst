@@ -44,7 +44,11 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   |                                                   |
 |                   | * date.timezone must be set                       |
 |                   | * detect_unicode must be disabled                 |
-|                   | * memory_limit should be 512M or above            |
+|                   | * memory_limit should be 1Gb or above             |
+|                   |                                                   |
+|                   | Depending on the debugging tools and extensions   |
+|                   | used during development, the memory_limit may be  |
+|                   | even higher in the development environment)       |
 |                   |                                                   |
 |                   | If the xdebug is installed (which is not          |
 |                   | recommended in the production setup):             |
@@ -83,7 +87,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| used for JS assets minification       |
+| *Assets*          | * |Node.js| v.12 used for JS assets minification  |
 |                   |   and SCSS assets build.                          |
 +-------------------+---------------------------------------------------+
 
@@ -101,7 +105,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *Database*       | * |PostgreSQL| / |EnterpriseDB| 9.6                 |
 +------------------+-----------------------------------------------------+
-| *Search Index*   | * |Elasticsearch| 6.*                               |
+| *Search Index*   | * |Elasticsearch| 7.*                               |
 +------------------+-----------------------------------------------------+
 | *Job Queue*      | * |RabbitMQ| 3.5.8 and above with Erlang/OTP        |
 |                  |   version 18.0 and higher.                          |
