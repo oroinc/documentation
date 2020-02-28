@@ -26,7 +26,7 @@ Access Levels
 
 Access can be granted to a user for a certain resource on several levels. The lowest level is
 the *User* level. Being on this level means that users can only access resources that have been
-assigned to them. At the other end of the hierarchy is the *System* level. Users at this level have
+assigned to them. At the other end of the hierarchy is the *Global* level. Users at this level have
 the permission to access all records within the whole system without exception. The security bundle
 comes with the following five levels (ordered up from the bottom of the hierarchy):
 
