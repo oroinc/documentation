@@ -27,7 +27,7 @@ Mastering the application menu is a two-step process:
 
 The |OroNavigationBundle| automatically processes a YAML configuration file which is named
 ``navigation.yml`` when it is placed in the ``Resources/config/oro`` directory of a registered bundle.
-The menu configuration needs to be placed under the ``oro_menu_config`` tree.
+The menu configuration needs to be placed under the ``menu_config`` tree.
 
 .. _book-navigation-create-menu-item:
 

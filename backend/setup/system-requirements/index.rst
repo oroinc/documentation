@@ -48,7 +48,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   |                                                   |
 |                   | Depending on the debugging tools and extensions   |
 |                   | used during development, the memory_limit may be  |
-|                   | even higher in the development environment)       |
+|                   | even higher in the development environment        |
 |                   |                                                   |
 |                   | If the xdebug is installed (which is not          |
 |                   | recommended in the production setup):             |

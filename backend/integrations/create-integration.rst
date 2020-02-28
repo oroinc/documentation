@@ -99,8 +99,8 @@ This interface requires four methods to be implemented:
     The translation key used to display the transport label in the UI.
 
 ``getSettingsFormType()``
-    The name (as returned by ``FormInterface::getName()``) of the form type that is used to let the
-    user configure transport specific settings (for example, access credentials for API endpoints).
+    The FQCN of the form type that is used to let the user configure transport specific settings
+    (for example, access credentials for API endpoints).
 
 ``getSettingsEntityFQCN()``
     The fully-qualified class name of the entity that stores the settings configured through the
