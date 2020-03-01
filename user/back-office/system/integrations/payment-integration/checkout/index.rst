@@ -13,11 +13,16 @@ PayPal Payflow Gateway with No CVV Required
 .. image:: /user/img/system/integrations/checkout/checkout_payments_pro_no_cvv.png
    :width: 400px
 
+.. note:: If the order total is zero, the PayPal Payment method will be hidden and unavailable for selection.
+
 PayPal Payments Pro with Require CVV Entry Enabled
 --------------------------------------------------
 
 .. image:: /user/img/system/integrations/checkout/checkout_payments_pro_cvv.png
    :width: 400px
+
+.. note:: If the order total is zero, the PayPal Payment method will be hidden and unavailable for selection.
+
 
 PayPal Payments Pro Express Checkout
 ------------------------------------
@@ -27,12 +32,18 @@ PayPal Payments Pro Express Checkout
 .. image:: /user/img/system/integrations/checkout/checkout_payments_pro_express.png
    :width: 400px
 
+.. note:: If the order total is zero, the PayPal Payment method will be hidden and unavailable for selection.
+
+
 PayPal Payments Express Checkout
 --------------------------------
 
 .. image:: /user/img/system/integrations/checkout/checkout_paypal_express.png
 
 .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the |Oro PayPal Express Integration| package.
+
+.. note:: If the order total is zero, the PayPal Payment method will be hidden and unavailable for selection.
+
 
 Authorize.Net
 -------------
