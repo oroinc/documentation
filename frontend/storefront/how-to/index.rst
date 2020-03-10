@@ -22,6 +22,7 @@ Change Corporate Identity:
         how-to-change-fonts
         how-to-change-media-breakpoints
         how-to-change-offsets
+        how-to-replace-product-images-placeholders
 
 ..    change_homepage
     configure-product-details-page

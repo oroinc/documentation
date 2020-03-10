@@ -14,7 +14,6 @@ Learn how to configure localization options, currency and tracking, as well and 
   * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
   * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
   * :ref:`Currency <admin-configuration-currency-org>`
-  * :ref:`User Settings <organization-user-settings>`
   * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
 .. toctree::
@@ -25,6 +24,5 @@ Learn how to configure localization options, currency and tracking, as well and 
    organization-display-settings
    organization-email-settings
    organization-currency
-   organization-user-settings
    organization-upload-settings
    integrations/index

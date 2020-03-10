@@ -109,7 +109,7 @@ Impersonate a Customer User
 
 For troubleshooting purposes, user impersonation allows back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user. Such back-office user is redirected to the website assigned to the customer user that they are impersonating (i.e. the website where the customer user registered).
 
-.. hint:: Before proceeding, make sure this feature is enabled in the system configuration :ref:`globally <system-configuration-user-impersonation>` or :ref:`per organization <organization-user-settings>`.
+.. hint:: Before proceeding, make sure this feature is enabled in the system configuration :ref:`globally <system-configuration-user-impersonation>` or :ref:`per organization <organization-user-impersonation>`.
 
 You can perform impersonation from the customer user grid, or from the view page of the selected customer.
 
