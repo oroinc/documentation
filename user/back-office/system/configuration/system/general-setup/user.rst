@@ -68,19 +68,3 @@ Configure Two-Factor Authentication
   "**Code Validity Period**","This option determines how long the authentication code will be valid. If not used within the validity period, the code expires and the user must log in again. By default, the option is set to 1 hour."
   "**Code Length**","This option determines the number of characters in authentication code. By default, the option is set to 6."
 
-.. _system-configuration-user-impersonation:
-
-Configure User Impersonation
-----------------------------
-
-.. note:: This feature is only available in the Enterprise edition.
-
-.. csv-table::
-  :widths: 10, 30
-
-  "**Enable User Impersonation**","This option enables back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront as a specific customer user. This option is disabled by default. User impersonation is also available at :ref:`organization level <organization-user-settings>`.
-
-                                    .. image:: /user/img/system/config_system/user_impersonation.png
-                                       :alt: User impersonation config option"
-
-
