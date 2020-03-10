@@ -13,7 +13,7 @@ This topic assumes that you have previously created a custom application, a bund
 Replace Favicons 
 ----------------
 
-1. Put new storefront favicon images into your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/favicons/``):
+1. Place new storefront favicon images into your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/favicons/``):
 
     The main favicon image:
 
@@ -66,19 +66,23 @@ Replace Favicons
 
 2. Specify the main favicon image in your :ref:`theme configuration file <dev-doc-frontend-layouts-theming-definition>`:
 
-   .. code-block:: yaml
-      :linenos:
+    If a favicon image is placed into another bundle, please, use the following syntax:
 
-      // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
-      icon: '@AppBundle/Resources/public/default/favicons/favicon.ico'
+       .. code-block:: yaml
+          :linenos:
 
-   or
+          // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
+          icon: '@AnotherBundle/Resources/public/default/favicons/favicon.ico'
 
-   .. code-block:: yaml
-      :linenos:
+    For more info, follow |Bundle Templates|.
 
-      // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
-      icon: 'bundles/app/default/favicons/favicon.ico'
+    If a favicon image is in the same bundle, use the syntax:
+
+       .. code-block:: yaml
+          :linenos:
+
+          // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
+          icon: 'bundles/app/default/favicons/favicon.ico'
 
 3. Create a :ref:`Layout Update <dev-doc-frontend-layouts-layout-updates>` file to replace other specific favicons in the storefront:
 
@@ -153,7 +157,7 @@ Replace Favicons
 
 4. Rebuild the assets:
 
-   Clear the cache to reload Yaml configuration files:
+   Clear the cache to reload the Yaml configuration files:
 
    .. code-block:: bash
 
@@ -165,37 +169,27 @@ Replace Favicons
 
       php bin/console assets:install --symlink
 
+
 Replace a Logo
 --------------
 
-1. Put the new logo image to your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/images/logo.png``).
+1. Place a new logo image to your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/images/logo.png``).
 
-2. Create the :ref:`Layout Update <dev-doc-frontend-layouts-layout-updates>` file to replace the logo block source code in your theme:
+2. Specify the main favicon image in your :ref:`theme configuration file <dev-doc-frontend-layouts-theming-definition>`:
 
    .. code-block:: yaml
       :linenos:
 
-       // src/AppBundle/Resources/views/layouts/{your_theme_id}/logo.yml
-       layout:
-          actions:
-              - '@setBlockTheme':
-                  themes: 'logo.html.twig'
+      // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
+      icon: '@AppBundle/Resources/public/default/logo/logo.svg'
 
-3. Create a twig template file with the new adjusted logo block:
+   or
 
-    .. code-block:: twig
-       :linenos:
+   .. code-block:: yaml
+      :linenos:
 
-        {# src/AppBundle/Resources/views/layouts/{your_theme_id}/logo.html.twig #}
-        {% block _logo_widget %}
-           {{ block_widget(block, {'attr_img': {'src': '/bundles/app/default/images/logo.png'}}) }}
-        {% endblock %}
-
-        {% block _logo_print_widget %}
-            {{ block_widget(block, {'attr_img': {'src': '/bundles/app/default/images/logo.png'}}) }}
-        {% endblock %}
-
-4. Rebuild the assets as described in the `Replace Favicons`_ section above.
+      // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
+      icon: 'bundles/{your_theme_id}/images/logo/logo.svg'
 
 
 .. include:: /include/include-links-dev.rst

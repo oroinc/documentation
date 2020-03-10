@@ -5167,6 +5167,10 @@ Links (Dev)
 
    <a href="https://webpack.js.org/configuration/resolve/#resolvealias" target="_blank">aliases declaration</a>
 
+.. |Bundle Templates| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/templates.html#bundle-templates" target="_blank">Bundle Templates</a>
+
 .. |Google Cloud Marketplace| raw:: html
 
    <a href="https://cloud.google.com/marketplace" target="_blank">Google Cloud Marketplace</a>
