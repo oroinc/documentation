@@ -19,7 +19,7 @@ Every AMI (Amazon Machine Image) contains an installed Oro Application along wit
    "**OS**","CentOS 7"
    "**Web server**","Nginx v.1.12"
    "**Database**","MySQL 5.7"
-   "**PHP**","PHP-FPM and PHP CLI v.7.1"
+   "**PHP**","PHP >=7.3.13"
    "**Other tools**","NodeJS v.12, Git v.2.7, Composer v.1.9"
 
 .. note: This deployment configuration is suitable for development or testing environments and for applications with a relatively small

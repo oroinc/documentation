@@ -26,10 +26,10 @@ We are demonstrating the installation process using certain versions of the reco
    "**OS**","|recommended_OS| (recommended OS)"
    "**Web server**","Nginx v.1.12"
    "**Database**","PostgreSQL v.9.6"
-   "**Search engine**","Elasticsearch v.6.*"
+   "**Search engine**","Elasticsearch v.7.*"
    "**Message queue brocker**","RabbitMQ v.3.6"
-   "**PHP**","PHP-FPM and PHP CLI v.7.1"
-   "**Other tools**","Redis v.4.0, NodeJS v.6.14, Git v.1.8.3, Composer v.1.6.4, Supervisord v.3.3"
+   "**PHP**","PHP >=7.3.13"
+   "**Other tools**","Redis v.4.0, NodeJS >=v.12.0, Git v.1.8.3, Composer v.1.6.4, Supervisord v.3.3"
 
 .. note:: Please refer to the :ref:`System Requirements <system-requirements>` for the complete list of the alternatives of the required environment components and their supported versions.
 

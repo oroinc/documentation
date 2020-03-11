@@ -26,8 +26,8 @@ We are demonstrating the installation process using certain versions of the reco
    "**OS**","|recommended_OS| (recommended OS)"
    "**Web server**","Nginx v.1.12"
    "**Database**","MySQL v.5.7"
-   "**PHP**","PHP-FPM and PHP CLI v.7.1"
-   "**Other tools**","NodeJS v.6.14, Git v.1.8.3, Composer v.1.6.4, Supervisord v.3.3"
+   "**PHP**","PHP >=7.3.13"
+   "**Other tools**","NodeJS >=v.12.0, Git v.1.8.3, Composer v.1.6.4, Supervisord v.3.3"
 
 .. begin_common_ce_part_2
 
