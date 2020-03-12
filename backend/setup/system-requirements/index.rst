@@ -128,7 +128,7 @@ Optional recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 * |Tidy PHP extension| should be installed to make sure that HTML is correctly converted into a text representation
-* |Redis| - could be used for more efficient application caching. Supported versions of Redis from 2.0 to 3.2
+* |Redis| - could be used for more efficient application caching. Supported versions of Redis >=5.*.
 * The performance of :ref:`MySQL can be optimized <mysql-optimization>` by adjusting the configuration
 
 
