@@ -220,6 +220,9 @@ htmlhelp_basename = 'TheOroCommercedoc'
 
 html_copy_source = False
 
+# Disable permalinks
+html_add_permalinks = ''
+
 def setup(app):
     app.add_stylesheet('https://use.fontawesome.com/releases/v5.2.0/css/all.css')
 #    app.add_stylesheet('css/custom.css')
