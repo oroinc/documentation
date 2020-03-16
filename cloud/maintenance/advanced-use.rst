@@ -256,6 +256,17 @@ Webserver configuration can be modified, as illustrated below:
 
 .. note:: Allowing access via WAF does not affect simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connectios for a client IP or URI on the server.
 
+Profile application console commands via Blackfire
+--------------------------------------------------
+You can profile application console commands:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli app:console [command] --blackfire-enable --blackfire-client-id [client-id] --blackfire-client-token [client-token] [--blackfire-env env] [--blackfire-samples count]
+
+.. note:: Before using functionality you need to enable blackfire via orocloud.yaml.
+
 Mail Settings
 -------------
 You can customize mail settings for the application:
