@@ -3,6 +3,8 @@
 Promotions
 ==========
 
+.. important:: This section is a part of the :ref:`Promotion Management <concept-guides--promotion-management>` topic that provides the general understanding of the promotions and coupons concept.
+
 OroCommerce’s powerful promotions engine allows sellers to generate promotions, coupons and discounts for incentivizing customers to place new orders. In addition, promotions help drive traffic, increase conversions, and induce the desired customer activity.
 
 This topic introduces you to the key concepts of loyalty programs in OroCommerce and illustrates how to:

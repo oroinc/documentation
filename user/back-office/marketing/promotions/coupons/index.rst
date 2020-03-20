@@ -5,6 +5,8 @@
 Coupons
 =======
 
+.. important:: This section is a part of the :ref:`Promotion Management <concept-guides--promotion-management>` topic that provides the general understanding of the promotions and coupons concept.
+
 As a promotional tool, coupons can be generated and distributed to customers to be redeemed for a discount when purchasing goods online. In your Oro application, coupons are always linked to promotions, although they can be created separately and linked to a promotion when the need arises.
 
 The following topics will explore how to create, generate, and manage coupons in your Oro application:
