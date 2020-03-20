@@ -6,8 +6,9 @@
 Price Lists
 ===========
 
-Price list management is one of the most important aspects of any e-Commerce business and even more so for Business to Business (B2B) e-Commerce
-companies. B2B businesses require a high level of flexibility to support the most advanced use cases, including a highly structured approach to account management and versatile sales processes that are often customized to the needs of specific customer groups or large individual accounts. This is why OroCommerce has one of the most advanced price list management features.
+.. important:: This section is a part of the :ref:`Price Management <user-guide--pricing>` topic that provides the general understanding of pricing concept in Oro applications.
+
+Price list management is one of the most important aspects of any e-Commerce business and even more so for Business to Business (B2B) e-Commerce companies. B2B businesses require a high level of flexibility to support the most advanced use cases, including a highly structured approach to account management and versatile sales processes that are often customized to the needs of specific customer groups or large individual accounts. This is why OroCommerce has one of the most advanced price list management features.
 
 Overall, price management enables you to:
 
@@ -34,9 +35,7 @@ Learn more on price lists in the following topics:
 
 **Related Topics**
 
-* :ref:`Price Management <user-guide--pricing>`
-* :ref:`Understand Pricing in OroCommerce <user-guide--pricing--overview>`
-* :ref:`Price Calculation in the Storefront <user-guide--pricing-calculation>`
+* :ref:`Price Management Concept Guide <user-guide--pricing>`
 
 
 

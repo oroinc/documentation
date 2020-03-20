@@ -42,10 +42,3 @@ To restore the default price storage structure:
 2. To reorganize storage and join sharded price tables into one, run the following command:
          
 	``oro:price-lists:pl-storage-reorganize prices --strategy=base``
-
-
-**Related Articles**
-
-* :ref:`Optimize Website Indexation and Price Recalculation <admin-website-index-and-price-calc>`
-
-* :ref:`Pricing Configuration <pricing-configuration>`
