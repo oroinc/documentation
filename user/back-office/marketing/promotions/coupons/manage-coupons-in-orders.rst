@@ -1,5 +1,7 @@
 :oro_documentation_types: OroCommerce
 
+.. _user-guide--marketing--promotions--coupons--manage:
+
 Manage Coupons in Orders
 ------------------------
 
