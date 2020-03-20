@@ -52,6 +52,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    shipping-configuration/index
    localization/index
    marketing-automation/index
+   promotions/index
    consents/index
 
 .. include:: /include/include-images.rst
