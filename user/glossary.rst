@@ -182,3 +182,24 @@ Glossary
 
    Flat Rate
       A fixed fee that is charged for a shipping service. A flat rate is used to specify one specific price to ship orders. This fee remains the same for everyone in all cases.
+
+   Tier Price
+      A price determined by the system for the specified product quantity. Price tiers for a selected product can be derived from the same price list, or from the different price lists if they allow price merge. For example, you set the following prices in the price list:
+
+      .. image:: /user/img/glossary/price_per_tier.png
+
+      * If you buy 9 or less item, it would cost you $44.99 for 1 item
+      * If you buy from 10 to 19 items, the price per item is lowered to $42.74 per item
+      * If you buy from 20 to 49 items, the price per item is lowered further to $40.49, and so on
+
+   Listed Price
+      The pricing assigned to the available product units and their variations of quantity.
+
+      .. image:: /user/img/glossary/listed_price.png
+
+   Your Price
+      The :term:`Listed Price` under your current :term:`tier pricing <Tier Price>` configuration. When the product quantity is changed, Your Price is recalculated to match the tier pricing set for the selected quantity.
+
+      .. image:: /user/img/glossary/your_price.png
+
+

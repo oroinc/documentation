@@ -8,6 +8,8 @@ Pricing
 
 .. begin
 
+.. important:: This section is a part of the :ref:`Price Management <user-guide--pricing>` topic that provides the general understanding of pricing concept in Oro applications.
+
 Global pricing configuration helps you:
 
 * Enable/disable the default OroCommerce pricing management system.
@@ -22,7 +24,7 @@ Global pricing configuration helps you:
 
 * Select the currency that is shown by default in the OroCommerce storefront and back-office.
 
-.. note:: The website level configuration has higher priority and overrides these configuration settings. Customer group configuration overrides configuration on the website level. Custom configuration on the customer level has the highest priority.
+.. note:: The :ref:`website level <sys--website--edit--price-lists>` configuration has higher priority and overrides these configuration settings. :ref:`Customer group <customers--customer-groups--edit--price-lists>` configuration overrides configuration on the website level. Custom configuration on the :ref:`customer level <customers--customer-groups--edit--price-lists>` has the highest priority.
 
 To change the default global pricing settings:
 
