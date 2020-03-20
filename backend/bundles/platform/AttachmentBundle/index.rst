@@ -24,4 +24,5 @@ Related Documentation
 .. toctree::
    :hidden:
 
-   attachment_bundle_config
+   attachment-bundle-config
+   image-placeholder-config

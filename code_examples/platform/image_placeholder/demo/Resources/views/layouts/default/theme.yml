@@ -1,0 +1,3 @@
+# Resources/views/layouts/default/theme.yml
+image_placeholders:
+    product: '/bundles/demobundle/images/demo_placeholder_theme.png'

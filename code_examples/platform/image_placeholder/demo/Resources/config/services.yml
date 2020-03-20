@@ -1,0 +1,20 @@
+# Resources/config/services.yml
+services:
+
+    acme_demo.provider.demo_image_placeholder.config:
+       parent: oro_layout.provider.image_placeholder.config.abstract
+       public: false
+       arguments:
+           - 'acme_demo.provider.demo_image_placeholder.config.param'
+
+    acme_demo.provider.demo_image_placeholder.theme:
+       parent: oro_layout.provider.image_placeholder.theme.abstract
+       public: false
+       arguments:
+           - 'product'
+
+    acme_demo.provider.demo_image_placeholder.default:
+        parent: oro_layout.provider.image_placeholder.default.abstract
+        public: false
+        arguments:
+            - '/bundles/demobundle/images/demo_placeholder_default.png'

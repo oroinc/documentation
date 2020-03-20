@@ -1,0 +1,9 @@
+{# Resources/views/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig #}
+
+{# ... #}
+{% set productImage = product.imagesByType('listing').first.image|default(null) %}
+{% set productImageUrl = product_filtered_image(productImage, product_image_size) %}
+
+<picture>
+    <img src="{{ productImageUrl }}" alt="Product Image" itemprop="image">
+</picture>

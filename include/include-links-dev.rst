@@ -5187,8 +5187,10 @@ Links (Dev)
 
    <a href="https://docs.microsoft.com/en-us/archive/blogs/azuresecurity/pro-tip-on-sending-email-from-azure-virtual-machines-to-external-domains" target="_blank">Azure blocking port 25</a>
 
+.. |image_placeholder.yml| raw:: html
 
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/config/image_placeholder.yml" target="_blank">image_placeholder.yml</a>
 
+.. |System Configuration| raw:: html
 
-
-
+  <a href="https://doc.oroinc.com/backend/system-configuration/#creating-configuration-forms" target="_blank">System Configuration</a>

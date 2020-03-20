@@ -11,6 +11,9 @@
         }
     ],
     "autoload": {
+        "psr-4": {
+            "ACME\\Bundle\\DemoBundle\\": "image_placeholder/demo/"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
