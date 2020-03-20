@@ -23,5 +23,12 @@ Related Documentation
 * |Set Up a Price Storage|
 * |Replace the Default Storage|
 
+.. toctree::
+   :hidden:
+   :titlesonly:
+
+   optimize-index-and-price-calculation
+   price-list-sharding
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
