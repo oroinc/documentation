@@ -22,7 +22,7 @@ Perform the following steps to override DefaultImagePlaceholderProvider that is 
 
 1. Create an appropriate service definition.
 
-    .. oro_integrity_check:: f29b6549abd6238cbff678a9bf3319d94cf4cdca
+    .. oro_integrity_check:: f0c09880fa1116a4825ca0a82736b57c0e99f690
 
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
             :language: yaml
@@ -76,7 +76,7 @@ To do this, perform the following:
 
 3. Create ``theme.yml``
 
-    .. oro_integrity_check:: 053baa3560ef2e4eafe0fbc326aff9abb25eb015
+    .. oro_integrity_check:: bb2a8417ea2afac9c33a17382665b4015f52d70a
 
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/theme.yml
             :language: yaml

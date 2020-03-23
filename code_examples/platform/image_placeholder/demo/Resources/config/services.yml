@@ -17,4 +17,4 @@ services:
         parent: oro_layout.provider.image_placeholder.default.abstract
         public: false
         arguments:
-            - '/bundles/demobundle/images/demo_placeholder_default.png'
+            - '/bundles/acmedemo/images/demo_placeholder_default.png'
