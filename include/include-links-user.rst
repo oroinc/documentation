@@ -223,9 +223,9 @@ Links (User)
 
    <a href="https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations" target="_blank">how to create a shipping integration in OroCommerce</a>
 
-.. |how to create payment method integrations| raw:: html
+.. |how to set up payment method integrations| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-method-integrations" target="_blank">how to create payment method integrations</a>
+   <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-method-integrations" target="_blank">how to set up payment method integrations</a>
 
 .. |GDPR portal| raw:: html
 
@@ -718,3 +718,8 @@ Links (User)
 .. |Symfony Expression Language| raw:: html
 
    <a href="https://symfony.com/doc/4.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
+
+.. |OroCommerce's Extension Marketplace| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/" target="_blank">OroCommerce's Extension Marketplace</a>
+
