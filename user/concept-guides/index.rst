@@ -27,8 +27,6 @@ Complementary to the how-to approach of the Back-office section of the documenta
       <li><a class="tag-very-important" href="guests/">Guest Functions</a></li>
       <li><a class="" href="consents/add-consent/">Consents in the Storefront</a></li>
       <li><a class="tag-very-important" href="pricing/">Price Management</a></li>
-      <li><a class="" href="pricing/pricing-overview/#understanding-price-lists">Price Lists</a></li>
-      <li><a class="tag-important" href="pricing/calculation/">Price Calculation</a></li>
       <li><a class="" href="payment-configuration/">Payment Configuration</a></li>
       <li><a class="" href="shipping-configuration/">Shipping Configuration</a></li>
       <li><a class="tag-important" href="localization/">Storefront Localization</a></li>
