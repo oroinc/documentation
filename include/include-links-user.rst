@@ -223,9 +223,9 @@ Links (User)
 
    <a href="https://oroinc.com/b2b-ecommerce/media-library/create-tax-rules" target="_blank">Creating tax rules</a>
 
-.. |how to create a shipping integration in OroCommerce| raw:: html
+.. |how to set up a shipping integration in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations" target="_blank">how to create a shipping integration in OroCommerce</a>
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations" target="_blank">how to set up a shipping integration in OroCommerce</a>
 
 .. |how to set up payment method integrations| raw:: html
 
@@ -719,7 +719,12 @@ Links (User)
 
    <a href="https://symfony.com/doc/4.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
 
+.. |DPD| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-dpd-integration/#description" target="_blank">DPD</a>
+
 .. |OroCommerce's Extension Marketplace| raw:: html
 
    <a href="https://marketplace.oroinc.com/orocommerce/" target="_blank">OroCommerce's Extension Marketplace</a>
+
 

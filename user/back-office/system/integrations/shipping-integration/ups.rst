@@ -12,7 +12,7 @@ UPS Shipping Integration
 UPS shipping integration section describes the steps that are necessary to expose UPS as a shipping method in OroCommerce orders and quotes.
 
 .. note::
-   See a short demo on |how to create a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.
+   See a short demo on |how to set up a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

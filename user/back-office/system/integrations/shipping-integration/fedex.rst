@@ -12,7 +12,7 @@ FedEx is the largest multinational delivery service company that provides a vari
 This section describes the steps that are necessary to expose FedEx as a shipping method in OroCommerce orders and quotes.
 
 .. note::
-   See a short demo on |how to create a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.
+   See a short demo on |how to set up a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
