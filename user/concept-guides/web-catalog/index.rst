@@ -60,7 +60,7 @@ Every child node must be populated with :ref:`content variants <user-guide--mark
 * :ref:`Category page <user-guide--marketing--web-catalog--content-variant-category>` -- a direct link to products from a master catalog category
 * :ref:`Product Collection page <user-guide--marketing--web-catalog--content-variant-product-collection>` -- a dynamic collection of products that you filtered/selected manually or in bulk to be displayed for this page
 * :ref:`Landing page <user-guide--marketing--web-catalog--content-variant-landing page>` -- a direct link to a custom content page
-* **Resource Library** -- if you download a Resource Library Extension, you can add media content, such as news, banners, product review videos, safety specifications, etc.
+* **Resource Library** -- if you download a |Resource Library Extension|, you can add media content, such as news, banners, product review videos, safety specifications, etc.
 
 .. hint:: It is possible to add a custom content page and link it as a content variant, but this requires some customization effort.
 
@@ -213,5 +213,6 @@ Keeping the structure of the master catalog in Products helps adhere to a unifie
 * `Fundamental OroCommerce Online Course <https://oroinc.com/b2b-ecommerce/course/fundamental-orocommerce>`__
 
 
-
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
