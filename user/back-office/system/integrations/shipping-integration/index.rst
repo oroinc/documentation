@@ -6,18 +6,19 @@
 Manage Integrations: Shipping Method Integration
 ================================================
 
-.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the shipping concept in OroCommerce.
+.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 
 Create an Integration with a Shipping Service Provider
 ------------------------------------------------------
 
-Out of the box, you can create an integration with the following third-party providers (click the links for detailed guidance) to offer their shipping services for the quotes and orders placed using OroCommerce.
+Out-of-the-box, you can create an integration with the following third-party providers (click the links for detailed guidance) to offer their shipping services for the quotes and orders placed using OroCommerce.
 
 * :ref:`Flat Rate <doc--integrations--flat-rate>`
 * :ref:`UPS <doc--integrations--ups>`
 * :ref:`FedEx <doc--integrations--fedex>`
-* DPD
+* :ref:`DPD <doc--integrations--dpd>`
 
+.. hint:: Check out |OroCommerce's Extension Marketplace| to download other shipping services that you can pair with your OroCommerce applications.
 
 Delete a Shipping Integration
 -----------------------------
@@ -48,6 +49,8 @@ The shipping methods created due to this integration are no longer usable in Oro
 * :ref:`System Shipping Configuration <configuration--guide--commerce--configuration--shipping>`
 * :ref:`Shipping Rules Configuration <sys--shipping-rules>`
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 .. include:: /include/include-images.rst
    :start-after: begin
@@ -59,3 +62,4 @@ The shipping methods created due to this integration are no longer usable in Oro
    flat-rate
    ups
    fedex
+   dpd

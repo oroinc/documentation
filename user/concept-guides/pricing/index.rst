@@ -111,8 +111,8 @@ Based on the price lists priority that you have set for Customer A, the lumen he
 
 If we enable the Merge Allowed option for all price lists available for the Customer A, we combine them all together, allowing the system to fill the empty price tiers for the lumen headlamp from other price lists in the priority order. The price will then be displayed as follows, where the first four price tiers for *1 through 99* items are taken from the *Customer A PL* which has the highest priority. As the *Customer A PL* does not define the price for 100+ items, the system then searches for the relevant price in the second priority price list, the *Stock Clearance PL*. It does not specify the required price either. Only the third priority price list, the *Spring Sale 2020 Pl*, has the required price for 100+ items which is taken by the system to display in the storefront.
 
-   .. image:: /user/img/concept-guides/prices/merge_by_priority_example3.png
-      :scale: 80%
+.. image:: /user/img/concept-guides/prices/merge_by_priority_example3.png
+   :scale: 80%
 
 Price Lists
 -----------
@@ -130,7 +130,7 @@ Once the price list is created, and the price selection strategy is selected, yo
 
 You can activate and deactivate price lists manually or automatically, allowing to :ref:`display prices at scheduled times <user-guide--pricing--schedule-price-adjustments>`. You can add as many dates and times as necessary. This option is great for running a special sale or promotion campaign that occurs at a specified time. If no schedule is set, the price list is immediately visible to buyers. You can define multiple time slots as well.
 
-   .. image:: /user/img/concept-guides/prices/schedule_price_list.png
+.. image:: /user/img/concept-guides/prices/schedule_price_list.png
 
 As prices tend to be negotiated and are affected by market dynamics, it is important to keep up with the demand and be reactive to the constant price changing. OroCommerce enables you to decide on whether to use a static or dynamic pricing system for your web store depending on your business processes and needs.
 
@@ -143,7 +143,7 @@ The OroCommerce product assignment option defines the products or a group of pro
 
 The *Customer A Price List* was generated based on the *Default PL* (1) using the following syntax:
 
-   .. image:: /user/img/concept-guides/prices/product_assignment.png
+.. image:: /user/img/concept-guides/prices/product_assignment.png
 
 You can build even more advanced expressions on top of the product properties, use operators, numeric, boolean, and string values as described in the :ref:`Filtering Expression Syntax <user-guide--pricing--auto--expression>` topic.
 
@@ -155,7 +155,7 @@ Price calculation rules specify conditions and expressions to calculate new pric
 
 As for the *Customer A Price List*, we have used the base prices for products from the *Default PL* to offer a 15% discount on these products:
 
-   .. image:: /user/img/concept-guides/prices/price_calculation_rules.png
+.. image:: /user/img/concept-guides/prices/price_calculation_rules.png
 
 In the same way, you can create exclusive sales, season sales on a certain group of products, provide discounted prices for the products that have reached the low inventory threshold or for the products that are new. For more use cases, follow the :ref:`Price Rules Automation Examples <price-rules--auto--examples>` section.
 

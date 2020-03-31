@@ -3,11 +3,9 @@
 .. _doc--integrations--ups:
 
 UPS Shipping Integration
-------------------------
+========================
 
-.. begin_ups_integration
-
-.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the shipping concept in OroCommerce.
+.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 
 UPS shipping integration section describes the steps that are necessary to expose UPS as a shipping method in OroCommerce orders and quotes.
 
@@ -19,7 +17,7 @@ UPS shipping integration section describes the steps that are necessary to expos
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ileKXVTG6B8" frameborder="0" allowfullscreen></iframe>
 
 Prepare for Integration
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 First, ensure you have |registered with UPS.com| and have opened a UPS Account with the necessary shipping services level.
 
@@ -32,7 +30,7 @@ Next:
 Please, ensure that you have requested separate access keys for your test and production environments.
 
 Configure a UPS Integration in OroCommerce
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------
 
 To enable communication with UPS in order to request the shipping cost estimate and/or request the shipping services, establish a connection with UPS API:
 
@@ -79,7 +77,7 @@ To enable communication with UPS in order to request the shipping cost estimate 
 
    .. note:: The unit of weight should be in sync with the options that are supported by your UPS account.
 
-9. Select the destination country. To support shipping globally, create a dedicated UPS integration (e.g. UPS USA, UPS UK, UPS Germany, etc) for every country you would like to cover with UPS shipping services.
+9. Select the destination country. To support shipping globally, create a dedicated UPS integration (e.g., UPS USA, UPS UK, UPS Germany, etc) for every country you would like to cover with UPS shipping services.
 
    Once you select the destination, the list of shipping services appears.
 
@@ -92,8 +90,6 @@ To enable communication with UPS in order to request the shipping cost estimate 
 Next, set up a shipping rule via the :ref:`Shipping Rules Configuration <sys--shipping-rules>` page to enable this shipping method for all or some customer orders.
 
 Once the shipping method is added to the shipping rule, provide the information that configures the shipping fee components and the method to calculate it following the :ref:`Configure a Shipping Method in a Shipping Rule <doc--shipping-rules--shipping-methods--detailed>` topic.
-
-.. stop_ups_integration
 
 **Related Topics**
 

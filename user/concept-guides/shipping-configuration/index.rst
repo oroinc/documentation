@@ -40,7 +40,9 @@ OroCommerce works with the following shipping methods out-of-the-box:
 
   .. note:: When using UPS or FedEx, cost evaluation is possible only for the products with available :ref:`shipping information (weight and weight unit) <user-guide--shipping--product-shipping-info>`.
 
-* |DPD|
+* :ref:`DPD <doc--integrations--dpd>`
+
+  DPD is an international parcel delivery service. To set up a DPD integration, contact DPD support to receive credentials for the account activation.
 
 .. note:: You must have at least one shipping method available for your customers to allow them to proceed through the checkout. Without a shipping method, the buyer receives an error message asking them to contact the seller to complete the order.
 

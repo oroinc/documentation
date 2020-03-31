@@ -3,9 +3,9 @@
 .. _doc--integrations--fedex:
 
 FedEx Shipping Integration
---------------------------
+==========================
 
-.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the shipping concept in OroCommerce.
+.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 
 FedEx is the largest multinational delivery service company that provides a variety of shipping methods solutions, both ground and airfreight, day and overnight, to meet the customers' requirements.
 
@@ -18,13 +18,13 @@ This section describes the steps that are necessary to expose FedEx as a shippin
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ileKXVTG6B8" frameborder="0" allowfullscreen></iframe>
 
-Prerequisites for Integration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Prepare for Integration
+-----------------------
 
 Before adding FedEx as a shipping method in OroCommerce, you need to create a FedEx business account and obtain a dedicated shipping account number and a meter number via the official FedEx website.
 
 Create a FedEx Business Account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To register a business account and enable a checkout shipping integration with OroCommerce, follow the next steps:
 
@@ -44,9 +44,8 @@ To register a business account and enable a checkout shipping integration with O
 
    .. image:: /user/img/system/integrations/FedEx/fedex_account_registration.png
 
-
 Obtain a Set of Testing Credentials
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once the registration is complete, you can now obtain the necessary test keys to set up the integration between FedEx and OroCommerce and make sure the integration is working properly.
 
@@ -73,7 +72,7 @@ Once the registration is complete, you can now obtain the necessary test keys to
    * Meter Number
 
 Configure a FedEx Integration in OroCommerce
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------------
 
 To enable the integration with FedEx in order to request the shipping cost estimation and/or request the shipping services:
 
@@ -127,18 +126,16 @@ Click the |IcTranslations| **Translations** icon to provide spelling for differe
 
 11. Set the status to **Active** to enable the integration.
 
-12. The **Default Owner** field is prepopulated with the user creating the integration. You can change this value to another user if necessary.
+12. The **Default Owner** field is prepopulated with the user creating the integration. You can change this value to a different user, if necessary.
 
 13. Click **Save and Close**.
-
 
 Next, set up a shipping rule via the :ref:`Shipping Rules Configuration <sys--shipping-rules>` page to enable this shipping method for all or some customer orders.
 
 Once the shipping method is added to the shipping rule, provide the information that configures the shipping fee components and the method to calculate it following the :ref:`Configure a Shipping Method in a Shipping Rule <doc--shipping-rules--shipping-methods--detailed>` topic.
 
-
 Obtain a Set of Production Credentials
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------
 
 Once you have successfully configured the OroCommerce FedEx integration, and the connection to the test environment is working properly, you can move to a production stage and request a new set of credentials.
 
@@ -155,8 +152,6 @@ Once you have successfully configured the OroCommerce FedEx integration, and the
 5. Follow the steps described in the aforementioned Configure a FedEx Integration in OroCommerce section to set up the production integration between FedEx and OroCommerce.
 
    .. important:: Make sure that the **Test Mode** check box is NOT selected as you are configuring the production integration.
-
-.. stop_fedex_integration
 
 
 **Related Topics**

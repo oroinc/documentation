@@ -13,29 +13,30 @@ A role has the following types of permissions:
 * Entity-level permissions
 * Workflow permissions
 
-   .. image:: /user/img/concept-guides/customers/permissions.png
-      :alt: Customer user roles
+.. image:: /user/img/concept-guides/customers/permissions.png
+   :alt: Customer user roles
+   :align: center
 
 Each permission can be assigned a certain access level (*Corporate, Department, User, None*, etc). In Oro applications, access levels for :ref:`customer user roles <frontstore-guide-roles>` are similar to the :ref:`back-office user roles <user-guide-user-management-permissions-ownership-type>`, but, conceptually, they are not the same. More details on the permissions and access granted to the back-office users are described in the :ref:`Roles and Permissions <user-guide-user-management-permissions-roles>` topic.
 
 Access levels for storefront user roles
 
-   .. image:: /user/img/concept-guides/customers/access_levels_storefront_users.png
-      :alt: Access levels for storefront user roles
+.. image:: /user/img/concept-guides/customers/access_levels_storefront_users.png
+   :alt: Access levels for storefront user roles
 
 
 Access levels for back-office user roles
 
-   .. image:: /user/img/concept-guides/customers/access_levels_backoffice_users.png
-      :alt: Access levels for back-office user roles
+.. image:: /user/img/concept-guides/customers/access_levels_backoffice_users.png
+   :alt: Access levels for back-office user roles
 
 
 To illustrate all four access levels that can be defined for any user role in the storefront, let’s use the example of a Company A that has 2 departments: West and East. The West department has an LA subdivision. A selected customer user belongs to the West department.
 
-   .. image:: /user/img/concept-guides/customers/access_levels_main.png
-      :alt: Example illustration
-      :width: 60%
-
+.. image:: /user/img/concept-guides/customers/access_levels_main.png
+   :alt: Example illustration
+   :width: 60%
+   :align: center
 
 In this case:
 
@@ -44,12 +45,14 @@ In this case:
    .. image:: /user/img/concept-guides/customers/access_levels_corporate1.png
       :alt: Illustration of customer user role's permissions with a corporate access level
       :width: 50%
+      :align: center
 
 * The **Department** access level enables a customer user to manage the records created by other company users who belong to the same department. In this case, the user from the mentioned example won’t see any records created by other departments’ users as they are eligible for the department access only.
 
    .. image:: /user/img/concept-guides/customers/access_levels_department.png
       :alt: Illustration of customer user role's permissions with a department access level
       :width: 50%
+      :align: center
 
 * The **User** level gives access only to a customer user’s own records.
 * **None** gives no access to any records. This data is disabled for the customer user.
@@ -59,6 +62,7 @@ In this case:
    .. image:: /user/img/concept-guides/customers/access_levels_no_access.png
       :alt: An example of customer user role's permissions that do not have access to the departments that are higher in the organization hierarchy
       :width: 50%
+      :align: center
 
 With all these access levels and capabilities, you can easily configure any role permission that is required for your business.
 
