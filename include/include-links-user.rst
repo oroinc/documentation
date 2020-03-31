@@ -727,4 +727,10 @@ Links (User)
 
    <a href="https://marketplace.oroinc.com/orocommerce/" target="_blank">OroCommerce's Extension Marketplace</a>
 
+.. |DPD developer eSolutions portal| raw:: html
 
+   <a href="https://esolutions.dpd.com/entwickler.aspx" target="_blank">OroCommerce's Extension Marketplace</a>
+
+.. |DPD customer support| raw:: html
+
+   <a href="mailto:it@dpd.com" target="_blank">DPD customer support</a>

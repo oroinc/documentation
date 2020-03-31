@@ -26,6 +26,7 @@ In the applications where both CRM and Commerce integrations are configured, the
 
 .. image:: /user/img/concept-guides/customers/customers_menu.png
    :alt: Customers menu
+   :align: center
 
 :term:`Accounts <Account>` and :term:`customers <Customer>` are businesses, while :term:`contacts <Contact>` and :term:`customer users <Customer User>` are individuals who act on behalf of the company.
 
@@ -53,11 +54,13 @@ To manage the customers efficiently, study the following hierarchical structure 
 
    .. image:: /user/img/concept-guides/customers/customers_hierarchy.png
       :alt: Customers hierarchy
+      :align: center
 
 4. You can organize customers into **customer groups** regardless of the hierarchy but based on the common usage parameters, such as taxes, payment terms, price lists, location, and so on.
 
    .. image:: /user/img/concept-guides/customers/customer_groups.png
       :alt: Customer groups
+      :align: center
 
 5. You can associate :term:`Lifetime Sales Value` with a customer to track financial statistics related to a specific customer or account.
 
@@ -69,7 +72,7 @@ To manage the customers efficiently, study the following hierarchical structure 
 
    .. image:: /user/img/concept-guides/customers/customer_user_roles.png
       :alt: Customer user roles
-
+      :align: center
 
 **Related Topics**
 
