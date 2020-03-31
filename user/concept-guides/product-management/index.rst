@@ -26,13 +26,15 @@ To illustrate the dependencies of these elements, and why they are essential for
 
 .. image:: /user/img/concept-guides/products/product_concepts.png
    :alt: Main elements that constitute a product
+   :align: center
 
 * :ref:`Product units <user-guide--products--product-units-in-use>` --- determine the quantity of a product. They are the units of measurement, such as *item, hour, kilogram, piece*, or *set*. A product can have one or multiple product units which enables customers to select the required one in the storefront.
 
 * :ref:`Product attributes <products--product-attributes>` --- are specific characteristics of a product, such as *type, color, size, style, inventory status, brand*, etc. You can create as many attributes as you want to specify more details of a product. Keep in mind that some attributes are system attributes that are built in the OroCommerce platform (e.g., *name, description, sku, price*). Such attributes cannot be modified or deleted. You can also make the attributes filterable and enable customers to find the product by setting the necessary parameters in the storefront.
 
-    .. image:: /user/img/concept-guides/products/filters.png
-       :alt: Product filters in the storefront
+.. image:: /user/img/concept-guides/products/filters.png
+   :alt: Product filters in the storefront
+   :align: center
 
 * All product attributes are grouped into dedicated **attribute groups** that organize your product page. Attribute groups are the tabs or titled sections that combine similar parameters. Following this, the SEO section, for example, would include *meta title, description*, and *meta keywords*. You can create any attribute group that would fit your products with any attributes that would describe those products the best. All attribute groups are arranged into a product family.
 
@@ -40,13 +42,11 @@ To illustrate the dependencies of these elements, and why they are essential for
 
 * :ref:`Product brands <user-guide--product-brands>` --- are system attributes assigned to each product by default. You can create a list of brands in the back-office, and then, associate your products with a specific brand for easier search in the storefront.
 
-
 All the product components are used when creating simple and configurable products. If you are not sure where to start when creating a product, follow the sequential steps below for the reference:
 
-    .. image:: /user/img/concept-guides/products/product_creation_steps.png
-       :alt: Product filters in the storefront
-
-
+.. image:: /user/img/concept-guides/products/product_creation_steps.png
+   :alt: Product filters in the storefront
+   :align: center
 
 Simple vs Configurable Products
 -------------------------------
@@ -57,6 +57,7 @@ In OroCommerce, products can be of two types, simple and configurable. The produ
 
 .. image:: /user/img/concept-guides/products/SimpleProductScreenFrontStore.png
    :alt: An example of a simple product displayed in the storefront
+   :align: center
 
 Unlike a simple product, **a configurable product** is an item available in multiple variations. Customers configure the product in terms of its color, size or any other applicable parameters according to buying needs. Buyers in the storefront choose from the options provided to ‘configure’ a product according to their needs.
 
@@ -64,6 +65,7 @@ However, in the back-office, configurable products are more sophisticated. A con
 
 .. image:: /user/img/concept-guides/products/SampleConfigSimpleGrid.png
    :alt: Both configurable and simple products are illustrated in the products grid
+   :align: center
 
 For example, a USB flash drive may be available in various colors and capacity (e.g., Red USB drive 64 GB, Red USB drive 256 GB, Green USB drive 128 GB, Black USB drive 64 GB). In this case, the generic USB flash drive is a configurable product, Red USB drive 64 GB, Red USB drive 256 GB, Green USB drive 128 GB, and Black USB drive 64 GB are product variants (created as simple products), and *color* and *capacity* are configurable attributes in the generic USB flash drive.
 
@@ -73,7 +75,7 @@ To purchase multiple product variants in one order, use a :ref:`matrix order for
 
 .. image:: /user/img/concept-guides/products/matrix_popup.png
    :alt: Matrix form in the storefront illustrating variations of a usb drive
-
+   :align: center
 
 Products in a Multi-Org Application
 -----------------------------------
@@ -86,7 +88,6 @@ If you have a multi-org application, you can create products with the same SKU a
 
 Some product attributes are global, which means that they were created in the global organization and can only be managed by its admins. You can use global attributes in other organizations but not edit them or create a new product attribute with the same name as a global attribute.
 
-
 .. _highlight-products-on-the-storefront:
 
 Products in the Storefront
@@ -98,29 +99,31 @@ When the required number of products has been created or imported, you can furth
 
 The products that appear on the home page of the OroCommerce storefront are customized through the configuration settings of:
 
-    * A :ref:`Master catalog <user-guide--master-catalog>` or a :ref:`web catalog <user-guide--web-catalog>` --- which organize all existing products in your store by categories.
-    * A :ref:`featured products segment <products--featured-products>` --- that displays the selected products on the crowded paths of you website.
-    * A :ref:`new arrivals segment <sys--commerce--product--new-arrivals-block-global>` --- that showcases a few new products of your store that you want to promote.
-    * A :ref:`new product icon <sys--commerce--product--new-arrivals>` --- that highlights the products as new.
-    * A :ref:`product image watermark <configuration--guide--commerce--configuration--product-images>` --- that can be added on top of the images for the selected products.
+* A :ref:`master catalog <user-guide--master-catalog>` or a :ref:`web catalog <user-guide--web-catalog>` that organize all existing products in your store by categories.
+* A :ref:`featured products segment <products--featured-products>` that displays the selected products on the crowded paths of you website.
+* A :ref:`new arrivals segment <sys--commerce--product--new-arrivals-block-global>` that showcases a few new products of your store that you want to promote.
+* A :ref:`new product icon <sys--commerce--product--new-arrivals>` that highlights the products as new.
+* A :ref:`product image watermark <configuration--guide--commerce--configuration--product-images>` that can be added on top of the images for the selected products.
 
-    .. image:: /user/img/concept-guides/products/highlight_products_home_page.png
-       :alt: Visual representation of products on the home page
+.. image:: /user/img/concept-guides/products/highlight_products_home_page.png
+   :alt: Visual representation of products on the home page
+   :align: center
 
 On the product details page, you can configure the following options:
 
-    * A :ref:`product image gallery <sys--commerce--product--product-images--gallery-slider-global>` --- that controls the way the product options are displayed on the product page. You can select whether to use popup or inline view for the image gallery.
-    * A :ref:`related products block <sys--commerce--catalog--relate-products--main>` --- that binds similar products related to those currently browsed by the customer or those that complement each other, like the laptop and its accessories, a mouse, notebook bag or screen cleaning cloths.
-    * An :ref:`up-sell products block <sys--commerce--catalog--upsell-products>` --- that binds products that should be promoted with the product selected by the customer, like more expensive alternatives of the model, upgrade options, additional parts. Taking the example of the laptop, that would be a laptop with a larger screen, better processor, or higher hard drive capacity than the customer planned to buy.
+* A :ref:`product image gallery <sys--commerce--product--product-images--gallery-slider-global>` that controls the way the product options are displayed on the product page. You can select whether to use popup or inline view for the image gallery.
+* A :ref:`related products block <sys--commerce--catalog--relate-products--main>` that binds similar products related to those currently browsed by the customer or those that complement each other, like the laptop and its accessories, a mouse, notebook bag or screen cleaning cloths.
+* An :ref:`up-sell products block <sys--commerce--catalog--upsell-products>` that binds products that should be promoted with the product selected by the customer, like more expensive alternatives of the model, upgrade options, additional parts. Taking the example of the laptop, that would be a laptop with a larger screen, better processor, or higher hard drive capacity than the customer planned to buy.
 
-    .. image:: /user/img/concept-guides/products/highlight_products_details_page.png
-       :alt: Visual representation of products on the product details page
+.. image:: /user/img/concept-guides/products/highlight_products_details_page.png
+   :alt: Visual representation of products on the product details page
+   :align: center
 
 You can configure the :ref:`All Products page <sys--conf--commerce--catalog--special-pages>` to display all available products from the master catalog grouped by categories. Here, you can also customize the :ref:`image preview on product listing page <sys--commerce--product--product-images--image-preview--global>` to see the product image gallery instead of the product page when clicking on the image in the product listing.
 
 .. image:: /user/img/concept-guides/products/all_product_page_storefront.png
    :alt: Visual representation of products on the product details page
-
+   :align: center
 
 As you can see, with OroCommerce you can create an appealing and functional product pages that are the key to sales in online stores of all kinds.
 
