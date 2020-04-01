@@ -569,3 +569,7 @@ Images
 .. |IcB2C| raw:: html
 
    <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+
+.. |IcPreview| raw:: html
+
+   <i class="far fa-eye" aria-hidden="true"></i>

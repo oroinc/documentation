@@ -28,6 +28,7 @@ See the following topics for more details on how to create and manage web catalo
 * :ref:`Edit a Web Catalog Content Tree <user-guide--web-catalog-edit-content-tree>`
 * :ref:`Enable a Web Catalog  Globally <user-guide--marketing--web-catalog--enable-globally>` and :ref:`per Website <user-guide--marketing--web-catalog--enable-per-website>`.
 * :ref:`Customize Web Catalog Contents for Localization, Customer or Customer Group <user-guide--marketing--web-catalog--customize>`
+* :ref:`Preview Web Catalog <user-guide--marketing--web-catalog--preview>`
 * :ref:`Build a Custom Web Catalog From Scratch (Example) <user-guide--marketing--web-catalog--sample>`
 * :ref:`Use Web Catalog Nodes as Root Nodes (Example) <user-guide--web-catalog-navigation-tool>`
 
@@ -36,7 +37,6 @@ See the following topics for more details on how to create and manage web catalo
 
    create
    edit-content-tree/index
-   customize-web-catalog
    build-from-scratch
    web-catalog-nav-tool-usecase
 
