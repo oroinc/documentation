@@ -16,7 +16,7 @@ This topic describes the elements of entities data management and their configur
    data-fixtures
    reports-and-segments
    search/index
-   workflows
+   workflows/index
    operations
    processes
    data-audit

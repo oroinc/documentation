@@ -22,6 +22,7 @@ We recommend using a staging environment equivalent to the production environmen
 
 .. hint::
           Remember to limit emails sent from the staging and other environments you use in the development. You do not want to send emails to the real mailboxes.
+
           If you use a copy of the production database, we strongly recommend replacing sensitive information with dummy placeholders to increase security and avoid data leaks.
           If your application runs on :ref:`OroCloud <orocloud>`, it will be useful to know that it has a tool that copies the production database and replaces sensitive information with meaningless text. Contact Oro Customers Support to request a copy of your production database for the staging environment.
 

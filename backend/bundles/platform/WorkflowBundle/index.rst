@@ -10,11 +10,11 @@ OroWorkflowBundle enables developers to incorporate business processes into the 
 Related Documentation
 ---------------------
 
-* |Introduction to Workflows|
-* |Workflow Bundle Configuration Reference|
-* |Translations Wizard|
+* :ref:`Introduction to Workflows <dev-doc--workflows>`
+* :ref:`Workflow Bundle Configuration Reference <backend--workflows--config-reference>`
+* :ref:`Translations Wizard <backend--workflows--translation-wizard>`
+* :ref:`Processes <backend--entities-data-management--processes>`
 * |Workflow Entities|
-* |Introduction to Processes|
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
