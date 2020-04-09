@@ -1,5 +1,7 @@
 :oro_documentation_types: OroCommerce
 
+.. _user-import-master-catalog-categories:
+
 Import Master Catalog Categories Information
 --------------------------------------------
 
