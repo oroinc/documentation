@@ -19,6 +19,7 @@ The application setup guides provide the details on how to configure the environ
    dev-environment/index
    demo-environment/index
    installation/index
+   launch
    upgrade-to-new-version
    reinstall
 

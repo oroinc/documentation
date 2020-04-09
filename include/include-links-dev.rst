@@ -5160,4 +5160,17 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Layout/BlockTypeInterface.php#L51" target="_blank">BlockTypeInterface::finishView</a>
 
+.. |go-live checklist| raw:: html
+
+   <a href="https://docs.google.com/spreadsheets/d/1AUQWjB3cufXoMYR3FakKrHbSkRBdGlVhVIK9YrqqWRs/edit?usp=sharing" target="_blank">go-live checklist</a>
+
+.. |reach out to Oro Customers Support| raw:: html
+
+  <a href="https://magecore.atlassian.net/servicedesk/customer/portal/2" target="_blank">reach out to Oro Customers Support</a>
+
+.. |image_placeholder.yml| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/config/image_placeholder.yml" target="_blank">image_placeholder.yml</a>
+
+
 
