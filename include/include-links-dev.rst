@@ -5172,5 +5172,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/config/image_placeholder.yml" target="_blank">image_placeholder.yml</a>
 
+.. |notify them about your intention to launch| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/support/" target="_blank">notify them about your intention to launch</a>
+   
+ 
 
 
