@@ -154,6 +154,8 @@ The following checklist provides the typical activities that you need to perform
     * The number of consumers for every queue","Requires investigation"
    "**Availability-check monitoring request**", "Granting access to continuous system health-check for your OroCloud environment", "--","1"
 
+.. _support-contact-before-lauch:
+
 Contacting Support Before Launch
 --------------------------------
 
