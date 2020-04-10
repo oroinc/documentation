@@ -408,34 +408,6 @@ Links (Dev)
 
    <a href="https://github.com/orocrm/platform/blob/3.1/src/Oro/Bundle/FormBundle/Model/UpdateHandler.php" target="_blank">OroFormUpdateHandler</a>
 
-.. |Define a New Feature| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/FeatureToggleBundle#how-to-define-new-feature" target="_blank">Define a New Feature</a>
-
-.. |Add New Options to Feature Configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/FeatureToggleBundle#adding-new-options-to-feature-configuration" target="_blank">Add New Options to Feature Configuration</a>
-
-.. |Check Feature State| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/FeatureToggleBundle#adding-new-options-to-feature-configuration" target="_blank">Check Feature State</a>
-
-.. |Include a Service Into a Feature| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/FeatureToggleBundle#including-a-service-into-a-feature" target="_blank">Include a Service Into a Feature</a>
-
-.. |Check Feature State with a Feature Voter| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/FeatureToggleBundle#feature-state-checking" target="_blank">Check Feature State with a Feature Voter</a>
-
-.. |Change Decision Strategy| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/FeatureToggleBundle#changing-the-decision-strategy" target="_blank">Change Decision Strategy</a>
-
-.. |Use Checker for Commands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/FeatureToggleBundle#using-checker-for-commands" target="_blank">Use Checker for Commands</a>
-
 .. |Actions| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Resources/config/oro/actions.yml" target="_blank">Actions</a>
@@ -1308,38 +1280,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#troubleshooting" target="_blank">Troubleshooting</a>
 
-.. |Configure Supported Mime Types| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AttachmentBundle#system-configuration" target="_blank">Configure Supported Mime Types</a>
-
-.. |File Types| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AttachmentBundle#file-type" target="_blank">File Types</a>
-
-.. |Image Type| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AttachmentBundle#image-type" target="_blank">Image Type</a>
-
-.. |Configure Storage| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AttachmentBundle#storage-configuration" target="_blank">Configure Storage</a>
-
-.. |Use Migration Extension (Example)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AttachmentBundle#acl-protection" target="_blank">Use Migration Extension (Example)</a>
-
-.. |Configure Attachments| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AttachmentBundle#entity-attachments" target="_blank">Configure Attachments</a>
-
-.. |Image Formatters| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AttachmentBundle#image-formatters" target="_blank">Image Formatters</a>
-
-.. |Enable Debugging Images| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AttachmentBundle#debug-images-configuration" target="_blank">Enable Debugging Images</a>
-
 .. |Action Component| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Action/Resources/doc/actions.md" target="_blank">Action Component</a>
@@ -1371,26 +1311,6 @@ Links (Dev)
 .. |Add Custom and Configurable Conditions| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/conditions.md" target="_blank">Add Custom and Configurable Conditions</a>
-
-.. |Enable Activity Association Using Migrations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActivityBundle#how-to-enable-activity-association-using-migrations" target="_blank">Enable Activity Association Using Migrations</a>
-
-.. |Make an Entity an Activity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActivityBundle#how-to-make-an-entity-an-activity" target="_blank">Make an Entity an Activity</a>
-
-.. |Configure UI for the Activity Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActivityBundle#how-to-configure-ui-for-the-activity-entity" target="_blank">Configure UI for the Activity Entity</a>
-
-.. |Configure Custom Grid for Activity Context Dialog| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActivityBundle#how-to-configure-ui-for-the-activity-entity" target="_blank">Configure Custom Grid for Activity Context Dialog</a>
-
-.. |Enable Contexts Column in Activity Entity Grids| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActivityBundle#how-to-configure-ui-for-the-activity-entity" target="_blank">Enable Contexts Column in Activity Entity Grids</a>
 
 .. |Fundamentals: Activities| raw:: html
 
@@ -2956,26 +2876,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ScopeBundle#how-scopes-work" target="_blank">Scopes Overview</a>
 
-.. |Configure Scope Criteria Providers| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ScopeBundle#configuring-scope-criteria-providers" target="_blank">Configure Scope Criteria Providers</a>
-
-.. |Use Context| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ScopeBundle#using-context" target="_blank">Use Context</a>
-
-.. |Scope Operations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ScopeBundle#scope-operations" target="_blank">Scope Operations</a>
-
-.. |Use Related Scopes (Example)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ScopeBundle#example-using-related-scopes" target="_blank">Use Related Scopes (Example)</a>
-
-.. |Use Scope Criteria (Example)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ScopeBundle#example-using-scope-criteria" target="_blank">Use Scope Criteria (Example)</a>
-
 .. |Configure Search| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md" target="_blank">Configure Search</a>
@@ -3007,22 +2907,6 @@ Links (Dev)
 .. |Customize Relevance Weight in Standard Search Index| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/SearchBundle/Resources/doc/relevance_weight.md" target="_blank">Customize Relevance Weight in Standard Search Index</a>
-
-.. |OroSegmentBundle Overview| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/SegmentBundle#overview" target="_blank">OroSegmentBundle Overview</a>
-
-.. |Frontend Implementation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/SegmentBundle#frontend-implementation" target="_blank">Frontend Implementation</a>
-
-.. |Backend Implementation (Entities, Query Builder, Datagrid)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/SegmentBundle#backend-implementation" target="_blank">Backend Implementation (Entities, Query Builder, Datagrid)</a>
-
-.. |Use OroSegmentBundle (Example)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/SegmentBundle#overview" target="_blank">Use OroSegmentBundle (Example)</a>
 
 .. |Initialize a Sidebar| raw:: html
 
@@ -5160,6 +5044,34 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Layout/BlockTypeInterface.php#L51" target="_blank">BlockTypeInterface::finishView</a>
 
+.. |KnpGaufretteBundle| raw:: html
+
+   <a href="https://github.com/KnpLabs/KnpGaufretteBundle" target="_blank">KnpGaufretteBundle</a>
+
+.. |KnpGaufretteBundle documentation| raw:: html
+
+   <a href="https://github.com/KnpLabs/KnpGaufretteBundle/blob/master/README.markdown" target="_blank">KnpGaufretteBundle documentation</a>
+
+.. |LiipImagineBundle| raw:: html
+
+   <a href="https://github.com/liip/LiipImagineBundle" target="_blank">LiipImagineBundle</a>
+
+.. |ScopeCriteriaProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ScopeBundle/Manager/ScopeCriteriaProviderInterface.php" target="_blank">ScopeCriteriaProviderInterface</a>
+
+.. |ActivityInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActivityBundle/Model/ActivityInterface.php" target="_blank">ActivityInterface</a>
+
+.. |all configuration options| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActivityBundle/Resources/config/oro/entity_config.yml" target="_blank">all configuration options</a>
+
+.. |OroActivityBundle:Grid:Column/contexts.html.twig| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActivityBundle/Resources/views/Grid/Column/contexts.html.twig" target="_blank">OroActivityBundle:Grid:Column/contexts.html.twig</a>
+
 .. |go-live checklist| raw:: html
 
    <a href="https://docs.google.com/spreadsheets/d/1AUQWjB3cufXoMYR3FakKrHbSkRBdGlVhVIK9YrqqWRs/edit?usp=sharing" target="_blank">go-live checklist</a>
@@ -5177,5 +5089,4 @@ Links (Dev)
    <a href="https://doc.oroinc.com/cloud/support/" target="_blank">notify them about your intention to launch</a>
    
  
-
 

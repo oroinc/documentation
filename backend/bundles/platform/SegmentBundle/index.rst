@@ -10,10 +10,7 @@ OroSegmentBundle provides GUI for application users to create named sets of enti
 Related Documentation
 ---------------------
 
-* |OroSegmentBundle Overview|
-* |Frontend Implementation|
-* |Backend Implementation (Entities, Query Builder, Datagrid)|
-* |Use OroSegmentBundle (Example)|
-
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+* :ref:`OroSegmentBundle Overview <backend-segments-overview>`
+* :ref:`Frontend Implementation <backend-segments-frontend-implementation>`
+* :ref:`Backend Implementation (Entities, Query Builder, Datagrid) <backend-segments-backend-implementation>`
+* :ref:`Use OroSegmentBundle (Example) <backend-segments-usage>`
