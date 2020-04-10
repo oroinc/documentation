@@ -5171,6 +5171,11 @@ Links (Dev)
 
   <a href="https://doc.oroinc.com/backend/system-configuration/#creating-configuration-forms" target="_blank">System Configuration</a>
 
+
+.. |notify them about your intention to launch| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/support/" target="_blank">notify them about your intention to launch</a>
+
 .. |ConfigExpression| raw:: html
 
    <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Component/ConfigExpression/README.md" target="_blank">ConfigExpression</a>
@@ -5198,3 +5203,4 @@ Links (Dev)
 .. |Workflow Entities| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/workflow-entities.md" target="_blank">Workflow Entities</a>
+
