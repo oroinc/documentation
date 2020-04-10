@@ -38,6 +38,18 @@ With `orocloud.yaml` it is possible to override the following nodes:
         upgrade_commands: # Application commands which run during update process
           - 'oro:platform:update'
 
+**git clone configuration**
+
+.. code-block:: none
+    :linenos:
+
+    ---
+    orocloud_options:
+      deployment:
+        git_clone_recursive: true
+
+.. note:: Please note that by default, ``git_clone_recursive: true``. Allowed values: ``true``, ``false``.
+
 **composer_command**
 
 .. code-block:: none
