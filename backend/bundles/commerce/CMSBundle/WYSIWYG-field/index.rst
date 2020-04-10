@@ -1,6 +1,6 @@
 :oro_show_local_toc: false
 
-.. _WYSIWYG-Field:
+.. _WYSIWYG-field-dev-guide:
 
 WYSIWYG Field
 =============

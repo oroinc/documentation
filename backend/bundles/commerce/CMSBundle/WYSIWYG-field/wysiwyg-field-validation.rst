@@ -37,6 +37,7 @@ Validation
 
 Validator for WYSIWYG fields validates the content based on the content restrictions mode configuration by comparing the submitted content (before purification) to the content after purification. If submitted and purified versions do not match, a validation error will appear and the user will not be allowed to save the data.
 
+.. _wysiwyg-field-customization:
 
 Customization
 -------------

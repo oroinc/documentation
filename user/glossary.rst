@@ -202,4 +202,5 @@ Glossary
 
       .. image:: /user/img/glossary/your_price.png
 
-
+   WYSIWYG (What You See Is What You Get)
+      The editor that enables to edit the content of a landing page, product page, and any other HTML-like web page, embed codes, media files, and widgets, and preview the results in the editor's framework directly.
