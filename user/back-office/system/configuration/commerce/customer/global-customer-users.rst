@@ -27,7 +27,7 @@ To change the default customer user configuration settings globally:
 
      .. image:: /user/img/system/config_commerce/customer/CustomerUsersRegistrationFrontStore.png
 
-   * **Case-Insensitive Email Addresses** --- If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled.
+   * **Case-Insensitive Email Addresses** --- If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled. The identical option for back-office users is managed :ref:`here <admin-configuration-user-settings>`.
    * **Customer Visitor Cookie Lifetime (Days)** --- Once the provided period expires, active customer visitor (anonymous user) sessions will be reset.
    * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
 
