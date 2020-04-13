@@ -1,0 +1,1 @@
+user/back-office/sales/shopping-lists/view /user/back-office/sales/shopping-lists/index
