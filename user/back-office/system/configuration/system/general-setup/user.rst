@@ -13,14 +13,25 @@ To apply user-related options in your Oro application instance:
    .. image:: /user/img/system/config_system/user.png
       :alt: User settings on global level
 
-Configure Email Settings and Password Restrictions
---------------------------------------------------
+Configure Email Settings
+------------------------
 
 .. csv-table::
   :header: "Option", "Description"
   :widths: 10, 30 
 
-  "**Case-Insensitive Email Addresses**","If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled."
+  "**Case-Insensitive Email Addresses**","If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled. Be noted that the setting is only applied to back-office users. The identical option for customer users is managed :ref:`here <sys-config--configuration--commerce--customers--customer-users>`"
+
+
+Configure Password Restrictions
+-------------------------------
+
+.. note:: The options configured in the Password Restrictions section are applied to both storefront and back-office users.
+
+.. csv-table::
+  :header: "Option", "Description"
+  :widths: 10, 30
+
   "**Minimal Password Length**","Enter the number of characters to define the length of the password. By default, 8 is specified"
   "**Require a Number**","Specify whether the password should contain a number. By default, the option is enabled."
   "**Require A Lower Case Letter**","Specify whether the password should contain a lower case letter. By default, the option is enabled"
@@ -30,7 +41,8 @@ Configure Email Settings and Password Restrictions
 Configure Login Attempts
 ------------------------
 
-.. note:: This feature is only available in the Enterprise edition.
+.. note:: This feature is only available in the Enterprise edition and is only applied to back-office users.
+
 
 .. csv-table::
   :widths: 10, 30 
@@ -41,7 +53,7 @@ Configure Login Attempts
 Configure Password Change Policy
 --------------------------------
 
-.. note:: This feature is only available in the Enterprise edition.
+.. note:: This feature is only available in the Enterprise edition and is applied to both storefront and back-office users.
 
 .. csv-table::
   :widths: 10, 30 
@@ -54,7 +66,7 @@ Configure Password Change Policy
 Configure Two-Factor Authentication
 -----------------------------------
 
-.. note:: This feature is only available in the Enterprise edition.
+.. note:: This feature is only available in the Enterprise edition and is only applied to back-office users.
 
 .. csv-table::
   :widths: 10, 30 

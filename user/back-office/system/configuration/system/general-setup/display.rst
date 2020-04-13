@@ -106,6 +106,8 @@ The value is enabled by default.
 
     The formatting tools can also be enabled for other text fields in the course of integration.
 
+For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
+
 **Sidebar Settings**
 
 By adjusting the sidebar settings you can enable or disable the left and/or right sidebar to keep your sticky notes

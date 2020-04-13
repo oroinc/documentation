@@ -23,7 +23,7 @@ Exchange and transfer of data into the Oro application from various third-party 
 Actions and transitions available for your records in the application are defined by the workflows. Workflows enable you to handle complex procedures that can be configured specifically for your business needs. You can learn more about the configuration of workflows in the dedicated :ref:`Workflow Management <doc--system--workflow-management>` topic.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    create-record
    manage-records/index
@@ -32,6 +32,7 @@ Actions and transitions available for your records in the application are define
    notes
    comments
    attachments
+   wysiwyg
 
 
 .. include:: /include/include-images.rst

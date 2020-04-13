@@ -87,6 +87,8 @@ In the Display section, you can configure the following display options for a pa
    |                       |                                                                                                           |
    +-----------------------+-----------------------------------------------------------------------------------------------------------+
 
+For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
+
    **Sidebar settings**
 
    +----------------------+-------------------------------------------------------------------------+

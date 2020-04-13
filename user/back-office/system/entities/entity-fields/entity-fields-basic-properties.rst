@@ -22,7 +22,9 @@ The first step of creating a new entity field is providing information on its ba
 
 .. _field-file-types:
 
-3. **Type** --- Select a field type from the list:
+3. **Type** --- Select a field type from the list.
+
+**Fields**:
 
    * **BigInt** --- Select this type if the values of this field must be very big positive or negative whole numbers like 111222333444555. Save range is from -999,999,999,999,999 to 999,999,999,999,999.
    * **Boolean** --- Select this type if you need a simple list with two values: 'Yes' and 'No.'
@@ -56,9 +58,11 @@ The first step of creating a new entity field is providing information on its ba
      .. image:: /user/img/system/entity_management/multiple-files.png
         :alt: Multiple file upload
 
-   * **WYSIWYG** --- Use this type if you want to add the WYSIWYG text editor to your entity. The editor enables you to customize the content of the selected entity the way you desire. You will be able to add images and videos, link buttons and external websites, insert a content widget or a source code, and modify these elements by navigating from tab to tab in the WYSIWYG editor's manager panel.
+   * **WYSIWYG** --- Use this type if you want to add the WYSIWYG text editor to your entity. The editor enables you to customize the content of the selected entity the way you desire. You will be able to add images and videos, link buttons and external websites, insert a content widget or a source code, and modify these elements by navigating from tab to tab in the WYSIWYG editor's manager panel. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
    
-   .. note:: Relation is a field that enables users to tie record(s) of one entity to record(s) of another entity.
+**Relations**:
+
+    .. note:: Relation is a field that enables users to tie record(s) of one entity to record(s) of another entity.
 
    * **Many to many** --- Select this relation if any amount of the entity records can be assigned to any amount of the related entity records. For example any amount of customers may take part in an advertisement campaign and, moreover, the same customer may take part in several advertisement campaigns.
    * **One to many** --- Select this relation if one and only one entity record can be assigned to many records of another entity. For example, one account may be assigned many customers. Another example: we have created a field **Friends** that relates to contacts of potential clients recommended by a specific business customer. This is a 'one to many' relation, as one business customer may advise many friends.

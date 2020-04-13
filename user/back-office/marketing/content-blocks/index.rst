@@ -46,7 +46,8 @@ For instance, you can set the content block to have a specific text displayed fo
 2. Add a new content variant by clicking **Add Content** in the **Content Variant** section.
 3. Enter text.
 4. Drag the selected element (a text, an image, a column, or a **<>** source code) from the editor's manager panel and drop it to the required location.
-5. Rearrange the content or modify the style of the elements by navigating from tab to tab of the WYSIWYG editor's manager panel.
+5. Rearrange the content or modify the style of the elements by navigating from tab to tab of the WYSIWYG editor's manager panel. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
+
 
    .. image:: /user/img/marketing/content_blocks/ContentBlocksSample.png
       :alt: A sample of a content block's restriction setting for non-authenticated visitors

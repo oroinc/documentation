@@ -6,7 +6,7 @@
 Content Widgets
 ===============
 
-Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. WYSIWYG fields are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
+Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. :ref:`WYSIWYG fields <getting-started-wysiwyg-editor-field>` are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
 
 There are three content widget types:
 
@@ -108,3 +108,4 @@ All landing pages and content blocks where content widgets were used, are displa
 .. image:: /user/img/marketing/content_widgets/usages.png
    :alt: Landing page linked to a content widget displayed in the Usages section
 
+For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.

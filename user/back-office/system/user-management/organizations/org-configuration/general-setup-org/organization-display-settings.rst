@@ -51,6 +51,8 @@ In this section, you can specify the display settings for the organization.
 |                       |                                                                                                           |
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
 
+For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
+
 **Activity lists**
 
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
