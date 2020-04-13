@@ -18,8 +18,8 @@ Attributes
 **Financial**
 
 * shippingCost *float*
-* paymentMethod string
-* paymentMethods Collection|string[]
+* paymentMethod *string*
+* paymentMethods Collection *string*
 * currency *string*
 * subtotal *float*
 
