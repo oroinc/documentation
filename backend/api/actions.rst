@@ -29,6 +29,8 @@ The following table shows all actions provided out-of-the-box:
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | update                     | Updates an existing entity.                                                                                        |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| update\_list               | Updates a list of entities of the same type.                                                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | get\_subresource           | Returns a list of related entities represented by a relationship.                                                  |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | update\_subresource        | Updates an entity (or entities, it depends on the association type) connected to an entity the sub-resource        |
@@ -69,6 +71,10 @@ The following table shows all actions provided out-of-the-box:
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | not\_allowed               | Builds a response for case when a request does not match any public action.                                        |
 |                            | E.g. when HTTP method is not supported for REST API request.                                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| batch\_update              | Used by *update\_list* action to update or create a set of entities of the same type.                              |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| batch\_update\_item        | Used by *batch\_update* action to update or create an entity that is a part of a batch operation.                  |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 Please see the :ref:`Processors <web-api--processors>` section for more details about how to create a processor.
@@ -342,6 +348,54 @@ The following diagram shows the main data flow for this action:
    :alt: Data flow for update action
 
 For examples of usage, see the ``handleUpdate`` method of |RequestActionHandler|.
+
+.. _update-list-action:
+
+update\_list Action
+^^^^^^^^^^^^^^^^^^^
+
+This action is intended to create or update the list of entities of the same type.
+
+The action works as an asynchronous operation. The result of this action is the initial status of the created
+asynchronous operation and the ``Content-Location`` response header that contains an URL of API resource
+of this operation.
+
+The action is disabled by default.
+See :ref:`Batch API documentation <web-api--batch-api--enable>` for details about enabling it for an API resource.
+
+The route name for REST API: ``oro_rest_api_list``.
+
+The URL template for REST API: ``/api/{entity}``.
+
+The HTTP method for REST API: ``PATCH``.
+
+The context class: |UpdateListContext|. Also see :ref:`Context <context-class>` class for more details.
+
+The main processor class: |UpdateListProcessor|.
+
+Existing worker processors: |processors.update_list.yml|, |processors.shared.yml|. Run ``php bin/console oro:api:debug update_list`` to display the list of processors.
+
+This action has the following processor groups:
+
+.. csv-table::
+   :header: "Group Name","Responsibility of Processors","Description"
+   :widths: 15, 15, 30
+
+   "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
+   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
+   "security\_check","Checking whether access to the requested resource is granted.","When you add a new processor to the security_check group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
+   "load\_data","Loading an request data to the storage.","--"
+   "save\_data","Creating an asynchronous batch operation.","--"
+   "finalize","Adding the required response headers.","--"
+   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+
+The following diagram shows the main data flow for this action:
+
+.. image:: /img/backend/api/update_list.png
+   :alt: Data flow for update_list action
+
+For examples of usage, see the ``handleUpdateList`` method of |RequestActionHandler|.
 
 .. _get-subresource-action:
 
@@ -963,6 +1017,70 @@ This action has the following processor groups:
    "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 For examples of usage, see the ``handleNotAllowedItem``, ``handleNotAllowedList``, ``handleNotAllowedSubresource`` and ``handleNotAllowedRelationship`` methods of |RequestActionHandler|.
+
+.. _batch-update-action:
+
+batch\_update Action
+^^^^^^^^^^^^^^^^^^^^
+
+This action is intended to update or create a set of entities of the same type that are a part of an asynchronous
+batch operation. It is triggered by the `update\_list <#update-list-action>`__ action.
+
+The context class: |BatchUpdateContext|.
+
+The main processor class: |BatchUpdateProcessor|.
+
+Existing worker processors:|processors.batch_update.yml|. Run ``php bin/console oro:api:debug batch_update`` to see the list of processors.
+
+This action has the following processor groups:
+
+.. csv-table::
+   :header: "Group Name","Responsibility of Processors","Description"
+   :widths: 15, 30, 30
+
+   "initialize","The context initialization.","--"
+   "finalize","Adding the required response headers.","--"
+   "save_data","Persisting entities.","--"
+   "save_errors","Persisting found errors.","--"
+   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |ByStepNormalizeResultActionProcessor|."
+
+The following diagram shows the main data flow for this action:
+
+.. image:: /img/backend/api/batch_update.png
+   :alt: Data flow for batch_update action
+
+For examples of usage, see |BatchUpdateHandler|.
+
+.. _batch-update-item-action:
+
+batch\_update\_item Action
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This action is intended to create or update an entity that is a part of an asynchronous batch operation.
+It is used by the `batch\_update <#batch-update-action>`__ action.
+
+The context class: |BatchUpdateItemContext|.
+
+The main processor class: |BatchUpdateItemProcessor|.
+
+Existing worker processors:|processors.batch_update_item.yml|. Run ``php bin/console oro:api:debug batch_update_item`` to see the list of processors.
+
+This action has the following processor groups:
+
+.. csv-table::
+   :header: "Group Name","Responsibility of Processors","Description"
+   :widths: 15, 30, 30
+
+   "initialize","The context initialization.","--"
+   "transform_data","Converts the request data to entity object.","--"
+   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |ByStepNormalizeResultActionProcessor|."
+
+The following diagram shows the main data flow for this action:
+
+.. image:: /img/backend/api/batch_update_item.png
+   :alt: Data flow for batch_update_item action
+
+For examples of usage, see |BatchUpdateItem|.
 
 .. _context-class:
 

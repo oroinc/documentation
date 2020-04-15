@@ -40,6 +40,7 @@ By default, only custom entities, dictionaries, and enumerations are accessible 
    testing
    storefront
    storefront-routes
+   batch-api
 
 
 .. include:: /include/include-links-dev.rst
