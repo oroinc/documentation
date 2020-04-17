@@ -34,20 +34,25 @@ This quick reference guide illustrates the most common issues that you may face 
 
 6. **How are multiple percentage discounts applied on the same line item and order total?**
 
-    In OroCommerce promotions on order line items and order totals with the *Percent* type are stacked when applied on the same line item or order total, i.e., each subsequent discount is calculated based on the amount already discounted by the previous discount(s).
-    For example, when consecutively applying 10%, 20%, and 30% on the order total of $100, the resulting total will be calculated as follows:
+   In OroCommerce promotions on order line items and order totals with the *Percent* type are stacked when applied on the same line item or order total, i.e., each subsequent discount is calculated based on the amount already discounted by the previous discount(s).
+   For example, when consecutively applying 10% (percentage), $15 (fixed amount), and 30% (percentage) on the order total of $100, the resulting total will be calculated as follows:
 
-    $100  - (10% off $100) = $100 - $10 = $90
-    $90 - (20% off $90) = $90 - $18 = $72
-    $72 - (30% off $72) = $72 - $21.6 = $50.4
+   $100  - (10% off $100) = $100 - $10 = $90
 
-    When applying the same promotions in a different order, for example 20%, 30%, and 10% on the order total of $100, the resulting total will be different:
+   $90 - $15 = $75
 
-    $100  - (20% off $100) = $100 - $20 = $80
-    $80 - (30% off $80) = $80 - $21 = $59
-    $59 - (10% off $59) = $59 - $5.9 = $53.1
+   $75 - (30% off $75) = $75 - $22.50 = $52.50
 
-    The order in which the promotions are applied is defined by its "Sort Order" field value. You can also prevent combining multiple promotions in the same order by setting "Stop Further Rule Processing" flag.
+   If discounts are stacked in a different order, for example 30%, $15, and 10%, the resulting amount will be different:
+
+   $100  - (30% off $100) = $100 - $30 = $70
+
+   $70 - $15 = $55
+
+   $55 - (10% off $55) = $55 - $5.50 = $49.50
+
+   The order in which the promotions are applied is defined by its "Sort Order" field value. You can also prevent combining multiple promotions in the same order by setting "Stop Further Rule Processing" flag.
+
 
 .. stop
 
