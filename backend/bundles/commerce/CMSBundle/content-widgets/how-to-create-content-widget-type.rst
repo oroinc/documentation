@@ -40,7 +40,7 @@ To implement a new content widget, create a class that stores content widget typ
 
         public function getSettingsForm(ContentWidget $contentWidget, FormFactoryInterface $formFactory): ?FormInterface
         {
-            return $formFactory->createBuilder(FormType::class, $contentWidget)
+            return $formFactory->createBuilder(FormType::class)
                 ->add('isShort', CheckboxType::class, ['label' => 'acme.copyright.settings.is_short.label', 'required' => false])
                 ->getForm();
         }
