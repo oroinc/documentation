@@ -966,10 +966,16 @@ Example:
     // get all API resources
     // (all resources are configured to be used in API, including not accessible resources)
     $resources = $resourcesProvider->getResources($version, $requestType);
+    // get class names of all API resources accessible through API
+    $accessibleResources = $resourcesProvider->getAccessibleResources($version, $requestType);
     // check whether an entity is configured to be used in API
     $isKnown = $resourcesProvider->isResourceKnown($entityClass, $version, $requestType);
     // check whether an entity is accessible through API
     $isAccessible = $resourcesProvider->isResourceAccessible($entityClass, $version, $requestType);
+    // check whether an entity is accessible as an association in API
+    $isAccessibleAsAssociation = $resourcesProvider->isResourceAccessibleAsAssociation($entityClass, $version, $requestType);
+    // check whether an entity does not have an identifier field
+    $isResourceWithoutIdentifier = $resourcesProvider->isResourceWithoutIdentifier($entityClass, $version, $requestType);
 
 .. _collect-subresource-action:
 
