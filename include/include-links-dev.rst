@@ -1870,6 +1870,18 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/Update/UpdateProcessorTestCase.php" target="_blank">UpdateProcessorTestCase</a>
 
+.. |UpdateListProcessorTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/UpdateList/UpdateListProcessorTestCase.php" target="_blank">UpdateListProcessorTestCase</a>
+
+.. |BatchUpdateProcessorTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Batch/Processor/Update/BatchUpdateProcessorTestCase.php" target="_blank">BatchUpdateProcessorTestCase</a>
+
+.. |BatchUpdateItemProcessorTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Batch/Processor/UpdateItem/BatchUpdateItemProcessorTestCase.php" target="_blank">BatchUpdateItemProcessorTestCase</a>
+
 .. |FormProcessorTestCase| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/FormProcessorTestCase.php" target="_blank">FormProcessorTestCase</a>
@@ -3723,6 +3735,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/NormalizeResultActionProcessor.php" target="_blank">NormalizeResultActionProcessor</a>
 
+.. |ByStepNormalizeResultActionProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/ByStepNormalizeResultActionProcessor.php" target="_blank">ByStepNormalizeResultActionProcessor</a>
+
 .. |BuildFormBuilder| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/ChangeSubresource/BuildFormBuilder.php" target="_blank">BuildFormBuilder</a>
@@ -3830,6 +3846,18 @@ Links (Dev)
 .. |processors.update.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.update.yml" target="_blank">processors.update.yml</a>
+
+.. |UpdateListContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/UpdateList/UpdateListContext.php" target="_blank">UpdateListContext</a>
+
+.. |UpdateListProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/UpdateListProcessor.php" target="_blank">UpdateListProcessor</a>
+
+.. |processors.update_list.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.update_list.yml" target="_blank">processors.update_list.yml</a>
 
 .. |Fetching Resources| raw:: html
 
@@ -4018,6 +4046,38 @@ Links (Dev)
 .. |processors.collect_subresources.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_subresources.yml" target="_blank">processors.collect_subresources.yml</a>
+
+.. |BatchUpdateContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Batch/Processor/Update/BatchUpdateContext.php" target="_blank">BatchUpdateContext</a>
+
+.. |BatchUpdateProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Batch/Processor/BatchUpdateProcessor.php" target="_blank">BatchUpdateProcessor</a>
+
+.. |processors.batch_update.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.batch_update.yml" target="_blank">processors.batch_update.yml</a>
+
+.. |BatchUpdateItemContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Batch/Processor/UpdateItem/BatchUpdateItemContext.php" target="_blank">BatchUpdateItemContext</a>
+
+.. |BatchUpdateItemProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Batch/Processor/BatchUpdateItemProcessor.php" target="_blank">BatchUpdateItemProcessor</a>
+
+.. |processors.batch_update_item.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.batch_update_item.yml" target="_blank">processors.batch_update_item.yml</a>
+
+.. |BatchUpdateHandler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Batch/Handler/BatchUpdateHandler.php" target="_blank">BatchUpdateHandler</a>
+
+.. |BatchUpdateItem| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Batch/Handler/BatchUpdateItem.php" target="_blank">BatchUpdateItem</a>
 
 .. |SubresourcesProvider| raw:: html
 
@@ -4435,9 +4495,17 @@ Links (Dev)
 
    <a href="http://jsonapi.org/format/" target="_blank">JSON:API specification</a>
 
+.. |JSON Pointer| raw:: html
+
+   <a href="https://tools.ietf.org/html/rfc6901" target="_blank">JSON Pointer</a>
+
 .. |RestJsonApiTestCase| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiTestCase.php" target="_blank">RestJsonApiTestCase</a>
+
+.. |RestJsonApiUpdateListTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiUpdateListTestCase.php" target="_blank">RestJsonApiUpdateListTestCase</a>
 
 .. |Doctrine and Alice fixtures| raw:: html
 
@@ -5141,7 +5209,7 @@ Links (Dev)
 
 .. |KnpGaufretteBundle documentation| raw:: html
 
-   <a href="https://github.com/KnpLabs/KnpGaufretteBundle/blob/master/README.markdown" target="_blank">KnpGaufretteBundle documentation</a>
+   <a href="https://github.com/KnpLabs/KnpGaufretteBundle/blob/master/README.md" target="_blank">KnpGaufretteBundle documentation</a>
 
 .. |LiipImagineBundle| raw:: html
 

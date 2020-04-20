@@ -198,5 +198,23 @@ This command shows the structure of ``Resources/config/oro/api.yml``.
 
     php bin/console oro:api:config:dump-reference
 
+.. _web-api--commands--oro-cron-api-async_operations-cleanup:
+
+oro:cron:api:async_operations:cleanup
+-------------------------------------
+
+This command deletes all obsolete asynchronous operations used by Batch API.
+
+.. code:: bash
+
+    php bin/console oro:cron:api:async_operations:cleanup
+
+To show the number of obsolete asynchronous operations without the deletion of them, use the ``--dry-run`` option:
+
+.. code:: bash
+
+    php bin/console oro:cron:api:async_operations:cleanup --dry-run
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
