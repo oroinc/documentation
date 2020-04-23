@@ -68,6 +68,9 @@ value is **5 0 \* \* \***.
 
     class DemoCommand extends Command implements CronCommandInterface
     {
+        /** @var string */
+        protected static $defaultName = 'oro:cron:demo';
+
         public function getDefaultDefinition()
         {
             return '5 0 * * *';
@@ -76,8 +79,6 @@ value is **5 0 \* \* \***.
 
         protected function configure()
         {
-            $this->setName('oro:cron:demo');
-
             // ...
         }
 
