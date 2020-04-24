@@ -350,7 +350,7 @@ All elements must be described in ``{BundleName}/Tests/Behat/behat.yml`` the fol
       elements:
         Login:
           selector: '#login-form'
-          class: 'Oro\Bundle\TestFrameworkBundle\Behat\Element\Form'
+          class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
           options:
             mapping:
               Username: '_username'
@@ -587,7 +587,7 @@ Additionally, Alice allows you to |include files| via extension, so you can impo
    :linenos:
 
     include:
-        - @OroCustomerBundle/Tests/Behat/Features/Fixtures/CustomerUserAmandaRCole.yml
+        - '@OroCustomerBundle/Tests/Behat/Features/Fixtures/CustomerUserAmandaRCole.yml'
 
 **You should always include fixtures from other bundles with entities that were declared within that bundle see :ref:`Conventions <behat-conventions>`.**
 
