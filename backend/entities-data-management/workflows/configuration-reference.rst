@@ -655,37 +655,37 @@ Transition definition configuration has the following options.
                 connected_definition: # Try to make call connected
                     # Set timeout value
                     preactions:
-                        - @assign_value: [$call_timeout, 120]
-                        - @increment_value: [$call_attempt]
+                        - '@assign_value': [$call_timeout, 120]
+                        - '@increment_value': [$call_attempt]
                     # Check that timeout is set
                     conditions:
                         @not_blank: [$call_timeout]
                     # Set call_successfull = true
                     actions:
-                        - @assign_value: [$call_successfull, true]
+                        - '@assign_value': [$call_successfull, true]
                 not_answered_definition: # Callee did not answer
                     # Set timeout value
                     preactions:
-                        - @assign_value: [$call_timeout, 30]
+                        - '@assign_value': [$call_timeout, 30]
                     # Make sure that caller waited at least 60 seconds
                     conditions: # call_timeout not empty and >= 60
                         @and:
-                            - @not_blank: [$call_timeout]
-                            - @ge: [$call_timeout, 60]
+                            - '@not_blank': [$call_timeout]
+                            - '@ge': [$call_timeout, 60]
                     # Set call_successfull = false
                     actions:
-                        - @assign_value: [$call_successfull, false]
+                        - '@assign_value': [$call_successfull, false]
                 end_conversation_definition:
                     conditions:
                         # Check required properties are set
                         @and:
-                            - @not_blank: [$conversation_result]
-                            - @not_blank: [$conversation_comment]
-                            - @not_blank: [$conversation_successful]
+                            - '@not_blank': [$conversation_result]
+                            - '@not_blank': [$conversation_comment]
+                            - '@not_blank': [$conversation_successful]
                     # Create PhoneConversation and set it's properties
                     # Pass data from workflow to conversation
                     actions:
-                        - @create_entity: # create PhoneConversation
+                        - '@create_entity': # create PhoneConversation
                             class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
                             attribute: $conversation
                             data:
@@ -811,18 +811,18 @@ Also it is possible to refer to any property of Workflow Item using "$." prefix.
                     conditions:
                         # empty($call_timeout) || (($call_timeout >= 60 && $call_timeout < 100) || ($call_timeout > 0 && $call_timeout <= 30))
                         @or:
-                            - @blank: [$call_timeout]
-                            - @or:
-                                - @and:
+                            - '@blank': [$call_timeout]
+                            - '@or':
+                                - '@and':
                                     message: Call timeout must be between 60 and 100
                                     parameters:
-                                        - @greater_or_equal: [$call_timeout, 60]
-                                        - @less: [$call_timeout, 100]
-                                - @and:
+                                        - '@greater_or_equal': [$call_timeout, 60]
+                                        - '@less': [$call_timeout, 100]
+                                - '@and':
                                     message: Call timeout must be between 0 and 30
                                     parameters:
-                                        - @less_or_equal: [$call_timeout, 30]
-                                        - @greater: [$call_timeout, 0]
+                                        - '@less_or_equal': [$call_timeout, 30]
+                                        - '@greater': [$call_timeout, 0]
 
 
 Pre, Post and Init Actions
@@ -849,9 +849,9 @@ Similarly to Conditions, alias of Action starts from "@" symbol and must refer t
             transition_definitions:
                 # some transition definition
                     preactions:
-                        - @assign_value: [$call_attempt, 1]
+                        - '@assign_value': [$call_attempt, 1]
                     actions:
-                        - @create_entity: # create an entity PhoneConversation
+                        - '@create_entity': # create an entity PhoneConversation
                             class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
                             attribute: $conversation
                             data: # Fill values of freshly created PhoneConversation with data from current WorkflowItem

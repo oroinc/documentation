@@ -91,7 +91,7 @@ Syntax examples are provided below:
 .. code-block:: php
    :linenos:
 
-    - @alias_of_action:
+    - '@alias_of_action':
         conditions:
             # optional condition configuration
         parameters:
@@ -105,7 +105,7 @@ Syntax examples are provided below:
 .. code-block:: php
    :linenos:
 
-    - @alias_of_action:
+    - '@alias_of_action':
         - some_parameters: some_value
         # other parameters of action
 

@@ -62,12 +62,12 @@ The following example shows how this services can be used:
     ```yaml
     # To register your config dumper:
     oro.config.dumper:
-        class: 'Oro\Example\Dumper\CumulativeConfigMetadataDumper'
+        class: Oro\Example\Dumper\CumulativeConfigMetadataDumper
         public: false
 
     # To register your config warmer with oro.config_cache_warmer.provider tag:
     oro.configuration.provider.test:
-        class: 'Oro\Example\Dumper\ConfigurationProvider'
+        class: Oro\Example\Dumper\ConfigurationProvider
         tags:
             - { name: oro.config_cache_warmer.provider, dumper: 'oro.config.dumper' }
 

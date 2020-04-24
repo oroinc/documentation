@@ -86,7 +86,7 @@ an action with the Contact entity.
                 preconditions:                                       # List of preconditions to check before scheduling process
                     @equal: [$source.name, 'other']                  # Perform process only for entities that have "other" source
                 actions_configuration:                               # list of actions to perform
-                    - @find_entity:                                  # find existing entity
+                    - '@find_entity':                                  # find existing entity
                         conditions:                                  # action conditions
                             @empty: $assignedTo                      # if field $assignedTo is empty
                         parameters:                                  # action parameters
