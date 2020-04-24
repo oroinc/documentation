@@ -30,6 +30,19 @@ The scope manager is a service that provides an interface for collecting the sco
 * Create a collected scope in response to the findOrCreate operation (if the scope is not found).
 * Use the scope criteria providers method, getCriteriaForCurrentScope(), to get a portion of the scope information.
 
+.. code-block:: php
+    :linenos:
+
+    // Find an existing scope or return null
+    $scope = $scopeManager->find(ProductVisibility::getScopeType(), [
+        ScopeCriteriaProvider::WEBSITE => $website,
+    ]);
+
+    // Find an existing scope or create a new one
+    $scope = $scopeManager->findOrCreate(ProductVisibility::getScopeType(), [
+        ScopeCriteriaProvider::WEBSITE => $website,
+    ]);
+
 Scope Criteria Providers
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
