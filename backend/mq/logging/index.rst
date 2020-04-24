@@ -27,7 +27,7 @@ Consumer console command has different |verbosity levels| that determine the mes
 All the ``LogLevel::ERROR`` logs and higher also will be printed to the ``prod.log`` file.
 You can change minimal log level that should be printed to the ``prod.log`` file using the ``oro:logger:level`` command.
 For more details, see the |Temporarily Decrease Log Level| documentation.
- 
+
 .. note:: Keep in mind that ``prod.log`` is just an example. Your log file name may differ depending on your Monolog handlers configuration.
 
 Processors
@@ -40,7 +40,7 @@ Handlers
 
 Consumer output is based on |Monolog|, so it supports a stack of handlers that can be used to write the log entries to different locations (e.g., files, database, Slack, etc).
 See more information in the |related Symfony documentation|.
- 
+
 It is useful when your production is configured with the real-time log service such as |Google Stackdriver|. Read more in the |How to write logs to Stackdriver|.
 
 Formatters
@@ -64,14 +64,14 @@ Message Queue Consumer provides |ConsoleHandler| that listens to console events 
 Consumer Heartbeat
 ------------------
 
-An administrator must be informed about the state of consumers in the system (whether there is at least one alive). 
+An administrator must be informed about the state of consumers in the system (whether there is at least one alive).
 
 This is covered by the Consumer Heartbeat functionality that works in the following way:
 
 * On start and after every configured time period, each consumer calls the ``tick`` method of the |ConsumerHeartbeat| service that informs the system that the consumer is alive.
 * The |oro:cron:message-queue:consumer_heartbeat_check| cron command is periodically executed to check consumers' state. If no alive consumers found, the ``oro/message_queue_state`` socket message is sent notifying all logged-in users that the system may work incorrectly (because consumers are not available).
 * The same check is also performed when a user logs in. This is done to notify users about the problem as soon as possible.
-                     
+
 The check period can be changed in the application configuration file using the ``consumer_heartbeat_update_period`` option:
 
 .. code-block:: yaml
@@ -184,7 +184,7 @@ Declare service:
 
     services:
         acme_demo.consumption.custom_extension:
-            class: 'Acme\Bundle\DemoBundle\Consumption\Extension\CustomExtension'
+            class: Acme\Bundle\DemoBundle\Consumption\Extension\CustomExtension
             public: false
             tags:
                 - { name: 'oro_message_queue.consumption.extension', persistent: true }

@@ -272,13 +272,13 @@ The scope criteria providers are already registered in the *service.yml* file:
 .. code-block:: yaml
     :linenos:
 
-    oro_customer.account_scope_criteria_provider:
-        class: 'Oro\Bundle\CustomerBundle\Provider\ScopeAccountCriteriaProvider'
+    oro_customer.customer_scope_criteria_provider:
+        class: Oro\Bundle\CustomerBundle\Provider\ScopeCustomerCriteriaProvider
         tags:
             - { name: oro_scope.provider, scopeType: web_content, priority: 300 }
 
-    oro_customer.account_group_scope_criteria_provider:
-        class: 'Oro\Bundle\CustomerBundle\Provider\ScopeAccountGroupCriteriaProvider'
+    oro_customer.customer_group_scope_criteria_provider:
+        class: Oro\Bundle\CustomerBundle\Provider\ScopeCustomerGroupCriteriaProvider
         tags:
             - { name: oro_scope.provider, scopeType: web_content, priority: 200 }
 
@@ -336,7 +336,7 @@ In the bundle's *service.yml* file, we add:
     :linenos:
 
     oro_website.website_scope_criteria_provider:
-        class: 'Oro\Bundle\WebsiteBundle\Provider\ScopeCriteriaProvider'
+        class: Oro\Bundle\WebsiteBundle\Provider\ScopeCriteriaProvider
         tags:
             - { name: oro_scope.provider, scopeType: web_content, priority: 100 }
 
