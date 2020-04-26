@@ -16,6 +16,7 @@ To reach promotion configuration:
 2. Select **Commerce > Sales > Promotion** in the menu to the left.
 
    .. image:: /user/img/system/config_commerce/sales/PromotionSysConfig.png
+      :alt: Global promotions configuration
 
    .. note:: By default, promotions are enabled and the **Combine All Discounts** strategy is set.
 

@@ -10,6 +10,7 @@ You can edit records in your application in three ways:
 1. By using |IcPencil| :ref:`inline editing <doc-grids-actions-records-edit-inline>` in :ref:`record tables <doc-grids>`.
 
    .. image:: /user/img/getting_started/records/inline_editing_example.png
+      :alt: Illustration of the inline editing in record tables
 
 2. By clicking  |IcEdit| **Edit** it in the ellipsis (or more options) menu located at the end of the row of the selected record in the :ref:`table <doc-grids>`.
 
@@ -33,12 +34,13 @@ To edit a record using inline-editing:
    Inline editors can be of different types. The simplest inline editor is a plain text field, where you can type the required value.
 
    .. image:: /user/img/getting_started/records/grids/inline_editing_example.png
+      :alt: An example of the plain text field type of inline editors
 
    If a field can take just certain values, the inline editor will show you a list values to select from.
 
    .. image:: /user/img/getting_started/records/grids/grids_inlineeditor2.png
       :width: 20%
-      :alt: An example of a list values for a field when editing a record inline
+      :alt: An example of a list values editor type
 
 4. Click the |IcActivate| **Save Changes** icon to save a new value, or the |IcBan| **Discard Changes** icon to return to the old value.
 
@@ -49,6 +51,7 @@ Manage Records Using Ellipsis Menu
 Ellipsis menu, or the more options menu, is located on the page of all records, and is available for each item in the table. To see what actions are available for the selected record, click the ellipsis menu at the end of its row. You may be able to view, edit, delete records, or perform other record-specific actions, such as activating or deactivating a process.
 
 .. image:: /user/img/getting_started/records/grids/grids_editrecord.png
+   :alt: Illustration of the ellipsis menu
 
 .. finish_edit
 

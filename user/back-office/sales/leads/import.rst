@@ -36,3 +36,4 @@ You can import the bulk details of updated or processed leads information in the
 .. |item| replace:: lead
 
 .. |image| image:: /user/img/sales/leads/import_leads.png
+           :alt: The steps you need to take to import leads

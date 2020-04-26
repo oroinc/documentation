@@ -8,14 +8,17 @@ Edit a Frontend Menu
 A frontend menu may be multi-level, and the child menu items are nested under parent menu items (e.g., **About**, **Customer Service**, **Privacy Policy**, and others are nested under **Information**).
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_2.png
+   :alt: Configuration settings of the About menu under the commerce_footer_links frontend menu
 
 Menu items on the same level of hierarchy may be visually separated by a divider that looks like a horizontal line and helps you logically organize menu items. However, some menus do not support displaying dividers (on a particular level in the tree, or in general).
 
 .. image:: /user/img/system/menus/user_menu.png
+   :alt: User menu without divider
 
 To update the frontend menu contents, navigate to **System > Frontend Menus** in the main menu and click the menu name or the |IcView| View icon in the corresponding row of the frontend menu list.
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_1.png
+   :alt: A lust of available frontend menu items
 
 On the page that opens, the menu item tree is displayed in the left panel. The center is reserved for the menu item configuration.
 
@@ -29,6 +32,7 @@ Toggle the Frontend Menu Tree View
 3. To expand / collapse a parent menu item, click an arrow in front of it.
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_edit.png
+   :alt: Numbers that define the actions you can do to frontend menu items described above
 
 .. _doc-config-menus-actions-draganddrop-frontend:
 
@@ -37,6 +41,7 @@ Toggle the Frontend Menu Tree View
 - If an arrow points to the place between items, that is where the moved item will be placed.
 
   .. image:: /user/img/system/frontend_menu/d&dsame.png
+     :alt: Dragging the Catalog menu under Shopping Rules
 
 - If and arrow appears in front of a menu item, then the moved item will become a child of the item to which the arrow points.
 
@@ -81,6 +86,7 @@ Add a Menu Item
         A user agent substring is a part of the string mentioned above (e.g., Mozilla, Windows, Safari, etc).
 
         .. image:: /user/img/system/frontend_menu/user_agent.png
+           :alt: The settings under User Agent
 
   3) Select the corresponding operation from the list.
 
@@ -94,6 +100,7 @@ Add a Menu Item
 
    .. image:: /user/img/system/frontend_menu/frontend_menu_5.png
       :width: 70%
+      :alt: A list of available operations under User Agent
 
   4) To create a more advanced condition, you can combine constraints into the expression using logical AND and OR operators:
 
@@ -102,18 +109,21 @@ Add a Menu Item
        *AND* operation means that only those user agents that comply with all the specified conditions in a group will be selected.
 
      .. image:: /user/img/system/frontend_menu/frontend_menu_6.png
+        :alt: The steps you need to take to add another condition with AND operator to User Agent
 
      * Click **+ Add** at the bottom of the expression block to add another constraint block into the expression via OR.
 
        *OR* operation activates the expression once any of the constraint blocks in a group evaluates to true.
 
      .. image:: /user/img/system/frontend_menu/frontend_menu_7.png
+        :alt: The steps you need to take to add another condition with OR operator to User Agent
 
 * **Exclude On Screens** --- Enables you to hide the menu items on the specified screens sizes by clicking any screen size and selecting the one for which the menu will be hidden from the customer. Hold **Ctrl** and click the value to select/deselect multiple screens.
 
     As an illustration, let us hide the **About** menu item from the desktops with a 13-inch screen by enabling **Exclude On Screens** and selecting the corresponding screen size.
 
     .. image:: /user/img/system/frontend_menu/frontend_menu_9.png
+       :alt: Footer menu in the storefront illustrating the Exclude On Screens option both enabled and disabled
 
 * **Condition** --- Enables you to restrict the visibility of a menu item using the following functions:
 
@@ -136,9 +146,12 @@ Add a Menu Item
   The steps are illustrated below:
 
   .. image:: /user/img/system/frontend_menu/frontend_menu_11.png
+     :scale: 50%
+     :alt: The steps you need to take to enable the About section to customers with configured taxes in the storefront
 
   .. image:: /user/img/system/frontend_menu/frontend_menu_12.png
-
+     :scale: 50%
+     :alt: The steps you need to take to disable the About section to customers with configured taxes in the storefront
 
 4. Click **Save** to save your changes. If you wish to start creating another menu item right away, click **Save and New** on the top right.
 
@@ -153,6 +166,7 @@ Add a Divider
 2. Click **Create** drop-down on the top right, and select **Create Divider**.
 
 .. image:: /user/img/system/frontend_menu/menus_createdivider.png
+   :alt: Highlight the Create Divider button under Create Menu Item
 
 The created divider will appear as the last one on the list of children of the same parent item. You can move it to the position that you need, as described in the :ref:`Toggle the Menu Tree View <doc-config-menus-actions-draganddrop-frontend>` action description. Reload the page to see changes.
 
@@ -176,6 +190,7 @@ Toggle Item Visibility
 3. **Find a Menu Item** ---  To quickly find a menu item, enter its name into the search field and click the |IcSearch| **Search** icon or press **Enter**.
 
    .. image:: /user/img/system/menus/menus_application_search.png
+      :alt: Using the search tab to locate all references about sales
 
 4. **Delete a Menu Item / Divider** --- To delete a menu item or a divider, click the necessary item in the left panel. Click **Delete** on the top right. In the **Delete Confirmation** dialog box, click **Yes, Delete**. Reload the page to see changes.
 

@@ -51,6 +51,7 @@ Manage Multiple Workflows
 Workflows are expandable and can be collapsed, if necessary, by clicking **+** on the left of the workflow as illustrated below:
 
 .. image:: /user/img/sales/opportunities/collapse_flow.jpg
+   :alt: Illustrate the expanded Opportunity Management and Opportunity Support flows
 
 Transitions
 ^^^^^^^^^^^
@@ -69,7 +70,7 @@ Develop
 Develop transition is a simplified form for editing an opportunity.
 
 .. image:: /user/img/sales/opportunities/develop.jpg
-   :alt: Developing and opportunity
+   :alt: Developing an opportunity transition
 
 Close As Won/Close As Lost
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,12 +107,15 @@ Other
 Depending on their configuration, workflow steps can vary. Here is an example of the steps and transitions configured for the Opportunity Support flow.
 
 .. image:: /user/img/sales/opportunities/wf_steps.jpg
+   :alt: Example of the open Opportunity Support Flow
 
 
 .. image:: /user/img/sales/opportunities/wf_steps_2.jpg
-
+   :alt: Example of the Opportunity Support Flow steps and transitions once the complaint is registered
 
 .. image:: /user/img/sales/opportunities/wf_steps_3.jpg
+   :alt: Example of the closed Opportunity Support Flow
+
 
 .. _mc-sales-opportunities-quote:
 
@@ -157,7 +161,7 @@ On the Quote page, the relation to the opportunity (which this quote has been cr
    :alt: Relation between the quote and opportunity on quote page
 
 .. image:: /user/img/sales/opportunities/quote_opp_edit.png
-  :alt: Relation between the quote and opportunity on quote page
+   :alt: Relation between the quote and opportunity on quote page
 
 .. note:: Although opportunity relation can be displayed on the quote page, it is not possible to manage it. When there is no opportunity relation available for a quote, inactive **Opportunity** field is displayed.
 

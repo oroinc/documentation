@@ -9,6 +9,7 @@ Segments
 Segments are dynamically filtered subsets of the data (e.g. product collection, marketing list). To use a set of records in reports, filters, web catalog nodes or marketing lists, you can create a segment and reuse it instead of copying the same query as a condition.
 
 .. image:: /user/img/reports/use_segments_in_filter.png
+   :alt: Creating a filter condition using the Apply Segment option
 
 Segment combines a set of records filtered using the query that may use the following information as the foundation:
 
@@ -34,6 +35,7 @@ To create a new segment:
 #. In the *General Details*:
 
    .. image:: /user/img/reports/segment_general.png
+      :alt: Creating the dynamic Featured Products segment for the product entity
 
    a) Fill in the segment name.
 
@@ -50,6 +52,7 @@ To create a new segment:
 #. In the *Designer > Columns* section, define the set of the fields of the entity records to be shown in the segment.
 
    .. image:: /user/img/reports/list_columns.png
+      :alt: Illustrate the Designer section on the create segment page
 
    In order to add a column to the grid:
 
@@ -64,6 +67,7 @@ To create a new segment:
       #) Reorder the columns by clicking on the line and dragging it to the necessary location.
 
       .. image:: /user/img/reports/segments_column.png
+         :alt: Adding the product status, featured products, product id and sku columns in the designer section
 
    In order to manage the columns, use action icons in the last column:
 
@@ -95,6 +99,7 @@ To view the records selected using the segment filter:
 #. Click on the necessary segment line.
 
 .. image:: /user/img/reports/segment_view.png
+   :alt: View the Featured Products segment outcome
 
 
 

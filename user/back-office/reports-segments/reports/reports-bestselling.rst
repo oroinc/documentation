@@ -12,6 +12,7 @@ To filter the output of a Best Selling Products report:
 1. Navigate to **Report & Segments > Reports > Best Selling Products**.
 
    .. image:: /user/img/reports/system_reports_2.png
+      :alt: Best Selling Products report
 
 2. Here, you can view:
 
@@ -23,10 +24,12 @@ To filter the output of a Best Selling Products report:
 3. To configure a new report, click |IcFilter| to display the configurable fields and filter them by the corresponding time and product.
 
    .. image:: /user/img/reports/system_reports_3.png
+      :alt: Configurable fields to filter the Best Selling Products report
 
 4. Once finished with the configuration, click **Update** at the same field to reload the page and display a new report with the requested information.
 
    .. image:: /user/img/reports/system_reports_4.png
+      :alt: Highlight the Update button that is used to reload the page
 
 5. Also, you can manage the columns of the report by clicking |IcSettings| to the right and opening the **Grid Settings** to see the list of columns that organize the item details.
 

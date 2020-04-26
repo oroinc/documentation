@@ -19,6 +19,7 @@ From the **Requests for Quote** page, you can perform the following actions:
 You can also engage RFQs in various activities, such as :ref:`adding a note <user-guide-add-note>`, :ref:`sending an email <user-guide-using-emails>` or :ref:`adding an event <doc-activities-events>` to an RFQ.
 
 .. image:: /user/img/sales/rfq/rfq_4.png
+   :alt: Various activities available for rfqs
 
 Create a Quote from an RFQ
 --------------------------
@@ -40,11 +41,13 @@ Additionally, you can perform the following actions by clicking on the correspon
 
   .. image:: /user/img/sales/rfq/rfq_7.png
      :width: 100%
+     :alt: The steps you need to take to create send a quote to a customer
 
 Once the message is prepared and sent, the quote backoffice status is changed to *Sent to customer*.
 
 .. image:: /user/img/sales/rfq/rfq_8.png
    :width: 100%
+   :alt: A sample of the quote with the Sent to Customer status and available actions
 
 From this page, you can cancel |IcTimes| or expire |IcExpireQuote| the quote, delete |IcDelete| the quote, and the backoffice status will change to *Closed*.
 
@@ -66,6 +69,7 @@ To create an order from an RFQ:
 The **More Actions** menu enables users to :ref:`add notes <user-guide-add-note>` to the order, :ref:`send an email <user-guide-using-emails>` to the customer or :ref:`add an event <doc-activities-events>`. An event could be used to schedule a call or a meeting.
 
 .. image:: /user/img/sales/rfq/rfq_11.png
+   :alt: Click Create Order from the rfq view page
 
 
 .. _user-guide--sales--requests-for-quote--edit:
@@ -81,9 +85,6 @@ To edit an RFQ:
 4. Check the fields required in the **General** section and modify the information, if necessary.
 5. Add notes and assignees.
 6. Adjust target prices, quantity and add additional products.
-
-   .. image:: /user/img/sales/rfq/rfq_10.png
-
 7. Click **Save and Close** on the top right to save all the changes made.
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions:
@@ -106,9 +107,11 @@ Once the RFQ is submitted by a customer in the storefront, it becomes immediatel
 
 .. image:: /user/img/sales/rfq/rfq_12.png
    :class: with-border
+   :alt: Display the rfq with the customer status Submitted in the storefront
 
 .. image:: /user/img/sales/rfq/rfq_13.png
    :class: with-border
+   :alt: Display the rfq with the internal status Open in the back-office
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions--processed:
 
@@ -121,6 +124,8 @@ Marking RFQ as processed will change its internal status to *Processed*.
 
 .. image:: /user/img/sales/rfq/rfq_14.png
    :class: with-border
+   :alt: Display the rfq with the internal status Processed in the back-office
+
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions--more-info:
 
@@ -139,6 +144,8 @@ The internal status should then change to *More Information Requested*, and the 
 
 .. image:: /user/img/sales/rfq/rfq_16.png
    :class: with-border
+   :alt: Display the rfq with the internal status More Information Requested in the back-office
+
 
 Once the customer responds to the request for additional information, the assigned sales representative is notified that the customer has provided the requested information and can continue processing the request.
 
@@ -155,6 +162,7 @@ This will change the internal status to *Declined*, and the customer status to *
 
 .. image:: /user/img/sales/rfq/rfq_17.png
    :class: with-border
+   :alt: Display the rfq with the internal status Declined in the back-office
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions--delete:
 
@@ -169,6 +177,8 @@ The internal status will be changed to *Deleted*.
 
 .. image:: /user/img/sales/rfq/rfq_18.png
    :class: with-border
+   :alt: Display the rfq with the internal status Deleted in the back-office
+
 
 .. include:: /include/include-images.rst
    :start-after: begin

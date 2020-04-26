@@ -10,5 +10,6 @@ The autocomplete shows you a list of elements that can be used to build you expr
 To use autocomplete, start entering the expression, and the drop-down list with suggested completions will appear at the bottom of the field. Depending on what the next element of the expression must or can be, suggestions consist of either properties or operators. Click the value to insert it into your expression.
 
 .. image:: /user/img/sales/pricelist/product_assignment_rule.gif
+   :alt: Illustrating the principles of building the expression
 
 

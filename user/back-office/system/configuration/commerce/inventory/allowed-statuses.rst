@@ -17,6 +17,7 @@ To change the default inventory statuses:
 
    .. image:: /user/img/system/config_commerce/inventory/AllowedStatuses.png
       :class: with-border
+      :alt: Inventory allowed statuses system configuration
 
    The following table describes the options available on the page:
 

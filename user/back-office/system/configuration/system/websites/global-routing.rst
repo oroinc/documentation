@@ -21,6 +21,7 @@ To change the default global routing settings:
 
    .. image:: /user/img/system/config_system/routing_general.png
       :class: with-border
+      :alt: Global website routing settings
 
 3. In the **General** section, define the following options:
 
@@ -57,13 +58,13 @@ To change the default global routing settings:
    * **Navigation Root** - select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
 
        .. image:: /user/img/system/config_system/visible_content_node.png
-          :alt: The selected sub-menu nodes that will be visible in the storefront.
-
+          :alt: The selected sub-menu nodes that will be visible in the storefront
 
 4. In the **Direct URLs** section, configure the following settings:
 
     .. image:: /user/img/system/config_system/routing_direct_url.png
        :class: with-border
+       :alt: Global Direct URLs settings
 
     * **Enable Direct URLs** - when enabled, the page URL is built using the page title (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
 
@@ -81,6 +82,7 @@ To change the default global routing settings:
 
    .. image:: /user/img/system/config_system/routing_website_matchers.png
       :class: with-border
+      :alt: Global website matchers configuration
 
    .. note:: The Website Matchers feature is only available in the Enterprise edition.
 

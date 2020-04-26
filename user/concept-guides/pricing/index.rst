@@ -34,6 +34,7 @@ Pricing strategy is the approach you take when considering which prices from the
 .. note:: The minimal price selection strategy is enabled by default since OroCommerce version 2.2. The priority-based price merging was the default configuration in the earlier OroCommerce versions.
 
 .. image:: /user/img/concept-guides/prices/price_selection_strategy.png
+   :alt: Set a pricing selection strategy in the system configuration
 
 The best way to illustrate the strategy differences is to compare prices for one product, e.g., *220 Lumen Rechargeable Headlamp*, in different price lists.
 
@@ -48,7 +49,7 @@ Let's consider the following scenario:
 Customer A is assigned three price lists from the five available -- *Stock Clearance PL*, *Customer A PL*, and *Spring Sale 2020 PL*.
 
 .. image:: /user/img/concept-guides/prices/price_lists_for_customerA.png
-
+   :alt: View the three price lists assigned to Customer A
 
 Minimal Prices (default)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,6 +77,7 @@ When diving deeper into the price tiers of the three assigned price lists, we ca
    "100+ items","--","--","$73.95","**$73.95**"
 
 .. image:: /user/img/concept-guides/prices/lamp_minimal_prices.png
+   :alt: View all prices per tier for the lumen headlamp configured based on the selected minimal prices strategy
    :scale: 100%
 
 Merge by Priority
@@ -98,11 +100,13 @@ Based on the price lists priority that you have set for Customer A, the lumen he
 1. Prioritizing the *Stock Clearance PL*, you enable only the two price tiers available in this price list. As other quantity tiers are not defined in the price list, they are not displayed in the storefront.
 
    .. image:: /user/img/concept-guides/prices/merge_by_priority_example1.png
+      :alt: View all prices per tier for the lumen headlamp provided that the Stock Clearance PL is prioritized
       :scale: 80%
 
 2. Change the priority dragging the *Customer A PL* up to display the prices with 15% discounts as defined by the contract with Customer A.
 
    .. image:: /user/img/concept-guides/prices/merge_by_priority_example2.png
+      :alt: View all prices per tier for the lumen headlamp provided that the Customer A PL is prioritized
       :scale: 80%
 
 **Merge Allowed**
@@ -112,6 +116,7 @@ Based on the price lists priority that you have set for Customer A, the lumen he
 If we enable the Merge Allowed option for all price lists available for the Customer A, we combine them all together, allowing the system to fill the empty price tiers for the lumen headlamp from other price lists in the priority order. The price will then be displayed as follows, where the first four price tiers for *1 through 99* items are taken from the *Customer A PL* which has the highest priority. As the *Customer A PL* does not define the price for 100+ items, the system then searches for the relevant price in the second priority price list, the *Stock Clearance PL*. It does not specify the required price either. Only the third priority price list, the *Spring Sale 2020 Pl*, has the required price for 100+ items which is taken by the system to display in the storefront.
 
 .. image:: /user/img/concept-guides/prices/merge_by_priority_example3.png
+   :alt: View all prices per tier for the lumen headlamp provided that Merge Allowed is enabled for all three price lists
    :scale: 80%
 
 Price Lists
@@ -131,6 +136,7 @@ Once the price list is created, and the price selection strategy is selected, yo
 You can activate and deactivate price lists manually or automatically, allowing to :ref:`display prices at scheduled times <user-guide--pricing--schedule-price-adjustments>`. You can add as many dates and times as necessary. This option is great for running a special sale or promotion campaign that occurs at a specified time. If no schedule is set, the price list is immediately visible to buyers. You can define multiple time slots as well.
 
 .. image:: /user/img/concept-guides/prices/schedule_price_list.png
+   :alt: Schedule a price list by setting the date when to activate and deactivate it
 
 As prices tend to be negotiated and are affected by market dynamics, it is important to keep up with the demand and be reactive to the constant price changing. OroCommerce enables you to decide on whether to use a static or dynamic pricing system for your web store depending on your business processes and needs.
 
@@ -144,6 +150,7 @@ The OroCommerce product assignment option defines the products or a group of pro
 The *Customer A Price List* was generated based on the *Default PL* (1) using the following syntax:
 
 .. image:: /user/img/concept-guides/prices/product_assignment.png
+   :alt: A sample of the syntax used to generate the Customer A Price List based on the Default PL
 
 You can build even more advanced expressions on top of the product properties, use operators, numeric, boolean, and string values as described in the :ref:`Filtering Expression Syntax <user-guide--pricing--auto--expression>` topic.
 
@@ -156,6 +163,7 @@ Price calculation rules specify conditions and expressions to calculate new pric
 As for the *Customer A Price List*, we have used the base prices for products from the *Default PL* to offer a 15% discount on these products:
 
 .. image:: /user/img/concept-guides/prices/price_calculation_rules.png
+   :alt: The rule that is applied to the Customer A PL to calculate all prices with 15% discount
 
 In the same way, you can create exclusive sales, season sales on a certain group of products, provide discounted prices for the products that have reached the low inventory threshold or for the products that are new. For more use cases, follow the :ref:`Price Rules Automation Examples <price-rules--auto--examples>` section.
 
@@ -172,10 +180,12 @@ In a default configuration, all customers users have access to all price lists a
 The fallback configuration logic for the registered users is: **Current Customer PLs > Current Customer Group PLs > Current Website PLs > Global PLs**. It means that if no matching price is found in the price list created for the selected customer, the application goes further to the price lists configured for the customer group, then to the website pricing, and the default pricing at the system level to fill in the missing product price.
 
 .. image:: /user/img/concept-guides/prices/price_list_fallback.png
+   :alt: The fallback configuration logic for the registered users
 
 Whenever you disable fallback configuration at one level, deeper levels in the fallback chain are no longer available. For example, disabling fallback settings at the customer group level restricts access to the website and global pricing for all customers that belong to this customer group.
 
 .. image:: /user/img/concept-guides/prices/price_list_fallback_dimmed.png
+   :alt: Illustration of the fallback logic when the fallback settings are disabled at the customer group level
 
 
 Best Practices

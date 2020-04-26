@@ -11,6 +11,7 @@ The Ecommerce Statistics widget displays a set of metrics that indicate performa
 .. note:: Please keep in mind that this widget is only available in OroCRM.
 
 .. image:: /user/img/dashboards/ecommerce_statistics.png
+   :alt: A sample of the Ecommerce Statistics widget
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -41,4 +42,5 @@ You can adjust the following settings for the ecommerce statistics widget:
   * Abandoned carts
 
 .. image:: /user/img/dashboards/ecommerce_statistics_config.png
+   :alt: Configuring the Ecommerce Statistics widget
 

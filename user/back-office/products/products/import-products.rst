@@ -159,6 +159,7 @@ To import a bulk of product price attributes:
      Once we imported the .csv file, all the MSRP attribute prices were deleted, and the TAG1 item acquired a new MSRP price of 20 USD instead of the previous 7 USD.
 
      .. image:: /user/img/products/products/import_product_price_attributes_2.png
+        :alt: View the results of the products import via the Reset and Add import strategy
 
 8. **Validate import results**: Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
 

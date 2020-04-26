@@ -462,6 +462,7 @@ To check a storage type of a field:
 #. Scroll down to the **Fields** section, find the required field, and check its **Storage Type** property.
 
    .. image:: /user/img/sales/pricelist/field_storage_type.png
+      :alt: The list of fields under the Product entity ordered by the storage type
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

@@ -10,7 +10,7 @@ OroCommerce enables you to preview web catalog pages in the storefront applying 
 .. note:: The ability to preview web catalog nodes is controlled by the *Storefront Preview* permissions defined for the selected role in the system configuration.
 
    .. image:: /user/img/marketing/web_catalogs/preview_web_catalog_permissions.png
-       :alt: Storefront Preview capabilities enabled for the admin role
+      :alt: Storefront Preview capabilities enabled for the admin role
 
 To start previewing a selected node, follow the steps outlined below:
 

@@ -67,6 +67,7 @@ To create a new marketing list:
 #. In the **Columns** section, define the set of fields that will be shown in the marketing list details on the general page for every target contact.
 
    .. image:: /user/img/marketing/marketing/list_columns.png
+      :alt: View the settings under the Columns and Filters section
   
    .. note:: Marketing activities require some contact information, so at least one column that contains it must be selected. A list of these fields is provided in the **Designer** section.
 

@@ -17,6 +17,7 @@ Once the All Products page has been enabled in the system configuration :ref:`gl
 #. Complete the other fields as required.
 
    .. image:: /user/img/customers/customer_groups/AllProductsCustomerGroup.png
+      :alt: Adding the All Products page to the frontend menu
 
 #. Click **Save** on the top right of the page.
 

@@ -75,6 +75,7 @@ From the shopping list view page, you can perform the following actions for the 
 
    .. image:: /user/img/sales/shopping_lists/SLDplicateName.png
       :class: with-border
+      :alt: A sample of the duplicated shopping list
 
 **2. Add line Item**
 
@@ -88,6 +89,7 @@ From the shopping list view page, you can perform the following actions for the 
 
     .. image:: /user/img/sales/shopping_lists/SLAddLineItem.png
        :class: with-border
+       :alt: Adding a line item via the popup dialog
 
 **3. Create Order**
 

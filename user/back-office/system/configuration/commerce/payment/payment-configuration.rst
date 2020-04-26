@@ -16,6 +16,7 @@ To configure the merchant location:
 
    .. image:: /user/img/system/config_commerce/payment/merchant_location.png
       :class: with-border
+      :alt: Global merchant location configuration settings
 
 3. To customize the merchant location:
 

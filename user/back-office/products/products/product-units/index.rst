@@ -97,13 +97,14 @@ The product units available for pricing in the **Product Prices** section depend
 .. note:: Prices can be added manually when creating or editing a product, or through import. See the section on :ref:`price lists in OroCommerce <user-guide--pricing--pricelist--management>` for more information and examples.
 
 .. image:: /user/img/products/products/tier_pricing_units.png
-    :alt: Tier pricing for a product in items and sets
+   :alt: Tier pricing for a product in items and sets
 
 As illustrated in the screenshot, pricing for each quantity and product unit variation is added separately, depending on your pricing strategy. 
 
 In the storefront, the tier pricing is reflected in the following way:
 
 .. image:: /user/img/products/products/tier_pricing_storefront.png
+   :alt: The tier pricing for the Paint Brush product displayed in the storefront
 
 * If you buy 1 item, it would cost you $9.50 for 1 piece. 
 * If you buy 10 items, the price per item is lowered to $9.10

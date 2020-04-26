@@ -150,7 +150,7 @@ For example, on the shopping list or shopping cart page, the following tracking 
 Every time a visitor gets to the website page where the code is embedded, a *Cart item added* event is recorded in the **Event** section of the website tracking details.
 
 .. image:: /user/img/marketing/tracking_websites/cart_item_added.png
-    :alt: A cart item added event is recorded in the Event section
+   :alt: A cart item added event is recorded in the Event section
 
 **Phone Button Clicked**
 
@@ -164,14 +164,14 @@ If you need to retrieve the statistics of how many visitors clicked the phone nu
 to the corresponding phone number line. Once a user clicks the specified phone button, the corresponding event is logged in the application.
 
 .. image:: /user/img/marketing/tracking_websites/phone_button_clicked.png
-    :alt: A phone button clicked event is recorded in the Event section
+   :alt: A phone button clicked event is recorded in the Event section
 
 **Banner Clicked**
 
 Similarly, clicking a specific campaign banner will trigger a *Banner Clicked* event. Its value is the number of times the banner was clicked.
 
 .. image:: /user/img/marketing/tracking_websites/banner_clicked.png
-    :alt: A banner clicked event is recorded in the Event section
+   :alt: A banner clicked event is recorded in the Event section
 
 
 .. _user-guide-marketing-tracking-websites-actions:
@@ -249,6 +249,7 @@ Collect Website Statistics
 A list of events on the tracking website page helps you monitor every occurrence of the tracked action (e.g. a user has accessed a pre-defined part of the website following the campaign). You can find event name and value, user id (guest or user email), the URL of the visited page, the code of the marketing campaign and time when the event was logged.
 
   .. image:: /user/img/marketing/tracking_websites/tracking_view_events.png
+     :alt: View the list of events under the Events section of a tracking website record's page
 
 In the example above, you can see the three kinds of events defined for the Jack and Johnson E-commerce website tracking. As soon as a user gets on any of the website pages, a *visit* event is logged with the *1* value. As soon as a user gets to the **Orders** page of the website, an *Order* event is logged, with the value that stores an ordered item id. As soon as a user gets to the **Item Details** page of the website, a *View item* event is logged with a value that stores a viewed item id.
 

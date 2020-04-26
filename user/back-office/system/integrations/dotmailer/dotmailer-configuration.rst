@@ -41,6 +41,7 @@ Create Integration on the Oro Application Side
 2. Click **Create Integration** in the upper-right corner of the page.
 
    .. image:: /user/img/marketing/marketing/dotmailer/oro_create_dotmailer_integration_new.jpg
+      :alt: Creating the integration on the Oro application side
 
 3. Complete the following fields:
 
@@ -70,6 +71,7 @@ Create Integration on the Oro Application Side
    - **Data Field Mappings** (see :ref:`Manage dotmailer Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
 
    .. image:: /user/img/marketing/marketing/dotmailer/o_dotmailer_main_menu.jpg
+      :alt: The dotmailer menu under the Marketing main menu
 
 Sync dotmailer Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

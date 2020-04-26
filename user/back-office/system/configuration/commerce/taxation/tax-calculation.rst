@@ -41,6 +41,7 @@ To customize tax calculation in OroCommerce:
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/taxation/TaxCalculation.png
+      :alt: Global tax calculation configuration
 
    .. note:: Remember to clear the **Use default** check box before setting a custom option.
 

@@ -18,7 +18,7 @@ To change the price list settings for the customer group:
    .. tip:: Switch between the websites using tabs.
 
    .. image:: /user/img/customers/customer_groups/customer_group_price_lists.png
-      :class: with-border
+      :alt: The price list section of the All Customers customer group
 
    a) Select one of the following values for the **Fallback** option:
 
@@ -29,6 +29,7 @@ To change the price list settings for the customer group:
    b) To add a price list, click **+ Add Price List** and select the price list in the newly added line. After you start typing the price list name, the list of suggestions appears. Press **Enter** or click the suggested value to add the price list.
 
    .. image:: /user/img/customers/customer_groups/pricing_pricelist_add.png
+      :alt: Adding a new price list to the pricelist section
 
    .. note:: The price list is appended to the bottom of the list and, initially, has a lower priority than the existing price lists. Adjust the price list priority if necessary and specify whether the merge is allowed (the later is shown only for the **Merge by priority** price selection strategy).
 

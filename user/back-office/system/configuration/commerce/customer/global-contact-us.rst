@@ -17,7 +17,7 @@ To enable or disable the display of the form in the storefront globally:
 The following page opens:
 
 .. image:: /user/img/system/config_commerce/customer/ContactUseSysConfig.png
-
+   :alt: Global Contact Request configuration
 
 3. In **Contact Requests**, select the *Allow Contact Requests* check box to enable the Contact Us form.
 

@@ -12,6 +12,7 @@ Prior to starting your work with RFQs, make sure that you have:
 1. **Configured RFQ related workflows** --- activate or deactivate the RFQ :ref:`workflows <doc--workflows--actions--system>` that control the interactions between the storefront and the back-office. These workflows help buyers and sales managers run the process automatically and provide the corresponding status upon this interaction.
 
    .. image:: /user/img/sales/rfq/rfq_1.png
+      :alt: Illustrate two RFQ-related workflows in the system configuration
 
 2. **Configured RFQ notification options** --- :ref:`configure RFQ notification options <sys--conf--commerce--sales--rfq-notifications--general>` to ensure that both the customers and the sales representatives receive email notifications on submitting a new RFQ.
 

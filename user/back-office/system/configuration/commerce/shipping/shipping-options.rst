@@ -25,6 +25,7 @@ To change these shipping options:
 
    .. image:: /user/img/system/config_commerce/shipping/ShippingOptions.png
       :class: with-border
+      :alt: Global shipping options configuration
 
    The following options are available on the page:
 
@@ -59,6 +60,7 @@ To enable shipping cost estimation by an integrated system, like UPS, every prod
 Sample shipping information in the product details:
 
 .. image::  /user/img/system/config_commerce/shipping/shipping_options_per_product_new.png
+   :alt: Sample shipping options configuration for a medical tag product
 
 It is recommended to add shipping information for every product unit.
 

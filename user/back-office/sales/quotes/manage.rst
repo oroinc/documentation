@@ -47,6 +47,7 @@ Edit a Quote from the Quote View Page
 .. important:: You can edit a quote in this way only when the :ref:`Quote Management Flow <simple-quote-management>` / :ref:`Backoffice Quote Flow with Approvals <quote-management-with-approvals>` are inactive.  Otherwise, use the Edit transition defined within the active workflow:
 
                .. image:: /user/img/sales/quotes/quotes_workflowedit1.png
+                  :alt: Click the Edit button within the active Backoffice Quote Flow with Approvals workflow
 
 To edit a quote:
 
@@ -55,7 +56,7 @@ To edit a quote:
 #. Click **Edit** on the top right of the page:
 
    .. image:: /user/img/sales/quotes/quotes_edit1.png
-      :width: 40%
+      :alt: Click the Edit button on the quote edit page
 
 #. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
 #. Click **Save** on the top right of the page.
@@ -94,6 +95,7 @@ Delete a Quot from the Quote View Page
    You can delete a quote in this way only when the :ref:`Quote Management Flow <simple-quote-management>` / :ref:`Backoffice Quote Flow with Approvals <quote-management-with-approvals>` are inactive. Otherwise, use the Delete transition defined within the active workflow:
 
    .. image:: /user/img/sales/quotes/quotes_workflowdelete1.png
+      :alt: Click the Delete button within the active Backoffice Quote Flow with Approvals workflow
 
 1. In the main menu, navigate to **Sales > Quotes**. The quote list opens.
 2. Click the quote that you need to delete. The page with quote details opens.
@@ -103,7 +105,7 @@ Delete a Quot from the Quote View Page
 3. Click **Delete** on the top right of the page.
 
    .. image:: /user/img/sales/quotes/quotes_delete1.png
-      :width: 40%
+      :alt: Click the Delete button on the quote view page
 
 #. In the confirmation dialog, click **Yes, Delete**.
 

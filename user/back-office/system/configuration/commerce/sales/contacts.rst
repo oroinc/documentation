@@ -23,6 +23,7 @@ To enable or disable the display of sales representative information in the stor
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/sales/SalesInfoGlobal.png
+      :alt: Global contact configuration settings
 
 3. In the **Display** list, select one of the options that will determine what and whose information to show on the website:
 
@@ -35,6 +36,7 @@ To enable or disable the display of sales representative information in the stor
    * **Pre-configured** - in the *Contact Details* text field, specify custom contact details you wish to be displayed.
 
    .. image:: /user/img/system/config_commerce/sales/SalesInfoGlobalPreConfigured.png
+      :alt: Sample of the contact details to be displayed in the storefront
 
 4. Options selected as **Available User Options** determine what options the user will see in the **Customer Visible Contact Info** list in their user configuration settings (in **My User > My Configuration > Commerce > Sales > Contacts > Customer Visible Contact Info**).
 
@@ -49,10 +51,12 @@ To enable or disable the display of sales representative information in the stor
      If:
 
      .. image:: /user/img/system/config_commerce/sales/DontDisplayInfoAdmin.png
+        :alt: Selecting the Don't Display Contact Info option in the Available User Options section in the system configuration
 
      Then:
 
      .. image:: /user/img/system/config_commerce/sales/DontDisplayInfoSalesRep.png
+        :alt: The related user contact configuration settings
 
    * **Use User Profile Data** -- allow setting the option of user profile details to be displayed.
 
@@ -61,10 +65,12 @@ To enable or disable the display of sales representative information in the stor
      If:
 
      .. image:: /user/img/system/config_commerce/sales/UseUserProfileDataAdmin.png
+        :alt: Selecting the Use User Profile Data option in the Available User Options section in the system configuration
 
      Then:
 
      .. image:: /user/img/system/config_commerce/sales/UseUserProfileDataSalesRep.png
+        :alt: The related user contact configuration settings
 
    * **Enter Manually** -- allow to set the option of manually entered text in the *Enter Contact Info* field.
 
@@ -73,26 +79,31 @@ To enable or disable the display of sales representative information in the stor
      If:
 
      .. image:: /user/img/system/config_commerce/sales/EnterManuallyAdmin.png
+        :alt: Selecting the Enter Manually option in the Available User Options section in the system configuration
 
      Then:
 
      .. image:: /user/img/system/config_commerce/sales/EnterManuallySalesRep.png
+        :alt: The related user contact configuration settings
 
      .. note:: You can choose to use multiple options by holding Ctrl when selecting the option. When all options are selected in **Available User Options**, the user will see them all in their configuration settings as well.
 
        If:
 
        .. image:: /user/img/system/config_commerce/sales/SelectMultipleOptions.png
+          :alt: Selecting all options in the Available User Options section in the system configuration
 
        Then:
 
        .. image:: /user/img/system/config_commerce/sales/AllOptionsSalesRep.png
+          :alt: The related user contact configuration settings
 
    .. warning:: Please note that Allow User Configuration options define *user* level settings only.
 
 5. In the **Guest Contact** text box, you may enter contact information that will be shown to non-authenticated visitors.
 
    .. image:: /user/img/system/config_commerce/sales/GuestContact.png
+      :alt: Guest contact details to be displayed to the guest users in the storefront
 
 6. Click **Save Settings**.
 
@@ -121,12 +132,14 @@ To set up information for non-authenticated visitors:
    information or contact our sales team (sales@acme.com)*
 
    .. image:: /user/img/system/config_commerce/sales/UseCase1.png
+      :alt: The mentioned text entered in the Guest Contact field
 
 5. Save the settings.
 
    This information should become available on the website for non-authenticated users.
 
    .. image:: /user/img/system/config_commerce/sales/FrontSalesRepInfoNonAuth.png
+      :alt: Illustrate the text mentioned in the Guest Contact in the storefront
 
 To set information for logged in users, you need to make sure that in the system configuration, the settings allow John Doe as a customer user owner to enter his contact information manually in his user configuration.
    
@@ -142,10 +155,12 @@ This would allow John Doe to:
    john.doe@example.com*
 
    .. image:: /user/img/system/config_commerce/sales/UseCase2.png
+      :alt: Providing the John Doe's contact info in the Enter Contact Info field
 
 4. Click **Save Settings**. The information should become available on the website.
 
    .. image:: /user/img/system/config_commerce/sales/FrontSalesRepInfoLoggedIn.png
+      :alt: Illustrate how the the John Doe's contact info is displayed in the storefront
 
 .. include:: /include/include-images.rst
    :start-after: begin

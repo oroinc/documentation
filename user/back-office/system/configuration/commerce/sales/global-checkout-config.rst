@@ -46,6 +46,7 @@ To enable guest checkout globally:
 
 
 .. image:: /user/img/system/config_commerce/sales/single_page_checkout_general.png
+   :alt: Global checkout configuration settings
 
 3. In the **Customer Users Registration** section, configure guest checkout with an option to register:
 

@@ -14,6 +14,7 @@ To configure dotmailer synchronization settings:
 2. In the panel to the left, click **System Configuration > Integrations > dotmailer Settings**.
 
    .. image:: /user/img/marketing/marketing/dotmailer/dotmailer_settings.png
+      :alt: Global Dotmailer settings
 
 3. To change the default settings, clear the **Use Default** option, and update the settings as required:
 

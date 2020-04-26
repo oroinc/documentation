@@ -13,6 +13,7 @@ When the digital product is purchased from the shipping origin address in the st
 
 
 .. image:: /user/img/system/config_commerce/taxation/us_sales_tax.png
+   :alt: Global US sales tax configuration
 
 To label digital product codes in OroCommerce as taxable in the US:
 

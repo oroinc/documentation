@@ -13,6 +13,7 @@ To configure Google integration-related settings in the back-office:
 2. In the panel to the left, click **System Configuration > Integrations > Google Settings**.
 
 .. image:: /user/img/system/config_system/google_settings_new.png
+   :alt: Global Google settings
 
 .. note:: These settings can be configured globally and :ref:`per organization <user-guide-hangouts-org>`.
 
