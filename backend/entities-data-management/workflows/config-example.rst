@@ -107,29 +107,29 @@ Configuration
                         @not_blank: [$call_timeout]
                     # Set call_successfull = true
                     actions:
-                        - @assign_value:
+                        - '@assign_value':
                             parameters: [$call_successfull, true]
                 not_answered_definition: # Callee did not answer
                     # Make sure that caller waited at least 60 seconds
                     conditions: # call_timeout not empty and >= 60
                         @and:
-                            - @not_blank: [$call_timeout]
-                            - @ge: [$call_timeout, 60]
+                            - '@not_blank': [$call_timeout]
+                            - '@ge': [$call_timeout, 60]
                     # Set call_successfull = false
                     actions:
-                        - @assign_value:
+                        - '@assign_value':
                             parameters: [$call_successfull, false]
                 end_conversation_definition:
                     conditions:
                         # Check required properties are set
                         @and:
-                            - @not_blank: [$conversation_result]
-                            - @not_blank: [$conversation_comment]
-                            - @not_blank: [$conversation_successful]
+                            - '@not_blank': [$conversation_result]
+                            - '@not_blank': [$conversation_comment]
+                            - '@not_blank': [$conversation_successful]
                     # Create PhoneConversation and set it's properties
                     # Pass data from workflow to conversation
                     actions:
-                        - @create_entity: # create PhoneConversation
+                        - '@create_entity': # create PhoneConversation
                             parameters:
                                 class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
                                 attribute: $conversation

@@ -56,7 +56,7 @@ Here is example of search repository for standard index type and its definition:
 
    services:
        oro_user.search.repository.user:
-           class: 'Oro\Bundle\UserBundle\Search\UserRepository'
+           class: Oro\Bundle\UserBundle\Search\UserRepository
            arguments:
                - '@oro_search.query_factory'
                - '@oro_search.provider.search_mapping'
@@ -101,7 +101,7 @@ And here is example of search repository for website index type and its definiti
 
    oro_product.website_search.repository.product:
        parent: oro_website_search.repository.abstract
-       class: 'Oro\Bundle\ProductBundle\Search\ProductRepository'
+       class: Oro\Bundle\ProductBundle\Search\ProductRepository
        calls:
            - [setEntityName, ['Oro\Bundle\ProductBundle\Entity\Product']]
 

@@ -46,7 +46,7 @@ Suppose we have a workflow that handles only one required data input from a user
                 message_definition:
                     actions:
                         - '@flash_message': {message: $.data.the_message, type: success}
-                    
+
 
 Above is a simple working example of a cycled workflow with one step and one transition.
 On transition `congratulate_with`, we should force the user to fill a text input in the `the_message` field that corresponds to our configured workflow `attribute`. The field is also required by `constraints` in form `attribute_fields` `options`. Then, we can submit it as a transition payload. Next, we should see a `@flash_message` with the text we prompt on the dialog (the default for transition `display_type`) that is flashed on the entity view page.
@@ -97,7 +97,7 @@ Extended Example
                 message_definition:
                     actions:
                         - '@flash_message': {message: $my_message, type: success}
-                    
+
 
 If we need a more complex form to be filled by a user who is performing a transition, we need to specify fields for the data that we need. But before that, let us prepare the data that will be displayed to a user in `form_init`.
 
@@ -124,7 +124,7 @@ You can also use your custom form type for the whole transition handling. Have a
                quote: #here we will store our form data result
                    type:  entity
                    options:
-                       class: 'Oro\Bundle\SaleBundle\Entity\Quote'
+                       class: Oro\Bundle\SaleBundle\Entity\Quote
             steps:
                 quote:
                     allowed_transitions:
@@ -208,7 +208,7 @@ There are several major imports that can handle the next types of transition for
 
 - |oro_workflow_transition_form|
 - |oro_workflow_start_transition_form|
- 
+
 Please consider adding them to your custom transition form controller.
 
 Context Data

@@ -72,7 +72,7 @@ Topic handler must implement *Gos\\Bundle\\WebSocketBundle\\Topic\\TopicInterfac
     :linenos:
 
     oro_sync.topic.websocket_ping:
-        class: 'Oro\Bundle\SyncBundle\Topic\WebsocketPingTopic'
+        class: Oro\Bundle\SyncBundle\Topic\WebsocketPingTopic
         arguments:
             - 'oro_sync.ping'
             - '@logger'
@@ -95,7 +95,7 @@ Therefore, if your topic handler is not intended to contain complex logic, you c
     :linenos:
 
     oro_sync.topic.maintenance:
-        class: 'Oro\Bundle\SyncBundle\Topic\BroadcastTopic'
+        class: Oro\Bundle\SyncBundle\Topic\BroadcastTopic
         arguments:
             - 'oro_sync.maintenance'
         tags:

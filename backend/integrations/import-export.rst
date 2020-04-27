@@ -528,13 +528,10 @@ the following methods:
         :linenos:
 
         # src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
-        parameters:
-            orocrm_contact.importexport.strategy.contact.class: Oro\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrUpadteOrDeleteStrategy
-
         services:
 
             orocrm_contact.importexport.strategy.contact.add_or_replace:
-                class: "%orocrm_contact.importexport.strategy.contact.class%"
+                class: Oro\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrUpadteOrDeleteStrategy
                 parent: oro_importexport.strategy.configurable_add_or_replace
                 calls:
                     - [SetRegistry, ["@doctrine"]]

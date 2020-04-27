@@ -1264,7 +1264,7 @@ Additionally, you need to register your processor in the dependency injection co
             class: Acme\Bundle\ProductBundle\Api\Processor\MyActionProcessor
             public: false
             arguments:
-                - @oro_api.processor_bag
+                - '@oro_api.processor_bag'
                 - my_action # the name of an action
 
 If you need to create groups for your action, register them in the ApiBundle configuration. To do this, add ``Resources\config\oro\app.yml`` to your bundle, for example:
