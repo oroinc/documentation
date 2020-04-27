@@ -159,7 +159,7 @@ For example, to add a new payment method in your OroCommerce application, first 
    :caption: CustomBundle/Resources/config/services.yml
 
    custom_bundle.method.provider.payment_method_name:
-       class: 'Custom\Bundle\CustomBundle\Method\Provider\NameOfMethodProvider'
+       class: Custom\Bundle\CustomBundle\Method\Provider\NameOfMethodProvider
        public: false
        tags:
             - { name: oro_payment.payment_method_provider }

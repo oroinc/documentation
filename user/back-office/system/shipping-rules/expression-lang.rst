@@ -107,7 +107,7 @@ lineItems Collection
 * lineItem.product.primaryUnitPrecision.sell *bool*
 * lineItem.product.category.id *int*
 * lineItem.product.inventoryLevels **collection**
-* lineItem.unit.code *string*
+* lineItem.productUnit.code *string*
 * lineItem.quantity *float*
 * lineItem.price.value *float*
 * lineItem.price.currency *string*

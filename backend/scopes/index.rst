@@ -30,6 +30,19 @@ The scope manager is a service that provides an interface for collecting the sco
 * Create a collected scope in response to the findOrCreate operation (if the scope is not found).
 * Use scope criteria providers to get a portion of the scope information.
 
+.. code-block:: php
+    :linenos:
+
+    // Find an existing scope or return null
+    $scope = $scopeManager->find(ProductVisibility::getScopeType(), [
+        ScopeCriteriaProvider::WEBSITE => $website,
+    ]);
+
+    // Find an existing scope or create a new one
+    $scope = $scopeManager->findOrCreate(ProductVisibility::getScopeType(), [
+        ScopeCriteriaProvider::WEBSITE => $website,
+    ]);
+
 Scope Criteria Providers
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -279,12 +292,12 @@ The scope criteria providers are already registered in the *service.yml* file:
     :linenos:
 
     oro_customer.customer_scope_criteria_provider:
-        class: 'Oro\Bundle\CustomerBundle\Provider\ScopeCustomerCriteriaProvider'
+        class: Oro\Bundle\CustomerBundle\Provider\ScopeCustomerCriteriaProvider
         tags:
             - { name: oro_scope.provider, scopeType: web_content, priority: 200 }
 
     oro_customer.customer_group_scope_criteria_provider:
-        class: 'Oro\Bundle\CustomerBundle\Provider\ScopeCustomerGroupCriteriaProvider'
+        class: Oro\Bundle\CustomerBundle\Provider\ScopeCustomerGroupCriteriaProvider
         tags:
             - { name: oro_scope.provider, scopeType: web_content, priority: 100 }
 
@@ -342,7 +355,7 @@ In the bundle's *service.yml* file, we add:
     :linenos:
 
     oro_website.website_scope_criteria_provider:
-        class: 'Oro\Bundle\WebsiteBundle\Provider\ScopeCriteriaProvider'
+        class: Oro\Bundle\WebsiteBundle\Provider\ScopeCriteriaProvider
         tags:
             - { name: oro_scope.provider, scopeType: web_content, priority: 100 }
 

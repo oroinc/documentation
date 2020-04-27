@@ -164,9 +164,9 @@ We will need to register this event listener in the service container:
     :linenos:
 
     grid_event_listener.product:
-        class: 'Oro\Bundle\CustomGridBundle\Datagrid\ProductsGridListener'
+        class: Oro\Bundle\CustomGridBundle\Datagrid\ProductsGridListener
         arguments:
-            - @doctrine
+            - '@doctrine'
         tags:
             - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.before.products-grid, method: onBuildBefore }
             - { name: kernel.event_listener, event: oro_datagrid.orm_datasource.result.after.products-grid, method: onResultAfter }
@@ -244,7 +244,7 @@ Our new filter should be registered in the service container with the oro_filter
     :linenos:
 
     grid_filter.price_lists:
-        class: 'Oro\Bundle\CustomGridBundle\Filter\ProductPriceListsFilter'
+        class: Oro\Bundle\CustomGridBundle\Filter\ProductPriceListsFilter
         public: false
         arguments:
             - '@form.factory'
