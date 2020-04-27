@@ -155,6 +155,12 @@ Links (Cloud)
 
    <a href="https://github.com/oroinc/orocommerce-application/tree/1.6.1" target="_blank">1.6.1</a>
 
+.. |configured using orocloud.yaml file| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/maintenance/advanced-use/" target="_blank">configured using orocloud.yaml file</a>
+
+
+
 
 
 

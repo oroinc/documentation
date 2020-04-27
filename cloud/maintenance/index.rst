@@ -20,6 +20,7 @@ The OroCloud application maintenance tool helps you to run and control complex m
    before-you-begin
    basic-use
    advanced-use
+   dif-environments
    patches
    errors
    scheduled-tasks
