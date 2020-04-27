@@ -10,6 +10,7 @@ customer, appoint a calendar event for a user, turn a cart into an order, share 
 to its details page (as in the example).
 
 .. image:: /user/img/getting_started/records/view_01.png
+   :alt: View the details of a contact record
 
 Here, you can see all the details of the record and its location on the map. You can use the links and
 action buttons as described in this article. Information on a view page of the selected record is allocated in sections that you can easily switch between. All the sections are placed one after another, so you can also scroll down to find the required information.

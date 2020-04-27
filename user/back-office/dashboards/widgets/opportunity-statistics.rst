@@ -9,6 +9,7 @@ Opportunity Statistics
 The Opportunity Statistics widget displays a set of metrics that indicate performance of the opportunity pipeline.
 
 .. image:: /user/img/dashboards/opportunity_statistics_1.png
+   :alt: A sample of the Opportunity Statistics widget
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -37,6 +38,8 @@ You can adjust the following settings for the opportunity statistics widget:
 * **Territories** --- if sales |territory| are enabled in your system, you can view opportunities filtered within one or several specific territories.
 
 .. image:: /user/img/dashboards/opportunity_statistics_2.png
+   :alt: Configuring of the Opportunity Statistics widget
+
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

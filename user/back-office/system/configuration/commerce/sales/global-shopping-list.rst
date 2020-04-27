@@ -29,6 +29,7 @@ To enable guest shopping lists globally:
      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/sales/ShopListGlobal.png
+      :alt: Global shopping list configuration settings
 
 3. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
 4. In the **Guest Shopping List** section, define the following options:
@@ -63,6 +64,7 @@ To enable mass product actions globally:
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/sales/MassProductActionsSListGlobal.png
+      :alt: Global mass product actions configuration
 
 3. In the **Shopping List Options** section, set whether customer users are allowed to mass select and add items to the shopping list.
 

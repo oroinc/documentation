@@ -40,10 +40,12 @@ To add a coupon code to the required order from its page:
 3. On the order page, click **Add Coupon Code** on the top right.
 
    .. image:: /user/img/marketing/coupons/AddCouponToOrder.png
+      :alt: Highlight the Add Coupon Code button on the Order's page
 
 4. In the popup that opens, choose a coupon code from the list:
 
    .. image:: /user/img/marketing/coupons/CouponCodesListOrder.png
+      :alt: Selecting the coupon code from the list in the popup dialog
 
    Alternatively, click |IcBars| to load the list of all available coupons:
 
@@ -62,6 +64,7 @@ Manage Coupons When Editing the Order
 When editing the selected order, you can perform the following actions with the coupons under **All Promotions** in the **Promotions and Discounts** section:
 
 .. image:: /user/img/marketing/coupons/AllPromotionsSectioninEditOrderForm.png
+   :alt: The actions you can perform with the coupons under All Promotions
 
 1. **Add Coupon Code** and follow the steps described in the :ref:`Add Coupons Through the Order Page <user-guide--marketing--promotions--coupons--edit--on-order-page>` page.
 2. |IcView| View a coupon code.

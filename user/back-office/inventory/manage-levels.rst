@@ -15,6 +15,7 @@ To manage quantities for all products in multiple warehouses:
 3. Edit inventory status and quantity in the respective columns directly by clicking on the current value.
 
  .. image:: /user/img/inventory/manage_inventory_from_registry.png
+    :alt: Use inline editing for adding the quantity of products in stock
 
 4. Type in a new value and press **Enter**.
 
@@ -36,6 +37,7 @@ To manage quantities for a single product in multiple warehouses:
    The following dialog appears:
 
    .. image:: /user/img/inventory/manage_inventory_product_page.png
+      :alt: The steps you need to take to update the product quantities per warehouse
 
 4. Update product quantities, if necessary.
 5. Click **Save**.

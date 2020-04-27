@@ -74,6 +74,7 @@ To create a new email campaign:
 #. Once you finish configuring the marketing campaign, click **Save and Close** in the top right corner of the page.
 
    .. image:: /user/img/marketing/marketing/email_campaign_send.png
+      :alt: View the Create Email Campaign page
 
 .. _user-guide-email-campaigns-plus-marketing:
 

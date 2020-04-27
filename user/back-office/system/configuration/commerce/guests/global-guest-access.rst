@@ -18,7 +18,7 @@ When guest access is disabled:
 * Guest users are redirected to the login page when they try to access the homepage.
 
 .. image:: /user/img/concept-guides/guests/sign_in.png
-
+   :alt: The storefront login page displayed for guest users
 
 To enable guest access globally:
 

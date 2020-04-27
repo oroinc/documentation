@@ -27,6 +27,7 @@ To add an attachment to a record:
 2. Click **Add Attachment** under the **More Actions** menu on the top right of the page.
 
    .. image:: /user/img/getting_started/records/add_attachment.png
+      :alt: Click Add Attachment under the More Actions menu
 
 3. In the Add Attachment dialog:
 
@@ -37,7 +38,7 @@ To add an attachment to a record:
 .. note:: You can access attached files under *Attachments* in the **Additional Information** section of record pages.  
 
           .. image:: /user/img/getting_started/records/add_attachment_view.png
-
+             :alt: View the added attachment in the Additional Information section
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

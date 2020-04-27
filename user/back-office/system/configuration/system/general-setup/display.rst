@@ -23,6 +23,7 @@ To open display settings:
 
 .. image:: /user/img/system/config_system/display_settings.png
    :width: 500
+   :alt: Global display settings configuration
 
 **User Bar**
 
@@ -126,6 +127,7 @@ By default, only the right sidebar is enabled.
 Tag settings specify the taxonomy colors available in the system.
 
 .. image:: /user/img/system/config_system/tag_settings.png
+   :alt: Global tag settings
 
 
 **Calendar Settings**
@@ -147,6 +149,7 @@ To change any color in the set:
 3. Adjust the color brightness by dragging the level on the shades bar.
 
 .. image:: /user/img/system/config_system/calendar_settings.png
+   :alt: Global calendar settings
 
 **Map Settings**
 
@@ -158,6 +161,7 @@ To change any color in the set:
 +----------------------+-------------------------------------------------------------------------------------------------+
 
 .. image:: /user/img/system/config_system/map_settings_map.png
+   :alt: Preview the map in a customer account address book menu in th storefront
 
 .. _doc-configuration-display-settings-report:
 

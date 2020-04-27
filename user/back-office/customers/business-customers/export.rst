@@ -12,4 +12,5 @@ To export business customer details in a .csv file:
 .. note:: Keep in mind that by clicking **Export** you download all business customers records regardless of the filters applied to the grid. To export only the list of filtered records, use the **Export Grid** functionality.
 
          .. image:: /user/img/getting_started/export_import/export_grid_bc.png
+            :alt: Highlight the export grid button
 

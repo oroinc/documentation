@@ -44,7 +44,7 @@ To create a new coupon:
 3. In the  **General** section, complete the following fields:
 
    .. image:: /user/img/marketing/coupons/CreateCoupon.png
-       :alt: Create a new coupon
+      :alt: Create a new coupon
 
    * **Owner** --- Select the business unit responsible for the coupon.
    * **Coupon Code** --- Enter the coupon code. Code value should be numeric, alphabetic or both, and have no spaces. This field is mandatory.

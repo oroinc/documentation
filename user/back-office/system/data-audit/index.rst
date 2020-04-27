@@ -26,6 +26,7 @@ To mark an entity as auditable:
 3. In the **Other** section, set the *Auditable* field to **Yes**.
 
    .. image:: /img/backend/architecture/auditable_field.png
+      :alt: Setting the Auditable field of the entity to Yes
 
    .. hint:: For more information on entities, see the :ref:`Create an Entity <doc-entity-actions-create>` topic.
 

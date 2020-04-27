@@ -22,6 +22,7 @@ To enable the quick order form globally for registered and unregistered users:
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/sales/QOFGlobal.png
+      :alt: Global quick order form configuration
 
 3. In the **Quick Order Form** section, enable or disable the quick order form:
 

@@ -15,6 +15,7 @@ To schedule price activation and deactivation:
 
    .. image:: /user/img/sales/pricelist/PriceLists.png
       :class: with-border
+      :alt: The list of all price lists
 
 2. Click the |IcMore| **More Options** menu to the right of the required price list and then click the |IcEdit| **Edit** icon to start editing price list details.
 
@@ -25,12 +26,14 @@ To schedule price activation and deactivation:
       .. image:: /user/img/sales/pricelist/PriceListsCreate_general_schedule.png
          :width: 40%
          :class: with-border
+         :alt: Scheduling the date to activate the price list
 
    b) Click *time* and select the activation or deactivation time from the list. Alternatively, type it in and press **Enter**.
 
       .. image:: /user/img/sales/pricelist/PriceListsCreate_general_schedule_time.png
          :width: 40%
          :class: with-border
+         :alt: Scheduling time to activate the price list
 
    c) To add another slot, click **+ Add** below the time table. Add as many slots as you need.
 

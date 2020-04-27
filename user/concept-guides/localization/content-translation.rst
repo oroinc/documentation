@@ -21,10 +21,12 @@ Additionally, you can provide the translation for all the content elements of yo
 4. Click the |IcTranslations| **Translations** icon next to the required content element to provide spelling for different languages.
 
 .. image:: /user/img/system/localization/content_translation.png
+   :alt: Click the translations icon next to the Titles to provide spelling for different languages
 
-The corresponding content translation is displayed in the storefront upon selecting this localisation.
+The corresponding content translation is displayed in the storefront upon selecting this localization.
 
 .. image:: /user/img/system/localization/translation_frontstore.png
+   :alt: View the content translated to German when the German localization is selected in the storefront
 
 .. finish_content_translation
 

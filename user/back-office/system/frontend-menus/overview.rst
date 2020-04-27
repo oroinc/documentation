@@ -8,6 +8,7 @@ Frontend Menus Overview
 All the OroCommerce storefront menus are located in the main menu under **System > Frontend Menus**.
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_1.png
+   :alt: A list of all frontend menu items
 
 frontend_menu
 ^^^^^^^^^^^^^
@@ -15,6 +16,7 @@ frontend_menu
 A **frontend_menu** is a main menu on the customer/partner portal.
 
 .. image:: /user/img/system/frontend_menu/FrontendMenu.png
+   :alt: A list of all submenus under the frontend_menu
 
 commerce_top_nav
 ^^^^^^^^^^^^^^^^
@@ -22,6 +24,7 @@ commerce_top_nav
 A **commerce_top_nav** menu defines the links that appear at the top right of the page.
 
 .. image:: /user/img/system/frontend_menu/FrontendTopNavMenu.png
+   :alt: A sample of the commerce_top_nav in the storefront
 
 commerce_quick_access
 ^^^^^^^^^^^^^^^^^^^^^
@@ -29,6 +32,7 @@ commerce_quick_access
 A **commerce_quick_access** menu provides quick access to the most frequent or important actions.
 
 .. image:: /user/img/system/frontend_menu/FrontendQuickAccessMenu.png
+   :alt: A sample of the commerce_top_nav in the storefront
 
 commerce_main_menu
 ^^^^^^^^^^^^^^^^^^
@@ -36,6 +40,7 @@ commerce_main_menu
 A **commerce_main_menu** defines the static content of the OroCommerce storefront main menu. The leading part of the menu is generated based on the structure of the website web catalog or master catalog. The trailing part is composed of the **commerce_main_menu** items.
 
 .. image:: /user/img/system/frontend_menu/FrontendMainMenu.png
+   :alt: A sample of the commerce_main_menu in the storefront
 
 commerce_footer_links
 ^^^^^^^^^^^^^^^^^^^^^
@@ -43,6 +48,7 @@ commerce_footer_links
 A **commerce_footer_links** defines the structure of the links in the OroCommerce website page footer.
 
 .. image:: /user/img/system/frontend_menu/FrontendFooterMenu.png
+   :alt: A sample of the commerce_footer_links in the storefront
 
 featured_menu
 ^^^^^^^^^^^^^
@@ -50,6 +56,7 @@ featured_menu
 A **featured_menu** is a storefront menu that enables the administrator to configure the featured menu items on the homepage.
 
 .. image:: /user/img/system/frontend_menu/featured_menu.png
+   :alt: A sample of the featured_menu in the storefront
 
 customer_usermenu
 ^^^^^^^^^^^^^^^^^
@@ -59,10 +66,12 @@ A **customer_usermenu** is a storefront user menu that defines what a customer w
 .. note:: * When *Show all items at once* is selected, the user menu has the following look in the storefront:
 
              .. image:: /user/img/system/frontend_menu/ShowAllItemsAtOnce.png
+                :alt: A sample of the customer_usermenu in the storefront illustrating the Show all items at once option
 
           * When *Show subitems in a popup* is selected, the user menu has the following look in the storefront:
 
              .. image:: /user/img/system/frontend_menu/ShowSubitemsInPopup.png
+                :alt: A sample of the customer_usermenu in the storefront illustrating the Show subitems in a popup option
 
 To configure user menu globally:
 
@@ -90,6 +99,7 @@ oro_customer_menu
 An **oro_customer_menu** is a storefront menu that defines what options the Account section of the user menu is populated with.
 
 .. image:: /user/img/system/frontend_menu/AccMenu.png
+   :alt: A sample of the oro_customer_menu in the storefront
 
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -22,10 +22,12 @@ To configure single sign-on on the Google side:
 2. Navigate to **My Project** selector in the top left corner and click **Create Project**.
 
    .. image:: /user/img/google/create_project.png
+      :alt: Create a project in the Google API console
 
 3. Define the **Project Name** and click **Create**.
 
-   .. image::/img/google/new_project.jpg
+   .. image:: /user/img/google/new_project.jpg
+      :alt: A new project page
 
 Create Credentials
 ^^^^^^^^^^^^^^^^^^
@@ -33,19 +35,22 @@ Create Credentials
 1. Click **Credentials** in the menu on the left and open the **Credentials** tab.
 
    .. image:: /user/img/google/create_credentials.jpg
+      :alt: The Credentials tab details
 
 2. Click **Create Credentials** and select **0Auth client ID.**
 
    .. image:: /user/img/google/create_credentials_2.jpg
+      :alt: A list of available credential options
 
 3. To create an OAuth client ID, first set a product name on the consent screen.
 
 Configure Consent Form
 ^^^^^^^^^^^^^^^^^^^^^^
 
-1. Click **Configure Consent Form**.
+1. Click **Configure Consent Screen**.
 
    .. image:: /user/img/google/consent_form.jpg
+      :alt: Settings under the Credentials menu
 
 2. Complete the form by providing the following details:
 
@@ -57,6 +62,7 @@ Configure Consent Form
   -  Terms of Service URL
 
   .. image:: /user/img/google/complete_form.jpg
+     :alt: The details you need to provide to configure the consent form
 
 3. Click **Save** to launch the **Create Client ID** page.
 4. Set the **Application Type** to **Web Application**.
@@ -69,12 +75,15 @@ Configure Consent Form
 7. Click **Create Client ID**.
 
    .. image:: /user/img/google/create_id.jpg
+      :alt: The Create Client ID page
 
 8. Your client ID is generated.
 
    .. image:: /user/img/google/id_secret.jpg
+      :alt: OAuth client ID and secret
 
    .. image:: /user/img/google/id_secret_2.jpg
+      :alt: A new client ID is added to the list of all IDs
 
 
 Oro Application Side
@@ -110,6 +119,7 @@ To configure the integration with Google in your OroCRM or OroCommerce applicati
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /user/img/google/oro_google_integration_new.png
+   :alt: Global Google integration settings
 
 Log in with Google
 ^^^^^^^^^^^^^^^^^^
@@ -117,12 +127,14 @@ Log in with Google
 When a user gets to the login page of an instance for which single sign-on capability has been enabled, the **Login Using Google** link  is displayed.
 
 .. image:: /user/img/google/login_using_google.jpg
+   :alt: The login page with the link to log in via google
 
 If the user is not logged into any Google accounts after the link has been clicked, a usual Google log-in page will appear.
 
 As soon as the user has logged into their Google account, a request to use the account in order to log-in to Oro application is displayed  (details defined for the consent screen is used).
 
-.. image::/img/google/google_connection.jpg
+.. image:: /user/img/google/google_connection.jpg
+   :alt: Google account page
 
 For now on, for a user logged-in into a Google account, it is enough to
 click the **Login using Google** link to get into Oro application.

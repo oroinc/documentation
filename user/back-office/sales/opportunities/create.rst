@@ -83,7 +83,7 @@ As soon as a lead is ready to be qualified, it can be converted into an opportun
 #. Provide details in the **Opportunity Information** section.
 
    .. image:: /user/img/sales/opportunities/convert_to_opportunity_2.0.jpg
-       :alt: Convert to opportunity form
+      :alt: Convert to opportunity form
 
    * **Owner** --- Limits the list of users who can manage the opportunity to users, whose roles allow managing opportunities assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.). By default, the user creating the record is chosen.
    * **Opportunity Name** --- The name used to refer to an opportunity in the system.

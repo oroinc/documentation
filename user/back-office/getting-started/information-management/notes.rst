@@ -26,6 +26,7 @@ To add a note to a record:
 1. Click **Add Note** under the **More Actions** menu on the top right on the page of the selected record.
 
    .. image:: /user/img/getting_started/records/AddNotetoRecord.png
+      :alt: Click Add Note under the More Actions menu of the opportunity record
 
 2. In the **Add Note** dialog, provide the text for your note. Formatting tools are available at the top menu.
 
@@ -34,6 +35,7 @@ To add a note to a record:
 All the notes added to a record are displayed and can be reached from the **Activity** section of the record pages:
 
 .. image:: /user/img/getting_started/records/add_note_view.png
+   :alt: View the notes added to a record under the the Activity section
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

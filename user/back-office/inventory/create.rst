@@ -16,11 +16,13 @@ To create a new warehouse:
 1. Navigate to **Inventory > Warehouses** using the main menu.
 
    .. image:: /user/img/inventory/Warehouses.png
+      :alt: The list of all warehouses available in the system
       :class: with-border
 
 2. Click **Create Warehouses**. The following page opens:
 
    .. image:: /user/img/inventory/WarehousesCreate.png
+      :alt: The create warehouse page
       :class: with-border
 
 3. Enter the warehouse name.

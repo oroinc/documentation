@@ -16,6 +16,7 @@ To change the default global sitemap settings:
 
    .. image:: /user/img/system/config_system/sitemaps.png
       :class: with-border
+      :alt: Global website sitemap configuration
 
    The frequency and priority options may be configured globally or specifically for product, category and the cms page level.
 

@@ -38,6 +38,7 @@ Enable All Products Page Globally
 2. Select **Commerce > Catalog > Special Pages** in the panel to the left.
 
    .. image:: /user/img/system/config_commerce/catalog/AllProductsSystem.png
+      :alt: All Products global configuration settings
 
 3. In the **All Products** section, select the **Enable All Products Page** check box.
 4. Click **Save Settings** on the top right of the page.

@@ -38,6 +38,7 @@ To add a comment:
 4. Click **Add** to save the comment.
 
 .. image:: /user/img/getting_started/records/AddCommentToTask.png
+   :alt: The steps you need to take to add a comment to a record
 
 .. hint::
 

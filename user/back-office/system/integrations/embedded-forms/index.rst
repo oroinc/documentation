@@ -15,11 +15,13 @@ The fields of an embedded form depend on its type. The two out-of-the-box types 
 
    .. image:: /user/img/system/integrations/emb_form/cont_req.png
       :width: 50%
+      :alt: The contact request form
  
 * Magento Contact Us Request
  
    .. image:: /user/img/system/integrations/emb_form/cont_req_magento.png
       :width: 50%
+      :alt: Magento Contact Us Request form
  
 Additional embedded form types may be created in the course of integration with the Oro application, subject to your specific business needs.
 
@@ -39,14 +41,17 @@ In order to create a new embedded form:
    * **Allowed Domains** --- Allowed cross origin domains where the form can be embedded. Supports wildcard, e.g., X.example.com.
 
       .. image:: /user/img/system/integrations/emb_form/embedded_form_contact_us.png
+         :alt: A sample of the Thanks for question form configuration
 
 4. Click **Save and Close**.
 
    .. image:: /user/img/system/integrations/emb_form/emb_form_create_ex_02.png
+      :alt: The Thanks for question form preview
 
 Once saved, the form is displayed on the page of all embedded forms under **System > Integrations > Embedded Forms**.
   
 .. image:: /user/img/system/integrations/emb_form/emb_form_create_ex_01.png
+   :alt: A list of all embedded forms
 
 You can view |IcView|, edit |IcEdit|, and delete |IcDelete| contact requests using the corresponding action icons.
 
@@ -62,6 +67,7 @@ To add the necessary embedded form to your website:
 3. In the **Get Code** section, copy the provided code and paste it to the required section of your website. 
 
 .. image:: /user/img/system/integrations/emb_form/emb_form_code.png
+   :alt: A sample iframe code for the Thanks for question form
 
 .. stop
 

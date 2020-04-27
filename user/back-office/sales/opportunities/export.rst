@@ -12,3 +12,4 @@ To export  opportunity details in a .csv file:
 .. note:: Keep in mind that by clicking **Export** you download all opportunity records regardless of the filters applied to the grid. To export only the list of filtered records, use the **Export Grid** functionality.
 
          .. image:: /user/img/getting_started/export_import/export_grid_opportunities.png
+            :alt: Highlight the Export Grid button

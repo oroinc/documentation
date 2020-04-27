@@ -50,6 +50,7 @@ We are going to illustrate how price calculations work in Oro using the example 
    * For TAG3
 
    .. image:: /user/img/marketing/promotions/sample_for_order_calculation.png
+      :alt: View the promotion discount options configured based on the conditions from the example
 
    In this case we take the price for one item, multiple by the percent value and the maximum quantity, and then summarize all discounts from promotions, and round the subtotal. The calculated discount subtotal is:
  

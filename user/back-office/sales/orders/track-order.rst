@@ -16,10 +16,12 @@ To add a tracking information about the shipping to the order:
 #. Click **Shipping Tracking**.
 
    .. image:: /user/img/sales/orders/ShippingTrackingOrders.png
+      :alt: Click the Shipping Tracking button
 
 #. Enter the shipping method (e.g., UPS) and the tracking number.
 
    .. image:: /user/img/sales/orders/ShippingTrackingOrdersForm.png
+      :alt: Enter the UPS tracking number
 
    Some orders may be delivered in multiple portions due to the circumstances related to the delivery time or delivered volume.
 
@@ -30,3 +32,4 @@ To add a tracking information about the shipping to the order:
 After the tracking information for shipping has been provided, it becomes available to the buyer in the storefront.
 
 .. image:: /user/img/sales/orders/ShippingTrackingFront.png
+   :alt: Display the shipping tracking number in Order History section of the customer account menu in the storefront

@@ -34,6 +34,7 @@ To notify a customer that their quote is prepared:
 
    .. image:: /user/img/sales/quotes/quotes_notifycustomer2.png
       :width: 50%
+      :alt: A sample of an email sent to a customer to notify them about the quote readiness
 
 #. Click **Send**.
 
@@ -57,6 +58,7 @@ Expire a Quote From the Grid
 .. important:: You can expire a quote in this way only when the :ref:`Quote Management Flow <simple-quote-management>` / :ref:`Backoffice Quote Flow with Approvals <quote-management-with-approvals>` are inactive.
 
    .. image:: /user/img/sales/quotes/quotes_expire.png
+      :alt: Click the Expire Quote button
 
 To indicate that the quote's validity period is over from the quote list:
 
@@ -85,6 +87,8 @@ To indicate that the quote's validity period is over from the quote details page
 The quote is now marked as *Expired*:
 
 .. image:: /user/img/sales/quotes/quotes_expired.png
+   :alt: A sample of the quote that is marked as expired
+
 
 Expire a Quote From the Quote Edit Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -92,6 +96,7 @@ Expire a Quote From the Quote Edit Page
 .. important:: You can expire a quote in this way only when the :ref:`Quote Management Flow <simple-quote-management>` / :ref:`Backoffice Quote Flow with Approvals <quote-management-with-approvals>` are inactive.  Otherwise, use the Edit transition defined within the active workflow:
 
    .. image:: /user/img/sales/quotes/quotes_workflowedit1.png
+      :alt: Click the Edit button within the active Backoffice Quote Flow with Approvals workflow
 
 To indicate that the quote's validity period is over from the quote details page:
 
@@ -100,6 +105,7 @@ To indicate that the quote's validity period is over from the quote details page
 #. Click **Edit** on the top right of the page:
 
    .. image:: /user/img/sales/quotes/quotes_edit1.png
+      :alt: Click the Edit button on the quote edit page
 
 #. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See :ref:`Create a Quote <user-guide--quotes--create>` section for detailed information on the available options.
 #. Click **Save** on the top right of the page.

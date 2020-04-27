@@ -22,10 +22,12 @@ However:
 * When **Use System** check box is enabled on the configuration page of the required option, system settings override website or organization. Clearing this check box next to the required option and changing its value means that you are configuring this particular option specifically for the selected organization.
 
   .. image:: /user/img/system/configuration/system_checkbox.png
+     :alt: Organization configuration settings
 
 * When **Use Organization** check box is enabled on the configuration page of the required option, organization settings override system. Clearing this check box next to the required option and changing the default value means that your are introducing changes for a specific user.
 
   .. image:: /user/img/system/configuration/org_checkbox.png
+     :alt: User configuration settings
 
 .. hint:: To help you find the specific configuration option faster, use :ref:`Quick Search <user-guide--system-configuration--quick-search>` located in the configuration panel on the left (on all configuration levels).
 

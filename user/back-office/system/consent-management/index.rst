@@ -48,6 +48,7 @@ To create a :term:`consent <Consent>` in OroCommerce:
 .. important:: You can view all consents accepted by your customer users in the **Consents** section of their pages under **Customers > Customer Users**.
 
         .. image:: /user/img/system/consents/consents_section_customer_user_page.png
+           :alt: Consents section under a customer user record
 
 **Related Topics**
 

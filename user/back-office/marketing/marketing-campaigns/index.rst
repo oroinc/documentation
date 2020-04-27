@@ -70,7 +70,7 @@ The details page is divided up into three sections: General, Events, and Trackin
 In the **General** section, you can see the campaign plan or configuration (name, code, schedule, budget, etc.).
 
 .. image:: /user/img/marketing/marketing/marketing_campaign_view_general.png
-    :alt: View the details of a marketing campaign in the general section
+   :alt: View the details of a marketing campaign in the general section
 
 The **Events** tab contains the list of campaign events. Here, you will see the events summary chart and detailed events report collected from the related marketing sources. Each event represents one point of action when a user has accessed a predefined part of the website following the campaign. Recurring access is logged as a separate event.
 
@@ -180,7 +180,7 @@ To share a marketing campaign with other Oro application user:
 3. Click **Share** at the top right corner of the page to open the **Sharing Settings** popup dialog.
 
 .. image:: /user/img/marketing/marketing/marketing_campaign_share.png
-    :alt: The sharing settings popup of a marketing campaign
+   :alt: The sharing settings popup of a marketing campaign
 
 4. Type in the username in the *Share with* field, or search for the necessary user: click |IcBars|, find the person you need, select the check box next to their name, and click **Add**.
 

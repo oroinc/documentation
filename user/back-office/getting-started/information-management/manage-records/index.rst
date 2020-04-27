@@ -56,6 +56,7 @@ To merge records:
 2. Click the ellipsis menu at the right end of the table header row, and then click the |IcMerge| **Merge** icon.
 
 .. image:: /user/img/getting_started/records/grids/grids_merge.png
+   :alt: Merge the selected contact records
 
 The process of merging is described in detail in the :ref:`Merging Accounts <user-guide-accounts-merge>` topic.
 

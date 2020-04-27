@@ -21,6 +21,7 @@ To change the shipping tax configuration:
 
    .. image:: /user/img/system/config_commerce/taxation/shipping_tax_config.png
       :class: with-border
+      :alt: Global shipping tax configuration
 
    The following options are available on the page:
 

@@ -86,6 +86,7 @@ View Accepted Consents
 When at least one consent to process personal data has been accepted by a customer user in the storefront, you can view this information in the dedicated **Consents** section on the page of a particular customer user under **Customers > Customer Users**.
 
  .. image:: /user/img/customers/customer_users/consents_section_customer_user_page.png
+    :alt: View the Consents section of a customer user
 
 You can read more information on consent management in the following related topics:
 

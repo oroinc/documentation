@@ -17,6 +17,7 @@ To set configurable products globally:
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 .. image:: /user/img/system/config_commerce/product/configurable_product_globally.png
+   :alt: Global configurable product settings
 
 Configurable Products
 ---------------------
@@ -43,14 +44,17 @@ To configure a matrix form view for a particular case:
 3. For **Product Views**, the options will look the following:
 
     .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_page.png
+       :alt: Different matrix form view options displayed on the product page in the storefront
 
 4. For **Product Listings**:
 
     .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_listing.png
+       :alt: Different matrix form view options displayed on the product listing page in the storefront
 
 5. For **Shopping Lists**:
 
     .. image:: /user/img/system/config_commerce/product/matrix_form_view_in_shipping_lists.png
+       :alt: Different matrix form view options displayed in the storefront shopping list
 
 6. **Allow To Add Empty Products** --- If enabled, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use Default** check box next to the option and then the check box of the option itself.
 
@@ -71,10 +75,12 @@ To configure the required settings for simple products variations:
    **Everywhere** --- With this option selected, all the simple products are displayed together with the configurable one on a product page, product listing, and a shopping list page.
 
      .. image:: /user/img/system/config_commerce/product/display_simple_variations.png
+        :alt: A storefront product listing page displaying both configurable product and its variations
 
    **Hide Completely** --- The option hides all the simple products that belong to the configurable one on the product listing and search results pages enabling a customer to select only the configurable one.
 
       .. image:: /user/img/system/config_commerce/product/hide_simple_variations.png
+        :alt: A storefront product listing page displaying only the configurable product without variations
 
 3. Click **Save Settings**.
 

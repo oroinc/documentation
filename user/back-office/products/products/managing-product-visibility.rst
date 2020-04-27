@@ -66,14 +66,17 @@ Navigation to Visibility Settings
 **In Product**: Navigate to **Products > Products** in the main menu, select a product to customize its visibility, click **More actions** and then **Manage Visibility** on the top right (product menu).
 
 .. image:: /user/img/products/products/product_visibility/ProductManageVisibility.png
+   :alt: Navigating to the visibility settings from the product's details page
 
 **In Category**: Navigate to **Products > Master Catalog** in the main menu, select a category on the left, and scroll to the **Visibility** section.
 
 .. image:: /user/img/products/products/product_visibility/CategoryVisibility.png
+   :alt: Navigating to the visibility settings from the master catalog category's page
 
 **In System Configuration**: Navigate to **System > Configuration** in the main menu. Select **Commerce > Customer > Visibility** on the left.
 
 .. image:: /user/img/products/products/product_visibility/ConfigVisibility.png
+   :alt: Navigating to the visibility settings from the system configuration page
 
 Default Settings
 ----------------
@@ -88,6 +91,7 @@ You can define a system-wide visibility for products and categories for existing
 Products and categories are visible by default. To change this, navigate to **System > Configuration > Commerce > Customer > Visibility** in the main menu, clear the **Use default** check box, and toggle the options (*hidden*/*shown*).
 
 .. image:: /user/img/products/products/product_visibility/ConfigVisibilityOptions.png
+   :alt: View the global visibility settings for products and categories under the system configuration page
 
 .. TODO add link to system config user-guide--customers--configuration--visibility
 
@@ -97,6 +101,7 @@ Visibility to All
 The default visibility for a product or category is configured on the product's **Manage visibility** page and in the **Visibility** section of the category details.
 
 .. image:: /user/img/products/products/product_visibility/ProductVisibilityPage.png
+   :alt: View the product Visibility to All settings
 
 The possible options are:
 
@@ -123,6 +128,7 @@ You can control if the product or category is shown to the customers who are mem
 By default, a new customer group inherits the default product visibility from the product or category (depending on where the configuration happens).
  
 .. image:: /user/img/products/products/product_visibility/VisibilityToCustomerGroupsOptions.png
+   :alt: View the product Visibility to Customer Groups settings
 
 Visibility to a Customer
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -130,6 +136,7 @@ Visibility to a Customer
 Visibility to the customer supports the same options as `Visibility to a Customer Group`_ and can also inherit the configuration of a customer group (by default).
 
 .. image:: /user/img/products/products/product_visibility/VisibilityToCustomersOptions.png
+   :alt: View the product Visibility to Customers settings
 
 Visibility on a Website
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -139,6 +146,7 @@ For each product, you can define whether it should be visible on a particular we
 On the product visibility page, you can switch between websites and apply the necessary changes.
 
 .. image:: /user/img/products/products/product_visibility/WebsiteProdVisibility.png
+   :alt: View the product visibility settings applied individually per website
 
 For new websites, the following default settings apply:
 
