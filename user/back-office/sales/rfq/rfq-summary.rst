@@ -11,6 +11,7 @@ To view all the Requests for Quotes, navigate to **Sales > Requests for Quote** 
 
 .. image:: /user/img/sales/rfq/rfq_1.2.png
    :class: with-border
+   :alt: The list of all refqs available in the system
 
 Here, you can perform the following actions:
 
@@ -25,6 +26,7 @@ Choose the required RFQ in the list, hover over the |IcEllipsisH| **More Options
 
 .. image:: /user/img/sales/rfq/rfq_3.png
    :class: with-border
+   :alt: The actions you can perform to any rfq from the rfq grid
 
 * Click |IcView| to :ref:`View the details <user-guide--sales--requests-for-quote--details>` of the request for quote.
 * Click |IcMarkProcessed| to :ref:`Mark the RFQ as Processed <user-guide--sales--requests-for-quote--steps-and-transitions--processed>`.

@@ -10,7 +10,7 @@ There are three out-of-the-box :ref:`reports for opportunities <user-guide-oppor
 
 * :ref:`Opportunities By Status <user-guide-opportunities-reports--opportunities-by-status>`
 * :ref:`Won Opportunities By Period <user-guide-opportunities-reports--won-opportunities-by-period>`
-*  :ref:`Total Forecast <user-guide-opportunities-reports--forecast>`
+* :ref:`Total Forecast <user-guide-opportunities-reports--forecast>`
 
 .. image:: /user/img/sales/opportunities/reports.jpg
    :alt: Reports with opportunities
@@ -33,6 +33,7 @@ Opportunities by Status report shows:
 -	Total number of opportunities regardless of their status (grand total), their close revenue and budget amount.
 
 .. image:: /user/img/sales/opportunities/opportunities_by_status.png
+   :alt: Opportunities By Status report
 
 .. _user-guide-opportunities-reports--won-opportunities-by-period:
 

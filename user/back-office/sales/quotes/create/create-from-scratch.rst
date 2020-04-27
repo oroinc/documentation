@@ -11,10 +11,12 @@ To create a new quote from scratch:
 
    .. image:: /user/img/sales/quotes/Quotes.png
       :class: with-border
+      :alt: The list of all quotes available in the system
 
 2. Click **Create Quote**.
 
    .. image:: /user/img/sales/quotes/create_quote_general.png
+      :alt: The create quote page details
 
 4. In the **General** section:
 
@@ -35,6 +37,7 @@ To create a new quote from scratch:
 5. In the **Line Items** section:
 
    .. image:: /user/img/sales/quotes/create_quote_line_items.png
+      :alt: The details of the Line Items section
 
    a) Add products as quote line items.
 
@@ -81,6 +84,7 @@ To create a new quote from scratch:
 7. In the **Shipping Information** section, configure the recommended shipping options for the customer:
 
    .. image:: /user/img/sales/quotes/CreateQioteShipping.png
+      :alt: Shipping options under the Shipping Information section of the quote
 
    .. TODO For BB-7506, update the image above, and use the commented lines below:
 

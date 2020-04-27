@@ -15,6 +15,7 @@ To delete several records:
 4. Once deletion is confirmed, the records are removed.
 
 .. image:: /user/img/getting_started/records/grids/grids_delete_bulk.png
+   :alt: Delete the selected contact records
 
 .. finish_delete
 

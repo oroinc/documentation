@@ -45,16 +45,19 @@ Configure New Arrivals Globally
 
     .. image:: /user/img/system/config_commerce/product/NewArrivalsFrontstoreTiles.png
        :class: with-border
+       :alt: New product icon look for tiles
 
     * **For details**:
 
     .. image:: /user/img/system/config_commerce/product/NewArrivalsFrontstoreDetails.png
        :class: with-border
+       :alt: New product icon look for details
 
     * **For compact details**:
 
     .. image:: /user/img/system/config_commerce/product/NewArrivalsFrontstoreCompactDetails.png
        :class: with-border
+       :alt: New product icon look for compact details
 
 
 3. In the **New Arrivals** section provide the following information:

@@ -95,6 +95,7 @@ The **Pricing** page opens. It contains the following information:
      .. note:: The website level configuration has higher priority and overrides the global configuration settings.
 
      .. image:: /user/img/system/config_commerce/catalog/currency_on_the_front_store.png
+        :alt: Display the currency selector in the storefront
 
    * **Default Currency** --- The currency that is used by default to show prices in the storefront.
 
@@ -110,6 +111,7 @@ The **Pricing** page opens. It contains the following information:
    a) Click **+ Add Price List** and select the price list in the newly added line. After you start typing the price list name, the list of suggestions that match your entry appears. Press **Enter** or click the suggested value to add the price list.
 
       .. image:: /user/img/system/config_commerce/catalog/pricing_pricelist_add.png
+         :alt: Adding a price list to the default price lists
 
       .. note:: The price list is appended to the bottom of the list and, initially, has lower priority then existing price lists. Adjust the price list priority if necessary and specify whether the merge is allowed (the later is shown only for the *Merge by priority* price selection strategy).
 

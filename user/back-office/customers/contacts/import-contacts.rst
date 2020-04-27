@@ -38,6 +38,7 @@ To import a bulk of contacts:
    * **Add** strategy adds new contacts from the .csv file to the existing list.
 
    .. image:: /user/img/customers/contacts/import_contacts.png
+      :alt: The steps you need to take to import contacts
 
 7. **Validate import results**: Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
 

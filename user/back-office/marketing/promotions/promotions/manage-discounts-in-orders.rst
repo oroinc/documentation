@@ -55,6 +55,7 @@ To add one-time personalized discounts for selected customers:
    Click **Add Special Discount**  under **Promotions and Discounts > All Special Discounts**.
 
    .. image:: /user/img/marketing/promotions/AddSpecialDiscount4.png
+      :alt: Highlight the Add Special Discount button under the Promotions and Discounts section
 
 2. In the form that opens, provide the following information:
 
@@ -62,10 +63,12 @@ To add one-time personalized discounts for selected customers:
    * **Description** --- Provide the reason for the special discount. This field is optional.
 
    .. image:: /user/img/marketing/promotions/AddSpecialDiscount2.png
+      :alt: Providing the discount and description in the form
 
 3. Click **Apply**.
 
   .. image:: /user/img/marketing/promotions/AddSpecialDiscount3.png
+     :alt: View the discount saved in the All Special Discounts section under Promotions and Discounts
 
 This way, you can apply one or more special discounts to selected orders.
 
@@ -79,6 +82,7 @@ Under **All Promotions**, you can |IcView| view details of the selected promotio
 Under **All Special Discounts**, you can |IcEdit| edit, or |IcDelete| remove the discount.
 
 .. image:: /user/img/marketing/promotions/ManagePromotionsIcons.png
+   :alt: View the actions that you can do to promotions and discounts
 
 .. finish_promotions_in_order
 

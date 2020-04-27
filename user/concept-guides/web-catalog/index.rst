@@ -165,7 +165,7 @@ The following table summarizes the difference between a master catalog and a web
    :header: "Master Catalog","Web Catalog","Notes"
    :widths: 5, 5, 30
 
-   "Single","Multiple","The master and web catalogs share the same product collection but unlike the latter, a web catalog can have the same product in multiple categories."
+   "Single","Multiple","The master and web catalogs share the same product collection but unlike the former, a web catalog can have the same product in multiple categories."
 
 .. csv-table:: Visibility Restrictions
    :header: "Master Catalog","Web Catalog","Notes"

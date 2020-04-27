@@ -9,6 +9,7 @@ Campaigns by Close Revenue
 The Campaigns by Close Revenue widget shows the top 5 campaigns that generate the most income.
 
 .. image:: /user/img/dashboards/campaign_revenue.png
+   :alt: A sample of the Campaigns by Close Revenue widget
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -24,4 +25,5 @@ You can adjust the following settings for the campaigns by close revenue widget:
 * **Date Range** --- the time for which the widget details are displayed.
 
 .. image:: /user/img/dashboards/campaign_revenue_config.png
+   :alt: Configuring the Campaigns by Close Revenue widget
 

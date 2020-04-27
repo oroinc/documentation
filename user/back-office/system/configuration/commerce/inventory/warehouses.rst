@@ -19,6 +19,7 @@ To enable and prioritize warehouses:
 
    .. image:: /user/img/system/config_commerce/inventory/Warehouses.png
       :class: with-border
+      :alt: Global warehouses configuration settings
 
 3. Enable as many warehouses as you need: 
 

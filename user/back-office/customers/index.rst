@@ -14,7 +14,7 @@ Customers
 In the applications where an integration between Commerce and CRM is configured, the Customer menu contains references to entities from both applications:
 
 .. image:: /user/img/customers/accounts/customers_menu.png
-    :alt: The entities under the customer menu
+   :alt: The entities under the customer menu
 
 *Account* and *Contact* come from CRM, while *Customers* and *Customer Users* come from Commerce.
 

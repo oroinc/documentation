@@ -9,6 +9,7 @@ Leads Statistics
 The Leads Statistics widget displays a set of metrics that indicate the performance of your lead pipeline. You can configure the widget to show only leads in certain conditions, e.g. only open leads owned by the current user. 
 
 .. image:: /user/img/dashboards/lead_statistics_1.png
+   :alt: A sample of Leads Statistics widget
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -32,6 +33,7 @@ You can adjust the following settings for the lead statistics widget:
 * **Territories** --- if sales |territory| are enabled in your system, you can view leads filtered within one or several specific territories.
 
 .. image:: /user/img/dashboards/lead_statistics_2.png
+   :alt: Configuring the Leads Statistics widget
 
 
 .. include:: /include/include-links-user.rst

@@ -13,6 +13,7 @@ The following actions can be performed for leads from the grid:
 * View |IcView|
 
 .. image:: /user/img/sales/leads/manage_leads.jpg
+   :alt: The actions that can be done to the leads from the All leads grid
 
 Grid Views
 ^^^^^^^^^^
@@ -20,7 +21,7 @@ Grid Views
 Two grid views are available for leads: **Open Leads** and **All Leads**. Open leads grid view displays the list of all open leads, while all leads grid view displays all existing leads, including the ones that have been disqualified or converted to an opportunity and marked qualified.
 
 .. image:: /user/img/sales/leads/leads_grid.jpg
-   :alt: Actions for a lead in the grid
+   :alt: Grid view options available for leads
 
 Inline Editing
 ^^^^^^^^^^^^^^
@@ -49,6 +50,7 @@ The following actions are available for a lead on the lead view page:
 -  **Share**: Share a lead with contacts of your choice.
 
    .. image:: /user/img/sales/leads/share_lead.png
+      :alt: The sharing configuration settings
 
 -  **Disqualify action:** Disqualify a lead.
 

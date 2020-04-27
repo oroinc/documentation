@@ -40,8 +40,8 @@ This way, we create all the required first level menus.
 
 .. note:: Make sure that you create first level nodes from Web Catalog 2017 in the nodes section on the left of the page.
 
-
 .. image:: /user/img/marketing/web_catalogs/use_case/Create1RootNode.png
+   :alt: The details of the Web Catalog 2017
    :class: with-border
 
 **Create Sub-level Menu**
@@ -67,6 +67,7 @@ To set up content nodes in the back-office:
    
 
 .. image:: /user/img/marketing/web_catalogs/use_case/Create1SubMenuNode.png
+   :alt: View the Web Catalog 2017 content tree with the first and second level menus
 
 This way, we create all the required second level menus.  
 
@@ -76,11 +77,13 @@ Each of such levels can be populated with more levels, or nodes, if necessary, a
 .. note:: You can drag the existing content nodes to a different position within the content tree on the left of the page, as illustrated below:
 
 .. image:: /user/img/marketing/web_catalogs/DragDropNode.png
+   :alt: Dragging the existing content nodes to a different position within the content tree
    :class: with-border
 
 Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-per-website>`), you will be able to see it on the storefront.
 
 .. image:: /user/img/marketing/web_catalogs/use_case/NodesFrontStore.gif
+   :alt: Illustrating all content nodes created under the Web Catalog 2017 in the storefront
 
 **Related Articles**
 

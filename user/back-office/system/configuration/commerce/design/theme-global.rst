@@ -36,18 +36,21 @@ To configure the storefront theme options globally:
 The following page opens:
 
 .. image:: /user/img/system/config_commerce/design/design_theme_global.png
+   :alt: Global theme configuration settings
 
 3. In the **Theme Settings** section, select the theme from the list. The theme controls general design of the storefront that defines its look and feel. *Default*, *blank*, and *custom* themes are available out of the box for the storefront.
 
-   For example, this is how the address book looks in the storefront when for the default and custom themes:
+   For example, this is how the address book looks in the storefront for the default and custom themes:
 
    **Default theme**
 
    .. image:: /user/img/system/config_commerce/design/MyProfileAddressBooks.png
+      :alt: A sample of the Address Book menu in the storefront if the default theme is enabled
 
    **Custom theme**
 
    .. image:: /user/img/system/config_commerce/design/address_book_compact.png
+      :alt: A sample of the Address Book menu in the storefront if the custom theme is enabled
 
 4. In the **Page Templates** section, select the product page template from the list.
 
@@ -64,10 +67,12 @@ The following page opens:
    **Drop-down**
 
    .. image:: /user/img/system/config_commerce/design/filter_settings_dropdown.png
+      :alt: Illustration of the multi-select filter dispayed in the drop-down in the storefront
 
    **All at once**
 
    .. image:: /user/img/system/config_commerce/design/filter_settings_allatonce.png
+      :alt: Illustration of the multi-select filter displayed all at once in the storefront
 
 6. In the **Menu Templates** section, select the user menu display mode that defines the look and feel of the user menu in the storefront.
 
@@ -76,10 +81,13 @@ The following page opens:
    **Show all items at once**
 
    .. image:: /user/img/system/config_commerce/design/ShowAllItemsAtOnce.png
+      :alt: The storefront user menu look when the Show all items at once option is enabled
 
    **Show subitems in a popup**
 
    .. image:: /user/img/system/config_commerce/design/ShowSubitemsInPopup.png
+      :alt: The storefront user menu look when the Show subitems in a popup option is enabled
+
 
 7. Click **Save Settings**.
 

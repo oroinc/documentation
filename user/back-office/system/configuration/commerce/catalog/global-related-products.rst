@@ -34,6 +34,7 @@ To update the related and up-sell products settings globally:
 
    .. image:: /user/img/system/config_commerce/catalog/RelatedProductsGlobal.png
       :class: with-border
+      :alt: Global Related Items configuration
 
 
 3. In the **Related Products** section, the following options are available:
@@ -52,11 +53,13 @@ To update the related and up-sell products settings globally:
 
      .. image:: /user/img/system/config_commerce/catalog/RelatedProductPreviewWithAdd.png
         :class: with-border
+        :alt: A storefront product page illustrating the enabled Add to Shopping list button
 
      **Show Add Button is Disabled**
 
      .. image:: /user/img/system/config_commerce/catalog/RelatedProductPreview.png
         :class: with-border
+        :alt: A storefront product page illustrating the disabled Add to Shopping list button
 
    * **Use Slider On Mobile** --- When enabled, one related product is displayed below the main product information. Other related products are accessible using the horizontal slider. Click < and > to slide through the related products.
 
@@ -81,11 +84,13 @@ To update the related and up-sell products settings globally:
 
      .. image:: /user/img/system/config_commerce/catalog/RelatedProductPreviewWithAdd.png
         :class: with-border
+        :alt: A storefront product page illustrating the enabled Add to Shopping list button
 
      **Show Add Button is Disabled**
 
      .. image:: /user/img/system/config_commerce/catalog/RelatedProductPreview.png
         :class: with-border
+        :alt: A storefront product page illustrating the disabled Add to Shopping list button
 
    * **Use Slider On Mobile** --- When the option is enabled, one up-sell product is displayed below the main product information. Other up-sell products are accessible using the horizontal slider. Click < and > to slide through the up-sell products.
 

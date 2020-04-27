@@ -20,6 +20,7 @@ To change the default product and category visibility settings:
 
    .. image:: /user/img/system/config_commerce/customer/Visibility.png
       :class: with-border
+      :alt: Global visibility configuration
 
 3. To customize any of the options:
 

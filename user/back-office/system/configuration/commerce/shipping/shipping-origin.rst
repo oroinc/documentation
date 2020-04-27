@@ -21,6 +21,7 @@ To change the global shipping origin:
 
    .. image::  /user/img/system/config_commerce/shipping/ShippingOrigin.png
       :class: with-border
+      :alt: Global shipping origin configuration
 
 The following options are available on the page:
 

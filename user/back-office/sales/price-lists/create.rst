@@ -18,11 +18,13 @@ To create a new price list:
 
    .. image:: /user/img/sales/pricelist/PriceLists.png
       :class: with-border
+      :alt: The list of all price lists available in the system
 
 2. Click **Create Price List**. The following page opens:
 
    .. image:: /user/img/sales/pricelist/PriceListsCreate.png
       :class: with-border
+      :alt: The create price list page
 
 3. In the **General** section, provide the following information:
 
@@ -41,12 +43,14 @@ To create a new price list:
       .. image:: /user/img/sales/pricelist/PriceListsCreate_general_schedule.png
          :width: 40%
          :class: with-border
+         :alt: Scheduling a date to activate the price list
 
       Click *time* and select the activation or deactivation time from the list. Alternatively, type it in and press **Enter**.
 
       .. image:: /user/img/sales/pricelist/PriceListsCreate_general_schedule_time.png
          :width: 50%
          :class: with-border
+         :alt: Scheduling time to activate the price list
 
       To add another time slot, click **+ Add** below the time table. Add as many slots as you need.
 
@@ -58,6 +62,7 @@ To create a new price list:
 
         .. image:: /user/img/sales/pricelist/prices_for_product.png
            :class: with-border
+           :alt: Adding the prices for the medical tag product to the Default PL manually when editing the product details
 
         .. TODO elaborate
 
@@ -65,6 +70,7 @@ To create a new price list:
 
         .. image:: /user/img/sales/pricelist/prices_for_price_list.png
            :class: with-border
+           :alt: Adding product price in the popup dialog that opens when clicking the Add Product Price button
 
         .. TODO elaborate
 

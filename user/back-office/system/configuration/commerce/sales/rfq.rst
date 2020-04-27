@@ -29,6 +29,7 @@ To change the default notification settings globally:
 
    .. image:: /user/img/system/config_commerce/sales/rfq_config_1.png
       :class: with-border
+      :alt: Global rfq configuration
 
 The notifications options can be configured for all the parties concerned, namely:
 
@@ -48,6 +49,7 @@ To customize any of these options:
 
   .. image:: /user/img/system/config_commerce/sales/rfq_config_2.png
      :class: with-border
+     :alt: The dropdown list with the available rfq notification options
 
 3. Click **Save Settings**.
 
@@ -67,6 +69,7 @@ To enable guest request for quote submission globally:
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 .. image:: /user/img/system/config_commerce/sales/RFQGlobal1.png
+   :alt: Global guest rfq condiguration
 
 3. In the **Guest RFQ** section, set whether guests are allowed to submit a request for quote.
 

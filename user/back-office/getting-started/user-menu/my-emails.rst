@@ -184,6 +184,7 @@ You can reach your emails by clicking on the Recent Emails button in the top rig
 will appear, as illustrated in the screenshot below:
 
 .. image:: /user/img/getting_started/user_menu/recent_emails_button.jpg
+   :alt: View the list of unread emails displayed when clicking the Recent Emails button
 
 Clicking on an email from the list redirects you to the page of the selected email.
 

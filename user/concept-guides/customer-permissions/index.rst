@@ -34,7 +34,7 @@ Access levels for back-office user roles
 To illustrate all four access levels that can be defined for any user role in the storefront, let’s use the example of a Company A that has 2 departments: West and East. The West department has an LA subdivision. A selected customer user belongs to the West department.
 
 .. image:: /user/img/concept-guides/customers/access_levels_main.png
-   :alt: Example illustration
+   :alt: Illustration of an example with two departments belonging to Company A
    :width: 60%
    :align: center
 

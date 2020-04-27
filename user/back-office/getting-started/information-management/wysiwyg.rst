@@ -27,7 +27,7 @@ To add the WYSIWYG editor as a field, follow the steps outlined in the :ref:`Cre
 For some entities, the field has already been integrated to category and product descriptions, content blocks, landing pages, and product brands, giving you the ability to expand the simple settings with the advanced formatting features.
 
     .. image:: /user/img/getting_started/wysiwyg/wysiwyg_various_places.png
-       :alt: The wysiwyg field integrated to various entity
+       :alt: View the wysiwyg field integrated to various entity
 
 
 Aside from the fact that the Product entity has already incorporated the WYSIWYG editor into its long description field, you can also create an additional field that would use the WYSIWYG editor by creating a related product attribute under **Products > Product Attribute** with the WYSIWYG data type as described in the related guide on :ref:`product attribute creation <products--product-attributes>`. Then, add this attribute to the product family under the required attribute group.
@@ -47,7 +47,7 @@ The main parts of the editor help define the interface and the structure of your
 * **Canvas** --- A field with the appropriate HTML-like content to be displayed in the storefront. Within the canvas, you can move, copy, or delete the components, and format the text inside blocks.
 
     .. image:: /user/img/getting_started/wysiwyg/canvas.png
-       :alt: The example of the WYSIWYG canvas
+       :alt: An example of the WYSIWYG canvas
 
 * **Blocks** --- A group of various blocks that you can drag and drop to your canvas shaping the desired content. A block can be either a text, a multi media file, a table or a column. You can also embed a piece of code, any default or third-party widgets, insert a link, a quote, or add a button. The basic set of blocks can cover most of your needs.
 

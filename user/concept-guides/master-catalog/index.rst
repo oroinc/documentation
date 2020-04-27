@@ -33,7 +33,7 @@ Although they may sound similar, a master and a :ref:`web catalog <user-guide--w
 
 The master and the web catalog share some terminology, namely a product, a category, and a product collection.
 
-- A product and a product collection. The master and web catalogs share the same product collection but unlike the latter, a web catalog can have the same product in multiple categories.
+- A product and a product collection. The master and web catalogs share the same product collection but unlike the former, a web catalog can have the same product in multiple categories.
 - A category. You can add any master catalog product category to a :ref:`content node of a web catalog <user-guide--web-catalog-edit-content-tree>`, adding various localization, website or customer restrictions to it.
 
 The master catalog organizes, categorizes, and stores the details of all your products (even those that you may not want to sell immediately), and a web catalog helps present these products in a personalized way that fits your target audience, website, or sales strategy. Think of a master catalog as a storage room, and a :ref:`web catalog <user-guide--web-catalog>` as your shop window (of which you can have more than one). You keep all your products in the storage room but display only some of them in a specific way and order in the shop windows.

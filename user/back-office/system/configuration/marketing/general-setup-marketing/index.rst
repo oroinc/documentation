@@ -22,7 +22,7 @@ You can customize marketing features, such as :ref:`marketing lists <user-guide-
 3. To enable/disable the necessary feature, first clear the **Use Default** check box and then select the required option.
 
 .. image:: /user/img/system/config_system/marketing_features.png
-   :alt: Marketing features configuration
+   :alt: Global marketing features configuration
 
 4. Click **Save Setting**.
 

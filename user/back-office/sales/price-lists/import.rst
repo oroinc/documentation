@@ -38,6 +38,7 @@ To import a bulk of product prices:
    * **Reset and Add** strategy removes all the existing prices and adds only the ones listed in the .csv file.
 
      .. image:: /user/img/sales/pricelist/import_price_list.png
+        :alt: The steps you need to take to import prices to price lists
 
 7. **Validate import results**: Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
 

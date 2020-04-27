@@ -17,6 +17,7 @@ To change the default inventory quantity limitations:
 
    .. image:: /user/img/system/config_commerce/inventory/limitations.png
       :class: with-border
+      :alt: Global inventory limitations configuration settings
 
    The following table describes the options available on the page:
 

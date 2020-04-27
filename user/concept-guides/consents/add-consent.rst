@@ -62,6 +62,7 @@ Once the landing page with the consent description is added to a web catalog nod
 .. important:: You can view all consents accepted by your customer users in the **Consents** section of their pages under **Customers > Customer Users**.
 
         .. image:: /user/img/system/consents/consents_section_customer_user_page.png
+           :alt: View the Consents section of a customer user
 
 
 .. important:: Keep in mind that once a consent is accepted by at least one person in the OroCommerce storefront, it becomes uneditable and unremovable as well as the associated landing page.

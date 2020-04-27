@@ -27,6 +27,7 @@ To update the product watermark settings globally:
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/product/ProductImages.png
+      :alt: Global product image watermark configuration settings
 
    The following options are available:
 
@@ -58,16 +59,19 @@ To enable image preview globally:
 
    .. image:: /user/img/system/config_commerce/product/ImagePreviewGlobal.png
       :class: with-border
+      :alt: Global image gallery options configuration settings
 
 3. When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
 
    .. image:: /user/img/system/config_commerce/product/ImagePreviewEnabled.png
       :class: with-border
+      :alt: Illustration of the Enable Image Preview on Product Listing option in the storefront
 
 4. When **Enable Image Preview on Product Listing** is disabled, clicking on the product image on the product listing page in the storefront will open the product page.
 
    .. image:: /user/img/system/config_commerce/product/ImagePreviewDisabled.png
       :class: with-border
+      :alt: Illustration of the Enable Image Preview on Product Listing option disabled
 
    .. note:: By default, **Enable Image Preview on Product Listing** is enabled.
 
@@ -97,16 +101,19 @@ To configure image gallery options globally:
 
    .. image:: /user/img/system/config_commerce/product/ImageGalleryEnabled.png
       :class: with-border
+      :alt: Illustration of the Popup Gallery on Product View option in the storefront
 
    By clicking on the image, the pop up gallery will be displayed in the middle of the screen:
 
    .. image:: /user/img/system/config_commerce/product/ImageGalleryEnabled2.png
       :class: with-border
+      :alt: Displaying the popup gallery functionality
 
 4. When **Popup Gallery on Product View** is disabled, the image gallery will take the form of an inline view:
 
    .. image:: /user/img/system/config_commerce/product/ImageGalleryDisabled.png
       :class: with-border
+      :alt: Displaying the popup gallery functionality if the feature is disabled
 
    Flick through the pictures in the gallery by pressing < or > arrows without leaving the product page.
 

@@ -26,6 +26,7 @@ To define filter, use any of the following filter options or combine them:
 Sample filter that finds all the records with any related activity logged:
 
 .. image:: /user/img/reports/filters_1.1.png
+   :alt: All options available under the Filters section
 
 AND/OR Operators
 ----------------
@@ -38,6 +39,7 @@ To combine the conditions of two or more filters, you can use the operators **AN
 The following sections provide a detailed explanation of the filters with examples for different operators.
 
 .. image:: /user/img/reports/filters_1.png
+   :alt: Illustrating the usage of AND/OR operators with the options under the Filters section
 
 .. _user-guide--business-intelligence--filters-field-conditions:
 
@@ -51,34 +53,42 @@ To define a field condition:
 1. Drag **Field condition** to the box on the right.
 
   .. image:: /user/img/reports/filters_2.png
+     :alt: Dragging the Field condition option to the constructor field
 
 2. Click **Choose a field**.
 
 3. A list of fields appears. At the top of the list, you can see the name of the field, for which the records are filtered. (In the example below it is an Opportunity). Below the Opportunity name, there is a list of all available fields related to it.
 
   .. image:: /user/img/reports/filters_4.png
+     :alt: View the list of fields related to the opportunity record
 
 4. Select a field that you want to apply for the rule:
 
   - This can be a field of the entity selected in the **General** section. For example, we can filter Opportunity records by status.
 
   .. image:: /user/img/reports/filters_5.png
+     :alt: Filtering the opportunity record by status
 
   - You can also select a field of another entity, related to it. For example, if you want the list to contain only Opportunities assigned to a certain customer, scroll down the list and select this field under the *Related Entities* header.
 
     The name of the selected field (in our example, it is *Customer*) will appear at the top of the list.
 
     .. image:: /user/img/reports/filters_7.png
+       :alt: Filtering the opportunity record by customer name
 
   - You can also add another field related to *Customer* under the *Related entities* section. For example, you can select only the customers with addresses in California.
 
     .. image:: /user/img/reports/filters_8.png
+       :alt: Filtering the opportunity record by customer name and address
+
 
 .. hint::
 
     Once you have specified all the required conditions, another default field condition appears. Some components of this field contain links with a list of possible values suitable for the specified field.
 
     .. image:: /user/img/reports/filters_9.png
+       :alt: Filtering the opportunity record by customer name and city that contains California
+
 
 .. _user-guide--business-intelligence--filters-activity:
 
@@ -95,14 +105,18 @@ To define the activity settings:
   - *Has activity /has not activity* - only the records to which the defined activity has/has not been assigned will be selected.
 
     .. image:: /user/img/reports/filters_10.png
+       :alt: Creating a filter condition using the Activity option
 
   - The List of available activities to filter by.
 
     .. image:: /user/img/reports/filters_11.png
+       :alt: Creating a filter condition using the Activity option setting Has Activity to All
 
   - *Choose a field*: select the field to filter by. For example, we will select only the records, for which a call was logged after June 1, 2019.
 
-.. image:: /user/img/reports/filters_12.png
+    .. image:: /user/img/reports/filters_12.png
+       :alt: Creating a filter condition for the calls that were logged after June 1, 2019.
+
 
 .. _user-guide--business-intelligence--filters-data-audit:
 
@@ -117,12 +131,15 @@ To define the data audit settings:
 2. Determine if the condition should be valid for the records where the field has or has not been changed.
 
    .. image:: /user/img/reports/filters_13.png
+      :alt: Creating a filter condition using the Data Audit option
 
 3. Select the date when the changes have/have not been applied.
 
 For example, we will select only the records, for which Job Title value has been changed since June 1, 2019.
 
 .. image:: /user/img/reports/filters_14.png
+   :alt: Creating a filter condition for job titles that have been changed since June 1, 2019
+
 
 .. note::
 
@@ -163,6 +180,7 @@ To add a segment to the filters:
 1. Drag **Apply segment** to the box on the right.
 
    .. image:: /user/img/reports/filters_15.png
+      :alt: Dragging Apply segment to the box
 
 2. Click **Choose segment** and select one of the Segment predefined in the system.
 

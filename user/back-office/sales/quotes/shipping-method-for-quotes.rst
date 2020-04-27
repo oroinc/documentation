@@ -23,7 +23,7 @@ To limit the shipping address and methods per quote:
 4. In the **Shipping Information** section, configure the shipping options available for the customer:
 
    .. image:: /user/img/sales/quotes/shipping_methods.png
-      :class: with-border
+      :alt: Shipping options under the Shipping Information section of the Backoffice Quote Flow with Approvals
 
    a) In the **Shipping Methods** list, select the check boxes next to the shipping methods that you would like the customer to use for this order delivery.
 
