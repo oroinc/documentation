@@ -620,10 +620,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">relevant documentation </a>
 
-.. |Improve Catalog Performance| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CatalogBundle/Resources/doc/performance-notes.md" target="_blank">Improve Catalog Performance</a>
-
 .. |Enable Price Sharding| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/price-sharding.md" target="_blank">Enable Price Sharding</a>
