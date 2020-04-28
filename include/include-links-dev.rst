@@ -2967,26 +2967,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WindowsBundle/Resources/doc/windows_as_widget.md" target="_blank">Windows as Widget</a>
 
-.. |Introduction to Workflows| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/getting-started.md" target="_blank">Introduction to Workflows</a>
-
-.. |Workflow Bundle Configuration Reference| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/configuration-reference.md" target="_blank">Configuration Reference</a>
-
-.. |Translations Wizard| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md" target="_blank">Translations Wizard</a>
-
-.. |Workflow Entities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/workflow-entities.md" target="_blank">Workflow Entities</a>
-
-.. |Introduction to Processes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/processes/index.md" target="_blank">Introduction to Processes</a>
-
 .. |ConfigExtensionInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Config/Extension/ConfigExtensionInterface.php" target="_blank">ConfigExtensionInterface</a>
@@ -3403,10 +3383,6 @@ Links (Dev)
 
    <a href="https://oroinc.com/orocrm/doc/1.12/dev-guide" target="_blank">OroCRM 1.12</a>
 
-.. |Workflow Configuration Reference| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/configuration-reference.md" target="_blank">Workflow Configuration Reference</a>
-
 .. |in PHPStorm documentation| raw:: html
 
    <a href="https://www.jetbrains.com/help/phpstorm/2016.3/using-php-code-sniffer-tool.html" target="_blank">in PHPStorm documentation</a>
@@ -3458,14 +3434,6 @@ Links (Dev)
 .. |relevant OroSegmentBundle documentation| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SegmentBundle/README.md#overview" target="_blank">relevant OroSegmentBundle documentation</a>
-
-.. |Workflow Guide| raw:: html
-
-   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md" target="_blank">Workflow Guide</a>
-
-.. |Workflow Translation Wizard| raw:: html
-
-   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md" target="_blank">Workflow Translation Wizard</a>
 
 .. |Composer installation documentation| raw:: html
 
@@ -5263,5 +5231,39 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/config/image_placeholder.yml" target="_blank">image_placeholder.yml</a>
 
+.. |System Configuration| raw:: html
+
+  <a href="https://doc.oroinc.com/backend/system-configuration/#creating-configuration-forms" target="_blank">System Configuration</a>
 
 
+.. |notify them about your intention to launch| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/support/" target="_blank">notify them about your intention to launch</a>
+
+.. |ConfigExpression| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Component/ConfigExpression/README.md" target="_blank">ConfigExpression</a>
+
+.. |oro_workflow_transition_form| raw:: html
+
+   <a href="https://github.com/laboro/dev/tree/master/package/platform/src/Oro/Bundle/WorkflowBundle/Resources/views/layouts/default/imports/oro_workflow_transition_form" target="_blank"> oro_workflow_transition_form</a>
+
+.. |oro_workflow_start_transition_form| raw:: html
+
+  <a href="https://github.com/laboro/dev/tree/master/package/platform/src/Oro/Bundle/WorkflowBundle/Resources/views/layouts/default/imports/oro_workflow_start_transition_form" target="_blank">oro_workflow_start_transition_form</a>
+
+.. |Transition| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/WorkflowBundle/Model/Transition.php" target="_blank">Transition</a>
+
+.. |WorkflowItem| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/WorkflowBundle/Entity/WorkflowItem.php" target="_blank">WorkflowItem</a>
+
+.. |TransitionContext| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/WorkflowBundle/Processor/Context/TransitionContext.php" target="_blank">TransitionContext</a>
+
+.. |Workflow Entities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/workflow-entities.md" target="_blank">Workflow Entities</a>
