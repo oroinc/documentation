@@ -24,7 +24,7 @@ To add a custom condition, add a service to DIC with tag `oro_action.condition`,
                 - { name: oro_action.condition, alias: blank|empty }
 
 
-Symbol "|" in alias can be used to have several aliases. Please keep in mind that service class must implement `Oro\Component\ConfigExpression\ExpressionInterface`.
+Symbol "|" in alias can be used to have several aliases. Please keep in mind that service class must implement `Oro\\Component\\ConfigExpression\\ExpressionInterface`.
 
 Configurable Condition
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -75,7 +75,7 @@ To add a custom action, add a service to DIC with tag `oro_action.action`, as il
                 - { name: oro_action.action, alias: close_workflow }
 
 
-Symbol "|" in alias can be used to have several aliases. Please keep in mind that the service class must implement `Oro\Component\Action\Action\ActionInterface`.
+Symbol "|" in alias can be used to have several aliases. Please keep in mind that the service class must implement `Oro\\Component\\Action\Action\\ActionInterface`.
 
 Configuration Syntax
 ^^^^^^^^^^^^^^^^^^^^

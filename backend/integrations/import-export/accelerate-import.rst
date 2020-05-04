@@ -6,11 +6,10 @@
 Accelerate Import
 =================
 
-This article contains several recommendation about import process acceleration.
-
+This article contains several recommendation about import process acceleration, explained below.
 
 Make Sure Xdebug is Disabled
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 Xdebug is a very useful debug tool for PHP, but at the same time it adds lots of overhead, especially for heavy and long
 operations. Xdebug status can be checked with ``php -m`` command:
@@ -30,7 +29,7 @@ php.ini).
 
 
 Run Import Operation from the Command Line
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------
 
 Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
 or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:csv``
@@ -100,7 +99,7 @@ Here is a small example of its usage:
 
 
 Perform Import in the Prod Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 The default environment for CLI is dev. In dev environment the application stores lots of data generally not required for real-life usage.
 Therefore, it is recommended to run import in prod environment so it would finish much faster. To do so you should add
@@ -143,7 +142,7 @@ import can be performed without it. To do so, start the import command in no int
 
 
 Disable Optional Listeners
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 With OroPlatform you can disable some event listeners for the command execution. The ``oro:platform:optional-listeners``
 command shows the list of all such listeners:
@@ -175,7 +174,7 @@ it will disable all optional listeners. Here is an example:
 
 
 Write Custom Import Strategy
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
 to be used as the default one. This strategy automatically handles field types, relations etc.

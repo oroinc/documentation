@@ -1,7 +1,7 @@
 Extend Entities to Support Bulk Import and Export
 =================================================
 
-Import/export capabilities in Oro applications are available for most critical features where the daily operations generate high data load. Bulk import is recommented when manual one-by-one entry is not efficient.
+Import/export capabilities in Oro applications are available for most critical features where the daily operations generate high data load. Bulk import is recommended when manual one-by-one entry is not efficient.
 
 Out of the box, import and export is enabled for the following types of data:
 

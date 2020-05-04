@@ -142,7 +142,7 @@ Configuration
 Translation File Configuration
 ------------------------------
 
-To define translatable textual representation of the configuration fields, create translation file `DemoWorkflowBundle\Resources\translations\workflows.en.yml` with the  following content.
+To define translatable textual representation of the configuration fields, create translation file `DemoWorkflowBundle\\Resources\\translations\\workflows.en.yml` with the  following content.
 
 .. code-block:: yaml
    :linenos:

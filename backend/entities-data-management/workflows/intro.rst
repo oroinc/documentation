@@ -155,7 +155,7 @@ Then on step "processed", the user can add additional emails using transition "a
 To perform transition "set_name", the user should fill first and last name, the middle name is optional. After this transition, the provided data is automatically set to the user through the attribute property paths. To perform transition "add_email", the user must enter a valid email - it must not be empty and must have a valid format.
 This transition creates a new Email entity with the assigned email string and User entity, then adds it to the User entity to create a connection, and clears temporary attributes in last action.
 
-There are 2 triggers that will try to perform transition `schedule_transition` by cron definition, or when field `status` of entity with class`Oro\Bundle\SaleBundle\Entity\Quote` is updated.
+There are 2 triggers that will try to perform transition `schedule_transition` by cron definition, or when field `status` of entity with class`Oro\\Bundle\\SaleBundle\\Entity\\Quote` is updated.
 
 The following diagram shows this logic in graphical representation.
 
