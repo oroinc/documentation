@@ -10,7 +10,7 @@ Configuration of Workflow declares all aspects related to a specific workflow:
 * attributes involved in the workflow
 * entity related to the workflow
 
-The structure of the configuration is declared in class `oro\Bundle\WorkflowBundle\Configuration\WorkflowConfiguration`.
+The structure of the configuration is declared in class `oro\\Bundle\\WorkflowBundle\\Configuration\\WorkflowConfiguration`.
 
 
 Configuration File
@@ -274,7 +274,7 @@ A single attribute can be described with the following configuration:
 
 .. note:: Attribute configuration does not contain any information about how to render attribute on step forms, it's responsibility of "Steps configuration". This makes it possible to render one attribute in different ways on steps.
 
-Browse class *Oro\Bundle\WorkflowBundle\Model\AttributeAssembler* for more details.
+Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\AttributeAssembler* for more details.
 
 **Example**
 
@@ -426,12 +426,12 @@ A single variable can be described with the following configuration:
 * **options** - Options of a variable. Currently the following options are supported:
 
   * **class** - *string* - Fully qualified class name. Allowed only when type is object.
-  * **form_options** - *array* - Options defined here are passed to the `WorkflowVariablesType` form type. Browse class *Oro\Bundle\WorkflowBundle\Form\Type\WorkflowVariablesType* for more details. Constraints may be set to workflow configuration form with the `constraints` option. All Symfony form constrains are supported.
+  * **form_options** - *array* - Options defined here are passed to the `WorkflowVariablesType` form type. Browse class *Oro\\Bundle\\WorkflowBundle\\Form\\Type\\WorkflowVariablesType* for more details. Constraints may be set to workflow configuration form with the `constraints` option. All Symfony form constrains are supported.
   * **multiple** - *boolean* - Indicates whether several entities are supported. Allowed only when type is entity.
   * **identifier** - *string* - Applies to entities only. Class identifier specifies the identity field which will be used to query for the desired entity, in case a default entity needs to be loaded upon workflow assembling. Not specifying it will read the identifier field names from the entity's metadata. Please note that it is not necessary to use a primary key, any **unique** key is supporter, as long as it is not a composite key.
 
 .. important::
-        Unlike attributes, variable configuration does contain information about how to render variables in the configuration form, with the `form_options` node under `options`. Browse class *Oro\Bundle\WorkflowBundle\Model\VariableAssembler* for more details.
+        Unlike attributes, variable configuration does contain information about how to render variables in the configuration form, with the `form_options` node under `options`. Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\VariableAssembler* for more details.
 
 **Example**
 

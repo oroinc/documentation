@@ -173,7 +173,7 @@ Now, let's look at configuration specific moments.
 To use your custom form type that replaces the default transition form, set the type in `form_type` option to your custom type.
 
 .. note::
-      FQCN should be used as the value for *form_type* when defining custom form type and this form must be resolvable by "Form Registry". Together with that, you must specify the correct `configuration` for the type customization (`handler`, `template`, `data_provider`, `data_attribute` options). Here, we have `Oro\Bundle\SaleBundle\Form\Type\QuoteType` form type. But to handle this complex form type properly, specify additional options in the `form_options.configuration` node.
+      FQCN should be used as the value for *form_type* when defining custom form type and this form must be resolvable by "Form Registry". Together with that, you must specify the correct `configuration` for the type customization (`handler`, `template`, `data_provider`, `data_attribute` options). Here, we have `Oro\\Bundle\\SaleBundle\\Form\\Type\\QuoteType` form type. But to handle this complex form type properly, specify additional options in the `form_options.configuration` node.
 
 They are:
 
@@ -184,14 +184,14 @@ They are:
 .. note::
    It should be extended from `OroUIBundle:actions:update.html.twig` for compatibility with transition form page (usually all Oro update templates do so).
 
-- `data_provider` - an alias of a registered service by tag `oro_form.form_template_data_provider` that implements `Oro\Bundle\FormBundle\Provider\FormTemplateDataProviderInterface`. It should return all necessary data for specified template as controllers usually do.
+- `data_provider` - an alias of a registered service by tag `oro_form.form_template_data_provider` that implements `Oro\\Bundle\\FormBundle\\Provider\\FormTemplateDataProviderInterface`. It should return all necessary data for specified template as controllers usually do.
 
 - `data_attribute` - the name of data attribute where form data payload should be taken from by workflow engine to pass into form and put to as result of handling.
 
 Form Reuse Recommendation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The best approach when creating a new entity management (entity controller) while developing is to use the `Oro\Bundle\FormBundle\Model\UpdateHandler::update` method functionality.
+The best approach when creating a new entity management (entity controller) while developing is to use the `Oro\\Bundle\\FormBundle\\Model\\UpdateHandler::update` method functionality.
 So that if you encapsulate your logic into proper parts of the form handling process, then you should easily be able to create a workflow with the custom form type. As custom form workflow transition handling is based on reusing those parts in transition configuration.
 
 Transition Forms and Layouts

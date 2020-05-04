@@ -1,3 +1,6 @@
 backend/bundles/commerce/CMSBundle/content-widgets/user-guide /user/back-office/marketing/content-widgets/index
 backend/api/using /api/
 user/back-office/sales/shopping-lists/view /user/back-office/sales/shopping-lists/index
+backend/integrations/import-export /backend/integrations/import-export/import-export
+backend/integrations/customize-import-export /backend/integrations/import-export/customize-import-export
+backend/integrations/accelerate-import /backend/integrations/import-export/accelerate-import

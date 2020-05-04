@@ -119,10 +119,6 @@ Links (Dev)
 
    <a href="https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactBundle/ImportExport/Strategy/ContactAddOrReplaceStrategy.php" target="_blank">ContactAddOrReplaceStrategy</a>
 
-.. |ImportExportBundle documentation| raw:: html
-
-   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/index.md" target="_blank">ImportExportBundle documentation</a>
-
 .. |OroIntegrationBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/" target="_blank">OroIntegrationBundle</a>
@@ -2645,47 +2641,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImapBundle#usage" target="_blank">Synchronize with IMAP Servers</a>
 
-.. |Main Components| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/overview.md#main-components" target="_blank">Main Components</a>
-
-.. |Domain Model| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/domain-model.md" target="_blank">Domain Model</a>
-
-.. |Configure Gaufrette for File Storage| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/gaufrette.md" target="_blank">Configure Gaufrette for File Storage</a>
-
-.. |Classes Diagram| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/classes-diagram.md" target="_blank">Classes Diagram</a>
-
-.. |Use Import Export Bundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/how-to-use.md" target="_blank">Use Import Export Bundle</a>
-
-.. |Configure Fields| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/fields-configuration.md" target="_blank">Configure Fields</a>
-
-.. |Postpone Processing of the Row| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/rows-postponing.md" target="_blank">Postpone Processing of the Row</a>
-
-.. |Events| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/events.md" target="_blank">Events</a>
-
 .. |ApiEvents| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/CustomizeFormDataContext.php" target="_blank">Events</a>
-
-
-
-.. |Strategy Events| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/strategy-events.md" target="_blank">Strategy Events</a>
 
 .. |Use Installer| raw:: html
 
@@ -5163,9 +5121,13 @@ Links (Dev)
 
    <a href="https://webpack.js.org/concepts/hot-module-replacement/" target="_blank">Hot Module Replacement</a>
 
-..  |AssetBundle upgrade documentation| raw:: html
+.. |AssetBundle upgrade documentation| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/CHANGELOG.md#assetbundle-1" target="_blank"> upgrade documentation</a>
+   <a href="https://github.com/oroinc/platform/blob/master/CHANGELOG.md#assetbundle-1" target="_blank">upgrade documentation</a>
+
+.. |Gaufrette| raw:: html
+
+   <a href="https://github.com/KnpLabs/Gaufrette" target="_blank">Gaufrette</a>
 
 .. |KnpGaufretteBundle| raw:: html
 
@@ -5267,3 +5229,8 @@ Links (Dev)
 .. |Workflow Entities| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/workflow-entities.md" target="_blank">Workflow Entities</a>
+
+.. |official Gaufrette documentation| raw:: html
+
+   <a href="http://knplabs.github.io/Gaufrette/" target="_blank">official Gaufrette documentation</a>
+

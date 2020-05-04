@@ -10,15 +10,13 @@ OroImportExportBundle allows developers to enable UI for the application users t
 Related Documentation
 ---------------------
 
-* |Main Components|
-* |Domain Model|
-* |Configure Gaufrette for File Storage|
-* |Classes Diagram|
-* |Use Import Export Bundle|
-* |Configure Fields|
-* |Postpone Processing of the Row|
-* |Events|
-* |Strategy Events|
+* :ref:`Import and Export Overview and Main Components <dev-integrations-import-export-overview>`
+* :ref:`Domain Model <dev-integrations-import-export-domain>`
+* :ref:`Configure Gaufrette for File Storage <dev-integrations-import-export-gaufrette>`
+* :ref:`Use Import Export Entities <dev-integrations-import-export-entities>`
+* :ref:`Configure Fields <dev-integrations-imports-export-fields>`
+* :ref:`Postpone Processing of the Row <dev-integrations-import-export-postponing-rows>`
+* :ref:`Events and Strategy Events <dev-integrations-import-export-events>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
