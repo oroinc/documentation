@@ -57,6 +57,7 @@ You can perform the following actions here:
 
 * :ref:`Inventory <user-guide--inventory>`
 * :ref:`Configure System-wide Inventory <configuration--guide--commerce--inventory>`
+* :ref:`Configure Website-specific Inventory <configuration--commerce--inventory-website>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

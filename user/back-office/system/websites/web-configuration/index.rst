@@ -6,6 +6,8 @@
 System Configuration for Website
 ================================
 
+.. important:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
+
 .. important:: Multi-website management is only available in the Enterprise edition.
 
 You can configure available system settings on four :ref:`configuration levels <configuration--guide--config-levels>`: system, organization, website, and user.

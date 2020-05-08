@@ -6,7 +6,9 @@
 Websites
 ========
 
-You can create multiple :term:`websites <Website>` that target a particular audience, geography, a specific brand, and a segment of goods or services that your company is providing.
+.. important:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
+
+You can create multiple B2B :term:`websites <Website>` that target a particular audience, geography, a specific brand, and a segment of goods or services that your company is providing.
 
 .. important:: Multi-website management is only available in the Enterprise edition.
 

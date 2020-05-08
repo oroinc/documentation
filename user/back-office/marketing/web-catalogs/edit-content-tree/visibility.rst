@@ -3,8 +3,9 @@
 .. _user-guide--marketing--web-catalog--node--visibility:
 .. _user-guide--marketing--web-catalog--content--visibility:
 
-Configure Content Visibility
-----------------------------
+
+Customize Web Catalog Contents for Localization, Customer, Customer Group, or Website
+-------------------------------------------------------------------------------------
 
 .. begin
 

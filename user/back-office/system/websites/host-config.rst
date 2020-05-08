@@ -5,6 +5,8 @@
 Setup a Website Host
 ====================
 
+.. important:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
+
 In OroCommerce, websites may be exposed via different domains, or reside in the sub-folders of the same domain (e.g., the two websites that target the United States and the United Kingdom may be available at the *https://us-store.com* and *https://uk-store.com* respectively, or they may be reachable via *https://store.com/us* and *https://store.com/uk*).
 
 For the websites with dedicated domains, you may use default OroCommerce installation, where all websites are installed into the web folder of the OroCommerce instance. However, you can move or copy the website to the sub-directory to support the websites with the shared domain (e.g., *https://store.com/us* and *https://store.com/uk*).
