@@ -5,6 +5,8 @@
 Manage a Website
 ================
 
+.. important:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
+
 .. important:: Multi-website management is only available in the Enterprise edition.
 
 With OroCommerce, you can determine the way a particular website is operated by customizing it according to your business requirements.
@@ -42,6 +44,8 @@ Now the website is marked as default and will be used for the anonymous access.
 
 .. image:: /user/img/system/websites/default_australia_website.png
    :alt: Mark Australia website as the default one
+
+.. _user-guide--system-websites-b2c:
 
 Configure a Website for B2C
 ---------------------------
@@ -115,6 +119,13 @@ To create a new web catalog, personalize the catalog content for a specific webs
 * :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--node--visibility>`
 * :ref:`Enable a Web Catalog for a Website <user-guide--marketing--web-catalog--enable-per-website>`
 
+Customize Content Blocks per Website
+------------------------------------
+
+When you prepare :ref:`web catalogs <user-guide--web-catalog>` for you storefront, you can :ref:`create <user-guide--web-catalog-create>` and :ref:`enable a custom web catalog for the website <user-guide--marketing--web-catalog--enable-per-website>` or :ref:`set up a custom node content for the website <user-guide--marketing--web-catalog--customize>` in the default web catalog.
+
+.. _user-guide--system-websites-price-lists:
+
 Customize Price Lists per Website
 ---------------------------------
 
@@ -165,10 +176,7 @@ Similarly to configuring payment methods in OroCommerce, you can create an integ
 
 Also, refer to the :ref:`shipping configuration on the system level <user-guide--shipping--configuration>` to set the default shipping address, enable or disable shipping units of length and weight, and specify the tax code to be applied to the shipping cost.
 
-Customize Content Blocks per Website
-------------------------------------
 
-When you prepare :ref:`web catalogs <user-guide--web-catalog>` for you storefront, you can :ref:`create <user-guide--web-catalog-create>` and :ref:`enable a custom web catalog for the website <user-guide--marketing--web-catalog--enable-per-website>` or :ref:`set up a custom node content for the website <user-guide--marketing--web-catalog--customize>` in the default web catalog.
 
 **Related Topics**
 

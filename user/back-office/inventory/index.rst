@@ -32,6 +32,7 @@ Learn more about warehouses and inventory in the following topics:
 **Related Topic**:
 
 * :ref:`Configure System-wide Inventory <configuration--guide--commerce--inventory>`
+* :ref:`Configure Website-specific Inventory <configuration--commerce--inventory-website>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

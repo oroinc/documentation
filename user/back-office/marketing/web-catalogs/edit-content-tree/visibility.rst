@@ -4,8 +4,8 @@
 .. _user-guide--marketing--web-catalog--content--visibility:
 .. _user-guide--marketing--web-catalog--customize:
 
-Customize Web Catalog Contents for Localization, Customer or Customer Group
----------------------------------------------------------------------------
+Customize Web Catalog Contents for Localization, Customer, Customer Group, or Website
+-------------------------------------------------------------------------------------
 
 .. begin
 

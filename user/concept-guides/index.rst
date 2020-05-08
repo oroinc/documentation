@@ -48,6 +48,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    pricing/index
    payment-configuration/index
    shipping-configuration/index
+   websites/index
    localization/index
    marketing-automation/index
    promotions/index
