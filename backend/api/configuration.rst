@@ -222,6 +222,8 @@ The ``entities`` section describes the configuration of entities.
 
 *  **disable\_meta\_properties** *boolean* - The flag indicates whether a requesting of additional meta properties is disabled. By default ``false``.
 
+*  **disable_\partial_\load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``.
+
 *  **hints** *array* - Sets the |Doctrine query hints|. Each item can be a string or an array with ``name`` and ``value`` keys. The string value is a short form of ``[name: hint name]``.
 
 *  **identifier\_field\_names** *string[]* - The names of identifier fields of the entity. Use this option to override names set in a configuration file (for the API resource that are not based on ORM entity) or retrieved from an entity metadata (for ORM entities). This option is helpful when you do not want to use the primary key as an entity identifier in the API.
@@ -279,8 +281,7 @@ This section describes configuration of entity fields.
 
 *  **description** *string* - A human-readable description of the field or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
 
-*  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path,
-   e.g. ``user.firstName``. Each property name must be equal to the name of existing property of an entity.
+*  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path, e.g. ``user.firstName``. Each property name must be equal to the name of existing property of an entity. The ``_`` value can be used if a field value is not mapped to any property of an entity, e.g. for computed fields.
 
 *  **collapse** *boolean* - Indicates whether to collapse the entity. It is applicable for associations only. When ``true``, the target entity is returned as a value instead of an array of entity fields values.
 
@@ -495,6 +496,8 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 *  **disable\_meta\_properties** *boolean* - The flag indicates whether a requesting of additional meta properties is disabled. By default ``false``.
 
+*  **disable_\partial_\load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``.
+
 *  **form\_type** *string* - The form type that should be used for the entity.
 
 *  **form\_options** *array* - The form options to use for the entity. If ``form_type`` is not specified, the form options specified here are merged with form options defined at the entity level. If ``form_type`` is specified in an action configuration, the action form options completely replace the form options defined at the entity level.
@@ -509,6 +512,7 @@ The ``actions`` configuration section allows to specify action-specific options.
 *  **fields** - This section describes entity fields' configuration specific for a particular action.
 
    *  **exclude** *boolean* - Indicates whether the field should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__.
+   *  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path, e.g. ``user.firstName``. Each property name must be equal to the name of existing property of an entity. The ``_`` value can be used if a field value is not mapped to any property of an entity, e.g. for computed fields.
    *  **direction** *string* - Indicates whether the field is input-only, output-only or bidirectional. The input-only means that the request data can contain this field, but the response data cannot. The output-only means that the response data can contain this field, but the request data cannot. The bidirectional is the default behaviour and means that both the request data and the response data can contain this field.
    *  **form\_type** *string* - The form type that should be used for the field.
    *  **form\_options** *array* - The form options that should be used for the field.

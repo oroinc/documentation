@@ -4553,6 +4553,10 @@ Links (Dev)
 
    <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/dql-doctrine-query-language.html#query-hints" target="_blank">Doctrine query hints</a>
 
+.. |Doctrine partial objects| raw:: html
+
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/partial-objects.html" target="_blank">Doctrine partial objects</a>
+
 .. |orosoap.handler.delete| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SoapBundle/Handler/DeleteHandler.php" target="_blank">oro_soap.handler.delete</a>
