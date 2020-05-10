@@ -222,7 +222,7 @@ The ``entities`` section describes the configuration of entities.
 
 *  **disable\_meta\_properties** *boolean* - The flag indicates whether a requesting of additional meta properties is disabled. By default ``false``.
 
-*  **disable_\partial_\load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``.
+*  **disable\_partial\_load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``. When using of the partial objects is allowed the ``HINT_FORCE_PARTIAL_LOAD`` query hint is used together with them to avoid loading unneeded foreign keys.
 
 *  **hints** *array* - Sets the |Doctrine query hints|. Each item can be a string or an array with ``name`` and ``value`` keys. The string value is a short form of ``[name: hint name]``.
 
@@ -263,6 +263,7 @@ By default, the following form options are set:
                 hints:
                     - HINT_TRANSLATABLE
                     - { name: HINT_FILTER_BY_CURRENT_USER }
+                    - { name: HINT_FORCE_PARTIAL_LOAD, value: false }
                     - { name: HINT_CUSTOM_OUTPUT_WALKER, value: 'Acme\Bundle\AcmeBundle\AST_Walker_Class'}
                 excluded: false
                 form_type: Acme\Bundle\AcmeBundle\Api\Form\Type\AcmeEntityType
@@ -496,7 +497,7 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 *  **disable\_meta\_properties** *boolean* - The flag indicates whether a requesting of additional meta properties is disabled. By default ``false``.
 
-*  **disable_\partial_\load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``.
+*  **disable\_partial\_load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``.
 
 *  **form\_type** *string* - The form type that should be used for the entity.
 
