@@ -11,6 +11,12 @@ Related Documentation
 ---------------------
 
 * |Console Commands|
+* :ref:`Register an Event to Send Notification Emails <notification-bundle-event>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+.. toctree::
+   :hidden:
+
+   notification-event
