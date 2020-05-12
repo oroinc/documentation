@@ -1,7 +1,7 @@
-:title: Extending OroCommerce
+:title: Extending OroCommerce 4.1
 
 .. meta::
-   :description: Best practices on extending the OroCommerce functionality on the Oro applications
+   :description: Best practices on extending the OroCommerce 4.1 functionality on the Oro applications
 
 .. _dev-extend-commerce:
 

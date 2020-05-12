@@ -1,4 +1,4 @@
-:title: Akeneo Integration in OroCommerce
+:title: Akeneo Integration in OroCommerce 4.1
 
 .. meta::
    :description: Guidance on the Akeneo integration configuration for the backend developers

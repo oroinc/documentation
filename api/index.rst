@@ -1,9 +1,9 @@
 :oro_show_local_toc: false
 
-:title: OroCommerce and OroCRM Web API Development
+:title: OroCommerce and OroCRM 4.1 Web API Development
 
 .. meta::
-   :description: WebAPI engine architecture and backend developer guides
+   :description: Web API engine architecture and backend developer guides
 
 .. _web-services-api:
 

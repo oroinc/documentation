@@ -1,9 +1,9 @@
 :orphan:
 
-:title: OroCloud Monitoring Tools and Guidelines
+:title: OroCloud 4.1 Monitoring Tools and Guidelines
 
 .. meta::
-   :description: The Oro applications monitoring principles and guidelines for the OroCloud administrators
+   :description: The Oro applications monitoring principles and guidelines for the OroCloud 4.1 administrators
 
 .. _cloud_monitoring:
 

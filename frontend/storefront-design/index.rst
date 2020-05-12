@@ -1,4 +1,4 @@
-:title: OroCommerce Storefront Design Creation and Customization Guide
+:title: OroCommerce 4.1 Storefront Design Creation and Customization Guide
 
 .. meta::
    :description: Instructions on creating and customizing OroPlatform-based application UI using Sketch

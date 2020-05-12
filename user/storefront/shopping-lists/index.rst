@@ -1,4 +1,4 @@
-:title: Shopping Lists Management in the OroCommerce Storefront
+:title: Shopping Lists Management in the OroCommerce 4.1 Storefront
 
 .. meta::
    :description: Shopping lists management guides for the OroCommerce storefront users

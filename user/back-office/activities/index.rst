@@ -1,9 +1,9 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-:title: Activities Management in the OroCommerce and OroCRM Back-Office
+:title: Activities Management in the OroCommerce and OroCRM 4.1 Back-Office
 
 .. meta::
-   :description: Tasks, calls, cases, calendar events, and contact requests management guides for the OroCommerce and OroCRM back-office users
+   :description: Tasks, calls, cases, calendar events, and contact requests management guides for the OroCommerce and OroCRM 4.1 back-office users
 
 .. _user-guide-productivity-tools:
 .. _user-guide-activities:

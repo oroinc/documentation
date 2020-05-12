@@ -1,4 +1,4 @@
-:title: OroCommerce Storefront User Documentation
+:title: OroCommerce Storefront 4.1 User Documentation
 
 .. meta::
    :description: OroCommerce Storefront user's manuals and guides

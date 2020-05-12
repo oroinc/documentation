@@ -1,9 +1,9 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-:title: Marketing Tools in the OroCommerce and OroCRM Back-Office
+:title: Marketing Tools in the OroCommerce and OroCRM 4.1 Back-Office
 
 .. meta::
-   :description: Marketing campaigns, promotions, and web catalog management guides for the OroCommerce and OroCRM back-office users
+   :description: Marketing campaigns, promotions, and web catalog management guides for the OroCommerce and OroCRM 4.1 back-office users
 
 
 .. _user-guide-marketing:

@@ -1,9 +1,9 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-:title: System Configuration Management in the OroCommerce and OroCRM Back-Office
+:title: System Configuration Management in the OroCommerce and OroCRM 4.1 Back-Office
 
 .. meta::
-   :description: Extensive manuals on the OroCommerce and OroCRM back-office system configuration
+   :description: Extensive manuals on the OroCommerce and OroCRM 4.1 back-office system configuration
 
 System
 ======

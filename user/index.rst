@@ -1,4 +1,4 @@
-:title: OroCommerce and OroCRM User Documentation
+:title: OroCommerce and OroCRM 4.1 User Documentation
 
 .. meta::
    :description: Concept guides, back-office, and storefront user documentation

@@ -1,6 +1,6 @@
 :orphan:
 
-:title: OroCloud Architecture Documentation
+:title: OroCloud 4.1 Architecture Documentation
 
 .. meta::
    :description: Fundamentals of the OroCloud architecture, environment infrastructure configuration and maintenance

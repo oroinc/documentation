@@ -1,4 +1,4 @@
-:title: OroCommerce, OroCRM, OroPlatform JavaScript Architecture
+:title: OroCommerce, OroCRM, OroPlatform 4.1 JavaScript Architecture
 
 .. meta::
    :description: Extensive documentation on the JavaScript web applications architecture for the frontend developers

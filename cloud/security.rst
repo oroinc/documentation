@@ -1,6 +1,6 @@
 :orphan:
 
-:title: OroCloud Security Settings
+:title: OroCloud 4.1 Security Settings
 
 .. meta::
    :description: Guidance on security settings options, network segmentation, traffic and firewall rules, and DDoS protection for the OroCloud administrators

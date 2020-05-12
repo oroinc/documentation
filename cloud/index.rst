@@ -1,7 +1,7 @@
-:title: OroCloud Documentation
+:title: OroCloud 4.1 Documentation
 
 .. meta::
-   :description: Guidance on the OroCloud onboarding process, maintenance tools, and technical support service
+   :description: Guidance on the OroCloud 4.1 onboarding process, maintenance tools, and technical support service
 
 .. _orocloud:
 

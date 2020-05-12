@@ -1,7 +1,7 @@
-:title: Dashboards Management in the Oro Applications Backend
+:title: Dashboards Management in the Oro Applications 4.1 Backend
 
 .. meta::
-   :description: Dashboards and widgets management guide for the OroCommerce, OroCRM, OroPlatform backend developers
+   :description: Dashboards and widgets management guide for the OroCommerce, OroCRM, OroPlatform 4.1 backend developers
 
 .. _dev-dashboards:
 

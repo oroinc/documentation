@@ -1,7 +1,7 @@
-:title: Enabling and Disabling Oro Application Features
+:title: Enabling and Disabling Oro Application 4.1 Features
 
 .. meta::
-   :description: Practical guides on enabling and disabling application features via the system configuration UI in the OroCommerce, OroCRM, and OroPlatform backend
+   :description: Practical guides on enabling and disabling application features via the system configuration UI in the OroCommerce, OroCRM, and OroPlatform 4.1 backend
 
 .. _dev-feature-toggle:
 

@@ -1,4 +1,4 @@
-:title: Translation and Localization Configuration of the Oro Applications Backend
+:title: Translation and Localization Configuration of the Oro Applications 4.1 Backend
 
 .. meta::
    :description: Guidance on translation and localization of the Oro applications for the backend developers

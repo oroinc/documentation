@@ -1,6 +1,6 @@
 :oro_show_local_toc: false
 
-:title: WebSocket Notification Settings in OroCommerce, OroCRM, OroPlatform
+:title: WebSocket Notification Settings in OroCommerce, OroCRM, OroPlatform 4.1
 
 .. meta::
    :description: Websockets functionality and notification settings documentation for the backend developers
