@@ -1056,6 +1056,22 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/ComparisonFilter.php" target="_blank">ComparisonFilter</a>
 
+.. |FieldFilterInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/FieldFilterInterface.php" target="_blank">FieldFilterInterface</a>
+
+.. |FieldAwareFilterInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/FieldAwareFilterInterface.php" target="_blank">FieldAwareFilterInterface</a>
+
+.. |entity configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Config/EntityDefinitionConfig.php" target="_blank">entity configuration</a>
+
+.. |ConfigAwareFilterInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/ConfigAwareFilterInterface.php" target="_blank">ConfigAwareFilterInterface</a>
+
 .. |MetadataAwareFilterInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/MetadataAwareFilterInterface.php" target="_blank">MetadataAwareFilterInterface</a>

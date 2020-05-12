@@ -115,6 +115,24 @@ as a good base class for your own filters:
 * :ref:`ComparisonFilter <comparisonfilter-filter>` and
 * |AssociationFilter|
 
+.. _fieldfilterinterface:
+
+FieldFilterInterface Interface
+------------------------------
+
+The |FieldFilterInterface| is a marker interface that must be implemented by filters that are applied to a field.
+
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |CompositeIdentifierFilter|, |NestedTreeFilter|, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
+
+.. _fieldawarefilterinterface:
+
+FieldAwareFilterInterface Interface
+-----------------------------------
+
+The |FieldAwareFilterInterface| interface must be implemented by filters that are applied to a field and need to know the field name.
+
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
+
 .. _collectionawarefilterinterface:
 
 CollectionAwareFilterInterface Interface
@@ -124,12 +142,19 @@ The |CollectionAwareFilterInterface| interface must be implemented by filters th
 
 Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
 
+.. _configawarefilterinterface:
+
+ConfigAwareFilterInterface Interface
+------------------------------------
+
+The |ConfigAwareFilterInterface| interface must be implemented by filters that depend on the |entity configuration|.
+
 .. _metaawarefilterinterface:
 
 MetadataAwareFilterInterface Interface
 --------------------------------------
 
-The |MetadataAwareFilterInterface| interface must be implemented by filters that depends on the |entity metadata|.
+The |MetadataAwareFilterInterface| interface must be implemented by filters that depend on the |entity metadata|.
 
 An example of such filter is |CompositeIdentifierFilter|.
 
@@ -138,7 +163,7 @@ An example of such filter is |CompositeIdentifierFilter|.
 RequestAwareFilterInterface Interface
 -------------------------------------
 
-The |RequestAwareFilterInterface| interface must be implemented by filters that depends on a :ref:`request type <api-request-type>`.
+The |RequestAwareFilterInterface| interface must be implemented by filters that depend on a :ref:`request type <api-request-type>`.
 
 Examples of such filters are |ExtendedAssociationFilter| and |CompositeIdentifierFilter|.
 
