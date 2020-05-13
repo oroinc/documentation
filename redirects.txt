@@ -4,3 +4,4 @@ user/back-office/sales/shopping-lists/view /user/back-office/sales/shopping-list
 backend/integrations/import-export /backend/integrations/import-export/import-export
 backend/integrations/customize-import-export /backend/integrations/import-export/customize-import-export
 backend/integrations/accelerate-import /backend/integrations/import-export/accelerate-import
+backend/setup/dev-environment/vagrant /backend/setup/demo-environment/vagrant

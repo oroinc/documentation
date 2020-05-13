@@ -95,7 +95,6 @@ Please, follow **Step 1: Environment Setup** and **Step 2: Pre-installation Envi
 
 .. note:: If the OS on your development machine is other than CentOS, consider using a virtual machine running on CentOS to create the environment for your custom application.
 
-.. @todo Later add alternative - use Vagrant to create a development environment
 
 .. _dev-guide-development-practice-setup-dev-env-install-app:
 
@@ -128,7 +127,6 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    web-server-config/index
    environment-type-based-configuration
    monitoring/index
-   vagrant
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
