@@ -9,3 +9,4 @@ Demo Environment
    aws
    gcp
    azure
+   vagrant

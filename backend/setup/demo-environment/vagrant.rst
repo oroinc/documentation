@@ -3,17 +3,17 @@
 Vagrant Provision
 =================
 
-To get familiar with the application functionality or for development purposes, you can install Oro applications with
+To get familiar with the application functionality, you can install Oro applications with
 environment components using |Vagrant|.
 
 Every Oro application has a *Vagrantfile* that enables you to set up a virtual machine with the Oro application via the
 `vagrant up` command.
 
-For example, to set up a VM with OroCommerce CE application v. 3.0.0 locally, run:
+For example, to set up a VM with OroCommerce CE application v. 4.1.2 locally, run:
 
 .. code:: bash
 
-    git clone -b 3.1.2 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
+    git clone -b 4.1.2 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
     vagrant up
 
 Once the command has run, you can access the application via the ``http://localhost:8000/`` URL.
@@ -46,7 +46,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. code:: bash
 
-      git clone -b 3.1.2 <oro_application_clone_url> oroapp && cd oroapp
+      git clone -b 4.1.2 <oro_application_clone_url> oroapp && cd oroapp
 
    Replace the <oro_application_clone_url> with the repository URL for the necessary Oro application:
 
@@ -58,18 +58,9 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
       "OroCommerce Enterprise Edition","https://github.com/oroinc/orocommerce-enterprise-application"
       "OroCommerce Enterprise Edition for Germany","https://github.com/oroinc/orocommerce-enterprise-application-de"
       "OroCommerce Enterprise Edition (without CRM)","https://github.com/oroinc/orocommerce-enterprise-nocrm-application"
-
-   **The *branch* value can be changed to another published |release tag| of the chosen Oro application with the following constraints:**
-
-   .. csv-table::
-      :widths: 20, 30
-
-      "OroCommerce Community Editions v.3.* and above","The *branch* value must be greater than *3.0.0-rc*"
-      "OroCommerce Community Editions v.1.6.*","The *branch* value must be greater than *1.6.13*"
-      "OroCommerce Enterprise Editions v.3.* and above","The *branch* value should be greater than *3.0.0-rc*"
-      "OroCommerce Enterprise Editions v.1.6.*","The *branch* value should be greater than *1.6.13*"
-
-   Previously published releases of the Oro Applications do not have Vagrantfiles.
+      "OroCRM Community Edition","https://github.com/oroinc/crm-application"
+      "OroCRM Enterprise Edition","https://github.com/oroinc/crm-enterprise-application"
+      "OroPlatform Community Edition","https://github.com/oroinc/platform-application"
 
    .. note:: You can download and unpack the archive with Oro application source code instead of using the Git repository. For more information, please see :ref:`Get the Oro Application Source Code <installation--get-files>`.
 
@@ -78,12 +69,12 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
    For Community Editions of the Oro Applications run:
 
    .. code:: bash
-  
+
       vagrant up
 
    For Enterprise Editions of Oro applications, specify the following two environment variables:
 
-   - **gittoken** - |Github token| use it to install Oro application dependencies (required due to the |Github rate limits|)
+   - **gittoken** - |Github token| use it to install Oro application dependencies
    - **licence** - Enterprise Licence key for your Oro Application
 
    .. code:: bash
@@ -94,12 +85,12 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. note:: When you run `vagrant up` for the first time, the Oro application installation may take some time, as the following time-consuming steps happen:
 
-             * Base CentOS/7 box download 
+             * Base CentOS/7 box download
              * LEMP stack installation on the guest system
              * Installation of composer dependencies for Oro application
              * Oro application installation; note that loading demo data takes extra time.
 
-      The total time for the environment to get up and running depends on multiple factors, such as internet connection speed, CPU frequency, etc. It usually takes from 2 to 15 minutes.
+      The total time for the environment to get up and running depends on multiple factors, such as internet connection speed, CPU frequency, etc. It usually takes from 1- to 15 minutes.
 
 Customize Installation Process
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -167,7 +158,7 @@ Once the VM is up, any changes to the files in the host working directory are ap
 
 .. note::
 
-   For installation, the application source code is copied from */vagrant* folder to the application root folder (*/usr/share/nginx/html/oroapp/*) in the VM file system.
+   For installation, the application source code is copied from */vagrant* folder to the application root folder (*/var/www/oroapp/*) in the VM file system.
 
 SSH Access to the Virtual Machine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
