@@ -7,7 +7,9 @@ EU VAT Tax for Digital Products
 
 .. begin
 
-The EU VAT tax is applied when the digital goods' buyer is located in EU. The tax is calculated based on the shipping destination, and the global system tax calculation rules are ignored. 
+.. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
+
+The EU VAT tax is applied when the digital goods' buyer is located in EU. The tax is calculated based on the shipping destination, and the global system tax calculation rules are ignored.
 
 .. note::  To ensure that the value added tax for digital products is included in your purchase quotes and orders from and to European Union, list all digital product tax codes in the EU VAT Tax configuration.
 
