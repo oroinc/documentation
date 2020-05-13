@@ -1,4 +1,4 @@
-:title: Scopes Configuration in OroCommerce, OroCRM, OroPlatform
+:title: Scopes Configuration in OroCommerce, OroCRM, OroPlatform 3.1
 
 .. meta::
    :description: Introduction to the Oro scope entity and its configuration settings with examples

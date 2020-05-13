@@ -1,9 +1,9 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-:title: Customers Management in the OroCommerce and OroCRM Back-Office
+:title: Customers Management in the OroCommerce and OroCRM 3.1 Back-Office
 
 .. meta::
-   :description: Extensive documentation on accounts, contacts, customers, customer groups, customer users, and user roles management for the OroCommerce and OroCRM back-office users
+   :description: Extensive documentation on accounts, contacts, customers, customer groups, customer users, and user roles management for the OroCommerce and OroCRM 3.1 back-office users
 
 
 Customers

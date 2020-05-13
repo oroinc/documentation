@@ -3,7 +3,7 @@
 .. index::
     single: Testing; Functional Testing
 
-:title: Automated Tests Implementation in OroCommerce, OroCRM, OroPlatform
+:title: Automated Tests Implementation in OroCommerce, OroCRM, OroPlatform 3.1
 
 .. meta::
    :description: Principles of writing functional tests in the preconfigured testing environment with detailed guidance and examples

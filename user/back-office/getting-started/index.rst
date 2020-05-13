@@ -1,9 +1,9 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-:title: Getting Started with the OroCommerce and OroCRM Back-Office
+:title: Getting Started with the OroCommerce and OroCRM 3.1 Back-Office
 
 .. meta::
-   :description: Generic concepts and details of the OroCRM and OroCommerce back-office navigation and functions
+   :description: Generic concepts and details of the OroCRM and OroCommerce 3.1 back-office navigation and functions
 
 
 Getting Started

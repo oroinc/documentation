@@ -1,6 +1,6 @@
 :orphan:
 
-:title: Oro Community Guide
+:title: Oro 3.1 Community Guide
 
 .. meta::
    :description: Best practices and conventions for contributing to the Oro application source code, user interface translations, and documentation

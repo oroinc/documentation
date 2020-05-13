@@ -1,7 +1,7 @@
-:title: Understanding OroCommerce and OroCRM Release Process
+:title: Understanding OroCommerce and OroCRM 3.1 Release Process
 
 .. meta::
-   :description: Insights into the Oro application release process, versioning strategy, and upgrade recommendations
+   :description: Insights into the Oro 3.1 application release process, versioning strategy, and upgrade recommendations
 
 .. _doc--community--release:
 

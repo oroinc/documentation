@@ -1,4 +1,4 @@
-:title: Integrations Implementation and Configuration in Oro Applications
+:title: Integrations Implementation and Configuration in Oro Applications 3.1
 
 .. meta::
    :description: Practical manuals on integrating data from external systems to the Oro applications for the backend developers

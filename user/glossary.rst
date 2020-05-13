@@ -1,7 +1,7 @@
-:title: OroCommerce and OroCRM Glossary
+:title: OroCommerce and OroCRM 3.1 Glossary
 
 .. meta::
-   :description: An alphabetical list of OroCRM and OroCommerce terms with definitions
+   :description: An alphabetical list of OroCRM and OroCommerce 3.1 terms with definitions
 
 .. _glossary:
 

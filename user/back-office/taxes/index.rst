@@ -1,6 +1,6 @@
 :oro_documentation_types: OroCommerce
 
-:title: Taxes Management in the OroCommerce Back-Office
+:title: Taxes Management in the OroCommerce 3.1 Back-Office
 
 .. meta::
    :description: Tax rules configuration and management guides for the OroCommerce back-office users

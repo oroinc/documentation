@@ -1,7 +1,7 @@
-:title: Extending OroCRM
+:title: Extending OroCRM 3.1
 
 .. meta::
-   :description: Best practices on extending the OroCRM functionality on the Oro applications
+   :description: Best practices on extending the OroCRM 3.1 functionality on the Oro applications
 
 .. _dev-extend-crm:
 

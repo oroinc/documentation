@@ -1,4 +1,4 @@
-:title: Annotations and YAML Configuration References in Oro Applications
+:title: Annotations and YAML Configuration References in Oro Applications 3.1
 
 .. meta::
    :description: Examples of using annotations and YAML configuration references in the Oro applications

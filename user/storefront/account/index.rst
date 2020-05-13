@@ -1,7 +1,7 @@
-:title: Account Management in the OroCommerce Storefront
+:title: Account Management in the OroCommerce 3.1 Storefront
 
 .. meta::
-   :description: Comprehensive manuals and guides on the account and users information management for the OroCommerce storefront users
+   :description: Comprehensive manuals and guides on the account and users information management for the OroCommerce 3.1 storefront users
 
 .. _my-account:
 

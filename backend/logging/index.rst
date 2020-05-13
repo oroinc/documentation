@@ -1,4 +1,4 @@
-:title: Logging Concept and Strategy in OroCommerce, OroCRM, OroPlatform
+:title: Logging Concept and Strategy in OroCommerce, OroCRM, OroPlatform 3.1
 
 .. meta::
    :description: An overview of the logging concept, strategy, and standards

@@ -3,7 +3,7 @@
 :oro_show_global_toc: false
 :oro_show_local_toc: false
 
-:title: OroCommerce, OroCRM, OroPlatform Developer Documentation
+:title: OroCommerce, OroCRM, OroPlatform 3.1 Developer Documentation
 
 .. meta::
    :description: Guides and how-to manuals for developers and contributors

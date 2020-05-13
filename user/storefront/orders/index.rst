@@ -1,7 +1,7 @@
-:title: Orders Management in the OroCommerce Storefront
+:title: Orders Management in the OroCommerce 3.1 Storefront
 
 .. meta::
-   :description: Orders creation and management guides for the OroCommerce storefront users
+   :description: Orders creation and management guides for the OroCommerce 3.1 storefront users
 
 .. _frontstore-guide--orders:
 

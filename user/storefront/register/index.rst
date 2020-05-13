@@ -1,4 +1,4 @@
-:title: User Registration and Sign-In to the OroCommerce Storefront
+:title: User Registration and Sign-In to the OroCommerce 3.1 Storefront
 
 .. meta::
    :description: Basic principles on registration and signing in by the OroCommerce storefront users

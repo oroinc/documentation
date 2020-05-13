@@ -1,7 +1,7 @@
-:title: Quotes Management in the OroCommerce Storefront
+:title: Quotes Management in the OroCommerce 3.1 Storefront
 
 .. meta::
-   :description: Quotes creation and management guides for the OroCommerce storefront users
+   :description: Quotes creation and management guides for the OroCommerce 3.1 storefront users
 
 .. _frontstore-guide--quotes:
 
