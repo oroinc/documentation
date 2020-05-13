@@ -91,17 +91,18 @@ Create a Custom Application
 Setup Application Environment
 -----------------------------
 
-Please, follow **Step 1: Environment Setup** and **Step 2: Pre-installation Environment Configuration** of the :ref:`Installation Guide <install-for-dev>` to set up the environment for your custom application.
+If you are using CentOS, you can follow this guide to :ref:`setup a local environment manually <install-for-dev>`.
 
-.. note:: If the OS on your development machine is other than CentOS, consider using a virtual machine running on CentOS to create the environment for your custom application.
-
+Otherwise, we recommend using :ref:`Docker and Symfony Server <dev-guide-development-practice-setup-dev-env-docker-symfony>`.
 
 .. _dev-guide-development-practice-setup-dev-env-install-app:
 
 Install Your Application
 ------------------------
 
-When the environment is set up, follow the instructions in **Step 3: OroPlatform Application Installation** and **Step 4: Post-installation Environment Configuration** sections of the :ref:`Installation Guide <install-for-dev>` to install your application.
+When the environment is set up in **CentOS**, follow the instructions in **Step 3: OroPlatform Application Installation** and **Step 4: Post-installation Environment Configuration** sections of the :ref:`Installation Guide <install-for-dev>` to install your application.
+
+In case of using **Docker and Symfony Server**, follow :ref:`this guide <dev-guide-development-practice-setup-dev-env-docker-symfony-install-application>`.
 
 .. _dev-guide-development-practice-setup-dev-env-create-bundle:
 
@@ -123,10 +124,12 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    :hidden:
    :maxdepth: 1
 
+   docker-and-symfony/index
    manual-installation/index
    web-server-config/index
    environment-type-based-configuration
    monitoring/index
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
