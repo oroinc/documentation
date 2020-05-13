@@ -47,13 +47,12 @@ OroCommerce Bundles
 All documentation that relates to OroCommerce-specific bundles is collected below.
 
 ============================================================================    =======================================================================
-:ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`                      :ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`
-:ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`                    :ref:`ProductBundle <bundle-docs-commerce-product-bundle>`
+:ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`                      :ref:`OrderBundle <bundle-docs-commerce-order-bundle>`
+:ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`                    :ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`
 :ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`                              :ref:`ProductBundle <bundle-docs-commerce-product-bundle>`
 :ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`    :ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`
 :ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`    :ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`
 :ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`                  :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`
-:ref:`OrderBundle <bundle-docs-commerce-order-bundle>`
 ============================================================================    =======================================================================
 
 .. toctree::

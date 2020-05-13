@@ -872,14 +872,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-variant-search.md" target="_blank">Product Variant Search</a>
 
-.. |Checkout Subtotal| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/checkout_subtotal.md" target="_blank">Checkout Subtotal</a>
-
-.. |Order Confirmation Email Template| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md" target="_blank">Order Confirmation Email Template</a>
-
 .. |Define Custom Form Type for a Field| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/custom_form_type.md" target="_blank">Define Custom Form Type for a Field</a>
@@ -967,18 +959,6 @@ Links (Dev)
 .. |Prevent Displaying the Back-Office Datagrids in the Storefront| raw:: html
 
    <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids" target="_blank">Prevent Displaying the Back-Office Datagrids in the Storefront</a>
-
-.. |Configure Frontend Permissions (ACL)| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/CustomerBundle#acl" target="_blank">Configure Frontend Permissions (ACL)</a>
-
-.. |Configure Anonymous Customer User| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Resources/doc/anon-customer-user.md" target="_blank">Configure Anonymous Customer User</a>
-
-.. |Configure Guest Access and Permissions| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Resources/doc/anon-customer-user.md#configuring-features-and-permissions" target="_blank">Configure Guest Access and Permissions</a>
 
 .. |Low Inventory Highlighting| raw:: html
 
@@ -5250,7 +5230,62 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/workflow-entities.md" target="_blank">Workflow Entities</a>
 
+.. |CheckoutLineItems| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Entity/CheckoutLineItem.php" target="_blank">CheckoutLineItems</a>
+
+.. |CheckoutLineItemConverterInterface| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Model/CheckoutLineItemConverterInterface.php" target="_blank">CheckoutLineItemConverterInterface</a>
+
+.. |OroBundleCustomerBundleSecurityTokenAnonymousCustomerUserToken| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Token/AnonymousCustomerUserToken.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Token\AnonymousCustomerUserToken</a>
+
+.. |OroBundleCustomerBundleEntityCustomerVisitor| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitor.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitor</a>
+
+.. |OroBundleCustomerBundleSecurityFirewallAnonymousCustomerUserAuthenticationListener| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Firewall/AnonymousCustomerUserAuthenticationListener.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Firewall\AnonymousCustomerUserAuthenticationListener</a>
+
+.. |OroBundleCustomerBundleSecurityAnonymousCustomerUserAuthenticationProvider| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/AnonymousCustomerUserAuthenticationProvider.php" target="_blank">Oro\Bundle\CustomerBundle\Security\AnonymousCustomerUserAuthenticationProvider</a>
+
+.. |OroBundleCustomerBundleSecurityListenerCustomerVisitorCookieResponseListener| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Listener/CustomerVisitorCookieResponseListener.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Listener\CustomerVisitorCookieResponseListener</a>
+
+.. |OroBundleCustomerBundleEntityCustomerVisitorManager| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitorManager.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitorManager</a>
+
+.. |OroBundleCustomerBundleDependencyInjectionSecurityAnonymousCustomerUserFactory| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/DependencyInjection/Security/AnonymousCustomerUserFactory.php" target="_blank">Oro\Bundle\CustomerBundle\DependencyInjection\Security\AnonymousCustomerUserFactory</a>
+
+.. |listener| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Firewall/AnonymousCustomerUserAuthenticationListener.php" target="_blank">listener</a>
+
+.. |provider| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/AnonymousCustomerUserAuthenticationProvider.php" target="_blank">provider</a>
+
+.. |OroBundleCustomerBundleEntityCustomerVisitorOwnerAwareInterface| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitorOwnerAwareInterface.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitorOwnerAwareInterface</a>
+
+.. |OroBundleCustomerBundleOwnerAnonymousOwnershipDecisionMaker| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Owner/AnonymousOwnershipDecisionMaker.php" target="_blank">Oro\Bundle\CustomerBundle\Owner\AnonymousOwnershipDecisionMaker</a>
+
+.. |OroBundleCustomerBundleEntityGuestCustomerUserManager| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/GuestCustomerUserManager.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\GuestCustomerUserManager</a>
+
 .. |official Gaufrette documentation| raw:: html
 
    <a href="http://knplabs.github.io/Gaufrette/" target="_blank">official Gaufrette documentation</a>
-

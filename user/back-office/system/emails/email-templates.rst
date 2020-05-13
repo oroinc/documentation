@@ -55,6 +55,8 @@ Create a New Email Template
 
 .. hint:: If you want to track the user-activity related to the emails sent within the email campaign, add a piece of :ref:`tracking website <user-guide-marketing-tracking>` code to the email template.
 
+.. _user-guide-view-emails-template-variables:
+
 View Available Template Variables and Functions
 -----------------------------------------------
 
