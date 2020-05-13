@@ -734,3 +734,19 @@ Links (User)
 .. |DPD customer support| raw:: html
 
    <a href="mailto:it@dpd.com" target="_blank">DPD customer support</a>
+
+.. |Avalara| raw:: html
+
+   <a href="https://www.avalara.com/us/en/index.html" target="_blank">Avalara</a>
+
+.. |Vertex| raw:: html
+
+   <a href="https://www.vertexinc.com/" target="_blank">Vertex</a>
+
+.. |sales tax law| raw:: html
+
+   <a href="https://www.avalara.com/us/en/learn/guides/sales-tax-nexus-laws-by-state.html" target="_blank">sales tax law</a>
+
+.. |each state’s tax policy| raw:: html
+
+   <a href="https://www.avalara.com/us/en/learn/sales-tax.html" target="_blank">state sales tax laws</a>

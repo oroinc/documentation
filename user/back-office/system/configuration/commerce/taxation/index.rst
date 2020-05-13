@@ -5,6 +5,8 @@
 Taxation
 ========
 
+.. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
+
 Learn how to enable taxation, select the tax provider, set Sales and VAT taxes, and select the product tax class to calculate the tax on shipping.
 
 * :ref:`Tax Calculation <user-guide--taxes--tax-configuration>`
