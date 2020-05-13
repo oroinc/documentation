@@ -224,7 +224,9 @@ The ``entities`` section describes the configuration of entities.
 
 *  **disable\_partial\_load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``. When using of the partial objects is allowed the ``HINT_FORCE_PARTIAL_LOAD`` query hint is used together with them to avoid loading unneeded foreign keys.
 
-*  **hints** *array* - Sets the |Doctrine query hints|. Each item can be a string or an array with ``name`` and ``value`` keys. The string value is a short form of ``[name: hint name]``.
+*  **hints** *array* - The |Doctrine query hints|. Each item can be a string or an array with ``name`` and ``value`` keys. The string value is a short form of ``[name: hint name]``.
+
+*  **inner\_join\_associations** *array* - A list of entity associations for which INNER JOIN should be used instead of LEFT JOIN. Use the ``dot`` notation to specify a path to a nested association, e.g., ``user.organization``. Each element in the path must be equal to the name of existing property of an entity. This option can be used to optimize SQL query that is used to load data if some associations are mandatory and cannot be empty.
 
 *  **identifier\_field\_names** *string[]* - The names of identifier fields of the entity. Use this option to override names set in a configuration file (for the API resource that are not based on ORM entity) or retrieved from an entity metadata (for ORM entities). This option is helpful when you do not want to use the primary key as an entity identifier in the API.
 
@@ -496,8 +498,6 @@ The ``actions`` configuration section allows to specify action-specific options.
 *  **disable\_fieldset** *boolean* - The flag indicates whether a requesting of a restricted set of fields is disabled. In JSON:API an |**fields** request parameter| can be used to customize which fields should be returned. By default ``false``.
 
 *  **disable\_meta\_properties** *boolean* - The flag indicates whether a requesting of additional meta properties is disabled. By default ``false``.
-
-*  **disable\_partial\_load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``.
 
 *  **form\_type** *string* - The form type that should be used for the entity.
 
