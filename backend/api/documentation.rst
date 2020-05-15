@@ -97,9 +97,9 @@ The following table describes the purposes of each documentation section:
 
 The third level ``###`` (h3) header depends on the section type and can be action name, field name, filter name or sub-resource name.
 
-The fourth level ``####`` (h4) header can be used only for **FIELDS** and **SUBRESOURCES** sections. For **FIELDS** section it can be used for the case when it is needed to specify the description for a field in a particular action. For **SUBRESOURCES** section it is a sub-resource action name.
+The fourth level ``####`` (h4) header can be used only for the **FIELDS** and **SUBRESOURCES** sections. For the **FIELDS** section it can be used for the case when it is needed to specify the description for a field in a particular action. For the **SUBRESOURCES** section it is a sub-resource action name.
 
-The action names in **FIELDS** section can be combined using comma, e.g.: "create, update". It allows to avoid copy-paste when you need the same description for several actions.
+The action names in the **FIELDS** section can be combined using comma, e.g.: "create, update". It allows to avoid copy-paste when you need the same description for several actions.
 
 Example:
 
@@ -152,7 +152,7 @@ Example:
     May contain any formatting e.g.: ordered or unordered lists,
      request or response examples, links, text in bold or italic, etc.
 
-Use the ``{@inheritdoc}`` placeholder to get the common documentation for an action, a field or a filter. This placeholder works only for **ACTIONS**, **FIELDS** and **FILTERS** sections.
+Use the ``{@inheritdoc}`` placeholder to get the common documentation for an action, a field or a filter. This placeholder works only for the **ACTIONS**, **FIELDS** and **FILTERS** sections.
 
 Example:
 
@@ -179,6 +179,8 @@ Example:
 
     **The required field.**
 
+Use the ``{@inheritdoc:description}`` placeholder to get the system-wide description of a configurable entity or field. This placeholder works only for the **ACTIONS** and **FIELDS** sections. Usually, this placeholder is used when you need to replace the existing documentation completely and add the system-wide description to new documentation.
+
 Use the ``{@request}`` tag to add documentation depends on the request type. The full signature of this tag is ``{@request:expression}some text{@/request}``. The expression can contain the following operators:
 
 -  ``&`` - logical AND
@@ -204,8 +206,6 @@ Example:
 
     {@request:json_api}
     Example:
-
-    `</api/entities>`
 
     ` ` `JSON
     {
