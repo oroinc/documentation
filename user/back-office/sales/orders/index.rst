@@ -5,6 +5,8 @@
 Orders 
 ======
 
+.. important:: This section is a part of the :ref:`Order Management <concept-guide-orders>` topic that provides the general understanding of order-related concepts in OroCommerce.
+
 :term:`Orders <Order>` contain information about buyers' shopping lists submitted for purchase and the collected information about billing and shipping addresses, payment methods, etc.
 
 In **Sales > Orders**, you can view, edit and delete the already submitted orders and create new orders on behalf of the buyers.

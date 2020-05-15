@@ -739,6 +739,10 @@ Links (User)
 
    <a href="mailto:it@dpd.com" target="_blank">DPD customer support</a>
 
+.. |inquiry form| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/contact-us/?repeat=w3tc" target="_blank">inquiry form</a>
+
 .. |Avalara| raw:: html
 
    <a href="https://www.avalara.com/us/en/index.html" target="_blank">Avalara</a>
@@ -754,3 +758,11 @@ Links (User)
 .. |each state’s tax policy| raw:: html
 
    <a href="https://www.avalara.com/us/en/learn/sales-tax.html" target="_blank">state sales tax laws</a>
+
+.. |Shopping List Items Copy extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/shopping-list-items-copy/" target="_blank">Shopping List Items Copy extension</a>
+
+
+
+
