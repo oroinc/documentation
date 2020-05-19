@@ -84,18 +84,7 @@ Install an Application
 
    .. code:: bash
 
-      symfony console oro:install -vvv  \
-          --sample-data=y  \
-          --application-url=https://127.0.0.1:8000  \
-          --user-name=admin  \
-          --user-email=admin@example.com  \
-          --user-firstname=John  \
-          --user-lastname=Doe  \
-          --user-password=admin  \
-          --organization-name=Oro \
-          --timeout=0 \
-          --symlink \
-          --env=prod -n
+      symfony console oro:install -vvv --sample-data=y --application-url=https://127.0.0.1:8000 --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --organization-name=Oro --timeout=0 --symlink --env=prod -n
 
 .. _dev-guide-development-practice-setup-dev-env-docker-symfony-services:
 
@@ -292,3 +281,14 @@ You can enable local domains by |setting up the Local Proxy|.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+Troubleshooting
+---------------
+
+Environment variable not found: "ORO_REDIS_URL"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Appears when the Symfony server doesn't pass environment variables from the Docker Compose to an application.
+
+Make sure all the application services are up and healthy with ``docker-compose ps``. There should be a redis service in the list.
+If it shows the empty list, run ``docker-compose up -d`` to start all the services.
