@@ -558,6 +558,10 @@ Images
    :align: middle
    :alt: Available in OroCRM
 
+.. |Extension| image:: /user/img/doctypes/extension-icon-logo.png
+   :align: middle
+   :alt: Extension is required
+
 .. |IcImpersonation| raw:: html
 
    <i class="fas fa-user-secret" aria-hidden="true"></i>

@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM, OroCommerce
+:oro_documentation_types: OroCRM, OroCommerce, Extension
 :oro_show_local_toc: false
 
 .. _user-guide-dotmailer-overview:
@@ -9,7 +9,9 @@ dotmailer Integration
 
 .. begin_include
 
-Oro application supports out-of-the-box integration with dotmailer, allowing you to do the following:
+.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Oro dotmailer extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
+
+Oro application supports integration with dotmailer, allowing you to do the following:
 
 - Map the :ref:`marketing lists <user-guide-marketing-lists>` to address books in dotmailer and keep them synchronized.
 - Use your address books to create email campaigns in dotmailer and import them to Oro application.
@@ -27,9 +29,6 @@ After configuring the integration and data synchronization, you can :ref:`Send E
 
 .. finish_include
 
-.. hint:: While dotmailer integration comes out of the box, Oro application can be integrated with other third-party
-    systems. Please, refer to the :ref:`Integrations <user-guide-integrations>` section to learn more.
-
 Key Points of Reference
 -----------------------
 
@@ -46,4 +45,6 @@ Key Points of Reference
 
    dotmailer-configuration
    dotmailer-single-sign-on
-                    
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
