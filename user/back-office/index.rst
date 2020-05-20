@@ -14,7 +14,7 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
 
 .. note:: Depending on whether you work exclusively with OroCRM or OroCommerce, you may require to search a different collection of chapters within documentation. Find application-specific sections in the tag clouds below. If you work with the OroCommerce plus OroCRM edition, search all available chapters in the menu to your left.
 
-          When browsing documentation, be on the lookout for  |CommerceIcon|  and |CRMIcon|  application icons on the top right. They indicate whether described features and concepts are available in OroCRM, OroCommerce, or both applications.
+          When browsing documentation, be on the lookout for  |CommerceIcon|  ,  |CRMIcon| , and |Extension|  application icons on the top right. They indicate whether described features and concepts are available in OroCRM, OroCommerce, or both applications, and whether they require extension installation.
 
 .. raw:: html
 

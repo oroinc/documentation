@@ -37,29 +37,12 @@ No two businesses are alike. Once a company acquires a new tool, it usually need
 
 The following sections introduce the recommended ways of adjusting and customizing the Oro application specifically for your needs.
 
-Install Extension from the Oro Marketplace
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Installing an extension from the Oro marketplace is the least resource-consuming way to expand the existing functionality of the Oro application.
-
-Oro application’s marketplace is a catalog service for sharing packages that extend a particular Oro application. On the marketplace, Oro and third-party vendors may publish free or chargeable custom packages to distribute commonly-used extension solutions to the Oro community.
-
-.. note:: See the :ref:`Oro PHP application structure <architecture-oro-php-application-structure>` topic for more information on the definition of a package and  levels of extension and customization.
-
-Browse published extensions for Oro applications on the following marketplaces:
-
-* OroPlatform --- |https://marketplace.oroinc.com/oroplatform|
-* OroCRM --- |https://marketplace.orocrm.com/|
-* OroCommerce --- |https://marketplace.orocommerce.com/|
-
-.. note:: Once the Oro application extension package is :ref:`published on the Oro marketplace <dev--extend--how-to-publish-extension-on-the-marketplace>`, it is automatically registered in the |Oro Packagist repository|. See a topic on a :ref:`Distribution Model <architecture-oro-php-application-structure>` for more information on using composer service with Packagist and OroPackagist repositories.
-
-To install an extension, use the composer CLI (`composer require <extension-name>:<version>` command). For detailed information, please, see the :ref:`How To Install Extensions from the Marketplace <dev--extend--how-to-publish-extension-on-the-marketplace>` topic.
-
 Customize the Source Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In addition to existing extensions, you can create your own customization of the Oro application source code and either use it internally or publish it to the Oro marketplace, if necessary.
+
+.. hint:: For more information on how to install extensions from the Oro Marketplace, see the :ref:`Installing and extension <cookbook-extensions-composer>` guide.
 
 .. warning:: Customization may apply to the application only and should be created in a custom bundle in the src folder of your Oro application. Do not customize packages, Oro and Symfony bundles, and components to avoid difficulties when upgrading the customized system.
 

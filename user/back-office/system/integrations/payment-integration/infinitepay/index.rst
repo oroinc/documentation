@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce
+:oro_documentation_types: OroCommerce, Extension
 :oro_show_local_toc: false
 
 .. _user-guide--payment--payment-providers-overview--infinitepay:
@@ -7,6 +7,8 @@ InfinitePay Payment Service
 ===========================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+
+.. hint:: The feature requires extension, so visit Oro Marketplace to download the |InfinitePay extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 InfinitePay is a financial management company that provides guaranteed delayed payments on open account terms.
 
@@ -47,3 +49,6 @@ Depending on the way InfinitePay integration parameters are configured, the foll
 
    infinitepay-prerequisites
    infinitepay-integration
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
