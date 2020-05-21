@@ -119,6 +119,8 @@ The difference between this command and the original upgrade:
 #. oro:platform:update is not executed
 #. cache:clear is executed optionally (add option skip-cache-rebuild if you do not need to rebuild cache with the new release)
 
+.. note:: even if the oro:platform:update command is not executed, the assets will be redeployed.
+
 Backup
 ------
 
