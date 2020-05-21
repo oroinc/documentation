@@ -1,24 +1,19 @@
-Create an Integration
-=====================
+.. _dev-integrations-integrations-config:
 
-Sometimes you need to integrate data from external systems into your application. For example,
-imagine that you have another application where tasks can be created that you want to sync with
-your Oro application. OroPlatform provides means to achieve a seamless integration of third-party systems through the |OroIntegrationBundle|.
-
-Basic Implementation and Configuration
---------------------------------------
+Basic Implementation
+====================
 
 Integrating other applications requires to implement some services that form the integration
 skeleton:
 
-* :ref:`Create a new Channel <cookbook-integration-channel>`
-* :ref:`Read the Data Using a Transport <cookbook-integration-transport>`
-* :ref:`Connect the Data to Your Entities <cookbook-integration-connector>`
+* :ref:`Create a New Channel <cookbook-integration-channel>`
+* :ref:`Read Data Using a Transport <cookbook-integration-transport>`
+* :ref:`Connect Data to Your Entities <cookbook-integration-connector>`
 
 .. _cookbook-integration-channel:
 
-Create a new Channel
-~~~~~~~~~~~~~~~~~~~~
+Create a New Channel
+--------------------
 
 The first step is to define a new channel. A channel is the way to make your integration visible in
 the integration section of the admin interface. A channel is a class that has to implement the
@@ -82,8 +77,8 @@ to the channel:
 
 .. _cookbook-integration-transport:
 
-Read the Data Using a Transport
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Read Data Using a Transport
+---------------------------
 
 For every channel you can define several ways to read the data from your external application (for
 example, either via SOAP or a HTTP REST API). This concept is called a transport. A class providing
@@ -123,8 +118,8 @@ channel:
 
 .. _cookbook-integration-connector:
 
-Connect the Data to Your Entities
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Connect Data to Your Entities
+-----------------------------
 
 .. note::
    Please note that this step is necessary when you need to import-export data between your database and the third-party system (e.g. synchronize tasks created in your Oro instance and other application, import/export cart items). Omit this step if you use this instruction to add an integration that requests and receives only credentials/tokens and a short list of available options.

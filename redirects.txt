@@ -5,3 +5,4 @@ backend/integrations/import-export /backend/integrations/import-export/import-ex
 backend/integrations/customize-import-export /backend/integrations/import-export/customize-import-export
 backend/integrations/accelerate-import /backend/integrations/import-export/accelerate-import
 backend/setup/dev-environment/vagrant /backend/setup/demo-environment/vagrant
+backend/integrations/create-integration /backend/integrations/integration-config/create-integration

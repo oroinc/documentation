@@ -2621,26 +2621,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle" target="_blank">Use Installer</a>
 
-.. |IntegrationBundle Configuration Reference| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/configuration-reference.md" target="_blank">IntegrationBundle Configuration Reference</a>
-
-.. |Additional Serializable Fields to Store Platform Specific Settings| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-settings.md" target="_blank">Additional Serializable Fields to Store Platform Specific Settings</a>
-
-.. |Reverse Synchronization| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/reverse-sync.md" target="_blank">Reverse Synchronization</a>
-
-.. |Define Owner for Related Entities on Integration Level| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/default-integration-owner.md" target="_blank">Define Owner for Related Entities on Integration Level</a>
-
-.. |Save Service Data Between Synchronizations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-capabilities.md" target="_blank">Save Service Data Between Synchronizations</a>
-
 .. |Locale Settings| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md" target="_blank">Locale Settings</a>
