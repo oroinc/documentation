@@ -18,7 +18,7 @@ For example, to set up a VM with OroCommerce CE application v. 4.1.2 locally, ru
 
 Once the command has run, you can access the application via the ``http://localhost:8000/`` URL.
 
-The environment in the resulting VM and the provisioning steps in the Vagrantfile replicate the process described in the :ref:`Manual Installation Guide <install-for-dev>` for the relevant application edition.
+The environment in the resulting VM and the provisioning steps in the Vagrantfile replicate the process described in the :ref:`Setup Application Environment Guide <dev-guide-development-practice-setup-dev-env-setup-env>` and the :ref:`Installation Guide <installation>`.
 
 For more details on preparing the virtual platform for the virtual machine, please see the `Installation and Configuration`_ section below.
 

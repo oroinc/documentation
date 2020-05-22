@@ -147,10 +147,6 @@ Links (Dev)
 
    <a href="https://github.com/GeniusesOfSymfony/WebSocketBundle" target="_blank">GosWebSocketBundle</a>
 
-.. |download section on the oroinc.com/orocommerce| raw:: html
-
-   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">download section on the oroinc.com/orocommerce</a>
-
 .. |PHP unserialization vulnerability| raw:: html
 
    <a href="https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf" target="_blank">PHP unserialization vulnerability</a>
@@ -368,9 +364,13 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/environment" target="_blank">Docker Provision</a>
 
-.. |OroCommerce website| raw:: html
+.. |OroCommerce VM| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">OroCommerce website</a>
+   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">OroCommerce</a>
+
+.. |OroCRM VM| raw:: html
+
+   <a href="https://oroinc.com/orocrm/download" target="_blank">OroCRM</a>
 
 .. |Red Hat| raw:: html
 
@@ -3351,7 +3351,7 @@ Links (Dev)
 
 .. |the website| raw:: html
 
-   <a href="http://www.oroinc.com/b2b-ecommerce/" target="_blank">the website</a>
+   <a href="http://www.oroinc.com/" target="_blank">the website</a>
 
 .. |relevant AttachmentBundle documentation| raw:: html
 
@@ -3485,9 +3485,17 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">relevant ScopeBundle documentation</a>
 
-.. |download section| raw:: html
+.. |Download OroCommerce| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">download section</a>
+   <a href="https://oroinc.com/b2b-ecommerce/download/#source" target="_blank">Download OroCommerce</a>
+
+.. |Download OroCRM| raw:: html
+
+   <a href="https://oroinc.com/orocrm/download/#source" target="_blank">Download OroCRM</a>
+
+.. |Download OroPlatform| raw:: html
+
+   <a href="https://oroinc.com/oroplatform/download/#source" target="_blank">Download OroPlatform</a>
 
 .. |relevant Akeneo documentation| raw:: html
 

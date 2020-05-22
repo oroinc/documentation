@@ -9,18 +9,13 @@ For a more flexible and secure evaluation experience, you can deploy a virtual m
 
 .. note:: OS X, Windows, and Linux-based operation systems support Oracle VM VirtualBox.
 
-Before you proceed, ensure that VM VirtualBox v.6.1.x is installed in your local or corporate environment and is accessible.
+Before you proceed, ensure that VM VirtualBox v.6.2.x is installed in your local or corporate environment and is accessible.
 
-To download the virtual image:
-
-1. On the |OroCommerce website|, navigate to **Resources > Downloads**.
-
-2. Download a virtual machine image by clicking on the **virtual machine** link.
+To download the virtual machine image on the |OroCommerce VM| or |OroCRM VM| website click on the **download** link.
 
    .. image:: /img/backend/setup/vb/download_image.png
-      :alt: Download the virtual image
+      :alt: Download the OroCommerce virtual image
 
-3. Save the *.ova* file.
 
 To import the virtual machine into VirtualBox:
 
