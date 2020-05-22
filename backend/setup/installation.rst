@@ -32,7 +32,7 @@ Create your new Oro application project with composer by running one of commands
    # OroPlatform Community Edition
    composer create-project oro/platform-application my_project_name --repository=https://satis.oroinc.com
    # OroCommerce Community Edition for Germany
-   composer create-project oro/commerce-crm-application-de oroapp my_project_name --repository=https://satis.oroinc.com
+   composer create-project oro/commerce-crm-application-de my_project_name --repository=https://satis.oroinc.com
    # OroCommerce Enterprise Edition for Germany
    composer create-project oro/commerce-crm-enterprise-application-de my_project_name --repository=https://satis.oroinc.com
    # OroCommerce Enterprise Edition (without CRM)
