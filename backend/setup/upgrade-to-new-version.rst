@@ -1,3 +1,5 @@
+:title: Upgrade OroCommerce, OroCRM or OroPlatform application
+
 .. index::
     single: Upgrade
 
@@ -7,37 +9,36 @@
 Upgrade
 =======
 
+This guide explains how to upgrade OroCommerce, OroCRM or OroPlatform application to the next version.
+
+An absolute path to the directory where an application is installed will be used in the guide and will
+be referred to as **<application-root-folder>** further in this topic.
+
+.. note:: We highly recommend running all the commands in this guide from the same user the web server runs (e.g., **nginx** or **www-data**).
+
 1. Checkout from the GitHub Repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To retrieve a new version and upgrade your OroCommerce instance, please execute the following steps:
+To retrieve a new version and upgrade your Oro application instance, execute the following steps:
 
-1. ``cd`` to the OroCommerce root folder and switch the application to the maintenance mode.
+1. Go to the Oro application root folder and switch the application to the maintenance mode.
 
-.. code-block:: bash
-    :linenos:
+   .. code-block:: bash
 
-      cd /path/to/application
-      sudo -u www-data bin/console lexik:maintenance:lock --env=prod
+       cd <application-root-folder>
+       php bin/console lexik:maintenance:lock --env=prod
 
 2. Stop the cron tasks.
 
-.. code-block:: bash
-    :linenos:
+   .. code-block:: bash
 
-      crontab -e -u www-data
+       crontab -e
 
+   Comment this line  .
 
-.. note::
+   .. code-block:: text
 
-    www-data can be changed to user under which your web server runs
-
-Comment this line.
-
-.. code-block:: text
-    :linenos:
-
-     */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
+       */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
 3. Stop all running consumers.
 
@@ -45,213 +46,200 @@ Comment this line.
 
 5. Pull changes from the repository.
 
-.. note::
+   .. note::
 
-    If you have any customization or third party extensions installed, make sure that:
-        - your changes to "src/AppKernel.php" file are merged to the new file.
-        - your changes to "src/" folder are merged and it contains the custom files.
-        - your changes to "composer.json" file are merged to the new file.
-        - your changes to configuration files in "config/" folder are merged to the new files.
+       If you have any customization or third party extensions installed, make sure that:
+           - your changes to ``src/AppKernel.php`` file are merged to the new file.
+           - your changes to ``src/`` folder are merged and it contains the custom files.
+           - your changes to ``composer.json`` file are merged to the new file.
+           - your changes to configuration files in ``config/`` folder are merged to the new files.
 
-.. code-block:: bash
-    :linenos:
+   .. code-block:: bash
 
-      sudo -u www-data git pull
-      sudo -u www-data git checkout <VERSION TO UPGRADE>
+       git pull
+       git checkout <VERSION TO UPGRADE>
 
 6. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
-.. code-block:: bash
-    :linenos:
+   .. code-block:: bash
 
-      sudo -u www-data php composer.phar install --prefer-dist --no-dev
+       composer install --prefer-dist --no-dev
 
-7. Remove old caches.
+7. Refer to the ``UPGRADE.md`` and ``CHANGELOG.md`` files in the application repository for a list of changes in the code that
+   may affect the upgrade of some customizations.
 
-.. code-block:: bash
-    :linenos:
+8. Remove old caches.
 
-      sudo rm -rf var/cache/prod
+   .. code-block:: bash
 
-8. Upgrade the platform.
+       rm -rf var/cache/*
 
-.. code-block:: bash
-    :linenos:
+9. Upgrade the platform.
 
-      sudo -u www-data php bin/console oro:platform:update --env=prod
+   .. code-block:: bash
 
-.. note::
+       php bin/console oro:platform:update --env=prod
 
-    To speed up the update process, consider using `--schedule-search-reindexation` or 
-    `--skip-search-reindexation` option:
-    
-    * `--schedule-search-reindexation` --- postpone search reindexation process until 
-      the message queue consumer is started (on step 12 below).
-    * `--skip-search-reindexation` --- skip search reindexation. Later, you can start it manually using
-      the `oro:search:reindex` and `oro:website-search:reindex` commands.
-      See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
+   .. note::
 
-9. Remove the caches.
+      To speed up the update process, consider using `--schedule-search-reindexation` or
+      `--skip-search-reindexation` option:
 
-.. code-block:: bash
-    :linenos:
+      * `--schedule-search-reindexation` --- postpone search reindexation process until
+        the message queue consumer is started (on step 12 below).
+      * `--skip-search-reindexation` --- skip search reindexation. Later, you can start it manually using
+        the `oro:search:reindex` and `oro:website-search:reindex` commands.
+        See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
 
-      sudo -u www-data bin/console cache:clear --env=prod
+10. Remove the caches.
 
-or, as alternative:
+    .. code-block:: bash
 
-.. code-block:: bash
-    :linenos:
+        php bin/console cache:clear --env=prod
 
-      sudo rm -rf var/cache/prod
-      sudo -u www-data bin/console cache:warmup --env=prod
+    or, as alternative:
 
-10. Enable cron.
+    .. code-block:: bash
 
-.. code-block:: bash
-    :linenos:
+        rm -rf var/cache/*
+        php bin/console cache:warmup --env=prod
 
-      crontab -e -u www-data
+11. Enable cron.
 
-Uncomment this line.
+    .. code-block:: bash
 
-.. code-block:: text
-    :linenos:
+       crontab -e
 
-     */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
+    Uncomment this line.
 
-11. Switch your application back to normal mode from the maintenance mode.
+    .. code-block:: text
 
-.. code-block:: bash
-    :linenos:
+        */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
-      sudo -u www-data bin/console lexik:maintenance:unlock --env=prod
+12. Switch your application back to the normal mode from the maintenance mode.
 
-12. Run the consumer(s).
+    .. code-block:: bash
 
-.. code-block:: bash
-    :linenos:
+        php bin/console lexik:maintenance:unlock --env=prod
 
-       sudo -u www-data bin/console oro:message-queue:consume --env=prod
+13. Run the consumer(s).
 
-.. note::
+    .. code-block:: bash
 
-    If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
-    after the uprgade to flush cached bytecode from the previous installation.
+        php bin/console oro:message-queue:consume --env=prod
+
+    .. note::
+
+       If PHP bytecode cache tools (e.g., opcache) are used, PHP-FPM (or Apache web server) should be restarted
+       after the uprgade to flush cached bytecode from the previous installation.
 
 
 2. Download the Source Code Archive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To retrieve a new version and upgrade your OroCommerce instance, please execute the following steps:
+To retrieve a new version and upgrade your Oro application instance, please execute the following steps:
 
-1. ``cd`` to the OroCommerce root folder and switch the application to the maintenance mode.
+1. Go to the Oro application root folder and switch the application to the maintenance mode.
 
-.. code-block:: bash
-    :linenos:
+   .. code-block:: bash
 
-      cd /path/to/application
-      sudo -u www-data bin/console lexik:maintenance:lock --env=prod
+       cd <application-root-folder>
+       php bin/console lexik:maintenance:lock --env=prod
 
 2. Stop the cron tasks.
 
-.. code-block:: bash
-    :linenos:
+   .. code-block:: bash
 
-      crontab -e -u www-data
+       crontab -e
 
+   Comment this line.
 
-.. note::
+   .. code-block:: text
 
-    www-data can be changed to user under which your web server runs
-
-Comment this line.
-
-.. code-block:: text
-    :linenos:
-
-    */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
+       */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
 3. Stop all running consumers.
 
 4. Create backups of your Database and Code.
 
-5. Download the latest OroCommerce version from the |download section on the oroinc.com/orocommerce| , unpack archive and overwrite existing system files
+5. Download the latest version of the application source code from the download section on |the website|:
 
-.. note::
+   * |Download OroCommerce|
+   * |Download OroCRM|
+   * |Download OroPlatform|
 
-    If you have any customization or third party extensions installed, make sure that:
-        - your changes to "src/AppKernel.php" file are merged to the new file.
-        - your changes to "src/" folder are merged and it contains the custom files.
-        - your changes to "composer.json" file are merged to the new file.
-        - your changes to configuration files in "config/" folder are merged to the new files.
-        - upgrade the composer dependency and set up right owner to the retrieved files.
 
-        .. code-block:: bash
+6. Unpack archive and overwrite existing system files.
 
-             sudo -u your_user_for_admin_tasks php composer.phar update --prefer-dist --no-dev
+   .. note::
 
-6. Remove old caches.
+      If you have any customization or third party extensions installed, make sure that:
+          - your changes to ``src/AppKernel.php`` file are merged to the new file.
+          - your changes to ``src/`` folder are merged and it contains the custom files.
+          - your changes to ``composer.json`` file are merged to the new file.
+          - your changes to configuration files in ``config/`` folder are merged to the new files.
+          - upgrade the composer dependency and set up right owner to the retrieved files.
 
-.. code-block:: bash
-    :linenos:
+            .. code-block:: bash
 
-      sudo rm -rf var/cache/prod
+               composer update --prefer-dist --no-dev
 
-7. Upgrade the platform.
+7. Refer to the ``UPGRADE.md`` and ``CHANGELOG.md`` files in the application folder for a list of changes in the code that
+   may affect the upgrade of some customizations.
 
-.. code-block:: bash
-    :linenos:
+8. Remove old caches.
 
-      sudo -u www-data php bin/console oro:platform:update --env=prod
+   .. code-block:: bash
 
-8. Remove the caches.
+       rm -rf var/cache/*
 
-.. code-block:: bash
-    :linenos:
+9. Upgrade the platform.
 
-      sudo -u www-data bin/console cache:clear --env=prod
+   .. code-block:: bash
 
-or, as alternative:
+       php bin/console oro:platform:update --env=prod
 
-.. code-block:: bash
-    :linenos:
+10. Remove the caches.
 
-      sudo rm -rf var/cache/prod
-      sudo -u www-data bin/console cache:warmup --env=prod
+   .. code-block:: bash
 
-9. Enable cron.
+       php bin/console cache:clear --env=prod
 
-.. code-block:: bash
-    :linenos:
+   or, as alternative:
 
-      crontab -e -u www-data
+   .. code-block:: bash
 
-Uncomment this line.
+       rm -rf var/cache/*
+       php bin/console cache:warmup --env=prod
 
-.. code-block:: text
-    :linenos:
+11. Enable cron.
 
-    */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
+    .. code-block:: bash
 
-10. Switch your application back to normal mode from the maintenance mode.
+          crontab -e
 
-.. code-block:: bash
-    :linenos:
+    Uncomment this line.
 
-      sudo -u www-data bin/console lexik:maintenance:unlock --env=prod
+    .. code-block:: text
 
-11. Run the consumer(s).
+        */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
-.. code-block:: bash
-    :linenos:
+12. Switch your application back to normal mode from the maintenance mode.
 
-      sudo -u www-data bin/console oro:message-queue:consume --env=prod
+    .. code-block:: bash
 
-.. note::
+          php bin/console lexik:maintenance:unlock --env=prod
 
-    If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
-    after the uprgade to flush cached bytecode from the previous installation.
+13. Run the consumer(s).
+
+    .. code-block:: bash
+
+          php bin/console oro:message-queue:consume --env=prod
+
+    .. note::
+
+        If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
+        after the uprgade to flush cached bytecode from the previous installation.
 
 
 .. include:: /include/include-links-dev.rst

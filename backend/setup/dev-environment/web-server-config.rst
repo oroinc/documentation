@@ -4,79 +4,46 @@
 Web Server Configuration
 ========================
 
-Web Server Installation
------------------------
-
-Please follow the guidance in the official Apache and nginx documentation for detailed information on web server installation:
-
-* Apache 2.2
-* Apache 2.4
-* nginx
-
-.. TODO add links
-
-
-Web Server Configuration
-------------------------
-
 .. begin_web_server_configuration
 
 The following sections contain the recommended configuration for supported web server types and versions.
 
-Apache 2.2
-^^^^^^^^^^
-
-.. code-block:: apache
-    :linenos:
-
-        <VirtualHost *:80>
-            ServerName {$folder_name}.example.com
-
-            DirectoryIndex index.php
-            DocumentRoot {$folder_location}/{$folder_name}/public
-            <Directory  {$folder_location}/{$folder_name}/public>
-                # enable the .htaccess rewrites
-                AllowOverride All
-                Order allow,deny
-                Allow from All
-            </Directory>
-
-            ErrorLog /var/log/apache2/{$folder_name}_error.log
-            CustomLog /var/log/apache2/{$folder_name}_access.log combined
-        </VirtualHost>
-
 Apache 2.4
-^^^^^^^^^^
+----------
 
-.. code-block:: apache
+.. code-block:: text
     :linenos:
 
         <VirtualHost *:80>
-            ServerName {$folder_name}.example.com
+            ServerName <your-domain-name>
+            ServerAlias www.<your-domain-name>
 
             DirectoryIndex index.php
-            DocumentRoot {$folder_location}/{$folder_name}/public
-            <Directory  {$folder_location}/{$folder_name}/public>
+            DocumentRoot <application-root-folder>/public
+            <Directory  <application-root-folder>/public>
                 # enable the .htaccess rewrites
                 AllowOverride All
                 Require all granted
             </Directory>
 
-            ErrorLog /var/log/apache2/{$folder_name}_error.log
-            CustomLog /var/log/apache2/{$folder_name}_access.log combined
+            ErrorLog /var/log/apache2/<your-domain-name>_error.log
+            CustomLog /var/log/apache2/<your-domain-name>_access.log combined
         </VirtualHost>
+
+* Replace **<application-root-folder>** with the absolute path to the Oro application.
+* Replace **<your-domain-name>** with the configured domain name that is used for the Oro application.
 
 .. note:: Please make sure mod_rewrite and mod_headers are enabled.
 
 Nginx
-^^^^^
+-----
 
-.. code-block:: nginx
+.. code-block:: text
     :linenos:
 
         server {
-            server_name {$folder_name}.example.com;
-            root  {$folder_location}/{$folder_name}/public;
+            server_name <your-domain-name> www.<your-domain-name>;
+            root <application-root-folder>/public;
 
             location / {
                 # try to serve file directly, fallback to index.php
@@ -99,10 +66,12 @@ Nginx
                add_header Cache-Control public;
             }
 
-            error_log /var/log/nginx/{$folder_name}_error.log;
-            access_log /var/log/nginx/{$folder_name}_access.log;
+            error_log /var/log/nginx/<your-domain-name>_error.log;
+            access_log /var/log/nginx/<your-domain-name>_access.log;
         }
 
+* Replace **<application-root-folder>** with the absolute path to the Oro application.
+* Replace **<your-domain-name>** with the configured domain name that is used for the Oro application.
 
 .. caution::
 
@@ -110,12 +79,6 @@ Nginx
 
     More details on the file permissions configuration are available
     |in the official Symfony documentation|.
-
-
-.. toctree::
-   :hidden:
-
-   how-to-enable-https
 
 
 .. include:: /include/include-links-dev.rst

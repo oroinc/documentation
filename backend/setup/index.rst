@@ -1,4 +1,4 @@
-:title: OroCommerce, OroCRM, OroPlatform Environment Setup Configuration
+:title: OroCommerce, OroCRM, OroPlatform Environment Setup Configuration and Installation
 
 .. meta::
    :description: Core concepts of the Oro application setup and upgrading requirements for the backend developers
@@ -18,7 +18,8 @@ The application setup guides provide the details on how to configure the environ
    system-requirements/index
    dev-environment/index
    demo-environment/index
-   installation/index
+   installation
+   demo-data
    launch
    upgrade-to-new-version
    reinstall
