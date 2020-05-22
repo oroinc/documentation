@@ -3,7 +3,7 @@
 Vagrant Provision
 =================
 
-To get familiar with the application functionality or for development purposes, you can install Oro applications with
+To get familiar with the application functionality, you can install Oro applications with
 environment components using |Vagrant|.
 
 Every Oro application has a *Vagrantfile* that enables you to set up a virtual machine with the Oro application via the
@@ -13,7 +13,7 @@ For example, to set up a VM with OroCommerce CE application v. 3.0.0 locally, ru
 
 .. code:: bash
 
-    git clone -b 3.1.2 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
+    git clone -b 3.1.20 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
     vagrant up
 
 Once the command has run, you can access the application via the ``http://localhost:8000/`` URL.
@@ -46,7 +46,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. code:: bash
 
-      git clone -b 3.1.2 <oro_application_clone_url> oroapp && cd oroapp
+      git clone -b 3.1.20 <oro_application_clone_url> oroapp && cd oroapp
 
    Replace the <oro_application_clone_url> with the repository URL for the necessary Oro application:
 
@@ -78,7 +78,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
    For Community Editions of the Oro Applications run:
 
    .. code:: bash
-  
+
       vagrant up
 
    For Enterprise Editions of Oro applications, specify the following two environment variables:
@@ -94,7 +94,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. note:: When you run `vagrant up` for the first time, the Oro application installation may take some time, as the following time-consuming steps happen:
 
-             * Base CentOS/7 box download 
+             * Base CentOS/7 box download
              * LEMP stack installation on the guest system
              * Installation of composer dependencies for Oro application
              * Oro application installation; note that loading demo data takes extra time.

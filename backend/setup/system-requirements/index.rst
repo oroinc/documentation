@@ -8,7 +8,6 @@ System Requirements
 
 OroCommerce is a web application which runs on a server. Users interact with the application via a web browser on any computer or mobile device that have access to the internet or the network where the server is hosted.
 
-
 Server-side Requirements
 ------------------------
 

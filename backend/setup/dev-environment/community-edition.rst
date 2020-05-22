@@ -1,56 +1,25 @@
-.. _installation--oroplatform-ce--readme:
+:title: OroCommerce, OroCRM, OroPlatform Environment Setup for Community Edition
 
-OroPlatform Community Edition
-=============================
+.. _environment-setup-community:
 
-.. begin_body_1
+Environment Setup for Community Edition
+=======================================
 
-This topic provides a detailed description of the |oro_app_name| installation process and illustrates
-examples of installation scenarios.
+This topic provides a detailed description of the environment setup process for Community Edition of Oro applications.
 
-.. note::
-
-   On the local environment, you can :ref:`use the prepared Vagrantfiles to perform an automated installation <vagrant_installation>`,
-   which replicates steps from this guide.
-
-Step 1: Environment Setup
--------------------------
-
-We are demonstrating the installation process using certain versions of the recommended environmental components:
-
-.. finish_common_ce_part_1
-
-.. csv-table::
-   :widths: 10, 30
-
-   "**OS**","|recommended_OS| (recommended OS)"
-   "**Web server**","Nginx v.1.12"
-   "**Database**","MySQL v.5.7"
-   "**PHP**","PHP-FPM and PHP CLI v.7.1"
-   "**Other tools**","NodeJS v.6.14, Git v.1.8.3, Composer v.1.6.4, Supervisord v.3.3"
-
-.. begin_common_ce_part_2
-
-.. note::
-
-   Please refer to the :ref:`System Requirements <system-requirements>` for the complete list of the alternatives of the
-   required environment components and their supported versions.
-
-If you are using the same environment, you can reuse the commands provided below without modification. Otherwise, please adjust them to match the syntax supported by the tools of your choice.
-
+Before you proceed, please refer to the :ref:`System Requirements <system-requirements>` for the complete list of the recommended environmental components and their supported versions. If you are using the same environment and components, as described in the System Requirements, you can reuse the commands provided in this guide without modification. Otherwise, please adjust them to match the syntax supported by the tools of your choice.
 
 Prepare a Server with OS
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
-Get a dedicated physical or virtual server with at least 2Gb RAM with the |recommended_OS| installed. Ensure that you
+Get a dedicated physical or virtual server with at least 2Gb RAM with the CentOS v7.4 installed. Ensure that you
 can run processes as a *root* user or user with *sudo* permissions.
 
-.. finish_common_ce_part_2
+Environment Setup
+-----------------
 
 Enable Required Package Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Use Extra Packages for Enterprise Linux (EPEL) repository to get the Nginx, NodeJS, Git, Supervisor, and Wget packages required for |oro_app_name| application operation.
 
 Add the EPEL repository to your `yum` package manager by running:
 
@@ -59,10 +28,11 @@ Add the EPEL repository to your `yum` package manager by running:
    yum install -y epel-release
    yum update -y
 
+
 Install Nginx, NodeJS, Git, Supervisor, and Wget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Install most of the required |oro_app_name| application environment components using the following command:
+Install most of the required Oro application environment components using the following commands:
 
 .. code:: bash
 
@@ -113,6 +83,15 @@ Run the commands below, or use another Composer installation process described i
    php -r "unlink('composer-setup.php');"
    mv composer.phar /usr/bin/composer
 
+Install Symfony Flex
+^^^^^^^^^^^^^^^^^^^^
+
+To improve composer operations performance install Symfony Flex globally:
+
+.. code:: bash
+
+   composer global require symfony/flex
+
 Enable Installed Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -121,10 +100,8 @@ Enable Installed Services
    systemctl start mysqld php-fpm nginx supervisord
    systemctl enable mysqld php-fpm nginx supervisord
 
-Step 2: Pre-installation Environment Configuration
---------------------------------------------------
-
-.. begin_common_ce_part_3
+Environment Configuration
+-------------------------
 
 Perform Security Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -159,8 +136,6 @@ sections to run environment management commands as well as application install a
 
 Commands for running the web server, php-fpm process, cron commands, background processes, etc., are executed via the dedicated *application user* (*nginx*). Reuse them without modification, if you keep the same username. Otherwise, adjust them accordingly.
 
-.. finish_common_ce_part_3
-
 Prepare MySQL Database
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -186,7 +161,7 @@ one digit, and one special character, and has a total length of at least 8 chara
 Change the MySQL Server Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is recommended to use SSD to store the |oro_app_name| data in the MySQL 5.X database. However, in case you do need to
+It is recommended to use SSD to store the application data in the MySQL 5.X database. However, in case you do need to
 use the HDD, set the following configuration parameters in the **/etc/my.cnf** file to avoid performance issues:
 
 .. code:: bash
@@ -225,15 +200,14 @@ For the changes to take effect, restart MySQL server by running:
 
    systemctl restart mysqld
 
-Create a Database for |oro_app_name| Application and a Dedicated Database User
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create a Database for the Application and a Dedicated Database User
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: sql
 
    CREATE DATABASE oro;
    GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' identified by 'P@ssword123';
    FLUSH PRIVILEGES;
-   exit
 
 Replace `oro_user` with a new username and `P@ssword123` with a more secure password. Ensure that the password contains
 at least one upper case letter, one lower case letter, one digit, one special character, and has the total length of at
@@ -242,21 +216,18 @@ least 8 characters.
 Configure Web Server
 ^^^^^^^^^^^^^^^^^^^^
 
-.. begin_common_ce_part_4
-
-For the production mode, it is strongly recommend to use the HTTPS protocol for the |oro_app_name| public websites, and reserve the
-HTTP mode for development and testing purposes only.
+For the production mode, it is strongly recommended to use the HTTPS protocol for the Oro application public websites, and reserve the HTTP mode for development and testing purposes only.
 
 The samples of Nginx configuration for HTTPS and HTTP mode are provided below. Update the
 `/etc/nginx/conf.d/default.conf` file with the content that matches the type of your environment.
 
 **Sample nginx Configuration for HTTP Websites (Use in Development and Staging Environment Only)**
 
-.. code::
+.. code-block:: text
 
     server {
-        server_name <your_domain_name> www.<your_domain_name>;
-        root  /usr/share/nginx/html/oroapp/public;
+        server_name <your-domain-name> www.<your-domain-name>;
+        root  <application-root-folder>/public;
 
         index index.php;
 
@@ -288,30 +259,30 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
             add_header Cache-Control public;
         }
 
-        error_log /var/log/nginx/<your_domain_name>_error.log;
-        access_log /var/log/nginx/<your_domain_name>_access.log;
+        error_log /var/log/nginx/<your-domain-name>_error.log;
+        access_log /var/log/nginx/<your-domain-name>_access.log;
     }
 
 **Sample nginx Configuration for HTTPS Websites (Safe for Production Environment)**
 
-.. code::
+.. code-block:: text
 
     server {
         listen 80;
-        server_name <your_domain_name> www.<your_domain_name>;
+        server_name <your-domain-name> www.<your-domain-name>;
         return 301 https://$server_name$request_uri;
     }
 
     server {
         listen 443 ssl;
-        server_name <your_domain_name> www.<your_domain_name>;
+        server_name <your-domain-name> www.<your-domain-name>;
 
         ssl_certificate_key /etc/ssl/private/example.com.key;
         ssl_certificate /etc/ssl/private/example.com.crt.fullchain;
         ssl_protocols TLSv1.2;
         ssl_ciphers EECDH+AESGCM:EDH+AESGCM:AES2;
 
-        root /usr/share/nginx/html/oroapp/public;
+        root <application-root-folder>/public;
 
         index index.php;
 
@@ -388,23 +359,22 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection "upgrade";
 
-            error_log /var/log/nginx/<your_domain_name>_wss_error.log;
-            access_log /var/log/nginx/<your_domain_name>_wss_access.log;
+            error_log /var/log/nginx/<your-domain-name>_wss_error.log;
+            access_log /var/log/nginx/<your-domain-name>_wss_access.log;
         }
 
-        error_log /var/log/nginx/<your_domain_name>_https_error.log;
-        access_log /var/log/nginx/<your_domain_name>_https_access.log;
+        error_log /var/log/nginx/<your-domain-name>_https_error.log;
+        access_log /var/log/nginx/<your-domain-name>_https_access.log;
     }
 
-Replace *<your_domain_name>* with your configured domain name. In addition, change *ssl_certificate_key* and
-*ssl_certificate* with the actual values of your active SSL certificate.
+* Replace **<application-root-folder>** with the absolute path where you are going to install the Oro application.
+* Replace **<your-domain-name>** with the configured domain name that would be used for the Oro application.
+* Change *ssl_certificate_key* and*ssl_certificate* with the actual values of your active SSL certificate.
 
 Optionally, you can enable and configure |Apache PageSpeed module| for Nginx to improve
 web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.
 
 .. note:: If you choose the Apache web server instead of Nginx one, the example of the web server configuration you can find in the :ref:`Web Server Configuration <installation--web-server-configuration>` article.
-
-.. finish_common_ce_part_4
 
 For the changes to take effect, restart `nginx` by running:
 
@@ -415,19 +385,15 @@ For the changes to take effect, restart `nginx` by running:
 Configure Domain Name Resolution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin_common_ce_part_5
-
-If you are going to use |oro_app_name| in the local environment only, modify the */etc/hosts* file on the server by adding the following line:
+If you are going to use the Oro application in the local environment only, modify the */etc/hosts* file on the server by adding the following line:
 
 .. code::
 
-   127.0.0.1 localhost <your_domain_name>
+   127.0.0.1 localhost <your-domain-name>
 
-After this change, the <your_domain_name> URLs opened in the local environment are handled by the local webserver.
+After this change, the <your-domain-name> URLs opened in the local environment are handled by the local webserver.
 
-To make |oro_app_name| accessible from the remote locations, configure a DNS server to point your domain name to your server IP address.
-
-.. finish_common_ce_part_5
+To make your Oro application accessible from the remote locations, configure a DNS server to point your domain name to your server IP address.
 
 Configure PHP
 ^^^^^^^^^^^^^
@@ -468,227 +434,10 @@ For the changes to take effect, restart PHP-FPM by running:
 
    systemctl restart php-fpm
 
-.. _installation--oroplatform-ce--part-3:
-
-Step 3: |oro_app_name| Application Installation
------------------------------------------------
-
-Get Application Source Code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-.. finish_body_1
-
-
-Create your new |oro_app_name| project with composer in the */usr/share/nginx/html/oroapp* folder:
-
-.. code:: bash
-
-   cd /usr/share/nginx/html
-   composer create-project oro/platform-application oroapp --repository=https://satis.oroinc.com
-   cd oroapp
-
-
-
-.. begin_body_2
-
-
-.. note:: Alternatively, you can download and unpack the archive with |oro_app_name| source code instead of using the Git repository. Please, refer to the dedicated article :ref:`Get the Oro Application Source Code <installation--get-files>`
-    for more details.
-
-Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) that
-are saved into the *config/parameters.yml* file. A description for every parameter you can find in the
-:ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
-
-Configure WebSocket Parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you use HTTP mode for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *config/parameters.yml* file.
-
-If you use HTTPS mode, open the *config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
-
-.. code::
-
-   websocket_bind_address:  0.0.0.0
-   websocket_bind_port:     8080
-   websocket_frontend_host: "*"
-   websocket_frontend_port: 443
-   websocket_frontend_path: "ws"
-   websocket_backend_host:  "*"
-   websocket_backend_port:  8080
-   websocket_backend_path:  ""
-
-For more information on these parameters, see |OroSyncBundle documentation|.
-
-Configure DBAL Parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Change the defaults for Doctrine in the *config/config.yml* file so that the generated SQL uses the *utf8mb4* character
-set:
-
-.. code::
-
-    doctrine:
-        dbal:
-            charset: utf8mb4
-            default_table_options:
-                charset: utf8mb4
-                collate: utf8mb4_unicode_ci
-
-Install |oro_app_name| Application
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To start the |oro_app_name| installation, run the following command:
-
-.. code:: bash
-
-   php ./bin/console oro:install --env=prod --timeout=900
-
-Follow the on-screen instructions in the console.
-
-You will be prompted to choose the installation with- or without- demo data. If you discard demo data during installation,
-you can install it later by running the following command:
-
-.. code:: bash
-
-   sudo -u nginx php ./bin/console oro:migration:data:load --fixtures-type=demo --env=prod
-
-**For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCRM after installation, you can:
-
-* :ref:`Execute custom migrations <execute-custom-migrations>`, and
-
-* :ref:`Load custom data fixtures <load-custom-data-fixtures>`
-
-Add Required Permissions for the *nginx* User
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-As *nginx* user should be able to create folders, run the following commands to set necessary files and folders permissions:
-
-.. code:: bash
-
-   setfacl -b -R ./
-   find . -type f -exec chmod 0644 {} \;
-   find . -type d -exec chmod 0755 {} \;
-   chown -R nginx:nginx ./var/{sessions,attachment,cache,import_export,logs}
-   chown -R nginx:nginx ./public/{media,uploads,js}
-
-Step 4: Post-installation Environment Configuration
----------------------------------------------------
-
-Schedule Periodical Command Execution
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Open the crontab file in *vi* editor on behalf of the *nginx* user:
-
-.. code:: bash
-
-   sudo -u nginx crontab -e
-
-To schedule execution of the *oro:cron* command every-minute, add the following line:
-
-.. code::
-
-   */1 * * * * php /usr/share/nginx/html/oroapp/bin/console oro:cron --env=prod > /dev/null
-
-Save the updated file.
-
-Configure and Run Required Background Processes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin_common_ce_part_5
-
-The required background processes are the following:
-
-* **message queue consumer** --- Performs resource-consuming tasks in the background.
-* **web socket server** --- Manages real-time messages between the application server and user's browser.
-
-It is crucial to keep these two background processes running. To maintain their constant availability, it is recommended to use |Supervisord| or another supervising tool.
-
-To configure Supervisord, use your root privileges.
-
-Configure the supervisor
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Add the following configuration sections to the */etc/supervisord.conf* Supervisord config file:
-
-.. finish_common_ce_part_5
-
-.. code::
-
-   [program:oro_web_socket]
-   command=php ./bin/console gos:websocket:server --env=prod
-   numprocs=1
-   autostart=true
-   autorestart=true
-   directory=/usr/share/nginx/html/oroapp
-   user=nginx
-   redirect_stderr=true
-
-   [program:oro_message_consumer]
-   command=php ./bin/console oro:message-queue:consume --env=prod
-   process_name=%(program_name)s_%(process_num)02d
-   numprocs=5
-   autostart=true
-   autorestart=true
-   directory=/usr/share/nginx/html/oroapp
-   user=nginx
-   redirect_stderr=true
-
-.. begin_common_ce_part_6
-
-Restart Supervisord
-~~~~~~~~~~~~~~~~~~~
-
-To restart supervisor, run:
-
-.. code:: bash
-
-   systemctl restart supervisord
-
-Check the Status of the Background Processes (Optional)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To check the status of the background processes, run:
-
-.. code:: bash
-
-   supervisorctl status
-
-You should see information similar to the following one:
-
-.. code::
-
-   oro_message_consumer:oro_message_consumer_00   RUNNING   pid 4847, uptime 0:05:36
-   oro_message_consumer:oro_message_consumer_01   RUNNING   pid 4846, uptime 0:05:36
-   oro_message_consumer:oro_message_consumer_02   RUNNING   pid 4845, uptime 0:05:36
-   oro_message_consumer:oro_message_consumer_03   RUNNING   pid 4844, uptime 0:05:36
-   oro_message_consumer:oro_message_consumer_04   RUNNING   pid 4843, uptime 0:05:36
-   oro_web_socket                                 RUNNING   pid 5163, uptime 0:00:05
-
-Congratulations! You've Successfully Installed |oro_app_name| Application
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You should now be able to open the homepage *http(s)://<your_domain_name>/* and use the application.
-
 What's Next
 -----------
 
-Optimization, Scalability, and Configuration Recommendations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you need to customize the described installation scenario, refer to the following topics:
-
-* :ref:`Get the Oro Application Source Code <installation--get-files>`
-* :ref:`Customizing the Installation Process <customize-install>`
-* :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>`
-* :ref:`Web Server Configuration <installation--web-server-configuration>`
-* :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>`
-* :ref:`Silent Installation <silent-installation>`
-
-.. finish_body_2
-
-.. |oro_app_name| replace:: OroPlatform Community Edition
-.. |recommended_OS| replace:: CentOS v7.4
+* :ref:`Install the Oro Application via the Command-Line Interface <installation>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

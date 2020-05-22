@@ -1,1 +1,15 @@
 user/back-office/sales/shopping-lists/view /user/back-office/sales/shopping-lists/index
+backend/setup/dev-environment/vagrant /backend/setup/demo-environment/vagrant
+backend/setup/dev-environment/manual-installation/commerce-ce /backend/setup/dev-environment/community-edition
+backend/setup/dev-environment/manual-installation/commerce-ce-de /backend/setup/dev-environment/community-edition
+backend/setup/dev-environment/manual-installation/commerce-ee /backend/setup/dev-environment/enterprise-edition
+backend/setup/dev-environment/manual-installation/commerce-ee-de /backend/setup/dev-environment/enterprise-edition
+backend/setup/dev-environment/manual-installation/commerce-only-ee /backend/setup/dev-environment/enterprise-edition
+backend/setup/dev-environment/manual-installation/crm-ce /backend/setup/dev-environment/community-edition
+backend/setup/dev-environment/manual-installation/crm-ee /backend/setup/dev-environment/enterprise-edition
+backend/setup/dev-environment/manual-installation/platform-ce /backend/setup/dev-environment/community-edition
+backend/setup/installation/demo-data /backend/setup/demo-data
+backend/setup/installation/install-cli /backend/setup/installation
+backend/setup/installation/index /backend/setup/installation
+backend/setup/dev-environment/get-source-files /backend/setup/get-source-files
+backend/setup/dev-environment/web-server-config/how-to-enable-https backend/setup/dev-environment/web-server-config

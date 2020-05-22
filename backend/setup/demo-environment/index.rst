@@ -1,3 +1,5 @@
+.. _demo-environment:
+
 Demo Environment
 ================
 
@@ -7,3 +9,4 @@ Demo Environment
 
    vm
    aws
+   vagrant
