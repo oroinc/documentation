@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM, OroCommerce
+:oro_documentation_types: OroCRM, OroCommerce, Extension
 
 .. _user-guide-my-profile-oauth:
 
@@ -8,6 +8,8 @@ Add OAuth Applications
 .. this topic is included into customer_uses/index
 
 .. begin_1
+
+.. hint:: The feature requires extension, so visit Oro Marketplace to download the |OAuth 2.0 Server extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 Oro applications support oAuth 2.0 credentials authorization grant type to enable connection of third-party applications to the web API. To connect a third-party application, you need to add it and configure its pre-generated credentials in the back-office of your Oro application. These credentials are managed on user level which enables generation of different credentials for various applications across multiple organizations.
 
@@ -94,9 +96,6 @@ To configure machine-to-machine authentication and retrieve the access token:
 
    .. note:: Access tokens for backend and frontend API are not interchangeable. If you attempt to request data for the frontend API with a token generated for the backend application (i.e., a back-office user), access will be denied.
 
-.. include:: /include/include-links-user.rst
-   :start-after: begin
-
 .. finish_2
 
 **Related Articles**
@@ -105,5 +104,8 @@ To configure machine-to-machine authentication and retrieve the access token:
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin
 

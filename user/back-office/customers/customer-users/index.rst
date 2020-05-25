@@ -139,6 +139,9 @@ A corresponding notification is sent to the primary email address of the user, t
 .. include:: /include/include-images.rst
    :start-after: begin
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+
 .. toctree::
 
    export

@@ -53,3 +53,5 @@ After the integration is configured, you can :ref:`Send Email Campaign via MailC
 
 .. automation_finish
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin

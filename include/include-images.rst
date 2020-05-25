@@ -557,3 +557,7 @@ Images
 .. |CRMIcon| image:: /user/img/doctypes/crm-icon-logo.png
    :align: middle
    :alt: Available in OroCRM
+
+.. |Extension| image:: /user/img/doctypes/extension-icon-logo.png
+   :align: middle
+   :alt: Extension is required

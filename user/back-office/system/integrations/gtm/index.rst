@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM, OroCommerce
+:oro_documentation_types: OroCRM, OroCommerce, Extension
 
 .. _gtm-integration:
 
@@ -6,6 +6,8 @@ Google Tag Manager Integration
 ==============================
 
 Integration between your Oro application and |Google Tag Manager| enables you to add tracking tags to your OroCommerce web store pages with the help of |Enhanced E-commerce| and collect information on customer behavior, purchases, product clicks, page views, etc. All this information can subsequently be shared with Google Analytics to measure various user interactions with products on your website through |E-Commerce reports|. This can help you get a full picture of on-page visitor behavior, how well your marketing strategies work, and how to target your audience better.
+
+.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Google Tag Manager extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 In this topic, we are going to illustrate how to :ref:`integrate your Oro application with Google Tag Manager <gtm-integration-oro-side>` and pass data to Google Analytics using two methods:
 

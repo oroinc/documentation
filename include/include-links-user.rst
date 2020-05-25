@@ -729,7 +729,7 @@ Links (User)
 
 .. |DPD developer eSolutions portal| raw:: html
 
-   <a href="https://esolutions.dpd.com/entwickler.aspx" target="_blank">OroCommerce's Extension Marketplace</a>
+   <a href="https://esolutions.dpd.com/entwickler.aspx" target="_blank">DPD developer eSolutions portal</a>
 
 .. |DPD customer support| raw:: html
 
@@ -755,10 +755,51 @@ Links (User)
 
    <a href="https://www.avalara.com/us/en/learn/sales-tax.html" target="_blank">state sales tax laws</a>
 
+.. |Google Tag Manager extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/google-tag-manager-w-enhanced-ecommerce/" target="_blank">Google Tag Manager extension</a>
+
+.. |User Impersonation extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/user-impersonation/" target="_blank">User Impersonation extension</a>
+
+.. |Oro dotmailer extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocrm-dotmailer-integration/" target="_blank">Oro dotmailer extension</a>
+
+.. |Authorize.Net extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-authorize.net-integration/" target="_blank">Authorize.Net extension</a>
+
+.. |Apruve extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-and-apruve-integration/" target="_blank">Apruve extension</a>
+
+.. |InfinitePay extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-infinitepay-integration/" target="_blank">InfinitePay extension</a>
+
+.. |Wirecard extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-wirecard-integration/" target="_blank">Wirecard extension</a>
+
+.. |Zendesk extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/zendesk-orocrm-integration-2" target="_blank">Zendesk extension</a>
+
+.. |PayPal Express Checkout extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/paypal-express-checkout-for-orocommerce/" target="_blank">PayPal Express Checkout extension</a>
+
 .. |Shopping List Items Copy extension| raw:: html
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/shopping-list-items-copy/" target="_blank">Shopping List Items Copy extension</a>
 
+.. |DPD extension| raw:: html
 
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-dpd-integration/" target="_blank">DPD extension</a>
 
+.. |OAuth 2.0 Server extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/oauth-2.0-client-credentials-authorization/#description" target="_blank">OAuth 2.0 Server extension</a>
 
