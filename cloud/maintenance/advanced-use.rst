@@ -155,7 +155,7 @@ Webserver configuration can be modified, as illustrated below:
         locations:
           'root':
             type: 'php'
-            location: '~ /app\.php(/|$)'
+            location: '~ /index\.php(/|$)'
             auth_basic_enable: true
             auth_basic_userlist:
               user1:
@@ -166,7 +166,7 @@ Webserver configuration can be modified, as illustrated below:
                 password: 'password2'
           'admin':
             type: 'php'
-            location: '~ /app\.php(/admin|$)'
+            location: '~ /index\.php(/admin|$)'
             auth_basic_enable: true
             auth_basic_userlist:
               user3:
@@ -413,6 +413,144 @@ You can use separate synonym lists for each index, or use '*' as index name in o
             - 'Alice, Bob, Dave, John'
 
 .. note:: Please keep in mind that synonyms configuration will be not applied immediately. All changes made in orocloud.yaml require up to 40 minutes to apply. More details for synonyms usage may be found in |official Elasticsearch documentation|.
+
+Environments Data Synchronization
+---------------------------------
+
+Cloud-based environments may be syncronized by a user without filing a request to the support team.
+
+To retrieve a list of the environments to which you can sync the sanitized data from the current environment, run the following command:
+
+.. code-block:: none
+   :linenos:
+
+    orocloud-cli dump:environments
+
+.. note:: If you have no environments in the output, ask the support team to update your environment settings.
+
+This means that you can push data from the current environment to the linked environment.
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli dump:create --help
+
+.. code-block:: none
+    :linenos:
+
+    Description:
+      Create application environment data dump and copy it to another environment.
+
+    Usage:
+      dump:create [options]
+
+    Options:
+          --log=LOG                                Log to file
+          --downtime-duration[=DOWNTIME-DURATION]  (OPTIONAL) Downtime duration, by default 1 hour. Expected format: '{number}d{number}h{number}m'. Usage example: '1d3h15m' means 1 day 3 hours 15 minutes OR '30m' means 30 minutes.
+          --downtime-comment[=DOWNTIME-COMMENT]    Comment for provided custom downtime value. Required if [downtime-duration] provided. Wrap with double-quotes if contains spaces.
+      -e, --environment[=ENVIRONMENT]              Name of the destination environment where data dump will be copied. To list all available environments, please use dump:environments command.
+      -c, --components[=COMPONENTS]                Comma-separated components list (without spaces) to be included in the dump. Allowed: db,ess,media,code. Default: db. Database is sanitized. If media component selected, it may take much time. [default: "db"]
+      -i, --indices[=INDICES]                      Comma-separated Elastic indices list to be included in the dump. If not set - all indices will be included.
+      -h, --help                                   Display this help message
+      -q, --quiet                                  Do not output any message
+      -V, --version                                Display this application version
+          --ansi                                   Force ANSI output
+          --no-ansi                                Disable ANSI output
+      -n, --no-interaction                         Do not ask any interactive question
+      -v|vv|vvv, --verbose                         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+    * **option "--environment"** - Name of the destination environment where data dump will be copied.
+
+    * **option "--components"** - Comma-separated components list (without spaces) to be included in the dump. Allowed: db,ess,rpm. Default: db. Database is sanitized.
+
+    * **option "--indices"** - Comma-separated Elastic indices list to be included in the dump. If not set - all indices will be included.
+
+
+.. note:: GridFS media content and RabbitMQ messages sync is not supported. If media component is selected, sync may take a long time.
+
+When data push is done, you may start with import in the target environment.
+
+To list all available data dumps that can be restored to the current environment, run:
+
+.. code-block:: none
+   :linenos:
+
+    orocloud-cli dump:list --help
+
+.. code-block:: none
+   :linenos:
+
+    Description:
+      Lists all available data dumps that can be restored to the current environment.
+
+    Usage:
+      dump:list [options]
+
+    Options:
+          --log=LOG            Log to file
+          --page=PAGE          Page for display (25 items per page) [default: 1]
+          --per-page=PER-PAGE  Items per page [default: 25]
+      -h, --help               Display this help message
+      -q, --quiet              Do not output any message
+      -V, --version            Display this application version
+          --ansi               Force ANSI output
+          --no-ansi            Disable ANSI output
+      -n, --no-interaction     Do not ask any interactive question
+      -v|vv|vvv, --verbose     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+To restore it as is, run the following command in the target environment:
+
+.. code-block:: none
+   :linenos:
+
+    orocloud-cli dump:load --help
+
+.. code-block:: none
+    :linenos:
+
+    Description:
+      Load application data from the dump to the current environment.
+
+    Usage:
+      dump:load [options] [--] [<timestamp>]
+
+    Arguments:
+      timestamp                                    The timestamp of the exported environment list items to be restored.
+
+    Options:
+          --log=LOG                                Log to file
+          --downtime-duration[=DOWNTIME-DURATION]  (OPTIONAL) Downtime duration, by default 1 hour. Expected format: '{number}d{number}h{number}m'. Usage example: '1d3h15m' means 1 day 3 hours 15 minutes OR '30m' means 30 minutes.
+          --downtime-comment[=DOWNTIME-COMMENT]    Comment for provided custom downtime value. Required if [downtime-duration] provided. Wrap with double-quotes if contains spaces.
+          --force[=FORCE]                          Force dump:load operation execution, otherwise the confirmation will be requested. [default: false]
+          --host[=HOST]                            Stop program(s) on specified job host only [ocom-vdrizheruk-dev2-app1], otherwise [all].
+      -c, --components[=COMPONENTS]                Comma-separated list (without spaces) of components for data to be loaded. Allowed: db,ess,media,code. Default: db. Database is sanitized. If media component selected, it may take much time.
+          --skip-purge-media                       Skip purging media on fetch operation
+          --skip-prepare-app                       Skip prepare application operations. With this option application will not be usable after finishing operation.
+          --flush-elasticsearch                    Flush ElasticSearch. All ElasticSearch data will be lost.
+          --run-base-reindex                       Run command [oro:search:reindex] in background.
+          --run-website-reindex                    Run command [oro:website-search:reindex] in background.
+      -h, --help                                   Display this help message
+      -q, --quiet                                  Do not output any message
+      -V, --version                                Display this application version
+          --ansi                                   Force ANSI output
+          --no-ansi                                Disable ANSI output
+      -n, --no-interaction                         Do not ask any interactive question
+      -v|vv|vvv, --verbose                         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+    * **option "--components"** - Comma-separated list (without spaces) of components for data to be loaded. Allowed: db,ess,rpm. Default: db. Database is sanitized.
+
+    * **option "--skip-prepare-app"** - Skip prepare application operations. With this option application will not be usable after finishing operation.
+
+    * **option "--flush-elasticsearch"** - Flush ElasticSearch. All ElasticSearch data will be lost.
+
+    * **option "--run-base-reindex"** - Run command [oro:search:reindex] in background.
+
+    * **option "--run-website-reindex"** - Run command [oro:website-search:reindex] in background.
+
+.. note:: If during dump:load not all components(db,ess,rpm) are selected, the application may be not working. By default only db will be restored.
+
+.. note:: During dump:load, the database is always sanitized.
+
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
