@@ -9,11 +9,11 @@ environment components using |Vagrant|.
 Every Oro application has a *Vagrantfile* that enables you to set up a virtual machine with the Oro application via the
 `vagrant up` command.
 
-For example, to set up a VM with OroCommerce CE application v. 4.1.2 locally, run:
+For example, to set up a VM with OroCommerce CE application v. 4.1.4 locally, run:
 
 .. code:: bash
 
-    git clone -b 4.1.2 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
+    git clone -b 4.1.4 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
     vagrant up
 
 Once the command has run, you can access the application via the ``http://localhost:8000/`` URL.
@@ -46,7 +46,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. code:: bash
 
-      git clone -b 4.1.2 <oro_application_clone_url> oroapp && cd oroapp
+      git clone -b 4.1.4 <oro_application_clone_url> oroapp && cd oroapp
 
    Replace the <oro_application_clone_url> with the repository URL for the necessary Oro application:
 
