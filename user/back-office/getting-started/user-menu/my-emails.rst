@@ -16,7 +16,6 @@ It is also possible to configure auto-actions and auto-responses. For example, w
 
 Oro also provides a feature of auto-assignment to contact, thanks to which new emails synced into the application are automatically linked to contacts, if email addresses of these contacts appeared in the correspondence.
 
-Enterprise Editions of Oro application also support integration with Microsoft Exchange Server and Outlook.
 
    See a short demo on |how to create and manage emails|, or keep reading the step-by-step guidance below.
 
