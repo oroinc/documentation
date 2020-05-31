@@ -35,7 +35,6 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`FedEx <doc--integrations--fedex>`
 
 * :ref:`Google Integration (Single Sign-On, Hangouts, Tag Manager) <admin-configuration-google>`
-* :ref:`Outlook Integration <user-guide-synch-outlook>`
 * :ref:`dotmailer Integration <user-guide-dotmailer-overview>`
 * :ref:`Mailchimp Integration <user-guide-mc-integration>`
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
@@ -58,4 +57,3 @@ Check the following integrations that can be enabled/disabled and configured in 
    ldap-integration
    embedded-forms/index
    google/index
-   outlook/index

@@ -7,4 +7,3 @@ Integrations Configuration Settings per Organization
    :maxdepth: 1
 
    organization-google
-   organization-outlook

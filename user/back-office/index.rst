@@ -60,7 +60,6 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
           <li><a class="tag-very-important" href="sales/opportunities/">Opportunities</a></li>
           <li><a class="" href="system/integrations/zendesk-integration/">Zendesk Integration</a></li>
           <li><a class="tag-important" href="system/integrations/dotmailer/">Dotmailer Integration</a></li>
-          <li><a class="" href="system/integrations/outlook/">Outlook Integration</a></li>
        </ul>
 
 
