@@ -181,13 +181,13 @@ Once the tax rule is matched, and all taxes are calculated, the customer can sub
 
 **Related Topics**
 
-* :ref:`Taxes User Guide <user-guide--taxes>`
-        * :ref:`Customer Tax Codes <user-guide--taxes--customer_tax_codes>`
-        * :ref:`Product Tax Codes <taxes--product-tax-code>`
-        * :ref:`Tax Jurisdictions <taxes--tax-jurisdiction>`
-        * :ref:`Tax Rates <user-guide--taxes--tax-rates>`
-        * :ref:`Tax Rules <tax-rules>`
 * :ref:`Taxation Configuration <configuration--guide--commerce--configuration--taxation>`
+* :ref:`Taxes User Guide <user-guide--taxes>`
+* :ref:`Customer Tax Codes <user-guide--taxes--customer_tax_codes>`
+* :ref:`Product Tax Codes <taxes--product-tax-code>`
+* :ref:`Tax Jurisdictions <taxes--tax-jurisdiction>`
+* :ref:`Tax Rates <user-guide--taxes--tax-rates>`
+* :ref:`Tax Rules <tax-rules>`
 
 
 .. include:: /include/include-links-user.rst

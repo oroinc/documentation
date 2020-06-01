@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce
+:oro_documentation_types: OroCommerce, Extension
 
 .. _doc--integrations--dpd:
 
@@ -6,6 +6,8 @@ DPD Shipping Integration
 ========================
 
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
+
+.. hint:: The feature requires extension, so visit Oro Marketplace to download the |DPD extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 Dynamic Parcel Distribution, known as DPD, is one of the world’s leading parcel service providers and operates in 230 countries.
 

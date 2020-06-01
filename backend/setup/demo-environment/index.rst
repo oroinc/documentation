@@ -1,3 +1,5 @@
+.. _demo-environment:
+
 Demo Environment
 ================
 

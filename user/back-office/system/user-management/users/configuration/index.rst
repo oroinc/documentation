@@ -3,7 +3,6 @@
 .. _doc-my-user-configuration:
 .. _doc-user-management-users-actions-configure:
 .. _doc-my-user-configuration-general:
-.. _user-outlook-settings:
 
 Configure User System Settings
 ==============================
@@ -29,10 +28,6 @@ More information about the options available for each of the two categories is a
     * :ref:`Display Settings <doc-my-user-configuration-display>`
     * :ref:`Email Configuration <my_email_configuration>`
 
-  * Integrations
-
-    * :ref:`MS Outlook Settings <doc-my-user-configuration-msoutlook>`
-
 * **Commerce**
 
   * Sales
@@ -46,7 +41,6 @@ More information about the options available for each of the two categories is a
    user-localization
    user-display-settings
    user-email-settings
-   user-ms-outlook
    user-sales-info
 
 

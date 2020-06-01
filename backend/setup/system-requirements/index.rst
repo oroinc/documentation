@@ -8,7 +8,6 @@ System Requirements
 
 OroCommerce is a web application which runs on a server. Users interact with the application via a web browser on any computer or mobile device that have access to the internet or the network where the server is hosted.
 
-
 Server-side Requirements
 ------------------------
 
@@ -77,6 +76,9 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * xml                                             |
 |                   | * zip                                             |
 |                   | * imap                                            |
+|                   | * soap                                            |
+|                   | * bcmath                                          |
+|                   | * ldap                                            |
 +-------------------+---------------------------------------------------+
 | *Database*        | * |MySQL| 5.7                                     |
 |                   |                                                   |

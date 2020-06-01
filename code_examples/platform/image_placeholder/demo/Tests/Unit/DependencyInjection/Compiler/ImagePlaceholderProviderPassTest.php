@@ -25,7 +25,7 @@ class ImagePlaceholderProviderPassTest extends \PHPUnit\Framework\TestCase
      */
     private $compilerPass;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->containerBuilder = new ContainerBuilder();
         $this->chainProvider = $this->containerBuilder->register(self::CHAIN_PROVIDER_NAME);

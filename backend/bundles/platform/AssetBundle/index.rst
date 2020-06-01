@@ -289,14 +289,14 @@ Path to NPM executable.
 build_timeout
 ^^^^^^^^^^^^^
 
-**type: `integer` required, default: `300`**
+**type: `integer` required, default: `null`**
 
 Assets build timeout in seconds, null to disable the timeout.
 
 npm_install_timeout
 ^^^^^^^^^^^^^^^^^^^
 
-**type: `integer` required, default: `900`**
+**type: `integer` required, default: `null`**
 
 Npm installation timeout in seconds, null to disable the timeout.
 
@@ -347,7 +347,7 @@ The following example illustrates the use of simplified `requirejs.yml` from `UI
 
 .. code-block:: yaml
    :linenos:
-   
+
    config:
        shim:
            'jquery.select2':
@@ -391,7 +391,7 @@ First, expose the variable needs to become available globally:
 
 .. code-block:: yaml
    :linenos:
-   
+
    shim:
       jquery:
           expose:
@@ -402,7 +402,7 @@ Next, convert `shim` from `requirejs.yml`
 
 .. code-block:: yaml
    :linenos:
-   
+
    shim:
      'jquery.select2':
          deps:
@@ -413,7 +413,7 @@ to the new format
 
 .. code-block:: yaml
    :linenos:
-   
+
    shim:
        jquery.select2:
            imports:
@@ -457,7 +457,7 @@ Example:
 should be changed to
 
 .. code-block:: yaml
-   
+
    aliases:
       oro/block-widget$: oroui/js/widget/block-widget
 
@@ -474,7 +474,7 @@ Example:
 
 .. code-block:: yaml
    :linenos:
-   
+
    paths:
        'mybundle/js/app/components/component1': 'bundles/mybundle/js/app/components/component1.js'
        'mybundle/js/app/components/component2': 'bundles/mybundle/js/app/components/component2.js'
@@ -484,7 +484,7 @@ should be changed to
 
 .. code-block:: yaml
    :linenos:
-   
+
    dynamic-imports:
        mybundle:
            - mybundle/js/app/components/component1
@@ -500,7 +500,7 @@ If your module is expected to have configuration, the module name has to be ment
 
 .. code-block:: yaml
    :linenos:
-   
+
    configs:
       oro/dialog-widget:
          stateEnabled: true

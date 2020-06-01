@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce
+:oro_documentation_types: OroCommerce, Extension
 
 .. _user-guide--payment--payment-providers-overview--authorizenet:
 
@@ -6,6 +6,8 @@ Authorize.Net Payments Services
 ===============================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+
+.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Authorize.Net extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 Authorize.Net is one of the world's most popular payment gateways. It provides services for businesses based in the United States, Canada, United Kingdom, Europe, and Australia. It ensures secure and reliable money transactions and offers a wide range of additional services.
 

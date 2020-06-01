@@ -24,11 +24,10 @@ Learn how to configure localization options, currency and tracking, as well as u
 
 
 :ref:`Integrations <configuration--guide--system--configuration--integrations>`
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------f----
 
 * :ref:`Google Settings <admin-configuration-integrations-google>`
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
-* :ref:`MS Outlook Settings <admin-configuration-ms-outlook-integration-settings--oro-side>`
 * :ref:`Dotmailer Settings <admin-configuration-dotmailer-integration-settings>`
 
 
@@ -39,7 +38,6 @@ Learn how to configure localization options, currency and tracking, as well as u
 * :ref:`Routing <sys--config--sysconfig--websites--routing>`
 * :ref:`Sitemap <sys--config--sysconfig--websites--sitemap>`
 
-.. In the integrations section you will find out how to setup the integration between Google, MS Exchange, MS Outlook, Dotmailer and your Oro application. For the integration with Google, you can provide domains for single sign-on, enable OAuth 2.0 for email synchronization and Google Hangouts. For MS Exchange, you can specify your server and login details. For MS Outlook, you will be able to configure the add-in by creating various dialog layouts and setting up synchronization settings.  In addition, you will be able to set synchronization settings for Dotmailer and define account and customer relations between OroCRM and OroCommerce.
 
 .. toctree::
    :titlesonly:

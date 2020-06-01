@@ -125,7 +125,6 @@ In the Marketing section, the following capabilities are available:
 .. _admin-capabilities-jobs:
 .. _admin-capabilities-system-config:
 .. _admin-capabilities-export-grid:
-.. _admin-capabilities-outlook:
 .. _admin-capabilities-tags:
 .. _admin-capabilities-passwords:
 .. _admin-capabilities-mailchimp:
@@ -175,10 +174,6 @@ Application
   .. hint:: This capability does not influence a user's ability to edit their own password from the **My User** page.
 
   .. image:: /user/img/system/user_management/manage_passwords.png
-
-* **Outlook Integration** --- Enables a user to download the latest version of the |oro_application| (Enterprise edition) add-in for Outlook. If :ref:`Oro is synchronized with Outlook <user-guide-synch-outlook>`, this add-in enables a user to synchronize contacts, tasks, and calendar events between OroCRM and the user's Outlook account. The user can also associate emails to accounts, contacts, opportunities, and cases, as well as create leads, opportunities, and cases in OroCRM that are based on emails from the Outlook sidebar.
-
-  .. image:: /user/img/system/user_management/outlook_add-in.png
 
 * **Share Data View** --- Enables a user to :ref:`share and unshare the grid views <doc-grids-actions-grid-views-share>` that they have configured.
 

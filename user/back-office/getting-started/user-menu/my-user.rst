@@ -32,7 +32,7 @@ There are a number of effective tools and actions available on the page of your 
 
 2. **Access user-level configuration options.**
 
-   In particular, you can set up localization, language, display settings, update email configuration details, provide MS Outlook integration and synchronization settings details, as well as configure customer-visible contact information in the storefront. Read more about the available settings in the relevant :ref:`User-Level Configuration section <doc-my-user-configuration>` of the documentation library.
+   In particular, you can set up localization, language, display settings, update email configuration details, as well as configure customer-visible contact information in the storefront. Read more about the available settings in the relevant :ref:`User-Level Configuration section <doc-my-user-configuration>` of the documentation library.
 
 3. **Edit your user profile.**
 
@@ -55,7 +55,7 @@ There are a number of effective tools and actions available on the page of your 
 
 5. **View your profile details aggregated under 3 sections: general information, activity, and additional information.**
 
-   * In the **General Information** section, you can view the details of your profile, :ref:`create an API key <doc-my-user-actions-api>`, and :ref:`download the latest MS Outlook add-in <download-ms-outlook>`.
+   * In the **General Information** section, you can view the details of your profile, :ref:`create an API key <doc-my-user-actions-api>`.
 
    * In the **Activity** section, you can see the emails you sent and the calls you logged. If a user mentions you as a context for their activity, this activity also appears on the list. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in the Oro application.
 
@@ -128,23 +128,6 @@ Only administrators can reset passwords.
 2. Click **My User**.
 3. On the page of your profile, click **More Actions > Reset Password**.
 4. In the dialog box, click **Reset**. The password reset link will be sent to your (admin) primary email address.
-
-.. _download-ms-outlook:
-
-Download MS Outlook Add-in
---------------------------
-
-The Enterprise edition of your Oro application (OroCRM or OroCommerce) supports an out-of-the-box integration with MS Outlook (2010, 2013, 2016). To configure this integration between your Oro Enterprise application and MS Outlook, you need to download the MS Outlook add-in.
-
-The link to the MS Outlook add-in is located in your Oro application instance on the page of your user profile.
-
-To download the add-in:
-
-1. Click **My User** below your username on the top right of the application screen.
-2. Next to the MS Outlook Add-in option, click the link to download the file.
-3. Open the downloaded file and start the installation process.
-
-More information on how to setup :ref:`MS Outlook Integration <admin-configuration-ms-outlook-integration-settings>` is available in the relevant MS Outlook Integration topic in the Oro documentation library.
 
 Add OAuth Applications
 ----------------------

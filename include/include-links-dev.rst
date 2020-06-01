@@ -147,10 +147,6 @@ Links (Dev)
 
    <a href="https://github.com/GeniusesOfSymfony/WebSocketBundle" target="_blank">GosWebSocketBundle</a>
 
-.. |download section on the oroinc.com/orocommerce| raw:: html
-
-   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">download section on the oroinc.com/orocommerce</a>
-
 .. |PHP unserialization vulnerability| raw:: html
 
    <a href="https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf" target="_blank">PHP unserialization vulnerability</a>
@@ -368,9 +364,13 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/environment" target="_blank">Docker Provision</a>
 
-.. |OroCommerce website| raw:: html
+.. |OroCommerce VM| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">OroCommerce website</a>
+   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">OroCommerce</a>
+
+.. |OroCRM VM| raw:: html
+
+   <a href="https://oroinc.com/orocrm/download" target="_blank">OroCRM</a>
 
 .. |Red Hat| raw:: html
 
@@ -579,10 +579,6 @@ Links (Dev)
 .. |the other levels| raw:: html
 
    <a href="https://dev.mysql.com/doc/refman/5.5/en/charset-syntax.html" target="_blank">the other levels</a>
-
-.. |Create a Custom Tax Provider| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/TaxBundle#create-custom-tax-provider" target="_blank">Create a Custom Tax Provider</a>
 
 .. |TaskBundle| raw:: html
 
@@ -959,10 +955,6 @@ Links (Dev)
 .. |Prevent Displaying the Back-Office Datagrids in the Storefront| raw:: html
 
    <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids" target="_blank">Prevent Displaying the Back-Office Datagrids in the Storefront</a>
-
-.. |Low Inventory Highlighting| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Resources/doc/low_inventory_highlights.md#configuration" target="_blank">Low Inventory Highlighting</a>
 
 .. |Override the Default Breadcrumbs Data Source| raw:: html
 
@@ -2645,26 +2637,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle" target="_blank">Use Installer</a>
 
-.. |IntegrationBundle Configuration Reference| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/configuration-reference.md" target="_blank">IntegrationBundle Configuration Reference</a>
-
-.. |Additional Serializable Fields to Store Platform Specific Settings| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-settings.md" target="_blank">Additional Serializable Fields to Store Platform Specific Settings</a>
-
-.. |Reverse Synchronization| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/reverse-sync.md" target="_blank">Reverse Synchronization</a>
-
-.. |Define Owner for Related Entities on Integration Level| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/default-integration-owner.md" target="_blank">Define Owner for Related Entities on Integration Level</a>
-
-.. |Save Service Data Between Synchronizations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-capabilities.md" target="_blank">Save Service Data Between Synchronizations</a>
-
 .. |Locale Settings| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md" target="_blank">Locale Settings</a>
@@ -3395,7 +3367,7 @@ Links (Dev)
 
 .. |the website| raw:: html
 
-   <a href="http://www.oroinc.com/b2b-ecommerce/" target="_blank">the website</a>
+   <a href="http://www.oroinc.com/" target="_blank">the website</a>
 
 .. |relevant AttachmentBundle documentation| raw:: html
 
@@ -3529,9 +3501,17 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">relevant ScopeBundle documentation</a>
 
-.. |download section| raw:: html
+.. |Download OroCommerce| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">download section</a>
+   <a href="https://oroinc.com/b2b-ecommerce/download/#source" target="_blank">Download OroCommerce</a>
+
+.. |Download OroCRM| raw:: html
+
+   <a href="https://oroinc.com/orocrm/download/#source" target="_blank">Download OroCRM</a>
+
+.. |Download OroPlatform| raw:: html
+
+   <a href="https://oroinc.com/oroplatform/download/#source" target="_blank">Download OroPlatform</a>
 
 .. |relevant Akeneo documentation| raw:: html
 
@@ -5289,6 +5269,42 @@ Links (Dev)
 .. |official Gaufrette documentation| raw:: html
 
    <a href="http://knplabs.github.io/Gaufrette/" target="_blank">official Gaufrette documentation</a>
+
+.. |OroBundleEntityBundleFallbackEntityFallbackResolver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Fallback/EntityFallbackResolver.php" target="_blank">Oro\Bundle\EntityBundle\Fallback\EntityFallbackResolver</a>
+
+.. |example of using low_inventory| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Resources/views/layouts/default/imports/oro_product_grid/low_inventory.html.twig" target="_blank">example of using low_inventory</a>
+
+.. |OroBundleInventoryBundleEventListenerLowInventoryCheckoutLineItemValidationListener| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/EventListener/LowInventoryCheckoutLineItemValidationListener.php" target="_blank">Oro\Bundle\InventoryBundle\EventListener\LowInventoryCheckoutLineItemValidationListener</a>
+
+.. |OroBundleInventoryBundleInventoryLowInventoryProvider| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Inventory/LowInventoryProvider.php" target="_blank">Oro\Bundle\InventoryBundle\Inventory\LowInventoryProvider</a>
+
+.. |Product entity| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Entity/Product.php" target="_blank">Product entity</a>
+
+.. |ProductUnit entity| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Entity/ProductUnit.php" target="_blank">ProductUnit entity</a>
+
+.. |OroBundleInventoryBundleTwigLowInventoryExtension| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Twig/LowInventoryExtension.php" target="_blank">Oro\Bundle\InventoryBundle\Twig\LowInventoryExtension</a>
+
+.. |OroBundleInventoryBundleValidatorLowInventoryCheckoutLineItemValidator| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Validator/LowInventoryCheckoutLineItemValidator.php" target="_blank">Oro\Bundle\InventoryBundle\Validator\LowInventoryCheckoutLineItemValidator</a>
+
+.. |TaxProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/TaxBundle/Provider/TaxProviderInterface.php" target="_blank">TaxProviderInterface</a>
 
 .. |Symfony Local Web Server| raw:: html
 

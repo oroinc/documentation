@@ -17,5 +17,5 @@ Choose the model of transferring data to build your integration flow:
 .. toctree::
    :maxdepth: 2
 
-   create-integration
+   integration-config/index
    import-export/index
