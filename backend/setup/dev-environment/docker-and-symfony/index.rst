@@ -1,4 +1,4 @@
-.. _dev-guide-development-practice-setup-dev-env-docker-symfony:
+.. _setup-dev-env-docker-symfony:
 
 Docker and Symfony Server
 =========================
@@ -24,6 +24,10 @@ Development Stack
 Setup Environment
 -----------------
 
+.. hint::
+
+   There are quick guides for setup Docker and Symfony Server stack on :ref:`Mac OS X <setup-dev-env-docker-symfony_mac>` and :ref:`Ubuntu 20.04 LTS<setup-dev-env-docker-symfony_ubuntu>`.
+
 Requirements
 ~~~~~~~~~~~~
 
@@ -31,13 +35,18 @@ To start working with this development stack, you need to install
 locally:
 
 -  |Download PHP|
--  |Download NodeJS & NPM|
+-  |Download Node.js & NPM|
 -  |Download Composer|
 -  |Symfony binary|
 -  |Download Docker|
 -  |Install Docker Compose|
 
-.. note:: PHP and NodeJS should meet the :ref:`System Requirements <system-requirements>`.
+
+.. note::
+
+   PHP and NodeJS should meet the :ref:`System Requirements <system-requirements>`.
+
+.. _setup-dev-env-docker-symfony-recommendations:
 
 Recommendations
 ~~~~~~~~~~~~~~~
@@ -56,7 +65,7 @@ Recommendations
 
       composer config -g github-oauth.github.com <oauthtoken>
 
-.. _dev-guide-development-practice-setup-dev-env-docker-symfony-install-application:
+.. _setup-dev-env-docker-symfony-install-application:
 
 Install an Application
 ----------------------
@@ -66,6 +75,14 @@ Install an Application
    .. code:: bash
 
       docker-compose up -d
+
+   .. note::
+
+      On Linux, it may not work if you use Docker as a root user, you should  consider adding your user to the “docker” group with something like:
+
+      .. code:: bash
+
+         sudo usermod -aG docker your-user
 
 2. Install application dependencies
 
@@ -86,7 +103,7 @@ Install an Application
 
       symfony console oro:install -vvv --sample-data=y --application-url=https://127.0.0.1:8000 --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --organization-name=Oro --timeout=0 --symlink --env=prod -n
 
-.. _dev-guide-development-practice-setup-dev-env-docker-symfony-services:
+.. _setup-dev-env-docker-symfony-services:
 
 .. _for-using-enterprise-services-update-parameters-yml-file:
 
@@ -194,7 +211,7 @@ Destroy application services with all the volumes (data will be lost)
 
 For more details, see |Overview of Docker Compose|.
 
-.. _dev-guide-development-practice-setup-dev-env-docker-symfony-using-symfony-server:
+.. _setup-dev-env-docker-symfony-using-symfony-server:
 
 Using a Symfony Server
 ----------------------
@@ -292,3 +309,11 @@ Appears when the Symfony server doesn't pass environment variables from the Dock
 
 Make sure all the application services are up and healthy with ``docker-compose ps``. There should be a redis service in the list.
 If it shows the empty list, run ``docker-compose up -d`` to start all the services.
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+   :maxdepth: 1
+
+   mac
+   ubuntu

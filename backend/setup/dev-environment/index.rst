@@ -30,7 +30,7 @@ Prepare Development Tools
 
 1. |Install Git|.
 
-#. |Install Node.js| to build application assets.
+#. |Install Node.js & NPM| to build application assets.
 
 #. |Install PHPStorm| as the recommended IDE.
 
@@ -93,7 +93,7 @@ Setup Application Environment
 
 If you are using CentOS, you can follow the :ref:`Environment Setup for Community Edition <environment-setup-community>` or :ref:`Environment Setup for Enterprise Edition <environment-setup-enterprise>` to set up the environment for your custom Oro application.
 
-Otherwise, we recommend using :ref:`Docker and Symfony Server <dev-guide-development-practice-setup-dev-env-docker-symfony>`.
+Otherwise, we recommend using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`.
 
 .. _dev-guide-development-practice-setup-dev-env-install-app:
 
@@ -104,7 +104,7 @@ When the environment is set up, follow the instructions in the :ref:`Installatio
 
 .. note::
 
-   In case of using **Docker and Symfony Server**, follow :ref:`this guide <dev-guide-development-practice-setup-dev-env-docker-symfony-install-application>`.
+   In case of using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`, follow :ref:`this guide <setup-dev-env-docker-symfony-install-application>`.
 
 .. _dev-guide-development-practice-setup-dev-env-create-bundle:
 
@@ -126,9 +126,9 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    :hidden:
    :maxdepth: 1
 
-   docker-and-symfony/index
    community-edition
    enterprise-edition
+   docker-and-symfony/index
    web-server-config
    environment-type-based-configuration
    monitoring
