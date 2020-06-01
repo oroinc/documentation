@@ -30,6 +30,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
       <li><a class="tag-important" href="payment-configuration/">Payment Configuration</a></li>
       <li><a class="" href="shipping-configuration/">Shipping Configuration</a></li>
       <li><a class="tag-very-important" href="pricing/">Price Management</a></li>
+      <li><a class="" href="inventory/">Inventory and Warehouse Management</a></li>
       <li><a class="tag-very-important" href="orders/">Order Management</a></li>
       <li><a class="tag-important" href="localization/">Storefront Localization</a></li>
       <li><a class="tag-very-important" href="taxes/">Tax Management</a></li>
@@ -54,6 +55,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    orders/index
    websites/index
    taxes/index
+   inventory/index
    localization/index
    marketing-automation/index
    promotions/index
