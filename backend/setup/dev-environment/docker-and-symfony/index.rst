@@ -31,7 +31,7 @@ To start working with this development stack, you need to install
 locally:
 
 -  |Download PHP|
--  |Download NodeJS|
+-  |Download NodeJS & NPM|
 -  |Download Composer|
 -  |Symfony binary|
 -  |Download Docker|
@@ -71,7 +71,7 @@ Install an Application
 
    .. code:: bash
 
-      symfony composer install
+      symfony composer install -n
 
 
 3. In case, you are using an Enterprise edition application, :ref:`update parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.

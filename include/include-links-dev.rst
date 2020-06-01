@@ -5314,9 +5314,9 @@ Links (Dev)
 
    <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP</a>
 
-.. |Download NodeJS| raw:: html
+.. |Download NodeJS & NPM| raw:: html
 
-   <a href="https://nodejs.org/en/download/" target="_blank">NodeJS</a>
+   <a href="https://nodejs.org/en/download/" target="_blank">NodeJS & NPM</a>
 
 .. |Download Composer| raw:: html
 
