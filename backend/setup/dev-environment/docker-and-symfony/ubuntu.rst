@@ -3,7 +3,7 @@
 Setup on Ubuntu 20.04
 =====================
 
-This guide demonstrates how to setup :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Ubuntu 20.04 LTS.
+This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Ubuntu 20.04 LTS.
 
 Environment Setup
 -----------------
@@ -48,7 +48,7 @@ Environment Setup
       source ~/.bashrc
       symfony server:ca:install
 
-6. Restart the terminal and web browser to make them ready.
+6. Restart the terminal and web browser to get them ready.
 
 What's Next
 -----------
