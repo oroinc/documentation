@@ -3,7 +3,7 @@
 Setup on Mac OS X
 =================
 
-This guide demonstrates how to setup :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Mac OS X.
+This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Mac OS X.
 
 Environment Setup
 -----------------
@@ -43,7 +43,7 @@ Environment Setup
       source ~/.bash_profile
       symfony local:server:ca:install
 
-6. Restart the terminal and web browser to make them ready.
+6. Restart the terminal and web browser to get them ready.
 
 What's Next
 -----------
