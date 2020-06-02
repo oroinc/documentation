@@ -5,6 +5,8 @@
 Warehouses
 ==========
 
+.. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
+
 After you :ref:`created several warehouses <user-guide--inventory--warehouse--create>` in the **Inventory > Warehouses** section, you should enable and prioritize them to ensure that OroCommerce uses the most efficient and recommended strategy for inventory updates that happen during the Store operations.
 
 .. note:: The ability to configure warehouses is only available in the Enterprise edition.
