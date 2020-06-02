@@ -803,3 +803,7 @@ Links (User)
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/oauth-2.0-client-credentials-authorization/#description" target="_blank">OAuth 2.0 Server extension</a>
 
+.. |Marello ERP| raw:: html
+
+   <a href="https://www.marello.com/" target="_blank">Marello ERP</a>
+

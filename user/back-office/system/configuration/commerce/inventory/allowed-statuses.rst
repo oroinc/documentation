@@ -5,6 +5,8 @@
 Allowed Statuses (Inventory Status Constrains)
 ==============================================
 
+.. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
+
 You can control the way product inventory is displayed for your buyers (in the storefront) and sales people (in the back-office). Moreover, you can restrict adding products with particular inventory status to an RFQ, customer order, quote, or a shopping list.
 
 To change the default inventory statuses:
@@ -45,3 +47,5 @@ To change the default inventory statuses:
      b) Click on the inventory status to select/deselect it. Press Shift and click to select/deselect a range of items. Press Ctrl and click to select/deselect multiple items in no particular order.
 
 4. Click **Save**.
+
+Once the default statuses are defined, you can then change the status manually directly from the :ref:`all inventory levels page <user-guide--inventory--manage-levels>` or :ref:`per each product <create-simple-product-inventory>` individually.

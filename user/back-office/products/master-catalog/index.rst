@@ -56,6 +56,8 @@ To create a master catalog category:
 
 6. In the **Products** section, select the items for the category you are creating. Use available filters to narrow down your search and speed up the selection of the necessary product items.
 
+.. _master-catalog-inventory:
+
 7. In the **Default Product Options** section, configure the following settings:
 
    .. image:: /user/img/products/master_catalog/catalog_product_options.png

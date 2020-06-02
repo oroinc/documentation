@@ -173,7 +173,7 @@ In the same way, you can create exclusive sales, season sales on a certain group
 Price Lists Fallback
 ^^^^^^^^^^^^^^^^^^^^
 
-With the fallback option, you enable (or disable) the selected price list's access to the price lists of the higher.
+With the fallback option, you enable (or disable) the selected price list's access to the price lists of the higher priority.
 
 In a default configuration, all customers users have access to all price lists assigned to their customers and the price lists assigned to the customer group that their customer belongs to, as well as to the price lists assigned to the website they are currently browsing and the default price lists configured at the system level.
 
