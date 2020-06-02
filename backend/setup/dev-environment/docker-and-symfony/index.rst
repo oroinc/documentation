@@ -3,16 +3,12 @@
 Docker and Symfony Server
 =========================
 
-Overview
---------
-
 During development, you can use Docker to run various application
 services (MySQL, Postgres, ElasticSearch, RabbitMQ and Redis), but for
 simplicity, performance and reliability have PHP and NodeJS installed
 locally on a host machine.
 
-Development Stack
-~~~~~~~~~~~~~~~~~
+**Development Stack**
 
 -  |Symfony Local Web Server| - used to make you more productive while
    developing applications. This server is not intended for production
@@ -21,18 +17,16 @@ Development Stack
 -  |Docker| - used to run application services.
 -  |Docker Compose| - used to manage them all with a single command.
 
-Setup Environment
------------------
+Set Up the Environment
+----------------------
 
 .. hint::
 
-   There are quick guides for setup Docker and Symfony Server stack on :ref:`Mac OS X <setup-dev-env-docker-symfony_mac>` and :ref:`Ubuntu 20.04 LTS<setup-dev-env-docker-symfony_ubuntu>`.
+   There are quick guides for setup Docker and Symfony Server stack on :ref:`Mac OS X <setup-dev-env-docker-symfony_mac>` and :ref:`Ubuntu 20.04 LTS <setup-dev-env-docker-symfony_ubuntu>`.
 
-Requirements
-~~~~~~~~~~~~
+**Requirements**
 
-To start working with this development stack, you need to install
-locally:
+To start working with this development stack, you need to install locally:
 
 -  |Download PHP|
 -  |Download Node.js & NPM|
@@ -43,23 +37,20 @@ locally:
 
 
 .. note::
-
-   PHP and NodeJS should meet the :ref:`System Requirements <system-requirements>`.
+     PHP and NodeJS should meet the :ref:`System Requirements <system-requirements>`.
 
 .. _setup-dev-env-docker-symfony-recommendations:
 
-Recommendations
-~~~~~~~~~~~~~~~
+**Recommendations**
 
-1. For better performance, it's also recommended installing a symfony
+1. For better performance, it is also recommended to install a symfony
    flex composer plugin globally:
 
    .. code:: bash
 
       composer global require symfony/flex
 
-2. To not reach composer API rate limit and to work with enterprise
-   applications configure |GitHub OAuth token|:
+2. To work with enterprise applications and not reach composer API rate limit, configure |GitHub OAuth token|:
 
    .. code:: bash
 
@@ -67,8 +58,8 @@ Recommendations
 
 .. _setup-dev-env-docker-symfony-install-application:
 
-Install an Application
-----------------------
+Install the Application
+-----------------------
 
 1. Run application services
 
@@ -77,8 +68,7 @@ Install an Application
       docker-compose up -d
 
    .. note::
-
-      On Linux, it may not work if you use Docker as a root user, you should  consider adding your user to the “docker” group with something like:
+        On Linux, it may not work if you use Docker as a root user. In this case, consider adding your user to the “docker” group with:
 
       .. code:: bash
 
@@ -91,7 +81,7 @@ Install an Application
       symfony composer install -n
 
 
-3. In case, you are using an Enterprise edition application, :ref:`update parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
+3. If you are using an Enterprise edition application, :ref:`update the parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
 
    .. code:: bash
 
@@ -107,13 +97,13 @@ Install an Application
 
 .. _for-using-enterprise-services-update-parameters-yml-file:
 
-Using Enterprise Services
--------------------------
+Use Enterprise Services
+-----------------------
 
 For the Enterprise edition of Oro applications, it is recommended to use
 Postgres, ElasticSearch, RabbitMQ, and Redis services.
 
-To enable them, first, you have to update configuration in
+To enable them, you first have to update configuration in
 ``config/parameters.yml``:
 
 .. code:: yaml
@@ -131,8 +121,8 @@ To enable them, first, you have to update configuration in
        redis_dsn_cache: '%env(ORO_REDIS_URL)%/1'
        redis_dsn_doctrine: '%env(ORO_REDIS_URL)%/2'
 
-To automatically update ``parameters.yml`` file from CLI you can also
-use ``composer set-parameters`` command:
+To automatically update ``parameters.yml`` file from CLI, you can also
+use the ``composer set-parameters`` command:
 
 .. code:: bash
 
@@ -143,7 +133,7 @@ use ``composer set-parameters`` command:
 Store Sessions in Redis
 -----------------------
 
-It is not recommended to store sessions in the same redis server as the
+It is not recommended to store sessions on the same redis server as the
 cache, but for testing purpose, you can enable it with the following
 configuration in ``config/parameters.yml``:
 
@@ -154,56 +144,54 @@ configuration in ``config/parameters.yml``:
        redis_dsn_session: '%env(ORO_REDIS_URL)%/0'
 
 
-Managing an Application Services
---------------------------------
+Manage Application Services
+---------------------------
 
 All the application services are defined in ``docker-compose.yml`` file.
-By default ``docker-compose.yml`` file shipped with an application has a
+By default, ``docker-compose.yml`` file shipped with an application has a
 set of recommended services for each application:
 
-For community edition applications its **MySQL**.
+* For community edition applications, it is **MySQL**.
+* For enterprise edition applications, they are: **Postgres**, **ElasticSearch**, **RabbitMQ** and **Redis**.
 
-For enterprise edition applications there are: **Postgres**, **ElasticSearch**, **RabbitMQ** and **Redis**.
-
-Override Docker Compose configuration locally
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Override Docker Compose Configuration Locally
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can use ``docker-compose.override.yml`` file to override Docker
-Compose configuration locally. By default, the file is in
-``.gitignore``.
+Compose configuration locally. By default, the file is in ``.gitignore``.
 
-.. note:: For an enterprise application, to start working with application services, first you have to :ref:`update parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
+.. note:: For an enterprise application, to start working with application services, you first have to :ref:`update the parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
 
-Run application services
-~~~~~~~~~~~~~~~~~~~~~~~~
+Run Application Services
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    docker-compose up -d
 
-Check services logs
-~~~~~~~~~~~~~~~~~~~
+Check Services Logs
+^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    docker-compose logs -f
 
-Check application services status
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CheckApplication Services Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    docker-compose ps
 
-Stop application services (data will not be lost)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Stop Application Services (No Data Loss)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    docker-compose stop
 
-Destroy application services with all the volumes (data will be lost)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Destroy Application Services with all Volumes (Data Loss)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
@@ -213,41 +201,41 @@ For more details, see |Overview of Docker Compose|.
 
 .. _setup-dev-env-docker-symfony-using-symfony-server:
 
-Using a Symfony Server
-----------------------
+Use a Symfony Server
+--------------------
 
 To automatically apply environment variables exposed by Symfony Server
 from Docker Compose and to use the proper PHP version, you should run
 all the symfony application commands using ``symfony console`` instead
-of ``bin/console``. There are also ``symfony composer`` and ``symfony php`` to run composer and php binaries
-using proper PHP version and expose environment variables from application services defined with Docker Compose.
+of ``bin/console``. Use ``symfony composer`` and ``symfony php`` to run composer and php binaries
+using proper PHP version and expose environment variables from the application services defined with Docker Compose.
 
 Start the Symfony Server
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    symfony server:start -d
 
-Open the application in a web browser
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Open the Application in a Browser
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    symfony open:local
 
-Check application logs
-~~~~~~~~~~~~~~~~~~~~~~
+Check Application Logs
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    symfony server:log
 
 Switch PHP version
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
+
 You can have multiple versions of PHP versions locally. To use a
-specific PHP version for the project, go to the project root folder and
-run:
+specific PHP version for the project, go to the project root folder and run:
 
 .. code:: bash
 
@@ -256,42 +244,41 @@ run:
 This will switch the php version to 7.3 for Symfony Server and all the
 console commands wrapped with ``symfony``.
 
-Run message consumer in a background
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Run Message Consumer in the Background
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    symfony run -d php bin/console oro:message-queue:consume -vv
 
-You can also ask symfony to restart the message consumer when some
-change happens in ``src/`` folder:
+You can also ask symfony to restart the message consumer when changes happen in ``src/`` folder:
 
 .. code:: bash
 
    symfony run -d --watch=src php bin/console oro:message-queue:consume -vv
 
-Run Symfony Server in a ``prod`` environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Run Symfony Server in a ``Prod`` Environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    symfony server:start -d --passthru=index.php
 
 Check Symfony Server status
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: bash
 
    symfony server:status
 
-For more details see: |Symfony Local Web Server|.
+For more details, see: |Symfony Local Web Server|.
 
 .. _3-optional-local-domain-names:
 
-Local Domain Names
-------------------
+Enable Local Domain Names
+-------------------------
 
-By default, projects are accessible at some random port of the 127.0.0.1
+By default, projects are accessible at a random port of the 127.0.0.1
 local IP.
 
 You can enable local domains by |setting up the Local Proxy|.
@@ -302,19 +289,19 @@ You can enable local domains by |setting up the Local Proxy|.
 Troubleshooting
 ---------------
 
-Environment variable not found: "ORO_REDIS_URL"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Environment variable not found: "ORO_REDIS_URL"**
 
-Appears when the Symfony server doesn't pass environment variables from the Docker Compose to an application.
+This error appears when the Symfony server does not pass environment variables from the Docker Compose to the application.
 
-Make sure all the application services are up and healthy with ``docker-compose ps``. There should be a ``redis`` service in the list.
-If it shows the empty list, run ``docker-compose up -d`` to start all the services.
+Make sure that all the application services are up and healthy with ``docker-compose ps``. There should be a ``redis`` service in the list.
 
-An exception occured while establishing a connection to figure out your platform version
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If the list is empty, run ``docker-compose up -d`` to start all the services.
+
+**An exception occured while establishing a connection to figure out your platform version**
 
 Make sure all the application services are up and healthy with ``docker-compose ps``. There should be ``pgsql`` or ``mysql`` service in the list.
-If it shows the empty list, run ``docker-compose up -d`` to start all the services.
+
+If the list is empty, run ``docker-compose up -d`` to start all the services.
 
 .. toctree::
    :titlesonly:
