@@ -138,6 +138,8 @@ Custom maintenance page, web backend prefix, and consumers debug mode can be con
 
 .. note:: ``/mnt/ocom/app/www`` is the application root path for the `OroCommerce` application type. For `OroCRM`, use the ``/mnt/ocrm/app/www`` path. The `maintenance.html` file should be available in application repository in the specified path. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 30 minutes.
 
+.. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to Service Desk before making any change. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``cache:rebuild`` to change the value in the application’s parameters.yml file.
+
 Webserver Configuration
 -----------------------
 
@@ -236,42 +238,241 @@ Webserver configuration can be modified, as illustrated below:
           log_level     : '1'
           log_path      : '/var/log/blackfire/agent.log'
 
-* **redirects_map** — the hash where the key is an old URL, and the value is a new URL
-* **locations** — the hash of hashes. The top key is location name; the lower keys are:
 
-   * `type` — location type. Possible values are 'php', 'static', 'rewrite'.
-   * `location` — location URI. The value may have regular expressions and modifiers as it is used in the NginX location directive.
+Redirects Configuration
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This configuration option enables you to setup redirects to the existing URLs of OroCloud application.
+
+* **redirects_map** — the hash where the key is an old URL, and the value is a new URL.
+
+Locations Configuration
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This configuration option is used to manage locations.
+
+* **locations** — the hash of hashes. The top key is the location name; the lower keys are:
+
+   * `type` — location type. Possible values are ``php``, ``static``, ``rewrite``.
+   * `location` — location URI. The value may have regular expressions and modifiers, as it is used in the Nginx location directive.
    * `fastcgi_param` — the hash for php-specific custom variables.
    * `auth_basic_enable` — a boolean trigger for HTTP basic authentication.
-   * `auth_basic_userlist` — the hash of hashes with user name as a key and mandatory nested keys:
 
-      * `ensure` — ensure if user is **present** or **absent**.
-      * `password` — a plain text user password.
+      * `auth_basic_userlist` — the hash of hashes with a user name as a key and mandatory nested keys:
 
-   * `allow` — an array of IP addresses or network masks allowed to access location. Use one record per line or 'any' to allow access from anywhere.
-   * `deny` — an array of IP addresses or network masks denied to access location. Use one record per line or 'any' to deny access from anywhere.
-* **access_policy** — the hash of hashes used to configure Web Application Firewall. The policy type may by default be set to 'allow' or 'deny', except for the user agent policy which may only be 'allow'.
+          * `ensure` — ensures if the user is **present** or **absent**.
+          * `password` — a plain text user password.
 
-   * `ip` — configure access limitations for a single IP address or network.
-   * `country` — allow or deny access from some countries using GeoIP database.
-   * `ua` — allow or deny access for specific user agents.
-   * `uri` — set access permissions for a specific URI.
-* **limit_whitelist** — configure IP address/range whitelist for NginX limit_req module.
-* **limit_whitelist_uri** — configure URI whitelist for NginX limit_req module.
-* **blackfire_options** — the hash used to configure Blackfire agent on environment
+   * `allow` — an array of IP addresses or network masks allowed to access location. Use one record per line or ``any`` to allow access from anywhere.
+   * `deny` — an array of IP addresses or network masks denied to access location. Use one record per line or ``any`` to deny access from anywhere.
 
-   * `agent_enabled` — a boolean trigger for Blackfire installation
-   * `server_id` — server ID string. Refer your Blackfire account to this value.
-   * `server_token` — server token string. Refer your Blackfire account to this value.
-   * `log_level` — Blackfire agent log verbosity.
-   * `log_path` — path to the log file location.
+OroCloud WAF Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Approach
+~~~~~~~~
+
+OroCloud provides two ways to protect the application from big amounts of requests which can cause denial of service. There are two layers of protection used by the OroCloud application which are illustrated in the diagram below:
+
+.. image:: /cloud/img/cloud/protection_layers.png
+   :alt: Protection layers used by the OroCloud application
+   :scale: 60%
+
+Requests Filtering
+~~~~~~~~~~~~~~~~~~
+
+This layer is responsible for filtering HTTP requests depending on their sources. The requests can come from certain:
+
+* IP addresses or networks
+* Countries
+* User Agents
+
+The rules used by this firewall are defined in the ``access_policy`` section of the `orocloud.yaml` file and are explained below. The HTTP request dropped at this layer of protection has HTTP status 451 which is “Unavailable For Legal Reasons”.
+
+Robot Detection
+"""""""""""""""
+
+The application drops requests from the user agents which do not support JS effectively protecting from the simple robots. Any request from a client (browser, robot, etc.), which do not support cookies and JS, is dropped with HTTP status 451, and this client is redirected to the error page. It is possible to whitelist specific user agents using the rules described below.
+
+Rate Limiting Request
+~~~~~~~~~~~~~~~~~~~~~
+
+On this layer, WAF performs rate limiting to detect crawling robots and excessive HTTP requests using the following mechanisms.
+
+Rate limiting algorithm uses 3 parameters: ``rate limit``, ``delay``, and ``burst``. It groups requests by the source IP and destination URI and throttles them to the ``rate limit`` if there are more than a ``delay`` requests per second for a given group of requests. Nginx drops all consequent requests from a group if their amount is bigger than the ``burst`` value. The exact values of these parameters depend on the grouping factor (IP, URI, etc.).
+
+HTTP request dropped at this layer of protection has HTTP status 451 “Unavailable For Legal Reasons”. It is possible to define exceptions for rate limiting using the ``limit_whitelist`` and ``limit_whitelist_uri`` sections of the `orocloud.yaml` file.
+
+Rules Definition
+~~~~~~~~~~~~~~~~
+
+WAF Rules
+"""""""""
+
+Rules to manage HTTP requests filtering are defined in the following sections of the `orocloud.yaml` file.
+
+Before implementing changes in this file on production, you should always test it at the environment stage  to avoid issues with live application. Also, you can use the following command to check the correctness of the file syntax afterwards:
+
+.. code-block:: none
+    :linenos:
+
+    ssh user@main_node_ip 'cat /mnt/ocom/app/orocloud.yaml' | yamllint -
+
+Source filtering rules are defined in the ``webserver`` section. This is the child element of the ``orocloud_options`` data structure. Here is an example of rules definitions:
+
+.. code-block:: none
+    :linenos:
+
+    access_policy:
+          'ip':
+            'type'  : 'allow'
+            'allow' :
+              - '127.0.0.1'
+              - '192.168.0.1'
+              - '172.16.0.0/16'
+            'deny'  :
+              - '10.0.0.1'
+          'country':
+            'type'  : 'deny'
+            'allow' :
+              - 'US'
+              - 'CA'
+          'ua':
+            'allow' :
+              - 'GoogleStackdriverMonitoring'
+              - 'Some Custom agent'
+            'deny'  :
+              - 'AcoiRobot'
+              - 'Wget'
+          'uri':
+            'allow' :
+              - '~(^/api/(.*))'
+
+``access_policy`` --- The hash of hashes provides the ability to manage Oro Web Application Firewall and allow or deny requests depending on the source address, source country, user agent, and URI.
+
+All rejected requests receive status 451.
+
+The following hashes can be used:
+
+* ``ip`` — the hash defines the rules for the source IP filtering.
+* ``country`` — the hash defines rules for the originating country filtering. The value of `type` key defines if the hash contains the allowed or prohibited countries. Country must be defined by ISO 3166 Alpha1 code. GeoIP database is used to define a country from the source IP.
+
+An example of the rule to allow only the defined countries:
+
+.. code-block:: none
+   :linenos:
+
+   'country':
+     'type'  : 'deny'
+     'allow' :
+       - 'US'
+       - 'CA'
+
+In this example, only the requests from the USA and Canada are allowed. All other requests are rejected.
+
+An example of the rule to deny requests from the defined countries:
+
+.. code-block:: none
+   :linenos:
+
+   'country':
+     'type'  : 'allow'
+     'deny' :
+       - 'CN'
+       - 'RU'
+
+In this example, all requests from China and Russia are to be rejected.
+
+* ``ua`` --- The hash provides the ability to allow or deny requests from the specific user agents. A user agent is defined by the regexp string. There are two possible lists for this hash: ``allow`` and ``deny`` to allow or deny requests from the listed user agents correspondingly.
+
+An example of the user agent rule:
+
+.. code-block:: none
+   :linenos:
+
+   'ua':
+     'allow' :
+       - 'GoogleStackdriverMonitoring'
+       - 'Some Custom agent'
+     'deny'  :
+       - 'AcoiRobot'
+       - 'Wget'
+
+
+This example allows requests from the ``GoogleStackdriverMonitoring`` user agent and rejects all requests from ``AcoiRobot`` and ``Wget``.
+
+
+* ``uri`` --- The hash provides the ability to allow requests to the specific URI and override the rules defined by other hashes in ``access_policy``. URI can be defined by standard regexp.
+
+An example of the URI rule:
+
+.. code-block:: none
+   :linenos:
+
+   'uri':
+     'allow' :
+       - '~(^/api/(.*))'
+
+This example allows any requests to the URI which fits ``~(^/api/(.*))`` regex overriding any rule defined for IP, country, and/or user agent.
+
+Request Rate Limit Rules
+""""""""""""""""""""""""
+
+There are two lists to allow any rate of requests for the specific IPs or to the specific URIs. They are the child elements of the ``webserver`` data structure.
+
+Here is an example:
+
+.. code-block:: none
+   :linenos:
+
+   limit_whitelist:
+     - '8.8.8.8'
+     - '10.1.0.0/22'
+   limit_whitelist_uri:
+     - '~(^/admin/test/(.*))'
+
+``limit_whitelist`` --- The list contains source IPs and subnets which are allowed to send requests to the application with any rate. This can be used to whitelist some service IPs which need to perform many requests, e.g., for load testing.
+
+An example of the whitelist:
+
+.. code-block:: none
+   :linenos:
+
+   limit_whitelist:
+     - '8.8.8.8'
+     - '10.1.0.0/22'
+
+This rule allows unlimited rate of requests from IP 127.0.0.1 (local host) and subnet 10.1.0.0/22.
+
+``limit_whitelist_uri`` ---  The list contains regular expressions to define URI of the application which must not be limited by request rate. This can be used to whitelist URIs that need to receive many requests, e.g., integration URI.
+
+An example of the whitelist:
+
+.. code-block:: none
+   :linenos:
+
+   limit_whitelist_uri:
+     - '~(^/admin/test/(.*))'
+
+This rule allows the unlimited rate of requests to URI containing the /admin/test/ string.
 
 .. note:: Allowing access via WAF does not affect simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connectios for a client IP or URI on the server.
 
 Profiling Application Console Commands via Blackfire
 ----------------------------------------------------
 
-You can profile application console commands:
+The configuration option enables you to configure Blackfire.
+
+``blackfire_options`` --- The hash is used to configure the Blackfire agent on environment
+
+   * `agent_enabled` — a boolean trigger for Blackfire installation
+   * `server_id` — a server ID string. Refer your Blackfire account to this value.
+   * `server_token` — a server token string. Refer your Blackfire account to this value.
+   * `log_level` — Blackfire agent log verbosity.
+   * `log_path` — a path to the log file location.
+
+
+You can then profile the application console commands via configured Blackfire:
 
 .. code-block:: none
     :linenos:
@@ -417,7 +618,7 @@ You can use separate synonym lists for each index, or use '*' as index name in o
 Environments Data Synchronization
 ---------------------------------
 
-Cloud-based environments may be syncronized by a user without filing a request to the support team.
+Cloud-based environments may be synchronized by a user without filing a request to the support team.
 
 To retrieve a list of the environments to which you can sync the sanitized data from the current environment, run the following command:
 
