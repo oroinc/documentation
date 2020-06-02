@@ -803,5 +803,8 @@ Links (User)
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-dpd-integration/" target="_blank">DPD extension</a>
 
+.. |Marello ERP| raw:: html
+
+   <a href="https://www.marello.com/" target="_blank">Marello ERP</a>
 
 

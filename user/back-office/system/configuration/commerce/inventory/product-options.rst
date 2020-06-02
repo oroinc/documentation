@@ -7,7 +7,9 @@
 Product Options
 ===============
 
-You can control the way product inventory is managed for every product in the OroCommerce product catalog on three levels -- globally, :ref:`per organization <sys--conf--commerce--inventory--product-options--organization>` and :ref:`per website <sys--conf--commerce--inventory--product-options--website>`.
+.. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
+
+You can control the way product inventory is managed for every product in the OroCommerce product catalog on multiple levels -- globally, :ref:`per organization <sys--conf--commerce--inventory--product-options--organization>`, :ref:`per website <sys--conf--commerce--inventory--product-options--website>`, :ref:`per product <create-simple-product-inventory>`, and :ref:`per master catalog category <master-catalog-inventory>`.
 
 To customize the default product options globally:
 

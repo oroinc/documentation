@@ -6,6 +6,8 @@
 Warehouses
 ==========
 
+.. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
+
 Create a Warehouse
 ------------------
 
@@ -57,6 +59,7 @@ You can perform the following actions here:
 
 * :ref:`Inventory <user-guide--inventory>`
 * :ref:`Configure System-wide Inventory <configuration--guide--commerce--inventory>`
+* :ref:`Configure Organization-specific Inventory <configuration--commerce--inventory-organization>`
 * :ref:`Configure Website-specific Inventory <configuration--commerce--inventory-website>`
 
 .. include:: /include/include-images.rst

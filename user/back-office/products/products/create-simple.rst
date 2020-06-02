@@ -88,6 +88,8 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
    * **Meta Title** --- Enter the meta title for the product. A meta title is what is seen by search engine users and helps a search engine to index the page.
    * **Meta Description** --- Enter the meta description for the product. A meta description summarizes a page content. Search engines show a meta description in search results if they see the searched phrase in the description.
 
+.. _create-simple-product-inventory:
+
 13. In the **Inventory** section, provide the following information:
 
    .. start_inventory

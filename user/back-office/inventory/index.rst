@@ -11,6 +11,8 @@
 Inventory
 =========
 
+.. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
+
 Inventory helps you track the availability of your product in one or more warehouses, display it for the buyer and sales people, and automatically adjust it after every operation in the Oro application. You can create one or more warehouses, configure inventory management options, manage product inventory status and track product quantities in every warehouse.
 
 .. note:: Community Edition enables you to create one warehouse, while Enterprise Edition (EE) offers multi-warehouse management feature and allows sellers to add an unlimited number of warehouses.
@@ -32,6 +34,7 @@ Learn more about warehouses and inventory in the following topics:
 **Related Topic**:
 
 * :ref:`Configure System-wide Inventory <configuration--guide--commerce--inventory>`
+* :ref:`Configure Organization-specific Inventory <configuration--commerce--inventory-organization>`
 * :ref:`Configure Website-specific Inventory <configuration--commerce--inventory-website>`
 
 .. include:: /include/include-links-user.rst
