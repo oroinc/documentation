@@ -307,7 +307,13 @@ Environment variable not found: "ORO_REDIS_URL"
 
 Appears when the Symfony server doesn't pass environment variables from the Docker Compose to an application.
 
-Make sure all the application services are up and healthy with ``docker-compose ps``. There should be a redis service in the list.
+Make sure all the application services are up and healthy with ``docker-compose ps``. There should be a ``redis`` service in the list.
+If it shows the empty list, run ``docker-compose up -d`` to start all the services.
+
+An exception occured while establishing a connection to figure out your platform version
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Make sure all the application services are up and healthy with ``docker-compose ps``. There should be ``pgsql`` or ``mysql`` service in the list.
 If it shows the empty list, run ``docker-compose up -d`` to start all the services.
 
 .. toctree::
