@@ -61,7 +61,9 @@ To start working with this development stack, you need to install locally:
 Install the Application
 -----------------------
 
-1. Run application services
+1. :ref:`Get the Oro application source code <installation--get-files>` and go to the application folder.
+
+2. Run application services
 
    .. code:: bash
 
@@ -74,20 +76,20 @@ Install the Application
 
          sudo usermod -aG docker your-user
 
-2. Install application dependencies
+3. Install application dependencies
 
    .. code:: bash
 
       symfony composer install -n
 
 
-3. If you are using an Enterprise edition application, :ref:`update the parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
+4. If you are using an Enterprise edition application, :ref:`update the parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
 
    .. code:: bash
 
       composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
 
-4. Install Oro application
+5. Install Oro application
 
    .. code:: bash
 
