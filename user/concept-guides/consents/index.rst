@@ -60,7 +60,7 @@ Learn more on the configuration and localization of consents in OroCommerce in t
 * :ref:`Localize Consents <user-guide--consents--localizing-consents>`
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
-* :ref:`Add a Cookie Banner to the Website <user-guide--consents--cookie-banner>`
+* :ref:`Add a Cookie Banner to the Website <bundle-docs-commerce-consent-bundle-cookie-banner>`
 
 **Related Topics**
 
@@ -81,4 +81,3 @@ Learn more on the configuration and localization of consents in OroCommerce in t
    add-consent
    localize-consents
    accepted-consents-report
-   cookie-banner

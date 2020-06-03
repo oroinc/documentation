@@ -59,7 +59,7 @@ To create a :term:`consent <Consent>` in OroCommerce:
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 * :ref:`Build Reports with Accepted Consents <user-guide-reports-accepted-consents>`
-* :ref:`Add a Cookie Banner to the Website <user-guide--consents--cookie-banner>`
+* :ref:`Add a Cookie Banner to the Website <bundle-docs-commerce-consent-bundle-cookie-banner>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

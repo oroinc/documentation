@@ -1,6 +1,4 @@
-.. _user-guide--consents--cookie-banner:
-
-:oro_documentation_types: OroCommerce
+.. _bundle-docs-commerce-consent-bundle-cookie-banner:
 
 Add a Cookie Banner to the Website
 ==================================
