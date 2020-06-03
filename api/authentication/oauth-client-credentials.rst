@@ -59,4 +59,16 @@ Response Body
         "access_token": "your access token"
     }
 
+The received access token can be used multiple times until it expires. A new token should be requested once
+the previous token expires.
+
+An example of an API request:
+
+.. code-block:: http
+    :linenos:
+
+    GET /api/users HTTP/1.1
+    Content-Type: application/vnd.api+json
+    Authorization: Bearer your access token
+
 .. note:: Access tokens for back-office and storefront API are not interchangeable. If you attempt to request data for the storefront API with a token generated for the back-office application, access will be denied.

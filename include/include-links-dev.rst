@@ -3569,9 +3569,21 @@ Links (Dev)
 
    <a href="https://oauth.net/2/" target="_blank">OAuth 2.0</a>
 
-.. |OroOAuth2ServerBundle| raw:: html
+.. |thephpleague/oauth2-server| raw:: html
 
-   <a href="https://github.com/oroinc/oauth2-server/tree/master" target="_blank">OroOAuth2ServerBundle</a>
+   <a href="https://github.com/thephpleague/oauth2-server" target="_blank">thephpleague/oauth2-server</a>
+
+.. |OAuth 2.0 Server Client Credentials Grant| raw:: html
+
+   <a href="https://oauth2.thephpleague.com/authorization-server/client-credentials-grant/" target="_blank">OAuth 2.0 Server Client Credentials Grant</a>
+
+.. |OAuth 2.0 Server Resource Owner Password Credentials Grant| raw:: html
+
+   <a href="https://oauth2.thephpleague.com/authorization-server/resource-owner-password-credentials-grant/" target="_blank">OAuth 2.0 Server Resource Owner Password Credentials Grant</a>
+
+.. |Generating public and private keys| raw:: html
+
+   <a href="https://oauth2.thephpleague.com/installation/#generating-public-and-private-keys" target="_blank">Generating public and private keys</a>
 
 .. |OAuth 2.0 Client Credentials Grant| raw:: html
 

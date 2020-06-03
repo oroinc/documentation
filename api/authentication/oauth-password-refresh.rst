@@ -64,3 +64,6 @@ Response Body
         "access_token": "your new access token",
         "refresh_token" "your new refresh token"
     }
+
+If your refresh token expires, send a request to the access token with Password grant type to get new
+access and refresh tokens.

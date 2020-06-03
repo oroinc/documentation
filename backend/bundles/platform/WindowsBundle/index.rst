@@ -1,6 +1,6 @@
 :oro_show_local_toc: false
 
-.. _bundle-docs-platform-workflows-bundle:
+.. _bundle-docs-platform-windows-bundle:
 
 OroWindowsBundle
 ================

@@ -65,6 +65,19 @@ Response Body
         "refresh_token" "your refresh token"
     }
 
+The received access token can be used multiple times until it expires.
+
+An example of an API request:
+
+.. code-block:: http
+    :linenos:
+
+    GET /api/users HTTP/1.1
+    Content-Type: application/vnd.api+json
+    Authorization: Bearer your access token
+
 .. note:: Access tokens for back-office and storefront API are not interchangeable. If you attempt to request data for the storefront API with a token generated for the back-office application, access will be denied.
 
-.. note:: To get the access token for a customer visitor for storefront API, use ``guest`` as `username` and `password` in the request to the authorization server.
+.. note:: For the storefront API a customer user email address should be used as `username`.
+
+.. note:: To get the access token for a customer visitor for storefront API, use ``guest`` as `username` and `password` in the request to the authorization server. A new customer visitor is created for each created access token.

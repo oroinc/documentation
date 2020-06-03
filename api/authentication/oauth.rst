@@ -14,8 +14,8 @@ OAuth Authentication
 while providing specific authorization flows for web applications, desktop applications, mobile phones,
 and living room devices.
 
-It is implemented by the |OroOAuth2ServerBundle| that supports |OAuth 2.0 Client Credentials Grant|
-and |OAuth 2.0 Password Grant|.
+It is implemented by the :ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>` that supports
+|OAuth 2.0 Client Credentials Grant| and |OAuth 2.0 Password Grant|.
 
 For more details, see :ref:`Manage OAuth Applications <oauth-applications>`
 and :ref:`Manage Storefront OAuth Applications <storefront-oauth-app>`.
@@ -37,6 +37,11 @@ Generate Tokens
     to the server. Please contact your administrator if you see the following error message:
 
     *The encryption key does not exist.*
+
+.. note::
+
+    If the system has the customer portal package installed, OAuth authorization for customer users
+    to the storefront API resources is enabled automatically.
 
 
 .. include:: /include/include-links-dev.rst
