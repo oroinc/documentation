@@ -24,7 +24,7 @@ Learn how to configure localization options, currency and tracking, as well as u
 
 
 :ref:`Integrations <configuration--guide--system--configuration--integrations>`
----------------------------------------------------------------------------f----
+-------------------------------------------------------------------------------
 
 * :ref:`Google Settings <admin-configuration-integrations-google>`
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
