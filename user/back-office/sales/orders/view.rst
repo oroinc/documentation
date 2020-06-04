@@ -110,7 +110,7 @@ Within **All Promotions**, you can view:
 * Coupon codes added manually
 
 .. note::
-    Promotions can be displayed for an order via REST API, in which case the following message is displayed:
+    Promotions can be disabled for an order via REST API, in which case the following message is displayed:
 
     *Promotions are disabled for the order.*
 

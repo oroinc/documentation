@@ -10,7 +10,7 @@ You can view discounts applied to a specific order under the dedicated **Promoti
 Within **All Promotions**, you can view promotions and coupon codes.
 
 .. note::
-    Promotions can be displayed for an order via REST API, in which case the following message is displayed:
+    Promotions can be disabled for an order via REST API, in which case the following message is displayed:
 
     *Promotions are disabled for the order.*
 
