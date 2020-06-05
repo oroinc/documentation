@@ -1,5 +1,3 @@
-:orphan:
-
 .. _platform--installation--source-files:
 .. _installation--get-files:
 

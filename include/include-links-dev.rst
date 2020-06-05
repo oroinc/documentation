@@ -244,9 +244,9 @@ Links (Dev)
 
    <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Install Git</a>
 
-.. |Install Node.js| raw:: html
+.. |Install Node.js & NPM| raw:: html
 
-   <a href="https://nodejs.org/en/download/package-manager/" target="_blank">Install Node.js</a>
+   <a href="https://nodejs.org/en/download/package-manager/" target="_blank">Install Node.js & NPM</a>
 
 .. |Node.js official website| raw:: html
 
@@ -5317,3 +5317,53 @@ Links (Dev)
 .. |TaxProviderInterface| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/TaxBundle/Provider/TaxProviderInterface.php" target="_blank">TaxProviderInterface</a>
+
+.. |Symfony Local Web Server| raw:: html
+
+   <a href="https://symfony.com/doc/current/setup/symfony_server.html" target="_blank">Symfony Local Web Server</a>
+
+.. |Docker| raw:: html
+
+   <a href="https://www.docker.com/" target="_blank">Docker</a>
+
+.. |Download Docker| raw:: html
+
+   <a href="https://docs.docker.com/get-docker" target="_blank">Docker</a>
+
+.. |Docker Compose| raw:: html
+
+   <a href="https://docs.docker.com/compose/" target="_blank">Docker Compose</a>
+
+.. |Install Docker Compose| raw:: html
+
+   <a href="https://docs.docker.com/compose/install/" target="_blank">Docker Compose</a>
+
+.. |Download PHP| raw:: html
+
+   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP</a>
+
+.. |Download Node.js & NPM| raw:: html
+
+   <a href="https://nodejs.org/en/download/" target="_blank">Node.js & NPM</a>
+
+.. |Download Composer| raw:: html
+
+   <a href="https://getcomposer.org/download/" target="_blank">Composer</a>
+
+.. |Symfony binary| raw:: html
+
+   <a href="https://symfony.com/download" target="_blank">Symfony binary</a>
+
+.. |GitHub OAuth token| raw:: html
+
+   <a href="https://getcomposer.org/doc/06-config.md#github-oauth" target="_blank">GitHub OAuth token</a>
+
+.. |Overview of Docker Compose| raw:: html
+
+   <a href="https://docs.docker.com/compose/" target="_blank">Overview of Docker Compose</a>
+
+.. |setting up the Local Proxy| raw:: html
+
+   <a href="https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy" target="_blank">setting up the Local Proxy</a>
+
+
