@@ -1,7 +1,7 @@
 :oro_documentation_types: OroCommerce
 
-Storefront Localization and Translation
-=======================================
+Storefront Localization and Translation Concept Guide
+=====================================================
 
 In the Oro application, you can provide the translation for all the content elements of your storefront (e.g., product names, descriptions, catalog titles, SEO attributes, and product attribute labels, etc.).
 

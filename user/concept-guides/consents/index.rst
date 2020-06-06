@@ -2,8 +2,8 @@
 
 :oro_documentation_types: OroCommerce
 
-Consent Management
-==================
+Consent Management Concept Guide
+================================
 
 GDPR Principles
 ---------------

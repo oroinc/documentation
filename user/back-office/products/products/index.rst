@@ -2,8 +2,8 @@
 
 .. _doc--products--before-you-begin:
 
-Products
-========
+Manage Products in the Back-Office
+==================================
 
 .. begin_product_configuration
 
@@ -61,7 +61,7 @@ Once you have created products, you can:
    managing-product-visibility
    import-products
    export-products
-   product-units/index
+   Product Units <product-units/index>
 
 
 

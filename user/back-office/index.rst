@@ -97,17 +97,17 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
    :hidden:
    :maxdepth: 1
 
-   getting-started/index
-   dashboards/index
-   customers/index
-   sales/index
-   products/index
-   marketing/index
-   taxes/index
-   inventory/index
-   activities/index
-   reports-segments/index
-   system/index
+   Getting Started <getting-started/index>
+   Dashboard <dashboards/index>
+   Customers <customers/index>
+   Sales <sales/index>
+   Products <products/index>
+   Marketing <marketing/index>
+   Taxes <taxes/index>
+   Inventory <inventory/index>
+   Activities <activities/index>
+   Reports and Segments <reports-segments/index>
+   System <system/index>
 
 .. include:: /include/include-images.rst
    :start-after: begin

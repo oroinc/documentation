@@ -8,8 +8,8 @@
 
 .. _user-guide--inventory:
 
-Inventory
-=========
+Manage Inventory in the Back-Office
+===================================
 
 .. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
 
@@ -44,7 +44,7 @@ Learn more about warehouses and inventory in the following topics:
    :hidden:
    :titlesonly: 
 
-   create
-   manage-levels
+   Warehouses <create>
+   Manage Inventory Levels <manage-levels>
    export
    import

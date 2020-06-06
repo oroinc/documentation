@@ -5,8 +5,8 @@
 .. meta::
    :description: Sales, leads, opportunities, orders, quotes, and price lists management guides for the OroCommerce and OroCRM back-office users
 
-Sales
-=====
+Manage Sales in the Back-Office
+===============================
 
 OroCommerce and OroCRM are a best-of-suite product package for eCommerce companies, especially those with a strong focus on B2B eCommerce. They are typically implemented as a single end-to-end solution and support virtually any business case related to eCommerce business development.
 
@@ -18,15 +18,15 @@ You can find more in-depth information on all Oro sales tools below:
    :maxdepth: 1
    :titlesonly:
 
-   leads/index
-   opportunities/index
-   shopping-lists/index
-   rfq/index
-   quotes/index
-   orders/index
-   price-lists/index
-   payment-terms/index
-   sales-territories
+   Leads <leads/index>
+   Opportunities <opportunities/index>
+   Shopping Lists <shopping-lists/index>
+   Request for Quote (RFQ) <rfq/index>
+   Quotes <quotes/index>
+   Orders <orders/index>
+   Price Lists <price-lists/index>
+   Payment Terms <payment-terms/index>
+   Sales Territories <sales-territories>
 
 
 

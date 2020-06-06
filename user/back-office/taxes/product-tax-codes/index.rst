@@ -2,8 +2,8 @@
 
 .. _taxes--product-tax-code:
 
-Product Tax Codes
-=================
+Manage Product Tax Codes in the Back-Office
+===========================================
 
 .. begin
 

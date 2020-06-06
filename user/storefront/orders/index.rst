@@ -5,8 +5,8 @@
 
 .. _frontstore-guide--orders:
 
-Orders
-======
+Manage Orders in the Storefront
+===============================
 
 There are two ways to create an :term:`order <Order>` in the storefront:
 

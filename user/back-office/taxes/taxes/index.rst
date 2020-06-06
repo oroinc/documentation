@@ -2,8 +2,8 @@
 
 .. _user-guide--taxes--tax-rates:
 
-Taxes (Tax Rates)
-=================
+Manage Taxes (Tax Rates) in the Back-Office
+===========================================
 
 .. begin
 

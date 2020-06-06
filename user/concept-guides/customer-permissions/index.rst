@@ -2,8 +2,8 @@
 
 .. _concept-guide-customers-permissions:
 
-Customer Permissions
-====================
+Customer Permissions Concept Guide
+==================================
 
 Customer user roles have predefined sets of permissions and access levels. Roles are designed to give their owners a particular area of responsibility which defines what users can and cannot do within the website. Usually, roles are created based on the job responsibilities of specific users: a sales manager, a marketing team member, or an administrator. It is possible to create as many roles as required and configure them according to the needs of your company.
 

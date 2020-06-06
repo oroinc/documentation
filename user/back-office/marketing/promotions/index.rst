@@ -1,7 +1,7 @@
 :oro_documentation_types: OroCommerce
 
-Promotions
-==========
+Manage Promotions and Coupons in the Back-Office
+================================================
 
 .. important:: This section is a part of the :ref:`Promotion Management <concept-guides--promotion-management>` topic that provides the general understanding of the promotions and coupons concept.
 
@@ -22,5 +22,5 @@ Learn more in the topics below:
 .. toctree::
    :maxdepth: 1
 
-   promotions/index
-   coupons/index
+   Promotions <promotions/index>
+   Coupons <coupons/index>

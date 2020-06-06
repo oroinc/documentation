@@ -2,8 +2,8 @@
 
 .. _user-guide--sales--requests-for-quote:
 
-Request for Quote (RFQ)
-=======================
+Manage Request for Quotes (RFQ) in the Back-Office
+==================================================
 
 :term:`RFQs (Requests for quotes) <Request for Quote>` are used by sales representatives to assist customers and meet their needs through negotiations on a better price, more convenient quantities of products, or additional services. Once a customer submits a request for quotes in the Oro storefront, it immediately becomes available in the Oro back-office.
 

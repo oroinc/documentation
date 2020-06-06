@@ -4,8 +4,8 @@
 
 .. updated on 19 October 2018
 
-Marketing Campaigns
-===================
+Manage Marketing Campaigns in the Back-Office
+=============================================
 
 Marketing Campaign records in Oro application are used to capture general details of the campaign and monitor key metrics. Metrics can include leads generated, pages visited, or any other metrics necessary to quantify results of the marketing effort.
 

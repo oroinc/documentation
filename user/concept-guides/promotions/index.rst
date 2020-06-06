@@ -2,8 +2,8 @@
 
 .. _concept-guides--promotion-management:
 
-Promotion Management
-====================
+Promotion Management Concept Guide
+==================================
 
 Loyalty programs, discounts, and other :ref:`promotions <user-guide--marketing--promotions>` are an intelligent marketing tool that helps companies generate more revenue, increase purchase frequency, elevate brand image, and drive customer satisfaction. OroCommerce offers a promotions engine that supports several promotion types and coupon campaigns that enable you to:
 

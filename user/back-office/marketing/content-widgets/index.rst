@@ -3,8 +3,8 @@
 .. _user-guide--landing-pages--marketing--content-widgets:
 .. _content-widgets-user-guide:
 
-Content Widgets
-===============
+Manage Content Widgets in the Back-Office
+=========================================
 
 Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. :ref:`WYSIWYG fields <getting-started-wysiwyg-editor-field>` are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
 

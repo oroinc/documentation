@@ -3,8 +3,8 @@
 .. _user-guide--master-catalog:
 .. _user-guide--products--master-catalog:
 
-Master Catalog
-==============
+Manage Master Catalog in the Back-Office
+========================================
 
 .. important:: This section is a part of the :ref:`Master Catalog <concept-guide-master-catalog>` concept guide topic that provides the general understanding of the master catalog concept in OroCommerce.
 

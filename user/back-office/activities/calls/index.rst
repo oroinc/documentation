@@ -3,8 +3,8 @@
 .. _doc-activities-calls:
 .. _doc-activities-overview-calls:
 
-Calls
-=====
+Manage Calls in the Back-Office
+===============================
 
 For those users who make and receive many calls per day and communicate with clients by phone, Oro provides call tracking tool to record any call-related details, such as the subjects of calls, people involved, and even call duration. This is especially helpful to managers who can monitor the progress of important tasks and see if all key contacts have received enough attention.
 

@@ -5,8 +5,8 @@
 .. _doc-activities-tasks-actions-add:
 .. _doc-activities-tasks-actions-add-fromgrid:
 
-Tasks
-=====
+Create and Manage Tasks in the Back-Office
+==========================================
 
 .. toctree::
    :maxdepth: 1

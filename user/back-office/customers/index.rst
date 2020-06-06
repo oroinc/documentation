@@ -6,8 +6,8 @@
    :description: Extensive documentation on accounts, contacts, customers, customer groups, customer users, and user roles management for the OroCommerce and OroCRM back-office users
 
 
-Customers
-=========
+Manage Customer Entities in the Back-Office
+===========================================
 
 .. important:: This section is a part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
 
@@ -30,10 +30,10 @@ Below is an illustration of the account hierarchy where CRM-related concepts are
    :titlesonly:
    :maxdepth: 1
 
-   accounts/index
-   contacts/index
-   customers/index
-   customer-groups/index
-   customer-users/index
-   customer-user-roles/index
-   business-customers/index
+   Accounts <accounts/index>
+   Contacts <contacts/index>
+   Customers <customers/index>
+   Customer Groups <customer-groups/index>
+   Customer Users <customer-users/index>
+   Customer User Roles <customer-user-roles/index>
+   Business Customers <business-customers/index>

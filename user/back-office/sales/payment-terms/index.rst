@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--payment-providers-overview--payment-term:
 
-Payment Terms
-=============
+Manage Payment Terms in the Back-Office
+=======================================
 
 Use payment terms configured per customer to help them use the payment conditions guaranteed by their contract with your company.
 

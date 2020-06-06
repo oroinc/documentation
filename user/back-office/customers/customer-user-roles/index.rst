@@ -2,8 +2,8 @@
 
 .. _user-guide--customers--customer-user-roles:
 
-Customer User Roles
-===================
+Manage Customer User Roles in the Back-Office
+=============================================
 
 .. begin
 

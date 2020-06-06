@@ -2,8 +2,8 @@
 
 .. _concept-guide-customers:
 
-Customer Management
-===================
+Customer Management Concept Guide
+=================================
 
 The power of commerce is in building strong relationships between customers and businesses. One of the most crucial ingredients that helps improve this bond is the database of existing and potential customers that businesses use to communicate with them or address a required issue in a proper and timely manner. That is where Oro applications come in hand. OroCommerce and OroCRM applications provide the ability to manage your customers from different perspectives, storing customers’ contact information, their entire purchase history, lifetime sales value, marketing activity, references to leads and opportunities in one easily accessible place. Having a single location for this aggregated information reduces the time spent on customer management.
 

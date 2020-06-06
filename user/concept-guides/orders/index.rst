@@ -2,9 +2,8 @@
 
 .. _concept-guide-orders:
 
-Order Management
-================
-
+Order Management Concept Guide
+==============================
 
 The B2B e-commerce industry is growing fast, with B2B wholesalers and manufacturers rapidly increasing their online presence. Rapid market growth prompts high customer expectations; customers now want the same quick and smooth buying experiences they have when ordering through most B2C websites. However, the basic order management features offered by B2C websites do not always match the B2B business cycle and, therefore, need to be more sophisticated and advanced to not only meet the B2B customer expectations but exceed them.
 

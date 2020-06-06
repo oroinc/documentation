@@ -2,8 +2,8 @@
 
 .. _user-guide-intro-log-in-edit-profile:
 
-User Menu
-=========
+Manage User Menu in the Back-Office
+===================================
 
 By clicking on your user name on the top right of the application screen, you can quickly access your profile configuration page, the available user-level configuration settings, as well as your calendar, tasks, events, and the log out link.
 

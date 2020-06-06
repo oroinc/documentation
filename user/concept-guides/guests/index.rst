@@ -2,8 +2,8 @@
 
 .. _sys--conf--commerce--guest:
 
-Guest Functions
-===============
+Guest Functions Concept Guide
+=============================
 
 Traditionally, B2B vendors work with verified buyers and many B2C web stores have guest shopping and guest checkout featured disabled. OroCommerce, however, keeps pace with the changing trends and caters to the needs of all customers, both registered and not. Such a strategy helps attract new visitors, facilitate their interaction within your website, and increase the conversion rates as a result. OroCommerce enables you to adapt to the individual preferences of each customer and allows buyers to browse the website both as logged-in or guest users without affecting their shopping experience.
 

@@ -2,8 +2,8 @@
 
 .. _taxes--tax-jurisdiction:
 
-Tax Jurisdictions
-=================
+Manage Tax Jurisdictions in the Back-Office
+===========================================
 
 .. begin
 
