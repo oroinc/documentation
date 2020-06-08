@@ -302,28 +302,6 @@ This section describes configuration of entity fields.
 
 *  **depends\_on** *string[]* - A list of entity properties that the field depends on. Use the ``dot`` notation to specify a path to a nested property, e.g., ``user.firstName``. Each element in the path must be equal to the name of existing property of an entity. This option is helpful for computed fields: the specified fields will be loaded from the database even if they are excluded.
 
-Special data types:
-
-The **data\_type** attribute can be used to specify a data type of a field. However, it can also help configure special types of fields. The following table contains details of such types:
-
-
-.. csv-table::
-   :header: "Data Type","Description"
-   :widths: 15, 30
-
-   "scalar","Represents a field of a to-one association as a field of parent entity. In JSON:API it means that the association's field should be in ``attributes`` section instead of ``relationships``."
-   "object","Represents to-one association as a field. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
-   "array","Represents a field contains an array data or a field of a to-many association as a field of parent entity. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
-   "objects","Represents to-many association as a field. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
-   "nestedObject","Helps configure nested objects. For details see :ref:`Configure a Nested Object <configure-nested-object>`."
-   "nestedAssociation","Helps configure nested associations. For details see :ref:`Configure a Nested Association <configure-nested-association>`."
-   "association:relationType[:associationKind]","Helps configure extended associations. For details, see :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`, :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>` and :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`."
-   "unidirectionalAssociation:targetAssociationName","Helps configure unidirectional associations. For details, see :ref:`Configure an Unidirectional Association <configure-unidirectional-association>`."
-
-.. note:: Note: The `scalar`, `object`, `array` and `objects` data types are interchangeable in case they are used to represent an association as a field. They were introduced to increase readability of configs and automatically generated documentation, e.g. for API Sandbox. The `scalar` is usually used if a value of the field contains a scalar value. The `array` is usually used if a value of the field contains a list of scalar values. The `object` is usually used if a value of the field contains several properties. The `objects` is usually used if a value of the field contains a list of items that have several properties.
-
-.. note:: Note: To add a new special type of a field that requires an additional configuration of a field or an entity, create a class that implements |CustomDataTypeCompleterInterface| and register this class in the dependency injection container with oro.api.custom_data_type_completer tag. The requestType tag attribute can be used to register a converter only for specific request types.
-
 **Examples:**
 
 .. code:: yaml
@@ -380,6 +358,33 @@ The **data\_type** attribute can be used to specify a data type of a field. Howe
                 field9:
                     data_type: string
                     depends_on: [property1, association1.property11]
+
+.. _fields-special-data-types:
+
+Special Data Types
+^^^^^^^^^^^^^^^^^^
+
+The **data\_type** attribute can be used to specify a data type of a field. However, it can also help configure special types of fields. The following table contains details of such types:
+
+
+.. csv-table::
+   :header: "Data Type","Description"
+   :widths: 15, 30
+
+   "scalar","Represents a field of a to-one association as a field of parent entity. In JSON:API it means that the association's field should be in ``attributes`` section instead of ``relationships``."
+   "object","Represents to-one association as a field, an associative array or an object. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
+   "array","Represents a field contains an array data or a field of a to-many association as a field of parent entity. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section."
+   "objects","Represents to-many association as a field. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section. This data type is an alias for the `object[]` data type."
+   "strings","Represents a string field of a to-many association as a field. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section. This data type is an alias for the `string[]` data type."
+   "data-type[]","Represents a field of a to-many association as a field. In JSON:API it means that the association should be in ``attributes`` section instead of ``relationships`` section. The `data-type` can be any data type, for example `scalar[]`, `string[]`, `integer[]`, etc."
+   "nestedObject","Helps configure nested objects. For details see :ref:`Configure a Nested Object <configure-nested-object>`."
+   "nestedAssociation","Helps configure nested associations. For details see :ref:`Configure a Nested Association <configure-nested-association>`."
+   "association:relationType[:associationKind]","Helps configure extended associations. For details, see :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`, :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>` and :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`."
+   "unidirectionalAssociation:targetAssociationName","Helps configure unidirectional associations. For details, see :ref:`Configure an Unidirectional Association <configure-unidirectional-association>`."
+
+.. note:: The `scalar`, `object`, `array`, `objects`, `strings` and `data-type[]` data types are interchangeable in case they are used to represent an association as a field. They were introduced to increase readability of configs and automatically generated documentation, e.g. for API Sandbox. The `scalar` is usually used if a value of the field contains a scalar value. The `array`, `strings` and `data-type[]` are usually used if a value of the field contains a list of scalar values. The `object` is usually used if a value of the field contains several properties. The `objects` is usually used if a value of the field contains a list of items that have several properties.
+
+.. note:: To add a new special type of a field that requires an additional configuration of a field or an entity, create a class that implements |CustomDataTypeCompleterInterface| and register this class in the dependency injection container with ``oro.api.custom_data_type_completer`` tag. The requestType tag attribute can be used to register a converter only for specific request types.
 
 .. _filters-config:
 
