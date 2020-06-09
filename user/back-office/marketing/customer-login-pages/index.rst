@@ -2,8 +2,8 @@
 
 .. _customer-login-pages:
 
-Customer Login Pages
-====================
+Manage Customer Login Pages in the Back-Office
+==============================================
 
 You can customize the content that appears on the login page of the storefront:
 

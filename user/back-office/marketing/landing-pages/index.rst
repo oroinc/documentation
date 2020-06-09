@@ -2,13 +2,9 @@
 
 .. _user-guide--landing-pages:
 
-Landing Pages
-=============
+Manage Landing Pages in the Back-Office
+=======================================
 
-This topic contains the following sections:
-
-Overview
---------
 
 :term:`Landing Page` is a marketing tool that generates interest and leads for your sales pipeline and has a distinct call to action with a single focused objective.
 

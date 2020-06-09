@@ -2,8 +2,8 @@
 
 .. _user-guide--marketing--promotions:
 
-Promotions
-==========
+Manage Promotions in the Back-Office
+====================================
 
 .. important:: This section is a part of the :ref:`Promotion Management <concept-guides--promotion-management>` topic that provides the general understanding of the promotions and coupons concept.
 

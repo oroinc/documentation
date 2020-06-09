@@ -2,8 +2,8 @@
 
 .. _concept-guide-web-catalog:
 
-Web Catalog Management
-======================
+Web Catalog Management Concept Guide
+====================================
 
 Web catalogs are a powerful content management tool that enables sellers to create unlimited customizable and personalized versions of their OroCommerce storefronts to provide an engaging and personalized experience for B2B customers.
 

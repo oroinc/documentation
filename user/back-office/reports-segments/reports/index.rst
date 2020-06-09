@@ -2,8 +2,8 @@
 
 .. _user-guide-reports:
 
-Reports
-=======
+Manage System and Custom Reports in the Back-Office
+===================================================
 
 In Oro applications, you can create reports based on the details of any entity available in the system.
 

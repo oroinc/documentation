@@ -2,8 +2,8 @@
 
 .. _user-guide--web-catalog:
 
-Web Catalogs
-============
+Manage Web Catalogs in the Back-Office
+======================================
 
 :term:`Web Catalog` is a content management tool that helps build highly personalized custom versions of your websites by mixing in category pages, product pages, landing pages and pre-existing system pages in different variations based on the customer account information, their customer group or language preference.
 

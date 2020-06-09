@@ -2,8 +2,8 @@
 
 .. _user-guide-system-channel-entities-opportunities:
 
-Opportunities
-=============
+Manage Opportunities in the Back-Office
+=======================================
 
 :term:`Opportunities <Opportunity>` are highly probable potential or actual sales to a new or established customer. Request for proposal, invitation for a bidding, agreement of intentions or order for a delivery can be saved as opportunities. These are a universal sales tracking tool that can be related to virtually any customer type.
 

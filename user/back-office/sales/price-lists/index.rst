@@ -3,8 +3,8 @@
 .. _user-guide--pricing--pricelist--management:
 .. _user-guide--pricing--import--export:
 
-Price Lists
-===========
+Manage Price Lists in the Back-Office
+=====================================
 
 .. important:: This section is a part of the :ref:`Price Management <user-guide--pricing>` topic that provides the general understanding of pricing concept in Oro applications.
 

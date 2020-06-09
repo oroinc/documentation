@@ -2,8 +2,8 @@
 
 .. _user-guide-territories:
 
-Sales Territories 
-=================
+Manage Sales Territories in the Back-Office
+===========================================
 
 .. note:: Sales Territories are only available in the Enterprise edition.
 

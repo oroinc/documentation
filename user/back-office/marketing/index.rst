@@ -8,8 +8,8 @@
 
 .. _user-guide-marketing:
 
-Marketing
-=========
+Manage Marketing Activities in the Back-Office
+==============================================
 
 The Marketing Menu in the Oro application provides access tools for managing the following marketing activities:
 
@@ -51,15 +51,15 @@ You can also customize the content of :ref:`Customer Login Page <customer-login-
    :maxdepth: 2
    :hidden:
 
-   marketing-lists/index
-   email-campaigns/index
-   marketing-campaigns/index
-   promotions/index
-   tracking-websites/index
-   web-catalogs/index
-   landing-pages/index
-   content-blocks/index
-   customer-login-pages/index
-   content-widgets/index
-   digital-assets/index
+   Marketing Lists <marketing-lists/index>
+   Email Campaigns <email-campaigns/index>
+   Marketing Campaigns <marketing-campaigns/index>
+   Promotions <promotions/index>
+   Tracking Websites <tracking-websites/index>
+   Web Catalogs <web-catalogs/index>
+   Landing Pages <landing-pages/index>
+   Content Blocks <content-blocks/index>
+   Customer Login Pages <customer-login-pages/index>
+   Content Widgets <content-widgets/index>
+   Digital Assets <digital-assets/index>
 

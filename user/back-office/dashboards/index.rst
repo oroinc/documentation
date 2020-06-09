@@ -9,8 +9,8 @@
 .. _business-intelligence:
 
 
-Dashboard
-=========
+Dashboard Features in the Back-Office
+=====================================
 
 :term:`Dashboard` features are all built to give B2B sellers the ability to quickly and easily obtain the relevant data needed to assess business performance.
 
@@ -26,7 +26,7 @@ To learn how to work with dashboards and their widgets, click on the links below
 .. toctree::
    :maxdepth: 1
 
-   dashboards
-   widgets/index
+   Dashboards <dashboards>
+   Widgets <widgets/index>
 
 

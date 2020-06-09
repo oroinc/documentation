@@ -2,8 +2,8 @@
 
 .. _user-guide-marketing-lists:
 
-Marketing Lists
-===============
+Manage Marketing Lists in the Back-Office
+=========================================
 
 With the Oro application, you can automatically generate a :term:`marketing list <Marketing Lists>` of contacts that will be used for marketing purposes (mass call or mailing). For example, you can create a list of personal and contact details of customer users who registered after October 1 and whose shipping address is in California.
 

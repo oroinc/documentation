@@ -4,9 +4,8 @@
 
 :oro_documentation_types: OroCRM, OroCommerce
 
-Dashboards
-==========
-
+Manage Dashboards in the Back-Office
+====================================
 
 Dashboard is a default page you see after you log in. It is an adjustable view that may contain many types of information blocks (widgets), such as today’s calendar, recent calls and emails, quick launchpad, etc. You can have several dashboards that serve different purposes and switch between them.
 

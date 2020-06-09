@@ -4,8 +4,8 @@
 
 .. updated on 06 July 2017
 
-Marketing Automation
-====================
+Marketing Automation Concept Guide
+==================================
 
 In Oro applications, you can manage, perform, and track the results of your marketing activities, like email campaigns and website activities tracking.
 

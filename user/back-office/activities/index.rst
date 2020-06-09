@@ -8,8 +8,8 @@
 .. _user-guide-productivity-tools:
 .. _user-guide-activities:
 
-Activities
-==========
+Manage Activities in the Back-Office
+====================================
 
 Activities are actions that employees of a company perform on a daily basis, be it fulfilling job tasks, communicating with colleagues and customers, or participating in events. In Oro, you can manage all of these activities conveniently and link them together to get a 360-degree view of all communications.
 
@@ -41,11 +41,11 @@ The Activities topic introduces you to the following types of activities:
    :hidden: 
    :maxdepth: 1
 
-   tasks/index
-   calls/index
-   contact-requests/index
-   cases/index
-   calendar-events/index
+   Tasks <tasks/index>
+   Calls <calls/index>
+   Contact Requests <contact-requests/index>
+   Cases <cases/index>
+   Calendar Events <calendar-events/index>
 
 
 

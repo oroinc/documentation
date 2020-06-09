@@ -2,8 +2,8 @@
 
 .. _tax-rules:
 
-Tax Rules
-=========
+Manage Tax Rules in the Back-Office
+===================================
 
 .. begin
 

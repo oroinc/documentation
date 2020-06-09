@@ -3,8 +3,8 @@
 
 :oro_documentation_types: OroCommerce
 
-Payment Configuration
-=====================
+Payment Configuration Concept Guide
+===================================
 
 In B2B, sellers must take personalization to the next level, as each buyer represents a larger piece of the revenue pie. It is unusual for business buyers to pay for their purchases instantly. Each buyer has specific payment requirements and negotiated prices. Their internal operations may require different net terms or the use of specific payment solutions for internal policy or security reasons. That is why OroCommerce enables you to integrate and configure a variety of payment methods and, depending on the method, either process payment immediately, or delay it for a pre-configured period of time or until a particular event (for example, until an order is ready for delivery).
 

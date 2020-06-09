@@ -3,8 +3,8 @@
 
 .. _user-guide--inventory--warehouse--create:
 
-Warehouses
-==========
+Manage Warehouses in the Back-Office
+====================================
 
 .. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
 

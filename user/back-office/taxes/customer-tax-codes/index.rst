@@ -2,8 +2,8 @@
 
 .. _user-guide--taxes--customer_tax_codes:
 
-Customer Tax Codes
-==================
+Manage Customer Tax Codes in the Back-Office
+============================================
 
 .. begin
 

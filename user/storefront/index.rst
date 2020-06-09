@@ -44,7 +44,7 @@ Before you proceed, consider watching the following media library tutorials:
    getting-started/index
    register/index
    account/index
-   orders/index
+   Orders <orders/index>
    quotes/index
    quick-order-form
    shopping-lists/index

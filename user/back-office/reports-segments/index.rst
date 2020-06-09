@@ -6,8 +6,8 @@
    :description: Instructions on reports and flexible data segments configuration and management for the OroCommerce and OroCRM 4.1 back-office users
 
 
-Reports and Segments
-====================
+Manage Reports and Segments in the Back-Office
+==============================================
 
 Oro applications come with flexible reports and segmentation engines. Reports enable you to create reports on any metric, giving you  insights into your business performance, while segmentation helps you identify buyer segments to gain understanding into what customers buy, when they buy, and how they buy.
 
@@ -23,6 +23,6 @@ Data analysis tools help you make informed decisions related to your sales and c
    :maxdepth: 1
    :titlesonly:
 
-   reports/index
-   segments
-   filters
+   Reports <reports/index>
+   Segments <segments>
+   Filters <filters>

@@ -2,8 +2,8 @@
 
 .. _doc-activities-overview-cases:
 
-Cases
-=====
+Manage Cases in the Back-Office
+===============================
 
 Cases are issues or problems reported by customers or found internally. With Oro, you can record, monitor, and solve cases in time to ensure that small and big issues do not harm the business of your company.
 

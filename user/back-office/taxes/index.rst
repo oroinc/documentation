@@ -7,8 +7,8 @@
 
 .. _user-guide--taxes:
 
-Taxes
-=====
+Manage Taxes in the Back-Office
+===============================
 
 .. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 
@@ -106,11 +106,11 @@ Finally, create a tax rule that associates the customer tax code, the product ta
    :maxdepth: 1
    :hidden:
 
-   product-tax-codes/index
-   customer-tax-codes/index
-   taxes/index
-   tax-rules/index
-   tax-jurisdictions/index
+   Product Tax Codes <product-tax-codes/index>
+   Customer Tax Codes <customer-tax-codes/index>
+   Taxes (Tax Rates) <taxes/index>
+   Tax Rules <tax-rules/index>
+   Tax Jurisdictions <tax-jurisdictions/index>
 
 .. finish
 

@@ -10,8 +10,8 @@
 .. _doc--products:
 .. _user-guide--products--products:
 
-Products
-========
+Get Started with Products in the Back-Office
+============================================
 
 .. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 
@@ -73,10 +73,10 @@ This section provides shortcuts to topics that may be useful for various types o
    :maxdepth: 1
    :hidden:
 
-   master-catalog/index
-   products/index
-   product-families/index
-   product-attributes/index
-   product-brands/index
-   price-attributes/index
+   Master Catalog <master-catalog/index>
+   Products <products/index>
+   Product Families <product-families/index>
+   Product Attributes <product-attributes/index>
+   Product Brands <product-brands/index>
+   Price Attributes <price-attributes/index>
 

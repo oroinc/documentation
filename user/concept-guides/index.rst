@@ -43,23 +43,23 @@ Complementary to the how-to approach of the Back-office section of the documenta
    :titlesonly:
    :maxdepth: 1
 
-   master-catalog/index
-   web-catalog/index
-   product-management/index
-   customers/index
-   customer-permissions/index
-   guests/index
-   pricing/index
-   payment-configuration/index
-   shipping-configuration/index
-   orders/index
-   websites/index
-   taxes/index
-   inventory/index
-   localization/index
-   marketing-automation/index
-   promotions/index
-   consents/index
+   Master Catalog Management <master-catalog/index>
+   Web Catalog Management <web-catalog/index>
+   Product Management <product-management/index>
+   Customer Management <customers/index>
+   Customer Permissions <customer-permissions/index>
+   Guest Functions <guests/index>
+   Price Management <pricing/index>
+   Payment Configuration <payment-configuration/index>
+   Shipping Configuration <shipping-configuration/index>
+   Order Management <orders/index>
+   Multi-Website Configuration <websites/index>
+   Tax Management <taxes/index>
+   Inventory and Warehouse Management <inventory/index>
+   Localization and Translation <localization/index>
+   Marketing Automation <marketing-automation/index>
+   Promotion Management <promotions/index>
+   Consent Management <consents/index>
 
 .. include:: /include/include-images.rst
    :start-after: begin

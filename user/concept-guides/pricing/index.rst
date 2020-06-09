@@ -2,8 +2,8 @@
 
 :oro_documentation_types: OroCommerce
 
-Price Management
-================
+Price Management Concept Guide
+==============================
 
 :ref:`Price list <user-guide--pricing--pricelist--management>` management is one of the most important aspects of any e-commerce business and even more so for Business to Business (B2B) e-commerce companies. This is why OroCommerce provides advanced features that enable you to easily set up and customize different price lists for specific customers, customer groups, and websites. You can build aggregated price lists with any amount of price points, :term:`price tiers <Tier Price>`, or currencies.
 
