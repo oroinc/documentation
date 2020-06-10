@@ -305,19 +305,19 @@ Links (User)
 
 .. |OroCronBundle| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/4.1/src/Oro/Bundle/CronBundle" target="_blank">OroCronBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/CronBundle" target="_blank">OroCronBundle</a>
 
 .. |ImapBundle| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/4.1/src/Oro/Bundle/ImapBundle" target="_blank">ImapBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/ImapBundle" target="_blank">ImapBundle</a>
 
 .. |dedicated section| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/4.1/src/Oro/Bundle/ImapBundle#synchronization-with-imap-servers" target="_blank">dedicated section</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/ImapBundle#synchronization-with-imap-servers" target="_blank">dedicated section</a>
 
 .. |ReminderBundle| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/4.1/src/Oro/Bundle/ReminderBundle" target="_blank">ReminderBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/ReminderBundle" target="_blank">ReminderBundle</a>
 
 .. |TrackingBundle| raw:: html
 
@@ -325,7 +325,7 @@ Links (User)
 
 .. |IntegrationBundle| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/4.1/src/Oro/Bundle/IntegrationBundle" target="_blank">IntegrationBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/IntegrationBundle" target="_blank">IntegrationBundle</a>
 
 .. |how to create shipping rules in OroCommerce| raw:: html
 
@@ -509,11 +509,11 @@ Links (User)
 
 .. |OroMessageQueueComponent| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/4.1/src/Oro/Component/MessageQueue" target="_blank">OroMessageQueueComponent</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Component/MessageQueue" target="_blank">OroMessageQueueComponent</a>
 
 .. |OroMessageQueueBundle| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/4.1/src/Oro/Bundle/MessageQueueBundle" target="_blank">OroMessageQueueBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/MessageQueueBundle" target="_blank">OroMessageQueueBundle</a>
 
 .. |Crowdin| raw:: html
 

@@ -23,9 +23,9 @@ Once code repository is ready, please follow :ref:`installation <installation>` 
 
 .. note::
 
-    Newly created application repository should be used instead of the |https://github.com/orocrm/crm-application.git|
+    Newly created application repository should be used instead of the |https://github.com/oroinc/crm-application.git|
 
-When your application is up and running, you can use development mode to work on customizations. In order to warm up the 
+When your application is up and running, you can use development mode to work on customizations. In order to warm up the
 application cache in development mode please run:
 
 .. code-block:: bash
