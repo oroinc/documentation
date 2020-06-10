@@ -464,10 +464,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#default-operations" target="_blank">DELETE operation</a>
 
-.. |Additional Doctrine Events| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/doctrine_events.rst" target="_blank">Additional Doctrine Events</a>
-
 .. |build ngx pagespeed from source| raw:: html
 
    <a href="https://modpagespeed.com/doc/build_ngx_pagespeed_from_source" target="_blank">build ngx pagespeed from source</a>
@@ -5196,27 +5192,27 @@ Links (Dev)
 
 .. |ConfigExpression| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Component/ConfigExpression/README.md" target="_blank">ConfigExpression</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/ConfigExpression/README.md" target="_blank">ConfigExpression</a>
 
 .. |oro_workflow_transition_form| raw:: html
 
-   <a href="https://github.com/laboro/dev/tree/master/package/platform/src/Oro/Bundle/WorkflowBundle/Resources/views/layouts/default/imports/oro_workflow_transition_form" target="_blank"> oro_workflow_transition_form</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WorkflowBundle/Resources/views/layouts/default/imports/oro_workflow_transition_form" target="_blank"> oro_workflow_transition_form</a>
 
 .. |oro_workflow_start_transition_form| raw:: html
 
-  <a href="https://github.com/laboro/dev/tree/master/package/platform/src/Oro/Bundle/WorkflowBundle/Resources/views/layouts/default/imports/oro_workflow_start_transition_form" target="_blank">oro_workflow_start_transition_form</a>
+  <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WorkflowBundle/Resources/views/layouts/default/imports/oro_workflow_start_transition_form" target="_blank">oro_workflow_start_transition_form</a>
 
 .. |Transition| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/WorkflowBundle/Model/Transition.php" target="_blank">Transition</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WorkflowBundle/Model/Transition.php" target="_blank">Transition</a>
 
 .. |WorkflowItem| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/WorkflowBundle/Entity/WorkflowItem.php" target="_blank">WorkflowItem</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WorkflowBundle/Entity/WorkflowItem.php" target="_blank">WorkflowItem</a>
 
 .. |TransitionContext| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/WorkflowBundle/Processor/Context/TransitionContext.php" target="_blank">TransitionContext</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WorkflowBundle/Processor/Context/TransitionContext.php" target="_blank">TransitionContext</a>
 
 .. |Workflow Entities| raw:: html
 

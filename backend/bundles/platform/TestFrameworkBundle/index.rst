@@ -17,8 +17,13 @@ Related Documentation
 
 * :ref:`JavaScript UnitTests <javascript-unit-tests>`
 * :ref:`Oro Behat Extension <behat-tests>`
-* |Additional Doctrine Events|
+* :ref:`Additional Doctrine Events <bundle-docs-platform-test-framework-doctrine-events>`
 
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+.. toctree::
+   :hidden:
+
+   doctrine-events
