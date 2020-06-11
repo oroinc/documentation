@@ -43,6 +43,8 @@ To deploy an Oro application in the OroCloud environment with default installati
 
 .. note:: If the application is already deployed, the command execution is restricted. Please contact the OroCloud or Oro Support team in case a full re-deploy from scratch is required.
 
+.. _orocloud-maintenance-use-upgrade:
+
 Upgrade
 -------
 
@@ -189,7 +191,7 @@ Sanitized Backup
 Use the sanitized backups:
 
 * to share the sanitized data with the OroCloud and OroSupport team,
-* for local debug and development, 
+* for local debug and development,
 * to sanitize and transfer database and media from the production to the staging environment, etc.
 
 The following commands are available:
