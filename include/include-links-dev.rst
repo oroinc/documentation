@@ -464,10 +464,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#default-operations" target="_blank">DELETE operation</a>
 
-.. |Additional Doctrine Events| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/doctrine-events.rst" target="_blank">Additional Doctrine Events</a>
-
 .. |build ngx pagespeed from source| raw:: html
 
    <a href="https://modpagespeed.com/doc/build_ngx_pagespeed_from_source" target="_blank">build ngx pagespeed from source</a>
