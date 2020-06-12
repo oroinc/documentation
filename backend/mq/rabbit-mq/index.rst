@@ -22,7 +22,7 @@ The Client layer provides the ability to start
 Installation
 ------------
 
-You need to have RabbitMQ **version 3.6.**\ \* installed to use the AMQP
+You need to have RabbitMQ **version 3.7.21**  and above installed to use the AMQP
 transport. To install the RabbitMQ you should follow the |download and installation manual|.
 
 After the installation, please check that you have all the required plugins
@@ -51,7 +51,7 @@ Required plugins
 +---------------+-------------+-------------------------------------------+
 | Plugin name   | Version     | Appointment                               |
 +===============+=============+===========================================+
-| rabbitmq\_del | 20171215    | A plugin that adds delayed-messaging (or  |
+| rabbitmq\_del | 3.8.0       | A plugin that adds delayed-messaging (or  |
 | ayed\_message |             | scheduled-messaging) to RabbitMQ.         |
 | \_exchange    |             | |Read more on Delayed Message Exchange|.  |
 |               |             |                                           |
@@ -66,7 +66,7 @@ To download it, use the following command:
 .. code-block:: none
     :linenos:
 
-    wget https://dl.bintray.com/rabbitmq/community-plugins/3.6.x/rabbitmq_delayed_message_exchange/rabbitmq_delayed_message_exchange-20171215-3.6.x.zip && unzip rabbitmq_delayed_message_exchange-20171215-3.6.x.zip -d {RABBITMQ_HOME}/plugins && rm rabbitmq_delayed_message_exchange-20171215-3.6.x.zip
+    wget https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.8.0/rabbitmq_delayed_message_exchange-3.8.0.ez -P $RABBITMQ_HOME/plugins
 
 To enable it, use the following command:
 
@@ -81,7 +81,7 @@ Recommended plugins
 +----------------------+-------------+----------------------------+
 | Plugin name          | Version     | Appointment                |
 +======================+=============+============================+
-| rabbitmq\_management | 3.6.*       |Provides an HTTP-based API  |
+| rabbitmq\_management | 3.8.*       |Provides an HTTP-based API  |
 |                      |             |for management and          |
 |                      |             |monitoring of your RabbitMQ |
 |                      |             |server.                     |
@@ -105,13 +105,10 @@ You will see something like:
 .. code-block:: none
     :linenos:
 
-    [e*] amqp_client                       3.6.5
-    [e*] mochiweb                          2.13.1
-    [E*] rabbitmq_delayed_message_exchange 20171215
-    [E*] rabbitmq_management               3.6.5
-    [e*] rabbitmq_management_agent         3.6.5
-    [e*] rabbitmq_web_dispatch             3.6.5
-    [e*] webmachine                        1.10.3
+    [E*] rabbitmq_delayed_message_exchange 3.8.0
+    [E*] rabbitmq_management               3.8.2
+    [e*] rabbitmq_management_agent         3.8.2
+    [e*] rabbitmq_web_dispatch             3.8.2
 
 The sign ``[E*]`` means that the plugin was explicitly enabled, i.e.
 somebody enabled it manually. The sign ``[e*]`` means the plugin was

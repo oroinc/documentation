@@ -109,9 +109,9 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *Search Index*   | * |Elasticsearch| 7.*                               |
 +------------------+-----------------------------------------------------+
-| *Job Queue*      | * |RabbitMQ| 3.5.8 and above with Erlang/OTP        |
-|                  |   version 18.0 and higher.                          |
-|                  |   RabbitMQ 3.6.x is recommended                     |
+| *Job Queue*      | * |RabbitMQ| 3.7.21 and above with Erlang/OTP       |
+|                  |   version 21.3 and higher.                          |
+|                  |   RabbitMQ 3.8.x is recommended                     |
 +------------------+-----------------------------------------------------+
 
 .. _sys-requirements-postgre-config:
