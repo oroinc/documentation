@@ -19,6 +19,8 @@ Client Credentials grant.
 See |OAuth 2.0 Server Resource Owner Password Credentials Grant| and |OAuth 2.0 Password Grant| for details of
 Password grant.
 
+.. _bundle-docs-platform-oauth2-server-bundle--configuration:
+
 Configuration
 -------------
 
@@ -62,10 +64,14 @@ In order to use OAuth 2.0 authorization, you need to generate private and public
 to locations specified in `authorization_server / private_key` and `resource_server / public_key` options.
 See |Generating public and private keys| for details how to generate the keys.
 
+.. _bundle-docs-platform-oauth2-server-bundle--manage-applications:
+
 Manage OAuth Applications
 -------------------------
 
 See :ref:`Manage OAuth Applications <oauth-applications>` and :ref:`Manage Storefront OAuth Applications <storefront-oauth-app>`.
+
+.. _bundle-docs-platform-oauth2-server-bundle--create-app-via-data-fixtures:
 
 Create OAuth Application via Data Fixtures
 ------------------------------------------
@@ -110,6 +116,8 @@ The OAuth applications can be added using data fixtures. For example:
     }
 
 To load data fixtures, use either `oro:migration:data:load` or `oro:platform:update` command.
+
+.. _bundle-docs-platform-oauth2-server-bundle--rest-api:
 
 Using OAuth Authorization in REST API
 -------------------------------------

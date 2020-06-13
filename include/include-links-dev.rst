@@ -191,6 +191,10 @@ Links (Dev)
 
    <a href="http://www.apple.com/safari/" target="_blank">Safari</a>
 
+.. |OPcache| raw:: html
+
+   <a href="http://php.net/manual/en/intro.opcache.php" target="_blank">OPcache</a>
+
 .. |Tidy PHP extension| raw:: html
 
    <a href="http://php.net/manual/en/book.tidy.php" target="_blank">Tidy PHP extension</a>
@@ -1332,9 +1336,17 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/BatchBundle#components" target="_blank">Bundle Components</a>
 
-.. |ChainCache| raw:: html
+.. |MemoryCacheChain| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php" target="_blank">ChainCache</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php" target="_blank">MemoryCacheChain</a>
+
+.. |FilesystemCache| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/FilesystemCache.php" target="_blank">FilesystemCache</a>
+
+.. |ArrayCache| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/ArrayCache.php" target="_blank">ArrayCache</a>
 
 .. |Symfony Validation Component| raw:: html
 
