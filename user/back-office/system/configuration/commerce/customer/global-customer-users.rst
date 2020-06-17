@@ -2,10 +2,8 @@
 
 .. _sys-config--configuration--commerce--customers--customer-users:
 
-Customer Users
-==============
-
-.. begin
+Configure Global Customer User Settings
+=======================================
 
 To change the default customer user configuration settings globally:
 
@@ -53,12 +51,7 @@ Configure User Impersonation
                                        :alt: User impersonation config option"
 
 
-
-
 5. Click **Save Settings**.
-
-
-.. finish 
 
 
 .. include:: /include/include-images.rst

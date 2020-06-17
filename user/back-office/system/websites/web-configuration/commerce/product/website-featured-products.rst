@@ -2,10 +2,8 @@
 
 .. _sys--websites--commerce--products--featured-products:
 
-Segment for Featured Products per Website
------------------------------------------
-
-.. begin
+Configure Settings for Featured Products per Website
+====================================================
 
 You can control which segment is used to store featured products :ref:`globally <products--featured-products>`, :ref:`per organization <sys--users--organization--commerce--products--featured-products>`, and per website.
 
@@ -14,7 +12,6 @@ Before enabling the featured products segment for a particular website, make sur
 1. Mark the selected products as featured in the **General** section of the **Products > Products** main menu by setting **Is Featured** to *Yes*.
 
 2. Create a featured product segment under **Reports & Segments > Manage Segments** as described in the :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
-
 
 Now, update the featured products segment for a website:
 
@@ -31,8 +28,6 @@ Now, update the featured products segment for a website:
      b) Select the new segment from the list.
 
 5. Click **Save**.
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

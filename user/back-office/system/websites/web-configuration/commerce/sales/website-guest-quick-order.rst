@@ -2,10 +2,8 @@
 
 .. _user-guide--system-configuration--commerce-sales--quick-order-form--website:
 
-Quick Order Form per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin_quick_order_form
+Configure Quick Order Form Settings per Website
+===============================================
 
 To enable the quick order form per website both for the registered and guest users:
 
@@ -26,8 +24,6 @@ To enable the quick order form per website both for the registered and guest use
    To enable it, clear *Use Organization* and select the *Enable Guest Quick Order Form* check box.
 
 6. Click **Save Settings**.
-
-.. finish_quick_order_form
 
 .. include:: /include/include-images.rst
    :start-after: begin

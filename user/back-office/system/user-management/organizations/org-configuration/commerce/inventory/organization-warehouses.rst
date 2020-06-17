@@ -2,8 +2,8 @@
 
 .. _warehouses-organization:
 
-Warehouses per Organization
----------------------------
+Configure Warehouse Settings per Organization
+=============================================
 
 .. note:: The ability to configure warehouses is only available in the Enterprise edition.
 

@@ -3,8 +3,8 @@
 
 .. _user-guide-dotmailer-single-sign-on:
 
-Configure Single Sign-on
-========================
+Configure dotmailer Single Sign-on in the Back-Office
+=====================================================
 
 |Single sign-on| allows to enter dotmailer account from within your OroCRM and OroCommerce applications.
 

@@ -2,10 +2,8 @@
 
 .. _configuration--commerce--orders--order-automation--organization:
 
-Order Automation per Organization
----------------------------------
-
-.. begin_body
+Configure Order Automation Settings per Organization
+====================================================
 
 To configure order automation per organization:
 
@@ -21,9 +19,6 @@ To configure order automation per organization:
    b) Select the **Enable Automatic Order Cancellation** check box to automatically cancel the order when its 'do not ship later than' date is passed.
 
 #. Click **Save Settings**.
-
-
-.. finish_body
 
 .. include:: /include/include-images.rst
     :start-after: begin

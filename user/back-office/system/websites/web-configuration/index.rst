@@ -3,16 +3,14 @@
 .. _doc-website-configuration:
 .. _user-guide--system-websites--configure-website:
 
-System Configuration for Website
-================================
+Configure Website System Settings
+=================================
 
 .. important:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
 
 .. important:: Multi-website management is only available in the Enterprise edition.
 
 You can configure available system settings on four :ref:`configuration levels <configuration--guide--config-levels>`: system, organization, website, and user.
-
-.. begin
 
 On the website level, there are a number of options that you can configure specifically for the particular OroCommerce website, but which will not affect system-wide or organization-wide configuration.
 
@@ -100,6 +98,6 @@ More information about the options available for each of the two categories is a
    :maxdepth: 1
    :hidden:
 
-   commerce/index
-   general-sys-config/index
+   Commerce Configuration <commerce/index>
+   General Setup <general-sys-config/index>
 

@@ -2,8 +2,8 @@
 
 .. _system--workflows--checkout-workflow:
 
-Checkout Workflow
-=================
+Configure Checkout Workflow in the Back-Office
+==============================================
 
 Overview
 --------

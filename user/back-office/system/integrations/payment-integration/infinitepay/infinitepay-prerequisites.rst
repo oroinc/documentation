@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--prerequisites--infinitepay:
 
-Prerequisites for InfinitePay Integration
-=========================================
+Prerequisites for InfinitePay Integration in the Back-Office
+============================================================
 
 To start using InfinitePay with OroCommerce application, do the following:
 

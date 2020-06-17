@@ -4,8 +4,8 @@
 .. _system--workflows--rfq-frontoffice-workflow-rfq-illustration:
 .. _system--workflows--rfq-frontoffice-workflow-rfq-customer-statuses:
 
-RFQ Submission Flow Workflow
-----------------------------
+Configure RFQ Submission Flow Workflow in the Back-Office
+=========================================================
 
 .. start_front_flow
 

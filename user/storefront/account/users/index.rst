@@ -1,7 +1,7 @@
 .. _frontstore-guide--users-roles:
 
-Users
-=====
+Manage Users in the Storefront
+==============================
 
 This section provides information on how you can manage your organization users and roles, so they have the necessary level of access to the OroCommerce storefront capabilities.
 

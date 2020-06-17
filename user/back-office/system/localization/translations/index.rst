@@ -2,8 +2,8 @@
 
 .. _localization--translations:
 
-Translations
-------------
+Configure Translations in the Back-Office
+=========================================
 
 .. begin
 

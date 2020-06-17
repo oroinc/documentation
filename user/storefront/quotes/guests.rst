@@ -1,7 +1,7 @@
 .. _frontstore-guide--guest-quotes:
 
-Send Guest Quotes
-=================
+Send Guest Quotes from the Storefront
+=====================================
 
 .. begin
 

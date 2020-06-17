@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--sales:
 
-Sales
-=====
+Configure Global Sales Settings
+===============================
 
 Learn how to enable the quick order form, promotions, guest shopping lists, establish the preferred discount strategy, setup notifications to the sales representatives of the customers, restrict the number of shopping lists per customer, and define customer visible contact information.
 
@@ -20,11 +20,11 @@ Learn how to enable the quick order form, promotions, guest shopping lists, esta
    :titlesonly:
    :hidden:
 
-   guest-quick-order-global
-   promotions-settings
-   rfq
-   global-checkout-config
-   open-orders
-   contacts
-   guest-quote
-   global-shopping-list
+   Quick Order Form <guest-quick-order-global>
+   Promotions <promotions-settings>
+   Request for Quote <rfq>
+   Checkout <global-checkout-config>
+   Order History <open-orders>
+   Contacts <contacts>
+   Quotes <guest-quote>
+   Shopping List <global-shopping-list>

@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--payment-providers-overview--paypal:
 
-PayPal Payments Services Configuration
-======================================
+Configure Multiple PayPal Payment Services in the Back-Office
+=============================================================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
@@ -77,8 +77,8 @@ PayPal Express Configuration Flow
    :maxdepth: 2
 
    paypal-prerequisites
-   gateway-pro/index
-   express/index
+   PayPal Payflow Gateway / PayPal Payment Pro Payment Methods Integration <gateway-pro/index>
+   PayPal Express Integration <express/index>
    paypal-currency
    paypal-payment-actions
 

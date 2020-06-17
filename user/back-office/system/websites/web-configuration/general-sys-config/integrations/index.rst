@@ -2,8 +2,8 @@
 
 .. _website-google-settings:
 
-Google Setting per Website
-==========================
+Configure Google Setting per Website
+====================================
 
 To configure Google Tag Manager settings per website:
 

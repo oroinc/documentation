@@ -1,7 +1,7 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-Scheduled Tasks
-===============
+Configure Scheduled Tasks in the Back-Office
+============================================
 
 .. index::
     double: Cron Jobs ; Command

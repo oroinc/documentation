@@ -2,8 +2,8 @@
 
 .. _doc--integrations--fedex:
 
-FedEx Shipping Integration
-==========================
+Configure FedEx Shipping Integration in the Back-Office
+=======================================================
 
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 

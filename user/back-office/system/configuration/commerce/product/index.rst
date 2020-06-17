@@ -3,8 +3,8 @@
 .. _configuration--guide--commerce--configuration--product:
 .. _configuration--products:
 
-Product
-=======
+Configure Global Product Settings
+=================================
 
 Learn the key options for setting up products in your Oro application, as well as how to configure product units, image watermarks, featured products segment, product collections and new product arrivals.
 
@@ -20,9 +20,9 @@ Learn the key options for setting up products in your Oro application, as well a
    :hidden:
    :maxdepth: 1
 
-   product-units
-   global-product-images
-   global-featured-products
-   global-promotions
-   global-configurable-products
-   product-collections
+   Product Unit <product-units>
+   Product Images <global-product-images>
+   Featured Products <global-featured-products>
+   Promotions <global-promotions>
+   Configurable Products <global-configurable-products>
+   Product Collections <product-collections>

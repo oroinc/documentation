@@ -2,10 +2,8 @@
 
 .. _user-guide--taxes--eu:
 
-EU VAT Tax for Digital Products
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin
+Configure Global Settings for EU VAT Tax (Digital Products)
+===========================================================
 
 .. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 

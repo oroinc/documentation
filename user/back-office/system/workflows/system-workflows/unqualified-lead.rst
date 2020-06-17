@@ -2,8 +2,8 @@
 
 .. _system--workflows--unqualified-sales-lead-workflow:
 
-Unqualified Sales Lead Workflow
-===============================
+Configure Unqualified Sales Lead Workflow in the Back-Office
+============================================================
 
 .. begin
 

@@ -3,8 +3,8 @@
 
 .. _sys--commerce--orders--previously-purchased--main:
 
-Previously Purchased Products
-=============================
+Configure Global Settings for Previously Purchased Products
+===========================================================
 
 The previously purchased products page displays the products that were recently purchased by customer users. In the storefront, this page is nested under the **Previous Purchased** menu in **Account**.
 

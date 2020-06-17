@@ -41,7 +41,7 @@ The **System** menu of the back-office contains post-install configuration setti
 .. _configuration--guide--config-levels:
 .. _doc-system-configuration:
 
-Oro applications enable you to configure system settings on four configuration levels (or scopes): system, organization, website and user.
+Oro applications enable you to configure system settings on four configuration levels (or scopes): global (system), organization, website and user.
 
 * **Global**: To set up and manage settings globally, navigate to :ref:`System > Configuration <mc-system-configuration>` in the main menu, and locate the options you need to configure in the panel to the left.
 * **Organization**: To configure settings per :term:`organization <Organization>`, navigate to :ref:`System > User Management > Organizations <doc-organization-configuration>`, and select the one that you wish to toggle the options for. Hover over the ellipsis menu to the right of the necessary organization and click *Configuration* to start editing it. Organization settings can fall back to system (or global) settings. Clearing the Use System check box next to the required option and changing its value means that you are configuring this option specifically for the selected organization.
@@ -53,28 +53,28 @@ Oro applications enable you to configure system settings on four configuration l
    :titlesonly:
    :hidden:
 
-   configuration/index
-   user-management/index
-   storefront-oauth-app/index
-   contact-reasons/index
-   contact-groups/index
-   emails/index
-   integrations/index
-   channels/index
-   jobs/index
-   data-audit/index
-   scheduled-tasks/index
-   entities/index
-   tags-management/index
-   menus/index
-   frontend-menus/index
-   system-calendars/index
-   shipping-rules/index
-   payment-rules/index
-   workflows/index
-   processes/index
-   system-information/index
-   consent-management/index
-   websites/index
-   localization/index
+   Configuration <configuration/index>
+   User Management <user-management/index>
+   Storefront OAuth Applications <storefront-oauth-app/index>
+   Contact Reasons <contact-reasons/index>
+   Contact Groups <contact-groups/index>
+   Emails <emails/index>
+   Integrations <integrations/index>
+   Channels <channels/index>
+   Jobs <jobs/index>
+   Data Audit <data-audit/index>
+   Scheduled Tasks <scheduled-tasks/index>
+   Entities <entities/index>
+   Tags Management <tags-management/index>
+   Menus <menus/index>
+   Frontend Menus <frontend-menus/index>
+   System Calendars <system-calendars/index>
+   Shipping Rules <shipping-rules/index>
+   Payment Rules <payment-rules/index>
+   Workflows <workflows/index>
+   Processes <processes/index>
+   System Information <system-information/index>
+   Consent Management <consent-management/index>
+   Websites <websites/index>
+   Localization <localization/index>
 

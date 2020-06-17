@@ -1,14 +1,14 @@
 :oro_documentation_types: OroCommerce
 
-Sales Configuration Settings per Website
-========================================
+Configure Sales Settings per Website
+====================================
 
 .. toctree::
    :maxdepth: 1
 
-   website-guest-rfq
-   website-guest-quick-order
-   website-guest-shopping-list
-   website-sales-info
-   website-guest-checkout
+   Request for Quote <website-guest-rfq>
+   Quick Order Form <website-guest-quick-order>
+   Shopping List <website-guest-shopping-list>
+   Contacts <website-sales-info>
+   Checkout <website-guest-checkout>
 

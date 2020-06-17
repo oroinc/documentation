@@ -2,8 +2,8 @@
 
 .. _admin-configuration-application-website:
 
-Application Settings per Website
---------------------------------
+Configure Application Settings per Website
+==========================================
 
 In this section, you can configure the storefront Web API feature availability for the storefront for the particular website. By default, the API feature is disabled.
 

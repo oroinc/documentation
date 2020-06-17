@@ -2,8 +2,8 @@
 
 .. _configuration--general-setup--display-settings:
 
-Display Settings
-================
+Configure Global Display Settings
+=================================
 
 In this section, you can define a number of display-related options to be applied to the Oro application.
 

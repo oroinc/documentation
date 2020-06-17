@@ -2,8 +2,8 @@
 
 .. _user-management-organization-create:
 
-Create an Organization
-======================
+Create an Organization in the Back-Office
+=========================================
 
 .. important:: Multi-organization management is only available in the Enterprise edition.
 

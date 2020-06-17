@@ -6,7 +6,7 @@ General Setup Settings per Website
 .. toctree::
    :maxdepth: 1
 
-   website-application-settings
-   website-localization
-   website-email-settings
-   website-display-settings
+   Application Settings <website-application-settings>
+   Localization <website-localization>
+   Email Settings <website-email-settings>
+   Display Settings <website-display-settings>

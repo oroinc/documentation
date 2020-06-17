@@ -2,10 +2,8 @@
 
 .. _doc-my-user-configuration-display:
 
-Display Settings per User
-=========================
-
-.. begin_display_set_user
+Configure Display Settings per User
+===================================
 
 In the Display section, you can configure the following display options for a particular user:
 
@@ -17,7 +15,6 @@ In the Display section, you can configure the following display options for a pa
 
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
-
 
    .. image:: /user/img/system/user_management/my_user_config_display.png
       :alt: Settings menu options available on the user level
@@ -110,8 +107,6 @@ For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-st
 
    .. image:: /user/img/system/config_system/user_configuration_showsql.png
       :alt: A sample of the enabled display SQL field
-
-.. finish_display_set_user
 
 .. include:: /include/include-images.rst
    :start-after: begin

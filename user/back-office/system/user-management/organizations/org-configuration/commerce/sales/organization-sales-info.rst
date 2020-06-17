@@ -2,10 +2,8 @@
 
 .. _sys--conf--commerce--sales--contacts-organization:
 
-Sales Rep Information per Organization
---------------------------------------
-
-.. begin 
+Configure Settings for Contacts per Organization (Sales Rep Information)
+========================================================================
 
 To enable or disable the display of sales representative information in the storefront :ref:`footer links <frontstore-guide--navigation-footer>` per organization:
 

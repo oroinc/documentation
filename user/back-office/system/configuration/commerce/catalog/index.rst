@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--catalog:
 
-Catalog
-=======
+Configure Global Catalog Settings
+=================================
 
 Learn how to configure price lists, price selection strategies and pricing rounding, as well as enable and set up related products.
 
@@ -17,7 +17,7 @@ Learn how to configure price lists, price selection strategies and pricing round
    :hidden:
    :maxdepth: 1
 
-   global-pricing
-   global-related-products
-   global-filters-sorters
-   global-all-products
+   Pricing <global-pricing>
+   Related Items <global-related-products>
+   Filters and Sorters <global-filters-sorters>
+   Special Pages <global-all-products>

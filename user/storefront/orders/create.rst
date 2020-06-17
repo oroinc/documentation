@@ -1,7 +1,7 @@
 .. _frontstore-guide--orders-create:
 
-Create an Order
-===============
+Create an Order in the Storefront
+=================================
 
 You can create an order in two ways:
 

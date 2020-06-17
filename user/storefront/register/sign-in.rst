@@ -2,8 +2,8 @@
 
 .. begin
 
-Sign In
-^^^^^^^
+Sign In to the Storefront Account
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To start working with the store, ensure you have an account created. If you are registered, follow the next steps to sign in:
 

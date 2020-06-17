@@ -2,11 +2,8 @@
 
 .. _user-guide--system--tags-management--taxonomies:
 
-Taxonomies
-==========
-
-Overview
---------
+Configure Taxonomies in the Back-Office
+=======================================
 
 The following guide describes how you can configure taxonomies in your Oro application which located under **System > Tag Management > Taxonomies** in the main menu.
 

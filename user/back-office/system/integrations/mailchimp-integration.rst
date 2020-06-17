@@ -2,8 +2,8 @@
 
 .. _user-guide-mc-integration:
 
-MailChimp Integration
-=====================
+Configure MailChimp Integration in the Back-Office
+==================================================
 
 .. begin_include
 

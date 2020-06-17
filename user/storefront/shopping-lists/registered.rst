@@ -1,7 +1,7 @@
 .. _frontstore-guide--shopping-lists-registered:
 
-Shopping Lists for Registered Users
-===================================
+Manage Shopping Lists for Registered Users in the Storefront
+============================================================
 
 Create a Shopping List
 ----------------------

@@ -1,7 +1,8 @@
 .. _storefront-general-layout:
 
-General Layout
---------------
+Manage General Layout in the Storefront
+=======================================
+
 
 .. note:: The screenshots in this guide are provided for illustration purposes only, as layouts and available functionality may vary as the result of customization.
 

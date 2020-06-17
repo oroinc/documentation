@@ -2,8 +2,8 @@
 
 .. _user-guide--system--workflow-management-steps-transitions:
 
-Workflow Steps, Transitions, and Attributes
--------------------------------------------
+Configure Workflow Steps, Transitions, and Attributes in the Back-Office
+------------------------------------------------------------------------
 
 .. TODO Fix transitions if necessary (may it launch on schedule or on event?) .. Yes, it can, the information about it is in the dev guide.
 

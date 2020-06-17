@@ -2,8 +2,8 @@
 
 .. _configuration--guide--system--configuration--websites:
 
-Websites
-========
+Configure Global Websites Settings
+==================================
 
 Learn how to set up general routing and sitemap settings.
 
@@ -15,6 +15,6 @@ Learn how to set up general routing and sitemap settings.
    :hidden:
    :maxdepth: 1
 
-   global-routing
-   global-sitemap
+   Routing <global-routing>
+   Sitemap <global-sitemap>
 

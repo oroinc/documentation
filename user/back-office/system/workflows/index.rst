@@ -4,8 +4,8 @@
 .. _user-guide--system--workflow-management:
 .. _doc--system--workflow-management:
 
-Workflows
-=========
+Configure Workflows in the Back-Office
+======================================
 
 In Oro, a :term:`workflow <Workflow>` is a business process that involves multiple user interactions or sequential phases. It may trigger other workflows and change the status of the items involved in a business process.
 
@@ -374,9 +374,9 @@ See the following sections to get more information about the system workflows in
 .. toctree::
    :maxdepth: 1
 
-   system-workflows/index
-   custom-workflows
-   steps-transitions
+   System Workflows <system-workflows/index>
+   Custom Workflows <custom-workflows>
+   Workflow Steps, Transitions, and Attributes <steps-transitions>
 
 .. include:: /include/include-images.rst
    :start-after: begin

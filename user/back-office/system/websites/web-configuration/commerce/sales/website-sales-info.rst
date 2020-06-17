@@ -2,10 +2,8 @@
 
 .. _sys--conf--commerce--sales--contacts-website:
 
-Sales Rep Information per Website
----------------------------------
-
-.. begin
+Configure Settings for Contacts per Website (Sales Rep Information)
+===================================================================
 
 To enable or disable the display of sales representative information in the storefront :ref:`footer links <frontstore-guide--navigation-footer>` per website:
 
@@ -30,8 +28,6 @@ Provide Guest Contact Details
 5. In the **Guest Contact** text box, you may enter contact information that will be shown to non-authenticated visitors.
 
 6. Click **Save Settings**.
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

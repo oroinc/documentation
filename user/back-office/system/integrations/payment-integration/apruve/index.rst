@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--payment-providers-overview--apruve:
 
-Apruve Payment Service
-======================
+Manage Apruve Payment Service in the Back-Office
+================================================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
@@ -31,8 +31,8 @@ To set up Apruve payment service in OroCommerce:
    :hidden:
    :maxdepth: 1
 
-   apruve-prerequisites
-   apruve-integration
+   Prerequisites for Apruve Services Integration <apruve-prerequisites>
+   Apruve Payment Method Integration <apruve-integration>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

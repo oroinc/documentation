@@ -1,7 +1,7 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-Create a User
-=============
+Create a User in the Back-Office
+================================
 
 Before you proceed, consider checking out user-related video tutorials in the Oro media library:
 

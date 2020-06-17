@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--product-images:
 
-Product Images
-==============
+Configure Global Settings for Product Images
+============================================
 
 On the Product Images configuration page, you can control the following settings:
 
@@ -23,13 +23,11 @@ To update the product watermark settings globally:
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Product Images** in the menu to the left.
 
-.. note::
-   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note::
+      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/product/ProductImages.png
       :alt: Global product image watermark configuration settings
-
-   The following options are available:
 
    * **File** — The image file with the watermark on a transparent background.
    * **Size** — The size of the watermark in percentage compared to the whole image.

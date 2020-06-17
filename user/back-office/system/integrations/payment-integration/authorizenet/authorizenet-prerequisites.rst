@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--prerequisites--authorizenet:
 
-Prerequisites for Authorize.Net Integration
-===========================================
+Prerequisites for Authorize.Net Integration in the Back-Office
+==============================================================
 
 .. begin
 

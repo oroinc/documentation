@@ -2,10 +2,8 @@
 
 .. _configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization:
 
-Upload Settings per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin
+Configure Upload Settings per Organization
+==========================================
 
 To configure **MIME types** per organization:
 
@@ -28,8 +26,6 @@ To configure **MIME types** per organization:
 7. Click **Save Settings**.
 
 If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the configuration of the entity will prevail and override the corresponding settings configured both globally and per organization.
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

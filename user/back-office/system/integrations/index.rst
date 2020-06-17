@@ -2,8 +2,8 @@
 
 .. _user-guide-integrations:
 
-Integrations
-============
+Configure Integrations in the Back-Office
+=========================================
 
 OroCommerce fulfills individual customer wishes and provides miscellaneous extensions and third-party integration solutions to meet specific preferences of each business. Generally, the integrations are used for the operational routines digitalizing every possible area of your online webs store.
 
@@ -48,12 +48,12 @@ Check the following integrations that can be enabled/disabled and configured in 
 .. toctree::
    :hidden:
 
-   payment-integration/index
-   shipping-integration/index
-   gtm/index
-   dotmailer/index
-   mailchimp-integration
-   zendesk-integration
-   ldap-integration
-   embedded-forms/index
-   google/index
+   Manage Integrations: Payment Method Integration <payment-integration/index>
+   Manage Integrations: Shipping Method Integration <shipping-integration/index>
+   Google Tag Manager Integration <gtm/index>
+   dotmailer Integration <dotmailer/index>
+   MailChimp Integration <mailchimp-integration>
+   Zendesk Integration <zendesk-integration>
+   LDAP Integration <ldap-integration>
+   Embedded Forms <embedded-forms/index>
+   Google Integration <google/index>

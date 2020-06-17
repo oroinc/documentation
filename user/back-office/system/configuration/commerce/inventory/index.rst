@@ -3,8 +3,8 @@
 .. _configuration--guide--commerce--configuration--inventory:
 .. _configuration--guide--commerce--inventory:
 
-Inventory
-=========
+Configure Global Inventory Settings
+===================================
 
 .. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
 
@@ -21,7 +21,7 @@ Discover how to configure your storefront and back-office inventory statuses, ad
    :hidden:
    :maxdepth: 1
 
-   allowed-statuses
-   warehouses
-   product-options
-   limitations
+   Allowed Statuses <allowed-statuses>
+   Warehouses <warehouses>
+   Product Options <product-options>
+   Limitations <limitations>

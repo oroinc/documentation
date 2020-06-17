@@ -23,9 +23,9 @@ After you submit an order, it becomes available in the :ref:`Order History <my-a
    :maxdepth: 1
    :hidden:
 
-   create
-   matrix-form
-   reorder
+   Create an Order <create>
+   Order via Matrix Form <matrix-form>
+   Re-Order Products <reorder>
 
 .. include:: /include/include-images.rst
    :start-after: begin

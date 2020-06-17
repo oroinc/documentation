@@ -1,9 +1,9 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-Integrations Configuration Settings per Organization
-====================================================
+Configure Integration Settings per Organization
+===============================================
 
 .. toctree::
    :maxdepth: 1
 
-   organization-google
+   Google Settings <organization-google>

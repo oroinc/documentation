@@ -3,8 +3,8 @@
 .. _system-websites:
 .. _user-guide--system-websites:
 
-Websites
-========
+Configure Websites in the Back-Office
+=====================================
 
 .. important:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
 
@@ -25,8 +25,8 @@ Learn more about website management from the following sections:
    :glob:
 
    web-configuration/index
-   create
-   manage
+   Create a Website <create>
+   Manage a Website <manage>
    host-config
    configure-price-lists
    website-all-products-menu

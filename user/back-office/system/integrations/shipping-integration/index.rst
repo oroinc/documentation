@@ -3,8 +3,8 @@
 .. _sys--integrations--manage-integrations--ups--flat-rate:
 .. _user-guide--shipping--configuration--common-details:
 
-Manage Integrations: Shipping Method Integration
-================================================
+Configure Shipping Method Integration in the Back-Office
+========================================================
 
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 
@@ -59,7 +59,7 @@ The shipping methods created due to this integration are no longer usable in Oro
    :hidden:
    :maxdepth: 2
 
-   flat-rate
-   ups
-   fedex
-   dpd
+   Flat Rate Shipping Integration <flat-rate>
+   UPS Shipping Integration <ups>
+   FedEx Shipping Integration <fedex>
+   DPD Shipping Integration <dpd>

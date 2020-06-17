@@ -3,8 +3,8 @@
 
 .. _user-guide-processes:
 
-Processes
-=========
+Configure Processes in the Back-Office
+======================================
 
 Some actions in the Oro application trigger other actions. This behavior is pre-defined at the background and can be modified in the course of the system integration.
 For example, as soon as a new customer has been uploaded to the Oro application, an account and a record are automatically created for it, and if a new campaign has been created in a dotmailer address book synchronized with a marketing list in Oro, a new email campaign record is automatically created in OroCRM/OroCommerce.

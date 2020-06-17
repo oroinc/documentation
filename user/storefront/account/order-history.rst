@@ -3,8 +3,8 @@
 .. _frontstore-guide--orders-order-history:
 
 
-Order History
-=============
+Manage Order History in the Storefront
+======================================
 
 The Order History section stores the information on all your open and submitted orders. Here, you can check the details on the order number, the date it was created, the address this order was shipped to, the total amount, the payment method and the payment status.
 

@@ -2,8 +2,8 @@
 
 .. _sys--integrations--manage-integrations--payment-methods:
 
-Manage Integrations: Payment Method Integration
-===============================================
+Configure Payment Method Integration in the Back-Office
+=======================================================
 
 .. begin
 
@@ -79,12 +79,12 @@ The payment methods that were based on this integration are no longer usable in 
    :maxdepth: 2
    :hidden:
 
-   check-money-order/index
-   payment-terms/index
-   paypal-services/index
-   apruve/index
-   authorizenet/index
-   infinitepay/index
-   wirecard/index
-   checkout/index
+   Check/Money Order Service <check-money-order/index>
+   Payment Terms <payment-terms/index>
+   PayPal Payment Services <paypal-services/index>
+   Apruve Payment Service <apruve/index>
+   Authorize.Net Payments Services <authorizenet/index>
+   InfinitePay Payment Service <infinitepay/index>
+   Wirecard Payments Services <wirecard/index>
+   Payments at Checkout <checkout/index>
 

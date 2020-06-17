@@ -5,8 +5,8 @@
 .. _user-management-users:
 .. _user_management_overview:
 
-Users
-=====
+Configure Users in the Back-Office
+==================================
 
 A :term:`user <User>` is the most granular element of the administrative structure in your company. Usually, they are individuals employed by your company, or granted access under other conditions. They can also be a group of people or a third party system with a specific set of credentials (login and password) that can be used to access the Oro application. To ensure effective work of users and high protection of sensitive data in the application, correct configuration of all user records and access settings is essential.
 
@@ -17,8 +17,8 @@ In addition to configuring settings for the user as the administrator, each user
 .. toctree::
    :maxdepth: 1
 
-   create
-   manage
+   Create a User <create>
+   Manage Users <manage>
    configuration/index
 
 

@@ -4,8 +4,8 @@
 .. _user-guide--system-configuration--commerce-sales--rfq:
 
 
-Request for Quote
-=================
+Configure Global Request for Quote Settings
+===========================================
 
 On the RFQ configuration page, you can control RFQ Notification options and Guest RFQs.
 

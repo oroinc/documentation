@@ -3,8 +3,8 @@
 
 .. _user-guide--payment--payment-providers-overview--infinitepay:
 
-InfinitePay Payment Service
-===========================
+Manage InfinitePay Payment Service in the Back-Office
+=====================================================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
@@ -47,8 +47,8 @@ Depending on the way InfinitePay integration parameters are configured, the foll
 .. toctree::
    :hidden:
 
-   infinitepay-prerequisites
-   infinitepay-integration
+   Prerequisites for InfinitePay Integration <infinitepay-prerequisites>
+   InfinitePay Payment Method Integration <infinitepay-integration>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

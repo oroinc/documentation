@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--taxation:
 
-Taxation
-========
+Configure Global Taxation Settings
+==================================
 
 .. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 
@@ -18,7 +18,7 @@ Learn how to enable taxation, select the tax provider, set Sales and VAT taxes, 
    :titlesonly:
    :hidden:
 
-   tax-calculation
-   us-sales-tax
-   eu-vat-tax
-   shipping-tax
+   Tax Calculation <tax-calculation>
+   US Sales Tax <us-sales-tax>
+   EU VAT Tax <eu-vat-tax>
+   Shipping <shipping-tax>

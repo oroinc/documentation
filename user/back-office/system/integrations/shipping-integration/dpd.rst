@@ -2,8 +2,8 @@
 
 .. _doc--integrations--dpd:
 
-DPD Shipping Integration
-========================
+Configure DPD Shipping Integration in the Back-Office
+=====================================================
 
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 
@@ -34,8 +34,8 @@ Prepare for Integration
 
 Before setting up an integration with DPD, make sure you obtain the required credentials. Please visit the |DPD developer eSolutions portal|, or contact |DPD customer support| for more information.
 
-Configure DPD integration in OroCommerce
-----------------------------------------
+Configure DPD Integration
+-------------------------
 
 To set up a DPD integration in OroCommerce:
 

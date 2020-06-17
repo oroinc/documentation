@@ -2,8 +2,8 @@
 
 .. _admin-configuration-application-org:
 
-Application Settings per Organization
--------------------------------------
+Configure Application Settings per Organization
+===============================================
 
 In this section, you can configure the Web API feature both for the back-office and storefront. By default, the API feature is disabled.
 

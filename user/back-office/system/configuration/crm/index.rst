@@ -3,8 +3,8 @@
 
 .. _configuration--guide--crm--configuration:
 
-CRM Configuration
-=================
+Global CRM Configuration Settings
+=================================
 
 In the CRM Configuration guide, discover how to enable the key sales features such as leads, opportunities and sales territories, as well as set up the default probabilities for opportunities statuses.
 
@@ -22,6 +22,6 @@ Learn how to enable and set up leads, opportunities and sales territories.
    :hidden:
    :maxdepth: 1
    
-   sales-pipeline/index
+   Sales Pipeline <sales-pipeline/index>
 
    

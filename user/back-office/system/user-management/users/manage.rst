@@ -1,7 +1,7 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-Manage Users
-============
+Manage Users in the Back-Office
+===============================
 
 .. _doc-user-management-users-actions-enable:
 .. _doc-user-management-users-actions-disable:

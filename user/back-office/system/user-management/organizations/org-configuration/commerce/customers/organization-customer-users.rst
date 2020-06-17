@@ -2,10 +2,8 @@
 
 .. _system--user-mngm--organization--configuration--commerce--customers--customer-users:
 
-Customer Users Per Organization
--------------------------------
-
-.. begin
+Configure Customer User Settings per Organization
+=================================================
 
 To change the default customer user configuration settings for an organization:
 
@@ -14,8 +12,6 @@ To change the default customer user configuration settings for an organization:
 3. Select **Commerce > Customer > Customer Users** in the menu to the left.
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
-
-   The following page opens:
 
    .. image:: /user/img/system/user_management/org_configuration/customers/CustomerUsersPerOrganization.png
       :class: with-border
@@ -41,9 +37,6 @@ To change the default customer user configuration settings for an organization:
      b) Select the new option.
 
 7. Click **Save Settings**.
-
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

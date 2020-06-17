@@ -2,11 +2,8 @@
 
 .. _user-guide--taxes--tax-configuration:
 
-
-Tax Calculation
-^^^^^^^^^^^^^^^
-
-.. begin
+Configure Global Tax Calculation Settings
+=========================================
 
 .. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 
@@ -17,8 +14,8 @@ To customize the following tax calculation settings that impact the way OroComme
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Taxation > Tax Calculation** in the menu to the left.
 
-.. note::
-   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note::
+      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/taxation/TaxCalculation.png
       :alt: Global tax calculation configuration

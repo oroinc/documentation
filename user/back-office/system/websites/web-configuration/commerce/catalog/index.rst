@@ -1,15 +1,15 @@
 :oro_documentation_types: OroCommerce
 
-Catalog Configuration Settings per Website
-==========================================
+Configure Catalog Settings per Website
+======================================
 
 .. toctree::
    :maxdepth: 1
 
-   website-pricing
-   website-filters-sorters
-   website-related-products
-   website-all-products
+   Pricing <website-pricing>
+   Filters and Sorters <website-filters-sorters>
+   Related Items <website-related-products>
+   Special Pages <website-all-products>
 
 
 

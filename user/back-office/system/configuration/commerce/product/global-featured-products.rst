@@ -4,8 +4,8 @@
 .. _sys--commerce--product--featured-products--main:
 .. _sys--commerce--product--featured-products:
 
-Featured Products
-=================
+Configure Global Settings for Featured Products
+===============================================
 
 You can mark some of the products as featured to display them in the Featured Products block on the main landing page (home page) in the storefront.
 

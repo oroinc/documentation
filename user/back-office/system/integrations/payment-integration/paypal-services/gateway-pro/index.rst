@@ -3,8 +3,8 @@
 .. _sys--integrations--manage-integrations--paypal-payflow-gateway:
 .. _sys--integrations--manage-integrations--paypal-payments-pro:
 
-PayPal Payflow Gateway / PayPal Payment Pro Payment Methods Integration
-=======================================================================
+Configure PayPal Payflow Gateway / PayPal Payment Pro Payment Methods Integration in the Back-Office
+====================================================================================================
 
 .. begin
 

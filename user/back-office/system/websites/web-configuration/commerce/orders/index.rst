@@ -1,10 +1,10 @@
 :oro_documentation_types: OroCommerce
 
-Order Configuration Settings per Website
-========================================
+Configure Order Settings per Website
+=====================================
 
 .. toctree::
    :maxdepth: 1
 
-   website-order-creation
-   website-previously-purchased
+   Order Creation <website-order-creation>
+   Purchase History <website-previously-purchased>

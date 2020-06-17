@@ -2,8 +2,8 @@
 
 .. _localization--languages:
 
-Languages
----------
+Configure Languages in the Back-Office
+======================================
 
 .. begin
 

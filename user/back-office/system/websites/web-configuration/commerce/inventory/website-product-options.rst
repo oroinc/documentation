@@ -2,10 +2,8 @@
 
 .. _sys--conf--commerce--inventory--product-options--website:
 
-Product Options per Website
----------------------------
-
-.. begin
+Configure Product Options Settings per Website
+==============================================
 
 To customize the default product options per website:
 
@@ -48,8 +46,6 @@ To customize the default product options per website:
 
 5. Click **Save Settings**.
 
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

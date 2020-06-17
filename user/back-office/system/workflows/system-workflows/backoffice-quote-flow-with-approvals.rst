@@ -3,8 +3,8 @@
 .. _doc--workflows--backoffice-quote-flow-with-approvals:
 .. _system--workflows--quote-backoffice-workflow:
 
-Backoffice Quote Flow with Approvals
-====================================
+Configure Backoffice Quote Flow with Approvals in the Back-Office
+=================================================================
 
 Overview
 --------

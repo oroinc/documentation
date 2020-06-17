@@ -2,10 +2,8 @@
 
 .. _admin--guide--commerce--configuration--customers--consents--enable--website:
 
-Consents per Website
---------------------
-
-.. start_enable_consents_website
+Enable Consents Settings per Website
+====================================
 
 In OroCommerce, you can enable consents for the storefront if :ref:`consents have been enabled globally <admin--guide--commerce--configuration--customers--consents--enable--globally>`.
 
@@ -32,8 +30,6 @@ To enable consents for the storefront on the website level:
 
 #. To delete a consent from the list of enabled consents, click **x** next to it.
 #. Click **Save Settings** on the top right.
-
-.. finish_enable_consents_website
 
 **Related Topics**
 

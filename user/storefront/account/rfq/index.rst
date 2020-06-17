@@ -2,8 +2,8 @@
 
 .. _frontstore-guide--rfq:
 
-Requests for Quote
-==================
+Manage Requests for Quote in the Storefront
+===========================================
 
 To negotiate with the sales person (e.g. on a better price, more convenient quantities and additional services), you can request a quote. Both registered and guest users can create :term:`RFQs <Request for Quote>` in the Oro storefront.
 
@@ -70,8 +70,8 @@ You can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of t
    :maxdepth: 1
    :hidden:
 
-   registered
-   guests
+   Create an RFQ <registered>
+   Create a Guest RFQ <guests>
 
 .. include:: /include/include-images.rst
    :start-after: begin

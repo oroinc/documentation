@@ -2,8 +2,8 @@
 
 .. _admin-configuration-application:
 
-Application Settings
-====================
+Configure Global Application Settings
+=====================================
 
 You can view details of your application settings and control the Web API feature availability both for the back-office and storefront. By default, the API feature is disabled fo the application.
 

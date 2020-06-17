@@ -1,7 +1,7 @@
 .. _frontstore-guide-roles:
 
-Roles
-=====
+Manage Roles in the Storefront
+==============================
 
 Roles are predefined sets of permissions. In the Roles section, you can view, edit and create new roles to define the level of permissions and access to the actions and data in OroCommerce storefront for the users of a specific role.
 

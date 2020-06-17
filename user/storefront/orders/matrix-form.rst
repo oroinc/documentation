@@ -1,7 +1,7 @@
 .. _frontstore-guide--orders-matrix:
 
-Order via Matrix Form
-=====================
+Create an Order via Matrix Form in the Storefront
+=================================================
 
 To simplify ordering process when purchasing several variations of one product, such as a USB flash drive in various colors and capacity, you can use a **Matrix Form**. The matrix form is available only when a **product has one or two attributes**.
 

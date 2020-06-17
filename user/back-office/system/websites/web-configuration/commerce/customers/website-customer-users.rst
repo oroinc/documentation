@@ -2,10 +2,8 @@
 
 .. _system--website--configuration--commerce--customers--customer-users:
 
-Customer Users Per Website
---------------------------
-
-.. begin
+Configure Customer User Settings per Website
+============================================
 
 To change the default customer user configuration settings for a website:
 
@@ -35,8 +33,6 @@ To change the default customer user configuration settings for a website:
      b) Select the new option.
 
 6. Click **Save Settings**.
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

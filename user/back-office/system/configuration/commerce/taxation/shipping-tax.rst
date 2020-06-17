@@ -4,10 +4,8 @@
 
 .. System > Configuration > Commerce > Taxation > Shipping Tax
 
-Shipping
---------
-
-.. begin
+Configure Global Shipping Tax Settings
+======================================
 
 .. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 

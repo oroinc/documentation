@@ -3,8 +3,8 @@
 .. _sys--websites--commerce--catalog--related-products:
 .. _sys--websites--commerce--catalog--upsell-products:
 
-Related Products per Website
-----------------------------
+Configure Related Product Settings per Website
+==============================================
 
 In the Related Items section, you can configure the settings for related and up-sell products for a particular website. These settings may apply :ref:`globally <sys--commerce--catalog--relate-products--main>` and per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`.
 
@@ -58,9 +58,6 @@ To update the related products settings per website:
    b) Set or clear the option, or enter the quantity.
 
 6. Click **Save**.
-
-.. finish_upsell_items_body
-.. finish_related_products_body
 
 .. include:: /include/include-images.rst
    :start-after: begin

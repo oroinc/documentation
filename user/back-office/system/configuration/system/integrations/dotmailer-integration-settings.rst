@@ -3,8 +3,8 @@
 
 .. _admin-configuration-dotmailer-integration-settings:
 
-Dotmailer Settings
-==================
+Configure Global Dotmailer Settings
+===================================
 
 To enable data synchronization, make sure you configure dotmailer integration on the Oro application side (see :ref:`dotmailer Integration <user-guide-dotmailer-configuration--dotmailer-side>`) and on the dotmailer side (see :ref:`dotmailer Configuration <user-guide-dotmailer-configuration--oro-side>`).
 

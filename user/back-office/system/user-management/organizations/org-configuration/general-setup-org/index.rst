@@ -2,8 +2,8 @@
 
 .. _configuration--guide--system--configuration--general-setup-sysconfig--org:
 
-General Setup for Organization
-==============================
+Configure General Setup Settings per Organization
+=================================================
 
 .. important:: Multi-organization management is only available in the Enterprise edition.
 
@@ -19,10 +19,10 @@ Learn how to configure localization options, currency and tracking, as well and 
 .. toctree::
    :hidden:
 
-   organization-application-settings
-   organization-localization
-   organization-display-settings
-   organization-email-settings
-   organization-currency
-   organization-upload-settings
-   integrations/index
+   Application Settings <organization-application-settings>
+   Localization <organization-localization>
+   Display Settings <organization-display-settings>
+   Email Configuration <organization-email-settings>
+   Currency <organization-currency>
+   Upload Settings <organization-upload-settings>
+   Integrations <integrations/index>

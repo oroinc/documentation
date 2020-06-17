@@ -1,10 +1,10 @@
 :oro_documentation_types: OroCommerce
 
-Websites Configuration Settings per Website
--------------------------------------------
+Configure Website Settings per Website
+======================================
 
 .. toctree::
    :maxdepth: 1
 
-   website-routing
-   website-sitemap
+   Routing <website-routing>
+   Sitemap <website-sitemap>

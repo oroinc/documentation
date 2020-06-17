@@ -3,8 +3,9 @@
 
 .. _backend-frontend-menus:
 
-Frontend Menus
-==============
+Configure Frontend Menus in the Back-Office
+===========================================
+
 
 In this section, you will learn the menu types available for the OroCommerce storefront and how to edit and configure them.
 

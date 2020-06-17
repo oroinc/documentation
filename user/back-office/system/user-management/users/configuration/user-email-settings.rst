@@ -5,8 +5,8 @@
 .. _doc-my-user-configuration-email:
 .. _user-guide-using-emails-vie:
 
-Email Settings per User
-=======================
+Configure Email Settings per User
+=================================
 
 .. hint:: Read more on this topic in :ref:`Emails <admin-guide-email-configuration>`.
 

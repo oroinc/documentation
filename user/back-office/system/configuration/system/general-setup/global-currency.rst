@@ -3,8 +3,8 @@
 .. _sys--config--sysconfig--general-setup--currency:
 .. _admin-configuration-currency:
 
-Currency
-========
+Configure Global Currency Settings
+==================================
 
 Currency configuration helps you:
 

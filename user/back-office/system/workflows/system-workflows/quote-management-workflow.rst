@@ -2,9 +2,8 @@
 
 .. _system--workflows-quote:
 
-Quote Management Flow
-=====================
-
+Configure Quote Management Flow in the Back-Office
+==================================================
 
 .. start_quote_management_flow
 

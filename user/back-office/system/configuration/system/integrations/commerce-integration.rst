@@ -3,8 +3,8 @@
 .. _user-guide-commerce-integration:
 .. _user-guide-commerce-integration-accounts:
 
-CRM and Commerce
-================
+Configure Global CRM and Commerce Settings
+==========================================
 
 The integration between OroCRM and OroCommerce provides seamless experience of two applications working as one.
 

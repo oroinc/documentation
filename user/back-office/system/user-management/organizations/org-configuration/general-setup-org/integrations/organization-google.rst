@@ -3,8 +3,8 @@
 .. _user-guide-hangouts-org:
 .. _organization-google-settings:
 
-Google Settings per Organization
-================================
+Configure Google Settings per Organization
+==========================================
 
 To configure Google Tag Manager and Hangouts settings per organization:
 

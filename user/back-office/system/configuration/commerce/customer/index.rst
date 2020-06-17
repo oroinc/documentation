@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--customer:
 
-Customer
-========
+Configure Global Customer Settings
+==================================
 
 Learn how to set up product and category visibility restrictions, customer user registration options, manage contact requests, and configure consents for back-office and storefront.
 
@@ -17,7 +17,7 @@ Learn how to set up product and category visibility restrictions, customer user 
    :hidden:
    :maxdepth: 1
 
-   visibility
-   global-customer-users
-   global-contact-us
-   global-consents
+   Visibility <visibility>
+   Customer Users <global-customer-users>
+   Contact Requests <global-contact-us>
+   Consents <global-consents>
