@@ -2,8 +2,8 @@
 
 .. _configuration--guide--system--configuration--integrations:
 
-Integrations
-============
+Configure Global Integration Settings
+=====================================
 
 Learn how to enable and setup the integration between your Oro application and Google, MS Exchange, MS Outlook, dotmailer.
 
@@ -17,7 +17,8 @@ Learn how to enable and setup the integration between your Oro application and G
 .. toctree::
    :hidden:
 
-   google-integration-settings
-   commerce-integration
+   Google Settings <google-integration-settings>
+   CRM and Commerce <commerce-integration>
    outlook-settings-oro
-   dotmailer-integration-settings
+   Dotmailer Settings <dotmailer-integration-settings>
+

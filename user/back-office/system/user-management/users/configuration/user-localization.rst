@@ -3,10 +3,8 @@
 .. _config_guide--localization--user-localization:
 .. _doc-my-user-configuration-localization:
 
-Localization Settings per User
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. begin
+Configure Localization Settings per User
+========================================
 
 To define the custom localization options for the particular user:
 
@@ -55,7 +53,6 @@ Here, you can configure the following options by clearing the **Use Organization
 
 7. Click **Save Settings**.
 
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

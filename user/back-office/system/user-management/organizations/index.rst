@@ -4,8 +4,8 @@
 .. _user-ee-multi-org:
 .. _user-ee-multi-org-system:
 
-Organizations
-=============
+Configure Organizations in the Back-Office
+==========================================
 
 An :term:`organization <Organization>` represents a real enterprise, business, firm, company or another organization, to which users belong. In the Community Edition of Oro applications, only one organization is available in the system, and you cannot create more.
 
@@ -34,8 +34,8 @@ When creating a new record in the global organization, you first need to select 
 .. toctree::
    :maxdepth: 1
 
-   create
-   manage
+   Create an Organization <create>
+   Manage Organizations <manage>
    organization-all-products-menus
    organization-frontend-menus
    org-configuration/index

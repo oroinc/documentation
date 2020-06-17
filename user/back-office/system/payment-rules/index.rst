@@ -2,8 +2,8 @@
 
 .. _sys--payment-rules:
 
-Payment Rules
-=============
+Configure Payment Rules in the Back-Office
+==========================================
 
 .. begin
 

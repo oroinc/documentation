@@ -40,14 +40,14 @@ Before you proceed, consider watching the following media library tutorials:
    :titlesonly:
    :maxdepth: 1
 
-   getting-started/index
-   register/index
-   account/index
-   orders/index
-   quotes/index
-   quick-order-form
-   shopping-lists/index
-   checkout/index
+   Navigation and UI <getting-started/index>
+   Register and Sign In <register/index>
+   My Account <account/index>
+   Orders <orders/index>
+   Quotes <quotes/index>
+   Quick Order Form <quick-order-form>
+   Shopping Lists <shopping-lists/index>
+   Checkouts <checkout/index>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

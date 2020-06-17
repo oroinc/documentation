@@ -4,8 +4,8 @@
 
 .. begin 
 
-Content Blocks
---------------
+Manage Content Blocks in the Back-Office
+========================================
 
 Content Blocks are the foundation of your site, and they can help create a custom layout. In Oro applications, you can modify the existing content blocks, or create your own.
 

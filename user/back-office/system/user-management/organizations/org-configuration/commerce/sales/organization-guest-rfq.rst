@@ -2,10 +2,8 @@
 
 .. _user-guide--system-configuration--commerce-sales--rfq--organization:
 
-Guest Request for Quote Submission per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin_rfq
+Configure Guest Request for Quote Settings per Organization
+===========================================================
 
 To enable guest request for quote submission per organization:
 
@@ -31,8 +29,6 @@ To enable guest request for quote submission per organization:
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest RFQs, adjust permissions for the Request for Quote entity in their roles accordingly.
 
 6. Click **Save Settings**.
-
-.. finish_rfq
 
 .. include:: /include/include-images.rst
    :start-after: begin

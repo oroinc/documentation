@@ -3,10 +3,8 @@
 .. _user-guide--system-configuration--commerce-sales-shopping-list-per-organization:
 .. _user-guide--system-configuration--commerce-sales-shopping-list--mass-action--organization:
 
-Guest Shopping Lists per Organization
--------------------------------------
-
-.. begin
+Configure Guest Shopping List Settings per Organization
+=======================================================
 
 In the Shopping List section of Commerce configuration settings, you can control the shopping list limit, guest shopping lists and their owners and mass product actions.
 
@@ -45,8 +43,6 @@ To configure them per organization:
 8. Click **Save Settings**.
 
 .. note:: When **Use System** check box is enabled, :ref:`system settings <user-guide--system-configuration--commerce-sales-shopping-list-global>` are applied.
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

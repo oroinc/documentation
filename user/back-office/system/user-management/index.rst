@@ -3,8 +3,8 @@
 .. _user-guide-user-management:
 .. _user-guide-user-management-permissions-roles--acl:
 
-User Management
-===============
+Configure Users, User Groups, Organization, and Business Units in the Back-Office
+=================================================================================
 
 Oro uses the hierarchy of roles to determine the levels of user access to data. In Oro applications, user, role and access management capabilities can be tailored to reflect any specific administrative hierarchy, helping define access and permission settings for any business need.
 
@@ -57,11 +57,11 @@ The following topics describe the available access levels and explain the differ
    :hidden:
    :maxdepth: 1
 
-   users/index
-   roles/index
-   groups/index
-   business-units/index
-   organizations/index
+   Users <users/index>
+   Roles and Permissions <roles/index>
+   User Groups <groups/index>
+   Business Units <business-units/index>
+   Organizations <organizations/index>
 
 .. include:: /include/include-images.rst
    :start-after: begin

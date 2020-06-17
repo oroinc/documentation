@@ -2,8 +2,9 @@
 
 .. _sys--integrations--manage-integrations--infinitepay:
 
-InfinitePay Payment Method Integration
-======================================
+Configure InfinitePay Payment Method Integration in the Back-Office
+===================================================================
+
 
 .. begin
 

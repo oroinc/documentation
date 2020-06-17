@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--payment-providers-overview--authorizenet:
 
-Authorize.Net Payments Services
-===============================
+Manage Authorize.Net Payments Services in the Back-Office
+=========================================================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
@@ -63,8 +63,8 @@ Transaction response from the payment gateway also does not contain sensitive in
    :maxdepth: 2
 
 
-   authorizenet-prerequisites
-   authorizenet-integration
+   Prerequisites for Authorize.Net Integration <authorizenet-prerequisites>
+   Authorize.Net Integration <authorizenet-integration>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

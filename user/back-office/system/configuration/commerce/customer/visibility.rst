@@ -3,8 +3,8 @@
 .. _sys-config--configuration--commerce--customers--visibility:
 .. _user-guide--customers--configuration--visibility:
 
-Visibility (Product and Category)
-=================================
+Configure Global Visibility (Product and Category) Settings
+===========================================================
 
 .. begin
 

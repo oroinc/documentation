@@ -2,13 +2,10 @@
 
 .. _sys--conf--commerce--customer--contact-request-organization:
 
-Contact Requests per Organization
----------------------------------
-
-.. begin
+Configure Contact Request Settings per Organization
+===================================================
 
 To enable or disable the display of the form in the storefront per organization:
-
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
@@ -27,8 +24,6 @@ The following page opens:
 
 5. Click **Save Settings**.
 
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

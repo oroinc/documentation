@@ -6,8 +6,8 @@
 .. _configuration-shopping-list:
 .. _user-guide--system-configuration--commerce-sales-shopping-list:
 
-Shopping List
-=============
+Configure Global Shopping List Settings
+=======================================
 
 Guest Shopping Lists
 --------------------

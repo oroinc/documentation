@@ -2,8 +2,8 @@
 
 .. _user-guide--product-brands:
 
-Product Brands
-==============
+Manage Product Brands in the Back-Office
+========================================
 
 .. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 

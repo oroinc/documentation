@@ -2,8 +2,8 @@
 
 .. _admin-guide-email-configuration:
 
-Emails
-======
+Configure Emails in the Back-Office
+===================================
 
 Businesses handle large amounts of internal and external correspondence on a daily basis and managing it all can be time consuming. Oro applications offer many tools and configuration settings to simplify and manage in-house and external correspondence to fit all your business needs.
 
@@ -36,8 +36,8 @@ All email settings are located in the system, organization, website, or user con
    :hidden:
    :maxdepth: 1
 
-   email-templates
-   notification-rules
+   Templates <email-templates>
+   Notification Rules <notification-rules>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

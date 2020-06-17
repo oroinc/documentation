@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--guests:
 
-Guests
-======
+Configure Global Guest Settings
+===============================
 
 Learn how to enable guest access.
 
@@ -12,5 +12,5 @@ Learn how to enable guest access.
 .. toctree::
    :hidden:
 
-   global-guest-access
+   Website Access <global-guest-access>
 

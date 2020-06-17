@@ -2,14 +2,14 @@
 
 .. _system--workflows--quote--understanding:
 
-Quote Workflows
-===============
+Configure Quote Workflows in the Back-Office
+============================================
 
 .. toctree::
    :maxdepth: 2
 
-   quote-management-workflow
-   backoffice-quote-flow-with-approvals
+   Quote Management Flow <quote-management-workflow>
+   Backoffice Quote Flow with Approvals <backoffice-quote-flow-with-approvals>
 
 .. note:: For general information on using workflows, see the :ref:`Workflows <user-guide--system--workflow-management>` section.
 

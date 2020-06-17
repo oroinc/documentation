@@ -2,8 +2,8 @@
 
 .. _admin-guide--workflows--contact-request-wf:
 
-Contact Request Workflow
-========================
+Configure Contact Request Workflow in the Back-Office
+=====================================================
 
 .. contents:: :local:
 

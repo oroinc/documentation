@@ -2,12 +2,12 @@
 
 .. _configuration--commerce--inventory-organization:
 
-Inventory Configuration Settings per Organization
-=================================================
+Configure Inventory Settings per Organization
+=============================================
 
 .. toctree::
    :maxdepth: 1
 
-   organization-warehouses
-   organization-product-options
-   organization-limitations
+   Warehouses <organization-warehouses>
+   Product Options <organization-product-options>
+   Limitations <organization-limitations>

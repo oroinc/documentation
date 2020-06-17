@@ -2,8 +2,8 @@
 
 .. _user-guide-my-profile-oauth:
 
-Add OAuth Applications
-----------------------
+Add OAuth Applications under My User Menu
+-----------------------------------------
 
 .. this topic is included into customer_uses/index
 

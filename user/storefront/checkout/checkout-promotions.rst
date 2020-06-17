@@ -1,7 +1,7 @@
 .. _frontstore-guide--orders-checkout--promotions:
 
-Promotions at Checkout
-======================
+Use Promotions at Checkout in the Storefront
+============================================
 
 Customers can redeem coupons that are connected to specific promotions once they reach checkout. Depending on the promotion type, customers can apply one or several coupons to the current order.
 

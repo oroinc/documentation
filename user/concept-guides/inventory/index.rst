@@ -2,8 +2,8 @@
 
 :oro_documentation_types: OroCommerce
 
-Inventory and Warehouse Management
-==================================
+Inventory and Warehouse Management Concept Guide
+================================================
 
 With e-commerce marketing increasing dramatically and products selling online more frequently than ever before, it is vital for businesses to keep track of their inventory, know where their products are, whether they are overstocked, in stock, or out of stock, and organize proper workflows to ensure that all processes run effectively.
 
@@ -150,8 +150,8 @@ In other words, if you set the inventory options for the whole system, but your 
 
 **Related Topics**
 
-* :ref:`Inventory Management User Guide <user-guide--inventory>`
-* :ref:`Warehouse Management User Guide <user-guide--inventory--warehouse--create>`
+* :ref:`Manage Inventory in the Back-Office <user-guide--inventory>`
+* :ref:`Manage Warehouse in the Back-Office <user-guide--inventory--warehouse--create>`
 * :ref:`Global Inventory Configuration <configuration--guide--commerce--configuration--inventory>`
 * :ref:`Organization-specific Inventory Configuration <configuration--commerce--inventory-organization>`
 * :ref:`Website-specific Inventory Configuration <configuration--commerce--inventory-website>`

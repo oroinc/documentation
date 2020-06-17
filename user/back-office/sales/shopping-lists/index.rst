@@ -2,8 +2,8 @@
 
 .. _user-guide--sales--shopping-lists:
 
-Shopping Lists 
-==============
+Manage Shopping Lists in the Back-Office
+========================================
 
 :term:`Shopping lists <Shopping List>` are similar to shopping carts in most online stores. However, shopping lists have additional features. These include the ability to:
 

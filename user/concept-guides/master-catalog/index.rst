@@ -2,8 +2,8 @@
 
 .. _concept-guide-master-catalog:
 
-Master Catalog Management
-=========================
+Master Catalog Management Concept Guide
+=======================================
 
 Setting up a :ref:`master catalog <user-guide--master-catalog>` may be one of the first steps of your OroCommerce journey. One OroCommerce :ref:`organization <user-management-organizations>` always has only **one master catalog** that structures all existing products in your store by categories to help you organize what you are selling. By configuring a particular set of product options, visibility, and SEO settings for each master catalog category, you enforce a unified selling strategy.
 

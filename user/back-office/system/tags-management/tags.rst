@@ -2,11 +2,8 @@
 
 .. _user-guide--system--tags-management-tags:
 
-Tags
-====
-
-Overview
---------
+Configure Tags in the Back-Office
+=================================
 
 The following guide describes how you can configure :term:`tags <Tag>` in your Oro application. Tags are located under **System > Tags Management** in the main menu.
 

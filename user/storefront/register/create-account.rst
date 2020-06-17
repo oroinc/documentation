@@ -2,8 +2,8 @@
 
 .. begin
 
-Create Account
-^^^^^^^^^^^^^^
+Create Account in the Storefront
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First things first, you need to create a new account to be able to work with the store:
 

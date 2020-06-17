@@ -2,8 +2,8 @@
 
 .. _admin-capabilities:
 
-Entity and System Capabilities
-==============================
+Configure Entity and System Capabilities in the Back-Office
+===========================================================
 
 .. note:: The Entity and System Capabilities topic is part of the section on :ref:`Understanding Roles and Permissions <user-guide-user-management-permissions-roles>`, and provides the list of capabilities that you can enable or disable when creating or modifying roles in |oro_application|.
 

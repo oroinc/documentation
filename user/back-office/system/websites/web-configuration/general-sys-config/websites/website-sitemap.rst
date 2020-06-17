@@ -2,10 +2,8 @@
 
 .. _sys--websites--sysconfig--websites--sitemap:
 
-Sitemap Configuration Per Website
----------------------------------
-
-.. begin
+Configure Sitemap Settings per Website
+======================================
 
 You can control the way sitemap is generate for the specific website in OroCommerce.
 

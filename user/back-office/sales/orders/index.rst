@@ -2,8 +2,8 @@
 
 .. _user-guide--sales--orders:
 
-Orders 
-======
+Manage Orders in the Back-Office
+================================
 
 .. important:: This section is a part of the :ref:`Order Management <concept-guide-orders>` topic that provides the general understanding of order-related concepts in OroCommerce.
 

@@ -2,10 +2,8 @@
 
 .. _config_guide--localization--organization-localization:
 
-Localization Settings per Organization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. begin
+Configure Localization Settings per Organization
+================================================
 
 To define the custom localization options for a particular organization:
 
@@ -68,7 +66,6 @@ To define the custom localization options for a particular organization:
 
 7. Click **Save Settings**.
 
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

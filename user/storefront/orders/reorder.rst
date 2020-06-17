@@ -1,7 +1,7 @@
 .. _frontstore-guide--orders-reorder:
 
-Re-Order Products
-=================
+Re-Order Products in the Storefront
+===================================
 
 .. begin
 

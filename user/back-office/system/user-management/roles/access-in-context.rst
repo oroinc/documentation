@@ -2,8 +2,8 @@
 
 .. _user-guide-user-management-permissions-roles--examples:
 
-End-to-end Access Configuration in Context
-==========================================
+Configure End-to-End Access in Context in the Back-Office
+=========================================================
 
 We are going to illustrate how to configure access in |oro_application| on a simple example of AMCE company that consists of two organizations (ACME Manufacturing and ACME Services). We will focus on the ACME Services organization that has two regional divisions, one in the USA and the other one in the EU. Each of these two divisions has smaller subdivisions. In the USA these are *Los Angeles*, *Dallas* and *New York*, and in the EU it is *Western Europe* and *Eastern Europe*.
 

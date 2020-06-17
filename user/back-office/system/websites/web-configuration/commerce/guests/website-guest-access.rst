@@ -2,10 +2,8 @@
 
 .. _sys--conf--commerce--guest-access--website:
 
-Guest Website Access per Website
---------------------------------
-
-.. begin
+Configure Guest Website Access Settings per Website
+===================================================
 
 To enable guest access per website:
 
@@ -26,7 +24,6 @@ To enable guest access per website:
 
 .. image:: /user/img/system/websites/web_configuration/GuestAccessWeb.png
 
-.. finish 
 
 .. include:: /include/include-images.rst
    :start-after: begin

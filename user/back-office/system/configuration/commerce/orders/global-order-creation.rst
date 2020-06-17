@@ -4,8 +4,8 @@
 .. _configuration--commerce--orders-create:
 
 
-Order Creation
-==============
+Configure Global Order Creation Settings
+========================================
 
 You can automatically assign a status to new :term:`orders <Order>` once they are created.
 

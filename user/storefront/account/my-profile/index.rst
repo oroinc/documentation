@@ -1,7 +1,8 @@
 .. _frontstore-guide--profile:
 
-My Profile
-==========
+Manage My Profile in the Storefront
+===================================
+
 
 The following information covers the **My Profile** section of the **Account** menu.
 

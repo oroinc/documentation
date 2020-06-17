@@ -4,8 +4,8 @@
 .. _sys--config--sysconfig--general-setup--localization:
 .. _doc-user-management-users-configuration-localization:
 
-Localization
-============
+Manage Localizations, Languages, and Translations in the Back-Office
+====================================================================
 
 :term:`Localization` is the process of translating and adapting a product for a specific country or region. Oro application allows a user to customize the format of date and time, numeric, percent, and monetary values as well as the format of names and addresses.
 
@@ -56,6 +56,6 @@ For detailed information on these topics, please see the following sections:
    :maxdepth: 1
    :hidden:
 
-   languages/index
-   translations/index
-   localizations/index
+   Languages <languages/index>
+   Translations <translations/index>
+   Localizations <localizations/index>

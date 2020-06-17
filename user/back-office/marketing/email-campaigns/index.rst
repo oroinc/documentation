@@ -4,8 +4,9 @@
 
 .. updated on 06 July 2017
 
-Email Campaigns
-===============
+Manage Email Campaigns in the Back-Office
+=========================================
+
 
 With Email Campaigns in Oro application, you can send an email with birthday wishes and a special offer to all of your loyal customers who were born in June or deliver a compliment to every customer who has purchased from you since April.
 

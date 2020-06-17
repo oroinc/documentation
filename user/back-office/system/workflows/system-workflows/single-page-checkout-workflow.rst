@@ -2,8 +2,8 @@
 
 .. _system--workflows--single-page-checkout:
 
-Single Page Checkout Workflow
-=============================
+Configure Single Page Checkout Workflow in the Back-Office
+==========================================================
 
 Overview
 --------

@@ -2,8 +2,8 @@
 
 .. _doc--payment--prerequisites--wirecard:
 
-Prerequisites for Wirecard Integration
-======================================
+Prerequisites for Wirecard Integration in the Back-Office
+=========================================================
 
 .. begin
 

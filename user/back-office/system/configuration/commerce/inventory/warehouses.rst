@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--inventory--warehouses:
 
-Warehouses
-==========
+Configure Global Warehouses Settings
+====================================
 
 .. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
 

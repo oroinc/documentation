@@ -3,8 +3,8 @@
 .. _system--workflows--rfq-backoffice-workflow:
 .. _system--workflows--rfq-backoffice-workflow-illustration:
 
-RFQ Management Flow Workflow
-----------------------------
+Configure RFQ Management Flow Workflow in the Back-Office
+=========================================================
 
 .. start_back_flow
 

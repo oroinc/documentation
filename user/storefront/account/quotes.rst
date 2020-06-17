@@ -1,7 +1,7 @@
 .. _my-account-quotes:
 
-Quotes
-======
+Manage Quotes in the Storefront
+===============================
 
 The Quotes section provides the details on all your created and submitted quotes. Here, you can negotiate with sales representatives on requesting a better price, more convenient quantities and additional services, view, accept, and submit an order based on the offered prices and conditions.
 

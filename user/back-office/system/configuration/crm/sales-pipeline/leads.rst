@@ -2,8 +2,8 @@
 
 .. _sys--configuration--crm--sales-pipeline--sales-territories-leads:
 
-Lead
-====
+Configure Global Lead Settings
+==============================
 
 .. hint:: Read more on this topic in :ref:`Sales: Leads <user-guide-system-channel-entities-leads>`.
 

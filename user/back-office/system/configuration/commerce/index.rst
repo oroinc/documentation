@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration:
 
-Commerce Configuration
-======================
+Global Commerce Configuration Options
+=====================================
 
 In the Commerce Configuration guide, learn how to enable and set up the key OroCommerce features.
 
@@ -129,14 +129,14 @@ Learn how to provide your shipping origin address and shipping options.
    :titlesonly:
    :hidden:
 
-   customer/index
-   guests/index
-   catalog/index
-   design/index
-   product/index
-   inventory/index
-   sales/index
-   taxation/index
-   payment/index
-   orders/index
-   shipping/index
+   Customer <customer/index>
+   Guests <guests/index>
+   Catalog <catalog/index>
+   Design <design/index>
+   Product <product/index>
+   Inventory <inventory/index>
+   Sales <sales/index>
+   Taxation <taxation/index>
+   Payment <payment/index>
+   Orders <orders/index>
+   Shipping <shipping/index>

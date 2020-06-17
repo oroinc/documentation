@@ -2,8 +2,8 @@
 
 .. _doc--payment--payment-providers-overview--wirecard:
 
-Wirecard Payments Services
-==========================
+Manage Wirecard Payments Services in the Back-Office
+====================================================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
@@ -84,8 +84,8 @@ Wirecard servers are PCI DSS complaint. This ensures that you provide to your bu
 .. toctree::
    :hidden:
 
-   wirecard-prerequisites
-   wirecard-integration
+   Prerequisites for Wirecard Integration <wirecard-prerequisites>
+   Wirecard Integration <wirecard-integration>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

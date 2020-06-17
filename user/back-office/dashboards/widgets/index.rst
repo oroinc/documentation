@@ -2,8 +2,8 @@
 
 :oro_documentation_types: OroCRM, OroCommerce
 
-Widgets
-=======
+Manage Widgets in the Back-Office
+=================================
 
 Oro applications come with a number of out-of-the-box widgets that can simplify the day-to-day sales, marketing and communication activities. These can be broken down into three categories:
 

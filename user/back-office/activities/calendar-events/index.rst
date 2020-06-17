@@ -2,8 +2,8 @@
 
 .. _doc-activities-events:
 
-Calendar Events
-===============
+Create and Manage Calendar Events in the Back-Office
+====================================================
 
 .. toctree::
    :maxdepth: 1

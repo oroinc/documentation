@@ -2,8 +2,8 @@
 
 .. _admin-configuration-user-settings:
 
-User Settings
-=============
+Configure Global User Settings
+==============================
 
 To apply user-related options in your Oro application instance:
 

@@ -2,7 +2,7 @@
 
 .. _admin-guide-create-entity-fields-type-related:
 
-Type-related Entity Field Properties
+Type-Related Entity Field Properties
 ------------------------------------
 
 Depending on the entity type selected when defining the :ref:`basic properties <admin-guide-create-entity-fields-basic>` for the entity field you are creating, additional options appear in the **General Information** section once you click **Continue**. The following is the list of field types and the options that appear once the types are selected.  

@@ -2,10 +2,8 @@
 
 .. _sys--commerce--orders--previously-purchased--org:
 
-Purchase History per Organization
----------------------------------
-
-.. begin
+Configure Purchase History Settings per Organization
+====================================================
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 
@@ -14,8 +12,6 @@ Purchase History per Organization
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 3. Select **Commerce > Orders > Purchase History** in the panel to the left.
-
-   The following page opens:
 
    .. image:: /user/img/system/user_management/org_configuration/orders/PreviouslyPurchasedOrg.png
 

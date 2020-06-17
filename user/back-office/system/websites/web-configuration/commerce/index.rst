@@ -10,11 +10,11 @@ Learn how to configure commerce-specific settings for selected websites:
 .. toctree::
    :maxdepth: 1
 
-   customers/index
-   guests/index
-   design/index
-   product/index
-   inventory/index
-   sales/index
-   catalog/index
-   orders/index
+   Customer <customers/index>
+   Guests <guests/index>
+   Design <design/index>
+   Product <product/index>
+   Inventory <inventory/index>
+   Sales <sales/index>
+   Catalog <catalog/index>
+   Orders <orders/index>

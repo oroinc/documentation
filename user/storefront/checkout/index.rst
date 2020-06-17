@@ -6,8 +6,8 @@
 .. _frontstore-guide--orders-checkout:
 .. _system--workflows--checkout-with-consents-workflow:
 
-Checkout
-========
+Review Multiple Checkouts in the Storefront
+===========================================
 
 Once the products for purchase and their quantity have been selected, both registered and guest customers have to go through a series of steps to submit the order.
 
@@ -29,7 +29,7 @@ For more details, review the sections outlined below:
    :maxdepth: 1
    :hidden:
 
-   multi-page
-   single-page
-   guest-checkout
-   checkout-promotions
+   Multi Page Checkout <multi-page>
+   Single Page Checkout <single-page>
+   Guest Checkout <guest-checkout>
+   Promotions at Checkout <checkout-promotions>

@@ -2,8 +2,8 @@
 
 .. _doc--integrations--ups:
 
-UPS Shipping Integration
-========================
+Configure UPS Shipping Integration in the Back-Office
+=====================================================
 
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 

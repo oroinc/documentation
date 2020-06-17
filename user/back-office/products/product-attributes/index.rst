@@ -2,8 +2,8 @@
 
 .. _products--product-attributes:
 
-Product Attributes
-==================
+Manage Product Attributes in the Back-Office
+============================================
 
 Overview
 --------

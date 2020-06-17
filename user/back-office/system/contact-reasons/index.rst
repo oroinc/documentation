@@ -2,8 +2,8 @@
 
 .. _admin-guide-contact-reasons:
 
-Contact Reasons
-===============
+Configure Contact Reasons in the Back-Office
+============================================
 
 Contact Reasons are used to help categorize the :ref:`contact requests <user-guide-activities-requests>` submitted by customers through any channel (either via the :ref:`embedded <admin-embedded-forms>` *Contact Us* form in the storefront, or by phone and email). You can create a list of contact reasons based on the most frequently asked questions or common issues. These reasons are displayed both in the storefront and in the back-office, enabling customers and sales representatives to select the appropriate topic for contact requests.
 

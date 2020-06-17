@@ -2,8 +2,8 @@
 
 .. _user-guide--products--price-attributes:
 
-Price Attributes
-================
+Manage Price Attributes in the Back-Office
+==========================================
 
 A :term:`Price Attribute` is a custom parameter, like manufacturer's suggested retail price (MSRP) or minimum advertised price (MAP), that may be needed as input information for your retail price listed on the website. Price attributes help you extend the product options with any custom value related to the price formation.
 

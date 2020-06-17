@@ -2,8 +2,8 @@
 
 .. _user-guide-system-channel-entities-business-customer:
 
-Business Customers
-==================
+Manage Business Customers in the Back-Office
+============================================
 
 Business customers represents a point of contact in your sales and business activities. With the help of Business Customers, you can track activities and records associated with them across different channels.
 

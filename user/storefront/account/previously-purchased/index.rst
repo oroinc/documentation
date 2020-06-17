@@ -1,7 +1,7 @@
 .. _frontstore-guide--previously-purchased:
 
-Previously Purchased Products
-=============================
+Manage Previously Purchased Products in the Storefront
+======================================================
 
 The Previously Purchased Products page displays the products that were recently purchased by customer users. In the storefront, this page is nested under the **Previous Purchased** section of the **Account** menu.
 

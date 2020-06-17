@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--catalog--filters-sorters--organization:
 
-Filters and Sorters  per Organization
--------------------------------------
+Configure Filters and Sorters Settings per Organization
+=======================================================
 
 To configure limiting filters and sorting options per organization:
 

@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--catalog--filters-sorters:
 
-Filters and Sorters
-===================
+Configure Global Filters and Sorters Settings
+=============================================
 
 To make sure that only the attributes of the required product family are displayed in the storefront, you can limit filters and sorting options in OroCommerce. You can also control whether to hide or disable filters and sorting options in the storefront for the products that do not belong to the selected product family.
 

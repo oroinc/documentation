@@ -2,8 +2,8 @@
 
 .. _admin-configuration-google:
 
-Google Integration
-==================
+Configure Google Integration in the Back-Office
+===============================================
 
 All Oro application editions support the integration with Google. With its help, you can configure Google single sign-on to enable users with the same Google account email address and OroCRM/Commerce primary email address to log in only once in a session. Additionally, you can configure oAuth2 with Google for email synchronization, and set up Google Hangouts calls.
 
@@ -18,5 +18,5 @@ Learn more in the following topics:
    :hidden:
    :maxdepth: 1
 
-   google-single-sign-on
-   hangouts
+   Google Single Sign-On <google-single-sign-on>
+   Voice and Video Calls via Hangouts <hangouts>

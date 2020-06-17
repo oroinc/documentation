@@ -3,8 +3,8 @@
 .. _user-guide-user-management-permissions-roles--interface:
 .. _user-guide-user-management-permissions-roles--actions:
 
-Create and Manage Roles
-=======================
+Configure User Roles in the Back-Office
+=======================================
 
 You can create new roles and apply permissions to fit specifically your business processes, clone and modify the existing roles.
 

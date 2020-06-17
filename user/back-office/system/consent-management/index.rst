@@ -3,8 +3,8 @@
 
 .. _system-consent-management:
 
-Consent Management
-==================
+Configure Consent Management in the Back-Office
+===============================================
 
 .. hint:: Read more on this topic in :ref:`Concept Guides: Consents <user-guide--consents>`.
 

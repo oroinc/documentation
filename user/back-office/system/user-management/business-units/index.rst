@@ -2,8 +2,8 @@
 
 .. _user-management-bu:
 
-Business Units
-==============
+Configure Business Units in the Back-Office
+===========================================
 
 A :term:`business unit <Business Unit>` represents a group of users with similar business or administrative tasks/roles.
 

@@ -6,8 +6,8 @@
 .. _sys--commerce--product--new-arrivals-block-global:
 
 
-Product Promotions
-==================
+Configure Global Settings for Product Promotions
+================================================
 
 On the Product Promotions configuration page, you can enable **New** product icons and set up a **New Arrivals** block globally, :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>` and :ref:`per website <sys--websites--commerce--products--new-arrivals>`.
 

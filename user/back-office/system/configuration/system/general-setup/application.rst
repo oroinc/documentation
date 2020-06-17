@@ -2,8 +2,8 @@
 
 .. _admin-configuration-application:
 
-Application Settings
-====================
+Configure Global Application Settings
+=====================================
 
 You can view details of your application settings in the system configuration. This can only be updated globally <doc-system-configuration>:
 

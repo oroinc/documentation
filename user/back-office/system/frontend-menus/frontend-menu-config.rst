@@ -2,8 +2,8 @@
 
 .. _doc--system--menu--config-levels--frontend-menus:
 
-Frontend Menus Configuration
-============================
+Customize Frontend Menus on Multiple Levels
+===========================================
 
 In the Oro applications, you can customize the storefront menus look, and the elements they contain globally, per organization, per website, per customer, and per customer group.
 

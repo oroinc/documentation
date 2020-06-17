@@ -5,7 +5,7 @@
 Examples of Creating Custom Entity Fields
 -----------------------------------------
 
-Create an entity field with a one to many relation
+Create an Entity Field With a One to Many Relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As the first example, we are adding a new field called **Referral** to the Customer entity, so we could track the contacts recommended by particular customers. This should be a **one to many** relation because one customer can give details of more than one contact.
@@ -48,7 +48,7 @@ To check whether the field has been added to the Customer entity:
    In the dialog that opens, enable the check box next to the required contact, and click **Select**.
    Once selected, the contact is added to the customer record.
 
-Create an entity field with a many to one relation
+Create an Entity Field With a Many to One Relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As the second example, we are creating a **Business Unit** field for the opportunity entity, so that it is possible to relate an opportunity to one of the existing business units. The relation should be **many to one** because one business unit can be related to many opportunities.

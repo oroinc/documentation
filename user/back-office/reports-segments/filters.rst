@@ -4,16 +4,16 @@
 .. _user-guide-getting-started-filters:
 .. _user-guide-filters-management:
 
-Filters
-=======
+Use Filters in the Back-Office
+==============================
 
 Filters are used to define a set of records to be displayed. Its configuration enables users to automatically select only the records that meet the filter requirements.
 Filters are always created for the records of a specific type (:term:`entity <Entity>`) specified in the general details of the relevant field.
 
 This section will help you learn the basics of filtering expressions and their elements.
 
-Filters Options
----------------
+Filter Options
+--------------
 
 To define filter, use any of the following filter options or combine them:
 

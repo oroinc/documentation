@@ -3,8 +3,8 @@
 .. _sys--config--sysconfig--general-setup--localization--global:
 .. _localization--localization:
 
-Localization
-============
+Configure Global Localization Settings
+======================================
 
 .. begin_1
 

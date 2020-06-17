@@ -2,8 +2,8 @@
 
 .. _sys--conf--commerce--guest--enable--guest_quotes:
 
-Quotes
-======
+Configure Global Settings for Quotes
+====================================
 
 .. begin_guest_quote
 

@@ -4,8 +4,8 @@
 .. _system--workflows:
 .. _doc--workflows--actions--system:
 
-System Workflows
-----------------
+Manage System Workflows in the Back-Office
+==========================================
 
 Since system workflows are pre-implemented in the system, their management from the user interface is limited.
 
@@ -54,15 +54,15 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
    :maxdepth: 1
    :hidden:
 
-   checkout
-   alternative-checkout
-   single-page-checkout-workflow
-   quote-flows-overview
-   rfq-backoffice
-   rfq-frontoffice
-   task-flow
-   unqualified-lead
-   contact-request-wf
+   Checkout Workflow <checkout>
+   Alternative Checkout Workflow <alternative-checkout>
+   Single Page Checkout Workflow <single-page-checkout-workflow>
+   Quote Workflows <quote-flows-overview>
+   RFQ Management Flow Workflow <rfq-backoffice>
+   RFQ Submission Flow Workflow <rfq-frontoffice>
+   Task Flow <task-flow>
+   Unqualified Sales Lead Workflow <unqualified-lead>
+   Contact Request Workflow <contact-request-wf>
 
 .. include:: /include/include-images.rst
    :start-after: begin

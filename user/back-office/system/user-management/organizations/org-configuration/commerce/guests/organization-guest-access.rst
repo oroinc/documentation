@@ -3,14 +3,12 @@
 .. _guest-access-org:
 .. _sys--conf--commerce--guest-access--org:
 
-Guest Website Access per Organization
--------------------------------------
+Configure Guest Website Access Settings per Organization
+========================================================
 
 .. hint:: Read more on this topic in :ref:`Guest Access <sys--conf--commerce--guest>`.
 
 .. note:: Guest access can be enabled :ref:`globally <sys--conf--commerce--guest-access--global>`, per organization, and :ref:`per website <sys--conf--commerce--guest-access--website>`.
-
-.. begin
 
 To enable guest access per organization:
 
@@ -28,8 +26,6 @@ To enable guest access per organization:
 
 .. image:: /user/img/system/user_management/org_configuration/guests/GuestAccessOrg.png
    :alt: Guest access configuration per organization
-
-.. finish 
 
 .. include:: /include/include-images.rst
    :start-after: begin

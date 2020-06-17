@@ -2,10 +2,8 @@
 
 .. _configuration--commerce--design--theme--theme-settings--website:
 
-Theme per Website
------------------
-
-.. begin_body
+Configure Theme Settings per Website
+====================================
 
 You can set the theme-related options for the website to override global configuration:
 
@@ -21,8 +19,6 @@ You can set the theme-related options for the website to override global configu
 5. Select the necessary theme, product page template, filter selector and user menu display mode. Refer to the :ref:`Configure Theme Globally <configuration--commerce--design--theme--theme-settings--globally>` guide for available options and their impact on the storefront look and feel.
 
 6. Click **Save Settings**.
-
-.. finish_body
 
 .. include:: /include/include-images.rst
    :start-after: begin

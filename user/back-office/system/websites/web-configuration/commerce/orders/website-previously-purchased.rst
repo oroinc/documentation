@@ -2,10 +2,8 @@
 
 .. _sys--commerce--orders--previously-purchased--website:
 
-Purchase History per Website
-----------------------------
-
-.. begin
+Configure Purchase History Settings per Website
+===============================================
 
 To enable previously purchased products page per website:
 
@@ -22,8 +20,6 @@ To enable previously purchased products page per website:
    * *Display Products Purchased Within (Days)* --- Clear the **Use Organization** check box and enter the number of days that the purchase history should cover.
 
 5. Click **Save Settings** on the top right of the page.
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

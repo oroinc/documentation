@@ -2,8 +2,8 @@
 
 .. _user-management-organization-manage:
 
-Manage Organizations
-====================
+Manage Organizations in the Back-Office
+=======================================
 
 .. important:: Multi-organization management is only available in the Enterprise edition.
 

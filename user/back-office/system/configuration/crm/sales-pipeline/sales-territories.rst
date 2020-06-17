@@ -2,8 +2,8 @@
 
 .. _sys--configuration--crm--sales-pipeline--sales-territories:
 
-Sales Territories
-=================
+Configure Global Sales Territory Settings
+=========================================
 
 .. hint:: Read more on this topic in :ref:`Sales Territories <user-guide-territories>`.
 

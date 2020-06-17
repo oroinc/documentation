@@ -2,8 +2,8 @@
 
 .. _frontstore-guide--rfq--registered:
 
-Create an RFQ
-=============
+Create an RFQ in the Storefront
+===============================
 
 There are a few ways to create RFQs if you are have registered and signed into the storefront.
 

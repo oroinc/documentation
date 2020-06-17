@@ -173,7 +173,7 @@ Read the :ref:`My Configuration <doc-my-user-configuration-profile>` topic for t
 .. toctree::
    :hidden:
 
-   oauth
+   Add OAuth Applications <oauth>
 
 
 .. include:: /include/include-images.rst

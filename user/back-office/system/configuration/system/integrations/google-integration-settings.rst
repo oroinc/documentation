@@ -2,8 +2,8 @@
 
 .. _admin-configuration-integrations-google:
 
-Google Settings
-===============
+Configure Global Google Settings
+================================
 
 .. hint:: Read more on this topic in :ref:`Google Integration <admin-configuration-google>`.
 

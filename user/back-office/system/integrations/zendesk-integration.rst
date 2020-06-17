@@ -3,8 +3,8 @@
 .. _user-guide-zendesk-integration:
 .. _user-guide-zendesk-channel-integration-synchronization:
 
-Zendesk Integration
-===================
+Configure Zendesk Integration in the Back-Office
+================================================
 
 Oro applications support out of the box integration with Zendesk, enabling you to load data from your Zendesk account and process it in the Oro application. This article describes how to define and edit the integration and synchronization settings.
 

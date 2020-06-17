@@ -2,8 +2,8 @@
 
 .. _config-guide--payment--paypal-express:
 
-PayPal Express Integration
-==========================
+Configure PayPal Express Integration in the Back-Office
+=======================================================
 
 This section describes the steps that are necessary to expose PayPal Express as a payment method for OroCommerce orders and quotes.
 

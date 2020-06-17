@@ -91,7 +91,7 @@ The following categories of settings are available for system configuration at o
 .. toctree::
    :maxdepth: 1
 
-   general-setup-org/index
-   commerce/index
-   crm/index
+   General Setup <general-setup-org/index>
+   Commerce <commerce/index>
+   CRM <crm/index>
 

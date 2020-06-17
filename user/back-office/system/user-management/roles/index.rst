@@ -5,8 +5,8 @@
 .. _user-guide-user-management-permissions-roles--actions-on-entity-permissions:
 .. _user-guide-user-management-permissions:
 
-Roles and Permissions
-=====================
+Configure Roles and Permissions in the Back-Office
+==================================================
 
 Roles are predefined sets of permissions. After users are assigned a specific role that is typically based on job functions, they can manage information relevant to their job role. One user can even have several roles to cover for a flexible set of functions.
 
@@ -126,7 +126,7 @@ Keep in mind that as soon as the entity is created, its ownership type cannot be
 .. toctree::
    :hidden:
 
-   admin-capabilities
-   create-manage-roles
-   field-level-acl
-   access-in-context
+   Entity and System Capabilities <admin-capabilities>
+   Configure User Roles <create-manage-roles>
+   Field Level Permissions <field-level-acl>
+   Configure End-to-End Access in Context <access-in-context>

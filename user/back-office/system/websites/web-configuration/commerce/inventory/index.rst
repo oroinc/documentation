@@ -2,13 +2,13 @@
 
 .. _configuration--commerce--inventory-website:
 
-Inventory Configuration Settings per Website
-============================================
+Configure Inventory Settings per Website
+========================================
 
 .. toctree::
    :maxdepth: 1
 
-   website-warehouse
-   website-product-options
-   website-limitations
-   website-allowed-statuses
+   Warehouses <website-warehouse>
+   Product Options <website-product-options>
+   Limitations <website-limitations>
+   Allowed Statuses <website-allowed-statuses>

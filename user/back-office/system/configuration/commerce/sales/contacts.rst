@@ -5,8 +5,8 @@
 .. _user-guide--system-configuration--display-sales-rep-info--display-options:
 .. _sys--conf--commerce--sales--contacts-global:
 
-Contacts (Sales Rep Information)
-================================
+Configure Global Settings for Contacts (Sales Rep Information)
+==============================================================
 
 To provide customers with the contact information of their primary assigned sales representative, enable the display of the sales rep contact information in the Oro application storefront :ref:`footer links <frontstore-guide--navigation-footer>`.
 

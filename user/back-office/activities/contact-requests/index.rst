@@ -2,8 +2,8 @@
 
 .. _user-guide-activities-requests:
 
-Contact Requests
-================
+Manage Contact Requests in the Back-Office
+==========================================
 
 Contact requests are used to track contact with individuals who are requesting information such as product information, support, partnership information, or any other types of assistance. Oro has a standard embedded contact form out-of-the-box for you to add to your websites. When your customers use this form, contact requests are automatically generated and added to the page of all contacts in your Oro application. 
 

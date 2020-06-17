@@ -3,11 +3,8 @@
 .. _user-guide--system-configuration--commerce-sales-checkout-website:
 .. _user-guide--system-configuration--commerce-sales-checkout-registration--web:
 
-
-Checkout per Website
-^^^^^^^^^^^^^^^^^^^^
-
-.. begin
+Configure Checkout Settings per Website
+=======================================
 
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
@@ -36,10 +33,6 @@ Checkout per Website
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest checkout data, adjust permissions for the checkout entity in their roles accordingly.
 
 8. Click **Save Settings**.
-
-
-.. finish
-
 
 .. include:: /include/include-images.rst
    :start-after: begin

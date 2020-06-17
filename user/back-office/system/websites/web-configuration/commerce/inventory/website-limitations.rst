@@ -2,8 +2,8 @@
 
 .. _inventory-limitations-website:
 
-Inventory Quantity Limitations per Website
-------------------------------------------
+Configure Inventory Quantity Limitations Setting per Website
+============================================================
 
 To change the default inventory quantity limitations per website:
 

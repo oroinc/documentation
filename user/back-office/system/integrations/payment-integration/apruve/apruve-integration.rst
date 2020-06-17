@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--configuration--payment-method-integration--apruve:
 
-Apruve Payment Method Integration
-=================================
+Configure Apruve Payment Method Integration in the Back-Office
+==============================================================
 
 This section describes the steps that are necessary to expose the Apruve service as a payment method for OroCommerce orders and quotes.
 

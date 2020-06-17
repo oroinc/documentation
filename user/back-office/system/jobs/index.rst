@@ -3,8 +3,8 @@
 
 .. _book-job-execution:
 
-Jobs
-====
+Configure Jobs in the Back-Office
+=================================
 
 A job is additional information about the message processing task added to the Oro application DB. It allows to view the information about the task (job) in the admin UI and to manage the job (view the status and cancel it) in the UI.
 
@@ -13,7 +13,7 @@ You can view the statuses and statistics for the jobs by navigating to **System 
 .. image:: /user/img/system/jobs/jobs.png
    :alt: Scheduled Jobs in admin UI
 
-Asynchronous jobs processing
+Asynchronous Jobs Processing
 ----------------------------
 
 Some tasks need to be executed in the background and/or paralleled, and Oro Message Queue is used for this.

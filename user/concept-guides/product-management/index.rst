@@ -2,8 +2,8 @@
 
 .. _concept-guides--product-management:
 
-Product Management
-==================
+Product Management Concept Guide
+================================
 
 Configuring your online web store for success means making it easy for users to browse your site and find the product they search for. With the optimized product pages, you can showcase your goods and services in the most appropriate way increasing your conversion and sales.
 

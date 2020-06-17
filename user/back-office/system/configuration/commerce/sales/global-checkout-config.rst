@@ -5,8 +5,8 @@
 .. _user-guide--system-configuration--commerce-sales-checkout-global:
 .. _user-guide--system-configuration--commerce-sales-checkout:
 
-Checkout
-========
+Configure Global Checkout Settings
+==================================
 
 Guest Checkout
 --------------

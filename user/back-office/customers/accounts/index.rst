@@ -3,8 +3,8 @@
 .. _user-guide-common-features-accounts:
 .. _user-guide-accounts:
 
-Accounts
-========
+Manage Accounts in the Back-Office
+==================================
 
 .. important:: This section is a part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
 

@@ -3,10 +3,8 @@
 .. _sys--websites--sysconfig--websites--routing:
 .. _user-guide--marketing--web-catalog--enable-per-website:
 
-Routing Configuration Per Website
----------------------------------
-
-.. begin
+Configure Routing Settings per Website
+======================================
 
 To control the way OroCommerce routes HTTP requests to the components when a customer uses particular website, you may provide the following website-specific information:
 
@@ -84,7 +82,6 @@ To change the default routing settings for the website:
 
 7. Click **Save**.
 
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

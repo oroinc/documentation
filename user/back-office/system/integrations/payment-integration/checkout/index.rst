@@ -2,8 +2,9 @@
 
 .. _doc--payment--checkout:
 
-Payments at Checkout
-====================
+
+View Payments at Checkout
+=========================
 
 After the integration is complete, the customer user may select one of the payment methods that are shown after the connectivity check and payment rules evaluation.
 

@@ -4,8 +4,8 @@
 .. _sys--commerce--catalog--upsell-products:
 .. _sys--commerce--catalog--relate-products:
 
-Related Items
-=============
+Configure Global Related Items Settings
+=======================================
 
 .. hint:: Read more on this topic in :ref:`Products <doc--products>`.
 

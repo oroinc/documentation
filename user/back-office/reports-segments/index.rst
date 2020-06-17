@@ -6,8 +6,8 @@
    :description: Instructions on reports and flexible data segments configuration and management for the OroCommerce and OroCRM 3.1 back-office users
 
 
-Reports and Segments
-====================
+Manage Reports and Segments in the Back-Office
+==============================================
 
 Data analysis tools help you make informed decisions related to your sales and commerce activities:
 
@@ -21,6 +21,6 @@ Data analysis tools help you make informed decisions related to your sales and c
    :maxdepth: 1
    :titlesonly:
 
-   reports/index
-   segments
-   filters
+   Reports <reports/index>
+   Segments <segments>
+   Filters <filters>

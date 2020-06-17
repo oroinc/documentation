@@ -2,8 +2,8 @@
 
 .. _user-guide-dotmailer-configuration:
 
-Configure dotmailer Integration
-===============================
+Configure dotmailer Integration in the Back-Office
+==================================================
 
 Install Extension
 -----------------

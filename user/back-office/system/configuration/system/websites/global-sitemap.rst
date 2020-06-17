@@ -2,8 +2,8 @@
 
 .. _sys--config--sysconfig--websites--sitemap:
 
-Sitemap
-=======
+Configure Global Sitemap Settings
+=================================
 
 You can control the way sitemap is generated for all websites.
 

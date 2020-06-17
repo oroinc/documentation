@@ -2,10 +2,8 @@
 
 .. _sys--conf--commerce--sales--contacts-user:
 
-Sales Rep Information per User
-------------------------------
-
-.. begin
+Configure Settings for Contacts per User (Sales Rep Information)
+================================================================
 
 .. note:: User settings override all other settings if **Customer Owner** or **Customer User Owner** are selected as a display option.
 
@@ -30,8 +28,6 @@ User settings override all other settings only if **Customer Owner** or **Custom
 In the **Enter Contact Info** field, provide custom text to be displayed. This text is used as a contact information only when the **Customer Visible Contact Info** setting is set to *Enter Manually*.
 
 .. image:: /user/img/system/user_management/MyUSerMyConfig.png
-
-.. finish
 
 More information on how to configure the contact information visible to the customers of your store, please refer to the :ref:`Configure Sales Representative Information <sys--conf--commerce--sales--contacts>` topic of the Configuration guide and the :ref:`contact information configuration sample <sys--conf--commerce--sales--contacts--sample>`.
 

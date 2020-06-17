@@ -1,8 +1,8 @@
 .. _frontstore-guide--rfq--guests:
 .. _frontstore-guide--guest-rfq:
 
-Create a Guest RFQ
-==================
+Create a Guest RFQ in the Storefront
+====================================
 
 .. begin
 

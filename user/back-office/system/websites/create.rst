@@ -1,7 +1,7 @@
 :oro_documentation_types: OroCommerce
 
-Create a Website
-^^^^^^^^^^^^^^^^
+Create a Website in the Back-Office
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. important:: Multi-website management is only available in the Enterprise edition.
 

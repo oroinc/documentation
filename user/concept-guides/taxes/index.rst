@@ -2,8 +2,8 @@
 
 :oro_documentation_types: OroCommerce
 
-Tax Management
-==============
+Tax Management Concept Guide
+============================
 
 An online e-commerce store can help save money on a lot of expenses, such as rent and utilities, but there are certain tax obligations that online businesses cannot escape. Running a web store requires focusing on different angles of the business, which can be quite stressful and costly, especially when it comes to understanding and managing taxes. E-commerce tax laws can seem complicated and confusing to new entrepreneurs, and they are usually advised to consult a tax specialist to ensure a full understanding of tax liabilities applied to their online business.
 

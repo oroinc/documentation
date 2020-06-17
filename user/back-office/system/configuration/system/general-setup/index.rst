@@ -2,8 +2,8 @@
 
 .. _configuration--guide--system--configuration--general-setup-sysconfig:
 
-General Setup
-=============
+Configure Global General Setup Settings
+=======================================
 
 Learn how to configure localization options, currency and tracking, as well and user, email, display and upload settings.
 
@@ -20,14 +20,14 @@ Learn how to configure localization options, currency and tracking, as well and 
 .. toctree::
    :hidden:
 
-   application
-   global-localization
-   global-currency
-   display
-   user
-   tracking
-   upload
-   global-email
+   Application Settings <application>
+   Localization <global-localization>
+   Currency <global-currency>
+   Display Settings <display>
+   User Settings <user>
+   Tracking <tracking>
+   Upload Settings <upload>
+   Email and System Mailbox Configuration <global-email>
 
 
 

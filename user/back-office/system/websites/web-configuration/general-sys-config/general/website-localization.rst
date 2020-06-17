@@ -2,10 +2,8 @@
 
 .. _sys--websites--sysconfig--general-setup--localization:
 
-Localization Settings per Website
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. begin
+Configure Localization Settings per Website
+===========================================
 
 To define the custom localization options for the particular website:
 
@@ -18,9 +16,7 @@ To define the custom localization options for the particular website:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
-.. image:: /user/img/system/websites/web_configuration/localization_configuration_website.png
+   .. image:: /user/img/system/websites/web_configuration/localization_configuration_website.png
 
 4. Clear the **Use Organization** check box to change the default options, and provide new values.
 
@@ -29,9 +25,6 @@ The following page opens:
 6. Select the default localization for the storefront of the website.
 
 7. Click **Save** to the save the settings.
-
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

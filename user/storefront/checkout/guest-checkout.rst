@@ -2,8 +2,8 @@
 
 .. _frontstore-guide--orders-checkout--guest:
 
-Guest Checkout
-==============
+Navigate through Guest Checkout in the Storefront
+=================================================
 
 In the Oro storefront, guest customers can place orders similarly to registered users. They are, however, limited to just one shopping list.
 

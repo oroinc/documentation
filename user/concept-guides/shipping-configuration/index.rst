@@ -3,8 +3,8 @@
 
 :oro_documentation_types: OroCommerce
 
-Shipping Configuration
-======================
+Shipping Configuration Concept Guide
+====================================
 
 To facilitate global B2B sales, you can configure various shipping methods for particular locations, integrate local shipping providers, or the best shipping plans whenever possible.
 

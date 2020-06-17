@@ -2,8 +2,8 @@
 
 .. _doc--payment--configuration--payment-method-integration--wirecard:
 
-Wirecard Integration
-====================
+Configure Wirecard Integration in the Back-Office
+=================================================
 
 .. begin
 
