@@ -8,8 +8,8 @@
 .. _user-guide-using-emails-notifications:
 
 
-Notification Rules (Automatic Email Notifications)
-==================================================
+Configure Email Notification Rules in the Back-Office
+=====================================================
 
 To help you keep track of important changes or events, you can configure automatic email notifications.
 

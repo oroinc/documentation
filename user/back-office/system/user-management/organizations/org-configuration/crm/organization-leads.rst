@@ -2,8 +2,8 @@
 
 .. _leads-organization:
 
-Leads per Organization
-======================
+Configure Lead Settings per Organization
+========================================
 
 .. hint:: Read more on this topic in :ref:`Leads <user-guide-system-channel-entities-leads>`.
 

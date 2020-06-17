@@ -2,8 +2,9 @@
 
 .. _admin-embedded-forms:
 
-Embedded Forms
-==============
+Configure Embedded Forms in the Back-Office
+===========================================
+
 
 In Oro application, embedded forms help create the code that may be added to a third-party website to enable communication between the third-party website users and the Oro application.
 

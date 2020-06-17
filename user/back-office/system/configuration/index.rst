@@ -2,8 +2,8 @@
 
 .. _mc-system-configuration:
 
-Configuration
-=============
+Global Configuration Settings
+=============================
 
 Settings under the **System > Configuration** menu enable you set up your Oro application specifically to your business needs. Settings located here are :ref:`system-wide (or global) <doc-system-configuration>`. Configuring these settings globally means that they are by default applied throughout all organizations, websites and users in your system. This is the base configuration level that you can customize :ref:`per organization <doc-organization-configuration>`, :ref:`website <doc-website-configuration>`, or :ref:`user <doc-my-user-configuration>` later on.
 
@@ -41,8 +41,8 @@ However:
    :maxdepth: 5
    :titlesonly:
 
-   system/index
-   crm/index
-   commerce/index
-   marketing/index
+   System Configuration <system/index>
+   CRM Configuration <crm/index>
+   Commerce Configuration <commerce/index>
+   Marketing Configuration <marketing/index>
    quick-search

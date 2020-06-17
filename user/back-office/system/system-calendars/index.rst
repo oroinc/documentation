@@ -2,8 +2,8 @@
 
 .. _user-guide-calendars:
 
-System Calendars
-================
+Configure System Calendars in the Back-Office
+=============================================
 
 In your Oro application, you can add calendars with tasks and events related to a specific user, other users in the system
 (subject to the :ref:`roles and permissions defined <user-guide-user-management-permissions>`), as well as events 

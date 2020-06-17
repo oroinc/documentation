@@ -1,7 +1,7 @@
 .. _frontstore-guide--orders-checkout--multi-page-checkout:
 
-Multi Page Checkout
--------------------
+Navigate through Multi Page Checkout in the Storefront
+------------------------------------------------------
 
 **Step 1: Billing Information**
 

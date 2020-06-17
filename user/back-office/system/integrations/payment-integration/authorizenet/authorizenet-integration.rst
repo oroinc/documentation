@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--configuration--payment-method-integration--authorizenet-details:
 
-Authorize.Net Integration
-=========================
+Configure Authorize.Net Integration in the Back-Office
+======================================================
 
 .. begin
 

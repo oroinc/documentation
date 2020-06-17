@@ -1,7 +1,7 @@
 .. _frontstore-guide--orders-checkout--single-page-checkout:
 
-Single Page Checkout
---------------------
+Navigate through Single Page Checkout in the Storefront
+-------------------------------------------------------
 
 In the single page checkout, you can see how far along in the checkout you are, and how many fields are left to complete it. All checkout steps are displayed on a single page.
 

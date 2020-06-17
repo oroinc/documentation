@@ -2,8 +2,8 @@
 
 .. _sys--conf--commerce--payment--general:
 
-General
-=======
+Configure Global General Payment Settings (Merchant Location)
+=============================================================
 
 Merchant location is a system-wide setting that applies to all websites.
 

@@ -2,8 +2,8 @@
 
 .. _doc--workflows--task-flow:
 
-Task Flow
-=========
+Configure Task Flow in the Back-Office
+======================================
 
 Overview
 --------

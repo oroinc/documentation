@@ -2,8 +2,8 @@
 
 .. _sys-config--commerce--sales--promotions:
 
-Promotions
-==========
+Configure Global Settings Promotions
+====================================
 
 .. begin
 

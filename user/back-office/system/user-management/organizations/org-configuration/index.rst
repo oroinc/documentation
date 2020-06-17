@@ -19,6 +19,7 @@ The following categories of settings are available for system configuration at o
 
   * General Setup
 
+    * :ref:`Application Settings <admin-configuration-application-org>`
     * :ref:`Localization <config_guide--localization--organization-localization>`
     * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
     * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
@@ -90,7 +91,7 @@ The following categories of settings are available for system configuration at o
 .. toctree::
    :maxdepth: 1
 
-   general-setup-org/index
-   commerce/index
-   crm/index
+   General Setup <general-setup-org/index>
+   Commerce <commerce/index>
+   CRM <crm/index>
 

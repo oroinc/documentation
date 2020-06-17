@@ -1,7 +1,7 @@
 .. _frontstore-guide--quotes--accept:
 
-Accept a Quote
-==============
+Accept a Quote in the Storefront
+================================
 
 When you receive a quote, you can accept it and submit the order:
 

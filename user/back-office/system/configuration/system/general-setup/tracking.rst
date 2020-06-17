@@ -5,10 +5,8 @@
 
 .. updated on 06 July 2017
 
-Tracking Settings
-~~~~~~~~~~~~~~~~~
-
-.. begin
+Configure Global Tracking Settings
+==================================
 
 You can set up the settings that apply to all the :ref:`Tracking records <user-guide-marketing-tracking>` created in the Oro application.
 
@@ -43,8 +41,6 @@ To tune the tracking configuration:
 .. important:: The **Reset** button in the upper right corner of the page restores the latest saved values.
 
 .. note:: You can navigate to the tracking website management page using the tracking website link at the bottom of the page.
-
-.. finish
 
 **Related Articles**
 

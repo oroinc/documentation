@@ -5,8 +5,8 @@
 
 .. _frontstore-guide--shopping-lists:
 
-Shopping Lists
-==============
+Manage Shopping Lists in the Back-Office
+========================================
 
 In OroCommerce, :term:`shopping lists <Shopping List>` are much more than merely a list of items in a cart. For one, in OroCommerce registered customers can create and manage not just one, but multiple shopping lists. This is useful when customers have to work on many projects that need different products for various needs. Unregistered customers, in turn, can purchase goods without the need of going through the registration process, which simplifies their shopping experience and saves time.
 
@@ -26,8 +26,8 @@ Clicking on the |IcChevronDown| icon next to the button will open a drop-down wi
    :maxdepth: 1
    :hidden:
 
-   registered
-   guests
+   Shopping Lists for Registered Users <registered>
+   Shopping Lists for Guest Users <guests>
 
 .. include:: /include/include-images.rst
    :start-after: begin

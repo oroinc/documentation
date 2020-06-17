@@ -3,10 +3,8 @@
 .. _sys--users--organization--commerce--catalog--related-products:
 .. _sys--users--organization--commerce--catalog--upsell-products:
 
-Related Items per Organization
-------------------------------
-
-.. begin_related_products_body
+Configure Related Items Settings per Organization
+=================================================
 
 In the Related Items section, you can configure the settings for related and up-sell products for a particular organization. These settings may apply :ref:`globally <sys--commerce--catalog--relate-products--main>` and per :ref:`website <sys--websites--commerce--catalog--related-products>`.
 
@@ -45,8 +43,6 @@ To update the related products settings per organization:
      a) Clear the **Use Default** check box next to the option.
      b) Set or clear the option, or enter the quantity.
 
-.. begin_upsell_items_body
-
 5. In the **Up-Sell Products** section, the following options are available:
 
    * **Enable Up-Sell Products** --- Toggles managing up-sell products on/off. Enabled by default.
@@ -65,9 +61,6 @@ To update the related products settings per organization:
    b) Set or clear the option, or enter the quantity.
 
 6. Click **Save**.
-
-.. finish_upsell_items_body
-.. finish_related_products_body
 
 .. include:: /include/include-images.rst
    :start-after: begin

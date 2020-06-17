@@ -2,10 +2,8 @@
 
 .. _configuration--commerce--orders--order-creation--organization:
 
-Order Creation per Organization
--------------------------------
-
-.. begin_body
+Configure Order Creation Settings per Organization
+==================================================
 
 To configure the :term:`order <Order>` creation options per organization:
 

@@ -3,10 +3,8 @@
 .. _sys--commerce--product--product-images--image-preview--organization:
 .. _sys--users--organization--commerce--products--gallery-slider:
 
-Product Images per Organization
--------------------------------
-
-.. begin
+Configure Settings for Product Images per Organization
+======================================================
 
 In the Product Images section of Commerce configuration settings, you can control the way images are previewed on product listing pages and configure whether to use popup or inline view for the image gallery per organization:
 

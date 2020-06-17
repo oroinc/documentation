@@ -1,10 +1,10 @@
 :oro_documentation_types: OroCommerce
 
-Catalog Configuration Settings per Organization
-===============================================
+Configure Catalog Settings per Organization
+===========================================
 
 .. toctree::
    :maxdepth: 1
 
-   organization-filters-sorters
-   organization-related-products
+   Filters and Sorters <organization-filters-sorters>
+   Related Products <organization-related-products>

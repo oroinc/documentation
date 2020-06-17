@@ -3,8 +3,8 @@
 .. _configuration--guide--commerce--configuration--shipping:
 .. _user-guide--shipping--configuration:
 
-Shipping
-========
+Configure Global Shipping Settings
+==================================
 
 Learn how to provide your shipping origin address and shipping options.
 
@@ -14,5 +14,5 @@ Learn how to provide your shipping origin address and shipping options.
 .. toctree::
    :hidden:
 
-   shipping-origin
-   shipping-options
+   Shipping Origin <shipping-origin>
+   Shipping Options <shipping-options>

@@ -2,8 +2,8 @@
 
 .. _user-guide--system-websites--manage-websites:
 
-Manage a Website
-================
+Manage a Website in the Back-Office
+===================================
 
 .. important:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
 

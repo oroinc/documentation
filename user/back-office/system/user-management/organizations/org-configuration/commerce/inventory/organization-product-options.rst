@@ -2,10 +2,8 @@
 
 .. _sys--conf--commerce--inventory--product-options--organization:
 
-Product Options per Organization
---------------------------------
-
-.. begin
+Configure Product Options Settings per Organization
+===================================================
 
 To customize the default product options per organization:
 

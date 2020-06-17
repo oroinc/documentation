@@ -2,8 +2,8 @@
 
 .. _user-guide-my-profile-oauth:
 
-Add OAuth Applications to Users
--------------------------------
+Add OAuth Applications under My User Menu
+-----------------------------------------
 
 .. begin_user_oauth
 

@@ -1,7 +1,7 @@
 .. _frontstore-guide--orders-quick-order:
 
-Quick Order Form
-================
+Manage Quick Order Form in the Storefront
+=========================================
 
 .. begin
 

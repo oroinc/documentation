@@ -2,8 +2,8 @@
 
 .. begin
 
-Forgot Password
-^^^^^^^^^^^^^^^
+Forgot Password to the Storefront Account
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you happened to have forgotten the password for your account, do the following:
 

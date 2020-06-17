@@ -5,8 +5,8 @@
 
 .. _my-account:
 
-My Account
-==========
+Manage My Account Menu in the Storefront
+========================================
 
 When you sign into your OroCommerce account, you can view and manage your personal contact information, billing and shipping addresses, monitor the status of your orders, quotes, and requests for quote. It is all possible from the **My Account** menu page.
 
@@ -31,15 +31,15 @@ Your account menu has the following sections:
    :titlesonly:
    :maxdepth: 1
 
-   my-profile/index
-   address-book/index
-   users/index
-   roles/index
-   rfq/index
-   order-history
-   previously-purchased/index
-   quotes
-   cim/index
+   My Profile <my-profile/index>
+   Address Book <address-book/index>
+   Users <users/index>
+   Roles <roles/index>
+   Requests for Quote <rfq/index>
+   Order History <order-history>
+   Previously Purchased Products <previously-purchased/index>
+   Quotes <quotes>
+   Manage Payment Profiles (Authorize.Net Customer Profiles) <cim/index>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

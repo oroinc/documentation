@@ -2,10 +2,8 @@
 
 .. _configuration--general-setup--display-settings--organization:
 
-Display Settings per Organization
----------------------------------
-
-.. begin_display_set_org
+Configure Display Settings per Organization
+===========================================
 
 In this section, you can specify the display settings for the organization.
 
@@ -118,8 +116,6 @@ To change any color in the set:
 
 .. image:: /user/img/system/config_system/user_configuration_showsql.png
    :alt: A sample of the enabled display sql field
-
-.. finish_display_set_org
 
 .. include:: /include/include-images.rst
    :start-after: begin

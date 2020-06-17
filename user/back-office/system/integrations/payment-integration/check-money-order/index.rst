@@ -3,8 +3,8 @@
 
 .. _user-guide--payment--check-money-order:
 
-Check/Money Order Service
-=========================
+Configure Check/Money Order Service Integration in the Back-Office
+==================================================================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 

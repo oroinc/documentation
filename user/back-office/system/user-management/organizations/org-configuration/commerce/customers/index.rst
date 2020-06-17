@@ -1,10 +1,10 @@
 :oro_documentation_types: OroCommerce
 
-Customer Configuration Settings per Organization
-================================================
+Configure Customer Settings per Organization
+============================================
 
 .. toctree::
    :maxdepth: 1
 
-   organization-contact-us
-   organization-customer-users
+   Contact Requests <organization-contact-us>
+   Customer Ussers <organization-customer-users>

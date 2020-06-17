@@ -38,10 +38,10 @@ More information about the options available for each of the two categories is a
 .. toctree::
    :hidden:
 
-   user-localization
-   user-display-settings
-   user-email-settings
-   user-sales-info
+   Localization <user-localization>
+   Display Settings <user-display-settings>
+   Email Configuration <user-email-settings>
+   Contacts <user-sales-info>
 
 
 .. include:: /include/include-images.rst

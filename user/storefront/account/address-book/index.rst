@@ -1,8 +1,8 @@
 .. _frontstore-guide--address:
 .. _frontstore-guide--address-overview:
 
-Address Book
-============
+Manage Address Book in the Storefront
+=====================================
 
 The following information covers the **Address Book** section of the **Account** menu in OroCommerce storefront.
 

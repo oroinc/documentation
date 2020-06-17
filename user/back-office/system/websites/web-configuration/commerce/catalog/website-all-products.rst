@@ -2,8 +2,8 @@
 
 .. _sys--conf--commerce--catalog--special-pages--website:
 
-All Products Page per Website
------------------------------
+Configure All Products Page per Website
+=======================================
 
 .. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 

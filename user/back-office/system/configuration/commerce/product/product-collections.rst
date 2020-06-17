@@ -2,10 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--product-collections:
 
-Product Collections
-~~~~~~~~~~~~~~~~~~~
-
-.. begin
+Configure Global Settings for Product Collections
+=================================================
 
 You can control the frequency of the product collections indexation. By default, product collections are indexed every hour.
 
@@ -13,7 +11,7 @@ You can control the frequency of the product collections indexation. By default,
 
    Indexing of simple filters that rely only on the product attributes happens via the message queue. Indexing task is queued immediately after the product collection node is saved. After the index task is processed, the product collection (or the part of product collection) is available in the storefront immediately.
 
-   Indexing of more complex filters (e.g. those that involve relationships with other entities) is separated from the common reindexation process and happens on a dedicated schedule via cron.
+   Indexing of more complex filters (e.g., those that involve relationships with other entities) is separated from the common reindexation process and happens on a dedicated schedule via cron.
 
 To change the default product collections indexation frequency:
 
@@ -39,8 +37,6 @@ To change the default product collections indexation frequency:
 
 5. Click **Save Settings**.
 
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

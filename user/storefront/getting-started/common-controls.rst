@@ -1,7 +1,7 @@
 .. _storefront-common-controls:
 
-Common Controls
----------------
+Manage Common Controls in the Storefront
+----------------------------------------
 
 .. _frontstore-guide--navigation-tables:
 

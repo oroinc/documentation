@@ -2,10 +2,8 @@
 
 .. _user-guide--system-configuration--commerce-sales--quick-order-form--organization:
 
-Guest Quick Order Form per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin_quick_order_form
+Configure Guest Quick Order Form Settings per Organization
+==========================================================
 
 To enable the guest quick order form per organization:
 
@@ -27,8 +25,6 @@ To enable the guest quick order form per organization:
    To enable it, clear *Use System* and select the *Enable Guest Quick Order Form* check box.
 
 5. Click **Save Settings**.
-
-.. finish_quick_order_form
 
 .. include:: /include/include-images.rst
    :start-after: begin

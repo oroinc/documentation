@@ -3,8 +3,8 @@
 .. _user-guide--system--tags-management:
 .. _admin-guide-tag-management:
 
-Tags Management
-===============
+Tags Management in the Back-Office
+==================================
 
 The Oro applications support tags management functionality to organize the data extracted from various business information into logical categories and subcategories. By creating tags, you help structure large amounts of content by assigning user-generated keywords or phrases to your records. Taxonomies help color code and classify the tags so that they stand out from other tags which may serve different purposes.
 
@@ -15,7 +15,7 @@ The Oro applications support tags management functionality to organize the data 
 .. toctree::
    :maxdepth: 1
 
-   tags
-   taxonomies
+   Tags <tags>
+   Taxonomies <taxonomies>
 
 

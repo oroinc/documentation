@@ -1,12 +1,12 @@
 :oro_documentation_types: OroCommerce
 
-Product Configuration Settings per Website
-==========================================
+Configure Product Settings per Website
+======================================
 
 .. toctree::
    :maxdepth: 1
 
-   website-image-preview
-   website-featured-products
-   website-new-arrivals
-   website-configurable-products
+   Product Images <website-image-preview>
+   Featured Products <website-featured-products>
+   Promotions <website-new-arrivals>
+   Configurable Products <website-configurable-products>

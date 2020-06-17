@@ -2,8 +2,8 @@
 
 .. _system--workflows--alternative-checkout-workflow:
 
-Alternative Checkout Workflow
-=============================
+Configure Alternative Checkout Workflow in the Back-Office
+==========================================================
 
 Overview
 --------

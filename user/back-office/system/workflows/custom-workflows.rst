@@ -2,8 +2,8 @@
 
 .. _doc--workflows--actions--custom:
 
-Custom Workflows
-----------------
+Manage Custom Workflows in the Back-Office
+==========================================
 
 Workflows created on the UI from scratch are custom workflows.
 Navigate to **System > Workflows** in the main menu to reach the page with all custom and system workflows.

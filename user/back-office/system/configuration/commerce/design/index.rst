@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--design:
 
-Design
-======
+Configure Global Design Settings
+================================
 
 Learn how to select theme settings, page and menu templates.
 
@@ -13,5 +13,5 @@ Learn how to select theme settings, page and menu templates.
 .. toctree::
    :hidden:
 
-   theme-global
+   Theme <theme-global>
 

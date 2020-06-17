@@ -2,8 +2,8 @@
 
 .. _sys--shipping-rules:
 
-Shipping Rules
-==============
+Configure Shipping Rules in the Back-Office
+===========================================
 
 .. begin
 

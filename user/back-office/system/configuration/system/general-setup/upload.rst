@@ -4,8 +4,8 @@
 .. _admin-configuration-upload-settings:
 .. _configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-globally:
 
-Upload Settings
-===============
+Configure Global Upload Settings
+================================
 
 To define the formats of the files to be uploaded into the website back-office or the storefront, you need to configure the corresponding **MIME types** settings in the system configuration.
 

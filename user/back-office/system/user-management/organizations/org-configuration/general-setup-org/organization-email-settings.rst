@@ -2,8 +2,8 @@
 
 .. _admin-configuration-email-configuration-organization:
 
-Email Configuration per Organization
-====================================
+Configure Settings for Email Configuration per Organization
+===========================================================
 
 .. hint:: Read more on this topic in :ref:`Emails <admin-guide-email-configuration>`.
 

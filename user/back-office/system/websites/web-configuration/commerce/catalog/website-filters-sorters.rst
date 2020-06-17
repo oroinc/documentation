@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--catalog--filters-sorters--website:
 
-Filters and Sorters per Website
--------------------------------
+Configure Filters and Sorters Settings per Website
+==================================================
 
 To configure filters and sorting options per website:
 
@@ -13,7 +13,7 @@ To configure filters and sorting options per website:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-.. image:: /user/img/system/websites/web_configuration/filters_and_sorters_website.png
+   .. image:: /user/img/system/websites/web_configuration/filters_and_sorters_website.png
 
 4. The following configuration options are available:
 

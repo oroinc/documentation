@@ -2,9 +2,8 @@
 
 .. _user-guide-google-single-sign-on:
 
-Google Single Sign-On
-=====================
-
+Configure Google Single Sign-On in the Back-Office
+==================================================
 
 Oro application supports Google Single Sign-On. This means that for
 a user that has the same primary email in the Oro application and Google

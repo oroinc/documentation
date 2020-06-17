@@ -2,8 +2,8 @@
 
 .. _user-management-groups:
 
-User Groups
-===========
+Configure User Groups in the Back-Office
+========================================
 
 A user group is a set of users for convenience consolidated by one or more parameters. User groups are used in the notification rules and filters.
 

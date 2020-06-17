@@ -4,8 +4,8 @@
 .. _user-guide-email-templates-create:
 .. _user-guide-using-emails-create-template:
 
-Templates
-=========
+Configure Email Templates in the Back-Office
+============================================
 
 With the Oro applications, you can easily send numerous personalized emails using one template. For example, you can make a single template that welcomes {username}, assign it to an :ref:`email campaign <user-guide-email-campaigns>`, and each of your subscribers will get a mail sent specifically to them.
 

@@ -3,8 +3,8 @@
 .. _admin-guide-data-audit:
 .. _user-guide-data-audit:
 
-Data Audit
-==========
+Configure Data Audit in the Back-Office
+=======================================
 
 Data Audit enables you to see the full history of changes made to any entity and its fields that have been marked as *auditable*, and create out-of-the-box reports based on these changes.
 

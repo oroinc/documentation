@@ -3,8 +3,8 @@
 .. _sys--websites--commerce--products--new-arrivals:
 .. _sys--commerce--product--new-arrivals-block-website:
 
-Product Promotions per Website
-------------------------------
+Configure Settings for Product Promotions per Website
+=====================================================
 
 In the Promotions section of Commerce configuration settings, you can enable **New** product icons and configure the new arrivals block for the storefront per website. You can also enable them :ref:`globally <configuration--guide--commerce--configuration--promotions>` and :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>`.
 
@@ -46,8 +46,6 @@ Configure New Arrivals per Website
 .. note:: When enabled, **Use Organization** allows for system settings to be used. Clear this check box to enable manual change of settings.
 
 6. Click **Save**.
-
-
 
 .. include:: /include/include-images.rst
    :start-after: begin

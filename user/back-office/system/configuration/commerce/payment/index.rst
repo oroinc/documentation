@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--payment:
 
-Payment
-=======
+Configure Global Payment Settings
+=================================
 
 Learn how to define the merchant country.
 
@@ -12,4 +12,4 @@ Learn how to define the merchant country.
 .. toctree::
    :hidden:
 
-   payment-configuration
+   General <payment-configuration>

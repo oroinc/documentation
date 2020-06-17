@@ -3,8 +3,8 @@
 .. _config-guide--landing-commerce--products--configurable-products:
 .. _config-guide--landing-commerce--products--configurable-products--global:
 
-Configurable Products
-=====================
+Configure Global Settings for Configurable Products
+===================================================
 
 In the system configuration, you can control the way a matrix form and variations of a configurable product are displayed in the storefront. Configurable product information can be set on three levels: globally, :ref:`per organization <config-guide--landing-commerce--products--configurable-products--organization>`, and :ref:`per website <config-guide--landing-commerce--products--configurable-products--website>`. Website settings override organization, organization settings override the system ones.
 

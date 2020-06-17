@@ -4,8 +4,8 @@
 .. _user-guide-email-admin:
 .. _doc-email-configuration:
 
-Email Configuration
-===================
+Configure Global Email Settings
+===============================
 
 You can configure email settings on four levels -- globally, :ref:`per organization <admin-configuration-email-configuration-organization>`, :ref:`per website <admin-configuration-system-mailboxes-website>`, or :ref:`per user <admin-configuration-email-configuration-user>` with the system settings on the global level containing the highest number of options. Based on the level where configuration has taken place, settings can fall back to other levels.
 

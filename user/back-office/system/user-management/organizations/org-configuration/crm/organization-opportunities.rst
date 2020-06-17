@@ -2,8 +2,8 @@
 
 .. _opportunities-organization:
 
-Opportunities per Organization
-==============================
+Configure Opportunity Settings per Organization
+===============================================
 
 .. hint:: Read more on this topic in :ref:`Opportunities <user-guide-system-channel-entities-opportunities>`.
 

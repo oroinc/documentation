@@ -2,10 +2,8 @@
 
 .. _config-guide--landing-commerce--products--configurable-products--organization:
 
-Configurable Products per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin
+Configure Settings for Configurable Products per Organization
+=============================================================
 
 To change the default settings for an organization:
 

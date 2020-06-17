@@ -5,10 +5,8 @@
 .. _sys--commerce--product--product-images--main:
 .. _sys--websites--commerce--product--product-images:
 
-Product Images per Website
---------------------------
-
-.. begin
+Configure Settings for Product Images per Website
+=================================================
 
 You can update the product watermark settings, enable image preview and configure whether to use popup or inline view for the image gallery per website:
 

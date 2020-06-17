@@ -6,37 +6,29 @@
 .. _configuration--commerce--design--theme--menu-templates:
 .. _configuration--commerce--design--theme:
 
-Theme
-=====
+Configure Global Theme Settings
+===============================
 
 In your Oro application, you can control and customize the storefront look and feel.
 
 .. hint:: This can be done on three levels -- globally, :ref:`per organization <configuration--commerce--design--theme--theme-settings--organization>` and :ref:`website <configuration--commerce--design--theme--theme-settings--website>`.
 
-.. begin_body
-
 You can set the following theme-related options that apply globally by default:
-
-.. begin_theme_overview
 
 * Pre-designed theme for the storefront
 * The layout for the product page details (default tabbed view, short, two column, or list)
 * Style of the selector in filters
 * Display mode for the user menu on the storefront
 
-.. finish_theme_overview
-
 To configure the storefront theme options globally:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Design > Theme** in the menu to the left.
 
-.. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
-.. image:: /user/img/system/config_commerce/design/design_theme_global.png
-   :alt: Global theme configuration settings
+   .. image:: /user/img/system/config_commerce/design/design_theme_global.png
+       :alt: Global theme configuration settings
 
 3. In the **Theme Settings** section, select the theme from the list. The theme controls general design of the storefront that defines its look and feel. *Default*, *blank*, and *custom* themes are available out of the box for the storefront.
 
@@ -88,7 +80,6 @@ The following page opens:
    .. image:: /user/img/system/config_commerce/design/ShowSubitemsInPopup.png
       :alt: The storefront user menu look when the Show subitems in a popup option is enabled
 
-
 7. Click **Save Settings**.
 
-.. finish_body
+

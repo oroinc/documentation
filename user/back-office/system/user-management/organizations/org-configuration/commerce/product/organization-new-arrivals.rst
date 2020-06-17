@@ -3,8 +3,8 @@
 .. _sys--users--organization--commerce--products--new-arrivals:
 .. _sys--commerce--product--new-arrivals-block-organization:
 
-Product Promotions per Organization
------------------------------------
+Configure Settings for Product Promotions per Organization
+==========================================================
 
 In the Promotions section of Commerce configuration settings, you can enable new product icons and configure the new arrivals block for the storefront per organization. You can also enable them :ref:`globally <configuration--guide--commerce--configuration--promotions>` and :ref:`per website <sys--websites--commerce--products--new-arrivals>`.
 
@@ -51,8 +51,6 @@ To set up the new arrivals icons and segment per organization:
 
 6. Click **Save Settings**.
 
-
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -2,10 +2,8 @@
 
 .. _configuration--commerce--orders--order-creation--website:
 
-Order Creation per Website
---------------------------
-
-.. begin_body
+Configure Order Creation Settings per Website
+=============================================
 
 To configure the order creation options per website:
 
@@ -17,8 +15,6 @@ To configure the order creation options per website:
 3. In the **Order Creation** section, clear the **Use Organization** check box if it is selected and select the required status for **New Internal Order Status**.
 
 #. Click **Save Settings**.
-
-.. finish_body
 
 .. include:: /include/include-images.rst
    :start-after: begin

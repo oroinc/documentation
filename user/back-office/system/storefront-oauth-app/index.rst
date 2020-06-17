@@ -2,8 +2,8 @@
 
 .. _storefront-oauth-app:
 
-Storefront OAuth Applications
------------------------------
+Manage Storefront OAuth Applications in the Back-Office
+=======================================================
 
 The section contains the list of all OAuth applications created for customer users in the back-office. You can view and manage the existing OAuth applications, create new applications selecting the necessary grant type depending on your business needs, either client credentials or a password.
 

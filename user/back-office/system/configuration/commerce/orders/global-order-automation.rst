@@ -4,8 +4,8 @@
 .. _configuration--commerce--orders:
 
 
-Order Automation
-================
+Configure Global Order Automation Settings
+==========================================
 
 You can set all orders with selected internal statuses to be automatically cancelled past their "Do Not Ship Later Than" date.
 

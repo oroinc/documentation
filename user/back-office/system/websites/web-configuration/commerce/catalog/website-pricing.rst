@@ -3,8 +3,8 @@
 .. _pricing-currency-website:
 .. _sys--websites--sysconfig--currency:
 
-Pricing (Currencies) per Website
---------------------------------
+Configure Pricing Settings (Currencies) per Website
+===================================================
 
 .. note:: The website level configuration has higher priority and overrides the global configuration settings.
 
@@ -19,7 +19,7 @@ To enable currencies per website:
 
    * **Enabled Currencies** --- The subset of :ref:`allowed currencies <sys--config--sysconfig--general-setup--currency>` that is available for the customer user by default.
 
-     .. image:: /user/img/system/websites/web_configuration/currency_on_the_front_store.png
+   .. image:: /user/img/system/websites/web_configuration/currency_on_the_front_store.png
 
    * **Default Currency** --- The currency that is used by default to show prices in the storefront.
 

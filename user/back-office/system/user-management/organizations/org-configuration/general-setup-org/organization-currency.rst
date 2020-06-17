@@ -2,10 +2,8 @@
 
 .. _admin-configuration-currency-org:
 
-.. begin_org_currency
-
-Currency per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Configure Currency Settings per Organization
+============================================
 
 .. important:: To enable a currency on the organization level, you should add it to the list of allowed currencies at the system level first. The organization-level configuration for base currency and display format has higher priority and overrides the system setting.
 
@@ -22,7 +20,7 @@ To change the default currency settings per organization:
 4. Remove the **Use System** check box to enable the currency configuration for the organization.
 
 Currency Settings
-~~~~~~~~~~~~~~~~~
+-----------------
 
 The following sections become available within the **Currency** tab:
 
@@ -64,7 +62,7 @@ The following sections become available within the **Currency** tab:
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 
 Allowed Currencies Options for Organization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------
 
 The information about the allowed currencies options is grouped in the following columns:
 

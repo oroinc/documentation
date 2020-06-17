@@ -2,8 +2,8 @@
 
 .. _sys--commerce--product--product-units:
 
-Product Units
-=============
+Configure Global Product Unit Settings
+======================================
 
 In the system configuration, you are in control of the product unit options that apply system-wide. You may:
 
@@ -16,8 +16,8 @@ To update the product unit settings:
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Product Unit** in the menu to the left.
 
-.. note::
-   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note::
+       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user/img/system/config_commerce/product/ProductUnit.png
       :alt: The product units configuration page

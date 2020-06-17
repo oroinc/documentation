@@ -3,8 +3,9 @@
 
 .. _contact_groups:
 
-Contact Groups 
-==============
+Configure Contact Groups in the Back-Office
+===========================================
+
 
 A **contact group** is a system entity that represents a group of :term:`contacts <Contact>`.
 By default, contact groups are used in :ref:`filters and segments <user-guide-filters-management>`.

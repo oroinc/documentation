@@ -2,8 +2,8 @@
 
 .. _sys--users--organization--commerce--products--featured-products:
 
-Segment for Featured Products per Organization
-----------------------------------------------
+Configure Settings for Featured Product per Organization
+========================================================
 
 You can control which segment is used to store featured products :ref:`globally <products--featured-products>`, per organization, and :ref:`per website <sys--websites--commerce--products--featured-products>`.
 
@@ -12,7 +12,6 @@ Before enabling the featured products segment for a particular organization, mak
 1. Mark the selected products as featured in the **General** section of the **Products > Products** main menu by setting **Is Featured** to *Yes*.
 
 2. Create a featured product segment under **Reports & Segments > Manage Segments** as described in the :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
-
 
 Now, you can enable the featured products segment:
 

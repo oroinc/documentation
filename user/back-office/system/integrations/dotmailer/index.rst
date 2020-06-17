@@ -4,8 +4,8 @@
 .. _user-guide-dotmailer-overview:
 .. _user-guide-dm-integration:
 
-dotmailer Integration
-=====================
+Manage dotmailer Integration in the Back-Office
+===============================================
 
 .. begin_include
 
@@ -43,8 +43,8 @@ Key Points of Reference
    :hidden:
    :maxdepth: 1
 
-   dotmailer-configuration
-   dotmailer-single-sign-on
+   Configure dotmailer Integration <dotmailer-configuration>
+   Configure Single Sign-on <dotmailer-single-sign-on>
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

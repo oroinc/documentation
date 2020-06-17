@@ -5,8 +5,8 @@
 
 .. _frontstore-guide--navigation:
 
-Navigation and UI
-=================
+Navigation and UI in the Storefront
+===================================
 
 Oro applications offer high flexibility and customization, which means that the user interface of the stores may differ. However, the integral parts that constitute the interface are cross-functional. You can find a list of storefront-wide actions and settings below:
 
@@ -19,8 +19,8 @@ Oro applications offer high flexibility and customization, which means that the 
 .. toctree::
    :hidden:
 
-   general-layout
-   common-controls
+   General Layout <general-layout>
+   Common Controls <common-controls>
 
 
 .. include:: /include/include-images.rst

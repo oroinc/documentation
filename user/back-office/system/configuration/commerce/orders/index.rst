@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--order:
 
-Orders
-======
+Configure Global Orders Settings
+================================
 
 Learn how to define how open orders should be displayed in the storefront.
 
@@ -16,6 +16,6 @@ Learn how to define how open orders should be displayed in the storefront.
    :hidden:
    :maxdepth: 1
 
-   global-order-automation
-   global-order-creation
-   global-previously-purchased
+   Order Automation <global-order-automation>
+   Order Creation <global-order-creation>
+   Purchase History <global-previously-purchased>

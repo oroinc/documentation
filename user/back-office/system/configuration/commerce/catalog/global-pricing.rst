@@ -3,10 +3,8 @@
 .. _sys--config--commerce--catalog--pricing:
 .. _pricing-configuration:
 
-Pricing
--------
-
-.. begin
+Configure Global Pricing Settings
+=================================
 
 .. important:: This section is a part of the :ref:`Price Management <user-guide--pricing>` topic that provides the general understanding of pricing concept in Oro applications.
 
@@ -128,9 +126,6 @@ The **Pricing** page opens. It contains the following information:
 #. To roll back any changes to the currency settings, click **Revert** on the top right.
 
 4. Click **Save Settings**.
-
-
-.. finish
 
 **Related Articles**
 

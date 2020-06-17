@@ -3,8 +3,8 @@
 .. _sys--conf--commerce--catalog--special-pages:
 .. _sys--conf--commerce--catalog--special-pages--global:
 
-Special Pages (All Products)
-============================
+Configure Global Special Pages (All Products) Settings
+======================================================
 
 .. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 

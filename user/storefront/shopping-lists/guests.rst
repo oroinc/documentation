@@ -2,8 +2,8 @@
 
 .. _frontstore-guide--shopping-lists-guest:
 
-Shopping Lists for Guest Users
-==============================
+Manage Shopping Lists for Guest Users in the Storefront
+=======================================================
 
 In Oro application, unregistered customers can create and manage a shopping list in the storefront without the need to register. By default, they can have one shopping list per website and browsing session with the possibility of storing such list for up to 30 days in a single browser.
 

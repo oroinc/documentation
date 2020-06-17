@@ -2,10 +2,8 @@
 
 .. _user-guide--system-configuration--commerce-sales-organization:
 
-Guest Checkout per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin
+Configure Guest Checkout Settings per Organization
+==================================================
 
 To enable guest checkout per organization:
 
@@ -38,9 +36,6 @@ To enable guest checkout per organization:
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest checkout data, adjust permissions for the checkout entity in their roles accordingly.
 
 8. Click **Save Settings**.
-
-.. finish
-
 
 .. include:: /include/include-images.rst
    :start-after: begin

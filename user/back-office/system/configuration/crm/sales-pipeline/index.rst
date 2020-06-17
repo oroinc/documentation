@@ -2,8 +2,8 @@
 
 .. _configuration--guide--crm--sales-pipeline:
 
-Sales Pipeline
-==============
+Configure Global Sales Pipeline Settings
+========================================
 
 Learn how to enable and set up leads, opportunities and sales territories.
 
@@ -16,7 +16,7 @@ Learn how to enable and set up leads, opportunities and sales territories.
    :hidden:
    :maxdepth: 1
    
-   sales-territories
-   leads
-   opportunities 
+   Sales Territories<sales-territories>
+   Lead <leads>
+   Opportunity <opportunities>
 

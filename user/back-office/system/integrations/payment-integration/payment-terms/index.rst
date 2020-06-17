@@ -2,8 +2,8 @@
 
 .. _user-guide--payment--payment-providers-overview--payment-term-config:
 
-Payment Terms Configuration
-===========================
+Configure Payment Terms in the Back-Office
+==========================================
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 

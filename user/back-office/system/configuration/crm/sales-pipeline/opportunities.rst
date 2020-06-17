@@ -2,8 +2,8 @@
 
 .. _sys--configuration--crm--sales-pipeline--opportunities:
 
-Opportunity
-===========
+Configure Global Opportunity Settings
+=====================================
 
 .. hint:: Read more on this topic in :ref:`Sales: Opportunities <user-guide-system-channel-entities-opportunities>`.
 

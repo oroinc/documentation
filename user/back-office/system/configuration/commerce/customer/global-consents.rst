@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--consents:
 
-Consents
-========
+Configure Global Consents Settings
+==================================
 
 .. hint:: Read more on this topic in :ref:`Data Protection and Consent Management <user-guide--consents>`.
 

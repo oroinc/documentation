@@ -3,8 +3,8 @@
 .. _sys--conf--commerce--guest-access--global:
 .. _sys--conf--commerce--guest--enable--access:
 
-Website Access
-==============
+Configure Global Website Access Settings
+========================================
 
 .. begin
 

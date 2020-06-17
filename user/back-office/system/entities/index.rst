@@ -4,8 +4,8 @@
 .. _admin-guide-entity-interface:
 .. _doc-entities:
 
-Entities
-========
+Configure Entities in the Back-Office
+=====================================
 
 
 Oro applications organize information into entities, records, and properties. An **entity** is a collection of similar information. That information is usually stored in a separate table in the database. Each instance of this collection is a **record** that is stored as a row in the table. The details of each record are its **properties**. They are stored in the dedicated table columns. The parameters of properties are defined in the entity fields.

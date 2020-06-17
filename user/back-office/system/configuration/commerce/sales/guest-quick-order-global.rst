@@ -4,8 +4,8 @@
 .. _user-guide--system-configuration--commerce-sales--quick-order-form:
 
 
-Quick Order Form
-================
+Configure Global Quick Order Form Settings
+==========================================
 
 Registered and unregistered customers can use a quick order form for fast purchases in the Oro storefront. By default, quick order form is enabled, while guest quick order form is disabled. You can enable the latter on three levels – globally, :ref:`per organization <user-guide--system-configuration--commerce-sales--quick-order-form--organization>` and :ref:`per website <user-guide--system-configuration--commerce-sales--quick-order-form--website>`.
 

@@ -2,8 +2,8 @@
 
 .. _configuration--guide--commerce--configuration--sales-order-history:
 
-Order History (Open Orders)
-===========================
+Configure Global Order History Settings (Open Orders)
+=====================================================
 
 You can define whether to display open :term:`orders <Order>` within the Order History menu in the storefront, or as a separate Open Orders menu item. This setting can only be configured :ref:`globally <doc-system-configuration>`:
  

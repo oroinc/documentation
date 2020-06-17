@@ -2,10 +2,8 @@
 
 .. _config-guide--landing-commerce--products--configurable-products--website:
 
-Configurable Products per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. begin
+Configure Settings for Configurable Products per Website
+========================================================
 
 To change the default settings for a website:
 
@@ -54,7 +52,6 @@ To configure a matrix form view for a particular case:
 
 6. **Allow To Add Empty Products** --- If enabled, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use Organization** check box next to the option and then the check box of the option itself.
 
-
 Variations
 ----------
 
@@ -78,7 +75,6 @@ To configure the required settings for simple products variations:
 
 3. Click **Save Settings**.
 
-.. finish
 
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -2,8 +2,8 @@
 
 .. _localization--localizations:
 
-Localizations
--------------
+Configure Localizations in the Back-Office
+==========================================
 
 .. begin
 
