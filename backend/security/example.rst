@@ -1,4 +1,4 @@
-.. _bundle-docs-platform-security-bundle-example:
+.. _backend-security-bundle-example:
 
 Access Levels and Ownership (Example)
 =====================================

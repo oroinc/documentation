@@ -11,42 +11,6 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/book/forms.html" target="_blank">form types in the Symfony documentation</a>
 
-.. |Actions (Capabilities) and Entities ACL Extensions| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/implementation.md" target="_blank">Actions (Capabilities) and Entities ACL Extensions</a>
-
-.. |Permissions for User Roles (UI)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/ui.md" target="_blank">Permissions for User Roles (UI)</a>
-
-.. |ACL Manager| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/acl-manager.md" target="_blank">ACL Manager</a>
-
-.. |Access Levels| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/access-levels.md" target="_blank">Access Levels</a>
-
-.. |Field ACL| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/field-acl.md" target="_blank">Field ACL</a>
-
-.. |Custom Listeners| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/custom-listeners.md" target="_blank">Custom Listeners</a>
-
-.. |Access Rules| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/access-rules.md" target="_blank">Access Rules</a>
-
-.. |How to Configure and Apply Custom Permissions to an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/permissions.md" target="_blank">How to Configure and Apply Custom Permissions to an Entity</a>
-
-.. |How to Work with Configurable Permissions| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/configurable-permissions.md" target="_blank">How to Work with Configurable Permissions</a>
-
 .. |Use Emails| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/emails.md" target="_blank">Use Emails</a>
@@ -1462,7 +1426,7 @@ Links (Dev)
 
 .. |usage of ACLs| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/security/acl.html" target="_blank">usage of ACLs</a>
+   <a href="https://github.com/symfony/acl-bundle/blob/master/src/Resources/doc/index.rst" target="_blank">usage of ACLs</a>
 
 .. |@ParamConverter annotation| raw:: html
 
@@ -5326,6 +5290,114 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/TaxBundle/Provider/TaxProviderInterface.php" target="_blank">TaxProviderInterface</a>
 
+.. |Authorization Checker| raw:: html
+
+   <a href="https://symfony.com/doc/current/components/security/authorization.html#authorization-checker" target="_blank">Authorization Checker</a>
+
+.. |AclHelper| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/ORM/Walker/AclHelper.php" target="_blank">AclHelper</a>
+
+.. |AccessRuleWalker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/ORM/Walker/AccessRuleWalker.php" target="_blank">AccessRuleWalker</a>
+
+.. |AccessRuleInterface| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/SecurityBundle/AccessRule/AccessRuleInterface.php" target="_blank">AccessRuleInterface</a>
+
+.. |Criteria object| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/SecurityBundle/AccessRule/Criteria.php" target="_blank">Criteria object</a>
+
+.. |AclAccessRule| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/SecurityBundle/AccessRule/AclAccessRule.php" target="_blank">AclAccessRule</a>
+
+.. |AvailableOwnerAccessRule| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/AvailableOwnerAccessRule.php" target="_blank">AvailableOwnerAccessRule</a>
+
+.. |ExpressionInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/ExpressionInterface.php" target="_blank">ExpressionInterface</a>
+
+.. |CompositeExpression| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/CompositeExpression.php" target="_blank">CompositeExpression</a>
+
+.. |Comparison| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/Comparison.php" target="_blank">Comparison</a>
+
+.. |NullComparison| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/NullComparison.php" target="_blank">NullComparison</a>
+
+.. |Path| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/Path.php" target="_blank">Path</a>
+
+.. |Value| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/Value.php" target="_blank">Value</a>
+
+.. |AccessDenied| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/AccessDenied.php" target="_blank">AccessDenied</a>
+
+.. |Exists| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/Exists.php" target="_blank">Exists</a>
+
+.. |Subquery| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/Subquery.php" target="_blank">Subquery</a>
+
+.. |Association| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Expr/Association.php" target="_blank">Association</a>
+
+.. |AccessRuleOptionMatcherInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/AccessRuleOptionMatcherInterface.php" target="_blank">AccessRuleOptionMatcherInterface</a>
+
+.. |AstVisitor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/ORM/Walker/AstVisitor.php" target="_blank">AstVisitor</a>
+
+.. |Visitor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/AccessRule/Visitor.php" target="_blank">Visitor</a>
+
+.. |Cross-Site Request Forgery (CSRF)| raw:: html
+
+   <a href="https://owasp.org/www-community/attacks/csrf" target="_blank">Cross-Site Request Forgery (CSRF)</a>
+
+.. |Double Submit Cookie| raw:: html
+
+   <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#double-submit-cookie" target="_blank">Double Submit Cookie</a>
+
+.. |FieldVote| raw:: html
+
+   <a href="https://github.com/symfony/security-acl/blob/master/Voter/FieldVote.php" target="_blank">FieldVote</a>
+
+.. |DomainObjectReference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Acl/Domain/DomainObjectReference.php" target="_blank">DomainObjectReference</a>
+
+.. |AuthorizationChecker class| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Authorization/AuthorizationChecker.php" target="_blank">AuthorizationChecker class</a>
+
+.. |ClassAuthorizationChecker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Authorization/ClassAuthorizationChecker.php" target="_blank">ClassAuthorizationChecker</a>
+
+.. |RequestAuthorizationChecker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Authorization/RequestAuthorizationChecker.php" target="_blank">CRequestAuthorizationChecker</a>
+
 .. |Symfony Local Web Server| raw:: html
 
    <a href="https://symfony.com/doc/current/setup/symfony_server.html" target="_blank">Symfony Local Web Server</a>
@@ -5373,5 +5445,6 @@ Links (Dev)
 .. |setting up the Local Proxy| raw:: html
 
    <a href="https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy" target="_blank">setting up the Local Proxy</a>
+
 
 

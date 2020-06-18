@@ -13,38 +13,26 @@ The bundle enables developers to set up access restrictions for entities and non
 Related Documentation
 ---------------------
 
-* :ref:`Introduction to Security in Oro Applications <bundle-docs-platform-security-bundle-intro>`
+* :ref:`Introduction to Security in Oro Applications <backend-security-bundle-intro>`
 
-  * :ref:`Access Control Lists <bundle-docs-platform-security-bundle-access-control-list>`
-  * :ref:`Permissions for Entities <bundle-docs-platform-security-bundle-configure-entities>`
-  * :ref:`Protecting Resources <bundle-docs-platform-security-bundle-protect-resources>`
+  * :ref:`Access Control Lists <backend-security-bundle-access-control-list>`
+  * :ref:`Permissions for Entities <backend-security-bundle-configure-entities>`
+  * :ref:`Protecting Resources <backend-security-bundle-protect-resources>`
 
 * OroSecurityBundle Features
 
-  * |Actions (Capabilities) and Entities ACL Extensions|
-  * |Permissions for User Roles (UI)|
-  * |ACL Manager|
-  * |Access Levels|
-  * |Field ACL|
-  * |Custom Listeners|
-  * |Access Rules|
+  * :ref:`ACL Manager <backend-security-bundle-acl-manager>`
+  * :ref:`Field ACL <backend-security-bundle-field-acl>`
+  * :ref:`Custom Listeners <backend-security-bundle-listeners>`
+  * :ref:`Access Rules <backend-security-bundle-access-rules>`
 
 * Custom and Configurable Permissions
 
-  * |How to Configure and Apply Custom Permissions to an Entity|
-  * |How to Work with Configurable Permissions|
+  * :ref:`How to Configure and Apply Custom Permissions to an Entity <backend-security-bundle-permissions>`
+  * :ref:`How to Work with Configurable Permissions <backend-security-bundle-configurable-permissions>`
 
-.. tip:: Take a look an how ACL works in the application in the :ref:`Access Levels and Ownership <bundle-docs-platform-security-bundle-example>` topic which illustrates the hierarchy of two sample organizations and access setup within them.
-
-**Related Topics**
-
-* :ref:`Introduction to Security in Oro Applications <bundle-docs-platform-security-bundle-intro>`
-
-  * :ref:`Access Control Lists <bundle-docs-platform-security-bundle-access-control-list>`
-  * :ref:`Permissions for Entities <bundle-docs-platform-security-bundle-configure-entities>`
-  * :ref:`Protecting Resources <bundle-docs-platform-security-bundle-protect-resources>`
-
-* :ref:`Access Levels and Ownership Illustration <bundle-docs-platform-security-bundle-example>`
+.. tip::
+        Take a look an how ACL works in the application in the :ref:`Access Levels and Ownership <backend-security-bundle-example>` topic which illustrates the hierarchy of two sample organizations and access setup within them.
 
 
 .. include:: /include/include-links-dev.rst
