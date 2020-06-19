@@ -5,7 +5,7 @@ How to Use Draft ACL
 
 Draft entities have constraints when working with ACL.
 
-Follow the instructions provided in the :ref:`Introduction to Security in Oro Applications <bundle-docs-platform-security-bundle-introduction>` topic for more details.
+Follow the instructions provided in the :ref:`Introduction to Security in Oro Applications <backend-security-bundle-introduction>` topic for more details.
 
 Permissions
 -----------
