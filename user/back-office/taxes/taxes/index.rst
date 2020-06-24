@@ -7,7 +7,7 @@ Manage Taxes (Tax Rates) in the Back-Office
 
 .. begin
 
-.. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
+.. hint:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 
 Tax or tax rate is a particular percentage of tax with unique identifier and description that helps you associate the tax rate with other tax components using :ref:`tax rules <tax-rules>`.
 

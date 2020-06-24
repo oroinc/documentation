@@ -3,6 +3,8 @@
 Manage Quotes
 =============
 
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+
 You can edit and delete existing quotes, as well as engage them in various activities, such as :ref:`attaching files to a quote <user-guide-activities-attachments>`, :ref:`making notes <user-guide-add-note>` on the quote, :ref:`creating calendar events <doc-activities-events>` linked to the quote, :ref:`sending emails <user-guide-using-emails>` related to the quote.
 
 .. _quotes--actions--edit:

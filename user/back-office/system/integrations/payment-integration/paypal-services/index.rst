@@ -5,7 +5,7 @@
 Configure Multiple PayPal Payment Services in the Back-Office
 =============================================================
 
-.. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 PayPal is a fast, safe and reliable online global payment system that offers easy online payments for businesses and individuals.
 

@@ -6,7 +6,7 @@
 Configure Shipping Method Integration in the Back-Office
 ========================================================
 
-.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 
 Create an Integration with a Shipping Service Provider
 ------------------------------------------------------

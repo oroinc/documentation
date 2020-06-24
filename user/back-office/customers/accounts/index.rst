@@ -6,7 +6,7 @@
 Manage Accounts in the Back-Office
 ==================================
 
-.. important:: This section is a part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
+.. hint:: This section is a part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
 
 :term:`Accounts <Account>` originated in OroCRM as a tool to collect and process information on the customer activity of a person, group of people or business cooperating with
 you. An account can aggregate details of all the customer identities, providing a 360-degree view of the customer. Customer data and business transactions are displayed on the account page, and their activities are added to the account's activity list.

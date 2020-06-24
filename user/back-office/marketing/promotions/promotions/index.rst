@@ -5,7 +5,7 @@
 Manage Promotions in the Back-Office
 ====================================
 
-.. important:: This section is a part of the :ref:`Promotion Management <concept-guides--promotion-management>` topic that provides the general understanding of the promotions and coupons concept.
+.. hint:: This section is a part of the :ref:`Promotion Management <concept-guides--promotion-management>` topic that provides the general understanding of the promotions and coupons concept.
 
 Companies often develop loyalty programs offering special discounts to customers who have bought from the company before, follow them in social networks, or have commented on their website. This can motivate customers to buy more and repeat purchases from their stores, making :term:`promotions <Promotion>` one of the most effective strategies when it comes to converting shoppers to buyers.
 

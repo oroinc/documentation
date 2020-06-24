@@ -5,6 +5,8 @@
 Create a Quote From Scratch
 ===========================
 
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+
 To create a new quote from scratch:
 
 1. Navigate to **Sales > Quotes** in the main menu.

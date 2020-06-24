@@ -2,8 +2,10 @@
 
 .. _user-guide--system-configuration--commerce-sales--rfq--organization:
 
-Configure Guest Request for Quote Settings per Organization
-===========================================================
+Configure Request for Quote Settings per Organization
+=====================================================
+
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
 
 To enable guest request for quote submission per organization:
 

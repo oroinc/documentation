@@ -5,7 +5,7 @@
 Configure Flat Rate Shipping Integration in the Back-Office
 ===========================================================
 
-.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 
 Flat Rate shipping integration section describes the steps that are necessary to expose :term:`flat rate <Flat Rate>` shipping as a shipping method in OroCommerce orders and quotes.
 

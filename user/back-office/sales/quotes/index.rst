@@ -5,6 +5,8 @@
 Manage Quotes in the Back-Office
 ================================
 
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+
 A :term:`quote <Quote>` is used to negotiate with the customer (e.g. offer better price, more convenient quantities and additional services). A quote may be created in response to a customer request for quote, or as a result of the direct communication with the customer.  Once the customer is happy with the offer in the quote and is ready to proceed with their order, they accept the quote.
 
 Quote management and their use in many ways depend on the following:

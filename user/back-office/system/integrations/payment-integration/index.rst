@@ -7,7 +7,7 @@ Configure Payment Method Integration in the Back-Office
 
 .. begin
 
-.. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 You can configure an integration with third-party payment providers to offer their payment services for the quotes and orders placed using OroCommerce.
 
