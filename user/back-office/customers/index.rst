@@ -9,7 +9,7 @@
 Manage Customer Entities in the Back-Office
 ===========================================
 
-.. important:: This section is a part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
+.. hint:: This section is a part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
 
 In the applications where an integration between Commerce and CRM is configured, the Customer menu contains references to entities from both applications:
 

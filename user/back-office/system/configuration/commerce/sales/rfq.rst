@@ -7,7 +7,9 @@
 Configure Global Request for Quote Settings
 ===========================================
 
-On the RFQ configuration page, you can control RFQ Notification options and Guest RFQs.
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+
+On the RFQ configuration page, you can enable RFQ feature for the back-office and storefront, control RFQ Notification options and Guest RFQs.
 
 In your Oro back-office, you can control the way notifications are sent both to customers and sales representatives upon submitting a new request for quote. This can be done on two levels -- globally and :ref:`per website <sys--conf--commerce--sales--rfq-notifications--website>`.
 

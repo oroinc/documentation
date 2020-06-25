@@ -5,6 +5,8 @@
 Send a Guest Quote
 ==================
 
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+
 Non-authenticated customer users can request a quote for the products they are interested in. When the sales representative processes the request and creates a quote in the back-office, buyers can access the quote via a unique direct link through the email.
 
 Once a guest customer user submits an RFQ in the storefront, this RFQ appears in the back-office.

@@ -5,7 +5,7 @@
 Configure Global Inventory Quantity Limitations Settings
 ========================================================
 
-.. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
+.. hint:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
 
 You can control the minimum and maximum quantities that are available buyers (in the storefront) and sales people (in the back-office) can claim in the RFQ, customer order, quote, or a shopping list.
 

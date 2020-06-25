@@ -7,7 +7,7 @@ Configure Payment Rules in the Back-Office
 
 .. begin
 
-.. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 You can configure one or more payment rules that enable the payment methods for the provided destinations.
 

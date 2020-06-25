@@ -13,7 +13,7 @@
 Get Started with Products in the Back-Office
 ============================================
 
-.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 
 OroCommerce enables you to create and manage products in the way that fits specifically your business strategies and requirements. As it may not be obvious where to start working with your product, several dedicated sections have been compiled to help you understand the full picture of creating and managing products, as well as some additional aspects that working with products may involve.
 

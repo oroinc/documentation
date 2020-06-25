@@ -5,7 +5,7 @@
 Configure Payment Terms in the Back-Office
 ==========================================
 
-.. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 In OroCommerce, you can use :term:`payment terms <Payment Term>` configured per customer to help them use the payment conditions guaranteed by their contract with your company.
 

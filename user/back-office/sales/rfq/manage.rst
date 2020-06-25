@@ -5,6 +5,8 @@
 Manage RFQs
 ===========
 
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+
 From the **Requests for Quote** page, you can perform the following actions:
 
 * `Create a Quote from an RFQ`_

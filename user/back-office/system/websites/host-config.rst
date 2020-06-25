@@ -5,7 +5,7 @@
 Setup a Website Host
 ====================
 
-.. important:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
+.. hint:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
 
 In OroCommerce, websites may be exposed via different domains, or reside in the sub-folders of the same domain (e.g., the two websites that target the United States and the United Kingdom may be available at the *https://us-store.com* and *https://uk-store.com* respectively, or they may be reachable via *https://store.com/us* and *https://store.com/uk*).
 

@@ -7,7 +7,7 @@ Manage Customer Tax Codes in the Back-Office
 
 .. begin
 
-.. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
+.. hint:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 
 Customer Tax Code is a label that is assigned to a customer and indicates the tax obligations and exemptions a customer has. The customer tax obligations are taken into account when a customer (user) submits an order.
 
