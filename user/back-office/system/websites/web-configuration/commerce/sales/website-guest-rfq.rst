@@ -6,7 +6,11 @@
 Configure Request for Quote Settings per Website
 ================================================
 
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+
 In the Request For Quote section, you can enable guest request for quote submission and configure RFQ notifications:
+
+.. begin_rfq
 
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
@@ -39,6 +43,8 @@ In the Request For Quote section, you can enable guest request for quote submiss
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest RFQs, adjust permissions for the Request for Quote entity in their roles accordingly.
 
 7. Click **Save Settings**.
+
+.. finish_rfq
 
 .. include:: /include/include-images.rst
    :start-after: begin

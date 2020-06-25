@@ -5,7 +5,7 @@
 Manage Product Units in the Back-Office
 =======================================
 
-.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 
 A :term:`Product Unit` represents a measurement system of products or their combinations. All products in OroCommerce must have a product unit assigned to them for the customer users to be able to add items to the shopping list and determine their quantity in the OroCommerce storefront. Product units are also used throughout the system for inventory and pricing control. Each product in OroCommerce can be assigned multiple units with custom pricing added to each particular product unit.
  

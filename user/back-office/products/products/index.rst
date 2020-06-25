@@ -7,7 +7,7 @@ Manage Products in the Back-Office
 
 .. begin_product_configuration
 
-.. important:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Product Management <concept-guides--product-management>` topic that provides the general understanding of the product concept in OroCommerce.
 
 The flow for creating and managing products may vary depending on the needs of your business, whether you have small scale operations or complicated product characteristics and visibility settings. With the help of OroCommerce flexible product management system, configuring products is simple to achieve. However, it may not be obvious where to start. This section is here to guide you through the process and refer you to suitable topics.
 

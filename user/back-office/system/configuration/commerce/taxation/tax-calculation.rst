@@ -5,7 +5,7 @@
 Configure Global Tax Calculation Settings
 =========================================
 
-.. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
+.. hint:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 
 By default, OroCommerce calculates tax using a rate defined in the built-in tax rule for the default shipping origin address.
 

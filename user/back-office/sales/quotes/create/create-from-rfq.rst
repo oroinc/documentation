@@ -7,6 +7,8 @@ Create a Quote on the Customer Request
 
 .. begin_create_from_rqf
 
+.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+
 To create a new quote from the customer request for quote (RFQ):
 
 1. Navigate to **Sales > Requests for Quote** in the main menu.

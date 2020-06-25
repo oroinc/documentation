@@ -59,6 +59,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Contacts <sys--conf--commerce--sales--contacts-organization>`
     * :ref:`Checkout <user-guide--system-configuration--commerce-sales-organization>`
     * :ref:`Request for Quote <user-guide--system-configuration--commerce-sales--rfq--organization>`
+    * :ref:`Quotes <sys--organization-quotes>`
 
   * Orders
 

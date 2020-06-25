@@ -31,6 +31,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
       <li><a class="" href="shipping-configuration/">Shipping Configuration</a></li>
       <li><a class="tag-very-important" href="pricing/">Price Management</a></li>
       <li><a class="" href="inventory/">Inventory and Warehouse Management</a></li>
+      <li><a class="tag-important" href="rfq-quotes/">RFQ and Quote Management</a></li>
       <li><a class="tag-very-important" href="orders/">Order Management</a></li>
       <li><a class="tag-important" href="localization/">Storefront Localization</a></li>
       <li><a class="tag-very-important" href="taxes/">Tax Management</a></li>
@@ -52,6 +53,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    Price Management <pricing/index>
    Payment Configuration <payment-configuration/index>
    Shipping Configuration <shipping-configuration/index>
+   RFQ and Quote Management <rfq-quotes/index>
    Order Management <orders/index>
    Multi-Website Configuration <websites/index>
    Tax Management <taxes/index>

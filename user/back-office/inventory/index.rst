@@ -11,7 +11,7 @@
 Manage Inventory in the Back-Office
 ===================================
 
-.. important:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
+.. hint:: This section is a part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
 
 Inventory helps you track the availability of your product in one or more warehouses, display it for the buyer and sales people, and automatically adjust it after every operation in the Oro application. You can create one or more warehouses, configure inventory management options, manage product inventory status and track product quantities in every warehouse.
 

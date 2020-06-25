@@ -5,7 +5,7 @@
 Configure Global Settings for US Sales Tax (Digital Products)
 =============================================================
 
-.. important:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
+.. hint:: This section is a part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
 
 When the digital product is purchased from the shipping origin address in the state with zero tax rate for digital products, the tax is calculated based on the shipping destination, and the global system tax calculation rules are ignored.
 

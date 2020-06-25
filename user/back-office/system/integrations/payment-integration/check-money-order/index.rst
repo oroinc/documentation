@@ -6,7 +6,7 @@
 Configure Check/Money Order Service Integration in the Back-Office
 ==================================================================
 
-.. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 Money order is a paper document similar to check that is prepaid for certain amount. It does not require a check account and may be issued by banks, post, money transfer companies, etc.
 
