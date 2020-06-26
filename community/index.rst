@@ -90,8 +90,8 @@ If you encounter any issues with your Oro application or noticed inaccuracies in
 .. raw:: html
 
     <div class="btn-holder">
-        <a class="button btn-yellow reference internal" href="issues.html#doc-community-issue-report"><span class="std std-ref">Report an Issue</span></a>
-        <a class="button btn-orangedark reference internal" href="issues.html#reporting-security-issues"><span class="std std-ref">Report a Security Issue</span></a>
+        <a class="button btn-yellow reference internal" href="issues#doc-community-issue-report"><span class="std std-ref">Report an Issue</span></a>
+        <a class="button btn-orangedark reference internal" href="issues#reporting-security-issues"><span class="std std-ref">Report a Security Issue</span></a>
     </div>
 
 Learn about Release Versions and Dates
