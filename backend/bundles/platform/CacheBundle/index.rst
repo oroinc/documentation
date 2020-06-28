@@ -16,10 +16,8 @@ for different cache types.
 Abstract Cache Services
 -----------------------
 
-There are three abstract services you can use as a parent for your cache services:
+There are two abstract services you can use as a parent for your cache services:
 
--  ``oro.file_cache.abstract`` - this cache should be used for caching
-   data private for each node in a web farm
 -  ``oro.cache.abstract`` - this cache should be used for caching data
    that need to be shared between nodes in a web farm
 -  ``oro.cache.abstract.without_memory_cache`` - the same as ``oro.cache.abstract`` but without using
@@ -38,7 +36,7 @@ The following example shows how these services can be used:
             calls:
                 - [ setNamespace, [ 'acme_test' ] ]
 
-Also ``oro.file_cache.abstract`` and ``oro.cache.abstract`` services can be re-declared
+Also the ``oro.cache.abstract`` service can be re-declared
 in the application configuration file, for example:
 
 .. code-block:: none
