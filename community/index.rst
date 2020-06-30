@@ -28,7 +28,7 @@ Contact Community
                     <div class="icon">
                         <img src="../_static/images/Stack_Overflow-Logo.wine.svg" alt="Stack Overflow" width="120px">
                     </div>
-                    <p>Direct the issues you encounter when configuring, extending or customizing Oro applications to Slack Overflow. Use the following issue tags: <a href="https://stackoverflow.com/questions/tagged/orocommerce" target="_blank">[orocommerce]</a>, <a href="https://stackoverflow.com/questions/tagged/orocrm" target="_blank">[orocrm]</a>, <a href="https://stackoverflow.com/questions/tagged/oroplatform" target="_blank">[oroplatform]</a>.</p>
+                    <p>Direct the issues you encounter when configuring, extending or customizing Oro applications to Stack Overflow. Use the following issue tags: <a href="https://stackoverflow.com/questions/tagged/orocommerce" target="_blank">[orocommerce]</a>, <a href="https://stackoverflow.com/questions/tagged/orocrm" target="_blank">[orocrm]</a>, <a href="https://stackoverflow.com/questions/tagged/oroplatform" target="_blank">[oroplatform]</a>.</p>
                 </li>
                 <li>
                     <div class="icon">
@@ -40,7 +40,7 @@ Contact Community
                     <div class="icon">
                         <img src="../_static/images/slack.svg" alt="Slack" width="75px">
                     </div>
-                    <p>Join our community <a href="https://orocommunity.slack.com/join/shared_invite/enQtNTI0MzcyNzA2NjU5LWJhMmVhYWExNWEyYzdjMjdjNjVlNjIzZGUxZjBmYTVmYzE5NWRjMzc5YzMwYmQxOWRhMjYwN2I3Njc4ZjM4MTQ" target="_blank">team chat channel on Slack</a> to ask questions and get advice from fellow community members.</p>
+                    <p>Join our community <a href="https://bitly.com/oro-slack" target="_blank">team chat channel on Slack</a> to ask questions and get advice from fellow community members.</p>
                 </li>
                 <li>
                     <div class="icon">
