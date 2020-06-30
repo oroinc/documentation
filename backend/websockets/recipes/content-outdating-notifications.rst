@@ -50,15 +50,14 @@ Oro applications have implemented three built-in Tag Generators:
  
 * *DoctrineTagGenerator*
 * *SimpleTagGenerator*
-* *TagGeneratorChain*
+* *ChainTagGenerator*
  
-DoctrineTagGenerator, for example, receives an entity object and creates a content tag based on information about entity type and the entity object ID. TagGeneratorChain combines all registered generators in the application.
+DoctrineTagGenerator, for example, receives an entity object and creates a content tag based on information about entity type and the entity object ID. ChainTagGenerator combines all registered generators in the application.
 
-To create your own generator and add it into *TagGeneratorChain registry*, you should develop a class that implements
+To create your own generator, you should develop a class that implements
 **TagGeneratorInterface** and register it as a service with the **oro_sync.tag_generator** tag.
 
-To generate a content tag on the **frontend side**, you should use the **oro_sync_get_content_tags** Twig function that uses the
-TagGeneratorChain service inside:
+To generate a content tag on the **frontend side**, you should use the **oro_sync_get_content_tags** Twig function:
 
 .. code-block:: php
     :linenos:
@@ -86,14 +85,14 @@ to the Content Manager tracking registry is
     {% import 'OroSyncBundle:Include:contentTags.html.twig' as syncMacro %}
     {{ syncMacro.syncContentTags(entity) }}
 
-To generate a content tag on the backend side, you can use the**TagGeneratorChain** service directly:
+To generate a content tag on the backend side, you can use the **oro_sync.content.tag_generator** service directly:
 
 .. code-block:: php
     :linenos:
 
-    /** @var $tagGeneratorChain TagGeneratorChain */
-    $tagGeneratorChain = $container->get(‘oro_sync.content.tag_generator’);
-    $contentTag = $tagGeneratorChain->generate(entity);
+    /** @var TagGeneratorInterface $tagGenerator */
+    $tagGenerator = $container->get(‘oro_sync.content.tag_generator’);
+    $contentTag = $tagGenerator->generate(entity);
 
 When does the Sever Send Messages to the Frontend about Outdated Content?
 -------------------------------------------------------------------------
