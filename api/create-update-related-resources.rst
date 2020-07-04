@@ -255,6 +255,62 @@ This request does the following:
 
 2. Sets the primary email for the contact with identifier '79' and makes it the default contact.
 
+All included resources in а request must be connected to the primary resource and this must be explicitly specified
+in the request. You can specify the connection in both ways, from the primary resource to the included resource,
+and vise versa. The following examples are equivalent:
+
+.. code-block:: json
+    :linenos:
+
+    {"data": {
+        "type": "accounts",
+        "id": "52",
+        "relationships": {
+          "contact": {
+            "data": {"type": "contacts", "id": "79"}
+          }
+        }
+      },
+      "included": [
+        {
+          "meta": {
+              "update": true
+          },
+          "type": "contacts",
+          "id": "79",
+          "attributes": {
+            "primaryEmail": "john_doe@example.com"
+          }
+        }
+      ]
+    }
+
+.. code-block:: json
+    :linenos:
+
+    {"data": {
+        "type": "accounts",
+        "id": "52"
+      },
+      "included": [
+        {
+          "meta": {
+              "update": true
+          },
+          "type": "contacts",
+          "id": "79",
+          "attributes": {
+            "primaryEmail": "john_doe@example.com"
+          },
+          "relationships": {
+            "account": {
+              "data": {"type": "accounts", "id": "52"}
+            }
+          }
+        }
+      ]
+    }
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
