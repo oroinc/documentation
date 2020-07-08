@@ -50,6 +50,8 @@ Now the website is marked as default and will be used for the anonymous access.
 Configure a Website for B2C
 ---------------------------
 
+.. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
 OroCommerce enables you to customize the application for the B2C business type, modifying the default configuration to match the typical B2C setup. You can then change these settings manually in the system configuration, if necessary.
 
 A B2C website can be configured in two ways, either :ref:`during creation <system-websites-create>` or from the website's view page.

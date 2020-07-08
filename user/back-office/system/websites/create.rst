@@ -21,6 +21,8 @@ To create a new website in OroCommerce:
    * **Name** --- the website name.
    * **Configure For B2C** --- if set to *Yes*, some website configuration settings are modified to match the standard B2C setup. The changes affect the following options:
 
+     .. hint:: The **B2C configuration** feature is available since OroCommerce :ref:`v4.1.1 <system-information>`.
+
      .. image:: /user/img/system/websites/B2C_settings.png
         :alt: The list of options that are modified for the B2C website
 

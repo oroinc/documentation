@@ -12,3 +12,4 @@ Sales Configuration Settings per Organization
    Checkout <organization-guest-checkout>
    Request for Quote <organization-guest-rfq>
    Quotes <organization-quote>
+   Promotions <organization-promotions>

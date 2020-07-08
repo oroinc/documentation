@@ -53,6 +53,9 @@ To configure email settings globally:
 
    * **Attachments** --- Configure the following attachment options:
 
+     .. hint:: The **Maximum Attachment Size, Mb** feature is available since OroCRM :ref:`v4.1.3 <system-information>`.
+
+     * *Maximum Attachment Size, Mb* --- Set the maximum attachment size in Mb. Attachments that exceed the defined size will not be uploaded. You can remove size limitations by setting the size to 0.
      * *Enable Attachment Sync* --- Enable loading attachments on email sync. 
      * *Maximum Sync Attachment Size (Mb)* --- Set the maximum sync attachment size in Mb. Attachments that exceed the defined size will not be downloaded. You can remove size limitations by setting the size to 0.
      * *Remove Large Attachments* --- Click the button to add a job to the queue to remove all attachments exceeding the defined size from the system. 
@@ -161,7 +164,7 @@ To configure a system mailbox globally:
 10. Click **Add Rule** to add a new auto-response rule and complete the following details in the dialog:
 
    .. image:: /user/img/system/config_system/ar_rule.png
-      :alt: Sample autoresponse rule form
+      :alt: Sample auto-response rule form
 
    * *Status (Active/Inactive)* --- Only rules with active statuses are applied.
    * *Name* --- Select the name for the rule to be used within the system.

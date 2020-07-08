@@ -6,6 +6,8 @@
 Manage Content Widgets in the Back-Office
 =========================================
 
+.. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
 Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. :ref:`WYSIWYG fields <getting-started-wysiwyg-editor-field>` are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
 
 There are three content widget types:
@@ -67,15 +69,21 @@ To create a new content widget:
     .. image:: /user/img/marketing/content_widgets/copyright.png
        :alt: Copyright content widget form
 
+    |
+
    * **Product Mini Block** - Enables you to add a block with product information with or without prices, and/or the **Add to Shopping List** button.
 
      .. image:: /user/img/marketing/content_widgets/mini-block.png
         :alt: A product mini block form
 
+    |
+
    * **Product Segment** - Enables you to add a product segment content widget, and configure how many max and min items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Only segments with type *Product* are listed in the **Segment** field dropdown. You can modify an existing :ref:`segment <user-guide--business-intelligence--filters-segments>` or create a new one under **Reports&Segments > Manage Segments**.
 
      .. image:: /user/img/marketing/content_widgets/product-segment.png
         :alt: A product mini block form
+
+    |
 
 4. Once you have provided all widget-specific details, click **Save and Close**.
 
@@ -95,6 +103,8 @@ To create a new content widget:
 
 Add a Content Widget to WYSIWYG Fields
 --------------------------------------
+
+.. hint:: The advanced WYSIWYG editor is available since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system Information <system-information>`.
 
 You can add content widgets to WYSIWYG fields in your OroCommerce application, like content blocks, landing pages, etc.
 

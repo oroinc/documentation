@@ -40,7 +40,7 @@ To change the default customer user configuration settings globally:
 Configure User Impersonation
 ----------------------------
 
-.. note:: This feature is only available in the Enterprise edition.
+.. hint:: This feature is available in the Enterprise edition since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system Information <system-information>`.
 
 .. csv-table::
   :widths: 10, 30

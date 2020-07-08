@@ -29,6 +29,8 @@ To change the default customer user configuration settings for an organization:
 
 .. _organization-user-impersonation:
 
+.. hint:: This feature is available in the Enterprise edition since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
 5. In the **Login as Customer User** section, you can enable user impersonation for a specific organization. User impersonation allows back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
 
 6. To customize any of these options:
