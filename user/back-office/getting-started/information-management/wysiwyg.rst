@@ -5,6 +5,8 @@
 WYSIWYG Editor
 ==============
 
+.. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
 The :term:`WYSIWYG <WYSIWYG (What You See Is What You Get)>` editor feature is implemented by Oro applications to help you experience the control over the content of your HTML-like web pages within your website. It is an HTML page builder that helps you create a complex and attractive content with cutting-edge default and third-party widgets, embedded videos and pictures without any coding knowledge. Preview functions enable you to optimize the page for mobile and desktop formats before you publish.
 
 The WYSIWYG editor integrates the |GrapesJS| framework out-of-the-box. The framework provides multiple advanced capabilities for creating dynamic templates and HTML structures.
@@ -69,6 +71,7 @@ WYSIWYG enables you to:
 
 * Adapt the content for various display formats (desktop, tablet, and mobile). You can set the individual formatting for each display type, including different background colors, blocks dimension, text alignment, and other. For this, select the display type and customize the settings appropriately. View the results dynamically by switching from one display to another.
 
+
     .. image:: /user/img/getting_started/wysiwyg/display_types.png
        :alt: Selecting the display format
 
@@ -94,7 +97,6 @@ WYSIWYG enables you to:
     .. image:: /user/img/marketing/landing_pages/ContactWidget.png
        :alt: Show how the Contact Us widget is displayed in the storefront
        :scale: 60%
-
 
 .. note:: To add any custom options or custom video formats to the default WYSIWYG settings, ask for the developer assistance and follow the :ref:`HTML Purifier Modes <wysiwyg-field-customization>` customization guide.
 

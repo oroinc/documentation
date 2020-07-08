@@ -41,7 +41,11 @@ To create a new landing page:
 
    To ensure that slug prototype translation is localization-friendly, manage slug prototype translations: click |IcTranslations| next to the **Slug Prototypes** box and follow the guidance :ref:`here <localization--localization>`.
 
-#. Enter the landing page content in the WYSIWYG text editor. Drag the selected element (a text, an image, a column, or a source code) from the Blocks menu and drop it to the required location. Rearrange the content or modify the style of the elements by navigating from tab to tab in the WYSIWYG editor's manager bar. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
+#. Enter the landing page content in the WYSIWYG text editor.
+
+   .. hint:: The advanced WYSIWYG editor is available since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
+   Drag the selected element (a text, an image, a column, or a source code) from the Blocks menu and drop it to the required location. Rearrange the content or modify the style of the elements by navigating from tab to tab in the WYSIWYG editor's manager bar. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
 
    .. note:: You can insert the *Contact Us widget* into the required page. For this, enter ``{{widget('contact_us_form')}}`` in the text editor and click **Save** in the top right corner. Once the landing page is added as a content variant to the content node of a web catalog, the form should then become visible in the storefront.
 

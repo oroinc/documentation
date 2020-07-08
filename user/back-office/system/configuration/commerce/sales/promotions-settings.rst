@@ -2,12 +2,12 @@
 
 .. _sys-config--commerce--sales--promotions:
 
-Configure Global Settings Promotions
+Configure Global Promotions Settings
 ====================================
 
 .. begin
 
-You can enable or disable :ref:`promotions <user-guide--marketing--promotions>` and :ref:`coupons <user-guide--marketing--promotions--coupons>`, as well as control their strategy across your application in the system configuration.
+You can enable or disable :ref:`promotions <user-guide--marketing--promotions>` and :ref:`coupons <user-guide--marketing--promotions--coupons>`, as well as control their strategy across your application in the system configuration. You can also control whether to enable or disable entering coupon codes that are different only by letter case (e.g., *SpringSale*, *SPRINGSALE*, *springsale*) during the checkout.
 
 
 To reach promotion configuration:
@@ -20,16 +20,23 @@ To reach promotion configuration:
 
    .. note:: By default, promotions are enabled and the **Combine All Discounts** strategy is set.
 
-3. To customize the default settings:
+3. To customize the default settings, clear the **Use Default** check box next to the option.
 
-  a) Clear the **Use Default** check box next to the **Enable Promotion** option. This will enable you to clear the option check box and disable promotions in your Oro application.
-  b) Clear the **Use Default** check box next to the **Discount Strategy** and select one of the following options -- *Combine All Discounts* or *Best Value Discounts Only*.
+4. Enable or disable the following options as required:
 
-     * When *Combine All Discounts* is selected, all discount options applicable to products are used in combination.
+    **Enable Promotions** --- the option determines whether to activate or deactivate the promotions feature and promotions-related functionality in your Oro application.
 
-     * When *Best Value Discounts Only* is selected, only the promotion that gives the best value is applied to products.
+    .. hint:: The **Case-Insensitive Coupon Codes** feature is available since OroCommerce v4.1.3. To check which application version you are running, see the :ref:`system Information <system-information>`.
 
-4. Click **Save**.
+    **Case-Insensitive Coupon Codes** --- option determines whether to consider or ignore the letter case of the applied coupon codes. By default, the option is disabled, meaning that the system carefully checks the entered coupon code against the letter case, so *SpringSale*, *SPRINGSALE*, and *springsale*, are considered to be the three different codes. When the option is enabled, the mentioned codes will be considered equal.
+
+    **Discount Strategy** --- the option determines which strategy to use when calculating the promotion discount for a product:
+
+         * When *Combine All Discounts* is selected, all discount options applicable to products are used in combination.
+
+         * When *Best Value Discounts Only* is selected, only the promotion that gives the best value is applied to products.
+
+5. Click **Save**.
 
 **Related Topics**
 

@@ -133,25 +133,31 @@ Add a Menu Item
 
   * The *config_value('some_identifier')* function limits visibility of the corresponding menu item upon specifying certain value instead of *'some_identifier'*.
 
-  As an example, let us make the **About** section in the storefront visible to customers with configured taxes. For this, we need to:
+As an example, let us make the **About** section in the storefront visible to customers with configured taxes. For this, we need to:
 
   a) Customize the *config_value('some_identifier')* function with the required value instead of *some_identifier*. In our case, it is the *oro_tax.tax_enable* value.
 
   b) Click **Save** on the top right of the About menu page to save the changes.
 
-  b) Enable **Tax Calculation** in the system configuration. More information on tax configuration can be found in the relevant :ref:`Configure Tax Calculation <user-guide--taxes--tax-configuration>` topic.
+  c) Enable **Tax Calculation** in the system configuration. More information on tax configuration can be found in the relevant :ref:`Configure Tax Calculation <user-guide--taxes--tax-configuration>` topic.
 
-  c) Click **Save** on the top right of the Tax Calculation configuration page.
+  d) Click **Save** on the top right of the Tax Calculation configuration page.
 
-  The steps are illustrated below:
+The steps are illustrated below:
 
-  .. image:: /user/img/system/frontend_menu/frontend_menu_11.png
-     :scale: 50%
-     :alt: The steps you need to take to enable the About section to customers with configured taxes in the storefront
+.. image:: /user/img/system/frontend_menu/frontend_menu_11.png
+   :scale: 50%
+   :alt: The steps you need to take to enable the About section to customers with configured taxes in the storefront
 
-  .. image:: /user/img/system/frontend_menu/frontend_menu_12.png
-     :scale: 50%
-     :alt: The steps you need to take to disable the About section to customers with configured taxes in the storefront
+.. image:: /user/img/system/frontend_menu/frontend_menu_12.png
+   :scale: 50%
+   :alt: The steps you need to take to disable the About section to customers with configured taxes in the storefront
+
+.. hint:: The **Target Window** feature is available since OroCommerce v4.1.3. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
+* **Target Window** --- determines the way to open the linked document or URI. Select *Same Window* option to open it in the current browser window. Select *New Window* to open it in a new browser tab.
+
+* **Image** --- an image used to illustrate a new frontend menu. Click **Choose File** to select the image from your directory and upload it.
 
 4. Click **Save** to save your changes. If you wish to start creating another menu item right away, click **Save and New** on the top right.
 

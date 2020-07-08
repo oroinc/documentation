@@ -38,6 +38,8 @@ In the Account Management section, the following capabilities are available:
 
 * **Impersonate User** --- Enables a back-office user to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
 
+  .. hint:: The **Impersonate User** feature is available since OroCommerce :ref:`v4.1.0 <system-information>`.
+
   .. image:: /user/img/system/user_management/user-impersonation-button.png
      :alt: User impersonation button
 
