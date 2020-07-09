@@ -1,4 +1,4 @@
-.. _composer-js-dependencies:
+.. _dev-doc-frontend-composer-js-dependencies:
 
 Managing NPM dependencies with Composer
 =======================================

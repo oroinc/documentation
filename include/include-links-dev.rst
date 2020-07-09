@@ -396,9 +396,125 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/index.html" target="_blank">SensioFrameworkExtraBundle documentation</a>
 
+.. |oroui/js/app/application| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/application.js" target="_blank">oroui/js/app/application</a>
+
+.. |System Aware Resolver Component| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Config/Resources/doc/system_aware_resolver.md" target="_blank">System Aware Resolver Component</a>
+
+.. |Symfony PropertyAccess Component| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/property_access/introduction.html" target="_blank">Symfony PropertyAccess Component</a>
+
+.. |Default scss breakpoints| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/blank/scss/settings/partials/_breakpoints.scss" target="_blank">Default scss breakpoints</a>
+
+.. |official plugin documentation| raw:: html
+
+   <a href="https://jhildenbiddle.github.io/css-vars-ponyfill" target="_blank">official plugin documentation</a>
+
+.. |Storage Interface| raw:: html
+
+   <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage" target="_blank">Storage Interface</a>
+
+.. |DOM Relocation View| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md" target="_blank">DOM Relocation View</a>
+
+.. |via scss variables| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendStylesCustomization.md#how-to-change-media-breakpoints" target="_blank">via scss variables</a>
+
+.. |Backbone events API| raw:: html
+
+   <a href="http://backbonejs.org/#Events" target="_blank">Backbone events API</a>
+
+.. |declarative event bindings| raw:: html
+
+   <a href="https://github.com/chaplinjs/chaplin/blob/master/docs/chaplin.view.md#listen" target="_blank">declarative event bindings</a>
+
+.. |Chaplin.EventBroker API| raw:: html
+
+   <a href="https://github.com/chaplinjs/chaplin/blob/master/docs/chaplin.event_broker.md" target="_blank">Chaplin.EventBroker API</a>
+
+.. |app.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/config/oro/app.yml" target="_blank">app.yml</a>
+
+.. |oroui/js/app/controllers/page-controller| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/controllers/page-controller.js" target="_blank">oroui/js/app/controllers/page-controller</a>
+
+.. |oroui/js/messenger| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/messenger.js" target="_blank">oroui/js/messenger</a>
+
+.. |oroui/js/widget-manager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/widget/widget-manager.js" target="_blank">oroui/js/widget-manager</a>
+
 .. |OroUIBundle:actions:index.html.twig| raw:: html
 
    <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/actions/index.html.twig" target="_blank">OroUIBundle:actions:index.html.twig</a>
+
+.. |ComponentShortcutManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/component-shortcuts-manager.js" target="_blank">ComponentShortcutManager</a>
+
+.. |ComponentShortcutsModule| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/component-shortcuts-module.js" target="_blank">ComponentShortcutsModule</a>
+
+.. |oroui/js/app/components/base/component|  raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/components/base/component.js" target="_blank">oroui/js/app/components/base/component</a>
+
+.. |oroui/js/app/modules/jstree-actions-module.js|  raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/jstree-actions-module.js" target="_blank">oroui/js/app/modules/jstree-actions-module.js</a>
+
+.. |registry.js| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/services/registry/registry.js" target="_blank">registry.js</a>
+
+.. |DynamicAssetVersionStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Asset/DynamicAssetVersionStrategy.php" target="_blank">DynamicAssetVersionStrategy</a>
+
+.. |oroui/js/input-widget-manager.js| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/input-widget-manager.js" target="_blank">oroui/js/input-widget-manager.js</a>
+
+.. |oroui/js/app/views/input-widget/abstract| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/views/input-widget/abstract.js" target="_blank">oroui/js/app/views/input-widget/abstract</a>
+
+.. |oroui/js/app/views/input-widget/uniform-select| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/views/input-widget/uniform-select.js" target="_blank">oroui/js/app/views/input-widget/uniform-select</a>
+
+.. |oroui/js/app/views/input-widget/uniform-file| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/views/input-widget/uniform-file.js" target="_blank">oroui/js/app/views/input-widget/uniform-file</a>
+
+.. |oroui/js/app/modules/input-widgets| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/input-widgets.js" target="_blank">oroui/js/app/modules/input-widgets|</a>
+
+.. |jQuery-UI widget| raw:: html
+
+    <a href="http://api.jqueryui.com/jQuery.widget" target="_blank">jQuery-UI widget</a>
+
+.. |jQuery-UI sortable| raw:: html
+
+    <a href="http://api.jqueryui.com/sortable" target="_blank">jQuery-UI sortable</a>
+
+.. |Chaplin.View documentation|  raw:: html
+
+   <a href="http://docs.chaplinjs.org/chaplin.view.html#toc_5" target="_blank">Chaplin.View documentation</a>
 
 .. |macro from the UI bundle| raw:: html
 
@@ -2016,10 +2132,6 @@ Links (Dev)
 .. |Backbone.js| raw:: html
 
    <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>
-
-.. |Client Side Architecture| raw:: html
-
-   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side-architecture.md" target="_blank">Client-Side Architecture</a>
 
 .. |Page Component| raw:: html
 

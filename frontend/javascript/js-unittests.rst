@@ -1,4 +1,4 @@
-.. _javascript-unit-tests:
+.. _dev-doc-frontend-javascript-unit-tests:
 
 JavaScript UnitTests
 ====================

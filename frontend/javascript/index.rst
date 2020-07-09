@@ -5,12 +5,8 @@
 
 .. _dev-doc-frontend-javascript:
 
-
 JavaScript Architecture
 =======================
-
-Introduction
-------------
 
 Client-side architecture of OroPlatform, OroCRM, and OroCommerce is built on |Chaplin|
 (an architecture for JavaScript Web applications based on the |Backbone.js|
@@ -22,7 +18,7 @@ a light-weight but flexible structure which leverages well-proven design
 patterns and best practices.
 
 However, as we distribute functionality of some pages over multiple bundles
-(several bundles can extend a page with own functionalities), we had to extend the
+(several bundles can extend a page with their own functionalities), we had to extend the
 |Chaplin| approach for our needs.
 
 Technology Stack
@@ -44,6 +40,57 @@ as a module in JS config with short module_id, so there is no need
 to use the full path every time (e.g., the module_id is ``jquery`` instead
 of ``oroui/lib/jquery``).
 
+Application
+-----------
+
+The application gets initialized by the `oroui/js/app` module that is entry point of webpack build.
+
+This module exports an instance of the `application` (extension of `Chaplin.Application`); it depends on:
+
+- `oroui/js/app/application`, Application class
+- `oroui/js/app/routes`, collection of routers
+- `oroui/js/app`'s configuration
+- and some `app modules` (optional)
+
+Routes
+^^^^^^
+
+Routes module (`oroui/js/app/routes`) is an array with only one route, which matches any URL and refers to the `index` method of `controllers/page-controller`:
+
+.. code-block:: yaml
+   :linenos:
+
+    [
+        ['*pathname', 'page#index']
+    ]
+
+Application Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Macros from `OroAssetBundle:Asset.html.twig` is utilized for passing options to the application's constructor. The configuration is placed in `OroUIBundle::js_modules_config.html.twig` template:
+
+.. code::
+
+   {% import '@OroAsset/Asset.html.twig' as Asset %}
+   {{ Asset.js_modules_config({
+       'oroui/js/app': {
+           baseUrl: app.request.getSchemeAndHttpHost(),
+           headerId: oro_hash_navigation_header(),
+           userName: app.user ? app.user.username : null,
+           root: app.request.getBaseURL() ~ '\/',
+           publicPath: asset('build/')|split('?', 2)[0],
+           startRouteName: app.request.attributes.get('_master_request_route'),
+           debug: app.debug ? true : false,
+           skipRouting: '[data-nohash=true], .no-hash',
+           controllerPath: 'controllers/',
+           controllerSuffix: '-controller',
+           trailing: null
+       }
+   }) }}
+
+
+It is placed in a twig-template in order to get access to backend variables in runtime, which is impossible to do in `jsmodules.yml` file.
+
 Naming Conventions
 ------------------
 
@@ -51,7 +98,7 @@ File structures and naming conventions use best practices of Backbone
 development adopted for Oro needs.
 
 .. code-block:: text
-    :linenos:
+   :linenos:
 
     AcmeBundle/Resources/public
     ├── css
@@ -103,11 +150,12 @@ development adopted for Oro needs.
 
    * Modules that fully support Chaplin architecture are placed in the ``app`` folder.
    * There are five folders inside the "app" directory, one for each module with the following roles:
-       * ``components`` -- page components, described in the :ref:`Page Component <frontend-architecture-page-component>` section
-       * ``controllers`` -- Chaplin controllers. Currently, ``PageController`` is the only controller in the application
-       * ``models`` -- a folder for Chaplin (Backbone) models and collections; modules inside the folder may be grouped by their functionality
-       * ``modules`` -- app modules, described in the :ref:`App Modules <frontend-architecture-app-module>` section
-       * ``views`` -- a common folder for Chaplin views and collection views; the files inside the folder are grouped by their functionality
+
+     * ``components`` -- page components, described in the :ref:`Page Component <frontend-architecture-page-component>` section
+     * ``controllers`` -- Chaplin controllers. Currently, ``PageController`` is the only controller in the application
+     * ``models`` -- a folder for Chaplin (Backbone) models and collections; modules inside the folder may be grouped by their functionality
+     * ``modules`` -- app modules, described in the :ref:`App Modules <frontend-architecture-app-module>` section
+     * ``views`` -- a common folder for Chaplin views and collection views; the files inside the folder are grouped by their functionality
 
    * each file name ends with a suffix that corresponds to its type (e.g., ``-view.js``, ``-model.js``, ``-component.js``)
    * names of all the files and folders can contain only lowercase alphabetic symbols with the minus (``-``) symbol as a word separator
@@ -121,7 +169,6 @@ and providing a solid lifecycle for the application components:
 
 .. image:: /img/frontend/frontend_architecture/chaplin-lifecycle.png
    :target: http://docs.chaplinjs.org/
-
 
 As a result, a controller and all of its models and views exist only between the
 navigation actions. Once the route is changed, the active controller gets disposed,
@@ -148,8 +195,9 @@ JS Templates (Underscore.js)
 For Front-rendered templates, Oro applications use Underscore.js templates. JS templates belong to specific JS components defined as JS modules and can be overridden the same way as any other JS modules.
 
 Fore more details see:
-    - |Underscore.js template function documentation|
-    - :ref:`JavaScript Modularity of OroPlatform based applications<dev-doc-frontend-javascript-modularity>`
+
+- |Underscore.js template function documentation|
+- :ref:`JavaScript Modularity of OroPlatform based applications<dev-doc-frontend-javascript-modularity>`
 
 
 .. _frontend-architecture-page-layout-view:
@@ -175,7 +223,7 @@ Page Controller
 The route module contains the only route mask that always leads to the PageController::index action point.
 
 .. code-block:: javascript
-    :linenos:
+   :linenos:
 
     module.exports = [
         ['*pathname', 'page#index']
@@ -190,12 +238,14 @@ series of system events to notify the environment that the page content has chan
 .. note::
 
     The page update flow contains the following system events:
+
      * page:beforeChange
      * page:request
      * page:update
      * page:afterChange
 
 .. image:: /img/frontend/frontend_architecture/page-controller.png
+   :alt: Page Controller
 
 These events are handled by global views (views and components that exist throughout
 the navigation and are not deleted by the page change. See
@@ -217,8 +267,8 @@ Such controllers are called a Page Component. Functionally, a "Page Component"
 is similar to the "Controller" component in Chaplin, however, it implements a different
 flow:
 
- * The "Controller" represents one screen of the application and is created when the page URL is changed
- * The "Page Component" represents a part of the page with certain functionality and is created in the course of page processing, subject to the settings declared in the HTML.
+* The "Controller" represents one screen of the application and is created when the page URL is changed
+* The "Page Component" represents a part of the page with certain functionality and is created in the course of page processing, subject to the settings declared in the HTML.
 
 Define a Page Component
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -226,8 +276,8 @@ Define a Page Component
 To define ``PageComponent`` for a block, specify the following two
 data-attributes in the HTML node:
 
- * ``data-page-component-module`` --- the name of the module
- * ``data-page-component-options`` --- a safe JSON-string
+* ``data-page-component-module`` --- the name of the module
+* ``data-page-component-options`` --- a safe JSON-string
 
 .. code-block:: html+jinja
     :linenos:
@@ -248,10 +298,10 @@ handle the event and update its HTML content. After that, views invoke the ``ini
 method. It performs a series of actions to its element. One of the actions is
 ``initPageComponents``. This method performs the following:
 
- * collects all the elements with proper data-attributes
- * loads defined modules of PageComponents
- * executes the init method with the received options to initialize the PageComponents
- * resolves the initialization promise with the array of components after all components initialization
+* collects all the elements with proper data-attributes
+* loads defined modules of PageComponents
+* executes the init method with the received options to initialize the PageComponents
+* resolves the initialization promise with the array of components after all components initialization
 
 The ``PageController`` collects all promises from ``page:update`` event handlers,
 and once all of them are resolved, it triggers the ``page:afterChange`` event.
@@ -277,7 +327,7 @@ They make the whole application modular and the functionality distributed among 
 App Modules are declared in the ``jsmodules.yml`` configuration file in the custom ``app-modules`` section:
 
 .. code-block:: yaml
-    :linenos:
+   :linenos:
 
     app-modules:
         - oroui/js/app/modules/messenger-module
@@ -292,7 +342,7 @@ Example
 ``oroui/js/app/modules/messenger-module`` declares handlers of the messenger in ``mediator``.
 
 .. code-block:: javascript
-    :linenos:
+   :linenos:
 
     import mediator from 'oroui/js/mediator';
     import messenger from 'oroui/js/messenger';
@@ -311,13 +361,13 @@ they are used. The handlers can be executed by any component or view
 in the Chaplin lifecycle.
 
 .. code-block:: javascript
-    :linenos:
+   :linenos:
 
     mediator.execute('showMessage', 'success', 'Record is saved');
 
 .. seealso::
 
-    For more details, see |Chaplin documentation| and |Client Side Architecture|.
+    For more details, see |Chaplin documentation|.
 
 **Related Topics**
 
@@ -328,6 +378,9 @@ in the Chaplin lifecycle.
     javascript-modularity
     js-unittests
     composer-js-dependencies
+    component-shortcuts
+    page-component
+    registry
 
 
 
