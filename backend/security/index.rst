@@ -1,4 +1,4 @@
-:title: Security Settings in OroCommerce, OroCRM, OroPlatform 4.1
+:title: Security Capabilities in OroCommerce, OroCRM, OroPlatform
 
 .. meta::
    :description: Guidance on security settings and access levels configuration for the backend developers
