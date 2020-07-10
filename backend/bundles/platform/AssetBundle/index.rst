@@ -568,5 +568,10 @@ There are two cases when the error can appear:
 2. The port is busy with a different process. To fix, change the :ref:`port configuration in config/config.yml <port>`.
 
 
+ERROR in Entry module not found: Error: Can't resolve './src'
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Make sure the ``webpack.config.js`` file exists in the project root, and the command has permissions to read it.
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
