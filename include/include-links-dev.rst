@@ -212,9 +212,9 @@ Links (Dev)
 
    <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Install Git</a>
 
-.. |Install Node.js| raw:: html
+.. |Install Node.js & NPM| raw:: html
 
-   <a href="https://nodejs.org/en/download/package-manager/" target="_blank">Install Node.js</a>
+   <a href="https://nodejs.org/en/download/package-manager/" target="_blank">Install Node.js & NPM</a>
 
 .. |Node.js official website| raw:: html
 
@@ -5517,5 +5517,3 @@ Links (Dev)
 .. |setting up the Local Proxy| raw:: html
 
    <a href="https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy" target="_blank">setting up the Local Proxy</a>
-
-
