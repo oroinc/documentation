@@ -15,10 +15,15 @@ OroTestFrameworkBundle uses Mink, Behat, Karma, Jasmin and other testing tools t
 Related Documentation
 ---------------------
 
-* |JavaScript UnitTests|
-* |Oro Behat Extension|
-* |Additional Doctrine Events|
+* :ref:`JavaScript UnitTests <dev-doc-frontend-javascript-unit-tests>`
+* :ref:`Oro Behat Extension <behat-tests>`
+* :ref:`Additional Doctrine Events <bundle-docs-platform-test-framework-doctrine-events>`
 
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+.. toctree::
+   :hidden:
+
+   doctrine-events

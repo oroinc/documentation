@@ -207,6 +207,14 @@ Links (Dev)
 
    <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
 
+.. |Jasmine-jQuery| raw:: html
+
+   <a href="https://github.com/velesin/jasmine-jquery" target="_blank">Jasmine-jQuery</a>
+
+.. |karma-jsmodule-exposure| raw:: html
+
+   <a href="https://github.com/laboro/karma-jsmodule-exposure.git" target="_blank">karma-jsmodule-exposure</a>
+
 .. |Supervisor| raw:: html
 
    <a href="http://supervisord.org/" target="_blank">Supervisor</a>
@@ -243,6 +251,44 @@ Links (Dev)
 .. |Install Node.js| raw:: html
 
    <a href="https://nodejs.org/en/download/package-manager/" target="_blank">Install Node.js</a>
+
+.. |Node.js official website| raw:: html
+
+   <a href="https://nodejs.org/en/download/" target="_blank">official website</a>
+
+.. |Node Packaged Modules| raw:: html
+
+   <a href="https://npmjs.org/" target="_blank">Node Packaged Modules</a>
+
+.. |NPM| raw:: html
+
+   <a href="https://npmjs.org/" target="_blank">NPM</a>
+
+.. |NPM documentation| raw:: html
+
+   <a href="https://docs.npmjs.com/" target="_blank">NPM documentation</a>
+
+.. |Karma documentation| raw:: html
+
+   <a href="http://karma-runner.github.io/4.0/config/configuration-file.html" target="_blank">Karma documentation</a>
+
+.. |Jasmine 3.5| raw:: html
+
+   <a href="https://jasmine.github.io/api/3.5/global" target="_blank">Jasmine 3.5</a>
+
+.. |Karma| raw:: html
+
+   <a href="http://karma-runner.github.io/4.0/index.html" target="_blank">Karma</a>
+
+.. |Karma plugin| raw:: html
+
+   <a href="https://plugins.jetbrains.com/plugin/7287-karma" target="_blank">Karma plugin</a>
+
+.. |ddescriber for jasmine| raw:: html
+
+   <a href="https://plugins.jetbrains.com/plugin/7233-ddescriber-for-jasmine" target="_blank">ddescriber for jasmine</a>
+
+
 
 .. |Install PHPStorm| raw:: html
 
@@ -384,9 +430,125 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/3.0/bundles/SensioFrameworkExtraBundle/index.html" target="_blank">SensioFrameworkExtraBundle documentation</a>
 
+.. |oroui/js/app/application| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/application.js" target="_blank">oroui/js/app/application</a>
+
+.. |System Aware Resolver Component| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Config/Resources/doc/system_aware_resolver.md" target="_blank">System Aware Resolver Component</a>
+
+.. |Symfony PropertyAccess Component| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/property_access/introduction.html" target="_blank">Symfony PropertyAccess Component</a>
+
+.. |Default scss breakpoints| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/blank/scss/settings/partials/_breakpoints.scss" target="_blank">Default scss breakpoints</a>
+
+.. |official plugin documentation| raw:: html
+
+   <a href="https://jhildenbiddle.github.io/css-vars-ponyfill" target="_blank">official plugin documentation</a>
+
+.. |Storage Interface| raw:: html
+
+   <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage" target="_blank">Storage Interface</a>
+
+.. |DOM Relocation View| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/3.1/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md" target="_blank">DOM Relocation View</a>
+
+.. |via scss variables| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/3.1/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendStylesCustomization.md#how-to-change-media-breakpoints" target="_blank">via scss variables</a>
+
+.. |Backbone events API| raw:: html
+
+   <a href="http://backbonejs.org/#Events" target="_blank">Backbone events API</a>
+
+.. |declarative event bindings| raw:: html
+
+   <a href="https://github.com/chaplinjs/chaplin/blob/master/docs/chaplin.view.md#listen" target="_blank">declarative event bindings</a>
+
+.. |Chaplin.EventBroker API| raw:: html
+
+   <a href="https://github.com/chaplinjs/chaplin/blob/master/docs/chaplin.event_broker.md" target="_blank">Chaplin.EventBroker API</a>
+
+.. |app.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/FormBundle/Resources/config/oro/app.yml" target="_blank">app.yml</a>
+
+.. |oroui/js/app/controllers/page-controller| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/controllers/page-controller.js" target="_blank">oroui/js/app/controllers/page-controller</a>
+
+.. |oroui/js/messenger| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/messenger.js" target="_blank">oroui/js/messenger</a>
+
+.. |oroui/js/widget-manager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/widget/widget-manager.js" target="_blank">oroui/js/widget-manager</a>
+
 .. |OroUIBundle:actions:index.html.twig| raw:: html
 
    <a href="https://github.com/orocrm/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/views/actions/index.html.twig" target="_blank">OroUIBundle:actions:index.html.twig</a>
+
+.. |ComponentShortcutManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/component-shortcuts-manager.js" target="_blank">ComponentShortcutManager</a>
+
+.. |ComponentShortcutsModule| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/component-shortcuts-module.js" target="_blank">ComponentShortcutsModule</a>
+
+.. |oroui/js/app/components/base/component|  raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/components/base/component.js" target="_blank">oroui/js/app/components/base/component</a>
+
+.. |oroui/js/app/modules/jstree-actions-module.js|  raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/jstree-actions-module.js" target="_blank">oroui/js/app/modules/jstree-actions-module.js</a>
+
+.. |registry.js| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/services/registry/registry.js" target="_blank">registry.js</a>
+
+.. |DynamicAssetVersionStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Asset/DynamicAssetVersionStrategy.php" target="_blank">DynamicAssetVersionStrategy</a>
+
+.. |oroui/js/input-widget-manager.js| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/input-widget-manager.js" target="_blank">oroui/js/input-widget-manager.js</a>
+
+.. |oroui/js/app/views/input-widget/abstract| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/views/input-widget/abstract.js" target="_blank">oroui/js/app/views/input-widget/abstract</a>
+
+.. |oroui/js/app/views/input-widget/uniform-select| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/views/input-widget/uniform-select.js" target="_blank">oroui/js/app/views/input-widget/uniform-select</a>
+
+.. |oroui/js/app/views/input-widget/uniform-file| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/views/input-widget/uniform-file.js" target="_blank">oroui/js/app/views/input-widget/uniform-file</a>
+
+.. |oroui/js/app/modules/input-widgets| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/input-widgets.js" target="_blank">oroui/js/app/modules/input-widgets|</a>
+
+.. |jQuery-UI widget| raw:: html
+
+    <a href="http://api.jqueryui.com/jQuery.widget" target="_blank">jQuery-UI widget</a>
+
+.. |jQuery-UI sortable| raw:: html
+
+    <a href="http://api.jqueryui.com/sortable" target="_blank">jQuery-UI sortable</a>
+
+.. |Chaplin.View documentation|  raw:: html
+
+   <a href="http://docs.chaplinjs.org/chaplin.view.html#toc_5" target="_blank">Chaplin.View documentation</a>
 
 .. |macro from the UI bundle| raw:: html
 
@@ -419,18 +581,6 @@ Links (Dev)
 .. |DELETE operation| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#default-operations" target="_blank">DELETE operation</a>
-
-.. |JavaScript UnitTests| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/js_unittests.md" target="_blank">JavaScript UnitTests</a>
-
-.. |Oro Behat Extension| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/TestFrameworkBundle/Behat/README.md" target="_blank">Oro Behat Extension</a>
-
-.. |Additional Doctrine Events| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/doctrine_events.md" target="_blank">Additional Doctrine Events</a>
 
 .. |build ngx pagespeed from source| raw:: html
 
@@ -2061,10 +2211,6 @@ Links (Dev)
 .. |Backbone.js| raw:: html
 
    <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>
-
-.. |Client Side Architecture| raw:: html
-
-   <a href="https://github.com/orocrm/platform/blob/3.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side-architecture.md" target="_blank">Client-Side Architecture</a>
 
 .. |Page Component| raw:: html
 
@@ -4512,6 +4658,10 @@ Links (Dev)
 
    <a href="https://github.com/nelmio/alice/blob/master/doc/relations-handling.md#references" target="_blank">Alice documentation</a>
 
+.. |Alice documentation2| raw:: html
+
+   <a href="https://github.com/nelmio/alice/blob/2.x/README.md" target="_blank">Alice documentation</a>
+
 .. |MonologBundle| raw:: html
 
    <a href="https://github.com/symfony/monolog-bundle" target="_blank">MonologBundle</a>
@@ -5047,6 +5197,119 @@ Links (Dev)
 .. |BlockTypeInterface::finishView| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Layout/BlockTypeInterface.php#L51" target="_blank">BlockTypeInterface::finishView</a>
+
+.. |Doctrine Filters| raw:: html
+
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/filters.html" target="_blank">Doctrine Filters</a>
+
+.. |Sketch app| raw:: html
+
+   <a href="https://www.sketch.com/get/" target="_blank">Sketch app</a>
+
+.. |user guide| raw:: html
+
+   <a href="https://www.sketch.com/docs/" target="_blank">user guide</a>
+
+.. |Lato| raw:: html
+
+   <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a>
+
+.. |FontAwesome 4.7| raw:: html
+
+   <a href="https://fontawesome.com/v4.7.0/" target="_blank">FontAwesome 4.7</a>
+
+.. |Runner Pro| raw:: html
+
+   <a href="https://sketchrunner.com/" target="_blank">Runner Pro</a>
+
+.. |Merge Duplicates| raw:: html
+
+   <a href="http://www.mergeduplicates.com/" target="_blank">Merge Duplicates</a>
+
+.. |RenameIt| raw:: html
+
+   <a href="https://renameit.design/sketch/" target="_blank">RenameIt</a>
+
+.. |Symbol Name Autocomplete| raw:: html
+
+   <a href="https://github.com/griffin-stewie/SymbolNameAutocomplete" target="_blank">Symbol Name Autocomplete</a>
+
+.. |Symbol Organizer| raw:: html
+
+   <a href="https://github.com/sonburn/symbol-organizer" target="_blank">Symbol Organizer</a>
+
+.. |Unused Style Remover| raw:: html
+
+   <a href="https://github.com/sonburn/unused-style-remover" target="_blank">Unused Style Remover</a>
+
+.. |Sketch Image Compressor| raw:: html
+
+   <a href="https://github.com/sketch-hq/sketch-image-compressor" target="_blank">Sketch Image Compressor</a>
+
+.. |OroCommerce Storefront Style Guide on GitHub| raw:: html
+
+   <a href="https://github.com/oroinc/OroCommerceStorefrontStyleGuide" target="_blank">OroCommerce Storefront Style Guide on GitHub</a>
+
+.. |Behavior Driven Development framework| raw:: html
+
+   <a href="https://docs.behat.org/en/v3.0/" target="_blank">Behavior Driven Development framework</a>
+
+.. |open source browser controller/emulator| raw:: html
+
+   <a href="http://mink.behat.org/en/latest/" target="_blank">open source browser controller/emulator</a>
+
+.. |Symfony2| raw:: html
+
+   <a href="https://github.com/Behat/Symfony2Extension/blob/master/doc/index.rst" target="_blank">Symfony2</a>
+
+.. |Driver Feature Support| raw:: html
+
+   <a href="http://mink.behat.org/en/latest/guides/drivers.html" target="_blank">Driver Feature Support</a>
+
+.. |WebDriver| raw:: html
+
+   <a href="https://sites.google.com/a/chromium.org/chromedriver/" target="_blank">WebDriver</a>
+
+.. |NodeElement| raw:: html
+
+   <a href="https://github.com/minkphp/Mink/blob/9ea1cebe3dc529ba3861d87c818f045362c40484/src/Element/NodeElement.php" target="_blank">NodeElement</a>
+
+.. |css selector| raw:: html
+
+   <a href="http://mink.behat.org/en/latest/guides/traversing-pages.html#css-selector" target="_blank">css selector</a>
+
+.. |named field selector| raw:: html
+
+   <a href="http://mink.behat.org/en/latest/guides/traversing-pages.html#named-selectors" target="_blank">named field selector</a>
+
+.. |faker| raw:: html
+
+   <a href="https://github.com/fzaninotto/faker" target="_blank">faker</a>
+
+.. |include files| raw:: html
+
+   <a href="https://github.com/nelmio/alice/blob/a060587f3c90edd92a65c6c0d163972f49bc4e21/doc/fixtures-refactoring.md#including-files" target="_blank">include files</a>
+
+.. |alice fixtures| raw:: html
+
+   <a href="https://github.com/nelmio/alice/blob/2.x/doc/relations-handling.md#handling-relations" target="_blank">alice fixtures</a>
+
+.. |Cucumber doc reference| raw:: html
+
+   <a href="https://cucumber.io/docs/" target="_blank">Cucumber doc reference</a>
+
+.. |UserBundle/Tests/Behat/Features/login.feature| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/50047c1d8abc5f811d0db759b501b8d27b0bff65/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature" target="_blank">UserBundle/Tests/Behat/Features/login.feature</a>
+
+.. |Hot Module Replacement| raw:: html
+
+   <a href="https://webpack.js.org/concepts/hot-module-replacement/" target="_blank">Hot Module Replacement</a>
+
+..  |AssetBundle upgrade documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/CHANGELOG.md#assetbundle-1" target="_blank"> upgrade documentation</a>
+
 
 .. |KnpGaufretteBundle| raw:: html
 
