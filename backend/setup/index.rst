@@ -20,6 +20,7 @@ The application setup guides provide the details on how to configure the environ
    demo-environment/index
    get-source-files
    installation
+   installation-in-sub-folder
    demo-data
    launch
    upgrade-to-new-version

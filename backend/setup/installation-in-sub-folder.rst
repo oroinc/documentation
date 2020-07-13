@@ -2,8 +2,8 @@
 
 .. _system-websites--prepare-to-host-a-website-in-the-domain-sub-folder:
 
-Setup a Website Host
-====================
+Installation in Sub-Folder
+==========================
 
 .. hint:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
 
@@ -44,7 +44,7 @@ where <yoursitename> is *uk* in our example.
 
 Now, when you use the ``http://localhost/<yoursitename>/index.php`` address, the asset files (styles.css, app.js, etc.) are taken from the root folder on the domain instead of the dedicated website sub-folder.
 
-**Related Topics**
+**Related User Guide Topics**
 
 * :ref:`Configure a Website <user-guide--system-websites--configure-website>`
 * :ref:`Manage a Website <user-guide--system-websites--manage-websites>`
