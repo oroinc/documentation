@@ -3,6 +3,8 @@
 Docker and Symfony Server
 =========================
 
+.. hint:: This feature is available since OroCommerce v4.1.7. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
 During development, you can use Docker to run various application
 services (MySQL, Postgres, ElasticSearch, RabbitMQ and Redis), but for
 simplicity, performance and reliability have PHP and NodeJS installed
