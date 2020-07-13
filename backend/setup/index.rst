@@ -19,6 +19,7 @@ The application setup guides provide the details on how to configure the environ
    dev-environment/index
    demo-environment/index
    installation
+   installation-in-sub-folder
    demo-data
    launch
    upgrade-to-new-version

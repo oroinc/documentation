@@ -27,7 +27,6 @@ Learn more about website management from the following sections:
    web-configuration/index
    Create a Website <create>
    Manage a Website <manage>
-   host-config
    configure-price-lists
    website-all-products-menu
    website-frontend-menus
