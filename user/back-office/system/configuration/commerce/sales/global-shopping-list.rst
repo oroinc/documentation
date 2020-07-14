@@ -36,7 +36,7 @@ To enable guest shopping lists globally:
 
    .. note:: To update any of the options, clear *Use Default* check box first.
 
-   * **Create Guest Shopping List** --- Set whether guests are allowed to create and manage shopping lists. By default, guest shopping lists are disabled.
+   * **Enable Guest Shopping List** --- Set whether guests are allowed to create and manage shopping lists. By default, guest shopping lists are disabled.
 
    * **Create Guest Shopping Lists Immediately** --- Enable this option to automatically create shopping lists for all guest users once they access the storefront. By default, this option is disabled and shopping lists are created only when guest users add at least one item to their shopping list.
 

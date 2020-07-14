@@ -11,5 +11,6 @@ Configure Sales Settings per Website
    Shopping List <website-guest-shopping-list>
    Contacts <website-sales-info>
    Checkout <website-guest-checkout>
+   Orders History <website-open-orders>
    Quotes <website-quotes>
 

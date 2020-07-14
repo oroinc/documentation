@@ -8,6 +8,6 @@ Configure General Setup Settings per Website
 .. toctree::
    :maxdepth: 1
 
-   General Setup <general/index>
    Integrations <integrations/index>
    Website <websites/index>
+   General Setup <general/index>

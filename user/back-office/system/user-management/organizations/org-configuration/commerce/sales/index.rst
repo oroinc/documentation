@@ -11,5 +11,6 @@ Sales Configuration Settings per Organization
    Contacts <organization-sales-info>
    Checkout <organization-guest-checkout>
    Request for Quote <organization-guest-rfq>
+   Orders History <organization-orders-history>
    Quotes <organization-quote>
    Promotions <organization-promotions>

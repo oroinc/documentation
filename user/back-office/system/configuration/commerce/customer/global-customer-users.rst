@@ -12,7 +12,12 @@ To change the default customer user configuration settings globally:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. The following configuration options are available:
+3. To customize any of the options for customer users:
+
+     a) Clear the **Use Default** box next to the option.
+     b) Select the new option.
+
+4. In the **Customer Users Registration** section, configure the following options:
 
    * **Default Customer Owner** --- Service information that determines which user has full access to managing and viewing customer information. Usually, this is the default customer administrator or the administrator assigned to the customer. Applies to the customers created in the back-office as well as to those who register on the OroCommerce website.
    * **Registration Allowed** --- Enables/disables registration of new customers from the storefront login screen.
@@ -26,14 +31,15 @@ To change the default customer user configuration settings globally:
      .. image:: /user/img/system/config_commerce/customer/CustomerUsersRegistrationFrontStore.png
         :alt: Display the registration instruction text on the storefront login page
 
-   * **Case-Insensitive Email Addresses** --- If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled. The identical option for back-office users is managed :ref:`here <admin-configuration-user-settings>`.
-   * **Customer Visitor Cookie Lifetime (Days)** --- Once the provided period expires, active customer visitor (anonymous user) sessions will be reset.
+   * **Case-Insensitive Email Addresses** --- If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled. The identical option for back-office users is managed :ref:`here <admin-configuration-user-settings>`. Keep in mind that the uniqueness of email addresses and personal data is checked only for the registered users. It means that no two users can have identical personal information unless they are customer visitors (guest users). Multiple guest customers are allowed to have exactly the same data, including email addresses.
+
+5. In the **Customer Visitor** section, configure the options for the anonymous users:
+
+   * **Customer Visitor Cookie Lifetime (Days)** --- Once the provided period expires, active customer visitor (anonymous user) sessions will be reset. Keep in mind that the uniqueness of email addresses and personal data is checked only for the registered users. It means that no two users can have identical personal information unless they are customer visitors (guest users). Multiple guest customers are allowed to have exactly the same data, including email addresses.
+
+6. In the **REST API** section, configure the following options:
+
    * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
-
-4. To customize any of these options:
-
-     a) Clear the **Use Default** box next to the option.
-     b) Select the new option.
 
 .. _system-configuration-user-impersonation:
 
@@ -51,7 +57,7 @@ Configure User Impersonation
                                        :alt: User impersonation config option"
 
 
-5. Click **Save Settings**.
+7. Click **Save Settings**.
 
 
 .. include:: /include/include-images.rst
