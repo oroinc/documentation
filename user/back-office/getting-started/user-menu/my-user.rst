@@ -43,7 +43,7 @@ There are a number of effective tools and actions available on the page of your 
    * :ref:`Send an email <user-guide-using-emails-view>`    
    * :ref:`Log a call <doc-activities-calls>`   
    * :ref:`Assign an event <doc-activities-events>`
-   * :ref:`Edit back-office menus <doc-my-user-menus>`
+   * :ref:`Edit back-office menus <doc--menu-config-levels>`
    * :ref:`Assign tasks <doc-activities-tasks>`
    * :ref:`Change your profile password <user-guide-getting-started-profile-password>`
    * :ref:`Reset your profile password <user-guide-getting-started-profile-password>`

@@ -33,6 +33,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
       <li><a class="" href="inventory/">Inventory and Warehouse Management</a></li>
       <li><a class="tag-important" href="rfq-quotes/">RFQ and Quote Management</a></li>
       <li><a class="tag-very-important" href="orders/">Order Management</a></li>
+      <li><a class="" href="menus/">Storefront and Back-Office Menu Management</a></li>
       <li><a class="tag-important" href="localization/">Storefront Localization</a></li>
       <li><a class="tag-very-important" href="taxes/">Tax Management</a></li>
       <li><a class="" href="localization/label-translation/">Translation of Product Attribute Labels</a></li>
@@ -58,6 +59,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    Multi-Website Configuration <websites/index>
    Tax Management <taxes/index>
    Inventory and Warehouse Management <inventory/index>
+   Storefront and Back-Office Menu Management <menus/index>
    Localization and Translation <localization/index>
    Marketing Automation <marketing-automation/index>
    Promotion Management <promotions/index>
