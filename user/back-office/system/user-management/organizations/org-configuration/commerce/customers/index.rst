@@ -7,4 +7,4 @@ Configure Customer Settings per Organization
    :maxdepth: 1
 
    Contact Requests <organization-contact-us>
-   Customer Ussers <organization-customer-users>
+   Customer Users <organization-customer-users>

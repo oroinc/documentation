@@ -27,22 +27,20 @@ More information about the options available for each of the two categories is a
 
   * Integrations
 
-    * :ref:`Google Settings <website-google-settings>`
-
-  * General Setup
-
-    * :ref:`Website Localization <sys--websites--sysconfig--general-setup--localization>`
-    * :ref:`Email Configuration for the Website <admin-configuration-system-mailboxes-website>`
-    * :ref:`Display Settings for the Website <display-settings--website>`
-
-  * Integrations
-
-    * :ref:`Google Setting per Website <website-google-settings>`
+    * :ref:`Google Settings for the Website <website-google-settings>`
 
   * Website
 
     * :ref:`Routing <sys--websites--sysconfig--websites--routing>`
     * :ref:`Sitemap <sys--websites--sysconfig--websites--sitemap>`
+
+  * General Setup
+
+    * :ref:`Application Settings for the Website <admin-configuration-application-website>`
+    * :ref:`Website Localization <sys--websites--sysconfig--general-setup--localization>`
+    * :ref:`Email Configuration for the Website <admin-configuration-system-mailboxes-website>`
+    * :ref:`Display Settings for the Website <display-settings--website>`
+
 
 * **Commerce Configuration**
 
@@ -54,7 +52,7 @@ More information about the options available for each of the two categories is a
 
   * :ref:`Guests <sys--conf--commerce--guest>`
 
-   * :ref:`Website Access <sys--conf--commerce--guest-access--website>`
+    * :ref:`Website Access <sys--conf--commerce--guest-access--website>`
 
   * Design
 
@@ -81,6 +79,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list-per-website>`
     * :ref:`Contacts <sys--conf--commerce--sales--contacts-website>`
     * :ref:`Checkout <user-guide--system-configuration--commerce-sales-checkout-website>`
+    * :ref:`Orders History <website-commerce--configuration--sales-order-history>`
     * :ref:`Quotes <sys--websites-quotes>`
 
   * Catalog
@@ -99,6 +98,7 @@ More information about the options available for each of the two categories is a
    :maxdepth: 1
    :hidden:
 
+   System Configuration <general-sys-config/index>
    Commerce Configuration <commerce/index>
-   General Setup <general-sys-config/index>
+
 

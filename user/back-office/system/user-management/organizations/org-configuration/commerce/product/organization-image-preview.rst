@@ -18,9 +18,18 @@ In the Product Images section of Commerce configuration settings, you can contro
    .. image:: /user/img/system/user_management/org_configuration/products/ImagePreviewOrganization.png
       :class: with-border
 
-   In the Image Gallery Options section, enable or disable the required options.
+4. Clear the **Use System** check box to change the system-wide setting.
 
-4. **Enable Image Preview on Product Listing**:
+5. In the **General** section, configure the following options:
+
+   **Enable Original File Names** --- When enabled, the original image file name will be appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") will be replaced with "-" (dash).
+
+   For example, the name of the file is **coffee_maker/bosch_#RND123.jpg**, the system-generated hash value is "media/cache/attachment/product_gallery_main/5bae287538.jpg". If the option is enabled, the file name will be displayed in the storefront as follows "media/cache/attachment/product_gallery_main/5bae287538-coffee-maker-bosch-RND123.jpg"
+
+
+6. In the **Image Gallery Options** section, enable or disable the required options.
+
+**Enable Image Preview on Product Listing**:
 
    * When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
 
@@ -34,7 +43,7 @@ In the Product Images section of Commerce configuration settings, you can contro
 
     .. note:: When **Use System** checkbox is enabled, system settings are applied.
 
-5. **Popup Gallery on Product View**
+**Popup Gallery on Product View**
 
    * When **Popup Gallery on Product View** is enabled, image gallery in the storefront will take the following form:
 
@@ -53,7 +62,7 @@ In the Product Images section of Commerce configuration settings, you can contro
 
      Flick through the pictures in the gallery by pressing < or > arrows without leaving the product page.
 
-   .. note:: When **Use System** checkbox is enabled, system settings are applied.
+7. Click **Save**.
 
 .. finish
 

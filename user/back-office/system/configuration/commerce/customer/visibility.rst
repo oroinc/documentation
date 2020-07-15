@@ -25,6 +25,6 @@ To change the default product and category visibility settings:
 3. To customize any of the options:
 
      a) Clear the **Use Default** box next to the option.
-     b) Select the updated setting (e.g.б visible or hidden).
+     b) Select the updated setting (e.g., visible or hidden).
 
 4. Click **Save**.

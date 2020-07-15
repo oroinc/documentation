@@ -59,6 +59,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Contacts <sys--conf--commerce--sales--contacts-organization>`
     * :ref:`Checkout <user-guide--system-configuration--commerce-sales-organization>`
     * :ref:`Request for Quote <user-guide--system-configuration--commerce-sales--rfq--organization>`
+    * :ref:`Orders History <organization-commerce--configuration--sales-order-history>`
     * :ref:`Quotes <sys--organization-quotes>`
     * :ref:`Promotions <sys--conf--commerce--sales--promotions-organization>`
 
@@ -93,7 +94,7 @@ The following categories of settings are available for system configuration at o
 .. toctree::
    :maxdepth: 1
 
-   General Setup <general-setup-org/index>
+   System Configuration <general-setup-org/index>
    Commerce <commerce/index>
    CRM <crm/index>
 

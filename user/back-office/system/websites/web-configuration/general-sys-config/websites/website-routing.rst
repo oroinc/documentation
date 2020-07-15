@@ -47,13 +47,6 @@ To change the default routing settings for the website:
 
         When *Secure* is selected, the **Secure URL** value is used instead.
 
-   * **Create Redirects** - this option defines a strategy for creating redirects when the URL building rules change. Supported options: *Ask*, *Never*, *Always*.
-
-        When *Ask* is selected, OroCommerce prompts to confirm redirect creation on every change.
-
-        When *Never* is selected, OroCommerce does not create any redirects.
-
-        When *Always* is selected, the redirects are created by default.
 
    * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
 
