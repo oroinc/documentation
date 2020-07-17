@@ -113,12 +113,12 @@ a:focus {
 .rst-content .admonition.important .admonition-title:before {
     color: #de1f26;
 }
+.rst-content .admonition-title + ul {
+    clear: both;
+}
 .rst-content .admonition iframe,
 .rst-content .admonition img {
     max-width: 100%;
-}
-.rst-content .admonition.important ul.last {
-    margin-top: 20px;
 }
 .rst-content .code-block-caption {
     border-left: 3px solid #df9026;

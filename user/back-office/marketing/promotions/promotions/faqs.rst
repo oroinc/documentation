@@ -11,8 +11,8 @@ This quick reference guide illustrates the most common issues that you may face 
 
    The promotion hasn’t been triggered because either of the following conditions must be met for the **Coupons and Conditions** option:
 
-   * You’ve generated coupons and added conditions
-   * You’ve generated coupons
+   * You’ve created a coupon(s) and added conditions
+   * You’ve created a coupon(s)
 
    If you need to trigger the promotion solely by conditions, use the **Conditions Only** option.
 
