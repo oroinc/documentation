@@ -5517,3 +5517,20 @@ Links (Dev)
 .. |setting up the Local Proxy| raw:: html
 
    <a href="https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy" target="_blank">setting up the Local Proxy</a>
+
+.. |changefreq| raw:: html
+
+   <a href="https://www.sitemaps.org/protocol.html#changefreqdef" target="_blank">changefreq</a>
+
+.. |priority| raw:: html
+
+   <a href="https://www.sitemaps.org/protocol.html#prioritydef" target="_blank">priority</a>
+
+.. |sitemap.xml| raw:: html
+
+   <a href="https://www.sitemaps.org/protocol.html" target="_blank">sitemap.xml</a>
+
+.. |robots.txt| raw:: html
+
+   <a href="http://www.robotstxt.org/ " target="_blank">robots.txt</a>
+
