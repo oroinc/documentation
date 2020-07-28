@@ -159,6 +159,9 @@ Links (Cloud)
 
    <a href="https://doc.oroinc.com/cloud/maintenance/advanced-use/" target="_blank">configured using orocloud.yaml file</a>
 
+.. |Oro Inc. Support Desk| raw:: html
+
+   <a href="https://magecore.atlassian.net/servicedesk/customer/portal/2" target="_blank">Oro Inc. Support Desk</a>
 
 
 
