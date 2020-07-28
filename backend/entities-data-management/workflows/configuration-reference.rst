@@ -19,7 +19,7 @@ Configuration File
 Configuration must be placed into the Resources/config/oro/workflows.yml. file. For example, `src/Acme/DemoWorkflowBundle/Resources/config/oro/workflows.yml`.
 
 The configuration file can be split into parts. All included parts must be placed under the imports section. Imports may be used
-in any part of the workflow configuration.
+in any part of the workflow configuration.f
 
 **Example - workflows.yml**
 
@@ -198,7 +198,7 @@ A single workflow configuration has the following properties:
 
 * **datagrids** - a list of datagrid names on whose rows currently available transitions should be displayed as buttons.
 
-* **disable_operations** - an array of operation names (as keys) and related entities for which the operation should be disabled. See |Work with Operations| for more details.
+* **disable_operations** - an array of operation names (as keys) and related entities for which the operation should be disabled. See :ref:`Operations <bundle-docs-platform-action-bundle-operations>` for more details.
 
 **Example**
 

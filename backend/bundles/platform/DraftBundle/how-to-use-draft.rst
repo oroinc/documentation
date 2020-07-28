@@ -127,7 +127,7 @@ To manage the entity, we need to create a grid to display original and draft ent
 
 Operations for the draft entities must be configured separately in ``action.yml``.
 
-Follow the instructions provided in the |Work with Operations| topic.
+Follow the instructions provided in the :ref:`Work with Operations <bundle-docs-platform-action-bundle-operations>` topic.
 
 .. oro_integrity_check:: 4401fb14651162652e517d45aced91fbe9c8599b
 

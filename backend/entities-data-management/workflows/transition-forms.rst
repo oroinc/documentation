@@ -103,7 +103,7 @@ If we need a more complex form to be filled by a user who is performing a transi
 
 **form_init**
 
-The `form_init` node is under `form_options`. It is an action that will be performed before form rendering (see |Action Component| for more details).
+The `form_init` node is under `form_options`. It is an action that will be performed before form rendering (see :ref:`Action Component <bundle-docs-platform-action-bundle>` for more details).
 Here, you can prepare your data before form rendering. In the sample configuration we are creating, a new `\DateTime` object is pre-configured to *tomorrow*.
 So that on our custom `"my_date_picker"` type we will see the day after today predefined on the form.
 
