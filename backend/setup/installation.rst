@@ -202,6 +202,13 @@ You should see information similar to what is illustrated below:
    oro_message_consumer:oro_message_consumer_04   RUNNING   pid 4843, uptime 0:05:36
    oro_web_socket                                 RUNNING   pid 5163, uptime 0:00:05
 
+Configure OAuth Bundle
+~~~~~~~~~~~~~~~~~~~~~~
+
+If you use an OAuth Bundle to authenticate with OAuth2 protocol to API resources, please follow
+the :ref:`OroOAuth2ServerBundle documentation <bundle-docs-platform-oauth2-server-bundle--configuration>`
+to lean how to configure the bundle, generate the encryption key and private and public keys.
+
 Congratulations! You've Successfully Installed Your Oro Application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

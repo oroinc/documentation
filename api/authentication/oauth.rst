@@ -34,7 +34,9 @@ Generate Tokens
 .. note::
 
     In order to use OAuth authentication, private and public keys should be generated and placed
-    to the server. Please contact your administrator if you see the following error message:
+    to the server. Please contact your administrator or please follow
+    the :ref:`OroOAuth2ServerBundle documentation <bundle-docs-platform-oauth2-server-bundle--configuration>`
+    if you see the following error message:
 
     *The encryption key does not exist.*
 
