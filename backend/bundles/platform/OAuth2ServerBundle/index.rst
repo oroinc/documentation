@@ -13,10 +13,10 @@ on top of |thephpleague/oauth2-server| library.
 
 Currently, Client Credentials and Password grants are implemented.
 
-See |OAuth 2.0 Server Client Credentials Grant| and |OAuth 2.0 Client Credentials Grant| for details of
+See |OAuth 2.0 Server Client Credentials Grant| and |OAuth 2.0 Client Credentials Grant| for details of the
 Client Credentials grant.
 
-See |OAuth 2.0 Server Resource Owner Password Credentials Grant| and |OAuth 2.0 Password Grant| for details of
+See |OAuth 2.0 Server Resource Owner Password Credentials Grant| and |OAuth 2.0 Password Grant| for details on the
 Password grant.
 
 .. _bundle-docs-platform-oauth2-server-bundle--configuration:
@@ -60,9 +60,7 @@ The default configuration of OroOAuth2ServerBundle is illustrated below:
             # The full path to the public key file that is used to verify JWT tokens.
             public_key: '%kernel.project_dir%/var/oauth_public.key'
 
-In order to use OAuth 2.0 authorization, you need to generate private and public keys and place them
-to locations specified in `authorization_server / private_key` and `resource_server / public_key` options.
-See |Generating public and private keys| for details how to generate the keys.
+.. note:: To use OAuth 2.0 authorization, generate the private and public keys and place them into locations specified in the `authorization_server / private_key` and `resource_server / public_key` options. See |Generating public and private keys| for details on how to generate the keys.
 
 .. _bundle-docs-platform-oauth2-server-bundle--manage-applications:
 
