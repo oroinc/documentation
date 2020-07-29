@@ -5354,6 +5354,20 @@ Links (Dev)
 .. |notify them about your intention to launch| raw:: html
 
    <a href="https://doc.oroinc.com/cloud/support/" target="_blank">notify them about your intention to launch</a>
-   
- 
+
+.. |changefreq| raw:: html
+
+   <a href="https://www.sitemaps.org/protocol.html#changefreqdef" target="_blank">changefreq</a>
+
+.. |priority| raw:: html
+
+   <a href="https://www.sitemaps.org/protocol.html#prioritydef" target="_blank">priority</a>
+
+.. |sitemap.xml| raw:: html
+
+   <a href="https://www.sitemaps.org/protocol.html" target="_blank">sitemap.xml</a>
+
+.. |robots.txt| raw:: html
+
+   <a href="http://www.robotstxt.org/ " target="_blank">robots.txt</a>
 
