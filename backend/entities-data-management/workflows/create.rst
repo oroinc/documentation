@@ -258,7 +258,7 @@ Some workflows can be used to expand an existing configuration and replace the o
             operation_two: ~    #disable operation for any occurrences
 
 .. note::
-      See |Work with Operations| for more details.
+      See :ref:`Work with Operations <bundle-docs-platform-action-bundle-operations>` for more details.
 
 Filter by Scopes
 ----------------
