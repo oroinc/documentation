@@ -21,7 +21,7 @@ OroCloud Documentation
    environments
    security
    monitoring
-   onboarding
+   onboarding/index
    connect-vpn
    maintenance/index
    support

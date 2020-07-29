@@ -73,6 +73,8 @@ SMTP Relay
 
 To send emails from an OroCloud environment, the Oro application uses the dedicated SMTP Relay service, which provides high availability using a set of mail relays with different priorities. The setup is similar to a master-master database replication, where there is more than one active service to handle the requests.
 
+See :ref:`Set Up SMTP for Applications on OroCloud <orocloud-smtp>` for more information.
+
 Cache
 ~~~~~
 

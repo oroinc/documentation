@@ -24,3 +24,4 @@ user/back-office/system/frontend-menus/overview /user/back-office/system/fronten
 user/back-office/system/frontend-menus/frontend-menu-config /user/back-office/system/frontend-menus/index
 user/back-office/system/frontend-menus/globally-frontend-menus /user/back-office/system/frontend-menus/index
 user/back-office/system/websites/host-config /backend/setup/installation-in-sub-folder
+cloud/onboarding /cloud/onboarding/index
