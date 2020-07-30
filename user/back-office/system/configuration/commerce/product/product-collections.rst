@@ -35,7 +35,12 @@ To change the default product collections indexation frequency:
      a) Clear the **Use Default** box next to the option.
      b) Specify the limited number of products that can be handled when using mass action.
 
-5. Click **Save Settings**.
+5. To enable partial indexation only for products that were added to or removed from the collection.
+
+    a) Clear the **Use Default** box next to the option.
+    b) Select the **Enable Partial Indexation** option.
+
+6. Click **Save Settings**.
 
 
 .. include:: /include/include-images.rst
