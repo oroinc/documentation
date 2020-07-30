@@ -7,24 +7,26 @@ OroActionBundle
 
 OroActionBundle enables the user interface actions definition and configuration using YAML configuration files.
 
-On top of the common |Action Component| and OroPlatform in general, ActionBundle provides a way to bring more complex solutions in ORO based projects with reusable components of configuration.
-
-Those components are:
-
-* **Buttons** - a user interface component that helps deliver custom actions for user interaction;
-* **Operations** - configured user interaction elements (buttons, links or even further: forms, pages) with customized execution logic;
-* **Action Groups** - complex business logic sets of backend actions grouped together under the named configuration nodes.
+On top of the common :ref:`Action Component <bundle-docs-platform-action-bundle-action-component>` and OroPlatform in general, ActionBundle provides a way to bring more complex solutions in ORO based projects with reusable components of configuration.
 
 Related Documentation
 ---------------------
 
-* |ActionBundle Glossary and Console Commands|
-* |ActionBundle Configuration Reference|
-* |Configure Action Groups|
-* |Work with Actions|
-* |Work with Operations|
-* |Add User Interface Buttons|
-* |Add Custom and Configurable Conditions|
+* :ref:`ActionBundle Glossary <bundle-docs-platform-action-bundle-glossary>`
+* :ref:`Operations <bundle-docs-platform-action-bundle-operations>`
+* :ref:`User Interface Buttons <bundle-docs-platform-action-bundle-buttons>`
+* :ref:`Action Groups <bundle-docs-platform-action-bundle-action-groups>`
+* :ref:`ActionBundle Configuration Reference <bundle-docs-platform-action-bundle-configuration-reference>`
+* :ref:`ActionBundle Actions and Conditions <bundle-docs-platform-action-bundle-action-component>`
+* :ref:`ActionBundle Console Commands <bundle-docs-platform-action-bundle-commands>`
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+.. toctree::
+   :hidden:
+
+   glossary
+   operations
+   buttons
+   action-groups
+   configuration-reference
+   actions-conditions
+   commands

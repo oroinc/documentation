@@ -51,7 +51,8 @@ Learn how to set up menus and configure content variants for the content node in
 * :ref:`Configure Content Variants for the Content Node <user-guide--marketing--web-catalog--content-variant>`
 * :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--node--visibility>`
 
-.. note:: Once you are done creating a web catalog, update your web-catalog configuration to enable it for the necessary level (either :ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-globally>`), and, if necessary, tune the individual :ref:`catalog nodes visibility <user-guide--marketing--web-catalog--customize>` to hide/show the node or particular content variant for specific localization, on a particular website, or for certain customer.
+.. note::
+        Once you are done creating a web catalog, update your web-catalog configuration to enable it for the necessary level (either :ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-globally>`), and, if necessary, tune the individual :ref:`catalog nodes visibility <user-guide--marketing--web-catalog--customize>` to hide/show the node or particular content variant for specific localization, on a particular website, or for certain customer.
 
 **Related Articles**
 

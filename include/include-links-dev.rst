@@ -570,9 +570,25 @@ Links (Dev)
 
    <a href="https://github.com/orocrm/platform/blob/3.1/src/Oro/Bundle/FormBundle/Model/UpdateHandler.php" target="_blank">OroFormUpdateHandler</a>
 
+.. |ButtonsProviderExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Extension/ButtonProviderExtensionInterface.php" target="_blank">ButtonsProviderExtension</a>
+
+.. |Buttons| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Button/ButtonInterface.php" target="_blank">Buttons</a>
+
 .. |Actions| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Resources/config/oro/actions.yml" target="_blank">Actions</a>
+
+.. |configuration.php| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Configuration/Configuration.php" target="_blank">configuration.php</a>
+
+.. |ConfigExpression| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/ConfigExpression/README.md" target="_blank">ConfigExpression</a>
 
 .. |available operations and their configuration| raw:: html
 
@@ -1426,37 +1442,41 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#troubleshooting" target="_blank">Troubleshooting</a>
 
-.. |Action Component| raw:: html
+.. |action group| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Action/Resources/doc/actions.md" target="_blank">Action Component</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Model/ActionGroup.php" target="_blank">action group</a>
 
-.. |ActionBundle Glossary and Console Commands| raw:: html
+.. |ActionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/index.md#actionbundle-glossary" target="_blank">ActionBundle Glossary and Console Commands</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Action/Action/ActionInterface.php" target="_blank">`ActionInterface`</a>
 
-.. |ActionBundle Configuration Reference| raw:: html
+.. |AbstractStorage| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/configuration-reference.md" target="_blank">ActionBundle Configuration Reference</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Action/Model/AbstractStorage.php" target="_blank">`AbstractStorage`</a>
 
-.. |Configure Action Groups| raw:: html
+.. |ButtonSearchContext| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/action-groups.md" target="_blank">Configure Action Groups</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Button/ButtonSearchContext.php" target="_blank">ButtonSearchContext</a>
 
-.. |Work with Actions| raw:: html
+.. |DeepCopy| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/actions.md" target="_blank">Work with Actions</a>
+   <a href="https://packagist.org/packages/myclabs/deep-copy" target="_blank">DeepCopy</a>
 
-.. |Work with Operations| raw:: html
+.. |by the interface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md" target="_blank">Work with Operations</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Extension/ButtonProviderExtensionInterface.php" target="_blank">by the interface</a>
 
-.. |Add User Interface Buttons| raw:: html
+.. |ButtonProviderExtensionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/buttons.md" target="_blank">Add User Interface Buttons</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Extension/ButtonProviderExtensionInterface.php" target="_blank">ButtonProviderExtensionInterface</a>
 
-.. |Add Custom and Configurable Conditions| raw:: html
+.. |ButtonInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/conditions.md" target="_blank">Add Custom and Configurable Conditions</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Button/ButtonInterface.php" target="_blank">`ButtonInterface`</a>
+
+.. |OnButtonsMatched| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Provider/Event/OnButtonsMatched.php" target="_blank">`OnButtonsMatched`</a>
 
 .. |Fundamentals: Activities| raw:: html
 
