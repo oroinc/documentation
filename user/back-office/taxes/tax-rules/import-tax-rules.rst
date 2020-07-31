@@ -5,6 +5,8 @@
 Import Tax Rules
 ----------------
 
+.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+
 .. start
 
 **Import File** option helps import a large bulk of tax rules information into the tax rules list using the .csv file.
@@ -27,8 +29,10 @@ To import a bulk of tax rules information:
 
 3. **Prepare data for import**: Create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.
 
-   .. image:: /user/img/taxes/import_tax_rules.png
-      :alt: The steps that are necessary to perform to import the tax rules successfully
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
+.. image:: /user/img/taxes/import_tax_rules.png
+   :alt: The steps that are necessary to perform to import the tax rules successfully
 
 4. **Validate import results**: Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
 

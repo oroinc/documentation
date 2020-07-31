@@ -6,6 +6,8 @@
 Import Product Information
 --------------------------
 
+.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+
 The **Import File** option helps import a large bulk of product information into the product catalog using the .csv file.
 
 Import Products
@@ -29,8 +31,10 @@ To import a bulk of product information:
 
 3. **Prepare data for import**: Create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.
 
-   .. image:: /user/img/products/products/import_products.png
-      :alt: The steps that are necessary to perform to import the products successfully
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
+.. image:: /user/img/products/products/import_products.png
+   :alt: The steps that are necessary to perform to import the products successfully
 
 4. **Validate import results**: Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
 
@@ -39,6 +43,9 @@ To import a bulk of product information:
 6. Click **Cancel** to decline the import.
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+
+.. _user-guide-import-product-images:
+
 
 Import Product Images
 ^^^^^^^^^^^^^^^^^^^^^
@@ -63,8 +70,10 @@ To import a bulk of product images:
 
 4. Click **Choose File** and select the .csv file you prepared.
 
-   .. image:: /user/img/products/products/import_product_images.png
-      :alt: The steps that are necessary to perform to import the product price attributes successfully
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
+.. image:: /user/img/products/products/import_product_images.png
+   :alt: The steps that are necessary to perform to import the product price attributes successfully
 
 5. Click **Export Template** to download a sample .csv file with the necessary headers.
 
@@ -79,6 +88,8 @@ Once your file is ready, click **Choose File** and select the prepared comma-sep
 8. **Launch import:** After successful validation, click **Import File**.
 
 9. Click **Cancel** to decline the import.
+
+.. _user-guide-import-related-products:
 
 Import Related Products
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,8 +110,10 @@ To import a bulk of related products:
 3. In the **Import** dialog, select the **Related Products** tab.
 4. Click **Choose File** and select the .csv file you prepared.
 
-   .. image:: /user/img/products/products/import_related_products.png
-      :alt:  The steps to perform to import of related products
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
+.. image:: /user/img/products/products/import_related_products.png
+   :alt:  The steps to perform to import of related products
 
 5. Click **Export Template** to download a sample .csv file with the necessary headers.
 6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
@@ -109,6 +122,8 @@ To import a bulk of related products:
 9. **Click Cancel** to decline the import.
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+
+.. _user-guide-import-product-price-attributes:
 
 Import Product Price Attributes Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -133,8 +148,10 @@ To import a bulk of product price attributes:
 
 4. Click **Choose File** and select the .csv file you prepared.
 
-   .. image:: /user/img/products/products/import_product_price_attributes.png
-      :alt: The steps that are necessary to perform to import the product price attributes successfully
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
+.. image:: /user/img/products/products/import_product_price_attributes.png
+   :alt: The steps that are necessary to perform to import the product price attributes successfully
 
 5. Click **Export Template** to download a sample .csv file with the necessary headers.
 

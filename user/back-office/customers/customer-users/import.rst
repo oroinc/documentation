@@ -5,6 +5,8 @@
 Import Customer User Details
 ----------------------------
 
+.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+
 .. start
 
 **Import File** option helps import the customer user information using the .csv file that follows the customer user details data structure.
@@ -27,7 +29,9 @@ To import a bulk of |imported_information|:
 
 3. In the **Import** dialog, click **Choose File**, select the .csv file you prepared, and then click **Import File**.
 
-   |image|
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
+|image|
 
 4. Click **Export Template** to download a sample .csv file with the necessary headers.
 

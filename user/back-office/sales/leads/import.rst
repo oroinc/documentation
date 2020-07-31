@@ -1,7 +1,11 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
+.. _sales-import-leads:
+
 Import Leads
 ============
+
+.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
 
 You can import the bulk details of updated or processed leads information in the .csv format following the steps below.
 
@@ -9,7 +13,9 @@ You can import the bulk details of updated or processed leads information in the
 2. Click **Import File** on the top right.
 3. In the **Import** dialog, click **Choose File**, select the .csv file you prepared, and then click **Import File**.
 
-  |image|
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
+|image|
 
 4. Click **Export Template** to download a sample .csv file with the necessary headers.
 5. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.

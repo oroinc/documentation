@@ -5,6 +5,8 @@
 Import Business Customers
 =========================
 
+.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+
 .. start
 
 **Import File** option helps import a large bulk of information on business customers using the .csv file.
@@ -19,6 +21,8 @@ To import a bulk of business customers:
 2. Click **Import File** on the top right.
 
 3. Click **Choose File** and select the .csv file you prepared.
+
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
 
 4. Click **Export Template** to download a sample .csv file with the necessary headers.
 
