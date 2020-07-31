@@ -33,6 +33,7 @@ Depending on the entity type selected when defining the :ref:`basic properties <
 
     .. image:: /user/img/system/entity_management/use_dam_difference_file.png
        :alt: The difference in the image uploading behavior when **Use DAM** is set to yes and no
+       :scale: 20%
    "
    "ACL Protected","Enable or disable the ACL check for attachments by selecting **Yes** or **No** respectively."
    "File Applications","The list of allowed file applications."
@@ -58,6 +59,7 @@ Depending on the entity type selected when defining the :ref:`basic properties <
 
     .. image:: /user/img/system/entity_management/use_dam_difference_image.png
        :alt: The difference in the image uploading behavior when **Use DAM** is set to yes and no
+       :scale: 20%
    "
    "ACL Protected","Enable or disable the ACL check for attachments by selecting **Yes** or **No** respectively."
    "File Applications","The list of allowed file applications."

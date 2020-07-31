@@ -5,6 +5,7 @@
 .. meta::
    :description: Extensive documentation on accounts, contacts, customers, customer groups, customer users, and user roles management for the OroCommerce and OroCRM 4.1 back-office users
 
+.. _user-guide--customer-entities:
 
 Manage Customer Entities in the Back-Office
 ===========================================
