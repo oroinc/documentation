@@ -5,7 +5,10 @@
 Navigate through Guest Checkout in the Storefront
 =================================================
 
-In the Oro storefront, guest customers can place orders similarly to registered users. They are, however, limited to just one shopping list.
+
+.. hint:: This section is a part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
+
+In the Oro storefront, :ref:`guest customers <sys--conf--commerce--guest>` can place orders similarly to registered users. They are, however, limited to just one shopping list.
 
 Unauthenticated customers can proceed to the checkout through:
 

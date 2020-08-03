@@ -37,6 +37,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
       <li><a class="tag-very-important" href="taxes/">Tax Management</a></li>
       <li><a class="" href="localization/label-translation/">Translation of Product Attribute Labels</a></li>
       <li><a class="" href="marketing-automation/">Track Marketing Activities</a></li>
+      <li><a class="" href="checkout/">Checkout Configuration</a></li>
     </ul>
 
 .. toctree::
@@ -62,6 +63,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    Marketing Automation <marketing-automation/index>
    Promotion Management <promotions/index>
    Consent Management <consents/index>
+   Checkout Configuration <checkout/index>
 
 .. include:: /include/include-images.rst
    :start-after: begin
