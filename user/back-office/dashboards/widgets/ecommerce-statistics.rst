@@ -6,6 +6,8 @@
 Ecommerce Statistics
 --------------------
 
+.. hint:: This widget is deprecated since OroCommerce v4.1.6. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
 The Ecommerce Statistics widget displays a set of metrics that indicate performance of your Magento channels
 
 .. note:: Please keep in mind that this widget is only available in OroCRM.

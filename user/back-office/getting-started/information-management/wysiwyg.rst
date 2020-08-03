@@ -90,6 +90,16 @@ WYSIWYG enables you to:
     .. image:: /user/img/getting_started/wysiwyg/CSS_classes.png
        :alt: An import popup dialog for inputting the HTML code
 
+* Align the text, links, buttons, or any other content inside the block or column to center, left, or right by selecting the required position in the **Typography** section under the **Style Manager** menu.
+
+    .. image:: /user/img/getting_started/wysiwyg/align_link_button_to_center.png
+       :alt: Align the link button to center
+
+* Align the block to center, left, or right using the **Flex** section under the **Style Manager** menu. For this, enable the flex container and set the required direction and position to display your content block.
+
+    .. image:: /user/img/getting_started/wysiwyg/align_the_block_using_flex.png
+       :alt: Align the link button to center using flex
+
 * Insert a video by dragging the video block to the canvas. Set the video provider (HTML5 Source, vimeo) in the **Settings** section under Style Manager and add the direct link to the **Source** field.
 
 * Insert the *Contact Us widget* into the required landing page. For this, enter ``{{widget('contact_us_form')}}`` in the text editor and click **Save** in the top right corner. Once the landing page is added as a content variant to the content node of a web catalog, the form should then become visible in the storefront.
