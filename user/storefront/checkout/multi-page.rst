@@ -3,6 +3,8 @@
 Navigate through Multi Page Checkout in the Storefront
 ------------------------------------------------------
 
+.. hint:: This section is a part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
+
 **Step 1: Billing Information**
 
 1. Enter billing information for the order by selecting an existing address from the address book, or creating a new one.

@@ -5,6 +5,8 @@
 Configure Checkout Settings per Organization
 ============================================
 
+.. hint:: This section is a part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
+
 To configure checkout settings per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
