@@ -6,58 +6,16 @@
 Configure Back-Office Menus
 ===========================
 
-In this section, you will learn the menu types available for the OroCommerce and OroCRM Backend and how to configure them.
+.. hint:: This section is a part of the :ref:`Storefront and Back-Office Menu Management Concept Guide <menu-management-concept-guide>` topic that provides the general understanding of the available storefront and back-office menu types and their management in Oro applications.
 
-Backend Menus Overview
-----------------------
+In this section, you will learn how to edit and configure the menu for the OroCommerce and OroCRM back-office.
 
-All the menus for the Oro backend are located in the main menu under **System > Menus**.
+All the menus for the Oro back-office are located in the main menu under **System > Menus**.
 
 .. image:: /user/img/system/menus/all_menus.png
 
-Application_menu
-^^^^^^^^^^^^^^^^
+Each menu type has a different purpose that is described in detail in the :ref:`Storefront and Back-Office Menu Management Concept Guide <menu-management-concept-guide>`.
 
-The **application_menu** (navigation bar) is the main menu of the back-office in the Oro application. It resides on the top of every application page and you can use it to navigate through the Oro application. Subject to configuration, it may be displayed horizontally or vertically. To toggle the way it is displayed, navigate to the **System > Configuration** section using the main menu, and open **System configuration > General Setup > Display Settings** in the panel to the left. In the **Navigation Bar** section, clear the **Use Default** option and select the *Top* or *Left* position.
-
-In the latter case, the menu items are displayed as icons. For more information, see :ref:`Main Menu <user-guide-navigation-menu>`.
-
-In a top position, application menu (navigation bar) looks like a top menu with a drop-down sub-menus that expand once you hover over the parent item:
-
-.. image:: /user/img/system/menus/ApplicationMenu.png
-
-In a left position, application menu (navigation bar) may be collapsed into the icon bar:
-
-.. image:: /user/img/system/menus/ApplicationMenuVertical.png
-
-or expanded for visible labels and sub-menu items:
-
-.. image:: /user/img/system/menus/ApplicationMenuVerticalExpanded.png
-
-Shortcuts
-^^^^^^^^^
-
-You can find the **shortcuts** menu in the top panel of the application, next to the organization name.
-
-.. image:: /user/img/system/menus/shortcut_full.png
-
-It helps you pin the frequently used actions and have them handy. You can launch an action by clicking it in the dynamically generated **Most Used Actions** list. This list is updated as you are using the system, and will initially contain the actions that you use the most.
-
-To access other shortcuts, click **See the full list** to see complete list of shortcut items or use search: start typing the name of a related entity or an action to choose from a list of matching items.
-
-Usermenu
-^^^^^^^^
-
-In the back-office, a user can access their profile configuration, emails, tasks and events via the **usermenu** (by clicking on your name on the top right of the application).
-
-.. image:: /user/img/system/menus/user_menu.png
-
-Calendar_menu
-^^^^^^^^^^^^^
-
-A **calendar_menu** is a service menu that is used on the **My Calendar** page and helps to change the displayed calendar color, hide or remove a calendar.
-
-.. image:: /user/img/system/menus/menus_calendar_menu.png
 
 Permissions Required to Customize Menus
 ---------------------------------------
@@ -70,45 +28,36 @@ To enable a user to personalise menus for themselves and configure menus for eac
 
 To enable a user to configure menus globally, for all organizations, websites, and users whose configuration fall back to the global settings, both **Manage Menus** and **Access system configuration** capabilities should be enabled for the user role.
 
+.. image:: /user/img/concept-guides/menus/menus_capabilities.png
+   :alt: Capabilities that must be enabled for the role to be allowed to manage backend menus
+
 .. _doc--menu-config-levels:
 
-Backend Menus Configuration
----------------------------
+Back-Office Menus Configuration
+-------------------------------
 
-In Oro applications, you can customize the backend menus look, and the elements they contain globally, per organization, and for your own use.
+In Oro applications, you can customize the back-office menus look, and the elements they contain globally, :ref:`per organization <backend-menu-organization>`, and for your own use.
 
-Customize Backend Menus Globally
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Customize Back-Office Menus Globally
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To customize one of the default backend menus (e.g., application_menu or usermenu):
+To customize one of the default back-office menus (e.g., application_menu or usermenu) globally:
 
 1. Navigate to **System > Menus** in the main menu.
 2. Click on the menu you would like to edit.
 3. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
    The changes apply automatically.
 
-Customize Backend Menus per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Customize Back-Office Menus for Your Own Use
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: This option is available in the Enterprise edition only.
-
-To customize one of the backend menus (e.g., application_menu or usermenu) for a particular organization:
-
-1. Navigate to **System > User Management > Organizations** in the main menu.
-2. Click on the organization you would like to edit the menu for.
-3. Click |IcConfig| **Edit Menu**.
-4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
-   The changes apply automatically.
-
-Customize Backend Menus for Your Own Use
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To customize one of the backend menus (e.g., application_menu or usermenu) for your own use:
+To customize one of the back-office menus (e.g., application_menu or usermenu) for your own use:
 
 1. Click on your name at the top right of the page and then click **My User** to open your profile.
 2. Select |IcConfig| **Edit Menus** from the **More Actions** list at the top right of the page.
 3. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
    The changes apply automatically.
+
 
 
 .. _doc-config-menus-menuspage:
@@ -124,10 +73,10 @@ To customize one of the backend menus (e.g., application_menu or usermenu) for y
 .. _doc-config-menus-actions-hideorshowpanel:
 .. _doc--menus--config:
 
-Backend Menus Management
-------------------------
+Back-Office Menus Management
+----------------------------
 
-A backend menu may be multi-level like, for example, a default OroCRM and OroCommerce back-office main menu. The child menu items are nested under parent menu items (e.g., **Accounts**, **Contacts**, **Customers**, and others are nested under **Customers**).
+A back-office menu may be multi-level like, for example, a default OroCRM and OroCommerce back-office main menu. The child menu items are nested under parent menu items (e.g., **Accounts**, **Contacts**, **Customers**, and others are nested under **Customers**).
 
 .. image:: /user/img/system/menus/menus_general.png
 
@@ -139,8 +88,8 @@ Menu items on the same level of hierarchy may be visually separated by a divider
 
    .. image:: /user/img/system/menus/ApplicationMenu.png
 
-Edit a Backend Menu
-^^^^^^^^^^^^^^^^^^^
+Edit a Back-Office Menu
+^^^^^^^^^^^^^^^^^^^^^^^
 
 To view and edit menu contents, click on the menu name or on the |IcView| **View** icon in the corresponding row of the menu list.
 

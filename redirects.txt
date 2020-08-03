@@ -14,3 +14,7 @@ backend/setup/installation/index /backend/setup/installation
 backend/setup/dev-environment/get-source-files /backend/setup/get-source-files
 backend/setup/dev-environment/web-server-config/how-to-enable-https /backend/setup/dev-environment/web-server-config/index
 user/back-office/system/websites/host-config /backend/setup/installation-in-sub-folder
+user/back-office/system/frontend-menus/overview /user/back-office/system/frontend-menus/index
+user/back-office/system/frontend-menus/frontend-menu-config /user/back-office/system/frontend-menus/index
+user/back-office/system/frontend-menus/globally-frontend-menus /user/back-office/system/frontend-menus/index
+user/back-office/system/websites/host-config /backend/setup/installation-in-sub-folder

@@ -76,7 +76,7 @@ You can also control which section of the web catalog to display on your website
 .. image:: /user/img/concept-guides/web-catalog/nav-root.png
    :alt: Configuring a navigation root to display a segment of a web catalog
 
-You can use the nodes excluded from the main menu. For example, create a category and add it as a separate block on the storefront homepage as part of the :ref:`featured menu <frontend-menus-overview>`. This block can lead to a product listing page with a number of discounted items with the product listing page not be part of the main menu and will only be available via a link from the new featured menu block on the homepage (e.g., Special Offers).
+You can use the nodes excluded from the main menu. For example, create a category and add it as a separate block on the storefront homepage as part of the :ref:`featured menu <menu-management-concept-guide>`. This block can lead to a product listing page with a number of discounted items with the product listing page not be part of the main menu and will only be available via a link from the new featured menu block on the homepage (e.g., Special Offers).
 
 .. image:: /user/img/concept-guides/web-catalog/featured-menu-nav-root.png
    :alt: A segment of web catalog added to featured menu in the storefront

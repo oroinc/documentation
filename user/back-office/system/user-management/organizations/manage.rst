@@ -14,8 +14,8 @@ To open the page of a specific organization:
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. Click the organization to open its details.
 
-   .. .. image:: /user/img/system/user_management/organization_page_details.png
-      .. :alt: Organization details page
+    .. image:: /user/img/system/user_management/organization_page_details.png
+       :alt: Organization details page
 
    * To open :ref:`organization configuration settings <doc-organization-configuration>`, click |IcConfig| **Configuration** on the top right.
    * To edit the :ref:`back-office menu <doc-config-menus>` for this organization, click |IcConfig| **Edit Menu** on the top right.

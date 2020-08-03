@@ -2,28 +2,30 @@
 
 .. _user-guide--system--menu--menu-frontend:
 
-Edit a Frontend Menu
-====================
+.. begin_include
 
-A frontend menu may be multi-level, and the child menu items are nested under parent menu items (e.g., **About**, **Customer Service**, **Privacy Policy**, and others are nested under **Information**).
+Edit a Storefront Menu
+^^^^^^^^^^^^^^^^^^^^^^
+
+A storefront menu may be multi-level, and the child menu items are nested under parent menu items (e.g., **About**, **Customer Service**, **Privacy Policy**, and others are nested under **Information**).
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_2.png
-   :alt: Configuration settings of the About menu under the commerce_footer_links frontend menu
+   :alt: Configuration settings of the About menu under the commerce_footer_links storefront menu
 
 Menu items on the same level of hierarchy may be visually separated by a divider that looks like a horizontal line and helps you logically organize menu items. However, some menus do not support displaying dividers (on a particular level in the tree, or in general).
 
 .. image:: /user/img/system/menus/user_menu.png
    :alt: User menu without divider
 
-To update the frontend menu contents, navigate to **System > Frontend Menus** in the main menu and click the menu name or the |IcView| View icon in the corresponding row of the frontend menu list.
+To update the storefront menu contents, navigate to **System > Frontend Menus** in the main menu and click the menu name or the |IcView| View icon in the corresponding row of the storefront menu list.
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_1.png
-   :alt: A lust of available frontend menu items
+   :alt: A lust of available storefront menu items
 
 On the page that opens, the menu item tree is displayed in the left panel. The center is reserved for the menu item configuration.
 
-Toggle the Frontend Menu Tree View
-----------------------------------
+Toggle the Storefront Menu Tree View
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. To minimize or maximize the left menu panel, click a double arrow on the top right of the panel.
 
@@ -32,7 +34,7 @@ Toggle the Frontend Menu Tree View
 3. To expand / collapse a parent menu item, click an arrow in front of it.
 
 .. image:: /user/img/system/frontend_menu/frontend_menu_edit.png
-   :alt: Numbers that define the actions you can do to frontend menu items described above
+   :alt: Numbers that define the actions you can do to storefront menu items described above
 
 .. _doc-config-menus-actions-draganddrop-frontend:
 
@@ -46,7 +48,7 @@ Toggle the Frontend Menu Tree View
 - If and arrow appears in front of a menu item, then the moved item will become a child of the item to which the arrow points.
 
 Add a Menu Item
----------------
+~~~~~~~~~~~~~~~
 
 1. In the left panel, click a menu item that is going to be a parent for the menu item that you create.
 
@@ -58,7 +60,7 @@ Add a Menu Item
 
 * **Title** --- A name for the menu item. This is how this menu item is going to be represented in the menu. Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-* **Target Type** --- Select the target of the frontend menu item: a URI link, a content node, or a system page. The fields below vary depending on the target type you choose.
+* **Target Type** --- Select the target of the storefront menu item: a URI link, a content node, or a system page. The fields below vary depending on the target type you choose.
 
   .. csv-table::
 
@@ -67,7 +69,7 @@ Add a Menu Item
      "**Content Node**","Select the :ref:`web catalog <user-guide--web-catalog>` from which you want to choose content node, and the :ref:`content node <user-guide--marketing--web-catalog--content-variant>` itself."
 
   .. image:: /user/img/system/frontend_menu/target_type.png
-     :alt: Select the target type for a frontend menu item
+     :alt: Select the target type for a storefront menu item
 
   .. hint:: If this menu item serves as a non-clickable parent that does not link itself to any resource (like **Customers** in the default main menu), type *\#*.
 
@@ -159,7 +161,7 @@ Add a Menu Item
     You need to reload the page to see the changes.
 
 Add a Divider
--------------
+~~~~~~~~~~~~~
 
 1. In the left panel, click a menu item which will be the parent for the menu divider that you create.
 
@@ -173,7 +175,7 @@ The created divider will appear as the last one on the list of children of the s
 .. note:: Some menus (or some menu levels) cannot display dividers. For example, if you add a divider to the first level of the main menu (**application_menu**), this divider will not be displayed.
 
 Toggle Item Visibility
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 1. **Hide a Menu Item** --- To hide the default menu items from the interface, click the necessary menu item in the left panel. Click **Hide** on the top right. Reload the page to see changes.
 
@@ -201,7 +203,7 @@ Toggle Item Visibility
 
 5. **Reset a Menu** --- To reset any customization changes and roll back to the menu that is provided out-of-the-box in the Oro application, click a menu name in the left panel. Click **Reset** on the top right. In the **Reset Confirmation** dialog box, click **Yes, Reset**. Reload the page to see changes.
 
-.. finish
+.. finish_include
 
 .. include:: /include/include-images.rst
    :start-after: begin
