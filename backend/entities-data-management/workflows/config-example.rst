@@ -1,7 +1,7 @@
 .. _backend-workflows-example:
 
-Example of Workflow Configuration
-=================================
+Workflow Configuration Example
+==============================
 
 The workflow configuration that we are going to illustrate has two entities:
 

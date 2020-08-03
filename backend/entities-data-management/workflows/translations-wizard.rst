@@ -1,7 +1,7 @@
 .. _backend--workflows--translation-wizard:
 
-Translation Wizard
-==================
+Workflow Translation Wizard
+===========================
 
 WorkflowBundle supports the translation functionality and each workflow (in part of its text fields) can be translated into multiple languages.
 This topic explains how to use it when creating new workflow configuration or updating the existing one.

@@ -1,7 +1,7 @@
 .. _backend--workflows--managing-elements:
 
-Managing Elements
-=================
+Managing Workflow Elements
+==========================
 
 .. _backend--workflows--transition-conditions:
 

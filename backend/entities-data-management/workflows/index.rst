@@ -26,10 +26,10 @@ This guide explains and illustrates how to create workflows through configuratio
 .. toctree::
    :hidden:
 
-   intro
-   configuration-reference
-   elements
-   create
-   transition-forms
-   translations-wizard
-   config-example
+   Introduction <intro>
+   Configuration Reference <configuration-reference>
+   Elements <elements>
+   Basic Configuration <create>
+   Transition Forms <transition-forms>
+   Translation Wizard <translations-wizard>
+   Configuration Example <config-example>

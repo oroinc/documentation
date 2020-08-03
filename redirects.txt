@@ -24,3 +24,11 @@ user/back-office/system/frontend-menus/overview /user/back-office/system/fronten
 user/back-office/system/frontend-menus/frontend-menu-config /user/back-office/system/frontend-menus/index
 user/back-office/system/frontend-menus/globally-frontend-menus /user/back-office/system/frontend-menus/index
 user/back-office/system/websites/host-config /backend/setup/installation-in-sub-folder
+backend/entities-data-management/operations /backend/entities-data-management/actions/index
+backend/bundles/platform/ActionBundle/action-groups /backend/entities-data-management/actions/action-groups
+backend/bundles/platform/ActionBundle/actions-conditions /backend/entities-data-management/actions/actions-conditions
+backend/bundles/platform/ActionBundle/buttons /backend/entities-data-management/actions/buttons
+backend/bundles/platform/ActionBundle/commands /backend/entities-data-management/actions/commands
+backend/bundles/platform/ActionBundle/configuration-reference /backend/entities-data-management/actions/configuration-reference
+backend/bundles/platform/ActionBundle/glossary /backend/entities-data-management/actions/glossary
+backend/bundles/platform/ActionBundle/operations /backend/entities-data-management/actions/index

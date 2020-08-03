@@ -12,21 +12,10 @@ On top of the common :ref:`Action Component <bundle-docs-platform-action-bundle-
 Related Documentation
 ---------------------
 
-* :ref:`ActionBundle Glossary <bundle-docs-platform-action-bundle-glossary>`
+* :ref:`Operations (Actions) Glossary <bundle-docs-platform-action-bundle-glossary>`
 * :ref:`Operations <bundle-docs-platform-action-bundle-operations>`
 * :ref:`User Interface Buttons <bundle-docs-platform-action-bundle-buttons>`
 * :ref:`Action Groups <bundle-docs-platform-action-bundle-action-groups>`
-* :ref:`ActionBundle Configuration Reference <bundle-docs-platform-action-bundle-configuration-reference>`
-* :ref:`ActionBundle Actions and Conditions <bundle-docs-platform-action-bundle-action-component>`
-* :ref:`ActionBundle Console Commands <bundle-docs-platform-action-bundle-commands>`
-
-.. toctree::
-   :hidden:
-
-   glossary
-   operations
-   buttons
-   action-groups
-   configuration-reference
-   actions-conditions
-   commands
+* :ref:`Operations Configuration Reference <bundle-docs-platform-action-bundle-configuration-reference>`
+* :ref:`Actions and Conditions in Operations <bundle-docs-platform-action-bundle-action-component>`
+* :ref:`Operations (Actions) Console Commands <bundle-docs-platform-action-bundle-commands>`
