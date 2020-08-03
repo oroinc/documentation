@@ -6,6 +6,8 @@
 Configure Checkout Settings per Website
 =======================================
 
+.. hint:: This section is a part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
+
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Sales > Checkout** in the menu to the left.

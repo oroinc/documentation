@@ -8,8 +8,35 @@
 Configure Global Checkout Settings
 ==================================
 
-Guest Checkout
---------------
+.. hint:: This section is a part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
+
+.. begin
+
+To enable guest checkout globally:
+
+1. Navigate to **System > Configuration** in the main menu.
+2. Select **Commerce > Sales > Checkout** in the menu to the left.
+
+  .. note::
+     For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+
+.. image:: /user/img/system/config_commerce/sales/single_page_checkout_general.png
+   :alt: Global checkout configuration settings
+
+3. In the **Customer Users Registration** section, configure checkout options for the registered users:
+
+   a) **Allow Registration** ---  when the option is enabled, registration is allowed for customers on the checkout page.
+   b) **Allow Checkout without Email Confirmation** --- when the option is enabled, customers proceed to the checkout immediately once registration details are provided. When this option is disabled, the checkout does not start until the user confirms their email address.
+
+   .. note:: By default, both options are *enabled*. However, they are only relevant when :ref:`guest checkout <user-guide--system-configuration--commerce-sales-checkout>` is enabled.
+
+   To disable the options:
+
+   a) Clear the **Use Default** check box.
+   b) Clear the **Allow Registration** and **Allow Checkout without Email Confirmation** check boxes.
+
+#. In the **Guest Checkout** section, set whether guest checkout should be enabled or disabled.
 
 Guest checkout allows unregistered customers proceed through the steps of the checkout similarly to registered customers, with the exception of needing to enter their data manually as there is no pre-filled information available in the checkout forms. They are also limited to 1 shopping list.
 
@@ -32,41 +59,12 @@ For complete guest checkout experience, it is recommended to enable guest shoppi
 
 .. hint:: Guest checkout can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales-organization>` and :ref:`website <user-guide--system-configuration--commerce-sales-checkout-website>`.
 
-.. note:: Please note that website settings override organization, organization settings override system settings.
 
-.. begin
+By default, guest checkout is disabled.
 
-To enable guest checkout globally:
+To enable it, clear *Use Default* and select the *Enable Guest Checkout* check box.
 
-1. Navigate to **System > Configuration** in the main menu.
-2. Select **Commerce > Sales > Checkout** in the menu to the left.
-
-  .. note::
-     For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
-
-
-.. image:: /user/img/system/config_commerce/sales/single_page_checkout_general.png
-   :alt: Global checkout configuration settings
-
-3. In the **Customer Users Registration** section, configure guest checkout with an option to register:
-
-   a) **Allow Registration** ---  when the option is enabled, registration is allowed for customers on the checkout page.
-   b) **Allow Checkout without Email Confirmation** --- when the option is enabled, customers proceed to the checkout immediately once registration details are provided. When this option is disabled, the checkout does not start until the user confirms their email address.
-
-   .. note:: By default, both options are *enabled*. However, they are only relevant when :ref:`guest checkout <user-guide--system-configuration--commerce-sales-checkout>` is enabled.
-
-   To disable the options:
-
-   a) Clear the **Use Default** check box.
-   b) Clear the **Allow Registration** and **Allow Checkout without Email Confirmation** check boxes.
-
-#. In the **Guest Checkout** section, set whether guest checkout should be enabled or disabled.
-
-   By default, guest checkout is disabled.
-
-   To enable it, clear *Use Default* and select the *Enable Guest Checkout* check box.
-
-   When the guest checkout is enabled, click **Save Settings** to display the additional **Guest Checkout Owner Settings** section.
+When the guest checkout is enabled, click **Save Settings** to display the additional **Guest Checkout Owner Settings** section.
 
 #. In the **Guest Checkout Owner Settings** section, select the default owner of the guest checkout. Depending on the roles and permissions of the owner, guest data (e.g. shopping lists) may or may not be viewed and managed by the users who are subordinated to the owner.
 
