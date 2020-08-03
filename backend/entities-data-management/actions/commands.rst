@@ -1,7 +1,7 @@
 .. _bundle-docs-platform-action-bundle-commands:
 
-ActionBundle Console Commands
-=============================
+Operations (Actions) Console Commands
+=====================================
 
 oro:debug:action
 ^^^^^^^^^^^^^^^^

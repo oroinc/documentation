@@ -1,7 +1,7 @@
 .. _backend--workflows--intro:
 
-Introduction
-============
+Introduction to Workflows
+=========================
 
 Principle
 ---------

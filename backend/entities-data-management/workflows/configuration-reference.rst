@@ -1,7 +1,7 @@
 .. _backend--workflows--config-reference:
 
-Configuration Reference
-=======================
+Workflow Configuration Reference
+================================
 
 Configuration of Workflow declares all aspects related to a specific workflow:
 

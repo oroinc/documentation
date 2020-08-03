@@ -1468,10 +1468,6 @@ Links (Dev)
 
    <a href="https://github.com/stof/StofDoctrineExtensionsBundle" target="_blank">StofDoctrineExtension</a>
 
-.. |relevant documentation1| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md" target="_blank">relevant documentation</a>
-
 .. |PaymentMethodInterface| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/4.1/src/Oro/Bundle/PaymentBundle/Method/PaymentMethodInterface.php" target="_blank">PaymentMethodInterface</a>

@@ -1,7 +1,7 @@
 .. _bundle-docs-platform-action-bundle-operations:
 
-Operations
-==========
+Operations (Actions)
+====================
 
 *Operations* provide possibility to assign any interaction with a user by specifying:
 
@@ -225,3 +225,14 @@ The following diagram shows operation processes logic in graphical representatio
 
 .. image:: /img/backend/bundles/ActionBundle/operation.png
    :alt: Operation Diagram
+
+.. toctree::
+   :hidden:
+
+   Glossary <glossary>
+   buttons
+   action-groups
+   configuration-reference
+   Actions and Conditions <actions-conditions>
+   Console Commands <commands>
+

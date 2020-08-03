@@ -1,7 +1,7 @@
 .. _backend--workflows--transition-forms:
 
-Transition Forms
-================
+Workflow Transition Forms
+=========================
 
 Configuration
 -------------
