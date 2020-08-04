@@ -14,7 +14,7 @@ Entities Data Management
    data-fixtures
    reports-and-segments
    search/index
-   workflows
-   operations
+   workflows/index
+   actions/index
    processes
    data-audit

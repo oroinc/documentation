@@ -1595,10 +1595,6 @@ Links (Dev)
 
    <a href="https://github.com/stof/StofDoctrineExtensionsBundle" target="_blank">StofDoctrineExtension</a>
 
-.. |relevant documentation1| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md" target="_blank">relevant documentation</a>
-
 .. |PaymentMethodInterface| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/PaymentBundle/Method/PaymentMethodInterface.php" target="_blank">PaymentMethodInterface</a>
@@ -5390,4 +5386,24 @@ Links (Dev)
 .. |robots.txt| raw:: html
 
    <a href="http://www.robotstxt.org/ " target="_blank">robots.txt</a>
+
+.. |TransitionContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/WorkflowBundle/Processor/Context/TransitionContext.php" target="_blank">TransitionContext</a>
+
+.. |WorkflowItem| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/WorkflowBundle/Entity/WorkflowItem.php" target="_blank">WorkflowItem</a>
+
+.. |oro_workflow_transition_form| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WorkflowBundle/Resources/views/layouts/default/imports/oro_workflow_transition_form" target="_blank"> oro_workflow_transition_form</a>
+
+.. |oro_workflow_start_transition_form| raw:: html
+
+  <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/WorkflowBundle/Resources/views/layouts/default/imports/oro_workflow_start_transition_form" target="_blank">oro_workflow_start_transition_form</a>
+
+.. |Transition| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/WorkflowBundle/Model/Transition.php" target="_blank">Transition</a>
 

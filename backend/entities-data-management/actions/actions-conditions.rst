@@ -1,7 +1,7 @@
 .. _bundle-docs-platform-action-bundle-action-component:
 
-ActionBundle Actions and Conditions
-===================================
+Actions and Conditions in Operations
+====================================
 
 ActionBundle provides several actions and conditions, besides those that are in the Action Component.
 

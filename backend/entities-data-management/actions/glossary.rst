@@ -1,7 +1,7 @@
 .. _bundle-docs-platform-action-bundle-glossary:
 
-ActionBundle Glossary
-=====================
+Operations (Actions) Glossary
+=============================
 
 * :ref:`Buttons <bundle-docs-platform-action-bundle-buttons>` are a user interface component that helps deliver custom actions for user interaction. They provide a way to demonstrate any kind of actions (operations, for example) to UI for a proper context through specific |ButtonsProviderExtension| together with |Buttons| matched by a context.
 
