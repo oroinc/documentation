@@ -7,6 +7,8 @@ Import Inventory Levels and Statuses
 
 When your need your Oro application and other systems (like asset management and accounting software) exchange and synchronize product inventory information, you may transfer the inventory data from and into the Oro application in the .csv format.
 
+.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+
 Inventory Statuses and Levels
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -20,9 +22,10 @@ Inventory Statuses and Levels
 
    "product.1", "Product Name", "In Stock", "First Warehouse", 50, "kg"
 
-.. note::
-   * Inventory status should be *In Stock*, *Out of Stock*, or *Discontinued*.
-   * The warehouse and unit should be created prior to the inventory levels import.
+.. hint::
+
+          * Inventory status should be *In Stock*, *Out of Stock*, or *Discontinued*.
+          * The warehouse and unit should be created prior to the inventory levels import.
 
 To import a bulk of |imported_information|:
 
@@ -30,7 +33,9 @@ To import a bulk of |imported_information|:
 2. Click **Import File** on the top right.
 3. In the **Import** dialog, click **Choose File**, select the .csv file you prepared, and then click **Import File**.
 
-   |image|
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
+|image|
 
 4. Click **Export Template** to download a sample .csv file with the necessary headers.
 5. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.

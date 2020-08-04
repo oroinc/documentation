@@ -20,6 +20,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
 
       <li><a class="" href="master-catalog/">Master Catalog Management</a></li>
       <li><a class="tag-very-important" href="web-catalog/">Web Catalog Management</a></li>
+      <li><a class="" href="data-import/">Data Import</a></li>
       <li><a class="tag-important" href="product-management/">Product Management</a></li>
       <li><a class="tag-very-important" href="customers/">Customer Management</a></li>
       <li><a class="tag-very-important" href="customer-permissions/">Customer Permissions</a></li>
@@ -48,6 +49,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
 
    Master Catalog Management <master-catalog/index>
    Web Catalog Management <web-catalog/index>
+   Data Import <data-import/index>
    Product Management <product-management/index>
    Customer Management <customers/index>
    Customer Permissions <customer-permissions/index>

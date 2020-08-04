@@ -24,7 +24,7 @@ For the **File** type:
       - Fields of the **File** type are not displayed on a grid, so **Show on Grid** and **Show Grid Filter** properties cannot be defined for them. 
      
    .. warning:: Auditing is not available for actions with the entity fields of the **File** type.
-     
+
 For the **Image** type:
   * *File Size* --- The maximum file size allowed for an upload (in MB). 
   * *Thumbnail Width* --- The image thumbnail width in pixels.

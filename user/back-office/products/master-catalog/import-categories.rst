@@ -5,11 +5,16 @@
 Import Master Catalog Categories Information
 --------------------------------------------
 
+.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+
 You can import the bulk details of updated or processed master catalog categories information in the .csv format following the steps below.
 
 1. In the main menu, navigate to **Products > Master Catalog**.
 2. Click **Import File** on the top right.
 3. In the **Import** dialog, click **Choose File** and select the .csv file you have prepared.
+
+.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+
 4. Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
 5. After successful validation, click **Import File**.
 6. Click **Cancel** to decline the import.
