@@ -17,7 +17,9 @@ The fields of an embedded form depend on its type. The two out-of-the-box types 
    .. image:: /user/img/system/integrations/emb_form/cont_req.png
       :width: 50%
       :alt: The contact request form
- 
+
+.. hint:: The Magento Contact Us Request feature is deprecated since OroCommerce v4.1.6. To check which application version you are running, see the :ref:`system Information <system-information>`.
+
 * Magento Contact Us Request
  
    .. image:: /user/img/system/integrations/emb_form/cont_req_magento.png
@@ -36,7 +38,7 @@ In order to create a new embedded form:
 3. Provide the following details: 
 
    * **Title** --- The title used to refer to the form in the system. The field must be defined.
-   * **Form Type** --- Choose one of the form types described above. Please note, that while the *Magento Contact Us Request* type is sharpened to suit the Magento design, you can choose the type regardless of the Channel chosen.
+   * **Form Type** --- Choose one of the form types described above. Please note, that while the *Magento Contact Us Request* type is sharpened to suit the Magento design, you can choose the type regardless of the Channel chosen. Keep in mind that *Magento Contact Us Request* is deprecated since OroCommerce v4.1.6.
    * **CSS** --- Editable CSS. The default CSS corresponds to the initial form design, subject to its type. You can edit the CSS to change such settings as the border width, color, fonts etc.
    * **Success Message** --- The message to be displayed on the website following the successful form submission. By default is set to *Form has been submitted successfully*.
    * **Allowed Domains** --- Allowed cross origin domains where the form can be embedded. Supports wildcard, e.g., X.example.com.

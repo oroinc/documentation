@@ -96,7 +96,6 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
    average-lifetime-sales
    campaign-leads
    campaigns-by-close-revenue
-   ecommerce-statistics
    forecast
    leads-list
    opportunities-by-lead-source
