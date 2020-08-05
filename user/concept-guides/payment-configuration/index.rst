@@ -54,6 +54,10 @@ OroCommerce works with the following payment methods out-of-the-box:
 
   Apruve is a B2B credit management service that provides a credit line for your buyers. This integration requires registration with the Apruve service, and obtaining the required credentials for the integration with OroCommerce from the Apruve support team.
 
+* :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
+
+  Ingenico ePayments' global payment platform extension for OroCommerce enables sellers to improve their payments experience by accepting online payments from customers in the OroCommerce storefront and manage all transactions in the OroCommerce back office.
+
 .. hint:: Check out |OroCommerce's Extension Marketplace| to download other payment extensions that you can pair with your OroCommerce applications.
 
 Payment Rules
