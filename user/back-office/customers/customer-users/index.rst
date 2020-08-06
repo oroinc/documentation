@@ -63,7 +63,7 @@ To create a new customer user:
 
 #. Select the **Generate Password** and **Send Welcome Email** check boxes.
 
-#. Select the website the customer user will be redirected to upon the login. See :ref:`Managing Websites <user-guide--system-websites>` for more information.
+#. Select the website of customer user registration. While the customer user may have access to other websites within the same organization, the email notifications concerning their user account will point to this website. See :ref:`Managing Websites <user-guide--system-websites>` for more information.
 
 #. Select a **Preferred Localization** for the customer user. This field is displayed if more than one :ref:`localization <sys--config--sysconfig--general-setup--localization>` is enabled for any of the websites of the current organization. If you change the website for the customer user, you will need to select a new preferred localization.
 

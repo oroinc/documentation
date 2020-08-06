@@ -14,7 +14,7 @@ This topic explains how to connect OroCloud VPN on various operating systems.
 
 .. note:: If you are using different client software versions, ensure that you have OpenVPN version 2.4 or newer. Your OpenVPN configuration file (.ovpn) is sent to your e-mail. Save it in a secure place.
 
-Username and password should be obtained using ORO ID Portal.
+Username and password should be obtained using ORO ID Portal. Please be aware than *username* is not an email address.
 
 MacOS X
 -------
