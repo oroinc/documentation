@@ -715,6 +715,10 @@ Links (User)
 
    <a href="https://oauth.net/2/grant-types/password/" target="_blank">Password</a>
 
+.. |Authorization Code Grant| raw:: html
+
+   <a href="https://oauth.net/2/grant-types/authorization-code/" target="_blank">Authorization Code</a>
+
 .. |Symfony Expression Language| raw:: html
 
    <a href="https://symfony.com/doc/4.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
