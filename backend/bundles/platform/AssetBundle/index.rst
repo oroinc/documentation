@@ -207,6 +207,11 @@ It is a useful option for development purposes that enables you to assemble scri
 
 Turns off SourceMaps building.
 
+`--analyze`
+""""""""""""""""""
+
+Turns on BundleAnalyzerPlugin for the build.
+
 `--hot`
 """""""
 
