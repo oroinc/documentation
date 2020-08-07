@@ -124,7 +124,7 @@ theme from the parent one. We just change settings and add additional CSS(SASS).
 Override and Disable SCSS Files
 -------------------------------
 
-To remove or override ``scss/css``, create the ``Resources/views/layouts/{theme_name}/assets.yml`` file in your
+To remove or override ``scss/css``, create the ``Resources/views/layouts/{theme_name}/config/assets.yml`` file in your
 theme and write the following config in it:
 
 .. code:: yaml
