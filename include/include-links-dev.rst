@@ -3667,6 +3667,10 @@ Links (Dev)
 
    <a href="https://github.com/thephpleague/oauth2-server" target="_blank">thephpleague/oauth2-server</a>
 
+.. |OAuth 2.0 Server Authorization Code Grant| raw:: html
+
+   <a href="https://oauth2.thephpleague.com/authorization-server/auth-code-grant/" target="_blank">OAuth 2.0 Server Client Credentials Grant</a>
+
 .. |OAuth 2.0 Server Client Credentials Grant| raw:: html
 
    <a href="https://oauth2.thephpleague.com/authorization-server/client-credentials-grant/" target="_blank">OAuth 2.0 Server Client Credentials Grant</a>
@@ -3678,6 +3682,10 @@ Links (Dev)
 .. |Generating public and private keys| raw:: html
 
    <a href="https://oauth2.thephpleague.com/installation/#generating-public-and-private-keys" target="_blank">Generating public and private keys</a>
+
+.. |OAuth 2.0 Authorization Code Grant| raw:: html
+
+   <a href="https://oauth.net/2/grant-types/authorization-code/" target="_blank">OAuth 2.0 Client Credentials Grant</a>
 
 .. |OAuth 2.0 Client Credentials Grant| raw:: html
 

@@ -11,7 +11,10 @@ OroOAuth2ServerBundle
 OroOAuth2ServerBundle provides OAuth 2.0 authorization and resource server capabilities implemented
 on top of |thephpleague/oauth2-server| library.
 
-Currently, Client Credentials and Password grants are implemented.
+Currently, Authorization Code, Client Credentials and Password grants are implemented.
+
+See |OAuth 2.0 Server Authorization Code Grant| and |OAuth 2.0 Authorization Code Grant| for details of
+Client Credentials grant.
 
 See |OAuth 2.0 Server Client Credentials Grant| and |OAuth 2.0 Client Credentials Grant| for details of the
 Client Credentials grant.
@@ -37,8 +40,14 @@ The default configuration of OroOAuth2ServerBundle is illustrated below:
             # The lifetime in seconds of the refresh token.
             refresh_token_lifetime: 18144000 # 30 days
 
-            # Determines if refresh token grant is enabled.
+            # The lifetime in seconds of the authorization code.
+            auth_code_lifetime: 600 # 10 minutes
+
+            # Determines if the refresh token grant is enabled.
             enable_refresh_token: true
+
+            # Determines if the authorization code grant is enabled.
+            enable_auth_code: true
 
             # The full path to the private key file that is used to sign JWT tokens.
             private_key: '%kernel.project_dir%/var/oauth_private.key'
