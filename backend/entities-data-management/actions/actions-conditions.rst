@@ -10,7 +10,7 @@ Actions
 
 Run Action Group `@run_action_group`.
 
-**Class:** Oro\Bundle\ActionBundle\Action\RunActionGroup
+**Class:** Oro\\Bundle\\ActionBundle\\Action\\RunActionGroup
 
 **Alias:** run_action_group
 
@@ -25,7 +25,7 @@ Run Action Group `@run_action_group`.
 
 **Configuration Example**
 
-.. code::
+.. code-block:: none
 
     - '@run_action_group':
         result: $.result
@@ -47,7 +47,7 @@ E.g., `$.entity_class` and `$.entity_id` respectively to their names. See the :r
 Format Name
 ^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ActionBundle\Action\FormatName
+**Class:** Oro\\Bundle\\ActionBundle\\Action\FormatName
 
 **Alias:** format_name
 
@@ -60,7 +60,7 @@ Format Name
 
 **Configuration Example**
 
-.. code::
+.. code-block:: none
 
     - '@format_name':
         attribute: $.result.formattedCustomerName
@@ -69,7 +69,7 @@ Format Name
 Create Date
 ^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ActionBundle\Action\CreateDate
+**Class:** Oro\\Bundle\\ActionBundle\\Action\\CreateDate
 
 **Alias:** create_date
 
@@ -82,14 +82,14 @@ Create Date
 
 **Configuration Example**
 
-.. code::
+.. code-block:: none
 
     - '@create_date':
         attribute: $sales_funnel_start_date
 
 OR
 
-.. code::
+.. code-block:: none
 
     - '@create_date':
         conditions:
@@ -101,20 +101,20 @@ OR
 Copy Values
 ^^^^^^^^^^^
 
-**Class:** Oro\Component\Action\Action\CopyValues
+**Class:** Oro\\Component\\Action\\Action\\CopyValues
 
 **Alias:** copy_values
 
 **Description:**  Copies the values from a context or an object to the provided attribute and behaves the same as the `array_merge` PHP function.
 
-.. code::
+.. code-block:: none
 
    - '@copy_values': [$.to, $.from1, $.from2, {key: 'value'}]
 
 Resolve Destination Page
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ActionBundle\Action\ResolveDestinationPage
+**Class:** Oro\\Bundle\\ActionBundle\\Action\\ResolveDestinationPage
 
 **Alias:** resolve_destination_page
 
@@ -128,7 +128,7 @@ Resolve Destination Page
 
 **Configuration Example**
 
-.. code::
+.. code-block:: none
 
     - '@resolve_destination_page': view
 
@@ -163,9 +163,9 @@ Allowed values for the `destination` parameter:
 Duplicate
 ^^^^^^^^^
 
-**Class:** Oro\Bundle\ActionBundle\Action\DuplicateEntity
+**Class:** Oro\\Bundle\\ActionBundle\\Action\\DuplicateEntity
 
-**Alias:** dupliсate, duplicate_entity
+**Alias:** duplicate, duplicate_entity
 
 **Description:** Duplicate entity object
 
@@ -185,7 +185,7 @@ For more information, please refer to the |DeepCopy| documentation.
 
 **Configuration Example**
 
-.. code::
+.. code-block:: none
 
     - '@duplicate':
         target: $.entity
@@ -210,7 +210,7 @@ The conditions are based on the |ConfigExpression| component.
 
 To add custom condition, simply add a service to DIC with the "oro_action.condition" tag, for example:
 
-.. code::
+.. code-block:: none
 
     services:
         Oro\Bundle\ActionBundle\ConfigExpression\Blank:

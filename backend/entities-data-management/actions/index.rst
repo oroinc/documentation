@@ -177,7 +177,7 @@ Yes. There are two ways to do that:
 
 `datagrids.yml`:
 
-.. code::
+.. code-block:: none
 
     datagrids:
         your_datagrid_name:
@@ -189,7 +189,7 @@ Yes. There are two ways to do that:
 
 2. Disable the operation for custom datagrid using the `exclude_datagrids` option in operation definition.So you can specify the name of the datagrid that should be excluded from the *operation* matching. If your operation is defined by another bundle, you can use the *merge* behavior of operation configuration and just add anadditional property value under your bundle configuration. For example, the operation that should not be displayed for the `product_view` datagrid is the default `DELETE` operation from `OroActionBundle`. You can exclude your grid from matching with the next addition to `<YourBundle>/Resources/config/oro/actions.yml`
 
-.. code::
+.. code-block:: none
 
     operations:
         DELETE:
@@ -203,7 +203,7 @@ How can I modify CRUD default operation for my Bundle?
 
 If you need to customize a default or any other operation, you should change its `label` as follows:
  
-.. code::
+.. code-block:: none
 
     operations:
         my_special_entity_custom_edit:

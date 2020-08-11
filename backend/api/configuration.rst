@@ -7,7 +7,7 @@ The configuration declares all aspects related to a specific entity. The configu
 
 All entities, except custom entities, dictionaries, and enumerations are inaccessible via the API. To make an entity available via the data, enable it directly. For example, to make the ``Acme\Bundle\ProductBundle\Product`` entity available via the API, use the following configuration:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -24,19 +24,19 @@ Configuration Structure
 
 To get the overall configuration structure, execute the following command:
 
-.. code:: bash
+.. code-block:: bash
 
     php bin/console oro:api:config:dump-reference
 
 By default this command shows configuration of nesting entities. To simplify the output you can use the ``--max-nesting-level`` option, e.g.
 
-.. code:: bash
+.. code-block:: bash
 
     php bin/console oro:api:config:dump-reference --max-nesting-level=0
 
 The default nesting level is ``3`` . It is specified in the configuration of ApiBundle via the ``config_max_nesting_level`` parameter. If needed, change this value:
 
-.. code:: yaml
+.. code-block:: yaml
 
     # config/config.yml
 
@@ -50,7 +50,7 @@ The first level sections of configuration are:
 
 The top level configuration example:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entity_aliases:
@@ -85,7 +85,7 @@ The ``exclude`` configuration option describes whether an entity or its fields s
 
 Example:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -100,7 +100,7 @@ Additionally, use the ``exclude`` option to indicate whether to disable filterin
 
 Example:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -116,7 +116,7 @@ Example:
 
 Please note that the ``exclude`` option is applicable only for the API. To exclude an entity or its fields globally, use ``Resources/config/oro/entity.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     oro_entity:
         exclusions:
@@ -142,7 +142,7 @@ Please see the :ref:`Entity aliases documentation <entity-aliases>` for more det
 
 **Example:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entity_aliases:
@@ -154,7 +154,7 @@ To completely replace an ORM entity with a model in the API, use the ``override_
 
 **Example:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entity_aliases:
@@ -169,7 +169,7 @@ To completely replace an ORM entity with a model in the API, use the ``override_
 
 **Example of correct configuration:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -182,7 +182,7 @@ To completely replace an ORM entity with a model in the API, use the ``override_
 
 **Example of incorrect configuration:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -250,7 +250,7 @@ By default, the following form options are set:
 
 **Example:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -304,7 +304,7 @@ This section describes configuration of entity fields.
 
 **Examples:**
 
-.. code:: yaml
+.. code-block:: yaml
 
    api:
     entities:
@@ -412,7 +412,7 @@ This section describes fields by which the result data can be filtered. It conta
 
 **Example:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -463,7 +463,7 @@ This section describes fields by which the result data can be sorted. It contain
 
 **Example:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -545,7 +545,7 @@ The following are examples of the ``actions`` section configuration.
 
 Disable all action for an entity:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -555,7 +555,7 @@ Disable all action for an entity:
 
 Disable the ``delete`` action for an entity:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -566,7 +566,7 @@ Disable the ``delete`` action for an entity:
 
 You can use a short syntax:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -576,7 +576,7 @@ You can use a short syntax:
 
 Set a custom ACL resource for the ``get_list`` action:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -587,7 +587,7 @@ Set a custom ACL resource for the ``get_list`` action:
 
 Turn off the access checks for the ``get`` action:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -598,7 +598,7 @@ Turn off the access checks for the ``get`` action:
 
 Add an additional status code for the ``delete`` action:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -610,7 +610,7 @@ Add an additional status code for the ``delete`` action:
 
 or
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -623,7 +623,7 @@ or
 
 Remove existing status code for the ``delete`` action:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -635,7 +635,7 @@ Remove existing status code for the ``delete`` action:
 
 or
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -648,7 +648,7 @@ or
 
 Exclude a field for the ``update`` action:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -686,7 +686,7 @@ The ``subresources`` configuration section enables you to provide options for su
 
 **Example:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:

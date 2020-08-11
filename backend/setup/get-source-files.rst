@@ -24,7 +24,7 @@ Method 1: Create a Project with Composer
 
 2. Create your new Oro application project with Composer by running one of commands below, depending on the base application you want to install:
 
-   .. code:: bash
+   .. code-block:: bash
 
       # OroCommerce Community Edition
       composer create-project oro/commerce-crm-application my_project_name --repository=https://satis.oroinc.com

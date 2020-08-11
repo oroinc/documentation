@@ -48,13 +48,13 @@ To start working with this development stack, you need to install locally:
 1. For better performance, it is also recommended to install a symfony
    flex composer plugin globally:
 
-   .. code:: bash
+   .. code-block:: bash
 
       composer global require symfony/flex
 
 2. To work with enterprise applications and not reach composer API rate limit, configure |GitHub OAuth token|:
 
-   .. code:: bash
+   .. code-block:: bash
 
       composer config -g github-oauth.github.com <oauthtoken>
 
@@ -67,33 +67,33 @@ Install the Application
 
 2. Run application services
 
-   .. code:: bash
+   .. code-block:: bash
 
       docker-compose up -d
 
    .. note::
         On Linux, it may not work if you use Docker as a root user. In this case, consider adding your user to the “docker” group with:
 
-      .. code:: bash
+      .. code-block:: bash
 
          sudo usermod -aG docker your-user
 
 3. Install application dependencies
 
-   .. code:: bash
+   .. code-block:: bash
 
       symfony composer install -n
 
 
 4. If you are using an Enterprise edition application, :ref:`update the parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
 
-   .. code:: bash
+   .. code-block:: bash
 
       composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
 
 5. Install Oro application
 
-   .. code:: bash
+   .. code-block:: bash
 
       symfony console oro:install -vvv --sample-data=y --application-url=https://127.0.0.1:8000 --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --organization-name=Oro --timeout=0 --symlink --env=prod -n
 
@@ -110,7 +110,7 @@ Postgres, ElasticSearch, RabbitMQ, and Redis services.
 To enable them, you first have to update configuration in
 ``config/parameters.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
    parameters:
        database_driver: pdo_pgsql
@@ -128,7 +128,7 @@ To enable them, you first have to update configuration in
 To automatically update ``parameters.yml`` file from CLI, you can also
 use the ``composer set-parameters`` command:
 
-.. code:: bash
+.. code-block:: bash
 
    composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
 
@@ -141,7 +141,7 @@ It is not recommended to store sessions on the same redis server as the
 cache, but for testing purpose, you can enable it with the following
 configuration in ``config/parameters.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
    parameters:
        session_handler:   'snc_redis.session.handler'
@@ -169,35 +169,35 @@ Compose configuration locally. By default, the file is in ``.gitignore``.
 Run Application Services
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    docker-compose up -d
 
 Check Services Logs
 ^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    docker-compose logs -f
 
 CheckApplication Services Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    docker-compose ps
 
 Stop Application Services (No Data Loss)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    docker-compose stop
 
 Destroy Application Services with all Volumes (Data Loss)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    docker-compose down -v
 
@@ -217,21 +217,21 @@ using proper PHP version and expose environment variables from the application s
 Start the Symfony Server
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    symfony server:start -d
 
 Open the Application in a Browser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    symfony open:local
 
 Check Application Logs
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    symfony server:log
 
@@ -241,7 +241,7 @@ Switch PHP version
 You can have multiple versions of PHP versions locally. To use a
 specific PHP version for the project, go to the project root folder and run:
 
-.. code:: bash
+.. code-block:: bash
 
    echo 7.3 > .php-version
 
@@ -251,27 +251,27 @@ console commands wrapped with ``symfony``.
 Run Message Consumer in the Background
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    symfony run -d php bin/console oro:message-queue:consume -vv
 
 You can also ask symfony to restart the message consumer when changes happen in ``src/`` folder:
 
-.. code:: bash
+.. code-block:: bash
 
    symfony run -d --watch=src php bin/console oro:message-queue:consume -vv
 
 Run Symfony Server in a ``Prod`` Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    symfony server:start -d --passthru=index.php
 
 Check Symfony Server status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    symfony server:status
 

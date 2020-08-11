@@ -44,7 +44,7 @@ Additional notes:
 
 An example of registration of such processors:
 
-.. code:: yaml
+.. code-block:: yaml
 
     services:
         oro_customer.api.customer_user.set_website:

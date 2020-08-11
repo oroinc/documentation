@@ -12,7 +12,7 @@ The following entities and their corresponding storefront pages have been extend
 
 In the management console, for extended entity (e.g., Product, Category, LandingPage, or ContentNode) view and edit pages, the new SEO section with the SEO fields title, description and keywords was added. These SEO options apply to the currently viewed entity and may be modified for all locales.
 
-On the front store, the SEO fields with their values in the HTML of website pages for the search engines to pick them up.
+On the storefront, the SEO fields with their values in the HTML of website pages for the search engines to pick them up.
 
 The Product, Category, LandingPage and ContentNode entities are extended form extensions with three new fields that are stored as collections of LocalizedFallbackValue.
 Therefore these new fields added through extend extension are many-to-many relations between the specified entities and LocalizedFallbackValue entity.

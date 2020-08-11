@@ -15,7 +15,7 @@ OroPlatform collects documentation for API resources from several sources:
 
 The source with the highest priority is the configuration file. The documentation provided there overrides all other sources. However, it is a YAML file and therefore, it is not fully suitable for big multi-line texts. The more appropriate place for the documentation is a separate |Markdown1|  file. To use a custom markdown file, provide a link to it in the configuration file, e.g.:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -24,7 +24,7 @@ The source with the highest priority is the configuration file. The documentatio
 
 If the documentation was not found neither the configuration file nor in the Markdown documentation file, OroPlatform tries to use system-wide descriptions of entities and fields. These descriptions are usually provided in translation files. This is the best way to document fields because the descriptions can be used in other places, not only in API. Here is an example of a translation file that contains descriptions for entities and fields:
 
-.. code:: yaml
+.. code-block:: yaml
 
     # Acme/Bundle/AppBundle/Resources/translations/messages.en.yml
     oro:
@@ -59,7 +59,7 @@ The only requirement for such document is it should be written in a particular f
 
 Each resource documentation should starts from '#' (h1) header that contains Fully-Qualified Class Name (FQCN) of the resource, e.g.:
 
-.. code::
+.. code-block:: none
 
     # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
 
@@ -67,7 +67,7 @@ As already mentioned above, a single documentation file may contain documentatio
 
 Start the next level with the ``##`` (h2) header and use it to announce one of the documentation sections, e.g.:
 
-.. code::
+.. code-block:: none
 
     # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
 
@@ -103,7 +103,7 @@ The action names in the **FIELDS** section can be combined using comma, e.g.: "c
 
 Example:
 
-.. code::
+.. code-block:: none
 
     # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
 
@@ -156,7 +156,7 @@ Use the ``{@inheritdoc}`` placeholder to get the common documentation for an act
 
 Example:
 
-.. code::
+.. code-block:: none
 
     # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
 
@@ -191,7 +191,7 @@ For example, to add a text for the |JSON:API| request type for all requests excl
 
 Example:
 
-.. code::
+.. code-block:: none
 
     # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
 

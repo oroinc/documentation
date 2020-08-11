@@ -68,7 +68,7 @@ For Nginx
 
 1. To enable ``gzip`` compression, add the following into your ``nginx.conf`` or website configuration file:
 
-.. code::
+.. code-block:: none
 
    gzip on;
    gzip_buffers 16 8k;
@@ -88,7 +88,7 @@ For Nginx
 
 To enable ``HTML compression``, add the following lines into your ``nginx.conf`` or website configuration file in sections ``server`` or ``http``:
 
-.. code::
+.. code-block:: none
 
     pagespeed on;
     pagespeed FileCachePath "/var/cache/ngx_pagespeed";
@@ -99,7 +99,7 @@ To enable ``HTML compression``, add the following lines into your ``nginx.conf``
 
 3. To enable caching, insert the following in the server section of your website configuration file:
 
-.. code::
+.. code-block:: none
 
    server {
         # One week for javascript and css
@@ -127,7 +127,7 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
 
 1. To enable compression, ensure that ``mod_deflate`` module is loaded in your Apache config file as illustrated below:
 
-   .. code::
+   .. code-block:: none
 
       LoadModule deflate_module libexec/apache2/mod_deflate.so
 
@@ -135,7 +135,7 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
 
    The out of the box configuration for the compression in the ``.htaccess`` file is following:
 
-   .. code::
+   .. code-block:: none
 
       <IfModule mod_deflate.c> 
           AddOutputFilterByType DEFLATE text/html text/plain 
@@ -152,7 +152,7 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
 2.  To install ``Pagespeed`` module for Apache, follow the guidance on |installing from Apache-only packages|.
     To enable ``HTML compression``, ensure that these lines are uncommetned in ``pagespeed.conf``:
 
-    .. code::
+    .. code-block:: none
 
         ModPagespeed On
         ModPagespeedFileCachePath "/var/cache/mod_pagespeed/"
@@ -161,13 +161,13 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
 
 3. To enable caching, ensure that ``mod_headers`` is loaded in your Apache config file as shown below:
 
-   .. code::
+   .. code-block:: none
 
       LoadModule headers_module libexec/apache2/mod_headers.so
 
    The out of the box configuration for caching in the ``.htaccess`` file is following:
 
-   .. code:: xml
+   .. code-block::xml
 
       <IfModule mod_headers.c>
            # One week for css and js 
@@ -213,7 +213,7 @@ To optimize Redis, try the following configurations for performance optimization
 
 * Limits
 
-  .. code:: bash
+  .. code-block:: bash
 
      maxclients 100000
      maxmemory 512mb
@@ -222,7 +222,7 @@ To optimize Redis, try the following configurations for performance optimization
 
 * Append only mode
 
-  .. code:: bash
+  .. code-block:: bash
 
      appendonly no
      appendfsync everysec
@@ -232,14 +232,14 @@ To optimize Redis, try the following configurations for performance optimization
 
 * Slow log
 
-  .. code:: bash
+  .. code-block:: bash
 
      slowlog-log-slower-than 10000
      slowlog-max-len 1024
 
 * Advanced config
 
-  .. code:: bash
+  .. code-block:: bash
 
      hash-max-ziplist-entries 512
      hash-max-ziplist-value 64

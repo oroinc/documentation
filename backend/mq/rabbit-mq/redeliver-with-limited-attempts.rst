@@ -22,7 +22,7 @@ Create oro.unprocessed Queue
 
 Create an ``oro.unprocessed`` queue that should act as a storage with messages that failed more than the maximum available attempts.
 
-.. code::
+.. code-block:: none
 
     rabbitmqadmin declare queue --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
     name="oro.unprocessed" durable=true arguments='{"x-max-priority": 4}'
@@ -32,7 +32,7 @@ Re-Declare oro.default.delayed Exchange
 
 Re-declare the ``oro.default.delayed`` exchange to make sure that it is declared and does not have any additional bindings.
 
-.. code::
+.. code-block:: none
 
     rabbitmqadmin delete exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
     name="oro.default.delayed"
@@ -46,7 +46,7 @@ Declare oro.redelivery.control Exchange
 
 After a delay timeout, when re-delivered messages pass to ``oro.default.delayed`` exchange, the exchange is routed to the ``oro.redelivery.control`` that checks the number of redelivered attempts.
 
-.. code::
+.. code-block:: none
 
     rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
     name="oro.redelivery.control" type="headers" durable=true \
@@ -60,7 +60,7 @@ Configure Count of Re-Delivery Attempts
 
 Set the maximum number of message re-delivery attempts. There are 5 in the example below. 
 
-.. code::
+.. code-block:: none
 
     rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
     source="oro.redelivery.control" destination="oro.unprocessed" destination_type="queue" \
@@ -80,13 +80,13 @@ If the current configuration was applied to an application that had been in prod
 some of messages can contain headers with ``oro-redeliver-count`` more that **5**.
 In this case, manually check the message redelivery count:
 
-.. code::
+.. code-block:: none
 
     rabbitmqadmin get queue="oro.default" --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST
 
 In addition, declare an additional binding for the ``oro.redelivery.control`` exchange. For example, if ``oro-redeliver-count`` equals **153**, then:
 
-.. code::
+.. code-block:: none
 
     rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
     source="oro.redelivery.control" destination="oro.unprocessed" destination_type=queue \
@@ -94,7 +94,7 @@ In addition, declare an additional binding for the ``oro.redelivery.control`` ex
 
 Once the failed message is caught, remove additional binding:
 
-.. code::
+.. code-block:: none
 
     # get properties key for additional binding
     rabbitmqadmin list bindings --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \

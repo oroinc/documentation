@@ -18,7 +18,7 @@ The **oro_html_sanitize** filter removes HTML elements except those that are all
 
 **Example**
 
-.. code::
+.. code-block:: none
 
    {% set data %}
        <h1>Header</h1>

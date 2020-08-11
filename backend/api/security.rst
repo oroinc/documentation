@@ -9,7 +9,7 @@ However, when API calls are utilized in AJAX requests from the UI, the user's to
 
 For example:
 
-.. code:: yaml
+.. code-block:: yaml
 
     security:
         firewalls:
