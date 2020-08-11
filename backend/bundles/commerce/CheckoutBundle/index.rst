@@ -67,7 +67,7 @@ Filters
 - ``oro_format_name`` --- returns a text representation of the given object
 - ``oro_format_date`` --- returns a text representation of the date according to locale settings
 - ``oro_format_address`` --- formats address according to locale settings
-- ``oro_format_short_product_unit_value`` --- formats product unit value based on the given product unit. For more examples, see |Product Unit Formatting|
+- ``oro_format_short_product_unit_value`` --- formats product unit value based on the given product unit. For more examples, see :ref:`Product Unit Formatting <bundle-docs-commerce-product-bundle-formatting>`
 - ``oro_format_price`` --- formats currency number according to locale settings
 - ``oro_format_currency`` --- formats currency number according to localized format
 

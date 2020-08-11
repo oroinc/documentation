@@ -72,7 +72,7 @@ DBAL Transport Options and Limitations
 Options
 ~~~~~~~
 
-.. code:: yaml
+.. code-block:: yaml
 
     oro_message_queue:
       transport:
@@ -130,7 +130,7 @@ The config settings for the |default RabbitMQ Access Control settings| (a user n
 guest with the default password of guest, granted full access to the /
 virtual host) are the following:
 
-.. code:: yaml
+.. code-block:: yaml
 
     # config/config.yml
 
@@ -146,7 +146,7 @@ virtual host) are the following:
 
 We can also move the specified options to the ``parameters.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     # config/config.yml
 
@@ -156,7 +156,7 @@ We can also move the specified options to the ``parameters.yml``:
             '%message_queue_transport%': '%message_queue_transport_config%'
         client: ~
 
-.. code:: yaml
+.. code-block:: yaml
 
     # config/parameters.yml
 

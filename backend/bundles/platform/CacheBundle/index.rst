@@ -78,7 +78,7 @@ To implement 3rd approach for your configuration, you need to take the following
 
 1. Create PHP class that defines the schema of your configuration and validation and merging rules for it. E.g.:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -105,7 +105,7 @@ To implement 3rd approach for your configuration, you need to take the following
 
 2. Create the configuration provider PHP class that you will use to get the configuration data. E.g.:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -156,7 +156,7 @@ To implement 3rd approach for your configuration, you need to take the following
 3. Register the created configuration provider as a service using ``oro.static_config_provider.abstract`` service
    as the parent one. E.g.:
 
-.. code:: yaml
+.. code-block:: yaml
 
     services:
         acme.my_configuration_provider:
@@ -175,7 +175,7 @@ In this case a default warmer will not be registered for your configuration prov
 
 An example of a custom warmer:
 
-.. code:: yaml
+.. code-block:: yaml
 
     services:
         acme.my_configuration_provider.warmer:
@@ -190,7 +190,7 @@ If your Application cache depends on your configuration, use ``isCacheFresh($tim
 methods of the configuration provider to check if the Application cache needs to be rebuilt.
 Here is an example how to use these methods:
 
-.. code:: php
+.. code-block:: php
 
     private function ensureConfigLoaded()
     {

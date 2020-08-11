@@ -8,7 +8,7 @@ should not use some authorization listeners, for example WSSE and OAuth authoriz
 
 To be able to configure listeners for disabled API feature, the following configuration can be used:
 
-.. code:: yaml
+.. code-block:: yaml
 
     oro_api:
         api_firewalls:

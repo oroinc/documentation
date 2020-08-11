@@ -21,7 +21,7 @@ and optionally the ``routeName`` tag attribute can be used to specify the route 
 
 An example of resolvers registration in ``services_api.yml`` file:
 
-.. code:: yaml
+.. code-block:: yaml
 
     services:
         oro_cms.api.resource_type_resolver.landing_page:

@@ -11,7 +11,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 
 1. First, register the package. Use `Resources/config/oro/app.yml` in your bundle or `config/config.yml`:
 
-   .. code::
+   .. code-block:: none
 
       framework:
           assets:

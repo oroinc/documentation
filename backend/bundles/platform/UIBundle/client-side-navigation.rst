@@ -9,7 +9,7 @@ To get the page ready for the client side navigation, follow the steps below:
 
 - Add an additional check in main layout template:
 
-.. code::
+.. code-block:: none
 
     {% if not oro_is_hash_navigation() %}
     <!DOCTYPE html>
@@ -33,7 +33,7 @@ where:
 
 - To exclude links from processing with client side navigation (like windows open buttons, delete links), add an additional css class "no-hash" to the tag, e.g.
 
-.. code::
+.. code-block:: none
 
    <a href="page-url" class="no-hash">...</a>
 

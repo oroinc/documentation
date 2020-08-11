@@ -16,7 +16,7 @@ Every time you want to request some custom information from the search index you
 If you want to create a repository then you should create new class extended from the appropriate search repository class (``Oro\Bundle\SearchBundle\Query\SearchRepository`` for standard index type or ``Oro\Bundle\WebsiteSearchBundle\Query\WebsiteSearchRepository`` for website index type), declare it as a service, add custom methods and inject it into required business logic service. Search repositories work with the high-level search query object representations. You can optinally pass entity name as well - in this case queries will be by default executed only for the specific entity.
 Here is example of search repository for standard index type and its definition:
 
-.. code:: php
+.. code-block:: php
 
    <?php
 
@@ -52,7 +52,7 @@ Here is example of search repository for standard index type and its definition:
        }
    }
 
-.. code:: yaml
+.. code-block:: yaml
 
    services:
        oro_user.search.repository.user:
@@ -65,7 +65,7 @@ Here is example of search repository for standard index type and its definition:
 
 And here is example of search repository for website index type and its definition:
 
-.. code:: php
+.. code-block:: php
 
    <?php
 
@@ -97,7 +97,7 @@ And here is example of search repository for website index type and its definiti
        }
    }
 
-.. code:: yaml
+.. code-block:: yaml
 
    oro_product.website_search.repository.product:
        parent: oro_website_search.repository.abstract

@@ -8,7 +8,7 @@ oro:debug:action
 
 This command displays current actions for an application.
 
-.. code::
+.. code-block:: none
 
    oro:debug:action [<name>]
    oro:debug:action
@@ -27,7 +27,7 @@ oro:debug:condition
 
 This command displays current conditions for an application.
 
-.. code::
+.. code-block:: none
 
    oro:debug:condition [<name>]
 

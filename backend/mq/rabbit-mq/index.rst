@@ -165,7 +165,7 @@ Usage is similar to one described in the message queue component. Here,
 we will show you how to get amqp connection. We are assuming the
 RabbitMQ is used as a broker with minimum configuration.
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -183,7 +183,7 @@ In order to use the component with the symfony application, you first have to
 register the amqp transport factory (). And tell the message queue
 bundle to use it.
 
-.. code:: php
+.. code-block:: php
 
     <?php
     namespace Oro\Bundle\AmqpMessageQueueBundle;
@@ -207,7 +207,7 @@ bundle to use it.
 
 The config:
 
-.. code:: yaml
+.. code-block:: yaml
 
     # config/config.yml
     oro_message_queue:

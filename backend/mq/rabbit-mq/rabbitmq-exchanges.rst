@@ -22,7 +22,7 @@ A **fanout exchange** routes *messages* to all of the **queues** that are bound 
 
 *Example:*
 
-.. code::
+.. code-block:: none
 
     # declare `oro.default` exchange
     rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
@@ -45,7 +45,7 @@ A **direct exchange** delivers *messages* to **queues** based on the message **r
 
 *Example:*
 
-.. code::
+.. code-block:: none
 
     # declare `oro.alternate` exchange
     rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
@@ -81,7 +81,7 @@ A **topic exchange** routes *messages* to one or many **queues** based on the ma
 
 *Example:*
 
-.. code::
+.. code-block:: none
 
     # declare `oro.alternate` exchange
     rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
@@ -115,7 +115,7 @@ A **headers exchange** is designed for routing on multiple attributes that are m
 
 *Example:*
 
-.. code::
+.. code-block:: none
 
     # declare `oro.alternate` exchange
     rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
@@ -154,7 +154,7 @@ Delayed Message Exchange is a RabbitMQ community plugin.
 
 *Example:*
 
-.. code::
+.. code-block:: none
 
     # declare `oro.default.delayed` exchange
     rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
@@ -169,7 +169,7 @@ Delayed Message Exchange is a RabbitMQ community plugin.
     rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
     source="oro.default.delayed" destination="oro.default" destination_type=queue
 
-.. code::
+.. code-block:: none
 
     $message = new Message();
     $message->setDelay(30);
@@ -185,7 +185,7 @@ It can be used as an alternative to Delayed Message Exchange which comes out-of-
 
 *Example:*
 
-.. code::
+.. code-block:: none
 
     # declare `oro.dlx.default` exchange
     rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \

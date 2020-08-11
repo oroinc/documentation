@@ -168,7 +168,7 @@ Each of the supported index types uses its own Elasticsearch index.
 
 Here is example of the document from the standard index type under oro_user entity alias.
 
-.. code:: yaml
+.. code-block:: yaml
 
    {
    "username":"admin",
@@ -192,7 +192,7 @@ Pay attention to the following facts:
 
 Here is example of the document from the website index type under oro_product_WEBSITE_ID (WEBSITE_ID = 1) entity alias.
 
-.. code:: yaml
+.. code-block:: none
 
    {
    "assigned_to_variant_31":1,

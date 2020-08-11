@@ -66,7 +66,7 @@ methods of this class:
 
 Example of a functional test for Batch API:
 
-.. code:: php
+.. code-block:: php
 
     public function testCreateEntities()
     {
@@ -110,7 +110,7 @@ Load Fixtures
 
 You can use :ref:`Doctrine and Alice fixtures <automated-test>`:
 
-.. code:: php
+.. code-block:: php
 
     class InventoryLevelApiTest extends RestJsonApiTestCase
     {
@@ -125,7 +125,7 @@ You can use :ref:`Doctrine and Alice fixtures <automated-test>`:
 
 Fixture file:
 
-.. code:: yaml
+.. code-block:: yaml
 
     dependencies:
       - Oro\Bundle\WarehouseBundle\Tests\Functional\DataFixtures\LoadWarehouseAndInventoryLevels
@@ -171,7 +171,7 @@ Assert the expected response by using YAML templates.
 
 A YAML template:
 
-.. code:: yaml
+.. code-block:: yaml
 
     data:
         -
@@ -195,7 +195,7 @@ A YAML template:
 
 In php test:
 
-.. code:: php
+.. code-block:: php
 
     public function testGetList()
     {
@@ -219,7 +219,7 @@ YAML Templates for a Request Body
 
 You can use an array with references for a request body:
 
-.. code:: php
+.. code-block:: php
 
     public function testUpdateEntity()
     {
@@ -239,7 +239,7 @@ You can use an array with references for a request body:
 
 Alternatively, you can store YAML in a ``.yml`` file:
 
-.. code:: php
+.. code-block:: php
 
     public function testCreateCustomer()
     {
@@ -256,7 +256,7 @@ Process Single Reference
 
 To process a single reference, e.g. to compare it with another value:
 
-.. code:: php
+.. code-block:: php
 
     self::processTemplateData('@inventory_level.product_unit_precision.product-1.liter->quantity')
 
@@ -269,7 +269,7 @@ Dump the Response into a YAML Template
 
 When you develop new tests for REST API, it may be convenient to dump responses into a YAML template:
 
-.. code:: php
+.. code-block:: php
 
     public function testGetList()
     {

@@ -24,7 +24,7 @@ Configure RabbitMQ Exchanges, Routing and Bindings
 
 To configure RabbitMQ exchanges and queues, create a simple bash script for queue declaration and binding:
 
-.. code::
+.. code-block:: none
 
    #!/bin/bash
 
@@ -103,7 +103,7 @@ Configure systemd to Consume Messages from Different Queues
 Create a template unit file to allow systemd to address multiple units from a single configuration file.
 For example, name it `oro-message-queue@.service` and put it into `/lib/systemd/system/` folder.
 
-.. code::
+.. code-block:: none
 
    # /lib/systemd/system/oro-message-queue@.service
 
@@ -128,7 +128,7 @@ Next, hook the specified unit into relevant places.
 
 To start a service during the system boot, use the enable command:
 
-.. code::
+.. code-block:: none
 
    sudo systemctl enable oro-message-queue@
 
@@ -136,7 +136,7 @@ This creates a symbolic link from the system's copy of the service file (usually
 
 Prepare the service to consume selected queue by starting oro-message-queue with a queue name provided after `@` symbol.
 
-.. code::
+.. code-block:: none
 
    sudo systemctl start oro-message-queue@default
    sudo systemctl start oro-message-queue@cron
@@ -144,7 +144,7 @@ Prepare the service to consume selected queue by starting oro-message-queue with
 
 To start more than one consumer for the selected queue, use the `queue_name:{1..num_of_process}` mask.
 
-.. code::
+.. code-block:: none
 
    sudo systemctl start oro-message-queue@search:{1..5}
 
@@ -157,13 +157,13 @@ Logging
 
 To see the list of all of the active units registered with the systemd, use the list-units command:
 
-.. code::
+.. code-block:: none
 
    sudo systemctl list-units --type=service | grep oro-message-queue
 
 Use the following command to retrieve the selected consumer unit output:
 
-.. code::
+.. code-block:: none
 
    sudo journalctl -f -u oro-message-queue@search:3.service
 

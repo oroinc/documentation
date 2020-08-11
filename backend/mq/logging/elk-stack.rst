@@ -33,7 +33,7 @@ Configure |Monolog Logstash formatter| in your ``config_%env%.yml`` file.
 
 Logs will be formatted like:
 
-.. code:: json
+.. code-block::json
 
    {
     "@timestamp":" 2019-04-30T08:49:54.289986+03:00",

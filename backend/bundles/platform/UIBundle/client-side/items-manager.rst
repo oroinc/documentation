@@ -75,7 +75,7 @@ Define html for `itemsManagerTable`:
 
 Define template for the item on the list:
 
-.. code::
+.. code-block:: none
 
     <script id="item-tmpl" type="text/template">
         <tr data-cid="<%= cid %>">
@@ -129,7 +129,7 @@ Apply `itemsManagerEditor` widget on `div#editor`:
 
 Apply `itemsManagerTable` widget to `tbody.item-container`:
 
-.. code::
+.. code-block:: none
 
     $('tbody.item-container').itemsManagerTable({
         itemTemplate: #('#item-tmpl').html(),

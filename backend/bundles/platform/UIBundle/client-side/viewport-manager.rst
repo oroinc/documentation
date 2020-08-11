@@ -105,7 +105,7 @@ Overriding via js Module Config for a Theme
 
 This config will has the highest priority
 
-.. code::
+.. code-block:: none
 
    {% import '@OroAsset/Asset.html.twig' as Asset %}
    {{ Asset.js_modules_config({
@@ -129,7 +129,7 @@ This config will has the highest priority
 
 To delete inherited screen type need set `skip: true` for a specific screen name
 
-.. code::
+.. code-block:: none
 
    {% import '@OroAsset/Asset.html.twig' as Asset %}
    {{ Asset.js_modules_config({

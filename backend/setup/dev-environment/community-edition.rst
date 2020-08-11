@@ -23,7 +23,7 @@ Enable Required Package Repositories
 
 Add the EPEL repository to your `yum` package manager by running:
 
-.. code:: bash
+.. code-block:: bash
 
    yum install -y epel-release
    yum update -y
@@ -34,7 +34,7 @@ Install Nginx, NodeJS, Git, Supervisor, and Wget
 
 Install most of the required Oro application environment components using the following commands:
 
-.. code:: bash
+.. code-block:: bash
 
    curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
    yum install -y nginx wget git nodejs supervisor yum-utils
@@ -45,7 +45,7 @@ Install MySQL
 
 As you need to install MySQL 5.7 to replace the default MariaDB replica in CentoOS, get the MySQL 5.7 package from the MySQL official repository:
 
-.. code:: bash
+.. code-block:: bash
 
    wget https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm && rpm -ivh mysql80-community-release-el7-1.noarch.rpm
    yum-config-manager --disable mysql80-community
@@ -53,7 +53,7 @@ As you need to install MySQL 5.7 to replace the default MariaDB replica in Cento
 
 Next, install MySQL 5.7 using the following command:
 
-.. code:: bash
+.. code-block:: bash
 
    yum install -y mysql-community-server
 
@@ -62,7 +62,7 @@ Install PHP
 
 As you need to install PHP 7.4 instead of CentOS 7 native PHP 5.6 version, get the PHP 7.4 packages from the REMI repository:
 
-.. code:: bash
+.. code-block:: bash
 
    wget http://rpms.remirepo.net/enterprise/remi-release-7.rpm && rpm -Uvh remi-release-7.rpm
    yum-config-manager --enable remi-php74
@@ -70,7 +70,7 @@ As you need to install PHP 7.4 instead of CentOS 7 native PHP 5.6 version, get t
 
 Next, install PHP 7.4 and the required dependencies using the following command:
 
-.. code:: bash
+.. code-block:: bash
 
    yum install -y php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-mbstring php-zip php-intl php-opcache
 
@@ -79,7 +79,7 @@ Install Composer
 
 Run the commands below, or use another Composer installation process described in the |official documentation|.
 
-.. code:: bash
+.. code-block:: bash
 
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
    php -r "unlink('composer-setup.php');"
@@ -90,14 +90,14 @@ Install Symfony Flex
 
 To improve composer operations performance install Symfony Flex globally:
 
-.. code:: bash
+.. code-block:: bash
 
    composer global require symfony/flex
 
 Enable Installed Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    systemctl start mysqld php-fpm nginx supervisord
    systemctl enable mysqld php-fpm nginx supervisord
@@ -118,7 +118,7 @@ For the production environment, it is strongly recommended to keep *SELinux* ena
 In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode.
 However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
 
-.. code:: bash
+.. code-block:: bash
 
    sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
    setenforce permissive
@@ -146,13 +146,13 @@ Change the Default MySQL Password for Root User
 
 To find the temporary mysql *root* user password that was created automatically, run:
 
-.. code:: bash
+.. code-block:: bash
 
    grep 'temporary password' /var/log/mysqld.log
 
 Use this password to login to mysql CLI as root user and change the temporary password to the new secure one (we have used the `P@ssword123`):
 
-.. code:: bash
+.. code-block:: bash
 
    mysql -uroot -p
    ALTER USER 'root'@'localhost' IDENTIFIED BY 'P@ssword123';
@@ -166,7 +166,7 @@ Change the MySQL Server Configuration
 It is recommended to use SSD to store the application data in the MySQL 5.X database. However, in case you do need to
 use the HDD, set the following configuration parameters in the **/etc/my.cnf** file to avoid performance issues:
 
-.. code:: bash
+.. code-block:: bash
 
    [mysqld]
    innodb_file_per_table = 0
@@ -176,7 +176,7 @@ To minimize the risk of long compilations of SQL queries (which sometimes may ta
 for details, see `MySQL documentation <https://dev.mysql.com/doc/refman/5.6/en/controlling-query-plan-evaluation.html>`_),
 set `optimizer_search_depth` to `0`:
 
-.. code:: bash
+.. code-block:: bash
 
    [mysqld]
    optimizer_search_depth = 0
@@ -184,7 +184,7 @@ set `optimizer_search_depth` to `0`:
 To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4` character
 set:
 
-.. code:: bash
+.. code-block:: bash
 
    [client]
    default-character-set = utf8mb4
@@ -198,14 +198,14 @@ set:
 
 For the changes to take effect, restart MySQL server by running:
 
-.. code:: bash
+.. code-block:: bash
 
    systemctl restart mysqld
 
 Create a Database for the Application and a Dedicated Database User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: sql
+.. code-block::sql
 
    CREATE DATABASE oro;
    GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' identified by 'P@ssword123';
@@ -380,7 +380,7 @@ web page latency as described in the :ref:`Performance Optimization of the Oro A
 
 For the changes to take effect, restart `nginx` by running:
 
-.. code:: bash
+.. code-block:: bash
 
    systemctl restart nginx
 
@@ -389,7 +389,7 @@ Configure Domain Name Resolution
 
 If you are going to use the Oro application in the local environment only, modify the */etc/hosts* file on the server by adding the following line:
 
-.. code::
+.. code-block:: none
 
    127.0.0.1 localhost <your-domain-name>
 
@@ -405,7 +405,7 @@ To configure PHP, perform the following changes in the configuration files:
 * In the `www.conf` file (*/etc/php-fpm.d/www.conf*) --- Change the user and the group
   for PHP-FPM to *nginx* and set recommended values for other parameters.
 
-  .. code::
+  .. code-block:: none
 
      user = nginx
      group = nginx
@@ -413,7 +413,7 @@ To configure PHP, perform the following changes in the configuration files:
 
 * In the `php.ini` file (*/etc/php.ini*) --- Change the memory limit and cache configuration to the following:
 
-  .. code::
+  .. code-block:: none
 
      memory_limit = 1024M
      realpath_cache_size=4096K
@@ -421,7 +421,7 @@ To configure PHP, perform the following changes in the configuration files:
 
 * In the `opcache.ini` file (*/etc/php.d/10-opcache.ini*) --- Modify the OPcache parameter to match the following values:
 
-  .. code::
+  .. code-block:: none
 
      opcache.enable=1
      opcache.enable_cli=0
@@ -432,7 +432,7 @@ To configure PHP, perform the following changes in the configuration files:
 
 For the changes to take effect, restart PHP-FPM by running:
 
-.. code:: bash
+.. code-block:: bash
 
    systemctl restart php-fpm
 

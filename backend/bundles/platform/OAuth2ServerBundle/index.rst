@@ -29,7 +29,7 @@ Configuration
 
 The default configuration of OroOAuth2ServerBundle is illustrated below:
 
-.. code:: yaml
+.. code-block:: yaml
 
     oro_oauth2_server:
         authorization_server:
@@ -85,7 +85,7 @@ Create OAuth Application via Data Fixtures
 
 The OAuth applications can be added using data fixtures. For example:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
