@@ -16,7 +16,7 @@ Creating a Processor
 
 To create a new processor, create a class that implements |ProcessorInterface| and |tag| it with the ``oro.api.processor`` name.
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -39,7 +39,7 @@ To create a new processor, create a class that implements |ProcessorInterface| a
         }
     }
 
-.. code:: yaml
+.. code-block:: yaml
 
     services:
         acme.api.processor.do_something:
@@ -58,7 +58,7 @@ Please note that:
 
 An example:
 
-.. code:: php
+.. code-block:: php
 
         public function process(ContextInterface $context)
         {
@@ -82,7 +82,7 @@ When you register a processor in the dependency injection container, you can spe
 
 For example, a simple condition which is used to filter processors by the action:
 
-.. code:: yaml
+.. code-block:: yaml
 
     services:
         acme.api.processor.do_something:
@@ -107,49 +107,49 @@ Examples of Processor Conditions
 
 -  No conditions. A processor is executed for all actions.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor }
 
 -  A processor is executed only for a specified action.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get_list }
 
 -  A processor is executed only for a specified action and group.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get_list, group: initialize }
 
 -  A processor is executed only for a specified action, group and request type.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest }
 
 -  A processor is executed for all requests except for the specified one.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get_list, group: initialize, requestType: !rest }
 
 -  A processor is executed only for REST requests that conform to the |JSON.API| specification.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest&json_api }
 
 -  A processor is executed either for REST requests or requests that conform to the |JSON.API| specification.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest|json_api }
@@ -158,14 +158,14 @@ Examples of Processor Conditions
 
 -  A processor is executed for all REST requests excluding requests that conform  to the |JSON.API| specification.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest&!json_api }
 
 -  A processor is executed for several specified actions.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get, group: initialize, priority: 10 }
@@ -173,17 +173,18 @@ Examples of Processor Conditions
 
 -  A processor is executed only for a specified entity.
 
-.. code:: yaml
+.. code-block:: yaml
 
         tags:
             - { name: oro.api.processor, action: get_list, group: initialize, class: 'Oro\Bundle\UserBundle\Entity\User' }
 
 -  A processor is executed only for entities that implement an certain interface or extend a certain base class. Currently, there are two attributes that are compared by the **instance of** instead of **equal** operator. These attributes are **class** and **parentClass**.
 
-.. code:: yaml
+.. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, class: 'Oro\Bundle\UserBundle\Entity\AbstractUser' }
+    tags:
+
+      - { name: oro.api.processor, action: get_list, group: initialize, class: 'Oro\Bundle\UserBundle\Entity\AbstractUser' }
 
 For more examples, see the |configuration of existing processors|. See ``processors.*.yml`` files.
 
@@ -198,7 +199,7 @@ There are several types of errors that may occur when processing a request:
 
 Please note that to validate input data for :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions the best solution is to use validation constraints. In most cases it helps avoid writing any PHP code and configuring the required validation rules in ``Resources/config/oro/api.yml``. For the detailed information on how to add custom validation constraints, see the :ref:`Forms and Validators Configuration <web-api--forms>` topic. The following example shows how to add a validation constraint via ``Resources/config/oro/api.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -249,7 +250,7 @@ Let us consider how a processor can inform that some error is occurred.
 
 The simplest way is just throw an exception. For example:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -324,7 +325,7 @@ This way is good to for unexpected and security errors (for security errors, thr
 
 Another way to add an **Error** object to the context is good for validation errors because it allows you to add several errors:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -367,7 +368,7 @@ The |Constraint| class contains titles for different kind of validation errors. 
 
 All data API logs are written into the api channel. To inject the data API logger directly to your processors, use the |common way|. For example:
 
-.. code:: yaml
+.. code-block:: yaml
 
         acme.api.some_processor:
             class: Acme\Bundle\AcmeBundle\Api\Processor\DoSomething

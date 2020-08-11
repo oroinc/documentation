@@ -958,58 +958,6 @@ Links (Dev)
 
    <a href="https://medium.com/@fabpot/fabien-potencier-4574622d6a7e" target="_blank">article</a>
 
-.. |Customize Product View Page| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/customize-pdp.md" target="_blank">Customize Product View Page</a>
-
-.. |Customize Product List Page| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/customize-plp.md" target="_blank">Customize Product List Page</a>
-
-.. |Customize Products SKU Validation| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/customize-products-sku-validation.md" target="_blank">Customize Products SKU Validation</a>
-
-.. |Product Unit Formatting| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md" target="_blank">Product Unit Formatting</a>
-
-.. |PHP Product Unit Label Formatter| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#php-product-unit-label-formatter" target="_blank">PHP Product Unit Label Formatter</a>
-
-.. |Two Step Product Creation| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/two-step-product-creation.md" target="_blank">Two Step Product Creation</a>
-
-.. |Default Product Unit| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/default-product-unit.md" target="_blank">Default Product Unit</a>
-
-.. |Product Attributes| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/product-attributes.md" target="_blank">Product Attributes</a>
-
-.. |Related Items| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/related-items.md" target="_blank">Related Items</a>
-
-.. |(Product) Actions| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/actions.md" target="_blank">(Product) Actions</a>
-
-.. |Product Variant Search| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/product-variant-search.md" target="_blank">Product Variant Search</a>
-
-.. |Checkout Subtotal| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/checkout_subtotal.md" target="_blank">Checkout Subtotal</a>
-
-.. |Order Confirmation Email Template| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md" target="_blank">Order Confirmation Email Template</a>
-
 .. |Define Custom Form Type for a Field| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/EntityExtendBundle/Resources/doc/custom_form_type.md" target="_blank">Define Custom Form Type for a Field</a>
@@ -3954,10 +3902,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Processor/Options/OptionsContext.php" target="_blank">OptionsContext</a>
 
-
-
-
-
 .. |GetListContext| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Processor/GetList/GetListContext.php" target="_blank">GetListContext</a>
@@ -5385,7 +5329,7 @@ Links (Dev)
 
 .. |robots.txt| raw:: html
 
-   <a href="http://www.robotstxt.org/ " target="_blank">robots.txt</a>
+   <a href="http://www.robotstxt.org/" target="_blank">robots.txt</a>
 
 .. |TransitionContext| raw:: html
 
@@ -5407,3 +5351,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/WorkflowBundle/Model/Transition.php" target="_blank">Transition</a>
 
+.. |Checkout Subtotal| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/checkout_subtotal.md" target="_blank">Checkout Subtotal</a>
+
+.. |Order Confirmation Email Template| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md" target="_blank">Order Confirmation Email Template</a>

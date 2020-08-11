@@ -16,7 +16,7 @@ Website search index type: The entity is invisible to a current user. Please, ch
 
 Please, verify credentials specified at the confing/parameters.yml file - host, port, index name, authentication options. You can try to manually connect to Elasticsearch server via CLI curl command to make sure that you have an access to it:
 
-.. code:: yaml
+.. code-block:: yaml
 
    $ curl -I http://localhost:9200
    HTTP/1.1 200 OK

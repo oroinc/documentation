@@ -169,7 +169,7 @@ Example of Standard Index Type Document
 
 Here is example of the document from the standard index type under oro_user entity alias.
 
-.. code:: yaml
+.. code-block:: yaml
 
    {
    "username":"admin",
@@ -194,7 +194,7 @@ Example of Website Index Type Document
 
 Here is example of the document from the website index type under oro_product_WEBSITE_ID (WEBSITE_ID = 1) entity alias.
 
-.. code:: yaml
+.. code-block:: none
 
    {
    "assigned_to_variant_31":1,

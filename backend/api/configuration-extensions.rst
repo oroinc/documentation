@@ -16,7 +16,7 @@ Creating a Configuration Extension
 
 Each configuration extension must implement |ConfigExtensionInterface| (you can also use |AbstractConfigExtension| as a superclass). To register a new configuration extension, add it to ``Resources/config/oro/app.yml`` of your bundle or use *config/config.yml* of your application. Here is an example:
 
-.. code:: php
+.. code-block:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
@@ -27,7 +27,7 @@ Each configuration extension must implement |ConfigExtensionInterface| (you can 
     {
     }
 
-.. code:: yaml
+.. code-block:: yaml
 
     # config/config.yml
     services:
@@ -71,7 +71,7 @@ The following table describes existing sections for which new options can be add
 
 Example:
 
-.. code:: php
+.. code-block:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
@@ -132,7 +132,7 @@ By default the configuration is returned as an array, but if you want to provide
 
 An example of simple configuration section:
 
-.. code:: php
+.. code-block:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
@@ -150,7 +150,7 @@ An example of simple configuration section:
 
 An example of a configuration section that can be extended by other bundles:
 
-.. code:: php
+.. code-block:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
@@ -177,7 +177,7 @@ An example of a configuration section that can be extended by other bundles:
 
 An example of a configuration section loader:
 
-.. code:: php
+.. code-block:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
@@ -202,7 +202,7 @@ An example of a configuration section loader:
 
 An example of a configuration extension:
 
-.. code:: php
+.. code-block:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
@@ -230,7 +230,7 @@ An example of a configuration extension:
 
 An example of how to use the created configuration section:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         ...
@@ -241,7 +241,7 @@ An example of how to use the created configuration section:
 
 To check that your configuration section is added correctly, run ``php bin/console oro:api:config:dump-reference``. The output should look similar to the following:
 
-.. code:: yaml
+.. code-block:: yaml
 
     # The structure of "Resources/config/oro/api.yml"
     api:

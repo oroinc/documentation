@@ -834,7 +834,7 @@ Additionally, |ConfigProvider| was created to make usage of this action as easy 
 
 Example:
 
-.. code:: php
+.. code-block:: php
 
    /** @var ConfigProvider $configProvider */
    $configProvider = $container->get('oro_api.config_provider');
@@ -880,7 +880,7 @@ Additionally, |MetadataProvider| was created to make usage of this action as eas
 
 Example:
 
-.. code:: php
+.. code-block:: php
 
     /** @var MetadataProvider $metadataProvider */
     $metadataProvider = $container->get('oro_api.metadata_provider');
@@ -903,7 +903,7 @@ Additionally, |ValueNormalizer| was created to make usage of this action as easy
 
 Example:
 
-.. code:: php
+.. code-block:: php
 
     /** @var ValueNormalizer $valueNormalizer */
     $valueNormalizer = $container->get('oro_api.metadata_provider');
@@ -926,7 +926,7 @@ Additionally, |ResourcesProvider| was created to make usage of this action as ea
 
 Example:
 
-.. code:: php
+.. code-block:: php
 
     /** @var ResourcesProvider $resourcesProvider */
     $resourcesProvider = $container->get('oro_api.resources_provider');
@@ -955,7 +955,7 @@ Additionally, |SubresourcesProvider| was created to make usage of this action as
 
 Example:
 
-.. code:: php
+.. code-block:: php
 
     /** @var SubresourcesProvider $subresourcesProvider */
     $subresourcesProvider = $container->get('oro_api.subresources_provider');
@@ -1109,7 +1109,7 @@ To create a new action you need to create two classes:
 -  **context** - This class represents an context in scope of which an action is executed. An instance of this class is used to store the input and output data and share data between processors. This class must extend |ApiContext|. Depending on your needs, you can use another classes derived from |ApiContext|, for example |Context|, |SingleItemContext| or |ListContext|.
 -  **main processor** - This class is the main entry point for an action and responsible for creating an instance of the context class and executing all worker processors. This class must extend |ActionProcessor| and implement the ``createContextObject`` method. Depending on your needs, you can use another classes derived from |ActionProcessor|, for example |NormalizeResultActionProcessor|.
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -1121,7 +1121,7 @@ To create a new action you need to create two classes:
     {
     }
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -1142,7 +1142,7 @@ To create a new action you need to create two classes:
 
 Additionally, you need to register your processor in the dependency injection container:
 
-.. code:: yaml
+.. code-block:: yaml
 
         acme.my_action.processor:
             class: Acme\Bundle\ProductBundle\Api\Processor\MyActionProcessor
@@ -1153,7 +1153,7 @@ Additionally, you need to register your processor in the dependency injection co
 
 If you need to create groups for your action, register them in the ApiBundle configuration. To do this, add ``Resources\config\oro\app.yml`` to your bundle, for example:
 
-.. code:: yaml
+.. code-block:: yaml
 
     oro_api:
         actions:

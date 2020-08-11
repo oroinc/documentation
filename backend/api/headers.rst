@@ -7,7 +7,7 @@ For some types of the REST API requests, you can retrieve an additional informat
 
 The following example shows how to get the total number of accounts:
 
-.. code:: bash
+.. code-block:: bash
 
     curl "http://orocrm.loc/index_dev.php/api/accounts?page=1&limit=2" -v --header="X-Include:totalCount" --header="X-WSSE:..."
 
@@ -45,7 +45,7 @@ To add a custom key to the ``X-Include`` header:
 
 1. Create a processor to handle your key:
 
-    .. code:: php
+    .. code-block:: php
 
         <?php
 
@@ -89,7 +89,7 @@ To add a custom key to the ``X-Include`` header:
             }
         }
 
-    .. code:: yaml
+    .. code-block:: yaml
 
             oro_api.delete_list.set_deleted_count_header:
                 class: Oro\Bundle\ApiBundle\Processor\DeleteList\SetDeletedCountHeader
@@ -98,7 +98,7 @@ To add a custom key to the ``X-Include`` header:
 
 2. Create a processor to remove your response header when an error occurs:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -127,7 +127,7 @@ To add a custom key to the ``X-Include`` header:
         }
     }
 
-.. code:: yaml
+.. code-block:: yaml
 
         oro_api.delete_list.remove_deleted_count_header:
             class: Oro\Bundle\ApiBundle\Processor\DeleteList\RemoveDeletedCountHeader

@@ -19,7 +19,7 @@ There are eight base applications to choose from.
 
 Create your new Oro application project with composer by running one of commands below, depending on the base application you want to install:
 
-.. code:: bash
+.. code-block:: bash
 
    # OroCommerce Community Edition
    composer create-project oro/commerce-crm-application:~3.1.0 my_project_name --repository=https://satis.oroinc.com
@@ -59,7 +59,7 @@ If you use HTTP mode for your Oro application website, keep the default values f
 
 If you use HTTPS mode, open the ``config/parameters.yml`` file and change the WebSocket-related parameters to match the following values:
 
-.. code::
+.. code-block:: none
 
    websocket_bind_address:  0.0.0.0
    websocket_bind_port:     8080
@@ -77,7 +77,7 @@ Install Oro Application
 
 To start the installation of your Oro application, run the following command:
 
-.. code:: bash
+.. code-block:: bash
 
    php bin/console oro:install --env=prod --timeout=2000
 
@@ -86,7 +86,7 @@ Follow the on-screen instructions in the console.
 .. note:: You will be prompted to choose the installation with or without demo data. If you discard demo data during installation,
    you can install it later by running the following command:
 
-   .. code:: bash
+   .. code-block:: bash
 
       php bin/console oro:migration:data:load --fixtures-type=demo --env=prod
 
@@ -124,7 +124,7 @@ Schedule Periodical Command Execution
 
 To schedule execution of the *oro:cron* command every-minute, add the following line to crontab file:
 
-.. code::
+.. code-block:: none
 
    */1 * * * * php <application-root-folder>/bin/console oro:cron --env=prod > /dev/null
 
@@ -147,7 +147,7 @@ Configure the Supervisor
 
 Add the following configuration sections to the */etc/supervisord.conf* config file:
 
-.. code::
+.. code-block:: none
 
    [program:oro_web_socket]
    command=php ./bin/console gos:websocket:server --env=prod
@@ -178,7 +178,7 @@ Restart Supervisord
 
 To restart supervisor, run:
 
-.. code:: bash
+.. code-block:: bash
 
    systemctl restart supervisord
 
@@ -187,13 +187,13 @@ Check the Status of the Background Processes (Optional)
 
 To check the status of the background processes, run:
 
-.. code:: bash
+.. code-block:: bash
 
    supervisorctl status
 
 You should see information similar to what is illustrated below:
 
-.. code::
+.. code-block:: none
 
    oro_message_consumer:oro_message_consumer_00   RUNNING   pid 4847, uptime 0:05:36
    oro_message_consumer:oro_message_consumer_01   RUNNING   pid 4846, uptime 0:05:36

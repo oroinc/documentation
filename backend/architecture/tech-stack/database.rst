@@ -40,7 +40,7 @@ Connection
 
 DataBase connection is configured using the following parameters placed in config/parameters.yml:
 
-.. code:: text
+.. code-block:: text
 
    database_driver: pdo_pgsql
    database_host: 127.0.0.1
@@ -58,7 +58,7 @@ The configuration may be changed in config.yml. Every registered Oro bundle has 
 
 Doctrine provides a limited set of DQL functions that may be used by a developer. To extend this list, Oro has its own  |extensions library|. New DQL functions are added to the Doctrine configuration with either the *app.yml* or *config.yml* file placed in the EntityBundle of the Platform project. New functions may be implemented in any bundle and added into its app.yml in the following format:
 
-.. code:: text
+.. code-block:: text
 
    doctrine:
        orm:
@@ -68,7 +68,7 @@ Doctrine provides a limited set of DQL functions that may be used by a developer
 
 The same file can be used to add new data types, for example:
 
-.. code:: text
+.. code-block:: text
 
    doctrine:
        dbal:
@@ -77,7 +77,7 @@ The same file can be used to add new data types, for example:
 
 Enabling metadata cache is strongly recommended for the development and productions environments to improve performance. Metadata caching in OroPlatform is done with the `doctrine.metadata.cache` service.
 
-.. code:: text
+.. code-block:: text
 
    doctrine:
        orm:
@@ -108,7 +108,7 @@ MySQL
 
 MySQL/MariaDB database table can sometimes crash because of an unexpected server shut down, a sudden file system corruption, or during the copy operation when the database is still in use. However, there is a free open source tool called ‘mysqlcheck‘, which can automatically check, repair and optimize databases of all tables in Linux.
 
-.. code:: text
+.. code-block:: text
 
    # mysqlcheck -u root -p --auto-repair --check --optimize databasename
 
@@ -116,7 +116,7 @@ Use mysqltuner tool that allows you to review a MySQL installation quickly and 
 
 To download and run it, use the following set of commands:
 
-.. code:: text
+.. code-block:: text
 
    # wget http://mysqltuner.pl mysqltuner.pl
    # ./mysqltuner.pl
@@ -126,7 +126,7 @@ PostgreSQL
 
 A `postgresqltuner.pl` is a simple script that helps you analyse a PostgreSQL database. It is inspired by `mysqltuner.pl` discussed above and has the same propose.
 
-.. code:: text
+.. code-block:: text
 
    # wget https://postgresqltuner.pl postgresqltuner.pl
    # ./postgresqltuner.pl
@@ -151,7 +151,7 @@ When all the conditions apply, the field makes a good candidate for pre-emptive 
 
 When metadata caching is turned on than any changes to entity will be not seen by doctrine until cache refresh. Remember to clear metadata cache any time when metadata was changed.
 
-.. code:: text
+.. code-block:: text
 
    # bin/console doctrine:cache:clear-metadata
 

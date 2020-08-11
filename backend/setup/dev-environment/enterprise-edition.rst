@@ -30,7 +30,7 @@ To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.
 
 Add required repositories to your `yum` package manager and install the |software collections| management utils by running:
 
-.. code:: bash
+.. code-block:: bash
 
    yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm yum-utils scl-utils centos-release-scl centos-release-scl-rh
    yum-config-manager --add-repo http://koji.oro.cloud/rpms/oro-el7.repo
@@ -41,7 +41,7 @@ Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, Supervisor, and Wg
 
 Install most of the required Oro application environment components using the following commands:
 
-.. code:: bash
+.. code-block:: bash
 
    yum install -y rh-postgresql96 rh-postgresql96-postgresql rh-postgresql96-postgresql-server rh-postgresql96-postgresql-contrib rh-postgresql96-postgresql-syspaths oro-elasticsearch6 oro-elasticsearch6-runtime oro-elasticsearch6-elasticsearch oro-redis4 oro-redis4-runtime oro-redis4-redis oro-rabbitmq-server36 oro-rabbitmq-server36-runtime oro-rabbitmq-server36-rabbitmq-server nginx nodejs npm git bzip2 supervisor
 
@@ -50,7 +50,7 @@ Install PHP
 
 Install PHP 7.1 and the required dependencies using the following command:
 
-.. code:: bash
+.. code-block:: bash
 
    yum install -y oro-php71 oro-php71-php-cli oro-php71-php-fpm oro-php71-php-opcache oro-php71-php-mbstring oro-php71-php-mcrypt oro-php71-php-pgsql oro-php71-php-process oro-php71-php-ldap oro-php71-php-gd oro-php71-php-intl oro-php71-php-bcmath oro-php71-php-xml oro-php71-php-soap oro-php71-php-tidy oro-php71-php-zip
 
@@ -59,7 +59,7 @@ Install Composer
 
 Run the commands below, or use another Composer installation process described in the |official documentation|.
 
-.. code:: bash
+.. code-block:: bash
 
    scl enable oro-php71 bash
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
@@ -71,7 +71,7 @@ Install Symfony Flex
 
 To improve composer operations performance, install Symfony Flex globally:
 
-.. code:: bash
+.. code-block:: bash
 
    composer global require symfony/flex
 
@@ -91,7 +91,7 @@ For the production environment, it is strongly recommended to keep *SELinux* ena
 In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode.
 However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
 
-.. code:: bash
+.. code-block:: bash
 
    sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
    setenforce permissive
@@ -117,7 +117,7 @@ Prepare PostgreSQL Database
 Initialize a PostgreSQL Database Cluster
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: bash
+.. code-block:: bash
 
    scl enable rh-postgresql96 bash
    postgresql-setup --initdb
@@ -131,14 +131,14 @@ To use the password-based authentication instead, replace the `ident` with the `
 
 Open the file */var/opt/rh/rh-postgresql96/lib/pgsql/data/pg_hba.conf* and change the following strings:
 
-.. code::
+.. code-block:: none
 
    host    all             all             127.0.0.1/32            ident
    host    all             all             ::1/128                 ident
 
 to match these ones:
 
-.. code::
+.. code-block:: none
 
    host    all             all             127.0.0.1/32            md5
    host    all             all             ::1/128                 md5
@@ -148,7 +148,7 @@ Change the Password for the *postgres* User
 
 To set the password for the *postgres* user to the new secure one, run the following commands:
 
-.. code:: bash
+.. code-block:: bash
 
    systemctl start rh-postgresql96-postgresql
    su postgres
@@ -162,7 +162,7 @@ Create a Database for your Oro Application
 
 To create the `oro` database that will be used by the Oro application, run the following commands:
 
-.. code:: bash
+.. code-block:: bash
 
    CREATE DATABASE oro;
    \c oro
@@ -337,7 +337,7 @@ Configure Domain Name Resolution
 
 If you are going to use your Oro application in the local environment only, modify the */etc/hosts* file on the server by adding the following line:
 
-.. code::
+.. code-block:: none
 
    127.0.0.1 localhost <your-domain-name>
 
@@ -353,7 +353,7 @@ To configure PHP, perform the following changes in the configuration files:
 * In the `www.conf` file (*/etc/php-fpm.d/www.conf*) --- Change the user and the group
   for PHP-FPM to *nginx* and set recommended values for other parameters.
 
-  .. code::
+  .. code-block:: none
 
      user = nginx
      group = nginx
@@ -361,7 +361,7 @@ To configure PHP, perform the following changes in the configuration files:
 
 * In the `php.ini` file (*/etc/php.ini*) --- Change the memory limit and cache configuration to the following:
 
-  .. code::
+  .. code-block:: none
 
      memory_limit = 1024M
      realpath_cache_size=4096K
@@ -369,7 +369,7 @@ To configure PHP, perform the following changes in the configuration files:
 
 * In the opcache.ini file (*/etc/php.d/10-opcache.ini*) --- Modify the OPcache parameter to match the following values:
 
-  .. code::
+  .. code-block:: none
 
      opcache.enable=1
      opcache.enable_cli=0
@@ -384,7 +384,7 @@ Configure RabbitMQ
 Create RabbitMQ User
 ~~~~~~~~~~~~~~~~~~~~
 
-.. code:: bash
+.. code-block:: bash
 
    systemctl start oro-rabbitmq-server36-rabbitmq-server
    scl enable oro-rabbitmq-server36 bash
@@ -396,21 +396,21 @@ Replace `<new_rabbitmq_user>` and `<new_rabbitmq_user_password>` with your custo
 
 For security reasons, delete the default RabbitMQ user:
 
-.. code:: bash
+.. code-block:: bash
 
    rabbitmqctl delete_user guest
 
 Enable Required RabbitMQ Plugins
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: bash
+.. code-block:: bash
 
    rabbitmq-plugins enable rabbitmq_delayed_message_exchange
 
 Enable the RabbitMQ WebControl Management Plugin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: bash
+.. code-block:: bash
 
    rabbitmq-plugins enable rabbitmq_management
 
@@ -419,7 +419,7 @@ After this step you can use the Web UI of the RabbitMQ management plugin (``http
 Enable Installed Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: bash
+.. code-block:: bash
 
    systemctl restart rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch6-elasticsearch oro-php71-php-fpm nginx supervisord
    systemctl enable rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch6-elasticsearch oro-php71-php-fpm nginx supervisord

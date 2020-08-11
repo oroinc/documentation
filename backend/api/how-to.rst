@@ -8,7 +8,7 @@ Turn on API for entity
 
 By default, API for entities is disabled. To turn on API for an entity, add the entity to ``Resources/config/oro/api.yml`` of your bundle:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -23,7 +23,7 @@ The ``exclusions`` section of ``Resources/config/oro/entity.yml`` configuration 
 
 Let us consider the case when you have the following ``Resources/config/oro/entity.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     oro_entity:
         exclusions:
@@ -32,7 +32,7 @@ Let us consider the case when you have the following ``Resources/config/oro/enti
 
 To override these rules in the data API, add the following lines to the ``Resources/config/oro/api.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -59,7 +59,7 @@ By performance reasons the following operators are disabled out of the box:
 
 To enable these operators, use ``operators`` option for filters in ``Resources/config/oro/api.yml``, e.g.:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -76,7 +76,7 @@ Enable Case-insensitive String Filter
 
 Depending on the |collation| settings of your database the case-insensitive filtering may be already enforced to be used on the database level. For example, if you are using MySQL database with ``utf8_unicode_ci`` collation you do not need to do anything to enable the case-insensitive filtering. But if the collation of your database or a particular field is not case-insensitive and you need to enable the case-insensitive filtering for this field, you can use ``case_insensitive`` option for a filter in ``Resources/config/oro/api.yml``, e.g.:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -91,7 +91,7 @@ Depending on the |collation| settings of your database the case-insensitive filt
 
 Also sometimes data in the database are already converted to lowercase or uppercase, in this case you can use ``value_transformer`` option to convert the filter value to before it will be passed to the database query, e.g.:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -140,7 +140,7 @@ If you want to change permission or disable access checks for some action, you c
 
 For example, to change permissions for the ``delete`` action, add the following lines to the ``Resources/config/oro/api.yml`` of your bundle:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -151,7 +151,7 @@ For example, to change permissions for the ``delete`` action, add the following 
 
 If there is the ``access_entity_view`` ACL resource:
 
-.. code:: yaml
+.. code-block:: yaml
 
     access_entity_view:
         type: entity
@@ -167,7 +167,7 @@ Disable Access Checks for an Action
 
 You can disable access checks for some action by setting ``null`` as a value for the ``acl_resource`` option in ``Resources/config/oro/api.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -185,7 +185,7 @@ When you add an entity to the API, all the actions will be available by default.
 
 If an action should be inaccessible, disable it in ``Resources/config/oro/api.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -196,7 +196,7 @@ If an action should be inaccessible, disable it in ``Resources/config/oro/api.ym
 
 You can use the short syntax:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -233,7 +233,7 @@ By default, the ``delete\_list`` action can delete not more than 100 entities. T
 
 If your want to use another limit, set it using the ``max_results`` option in ``Resources/config/oro/api.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -244,7 +244,7 @@ If your want to use another limit, set it using the ``max_results`` option in ``
 
 You can remove the limit at all. To do this, set ``-1`` as a value for the ``max_results`` option:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -260,7 +260,7 @@ Configure a Nested Object
 
 Sometimes it is required to group several fields and expose them as a nested object in the data API. For example, consider the case when an entity has two fields ``intervalNumber`` and ``intervalUnit`` but you need to expose them in data API as ``number`` and ``unit`` properties of ``interval`` field. To achieve it, use the following configuration:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -285,7 +285,7 @@ Please note that an entity, in this example *Oro\Bundle\ReminderBundle\Entity\Re
 
 Here is an example how the nested objects looks in JSON.API:
 
-.. code:: json
+.. code-block::json
 
     {
       "data": {
@@ -307,7 +307,7 @@ Configure a Nested Association
 
 Sometimes a relationship with a group of entities is implemented as two fields, "entityClass" and "entityId", rather than |many-to-one extended association|. But in the data API, these fields should be represented as a regular relationship. To achieve this, a special data type named ``nestedAssociation`` was implemented. For example, let us suppose that an entity has two fields ``sourceEntityClass`` and ``sourceEntityId`` and you need to expose them in API as ``source`` relationship. To achieve this, use the following configuration:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
     entities:
@@ -323,7 +323,7 @@ Sometimes a relationship with a group of entities is implemented as two fields, 
 
 Here is an example how the nested association looks in JSON.API:
 
-.. code:: json
+.. code-block::json
 
     {
       "data": {
@@ -352,7 +352,7 @@ Depending on the current entity configuration, each association resource (e.g. a
 
 By default, there is no possibility to retrieve targets of such associations. To make targets available for retrieving, enable this in ``Resources/config/oro/api.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -379,7 +379,7 @@ Depending on the current entity configuration, each association resource (e.g. c
 
 By default, there is no possibility to retrieve targets of such associations. To make targets available for retrieving, enable this in  ``Resources/config/oro/api.yml``, for instance:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -406,7 +406,7 @@ Depending on the current entity configuration, each association resource (e.g. c
 
 By default, there is no possibility to retrieve targets of such associations. To make targets available for retrieving, enable this in ``Resources/config/oro/api.yml``, for instance:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -421,7 +421,6 @@ The ``data_type`` parameter has format: ``association:relationType:associationKi
 
 -  ``relationType`` part should have 'multipleManyToOne' value for extended Multiple Many-To-One association;
 -  ``associationKind`` is the optional part that represents the kind of the association.
-
 
 .. _add-custom-controller:
 
@@ -448,7 +447,7 @@ If you know about these disadvantages and still want to proceed registering a cu
 
 Here is an example of the controller:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -513,7 +512,7 @@ Here is an example of the controller:
 
 An example of the ``Resources/config/oro/routing.yml`` configuration file:
 
-.. code:: yaml
+.. code-block:: yaml
 
     acme_api_get_my_resource:
         path: '%oro_api.rest.prefix%myresources/{id}'
@@ -543,7 +542,7 @@ Use :ref:`oro:api:doc:cache:clear <oroapidoccacheclear>` command to apply change
 
 Here is an example of the ``Resources/config/oro/routing.yml`` configuration file:
 
-.. code:: yaml
+.. code-block:: yaml
 
     acme_rest_api_user_profile:
         path: '%oro_api.rest.prefix%userprofile'
@@ -563,7 +562,7 @@ By default, a primary key is used to identify ORM entities in API. If you need a
 
 For example, let your entity has the ``id`` field that is the primary key and the ``uuid`` field that contains a unique value for each entity. To use the ``uuid`` field to identify the entity, add the following details to ``Resources/config/oro/api.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -572,7 +571,7 @@ For example, let your entity has the ``id`` field that is the primary key and th
 
 You can also exclude the ``id`` field (primary key) if you do not want to expose it via API:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
         entities:
@@ -593,7 +592,7 @@ The following steps describe how to create such API resources:
 
 1. Create a PHP class to represent the API resource. Usually, such classes are named as models and located in the ``Api/Model`` directory. For example:
 
-   .. code:: php
+   .. code-block:: php
 
        <?php
 
@@ -624,7 +623,7 @@ The following steps describe how to create such API resources:
 
 2. Describe the model in the ``Resources/config/oro/api.yml`` configuration file in your bundle, e.g.:
 
-    .. code:: yaml
+    .. code-block:: yaml
 
         api:
           entity_aliases:
@@ -651,7 +650,7 @@ The following steps describe how to create such API resources:
 3. Register a route in the ``Resources/config/oro/routing.yml`` configuration file in your bundle using the ``OroApiBundle:RestApi:itemWithoutId`` as a controller, e.g.,:
 
 
-    .. code:: yaml
+    .. code-block:: yaml
 
         acme_rest_api_register_account:
             path: '%oro_api.rest.prefix%registeraccount'
@@ -664,7 +663,7 @@ The following steps describe how to create such API resources:
 
 4. Create a processor to handle data, e.g.:
 
-    .. code:: php
+    .. code-block:: php
 
        <?php
 
@@ -691,7 +690,7 @@ The following steps describe how to create such API resources:
 
 5. Register a processor in the dependency injection container, e.g.:
 
-    .. code:: yaml
+    .. code-block:: yaml
 
        services:
           acme.api.register_account:
@@ -720,7 +719,7 @@ To do this, you need to perform the following:
 4. Add the new type of API to ApiBundle and configure API Sandbox via ``Resources/config/oro/app.yml`` configuration file in your bundle:
 
 
-    .. code:: yaml
+    .. code-block:: yaml
 
        oro_api:
           # add API type for ERP integration
@@ -746,7 +745,7 @@ To do this, you need to perform the following:
 5. Create a processor that will check the request header and add ``erp`` request type to the execution context of processors:
 
 
-    .. code:: php
+    .. code-block:: php
 
        <?php
 
@@ -781,7 +780,7 @@ To do this, you need to perform the following:
 
 6. Register this processor in the dependency injection container in the ``Resources/config/services.yml`` file:
 
-    .. code:: yaml
+    .. code-block:: yaml
 
        acme.api.erp.check_erp_request_type:
           class: Acme\Bundle\AppBundle\Api\Processor\CheckErpRequestType
@@ -808,7 +807,7 @@ To configure the new API, use the ``Resources/config/oro/api_erp.yml`` configura
 All API processors related to the new API should be registered with the ``requestType: erp`` attribute
 for the ``oro.api.processor`` tag, e.g.:
 
-.. code:: yaml
+.. code-block:: yaml
 
     acme.api.erp.do_something:
         class: Acme\Bundle\AppBundle\Api\Processor\DoSomething
@@ -837,7 +836,7 @@ To implement this approach, you need to perform the following:
 
 1. Create a class that implements |EntityIdResolverInterface|, e.g.:
 
-    .. code:: php
+    .. code-block:: php
 
         <?php
 
@@ -890,7 +889,7 @@ To implement this approach, you need to perform the following:
 
 2. Register this class as a service and tag it with ``oro.api.entity_id_resolver``, e.g.:
 
-    .. code:: yaml
+    .. code-block:: yaml
 
        oro_user.api.mine_user_entity_id_resolver:
             class: Oro\Bundle\UserBundle\Api\MineUserEntityIdResolver
@@ -902,7 +901,7 @@ To implement this approach, you need to perform the following:
 
 If a predefined identifier should be available only for a specific request type, use the :ref:`requestType <api-request-type>` attribute of the tag, e.g.:
 
-.. code:: yaml
+.. code-block:: yaml
 
     tags:
             - { name: oro.api.entity_id_resolver, id: mine, class: Oro\Bundle\UserBundle\Entity\User, requestType: json_api }
@@ -921,7 +920,7 @@ For example, imagine that a "price" field need to be added to a product API. The
 
 1. Add the "price" field to the product API via ``Resources/config/oro/api.yml``
 
-    .. code:: yaml
+    .. code-block:: yaml
 
         api:
             entities:
@@ -933,7 +932,7 @@ For example, imagine that a "price" field need to be added to a product API. The
 
 2. Create a processor for ``customize_loaded_data`` action that will set a value for the "price" field
 
-    .. code:: php
+    .. code-block:: php
 
         <?php
 
@@ -989,7 +988,7 @@ For example, imagine that a "price" field need to be added to a product API. The
 
 3. Register the processor in the dependency injection container
 
-    .. code:: yaml
+    .. code-block:: yaml
 
         services:
             acme.api.compute_product_price_field:
@@ -1019,7 +1018,7 @@ In this case, you can use an API processor for the ``post_submit`` event of the 
 For example, the following API processor validates that a value of a virtual field called ``label`` should not be blank for
 a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -1058,7 +1057,7 @@ a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
     }
 
 
-.. code:: yaml
+.. code-block:: yaml
 
     services:
       acme.api.validate_label_field:

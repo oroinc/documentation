@@ -51,7 +51,7 @@ Example of configuration extra
 
 The |DescriptionsConfigExtra| is used to request human-readable descriptions of entities and their fields:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 

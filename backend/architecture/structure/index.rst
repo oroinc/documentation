@@ -50,7 +50,7 @@ Every Oro application contains a composer.json file in the application root dire
 
 The required packages (dependencies) are listed in the following way:
 
-.. code::
+.. code-block:: none
 
    ...
 
@@ -77,7 +77,7 @@ These packages may be registered at:
 
 For registration, Oro application or package submits the metadata to the composer using *composer.json* file located in the root directory of the application/package source code in the github repository:
 
-.. code::
+.. code-block:: none
 
    "name": "oro/commerce-crm-application",
    "description": "OroCommerce - an open-source Business to Business Commerce application.\\This package contains a sample application.",

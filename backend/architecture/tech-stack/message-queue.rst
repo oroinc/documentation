@@ -286,7 +286,7 @@ run processes B and C. That could be done in parallel.
 
 Once you configured everything, you can start producing messages:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -297,7 +297,7 @@ Once you configured everything, you can start producing messages:
 
 To consume messages you have to first create a message processor:
 
-.. code:: php
+.. code-block:: php
 
     <?php
     use Oro\Component\MessageQueue\Consumption\MessageProcessor;
@@ -333,7 +333,7 @@ Register it as a container service and subscribe to the topic:
 
 Code example:
 
-.. code:: php
+.. code-block:: php
 
 
         public function process(MessageInterface $message, SessionInterface $session)
@@ -392,7 +392,7 @@ Usage
 The following is an example of a message producing using only a
 transport layer:
 
-.. code:: php
+.. code-block:: php
 
     <?php
 
@@ -420,7 +420,7 @@ transport layer:
 The following is an example of a message consuming using only a
 transport layer:
 
-.. code:: php
+.. code-block:: php
 
     use Oro\Component\MessageQueue\Transport\Dbal\DbalConnection;
     use Doctrine\DBAL\Configuration;
@@ -452,7 +452,7 @@ transport layer:
 The following is an example of a message consuming using consumption
 layer:
 
-.. code:: php
+.. code-block:: php
 
     <?php
     use Oro\Component\MessageQueue\Consumption\MessageProcessor;
@@ -467,7 +467,7 @@ layer:
         }
     }
 
-.. code:: php
+.. code-block:: php
 
     <?php
     use Doctrine\DBAL\Configuration;
@@ -499,7 +499,7 @@ Example
 A processor receives a message with the entity id. It finds the entity
 and changes its status without creating any job.
 
-.. code:: php
+.. code-block:: php
 
         /**
          * {@inheritdoc}

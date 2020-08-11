@@ -27,7 +27,7 @@ This can help to avoid naming conflicts or make the entity aliases more readable
 
 You can explicitly define aliases for a specific entity in the ``entity_aliases`` section of ``entity.yml``:
 
-.. code:: yaml
+.. code-block:: yaml
 
     oro_entity:
         entity_aliases:
@@ -38,7 +38,7 @@ You can explicitly define aliases for a specific entity in the ``entity_aliases`
 
 To exclude certain entities from alias generation process, for example some internal entities, you can add ``entity_alias_exclusions`` section:
 
-.. code:: yaml
+.. code-block:: yaml
 
     oro_entity:
         entity_alias_exclusions:
@@ -54,7 +54,7 @@ In this case, create an entity alias provider.
 
 For this, you need to implement the |EntityAliasProviderInterface| interface in your provider class:
 
-.. code:: php
+.. code-block:: php
 
     use Oro\Bundle\EmailBundle\Entity\Manager\EmailAddressManager;
     use Oro\Bundle\EntityBundle\Model\EntityAlias;
@@ -89,7 +89,7 @@ For this, you need to implement the |EntityAliasProviderInterface| interface in 
 
 And register your provider service in the DI container using the ``oro_entity.alias_provider`` tag:
 
-.. code:: yaml
+.. code-block:: none
 
     oro_email.entity_alias_provider:
         class: Oro\Bundle\EmailBundle\Provider\EmailEntityAliasProvider
@@ -109,7 +109,7 @@ Use the ``php bin/console oro:entity-alias:debug`` CLI command to see all the al
 
 The output example:
 
-.. code:: yaml
+.. code-block:: yaml
 
     Class                                                    Alias                  Plural Alias
     Oro\Bundle\ActivityListBundle\Entity\ActivityList        activitylist           activitylists

@@ -44,7 +44,7 @@ To ensure that your REST API resources work properly, cover them with |functiona
    "getApiBaseUrl","Returns the base URL for all REST API requests, e.g. ``http://localhost/api`` . "
    "appendEntityConfig","Appends a configuration of an entity. This method is helpful when you create a general functionality and need to test it for different configurations without creating a test entity for each of them. Please note that the configuration is restored after each test and thus, you do not need to do it manually."
 
-.. note:: By default, HATEOAS is disabled in functional tests, although it is enabled by default in production and API Sandbox. It was done to avoid cluttering up the tests with HATEOAS links. In case you want to enable HATEOAS for your test, use HTTP_HATEOAS server parameter, e.g. ``$this->cget(['entity' => 'products']), [],      ['HTTP_HATEOAS' => true]``.
+.. note:: By default, HATEOAS is disabled in functional tests, although it is enabled by default in production and API Sandbox. It was done to avoid cluttering up the tests with HATEOAS links. In case you want to enable HATEOAS for your test, use HTTP_HATEOAS server parameter, e.g., ``$this->cget(['entity' => 'products']), [], ['HTTP_HATEOAS' => true]``.
 
 .. _api-load-fixtures:
 
@@ -53,7 +53,7 @@ Load Fixtures
 
 You can use :ref:`Doctrine and Alice fixtures <automated-test>`:
 
-.. code:: php
+.. code-block:: php
 
     class InventoryLevelApiTest extends RestJsonApiTestCase
     {
@@ -68,7 +68,7 @@ You can use :ref:`Doctrine and Alice fixtures <automated-test>`:
 
 Fixture file:
 
-.. code:: yaml
+.. code-block:: yaml
 
     dependencies:
       - Oro\Bundle\WarehouseBundle\Tests\Functional\DataFixtures\LoadWarehouseAndInventoryLevels
@@ -114,7 +114,7 @@ Assert the expected response by using YAML templates.
 
 A YAML template:
 
-.. code:: yaml
+.. code-block:: yaml
 
     data:
         -
@@ -138,7 +138,7 @@ A YAML template:
 
 In php test:
 
-.. code:: php
+.. code-block:: php
 
     public function testGetList()
     {
@@ -162,7 +162,7 @@ YAML Templates for a Request Body
 
 You can use an array with references for a request body:
 
-.. code:: php
+.. code-block:: php
 
     public function testUpdateEntity()
     {
@@ -182,7 +182,7 @@ You can use an array with references for a request body:
 
 Alternatively, you can store YAML in a ``.yml`` file:
 
-.. code:: php
+.. code-block:: php
 
     public function testCreateCustomer()
     {
@@ -199,7 +199,7 @@ Process Single Reference
 
 To process a single reference, e.g. to compare it with another value:
 
-.. code:: php
+.. code-block:: php
 
     self::processTemplateData('@inventory_level.product_unit_precision.product-1.liter->quantity')
 
@@ -212,7 +212,7 @@ Dump the Response into a YAML Template
 
 When you develop new tests for REST API, it may be convenient to dump responses into a YAML template:
 
-.. code:: php
+.. code-block:: php
 
     public function testGetList()
     {

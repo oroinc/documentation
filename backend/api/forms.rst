@@ -19,7 +19,7 @@ If the input data violates validation constraints, they will be automatically co
 
 The following example shows how to add validation constraints to API resources using the ``Resources/config/oro/api.yml`` configuration file:
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
     entities:
@@ -52,7 +52,7 @@ The API forms are isolated from the UI forms. This helps avoid collisions and pr
 
 To register a new form elements using application configuration file,  add ``Resources/config/oro/app.yml`` in any bundle or use *config/config.yml* of your application.
 
-.. code:: yaml
+.. code-block:: yaml
 
     api:
     form_types:
@@ -90,7 +90,7 @@ If you need to add new form elements can by tagging them in the dependency injec
 
 Example:
 
-.. code:: yaml
+.. code-block:: yaml
 
     acme.form.type.datetime:
         class: Acme\Bundle\AcmeBundle\Form\Type\DateTimeType

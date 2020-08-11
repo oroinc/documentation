@@ -15,7 +15,7 @@ Action Group Configuration
 
 File `<bundleResourceRoot>/config/oro/actions.yml`
 
-.. code::
+.. code-block:: none
 
     action_groups:                                  # root node for action groups
         demo_flash_greetings_to:                    # name of action group
@@ -43,7 +43,7 @@ File `<bundleResourceRoot>/config/oro/actions.yml`
 
 Now, we can run this action_group as follows:
 
-.. code::
+.. code-block:: none
 
     @run_action_group:
         action_group: demo_flash_greetings_to
@@ -63,7 +63,7 @@ Call from PHP
 -------------
 
 All named action groups are internally gathered under the `oro_action.action_group_registry` registry service which is the instance of the Oro\Bundle\ActionBundle\Model\ActionGroupRegistry class.
-It has simple api to `get` the |action group| configured instance and perform its execution by applying the `\Oro\Bundle\ActionBundle\Model\ActionGroup::execute` method with proper parameters.
+It has simple api to `get` the |action group| configured instance and perform its execution by applying the `\\Oro\\Bundle\\ActionBundle\\Model\\ActionGroup::execute` method with proper parameters.
 
 Recommendations
 ---------------

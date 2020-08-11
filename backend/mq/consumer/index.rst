@@ -81,7 +81,7 @@ Users may be informed about the state of consumers in the system (whether there 
 
 The notification period can be changed in the application configuration file using the `consumer_heartbeat_update_period` option:
 
-.. code:: yaml
+.. code-block:: yaml
 
    oro_message_queue:
        consumer:

@@ -17,7 +17,7 @@ This tag has the following attributes:
 
 Example:
   
-.. code::
+.. code-block:: none
 
       acme_demo.formatter.some_formatter:
           class: Acme\Bundle\AcmeBundle\Formatter\SomeFormatter
@@ -36,7 +36,7 @@ To apply a formatter, use the `oro_ui.formatter` service.
 
 This manager has method `format` that applies the given formatter to the parameter:
 
-.. code::
+.. code-block:: none
 
     ...
     use Oro\Bundle\UIBundle\Formatter\FormatterManager;
@@ -56,7 +56,7 @@ In this example, formatter `datetime` applies to the `$date` variable.
 
 To use formatters from the twig templates, use the `oro_format` filter:
 
-.. code::
+.. code-block:: none
 
     {{ datetimeVar|oro_format('datetime') }}
 

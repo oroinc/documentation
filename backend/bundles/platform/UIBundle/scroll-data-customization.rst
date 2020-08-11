@@ -59,7 +59,7 @@ This definition shows service used as an event listener for event ``oro_ui.scrol
 
 And the corresponding template `MyBundle:User:my_update.html.twig`:
 
-.. code::
+.. code-block:: none
 
    {{ form_row(form.myField) }}
 

@@ -10,17 +10,15 @@ OroProductBundle adds the Product entity to the OroCommerce application, provide
 Related Documentation
 ---------------------
 
-* |Customize Product View Page|
-* |Customize Product List Page|
-* |Customize Products SKU Validation|
-* |Product Unit Formatting|
-* |PHP Product Unit Label Formatter|
-* |Two Step Product Creation|
-* |Default Product Unit|
-* |Product Attributes|
-* |Related Items|
-* |(Product) Actions|
-* |Product Variant Search|
+.. toctree::
+   :maxdepth: 1
+
+   actions
+   customize-products
+   product-attributes
+   product-unit-formatting
+   product-variant-search
+   related-items
 
 
 .. include:: /include/include-links-dev.rst

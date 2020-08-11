@@ -125,7 +125,7 @@ name so it will not be possible to run another big job at the same time)
 The processor creates a set of delayed jobs, each of them sends
 ``Topics::DO_SMALL_JOB`` message.
 
-.. code:: php
+.. code-block:: php
 
         /**
          * {@inheritdoc}
@@ -161,7 +161,7 @@ The processor creates a set of delayed jobs, each of them sends
 The processor subscribes to the ``Topics::DO_SMALL_JOB`` and runs the
 created delayed job.
 
-.. code:: php
+.. code-block:: php
 
         /**
          * {@inheritdoc}
@@ -463,7 +463,7 @@ Examples
 **Run Only a Single Job (i.e. Job with One Step with runUnique)**
 
 
-.. code:: php
+.. code-block:: php
 
     class MessageProcessor implements MessageProcessorInterface
     {
@@ -492,7 +492,7 @@ Examples
 
 **Job Flow Has Two or More Steps**
 
-.. code:: php
+.. code-block:: php
 
     class Step1MessageProcessor implements MessageProcessorInterface
     {

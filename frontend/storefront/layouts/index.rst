@@ -631,7 +631,7 @@ Reference Imported Blocks
 
 When you need the imported block to be rendered without a direct reference to its template name, you can use the TWIG variable `block_type_widget_id` which refers to the twig widget ID for current block type, like `container_widget`, `menu_widget`, etc.
 
-For example, here is the customized toolbar element defined in the |DataGridBundle| on the product page (|ProductBundle|) in the OroCommerce application:
+For example, here is the customized toolbar element defined in the |DataGridBundle| on the product page (:ref:`ProductBundle <bundle-docs-commerce-product-bundle>`) in the OroCommerce application:
 
 .. code-block:: twig
    :linenos:
@@ -699,7 +699,7 @@ First, the datagrid toolbar in `DataGridBundle` was imported with the following 
         <div{{ block('block_attributes') }}>{{ block_widget(block) }}</div>
     {% endblock %}
 
-Next, we redefined the `imports/datagrid_toolbar/layout.html.twig` block in the |ProductBundle| which resulted in the following code:
+Next, we redefined the `imports/datagrid_toolbar/layout.html.twig` block in the :ref:`ProductBundle <bundle-docs-commerce-product-bundle>` which resulted in the following code:
 
 .. code-block:: twig
    :linenos:
