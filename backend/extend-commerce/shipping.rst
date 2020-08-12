@@ -1,5 +1,5 @@
-Shipping Methods
-================
+Create Shipping Method Integrations
+===================================
 
 This topic describes how to add a custom shipping method to your OroCommerce-based store.
 

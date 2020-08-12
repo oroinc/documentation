@@ -1,5 +1,5 @@
-Payment Methods
-===============
+Create Payment Method Integrations
+==================================
 
 This topic describes how to add a custom payment method to your OroCommerce-based store.
 
@@ -557,3 +557,9 @@ Clear the application cache, open the user interface and try to submit an order.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   CyberSource Integration <cybersource>
