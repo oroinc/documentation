@@ -11,5 +11,5 @@ Extending OroCommerce
 .. toctree::
    :maxdepth: 1
 
-   payments
+   payment/index
    shipping

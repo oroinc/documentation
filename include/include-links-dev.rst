@@ -5546,4 +5546,36 @@ Links (Dev)
 
 .. |robots.txt| raw:: html
 
-   <a href="http://www.robotstxt.org/ " target="_blank">robots.txt</a>
+   <a href="http://www.robotstxt.org/" target="_blank">robots.txt</a>
+
+.. |CyberSource| raw:: html
+
+   <a href="https://www.cybersource.com" target="_blank">CyberSource</a>
+
+.. |CyberSourceCheckoutListener| raw:: html
+
+   <a href="https://github.com/oroinc/cybersource/blob/master/src/Oro/Bundle/CyberSourceBundle/EventListener/Callback/CyberSourceCheckoutListener.php" target="_blank">CyberSourceCheckoutListener</a>
+
+.. |OrderReviewComponent| raw:: html
+
+   <a href="https://github.com/oroinc/cybersource/blob/master/src/Oro/Bundle/CyberSourceBundle/Resources/public/js/app/components/hosted-checkout/order-review-component.js" target="_blank">OrderReviewComponent</a>
+
+.. |CreditCardComponent| raw:: html
+
+   <a href="https://github.com/oroinc/cybersource/blob/master/src/Oro/Bundle/CyberSourceBundle/Resources/public/js/app/components/checkout-api/credit-card-component.js" target="_blank">CreditCardComponent</a>
+
+.. |Flex Microform| raw:: html
+
+   <a href="https://developer.cybersource.com/api/developer-guides/dita-flex/SAFlexibleToken/FlexMicroform.html" target="_blank">Flex Microform</a>
+
+.. |PurchasePaymentAction| raw:: html
+
+   <a href="https://github.com/oroinc/cybersource/blob/master/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CheckoutApi/PurchasePaymentAction.php" target="_blank">Flex Microform</a>
+
+.. |CapturePaymentAction| raw:: html
+
+   <a href=""https://github.com/oroinc/cybersource/blob/master/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CapturePaymentAction.php" target="_blank">CapturePaymentAction</a>
+
+.. |CancelPaymentAction| raw:: html
+
+   <a href="https://github.com/oroinc/cybersource/blob/master/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CancelPaymentAction.php" target="_blank">CancelPaymentAction</a>
