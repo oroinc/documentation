@@ -6,7 +6,7 @@ How to Add/Remove Environment Variables
 |Environment variable| can be configured for application usage, as illustrated below:
 
 .. code-block:: none
-    :linenos:
+   :linenos:
 
     ---
     orocloud_options:
@@ -19,3 +19,4 @@ How to Add/Remove Environment Variables
 * **env_vars** — the hash where the key is an environment variable name, and the value is the environment variable value.
 
 .. include:: /include/include-links-cloud.rst
+   :start-after: begin
