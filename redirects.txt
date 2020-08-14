@@ -33,4 +33,4 @@ backend/bundles/platform/ActionBundle/commands /backend/entities-data-management
 backend/bundles/platform/ActionBundle/configuration-reference /backend/entities-data-management/actions/configuration-reference
 backend/bundles/platform/ActionBundle/glossary /backend/entities-data-management/actions/glossary
 backend/bundles/platform/ActionBundle/operations /backend/entities-data-management/actions/index
-backend/extend-commerce/payments/ backend/extend-commerce/payment/index
+backend/extend-commerce/payments /backend/extend-commerce/payment/index
