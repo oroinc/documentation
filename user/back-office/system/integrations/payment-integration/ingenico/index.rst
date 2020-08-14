@@ -11,7 +11,7 @@ Configure Integration Settings in the Back-Office
 
 .. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
-.. hint:: The feature requires extension, so visit Oro Marketplace to download the |InfinitePay extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
+.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Ingenico extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 To configure the integration between Ingenico and OroCommerce, follow the steps outlined below:
 

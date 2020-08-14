@@ -10,7 +10,7 @@ In B2B, sellers must take personalization to the next level, as each buyer repre
 
 The payment options available to buyers when they are creating orders in the OroCommerce storefront depend on the payment address collected at the checkout. Once an address is provided, OroCommerce evaluates payment methods against the special payment rules and exposes only the options recommended for the particular location and/or based on other order details. After the customer user has selected the payment method, they are prompted to enter payment details and proceed to the checkout. After the payment details are provided, the salesperson can view the payment history, and capture the delayed payment.
 
-To enable the buyer to have one or several payment options in the storefront, you need to :ref:`set up payment integrations <user-guide--shipping--configuration--common-details>` and :ref:`link them to payment rules <doc--shipping-rules--shipping-methods--detailed>` in the OroCommerce back-office.
+To enable the buyer to have one or several payment options in the storefront, you need to :ref:`set up payment integrations <sys--integrations--manage-integrations--payment-methods>` and :ref:`link them to payment rules <sys--payment-rules>` in the OroCommerce back-office.
 
 .. note::
    See a short demo on |how to set up payment method integrations| or keep reading the step-by-step guidance below.
@@ -57,6 +57,10 @@ OroCommerce works with the following payment methods out-of-the-box:
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
 
   Ingenico ePayments' global payment platform extension for OroCommerce enables sellers to improve their payments experience by accepting online payments from customers in the OroCommerce storefront and manage all transactions in the OroCommerce back office.
+
+* :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
+
+  CyberSource is a payment gateway solution that allows merchants to safely accept and effectively process payments.
 
 .. hint:: Check out |OroCommerce's Extension Marketplace| to download other payment extensions that you can pair with your OroCommerce applications.
 
