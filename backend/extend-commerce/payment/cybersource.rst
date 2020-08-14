@@ -19,7 +19,7 @@ In case the package is added to an already installed application, then :ref:`pla
 Configuration
 -------------
 
-For the detailed instructions on the integration configuration, see the guide.
+For the detailed instructions on the integration configuration, see the :ref:`user guide <user-guide--payment--payment-providers-cybersource>`.
 
 Overview
 --------

@@ -1,7 +1,7 @@
 .. _bundle-docs-platform-action-bundle-operations:
 
-Operations
-==========
+Operations (Actions)
+====================
 
 *Operations* provide possibility to assign any interaction with a user by specifying:
 
