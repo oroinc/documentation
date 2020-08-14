@@ -46,6 +46,7 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
 * :ref:`Wirecard Services <doc--payment--payment-providers-overview--wirecard>`
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
+* :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
 
 Remove an Integration with a Payment Method Provider
 ----------------------------------------------------
@@ -88,5 +89,6 @@ The payment methods that were based on this integration are no longer usable in 
    InfinitePay Payment Service <infinitepay/index>
    Wirecard Payment Services <wirecard/index>
    Ingenico Payment Service <ingenico/index>
+   CyberSource Payment Service <cybersource/index>
    Payments at Checkout <checkout/index>
 

@@ -811,4 +811,19 @@ Links (User)
 
    <a href="https://www.marello.com/" target="_blank">Marello ERP</a>
 
+.. |Generated an API key| raw:: html
+
+   <a href="https://developer.cybersource.com/api/developer-guides/dita-gettingstarted/authentication/createSharedKey.html" target="_blank">Generated an API key</a>
+
+.. |Ingenico extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/ingenico-epayments-bundle/" target="_blank">Ingenico extension</a>
+
+.. |CyberSource extension| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/cybersource-orocommerce-integration/" target="_blank">CyberSource extension</a>
+
+
+
+
 
