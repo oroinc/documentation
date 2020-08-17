@@ -746,30 +746,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">relevant documentation </a>
 
-.. |Enable Price Sharding| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/PricingBundle/Resources/doc/price-sharding.md" target="_blank">Enable Price Sharding</a>
-
-.. |Create a Pricing Strategy| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/PricingBundle/Resources/doc/pricing-strategy.md" target="_blank">Create a Pricing Strategy</a>
-
-.. |Merge by Priority Pricing Strategy| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/PricingBundle/Resources/doc/pricing_strategy_merge_by_priority.md" target="_blank">Merge by Priority Pricing Strategy</a>
-
-.. |Minimal Prices Pricing Strategy| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/PricingBundle/Resources/doc/pricing_strategy_minimal_prices.md" target="_blank">Minimal Prices Pricing Strategy</a>
-
-.. |Set Up a Price Storage| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/PricingBundle/Resources/doc/price-storage.md" target="_blank">Set Up a Price Storage</a>
-
-.. |Replace the Default Storage| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/PricingBundle/Resources/doc/price-storage.md#replacing-default-storage" target="_blank">Replace the Default Storage</a>
-
 .. |Doctrine ORM documentation| raw:: html
 
    <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html" target="_blank">Doctrine ORM documentation</a>
@@ -5358,3 +5334,4 @@ Links (Dev)
 .. |Order Confirmation Email Template| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md" target="_blank">Order Confirmation Email Template</a>
+
