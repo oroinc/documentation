@@ -46,15 +46,20 @@ OroCommerce Bundles
 
 All documentation that relates to OroCommerce-specific bundles is collected below.
 
-============================================================================    =======================================================================
-:ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`                      :ref:`OrderBundle <bundle-docs-commerce-order-bundle>`
-:ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`                    :ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`
-:ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`                              :ref:`ProductBundle <bundle-docs-commerce-product-bundle>`
-:ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`                      :ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`
-:ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`    :ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`
-:ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`    :ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`
-:ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`                  :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`
-============================================================================    =======================================================================
+.. csv-table::
+
+   "**C**", "**O**",  "**W**"
+   ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`", ":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`", ":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+   ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`", "**P**", :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`
+   ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`", ":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`"
+   ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`", ":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`"
+   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`", "**S**"
+   "**F**", ":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
+   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", "**T**"
+   "**I**", ":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
+   ":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`"
+
+
 
 .. toctree::
    :hidden:
