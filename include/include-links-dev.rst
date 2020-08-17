@@ -702,30 +702,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">relevant documentation </a>
 
-.. |Enable Price Sharding| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/price-sharding.md" target="_blank">Enable Price Sharding</a>
-
-.. |Create a Pricing Strategy| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/pricing-strategy.md" target="_blank">Create a Pricing Strategy</a>
-
-.. |Merge by Priority Pricing Strategy| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/pricing_strategy_merge_by_priority.md" target="_blank">Merge by Priority Pricing Strategy</a>
-
-.. |Minimal Prices Pricing Strategy| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/pricing_strategy_minimal_prices.md" target="_blank">Minimal Prices Pricing Strategy</a>
-
-.. |Set Up a Price Storage| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/price-storage.md" target="_blank">Set Up a Price Storage</a>
-
-.. |Replace the Default Storage| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/price-storage.md#replacing-default-storage" target="_blank">Replace the Default Storage</a>
-
 .. |Doctrine ORM documentation| raw:: html
 
    <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html" target="_blank">Doctrine ORM documentation</a>
@@ -5548,6 +5524,10 @@ Links (Dev)
 
    <a href="http://www.robotstxt.org/" target="_blank">robots.txt</a>
 
+.. |Feature Toggle Bundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FeatureToggleBundle/README.md" target="_blank">Feature Toggle Bundle</a>
+
 .. |CyberSource| raw:: html
 
    <a href="https://www.cybersource.com" target="_blank">CyberSource</a>
@@ -5579,3 +5559,4 @@ Links (Dev)
 .. |CancelPaymentAction| raw:: html
 
    <a href="https://github.com/oroinc/cybersource/blob/master/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CancelPaymentAction.php" target="_blank">CancelPaymentAction</a>
+
