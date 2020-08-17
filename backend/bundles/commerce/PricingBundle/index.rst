@@ -16,19 +16,14 @@ For back-office users (e.g. sales representatives), the bundle enables the follo
 Related Documentation
 ---------------------
 
-* |Enable Price Sharding|
-* |Create a Pricing Strategy|
-* |Merge by Priority Pricing Strategy|
-* |Minimal Prices Pricing Strategy|
-* |Set Up a Price Storage|
-* |Replace the Default Storage|
-
 .. toctree::
-   :hidden:
+   :maxdepth: 1
    :titlesonly:
 
-   optimize-index-and-price-calculation
    price-list-sharding
+   optimize-index-and-price-calculation
+   combined-price-lists
+   price-storage
+   pricing-strategy
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+
