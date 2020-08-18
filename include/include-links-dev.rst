@@ -1042,14 +1042,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/InventoryBundle/Resources/doc/low_inventory_highlights.md#configuration" target="_blank">Low Inventory Highlighting</a>
 
-.. |Override the Default Breadcrumbs Data Source| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/3.1/src/Oro/Bundle/WebCatalogBundle#breadcrumbs" target="_blank">Override the Default Breadcrumbs Data Source</a>
-
-.. |Create a Content Variant| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/3.1/src/Oro/Bundle/WebCatalogBundle#how-to-create-own-content-variant" target="_blank">Create a Content Variant</a>
-
 .. |Configure Redis Servers| raw:: html
 
    <a href="https://github.com/oroinc/redis-config#configure-redis-servers" target="_blank">Configure Redis Servers</a>
@@ -5334,4 +5326,33 @@ Links (Dev)
 .. |Order Confirmation Email Template| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md" target="_blank">Order Confirmation Email Template</a>
+
+.. |SystemPage Model| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebCatalogBundle/Api/Model/SystemPage.php" target="_blank">SystemPage Model</a>
+
+.. |SystemPage declaration in Resources/config/oro/api_frontend.yml| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebCatalogBundle/Resources/config/oro/api_frontend.yml" target="_blank">SystemPage declaration in Resources/config/oro/api_frontend.yml</a>
+
+.. |SystemPageRepository class| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebCatalogBundle/Api/Repository/SystemPageRepository.php" target="_blank">SystemPageRepository class</a>
+
+.. |LoadSystemPage API processor| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebCatalogBundle/Api/Processor/LoadSystemPage.php" target="_blank">LoadSystemPage API processor</a>
+
+.. |ExpandSystemPageContentVariant API processor| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebCatalogBundle/Api/Processor/ExpandSystemPageContentVariant.php" target="_blank">ExpandSystemPageContentVariant API processor</a>
+
+.. |LoadSystemPageContentVariantSubresource API processor| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebCatalogBundle/Api/Processor/LoadSystemPageContentVariantSubresource.php" target="_blank">LoadSystemPageContentVariantSubresource API processor</a>
+
+.. |Storefront REST API| raw:: html
+
+   <a href="https://doc.oroinc.com/backend/api/storefront/" target="_blank">Storefront REST API</a>
+
 

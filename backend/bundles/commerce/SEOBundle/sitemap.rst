@@ -1,3 +1,5 @@
+.. _bundle-docs-commerce-seo-bundle-sitemap:
+
 Sitemap
 =======
 
