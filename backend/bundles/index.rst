@@ -48,16 +48,15 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
 
 .. csv-table::
 
-   "**C**", "**O**",  "**W**"
-   ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`", ":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`", ":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
-   ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`", "**P**", :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`
-   ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`", ":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`"
-   ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`", ":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`"
-   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`", "**S**"
-   "**F**", ":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
-   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", "**T**"
-   "**I**", ":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
-   ":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`"
+    "**C**", "**I**", "**T**"
+    ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`", ":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`", ":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
+    ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`", "**O**", "**W**"
+    ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`", ":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`", ":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`", "**P**", ":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
+    ":ref:`CookieConsentBannerBundle <bundle-docs-commerce-cookie-consent-bundle>`", ":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`"
+    ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`", ":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`"
+    "**F**", "**S**"
+    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", ":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
 
 
 
@@ -133,6 +132,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    commerce/CheckoutBundle/index
    commerce/CMSBundle/index
    commerce/ConsentBundle/index
+   commerce/CookieConsentBundle/index
    commerce/CustomerBundle/index
    commerce/FrontendBundle/index
    commerce/InventoryBundle/index

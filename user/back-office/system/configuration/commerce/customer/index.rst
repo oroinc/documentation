@@ -11,6 +11,7 @@ Learn how to set up product and category visibility restrictions, customer user 
 * :ref:`Customer Users <sys-config--configuration--commerce--customers--customer-users>`
 * :ref:`Contact Requests <sys--conf--commerce--customer--contact-request-global>`
 * :ref:`Consents <configuration--guide--commerce--configuration--consents>`
+* :ref:`Cookie Consent Banner <configuration--guide--commerce--configuration--cookie-consents>`
 
 .. toctree::
    :titlesonly:
@@ -21,3 +22,4 @@ Learn how to set up product and category visibility restrictions, customer user 
    Customer Users <global-customer-users>
    Contact Requests <global-contact-us>
    Consents <global-consents>
+   Cookie Consent Banner <cookie-consent-banner>
