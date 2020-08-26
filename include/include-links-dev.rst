@@ -244,8 +244,6 @@ Links (Dev)
 
    <a href="http://karma-runner.github.io/4.0/index.html" target="_blank">Karma</a>
 
-
-
 .. |Karma plugin| raw:: html
 
    <a href="https://plugins.jetbrains.com/plugin/7287-karma" target="_blank">Karma plugin</a>
@@ -253,8 +251,6 @@ Links (Dev)
 .. |ddescriber for jasmine| raw:: html
 
    <a href="https://plugins.jetbrains.com/plugin/7233-ddescriber-for-jasmine" target="_blank">ddescriber for jasmine</a>
-
-
 
 .. |Install PHPStorm| raw:: html
 
@@ -981,42 +977,6 @@ Links (Dev)
 .. |Configure Redis Servers| raw:: html
 
    <a href="https://github.com/oroinc/redis-config#configure-redis-servers" target="_blank">Configure Redis Servers</a>
-
-.. |Configure Website Search| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/configuration.md" target="_blank">Configure Website Search</a>
-
-.. |Perform Search| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/search.md" target="_blank">Perform Search</a>
-
-.. |Trigger Reindexation| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/indexation.md#how-to-trigger-reindexation" target="_blank">Trigger Reindexation</a>
-
-.. |Postpone/Skip Reindexation| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/platform_update.md" target="_blank">Postpone/Skip Reindexation</a>
-
-.. |Reindex Data in Tests (WebsiteSearchExtensionTrait)| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/testing.md" target="_blank">Reindex Data in Tests (WebsiteSearchExtensionTrait)</a>
-
-.. |Customize Search Relevance Weight| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/relevance_weight.md" target="_blank">Customize Search Relevance Weight</a>
-
-.. |Website Search VS Regular Search| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/relevance_weight.md" target="_blank">Website Search VS Regular Search</a>
-
-.. |Search Index Structure| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/index_structure.md" target="_blank">Search Index Structure</a>
-
-.. |ORM Search Engine| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/orm_engine.md" target="_blank">ORM Search Engine</a>
 
 .. |ChainProcessor| raw:: html
 
@@ -2782,38 +2742,6 @@ Links (Dev)
 .. |ScopeBundle| raw:: html
 
    <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">ScopeBundle</a>
-
-.. |Configure Search| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md" target="_blank">Configure Search</a>
-
-.. |Search Bundle Console Commands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md" target="_blank">Console Commands</a>
-
-.. |Postpone or Skip Reindexation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/platform_update.md" target="_blank">Postpone or Skip Reindexation</a>
-
-.. |API Simple Search| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/simple_search.md" target="_blank">API Simple Search</a>
-
-.. |API Advanced Search| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/advanced_search.md" target="_blank">API Advanced Search</a>
-
-.. |Query Builder| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/query_builder.md" target="_blank">Query Builder</a>
-
-.. |Configure ORM Search Engine| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/orm_search_engine.md" target="_blank">Configure ORM Search Engine</a>
-
-.. |Customize Relevance Weight in Standard Search Index| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/relevance_weight.md" target="_blank">Customize Relevance Weight in Standard Search Index</a>
 
 .. |Initialize a Sidebar| raw:: html
 
@@ -5579,5 +5507,61 @@ Links (Dev)
 .. |Storefront REST API| raw:: html
 
    <a href="https://doc.oroinc.com/backend/api/storefront/" target="_blank">Storefront REST API</a>
+
+.. |WebsiteSearchExtensionTrait| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Tests/Functional/WebsiteSearchExtensionTrait.php" target="_blank">WebsiteSearchExtensionTrait</a>
+
+.. |size parameter| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-aggregations-bucket-terms-aggregation.html#search-aggregations-bucket-terms-aggregation-size" target="_blank">size parameter</a>
+
+.. |Stop old Elasticsearch service| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/stopping-elasticsearch.html" target="_blank">Stop old Elasticsearch service</a>
+
+.. |search index dump in the Elasticsearch bulk API| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/7.x/docs-bulk.html" target="_blank">search index dump in the Elasticsearch bulk API</a>
+
+.. |Stop old Elasticsearch| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/stopping-elasticsearch.html" target="_blank">Stop old Elasticsearch</a>
+
+.. |Start the Elasticsearch| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html" target="_blank">Start the Elasticsearch</a>
+
+.. |index mapping| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.7/mapping.html" target="_blank">index mapping</a>
+
+.. |Modules Snapshot topic| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.7/modules-snapshots.html" target="_blank">Modules Snapshot topic</a>
+
+.. |Elasticsearch documentation| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/_index_management_operations.html" target="_blank">Elasticsearch documentation</a>
+
+.. |Elasticsearch per-request configuration documentation| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/_per_request_configuration.html" target="_blank">Elasticsearch per-request configuration documentation</a>
+
+.. |applicable analyzers| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/analysis-lang-analyzer.html" target="_blank">applicable analyzers</a>
+
+.. |refresh operation| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/indices-refresh.html" target="_blank">refresh operation</a>
+
+.. |DateTimeFormatter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Formatter/DateTimeFormatter.php" target="_blank">DateTimeFormatter</a>
+
+.. |string by specific format| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Formatter/DateTimeFormatter.php#L7" target="_blank">string by specific format</a>
 
 

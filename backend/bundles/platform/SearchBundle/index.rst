@@ -13,14 +13,23 @@ Related Documentation
 ---------------------
 
 * :ref:`Introduction to Search Index <search_index_overview>`
-* |Configure Search|
-* |Search Bundle Console Commands|
-* |Postpone or Skip Reindexation|
-* |API Simple Search|
-* |API Advanced Search|
-* |Query Builder|
-* |Configure ORM Search Engine|
-* |Customize Relevance Weight in Standard Search Index|
+* :ref:`Configure Search <db-search--configuration>`
+* :ref:`Search Bundle Console Commands <search_index_db_from_md--console-commands>`
+* :ref:`Postpone or Skip Reindexation <bundle-docs-commerce-website-search-bundle-platform-update>`
+* :ref:`API Simple Search <simple_search>`
+* :ref:`API Advanced Search <advanced-search-api>`
+* :ref:`Query Builder <search-bundle-query-builder>`
+* :ref:`Configure ORM Search Engine <orm_search_engine>`
+* :ref:`Customize Relevance Weight in Standard Search Index <bundle-docs-platform-search-bundle-relevance-weight>`
+* :ref:`DateTimeFormatter <bundle-docs-platform-search-bundle-datetime>`
+
+.. toctree::
+   :hidden:
+
+   orm-search-engine
+   relevance-weight
+   date-time-formatter
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -1,3 +1,5 @@
+.. _search-bundle-query-builder:
+
 Query Builder
 =============
 

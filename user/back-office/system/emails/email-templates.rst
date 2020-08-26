@@ -596,7 +596,7 @@ On top of functions, you can use filters in email templates. The full set of the
 * |title|
 * |trim|
 * |upper|
-* |oro_html_sanitize|
+* :ref:`oro_html_sanitize <bundle-docs-platform-ui-bundle-twig-filters>`
 * |oro_format|
 * |oro_format_address|
 * |oro_format_date|

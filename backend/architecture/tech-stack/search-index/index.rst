@@ -431,12 +431,5 @@ References
 * |Website Search Index Type|
 
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   orm-search-engine
-   elastic-search
-
 .. include:: /include/include-links-dev.rst
    :start-after: begin
