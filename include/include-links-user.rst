@@ -431,10 +431,6 @@ Links (User)
 
    <a href="https://twig.symfony.com/doc/2.x/filters/upper.html" target="_blank">upper</a>
 
-.. |oro_html_sanitize| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/twig-filters.md#oro_html_sanitize" target="_blank">oro_html_sanitize</a>
-
 .. |oro_format| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/UIBundle/Twig/FormatExtension.php#L76" target="_blank">oro_format</a>

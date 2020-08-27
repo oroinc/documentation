@@ -12,15 +12,20 @@ It also enables developers to configure this search index in the YAML configurat
 Related Documentation
 ---------------------
 
-* |Configure Website Search|
-* |Perform Search|
-* |Trigger Reindexation|
-* |Postpone/Skip Reindexation|
-* |Reindex Data in Tests (WebsiteSearchExtensionTrait)|
-* |Customize Search Relevance Weight|
-* |Website Search VS Regular Search|
-* |Search Index Structure|
-* |ORM Search Engine|
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+   website-search
+   configuration
+   index-structure
+   console-commands
+   search
+   indexation
+   platform-update
+   orm-engine
+   relevance-weight
+   testing
+
+
+
