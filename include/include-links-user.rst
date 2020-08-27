@@ -819,7 +819,9 @@ Links (User)
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/cybersource-orocommerce-integration/" target="_blank">CyberSource extension</a>
 
+.. |Added a security key| raw:: html
 
+   <a href="https://support.cybersource.com/s/article/How-to-Create-or-Update-a-Secure-Acceptance-security-key" target="_blank">Added a security key</a>
 
 
 

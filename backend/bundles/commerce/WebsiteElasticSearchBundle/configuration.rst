@@ -131,5 +131,3 @@ to fill it with data.
    php bin/console oro:website-elasticsearch:create-website-indexes --env=prod
    php bin/console oro:website-search:reindex --env=prod --scheduled
 
-
-

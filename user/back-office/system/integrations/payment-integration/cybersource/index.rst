@@ -17,10 +17,10 @@ Integration Prerequisites
 
 To start using CyberSource with OroCommerce application, make sure you have:
 
-1. Registered and created a merchant profile with CyberSpace.
+1. Registered and created a merchant profile with CyberSource.
 2. Enabled the card types that you want to use for payment transactions.
 3. Configured each card type.
-4. Added a security key.
+4. |Added a security key|.
 5. Enabled your profile.
 6. |Generated an API key|.
 
