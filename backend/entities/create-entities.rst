@@ -352,6 +352,8 @@ For example, the migration class for the ``Hotel`` entity looks is illustrated b
         }
     }
 
+.. note:: Entity metadata in the PHP entity classes (annotations) should match exactly what the schema migration is doing. If you create a migration that modifies the type, length or another property of an existing entity field, please remember to make the same change in the PHP entity class annotations.
+
 You can modify the database using the interface the Doctrine DBAL offers with its ``Schema`` class, and you can also execute queries directly using the ``QueryBag``, if necessary.
 
 Queries executed using the QueryBag, are divided into two groups: use the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\QueryBag::addPreQuery`  to add a query that is executed before the schema changes from the migration class are performed. Queries scheduled with the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\QueryBag::addPostQuery` method are executed after the schema is modified.
