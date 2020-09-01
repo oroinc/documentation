@@ -36,3 +36,4 @@ backend/extend-commerce/payments /backend/extend-commerce/payment/index
 backend/bundles/commerce/ConsentBundle/cookie-banner /backend/bundles/commerce/CookieConsentBundle/index
 backend/architecture/tech-stack/search-index/elastic-search /backend/bundles/platform/ElasticSearchBundle/index
 backend/architecture/tech-stack/search-index/orm-search-engine /backend/bundles/platform/SearchBundle/orm-search-engine
+cloud/architecture /cloud/architecture/index

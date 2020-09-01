@@ -17,7 +17,7 @@ OroCloud Documentation
    :hidden:
    :maxdepth: 1
 
-   architecture
+   architecture/index
    environments
    security
    monitoring

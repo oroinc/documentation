@@ -1,5 +1,5 @@
-Upgrade an Application Using Pre-Built Assets
-=============================================
+Application Upgrade Using Pre-Built Assets
+==========================================
 
 On an upgrade, one of the most resource-consuming operations is JavaScript and CSS assets build.
 To speed up the upgrade process by up to 25%, you can provide pre-built assets together with the application source code.
