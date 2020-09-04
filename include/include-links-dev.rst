@@ -5428,6 +5428,10 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy" target="_blank">setting up the Local Proxy</a>
 
+.. |Define a new client| raw:: html
+
+   <a href="https://github.com/snc/SncRedisBundle/blob/3.2.2/Resources/doc/index.md#usage" target="_blank">Define a new client</a>
+
 .. |changefreq| raw:: html
 
    <a href="https://www.sitemaps.org/protocol.html#changefreqdef" target="_blank">changefreq</a>
