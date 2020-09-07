@@ -5355,4 +5355,7 @@ Links (Dev)
 
    <a href="https://doc.oroinc.com/backend/api/storefront/" target="_blank">Storefront REST API</a>
 
+.. |Define a new client| raw:: html
+
+   <a href="https://github.com/snc/SncRedisBundle/blob/3.2.2/Resources/doc/index.md#usage" target="_blank">Define a new client</a>
 

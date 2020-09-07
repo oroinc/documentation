@@ -34,6 +34,7 @@ The OroCommerce storefront design architecture has some differences from the bac
     templates
     images
     how-to/index
+    render-cache
     debugging
 
 
