@@ -38,6 +38,8 @@ Attributes
 * billingAddress.countryIso3 *string*
 * billingAddress.countryIso2 *string*
 
+To find the whole list of fields available for *billingAddress*, navigate to System > Entities > Entity Management > Order Address. More details on the entity fields management are described :ref:`here <admin-guide-manage-entity-fields>`.
+
 *shippingAddress*
 
 * shippingAddress.street *string*
@@ -62,6 +64,8 @@ Attributes
 * shippingOrigin.countryIso3 *string*
 * shippingOrigin.countryIso2 *string*
 
+To find the whole list of fields available for *shippingOrigin*, navigate to System > Entities > Entity Management > Order Address. More details on the entity fields management are described :ref:`here <admin-guide-manage-entity-fields>`.
+
 **Business**
 
 *Customer*
@@ -70,6 +74,11 @@ Attributes
 * customer.name *string*
 * customer.group.id *int*
 * customer.group.name *string*
+* customer.payment_term_7c4f1e8e.label *string* (Payment Term)
+* customer.payment_term_7c4f1e8e.id *int* (Payment Term)
+
+
+To find the whole list of fields available for *customer*, navigate to System > Entities > Entity Management > Customer. More details on the entity fields management are described :ref:`here <admin-guide-manage-entity-fields>`.
 
 *Customer User*
 
@@ -79,6 +88,9 @@ Attributes
 * customerUser.middleName *string*
 * customerUser.lastName *string*
 * customerUser.fullName *string* (which is a customerUser.firstName ~ ‘ ‘ ~ customerUser.lastName, e.g. 'Amanda Cole')
+
+To find the whole list of fields available for *customerUser*, navigate to System > Entities > Entity Management > Customer User. More details on the entity fields management are described :ref:`here <admin-guide-manage-entity-fields>`.
+
 
 .. note:: Please note that if you enable guest checkout on your website, `customerUser` will be empty on the first two checkout steps. To prevent shipping and payment calculation errors, you can add an additional condition, "customerUser and", before the first usage of the `customerUser` variable, for example, `subtotal > 500.0 and customerUser and customerUser.email = ""`
 
@@ -102,7 +114,7 @@ lineItems Collection
 
 * lineItem.product.id *int*
 * lineItem.product.sku *string*
-* lineItem.product.primaryUnitPrecision.unit.code *string*
+* lineItem.product.primaryUnitPrecision.id *int*
 * lineItem.product.primaryUnitPrecision.precision *int*
 * lineItem.product.primaryUnitPrecision.sell *bool*
 * lineItem.product.category.id *int*
@@ -118,6 +130,14 @@ lineItems Collection
 * lineItem.dimensions.value.height *float*
 * lineItem.dimensions.unit.code *string*
 * lineItem.product.unitPrecisions **collection**
+
+To find the whole list of fields available for:
+
+* *lineItem* --- navigate to System > Entities > Entity Management > Order Line Item
+* *lineItem.product* --- navigate to System > Entities > Entity Management > Product
+* *lineItem.product.productUnit* ---  navigate to System > Entities > Entity Management > Product Unit
+
+More details on the entity fields management are described :ref:`here <admin-guide-manage-entity-fields>`.
 
 lineItems[X].product.unitPrecisions Collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -144,6 +164,7 @@ lineItems[X].product.inventoryLevels Collection
   * inventoryLevel.productUnitPrecision.sell *bool*
   * inventoryLevel.warehouse.id *int*
   * inventoryLevel.warehouse.name *string*
+
 
 customer.users Collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
