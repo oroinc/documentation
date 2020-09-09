@@ -231,9 +231,9 @@ Links (User)
 
    <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-method-integrations" target="_blank">how to set up payment method integrations</a>
 
-.. |GDPR portal| raw:: html
+.. |GDPR| raw:: html
 
-   <a href="https://www.eugdpr.org/" target="_blank">GDPR portal</a>
+   <a href="https://www.eugdpr.org/" target="_blank">GDPR</a>
 
 .. |EU Commission web page| raw:: html
 
@@ -807,3 +807,26 @@ Links (User)
 
    <a href="https://www.marello.com/" target="_blank">Marello ERP</a>
 
+.. |CCPA| raw:: html
+
+   <a href="https://ccpa-info.com/" target="_blank">CCPA</a>
+
+.. |CalOPPA| raw:: html
+
+   <a href="https://consumercal.org/about-cfc/cfc-education-foundation/california-online-privacy-protection-act-caloppa-3/" target="_blank">CalOPPA</a>
+
+.. |guide to privacy laws| raw:: html
+
+   <a href="https://fas.org/sgp/crs/misc/R45631.pdf" target="_blank">guide to privacy laws</a>
+
+.. |CAN-SPAM| raw:: html
+
+   <a href="https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business" target="_blank">CAN-SPAM</a>
+
+.. |COPPA| raw:: html
+
+   <a href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule" target="_blank">COPPA</a>
+
+.. |Federal Trade Commission| raw:: html
+
+   <a href="https://www.ftc.gov/" target="_blank">Federal Trade Commission</a>

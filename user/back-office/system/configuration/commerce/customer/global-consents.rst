@@ -9,7 +9,7 @@ Configure Global Consents Settings
 
 If your company processes, stores and transmits personal data belonging to EU residents, you may be required to :ref:`comply with the General Data Protection Regulations (GDPR) <user-guide--consents>`. OroCommerce can assist you in observing these regulations by providing consent management mechanisms that enable you to create and manage new consents, and help your buyers view, manage and revoke consents applicable to them. 
 
-.. important:: You can find more information on data protection regulations in the official |GDPR portal| and the |EU Commission web page|, or see the |ICO's Guide to the GDPR| before you proceed.
+.. important:: You can find more information on data protection regulations in the official |GDPR| portal and the |EU Commission web page|, or see the |ICO's Guide to the GDPR| before you proceed.
 
 Consents are disabled by default, but you can enable them globally in the system configuration. If you have more than one website, you can add corresponding consents to specific :ref:`websites <admin--guide--commerce--configuration--customers--consents--enable--website>`, once consents are enabled and created globally.
 
