@@ -24,7 +24,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
       <li><a class="tag-important" href="product-management/">Product Management</a></li>
       <li><a class="tag-very-important" href="customers/">Customer Management</a></li>
       <li><a class="tag-very-important" href="customer-permissions/">Customer Permissions</a></li>
-      <li><a class="" href="consents/">GDPR Compliance</a></li>
+      <li><a class="" href="consents/">Data Protection Compliance</a></li>
       <li><a class="tag-very-important" href="guests/">Guest Functions</a></li>
       <li><a class="" href="consents/add-consent/">Consents in the Storefront</a></li>
       <li><a class="tag-very-important" href="websites/">Multi-Website Configuration</a></li>

@@ -6,7 +6,7 @@
 Configure Consent Management in the Back-Office
 ===============================================
 
-.. hint:: Read more on this topic in :ref:`Concept Guides: Consents <user-guide--consents>`.
+.. hint:: Read more on this topic in the :ref:`Consent Management Concept Guide <user-guide--consents>`.
 
 .. _user-guide--consents--create:
 
@@ -60,6 +60,7 @@ To create a :term:`consent <Consent>` in OroCommerce:
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 * :ref:`Build Reports with Accepted Consents <user-guide-reports-accepted-consents>`
 * :ref:`Add a Cookie Banner to the Website <bundle-docs-commerce-consent-bundle-cookie-banner>`
+* :ref:`Cookie Consent Banner <frontstore-guide--cookie-banner>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

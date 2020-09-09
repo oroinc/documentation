@@ -47,7 +47,7 @@ Before you proceed, consider watching the following media library tutorials:
    Quotes <quotes/index>
    Quick Order Form <quick-order-form>
    Shopping Lists <shopping-lists/index>
-   Checkouts <checkout/index>
+   Checkout <checkout/index>
    Cookie Consent Banner <cookie-consent-banner/index>
 
 .. include:: /include/include-links-user.rst
