@@ -21,6 +21,7 @@ The application setup guides provide the details on how to configure the environ
    get-source-files
    installation
    installation-in-sub-folder
+   content-restriction
    demo-data
    launch
    upgrade-to-new-version

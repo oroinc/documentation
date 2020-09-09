@@ -5576,4 +5576,14 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Formatter/DateTimeFormatter.php#L7" target="_blank">string by specific format</a>
 
+.. |app.yml file of the OroFormBundle| raw:: html
 
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/config/oro/app.yml" target="_blank">app.yml file of the OroFormBundle</a>
+
+.. |in the app.yml file of the CMSBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/config/oro/app.yml" target="_blank">in the app.yml file of the CMSBundle</a>
+
+.. |Add application configuration settings from any bundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#add-application-configuration-settings-from-any-bundle" target="_blank">Add application configuration settings from any bundle</a>
