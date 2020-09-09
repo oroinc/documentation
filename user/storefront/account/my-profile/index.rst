@@ -83,7 +83,7 @@ Data Protection
 
 .. hint:: Read more on this topic in :ref:`Data Protection and Consent Management <user-guide--consents>`.
 
-To comply with the :ref:`General Data Protection Regulations in the EU (GDPR) <user-guide--consents>`, you need to be to provide your explicit consent to the application to process your personal data. All available consents are located in your profile under **Account Info**.
+To comply with the :ref:`data protection regulations (such as CPPA, GDPR, etc.) <user-guide--consents>`, you need to be to provide your explicit consent to the application to process your personal data. All available consents are located in your profile under **Account Info**.
 
 Consents can be mandatory and optional:
 

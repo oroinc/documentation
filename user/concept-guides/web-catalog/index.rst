@@ -105,10 +105,12 @@ You can build as many catalogs as you need in each organization within one Oro a
 
 .. hint:: Web catalogs can only be assigned to websites, not customers or customer groups.
 
-Web Catalogs and GDPR Consents
-------------------------------
+Web Catalogs and Consents
+-------------------------
 
-One of the GDPR obligations is to give customers greater access to their personal information and let them have more control over it. OroCommerce allows you to :ref:`create and manage customer consents <system-consent-management>` while enabling buyers to view, manage, and revoke these in your storefront.
+Customers want and deserve to feel their data is safe when shopping online, that is why online businesses must comply with data protection regulations, such as |CCPA| or |GDPR|. One of the data protection obligations is to give customers greater access to their personal information and let them have more control over it. OroCommerce allows you to :ref:`create and manage customer consents <system-consent-management>` while enabling buyers to view, manage, and revoke these in your storefront.
+
+.. note:: See :ref:`Consent Management Concept Guide <user-guide--consents>` for more information on data protection.
 
 To be able to display the text of the consent to customers in the storefront, you need to create a :ref:`consent landing page <user-guide--landing-pages>` with the corresponding description and :ref:`add it as a content variant <user-guide--marketing--web-catalog--content-variant-landing page>` for a specific node in a web catalog.
 
