@@ -157,6 +157,7 @@ Webserver configuration can be modified, as illustrated below:
         locations:
           'root':
             type: 'php'
+            satisfy: any # Allow access if all (all) or at least one (any) access directive satisfied
             location: '~ /index\.php(/|$)'
             auth_basic_enable: true
             auth_basic_userlist:
@@ -168,6 +169,7 @@ Webserver configuration can be modified, as illustrated below:
                 password: 'password2'
           'admin':
             type: 'php'
+            satisfy: any # Allow access if all (all) or at least one (any) access directive satisfied
             location: '~ /index\.php(/admin|$)'
             auth_basic_enable: true
             auth_basic_userlist:
@@ -237,6 +239,8 @@ Webserver configuration can be modified, as illustrated below:
           server_token  : '<server-token>'
           log_level     : '1'
           log_path      : '/var/log/blackfire/agent.log'
+        newrelic_options:
+          license_key: ‘shaike5fith3ieKahn4zae6iedeiphoo7Phoo1ca’
 
 
 Redirects Configuration
@@ -254,6 +258,11 @@ This configuration option is used to manage locations.
 * **locations** — the hash of hashes. The top key is the location name; the lower keys are:
 
    * `type` — location type. Possible values are ``php``, ``static``, ``rewrite``.
+   * `satisfy` — defines how conditions are used. Possible values are ``all`` and ``any``.
+
+      * `all` - all conditions must be met for the specific location (logical ``and``)
+      * `any` - any condition can be met for the specific location (logical ``or``)
+
    * `location` — location URI. The value may have regular expressions and modifiers, as it is used in the Nginx location directive.
    * `fastcgi_param` — the hash for php-specific custom variables.
    * `auth_basic_enable` — a boolean trigger for HTTP basic authentication.
@@ -479,7 +488,12 @@ You can then profile the application console commands via configured Blackfire:
 
     orocloud-cli app:console [command] --blackfire-enable --blackfire-client-id [client-id] --blackfire-client-token [client-token] [--blackfire-env env] [--blackfire-samples count]
 
-.. note:: Make sure you enable Blackfire via orocloud.yaml before using this functionality. 
+.. note:: Make sure you enable Blackfire via orocloud.yaml before using this functionality.
+
+Profiling Application Using NewRelic
+------------------------------------
+
+The ``newrelic_options`` configuration option allows you to configure NewRelic profiler (must be installed and configured per separate support request). Please, pay attention that the value of the license_key is provided as an example, and you need to use your actual license key there.
 
 Mail Settings
 -------------
