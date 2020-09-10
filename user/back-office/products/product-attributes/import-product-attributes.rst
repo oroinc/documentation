@@ -29,6 +29,21 @@ To import a bulk of product attributes:
 
 2. Click **Import File** on the top right.
 
+.. hint:: You may receive the following warning message which notifies you about the limits for the number of attributes that can be imported, which can effect the future export of entities.
+
+          +------------------------------------------------------------------------------------------------------------------------------+
+          | The number of attributes stored as columns in the X table (the attributes that are relations or that have ever been marked   |
+          | as "A", "B", "C") is approaching the limit after which it will no longer be possible to export Y with the standard X export. |
+          | Remaining number of attributes - approximately Z.                                                                            |
+          +------------------------------------------------------------------------------------------------------------------------------+
+
+          Pay attention that the maximum number of columns in the row must fit in a single 8192-byte heap page. For example, if all the columns are simple fields, such as integer values, then the quantity of columns can reach 1,600. The number of fields or attributes in the exporting entity must be within the bespoke limit; otherwise, this may impose a restriction on export functionality.
+
+          Once 90% of the limit is reached, you will receive a flash message with the related warning.
+
+          Reaching 100% of the limit triggers a warning message on a potential inactive export when clicking the Export button.
+
+
 3. **Prepare data for import**: Create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.
 
 .. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.

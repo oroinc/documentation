@@ -55,11 +55,27 @@ To simplify creation of entity fields, you can import a .csv file with a list of
    .. image:: /user/img/system/entity_management/entity_import_dialog.png
       :alt: A popup dialog that opens when clicking the import file button
 
+.. hint:: You may receive the following warning message which notifies you about the limits for the number of fields that can be imported, which can effect the future export of entities.
+
+            +------------------------------------------------------------------------------------------------------------------------------+
+            | The number of fields stored as columns in the X table (the fields that are relations or that have ever been marked           |
+            | as "A", "B", "C") is approaching the limit after which it will no longer be possible to export Y with the standard X export. |
+            | Remaining number of attributes - approximately Z.                                                                            |
+            +------------------------------------------------------------------------------------------------------------------------------+
+
+            Pay attention that the maximum number of columns in the row must fit in a single 8192-byte heap page. For example, if all the columns are simple fields, such as integer values, then the quantity of columns can reach 1,600. The number of fields or attributes in the exporting entity must be within the bespoke limit; otherwise, this may impose a restriction on export functionality.
+
+            Once 90% of the limit is reached, you will receive a flash message with the related warning.
+
+            Reaching 100% of the limit triggers a warning message on a potential inactive export when clicking the Export button.
+
+
 4. In the dialog that opens, you can:
 
    * **Export Template** --- Enables you to download a .csv file with sample data.
    * **Validate** --- Enables you to check the file for errors before uploading it. Validation results are sent to your email. If there are any records with errors, you can fix them in the .csv file before importing to the application.
    * **Upload the file** --- Click **Choose File** to select the .csv file you prepared, and click **Submit**.
+
 
 5. :ref:`Update the schema <admin-guide-update-schema>` to apply the changes if the storage type for the field is set to **Table Column**.
 
