@@ -577,3 +577,8 @@ Images
 .. |IcPreview| raw:: html
 
    <i class="far fa-eye" aria-hidden="true"></i>
+
+.. |ICstrikethrough| raw:: html
+
+   <i class="fas fa-strikethrough" aria-hidden="true"></i>
+

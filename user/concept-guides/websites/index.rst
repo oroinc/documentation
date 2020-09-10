@@ -121,7 +121,7 @@ In OroCommerce, you can identify the visitors of your website through various :r
 B2C Websites
 ------------
 
-.. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system Information <system-information>`.
+.. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 One of the substantial capabilities offered by OroCommerce is the ability to configure the website to match the :ref:`B2C <user-guide--system-websites-b2c>` business model. Even if the website was initially configured to follow the B2B market segment, you can easily transfer it to B2C at any time. Unlike B2B, the B2C model disables the ability to request a quote, view the quotes, and use a quick order form to place the orders. Guest shopping lists are activated, and all the users are no longer required to mention a company name when registering an account. All the settings are immediately adjusted to match the new strategy and can be changed in the system configuration later on.
 

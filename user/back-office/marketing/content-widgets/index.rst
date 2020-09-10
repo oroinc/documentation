@@ -6,15 +6,16 @@
 Manage Content Widgets in the Back-Office
 =========================================
 
-.. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system Information <system-information>`.
+.. hint:: This section is a part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides the general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
+
+.. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. :ref:`WYSIWYG fields <getting-started-wysiwyg-editor-field>` are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
 
-There are three content widget types:
+There are four content widget types:
 
 * An Image Slider
 * A Contact Us form
-* A Copyright
 * A Product Mini Block
 * A Product Segment
 
@@ -30,7 +31,7 @@ Please keep in mind that:
 |You cannot:                                                          |
 |                                                                     |
 |* Delete a widget if it is used in a content block or a landing page.|
-|* Change widget type for an already existing widget                  |
+|* Change widget type for an already existing widget.                 |
 +---------------------------------------------------------------------+
 
 .. note:: Whenever you modify a content widget, changes are applied everywhere the widget is used.
@@ -101,21 +102,3 @@ To create a new content widget:
 
              Please be aware that layouts are theme-specific. For more information, please refer to the :ref:`CMS bundle documentation <how-to_create-content-widget-type>`.
 
-Add a Content Widget to WYSIWYG Fields
---------------------------------------
-
-.. hint:: The advanced WYSIWYG editor is available since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system Information <system-information>`.
-
-You can add content widgets to WYSIWYG fields in your OroCommerce application, like content blocks, landing pages, etc.
-
-To add a content widget to a field, drag the content widget element from the editor's manager panel, and drop it to the required location of the content field.
-
-.. image:: /user/img/marketing/content_widgets/drag_cw.png
-   :alt: Adding a content widget to a WYSIWYG field
-
-All landing pages and content blocks where content widgets were used, are displayed in the **Usages** section of each content widget.
-
-.. image:: /user/img/marketing/content_widgets/usages.png
-   :alt: Landing page linked to a content widget displayed in the Usages section
-
-For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.

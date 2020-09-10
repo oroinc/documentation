@@ -34,6 +34,7 @@ backend/bundles/platform/ActionBundle/glossary /backend/entities-data-management
 backend/bundles/platform/ActionBundle/operations /backend/entities-data-management/actions/index
 backend/extend-commerce/payments /backend/extend-commerce/payment/index
 backend/bundles/commerce/ConsentBundle/cookie-banner /backend/bundles/commerce/CookieConsentBundle/index
+user/back-office/getting-started/information-management/wysiwyg user/concept-guides/content-management/wysiwyg
 backend/architecture/tech-stack/search-index/elastic-search /backend/bundles/platform/ElasticSearchBundle/index
 backend/architecture/tech-stack/search-index/orm-search-engine /backend/bundles/platform/SearchBundle/orm-search-engine
 cloud/architecture /cloud/architecture/index

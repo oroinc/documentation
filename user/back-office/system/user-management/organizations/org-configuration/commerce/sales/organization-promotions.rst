@@ -5,7 +5,7 @@
 Configure Promotions Settings per Organization
 ==============================================
 
-.. hint:: The **Case-Insensitive Coupon Codes** feature is available since OroCommerce v4.1.3. To check which application version you are running, see the :ref:`system Information <system-information>`.
+.. hint:: The **Case-Insensitive Coupon Codes** feature is available since OroCommerce v4.1.3. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 The settings controls whether to enable or disable entering coupon codes that are different only by letter case (e.g., *SpringSale*, *SPRINGSALE*, *springsale*) during the checkout. Depending on the configuration you set, the coupon codes can be considered either equal or different.
 

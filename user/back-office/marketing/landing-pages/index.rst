@@ -5,19 +5,13 @@
 Manage Landing Pages in the Back-Office
 =======================================
 
+.. hint:: This section is a part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides the general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
 
 :term:`Landing Page` is a marketing tool that generates interest and leads for your sales pipeline and has a distinct call to action with a single focused objective.
 
 .. image:: /user/img/marketing/landing_pages/LandingPagesSample.png
    :alt: A sample of a landing page
 
-On a landing page, you can:
-
-* Describe a service or product in a compelling way that leads to the informed buying decision and moves your customer one step closer to the purchase.
-
-* Share a promo (e.g., use a promo code to get 10% discount off the *Winter items*).
-
-* Offer an ebook download, webinar registration, or notification of a new product line launch in exchange for registering an account in your eCommerce website.
 
 .. _user-guide--landing-pages-create:
 
@@ -43,7 +37,7 @@ To create a new landing page:
 
 #. Enter the landing page content in the WYSIWYG text editor.
 
-   .. hint:: The advanced WYSIWYG editor is available since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system Information <system-information>`.
+   .. hint:: The advanced WYSIWYG editor is available since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
 
    Drag the selected element (a text, an image, a column, or a source code) from the Blocks menu and drop it to the required location. Rearrange the content or modify the style of the elements by navigating from tab to tab in the WYSIWYG editor's manager bar. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
 
