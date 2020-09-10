@@ -55,5 +55,25 @@ To export the product information or price attribute data in a .csv format:
 
 1. In the main menu, navigate to **Products > Products**.
 2. Click **Export Products**, **Export Filtered Products**, **Export Related Products**, or **Export Price Attribute Data** on the top right.
+
+.. hint:: Keep in mind that after clicking **Export**, you may receive the following warning message which notifies you about the limits for the number of columns that can be exported. Such warning can be displayed on the listing page of any exportable entity.
+
+          +------------------------------------------------------------------------------------------------------------------------------+
+          | It appears that the number of fields stored as columns in the X table (the fields that are relations or that have ever been  |
+          | marked as "A", "B", "C") has approached the limit after which it may no longer be possible to export Y with the standard X   |
+          | export.                                                                                                                      |
+          +------------------------------------------------------------------------------------------------------------------------------+
+
+          Once 90% of the limit is reached, you will receive a flash message with the related warning.
+
+          Reaching 100% of the limit triggers a warning message on a potential inactive export when clicking the Export button.
+
+
 3. Once export is complete, you will receive an email to download the .csv file.
+
+
+
+
+
+
 

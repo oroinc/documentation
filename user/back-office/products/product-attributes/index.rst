@@ -55,6 +55,19 @@ To create an attribute:
 
 2. Click **Create Attribute**.
 
+.. hint:: You may receive the following warning message which notifies you about the limits for the number of attributes that can be created, which can effect the future export of entities.
+
+          +------------------------------------------------------------------------------------------------------------------------------+
+          | The number of attributes stored as columns in the X table (the attributes that are relations or that have ever been marked   |
+          | as "A", "B", "C") is approaching the limit after which it will no longer be possible to export Y with the standard X export. |
+          | Remaining number of attributes - approximately Z.                                                                            |
+          +------------------------------------------------------------------------------------------------------------------------------+
+
+          Once 90% of the limit is reached, you will receive a flash message with the related warning.
+
+          Reaching 100% of the limit triggers a warning message on a potential inactive export when clicking the Export button.
+
+
 3. Complete the following fields:
 
    .. csv-table::
