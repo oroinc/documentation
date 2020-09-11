@@ -21,14 +21,22 @@ be referred to as **<application-root-folder>** further in this topic.
 
 To retrieve a new version and upgrade your Oro application instance, execute the following steps:
 
-1. Go to the Oro application root folder and switch the application to the maintenance mode.
+1. Make sure that there are no changes that require the database schema update.
+
+   .. code-block:: bash
+
+       php bin/console oro:entity-extend:update --dry-run --env=prod
+
+   The platform update is possible only when the database schema is up-to-date.
+
+2. Go to the Oro application root folder and switch the application to the maintenance mode.
 
    .. code-block:: bash
 
        cd <application-root-folder>
        php bin/console lexik:maintenance:lock --env=prod
 
-2. Stop the cron tasks.
+3. Stop the cron tasks.
 
    .. code-block:: bash
 
@@ -40,11 +48,11 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
        */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
-3. Stop all running consumers.
+4. Stop all running consumers.
 
-4. Create backups of your Database and Code.
+5. Create backups of your Database and Code.
 
-5. Pull changes from the repository.
+6. Pull changes from the repository.
 
    .. note::
 
@@ -59,22 +67,22 @@ To retrieve a new version and upgrade your Oro application instance, execute the
        git pull
        git checkout <VERSION TO UPGRADE>
 
-6. Upgrade the composer dependency and set up the right owner to the retrieved files.
+7. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
    .. code-block:: bash
 
        composer install --prefer-dist --no-dev
 
-7. Refer to the ``UPGRADE.md`` and ``CHANGELOG.md`` files in the application repository for a list of changes in the code that
+8. Refer to the ``UPGRADE.md`` and ``CHANGELOG.md`` files in the application repository for a list of changes in the code that
    may affect the upgrade of some customizations.
 
-8. Remove old caches.
+9. Remove old caches.
 
    .. code-block:: bash
 
        rm -rf var/cache/*
 
-9. Upgrade the platform.
+10. Upgrade the platform.
 
    .. code-block:: bash
 
@@ -91,7 +99,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
         the `oro:search:reindex` and `oro:website-search:reindex` commands.
         See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
 
-10. Remove the caches.
+11. Remove the caches.
 
     .. code-block:: bash
 
@@ -104,7 +112,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
         rm -rf var/cache/*
         php bin/console cache:warmup --env=prod
 
-11. Enable cron.
+12. Enable cron.
 
     .. code-block:: bash
 
@@ -116,13 +124,13 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
         */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
-12. Switch your application back to the normal mode from the maintenance mode.
+13. Switch your application back to the normal mode from the maintenance mode.
 
     .. code-block:: bash
 
         php bin/console lexik:maintenance:unlock --env=prod
 
-13. Run the consumer(s).
+14. Run the consumer(s).
 
     .. code-block:: bash
 
@@ -139,14 +147,22 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 To retrieve a new version and upgrade your Oro application instance, please execute the following steps:
 
-1. Go to the Oro application root folder and switch the application to the maintenance mode.
+1. Make sure that there are no changes that require the database schema update.
+
+   .. code-block:: bash
+
+       php bin/console oro:entity-extend:update --dry-run --env=prod
+
+   The platform update is possible only when the database schema is up-to-date.
+
+2. Go to the Oro application root folder and switch the application to the maintenance mode.
 
    .. code-block:: bash
 
        cd <application-root-folder>
        php bin/console lexik:maintenance:lock --env=prod
 
-2. Stop the cron tasks.
+3. Stop the cron tasks.
 
    .. code-block:: bash
 
@@ -158,18 +174,18 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
        */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
-3. Stop all running consumers.
+4. Stop all running consumers.
 
-4. Create backups of your Database and Code.
+5. Create backups of your Database and Code.
 
-5. Download the latest version of the application source code from the download section on |the website|:
+6. Download the latest version of the application source code from the download section on |the website|:
 
    * |Download OroCommerce|
    * |Download OroCRM|
    * |Download OroPlatform|
 
 
-6. Unpack archive and overwrite existing system files.
+7. Unpack archive and overwrite existing system files.
 
    .. note::
 
@@ -184,22 +200,22 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
                composer update --prefer-dist --no-dev
 
-7. Refer to the ``UPGRADE.md`` and ``CHANGELOG.md`` files in the application folder for a list of changes in the code that
+8. Refer to the ``UPGRADE.md`` and ``CHANGELOG.md`` files in the application folder for a list of changes in the code that
    may affect the upgrade of some customizations.
 
-8. Remove old caches.
+9. Remove old caches.
 
    .. code-block:: bash
 
        rm -rf var/cache/*
 
-9. Upgrade the platform.
+10. Upgrade the platform.
 
    .. code-block:: bash
 
        php bin/console oro:platform:update --env=prod
 
-10. Remove the caches.
+11. Remove the caches.
 
    .. code-block:: bash
 
@@ -212,7 +228,7 @@ To retrieve a new version and upgrade your Oro application instance, please exec
        rm -rf var/cache/*
        php bin/console cache:warmup --env=prod
 
-11. Enable cron.
+12. Enable cron.
 
     .. code-block:: bash
 
@@ -224,13 +240,13 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
         */1 * * * * /usr/bin/php <application-root-folder>/bin/console --env=prod oro:cron >> /dev/null
 
-12. Switch your application back to normal mode from the maintenance mode.
+13. Switch your application back to normal mode from the maintenance mode.
 
     .. code-block:: bash
 
           php bin/console lexik:maintenance:unlock --env=prod
 
-13. Run the consumer(s).
+14. Run the consumer(s).
 
     .. code-block:: bash
 

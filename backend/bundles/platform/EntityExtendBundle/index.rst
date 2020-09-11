@@ -18,6 +18,7 @@ Related Documentation
 * |Add a Relation|
 * |Add the Option Set Field|
 * |Create a Custom Entity|
+* |Apply Entity Extend Changes|
 * |Prepare Entity Extend Configuration|
 * |Update Database Schema for Extended Entities|
 * |Warn Up Cache|

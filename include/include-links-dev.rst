@@ -918,6 +918,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#create-custom-entity" target="_blank">Create a Custom Entity</a>
 
+.. |Apply Entity Extend Changes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#applying-entity-extend-changes" target="_blank">Apply Entity Extend Changes</a>
+
 .. |Prepare Entity Extend Configuration| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#preparing-entity-extend-configuration" target="_blank">Prepare Entity Extend Configuration</a>
