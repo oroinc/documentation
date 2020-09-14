@@ -18,6 +18,7 @@ Related Documentation
 * :ref:`Configure Attachments <backend--entity-attachments>`
 * :ref:`Image Formatters <attachment-bundle-image-formatters>`
 * :ref:`Enable Debugging Images <attachment-bundle-debug-img>`
+* :ref:`Image Processing <attachment-image-processing>`
 
 
 

@@ -219,8 +219,51 @@ To disable debug images, set the ``debug_images`` option to ``false`` in the con
        oro_attachment:
            debug_images: false
 
+.. _attachment-image-processing:
+
+Image Processing
+----------------
+
+Image Processing enables an administrator to control the quality of images using the UI, thereby reducing the size of images in storage.
+
+Image processing uses additional libraries:
+
+* |PNGQuant| - utility for lossy compression of PNG images.
+* |JPEGOptim| - utility to optimize/compress JPEG files.
+
+For proper work, you need the libraries whose versions correspond to the following:
+
+* pngquant >= 2.5.0
+* jpegoptim >= 1.4.0
+
+To configure additional libraries you need to add the follwing parameters to the parameters.yml:
+
+.. code-block:: yaml
+   :linenos:
+
+   liip_imagine.pngquant.binary: /usr/bin/pngquant
+   liip_imagine.jpegoptim.binary: /usr/bin/jpegoptim
+
+.. note::
+         - Processors are external libraries, so they need to be installed separately.
+         - If the configuration specifies incorrect paths to the libraries, their versions do not match, or libraries are not installed, the system will work without image processing, and these settings will not be available and will not be displayed in the system configuration.
+         - If configuration is not specified explicitly, the system will try to find libraries automatically.
+
+You can use 3 parameters for optimization images:
+
+- ``Image Processing (toggle)`` - feature toggle, allows to enable or disable image post processing.
+
+- ``JPEG Resize Quality (%)`` - values from 30 to 100, the higher the value, the better the image quality.
+
+- ``PNG Resize Quality (%)`` - 'Preserve quality' and 'Minimize file size'. Indicates how much you want to reduce the image quality.
+
+.. note:: Disabled image processing completely eliminates additional image processing, which means that libraries will not be used in processing, and image quality will be controlled only by extensions used in the system by default (as an example: GD).
+
+.. note:: Modification of the default value may cause temporary storefront slow-down until all images are resized. Make sure that the hard drive has at least 50% space available as the resized images will be stored alongside the existing ones.
+
+.. note:: This feature covers backward compatibility, so all existing images will not be deleted or replaced (even after migration), in which case only new images will be processed. To optimize old images, you need to delete them manually.
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
-
 

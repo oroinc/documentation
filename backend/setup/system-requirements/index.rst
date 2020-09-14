@@ -132,6 +132,7 @@ Optional recommendations
 * |Tidy PHP extension| should be installed to make sure that HTML is correctly converted into a text representation
 * |Redis| - could be used for more efficient application caching. Supported versions of Redis >=5.*.
 * The performance of :ref:`MySQL can be optimized <mysql-optimization>` by adjusting the configuration
+* |PNGQuant| and |JPEGOptim| are used if it is necessary to optimize the image size in storage
 
 
 Client-side Requirements

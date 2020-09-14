@@ -163,6 +163,14 @@ Links (Dev)
 
    <a href="http://php.net/manual/en/book.tidy.php" target="_blank">Tidy PHP extension</a>
 
+.. |PNGQuant| raw:: html
+
+   <a href="https://pngquant.org" target="_blank">pngquant</a>
+
+.. |JPEGOptim| raw:: html
+
+   <a href="https://github.com/tjko/jpegoptim" target="_blank">jpegoptim</a>
+
 .. |MySQL| raw:: html
 
    <a href="https://www.mysql.com/" target="_blank">MySQL</a>
