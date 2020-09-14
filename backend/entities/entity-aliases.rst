@@ -128,7 +128,7 @@ Suggestions for Aliases Naming
 
 To solve the conflict situations when the auto-generated entity alias is already in use, follow the naming rules described below:
 
-- For Oro entities, in most cases, it is sufficient to prepend the short class name with the bundle name, e.g., ``Oro\Bundle\MagentoBundle\Entity\Customer`` = ``magentocustomer``.
+- For Oro entities, in most cases, it is sufficient to prepend the short class name with the bundle name, e.g., ``Oro\Bundle\SalesBundle\Entity\Customer`` = ``salescustomer``.
 - More general entities should have a more general alias, e.g., ``Oro\Bundle\EmailBundle\Entity\Email`` = ``email``, ``Oro\Bundle\ContactBundle\Entity\ContactEmail`` = ``contactemail``. Basically, if the bundle name and the short class name are the same, it should be used as the alias. For other entities with the same short class, the bundle name should be used as a prefix.
 - For non-Oro entities, if not sure that the auto-generated alias is unique enough and it is likely (usually it is) that such entity will be added in the Oro core, you can prefix the alias with the bundle vendor (and category if needed), e.g., ``Acme\Bundle\BlogBundle\Entity\MyEntity`` = ``acmeblogmyentity``, ``Acme\Bundle\Social\BlogBundle\Entity\MyEntity`` = ``acmesocialblogmyentity``.
 

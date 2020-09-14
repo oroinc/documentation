@@ -47,8 +47,7 @@ To define you own transport, create a class that implements `Oro\\Bundle\\Integr
 Connector Definition
 --------------------
 
-**Channel connector** is responsible for bringing data in and defining compatible channel types. Examples: Magento
-customers data connector, Magento catalog data connector.
+**Channel connector** is responsible for bringing data in and defining compatible channel types.
 
 To define you own connector, create a class that implements `Oro\\Bundle\\IntegrationBundle\\Provider\\ConnectorInterface` and register it as a service with the `oro_integration.connector` tag that contains a `type` key (unique for the channel) and a `channel_type` key that shows what channel type it can be used for.
 

@@ -13,8 +13,6 @@ You can integrate with the external services (MailChimp and dotmailer) and synch
 
 In Oro application and external systems, you can launch marketing campaigns distributed via email to the custom group of contacts. The custom group is generated as :ref:`marketing list <user-guide-marketing-lists>`.
 
-.. .. note:: **OroCRM only:** When you Oro application is integrated with the Magento store, you can track the abandoned carts in Magento store and generate lists of contacts (customer users or leads) and follow up on their incomplete purchase (e.g. via a :ref:`dedicated email campaign <user-guide-acc>`).
-
 Once the marketing efforts get their results, you can monitor the collected marketing information in the context of the customers, leads, and many more perspectives
 
 .. note:: Enable or disable marketing automation in Oro application via the :ref:`system configuration <marketing-system-configuration>`.

@@ -140,10 +140,6 @@ Below is the topic mapping for default queues configuration.
   * oro.imap.sync_emails
   * oro.workflow.execute_process_job
   * oro.channel.channel_status_changed
-  * oro.magento.sync_cart_expiration_integration
-  * oro.magento.sync_initial_integration
-  * oro_magento.upgrade_relations_accounts_contacts
-  * oro_magento.schedule_stucked_jobs
 
 * ``oro.system`` queue manages topics:
 

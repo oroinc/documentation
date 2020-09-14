@@ -63,16 +63,6 @@ Here is a small example of its usage:
       [4 ] orocrm_sales_lead.add_or_replace
       [5 ] orocrm_sales_opportunity.add_or_replace
       [6 ] orocrm_sales_b2bcustomer
-      [7 ] orocrm_magento.add_or_update_newsletter_subscriber
-      [8 ] orocrm_magento.add_or_update_customer
-      [9 ] orocrm_magento.import_guest_customer
-      [10] orocrm_magento.add_or_update_customer_address
-      [11] orocrm_magento.add_or_update_region
-      [12] orocrm_magento.add_or_update_cart
-      [13] orocrm_magento.add_or_update_order
-      [14] orocrm_magento.store
-      [15] orocrm_magento.website
-      [16] orocrm_magento.customer_group
     > 1
     Choose Validation Processor:
       [0] orocrm_contact.add_or_replace

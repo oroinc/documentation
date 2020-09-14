@@ -44,6 +44,5 @@ Gb
 Redis
 Gmail
 csv
-Magento
 Piwik
 regexp

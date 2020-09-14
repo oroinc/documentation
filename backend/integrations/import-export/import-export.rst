@@ -650,8 +650,6 @@ The data converter is responsible for converting the header of the import/export
         oro_contact.importexport.data_converter.group:
             parent: oro_importexport.data_converter.configurable
 
-Here, there is a more complex example of DataConverter in OroContactBundle
-`Oro\Bundle\MagentoBundle\ImportExport\Converter\OrderAddressDataConverter`.
 
 Export Processor
 ----------------

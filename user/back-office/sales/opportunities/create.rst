@@ -34,18 +34,6 @@ To create an opportunity from a Commerce customer view page, make sure you have 
    .. image:: /user/img/sales/opportunities/commerce_opportunity_form.jpg
       :alt: Account field predefined with commerce customer info
 
-.. _user-guide-opportunities-create--from-magento-customer:
-
-.. Magento Customer~~~~~~~~~~~~~~~~
-.. To create an opportunity from a Magento customer view page:
-.. Go to **Customers** in the main menu, click **Magento Customers**.
-.. Select a Magento customer from the grid and open their view page.
-..	Navigate to **More Actions** in the top right corner.
-..	Click **Create Opportunity** from the list.
-..	A **Create Opportunity form** will open with an **Account** field already filled in with your selected Magento customer.
-.. .. image:: /user/img/sales/opportunities/magento_customer_create_opportunity.jpg
-.. .. image:: /user/img/sales/opportunities/magento_customer_create_opportunity_form.jpg
-
 .. _user-guide-opportunities-create--from-account:
 
 Account

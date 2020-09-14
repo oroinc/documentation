@@ -20,9 +20,9 @@ For example, we are searching for "Ann" all over the system:
 These are our search results:
 
 .. image:: /user/img/getting_started/navigation/search_ex_2.png
-   :alt: The search result returned 28 records
+   :alt: The search result returned 10 records
 
-The search returned 28 records, two of which are Accounts, two are Contacts, six are Magento Shopping Carts, etc. You
+The search returned 10 records, five of which are Orders, three are Products, two are Requests For Quote, etc. You
 can scroll through the entire list of results or select a specific entity in order to find the desired record faster.
 
 If you wait a few seconds before clicking Go, you will see a drop-down list of the most relevant results. If the one you

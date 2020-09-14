@@ -58,8 +58,6 @@ The required packages (dependencies) are listed in the following way:
         "oro/crm": "2.x-dev",
         "oro/platform-serialised-fields": "2.x-dev",
         "oro/crm-hangouts-call-bundle": "2.x-dev",
-        "oro/magento-abandoned-cart": "2.x-dev",
-        "oro/crm-magento-embedded-contact-us": "2.x-dev",
         "oro/mailchimp": "2.x-dev",
         "oro/crm-dotmailer": "2.x-dev",
         "oro/crm-zendesk": "2.x-dev"
@@ -126,7 +124,7 @@ From a file system perspective, Oro PHP application contains a structured combin
    * **logs** - application logs
 
 * **vendor** folder - code of 3rd party vendors installed based on the definition of dependencies in composer.json.
-* **composer.json** file - definition of application dependencies 
+* **composer.json** file - definition of application dependencies
 * **composer.lock** file - the list of initialized dependencies
 * **README.md** file - a brief description of the application
 

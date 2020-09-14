@@ -455,14 +455,14 @@ Sometimes, a form appears in the iframe. Behat can switch to the iframe by its i
 
       oro_behat_extension:
         elements:
-          MagentoContactUsForm:
+          CustomContactUsForm:
             selector: 'div#page'
             class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
             options:
               embedded-id: embedded-form
               mapping:
-                First name: 'oro_magento_contactus_contact_request[firstName]'
-                Last name: 'oro_magento_contactus_contact_request[lastName]'
+                First name: 'custom_bundle_contactus_contact_request[firstName]'
+                Last name: 'custom_bundle_contactus_contact_request[lastName]'
 
 .. _behat-page-element:
 

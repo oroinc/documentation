@@ -61,11 +61,11 @@ following example:
                     hide_if_one_page: true
                     columns:
                         period:
-                            label: orocrm.magento.datagrid.columns.page_total
+                            label: oro.reportcrm.datagrid.columns.page_total
                 grand_total:
                     columns:
                         period:
-                            label: orocrm.magento.datagrid.columns.grand_total
+                            label: oro.reportcrm.datagrid.columns.grand_total
                         cnt:
                             expr: COUNT( o.id )
                         value:

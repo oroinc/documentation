@@ -30,7 +30,7 @@ In the Account Management section, the following capabilities are available:
 
   .. image:: /user/img/system/user_management/system_information_enabled.png
 
-* **Enter The Billing Address Manually** --- Enables a user to provide the billing address manually. 
+* **Enter The Billing Address Manually** --- Enables a user to provide the billing address manually.
 * **Enter The Shipping Address Manually** --- Enables a user to provide the shipping address manually.
 * Override Customer Payment Term
 
@@ -44,10 +44,10 @@ In the Account Management section, the following capabilities are available:
      :alt: User impersonation button
 
 * **Receive Notification Messages For The System Mailboxes That Were Configured Incorrectly** --- Enable this option to receive an email notification if synchronization of the system mailbox is unsuccessful as the result of incorrect credentials.
-* **Use Any Billing Address From The Customer User's Address Book** --- Enables a user to select any billing address available in the customer user's address book from the list. 
-* **Use Any Billing Address From The Customer's Address Book** --- Enables a user to select any billing address available in the customer's address book from the list. 
-* **Use Any Shipping Address From The Customer Address Book** --- Enables a user to select any shipping address available in the customer's address book from the list. 
-* **Use Any Shipping Address From The Customer User's Address Book** --- Enables a user to select any shipping address available in the customer user's address book from the list. 
+* **Use Any Billing Address From The Customer User's Address Book** --- Enables a user to select any billing address available in the customer user's address book from the list.
+* **Use Any Billing Address From The Customer's Address Book** --- Enables a user to select any billing address available in the customer's address book from the list.
+* **Use Any Shipping Address From The Customer Address Book** --- Enables a user to select any shipping address available in the customer's address book from the list.
+* **Use Any Shipping Address From The Customer User's Address Book** --- Enables a user to select any shipping address available in the customer user's address book from the list.
 * **Use The Default Billing Address From The Customer User's Address Book** --- Enables a user to select the default billing address from the customer user's address book.
 * **Use The Default Shipping Address From The Customer User's Address Book** --- Enables a user to select the default shipping address from the customer user's address book.
 * Work With Payments
@@ -66,7 +66,7 @@ In the Catalog section, the following capabilities are available:
 * **[Product Attribute] Edit Attribute** --- Enables a user to edit product attributes in the application.
 * **[Product Attribute] Remove Attribute** --- Enables a user to remove product attributes from the application.
 * **[Product Attribute] View Attributes** --- Enables a user to view product attributes in the application.
-* **[Related Products] Edit Related Products** --- Enables a user to view, add and edit related products. 
+* **[Related Products] Edit Related Products** --- Enables a user to view, add and edit related products.
 
   .. comment: Per discussion with PO, should be renamed to Manage Related Products
 
@@ -101,10 +101,10 @@ In the Quotes section, the following capabilities are available:
 * **Review And Approve Quotes** --- Enables a user to manage quotes (e.g. sent to customer) without approval. When disabled, the user has to submit quotes for review first. This capability affects quotes when :ref:`Backoffice Quotes Flow with Approvals <doc--workflows--backoffice-quote-flow-with-approvals>` is enabled in the application.
 
   .. image:: /user/img/system/user_management/approve_quotes_disabled.png
-  
-* **Use Any Shipping Address From The Customer Address Book** --- Enables a user to select any shipping address available in the customer's address book from the list. 
 
-* **Use Any Shipping Address From The Customer User's Address Book** --- Enables a user to select any shipping address available in the customer user's address book from the list. 
+* **Use Any Shipping Address From The Customer Address Book** --- Enables a user to select any shipping address available in the customer's address book from the list.
+
+* **Use Any Shipping Address From The Customer User's Address Book** --- Enables a user to select any shipping address available in the customer user's address book from the list.
 * **Use The Default Shipping Address From The Customer User's Address Book** --- Enables a user to select the default shipping address from the customer user's address book from the list.
 
 .. _admin-capabilities-campaign-emails:
@@ -117,12 +117,6 @@ In the Marketing section, the following capabilities are available:
 * **Send Campaign Emails** --- Enables a user to launch a campaign manually. When the capability is enabled, the user can :ref:`send emails <user-guide-email-campaigns-send>` specified by the campaign which is not scheduled to send emails at a specific time (campaigns that have *Manual* selected for **Schedule**). This capability does not affect the user's ability to define and edit campaign settings and create templates.
 
   .. image:: /user/img/system/user_management/email_campaign_emabled.png
-
-.. Sales Data----------
-
-.. In the Sales Data section, the following capabilities are available:
-
-.. Manage Abandoned Cart Campaigns --- Enables a user to generate automatic emails to customers who have not completed their purchases in Magento-based stores, and send these customers emails as automated campaigns through MailChimp. Sending abandoned cart campaigns is possible when  the integration with Magento is established, the `abandoned cart extension <https://oroinc.com/orocrm/doc/current/user-guide-marketing-tools/magento/sending-abandoned-cart-campaigns#user-guide-acc>`_ is set up, and the integration with MailChimp is configured.
 
 .. _admin-capabilities-jobs:
 .. _admin-capabilities-system-config:
@@ -142,7 +136,7 @@ In the System Capabilities section, the following capabilities are available:
 Application
 ^^^^^^^^^^^
 
-* **Access Job Queue** --- Enables a user to review jobs that have been started in the system, as well as view their current status and their performance log (by default, this information can be found by navigating to **System > Jobs** in the main menu). 
+* **Access Job Queue** --- Enables a user to review jobs that have been started in the system, as well as view their current status and their performance log (by default, this information can be found by navigating to **System > Jobs** in the main menu).
 
   .. TODO: check 2 capabilities with this name (BAP-10652)
 
@@ -154,7 +148,7 @@ Application
 
   .. image:: /user/img/system/user_management/sys_config.png
 
-* **Assign/Unassign Tags** --- Enables a user to assign/unassign :ref:`tags <admin-guide-tag-management>` to records. 
+* **Assign/Unassign Tags** --- Enables a user to assign/unassign :ref:`tags <admin-guide-tag-management>` to records.
 * **Connect to MailChimp** --- Enables a user to map the contents of a marketing list in |oro_application| to use a segment of the subscribers list in :ref:`MailChimp <user-guide-mailchimp-campaign>`. When the capability is enabled, the **Connect to MailChimp** button appears on the page of the selected marketing list. Make sure that the integration between |oro_application| and :ref:`MailChimp is configured <user-guide-mc-integration>` for the capability to work.
 
 * **Export Grid View** --- Enables a user to export the grid views that they have configured.
@@ -185,7 +179,7 @@ Application
 
 * **Update User Profile** --- Enables a user to update their own profile regardless of which permission for the **Edit** action on the **User** entity the user's role includes. That is, when the **Update User Profile** capability is included in the user's role, even if the role has *None* selected for the **Edit** action on the **User** entity, the user will be able to update their profile.
 
-* **View SQL Query of a Report/Segment** --- Enables a user to review the SQL request that is sent to the system for a report/segment. When the capability is enabled, the **Show SQL Query** link appears below the report.This capability is usually only granted to system administrators, so they can check if a report has been developed correctly. 
+* **View SQL Query of a Report/Segment** --- Enables a user to review the SQL request that is sent to the system for a report/segment. When the capability is enabled, the **Show SQL Query** link appears below the report.This capability is usually only granted to system administrators, so they can check if a report has been developed correctly.
 
   .. image:: /user/img/system/config_system/user_configuration_showsql.png
 
@@ -208,14 +202,14 @@ Calendar
 .. _admin-capabilities-config-entities:
 .. _admin-capabilities-merge:
 .. _admin-capabilities-search:
-.. _admin-capabilities-export-entities:    
+.. _admin-capabilities-export-entities:
 .. _admin-capabilities-import-entities:
 
 Entity
 ^^^^^^
 
 * **Access Entity Management** --- Enables a user to access entity management section under **System > Entities > Entity Management** in the main menu. Many entities in |oro_application| can be configured from the interface, as described in the :ref:`Entity Management topic <doc-entities>` and :ref:`Entity Fields <doc-entity-fields>` topics.
-* **Merge Entities** --- Enables users to :ref:`merge <doc-grids-actions-records-merge>` several records of the same entity. 
+* **Merge Entities** --- Enables users to :ref:`merge <doc-grids-actions-records-merge>` several records of the same entity.
 * **Search** --- Enables users to :ref:`search <user-guide-getting-started-search>` for specific records within the application. The setting does not influence the user's ability to :ref:`search by tag <user-guide-getting-started-search-tag>`.
 * **Export Entity Records** --- Enables users to export entity records. When the capability is enabled, the **Export** button appears on the top right of the page with the table of selected records.
 
