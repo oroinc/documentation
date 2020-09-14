@@ -18,7 +18,7 @@ The fields of an embedded form depend on its type. The two out-of-the-box types 
       :width: 50%
       :alt: The contact request form
 
-.. hint:: The Magento Contact Us Request feature is deprecated since OroCommerce v4.1.6. To check which application version you are running, see the :ref:`system Information <system-information>`.
+.. hint:: The Magento Contact Us Request feature is deprecated since OroCommerce v4.1.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 * Magento Contact Us Request
  

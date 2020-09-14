@@ -32,7 +32,6 @@ Actions and transitions available for your records in the application are define
    notes
    comments
    attachments
-   wysiwyg
 
 
 .. include:: /include/include-images.rst

@@ -26,7 +26,7 @@ To reach promotion configuration:
 
     **Enable Promotions** --- the option determines whether to activate or deactivate the promotions feature and promotions-related functionality in your Oro application.
 
-    .. hint:: The **Case-Insensitive Coupon Codes** feature is available since OroCommerce v4.1.3. To check which application version you are running, see the :ref:`system Information <system-information>`.
+    .. hint:: The **Case-Insensitive Coupon Codes** feature is available since OroCommerce v4.1.3. To check which application version you are running, see the :ref:`system information <system-information>`.
 
     **Case-Insensitive Coupon Codes** --- option determines whether to consider or ignore the letter case of the applied coupon codes. By default, the option is disabled, meaning that the system carefully checks the entered coupon code against the letter case, so *SpringSale*, *SPRINGSALE*, and *springsale*, are considered to be the three different codes. When the option is enabled, the mentioned codes will be considered equal.
 
