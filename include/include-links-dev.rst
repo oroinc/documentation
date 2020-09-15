@@ -416,14 +416,6 @@ Links (Dev)
 
    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage" target="_blank">Storage Interface</a>
 
-.. |DOM Relocation View| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/4.1/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md" target="_blank">DOM Relocation View</a>
-
-.. |via scss variables| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/4.1/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendStylesCustomization.md#how-to-change-media-breakpoints" target="_blank">via scss variables</a>
-
 .. |Backbone events API| raw:: html
 
    <a href="http://backbonejs.org/#Events" target="_blank">Backbone events API</a>
@@ -947,34 +939,6 @@ Links (Dev)
 .. |Make Custom Entities and Fields Searchable| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/EntityExtendBundle#custom-fields-and-entities-in-search" target="_blank">Make Custom Entities and Fields Searchable</a>
-
-.. |Disable JS Routes Source File Generation on the Fly| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/EntityExtendBundle#custom-fields-and-entities-in-search" target="_blank">Disable JS Routes Source File Generation on the Fly</a>
-
-.. |Customize a Sticky Panel| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/4.1/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#customization" target="_blank">Customize a Sticky Panel</a>
-
-.. |Create a Custom Sticky Panel| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/4.1/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#several-sticky-panels" target="_blank">Create a Custom Sticky Panel</a>
-
-.. |Move Dom Element from One Container to Another| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/4.1/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use" target="_blank">Move Dom Element from One Container to Another</a>
-
-.. |Organize Setup Mass Action on Datagrid| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/4.1/src/Oro/Bundle/FrontendBundle/Resources/doc/mass-action-grid-setup.md" target="_blank">Organize Setup Mass Action on Datagrid</a>
-
-.. |Close Website for Non-authenticated Visitors| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/4.1/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#close-website-for-non-authenticated-visitors" target="_blank">Close Website for Non-authenticated Visitors</a>
-
-.. |Prevent Displaying the Back-Office Datagrids in the Storefront| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/blob/4.1/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids" target="_blank">Prevent Displaying the Back-Office Datagrids in the Storefront</a>
 
 .. |Configure Redis Servers| raw:: html
 
@@ -5545,4 +5509,12 @@ Links (Dev)
 .. |in the app.yml file of the CMSBundle| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/config/oro/app.yml" target="_blank">in the app.yml file of the CMSBundle</a>
+
+.. |preprocessor| raw:: html
+
+   <a href="http://sass-lang.com/" target="_blank">preprocessor</a>
+
+.. |Symfony Framework Configuration Reference| raw:: html
+
+   <a href="https://symfony.com/doc/current/reference/configuration/framework.html#session" target="_blank">Symfony Framework Configuration Reference</a>
 

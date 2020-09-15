@@ -23,12 +23,4 @@ Change Corporate Identity:
         how-to-change-media-breakpoints
         how-to-change-offsets
         how-to-replace-product-images-placeholders
-
-..    change_homepage
-    configure-product-details-page
-    change-menu
-    modify-header
-    modify-footer
-    adjust-translations
-    change-public-pages
-    change-contact-us-form
+        how-to-override-remove-files

@@ -14,26 +14,26 @@ Most of the OroCommerce back-office and storefront UI elements are included and 
 General Look and Feel
 ---------------------
 
-  .. image:: /img/frontend/stylebook/general_look_feel.png
-     :alt: The general look and feel section of the frontend stylebook
+.. image:: /img/frontend/stylebook/general_look_feel.png
+   :alt: The general look and feel section of the frontend stylebook
 
 Form Elements
 -------------
 
-  .. image:: /img/frontend/stylebook/form_elements.png
-     :alt: The form elements section of the frontend stylebook
+.. image:: /img/frontend/stylebook/form_elements.png
+   :alt: The form elements section of the frontend stylebook
 
 Grid Elements
 -------------
 
-  .. image:: /img/frontend/stylebook/grid_elements.png
-     :alt: The grid elements section of the frontend stylebook
+.. image:: /img/frontend/stylebook/grid_elements.png
+   :alt: The grid elements section of the frontend stylebook
 
 JS Components
 -------------
 
-  .. image:: /img/frontend/stylebook/js_component.png
-     :alt: The JS components section of the frontend stylebook
+.. image:: /img/frontend/stylebook/js_component.png
+   :alt: The JS components section of the frontend stylebook
 
 .. hint::
 
