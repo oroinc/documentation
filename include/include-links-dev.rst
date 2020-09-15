@@ -5567,3 +5567,65 @@ Links (Dev)
 .. |Symfony Framework Configuration Reference| raw:: html
 
    <a href="https://symfony.com/doc/current/reference/configuration/framework.html#session" target="_blank">Symfony Framework Configuration Reference</a>
+
+.. |WebsiteSearchProductIndexerListener| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/EventListener/WebsiteSearchProductIndexerListener.php" target="_blank">WebsiteSearchProductIndexerListener</a>
+
+.. |previously purchased products grid| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/config/oro/datagrids.yml#L751" target="_blank">previously purchased products grid</a>
+
+.. |system configuration documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Resources/doc/system_configuration.md" target="_blank">system configuration documentation</a>
+
+.. |website_search.yml| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/config/oro/website_search.yml" target="_blank">website_search.yml</a>
+
+.. |datagrids.yml| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/config/oro/datagrids.yml#L75" target="_blank">datagrids.yml</a>
+
+.. |ReindexProductLineItemListener| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/EventListener/ORM/ReindexProductLineItemListener.php" target="_blank">ReindexProductLineItemListener</a>
+
+.. |OrderLineItem| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Entity/OrderLineItem.php" target="_blank">OrderLineItem</a>
+
+.. |ReindexProductOrderListener| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/EventListener/ORM/ReindexProductOrderListener.php" target="_blank">ReindexProductOrderListener</a>
+
+.. |Order entity| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Entity/Order.php" target="_blank">Order entity</a>
+
+.. |PreviouslyPurchasedFeatureToggleListener| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/EventListener/PreviouslyPurchasedFeatureToggleListener.php" target="_blank">PreviouslyPurchasedFeatureToggleListener</a>
+
+.. |ProductReindexManager| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Search/Reindex/ProductReindexManager.php" target="_blank">ProductReindexManager</a>
+
+.. |PreviouslyPurchasedConfigProvider| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Provider/PreviouslyPurchasedConfigProvider.php" target="_blank">PreviouslyPurchasedConfigProvider</a>
+
+.. |LatestOrderedProductsInfoProvider| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Provider/LatestOrderedProductsInfoProvider.php" target="_blank">LatestOrderedProductsInfoProvider</a>
+
+.. |PreviouslyPurchasedOrderStatusesProvider| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Provider/PreviouslyPurchasedOrderStatusesProvider.php" target="_blank">PreviouslyPurchasedOrderStatusesProvider</a>
+
+.. |OrderStatusesProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Provider/OrderStatusesProviderInterface.php" target="_blank">OrderStatusesProviderInterface</a>
+
+
