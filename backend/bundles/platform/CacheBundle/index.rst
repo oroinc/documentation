@@ -8,7 +8,7 @@
 OroCacheBundle
 ==============
 
-OroCacheBundle introduces the configuration of the application data cache storage used by application bundles
+OroCacheBundle introduces the configuration of the application data cache storage used by the application bundles
 for different cache types.
 
 .. _bundle-docs-platform-cache-bundle--abstract-services:
@@ -28,7 +28,8 @@ There are two abstract services you can use as a parent for your cache services:
 The following example shows how these services can be used:
 
 .. code-block:: none
-
+   :linenos:
+   
     services:
         acme.test.cache:
             public: false
@@ -40,7 +41,8 @@ Also the ``oro.cache.abstract`` service can be re-declared
 in the application configuration file, for example:
 
 .. code-block:: none
-
+   :linenos:
+   
     services:
         oro.cache.abstract:
             abstract: true
@@ -77,7 +79,8 @@ To implement 3rd approach for your configuration, you need to take the following
 1. Create PHP class that defines the schema of your configuration and validation and merging rules for it. E.g.:
 
 .. code-block:: php
-
+   :linenos:
+   
     <?php
 
     namespace Acme\Bundle\AcmeBundle\DependencyInjection;
@@ -104,7 +107,8 @@ To implement 3rd approach for your configuration, you need to take the following
 2. Create the configuration provider PHP class that you will use to get the configuration data. E.g.:
 
 .. code-block:: php
-
+   :linenos:
+   
     <?php
 
     namespace Acme\Bundle\AcmeBundle\Provider;
@@ -155,7 +159,8 @@ To implement 3rd approach for your configuration, you need to take the following
    as the parent one. E.g.:
 
 .. code-block:: yaml
-
+   :linenos:
+   
     services:
         acme.my_configuration_provider:
             class: Acme\Bundle\AcmeBundle\Provider\MyConfigurationProvider
@@ -174,7 +179,8 @@ In this case a default warmer will not be registered for your configuration prov
 An example of a custom warmer:
 
 .. code-block:: yaml
-
+   :linenos:
+   
     services:
         acme.my_configuration_provider.warmer:
             class: Oro\Component\Config\Cache\ConfigCacheWarmer
@@ -189,6 +195,7 @@ methods of the configuration provider to check if the Application cache needs to
 Here is an example how to use these methods:
 
 .. code-block:: php
+   :linenos:
 
     private function ensureConfigLoaded()
     {
@@ -259,7 +266,8 @@ One of the most important things when dealing with caches is proper cache invali
 we need to make sure that we do not keep old values in the memory. Consider this example:
 
 .. code-block:: php
-
+   :linenos:
+   
     <?php
 
     class LocalizationManager
@@ -308,6 +316,31 @@ following:
 - for other requests: |MemoryCacheChain| with |ArrayCache| on the top of |FilesystemCache|
 
 For services based on ``oro.cache.abstract.without_memory_cache`` the |MemoryCacheChain| is not used.
+
+.. _bundle-docs-platform-cache-bundle--complex-objects-keys:
+
+Caching Data based on Complex Objects
+-------------------------------------
+
+Cache Hit Ratio is an important measure of cache efficiency. Choosing the right Cache Key might be a complex task,
+especially when the cache key should depend on the data stored in a Complex Object. Cache key generation strategy can vary
+in different cases and rely on different fields of the same object. To configure cache metadata for different scopes, use
+`Resources/config/oro/cache_metadata.yml` files that can be located in any bundle.
+
+Here is an example of such configuration:
+
+.. code-block:: yaml
+   :linenos:
+   
+    Oro\Bundle\OrderBundle\Entity\OrderAddress:
+        attributes:
+            id:
+                groups: ['shipping_context']
+            country:
+                groups: ['shipping_context', 'promotion']
+
+Data from this configuration is used by the ``oro.cache.generator.object_cache_key`` service to provide cache keys for the
+given object and scope.
 
 
 .. include:: /include/include-links-dev.rst
