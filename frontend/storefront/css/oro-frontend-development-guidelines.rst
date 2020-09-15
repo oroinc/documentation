@@ -31,8 +31,7 @@ Selector names are **lowercase** and their logical parts are divided by a dash (
 Block Name
 ^^^^^^^^^^
 
-A block is a logical self-contained functional component of the
-user interface.
+A block is a logical self-contained functional component of the user interface.
 
 A block identifier should match the corresponding :ref:`layout block type identifier <dev-doc-frontend-layouts-layout>`.
 

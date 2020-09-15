@@ -4,9 +4,8 @@ Viewport Manager
 ================
 
 Viewport manager contains a collection of available screen types that can be used on the theme.
-Also responsible for triggering event `viewport:change` through mediator, when change the type of screen.
-Possibility subscribe to event `viewport:change` in view and create a logic based on the viewport changes.
-For example |DOM Relocation View| already implemented functionality based by Viewport Manager.
+It is also responsible for triggering event `viewport:change` through the mediator, when the type of the screen changes.
+It is possible to subscribe to event `viewport:change` in view and create a logic based on the viewport changes (for example, :ref:`DOM Relocation View <bundle-docs-commerce-customer-portal-frontend-bundle-dom>`).
 
 Screen Map
 ----------
@@ -98,12 +97,12 @@ By default these settings for list of screen types synchronized with scss breakp
     ]
 
 
-You can override these breakpoints |via scss variables|.
+You can override these breakpoints :ref:`via scss variables <dev-doc-frontend-storefront-css-media-breakpoints>`.
 
 Overriding via js Module Config for a Theme
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This config will has the highest priority
+This config has the highest priority:
 
 .. code-block:: none
 
@@ -127,7 +126,7 @@ This config will has the highest priority
            }
    }); }}
 
-To delete inherited screen type need set `skip: true` for a specific screen name
+To delete an inherited screen type, set `skip: true` for a specific screen name:
 
 .. code-block:: none
 
@@ -152,8 +151,8 @@ To delete inherited screen type need set `skip: true` for a specific screen name
 Screen Types
 ------------
 
-Screen type used for describe some viewport size range.
-It provides an opportunity to describe the parameters like `name`, `max` size of screen type.
+A screen type is used to describe a viewport size range; it provides an opportunity to describe the parameters like `name`, `max` size of the screen type.
+
 For example:
 
 .. code-block:: javascript

@@ -7,17 +7,21 @@ OroFrontendBundle
 
 OroFrontendBundle enables the storefront for interacting with customers in Oro application. The storefront complements the back-office UI that is available to the company employees only.
 
+.. hint::
+    For information on Storefront REST API, please see a dedicated :ref:`topic <web-api--storefront>`.
+
 Related Documentation
 ---------------------
 
-* |Disable JS Routes Source File Generation on the Fly|
-* |Customize a Sticky Panel|
-* |Create a Custom Sticky Panel|
-* |Move Dom Element from One Container to Another|
-* |Organize Setup Mass Action on Datagrid|
-* |Close Website for Non-authenticated Visitors|
-* |Prevent Displaying the Back-Office Datagrids in the Storefront|
-* :ref:`Storefront REST API <web-api--storefront>`
+.. toctree::
+   :maxdepth: 1
+
+   configuration
+   frontend-access
+   mass-action-grid-setup
+   sticky-panel-view
+   dom-relocation-view
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
