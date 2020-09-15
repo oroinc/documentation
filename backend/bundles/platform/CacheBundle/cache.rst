@@ -240,6 +240,30 @@ By default, rules for |Symfony Validation Component| are cached using
 validation caching suit some custom requirements. To do this, you need
 to redefine the ``oro_cache.provider.validation`` service.
 
+.. _op-structure--cache--complex-objects-keys:
+
+Caching Data based on Complex Objects
+-------------------------------------
+
+Cache Hit Ratio is an important measure of cache efficiency. Choosing the right Cache Key might be a complex task,
+especially when the cache key should depend on the data stored in a Complex Object. Cache key generation strategy can vary
+in different cases and rely on different fields of the same object. To configure cache metadata for different scopes, use
+`Resources/config/oro/cache_metadata.yml` files that can be located in any bundle.
+
+Here is an example of such configuration:
+
+.. code-block:: yaml
+   :linenos:
+   
+    Oro\Bundle\OrderBundle\Entity\OrderAddress:
+        attributes:
+            id:
+                groups: ['shipping_context']
+            country:
+                groups: ['shipping_context', 'promotion']
+
+Data from this configuration is used by the ``oro.cache.generator.object_cache_key`` service to provide cache keys for the
+given object and scope.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
