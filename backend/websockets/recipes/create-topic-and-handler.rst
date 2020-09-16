@@ -110,18 +110,14 @@ section above) and use its **onPublish()** method to perform any necessary tasks
 To subscribe a **frontend client** to and unsubscribe it from the topic, use the **subscribe** and **unsubscribe** methods of the
 **orosync/js/sync** component, e.g.:
 
-.. code-block:: twig
+.. code-block:: javascript
     :linenos:
 
-    # ping_js.html.twig
-    <script type="text/javascript">
-       loadModules(['orosync/js/sync'],
-       function(sync) {
-           sync.subscribe('oro/ping', function () {
-               console.log(‘Received message from oro/ping topic’);
-           });
-       });
-    </script>
+    import sync from 'orosync/js/sync';
+
+    sync.subscribe('oro/ping', () => {
+        console.log('Received message from oro/ping topic');
+    });
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

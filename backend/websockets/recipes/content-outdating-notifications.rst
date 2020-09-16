@@ -27,18 +27,16 @@ that were planned to be run when the content with this tag is changed. If this t
 manager will simply ignore this WebSocket message.
 
 For the Content Manager to keep track of the actuality of the content item, it must be explicitly asked to do so by
-sending to the **tagContent** method a **unique content tag** for this content and a **callback** that must be
+sending to the **tagContent** method a **unique content tag** for this content and an optional **callback** that must be
 executed if the content is changed.
 
-.. code-block:: php
+.. code-block:: javascript
     :linenos:
 
-    <script type="text/javascript">
-        loadModules(['orosync/js/content-manager'],
-        function(contentManager) {
-            contentManager.tagContent([someContentTag], callback);
-        });
-    </script>
+    import loadModules from 'oroui/js/app/services/load-modules';
+
+    loadModules('orosync/js/content-manager')
+        .then(contentManager => contentManager.tagContent([someContentTag], callback);
 
 Where Can I Get the Unique Content Tag
 --------------------------------------
@@ -70,17 +68,19 @@ Therefore, the full example for adding the content to the tracked one in Content
 .. code-block:: php
     :linenos:
 
-    <script type="text/javascript">
-        loadModules(['orosync/js/content-manager'],
-        function(contentManager) {
-            contentManager.tagContent(oro_sync_content_tags(entity), callback);
-        });
-    </script>
+    {% import 'OroUIBundle::macros.html.twig' as UI %}
+
+    <div {{ UI.renderPageComponentAttributes({
+        module: 'orosync/js/app/components/tag-content',
+        options: {
+            tags: oro_sync_get_content_tags(data, includeCollectionTag)
+        }
+    }) }} ></div>
 
 That is what the macro **syncContentTags** does if you see in its source code in the *Oro/Bundle/SyncBundle/Resources/views/Include/contentTags.html.twig* file. In other words, the shortest code to add content
 to the Content Manager tracking registry is
 
-.. code-block:: php
+.. code-block:: twig
     :linenos:
 
     {% import 'OroSyncBundle:Include:contentTags.html.twig' as syncMacro %}
