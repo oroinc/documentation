@@ -135,7 +135,7 @@ Disable Oro Pricing
 Oro pricing is controlled by the `oro_pricing` feature. It may be disabled by switching off the appropriate system config option
 or by voting `VoterInterface::FEATURE_DISABLED` for the `oro_pricing` feature. 
 
-For more information, see |Feature Toggle Bundle|.
+For more information, see :ref:`Feature Toggle Bundle <bundle-docs-platform-feature-toggle-bundle>`.
 
 Voter example:
 

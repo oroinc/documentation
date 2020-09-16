@@ -29,7 +29,7 @@ OroAssetBundle in Use
 Build Assets
 ^^^^^^^^^^^^
 
-First, run the `php bin/console assets:install --symlink` command  to symlink all assets' source files to `public/bundles/` directory.
+First, run the ``php bin/console assets:install --symlink`` command  to symlink all assets' source files to `public/bundles/` directory.
 
 Next, run the :ref:`php bin/console oro:assets:build <bundle-docs-platform-asset-bundle-commands>` command to build assets with the webpack. During the first run, it installs npm dependencies required for the build.
 
@@ -69,7 +69,7 @@ But during development, when HMR is enabled, and webpack-dev-server is listening
 Use HMR
 ~~~~~~~
 
-To use HMR, run the `php bin/console oro:assets:build --hot` command in the background, open the page you want to customize in a Web Browser, and start editing SCSS files in an IDE. You will see the changes in a Browser instantly, without the need to reload the window.
+To use HMR, run the ``php bin/console oro:assets:build --hot`` command in the background, open the page you want to customize in a Web Browser, and start editing SCSS files in an IDE. You will see the changes in a Browser instantly, without the need to reload the window.
 
 .. note:: To speed up the build operation provide the `theme` name as an argument:
 
@@ -170,9 +170,9 @@ In the `prod` environment, assets are minified and do not include source maps.
 Use Commands
 ~~~~~~~~~~~~
 
-* `oro:assets:build [-w|--watch] [-i|--npm-install] [--] [<theme>]`
-* `oro:assets:build admin.oro` to build assets only for the default management-console theme called `admin.oro`
-* `oro:assets:build default --watch` to build assets only for the `blank` theme with enabled `watch` mode
+* ``oro:assets:build [-w|--watch] [-i|--npm-install] [--] [<theme>]``
+* ``oro:assets:build admin.oro`` to build assets only for the default management-console theme called `admin.oro`
+* ``oro:assets:build default --watch`` to build assets only for the `blank` theme with enabled `watch` mode
 
 Arguments
 ~~~~~~~~~
@@ -315,7 +315,7 @@ enable_hmr:
 
 **type: `boolean` optional, default: `%kernel.debug%`**
 
-Enable Webpack Hot Module Replacement. To activate HMR, run `oro:assets:build --hot`
+Enable Webpack Hot Module Replacement. To activate HMR, run ``oro:assets:build --hot``
 
 host
 ~~~~
@@ -569,7 +569,7 @@ Error: listen EADDRINUSE: address already in use 127.0.0.1:8081
 
 There are two cases when the error can appear:
 
-1. You exited the `oro:assets:build` command with <kbd>control</kbd> + <kbd>z</kbd> and `node` process hanged up. To fix, kill the `node` process manually.
+1. You exited the ``oro:assets:build`` command with <kbd>control</kbd> + <kbd>z</kbd> and `node` process hanged up. To fix, kill the `node` process manually.
 2. The port is busy with a different process. To fix, change the :ref:`port configuration in config/config.yml <port>`.
 
 
