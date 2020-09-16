@@ -73,25 +73,26 @@ Define html for `itemsManagerTable`:
     </table>
 
 
-Define template for the item on the list:
+Define template file `templates/item.html` for the item on the list:
 
 .. code-block:: none
+    :linenos:
 
-    <script id="item-tmpl" type="text/template">
-        <tr data-cid="<%= cid %>">
-            <td><%= name %></td>
-            <td><%= label %></td>
-            <td><%= func %></td>
-            <td><%= sorting %></td>
-            <td class="action-cell">
-                <a href="#" data-collection-action="edit">
-                    <i class="fa-pencil-square-o hide-text"></i></a>
-                <a href="#" data-collection-action="delete" data-message="Delete?">
-                    <i class="fa-trash-o hide-text"></i></a>
-            </td>
-        </tr>
-    </script>
-
+     <tr data-cid="<%= cid %>">
+         <td><%= name %></td>
+         <td><%= label %></td>
+         <td><%= func %></td>
+         <td><%= sorting %></td>
+         <td class="action-cell">
+             <a href="#" data-collection-action="edit" role="button" title="_.__('Edit')">
+                 <span class="fa-pencil-square-o hide-text" aria-hidden="true"></span>
+             </a>
+             <a href="#" data-collection-action="delete" role="button" title="_.__('Delete')"
+                 data-message="Delete?">
+                 <span class="fa-trash-o hide-text" aria-hidden="true"></span>
+             </a>
+         </td>
+     </tr>
 
 Instantiate item collection:
 
@@ -129,10 +130,13 @@ Apply `itemsManagerEditor` widget on `div#editor`:
 
 Apply `itemsManagerTable` widget to `tbody.item-container`:
 
-.. code-block:: none
+.. code-block:: javascript
+    :linenos:
+
+    import itemTemplate from 'tpl-loader!templates/item.html';
 
     $('tbody.item-container').itemsManagerTable({
-        itemTemplate: #('#item-tmpl').html(),
+        itemTemplate: itemTemplate,
         collection: items
     });
 

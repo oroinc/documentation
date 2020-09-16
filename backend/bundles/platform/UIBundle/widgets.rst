@@ -310,13 +310,22 @@ Let's assume that a widget needs to trigger a *formSave* event when a form is su
 
 **Page content**
 
-.. code-block:: html
+.. code-block:: php
    :linenos:
 
-    <div id="poll-widget"></div>
-    <script type="text/javascript">
-    loadModules(['oroui/js/widget-manager', 'oro/block-widget'],
-    function(widgetManager, BlockWidget) {
+    <div id="poll-widget" {{ UI.renderPageComponentAttributes({
+        'module': 'your/widget/creator'
+    })></div>
+
+Create a js module that creates widget `'your/widget/creator'` as shown in the example below; please remember to add this module to the list of `dynamic-imports` in `jsmodules.yml`.
+
+.. code-block:: javascript
+    :linenos:
+
+    import widgetManager from 'oroui/js/widget-manager';
+    import BlockWidget from 'oro/block-widget';
+
+    export default function(options) {
         var widgetInstance = new BlockWidget({
             el: '#poll-widget',
             url: '/my-poll-widget',
@@ -327,12 +336,11 @@ Let's assume that a widget needs to trigger a *formSave* event when a form is su
         widgetInstance.on('formSave', function() {
             alert('Form saved');
         });
-    });
-    </script>
+    }
 
 **Widget content**
 
-.. code-block:: html
+.. code-block:: php
    :linenos:
 
     <div class="widget-content">
@@ -349,16 +357,25 @@ Let's assume that a widget needs to trigger a *formSave* event when a form is su
         </form>
 
         {% if isSaved %}
-        <script type="text/javascript">
-            loadModules(['oroui/js/widget-manager'],
-            function(widgetManager) {
-                widgetManager.getWidgetInstance({{ app.request.get('_wid')|json_encode|raw }}, function(widget) {
-                    widget.trigger('formSave');
-                });
-            });
-        </script>
+        <div {{ UI.renderPageComponentAttributes({
+             'module': 'your/widget/handler',
+             'options': {wid: app.request.get('_wid')}
+        })></div>
         {% endif %}
     </div>
+
+Create a js module with the handler definition `'your/widget/handler'` as shown in the example below; please remember to add this module to the list of `dynamic-imports` in `jsmodules.yml`.
+
+.. code-block:: javascript
+    :linenos:
+
+    import widgetManager from 'oroui/js/widget-manager';
+
+    export default function(options) {
+        widgetManager.getWidgetInstance(options.wid, widget => {
+            widget.trigger('formSave');
+        });
+    }
 
 API
 ^^^
