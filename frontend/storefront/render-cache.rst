@@ -1,8 +1,12 @@
 OroCommerce Render Cache Extension
 ==================================
 
-OroLayoutCacheBundle provides the render cache for OroCommerce
-storefront layouts.
+One of the ways to significantly improve website performance is to enable caching.
+OroCommerce Render Cache Extension provides the server-side cache for OroCommerce storefront
+layouts. With a few layout-block options, you can enable cache for specific layout blocks
+permanently or for a particular time and invalidate it with the cache tags from a regular
+Symfony service when needed. The extension also supports complex caching strategies using
+the custom cache metadata provider PHP class.
 
 Installation
 ------------
@@ -43,8 +47,7 @@ To enable the layout block cache, provide the ``cache`` block option.
        - '@setOption':
            id: <block-id>
            optionName: cache
-           optionValue:
-             cache: true
+           optionValue: true
 
 Disable the Cache
 ~~~~~~~~~~~~~~~~~
@@ -59,8 +62,7 @@ By default, the cache is disabled for all the blocks. You can also disable the c
        - '@setOption':
            id: <block-id>
            optionName: cache
-           optionValue:
-             cache: null
+           optionValue: null
 
 
 Configuration Reference
@@ -86,8 +88,7 @@ for post-cache substitution).
            id: <block-id>
            optionName: cache
            optionValue:
-             cache:
-               maxAge: 600
+             maxAge: 600
 
 varyBy
 ^^^^^^
@@ -108,9 +109,8 @@ user is logged in or not).
            id: <block-id>
            optionName: cache
            optionValue:
-             cache:
-               varyBy:
-                 product: '=data["product"].getId()'
+             varyBy:
+               product: '=data["product"].getId()'
 
 tags
 ^^^^
@@ -131,9 +131,8 @@ Tags are used for the cache invalidation.
            id: <block-id>
            optionName: cache
            optionValue:
-             cache:
-               tags:
-                 - '="product_" ~data["product"].getId()' # For product with id = 14 it's evaluated to `product_14`
+             tags:
+               - '="product_" ~data["product"].getId()' # For product with id = 14 it's evaluated to `product_14`
 
 if
 ^^
@@ -153,8 +152,7 @@ Indicates when the cache must be enabled.
            id: <block-id>
            optionName: cache
            optionValue:
-             cache:
-               if: '!context["is_logged_in"]'
+             if: '=!context["is_logged_in"]'
 
 .. note:: All the options can apply layout expressions and must be evaluated to scalar values.
    Also, layout expressions for the cache option must not depend on other block options.
@@ -177,7 +175,7 @@ with the ``product_ID`` tag:
            optionName: cache
            optionValue:
              maxAge: 600                                  # Cache the block for 600 seconds (10 minutes)
-             if: '!context["is_logged_in"]'               # Enable cache only when user is not logged in
+             if: '=!context["is_logged_in"]'               # Enable cache only when user is not logged in
              varyBy:
                product: '=data["product"].getId()'        # Cache varies per product
              tags:
@@ -192,7 +190,7 @@ with the ``product_ID`` tag:
       layout:
         actions:
           # ...
-        conditions: context["is_logged_in"]
+        conditions: 'context["is_logged_in"]'
 
 Post-Cache Substitution
 -----------------------
@@ -265,7 +263,7 @@ with the layout update or cache a wrapping container instead.
            id: product_view_container
            optionName: visible
            optionValue: true
-     conditions: context["is_logged_in"]
+     conditions: 'context["is_logged_in"]'
 
 Make Cache Items Always Vary By Some Data
 -----------------------------------------
