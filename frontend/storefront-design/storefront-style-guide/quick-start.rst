@@ -17,7 +17,7 @@ The guide contains instructions and tricks on how to quickly create a design of 
    <center>
    Click the button below to download the latest OroCommerce Storefront Style Guide:
    </br></br>
-   <a href="https://github.com/oroinc/OroCommerceStorefrontStyleGuide/releases/download/1.0.0/OroCommerce.Storefront.Style.Guide.sketch" class="frontstore-button" role="button"><span></span>Download Storefront Style Guide</a>
+   <a href="https://go.oroinc.com/acton/attachment/42805/f-8001f1a4-0d61-47de-835c-5555ed17098c/1/-/-/-/-/OroCommerce.Storefront.Style.Guide.sketch" class="frontstore-button" role="button"><span></span>Download Storefront Style Guide</a>
    </center>
 
 
