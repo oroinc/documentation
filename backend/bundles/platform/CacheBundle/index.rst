@@ -344,6 +344,17 @@ Here is an example of such configuration:
 Data from this configuration is used by the ``oro.cache.generator.object_cache_key`` service to provide cache keys for the
 given object and scope.
 
+Sometimes there is a need to configure cache key generation metadata for objects that cannot be normalized by
+the default normalizer ``GetSetMethodNormalizer``. In such case new normalizer should be created and registered as a service
+tagged with ``oro_cache_generator_normalizer``.
+
+.. code-block:: yaml
+   :linenos:
+
+   acme_cache.serializer.normalizer:
+      class: AcmeBundle\Normalizer\CustomObjectNormalizer
+      tags:
+         - { name: 'oro_cache_generator_normalizer' }
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
