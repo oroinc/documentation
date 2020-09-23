@@ -255,7 +255,7 @@ The feature checker makes the decision based on the configured strategy defined 
 By default, `ConfigVoter` is registered to check features availability.
 It checks the feature state based on the value of a toggle option defined in the features.yml configuration.
 
-A custom voter needs to implement `Oro\Bundle\FeatureToggleBundle\Checker\Voter\VoterInterface`.
+A custom voter needs to implement ``Oro\Bundle\FeatureToggleBundle\Checker\Voter\VoterInterface``.
 Imagine that we have the state checker that returns decision based on a feature name and a scope identifier.
 The feature is enabled for the valid state and disabled for the invalid state. In other cases, do not vote.
 

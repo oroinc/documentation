@@ -332,7 +332,7 @@ To use `LocalizedFallbackValue` for fields into the entity, make it is extendabl
         }
     }
 
-Enable `Oro\Bundle\LocaleBundle\DependencyInjection\Compiler\DefaultFallbackExtensionPass` for the entity and the field
+Enable ``Oro\Bundle\LocaleBundle\DependencyInjection\Compiler\DefaultFallbackExtensionPass`` for the entity and the field
 inside the bundle class:
 
 

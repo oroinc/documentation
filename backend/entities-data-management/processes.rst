@@ -122,8 +122,8 @@ provoke self-triggering.
 
 .. note::
          - If you want to test this process configuration in a real application, you can place this configuration into the ``Oro/Bundle/WorkflowBundle/Resources/config/oro/processes.yml`` file and reload the definitions using the console command``bin/console oro:process:configuration:load``. After that, you can create a ``Contact`` of the changed assigned user and ensure that the process works.
-         - Expression `$.` allows you to access the main data container; for processes, it is an instance of `Oro\Bundle\WorkflowBundle\Model\ProcessData`.
-         - Expression `$` (shortcut) or `$.data` allows you to access the current entity; above in example it is `Oro\Bundle\ContactBundle\Entity\Contact`.
+         - Expression `$.` allows you to access the main data container; for processes, it is an instance of ``Oro\Bundle\WorkflowBundle\Model\ProcessData``.
+         - Expression `$` (shortcut) or `$.data` allows you to access the current entity; above in example it is ``Oro\Bundle\ContactBundle\Entity\Contact``.
 
 Console Commands
 ----------------
