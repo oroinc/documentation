@@ -25,7 +25,7 @@ Example:
             - { name: oro_formatter, formatter: some_formatter }    
 
 
-The service class should implement the `Oro\Bundle\UIBundle\Formatter\FormatterInterface` interface.
+The service class should implement the ``Oro\Bundle\UIBundle\Formatter\FormatterInterface`` interface.
 
 
 Usage

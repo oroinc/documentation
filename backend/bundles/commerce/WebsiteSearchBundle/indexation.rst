@@ -95,7 +95,7 @@ Collect Context
 
 **Name:** `oro_website_search.event.collect_context`
 
-**Class:** `Oro\Bundle\WebsiteSearchBundle\Event\CollectContextEvent`
+**Class:** `Oro\\Bundle\\WebsiteSearchBundle\\Event\\CollectContextEvent`
 
 The event is used to collect data that has to be consistent during the indexation. For example, the environment-related
 variables may change value during the indexation, but the indexation process must rely on the values that were actual when indexation started. This event is triggered for every affected website, so the environment-related variables (e.g system configuration values defined for a website) should be defined in the website scope. All the necessary data should be added to the indexation context.

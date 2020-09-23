@@ -9,7 +9,7 @@ If connector of your integration requires to store some data between imports, st
 That's might be useful for example when integration supports multiple modes(update/initial import) and need to store
 date of last synchronization or another example if your connector supports renew download it's useful to store current state.
 
-To use this feature your connector class should extends `Oro\Bundle\IntegrationBundle\Provider\AbstractConnector`,
+To use this feature your connector class should extends ``Oro\Bundle\IntegrationBundle\Provider\AbstractConnector``,
 and then methods `addStatusData` and `getStatusData` will be available.
 
 **Example:**

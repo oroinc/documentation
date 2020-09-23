@@ -546,8 +546,8 @@ The serializer is involved both in the import and export operations. It is exten
 The serializer uses normalizers for the entities that will be imported/exported to perform converting of objects.
 
 The following requirements should be met for the normalizers to implement interfaces:
-* **Oro\Bundle\ImportExportBundle\Serializer\Normalizer\NormalizerInterface** - used in export.
-* **Oro\Bundle\ImportExportBundle\Serializer\Normalizer\DenormalizerInterface** - used in import.
+* ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\NormalizerInterface`` - used in export.
+* ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\DenormalizerInterface`` - used in import.
 
 Generally, you should implement both interfaces if you need to add both import and export for the entity.
 
@@ -609,7 +609,7 @@ The serializer of OroImportExportBundle should be aware of its normalizer. To ma
 Add Data Converter
 ------------------
 
-The data converter is responsible for converting the header of the import/export file. Assuming that an entity has some properties to be exposed in the export file. You can use the default `Oro\Bundle\ImportExportBundle\Converter\DefaultDataConverter` Data Converter  however, if there is a necessity to have custom labels instead of the properties names in the export/import files, you can extend `Oro\Bundle\ImportExportBundle\Converter\AbstractTableDataConverter`.
+The data converter is responsible for converting the header of the import/export file. Assuming that an entity has some properties to be exposed in the export file. You can use the default ``Oro\Bundle\ImportExportBundle\Converter\DefaultDataConverter`` Data Converter  however, if there is a necessity to have custom labels instead of the properties names in the export/import files, you can extend ``Oro\Bundle\ImportExportBundle\Converter\AbstractTableDataConverter``.
 
 **Example Of a Custom Data Converter**
 
@@ -870,16 +870,19 @@ General:
 - entity_class: a full class name of the entity.
 
 Export:
+
 - exportJob: the ID of the export job you have defined.
 - exportProcessor: the alias ID of the export processor or an array with the alias IDs of the processors if they are more than one.
 - exportLabel: the label that should be used for the export options pop-up (in case of multiple export processors).
 
 Export template:
+
 - exportTemplateJob: the ID of the export template job you have defined.
 - exportTemplateProcessor: the alias ID of the export template processor or an array with the alias IDs of the processors if they are more than one.
 - exportTemplateLabel: the label that should be used for the export template options pop-up (in case of multiple export processors).
 
 Import:
+
 - importProcessor: the alias ID of the import processor.
 - importLabel: the label used for the import pop-up.
 - importJob: the ID of the import job you have defined.

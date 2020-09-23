@@ -43,7 +43,7 @@ The writer is responsible for saving the results at a specific destination. In t
 Serializer
 ^^^^^^^^^^
 
-The serializer namespace contains a dummy encoder (encoding/decoding is not needed for csv import), normalizers (collection, datetime, and entity), and required interfaces. It also contains the Serializer class extended from `Symfony\Component\Serializer\Serializer` to use both the extended `supportsDenormalization` and `supportsNormalization` methods.
+The serializer namespace contains a dummy encoder (encoding/decoding is not needed for csv import), normalizers (collection, datetime, and entity), and required interfaces. It also contains the Serializer class extended from ``Symfony\Component\Serializer\Serializer`` to use both the extended `supportsDenormalization` and `supportsNormalization` methods.
 
 Strategy
 ^^^^^^^^
