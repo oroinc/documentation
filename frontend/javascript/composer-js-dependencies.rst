@@ -33,7 +33,7 @@ Workflow
 Initial Install of Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-During the `composer install` command composer runs the `Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets` post-install command, which recursively collects NPM packages from `composer.json` files of all application dependencies. Collected NPM packages are passed to `npm install` which handles further installation:
+During the `composer install` command composer runs the ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets`` post-install command, which recursively collects NPM packages from `composer.json` files of all application dependencies. Collected NPM packages are passed to `npm install` which handles further installation:
 
 * updates `dependencies` section in existing `package.json` or creates new file
 * generates `package-lock.json` file
@@ -62,7 +62,7 @@ An example of `composer.json` containing NPM dependencies in the `extra.npm` sec
 Application Install When Lock Files Already Exist
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If `package-lock.json` already exists, post-install command `Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets` does the following:
+If `package-lock.json` already exists, post-install command ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets`` does the following:
 
  - runs `npm ci` which looks into the lock file, fetches NPM packages, and puts them into `node_modules/` directory
  - copies installed packages from the `node_modules/` directory into the `%symfony-web-dir%/bundles/npmassets/` directory

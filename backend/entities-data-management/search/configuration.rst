@@ -63,7 +63,7 @@ from the search.yml files and has only one configuration for each entity.
 
 **Example**
 
-`Acme\Bundle\DemoBundle\Resources\config\oro\search.yml`:
+``Acme\Bundle\DemoBundle\Resources\config\oro\search.yml``:
 
 .. code-block:: none
     :linenos:
@@ -82,7 +82,7 @@ from the search.yml files and has only one configuration for each entity.
                 target_type:            text
                 target_fields:          [name]
 
-`AcmeCRM\Bundle\DemoBundle\Resources\config\search.yml`:
+``AcmeCRM\Bundle\DemoBundle\Resources\config\search.yml``:
 
 .. code-block:: none
     :linenos:

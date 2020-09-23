@@ -269,8 +269,7 @@ same interface language. However, data for various localizations may differ.
 In addition, if the current localization is assigned a parent localization then in cases when a field value does not
 exist, it is taken from the parent. This allows for setting up a flexible translation tree via the UI.
 
-To implement this approach, use the
-|LocalizedFallbackValue|.
+To implement this approach, use the |LocalizedFallbackValue|.
 
 To use `LocalizedFallbackValue` for fields into the entity, make it is extendable:
 
@@ -332,7 +331,7 @@ To use `LocalizedFallbackValue` for fields into the entity, make it is extendabl
         }
     }
 
-Enable `Oro\Bundle\LocaleBundle\DependencyInjection\Compiler\DefaultFallbackExtensionPass` for the entity and the field
+Enable ``Oro\Bundle\LocaleBundle\DependencyInjection\Compiler\DefaultFallbackExtensionPass`` for the entity and the field
 inside the bundle class:
 
 
