@@ -847,4 +847,8 @@ Links (User)
 
    <a href="https://www.ftc.gov/" target="_blank">Federal Trade Commission</a>
 
+.. |public self-serve demo| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/demo/" target="_blank">public self-serve demo</a>
+
 

@@ -61,6 +61,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    RFQ and Quote Management <rfq-quotes/index>
    Order Management <orders/index>
    Multi-Website Configuration <websites/index>
+   B2C Websites in OroCommerce <b2c/index>
    Tax Management <taxes/index>
    Inventory and Warehouse Management <inventory/index>
    Storefront and Back-Office Menu Management <menus/index>
