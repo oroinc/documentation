@@ -1,5 +1,7 @@
 :oro_documentation_types: OroCommerce
 
+.. _website--commerce--configuration--customer:
+
 Customer Configuration Settings per Website
 ===========================================
 
