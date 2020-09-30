@@ -11,37 +11,7 @@ For example |DOM Relocation View| already implemented functionality based by Vie
 Screen Map
 ----------
 
-By default these settings for list of screen types synchronized with scss breakpoints.
-
-.. code-block:: scss
-   :linenos:
-
-    // Desktop Media Breakpoint
-    $breakpoint-desktop: 1100px;
-
-    // iPad mini 4 (768*1024), iPad Air 2 (768*1024), iPad Pro (1024*1366)
-    $breakpoint-tablet: $breakpoint-desktop - 1px;
-    $breakpoint-tablet-small: 992px;
-
-    // iPhone 4s (320*480), iPhone 5s (320*568), iPhone 6s (375*667), iPhone 6s Plus (414*763)
-    $breakpoint-mobile-big: 767px;
-    $breakpoint-mobile-landscape: 640px;
-    $breakpoint-mobile: 414px;
-    $breakpoint-mobile-small: 360px;
-
-    $oro_breakpoints: (
-        'desktop': '(min-width: ' + $breakpoint-desktop + ')',
-        'tablet': '(max-width: ' +  $breakpoint-tablet + ')',
-        'strict-tablet': '(max-width: ' +  $breakpoint-tablet + ') and (min-width: ' + ($breakpoint-tablet-small + 1) + ')',
-        'tablet-small': '(max-width: ' +  $breakpoint-tablet-small + ')',
-        'strict-tablet-small': '(max-width: ' +  $breakpoint-tablet-small + ') and (min-width: ' + ($breakpoint-mobile-landscape + 1) + ')',
-        'mobile-landscape': 'screen and (max-width: ' +  $breakpoint-mobile-landscape + ')',
-        'strict-mobile-landscape': '(max-width: ' +  $breakpoint-mobile-landscape + ') and (min-width: ' + ($breakpoint-mobile + 1) + ')',
-        'mobile': '(max-width: ' + $breakpoint-mobile + ')',
-        'mobile-big': '(max-width: ' +  $breakpoint-mobile-big + ')',
-    );
-
-|Default scss breakpoints| are converted to the following array:
+By default, the settings for the list of screen types has the following parameters:
 
 .. code-block:: javascript
    :linenos:
@@ -49,91 +19,34 @@ By default these settings for list of screen types synchronized with scss breakp
     screenMap: [
         {
             name: 'desktop',
-            min: 1100
+            max: Infinity
         },
         {
             name: 'tablet',
             max: 1099
         },
         {
-            name: 'strict-tablet',
-            max: 1099,
-            min: 993
-        },
-        {
             name: 'tablet-small',
             max: 992
-        },
-        {
-            name: 'strict-tablet-small',
-            max: 992,
-            min: 641
-        },
-        {
-            name: 'mobile-big',
-            max: 767
-        },
-        {
-            name: 'strict-mobile-big',
-            max: 767,
-            min: 641,
         },
         {
             name: 'mobile-landscape',
             max: 640
         },
         {
-            name: 'strict-mobile-landscape',
-            max: 640,
-            min: 415
-        },
-        {
             name: 'mobile',
             max: 414
         },
-        {
-            name: 'mobile-small',
-            max: 360
-        }
     ]
 
 
-You can override these breakpoints |via scss variables|.
-
-Overriding via js Module Config for a Theme
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This config will has the highest priority
+You can override this config for a specific theme.
 
 .. code-block:: none
 
-   {% import '@OroAsset/Asset.html.twig' as Asset %}
-   {{ Asset.js_modules_config({
-           'oroui/js/viewport-manager': {
-               screenMap: [
-                   {
-                       name: 'tablet',
-                       max: 640
-                   },
-                   {
-                       name: 'desktop',
-                       max: 1260
-                   },
-                   {
-                       name: 'desktop-hd',
-                       max: 1920
-                   }
-               ]
-           }
-   }); }}
-
-To delete inherited screen type need set `skip: true` for a specific screen name
-
-.. code-block:: none
-
-   {% import '@OroAsset/Asset.html.twig' as Asset %}
-   {{ Asset.js_modules_config({
-           'oroui/js/viewport-manager': {
+   require({
+    config: {
+        'oroui/js/viewport-manager': {
                screenMap: [
                    {
                        name: 'tablet',
@@ -146,13 +59,13 @@ To delete inherited screen type need set `skip: true` for a specific screen name
                ]
            }
        }
-   }); }}
+   });
 
 
 Screen Types
 ------------
 
-Screen type used for describe some viewport size range.
+Screen types are used to describe a viewport size range.
 It provides an opportunity to describe the parameters like `name`, `max` size of screen type.
 For example:
 
@@ -183,7 +96,9 @@ min
 
 **Type:** Number
 
-Set min *viewport* size for screen type
+**Default**: Infinity
+
+Set max *viewport* size for screen type
 
 Events
 ------
