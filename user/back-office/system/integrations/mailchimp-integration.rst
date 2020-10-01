@@ -14,8 +14,6 @@ To configure MailChimp integration, ensure that you have MailChimp
 extension installed in your Oro instance. For installation instructions,
 click |here4|.
 
-SaaS users should have MailChimp pre-installed.
-
 .. _user-guide-mc-integration--mailchimp-side:
 
 Configure Integration on the MailChimp Side
