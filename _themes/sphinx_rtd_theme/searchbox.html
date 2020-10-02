@@ -23,9 +23,9 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-{% set algoliaOptions = '{}' %}
+{% set algoliaOptions = '{hitsPerPage: 10}' %}
 {% if oro_current_version %}
-    {% set algoliaOptions = "{ 'facetFilters': [\"version:" ~ oro_current_version ~ "\"] }" %}
+    {% set algoliaOptions = "{ 'facetFilters': [\"version:" ~ oro_current_version ~ "\"], hitsPerPage: 10 }" %}
 {% endif %}
 <script>
     docsearch({
