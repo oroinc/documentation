@@ -10,9 +10,9 @@ Configure PayPal Payflow Gateway / PayPal Payment Pro Payment Methods Integratio
 
 This section describes the steps that are necessary to expose either PayPal Payflow Gateway and PayPal Payflow Gateway Express Checkout or PayPal Payments Pro and PayPal Payments Pro Express Checkout as payment methods for OroCommerce orders and quotes.
 
-.. note:: Integration steps for PayPal Payments Pro and PayPal Payflow Gateway are exactly the same. The only difference is the integration type that indicates the way OroCommerce shall treat the integration.
+.. note:: Integration steps for PayPal Payments Pro and PayPal Payflow Gateway are exactly the same. The only difference is the integration type that indicates the way OroCommerce treats the integration.
 
-.. note:: Before you begin, see :ref:`PayPal Services overview <user-guide--payment--payment-providers-overview--paypal>` and learn about :ref:`PayPal integration prerequisites <user-guide--payment--prerequisites--paypal>` - the preparation steps that should be performed on the PayPal service side.
+.. note:: Before you begin, see :ref:`PayPal Services Overview <user-guide--payment--payment-providers-overview--paypal>` and learn about :ref:`PayPal Integration Prerequisites <user-guide--payment--prerequisites--paypal>` - the preparation steps that should be performed on the PayPal service side.
 
 To enable PayPal Payflow Gateway or PayPal Payment Pro payments:
 
@@ -66,6 +66,10 @@ To enable PayPal Payflow Gateway or PayPal Payment Pro payments:
 
 Next, set up a payment rule that enables these payment methods (PayPal Payflow Gateway and PayPal Payflow Gateway Express Checkout and/or PayPal Payment Pro and PayPal Payment Pro Express Checkout) for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.
 
+.. important:: Please be aware that PayPal Payflow Gateway cannot be used if the order total at checkout exceeds 99,999.99. To ensure thatPayPal Gateway payment method is hidden at Payment Step of the checkout when the order total exceeds the stated amount, please add the following expression to the payment rule linked to your active PayPal Payflow Gateway method: ``total < 99999``.
+
+               .. image:: /user/img/system/integrations/paypal/paypal-expression.png
+                  :alt: Add expression to payment rule with PayPal to hide PayPal integration from payment methods at checkout when order total exceeds 99,999.99
 
 .. include:: /include/include-images.rst
    :start-after: begin
