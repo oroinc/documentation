@@ -52,12 +52,15 @@ To create a payment rule:
 
 #. In the **Expression** section, specify the expression that describes the conditions when this payment rule should be applied. For example, *account = 1*.
 
-   .. TODO what keywords we really can use here?
-
    .. image:: /user/img/system/payment_rules/create_payment_rule_expression.png
       :class: with-border
 
    For detailed information about the expression language used in the shipping and payment rules, please see the :ref:`Expression Language for Shipping and Payment Rules <payment-shipping-expression-lang>` guide.
+
+   .. important:: Please be aware that PayPal Payflow Gateway cannot be used if the order total at checkout exceeds 99,999.99. To ensure thatPayPal Gateway payment method is hidden at Payment Step of the checkout when the order total exceeds the stated amount, please add the following expression to the payment rule linked to your active PayPal Payflow Gateway method: ``total < 99999``.
+
+               .. image:: /user/img/system/integrations/paypal/paypal-expression.png
+                  :alt: Add expression to payment rule with PayPal to hide PayPal integration from payment methods at checkout when order total exceeds 99,999.99
 
 #. In the **Payment Method Configurations** section, you may enable one or more payment methods with this payment rule. To add a payment method, select it from the list and click **+ Add**.
 
