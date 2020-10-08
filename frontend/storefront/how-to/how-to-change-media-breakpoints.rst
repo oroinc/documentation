@@ -21,11 +21,11 @@ To add, update media queries theme, a developer must create files with the ``you
 .. code:: scss
 
     $custom-breakpoints: (
-        'my-custom-breakpoint': __your-rule__, //  add a new rule
-        'desktop': __your-rule__,              // update an existing rule
+        'big-tablet': '(min-width: 1100px) and (max-width: 1299px)', //  add a new rule
+        'desktop': '(min-width: 1300px)',                           // update an existing rule
     );
 
-    $breakpoints: merge-breakpoints($oro_breakpoints, $custom-breakpoints) !default;
+    $breakpoints: merge-breakpoints($oro_breakpoints, $custom-breakpoints);
 
 To disable a media query theme, a developer must set breakpoint to null
 
@@ -35,7 +35,7 @@ To disable a media query theme, a developer must set breakpoint to null
         'desktop': null                        // disable an existing rule
     );
 
-    $breakpoints: merge-breakpoints($oro_breakpoints, $custom-breakpoints) !default;
+    $breakpoints: merge-breakpoints($oro_breakpoints, $custom-breakpoints);
 
 .. note:: You have to put this code into your own **settings/global-settings.scss** file as described in
     the :ref:`CSS Files Structure <dev-doc-frontend-css-theme-structure>` article.
