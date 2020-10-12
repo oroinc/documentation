@@ -42,10 +42,6 @@ OroCommerce works with the following payment methods out-of-the-box:
 
   Authorize.Net is a global payment gateway for businesses based in the United States, Canada, United Kingdom, Europe, and Australia. Integration of OroCommerce with Authorize.Net enables you to accept credit and debit cards on your OroCommerce website. This integration requires registration with the Authorize.Net service.
 
-* :ref:`Wirecard Services <doc--payment--payment-providers-overview--wirecard>`
-
-  Wirecard is a cashless payment service that enables business owners to accept payment in more than 120 currencies via different payment methods using the single account. Integration of OroCommerce with Wirecard enables you to accept on your website payments made via the following methods: Credit and debit cards, PayPal, SEPA Direct Debit.
-
 * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
 
   InfinitePay is a financial management company that provides guaranteed delayed payments on open account terms. Integration of OroCommerce with InfinitePay enables you to secure your company from financial risks related to delayed payments. This integration requires registration with the InfinitePay service, and obtaining the required credentials for the integration with OroCommerce from their support team.

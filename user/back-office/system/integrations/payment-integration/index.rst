@@ -44,7 +44,6 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 * :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
 * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`
 * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
-* :ref:`Wirecard Services <doc--payment--payment-providers-overview--wirecard>`
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
 
 Remove an Integration with a Payment Method Provider
