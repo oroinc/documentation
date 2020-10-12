@@ -7,6 +7,8 @@ Configure Wirecard Integration in the Back-Office
 
 .. begin
 
+.. important:: As of September 30, 2020 the methods used by this SDK are no longer supported by Wirecard. This integration is, therefore, no longer maintained.
+
 To set up integration with Wirecard, complete the following:
 
 1. In the main menu, navigate to **System > Integrations > Manage Integrations**.

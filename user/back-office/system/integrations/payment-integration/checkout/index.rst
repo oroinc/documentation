@@ -62,24 +62,21 @@ Authorize.Net
 .. _doc--payment--checkout-wirecard:
 .. _doc--payment--checkout-wirecard-card:
 
-Wirecard Credit Card
---------------------
+.. Wirecard Credit Card--------------------
 
-.. image:: /user/img/system/integrations/checkout/checkout_wirecard_card.png
+.. .. image:: /user/img/system/integrations/checkout/checkout_wirecard_card.png
 
 .. _doc--payment--checkout-wirecard-paypal:
 
-Wirecard PayPal
----------------
+.. Wirecard PayPal---------------
 
-.. image:: /user/img/system/integrations/checkout/checkout_wirecard_paypal.png
+.. .. image:: /user/img/system/integrations/checkout/checkout_wirecard_paypal.png
 
 .. _doc--payment--checkout-wirecard-sepa:
 
-Wirecard SEPA Direct Debit
---------------------------
+.. Wirecard SEPA Direct Debit --------------------------
 
-.. image:: /user/img/system/integrations/checkout/checkout_wirecard_sepa.png
+.. .. image:: /user/img/system/integrations/checkout/checkout_wirecard_sepa.png
 
 Apruve Checkout
 ---------------

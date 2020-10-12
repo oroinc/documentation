@@ -4,16 +4,16 @@ YAML
 ====
 
 .. toctree::
-    :maxdepth: 1
+   :maxdepth: 1
 
-    acls
-    assets
-    dashboards
-    datagrids
-    entity-config
-    navigation
-    placeholders
-    jsmodules
-    search
-    system-configuration
-    workflows
+   acls
+   assets
+   dashboards
+   datagrids
+   entity-config
+   navigation
+   placeholders
+   jsmodules
+   search
+   system-configuration
+   workflows

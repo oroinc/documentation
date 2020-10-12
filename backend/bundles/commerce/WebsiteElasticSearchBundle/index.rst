@@ -5,9 +5,11 @@
 OroWebsiteElasticSearchBundle
 =============================
 
+.. note:: This bundle is only available in the Enterprise edition.
+
 OroWebsiteElasticSearchBundle enables support of the |Elasticsearch| engine for the search functionality on the OroCommerce Enterprise application storefront.
 
-.. hint:: The WebsiteElasticSearchBundle bundle has exactly the same requirements as ElasticSearchBundle - Elasticsearch 6.*.
+The WebsiteElasticSearchBundle bundle has exactly the same requirements as ElasticSearchBundle - Elasticsearch 6.*.
 
 .. toctree::
    :maxdepth: 1

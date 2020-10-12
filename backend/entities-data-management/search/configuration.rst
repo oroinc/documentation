@@ -213,6 +213,8 @@ If the search engine requires some additional parameters (credentials, index con
 
 Also, engine configuration can override existing services to support some specific use cases of the search engine (e.g. ORM engine overrides index listener to support single flush).
 
+.. _db-search--configuration--datagrid:
+
 Datagrid Configuration
 ----------------------
 

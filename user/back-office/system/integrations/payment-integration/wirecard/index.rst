@@ -5,9 +5,11 @@
 Manage Wirecard Payments Services in the Back-Office
 ====================================================
 
-.. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. important:: As of September 30, 2020 the methods used by this SDK are no longer supported by Wirecard. This integration is, therefore, no longer maintained.
 
-.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Wirecard extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
+.. .. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+
+.. .. hint:: The feature requires extension, so visit Oro Marketplace to download the |Wirecard extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 Wirecard is one of the leading providers of cashless payment services in Europe and around the world. It enables business owners to accept payment in more than 120 currencies via different payment methods using the single account.
 
