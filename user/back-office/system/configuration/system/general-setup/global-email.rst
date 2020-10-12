@@ -110,29 +110,46 @@ To configure a system mailbox globally:
 1. Navigate to **System > System Configuration** in the main menu.
 2. Click **System Configuration > General Setup > Email Configuration** in the panel to the left.
 3. In the **System Mailboxes** section, click **Add Mailbox**.
-
-   .. image:: /user/img/system/config_system/create_mailbox.png
-      :alt: Creating a new mailbox in the email configuration
-
 4. In the **General** section, define the basic settings of the mailbox:
 
    * **Mailbox Label** --- Provide a name for the system mailbox.
    * **Email** --- Provide the email address.
 
-5. In the **Synchronization Settings**, configure your IMAP/SMTP connection:
+5. In the **Synchronization Settings**, configure your IMAP/SMTP connection or an Office 365 account:
 
-   * *Enable IMAP* --- Select the check box to enable retrieving email messages
-   * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
-   * *IMAP Port* --- Provide the IMAP Port, e.g. 993
-   * *Encryption* --- Select the encryption type, SSL or TSL
-   * *Enable SMPT* --- Select the check box to enable sending messages
-   * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
-   * *SMTP Port* --- Provide the SMTP port, e.g. 587
-   * *Encryption* --- Select the encryption type, SSL or TSL
-   * *User* --- Provide your email address
-   * *Password* --- Provide your password
+   .. hint:: Microsoft Office365 oAuth is available since OroCommerce v4.1.9. To check which application version you are running, see the :ref:`system information <system-information>`.
 
-6. Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the check boxes next to the folders you wish to synchronize. In the example below, synchronization has been done for a Gmail mailbox. The INBOX folder will be synchronized.
+   .. note:: Please be aware that if the Account Type value has changed, a new mailbox will be registered and all data from the currently configured mailbox will be lost.
+
+   * **Account Type: Gmail** (is available when the application is integrated with Google and :ref:`OAuth 2.0 for email sync <admin-configuration-integrations-google-gmail-oauth>`  is enabled.)
+
+     * *Connected Account* --- The account connected to Gmail. Click **Retrieve Folders** to load folders from the connected account.
+
+   * **Account Type: Office 365** (is available when the application is integrated with :ref:`Microsoft Office365 OAuth <user-guide-integrations-azure-oauth>`)
+
+     * *Connected Account* --- The account connected to Office 365. Click **Retrieve Folders** to load folders from the connected account.
+
+|
+
+   .. image:: /user/img/system/integrations/microsoft/system-mailbox-365.png
+      :alt: Email synchronization settings for Office 365
+
+|
+
+   * **Account Type: Other**:
+
+     * *Enable IMAP* --- Select the check box to enable retrieving email messages
+     * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
+     * *IMAP Port* --- Provide the IMAP Port, e.g. 993
+     * *Encryption* --- Select the encryption type, SSL or TSL.
+     * *Enable SMTP* --- Select the check box to enable sending messages
+     * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
+     * *SMTP Port* --- Provide the SMTP port, e.g. 587
+     * *Encryption* --- Select the encryption type, SSL or TSL.
+     * *User* --- Provide your email address
+     * *Password* --- Provide your password
+
+    Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the check boxes next to the folders you wish to synchronize. In the example below, synchronization has been done for a Gmail mailbox. The INBOX folder will be synchronized.
 
    .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail are provided on the |Google support page|.
 
@@ -141,7 +158,8 @@ To configure a system mailbox globally:
    .. image:: /user/img/system/config_system/synchronize_mb.png
       :alt: An example of synchronization for a gmail mailbox
 
-7. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox.
+
+6. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox.
 
    * *Do Nothing* --- No actions are performed. Letters are saved in the mailbox.
    * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in OroCRM.
@@ -157,11 +175,11 @@ To configure a system mailbox globally:
    .. image:: /user/img/system/config_system/lead_source_field.png
       :alt: Creating a source entity from the entity management menu
 
-8. In the **Access Management** section, define which users will have access to the system mailbox. You can select :ref:`roles <user-guide-user-management-permissions>` and/or specific users. All the users with defined roles and all the specifically defined users will have access to this mailbox.
+7. In the **Access Management** section, define which users will have access to the system mailbox. You can select :ref:`roles <user-guide-user-management-permissions>` and/or specific users. All the users with defined roles and all the specifically defined users will have access to this mailbox.
 
-9. In the **Autoresponse Rules** section, generate one or several auto-response rules. These rules determine which template is sent to the sender of the email.
+8. In the **Autoresponse Rules** section, generate one or several auto-response rules. These rules determine which template is sent to the sender of the email.
 
-10. Click **Add Rule** to add a new auto-response rule and complete the following details in the dialog:
+9. Click **Add Rule** to add a new auto-response rule and complete the following details in the dialog:
 
    .. image:: /user/img/system/config_system/ar_rule.png
       :alt: Sample auto-response rule form
@@ -177,7 +195,7 @@ To configure a system mailbox globally:
 
    Click **Add** on the bottom to save the rule.
 
-11. Click **Save Settings**.
+10. Click **Save Settings**.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

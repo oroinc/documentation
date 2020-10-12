@@ -851,4 +851,14 @@ Links (User)
 
    <a href="https://oroinc.com/b2b-ecommerce/demo/" target="_blank">public self-serve demo</a>
 
+.. |create a new Azure Active Directory application| raw:: html
 
+   <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal" target="_blank">create a new Azure Active Directory application</a>
+
+.. |Azure portal| raw:: html
+
+   <a href="https://portal.azure.com/" target="_blank">Azure portal</a>
+
+.. |Administrator Consent| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent" target="_blank">Administrator Consent</a>
