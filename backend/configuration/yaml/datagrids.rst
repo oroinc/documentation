@@ -1,6 +1,5 @@
 .. _reference-format-datagrids:
 
-
 Datagrids
 =========
 
@@ -40,8 +39,8 @@ Datagrids
 The datagrid configuration is a large file that is a map of datagrid names mapped to options that
 configure their behavior:
 
-``actions``
------------
+actions
+-------
 
 **type**: ``map``
 
@@ -73,8 +72,8 @@ passed configuring the action using the following options:
     request will be performed to the configured URL, otherwise the resource will be requested
     with a GET request in the background and the response will be displayed.
 
-``action_configuration``
-------------------------
+action_configuration
+--------------------
 
 **type**: ``sequence``
 
@@ -98,8 +97,8 @@ value indicates whether or not the action will be shown.
 
 .. _reference-datagrid-columns:
 
-``columns``
------------
+columns
+-------
 
 **type**: ``map``
 
@@ -143,15 +142,15 @@ grid. For each column you have to pass a map of options to configure how the col
     When it is set to ``twig``, the Twig template referenced to with the ``template`` option will
     be rendered.
 
-``extends``
------------
+extends
+-------
 
 **type**: ``string``
 
 You can reuse existing datagrid configurations by passing their name here.
 
-``filters``
------------
+filters
+-------
 
 **type**: ``map``
 
@@ -161,8 +160,8 @@ by default.
 
 .. _reference-datagrid-filters-columns:
 
-``columns``
-~~~~~~~~~~~
+columns
+~~~~~~~
 
 **type**: ``map``
 
@@ -175,9 +174,9 @@ specifies how the actual filter looks like. The available options are:
 
 ``filter_by_having`` (**type**: ``bool`` **default**: ``false``)
 
-    When set to ``true`` the expression created by the configured filter will be used inside the
+    When set to ``true``, the expression created by the configured filter will be used inside the
     having part of the query (this is needed, for example, when the configured ``data_name`` is
-    the result of an aggregation function.
+    the result of an aggregation function).
 
 ``force_like`` (**type**: ``bool`` **default**: ``false``)
 
@@ -208,8 +207,8 @@ specifies how the actual filter looks like. The available options are:
 
 .. _reference-datagrid-filters-default:
 
-``default``
-~~~~~~~~~~~
+default
+~~~~~~~
 
 **type**: ``map``
 
@@ -223,37 +222,115 @@ configuration for the default value.
     :class:`Oro\\Bundle\\FilterBundle\\Provider\\DateModifierInterface` (the constants prefixed
     with ``VAR_``) to work with dynamic default values.
 
-``options``
------------
+options
+-------
 
 **type**: ``map``
 
-Available additional options are:
+The description of options that you can pass in the datagrid configuration is available below.
 
-``base_datagrid_class``
-~~~~~~~~~~~~~~~~~~~~~~~
+To set datagrid options, define them under the datagrid_name.options path.
 
-**type**: ``string`` **default**: ``Oro\Bundle\DatagridBundle\Datagrid\Datagrid``
+.. code-block:: yaml
+   :linenos:
 
-    With this option, you can switch the datagrid class to a custom implementation.
+    datagrids:
+        acme-demo-datagrid:
+            options:
 
-``export``
-~~~~~~~~~~
+entity_pagination:
+~~~~~~~~~~~~~~~~~~
+
+- values: true|false
+- default: true
+
+Enables pagination UI for a collection of entities when these entities are part of a data set of a datagrid.
+Please take a look at :ref:`OroEntityPaginationBundle <bundle-docs-platform-entity-pagination-bundle>` for more information.
+
+export
+~~~~~~
 
 **type**: ``boolean`` **default**: ``false``
 
     When enabled, the user can export the datagrid in CSV format.
 
-``properties``
---------------
+- values: true|false
+- default: false
+
+When set to `true`, grid export button will be shown.
+More information of export configuration is available in the :ref:`Export Extension <customize-datagrids-extensions-export>` topic.
+
+
+frontend
+~~~~~~~~
+
+- values: true|false
+- default: false
+
+Set the flag to 'true' to display the datagrid on the frontend. If set to 'false', the datagrid will be hidden.
+
+mass_actions
+~~~~~~~~~~~~
+
+Detailed information on the mass action extension is available in the :ref:`mass action extension <customize-datagrid-extensions-mass-action>` topic.
+
+toolbarOptions
+~~~~~~~~~~~~~~
+
+Detailed information on toolbars is available in the :ref:`toolbarExtension <customize-datagrid-extensions-toolbar>` and :ref:`pagerExtension <customize-datagrid-extensions-pager>` topics.
+
+jsmodules
+~~~~~~~~~
+
+.. code-block:: yaml
+   :linenos:
+
+    jsmodules:
+      - your/builder/amd/module/name
+
+
+Adds given JS files to the datagrid. JS files should have the 'init' method which will be called when the grid builder finishes building the grid.
+
+routerEnabled
+~~~~~~~~~~~~~
+
+- values: true|false
+- default: true
+
+When set to `false` datagrid will not keep its state (e.g. filtering and/or sorting parameters) in the URL.
+
+rowSelection
+~~~~~~~~~~~~
+
+.. code-block:: yaml
+   :linenos:
+
+    rowSelection:
+        dataField: id
+        columnName: hasContact
+        selectors:
+            included: '#appendContacts'
+            excluded: '#removeContacts'
+
+More information on row selection and an example of its usage are available in the :ref:`Advanced grid configuration <customizing-data-grid-in-orocommerce-backend-advanced-grid-config>` article.
+
+base_datagrid_class
+~~~~~~~~~~~~~~~~~~~
+
+**type**: ``string`` **default**: ``Oro\Bundle\DatagridBundle\Datagrid\Datagrid``
+
+With this option, you can switch the datagrid class to a custom implementation.
+
+properties
+----------
 
 **type**: ``map``
 
 This is used for two things: configure how to determine the id of each row and configure links that
 will be reused in the actions.
 
-``id``
-~~~~~~
+id
+~~
 
 **type**: ``string`` **default**: ``~``
 
@@ -281,8 +358,8 @@ options:
     Can be either ``route`` or ``callable`` to use a statically configured route or to dynamically
     generate a link.
 
-``sorters``
------------
+sorters
+-------
 
 **type**: ``map``
 
@@ -292,8 +369,8 @@ ordered by default.
 
 .. _reference-datagrid-sorters-columns:
 
-``columns``
-~~~~~~~~~~~
+columns
+~~~~~~~
 
 **type**: ``map``
 
@@ -303,31 +380,31 @@ will be used to sort the grid.
 
 .. _reference-datagrid-sorters-default:
 
-``default``
-~~~~~~~~~~~
+default
+~~~~~~~
 
 **type**: ``map``
 
 The ``default`` option can be used to control the default ordering of the result set. It is a map
 of column names to their respective sort direction (either ``ASC`` or ``DESC``).
 
-``source``
-----------
+source
+------
 
 **type**: ``map``
 
 The data source that fetches the data to be shown in the grid. Several options control how data are
 fetched:
 
-``acl_resource``
-~~~~~~~~~~~~~~~~
+acl_resource
+~~~~~~~~~~~~
 
 **type**: ``string``
 
     An access control list the user must be granted access to in order to actually fetch any data.
 
-``bind_parameters``
-~~~~~~~~~~~~~~~~~~~
+bind_parameters
+~~~~~~~~~~~~~~~
 
 **type**: ``sequence``
 
@@ -336,8 +413,8 @@ grid parameter as a parameter to the query builder by listing at with this optio
 
 .. _reference-format-datagrid-type-orm:
 
-``query``
-~~~~~~~~~
+query
+~~~~~
 
 **type**: ``map``
 
@@ -382,7 +459,7 @@ all parts of the Doctrine query:
 
 ``where`` (``type``: ``map``)
 
-    List conditions here that need to be fullfilled. How conditions must be met is defined by the
+    List conditions here that need to be fulfilled. How conditions must be met is defined by the
     key you used:
 
     ``and`` (**type**: ``sequence``)
@@ -416,8 +493,8 @@ all parts of the Doctrine query:
     You can pass any datagrid parameter as a parameter to the generated query by listing it under
     the `bind_parameters`_ option on the same level as the ``query`` option.
 
-``type``
-~~~~~~~~
+type
+~~~~
 
 **type**: ``string``
 
@@ -429,3 +506,9 @@ all parts of the Doctrine query:
     query builder used to fetch the data, see the
     :ref:`query option <reference-format-datagrid-type-orm>` for a list of the available additional
     options).
+
+
+**Related Article**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Customizing Datagrids <customizing-data-grid-in-orocommerce>`

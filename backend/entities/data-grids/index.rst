@@ -1,15 +1,15 @@
 .. _data-grids:
 
-Data Grids
-==========
+Datagrids
+=========
 
-Creating a basic data grid to display the data of all tasks requires three steps:
+Creating a basic datagrid to display the data of all tasks requires three steps:
 
-#. :ref:`Configure the datagrid <cookbook-entities-grid-config>`;
+#. :ref:`Configure the datagrid <cookbook-entities-grid-config>`
 
-#. :ref:`Create a controller and template <cookbook-entities-grid-controller>`;
+#. :ref:`Create a controller and template <cookbook-entities-grid-controller>`
 
-#. :ref:`Add a link to the grid to the application menu <cookbook-entities-grid-navigation>`.
+#. :ref:`Add a link to the grid to the application menu <cookbook-entities-grid-navigation>`
 
 .. _cookbook-entities-grid-config:
 
@@ -19,8 +19,8 @@ Configure the Grid
 The datagrid configuration happens in the ``datagrids.yml`` file in the configuration directory of
 your bundle and is divided into several sections:
 
-Data Source
-~~~~~~~~~~~
+Datasource
+~~~~~~~~~~
 
 The ``source`` option is used to configure a Doctrine query builder that is used to fetch the data
 to be displayed in the grid:
@@ -117,7 +117,7 @@ To configure the filter for a certain property two options are needed:
 data type of the underlying attribute.
 
 The ``data_name`` denotes the name of the property to filter and will be used as is to modify the
-data grid's query builder.
+datagrid's query builder.
 
 .. code-block:: yaml
     :linenos:
@@ -147,7 +147,7 @@ data grid's query builder.
 Complete Datagrid Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The final data grid configuration now looks like this:
+The final datagrid configuration now looks like this:
 
 .. code-block:: yaml
     :linenos:
@@ -287,6 +287,66 @@ At last, you need to make the action accessible by creating a menu item:
     ``application_menu`` is just the name of the menu you want to hook your item into. In this
     case, ``application_menu`` is an existing menu that is part of OroPlatform.
 
+Key Classes
+-----------
+
+- ``Datagrid\Manager`` - responsible of preparing the grid and its configuration.
+- ``Datagrid\Builder`` - responsible for creating and configuring the datagrid object and its datasource. Contains registered datasource type and extensions, also it performs check for datasource availability according to ACL
+- ``Datagrid\Datagrid`` - the main grid object, has knowledge ONLY about the datasource object and the interaction with it, all further modifications of the results and metadata come from the extensions Extension\Acceptor - is a visitable mediator, contains all applied extensions and provokes visits at different points of the interactions.
+- ``Extension\ExtensionVisitorInterface`` - visitor interface
+- ``Extension\AbstractExtension`` - basic empty implementation
+- ``Datasource\DatasourceInterface`` - link object between data and grid. Should provide results as array of ResultRecordInterface compatible objects
+- ``Provider\SystemAwareResolver`` - resolves specific grid YAML syntax expressions. For more information, see the :ref:`references in configuration <datagrid-references-configuration>` topic.
+
+.. _datagrids-customize-mixin:
+
+Mixin
+-----
+
+Mixin is a datagrid that contains additional (common) information for use by other datagrids.
+
+**Configuration Syntax**
+
+.. code-block:: yaml
+   :linenos:
+
+    datagrids:
+
+        # configuration mixin with column, sorter and filter for an entity identifier
+        acme-demo-common-identifier-datagrid-mixin:
+            source:
+                type: orm
+                query:
+                    select:
+                        # alias that will be replaced by an alias of the root entity
+                        - __root_entity__.id as identifier
+            columns:
+                identifier:
+                    frontend_type: integer
+            sorters:
+                data_name: identifier
+            filters:
+                columns:
+                    identifier:
+                        type: number
+                        data_name: identifier
+
+        acme-demo-user-datagrid:
+            # one or several mixins
+            mixins:
+                - acme-demo-datagrid-mixin
+                - ...
+                - ...
+            source:
+                type: orm
+                query:
+                    from:
+                        { table: AcmeDemoBundle:User, alias:u }
+
+**Related Articles**
+
+* :ref:`Customizing Datagrid <customizing-data-grid-in-orocommerce>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`
 
 .. toctree::
    :hidden:

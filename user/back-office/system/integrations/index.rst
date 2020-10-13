@@ -26,7 +26,6 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
   * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`
   * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
-  * :ref:`Wirecard Services <doc--payment--payment-providers-overview--wirecard>`
   * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
   * :ref:`CyberSource Payment Service <user-guide--payment--payment-providers-cybersource>`
 

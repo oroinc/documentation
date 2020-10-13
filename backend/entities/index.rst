@@ -21,12 +21,13 @@ In the sections below, you can learn the key things you can come across when wor
    config-entities/index
    crud
    data-grids/index
+   customize-datagrids/index
    acls
    entity-aliases
    entity-activities
    attachments
    customize-crud
-   customize-datagrids
+   filters/index
 
 
 .. include:: /include/include-links-dev.rst

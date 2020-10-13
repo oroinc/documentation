@@ -910,7 +910,7 @@ Links (Dev)
 
 .. |Apply Entity Extend Changes| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#applying-entity-extend-changes" target="_blank">Apply Entity Extend Changes</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/BundleEntityExtendBundle#applying-entity-extend-changes" target="_blank">Apply Entity Extend Changes</a>
 
 .. |Prepare Entity Extend Configuration| raw:: html
 
@@ -2217,122 +2217,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataAuditBundle/Resources/doc/audit.md" target="_blank">Add New Auditable Types</a>
 
-.. |Configure Datagrids| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datagrid.md#overview" target="_blank">Configure Datagrids</a>
-
-.. |Specify Scopes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/scopes.md" target="_blank">Specify Scopes</a>
-
-.. |Work with Datasources| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/scopes.md" target="_blank">Work with Datasources</a>
-
-.. |ORM| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/scopes.md" target="_blank">ORM</a>
-
-.. |Array| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources/array.md" target="_blank">Array</a>
-
-.. |Search| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources/array.md" target="_blank">Search</a>
-
-.. |Use Parameter Binding| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/parameter_binding.md" target="_blank">Use Parameter Binding</a>
-
-.. |Configure Mixin| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/mixin.md" target="_blank">Configure Mixin</a>
-
-.. |Implemented Extensions| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions.md" target="_blank">Implemented Extensions</a>
-
-.. |Action| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/action.md" target="_blank">Action</a>
-
-.. |Export| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/export.md" target="_blank">Export</a>
-
-.. |Formatter| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/formatter.md" target="_blank">Formatter</a>
-
-.. |Grid Views| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/grid_views.md" target="_blank">Grid Views</a>
-
-.. |Mass Action| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/mass_action.md" target="_blank">Mass Action</a>
-
-.. |Pager| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/pager.md" target="_blank">Pager</a>
-
-.. |Sorter| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/sorter.md" target="_blank">Sorter</a>
-
-.. |Toolbar| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/toolbar.md" target="_blank">Toolbar</a>
-
-.. |Totals| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/totals.md" target="_blank">Totals</a>
-
-.. |Mode| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/mode.md" target="_blank">Mode</a>
-
-.. |Work with Build and Result Events| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/events.md" target="_blank">Work with Build and Result Events</a>
-
-.. |References in YAML Configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/references_in_configuration.md" target="_blank">References in YAML Configuration</a>
-
-.. |Use State Providers| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/state_providers.md" target="_blank">Use State Providers</a>
-
-.. |Use Selected Fields Providers| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/selected_fields.md" target="_blank">Use Selected Fields Providers</a>
-
-.. |JavaScript Mediator Events and DOM Events| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid.md" target="_blank">JavaScript Mediator Events and DOM Events</a>
-
-.. |Use Datagrid Render| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_render.md" target="_blank">Use Datagrid Render</a>
-
-.. |Use Datagrid Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_widget.md" target="_blank">Use Datagrid Widget</a>
-
-.. |Use Datagrid Settings Manager| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_settings.md" target="_blank">Use Datagrid Settings Manager</a>
-
-.. |Configure Grid Layout| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/grid_layout_configuring.md" target="_blank">Configure Grid Layout</a>
-
-.. |Customize Grids Through 'Split to Cells' Option| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/grid_customization.md" target="_blank">Customize Grids Through 'Split to Cells' Option</a>
-
 .. |Use OroDistributionBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DistributionBundle#usage" target="_blank">Use OroDistributionBundle</a>
@@ -2472,18 +2356,6 @@ Links (Dev)
 .. |Fundamentals| raw:: html
 
    <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle#fundamentals" target="_blank">Fundamentals</a>
-
-.. |Use Filter Form Types| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FilterBundle/Resources/doc/reference/filter_form_types.md" target="_blank">Use Filter Form Types</a>
-
-.. |Javascript Widgets (Frontend Side Filter)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FilterBundle/Resources/doc/reference/javascript_widgets.md" target="_blank">Javascript Widgets</a>
-
-.. |Grid Extension| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FilterBundle/Resources/doc/reference/grid_extension.md" target="_blank">Grid Extension</a>
 
 .. |Abstract File Manager Service| raw:: html
 
@@ -5573,4 +5445,112 @@ Links (Dev)
 .. |OrderStatusesProviderInterface| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/4.1/src/Oro/Bundle/OrderBundle/Provider/OrderStatusesProviderInterface.php" target="_blank">OrderStatusesProviderInterface</a>
+
+.. |DatagridConfiguration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatagrid/Common/DatagridConfiguration.php" target="_blank">DatagridConfiguration</a>
+
+.. |Datagrid| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatagrid/Datagrid.php" target="_blank">Datagrid</a>
+
+.. |OrmDatasource| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/Orm/OrmDatasource.php" target="_blank">OrmDatasource</a>
+
+.. |ParameterBinderAwareInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/ParameterBinderAwareInterface.php" target="_blank">ParameterBinderAwareInterface</a>
+
+.. |ParameterBinderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/ParameterBinderInterface.php" target="_blank">ParameterBinderInterface</a>
+
+.. |DatasourceBindParametersListener| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleEventListener/DatasourceBindParametersListener.php" target="_blank">DatasourceBindParametersListener</a>
+
+.. |DatagridManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatagrid/Manager.php" target="_blank">DatagridManager</a>
+
+.. |text-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/text-editor-view.md" target="_blank">text-editor-view</a>
+
+.. |datetime-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/datetime-editor-view.md" target="_blank">datetime-editor-view</a>
+
+.. |date-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/date-editor-view.md" target="_blank">date-editor-view</a>
+
+.. |number-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/number-editor-view.md" target="_blank">number-editor-view</a>
+
+.. |percent-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/percent-editor-view.md" target="_blank">percent-editor-view</a>
+
+.. |select-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/select-editor-view.md" target="_blank">select-editor-view</a>
+
+.. |YamlConverter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/Orm/QueryConverter/YamlConverter.php" target="_blank">YamlConverter</a>
+
+.. |HINT_PRECISE_ORDER_BY| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/DoctrineUtils/README.md#preciseorderbywalker-class" target="_blank">HINT_PRECISE_ORDER_BY</a>
+
+.. |Queries Limits| raw:: html
+
+   <a href="https://www.postgresql.org/docs/8.1/static/queries-limit.html" target="_blank">Queries Limits</a>
+
+.. |OrmQueryConfiguration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/Orm/OrmQueryConfiguration.php" target="_blank">OrmQueryConfiguration</a>
+
+.. |existing CSV writer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Writer/CsvEchoWriter.php" target="_blank">existing CSV writer</a>
+
+.. |Field ACL extension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleExtension/FieldAcl/FieldAclExtension.php" target="_blank">Field ACL extension</a>
+
+.. |multi-select-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/multi-select-editor-view.md" target="_blank">multi-select-editor-view</a>
+
+.. |relation-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-relation-editor-view.md" target="_blank">relation-editor-view</a>
+
+.. |multi-relation-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/multi-relation-editor-view.md" target="_blank">multi-relation-editor-view</a>
+
+.. |related-id-relation-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-relation-editor-view.md" target="_blank">related-id-relation-editor-view</a>
+
+.. |Create Custom Field Type| raw:: html
+
+   <a href="http://symfony.com/doc/master/cookbook/form/create_custom_field_type.html" target="_blank">Create Custom Field Type</a>
+
+.. |Types| raw:: html
+
+   <a href="http://symfony.com/doc/master/reference/forms/types.html" target="_blank">Types</a>
+
+.. |Search APIs section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/search-apis.md" target="_blank">Search APIs section</a>
+
+.. |related-id-select-editor-view| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-select-editor-view.md" target="_blank">related-id-select-editor-view</a>
 

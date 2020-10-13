@@ -165,7 +165,7 @@ Follow the :ref:`Promotions <user-guide--marketing--promotions>` section for the
 Customize a Payment Method per Website
 --------------------------------------
 
-OroCommerce provides sellers with effective payment solutions that help enhance customers' buying experience. Integration with the most popular payment services as :ref:`PayPal <user-guide--payment--payment-providers-overview--paypal>`, :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`,  :ref:`Wirecard <doc--payment--payment-providers-overview--wirecard>`, :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`, and :ref:`Apruve  <user-guide--payment--payment-providers-overview--apruve>` into OroCommerce enables various payment transactions to be made in a particular localization and on a certain website.
+OroCommerce provides sellers with effective payment solutions that help enhance customers' buying experience. Integration with the most popular payment services as :ref:`PayPal <user-guide--payment--payment-providers-overview--paypal>`, :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`, :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`, and :ref:`Apruve  <user-guide--payment--payment-providers-overview--apruve>` into OroCommerce enables various payment transactions to be made in a particular localization and on a certain website.
 
 Learn more about how to assign a payment method to the required website in the :ref:`Payment Rules Configuration <sys--payment-rules>` section.
 

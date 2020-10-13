@@ -40,3 +40,4 @@ backend/architecture/tech-stack/search-index/elastic-search /backend/bundles/pla
 backend/architecture/tech-stack/search-index/orm-search-engine /backend/bundles/platform/SearchBundle/orm-search-engine
 cloud/architecture /cloud/architecture/index
 api/using /api/
+backend/entities/customize-datagrids /backend/entities/customize-datagrids

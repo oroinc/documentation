@@ -10,9 +10,9 @@ OroFilterBundle implements a variety of Form Types with dynamic JS components an
 Related Documentation
 ---------------------
 
-* |Use Filter Form Types|
-* |Javascript Widgets (Frontend Side Filter)|
-* |Grid Extension|
+* :ref:`Use Filter Form Types <backend-filters-form-types>`
+* :ref:`Javascript Widgets (Frontend Side Filter) <backend-entities-filters-js-widgets>`
+* :ref:`Grid Extension <backend-entities-filters-grid-extension>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
