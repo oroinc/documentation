@@ -24,8 +24,15 @@ Each feature consists of one required option, the label. You can configure the f
  - workflows - a list of workflow names
  - processes - a list of process names
  - operations - a list of operation names
- - api_resources - a list of entity FQCNs
+ - api_resources - a list of entity FQCNs that are available as API resources
  - commands - a list of commands which depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled
+ - entities - a list of entity FQCNs
+ - field_configs - a list of field names
+ - dashboard_widgets - a list of dashboard widget names
+ - cron_jobs - a list of cron job names
+ - navigation_items - a list of navigation items
+ - placeholder_items - a list of placeholder item names
+ - mq_topics - a list of MQ topic names
 
 Example of the features.yml configuration
 
@@ -56,6 +63,20 @@ Example of the features.yml configuration
                 - Acme\Bundle\Entity\Page
             commands:
                 - oro:search:index
+            entities:
+                - Acme\Bundle\Entity\Page
+            field_configs:
+                - 'some_field_name'
+            dashboard_widgets:
+                - 'page_dashboard_widget'
+            cron_jobs:
+                - 'acme:cron:sync-job'
+            navigation_items:
+                - 'application_menu.sales_tab.acme_order_list'
+            placeholder_items:
+                - acme_create_page_button
+            mq_topics:
+                - 'acme.mq_topics.calculate'
 
 .. _feature-toggle-new-options:
 
