@@ -498,7 +498,7 @@ The ``newrelic_options`` configuration option allows you to configure NewRelic p
 Mail Settings
 -------------
 
-You can customize mail settings for the application:
+To prevent sending test emails accidentally from the staging environment to any real users or customers, add the domains of email recepients that you will be using for testing to your whitelist:
 
 .. code-block:: none
     :linenos:
@@ -516,7 +516,7 @@ Where:
 * **mail** is a hash of mail-related settings
 * **whitelist** is an array of whitelisted mail domains
 
-.. note:: On production environments all domains are whitelisted. When you create a whitelist, it blocks all mail except for listed domains.
+.. note:: In production environments all domains are whitelisted. When you create a whitelist, it blocks sending email to any recipients, except for the ones in the whitelisted email domains.
 
 .. _orocloud-maintenance-advanced-use-sanitization-conf:
 
