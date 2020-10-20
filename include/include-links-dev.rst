@@ -5243,6 +5243,14 @@ Links (Dev)
    <a href="https://github.com/oroinc/platform/blob/master/CHANGELOG.md#assetbundle-1" target="_blank"> upgrade documentation</a>
 
 
+.. |GridFS| raw:: html
+
+   <a href="https://docs.mongodb.com/manual/core/gridfs/" target="_blank">GridFS</a>
+
+.. |MongoDB PHP Library| raw:: html
+
+   <a href="https://github.com/mongodb/mongo-php-library" target="_blank">MongoDB PHP Library</a>
+
 .. |KnpGaufretteBundle| raw:: html
 
    <a href="https://github.com/KnpLabs/KnpGaufretteBundle" target="_blank">KnpGaufretteBundle</a>
