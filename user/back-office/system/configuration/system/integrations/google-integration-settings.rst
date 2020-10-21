@@ -46,6 +46,8 @@ In the **Google Tag Manager Settings** section, clear the **Use Default** check 
 
 Google Tag Manager settings can be configured globally, :ref:`per organization <organization-google-settings>`, and :ref:`per website <website-google-settings>`.
 
+.. _admin-configuration-integrations-google-gmail-oauth:
+
 OAuth 2.0 for email sync
 ------------------------
 
