@@ -43,7 +43,7 @@ Replace a Placeholder
 
    .. code-block:: bash
 
-      php bin/console clear:cache
+      php bin/console cache:clear
 
    Publish images to the public web folder:
 
