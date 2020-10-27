@@ -187,6 +187,15 @@ Whenever you disable fallback configuration at one level, deeper levels in the f
 .. image:: /user/img/concept-guides/prices/price_list_fallback_dimmed.png
    :alt: Illustration of the fallback logic when the fallback settings are disabled at the customer group level
 
+Price Attributes
+----------------
+
+**Price attributes** are custom parameters, price-like values which represent price values specified per unit of quantity and can be set in different currencies. In OroCommerce, there are several default price attributes, configured out-of-the-box, such as a manufacturer’s suggested retail price (**MSRP**) and a minimum advertised price (**MAP**). You can also create any number of additional price attributes to store information about the price elements that are valid for your business. Examples include cost of premium packaging, raw materials cost, prices taken from the ERP system, etc. These price attributes may be used as an input for your retail price listed on the website. You can also use this information to automatically calculate new price values when using product assignment and price calculation rules.
+
+.. image:: /user/img/concept-guides/prices/price_attributes.png
+   :alt: Illustration of the fallback logic when the fallback settings are disabled at the customer group level
+
+.. hint:: Check out the Manage Price Attributes in the Back-Office guide to learn more on :ref:`how to create and manage product prices <user-guide--products--price-attributes>`.
 
 Best Practices
 --------------
@@ -210,6 +219,7 @@ Best Practices
 * :ref:`Price Lists Configuration per Customer Group <customers--customer-groups--edit--price-lists>`
 * :ref:`Price Lists Configuration per Customer <customers--customer-groups--edit--price-lists>`
 * :ref:`Currency Configuration <admin-configuration-currency>`
+* :ref:`Manage Price Attributes in the Back-Office <user-guide--products--price-attributes>`
 
 .. include:: /include/include-images.rst
    :start-after: begin
