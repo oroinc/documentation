@@ -737,5 +737,24 @@ To purge the messages from the RabbitMQ, use the `rabbitmq:queue:purge` command.
 
 .. note:: The ``vhost`` and ``queue`` argument values can be retrieved with the `rabbitmq:queue:list` command.
 
+Service Commands
+----------------
+
+Service commands allow to manipulate with application services.
+
+Check Consumers Status
+~~~~~~~~~~~~~~~~~~~~~~
+
+To check consumers status, use the `service:status:consumer` command.
+
+.. code-block:: none
+    :linenos:
+
+    service:status:consumer [options] [--] [<host>]
+
+The `host` parameter is optional. You can list services from specified job host only. If no parameter is specified,`all` is used by default.
+
+
+
 .. include:: /include/include-links-cloud.rst
    :start-after: begin

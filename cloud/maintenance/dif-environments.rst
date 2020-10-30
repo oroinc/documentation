@@ -10,9 +10,9 @@ For example, assuming HTTP Basic Auth should be enabled only for the application
 Git Branches Approach
 ---------------------
 
-One of the solutions is to create different Git branches for different environments.
+One of the solutions is to create different Git branches for different environments, taking the following steps:
 
-1. Create a separate branch for each environment and save a unique version of `orocloud.yaml` file in each branch.
+1. Create a separate branch for each environment and save a unique version of the `orocloud.yaml` file in each branch.
 
    For example:
 
@@ -32,7 +32,7 @@ One of the solutions is to create different Git branches for different environme
       # Run upgrade for "prod" environment
       orocloud-cli upgrade --tag=1.2.3-prod
 
-      # Run upgrade forfor "stage" environment
+      # Run upgrade for "stage" environment
       orocloud-cli upgrade --tag=1.2.3-stage
 
    This approach has some extra costs to maintain the additional branches in your repository. It is not always convenient if you prefer to use different tags for every new release.
