@@ -102,7 +102,7 @@ To include configs in the resulting ``styles.css`` file, add them  to the ``asse
            - 'bundles/mybundle/my-theme/scss/variables/button-config.scss'
            - 'bundles/mybundle/my-theme/scss/variables/input-config.scss'
            - 'bundles/mybundle/my-theme/scss/styles.scss'
-       output: 'css/layout/my-theme/styles.css'
+       output: 'css/styles.css'
 
 The resulting ``styles.css`` file is the following:
 
@@ -171,7 +171,7 @@ Another example: ``input-config.scss``:
            - 'bundles/mybundle/my-custom-theme/scss/settings/global-settings.scss'
            - 'bundles/mybundle/my-custom-theme/scss/variables/input-config.scss'
            - 'bundles/mybundle/my-custom-theme/scss/styles.scss'
-       output: 'css/layout/my-theme/styles.css'
+       output: 'css/styles.css'
 
 The resulting ``styles.css`` file are the following:
 

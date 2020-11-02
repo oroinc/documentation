@@ -56,7 +56,7 @@ Add Stylesheets with SCSS
        inputs:
            - bundles/demo/scss/logo.scss
            - bundles/demo/scss/settings/_colors.scss
-       output: css/layout/first_theme/styles.css
+       output: css/styles.css
 
 *  Run the ``bin/console oro:assets:build first_theme --watch`` command to process and combine SCSS files in  ``first_theme``.
 *  You can use SCSS source maps to find styles definition in a Browser and :ref:`Oro Frontend Stylebook <dev-doc-frontend-css-frontend-stylebook>` to check how updated styles affect the UI elements.
