@@ -95,7 +95,7 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
             - 'bundles/oroui/blank/scss/variables/page-title-config.scss'
             - 'bundles/oroui/blank/scss/styles.scss'
         filters: ['cssrewrite', 'cssmin']
-        output: 'css/layout/blank/styles.css'
+        output: 'css/styles.css'
 
 Compiler collects all styles in one file for the theme. All files should be sorted by priority. There are files with a **settings folder** at the top followed by **variables** and all **styles.scss** at the end.
 
