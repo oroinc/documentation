@@ -63,14 +63,10 @@ The **General** section of the create a workflow page contains the following inf
    - **If checked**, all workflow steps are displayed in the workflow widget.
    - **If not checked**, only the steps that have actually been performed are displayed."
 
-.. TODO add some clue on how to plan a workflow
-
 .. _doc-workflows-actions-create-designer:
 
 Designer Section
 ^^^^^^^^^^^^^^^^
-
-.. TODO rethink and adapt
 
 The **Designer** section consists of a table and an interactive chart representations of a workflow.
 
@@ -278,16 +274,6 @@ It is possible to have multiple active workflows for the same record. If you hav
 Workflow group can be expanded / collapsed, if necessary, by clicking the **+** **Expand** / **-** **Collapse** icon on the left of the workflow group, as illustrated below:
 
 .. image:: /user/img/system/workflows/25_collapse_flow.jpg
-
-
-.. TODO: DOC-122, draft as the dev ticket is not completed.
-
-.. The storefront and backoffice workflows are united into separate groups, each can be expanded / collapsed individually.
-
-.. The storefront workflows are marked with the |IcCustomerUser| icon. The backoffice workflows (workflows available in the back-office) are marked with the |IcUser| icon.
-
-.. .. image:: /user/img/system/workflows/workflows_frontstore_backoffice.jpg
-
 
 .. _doc--workflows--ui-limitations:
 

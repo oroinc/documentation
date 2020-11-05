@@ -138,8 +138,6 @@ Application
 
 * **Access Job Queue** --- Enables a user to review jobs that have been started in the system, as well as view their current status and their performance log (by default, this information can be found by navigating to **System > Jobs** in the main menu). 
 
-  .. TODO: check 2 capabilities with this name (BAP-10652)
-
 * **Access Personal Configuration** --- Enables a user to access their :ref:`profile configuration settings <doc-my-user-configuration>` where they can localize the application, change the display settings, and otherwise modify how the application will appear to them. Changes made by a user on the personal configuration page do not affect other users.
 
   .. image:: /user/img/system/user_management/user_level_config.png

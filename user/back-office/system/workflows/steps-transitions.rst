@@ -5,8 +5,6 @@
 Configure Workflow Steps, Transitions, and Attributes in the Back-Office
 ------------------------------------------------------------------------
 
-.. TODO Fix transitions if necessary (may it launch on schedule or on event?) .. Yes, it can, the information about it is in the dev guide.
-
 Each process or action applied to a record is called a workflow transition. On the interface, transitions are usually initiated when a user clicks the corresponding button or icon. There are two types of transitions:
 
 -	Transitions that take a user from one state to another and connect to each step in the workflow.

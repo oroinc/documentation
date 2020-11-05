@@ -175,8 +175,6 @@ Add Translations for the Channel Type and Transport
 
 The channel type and, in general, transport labels also appear on the user interface (you will not see the the transport label for Collect On Delivery). Provide translations for them by appending the <bundle_root>/Resources/translations/messages.en.yml. Now, the messages.en.yml content must look as follows:
 
-TODO:
-
 .. oro_integrity_check:: 78a3b6d66b645c81a453332b7aa6cee382ca1ddd
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/translations/messages.en.yml

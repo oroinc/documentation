@@ -5,8 +5,6 @@ Workflows
 
 For more information, see |Workflow Configuration Reference| in the oroinc/platform repository on GitHub.
 
-.. TODO replace the link after md files are imported into the oroinc/platform-documentation
-
 +-----------+------------------------------------------------------------------+
 | Filename  | ``workflows.yml``                                                |
 +-----------+------------------------------------------------------------------+

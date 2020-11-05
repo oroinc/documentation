@@ -63,8 +63,6 @@ To create a new quote from the customer request for quote (RFQ):
 
 7. In the **Shipping Information**, configure the default shipping option pre-selected for the the customer on the checkout:
 
-   .. TODO For BB-7506, update the image above, and use the commented lines below:
-
    .. a) In the **Shipping Methods** list, tick the boxes next to the shipping methods that you would like the customer use for this order delivery.
 
    a) In the **Shipping Methods** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration on the checkout.
@@ -75,11 +73,11 @@ To create a new quote from the customer request for quote (RFQ):
 
    .. b) If necessary, select the preferred shipping method from the **Default Shipping Method** list. The customer will be able to change the option to any other available shipping method.
 
-   c) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one dynamically generated based on the shipping method selection.
+   b) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one dynamically generated based on the shipping method selection.
 
-   d) To enforce using only the default Shipping method selected earlier, enable the **Shipping Method Locked** flag. When the shippig method is locked, the buyer does not see any other payment options but the default one.
+   c) To enforce using only the default Shipping method selected earlier, enable the **Shipping Method Locked** flag. When the shippig method is locked, the buyer does not see any other payment options but the default one.
 
-   e) Tick the **Allow Unlisted Shipping Methods** box to allow using the shipping method that is already selected as a default one, even if it is disabled by the shipping rule configuration.
+   d) Tick the **Allow Unlisted Shipping Methods** box to allow using the shipping method that is already selected as a default one, even if it is disabled by the shipping rule configuration.
 
 8. Optionally, select a **Payment Term** as an available payment method.
 

@@ -287,9 +287,6 @@ For this, add the <bundle_root>/Method/FastShippingMethodProvider.php class with
        :language: php
        :linenos:
 
-.. TODO: Add Information about the Doctrine
-.. In the shipping method provider, the Doctrine ensures that whenever methods are updated,
-
 Add the Shipping Method Provider to the Services Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -301,7 +298,6 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
        :language: yaml
        :lines: 32-40
        :linenos:
-
 
 Create a Shipping Method Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -316,7 +312,6 @@ To create a shipping method type, add the <bundle_root>/Method/FastShippingMetho
        :language: php
        :linenos:
 
-
 * ``getIdentifier`` --- Returns a unique identifier of a shipping method type in the scope of the shipping method.
 * ``getLabel`` --- Returns the label of the shipping method type. The label appears on the shipping rule edit page in the back-office and on the storefront.
 * ``getSortOrder`` ---  Defines the order in which shipping method types appear on the user interface. For example, see the UPS shipping types below. The number that defines the sort order of the UPS Ground is lower than that of the UPS 2nd Day Air (i.e. the lower the number, the higher up the list the method type appears):
@@ -325,11 +320,9 @@ To create a shipping method type, add the <bundle_root>/Method/FastShippingMetho
 
 * ``getOptionsConfigurationFormType`` --- Returns the user interface form with the configuration options. The form appears on the shipping rule edit page. If the method returns ``HiddenType::class``, the form does not appear.
 
-.. TODO Add a screenshot
-
 * ``calculatePrice``-- Contains the main logic and returns the shipping price for the given ``$context``.
 
-.. note:: If you implement a more complicated shipping method, see Oro\Bundle\ShippingBundle\Context\ShippingContextInterface for attributes that can affect a shipping price (e.g. shipping address information or line items).
+.. note:: If you implement a more complicated shipping method, see Oro\Bundle\ShippingBundle\Context\ShippingContextInterface for attributes that can affect a shipping price (e.g., shipping address information or line items).
 
 Define Translation for the Shipping Method Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -342,7 +335,6 @@ Provide translations by appending the <bundle_root>/Resources/translations/messa
        :language: yaml
        :lines: 1-14
        :linenos:
-
 
 Create a Shipping Method Options Form
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -130,8 +130,6 @@ To create a shipping rule:
 
       .. image:: /user/img/system/shipping_rules/shipping_rule_destination2.png
 
-      .. TODO: Use <delimiter> to separate values?
-
 #. If required, in the **Conditions** section, specify the expression that describes the conditions when this shipping rule should be applied.
 
    .. image:: /user/img/system/shipping_rules/shipping_rule_condition.png
