@@ -64,21 +64,15 @@ To create a new price list:
            :class: with-border
            :alt: Adding the prices for the medical tag product to the Default PL manually when editing the product details
 
-        .. TODO elaborate
-
       * When viewing the price list details, by clicking **+ Add Product Price**.
 
         .. image:: /user/img/sales/pricelist/prices_for_price_list.png
            :class: with-border
            :alt: Adding product price in the popup dialog that opens when clicking the Add Product Price button
 
-        .. TODO elaborate
-
       You can override the existing rule-based price. A manual entry has higher priority.
 
 5. In the **Price Calculation Rules** section, specify rules for price calculation based on the price attributes (e.g. msrp) and other product details. You may use conditions to apply the rule to the subset or the filtered products. See :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>` for more information.
-
-.. TODO elaborate... deeply. Can we have multiple rule + condition pair per price list?
 
 6. Click **Save**.
 

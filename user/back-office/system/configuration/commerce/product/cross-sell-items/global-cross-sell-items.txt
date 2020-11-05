@@ -13,8 +13,6 @@ Enable and Set Up Cross-Sell Products Globally
 
 Cross-sell items listed for the product may include similar products or those that complement it, like the accessories.
 
-.. TODO update when they get to the storefront
-
 In the system configuration, you can:
 
 * Enable and disable cross-sell item management for the products.

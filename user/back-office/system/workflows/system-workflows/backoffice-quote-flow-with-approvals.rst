@@ -286,8 +286,5 @@ Let us go through every step of this process:
 
 .. finish
 
-.. TODO  Coming in the future (BB-5618) A customer user can accept or decline the quote. After the customer user makes a decision, the quote is considered closed.
-
-
 .. include:: /include/include-images.rst
    :start-after: begin

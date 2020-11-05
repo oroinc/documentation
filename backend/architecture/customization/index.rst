@@ -49,8 +49,6 @@ In addition to existing extensions, you can create your own customization of the
 Prepare for Source Code Customization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. TODO replace the link once the topic is ported to the OroCommerce
-
 Before you begin customizing you Oro application, follow the guidance provided in the :ref:`Custom Application <dev-guide-application-web-framework>` topic to set up your custom application repository for version control, and install Oro application from your custom repository.
 
 Running the application in development mode (via the `http://<oro-application-base-url>/index_dev.php/` link) helps you debug and test your customization steps.
@@ -108,8 +106,6 @@ To enable it in the Oro application, register the bundle in the bundles.yml file
    bundles:
      -  { name: \FOS\RestBundle\FOSRestBundle, priority: 100 }
 
-.. TODO replace the link when doc is ported to Commerce
-
 .. note:: See the topic on :ref:`Differences to Common Symfony Applications <book_differences>` for more information on bundle registration effect.
 
 This immediately enforces the customization changes defined in the bundle to apply to your Oro application.
@@ -130,10 +126,7 @@ Decorate existing services to change their default behavior. For more informatio
 [Symfony] Use Dependency Injection Tags
 """""""""""""""""""""""""""""""""""""""
 
-With the dependency injection tags, you can register a service of specific a type (for example data provider for the layout, custom action for the workflow system, etc.) in the dependency injection container.
-To do so, tag your service with a specified dependency injection tag to make it a part of Oro application.
-
-.. add benefits and use cases
+With the dependency injection tags, you can register a service of specific a type (for example data provider for the layout, custom action for the workflow system, etc.) in the dependency injection container. To do so, tag your service with a specified dependency injection tag to make it a part of Oro application.
 
 For example, to add a new payment method in your OroCommerce application, first create your own implementation of the *PaymentMethodProviderInterface* and tag it with the existing *oro_payment.payment_method_provider* tag, like in the following example:
 
@@ -176,13 +169,7 @@ See the |Event dispatcher| topic in the Symfony documentation for more informati
 
 Many items in the Oro application features, like workflows, navigation trees, datagrids, dashboard widgets, are defined in the YAML configuration files. You can easily adjust existing and add new items by modifying these files. For example, to add new sections in the System Configuration UI, modify the *Resources/config/oro/system_configuration.yml* file in your custom bundle to add new configuration option.
 
-.. sample
-
 Once added, the option may be displayed in the UI or may affect the Oro application behavior. You may need to implement new or customize existing features to use the new configuration option.
-
-.. add more examples for every type of the items/features: workflow, navigation tree, datagrid, dashboard widget
-
-.. TODO <replace link when the content is synced between OroCRM and OroCommerce
 
 Please, see the :ref:`System Configuration <ref-format-system-configuration>` topic for sample configuration files.
 
@@ -220,8 +207,6 @@ Customize via UI
 For data model and business processes customization, Oro applications provide the entity and workflow management tools in the web UI (e.g. OroCRM and OroCommerce back-office). These tools may be used for quick updates of the existing data structure, for example, add a new field to the existing entity data, change the value options, etc.) and enable easy and fast prototyping, for example, for A/B testing of new business processes automation.
 
 .. warning:: Results of the customization via UI is stored in the database. Porting such customization from staging to the production environment happens on the database level using data migration. Compared to programmatic customization, customization via UI lacks the versioning and portability. Please, consider using the customization on the source code level to keep the upgrade process simple.
-
-.. TODO replace link one the information on entities is synced to the OroCommerce
 
 In the **System > Entity Management**, you can create a data model for a new business entity (e.g. add information about the purchase orders and link them  to the B2B orders in OroCommerce), and start using it right away after quick field and relationships configuration. See :ref:`Entities Management <entities-management>` for detailed information.
 
