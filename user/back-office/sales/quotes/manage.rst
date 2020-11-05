@@ -101,9 +101,6 @@ Delete a Quot from the Quote View Page
 
 1. In the main menu, navigate to **Sales > Quotes**. The quote list opens.
 2. Click the quote that you need to delete. The page with quote details opens.
-
-.. TODO add image
-
 3. Click **Delete** on the top right of the page.
 
    .. image:: /user/img/sales/quotes/quotes_delete1.png

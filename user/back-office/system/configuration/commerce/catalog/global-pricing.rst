@@ -117,8 +117,6 @@ The **Pricing** page opens. It contains the following information:
 
    When merge is allowed, the prices for the tiers and units that are missing in the higher priority price list may be covered by the prices from the lower priority price lists that should support price merge too.
 
-   .. TODO copy description of the behavior from dev doc
-
 #. To delete a price list from the default price lists, click the |IcDeactivate| **Deactivate** at the end of the corresponding row.
 
 #. To change the price list priority, click and hold  the |IcReorder| **Sort** icon, and drag the price list up or down the list.

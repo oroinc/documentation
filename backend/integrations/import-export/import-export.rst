@@ -1084,7 +1084,7 @@ To implement custom behaviour of the import pop-up, you can extend the default *
          */
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
-            //TODO: add custom implementation for generating the form
+            //TODO: add custom implementation to generate the form
         }
     }
 
@@ -1119,7 +1119,7 @@ Example of displaying the form with choice (radio buttons):
          */
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
-            //TODO: add custom implementation for generating the form
+            //TODO: add custom implementation to generate the form
         }
     }
 

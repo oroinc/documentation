@@ -75,8 +75,6 @@ To create a new customer user:
 
 #. Click **Save** on the top right.
 
-.. add oauth for 3.1
-
 .. _user-guide--customers--customer-users--consents:
 
 View Accepted Consents

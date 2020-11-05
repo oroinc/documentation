@@ -301,7 +301,7 @@ Temporarily, the information resides |on Confluence|.
 
 .. note:: References to the section titles in the doc are enabled with the 'sphinx.ext.autosectionlabel' plugin.
 
-.. TODO: complete this section (move from confluence to github)
+.. TODO DOC-1690: Complete community/contribute/documentation.rst section with information from confluence
 
 
 File Naming Conventions

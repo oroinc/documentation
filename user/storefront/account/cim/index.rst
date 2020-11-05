@@ -65,9 +65,6 @@ To add a new card during the checkout:
    .. image:: /user/img/storefront/cim/new_card_from_checkou_saved_to_account.png
       :alt: New credit card created at checkout is saved in the customer profile
 
-
-.. add a screeenshot of this payment profile on the Authorize.Net side
-
 Manage a Credit Card Profile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
