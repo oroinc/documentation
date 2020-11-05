@@ -2873,7 +2873,7 @@ Links (Dev)
 
 .. |Oro documentation| raw:: html
 
-   <a href="https://github.com/orocommerce/documentation" target="_blank">Oro documentation</a>
+   <a href="https://github.com/oroinc/documentation" target="_blank">Oro documentation</a>
 
 .. |on Confluence| raw:: html
 
@@ -2909,7 +2909,7 @@ Links (Dev)
 
 .. |dedicated github repository| raw:: html
 
-   <a href="https://github.com/orocommerce/documentation" target="_blank">dedicated github repository</a>
+   <a href="https://github.com/oroinc/documentation" target="_blank">dedicated github repository</a>
 
 .. |OroPlatform and OroCRM documentation| raw:: html
 
@@ -2917,7 +2917,7 @@ Links (Dev)
 
 .. |OroCommerce documentation| raw:: html
 
-   <a href="https://github.com/orocommerce/documentation" target="_blank">OroCommerce documentation</a>
+   <a href="https://github.com/oroinc/documentation" target="_blank">OroCommerce documentation</a>
 
 .. |Fork| raw:: html
 
@@ -5607,4 +5607,21 @@ Links (Dev)
 .. |related-id-select-editor-view| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-select-editor-view.md" target="_blank">related-id-select-editor-view</a>
+
+.. |CC-BY-NC-SA 4.0| raw:: html
+
+   <a href="https://github.com/oroinc/documentation/blob/master/LICENSE" target="_blank">CC-BY-NC-SA 4.0</a>
+
+.. |pip| raw:: html
+
+   <a href="https://pip.pypa.io/en/stable/installing/" target="_blank">pip</a>
+
+.. |Sphinx with Extensions for PHP and Symfony| raw:: html
+
+   <a href="https://github.com/fabpot/sphinx-php" target="_blank">Sphinx with Extensions for PHP and Symfony</a>
+
+.. |OroPlatform,OroCRM and OroCommerce documentation| raw:: html
+
+   <a href="https://github.com/oroinc/documentation" target="_blank">OroPlatform,OroCRM and OroCommerce documentation</a>
+
 
