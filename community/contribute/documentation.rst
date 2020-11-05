@@ -12,16 +12,15 @@ If you are willing to contribute --- you are totally welcome. The information be
 Before You Begin
 ----------------
 
+The use of the documentation is subject to the |CC-BY-NC-SA 4.0| license.
+
 Before submitting your documentation changes in a pull request, please sign our |Contributor License Agreement| (CLA). The CLA must be signed for any code or documentation changes to be accepted.
 
 
 Fork Documentation Project
 --------------------------
 
-If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our documentation repository and allow for the creation and submission of a new pull request with your modifications once you are done editing:
-
-* |OroPlatform and OroCRM documentation|
-* |OroCommerce documentation|
+If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our |OroPlatform,OroCRM and OroCommerce documentation| repository and allow for the creation and submission of a new pull request with your modifications once you are done editing.
 
 For large volume of  updates, fixes, and enhancements please use the following process: 
 
@@ -35,12 +34,13 @@ For large volume of  updates, fixes, and enhancements please use the following p
 
   .. note::
 
-   To build Sphinx documentation, set up a local Sphinx build environment:
+   To build documentation, set up a local Sphinx build environment:
 
-      * Install |Sphinx|.
-      * Install the required Sphinx extensions: ``git submodule update --init``.
+      * |Install PHPStorm| as the recommended IDE. Although PHPStorm is recommended, it is not the required IDE for Oro application development. If you use a different IDE, skip this step.
+      * Install |pip|.
+      * Install |Sphinx with Extensions for PHP and Symfony|.
 
-   To test your changes before you commit them, run ``make html`` and check the generated documentation in the ``_build`` directory.
+   To test your changes before you commit them, run ``make html`` in the documentation folder. Ensure that ``conf.py`` (documentation build configuration file) is there. Check the generated documentation in the ``_build/html`` directory.
 
 Update Documentation
 --------------------
@@ -62,20 +62,27 @@ Sample file structure:
 .. code-block:: none
     :linenos:
 
-    + user-guide:
-        + img:
-            - Demo.png
-        - topic_1.rst
-        - topic_2.rst
-        - topic_3.rst
+    + user:
         - index.rst
-    + admin-guide:
+        + back-office
+            - topic-1.rst
+            - topic-2.rst
+            - topic-3.rst
+            - index.rst
+        + storefront
+        + img
+            - create_accounts.png
+            - lead_statistics.png
+
+    + backend:
         - index.rst
         + integration
             - email.rst
             - LDAP.rst
-    + img:
-        - Architecture.png
+        + api
+            -firewall-listeners.rst
+            -request-types.rst
+
     - index.rst
 
 Basic Rst Syntax
@@ -273,6 +280,8 @@ Preview:
 Tables
 ~~~~~~
 
+**Option 1**
+
 .. code-block:: none
     :linenos:
 
@@ -294,26 +303,41 @@ Preview:
 | Cell 2.1   | Cell 2.2   | Cell 2.3  |
 +------------+------------+-----------+
 
-Advanced Rst Syntax
-^^^^^^^^^^^^^^^^^^^
 
-Temporarily, the information resides |on Confluence|.
+**Option 2**
 
-.. note:: References to the section titles in the doc are enabled with the 'sphinx.ext.autosectionlabel' plugin.
+.. code-block:: none
+    :linenos:
 
-.. TODO DOC-1690: Complete community/contribute/documentation.rst section with information from confluence
+    .. csv-table::
+       :header: "**OroCRM Field**","**Outlook Field**"
+       :widths: 20, 20
+
+       "Subject","Subject"
+       "Priority","Priority"
+       "Due Date","Due Date"
+
+Preview
+
+    .. csv-table::
+       :header: "**OroCRM Field**","**Outlook Field**"
+       :widths: 20, 20
+
+       "Subject","Subject"
+       "Priority","Priority"
+       "Due Date","Due Date"
 
 
 File Naming Conventions
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Please follow the recommendations below when naming the new documenation file:
+Please follow the recommendations below when naming the new documentation file:
 
-* Use a topic-based approach (e.g. assign_user_management_permissions_to_the_organization.rst).
+* Use a topic-based approach (e.g., user-management-permissions-organization.rst).
 
 * Use lowercase letters and Arabic numbers only.
 
-* Replace whitespace symbols with underscores (e.g. file_naming_conventions.rst).
+* All source .rst files with more than one word in their name must be separated with a dash (-), not an underscore, to be able to form correct html links on the website (e.g., file-naming-conventions.rst).
 
 * Avoid special symbols (/,$,#, etc).
 
@@ -324,13 +348,17 @@ Add a New Topic
 
 1. Create topic contents using Restructured Text format and save it following the `File Naming Conventions`_.
 
-2. To link a topic to the global documentation table of contents:
+2. All headers in Oro documentation must be capitalized, except for articles (a, the) unless it is the first word in the header and short prepositions (at, or, on, etc.).
+
+3. Strive for consistency in all headers. Whenever possible, start headers with the same part of speech (nouns, verbs, etc.). This means that, for instance, if 4 of your 5 subheaders begin with a verb, make sure than the fifth header starts with a verb, too.
+
+4. To link a topic to the global documentation table of contents:
 
     a) Identify the best location for the reference to your new topic in the documentation structure.
     b) Move the newly created file to the selected folder. 
     c) Append the relative document name (without the rst extension) to the toctree definition in the potential parent topic. 
 
-For example, when we create a new topic with additional information about price list management in the *additional_pricelist_management_info.rst* file. To include it into the document structure at the **user-guide/pricing** level, we'll update the *index.rst* file in the *user-guide/pricing* directory like in the following example:
+For example, when we create a new topic with additional information about price list management in the *additional-pricelist-management-info.rst* file. To include it into the document structure at the **user/back-office/sales/price-lists** level, we'll update the *index.rst* file in the *user/back-office/sales/price-lists* directory like in the following example:
 
 **Before:**
 
@@ -359,10 +387,90 @@ For example, when we create a new topic with additional information about price 
        additional-pricelist-management-info
 
 .. tip::
-   If your are adding more than one topic and your new topics cover the same domain, consider grouping them into a folder.
+
+   If you are adding more than one topic and your new topics cover the same domain, consider grouping them into a folder.
+
    For better navigation, it is recommended to create a dedicated index.rst file with an overview and references to the topics in the new folder (using \.\. toctree:: directive).
-   To attach your newly created group of topics into the general structure, add the reference to the index.rst to the appropriate loaction in the documetnation hierarchy (e.g. *documentation-structure-and-topic-organization.rst* and *file_naming_conventions.rst* may be saved to the *user_guide/writing* folder, may be added to the toctree of the dedicated *user_guide/writing/index.rst*. 
-   Finally, *user_guide/writing/index.rst* may be added into the *user_guide/index.rst* toctree to attach the newly created files into the global documentation structure).
+
+   To attach your newly created group of topics into the general structure, add the reference to the index.rst file to the appropriate location in the documentation hierarchy.
+
+   For instance, *documentation-structure-and-topic-organization.rst* and *file-naming-conventions.rst* can be saved to the *community/contribute* folder, can be added to the toctree of the dedicated *community/contribute/index.rst*.
+
+   Finally, *community/contribute/index.rst* can be added into the *community/index.rst* toctree to attach the newly created files into the global documentation structure.
+
+Internal and External Links
+---------------------------
+
+Internal Links
+^^^^^^^^^^^^^^
+
+**Example 1**
+
+RST format supports referencing across documentation. To refer to any section of the documentation, you need to create an anchor (label) at the top of this section and refer to it explicitly.
+
+Note the punctuation characters when linking to a certain file, section, or website. Otherwise, the documentation will not be built.
+
+This way is quite useful as it works even if files get renamed.
+
+.. code-block:: none
+    :linenos:
+
+    .. _anchor-name:
+
+    Quotes
+    ======
+
+    See the :ref:`Quotes <anchor-name>` section for more details.
+
+
+**Example 2**
+
+To create a link to a header in the same file:
+
+.. code-block:: none
+    :linenos:
+
+    ...
+
+    Section About the Elephants
+    ===========================
+
+    Here goes detailed information about the elephants.
+
+    Section About the Mice
+    ======================
+
+    We have no info about the mice at the moment, but you can entertain yourself with some reading in `Section About the Elephants`_.
+
+External Links
+^^^^^^^^^^^^^^
+
+At Oro, we avoid formatting external links in typical RST manner (e.g., `GitHub <https://github.com/>`_), as this does not allow links to open in a new tab.  Therefore, the rule for adding external links is as follows:
+
+* Put the word/phrase that will serve as a link in vertical bars
+
+  .. code-block:: none
+      :linenos:
+
+      |GDPR portal|
+
+* Add the following link to the bottom of your documentation page:
+
+  .. code-block:: none
+      :linenos:
+
+      .. include:: /include/include-links.rst
+         :start-after: begin
+
+* In the include-links.rst file, embed the link into html with the target="_blank" parameter into the required documentation component section (Cloud Documentation, Dev Documentation, User Documentation):
+
+  .. code-block:: none
+      :linenos:
+
+      .. |GDPR portal| raw:: html
+
+         <a href="https://www.eugdpr.org/" target="_blank">GDPR portal</a>
+
 
 Submit Documentation Updates
 ----------------------------
