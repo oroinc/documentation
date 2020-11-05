@@ -26,6 +26,7 @@ Environment Setup
    .. code-block:: bash
 
       brew install php@7.4 composer node@12 docker-compose
+      composer self-update --1
       echo 'export PATH="/usr/local/opt/php@7.4/bin:$PATH" \nexport PATH="/usr/local/opt/php@7.4/sbin:$PATH" \nexport PATH="/usr/local/opt/node@12/bin:$PATH"' >> ~/.bash_profile
 
 4. Configure PHP:
