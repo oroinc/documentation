@@ -30,13 +30,14 @@ Environment Setup
       sudo usermod -aG docker $(whoami)
       sudo systemctl enable --now docker
 
-4. Install Composer:
+4. Install Composer v1:
 
    .. code-block:: bash
 
       php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
       php -r "unlink('composer-setup.php');"
       sudo mv composer.phar /usr/bin/composer
+      composer self-update --1
 
 5. Install Symfony Server and enable TLS:
 
