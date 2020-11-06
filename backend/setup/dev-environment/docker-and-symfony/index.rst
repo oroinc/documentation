@@ -82,7 +82,7 @@ Install the Application
 
    .. code-block:: bash
 
-      symfony composer install -n
+      composer install -n
 
 
 4. If you are using an Enterprise edition application, :ref:`update the parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
@@ -211,7 +211,7 @@ Use a Symfony Server
 To automatically apply environment variables exposed by Symfony Server
 from Docker Compose and to use the proper PHP version, you should run
 all the symfony application commands using ``symfony console`` instead
-of ``bin/console``. Use ``symfony composer`` and ``symfony php`` to run composer and php binaries
+of ``bin/console``. Use ``symfony php`` to run php binaries
 using proper PHP version and expose environment variables from the application services defined with Docker Compose.
 
 Start the Symfony Server
