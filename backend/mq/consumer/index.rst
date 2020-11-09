@@ -25,11 +25,11 @@ Options
 
 Both commands have the following additional options:
 
-:--message-limit=MESSAGE-LIMIT: Consume messages and exit.
-:--time-limit=TIME-LIMIT: Consume messages during the given time.
-:--memory-limit=MEMORY-LIMIT: Consume messages until the process reaches the given memory limit in MB.
+``--message-limit=MESSAGE-LIMIT`` - Consume messages and exit.
+``--time-limit=TIME-LIMIT`` - Consume messages during the given time.
+``--memory-limit=MEMORY-LIMIT`` - Consume messages until the process reaches the given memory limit in MB.
 
-The **--memory-limit** option is highly recommended for the normal consumer usage, especially in the production mode. If the
+The ``--memory-limit`` option is highly recommended for the normal consumer usage, especially in the production mode. If the
 option is set, the consumer checks the used memory amount after processing each message and terminates if the memory is exceeded.
 
 For example, if the following command is run:
@@ -48,7 +48,7 @@ this means that:
 We recommend to always set this option to the value 2-3 times lower than PHP memory limit. It will help to avoid PHP memory
 limit error during message processing.
 
-We recommend to set the **--time-limit** option (e.g. --time-limit='now+600 seconds) to 5-10 minutes if you use the DBAL transport to avoid database connection issues.
+We recommend to set the ``--time-limit`` option (e.g. ``--time-limit='now+600 seconds``) to 5-10 minutes if you use the DBAL transport to avoid database connection issues.
 
 Interruption
 ------------

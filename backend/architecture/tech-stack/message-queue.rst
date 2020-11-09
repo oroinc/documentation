@@ -175,7 +175,7 @@ exception can also be thrown.
 
 **Message Processor will return ``self::ACK`` in the following cases:**
 
--  If a message wass processed successfully.
+-  If a message was processed successfully.
 -  If the created job returned ``true``.
 
 It means that the message was processed successfully and is removed from

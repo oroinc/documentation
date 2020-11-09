@@ -502,6 +502,10 @@ Sometimes you may require to clear the application cache (for example, after app
 Media Upload
 ------------
 
+.. note:: The files in the source directory always overwrite the same files in the destination directory.
+
+.. note:: Please always use `underscores` instead of `spaces` for the `source` directory name and for all file names too.
+
 Sometimes, you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` or ``import_export`` directory. This can be done with the ``media:upload`` command that allows to upload media files, e.g., ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml`` to the ``[public|web]/media/uploads/`` or the  ``[app|var]/import_export/product_images/`` directory.
 
 .. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
@@ -644,9 +648,7 @@ The following command transfers media files from the `/tmp/media` directory into
       Media has been transferred successfully (5 of 5 (350.29 KB)).
     ✔ Ok
 
-.. note:: The files in the source directory always overwrite the same files in the destination directory.
-
-.. note:: Please always use `underscores` instead of `spaces` for the `source` directory name and for all file names too.
+.. important:: Once you have uploaded the images via FTP/SMTP and moved them to the right location for the image import, please run :ref:`images import via the UI <user-guide-import-product-images>`, as this assigns the images to the products and makes them available in the asset library.
 
 RabbitMQ Commands
 -----------------

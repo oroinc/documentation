@@ -218,7 +218,7 @@ Jobs are usually created and run with *\\Oro\\Component\\MessageQueue\\Job\\JobR
 
   A sub-job which runs asynchronously (sending its own message). It can only run inside another job.
 
-  Ii is a common approach to create a **delayed job** simultaneously with a **queue message** that contains information about the job. In this case, after receiving the message, the subscribed message processor can run and perform a delayed job by running the *runDelayed* method with the job data.
+  It is a common approach to create a **delayed job** simultaneously with a **queue message** that contains information about the job. In this case, after receiving the message, the subscribed message processor can run and perform a delayed job by running the *runDelayed* method with the job data.
 
 * **runDelayed**
 
@@ -446,7 +446,7 @@ Jobs Statuses
 * **Child jobs**: When a message is being processed by a consumer, a JobRunner method runUnique is called which creates child jobs with createDelayed:
 
     * The root job is created and the closure passed in params runs. The job gets **Job::STATUS_RUNNING** status, the job startedAt field is set to the current time.
-    * When the JobRunner method createDelayed is called, the child jobs are created and get the **Job::STATUS_NEWstatuses**. The messages for the jobs are sent to the message queue.
+    * When the JobRunner method createDelayed is called, the child jobs are created and get the **Job::STATUS_NEW statuses**. The messages for the jobs are sent to the message queue.
     * When a message for a child job is being processed by a consumer and a JobRunner method runDelayed is called, the closure runs and the child jobs get Job::STATUS_RUNNING status.
     * If the closure returns true, the child job status is changed to **Job::STATUS_SUCCESS**, the job stoppedAt field is changed to the current time.
     * If the closure returns false or throws an exception, the child job status is changed to **Job::STATUS_FAILED**, the job stoppedAt field is changed to the current time.
