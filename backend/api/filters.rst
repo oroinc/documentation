@@ -185,6 +185,16 @@ The |NamedValueFilterInterface| interface must be implemented by filters that ha
 
 An example of such filter is |ExtendedAssociationFilter|.
 
+.. _specialhandlingfilterinterface:
+
+SpecialHandlingFilterInterface Interface
+----------------------------------------
+
+The |SpecialHandlingFilterInterface| interface must be implemented by filters that have a special handling
+and as result the common normalization should not be applied to theirs values.
+
+An example of such filter is |MetaPropertyFilter|, |FieldsFilter|, |IncludeFilter|.
+
 .. _standalonefilter-base-class:
 
 StandaloneFilter Base Class

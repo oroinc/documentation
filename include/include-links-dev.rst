@@ -1014,6 +1014,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/NamedValueFilterInterface.php" target="_blank">NamedValueFilterInterface</a>
 
+.. |SpecialHandlingFilterInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/SpecialHandlingFilterInterface.php" target="_blank">SpecialHandlingFilterInterface</a>
+
 .. |StandaloneFilter| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/StandaloneFilter.php" target="_blank">StandaloneFilter</a>
