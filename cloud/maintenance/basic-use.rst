@@ -648,7 +648,7 @@ The following command transfers media files from the `/tmp/media` directory into
       Media has been transferred successfully (5 of 5 (350.29 KB)).
     ✔ Ok
 
-.. important:: Once you have uploaded the images via FTP/SMTP and moved them to the right location for the image import, please run :ref:`images import via the UI <user-guide-import-product-images>`, as this assigns the images to the products and makes them available in the asset library.
+.. important:: Once you have uploaded the images via FTP/SFTP and moved them to the right location for the image import, please run :ref:`images import via the UI <user-guide-import-product-images>`, as this assigns the images to the products and makes them available in the asset library.
 
 RabbitMQ Commands
 -----------------
