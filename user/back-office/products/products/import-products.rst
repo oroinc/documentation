@@ -50,6 +50,13 @@ To import a bulk of product information:
 Import Product Images
 ^^^^^^^^^^^^^^^^^^^^^
 
+Make sure to upload the image files for the related products to the appropriate location at the "{PROJECT}/app/import_export/product_images" path at the server where the Oro application is running. Then, fill the table with the name of the image file, the SKU name of the product, and a place for the image to be displayed, where **1** is **display** and **0** is **do not display**.
+
+If you are running your application on OroCloud, please be aware that prior to proceeding with the product images upload via the UI (the process which assigns images to products and makes them available in the asset library), you need to:
+
+1. Upload all your images to OroCloud using FTP/SFTP.
+2. Follow the step outlined in the :ref:`Media Upload <orocloud-maintenance-use-media-upload>` cloud documentation to move the uploaded images to the appropriate folder before starting product images import.
+
 **Example of a product images import template**
 
 .. container:: scroll-table
@@ -78,8 +85,6 @@ To import a bulk of product images:
 5. Click **Export Template** to download a sample .csv file with the necessary headers.
 
 6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format.
-
-.. important:: Make sure to upload the image files for the related products to the appropriate location at the "{PROJECT}/app/import_export/product_images" path at the server where the Oro application is running. Then, fill the table with the name of the image file, the SKU name of the product, and a place for the image to be displayed, where **1** is **display** and **0** is **do not display**.
 
 Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
 

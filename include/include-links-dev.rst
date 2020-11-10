@@ -4105,14 +4105,6 @@ Links (Dev)
 
    <a href="http://www.elastichq.org/" target="_blank">Elastic HQ</a>
 
-.. |here are examples of work with these commands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md" target="_blank">here are examples of work with these commands</a>
-
-.. |here are examples of work with this command| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/4.1/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/console_commands.md" target="_blank">here are examples of work with this command</a>
-
 .. |Elasticsearch References| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/index.html" target="_blank">Elasticsearch References</a>

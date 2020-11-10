@@ -1,5 +1,7 @@
 :oro_show_local_toc: false
 
+.. _website-search-bundle-console-commands:
+
 Console Commands
 ================
 
