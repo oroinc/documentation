@@ -862,3 +862,8 @@ Links (User)
 .. |Administrator Consent| raw:: html
 
    <a href="https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent" target="_blank">Administrator Consent</a>
+
+.. |Media Upload| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#media-upload" target="_blank">Media Upload</a>
+

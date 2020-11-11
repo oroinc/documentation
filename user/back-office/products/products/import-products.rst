@@ -55,7 +55,7 @@ Make sure to upload the image files for the related products to the appropriate 
 If you are running your application on OroCloud, please be aware that prior to proceeding with the product images upload via the UI (the process which assigns images to products and makes them available in the asset library), you need to:
 
 1. Upload all your images to OroCloud using FTP/SFTP.
-2. Follow the step outlined in the :ref:`Media Upload <orocloud-maintenance-use-media-upload>` cloud documentation to move the uploaded images to the appropriate folder before starting product images import.
+2. Follow the step outlined in the |Media Upload| cloud documentation to move the uploaded images to the appropriate folder before starting product images import.
 
 **Example of a product images import template**
 
@@ -191,3 +191,5 @@ To import a bulk of product price attributes:
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
