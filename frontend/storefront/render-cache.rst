@@ -380,11 +380,11 @@ product information when product has been updated:
 
    .. code-block:: php
       :linenos:
-      :caption: src/AcmeDemoBundle/EventListeners/ProductUpdateListener.php
+      :caption: src/AcmeDemoBundle/EventListener/ProductUpdateListener.php
 
       <?php
 
-      namespace AcmeDemoBundle\EventListeners;
+      namespace AcmeDemoBundle\EventListener;
 
       use Doctrine\ORM\Event\LifecycleEventArgs;
       use Oro\Bundle\ProductBundle\Entity\Product;
@@ -396,7 +396,7 @@ product information when product has been updated:
           /** @var TagAwareAdapterInterface */
           private $cache;
 
-          public function __construct(TagAwareCacheInterface $cache)
+          public function __construct(TagAwareAdapterInterface $cache)
           {
               $this->cache = $cache;
           }
@@ -417,7 +417,7 @@ product information when product has been updated:
       :caption: src/AcmeDemoBundle/Resources/config/services.yml
 
       services:
-        Oro\Bundle\LayoutCacheBundle\EventListeners\ProductUpdateListener:
+        Oro\Bundle\LayoutCacheBundle\EventListener\ProductUpdateListener:
           arguments:
             - '@cache.oro_layout.render'
           tags:
