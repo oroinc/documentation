@@ -36,7 +36,7 @@ Depending on the entity type selected when defining the :ref:`basic properties <
        :scale: 20%
    "
    "ACL Protected","Enable or disable the ACL check for attachments by selecting **Yes** or **No** respectively."
-   "File Applications","The list of allowed file applications."
+   "File Applications","The list of applications where a file or an image loaded to this field should be accessible. Possible applications are *default* and *commerce*, where *default* means back-office and *commerce* means storefront. If the files or images that you want to upload through this field are going to be accessed only from back-office, then select *default*; if from both back-office and storefront, then select both *default* and *commerce*. Please be aware that this setting is not used when **ACL Protected** is set to *No*."
 
 .. important::
 
@@ -62,7 +62,7 @@ Depending on the entity type selected when defining the :ref:`basic properties <
        :scale: 20%
    "
    "ACL Protected","Enable or disable the ACL check for attachments by selecting **Yes** or **No** respectively."
-   "File Applications","The list of allowed file applications."
+   "File Applications","The list of applications where a file or an image loaded to this field should be accessible. Possible applications are *default* and *commerce*, where *default* means back-office and *commerce* means storefront. If the files or images that you want to upload through this field are going to be accessed only from back-office, then select *default*; if from both back-office and storefront, then select both *default* and *commerce*. Please be aware that this setting is not used when **ACL Protected** is set to *No*."
 
 .. important::
 
