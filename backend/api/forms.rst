@@ -3,7 +3,7 @@
 Forms and Validators Configuration
 ==================================
 
-The Symfony |Validation Component| and |Forms Component| are used to validate and transform input data to an entity in :ref:`create <web-api--actions>`, :ref:`update <web-api--actions>`, :ref:`update\_relationship <web-api--actions>`, :ref:`add\_relationship <web-api--actions>` and :ref:`delete\_relationship <web-api--actions>` actions.
+The Symfony |Validation Component| and |Forms Component| are used to validate and transform input data to an entity in :ref:`create <create-action>`, :ref:`update <update-action>`, :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions.
 
 Validation
 ----------

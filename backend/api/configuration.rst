@@ -76,7 +76,7 @@ The top level configuration example:
             ...
 
 
-.. _exclude-option:
+.. _web-api--exclude-option:
 
 `exclude` Option
 ----------------
@@ -230,11 +230,11 @@ The ``entities`` section describes the configuration of entities.
 
 *  **identifier\_field\_names** *string[]* - The names of identifier fields of the entity. Use this option to override names set in a configuration file (for the API resource that are not based on ORM entity) or retrieved from an entity metadata (for ORM entities). This option is helpful when you do not want to use the primary key as an entity identifier in the API.
 
-*  **form\_type** *string* - The form type to use for the entity in the :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions. By default the ``Symfony\Component\Form\Extension\Core\Type\FormType`` form type is used.
+*  **form\_type** *string* - The form type to use for the entity in the :ref:`create <create-action>` and :ref:`update <update-action>` actions. By default the ``Symfony\Component\Form\Extension\Core\Type\FormType`` form type is used.
 
-*  **form\_options** *array* - The form options to use for the entity in the :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions.
+*  **form\_options** *array* - The form options to use for the entity in the :ref:`create <create-action>` and :ref:`update <update-action>` actions.
 
-*  **form\_event\_subscriber** - The form event subscriber(s) to use for the entity in the :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions. When the form_type option is not specified,, this event subscriber is also used for the :ref:`update\_relationship <web-api--actions>`, :ref:`add\_relationship <web-api--actions>` and :ref:`delete\_relationship <web-api--actions>` actions. For custom ``form_type`` this event subscriber is not used. It can be specified as a service name or an array of service names. An event subscriber service should implement the ``Symfony\Component\EventDispatcher\EventSubscriberInterface`` interface.
+*  **form\_event\_subscriber** - The form event subscriber(s) to use for the entity in the :ref:`create <create-action>` and :ref:`update <update-action>` actions. When the form_type option is not specified,, this event subscriber is also used for the :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions. For custom ``form_type`` this event subscriber is not used. It can be specified as a service name or an array of service names. An event subscriber service should implement the ``Symfony\Component\EventDispatcher\EventSubscriberInterface`` interface.
 
 By default, the following form options are set:
 
@@ -273,14 +273,14 @@ By default, the following form options are set:
                     validation_groups: ['Default', 'api', 'my_group']
                 form_event_subscriber: acme.api.form_listener.test_entity
 
-.. _fields-config:
+.. _fields-configuration-section:
 
 `fields` Configuration Section
 ------------------------------
 
 This section describes configuration of entity fields.
 
-*  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the `"exclude" option <#exclude-option>`__ section.
+*  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the :ref:`"exclude" option <web-api--exclude-option>` section.
 
 *  **description** *string* - A human-readable description of the field or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
 
@@ -288,9 +288,9 @@ This section describes configuration of entity fields.
 
 *  **collapse** *boolean* - Indicates whether to collapse the entity. It is applicable for associations only. When ``true``, the target entity is returned as a value instead of an array of entity fields values.
 
-*  **form\_type** *string* - The form type to use for the field in the *create* and *update* actions.
+*  **form\_type** *string* - The form type to use for the field in the :ref:`create <create-action>` and :ref:`update <update-action>` actions.
 
-*  **form\_options** *array* - The form options to use for the field in the *create* and *update* actions.
+*  **form\_options** *array* - The form options to use for the field in the :ref:`create <create-action>` and :ref:`update <update-action>` actions.
 
 *  **data\_type** *string* - The data type of the field value. Can be ``boolean``, ``integer``, ``string``, etc. If a field represents an association the data type should be a type of an identity field of the target entity.
 
@@ -357,6 +357,7 @@ This section describes configuration of entity fields.
                 # A computed field
                 field9:
                     data_type: string
+                    property_path: _
                     depends_on: [property1, association1.property11]
 
 .. _fields-special-data-types:
@@ -401,7 +402,7 @@ This section describes fields by which the result data can be filtered. It conta
 
    -  **exclude** *boolean* - Indicates whether filtering by this field should be disabled. By default ``false``.
    -  **description** *string* - A human-readable description of the filter or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
-   -  **property\_path** *string* - The property path to reach the fields' value. The same way as above in ``fields`` configuration section.
+   -  **property\_path** *string* - The property path to reach the fields' value. The same way as above in :ref:`fields <fields-configuration-section>` configuration section.
    -  **data\_type** *string* - The data type of the filter value. Can be ``boolean``, ``integer``, ``string``, etc.
    -  **allow\_array** *boolean* - Indicates whether the filter can contains several values. By default, ``false`` for ``string``, ``boolean``, ``datetime``, ``date``, ``time`` fields, and ``true`` for other fields.
    -  **allow\_range** *boolean* - Indicates whether the filter can contains a pair of ``from`` and ``to`` values. By default, ``false`` for ``string``, ``boolean``, ``guid``, ``currency`` fields, and ``true`` for other fields.
@@ -459,7 +460,7 @@ This section describes fields by which the result data can be sorted. It contain
    This section describes a configuration of each field that can be used to sort the result data. Each sorter can have the following properties:
 
    -  **exclude** *boolean* - Indicates whether sorting by this field should be disabled. By default ``false``.
-   -  **property\_path** *string* - The property path to reach the fields' value. See the description of the property in the :ref:`fields <fields-config>` configuration section.
+   -  **property\_path** *string* - The property path to reach the fields' value. See the description of the property in the :ref:`fields <fields-configuration-section>` configuration section.
 
 **Example:**
 
@@ -512,12 +513,12 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 *  **status\_codes** *array* - The possible response status codes for the action.
 
-   *  **exclude** *boolean* - Indicates whether the status code should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__.
+   *  **exclude** *boolean* - Indicates whether the status code should be excluded for a particular action. This property is described above in :ref:`"exclude" option <web-api--exclude-option>` section.
    *  **description** *string* - A human-readable description of the status code. Used in auto-generated documentation only.
 
 *  **fields** - This section describes entity fields' configuration specific for a particular action.
 
-   *  **exclude** *boolean* - Indicates whether the field should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__.
+   *  **exclude** *boolean* - Indicates whether the field should be excluded for a particular action. This property is described above in :ref:`"exclude" option <web-api--exclude-option>` section.
    *  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path, e.g. ``user.firstName``. Each property name must be equal to the name of existing property of an entity. The ``_`` value can be used if a field value is not mapped to any property of an entity, e.g. for computed fields.
    *  **direction** *string* - Indicates whether the field is input-only, output-only or bidirectional. The input-only means that the request data can contain this field, but the response data cannot. The output-only means that the response data can contain this field, but the request data cannot. The bidirectional is the default behaviour and means that both the request data and the response data can contain this field.
    *  **form\_type** *string* - The form type that should be used for the field.

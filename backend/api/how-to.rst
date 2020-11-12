@@ -261,7 +261,7 @@ Sometimes it is required to group several fields and expose them as a nested obj
                     intervalUnit:
                         exclude: true
 
-Please note that an entity, in this example *Oro\\Bundle\\ReminderBundle\\Entity\\Reminder*, should have ``setInterval`` method. This method is called by :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions to set the nested object.
+Please note that an entity, in this example *Oro\\Bundle\\ReminderBundle\\Entity\\Reminder*, should have ``setInterval`` method. This method is called by :ref:`create <create-action>` and :ref:`update <update-action>` actions to set the nested object.
 
 Here is an example how the nested objects looks in JSON:API:
 
@@ -341,7 +341,7 @@ By default, there is no possibility to retrieve targets of such associations. To
                     target:
                         data_type: association:manyToOne
 
-After applying the configuration, the ``targets`` relationship becomes available for the *get\_list*, *get*, *create* and *update* actions. Also the ``targets`` relationship becomes also available as a subresource and thus, it is possible to perform the *get\_subresource*, *get\_relationship*, *add\_relationship*, *update\_relationship*, and *delete\_relationship* actions.
+After applying the configuration, the ``targets`` relationship becomes available for the :ref:`get_list <get-list-action>`, :ref:`get <get-action>`, :ref:`create <create-action>` and :ref:`update <update-action>` actions. Also the ``targets`` relationship becomes also available as a subresource and thus, it is possible to perform the :ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`, :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions.
 
 The ``data_type`` parameter has format: ``association:relationType:associationKind``, where
 
@@ -368,7 +368,7 @@ By default, there is no possibility to retrieve targets of such associations. To
                     activityTargets:
                         data_type: association:manyToMany:activity
 
-After applying the configuration, the ``activityTargets`` relationship becomes available in scope of the *get\_list*, *get* , *create* and *update* actions. The ``activityTargets`` relationship also becomes  available as a subresource and thus, it is possible to perform *get\_subresource*, *get\_relationship*, *add\_relationship*, *update\_relationship*, and *delete\_relationship* actions.
+After applying the configuration, the ``activityTargets`` relationship becomes available in scope of the :ref:`get_list <get-list-action>`, :ref:`get <get-action>` , :ref:`create <create-action>` and :ref:`update <update-action>` actions. The ``activityTargets`` relationship also becomes  available as a subresource and thus, it is possible to perform :ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`, :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions.
 
 The ``data_type`` parameter has format: ``association:relationType:associationKind``, where
 
@@ -395,7 +395,7 @@ By default, there is no possibility to retrieve targets of such associations. To
                     targets:
                         data_type: association:multipleManyToOne
 
-After applying the configuration, the ``targets`` relationship becomes available in scope of *get\_list*, *get*, *create* and *update* actions. The ``targets`` relationship also becomes  available as a subresource and thus, it is possible to perform *get\_subresource*, *get\_relationship*, *add\_relationship*, *update\_relationship*, and *delete\_relationship* actions.
+After applying the configuration, the ``targets`` relationship becomes available in scope of :ref:`get_list <get-list-action>`, :ref:`get <get-action>`, :ref:`create <create-action>` and :ref:`update <update-action>` actions. The ``targets`` relationship also becomes  available as a subresource and thus, it is possible to perform :ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`, :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions.
 
 The ``data_type`` parameter has format: ``association:relationType:associationKind``, where
 
@@ -430,7 +430,7 @@ To illustrate the configuration of an unidirectional association, consider two e
 Add a Custom Controller
 -----------------------
 
-By default, all REST API resources are handled by |RestApiController| that handles *get\_list*, *get*, *delete*, *delete\_list*, *create*, *update* actions, *get\_subresource*, *get\_relationship*, *update\_relationship*, *add\_relationship* and *delete\_relationship* actions.
+By default, all REST API resources are handled by |RestApiController| that handles :ref:`get_list <get-list-action>`, :ref:`get <get-action>`, :ref:`delete <delete-action>`, :ref:`delete_list <delete-list-action>`, :ref:`create <create-action>`, :ref:`update <update-action>`, :ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`, :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions.
 
 If this controller cannot handle the implementation of your REST API resources, you can register a custom controller. Please note that this is not recommended and should be used only in very special cases. Having a custom controller implies that many processes should be implemented from scratch, including:
 
@@ -921,8 +921,8 @@ Add a Computed Field
 --------------------
 
 Sometimes, it is required to add to API a field that does not exist in an entity for which API is created.
-In this case, such field should be added to API via :ref:`Resources/config/oro/api.yml <fields-config>` and
-the :ref:`customize_loaded_data <web-api--actions-auxiliary-actions>` action should be used to set a value
+In this case, such field should be added to API via :ref:`Resources/config/oro/api.yml <fields-configuration-section>` and
+the :ref:`customize_loaded_data <customize-loaded-data-action>` action should be used to set a value
 of this field.
 
 For example, imagine that a "price" field need to be added to a product API. The following steps show how to do this:
@@ -937,6 +937,7 @@ For example, imagine that a "price" field need to be added to a product API. The
                     fields:
                         price:
                             data_type: money
+                            property_path: _
 
 
 2. Create a processor for ``customize_loaded_data`` action that will set a value for the "price" field
@@ -1064,7 +1065,7 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
                       target_type: to-many
                       property_path: _
 
-- Add a processor to register QRM query that should be used to get enabled contacts for the *get* and *get_list* actions
+- Add a processor to register QRM query that should be used to get enabled contacts for the :ref:`get <get-action>` and :ref:`get_list <get-list-action>` actions
 
   **Note:** Aliases ``e`` and ``r`` are reserved and both must exist in the query. The alias ``e`` must correspond to the owning entity of the association. The alias ``r`` must correspond to the target entity of the association.
 
@@ -1135,7 +1136,7 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
                   - { name: oro.api.processor, action: get_config, extra: '!identifier_fields_only', class: Acme\Bundle\AppBundle\Entity\Account, priority: -35 }
 
 
-- Add a processor to register QRM query that should be used to get enabled contacts for the *get_subresource* and *get_relationship* actions
+- Add a processor to register QRM query that should be used to get enabled contacts for the :ref:`get_subresource <get-subresource-action>` and :ref:`get_relationship <get-relationship-action>` actions
 
 
   .. code-block:: php
@@ -1220,7 +1221,7 @@ Validate Virtual Fields
 
 There are cases when an API resource contains virtual fields; these are fields that do not exist in an entity.
 
-Like with regular fields, values of these fields need to be validated during the *create* and *update* actions.
+Like with regular fields, values of these fields need to be validated during the :ref:`create <create-action>` and :ref:`update <update-action>` actions.
 
 In this case, you can use an API processor for the ``post_submit`` event of the :ref:`customize_form_data <customize-form-data-action>` action because common Symfony Forms validators are not applicable.
 
