@@ -5,7 +5,7 @@ Processors
 
 A processor is the main element that implements the business logic of the API. Each processor must implement |ProcessorInterface|  and be registered in the dependency injection container using the ``oro.api.processor`` tag.
 
-Please see the :ref:`actions <web-api--actions>` and :ref:`context <context-class>` sections for more details about where and how processors are used.
+Please see the :ref:`actions <web-api--actions>` and :ref:`context <web-api--context-class>` sections for more details about where and how processors are used.
 
 Please see the :ref:`actions <web-api--actions>` section for more details about where and how processors are used.
 
@@ -231,7 +231,7 @@ Please note that to validate input data for :ref:`create <create-action>` and :r
                                 - Email: ~
 
 If an error occurs in a processor, the main execution flow is interrupted and the control is passed to a special group of processors, that is named **normalize\_result**. This is true for all types of errors. But there are some exceptions for this rule for the errors that occur in any processor of the **normalize\_result** group. The execution flow is interrupted only if any of these processors raises an exception. However, these processors can safely add new errors into the
-:ref:`context <context-class>` and the execution of the next processors will not be interrupted. For implementation details see |RequestActionProcessor|.
+:ref:`context <web-api--context-class>` and the execution of the next processors will not be interrupted. For implementation details see |RequestActionProcessor|.
 
 An error is represented by the |Error| class. Additionally, the |ErrorSource| class can be used to specify a source of an error, e.g. the name of a URI parameter or the path to a property in the data. These classes have the following methods:
 

@@ -921,7 +921,7 @@ Add a Computed Field
 --------------------
 
 Sometimes, it is required to add to API a field that does not exist in an entity for which API is created.
-In this case, such field should be added to API via :ref:`Resources/config/oro/api.yml <fields-configuration-section>` and
+In this case, such field should be added to API via :ref:`Resources/config/oro/api.yml <web-api--fields-config>` and
 the :ref:`customize_loaded_data <customize-loaded-data-action>` action should be used to set a value
 of this field.
 

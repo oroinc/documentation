@@ -99,7 +99,7 @@ The URL template for REST API: ``/api/{entity}/{id}``.
 
 The HTTP method for REST API: ``GET``.
 
-The context class: |GetContext|. Also see :ref:`Context <context-class>` class for more details.
+The context class: |GetContext|. Also see `Context <#context-class>`__ class for more details.
 
 The main processor class: |GetProcessor|.
 
@@ -114,7 +114,7 @@ This action has the following processor groups:
    "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","To add a new processor to this group, include it to the ``security_check`` group of actions that execute this action. For example, compare with the ``security_check`` group of the :ref:`create <create-action>` or :ref:`update <update-action>` actions."
+   "security\_check","Checking whether access to the requested resource type is granted.","To add a new processor to this group, include it to the ``security_check`` group of actions that execute this action. For example, compare with the ``security_check`` group of the `create <#create-action>`__ or `update <#update-action>`__ actions."
    "build\_query","Building a query required to load the data.","--"
    "load\_data","Loading data.","--"
    "data\_security\_check","Checking whether access to the loaded data is granted.","Use the same rules as for security_check group to add a new processor to this group."
@@ -142,7 +142,7 @@ The URL template for REST API: ``/api/{entity}``.
 
 The HTTP method for REST API: ``GET``.
 
-The context class: |GetListContext|. Also see :ref:`Context <context-class>` class for more details.
+The context class: |GetListContext|. Also see `Context <#context-class>`__ class for more details.
 
 The main processor class: |GetListProcessor|.
 
@@ -185,7 +185,7 @@ The URL template for REST API: ``/api/{entity}/{id}``.
 
 The HTTP method for REST API: ``DELETE``.
 
-The context class: |DeleteContext|. Also see :ref:`Context <context-class>` class for more details.
+The context class: |DeleteContext|. Also see `Context <#context-class>`__ class for more details.
 
 The main processor class: |DeleteProcessor|.
 
@@ -231,7 +231,7 @@ The URL template for REST API: ``/api/{entity}``.
 
 The HTTP method for REST API: ``DELETE``.
 
-The context class: |DeleteListContext|. Also see :ref:`Context <context-class>` class for more details.
+The context class: |DeleteListContext|. Also see `Context <#context-class>`__ class for more details.
 
 The main processor class: |DeleteListProcessor|.
 
@@ -274,7 +274,7 @@ The URL template for REST API: ``/api/{entity}``.
 
 The HTTP method for REST API: ``POST``.
 
-The context class: |CreateContext|. Also see :ref:`Context <context-class>` class for more details.
+The context class: |CreateContext|. Also see `Context <#context-class>`__ class for more details.
 
 The main processor class: |CreateProcessor|.
 
@@ -289,7 +289,7 @@ This action has the following processor groups:
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","If you add own security processor in the **security\_check** group of the :ref:`get <get-action>` action, add it to this group as well. It is required because the **VIEW** permission is checked here: the created entity should be returned in response, and the **security\_check** group of the :ref:`get <get-action>` action is disabled by **oro_api.update.load_normalized_entity** processor."
+   "security\_check","Checking whether access to the requested resource type is granted.","If you add own security processor in the **security\_check** group of the `get <#get-action>`__ action, add it to this group as well. It is required because the **VIEW** permission is checked here: the created entity should be returned in response, and the **security\_check** group of the `get <#get-action>`__ action is disabled by **oro_api.update.load_normalized_entity** processor."
    "load\_data","Creating a new entity object.","--"
    "data\_security\_check","Checking whether access to the loaded data is granted.","Use the same rules as for **security_check** group to add a new processor to this group."
    "transform\_data","Building a Symfony Form and using it to transform and validate the request data.","--"
@@ -318,7 +318,7 @@ The URL template for REST API: ``/api/{entity}/{id}``.
 
 The HTTP method for REST API: ``PATCH``.
 
-The context class: |UpdateContext|. Also see :ref:`Context <context-class>` class for more details.
+The context class: |UpdateContext|. Also see `Context <#context-class>`__ class for more details.
 
 The main processor class: |UpdateProcessor|.
 
@@ -333,7 +333,7 @@ This action has the following processor groups:
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource is granted.","When you add a new processor to the security_check group of the :ref:`get <get-action>` action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in response, and the **security_check** group of the :ref:`get <get-action>` action is disabled by the **oro_api.update.load_normalized_entity** processor."
+   "security\_check","Checking whether access to the requested resource is granted.","When you add a new processor to the security_check group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
    "load\_data","Loading an entity object to be updated.","--"
    "data\_security\_check","Checking whether access to the loaded data is granted.","Use the same rules as for **security_check** group to add a new processor to this group."
    "transform\_data","Building a Symfony Form and using it to transform and validate the request data.","--"
@@ -369,7 +369,7 @@ The URL template for REST API: ``/api/{entity}``.
 
 The HTTP method for REST API: ``PATCH``.
 
-The context class: |UpdateListContext|. Also see :ref:`Context <context-class>` class for more details.
+The context class: |UpdateListContext|. Also see `Context <#context-class>`__ class for more details.
 
 The main processor class: |UpdateListProcessor|.
 
@@ -384,7 +384,7 @@ This action has the following processor groups:
    "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
    "resource\_check","Checking whether the requested resource type is accessible via API.","--"
    "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource is granted.","When you add a new processor to the security_check group of the :ref:`get <get-action>` action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in response, and the **security_check** group of the :ref:`get <get-action>` action is disabled by the **oro_api.update.load_normalized_entity** processor."
+   "security\_check","Checking whether access to the requested resource is granted.","When you add a new processor to the security_check group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
    "load\_data","Loading an request data to the storage.","--"
    "save\_data","Creating an asynchronous batch operation.","--"
    "finalize","Adding the required response headers.","--"
@@ -410,7 +410,7 @@ The URL template for REST API: ``/api/{entity}/{id}/{association}``.
 
 The HTTP method for REST API: ``GET``.
 
-The context class: |GetSubresourceContext|. Also see :ref:`SubresourceContext <subresourcecontext-class>` class for more details.
+The context class: |GetSubresourceContext|. Also see `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
 The main processor class: |GetSubresourceProcessor|.
 
@@ -453,7 +453,7 @@ The URL template for REST API: ``/api/{entity}/{id}/{association}``.
 
 The HTTP method for REST API: ``PATCH``.
 
-The context class: |ChangeSubresourceContext|. See the :ref:`SubresourceContext <subresourcecontext-class>` class for more details.
+The context class: |ChangeSubresourceContext|. See the `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
 The main processor class: |ChangeSubresourceProcessor|.
 
@@ -508,7 +508,7 @@ The URL template for REST API: ``/api/{entity}/{id}/{association}``.
 
 The HTTP method for REST API: ``POST``.
 
-The context class: |ChangeSubresourceContext|. See the :ref:`SubresourceContext <subresourcecontext-class>` class for more details.
+The context class: |ChangeSubresourceContext|. See the `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
 The main processor class: |ChangeSubresourceProcessor|.
 
@@ -563,7 +563,7 @@ The URL template for REST API: ``/api/{entity}/{id}/{association}``.
 
 The HTTP method for REST API: ``DELETE``.
 
-The context class: |ChangeSubresourceContext|. See the :ref:`SubresourceContext <subresourcecontext-class>` class for more details.
+The context class: |ChangeSubresourceContext|. See the `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
 The main processor class: |ChangeSubresourceProcessor|.
 
@@ -618,7 +618,7 @@ The URL template for REST API: ``/api/{entity}/{id}/relationships/{association}`
 
 The HTTP method for REST API: ``GET``.
 
-The context class: |GetRelationshipContext|. Also see :ref:`SubresourceContext <subresourcecontext-class>` class for more details.
+The context class: |GetRelationshipContext|. Also see `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
 The main processor class: |GetRelationshipProcessor|.
 
@@ -661,7 +661,7 @@ The URL template for REST API: ``/api/{entity}/{id}/relationships/{association}`
 
 The HTTP method for REST API: ``PATCH``.
 
-The context class: |UpdateRelationshipContext|. Also see :ref:`SubresourceContext <subresourcecontext-class>` class for more details.
+The context class: |UpdateRelationshipContext|. Also see `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
 The main processor class: |UpdateRelationshipProcessor|.
 
@@ -699,7 +699,7 @@ The URL template for REST API: ``/api/{entity}/{id}/relationships/{association}`
 
 The HTTP method for REST API: ``POST``.
 
-The context class: |AddRelationshipContext|. See the :ref:`SubresourceContext <subresourcecontext-class>` class for more details.
+The context class: |AddRelationshipContext|. See the `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
 The main processor class: |AddRelationshipProcessor|
 
@@ -742,7 +742,7 @@ The URL template for REST API: ``/api/{entity}/{id}/relationships/{association}`
 
 The HTTP method for REST API: ``POST``.
 
-The context class: |AddRelationshipContext|. See the :ref:`SubresourceContext <subresourcecontext-class>` class for more details.
+The context class: |AddRelationshipContext|. See the `SubresourceContext <#subresourcecontext-class>`__ class for more details.
 
 The main processor class:  |AddRelationshipProcessor|.
 
@@ -801,7 +801,7 @@ This action has the following processor groups:
 
 For examples of usage, see the ``handleOptionsItem``, ``handleOptionsList``, ``handleOptionsSubresource`` and ``handleOptionsRelationship`` methods of |RequestActionHandler|.
 
-.. _auxiliary-actions:
+.. _web-api--auxiliary-actions:
 
 Auxiliary Actions
 -----------------
@@ -811,7 +811,7 @@ Auxiliary Actions
 customize\_loaded\_data Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action makes modifications to the data loaded by the :ref:`get <get-action>`, :ref:`get_list <get-list-action>` and :ref:`get_subresource <get-subresource-action>` actions.
+This action makes modifications to the data loaded by the `get <#get-action>`__, `get_list <#get-list-action>`__ and `get_subresource <#get-subresource-action>`__ actions.
 
 The context class: |CustomizeLoadedDataContext|.
 
@@ -819,7 +819,7 @@ The main processor class: |CustomizeLoadedDataProcessor|.
 
 As example of a processor used to modify the loaded data: |ComputePrimaryField| or :ref:`Add a Computed Field <add-computed-field>`. Run ``php bin/console oro:api:debug customize_loaded_data`` to display other processors registered in this action.
 
-The ``collection`` tag attribute can be used for processors of this action to process all primary entities in :ref:`get_list <get-list-action>` or :ref:`get_subresource <get-subresource-action>` actions or all entities in ``to-many`` associations for :ref:`get <get-action>`, :ref:`get_list <get-list-action>` or :ref:`get_subresource <get-subresource-action>` actions. An example of a case when using of this attribute can be helpful is if you want to execute one SQL query for all entities in a collection to get an additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
+The ``collection`` tag attribute can be used for processors of this action to process all primary entities in `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions or all entities in ``to-many`` associations for `get <#get-action>`__, `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions. An example of a case when using of this attribute can be helpful is if you want to execute one SQL query for all entities in a collection to get an additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
 
 .. code-block:: php
 
@@ -849,7 +849,7 @@ Note: All processors for this action has ``identifier_only`` tag attribute set t
 customize\_form\_data Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action makes modifications of the submitted form data for the :ref:`create <create-action>` and :ref:`update <update-action>` actions.
+This action makes modifications of the submitted form data for the `create <#create-action>`__ and `update <#update-action>`__ actions.
 
 The context class: |CustomizeFormDataContext|.
 
@@ -1030,7 +1030,7 @@ batch\_update Action
 ^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to update or create a set of entities of the same type that are a part of an asynchronous
-batch operation. It is triggered by the :ref:`update_list <update-list-action>` action.
+batch operation. It is triggered by the `update_list <#update-list-action>`__ action.
 
 The context class: |BatchUpdateContext|.
 
@@ -1063,7 +1063,7 @@ batch\_update\_item Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to create or update an entity that is a part of an asynchronous batch operation.
-It is used by the :ref:`batch_update <batch-update-action>` action.
+It is used by the `batch_update <#batch-update-action>`__ action.
 
 The context class: |BatchUpdateItemContext|.
 
@@ -1088,12 +1088,12 @@ The following diagram shows the main data flow for this action:
 
 For examples of usage, see |BatchUpdateItem|.
 
-.. _context-class:
+.. _web-api--context-class:
 
 Context Class
 -------------
 
-The |Context|  class is used as a superclass for the context classes of CRUD actions such as :ref:`get <get-action>`, :ref:`get_list <get-list-action>`, :ref:`create <create-action>`, :ref:`update <update-action>`, :ref:`delete <delete-action>`, and :ref:`delete_list <delete-list-action>`.
+The |Context|  class is used as a superclass for the context classes of CRUD actions such as `get <#get-action>`__, `get_list <#get-list-action>`__, `create <#create-action>`__, `update <#update-action>`__, `delete <#delete-action>`__, and `delete_list <#delete-list-action>`__.
 
 General methods:
 
@@ -1177,13 +1177,13 @@ Entity metadata related methods:
 -  **getMetadata()** - Retrieves |metadata| of an entity.
 -  **setMetadata(metadata)** - Sets metadata of an entity. This method can be used to completely override the default metadata of an entity.
 
-.. _subresourcecontext-class:
+.. _web-api--subresourcecontext-class:
 
 SubresourceContext Class
 ------------------------
 
-The |SubresourceContext| class is used as a superclass for the context classes of sub-resources related actions such as :ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`, :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and
-:ref:`delete_relationship <delete-relationship-action>`. Additionally to the :ref:`Context <context-class>` class, this class provides methods to work with parent entities.
+The |SubresourceContext| class is used as a superclass for the context classes of sub-resources related actions such as `get_subresource <#get-subresource-action>`__, `get_relationship <#get-relationship-action>`__, `update_relationship <#update-relationship-action>`__, `add_relationship <#add-relationship-action>`__ and
+`delete_relationship <#delete-relationship-action>`__. Additionally to the `Context <#context-class>`__ class, this class provides methods to work with parent entities.
 
 General methods:
 
