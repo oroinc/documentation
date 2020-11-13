@@ -5,7 +5,7 @@ How to Change Media Breakpoints in Storefront
 
 To update media breakpoints, change the next breakpoints:
 
-.. code:: scss
+.. code-block:: scss
 
     // Desktop Media Breakpoint;
 
@@ -18,7 +18,7 @@ To update media breakpoints, change the next breakpoints:
 
 To add, update media queries theme, a developer must create files with the ``your-theme/settings/global-settings.scss`` global-settings and update the list with custom breakpoints.
 
-.. code:: scss
+.. code-block:: scss
 
     $custom-breakpoints: (
         'big-tablet': '(min-width: 1100px) and (max-width: 1299px)', //  add a new rule
@@ -29,7 +29,7 @@ To add, update media queries theme, a developer must create files with the ``you
 
 To disable a media query theme, a developer must set breakpoint to null
 
-.. code:: scss
+.. code-block:: scss
 
     $custom-breakpoints: (
         'desktop': null                        // disable an existing rule

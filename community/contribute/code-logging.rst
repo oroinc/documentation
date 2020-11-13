@@ -10,7 +10,7 @@ Basics
 
 Use Monolog logger that implements the PSR-3 LoggerInterface, de-facto logging standard defined in php-fig/log package. For an overview, please, see logging in Symfony, where we borrowed this sample:
 
-.. code:: php
+.. code-block:: php
 
    $logger->critical('I left the oven on!', [
        // include extra "context" info in your logs
@@ -31,7 +31,7 @@ How to Use Logger
 
    **Constructor injection**
 
-   .. code:: text
+   .. code-block:: text
 
       services:
           acme.logger_aware_service:
@@ -40,7 +40,7 @@ How to Use Logger
 
    *Setter injection*
 
-   .. code:: text
+   .. code-block:: text
 
       services:
           acme.logger_aware_service:
@@ -50,7 +50,7 @@ How to Use Logger
 
 #. Every independent component should use its own channel with the *oro_* prefix:
 
-   .. code:: text
+   .. code-block:: text
 
       tags:
           - { name: monolog.logger, channel: oro_api }
@@ -59,7 +59,7 @@ How to Use Logger
 
 #. If LoggerAwareInterface was used, every logger method call should be wrapped with the following check to ensure that the logger exists, and no exceptions are triggered due to its unavailability:
 
-   .. code:: text
+   .. code-block:: text
 
       if (null !== $this->logger){
           $this->logger->debug($message,  $context);
@@ -67,7 +67,7 @@ How to Use Logger
 
 #. Messages should be simple and human-readable. Any extra information should be passed in the context variables:
 
-   .. code:: text
+   .. code-block:: text
 
       $this->logger->debug(
           'Authentication failure, forward triggered.',
@@ -204,7 +204,7 @@ Examples of Correct Exception Handling and Logging
 Example 1
 ^^^^^^^^^
 
-.. code:: php
+.. code-block:: php
 
    <?php
    // in case of injection logger to constructor
@@ -220,7 +220,7 @@ Example 1
 Example 2
 ^^^^^^^^^
 
-.. code:: php
+.. code-block:: php
 
    <?php
    // in case of using LoggerAwareInterface
@@ -238,7 +238,7 @@ Example 2
 Example 3
 ^^^^^^^^^
 
-.. code:: php
+.. code-block:: php
 
    <?php
    // do some work
@@ -254,7 +254,7 @@ Incorrect Exceptions Handling
 
 Handling exceptions without logging is incorrect:
 
-.. code:: php
+.. code-block:: php
 
    <?php
    // do some work

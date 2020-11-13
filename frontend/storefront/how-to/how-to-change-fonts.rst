@@ -14,7 +14,7 @@ Disable and Override Fonts
 
 To disable all Oro fonts, override the ``$theme-fonts`` variable and set ``map`` to *empty*.
 
-.. code:: scss
+.. code-block:: scss
 
     $theme-fonts: ();
 
@@ -25,7 +25,7 @@ To update fonts, merge ``$theme-fonts`` with your ``$theme-custom-fonts``.
 
 .. note:: You have to put the font files in your bundle public folder beforehand, e.g., ``Resources/public/default/fonts``.
 
-.. code:: scss
+.. code-block:: scss
 
     $theme-custom-fonts: (
         'main': (
@@ -65,7 +65,7 @@ To disable all Oro fonts without overriding them with yours:
 1. Override ``$theme-fonts: ();``
 2. Call mixin ``font-face()`` or ``use-font-face();``
 
-    .. code:: scss
+    .. code-block:: scss
 
         $theme-fonts: ();
 
@@ -110,7 +110,7 @@ Change Font Size
 
 To change the font size and line-height, override the following variables:
 
-.. code:: scss
+.. code-block:: scss
 
     // Offsets;
 

@@ -20,7 +20,7 @@ Twig Blocks & Block Themes
 
 Each layout block is rendered with a **Twig block**, as in:
 
-.. code:: twig
+.. code-block:: twig
 
    {% block _header_widget %}
        <header{{ block('block_attributes') }}>
@@ -59,7 +59,7 @@ Twig block names are build with the following rules:
 
 For instance, to define a layout block named ``header`` with the ``container`` block type, you need:
 
-.. code:: yaml
+.. code-block:: yaml
 
    layout:
        actions:
@@ -83,7 +83,7 @@ Apply a Block Theme
 
 To use a block theme on a page, you have to add the ``setBlockTheme`` instruction to the :ref:`layout update <dev-doc-frontend-layouts-layout-updates>` yaml file.
 
-.. code:: yaml
+.. code-block:: yaml
 
    layout:
        actions:
@@ -95,7 +95,7 @@ the layout update file where ``setBlockTheme`` instruction is defined.
 
 You can pass multiple block themes to the instruction:
 
-.. code:: yaml
+.. code-block:: yaml
 
    layout:
        actions:
@@ -106,7 +106,7 @@ To reference the template from another bundle, you can use standard
 Symfony syntax with the bundle name and folder name inside the
 ``Resources/views`` folder:
 
-.. code:: yaml
+.. code-block:: yaml
 
    layout:
        actions:
@@ -135,19 +135,19 @@ To discover variables available in a block, you can use the snippets below:
 
 -  To dump all variables
 
-   .. code:: twig
+   .. code-block:: twig
 
       {{ dump(_context) }}
 
 -  To dump all variables to the |Symfony Profiler|
 
-   .. code:: twig
+   .. code-block:: twig
 
       {% dump(_context) %}
 
 -  To dump a single variable
 
-   .. code:: twig
+   .. code-block:: twig
 
       {{ dump(variableName) }}
 
@@ -164,7 +164,7 @@ options that are defined by :ref:`block type <dev-doc-frontend-block-types>`.
 
 For example:
 
-.. code:: yaml
+.. code-block:: yaml
 
    layout:
        actions:
@@ -179,7 +179,7 @@ For example:
 
 Now, you can use the ``action``, ``text``, and ``icon`` options in a block theme:
 
-.. code:: twig
+.. code-block:: twig
 
    {% block _call_button_widget %}
        <button
@@ -197,7 +197,7 @@ To pass HTML attributes to the Twig block, use the ``attr`` option.
 
 For example:
 
-.. code:: diff
+.. code-block:: diff
 
      layout:
          actions:
@@ -215,7 +215,7 @@ For example:
 
 In block themes, HTML attributes are rendered with ``{{ block('block_attributes') }}``:
 
-.. code:: diff
+.. code-block:: diff
 
      {% block _call_button_widget %}
    -      <button
@@ -232,7 +232,7 @@ Custom Variables
 
 To pass custom variables that are not defined in the layout block type, use the ``vars`` options. For example:
 
-.. code:: diff
+.. code-block:: diff
 
      layout:
          actions:
@@ -249,7 +249,7 @@ To pass custom variables that are not defined in the layout block type, use the 
 
 Now, you can use an additional ``userName`` variable in a block theme for the ``call_button`` block:
 
-.. code:: diff
+.. code-block:: diff
 
      {% block _call_button_widget %}
          <button {{ block('block_attributes') }}
@@ -271,7 +271,7 @@ Twig Filters and Functions
 
 Oro defines a lot of additional filters and functions. To get the full list, run:
 
-.. code:: bash
+.. code-block:: bash
 
    bin/console debug:twig
 
@@ -281,7 +281,7 @@ Render List of Items with the Same Template
 Iteration over an array or a collection of data can be implemented in a block template
 of a block theme file, for instance:
 
-.. code:: twig
+.. code-block:: twig
 
     {% block _attributes_container_widget %}
         <div class="attributes-container">
@@ -303,7 +303,7 @@ Provide Defaults for Block Attributes
 To simplify block attribute configuration, use the
 ``layout_attr_defaults(attr, default_attr)`` Twig function :
 
-.. code:: twig
+.. code-block:: twig
 
     {% set attr = layout_attr_defaults(attr, {
         required: 'required',
@@ -320,7 +320,7 @@ You can access any layout block from a different block using its ID and
 modify the template based on the existing block or any of its
 properties.
 
-.. code:: twig
+.. code-block:: twig
 
     {% block root_widget %}
         <!DOCTYPE {{ doctype|default('html') }}>

@@ -12,7 +12,7 @@ References types
 Service Call
 ------------
 
-.. code::
+.. code-block:: none
 
    @oro_email.grid.query_builder->getChoicesQuery
 
@@ -21,7 +21,7 @@ Call method `getChoicesQuery` with datagrid name and YAML configuration key as a
 Static Method Call
 ------------------
 
-.. code::
+.. code-block:: none
 
    Acme\Bundle\DemoBundle\SomeClass::testStaticCall
 
@@ -30,7 +30,7 @@ Class name can be defined in container's parameters, or specified directly.
 Constant
 --------
 
-.. code::
+.. code-block:: none
 
    Acme\Bundle\DemoBundle\SomeClass::TEST
 
@@ -41,7 +41,7 @@ If it is not callable and no constant exists with such name in the class, the va
 Service Injection
 -----------------
 
-.. code::
+.. code-block:: none
 
    some_key: @some.serviceID
 
