@@ -5,7 +5,7 @@ How to Change Offsets in Storefront
 
 To update offsets, change the following variables:
 
-.. code:: scss
+.. code-block:: scss
 
     // Offsets;
 

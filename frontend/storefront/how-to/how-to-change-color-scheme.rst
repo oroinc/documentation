@@ -13,7 +13,7 @@ To change the color scheme:
 1. Create your own list of colors and merge it with ``$color-palette`` using the ``map_merge($map1, $map2)`` SASS function.
    This way, your color scheme will rewrite or extend the already existing $color-palette.
 
-   .. code:: scss
+   .. code-block:: scss
 
        $theme-color-palette: (
            'primary': (
@@ -31,7 +31,7 @@ To change the color scheme:
 
 2. To get the color you need, use the ``get-color($palette, $key);`` function.
 
-    .. code:: scss
+    .. code-block:: scss
 
         .input {
             color: get-color('secondary', 'main');

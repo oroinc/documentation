@@ -13,7 +13,7 @@ Input Data Format
 
 The input data for each record are the same as for API resources to create or update a single account record:
 
-.. code:: json
+.. code-block:: none
 
     {
        "data": [
@@ -32,7 +32,7 @@ The input data for each record are the same as for API resources to create or up
 
 To mark records that should be updated, use the ``update`` meta property:
 
-.. code:: json
+.. code-block:: none
 
     {
        "data": [
@@ -64,7 +64,7 @@ Related entities can be created or updated when processing primary entities.
 The list of related entities should be specified in the ``included`` section
 that must be placed at the root level, the same as the ``data`` section:
 
-.. code:: json
+.. code-block:: none
 
     {
        "data": [
@@ -97,7 +97,7 @@ that must be placed at the root level, the same as the ``data`` section:
 The included records can be updated when processing the request. To mark included records that should be updated,
 use the ``update`` meta property:
 
-.. code:: json
+.. code-block:: none
 
     {
        "data": [
@@ -236,7 +236,7 @@ To see updated status of job, use the following request:
 
 **Response**
 
-.. code:: json
+.. code-block:: none
 
     {
       "data": {
@@ -266,7 +266,7 @@ This example shows the status of the operation that was successfully completed. 
 If some entities were not processed, the summary's ``errorCount`` field will contain the number of errors occurred
 when processing the asynchronous operation:
 
-.. code:: json
+.. code-block:: none
 
     {
       "data": {

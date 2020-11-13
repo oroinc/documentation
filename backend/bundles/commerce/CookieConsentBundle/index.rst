@@ -18,7 +18,7 @@ To set up a cookie banner:
 
 1. Add new a package as a dependency in the composer.json file:
 
-.. code:: json
+.. code-block:: none
 
       "require": {
         "oro/cookie-consent": "4.2.*"

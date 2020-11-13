@@ -254,7 +254,8 @@ You can refer to the `Attributes Supported in Shipping and Payment Rule Expressi
 
 For expression evaluation, OroCommerce walks through the *lineItems* collection and for every item in the collection it checks that this product is available in the warehouse A in the units that were ordered, that it is enabled for sale from the warehouse A, and that it is in stock in the required quantity.
 
-.. code::
+.. code-block:: none
+   :linenos:
 
    lineItems.all(
     lineItem.product.inventoryLevels.any(
@@ -272,7 +273,8 @@ The `lineItems.all(...)` expression is a loop through the elements of `lineItems
 
 In the example, for every line item, the following condition is verified to be true:
 
-.. code::
+.. code-block:: none
+   :linenos:
 
     ...
 

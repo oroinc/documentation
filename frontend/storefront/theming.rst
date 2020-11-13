@@ -78,7 +78,7 @@ From the Code
 To set a default storefront theme on the code level, add the following
 configuration to the ``config/config.yml`` file in an application:
 
-.. code:: yaml
+.. code-block:: yaml
 
    #config/config.yml
    oro_layout:

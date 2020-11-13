@@ -11,7 +11,7 @@ Configuration example
 
 This grid will be rendered and processed in the client mode:
 
-.. code::
+.. code-block:: none
 
     account-account-user-grid:
         options:

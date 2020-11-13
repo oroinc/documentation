@@ -52,13 +52,13 @@ Each block has a **block type** that is responsible for passing options and data
 
 To get a list of available block types, run the command:
 
-.. code:: bash
+.. code-block:: bash
 
    bin/console oro:debug:layout
 
 To get reference on a single block type with all the available options, run:
 
-.. code:: bash
+.. code-block:: bash
 
    bin/console oro:debug:layout --type=BLOCK_TYPE_NAME
 
@@ -263,7 +263,7 @@ Use Layouts with the Controller
 
 Add ``@Layout`` annotation to the controller:
 
-.. code:: diff
+.. code-block:: diff
 
    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
    use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -392,13 +392,13 @@ Data Providers Reference
 
 To get a list of available data providers, run the command:
 
-.. code:: bash
+.. code-block:: bash
 
    bin/console oro:debug:layout
 
 To get reference on a single data provider, run:
 
-.. code:: bash
+.. code-block:: bash
 
    bin/console oro:debug:layout --provider=DATA_PROVIDER_NAME
 
