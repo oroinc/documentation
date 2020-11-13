@@ -69,7 +69,8 @@ Application Configuration
 
 Macros from `OroAssetBundle:Asset.html.twig` is utilized for passing options to the application's constructor. The configuration is placed in `OroUIBundle::js_modules_config.html.twig` template:
 
-.. code::
+.. code-block:: none
+   :linenos:
 
    {% import '@OroAsset/Asset.html.twig' as Asset %}
    {{ Asset.js_modules_config({

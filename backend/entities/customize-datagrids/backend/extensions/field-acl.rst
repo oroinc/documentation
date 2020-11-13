@@ -7,7 +7,7 @@ Field ACL Extension
 
 To enable field ACL protection for a column, use the ``field_acl`` section in a datagrid declaration:
 
-.. code::
+.. code-block:: none
 
    fields_acl:                     #section name
        columns:

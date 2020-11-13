@@ -183,7 +183,8 @@ Grid can become customizable through option `split_to_cells` of `datagrid` block
 
 According to `split_to_cells` option layout tree of the grid will have hierarchy like this:
 
-.. code::
+.. code-block:: none
+   :linenos:
 
     account_users
         account_users_header_row

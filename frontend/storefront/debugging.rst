@@ -87,7 +87,7 @@ Each block in HTML has the following data attributes:
 
 **Example:**
 
-.. code:: twig
+.. code-block:: twig
 
         ...
         {% block _page_container_widget %}

@@ -20,7 +20,7 @@ To install OroGridFsConfigBundle:
 
 2. Require the package via composer.
 
-   .. code:: bash
+   .. code-block:: bash
 
       composer require oro/gridfs-config
 
@@ -39,7 +39,7 @@ To use the Oro GridFS gaufrette adapter, use the ``oro_gridfs`` adapter type. To
 existing adapter, add the configuration in the app.yml file of a bundle or in the common config.yml file that will add
 configuration to the |KnpGaufretteBundle| configuration:
 
-.. code:: yaml
+.. code-block:: yaml
 
     knp_gaufrette:
         adapters:
@@ -67,13 +67,13 @@ name of an existing adapter and the Mongo db dsn string is the value of the para
 
 The following example shows the reconfiguration of the attachment adapter:
 
-.. code:: yaml
+.. code-block:: yaml
 
    mongodb_gridfs_dsn_attachment: 'mongodb://user:password@host:27017/attachment'
 
 To get the list of configured Gaufrette adapters, use the `debug:config` command:
 
-.. code:: bash
+.. code-block:: bash
 
    bin/console debug:config knp_gaufrette adapters
 
@@ -87,7 +87,7 @@ In this case, the dsn configuratoin string has the following format:
 
 Example:
 
-.. code:: yaml
+.. code-block:: yaml
 
    mongodb_gridfs_dsn_attachment: 'mongodb://user:password@host1:27017,host2:27017/attachment'
 

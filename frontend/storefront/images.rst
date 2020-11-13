@@ -22,7 +22,7 @@ example
 
 **Example:**
 
-.. code:: yaml
+.. code-block:: yaml
 
     #DemoBundle/Resources/views/layouts/first_theme/config/images.yml
     dimensions:

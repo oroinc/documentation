@@ -72,7 +72,7 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
 
 *BundleName/Resources/views/layouts/theme\_name/scss/styles.scss*
 
-.. code:: scss
+.. code-block:: scss
 
     @import 'components/page-container';
     @import 'components/page-header';
@@ -82,7 +82,7 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
 
 *BundleName/Resources/views/layouts/theme\_name/config/assets.yml*
 
-.. code:: yaml
+.. code-block:: yaml
 
     styles:
         inputs:
@@ -127,7 +127,7 @@ Override and Disable SCSS Files
 To remove or override ``scss/css``, create the ``Resources/views/layouts/{theme_name}/assets.yml`` file in your
 theme and write the following config in it:
 
-.. code:: yaml
+.. code-block:: yaml
 
     styles:
         inputs:
@@ -198,7 +198,7 @@ Update and add new variables for this component
 
 *input-config.scss*
 
-.. code:: scss
+.. code-block:: scss
 
     $input-padding: 10px 12px; // update the variable's value with blank theme
     $input-font-size: 13px; // update the variable's value with blank theme
@@ -208,7 +208,7 @@ Add missing styles for this component
 
 *input.scss*
 
-.. code:: scss
+.. code-block:: none
 
     .input {
         margin: $input-offset;
@@ -220,7 +220,7 @@ Add missing styles for this component
 
 *styles.scss*
 
-.. code:: scss
+.. code-block:: scss
 
         @import 'components/input';
 

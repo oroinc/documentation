@@ -42,13 +42,13 @@ Render Placeholders
 
 To render a placeholder in a twig template, put
 
-.. code:: html
+.. code-block:: html
 
    {% placeholder <placeholder_name> %}
 
 Additional options can be passed to all placeholder child items using the ``with`` tag, for example,
 
-.. code:: html
+.. code-block:: html
 
    {% placeholder <placeholder_name> with {'form' : form} %}
 
@@ -58,7 +58,7 @@ Placeholder Declaration in YAML
 
 Placeholders with their items (templates and actions) can be defined in a bundle in ``Resource/oro/placeholders.yml``
 
-.. code:: yaml
+.. code-block:: yaml
 
    placeholders:
        items:                             # items to use in placeholders (templates or actions)
@@ -81,7 +81,7 @@ Override Placeholder Items
 
 You can override the configuration defined in the ``placeholders.yml`` file in ``config/config.yml`` file at the application level.
 
-.. code:: yaml
+.. code-block:: yaml
 
 
    oro_ui:

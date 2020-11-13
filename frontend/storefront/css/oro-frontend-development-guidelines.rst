@@ -91,7 +91,7 @@ Base Code Style
 Simple Names
 ^^^^^^^^^^^^
 
-.. code:: HTML
+.. code-block:: HTML
 
     <div class="product">
         <p class="product__name">Product name</p>
@@ -106,7 +106,7 @@ The Order of the Attributes
 2. Attributes used for UI customization (e.g., class, data-\*, etc).
 3. Attributes with JSON content.
 
-.. code:: HTML
+.. code-block:: none
 
     <input name type id
         class
@@ -161,7 +161,7 @@ Comments
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element {
         // Use base color
@@ -170,7 +170,7 @@ Comments
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element {
         color: $color; /* Use base color */
@@ -184,7 +184,7 @@ before closing brace.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element {
         color: $color;
@@ -192,7 +192,7 @@ before closing brace.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element{color: $color;}
 
@@ -204,7 +204,7 @@ spaces before and after.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element1,
     .element2 {
@@ -213,7 +213,7 @@ spaces before and after.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element1, .element2 {
         color: $color;
@@ -228,7 +228,7 @@ selectors is useful for performance reasons.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         ...
@@ -236,7 +236,7 @@ selectors is useful for performance reasons.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     div.element {
         ...
@@ -253,7 +253,7 @@ Use spaces before and after combinators.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element1 + .element2 {
          color: $color;
@@ -261,7 +261,7 @@ Use spaces before and after combinators.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element1+.element2 {
         color: $color;
@@ -274,7 +274,7 @@ Use line break for each property declaration.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
          position: absolute;
@@ -284,7 +284,7 @@ Use line break for each property declaration.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         position: absolute; top: 0; left: 0;
@@ -297,7 +297,7 @@ Use no space before property colon and a space after.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element {
         color: $color;
@@ -305,7 +305,7 @@ Use no space before property colon and a space after.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element1 {
         color : $color;
@@ -326,7 +326,7 @@ Each selector should be finished with a new line.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element1 {
         color: $color;
@@ -338,7 +338,7 @@ Each selector should be finished with a new line.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element1 {
         color: $color;
@@ -353,7 +353,7 @@ Shorthand
 If you use more than 2 parameters (three indents, for example), write
 short:
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         margin: 10px 0 5px;
@@ -361,7 +361,7 @@ short:
 
 If less, then:
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         margin-top: 10px;
@@ -375,7 +375,7 @@ Do not add zero for fractional numbers.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         opacity: .5;
@@ -383,7 +383,7 @@ Do not add zero for fractional numbers.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         opacity: 0.5;
@@ -396,7 +396,7 @@ Omit the units for zero value.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         margin: 0;
@@ -404,7 +404,7 @@ Omit the units for zero value.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         margin: 0px;
@@ -417,7 +417,7 @@ Use 0 instead of none to specify that a style has no border.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
         border: 0;
@@ -425,7 +425,7 @@ Use 0 instead of none to specify that a style has no border.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .element {
        border: none;
@@ -450,7 +450,7 @@ Exceptions are **pseudo elements** and **states**.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .block {
         &__element {
@@ -466,7 +466,7 @@ Exceptions are **pseudo elements** and **states**.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .block {
         ...
@@ -491,7 +491,7 @@ them across the block when providing changes to the interface.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .block {
         ...
@@ -507,7 +507,7 @@ them across the block when providing changes to the interface.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     .block {
         ...
@@ -531,7 +531,7 @@ styles only for a specific type of device in the future.
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .block {
         width: 50%;
@@ -562,7 +562,7 @@ styles only for a specific type of device in the future.
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .block {
         width: 50%;
@@ -596,7 +596,7 @@ from a predefined color scheme.
 
 Example:
 
-.. code:: scss
+.. code-block:: scss
 
     .block {
         border-color: get-color('additional', 'light');
@@ -606,7 +606,7 @@ Example:
 If you need darker, lighter or more transparent color, use the native Sass
 functions: **darken()**, **lighten()**, **transparentize()**, etc.
 
-.. code:: scss
+.. code-block:: none
 
     .block {
         background-color: transparentize(get-color('primary', 'main'), .8);
@@ -637,14 +637,14 @@ use: `vertical-align`, `overflow`, `clear`, `resize`,
 
 **Acceptable**
 
-.. code:: scss
+.. code-block:: scss
 
     // variables
     $element-color: #000 !default;
     $element-font: 12px !default;
     $element-line-height: 1.2 !default;
 
-.. code:: scss
+.. code-block:: none
 
     .element {
         // positioning
@@ -680,7 +680,7 @@ use: `vertical-align`, `overflow`, `clear`, `resize`,
 
 **Unacceptable**
 
-.. code:: scss
+.. code-block:: none
 
     .element {
         text-align: center;
@@ -703,7 +703,7 @@ Use @extend Directive
 
 **Examples**:
 
-.. code:: scss
+.. code-block:: none
 
     $default-size: 400px !default;
     $default-offset: 10px auto !default;
@@ -718,7 +718,7 @@ Use @extend Directive
         background: $default-background;
     }
 
-.. code:: scss
+.. code-block:: none
 
     .modal {
         // other modal styles
@@ -747,7 +747,7 @@ Use the logical number of modifiers for the element.
 
 "Quiet classes"
 
-.. code:: scss
+.. code-block:: none
 
     %modifier {}
     %another-modifier {}
@@ -763,7 +763,7 @@ Use the logical number of modifiers for the element.
         }
     }
 
-.. code:: html
+.. code-block:: html
 
     <div class="block">
         <div class="
@@ -774,7 +774,7 @@ Use the logical number of modifiers for the element.
 
 **Unacceptable**
 
-.. code:: html
+.. code-block:: html
 
     <div class="block">
         <div class="
@@ -790,7 +790,7 @@ The Main Mixins and Functions
 
 Helper to clear inner floats.
 
-.. code:: scss
+.. code-block:: scss
 
     @mixin clearfix {
         &:after {
@@ -809,7 +809,7 @@ Helper to clear inner floats.
 
 Helper for the positioning of pseudo-elements.
 
-.. code:: scss
+.. code-block:: scss
 
     @mixin after {
         content: '';
@@ -830,7 +830,7 @@ Helper for the positioning of pseudo-elements.
 
 Helper function for organizing z-index
 
-.. code:: scss
+.. code-block:: none
 
     @function z($layer) {
         $layers: (
@@ -860,7 +860,7 @@ Helper function for organizing z-index
 
 Helper mixin for organizing @media rules
 
-.. code:: scss
+.. code-block:: scss
 
     @mixin breakpoint($type) {
         $breakpoints: (
@@ -882,12 +882,12 @@ Helper mixin for organizing @media rules
 Best Practices
 --------------
 
-.. code:: scss
+.. code-block:: scss
 
     $block-font-title: 'Tahoma' !default;
     $block-offset: 10px !default;
 
-.. code:: scss
+.. code-block:: none
 
     .block {
         @include clearfix;

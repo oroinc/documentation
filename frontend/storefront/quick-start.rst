@@ -19,7 +19,7 @@ Create a Theme
 First, create a theme folder in ``Resources/views/layouts/``. For example ``DemoBundle/Resources/views/layouts/first_theme/``, where ``first_name`` is the theme name.
 The theme definition should be placed in ``theme.yml`` in a theme folder, for example:
 
-.. code:: yaml
+.. code-block:: yaml
 
    #DemoBundle/Resources/views/layouts/first_theme/theme.yml
    label:  First Theme
@@ -36,7 +36,7 @@ Now, you can :ref:`activate the storefront theme <configuration--commerce--desig
 To set a default storefront theme on the code level, add the following
 configuration to the ``config/config.yml`` file in your application:
 
-.. code:: yaml
+.. code-block:: yaml
 
    #config/config.yml
    oro_layout:
@@ -49,7 +49,7 @@ Add Stylesheets with SCSS
 *  Run ``bin/console assets:install --symlink`` to symlink SCSS files from bundles to ``public/bundles/`` folder in your application.
 *  Create the ``assets.yml`` file in a theme ``config/`` folder and register all the new SCSS files in it.
 
-   .. code:: yaml
+   .. code-block:: yaml
 
       #DemoBundle/Resources/views/layouts/first_theme/config/assets.yml
       styles:
@@ -83,7 +83,7 @@ To define and modify the layout tree, use **actions** organized into layout upda
 
 1. Let's add a slogan block just after the logo for all the existing pages:
 
-.. code:: yaml
+.. code-block:: yaml
 
    #DemoBundle/Resources/views/layouts/first_theme/slogan.yml
    layout:
@@ -97,7 +97,7 @@ To define and modify the layout tree, use **actions** organized into layout upda
 
 2. And change the structure of a product display page. Remove images, move block with title and SKU to another place and add a css class to the SKU attribute. To apply layout updates to a single page, we need to place them in a folder with the route name inside a theme. For a product display page, the route name is `oro_product_frontend_product_view`:
 
-.. code:: yaml
+.. code-block:: yaml
 
    #DemoBundle/Resources/views/layouts/first_theme/oro_product_frontend_product_view/product.yml
    layout:
@@ -118,7 +118,7 @@ Change the HTML
 Each layout block is rendered with a **Twig block**. Twig blocks are organized into **block theme** twig files.
 For example, ``product_view_attribute_group_general_attribute_text_sku`` block from the previous section is rendered as follows:
 
-.. code:: twig
+.. code-block:: twig
 
    {#ProductBundle/Resources/views/layouts/blank/oro_product_frontend_product_view/layout.html.twig #}
 
@@ -135,7 +135,7 @@ To find out which Twig block is used for rendering a certain element on a page, 
 
 To override the template, we need to create a block theme twig file in the same location in our bundle and apply it with the ``@setBlockTheme`` layout action. Let's change the label of an SKU attribute to the default one.
 
-.. code:: diff
+.. code-block:: diff
 
     {#DemoBundle/Resources/views/layouts/blank/oro_product_frontend_product_view/sku.html.twig #}
 
@@ -149,7 +149,7 @@ To override the template, we need to create a block theme twig file in the same 
      </p>
     {% endblock %}
 
-.. code:: yaml
+.. code-block:: yaml
 
    #DemoBundle/Resources/views/layouts/first_theme/oro_product_frontend_product_view/product.yml
    layout:
