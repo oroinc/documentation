@@ -307,6 +307,8 @@ To simplify |unit testing| of :ref:`API processors <web-api--processors>`, one o
     "|GetSubresourceProcessorOrmRelatedTestCase|",":ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`"
     "|ChangeSubresourceProcessorTestCase|",":ref:`update_subresource <update-subresource-action>`, :ref:`add_subresource <add-subresource-action>`, :ref:`delete_subresource <delete-subresource-action>`"
     "|ChangeRelationshipProcessorTestCase|",":ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>`, :ref:`delete_relationship <delete-relationship-action>`"
+    "|CustomizeLoadedDataProcessorTestCase|",":ref:`customize_loaded_data <customize-loaded-data-action>`"
+    "|CustomizeFormDataProcessorTestCase|",":ref:`customize_form_data <customize-form-data-action>`"
     "|OptionsProcessorTestCase|",":ref:`options <options-action>`"
     "|ConfigProcessorTestCase|",":ref:`get_config <get-config-action>`"
     "|MetadataProcessorTestCase|",":ref:`get_metadata <get-metadata-action>`"

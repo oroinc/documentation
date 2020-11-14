@@ -1852,6 +1852,14 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/Subresource/ChangeRelationshipProcessorTestCase.php" target="_blank">ChangeRelationshipProcessorTestCase</a>
 
+.. |CustomizeLoadedDataProcessorTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/CustomizeLoadedData/CustomizeLoadedDataProcessorTestCase.php" target="_blank">CustomizeLoadedDataProcessorTestCase</a>
+
+.. |CustomizeFormDataProcessorTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/CustomizeFormData/CustomizeFormDataProcessorTestCase.php" target="_blank">CustomizeFormDataProcessorTestCase</a>
+
 .. |OptionsProcessorTestCase| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/Options/OptionsProcessorTestCase.php" target="_blank">OptionsProcessorTestCase</a>
