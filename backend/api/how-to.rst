@@ -238,7 +238,10 @@ You can remove the limit at all. To do this, set ``-1`` as a value for the ``max
 Configure a Nested Object
 -------------------------
 
-Sometimes it is required to group several fields and expose them as a nested object in the API. For example, consider the case when an entity has two fields ``intervalNumber`` and ``intervalUnit`` but you need to expose them in API as ``number`` and ``unit`` properties of ``interval`` field. To achieve it, use the following configuration:
+Sometimes it is required to group several fields and expose them as a nested object in the API. For example,
+consider the case when an entity has two fields ``intervalNumber`` and ``intervalUnit`` but you need to expose them
+in API as ``number`` and ``unit`` properties of ``interval`` field. To achieve it, use one of the following
+configurations:
 
 .. code-block:: yaml
 
@@ -261,7 +264,53 @@ Sometimes it is required to group several fields and expose them as a nested obj
                     intervalUnit:
                         exclude: true
 
-Please note that an entity, in this example *Oro\\Bundle\\ReminderBundle\\Entity\\Reminder*, should have ``setInterval`` method. This method is called by :ref:`create <create-action>` and :ref:`update <update-action>` actions to set the nested object.
+Please note that in this case an entity, in this example *Oro\\Bundle\\ReminderBundle\\Entity\\Reminder*, should have
+``setInterval(ReminderInterval $interval)`` method. This method is called by :ref:`create <create-action>`
+and :ref:`update <update-action>` actions to set the nested object. If an entity does not have this method,
+the following alternative configuration with the ``inherit_data`` form option can be used:
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Oro\Bundle\ReminderBundle\Entity\Reminder:
+                fields:
+                    interval:
+                        data_type: nestedObject
+                        form_options:
+                            inherit_data: true
+                        fields:
+                            number:
+                                property_path: intervalNumber
+                            unit:
+                                property_path: intervalUnit
+                    intervalNumber:
+                        exclude: true
+                    intervalUnit:
+                        exclude: true
+
+To make a nested object read-only the ``mapped`` form option can be used, for example:
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Oro\Bundle\ReminderBundle\Entity\Reminder:
+                fields:
+                    interval:
+                        data_type: nestedObject
+                        form_options:
+                            inherit_data: true
+                            mapped: true
+                        fields:
+                            number:
+                                property_path: intervalNumber
+                            unit:
+                                property_path: intervalUnit
+                    intervalNumber:
+                        exclude: true
+                    intervalUnit:
+                        exclude: true
 
 Here is an example how the nested objects looks in JSON:API:
 
@@ -290,16 +339,16 @@ Sometimes a relationship with a group of entities is implemented as two fields, 
 .. code-block:: yaml
 
     api:
-    entities:
-        Oro\Bundle\OrderBundle\Entity\Order:
-            fields:
-                source:
-                    data_type: nestedAssociation
-                    fields:
-                        __class__:
-                            property_path: sourceEntityClass
-                        id:
-                            property_path: sourceEntityId
+        entities:
+            Oro\Bundle\OrderBundle\Entity\Order:
+                fields:
+                    source:
+                        data_type: nestedAssociation
+                        fields:
+                            __class__:
+                                property_path: sourceEntityClass
+                            id:
+                                property_path: sourceEntityId
 
 Here is an example how the nested association looks in JSON:API:
 
@@ -629,25 +678,25 @@ The following steps describe how to create such API resources:
     .. code-block:: yaml
 
         api:
-          entity_aliases:
-              Acme\Bundle\AppBundle\Api\Model\Account:
-                  alias: registeraccount
-                  plural_alias: registeraccount
-          entities:
-              Acme\Bundle\AppBundle\Api\Model\Account:
-                  fields:
-                      name:
-                          data_type: string
-                          description: The user name
-                          form_options:
-                              constraints:
-                                  - NotBlank: ~
-                  actions:
-                      create:
-                          description: Register a new account
-                      get: false
-                      update: false
-                      delete: false
+            entity_aliases:
+                Acme\Bundle\AppBundle\Api\Model\Account:
+                    alias: registeraccount
+                    plural_alias: registeraccount
+            entities:
+                Acme\Bundle\AppBundle\Api\Model\Account:
+                    fields:
+                        name:
+                            data_type: string
+                            description: The user name
+                            form_options:
+                                constraints:
+                                    - NotBlank: ~
+                    actions:
+                        create:
+                            description: Register a new account
+                        get: false
+                        update: false
+                        delete: false
 
 
 3. Register a route in the ``Resources/config/oro/routing.yml`` configuration file in your bundle using the ``Oro\Bundle\ApiBundle\Controller\RestApiController::itemWithoutIdAction`` as a controller, e.g.,:
