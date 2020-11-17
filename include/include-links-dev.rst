@@ -5371,3 +5371,10 @@ Links (Dev)
 
    <a href="https://github.com/snc/SncRedisBundle/blob/3.2.2/Resources/doc/index.md#usage" target="_blank">Define a new client</a>
 
+.. |Cookie secure configuration| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/reference/configuration/framework.html#cookie-secure" target="_blank">cookie secure configuration</a>
+
+.. |nginx_cookie_flag_module| raw:: html
+
+   <a href="https://github.com/AirisX/nginx_cookie_flag_module" target="_blank">nginx_cookie_flag_module</a>
