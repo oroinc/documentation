@@ -46,7 +46,6 @@ Before you proceed, consider watching the following media library tutorials:
    Orders <orders/index>
    Quotes <quotes/index>
    Quick Order Form <quick-order-form>
-   Shopping Lists <shopping-lists/index>
    Checkout <checkout/index>
    Cookie Consent Banner <cookie-consent-banner/index>
 

@@ -9,18 +9,13 @@
 Configure Global Shopping List Settings
 =======================================
 
-Guest Shopping Lists
---------------------
+In the Shopping List section of Commerce configuration settings, you to set various options for a shopping list, control whether to let unregistered customers purchase goods in the store, set the number of shopping lists allowed per customer, enable a shopping list section under the My Account menu, and more.
 
-You control whether to let unregistered customers purchase goods in the store by enabling or disabling :ref:`shopping lists <frontstore-guide--shopping-lists>`. This can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales-shopping-list-per-organization>` and :ref:`website <user-guide--system-configuration--commerce-sales-shopping-list-per-website>`.
-
-By default, guest shopping lists are disabled. In addition, only 1 shopping list is available for guest customers.
+This can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales-shopping-list-per-organization>`, and :ref:`website <user-guide--system-configuration--commerce-sales-shopping-list-per-website>`.
 
 .. note:: Please note that website settings override organization, organization settings override system settings.
 
-.. begin
-
-To enable guest shopping lists globally:
+To set the shopping list globally:
 
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Sales > Shopping List** in the menu to the left.
@@ -28,15 +23,15 @@ To enable guest shopping lists globally:
    .. note::
      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user/img/system/config_commerce/sales/ShopListGlobal.png
+   .. image:: /user/img/system/config_commerce/sales/global_shopping_list_settings.png
       :alt: Global shopping list configuration settings
+
+   .. note:: To update any of the options, clear *Use Default* check box first.
 
 3. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
 4. In the **Guest Shopping List** section, define the following options:
 
-   .. note:: To update any of the options, clear *Use Default* check box first.
-
-   * **Enable Guest Shopping List** --- Set whether guests are allowed to create and manage shopping lists. By default, guest shopping lists are disabled.
+   * **Enable Guest Shopping List** --- Set whether guests are allowed to create and manage shopping lists. By default, guest shopping lists are disabled. In addition, only 1 shopping list is available for guest customers.
 
    * **Create Guest Shopping Lists Immediately** --- Enable this option to automatically create shopping lists for all guest users once they access the storefront. By default, this option is disabled and shopping lists are created only when guest users add at least one item to their shopping list.
 
@@ -44,37 +39,22 @@ To enable guest shopping lists globally:
 
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest shopping lists, adjust permissions for the shopping list entity in their roles accordingly.
 
-6. Click **Save Settings**.
+6. In the **Shopping List Options** section, set the following options:
 
-.. finish
+   * **Enable Mass Adding On Product Listing** --- The options controls whether customer and guest users are allowed to mass select and add items to the shopping list in the storefront.
 
-.. _user-guide--system-configuration--commerce-sales-shopping-list--mass-action--global:
+|
 
-Mass Product Actions
---------------------
+   .. hint:: The features below are available since OroCommerce v4.1.10. To check which application version you are running, see the :ref:`system information <system-information>`.
 
-In OroCommerce, you can control whether customer and guest users can select and add multiple products to a shopping list in the storefront. This can be enabled on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales-shopping-list--mass-action--organization>` and :ref:`per website <user-guide--system-configuration--commerce-sales-shopping-list--mass-action--website>`.
+   * **Maximum Line Items Per Page** --- The maximum shopping list line items that can be displayed per page. If the number of shopping list line items exceeds this value, then the "All" value, in the list of pagination dropdown values, is changed to the one specified in the option.
 
-To enable mass product actions globally:
+   * **Show All Lists In Shopping List Widget** --- The option defines which shopping lists a customer user can view in the widget. If this option is enabled, the user can view all the shopping lists that they are allowed to access, besides their own. For instance, a user can own one shopping list, which is reflected in the Shopping List section under My Account, while the widget will display four shopping lists assigned to other users but available to view and edit by the selected user.
 
-1. Navigate to **System > Configuration** in the main menu.
-2. Select **Commerce > Sales > Shopping List** in the menu to the left.
+    .. image:: /user/img/system/config_commerce/sales/show_all_lists_in_widget.png
+       :alt: Illustration of the mentioned sample
 
-   .. note::
-      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
-
-   .. image:: /user/img/system/config_commerce/sales/MassProductActionsSListGlobal.png
-      :alt: Global mass product actions configuration
-
-3. In the **Shopping List Options** section, set whether customer users are allowed to mass select and add items to the shopping list.
-
-   By default, mass product actions are enabled.
-
-   To disable them, clear the *Use Default* and the *Enable Mass Adding on Product Listing* check boxes.
-
-4. Click **Save Settings**.
-
-.. finish_body
+7. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin

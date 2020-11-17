@@ -64,10 +64,11 @@ Shopping lists can be created using several flows.
 Duplicate the already existing shopping list to make multiple similar orders:
 
 1. Open a shopping list.
-2. Click **Duplicate List** on the left under the list of items.
-3. A copy of the shopping list will be created.
+2. Click the |IcMore| **More Options** menu at the end of the list header row.
+3. Click **Duplicate** from the dropdown list.
+4. A copy of the shopping list will be created.
 
-.. image:: /user/img/storefront/shopping_lists/DuplicateListFrontEndScreenShot.png
+.. image:: /user/img/storefront/shopping_lists/duplicate_shopping_list.png
 
 **Flow 7**
 
@@ -123,7 +124,7 @@ While adding a product to a shopping list, click |IcChevronDown| to view a list 
 
 To edit the shopping list name from within its view page:
 
-1. Clicking |IcEditInline| next to the shopping list name.
+1. Click the |IcMore| **More Options** menu at the end of the list header row and then click |IcEdit| **Rename**.
 
 .. image:: /user/img/storefront/shopping_lists/SHEditName.png
 
@@ -133,23 +134,21 @@ To edit the shopping list name from within its view page:
 
 To delete the shopping list:
 
-1. Click |IcDelete| Delete.
+1. Click the |IcMore| **More Options** menu at the end of the list header row and then |IcDelete| Delete.
 2. Confirm the deletion by clicking **Yes, Delete** in the confirmation window.
 
 .. image:: /user/img/storefront/shopping_lists/SHDelete.png
 
 To create an order from the shopping list:
 
-1. Click **Create Order** at the bottom of the view page.
-2. Click **Create Order** on the top right of the view page.
+1. Click **Create Order** in the **Summary** section of the shopping list page.
 
 .. image:: /user/img/storefront/shopping_lists/SHCreateOrder.png
 
 To create a request for quote from the shopping list:
 
-1. Click **Request Quote** on the top right of the view page.
-2. Click |ICChevronDown| next to the **Create Order** button on the bottom of the view page.
-3. Click **Request Quote**.
+1. Click |ICChevronDown| next to the **Create Order** button in the **Summary** section of the shopping list page.
+2. Click **Request Quote**.
 
 .. include:: /include/include-images.rst
    :start-after: begin

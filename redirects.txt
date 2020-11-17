@@ -40,3 +40,6 @@ backend/architecture/tech-stack/search-index/orm-search-engine /backend/bundles/
 cloud/architecture /cloud/architecture/index
 api/using /api/
 backend/entities/customize-datagrids /backend/entities/customize-datagrids
+user/storefront/shopping-lists/index /user/storefront/account/shopping-lists/index
+user/storefront/shopping-lists/guests /user/storefront/account/shopping-lists/guests
+user/storefront/shopping-lists/registered /user/storefront/account/shopping-lists/registered

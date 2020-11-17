@@ -20,6 +20,7 @@ Your account menu has the following sections:
 * :ref:`Address Book <frontstore-guide--address>` -- stores both your company and personal addresses.
 * :ref:`Users <frontstore-guide--users-roles>` --  lists all your team members along with other employees of your company and their personal contact information.
 * :ref:`Roles <frontstore-guide-roles>` -- enables to view and edit all predefined roles available in the system. The visibility of this section depends on the permissions assigned to your customer user role.
+* :ref:`Shopping Lists <shopping-lists-storefront>` -- stores all the information about current shopping lists that the customer user has access to.
 * :ref:`Requests for Quote <frontstore-guide--rfq>` -- enables to view all the submitted RFQs, check their statuses, print or cancel them.
 * :ref:`Order History <my-account-order-history>` -- stores the information on all your orders both open and already submitted.
 * :ref:`Previously Purchased <frontstore-guide--previously-purchased>` -- lists all items you bought from the store in the past. By default, previously purchased products are sorted by recency with the newest items displayed first. The visibility of this section depends on the configuration of a particular website.
@@ -35,6 +36,7 @@ Your account menu has the following sections:
    Address Book <address-book/index>
    Users <users/index>
    Roles <roles/index>
+   Shopping Lists <shopping-lists/index>
    Requests for Quote <rfq/index>
    Order History <order-history>
    Previously Purchased Products <previously-purchased/index>
