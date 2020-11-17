@@ -26,6 +26,4 @@ The application setup guides provide the details on how to configure the environ
    launch
    upgrade-to-new-version
    reinstall
-
-
-
+   protect-cookies
