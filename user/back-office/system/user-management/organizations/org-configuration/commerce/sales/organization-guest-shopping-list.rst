@@ -6,7 +6,9 @@
 Configure Shopping List Settings per Organization
 =================================================
 
-In the Shopping List section of Commerce configuration settings, you can control the shopping list limit, guest shopping lists and their owners and mass product actions.
+In the Shopping List section of Commerce configuration settings, you to set various options for a shopping list, control whether to let unregistered customers purchase goods in the store, set the number of shopping lists allowed per customer, enable a shopping list section under the My Account menu, and more.
+
+This can be configured on three levels -- :ref:`globally <configuration-shopping-list>`, per organization, and :ref:`website <user-guide--system-configuration--commerce-sales-shopping-list-per-website>`.
 
 To configure them per organization:
 
@@ -17,33 +19,37 @@ To configure them per organization:
    .. note::
         For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user/img/system/user_management/org_configuration/sales/ShopListOrg.png
+   .. image:: /user/img/system/user_management/org_configuration/sales/shopping_list_org_config.png
       :alt: Shopping list configuration per organization
 
-4. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
+4. Clear the **Use System** check box to change the global setting.
+5. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
+6. In the **Guest Shopping List** section, define the following options:
 
-5. In the **Guest Shopping List** section, set whether guests are allowed to create and manage shopping lists.
+   * **Enable Guest Shopping List** --- Set whether guests are allowed to create and manage shopping lists. By default, guest shopping lists are disabled. In addition, only 1 shopping list is available for guest customers.
 
-   By default, guest shopping lists are disabled.
+   * **Create Guest Shopping Lists Immediately** --- Enable this option to automatically create shopping lists for all guest users once they access the storefront. By default, this option is disabled and shopping lists are created only when guest users add at least one item to their shopping list.
 
-   To enable guest shopping lists, clear *Use System* and select the *Enable Guest Shopping List* check box.
-
-   When the guest shopping lists is enabled, click **Save Settings** to display the additional **Guest Shopping List Owner Settings** section.
-
-6. In the **Guest Shopping List Owner Settings** section, select the user who will be the default owner of all guest shopping lists. Depending on the roles and permissions of the owner, guest shopping lists may or may not be viewed and managed by the users who are subordinated to the owner.
+7. In the **Guest Shopping List Owner Settings** section, select the user who will be the default owner of all guest shopping lists. Depending on the roles and permissions of the owner, guest shopping lists may or may not be viewed and managed by the users who are subordinated to the owner.
 
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest shopping lists, adjust permissions for the shopping list entity in their roles accordingly.
 
-7. In the **Shopping List Options** section, set whether customer users are allowed to mass select and add items to the shopping list.
+8. In the **Shopping List Options** section, set the following options:
 
-   By default, mass product actions are enabled.
+   * **Enable Mass Adding On Product Listing** --- The options controls whether customer and guest users are allowed to mass select and add items to the shopping list in the storefront.
 
-   To disable them, clear the *Use System* and the *Enable Mass Adding on Product Listing* check boxes.
+|
 
-8. Click **Save Settings**.
+   .. hint:: The features below are available since OroCommerce v4.1.10. To check which application version you are running, see the :ref:`system information <system-information>`.
 
-.. note:: When **Use System** check box is enabled, :ref:`system settings <user-guide--system-configuration--commerce-sales-shopping-list-global>` are applied.
+   * **Maximum Line Items Per Page** --- The maximum shopping list line items that can be displayed per page. If the number of shopping list line items exceeds this value, then the "All" value, in the list of pagination dropdown values, is changed to the one specified in the option.
+
+   * **Show All Lists In Shopping List Widget** --- The option defines which shopping lists a customer user can view in the widget. If this option is enabled, the user can view all the shopping lists that they are allowed to access, besides their own. For instance, a user can own one shopping list, which is reflected in the Shopping List section under My Account, while the widget will display four shopping lists assigned to other users but available to view and edit by the selected user.
+
+    .. image:: /user/img/system/config_commerce/sales/show_all_lists_in_widget.png
+       :alt: Illustration of the mentioned sample
+
+9. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin
-
