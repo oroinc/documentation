@@ -18,6 +18,8 @@ Resources of the OroCloud environment are isolated in the dedicated Google Cloud
 * `Application subnet`_
 * `Maintenance DMZ subnet`_
 
+.. important:: Please do not change subfolders' permissions using either SFTP client or application PHP code, all subfolders must be created only via SFTP client.
+
 The following diagram illustrates the network segmentation of a typical Oro application deployment in OroCloud environment:
 
 .. image:: /cloud/img/production_network_highlevel_public_diagram.png
