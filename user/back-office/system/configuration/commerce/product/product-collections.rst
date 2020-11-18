@@ -30,10 +30,15 @@ To change the default product collections indexation frequency:
      a) Clear the **Use Default** box next to the option.
      b) Select the desired frequency from the list.
 
-4. To set the limit for mass actions:
+4. In the **Mass Action Limit** option, you can set the limited number of products that can be handled (added, deleted) using mass action. The option is only applicable to product collections (e.g., in web catalogs), and it does not refer to mass actions of other entities (e.g., products, customers, leads, etc). Keep in mind that this option is merely advisory, and it only notifies a user of the exceeded mass action limit. But you can force your action, going beyond the limit, if needed.
 
-     a) Clear the **Use Default** box next to the option.
-     b) Specify the limited number of products that can be handled when using mass action.
+    .. image:: /user/img/system/config_commerce/product/mass_action_limit_confirmation.png
+       :alt: Confirmation dialog that appears if a user exceeds the mass action limit
+
+    To set the limit for mass actions:
+
+       a) Clear the **Use Default** box next to the option.
+       b) Specify the number of products in product collections that can be handled when using mass action.
 
 5. To enable partial indexation only for products that were added to or removed from the collection.
 
