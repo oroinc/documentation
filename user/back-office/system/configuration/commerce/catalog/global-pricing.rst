@@ -24,6 +24,11 @@ Global pricing configuration helps you:
 
 .. note:: The :ref:`website level <sys--website--edit--price-lists>` configuration has higher priority and overrides these configuration settings. :ref:`Customer group <customers--customer-groups--edit--price-lists>` configuration overrides configuration on the website level. Custom configuration on the :ref:`customer level <customers--customer-groups--edit--price-lists>` has the highest priority.
 
+.. important:: Please, be aware that the configuration settings described below are for the default pricing feature (combined price list pricing) that comes out-of-the-box with your OroCommerce application. If you have :ref:`flat pricing configured for the whole application <dev-guide-setup-flat-pricing>` (a simple pricing engine without strategies and merges), then the configuration page will have only Display Currency, Price Rounding, and General/Price List Settings. Flat pricing is also available on :ref:`organization <configuration--guide--commerce--configuration--catalog--pricing--organization>` and :ref:`website <pricing-currency-website>` levels. :ref:`Flat pricing is enabled <dev-guide-setup-flat-pricing>` by your system administrator via the console, not the UI.
+
+            .. image:: /user/img/system/config_commerce/catalog/flat-pricing-enabed-config.png
+               :alt: Pricing configuration page when flat pricing is enabled
+
 To change the default global pricing settings:
 
 1. Navigate to **System > Configuration** in the main menu.

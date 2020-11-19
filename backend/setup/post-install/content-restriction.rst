@@ -1,7 +1,7 @@
 .. _dev-guide-setup-content-restrictions:
 
-Post-Installation: Content Restrictions
-=======================================
+Lift Default Content Restrictions
+=================================
 
 Out-of-the-box, all OroCommerce users can enter only safe content in the WYSIWYG fields from the application UI. OroCommerce uses content restrictions to ensure that the content displayed in the UI is secure and that users cannot embed unsecure markup.
 

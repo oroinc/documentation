@@ -7,7 +7,7 @@ Price Management Concept Guide
 
 :ref:`Price list <user-guide--pricing--pricelist--management>` management is one of the most important aspects of any e-commerce business and even more so for Business to Business (B2B) e-commerce companies. This is why OroCommerce provides advanced features that enable you to easily set up and customize different price lists for specific customers, customer groups, and websites. You can build aggregated price lists with any amount of price points, :term:`price tiers <Tier Price>`, or currencies.
 
-Overall, price management enables you to:
+Overall, OroCommerce price management enables you to:
 
 * Set up flexible product prices for different websites, customer groups, and customers.
 * Assign prices for newly added products automatically.
@@ -21,6 +21,13 @@ Once you sign a contract with Customer A under the terms of providing them a 20%
 You can also have a separate price list for the Wholesalers customer group that displays the prices with a 10% discount. All wholesale customers (e.g., Company B, C, D) who belong to this group can purchase the *Lumen Headlamp* product for $90. By introducing loyalty programs and giving extra discounts to your Platinum, Gold, or Silver wholesale customers, they can purchase the same item for $75, $80, and $85 respectively.
 
 You can also have one or multiple price lists with prices entered in US dollars and Euros defining the pricing for all your customers, a different price list with prices in US dollars available only to your large-volume US-based distributors, and another price list with prices in Euros available only to some selected European partners of your company.
+
+Flat VS Combined Pricing
+------------------------
+
+OroCommerce comes with a powerful Combined Price List (CPL) functionality fit for the needs of large B2B businesses, equipped with multiple price lists, pricing strategies, price fallbacks, and price merges. However, if your operate a small-scale business and don't need complex pricing, or use an external third-party pricing system, such as an ERP, to generate and manage prices outside of OroCommerce, you can switch from the default CPL pricing to a simpler flat pricing. This is usually done as part of :ref:`application post-install configuration activities <dev-guide-setup-flat-pricing>` by a system administrator. If flat pricing is configured for the whole application, prices are fetched directly from the pride lists without complex pricing strategies and merges. If prices are absent for a certain product in the price list, the price is either absent for it in the storefront, or, if another price list is available, taken from the level higher, following the :ref:`standard price list fallback sequence <price-lists-fallback-config>`. Unlike CPL configuration, which is available on global and website levels, flat pricing configuration is available on :ref:`global <sys--config--commerce--catalog--pricing>`, :ref:`organization <configuration--guide--commerce--configuration--catalog--pricing--organization>` and :ref:`website <pricing-currency-website>` levels.
+
+The sections below are going to discuss the default CPL functionality that comes with OroCommerce out-of-the-box.
 
 .. _price-selection-strategy-differences:
 
@@ -204,6 +211,7 @@ Best Practices
 * Do not create separate price lists for one product - combine them together instead
 * Do not create rules for fixed values - create fixed prices instead
 * Do not create rules to substitute fallbacks - use actual fallbacks
+
 
 **Related Articles**
 
