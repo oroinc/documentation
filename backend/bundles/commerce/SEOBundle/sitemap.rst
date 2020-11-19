@@ -227,7 +227,7 @@ the following configuration of the web server:
 .. code-block:: none
    :linenos:
 
-   RewriteRule ^robots.txt /media/sitemaps/your_domain.com.txt [L]
+   RewriteRule ^robots.txt /media/sitemaps/robots.your_domain.com.txt [L]
 
 - for nginx web server, add the following configuration:
 
@@ -235,7 +235,7 @@ the following configuration of the web server:
    :linenos:
 
     location /robots.txt {
-        alias /media/sitemaps/your_domain.com.txt;
+        alias /media/sitemaps/robots.your_domain.com.txt;
     }
 
 For the default website, the robots txt file is also dumped to the root of the public directory if the dump command has permissions to write to the `public/robots.txt` file.
