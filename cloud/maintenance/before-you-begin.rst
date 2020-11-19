@@ -54,6 +54,8 @@ Here are a few tips for troubleshooting of the problems when establishing connec
 Manage Uploaded Data
 ^^^^^^^^^^^^^^^^^^^^
 
+.. important:: Please do not change subfolders' permissions using either SFTP client or application PHP code, all subfolders must be created only via SFTP client.
+
 Once you uploaded data to you SFTP directory, you may need to move it to the destination location on your website.
 OroCloud maintenance agent supports the `media:upload` command for data transfer between your SFTP directory and your OroCommerce website. You can find a detailed description and usage examples :ref:`in the Media Upload <orocloud-maintenance-use-media-upload>` section of the OroCloud guide.
 
