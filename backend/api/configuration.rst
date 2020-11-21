@@ -45,8 +45,8 @@ The default nesting level is ``3`` . It is specified in the configuration of Api
 
 The first level sections of configuration are:
 
--  :ref:`entity_aliases <entity-aliases-config>` - allows overriding entity aliases.
--  :ref:`entities <entities-config>` - describes the configuration of entities.
+-  `entity_aliases <#entity-aliases-configuration-section>`__ - allows overriding entity aliases.
+-  `entities <#entities-configuration-section>`__ - describes the configuration of entities.
 
 The top level configuration example:
 
@@ -125,7 +125,7 @@ Please note that the ``exclude`` option is applicable only for the API. To exclu
             # exclude field1 of Acme\Bundle\AcmeBundle\Entity\Entity2 entity
             - { entity: Acme\Bundle\AcmeBundle\Entity\AcmeEntity2, field: field1 }
 
-.. _entity-aliases-config:
+.. _web-api--entity-aliases-config:
 
 `entity\_aliases` Configuration Section
 ---------------------------------------
@@ -191,7 +191,7 @@ To completely replace an ORM entity with a model in the API, use the ``override_
                     target:
                         data_type: association:manyToOne
 
-.. _entities-config:
+.. _web-api--entities-config:
 
 `entities` Configuration Section
 --------------------------------
@@ -273,14 +273,14 @@ By default, the following form options are set:
                     validation_groups: ['Default', 'api', 'my_group']
                 form_event_subscriber: acme.api.form_listener.test_entity
 
-.. _fields-configuration-section:
+.. _web-api--fields-config:
 
 `fields` Configuration Section
 ------------------------------
 
 This section describes configuration of entity fields.
 
-*  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the :ref:`"exclude" option <web-api--exclude-option>` section.
+*  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the `"exclude" option <#exclude-option>`__ section.
 
 *  **description** *string* - A human-readable description of the field or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
 
@@ -402,7 +402,7 @@ This section describes fields by which the result data can be filtered. It conta
 
    -  **exclude** *boolean* - Indicates whether filtering by this field should be disabled. By default ``false``.
    -  **description** *string* - A human-readable description of the filter or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
-   -  **property\_path** *string* - The property path to reach the fields' value. The same way as above in :ref:`fields <fields-configuration-section>` configuration section.
+   -  **property\_path** *string* - The property path to reach the fields' value. The same way as above in `fields <#fields-configuration-section>`__ configuration section.
    -  **data\_type** *string* - The data type of the filter value. Can be ``boolean``, ``integer``, ``string``, etc.
    -  **allow\_array** *boolean* - Indicates whether the filter can contains several values. By default, ``false`` for ``string``, ``boolean``, ``datetime``, ``date``, ``time`` fields, and ``true`` for other fields.
    -  **allow\_range** *boolean* - Indicates whether the filter can contains a pair of ``from`` and ``to`` values. By default, ``false`` for ``string``, ``boolean``, ``guid``, ``currency`` fields, and ``true`` for other fields.
@@ -460,7 +460,7 @@ This section describes fields by which the result data can be sorted. It contain
    This section describes a configuration of each field that can be used to sort the result data. Each sorter can have the following properties:
 
    -  **exclude** *boolean* - Indicates whether sorting by this field should be disabled. By default ``false``.
-   -  **property\_path** *string* - The property path to reach the fields' value. See the description of the property in the :ref:`fields <fields-configuration-section>` configuration section.
+   -  **property\_path** *string* - The property path to reach the fields' value. See the description of the property in the `fields <#fields-configuration-section>`__ configuration section.
 
 **Example:**
 
@@ -513,12 +513,12 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 *  **status\_codes** *array* - The possible response status codes for the action.
 
-   *  **exclude** *boolean* - Indicates whether the status code should be excluded for a particular action. This property is described above in :ref:`"exclude" option <web-api--exclude-option>` section.
+   *  **exclude** *boolean* - Indicates whether the status code should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__ section.
    *  **description** *string* - A human-readable description of the status code. Used in auto-generated documentation only.
 
 *  **fields** - This section describes entity fields' configuration specific for a particular action.
 
-   *  **exclude** *boolean* - Indicates whether the field should be excluded for a particular action. This property is described above in :ref:`"exclude" option <web-api--exclude-option>` section.
+   *  **exclude** *boolean* - Indicates whether the field should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__ section.
    *  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path, e.g. ``user.firstName``. Each property name must be equal to the name of existing property of an entity. The ``_`` value can be used if a field value is not mapped to any property of an entity, e.g. for computed fields.
    *  **direction** *string* - Indicates whether the field is input-only, output-only or bidirectional. The input-only means that the request data can contain this field, but the response data cannot. The output-only means that the response data can contain this field, but the request data cannot. The bidirectional is the default behaviour and means that both the request data and the response data can contain this field.
    *  **form\_type** *string* - The form type that should be used for the field.
