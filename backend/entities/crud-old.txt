@@ -171,7 +171,7 @@ becomes really slim. It basically just needs to return the name of the grid:
          * @Acl(
          *     id="inventory.vehicle_view",
          *     type="entity",
-         *     class="InventoryBundle:Vehicle",
+         *     class="InventoryBundle\Entity\Vehicle",
          *     permission="VIEW"
          * )
          */
@@ -247,7 +247,7 @@ name of a datagrid that will be looked up from a file called ``datagrids.yml`` i
                         - v.boughtAt
                         - v.leasedUntil
                     from:
-                        - { table: InventoryBundle:Vehicle, alias: v }
+                        - { table: InventoryBundle\Entity\Vehicle, alias: v }
             columns:
                 model:
                     label: Model
@@ -456,7 +456,7 @@ create a dedicated method that is handling the form submission:
          * @Acl(
          *     id="inventory.vehicle_create",
          *     type="entity",
-         *     class="InventoryBundle:Vehicle",
+         *     class="InventoryBundle\Entity\Vehicle",
          *     permission="CREATE"
          * )
          */
@@ -471,7 +471,7 @@ create a dedicated method that is handling the form submission:
          * @Acl(
          *     id="inventory.vehicle_update",
          *     type="entity",
-         *     class="InventoryBundle:Vehicle",
+         *     class="InventoryBundle\Entity\Vehicle",
          *     permission="EDIT"
          * )
          */

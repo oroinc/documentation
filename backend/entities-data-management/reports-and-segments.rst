@@ -41,7 +41,7 @@ following example:
                         - SUM(o.closeRevenue) as value
                         - COUNT(o.id) as cnt
                     from:
-                        - { table: OroCRMSalesBundle:Opportunity, alias: o }
+                        - { table: Oro\Bundle\SalesBundle\Entity\Opportunity, alias: o }
                     join:
                         inner:
                             - { join: o.status, alias: s }

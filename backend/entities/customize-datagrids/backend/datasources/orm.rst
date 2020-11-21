@@ -131,7 +131,7 @@ The following example shows how |Doctrine query hints| can be set:
                     select:
                         - partial g.{id, label}
                     from:
-                        - { table: OroContactBundle:Group, alias: g }
+                        - { table: Oro\Bundle\ContactBundle\Entity\Group, alias: g }
                 hints:
                     - HINT_FORCE_PARTIAL_LOAD
 

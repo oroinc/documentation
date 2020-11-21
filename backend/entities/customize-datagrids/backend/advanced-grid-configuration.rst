@@ -37,7 +37,7 @@ This param will be passed to the datagrid parameter bag and will be bound to the
                     select:
                         - u
                     from:
-                        { table: AcmeDemoBundle:User, alias:u }
+                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
                 where:
                     and:
                         - u.group = :groupId
@@ -78,7 +78,7 @@ To solve this problem, we have to modify the query. We are going to add an addit
                                   THEN true ELSE false END
                              END) as isAssigned
                     from:
-                        { table: AcmeDemoBundle:User, alias:u }
+                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
                 bind_parameters:
                     - groupId
             columns:
@@ -154,7 +154,7 @@ The next step is to modify the query. We are going to add an additional field ``
                         - u.username
                         - CASE WHEN u.enabled = true THEN 'enabled' ELSE 'disabled' END as enabled
                     from:
-                        { table: AcmeDemoBundle:User, alias:u }
+                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
                 bind_parameters:
                     - groupId
             options:
@@ -447,7 +447,7 @@ There are several ways to configure these messages.
                          - u.id
                          - u.username
                      from:
-                         { table: AcmeDemoBundle:User, alias:u }
+                         { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
              options:
                  entityHint: oro.user.entity_plural_label
 
@@ -469,7 +469,7 @@ There are several ways to configure these messages.
                           - u.id
                           - u.username
                       from:
-                          { table: AcmeDemoBundle:User, alias:u }
+                          { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
           options:
          ...
 
@@ -491,7 +491,7 @@ There are several ways to configure these messages.
                          - u.id
                          - u.username
                      from:
-                         { table: AcmeDemoBundle:User, alias:u }
+                         { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
          options:
              noDataMessages:
                  emptyGrid: acme.my_custom_empty_grid_message

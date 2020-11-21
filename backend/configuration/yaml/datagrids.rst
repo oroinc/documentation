@@ -432,7 +432,7 @@ all parts of the Doctrine query:
 
     ``table`` (**type**: ``string``)
 
-        The name of the entity, you can the ``BundleName:EntityName`` notation (for example,
+        The entity class name or the entity alias in the ``BundleName:EntityName`` notation (for example,
         ``AcmeDemoBundle:User``).
 
     ``alias`` (**type**: ``string``)

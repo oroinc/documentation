@@ -11,7 +11,7 @@ datagrids:
                     - acme_cms_block.id
                     - acme_cms_block.title
                 from:
-                    - { table: 'ACMECMSBundle:Block', alias: acme_cms_block }
+                    - { table: ACME\Bundle\CMSBundle\Entity\Block, alias: acme_cms_block }
         columns:
             id:
                 label: acme.cms.block.id.label

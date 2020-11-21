@@ -150,7 +150,7 @@ Below is an example of such handler:
         foreach ($changeSet as $item) {
             /** @var Customer $customer */
             $customer = $item['entity'];
-            $productVisibility = $this->manager->getRepository('OroB2BCustomerBundle:CustomerProductVisibility')
+            $productVisibility = $this->manager->getRepository(CustomerProductVisibility::class)
                 ->findOneBy(['product' => $product, 'customer' => $customer]);
 
             if (!$productVisibility) {

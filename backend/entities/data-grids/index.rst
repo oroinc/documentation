@@ -41,7 +41,7 @@ to be displayed in the grid:
                         - task.dueDate
                         - priority.label AS taskPriority
                     from:
-                        - { table: AppBundle:Task, alias: task }
+                        - { table: Acme\Bundle\AppBundle\Entity\Task, alias: task }
                     join:
                         left:
                             - { join: task.priority, alias: priority }
@@ -165,7 +165,7 @@ The final datagrid configuration now looks like this:
                         - task.dueDate
                         - priority.label AS taskPriority
                     from:
-                        - { table: AppBundle:Task, alias: task }
+                        - { table: Acme\Bundle\AppBundle\Entity\Task, alias: task }
                     join:
                         left:
                             - { join: task.priority, alias: priority }
@@ -341,7 +341,7 @@ Mixin is a datagrid that contains additional (common) information for use by oth
                 type: orm
                 query:
                     from:
-                        { table: AcmeDemoBundle:User, alias:u }
+                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
 
 **Related Articles**
 

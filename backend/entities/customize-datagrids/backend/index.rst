@@ -58,12 +58,12 @@ You use any arbitrary method that returns a valid ``Doctrine\ORM\QueryBuilder`` 
         // ....
 
         /**
-        * @return Doctrine\ORM\QueryBuilder
+        * @return QueryBuilder
         */
         public function getUsersQb()
         {
             return $this->em->createQueryBuilder()
-                ->from('AcmeDemoBundle:User', 'u')
+                ->from(User::class, 'u')
                 ->select('u')
                 // ->where(...)
                 // ->join(...)
@@ -101,7 +101,7 @@ If datasource supports parameters binding, you can specify an additional option 
                     select:
                         - u
                     from:
-                        { table: AcmeDemoBundle:User, alias:u }
+                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
                 where:
                     and:
                         - u.group = :group_id
@@ -154,8 +154,8 @@ So lets define few columns:
                 query:
                     select: [ o.firstName, o.lastName, o.age ]
                     from:
-                        - { table: AcmeDemoBundle:Entity, alias: o } #defining table class using FQCN
-    #                    - { table: '%acme_demo.entity.entity_name.class%', alias: o } #defining table class using parameter
+                        - { table: ACME\Bundle\DemoBundle\Entity\SomeEntity, alias: o } #defining table class using FQCN
+    #                    - { table: '%acme_demo.entity.some_entity.class%', alias: o } #defining table class using parameter
             columns:
                 firstName:                                   # data identifier will be taken from column name
                     label: acme.demo.grid.columns.firstName  # translation string

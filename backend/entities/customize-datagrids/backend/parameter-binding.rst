@@ -20,7 +20,7 @@ Configuration Syntax
                     select:
                         - u
                     from:
-                        { table: AcmeDemoBundle:User, alias:u }
+                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
                     where:
                         and:
                             - u.group = :group_id
@@ -43,7 +43,7 @@ If the name of parameters in the grid and the query do not match, you can pass a
                     select:
                         - u
                     from:
-                        { table: AcmeDemoBundle:User, alias:u }
+                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
                     where:
                         and:
                             - u.group = :group_id

@@ -25,7 +25,7 @@ Sorters setting should be placed under the `sorters` tree node.
                         - 2 as someAlias
                         - test.some_id as someField
                     from:
-                        - { table: SomeBundle:SomeEntity, alias: o }
+                        - { table: Acme\Bundle\AppBundle\Entity\SomeEntity, alias: o }
                     join:
                         left:
                             joinNameOne:

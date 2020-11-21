@@ -20,7 +20,7 @@ For example:
                     - g.id
                     - g.label
                 from:
-                    - { table: OroContactBundle:Group, alias: g }
+                    - { table: Oro\Bundle\ContactBundle\Entity\Group, alias: g }
 
         filters:
             columns:

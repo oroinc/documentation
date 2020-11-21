@@ -102,7 +102,7 @@ To manage the entity, we need to create a grid to display original and draft ent
 
 1. Create a grid for entities
 
-.. oro_integrity_check:: 15fe8669d284167fe71738bcc885177c5d584562
+.. oro_integrity_check:: 5e8b4c3957cd572e7e83faabbb03c93415f1b070
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
         :language: php
