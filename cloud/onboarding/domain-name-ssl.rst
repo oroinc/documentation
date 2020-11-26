@@ -27,7 +27,6 @@ For this option, Oro needs the following information to provision SSL certificat
 * Locality Name (e.g., city)
 * Organization Name (e.g., company)
 * Organizational Unit Name (e.g., section)
-* Common Name (e.g., YOUR name)
 * Email Address
 
 Once you provide this information and have DNS name added to your DNS record, Oro support team will provision, configure and bear full responsibility for renewing or updating the SSL certificate for your OroCloud site. During provisioning of SSL certificate, we will ask you to add TXT record to your DNS to confirm domain ownership.
