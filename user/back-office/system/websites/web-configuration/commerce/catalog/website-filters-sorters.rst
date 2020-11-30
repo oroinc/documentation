@@ -25,6 +25,18 @@ To configure filters and sorting options per website:
 
    * **Default Filter Panel State** - controls the visibility of the filters applied to the product grids in the storefront. The filter panel can be either expanded to show all filter bars or collapsed to reduce the screen space. In this case, the collapsed filters are substituted with the text representation of all applied filters.
 
+   * **Filter Panel Position** --- enables to select the required position of the filter bar in the storefront (applicable since OroCommerce v4.2.0. To check which application version you are running, see the :ref:`system information <system-information>`). There are two options available:
+
+     When *Top* (default) is selected, the filter bar is displayed on the top of the product listing page.
+
+     .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_top.png
+        :alt: The storefront product page illustrating the filter on the top of the product listing page
+
+     When *Sidebar* is selected, the filter is displayed in the left sidebar.
+
+     .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_sidebar.png
+        :alt: The storefront product page illustrating the filter in the left sidebar
+
 5. To change any of the options set on the organization level:
 
      a) Clear the **Use Organization** check box next to the option.
