@@ -121,8 +121,6 @@ To create a draft of the required landing page:
 
 3. An action confirmation popup displays the fields that are to be copied from the selected landing page to its draft (e.g., content, titles, metaTitles, metaDescriptions, metaKeywords). Click **Yes** to proceed and edit the draft.
 
-   Be aware that you do not need to edit the URL Slug. Once the draft is published, it keeps the URL Slug of the original landing page and not a new slug that you may create for the draft.
-
 .. image:: /user/img/marketing/landing_pages/landing_page_draft.png
    :alt: The edit page of the landing page draft
 
@@ -140,7 +138,7 @@ To create a draft of the required landing page:
 
 |
 
-6. To publish the draft, click |IcPublish| **Publish draft** on the top right of the draft's details page. Once the action is confirmed, the draft is published, substituting the original landing page. All the drafts previously created for this landing page are then deleted.
+6. To publish the draft, click |IcPublish| **Publish draft** on the top right of the draft's details page. Once the action is confirmed, the draft is published, substituting the original landing page. All the drafts previously created for this landing page remain unchanged under the **Drafts** section.
 
 
 
