@@ -82,6 +82,15 @@ To set the opacity of the text block and add its background color, use the **Dec
 .. image:: /user/img/concept-guides/content-management/decorations.png
    :alt: The detail settings in the Decorations section of the Style Manager Block
 
+Shift the Text to a New Line
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To move the text to a new line down, you can either press the **Enter** key or a combination of **Shift+Enter**.
+
+The difference between them is that when pressing **Enter**, you create a new paragraph, which puts a gap between two lines.
+
+The **Shift+Enter** combination does not indicate a new paragraph, that is why pressing **Shift+Enter** allows you to go one line down without creating any gaps between lines. This can also come in handy when creating a bulleted or numbered list. With **Shift+Enter**, you can move to the next line without creating a new bullet or number.
+
 Insert Multimedia
 ^^^^^^^^^^^^^^^^^
 
