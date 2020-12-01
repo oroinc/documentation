@@ -26,6 +26,10 @@ The following categories of settings are available for system configuration at o
     * :ref:`Currency <admin-configuration-currency-org>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
+  * Websites
+
+    * :ref:`Routing Settings <organization-config-website-routing>`
+
   * Integrations
 
     * :ref:`Google Settings <user-guide-hangouts-org>`

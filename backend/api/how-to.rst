@@ -265,7 +265,7 @@ Please note that an entity, in this example *Oro\\Bundle\\ReminderBundle\\Entity
 
 Here is an example how the nested objects looks in JSON:API:
 
-.. code-block::json
+.. code-block:: json
 
     {
       "data": {
@@ -303,7 +303,7 @@ Sometimes a relationship with a group of entities is implemented as two fields, 
 
 Here is an example how the nested association looks in JSON:API:
 
-.. code-block::json
+.. code-block:: json
 
     {
       "data": {
