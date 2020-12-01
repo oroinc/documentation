@@ -314,7 +314,7 @@ To make a nested object read-only the ``mapped`` form option can be used, for ex
 
 Here is an example how the nested objects looks in JSON:API:
 
-.. code-block::json
+.. code-block:: json
 
     {
       "data": {
@@ -352,7 +352,7 @@ Sometimes a relationship with a group of entities is implemented as two fields, 
 
 Here is an example how the nested association looks in JSON:API:
 
-.. code-block::json
+.. code-block:: json
 
     {
       "data": {

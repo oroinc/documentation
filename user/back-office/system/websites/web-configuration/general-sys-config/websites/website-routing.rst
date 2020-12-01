@@ -29,24 +29,25 @@ To change the default routing settings for the website:
 
 4. In the **General** section, define the following options:
 
-    * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
+   * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
 
-    * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
+   * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
 
-    * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
+   * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 
-        When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
+     When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
 
-        When *Direct URL* is selected, the page URL is built using the page title (e.g. `/500-watt-work-light`).
+     When *Direct URL* is selected, the page URL is built using the page title (e.g. `/500-watt-work-light`).
 
-        .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
+     .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
+
+   * **Prefer Self-Contained Web Catalog Canonical URLs** - When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types, if they are available. This option is disabled by default.
 
    * **Canonical URL Security Type** - this option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
 
-        When *Insecure* is selected, the website base URL in the canonical link matches the **URL** value.
+     When *Insecure* is selected, the website base URL in the canonical link matches the **URL** value.
 
-        When *Secure* is selected, the **Secure URL** value is used instead.
-
+     When *Secure* is selected, the **Secure URL** value is used instead.
 
    * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
 
@@ -57,10 +58,9 @@ To change the default routing settings for the website:
    .. image:: /user/img/system/websites/web_configuration/visible_content_node_website.png
       :alt: The selected sub-menu nodes that will be visible in the storefront.
 
-
 5. In **Website Matchers**, configure the following values to identify the visitors of your website through various tracking options:
 
-    .. image:: /user/img/system/config_system/website_matchers.png
+   .. image:: /user/img/system/config_system/website_matchers.png
 
    * **Cookie Value** - a unique website ID that is saved in the cookies and is later used by a website matcher to identify the website customer is on. The cookie name that is configured on the :ref:`system level <routing-website-matchers-global>` combined with the cookie value creates the unique parameter that will identify the required website.
 
@@ -70,8 +70,8 @@ To change the default routing settings for the website:
 
 6. To customize any of these options:
 
-     a) Clear the **Use Organization** box next to the option.
-     b) Select the new option.
+   a) Clear the **Use Organization** box next to the option.
+   b) Select the new option.
 
 7. Click **Save**.
 
