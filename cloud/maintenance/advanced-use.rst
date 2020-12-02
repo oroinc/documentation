@@ -154,6 +154,7 @@ Webserver configuration can be modified, as illustrated below:
         redirects_map:
           '/about_us_old': '/about'
           '/about_them_old': '/about_them'
+          '/news/new_event' : 'https://corpsite.com/events/newest'
         locations:
           'root':
             type: 'php'
