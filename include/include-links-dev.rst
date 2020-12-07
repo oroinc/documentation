@@ -5635,3 +5635,7 @@ Links (Dev)
 .. |nginx_cookie_flag_module| raw:: html
 
    <a href="https://github.com/AirisX/nginx_cookie_flag_module" target="_blank">nginx_cookie_flag_module</a>
+
+.. |download and view the Sketch file here| raw:: html
+
+   <a href="https://www.sketch.com/s/64628847-8616-403f-90f7-c95d6dde467c" target="_blank">download and view the Sketch file here</a>
