@@ -4,7 +4,7 @@ How to Replace a Logo and a Favicon in the Storefront
 =====================================================
 
 
-The following article describes how to replace logo and favicon images in your custom OroCommerce application.
+The following article describes how to replace logo and favicon images in your custom OroCommerce application. Please follow all the steps outlines below to replace the favicon and the logo.
 
 This topic assumes that you have previously created a custom application, a bundle, and a storefront theme, as described in the :ref:`Storefront Customization <storefront_customization_guide>` topic.
 
@@ -15,76 +15,57 @@ Replace Favicons
 
 1. Place new storefront favicon images into your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/favicons/``):
 
-    The main favicon image:
+   The main favicon image:
 
-    - Resources/public/default/favicons/favicon.ico
+   - Resources/public/default/favicons/favicon.ico
 
-    Additional favicon images and a |web app manifest file| with specified icons:
+   Additional favicon images and a |web app manifest file| with specified icons:
 
-    .. note:: For the detailed description of a purpose and role of additional favicons and the ``manifest.json`` file, check out an article on |Adding favicons in a multi-browser multi-platform world|.
+   .. note:: For the detailed description of a purpose and role of additional favicons and the ``manifest.json`` file, check out an article on |Adding favicons in a multi-browser multi-platform world|.
 
-    - Resources/public/default/favicons/apple-touch-icon-57x57.png
-    - Resources/public/default/favicons/apple-touch-icon-60x60.png
-    - Resources/public/default/favicons/apple-touch-icon-72x72.png
-    - Resources/public/default/favicons/apple-touch-icon-76x76.png
-    - Resources/public/default/favicons/apple-touch-icon-114x114.png
-    - Resources/public/default/favicons/apple-touch-icon-144x144.png
-    - Resources/public/default/favicons/apple-touch-icon-120x120.png
-    - Resources/public/default/favicons/apple-touch-icon-152x152.png
-    - Resources/public/default/favicons/apple-touch-icon-180x180.png
-    - Resources/public/default/favicons/favicon-32x32.png
-    - Resources/public/default/favicons/android-chrome-192x192.png
-    - Resources/public/default/favicons/favicon-96x96.png
-    - Resources/public/default/favicons/favicon-16x16.png
-    - Resources/public/default/favicons/manifest.json
-    - Resources/public/default/favicons/mstile-144x144.png
+   - Resources/public/default/favicons/apple-touch-icon-57x57.png
+   - Resources/public/default/favicons/apple-touch-icon-60x60.png
+   - Resources/public/default/favicons/apple-touch-icon-72x72.png
+   - Resources/public/default/favicons/apple-touch-icon-76x76.png
+   - Resources/public/default/favicons/apple-touch-icon-114x114.png
+   - Resources/public/default/favicons/apple-touch-icon-144x144.png
+   - Resources/public/default/favicons/apple-touch-icon-120x120.png
+   - Resources/public/default/favicons/apple-touch-icon-152x152.png
+   - Resources/public/default/favicons/apple-touch-icon-180x180.png
+   - Resources/public/default/favicons/favicon-32x32.png
+   - Resources/public/default/favicons/android-chrome-192x192.png
+   - Resources/public/default/favicons/favicon-96x96.png
+   - Resources/public/default/favicons/favicon-16x16.png
+   - Resources/public/default/favicons/manifest.json
+   - Resources/public/default/favicons/mstile-144x144.png
 
-    Example of a ``manifest.json`` file:
+   Example of a ``manifest.json`` file:
 
-    .. code-block:: json
-        :linenos:
+   .. code-block:: json
+       :linenos:
 
-        {
-            "name": "Acme Inc Storefront",
-            "short_name": "Acme Store",
-            "icons": [
-                {
-                    "src": "{{ site.baseurl }}/bundles/app/default/favicons/favicon-32x32.png",
-                    "sizes": "32x32",
-                    "type": "image/png"
-                },
-                {
-                    "src": "{{ site.baseurl }}/bundles/app/default/favicons/android-chrome-192x192.png",
-                    "sizes": "192x192",
-                    "type": "image/png"
-                }
-            ],
-            "start_url": "/",
-            "display": "standalone"
-        }
+       {
+           "name": "Acme Inc Storefront",
+           "short_name": "Acme Store",
+           "icons": [
+               {
+                   "src": "{{ site.baseurl }}/bundles/app/default/favicons/favicon-32x32.png",
+                   "sizes": "32x32",
+                   "type": "image/png"
+               },
+               {
+                   "src": "{{ site.baseurl }}/bundles/app/default/favicons/android-chrome-192x192.png",
+                   "sizes": "192x192",
+                   "type": "image/png"
+               }
+           ],
+           "start_url": "/",
+           "display": "standalone"
+       }
 
+2. Create a :ref:`Layout Update <dev-doc-frontend-layouts-layout-updates>` file to replace other specific favicons in the storefront.
 
-2. Specify the main favicon image in your :ref:`theme configuration file <dev-doc-frontend-layouts-theming-definition>`:
-
-    If a favicon image is placed into another bundle, please, use the following syntax:
-
-       .. code-block:: yaml
-          :linenos:
-
-          // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
-          icon: '@AnotherBundle/Resources/public/default/favicons/favicon.ico'
-
-    For more info, follow |Bundle Templates|.
-
-    If a favicon image is in the same bundle, use the syntax:
-
-       .. code-block:: yaml
-          :linenos:
-
-          // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
-          icon: 'bundles/app/default/favicons/favicon.ico'
-
-3. Create a :ref:`Layout Update <dev-doc-frontend-layouts-layout-updates>` file to replace other specific favicons in the storefront:
+   .. important:: Please make sure that you also remove the default Oro favicons via the layout update, otherwise they will be used instead of the new ones.
 
    .. code-block:: yaml
        :linenos:
@@ -155,7 +136,7 @@ Replace Favicons
                - '@remove':
                    id: favicon_mask_icon
 
-4. Rebuild the assets:
+3. Rebuild the assets:
 
    Clear the cache to reload the Yaml configuration files:
 
@@ -181,7 +162,7 @@ Replace a Logo
       :linenos:
 
       // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
-      icon: '@AppBundle/Resources/public/default/logo/logo.svg'
+      logo: '@AppBundle/Resources/public/default/logo/logo.svg'
 
    or
 
@@ -189,7 +170,7 @@ Replace a Logo
       :linenos:
 
       // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
-      icon: 'bundles/{your_theme_id}/images/logo/logo.svg'
+      logo: 'bundles/{your_theme_id}/images/logo/logo.svg'
 
 
 .. include:: /include/include-links-dev.rst

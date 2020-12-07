@@ -26,32 +26,35 @@ To update fonts, merge ``$theme-fonts`` with your ``$theme-custom-fonts``.
 .. note:: You have to put the font files in your bundle public folder beforehand, e.g., ``Resources/public/default/fonts``.
 
 .. code-block:: scss
+   :linenos:
 
     $theme-custom-fonts: (
         'main': (
             'family': 'Lato',
              'variants': (
                  (
-                     'path': '#{$global-url}/app/default/fonts/lato/lato-regular-webfont',
+                     'path': '#{$global-url}/orofrontend/default/fonts/lato/lato-regular-webfont',
                      'weight': 400,
                      'style': normal
                  ),
                  (
-                  'path': '#{$global-url}/app/default/fonts/lato/lato-bold-webfont',
+                  'path': '#{$global-url}/orofrontend/default/fonts/lato/lato-bold-webfont',
                   'weight': 700,
                   'style': normal
                  )
              ),
+             'formats': ('woff', 'woff2')
         ),
         'secondary': (
             'family': 'Roboto',
             'variants': (
                 (
-                    'path': '#{$global-url}/app/default/fonts/roboto/roboto-regular-webfont',
+                    'path': '#{$global-url}/orofrontend/default/fonts/roboto/roboto-regular-webfont',
                     'weight': 700,
                     'style': normal
                 )
-            )
+            ),
+            'formats': ('woff', 'woff2')
         )
     );
 
@@ -66,8 +69,9 @@ To disable all Oro fonts without overriding them with yours:
 2. Call mixin ``font-face()`` or ``use-font-face();``
 
     .. code-block:: scss
+       :linenos:
 
-        $theme-fonts: ();
+         $theme-fonts: ();
 
         // Using font-face
         @include font-face($font-family, $file-path, $font-weight, $font-style);
@@ -88,6 +92,7 @@ To disable all Oro fonts without overriding them with yours:
                       'style': normal
                      )
                  ),
+                 'formats': ('woff', 'woff2')
             ),
             'secondary': (
                 'family': '...',
@@ -97,13 +102,14 @@ To disable all Oro fonts without overriding them with yours:
                         'weight': normal,
                         'style': normal
                     )
-                )
+                ),
+                'formats': ('woff', 'woff2')
             )
         );
 
         @include use-font-face($your-fonts);
 
-    @mixin ``use-font-face`` call dynamically ``font-face`` with ``$your-fonts``.
+``@mixin use-font-face`` call dynamically ``font-face`` with ``$your-fonts``.
 
 Change Font Size
 ----------------

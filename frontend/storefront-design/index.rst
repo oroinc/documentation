@@ -10,7 +10,7 @@ Storefront Design
 
 This documentation provides instruction on creating and customizing OroPlatform-based application UI using Sketch.
 
-The :ref:`Storefront Style Guide <frontend--storefront-style-guide>` is an example of the design theme creation based on the Sketch file, which makes the process faster than from scratch.
+The :ref:`Storefront Style Guide <frontend--storefront-style-guide>` is an example of the design theme creation based on the Sketch file, which makes the process faster than from scratch. You can |download and view the Sketch file here|.
 
   .. image:: /img/frontend/storefront-design/FrontendDesignerGuide.jpg
      :alt: Storefront designs
@@ -20,3 +20,6 @@ The :ref:`Storefront Style Guide <frontend--storefront-style-guide>` is an examp
    :hidden:
 
    storefront-style-guide/index
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
