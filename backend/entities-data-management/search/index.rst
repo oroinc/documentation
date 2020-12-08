@@ -16,6 +16,7 @@ Search Index
    console-commands
    query-builder
    best-practices
+   elastic-tuning
    troubleshooting
 
 .. note:: For architecture guide, see :ref:`Search Index Architecture <search_index_overview>`.

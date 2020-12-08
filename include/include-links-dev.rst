@@ -5573,3 +5573,11 @@ Links (Dev)
 .. |download and view the Sketch file here| raw:: html
 
    <a href="https://www.sketch.com/s/64628847-8616-403f-90f7-c95d6dde467c" target="_blank">download and view the Sketch file here</a>
+
+.. |search by the substring inside the word| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenfilter.html" target="_blank">search by the substring inside the word</a>
+
+.. |standard Elasticsearch language-specific search algorithms| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html" target="_blank">standard Elasticsearch language-specific search algorithms</a>
