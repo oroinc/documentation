@@ -234,6 +234,7 @@ Webserver configuration can be modified, as illustrated below:
           - '10.1.0.0/22'
         limit_whitelist_uri:
           - '~(^/admin/test/(.*))'
+        iframe_support_enable: true
         blackfire_options:
           agent_enabled : true
           server_id     : '<server-id>'
@@ -466,7 +467,12 @@ An example of the whitelist:
 
 This rule allows the unlimited rate of requests to URI containing the /admin/test/ string.
 
-.. note:: Allowing access via WAF does not affect simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connectios for a client IP or URI on the server.
+.. note:: Allowing access via WAF does not affect simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connections for a client IP or URI on the server.
+
+IFrame Support
+^^^^^^^^^^^^^^
+
+``iframe_support_enable: true`` --- The option enables iframe support, so that the OroCommerce site can be shown inside of iframe.
 
 Profiling Application Console Commands via Blackfire
 ----------------------------------------------------
