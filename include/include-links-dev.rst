@@ -5647,3 +5647,12 @@ Links (Dev)
 .. |standard Elasticsearch language-specific search algorithms| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html" target="_blank">standard Elasticsearch language-specific search algorithms</a>
+
+.. |Import files from Sketch into Figma| raw:: html
+
+   <a href="https://help.figma.com/hc/en-us/articles/360040514273-Import-files-from-Sketch" target="_blank">Import files from Sketch into Figma</a>
+
+.. |Supported features when you open Sketch files in Adobe XD| raw:: html
+
+   <a href="https://helpx.adobe.com/xd/user-guide.html/xd/kb/open-sketch-files-in-xd.ug.html" target="_blank">Supported features when you open Sketch files in Adobe XD</a>
+

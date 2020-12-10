@@ -32,7 +32,7 @@ To start using the OroCommerce Storefront Style Guide, you need to download and 
 * |Lato| - A font that is applied in the Storefront theme.
 * |FontAwesome 4.7| - A font for icons rendering in the Storefront theme.
 
-.. hint:: Sketch is developed for the MAC OS users. Please read the requirements before the installation.
+.. hint:: Sketch is developed for the MAC OS users. Please read the requirements before the installation. You can also open the Storefront Style Guide with Figma or Adobe XD. For that, read |Import files from Sketch into Figma| or |Supported features when you open Sketch files in Adobe XD|.
 
 
 **Related Topics**
