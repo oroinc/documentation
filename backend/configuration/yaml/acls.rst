@@ -13,6 +13,8 @@ Access Control Lists
 |           | * `label`_      |
 |           | * `permission`_ |
 |           | * `type`_       |
+|           | * `group_name`_ |
+|           | * `category`_   |
 +-----------+-----------------+
 
 The ``acls.yml`` file of a bundle can contain a map with access control lists. Each key of the map
@@ -137,3 +139,20 @@ The type of resource that should be protected. Possible values are:
 
     When ``type`` is set to entity, each domain object can be protected individually which means that
     access can be granted based on a particular domain object.
+
+``group_name``
+--------------
+
+**type**: ``string``
+
+The name of a group to which an ACL belongs to.
+
+``category``
+------------
+
+**type**: ``string``
+
+The identifier of an ACL category in which an ACL should be shown in the role management UI.
+
+The configuration of ACL categories is described in
+:ref:`Access Control List Categories <access-control-lists-categories>` section.

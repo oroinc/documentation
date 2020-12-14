@@ -7,6 +7,7 @@ YAML
    :maxdepth: 1
 
    acls
+   acl-categories
    assets
    dashboards
    datagrids
