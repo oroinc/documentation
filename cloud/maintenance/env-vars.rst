@@ -41,7 +41,7 @@ How to Configure Environment Type Based Application
 
     deployment_type: local
 
-.. note:: For more details on the environment type based application configuration, please see the :ref:`related documentation  <environment-type-based-configuration>` in the backend developer guide.
+.. note:: For more details on the environment type based application configuration, please see the |related documentation in the backend developer guide|.
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin

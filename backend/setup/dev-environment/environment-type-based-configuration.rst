@@ -48,7 +48,7 @@ For example:
                         # your additional monolog configuration
 
 
-.. note:: For more details on how to configure the environment type based application in the Cloud environment, please see the :ref:`related documentation <cloud-environment-type-based-configuration>`.
+.. note:: For more details on how to configure the environment type based application in the Cloud environment, please see the |related cloud documentation|.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
