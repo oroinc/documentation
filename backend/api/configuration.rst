@@ -212,7 +212,7 @@ The ``entities`` section describes the configuration of entities.
    * ``all`` - exclude all fields that are not configured explicitly.
    * ``custom_fields`` - exclude all custom fields (fields with ``is_extend = true`` and ``owner = Custom`` in extend scope in entity configuration) that are not configured explicitly.
 
-*  **max\_results** *integer* - The maximum number of entities in the result. Set ``-1`` (it means unlimited), zero or positive number to set the limit. Use to set the limit for both the parent and related entities.
+*  **max\_results** *integer* - The maximum number of entities in the result. Set ``-1`` (it means unlimited), zero or positive number to set the limit. Use to set the limit for both a primary and related entities. See ``max_entities`` and ``max_related_entities`` options in :ref:`General Configuration <web-api--configuration-general>` for default limits. Please note that this option affects all actions including :ref:`get_list <get-list-action>` action. Use the ``max_results`` option in the :ref:`actions <web-api--actions-config>` configuration to change the maximum number of entities that can be deleted by one request or set own limit to each action, see :ref:`How To <max-number-of-entities-to-be-deleted>`.
 
 *  **order\_by** *array* - The property can be used to configure default ordering of the result. The item key is the name of a field. The value can be ``ASC`` or ``DESC``. By default the result is ordered by an identifier field.
 
@@ -476,7 +476,7 @@ This section describes fields by which the result data can be sorted. It contain
                         field2:
                             exclude: true
 
-.. _actions-config:
+.. _web-api--actions-config:
 
 `actions` Configuration Section
 -------------------------------
@@ -495,7 +495,7 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 *  **order\_by** *array* - The property can be used to configure default ordering of the result. The item key is the name of a field. The value can be ``ASC`` or ``DESC``. By default the result is ordered by identifier field.
 
-*  **page\_size** *integer* - The default page size. Set to ``-1`` to disable pagination, or to a positive number. By default, ``10``.
+*  **page\_size** *integer* - The default page size. Set to ``-1`` to disable pagination, or to a positive number. By default, 10, see the ``default_page_size`` option in :ref:`General Configuration <web-api--configuration-general>`.
 
 *  **disable\_sorting** *boolean* - Indicates whether to disable the sorting. By default, false.
 
@@ -673,9 +673,9 @@ The ``subresources`` configuration section enables you to provide options for su
 
 -  **target\_type** *string* - The type of a target association. Can be **to-one** or **to-many**. Also **collection** can be used as an alias for **to-many**. **to-one** can be omitted as it is used by default.
 
--  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions <actions-config>` configuration section. If an option exists in both entity actions section and sub-resource **actions** section the sub-resource option wins.
+-  **actions** *array* - The actions supported by the sub-resource. This section has the same options as :ref:`actions <web-api--actions-config>` configuration section. If an option exists in both entity actions section and sub-resource **actions** section the sub-resource option wins.
 
--  **filters** - The filters supported by the sub-resource. This section has the same options as  :ref:`filters <filters-config>` configuration section. If an option exists in both `entity "filters" section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
+-  **filters** - The filters supported by the sub-resource. This section has the same options as :ref:`filters <filters-config>` configuration section. If an option exists in both `entity "filters" section <#filters-configuration-section>`__ and sub-resource **filters** section the sub-resource option wins.
 
 - **sorters** - The sorters supported by the sub-resource. This section has the same options as the entity sorters section. If an option exists in both entity sorters section and sub-resource sorters section, the sub-resource option wins.
 

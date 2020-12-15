@@ -209,7 +209,7 @@ You can use the short syntax:
 Change the Maximum Number of Entities that Can Be Deleted by One Request
 ------------------------------------------------------------------------
 
-By default, the ``delete_list`` action can delete not more than 100 entities. This limit is set by the |SetDeleteLimit| processor.
+By default, the ``delete_list`` action can delete not more than 100 entities, see the ``max_delete_entities`` option in :ref:`General Configuration <web-api--configuration-general>`. This limit is set by the |SetDeleteLimit| processor.
 
 If your want to use another limit, set it using the ``max_results`` option in ``Resources/config/oro/api.yml``:
 
