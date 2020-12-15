@@ -223,7 +223,7 @@ This action deletes a list of entities.
 
 The entities list is built based on input filters. Please take into account that at least one filter must be specified. Otherwise, an error raises.
 
-By default, the maximum number of entities that can be deleted by one request is 100. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``. However, please test your limit carefully because a higher limit may make a more significant impact on the server. An example of how to change the default limit is available in the :ref:`How-to <max-number-of-entities-to-be-deleted>` topic.
+By default, the maximum number of entities that can be deleted by one request is 100, see the ``max_delete_entities`` option in :ref:`General Configuration <web-api--configuration-general>`. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``. However, please test your limit carefully because a higher limit may make a more significant impact on the server. An example of how to change the default limit is available in the :ref:`How To <max-number-of-entities-to-be-deleted>` topic.
 
 The route name for REST API: ``oro_rest_api_list``.
 
