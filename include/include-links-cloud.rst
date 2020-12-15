@@ -167,6 +167,15 @@ Links (Cloud)
 
    <a href="https://magecore.atlassian.net/servicedesk/customer/portal/2" target="_blank">Oro Inc. Support Desk</a>
 
+.. |related documentation in the backend developer guide| raw:: html
+
+   <a href="https://doc.oroinc.com/backend/setup/dev-environment/environment-type-based-configuration/" target="_blank">related documentation in the backend developer guide</a>
+
+.. |related cloud documentation| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/maintenance/env-vars/" target="_blank">related cloud documentation</a>
+
+
 
 
 
