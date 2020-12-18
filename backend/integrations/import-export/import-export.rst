@@ -1125,11 +1125,10 @@ Example of displaying the form with choice (radio buttons):
 Storage Configuration
 ---------------------
 
-OroImportExportBundle uses |KnpGaufretteBundle| to provide a filesystem abstraction layer.
+OroImportExportBundle uses private storage with `importexport` directory path to provide a filesystem abstraction layer.
 
-By default, it is configured to store files in the `var/import_export` directory of your project. You can change it in the `Resources/config/oro/app.yml` file. A user can reconfigure these settings. More information about the KnpGaufretteBundle configuration can be found in |KnpGaufretteBundle documentation|.
-
-
+By default, it is configured to store files in the `var/data/importexport` local directory of your project.
+You can change it with configuration of the :ref:`File Storage <backend-file-storage>`.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

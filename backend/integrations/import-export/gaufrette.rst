@@ -6,28 +6,7 @@ Gaufrette
 The ImportExport bundle uses |Gaufrette| for the file storage.
 The Gaufrette configuration is stored in `Resources/config/oro/app.yml`.
 
-Gaufrette Configuration for a Local Filesystem
-----------------------------------------------
-
-This configuration allows to use local filesystem for the importing and exporting. It is applicable if all the consumers run on the same server.
-
-**Example**
-
-.. code-block:: php
-   :linenos:
-
-    knp_gaufrette:
-        adapters:
-            importexport:
-                local:
-                    directory: '%kernel.project_dir%/var/import_export'
-        filesystems:
-            importexport:
-                adapter:    importexport
-                alias:      importexport_filesystem
-
-
-The importing, exporting, and temporary files are stored in the cache directory of the project.
+By default, the ImportExport bundle configured to use the private :ref:`File Storage <backend-file-storage>`.
 
 Gaufrette Configuration for Amazon S3 Storage
 ---------------------------------------------

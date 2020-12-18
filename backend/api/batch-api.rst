@@ -111,7 +111,7 @@ Here is the default configuration of these storages:
         filesystems:
             # a storage for source data files
             api_source_data:
-                adapter: importexport
+                adapter: private
                 alias: api_source_data_filesystem
             # a storage for files created when processing asynchronous batch operations
             api:

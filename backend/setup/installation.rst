@@ -96,12 +96,10 @@ Set Up File Permissions
 Below application directories must be writable both by the web server and the command line user:
 
 * var/sessions
-* var/attachment
 * var/cache
-* var/import_export
+* var/data
 * var/logs
 * public/media
-* public/uploads
 * public/js
 
 If your operation system supports ``setfacl`` utility, use the following script to determine your web server user and grant the needed permissions:
@@ -110,11 +108,11 @@ If your operation system supports ``setfacl`` utility, use the following script 
 
    HTTPDUSER=$(ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1)
 
-   sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX var/{sessions,attachment,cache,import_export,logs}
-   sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX var/{sessions,attachment,cache,import_export,logs}
+   sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX var/{sessions,cache,data,logs}
+   sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX var/{sessions,cache,data,logs}
 
-   sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX public/{media,uploads,js}
-   sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX public/{media,uploads,js}
+   sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX public/{media,js}
+   sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX public/{media,js}
 
 .. note:: The first setfacl command sets permissions for future files and folders, while the second one sets permissions on the existing files and folders. Both of these commands assign permissions for the system user and the Apache user.
    ``setfacl`` isn't available on NFS mount points. However, storing cache and logs over NFS is strongly discouraged for performance reasons.

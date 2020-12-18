@@ -10,7 +10,7 @@ OroGaufretteBundle is a facade for KnpGaufretteBundle that enables a filesystem 
 Related Documentation
 ---------------------
 
-* |Abstract File Manager Service|
+* :ref:`File Storage <backend-file-storage>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

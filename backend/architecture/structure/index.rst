@@ -118,9 +118,8 @@ From a file system perspective, Oro PHP application contains a structured combin
 * **translations** folder - application customization translation files
 * **var** folder - application generated files
 
-   * **attachment** - files uploaded to the application as attachments
+   * **data** - a local filesystem path to store private adapter files (attachments, import and export files, etc.)
    * **cache** - framework and application cache files
-   * **import_export** - files generated during data import and export
    * **logs** - application logs
 
 * **vendor** folder - code of 3rd party vendors installed based on the definition of dependencies in composer.json.

@@ -506,7 +506,11 @@ Media Upload
 
 .. note:: Please always use `underscores` instead of `spaces` for the `source` directory name and for all file names too.
 
-Sometimes, you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` or ``import_export`` directory. This can be done with the ``media:upload`` command that allows to upload media files, e.g., ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml`` to the ``[public|web]/media/uploads/`` or the  ``[app|var]/import_export/product_images/`` directory.
+Sometimes, you may require to upload media files that relate to custom CMS page(s) or products
+to a specific ``public`` or ``data/importexport`` directory.
+This can be done with the ``media:upload`` command that allows to upload media files, e.g.,
+``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml``
+to the ``[public|web]/media/uploads/`` or  ``[app|var]/data/importexport/product_images/`` directory.
 
 .. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
 
@@ -547,7 +551,8 @@ To display the command description and help, run the following:
       -n, --no-interaction  Do not ask any interactive question
       -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
 
-The following command simulates (the command is executed in the ``DRY-RUN`` mode) the transfer of media files from the `/tmp/media` directory into the destination directory, which will be asked.
+The following command simulates (the command is executed in the ``DRY-RUN`` mode) the transfer of media files
+from the `/tmp/media` directory into the destination directory, which will be asked.
 Also, if some files cannot be transferred due to particular restrictions, the appropriate notification is displayed.
 
 .. code-block:: none
@@ -561,7 +566,7 @@ Also, if some files cannot be transferred due to particular restrictions, the ap
     ➤ Executing task media:upload
     Please select the media destination location:
       [public  ] media/uploads/
-      [products] import_export/product_images/
+      [products] data/importexport/product_images/
      > public
     Source directory scan has started. The process may take a while, please be patient...
     (DRY-RUN mode, can be interrupted at any time without any effect.)
@@ -594,7 +599,7 @@ The following command transfers media files from the `/tmp/media` directory into
     ➤ Executing task media:upload
     Please select the media destination location:
       [public  ] media/uploads/
-      [products] import_export/product_images/
+      [products] data/importexport/product_images/
      > public
     Source directory scan has started. The process may take a while, please be patient...
     Source directory scan has finished. Starting transfer operation...
@@ -611,7 +616,7 @@ If source files cannot be removed, the appropriate notification is displayed. Fo
     ➤ Executing task media:upload
     Please select the media destination location:
       [public  ] media/uploads/
-      [products] import_export/product_images/
+      [products] data/importexport/product_images/
      > public
     Source directory scan has started. The process may take a while, please be patient...
     Source directory scan has finished. Starting transfer operation...

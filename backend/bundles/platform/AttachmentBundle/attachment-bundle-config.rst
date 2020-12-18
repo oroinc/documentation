@@ -76,9 +76,13 @@ Configure Storage
 
 OroAttachmentBundle uses |KnpGaufretteBundle| to provide a filesystem abstraction layer.
 
-Based on the default configuration, it stores files in ``var/attachment directory`` of your project. A user can reconfigure these settings. You can find more information on the KnpGaufretteBundle configuration in the related |KnpGaufretteBundle documentation|.
+Based on the default configuration, it stores files in a private storage
+(``var/data/attachment`` directory of your project if the local filesystem is used as storage).
+Users can reconfigure these settings. You can find more information on the KnpGaufretteBundle configuration
+in |KnpGaufretteBundle documentation|.
 
-Image thumbnail files are created from |LiipImagineBundle| and are stored in the ``public/media/cache/attachment`` directory.
+Image thumbnail files are created from |LiipImagineBundle| and are stored in the public storage
+(``public/media/cache/attachment`` directory if the local filesystem is used as storage).
 
 ACL Protection
 --------------

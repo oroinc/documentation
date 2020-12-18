@@ -79,6 +79,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * soap                                            |
 |                   | * bcmath                                          |
 |                   | * ldap                                            |
+|                   | * mongodb (to use OroGridFSConfigBundle)          |
 +-------------------+---------------------------------------------------+
 | *Database*        | * |MySQL| 5.7                                     |
 |                   |                                                   |
