@@ -5,21 +5,18 @@ Code Style
 
 Code style is a set of conventions about how to write code. It is introduced for easier understanding of the large codebase by the wide-spread Oro community.
 
-The following code styles are used in all Oro projects, except for projects based on the frameworks, libraries or CMS where other conventions have been adopted.
+The following code styles are used in OroCommerce, OroCRM, OroPlatform and other Oro products.
 
 PHP Code Style
 ^^^^^^^^^^^^^^
 
 **Standard**
 
-PSR-2 is considered a coding standard of the PHP code style.
+PSR-2 is used as a base coding standard of the PHP code style in Oro.
 
 **Default line break separator**
 
-
-Default line break separator is LF (\\n) - Unix and OS X style.
-
-  .. note:: To eliminate issues with this requirement, we recommend to configure IDE and always use appropriate |line break separator|.
+Default line break separator is LF (\\n) - Unix and OS X style. We recommend to configure IDE and always use appropriate |line break separator|.
 
 **DocBlock**
 
@@ -31,13 +28,11 @@ It is **required** to add or update a DocBlock for every class you modify or pro
 
 **Method DocBlock**
 
-It is **required** to add or update a DocBlock for every method you modify or produce. Include the following information:
+It is **required** to add or update a DocBlock for any method you modify or produce if the method name does not fully reflect its purpose and responsibility, or the parameter or return types cannot not be defined in the PHP code. Include the following information:
 
-* Any information that helps clarify non-obvious behavior or conditions.
+* Any information that helps clarify non-obvious behavior or conditions. Description should briefly reflect the purpose and responsibility of a method. Avoid description that just duplicates the method name.
 
-  .. note:: Description should briefly reflect the purpose and responsibility of a method. Avoid description that duplicates the method name.
-
-* The list of parameters, their types, and descriptions (@param), and, if the method returns any value, the type and description in the @return annotation.
+* The list of parameters (use @param notation), their types, and descriptions, and, if the method returns a value, the type and description (use @return annotation).
 
    For example:
 
@@ -45,21 +40,16 @@ It is **required** to add or update a DocBlock for every method you modify or pr
        :linenos:
 
         /**
-        * The method returns status of product inventory.
-        *
-        * Supported values are In Stock, Out of Stock, and Discontinued.
-        *
-        * @param string $SKU The product SKU (unique product id).
-        *
-        * @return string The inventory status of the product found by SKU.
-        *
-        */
+         * Returns the products associated with the provided line item.
+         *
+         * @param int|LineItemInterface Integer ID of the line item or a line item object.
+         * @return null|Product[] The array of associated products or null.
+         */
+        public function getProductsForLineItem($lineItem): ?array;
 
 **Property DocBlock**
 
-It is **required** to add or update a DocBlock for every property you produce or use in a new way. Include any information that helps clarify non-obvious behavior, conditions, or possible values.
-
-.. note:: Description should briefly reflect the property purpose and data type. Avoid description that duplicates the property name.
+It is **required** to add or update a DocBlock for every property where the data type cannot be specified in the PHP code, or if the purpose, conditions of use or possible values are not clear. Description should briefly reflect the property purpose and data type. Avoid description that just duplicates the property name.
 
 **DocBlock Sample**
 
@@ -76,59 +66,47 @@ An example of correct DocBlock usage:
 
     class ResultRecord implements ResultRecordInterface
     {
-       /**
-        * List of containers that are used in some specific way
-        *
-        * @var array
-        */
-       private $valueContainers = [];
-
         /**
-         * @var array
-         */
-        private $entities = [];
-
-        /** @var string */
-        private $value = "";
-
-        /**
-         * @param array $containers
-         */
-        public function __construct($containers)
-        {
-            // ...
-        }
-
-        /**
-         * Get value of property by name
+         * List of DTOs to hold original, non-validated user input.
          *
-         * @param  string $name
-         * @return string
+         * @var ValueContainer[]
          */
-        public function getValue($name)
+        private array $valueContainers = [];
+
+        private string $value = "";
+
+        public function __construct(array $containers)
         {
             // ...
-            return $value
         }
 
         /**
-         * @return object|null
+         * Get property value by name. The value will be sanitized and properly escaped.
          */
-        public function getRootEntity()
+        public function getValue(string $name): string
         {
             // ...
-            return $entity
+            return $value;
+        }
+
+        /**
+         * @return object|string
+         */
+        public function getRawValue()
+        {
+            // ...
+            return $value;
         }
     }
 
-**\@deprecated usage**
+**Marking deprecations**
 
+@deprecated annotations can be used in the maintenance branches in order to mark the elements that will be removed in an upcoming LTS version of the product.
 
-Elements that will be removed in a future version of the product must be marked as @deprecated.
+Such deprecation notices are allowed **only** if the referenced changes have already been merged to the master branch, or will be merged to the master branch within the same task.
+Comment specifying the LTS version number in which the deprecated code will be removed is **required**.
 
-Comment with deprecation details is **optional**.
-
-The following is an example of @deprecated usage:
+Describe alternative methods or approaches if possible. The following is an example of @deprecated usage:
 
 .. code-block:: php
     :linenos:
@@ -136,32 +114,30 @@ The following is an example of @deprecated usage:
     class ResultRecord
     {
         /**
-        * @deprecated deprecated since version 2.0
+        * @deprecated Will be removed in version 4.2, use getSanitizedValues() instead.
         */
-        private $valueContainers = [];
+        public function getValueContainers(): array
 
         //....
     }
 
 
     /**
-     * @deprecated
+     * @deprecated Will be removed in version 4.2. The result records are no longer stored or processed
+        by the application. You may create your own handler to capture the record submission requests.
      */
     class ResultRecord
     {
         //....
     {
 
-**\@todo usage**
+**TODO usage**
 
-
-@todo should be used for changes that are planned for the future (e.g., *The method may be enhanced to handle more granular data validation*).
-
-.. note:: @todo provide clear description
+@todo, //TODO or any similar annotations or comments bearing the same meaning are **not allowed**. You may explain the rationale behind the current solution and possible alternatives in a comment. Do not make any forward looking statements or promises, you can create an issue in appropriate issue tracker instead.
 
 **Do not import classes from root namespace**
 
-Classes from the root namespace should not be imported.
+Classes and functions from the root namespace should not be imported.
 
 Import internal PHP classes example:
 
@@ -170,14 +146,17 @@ Import internal PHP classes example:
 
     // incorrect
     use DateTime;
+    use date;
     $date = new DateTime();
+    $day = date('l');
 
     // correct
     $date = new \DateTime();
+    $day = \date('l');
 
 **PHP code style continuous control**
 
-PHP code style is controlled by the |PHP CodeSniffer tool| installed on the continuous integration server according to the rules defined |in the ruleset.xml file|.
+PHP code style is controlled by the |PHP CodeSniffer tool| according to the rules defined |in the phpcs.xml file|.
 
 We highly recommended developers to configure appropriate code style inspections in the IDE or run these inspections manually before merging changes to the master branch. It prevents failures of the build that checks code standards.
 
@@ -185,46 +164,21 @@ We highly recommended developers to configure appropriate code style inspections
 
 **PHP mess detector**
 
-To automatically control code, the quality detector is used, in addition to the code style detector tool. |PHP Mess Detector (PHPMD)| is a tool which can check PHP source code for potential problems. It can detect possible bugs, suboptimal code, unused parameters, and helps to follow |SOLID| principles. In addition to these, PHPMD contains several rules that check for code complexity and can tell if the code could be refactored to improve future maintenance efforts.
-
-**Cyclomatic complexity**
-
-.. note:: On the Oro projects, cyclomatic complexity MUST NOT exceed the limit of 15.
-
-Cyclomatic complexity is determined by the number of decision points in a method plus one for the method entry. The decision points are 'if', 'while', 'for', and 'case labels' (see |PHPMD|). The testing strategy is to test each linearly independent path through the program. In this case, the number of test cases will equal the cyclomatic complexity of the program (see |basis path testing|).
-
-There are many good reasons to limit cyclomatic complexity. Overly complex modules are more prone to error, harder to understand, test, and modify. Deliberately limiting complexity at all stages of software development, for example as a departmental standard, helps avoid the pitfalls associated with high complexity software. But there were occasional reasons for going beyond the agreed-upon limit. For instance, Thomas McCabe initially recommended exempting modules consisting of a single multi-way decision (“switch” or “case”) statements from the complexity limit. And suggested the most effective policy: “For each module, either limit cyclomatic complexity to 10 (as discussed earlier, an organization can substitute a similar number), or provide a written explanation of why the limit was exceeded.” (see |Structured Testing: A Testing Methodology Using the Cyclomatic Complexity Metric|).
-
-Cyclomatic complexity limits suggestions are the following:
-
-- PHP: 1-4 is low complexity, 5-7 indicates moderate complexity, 8-10 is high complexity, and 11+ is very high complexity (see |PHPMD|).
-- |Java| 1–10 to be considered a Normal application, 11–20 Moderate application, 21–50 Risky application, more than 50 Unstable application (also see |here, by GMetrics|).
-- .Net: 1 to 10 a simple program, without very much risk; 11 to 20 a more complex program, moderate risk; 21 to 50 a complex, high risk program; > 50 an un-testable |program| (very high risk).
-- Microsoft recommendation is to warn when Cyclomatic complexity is more than 25 (|CA1502|).
-- |McCabe| originally proposed the limit of 10 since it has significant supporting evidence, but limits as high as 15 have been used successfully as well.
-
-**NPath complexity**
-
-.. important:: The recommended limit of the NPath complexity is 200 (the default |PHPMD| limit).
-
-The NPath metric computes the number of possible execution paths through a function, meaning how many “paths” there are in the flow of your code in the function. It is similar to the cyclomatic complexity, but it also takes into account the nesting of conditional statements and multi-part boolean expressions. So, you should avoid long functions with a lot of (nested) if/else statements.
+PHP code quality is also checked by the |PHP Mess Detector (PHPMD)| for potential problems according to the rules defined |in the phpmd.xml file|. It can detect possible bugs, suboptimal code, unused parameters, and helps to follow |SOLID| principles. In addition to these, PHPMD contains several rules that check for code complexity and can tell if the code could be refactored to improve future maintenance efforts.
 
 **\@SuppressWarnings**
 
-It is allowed to use suppress warnings annotations in the following cases ONLY:
+Generally, suppression of PHPMD warnings should be used with caution. Consider refactoring to reduce the code complexity instead. It is allowed to use suppress warnings annotations in the cases where appropriate, for example:
 
-1. @SuppressWarnings(PHPMD) in the code that was automatically generated by a third-party tool or library (example: EwsBundle/Ews).
-2. @SuppressWarnings(PHPMD.ExcessiveMethodLength) for the dataProvider in the PHPUnit tests in the install schema or data migrations.
-3. @SuppressWarnings(PHPMD.TooManyMethods) for the PHPUnit test case classes in the install schema or data migrations.
-4. @SuppressWarnings(PHPMD.CouplingBetweenObjects) in the install schema or data migrations.
-5. @SuppressWarnings(PHPMD.CyclomaticComplexity) for methods consisting of single multi-way decision (“switch” or “case”) statements, when the explanation on why the limit was exceeded is provided in the nearby comment.
-6. all @SuppressWarnings if there are plans to remove these warnings with appropriate @todo comment and ticket.
-
-In all other cases, usage of the @SuppressWarnings MUST NOT be used.
+* @SuppressWarnings(PHPMD) in the code that was automatically generated by a third-party tool or library.
+* @SuppressWarnings(PHPMD.ExcessiveMethodLength) for the dataProvider in the PHPUnit tests in the install schema or data migrations.
+* @SuppressWarnings(PHPMD.TooManyMethods) for the PHPUnit test case classes, entity classes, in the install schema or data migrations.
+* @SuppressWarnings(PHPMD.CouplingBetweenObjects) in the install schema or data migrations.
+* @SuppressWarnings(PHPMD.CyclomaticComplexity) for methods consisting of single multi-way decision (“switch” or “case”) statements, when the explanation on why the limit was exceeded is provided in the nearby comment.
 
 **php-cs-fixer usage**
 
-In order to reduce development time and automate part of the code preparation related to the code style fixes, it is suggested to use |GitHub repository|) - automated tool that fixes most code style issues in the code.
+In order to reduce time spent on the code style fixes |PHP-CS-Fixer| can be used to fix most code style issues in the code.
 
 JavaScript Code Style
 ^^^^^^^^^^^^^^^^^^^^^
@@ -235,7 +189,7 @@ JavaScript Code Style
 
 **JavaScript code style continuous control**
 
-JavaScript code style is controlled by the |ESLint| tool installed on the continuous integration server according to the rulests defined in the development repository in the root folder (example: |.eslintrc.yml|).
+JavaScript code style is controlled by the |ESLint| tool installed on the continuous integration server according to the rules defined in the development repository in the root folder (example: |.eslintrc.yml|).
 
 It is highly recommended to configure appropriate code style inspections in the IDE or run these inspections manually before committing the changes and merging it to the project repository.
 

@@ -2799,9 +2799,9 @@ Links (Dev)
 
    <a href="http://cs.sensiolabs.org/" target="_blank">PHP Coding Standard Fixer</a>
 
-.. |GitHub repository| raw:: html
+.. |PHP-CS-Fixer| raw:: html
 
-   <a href="https://github.com/FriendsOfPHP/PHP-CS-Fixer" target="_blank">GitHub repository</a>
+   <a href="https://github.com/FriendsOfPHP/PHP-CS-Fixer" target="_blank">PHP-CS-Fixer</a>
 
 .. |PHPMD| raw:: html
 
@@ -2823,18 +2823,6 @@ Links (Dev)
 
    <a href="http://gmetrics.sourceforge.net/gmetrics-CyclomaticComplexityMetric.html" target="_blank">here, by GMetrics </a>
 
-.. |program| raw:: html
-
-   <a href="https://www.codeproject.com/articles/11719/cyclomatic-code-complexity-analysis-for-microsoft" target="_blank">program</a>
-
-.. |CA1502| raw:: html
-
-   <a href="https://msdn.microsoft.com/en-us/library/ms182212.aspx" target="_blank">CA1502</a>
-
-.. |McCabe| raw:: html
-
-   <a href="http://www.mccabe.com/pdf/mccabe-nist235r.pdf" target="_blank">McCabe</a>
-
 .. |PHP Mess Detector (PHPMD)| raw:: html
 
    <a href="http://phpmd.org/" target="_blank">PHP Mess Detector (PHPMD)</a>
@@ -2847,9 +2835,13 @@ Links (Dev)
 
    <a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank">PHP CodeSniffer tool</a>
 
-.. |in the ruleset.xml file| raw:: html
+.. |in the phpcs.xml file| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/build/Oro/phpcs.xml" target="_blank">in the ruleset.xml file</a>
+   <a href="https://github.com/oroinc/platform/blob/master/build/Oro/phpcs.xml" target="_blank">in the phpcs.xml file</a>
+
+.. |in the phpmd.xml file| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/build/phpmd.xml" target="_blank">in the phpmd.xml file</a>
 
 .. |line break separator| raw:: html
 
