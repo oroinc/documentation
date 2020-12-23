@@ -151,6 +151,7 @@ Webserver configuration can be modified, as illustrated below:
     ---
     orocloud_options:
       webserver:
+        header_x_frame:true
         redirects_map:
           '/about_us_old': '/about'
           '/about_them_old': '/about_them'
