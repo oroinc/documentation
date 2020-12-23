@@ -175,8 +175,13 @@ Links (Cloud)
 
    <a href="https://doc.oroinc.com/cloud/maintenance/env-vars/" target="_blank">related cloud documentation</a>
 
+.. |GCP documentation| raw:: html
 
+   <a href="https://cloud.google.com/monitoring/uptime-checks?hl=en_US" target="_blank"GCP documentation</a>
 
+.. |Metrics Explorer| raw:: html
+
+   <a href="https://cloud.google.com/monitoring/charts/metrics-explorer?hl=en_US" target="_blank"Metrics Explorer</a>
 
 
 
