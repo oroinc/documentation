@@ -47,26 +47,26 @@ To implement the access point to your type of data in the storage:
 
     knp_gaufrette:
         filesystems:
-            your_storage:
+            some_storage:
                 adapter: private # the type of storage (public or private)
-                alias: your_storage_filesystem
+                alias: some_storage_filesystem
 
 - Register the |FileManager| service as the child of the ``oro_gaufrette.file_manager`` service:
 
 .. code-block:: yaml
    :linenos:
 
-    your_bundle.file_manager:
+    acme.file_manager:
         parent: oro_gaufrette.file_manager
         arguments:
-            - 'your_storage' # the name of Gaufrette filesystem should be used as the storage.
+            - 'some_storage' # the name of Gaufrette filesystem should be used as the storage.
 
-As a result, the **your_bundle.file_manager** service will be the entry point of your new private file storage.
+As a result, the **acme.file_manager** service will be the entry point of your new private file storage.
 
 By default, if the Gaufrette local file system adapter is used to store files for the file system, the data will be saved to the
 sub-directory with the name of the Gaufrette file system used for this file storage.
 
-For the previous example, this default path is the ``var/data/your_storage`` directory of the application.
+For the previous example, this default path is the ``var/data/some_storage`` directory of the application.
 
 For the public file system, it is ``public/media/your_filesystem_name``.
 
@@ -75,10 +75,10 @@ You can change this sub-directory name by setting them as the second parameter o
 .. code-block:: yaml
    :linenos:
 
-    your_bundle.file_manager:
+    acme.file_manager:
         parent: oro_gaufrette.file_manager
         arguments:
-            - 'your_storage' # the name of the Gaufrette filesystem should be used as the storage.
+            - 'some_storage' # the name of the Gaufrette filesystem should be used as the storage.
             - 'another_sub_directory' # data will save to another_sub_directory subdirectory.
 
 .. _backend-simple-access-to-the-public-storage-files:
@@ -87,14 +87,14 @@ Simple Access to Public Storage Files
 -------------------------------------
 
 If the Gaufrette local file system adapter is used to store files for the public file system, all the files
-stored in this file system will be available via direct URI ``http://your_domain/media/name_of_filesystem/filename``.
+stored in this file system will be available via direct URI ``http://your_domain/media/sub_directory/filename``.
 
 But if the storage uses another adapter type, for example, the |GridFS| storage type
 by :ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`, this URIs will not work
 and you will have to implement access points to the files manually.
 
 To simplify this case, configure the file manager service with the ``oro_gaufrette.public_filesystem_manager`` tag.
-In this case, the files of such storage will be available via the ``http://your_domain/media/name_of_filesystem/filename`` path,
+In this case, the files of such storage will be available via the ``http://your_domain/media/sub_directory/filename`` path,
 regardless of the adapter configuration used for the public type file storage.
 
 For example, is you have configured ``my_public`` Gaufrette file system that uses public adapter, the configuration of the
@@ -103,7 +103,7 @@ file manager service can be the following:
 .. code-block:: yaml
    :linenos:
 
-    your_bundle.public_file_manager:
+    acme.public_file_manager:
         parent: oro_gaufrette.file_manager
         arguments:
             - 'my_public'
