@@ -153,7 +153,7 @@ Proceed to create the attribute as described below.
       "**Filterable**","Defines whether a dedicated filter is available for the attribute in the storefront."
       "**Filter By**","Defines the type of filtering to be applied to the attribute:
 
-       - *Fuzzy search* --- Find the exactly matching text and similar words. This type of filtering helps find the required values even if the entered text contains typos or incomplete words.
+       - *Fulltext search* --- Find the exactly matching text and similar words. This type of filtering helps find the required values even if the entered text contains typos or incomplete words.
        - *Exact value* --- Look for the values that exactly match the entered text."
 
       "**Sortable**","Defines whether sorting is available for the attribute in the storefront.
