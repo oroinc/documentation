@@ -8,7 +8,7 @@ OroElasticSearchBundle
 
 OroElasticSearchBundle enables |Elasticsearch| as a :ref:`search engine <search_index_overview>` for Oro applications and allows developers to configure Elasticsearch client settings and the search index using application parameters in YAML configuration files.
 
-.. note:: This bundle supports Elasticsearch engine version 6.*. You can manually specify the minimum allowed version and upper bound version in the application configuration.
+.. note:: This bundle supports Elasticsearch engine version 7.*. You can manually specify the minimum allowed version and upper bound version in the application configuration.
 
 .. toctree::
    :maxdepth: 1
