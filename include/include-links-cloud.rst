@@ -177,11 +177,11 @@ Links (Cloud)
 
 .. |GCP documentation| raw:: html
 
-   <a href="https://cloud.google.com/monitoring/uptime-checks?hl=en_US" target="_blank"GCP documentation</a>
+   <a href="https://cloud.google.com/monitoring/uptime-checks?hl=en_US" target="_blank">GCP documentation</a>
 
 .. |Metrics Explorer| raw:: html
 
-   <a href="https://cloud.google.com/monitoring/charts/metrics-explorer?hl=en_US" target="_blank"Metrics Explorer</a>
+   <a href="https://cloud.google.com/monitoring/charts/metrics-explorer?hl=en_US" target="_blank">Metrics Explorer</a>
 
 
 
