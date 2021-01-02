@@ -134,9 +134,9 @@ The resulting implementation of the ProductsGridListener may look similar to thi
         */
        protected function addPriceListsToRecords(array $records)
        {
-           $repository = $this->registry->getRepository(PriceListToProduct::class);
+           $repository = $this->doctrine->getRepository(PriceListToProduct::class);
            /** @var EntityManager $objectManager */
-           $objectManager = $this->registry->getManager();
+           $objectManager = $this->doctrine->getManager();
 
            $products = [];
            foreach ($records as $record) {
@@ -186,11 +186,6 @@ In most cases, the |built-in filters| would work just perfectly. But in the case
     class ProductPriceListsFilter extends EntityFilter
     {
         /**
-         * @var RegistryInterface
-         */
-        protected $registry;
-
-        /**
          * @inheritdoc
          */
         public function apply(FilterDatasourceAdapterInterface $ds, $data)
@@ -207,14 +202,6 @@ In most cases, the |built-in filters| would work just perfectly. But in the case
         }
 
         /**
-         * @param RegistryInterface $registry
-         */
-        public function setRegistry(RegistryInterface $registry)
-        {
-            $this->registry = $registry;
-        }
-
-        /**
          * @param OrmFilterDatasourceAdapter|FilterDatasourceAdapterInterface $ds
          * @param array $priceLists
          */
@@ -224,7 +211,7 @@ In most cases, the |built-in filters| would work just perfectly. But in the case
             $parentAlias = $queryBuilder->getRootAliases()[0];
             $parameterName = $ds->generateParameterName('price_lists');
 
-            $repository = $this->registry->getRepository(PriceListToProduct::class);
+            $repository = $this->doctrine->getRepository(PriceListToProduct::class);
             $subQueryBuilder = $repository->createQueryBuilder('relation');
             $subQueryBuilder->where(
                 $subQueryBuilder->expr()->andX(
@@ -249,8 +236,7 @@ Our new filter should be registered in the service container with the oro_filter
         arguments:
             - '@form.factory'
             - '@oro_filter.filter_utility'
-        calls:
-            - [setRegistry, ['@doctrine']]
+            - '@doctrine'
         tags:
             - { name: oro_filter.extension.orm_filter.filter, type: product-price-lists }
 
@@ -262,16 +248,16 @@ This filter can be added to the grid configuration similarly to how we added new
     class ProductsGridListener
     {
         /**
-         * @var RegistryInterface
+         * @var ManagerRegistry
          */
-        protected $registry;
+        protected $doctrine;
 
         /**
-         * @param RegistryInterface $registry
+         * @param ManagerRegistry $doctrine
          */
-        public function __construct(RegistryInterface $registry)
+        public function __construct(ManagerRegistry $doctrine)
         {
-            $this->registry = $registry;
+            $this->doctrine = $doctrine;
         }
 
         /**
@@ -359,9 +345,9 @@ This filter can be added to the grid configuration similarly to how we added new
          */
         protected function addPriceListsToRecords(array $records)
         {
-            $repository = $this->registry->getRepository(PriceListToProduct::class);
+            $repository = $this->doctrine->getRepository(PriceListToProduct::class);
             /** @var EntityManager $objectManager */
-            $objectManager = $this->registry->getManager();
+            $objectManager = $this->doctrine->getManager();
 
             $products = [];
             foreach ($records as $record) {

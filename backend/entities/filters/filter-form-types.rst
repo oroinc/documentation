@@ -26,7 +26,6 @@ The following filters form types are available:
    "DateTimeRangeFilterType","oro_type_datetime_range_filter","Represents date and time filter form"
    "DateRangeType","oro_type_date_range","This form type is used by oro_type_date_range_filter as field type"
    "DateTimeRangeType","oro_type_datetime_range","This form type is used by oro_type_datetime_range_filter as field type"
-   "SelectRowFilterType","oro_type_selectrow_filter","This form type is used by datagrid extension only"
    "DateGroupingFilterType","oro_type_date_grouping_filter","Represents date grouping filter"
    "SkipEmptyPeriodsFilterType","oro_type_skip_empty_periods_filter","Represents skip empty periods filter"
 
@@ -453,27 +452,6 @@ oro\_type\_date\_range
 **Class**
 
 ``Oro\Bundle\FilterBundle\Form\Type\DateTimeRangeType``
-
-.. _backend-filters-form-types-selectrow:
-
-oro\_type\_selectrow  Form Type
--------------------------------
-
-Provides filtering by selected/not selected rows in datagrid
-
-**Default Options**
-
-* field\_type = "choice"
-
-**Parent Type**
-
-oro\_type\_filter
-
-**Class**
-
-``Oro\Bundle\FilterBundle\Form\Type\SelectRowFilterType``
-
-oro_filter.form.type.date_grouping
 
 .. _backend-filters-form-types-grouping:
 

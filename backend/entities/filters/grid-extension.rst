@@ -95,13 +95,6 @@ Provides filtering using string comparison.
 
 `type: string` - Validated by TextFilterType in backend and rendered by :ref:`Oro.Filter.ChoiceFilter <backend-entities-filters-js-widgets-oro-filter-choice-filter>`.  When case_insensitive is set to false, it is possible to convert value by using callback defined in 'value_conversion'.
 
-Select Row Filter
-^^^^^^^^^^^^^^^^^
-
-Provides filtering by selected/not selected records
-
-`type: string` - Validated by :ref:`SelectRowFilterType <backend-filters-form-types-selectrow>` in backend.
-
 Number and Percent Filter
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
