@@ -1125,10 +1125,18 @@ Example of displaying the form with choice (radio buttons):
 Storage Configuration
 ---------------------
 
-OroImportExportBundle uses private storage with `importexport` directory path to provide a filesystem abstraction layer.
+OroImportExportBundle uses |Gaufrette| to provide a filesystem abstraction layer.
 
-By default, it is configured to store files in the `var/data/importexport` local directory of your project.
-You can change it with configuration of the :ref:`File Storage <backend-file-storage>`.
+The Gaufrette filesystem name is ``importexport``.
+By default, it is a private storage that is configured to store files in the ``var/data/importexport`` local directory
+of your project.
+
+To upload additional files, e.g. images, that are referenced by importing files, a separate filesystem is used.
+The Gaufrette filesystem name is ``import_files``.
+By default, it is a private storage that is configured to retrieve files from the ``var/data/import_files`` local directory
+of your project.
+
+Both filesystems can be changed with the configuration of the :ref:`File Storage <backend-file-storage>`.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

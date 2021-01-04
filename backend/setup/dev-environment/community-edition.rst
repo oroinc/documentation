@@ -437,6 +437,43 @@ For the changes to take effect, restart PHP-FPM by running:
 
    systemctl restart php-fpm
 
+Configure Storage For Import Files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+During the import, product images and File entity field files can be imported by a path to an image or a file.
+
+This path can be either:
+
+- a URL,
+- an absolute path,
+- a relative path. In this case, the files are searched in the Gaufrette filesystem configured to store files to import. By default, it is configured to use the ``{PROJECT}/var/data/import_files`` local directory as storage.
+
+This path can be reconfigured with |Gaufrette| adapter configuration.
+
+For example, to change the path location, add a new configuration of the **import_files** |Gaufrette| adapter
+in the ``Resources\config\oro\app.yml`` file of your bundle:
+
+.. code-block:: yaml
+
+    knp_gaufrette:
+        adapters:
+            import_files:
+                local:
+                    directory: '/new/path/to/import_files'
+
+Use Gaufrette filesystem abstraction layer as storage, this configuration can be changed to use any supported filesystem
+adapter supported by |Gaufrette| library.
+
+For example, the configuration to use :ref:`GridFS <bundle-docs-platform-gridfs-config-bundle>` storage can be the following:
+
+.. code-block:: yaml
+
+    knp_gaufrette:
+        adapters:
+            import_files:
+                oro_gridfs:
+                    mongodb_gridfs_dsn: 'mongodb://127.0.0.1:27017/import_data_files'
+
 What's Next
 -----------
 

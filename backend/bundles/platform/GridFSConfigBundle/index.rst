@@ -88,7 +88,7 @@ To reconfigure an adapter, add the parameter with the name ``gaufrette_adapter.[
 where the ``adapter_name`` is the name of an existing adapter.
 The value of the parameter is the MongoDB DSN string described in the previous chapter started with ``gridfs:``.
 
-The following example shows the reconfiguration of the `public` adapter:
+The following example shows the reconfiguration of the ``public`` adapter:
 
 .. code-block:: yaml
 
@@ -104,7 +104,7 @@ To reconfigure a filesystem, add the parameter with the name ``gaufrette_filesys
 where the ``filesystem_name`` is the name of an existing filesystem.
 As for the adapter configuration the value of the parameter is the MongoDB DSN string.
 
-The following example shows the reconfiguration of the `attachments` filesystem:
+The following example shows the reconfiguration of the ``attachments`` filesystem:
 
 .. code:: yaml
 
@@ -121,7 +121,7 @@ To get the list of existing Gaufrette filesystems, use the following command:
 Configuration for Cluster MongoDB GridFS Setup
 ----------------------------------------------
 
-If you have installed MongoDB cluster, it can be used as the GridFS frorage as well.
+If you have installed MongoDB cluster, it can be used as the GridFS storage as well.
 
 In this case, the dsn configuratoin string has the following format:
 `[protocol]://[user]:[password]@[host1]:[port],[host2]:[port]/[database]`

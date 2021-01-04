@@ -8,10 +8,10 @@ Adapters Configuration
 Reconfigure File System Adapters
 --------------------------------
 
-By default, public and private file system type |Gaufrette| adapters are configured to use the local file system adapter.
+By default, the ``public`` and ``private`` |Gaufrette| adapters are configured to use the local filesystem adapter.
 However, you can reconfigure them to use another storage adapter.
 
-Oro applications support the local file system adapter and |GridFS| by :ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`.
+Oro applications support the local filesystem adapter and |GridFS| by :ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`.
 
 There are two ways to change the configuration of adapters:
 
