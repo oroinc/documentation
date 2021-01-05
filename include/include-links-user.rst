@@ -257,7 +257,7 @@ Links (User)
 
 .. |Set Up Your Website Storefront – Buyer’s Perspective| raw:: html
 
-   <a href="https://www.youtube.com/watch?v=9O4p1vpxPSI" target="_blank">Set Up Your Website Storefront – Buyer’s Perspective</a>
+   <a href="https://youtu.be/0c9L_urjgng" target="_blank">Set Up Your Website Storefront – Buyer’s Perspective</a>
 
 .. |Exploring Storefront Possibilities as a Company Administrator| raw:: html
 
