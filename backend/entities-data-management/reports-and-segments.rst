@@ -275,11 +275,11 @@ Datagrid
 For a table representation of the segment, use **OroDataGridBundle**. A grid configuration comes from the segment definition in *Oro\\Bundle\\SegmentBundle\\Grid\\ConfigurationProvider*.
  It retrieves the segment identifier from the grid name and passes the loaded segment entity to *SegmentDatagridConfigurationBuilder*.
  The datagrid configuration does not process filtering to encapsulate filtering logic in *SegmentFilter*.
- So, for those purposes, two proxy classes, *DatagridSourceSegmentProxy* and *RestrictionSegmentProxy*, were created.
+ So, for those purposes, two proxy classes, *SegmentDatagridConfigurationQueryDesigner* and *DynamicSegmentQueryDesigner*, were created.
 
- **DatagridSourceSegmentProxy** provides the definition to *segment filter* only. So, the datagrid configuration builder receives the definition for segment filter.
+*SegmentDatagridConfigurationQueryDesigner* provides the definition to *segment filter* only. So, the datagrid configuration builder receives the definition for segment filter.
 
-*SegmentQueryConverter* uses *RestrictionSegmentProxy* to decline converting definition of the columns, as the query builder needs only one field in the *SELECT* statement, which is an entity identifier.
+*DynamicSegmentQueryDesigner* is used by *SegmentQueryConverter* to decline converting definition of the columns, as the query builder needs only one field in the *SELECT* statement, which is an entity identifier.
 
 .. _backend-segments-usage:
 
