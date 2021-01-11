@@ -5647,6 +5647,7 @@ Links (Dev)
 .. |Supported features when you open Sketch files in Adobe XD| raw:: html
 
    <a href="https://helpx.adobe.com/xd/user-guide.html/xd/kb/open-sketch-files-in-xd.ug.html" target="_blank">Supported features when you open Sketch files in Adobe XD</a>
+
 .. |FileManager| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Provider/OrderStatusesProviderInterface.php" target="_blank">OrderStatusesProviderInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/GaufretteBundle/FileManager.php" target="_blank">FileManager</a>

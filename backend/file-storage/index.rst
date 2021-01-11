@@ -34,7 +34,7 @@ data will be stored in the ``public/media`` directory of the application.
 Access to Data in Storage
 -------------------------
 
-The main access point to the files in storage is the |FileManager| class.
+The main access point to the files in storage is the |FileManager| service.
 
 Each type of storage can store different types of data.
 For example, private storage stores the attachment data and import/export data files.
@@ -63,12 +63,12 @@ To implement the access point to your type of data in the storage:
 
 As a result, the **acme.file_manager** service will be the entry point of your new private file storage.
 
-By default, if the Gaufrette local filesystem adapter is used to store files for a file system, the data will be saved to the
+By default, if the Gaufrette local filesystem adapter is used to store files for a filesystem, the data will be saved to the
 sub-directory with the name of the Gaufrette filesystem used for this file storage.
 
 For the previous example, this default path is the ``var/data/some_storage`` directory of the application.
 
-For the public file system, it is ``public/media/your_filesystem_name``.
+For the public filesystem, it is ``public/media/your_filesystem_name``.
 
 You can change this sub-directory name by setting them as the second parameter of the file manager service declaration:
 
@@ -86,8 +86,8 @@ You can change this sub-directory name by setting them as the second parameter o
 Simple Access to Public Storage Files
 -------------------------------------
 
-If the Gaufrette local filesystem adapter is used to store files for the public file system, all the files
-stored in this file system will be available via direct URI ``http://your_domain/media/sub_directory/filename``.
+If the Gaufrette local filesystem adapter is used to store files for the public filesystem, all the files
+stored in this filesystem will be available via direct URI ``http://your_domain/media/sub_directory/filename``.
 
 But if the storage uses another adapter type, for example, the |GridFS| storage type
 by :ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>`, this URIs will not work
@@ -111,6 +111,24 @@ file manager service can be the following:
             - { name: oro_gaufrette.public_filesystem_manager }
 
 In this example, the files are available via the ``http://your_domain/media/my_public/filename`` URIs.
+
+Access to Data via Stream Wrappers
+----------------------------------
+
+Files in the filesystem can be accessed via stream wrappers, as well as with the help of the |FileManager| service.
+
+The application has two stream wrappers configured to be used with Gaufrette filesystems:
+
+- Common wrapper by the |KnpGaufretteBundle|;
+- Read-only wrapper by the :ref:`OroGaufretteBundle <bundle-docs-platform-gaufrette-bundle>`.
+
+The common stream wrapper allows to get full access to the files stored in the filesystem. By default, the wrapper is configured
+to use the ``gaufrette`` protocol. To get the full URL of a file use `getFilePath()` method of the |FileManager| service.
+
+The read-only stream wrapper can be used if you need to read data but do not know if the data to be written is available.
+For example, this case can be figured if the local adapter was used and the files were uploaded by someone other than the user that runs
+the application. By default, the wrapper is configured to use the ``gaufrette-readonly`` protocol.
+To get the full URL of a file use `getReadonlyFilePath()` method of the |FileManager| service.
 
 .. toctree::
    :titlesonly:
