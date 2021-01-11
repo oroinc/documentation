@@ -198,7 +198,7 @@ For instance, when the order is paid for by using a credit or a debit card, the 
 .. note::
      Payment Status is based on the payment transaction status and is not linked to :ref:`the status of an actual order <doc--orders--statuses--internal>` (i.e., open, shipped, archived, etc.) in any way.
 
-The are several types of payment transactions that can be displayed on the order page, for example:
+There are several types of payment transactions that can be displayed on the order page, for example:
 
 * Authorize
 * Charge

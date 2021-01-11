@@ -16,7 +16,7 @@ but you can also create a theme in one of the existing bundles.
 Create a Theme
 --------------
 
-First, create a theme folder in ``Resources/views/layouts/``. For example ``DemoBundle/Resources/views/layouts/first_theme/``, where ``first_name`` is the theme name.
+First, create a theme folder in ``Resources/views/layouts/``. For example ``DemoBundle/Resources/views/layouts/first_theme/``, where ``first_theme`` is the theme name.
 The theme definition should be placed in ``theme.yml`` in a theme folder, for example:
 
 .. code-block:: yaml
