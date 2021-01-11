@@ -151,7 +151,7 @@ Webserver configuration can be modified, as illustrated below:
     ---
     orocloud_options:
       webserver:
-        header_x_frame:true
+        header_x_frame: true
         redirects_map:
           '/about_us_old': '/about'
           '/about_them_old': '/about_them'
@@ -255,9 +255,9 @@ This configuration option enables you to setup redirects to the existing URLs of
 X Frame Header Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **header_x_frame:true** — is the default value of the flag. In this case, OroCloud WAF adds the "X-Frame-Options: SAMEORIGIN" header when responding to the initial request. It makes it impossible to embed any OroCommerce site into iFrame at any site except itself to fulfill security requirements.
+* **header_x_frame: true** — is the default value of the flag. In this case, OroCloud WAF adds the "X-Frame-Options: SAMEORIGIN" header when responding to the initial request. It makes it impossible to embed any OroCommerce site into iFrame at any site except itself to fulfill security requirements.
 
-Some business cases require embedding the OroCloud site into the iFrame at other sites. You need to set the value to “false” : ``header_x_frame:false``.
+Some business cases require embedding the OroCloud site into the iFrame at other sites. You need to set the value to “false” : ``header_x_frame: false``.
 This prevents WAF from sending the “X-Frame-Options” header which allows embedding into any iFrame.
 
 Locations Configuration

@@ -40,11 +40,11 @@ To create a new customer group:
 
 #. Select **Tax Code** that will label the customer group taxation schema.
 
-#. In the **Additional** section, select a Payment term to be used as a payment option available to the customer users during on the checkout.
+#. In the **Additional** section, select a Payment term to be used as a payment option available to the customer users during the checkout.
 
 #. In the **Customers** section, check the customers to add them to the customer group.
 
-#. In the **Price Lists** section as described in the :ref:`Price List Management for a Customer Group <user-guide--customers--customer-groups--pricelist>` section.
+#. In the **Price Lists** section, add the price lists and configure the fallback option, as described in the :ref:`Price List Management for a Customer Group <user-guide--customers--customer-groups--pricelist>` section.
 
 #. Click **Save** in the top right corner.
 

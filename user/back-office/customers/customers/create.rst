@@ -37,7 +37,7 @@ To create a new customer:
 
 #. In the **Additional** section, select a Payment term to be used as a payment option available to the customer users during the checkout.
 
-#. In the **Price Lists** section, add pricelists and prioritize them as described in the :ref:`Price List Management for a Customer Group <user-guide--customers--customer-groups--pricelist>` section.
+#. In the **Price Lists** section, add price lists and prioritize them as described in the :ref:`Price List Management for a Customer Group <user-guide--customers--customer-groups--pricelist>` section.
 
 #. When OroCommerce is deployed with InfinitePay payments support, the customer's VAT Id shall be captured for their creditworthiness verification. VAT Id should be valid, and the billing address should match the one provided for the VAT registration. These are prerequisites to enable payments via :ref:`InfinitePay <user-guide--payment--prerequisites--infinitepay>` for the customer users.
 
