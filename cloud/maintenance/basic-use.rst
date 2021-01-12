@@ -474,7 +474,7 @@ By default, the `app:console` command runs in the `silent` mode, which means tha
 Application Cache
 -----------------
 
-Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache without downtime. This command does the following:
+Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache with downtime. This command does the following:
 
 * Stops `Consumer` and `Cron` jobs
 * Prepares `Redis` cache storage
