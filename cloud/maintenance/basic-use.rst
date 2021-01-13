@@ -744,6 +744,22 @@ To purge the messages from the RabbitMQ, use the `rabbitmq:queue:purge` command.
 
 .. note:: The ``vhost`` and ``queue`` argument values can be retrieved with the `rabbitmq:queue:list` command.
 
+RabbitMq Reroute
+~~~~~~~~~~~~~~~~
+
+To reroute the messages from RabbitMQ queue to exchange, use the `rabbitmq:reroute:queue` command.
+
+.. code-block:: none
+    :linenos:
+
+    rabbitmq:reroute:queue [options] [--] [<queue> [<exchange>]]
+
+* `queue` argument is required, RabbitMQ queue name, e.g., `oro.unprocessed`.
+* `exchange` argument is required, RabbitMQ exchange name, e.g., `oro.default`.
+* `filter` option is optional, filter messages by the topic name (oro.message_queue.client.topic_name). Example: oro.cron.*. Default - all messages.
+
+.. note:: The ``queue`` argument value can be retrieved with the `rabbitmq:queue:list` command.
+
 Service Commands
 ----------------
 
