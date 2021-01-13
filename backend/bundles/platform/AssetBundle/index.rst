@@ -257,7 +257,7 @@ Turn on watch mode. This means that after the initial build, webpack continues t
 `--npm-install|-i`
 """"""""""""""""""
 
-Reinstall npm dependencies to `vendor/oro/platform/build` folder, to be used by webpack. It is required when `node_modules` folder is corrupted.
+Reinstall npm dependencies to be used by webpack. It is required when `node_modules` folder is corrupted.
 
 Configuration Reference
 -----------------------
@@ -354,6 +354,10 @@ The following example illustrates the use of simplified `requirejs.yml` from `UI
    :linenos:
 
    config:
+       entry:
+           app:
+               - oroui/js/app
+               - oroui/js/app/services/app-ready-load-modules
        shim:
            'jquery.select2':
                deps:
@@ -374,6 +378,18 @@ Please see how each of the existing sections should be modified for `jsmodules.y
 
 .. note:: There is no need to use the ``bundle/`` prefix and ``.js`` extension in paths to the files.
 
+entry
+~~~~~
+
+Add the below section as is.
+
+.. code-block:: yaml
+   :linenos:
+
+   entry:
+      app:
+          - oroui/js/app
+          - oroui/js/app/services/app-ready-load-modules
 
 map
 ~~~
@@ -533,7 +549,7 @@ To fix the error, remove the existing node modules and re-build the assets:
 .. code-block:: bash
    :linenos:
 
-    rm -rf vendor/oro/platform/build/node_modules
+    rm -rf ./node_modules
     php bin/console cache:clear
     php bin/console oro:assets:build
 

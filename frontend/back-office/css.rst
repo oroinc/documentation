@@ -19,6 +19,16 @@ SCSS files should be stored in the ``Resources/public/css/`` folder of a bundle 
             - 'bundles/acmenew/css/popups.scss'
             - 'bundles/acmenew/css/product-view-page.scss'
 
+You can import Sass modules from **node_modules**. Just prepend them with a ~ to tell Webpack that this is not a relative import.
+
+.. code-block:: yaml
+    :linenos:
+
+    # src/Acme/NewBundle/Resources/config/oro/assets.yml
+    css:
+        inputs:
+            - '~prismjs/themes/prism-coy.css'
+
 To apply changes, run the command:
 
 .. code-block:: bash

@@ -19,7 +19,7 @@ Once the `node` is installed, install several modules using |Node Packaged Modul
 .. code-block:: bash
    :linenos:
 
-    npm install --prefix=vendor/oro/platform/build
+    npm install
 
 Where the `--prefix` parameter specifies the relative path to the `platform/build` directory.
 
@@ -30,7 +30,7 @@ Configuration for the test-run is placed in `build/karma.config.js.dist`.
 
 .. hint:: See more information in the official |Karma documentation|.
 
-It can be useful to create a separate configuration file by copying the `./vendor/oro/platform/build/karma.config.js.dist` file to `./vendor/oro/platform/build/karma.config.js` and modifying it.
+It can be useful to create a separate configuration file by copying the `./vendor/oro/platform/build/karma.config.js.dist` file to `karma.config.js` and modifying it.
 
 Running
 -------
@@ -40,7 +40,7 @@ To run tests, call the following command:
 .. code-block:: bash
    :linenos:
 
-   ./vendor/oro/platform/build/node_modules/.bin/karma start ./vendor/oro/platform/build/karma.conf.js.dist --single-run
+   npm run test
 
 Remember to change the path to `platform/build` directory, if it is different in your application.
 
@@ -50,7 +50,7 @@ There are few custom options added for preparing karma config:
 
 - `--mask` _string_ file mask for Spec files. By default it is `'vendor/oro/**/Tests/JS/**/*Spec.js'` that matches all Spec files in the project within oro vendor directory.
 - `--spec` _string_ path for a certain Spec file, if it passed then the search by mask is skipped and the test is run single Spec file.
-- `--skip-indexing` _boolean_ allows to skip phase of collection Spec files and reuse the collection from previews run (if it exists).  
+- `--skip-indexing` _boolean_ allows to skip phase of collection Spec files and reuse the collection from previews run (if it exists).
 - `--theme` _string_ theme name is used to generate webpack config for certain theme. By default it is `'admin.oro'`.
 
 The following extensions can be useful if you use PHPStorm:
@@ -78,44 +78,7 @@ The example below illustrates the spec for the `oroui/js/mediator` module:
        });
    });
 
-karma-jsmodule-exposure
-^^^^^^^^^^^^^^^^^^^^^^^
-
-This approach allows to test the public API of a module. But what about
-
-Use the  |karma-jsmodule-exposure| plugin on a fly injects exposing code inside the js-module and provides API to manipulate internal variables:
-
-.. code-block:: js
-   :linenos:
-
-    import someModule from 'some/module';
-    import jsmoduleExposure from 'jsmodule-exposure';
-    
-    // get exposure instance for tested module
-    var exposure = jsmoduleExposure.disclose('some/module');
-    
-    describe('some/module', function () {
-        var foo;
-    
-        beforeEach(function () {
-            // create mock object with stub method 'do'
-            foo = jasmine.createSpyObj('foo', ['do']);
-            // before each test, pass it off instead of original
-            exposure.substitute('foo').by(foo);
-        });
-    
-        afterEach(function () {
-            // after each test restore original value of foo
-            exposure.recover('foo');
-        });
-    
-        it('check doSomething() method', function() {
-            someModule.doSomething();
-    
-            // stub method of mock object has been called
-            expect(foo.do).toHaveBeenCalled();
-        });
-    });
+.. hint:: Use the |inject-loader| webpack loader for stubbing dependencies of a tested module.
 
 Jasmine-jQuery
 ^^^^^^^^^^^^^^

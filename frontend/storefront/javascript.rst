@@ -19,8 +19,9 @@ JS modules configuration file should be placed in the
 `Resources/views/layouts/{theme_name}/config` folder and named `jsmodules.yml`, for
 example `DemoBundle/Resources/views/layouts/base/config/jsmodules.yml`.
 
-Entry point for Webpack build is `oroui/js/app`.
-But you can change it providing the same alias to the necessary entry point.
+Default entry point for Webpack build is `oroui/js/app`.
+But you can change it by providing the same alias to the necessary entry point
+or configuring the **entry** section in the jsmodules.yml file.
 
 
 **Example:**
@@ -29,6 +30,10 @@ But you can change it providing the same alias to the necessary entry point.
     :linenos:
 
     # src/Acme/Bundle/DemoBundle/Resources/views/layouts/base/config/jsmodules.yml
+    entry:
+        app:
+            - oroui/js/app
+            - oroui/js/app/services/app-ready-load-modules
     shim:
         jquery:
             expose:

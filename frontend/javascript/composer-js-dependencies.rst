@@ -38,7 +38,6 @@ During the `composer install` command composer runs the ``Oro\Bundle\InstallerBu
 * updates `dependencies` section in existing `package.json` or creates new file
 * generates `package-lock.json` file
 * fetches NPM packages and puts them into `node_modules/` directory
-* copies installed packages from the `node_modules/` directory to the `%symfony-web-dir%/bundles/npmassets/` directory
 
 .. hint:: The generated `package.json` file is a technical file which should not be changed manually and is ignored by Git.
 
@@ -62,10 +61,8 @@ An example of `composer.json` containing NPM dependencies in the `extra.npm` sec
 Application Install When Lock Files Already Exist
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If `package-lock.json` already exists, post-install command ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets`` does the following:
-
- - runs `npm ci` which looks into the lock file, fetches NPM packages, and puts them into `node_modules/` directory
- - copies installed packages from the `node_modules/` directory into the `%symfony-web-dir%/bundles/npmassets/` directory
+If `package-lock.json` already exists, post-install command ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets``
+runs `npm ci` which looks into the lock file, fetches NPM packages, and puts them into `node_modules/` directory.
 
 Adding New NPM Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

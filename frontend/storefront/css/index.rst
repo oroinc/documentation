@@ -94,6 +94,10 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
             - 'bundles/oroui/blank/scss/variables/page-footer-config.scss'
             - 'bundles/oroui/blank/scss/variables/page-title-config.scss'
             - 'bundles/oroui/blank/scss/styles.scss'
+            # You can import Sass modules from node_modules.
+            # Just prepend them with a ~ to tell Webpack that this is not a relative import.
+            # See: https://webpack.js.org/loaders/sass-loader/#resolving-import-at-rules
+            - '~prismjs/themes/prism-coy.css'
         filters: ['cssrewrite', 'cssmin']
         output: 'css/layout/blank/styles.css'
 
@@ -113,6 +117,7 @@ Example:
     @import "../bundles/oroui/blank/scss/variables/page-footer-config.scss";
     @import "../bundles/oroui/blank/scss/variables/page-title-config.scss";
     @import "../bundles/orocustomer/blank/scss/**styles.scss**";
+    @import "~prismjs/themes/prism-coy.css";
 
 This structure enables us to change styles for components on a bundle
 level, on a component level and for a particular theme. The main idea

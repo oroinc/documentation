@@ -208,7 +208,7 @@ To run the check manually from the command line:
 
 .. code-block:: none
 
-    ./vendor/oro/platform/build/node_modules/.bin/eslint ./vendor/oro/ -c ./vendor/oro/platform/build/.eslintrc.yml --ignore-path ./vendor/oro/platform/build/.eslintignore
+    npm run lint vendor/oro
 
 .NET Code Style
 ^^^^^^^^^^^^^^^

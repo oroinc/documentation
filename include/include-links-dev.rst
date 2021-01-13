@@ -183,9 +183,9 @@ Links (Dev)
 
    <a href="https://github.com/velesin/jasmine-jquery" target="_blank">Jasmine-jQuery</a>
 
-.. |karma-jsmodule-exposure| raw:: html
+.. |inject-loader| raw:: html
 
-   <a href="https://github.com/laboro/karma-jsmodule-exposure.git" target="_blank">karma-jsmodule-exposure</a>
+   <a href="https://github.com/plasticine/inject-loader" target="_blank">inject-loader</a>
 
 .. |Supervisor| raw:: html
 

@@ -8,13 +8,30 @@ JS Modules
 +-----------+------------------------------------------------------------+
 | Root Node | none                                                       |
 +-----------+------------------------------------------------------------+
-| Sections  | * `aliases`_                                               |
+| Sections  | * `entry`_                                                 |
+|           | * `aliases`_                                               |
 |           | * `app-modules`_                                           |
 |           | * `configs`_                                               |
 |           | * `dynamic-imports`_                                       |
 |           | * `map`_                                                   |
 |           | * `shim`_                                                  |
 +-----------+------------------------------------------------------------+
+
+``entry``
+-----------
+
+**type**: ``map``
+
+Webpack entry points configuration. For each new entry point, add the script tag
+with the entry point file path to the twig template or layout update to load the entry point file on a page.
+
+.. code-block:: yaml
+    :linenos:
+
+    entry:
+        app:
+            - oroui/js/app
+            - oroui/js/app/services/app-ready-load-modules
 
 ``aliases``
 -----------
@@ -30,7 +47,7 @@ Aliases can help import certain modules easily using short names.
     :linenos:
 
     aliases:
-        backbone$: npmassets/backbone/backbone
+        backbone$: backbone/backbone
         oro/block-widget$: oroui/js/widget/block-widget
 
 ``app-modules``
