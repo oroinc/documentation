@@ -17,8 +17,7 @@ The following software is required to run JS tests:
 Once the `node` is installed, install several modules using |Node Packaged Modules| manager by executing the following command from the root folder of your application:
 
 .. code-block:: bash
-   :linenos:
-
+  
     npm install
 
 Where the `--prefix` parameter specifies the relative path to the `platform/build` directory.
@@ -38,8 +37,7 @@ Running
 To run tests, call the following command:
 
 .. code-block:: bash
-   :linenos:
-
+   
    npm run test
 
 Remember to change the path to `platform/build` directory, if it is different in your application.
@@ -53,10 +51,30 @@ There are few custom options added for preparing karma config:
 - `--skip-indexing` _boolean_ allows to skip phase of collection Spec files and reuse the collection from previews run (if it exists).
 - `--theme` _string_ theme name is used to generate webpack config for certain theme. By default it is `'admin.oro'`.
 
+To keep tests continuously running and re-executing when any watched file is modified, use the following command:
+
+.. code-block:: bash
+   
+   npm run test-watch
+
+To debug unit test:
+
+ - run test in watch mode
+ - open the ``http://localhost:9876/debug.html`` page in you browser (check the port in the address, it has to be the same as in terminal's output)
+ - open the inspector panel and use it for the debug purpose
+
+Any modification of the source or test file will lead to reassembly, after which you can reload the page in the browser and debug the updated code.  
+
+To run specific test, use the `--spec "<path/to/someSpec.js>"` parameter:
+
+.. code-block:: bash
+  
+   npm run test-watch -- --spec vendor/oro/platform/src/Oro/Bundle/UIBundle/Tests/JS/mediatorSpec.js
+
 The following extensions can be useful if you use PHPStorm:
 
-- |Karma plugin| helps to run testsuite from IDE and view results there;
-- |ddescriber for jasmine| helps to turn off or skip some tests from testsuite quickly.
+- |Karma plugin| helps to run testsuite from the IDE and view results there;
+- |ddescriber for jasmine| helps to quickly turn off or skip some tests from testsuite .
 
 Writing
 -------
