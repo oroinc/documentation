@@ -204,17 +204,11 @@ To run the check manually from the command line:
 
     npm install
 
-2. Then, run |ESLint| to check JS files for code-style in `vendor/oro` dir;
+2. Then, run |ESLint| to check JS files for code-style;
 
 .. code-block:: none
 
-    npm run lint
-
-The execution of the command might take some time, and if you want to check JS code-style in specific path, use:
-
-.. code-block:: none
-
-    npm run lint-path -- vendor/oro/platform/src/Oro/Bundle/UIBundle/Resources/public
+    npm run lint file.js [file.js] [dir] -- [options]
 
 .NET Code Style
 ^^^^^^^^^^^^^^^
