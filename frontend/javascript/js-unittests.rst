@@ -20,16 +20,14 @@ Once the `node` is installed, install several modules using |Node Packaged Modul
   
     npm install
 
-Where the `--prefix` parameter specifies the relative path to the `platform/build` directory.
-
 Configuration
 -------------
 
-Configuration for the test-run is placed in `build/karma.config.js.dist`.
+Configuration for the test-run is placed in `karma.config.js.dist` file on the root directory of the application.
 
 .. hint:: See more information in the official |Karma documentation|.
 
-It can be useful to create a separate configuration file by copying the `./vendor/oro/platform/build/karma.config.js.dist` file to `karma.config.js` and modifying it.
+It can be useful to create a separate configuration file by copying the `karma.config.js.dist` file to `karma.config.js` and modifying it.
 
 Running
 -------
@@ -39,8 +37,6 @@ To run tests, call the following command:
 .. code-block:: bash
    
    npm run test
-
-Remember to change the path to `platform/build` directory, if it is different in your application.
 
 To run testsuite with a custom configuration, you can use the command line parameters which overwrite the parameters in the configuration file.
 
