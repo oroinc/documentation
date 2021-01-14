@@ -28,7 +28,7 @@ You can create content blocks with a collection of predefined content variants u
    :linenos:
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
 
     use Oro\Bundle\CMSBundle\Entity\ContentBlock;
     use Oro\Bundle\CMSBundle\Entity\TextContentVariant;
@@ -64,7 +64,7 @@ Render a Content Block in the Layout
 ------------------------------------
 
 Content blocks can be rendered by unique `aliases` using the `content_block` block type:
- 
+
 .. code-block:: yaml
    :linenos:
 

@@ -161,7 +161,7 @@ An example of a fixture:
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
     use Oro\Bundle\FooBarBundle\Entity\FooEntity;
 
     class LoadFooData extends AbstractFixture
@@ -193,7 +193,7 @@ which enables to load fixtures depending on other fixtures being already loaded:
 
     use Doctrine\Common\DataFixtures\DependentFixtureInterface;
     use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
 
     class LoadFooData extends AbstractFixture implements DependentFixtureInterface
     {
@@ -215,7 +215,7 @@ Further, you can use reference-specific entities from fixtures, e.g.:
 
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
 
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
     use Doctrine\Common\DataFixtures\DependentFixtureInterface;
     use Doctrine\Common\DataFixtures\AbstractFixture;
 
@@ -545,7 +545,7 @@ Here is an example of a fixture that adds a user without permissions:
     namespace Oro\Bundle\UserBundle\Tests\Functional\DataFixtures;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
 
     use Symfony\Component\DependencyInjection\ContainerAwareInterface;
     use Symfony\Component\DependencyInjection\ContainerInterface;

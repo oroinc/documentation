@@ -15,7 +15,7 @@ Use the following code to subscribe to this event:
    :linenos:
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
     use Doctrine\DBAL\Event\ConnectionEventArgs;
     use Oro\Component\Testing\Doctrine\Events;
 

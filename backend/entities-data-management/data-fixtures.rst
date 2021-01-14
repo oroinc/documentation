@@ -14,7 +14,7 @@ programmatically. In OroPlatform, this can be done by creating classes that are 
     use AppBundle\Entity\Priority;
     use AppBundle\Entity\Task;
     use Doctrine\Common\DataFixtures\FixtureInterface;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
 
     class LoadTasks implements FixtureInterface
     {

@@ -92,7 +92,7 @@ The OAuth applications can be added using data fixtures. For example:
     namespace Oro\Bundle\OAuth2ServerBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
     use Oro\Bundle\OAuth2ServerBundle\Entity\Client;
     use Oro\Bundle\OAuth2ServerBundle\Entity\Manager\ClientManager;
     use Oro\Bundle\OrganizationBundle\Entity\Organization;

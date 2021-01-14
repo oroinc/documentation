@@ -274,7 +274,7 @@ Configuration Provider Interface
 Configuration Provider Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 6d3d71f5c29f0b4bd54db2f1a15ec918a405cbe3
+.. oro_integrity_check:: cc61d82703108956e0b2d5d29251f34e7c7c2ab1
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Provider/CollectOnDeliveryConfigProvider.php
       :language: php

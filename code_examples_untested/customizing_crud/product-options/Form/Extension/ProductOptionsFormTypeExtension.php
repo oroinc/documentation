@@ -2,9 +2,9 @@
 
 namespace Oro\Bundle\BlogPostExampleBundle\Form\Extension;
 
-use Doctrine\Common\Persistence\ManagerRegistry;
-use Doctrine\Common\Persistence\ObjectManager;
-use Doctrine\Common\Persistence\ObjectRepository;
+use Doctrine\Persistence\ManagerRegistry;
+use Doctrine\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectRepository;
 use Oro\Bundle\BlogPostExampleBundle\Entity\ProductOptions;
 use Oro\Bundle\BlogPostExampleBundle\Form\Type\ProductOptionsType;
 use Oro\Bundle\ProductBundle\Entity\Product;

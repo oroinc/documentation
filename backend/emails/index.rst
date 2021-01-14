@@ -263,7 +263,7 @@ information. The easiest way to register a new `EmailNotification` is to create 
     namespace Acme\DemoBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
     use Oro\Bundle\NotificationBundle\Entity\EmailNotification;
     use Oro\Bundle\NotificationBundle\Entity\RecipientList;
 

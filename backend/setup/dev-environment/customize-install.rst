@@ -97,7 +97,7 @@ To load your own data fixtures, you will need to implement Doctrine's *"FixtureI
     namespace Acme\DemoBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\FixtureInterface;
-    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Persistence\ObjectManager;
 
     class CustomFixture implements FixtureInterface
     {
