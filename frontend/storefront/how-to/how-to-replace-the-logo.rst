@@ -65,10 +65,11 @@ Replace Favicons
 
 2. Create a :ref:`Layout Update <dev-doc-frontend-layouts-layout-updates>` file to replace other specific favicons in the storefront.
 
-   .. important:: Please make sure that you also remove the default Oro favicons via the layout update, otherwise they will be used instead of the new ones.
+.. important:: Please make sure to remove the default Oro favicons via the layout update, otherwise, they will be used instead of the new ones. 
+               Also, please, make sure to change the option id: favicon_theme_icon. This option will change background color for the top bar on andriod devices.
 
-   .. code-block:: yaml
-       :linenos:
+.. code-block:: yaml
+   :linenos:
 
        // src/AppBundle/Resources/views/layouts/{your_theme_id}/favicon.yml
        layout:
@@ -133,6 +134,10 @@ Replace Favicons
                    id: msapplication_tileimage
                    optionName: content
                    optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/mstile-144x144.png")'
+               - '@setOption':
+                   id: favicon_theme_icon
+                   optionName: content
+                   optionValue: '#ed2d27'
                - '@remove':
                    id: favicon_mask_icon
 
