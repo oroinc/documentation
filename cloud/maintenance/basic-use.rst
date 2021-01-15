@@ -474,7 +474,7 @@ By default, the `app:console` command runs in the `silent` mode, which means tha
 Application Cache
 -----------------
 
-Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache without downtime. This command does the following:
+Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache with downtime. This command does the following:
 
 * Stops `Consumer` and `Cron` jobs
 * Prepares `Redis` cache storage
@@ -738,6 +738,40 @@ To purge the messages from the RabbitMQ, use the `rabbitmq:queue:purge` command.
 * `queue` argument is required, RabbitMQ queue name, e.g., `oro.default`.
 
 .. note:: The ``vhost`` and ``queue`` argument values can be retrieved with the `rabbitmq:queue:list` command.
+
+RabbitMq Reroute
+~~~~~~~~~~~~~~~~
+
+To reroute the messages from RabbitMQ queue to exchange, use the `rabbitmq:reroute:queue` command.
+
+.. code-block:: none
+    :linenos:
+
+    rabbitmq:reroute:queue [options] [--] [<queue> [<exchange>]]
+
+* `queue` argument is required, RabbitMQ queue name, e.g., `oro.unprocessed`.
+* `exchange` argument is required, RabbitMQ exchange name, e.g., `oro.default`.
+* `filter` option is optional, filter messages by the topic name (oro.message_queue.client.topic_name). Example: oro.cron.*. Default - all messages.
+
+.. note:: The ``queue`` argument value can be retrieved with the `rabbitmq:queue:list` command.
+
+Service Commands
+----------------
+
+Service commands allow to manipulate with application services.
+
+Check Consumers Status
+~~~~~~~~~~~~~~~~~~~~~~
+
+To check consumers status, use the `service:status:consumer` command.
+
+.. code-block:: none
+    :linenos:
+
+    service:status:consumer [options] [--] [<host>]
+
+The `host` parameter is optional. You can list services from specified job host only. If no parameter is specified,`all` is used by default.
+
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
