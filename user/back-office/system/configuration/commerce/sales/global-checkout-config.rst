@@ -17,8 +17,8 @@ To enable guest checkout globally:
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Sales > Checkout** in the menu to the left.
 
-  .. note::
-     For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+.. note::
+    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 
 .. image:: /user/img/system/config_commerce/sales/single_page_checkout_general.png
@@ -59,18 +59,25 @@ For complete guest checkout experience, it is recommended to enable guest shoppi
 
 .. hint:: Guest checkout can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales-organization>` and :ref:`website <user-guide--system-configuration--commerce-sales-checkout-website>`.
 
-
 By default, guest checkout is disabled.
 
 To enable it, clear *Use Default* and select the *Enable Guest Checkout* check box.
 
 When the guest checkout is enabled, click **Save Settings** to display the additional **Guest Checkout Owner Settings** section.
 
-#. In the **Guest Checkout Owner Settings** section, select the default owner of the guest checkout. Depending on the roles and permissions of the owner, guest data (e.g. shopping lists) may or may not be viewed and managed by the users who are subordinated to the owner.
+#. In the **Guest Checkout Owner Settings** section, select the default owner of the guest checkout. Depending on the roles and permissions of the owner, guest data (e.g., shopping lists) may or may not be viewed and managed by the users who are subordinated to the owner.
 
-   .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest checkout data, adjust permissions for the checkout entity in their roles accordingly.
+.. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest checkout data, adjust permissions for the checkout entity in their roles accordingly.
 
-#. Click **Save Settings**.
+#. By selecting the **Use New Layout for Checkout Page** checkbox, you will enable the new checkout design.
+#. In the **Maximum Line Items per Page** section, provide the maximum number of line items that can be displayed per page in the new checkout layout.
+
+   .. image:: /user/img/system/config_commerce/sales/new-checkout.png
+      :scale: 40%
+      :align: center
+      :alt: Old vs new checkout page
+
+#. Click **Save Settings** once you are done.
 
 .. finish
 
