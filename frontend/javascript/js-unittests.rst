@@ -17,7 +17,6 @@ The following software is required to run JS tests:
 Once the `node` is installed, install several modules using |Node Packaged Modules| manager by executing the following command from the root folder of your application:
 
 .. code-block:: bash
-   :linenos:
 
     npm install --prefix=vendor/oro/platform/build
 
@@ -38,7 +37,6 @@ Running
 To run tests, call the following command:
 
 .. code-block:: bash
-   :linenos:
 
    ./vendor/oro/platform/build/node_modules/.bin/karma start ./vendor/oro/platform/build/karma.conf.js.dist --single-run
 
@@ -50,13 +48,33 @@ There are few custom options added for preparing karma config:
 
 - `--mask` _string_ file mask for Spec files. By default it is `'vendor/oro/**/Tests/JS/**/*Spec.js'` that matches all Spec files in the project within oro vendor directory.
 - `--spec` _string_ path for a certain Spec file, if it passed then the search by mask is skipped and the test is run single Spec file.
-- `--skip-indexing` _boolean_ allows to skip phase of collection Spec files and reuse the collection from previews run (if it exists).  
+- `--skip-indexing` _boolean_ allows to skip phase of collection Spec files and reuse the collection from previews run (if it exists).
 - `--theme` _string_ theme name is used to generate webpack config for certain theme. By default it is `'admin.oro'`.
+
+To keep tests continuously running and re-executing when any watched file is modified, use the following command:
+
+.. code-block:: bash
+
+   ./vendor/oro/platform/build/node_modules/.bin/karma start ./vendor/oro/platform/build/karma.conf.js.dist
+
+To debug unit test:
+
+ - run test in watch mode
+ - open the ``http://localhost:9876/debug.html`` page in you browser (check the port in the address, it has to be the same as in terminal's output)
+ - open the inspector panel and use it for the debug purpose
+
+Any modification of the source or test file will lead to reassembly, after which you can reload the page in the browser and debug the updated code.
+
+To run specific test, use the `--spec "<path/to/someSpec.js>"` parameter:
+
+.. code-block:: bash
+
+   ./vendor/oro/platform/build/node_modules/.bin/karma start ./vendor/oro/platform/build/karma.conf.js.dist --spec vendor/oro/platform/src/Oro/Bundle/UIBundle/Tests/JS/mediatorSpec.js
 
 The following extensions can be useful if you use PHPStorm:
 
-- |Karma plugin| helps to run testsuite from IDE and view results there;
-- |ddescriber for jasmine| helps to turn off or skip some tests from testsuite quickly.
+- |Karma plugin| helps to run testsuite from the IDE and view results there;
+- |ddescriber for jasmine| helps to quickly turn off or skip some tests from testsuite .
 
 Writing
 -------
@@ -78,44 +96,7 @@ The example below illustrates the spec for the `oroui/js/mediator` module:
        });
    });
 
-karma-jsmodule-exposure
-^^^^^^^^^^^^^^^^^^^^^^^
-
-This approach allows to test the public API of a module. But what about
-
-Use the  |karma-jsmodule-exposure| plugin on a fly injects exposing code inside the js-module and provides API to manipulate internal variables:
-
-.. code-block:: js
-   :linenos:
-
-    import someModule from 'some/module';
-    import jsmoduleExposure from 'jsmodule-exposure';
-    
-    // get exposure instance for tested module
-    var exposure = jsmoduleExposure.disclose('some/module');
-    
-    describe('some/module', function () {
-        var foo;
-    
-        beforeEach(function () {
-            // create mock object with stub method 'do'
-            foo = jasmine.createSpyObj('foo', ['do']);
-            // before each test, pass it off instead of original
-            exposure.substitute('foo').by(foo);
-        });
-    
-        afterEach(function () {
-            // after each test restore original value of foo
-            exposure.recover('foo');
-        });
-    
-        it('check doSomething() method', function() {
-            someModule.doSomething();
-    
-            // stub method of mock object has been called
-            expect(foo.do).toHaveBeenCalled();
-        });
-    });
+.. hint:: Use the |inject-loader| webpack loader for stubbing dependencies of a tested module.
 
 Jasmine-jQuery
 ^^^^^^^^^^^^^^
