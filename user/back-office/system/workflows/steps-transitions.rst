@@ -22,10 +22,14 @@ A workflow may have configuration parameters (also known as variables). For exam
 
 .. image:: /user/img/system/workflows/workflow_set_config_param.png
 
+.. note:: The alternative checkout workflow is available as a |demo extension| and should be installed separately.
+
 If enabled (see the section below), the workflow widget displays the process steps defined in workflow configuration on the record view page. Multiple workflow widgets can be displayed for one record at the same time.
 
 .. image:: /user/img/system/workflows/21_osf_ui_5.png
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 .. include:: /include/include-images.rst
    :start-after: begin

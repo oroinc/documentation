@@ -5,8 +5,7 @@
 Configure Alternative Checkout Workflow in the Back-Office
 ==========================================================
 
-Overview
---------
+.. note:: The alternative checkout workflow is available as a |demo extension| and should be installed separately.
 
 The Alternative Checkout workflow represents an **example** of the :ref:`checkout workflow <system--workflows--checkout-workflow>` customization. It is a :ref:`system workflow <user-guide--system--workflow-management-system-custom>` that defines the sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a user can go through when creating an order in the storefront.
 
@@ -141,4 +140,7 @@ At this point, the manager can submit the order themselves, or let the employee 
 Once submitted, the order will be received and dealt with by the sales team.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin

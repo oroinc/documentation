@@ -867,3 +867,7 @@ Links (User)
 
    <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#media-upload" target="_blank">Media Upload</a>
 
+.. |demo extension| raw:: html
+
+   <a href="https://github.com/oroinc/commerce-demo-checkouts" target="_blank">demo extension</a>
+

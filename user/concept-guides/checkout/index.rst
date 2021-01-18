@@ -134,7 +134,7 @@ On top of what is provided by default, you can also add your own code customizat
 .. image:: /user/img/concept-guides/checkout/checkout_flow_cut.png
    :alt: Checkout steps with the disabled shipping information or method sections
 
-2. Add the necessary steps and transitions to the checkout workflow. For this, you need to copy the workflow and then customize it the way you like. An example of such modernization can be an alternative checkout workflow that was customized to include the request and order approval steps before creating an order. For more details on how the alternative checkout workflow was configured, check the :ref:`related documentation <system--workflows--alternative-checkout-workflow>`.
+2. Add the necessary steps and transitions to the checkout workflow. For this, you need to copy the workflow and then customize it the way you like. An example of such modernization can be an alternative checkout workflow that was customized to include the request and order approval steps before creating an order. The alternative checkout workflow is available as a |demo extension| and should be installed separately. For more details on how the alternative checkout workflow was configured, check the :ref:`related documentation <system--workflows--alternative-checkout-workflow>`.
 
 3. Add the required info fields to the Order Review step of the checkout form.
 
@@ -155,5 +155,8 @@ On top of what is provided by default, you can also add your own code customizat
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin
 
