@@ -237,6 +237,7 @@ Webserver configuration can be modified, as illustrated below:
           - '~(^/admin/test/(.*))'
         blackfire_options:
           agent_enabled : true
+          apm_enabled   : 1
           server_id     : '<server-id>'
           server_token  : '<server-token>'
           log_level     : '1'
@@ -485,6 +486,7 @@ The configuration option enables you to configure Blackfire.
 ``blackfire_options`` --- The hash is used to configure the Blackfire agent on environment
 
    * `agent_enabled` — a boolean trigger for Blackfire installation
+   * `apm_enabled` - the option enables (1) or disables (0) the Blackfire APM feature. Please note that you need to have it included into your license.
    * `server_id` — a server ID string. Refer your Blackfire account to this value.
    * `server_token` — a server token string. Refer your Blackfire account to this value.
    * `log_level` — Blackfire agent log verbosity.
