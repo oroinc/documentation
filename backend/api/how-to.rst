@@ -947,7 +947,6 @@ For example, imagine that a "price" field need to be added to a product API. The
 
         namespace Acme\Bundle\AppBundle\Api\Processor;
 
-        use Oro\Bundle\ApiBundle\Config\EntityDefinitionConfig;
         use Oro\Bundle\ApiBundle\Processor\CustomizeLoadedData\CustomizeLoadedDataContext;
         use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
         use Oro\Bundle\EntityConfigBundle\Entity\FieldConfigModel;
@@ -1075,7 +1074,6 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
       namespace Acme\Bundle\AppBundle\Api\Processor;
 
       use Acme\Bundle\AppBundle\Entity\Account;
-      use Oro\Bundle\ApiBundle\Config\EntityDefinitionConfig;
       use Oro\Bundle\ApiBundle\Processor\GetConfig\ConfigContext;
       use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
       use Oro\Component\ChainProcessor\ContextInterface;
@@ -1104,7 +1102,6 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
           {
               /** @var ConfigContext $context */
 
-              /** @var EntityDefinitionConfig $definition */
               $definition = $context->getResult();
               $contactsField = $definition->getField('contacts');
               if (null !== $contactsField
