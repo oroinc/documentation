@@ -160,9 +160,15 @@ Filter controls may be hidden at all if there are no related products on the dis
 
    If you wish to reset all applied filters, click **x Clear All Filters**.
 
+.. note:: Filter in the storefront can be displayed either at the top (default) or in the left sidebar.
+
+          .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_sidebar.png
+             :alt: The storefront product page illustrating the filter in the left sidebar
+
 The following example is an illustration of filters in action:
 
-   .. image:: /user/img/storefront/navigation/Filters.gif
+.. image:: /user/img/storefront/navigation/Filters.gif
+   :alt: Illustration of how to work with filters in the storefront
 
 .. _frontstore-guide--navigation-table-options:
 
@@ -224,7 +230,10 @@ Search is the fastest way to find a specific product:
 2. Type in the search key into the text field.
 3. Click **Enter**.
 
-.. image:: /user/img/storefront/navigation/Search.png
+The search shows up-to-date product information, such as SKU, name, price, and inventory status.
+
+.. image:: /user/img/storefront/navigation/search-autocomplete.png
+   :alt: Search auto-complete illustration
 
 .. include:: /include/include-images.rst
    :start-after: begin

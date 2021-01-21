@@ -16,6 +16,11 @@ Oro applications offer high flexibility and customization, which means that the 
 .. image:: /user/img/storefront/navigation/navigation_ui_storefront.png
    :alt: Common controls of the OroCommerce storefront
 
+You can also use detailed search auto-complete across the whole storefront. It shows up-to-date product information, such as SKU, name, price, and inventory status.
+
+.. image:: /user/img/storefront/navigation/search-autocomplete.png
+   :alt: Search auto-complete illustration
+
 .. toctree::
    :hidden:
 
