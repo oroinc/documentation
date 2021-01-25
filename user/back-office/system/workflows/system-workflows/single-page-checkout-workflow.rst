@@ -13,6 +13,7 @@ Overview
 In your Oro application, you can control the way the checkout is displayed to customers in the storefront. By default, each checkout step is displayed on a new page. However, by activating the Single Page Checkout workflow in the back-office, you can make all steps fit one page. This will make the checkout process easier and quicker for customers, since they will be able to see how far along in the checkout they are, and how many fields are left to complete it.
 
 .. image:: /user/img/system/workflows/single_page_checkout/SampleFlow2.png
+   :alt: Illustration of single page checkout in the storefront
 
 To reach the Single Page Checkout workflow:
 
@@ -26,6 +27,7 @@ To reach the Single Page Checkout workflow:
 2. Click **Single Page Checkout** to open the flow.
 
    .. image:: /user/img/system/workflows/single_page_checkout/SPCList.png
+      :alt: Illustration of single page checkout in the back-office
 
    .. note:: If the workflow is active, you can deactivate it from the list page by clicking |IcDeactivate|.
 
@@ -44,6 +46,7 @@ As an illustration let us go through the sample flow to see the Single Page Chec
 1. Add an item to the shopping list in the storefront, and click **Create Order** to proceed to the checkout.
 
    .. image:: /user/img/system/workflows/single_page_checkout/SampleFlow1.png
+      :alt: Create an order leading to single page checkout
 
 2. The following sections (steps) are displayed on one page:
 
@@ -52,6 +55,7 @@ As an illustration let us go through the sample flow to see the Single Page Chec
    * Order Summary (including *Agreements*)
 
    .. image:: /user/img/system/workflows/single_page_checkout/SampleFlow2.png
+      :alt: Illustration of single page checkout in the storefront
 
 3. In the **Billing Information** section, provide your address and select a payment method.
 
