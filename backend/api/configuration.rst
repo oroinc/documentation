@@ -216,9 +216,9 @@ The ``entities`` section describes the configuration of entities.
 
 *  **order\_by** *array* - The property can be used to configure default ordering of the result. The item key is the name of a field. The value can be ``ASC`` or ``DESC``. By default the result is ordered by an identifier field.
 
-*  **disable\_inclusion** *boolean* - Indicates whether an inclusion of related entities is disabled. In JSON:API the |**include** request parameter| can be used to customize which related entities should be returned. By default ``false``.
+*  **disable\_inclusion** *boolean* - Indicates whether an inclusion of related entities is disabled. In JSON:API the |JSON:API: include request parameter| can be used to customize which related entities should be returned. By default ``false``.
 
-*  **disable\_fieldset** *boolean* - Indicates whether one can request a restricted set of fields. In JSON:API, the |**fields** request parameter|  is used to customize which fields to return. By default ``false``.
+*  **disable\_fieldset** *boolean* - Indicates whether one can request a restricted set of fields. In JSON:API, the |JSON:API: fields request parameter| is used to customize which fields to return. By default ``false``.
 
 *  **disable\_meta\_properties** *boolean* - The flag indicates whether a requesting of additional meta properties is disabled. By default ``false``.
 
@@ -294,7 +294,7 @@ This section describes configuration of entity fields.
 
 *  **data\_type** *string* - The data type of the field value. Can be ``boolean``, ``integer``, ``string``, etc. If a field represents an association the data type should be a type of an identity field of the target entity.
 
-*  **meta\_property** *boolean* - A flag indicates whether the field represents a meta information. For JSON:API, such fields are returned in the |meta| section. By default, ``false``.
+*  **meta\_property** *boolean* - A flag indicates whether the field represents a meta information. For JSON:API, such fields are returned in the |JSON:API: Meta Section| section. By default, ``false``.
 
 *  **target\_class** *string* - The class name of a target entity if a field represents an association. If the API resource is based on the non ORM entity, set the target class in a configuration file.
 
@@ -499,9 +499,9 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 *  **disable\_sorting** *boolean* - Indicates whether to disable the sorting. By default, false.
 
-*  **disable\_inclusion** *boolean* - The flag indicates whether an inclusion of related entities is disabled. In JSON:API an |**include** request parameter| can be used to customize which related entities should be returned. By default ``false``.
+*  **disable\_inclusion** *boolean* - The flag indicates whether an inclusion of related entities is disabled. In JSON:API the |JSON:API: include request parameter| can be used to customize which related entities should be returned. By default ``false``.
 
-*  **disable\_fieldset** *boolean* - The flag indicates whether a requesting of a restricted set of fields is disabled. In JSON:API an |**fields** request parameter| can be used to customize which fields should be returned. By default ``false``.
+*  **disable\_fieldset** *boolean* - The flag indicates whether a requesting of a restricted set of fields is disabled. In JSON:API the |JSON:API: fields request parameter| can be used to customize which fields should be returned. By default ``false``.
 
 *  **disable\_meta\_properties** *boolean* - The flag indicates whether a requesting of additional meta properties is disabled. By default ``false``.
 

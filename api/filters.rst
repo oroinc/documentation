@@ -131,10 +131,7 @@ Select the **username** and the **email** fields of the **users** resource.
         :linenos:
 
         GET api/users?fields[users]=username,email HTTP/1.1
-
-        Content-Type: application/vnd.api+json
         Accept: application/vnd.api+json
-        ...
 
     *Response*
 
@@ -268,10 +265,7 @@ by a developer who creates API resources.
     :linenos:
 
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email HTTP/1.1
-
-    Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    ...
 
 *Response*
 
@@ -329,10 +323,7 @@ Include the **roles** relation with the **fields** filter.
     :linenos:
 
     GET api/users?fields[users]=username,email,roles&include=roles&page[number]=1&page[size]=1 HTTP/1.1
-
-    Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    ...
 
 *Response*
 
@@ -390,10 +381,7 @@ should be used.
     :linenos:
 
     GET api/users?fields[userroles]=label&fields[users]=username,email,roles&include=roles&page[number]=1&page[size]=1 HTTP/1.1
-
-    Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    ...
 
 *Response*
 
@@ -464,10 +452,7 @@ Get the 2nd page of the retrieved records for the **users** resource with 20 rec
     :linenos:
 
     GET /api/users?page[number]=2&page[size]=20 HTTP/1.1
-
-    Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    ...
 
 
 .. _web-services-api--filters--sorting:
@@ -488,10 +473,7 @@ Sort by **username** in descending order.
     :linenos:
 
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email&sort=-username HTTP/1.1
-
-    Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    ...
 
 *Response*
 
@@ -543,10 +525,7 @@ The following table contains a list of supported meta properties that may be req
         :linenos:
 
         GET api/users?meta=title HTTP/1.1
-
-        Content-Type: application/vnd.api+json
         Accept: application/vnd.api+json
-        ...
 
     *Response*
 
