@@ -59,9 +59,6 @@ At the Agreements step, you are required to accept all mandatory consents to pro
   .. image:: /user/img/system/workflows/alternative_checkout/storefront_step_agreements_bluethooth.png
      :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
 
-  .. image:: /user/img/system/workflows/alternative_checkout/storefront_step_accept_agreement_bluethooth.png
-     :alt: Accept a mandatory consent on the agreements step at checkout
-
 Once the consent is accepted, click **Continue** to proceed through the checkout.
 
 Step 2: Billing Information
@@ -130,12 +127,9 @@ Step 8: Approve Order
 ^^^^^^^^^^^^^^^^^^^^^
 
 The manager can approve the order by navigating to Orders, selecting the required order and clicking **Approve Order**.
-
-.. image:: /user/img/system/workflows/alternative_checkout/ACF_ApproveOrder.png
-
 At this point, the manager can submit the order themselves, or let the employee handle the order:
 
-.. image:: /user/img/system/workflows/alternative_checkout/ACF_Approved.png
+.. image:: /user/img/system/workflows/alternative_checkout/ACF_ApproveOrder.png
 
 Once submitted, the order will be received and dealt with by the sales team.
 
