@@ -94,8 +94,8 @@ To enable them for your application, you must activate one of the :ref:`default 
 
 **A single-page checkout** is another checkout workflow in the OroCommerce application. When you enable the checkout workflow, you make all steps fit one page, which allows customers to see how far along in the checkout process they are, and how many fields are left to complete. Although the number of fields in the form is the same as in the multi-page checkout, it can really take less time to finalize it as there is no need for the shoppers to wait for several pages to load. It also facilitates the editing process as customers do not need to navigate between multiple pages.
 
-.. image:: /user/img/concept-guides/checkout/single_page_checkout.png
-   :alt: An example of a single-page checkout
+.. image:: /user/img/system/workflows/single_page_checkout/SampleFlow2.png
+   :alt: Illustration of single page checkout in the storefront
 
 .. hint:: For more details on how to proceed through the single-page checkout process, refer to the :ref:`Single-Page Checkout <frontstore-guide--orders-checkout--single-page-checkout>` section.
 
@@ -116,7 +116,7 @@ A guest checkout provides unregistered users with several options:
 
 * skip the account creation step at all and submit an order as a guest
 
-.. image:: /user/img/concept-guides/checkout/create_account_as_a_guest.png
+.. image:: /user/img/storefront/orders/SampleGuestCheckout9.png
    :alt: Creating an account at the Order Review step
 
 .. hint:: For more details on how to proceed through the guest checkout process in the storefront, refer to the :ref:`Guest Checkout <frontstore-guide--orders-checkout--guest>` section.

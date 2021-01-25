@@ -86,9 +86,9 @@ Navigate through Multi Page Checkout in the Storefront
 
 .. tip::
 
-   It is also possible to amend the order content until the order is submitted. To do this, click |IcEditInline| **Edit Order** in the right corner of the **Order Summary** section available at the bottom in the Billing Information, Shipping Information, Shipping Method, and Payment steps.
+   It is also possible to amend the order content until the order is submitted. To do this, click |IcEditInline| **Edit Items** in the right corner of the **Order Review** section. You will be redirected back to the shopping list page.
 
-   .. image:: /user/img/system/workflows/checkout/Checkout_BilInfo.png
+   .. image:: /user/img/system/workflows/checkout/edit-items.png
 
 .. include:: /include/include-images.rst
    :start-after: begin

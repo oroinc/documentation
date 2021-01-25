@@ -37,7 +37,7 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout2.png
 
-3. Click **Create Order** at the bottom of the shopping list page.
+3. Click **Create Order**.
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout3.png
 
