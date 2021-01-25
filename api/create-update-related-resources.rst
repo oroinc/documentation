@@ -12,6 +12,7 @@ Sometimes, it is required to create or update the related resources while creati
 
     POST /api/accounts HTTP/1.1
     Content-Type: application/vnd.api+json
+    Accept: application/vnd.api+json
 
 **Request Body**
 
@@ -186,6 +187,7 @@ Also, it is possible to update several related resources via a single API reques
 
     PATCH /api/accounts/52 HTTP/1.1
     Content-Type: application/vnd.api+json
+    Accept: application/vnd.api+json
 
 **Request Body**
 

@@ -91,7 +91,7 @@ Public Actions
 get Action
 ^^^^^^^^^^
 
-This action is intended to retrieve an entity by its identifier. For more details, see the |Fetching Data| section of the JSON:API specification.
+This action is intended to retrieve an entity by its identifier. For more details, see the |JSON:API: Fetching Data| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_item``.
 
@@ -134,7 +134,7 @@ For examples of usage, see the ``handleGet`` method of |RequestActionHandler|.
 get\_list Action
 ^^^^^^^^^^^^^^^^
 
-This action retrieves a list of entities. For more details, see the |Fetching Data| section of the JSON:API specification.
+This action retrieves a list of entities. For more details, see the |JSON:API: Fetching Data| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_list``.
 
@@ -177,7 +177,7 @@ For examples of usage, see the ``handleGetList`` method of |RequestActionHandler
 delete Action
 ^^^^^^^^^^^^^
 
-This action deletes an entity by its identifier. More details you can find in |Deleting Resources| section of the JSON:API specification.
+This action deletes an entity by its identifier. More details you can find in |JSON:API: Deleting Resources| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_item``.
 
@@ -266,7 +266,7 @@ For examples of usage, see the ``handleDeleteList`` method of |RequestActionHand
 create Action
 ^^^^^^^^^^^^^
 
-This action creates a new entity.  For more details, see the |Creating Resources| section of the JSON:API specification.
+This action creates a new entity.  For more details, see the |JSON:API: Creating Resources| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_list``.
 
@@ -310,7 +310,7 @@ For examples of usage, see the ``handleCreate`` method of |RequestActionHandler|
 update Action
 ^^^^^^^^^^^^^
 
-This action updates an entity. For more details, see the |Updating Resources| section of the JSON:API specification.
+This action updates an entity. For more details, see the |JSON:API: Updating Resources| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_item``.
 
@@ -402,7 +402,7 @@ For examples of usage, see the ``handleUpdateList`` method of |RequestActionHand
 get\_subresource Action
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-This action retrieves an entity (for "to-one" relationship) or a list of entities (for "to-many" relationship) connected to the entity by a given association. For more details, see the |Fetching Resources| section of the JSON:API specification.
+This action retrieves an entity (for "to-one" relationship) or a list of entities (for "to-many" relationship) connected to the entity by a given association. For more details, see the |JSON:API: Fetching Resources| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -610,7 +610,7 @@ An example how to register a processor to build a form builder:
 get\_relationship Action
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action retrieves an entity identifier (for "to-one" relationship) or a list of entities' identifiers (for "to-many" relationship) connected to the entity by a given association. For more details, see the |Fetching Relationships| section of the JSON:API specification.
+This action retrieves an entity identifier (for "to-one" relationship) or a list of entities' identifiers (for "to-many" relationship) connected to the entity by a given association. For more details, see the |JSON:API: Fetching Relationships| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_relationship``.
 
@@ -653,7 +653,7 @@ For example of usage, see the ``handleGetRelationship`` method of |RequestAction
 update\_relationship Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action changes an entity (for "to-one" relationship) or completely replaces all entities (for "to-many" relationship) connected to a given entity by a given association. For more details, see the |Updating Relationships| section of the JSON:API specification.
+This action changes an entity (for "to-one" relationship) or completely replaces all entities (for "to-many" relationship) connected to a given entity by a given association. For more details, see the |JSON:API: Updating Relationships| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_relationship``.
 
@@ -691,7 +691,7 @@ For example of usage, see the ``handleUpdateRelationship`` method of |RequestAct
 add\_relationship Action
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action adds one or several entities to a "to-many" relationship. For more details, see the|Updating Relationships| section of the JSON:API specification.
+This action adds one or several entities to a "to-many" relationship. For more details, see the |JSON:API: Updating Relationships| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_relationship``.
 
@@ -734,7 +734,7 @@ For examples of usage, see the ``handleAddRelationship`` method of |RequestActio
 delete\_relationship Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action removes one or several entities from a "to-many" relationship. For more details, see the |Updating Relationships1| section of the JSON:API specification.
+This action removes one or several entities from a "to-many" relationship. For more details, see the |JSON:API: Updating Relationships| section of the JSON:API specification.
 
 The route name for REST API: ``oro_rest_api_relationship``.
 

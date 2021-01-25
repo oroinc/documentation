@@ -3305,9 +3305,61 @@ Links (Dev)
 
    <a href="https://www.rabbitmq.com/blog/2015/04/16/scheduling-messages-with-rabbitmq/" target="_blank">scheduling messages on RabbitMQ website</a>
 
-.. |JSON Specifications| raw:: html
+.. |JSON:API| raw:: html
 
-   <a href="http://jsonapi.org/format/#content-negotiation-clients" target="_blank">JSON Specifications</a>
+   <a href="http://jsonapi.org/" target="_blank">JSON:API</a>
+
+.. |JSON:API specification| raw:: html
+
+   <a href="http://jsonapi.org/format/" target="_blank">JSON:API specification</a>
+
+.. |JSON:API: Client Responsibilities| raw:: html
+
+   <a href="http://jsonapi.org/format/#content-negotiation-clients" target="_blank">Client Responsibilities</a>
+
+.. |JSON:API: Fetching Data| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching" target="_blank">Fetching Data</a>
+
+.. |JSON:API: Fetching Resources| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching-resources" target="_blank">Fetching Resources</a>
+
+.. |JSON:API: Creating Resources| raw:: html
+
+   <a href="http://jsonapi.org/format/#crud-creating" target="_blank">Creating Resources</a>
+
+.. |JSON:API: Updating Resources| raw:: html
+
+   <a href="http://jsonapi.org/format/#crud-updating" target="_blank">Updating Resources</a>
+
+.. |JSON:API: Deleting Resources| raw:: html
+
+   <a href="http://jsonapi.org/format/#crud-deleting" target="_blank">Deleting Resources</a>
+
+.. |JSON:API: Fetching Relationships| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching-relationships" target="_blank">Fetching Relationships</a>
+
+.. |JSON:API: Updating Relationships| raw:: html
+
+   <a href="http://jsonapi.org/format/#crud-updating-relationships" target="_blank">Updating Relationships</a>
+
+.. |JSON:API: include request parameter| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching-includes" target="_blank"><b>include</b> request parameter</a>
+
+.. |JSON:API: fields request parameter| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching-sparse-fieldsets" target="_blank"><b>fields</b> request parameter</a>
+
+.. |JSON:API: Meta Section| raw:: html
+
+   <a href="http://jsonapi.org/format/#document-meta" target="_blank">meta</a>
+
+.. |RFC 7231: quality values| raw:: html
+
+   <a href="https://tools.ietf.org/html/rfc7231#section-5.3.2" target="_blank">quality values</a>
 
 .. |RFC 7231: Common Method Properties| raw:: html
 
@@ -3360,10 +3412,6 @@ Links (Dev)
 .. |Curl| raw:: html
 
    <a href="https://curl.haxx.se/" target="_blank">Curl</a>
-
-.. |Fetching Data| raw:: html
-
-   <a href="http://jsonapi.org/format/#fetching" target="_blank">Fetching Data</a>
 
 .. |GetContext| raw:: html
 
@@ -3453,10 +3501,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Processor/Shared/LoadEntitiesByEntitySerializer.php" target="_blank">LoadEntitiesByEntitySerializer</a>
 
-.. |Deleting Resources| raw:: html
-
-   <a href="http://jsonapi.org/format/#crud-deleting" target="_blank">Deleting Resources</a>
-
 .. |DeleteContext| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Processor/Delete/DeleteContext.php" target="_blank">DeleteContext</a>
@@ -3481,10 +3525,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete_list.yml" target="_blank">processors.delete_list.yml</a>
 
-.. |Creating Resources| raw:: html
-
-   <a href="http://jsonapi.org/format/#crud-creating" target="_blank">Creating Resources</a>
-
 .. |CreateContext| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Processor/Create/CreateContext.php" target="_blank">CreateContext</a>
@@ -3496,10 +3536,6 @@ Links (Dev)
 .. |processors.create.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Resources/config/processors.create.yml" target="_blank">processors.create.yml</a>
-
-.. |Updating Resources| raw:: html
-
-   <a href="http://jsonapi.org/format/#crud-updating" target="_blank">Updating Resources</a>
 
 .. |UpdateContext| raw:: html
 
@@ -3525,10 +3561,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/ApiBundle/Resources/config/processors.update_list.yml" target="_blank">processors.update_list.yml</a>
 
-.. |Fetching Resources| raw:: html
-
-   <a href="http://jsonapi.org/format/#fetching-resources" target="_blank">Fetching Resources</a>
-
 .. |GetSubresourceContext| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetSubresource/GetSubresourceContext.php" target="_blank">GetSubresourceContext</a>
@@ -3545,14 +3577,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_subresource.yml" target="_blank">processors.get_subresource.yml</a>
 
-.. |RestApiSubresourceController| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/2.6/src/Oro/Bundle/ApiBundle/Controller/RestApiSubresourceController.php" target="_blank">RestApiSubresourceController</a>
-
-.. |Fetching Relationships| raw:: html
-
-   <a href="http://jsonapi.org/format/#fetching-relationships" target="_blank">Fetching Relationships</a>
-
 .. |GetRelationshipContext| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetRelationship/GetRelationshipContext.php" target="_blank">GetRelationshipContext</a>
@@ -3564,14 +3588,6 @@ Links (Dev)
 .. |processors.get_relationship.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_relationship.yml" target="_blank">processors.get_relationship.yml</a>
-
-.. |RestApiRelationshipController| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/2.6/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php" target="_blank">RestApiRelationshipController</a>
-
-.. |Updating Relationships| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/2.6/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php" target="_blank">Updating Relationships</a>
 
 .. |UpdateRelationshipContext| raw:: html
 
@@ -4149,10 +4165,6 @@ Links (Dev)
 
    <a href="https://oroinc.com/doc/orocrm/current/book/functional-tests" target="_blank">functional tests</a>
 
-.. |JSON:API specification| raw:: html
-
-   <a href="http://jsonapi.org/format/" target="_blank">JSON:API specification</a>
-
 .. |JSON Pointer| raw:: html
 
    <a href="https://tools.ietf.org/html/rfc6901" target="_blank">JSON Pointer</a>
@@ -4265,10 +4277,6 @@ Links (Dev)
 
    <a href="https://www.elastic.co/elk-stack" target="_blank">ELK Stack: Elasticsearch, Logstash, Kibana</a>
 
-.. |Updating Relationships1| raw:: html
-
-   <a href="http://jsonapi.org/format/#crud-updating-relationships" target="_blank">Updating Relationships</a>
-
 .. |CustomDataTypeCompleterInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Processor/GetConfig/CompleteDefinition/CustomDataTypeCompleterInterface.php" target="_blank">CustomDataTypeCompleterInterface</a>
@@ -4277,14 +4285,6 @@ Links (Dev)
 
    <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">markdown</a>
 
-.. |**include** request parameter| raw:: html
-
-   <a href="http://jsonapi.org/format/#fetching-includes" target="_blank"><b>include</b> request parameter</a>
-
-.. |**fields** request parameter| raw:: html
-
-   <a href="http://jsonapi.org/format/#fetching-sparse-fieldsets" target="_blank"><b>fields</b> request parameter</a>
-
 .. |Doctrine query hints| raw:: html
 
    <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/dql-doctrine-query-language.html#query-hints" target="_blank">Doctrine query hints</a>
@@ -4292,10 +4292,6 @@ Links (Dev)
 .. |orosoap.handler.delete| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/SoapBundle/Handler/DeleteHandler.php" target="_blank">oro_soap.handler.delete</a>
-
-.. |meta| raw:: html
-
-   <a href="http://jsonapi.org/format/#document-meta" target="_blank">meta</a>
 
 .. |Markdown1| raw:: html
 
@@ -4412,10 +4408,6 @@ Links (Dev)
 .. |OptimizedProcessorIterator| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ApiBundle/Processor/OptimizedProcessorIterator.php" target="_blank">OptimizedProcessorIterator</a>
-
-.. |JSON:API| raw:: html
-
-   <a href="http://jsonapi.org/" target="_blank">JSON:API</a>
 
 .. |Error| raw:: html
 

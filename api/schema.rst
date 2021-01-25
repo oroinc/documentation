@@ -15,12 +15,8 @@ A typical request can be performed via curl or JSON sandbox.
 
     GET /api/users/1 HTTP/1.1
 
-    curl -X "GET" -H "Content-Type: application/vnd.api+json"
-         -H "Authorization: WSSE profile='UsernameToken'"
-         -H "X-WSSE: UsernameToken Username='admin',
-             PasswordDigest='D5AjIiPf7edQX2EX8hLwtB3XhQY=',
-             Created='2016-09-19T20:00:00+03:00',
-             Nonce='N2hlMDc3TGcrVU53bGprNlQ0YXliLy9PSEFNPQ=='"
+    curl -X "GET" -H "Accept: application/vnd.api+json"
+         -H "Authorization: Bearer ..."
     http://localhost.com/api/users/1
 
 
@@ -30,10 +26,7 @@ Please note that to simplify the representation of request examples in the docum
     :linenos:
 
     GET /api/users/1 HTTP/1.1
-    Host: localhost.com
-    Content-Type: application/vnd.api+json
-    Authorization: WSSE profile='UsernameToken'
-    X-WSSE: UsernameToken Username='...', PasswordDigest='...', Created='...', Nonce='...'
+    Accept: application/vnd.api+json
 
 
 *Typical response header*
@@ -42,9 +35,8 @@ Please note that to simplify the representation of request examples in the docum
     :linenos:
 
     HTTP/1.1 200 OK
-    Server: Apache/2.4.18 (Unix) PHP/5.5.38
-    Date: Mon, 19 Sep 2016 17:52:34 GMT
     Content-Type: application/vnd.api+json
+    Date: Mon, 19 Sep 2016 17:52:34 GMT
     Connection: keep-alive
     Status: 200 OK
     Content-Length: 5279

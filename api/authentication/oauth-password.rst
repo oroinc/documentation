@@ -73,7 +73,7 @@ An example of an API request:
     :linenos:
 
     GET /api/users HTTP/1.1
-    Content-Type: application/vnd.api+json
+    Accept: application/vnd.api+json
     Authorization: Bearer your access token
 
 .. note:: Access tokens for back-office and storefront API are not interchangeable. If you attempt to request data for the storefront API with a token generated for the back-office application, access will be denied.
