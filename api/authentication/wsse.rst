@@ -101,7 +101,7 @@ Header and Nonce Lifetime
 
 The generated header has a lifetime of 3600s, and it expires if not used during this time.
 Each *nonce* might be used only once in specific time for generation of the *password digest*.
-By default, the *nonce* cooldown time is also set to 3600s.
+By default, the *nonce* expiration time is also set to 3600s.
 This rule is aimed to improve the safety of the application and prevent *"replay"* attacks.
 
 Therefore, the header generation algorithm should be implemented on the side of the client application, and headers should be re-generated for each request.
@@ -117,13 +117,7 @@ Please pay attention to the **Authentication** and **X-WSSE** parameters:
     :linenos:
 
     GET /api/users HTTP/1.1
-    Host: localhost.com
-    Connection: keep-alive
-    User-Agent: Mozilla/5.0 ...
-    Connection: keep-alive
-    Accept: */*
-
-    Content-Type: application/vnd.api+json
+    Accept: application/vnd.api+json
     Authorization: WSSE profile="UsernameToken"
     X-WSSE: UsernameToken Username="admin",
             PasswordDigest="Cae37DaU9JT1pwoaG5i7bXbDBo0=",

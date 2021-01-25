@@ -140,6 +140,7 @@ The next example shows how to insert a list of accounts.
 
     PATCH /api/accounts HTTP/1.1
     Content-Type: application/vnd.api+json
+    Accept: application/vnd.api+json
 
 **Request Body**
 
@@ -232,7 +233,7 @@ To see updated status of job, use the following request:
     :linenos:
 
     GET /api/asyncoperations/1 HTTP/1.1
-    Content-Type: application/vnd.api+json
+    Accept: application/vnd.api+json
 
 **Response**
 
@@ -297,7 +298,7 @@ To sse the list of errors, use the ``asyncoperations/{id}/errors`` subresource:
     :linenos:
 
     GET /api/asyncoperations/1/errors HTTP/1.1
-    Content-Type: application/vnd.api+json
+    Accept: application/vnd.api+json
 
 **Response**
 

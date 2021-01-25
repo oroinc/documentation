@@ -3,18 +3,20 @@
 HTTP Header Specifics
 =====================
 
-As mentioned in the :ref:`Authentication <web-services-api--authentication>` section, to perform
-an API request successfully, it is important to provide the correct **Content-Type** and **Authentication** parameters, e.g.,:
+As mentioned in the :ref:`Client Requirements <web-services-api--client-requirements>`
+and :ref:`Authentication <web-services-api--authentication>` sections, to perform
+an JSON:API request successfully, it is important to provide the correct **Accept*, ***Content-Type**
+and **Authentication** parameters, e.g.,:
 
 .. code-block:: http
     :linenos:
 
     GET /api/users HTTP/1.1
-    Content-Type: application/vnd.api+json
-    Authorization: WSSE profile="UsernameToken"
-    X-WSSE: UsernameToken Username="...",PasswordDigest="...", Created="...", Nonce="..."
+    Accept: application/vnd.api+json
+    Authorization: Bearer <access token>
 
-Also, by providing additional requests header parameters, it is possible to retrieve additional information, such as the total number of records per certain resource for the GET and DELETE methods or a total number of affected records
+Also, by providing additional requests header parameters, it is possible to retrieve additional information, such as
+the total number of records per certain resource for the GET and DELETE methods or a total number of affected records
 for the DELETE method. The **X-Include** request header can be used for such purposes.
 
 The following table describes all existing keys for the X-Include header.
@@ -44,11 +46,7 @@ Retrieve the total count of resource records.
     :linenos:
 
     GET /api/users HTTP/1.1
-
-    Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    Authorization: ...
-    ...
     X-Include: totalCount
 
 **Response**
@@ -57,15 +55,12 @@ Retrieve the total count of resource records.
     :linenos:
 
     HTTP/1.1 200 OK
-    Date: Fri, 23 Sep 2016 12:27:05 GMT
-    Server: Apache/2.4.18 (Unix) PHP/5.5.38
-
     X-Include-Total-Count: 49
-
+    Content-Type: application/vnd.api+json
+    Date: Fri, 23 Sep 2016 12:27:05 GMT
     Content-Length: 585
     Keep-Alive: timeout=5, max=100
     Connection: Keep-Alive
-    Content-Type: application/vnd.api+json
 
 *Example 2. Total Number of Deleted Records*
 
@@ -77,11 +72,7 @@ Retrieve the total number of deleted records of the resource
     :linenos:
 
     DELETE /api/users HTTP/1.1
-
-    Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    Authorization: ....
-    ....
     X-Include: deletedCount
 
 *Example 3. Conditions for the Delete Operation*
@@ -94,10 +85,7 @@ Request query string contains a filter that specifies conditions for deletion op
     :linenos:
 
     DELETE /api/users?filter[id]=21,22 HTTP/1.1
-
-    Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    Authorization: ....
 
 **Response**
 
@@ -105,13 +93,9 @@ Request query string contains a filter that specifies conditions for deletion op
     :linenos:
 
     HTTP/1.1 204 No Content
-    Date: Fri, 23 Sep 2016 12:38:47 GMT
-    Server: Apache/2.4.18 (Unix) PHP/5.5.38
-
     X-Include-Deleted-Count: 2
-
+    Date: Fri, 23 Sep 2016 12:38:47 GMT
     Content-Length: 0
     Keep-Alive: timeout=5, max=100
     Connection: Keep-Alive
-    Content-Type: text/html
 
