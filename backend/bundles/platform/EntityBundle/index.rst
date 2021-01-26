@@ -10,25 +10,30 @@ OroEntityBundle extends the Doctrine ORM functionality with additional field typ
 Related Documentation
 ---------------------
 
-* |Entity Manager|
-* |Doctrine Field Types|
-* |Configure Entity Name Formatting (Entity Name Resolver and Providers)|
-* |Add Custom Field Validation|
-* |Create Entity Aliases|
-* |Create Entity Class Name Provider|
+* :ref:`Entity Manager <dev-entities-entity-manager>`
+* :ref:`Doctrine Field Types <dev-entities-doctrine-field-types>`
+* :ref:`Configure Entity Name Formatting (Entity Name Resolver and Providers) <dev-entities-entity-name-resolver>`
+* :ref:`Add Custom Field Validation <dev-entities-doctrine-field-types>`
+* :ref:`Create Entity Aliases <entity-aliases>`
+* :ref:`Create Entity Class Name Provider <dev-entities-entity-class-name-provider>`
+* :ref:`Resolve ORM Query Hints <dev-entities-resolving-orm-query-hints>`
+* :ref:`Create a Dictionary <dev-entities-dictionaries>`
+* :ref:`Profiler of Duplicated Queries <dev-entities-profiler-duplicate-queries>`
+* :ref:`Set Up Entity Fallback Values <dev-entities-fallback>`
+* :ref:`Define Entity Repositories as as Symfony DI Container Services <dev-entities-repositories>`
+* :ref:`Use Partial Indexes for Entity Fields <dev-entities-partial-indexes>`
+* :ref:`Transaction Watchers for Default DBAL Connection <dev-entities-transaction-watchers>`
+* :ref:`Create and Manage an Entity Model <bundle-docs-platform-entity-bundle-entitymodel>`
+* :ref:`Get the EntityStructureDataProvider Instance <bundle-docs-platform-entity-bundle-entity-structure-data-provider>`
+* :ref:`Events <dev-entities-events>`
+* :ref:`EntitySelectSearchApiAccessor <bundle-docs-platform-entity-bundle-search-api-processor>`
 
-.. Events <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/events.md
-.. Entity structure data provider <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_structure_data_provider.md
+.. toctree::
+   :hidden:
 
-* |Resolve ORM Query Hints|
-* |Create a Dictionary|
-* |Profiler of Duplicated Queries|
-* |Set Up Entity Fallback Values|
-* |Define Entity Repositories as as Symfony DI Container Services|
-* |Use Partial Indexes for Entity Fields|
-* |Transaction Watchers for Default DBAL Connection|
-* |Create and Manage an Entity Model|
-* |Get the EntityStructureDataProvider Instance|
+   entity-model
+   entity-select-search-api-accessor
+   entity-structure-data-provider
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

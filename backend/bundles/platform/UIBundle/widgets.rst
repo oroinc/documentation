@@ -34,20 +34,20 @@ JS Modules Services
  - **oro/block-widget** - Block widget
  - **oro/buttons-widget** - Buttons widget
  - **oro/dialog-widget** - Dialog widget
- - **oroui/js/widget/abstract-widget** - Abstract widget, can not be used standalone
+ - **oroui/js/widget/abstract-widget** - Abstract widget, cannot be used standalone
 
 Widgets
 -------
 
 Widget is any controller/action or static content rendered inside the widget container.
-@Template annotation supports the `\_widgetContainer` request variable, based on which an appropriate template is chosen by the following rule:
+@Template annotation supports the ``\_widgetContainer`` request variable, based on which an appropriate template is chosen by the following rule:
 
-`\<widgetContainer\>/\<action\>.\<format\>.\<templateEngine\> (dialog/example.html.twig)`.
+``\<widgetContainer\>/\<action\>.\<format\>.\<templateEngine\> (dialog/example.html.twig)``.
 
-When no template for a specific container is found, the `widget/\<action\>.\<format\>.\<templateEngine\> (widget/example.html.twig)` template is rendered.
+When no template for a specific container is found, the ``widget/\<action\>.\<format\>.\<templateEngine\> (widget/example.html.twig)`` template is rendered.
 
 If no such template is found, then the default template for action is rendered (example.html.twig).
-Widgets may be rendered with twig function `oro_widget_render($options)`.
+Widgets may be rendered with twig function ``oro_widget_render($options)``.
 
 Frontend Widget Container
 -------------------------
@@ -60,7 +60,7 @@ so you can use all Backbone views features, like events. You need to place widge
 Widget container adds AJAX handling for included form. A widget container provides the functionality for actions with different action areas.
 All form actions are moved to the **adopted** actions section if they are placed in an element with class **widget-actions**.
 
-Widget container adds `\_widgetContainer=\<widgetContainerType\>&\_wid=\<widgetIdentifier\>` to all requests.
+Widget container adds ``\_widgetContainer=\<widgetContainerType\>&\_wid=\<widgetIdentifier\>`` to all requests.
 
 * **\_widgetContainer** variable is used to determine the proper template for the current container;
 
@@ -317,7 +317,7 @@ Let's assume that a widget needs to trigger a *formSave* event when a form is su
         'module': 'your/widget/creator'
     })></div>
 
-Create a js module that creates widget `'your/widget/creator'` as shown in the example below; please remember to add this module to the list of `dynamic-imports` in `jsmodules.yml`.
+Create a js module that creates widget ``'your/widget/creator'`` as shown in the example below; please remember to add this module to the list of ``dynamic-imports`` in ``jsmodules.yml``.
 
 .. code-block:: javascript
     :linenos:
@@ -364,7 +364,7 @@ Create a js module that creates widget `'your/widget/creator'` as shown in the e
         {% endif %}
     </div>
 
-Create a js module with the handler definition `'your/widget/handler'` as shown in the example below; please remember to add this module to the list of `dynamic-imports` in `jsmodules.yml`.
+Create a js module with the handler definition ``'your/widget/handler'`` as shown in the example below; please remember to add this module to the list of 1`dynamic-imports1` in `1jsmodules.yml1`.
 
 .. code-block:: javascript
     :linenos:
@@ -442,7 +442,7 @@ Widget Context Provider
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Widget Context Provider provides the possibility to know the current context of the application during rendering. It enables you to customize the application based on the current context.
-It is registered as DI service named `oro_ui.provider.widget_context`. You can inject it as a global variable for twig templates.
+It is registered as DI service named `oro_ui.provider.widget_context1`. You can inject it as a global variable for twig templates.
  
 API
 ^^^

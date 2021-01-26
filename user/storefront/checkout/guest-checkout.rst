@@ -92,6 +92,6 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 * :ref:`Guest Functions Concept Guide <sys--conf--commerce--guest>`
 * :ref:`Enable Global Guest Access in the Back-Office <configuration--guide--commerce--configuration--guests>`
 * :ref:`Configure Guest Quick Order Form in the Back-Office <user-guide--system-configuration--commerce-sales--quick-order-form>`
-* :ref:`Configure Guest Quotes in rhe Back-Office <sys--conf--commerce--guest--enable--guest_quotes>`
+* :ref:`Configure Guest Quotes in the Back-Office <sys--conf--commerce--guest--enable--guest_quotes>`
 
 .. finish_sample_checkout
