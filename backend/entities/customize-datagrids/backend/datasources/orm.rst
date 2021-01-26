@@ -170,7 +170,7 @@ Please keep in mind that ORM datasource uses `Query Hint Resolver` service to ha
     hints:
         - HINT_TRANSLATABLE
 
-.. hint:: See |Resolve ORM Query Hints| for more information.
+.. hint:: See :ref:`Resolve ORM Query Hints <dev-entities-resolving-orm-query-hints>` for more information.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

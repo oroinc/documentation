@@ -3,7 +3,7 @@
 Entity Aliases
 ==============
 
-|Entity aliases| were introduced to provide a simple and elegant way of referring to entities.
+|Entity aliases| were introduced to provide a simple way of referring to entities.
 
 The usages for entity aliases can be numerous but they come especially handy when specifying entities in the API, removing the need of using bulky FQCNs.
 
@@ -49,7 +49,7 @@ To exclude certain entities from alias generation process, for example some inte
 Entity Alias Provider
 ---------------------
 
-There can be situations when you need more complicated rules for creating entity aliases that can not be simply configured via the ``Resources/config/oro/entity.yml`` file.
+There can be situations when you need more complicated rules for creating entity aliases that cannot be simply configured via the ``Resources/config/oro/entity.yml`` file.
 In this case, create an entity alias provider.
 
 For this, you need to implement the |EntityAliasProviderInterface| interface in your provider class:
@@ -123,7 +123,7 @@ The output example:
     Oro\Bundle\CalendarBundle\Entity\CalendarEvent           calendarevent          calendarevents
 
 
-Suggestions for Aliases Naming
+Suggestions for Naming Aliases
 ------------------------------
 
 To solve the conflict situations when the auto-generated entity alias is already in use, follow the naming rules described below:

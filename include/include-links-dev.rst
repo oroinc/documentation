@@ -2291,66 +2291,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
-.. |Entity Manager| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_manager.md" target="_blank">Entity Manager</a>
-
-.. |Doctrine Field Types| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/doctrine_field_types.md" target="_blank">Doctrine Field Types</a>
-
-.. |Configure Entity Name Formatting (Entity Name Resolver and Providers)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_names.md" target="_blank">Configure Entity Name Formatting (Entity Name Resolver and Providers)</a>
-
-.. |Add Custom Field Validation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/custom_field_validation.md" target="_blank">Add Custom Field Validation</a>
-
-.. |Create Entity Aliases| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_aliases.md" target="_blank">Create Entity Aliases</a>
-
-.. |Create Entity Class Name Provider| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_class_names.md" target="_blank">Create Entity Class Name Provider</a>
-
-.. |Resolve ORM Query Hints| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/query_hint_resolver.md" target="_blank">Resolve ORM Query Hints</a>
-
-.. |Create a Dictionary| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/dictionaries.md" target="_blank">Create a Dictionary</a>
-
-.. |Profiler of Duplicated Queries| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/profiler_duplicated_queries.md" target="_blank">Profiler of Duplicated Queries</a>
-
-.. |Set Up Entity Fallback Values| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_fallback.md" target="_blank">Set Up Entity Fallback Values</a>
-
-.. |Define Entity Repositories as as Symfony DI Container Services| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/repositories_as_a_services.md" target="_blank">Define Entity Repositories as as Symfony DI Container Services</a>
-
-.. |Use Partial Indexes for Entity Fields| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/partial_indexes.md" target="_blank">Use Partial Indexes for Entity Fields</a>
-
-.. |Transaction Watchers for Default DBAL Connection| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/transaction_watchers.md" target="_blank">Transaction Watchers for Default DBAL Connection</a>
-
-.. |Create and Manage an Entity Model| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/client-side/entity-model.md" target="_blank">Create and Manage an Entity Model</a>
-
-.. |Get the EntityStructureDataProvider Instance| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/doc/client-side/entity-structure-data-provider.md" target="_blank">Get the EntityStructureDataProvider Instance</a>
-
 .. |Configure Attributes for an Entity| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityConfigBundle/Resources/doc/attributes.md" target="_blank">Configure Attributes for an Entity</a>
@@ -5643,3 +5583,75 @@ Links (Dev)
 .. |FileManager| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/GaufretteBundle/FileManager.php" target="_blank">FileManager</a>
+
+.. |DictionaryValueListProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/DictionaryValueListProviderInterface.php" target="_blank">DictionaryValueListProviderInterface</a>
+
+.. |DictionaryEntityApiDocHandler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Routing/DictionaryEntityApiDocHandler.php" target="_blank">DictionaryEntityApiDocHandler</a>
+
+.. |entity class name provider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/ChainEntityClassNameProvider.php" target="_blank">entity class name provider</a>
+
+.. |EntityClassNameProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/EntityClassNameProviderInterface.php" target="_blank">EntityClassNameProviderInterface</a>
+
+.. |EntityFallbackResolver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Fallback/EntityFallbackResolver.php" target="_blank">EntityFallbackResolver</a>
+
+.. |ConfigValue| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Entity/ConfigValue.php" target="_blank">ConfigValue</a>
+
+.. |SystemConfigFallbackProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Fallback/Provider/SystemConfigFallbackProvider.php" target="_blank">SystemConfigFallbackProvider</a>
+
+.. |AbstractEntityFallbackProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Fallback/Provider/AbstractEntityFallbackProvider.php" target="_blank">AbstractEntityFallbackProvider</a>
+
+.. |EntityFieldFallbackValueType| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Form/Type/EntityFieldFallbackValueType.php" target="_blank">EntityFieldFallbackValueType</a>
+
+.. |EntityFieldFallbackValue| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Entity/EntityFieldFallbackValue.php" target="_blank">EntityFieldFallbackValue</a>
+
+.. |OroEntityManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/ORM/OroEntityManager.php" target="_blank">OroEntityManager</a>
+
+.. |Doctrine ORM Lifecycle Events| raw:: html
+
+   <a href="http://doctrine-orm.readthedocs.org/en/latest/reference/events.html#lifecycle-events" target="_blank">Doctrine ORM Lifecycle Events</a>
+
+.. |Entity Name Resolver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/EntityNameResolver.php" target="_blank">Entity Name Resolver</a>
+
+.. |EntityNameProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/EntityNameProviderInterface.php" target="_blank">EntityNameProviderInterface</a>
+
+.. |Query Hint Resolver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/DoctrineUtils/ORM/QueryHintResolver.php" target="_blank">Query Hint Resolver</a>
+
+.. |QueryWalkerHintProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/DoctrineUtils/ORM/QueryWalkerHintProviderInterface.php" target="_blank">QueryWalkerHintProviderInterface</a>
+
+.. |entity-structure-data-provider.js| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/public/js/app/services/entity-structure-data-provider.js" target="_blank">entity-structure-data-provider.js</a>
+
+.. |abstract provider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/AbstractEntityClassNameProvider.php" target="_blank">abstract provider</a>

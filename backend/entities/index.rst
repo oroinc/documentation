@@ -20,11 +20,26 @@ In the sections below, you can learn the key things you can come across when wor
    extend-entities/index
    config-entities/index
    crud
+   custom-field-validation
+   entity-aliases
+   entity-activities
+   entity-fallback
+   entity-manager
+   entity-names
+   entity-class-names
+   entity-structure-data-provider
+   events
+   dictionaries
+   doctrine-field-types
+   partial-indexes
+   profiler-duplicated-queries
+   query-hint-resolver
+   repositories-as-a-service
+   transaction-watchers
+   attributes
    data-grids/index
    customize-datagrids/index
    acls
-   entity-aliases
-   entity-activities
    attachments
    customize-crud
    filters/index
