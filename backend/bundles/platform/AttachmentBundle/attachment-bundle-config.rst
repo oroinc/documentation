@@ -240,7 +240,7 @@ For proper work, you need the libraries whose versions correspond to the followi
 * pngquant >= 2.5.0
 * jpegoptim >= 1.4.0
 
-To configure additional libraries you need to add the follwing parameters to the parameters.yml:
+To configure additional libraries you need to add the following parameters to the parameters.yml:
 
 .. code-block:: yaml
    :linenos:
