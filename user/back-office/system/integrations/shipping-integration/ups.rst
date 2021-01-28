@@ -32,6 +32,8 @@ Please, ensure that you have requested separate access keys for your test and pr
 Configure a UPS Integration in OroCommerce
 ------------------------------------------
 
+.. note:: UPS has package weight and size limits for shipping. Please check |the UPS website for more details|.
+
 To enable communication with UPS in order to request the shipping cost estimate and/or request the shipping services, establish a connection with UPS API:
 
 1. Navigate to the **Manage Integrations** page by clicking **System > Integrations > Manage Integrations** in the main menu.
