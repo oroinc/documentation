@@ -32,7 +32,8 @@ To configure the upload settings globally:
 
 .. hint:: The **MIME types** settings can be configured globally and :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`.
 
-.. hint:: The **Image Processing** feature is available since OroCommerce v4.2.0. To check which application version you are running, see the :ref:`system Information <system-information>`.
+.. hint::
+    The **Image Processing** feature is available since OroCommerce v4.2.0. To check which application version you are running, see the :ref:`system Information <system-information>`. Be aware that the Image Processing options are only available if libraries |JPEGOptim| and |PNGQuant| are set up.
 
 8. In the **Image Processing** section, you can control whether to optimize or not the size of the uploading images in the storage. By default, the setting is enabled, which means that the size of all images that you upload to the system is compressed while preserving the quality.
 
@@ -51,6 +52,5 @@ To configure the upload settings globally:
 
 If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the configuration of the entity will prevail and override the corresponding global one.
 
-.. include:: /include/include-links-user.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
-

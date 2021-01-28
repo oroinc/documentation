@@ -870,4 +870,3 @@ Links (User)
 .. |demo extension| raw:: html
 
    <a href="https://github.com/oroinc/commerce-demo-checkouts" target="_blank">demo extension</a>
-
