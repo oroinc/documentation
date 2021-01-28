@@ -25,7 +25,7 @@ Create a New Brand from Scratch
 
    * **Owner** --- Select the owner of the product brand. This limits the list of users who can manage it.
    * **Name** --- Provide the brand name. The field is mandatory.
-   * **Slug** --- Enter a URL slug that is used when building a human-readable URL on the storefront. If the field is left blank, the slug will be generated automatically.
+   * **Slug** --- Enter a URL slug that is used when building a human-readable URL in the storefront. If the field is left blank, the slug will be generated automatically.
    * **Status** --- Select product brand status (*Enabled*/*Disabled*). The field is mandatory.
 
 4. In the **Short Description** section, provide a short but meaningful default description of the product brand to make identification of the brand easier. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the short description in the text field.

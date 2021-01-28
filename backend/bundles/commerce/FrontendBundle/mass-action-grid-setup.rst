@@ -3,7 +3,7 @@ Set Up Mass Action in Datagrid
 
 How to setup datagrid mass actions in Management Console described in :ref:`Mass Action Datagrid Extension <customize-datagrid-extensions-mass-action>` article.
 
-Let's consider using mass delete of customer users on the storefront datagrid page.
+Let's consider using mass delete of customer users in the storefront datagrid page.
 First, check that `oro_datagrid_front_mass_action` route is enabled for the frontend. In `routing.yml`, add the `frontend: true` option:
 
 .. code-block:: yaml

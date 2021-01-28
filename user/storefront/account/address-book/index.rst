@@ -21,7 +21,7 @@ The address book has two sections:
 .. image:: /user/img/storefront/profile/MyProfileAddressBooks.png
 
 .. note::
-   Depending on the storefront settings, the address book lists may appear in the compact format with a map displayed on the right:
+   Depending in the storefront settings, the address book lists may appear in the compact format with a map displayed on the right:
 
    .. image:: /user/img/storefront/profile/address_book_compact.png
       :width: 40%

@@ -107,7 +107,7 @@ Add translations to strings in a template.
 2. Create a Template to Render the Widget in the Storefront
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a template to render the content widget on the storefront.
+Create a template to render the content widget in the storefront.
 
 .. oro_integrity_check:: 7bf823f11fef37626aa540d8d323756473e1144b
 
@@ -254,7 +254,7 @@ This allows the user to select which template to use when creating a content wid
 
 If there is a least one template defined, a list of all templates collected from all themes for this widget type is displayed on the content widget create/edit form drop-down.
 
-During rendering on the storefront, if the template selected by the user is not available in the current theme,
+During rendering in the storefront, if the template selected by the user is not available in the current theme,
 the widget is rendered using its default template (set in the getDefaultTemplate method). To add a new layout template
 for a widget type, follow the steps below:
 

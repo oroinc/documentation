@@ -16,7 +16,7 @@ Related products may include accessories, services, and other items that are lik
 Up-sell products may advertise more expensive alternatives to the product, like a newer and more advanced model, upgrades and add-ons that may look tempting when bundled with the product, etc.
 
    .. image:: /user/img/system/config_commerce/catalog/related_upsell_products.png
-      :alt: Illustration of the related and up-sell products segments on the storefront
+      :alt: Illustration of the related and up-sell products segments in the storefront
 
 In the system configuration, you can:
 

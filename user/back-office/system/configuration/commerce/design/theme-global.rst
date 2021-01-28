@@ -18,7 +18,7 @@ You can set the following theme-related options that apply globally by default:
 * Pre-designed theme for the storefront
 * The layout for the product page details (default tabbed view, short, two column, or list)
 * Style of the selector in filters
-* Display mode for the user menu on the storefront
+* Display mode for the user menu in the storefront
 
 To configure the storefront theme options globally:
 
