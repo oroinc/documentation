@@ -14,7 +14,7 @@ You can set the following theme-related options for the organization to override
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Select the necessary theme, product page template, filter selector and user menu display mode. Refer to the :ref:`Configure Theme Globally <configuration--commerce--design--theme--theme-settings--globally>` for available options and their impact on the storefront look and feel.
+4. Select the necessary theme, product page template, filter selector and user menu display mode. Refer to the :ref:`Configure Theme Globally <configuration--commerce--design--theme--theme-settings--globally>` for available options and their impact in the storefront look and feel.
 
 5. Click **Save Settings**.
 

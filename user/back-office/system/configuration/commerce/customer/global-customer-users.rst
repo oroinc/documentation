@@ -25,11 +25,11 @@ To change the default customer user configuration settings globally:
    * **Show Registration Link** --- Shows/hides the registration link from the storefront login screen. The link is next to the Sign In link in the top bar.
    * **Auto Login** ---Enables/disables customer users to login after registration or email confirmation. Disabled by default.
    * **Required Company Name** --- Shows/hides the company name field in the registration form in the storefront. Required for individual customers who do not belong to any company.
-   * **Show Registration Instructions** --- Enables/disables registration instructions on the storefront login page. This option is disabled by default.                                                                                              
-   * **Registration Instructions Text** --- If *Show Registration Instructions* is enabled, the text provided in the field is displayed on the storefront login page.
+   * **Show Registration Instructions** --- Enables/disables registration instructions in the storefront login page. This option is disabled by default.
+   * **Registration Instructions Text** --- If *Show Registration Instructions* is enabled, the text provided in the field is displayed in the storefront login page.
 
      .. image:: /user/img/system/config_commerce/customer/CustomerUsersRegistrationFrontStore.png
-        :alt: Display the registration instruction text on the storefront login page
+        :alt: Display the registration instruction text in the storefront login page
 
    * **Case-Insensitive Email Addresses** --- If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled. The identical option for back-office users is managed :ref:`here <admin-configuration-user-settings>`. Keep in mind that the uniqueness of email addresses and personal data is checked only for the registered users. It means that no two users can have identical personal information unless they are customer visitors (guest users). Multiple guest customers are allowed to have exactly the same data, including email addresses.
 

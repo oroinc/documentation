@@ -28,7 +28,7 @@ Each newly created role can be either of a *predefined* or *customizable* type. 
 
 With the customer user role, you can manage the following :ref:`access- and permissions-related settings <admin-capabilities>`:
 
-* Profile management permission: A user may be able to view and edit their user profile when the **Self-Managed** option is enabled for their role.
+* Role management permission: A customer user may be able to manage their own role in the storefront if **Self-Managed** option is enabled for this role. Keep in mind that the permissions of the *Customer User Role* entity must be set as well.
 * Permissions to view workflows and/or perform transitions through the workflow steps.
 * Data access/management permissions and capabilities. 
 
@@ -46,7 +46,7 @@ To create a new customer user role:
 
    * **Name** --- A human-readable label that identifies a customer user role.
    * **Customer** --- A customer that has exclusive permission to use this role for their customer users. If the value is not provided, the role is available for all customers.
-   * **Self-Managed** --- The flag that indicates whether the customer user can manage their own roles configuration.
+   * **Self-Managed** --- The flag that indicates whether the customer user can manage their own roles configuration in the storefront. Keep in mind that the permissions of the *Customer User Role* entity must be set as well.
 
 4. In the **Entity** section, select the permissions that you want to grant to users who will be assigned the role you are creating.
 

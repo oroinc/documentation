@@ -19,7 +19,7 @@ To add a consent landing page to a web catalog content node:
 
    .. note:: If you do not want the consent to be displayed in the storefront menu, add it to the 5th menu level to hide it from the storefront, or apply appropriate :ref:`restrictions <user-guide--marketing--web-catalog--content--visibility>`.
 
- .. since by default only the first 4 levels are visible on the storefront
+ .. since by default only the first 4 levels are visible in the storefront
 
 4. In the **Content Variants** section, click **Add Landing Page** in the Content Variants list.
 

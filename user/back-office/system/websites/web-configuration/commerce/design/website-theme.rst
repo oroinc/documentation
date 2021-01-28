@@ -16,7 +16,7 @@ You can set the theme-related options for the website to override global configu
 
 4. Clear the **Use Organization** check box to change the organization-wide setting.
 
-5. Select the necessary theme, product page template, filter selector and user menu display mode. Refer to the :ref:`Configure Theme Globally <configuration--commerce--design--theme--theme-settings--globally>` guide for available options and their impact on the storefront look and feel.
+5. Select the necessary theme, product page template, filter selector and user menu display mode. Refer to the :ref:`Configure Theme Globally <configuration--commerce--design--theme--theme-settings--globally>` guide for available options and their impact in the storefront look and feel.
 
 6. Click **Save Settings**.
 

@@ -7,7 +7,7 @@ Use Web Catalog Nodes as Root Nodes (Example)
 
 You can select any content node as a root node for the OroCommerce storefront menu. This enables to display only the necessary sub-menu nodes in the storefront menu.
 
-As an illustration, we are going to create a category and add it as a separate block on the storefront homepage as part of the featured menu. The block will lead to a product listing page with a number of discounted items. The product listing page will not be part of the main menu and will only be available via a link from the new featured menu block on the homepage (e.g., Special Offers).
+As an illustration, we are going to create a category and add it as a separate block in the storefront homepage as part of the featured menu. The block will lead to a product listing page with a number of discounted items. The product listing page will not be part of the main menu and will only be available via a link from the new featured menu block on the homepage (e.g., Special Offers).
 
 To configure such behavior, follow the steps outlined in the sections below.
 
@@ -70,7 +70,7 @@ Add a new menu item to the existing featured menu block in the storefront:
 
 #. Click **Save**.
 
-   The block should now be displayed on the storefront homepage.
+   The block should now be displayed in the storefront homepage.
 
    .. image:: /user/img/marketing/web_catalogs/navigation_root/featured_menu_block_storefront.png
       :alt: A new frontend menu item added to the featured menu in the storefront

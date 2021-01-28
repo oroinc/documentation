@@ -73,7 +73,7 @@ To configure localization settings globally:
      .. image:: /user/img/system/config_system/language_switcher_storefront.png
         :alt: Language switcher in the storefront
 
-     In addition, they determine the languages available for the email notifications. If there is an email template for the supported language, the users who have selected that specific language on the storefront, receive localized notifications.
+     In addition, they determine the languages available for the email notifications. If there is an email template for the supported language, the users who have selected that specific language in the storefront, receive localized notifications.
 
      .. image:: /user/img/system/config_system/language_tabs_email_template.png
         :alt: Language tabs in email templates
