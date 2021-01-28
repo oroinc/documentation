@@ -1,7 +1,7 @@
 :title: OroCommerce, OroCRM, OroPlatform Frontend Developer Documentation
 
 .. meta::
-   :description: Instructions on the storefront and back-office themes customization for the frontend developers
+   :description: Instructions in the storefront and back-office themes customization for the frontend developers
 
 .. _dev-doc-frontend:
 
