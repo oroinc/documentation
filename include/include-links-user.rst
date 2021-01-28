@@ -867,3 +867,10 @@ Links (User)
 
    <a href="https://github.com/oroinc/commerce-demo-checkouts" target="_blank">demo extension</a>
 
+.. |the UPS website for more details| raw:: html
+
+   <a href="https://www.ups.com/us/en/help-center/packaging-and-supplies/weight-size.page" target="_blank">the UPS website for more details</a>
+
+.. |the FedEx website for more details| raw:: html
+
+   <a href="https://www.fedex.com/content/dam/fedex/us-united-states/services/GrlPkgGuidelines_fxcom.pdf" target="_blank">the FedEx website for more details</a>

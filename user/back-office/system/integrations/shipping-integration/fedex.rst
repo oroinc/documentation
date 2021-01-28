@@ -74,6 +74,8 @@ Once the registration is complete, you can now obtain the necessary test keys to
 Configure a FedEx Integration in OroCommerce
 --------------------------------------------
 
+.. note:: FedEx has package weight and size limits for shipping. Please check |the FedEx website for more details|.
+
 To enable the integration with FedEx in order to request the shipping cost estimation and/or request the shipping services:
 
 1. Navigate **System > Integrations > Manage Integrations** in the main menu.
