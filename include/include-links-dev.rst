@@ -3558,17 +3558,13 @@ Links (Dev)
 
    <a href="https://github.com/orocrm/platform/blob/3.1/src/Oro/Bundle/DataGridBundle/README.md" target="_blank">DataGridBundle documentation</a>
 
-.. |Semantic Versioning| raw:: html
+.. |4.2 branch| raw:: html
 
-   <a href="http://semver.org/" target="_blank">Semantic Versioning</a>
+   <a href="https://github.com/oroinc/orocommerce-application/tree/4.2" target="_blank">4.2 branch</a>
 
-.. |1.6 branch| raw:: html
+.. |5.0 branch| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce-application/tree/1.6" target="_blank">1.6 branch</a>
-
-.. |3.1 branch| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce-application/tree/3.1" target="_blank">3.1 branch</a>
+   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">5.0 branch</a>
 
 .. |relevant FeatureToggleBundle documentation| raw:: html
 
