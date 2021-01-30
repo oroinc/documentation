@@ -52,14 +52,13 @@ When the  application is ready to be released, follow the two steps outlined bel
 
         /public/js
         /public/build
-        /public/layout-build
         /public/media/js
 
    - Force the addition of the built assets to the git repository when they are ready.
 
      .. code-block:: bash
 
-        git add -f public/build public/layout-build public/js/oro.locale_data.js public/media/js
+        git add -f public/build public/js/oro.locale_data.js public/media/js
 
    .. note::
 

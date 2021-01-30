@@ -105,7 +105,7 @@ Compiler collects all styles in one file for the theme. All files should be sort
 
 Example:
 
-*application/commerce/public/layout-build/base/styles.scss*
+*application/commerce/public/build/base/styles.scss*
 
 ::
 
@@ -243,7 +243,7 @@ Add missing styles for this component
 
 In the main file of the default theme, we have:
 
-*application/commerce/public/layout-build/default/styles.css.scss*
+*application/commerce/public/build/default/styles.css.scss*
 
 ::
 

@@ -14,7 +14,7 @@ application performance.
 How To Avoid Performance Issues When MySQL Data is Stored on HDD
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-It is recommended to use SSD to store the data in the MySQL 5.X database. However, if you do need to use the HDD, follow
+It is recommended to use SSD to store the data in the MySQL 8.X database. However, if you do need to use the HDD, follow
 the steps described in the |optimizing InnoDB Disk I/O| article to avoid
 performance issues and set the following configuration parameters in the **/etc/my.cnf** file:
 
@@ -75,17 +75,6 @@ You will get the output with MySQL config files names similar to this:
 
 .. note:: You also can set up the character set and the collation on |the other levels| as well.
 
-If you use the version of MySQL that is **older than 5.7**, the following configuration parameters should be set in
-the **/etc/my.cnf** file:
-
-.. code-block:: bash
-
-   [mysqld]
-   innodb_file_format = Barracuda
-   innodb_large_prefix = 1
-
-Since MySQL 5.7, these parameters are set by default.
-
 You can find more information on MySQL configuration in the |Unicode Support| and |InnoDB File-Format Management| articles.
 
 You can also change the defaults for Doctrine so that the generated SQL uses the correct character set. To achieve this,
@@ -106,8 +95,8 @@ put the following configuration into the **config/config.yml** file:
 For more details, please see the |Setting up the Database to be UTF8| article.
 
 
-Block Nested Loop (BNL) in MySQL 5.6 and 5.7
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Block Nested Loop (BNL) in MySQL 5.6 and later
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 MySQL 5.6 has a lot of improvements in the query optimizer, but unfortunately, some queries work significantly
 slower than in MySQL 5.5. In case of large amounts of data in the database, it is possible to encounter performance issues

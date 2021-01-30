@@ -34,7 +34,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | Web server configuration recommendations are well |
 |                   | described in |Symfony web server documentation|   |
 +-------------------+---------------------------------------------------+
-| *PHP*             | * |PHP| >=7.3.13                                  |
+| *PHP*             | * |PHP| >=7.4.14 and < 8.0                        |
 |                   | * PHP CLI, the same version as for the web server |
 +-------------------+---------------------------------------------------+
 | *PHP Settings*    | Few updates to default PHP configuration settings |
@@ -81,7 +81,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * ldap                                            |
 |                   | * mongodb (to use OroGridFSConfigBundle)          |
 +-------------------+---------------------------------------------------+
-| *Database*        | * |MySQL| 5.7                                     |
+| *Database*        | * |MySQL| 8.0                                     |
 |                   |                                                   |
 |                   | .. note:: The latest version of `mariaDB` may be  |
 |                   |    used at one's own risk. Oro applications are   |
@@ -90,8 +90,8 @@ Oro applications are compatible with most web servers with PHP support, but the 
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| v.12 used for JS assets minification  |
-|                   |   and SCSS assets build.                          |
+| *Assets*          | * |Node.js| v.12 or later used for JS assets      |
+|                   |   minification and SCSS assets build.             |
 +-------------------+---------------------------------------------------+
 
 .. note::
@@ -106,13 +106,11 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
 +------------------+-----------------------------------------------------+
-| *Database*       | * |PostgreSQL| / |EnterpriseDB| 9.6                 |
+| *Database*       | * |PostgreSQL| / |EnterpriseDB| 12.5 or 13          |
 +------------------+-----------------------------------------------------+
 | *Search Index*   | * |Elasticsearch| 7.*                               |
 +------------------+-----------------------------------------------------+
-| *Job Queue*      | * |RabbitMQ| 3.7.21 and above with Erlang/OTP       |
-|                  |   version 21.3 and higher.                          |
-|                  |   RabbitMQ 3.8.x is recommended                     |
+| *Job Queue*      | * |RabbitMQ| 3.8.x                                  |
 +------------------+-----------------------------------------------------+
 
 .. _sys-requirements-postgre-config:

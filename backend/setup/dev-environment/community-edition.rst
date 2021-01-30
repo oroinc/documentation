@@ -43,15 +43,13 @@ Install most of the required Oro application environment components using the fo
 Install MySQL
 ^^^^^^^^^^^^^
 
-As you need to install MySQL 5.7 to replace the default MariaDB replica in CentoOS, get the MySQL 5.7 package from the MySQL official repository:
+As you need to install MySQL 8.0 to replace the default MariaDB replica in CentoOS, get the MySQL 8.0 package from the MySQL official repository:
 
 .. code-block:: bash
 
    wget https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm && rpm -ivh mysql80-community-release-el7-1.noarch.rpm
-   yum-config-manager --disable mysql80-community
-   yum-config-manager --enable mysql57-community
 
-Next, install MySQL 5.7 using the following command:
+Next, install MySQL 8.0 using the following command:
 
 .. code-block:: bash
 
@@ -84,16 +82,6 @@ Run the commands below, or use another Composer installation process described i
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
    php -r "unlink('composer-setup.php');"
    mv composer.phar /usr/bin/composer
-   composer self-update --1
-
-Install Symfony Flex
-^^^^^^^^^^^^^^^^^^^^
-
-To improve composer operations performance install Symfony Flex globally:
-
-.. code-block:: bash
-
-   composer global require symfony/flex
 
 Enable Installed Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -164,7 +152,7 @@ one digit, and one special character, and has a total length of at least 8 chara
 Change the MySQL Server Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is recommended to use SSD to store the application data in the MySQL 5.X database. However, in case you do need to
+It is recommended to use SSD to store the application data in the MySQL 8.X database. However, in case you do need to
 use the HDD, set the following configuration parameters in the **/etc/my.cnf** file to avoid performance issues:
 
 .. code-block:: bash
@@ -197,6 +185,13 @@ set:
    character-set-server = utf8mb4
    collation-server = utf8mb4_unicode_ci
 
+Set the default authentication plugin to mysql_native_password:
+
+.. code-block:: bash
+
+   [mysqld]
+   default-authentication-plugin=mysql_native_password
+
 For the changes to take effect, restart MySQL server by running:
 
 .. code-block:: bash
@@ -209,7 +204,8 @@ Create a Database for the Application and a Dedicated Database User
 .. code-block::sql
 
    CREATE DATABASE oro;
-   GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' identified by 'P@ssword123';
+   CREATE USER 'oro_user'@'localhost' IDENTIFIED BY 'P@ssword123';
+   GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' WITH GRANT OPTION;
    FLUSH PRIVILEGES;
 
 Replace `oro_user` with a new username and `P@ssword123` with a more secure password. Ensure that the password contains
