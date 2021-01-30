@@ -199,7 +199,7 @@ The resulting ``styles.css`` file are the following:
        width: 100%
    }
 
-Before dumps, all files are collected into one for each theme. For ``my-theme`` - in file ``application/commerce/public/layout-build/my-theme/styles.css.scss``:
+Before dumps, all files are collected into one for each theme. For ``my-theme`` - in file ``application/commerce/public/build/my-theme/styles.css.scss``:
 
 .. code-block:: css
    :linenos:
@@ -209,7 +209,7 @@ Before dumps, all files are collected into one for each theme. For ``my-theme`` 
    @import 'my-theme/variables/button-config';
    @import 'my-theme/styles';
 
-For ``my-custom-theme`` - in file ``application/commerce/public/layout-build/my-custom-theme/styles.css.scss``:
+For ``my-custom-theme`` - in file ``application/commerce/public/build/my-custom-theme/styles.css.scss``:
 
 .. code-block:: css
    :linenos:

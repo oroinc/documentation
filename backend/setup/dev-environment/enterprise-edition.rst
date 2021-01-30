@@ -55,7 +55,7 @@ Install PHP 7.4 and the required dependencies using the following command:
 
 .. code-block:: bash
 
-   yum install -y php-cli php-fpm php-opcache php-mbstring php-pgsql php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-tidy php-zip
+   yum install -y php-cli php-fpm php-opcache php-mbstring php-pgsql php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-tidy php-zip php-devel php-pear
 
 Install Composer
 ^^^^^^^^^^^^^^^^
@@ -67,16 +67,6 @@ Run the commands below, or use another Composer installation process described i
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
    php -r "unlink('composer-setup.php');"
    mv composer.phar /usr/bin/composer
-   composer self-update --1
-
-Install Symfony Flex
-^^^^^^^^^^^^^^^^^^^^
-
-To improve composer operations performance, install Symfony Flex globally:
-
-.. code-block:: bash
-
-   composer global require symfony/flex
 
 Environment Configuration
 -------------------------
@@ -380,6 +370,18 @@ To configure PHP, perform the following changes in the configuration files:
      opcache.interned_strings_buffer=32
      opcache.max_accelerated_files=32531
      opcache.save_comments=1
+
+* Install the mongodb php extension
+
+  .. code-block:: none
+
+     pecl install mongodb
+
+* Enable the mongodb php extension in the `php.ini` file (*/etc/php.ini*):
+
+  .. code-block:: none
+
+     extension="mongodb.so"
 
 Configure RabbitMQ
 ^^^^^^^^^^^^^^^^^^

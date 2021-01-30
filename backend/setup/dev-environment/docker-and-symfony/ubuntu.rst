@@ -12,7 +12,11 @@ Environment Setup
 
    .. code-block:: bash
 
-      sudo apt -y install php php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-zip php-intl php-mbstring php-opcache php-curl php-bcmath php-ldap php-pgsql
+      sudo apt install software-properties-common
+      sudo add-apt-repository ppa:ondrej/php
+      sudo apt update
+      sudo apt -y install php7.4 php7.4-fpm php7.4-cli php7.4-pdo php7.4-mysqlnd php7.4-xml php7.4-soap php7.4-gd php7.4-zip php7.4-intl php7.4-mbstring php7.4-opcache php7.4-curl php7.4-bcmath php7.4-ldap php7.4-pgsql php7.4-dev
+      pecl install mongodb
 
 2. Install Node.js 12:
 
@@ -30,14 +34,13 @@ Environment Setup
       sudo usermod -aG docker $(whoami)
       sudo systemctl enable --now docker
 
-4. Install Composer v1:
+4. Install Composer v2:
 
    .. code-block:: bash
 
       php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
       php -r "unlink('composer-setup.php');"
       sudo mv composer.phar /usr/bin/composer
-      composer self-update --1
 
 5. Install Symfony Server and enable TLS:
 

@@ -19,7 +19,7 @@ These methods are detailed below.
 Method 1: Create a Project with Composer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Make sure you are using PHP 7.3.13 or higher and have Composer installed. If you do not, use the Composer
+1. Make sure you are using PHP >=7.4.14 and < 8.0 or higher and have Composer installed. If you do not, use the Composer
    installation process described in the |Composer installation documentation|.
 
 2. Create your new Oro application project with Composer by running one of commands below, depending on the base application you want to install:
@@ -56,23 +56,23 @@ Method 2: Use the GitHub Repository
    .. code-block:: bash
 
     # OroCommerce Community Edition
-    git clone -b 4.1.3 https://github.com/oroinc/orocommerce-application my_project_name
+    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-application my_project_name
     # OroCommerce Enterprise Edition
-    git clone -b 4.1.3 https://github.com/oroinc/orocommerce-enterprise-application my_project_name
+    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-application my_project_name
     # OroCRM Community Edition
-    git clone -b 4.1.3 https://github.com/oroinc/crm-application my_project_name
+    git clone -b 4.2.0 https://github.com/oroinc/crm-application my_project_name
     # OroCRM Enterprise Edition
-    git clone -b 4.1.3 https://github.com/oroinc/crm-enterprise-application my_project_name
+    git clone -b 4.2.0 https://github.com/oroinc/crm-enterprise-application my_project_name
     # OroPlatform Community Edition
-    git clone -b 4.1.3 https://github.com/oroinc/platform-application my_project_name
+    git clone -b 4.2.0 https://github.com/oroinc/platform-application my_project_name
     # OroCommerce Community Edition for Germany
-    git clone -b 4.1.3 https://github.com/oroinc/orocommerce-application-de my_project_name
+    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-application-de my_project_name
     # OroCommerce Enterprise Edition for Germany
-    git clone -b 4.1.3 https://github.com/oroinc/orocommerce-enterprise-application-de my_project_name
+    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-application-de my_project_name
     # OroCommerce Enterprise Edition (without CRM)
-    git clone -b 4.1.3 https://github.com/oroinc/orocommerce-enterprise-nocrm-application my_project_name
+    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-nocrm-application my_project_name
 
-   * Replace the ``4.1.3`` with the version to download.
+   * Replace the ``4.2.0`` with the version to download.
 
    * ``my_project_name`` is the directory to clone the application source files into.
 
