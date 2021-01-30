@@ -3089,17 +3089,13 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/crm/blob/4.1/src/Oro/Bundle/ReportCRMBundle/Resources/config/oro/datagrids.yml" target="_blank">ReportBundle</a>
 
-.. |Semantic Versioning| raw:: html
-
-   <a href="http://semver.org/" target="_blank">Semantic Versioning</a>
-
-.. |4.1 branch| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce-application/tree/4.1" target="_blank">4.1 branch</a>
-
 .. |4.2 branch| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce-application/tree/4.2" target="_blank">4.2 branch</a>
+
+.. |5.0 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">5.0 branch</a>
 
 .. |relevant FeatureToggleBundle documentation| raw:: html
 
@@ -5581,4 +5577,3 @@ Links (Dev)
 .. |Supported features when you open Sketch files in Adobe XD| raw:: html
 
    <a href="https://helpx.adobe.com/xd/user-guide.html/xd/kb/open-sketch-files-in-xd.ug.html" target="_blank">Supported features when you open Sketch files in Adobe XD</a>
-
