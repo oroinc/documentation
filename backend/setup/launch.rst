@@ -24,14 +24,14 @@ We recommend using a staging environment equivalent to the production environmen
           Remember to limit emails sent from the staging and other environments you use in the development. You do not want to send emails to the real mailboxes.
 
           If you use a copy of the production database, we strongly recommend replacing sensitive information with dummy placeholders to increase security and avoid data leaks.
-          If your application runs on |OroCloud|, it will be useful to know that it has a tool that copies the production database and replaces sensitive information with meaningless text. Contact Oro Customers Support to request a copy of your production database for the staging environment.
+          If your application runs on :ref:`OroCloud <orocloud>`, it will be useful to know that it has a tool that copies the production database and replaces sensitive information with meaningless text. Contact Oro Customers Support to request a copy of your production database for the staging environment.
 
 Staging environments mirror production, which means that if errors occur in there, you get a heads-up that it would likely cause similar errors in your production environment. It's important to note however that the absence of issues in your local environment does not guarantee the same in the production.
 
 
 .. hint::
 
-    If your application runs on |OroCloud|, the available environments and their types depend on your Oro license. You can always request the deployment of additional environments (beyond what is covered by your license) for an additional cost. Contact your Account Manager or Sales Representative for more details about additional environments.
+    If your application runs on :ref:`OroCloud <orocloud>`, the available environments and their types depend on your Oro license. You can always request the deployment of additional environments (beyond what is covered by your license) for an additional cost. Contact your Account Manager or Sales Representative for more details about additional environments.
 
 
 **Prepare content early**
@@ -67,7 +67,7 @@ First, create/deploy a new environment, set up a project there, and configure bo
 
 .. important::
 
-    If you are launching an |OroCloud| application, please |reach out to Oro Customers Support| to |notify them about your intention to launch| at least 2 weeks in advance.
+    If you are launching an :ref:`OroCloud <orocloud>` application, please |reach out to Oro Customers Support| to |notify them about your intention to launch| at least 2 weeks in advance.
 
 
 **Buy SSL certificates and configure SPF records**
