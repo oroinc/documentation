@@ -30,6 +30,7 @@ Staging environments mirror production, which means that if errors occur in ther
 
 
 .. hint::
+
     If your application runs on |OroCloud|, the available environments and their types depend on your Oro license. You can always request the deployment of additional environments (beyond what is covered by your license) for an additional cost. Contact your Account Manager or Sales Representative for more details about additional environments.
 
 
@@ -65,7 +66,9 @@ When development, configuration, and testing are complete, you can consider star
 First, create/deploy a new environment, set up a project there, and configure both as production. Alternatively, you can convert your staging environment to production. Remember that the staging is configured for development, so you need to review its configuration carefully and update it according to the production needs. The benefit of such an approach is that data entered during development becomes available on the new instance, so you do not need to spend time entering it again.
 
 .. important::
-    If you are launching an |OroCloud| application, please |reach out to Oro Customers Support| to :ref:`notify them about your intention to launch <support-contact-before-lauch>` at least 2 weeks in advance.
+
+    If you are launching an |OroCloud| application, please |reach out to Oro Customers Support| to |notify them about your intention to launch| at least 2 weeks in advance.
+
 
 **Buy SSL certificates and configure SPF records**
 
