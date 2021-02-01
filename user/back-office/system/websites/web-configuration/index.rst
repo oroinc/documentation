@@ -61,6 +61,7 @@ More information about the options available for each of the two categories is a
   * :ref:`Product <doc--products--before-you-begin>`
 
     * :ref:`Product Images <sys--websites--commerce--product--product-images>`
+    * :ref:`Product Search <sys--websites--commerce--products--search>`
     * :ref:`Featured Products <sys--websites--commerce--products--featured-products>`
     * :ref:`Promotions <sys--websites--commerce--products--new-arrivals>`
     * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products--website>`

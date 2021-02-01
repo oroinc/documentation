@@ -2,12 +2,13 @@
 
 .. _user-guide--marketing--web-catalog--sample:
 
-Build a Custom Web Catalog From Scratch (Sample)
-------------------------------------------------
+Build a Custom Web Catalog From Scratch (Example)
+=================================================
 
 For illustration purposes, a sample web catalog set up is provided below.
 
-**Create First Level Menu**
+Create First Level Menu
+-----------------------
 
 A website that distributes beauty and skincare products to shops worldwide is to have the following sections in its main menu:
 
@@ -44,7 +45,8 @@ This way, we create all the required first level menus.
    :alt: The details of the Web Catalog 2017
    :class: with-border
 
-**Create Sub-level Menu**
+Create Sub-level Menu
+---------------------
 
 Once all first level nodes have been created, we can create the sub-menu nodes (second level menus) that would populate root nodes.
 
