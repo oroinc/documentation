@@ -52,6 +52,7 @@ The following categories of settings are available for system configuration at o
   * Product
 
     * :ref:`Product Images <sys--commerce--product--product-images--image-preview--organization>`
+    * :ref:`Product Search <sys--users--organization--commerce--products--search>`
     * :ref:`Featured Products <sys--users--organization--commerce--products--featured-products>`
     * :ref:`Promotions <sys--users--organization--commerce--products--new-arrivals>`
     * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products--organization>`
