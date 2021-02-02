@@ -313,7 +313,7 @@ To create a shipping method type, add the <bundle_root>/Method/FastShippingMetho
        :linenos:
 
 * ``getIdentifier`` --- Returns a unique identifier of a shipping method type in the scope of the shipping method.
-* ``getLabel`` --- Returns the label of the shipping method type. The label appears on the shipping rule edit page in the back-office and on the storefront.
+* ``getLabel`` --- Returns the label of the shipping method type. The label appears on the shipping rule edit page in the back-office and in the storefront.
 * ``getSortOrder`` ---  Defines the order in which shipping method types appear on the user interface. For example, see the UPS shipping types below. The number that defines the sort order of the UPS Ground is lower than that of the UPS 2nd Day Air (i.e. the lower the number, the higher up the list the method type appears):
 
   .. image:: /img/backend/extend_commerce/shipping_methods_frontend.png

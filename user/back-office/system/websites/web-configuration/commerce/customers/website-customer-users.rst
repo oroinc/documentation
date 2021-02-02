@@ -23,8 +23,8 @@ To change the default customer user configuration settings for a website:
    * **Confirmation Required** --- Enables/disables the email confirmation step following user registration.
    * **Show Registration Link** --- Shows/hides the registration link from the storefront login screen. The link is next to the Sign In link in the top bar.
    * **Required Company Name** --- Shows/hides the company name field in the registration form in the storefront. Required for individual customers who do not belong to any company.
-   * **Show Registration Instructions** --- Enables/disables registration instructions on the storefront login page. This option is disabled by default.                                                                                              
-   * **Registration Instructions Text** --- If *Show Registration Instructions* is enabled, the text provided in the field is displayed on the storefront login page.
+   * **Show Registration Instructions** --- Enables/disables registration instructions in the storefront login page. This option is disabled by default.
+   * **Registration Instructions Text** --- If *Show Registration Instructions* is enabled, the text provided in the field is displayed in the storefront login page.
    * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
 
 5. To customize any of these options:
