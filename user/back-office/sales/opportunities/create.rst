@@ -53,7 +53,7 @@ Account
 
 To create an opportunity directly from an account view page:
 
-1. Navigate to to **Customers > Accounts** in the main menu.
+1. Navigate to **Customers > Accounts** in the main menu.
 2. Click on the required account in the grid.
 #. Navigate to **More Actions** in the top right corner.
 #. Select **Create Opportunity** from the list.

@@ -31,7 +31,7 @@ Create a Business Customer
 
 To create a new business customer:
 
-1. Navigate to the **Customers > Business Customers** in the main menu.
+1. Navigate to **Customers > Business Customers** in the main menu.
 2. Click **Create Business Customer**.
 3. Provide the following information:
 

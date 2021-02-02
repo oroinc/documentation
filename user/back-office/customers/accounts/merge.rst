@@ -5,7 +5,7 @@
 Merge Accounts
 ==============
 
-Once the accounts have been added to the system you can merge user-guide-accounts-merge them to get a full
+Once the accounts have been added to the system you can :ref:`merge <user-guide-accounts-merge>` them to get a full
 view of customer activities, regardless of the channels. This can be useful if, for example, it has
 turned out that several accounts have been created for the different representatives of the same client, or that your
 business-to-business partner is co-operating with you from a new channel (e.g. started buying from your other store).

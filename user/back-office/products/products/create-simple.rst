@@ -32,7 +32,7 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
    a) Enter the product SKU and name.
 
-   b) Enter a URL slug that is used to build a human-readable URL for the product page on the storefront.
+   b) Enter a URL slug that is used to build a human-readable URL for the product page in the storefront.
 
    #) Select the product status: *Enabled* or *Disabled*. When disabled, the product is not included in the catalog and is considered to be a draft.
 
