@@ -85,11 +85,26 @@ To set the opacity of the text block and add its background color, use the **Dec
 Shift the Text to a New Line
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To move the text to a new line down, you can either press the **Enter** key or a combination of **Shift+Enter**.
+To move the text to a new line down, you can either press the **Enter** key or a combination of **Shift+Enter**. Both options shift the text to a new line without creating any gaps, paragraphs, or <div> between lines.
 
-The difference between them is that when pressing **Enter**, you create a new paragraph, which puts a gap between two lines.
+.. image:: /user/img/concept-guides/content-management/shifting_text.png
+   :alt: Displaying the HTML code details whn shifting the text using both options
 
-The **Shift+Enter** combination does not indicate a new paragraph, that is why pressing **Shift+Enter** allows you to go one line down without creating any gaps between lines. This can also come in handy when creating a bulleted or numbered list. With **Shift+Enter**, you can move to the next line without creating a new bullet or number.
+If you create a bulleted or numbered list, then press **Enter** to continue the flow or **Shift+Enter** to move a new line down without creating a new bullet or number.
+
+.. image:: /user/img/concept-guides/content-management/shifting_numbered_list.png
+   :alt: Shifting the numbered list with Enter and Enter+Shift
+
+If H2, H3, or any other formatting is applied to the text, then you have several options to choose from:
+
+1. If the cursor is in the middle of the text, then regardless of what you press, be it **Enter** or **Shift+Enter**, the remaining part after the cursor will be moved to a new line with the same formatting.
+2. If the cursor is in the end of text, then pressing **Shift+Enter**, you move the text to a new line with the same formatting.
+3. If the cursor is in the end of text, then pressing **Enter**, you create a new paragraph without any formatting applied to it.
+
+.. image:: /user/img/concept-guides/content-management/shifting_formatted_text.png
+   :alt: Shifting the formatted text using Enter and Enter+Shift
+
+
 
 Insert Multimedia
 ^^^^^^^^^^^^^^^^^
