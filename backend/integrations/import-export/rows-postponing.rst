@@ -11,7 +11,7 @@ Postponing in Strategy
 Example of usage:
 
 .. code-block:: php
-   :linenos:
+
 
     class CustomAddOrReplaceStrategy extends ConfigurableAddOrReplaceStrategy
     {
@@ -41,7 +41,7 @@ Postponing in Strategy Event
 Example of usage:
 
 .. code-block:: php
-   :linenos:
+
 
     class CustomerTaxCodeImportExportSubscriber implements EventSubscriberInterface
     {

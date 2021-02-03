@@ -15,7 +15,7 @@ ProductPriceStorageInterface
 Simple CSV Storage example:
 
 .. code-block:: php
-   :linenos:
+
 
     namespace Acme\Bundle\PricingBundle\Storage;
 
@@ -119,7 +119,7 @@ Read more in the Symfony article on |How to Decorate Services|.
 Service definition example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_pricing.storage.csv_file:
         class: Acme\Bundle\PricingBundle\Storage\CSVFilePriceStorage
@@ -140,7 +140,7 @@ For more information, see |Feature Toggle Bundle|.
 Voter example:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 

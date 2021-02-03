@@ -15,7 +15,7 @@ Components
 Define `Backbone.Model` for an item:
 
 .. code-block:: js
-   :linenos:
+
 
     var ItemModel = Backbone.Model.extend({
         defaults: {
@@ -30,7 +30,7 @@ Define `Backbone.Model` for an item:
 Define `Backbone.Collection` for the item list:
 
 .. code-block:: javascript
-   :linenos:
+
 
     var ItemCollection = Backbone.Collection.extend({
         model: ItemModel
@@ -40,7 +40,7 @@ Define `Backbone.Collection` for the item list:
 Define html for `itemsManagerEditor`:
 
 .. code-block:: html
-   :linenos:
+
 
     <div id="editor">
         <input name="name"></input>
@@ -56,7 +56,7 @@ Define html for `itemsManagerEditor`:
 Define html for `itemsManagerTable`:
 
 .. code-block:: html
-   :linenos:
+
 
     <table>
         <thead>
@@ -76,7 +76,7 @@ Define html for `itemsManagerTable`:
 Define template file `templates/item.html` for the item on the list:
 
 .. code-block:: none
-    :linenos:
+
 
      <tr data-cid="<%= cid %>">
          <td><%= name %></td>
@@ -97,7 +97,7 @@ Define template file `templates/item.html` for the item on the list:
 Instantiate item collection:
 
 .. code-block:: javascript
-   :linenos:
+
 
     var items = new ItemCollection([
         {
@@ -121,7 +121,7 @@ Instantiate item collection:
 Apply `itemsManagerEditor` widget on `div#editor`:
 
 .. code-block:: js
-   :linenos:
+
 
     $('div#editor').itemsManagerEditor({
         collection: items
@@ -131,7 +131,7 @@ Apply `itemsManagerEditor` widget on `div#editor`:
 Apply `itemsManagerTable` widget to `tbody.item-container`:
 
 .. code-block:: javascript
-    :linenos:
+
 
     import itemTemplate from 'tpl-loader!templates/item.html';
 

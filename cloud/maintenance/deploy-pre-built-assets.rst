@@ -13,7 +13,7 @@ Configure OroCloud
 To make OroCloud skip the assets build during the upgrade, override upgrade commands in the :ref:`orocloud.yaml file <orocloud-maintenance-advanced-use>`:
 
 .. code-block:: yaml
-    :linenos:
+
 
     ---
     orocloud_options:

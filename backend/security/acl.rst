@@ -153,7 +153,7 @@ can be granted for a user to them. Use the ``security`` scope in the ``defaultVa
 the ``@Config`` annotation:
 
 .. code-block:: php
-   :linenos:
+
 
     /**
     ...
@@ -190,7 +190,7 @@ entity. If you want to restrict the available permissions for an entity, you can
 separated explicitly. For example, you limit it to the ``VIEW`` and ``EDIT`` permissions:
 
 .. code-block:: php-annotations
-   :linenos:
+
 
     /**
      * ...
@@ -213,7 +213,7 @@ of the record and the organization where this record was created.
 For example, the config will be the following for the USER owner type:
 
 .. code-block:: php-annotations
-   :linenos:
+
 
     /**
      * @Config(
@@ -231,7 +231,7 @@ For example, the config will be the following for the USER owner type:
 For the business unit owner type:
 
 .. code-block:: php-annotations
-   :linenos:
+
 
     /**
      * @Config(
@@ -249,7 +249,7 @@ For the business unit owner type:
 For an Organization owner type, you can specify only the ``owner_field_name`` and ``owner_column_name``:
 
 .. code-block:: php-annotations
-   :linenos:
+
 
     /**
      * @Config(
@@ -284,7 +284,7 @@ the controller method. Restricting access can be done in two different ways:
    permission to check for:
 
    .. code-block:: php-annotations
-       :linenos:
+
 
        // src/Acme/DemoBundle/Controller/ProductController.php
        namespace Acme\DemoBundle\Controller;
@@ -315,7 +315,7 @@ the controller method. Restricting access can be done in two different ways:
    The ACL configuration from the example above looks like this:
 
    .. code-block:: yaml
-       :linenos:
+
 
        # src/Acme/DemoBundle/Resources/config/oro/acls.yml
        acls:
@@ -328,7 +328,7 @@ the controller method. Restricting access can be done in two different ways:
    in the acls.yml file. The name of the ACL resource is used as the parameter of this annotation:
 
    .. code-block:: php-annotations
-      :linenos:
+
 
        // src/Acme/DemoBundle/Controller/ProductController.php
        namespace Acme\DemoBundle\Controller;
@@ -352,7 +352,7 @@ the controller method. Restricting access can be done in two different ways:
    YAML configuration of your ACL to define which method(s) should be protected:
 
    .. code-block:: yaml
-      :linenos:
+
 
        # src/Acme/DemoBundle/Resources/config/oro/acls.yml
        acls:
@@ -383,7 +383,7 @@ Data Grids
 You can protect a datasource with ACL by adding the acl_resource parameter under the source node in the datagrid configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -400,7 +400,7 @@ the set of domain objects the user is granted access to. To achieve this, use th
 provided by the OroSecurityBundle:
 
 .. code-block:: php
-   :linenos:
+
 
     // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
@@ -438,7 +438,7 @@ Sometimes it is not possible to do an ACL check in the controller using annotati
 In this case, you can use the ``isGranted`` function:
 
 .. code-block:: php
-   :linenos:
+
 
     // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
@@ -467,7 +467,7 @@ The `security.authorization_checker` service is a public service that is used to
 The main entry point is `isGranted` method:
 
 .. code-block:: php
-   :linenos:
+
 
    isGranted($attributes[, $object])
 
@@ -480,14 +480,14 @@ The main entry point is `isGranted` method:
 Checking access to some ACL annotation resource
 
 .. code-block:: php
-   :linenos:
+
 
    $this->authorizationChecker->isGranted('some_resource_id')
 
 Checking VIEW access to the entity by class name
 
 .. code-block:: php
-   :linenos:
+
 
    $this->authorizationChecker->isGranted('VIEW', 'Entity:MyBundle:MyEntity' );
 
@@ -495,7 +495,7 @@ Checking VIEW access to the entity by class name
 Checking VIEW access to the entity's field
 
 .. code-block:: php
-   :linenos:
+
 
    $this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, $fieldName) );
 
@@ -503,7 +503,7 @@ Checking VIEW access to the entity's field
 Checking ASSIGN access to the entity object
 
 .. code-block:: php
-   :linenos:
+
 
    $this->authorizationChecker->isGranted('ASSIGN', $myEntity);
 
@@ -513,7 +513,7 @@ Checking access is performed in the following way: **Object-Scope**->**Class-Sco
 For example, we are checking View permission to $myEntity object of MyEntity class. When we call
 
 .. code-block:: php
-   :linenos:
+
 
    $this->authorizationChecker->isGranted('VIEW', $myEntity);
 
@@ -533,7 +533,7 @@ certain part of your application. To achieve this, use the special ``action`` ty
 .. configuration-block::
 
     .. code-block:: php-annotations
-        :linenos:
+
 
         // ...
 
@@ -549,7 +549,7 @@ certain part of your application. To achieve this, use the special ``action`` ty
         }
 
     .. code-block:: yaml
-        :linenos:
+
 
         # src/Acme/DemoBundle/Resources/config/oro/acls.yml
         acls:
@@ -563,7 +563,7 @@ Manual Access Check on an Object Field
 Developer can check access to the given entity field by passing instance `FieldVote` class to the `isGranted` method of the |Authorization Checker|:
 
 .. code-block:: php
-   :linenos:
+
 
     $entity = $repository->findOneBy('id' => 10);
 

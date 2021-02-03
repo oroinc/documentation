@@ -26,7 +26,7 @@ OroCustomerBundle extends security model of ``OroSecurityBundle`` for entities w
 The example of the frontend permissions configuration for entity is provided below.
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
     ....
@@ -81,7 +81,7 @@ AnonymousCustomerUserToken
 |OroBundleCustomerBundleSecurityTokenAnonymousCustomerUserToken| is the token class that is extended from ``AnonymousToken``. It is tied with the ``CustomerVisitor`` entity class which persisted anonymous customer user data for later use. Besides it, the token stores the info taken from the ``visitor_id`` and ``session_id`` cookies. When the token is initialized for the first time, it is filled with the ``Anonymous Customer User`` string to provide compatibility with Symfony security system.
 
 .. code-block:: php
-   :linenos:
+
 
     $token = new AnonymousCustomerUserToken(
         'Anonymous Customer User',
@@ -104,7 +104,7 @@ The |OroBundleCustomerBundleEntityCustomerVisitor| class has the following prope
 The session id property is generated through Doctrine ``PrePersist`` Lifecycle Event:
 
 .. code-block:: php
-   :linenos:
+
 
     $this->sessionId = bin2hex(random_bytes(10));
 
@@ -118,7 +118,7 @@ The listener checks the token, and if it is the instance of ``AnonymousCustomerU
 If the authentication of ``AnonymousCustomerUserToken`` object is successful, you need to update cookie using the lifetime parameter, ``oro_customer.customer_visitor_cookie_lifetime_days``. By default, this param is 30 days, and it is accessible through the System > Configuration > Commerce > Customer > Customer User section on the global and organization levels:
 
 .. code-block:: php
-   :linenos:
+
 
     const COOKIE_ATTR_NAME = '_security_customer_visitor_cookie';
     const COOKIE_NAME = 'customer_visitor';
@@ -153,7 +153,7 @@ The |OroBundleCustomerBundleDependencyInjectionSecurityAnonymousCustomerUserFact
 Also, it defines the ``update_latency`` configuration option. It helps prevent sending too many requests to the database when updating the ``lastVisit`` datetime of the ``AnonymousCustomerUser`` entity. Its default value is set in the DI container and is expressed in seconds:
 
 .. code-block:: yaml
-   :linenos:
+
 
    oro_customer.anonymous_customer_user.update_latency: 600 # 10 minutes in seconds
 
@@ -164,7 +164,7 @@ Firewall Configuration
 To activate anonymous customer user functionality for some routes or apply it to the existing ones, define it in the ``security`` section with the ``anonymous_customer_user: true`` property:
 
 .. code-block:: yaml
-   :linenos:
+
 
    security:
        firewalls:
@@ -189,7 +189,7 @@ It is used for creating some business products under Anonymous Customer, like RF
 For example, when creating one of the mentioned products, we can tie it with Guest Customer info taken from ``AnonymousCustomerUserToken`` token:
 
 .. code-block:: php
-   :linenos:
+
 
    // $request is a some Request object
    $token = $this->tokenAccessor->getToken();
@@ -228,7 +228,7 @@ Configure Guest Access and Permissions
 When we implement guest functionality for some product, it should be tied with the related feature and added to system configuration on the global, organization, and website level). By default, it should be disabled:
 
 .. code-block:: php
-   :linenos:
+
 
    //.../DependencyInjection/Configuration.php
    'guest_product_toggle' => ['type' => 'boolean','value' => false],
@@ -236,7 +236,7 @@ When we implement guest functionality for some product, it should be tied with t
 
 
 .. code-block:: yaml
-   :linenos:
+
 
    #...Resources/config/oro/system_configuration.yml
    system_configuration:
@@ -275,7 +275,7 @@ When we implement guest functionality for some product, it should be tied with t
 
 
 .. code-block:: yaml
-   :linenos:
+
 
    #...Resources/config/oro/features.yml
    features:
@@ -288,7 +288,7 @@ When we implement guest functionality for some product, it should be tied with t
 Next, we should activate feature toggle voter in the DI configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
    oro_bundle.voter.guest_product:
        parent: oro_customer.voter.anonymous_customer_user
@@ -309,7 +309,7 @@ Sometimes, it is necessary to open some business entity or action for guests usi
 So, to enable certain entities and actions for the Anonymous Customer User role by default, use the following code example:
 
 .. code-block:: yaml
-   :linenos:
+
 
    #.../Migrations/Data/ORM/data/frontend_roles.yml
    ANONYMOUS:

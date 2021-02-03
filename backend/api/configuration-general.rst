@@ -7,7 +7,7 @@ The following general configuration options can be changed via `Resources/config
 or `config/config.yml` of your application.
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_api:
 

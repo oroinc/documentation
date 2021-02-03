@@ -13,7 +13,7 @@ Screen Map
 By default these settings for list of screen types synchronized with scss breakpoints.
 
 .. code-block:: scss
-   :linenos:
+
 
     // Desktop Media Breakpoint
     $breakpoint-desktop: 1100px;
@@ -43,7 +43,7 @@ By default these settings for list of screen types synchronized with scss breakp
 |Default scss breakpoints| are converted to the following array:
 
 .. code-block:: javascript
-   :linenos:
+
 
     screenMap: [
         {
@@ -156,7 +156,7 @@ A screen type is used to describe a viewport size range; it provides an opportun
 For example:
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         name: 'screen-type',

@@ -20,7 +20,7 @@ the integration section of the admin interface. A channel is a class that has to
 :class:`Oro\\Bundle\\IntegrationBundle\\Provider\\ChannelInterface`:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace AppBundle\Integration;
 
@@ -42,7 +42,7 @@ if you also like to display an icon. You then also need to implement the ``getIc
 returns a path to the icon relative to the project's web directory:
 
 .. code-block:: php
-    :linenos:
+
 
         // src/AppBundle/Integration/TaskChannel.php
         namespace AppBundle\Integration;
@@ -66,7 +66,7 @@ attribute which must be a unique value that is used internally by the OroIntegra
 to the channel:
 
 .. code-block:: yaml
-    :linenos:
+
 
     // src/AppBundle/Resources/config/integration.yml
     services:
@@ -107,7 +107,7 @@ to give the transport an identifier using the ``type`` attribute that must be un
 channel:
 
 .. code-block:: yaml
-    :linenos:
+
 
         // src/AppBundle/Resources/config/integration.yml
         services:
@@ -139,7 +139,7 @@ Your final step is to implement the :class:`Oro\\Bundle\\IntegrationBundle\\Prov
     A string that identifies the connector. This must be unique throughout the channel.
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Integration/TaskConnector.php
     namespace AppBundle\Integration;
@@ -175,7 +175,7 @@ connector is associated with. The ``type`` attribute must get the same value tha
 the connector's ``getType()`` method:
 
 .. code-block:: yaml
-    :linenos:
+
 
             // src/AppBundle/Resources/config/integration.yml
             services:

@@ -6,7 +6,7 @@ How to Add/Remove Scheduled task
 Scheduled (|cron|) tasks can be configured, as illustrated below:
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:

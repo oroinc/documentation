@@ -16,7 +16,7 @@ Let's assume that we are using demo bundle from :ref:`How to create new bundle <
 article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php`` file should look like this:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
     // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
@@ -41,7 +41,7 @@ article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php``
 In our case will need to add the ``routing.yml`` file with the following content:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml
     acme_parent_bundle:
@@ -57,7 +57,7 @@ So, we need to create ``/src/Acme/Bundle/NewBundle/Resources/views/User/widget/i
 (this file structure duplicates the file structure of the extended bundle) with our custom content:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     <div class="widget-content">
         <div class="row-fluid form-horizontal">

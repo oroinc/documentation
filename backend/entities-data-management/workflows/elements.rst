@@ -16,7 +16,7 @@ Conditions are based on the |ConfigExpression| component.
 To add a custom condition, add a service to DIC with tag `oro_action.condition`, as illustrated below:
 
 .. code-block:: php
-   :linenos:
+
 
     services:
         Oro\Bundle\WorkflowBundle\ConfigExpression\Blank:
@@ -40,7 +40,7 @@ Configurable Condition
 If value of attribute "call_timeout" is not blank AND equals 20.
 
 .. code-block:: php
-   :linenos:
+
 
     $configuration = array(
         '@and' => array(
@@ -67,7 +67,7 @@ Add a Custom Action
 To add a custom action, add a service to DIC with tag `oro_action.action`, as illustrated below:
 
 .. code-block:: php
-   :linenos:
+
 
     services:
         Oro\Component\Action\Action\CloseWorkflow:
@@ -89,7 +89,7 @@ Syntax examples are provided below:
 **Full Configuration Example**
 
 .. code-block:: php
-   :linenos:
+
 
     - '@alias_of_action':
         conditions:
@@ -103,7 +103,7 @@ Syntax examples are provided below:
 **Short Configuration Example**
 
 .. code-block:: php
-   :linenos:
+
 
     - '@alias_of_action':
         - some_parameters: some_value

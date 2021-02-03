@@ -17,7 +17,7 @@ Reindexation might take long time for a big volume of data, so it would be good 
 To reindex all entities, use the following command:
 
 .. code-block:: php
-   :linenos:
+
 
     > php bin/console oro:website-search:reindex
     Starting reindex task for all mapped entities
@@ -27,7 +27,7 @@ To reindex all entities, use the following command:
 To reindex only a certain website and specific entity, use the --website-id and --class parameters:
 
 .. code-block:: php
-   :linenos:
+
 
     > bin/console oro:website-search:reindex --website-id 1 --class OroUserBundle:User
 
@@ -44,7 +44,7 @@ You will need a configured Message Queue and at least one running consumer worke
 Please use the following parameter to run a scheduled, background indexation :
 
 .. code-block:: php
-   :linenos:
+
 
     > bin/console oro:website-search:reindex --scheduled
 
@@ -55,7 +55,7 @@ In order to smoothly scale indexation of big volumes, we supplied another parame
 You can specify a range of IDs of products to be reindexed, for example:
 
 .. code-block:: php
-   :linenos:
+
 
     > bin/console oro:website-search:reindex --scheduled --product-id=1-5000
 
@@ -64,7 +64,7 @@ The parameter also supports ID range splitting.
 Let's assume we have a very large database of 5M products and want to distribute load nicely among a set of 32 message consumers. In order to do this, we could tell the reindexer to split the products between workers in 1000-product sets:
  
 .. code-block:: php
-   :linenos:
+
 
     > bin/console oro:website-search:reindex --scheduled --product-id=1-5000000/1000
 
@@ -73,7 +73,7 @@ This command will generate reindex requests with 1000 products per each, thus al
 If you do not know the exact amount of products in the database, you can use the **asterisk** instead:
 
 .. code-block:: php
-   :linenos:
+
 
     > bin/console oro:website-search:reindex --scheduled --product-id=*/1000
 

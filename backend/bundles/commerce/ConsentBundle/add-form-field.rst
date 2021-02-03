@@ -9,7 +9,7 @@ Mapped Field
 If an entity contains the `customerUser` property, add the `customerConsents` field to the form using `property_path` in the `form_options`.
 
 .. code-block:: php
-   :linenos:
+
 
    $form->add(
        ConsentAcceptanceType::TARGET_FIELDNAME,
@@ -32,7 +32,7 @@ If an entity does not contain the `customerUser` property:
 1. Add the `customerConsents` field to the form and set `mapped = false` in the `form_options`.
 
    .. code-block:: php
-      :linenos:
+
 
       $form->add(
           ConsentAcceptanceType::TARGET_FIELDNAME,
@@ -50,7 +50,7 @@ If an entity does not contain the `customerUser` property:
 2. Create a form listener service.
 
    .. code-block:: yaml
-      :linenos:
+
 
       acme_demo.event_listener.form_listener:
           class: Acme\Bundle\DemoBundle\EventListener\BeforeFlushFormListener
@@ -62,7 +62,7 @@ If an entity does not contain the `customerUser` property:
 3. Implement the logic before the flush event.
 
    .. code-block:: php
-      :linenos:
+
 
       namespace Acme\Bundle\DemoBundle\EventListener;
 
@@ -104,7 +104,7 @@ Render Form Field in the Storefront
 First, check that `customerConsents` is rendered in the form template, the input with type `hidden` should be rendered on the page.
 
 .. code-block:: twig
-   :linenos:
+
 
     {% if form.customerConsents is defined %}
         {{ form_widget(form.customerConsents) }}
@@ -114,7 +114,7 @@ First, check that `customerConsents` is rendered in the form template, the input
 To show a block with consent items, import the layout with consent items and configure it.
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         imports:
@@ -140,7 +140,7 @@ To show a block with consent items, import the layout with consent items and con
 If all consents are accepted, add a template with a success message.
 
 .. code-block:: php
-   :linenos:
+
 
     {% block _checkout_consent_message_widget %}
         {% set attr = layout_attr_defaults(attr, {

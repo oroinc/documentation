@@ -19,7 +19,7 @@ If you need a custom logic to manage sent messages, you can use the
 The following example shows how to test whether a message was sent.
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Tests\Functional;
@@ -86,7 +86,7 @@ message producer in the unit tests, use `self::getMessageProducer()`.
 For example:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Tests\Unit;

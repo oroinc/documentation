@@ -41,7 +41,7 @@ Providers with this tag will be used in case you restrict access to the website.
 To add custom logic to providers, each provider dispatches events on start and end of the `UrlItemsProvider::getUrlItems` method:
 
 .. code-block:: php
-    :linenos:
+
 
 
     /**
@@ -74,7 +74,7 @@ Add a New Provider
 To create a simple provider, create an instance of the `UrlItemsProvider` with appropriate values for `providerType` and `entityName` parameters in the *services.yml* file.
 
 .. code-block:: yaml
-   :linenos:
+
 
     my_provider:
         class: Oro\Bundle\SEOBundle\Sitemap\Provider\UrlItemProvider
@@ -89,7 +89,7 @@ Add a New Provider Available While the Website is Locked
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme.sitemap.provider.router_sitemap_urls_provider:
         class: Acme\Bundle\SEOBundle\Sitemap\Provider\AcmeUrlsProvider
@@ -110,7 +110,7 @@ Customize Sitemap Provider Logic
 Your new provider should implement `UrlItemsProviderInterface`:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
     class MyProvider implements UrlItemsProviderInterface
@@ -129,7 +129,7 @@ Your new provider should implement `UrlItemsProviderInterface`:
 and should be register in `UrlItemsProviderRegistry` using the `oro_seo.sitemap.url_items_provider` tag:
 
 .. code-block:: php
-    :linenos:
+
 
     my_provider:
         class: AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
@@ -145,7 +145,7 @@ A new `frontend_master_catalog` feature was created to detect if web catalog res
 The provider that depends on this feature should also implement `FeatureToggleableInterface`, use `FeatureCheckerHolderTrait`:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
     class MyProvider implements UrlItemsProviderInterface, 
@@ -168,7 +168,7 @@ The provider that depends on this feature should also implement `FeatureToggleab
 and should be tagged with the `oro_featuretogle.feature` tag for the `frontend_master_catalog` feature.
 
 .. code-block:: yaml
-    :linenos:
+
 
     my_provider:
         class: AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
@@ -201,7 +201,7 @@ If the file is absent, the `config/robots.txt.dist` file is used.
 If the `robots.txt.dist` file is absent, the following data is used as the base:
 
 .. code-block:: none
-   :linenos:
+
 
     # www.robotstxt.org/
     # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
@@ -225,14 +225,14 @@ the following configuration of the web server:
 - for Apache server, add the rewrite rule to the mod_rewire configuration block of the .htaccess file:
 
 .. code-block:: none
-   :linenos:
+
 
    RewriteRule ^robots.txt /media/sitemaps/robots.your_domain.com.txt [L]
 
 - for nginx web server, add the following configuration:
 
 .. code-block:: none
-   :linenos:
+
 
     location /robots.txt {
         alias /media/sitemaps/robots.your_domain.com.txt;

@@ -11,7 +11,7 @@ Usually, an administrator provides a predefined set of associations between the 
 The following example illustrates how to do it:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 
@@ -70,7 +70,7 @@ To make the entity extended, create a base abstract class. The name of this clas
 Here is an example:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 
@@ -99,7 +99,7 @@ Here is an example:
 Use this class as the superclass for your entity. To include the entity in the `activity` group, use the ORO entity configuration, for example:
 
 .. code-block:: php
-    :linenos:
+
 
     /**
      *  @Config(
@@ -137,7 +137,7 @@ Keep in mind that:
  - In the following example, the `activity-email-grid` datagrid is used to render the list of activities. This grid is defined in the *datagrids.yml* file:
 
 .. code-block:: php
-    :linenos:
+
 
     /**
      * This action is used to render the list of emails associated with the given entity
@@ -160,7 +160,7 @@ Keep in mind that:
 
 
 .. code-block:: twig
-    :linenos:
+
 
     {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
 
@@ -175,7 +175,7 @@ Keep in mind that:
 Now, you need to bind the controller to your activity entity. It can be done using the ORO entity configuration, for example:
 
 .. code-block:: php
-    :linenos:
+
 
     /**
      *  @Config(
@@ -205,7 +205,7 @@ Here is an example of TWIG templates:
 activityButton.html.twig
 
 .. code-block:: none
-    :linenos:
+
 
     {{ UI.clientButton({
         'dataUrl': path(
@@ -241,7 +241,7 @@ activityButton.html.twig
 activityLink.html.twig
 
 .. code-block:: none
-    :linenos:
+
 
     {{ UI.clientLink({
         'dataUrl': path(
@@ -277,7 +277,7 @@ activityLink.html.twig
 2. Register these templates in *placeholders.yml*, for example:
 
 .. code-block:: yaml
-    :linenos:
+
 
     placeholders:
     items:
@@ -294,7 +294,7 @@ activityLink.html.twig
  For example:
 
 .. code-block:: php
-    :linenos:
+
 
     /**
      *  @Config(
@@ -319,7 +319,7 @@ Configure Custom Grid for Activity Context Dialog
 If you want to define a context grid for an entity (e.g., User) in the activity context dialog, add the `context` option in the entity class `@Config` annotation, e.g:
 
 .. code-block:: php
-    :linenos:
+
 
     /**
      * @Config(
@@ -347,7 +347,7 @@ For any activity entity grid, you can add a column that includes all context ent
 Have a look at the following example of tasks configuration in *datagrids.yml*:
 
 .. code-block:: yaml
-    :linenos:
+
 
 
     datagrids:
@@ -365,7 +365,7 @@ This configuration creates a column named `contexts` and tries to detect the act
 If you wish to configure the column, add a section with the name specified in the `column_name` option:
 
 .. code-block:: yaml
-    :linenos:
+
 
     datagrids:
         tasks-grid:
@@ -382,7 +382,7 @@ The column type is `twig` (unchangeable), so you can also specify `template`.
 The default one is |OroActivityBundle:Grid:Column/contexts.html.twig|.
 
 .. code-block:: twig
-    :linenos:
+
 
     {% for item in value %}
         {% spaceless %}

@@ -12,7 +12,7 @@ This event is triggered when the transaction that provides functional test isola
 Use the following code to subscribe to this event:
 
 .. code-block:: php
-   :linenos:
+
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Persistence\ObjectManager;

@@ -11,7 +11,7 @@ Action Manager enables you to add actions globally for all jsTree in the applica
 * 'action' - an object with a view instance and a hook property, when this property contain *true*, action is appended to the tree view
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         view: 'path/to/some-action-view',
@@ -21,7 +21,7 @@ Action Manager enables you to add actions globally for all jsTree in the applica
 or hook parameter can get multiple properties
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         view: 'path/to/some-action-view',
@@ -34,7 +34,7 @@ or hook parameter can get multiple properties
 **Example of Usage**
 
 .. code-block:: javascript
-   :linenos:
+
 
     // Create action
 

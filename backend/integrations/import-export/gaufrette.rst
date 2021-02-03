@@ -16,7 +16,7 @@ This configuration allows to use Amazon S3 cloud service for the importing and e
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     services:
         aws_s3.client:

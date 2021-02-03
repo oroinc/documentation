@@ -15,7 +15,7 @@ The root node should be `integrations` and the form configuration should be plac
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     integrations:
         form:

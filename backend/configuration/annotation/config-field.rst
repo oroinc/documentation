@@ -14,7 +14,7 @@ Options
 Configures default values for particular config options on a per property basis:
 
 .. code-block:: php
-    :linenos:
+
 
     // ...
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;

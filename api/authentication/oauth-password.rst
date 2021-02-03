@@ -35,7 +35,7 @@ To configure the authentication via the password grant type and retrieve the acc
 Request
 
 .. code-block:: http
-    :linenos:
+
 
     POST /oauth2-token HTTP/1.1
     Content-Type: application/json
@@ -43,7 +43,7 @@ Request
 Request Body
 
 .. code-block:: json
-    :linenos:
+
 
     {
         "grant_type": "password",
@@ -56,7 +56,7 @@ Request Body
 Response Body
 
 .. code-block:: json
-    :linenos:
+
 
     {
         "token_type": "Bearer",
@@ -70,7 +70,7 @@ The received access token can be used multiple times until it expires.
 An example of an API request:
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users HTTP/1.1
     Accept: application/vnd.api+json

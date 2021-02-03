@@ -8,7 +8,7 @@ To allow creating :ref:`notification rules <system-notification-rules>` for new 
 
    .. code-block:: yaml
       :caption: Resources/config/oro/app.yml
-      :linenos:
+
 
       oro_notification:
           events:

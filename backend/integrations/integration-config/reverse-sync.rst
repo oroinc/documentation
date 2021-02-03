@@ -20,7 +20,7 @@ it takes the `EntityReaderById::ID_FILTER` option from the context object(`Conte
 **Example:**
 
 .. code-block:: yaml
-   :linenos:
+
 
     #batch_job.yml
     example_export:
@@ -42,7 +42,7 @@ Processor and writer could be initialized in your bundle in **service.yaml**.
 **Example:**
 
 .. code-block:: yaml
-   :linenos:
+
 
     YOUR_PROCESSOR:
         class: Acme\Bundle\AcmeBundle\Processor\YourProcessor

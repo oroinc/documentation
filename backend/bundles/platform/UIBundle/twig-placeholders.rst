@@ -14,7 +14,7 @@ Placeholder Declaration in YAML
 Placeholders can be defined in any bundle under `/SomeBundleName/Resource/oro/placeholders.yml`
 
 .. code-block:: yaml
-   :linenos:
+
 
     placeholders:
         items:                             # items to use in placeholders (templates or actions)
@@ -35,7 +35,7 @@ Placeholders can be defined in any bundle under `/SomeBundleName/Resource/oro/pl
 Any configuration defined in bundle `placeholders.yml` file can be overridden in the `config/config.yml` file.
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_ui:
         placeholders:
@@ -63,7 +63,7 @@ Rendering Placeholders
 To render placeholder content in twig template we need to put
 
 .. code-block:: html
-   :linenos:
+
 
     {% placeholder <placeholder_name> %}
 
@@ -71,7 +71,7 @@ To render placeholder content in twig template we need to put
 Additional options can be passed to all placeholder child items using `with`, e.g.
 
 .. code-block:: html
-   :linenos:
+
 
    {% placeholder <placeholder_name> with {'form' : form} %}
 

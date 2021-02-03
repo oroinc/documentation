@@ -27,7 +27,7 @@ You can also specify engine name and engine parameters in the `config.yml` file:
 Like in the ElasticSearchBundle, in the WebsiteElasticSearchBundle you can specify client and index configuration. The configuration structure and format is exactly the same. Here is an example of custom index configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -50,7 +50,7 @@ Similar to ElasticSearchBundle, you may disable system requirements check and in
 Here is how these flags may be configured.
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -66,7 +66,7 @@ Similar to ElasticSearchBundle, you may enable language optimization of indexati
 Here is how language optimization may be enabled.
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -83,7 +83,7 @@ Similar to ElasticSearchBundle, you may switch indexation into synchronous mode 
 parameters:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:

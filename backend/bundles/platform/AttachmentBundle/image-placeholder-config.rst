@@ -27,7 +27,7 @@ Perform the following steps to override DefaultImagePlaceholderProvider that is 
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 15-20
-            :linenos:
+
 
 2. Add your newly created service to the ``oro_product.provider.product_image_placeholder`` chain service.  You can do it via DI CompilerPass.
 
@@ -36,7 +36,7 @@ Perform the following steps to override DefaultImagePlaceholderProvider that is 
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3-17, 19-20, 23-27
-            :linenos:
+
 
 Pay attention to the way the chain works. It gets the first suitable value from providers, so we have put our own provider to the very top of the chain via ``ContainerBuilder::setMethodCalls`` and ``array_merge``. You can locate your own provider where required.
 
@@ -47,7 +47,7 @@ Make sure to insert CompilerPass to the bundle root file.
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/ACMEDemoBundle.php
             :language: php
             :lines: 3-18
-            :linenos:
+
 
 Theme Image Placeholder Provider
 --------------------------------
@@ -63,7 +63,7 @@ To do this, perform the following:
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 9-14
-            :linenos:
+
 
 2. Add the ``acme_demo.provider.demo_image_placeholder.theme`` service definition to CompilerPass.
 
@@ -72,7 +72,7 @@ To do this, perform the following:
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3, 17-18, 20, 22, 24-25
-            :linenos:
+
 
 3. Create ``theme.yml``
 
@@ -80,7 +80,7 @@ To do this, perform the following:
 
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/theme.yml
             :language: yaml
-            :linenos:
+
 
 .. note:: Pay attention that the ``product`` key in the YAML file is the value that we have passed to ``acme_demo.provider.demo_image_placeholder.theme`` as the first argument.
 
@@ -101,7 +101,7 @@ To do this, perform the following:
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 3-8
-            :linenos:
+
 
 3. Add the ``acme_demo.provider.demo_image_placeholder.config`` service definition to CompilerPass.
 
@@ -110,7 +110,7 @@ To do this, perform the following:
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3, 17-18, 20, 21, 24-25
-            :linenos:
+
 
 
 TwigExtension and template examples
@@ -123,7 +123,7 @@ To use the providers we have created previously, we need to create TwigExtension
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Twig/ProductImageExtension.php
             :language: php
             :lines: 3-92
-            :linenos:
+
 
 You can use Twig functions declared in the extension for your templates.
 
@@ -131,7 +131,7 @@ You can use Twig functions declared in the extension for your templates.
 
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig
             :language: html+twig
-            :linenos:
+
             
             
  .. include:: /include/include-links-dev.rst

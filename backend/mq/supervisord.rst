@@ -12,7 +12,7 @@ configuration supervisord keeps running four simultaneous instances of
 instance has dead by any reason.
 
 .. code-block:: ini
-    :linenos:
+
 
     [program:oro_message_consumer]
     command=/path/to/bin/console --env=prod --no-debug oro:message-queue:consume

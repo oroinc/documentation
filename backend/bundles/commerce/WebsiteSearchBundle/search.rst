@@ -18,7 +18,7 @@ The event name - `oro_website_search.before_search` - can be used to add a new l
 Here is an example of such listener definition:
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         oro_product.product_visibility_restriction_listener:
@@ -37,7 +37,7 @@ Developer may start constructing a search query by adjusting the `Oro\\Bundle\\S
 Let's assume there is a product entity with the following index structure:
 
 .. code-block:: yaml
-   :linenos:
+
 
     Oro\Bundle\ProductBundle\Entity\Product:
         alias: oro_product
@@ -74,7 +74,7 @@ and you want the following query to be executed:
 The following example illustrates how to build and execute such a query:
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\SearchBundle\Query\Query;
     use Oro\Bundle\SearchBundle\Query\Result;
@@ -105,7 +105,7 @@ As a universal, search-engine agnostic solution, you may use the `Oro\\Bundle\\W
 To create the latter type of query, you can use specific factory for website search, or use the generic one and specify the index you used:
 
 .. code-block:: php
-   :linenos:
+
 
     $query = $this->container->get('oro_website_search.query_factory')->create();
     // OR
@@ -115,7 +115,7 @@ To create the latter type of query, you can use specific factory for website sea
 Let's execute the request to the search index mentioned above using second type of query:
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\SearchBundle\Query\SearchQueryInterface;
     use Oro\Bundle\SearchBundle\Query\Result;
@@ -146,7 +146,7 @@ You may want to use website repository to create a specialized repository for an
 Let's have a look at the example of such repository:
 
 .. code-block:: php
-   :linenos:
+
 
     namespace Oro\Bundle\ProductBundle\Search;
 
@@ -181,7 +181,7 @@ This is exactly the same query described before encapsulated in the repository. 
 Below is an example of search repository service declaration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         oro_product.website_search.repository.product:

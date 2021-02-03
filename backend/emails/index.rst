@@ -29,7 +29,7 @@ class provides a ``getEmailsDir()`` method which should return the path of the d
 contains your templates:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/Bundle/DemoBundle/DataFixtures/ORM/EmailTemplatesFixture.php
     namespace Acme\Bundle\DemoBundle\DataFixtures\ORM;
@@ -106,7 +106,7 @@ You can manually create an email by creating a new instance of the ``Email`` mod
 the setter methods for all the properties you want to be set:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Controller/EmailController.php
     namespace Acme\DemoBundle\Controller;
@@ -184,7 +184,7 @@ create an email model based on such a persisted entity, by using the useful
 |EmailModelBuilder| helper class:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Controller/EmailController.php
     namespace Acme\DemoBundle\Controller;
@@ -207,7 +207,7 @@ responsible for sending the email and persisting it to the database (which also 
 contexts to customers, users, and so on):
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Controller/EmailController.php
     namespace Acme\DemoBundle\Controller;
@@ -257,7 +257,7 @@ To be notified by such an event, you have to create an
 information. The easiest way to register a new `EmailNotification` is to create data fixtures:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Migrations/Data/ORM/CreateCommentNotification.php
     namespace Acme\DemoBundle\Migrations\Data\ORM;
@@ -341,7 +341,7 @@ Each entity owning an email address must have its own email entity that implemen
 Sample ``Email`` entity:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/Bundle/DemoBundle/Entity/ApplicantEmail.php
     namespace Acme\Bundle\DemoBundle\Entity;
@@ -421,7 +421,7 @@ The entity that is the owner of the email address has to implement the
 For ``Applicant`` entity, the implementation should be similar to the following:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/Bundle/DemoBundle/Entity/Applicant.php
     namespace Acme\Bundle\DemoBundle\Entity;
@@ -508,7 +508,7 @@ contains two methods:
 The provider class should then look like this:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/Bundle/DemoBundle/Entity/Provider/EmailOwnerProvider.php
     namespace Acme\Bundle\DemoBundle\Entity\Provider;
@@ -542,7 +542,7 @@ You then need to create a service for the new ``EmailOwnerProvider`` class and t
 ``oro_email.owner.provider`` tag to make the application aware of the new email provider:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/DemoBundle/Resources/config/services.yml
     services:

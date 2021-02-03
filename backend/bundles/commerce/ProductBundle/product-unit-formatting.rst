@@ -11,7 +11,7 @@ Product Unit formats may be found in ``messages.<locale>.yml``.
 Here is an example of format configuration for en_US:
 
 .. code-block:: yaml
-   :linenos:
+
 
     product_unit.kg:
         label:
@@ -49,7 +49,7 @@ To format value, *unit* parameter must be passed and it must be instance of Prod
 Format:
 
 .. code-block:: yaml
-   :linenos:
+
 
     product_unit.kg:
         label:
@@ -62,7 +62,7 @@ Format:
 Code:
 
 .. code-block:: php
-   :linenos:
+
 
     // $unit implements ProductUnit
     $unit->setCode('kg');
@@ -88,7 +88,7 @@ To format value, *unit* parameters must be passed and it must be instance of Pro
 Format:
 
 .. code-block:: yaml
-   :linenos:
+
 
     product_unit.kg:
         label:
@@ -101,7 +101,7 @@ Format:
 Code:
 
 .. code-block:: php
-   :linenos:
+
 
     // $unit implements ProductUnit
     $unit->setCode('kg');
@@ -128,7 +128,7 @@ the product unit code.
 Format:
 
 .. code-block:: yaml
-   :linenos:
+
 
     product_unit.kg:
         label:
@@ -141,7 +141,7 @@ Format:
 Code:
 
 .. code-block:: php
-   :linenos:
+
 
     $formatter = $this->container->get('oro_product.formatter.unit_value');
     echo $formatter->formatCode(5, 'kg');
@@ -220,7 +220,7 @@ This method can be used to format product unit label in either full or short for
 Code:
 
 .. code-block:: php
-   :linenos:
+
 
     $formatter = $this->container->get('oro_product.formatter.unit_label');
     echo $formatter->format('item', false, true);
@@ -242,7 +242,7 @@ objects. You can can choose either full or short form, and single or plural form
 Code:
 
 .. code-block:: php
-   :linenos:
+
 
     // $unitKg implements ProductUnit
     $unitKg->setCode('kg');

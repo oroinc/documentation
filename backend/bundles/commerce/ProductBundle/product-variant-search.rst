@@ -144,7 +144,7 @@ Using the same example with the tag products from the previous section, we can c
 *TAG1*
 
 .. code-block:: json
-   :linenos:
+
 
    {
        "sku" : "TAG1",
@@ -159,7 +159,7 @@ Using the same example with the tag products from the previous section, we can c
 *TAG2*
 
 .. code-block:: json
-   :linenos:
+
 
    {
        "sku" : "TAG2",
@@ -173,7 +173,7 @@ Using the same example with the tag products from the previous section, we can c
 *TAG3*
 
 .. code-block:: json
-   :linenos:
+
 
    {
        "sku" : "TAG3",
@@ -187,7 +187,7 @@ Using the same example with the tag products from the previous section, we can c
 *GENERAL-TAG*
 
 .. code-block:: json
-   :linenos:
+
 
    {
        "sku" : "GENERAL-TAG",
@@ -214,7 +214,7 @@ If you need to change this behavior or the logic of data collection, create anot
 Here is an example of how you can implement this:
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         oro_product.provider.website_search_index_data.product_variants:

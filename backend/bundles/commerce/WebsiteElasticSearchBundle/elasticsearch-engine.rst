@@ -14,7 +14,7 @@ The WebsiteElasticSearchBundle reads mapping configuration, defining the search 
 Example configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     Oro\Bundle\ProductBundle\Entity\Product:
         alias: oro_product_WEBSITE_ID
@@ -39,7 +39,7 @@ Example configuration:
 If your deployment hosts two websites with IDs `1` and `2`, the following search index mappings are built automatically, based on the above configuration:
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
       "oro_website_search_oro_product_1" : {
@@ -200,7 +200,7 @@ The WebsiteElasticSearchBundle reuses functionality from ElasticSearchBundle and
 Let's assume that you need to execute following query:
 
 .. code-block:: none
-   :linenos:
+
 
     SELECT
         text.sku,
@@ -216,7 +216,7 @@ Let's assume that you need to execute following query:
 Elasticsearch engine converts it to the request similar to the following one:
 
 .. code-block:: none
-   :linenos:
+
 
     curl -XGET '181.1.24.34:9200/oro_website_search_oro_product_1/oro_product_1/_search?_source=sku,names_2,shortDescriptions_2' -H 'Content-Type: application/json' -d '
     {
@@ -246,7 +246,7 @@ For that we will execute previous query and should have next configuration for a
 Elasticsearch engine converts it to the request similar to the following one:
 
 .. code-block:: none
-   :linenos:
+
 
     curl -XGET '181.1.24.34:9200/oro_website_search_oro_product_1/oro_product_1/_search?_source=sku,names_2,shortDescriptions_2' -H 'Content-Type: application/json' -d '
     {

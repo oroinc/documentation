@@ -36,7 +36,7 @@ Follow the next steps to get a new token:
 Request
 
 .. code-block:: http
-    :linenos:
+
 
     POST /oauth2-token HTTP/1.1
     Content-Type: application/json
@@ -44,7 +44,7 @@ Request
 Request Body
 
 .. code-block:: json
-    :linenos:
+
 
     {
         "grant_type": "refresh_token",
@@ -56,7 +56,7 @@ Request Body
 Response Body
 
 .. code-block:: json
-    :linenos:
+
 
     {
         "token_type": "Bearer",

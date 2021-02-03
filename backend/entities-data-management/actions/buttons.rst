@@ -14,7 +14,7 @@ To add a new ButtonProvider to system, first, implement the |ButtonProviderExten
 For example, if Operations are implemented in the above mentioned way, the button provider service looks as follows:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_action.provider.button.extension.operation:
         class: Oro\Bundle\ActionBundle\Extension\OperationButtonProviderExtension

@@ -26,7 +26,7 @@ To update fonts, merge ``$theme-fonts`` with your ``$theme-custom-fonts``.
 .. note:: You have to put the font files in your bundle public folder beforehand, e.g., ``Resources/public/default/fonts``.
 
 .. code-block:: scss
-   :linenos:
+
 
     $theme-custom-fonts: (
         'main': (
@@ -69,7 +69,7 @@ To disable all Oro fonts without overriding them with yours:
 2. Call mixin ``font-face()`` or ``use-font-face();``
 
     .. code-block:: scss
-       :linenos:
+
 
          $theme-fonts: ();
 

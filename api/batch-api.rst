@@ -136,7 +136,7 @@ The next example shows how to insert a list of accounts.
 **Request**
 
 .. code-block:: http
-    :linenos:
+
 
     PATCH /api/accounts HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -145,7 +145,7 @@ The next example shows how to insert a list of accounts.
 **Request Body**
 
 .. code-block:: json
-    :linenos:
+
 
     {
        "data": [
@@ -167,7 +167,7 @@ The next example shows how to insert a list of accounts.
 **Response**
 
 .. code-block:: json
-    :linenos:
+
 
     {
       "data": {
@@ -230,7 +230,7 @@ To see updated status of job, use the following request:
 **Request**
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/asyncoperations/1 HTTP/1.1
     Accept: application/vnd.api+json
@@ -295,7 +295,7 @@ when processing the asynchronous operation:
 To sse the list of errors, use the ``asyncoperations/{id}/errors`` subresource:
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/asyncoperations/1/errors HTTP/1.1
     Accept: application/vnd.api+json
@@ -303,7 +303,7 @@ To sse the list of errors, use the ``asyncoperations/{id}/errors`` subresource:
 **Response**
 
 .. code-block:: json
-    :linenos:
+
 
     {
       "data": [

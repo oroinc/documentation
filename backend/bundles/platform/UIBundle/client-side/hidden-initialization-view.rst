@@ -16,7 +16,7 @@ Usage sample:
 .. note:: Keep in mind that all div's attributes are required for valid work.
 
 .. code-block:: html
-   :linenos:
+
 
     <div class="invisible"
             data-page-component-module="oroui/js/app/components/view-component"

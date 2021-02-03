@@ -11,7 +11,7 @@ Configuration
 To enable export functionality you just need to add `export` option to a configuration of your grid. For example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         accounts-grid:
@@ -25,7 +25,7 @@ After that `Export` button will be displayed in the top left corner of a grid. T
 If you need to allow to export grid data in other formats, you need to configure your grid properly. For example, to allow export data in CSV and PDF formats you can use the following configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         my-grid:
@@ -43,7 +43,7 @@ You can use |existing CSV writer| as an example for your writer.
 There is also the ability to influence performance by changing the value of the grid export page size in the configuration. This will allow you to change the number of queries to the database. But keep in mind that increasing the size of the batch increases memory consumption.
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         my-grid:

@@ -7,7 +7,7 @@ Toolbar options:
 
 
 .. code-block:: none
-   :linenos:
+
 
     [
         'hide'       => false,

@@ -22,7 +22,7 @@ Configuration must be placed in the Resources/config/oro/actions.yml file. For e
 **Example - actions.yml**
 
 .. code-block:: yaml
-   :linenos:
+
 
    operations:
        acme_demo_operation:
@@ -40,7 +40,7 @@ bundles, are validated and merged. The merged configuration is stored in the app
 Execute a command to validate configuration manually:
 
 .. code-block:: php
-   :linenos:
+
 
     php bin/console oro:action:configuration:validate
 
@@ -131,7 +131,7 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-   :linenos:
+
 
    operations:                                             # root elements
        demo_operation:                                     # name of operation
@@ -223,7 +223,7 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-   :linenos:
+
 
    operations:
        demo_operation:
@@ -264,7 +264,7 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-   :linenos:
+
 
    operations:
        demo_operation:
@@ -319,7 +319,7 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-   :linenos:
+
 
    operations:
        demo_operation:
@@ -355,7 +355,7 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-   :linenos:
+
 
    operations:
        demo_operation:
@@ -394,7 +394,7 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-   :linenos:
+
 
    operations:
        demo_operation:
@@ -433,7 +433,7 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-   :linenos:
+
 
    operations:
        demo_operation:
@@ -459,7 +459,7 @@ Example
 ^^^^^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     operations:
         demo_operation:

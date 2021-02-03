@@ -25,7 +25,7 @@ Create a Content Block
 You can create content blocks with a collection of predefined content variants using data migrations:
 
 .. code-block:: php
-   :linenos:
+
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Persistence\ObjectManager;
@@ -66,7 +66,7 @@ Render a Content Block in the Layout
 Content blocks can be rendered by unique `aliases` using the `content_block` block type:
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:

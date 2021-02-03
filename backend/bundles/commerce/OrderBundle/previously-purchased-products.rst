@@ -13,7 +13,7 @@ Configuration
 Here is an example of the system config section.
 
 .. code-block:: yaml
-   :linenos:
+
 
     purchase_history:
         children:
@@ -51,7 +51,7 @@ Index Field
 |website_search.yml|
 
 .. code-block:: yaml
-   :linenos:
+
 
     Oro\Bundle\ProductBundle\Entity\Product:
         alias: oro_product_WEBSITE_ID
@@ -66,7 +66,7 @@ The index field which stores information about the date of the last purchase of 
 This field is used to select a query in the grid config for select, filter and sort data. For more information, please see |datagrids.yml|.
 
 .. code-block:: yaml
-   :linenos:
+
 
    query:
        select:
@@ -92,7 +92,7 @@ This listener contains methods which are called when the |OrderLineItem| entity 
 **reindexProductOnLineItemCreateOrDelete**
 
 .. code-block:: php
-   :linenos:
+
 
    public function reindexProductOnLineItemCreateOrDelete(OrderLineItem $lineItem, LifecycleEventArgs $args)
 
@@ -101,7 +101,7 @@ This method is triggered when we create or delete an order line item. Once the o
 **reindexProductOnLineItemUpdate**
 
 .. code-block:: php
-   :linenos:
+
 
    public function reindexProductOnLineItemUpdate(OrderLineItem $lineItem, PreUpdateEventArgs $event)
 
@@ -118,7 +118,7 @@ This listener contains methods which are called when the |Order entity| is chang
 **processIndexOnOrderStatusChange**
 
 .. code-block:: php
-   :linenos:
+
 
    public function processIndexOnOrderStatusChange(Order $order, PreUpdateEventArgs $event)
 
@@ -127,7 +127,7 @@ This method is triggered when order status is changed. But if order status is no
 **processIndexOnOrderWebsiteChange**
 
 .. code-block:: php
-   :linenos:
+
 
    public function processIndexOnOrderWebsiteChange(Order $order, PreUpdateEventArgs $event)
 
@@ -136,7 +136,7 @@ This method is triggered when order website is changed. But if order status is n
 **processOrderRemove**
 
 .. code-block:: php
-   :linenos:
+
 
    public function processOrderRemove(Order $order)
 
@@ -145,7 +145,7 @@ This method is triggered when an order is removed. But if order status is not ap
 **processIndexOnCustomerUserChange**
 
 .. code-block:: php
-   :linenos:
+
 
    public function processIndexOnCustomerUserChange(Order $order, PreUpdateEventArgs $event)
 
@@ -154,7 +154,7 @@ This method is triggered when order is updated and the `customerUser` field is c
 **processIndexOnOrderCreatedAtChange**
 
 .. code-block:: php
-   :linenos:
+
 
    public function processIndexOnOrderCreatedAtChange(Order $order, PreUpdateEventArgs $event)
 
@@ -169,7 +169,7 @@ This listener contains methods which are called when we turn the feature on or o
 **reindexProducts**
 
 .. code-block:: php
-   :linenos:
+
 
    public function reindexProducts(ConfigUpdateEvent $event)
 
@@ -191,7 +191,7 @@ to reindex product data.
 **reindexProduct**
 
 .. code-block:: php
-   :linenos:
+
 
    public function reindexProduct(Product $product, $websiteId = null)
 
@@ -200,7 +200,7 @@ This method triggers reindex process for the current product. If the websiteId i
 **triggerReindexationRequestEvent**
 
 .. code-block:: php
-   :linenos:
+
 
    public function triggerReindexationRequestEvent(array $productIds, $websiteId = null, $isScheduled = true)
 
@@ -222,7 +222,7 @@ Here is a quick overview of its usage:
 **getDaysPeriod**
 
 .. code-block:: php
-   :linenos:
+
 
    $this->get('oro_order.previously_purchased.configuration')->getDaysPeriod();
 
@@ -232,7 +232,7 @@ Returns the count of days for previously purchased products.
 
 
 .. code-block:: php
-   :linenos:
+
 
     $this->get('oro_order.previously_purchased.configuration')->getPreviouslyPurchasedStartDateString()
 
@@ -250,7 +250,7 @@ This provider is used when we need more information about who and when bought pr
 **getLatestOrderedProductsInfo**
 
 .. code-block:: php
-   :linenos:
+
 
     /**
      * Returns information about who and when bought those products
@@ -278,7 +278,7 @@ Class |PreviouslyPurchasedOrderStatusesProvider|.
 This service implements |OrderStatusesProviderInterface| and contains methods which return applicable statuses for the order. For example:
 
 .. code-block:: php
-   :linenos:
+
 
     /**
      * @param AbstractEnumValue|null $status
@@ -296,7 +296,7 @@ This service implements |OrderStatusesProviderInterface| and contains methods wh
 **getAvailableStatuses**
 
 .. code-block:: php
-   :linenos:
+
 
    public function getAvailableStatuses()
 

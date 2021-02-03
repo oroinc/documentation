@@ -12,7 +12,7 @@ oro_html_sanitize
 The **oro_html_sanitize** filter removes HTML elements except those that are allowed. You can find the list of allowed HTML tags in the |app.yml| file.
 
 .. code-block:: twig
-   :linenos:
+
 
    {{ data|oro_html_sanitize() }}
 
@@ -34,7 +34,7 @@ The **oro_html_sanitize** filter removes HTML elements except those that are all
 will print result:
 
 .. code-block:: html
-   :linenos:
+
 
     <div class="test">
         <h1>Header</h1>
@@ -48,14 +48,14 @@ oro_html_strip_tags
 The **oro_html_strip_tags** filter removes all HTML tags. 
 
 .. code-block:: twig
-   :linenos:
+
 
    {{ data|oro_html_strip_tags() }}
 
 **Example**
 
 .. code-block:: twig
-   :linenos:
+
 
     {% set data %}
         <p>Paragraph 1: <strong>Strong</strong> like <b>Bold</b></p>
@@ -68,7 +68,7 @@ The **oro_html_strip_tags** filter removes all HTML tags.
 will print result:
 
 .. code-block:: html
-   :linenos:
+
 
     Paragraph 1: Strong like Bold Paragraph 2: Italic alert("message");
 
@@ -78,14 +78,14 @@ oro_html_escape
 The **oro_html_escape** filter allows HTML tags, all forbidden tags are escaped.
 
 .. code-block:: twig
-   :linenos:
+
 
    {{ data|oro_html_escape() }}
 
 **Example**
 
 .. code-block:: twig
-   :linenos:
+
 
     {% set data %}
         <p>Paragraph 1: <strong>Strong</strong> like <b>Bold</b></p>
@@ -98,7 +98,7 @@ The **oro_html_escape** filter allows HTML tags, all forbidden tags are escaped.
 will print result:
 
 .. code-block:: html
-   :linenos:
+
 
     <p>Paragraph 1: <strong>Strong</strong> like <b>Bold</b></p>
     <p>Paragraph 2: <em>Italic</em></p>
@@ -113,7 +113,7 @@ Sort By
 The **oro_sort_by** filter sorts an array by a property. The following example shows how items can be sorted by priority:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% set dataBlocks = [
         {
@@ -152,7 +152,7 @@ You can also use the following options to tune **oro_sort_by** filter:
 The following example shows how you can sort array by `name` property using case-insensitive comparison:
 
 .. code-block:: twig
-   :linenos:
+
 
    {% set items = items|oro_sort_by({'property': 'name', 'sorting-type': 'string-case'}) %}
 

@@ -11,7 +11,7 @@ All the configuration described below is added to the ``importexport.yml`` file 
 extension class in your bundle that loads the configuration file:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/DependencyInjection/AppExtension.php
     namespace AppBundle\DependencyInjection;
@@ -41,7 +41,7 @@ OroImportExportBundle. All you need to do is creating services that are based on
 from the OroImportExportBundle and let them know which entity class they have to handle:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/importexport.yml
     services:
@@ -75,7 +75,7 @@ be imported, you can provide them with an example file that will be created base
 fixtures:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/ImportExport/TemplateFixture;
     namespace AppBundle\ImportExport\TemplateFixture;
@@ -113,7 +113,7 @@ fixtures:
 Then, register your fixtures class as a service:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/importexport.yml
     services:
@@ -133,7 +133,7 @@ OroImportExportBundle while passing it the names of the needed services (see the
 do so:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Task/index.html.twig #}
     {% extends 'OroUIBundle:actions:index.html.twig' %}
@@ -193,7 +193,7 @@ Import is a basic operation for any entity. The import operation is one step.
 See the following example configuration:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # Oro/Bundle/ImportExportBundle/Resources/config/batch_jobs.yml
     connector:
@@ -215,7 +215,7 @@ See the following example configuration:
 The import algorithm being performed is (in pseudocode):
 
 .. code-block:: text
-    :linenos:
+
 
     Process job:
       - Process step 1:
@@ -315,7 +315,7 @@ doesn't use a strategy:
 The export algorithm being performed is (in pseudocode):
 
 .. code-block:: text
-    :linenos:
+
 
     Process job:
       - Process step 1:
@@ -348,7 +348,7 @@ during deserialization).
     method:
 
     .. code-block:: php
-        :linenos:
+
 
         if ($data[$fieldName] !== null
             && ($this->fieldHelper->isRelation($field) || $this->fieldHelper->isDateTimeField($field))
@@ -395,7 +395,7 @@ Alternatively, you can describe the field configuration in your entity directly
 using :class:`annotations <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`:
 
 .. code-block:: php
-    :linenos:
+
 
      /**
       * @ConfigField(
@@ -444,7 +444,7 @@ meaning:
 For example:
 
 .. code-block:: text
-    :linenos:
+
 
     "Addresses 1 First name"
 
@@ -468,7 +468,7 @@ have the following meaning:
 For example:
 
 .. code-block:: text
-    :linenos:
+
 
     "Owner Username"
 
@@ -485,7 +485,7 @@ that implements the |ItemWriterInterface| from the |Akeneo BatchBundle|.
 The new classes must be declared as services:
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         oro_importexport.reader.csv:
@@ -527,7 +527,7 @@ the following methods:
     as a service in the ``Resources/config/importexport.yml`` file:
 
     .. code-block:: yaml
-        :linenos:
+
 
         # src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
         services:
@@ -554,7 +554,7 @@ Generally, you should implement both interfaces if you need to add both import a
 **Example of a Simple Normalizer**
 
 .. code-block:: php
-   :linenos:
+
 
    namespace Oro\Bundle\ContactBundle\ImportExport\Serializer\Normalizer;
 
@@ -595,7 +595,7 @@ The serializer of OroImportExportBundle should be aware of its normalizer. To ma
 **Example of Normalizer Service Configuration**
 
 .. code-block:: yaml
-   :linenos:
+
 
    services:
        orocrm_contact.importexport.normalizer.group:
@@ -614,7 +614,7 @@ The data converter is responsible for converting the header of the import/export
 **Example Of a Custom Data Converter**
 
 .. code-block:: php
-   :linenos:
+
 
     namespace Oro\Bundle\ContactBundle\ImportExport\Converter;
 
@@ -644,7 +644,7 @@ The data converter is responsible for converting the header of the import/export
 **Service**
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         oro_contact.importexport.data_converter.group:
@@ -657,7 +657,7 @@ Export Processor
 Once the normalizers are registered and the data converter is available, you can configure the export settings using the DI configuration.
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         oro_contact.importexport.processor.export_group:
@@ -673,7 +673,7 @@ There is a controller in OroImportExportBundle that is used to request a CSV fil
 Now, if you send a request to the **/export/instant/orocrm_contact_group** URL  you will receive a response with the URL of the exported file results and some additional information:
 
 .. code-block:: json
-   :linenos:
+
 
     {
         "success":true,
@@ -691,7 +691,7 @@ The strategy is a class that is responsible for the import logic processing, suc
 **Example of the Import Strategy**
 
 .. code-block:: php
-   :linenos:
+
 
     namespace Oro\Bundle\ContactBundle\ImportExport\Strategy;
 
@@ -722,7 +722,7 @@ Also, you can use [rows postponing](rows-postponing.md) in the strategy .
 **Service**
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         oro_contact.importexport.strategy.contact.add_or_replace:
@@ -736,7 +736,7 @@ Import Processor
 Once the normalizers are registered, the data converter is available, and the strategy is implemented, you can configure the import using the following DI configuration.
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         # Import processor
@@ -768,7 +768,7 @@ The fixture implementation is based on the default import/export process.
 **Create class:**
 
 .. code-block:: php
-   :linenos:
+
 
     namespace Oro\Bundle\ContactBundle\ImportExport\TemplateFixture;
 
@@ -823,7 +823,7 @@ The fixture implementation is based on the default import/export process.
 **Define a service:**
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         oro_contact.importexport.template_fixture.contact:
@@ -835,7 +835,7 @@ The fixture implementation is based on the default import/export process.
 **Define fixture converter:**
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_contact.importexport.template_fixture.data_converter.contact:
         parent: oro_importexport.data_converter.template_fixture.configurable
@@ -844,7 +844,7 @@ The fixture implementation is based on the default import/export process.
 **Define export processor:**
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_contact.importexport.processor.export_template:
         parent: oro_importexport.processor.export_abstract
@@ -892,7 +892,7 @@ Import:
 **Display import/export buttons:**
 
 .. code-block:: twig
-   :linenos:
+
 
     {% include 'OroImportExportBundle:ImportExport:buttons.html.twig' with {
         entity_class: entity_class,
@@ -912,7 +912,7 @@ In order to display import/export buttons for several entities, you need to crea
 providers for each entity with options, described in the beginning of the section:
 
 .. code-block:: php
-   :linenos:
+
 
     namespace Oro\Bundle\ProductBundle\ImportExport\Configuration;
 
@@ -969,7 +969,7 @@ Provider's service should have a tag with the name `oro_importexport.configurati
 The alias is used to group import/export buttons with different configurations on one page:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_product.importexport.configuration_provider.product:
         class: Oro\Bundle\ProductBundle\ImportExport\Configuration\ProductImportExportConfigurationProvider
@@ -983,7 +983,7 @@ To show all import/export buttons on a page, which are defined by configuration 
 include following template:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% include 'OroImportExportBundle:ImportExport:buttons_from_configuration.html.twig' with {
         'alias': 'oro_product_index'
@@ -1012,7 +1012,7 @@ The same thing is applicable for the export of the templates used for the import
 *Export processors definition:*
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro.importexport.processor.export.some_type:
         parent: oro_importexport.processor.export_abstract
@@ -1032,7 +1032,7 @@ The same thing is applicable for the export of the templates used for the import
 *Translation keys for selections in an export pop-up:*
 
 .. code-block:: yaml
-   :linenos:
+
 
    #messages.en.yml
    oro.importexport.export.oro_some_type: Some export type
@@ -1042,7 +1042,7 @@ The same thing is applicable for the export of the templates used for the import
 In this case, you have to specify the processors that can be used as selected options in the pop-up. On the import/export buttons configuration, specify the processors as array, like in the example bellow (**exportProcessors** and/or **exportTemplateProcessors**):
 
 .. code-block:: twig
-   :linenos:
+
 
     {% include 'OroImportExportBundle:ImportExport:buttons.html.twig' with {
         ...
@@ -1060,7 +1060,7 @@ In this case, you have to specify the processors that can be used as selected op
 To implement custom behaviour of the import pop-up, you can extend the default **ImportType** from OroImportExportBundle and implement a custom form appearance.
 
 .. code-block:: php
-   :linenos:
+
 
     use Symfony\Component\Form\AbstractTypeExtension;
     use Symfony\Component\Form\FormBuilderInterface;
@@ -1095,7 +1095,7 @@ options selection), you can extend the base types (**ExportType** and **ExportTe
 Example of displaying the form with choice (radio buttons):
 
 .. code-block:: php
-   :linenos:
+
 
     use Symfony\Component\Form\AbstractTypeExtension;
     use Symfony\Component\Form\FormBuilderInterface;

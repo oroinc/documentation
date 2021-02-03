@@ -33,7 +33,7 @@ Let us check which configuration options are available for different versions of
 Each change of the configuration options requires index recreation and full indexation. You can do it using the following commands for the back-office (standard) index:
 
 .. code-block:: php
-   :linenos:
+
 
     php bin/console oro:elasticsearch:create-standard-indexes --env=prod
     php bin/console oro:search:reindex --env=prod --scheduled
@@ -41,7 +41,7 @@ Each change of the configuration options requires index recreation and full inde
 The same can be done for the storefront (website) index using commands:
 
 .. code-block:: php
-   :linenos:
+
 
     php bin/console oro:website-elasticsearch:create-website-indexes --env=prod
     php bin/console oro:website-search:reindex --env=prod --scheduled
@@ -52,7 +52,7 @@ OroCommerce 3.1
 Back-office (standard) index uses the **standard search** algorithm by default. There is a possibility to enable **language-optimized search** using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_search:
         engine_parameters:
@@ -61,7 +61,7 @@ Back-office (standard) index uses the **standard search** algorithm by default. 
 Storefront (website) index uses a standard search algorithm by default. There is a possibility to enable language-optimized search using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -70,7 +70,7 @@ Storefront (website) index uses a standard search algorithm by default. There is
 Storefront (website) index supports the possibility to **remove unused fields from the index** starting 3.1.20 using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -79,7 +79,7 @@ Storefront (website) index supports the possibility to **remove unused fields fr
 Recommended configuration - use **standard search** algorithm for both indices, **remove unused fields from the index** for storefront index.
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -93,7 +93,7 @@ OroCommerce 4.1
 Back-office (standard) index uses the **standard search** algorithm by default. There is a possibility to enable **language-optimized search** using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_search:
         engine_parameters:
@@ -102,7 +102,7 @@ Back-office (standard) index uses the **standard search** algorithm by default. 
 Back-office (standard) index also supports relevance optimized search starting 4.1.4 that can be enabled using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_search:
         engine_parameters:
@@ -111,7 +111,7 @@ Back-office (standard) index also supports relevance optimized search starting 4
 Storefront (website) index uses a standard search algorithm by default. There is a possibility to **enable language-optimized search** using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -120,7 +120,7 @@ Storefront (website) index uses a standard search algorithm by default. There is
 Storefront (website) index supports the possibility to **remove unused fields from the index** starting 4.1.3 using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -129,7 +129,7 @@ Storefront (website) index supports the possibility to **remove unused fields fr
 Storefront (website) index also supports **relevance optimized search** starting 4.1.4 that can be enabled using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -138,14 +138,14 @@ Storefront (website) index also supports **relevance optimized search** starting
 Recommended configuration - use relevance optimized search algorithm for both indices, remove unused fields from the index for storefront index.
 
 .. code-block:: php
-   :linenos:
+
 
     oro_search:
        engine_parameters:
            relevance_optimization: true
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
        engine_parameters:
@@ -158,7 +158,7 @@ OroCommerce 4.2
 Back-office (standard) index uses **relevance optimized search** algorithm by default. There is a possibility to enable **language-optimized search** using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_search:
         engine_parameters:
@@ -167,7 +167,7 @@ Back-office (standard) index uses **relevance optimized search** algorithm by de
 Storefront (website) index uses a **relevance optimized search** algorithm by default. There is a possibility to enable **language-optimized search** using the following configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:
@@ -189,7 +189,7 @@ Each change in the fine-tuning configuration requires index recreation and full 
 Here is an example of a custom configuration for the back-office (standard) index:
 
 .. code-block:: php
-   :linenos:
+
 
    oro_search:
     engine_parameters:
@@ -239,7 +239,7 @@ Here is an example of a custom configuration for the back-office (standard) inde
 The same can be done for the storefront (website) index, here is an example:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_website_search:
         engine_parameters:

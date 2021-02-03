@@ -17,7 +17,7 @@ Simple Example
 Suppose we have a workflow that handles only one required data input from a user.
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         greeting_flow:
@@ -57,7 +57,7 @@ Extended Example
 **Custom types and form_init:**
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         user_update_flow:
@@ -113,7 +113,7 @@ Custom Form Type Example
 You can also use your custom form type for the whole transition handling. Have a look at the example below:
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         quote_update_circular:

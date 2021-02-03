@@ -28,7 +28,7 @@ The *configuration* parameter is a specific configuration of a job obtained by C
 
 
 .. code-block:: php
-    :linenos:
+
 
     connector:
         name: oro_importexport
@@ -284,7 +284,7 @@ Oro\\Bundle\\ImportExportBundle\\Processor\\ProcessorRegistry
 ProcessorRegistry provides a storage of all registered processors declared by the client bundles. A specific processor of an entity extends the basic one (Import Processor or Export Processor) and contains its own components (Serializer, Data Converter, Strategy). Such processor should be registered in DIC with the following tag:
 
 .. code-block:: php
-    :linenos:
+
 
     services:
         orocrm_contact.importexport.processor.export:
@@ -452,7 +452,7 @@ DefaultDataConverter is applicable in simple cases of import/export. It can conv
 **Example of formats:**
 
 .. code-block:: php
-    :linenos:
+
 
     // Multi-dimensional
     array(
@@ -629,7 +629,7 @@ Oro\\Bundle\\ImportExportBundle\\Serializer\\Serializer
 Serializer is a class extended from a standard Symfony's serializer and used instead of it to perform serialization/deserialization. It has its own normalizers/denormalizers that are added using the following tags in the DI configuration:
 
 .. code-block:: php
-    :linenos:
+
 
     services:
         acme_demo.importexport.user_normalizer:

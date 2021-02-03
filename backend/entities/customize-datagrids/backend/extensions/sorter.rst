@@ -13,7 +13,7 @@ Settings
 Sorters setting should be placed under the `sorters` tree node.
 
 .. code-block:: none
-   :linenos:
+
 
     datagrids:
         demo:

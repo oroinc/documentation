@@ -35,7 +35,7 @@ The ``BuildBefore`` event class has access to the |DatagridConfiguration| instan
 As an illustration, let's add one more column to a specific datagrid. For this, create an event listener and modify the existing configuration the following way:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -60,7 +60,7 @@ As an illustration, let's add one more column to a specific datagrid. For this, 
 Once the listener is created, register it in `services.yml`:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_bundle.event_listener.datagrid.additional_column:
         class: Acme\Bundle\AcmeBundle\EventListener\Datagrid\AdditionalColumnDatagridListener
@@ -87,7 +87,7 @@ The ``BuildAfter`` event class has access to |Datagrid| instance.
 As an example, let us filter the datagrid by a certain value from the request params. For this, create an event listener and modify the query builder, as illustrated below:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -122,7 +122,7 @@ Please note that this example works only for ORM datasources.
 Once the listener is created, register it in ``services.yml``:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_bundle.event_listener.datagrid.filter_by_request_param:
     class: Acme\Bundle\AcmeBundle\EventListener\Datagrid\FilterByRequestParamListener
@@ -175,7 +175,7 @@ For instance, if you have complex data that is hard to process with the standard
 you can create an event listener and fetch the data once the rows are fetched from the ``datasource``.
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -207,7 +207,7 @@ you can create an event listener and fetch the data once the rows are fetched fr
 Once the event listener is created, register it in ``services.yml``:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_bundle.event_listener.datagrid.complex_data:
         class: Acme\Bundle\AcmeBundle\EventListener\Datagrid\ComplexDataDatagridListener

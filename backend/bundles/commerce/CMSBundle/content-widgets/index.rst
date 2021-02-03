@@ -22,7 +22,7 @@ You can create a content widget type in four steps outlined below.
 To implement a new content widget, create a class that stores content widget type configuration and renders the content widget. The class should extend *AbstractContentWidgetType*.
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 
@@ -67,7 +67,7 @@ To implement a new content widget, create a class that stores content widget typ
        .. literalinclude:: /code_examples/commerce/content_widget/copyright/ContentWidget/CopyrightContentWidgetType.php
            :language: php
            :lines: 47-50
-           :linenos:
+
 
    The form type has the following code:
 
@@ -75,12 +75,12 @@ To implement a new content widget, create a class that stores content widget typ
 
        .. literalinclude:: /code_examples/commerce/content_widget/copyright/Form/Type/CopyrightContentWidgetType.php
            :language: php
-           :linenos:
+
 
 It should be registered in a service container with the *oro_cms.content_widget.type* tag.
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType:
@@ -93,7 +93,7 @@ It should be registered in a service container with the *oro_cms.content_widget.
 
        .. literalinclude:: /code_examples/commerce/content_widget/copyright/Resources/config/services.yml
            :language: yaml
-           :linenos:
+
 
 Add translations to strings in a template.
 
@@ -102,7 +102,7 @@ Add translations to strings in a template.
     .. literalinclude:: /code_examples/commerce/content_widget/copyright/Resources/translations/messages.en.yml
         :language: yaml
         :lines: 1,2-7
-        :linenos:
+
 
 2. Create a Template to Render the Widget in the Storefront
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -113,7 +113,7 @@ Create a template to render the content widget in the storefront.
 
     .. literalinclude:: /code_examples/commerce/content_widget/copyright/Resources/views/CopyrightContentWidget/widget.html.twig
         :language: twig
-        :linenos:
+
 
 Add translations to strings in the template.
 
@@ -122,7 +122,7 @@ Add translations to strings in the template.
     .. literalinclude:: /code_examples/commerce/content_widget/copyright/Resources/translations/messages.en.yml
         :language: yaml
         :lines: 1,9-11
-        :linenos:
+
 
 3. (Optionally) Render the Widget Info in the Back-Office
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -134,7 +134,7 @@ Add translations to strings in the template.
 
     .. literalinclude:: /code_examples/commerce/content_widget/copyright/Resources/views/CopyrightContentWidget/view.html.twig
         :language: html
-        :linenos:
+
 
 3.2 Implement the *getAdditionalInformationBlock* Method in the Content Widget Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -144,12 +144,12 @@ Add translations to strings in the template.
     .. literalinclude:: /code_examples/commerce/content_widget/copyright/ContentWidget/CopyrightContentWidgetType.php
         :language: php
         :lines: 36-42
-        :linenos:
+
 
 .. note:: To pass additional data to the template, you can override *getBackOfficeViewSubBlocks* method. The example below illustrates how to add two blocks with two subblocks in each block.
 
     .. code-block:: php
-        :linenos:
+
 
         <?php
 
@@ -219,7 +219,7 @@ Add translations to strings in the template.
 Override *getWidgetData* method in the Content Widget Type.
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 
@@ -264,7 +264,7 @@ for a widget type, follow the steps below:
 Create a ``widgets.yml`` file for certain theme (e.g., blank) in the config folder ``Resources/views/layouts/blank/config/widgets.yml``:
 
 .. code-block:: xml
-    :linenos:
+
 
     layouts:
         copyright:
@@ -280,7 +280,7 @@ Create a layout update file in the appropriate content widget folder inside the 
 Keep in mind that all widget layout update files should follow a naming convention: ``content_widget/{your_unique_widget_type_name}``, e.g.,: ``Resources/views/layouts/blank/content_widget/copyright/content_widget.yml``.
 
 .. code-block:: xml
-    :linenos:
+
 
     layout:
         actions:
@@ -291,7 +291,7 @@ Keep in mind that all widget layout update files should follow a naming conventi
 Follow the same steps with templates for the layout update with customized markup ``Resources/views/layouts/blank/content_widget/copyright/content_widget.html.twig``:
 
 .. code-block:: html
-    :linenos:
+
 
     {% block _copyright_content_widget_layout_name_widget %}
         <p>{{ block_widget(block) }}</p>

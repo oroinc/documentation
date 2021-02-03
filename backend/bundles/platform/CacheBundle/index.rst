@@ -28,7 +28,7 @@ There are two abstract services you can use as a parent for your cache services:
 The following example shows how these services can be used:
 
 .. code-block:: none
-   :linenos:
+
    
     services:
         acme.test.cache:
@@ -41,7 +41,7 @@ Also the ``oro.cache.abstract`` service can be re-declared
 in the application configuration file, for example:
 
 .. code-block:: none
-   :linenos:
+
    
     services:
         oro.cache.abstract:
@@ -79,7 +79,7 @@ To implement 3rd approach for your configuration, you need to take the following
 1. Create PHP class that defines the schema of your configuration and validation and merging rules for it. E.g.:
 
 .. code-block:: php
-   :linenos:
+
    
     <?php
 
@@ -107,7 +107,7 @@ To implement 3rd approach for your configuration, you need to take the following
 2. Create the configuration provider PHP class that you will use to get the configuration data. E.g.:
 
 .. code-block:: php
-   :linenos:
+
    
     <?php
 
@@ -159,7 +159,7 @@ To implement 3rd approach for your configuration, you need to take the following
    as the parent one. E.g.:
 
 .. code-block:: yaml
-   :linenos:
+
    
     services:
         acme.my_configuration_provider:
@@ -179,7 +179,7 @@ In this case a default warmer will not be registered for your configuration prov
 An example of a custom warmer:
 
 .. code-block:: yaml
-   :linenos:
+
    
     services:
         acme.my_configuration_provider.warmer:
@@ -195,7 +195,7 @@ methods of the configuration provider to check if the Application cache needs to
 Here is an example how to use these methods:
 
 .. code-block:: php
-   :linenos:
+
 
     private function ensureConfigLoaded()
     {
@@ -266,7 +266,7 @@ One of the most important things when dealing with caches is proper cache invali
 we need to make sure that we do not keep old values in the memory. Consider this example:
 
 .. code-block:: php
-   :linenos:
+
    
     <?php
 
@@ -330,7 +330,7 @@ in different cases and rely on different fields of the same object. To configure
 Here is an example of such configuration:
 
 .. code-block:: yaml
-   :linenos:
+
    
     Oro\Bundle\OrderBundle\Entity\OrderAddress:
         attributes:
@@ -347,7 +347,7 @@ the default normalizer ``GetSetMethodNormalizer``. In such case new normalizer s
 tagged with ``oro_cache_generator_normalizer``.
 
 .. code-block:: yaml
-   :linenos:
+
 
    acme_cache.serializer.normalizer:
       class: AcmeBundle\Normalizer\CustomObjectNormalizer

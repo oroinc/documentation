@@ -17,7 +17,7 @@ One of the solutions is to create different Git branches for different environme
    For example:
 
    .. code-block:: none
-      :linenos:
+
 
       1.2.3-prod   # Branch of release 1.2.3 for "prod" environment
       1.2.3-stage  # Branch of release 1.2.3 for "stage" environment
@@ -27,7 +27,7 @@ One of the solutions is to create different Git branches for different environme
    For example:
 
    .. code-block:: none
-      :linenos:
+
 
       # Run upgrade for "prod" environment
       orocloud-cli upgrade --tag=1.2.3-prod
@@ -47,7 +47,7 @@ You can solve this problem without adding new branches in the repository.
    For example:
 
    .. code-block:: none
-      :linenos:
+
 
       ocom-acme-prod1-maint1  # Maintenance node's hostname on "prod" environment
       ocom-acme-stage1-maint1 # Maintenance node's hostname on "stage" environment
@@ -55,7 +55,7 @@ You can solve this problem without adding new branches in the repository.
 2. Create configuration files in the repository root for each environment:
 
    .. code-block:: none
-      :linenos:
+
 
       orocloud.yaml           # Default configuration, could be same as orocloud.prod.yaml
       orocloud.prod.yaml      # Configuration for "prod" environment
@@ -65,7 +65,7 @@ You can solve this problem without adding new branches in the repository.
 3. Add changes to composer.json file to override the orocloud.yaml file depending on the hostname of the maintenance node during composer install:
 
    .. code-block:: none
-     :linenos:
+
 
      {
        ...

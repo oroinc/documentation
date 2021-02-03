@@ -12,7 +12,7 @@ How to Use
 To move an element from one container to another on window resize, add ``data-dom-relocation-options`` attributes to the corresponding element, as illustrated below:
 
 .. code-block:: html
-   :linenos:
+
 
     <div class="element-to-move"
          data-dom-relocation-options="{
@@ -41,7 +41,7 @@ Responsive
 Set multiple moveTo targets for different types of screens:
 
 .. code-block:: javascript
-   :linenos:
+
 
    responsive: [
        {

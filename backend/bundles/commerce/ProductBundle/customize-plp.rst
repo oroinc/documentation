@@ -21,7 +21,7 @@ Create the layout update:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block_only.yml
-   :linenos:
+
 
     layout:
         imports:
@@ -77,7 +77,7 @@ Create a template:
 
 .. code-block:: twig
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block.html.twig
-   :linenos:
+
 
     {% block _featured_products_container_widget %}
         {% set attr = layout_attr_defaults(attr, {
@@ -154,7 +154,7 @@ Create the layout update:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block_and_products.yml
-   :linenos:
+
 
     layout:
         imports:
@@ -187,7 +187,7 @@ Extend static block template with our block:
 
 .. code-block:: twig
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block.html.twig
-   :linenos:
+
 
     ...
 
@@ -229,7 +229,7 @@ Create a layout update:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/products_only.yml
-   :linenos:
+
 
     layout:
         imports:
@@ -256,7 +256,7 @@ Create a template:
 
 .. code-block:: twig
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/products.html.twig
-   :linenos:
+
 
     {% block _product_grid_container_widget %}
         {% set attr = layout_attr_defaults(attr, {

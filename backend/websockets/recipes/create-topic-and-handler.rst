@@ -26,7 +26,7 @@ In order to declare a route for the topic, create a **websocket_routing.yml** fi
 directory of your bundle. Fill it with the following contents:
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_sync.ping:                      # unique machine name of your topic in format "%extension_alias%.topic_name"
         channel: 'oro/ping'             # url of your topic channel
@@ -36,7 +36,7 @@ directory of your bundle. Fill it with the following contents:
 You can declare parameterized routes as well, e.g.:
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_email.event:
         channel: 'oro/email_event/{user_id}/{organization_id}'
@@ -69,7 +69,7 @@ Topic handler must implement *Gos\\Bundle\\WebSocketBundle\\Topic\\TopicInterfac
 **gos_web_socket.topic**, e.g.:
 
 .. code-block:: twig
-    :linenos:
+
 
     oro_sync.topic.websocket_ping:
         class: Oro\Bundle\SyncBundle\Topic\WebsocketPingTopic
@@ -92,7 +92,7 @@ of topic handlers for common purposes:
 Therefore, if your topic handler is not intended to contain complex logic, you can use existing handlers, e.g.:
 
 .. code-block:: twig
-    :linenos:
+
 
     oro_sync.topic.maintenance:
         class: Oro\Bundle\SyncBundle\Topic\BroadcastTopic
@@ -111,7 +111,7 @@ To subscribe a **frontend client** to and unsubscribe it from the topic, use the
 **orosync/js/sync** component, e.g.:
 
 .. code-block:: javascript
-    :linenos:
+
 
     import sync from 'orosync/js/sync';
 

@@ -62,7 +62,7 @@ OroCloud maintenance agent supports the `media:upload` command for data transfer
 Developers can allow the application to read / write directly from the SFTP directory using the environment variable defined in *composer.json*:
 
 .. code-block:: none
-    :linenos:
+
 
     {
         "extra": {
@@ -79,7 +79,7 @@ To refer this directory from the composer, your *parameters.yml.dist* file shoul
 You can use it as any other parameter but remember to add a specific path to your user, i.e:
 
 .. code-block:: none
-   :linenos:
+
 
    my_service:
      class: Oro\Bundle\Acme\Service

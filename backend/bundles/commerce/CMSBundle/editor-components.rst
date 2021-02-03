@@ -13,7 +13,7 @@ Type Builder
 To create your own component type, first create a descendant of BaseTypeBuilder:
 
 .. code-block:: javascript
-   :linenos:
+
 
     import BaseTypeBuilder from 'orocms/js/app/grapesjs/type-builders/base-type-builder';
 
@@ -115,7 +115,7 @@ Component Type Registration
 Register the created type builder in the component manager:
 
 .. code-block:: javascript
-   :linenos:
+
 
     import ComponentManager from 'orocms/js/app/grapesjs/plugins/components/component-manager';
     import SomeTypeBuilder from 'orocms/js/app/grapesjs/type-builders/some-type-builder';

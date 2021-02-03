@@ -90,7 +90,7 @@ As a workaround, we changed the bundle registration system in Oro applications i
 In Oro applications, for the bundle to be registered and enabled, it is sufficient to mention the bundle in its  *Resources/config/oro/bundles.yml* file. More precisely, you can activate any bundle in the application simply by putting its main class name in the *Resources/config/oro/bundles.yml* of your bundle (keep in mind, though, that the bundle must first be physically installed with the help of Composer).
 
 .. code-block:: yaml
-    :linenos:
+
 
         # src/Acme/DemoBundle/Resources/config/oro/bundles.yml
         bundles:
@@ -148,7 +148,7 @@ For example, there are three ways in Oro applications to create navigation items
 3. Add navigation item information to the *Resources/config/oro/navigation.yml* file of your bundle:
 
 .. code-block:: yaml
-    :linenos:
+
 
         # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
         menu_config:

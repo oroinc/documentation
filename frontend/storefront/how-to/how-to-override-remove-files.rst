@@ -7,7 +7,7 @@ Override or Disable Files
 To remove or override `scss/css`, create an assets.yml file in your theme and write the following config in ``Resources/views/layouts/{theme_name}``.
 
 .. code-block:: yaml
-   :linenos:
+
 
    styles:
        inputs:

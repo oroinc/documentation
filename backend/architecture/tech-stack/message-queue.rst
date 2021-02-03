@@ -322,7 +322,7 @@ To consume messages you have to first create a message processor:
 Register it as a container service and subscribe to the topic:
 
 .. code-block:: none
-    :linenos:
+
 
     oro_channel.async.change_integration_status_processor:
         class: FooMessageProcessor

@@ -7,7 +7,7 @@ Let's consider using mass delete of customer users in the storefront datagrid pa
 First, check that `oro_datagrid_front_mass_action` route is enabled for the frontend. In `routing.yml`, add the `frontend: true` option:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_datagrid_front_mass_action:
         ...
@@ -17,7 +17,7 @@ First, check that `oro_datagrid_front_mass_action` route is enabled for the fron
 In the corresponding grid configuration (`datagrids.yml`), specify the following options:
 
 .. code-block:: yaml
-   :linenos:
+
 
     frontend-customer-customer-user-grid:
         ...
@@ -44,7 +44,7 @@ Next, add `mass_actions` section with params below:
  - `handler` - a service, responsible for mass delete handling. For example, a logged user should not be allowed to delete themselves. For this case we extend `DeleteMassActionHandler` with our custom logic:
  
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\CustomerBundle\Entity\CustomerUser;
     use Oro\Bundle\DataGridBundle\Extension\MassAction\DeleteMassActionHandler;
@@ -68,7 +68,7 @@ Next, add `mass_actions` section with params below:
 and register the service:
  
 .. code-block:: yaml
-   :linenos:
+
 
     oro_customer.datagrid.extension.mass_action.handler.delete:
         class: Oro\Bundle\CustomerBundle\Datagrid\Extension\MassAction\CustomersDeleteActionHandler

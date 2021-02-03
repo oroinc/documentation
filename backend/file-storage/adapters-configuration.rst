@@ -31,7 +31,7 @@ existing adapter, add the |KnpGaufretteBundle| configuration in the ``Resources/
 or the ``config/config.yml`` file of your application:
 
 .. code-block:: yaml
-   :linenos:
+
 
     knp_gaufrette:
         adapters:
@@ -98,7 +98,7 @@ as the configuration factory of oro_gaufrette package in your bundle class:
 The following example shows how to do this for an AdapterConfigurationFactory class:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 

@@ -13,7 +13,7 @@ Settings
 The totals setting should be placed under the `totals` tree node.
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
       demo:

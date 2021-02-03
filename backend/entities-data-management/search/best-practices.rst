@@ -20,7 +20,7 @@ If you want to create a repository, then you should create a new class extended 
 Here is example of the search repository for the standard index type and its definition:
 
 .. code-block:: php
-   :linenos:
+
 
    <?php
 
@@ -57,7 +57,7 @@ Here is example of the search repository for the standard index type and its def
    }
 
 .. code-block:: yaml
-   :linenos:
+
 
    services:
        oro_user.search.repository.user:
@@ -71,7 +71,7 @@ Here is example of the search repository for the standard index type and its def
 And here is example of the search repository for the website index type and its definition:
 
 .. code-block:: php
-   :linenos:
+
 
    <?php
 
@@ -104,7 +104,7 @@ And here is example of the search repository for the website index type and its 
    }
 
 .. code-block:: yaml
-   :linenos:
+
 
    oro_product.website_search.repository.product:
        parent: oro_website_search.repository.abstract

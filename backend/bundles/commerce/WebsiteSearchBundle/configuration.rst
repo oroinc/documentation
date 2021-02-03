@@ -12,7 +12,7 @@ The system configuration of the website search bundle consists of the following 
 Here is an example of configuration that should be put to `config.yml` to enable custom search engine:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_website_search:
         engine: 'custom'
@@ -42,7 +42,7 @@ The mapping configuration must be defined in the `Resources/config/oro/website_s
 Here is an example of mapping configuration for the product bundle:
 
 .. code-block:: yaml
-   :linenos:
+
 
     Oro\Bundle\ProductBundle\Entity\Product:
         alias: oro_product_WEBSITE_ID

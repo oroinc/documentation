@@ -66,7 +66,7 @@ Oro application uses the |Matomo| software (previously known as Piwik), a highly
 Make sure to amend the following variables for the code to work properly:
 
 .. code-block:: html
-    :linenos:
+
 
         _paq.push(['setUserId', [user_identifier] ])
 
@@ -77,7 +77,7 @@ Make sure to amend the following variables for the code to work properly:
 If you want to track user activities on a specific page of the website, uncomment this line
 
 .. code-block:: html
-    :linenos:
+
 
         _paq.push(['trackEvent', 'OroCRM', 'Tracking', [name], [value] ]
 
@@ -103,7 +103,7 @@ With the tracking code, you can monitor the following user activities:
 This is a code pre-implemented for an average website:
 
 .. code-block:: html
-    :linenos:
+
 
         <script type="text/javascript">
             var _paq = _paq || [];
@@ -130,7 +130,7 @@ Visitors are treated as guests unless they sign in. As soon as a visitor signs i
 For example, on the shopping list or shopping cart page, the following tracking script may be used:
 
 .. code-block:: html
-    :linenos:
+
 
         <script type="text/javascript">
             var _paq = _paq || [];
@@ -157,7 +157,7 @@ Every time a visitor gets to the website page where the code is embedded, a *Car
 If you need to retrieve the statistics of how many visitors clicked the phone number, add the following code:
 
 .. code-block:: html
-    :linenos:
+
 
      <a href="#" onclick="javascript:_paq.push(['trackEvent', 'SideMenu', 'Click', 'Phone Button Clicked']);">Phone: + (123) 456-789</a>
 

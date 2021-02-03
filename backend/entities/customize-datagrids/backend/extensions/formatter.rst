@@ -13,7 +13,7 @@ Field
 ^^^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: field # default value `field`, so this key could be skipped here
@@ -27,7 +27,7 @@ URL
 ^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: url
@@ -42,7 +42,7 @@ Link
 ^^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: link
@@ -58,7 +58,7 @@ Twig
 ^^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: twig
@@ -71,7 +71,7 @@ Translatable
 ^^^^^^^^^^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: translatable
@@ -85,7 +85,7 @@ Callback
 ^^^^^^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: callback
@@ -97,7 +97,7 @@ Note that the whole node configuration is passed to the callback method as the `
 Therefore, if you need is to pass some arguments to the callback method, you can add any parameter to the grid config, e.g.:
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: callback
@@ -107,7 +107,7 @@ Therefore, if you need is to pass some arguments to the callback method, you can
 And then use this parameter in the callback method like this:
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\DataGridBundle\Datasource\ResultRecordInterface;
 
@@ -135,7 +135,7 @@ Localized Number
 ^^^^^^^^^^^^^^^^
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: localized_number
@@ -155,7 +155,7 @@ Example:
 We would like to format currency, but the currency code should be retrieved from the current row
 
 .. code-block:: yaml
-   :linenos:
+
 
     column_name:
         type: localized_number
@@ -163,7 +163,7 @@ We would like to format currency, but the currency code should be retrieved from
         context_resolver: staticClass::staticFunc
 
 .. code-block:: php
-   :linenos:
+
 
     class staticClass {
         public static function staticFunc()

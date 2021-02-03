@@ -29,7 +29,7 @@ To set up a cookie banner:
    **For dev mode**
 
    .. code-block:: php
-      :linenos:
+
 
       rm -rf var/cache/*
       php composer.phar install --prefer-dist --no-dev
@@ -39,7 +39,7 @@ To set up a cookie banner:
    **For prod mode**
 
    .. code-block:: php
-      :linenos:
+
 
       rm -rf var/cache/*
       php composer.phar install --prefer-dist --no-dev
@@ -56,7 +56,7 @@ To add a translation to the cookie banner to present information in the desired 
 1. Run the following command:
 
    .. code-block:: php
-      :linenos:
+
 
       php bin/console oro:translation:load --env=prod
 

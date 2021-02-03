@@ -38,7 +38,7 @@ DBAL Transport
 --------------
 
 .. code-block:: none
-    :linenos:
+
 
     # config/parameters.yml
 

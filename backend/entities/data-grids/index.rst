@@ -26,7 +26,7 @@ The ``source`` option is used to configure a Doctrine query builder that is used
 to be displayed in the grid:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -52,7 +52,7 @@ Displayed Columns
 Then, the ``columns`` option needs to be used to configure how which data will be displayed:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -82,7 +82,7 @@ Use the ``sorters`` option to define on which columns' header the user can click
 data:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -120,7 +120,7 @@ The ``data_name`` denotes the name of the property to filter and will be used as
 datagrid's query builder.
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -150,7 +150,7 @@ Complete Datagrid Configuration
 The final datagrid configuration now looks like this:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -223,7 +223,7 @@ To make your datagrid accessible you need to create a controller that can be vis
 which will serve a view that renders the configured datagrid:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Controller/TaskController.php
     namespace AppBundle\Controller;
@@ -250,7 +250,7 @@ which will serve a view that renders the configured datagrid:
 The view can be very simple if you extend the ``OroUIBundle:actions:index.html.twig`` template:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Task/index.html.twig #}
     {% extends 'OroUIBundle:actions:index.html.twig' %}
@@ -269,7 +269,7 @@ Link to the Action
 At last, you need to make the action accessible by creating a menu item:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/navigation.yml
     menu_config:
@@ -308,7 +308,7 @@ Mixin is a datagrid that contains additional (common) information for use by oth
 **Configuration Syntax**
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
 

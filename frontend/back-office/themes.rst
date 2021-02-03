@@ -33,7 +33,7 @@ Customizing the layout of your Platform application is as easy as defining your 
 your application's configuration using the ``oro_theme`` option:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # config/config.yml
     oro_theme:
@@ -58,7 +58,7 @@ Reusable Themes
 In addition to customizing your own application, you can also provide a theme that can be reused in different applications. To achieve this, specify the theme's options in the ``settings.yml`` file that is located in the ``Resources/public/themes/<theme-name>`` directory of your bundle:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/public/themes/acme-theme/settings.yml
     styles:
@@ -72,7 +72,7 @@ In addition to customizing your own application, you can also provide a theme th
 To use the theme in any application, enable it in the application configuration:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # config/config.yml
     oro_theme:
@@ -83,7 +83,7 @@ To use the theme in any application, enable it in the application configuration:
     You can use the ``oro:theme:list`` command to get a list of all available themes. Its output looks like this:
 
     .. code-block:: text
-        :linenos:
+
 
         List of available themes:
         acme-theme (active)
@@ -135,7 +135,7 @@ a custom label and favicon for it. The definition of the *Oro* theme as defined 
 like this:
 
 .. code-block:: yaml
-    :linenos:
+
 
     label: Oro Theme
     icon: bundles/oroui/themes/oro/images/favicon.ico
@@ -145,7 +145,7 @@ like this:
 So, place the ``settings.yml`` file in the ``Resources/public/themes/oro`` directory of your bundle and define the values you want to change:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/public/oro/
     label: Custom Oro Theme
@@ -157,7 +157,7 @@ So, place the ``settings.yml`` file in the ``Resources/public/themes/oro`` direc
     registered after the bundle it is overriding the themes from:
 
     .. code-block:: php
-        :linenos:
+
 
         // src/AppKernel.php
         // ...

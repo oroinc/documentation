@@ -18,7 +18,7 @@ except |RFC 7231: quality values|.
 **Example of a Valid GET request**
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users HTTP/1.1
     Accept: application/vnd.api+json
@@ -26,14 +26,14 @@ except |RFC 7231: quality values|.
 **Example of Valid POST requests**
 
 .. code-block:: http
-    :linenos:
+
 
     POST /api/users HTTP/1.1
     Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
 
 .. code-block:: http
-    :linenos:
+
 
     POST /api/users HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -45,7 +45,7 @@ At the same time, it **must** ignore any media type parameters received in the *
 *Request*
 
 .. code-block:: http
-    :linenos:
+
 
     POST /api/users HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -54,7 +54,7 @@ At the same time, it **must** ignore any media type parameters received in the *
 *Response*
 
 .. code-block:: http
-    :linenos:
+
 
     HTTP/1.1 201 Created
     Content-Type: application/vnd.api+json
@@ -80,7 +80,7 @@ so the response data will have a plain format rather than JSON:API.
 *Request*
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users HTTP/1.1
     Accept: application/json
@@ -88,7 +88,7 @@ so the response data will have a plain format rather than JSON:API.
 *Response*
 
 .. code-block:: json
-    :linenos:
+
 
     [
       {

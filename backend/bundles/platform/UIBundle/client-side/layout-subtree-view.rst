@@ -11,7 +11,7 @@ Initialization
 Layout update:
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:
@@ -24,7 +24,7 @@ Layout update:
 Add LayoutSubtreeView in block template:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block _layout_block_id_widget %}
         <div id="block_id"
@@ -44,7 +44,7 @@ Add LayoutSubtreeView in block template:
 Or initialize in JavaScript:
 
 .. code-block:: javascript
-   :linenos:
+
 
     var LayoutSubtreeView = require('oroui/js/app/views/layout-subtree-view');
     var layoutSubtree = new LayoutSubtreeView({

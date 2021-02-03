@@ -11,7 +11,7 @@ How to Use It
 Import `oroui/js/error` into your component:
 
 .. code-block:: javascript
-   :linenos:
+
 
     define(function(require) {
         'use strict';
@@ -141,7 +141,7 @@ errorHandlerMessage
 Disable ajax Error Flash Message:
 
 .. code-block:: javascript
-   :linenos:
+
 
    $.ajax({
        url: 'test',
@@ -152,7 +152,7 @@ Disable ajax Error Flash Message:
 Set a custom error message:
 
 .. code-block:: javascript
-   :linenos:
+
 
    $.ajax({
        url: 'test',
@@ -163,7 +163,7 @@ Set a custom error message:
 Callback function can also be used for `errorHandlerMessage`:
 
 .. code-block:: javascript
-   :linenos:
+
 
    $.ajax({
        url: 'test',
