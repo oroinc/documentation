@@ -114,6 +114,84 @@ To embed YouTube or Vimeo URLs to your content, you need to drag the video block
 .. image:: /user/img/concept-guides/content-management/embed_video.png
    :alt: Setting the video provider (HTML5 Source, vimeo) in the Settings section
 
+Insert Multimedia Preserving the Required Aspect Ratio
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are some cases when a video on a mobile device or a responsive page doesn't fit the layout or appears with unrelated bars. To fix it, you need to configure the settings of such multimedia, image, or map, maintaining their correct scale and size.
+
+There are several options to embed some multimedia into the WYSIWYG editor, preserving the required proportions (aspect ratios).
+
+**Option 1**
+
+1. Drag the video, image, or map block to the canvas.
+2. Click |IcImport| Import on the top menu above the canvas to open the HTML editor.
+3. Find the video block and wrap it in a <div> container.
+4. Save it by clicking **Import** in the popup bottom corner.
+
+.. image:: /user/img/concept-guides/content-management/wrapping_video_in_div.png
+   :alt: Illustrating the four steps mention above
+
+5. Click the wrapped file to open its settings and configure the following:
+
+   * position: absolute;
+   * top: 0;
+   * left: 0;
+   * width: 100%;
+   * height: 100%
+
+6. Click the file again and then click **Select Parent** to open the settings of its parent file.
+
+.. image:: /user/img/concept-guides/content-management/select_parent_file.png
+   :alt: Clicking the Select Parent button
+
+7. Configure the settings of the parent file as follows:
+
+   * position: relative
+   * padding-bottom: 56.52% (depending on the required scale)
+
+8. Click **Save**.
+
+
+**Option 2**
+
+1. Drag the video, image, or map block to the canvas.
+2. Click |IcImport| Import on the top menu above the canvas to open the HTML editor.
+3. Find the video block and wrap it in a <div> container with the `aspect-ratio` class, as follows:
+
+.. code-block:: html
+
+    <div class="aspect-ratio"></div>
+
+.. image:: /user/img/concept-guides/content-management/wrapping_video_in_div_aspect_ratio.png
+   :alt: Wrapping the video block into the div container
+
+4. Add the following code to the <style> tag:
+
+.. code-block:: html
+
+    .aspect-ratio{
+        overflow: hidden;
+    }
+    .aspect-ratio:before{
+        content: '';
+        width: 1px;
+        height: 0;
+        margin-left: -1px;
+        padding-bottom: calc(9 / 16 * 100%);
+        float: left;
+    }
+
+5. Set the height and width parameters to your wrapped file:
+
+   * width: 100%;
+   * height: 100%;
+
+.. image:: /user/img/concept-guides/content-management/adding_aspect_ratio_code_to_styles.png
+   :alt: Adding the aspect ratio code to the style tag
+
+6. Click **Import**.
+7. Click **Save**.
+
 Insert Images
 ^^^^^^^^^^^^^
 
