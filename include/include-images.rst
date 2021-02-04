@@ -582,3 +582,7 @@ Images
 
    <i class="fas fa-strikethrough" aria-hidden="true"></i>
 
+.. |IcImport| raw:: html
+
+   <i class="fas fa-download" aria-hidden="true"></i>
+
