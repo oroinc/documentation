@@ -40,16 +40,24 @@ To customize the following tax calculation settings that impact the way OroComme
 
    a) Configure how OroCommerce selects the core jurisdiction for which tax rules should be applied in a purchase order tax calculation. Tax jurisdiction may be defined by either shipping origin, billing address or shipping destination for your home state:
 
-      * For the origin-based jurisdiction, select **Shipping Origin** and define the default address in the Origin section below.
+     * For the origin-based jurisdiction, select **Shipping Origin** and define the default address in the Origin section below.
 
-      * For the destination-based jurisdiction, select **Destination** and define the whether to use the shipping address or billing to as a reference for calculating the customers's local tax rate in the Destination field.
+     * For the destination-based jurisdiction, select **Destination** and define the whether to use the shipping address or billing to as a reference for calculating the customers's local tax rate in the Destination field.
 
-      .. image:: /user/img/system/config_commerce/taxation/tax_jur_configuration.png
+     .. image:: /user/img/system/config_commerce/taxation/tax_jur_configuration.png
          :alt: Global tax jurisdiction configuration
 
    b) Set up any tax jurisdiction exceptions - countries and states where tax jurisdiction selection deviates from the core rule. For example, when the main tax jurisdiction is at the sale shipping destination, the exception may be for some countries and states to use shipping origin instead. Click **+ Add**, select a country, type in a state or a region and select the alternative tax jurisdiction base.
 
    c) If you use destination as tax jurisdiction base by default or for any exclusions, select either **Shipping Address** or **Billing Address** as **Destination**.
+
+   d) In the **Address Resolver Granularity**, define what information the tax resolver should consider when matching addresses against tax jurisdictions for the tax to be calculated properly and applied accordingly. There are several options:
+
+     * *Only Country* --- Tax jurisdiction should contain only country. The region and zip code fields should be empty, or no  tax will be applied.
+     * *Only Country and Region* --- Tax jurisdiction should contain country and region. Zip code should be empty, otherwise no tax will be applied, even if the shipping address contains the country and region that match the tax jurisdiction.
+     * *Only Country and Zip* --- Tax jurisdiction should contain country and zip code. The region field is ignored even if it is mentioned in the address. Tax is applied anyway, regardless of whether region is defined or not.
+     * *Country, Region and Zip* --- Tax jurisdiction should contain all data (Country, Region, and Zip code) for the tax to be applied.
+
 
 7. In the **Origin** section, provide the origin address (e.g. location of your warehouse or the company legal address) that will be used system-wide for origin-based tax. When the shipping origin is a core jurisdiction, OroCommerce will use the address provided here to find the matching built-in tax jurisdiction rules for tax calculation.
 
