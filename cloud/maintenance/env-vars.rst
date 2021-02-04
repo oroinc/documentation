@@ -8,7 +8,7 @@ How to Add/Remove Environment Variables
 |Environment variable| can be configured for application usage, as illustrated below:
 
 .. code-block:: none
-   :linenos:
+
 
     ---
     orocloud_options:
@@ -26,7 +26,7 @@ How to Configure Environment Type Based Application
 ---------------------------------------------------
 
 .. code-block:: none
-   :linenos:
+
 
     ---
     orocloud_options:
@@ -37,7 +37,7 @@ How to Configure Environment Type Based Application
 * **local** - deployment_type, which will be set to parameters.yml for your deployed application as
 
 .. code-block:: none
-   :linenos:
+
 
     deployment_type: local
 

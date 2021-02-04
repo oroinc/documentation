@@ -24,7 +24,7 @@ in any part of the workflow configuration.f
 **Example - workflows.yml**
 
 .. code-block:: yaml
-   :linenos:
+
 
     imports:
         - { resource: 'workflows/b2b_flow_lead.yml' }
@@ -35,7 +35,7 @@ in any part of the workflow configuration.f
 **Example - b2b_flow_lead.yml**
 
 .. code-block:: php
-   :linenos:
+
 
     imports:
         - { resource: 'b2b_flow_lead/steps.yml' }
@@ -59,7 +59,7 @@ When you need to reuse an existing workflow configuration or its parts, use the 
 **Import Example (with replace)**
 
 .. code-block:: yaml
-   :linenos:
+
 
     imports:
         - { workflow: flow_to_import, as: flow_to_recieve, replace: ['transitions.unneeded_transition_from_other_flow']}
@@ -89,7 +89,7 @@ If you need to load your part of the configuration directly from the file, use t
 1. **Resource: Split Parts Reuse**
 
    .. code-block:: yaml
-      :linenos:
+
 
        imports:
            - { resource: 'b2b_flow_lead/steps.yml', worklow: b2b_flow_lead, as: new_workflow, replace: [] }
@@ -109,7 +109,7 @@ If you need to load your part of the configuration directly from the file, use t
    If you are defining several workflows that are similar to each other, but have different use cases (for example: entities to apply to), use the following approach:
 
    .. code-block:: yaml
-      :linenos:
+
 
        imports:
            - { resource: 'common_flow.yml', workflow: common_flow, as: flow_for_user, replace: [] }
@@ -130,7 +130,7 @@ Configuration Loading
 To load the configuration, execute the following command:
 
 .. code-block:: php
-   :linenos:
+
 
     php bin/console oro:workflow:definitions:load
 
@@ -203,7 +203,7 @@ A single workflow configuration has the following properties:
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:                                                    # Root elements
         b2b_flow_sales:                                           # A unique name of workflow
@@ -279,7 +279,7 @@ Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\AttributeAssembler* for more d
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         b2b_flow_sales:
@@ -308,7 +308,7 @@ Enable Users to Modify Attributes
 You can enable a user to modify attributes of the record during transitions. To do this, list attributes that can be modified during any of the workflow's transitions under the ``attributes`` key:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
@@ -342,7 +342,7 @@ You can enable a user to modify attributes of the record during transitions. To 
     To automatically store and retrieve attributes data by a property path (i.e. such attributes can be considered as links to an entity's values), use the :ref:`property_path option <reference-format-workflow-attributes-property-path>` instead:
 
     .. code-block:: yaml
-        :linenos:
+
 
         workflows:
             phone_call:
@@ -364,7 +364,7 @@ For attributes, you need to add labels into two places: first, to the list of al
 +----------------------------------------------------------------------------------------------+------------------------------------------------------------------------+
 
 .. code-block:: yaml
-    :linenos:
+
 
         # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
@@ -380,7 +380,7 @@ For attributes, you need to add labels into two places: first, to the list of al
                         label: 'Call Successful'
 
 .. code-block:: yaml
-    :linenos:
+
 
         # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
@@ -438,7 +438,7 @@ A single variable can be described with the following configuration:
 Defining a variable:
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         my_workflow:
@@ -459,7 +459,7 @@ Defining a variable:
 Using a variable:
 
 .. code-block:: php
-   :linenos:
+
 
     ...
         preconditions:
@@ -491,7 +491,7 @@ Summarizing all above, a step has the following configuration:
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         phone_call:
@@ -555,7 +555,7 @@ To configure transitions, define the following:
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         phone_call:
@@ -613,7 +613,7 @@ Define how the workflow transition name will appear on the user interface and th
 +----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 .. code-block:: yaml
-    :linenos:
+
 
         # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
@@ -646,7 +646,7 @@ Transition definition configuration has the following options.
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         phone_call:
@@ -723,7 +723,7 @@ Event trigger configuration has the next options.
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         phone_call:
@@ -758,7 +758,7 @@ Cron trigger configuration has the following options.
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         phone_call:
@@ -798,7 +798,7 @@ Also it is possible to refer to any property of Workflow Item using "$." prefix.
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         phone_call:
@@ -841,7 +841,7 @@ Similarly to Conditions, alias of Action starts from "@" symbol and must refer t
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         phone_call:
@@ -884,7 +884,7 @@ Single entity restriction can be described with the following configuration:
 **Example**
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         opportunity_flow:

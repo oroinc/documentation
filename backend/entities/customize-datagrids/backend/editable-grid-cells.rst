@@ -17,7 +17,7 @@ In this case, a developer should perform three steps, discussed below.
 Example of grid configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         customer-product-visibility-grid:
@@ -72,7 +72,7 @@ To receive the select options or radio buttons values, use the ``oro_entity_exte
 2. **Add** ``oro_entity_changeset`` **to form type**
 
 .. code-block:: php
-   :linenos:
+
 
     $builder
         ...
@@ -91,7 +91,7 @@ Option ``class`` in ``\Oro\Bundle\FormBundle\Form\Type\EntityChangesetType`` is 
 Then, add ``visibilityForCustomer`` field in the template.
 
 .. code-block:: twig
-   :linenos:
+
 
     ...
     form_row(form.visibilityForCustomer, {'id': 'customer-product-visibility-changeset'})
@@ -102,7 +102,7 @@ Attribute ``id`` must be specified in the ``selector`` parameter of the the grid
 As a result, field ``visibilityForCustomer`` which contains data in current format is going to be hidden:
 
 .. code-block:: twig
-   :linenos:
+
 
     {"<customerId>" : {"<visibility>" : "<value>", ...}, ... }
 
@@ -113,7 +113,7 @@ To convert enum value in the handler, use method ``getEnumValueByCode`` of the `
 Below is an example of such handler:
 
 .. code-block:: php
-   :linenos:
+
 
     ...
     /**

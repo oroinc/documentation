@@ -30,7 +30,7 @@ Default Configuration Values
 Default configuration options for the Oro application are provided in brackets below:
 
       .. code-block:: text
-          :linenos:
+
 
             database_driver (pdo_mysql):
             database_host (127.0.0.1):
@@ -62,7 +62,7 @@ The Sample of Configuration Parameters
 The sample contents of the **<installation directory>/config/parameters.yml** file for OroCommerce:
 
 .. code-block:: none
-   :linenos:
+
 
        parameters:
           database_driver:        pdo_mysql

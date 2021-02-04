@@ -22,7 +22,7 @@ Here is the quick overview of its usage:
 **isEnabled()**
 
 .. code-block:: php
-   :linenos:
+
 
    $this->get('oro_product.related_item.related_product.config_provider')->isEnabled();
 
@@ -31,7 +31,7 @@ Returns information on whether the Related Items functionality is enabled.
 **getLimit()**
 
 .. code-block:: php
-   :linenos:
+
 
    $this->get('oro_product.related_item.related_product.config_provider')->getLimit();
 
@@ -40,7 +40,7 @@ Returns integer describing how many related products can be assigned for one pro
 **isBidirectional()**
 
 .. code-block:: php
-   :linenos:
+
 
    $this->get('oro_product.related_item.related_product.config_provider')->isBidirectional();
 
@@ -86,7 +86,7 @@ For more complex logic, you can create your own strategy.
 For this, implement Oro\\Bundle\\ProductBundle\\RelatedItem\\Strategy\\StrategyInterface, overload or decorate its definition: "oro_product.related_products.strategy", and provide the implementation of the *find* method:
 
 .. code-block:: php
-   :linenos:
+
 
     /**
      * @param Product $product
@@ -110,7 +110,7 @@ It defines two methods:
 1. **addRelations()**
 
    .. code-block:: php
-      :linenos:
+
 
        /**
         * @param Product $productFrom
@@ -131,7 +131,7 @@ It defines two methods:
 2. **removeRelations()**
 
    .. code-block:: php
-      :linenos:
+
 
        /**
         * @param Product $productFrom

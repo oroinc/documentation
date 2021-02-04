@@ -19,7 +19,7 @@ In order to have your entity available in the admin UI to be able to assign perm
 users you have to enable ACLs for these entities using the ``@Config`` annotation:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Entity/Task.php
     namespace AppBundle\Entity;
@@ -61,7 +61,7 @@ You have two options to define your custom access control lists:
 #. In your controller class, you can use the ``@Acl`` annotation:
 
    .. code-block:: php
-       :linenos:
+
 
        // src/AppBundle/Controller/TaskController.php
        namespace AppBundle\Controller;
@@ -123,7 +123,7 @@ You have two options to define your custom access control lists:
    file named ``acls.yml``:
 
    .. code-block:: yaml
-       :linenos:
+
 
        # src/AppBundle/Resources/config/oro/acls.yml
        acls:
@@ -154,7 +154,7 @@ You have two options to define your custom access control lists:
     ``entity``:
 
     .. code-block:: php
-        :linenos:
+
 
         // src/AppBundle/Controller/PageController.php
         namespace AppBundle\Controller;
@@ -182,7 +182,7 @@ You have two options to define your custom access control lists:
     bind the ACL to using the ``bindings`` option:
 
     .. code-block:: yaml
-        :linenos:
+
 
         # src/AppBundle/Resources/config/oro/acls.yml
         acls:
@@ -208,7 +208,7 @@ PHP code you can use the ``isGranted()`` method of the ``security.authorization_
 (which is an instance of the |SymfonyComponentSecurityCoreAuthorizationAuthorizationCheckerInterface| class):
 
 .. code-block:: php
-    :linenos:
+
 
     $authorizationChecker = $this->get('security.authorization_checker');
 
@@ -219,7 +219,7 @@ PHP code you can use the ``isGranted()`` method of the ``security.authorization_
 You can set the second parameter to check access on Object level (with Access Level check):
 
 .. code-block:: php
-    :linenos:
+
 
     $taskEntity = $this->getTask();
 
@@ -233,7 +233,7 @@ In case if you does not have proper ACL annotation, you can set the first parame
 permission name you want to check:
 
 .. code-block:: php
-    :linenos:
+
 
     $taskEntity = $this->getTask();
 
@@ -254,7 +254,7 @@ Use the ``acl_resource_id`` option to hide navigation items from users who are n
 the action being linked. The value of this option is the name of the ACL to check for:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/navigation.yml
     menu_config:
@@ -272,7 +272,7 @@ controllers with them in a single step using the ``@Acl`` annotation. However, y
 to an existing access control list using the ``@AclAncestor`` annotation:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Controller/TaskController.php
     namespace AppBundle\Controller;
@@ -301,7 +301,7 @@ Inside your templates you can use the ``is_granted()`` Twig function to check fo
 permissions to hide parts of your views for users who do not have the required permissions:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
@@ -317,7 +317,7 @@ In case if you want to check access more deeply, you can set the entity instance
 ``is_granted()`` function:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
@@ -332,7 +332,7 @@ At this example, will be checked access level for the given object instance.
 In case if you have no an ACL annotation, you can set the permission name directly as the first parameter:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
@@ -350,7 +350,7 @@ In a data grid you can protect the entire result set (to not show results if the
 granted access and the action embedding the grid accidentally was not protected):
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -367,7 +367,7 @@ Also use the ``acl_resource`` option to hide actions in a data grid the user doe
 to:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -394,7 +394,7 @@ Check Access on ORM Queries
 You can protect your Doctrine ORM query with ``apply`` method of ``oro_security.acl_helper`` service.
 
 .. code-block:: php
-    :linenos:
+
 
     use Doctrine\ORM\Query;
     use Doctrine\ORM\QueryBuilder;

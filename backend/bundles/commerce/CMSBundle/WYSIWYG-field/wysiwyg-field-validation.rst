@@ -52,7 +52,7 @@ You can create your own HTML Purifier mode using the inheritance hierarchy:
         .. literalinclude:: /code_examples_untested/wysiwyg_field/wysiwyg-validation/Resources/config/oro/app.yml
             :language: yaml
             :lines: 8-26
-            :linenos:
+
 
 The ``extends`` key allows to reuse the existing config from the extended scope that will be merged with your configuration.
 
@@ -67,7 +67,7 @@ To connect your custom HTML Purifier mode with the content restrictions mode, yo
 
         .. literalinclude:: /code_examples_untested/wysiwyg_field/wysiwyg-validation/Resources/config/services.yml
             :language: yaml
-            :linenos:
+
 
 To be able to use the ``content_restrictions_additional`` and ``content_restrictions_extra`` modes in configuration, you should add this mode to the ``oro_cms`` extension.
 
@@ -75,7 +75,7 @@ To be able to use the ``content_restrictions_additional`` and ``content_restrict
 
         .. literalinclude:: /code_examples_untested/wysiwyg_field/wysiwyg-validation/ACMEWysiwygValidationBundle.php
             :language: php
-            :linenos:
+
 
 After this, you can use the ``content_restrictions_additional`` or  ``content_restrictions_extra`` mode in the content restrictions configuration.
 
@@ -84,7 +84,7 @@ After this, you can use the ``content_restrictions_additional`` or  ``content_re
         .. literalinclude:: /code_examples_untested/wysiwyg_field/wysiwyg-validation/Resources/config/oro/app.yml
             :language: yaml
             :lines: 1-6
-            :linenos:
+
 
 The ``lax_restrictions`` key in configuration is used to limit the usage of the HTML Purifier mode. It specifies the user role, entity, and entity field to which your HTML Purifier mode will be applied.
 For example, the above mentioned user with the ``ROLE_ADMINISTRATOR`` role can use ``example.com`` for iframe domain when editing the ``Landing Page`` ``content`` field. At the same time, this user is not allowed to use this iframe domain in other WYSIWYG fields.

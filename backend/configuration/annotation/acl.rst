@@ -7,7 +7,7 @@ The ``@Acl`` annotation is used to create a new access control list and to prote
 that is annotation with this ACL accordingly:
 
 .. code-block:: php
-    :linenos:
+
 
     // ...
     use Oro\Bundle\SecurityBundle\Annotation\Acl;

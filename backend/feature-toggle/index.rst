@@ -37,7 +37,7 @@ Each feature consists of one required option, the label. You can configure the f
 Example of the features.yml configuration
 
 .. code-block:: yaml
-    :linenos:
+
 
     features:
         acme:
@@ -89,7 +89,7 @@ For example, there are some Acme processors which should be configured with the 
 Configuration extension:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 
@@ -117,7 +117,7 @@ Configuration extension:
 Extension registration:
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         acme.configuration.feature_configuration_extension:
@@ -146,7 +146,7 @@ Layout Updates
  Set the block visibility based on the feature state:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -167,7 +167,7 @@ In processes, workflows and operations, config expressions may be used to check 
 * Check the feature state
 
     .. code-block:: yaml
-        :linenos:
+
 
         '@feature_enabled':
             feature: 'feature_name'
@@ -177,7 +177,7 @@ In processes, workflows and operations, config expressions may be used to check 
 * Check the resource state
 
     .. code-block:: yaml
-        :linenos:
+
 
         '@feature_resource_enabled':
             resource: 'some_route'
@@ -208,7 +208,7 @@ Some extensions can extend the form, and we need to include this extension funct
 Extension:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 
@@ -257,7 +257,7 @@ Extension:
 Extension registration:
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         acme_category.form.extension.product_form:
@@ -283,7 +283,7 @@ The feature is enabled for the valid state and disabled for the invalid state. I
 Such voter looks as follows:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 
@@ -327,7 +327,7 @@ Such voter looks as follows:
 Now, configure a voter:
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         acme_process.voter.feature_voter:
@@ -352,7 +352,7 @@ There are three strategies available:
 Strategy configuration (may be defined in Resources/config/oro/app.yml)
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_featuretoggle:
         strategy: affirmative
@@ -362,7 +362,7 @@ Strategy configuration (may be defined in Resources/config/oro/app.yml)
 or in feature definition
 
 .. code-block:: yaml
-    :linenos:
+
 
     features:
         acme:
@@ -380,7 +380,7 @@ Use Checker for Commands
 Commands launched as subcommands cannot be skipped globally. To avoid running such commands, add an implementation of FeatureCheckerAwareInterface to your parent command, import FeatureCheckerHolderTrait (via `use FeatureCheckerHolderTrait;`), and check the feature status via featureChecker that is automatically injected into your command.
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 

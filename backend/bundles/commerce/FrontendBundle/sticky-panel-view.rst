@@ -11,7 +11,7 @@ How to Usage
 To be able to show an element on the sticky panel, add the `data-sticky` attribute to this element
 
 .. code-block:: html
-   :linenos:
+
 
     <div id="flash-messages" class="notification" data-sticky></div>
 
@@ -23,7 +23,7 @@ Customization
 Add the `toggleClass` option to the `data-sticky` attribute:
 
 .. code-block:: html
-   :linenos:
+
 
     <div id="flash-messages" class="notification"
          data-sticky='{"toggleClass": "notification--medium"}'>
@@ -34,7 +34,7 @@ Add the `toggleClass` option to the `data-sticky` attribute:
 Add a placeholder using the layout update:
 
 .. code-block:: yaml
-   :linenos:
+
 
     - '@add':
         id: sticky_element_notification
@@ -44,7 +44,7 @@ Add a placeholder using the layout update:
 Add a placeholder template
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block _sticky_element_notification_widget %}
         {% set attr = layout_attr_defaults(attr, {
@@ -56,7 +56,7 @@ Add a placeholder template
 Add the `placeholderId` option to the `data-sticky` attribute:
 
 .. code-block:: html
-   :linenos:
+
 
     <div id="flash-messages" class="notification"
          data-sticky='{"placeholderId": "sticky-element-notification"}'>
@@ -67,7 +67,7 @@ Add the `placeholderId` option to the `data-sticky` attribute:
 Move an element to the sticky panel using the layout update:
 
 .. code-block:: yaml
-   :linenos:
+
 
     - '@move':
         id: notification
@@ -81,7 +81,7 @@ To create a custom sticky panel on the page, do the following:
 - Import sticky panel to the layout and define the namespace for a new sticky block.
 
 .. code-block:: yaml
-   :linenos:
+
 
      imports:
          -
@@ -92,7 +92,7 @@ To create a custom sticky panel on the page, do the following:
 - Each sticky panel should have its own name. You should define it with `@setOption`
  
 .. code-block:: yaml
-   :linenos:
+
 
     - '@setOption':
         id: top_sticky_panel
@@ -102,7 +102,7 @@ To create a custom sticky panel on the page, do the following:
 - The `stick_to` option should be set to one of the following values: top (by default), bottom. This value defines the position calculation algorithm. 
 
 .. code-block:: yaml
-   :linenos:
+
 
     - '@setOption':
         id: top_sticky_panel
@@ -112,7 +112,7 @@ To create a custom sticky panel on the page, do the following:
 - When a new panel has been added to the page, customize the page elements that will use it. Add the `data-sticky-target` attribute with a sticky name.
  
 .. code-block:: html
-   :linenos:
+
 
     <div id="flash-messages" class="notification" data-sticky-target="top-sticky-panel"
         data-sticky='{"placeholderId": "sticky-element-notification"}'>

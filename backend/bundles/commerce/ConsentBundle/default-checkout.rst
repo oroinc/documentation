@@ -6,7 +6,7 @@ Add the Agreements Step to a Custom Checkout Based on the Default Checkout Workf
 Add the Agreements step to the `acme_demo_checkout` workflow with the `customer_consents` name and the `continue_to_billing_address` allowed transition. For all other steps, add the `verify_customer_consents` allowed transition. `verify_customer_consents` helps to redirect to the `customer_consents` step if some consents were not accepted.
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         acme_demo_checkout:
@@ -34,7 +34,7 @@ Transitions
 Next, add the `continue_to_billing_address` transition to the Agreements page and the `verify_customer_consents` transition that check that all mandatory consents are accepted. The **stop_propagation** option enables you to check the required consents before every step and transit the workflow to the `customer_consents` step.
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         acme_demo_checkout:
@@ -70,7 +70,7 @@ Transition Definitions
 For the above transitions, add transition definitions that save consents and check that all required consents are accepted.
 
 .. code-block:: yaml
-   :linenos:
+
 
     orkflows:
        acme_demo_checkout:
@@ -108,7 +108,7 @@ To show a block with the consent items:
 1. Import a layout with the consent items and configure it.
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         imports:
@@ -136,7 +136,7 @@ To show a block with the consent items:
 2. Customize the templates, as illustrated below.
 
 .. code-block:: twig
-   :linenos:
+
 
    {% block _checkout_form_fields_widget %}
        {% if form.customerConsents is defined %}{{ form_widget(form.customerConsents) }}{% endif %}

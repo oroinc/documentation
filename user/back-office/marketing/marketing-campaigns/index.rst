@@ -98,7 +98,7 @@ The URL parameter and the push code provide you with different options to log a 
 The first option is a URL parameter:
 
 .. code-block:: html
-   :linenos:
+
 
       ?pk_campaign=btwogonefree
 
@@ -118,7 +118,7 @@ The idea behind the URL parameter is that each campaign is assigned its own uniq
 The second option is a push code:
 
 .. code-block:: html
-   :linenos:
+
 
       _paq.push(['setCampaignName', 'btwogonefree']);
 
@@ -128,7 +128,7 @@ This code is used when you run only one marketing campaign on your website, so a
 In this case, you need to insert this push code into the javascript code of your website (after the **setUserId** call) so that all user activities are assigned to this particular campaign no matter which sources visitors used to reach your website.
 
 .. code-block:: html
-   :linenos:
+
 
     <script type="text/javascript">
         var _paq = _paq || [];

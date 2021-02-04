@@ -311,7 +311,7 @@ Let's assume that a widget needs to trigger a *formSave* event when a form is su
 **Page content**
 
 .. code-block:: php
-   :linenos:
+
 
     <div id="poll-widget" {{ UI.renderPageComponentAttributes({
         'module': 'your/widget/creator'
@@ -320,7 +320,7 @@ Let's assume that a widget needs to trigger a *formSave* event when a form is su
 Create a js module that creates widget ``'your/widget/creator'`` as shown in the example below; please remember to add this module to the list of ``dynamic-imports`` in ``jsmodules.yml``.
 
 .. code-block:: javascript
-    :linenos:
+
 
     import widgetManager from 'oroui/js/widget-manager';
     import BlockWidget from 'oro/block-widget';
@@ -341,7 +341,7 @@ Create a js module that creates widget ``'your/widget/creator'`` as shown in the
 **Widget content**
 
 .. code-block:: php
-   :linenos:
+
 
     <div class="widget-content">
         <form action="/my-poll-widget" method="post">
@@ -367,7 +367,7 @@ Create a js module that creates widget ``'your/widget/creator'`` as shown in the
 Create a js module with the handler definition ``'your/widget/handler'`` as shown in the example below; please remember to add this module to the list of 1`dynamic-imports1` in `1jsmodules.yml1`.
 
 .. code-block:: javascript
-    :linenos:
+
 
     import widgetManager from 'oroui/js/widget-manager';
 

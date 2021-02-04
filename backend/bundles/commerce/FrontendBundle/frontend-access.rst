@@ -17,7 +17,7 @@ A list of patterns of those URLs can be found in ``Oro\Bundle\FrontendBundle\Gue
 To add a pattern to the list of allowed URL patterns, call `addAllowedUrlPattern` of the `oro_frontend.guest_access.provider.guest_access_urls_provider` service or create your own provider which should implement ``Oro\Bundle\FrontendBundle\GuestAccess\Provider\GuestAccessAllowedUrlsProviderInterface``, and register it in the DI container with the tag `oro_frontend.guest_access_urls_provider`.
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_frontend.guest_access.provider.guest_access_urls_provider:
         class: Acme\Bundle\MyFrontendBundle\GuestAccess\Provider\MyGuestAccessAllowedUrlsProvider
@@ -29,7 +29,7 @@ Frontend Datagrids
 The `frontend` option in the datagrid configuration controls the display of the management console datagrids in the storefront. By default, it is suggested that all datagrids are intended to be used in the management console. To allow a datagrid to be visible in the storefront, the `frontend` option should be set to `true`.
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_frontend.frontend_customers_users:
         options:

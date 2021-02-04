@@ -20,7 +20,7 @@ To simplify the implementation, you can use the default ``DuplicatorExtension`` 
 Example:
 
 .. code-block:: php
-   :linenos:
+
 
     oro_draft.duplicator_extension.localization_extension:
         class: Oro\Bundle\DraftBundle\Duplicator\Extension\DuplicatorExtension
@@ -46,7 +46,7 @@ Default actions:
 The example below illustrates the way to use context. We only update the draft entity creation date. The draft entity publication date remains unchanged.
 
 .. code-block:: php
-   :linenos:
+
 
    <?php
 
@@ -97,7 +97,7 @@ The filter is responsible for the entity data modification.
 The example below illustrates the way to create and use the filter. This filter uses dependency to update the owner of a draft entity.
 
 .. code-block:: php
-   :linenos:
+
 
    <?php
 
@@ -147,7 +147,7 @@ Matcher indicates the criteria that the filter is following to work successfully
 As an example, consider a matcher that takes properties names. This enables you to use one filter for multiple properties.
 
 .. code-block:: php
-   :linenos:
+
 
    <?php
 

@@ -6,7 +6,7 @@ How to Add WYSIWYG Field
 To add a WYSIWYG field to an entity, you should add 3 columns in a migration with the following types: ``wysiwyg``, ``wysiwyg_style``, and ``wysiwyg_properties``.
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 

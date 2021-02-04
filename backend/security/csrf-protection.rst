@@ -18,7 +18,7 @@ The current token value is stored in the cookie `_csrf` for HTTP connections and
 **Controller level protection**
 
 .. code-block:: php
-   :linenos:
+
 
     // ...
 
@@ -42,7 +42,7 @@ The current token value is stored in the cookie `_csrf` for HTTP connections and
 **Action level protection**
 
 .. code-block:: php
-   :linenos:
+
 
     // ...
 

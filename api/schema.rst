@@ -11,7 +11,7 @@ A typical request can be performed via curl or JSON sandbox.
 **Curl Example**
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users/1 HTTP/1.1
 
@@ -23,7 +23,7 @@ A typical request can be performed via curl or JSON sandbox.
 Please note that to simplify the representation of request examples in the document, a short format will be used, e.g.:
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users/1 HTTP/1.1
     Accept: application/vnd.api+json
@@ -32,7 +32,7 @@ Please note that to simplify the representation of request examples in the docum
 *Typical response header*
 
 .. code-block:: http
-    :linenos:
+
 
     HTTP/1.1 200 OK
     Content-Type: application/vnd.api+json
@@ -46,7 +46,7 @@ Please note that to simplify the representation of request examples in the docum
 *Typical response body*
 
 .. code-block:: json
-    :linenos:
+
 
     { "data": {
         "type": "users",

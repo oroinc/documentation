@@ -212,7 +212,7 @@ To make the ``Hotel`` entity from the first part of the chapter configurable, si
 use it in the class docblock:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -234,7 +234,7 @@ You can also change the default value of each configurable option using the ``de
 argument:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -266,7 +266,7 @@ Similar to the ``@Config`` annotation for entities, you can use the
 annotation to make properties of an entity configurable:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -294,7 +294,7 @@ annotation to make properties of an entity configurable:
 Default values can be changed in the same way as it can be done on the entity level:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -333,7 +333,7 @@ created per bundle which means that a bundle can extend the set of available opt
 options, you create a ``entity_config.yml`` file in your bundle which can look like this:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
     entity_config:
@@ -522,7 +522,7 @@ you will have to use the ``oro_entity_config.provider.acme_demo`` service (the `
 was defined in the ``acme_demo`` scope):
 
 .. code-block:: php
-    :linenos:
+
 
     // $container is an instance of Symfony\Component\DependencyInjection\ContainerInterface
     $container = ...;
@@ -562,7 +562,7 @@ persist your changes by calling the :method:`Oro\\Bundle\\EntityConfigBundle\\Pr
 method afterwards:
 
 .. code-block:: php
-    :linenos:
+
 
     // ...
     $acmeDemoProvider = $container->get('oro_entity_config.provider.acme_demo');

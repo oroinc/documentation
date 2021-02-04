@@ -19,7 +19,7 @@ Configuration
 -------------
 
 .. code-block:: php
-   :linenos:
+
 
     workflows:
         phone_call:
@@ -145,7 +145,7 @@ Translation File Configuration
 To define translatable textual representation of the configuration fields, create translation file `DemoWorkflowBundle\\Resources\\translations\\workflows.en.yml` with the  following content.
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro:
         workflow:
@@ -193,7 +193,7 @@ PhoneCall Entity
 ----------------
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -290,7 +290,7 @@ PhoneConversation Entity
 ------------------------
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 

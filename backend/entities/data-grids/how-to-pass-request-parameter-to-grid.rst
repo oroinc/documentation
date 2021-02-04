@@ -18,7 +18,7 @@ Suppose that you have a grid configuration and a named parameter inside where cl
 For example:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -44,7 +44,7 @@ to configure mapping between datagrid and query parameters.
 You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml`` using the following syntax:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -67,7 +67,7 @@ In case if names of the parameter in the grid and the query do not match you can
 where the key will be the name of the query parameter, and the value will match the name of the parameter in the grid:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -96,7 +96,7 @@ Now we need to pass the parameter with name "relatedContactId" to our grid.
 The controller receives a contact entity and passes it to the view:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
         // src/Acme/Bundle/TaskBundle/Controller/TaskController.php
@@ -128,7 +128,7 @@ The controller receives a contact entity and passes it to the view:
 The view passes the "relatedContactId" parameter to the grid:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/Acme/Bundle/TaskBundle/Resources/views/Task/contactTasks.html.twig #}
     {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
@@ -145,7 +145,7 @@ you need to implement additional logic before binding parameters, etc.), you can
 ``oro_datagrid.datagrid.build.after`` event and set the parameter for the source query in this listener:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
     // src/Acme/Bundle/TaskBundle/EventListener/ParameterListener.php
@@ -185,7 +185,7 @@ you need to implement additional logic before binding parameters, etc.), you can
 Register this listener in the container:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/TaskBundle/Resources/config/services.yml
     services:

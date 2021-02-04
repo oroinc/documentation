@@ -21,7 +21,7 @@ First, create and enable the CollectOnDeliveryBundle bundle for your payment met
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/ACMECollectOnDeliveryBundle.php
        :language: php
-       :linenos:
+
 
 2. To enable the bundle, create Resources/config/oro/bundles.yml in the same directory, with the following content:
 
@@ -29,7 +29,7 @@ First, create and enable the CollectOnDeliveryBundle bundle for your payment met
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/oro/bundles.yml
        :language: yaml
-       :linenos:
+
 
    .. hint:: To fully enable a bundle, you need to regenerate the application cache. However, to save time, you can do it after creation of the payment integration.
 
@@ -49,7 +49,7 @@ Define an entity to store the configuration settings of the payment method in th
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Entity/CollectOnDeliverySettings.php
        :language: php
-       :linenos:
+
 
 As you can see from the code above, the only two necessary parameters are defined for our collect on delivery payment method: ``labels`` and ``shortLabels``.
 
@@ -61,7 +61,7 @@ As you can see from the code above, the only two necessary parameters are define
       .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Entity/CollectOnDeliverySettings.php
          :language: php
          :lines: 49-57
-         :linenos:
+
 
 
 Create a Repository That Returns the Payment Method Settings
@@ -73,7 +73,7 @@ The repository returns on request the configuration settings stored by the entit
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Entity/Repository/CollectOnDeliverySettingsRepository.php
       :language: php
-      :linenos:
+
 
 
 Create a User Interface Form for the Payment Method Integration
@@ -85,7 +85,7 @@ When you add an integration via the user interface of the back-office, a form th
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Form/Type/CollectOnDeliverySettingsType.php
       :language: php
-      :linenos:
+
 
 
 Create a Configuration File for the Service Container
@@ -102,7 +102,7 @@ To set up services, load your configuration file (services.yml) using the Depend
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/DependencyInjection/ACMECollectOnDeliveryExtension.php
       :language: php
-      :linenos:
+
 
 
 Add Translations for the Form Texts
@@ -115,7 +115,7 @@ To present the information on the user interface in the user-friendly way, add t
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/translations/messages.en.yml
       :language: yaml
       :lines: 1-5
-      :linenos:
+
 
 
 Create the Integration Channel Type
@@ -127,7 +127,7 @@ When you select the type of the integration on the user interface, you will see 
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Integration/CollectOnDeliveryChannelType.php
       :language: php
-      :linenos:
+
 
 
 Add an Icon for the Integration
@@ -139,7 +139,7 @@ To add an icon:
 2. Install assets:
 
    .. code-block:: bash
-       :linenos:
+
 
        bin/console assets:install --symlink
 
@@ -154,7 +154,7 @@ A transport is generally responsible for how the data is obtained from the exter
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Integration/CollectOnDeliveryTransport.php
       :language: php
-      :linenos:
+
 
 
 Add the Channel Type and Transport to the Services Container
@@ -167,7 +167,7 @@ To register the channel type and transport, append the following key-values to <
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
       :lines: 1-21
-      :linenos:
+
 
 
 Add Translations for the Channel Type and Transport
@@ -179,7 +179,7 @@ The channel type and, in general, transport labels also appear on the user inter
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/translations/messages.en.yml
       :language: yaml
-      :linenos:
+
 
 
 Add an Installer
@@ -197,7 +197,7 @@ Follow the instructions provided in the :ref:`How to generate an installer <inst
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Migrations/Schema/ACMECollectOnDeliveryBundleInstaller.php
       :language: php
-      :linenos:
+
 
 
 Check That the Integration is Created Successfully
@@ -206,7 +206,7 @@ Check That the Integration is Created Successfully
 1. Clear the application cache:
 
    .. code-block:: bash
-       :linenos:
+
 
        bin/console cache:clear
 
@@ -239,7 +239,7 @@ Configuration Factory Interface
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Factory/CollectOnDeliveryConfigFactoryInterface.php
       :language: php
-      :linenos:
+
 
 
 Configuration Factory Class
@@ -249,7 +249,7 @@ Configuration Factory Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Factory/CollectOnDeliveryConfigFactory.php
       :language: php
-      :linenos:
+
 
 
 Create a Provider for the Payment Method Configuration
@@ -268,7 +268,7 @@ Configuration Provider Interface
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Provider/CollectOnDeliveryConfigProviderInterface.php
       :language: php
-      :linenos:
+
 
 
 Configuration Provider Class
@@ -278,7 +278,7 @@ Configuration Provider Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Provider/CollectOnDeliveryConfigProvider.php
       :language: php
-      :linenos:
+
 
 
 Implement Payment Method Configuration
@@ -294,7 +294,7 @@ Configuration Interface
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/CollectOnDeliveryConfigInterface.php
       :language: php
-      :linenos:
+
 
 
 Configuration Class
@@ -304,7 +304,7 @@ Configuration Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/CollectOnDeliveryConfig.php
       :language: php
-      :linenos:
+
 
 
 Add the Payment Method Configuration Factory and Provider to the Services Container
@@ -317,7 +317,7 @@ To register the payment method configuration factory and provider, append the fo
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
       :lines: 23-35
-      :linenos:
+
 
 
 Create a Factory for the Payment Method View
@@ -334,7 +334,7 @@ Payment Method View Factory Interface
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Factory/CollectOnDeliveryViewFactoryInterface.php
       :language: php
-      :linenos:
+
 
 
 Payment Method View Factory Class
@@ -344,7 +344,7 @@ Payment Method View Factory Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Factory/CollectOnDeliveryViewFactory.php
       :language: php
-      :linenos:
+
 
 
 Create Provider for the Payment Method View
@@ -360,7 +360,7 @@ Payment Method View Provider Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Provider/CollectOnDeliveryViewProvider.php
       :language: php
-      :linenos:
+
 
 
 Implement the Payment Method View
@@ -376,7 +376,7 @@ Payment Method View Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/CollectOnDeliveryView.php
       :language: php
-      :linenos:
+
 
 
 Add the Payment Method View Factory and Provider to the Services Container
@@ -389,7 +389,7 @@ To register the payment method view factory and provider, append the following k
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
       :lines: 41-53
-      :linenos:
+
 
 
 Create a Factory for the Main Method
@@ -404,7 +404,7 @@ Factory Interface
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Factory/CollectOnDeliveryPaymentMethodFactoryInterface.php
       :language: php
-      :linenos:
+
 
 
 Factory Class
@@ -414,7 +414,7 @@ Factory Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Factory/CollectOnDeliveryPaymentMethodFactory.php
       :language: php
-      :linenos:
+
 
 
 Create Provider for the Main Method
@@ -430,7 +430,7 @@ Provider Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Provider/CollectOnDeliveryMethodProvider.php
       :language: php
-      :linenos:
+
 
 
 Implement the Main Method
@@ -446,7 +446,7 @@ Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/CollectOnDelivery.php
       :language: php
-      :linenos:
+
 
 
 .. hint::
@@ -457,7 +457,7 @@ Class
       .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/CollectOnDelivery.php
          :language: php
          :lines: 60-63
-         :linenos:
+
 
 
    This is where you define which transaction types are associated with the payment method. To keep it simple, for Collect On Delivery a single transaction is defined. Thus, it will work the following way: when a user submits an order, the "purchase" transaction takes place, and the order status becomes "purchased".
@@ -474,7 +474,7 @@ To register the payment method main factory and provider, append the following k
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
      :language: yaml
      :lines: 50-61
-     :linenos:
+
 
 
 Define the Payment Method's Layouts for the Storefront
@@ -499,7 +499,7 @@ layout.html.twig for the Payment Method Selection
 
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_options/layout.html.twig
      :language: html
-     :linenos:
+
 
 
 Note that the custom message to appear in the block is defined. Do not forget to add translations in the messages.en.yml for any custom text that you add.
@@ -511,7 +511,7 @@ layout.html for the Payment Method Selection
 
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_options/layout.yml
      :language: yaml
-     :linenos:
+
 
 
 layout.html.twig for the Order Review
@@ -521,7 +521,7 @@ layout.html.twig for the Order Review
 
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_order_submit/layout.html.twig
      :language: html
-     :linenos:
+
 
 
 layout.html for the Order Review
@@ -531,7 +531,7 @@ layout.html for the Order Review
 
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_order_submit/layout.yml
      :language: html
-     :linenos:
+
 
 
 Define a Translation for the Custom Message
@@ -542,7 +542,7 @@ In step, you have added a custom message to the payment method block. Define a t
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/translations/messages.en.yml
       :language: yaml
-      :linenos:
+
 
 
 Check That Payment Method is Added

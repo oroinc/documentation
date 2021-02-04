@@ -35,7 +35,7 @@ annotations for the entity.
 Example of annotation configuration:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Entity/Product.php
     namespace Acme\DemoBundle\Entity;

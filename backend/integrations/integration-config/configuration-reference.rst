@@ -15,7 +15,7 @@ To define you own channel type, create a class that implements `Oro\\Bundle\\Int
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme.demo_integration.provider.prestashop.channel:
         class: Acme\DemoBundle\Integration\PrestashopChannel
@@ -37,7 +37,7 @@ To define you own transport, create a class that implements `Oro\\Bundle\\Integr
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme.demo_integration.provider.db_transport:
         class: Acme\DemoBundle\Integration\PrestashopTransport
@@ -54,7 +54,7 @@ To define you own connector, create a class that implements `Oro\\Bundle\\Integr
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme.demo_integration.provider.prestashop_product.connector:
         class: Acme\DemoBundle\Integration\PrestashopProductConnector

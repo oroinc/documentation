@@ -61,7 +61,7 @@ All strategy events are available in the Oro\Bundle\ImportExportBundle\Event\Str
 **Usage Example:**
 
 .. code-block:: php
-   :linenos:
+
 
     use Symfony\Component\EventDispatcher\EventSubscriberInterface;
     use Oro\Bundle\ImportExportBundle\Event\StrategyEvent;

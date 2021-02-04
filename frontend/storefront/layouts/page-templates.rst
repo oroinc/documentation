@@ -42,7 +42,7 @@ The **allowed page templates configuration options** are the following:
 **Example:**
 
 .. code-block:: yaml
-    :linenos:
+
 
     #DemoBundle/Resources/views/layouts/first_theme/config/page_templates.yml
     templates:

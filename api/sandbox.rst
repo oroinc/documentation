@@ -103,7 +103,7 @@ To edit a record for a particular resource record with JSON:API, perform the PAT
         For example, if you want to change the **firstName** field to the 'John' value for the User entity with id 1, the requested content will look the following way:
 
         .. code-block:: json
-            :linenos:
+
 
             {
               "data": {

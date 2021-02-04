@@ -15,7 +15,7 @@ A user can set only available mime types from the configuration.
 To add or remove available mime types, add changes to the ``upload_file_mime_types`` section and ``upload_image_mime_types`` in the config.yml file:
 
 .. code-block:: yaml
-       :linenos:
+
 
         oro_attachment:
             upload_file_mime_types:
@@ -97,7 +97,7 @@ Use Migration Extension (Example)
 It is possible to create an image or a file field via migrations using AttachmentExtension. For example:
 
 .. code-block:: php
-   :linenos:
+
 
        namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
 
@@ -142,7 +142,7 @@ It is possible to create an image or a file field via migrations using Attachmen
 Also, you can enable attachments for an entity, e.g.,:
 
 .. code-block:: php
-   :linenos:
+
 
 
        namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
@@ -218,7 +218,7 @@ By default, images are processed by the front controller (``index_dev.php``) in 
 To disable debug images, set the ``debug_images`` option to ``false`` in the config.yml file:
 
 .. code-block:: yaml
-   :linenos:
+
 
        oro_attachment:
            debug_images: false
@@ -243,7 +243,7 @@ For proper work, you need the libraries whose versions correspond to the followi
 To configure additional libraries you need to add the following parameters to the parameters.yml:
 
 .. code-block:: yaml
-   :linenos:
+
 
    liip_imagine.pngquant.binary: /usr/bin/pngquant
    liip_imagine.jpegoptim.binary: /usr/bin/jpegoptim

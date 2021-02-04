@@ -17,7 +17,7 @@ There are 2 ways to override the `oro_product.sku.regex_pattern` parameter in yo
     
    .. code-block:: php
       :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
-      :linenos:
+
 
        parameters:
            ...
@@ -27,7 +27,7 @@ There are 2 ways to override the `oro_product.sku.regex_pattern` parameter in yo
 
    .. code-block:: php
       :caption: src/Acme/DemoBundle/DependencyInjection/Compiler/OverrideProductSKUCompilerPass.php
-      :linenos:
+
 
        namespace Acme\DemoBundle\DependencyInjection\Compiler;
 
@@ -47,7 +47,7 @@ There are 2 ways to override the `oro_product.sku.regex_pattern` parameter in yo
    
    .. code-block:: php
       :caption: src/Acme/DemoBundle/DemoBundle.php
-      :linenos:
+
 
        namespace DemoBundle;
 
@@ -72,7 +72,7 @@ If you need to change the default `'This value should contain only latin letters
 
 .. code-block:: yaml
    :caption: translations/validators.en.yaml
-   :linenos:
+
 
     oro.product.sku.not_match_regex: This vaule should contain only latin letters in lower case.
 

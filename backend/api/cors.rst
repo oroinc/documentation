@@ -8,7 +8,7 @@ To enable it, configure a list of origins that are allowed to access your REST A
 via `Resources/config/oro/app.yml` in any bundle or `config/config.yml` of your application, e.g.:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_api:
         cors:
@@ -19,7 +19,7 @@ via `Resources/config/oro/app.yml` in any bundle or `config/config.yml` of your 
 You can also configure other CORS options. Here is the default configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_api:
         cors:

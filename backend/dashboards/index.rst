@@ -33,7 +33,7 @@ sort the result (the id can be used as a sorting criteria as more recent tasks w
 ids):
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -56,7 +56,7 @@ bundle (see :ref:`cookbook-entities-dashboard-config` for an explanation of the 
 follow for the template name and location) with the following content:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Dashboard/recent_tasks_widget.html.twig #}
     {% extends 'OroDashboardBundle:Dashboard:widget.html.twig' %}
@@ -82,7 +82,7 @@ Adding Widget Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/dashboards.yml
     dashboards:

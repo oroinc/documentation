@@ -11,7 +11,7 @@ To create your own strategy, implement the `PriceCombiningStrategyInterface` int
 Example:
 
 .. code-block:: none
-   :linenos:
+
 
     oro_pricing.pricing_strategy.merge_price_combining_strategy:
         class: Acme\Bundle\AcmeBundle\PricingStrategy\YourPricingStrategy

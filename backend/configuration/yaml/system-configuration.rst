@@ -33,7 +33,7 @@ The following example shows a complete working configuration taken from the |sys
 of the |ActivityListBundle| from OroPlatform:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Oro/Bundle/ActivityListBundle/Resources/config/oro/system_configuration.yml
     system_configuration:
@@ -119,7 +119,7 @@ The ``api_tree`` block is used to define which configuration options will be con
 the API. Nested maps can be used to create logical groups of options:
 
 .. code-block:: yaml
-    :linenos:
+
 
     system_configuration:
         api_tree:

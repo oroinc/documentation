@@ -46,21 +46,21 @@ The merge commit message contains the message from the author of the changes. Th
 
 **See Also**
 
-:ref:`Code Style <doc--community--code-style>`
+* :ref:`Code Style <doc--community--code-style>`
 
-:ref:`Set Up a Development Environment <doc--dev-env-best-practices>`
+* :ref:`Set Up a Development Environment <doc--dev-env-best-practices>`
 
-:ref:`Contribute to Translations <doc--community--ui-translations>`
+* :ref:`Contribute to Translations <doc--community--ui-translations>`
 
-:ref:`Contribute to Documentation <documentation-standards>`
+* :ref:`Contribute to Documentation <documentation-standards>`
 
-:ref:`Report an Issue <doc--community--issue-report>`
+* :ref:`Report an Issue <doc--community--issue-report>`
 
-:ref:`Report a Security Issue <reporting-security-issues>`
+* :ref:`Report a Security Issue <reporting-security-issues>`
 
-:ref:`Contact Community <doc--community--contact-community>`
+* :ref:`Contact Community <doc--community--contact-community>`
 
-:ref:`Release Process <doc--community--release>`
+* :ref:`Release Process <doc--community--release>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

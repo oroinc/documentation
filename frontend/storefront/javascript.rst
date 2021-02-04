@@ -27,7 +27,7 @@ or configuring the **entry** section in the jsmodules.yml file.
 **Example:**
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/DemoBundle/Resources/views/layouts/base/config/jsmodules.yml
     entry:

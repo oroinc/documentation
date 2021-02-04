@@ -56,7 +56,7 @@ Implementing *CronCommandInterface* requires the implementation of the |getDefau
 value is **5 0 \* \* \***.
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Command/DemoCommand.php
     namespace Acme\DemoBundle\Command;

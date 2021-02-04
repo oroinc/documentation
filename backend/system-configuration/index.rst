@@ -27,7 +27,7 @@ To define your own configuration settings in a bundle, you use the
 ``Configuration`` class:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/DependencyInjection/Configuration.php
     namespace Acme\DemoBundle\DependencyInjection;
@@ -92,7 +92,7 @@ Fields
 For each option, define a field under ``fields`` key:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # Acme/DemoBundle/Resources/config/oro/system_configuration.yml
     system_configuration:
@@ -135,7 +135,7 @@ To retrieve configuration values inside a controller, you have to use the
 Use its ``get()`` method to retrieve the value of a setting:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
@@ -167,7 +167,7 @@ In a Twig template, use the ``oro_config_value()`` helper to retrieve the
 value of a configuration option:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# setting becomes the value the user configured or true if they didn't #}
     {% set setting = oro_config_value('acme_demo.foo') %}

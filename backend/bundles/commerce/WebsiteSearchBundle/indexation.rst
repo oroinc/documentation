@@ -29,7 +29,7 @@ For example:
 Sample reindexation triggered from the code:
 
 .. code-block:: php
-   :linenos:
+
 
     use Symfony\Component\EventDispatcher\EventDispatcherInterface;
     use Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent;
@@ -54,7 +54,7 @@ Alternatively, you may trigger reindexation from the CLI using the `oro:website-
 Below is an example of the reindex triggered via CLI:
 
 .. code-block:: php
-   :linenos:
+
 
     > php bin/console oro:website-search:reindex --website-id=2
     Starting reindex task for all mapped entities and website ID 2...
@@ -124,7 +124,7 @@ Configure a New Placeholder Type
 If you need to add another placeholder type which is not declared yet, you will need to declare it by implementing  `AbstractPlaceholder` and register it with the `website_search.placeholder` tag.
 
 .. code-block:: php
-   :linenos:
+
 
     namespace AppBundle\WebsiteSearch;
 
@@ -153,7 +153,7 @@ If you need to add another placeholder type which is not declared yet, you will 
 
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         app.website_search.foo_placeholder:
@@ -189,7 +189,7 @@ Example
 Let's assume that you have the following index structure and want to index the product data:
 
 .. code-block:: yaml
-   :linenos:
+
 
     Oro\Bundle\ProductBundle\Entity\Product:
         alias: oro_product_WEBSITE_ID
@@ -212,7 +212,7 @@ Let's assume that you have the following index structure and want to index the p
 Below is an example of the index listener for the index structure above:
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\ProductBundle\Entity\Product;
     use Oro\Bundle\WebsiteBundle\Provider\AbstractWebsiteLocalizationProvider;
@@ -285,7 +285,7 @@ Below is an example of the index listener for the index structure above:
 Service declaration for such listener might look like the following example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         oro_product.event_listener.website_search_index:
@@ -315,7 +315,7 @@ And here is what search index might contain after the indexation:
 **oro_product_1**
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         1: {
@@ -339,7 +339,7 @@ And here is what search index might contain after the indexation:
 **oro_product_2**
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         1: {

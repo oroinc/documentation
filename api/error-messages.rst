@@ -9,7 +9,7 @@ with its own set of fields.
 
 
 .. code-block:: json
-    :linenos:
+
 
     {
       "errors": [

@@ -39,7 +39,7 @@ the ``oro_datagrid.provider.selected_fields`` service which returns selected fie
 Example:
 
 .. code-block:: php
-   :linenos:
+
 
     $selectedFieldsStateProvider = $this->container->get('oro_datagrid.provider.selected_fields');
     $selectedFields = $selectedFieldsStateProvider->getSelectedFields($datagridConfiguration, $datagridParameters);

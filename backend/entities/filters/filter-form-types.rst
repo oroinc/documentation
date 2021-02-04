@@ -539,7 +539,7 @@ You can use filter form types as any other form type in Symfony. For example, co
 with three filters. In your form type you should add code like this:
 
 .. code-block:: php
-   :linenos:
+
 
     class MyFilterFormType extends AbstractType
     {

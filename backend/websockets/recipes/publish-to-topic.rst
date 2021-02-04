@@ -20,7 +20,7 @@ worry about authentication on the backend side.
 You can publish messages to channels using the publish() method of the **oro_sync.websocket_client**, e.g.:
 
 .. code-block:: php
-    :linenos:
+
 
     $websocketClient = $this->get('oro_sync.websocket_client');
     $websocketClient->publish('oro/custom-channel', ['foo' => 'bar']);
@@ -29,7 +29,7 @@ It is strongly recommended to use the **oro_sync.client.connection_checker** con
 publish to websocket server, e.g.:
 
 .. code-block:: php
-    :linenos:
+
 
     $websocketConnectionChecker = $this->get('oro_sync.client.connection_checker');
     if ($websocketConnectionChecker->checkConnection()) {

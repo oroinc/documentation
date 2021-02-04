@@ -36,7 +36,7 @@ State is represented by an array with column names as key and array with the fol
 Example:
 
 .. code-block:: php
-   :linenos:
+
 
     $columnsStateProvider = $this->container->get('oro_datagrid.provider.state.columns');
     $state = $columnsStateProvider->getState($datagridConfiguration, $datagridParameters);
@@ -61,7 +61,7 @@ State is represented by an array with sorters names as key and order direction a
 Example:
 
 .. code-block:: php
-   :linenos:
+
 
     $sortersStateProvider = $this->container->get('oro_datagrid.provider.state.sorters');
     $state = $sortersStateProvider->getState($datagridConfiguration, $datagridParameters);

@@ -13,7 +13,7 @@ This example describes how to disable the draft filter. The following validator 
 
 
 .. code-block:: php
-   :linenos:
+
 
    <?php
 

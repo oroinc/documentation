@@ -10,7 +10,7 @@ It keeps itself in actual state when route or state changes.
 Basic usage:
 
 .. code-block:: javascript
-   :linenos:
+
 
     var CommentCollection = RoutingCollection.extend({
         routeDefaults: {

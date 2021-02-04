@@ -46,7 +46,7 @@ To enable Oro application read configuration settings from the configuration fil
 extension class in the entity bundle and implement the *load* method, like in the example below:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/DependencyInjection/AppExtension.php
     namespace AppBundle\DependencyInjection;
@@ -82,7 +82,7 @@ In the *importexport.yml* configuration file located in the *Resources/config* d
 
 .. code-block:: yaml
     :caption: src/AppBundle/Resources/config/importexport.yml
-    :linenos:
+
 
     services:
         app.importexport.data_converter:
@@ -126,7 +126,7 @@ In the *fillEntityData* method, populate the values for the attributes that shal
 Please refer to the following example:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/ImportExport/TemplateFixture;
     namespace AppBundle\ImportExport\TemplateFixture;
@@ -165,7 +165,7 @@ Next, in the *importexport.yml* file located in the *src/AppBundle/Resources/con
 
 .. code-block:: yaml
     :caption: src/AppBundle/Resources/config/importexport.yml
-    :linenos:
+
 
     services:
         # ...
@@ -182,7 +182,7 @@ To enable export and import for Oro application users, reuse the ``buttons.html.
 OroImportExportBundle. Include it into the twig template in the navigation block (*block navButtons*). Provide the valid entity_class, export and import processor aliases from the configuration file that is described in the `Configure import and export services (processors)`_ section.
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Task/index.html.twig #}
     {% extends 'OroUIBundle:actions:index.html.twig' %}

@@ -36,7 +36,7 @@ Configuration
 All Workflow entities are described in the configuration. Below is an example of Workflow configuration that performs some action with `User` entity.
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         example_user_flow:                            # name of the workflow

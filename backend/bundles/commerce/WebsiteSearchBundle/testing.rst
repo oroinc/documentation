@@ -6,7 +6,7 @@ Trait |WebsiteSearchExtensionTrait| сontains methods which help reindex data in
 Example of usage:
 
 .. code-block:: php
-   :linenos:
+
 
     /**
      * @dbIsolationPerTest

@@ -15,7 +15,7 @@ and then methods `addStatusData` and `getStatusData` will be available.
 **Example:**
 
 .. code-block:: php
-   :linenos:
+
 
     // your connector class
     // ...

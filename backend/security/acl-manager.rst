@@ -12,7 +12,7 @@ To check if ACL system is enabled in the current application, use the **isAclEna
 Setting VIEW and EDIT class-based permissions to `MyBundle:MyEntity` class for the Manager Role:
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\SecurityBundle\Acl\Persistence\AclManager;
     ...
@@ -44,7 +44,7 @@ Setting VIEW and EDIT class-based permissions to `MyBundle:MyEntity` class for t
 Granting `some_action_id` capability for the Manager Role:
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\SecurityBundle\Acl\Persistence\AclManager;
     ...
@@ -99,7 +99,7 @@ You can also omit the $permission argument. In this case, the default mask build
 For example, the following calls return the same mask builder:
 
 .. code-block:: php
-   :linenos:
+
 
    $manager->getMaskBuilder($manager->getOid('entity: AcmeBundle:AcmeEntity'))
    $manager->getMaskBuilder($manager->getOid('entity: AcmeBundle:AcmeEntity'), 'VIEW')
@@ -113,7 +113,7 @@ If you are sure that an ACL extension supports only one mask, you can omit the $
 For example, the following calls are identical:
 
 .. code-block:: php
-   :linenos:
+
 
    $manager->getMaskBuilder($manager->getOid('action: Acme Action'))
    $manager->getMaskBuilder($manager->getOid('entity: Acme Action'), 'EXECUTE')
@@ -125,7 +125,7 @@ The **setPermission**  function updates or creates object-based or class-based A
 * If the given object identity represents a "root" ACL, an object-based ACE is set.
 
 .. code-block:: php
-   :linenos:
+
 
    $manager->setPermission(
        $sid,

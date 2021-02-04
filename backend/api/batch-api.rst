@@ -20,7 +20,7 @@ This can be done via ``actions`` section for an entity in `Resources/config/oro/
 Example:
 
 .. code-block:: yaml
-    :linenos:
+
 
     api:
         entities:
@@ -36,7 +36,7 @@ Batch API Configuration
 All configuration options related to Batch API are grouped in ``batch_api`` section of ApiBundle configuration:
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_api:
         batch_api:
@@ -72,7 +72,7 @@ Obsolete asynchronous batch operations are removed once a day by a cron job.
 The default configuration of this cron job is illustrated below:
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_api:
         batch_api:
@@ -95,7 +95,7 @@ all files that are created when processing asynchronous batch operations (e.g. c
 Here is the default configuration of these storages:
 
 .. code-block:: yaml
-    :linenos:
+
 
     knp_gaufrette:
         adapters:
@@ -123,7 +123,7 @@ of your application can be used.
 The following example shows how to reconfigure this adapter to use a local filesystem:
 
 .. code-block:: yaml
-    :linenos:
+
 
     knp_gaufrette:
         adapters:

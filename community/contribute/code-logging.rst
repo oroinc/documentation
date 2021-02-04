@@ -3,8 +3,6 @@
 Logging Conventions
 ===================
 
-.. wiki/spaces/ORODEV/pages/132579356/Logger+Conventions
-
 Basics
 ------
 

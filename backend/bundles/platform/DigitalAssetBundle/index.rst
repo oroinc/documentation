@@ -10,7 +10,7 @@ OroDigitalAssetBundle bundle provides the Digital Asset Management (DAM) functio
 The following example is an illustration of how to enable DAM for the Image field type:
 
 .. code-block:: php
-   :linenos:
+
 
     $this->attachmentExtension->addImageRelation(
         $schema,

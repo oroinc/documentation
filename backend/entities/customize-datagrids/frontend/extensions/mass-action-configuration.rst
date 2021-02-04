@@ -8,7 +8,7 @@ when the items delivered by the bundle are shown in the grid view.
 Sample configuration in the `layout.yml` file(s) in the ``Resources/views/layouts/theme/page/folder`` in the bundle (e.g., OrderBundle):
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:

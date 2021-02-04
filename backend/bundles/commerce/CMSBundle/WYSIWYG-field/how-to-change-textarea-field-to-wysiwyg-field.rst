@@ -6,7 +6,7 @@ How to Change TextArea Field to WYSIWYG Field
 To turn an existing text field of some entity into a WYSIWYG field you should create a migration that will change the type of the existing column to ``wysiwyg`` and will add 2 new columns to store additional data associated with WYSIWYG fields using the following types: ``wysiwyg_style`` and ``wysiwyg_properties``.
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 

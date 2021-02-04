@@ -7,7 +7,7 @@ Frontend Session
 This bundle provides a possibility to configure different session cookie parameters (such as name, path and lifetime) for the storefront and management console. Use ``session`` section for this:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_frontend:
         session:
@@ -31,7 +31,7 @@ Debug Routes
 Debug routes allows to turn off on fly routes generation, it can slightly boost performance on slow hardware configurations and also makes app more stable on Windows. If ``kernel.debug`` is set to `false` value of debug routes is ignored. To turn off routes generation set option ``debug_routes`` to ``false`` in config.yml file:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_frontend:
         debug_routes: false
@@ -39,7 +39,7 @@ Debug routes allows to turn off on fly routes generation, it can slightly boost 
 If you turned off routes generation, you must do it manually by executing following command:
 
 .. code-block:: php
-   :linenos:
+
 
     php bin/console fos:js-routing:dump
 

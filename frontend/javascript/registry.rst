@@ -14,7 +14,7 @@ The second parameter, `applicant`, is an instance of `PageComponent`, `Model`, `
 It is used by the registry to preserve only the objects (instances, passed in a first parameter) that are still in use by any applicant. If all the applicants for the object are disposed, the registry disposes the object as well.                                      
 
 .. code-block:: javascript
-   :linenos:
+
 
     /**
      * Puts instance into registry
@@ -29,7 +29,7 @@ It is used by the registry to preserve only the objects (instances, passed in a 
 The `globalId` is also used to get the object from the registry:
 
 .. code-block:: javascript
-   :linenos:
+
 
     /**
      * Fetches instance from registry by globalId
@@ -44,7 +44,7 @@ The `globalId` is also used to get the object from the registry:
 It is pretty common case when these two methods are used together to fetch existing instance or create a new one and return it.
 
 .. code-block:: javascript
-   :linenos:
+
 
     var registry = require('oroui/js/app/services/registry');
     var BaseClass = require('oroui/js/base-class');
@@ -74,7 +74,7 @@ It is pretty common case when these two methods are used together to fetch exist
 There are two other methods that allow maintain the up-to-date information in the list of actual applicants:
 
 .. code-block:: javascript
-   :linenos:
+
 
     /**
      * Adds applicant relation to registry for instance
@@ -96,7 +96,7 @@ If the instance was passed in the options and you need to preserve it in the pro
 registry has to be notified that the new applicant holds the instance.
 
 .. code-block:: javascript
-   :linenos:
+
 
         initialize: function(options) {
             this.instance = options.instance;
@@ -107,7 +107,7 @@ registry has to be notified that the new applicant holds the instance.
 When the applicant does not need a shared instance any more, it can notify the registry with `relieve` method:
 
 .. code-block:: javascript
-   :linenos:
+
 
         disable: function() {
             registry.relieve(this.instance, this);

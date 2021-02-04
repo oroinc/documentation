@@ -22,7 +22,7 @@ First, create and enable the FastShippingBundle bundle for your shipping method 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/ACMEFastShippingBundle.php
        :language: php
-       :linenos:
+
 
 .. tip:: The body of your class can be empty if you use regular case in the name of your organization (i.e. Acme or ACME in our example). ``getExtension()`` is necessary when you use uppercase, as Symfony treats uppercase letters in the organization prefix as separate words when creating aliases.
 
@@ -32,7 +32,7 @@ First, create and enable the FastShippingBundle bundle for your shipping method 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/oro/bundles.yml
        :language: yaml
-       :linenos:
+
 
    .. hint:: To fully enable a bundle, you need to regenerate the application cache. However, to save time, you can do it after creation of the shipping integration.
 
@@ -51,7 +51,7 @@ Define an entity that to store the configuration settings of the shipping method
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Entity/FastShippingSettings.php
        :language: php
-       :linenos:
+
 
 As you can see from the code above, the only necessary parameter defined for the FastShipping shipping method is the ``label`` parameter.
 
@@ -63,7 +63,7 @@ As you can see from the code above, the only necessary parameter defined for the
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Entity/FastShippingSettings.php
        :language: php
        :lines: 27-35
-       :linenos:
+
 
 Create a User Interface Form for the Shipping Method Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -74,7 +74,7 @@ When you add an integration via the user interface of the back-office, a form th
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Form/Type/FastShippingTransportSettingsType.php
        :language: php
-       :linenos:
+
 
 Add Translations for the Form Texts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -86,7 +86,7 @@ To present the information on the user interface in a user-friendly way, add tra
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/translations/messages.en.yml
        :language: yaml
        :lines: 1-5
-       :linenos:
+
 
 This defines the name of the field that contains the label.
 
@@ -102,7 +102,7 @@ To implement a channel type, create <bundle_root>/Integration/FastShippingChanne
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Integration/FastShippingChannelType.php
        :language: php
-       :linenos:
+
 
 Add an Icon for the Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -113,7 +113,7 @@ To add an icon:
 2. Install assets:
 
    .. code-block:: bash
-       :linenos:
+
 
        bin/console assets:install --symlink
 
@@ -128,7 +128,7 @@ Transport is generally responsible for how the data is obtained from the externa
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Integration/FastShippingTransport.php
        :language: php
-       :linenos:
+
 
 Create a Configuration File for the Service Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -144,7 +144,7 @@ To register the channel type and transport, append the following key-values to <
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
        :lines: 1-2,4-14
-       :linenos:
+
 
 Set up Services with DependencyInjection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -155,7 +155,7 @@ To set up services, load your configuration file (services.yml) using the Depend
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/DependencyInjection/FastShippingExtension.php
        :language: php
-       :linenos:
+
 
 Add Translations for the Channel Type and Transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -166,7 +166,7 @@ The channel type and, in general, transport labels also appear on the user inter
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/translations/messages.en.yml
        :language: yaml
        :lines: 1-9
-       :linenos:
+
 
 Add an Installer
 ^^^^^^^^^^^^^^^^
@@ -183,7 +183,7 @@ After you complete the process, you will have the <bundle_root>/Migrations/Schem
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Migrations/Schema/FastShippingBundleInstaller.php
        :language: php
-       :linenos:
+
 
 
 Check That the Integration is Created Successfully
@@ -192,7 +192,7 @@ Check That the Integration is Created Successfully
 1. Clear the application cache:
 
    .. code-block:: bash
-      :linenos:
+
 
       bin/console cache:clear
 
@@ -221,7 +221,7 @@ To implement the main method, create the <bundle_root>/Method/FastShippingMethod
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethod.php
        :language: php
-       :linenos:
+
 
 The methods are the following:
 
@@ -249,7 +249,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml:
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
        :lines: 16-20
-       :linenos:
+
 
 Create a Factory for the Shipping Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -262,7 +262,7 @@ Create the <bundle_root>/Factory/FastShippingMethodFromChannelFactory.php class 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Factory/FastShippingMethodFromChannelFactory.php
        :language: php
-       :linenos:
+
 
 Add the Shipping Method Factory to the Services Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -274,7 +274,7 @@ To register the shipping method factory, append the following key-values to <bun
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
        :lines: 22-29
-       :linenos:
+
 
 Create a Shipping Method Provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -285,7 +285,7 @@ For this, add the <bundle_root>/Method/FastShippingMethodProvider.php class with
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethodProvider.php
        :language: php
-       :linenos:
+
 
 Add the Shipping Method Provider to the Services Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -297,7 +297,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
        :lines: 30-38
-       :linenos:
+
 
 Create a Shipping Method Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -310,7 +310,7 @@ To create a shipping method type, add the <bundle_root>/Method/FastShippingMetho
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethodType.php
        :language: php
-       :linenos:
+
 
 * ``getIdentifier`` --- Returns a unique identifier of a shipping method type in the scope of the shipping method.
 * ``getLabel`` --- Returns the label of the shipping method type. The label appears on the shipping rule edit page in the back-office and in the storefront.
@@ -334,7 +334,7 @@ Provide translations by appending the <bundle_root>/Resources/translations/messa
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/translations/messages.en.yml
        :language: yaml
        :lines: 1-14
-       :linenos:
+
 
 Create a Shipping Method Options Form
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -345,7 +345,7 @@ This form with options for a shipping method appears on the user interface of th
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Form/Type/FastShippingMethodOptionsType.php
        :language: php
-       :linenos:
+
 
 Add the Shipping Method Options Form to the Services Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -357,7 +357,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
        :lines: 40-45
-       :linenos:
+
 
 Define Translation for the Shipping Method Form Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -369,7 +369,7 @@ Provide translations by appending the <bundle_root>/Resources/translations/messa
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/translations/messages.en.yml
        :language: yaml
        :lines: 1-16
-       :linenos:
+
 
 Add a Template
 ^^^^^^^^^^^^^^
@@ -381,7 +381,7 @@ Create the /Resources/views/method/fastShippingMethodWithOptions.html.twig file 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/views/method/fastShippingMethodWithOptions.html.twig
        :language: html
-       :linenos:
+
 
 Add a Check for When Users Disable Used Shipping Method Types
 -------------------------------------------------------------
@@ -398,7 +398,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
        :lines: 1,3-5,47-71
-       :linenos:
+
 
 Add Actions
 ^^^^^^^^^^^
@@ -409,6 +409,6 @@ Create actions.yml in the <bundle_root>/Resources/config/oro/ directory:
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/oro/actions.yml
        :language: yaml
-       :linenos:
+
 
 To enable this shipping method, you need to set up a corresponding shipping rule. Follow the :ref:`Shipping Rules Configuration <sys--shipping-rules>` topic for more details.

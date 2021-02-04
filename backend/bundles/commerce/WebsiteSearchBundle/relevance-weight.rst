@@ -19,7 +19,7 @@ To customize search relevance weight, add an event listener to fill the `relevan
 First, create an event listener class:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -63,7 +63,7 @@ First, create an event listener class:
 Then, register this event listener in the DI container:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_test.event_listener.website_search.set_website_search_relevance_weight:
         class: Acme\Bundle\TestBundle\EventListener\SetWebsiteSearchRelevanceWeightListener
@@ -73,7 +73,7 @@ Then, register this event listener in the DI container:
 Specify a mapping for the added `relevance_weight` field in the `Resources/config/oro/website_search.yml` file if it was not specified before:
 
 .. code-block:: yaml
-   :linenos:
+
 
     Oro\Bundle\ProductBundle\Entity\Product:
         fields:

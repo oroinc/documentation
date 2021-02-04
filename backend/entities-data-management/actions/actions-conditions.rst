@@ -235,7 +235,7 @@ But it can be used to create a condition based on configuration in runtime.
 Code Example is a value of the "call_timeout" attribute. It is not blank, and it equals to 20.
 
 .. code-block:: php
-   :linenos:
+
 
     $configuration = array(
         '@and' => array(

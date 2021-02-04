@@ -27,7 +27,7 @@ Customization Example
 Lets look at an example of scroll data customization. Here is definition of listener used to customize scroll data:
 
 .. code-block:: yaml
-   :linenos:
+
 
     user_update_scroll_data_listener:
         class: ...
@@ -38,7 +38,7 @@ Lets look at an example of scroll data customization. Here is definition of list
 This definition shows service used as an event listener for event ``oro_ui.scroll_data.before.user-profile`` with handler method ``onUserUpdate``. This listener will be executed before rendering of user update page (it has identifier ``user-profile``). Here is how such listener can look like:
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\UIBundle\Event\BeforeListRenderEvent;
 

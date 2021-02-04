@@ -20,7 +20,7 @@ In PHP code, access to the field is provided by the `isGranted` method of the `s
 The second parameter of this method should be an instance of |FieldVote|:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
     ....
@@ -37,7 +37,7 @@ The $entity parameter should contain an instance of the entity that you want to 
 If you have no entity instance but you know a class name, ID of the record, the owner and the organization IDs of this record, the |DomainObjectReference|] can be used as the domain object:
  
 .. code-block:: php
-   :linenos:
+
 
     <?php
     ....
@@ -56,7 +56,7 @@ Check Field ACL in TWIG Templates
 Use the `is_granted` twig function to check grants in twig templates. To check the field, use the the field name as the third parameter of the function:
  
 .. code-block:: php
-   :linenos:
+
 
     {% if is_granted('VIEW', entity, 'fieldName') %}
         {# do some job #}
@@ -75,7 +75,7 @@ You can achieve this with the Config annotation if you have access to both the e
 The following example is an illustration of the entity configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
     ....
@@ -109,7 +109,7 @@ The following example is an illustration of the entity configuration:
 If you have no access to the entity to modify the Config annotation, set the `field_acl_supported` parameter with the migration:
  
 .. code-block:: php
-   :linenos:
+
  
     <?php
 
@@ -164,7 +164,7 @@ The permissions should be listed as the string with the `;` delimiter.
 For example:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
     ....

@@ -20,14 +20,14 @@ Macros that renders datagrid can retrieve parameters that will be used to genera
 Example:
 
 .. code-block:: twig
-   :linenos:
+
 
    [dataGrid.renderGrid(gridName, {groupId: entityId})]
 
 This param will be passed to the datagrid parameter bag and will be bound to the datasource query in the listener of the ``oro_datagrid.datagrid.build.after`` event automatically if you specify the ``bind_parameters`` option in the datasource configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -58,7 +58,7 @@ For example, *a grid should show users for a group that are currently editing an
 To solve this problem, we have to modify the query. We are going to add an additional field that will show the value of the "assigned state".
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -97,7 +97,7 @@ When this done, we have to create form fields that will contain an assigned/remo
 For example, the fields are:
 
 .. code-block:: twig
-   :linenos:
+
 
     form_widget(form.appendUsers, {'id': 'groupAppendUsers'}),
     form_widget(form.removeUsers, {'id': 'groupRemoveUsers'}),
@@ -107,7 +107,7 @@ The last step is to set the ``rowSelection`` option, which will add behavior of 
 of ``data_in`` and ``data_not_in`` parameters to the datasource:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -134,7 +134,7 @@ To solve this problem, we have to create a form field that will contain the chan
 For example, the fields are:
 
 .. code-block:: twig
-   :linenos:
+
 
     form_widget(form.changeset, {'id': 'changeset'}),
 
@@ -142,7 +142,7 @@ For example, the fields are:
 The next step is to modify the query. We are going to add an additional field ``enabled`` that a user will be able to change.
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -178,7 +178,7 @@ Currently supported are ``select tag``, ``select tag (with multiple attributes)`
 Example for radio buttons:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -201,7 +201,7 @@ By default, ``expanded`` and ``multiple`` are ``false`` and their presence in th
 The last step is to set the ``cellSelection`` option which is going to add behavior of selecting rows in the frontend:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -224,7 +224,7 @@ Let's take previous problem, but fill the selector in addiction to enum values.
 To solve this problem, use ``@oro_entity_extend.enum_value_provider->getEnumChoicesByCode('enum_code')`` instead of the choice the array is using.
 
 .. code-block:: yaml
-   :linenos:
+
 
     choices:
        enabled: Active
@@ -233,7 +233,7 @@ To solve this problem, use ``@oro_entity_extend.enum_value_provider->getEnumChoi
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -260,7 +260,7 @@ Any builders can be passed under the gridconfig[options][jsmodules] node. Your b
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -282,7 +282,7 @@ Grid states processed using Backbone.Router, and it can be easily disabled in th
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -302,7 +302,7 @@ Problem 7
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -323,7 +323,7 @@ Problem 8
 - override option 'acl_resource' and to make it ``false``
 
   .. code-block:: yaml
-     :linenos:
+
 
       datagrids:
           acme-demo-grid:
@@ -336,7 +336,7 @@ Problem 8
 - declare your own grid listener
 
   .. code-block:: yaml
-     :linenos:
+
 
       my_bundle.event_listener.my_grid_listener:
               class: 'Acme\DemoBundle\EventListener\MyGridListener'
@@ -359,7 +359,7 @@ Problem 9
 - configure the grid with option 'acl_resource' set to the name of an ACL resource, it will check the permission to this ACL resource before the datagrid data is loaded
 
   .. code-block:: yaml
-     :linenos:
+
 
       datagrids:
           acme-demo-grid:
@@ -378,7 +378,7 @@ Problem 10
 - Create a datagrid event listener listening to the `BuildBefore` event and add columns only if the user has appropriate permissions
 
   .. code-block:: php
-     :linenos:
+
 
       <?php
 
@@ -436,7 +436,7 @@ There are several ways to configure these messages.
   For example:
 
   .. code-block:: yaml
-     :linenos:
+
 
      datagrids:
          acme-demo-grid:
@@ -458,7 +458,7 @@ There are several ways to configure these messages.
   For example:
 
   .. code-block:: yaml
-     :linenos:
+
 
       datagrids:
           acme-demo-grid:
@@ -480,7 +480,7 @@ There are several ways to configure these messages.
   For example:
 
   .. code-block:: yaml
-     :linenos:
+
 
      datagrids:
          acme-demo-grid:
@@ -502,7 +502,7 @@ There are several ways to configure these messages.
   messages.en.yml:
 
   .. code-block:: yaml
-     :linenos:
+
 
       acme:
           my_custom_empty_grid_message: 'There are no users'

@@ -90,7 +90,7 @@ Add a New Access Rule
 To add a new access rule, create a new class that implements |AccessRuleInterface|, for example:
 
  .. code-block:: php
-    :linenos:
+
 
     <?php
 
@@ -126,7 +126,7 @@ To add a new access rule, create a new class that implements |AccessRuleInterfac
 Next, the access rule class should be registered as a service with the `oro_security.access_rule` tag:
 
  .. code-block:: yaml
-    :linenos:
+
 
     acme_demo.access_rule.contact:
         class: Acme\DemoBundle\AccessRule\ContactAccessRule

@@ -24,7 +24,7 @@ every application the required permissions should be added\updated by creating a
 An example of a simple permission configuration.
 
 .. code-block:: bash
-   :linenos:
+
 
     oro_permissions:
         PERMISSION1:                                                    # permission name (should start with a letter, digit or underscore and only contain
@@ -71,7 +71,7 @@ Configuration Load
 To load permissions configuration to the DB, execute the following command:
 
 .. code-block:: bash
-   :linenos:
+
 
    security:permission:configuration:load [--permissions [PERMISSIONS]]
 

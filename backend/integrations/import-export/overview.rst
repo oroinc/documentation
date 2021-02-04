@@ -61,7 +61,7 @@ OroBatchBundle Configuration
 This configuration is used by OroBatchBundle and encapsulates three jobs for importing the entity from a CSV file, validating the imported data and exporting the entity to a CSV file.
 
 .. code-block:: php
-   :linenos:
+
 
     connector:
         name: oro_importexport

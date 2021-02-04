@@ -25,7 +25,7 @@ Create an app.yml file in a bundle of your choice, and change the content restri
 In the example below, `secure` mode has been changed to `selective`:
 
 .. code-block:: yaml
-   :linenos:
+
 
    oro_cms:
        content_restrictions:
@@ -36,7 +36,7 @@ In the example below, `secure` mode has been changed to `selective`:
 Whichever mode you want to switch to and from (i.e., from selective to unsecure, from unsecure back to secure, etc.), add the same piece of code (with the desired mode) into the `config/config.yml` file. For example:
 
 .. code-block:: yaml
-   :linenos:
+
 
    oro_cms:
        content_restrictions:
@@ -45,7 +45,7 @@ Whichever mode you want to switch to and from (i.e., from selective to unsecure,
 You can add further configuration using the same method, such as allowed protocols, iframe domains, html tags and their attributes, etc. For example, if you add the following code into config/config.yml, then it would be possible to specify the ``sftp://`` protocol in links (<a href="...">...</a>) in selective (lax mode):
 
 .. code-block:: yaml
-   :linenos:
+
 
    oro_form:
        html_purifier_modes:
@@ -56,7 +56,7 @@ You can add further configuration using the same method, such as allowed protoco
 Here is an example of how to allow attribute ``title`` for the ``img`` tag in secure (default) mode:
 
 .. code-block:: yaml
-   :linenos:
+
 
    oro_form:
        html_purifier_modes:
@@ -69,7 +69,7 @@ Here is an example of how to allow attribute ``title`` for the ``img`` tag in se
 You can flexibly configure the use of modes. For example, you can allow the use of certain modes for certain roles in certain fields of entities. You can configure this in the same way as modes. For example, the following configuration will enable a marketing manager to use the selective mode (which means most of the tags are allowed) in the content of the landing pages (**Marketing > Landing Pages** in the main menu):
    
 .. code-block:: yaml
-   :linenos:
+
 
    oro_cms:
        content_restrictions:

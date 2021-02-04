@@ -13,7 +13,7 @@ Initialization
 `LoadingMaskView` is rendered automatically once it is initialized (has defined property `autoRender: true`). To create an instance, it is sufficient to pass one option -- the container (the element that you want to cover).
 
 .. code-block:: javascript
-   :linenos:
+
 
     var loadingMask = new LoadingMaskView({
         container: $myElement
@@ -25,7 +25,7 @@ Other `LoadingMaskView` specific options that might be passed to constructor are
  - `hideDelay` is a number in milliseconds or false and allows to hide loading mask with delay
 
 .. code-block:: javascript
-   :linenos:
+
 
      var loadingMask = new LoadingMaskView({
          container: $myElement,
@@ -38,7 +38,7 @@ How to Usage
 ------------
 
 .. code-block:: javascript
-   :linenos:
+
 
     /**
      * Shows loading mask

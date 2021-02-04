@@ -60,7 +60,6 @@ of the same level reside in the same folder which simplifies navigation and sibl
 Sample file structure:
 
 .. code-block:: none
-    :linenos:
 
     + user:
         - index.rst
@@ -96,7 +95,6 @@ Use the following markup for the headings to split your topic into sections, sub
 Use an underline with =, -, ^, ~, " to mark up the sections.
 
 .. code-block:: none
-    :linenos:
 
     Section 1
     =========
@@ -130,7 +128,6 @@ Bulleted List
 To form a bullet list, start the line with \*, +, or \- followed by whitespace:
 
 .. code-block:: none
-    :linenos:
 
     * Item A
     * Item B
@@ -160,7 +157,7 @@ To form a numbered list, start the line with Arabic numerals (1,2,3), upper- or 
 Simple numbered list:
 
 .. code-block:: none
-    :linenos:
+
 
     1. Item A
     2. Item B
@@ -170,7 +167,6 @@ Simple numbered list:
 
               i. Item E
               ii. Item F
-
 
 Preview:
 
@@ -187,7 +183,7 @@ Auto Enumerated List
 ~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
-    :linenos:
+
 
     1. Item A
     #. Item B
@@ -208,7 +204,6 @@ Preview:
 
               i. Item E
               #. Item F
-
 
 Text Blocks
 ~~~~~~~~~~~
@@ -283,7 +278,7 @@ Tables
 **Option 1**
 
 .. code-block:: none
-    :linenos:
+
 
     +------------+------------+-----------+
     | Header 1   | Header 2   | Header 3  |
@@ -307,7 +302,7 @@ Preview:
 **Option 2**
 
 .. code-block:: none
-    :linenos:
+
 
     .. csv-table::
        :header: "**OroCRM Field**","**Outlook Field**"
@@ -363,7 +358,6 @@ For example, when we create a new topic with additional information about price 
 **Before:**
 
 .. code-block:: none
-    :linenos:
 
     .. toctree::
        :maxdepth: 1
@@ -375,7 +369,7 @@ For example, when we create a new topic with additional information about price 
 **After:**
 
 .. code-block:: none
-    :linenos:
+
 
     .. toctree::
        :maxdepth: 1
@@ -413,7 +407,7 @@ Note the punctuation characters when linking to a certain file, section, or webs
 This way is quite useful as it works even if files get renamed.
 
 .. code-block:: none
-    :linenos:
+
 
     .. _anchor-name:
 
@@ -428,7 +422,7 @@ This way is quite useful as it works even if files get renamed.
 To create a link to a header in the same file:
 
 .. code-block:: none
-    :linenos:
+
 
     ...
 
@@ -450,14 +444,14 @@ At Oro, we avoid formatting external links in typical RST manner (e.g., `GitHub 
 * Put the word/phrase that will serve as a link in vertical bars
 
   .. code-block:: none
-      :linenos:
+
 
       |GDPR portal|
 
 * Add the following link to the bottom of your documentation page:
 
   .. code-block:: none
-      :linenos:
+
 
       .. include:: /include/include-links.rst
          :start-after: begin
@@ -465,7 +459,7 @@ At Oro, we avoid formatting external links in typical RST manner (e.g., `GitHub 
 * In the include-links.rst file, embed the link into html with the target="_blank" parameter into the required documentation component section (Cloud Documentation, Dev Documentation, User Documentation):
 
   .. code-block:: none
-      :linenos:
+
 
       .. |GDPR portal| raw:: html
 

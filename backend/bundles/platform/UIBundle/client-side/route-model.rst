@@ -8,7 +8,7 @@ Abstraction of route
 Basic usage:
 
 .. code-block:: javascript
-   :linenos:
+
 
     var route = new RouteModel({
         // route specification

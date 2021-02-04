@@ -368,7 +368,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
 
 * Replace **<application-root-folder>** with the absolute path where you are going to install the Oro application.
 * Replace **<your-domain-name>** with the configured domain name that would be used for the Oro application.
-* Change *ssl_certificate_key* and*ssl_certificate* with the actual values of your active SSL certificate.
+* Change *ssl_certificate_key* and *ssl_certificate* with the actual values of your active SSL certificate.
 
 Optionally, you can enable and configure |Apache PageSpeed module| for Nginx to improve
 web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.

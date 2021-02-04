@@ -14,7 +14,7 @@ Access Grid Scope
 You can also specify the scope of the grid in the configuration using the option ``scope``:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -31,7 +31,7 @@ More often than not you will need to specify a scope name in your views.
 Use a twig function to build the grid name with a scope (oro_datagrid_build_fullname), for example:
 
 .. code-block:: twig
-   :linenos:
+
 
    {% set fullname = oro_datagrid_build_fullname('acme-demo-datagrid', 'some-scope') %}
 
@@ -39,7 +39,7 @@ Use a twig function to build the grid name with a scope (oro_datagrid_build_full
 For example, if you want to render multiple grids of customer orders:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% for (customer in customers) %}
         {{ dataGrid.renderGrid(

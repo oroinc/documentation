@@ -13,7 +13,7 @@ Initialization
 Initialize in twig:
 
 .. code-block:: twig
-   :linenos:
+
 
     //example from System Configuration page content
     <div data-page-component-view="{{ {
@@ -39,7 +39,7 @@ Initialize in twig:
 Initialize in JavaScript:
 
 .. code-block:: javascript
-   :linenos:
+
 
     //example from "oroui/js/app/views/jstree/base-tree-view"
     this.subview('highlight', new HighlightTextView({

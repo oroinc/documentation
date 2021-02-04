@@ -73,7 +73,7 @@ All processes are described in the configuration. The example below illustrates 
 an action with the Contact entity.
 
 .. code-block:: php
-   :linenos:
+
 
     processes:
         definitions:                                                 # list of definitions

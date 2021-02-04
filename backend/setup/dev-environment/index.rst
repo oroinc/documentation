@@ -38,29 +38,31 @@ Prepare Development Tools
 
 #. Configure PHPStorm:
 
-    #. Install and configure |Symfony plugin| and |Oro plugin| by following the |official PHPStorm plugin management instructions|.
+   #. Install and configure |Symfony plugin| and |Oro plugin| by following the |official PHPStorm plugin management instructions|.
 
-    #. Exclude the following directories in PhpStorm (to avoid class duplication and indexation overhead) by right-clicking on the directory and selecting **Mark Directory As > Excluded**:
+   #. Exclude the following directories in PhpStorm (to avoid class duplication and indexation overhead) by right-clicking on the directory and selecting **Mark Directory As > Excluded**:
 
-       * var/cache
-       * public/bundles
+      * var/cache
+      * public/bundles
 
-    #. Enable code quality checks in PHPStorm:
+   #. Enable code quality checks in PHPStorm:
 
-       * |Enable PHP Code Sniffer| (use PSR2 or Symfony2 code standards)
+      * |Enable PHP Code Sniffer| (use PSR2 or Symfony2 code standards)
 
-       * |Enable PHP Mess Detector|, making sure that:
+      * |Enable PHP Mess Detector|, making sure that:
 
-          * **Cyclomatic complexity** DOES NOT exceed the limit of **15**.
-          * The limit of the **NPath complexity** is set to **200** (the default PHPMD limit).
+         * **Cyclomatic complexity** DOES NOT exceed the limit of **15**.
+         * The limit of the **NPath complexity** is set to **200** (the default PHPMD limit).
 
-    #. Configure xDebug
-       * Integrate a debugging tool into your IDE to be able to set breakpoints in a code, see watches and go over a stack trace in real time. See |how to set up integration between PhpStorm and xDebug|.
+   #. Configure xDebug
 
-    #. Configure PhpUnit
-       * If you write tests for your code, integrate |PhpUnit with PhpStorm| and use it |for actual testing|.
+      * Integrate a debugging tool into your IDE to be able to set breakpoints in a code, see watches and go over a stack trace in real time. See |how to set up integration between PhpStorm and xDebug|.
 
-         .. note:: You can also set the default configuration for the PhpUnit test runner (path to phpunit.xml, the working directory, etc.). Then you can just right-click a test file and select **Run <file>** to run all tests from the file.
+   #. Configure PhpUnit
+
+      * If you write tests for your code, integrate |PhpUnit with PhpStorm| and use it |for actual testing|.
+
+      .. note:: You can also set the default configuration for the PhpUnit test runner (path to phpunit.xml, the working directory, etc.). Then you can just right-click a test file and select **Run <file>** to run all tests from the file.
 
 .. _dev-guide-development-practice-setup-dev-env-create-app:
 

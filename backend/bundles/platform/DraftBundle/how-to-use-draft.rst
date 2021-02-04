@@ -29,7 +29,7 @@ Create an entity with 2 fields: **title** and **content** and implement the enti
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Entity/Block.php
         :language: php
-        :linenos:
+
 
 Then, add the entity configuration to the **title** and **content** fields. The **draftable** parameter ensures that the field is involved in the draft operation.
 
@@ -40,7 +40,7 @@ Follow the instructions provided in the :ref:`Configure Entities <book-entities-
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Entity/Block.php
         :language: php
         :lines: 55-82
-        :linenos:
+
 
 .. important::
     To be able to restrict the entity from using ACL, follow the instructions provided in the :ref:`Protect Entities Using ACLs <coobook-entities-acl-enable>` topic.
@@ -73,7 +73,7 @@ After you complete it, you will have the ``installer`` with the following conten
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Migrations/Schema/ACMECMSBundleInstaller.php
         :language: php
-        :linenos:
+
 
 Create a Controller
 -------------------
@@ -89,7 +89,7 @@ For more details on how to create a controller and navigation, see the following
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Controller/BlockController.php
         :language: php
-        :linenos:
+
 
 .. note::
     A draft realizes the **DraftKernelListener** class. Listener receives the controller's original argument, replaces it with a draft, and injects the argument to the controller again. It allows us to use a single entry point for all entities.
@@ -107,7 +107,7 @@ To manage the entity, we need to create a grid to display original and draft ent
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
         :language: php
         :lines: 2-33
-        :linenos:
+
 
 2. Create a grid for draft entities
 
@@ -116,7 +116,7 @@ To manage the entity, we need to create a grid to display original and draft ent
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
         :language: php
         :lines: 35-57
-        :linenos:
+
 
 .. important::
     Use the ``showDrafts`` option in the grid configuration.
@@ -134,7 +134,7 @@ Follow the instructions provided in the :ref:`Work with Operations <bundle-docs-
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/actions.yml
         :language: php
         :lines: 2-33
-        :linenos:
+
 
 
 Create a Form Type
@@ -148,7 +148,7 @@ Follow the instructions provided in the :ref:`The Form Type <cookbook-entity-for
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Form/Type/BlockType.php
         :language: php
-        :linenos:
+
 
 Use the Extension
 -----------------
@@ -170,7 +170,7 @@ Create a Filter
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Filter/UniqueTitleFilter.php
         :language: php
-        :linenos:
+
 
 Create a Matcher
 ^^^^^^^^^^^^^^^^
@@ -181,7 +181,7 @@ Create a Matcher
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Matcher/BlockTitleMatcher.php
         :language: php
-        :linenos:
+
 
 Create an Extension
 ^^^^^^^^^^^^^^^^^^^
@@ -192,7 +192,7 @@ Create an Extension
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Extension/BlockTitleExtension.php
         :language: php
-        :linenos:
+
 
 Create a Template
 -----------------
@@ -207,7 +207,7 @@ Follow the instructions provided in the :ref:`Template <templates-twig>` topic.
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/views/Block/view.html.twig
         :language: php
         :lines: 18-27
-        :linenos:
+
 
 .. include:: ../../../../include/include-links-dev.rst
    :start-after: begin

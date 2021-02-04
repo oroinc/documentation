@@ -6,7 +6,7 @@ Mass Action Extension
 The simplest mass action that works out-of-box with datagrids is `delete`. To enable it, add the following into the `datagrids.yml` of the corresponding grid :
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         users-grid:
@@ -26,7 +26,7 @@ Check every necessary row manually or use the checkbox in the header and click `
 If you wish to disable a mass action, specify the following:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         users-grid:
@@ -40,7 +40,7 @@ If you wish to disable a mass action, specify the following:
 In case of more complicated mass types, register your service with the ``oro_datagrid.extension.mass_action.type`` tag:
 
 .. code-block:: yaml
-   :linenos:
+
 
      oro_customer.datagrid.extension.mass_action.handler.custom:
          class: Oro\Bundle\CustomerBundle\Datagrid\Extension\MassAction\CustomActionHandler
@@ -51,7 +51,7 @@ In case of more complicated mass types, register your service with the ``oro_dat
 Then add the following configuration to the `actions.yml` file.
 
 .. code-block:: yaml
-   :linenos:
+
 
     operations:
     ...

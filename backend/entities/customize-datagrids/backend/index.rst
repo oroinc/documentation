@@ -19,7 +19,7 @@ Next, choose the identifier of your future grid and declare it by adding an asso
 For example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-datagrid:     # grid identifier
@@ -34,7 +34,7 @@ Choose datasource type and properly configure it. For further details, check the
 For example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-datagrid:
@@ -50,7 +50,7 @@ Other than the ``query`` yaml-oriented provider, ORM datasource supports an alte
 You use any arbitrary method that returns a valid ``Doctrine\ORM\QueryBuilder`` instance.
 
 .. code-block:: php
-   :linenos:
+
 
     // @acme_demo.user.repository
     public class UserRepository
@@ -76,7 +76,7 @@ You use any arbitrary method that returns a valid ``Doctrine\ORM\QueryBuilder`` 
 In the datagrid configuration, provide the service and method name:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-datagrid:
@@ -91,7 +91,7 @@ Parameters Binding
 If datasource supports parameters binding, you can specify an additional option ``bind_parameters``. For example
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-datagrid:
@@ -145,7 +145,7 @@ For a detailed explanation, see the section on :ref:`formatters <customize-datag
 So lets define few columns:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-datagrid:
@@ -177,7 +177,7 @@ There is one required value ``data_name`` that is responsible for knowledge on w
 Lets make all columns sortable:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-datagrid:
@@ -206,7 +206,7 @@ Macro's name is ``renderGrid``, it takes 2 arguments: grid name, route parameter
 So for displaying our grid we have to add following code to template:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
     {% block content %}

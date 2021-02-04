@@ -11,7 +11,7 @@ Create a New Model
 During the initialization, a model has to be created manually, with the `new EntityModel(null, {type: '...'})`.  
 
 .. code-block:: javascript
-   :linenos:
+
 
     var registry = require('oroui/js/app/services/registry');
     var EntityModel = require('oroentity/js/app/models/entity-model');

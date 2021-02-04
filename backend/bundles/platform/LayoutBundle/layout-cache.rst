@@ -41,7 +41,7 @@ There are two groups of expressions in the |BlockView| options:
 For example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     actions:
         ...
@@ -56,7 +56,7 @@ It will be evaluated before the |BlockTypeInterface::buildBlock| and the result 
 
 
 .. code-block:: yaml
-   :linenos:
+
 
     actions:
         ...

@@ -7,7 +7,7 @@ This annotation is used to protect a controller based on an existing access cont
 the parent access control list is passed as the only option:
 
 .. code-block:: php
-    :linenos:
+
 
     // ...
     use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;

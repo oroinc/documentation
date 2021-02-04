@@ -42,7 +42,7 @@ the `Resources/views/layouts` directory, for example
 `Resources/views/layouts/first_theme/default.yml`:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -140,7 +140,7 @@ also use a relative path for the block theme, like
 `default.html.twig`.
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _page_container_widget %}
         <div{{ block('block_attributes') }}>
@@ -196,7 +196,7 @@ When you open the test page in a browser, you should see the HTML
 similar to this:
 
 .. code-block:: html
-    :linenos:
+
 
     <!DOCTYPE html>
     <html>
@@ -227,7 +227,7 @@ In our example, we need to add the `lang="en"` attribute to the
 `default.html.twig`.
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block root_widget %}
         <!DOCTYPE {{ doctype|default('html') }}>
@@ -240,7 +240,7 @@ Now we can set the `lang` attribute in the layout update file using
 the `setOption` action:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -256,7 +256,7 @@ Iteration over an array or a collection should be done in a block
 template of a block theme file, for instance:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _attributes_container_widget %}
         <div class="attributes-container">
@@ -280,7 +280,7 @@ modify the template based on the existing block, or any of its
 properties.
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block root_widget %}
         <!DOCTYPE {{ doctype|default('html') }}>
@@ -301,7 +301,7 @@ To add some CSS and JS to our page, we use the `style` and `script`
 block types:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -333,7 +333,7 @@ only conditional comments. In this case, we cannot use the `script`
 block type but we can use the default one with a customized template.
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -345,7 +345,7 @@ block type but we can use the default one with a customized template.
 In our block theme file defined previously, we add:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _script_ie_widget %}
         <!--[if lt IE 7]>
@@ -375,7 +375,7 @@ example page we want one column. We are going to remove the `left_panel` block
 and change the class for the `main_container`:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -392,7 +392,7 @@ to add another option to the already existing ones, use the
 `appendOption` action:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -406,7 +406,7 @@ this, we add a new `container` to the body and move the content into
 it.
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -422,7 +422,7 @@ Since the `container` block type does not render any html, we add the
 template specifically for the new wrapper:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _body_wrapper_widget %}
         <div class="wrapper">
@@ -434,7 +434,7 @@ Let us check what is rendered in the browser. Your code should look
 similar to the following:
 
 .. code-block:: html
-    :linenos:
+
 
     <!DOCTYPE html>
     <html lang="en">
@@ -490,7 +490,7 @@ added by
 We are now going to add the following block template theme file:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _demo_notice_widget %}
         <div class="global-site-notice demo-notice">
@@ -502,7 +502,7 @@ Now we can add it to the layout depending on the condition using the
 `visible` option:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -525,7 +525,7 @@ Since product data is page specific, we are adding it to the `data`
 collection of the layout context using a :ref:`context configurator <dev-doc-frontend-layouts-layout-context-configurator>`.
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\ProductBundle\Layout\Extension;;
 
@@ -613,7 +613,7 @@ To enable our context configurator, we have to register it in the DI
 container with the `layout.context_configurator` tag:
 
 .. code-block:: yaml
-    :linenos:
+
 
         'acme_product.layout.context_configurator.product':
             class: 'Acme\Bundle\ProductBundle\Layout\Extension\ProductContextConfigurator'
@@ -626,7 +626,7 @@ Now we can use the product data in the layout update to add the page
 title, meta description and canonical URL:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -653,7 +653,7 @@ To implement a language switcher, we create a separate data provider
 class, since this data is used on all pages.
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\LocaleBundle\Layout\Extension\Provider;
 
@@ -685,7 +685,7 @@ We need to register our data provider in the DI container by the
 `layout.data_provider` tag:
 
 .. code-block:: yaml
-    :linenos:
+
 
         acme_locale.layout.data_provider.locale:
             class: Acme\Bundle\LocaleBundle\Layout\DataProvider\LocaleProvider
@@ -699,7 +699,7 @@ Now we can refer to the language data the same way as to the product
 data and add the language switcher to the layout:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -716,7 +716,7 @@ data and add the language switcher to the layout:
 We also need to create the block template for the language switcher:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _lang_switch_widget %}
         <div class="header-language-background">
@@ -744,7 +744,7 @@ Similar to the `ProductContextConfigurator`, we are going to fetch the
 language code from the request and save it in the layout context.
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\LocaleBundle\Layout\Extension;
 
@@ -791,7 +791,7 @@ language code from the request and save it in the layout context.
 We are  registering the locale context configurator:
 
 .. code-block:: yaml
-    :linenos:
+
 
         acme_locale.layout.context_configurator.locale:
             class: 'Acme\Bundle\LocaleBundle\Layout\Extension\LocaleContextConfigurator'
@@ -804,7 +804,7 @@ We also need to modify the block template to make sure that the language
 dropdown preselects the current value:
 
 .. code-block:: twig
-    :linenos:
+
 
         {% set lang = current_language is defined ? current_language : default_language %}
         <select id="select-language" title="Your Language" onchange="window.location.href=this.value">
@@ -817,7 +817,7 @@ Now we are passing the `current_language` variable to the block using the layout
 update:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -840,7 +840,7 @@ As an example, we can add the meta description block right after the
 main meta block.
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -860,7 +860,7 @@ The same positioning can be achieved using the `move` action. As an
 example, we can move our language switcher before the header block:
 
 .. code-block:: yaml
-    :linenos:
+
 
         - '@move':
             id: lang_switch
@@ -875,7 +875,7 @@ the block last, use the `prepand: false` with the `siblingId: ~`.
 Here is an example of this (with different cases of ordering):
 
 .. code-block:: yaml
-    :linenos:
+
 
         - '@addTree':
             items:
@@ -946,7 +946,7 @@ Here is an example of this (with different cases of ordering):
 The following is the result (tree):
 
 .. code-block:: yaml
-    :linenos:
+
 
         content:
             content_block_first_1: ~
@@ -967,7 +967,7 @@ First, create a `LinkExtension` class and place it in the
 `Acme/Bundle/LayoutBundle/Layout/Block/Extension` dir.
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\LayoutBundle\Layout\Block\Extension;
 
@@ -1016,7 +1016,7 @@ First, create a `LinkExtension` class and place it in the
 We then register it in the container using the `layout.block_type_extension` tag:
 
 .. code-block:: yaml
-    :linenos:
+
 
         acme_layout.block_type_extension.link:
             class: Acme\Bundle\LayoutBundle\Layout\Block\Extension\LinkExtension
@@ -1029,7 +1029,7 @@ Now we can customize the twig template for the link block by adding the
 following lines in the block theme file:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block link_widget -%}
         <a{{ block('block_attributes') }} href="{{ path is defined ? path : path(route_name, route_parameters) }}">
@@ -1048,7 +1048,7 @@ Now we can add a logo image into our header block before the navigation
 block:
 
 .. code-block:: yaml
-    :linenos:
+
 
        - '@add':
            id : logo
@@ -1068,7 +1068,7 @@ block:
 This will output the following html:
 
 .. code-block:: html
-    :linenos:
+
 
     <a class="logo" href="/"><img src="logo.png" class="large" alt="Madison Island"></a>
 
@@ -1082,7 +1082,7 @@ code. Instead, we can make an extension for the `container` type and
 register a new block prefix for it depending on the `type` option:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\LayoutBundle\Layout\Block\Extension;
 
@@ -1134,7 +1134,7 @@ register a new block prefix for it depending on the `type` option:
 Add it to the DI container:
 
 .. code-block:: yaml
-    :linenos:
+
 
         acme_layout.block_type_extension.container:
             class: Acme\Bundle\LayoutBundle\Layout\Block\Extension\ContainerExtension
@@ -1144,7 +1144,7 @@ Add it to the DI container:
 Define a template for wrapping the container elements into the `<div>` tag:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block div_container_widget %}
         <div{{ block('block_attributes') }}>
@@ -1155,7 +1155,7 @@ Define a template for wrapping the container elements into the `<div>` tag:
 We can use it in the layout update file:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -1180,7 +1180,7 @@ both ordered and unordered lists.
 In the layout update file we do the following:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -1243,7 +1243,7 @@ For the list items with no children, we can add any other block type (`link` in 
 The rendered HTML will look like this:
 
 .. code-block:: html
-    :linenos:
+
 
     <nav id="nav">
         <ol class="nav-primary">
@@ -1261,7 +1261,7 @@ Note that to customize the `nav_container` block to be rendered in the
 `<nav>` tag, we need to add a template in the block theme file:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _nav_container_widget %}
         <nav id="nav">
@@ -1274,7 +1274,7 @@ symbol. We can customize rendering of the list by adding the following
 template to the block theme:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _breadcrumbs_widget -%}
         <div class="breadcrumbs">
@@ -1296,7 +1296,7 @@ We can now place the block with the `breadcrumbs` ID in the layout
 update and add some children elements into it:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -1325,7 +1325,7 @@ update and add some children elements into it:
 This should render into the following HTML:
 
 .. code-block:: html
-    :linenos:
+
 
     <div class="breadcrumbs">
         <ul>
@@ -1349,7 +1349,7 @@ For this, we are using abstract class
 |AbstractFormProvider|.
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\SearchBundle\Layout\DataProvider;
 
@@ -1375,7 +1375,7 @@ For this, we are using abstract class
 We are now registering the layout data provider in the DI container:
 
 .. code-block:: yaml
-    :linenos:
+
 
         acme_search.layout.data_provider.search_form:
             class: 'Acme\Bundle\SearchBundle\Layout\DataProvider\SearchFormProvider'
@@ -1388,7 +1388,7 @@ We are now registering the layout data provider in the DI container:
 Now we can add the search form into the layout.
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -1438,7 +1438,7 @@ block type `form` which will create three child blocks:
 Now we are going to define the search autocomplete block in the block theme file:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _search_autocomplete_widget -%}
         <div id="search_autocomplete" class="search-autocomplete"></div>
@@ -1451,7 +1451,7 @@ Now we are going to define the search autocomplete block in the block theme file
 You should get the result similar to the following code:
 
 .. code-block:: html
-    :linenos:
+
 
     <div id="header-search">
         <form id="search_mini_form" action="/catalogsearch/result/" method="get">
@@ -1485,7 +1485,7 @@ to the shopping cart.
 First, we need to create a new form type and register it in the container:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\ProductBundle\Form\Type;
 
@@ -1534,7 +1534,7 @@ First, we need to create a new form type and register it in the container:
 We are now registering the form in the container using the newly created form type:
 
 .. code-block:: yaml
-    :linenos:
+
 
         acme_product.form.type.product:
             class: Acme\Bundle\ProductBundle\Form\Type\ProductType
@@ -1552,7 +1552,7 @@ Next, we are creating the layout data provider to get the form using the abstrac
 |AbstractFormProvider|.
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\ProductBundle\Layout\DataProvider;
 
@@ -1590,7 +1590,7 @@ Next, we are creating the layout data provider to get the form using the abstrac
 We are now registering the layout data provider in the DI container:
 
 .. code-block:: yaml
-    :linenos:
+
 
         acme_product.layout.data_provider.product_form:
             class: Acme\Bundle\ProductBundle\Layout\DataProvider\ProductFormProvider
@@ -1603,7 +1603,7 @@ We are now registering the layout data provider in the DI container:
 Next, we are render this form by adding it to the layout update file:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -1658,7 +1658,7 @@ Next, we are render this form by adding it to the layout update file:
 This will output HTML similar to the code below:
 
 .. code-block:: html
-    :linenos:
+
 
     <div class="product-view">
         <div class="product-essential">
@@ -1716,7 +1716,7 @@ The examples are below.
 **A simple block type**:
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         acme_demo.block_type.datetime:
@@ -1737,7 +1737,7 @@ defining the option.
 **A container block type**:
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         acme_demo.block_type.sidebar:
@@ -1750,7 +1750,7 @@ defining the option.
 The block type inherited from the "text" type:
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         acme_demo.block_type.title:
@@ -1766,7 +1766,7 @@ You can also create a block type extension via DI configuration. This
 configuration allows to set up additional options for the block types.
 
 .. code-block:: yaml
-    :linenos:
+
 
     services:
         custom_acme_demo.block_type.extension.sidebar:
@@ -1792,7 +1792,7 @@ First, we are going to create the block type file itself and place it in the
 `Acme/Bundle/LayoutBundle/Layout/Block/Type` directory:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\LayoutBundle\Layout\Block\Type;
 
@@ -1841,7 +1841,7 @@ First, we are going to create the block type file itself and place it in the
 Next, we are registering it in the DI container using the `layout.block_type` tag:
 
 .. code-block:: yaml
-    :linenos:
+
 
         acme_layout.block_type.image:
             class: Acme\Bundle\LayoutBundle\Layout\Block\Type\ImageType
@@ -1852,7 +1852,7 @@ We are then defining the default template for the block type in
 `Resources/views/layouts/first_theme/default.html.twig`:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block image_widget -%}
         <img src={{ path }}{% if alt is defined %} alt="{{ alt }}"{% endif %}{{ block('block_attributes') }} />
@@ -1861,7 +1861,7 @@ We are then defining the default template for the block type in
 We can now add the product image box to our example page:
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -1912,7 +1912,7 @@ We can now add the product image box to our example page:
 And add some block definitions to the block theme file:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block _product_image_container_widget %}
         <div class="product-image product-image-zoom">
@@ -1932,7 +1932,7 @@ And add some block definitions to the block theme file:
 The resulting HTML will look as follows:
 
 .. code-block:: html
-    :linenos:
+
 
     <div class="product-img-box">
         <div class="product-image product-image-zoom">
@@ -1956,7 +1956,7 @@ day needs. Now we can add the rest of the blocks to the layout to finish
 the sample product view page.
 
 .. code-block:: yaml
-    :linenos:
+
 
     layout:
         actions:
@@ -2180,7 +2180,7 @@ the sample product view page.
 The block theme will include the following blocks:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% block span_container_widget %}
         <span {{ block('block_attributes') }}>
@@ -2253,7 +2253,7 @@ The block theme will include the following blocks:
 As the result, we should get the following HTML for the main content:
 
 .. code-block:: html
-    :linenos:
+
 
     <div class="product-view">
         <div class="product-essential">
@@ -2343,7 +2343,7 @@ As the result, we should get the following HTML for the main content:
 The footer will take the following form:
 
 .. code-block:: html
-    :linenos:
+
 
     <div class="footer-container">
         <div class="footer">

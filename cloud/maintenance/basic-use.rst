@@ -20,7 +20,7 @@ Any time the `orocloud-cli` command runs with any argument or options, the maint
 As an example:
 
 .. code-block:: none
-    :linenos:
+
 
     WARNING!
     Another `orocloud-cli` instance is already running PID `2860`.
@@ -64,7 +64,7 @@ Upgrade With Downtime
 To upgrade the Oro application, run the `upgrade` command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli upgrade
 
@@ -86,7 +86,7 @@ Upgrade With Minimal Downtime (Rolling Upgrade)
 To perform Oro application upgrade with minimal downtime, run the `upgrade:rolling` command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli upgrade:rolling
 
@@ -106,7 +106,7 @@ Upgrade With Minimal Downtime (Source Upgrade)
 To perform Oro application upgrade with minimal downtime, run the `upgrade:source` command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli upgrade:source
 
@@ -134,7 +134,7 @@ Backup Everything
 To back up the application state, run the `backup:create` command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli  backup:create [--label=my-backup]
 
@@ -146,14 +146,14 @@ The List of Existing Backups
 To view the list of the backups, run the `backup:list` command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli  backup:list
 
 The command output is similar to the following:
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task backup:list
     +-----------------+-----------------------+
@@ -175,7 +175,7 @@ Restore Everything
 To restore the information from backup, run the `backup:restore` command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli  backup:restore {backup_date}
 
@@ -206,12 +206,12 @@ Create a Sanitized Backup
 To display the command description and help, run:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli backup:create:sanitized --help
 
 .. code-block:: none
-    :linenos:
+
 
     Description:
       Creates a sanitized backup of database data and media (for the `remote` backup type). Encryption is not applied (for the `local` backup type)
@@ -236,7 +236,7 @@ To display the command description and help, run:
 * **option "--environment"** - Allows to specify the destination environment for backup, and is applicable only for the `remote` backup types. For the `local` backup type, this option is ignored. If no environment is linked,  the appropriate message appears, for example:
 
 .. code-block:: none
-    :linenos:
+
 
     Aborting!
     Cannot proceed, as there is no linked environments yet.
@@ -253,14 +253,14 @@ If only one environment is linked, it will be used by default, so the option can
 To create the `local` backup, use the command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli backup:create:sanitized
 
 The command output is similar to the following:
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task backup:create:sanitized
     [localhost] Done, sanitized backup saved to: '/mnt/ocom/backup/20200101102000-sanitized-db.sql.gz'
@@ -271,19 +271,19 @@ The resulting backup is not encrypted and is located next to the ordinary encryp
 Once you have created the sanitized backup, you can determine its location with the `backup:list:sanitized` command and download it using:
 
 .. code-block:: none
-    :linenos:
+
 
     scp oro_cloud_username@oro_cloud_hostname:/path/to/the/backup/file target_username@target_hostname:/path/to/the/target/backup/file
 
 To create the `remote` backup, use the command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli backup:create:sanitized --backup-type remote
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task backup:create:sanitized
     Please select an environment to copy the data dump:
@@ -301,14 +301,14 @@ The List of Existing Sanitized Backups
 To review the list of available sanitized backups, their creation timestamps and the location they reside in, run:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli backup:list:sanitized
 
 The command output is similar to the following:
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task backup:list
     +-----------------+-----------------------------------------------------+
@@ -326,7 +326,7 @@ The command output is similar to the following:
 If the environment contains the `remote` backup types, the output is similar to the following:
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task backup:list:sanitized
     +-----------------+-----------------------------------------------------+---------------------+-------+
@@ -354,12 +354,12 @@ Restore Sanitized Backup
 To display the command description and help, run the following:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli backup:restore:sanitized --help
 
 .. code-block:: none
-    :linenos:
+
 
     Description:
       Restores the application from the sanitized backup.
@@ -387,7 +387,7 @@ To display the command description and help, run the following:
 To restore the information from the sanitized backup, run the `backup:restore:sanitized` command:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli  backup:restore:sanitized {backup_date}
 
@@ -398,7 +398,7 @@ To restore the information from the sanitized backup, run the `backup:restore:sa
 The command output is similar to the following:
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task notification:start
     ➤ Executing task notification:configure
@@ -444,21 +444,21 @@ Application Commands
 Run application commands via `app:console`, for example:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli app:console oro:user:list
 
 To pass a command that contains arguments or options, wrap the command in quotes.
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli app:console "oro:message-queue:consume --memory-limit=512 --time-limit='+30 seconds'"
 
 If a command contains quotes and is wrapped in the same quotes type, the inner quotes must be escaped with  ``\``.
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli app:console "oro:message-queue:consume --memory-limit=512 --time-limit=\"+30 seconds\""
 
@@ -466,7 +466,7 @@ If a command contains quotes and is wrapped in the same quotes type, the inner q
 By default, the `app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g., to monitor command execution in real-time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli app:console "oro:message-queue:consume --memory-limit=512" -vvv
 
@@ -484,7 +484,7 @@ Sometimes you may require to clear the application cache (for example, after app
 * Starts `Consumer` and `Cron`.
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli cache:rebuild [--force] [--skip-session-flush]
 
@@ -519,13 +519,13 @@ Usage examples:
 To display the command description and help, run the following:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli media:upload --help
 
 
 .. code-block:: none
-    :linenos:
+
 
     Description:
       Uploads media content from the given source to a selected destination [ public | products ].
@@ -556,12 +556,12 @@ from the `/tmp/media` directory into the destination directory, which will be as
 Also, if some files cannot be transferred due to particular restrictions, the appropriate notification is displayed.
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli media:upload /tmp/media
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task media:upload
     Please select the media destination location:
@@ -589,12 +589,12 @@ Also, if some files cannot be transferred due to particular restrictions, the ap
 The following command transfers media files from the `/tmp/media` directory into the destination directory which will be asked. The command is executed in the ``FORCED`` mode.
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli media:upload /tmp/media --force
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task media:upload
     Please select the media destination location:
@@ -611,7 +611,7 @@ The following command transfers media files from the `/tmp/media` directory into
 If source files cannot be removed, the appropriate notification is displayed. For example:
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task media:upload
     Please select the media destination location:
@@ -638,12 +638,12 @@ If source files cannot be removed, the appropriate notification is displayed. Fo
 The following command transfers media files from the `/tmp/media` directory into the destination directory which is provided as an argument. The command is executed in the ``FORCED`` mode.
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli media:upload /tmp/media public --force
 
 .. code-block:: none
-    :linenos:
+
 
     ➤ Executing task media:upload
     Source directory scan has started. The process may take a while, please be patient...
@@ -666,7 +666,7 @@ RabbitMq List
 To view the messages list of the RabbitMQ, use the `rabbitmq:queue:list` command.
 
 .. code-block:: none
-    :linenos:
+
 
     rabbitmq:queue:list [options] [--] [<vhost> [<queue>]]
 
@@ -676,12 +676,12 @@ To view the messages list of the RabbitMQ, use the `rabbitmq:queue:list` command
 To get the list of available ``vhost`` values, please execute `rabbitmq:queue:list` without arguments, for example:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli rabbitmq:queue:list
 
 .. code-block:: none
-    :linenos:
+
 
     The argument 'vhost' is missing. Please provide one.
 
@@ -696,12 +696,12 @@ To get the list of available ``vhost`` values, please execute `rabbitmq:queue:li
 To get the list of available ``queue`` values, please execute `rabbitmq:queue:list` with the ``vhost`` argument only, for example:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli rabbitmq:queue:list oro
 
 .. code-block:: none
-    :linenos:
+
 
     The argument 'queue' is missing. Please provide one.
     +---------------+---------+
@@ -713,12 +713,12 @@ To get the list of available ``queue`` values, please execute `rabbitmq:queue:li
 To get the list of messages, please execute `rabbitmq:queue:list` with the ``vhost`` and ``queue`` arguments, for example:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli rabbitmq:queue:list oro oro.default
 
 .. code-block:: none
-    :linenos:
+
 
     +------------------------+---------+----------------------------------------------------+-------------+
     | routing key            | message | payload                                            | redelivered |
@@ -735,7 +735,7 @@ RabbitMq Purge
 To purge the messages from the RabbitMQ, use the `rabbitmq:queue:purge` command.
 
 .. code-block:: none
-    :linenos:
+
 
     rabbitmq:queue:purge [options] [--] [<vhost> [<queue>]]
 
@@ -750,7 +750,7 @@ RabbitMq Reroute
 To reroute the messages from RabbitMQ queue to exchange, use the `rabbitmq:reroute:queue` command.
 
 .. code-block:: none
-    :linenos:
+
 
     rabbitmq:reroute:queue [options] [--] [<queue> [<exchange>]]
 
@@ -771,7 +771,7 @@ Check Consumers Status
 To check consumers status, use the `service:status:consumer` command.
 
 .. code-block:: none
-    :linenos:
+
 
     service:status:consumer [options] [--] [<host>]
 
