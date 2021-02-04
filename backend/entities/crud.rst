@@ -22,7 +22,7 @@ First, you need to create a form type that makes it possible to let the user ent
 needed to describe a task:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Form/TaskType.php
     namespace AppBundle\Form;
@@ -63,7 +63,7 @@ new task should be created, and one that is able to fetch an existing task to le
 its data:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Controller/TaskController.php
     namespace AppBundle\Controller;
@@ -112,7 +112,7 @@ Then, make sure that the controller is loaded in your routing configuration so t
 which controller needs to be called for particular routes:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/routing.yml
     app_task:
@@ -130,7 +130,7 @@ that you can use. This way your own forms will provide the same look and feel as
 with OroPlatform:
 
 .. code-block:: none
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
 
@@ -223,7 +223,7 @@ pre-defined ``navButtons`` block which you can use to add a button that links to
 action*:
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {# src/AppBundle/Resources/views/Task/index.html.twig #}
     {% extends 'OroUIBundle:actions:index.html.twig' %}
@@ -247,7 +247,7 @@ the update action is built and then add this URL to the list of available action
 configuration:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -280,7 +280,7 @@ You can delete a task either through the ``DELETE`` operation available for all 
 You can delete an entity through the |DELETE operation| which is enabled by default for all entities. To run the operation, you need to ensure that your entity has the ``routeName`` option of the entity configuration which will be used as a route name to redirect a user after the ``DELETE`` operation (as in the example below).
 
 .. code-block:: php
-    :linenos:
+
 
     @Config(
          routeName="oro_task_index",
@@ -295,7 +295,7 @@ See the sample configuration of the default ``DELETE`` operation in the |Actions
 If the default configuration is not valid for your particular case, create your own operation that would inherit from the default one following the example:
 
 .. code-block:: php
-    :linenos:
+
 
     DELETE:
         exclude_entities:

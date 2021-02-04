@@ -4,7 +4,7 @@ Troubleshooting
 The following exception
 
 .. code-block:: none
-    :linenos:
+
 
     [PhpAmqpLib\Exception\AMQPRuntimeException]
     Broken pipe or closed connection

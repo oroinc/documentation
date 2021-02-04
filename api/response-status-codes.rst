@@ -16,14 +16,14 @@ In case of a successful request, a response status code will be one of the follo
 *Request*
 
    .. code-block:: http
-       :linenos:
+
 
        GET /api/users/1 HTTP/1.1
 
 *Response*
 
    .. code-block:: http
-       :linenos:
+
 
        HTTP/1.1 200 OK
 
@@ -50,14 +50,14 @@ In case of an error, a response status code indicates the type of an error that 
 *Request*
 
    .. code-block:: http
-       :linenos:
+
 
        GET /api/users/999 HTTP/1.1
 
 **Response**
 
    .. code-block:: http
-       :linenos:
+
 
        HTTP/1.1 404 Not Found
 

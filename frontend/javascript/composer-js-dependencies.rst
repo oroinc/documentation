@@ -44,7 +44,7 @@ During the `composer install` command composer runs the ``Oro\Bundle\InstallerBu
 An example of `composer.json` containing NPM dependencies in the `extra.npm` section:
 
 .. code-block:: json
-   :linenos:
+
 
 	{
 		"name": "oro/calendar-bundle",

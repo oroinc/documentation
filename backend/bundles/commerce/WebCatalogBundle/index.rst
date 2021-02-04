@@ -32,7 +32,7 @@ In our example it is relation between the ContentVariant and BlogPost entities.
 This migration should implement `ExtendExtensionAwareInterface`.
 
 .. code-block:: php
-   :linenos:
+
 
     class OroWebCatalogBundle implements Migration, ExtendExtensionAwareInterface
     {
@@ -84,7 +84,7 @@ Add form type for your entity content variant.
 This form type is used on the Create Content Node page to add and edit you content variant.
 
 .. code-block:: php
-   :linenos:
+
 
     use Symfony\Component\Form\AbstractType;
 
@@ -101,7 +101,7 @@ The `getRouteData` method should return the route data to render your content va
 In our case it can be `new RouteData('frontend_blog_post_view', ['id' => $post->getId()]);`
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Component\WebCatalog\ContentVariantTypeInterface;
 

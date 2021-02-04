@@ -16,7 +16,7 @@ PHP-FPM (FastCGI Process Manager) is an alternative PHP FastCGI implementation a
 The recommended configuration of the PHP-FPM is provided below.
 
 .. code-block:: ini
-    :linenos:
+
 
       [www]
       listen = 127.0.0.1:9000
@@ -44,7 +44,7 @@ Use an OpCache bytecode engine to cache bytecode representation of the PHP code 
 Please install Opcache php-extension and configure it in the following way:
 
 .. code-block:: text
-    :linenos:
+
 
       opcache.enable=1
       opcache.enable_cli=0
@@ -302,7 +302,7 @@ You can make Symfony faster if you optimize your servers and applications:
 * Configure OPcache for maximum performance
 
   .. code-block:: php
-     :linenos:
+
 
      ; php.ini
      ; maximum memory that OPcache can use to store compiled PHP files
@@ -314,7 +314,7 @@ You can make Symfony faster if you optimize your servers and applications:
 * Do not check PHP files timestamps. By default, OPcache checks if cached files have changed their contents since they were cached. This check introduces some overhead that can be avoided as follows:
 
   .. code-block:: php
-     :linenos:
+
 
      ; php.ini
      opcache.validate_timestamps=0
@@ -324,7 +324,7 @@ You can make Symfony faster if you optimize your servers and applications:
 * Configure the PHP realpath cache
 
   .. code-block:: php
-     :linenos:
+
 
      ; php.ini
      ; maximum memory allocated to store the results
@@ -336,7 +336,7 @@ You can make Symfony faster if you optimize your servers and applications:
 * Optimize Composer autoloader
 
   .. code-block:: php
-     :linenos:
+
 
      composer dump-autoload --optimize --no-dev --classmap-authoritative
 
@@ -351,7 +351,7 @@ There are several things you can do to improve Doctrine performance:
 * Mark a many-to-one or one-to-one association as fetched temporarily to batch fetch these entities using a WHERE ..IN query.
 
   .. code-block:: php
-     :linenos:
+
 
      <?php
      $query = $em->createQuery("SELECT u FROM MyProject\User u");

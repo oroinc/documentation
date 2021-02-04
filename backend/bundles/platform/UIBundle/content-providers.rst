@@ -30,7 +30,7 @@ Example:
 Getting an array of all flash:
 
 .. code-block:: twig
-   :linenos:
+
 
    {% set contentProviderContent = oro_ui_content_provider_manager.getContent(['flashMessages'])|first %}
 

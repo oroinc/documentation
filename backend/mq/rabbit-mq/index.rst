@@ -64,14 +64,14 @@ download, install and enable it.
 To download it, use the following command:
 
 .. code-block:: none
-    :linenos:
+
 
     wget https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.8.0/rabbitmq_delayed_message_exchange-3.8.0.ez -P $RABBITMQ_HOME/plugins
 
 To enable it, use the following command:
 
 .. code-block:: none
-    :linenos:
+
 
     rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
 
@@ -103,7 +103,7 @@ To see the list of enabled plugins, use:
 You will see something like:
 
 .. code-block:: none
-    :linenos:
+
 
     [E*] rabbitmq_delayed_message_exchange 3.8.0
     [E*] rabbitmq_management               3.8.2

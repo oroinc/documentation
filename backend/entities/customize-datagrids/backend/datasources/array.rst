@@ -10,7 +10,7 @@ This datasource provides the ability to set data for the datagrid from thearray.
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -23,7 +23,7 @@ Configuration
 To configure datasource, create a datagrid event listener and subscribe to the ``oro_datagrid.datagrid.build.after.DATAGRID_NAME_HERE`` event.
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_bundle.event_listener.datagrid.my_custom_listener:
         class: Acme\Bundle\AcmeBundle\EventListener\Datagrid\MyCustomListener
@@ -32,7 +32,7 @@ To configure datasource, create a datagrid event listener and subscribe to the `
 
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -78,7 +78,7 @@ To configure datasource, create a datagrid event listener and subscribe to the `
 Predefined columns can be defined using the following configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:

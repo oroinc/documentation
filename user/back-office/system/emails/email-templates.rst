@@ -71,7 +71,7 @@ The full list of these functions is the following:
    **Invalid template**:
 
    .. code-block:: php
-       :linenos:
+
 
         <table>
             <thead>
@@ -97,7 +97,7 @@ The full list of these functions is the following:
    **Valid template**:
 
    .. code-block:: php
-       :linenos:
+
 
         <table>
             <thead>
@@ -126,7 +126,7 @@ date
 ~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     date()
 
@@ -138,7 +138,7 @@ oro_config_value
 ~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     oro_config_value(string $configSettingName)
 
@@ -152,7 +152,7 @@ calendar_date_range
 ~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     calendar_date_range(
         \DateTime $startDate = null,
@@ -184,7 +184,7 @@ calendar_date_range
 **Example:**
 
 .. code-block:: php
-    :linenos:
+
 
     calendar_date_range(entity.start, entity.end, entity.allDay, 'F j, Y', 1)
 
@@ -192,7 +192,7 @@ calendar_date_range_organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     calendar_date_range_organization(
         \DateTime $startDate = null,
@@ -213,7 +213,7 @@ get_event_recurrence_pattern
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     get_event_recurrence_pattern(Entity\CalendarEvent $event)
 
@@ -224,7 +224,7 @@ get_event_recurrence_pattern
 **Example:**
 
 .. code-block:: php
-    :linenos:
+
 
     <!--{% if get_event_recurrence_pattern(entity) %}-->
         <tr>
@@ -237,7 +237,7 @@ website_path
 ~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     website_path(string $route, array $routeParams, Website|null $website = null)
 
@@ -248,7 +248,7 @@ website_path
 **Example:**
 
 .. code-block:: php
-    :linenos:
+
 
     <p>Please follow this link to confirm your email address: <a href="{{ website_path('oro_customer_frontend_customer_user_confirmation', {'username': entity.username, 'token': token}, entity.website) }}">Confirm</a></p>
 
@@ -256,7 +256,7 @@ website_secure_path
 ~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     website_secure_path()
 
@@ -266,7 +266,7 @@ url
 ~~~
 
 .. code-block:: php
-    :linenos:
+
 
         url()
 
@@ -279,7 +279,7 @@ path
 ~~~~
 
 .. code-block:: php
-    :linenos:
+
 
         path()
 
@@ -291,7 +291,7 @@ get_payment_methods (OroCommerce Only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     get_payment_methods(Order $entity)
 
@@ -303,7 +303,7 @@ get_payment_methods (OroCommerce Only)
 **Example:**
 
 .. code-block:: twig
-    :linenos:
+
 
         {% set payment_methods = get_payment_methods(entity) %}
 
@@ -318,7 +318,7 @@ get_payment_methods (OroCommerce Only)
 **Alternative example:**
 
 .. code-block:: twig
-    :linenos:
+
 
     {% set payment_methods = get_payment_methods(entity) %}
     {% if  payment_methods|length == 1 %}
@@ -338,7 +338,7 @@ get_payment_status_label (OroCommerce only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     get_payment_status_label(Order $entity)
 
@@ -353,7 +353,7 @@ get_payment_status (OroCommerce only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     get_payment_status(Order $entity)
 
@@ -365,7 +365,7 @@ get_payment_status (OroCommerce only)
 **Example:**
 
 .. code-block:: twig
-    :linenos:
+
 
     <strong>Payment Status: </strong>{{ get_payment_status_label(get_payment_status(entity)) }}
 
@@ -373,7 +373,7 @@ oro_order_shipping_method_label (OroCommerce only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     oro_order_shipping_method_label(string $shippingMethod, string $shippingMethodType)
 
@@ -384,7 +384,7 @@ oro_order_shipping_method_label (OroCommerce only)
 **Example:**
 
 .. code-block:: twig
-    :linenos:
+
 
     {% set shipping_method = oro_order_shipping_method_label(entity.shippingMethod, entity.shippingMethodType) %}
     <strong>Shipping Method: </strong>{{ shipping_method }}<br/>
@@ -393,7 +393,7 @@ rfp_products (OroCommerce Only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     rfp_products(Oro\Bundle\RFPBundle\Entity\Request $entity)
 
@@ -402,7 +402,7 @@ rfp_products (OroCommerce Only)
 **Returns:**
 
 .. code-block:: php
-    :linenos:
+
 
     array: [
         345 => [ \\Product ID
@@ -429,7 +429,7 @@ rfp_products (OroCommerce Only)
 **Example:**
 
 .. code-block:: php
-    :linenos:
+
 
     {% set products = rfp_products(entity) %}
     {% if products|length %}
@@ -470,7 +470,7 @@ line_items_discounts (OroCommerce only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     line_items_discounts(Order $entity)
 
@@ -479,7 +479,7 @@ line_items_discounts (OroCommerce only)
 **Returns:** array
 
 .. code-block:: php
-    :linenos:
+
 
     array: [
         '123123' => [ // Line Item ID
@@ -495,7 +495,7 @@ order_line_items (OroCommerce only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-    :linenos:
+
 
     order_line_items(\Oro\Bundle\OrderBundle\Entity\Order $entity)
 
@@ -504,7 +504,7 @@ order_line_items (OroCommerce only)
 **Returns:**
 
 .. code-block:: php
-    :linenos:
+
 
     array: [
         'lineItems' => [
@@ -537,7 +537,7 @@ order_line_items (OroCommerce only)
 **Example:**
 
 .. code-block:: twig
-    :linenos:
+
 
     <table style="border: 1px solid black;margin-top: 10px">
         <thead>

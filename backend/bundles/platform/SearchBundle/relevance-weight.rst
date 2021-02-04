@@ -32,7 +32,7 @@ For example, to add a value to the Business Unit entity:
 The illustration for this example is below:
 
 .. code-block:: yaml
-   :linenos:
+
 
     search:
         Oro\Bundle\OrganizationBundle\Entity\BusinessUnit:
@@ -56,7 +56,7 @@ This approach requires creation of an event listener responsible for dynamic cal
 First, create an event listener class:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -86,7 +86,7 @@ First, create an event listener class:
 Then, register this event listener in the DI container:
 
 .. code-block:: yaml
-   :linenos:
+
 
     services:
         acme_test.event_listener.search.set_search_relevance_weight:

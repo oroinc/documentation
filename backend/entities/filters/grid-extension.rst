@@ -10,7 +10,7 @@ Definition of any filter requires option `data_name` that should be referenced t
 For example:
 
 .. code-block:: none
-   :linenos:
+
 
     SOME_DATAGRID:
         source:
@@ -44,7 +44,7 @@ String Filter
 ^^^^^^^^^^^^^
 
 .. code-block:: none
-   :linenos:
+
 
         filters:
             columns:
@@ -60,7 +60,7 @@ Choice Filter
 ^^^^^^^^^^^^^
 
 .. code-block:: none
-   :linenos:
+
 
         filters:
             columns:

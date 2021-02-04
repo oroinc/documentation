@@ -29,7 +29,7 @@ Create Extended Entities
 #. Create the *extend entity* class:
 
    .. code-block:: php
-       :linenos:
+
 
        // src/Acme/DemoBundle/Model/ExtendHotel.php
        namespace Acme\DemoBundle\Model;
@@ -57,7 +57,7 @@ Create Extended Entities
 #. Let the *entity class* extend the *extend entity* class:
 
    .. code-block:: php
-       :linenos:
+
 
        // src/Acme/DemoBundle/Entity/Hotel.php
        namespace Acme\DemoBundle\Entity;
@@ -102,7 +102,7 @@ Create Extended Entities
 #. Add new properties using Oro migrations:
 
    .. code-block:: php
-       :linenos:
+
 
        // src/Acme/DemoBundle/Migrations/Schema/v2_0;
        namespace Acme\DemoBundle\Migrations\Schema\v2_0;
@@ -166,7 +166,7 @@ Let us customize the Contact entity to store the date when a contact becomes a m
 To achieve this, add a new property ``partnerSince`` to store the date and time of when a contact joined your network. To add the property, create a migration:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Migrations/Schema/v1_0/AddPartnerSinceToContact.php
     namespace AppBundle\Migrations\Schema\v1_0;
@@ -193,7 +193,7 @@ To achieve this, add a new property ``partnerSince`` to store the date and time 
    Please note that the entity that you add a new property to must have the ``@Config`` annotation and should extend an empty Extend class:
 
    .. code-block:: php
-       :linenos:
+
 
        // src/AppBundle/Entity/Contact.php
        namespace AppBundle\Entity;
@@ -215,7 +215,7 @@ To achieve this, add a new property ``partnerSince`` to store the date and time 
 
 
    .. code-block:: php
-       :linenos:
+
 
        // src/AppBundle/Model/ExtendContact.php
        namespace AppBundle\Model;
@@ -246,7 +246,7 @@ To achieve this, add a new property ``partnerSince`` to store the date and time 
 The important part in this migration (which is different from common Doctrine migrations) is the ``oro_options`` key. It is passed through the ``options`` argument of the ``addColumn()`` method:
 
 .. code-block:: php
-   :linenos:
+
    :emphasize-lines: 3
 
    ...
@@ -296,7 +296,7 @@ common Doctrine relations. For example, an ``Email`` can either belong to a ``Co
 methods:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Entity/Email.php
     namespace Acme\DemoBundle\Entity;
@@ -376,7 +376,7 @@ above, the owning side has to be an extended entity. Please note that the real i
 the methods shown below will be generated in the cache:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Oro\Bundle\NoteBundle\Model;
 
@@ -405,7 +405,7 @@ the methods shown below will be generated in the cache:
 The actual ``Note`` entity then needs to extend the ``ExtendNote``:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Oro\Bundle\NoteBundle\Entity;
 
@@ -422,7 +422,7 @@ The bundle also defines some entity configuration properties which make it possi
 which entities notes can be added:
 
 .. code-block:: yaml
-    :linenos:
+
 
     entity_config:
         note:
@@ -455,7 +455,7 @@ migrations to make the association available through all stages of the entity ge
 #. Hook into the entity config dumper:
 
    .. code-block:: php
-       :linenos:
+
 
        namespace Oro\Bundle\NoteBundle\Tools;
 
@@ -484,7 +484,7 @@ migrations to make the association available through all stages of the entity ge
 #. Extend the entity generator:
 
    .. code-block:: php
-       :linenos:
+
 
        namespace Oro\Bundle\NoteBundle\Tools;
 
@@ -505,7 +505,7 @@ migrations to make the association available through all stages of the entity ge
 #. Extend the migration behavior to add the association to target entities:
 
    .. code-block:: php
-       :linenos:
+
 
        namespace Oro\Bundle\NoteBundle\Migration\Extension;
 
@@ -590,7 +590,7 @@ to assign activities (like calls, emails, tasks) to other entities. The associat
 ``Activity``. Therefore, the ``ExtendActivity`` class looks like this:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Oro\Bundle\ActivityBundle\Model;
 
@@ -667,7 +667,7 @@ To create a new entity that can be assigned in an ``Activity`` association, let 
 use the ``ExtendActivity`` trait:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Model/ExtendEmail.php
     namespace Acme\DemoBundle\Model;
@@ -693,7 +693,7 @@ use the ``ExtendActivity`` trait:
 
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Entity/Email.php
     namespace Acme\DemoBundle\Entity;
@@ -714,7 +714,7 @@ use the ``ExtendActivity`` trait:
 You then have to use the entity configuration
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
     entity_config:
@@ -748,7 +748,7 @@ migrations to make the association available through all stages of the entity ge
 #. Hook into the entity config dumper:
 
    .. code-block:: php
-       :linenos:
+
 
        namespace Oro\Bundle\ActivityBundle\Tools;
 
@@ -785,7 +785,7 @@ migrations to make the association available through all stages of the entity ge
 #. Extend the entity generator:
 
    .. code-block:: php
-       :linenos:
+
 
        namespace Oro\Bundle\ActivityBundle\Tools;
 
@@ -854,7 +854,7 @@ migrations to make the association available through all stages of the entity ge
 #. Extend the migration behavior to add the association to target entities:
 
    .. code-block:: php
-       :linenos:
+
 
        namespace Oro\Bundle\ActivityBundle\Migration\Extension;
 

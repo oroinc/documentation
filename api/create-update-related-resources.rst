@@ -8,7 +8,7 @@ Sometimes, it is required to create or update the related resources while creati
 **Request**
 
 .. code-block:: http
-    :linenos:
+
 
     POST /api/accounts HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -17,7 +17,7 @@ Sometimes, it is required to create or update the related resources while creati
 **Request Body**
 
 .. code-block:: json
-    :linenos:
+
 
     {"data": {
         "type": "accounts",
@@ -85,7 +85,7 @@ Sometimes, it is required to create or update the related resources while creati
 **Response**
 
 .. code-block:: json
-    :linenos:
+
 
     {"data": {
         "type": "accounts",
@@ -183,7 +183,7 @@ Also, it is possible to update several related resources via a single API reques
 **Request**
 
 .. code-block:: http
-    :linenos:
+
 
     PATCH /api/accounts/52 HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -192,7 +192,7 @@ Also, it is possible to update several related resources via a single API reques
 **Request Body**
 
 .. code-block:: json
-    :linenos:
+
 
     {"data": {
         "type": "accounts",
@@ -223,7 +223,7 @@ Also, it is possible to update several related resources via a single API reques
 **Response**
 
 .. code-block:: json
-    :linenos:
+
 
     {"data": {
         "type": "accounts",
@@ -262,7 +262,7 @@ in the request. You can specify the connection in both ways, from the primary re
 and vise versa. The following examples are equivalent:
 
 .. code-block:: json
-    :linenos:
+
 
     {"data": {
         "type": "accounts",
@@ -288,7 +288,7 @@ and vise versa. The following examples are equivalent:
     }
 
 .. code-block:: json
-    :linenos:
+
 
     {"data": {
         "type": "accounts",

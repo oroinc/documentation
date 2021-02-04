@@ -24,7 +24,7 @@ file called ``datagrids.yml`` in the ``Resources/config/oro`` directory of your 
 following example:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -165,7 +165,7 @@ The definition of a data grid consists of the following sections:
     user doesn't make a choice to the ``default`` option:
 
     .. code-block:: yaml
-        :linenos:
+
 
         default:
             period: { value: monthPeriod }
@@ -195,7 +195,7 @@ a configuration file named ``navigation.yml`` that is located in the ``Resources
 of your bundle:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
@@ -289,7 +289,7 @@ Usage Examples
 The query is retrieved using the following code:
 
 .. code-block:: php
-    :linenos:
+
 
     if ($segment->getType()->getName() === SegmentType::TYPE_DYNAMIC) {
         $query = $this->dynamicSegmentQueryBuilder->build($segment);
@@ -301,7 +301,7 @@ The query is retrieved using the following code:
 A `$query` variable contains instance of *\Doctrine\ORM\Query*. Add it to the statement of any doctrine query in the following way:
 
 .. code-block:: php
-    :linenos:
+
 
     /** @var EntityManger $em */
     $classMetadata = $em->getClassMetadata($segment->getEntity());

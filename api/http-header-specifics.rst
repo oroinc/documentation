@@ -9,7 +9,7 @@ an JSON:API request successfully, it is important to provide the correct **Accep
 and **Authentication** parameters, e.g.,:
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users HTTP/1.1
     Accept: application/vnd.api+json
@@ -43,7 +43,7 @@ Retrieve the total count of resource records.
 **Request header**
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users HTTP/1.1
     Accept: application/vnd.api+json
@@ -52,7 +52,7 @@ Retrieve the total count of resource records.
 **Response**
 
 .. code-block:: http
-    :linenos:
+
 
     HTTP/1.1 200 OK
     X-Include-Total-Count: 49
@@ -69,7 +69,7 @@ Retrieve the total number of deleted records of the resource
 **Request header**
 
 .. code-block:: http
-    :linenos:
+
 
     DELETE /api/users HTTP/1.1
     Accept: application/vnd.api+json
@@ -82,7 +82,7 @@ Request query string contains a filter that specifies conditions for deletion op
 **Request header**
 
 .. code-block:: http
-    :linenos:
+
 
     DELETE /api/users?filter[id]=21,22 HTTP/1.1
     Accept: application/vnd.api+json
@@ -90,7 +90,7 @@ Request query string contains a filter that specifies conditions for deletion op
 **Response**
 
 .. code-block:: http
-    :linenos:
+
 
     HTTP/1.1 204 No Content
     X-Include-Deleted-Count: 2

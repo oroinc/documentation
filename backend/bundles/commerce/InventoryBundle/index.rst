@@ -10,7 +10,7 @@ Configuration
 -------------
 
 .. code-block:: yaml
-   :linenos:
+
 
     product_inventory_options:
         children:
@@ -30,7 +30,7 @@ To check the currently configured fallback for product or category, use |OroBund
 Example:
 
 .. code-block:: php
-   :linenos:
+
 
     $lowInventoryThreshold = $this->entityFallbackResolver->getFallbackValue(
                 $product,
@@ -60,7 +60,7 @@ This method uses the logic of `LowInventoryProvider`_ . It adds information abou
 The following is an |example of using low_inventory| in the layout of the product grid:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block _product_datagrid_row__product_low_inventory_label_widget %}
         {% if (product.low_inventory) %}
@@ -81,7 +81,7 @@ onLineItemValidate
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-   :linenos:
+
 
     public function onLineItemValidate(LineItemValidateEvent $event)
 
@@ -101,7 +101,7 @@ isLowInventoryProduct
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-   :linenos:
+
 
     public function isLowInventoryProduct(Product $product, ProductUnit $productUnit = null)
 
@@ -111,7 +111,7 @@ isLowInventoryCollection
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-   :linenos:
+
 
     /**
       * Returns low inventory flags for product collection.
@@ -152,7 +152,7 @@ This extension depends on `LowInventoryProvider`_ and provides the oro_is_low_in
 The following is an example of using this function in twig templates:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% if (oro_is_low_inventory_product(mainProduct)) %}
             <div class="product-low-inventory">{{ "oro.inventory.low_inventory.label"|trans }}</div>
@@ -172,7 +172,7 @@ getLowInventoryMessage
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
-   :linenos:
+
 
     public function getLowInventoryMessage(LineItem $lineItem)
 

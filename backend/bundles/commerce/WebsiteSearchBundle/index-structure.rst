@@ -20,7 +20,7 @@ However, almost any complex structure may be converted to the plain data with mi
 Let's assume that price numeric value is defined for a combination of the price list, currency, and unit. We're going to use the following data:
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         1: {
@@ -40,7 +40,7 @@ Let's assume that price numeric value is defined for a combination of the price 
 Where the root nodes define the price lists with IDs `1`, `2` and `3`, the currencies price list supports are nested inside the price list node (`USD` and `EUR`), and, finally, the prices are provided for supported product units ( `item`, `box` and `container`). Basically, denormalized, the data might look like:
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         price_1_USD_item: 12.00,
@@ -60,7 +60,7 @@ Assuming that the price list and currency is fixed for the current session, this
 So, after the new fields are added, the sample data becomes the following:
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         price_1_USD_item: 12.00,
@@ -92,7 +92,7 @@ Now, you can sort the data using the `ORDER BY min_price_PRICE_LIST_ID_CURRENCY 
 Furthermore, to ensure that there is at least one product price in the specific currency (in any price list), you can add a special field (flag) to indicate that the price in this currency exists:
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         price_1_USD_item: 12.00,
@@ -146,7 +146,7 @@ Examples
 Following is the product entity mapping configuration for OroCommerce deployment with one website, one localization, and one currency:
 
 .. code-block:: yaml
-   :linenos:
+
 
     Oro\Bundle\ProductBundle\Entity\Product:
         alias: oro_product
@@ -169,7 +169,7 @@ As you can see, no placeholders are used and the search index contains the follo
 **oro_product**
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         1: {
@@ -210,7 +210,7 @@ Now let's look at the OroCommerce deployment with two websites, two localization
 Use placeholders `WEBSITE_ID`, `LOCALIZATION_ID` and `CURRENCY`, like in the mapping configuration of product entity below:
 
 .. code-block:: yaml
-   :linenos:
+
 
     Oro\Bundle\ProductBundle\Entity\Product:
         alias: oro_product_WEBSITE_ID
@@ -237,7 +237,7 @@ Based on this configuration, the data may the following:
 **oro_product_1**
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         1: {
@@ -265,7 +265,7 @@ Based on this configuration, the data may the following:
 **oro_product_2**
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         1: {

@@ -58,7 +58,7 @@ The **allowed options in the theme configuration** file is the following:
 **Example:**
 
 .. code-block:: yaml
-    :linenos:
+
 
     #DemoBundle/Resources/views/layouts/first_theme/theme.yml
     label:  First Theme

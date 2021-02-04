@@ -15,7 +15,7 @@ By using this API, you provide the ability to change the input widget to any oth
 **Example of usage:**
 
 .. code-block:: javascript
-   :linenos:
+
 
     //Create new input widget
 

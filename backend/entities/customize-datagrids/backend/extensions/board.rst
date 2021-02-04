@@ -12,7 +12,7 @@ To add board appearance on a grid, do the following:
 - Add the following lines into the datagrid configuration
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         {grid-uid}:
@@ -44,7 +44,7 @@ Datagrid Configuration Details
 - group_by (Required): Configuration array for column grouping property.
 
 .. code-block:: yaml
-   :linenos:
+
 
     group_by:
         property: status #required, enum property to be used for board columns
@@ -71,7 +71,7 @@ Datagrid Configuration Details
 - default_transition (Optional): Section to specify configuration for the transition, e.g. update property when cards are dragged and dropped from one column to another.
 
 .. code-block:: yaml
-   :linenos:
+
 
     default_transition:
         class: #class to be used for transition

@@ -6,7 +6,7 @@ programmatically. In OroPlatform, this can be done by creating classes that are 
 ``Migrations/Data/ORM`` subdirectory of your bundle and that implement the ``FixtureInterface``:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/AppBundle/Migrations/Data/ORM/LoadTasks.php
     namespace AppBundle\Migrations\Data\ORM;

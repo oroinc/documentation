@@ -29,7 +29,7 @@ This section summarizes the limitations and agreements that are important for sh
   **Do not**:
 
   .. code-block:: gherkin
-     :linenos:
+
 
       I fill in "oro_workflow_definition_form[label]" with "User Workflow Test"
       I fill in "oro_workflow_definition_form[related_entity]" with "User"
@@ -37,14 +37,14 @@ This section summarizes the limitations and agreements that are important for sh
   **Do**:
 
   .. code-block:: gherkin
-     :linenos:
+
 
       And I fill "Workflow Edit Form" with:
         | Name                  | User Workflow Test |
         | Related Entity        | User               |
 
   .. code-block:: yaml
-     :linenos:
+
 
       Workflow Edit Form:
         selector: 'form[name="oro_workflow_definition_form"]'
@@ -59,14 +59,14 @@ This section summarizes the limitations and agreements that are important for sh
   **Do**:
 
   .. code-block:: gherkin
-     :linenos:
+
 
       And I open User Index page
 
   **Don't**:
 
   .. code-block:: gherkin
-     :linenos:
+
 
       And I go to "/users"
 
@@ -91,7 +91,7 @@ This section summarizes the limitations and agreements that are important for sh
   You can still refer to it using the camelCase style with spaces in the behat scenarios. For example, an element named ``OroProductForm`` may be mentioned in the step of the scenario as "Oro Product From":
 
   .. code-block:: gherkin
-     :linenos:
+
 
      I fill "Oro Product From" with:
 
@@ -115,7 +115,7 @@ The base configuration is located in *behat.yml.dist*. Every application has its
 Create your *behat.yml* (it is ignored by git automatically and is never committed to the remote repository), import base configuration and change it to fit your environment:
 
 .. code-block:: gherkin
-   :linenos:
+
 
     imports:
       - ./behat.yml.dist
@@ -137,7 +137,7 @@ If you installed dependencies with ``--no-dev`` parameter earlier, remove ``comp
 Install dev dependencies using the following command:
 
 .. code-block:: bash
-   :linenos:
+
 
    composer install
 
@@ -149,7 +149,7 @@ In the Oro application, the initial state is the one when the application enters
 Install the application without demo data in production mode using the following command:
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/console oro:install  --drop-database --user-name=admin --user-email=admin@example.com  \
       --application-url=http://dev-crm.local --user-firstname=John --user-lastname=Doe \
@@ -163,7 +163,7 @@ To execute scenarios that use Oro application features run WebKit browser (using
 To install ChromeDriver, run the following commands:
 
 .. code-block:: bash
-   :linenos:
+
 
     CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
     mkdir -p "$HOME/chrome" || true
@@ -184,14 +184,14 @@ Prerequisites
 Run ChromeDriver:
 
 .. code-block:: bash
-   :linenos:
+
 
    chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1
 
 To run ChromeDriver in background, append ampersand symbol (&) to the end of line, like in the following examples:
 
 .. code-block:: bash
-   :linenos:
+
 
    chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1 &
 
@@ -208,28 +208,28 @@ You may use one of the following commands.
 Run feature test scenario:
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/behat vendor/oro/platform/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature -vvv
 
 Preview all available feature steps:
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/behat -dl -s OroUserBundle
 
 View steps with full description and examples:
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/behat -di -s OroUserBundle
 
 Every bundle has its dedicated test suite that can be run separately:
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/behat -s OroUserBundle
 
@@ -244,7 +244,7 @@ Behat is a Symfony console application with its own container and services. A Be
 Application container may be used by injected Kernel in your Context after you implement ``KernelAwareContext`` and use ``KernelDictionary`` trait.
 
 .. code-block:: php
-   :linenos:
+
 
     use Behat\Symfony2Extension\Context\KernelAwareContext;
     use Behat\Symfony2Extension\Context\KernelDictionary;
@@ -263,7 +263,7 @@ Application container may be used by injected Kernel in your Context after you i
 Moreover, you can inject application services in behat Context:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_behat_extension:
       suites:
@@ -287,7 +287,7 @@ The complete list of common context is configured in the behat configuration fil
 You can manually configure test suite for a bundle in the application behat configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     default: &default
       suites:
@@ -304,7 +304,7 @@ You can manually configure test suite for a bundle in the application behat conf
 or in a bundle behat configuration ``{BundleName}/Tests/Behat/behat.yml``:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_behat_extension:
       suites:
@@ -344,7 +344,7 @@ It has many public methods; some of them are applicable only to certain elements
 All elements must be described in ``{BundleName}/Tests/Behat/behat.yml`` the following way:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_behat_extension:
       elements:
@@ -362,7 +362,7 @@ where:
    The element can be created in context by ``OroElementFactory`` by its name:
 
    .. code-block:: php
-      :linenos:
+
 
       $this->elementFactory->createElement('Login')
 
@@ -371,7 +371,7 @@ where:
    XPath selector is also supported and may be provided with the following configuration:
 
    .. code-block:: yaml
-      :linenos:
+
 
        selector:
            type: xpath
@@ -389,7 +389,7 @@ Mapping Form Fields
 By default, tests use the |named field selector| to map form fields. Name field selector searched for the field by its id, name, label, or placeholder. You are free to use any selector for form fields mapping or wrap an element into the particular behat element.
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_behat_extension:
       elements:
@@ -408,7 +408,7 @@ By default, tests use the |named field selector| to map form fields. Name field 
 Now you should implement the element's ``setValue`` method:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
     namespace Oro\Bundle\PaymentBundle\Tests\Behat\Element;
@@ -435,7 +435,7 @@ Now you should implement the element's ``setValue`` method:
 Now you can use it in a standard step:
 
 .. code-block:: gherkin
-   :linenos:
+
 
     Feature: Payment Rules CRUD
       Scenario: Creating Payment Rule
@@ -451,7 +451,7 @@ Embedded Form Mappings
 Sometimes, a form appears in the iframe. Behat can switch to the iframe by its id. To fill in the form in the iframe correctly, specify the iframe id in the form options:
 
 .. code-block:: yaml
-   :linenos:
+
 
       oro_behat_extension:
         elements:
@@ -474,7 +474,7 @@ Page element encapsulates the entire web page with its URL and path to the page.
 Typical Page configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_behat_extension:
       pages:
@@ -485,7 +485,7 @@ Typical Page configuration:
 Sample Page class:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -510,7 +510,7 @@ Sample Page class:
 Now you can use several meaningful steps:
 
 .. code-block:: gherkin
-   :linenos:
+
 
     And I open User Profile View page
     And I should be on User Profile View page
@@ -537,7 +537,7 @@ You can create any number of entities in the feature tests. The ``FixtureContext
 You use both faker and :ref:`entity references <behat-entity-references>` in inline fixtures.
 
 .. code-block:: bash
-   :linenos:
+
 
     Given the following contacts:
       | First Name | Last Name | Email     |
@@ -565,7 +565,7 @@ Sometimes you need many different entities with complex relationships. In such c
 Fixtures should be located in the ``{BundleName}/Tests/Behat/Features/Fixtures`` directory. To load a fixture before the feature tests execution, add a tag (annotation) that is constructed using the following convention ``@fixture-BundleName:fixture_file_name.yml``, e.g.:
 
 .. code-block:: gherkin
-   :linenos:
+
 
     @fixture-OroCRMBundle:mass_action.yml
     Feature: Mass Delete records
@@ -575,7 +575,7 @@ It is also possible to load fixtures for any other bundles available for applica
 For example:
 
 .. code-block:: gherkin
-   :linenos:
+
 
     @fixture-OroUserBundle:user.yml
     @fixture-OroOrganizationBundle:BusinessUnit.yml
@@ -584,7 +584,7 @@ For example:
 Additionally, Alice allows you to |include files| via extension, so you can import files from other bundles:
 
 .. code-block:: bash
-   :linenos:
+
 
     include:
         - '@OroCustomerBundle/Tests/Behat/Features/Fixtures/CustomerUserAmandaRCole.yml'
@@ -619,7 +619,7 @@ Behat has a native possibility to invoke formatters without executing the tests 
 You can try:
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/behat --dry-run
 
@@ -655,7 +655,7 @@ Cucumber does not differentiate between the keywords, but choosing the right one
 .. hint:: Take a look at the login.feature in OroUserBundle: |UserBundle/Tests/Behat/Features/login.feature|.
 
 .. code-block:: gherkin
-   :linenos:
+
 
     Feature: User login
       In order to login in application
@@ -705,7 +705,7 @@ To boost the database isolator, you can mount the database directory to RAM. In 
 Create a tmpfs directory:
 
 .. code-block:: bash
-   :linenos:
+
 
    sudo mkdir /var/tmpfs
    sudo mount -t tmpfs -o size=4G tmpfs /var/tmpfs
@@ -713,21 +713,21 @@ Create a tmpfs directory:
 Edit ``/etc/mysql/mysql.conf.d/mysqld.cnf``
 
 .. code-block:: ini
-   :linenos:
+
 
    datadir = /var/tmpfs/mysql
 
 Add new storage to ``/etc/fstab``:
 
 .. code-block:: ini
-   :linenos:
+
 
    tmpfs  /var/tmpfs  tmpfs  nodev,nosuid,noexec,noatime,size=4G  0 0
 
 Copy MySQL to tmpfs:
 
 .. code-block:: bash
-   :linenos:
+
 
    sudo service mysql stop
    sudo cp -Rfp /var/lib/mysql /var/tmpfs
@@ -735,21 +735,21 @@ Copy MySQL to tmpfs:
 We need to tell AppArmor to let MySQL write to the new directory by creating an alias between the default directory and the new location.
 
 .. code-block:: bash
-   :linenos:
+
 
    echo "alias /var/lib/mysql/ -> /var/tmpfs/mysql," | sudo tee -a /etc/apparmor.d/tunables/alias
 
 For the changes to take effect, restart AppArmor:
 
 .. code-block:: bash
-   :linenos:
+
 
    sudo systemctl restart apparmor
 
 Now you can start MySQL again:
 
 .. code-block:: bash
-   :linenos:
+
 
    sudo service mysql start
 
@@ -763,7 +763,7 @@ To prepare for auto-recovery using a startup script:
 1. Create a mysql_copy_tmpfs.sh in the bin directory (e.g. /usr/local/bin):
 
    .. code-block:: bash
-      :linenos:
+
 
       #!/bin/bash
       cp -Rfp /var/lib/mysql /var/tmpfs
@@ -771,7 +771,7 @@ To prepare for auto-recovery using a startup script:
 2. Create a unit configuration file */etc/systemd/system/mysql_copy_tmpfs.service* that will schedule priority of the service execution before the MySQL starts:
 
    .. code-block:: gherkin
-      :linenos:
+
 
       [Unit]
       Description=Copy mysql to tmpfs
@@ -789,7 +789,7 @@ To prepare for auto-recovery using a startup script:
 3. Once you have created the files, enable the configured service:
 
    .. code-block:: bash
-      :linenos:
+
 
       systemctl enable mysql_copy_tmpfs.service
 
@@ -806,7 +806,7 @@ Remove (unique) suffix in entity property in entity fixture, like in the followi
 **Incorrect fixture**:
 
 .. code-block:: yaml
-   :linenos:
+
 
    Oro\Bundle\UserBundle\Entity\User:
        charlie:
@@ -817,7 +817,7 @@ Remove (unique) suffix in entity property in entity fixture, like in the followi
 **Corrected fixture**:
 
 .. code-block:: yaml
-   :linenos:
+
 
    Oro\Bundle\UserBundle\Entity\User:
        charlie:
@@ -832,7 +832,7 @@ Alice remembers all the values for the given entity property and tries to genera
 This option still may be used if combined with the autogenerated fake value, like in the following example:
 
 .. code-block:: yaml
-   :linenos:
+
 
    Oro\Bundle\UserBundle\Entity\User:
        charlie:
@@ -859,7 +859,7 @@ However, sometimes it is impossible to do right away (because of the incomplete 
 A quick way to do so is to dry-run your feature tests. In the console, run the following command:
 
 .. code-block:: bash
-   :linenos:
+
 
    bin/behat path/to/your.feature --dry-run --append-snippets --snippets-type=regex
 
@@ -905,7 +905,7 @@ If, for any reason, you do not use PhpStorm or behat plugin, you can still find 
 Type the following command in your console:
 
 .. code-block:: bash
-   :linenos:
+
 
    bin/behat -dl -s AcmeDemoBundle | grep "flash message"
 
@@ -913,7 +913,7 @@ Type the following command in your console:
    :alt: Grep flash messages in the console
 
 .. code-block:: bash
-   :linenos:
+
 
    bin/behat -dl -s AcmeDemoBundle | grep "grid"
 

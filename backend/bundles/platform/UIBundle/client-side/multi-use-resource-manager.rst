@@ -8,7 +8,7 @@ Allows to create/remove resource that could be used by multiple holders.
 Use case:
 
 .. code-block:: javascript
-   :linenos:
+
 
     var backdropManager = new MultiUseResourceManager({
         listen: {

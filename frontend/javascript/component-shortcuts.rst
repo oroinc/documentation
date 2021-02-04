@@ -13,7 +13,7 @@ Empty Value
 Example:
 
 .. code-block:: html
-   :linenos:
+
 
     <div data-page-component-collapse>
         Some content to collapse
@@ -21,7 +21,7 @@ Example:
 
 
 .. code-block:: javascript
-   :linenos:
+
 
     // register shortcuts in ComponentShortcutsManager
     var ComponentShortcutsManager = require('oroui/js/component-shortcuts-manager');
@@ -40,7 +40,7 @@ Object Value
 Example:
 
 .. code-block:: html
-   :linenos:
+
 
     <div data-page-component-collapse="{{ {storageKey: 'entityWorkflow' ~ entityId}|json_encode }}">
         Some content to collapse
@@ -48,7 +48,7 @@ Example:
 
 
 .. code-block:: javascript
-   :linenos:
+
 
     // register shortcuts in ComponentShortcutsManager
     var ComponentShortcutsManager = require('oroui/js/component-shortcuts-manager');
@@ -69,7 +69,7 @@ Remember to add ``scalarOption`` to the shortcut.
 Example:
 
 .. code-block:: html
-   :linenos:
+
 
     <div data-page-component-jquery="oroui/js/widget/collapse-widget">
         Some content to collapse
@@ -77,7 +77,7 @@ Example:
 
 
 .. code-block:: javascript
-   :linenos:
+
 
     // register shortcuts in ComponentShortcutsManager
     var ComponentShortcutsManager = require('oroui/js/component-shortcuts-manager');

@@ -40,7 +40,7 @@ To enable the layout block cache, provide the ``cache`` block option.
 ``cache: true`` means the block is cached forever
 
 .. code-block:: yaml
-   :linenos:
+
 
    layout:
      actions:
@@ -55,7 +55,7 @@ Disable the Cache
 By default, the cache is disabled for all the blocks. You can also disable the cache enabled by another layout update.
 
 .. code-block:: yaml
-   :linenos:
+
 
    layout:
      actions:
@@ -80,7 +80,7 @@ for post-cache substitution).
 **For example**, store the cache item for 10 minutes:
 
 .. code-block:: yaml
-   :linenos:
+
 
    layout:
      actions:
@@ -101,7 +101,7 @@ user is logged in or not).
 **For example**, vary the cache item by a product id:
 
 .. code-block:: yaml
-   :linenos:
+
 
    layout:
      actions:
@@ -123,7 +123,7 @@ Tags are used for the cache invalidation.
 **For example** tag the cache item with a product id:
 
 .. code-block:: yaml
-   :linenos:
+
 
    layout:
      actions:
@@ -144,7 +144,7 @@ Indicates when the cache must be enabled.
 **For example**, enable the cache only for not logged in users:
 
 .. code-block:: yaml
-   :linenos:
+
 
    layout:
      actions:
@@ -166,7 +166,7 @@ with the ``product_ID`` tag:
 
 .. code-block:: yaml
    :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
-   :linenos:
+
 
    layout:
      actions:
@@ -204,7 +204,7 @@ settings.
 - Cache the whole ``product_view_container`` block forever, but render the ``product_price_container`` block dynamically:
 
   .. code-block:: yaml
-     :linenos:
+
      :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
      layout:
@@ -226,7 +226,7 @@ settings.
 -  Cache the whole ``product_view_container`` block for 1 day, but the ``product_price_container`` block only for 15 minutes:
 
    .. code-block:: yaml
-      :linenos:
+
       :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
       layout:
@@ -255,7 +255,7 @@ calculate block visibility every time, override it to the static value
 with the layout update or cache a wrapping container instead.
 
 .. code-block:: yaml
-   :linenos:
+
 
    layout:
      actions:
@@ -280,7 +280,7 @@ interface and mark it with the ``layout_cache.extension`` DI tag.
 
 .. code-block:: php
    :caption: src/AcmeDemoBundle/Cache/Extension/DayOfWeekExtension.php
-   :linenos:
+
 
    <?php
 
@@ -298,7 +298,7 @@ interface and mark it with the ``layout_cache.extension`` DI tag.
 
 .. code-block:: yaml
    :caption: src/AcmeDemoBundle/Resources/config/services.yml
-   :linenos:
+
 
    services:
      AcmeDemoBundle\Cache\Extension\DayOfWeekExtension:
@@ -318,7 +318,7 @@ logged in:
 
 .. code-block:: php
    :caption: src/AcmeDemoBundle/Cache/Metadata/DisableCacheForLoggedInUsersCacheMetadataProvider.php
-   :linenos:
+
 
    <?php
 
@@ -345,7 +345,7 @@ logged in:
 
 .. code-block:: yaml
    :caption: src/AcmeDemoBundle/Resources/config/services.yml
-   :linenos:
+
 
    services:
      AcmeDemoBundle\Cache\Cache\Metadata\DisableCacheForLoggedInUsersCacheMetadataProvider:
@@ -363,7 +363,7 @@ product information when product has been updated:
 1. Tag the block that renders product information
 
    .. code-block:: yaml
-      :linenos:
+
       :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
       layout:
@@ -379,7 +379,7 @@ product information when product has been updated:
    on post update event:
 
    .. code-block:: php
-      :linenos:
+
       :caption: src/AcmeDemoBundle/EventListeners/ProductUpdateListener.php
 
       <?php
@@ -413,7 +413,7 @@ product information when product has been updated:
 3. Register the listener in a service container:
 
    .. code-block:: yaml
-      :linenos:
+
       :caption: src/AcmeDemoBundle/Resources/config/services.yml
 
       services:
@@ -433,7 +433,7 @@ To enable **Redis** support, append the following config to the
 ``config/config.yml`` file.
 
 .. code-block:: yaml
-   :linenos:
+
    :caption: config/config.yml
 
    framework:
@@ -454,7 +454,7 @@ render cache. To configure it:
 1. |Define a new client| in the ``snc_redis`` configuration section and specify the connection DSN, e.g.,:
 
    .. code-block:: yaml
-      :linenos:
+
       :caption: config/config.yml
 
       snc_redis:
@@ -467,7 +467,7 @@ render cache. To configure it:
    Redis client:
 
    .. code-block:: yaml
-      :linenos:
+
       :caption: src/AcmeDemoBundle/Resources/config/services.yml
 
       services:

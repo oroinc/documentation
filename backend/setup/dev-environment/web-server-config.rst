@@ -12,7 +12,7 @@ Apache 2.4
 ----------
 
 .. code-block:: text
-    :linenos:
+
 
         <VirtualHost *:80>
             ServerName <your-domain-name>
@@ -39,7 +39,7 @@ Nginx
 -----
 
 .. code-block:: text
-    :linenos:
+
 
         server {
             server_name <your-domain-name> www.<your-domain-name>;

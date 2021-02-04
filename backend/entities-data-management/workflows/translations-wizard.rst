@@ -18,7 +18,7 @@ First of all, you should have your workflow configuration itself loaded, it is l
 *For example*:
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/console oro:workflow:definitions:load --directories=$YOUR_BUNDLE_DIR/Resources/config/oro
 
@@ -31,7 +31,7 @@ You can load workflow translations from their translation files located in the `
 For example, this is how you would create a translation file directly by redirecting output of command to a file.
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/console oro:workflow:translations:dump my_workflow --locale=en > $YOUR_BUNDLE_DIR/Resources/translations/workflows.en.yml
 
@@ -42,7 +42,7 @@ This way, file `<YourBundleDirectory>/Resources/translations/workflows.en.yml` i
 When the translation file is updated, you might need to load translations into the system from that file; for this, run the following command:
 
 .. code-block:: bash
-   :linenos:
+
 
     bin/console oro:translation:load
 

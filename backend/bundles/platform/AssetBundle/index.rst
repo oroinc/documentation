@@ -17,7 +17,7 @@ Webpack *entry points* with a list of files are loaded from `assets.yml` files f
 To see the list of loaded bundles ordered by the priority, run:
 
 .. code-block:: bash
-   :linenos:
+
 
    php bin/console debug:container --parameter=kernel.bundles --format=json
 
@@ -46,7 +46,7 @@ Enable HMR for CSS links
 To enable HMR for CSS links in HTML, import CSS within Javascript. But for performance reasons, it is better to load plain CSS files in the production environment. To handle that automatically we render CSS with the following macro:
 
 .. code-block:: bash
-   :linenos:
+
 
     {% import '@OroAsset/Asset.html.twig' as Asset %}
 
@@ -55,14 +55,14 @@ To enable HMR for CSS links in HTML, import CSS within Javascript. But for perfo
 That normally renders the link with rel stylesheet:
 
 .. code-block:: html
-   :linenos:
+
 
     <link rel="stylesheet" media="all" href="/css/custom.css"/>
 
 But during development, when HMR is enabled, and webpack-dev-server is listening at the background, this macro renders javascript tag that imports CSS dynamically and reloads it on changes, like:
 
 .. code-block:: html
-   :linenos:
+
 
     <script type="text/javascript" src="https://localhost:8081/css/custom.bundle.js"></script>
 
@@ -74,7 +74,7 @@ To use HMR, run the ``php bin/console oro:assets:build --hot`` command in the ba
 .. note:: To speed up the build operation provide the `theme` name as an argument:
 
             .. code-block:: yaml
-               :linenos:
+
 
                 php bin/console oro:assets:build --hot -- default
 
@@ -86,7 +86,7 @@ Enable HTTPS for Hot Module Replacement
 In `config/config_dev.yml` file add the following lines:
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_asset:
         webpack_dev_server:
@@ -95,7 +95,7 @@ In `config/config_dev.yml` file add the following lines:
 With the above setting, a self-signed certificate is used, but you can provide your own when running `oro:assets:build` command, for example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     php bin/console oro:assets:build --hot --key=/path/to/server.key --cert=/path/to/server.crt --cacert=/path/to/ca.pem
     # or
@@ -109,7 +109,7 @@ Enable HMR for Prod Environment
 To enable HMR for `prod` environment add below lines to `config/config.yml`
 
 .. code-block:: yaml
-   :linenos:
+
 
     oro_asset:
         webpack_dev_server:
@@ -121,7 +121,7 @@ Load SCSS or CSS Files from the Bundle
 Create an `assets.yml` file that contains an entry point list with the files to load.
 
 .. code-block:: yaml
-   :linenos:
+
 
     css:                                                    # Entry point name.
         inputs:                                             # List of files to load for `css` entry point
@@ -267,7 +267,7 @@ AssetBundle defines the configuration for NodeJs and NPM executable.
 All these options are configured under the `oro_asset` key in your application configuration.
 
 .. code-block:: yaml
-   :linenos:
+
 
     # displays the default config values defined by Oro
      php bin/console config:dump-reference oro_asset
@@ -351,7 +351,7 @@ Start the configuration by copying the config section of `requirejs.yml` to the 
 The following example illustrates the use of simplified `requirejs.yml` from `UIBundle`:
 
 .. code-block:: yaml
-   :linenos:
+
 
    config:
        entry:
@@ -384,7 +384,7 @@ entry
 Add the below section as is.
 
 .. code-block:: yaml
-   :linenos:
+
 
    entry:
       app:
@@ -411,7 +411,7 @@ To ensure that these libraries keep working, use the approach below.
 First, expose the variable needs to become available globally:
 
 .. code-block:: yaml
-   :linenos:
+
 
    shim:
       jquery:
@@ -422,7 +422,7 @@ First, expose the variable needs to become available globally:
 Next, convert `shim` from `requirejs.yml`
 
 .. code-block:: yaml
-   :linenos:
+
 
    shim:
      'jquery.select2':
@@ -433,7 +433,7 @@ Next, convert `shim` from `requirejs.yml`
 to the new format
 
 .. code-block:: yaml
-   :linenos:
+
 
    shim:
        jquery.select2:
@@ -494,7 +494,7 @@ To include a component here, you should specify the target chunk for Webpack. Ge
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
    paths:
        'mybundle/js/app/components/component1': 'bundles/mybundle/js/app/components/component1.js'
@@ -504,7 +504,7 @@ Example:
 should be changed to
 
 .. code-block:: yaml
-   :linenos:
+
 
    dynamic-imports:
        mybundle:
@@ -520,7 +520,7 @@ configs
 If your module is expected to have configuration, the module name has to be mentioned in `configs` section with its default configuration.
 
 .. code-block:: yaml
-   :linenos:
+
 
    configs:
       oro/dialog-widget:
@@ -547,7 +547,7 @@ After the update of NodeJs you might experience an error because node modules we
 To fix the error, remove the existing node modules and re-build the assets:
 
 .. code-block:: bash
-   :linenos:
+
 
     rm -rf ./node_modules
     php bin/console cache:clear
@@ -561,7 +561,7 @@ Appears when configuration in the cache is broken.
 To fix the error, remove an application cache and warm it up:
 
 .. code-block:: bash
-   :linenos:
+
 
     rm -rf var/cache/*
     php bin/console cache:warmup

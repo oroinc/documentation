@@ -82,7 +82,7 @@ need to hide or show some options depending on the data of the entry, you can cr
 decides whether or not an action is visible for an entry:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
     datagrids:
@@ -232,7 +232,7 @@ The description of options that you can pass in the datagrid configuration is av
 To set datagrid options, define them under the datagrid_name.options path.
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-datagrid:
@@ -283,7 +283,7 @@ jsmodules
 ~~~~~~~~~
 
 .. code-block:: yaml
-   :linenos:
+
 
     jsmodules:
       - your/builder/amd/module/name
@@ -303,7 +303,7 @@ rowSelection
 ~~~~~~~~~~~~
 
 .. code-block:: yaml
-   :linenos:
+
 
     rowSelection:
         dataField: id

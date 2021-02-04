@@ -26,7 +26,7 @@ the next messages.
 Messages are processed by one or more consumers that work in the background. Consumer(s) are run by the following command:
 
 .. code-block:: bash
-    :linenos:
+
 
         $ bin/console oro:message-queue:consume --env prod
 

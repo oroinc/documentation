@@ -4,7 +4,7 @@ Styles Assets Organization
 Files structure with styles should be the following:
 
 .. code-block:: none
-   :linenos:
+
 
     MyBundle/
         Resources/
@@ -24,7 +24,7 @@ Files structure with styles should be the following:
 All styles should be placed in ``components`` folder with the same file name as a block name. For example: ``components/input/input.scss``:
 
 .. code-block:: bash
-   :linenos:
+
 
    .input {
        display: inline-block;
@@ -39,7 +39,7 @@ All styles should be placed in ``components`` folder with the same file name as 
 Another example: ``components/button/button.scss``:
 
 .. code-block:: bash
-   :linenos:
+
 
    .button {
        display: inline-block;
@@ -54,7 +54,7 @@ Another example: ``components/button/button.scss``:
 Global settings should contain global variables for blocks. For example: ``global-settings.scss``:
 
 .. code-block:: css
-   :linenos:
+
 
    $font-size: 12px;
    $font-family: 'Thamoma';
@@ -64,7 +64,7 @@ All block variables should be placed in ``variables`` folder. Files should conta
 For example, ``input-config.scss``:
 
 .. code-block:: css
-   :linenos:
+
 
    $input-padding: 8px 9px !default;
    $input-font-size: $font-size !default;
@@ -75,7 +75,7 @@ For example, ``input-config.scss``:
 Another example: ``button-config.scss``:
 
 .. code-block:: css
-   :linenos:
+
 
    $button-padding: 18px 9px !default;
    $button-font-size: $font-size !default;
@@ -86,7 +86,7 @@ Another example: ``button-config.scss``:
 To add blocks to resulting ``styles.css`` file, include them into ``styles.scss``:
 
 .. code-block:: bash
-   :linenos:
+
 
    @import: './components/input/input';
    @import: './components/button/button';
@@ -94,7 +94,7 @@ To add blocks to resulting ``styles.css`` file, include them into ``styles.scss`
 To include configs in the resulting ``styles.css`` file, add them  to the ``assets.yml`` file located in ``MyBundle/Resources/views/layouts/my-theme/config/``:
 
 .. code-block:: css
-   :linenos:
+
 
    styles:
        inputs:
@@ -107,7 +107,7 @@ To include configs in the resulting ``styles.css`` file, add them  to the ``asse
 The resulting ``styles.css`` file is the following:
 
 .. code-block:: css
-   :linenos:
+
 
    .input {
        display: inline-block;
@@ -134,7 +134,7 @@ In custom themes you can change globals and settings for a particular component 
 We use styles from ``my-theme`` and configs from ``my-custom-theme``. For example: ``components/input/input.scss``:
 
 .. code-block:: bash
-   :linenos:
+
 
       .button {
           border: $input-border;
@@ -147,7 +147,7 @@ We use styles from ``my-theme`` and configs from ``my-custom-theme``. For exampl
 Another example: ``global-settings.scss``
 
 .. code-block:: css
-   :linenos:
+
 
    $font-size: 14px;
    $font-family: 'Arial';
@@ -155,7 +155,7 @@ Another example: ``global-settings.scss``
 Another example: ``input-config.scss``:
 
 .. code-block:: css
-   :linenos:
+
 
    $input-border: 1px solid red;
    $input-color: purple;
@@ -164,7 +164,7 @@ Another example: ``input-config.scss``:
 ``Assets.yml`` for ``my-custom-theme`` should be the following:
 
 .. code-block:: css
-   :linenos:
+
 
    styles:
        inputs:
@@ -176,7 +176,7 @@ Another example: ``input-config.scss``:
 The resulting ``styles.css`` file are the following:
 
 .. code-block:: css
-   :linenos:
+
 
    .input {
        display: inline-block;
@@ -202,7 +202,7 @@ The resulting ``styles.css`` file are the following:
 Before dumps, all files are collected into one for each theme. For ``my-theme`` - in file ``application/commerce/public/build/my-theme/styles.css.scss``:
 
 .. code-block:: css
-   :linenos:
+
 
    @import 'my-theme/settings/global-settings';
    @import 'my-theme/variables/input-config';
@@ -212,7 +212,7 @@ Before dumps, all files are collected into one for each theme. For ``my-theme`` 
 For ``my-custom-theme`` - in file ``application/commerce/public/build/my-custom-theme/styles.css.scss``:
 
 .. code-block:: css
-   :linenos:
+
 
    @import 'my-theme/settings/global-settings';
    @import 'my-custom-theme/settings/global-settings';

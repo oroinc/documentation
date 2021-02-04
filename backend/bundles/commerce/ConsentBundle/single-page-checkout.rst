@@ -9,7 +9,7 @@ Agreements Section
 As an illustration, we are going to add the Agreements section to `acme_demo_checkout_single_page`. Extend `save_state` and `create_order` with the `customerConsents` attribute field in order to display the section.
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         acme_demo_checkout_single_page:
@@ -44,7 +44,7 @@ As an illustration, we are going to add the Agreements section to `acme_demo_che
 Next, add the transition definitions that save consents and check that all mandatory consents are accepted.
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         acme_demo_checkout_single_page:
@@ -89,7 +89,7 @@ To show a block with the consent items:
 1. Import a layout with the consent items and configure it.
 
    .. code-block:: yaml
-      :linenos:
+
    
        layout:
            imports:
@@ -115,7 +115,7 @@ To show a block with the consent items:
 2. Customize the templates, as illustrated below.
 
    .. code-block:: twig
-      :linenos:
+
 
        {% block _checkout_consent_container_widget %}
            <div {{ block('block_attributes') }}>

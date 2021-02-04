@@ -17,7 +17,7 @@ With `orocloud.yaml` it is possible to override the following nodes:
 **install_commands**
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -30,7 +30,7 @@ With `orocloud.yaml` it is possible to override the following nodes:
 **upgrade_commands**
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -41,7 +41,7 @@ With `orocloud.yaml` it is possible to override the following nodes:
 **git clone configuration**
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -53,7 +53,7 @@ With `orocloud.yaml` it is possible to override the following nodes:
 **composer_command**
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -76,7 +76,7 @@ Some options may also be omitted as they are added automatically:
 **after_composer_install_commands**
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -87,7 +87,7 @@ Some options may also be omitted as they are added automatically:
 **db_extensions**
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -99,7 +99,7 @@ Some options may also be omitted as they are added automatically:
 **before_backup_create_commands**
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -111,7 +111,7 @@ Some options may also be omitted as they are added automatically:
 **after_backup_create_commands**
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -127,7 +127,7 @@ Application Configuration
 Custom maintenance page, web backend prefix, and consumers debug mode can be configured the following way. Keep in mind that the web_backend_prefix parameter should start with "/" and should not end with "/", for instance '/admin':
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -146,7 +146,7 @@ Webserver Configuration
 Webserver configuration can be modified, as illustrated below:
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -333,14 +333,14 @@ Rules to manage HTTP requests filtering are defined in the following sections of
 Before implementing changes in this file on production, you should always test it at the environment stage  to avoid issues with live application. Also, you can use the following command to check the correctness of the file syntax afterwards:
 
 .. code-block:: none
-    :linenos:
+
 
     ssh user@main_node_ip 'cat /mnt/ocom/app/orocloud.yaml' | yamllint -
 
 Source filtering rules are defined in the ``webserver`` section. This is the child element of the ``orocloud_options`` data structure. Here is an example of rules definitions:
 
 .. code-block:: none
-    :linenos:
+
 
     access_policy:
           'ip':
@@ -379,7 +379,7 @@ The following hashes can be used:
 An example of the rule to allow only the defined countries:
 
 .. code-block:: none
-   :linenos:
+
 
    'country':
      'type'  : 'deny'
@@ -392,7 +392,7 @@ In this example, only the requests from the USA and Canada are allowed. All othe
 An example of the rule to deny requests from the defined countries:
 
 .. code-block:: none
-   :linenos:
+
 
    'country':
      'type'  : 'allow'
@@ -407,7 +407,7 @@ In this example, all requests from China and Russia are to be rejected.
 An example of the user agent rule:
 
 .. code-block:: none
-   :linenos:
+
 
    'ua':
      'allow' :
@@ -426,7 +426,7 @@ This example allows requests from the ``GoogleStackdriverMonitoring`` user agent
 An example of the URI rule:
 
 .. code-block:: none
-   :linenos:
+
 
    'uri':
      'allow' :
@@ -442,7 +442,7 @@ There are two lists to allow any rate of requests for the specific IPs or to the
 Here is an example:
 
 .. code-block:: none
-   :linenos:
+
 
    limit_whitelist:
      - '8.8.8.8'
@@ -455,7 +455,7 @@ Here is an example:
 An example of the whitelist:
 
 .. code-block:: none
-   :linenos:
+
 
    limit_whitelist:
      - '8.8.8.8'
@@ -468,7 +468,7 @@ This rule allows unlimited rate of requests from IP 127.0.0.1 (local host) and s
 An example of the whitelist:
 
 .. code-block:: none
-   :linenos:
+
 
    limit_whitelist_uri:
      - '~(^/admin/test/(.*))'
@@ -494,7 +494,7 @@ The configuration option enables you to configure Blackfire.
 You can then profile the application console commands via configured Blackfire:
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli app:console [command] --blackfire-enable --blackfire-client-id [client-id] --blackfire-client-token [client-token] [--blackfire-env env] [--blackfire-samples count]
 
@@ -511,7 +511,7 @@ Mail Settings
 To prevent sending test emails accidentally from the staging environment to any real users or customers, add the domains of email recepients that you will be using for testing to your whitelist:
 
 .. code-block:: none
-    :linenos:
+
 
     ---
     orocloud_options:
@@ -552,7 +552,7 @@ The sanitize configuration is grouped under the `sanitize` node and supports the
 .. note:: Please keep in mind that **ALL** values in `rawsql_*_rules` and `update_*_rules` **MUST** be wrapped in **SINGLE** quotes.
 
 .. code-block:: none
-      :linenos:
+
 
       ---
       orocloud_options:
@@ -582,7 +582,7 @@ Please use the following conventions to design your `sanitize.update_*` strategy
 * Provide sanitizing configuration for every table as a new item:
 
   .. code-block:: none
-      :linenos:
+
 
       update_add_rules:
             - '{ table: oro_address, columns: [{name: street, method: md5}, {name: city, method: md5}, {name: postal_code, method: md5}, {name: last_name, method: md5}] }'
@@ -594,7 +594,7 @@ Please use the following conventions to design your `sanitize.update_*` strategy
   For example:
 
   .. code-block:: none
-      :linenos:
+
 
       columns: [{name: street, method: md5}, {name: city, method: md5} ]
 
@@ -611,7 +611,7 @@ Elasticsearch Synonyms Configuration
 To configure synonyms in Elasticsearch service, use the following field in orocloud.yaml:
 
 .. code-block:: none
-   :linenos:
+
 
     orocloud_options:
       elasticsearch:
@@ -626,7 +626,7 @@ To configure synonyms in Elasticsearch service, use the following field in orocl
 You can use separate synonym lists for each index, or use '*' as index name in order to apply the same synonyms list to all indices.
 
 .. code-block:: none
-   :linenos:
+
 
     orocloud_options:
       elasticsearch:
@@ -647,7 +647,7 @@ Cloud-based environments may be synchronized by a user without filing a request 
 To retrieve a list of the environments to which you can sync the sanitized data from the current environment, run the following command:
 
 .. code-block:: none
-   :linenos:
+
 
     orocloud-cli dump:environments
 
@@ -656,12 +656,12 @@ To retrieve a list of the environments to which you can sync the sanitized data 
 This means that you can push data from the current environment to the linked environment.
 
 .. code-block:: none
-    :linenos:
+
 
     orocloud-cli dump:create --help
 
 .. code-block:: none
-    :linenos:
+
 
     Description:
       Create application environment data dump and copy it to another environment.
@@ -698,12 +698,12 @@ When data push is done, you may start with import in the target environment.
 To list all available data dumps that can be restored to the current environment, run:
 
 .. code-block:: none
-   :linenos:
+
 
     orocloud-cli dump:list --help
 
 .. code-block:: none
-   :linenos:
+
 
     Description:
       Lists all available data dumps that can be restored to the current environment.
@@ -726,12 +726,12 @@ To list all available data dumps that can be restored to the current environment
 To restore it as is, run the following command in the target environment:
 
 .. code-block:: none
-   :linenos:
+
 
     orocloud-cli dump:load --help
 
 .. code-block:: none
-    :linenos:
+
 
     Description:
       Load application data from the dump to the current environment.

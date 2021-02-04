@@ -31,7 +31,7 @@ It has 4 main options:
 An example of a simple configurable permission configuration.
 
 .. code-block:: bash
-   :linenos:
+
 
     oro_configurable_permissions:
         some_name:                                                      # configurable permission name, will be used by filter

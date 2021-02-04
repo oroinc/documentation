@@ -56,7 +56,7 @@ Console Messages Output
 Message Queue Consumer provides |ConsoleHandler| that listens to console events and writes log messages to the console output depending on the console verbosity. It uses a |ConsoleFormatter| to format the record before logging it. Record format pattern is described below:
 
 .. code-block:: php
-    :linenos:
+
 
     "%datetime% %start_tag%%channel%.%level_name%%end_tag%: %message%%context%%extra%\n"
 
@@ -113,7 +113,7 @@ Unfriendly Consumer Interruption
 If the consumer is interrupted abruptly, check the prod.log file. It should contain the following message.
 
 .. code-block:: bash
-    :linenos:
+
 
     app.ERROR: Consuming interrupted, reason: Something went wrong.
 
@@ -130,7 +130,7 @@ Example of ConsoleErrorHandler Configuration
 To log into all environments, add the following code to ``config.yml``. To log only in ``prod``, add the code to ``config_prod.yml``:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # config/config_prod.yml
 
@@ -178,7 +178,7 @@ Create consumption extension with its own logic:
 Declare service:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
@@ -229,7 +229,7 @@ Separate Message Queue Consumer Logs
 If you want to log the **consumer** channel to a different file, create a new handler and configure it to log only messages from the **consumer** channel. You can add this to ``config.yml`` to log into all environments, or just ``config_prod.yml`` to log only in ``prod``:
 
 .. code-block:: yaml
-    :linenos:
+
 
      monolog:
       handlers:

@@ -329,7 +329,7 @@ Example of Usage
 Below is example of creating filter list:
 
 .. code-block:: none
-   :linenos:
+
 
     var filtersList = new Oro.Filter.List({
         addButtonHint: '+ Add more',

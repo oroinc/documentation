@@ -15,7 +15,7 @@ To define PageComponent for a block define several data-attributes for the HTML 
 - `data-page-component-name` optional, allows to get access to the component by name
 
 .. code-block:: twig
-    :linenos:
+
 
     {% set options  = {
         metadata: metaData,
@@ -68,7 +68,7 @@ An instance of BaseComponent has several methods:
 - `_resolveDeferredInit`, resolves deferred initialization and executes promise's handlers
 
 .. code-block:: javascript
-   :linenos:
+
 
     MyComponent = BaseComponent.extend({
         initialize: function (options) {
@@ -108,7 +108,7 @@ For some trivial cases writing the entire component as extension from `BaseCompo
 In this case it's better to define a function that accepts options and performs the initialization:
 
 .. code-block:: javascript
-   :linenos:
+
 
     define(['jquery', 'js/my-widget'], function ($) {
         return function (options) {

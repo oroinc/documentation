@@ -9,7 +9,7 @@ Apply Patches During Deployment
 To unify the process of applying patches during application deployment, the maintenance agent is configured to do it once the code is deployed and the composer install is completed.
 
 .. code-block:: none
-    :linenos:
+
 
     deployment:
         after_composer_install_commands:
@@ -22,7 +22,7 @@ Keep in mind that if your application supports patch application on its own (for
 Note: Use the following command to make sure that the patch is correct and can be applied before deploying it into the production:
 
 .. code-block:: none
-   :linenos:
+
 
    patch -p0 < patch/file.patch
 
@@ -36,7 +36,7 @@ Use the following commands to work with patches:
 * **patch:list** - shows the list of applied patches to the current application deployment
 
 .. code-block:: none
-   :linenos:
+
 
    ➤ Executing task patch:list
    +---------------------+----------------------------------+------------+
@@ -50,7 +50,7 @@ Use the following commands to work with patches:
 * **patch:view** - shows the content of the specified patch, requires the patch HASH as an argument.
 
 .. code-block:: none
-   :linenos:
+
 
    [ ~]$ orocloud-cli patch:view b3d1e7ea5c476f0dba0b7588a8a93b70
    ➤ Executing task patch:view
@@ -82,28 +82,28 @@ Usage examples:
 * Revert by a patch hash, dry-run mode (only shows what will be done):
 
   .. code-block:: none
-     :linenos:
+
 
      orocloud-cli patch:revert b3d1e7ea5c476f0dba0b7588a8a93b70
 
 * Revert by a patch hash, force mode (patch will be physically reverted against your codebase):
 
   .. code-block:: none
-     :linenos:
+
 
      orocloud-cli patch:revert b3d1e7ea5c476f0dba0b7588a8a93b70 --force
 
 * Revert by a patch file, the case when patch file content is not available (the full path specified with the `-f` option)
 
   .. code-block:: none
-     :linenos:
+
 
      orocloud-cli patch:revert b3d1e7ea5c476f0dba0b7588a8a93b70 -f ~/test.patch
 
 * Revert by a patch, the case when patch hash is not shown in the `patch:list` (was applied with an old version of the agent or via `deployment.after_composer_install_commands`)
 
   .. code-block:: none
-     :linenos:
+
 
      orocloud-cli patch:revert - -f ~/test.patch
 

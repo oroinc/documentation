@@ -55,7 +55,7 @@ You need to configure the following parameters for the testing environment:
    For example:
 
    .. code-block:: yaml
-       :linenos:
+
 
        # config/parameters_test.yml
        parameters:
@@ -102,7 +102,7 @@ The ``@dbIsolationPerTest`` annotation adds a transaction that will be performed
 before a test starts and is rolled back when a test ends.
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -125,7 +125,7 @@ Use the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::loadFixtur
 method to load a fixture in a test:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -155,7 +155,7 @@ or a path to the |nelmio/alice| file.
 An example of a fixture:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
@@ -175,7 +175,7 @@ An example of a fixture:
     }
 
 .. code-block:: yaml
-    :linenos:
+
 
         # src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/bar_data.yml
         Oro\Bundle\FooBarBundle\Entity\BarEntity:
@@ -186,7 +186,7 @@ You can also implement the ``Doctrine\Common\DataFixtures\DependentFixtureInterf
 which enables to load fixtures depending on other fixtures being already loaded:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
@@ -211,7 +211,7 @@ which enables to load fixtures depending on other fixtures being already loaded:
 Further, you can use reference-specific entities from fixtures, e.g.:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
 
@@ -241,7 +241,7 @@ Further, you can use reference-specific entities from fixtures, e.g.:
 Now, you can reference the fixture by the configured name in your test:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -308,7 +308,7 @@ Simple initialization works for testing commands and services when authenticatio
 is not required.
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -328,7 +328,7 @@ is not required.
 Initialization with custom AppKernel options:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -348,7 +348,7 @@ Initialization with custom AppKernel options:
 Initialization with authentication:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -380,7 +380,7 @@ Testing Controllers
 Have a look at an example of a controller test from OroCRM:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php
     namespace Oro\Bundle\TaskBundle\Tests\Functional\Controller;
@@ -490,7 +490,7 @@ method is used to ensure that access to the requested resource is
 denied for the user:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/UserBundle/Tests/Functional/UsersTest
     namespace Oro\Bundle\UserBundle\Tests\Functional;
@@ -539,7 +539,7 @@ denied for the user:
 Here is an example of a fixture that adds a user without permissions:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/UserBundle/Tests/Functional/DataFixtures/LoadUserData.php
     namespace Oro\Bundle\UserBundle\Tests\Functional\DataFixtures;
@@ -616,7 +616,7 @@ what the test for the :class:`Oro\\Bundle\\SearchBundle\\EventListener\\UpdateSc
 class from the SearchBundle looks like:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/SearchBundle/Tests/Functional/EventListener/UpdateSchemaListenerTest.php
     namespace Oro\Bundle\SearchBundle\Tests\Functional\EventListener;
@@ -679,7 +679,7 @@ the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::getContainer`
 method:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Oro/Bundle/FooBarBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional;
@@ -712,7 +712,7 @@ This is an example of how you can write an integration test for a class that
 uses Doctrine ORM without mocking its classes and using real Doctrine services:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Oro\Bundle\BatchBundle\Tests\Functional\ORM\QueryBuilder;
 

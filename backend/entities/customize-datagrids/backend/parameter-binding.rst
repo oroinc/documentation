@@ -10,7 +10,7 @@ Configuration Syntax
 --------------------
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-datagrid:
@@ -33,7 +33,7 @@ Configuration Syntax
 If the name of parameters in the grid and the query do not match, you can pass an associative array of parameters, where the key is the name of the parameter in the query, and the value is the name of the parameter of the grid:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         acme-demo-grid:
@@ -56,7 +56,7 @@ If the name of parameters in the grid and the query do not match, you can pass a
 To pass parameter ``groupId`` to the grid, use the following format when rendering the grid in the template:
 
 .. code-block:: twig
-   :linenos:
+
 
    {{ dataGrid.renderGrid('acme-demo-datagrid', {'groupId': entityId}) }}
 
@@ -64,7 +64,7 @@ To pass parameter ``groupId`` to the grid, use the following format when renderi
 Or pass them directly to |DatagridManager|.
 
 .. code-block:: php
-   :linenos:
+
 
    $datagridManager->getDatagrid('acme-demo-datagrid', ['groupId' => $entityId]);
 
@@ -72,7 +72,7 @@ Or pass them directly to |DatagridManager|.
 The full format for declaring parameters binding is also available:
 
 .. code-block:: yaml
-   :linenos:
+
 
     bind_parameters:
         data_in: # option string key will be interpreted as name of parameter in query
@@ -82,7 +82,7 @@ The full format for declaring parameters binding is also available:
 
 
 .. code-block:: yaml
-   :linenos:
+
 
     bind_parameters:
         -
@@ -105,7 +105,7 @@ Parameter binder class must implements |ParameterBinderInterface| and depends on
 Example of usage:
 
 .. code-block:: php
-   :linenos:
+
 
     // get parameter "name" from datagrid parameter bag and add it to datasource
     $queryParameterBinder->bindParameters($datagrid, ['name']);

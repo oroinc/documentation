@@ -15,7 +15,7 @@ Import:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/imports/oro_product_view/layout.yml
-   :linenos:
+
 
     layout:
         actions:
@@ -89,7 +89,7 @@ Template:
 
 .. code-block:: twig
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/imports/oro_product_view/layout.html.twig
-   :linenos:
+
 
     {% block _product_container_widget %}
         {% set attr = layout_attr_defaults(attr, {
@@ -206,7 +206,7 @@ Our simple product has the following look:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/simple_product.yml
-   :linenos:
+
 
     layout:
         imports:
@@ -232,7 +232,7 @@ Product Variants Block:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/configurable_product.yml
-   :linenos:
+
 
     layout:
         imports:
@@ -256,7 +256,7 @@ Template:
 
 .. code-block:: twig
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/configurable_product.html.twig
-   :linenos:
+
 
     {% block _product_variants_widget %}
         {% for variant in variants %}
@@ -288,7 +288,7 @@ For this example we need to create a **product_variants** block type used in the
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/config/block_types.yml
-   :linenos:
+
 
     services:
     ...
@@ -308,7 +308,7 @@ Also, we need to create a **product_variants** data provider used in the **confi
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/config/services.yml
-   :linenos:
+
 
     services:
     ...
@@ -322,7 +322,7 @@ The following is an example of the data provider:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/ProductBundle/Layout/DataProvider/ProductVariantsProvider.php
-   :linenos:
+
 
     <?php
 
@@ -385,7 +385,7 @@ The result is:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/headlamps.yml
-   :linenos:
+
 
     layout:
         actions:
@@ -405,7 +405,7 @@ Template:
 
 .. code-block:: twig
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/headlamps.html.twig
-   :linenos:
+
 
     {% block _product_sale_banner_widget %}
         <div class="text-right">
@@ -429,7 +429,7 @@ The result is:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/furniture.yml
-   :linenos:
+
 
     layout:
         actions:
@@ -449,7 +449,7 @@ Template:
 
 .. code-block:: twig
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/furniture.html.twig
-   :linenos:
+
 
     {% block _product_sale_banner_widget %}
         <div class="text-center">
@@ -470,7 +470,7 @@ First, create a **config** for the **page_templates** in our **theme**.
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/config/page_templates.yml
-   :linenos:
+
 
     templates:
         -
@@ -491,7 +491,7 @@ Next, add some **layout updates**:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/custom/layout.yml
-   :linenos:
+
 
     layout:
         actions:
@@ -503,7 +503,7 @@ Next, add some **layout updates**:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/additional/layout.yml
-   :linenos:
+
 
     layout:
         actions:
@@ -518,7 +518,7 @@ Add some **templates**:
 
 .. code-block:: twig
    :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/additional/layout.html.twig
-   :linenos:
+
 
     {% block _product_view_banner_widget %}
         <div class="text-center">

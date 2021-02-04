@@ -17,7 +17,7 @@ Ajax
 Performs ajax call by the given URL.
 
 .. code-block:: yaml
-   :linenos:
+
 
     action_name:
         type: ajax
@@ -29,7 +29,7 @@ Delete
 Performs DELETE ajax request by the given URL.
 
 .. code-block:: yaml
-   :linenos:
+
 
     action_name:
         type: delete
@@ -43,7 +43,7 @@ Navigate
 Performs redirect by the given URL.
 
 .. code-block:: yaml
-   :linenos:
+
 
     action_name:
         type: navigate
@@ -56,7 +56,7 @@ Import
 Performs import of an entity.
 
 .. code-block:: yaml
-   :linenos:
+
 
     action_name:
         type: import
@@ -77,7 +77,7 @@ Export
 Performs export of an entity.
 
 .. code-block:: yaml
-   :linenos:
+
 
     action_name:
         type: import
@@ -104,7 +104,7 @@ The key of the array should be an action name and value should be true(or array)
 This configuration will be passed to the JavaScript component.
 
 .. code-block:: yaml
-   :linenos:
+
 
     # static configuration
     action_configuration:
@@ -114,7 +114,7 @@ This configuration will be passed to the JavaScript component.
 
 
 .. code-block:: yaml
-   :linenos:
+
 
     # dynamic configuration
     action_configuration: ['@acme.datagrid.action_configuration_provider', 'getActionConfiguration']

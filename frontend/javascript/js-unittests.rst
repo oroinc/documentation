@@ -80,7 +80,7 @@ Writing
 The example below illustrates the spec for the `oroui/js/mediator` module:
 
 .. code-block:: js
-   :linenos:
+
 
    import mediator from 'oroui/js/mediator';
    import Backbone from 'backbone';
@@ -106,7 +106,7 @@ Jasmine-jQuery
 However, because `Jasmine-jQuery` requires the full path to a fixture resource, it is better to use `import` to load the fixtures by a related path.
 
 .. code-block:: js
-   :linenos:
+
 
       import 'jasmine-jquery';
       import $ from 'jquery';

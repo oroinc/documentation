@@ -172,7 +172,7 @@ Arguments can be passed as a sequential list, or an associative array.
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:
@@ -188,7 +188,7 @@ Optional parameters can be skipped when named arguments are used. In the followi
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:
@@ -209,7 +209,7 @@ In the **Tree** node, arrange the items into the desired hierarchy. Use the exis
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:
@@ -247,7 +247,7 @@ Special grouping conditions (such as `or`, `and`) can be used to combine multipl
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:
@@ -349,7 +349,7 @@ Context can be accessed using the |Symfony Expression Language| by providing an 
    For example:
 
     .. code-block:: yaml
-        :linenos:
+
 
         actions:
         ...
@@ -409,7 +409,7 @@ Defining a Data Provider
 As an example, consider a data provider that returns product details:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Acme\Bundle\ProductBundle\Layout\Extension;
 
@@ -434,7 +434,7 @@ You can also implement the |AbstractFormProvider| if you use forms.
 To make the layout engine aware of your data provider, register it as a service in the DI container with the `layout.data_provider` tag:
 
 .. code-block:: yaml
-    :linenos:
+
 
     acme_product.layout.data_provider.product:
         class: Acme\Bundle\ProductBundle\Layout\DataProvider\ProductProvider
@@ -452,7 +452,7 @@ Access data provider data with the |Symfony Expression Language| by providing th
    Example:
 
     .. code-block:: yaml
-        :linenos:
+
 
         actions:
             ...
@@ -477,7 +477,7 @@ If you want to add some data to the layout context, you can use the `data` metho
 This method returns an instance of |ContextDataCollection|. Use the `set` method of this collection to add data:
 
 .. code-block:: php
-    :linenos:
+
 
     $context->data()->set(
         'widget_id',
@@ -492,7 +492,7 @@ The `set` method has the following arguments:
 You can also create `Context Configurators`_ to set the default data:
 
 .. code-block:: php
-    :linenos:
+
 
     $context->data()->setDefault(
         'widget_id',
@@ -524,7 +524,7 @@ Import defined as a folder with layout updates in the ``Resources/views/layouts/
 To use existing import, use the following syntax:
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions: []
@@ -535,7 +535,7 @@ To use existing import, use the following syntax:
 or just
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions: []
@@ -555,7 +555,7 @@ Reuse Imports on the Same Page
 To import the same layout update multiple times on the same page, provide unique ids for all layout blocks using the following special syntax:
 
 .. code-block:: yaml
-   :linenos:
+
 
     # Layout Update in Imports Folder:
 
@@ -586,7 +586,7 @@ To import the same layout update multiple times on the same page, provide unique
 Double underscore (``__``) means that the namespace can be provided for these blocks. The namespace should be passed to the import statement in the following way:
 
 .. code-block:: yaml
-   :linenos:
+
 
     imports:
         -
@@ -597,7 +597,7 @@ Double underscore (``__``) means that the namespace can be provided for these bl
 A special `root` parameter will replace `__root` in the imported layout updates. As a result, we get the following tree:
 
 .. code-block:: yaml
-   :linenos:
+
 
     tree:
         form_fields_container: #root option replaces “__root”
@@ -607,7 +607,7 @@ A special `root` parameter will replace `__root` in the imported layout updates.
 When you provide a block theme for the imported layout update, the end identifier is unknown. To state it, use a special syntax for the block name in the  `__{unique import identifier}{import block id before namespace added}_widget` template.
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block __customer_user_role_form_actions__update_widget %}
     {% endblock %}
@@ -618,7 +618,7 @@ When you provide a block theme for the imported layout update, the end identifie
 Also, you can provide a template for the block by the layout block id in the layout update which has an import statement like:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block _form_fields_container_widget %}
     {% endblock %}
@@ -634,7 +634,7 @@ When you need the imported block to be rendered without a direct reference to it
 For example, here is the customized toolbar element defined in the |DataGridBundle| on the product page (:ref:`ProductBundle <bundle-docs-commerce-product-bundle>`) in the OroCommerce application:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block _datagrid_toolbar_mass_actions_widget %}
         ...
@@ -655,7 +655,7 @@ First, the datagrid toolbar in `DataGridBundle` was imported with the following 
 1) ID in the `layout.yml`:
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:
@@ -667,7 +667,7 @@ First, the datagrid toolbar in `DataGridBundle` was imported with the following 
 2) Item tree in `imports/datagrid_toolbar/layout.yml` (block element `__datagrid_toolbar_mass_actions`):
 
 .. code-block:: yaml
-   :linenos:
+
 
     layout:
         actions:
@@ -693,7 +693,7 @@ First, the datagrid toolbar in `DataGridBundle` was imported with the following 
 3) In the `imports/datagrid_toolbar/layout.html.twig`, the block element `__datagrid_toolbar_mass_actions` looked the following way:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block __datagrid_toolbar__datagrid_toolbar_mass_actions_widget %}
         <div{{ block('block_attributes') }}>{{ block_widget(block) }}</div>
@@ -702,7 +702,7 @@ First, the datagrid toolbar in `DataGridBundle` was imported with the following 
 Next, we redefined the `imports/datagrid_toolbar/layout.html.twig` block in the :ref:`ProductBundle <bundle-docs-commerce-product-bundle>` which resulted in the following code:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block _datagrid_toolbar_mass_actions_widget %}
         ...
@@ -714,7 +714,7 @@ Next, we redefined the `imports/datagrid_toolbar/layout.html.twig` block in the 
 Then, we modified the code as follows:
 
 .. code-block:: twig
-   :linenos:
+
 
     {% block _datagrid_toolbar_mass_actions_widget %}
         ...

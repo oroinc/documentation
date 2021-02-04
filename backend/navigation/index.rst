@@ -38,7 +38,7 @@ You can create new navigation under the ``items`` key. Each item must be identif
 name which acts as a key in the menu configuration:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
@@ -76,7 +76,7 @@ The next step is to compose a tree of the menu items that you created before. Th
 build under the ``tree`` key:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
@@ -113,7 +113,7 @@ If you wanted to create a dedicated blog tab instead, you would just have to con
 as child items of the ``application_menu`` entry like this:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
@@ -137,7 +137,7 @@ Breadcrumb Provider
 To use breadcrumb provider, create layout update with the predefined **breadcrumbs** block type and the **menu_name** option:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # CustomerBundle/Resources/views/layouts/blank/imports/oro_customer_page/oro_customer_page.yml
 
@@ -162,7 +162,7 @@ Breadcrumbs Block Type
 You can avoid usage of breadcrumb provider. For that, you should create layout update with the predefined **breadcrumbs** block type and the **breadcrumbs** option:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # WebCatalogBundle/Resources/views/layouts/blank/oro_product_frontend_product_index/product_index.yml
 
@@ -186,7 +186,7 @@ Titles
 :ref:`OroNavigationBundle <bundle-docs-platform-navigation-bundle>` helps manage page titles for all routes and supports titles translation. Rout titles can be defined in the navigation.yml file:
 
 .. code-block:: yaml
-   :linenos:
+
 
     titles:
         route_name_1: "%parameter% - Title"
@@ -197,7 +197,7 @@ Titles
 Title can be defined with annotation together with route annotation:
 
 .. code-block:: bash
-   :linenos:
+
 
    @TitleTemplate("Route title with %parameter%")
 

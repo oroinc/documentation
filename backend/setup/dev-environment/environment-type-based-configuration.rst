@@ -15,7 +15,7 @@ Use different default configurations based on the environment where the applicat
 Deployment type (``deployment_type``) is one of the options in **parameters.yml** file, and it is asked during ``composer install``.
 
       .. code-block:: text
-          :linenos:
+
 
             # config/parameters.yml
 
@@ -30,7 +30,7 @@ This configuration will have the highest priority.
 For example:
 
       .. code-block:: text
-          :linenos:
+
 
                 # config/parameters.yml
 
@@ -39,7 +39,7 @@ For example:
                     deployment_type: local
 
       .. code-block:: text
-          :linenos:
+
 
                 # config/deployment/config_local.yml
 

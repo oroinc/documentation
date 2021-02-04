@@ -24,7 +24,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 2. Set |DynamicAssetVersionStrategy| for this package.
 
    .. code-block:: php
-      :linenos:
+
 
        <?php
 
@@ -53,7 +53,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 3. Update the package version when your assets are changed:
 
    .. code-block:: php
-      :linenos:
+
 
        <?php
 
@@ -78,7 +78,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 The usage of your assets is the same as other assets, for example by the well-known `asset()` Twig function:
 
 .. code-block:: twig
-   :linenos:
+
 
    {{ asset('test.js', 'acme') }}
    {# the result may be something like this: test.js?version=123-2 #}

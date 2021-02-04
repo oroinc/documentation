@@ -239,7 +239,7 @@ Unique Job
 **Example**:
 
 .. code-block:: php
-    :linenos:
+
 
     class MessageProcessor implements MessageProcessorInterface
     {
@@ -274,7 +274,7 @@ Use a dependent job when your job flow has several steps but you want to send a 
 In the example below, a root job is created. As soon as its work is completed, it sends two messages with 'topic1' and 'topic2' to the queue.
 
 .. code-block:: php
-    :linenos:
+
 
     class MessageProcessor implements MessageProcessorInterface
     {
@@ -324,7 +324,7 @@ Run a Job with Several Steps
 Example:
 
 .. code-block:: php
-    :linenos:
+
 
     class Step1MessageProcessor implements MessageProcessorInterface
     {
@@ -370,7 +370,7 @@ Example:
     }
 
 .. code-block:: php
-    :linenos:
+
 
     class Step2MessageProcessor implements MessageProcessorInterface
     {
@@ -408,7 +408,7 @@ The *JobConfigurationProvider::getTimeBeforeStaleForJobName($jobName);* method s
 In the example below, all jobs are treated as "stale" after an hour.
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
 

@@ -21,7 +21,7 @@ All operations can be described in the ``actions.yml`` configuration file under 
 Below, there is an example of a simple operation configuration that performs an execution logic with the MyEntity entity.
 
 .. code-block:: none
-   :linenos:
+
 
     operations:
         acme_demo_expire_myentity_operation:                            # operation name
@@ -133,7 +133,7 @@ Configuration Validation
 Execute a command to validate all operations configuration:
 
 .. code-block:: php
-   :linenos:
+
 
     php bin/console oro:action:configuration:validate
 
@@ -160,7 +160,7 @@ How to disable a CRUD default operation for my Bundle?
 Supposing you need to disable the default `DELETE` operation for your new `MyEntity` entity. Here is the case which describes the solution. You can do this in `actions.yml` under your bundle configuration resources directory:
 
 .. code-block:: php
-   :linenos:
+
 
     operations:
         DELETE:f

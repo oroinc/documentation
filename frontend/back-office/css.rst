@@ -9,7 +9,7 @@ Create and Embed Custom Stylesheets
 SCSS files should be stored in the ``Resources/public/css/`` folder of a bundle and registered in the ``Resources/config/oro/assets.yml`` configuration file:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/NewBundle/Resources/config/oro/assets.yml
     css:
@@ -22,7 +22,7 @@ SCSS files should be stored in the ``Resources/public/css/`` folder of a bundle 
 You can import Sass modules from **node_modules**. Just prepend them with a ~ to tell Webpack that this is not a relative import.
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/NewBundle/Resources/config/oro/assets.yml
     css:
@@ -42,7 +42,7 @@ If you want to keep your CSS code separately, you can dump all your SCSS files t
 To do that, define a new entry point in ``assets.yml``
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/NewBundle/Resources/config/oro/assets.yml
     acme_styles: # entry point name
@@ -56,7 +56,7 @@ To do that, define a new entry point in ``assets.yml``
 Use the corresponding placeholder to put compiled CSS file to the head of your document
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/Bundle/NewBundle/Resources/config/oro/placeholders.yml
     placeholders:
@@ -73,7 +73,7 @@ Use the corresponding placeholder to put compiled CSS file to the head of your d
 and finally, add the template for rendering the style tag.
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     # src/Acme/Bundle/NewBundle/Resources/views/acme_css.html.twig
     <link rel="stylesheet" media="all" href="{{ asset('css/acme.css') }}" />

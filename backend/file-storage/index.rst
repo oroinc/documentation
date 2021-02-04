@@ -54,7 +54,7 @@ To implement the access point to your type of data in the storage:
 - Register the |FileManager| service as the child of the ``oro_gaufrette.file_manager`` service:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme.file_manager:
         parent: oro_gaufrette.file_manager
@@ -73,7 +73,7 @@ For the public filesystem, it is ``public/media/your_filesystem_name``.
 You can change this sub-directory name by setting them as the second parameter of the file manager service declaration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme.file_manager:
         parent: oro_gaufrette.file_manager
@@ -101,7 +101,7 @@ For example, is you have configured ``my_public`` Gaufrette filesystem that uses
 file manager service can be the following:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme.public_file_manager:
         parent: oro_gaufrette.file_manager

@@ -25,7 +25,7 @@ you can add a security token to the message manually. The added token can be an 
 For instance:
 
 .. code-block:: php
-    :linenos:
+
 
     use Oro\Bundle\MessageQueueBundle\Security\SecurityAwareDriver;
 

@@ -13,7 +13,7 @@ There are 2 ways to set a label for `All grid view`:
 * Via an option in datagrid config:
 
 .. code-block:: yaml
-   :linenos:
+
 
     # ...
     options:

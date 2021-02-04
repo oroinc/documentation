@@ -21,7 +21,7 @@ The ``acls.yml`` file of a bundle can contain a map with access control lists. E
 is the unique name of an ACL while the values for each ACL is a map of options:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/acls.yml
 

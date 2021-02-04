@@ -31,7 +31,7 @@ The ``search.yml`` file is used to configure how your entities are indexed to ma
 the internal search engine of OroPlatform. A fully working example can look like this:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/search.yml
     search:
@@ -131,7 +131,7 @@ all three properties should be searched when the user is loooking for a value in
 the ``name`` field in ``target_fields``:
 
 .. code-block:: yaml
-    :linenos:
+
 
     search:
         Acme\ContactBunde\Entity\Contact:

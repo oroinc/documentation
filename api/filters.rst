@@ -16,7 +16,7 @@ Retrieve all users of organization '1'.
 *Request*
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users?filter[organization]=1 HTTP/1.1
 
@@ -30,7 +30,7 @@ Below are examples of requests and errors.
 A string value is passed as an input to a filter which can contain only integer values.
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users?filter[id]=aaa HTTP/1.1
 
@@ -49,7 +49,7 @@ A string value is passed as an input to a filter which can contain only integer 
 Unknown, mistyped or unsupported filter.
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users?filter[unknown]=aaa HTTP/1.1
 
@@ -128,7 +128,7 @@ Select the **username** and the **email** fields of the **users** resource.
     *Request*
 
     .. code-block:: http
-        :linenos:
+
 
         GET api/users?fields[users]=username,email HTTP/1.1
         Accept: application/vnd.api+json
@@ -136,7 +136,7 @@ Select the **username** and the **email** fields of the **users** resource.
     *Response*
 
     .. code-block:: json
-        :linenos:
+
 
         {
           "data": [
@@ -262,7 +262,7 @@ by a developer who creates API resources.
 *Request*
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email HTTP/1.1
     Accept: application/vnd.api+json
@@ -270,7 +270,7 @@ by a developer who creates API resources.
 *Response*
 
 .. code-block:: json
-    :linenos:
+
 
     {
       "data": [
@@ -320,7 +320,7 @@ Include the **roles** relation with the **fields** filter.
 *Request*
 
 .. code-block:: http
-    :linenos:
+
 
     GET api/users?fields[users]=username,email,roles&include=roles&page[number]=1&page[size]=1 HTTP/1.1
     Accept: application/vnd.api+json
@@ -328,7 +328,7 @@ Include the **roles** relation with the **fields** filter.
 *Response*
 
 .. code-block:: json
-    :linenos:
+
 
     {
       "data": [
@@ -378,7 +378,7 @@ should be used.
 *Request*
 
 .. code-block:: http
-    :linenos:
+
 
     GET api/users?fields[userroles]=label&fields[users]=username,email,roles&include=roles&page[number]=1&page[size]=1 HTTP/1.1
     Accept: application/vnd.api+json
@@ -386,7 +386,7 @@ should be used.
 *Response*
 
 .. code-block:: json
-    :linenos:
+
 
     {
       "data": [
@@ -449,7 +449,7 @@ Get the 2nd page of the retrieved records for the **users** resource with 20 rec
 *Request*
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users?page[number]=2&page[size]=20 HTTP/1.1
     Accept: application/vnd.api+json
@@ -470,7 +470,7 @@ Sort by **username** in descending order.
 *Request*
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email&sort=-username HTTP/1.1
     Accept: application/vnd.api+json
@@ -478,7 +478,7 @@ Sort by **username** in descending order.
 *Response*
 
 .. code-block:: json
-    :linenos:
+
 
     {
       "data": [
@@ -522,7 +522,7 @@ The following table contains a list of supported meta properties that may be req
     *Request*
 
     .. code-block:: http
-        :linenos:
+
 
         GET api/users?meta=title HTTP/1.1
         Accept: application/vnd.api+json
@@ -530,7 +530,7 @@ The following table contains a list of supported meta properties that may be req
     *Response*
 
     .. code-block:: json
-        :linenos:
+
 
         {
           "data": [

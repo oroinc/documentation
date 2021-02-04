@@ -37,7 +37,7 @@ Add a Workflow
 In the ``workflows.yml``, use the ``workflows`` key to specify that you are going to add workflows.
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
@@ -46,7 +46,7 @@ The value of the ``workflows`` key is the array of workflows.
 To define a new workflow, add its name to the array.
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
@@ -61,7 +61,7 @@ For each workflow key, the corresponding value is the array of the workflow sett
 In the following example, you can find the configuration of the **Phone Call** workflow. This workflow defines the process of making a call to a customer:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
@@ -84,7 +84,7 @@ Define the the user-interface workflow name:
 +----------------------------------------+---------------------+
 
 .. code-block:: yaml
-    :linenos:
+
 
         # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
@@ -106,7 +106,7 @@ It is not recommended to modify a system workflow but you can clone it and modif
    For example, you want to dump a configuration of the Alternative Checkout workflow to your CustomBundle:
 
    .. code-block:: bash
-      :linenos:
+
 
        php bin/console oro:debug:workflow:definitions b2b_flow_alternative_checkout > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/config/oro/workflows.yml
 
@@ -117,7 +117,7 @@ It is not recommended to modify a system workflow but you can clone it and modif
 2. Dump the workflow translations. Translation contain labels for workflow steps, transitions, etc., thus it is necessary to clone them too.
 
    .. code-block:: bash
-      :linenos:
+
 
       php bin/console oro:workflow:translations:dump b2b_flow_alternative_checkout --locale=en > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/translations/workflows.en.yml
 
@@ -138,14 +138,14 @@ It is not recommended to modify a system workflow but you can clone it and modif
 5. Load your cloned and adjusted workflow translations:
 
    .. code-block:: bash
-      :linenos:
+
 
       php bin/console oro:translation:load
 
 6. Load your cloned and adjusted workflow configuration:
 
    .. code-block:: bash
-      :linenos:
+
 
       php bin/console oro:workflow:definitions:load
 
@@ -166,7 +166,7 @@ This approach can be used if there is a need to automatically activate workflow 
 Here is example of such configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     workflows:
         b2b_flow_sales:
@@ -248,7 +248,7 @@ Disable Operations
 Some workflows can be used to expand an existing configuration and replace the old (primitive) behavior. Usually a simple custom behavior in Oro-based applications is managed through operations, and when you create a more advanced way to manage the business logic trough a specific workflow configuration, you might need to disable those operations. It can be done trough the `disable_operations` configuration node:
 
 .. code-block:: yaml
-   :linenos:
+
 
         disable_operations:
             operation_one:      #disable operation for custom entities (match by context)
@@ -268,7 +268,7 @@ If a :ref:`scope configuration <dev-scopes>` is provided for a workflow, the Oro
 Example of scope configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
         scopes:
             -

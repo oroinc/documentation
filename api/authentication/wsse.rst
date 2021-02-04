@@ -67,7 +67,7 @@ Header Generation
 The console command ``oro:wsse:generate-header`` can be used to generate an authentication header.
 
 .. code-block:: bash
-    :linenos:
+
 
     user@host: php bin/console oro:wsse:generate-header yourApiKey
     Authorization: WSSE profile="UsernameToken"
@@ -78,7 +78,7 @@ It has *apiKey* as the required argument and outputs generated headers.
 An example of an authentication header generation with PHP:
 
 .. code-block:: php
-    :linenos:
+
 
     $userName = 'your username';
     $userApiKey = 'your apiKey';
@@ -114,7 +114,7 @@ Here's an example of a REST API request header with the WSSE authentication.
 Please pay attention to the **Authentication** and **X-WSSE** parameters:
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users HTTP/1.1
     Accept: application/vnd.api+json

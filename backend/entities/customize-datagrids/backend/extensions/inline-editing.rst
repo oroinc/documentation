@@ -12,7 +12,7 @@ To enable inline editing on a grid, do the following:
 - Add the following lines into the datagrid configuration
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         {grid-uid}:
@@ -29,7 +29,7 @@ Datagrid Configuration Details
 ------------------------------
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         {grid-uid}:
@@ -66,7 +66,7 @@ Datagrid Configuration Details
 **Sample usage of the save_api_accessor with full options provided**
 
 .. code-block:: yaml
-   :linenos:
+
 
     save_api_accessor:
         route: oro_opportunity_task_update # for example this route uses following mask
@@ -87,7 +87,7 @@ Column Configuration Options
 ----------------------------
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         {grid-uid}:
@@ -133,7 +133,7 @@ frontend_type: select - simple choice from provided values
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         {grid-uid}:
@@ -156,7 +156,7 @@ frontend_type: multi-select - simple choice from provided values allow choose fe
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         {grid-uid}:
@@ -179,7 +179,7 @@ frontend_type: relation - select2 type with autocomplete search function
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         {grid-uid}:
@@ -200,7 +200,7 @@ frontend_type: multi-relation - select2 type with autocomplete search function a
 Example:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         {grid-uid}:

@@ -22,7 +22,7 @@ To implement your own datasource type:
 - Register your type as a tagged service - ``{ name: oro_datagrid.datasource, type: YOUR_CUSTOM_TYPE_NAME }``
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -79,7 +79,7 @@ To implement your own datasource type:
 Add the service definition to ``services.yml``:
 
 .. code-block:: yaml
-   :linenos:
+
 
     acme_bundle.datagrid.datasource.array:
         class: Acme\Bundle\AcmeBundle\Datagrid\Datasource\CustomDatasource
@@ -90,7 +90,7 @@ Add the service definition to ``services.yml``:
 Now that you have created your custom datasource type, you can use it in any datagrid. In the configuration of the datagrid tells OroPlatform to use this datasource via the `type` parameter under the `source` node:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -104,7 +104,7 @@ ACL
 You can protect a datasource with ACL by adding the ``acl_resource`` parameter under the ``source`` node in the datagrid configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:

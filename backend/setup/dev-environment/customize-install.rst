@@ -20,7 +20,7 @@ You can create your own migrations that can be executed during the installation.
 A migration is a class which implements the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Migration/CustomMigration.php
     namespace Acme\DemoBundle\Migration;
@@ -51,7 +51,7 @@ your own migrations in your event listener. Use the
 of the passed event instance to register your custom migrations:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/EventListener/RegisterCustomMigrationListener.php
     namespace Acme\DemoBundle\EventListener;
@@ -91,7 +91,7 @@ Load Custom Data Fixtures
 To load your own data fixtures, you will need to implement Doctrine's *"FixtureInterface"*:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
     namespace Acme\DemoBundle\Migrations\Data\ORM;

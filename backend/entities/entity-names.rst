@@ -53,7 +53,7 @@ The first provider that is able to return a reliable result wins. The rest of pr
 To create an Entity Name Provider you should implement the |EntityNameProviderInterface|:
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\EntityBundle\Provider\EntityNameProviderInterface;
 

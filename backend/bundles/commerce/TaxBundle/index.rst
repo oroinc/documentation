@@ -21,7 +21,7 @@ You can add your own custom tax logic with custom tax provider.
 1. Create tax provider that implements |TaxProviderInterface| interface:
 
 .. code-block:: php
-   :linenos:
+
 
    <?php
 
@@ -86,7 +86,7 @@ You can add your own custom tax logic with custom tax provider.
 2. Register your own tax provider in the service container using the ``oro_tax.tax_provider`` tag with the ``alias`` attribute that contains a unique name of the tax provider:
 
 .. code-block:: yaml
-   :linenos:
+
 
    # src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 

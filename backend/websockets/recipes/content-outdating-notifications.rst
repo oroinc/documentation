@@ -31,7 +31,7 @@ sending to the **tagContent** method a **unique content tag** for this content a
 executed if the content is changed.
 
 .. code-block:: javascript
-    :linenos:
+
 
     import loadModules from 'oroui/js/app/services/load-modules';
 
@@ -58,14 +58,14 @@ To create your own generator, you should develop a class that implements
 To generate a content tag on the **frontend side**, you should use the **oro_sync_get_content_tags** Twig function:
 
 .. code-block:: php
-    :linenos:
+
 
     oro_sync_get_content_tags(data, includeCollectionTag = false, processNestedData = false)
 
 Therefore, the full example for adding the content to the tracked one in Content Manager is:
 
 .. code-block:: php
-    :linenos:
+
 
     {% import 'OroUIBundle::macros.html.twig' as UI %}
 
@@ -80,7 +80,7 @@ That is what the macro **syncContentTags** does if you see in its source code in
 to the Content Manager tracking registry is
 
 .. code-block:: twig
-    :linenos:
+
 
     {% import 'OroSyncBundle:Include:contentTags.html.twig' as syncMacro %}
     {{ syncMacro.syncContentTags(entity) }}
@@ -88,7 +88,7 @@ to the Content Manager tracking registry is
 To generate a content tag on the backend side, you can use the **oro_sync.content.tag_generator** service directly:
 
 .. code-block:: php
-    :linenos:
+
 
     /** @var TagGeneratorInterface $tagGenerator */
     $tagGenerator = $container->get(‘oro_sync.content.tag_generator’);
@@ -114,7 +114,7 @@ If your content type depends on another content type and you want the user to re
 content type on your content type page, you have to add another content type tag to the Content Manager tracking registry:
 
 .. code-block:: twig
-    :linenos:
+
 
     {% import 'OroSyncBundle:Include:contentTags.html.twig' as syncMacro %}
     {{ syncMacro.syncContentTags(primaryEntity) }}

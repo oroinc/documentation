@@ -58,7 +58,7 @@ Routes
 Routes module (`oroui/js/app/routes`) is an array with only one route, which matches any URL and refers to the `index` method of `controllers/page-controller`:
 
 .. code-block:: yaml
-   :linenos:
+
 
     [
         ['*pathname', 'page#index']
@@ -70,7 +70,7 @@ Application Configuration
 Macros from `OroAssetBundle:Asset.html.twig` is utilized for passing options to the application's constructor. The configuration is placed in `OroUIBundle::js_modules_config.html.twig` template:
 
 .. code-block:: none
-   :linenos:
+
 
    {% import '@OroAsset/Asset.html.twig' as Asset %}
    {{ Asset.js_modules_config({
@@ -99,7 +99,7 @@ File structures and naming conventions use best practices of Backbone
 development adopted for Oro needs.
 
 .. code-block:: text
-   :linenos:
+
 
     AcmeBundle/Resources/public
     ├── css
@@ -224,7 +224,7 @@ Page Controller
 The route module contains the only route mask that always leads to the PageController::index action point.
 
 .. code-block:: javascript
-   :linenos:
+
 
     module.exports = [
         ['*pathname', 'page#index']
@@ -281,7 +281,7 @@ data-attributes in the HTML node:
 * ``data-page-component-options`` --- a safe JSON-string
 
 .. code-block:: html+jinja
-    :linenos:
+
 
     {% set options  = {
         metadata: metaData,
@@ -328,7 +328,7 @@ They make the whole application modular and the functionality distributed among 
 App Modules are declared in the ``jsmodules.yml`` configuration file in the custom ``app-modules`` section:
 
 .. code-block:: yaml
-   :linenos:
+
 
     app-modules:
         - oroui/js/app/modules/messenger-module
@@ -343,7 +343,7 @@ Example
 ``oroui/js/app/modules/messenger-module`` declares handlers of the messenger in ``mediator``.
 
 .. code-block:: javascript
-   :linenos:
+
 
     import mediator from 'oroui/js/mediator';
     import messenger from 'oroui/js/messenger';
@@ -362,7 +362,7 @@ they are used. The handlers can be executed by any component or view
 in the Chaplin lifecycle.
 
 .. code-block:: javascript
-   :linenos:
+
 
     mediator.execute('showMessage', 'success', 'Record is saved');
 

@@ -9,7 +9,7 @@ You can configure a query using the ``query`` param under the source tree. This 
 **Example**
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -30,7 +30,7 @@ By default, all datagrids that use ORM datasource are marked by the |HINT_PRECIS
 If you need to disable this behaviour for your datagrid, use the following configuration:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -50,7 +50,7 @@ Modify Query Configuration from PHP Code
 You can modify query configuration from PHP code, for example from the datagrid :ref:`extensions <customize-datagrid-extensions>` or :ref:`listeners <customizing-data-grid-in-orocommerce-backend-extendability>`. This can be done using |OrmQueryConfiguration| class. To get an instance of this class, use the `getOrmQuery` method of |DatagridConfiguration|. For example:
 
 .. code-block:: php
-   :linenos:
+
 
     $query = $config->getOrmQuery();
     $rootAlias = $query->getRootAlias();
@@ -68,7 +68,7 @@ In additional to query modification methods, the |OrmQueryConfiguration| contain
 Example of ``convertAssociationJoinToSubquery`` usage in a datagrid listener:
 
 .. code-block:: none
-   :linenos:
+
 
     public function onPreBuild(PreBuild $event)
     {
@@ -90,7 +90,7 @@ Example of ``convertAssociationJoinToSubquery`` usage in a datagrid listener:
 The original query:
 
 .. code-block:: yaml
-   :linenos:
+
 
     query:
         select:
@@ -105,7 +105,7 @@ The original query:
 The converted query:
 
 .. code-block:: yaml
-   :linenos:
+
 
     query:
         select:
@@ -121,7 +121,7 @@ Add Query Hints
 The following example shows how |Doctrine query hints| can be set:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -139,7 +139,7 @@ The following example shows how |Doctrine query hints| can be set:
 If you need to set the hint's value, use the following syntax:
 
 .. code-block:: yaml
-   :linenos:
+
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -162,7 +162,7 @@ If you need to set the hint's value, use the following syntax:
 Please keep in mind that ORM datasource uses `Query Hint Resolver` service to handle hints. If you create your own query walker and wish to use it in a grid, register it in the Query Hint Resolver. For example, hint ``HINT_TRANSLATABLE`` is registered as an alias for the translation walker and as result the following configurations are equal:
 
 .. code-block:: yaml
-   :linenos:
+
 
     hints:
         - { name: HINT_CUSTOM_OUTPUT_WALKER, value: Gedmo\Translatable\Query\TreeWalker\TranslationWalker }

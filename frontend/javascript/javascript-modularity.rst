@@ -26,7 +26,7 @@ Making components available in other files, we must first export and then import
     * |ES6 Modules|
 
 .. code-block:: javascript
-    :linenos:
+
 
     import BaseEmailVariableView from 'oroemail/js/email/variable/view';
 
@@ -56,7 +56,7 @@ have to be loaded and executed and, therefore, keeping the global scope clean.
     * |Writing Modular JavaScript|
 
 .. code-block:: javascript
-    :linenos:
+
 
     define(function (require) {
         'use strict';
@@ -79,7 +79,7 @@ For that you may use |scriptjs| library.
 It takes care of downloading and evaluating the external script at runtime.
 
 .. code-block:: javascript
-    :linenos:
+
 
     import scriptjs from 'scriptjs';
     import BaseView from 'oroui/jsbase/view';

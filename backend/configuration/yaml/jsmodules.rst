@@ -26,7 +26,7 @@ Webpack entry points configuration. For each new entry point, add the script tag
 with the entry point file path to the twig template or layout update to load the entry point file on a page.
 
 .. code-block:: yaml
-    :linenos:
+
 
     entry:
         app:
@@ -44,7 +44,7 @@ Webpack provides the corresponding syntax and description in its documentation (
 Aliases can help import certain modules easily using short names.
 
 .. code-block:: yaml
-    :linenos:
+
 
     aliases:
         backbone$: backbone/backbone
@@ -58,7 +58,7 @@ Aliases can help import certain modules easily using short names.
 Introduces a list of modules that should be initialized before application is launched. They can be used to track certain page events with bundle specific handlers, etc.
 
 .. code-block:: yaml
-    :linenos:
+
 
     app-modules:
         - oroui/js/app/modules/jstree-actions-module
@@ -72,7 +72,7 @@ Introduces a list of modules that should be initialized before application is la
 Each module that should be configured at runtime (e.g., via twig templates) must be specified in this section where the key of the map is a module name, and the value is an empty object.
 
 .. code-block:: yaml
-    :linenos:
+
 
     configs:
         controllers/page-controller: {}
@@ -86,7 +86,7 @@ Each module that should be configured at runtime (e.g., via twig templates) must
 Add a module name to this section to be able to import a module with the name that is determined at runtime.
 
 .. code-block:: javascript
-    :linenos:
+
 
     import loadModules from 'oroui/js/app/services/load-modules';
 
@@ -95,7 +95,7 @@ Add a module name to this section to be able to import a module with the name th
 Insert a module name to this section nested into the subsection with the name of webpack build chunk where modules have to be added.
 
 .. code-block:: yaml
-    :linenos:
+
 
     dynamic-imports
         oroui:
@@ -122,7 +122,7 @@ the bundle itself needs the original version of the library to be able to extend
 the original version when requiring it:
 
 .. code-block:: yaml
-    :linenos:
+
 
     map:
         '*':
@@ -156,7 +156,7 @@ configures the module must be specified. It can consist of the following keys:
     Specify which local variables have to be exposed globally. See |Webpack Expose Loader| for the details.
 
 .. code-block:: yaml
-    :linenos:
+
 
     shim:
         bootstrap-typeahead:

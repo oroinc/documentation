@@ -37,7 +37,7 @@ It is **required** to add or update a DocBlock for any method you modify or prod
    For example:
 
    .. code-block:: php
-       :linenos:
+
 
         /**
          * Returns the products associated with the provided line item.
@@ -56,7 +56,7 @@ It is **required** to add or update a DocBlock for every property where the data
 An example of correct DocBlock usage:
 
 .. code-block:: php
-    :linenos:
+
 
     namespace Oro\Bundle\DataGridBundle\Datasource;
 
@@ -109,7 +109,7 @@ Comment specifying the LTS version number in which the deprecated code will be r
 Describe alternative methods or approaches if possible. The following is an example of @deprecated usage:
 
 .. code-block:: php
-    :linenos:
+
 
     class ResultRecord
     {
@@ -142,7 +142,7 @@ Classes and functions from the root namespace should not be imported.
 Import internal PHP classes example:
 
 .. code-block:: php
-    :linenos:
+
 
     // incorrect
     use DateTime;
@@ -160,7 +160,7 @@ PHP code style is controlled by the |PHP CodeSniffer tool| according to the rule
 
 We highly recommended developers to configure appropriate code style inspections in the IDE or run these inspections manually before merging changes to the master branch. It prevents failures of the build that checks code standards.
 
- .. note:: Information on how to enable PHP CodeSniffer inspection with the custom set of rules in the PHPStorm can be found |in PHPStorm documentation|.
+.. note:: Information on how to enable PHP CodeSniffer inspection with the custom set of rules in the PHPStorm can be found |in PHPStorm documentation|.
 
 **PHP mess detector**
 

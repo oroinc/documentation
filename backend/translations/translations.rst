@@ -34,7 +34,7 @@ To use this approach, add the translation file to the bundle:
 **Resources/translations/messages.en.yml**
 
 .. code-block:: php
-   :linenos:
+
 
     oro:
        translation:
@@ -45,14 +45,14 @@ Use the Symfony translator to translate a label in the `twig` template:
 **Resources/views/Form/form.html.twig**
 
 .. code-block:: php
-   :linenos:
+
 
     {{ ‘oro.translation.some_field.label’|trans }}
 
 or in the `php` code:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -104,7 +104,7 @@ translations grid to retrieve data based on the current locale.
 Bellow is an example of an entity which must work with `Gedmo/Translatable` for the `name` field of this entity.
 
 .. code-block:: php
-   :linenos:
+
 
    <?php
 
@@ -173,7 +173,7 @@ Also, `Gedmo/Translatable` requires a dictionary with all translations for the o
 
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -201,7 +201,7 @@ For the grid to have working translations for entities with `Gedmo` fields, add 
 **Resources/config/oro/datagrids.yml**
 
 .. code-block:: php
-   :linenos:
+
 
     datagrids:
        acme-grid:
@@ -217,7 +217,7 @@ Below is a simple example of a grid configuration which uses the hint:
 
 
 .. code-block:: php
-   :linenos:
+
 
     datagrids:
        acme-grid:
@@ -275,7 +275,7 @@ To implement this approach, use the
 To use `LocalizedFallbackValue` for fields into the entity, make it is extendable:
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -311,7 +311,7 @@ To use `LocalizedFallbackValue` for fields into the entity, make it is extendabl
 
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -337,7 +337,7 @@ inside the bundle class:
 
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -368,7 +368,7 @@ As the result, a proxy class is generated in the application cache:
 **cache/prod/oro_entities/Extend/Entity/EX_OroAcmeBundle_Acme.php**
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 
@@ -393,7 +393,7 @@ To be able to provide translations in the UI, use the following example of the f
 
 
 .. code-block:: php
-   :linenos:
+
 
     <?php
 

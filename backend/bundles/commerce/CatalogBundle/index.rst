@@ -22,7 +22,7 @@ Default breadcrumbs of OroCatalogBundle are built based on the category tree.
 For example, a simple category tree for ``category-1-1-1`` is built as follows:
 
 .. code-block:: none
-   :linenos:
+
 
     - category-1
         - category-1-1
@@ -34,7 +34,7 @@ For example, a simple category tree for ``category-1-1-1`` is built as follows:
 and will look like:
 
 .. code-block:: none
-   :linenos:
+
 
      All Products \ category-1 \ category-1-1 \ category-1-1-1
 
@@ -52,7 +52,7 @@ The category tree is cached for complex menus when the oro_fallback_localization
 You can control the default lifetime of cache in the ``Resources/config/layout.yml`` file. This value is set in seconds. So when configuring
 
 .. code-block:: none
-   :linenos:
+
 
        oro_catalog.layout.data_provider.category:
             [...]

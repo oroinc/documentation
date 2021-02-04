@@ -10,7 +10,7 @@ content as the first argument and the status code as the second.
 Study the example below:
 
 .. code-block:: php
-    :linenos:
+
 
          /**
          * @Route("/sample_not_found_page_code")

@@ -20,7 +20,7 @@ Let us assume that we want to create the AcmeNewBundle and put it under the name
 in the ``/src`` directory. We need to create the corresponding directory structure and the bundle file with the following content:
 
 .. code-block:: php
-    :linenos:
+
 
     <?php
     // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
@@ -43,7 +43,7 @@ Basically, it is a regular Symfony bundle. The only difference is in the way it 
 .. .. _Symfony command generate:bundle: http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/commands/generate_bundle.html
 ..
 .. .. code-block:: bash
-..     :linenos:
+..
 ..
 ..     user@host:/var/www/vhosts/platform-application$ php bin/console generate:bundle
 ..     Bundle namespace: Acme/Bundle/NewBundle
@@ -80,7 +80,7 @@ Now you have all the required files to enable the new bundle. To enable the bund
 #. Create Resources/config/oro/bundles.yml with the following content:
 
    .. code-block:: yaml
-       :linenos:
+
 
        # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
        bundles:
@@ -91,7 +91,7 @@ Now you have all the required files to enable the new bundle. To enable the bund
 #. Regenerate the application cache using the console command ``cache:clear``:
 
    .. code-block:: bash
-       :linenos:
+
 
        user@host:/var/www/vhosts/platform-application$ php bin/console cache:clear
        Clearing the cache for the dev environment with debug true
@@ -123,21 +123,21 @@ To create an installer for AcmeBundle:
 1. Clear the application cache:
 
    .. code-block:: bash
-      :linenos:
+
 
       bin/console cache:clear
 
 2. Apply the changes that you defined in your code to the database:
 
    .. code-block:: bash
-      :linenos:
+
 
       bin/console doctrine:schema:update
 
 3. Generate an installer and save it to the AcmeBundleInstaller.php:
 
    .. code-block:: bash
-      :linenos:
+
 
       bin/console oro:migration:dump --bundle=AcmeBundle > AcmeBundleInstaller.php
 
@@ -151,14 +151,14 @@ To create an installer for AcmeBundle:
 #. Check that the database is synced with your code:
 
    .. code-block:: bash
-      :linenos:
+
 
       bin/console doctrine:schema:update --dump-sql
 
    If the database is successfully synchronized, you will see the following message:
 
    .. code-block:: bash
-      :linenos:
+
 
       Nothing to update - your database is already in sync with the current entity metadata.
 

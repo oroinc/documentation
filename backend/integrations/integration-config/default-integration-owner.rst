@@ -12,7 +12,7 @@ It is registered as service `oro_integration.helper.default_owner_helper` and ca
 **Usage Example:**
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\ImportExportBundle\Strategy\StrategyInterface;
     use Oro\Bundle\IntegrationBundle\ImportExport\Helper\DefaultOwnerHelper;

@@ -12,7 +12,7 @@ Options
 Configures default values for particular config options on a per property basis:
 
 .. code-block:: php
-    :linenos:
+
 
     // ...
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
@@ -40,7 +40,7 @@ This example sets the ``auditable`` option from the ``dataaudit`` scope to ``tru
 The route name of view that shows the datagrid of available records:
 
 .. code-block:: php
-    :linenos:
+
 
     // ...
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
@@ -61,7 +61,7 @@ The route name of view that shows the datagrid of available records:
 The route name of a controller that shows a particular object:
 
 .. code-block:: php
-    :linenos:
+
 
     // ...
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
@@ -82,7 +82,7 @@ The route name of a controller that shows a particular object:
 The route name of a controller that creates an object:
 
 .. code-block:: php
-    :linenos:
+
 
         // ...
         use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
@@ -103,7 +103,7 @@ The route name of a controller that creates an object:
 The route name of controller action that updates an object:
 
 .. code-block:: php
-    :linenos:
+
 
             // ...
             use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;

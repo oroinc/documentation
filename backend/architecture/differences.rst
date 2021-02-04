@@ -25,7 +25,7 @@ This file has to contain a list of bundle classes to initialize under the ``bund
 this will only be one class name:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/bundles.yml
     bundles:
@@ -35,7 +35,7 @@ Optionally, you can also specify a priority. The priority defines the order in w
 be loaded. If you omit the priority, its value will implicitly be 0:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # src/Acme/DemoBundle/Resources/config/oro/bundles.yml
     bundles:
@@ -59,7 +59,7 @@ However, usually you would manually an import for your routing configuration in 
 ``routing.yml`` file in your ``config`` directory like this:
 
 .. code-block:: yaml
-    :linenos:
+
 
     # config/routing.yml
     default_controller:
@@ -84,7 +84,7 @@ things easier by providing an |@Acl| annotation that you can use to define an AC
 a controller in a single step:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Controller/BlogController.php
     namespace Acme\DemoBundle\Controller;
@@ -109,7 +109,7 @@ a controller in a single step:
 Furthermore, once an ACL has been defined, you can reuse it using the |@AclAncestor| annotation:
 
 .. code-block:: php
-    :linenos:
+
 
     // src/Acme/DemoBundle/Controller/BlogController.php
     namespace Acme\DemoBundle\Controller;

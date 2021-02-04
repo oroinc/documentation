@@ -29,7 +29,7 @@ Formats response before it is sent out from this api accessor.
 Converts it to form
 
 .. code-block:: javascript
-   :linenos:
+
 
     {
         results: [{id: '<value>', label: '<label>'}, ...],

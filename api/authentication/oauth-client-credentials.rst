@@ -32,7 +32,7 @@ To configure the authentication via the client credentials grant type and retrie
 Request
 
 .. code-block:: http
-    :linenos:
+
 
     POST /oauth2-token HTTP/1.1
     Content-Type: application/json
@@ -40,7 +40,7 @@ Request
 Request Body
 
 .. code-block:: json
-    :linenos:
+
 
     {
         "grant_type": "client_credentials",
@@ -51,7 +51,7 @@ Request Body
 Response Body
 
 .. code-block:: json
-    :linenos:
+
 
     {
         "token_type": "Bearer",
@@ -65,7 +65,7 @@ the previous token expires.
 An example of an API request:
 
 .. code-block:: http
-    :linenos:
+
 
     GET /api/users HTTP/1.1
     Accept: application/vnd.api+json

@@ -31,7 +31,7 @@ The scope manager is a service that provides an interface for collecting the sco
 * Use scope criteria providers to get a portion of the scope information.
 
 .. code-block:: php
-    :linenos:
+
 
     // Find an existing scope or return null
     $scope = $scopeManager->find(ProductVisibility::getScopeType(), [
@@ -64,7 +64,7 @@ Add Scope Criteria
 To add criteria to the scope, extend the scope entity using migration, as shown in the following example:
 
 .. code-block:: php
-    :linenos:
+
 
     class OroCustomerBundleScopeRelations implements Migration, ScopeExtensionAwareInterface
     {
@@ -96,7 +96,7 @@ To extend a scope with a criterion that may be provided by your bundle:
    as shown in the following example:
 
 .. code-block:: php
-    :linenos:
+
 
     class ScopeUserCriteriaProvider implements ScopeCriteriaProviderInterface
     {
@@ -150,7 +150,7 @@ To extend a scope with a criterion that may be provided by your bundle:
 2. Register the created provider as a service tagged with the `oro_scope.provider` tag, like in the following example:
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_customer.customer_scope_criteria_provider:
         class: Oro\Bundle\CustomerBundle\Provider\ScopeCustomerCriteriaProvider
@@ -179,7 +179,7 @@ The scope manager exposes the following operations for the scope-consuming bundl
 * Find the scope by current data (when the context is NULL)
 
 .. code-block:: php
-    :linenos:
+
 
     $scopeManager->find($scopeType, $context = null)
 
@@ -187,7 +187,7 @@ The scope manager exposes the following operations for the scope-consuming bundl
 Find the scope or create a new one, if it is not found
 
 .. code-block:: php
-    :linenos:
+
 
     $scopeManager->findOrCreate($scopeType, $context = null)
 
@@ -195,7 +195,7 @@ Find the scope or create a new one, if it is not found
 Get the default scope (returns a scope with empty scope criteria)
 
 .. code-block:: php
-    :linenos:
+
 
     $scopeManager->findDefaultScope()
 
@@ -203,7 +203,7 @@ Get the default scope (returns a scope with empty scope criteria)
 Get all scopes that match the given context. When some scope criteria are not provided in the context, the scopes are filtered by the available criteria.
 
 .. code-block:: php
-    :linenos:
+
 
     $scopeManager->findRelatedScopes($scopeType, $context = null);
 
@@ -223,7 +223,7 @@ For example, let's create the following scope criteria providers and register th
 The scope model has three fields:
 
 .. code-block:: php
-    :linenos:
+
 
     class Scope
     {
@@ -250,7 +250,7 @@ and the existing scopes in the scope repository are as follows:
 In order to fetch all scopes that match the customer with id equal to 1, you can use findRelatedScopes and pass *web_content* and 'customer'=>1 in the parameters.
 
 .. code-block:: php
-    :linenos:
+
 
     $context = ['customer' => 1];
     $scopeManager->findRelatedScopes('web_content', $context)
@@ -259,7 +259,7 @@ In order to fetch all scopes that match the customer with id equal to 1, you can
 We may or may not know other scope criteria that are available for this scope type. The scope manager fills in the blanks and adds the *criterion IS NOT NULL* condition for any scope criterion we do not have in the context. For our example, the scope manager's query looks like:
 
 .. code-block:: sql
-    :linenos:
+
 
     WHERE customer_id = 1 AND website_id IS NOT NULL AND customer_group_id IS NULL;
 
@@ -289,7 +289,7 @@ When the slug URLs are linked to the scopes, in a many-to-many way, and we need 
 The scope criteria providers are already registered in the *service.yml* file:
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_customer.customer_scope_criteria_provider:
         class: Oro\Bundle\CustomerBundle\Provider\ScopeCustomerCriteriaProvider
@@ -305,7 +305,7 @@ The scope criteria providers are already registered in the *service.yml* file:
 In this code example, we build a query and modify it with the ScopeCriteria methods:
 
 .. code-block:: php
-    :linenos:
+
 
     $qb->select('slug')
         ->from(Slug::class, 'slug')
@@ -331,7 +331,7 @@ The scopes applicable for the current context are:
 Here is the resulting modified query:
 
 .. code-block:: sql
-    :linenos:
+
 
     SELECT slug.*
     FROM oro_redirect_slug slug
@@ -352,7 +352,7 @@ Now, let's add another scope criterion provider to `WebsiteBundle` for the *web_
 In the bundle's *service.yml* file, we add:
 
 .. code-block:: yaml
-    :linenos:
+
 
     oro_website.website_scope_criteria_provider:
         class: Oro\Bundle\WebsiteBundle\Provider\ScopeCriteriaProvider
@@ -373,7 +373,7 @@ In the current context, the website id is 1, and the scopes of the web_content t
 The updated query is automatically changed to the following one:
 
 .. code-block:: none
-    :linenos:
+
 
     SELECT slug.*
     FROM oro_redirect_slug slug

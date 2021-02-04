@@ -8,7 +8,7 @@ Abstraction of api access point. This class is by design to be initiated from th
 The following example of configuration provided on the server is a sample usage of api_accessor with a full set of options provided(except `route_parameters_rename_map`):
 
 .. code-block:: yaml
-   :linenos:
+
 
     save_api_accessor:
         route: orocrm_opportunity_task_update # for example this route uses following mask
@@ -24,7 +24,7 @@ The following example of configuration provided on the server is a sample usage 
 Then the following code on the client:
 
 .. code-block:: javascript
-   :linenos:
+
 
     var apiAP = new ApiAccessror(serverConfiguration);
     apiAP.send({id: 321}, {name: 'new name'}).then(function(result) {

@@ -37,7 +37,7 @@ To automatically generate a price list in OroCommerce:
    For example, to include all products in categories 1 and 5, use the following expression:
 
    .. code-block:: rst
-      :linenos:
+
 
       product.category == 1 or product.category == 5
 
@@ -56,7 +56,7 @@ To automatically generate a price list in OroCommerce:
    The following example illustrates filtering products in stock with the list price (also known as manufacturer’s suggested retail price - MSRP) that is higher than 100 USD per item:
 
    .. code-block:: rst
-       :linenos:
+
 
        product.msrp.value > 100 and product.msrp.currency == ‘USD’ and
        product.msrp.unit == ‘item’ and product.inventory_status == ‘in_stock’
@@ -88,7 +88,7 @@ To automatically generate a price list in OroCommerce:
       To set the price for all products to 99 USD, use the following expression:
 
       .. code-block:: rst
-          :linenos:
+
 
               99
 
@@ -107,7 +107,7 @@ To automatically generate a price list in OroCommerce:
       To set the price (for one item in US dollars) to be 5 USD more than the target margin (custom property of the product category), use the following expression:
 
       .. code-block:: rst
-           :linenos:
+
 
                product.msrp.value * product.category.margin + 5
 
@@ -131,7 +131,7 @@ To automatically generate a price list in OroCommerce:
       For example, you have decided to set price 99 USD only to the products from the category 1. Then you have entered *99* in the **Calculate As** field (see step a. the first example. In the **Condition** field, enter the following expression:
 
       .. code-block:: rst
-          :linenos:
+
 
              product.category == 1
 
@@ -204,7 +204,7 @@ Product Assignment
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rst
-   :linenos:
+
 
     product.id in pricelist[2].assignedProducts
 
@@ -218,14 +218,14 @@ The first one defines that the price must be set $1 less than the current if the
 **Calculate As**
 
 .. code-block:: rst
-   :linenos:
+
 
    pricelist[2].prices.value - 1
 
 **Condition**
 
 .. code-block:: rst
-   :linenos:
+
 
    pricelist[2].prices.value < 10
 
@@ -234,14 +234,14 @@ Then click **+Add**, and the second rule that defines that the price must be set
 **Calculate As**
 
 .. code-block:: rst
-   :linenos:
+
 
    pricelist[2].prices.value - 2.5
 
 **Condition**
 
 .. code-block:: rst
-   :linenos:
+
 
    pricelist[2].prices.value >= 10
 
@@ -261,7 +261,7 @@ Product Assignment
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rst
-   :linenos:
+
 
    product.sku matches 'TAG%'
 
@@ -271,7 +271,7 @@ Price Calculation Rule
 **Calculate As**
 
 .. code-block:: rst
-   :linenos:
+
 
    20
 
@@ -288,7 +288,7 @@ Product Assignment
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rst
-   :linenos:
+
 
    product.createdAt > '1/5/2017'
 
@@ -298,7 +298,7 @@ Price Calculation Rule
 **Calculate As**
 
 .. code-block:: rst
-   :linenos:
+
 
    product.msrp.value * 1.15
 
@@ -313,7 +313,7 @@ Product Assignment
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rst
-   :linenos:
+
 
    product.featured == true and product.category.id == 7
 
@@ -323,7 +323,7 @@ Price Calculation Rule
 **Calculate As**
 
 .. code-block:: rst
-   :linenos:
+
 
    product.map.value
 
@@ -338,7 +338,7 @@ Product Assignment
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rst
-   :linenos:
+
 
    product.id in [14,10,312,62]
 
@@ -355,7 +355,7 @@ Price Calculation Rule
 **Calculate As**
 
 .. code-block:: rst
-   :linenos:
+
 
    pricelist[1].prices.value + 5
 
@@ -370,7 +370,7 @@ Product Assignment
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rst
-   :linenos:
+
 
    product.brand.id != 5
 
@@ -380,7 +380,7 @@ Price Calculation Rule
 **Calculate As**
 
 .. code-block:: rst
-   :linenos:
+
 
    pricelist[1].prices.value * 0.9
 
@@ -400,14 +400,14 @@ Next, you entered the actual color for every product, and some of them indeed we
 Here is the product assignment rule that builds a price list of all yellow items in the catalog:
 
 .. code-block:: rst
-    :linenos:
+
 
     product.color == “yellow”
 
 And price rule that adds 10% to the list price:
 
 .. code-block:: rst
-    :linenos:
+
 
     pricelist[1].prices.value * 1.1
 

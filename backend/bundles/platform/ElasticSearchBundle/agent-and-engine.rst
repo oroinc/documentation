@@ -18,7 +18,7 @@ field type mappings. Field type mappings are injected through the DI as a parame
 *oro\_elasticsearch.field\_type\_mapping*:
 
 .. code-block:: yaml
-   :linenos:
+
 
     text:
         type: keyword

@@ -9,7 +9,7 @@ Header
 This option is used to configure a custom column header. A field label is used by default.
 
 .. code-block:: php
-   :linenos:
+
 
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
 
@@ -32,7 +32,7 @@ Order
 This option is used to configure a custom column order.
 
 .. code-block:: php
-    :linenos:
+
 
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
 
@@ -55,7 +55,7 @@ Identity
 The fields with this option are used to identify (search) the entity. It is possible to use multiple identity fields for one entity.
 
 .. code-block:: php
-    :linenos:
+
 
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
 
@@ -78,7 +78,7 @@ Excluded
 The fields with this option cannot be exported.
 
 .. code-block:: php
-    :linenos:
+
 
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
 
@@ -103,7 +103,7 @@ All the fields of the related entity are exported. The fields with the [Excluded
 If **full** is set to *false* (the default value), only the fields with an identity will be exported. 
 
 .. code-block:: php
-    :linenos:
+
 
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
 
