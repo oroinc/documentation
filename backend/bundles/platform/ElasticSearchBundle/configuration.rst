@@ -193,5 +193,17 @@ to fill it with data.
     php bin/console oro:elasticsearch:create-standard-indexes --env=prod
     php bin/console oro:search:reindex --env=prod --scheduled
 
+Boost search by Name and SKU
+----------------------------
+
+The bundle provides the ability to make Name and SKU attributes more important than others in the global search in the storefront.
+Use option ``boost_name_and_sku_by_default`` to enable the boost:
+
+.. code-block:: yaml
+
+    oro_search:
+        engine_parameters:
+            boost_name_and_sku_by_default: true
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
