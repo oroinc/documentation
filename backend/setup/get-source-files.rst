@@ -56,23 +56,23 @@ Method 2: Use the GitHub Repository
    .. code-block:: bash
 
     # OroCommerce Community Edition
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-application my_project_name
+    git clone -b 5.0.0 https://github.com/oroinc/orocommerce-application my_project_name
     # OroCommerce Enterprise Edition
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-application my_project_name
+    git clone -b 5.0.0 https://github.com/oroinc/orocommerce-enterprise-application my_project_name
     # OroCRM Community Edition
-    git clone -b 4.2.0 https://github.com/oroinc/crm-application my_project_name
+    git clone -b 5.0.0 https://github.com/oroinc/crm-application my_project_name
     # OroCRM Enterprise Edition
-    git clone -b 4.2.0 https://github.com/oroinc/crm-enterprise-application my_project_name
+    git clone -b 5.0.0 https://github.com/oroinc/crm-enterprise-application my_project_name
     # OroPlatform Community Edition
-    git clone -b 4.2.0 https://github.com/oroinc/platform-application my_project_name
+    git clone -b 5.0.0 https://github.com/oroinc/platform-application my_project_name
     # OroCommerce Community Edition for Germany
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-application-de my_project_name
+    git clone -b 5.0.0 https://github.com/oroinc/orocommerce-application-de my_project_name
     # OroCommerce Enterprise Edition for Germany
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-application-de my_project_name
+    git clone -b 5.0.0 https://github.com/oroinc/orocommerce-enterprise-application-de my_project_name
     # OroCommerce Enterprise Edition (without CRM)
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-nocrm-application my_project_name
+    git clone -b 5.0.0 https://github.com/oroinc/orocommerce-enterprise-nocrm-application my_project_name
 
-   * Replace the ``4.2.0`` with the version to download.
+   * Replace the ``5.0.0`` with the version to download.
 
    * ``my_project_name`` is the directory to clone the application source files into.
 

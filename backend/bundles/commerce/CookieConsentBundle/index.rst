@@ -21,7 +21,7 @@ To set up a cookie banner:
 .. code-block:: none
 
       "require": {
-        "oro/cookie-consent": "4.2.*"
+        "oro/cookie-consent": "5.0.*"
       }
 
 2. Run the following commands:
