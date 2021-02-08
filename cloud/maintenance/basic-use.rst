@@ -507,10 +507,10 @@ Media Upload
 .. note:: Please always use `underscores` instead of `spaces` for the `source` directory name and for all file names too.
 
 Sometimes, you may require to upload media files that relate to custom CMS page(s) or products
-to a specific ``public`` or ``data/importexport`` directory.
+to a specific ``public`` directory.
 This can be done with the ``media:upload`` command that allows to upload media files, e.g.,
 ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml``
-to the ``[public|web]/media/uploads/`` or  ``[app|var]/data/importexport/product_images/`` directory.
+to the ``uploads`` gridFS database.
 
 .. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
 
@@ -528,7 +528,7 @@ To display the command description and help, run the following:
 
 
     Description:
-      Uploads media content from the given source to a selected destination [ public | products ].
+      Uploads media content from the given source to a selected destination: [uploads] (for GridFS).
       Allowed file types: [ *.svg | *.ttf | *.woff | *.woff2 | *.jpg | *.jpeg | *.jp2 | *.jxr |
        *.webp | *.gif | *.png | *.ico | *.css | *.scss | *.pdf | *.rtf | *.js | *.xml | mimetype ]
 
@@ -537,7 +537,7 @@ To display the command description and help, run the following:
 
     Arguments:
       source                A media source directory full path, e.g., `/tmp/media/`
-      destination           A media destination location. Allowed values: [ public | products ]
+      destination           A media destination location. Allowed values: [ uploads ]
 
     Options:
           --log=LOG         Log to file
@@ -552,7 +552,7 @@ To display the command description and help, run the following:
       -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
 
 The following command simulates (the command is executed in the ``DRY-RUN`` mode) the transfer of media files
-from the `/tmp/media` directory into the destination directory, which will be asked.
+from the `/tmp/media` directory into the destination directory.
 Also, if some files cannot be transferred due to particular restrictions, the appropriate notification is displayed.
 
 .. code-block:: none
@@ -564,29 +564,13 @@ Also, if some files cannot be transferred due to particular restrictions, the ap
 
 
     ➤ Executing task media:upload
-    Please select the media destination location:
-      [public  ] media/uploads/
-      [products] data/importexport/product_images/
-     > public
-    Source directory scan has started. The process may take a while, please be patient...
-    (DRY-RUN mode, can be interrupted at any time without any effect.)
-    Source directory scan has finished. Starting transfer operation...
-    24 files of 27 processed, last batch size is 10.22 MB.
+    100 files processed, last batch size is 16.08 MB.
+    160 files processed, last batch size is 4.09 MB.
 
-      Media transfer is executed in the DRY-RUN mode.
-      Please check the output, and if everything is fine, execute the command with the `--force` flag.
+    Media transfer executed in DRY-RUN mode.
+    Please check output and if everything is fine - execute the command with the --force` flag.
 
-      The following files CANNOT be transferred:
-    +--------------------------------------+--------------------------------------------------------------+
-    | File path                            | Error reason                                                 |
-    +--------------------------------------+--------------------------------------------------------------+
-    | /tmp/media/no_read_permissions.jpeg  | The file CANNOT be read.                                     |
-    | /tmp/media/test.txt                  | The file extension is NOT allowed.                           |
-    | /tmp/media/test_wrong_type.png       | The file extension DOES NOT match the Mime Type of the file. |
-    +--------------------------------------+--------------------------------------------------------------+
-    ✔ Ok
-
-The following command transfers media files from the `/tmp/media` directory into the destination directory which will be asked. The command is executed in the ``FORCED`` mode.
+The following command transfers media files from the `/tmp/media` directory into the destination. The command is executed in the ``FORCED`` mode.
 
 .. code-block:: none
 
@@ -597,60 +581,30 @@ The following command transfers media files from the `/tmp/media` directory into
 
 
     ➤ Executing task media:upload
-    Please select the media destination location:
-      [public  ] media/uploads/
-      [products] data/importexport/product_images/
-     > public
-    Source directory scan has started. The process may take a while, please be patient...
-    Source directory scan has finished. Starting transfer operation...
-    5 files of 5 processed, last batch size is 350.29 KB.
+    100 files processed, last batch size is 16.08 MB.
+    160 files processed, last batch size is 4.09 MB.
 
-      Media has been transferred successfully (5 of 5 (350.29 KB)).
+    Media has been transferred successfully (total 160 files, 20.16 MB).
     ✔ Ok
 
-If source files cannot be removed, the appropriate notification is displayed. For example:
+If source file extension is not allowed, the appropriate notification is displayed. For example:
 
 .. code-block:: none
 
 
     ➤ Executing task media:upload
-    Please select the media destination location:
-      [public  ] media/uploads/
-      [products] data/importexport/product_images/
-     > public
-    Source directory scan has started. The process may take a while, please be patient...
-    Source directory scan has finished. Starting transfer operation...
-    5 files of 5 processed, last batch size is 350.29 KB.
+    100 files processed, last batch size is 16.08 MB.
+    160 files processed, last batch size is 4.09 MB.
 
-      Media has been transferred successfully (5 of 5 (350.29 KB)).
+    Media transfer executed in DRY-RUN mode.
+    Please check output and if everything is fine - execute the command with the --force` flag.
 
-      The following files CANNOT be removed due to insufficient permission:
-    +----------------------------------------------------------------------+
-    | File path                                                            |
-    +----------------------------------------------------------------------+
-    | /tmp/media/sub_folder/test.jpeg                                      |
-    | /tmp/media/sub_folder/test.jpg                                       |
-    | /tmp/media/sub_folder/test.jxr                                       |
-    | /tmp/media/sub_folder/test.xml                                       |
-    +----------------------------------------------------------------------+
-    ✔ Ok
-
-The following command transfers media files from the `/tmp/media` directory into the destination directory which is provided as an argument. The command is executed in the ``FORCED`` mode.
-
-.. code-block:: none
-
-
-    orocloud-cli media:upload /tmp/media public --force
-
-.. code-block:: none
-
-
-    ➤ Executing task media:upload
-    Source directory scan has started. The process may take a while, please be patient...
-    Source directory scan has finished. Starting transfer operation...
-    5 files of 5 processed, last batch size is 350.29 KB.
-
-      Media has been transferred successfully (5 of 5 (350.29 KB)).
+    The following files CAN NOT be transferred:
+    +---------------------------------+------------------------------------+
+    | File path                       | Error reason                       |
+    +---------------------------------+------------------------------------+
+    | /tmp/media/dev.lock             | The file extension IS NOT allowed. |
+    +---------------------------------+------------------------------------+
     ✔ Ok
 
 .. important:: Once you have uploaded the images via FTP/SFTP and moved them to the right location for the image import, please run :ref:`images import via the UI <user-guide-import-product-images>`, as this assigns the images to the products and makes them available in the asset library.
