@@ -163,6 +163,22 @@ Links (Dev)
 
    <a href="http://php.net/manual/en/book.tidy.php" target="_blank">Tidy PHP extension</a>
 
+.. |PNGQuant| raw:: html
+
+   <a href="https://pngquant.org" target="_blank">pngquant</a>
+
+.. |JPEGOptim| raw:: html
+
+   <a href="https://github.com/tjko/jpegoptim" target="_blank">jpegoptim</a>
+
+.. |PayPal| raw:: html
+
+   <a href="https://www.paypal.com/" target="_blank">PayPal</a>
+
+.. |Ngrok| raw:: html
+
+   <a href="https://ngrok.com" target="_blank">Ngrok</a>
+
 .. |MySQL| raw:: html
 
    <a href="https://www.mysql.com/" target="_blank">MySQL</a>
@@ -735,6 +751,10 @@ Links (Dev)
 .. |Symfony documentation| raw:: html
 
    <a href="https://symfony.com/doc/4.4/index.html" target="_blank">Symfony documentation</a>
+
+.. |How to Configure Symfony to Work behind a Load Balancer or a Reverse Proxy| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/deployment/proxies.html" target="_blank">How to Configure Symfony to Work behind a Load Balancer or a Reverse Proxy</a>
 
 .. |Symfony applications| raw:: html
 

@@ -59,6 +59,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", "**T**"
    "**I**", ":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
    ":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`"
+   ":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`"
 
 
 .. toctree::
@@ -139,6 +140,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    FrontendBundle <commerce/FrontendBundle/index>
    InventoryBundle <commerce/InventoryBundle/index>
    OrderBundle <commerce/OrderBundle/index>
+   PayPalBundle <commerce/PayPalBundle/index>
    PricingBundle <commerce/PricingBundle/index>
    ProductBundle <commerce/ProductBundle/index>
    SEOBundle <commerce/SEOBundle/index>
