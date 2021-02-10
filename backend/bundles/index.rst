@@ -53,7 +53,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
 :ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`    :ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`
 :ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`    :ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`
 :ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`                  :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`
-:ref:`OrderBundle <bundle-docs-commerce-order-bundle>`
+:ref:`OrderBundle <bundle-docs-commerce-order-bundle>`                          :ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`
 ============================================================================    =======================================================================
 
 
@@ -131,6 +131,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    commerce/FrontendBundle/index
    commerce/InventoryBundle/index
    commerce/OrderBundle/index
+   commerce/PayPalBundle/index
    commerce/PricingBundle/index
    commerce/ProductBundle/index
    commerce/SEOBundle/index
