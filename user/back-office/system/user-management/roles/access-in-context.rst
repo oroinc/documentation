@@ -164,7 +164,6 @@ The diagrams below illustrate what information each of the team members can see:
 
 **Related Articles**
 
-* :ref:`Blueprints of User Access Configuration <doc-user-management-users-access-examples>`
 * :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
 * :ref:`Field Level Permissions <user-guide-user-management-permissions-roles--field-level-acl>`
 * :ref:`Entity and System Capabilities <admin-capabilities>`
