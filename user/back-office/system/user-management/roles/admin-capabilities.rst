@@ -221,7 +221,6 @@ Entity
 
 * :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
 * :ref:`Field Level Permissions <user-guide-user-management-permissions-roles--field-level-acl>`
-* :ref:`Blueprints of User Access Configuration <doc-user-management-users-access-examples>`
 * :ref:`End-to-end Access Configuration in Context <user-guide-user-management-permissions-roles--examples>`
 
 .. |oro_application| replace:: OroCommerce

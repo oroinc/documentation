@@ -1,7 +1,5 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
-:orphan:
-
 .. _doc-user-management-users-access-examples:
 
 Blueprints of User Access Configuration
