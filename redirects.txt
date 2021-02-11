@@ -44,3 +44,4 @@ user/storefront/shopping-lists/index /user/storefront/account/shopping-lists/ind
 user/storefront/shopping-lists/guests /user/storefront/account/shopping-lists/guests
 user/storefront/shopping-lists/registered /user/storefront/account/shopping-lists/registered
 backend/setup/content-restriction /backend/setup/post-install/content-restriction
+user/back-office/system/user-management/sample-access /user/back-office/system/user-management/roles/access-in-context
