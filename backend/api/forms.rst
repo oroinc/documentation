@@ -22,25 +22,35 @@ The following example shows how to add validation constraints to API resources u
 .. code-block:: yaml
 
     api:
-    entities:
-        Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
-            fields:
-                primaryEmail:
-                    form_options:
-                        constraints:
-                            # add Symfony\Component\Validator\Constraints\Email validation constraint
-                            - Email: ~
-                userName:
-                    form_options:
-                        constraints:
-                            # add Symfony\Component\Validator\Constraints\Length validation constraint
-                            - Length:
-                                max: 50
-                            # add Acme\Bundle\AcmeBundle\Validator\Constraints\Alphanumeric validation constraint
-                            - Acme\Bundle\AcmeBundle\Validator\Constraints\Alphanumeric: ~
+        entities:
+            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+                fields:
+                    primaryEmail:
+                        form_options:
+                            constraints:
+                                # add Symfony\Component\Validator\Constraints\Email validation constraint
+                                - Email: ~
+                    userName:
+                        form_options:
+                            constraints:
+                                # add Symfony\Component\Validator\Constraints\Length validation constraint
+                                - Length:
+                                    max: 50
+                                # add Acme\Bundle\AcmeBundle\Validator\Constraints\Alphanumeric validation constraint
+                                - Acme\Bundle\AcmeBundle\Validator\Constraints\Alphanumeric: ~
 
 
 Also, see how to :ref:`validate virtual fields <validate-virtual-fields>`.
+
+In case you need to replace an error title returned by the API with another error title,
+use the ``error_title_overrides`` configuration section in `Resources/config/oro/app.yml` in any bundle
+or `config/config.yml` of your application, e.g.:
+
+.. code-block:: yaml
+
+    oro_api:
+        error_title_overrides:
+            'percent range constraint': 'range constraint'
 
 Forms
 -----
@@ -50,27 +60,27 @@ The API forms are isolated from the UI forms. This helps avoid collisions and pr
 - Use the application configuration file.
 - Tag the form elements by appropriate tags in the dependency injection container.
 
-To register a new form elements using application configuration file,  add ``Resources/config/oro/app.yml`` in any bundle or use *config/config.yml* of your application.
+To register a new form elements using application configuration file, add ``Resources/config/oro/app.yml`` in any bundle or use *config/config.yml* of your application.
 
 .. code-block:: yaml
 
-    api:
-    form_types:
-        - Symfony\Component\Form\Extension\Core\Type\DateType # the class name of a form type
-        - form.type.date # the service id of a form type
-    form_type_extensions:
-        - form.type_extension.form.http_foundation # service id of a form type extension
-    form_type_guessers:
-        - acme.form.type_guesser # service id of a form type guesser
-    form_type_guesses:
-        datetime: # data type
-            form_type: Symfony\Component\Form\Extension\Core\Type\DateTimeType # the guessed form type
-            options: # guessed form type options
-                model_timezone: UTC
-                view_timezone: UTC
-                with_seconds: true
-                widget: single_text
-                format: "yyyy-MM-dd'T'HH:mm:ssZZZZZ" # HTML5
+    oro_api:
+        form_types:
+            - Symfony\Component\Form\Extension\Core\Type\DateType # the class name of a form type
+            - form.type.date # the service id of a form type
+        form_type_extensions:
+            - form.type_extension.form.http_foundation # service id of a form type extension
+        form_type_guessers:
+            - acme.form.type_guesser # service id of a form type guesser
+        form_type_guesses:
+            datetime: # data type
+                form_type: Symfony\Component\Form\Extension\Core\Type\DateTimeType # the guessed form type
+                options: # guessed form type options
+                    model_timezone: UTC
+                    view_timezone: UTC
+                    with_seconds: true
+                    widget: single_text
+                    format: "yyyy-MM-dd'T'HH:mm:ssZZZZZ" # HTML5
 
 .. note:: The form_types section can contain either the class name or the service id of a form type. Usually, the service id is used if a form type depends on other services in the dependency injection container.
 
