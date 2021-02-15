@@ -241,7 +241,6 @@ An example of how to use the created configuration section:
 .. code-block:: yaml
 
     api:
-        ...
         entities:
             Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
                 my_section:
@@ -253,13 +252,10 @@ To check that your configuration section is added correctly, run ``php bin/conso
 
     # The structure of "Resources/config/oro/api.yml"
     api:
-        ...
         entities:
             name:
-                ...
                 my_section:
                     my_option: ~
-                ...
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

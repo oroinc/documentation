@@ -21,7 +21,6 @@ Example:
 
 .. code-block:: yaml
 
-
     api:
         entities:
             Oro\Bundle\UserBundle\Entity\User:
@@ -36,7 +35,6 @@ Batch API Configuration
 All configuration options related to Batch API are grouped in ``batch_api`` section of ApiBundle configuration:
 
 .. code-block:: yaml
-
 
     oro_api:
         batch_api:
@@ -73,7 +71,6 @@ The default configuration of this cron job is illustrated below:
 
 .. code-block:: yaml
 
-
     oro_api:
         batch_api:
             async_operation:
@@ -95,7 +92,6 @@ all files that are created when processing asynchronous batch operations (e.g. c
 Here is the default configuration of these storages:
 
 .. code-block:: yaml
-
 
     knp_gaufrette:
         adapters:
@@ -123,7 +119,6 @@ of your application can be used.
 The following example shows how to reconfigure this adapter to use a local filesystem:
 
 .. code-block:: yaml
-
 
     knp_gaufrette:
         adapters:
