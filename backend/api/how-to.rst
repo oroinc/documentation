@@ -1187,69 +1187,69 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
 
   .. code-block:: php
 
-          <?php
+      <?php
 
-          namespace Acme\Bundle\AppBundle\Api\Processor;
+      namespace Acme\Bundle\AppBundle\Api\Processor;
 
-          use Acme\Bundle\AppBundle\Entity\Contact;
-          use Acme\Bundle\AppBundle\Entity\AccountContactLink;
-          use Doctrine\ORM\Query\Expr\Join;
-          use Oro\Bundle\ApiBundle\Processor\Subresource\Shared\AddParentEntityIdToQuery;
-          use Oro\Bundle\ApiBundle\Processor\Subresource\SubresourceContext;
-          use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
-          use Oro\Component\ChainProcessor\ContextInterface;
-          use Oro\Component\ChainProcessor\ProcessorInterface;
+      use Acme\Bundle\AppBundle\Entity\Contact;
+      use Acme\Bundle\AppBundle\Entity\AccountContactLink;
+      use Doctrine\ORM\Query\Expr\Join;
+      use Oro\Bundle\ApiBundle\Processor\Subresource\Shared\AddParentEntityIdToQuery;
+      use Oro\Bundle\ApiBundle\Processor\Subresource\SubresourceContext;
+      use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
+      use Oro\Component\ChainProcessor\ContextInterface;
+      use Oro\Component\ChainProcessor\ProcessorInterface;
+
+      /**
+       * Builds ORM QueryBuilder object that will be used to get a list of contacts
+       * for Account entity for "get_relationship" and "get_subresource" actions.
+       */
+      class BuildAccountContactsSubresourceQuery implements ProcessorInterface
+      {
+          /** @var DoctrineHelper */
+          private $doctrineHelper;
 
           /**
-           * Builds ORM QueryBuilder object that will be used to get a list of contacts
-           * for Account entity for "get_relationship" and "get_subresource" actions.
+           * @param DoctrineHelper $doctrineHelper
            */
-          class BuildAccountContactsSubresourceQuery implements ProcessorInterface
+          public function __construct(DoctrineHelper $doctrineHelper)
           {
-              /** @var DoctrineHelper */
-              private $doctrineHelper;
-
-              /**
-               * @param DoctrineHelper $doctrineHelper
-               */
-              public function __construct(DoctrineHelper $doctrineHelper)
-              {
-                  $this->doctrineHelper = $doctrineHelper;
-              }
-
-              /**
-               * {@inheritdoc}
-               */
-              public function process(ContextInterface $context)
-              {
-                  /** @var SubresourceContext $context */
-
-                  if ($context->hasQuery()) {
-                      // a query is already built
-                      return;
-                  }
-
-                  $query = $this->doctrineHelper
-                      ->createQueryBuilder(Contact::class, 'e')
-                      ->innerJoin(AccountContactLink::class, 'links', Join::WITH, 'links.contact = e')
-                      ->where('links.account = :' . AddParentEntityIdToQuery::PARENT_ENTITY_ID_QUERY_PARAM_NAME)
-                      ->setParameter(AddParentEntityIdToQuery::PARENT_ENTITY_ID_QUERY_PARAM_NAME, $context->getParentId());
-
-                  $context->setQuery($query);
-              }
+              $this->doctrineHelper = $doctrineHelper;
           }
+
+          /**
+           * {@inheritdoc}
+           */
+          public function process(ContextInterface $context)
+          {
+              /** @var SubresourceContext $context */
+
+              if ($context->hasQuery()) {
+                  // a query is already built
+                  return;
+              }
+
+              $query = $this->doctrineHelper
+                  ->createQueryBuilder(Contact::class, 'e')
+                  ->innerJoin(AccountContactLink::class, 'links', Join::WITH, 'links.contact = e')
+                  ->where('links.account = :' . AddParentEntityIdToQuery::PARENT_ENTITY_ID_QUERY_PARAM_NAME)
+                  ->setParameter(AddParentEntityIdToQuery::PARENT_ENTITY_ID_QUERY_PARAM_NAME, $context->getParentId());
+
+              $context->setQuery($query);
+          }
+      }
 
 
   .. code-block:: yaml
 
-          services:
-              acme.api.build_account_contacts_subresource_query:
-                  class: Acme\Bundle\AppBundle\Api\Processor\BuildAccountContactsSubresourceQuery
-                  arguments:
-                      - '@oro_api.doctrine_helper'
-                  tags:
-                      - { name: oro.api.processor, action: get_subresource, group: build_query, association: contacts, parentClass: Acme\Bundle\AppBundle\Entity\Account, priority: -90 }
-                      - { name: oro.api.processor, action: get_relationship, group: build_query, association: contacts, parentClass: Acme\Bundle\AppBundle\Entity\Account, priority: -90 }
+      services:
+          acme.api.build_account_contacts_subresource_query:
+              class: Acme\Bundle\AppBundle\Api\Processor\BuildAccountContactsSubresourceQuery
+              arguments:
+                  - '@oro_api.doctrine_helper'
+              tags:
+                  - { name: oro.api.processor, action: get_subresource, group: build_query, association: contacts, parentClass: Acme\Bundle\AppBundle\Entity\Account, priority: -90 }
+                  - { name: oro.api.processor, action: get_relationship, group: build_query, association: contacts, parentClass: Acme\Bundle\AppBundle\Entity\Account, priority: -90 }
 
 
 .. _disable-hateoas:
@@ -1316,10 +1316,10 @@ a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
 .. code-block:: yaml
 
     services:
-      acme.api.validate_label_field:
-          class: Acme\Bundle\DemoBundle\Api\Processor\ValidateLabelField
-          tags:
-              - { name: oro.api.processor, action: customize_form_data, event: post_submit, class: Acme\DemoBundle\Entity\SomeEntity }
+        acme.api.validate_label_field:
+            class: Acme\Bundle\DemoBundle\Api\Processor\ValidateLabelField
+            tags:
+                - { name: oro.api.processor, action: customize_form_data, event: post_submit, class: Acme\DemoBundle\Entity\SomeEntity }
 
 
 .. include:: /include/include-links-dev.rst
