@@ -41,8 +41,8 @@ The **Pricing** page opens. It contains the following information:
 
    * **Enable Oro Pricing** --- By default, this option is enabled. When disabled, all pricing stored in and managed by the default OroCommerce pricing management system becomes hidden from the application. Disable Oro Pricing when you need to introduce a custom pricing management system for storing and fetching prices.
 
-   * **Pricing Precision** --- The number of digits allowed in the fractional part of the price (e.g., precision of 4 enables your sales manager to use prices like $10.0001).
-   * **Pricing Rounding Type** --- The rounding type used when calculated product price has more digits in the fractional part than allowed by the **Pricing Precision** value. These are the rounding settings used for price and tax calculations that happen in shopping lists, checkout, orders, and RFQs. Please use one of the following options:
+   * **Pricing Precision** --- The number of digits allowed in the fractional part of the subtotals, totals and taxes calculated in shopping lists, checkout, orders, and RFQs. For example, with precision for sales documents set to 2, even when the original precision of prices is 4, such as $10.0001, the subtotals and taxes will be rounded to 2 digits.
+   * **Pricing Rounding Type** --- The rounding type used when calculated product price has more digits in the fractional part than allowed by the respective price precision settings. These are the rounding settings used for price and tax calculations that happen in shopping lists, checkout, orders, and RFQs. Please use one of the following options:
 
      - *Ceil* --- Rounds to the nearest integer that is not less than the price with the fractional part (e.g., 23.5 is rounded to 24; 23.3 is rounded to 24; 23.7 is rounded to 24)
 
