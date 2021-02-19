@@ -183,5 +183,10 @@ Links (Cloud)
 
    <a href="https://cloud.google.com/monitoring/charts/metrics-explorer?hl=en_US" target="_blank">Metrics Explorer</a>
 
+.. |edge servers distributed globally| raw:: html
 
+   <a href="https://cloud.google.com/cdn/docs/locations" target="_blank">edge servers distributed globally</a>
 
+.. |Google CDN| raw:: html
+
+   <a href="https://cloud.google.com/cdn" target="_blank">Google CDN</a>
