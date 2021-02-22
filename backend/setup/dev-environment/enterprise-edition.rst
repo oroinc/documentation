@@ -443,7 +443,7 @@ This path can be either:
 This path can be reconfigured with |Gaufrette| adapter configuration.
 
 For example, to change the path location, add a new configuration of the **import_files** |Gaufrette| adapter
-in the ``Resources\config\oro\app.yml`` file of your bundle:
+in the `Resources/config/oro/app.yml` file of your bundle:
 
 .. code-block:: yaml
 

@@ -4285,6 +4285,14 @@ Links (Dev)
 
    <a href="https://github.com/nelmio/NelmioApiDocBundle/blob/2.x/Formatter/AbstractFormatter.php" target="_blank">AbstractFormatter class in NelmioApiDocBundle</a>
 
+.. |PostProcessorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/PostProcessor/PostProcessorInterface.php" target="_blank">PostProcessorInterface</a>
+
+.. |PostProcessorRegistry| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/PostProcessor/PostProcessorRegistry.php" target="_blank">PostProcessorRegistry</a>
+
 .. |ProcessorInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/ChainProcessor/ProcessorInterface.php" target="_blank">ProcessorInterface</a>

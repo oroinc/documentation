@@ -17,15 +17,15 @@ Follow the next steps to get a new token:
 
 3. Send a POST request with the following body parameters to the authorization server:
 
-   * `grant_type` with the value `refresh_token`
+   * `grant_type` with the value ``refresh_token``
    * `client_id` with the client identifier
    * `client_secret` with the client’s secret
    * `refresh_token` with the refresh token that was returned with an access token
 
 4. Receive response from the authorization server with a JSON object containing the following properties:
 
-   * `token_type` with the value `Bearer`
-   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in config.yml
+   * `token_type` with the value ``Bearer``
+   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in :ref:`config/config.yml <bundle-docs-platform-oauth2-server-bundle--configuration>` of your application
    * `access_token` - a new access token
    * `refresh_token` - a new refresh token used to request a new token when the `access_token` expires
 

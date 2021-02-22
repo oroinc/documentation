@@ -35,7 +35,7 @@ Security Agnostic Topics
 ------------------------
 
 If some types of messages should always be processed without the security context, they should be added to the list of
-security agnostic topics. This list can be configured by *Resources/config/oro/app.yml* or the application configuration file.
+security agnostic topics. This list can be configured by `Resources/config/oro/app.yml` or the application configuration file.
 
 For example:
 
@@ -56,7 +56,7 @@ context even if the processed message contains a security token.
 
 The typical use case is routing processors. These processors simply forward a message to the destination processor and it would be unreasonable to waste the processor time to deserialize the security token as it is never used in such types of processors.
 
-Here is an example how to add a processor to the list of security agnostic processors using *Resources/config/oro/app.yml* or the application configuration file:
+Here is an example how to add a processor to the list of security agnostic processors using `Resources/config/oro/app.yml` or the application configuration file:
 
 .. code-block:: yaml
 

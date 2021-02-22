@@ -14,7 +14,7 @@ Creating a Configuration Extension
 ----------------------------------
 
 
-Each configuration extension must implement |ConfigExtensionInterface| (you can also use |AbstractConfigExtension| as a superclass). To register new configuration extension, add it to ``Resources/config/oro/app.yml`` of your bundle or use *config/config.yml* of your application. Here is an example:
+Each configuration extension must implement |ConfigExtensionInterface| (you can also use |AbstractConfigExtension| as a superclass). To register new configuration extension, add it to `Resources/config/oro/app.yml` in your bundle or use `config/config.yml` of your application. Here is an example:
 
 .. code-block:: php
 

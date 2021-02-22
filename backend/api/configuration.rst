@@ -3,7 +3,7 @@
 Configuration Reference
 =======================
 
-The configuration declares all aspects related to a specific entity. The configuration should be placed in ``Resources/config/oro/api.yml`` to be automatically loaded.
+The configuration declares all aspects related to a specific entity. The configuration should be placed in `Resources/config/oro/api.yml` to be automatically loaded.
 
 All entities, except custom entities, dictionaries, and enumerations are inaccessible via the API. To make an entity available via the data, enable it directly. For example, to make the ``Acme\Bundle\ProductBundle\Product`` entity available via the API, use the following configuration:
 
@@ -13,7 +13,7 @@ All entities, except custom entities, dictionaries, and enumerations are inacces
         entities:
             Acme\Bundle\ProductBundle\Product: ~
 
-If an auto-generated alias for your entity does not look good enough for you, change it in ``Resources/config/oro/entity.yml``. For more details, see the :ref:`entity aliases documentation <entity-aliases>`.
+If an auto-generated alias for your entity does not look good enough for you, change it in `Resources/config/oro/entity.yml`. For more details, see the :ref:`entity aliases documentation <entity-aliases>`.
 
 .. important:: Run the ``oro:api:cache:clear`` CLI command to immediately make an entity accessible via the API. If you use the API sandbox, run the ``oro:api:doc:cache:clear`` CLI command to apply the changes for it.
 
@@ -114,7 +114,7 @@ Example:
                         field1:
                             exclude: true
 
-Please note that the ``exclude`` option is applicable only for the API. To exclude an entity or its fields globally, use ``Resources/config/oro/entity.yml``:
+Please note that the ``exclude`` option is applicable only for the API. To exclude an entity or its fields globally, use `Resources/config/oro/entity.yml`:
 
 .. code-block:: yaml
 
@@ -200,7 +200,7 @@ The ``entities`` section describes the configuration of entities.
 
 *  **documentation\_resource** *string* - May contain the link to the |markdown| file that contains detailed documentation for a single or multiple API resources. For more details, see :ref:`Documenting API Resources <web-api--doc>`.
 
-    Please note that the same entity can be configured in different ``Resources/config/oro/api.yml`` files, e.g. when some bundle needs to add a field to an entity declared in another bundle. In this case, all configuration files for this entity can have **documentation\_resource** option and all documentation files declared there are merged. Pay attention that if the same field is documented in several documentation files, they are merged and only a documentation from one file is used.
+    Please note that the same entity can be configured in different `Resources/config/oro/api.yml` files, e.g. when some bundle needs to add a field to an entity declared in another bundle. In this case, all configuration files for this entity can have **documentation\_resource** option and all documentation files declared there are merged. Pay attention that if the same field is documented in several documentation files, they are merged and only a documentation from one file is used.
 
 *  **exclude** *boolean* - Indicates whether the entity should be excluded from the API. By default ``false``.
 
@@ -302,6 +302,10 @@ This section describes configuration of entity fields.
 
 *  **depends\_on** *string[]* - A list of entity properties that the field depends on. Use the ``dot`` notation to specify a path to a nested property, e.g., ``user.firstName``. Each element in the path must be equal to the name of existing property of an entity. This option is helpful for computed fields: the specified fields will be loaded from the database even if they are excluded.
 
+*  **post\_processor** *string* - The name of a :ref:`post processor <web-api--post-processors>` to be used to convert a field value to a format suitable for the API. The post processor is used in the :ref:`get <get-action>`, :ref:`get_list <get-list-action>` and :ref:`get_subresource <get-subresource-action>` actions.
+
+*  **post\_processor\_options** *array* - The options for a post processor specified in the **post\_processor** option.
+
 **Examples:**
 
 .. code-block:: yaml
@@ -360,6 +364,12 @@ This section describes configuration of entity fields.
                     property_path: _
                     depends_on: [property1, association1.property11]
 
+                # A field with a post processor
+                field10:
+                    post_processor: twig
+                    post_processor_options:
+                        template: 'OroApiBundle:Field:render_content.html.twig'
+
 .. _fields-special-data-types:
 
 Special Data Types
@@ -383,6 +393,7 @@ The **data\_type** attribute can be used to specify a data type of a field. Howe
    "nestedAssociation","Helps configure nested associations. For details see :ref:`Configure a Nested Association <configure-nested-association>`."
    "association:relationType[:associationKind]","Helps configure extended associations. For details, see :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`, :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>` and :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`."
    "unidirectionalAssociation:targetAssociationName","Helps configure unidirectional associations. For details, see :ref:`Configure an Unidirectional Association <configure-unidirectional-association>`."
+   "localizedFallbackValue:fieldName","Helps configure to-many associations to |LocalizedFallbackValue| for the :ref:`Storefront API <web-api--storefront>`."
 
 .. note:: The `scalar`, `object`, `array`, `objects`, `strings` and `data-type[]` data types are interchangeable in case they are used to represent an association as a field. They were introduced to increase readability of configs and automatically generated documentation, e.g. for API Sandbox. The `scalar` is usually used if a value of the field contains a scalar value. The `array`, `strings` and `data-type[]` are usually used if a value of the field contains a list of scalar values. The `object` is usually used if a value of the field contains several properties. The `objects` is usually used if a value of the field contains a list of items that have several properties.
 

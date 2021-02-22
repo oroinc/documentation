@@ -7,7 +7,7 @@ To configure the authentication via the password grant type and retrieve the acc
 
 1. Provide your **Request URL**.
 
-   The Request URL consists of your application URL and the /oauth2-token slug, e.g., ``https://yourapplication/oauth2-token``
+   The Request URL consists of your application URL and the ``/oauth2-token`` slug, e.g., ``https://yourapplication/oauth2-token``
 
 2. Specify the content-type in headers:
 
@@ -15,7 +15,7 @@ To configure the authentication via the password grant type and retrieve the acc
 
 3. Send a POST request with the following body parameters to the authorization server:
 
-   * `grant_type` with the value `password`
+   * `grant_type` with the value ``password``
    * `client_id` with the client identifier
    * `client_secret` with the client’s secret
    * `username` with the user's username
@@ -23,8 +23,8 @@ To configure the authentication via the password grant type and retrieve the acc
 
 4. Receive response from the authorization server with a JSON object containing the following properties:
 
-   * `token_type` with the value `Bearer`
-   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in config.yml
+   * `token_type` with the value ``Bearer``
+   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in :ref:`config/config.yml <bundle-docs-platform-oauth2-server-bundle--configuration>` of your application
    * `access_token` a JSON web token signed with the authorization server’s private key
    * `refresh_token` a JSON web token used to request a new token when the `access_token` expires
 

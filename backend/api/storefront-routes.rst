@@ -19,7 +19,7 @@ and optionally the ``routeName`` tag attribute can be used to specify the route 
 The API URL resolvers should be registered in service container with a tag ``oro_frontend.api.resource_api_url_resolver``,
 and optionally the ``routeName`` tag attribute can be used to specify the route for which the resolver is applicable.
 
-An example of resolvers registration in ``services_api.yml`` file:
+An example of resolvers registration in `services_api.yml` file:
 
 .. code-block:: yaml
 

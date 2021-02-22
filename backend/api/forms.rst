@@ -8,7 +8,7 @@ The Symfony |Validation Component| and |Forms Component| are used to validate an
 Validation
 ----------
 
-The validation rules are loaded from ``Resources/config/validation.yml`` and annotations as it is commonly done in Symfony applications. So, all validation rules defined for an entity are applicable to the API as well. By default, API uses two validation groups: **Default** and **api**. If you need to add validation constrains that should be applicable in API only you should add them in **api** validation group.
+The validation rules are loaded from `Resources/config/validation.yml` and annotations as it is commonly done in Symfony applications. So, all validation rules defined for an entity are applicable to the API as well. By default, API uses two validation groups: **Default** and **api**. If you need to add validation constrains that should be applicable in API only you should add them in **api** validation group.
 
 In case a validation rule cannot be implemented as a regular validation constraint due to its complexity you can implement it as a processor for ``post_validate`` event of :ref:`customize_form_data <customize-form-data-action>` action. Pay your attention on |FormUtil class|, it contains methods that may be useful in such processor.
 
@@ -17,7 +17,7 @@ If the input data violates validation constraints, they will be automatically co
 -  Implement |ConstraintWithStatusCodeInterface| in you constraint class.
 -  Implement own constraint text extractor. The API bundle has the |default implementation of constraint text extractor|. To add a new extractor, create a class implements |ConstraintTextExtractorInterface| and tag it with the ``oro.api.constraint_text_extractor`` in the dependency injection container. This service can be also used to change an error code and type for a validation constraint.
 
-The following example shows how to add validation constraints to API resources using the ``Resources/config/oro/api.yml`` configuration file:
+The following example shows how to add validation constraints to API resources using the `Resources/config/oro/api.yml` configuration file:
 
 .. code-block:: yaml
 
@@ -60,7 +60,7 @@ The API forms are isolated from the UI forms. This helps avoid collisions and pr
 - Use the application configuration file.
 - Tag the form elements by appropriate tags in the dependency injection container.
 
-To register a new form elements using application configuration file, add ``Resources/config/oro/app.yml`` in any bundle or use *config/config.yml* of your application.
+To register a new form elements using application configuration file, add `Resources/config/oro/app.yml` in any bundle or use `config/config.yml` of your application.
 
 .. code-block:: yaml
 
