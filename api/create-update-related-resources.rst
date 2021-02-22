@@ -209,7 +209,7 @@ Also, it is possible to update several related resources via a single API reques
       "included": [
         {
           "meta": {
-              "update": true
+            "update": true
           },
           "type": "contacts",
           "id": "79",
@@ -276,7 +276,7 @@ and vise versa. The following examples are equivalent:
       "included": [
         {
           "meta": {
-              "update": true
+            "update": true
           },
           "type": "contacts",
           "id": "79",
@@ -297,7 +297,7 @@ and vise versa. The following examples are equivalent:
       "included": [
         {
           "meta": {
-              "update": true
+            "update": true
           },
           "type": "contacts",
           "id": "79",

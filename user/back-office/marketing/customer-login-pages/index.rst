@@ -38,7 +38,7 @@ To edit the existing customer login page:
    .. image:: /user/img/marketing/customer_login_pages/css.png
       :alt: CSS style added to storefront, changed color of the header to red
 
-   .. note:: Depending on your application configuration, the **CSS Styles** field might only be visible to your administrator. You can enable/disable this setting in the app/config/config.yml file.
+   .. note:: Depending on your application configuration, the **CSS Styles** field might only be visible to your administrator. You can enable/disable this setting in the `config/config.yml` file.
 
 6. To add a **Logo**, click *Choose File* next to the **Logo** field and select a picture for the login page.
 

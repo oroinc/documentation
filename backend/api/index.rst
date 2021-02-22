@@ -36,6 +36,7 @@ By default, only custom entities, dictionaries, and enumerations are accessible 
    processors
    headers
    filters
+   post-processors
    how-to
    cors
    testing

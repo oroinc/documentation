@@ -3,7 +3,7 @@
 Filters
 =======
 
-This chapter provides information on the existing filters and illustrates how to create them.
+This chapter provides information on the existing filters and illustrates how to create new filters.
 
 Filters are used to limit a set of data or request additional information returned by the API.
 

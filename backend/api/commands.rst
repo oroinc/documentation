@@ -10,7 +10,7 @@ oro:api:cache:clear
 
 This command command clears the API cache.
 
-Usually you need to run this command when you add a new entity to ``Resources/config/oro/api.yml`` or you add a new processor that changes a list of available via the API.
+Usually you need to run this command when you add a new entity to `Resources/config/oro/api.yml` or you add a new processor that changes a list of available via the API.
 
 .. code-block:: bash
 
@@ -192,7 +192,7 @@ To display the entity metadata used for a particular request type, use the ``--r
 oro:api:config:dump-reference
 -----------------------------
 
-This command shows the structure of ``Resources/config/oro/api.yml``.
+This command shows the structure of `Resources/config/oro/api.yml`.
 
 .. code-block:: bash
 

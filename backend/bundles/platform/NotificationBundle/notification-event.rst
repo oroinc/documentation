@@ -4,7 +4,7 @@ Register an Event to Send Notification Emails
 =============================================
 
 To allow creating :ref:`notification rules <system-notification-rules>` for new types of events, register them in the
-``Resources/config/oro/app.yml`` file in your bundle.
+`Resources/config/oro/app.yml` file in your bundle.
 
    .. code-block:: yaml
       :caption: Resources/config/oro/app.yml

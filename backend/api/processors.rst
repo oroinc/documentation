@@ -3,7 +3,7 @@
 Processors
 ==========
 
-A processor is the main element that implements the business logic of the API. Each processor must implement |ProcessorInterface|  and be registered in the dependency injection container using the ``oro.api.processor`` tag.
+A processor is the main element that implements the business logic of the API. Each processor must implement |ProcessorInterface| and be registered in the dependency injection container using the ``oro.api.processor`` tag.
 
 Please see the :ref:`actions <web-api--actions>` and :ref:`context <web-api--context-class>` sections for more details about where and how processors are used.
 
@@ -216,7 +216,7 @@ There are several types of errors that may occur when processing a request:
 -  **Security errors**. This type of error occurs if access is denied to a requested, updated, or deleted entity.
 -  **Unexpected errors**. These errors will occur if an unpredictable problem happens. For example, no access to the database or a file system, requested entity does not exist, updating entity is blocked, etc.
 
-Please note that to validate input data for :ref:`create <create-action>` and :ref:`update <update-action>` actions the best solution is to use validation constraints. In most cases it helps avoid writing any PHP code and configuring the required validation rules in ``Resources/config/oro/api.yml``. For the detailed information on how to add custom validation constraints, see the :ref:`Forms and Validators Configuration <web-api--forms>` topic. The following example shows how to add a validation constraint via ``Resources/config/oro/api.yml``:
+Please note that to validate input data for :ref:`create <create-action>` and :ref:`update <update-action>` actions the best solution is to use validation constraints. In most cases it helps avoid writing any PHP code and configuring the required validation rules in `Resources/config/oro/api.yml`. For the detailed information on how to add custom validation constraints, see the :ref:`Forms and Validators Configuration <web-api--forms>` topic. The following example shows how to add a validation constraint via `Resources/config/oro/api.yml`:
 
 .. code-block:: yaml
 

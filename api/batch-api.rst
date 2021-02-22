@@ -18,12 +18,12 @@ The input data for each record are the same as for API resources to create or up
     {
        "data": [
           {
-              "type":"entityType",
+              "type": "entityType",
               "attributes": {...},
               "relationships": {...}
           },
           {
-              "type":"entityType",
+              "type": "entityType",
               "attributes": {...},
               "relationships": {...}
            }
@@ -37,15 +37,19 @@ To mark records that should be updated, use the ``update`` meta property:
     {
        "data": [
           {
-              "meta": {update: true},
-              "type":"entityType",
+              "meta": {
+                "update": true
+              },
+              "type": "entityType",
               "id": 1,
               "attributes": {...},
               "relationships": {...}
           },
           {
-              "meta": {update: true},
-              "type":"entityType",
+              "meta": {
+                "update": true
+              },
+              "type": "entityType",
               "id": 2,
               "attributes": {...},
               "relationships": {...}
@@ -69,12 +73,12 @@ that must be placed at the root level, the same as the ``data`` section:
     {
        "data": [
           {
-              "type":"entityType",
+              "type": "entityType",
               "attributes": {...},
               "relationships": {
                   "relation": {
                       "data": {
-                          "type":"entityType1",
+                          "type": "entityType1",
                           "id": "included_entity_1"
                       }
                   },
@@ -85,7 +89,7 @@ that must be placed at the root level, the same as the ``data`` section:
        ],
        "included": [
            {
-              "type":"entityType1",
+              "type": "entityType1",
               "id": "included_entity_1",
               "attributes": {...},
               "relationships": {...}
@@ -102,12 +106,12 @@ use the ``update`` meta property:
     {
        "data": [
           {
-              "type":"entityType",
+              "type": "entityType",
               "attributes": {...},
               "relationships": {
                   "relation": {
                       "data": {
-                          "type":"entityType1",
+                          "type": "entityType1",
                           "id": "12"
                       }
                   },
@@ -118,8 +122,10 @@ use the ``update`` meta property:
        ],
        "included": [
            {
-              "meta": {update: true},
-              "type":"entityType1",
+              "meta": {
+                "update": true
+              },
+              "type": "entityType1",
               "id": "12",
               "attributes": {...},
               "relationships": {...}
@@ -150,15 +156,15 @@ The next example shows how to insert a list of accounts.
     {
        "data": [
           {
-              "type":"accounts",
+              "type": "accounts",
               "attributes":{
-                 "name":"Gartner management group"
+                 "name": "Gartner management group"
               }
           },
           {
-              "type":"accounts",
+              "type": "accounts",
               "attributes":{
-                 "name":"Cloth World"
+                 "name": "Cloth World"
               }
            }
        ]

@@ -15,14 +15,14 @@ To configure the authentication via the client credentials grant type and retrie
 
 3. Send a POST request with the following body parameters to the authorization server:
 
-   * `grant_type` with the value `client_credentials`
+   * `grant_type` with the value ``client_credentials``
    * `client_id` with the client’s ID
    * `client_secret` with the client’s secret ID
 
 4. Receive response from the authorization server with a JSON object containing the following properties:
 
-   * `token_type` with the value `Bearer`
-   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in config.yml.
+   * `token_type` with the value ``Bearer``
+   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in :ref:`config/config.yml <bundle-docs-platform-oauth2-server-bundle--configuration>` of your application.
    * `access_token` a JSON web token signed with the authorization server’s private key
 
 5. Use the generated access token to make requests to the API.

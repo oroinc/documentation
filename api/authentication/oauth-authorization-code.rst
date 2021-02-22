@@ -14,7 +14,7 @@ If the Commerce application is installed, then for the back-office application, 
 
 The request should have the following parameters in the query string:
 
-   * `response_type` with the `code` value
+   * `response_type` with the value ``code``
    * `client_id` with the client identifier
    * `redirect_uri` with the client redirect URI. This parameter is optional, but if it is not sent, the user will be redirected to a pre-registered redirect URI.
 
@@ -22,7 +22,7 @@ The user is then asked to log in to the authorization server and approve the cli
 
 Once the user approves the client, they are redirected from the authorization server to the client’s redirect URI with the following parameters in the query string:
 
-   * `code` with the authorization code value.
+   * `code` with the authorization code.
 
 Generate Token
 --------------
@@ -40,7 +40,7 @@ To configure the authentication via the authorization code grant type and to ret
 
 3. Send a POST request with the following body parameters to the authorization server:
 
-   * `grant_type` with the value `authorization_code`
+   * `grant_type` with the value ``authorization_code``
    * `client_id` with the client’s ID
    * `client_secret` with the client’s secret ID
    * `redirect_uri` with the same redirect URI the user was redirect back to
@@ -48,8 +48,8 @@ To configure the authentication via the authorization code grant type and to ret
 
 4. Receive response from the authorization server with a JSON object containing the following properties:
 
-   * `token_type` with the value `Bearer`
-   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in config.yml.
+   * `token_type` with the value ``Bearer``
+   * `expires_in` = 3600 seconds. Once the token is generated, it is valid for an hour and can be used multiple times within this time limit to request the necessary data. Expiration time can by configured in :ref:`config/config.yml <bundle-docs-platform-oauth2-server-bundle--configuration>` of your application.
    * `access_token` a JSON web token signed with the authorization server’s private key
 
 5. Use the generated access token to make requests to the API.

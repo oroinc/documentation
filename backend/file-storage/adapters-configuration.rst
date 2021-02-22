@@ -27,8 +27,8 @@ Adapters Configuration with KnpGaufretteBundle
 As storage types are the |KnpGaufretteBundle| adapters, you can configure them with manual configuration of KnpGaufrette bundle.
 
 For example, to use the Oro GridFS Gaufrette adapter, use the ``oro_gridfs`` adapter type. To configure a new or reconfigure an
-existing adapter, add the |KnpGaufretteBundle| configuration in the ``Resources/config/oro/app.yml`` file of any bundle
-or the ``config/config.yml`` file of your application:
+existing adapter, add the |KnpGaufretteBundle| configuration in the `Resources/config/oro/app.yml` file of any bundle
+or the `config/config.yml` file of your application:
 
 .. code-block:: yaml
 

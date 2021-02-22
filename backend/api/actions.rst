@@ -223,7 +223,7 @@ This action deletes a list of entities.
 
 The entities list is built based on input filters. Please take into account that at least one filter must be specified. Otherwise, an error raises.
 
-By default, the maximum number of entities that can be deleted by one request is 100, see the ``max_delete_entities`` option in :ref:`General Configuration <web-api--configuration-general>`. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``. However, please test your limit carefully because a higher limit may make a more significant impact on the server. An example of how to change the default limit is available in the :ref:`How To <max-number-of-entities-to-be-deleted>` topic.
+By default, the maximum number of entities that can be deleted by one request is 100, see the ``max_delete_entities`` option in :ref:`General Configuration <web-api--configuration-general>`. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in `Resources/config/oro/api.yml`. However, please test your limit carefully because a higher limit may make a more significant impact on the server. An example of how to change the default limit is available in the :ref:`How To <max-number-of-entities-to-be-deleted>` topic.
 
 The route name for REST API: ``oro_rest_api_list``.
 
@@ -844,6 +844,9 @@ Note: All processors for this action has ``identifier_only`` tag attribute set t
 
 .. note:: The ``identifier_only`` tag attribute is not supported if the ``collection`` tag attribute equals ``true``. All processors intended for the modification of collections are executed when loading primary entities and entities in to-many associations, even if only identifier field is requested.
 
+.. note:: The |ValueTransformer| can be used in ``customize_loaded_data`` processors to convert a value
+          to a format suitable for the API response.
+
 .. _customize-form-data-action:
 
 customize\_form\_data Action
@@ -1267,7 +1270,7 @@ Additionally, you need to register your processor in the dependency injection co
                 - '@oro_api.processor_bag'
                 - my_action # the name of an action
 
-If you need to create groups for your action, register them in the ApiBundle configuration. To do this, add ``Resources\config\oro\app.yml`` to your bundle, for example:
+If you need to create groups for your action, register them in the ApiBundle configuration. To do this, add `Resources/config/oro/app.yml` to your bundle, for example:
 
 .. code-block:: yaml
 

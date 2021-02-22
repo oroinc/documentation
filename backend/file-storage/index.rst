@@ -41,7 +41,7 @@ For example, private storage stores the attachment data and import/export data f
 
 To implement the access point to your type of data in the storage:
 
-- Add new Gaufrette filesystem configuration into the ``Resources/config/oro/app.yml`` file of your bundle and set ``private`` or ``public`` as the filesystem adapter:
+- Add new Gaufrette filesystem configuration into the `Resources/config/oro/app.yml` file of your bundle and set ``private`` or ``public`` as the filesystem adapter:
 
 .. code-block:: yaml
 

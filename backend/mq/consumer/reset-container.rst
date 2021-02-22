@@ -20,7 +20,7 @@ Persistent Processors
 Removing services from the container can affect the consumer performance dramatically because initialization
 of services can be an expensive operation. This is the reason why the container is not cleared after execution of
 some processors that can work correctly with the *dirty* state of services. The list of such processors can
-be configured by *Resources/config/oro/app.yml* or the application configuration file.
+be configured by `Resources/config/oro/app.yml` or the application configuration file.
 
 For example:
 
@@ -38,7 +38,7 @@ Persistent Services
 
 As mentioned above, initialization of some services can take a lot of time. Also, some services should not be removed
 from the container because it can lead to a crash of the system, the **kernel** is an example of such service.
-The list of services that should not be removed from the container can be configured by *Resources/config/oro/app.yml*
+The list of services that should not be removed from the container can be configured by `Resources/config/oro/app.yml`
 or the application configuration file.
 
 For example:
