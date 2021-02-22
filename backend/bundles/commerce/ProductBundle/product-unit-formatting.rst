@@ -76,6 +76,8 @@ Outputs:
 
    5 kilograms
 
+.. _product-bundle-short-formatting:
+
 formatShort
 ~~~~~~~~~~~
 

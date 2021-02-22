@@ -10,14 +10,14 @@ OroEntityConfigBundle enables developers to define and configure the entities me
 Related Documentation
 ---------------------
 
-* |Configure Attributes for an Entity|
+* :ref:`Configure Attributes for an Entity <dev-entities-attributes>`
 * |Add Metadada to an Entity|
 * |Index Attributes|
 * |Implement EntityConfigBundle|
 * |Update Configuration Data|
 * |Clear up Cache|
 * |Debug Configuration Data|
-* |Configure Entity Scope (Example)|
+* :ref:`Configure Entity Scope (Example) <book-entities-entity-configuration>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

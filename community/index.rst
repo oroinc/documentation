@@ -101,7 +101,7 @@ We would love you to contribute to our source code and documentation, and help u
                 <img src="../_static/images/interface.svg" alt="" role="presentation">
             </div>
             <div class="items-body">
-                <p class="first"><a class="reference internal" href="../../backend/setup/dev-environment/index#doc-dev-env-best-practices"><span class="std std-ref">Set Up a Development Environment</span></a></p>
+                <p class="first"><a class="reference internal" href="../../backend/setup/dev-environment/"><span class="std std-ref">Set Up a Development Environment</span></a></p>
                 <p>This article describes best practices in setting up a development environment. It up to you
                     whether to follow the listed recommendation, however take a note that they can greatly facilitate the development
                     process.</p>

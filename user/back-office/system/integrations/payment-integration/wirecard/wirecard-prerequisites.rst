@@ -11,7 +11,7 @@ Prerequisites for Wirecard Integration in the Back-Office
 
 To start using Wirecard payment methods with the OroCommerce application, complete the following:
 
-1. Sign up for the Wirecard service at |wirecard.com| and configure it. You will need to contact the Wirecard support team to do it.
+1. Sign up for the Wirecard service at the Wirecard official website and configure it. You will need to contact the Wirecard support team to do it.
 
 #. From the Wirecard support team, obtain the following credentials:
 

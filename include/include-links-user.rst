@@ -463,10 +463,6 @@ Links (User)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/NumberExtension.php#L212" target="_blank">oro_format_currency</a>
 
-.. |oro_format_short_product_unit_value| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#oro_format_short_product_unit_value" target="_blank">oro_format_short_product_unit_value</a>
-
 .. |join| raw:: html
 
    <a href="https://twig.symfony.com/doc/2.x/filters/join.html" target="_blank">join</a>
@@ -518,10 +514,6 @@ Links (User)
 .. |how to create payment rules| raw:: html
 
    <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-rules" target="_blank">how to create payment rules</a>
-
-.. |Workflow Documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md" target="_blank">Workflow Documentation</a>
 
 .. |registered with UPS.com| raw:: html
 
@@ -614,10 +606,6 @@ Links (User)
 .. |https://www.infinitepay.de/| raw:: html
 
    <a href="https://www.infinitepay.de/" target="_blank">https://www.infinitepay.de/</a>
-
-.. |wirecard.com| raw:: html
-
-   <a href="http://wirecard.com" target="_blank">wirecard.com</a>
 
 .. |Wirecard Demo Mode| raw:: html
 
