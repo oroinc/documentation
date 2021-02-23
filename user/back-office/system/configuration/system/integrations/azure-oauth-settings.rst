@@ -5,8 +5,6 @@ Configure Microsoft Office365 oAuth Settings (Azure Active Directory Application
 
 .. note:: This article is part of the :ref:`Microsoft Office365 OAuth Integration <user-guide-integrations-azure-oauth>` topic.
 
-.. hint:: Microsoft Office365 oAuth is available since OroCommerce v4.1.9. To check which application version you are running, see the :ref:`system information <system-information>`.
-
 To integrate a configured Azure Active Directory Application:
 
 1. Navigate to **System > Configuration > Integrations > Microsoft Settings**.

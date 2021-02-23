@@ -5,8 +5,6 @@
 Configure Microsoft Office365 OAuth Integration
 ===============================================
 
-.. hint:: Microsoft Office365 oAuth is available since OroCommerce v4.1.9. To check which application version you are running, see the :ref:`system information <system-information>`.
-
 Integration with Microsoft Office365 via oAuth 2 API enables users to log in with their Office365 account and connect their mailbox to the Oro application using OAuth authentication.
 To achieve this, you need to register a custom Azure application and :ref:`connect it with your Oro application <configuration-integrations-azure>`.
 

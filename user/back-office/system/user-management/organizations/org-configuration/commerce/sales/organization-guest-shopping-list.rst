@@ -38,10 +38,6 @@ To configure them per organization:
 
    * **Enable Mass Adding On Product Listing** --- The options controls whether customer and guest users are allowed to mass select and add items to the shopping list in the storefront.
 
-|
-
-   .. hint:: The features below are available since OroCommerce v4.1.10. To check which application version you are running, see the :ref:`system information <system-information>`.
-
    * **Maximum Line Items Per Page** --- The maximum shopping list line items that can be displayed per page. If the number of shopping list line items exceeds this value, then the "All" value, in the list of pagination dropdown values, is changed to the one specified in the option.
 
    * **Show All Lists In Shopping List Widget** --- The option defines which shopping lists a customer user can view in the widget. If this option is enabled, the user can view all the shopping lists that they are allowed to access, besides their own. For instance, a user can own one shopping list, which is reflected in the Shopping List section under My Account, while the widget will display four shopping lists assigned to other users but available to view and edit by the selected user.

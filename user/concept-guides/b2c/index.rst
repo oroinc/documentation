@@ -5,7 +5,7 @@
 B2C Websites in OroCommerce Concept Guide
 =========================================
 
-.. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. .. hint:: This feature is available since OroCommerce v4.1.1. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 The B2C (business-to-consumer) business model is a marketing strategy that is based on the transactions between a seller (business) and an individual customer (consumer). The B2C e-commerce refers to the online commerce transaction made from a company website with an online catalog.
 

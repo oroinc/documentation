@@ -16,8 +16,6 @@ In the storefront, shopping lists are located in the Shopping Lists section unde
 Shopping Lists Section
 ----------------------
 
-.. hint:: The Shopping Lists section is available since OroCommerce v4.1.10. To check which application version you are running, see the :ref:`system information <system-information>`.
-
 The Shopping Lists section under the My Account menu stores all the information about current shopping lists that the customer user has access to. By default, the page is preconfigured to display only the shopping lists that the user owns, but you can always reset the filter and select the required conditions. The user can view and update the shopping lists, provided that they have the :ref:`appropriate permissions <frontstore-guide-roles>` enabled.
 
 .. image:: /user/img/storefront/shopping_lists/new_shopping_list_section.png
