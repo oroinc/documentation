@@ -38,14 +38,13 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 * :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
 * :ref:`PayPal Payflow Gateway / PayPal Payment Pro <sys--integrations--manage-integrations--paypal-payflow-gateway>`
 * :ref:`PayPal Express <config-guide--payment--paypal-express>`
-
-  .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the |Oro PayPal Express Integration| package.
-
 * :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
 * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`
 * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
 * :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
+
+.. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the |Oro PayPal Express Integration| package.
 
 Remove an Integration with a Payment Method Provider
 ----------------------------------------------------
@@ -86,7 +85,6 @@ The payment methods that were based on this integration are no longer usable in 
    Apruve Payment Service <apruve/index>
    Authorize.Net Payments Services <authorizenet/index>
    InfinitePay Payment Service <infinitepay/index>
-   Wirecard Payment Services <wirecard/index>
    Ingenico Payment Service <ingenico/index>
    CyberSource Payment Service <cybersource/index>
    Payments at Checkout <checkout/index>
