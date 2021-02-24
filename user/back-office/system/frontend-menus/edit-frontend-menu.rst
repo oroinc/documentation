@@ -155,8 +155,6 @@ The steps are illustrated below:
    :scale: 50%
    :alt: The steps you need to take to disable the About section to customers with configured taxes in the storefront
 
-.. hint:: The **Target Window** feature is available since OroCommerce v4.1.3. To check which application version you are running, see the :ref:`system information <system-information>`.
-
 * **Target Window** --- determines the way to open the linked document or URI. Select *Same Window* option to open it in the current browser window. Select *New Window* to open it in a new browser tab.
 
 * **Image** --- an image used to illustrate a new storefront menu. Click **Choose File** to select the image from your directory and upload it.

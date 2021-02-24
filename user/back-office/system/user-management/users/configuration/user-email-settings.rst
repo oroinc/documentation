@@ -41,8 +41,6 @@ On the **Email Configuration** page, define options applied to all the emails in
 
 2. **Email Synchronization Settings** --- provide details to configure your personal mailbox. Select one of the options below:
 
-   .. hint:: Microsoft Office365 oAuth is available since OroCommerce v4.1.9. To check which application version you are running, see the :ref:`system information <system-information>`.
-
    .. note:: Please be aware that if the Account Type value has changed, a new mailbox will be registered and all data from the currently configured mailbox will be lost.
 
    * **Account Type: Gmail** is available when the application is integrated with Google and :ref:`OAuth 2.0 for email sync <admin-configuration-integrations-google-gmail-oauth>`  is enabled.

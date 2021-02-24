@@ -142,8 +142,6 @@ When importing some particular entities, such as business customers, price attri
 Images or Files Import
 ----------------------
 
-.. hint:: This feature is available since OroCommerce v4.1.7. To check which application version you are running, see the :ref:`system information <system-information>`.
-
 Each importable entity has entity fields of different data types. When you need to upload any attachment to the entity record, be it image or file, you need to make sure that you have input all the required information for the import to process successfully. All attachment fields can be either of a *file, image, multiple files, or multiple images* data type.
 
 .. image:: /user/img/concept-guides/import/entity_attachment_field.png

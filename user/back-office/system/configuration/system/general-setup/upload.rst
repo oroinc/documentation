@@ -32,8 +32,6 @@ To configure the upload settings globally:
 
 .. hint:: The **MIME types** settings can be configured globally and :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`.
 
-.. hint:: The **Image Processing** feature is available since OroCommerce v4.2.0. To check which application version you are running, see the :ref:`system Information <system-information>`.
-
 8. In the **Image Processing** section, you can control whether to optimize or not the size of the uploading images in the storage. By default, the setting is enabled, which means that the size of all images that you upload to the system is compressed while preserving the quality.
 
    .. image:: /user/img/system/config_system/upload_settings_3.png
