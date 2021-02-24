@@ -53,31 +53,6 @@ Authorize.Net
 
 .. image:: /user/img/system/integrations/checkout/checkout_authorizenet.png
 
-.. InfinitePay Checkout
-.. ~~~~~~~~~~~~~~~~~~~~
-
-.. .. image:: /user/img/system/integrations/checkout/checkout_infinitepay.png
-
-
-.. _doc--payment--checkout-wirecard:
-.. _doc--payment--checkout-wirecard-card:
-
-.. Wirecard Credit Card--------------------
-
-.. .. image:: /user/img/system/integrations/checkout/checkout_wirecard_card.png
-
-.. _doc--payment--checkout-wirecard-paypal:
-
-.. Wirecard PayPal---------------
-
-.. .. image:: /user/img/system/integrations/checkout/checkout_wirecard_paypal.png
-
-.. _doc--payment--checkout-wirecard-sepa:
-
-.. Wirecard SEPA Direct Debit --------------------------
-
-.. .. image:: /user/img/system/integrations/checkout/checkout_wirecard_sepa.png
-
 Apruve Checkout
 ---------------
 

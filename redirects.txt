@@ -45,3 +45,6 @@ user/storefront/shopping-lists/guests /user/storefront/account/shopping-lists/gu
 user/storefront/shopping-lists/registered /user/storefront/account/shopping-lists/registered
 backend/setup/content-restriction /backend/setup/post-install/content-restriction
 user/back-office/system/user-management/sample-access /user/back-office/system/user-management/roles/access-in-context
+user/back-office/system/integrations/payment-integration/wirecard/index /user/back-office/system/integrations/payment-integration/index
+user/back-office/system/integrations/payment-integration/wirecard/wirecard-integration /user/back-office/system/integrations/payment-integration/index
+user/back-office/system/integrations/payment-integration/wirecard/wirecard-prerequisites /user/back-office/system/integrations/payment-integration/index
