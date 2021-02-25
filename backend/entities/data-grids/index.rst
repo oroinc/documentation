@@ -352,3 +352,4 @@ Mixin is a datagrid that contains additional (common) information for use by oth
    :hidden:
 
    how-to-pass-request-parameter-to-grid
+   pagination
