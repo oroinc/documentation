@@ -10,9 +10,6 @@ OroEntityPaginationBundle enables pagination UI for a collection of entities whe
 Related Documentation
 ---------------------
 
-* |Enable Pagination|
-* |Handle Pagination Process in System Configuration|
-* |Backend Pagination Processing|
-
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+* :ref:`Enable Pagination <data-grids-entity-pagination>`
+* :ref:`Handle Pagination Process in System Configuration <data-grids-entity-pagination-sys-config>`
+* :ref:`Backend Pagination Processing <data-grids-entity-pagination-backend-processing>`
