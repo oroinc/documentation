@@ -54,6 +54,11 @@ The **allowed options in the theme configuration** file is the following:
 |               | ``commerce`` group for an    |                       |
 |               | OroCommerce application      |                       |
 +---------------+------------------------------+-----------------------+
+| `rtlSupport`  | Defines whether Theme        | no                    |
+|               | supports RTL and additional  |                       |
+|               | *.rtl.css files have to be   |                       |
+|               | build                        |                       |
++---------------+------------------------------+-----------------------+
 
 **Example:**
 
@@ -65,6 +70,7 @@ The **allowed options in the theme configuration** file is the following:
     logo:   bundles/demo/themes/images/logo.png
     parent: default
     groups: [ commerce ]
+    rtlSupport: true
 
 
 w here ``first_name`` is a unique theme identifier.
