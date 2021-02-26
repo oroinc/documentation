@@ -207,6 +207,11 @@ It is a useful option for development purposes that enables you to assemble scri
 
 Turns off SourceMaps building.
 
+`--skip-rtl`
+""""""""""""""""""
+
+Turns off building RTL styles for those themes that has RTL support.
+
 `--analyze`
 """"""""""""""""""
 
