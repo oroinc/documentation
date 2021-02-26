@@ -2361,18 +2361,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/merge-configuration.md" target="_blank">Configure an Entity</a>
 
-.. |Enable Pagination| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/EntityPaginationBundle#how-to-enable-pagination" target="_blank">Enable Pagination</a>
-
-.. |Handle Pagination Process in System Configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/EntityPaginationBundle#system-configuration" target="_blank">Handle Pagination Process in System Configuration</a>
-
-.. |Backend Pagination Processing| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/EntityPaginationBundle#backend-processing" target="_blank">Backend Pagination Processing</a>
-
 .. |Fundamentals| raw:: html
 
    <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle#fundamentals" target="_blank">Fundamentals</a>
