@@ -1834,6 +1834,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/Options/OptionsProcessorTestCase.php" target="_blank">OptionsProcessorTestCase</a>
 
+.. |UnhandledErrorProcessorTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/UnhandledError/UnhandledErrorProcessorTestCase.php" target="_blank">UnhandledErrorProcessorTestCase</a>
+
 .. |ConfigProcessorTestCase| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/GetConfig/ConfigProcessorTestCase.php" target="_blank">ConfigProcessorTestCase</a>
@@ -3644,6 +3648,10 @@ Links (Dev)
 .. |processors.collect_subresources.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_subresources.yml" target="_blank">processors.collect_subresources.yml</a>
+
+.. |UnhandledErrorProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/UnhandledErrorProcessor.php" target="_blank">UnhandledErrorProcessor</a>
 
 .. |BatchUpdateContext| raw:: html
 

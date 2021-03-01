@@ -855,6 +855,7 @@ To do this, you need to perform the following:
               - { name: oro.api.processor, action: add_relationship, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: update_relationship, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: not_allowed, group: initialize, priority: 250 }
+              - { name: oro.api.processor, action: unhandled_error, group: initialize, priority: 250 }
               - { name: oro.api.processor, action: options, group: initialize, priority: 250 }
 
 
