@@ -138,31 +138,30 @@ Proceed to create the attribute as described below.
        - **Related Entity Detailed** -- Available only for the Many to Many and One to Many relations. Select those fields of the entity selected in **Target Entity** which contain additional information that you want to see on the master entity record edit page. The values of the fields selected will be available in the dialog that appears when you click the title of the related entity on the master page edit page. Hold the **Ctrl** key to choose several fields.
        - **Target Field** -- Available only for the Many to One relation. Select the field of the entity selected in **Target Entity** by which the entity records will be tied."
 
-#. In the **Frontend options** section, set up the storefront options applicable to the product attribute.
+3. In the **Frontend options** section, set up the storefront options applicable to the product attribute.
 
    .. image:: /user/img/products/product_attributes/productattributes_create_frontend.png
       :alt: The settings available in the Frontend options section
 
    .. note:: Please note that if the option is not applicable to attributes of the selected type (e.g., image, text, multi-select, etc.), it does not appear in this section.
 
-.. csv-table::
-   :header: "Field", "Description"
-   :widths: 15, 50
+   .. csv-table::
+      :header: "Field", "Description"
+      :widths: 15, 50
 
+      "**Show On View**","Defines whether the attribute is visible or hidden in the storefront."
+      "**Show On Form**","Defines whether the attribute is enabled in the storefront forms."
       "**Searchable**","If enabled, attribute content can be found in the storefront via search."
       "**Filterable**","Defines whether a dedicated filter is available for the attribute in the storefront."
       "**Filter By**","Defines the type of filtering to be applied to the attribute:
 
-       - *Fulltext search* --- Find the exactly matching text and similar words. This type of filtering helps find the required values even if the entered text contains typos or incomplete words.
-       - *Exact value* --- Look for the values that exactly match the entered text."
+        - *Fulltext search* --- Find the exactly matching text and similar words. This type of filtering helps find the required values even if the entered text contains typos or incomplete words.
+        - *Exact value* --- Look for the values that exactly match the entered text."
+      "**Sortable**", "Defines whether sorting is available for the attribute in the storefront.
 
-      "**Sortable**","Defines whether sorting is available for the attribute in the storefront.
        .. note:: Please note that the sortable option is not applicable for the multi-select attribute type. Make sure to set the option to '0' or 'No' when using the importing strategy."
 
-      "**Enabled**","Defines whether the attribute is enabled in the storefront."
-      "**Visible**","Defines whether the attribute is visible or hidden in the storefront."
-
-#. In the **Backoffice options** section, fill in the **Import & Export** subsection to configure details of the product attribute's import/export:
+4. In the **Backoffice options** section, fill in the **Import & Export** subsection to configure details of the product attribute's import/export:
 
    * **Column Name** -- Enter the name of the column (in a CSV file) that would represent the attribute you are creating. If left blank, a label will be used.
    * **Column Position** -- Type a number that corresponds to the position of the attribute in a CSV file.
@@ -173,7 +172,7 @@ Proceed to create the attribute as described below.
      - *Identity only* -- Export only the field that serves as an identifier of the related entity record.
      - *All* -- Export all fields of the related entity record.
 
-4. In the **Backoffice options** section, fill in the **Other** subsection, specifying the configuration options for the product attribute view, search and use in the back-office and storefront.
+5. In the **Backoffice options** section, fill in the **Other** subsection, specifying the configuration options for the product attribute view, search and use in the back-office and storefront.
 
    .. note:: Please note that available options depend on the type selected for the attribute (e.g., image, text, multi-select, etc.).
 
@@ -186,12 +185,13 @@ Proceed to create the attribute as described below.
 
       "**Contact Information**","Labels the product attribute as contact information that may be used in the marketing lists. The contact information may be:
 
-       - Empty --- In this case, the product attribute will not be treated as contact information.
+       - *Empty* --- In this case, the product attribute will not be treated as contact information.
        - *Email* --- When this option is selected, the product attribute value is treated by marketing lists as email addresses.
        - *Phone* --- When this option is selected, the product attribute value is treated by marketing lists as a phone number."
       "**Show on Form**","In this field, select *Yes* if you wish to have the product attribute displayed and be editable on record and page edits."
       "**Applicable Organization**","This check box determines whether you want the product attribute to be available throughout all organizations."
-      "**Available In Email Templates**","Select *Yes* if you wish the product attribute to be available in email templates. To use the product attribute value in the email template:
+      "**Available in Email Templates**", "Select *Yes* if you wish the product attribute to be available in email templates. To use the product attribute value in the email template:
+
        1.  When creating an attribute, mark it as *Available in Email Templates*.
        2.  Navigate to **System > Emails > Templates** and click **Create Email Template**.
        3.  In the template, select *Product* as the entity that the template should relate to.
@@ -208,14 +208,13 @@ Proceed to create the attribute as described below.
       "**Show Grid Filter**","Select *Yes* to display the filter for the product attribute on the user interface."
       "**Grid Order**","Defines the order of the product attributes in the product grid. The product attributes with a smaller value of the grid order number will be displayed before the attributes with a bigger value."
       "**Show On View**","Select *Yes* if you wish to have this product attribute displayed on the product view page."
-      "**Priority**","Priority defines the order of the product attributes on the view, edit, create pages.
-                      Custom product attributes are always displayed one by one, usually below the system fields. If no priority is defined or the defined priority is 0, the product attributes will be displayed in the order in which they have been added to the system. The product attributes with a higher priority (a smaller value) will be displayed before the attributes with a lower priority."
+      "**Priority**", "Priority defines the order of the product attributes on the view, edit, create pages. Custom product attributes are always displayed one by one, usually below the system fields. If no priority is defined or the defined priority is 0, the product attributes will be displayed in the order in which they have been added to the system. The product attributes with a higher priority (a smaller value) will be displayed before the attributes with a lower priority."
       "**Searchable**","When set to *Yes*, the attribute is included in the search options in the back-office."
       "**Auditable**","When set to *Yes*, the system will log changes made to this product attribute value when a user edits the product details."
 
-5. Once all options are configured, and the necessary information is provided, click **Save**.
+6. Once all options are configured, and the necessary information is provided, click **Save**.
 
-6. If the created attribute is of a *table column* :ref:`storage type <admin-guide-create-entity-fields-basic>`, click **Update Schema** to reindex the data for search and filter.
+7. If the created attribute is of a *table column* :ref:`storage type <admin-guide-create-entity-fields-basic>`, click **Update Schema** to reindex the data for search and filter.
 
    .. note:: The product attribute :ref:`storage type <admin-guide-create-entity-fields-basic>` is set to *table column* for the attribute with Select of Multi-Select data type, and also for the attribute of any type with *Filterable* or *Sortable* option enabled. If this step is omitted, the newly created attribute will not appear in the select attribute options in other areas of OroCommerce (e.g., product families configuration).
 
