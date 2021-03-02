@@ -135,11 +135,12 @@ Proceed to create the attribute as described below.
 
        - *Fuzzy search* --- Find the exactly matching text and similar words. This type of filtering helps find the required values even if the entered text contains typos or incomplete words.
        - *Exact value* --- Look for the values that exactly match the entered text."
+      "**Sortable**", "Defines whether sorting is available for the attribute in the storefront.
 
-      "**Sortable**","Defines whether sorting is available for the attribute in the storefront.
        .. note:: Please note that the sortable option is not applicable for the multi-select attribute type. Make sure to set the option to '0' or 'No' when using the importing strategy."
+      "**Enabled**","Defines whether the attribute is enabled in the storefront.
 
-      "**Enabled**","Defines whether the attribute is enabled in the storefront."
+                    .. note:: This option is no longer used."
       "**Visible**","Defines whether the attribute is visible or hidden in the storefront."
 
 #. In the **Backoffice options** section, fill in the **Import & Export** subsection to configure details of the product attribute's import/export:
