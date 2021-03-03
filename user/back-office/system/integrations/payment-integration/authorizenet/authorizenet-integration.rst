@@ -81,6 +81,8 @@ To set up integration with Authorize.Net, complete the following:
 
        .. note:: *Authorize and Charge* is the only payment action available for eCheck payments.
 
+   * **Create Orders for Transactions Held for Review** --- Use this option to enable order creation in OroCommerce if you configured fraud detection filters in your Authorize.Net account and set the filter action to *Authorize and hold for review* or *Do not authorize, but hold for review*. The created orders will be authorized only, regardless of the *Payment Action* selected above.
+
 7. In the **Other** section, provide the following information:
 
    * **Status**  --- Set the status to **Active** to enable the integration.
