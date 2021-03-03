@@ -2259,31 +2259,7 @@ Links (Dev)
 
 .. |Configure and Use OroEmbeddedBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
-
-.. |Add Metadada to an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#getting-started" target="_blank">Add Metadada to an Entity</a>
-
-.. |Index Attributes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#indexed-attributes" target="_blank">Index Attributes</a>
-
-.. |Implement EntityConfigBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#implementation" target="_blank">Implement EntityConfigBundle</a>
-
-.. |Update Configuration Data| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#update-configuration-data" target="_blank">Update Configuration Data</a>
-
-.. |Clear up Cache| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#clearing-up-the-cache" target="_blank">Clear up Cache</a>
-
-.. |Debug Configuration Data| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#debugging-configuration-data" target="_blank">Debug Configuration Data</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
 .. |Use Entity Merge| raw:: html
 

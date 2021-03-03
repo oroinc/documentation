@@ -11,13 +11,8 @@ Related Documentation
 ---------------------
 
 * :ref:`Configure Attributes for an Entity <dev-entities-attributes>`
-* |Add Metadada to an Entity|
-* |Index Attributes|
-* |Implement EntityConfigBundle|
-* |Update Configuration Data|
-* |Clear up Cache|
-* |Debug Configuration Data|
-* :ref:`Configure Entity Scope (Example) <book-entities-entity-configuration>`
+* :ref:`Configure Entities <book-entities-entity-configuration>`
+* :ref:`Entity Configuration <yaml-format-config-entity>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
