@@ -34,8 +34,8 @@ Entity Configuration
     This scope is later referred to with the ``defaultValues`` option of the ``@Config`` and
     ``@ConfigField`` annotations.
 
-Config(yml) Example
-====================
+Example of 'Entity' Scope Configuration
+---------------------------------------
 
 .. code-block:: yaml
 

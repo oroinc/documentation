@@ -2307,38 +2307,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
-.. |Configure Attributes for an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle/Resources/doc/attributes.md" target="_blank">Configure Attributes for an Entity</a>
-
-.. |Add Metadada to an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle#getting-started" target="_blank">Add Metadada to an Entity</a>
-
-.. |Index Attributes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle#indexed-attributes" target="_blank">Index Attributes</a>
-
-.. |Implement EntityConfigBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle#implementation" target="_blank">Implement EntityConfigBundle</a>
-
-.. |Update Configuration Data| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle#update-configuration-data" target="_blank">Update Configuration Data</a>
-
-.. |Clear up Cache| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle#clearing-up-the-cache" target="_blank">Clear up Cache</a>
-
-.. |Debug Configuration Data| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle#debugging-configuration-data" target="_blank">Debug Configuration Data</a>
-
-.. |Configure Entity Scope (Example)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle/Resources/doc/configuration.md" target="_blank">Configure Entity Scope (Example)</a>
-
 .. |Use Entity Merge| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/getting-started.md" target="_blank">Use Entity Merge</a>
