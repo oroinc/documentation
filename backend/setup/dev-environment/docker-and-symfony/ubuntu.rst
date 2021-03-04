@@ -1,7 +1,7 @@
 .. _setup-dev-env-docker-symfony_ubuntu:
 
-Setup on Ubuntu 20.04
-=====================
+Set up Environment for OroPlatform Based Application on Ubuntu 20.04
+====================================================================
 
 This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Ubuntu 20.04 LTS.
 
@@ -13,12 +13,20 @@ Environment Setup
    .. code-block:: bash
 
       sudo apt install software-properties-common
-      sudo add-apt-repository ppa:ondrej/php
+      sudo add-apt-repository -y ppa:ondrej/php
       sudo apt update
       sudo apt -y install php7.4 php7.4-fpm php7.4-cli php7.4-pdo php7.4-mysqlnd php7.4-xml php7.4-soap php7.4-gd php7.4-zip php7.4-intl php7.4-mbstring php7.4-opcache php7.4-curl php7.4-bcmath php7.4-ldap php7.4-pgsql php7.4-dev
-      pecl install mongodb
 
-2. Install Node.js 12:
+2. If you going to use an Enterprise Edition of the application, install and enable the mongodb php extension:
+
+   .. code-block:: bash
+
+      sudo pecl channel-update pecl.php.net
+      sudo pecl install mongodb
+      sudo echo extension=mongodb.so  | sudo tee -a /etc/php/7.4/fpm/php.ini
+      sudo echo extension=mongodb.so  | sudo tee -a /etc/php/7.4/cli/php.ini
+
+3. Install Node.js 12:
 
    .. code-block:: bash
 
@@ -26,7 +34,7 @@ Environment Setup
       curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
       sudo apt -y install nodejs
 
-3. Install Docker and Docker Compose:
+4. Install Docker and Docker Compose:
 
    .. code-block:: bash
 
@@ -34,7 +42,7 @@ Environment Setup
       sudo usermod -aG docker $(whoami)
       sudo systemctl enable --now docker
 
-4. Install Composer v2:
+5. Install Composer v2:
 
    .. code-block:: bash
 
@@ -42,7 +50,7 @@ Environment Setup
       php -r "unlink('composer-setup.php');"
       sudo mv composer.phar /usr/bin/composer
 
-5. Install Symfony Server and enable TLS:
+6. Install Symfony Server and enable TLS:
 
    .. code-block:: bash
 
@@ -52,7 +60,7 @@ Environment Setup
       source ~/.bashrc
       symfony server:ca:install
 
-6. Restart the terminal and web browser to get them ready.
+7. Restart the terminal and web browser to get them ready.
 
 What's Next
 -----------

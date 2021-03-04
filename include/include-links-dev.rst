@@ -5557,3 +5557,23 @@ Links (Dev)
 .. |abstract provider| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/AbstractEntityClassNameProvider.php" target="_blank">abstract provider</a>
+
+.. |Ubuntu 20.04 LTS from the Microsoft Store| raw:: html
+
+   <a href="https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" target="_blank">Ubuntu 20.04 LTS from the Microsoft Store</a>
+
+.. |Docker Desktop for Windows| raw:: html
+
+   <a href="https://docs.docker.com/docker-for-windows/install/" target="_blank">Docker Desktop for Windows</a>
+
+.. |Docker Desktop WSL 2 backend| raw:: html
+
+   <a href="https://docs.docker.com/docker-for-windows/wsl/" target="_blank">Docker Desktop WSL 2 backend</a>
+
+.. |Windows Terminal| raw:: html
+
+   <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701" target="_blank">Windows Terminal</a>
+
+.. |Docker images and stacks for OroPlatform based applications by the Kiboko team| raw:: html
+
+   <a href="https://github.com/kiboko-labs/kloud" target="_blank">Docker images and stacks for OroPlatform based applications by the Kiboko team</a>
