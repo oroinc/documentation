@@ -1,7 +1,7 @@
 .. _setup-dev-env-docker-symfony_mac:
 
-Setup on Mac OS X
-=================
+Set up Environment for OroPlatform Based Application on Mac OS X
+================================================================
 
 This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Mac OS X.
 

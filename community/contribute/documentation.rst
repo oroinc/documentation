@@ -32,15 +32,10 @@ For large volume of  updates, fixes, and enhancements please use the following p
 
 #. Build and test the documentation before submitting a pull request to be sure you haven't accidentally introduced any layout or formatting issues.
 
-  .. note::
+   - To build documentation, set up a local build environment by installing |Docker| and |Docker Compose|.
+   - To test your changes before you commit them, run ``docker-compose up`` in the documentation folder.
 
-   To build documentation, set up a local Sphinx build environment:
-
-      * |Install PHPStorm| as the recommended IDE. Although PHPStorm is recommended, it is not the required IDE for Oro application development. If you use a different IDE, skip this step.
-      * Install |pip|.
-      * Install |Sphinx with Extensions for PHP and Symfony|.
-
-   To test your changes before you commit them, run ``make html`` in the documentation folder. Ensure that ``conf.py`` (documentation build configuration file) is there. Check the generated documentation in the ``_build/html`` directory.
+   Check the generated documentation in the ``_build/html`` directory.
 
 Update Documentation
 --------------------

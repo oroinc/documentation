@@ -1,8 +1,8 @@
 .. _dev-guide-development-practice-setup-dev-env:
 .. _doc--dev-env-best-practices:
 
-Development Environment
-=======================
+Set up Development Environment for OroPlatform Based Application
+================================================================
 
 To set up the development environment for Oro applications customization tasks, please follow the steps outlined in the sections below.
 
@@ -13,7 +13,7 @@ Meet the Hardware and OS Requirements
 
 * **Operating System**
 
-  The recommended OS for Oro applications is CentOS. However, it is possible to set up the development environment on any Linux, Mac, or Windows OS.
+  The recommended OS for Oro applications is CentOS. However, it is possible to set up the development environment on any Linux, Mac, or Windows with WSL2.
 
 * **Disk Drive**
 
@@ -29,8 +29,6 @@ Prepare Development Tools
 -------------------------
 
 1. |Install Git|.
-
-#. |Install Node.js & NPM| to build application assets.
 
 #. |Install PHPStorm| as the recommended IDE.
 
@@ -91,9 +89,11 @@ Create a Custom Application
 Setup Application Environment
 -----------------------------
 
-If you are using CentOS, you can follow the :ref:`Environment Setup for Community Edition <environment-setup-community>` or :ref:`Environment Setup for Enterprise Edition <environment-setup-enterprise>` to set up the environment for your custom Oro application.
-
+If you are using CentOS, you can follow the :ref:`Environment Setup for Community Edition <environment-setup-community>`
+or :ref:`Environment Setup for Enterprise Edition <environment-setup-enterprise>` to set up the environment for your custom Oro application.
 Otherwise, we recommend using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`.
+
+Alternatively, to have a fully dockerized environment, you can use |Docker images and stacks for OroPlatform based applications by the Kiboko team|.
 
 .. _dev-guide-development-practice-setup-dev-env-install-app:
 
@@ -126,12 +126,12 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    :hidden:
    :maxdepth: 1
 
-   community-edition
-   enterprise-edition
-   docker-and-symfony/index
-   web-server-config
-   environment-type-based-configuration
-   monitoring
+   Community Edition <community-edition>
+   Enterprise Edition <enterprise-edition>
+   Docker & Symfony Server <docker-and-symfony/index>
+   Web Server Configuration <web-server-config>
+   Environment Types <environment-type-based-configuration>
+   Healthcheck and Data Monitoring <monitoring>
 
 
 .. include:: /include/include-links-dev.rst

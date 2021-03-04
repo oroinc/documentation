@@ -1,7 +1,7 @@
 .. _setup-dev-env-docker-symfony_ubuntu:
 
-Setup on Ubuntu 20.04
-=====================
+Set up Environment for OroPlatform Based Application on Ubuntu 20.04
+====================================================================
 
 This guide demonstrates how to set up :ref:`Docker and Symfony Server development stack <setup-dev-env-docker-symfony>` for Oro applications on Ubuntu 20.04 LTS.
 

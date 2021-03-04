@@ -17,7 +17,7 @@ The application setup guides provide the details on how to configure the environ
    :maxdepth: 1
 
    system-requirements/index
-   dev-environment/index
+   Development Environment <dev-environment/index>
    demo-environment/index
    get-source-files
    installation

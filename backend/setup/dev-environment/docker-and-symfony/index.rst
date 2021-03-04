@@ -1,41 +1,38 @@
 .. _setup-dev-env-docker-symfony:
 
-Docker and Symfony Server
-=========================
+Set up Environment for OroPlatform Based Application with Docker and Symfony Server
+===================================================================================
 
-.. hint:: This feature is available since OroCommerce v4.1.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint::
+
+   This feature is available since OroCommerce v4.1.7. To check which application version you are running,
+   see the :ref:`system information <system-information>` or run ``composer info oro/platform``.
 
 During development, you can use Docker to run various application
-services (MySQL, Postgres, ElasticSearch, RabbitMQ and Redis), but for
+services (MySQL, Postgres, ElasticSearch, RabbitMQ, Redis and MailCatcher), but for
 simplicity, performance and reliability have PHP and NodeJS installed
 locally on a host machine.
-
-**Development Stack**
-
--  |Symfony Local Web Server| - used to make you more productive while
-   developing applications. This server is not intended for production
-   use. It supports HTTP/2, TLS/SSL, automatic generation of security
-   certificates, local domains, and many other features.
--  |Docker| - used to run application services.
--  |Docker Compose| - used to manage them all with a single command.
 
 Set Up the Environment
 ----------------------
 
 .. hint::
 
-   There are quick guides for setup Docker and Symfony Server stack on :ref:`Mac OS X <setup-dev-env-docker-symfony_mac>` and :ref:`Ubuntu 20.04 LTS <setup-dev-env-docker-symfony_ubuntu>`.
+   There are quick guides to setup Docker and Symfony Server development stack:
 
-**Requirements**
+   - :ref:`Setup on Mac OS X <setup-dev-env-docker-symfony_mac>`
+   - :ref:`Setup on Ubuntu 20.04 LTS <setup-dev-env-docker-symfony_ubuntu>`
+   - :ref:`Setup on Windows Subsystem for Linux (WSL) 2 <setup-dev-env-docker-symfony_windows>`
 
-To start working with this development stack, you need to install locally:
+**Development Stack**
 
--  |Download PHP|
--  |Download Node.js & NPM|
--  |Download Composer|
--  |Symfony binary|
--  |Download Docker|
--  |Install Docker Compose|
+-  PHP, Composer, Node.js, and NPM should be installed locally for a better development experience.
+-  |Symfony Local Web Server| is used to make you more productive while
+   developing applications. This server is not intended for production
+   use. It supports HTTP/2, TLS/SSL, automatic generation of security
+   certificates, local domains, and many other features.
+-  |Docker| is used to run application services.
+-  |Docker Compose| is used to manage them all with a single command.
 
 
 .. note::
@@ -45,14 +42,7 @@ To start working with this development stack, you need to install locally:
 
 **Recommendations**
 
-1. For better performance, it is also recommended to install a symfony
-   flex composer plugin globally:
-
-   .. code-block:: bash
-
-      composer global require symfony/flex
-
-2. To work with enterprise applications and not reach composer API rate limit, configure |GitHub OAuth token|:
+To avoid reaching composer API rate limit and to work with enterprise applications, configure |GitHub OAuth token|:
 
    .. code-block:: bash
 
@@ -85,7 +75,7 @@ Install the Application
       composer install -n
 
 
-4. If you are using an Enterprise edition application, :ref:`update the parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
+4. If you are using an Enterprise edition application, update the parameters.yml file.
 
    .. code-block:: bash
 
@@ -99,112 +89,6 @@ Install the Application
 
 .. _setup-dev-env-docker-symfony-services:
 
-.. _for-using-enterprise-services-update-parameters-yml-file:
-
-Use Enterprise Services
------------------------
-
-For the Enterprise edition of Oro applications, it is recommended to use
-Postgres, ElasticSearch, RabbitMQ, and Redis services.
-
-To enable them, you first have to update configuration in
-``config/parameters.yml``:
-
-.. code-block:: yaml
-
-   parameters:
-       database_driver: pdo_pgsql
-       search_engine_name: elastic_search
-       message_queue_transport: amqp
-       message_queue_transport_config:
-           host: '%env(ORO_MQ_HOST)%'
-           port: '%env(ORO_MQ_PORT)%'
-           user: '%env(ORO_MQ_USER)%'
-           password: '%env(ORO_MQ_PASSWORD)%'
-           vhost: /
-       redis_dsn_cache: '%env(ORO_REDIS_URL)%/1'
-       redis_dsn_doctrine: '%env(ORO_REDIS_URL)%/2'
-
-To automatically update ``parameters.yml`` file from CLI, you can also
-use the ``composer set-parameters`` command:
-
-.. code-block:: bash
-
-   composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
-
-.. note:: Run ``composer set-parameters`` without arguments to see the full command reference.
-
-Store Sessions in Redis
------------------------
-
-It is not recommended to store sessions on the same redis server as the
-cache, but for testing purpose, you can enable it with the following
-configuration in ``config/parameters.yml``:
-
-.. code-block:: yaml
-
-   parameters:
-       session_handler:   'snc_redis.session.handler'
-       redis_dsn_session: '%env(ORO_REDIS_URL)%/0'
-
-
-Manage Application Services
----------------------------
-
-All the application services are defined in ``docker-compose.yml`` file.
-By default, ``docker-compose.yml`` file shipped with an application has a
-set of recommended services for each application:
-
-* For community edition applications, it is **MySQL**.
-* For enterprise edition applications, they are: **Postgres**, **ElasticSearch**, **RabbitMQ** and **Redis**.
-
-Override Docker Compose Configuration Locally
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can use ``docker-compose.override.yml`` file to override Docker
-Compose configuration locally. By default, the file is in ``.gitignore``.
-
-.. note:: For an enterprise application, to start working with application services, you first have to :ref:`update the parameters.yml file <for-using-enterprise-services-update-parameters-yml-file>`.
-
-Run Application Services
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: bash
-
-   docker-compose up -d
-
-Check Services Logs
-^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: bash
-
-   docker-compose logs -f
-
-CheckApplication Services Status
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: bash
-
-   docker-compose ps
-
-Stop Application Services (No Data Loss)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: bash
-
-   docker-compose stop
-
-Destroy Application Services with all Volumes (Data Loss)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: bash
-
-   docker-compose down -v
-
-For more details, see |Overview of Docker Compose|.
-
-.. _setup-dev-env-docker-symfony-using-symfony-server:
-
 Use a Symfony Server
 --------------------
 
@@ -214,12 +98,22 @@ all the symfony application commands using ``symfony console`` instead
 of ``bin/console``. Use ``symfony php`` to run php binaries
 using proper PHP version and expose environment variables from the application services defined with Docker Compose.
 
-Start the Symfony Server
-^^^^^^^^^^^^^^^^^^^^^^^^
+.. note::
+     On Windows with WSL2 the website is accessible using https://localhost:8000, instead of https://127.0.0.1:8000.
+
+Run Symfony Server in a ``Dev`` Environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
    symfony server:start -d
+
+Run Symfony Server in a ``Prod`` Environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   symfony server:start -d --passthru=index.php
 
 Open the Application in a Browser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -261,13 +155,6 @@ You can also ask symfony to restart the message consumer when changes happen in 
 
    symfony run -d --watch=src php bin/console oro:message-queue:consume -vv
 
-Run Symfony Server in a ``Prod`` Environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: bash
-
-   symfony server:start -d --passthru=index.php
-
 Check Symfony Server status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -280,7 +167,7 @@ For more details, see: |Symfony Local Web Server|.
 .. _3-optional-local-domain-names:
 
 Enable Local Domain Names
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default, projects are accessible at a random port of the 127.0.0.1
 local IP.
@@ -289,6 +176,72 @@ You can enable local domains by |setting up the Local Proxy|.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+Manage Application Services
+---------------------------
+
+All application services are defined in the ``docker-compose.yml`` file.
+By default, the ``docker-compose.yml`` file shipped with an application has a
+set of recommended services for each application:
+
+* For community edition applications: **MySQL** and **MailCatcher**.
+* For enterprise edition applications: **Postgres**, **ElasticSearch**, **RabbitMQ**, **Redis** and **MailCatcher**.
+
+Override Docker Compose Configuration Locally
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can use ``docker-compose.override.yml`` file to override Docker
+Compose configuration locally. By default, the file is in ``.gitignore``.
+
+.. note:: For an enterprise application, you first have to update the parameters.yml file to start working with the application services.
+
+Run Application Services
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   docker-compose up -d
+
+Check Services Logs
+^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   docker-compose logs -f
+
+Check Application Services Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   docker-compose ps
+
+Stop Application Services (No Data Loss)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   docker-compose stop
+
+Destroy Application Services with all Volumes (Data Loss)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   docker-compose down -v
+
+For more details, see |Overview of Docker Compose|.
+
+Store Sessions in Redis
+-----------------------
+
+It is not recommended to store sessions on the same redis server as the
+cache, but for testing purpose, you can enable it with the following
+command:
+
+.. code-block:: bash
+
+   composer set-parameters session_handler="snc_redis.session.handler" redis_dsn_session="%env(ORO_REDIS_URL)%/0"
 
 Troubleshooting
 ---------------
@@ -312,5 +265,6 @@ If the list is empty, run ``docker-compose up -d`` to start all the services.
    :hidden:
    :maxdepth: 1
 
-   mac
-   ubuntu
+   Setup on Ubuntu <ubuntu>
+   Setup on macOS <mac>
+   Setup on Windows <windows>
