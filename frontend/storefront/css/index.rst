@@ -98,6 +98,9 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
             # Just prepend them with a ~ to tell Webpack that this is not a relative import.
             # See: https://webpack.js.org/loaders/sass-loader/#resolving-import-at-rules
             - '~prismjs/themes/prism-coy.css'
+        auto_rtl_inputs:
+            # List of file masks for inputs that has to be processed with RTL plugin
+            - 'bundles/oro*/**'
         filters: ['cssrewrite', 'cssmin']
         output: 'css/layout/blank/styles.css'
 

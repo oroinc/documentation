@@ -131,6 +131,8 @@ Create an `assets.yml` file that contains an entry point list with the files to 
     checkout:                                               # Another entry point name
         inputs:                                             # List of files to load for `checkout` entry point
             - 'bundles/app/scss/checkout_page_styles.scss'
+        auto_rtl_inputs:                                    # List of file masks for inputs that has to be processed with RTL plugin
+            - 'bundles/app/**'
         output: 'css/checkout-styles.css'                   # Output file path inside public/ directory for the `checkout` entry point
 
 Location of `assets.yml`
