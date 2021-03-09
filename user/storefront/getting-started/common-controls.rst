@@ -1,12 +1,12 @@
 .. _storefront-common-controls:
 
 Manage Common Controls in the Storefront
-----------------------------------------
+========================================
 
 .. _frontstore-guide--navigation-tables:
 
 Tables
-^^^^^^
+------
 
 Views in the form of tables can be considered the most commonly used UI elements in Oro applications. They are interactive, as they not only display data about specific store records but contain links to these records’ pages. Views are also configurable – so you can adjust the appearance and contents of the tables to your taste and needs.
 
@@ -17,7 +17,7 @@ Such tables represent aggregated views of data and store records, making it easy
 .. _frontstore-guide--navigation-location-trail:
 
 Location Trail
-^^^^^^^^^^^^^^
+--------------
 
 In the top left corner of the view page, you can see where the current page is located in the menu. The name of the selected view table is usually located in the row below.
 
@@ -26,7 +26,7 @@ In the top left corner of the view page, you can see where the current page is l
 .. _frontstore-guide--navigation-display-options:
 
 Display Options
-^^^^^^^^^^^^^^^
+---------------
 
 .. image:: /user/img/storefront/navigation/GridPages.png
 
@@ -62,7 +62,7 @@ To open a particular page, type its number in the field that displays the curren
 .. _frontstore-guide--navigation-saved-views:
 
 Saved Views
-^^^^^^^^^^^
+-----------
 
 A saved view is a table with applied filters or custom orders.
 
@@ -92,7 +92,7 @@ Tables can be viewed, saved as new ones, shared, renamed, set as default and del
 .. _frontstore-guide--navigation-action-buttons:
 
 Action Buttons
-^^^^^^^^^^^^^^
+--------------
 
 Action buttons are on the right of the view page. They enable you to perform a number of actions with records. The set of such buttons varies depending on the type of the view opened.
 
@@ -116,7 +116,7 @@ The following action buttons can be available:
 .. _frontstore-guide--navigation-filters:
 
 Filters
-^^^^^^^
+-------
 
 Filters are used when you need to quickly pick out the records you need from the entire data pool.
 
@@ -173,7 +173,7 @@ The following example is an illustration of filters in action:
 .. _frontstore-guide--navigation-table-options:
 
 Grid Options
-^^^^^^^^^^^^
+------------
 
 View tables usually contain one or more options applied to specific records within them. These options take the form of individual icons or icons within the ellipsis menu that can be collapsed.
 
@@ -184,10 +184,8 @@ View tables usually contain one or more options applied to specific records with
 
 .. _frontstore-guide--mass-actions--front-store:
 
-.. begin
-
 Mass Delete in Tables
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 With mass actions, you can apply one action to multiple items at the same time, which can simplify and speed up the process of selecting the required items.
 
@@ -222,7 +220,7 @@ To use mass delete action in the storefront, you need to :ref:`sign into the acc
 .. _frontstore-guide--navigation-search:
 
 Search
-^^^^^^
+------
 
 Search is the fastest way to find a specific product:
 
@@ -234,6 +232,25 @@ The search shows up-to-date product information, such as SKU, name, price, and i
 
 .. image:: /user/img/storefront/navigation/search-autocomplete.png
    :alt: Search auto-complete illustration
+
+Saved Search
+------------
+
+Customer users can save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock.
+
+To save a search result:
+
+1. Use the search bar to look for a product name, SKU, keyword, etc.
+2. When the search results are displayed, click the **Save** icon on the top right. Make sure that the panel with filters is open.
+
+   .. image:: /user/img/storefront/navigation/saved-search.png
+      :alt: Saved search icon in the Filters panel
+
+3. Select the check boxes for *New Product* and/or *Inventory Status* if you want to receive notifications.
+4. Click **Add**. Your search query is now saved under **My Account > Saved Search**.
+
+   .. image:: /user/img/storefront/navigation/saved-search-acc.png
+      :alt: Saved search in the customer user account
 
 .. include:: /include/include-images.rst
    :start-after: begin

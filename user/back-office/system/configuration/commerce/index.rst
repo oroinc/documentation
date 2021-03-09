@@ -57,8 +57,6 @@ Learn the key options for setting up products in your Oro application, as well a
 * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products>`
 * :ref:`Product Collections <configuration--guide--commerce--configuration--product-collections>`
 
-
-
 :ref:`Inventory <configuration--guide--commerce--configuration--inventory>`
 ---------------------------------------------------------------------------
 
@@ -84,8 +82,6 @@ Learn how to enable the quick order form, promotions, guest shopping lists, esta
 * :ref:`Quotes <sys--conf--commerce--guest--enable--guest_quotes>`
 * :ref:`Shopping List <configuration-shopping-list>`
 
-
-
 :ref:`Taxation <configuration--guide--commerce--configuration--taxation>`
 -------------------------------------------------------------------------
 
@@ -96,8 +92,6 @@ Learn how to enable taxation, select the tax provider, set Sales and VAT taxes, 
 * :ref:`EU VAT Tax <user-guide--taxes--eu>`
 * :ref:`Shipping <sys--conf--commerce--taxation--shipping-tax>`
 
-
-
 :ref:`Payment <configuration--guide--commerce--configuration--payment>`
 -----------------------------------------------------------------------
 
@@ -105,6 +99,10 @@ Learn how to define the merchant country.
 
 * :ref:`General <sys--conf--commerce--payment--general>`
 
+:ref:`Search <configuration--guide--commerce--configuration--search>`
+---------------------------------------------------------------------
+
+* :ref:`Saved Search <configuration--guide--commerce--configuration--saved-search>`
 
 :ref:`Orders <configuration--guide--commerce--configuration--order>`
 --------------------------------------------------------------------
@@ -114,7 +112,6 @@ Learn how to define how open orders should be displayed in the storefront.
 * :ref:`Order Automation <configuration--commerce--orders>`
 * :ref:`Order Creation <configuration--commerce--orders-create>`
 * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
-
 
 :ref:`Shipping <configuration--guide--commerce--configuration--shipping>`
 -------------------------------------------------------------------------
@@ -139,5 +136,6 @@ Learn how to provide your shipping origin address and shipping options.
    Sales <sales/index>
    Taxation <taxation/index>
    Payment <payment/index>
+   Search <search/index>
    Orders <orders/index>
    Shipping <shipping/index>

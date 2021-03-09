@@ -88,7 +88,11 @@ More information about the options available for each of the two categories is a
     * :ref:`Pricing <pricing-currency-website>`
     * :ref:`Filters and Sorters <configuration--guide--commerce--configuration--catalog--filters-sorters--website>`
     * :ref:`Related Products <sys--websites--commerce--catalog--related-products>`
-    * :ref:`Special Pages ( All Products Page) <sys--conf--commerce--catalog--special-pages--website>`
+    * :ref:`Special Pages (All Products Page) <sys--conf--commerce--catalog--special-pages--website>`
+
+  * Search
+
+    * :ref:`Saved Search <configuration--website-commerce--search--saved-search>`
 
   * Orders
 
