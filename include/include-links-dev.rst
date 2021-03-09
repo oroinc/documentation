@@ -2259,7 +2259,7 @@ Links (Dev)
 
 .. |Configure and Use OroEmbeddedBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
 .. |Use Entity Merge| raw:: html
 

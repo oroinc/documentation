@@ -16,6 +16,7 @@ Learn how to configure commerce-specific settings:
    Product <product/index>
    Sales <sales/index>
    Catalog <catalog/index>
+   Search <search/index>
    Orders <orders/index>
    Inventory <inventory/index>
 

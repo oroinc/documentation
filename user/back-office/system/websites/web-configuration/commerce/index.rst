@@ -17,4 +17,5 @@ Learn how to configure commerce-specific settings for selected websites:
    Inventory <inventory/index>
    Sales <sales/index>
    Catalog <catalog/index>
+   Search <search/index>
    Orders <orders/index>

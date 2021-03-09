@@ -74,6 +74,10 @@ The following categories of settings are available for system configuration at o
     * :ref:`Order Creation <configuration--commerce--orders--order-creation--organization>`
     * :ref:`Purchase History <sys--commerce--orders--previously-purchased--org>`
 
+  * Search
+
+    * :ref:`Saved Search <organization-commerce--configuration--saved-search>`
+
   * Catalog
 
     * :ref:`Filters and Sorters <configuration--guide--commerce--configuration--catalog--filters-sorters--organization>`
