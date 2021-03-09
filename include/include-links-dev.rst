@@ -1934,7 +1934,7 @@ Links (Dev)
 
 .. |configuration of existing processors| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blog/master/src/Oro/Bundle/ApiBundle/Resources/config" target="_blank">configuration of existing processors</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ApiBundle/Resources/config" target="_blank">configuration of existing processors</a>
 
 .. |SetWebsite| raw:: html
 
@@ -2305,7 +2305,7 @@ Links (Dev)
 
 .. |Configure and Use OroEmbeddedBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
 .. |Use Entity Merge| raw:: html
 
@@ -4333,11 +4333,11 @@ Links (Dev)
 
 .. |PostProcessorInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/PostProcessor/PostProcessorInterface.php" target="_blank">PostProcessorInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/ApiBundle/PostProcessor/PostProcessorInterface.php" target="_blank">PostProcessorInterface</a>
 
 .. |PostProcessorRegistry| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/PostProcessor/PostProcessorRegistry.php" target="_blank">PostProcessorRegistry</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/ApiBundle/PostProcessor/PostProcessorRegistry.php" target="_blank">PostProcessorRegistry</a>
 
 .. |ProcessorInterface| raw:: html
 
