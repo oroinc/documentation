@@ -5577,3 +5577,21 @@ Links (Dev)
 .. |Docker images and stacks for OroPlatform based applications by the Kiboko team| raw:: html
 
    <a href="https://github.com/kiboko-labs/kloud" target="_blank">Docker images and stacks for OroPlatform based applications by the Kiboko team</a>
+
+.. |wildcard file mask| raw:: html
+
+   <a href="https://www.npmjs.com/package/wildcard" target="_blank">wildcard file mask</a>
+
+.. |RTLCSS| raw:: html
+
+   <a href="https://rtlcss.com" target="_blank">RTLCSS</a>
+
+.. |RTLCSS documentation| raw:: html
+
+   <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/" target="_blank">RTLCSS documentation</a>
+
+.. |Admin theme configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ThemeBundle#adding-a-theme-using-configyml" target="_blank">Admin theme configuration</a>
+
+

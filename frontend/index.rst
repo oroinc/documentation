@@ -21,6 +21,7 @@ There are two types of themes:
 
 All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-javascript>` except for the way the JS modules are registered.
 
+:ref:`Right to Left UI Support <frontend--rtl-support>` guides you on how to enable "Right to Left" text direction UI.
 
 .. toctree::
     :titlesonly:
@@ -31,3 +32,4 @@ All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-java
     storefront-design/index
     back-office/index
     javascript/index
+    rtl-support
