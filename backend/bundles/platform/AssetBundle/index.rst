@@ -115,6 +115,8 @@ To enable HMR for `prod` environment add below lines to `config/config.yml`
         webpack_dev_server:
             enable_hmr: true
 
+.. _bundle-docs-platform-asset-bundle-load-css-from-bundle:
+
 Load SCSS or CSS Files from the Bundle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -131,7 +133,7 @@ Create an `assets.yml` file that contains an entry point list with the files to 
     checkout:                                               # Another entry point name
         inputs:                                             # List of files to load for `checkout` entry point
             - 'bundles/app/scss/checkout_page_styles.scss'
-        auto_rtl_inputs:                                    # List of file masks for inputs that has to be processed with RTL plugin
+        auto_rtl_inputs:                                    # List of wildcard file masks for inputs that has to be processed with RTL plugin
             - 'bundles/app/**'
         output: 'css/checkout-styles.css'                   # Output file path inside public/ directory for the `checkout` entry point
 
@@ -210,12 +212,12 @@ It is a useful option for development purposes that enables you to assemble scri
 Turns off SourceMaps building.
 
 `--skip-rtl`
-""""""""""""""""""
+""""""""""""
 
 Turns off building RTL styles for those themes that has RTL support.
 
 `--analyze`
-""""""""""""""""""
+"""""""""""
 
 Turns on BundleAnalyzerPlugin for the build.
 
