@@ -310,6 +310,7 @@ To simplify |unit testing| of :ref:`API processors <web-api--processors>`, one o
     "|CustomizeLoadedDataProcessorTestCase|",":ref:`customize_loaded_data <customize-loaded-data-action>`"
     "|CustomizeFormDataProcessorTestCase|",":ref:`customize_form_data <customize-form-data-action>`"
     "|OptionsProcessorTestCase|",":ref:`options <options-action>`"
+    "|UnhandledErrorProcessorTestCase|",":ref:`unhandled_error <unhandled-error-action>`"
     "|ConfigProcessorTestCase|",":ref:`get_config <get-config-action>`"
     "|MetadataProcessorTestCase|",":ref:`get_metadata <get-metadata-action>`"
 

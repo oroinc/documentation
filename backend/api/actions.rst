@@ -72,6 +72,8 @@ The following table shows all actions provided out-of-the-box:
 | not\_allowed               | Builds a response for case when a request does not match any public action.                                        |
 |                            | E.g. when HTTP method is not supported for REST API request.                                                       |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| unhandled\_error           | Builds a response for case when an unexpected error happens before any public action is started.                   |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | batch\_update              | Used by *update\_list* action to update or create a set of entities of the same type.                              |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | batch\_update\_item        | Used by *batch\_update* action to update or create an entity that is a part of a batch operation.                  |
@@ -1011,7 +1013,7 @@ not\_allowed Action
 
 This action builds a response for case when a request does not match any public action. An example of such case can be for REST API request with not supported HTTP method.
 
-This action does not have own context class and own processor class. It can work with any context class based on `Context class`_ and it can be processed by any public action processor. Which processor will be used depends on the request attributes.
+This action does not have own context class and own processor class. It can work with any context class based on `Context <#context-class>`__ class and it can be processed by any public action processor. Which processor will be used depends on the request attributes.
 
 Run ``php bin/console oro:api:debug not_allowed`` to list the processors.
 
@@ -1026,6 +1028,30 @@ This action has the following processor groups:
    "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 For examples of usage, see the ``handleNotAllowedItem``, ``handleNotAllowedList``, ``handleNotAllowedSubresource`` and ``handleNotAllowedRelationship`` methods of |RequestActionHandler|.
+
+.. _unhandled-error-action:
+
+unhandled\_error Action
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This action builds a response for case when an unexpected error happens before any public action is started.
+
+The context class: this action does not have own context class and it uses `Context <#context-class>`__ class.
+
+The main processor class: |UnhandledErrorProcessor|.
+
+Run ``php bin/console oro:api:debug unhandled_error`` to list the processors.
+
+This action has the following processor groups:
+
+.. csv-table::
+   :header: "Group Name","Responsibility of Processors","Description"
+   :widths: 15, 30, 30
+
+   "initialize","The context initialization.","--"
+   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
+
+For examples of usage, see the ``handleUnhandledError`` method of |RequestActionHandler|.
 
 .. _batch-update-action:
 

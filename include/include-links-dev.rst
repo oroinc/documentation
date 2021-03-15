@@ -1834,6 +1834,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/Options/OptionsProcessorTestCase.php" target="_blank">OptionsProcessorTestCase</a>
 
+.. |UnhandledErrorProcessorTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/UnhandledError/UnhandledErrorProcessorTestCase.php" target="_blank">UnhandledErrorProcessorTestCase</a>
+
 .. |ConfigProcessorTestCase| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/GetConfig/ConfigProcessorTestCase.php" target="_blank">ConfigProcessorTestCase</a>
@@ -2255,31 +2259,7 @@ Links (Dev)
 
 .. |Configure and Use OroEmbeddedBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
-
-.. |Add Metadada to an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#getting-started" target="_blank">Add Metadada to an Entity</a>
-
-.. |Index Attributes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#indexed-attributes" target="_blank">Index Attributes</a>
-
-.. |Implement EntityConfigBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#implementation" target="_blank">Implement EntityConfigBundle</a>
-
-.. |Update Configuration Data| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#update-configuration-data" target="_blank">Update Configuration Data</a>
-
-.. |Clear up Cache| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#clearing-up-the-cache" target="_blank">Clear up Cache</a>
-
-.. |Debug Configuration Data| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#debugging-configuration-data" target="_blank">Debug Configuration Data</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
 .. |Use Entity Merge| raw:: html
 
@@ -3644,6 +3624,10 @@ Links (Dev)
 .. |processors.collect_subresources.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_subresources.yml" target="_blank">processors.collect_subresources.yml</a>
+
+.. |UnhandledErrorProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/UnhandledErrorProcessor.php" target="_blank">UnhandledErrorProcessor</a>
 
 .. |BatchUpdateContext| raw:: html
 
@@ -5573,3 +5557,23 @@ Links (Dev)
 .. |abstract provider| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/AbstractEntityClassNameProvider.php" target="_blank">abstract provider</a>
+
+.. |Ubuntu 20.04 LTS from the Microsoft Store| raw:: html
+
+   <a href="https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" target="_blank">Ubuntu 20.04 LTS from the Microsoft Store</a>
+
+.. |Docker Desktop for Windows| raw:: html
+
+   <a href="https://docs.docker.com/docker-for-windows/install/" target="_blank">Docker Desktop for Windows</a>
+
+.. |Docker Desktop WSL 2 backend| raw:: html
+
+   <a href="https://docs.docker.com/docker-for-windows/wsl/" target="_blank">Docker Desktop WSL 2 backend</a>
+
+.. |Windows Terminal| raw:: html
+
+   <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701" target="_blank">Windows Terminal</a>
+
+.. |Docker images and stacks for OroPlatform based applications by the Kiboko team| raw:: html
+
+   <a href="https://github.com/kiboko-labs/kloud" target="_blank">Docker images and stacks for OroPlatform based applications by the Kiboko team</a>

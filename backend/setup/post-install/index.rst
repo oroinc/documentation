@@ -9,5 +9,6 @@ Please follow the link below to learn more:
 .. toctree::
    :maxdepth: 2
 
-   content-restriction
-   flat-pricing
+   Content Restrictions <content-restriction>
+   Flat Pricing <flat-pricing>
+   Protected Cookies <protect-cookies>

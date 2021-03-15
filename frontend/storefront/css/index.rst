@@ -102,7 +102,7 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
             # List of file masks for inputs that has to be processed with RTL plugin
             - 'bundles/oro*/**'
         filters: ['cssrewrite', 'cssmin']
-        output: 'css/layout/blank/styles.css'
+        output: 'css/styles.css'
 
 Compiler collects all styles in one file for the theme. All files should be sorted by priority. There are files with a **settings folder** at the top followed by **variables** and all **styles.scss** at the end.
 
@@ -242,7 +242,7 @@ Add missing styles for this component
             - 'bundles/oroform/default/scss/variables/input-config.scss'
             - 'bundles/oroform/default/scss/styles.scss'
         filters: ['cssrewrite', 'cssmin']
-        output: 'css/layout/default/styles.css'
+        output: 'css/styles.css'
 
 In the main file of the default theme, we have:
 

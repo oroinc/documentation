@@ -6,3 +6,4 @@
 *~
 *.db
 *.pyc
+sphinx-build-errors.log
