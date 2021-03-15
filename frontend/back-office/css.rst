@@ -102,7 +102,7 @@ Just add the ``--watch`` (or ``-w``) option to the build command.
 
     $ php bin/console oro:assets:build --watch
 
-Refer to |Asset Commands| for more information.
+Refer to :ref:`Asset Commands <bundle-docs-platform-asset-bundle-commands>` for more information.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

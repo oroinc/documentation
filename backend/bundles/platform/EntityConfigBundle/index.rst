@@ -14,5 +14,6 @@ Related Documentation
 * :ref:`Configure Entities <book-entities-entity-configuration>`
 * :ref:`Entity Configuration <yaml-format-config-entity>`
 
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
