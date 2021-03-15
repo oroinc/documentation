@@ -552,16 +552,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Component/ConfigExpression/README.md" target="_blank">ConfigExpression</a>
 
-
-
-.. |available operations and their configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md" target="_blank">available operations and their configuration</a>
-
-.. |DELETE operation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#default-operations" target="_blank">DELETE operation</a>
-
 .. |build ngx pagespeed from source| raw:: html
 
    <a href="https://modpagespeed.com/doc/build_ngx_pagespeed_from_source" target="_blank">build ngx pagespeed from source</a>
@@ -608,7 +598,7 @@ Links (Dev)
 
 .. |Blackfire in its documentation portal| raw:: html
 
-   <a href="https://blackfire.io/docs/book/" target="_blank">Blackfire in its documentation portal</a>
+   <a href="https://blackfire.io/docs/introduction" target="_blank">Blackfire in its documentation portal</a>
 
 .. |OroConfigBundle| raw:: html
 
@@ -1214,10 +1204,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#usage" target="_blank">Use Assets</a>
 
-.. |Commands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#commands" target="_blank">Commands</a>
-
 .. |Troubleshooting| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#troubleshooting" target="_blank">Troubleshooting</a>
@@ -1485,7 +1471,7 @@ Links (Dev)
 
 .. |Gedmo/Translatable| raw:: html
 
-   <a href="http://atlantic18.github.io/DoctrineExtensions/doc/translatable.html" target="_blank">Gedmo/Translatable</a>
+   <a href="https://github.com/doctrine-extensions/DoctrineExtensions/blob/main/doc/translatable.md" target="_blank">Gedmo/Translatable</a>
 
 .. |LocalizedFallbackValue| raw:: html
 
@@ -1523,25 +1509,9 @@ Links (Dev)
 
    <a href="https://github.com/orocommerce/orocommerce/blob/071c81dfb0ed3c5240edba0122a7ce5d647ecbcf/src/OroB2B/Bundle/ProductBundle/Model/ProductHolderInterface.php" target="_blank">ProductHolderInterface</a>
 
-.. |implement your own data source adapters| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">implement your own data source adapters</a>
-
-.. |datasources section of the DataGridBundle documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">datasources section of the DataGridBundle documentation</a>
-
 .. |products-grid| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/ProductBundle/Resources/config/oro/datagrids.yml#L305" target="_blank">products-grid</a>
-
-.. |columns and properties section of the DataGridBundle documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datagrid.md#columns-and-properties" target="_blank">columns and properties section of the DataGridBundle documentation</a>
-
-.. |built-in filters| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/FilterBundle/Resources/doc/reference/filter_form_types.md" target="_blank">built-in filters</a>
 
 .. |the CustomGridBundle.zip file| raw:: html
 
@@ -2042,10 +2012,6 @@ Links (Dev)
 .. |Twig Inspector| raw:: html
 
    <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector</a>
-
-.. |Asset Commands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#commands" target="_blank">Asset Commands</a>
 
 .. |placeholders.yml files defined in OroPlatform bundles| raw:: html
 
@@ -2575,10 +2541,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/form_types.md" target="_blank">Form Types</a>
 
-.. |Console Сommands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/commands.md" target="_blank">Console commands</a>
-
 .. |Translation Strategies| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/translation_strategies.md" target="_blank">Translation Strategies</a>
@@ -2702,10 +2664,6 @@ Links (Dev)
 .. |.eslintrc.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/build/.eslintrc.yml" target="_blank">.eslintrc.yml</a>
-
-.. |package.json| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/build/package.json" target="_blank">package.json</a>
 
 .. |PHP Coding Standard Fixer| raw:: html
 
@@ -3038,10 +2996,6 @@ Links (Dev)
 .. |OroNavigationBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/NavigationBundle" target="_blank">OroNavigationBundle</a>
-
-.. |datasource documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">datasource documentation</a>
 
 .. |ReportBundle| raw:: html
 
@@ -3985,7 +3939,7 @@ Links (Dev)
 
 .. |Read more on rabbitmqctl(8)| raw:: html
 
-   <a href="https://www.rabbitmq.com/man/rabbitmqctl.1.man.html" target="_blank">Read more on rabbitmqctl(8)</a>
+   <a href="https://www.rabbitmq.com/rabbitmqctl.8.html" target="_blank">Read more on rabbitmqctl(8)</a>
 
 .. |Search engine| raw:: html
 
@@ -4031,18 +3985,6 @@ Links (Dev)
 
    <a href="https://en.wikipedia.org/wiki/Facade_pattern" target="_blank">Facade</a>
 
-.. |examples of a work with this command| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md" target="_blank">examples of a work with this command</a>
-
-.. |examples of a work with oro:website-search:reindex command| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/console_commands.md" target="_blank">examples of a work with oro:website-search:reindex command</a>
-
-.. |examples of a triggering of this event| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/indexation.md" target="_blank">examples of a triggering of this event</a>
-
 .. |several clustering solutions| raw:: html
 
    <a href="https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling" target="_blank">several clustering solutions</a>
@@ -4070,10 +4012,6 @@ Links (Dev)
 .. |Elasticsearch replicas| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/replica-shards.html" target="_blank">Elasticsearch replicas</a>
-
-.. |configuration similar to ORM configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md#datagrid-configuration" target="_blank">configuration similar to ORM configuration</a>
 
 .. |Elastic HQ| raw:: html
 
@@ -4574,10 +4512,6 @@ Links (Dev)
 .. |Monolog LogstashFormatter| raw:: html
 
    <a href="https://github.com/Seldaek/monolog/blob/master/src/Monolog/Formatter/LogstashFormatter.php" target="_blank">Monolog LogstashFormatter</a>
-
-.. |Page Component documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md" target="_blank">Page Component documentation</a>
 
 .. |OroB2BBlogPostExampleBundle| raw:: html
 
@@ -5610,7 +5544,7 @@ Links (Dev)
 
 .. |Doctrine ORM Lifecycle Events| raw:: html
 
-   <a href="http://doctrine-orm.readthedocs.org/en/latest/reference/events.html#lifecycle-events" target="_blank">Doctrine ORM Lifecycle Events</a>
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/reference/events.html#lifecycle-events" target="_blank">Doctrine ORM Lifecycle Events</a>
 
 .. |Entity Name Resolver| raw:: html
 

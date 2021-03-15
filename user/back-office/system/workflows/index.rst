@@ -292,8 +292,7 @@ Some workflow components, like an email notification, may be created only via th
 
 .. see :ref:`How to clone a workflow via the command line console <workflows--actions--clone>`.
 
-For how to create and manage workflows from the server side, see the Backend Developer Guide section on :ref:`Workflows <dev-doc--workflows>`.
-
+For how to create and manage workflows from the server side, see the backend developer guide on :ref:`Workflows <dev-doc--workflows>`.
 
 .. _doc--system--workflow-management--activate:
 
