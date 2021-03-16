@@ -86,5 +86,20 @@ You can use it as any other parameter but remember to add a specific path to you
      arguments:
        - '%sftp_root_path%/myusername/uploads'
 
+
+Use Images Uploaded via SFTP in Import via CSV
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``parameters.yml`` file has the following configuration:
+
+.. code-block:: none
+
+   gaufrette_adapter.import_files: /mnt/sftproot
+
+
+Usually, one or several users have access to sftp, and each of them may upload data to their own directory (username).
+Therefor, set ``[username]/image.jpg`` as the import data path to an image in a CSV file, where ``image.jpg`` is a picture uploaded by a ``username`` user.
+
+
 .. include:: /include/include-links-cloud.rst
    :start-after: begin

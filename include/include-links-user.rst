@@ -463,10 +463,6 @@ Links (User)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/LocaleBundle/Twig/NumberExtension.php#L212" target="_blank">oro_format_currency</a>
 
-.. |oro_format_short_product_unit_value| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#oro_format_short_product_unit_value" target="_blank">oro_format_short_product_unit_value</a>
-
 .. |join| raw:: html
 
    <a href="https://twig.symfony.com/doc/2.x/filters/join.html" target="_blank">join</a>
@@ -610,10 +606,6 @@ Links (User)
 .. |https://www.infinitepay.de/| raw:: html
 
    <a href="https://www.infinitepay.de/" target="_blank">https://www.infinitepay.de/</a>
-
-.. |wirecard.com| raw:: html
-
-   <a href="http://wirecard.com" target="_blank">wirecard.com</a>
 
 .. |Wirecard Demo Mode| raw:: html
 
