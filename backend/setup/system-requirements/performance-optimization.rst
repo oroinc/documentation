@@ -111,9 +111,9 @@ To enable ``HTML compression``, add the following lines into your ``nginx.conf``
 
         # Three weeks for media: images, fonts, icons, video, audio etc.
         location ~* \.(?:jpg|jpeg|gif|png|ico|tiff|woff|eot|ttf|svg|svgz|mp4|ogg|ogv|webm|swf|flv)$ {
-          expires 3w;
+          if ( -f $request_filename ) { expires 3w; add_header "Cache-Control" "public"; }
+          try_files $uri /index.php$is_args$args;
           access_log off;
-          add_header Cache-Control public;
         }
    }
 
