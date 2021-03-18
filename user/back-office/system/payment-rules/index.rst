@@ -73,17 +73,6 @@ To create a payment rule:
       To enable several PayPal Payflow Gateway/ PayPal Express options with different payment settings, create a separate payment rule for every unique option and for each specific currency. Find the list of currencies supported by PayPal in the :ref:`PayPal Currency and Currency Codes <admin-guide--payment--paypal-currency>` topic.
       You still can use one copy of PayPal Payflow Gateway and one copy of PayPal Payflow Gateway Express Checkout in the same payment rule, as these are different payment methods.
 
-
-      **Wirecard:**
-
-      The single Wirecard integration enables you to set up the following payment methods:
-
-       - *WireCard - Credit Card*—Via this payment method a buyer can pay for the order using a credit card.
-       - *WireCard - PayPal*—When this payment method is used, a buyer is redirected to the PayPal site where they can complete the payment using their PayPal account or credit card.
-       - *WireCard - SEPA*—Via this payment method a buyer can pay for the order in EUR using a SEPA (Single Euro Payment Area) payment.
-
-       You can add any combination of these payment methods in a single payment rule. However, if you want to enable **WireCard - SEPA**, then in step 3 you must select *EUR* for **Currency**.
-
 #. In the **Websites** section, specify the website(s) that the payment rule should apply to, if you have more than one website. This field is optional and may be left empty. Hold the Ctrl key to choose several websites, if necessary.
 
    .. note:: Please note that application of payment rules to websites is only available for Enterprise customers.

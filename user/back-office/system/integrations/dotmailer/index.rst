@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM, OroCommerce, Extension
+:oro_documentation_types: OroCRM, OroCommerce
 :oro_show_local_toc: false
 
 .. _user-guide-dotmailer-overview:
@@ -8,8 +8,6 @@ Manage dotmailer Integration in the Back-Office
 ===============================================
 
 .. begin_include
-
-.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Oro dotmailer extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 Oro application supports integration with dotmailer, allowing you to do the following:
 
