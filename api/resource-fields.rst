@@ -25,7 +25,7 @@ Common Resource Fields
 |              | organization  |                                                                                                     |
 +--------------+---------------+-----------------------------------------------------------------------------------------------------+
 | organization | organization  | An organization record represents a real enterprise, business, firm, company or another             |
-|              |               | organization to which the users belong. Available only in Enterprise Edition instances.             |
+|              |               | organization to which the users belong. It is available for Enterprise Edition only.                |
 +--------------+---------------+-----------------------------------------------------------------------------------------------------+
 
 
