@@ -69,6 +69,14 @@ To write templates for the back-office, use the ``oro_is_rtl_mode()`` twig funct
 
     <html {{ oro_is_rtl_mode() ? 'dir="rtl"' : ''}}>
 
+
+To force the "Left-To-Right" direction of the text (e.g., for phone, email, etc), wrap the value in the ``<bdo dir="ltr"></bdo>`` tag
+
+.. code-block:: twig
+
+    <bdo dir="ltr">1-(800)-555-5555</bdo>
+
+
 Styles
 ^^^^^^
 
