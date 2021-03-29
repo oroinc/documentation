@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM, OroCommerce, Extension
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _user-guide-zendesk-integration:
 .. _user-guide-zendesk-channel-integration-synchronization:
@@ -9,8 +9,6 @@ Configure Zendesk Integration in the Back-Office
 Oro applications support out of the box integration with Zendesk, enabling you to load data from your Zendesk account and process it in the Oro application. This article describes how to define and edit the integration and synchronization settings.
 
 .. hint:: While Zendesk integration capabilities are pre-implemented, OroCRM and OroCommerce can be integrated with different third-party systems.
-
-.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Zendesk extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 Generate API token in Zendesk
 -----------------------------

@@ -10,7 +10,6 @@ Oro application’s integration with Google Hangouts enables you to make Hangout
 For the integration between Hangouts and your Oro application to be successful, make sure you:
 
 * Have an active Google account (if you try using the feature when not logged in, you will be prompted to log-in) 
-* Have the Hangouts extension installed in Oro application as described in the :ref:`Extensions and Package Manager <admin-package-manager>` topic.
 * If you are using a browser other than Chrome, install a Google Hangout or Google Talk extension for the browser.
 * If you are going to call phone-numbers beyond USA and Canada, make sure you have funds in your Google Wallet.
 
