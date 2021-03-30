@@ -4668,11 +4668,11 @@ Links (Dev)
 
 .. |GitHub Monolog| raw:: html
 
-   <a href="https://github.com/Seldaek/monolog" target="_blank">GitHub Monolog</a>
+   <a href="https://github.com/Seldaek/monolog" target="_blank">Monolog</a>
 
 .. |GitHub MonologBundle| raw:: html
 
-   <a href="https://github.com/symfony/monolog-bundle" target="_blank">GitHub Monolog</a>
+   <a href="https://github.com/symfony/monolog-bundle" target="_blank">MonologBundle</a>
 
 .. |Symfony "Logging with Monolog"| raw:: html
 
@@ -5394,3 +5394,7 @@ Links (Dev)
 .. |nginx_cookie_flag_module| raw:: html
 
    <a href="https://github.com/AirisX/nginx_cookie_flag_module" target="_blank">nginx_cookie_flag_module</a>
+
+.. |Symfony Monolog Documentation| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/logging.html#monolog" target="_blank">Symfony Monolog Documentation</a>

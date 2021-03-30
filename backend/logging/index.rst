@@ -8,6 +8,31 @@
 Logging
 =======
 
+Logger Configuration
+--------------------
+
+.. hint:: This feature is available since OroCommerce v3.1.28. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+Logger Configuration
+--------------------
+
+Out-of-the-box, in a ``prod`` environment, an application is configured to:
+
+* log all the messages up to the DEBUG level in case of an `error` or a higher-level message to the `var/logs/prod.log` file,
+* send error logs notifications to the recipients configured in the global application settings in the back-office.
+
+If there are no errors, the application does not write any logs.
+
+Logging of 404 errors
+^^^^^^^^^^^^^^^^^^^^^
+
+Logging of 404 errors is disabled by default. You can enable it in the `monolog.handlers.main.excluded_404s` section of the ``config/config_prod.yml`` file.
+
+Advanced Logging Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Oro applications use Monolog integration with the Symfony framework with a few additional features built on top. Follow the official Symfony documentation for details on how to configure features like writing logs to different locations, registering a custom log handler (e.g., Mongo, New Relic, Slack), or enabling log rotation (see |Symfony Monolog Documentation|).
+
 .. wiki/spaces/ORODEV/pages/132579356/Logger+Conventions
 
 Logging Strategy: What to Log
