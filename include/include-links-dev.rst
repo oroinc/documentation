@@ -4143,11 +4143,11 @@ Links (Dev)
 
 .. |GitHub Monolog| raw:: html
 
-   <a href="https://github.com/Seldaek/monolog" target="_blank">GitHub Monolog</a>
+   <a href="https://github.com/Seldaek/monolog" target="_blank">Monolog</a>
 
 .. |GitHub MonologBundle| raw:: html
 
-   <a href="https://github.com/symfony/monolog-bundle" target="_blank">GitHub Monolog</a>
+   <a href="https://github.com/symfony/monolog-bundle" target="_blank">MonologBundle</a>
 
 .. |Symfony "Logging with Monolog"| raw:: html
 
@@ -5589,22 +5589,23 @@ Links (Dev)
 .. |Docker images and stacks for OroPlatform based applications by the Kiboko team| raw:: html
 
    <a href="https://github.com/kiboko-labs/kloud" target="_blank">Docker images and stacks for OroPlatform based applications by the Kiboko team</a>
-   
+
+.. |Symfony Monolog Documentation| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/logging.html#monolog" target="_blank">Symfony Monolog Documentation</a>
+
 .. |wildcard file mask| raw:: html
 
    <a href="https://www.npmjs.com/package/wildcard" target="_blank">wildcard file mask</a>
-   
+
 .. |RTLCSS| raw:: html
 
    <a href="https://rtlcss.com" target="_blank">RTLCSS</a>
-   
+
 .. |RTLCSS documentation| raw:: html
 
    <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/" target="_blank">RTLCSS documentation</a>
-    
+
 .. |Admin theme configuration| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ThemeBundle#adding-a-theme-using-configyml" target="_blank">Admin theme configuration</a>
- 
-   
-
