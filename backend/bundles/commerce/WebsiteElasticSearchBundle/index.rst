@@ -17,6 +17,7 @@ The WebsiteElasticSearchBundle bundle has exactly the same requirements as Elast
 
    elasticsearch-engine
    configuration
+   attributes-boost
    request-builders
    upgrade-to-es7
 
