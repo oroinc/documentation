@@ -8,7 +8,25 @@
 Logging
 =======
 
-.. wiki/spaces/ORODEV/pages/132579356/Logger+Conventions
+Logger Configuration
+--------------------
+
+Out-of-the-box, in a ``prod`` environment, an application is configured to:
+
+* log all the messages up to the DEBUG level in case of an `error` or a higher-level message to the `var/logs/prod.log` file,
+* send error logs notifications to the recipients configured in the global application settings in the back-office.
+
+If there are no errors, the application does not write any logs.
+
+Logging of 404 and 405 errors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Logging of 404 and 405 errors is disabled by default. You can enable it in the `monolog.handlers.main.excluded_http_codes` section of the ``config/config_prod.yml`` file.
+
+Advanced Logging Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Oro applications use Monolog integration with the Symfony framework with a few additional features built on top. Follow the official Symfony documentation for details on how to configure features like writing logs to different locations, registering a custom log handler (e.g., Mongo, New Relic, Slack), or enabling log rotation (see |Symfony Monolog Documentation|).
 
 Logging Strategy: What to Log
 -----------------------------
@@ -294,7 +312,7 @@ You should add the logger in the Decorator of the service and replace the origin
 Additional Information
 ----------------------
 
-|How to Do Application Logging Right|
+* |How to Do Application Logging Right|
 
 
 .. include:: /include/include-links-dev.rst

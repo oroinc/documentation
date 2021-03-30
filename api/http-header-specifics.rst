@@ -5,7 +5,7 @@ HTTP Header Specifics
 
 As mentioned in the :ref:`Client Requirements <web-services-api--client-requirements>`
 and :ref:`Authentication <web-services-api--authentication>` sections, to perform
-an JSON:API request successfully, it is important to provide the correct **Accept*, ***Content-Type**
+an JSON:API request successfully, it is important to provide the correct **Accept**, **Content-Type**
 and **Authentication** parameters, e.g.,:
 
 .. code-block:: http
@@ -20,7 +20,6 @@ the total number of records per certain resource for the GET and DELETE methods 
 for the DELETE method. The **X-Include** request header can be used for such purposes.
 
 The following table describes all existing keys for the X-Include header.
-
 
 +-------------+-----------------+---------------------------+------------------------------------------------------+
 | HTTP Method | X-Include key   | Response Header           | Description                                          |
@@ -99,3 +98,21 @@ Request query string contains a filter that specifies conditions for deletion op
     Keep-Alive: timeout=5, max=100
     Connection: Keep-Alive
 
+
+The following request headers are available for the storefront API.
+
++-------------+-------------------+---------------------------------------------------------------------------------+
+| HTTP Method | Request Header    | Description                                                                     |
++=============+===================+=================================================================================+
+| any         | X-Localization-ID | By default, all locale sensitive data are received and returned in the locale   |
+|             |                   | selected for the current website. This header can be used to specify another    |
+|             |                   | locale. The list of available localization IDs can be received via the          |
+|             |                   | ``/api/localizations`` resource.                                                |
++-------------+-------------------+---------------------------------------------------------------------------------+
+| any         | X-Currency        | By default, all currency-related data are received and returned in the currency |
+|             |                   | selected for the current website. This header can be used to specify another    |
+|             |                   | currency. The list of available currency codes can be received via the          |
+|             |                   | ``/api/currencies`` resource.                                                   |
+|             |                   |                                                                                 |
+|             |                   | **Note:** This header is available for OroCommerce Enterprise Edition only.     |
++-------------+-------------------+---------------------------------------------------------------------------------+

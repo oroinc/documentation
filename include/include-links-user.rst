@@ -643,10 +643,6 @@ Links (User)
 
    <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">Single sign-on</a>
 
-.. |here4| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocrm/extension/mailchimp-integration" target="_blank">here</a>
-
 .. |Google Tag Manager| raw:: html
 
    <a href="https://support.google.com/tagmanager/answer/2574372?hl=en&topic=2574304&ctx=topic" target="_blank">Google Tag Manager</a>
@@ -755,10 +751,6 @@ Links (User)
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/user-impersonation/" target="_blank">User Impersonation extension</a>
 
-.. |Oro dotmailer extension| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocrm-dotmailer-integration/" target="_blank">Oro dotmailer extension</a>
-
 .. |Authorize.Net extension| raw:: html
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-authorize.net-integration/" target="_blank">Authorize.Net extension</a>
@@ -770,14 +762,6 @@ Links (User)
 .. |InfinitePay extension| raw:: html
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-infinitepay-integration/" target="_blank">InfinitePay extension</a>
-
-.. |Wirecard extension| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-wirecard-integration/" target="_blank">Wirecard extension</a>
-
-.. |Zendesk extension| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/zendesk-orocrm-integration-2" target="_blank">Zendesk extension</a>
 
 .. |PayPal Express Checkout extension| raw:: html
 

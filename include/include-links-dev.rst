@@ -171,6 +171,14 @@ Links (Dev)
 
    <a href="https://github.com/tjko/jpegoptim" target="_blank">jpegoptim</a>
 
+.. |PayPal| raw:: html
+
+   <a href="https://www.paypal.com/" target="_blank">PayPal</a>
+
+.. |Ngrok| raw:: html
+
+   <a href="https://ngrok.com" target="_blank">Ngrok</a>
+
 .. |MySQL| raw:: html
 
    <a href="https://www.mysql.com/" target="_blank">MySQL</a>
@@ -735,6 +743,10 @@ Links (Dev)
 .. |Symfony documentation| raw:: html
 
    <a href="https://symfony.com/doc/4.4/index.html" target="_blank">Symfony documentation</a>
+
+.. |How to Configure Symfony to Work behind a Load Balancer or a Reverse Proxy| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/deployment/proxies.html" target="_blank">How to Configure Symfony to Work behind a Load Balancer or a Reverse Proxy</a>
 
 .. |Symfony applications| raw:: html
 
@@ -4131,11 +4143,11 @@ Links (Dev)
 
 .. |GitHub Monolog| raw:: html
 
-   <a href="https://github.com/Seldaek/monolog" target="_blank">GitHub Monolog</a>
+   <a href="https://github.com/Seldaek/monolog" target="_blank">Monolog</a>
 
 .. |GitHub MonologBundle| raw:: html
 
-   <a href="https://github.com/symfony/monolog-bundle" target="_blank">GitHub Monolog</a>
+   <a href="https://github.com/symfony/monolog-bundle" target="_blank">MonologBundle</a>
 
 .. |Symfony "Logging with Monolog"| raw:: html
 
@@ -5577,6 +5589,10 @@ Links (Dev)
 .. |Docker images and stacks for OroPlatform based applications by the Kiboko team| raw:: html
 
    <a href="https://github.com/kiboko-labs/kloud" target="_blank">Docker images and stacks for OroPlatform based applications by the Kiboko team</a>
+
+.. |Symfony Monolog Documentation| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/logging.html#monolog" target="_blank">Symfony Monolog Documentation</a>
 
 .. |wildcard file mask| raw:: html
 
