@@ -17,6 +17,14 @@ JS Modules
 |           | * `shim`_                                                  |
 +-----------+------------------------------------------------------------+
 
+Location of `jsmodules.yml`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+====================  =====================================================================
+Management Console    [BUNDLE_NAME]/Resources/config/oro/jsmodules.yml
+Storefront            [BUNDLE_NAME]/Resources/views/layouts/[THEME_NAME]/config/jsmodules.yml
+====================  =====================================================================
+
 ``entry``
 -----------
 
@@ -161,17 +169,20 @@ configures the module must be specified. It can consist of the following keys:
     shim:
         bootstrap-typeahead:
             imports:
-                - jQuery=jquery
+                - single|jquery|jQuery
         jquery:
             expose:
-                - $
-                - jQuery
+                - $,jQuery
         jquery.select2:
-            exports: Select2
+            exports: single|Select2
             imports:
-                - jQuery=jquery
+                - single|jquery|jQuery
         oroui/js/app/services/app-ready-load-modules:
             expose: loadModules
+        '@oroinc/jsplumb/dist/js/jsPlumb-1.7.10':
+            imports:
+                - additionalCode: 'var define = false;'
+                  wrapper: window
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
