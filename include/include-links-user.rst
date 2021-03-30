@@ -339,10 +339,6 @@ Links (User)
 
    <a href="https://packagist.oroinc.com/?#oro/paypal-express" target="_blank">Oro PayPal Express Integration</a>
 
-.. |Customer Consent Management| raw:: html
-
-   <a href="https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce" target="_blank">Customer Consent Management</a>
-
 .. |Matomo1| raw:: html
 
    <a href="https://matomo.org/faq/general/faq_114/" target="_blank">Matomo</a>
@@ -518,10 +514,6 @@ Links (User)
 .. |how to create payment rules| raw:: html
 
    <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-rules" target="_blank">how to create payment rules</a>
-
-.. |Workflow Documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md" target="_blank">Workflow Documentation</a>
 
 .. |registered with UPS.com| raw:: html
 
