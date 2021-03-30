@@ -4143,11 +4143,11 @@ Links (Dev)
 
 .. |GitHub Monolog| raw:: html
 
-   <a href="https://github.com/Seldaek/monolog" target="_blank">GitHub Monolog</a>
+   <a href="https://github.com/Seldaek/monolog" target="_blank">Monolog</a>
 
 .. |GitHub MonologBundle| raw:: html
 
-   <a href="https://github.com/symfony/monolog-bundle" target="_blank">GitHub Monolog</a>
+   <a href="https://github.com/symfony/monolog-bundle" target="_blank">MonologBundle</a>
 
 .. |Symfony "Logging with Monolog"| raw:: html
 
@@ -5589,3 +5589,7 @@ Links (Dev)
 .. |Docker images and stacks for OroPlatform based applications by the Kiboko team| raw:: html
 
    <a href="https://github.com/kiboko-labs/kloud" target="_blank">Docker images and stacks for OroPlatform based applications by the Kiboko team</a>
+
+.. |Symfony Monolog Documentation| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/logging.html#monolog" target="_blank">Symfony Monolog Documentation</a>

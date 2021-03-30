@@ -120,14 +120,16 @@ If the consumer is interrupted abruptly, check the prod.log file. It should cont
 
 The **full exception stack trace** will be printed in the console output.
 
-To find out the reason for consumer interruption, use |ConsoleErrorHandler| in the monolog configuration. It collects all logs in the buffer depending on the configured log level and prints them to prod.log if an error occurs (the error is triggered by the ``console.error`` event).
+To find out the reason for consumer interruption, use the Fingers Crossed Handler in the monolog configuration. It collects all logs in the buffer depending on the configured log level and prints them to prod.log if an error occurs (the error is triggered by the ``console.error`` event).
 
 .. note:: All logs buffer collected before the error occurred will be erased before receiving the related message. The message will contain the logs record.
 
-Example of ConsoleErrorHandler Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example of Fingers Crossed Handler Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To log into all environments, add the following code to ``config.yml``. To log only in ``prod``, add the code to ``config_prod.yml``:
+
+.. note:: Out of the box, the Fingers Crossed Handler is already enabled, and you don't have to configure it manually.
 
 .. code-block:: yaml
 
@@ -137,11 +139,11 @@ To log into all environments, add the following code to ``config.yml``. To log o
     monolog:
         handlers:
             # ...
-            message_queue.consumer.console_error:
-                type: service
-                id: oro_message_queue.log.handler.console_error
-                handler: nested # name of main handler with "stream` type
-                level: debug # minimal log level
+            main:
+                type:         fingers_crossed
+                action_level: error
+                handler:      grouped
+                buffer_size:  100
 
 
 Interrupting Consumer from Code
@@ -233,39 +235,24 @@ If you want to log the **consumer** channel to a different file, create a new ha
 
      monolog:
       handlers:
-        detailed_logs:
-            type:           service
-            id:             oro_logger.monolog.detailed_logs.handler
-            handler:        nested
-            channels:       ['!consumer'] # Exclude 'consumer' channel for 'detailed_logs' handler
-
-        nested:
-            type:           stream
-            path:           "%kernel.logs_dir%/%kernel.environment%.log"
-            level:          debug
-            channels:       ['!consumer'] # Exclude 'consumer' channel for main 'prod.log' stream
+        consumer_buffer:
+            type:         fingers_crossed
+            action_level: error
+            handler:      consumer
+            buffer_size:  100
+            channels:     [ 'consumer' ] # The channels configuration only works for top-level handlers
+        consumer:
+            type:         stream
+            path:         "%kernel.logs_dir%/consumer_%kernel.environment%.log"
+            level:        debug
 
         # ...
 
-        # only records with level 'notice' and higher should pass to ``consumer.log`` file
-        filter_consumer:
-            type:           filter
-            min_level:      notice
-            handler:        consumer
-
-        # collect all log records to buffer and write them to 'consumer.log' file on CLI command error
-        message_queue.consumer.console_error:
-            type:           service
-            id:             oro_message_queue.log.handler.console_error
-            handler:        consumer
-            level:          debug
-
-        # write all records from 'consumer' consumer channel to 'consumer.log'
-        consumer:
-            type:           stream
-            path:           "%kernel.logs_dir%/consumer.log"
-            level:          debug
-            channels:       ["consumer"]
+        filtered:
+            type:       filter
+            min_level: info
+            handler:   main
+            channels:  [ '!consumer' ] # Exclude 'consumer' channel for main handlers chain
 
 Third Party Logging Systems
 ---------------------------
