@@ -54,6 +54,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
       Custom fields are always displayed one after another, usually below the system fields. If no priority is defined or the defined priority is 0, the fields will be displayed in the order in which they have been added to the system. The fields with a higher priority (a bigger value) will be displayed before the fields with a lower priority.
 
    * **Searchable** --- If set to *Yes*, the entities can be found using the :ref:`search <user-guide-getting-started-search>` by values of this field.
+   * **Global Search Boost** --- Available for the product entity in the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option enables you to :ref:`boost <bundle-docs-commerce-website-elastic-search-bundle-attributes-boost>` the value of the field during search.
    * **The Search Result Title** --- If set to *Yes*, the field value will be included into the search result title.
    * **Auditable** --- Not available for serialized fields. If set to *Yes*, the system will log changes made to this field values when users edit entity records.
    * **Applicable Organizations** --- Defines for what :term:`organizations <Organization>` the custom field will be added to the :term:`entity <Entity>`. **All** is selected by default. Clear the **All** check box to choose specific organizations from the list.
