@@ -11,4 +11,5 @@ Please follow the link below to learn more:
 
    Content Restrictions <content-restriction>
    Flat Pricing <flat-pricing>
+   Cookies Configuration <cookies-configuration>
    Protected Cookies <protect-cookies>
