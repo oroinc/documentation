@@ -48,3 +48,16 @@ example
                 - product_original
                 - product_gallery_popup
             max_number: 1
+
+Extending and Overriding the Configuration
+------------------------------------------
+
+You can extend dimensions configuration with extra options or override default configuration by implementing the ``Oro\Bundle\LayoutBundle\Provider\CustomImageFilterProviderInterface``
+and tagging the service with the ``layout.image_filter.provider`` tag.
+
+As an implementation example see the ``Oro\Bundle\ProductBundle\Provider\WatermarkImageFilterProvider``.
+
+For the list of available options for the built-in filters and to create a custom filter, see the |LiipImagineBundle filters reference|.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
