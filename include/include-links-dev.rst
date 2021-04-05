@@ -5470,6 +5470,14 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/reference/configuration/framework.html#cookie-secure" target="_blank">cookie secure configuration</a>
 
+.. |Session configuration| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/reference/configuration/framework.html#session" target="_blank">cookie secure configuration</a>
+
+.. |Remember Me configuration| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/reference/configuration/framework.html#session" target="_blank">cookie secure configuration</a>
+
 .. |nginx_cookie_flag_module| raw:: html
 
    <a href="https://github.com/AirisX/nginx_cookie_flag_module" target="_blank">nginx_cookie_flag_module</a>
