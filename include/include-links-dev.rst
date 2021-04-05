@@ -5609,3 +5609,7 @@ Links (Dev)
 .. |Symfony Monolog Documentation| raw:: html
 
    <a href="https://symfony.com/doc/4.4/logging.html#monolog" target="_blank">Symfony Monolog Documentation</a>
+
+.. |LiipImagineBundle filters reference| raw:: html
+
+   <a href="https://symfony.com/doc/2.x/bundles/LiipImagineBundle/filters.html" target="_blank">LiipImagineBundle filters reference</a>
