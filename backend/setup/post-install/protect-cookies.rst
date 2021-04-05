@@ -1,6 +1,6 @@
 :title: Cookies protection, secure, httponly
 
-.. _protect_cookies:
+.. _dev-guide-setup-protect-cookies:
 
 Protect Cookies
 ===============
