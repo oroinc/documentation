@@ -5,9 +5,11 @@
 Configure Saved Search Settings per Website
 ===========================================
 
-You can configure the ability for registered customer users to save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock. By default, saved search is enabled (if Elasticsearch is used as the search engine for the application).
+.. include:: /user/back-office/system/configuration/commerce/search/saved-search.rst
+   :start-after: begin_include
+   :end-before: end_include
 
-.. note:: This option is also available on the :ref:`global <configuration--guide--commerce--configuration--saved-search>` and :ref:`organization <organization-commerce--configuration--saved-search>` levels.
+.. note:: Saved Search configuration options are also available on the :ref:`global <configuration--guide--commerce--configuration--saved-search>` and :ref:`organization <organization-commerce--configuration--saved-search>` levels.
 
 .. image:: /user/img/system/websites/web_configuration/saved-search-website-config.png
    :alt: Saved search configuration on the website level
@@ -35,4 +37,7 @@ To configure saved search settings:
 
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin

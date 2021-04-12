@@ -850,3 +850,7 @@ Links (User)
 .. |the FedEx website for more details| raw:: html
 
    <a href="https://www.fedex.com/content/dam/fedex/us-united-states/services/GrlPkgGuidelines_fxcom.pdf" target="_blank">the FedEx website for more details</a>
+
+.. |search.allow_expensive_queries| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html#query-dsl-allow-expensive-queries" target="_blank">search.allow_expensive_queries</a>
