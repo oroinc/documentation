@@ -5,9 +5,30 @@
 Configure Global Saved Search Settings
 ======================================
 
-You can configure the ability for registered customer users to save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock. By default, saved search is enabled (if Elasticsearch is used as the search engine for the application).
+.. begin_include
 
-.. note:: This option is also available on the :ref:`organization <organization-commerce--configuration--saved-search>` and :ref:`website <configuration--website-commerce--search--saved-search>` levels.
+You can configure the ability for registered customer users to save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock.
+
+By default, saved search is enabled if Elasticsearch is used as the search engine for the application. Please be aware that additional configuration of Elasticsearch may be required as the saved search feature uses percolate queries.
+
+.. note:: Percolate queries will not be executed by Elasticsearch if |search.allow_expensive_queries| configuration option is set to false. By default, this option is enabled but please be aware that if it is disabled, the saved search feature will not work.
+
+In addition, this feature is highly demanding when it comes the server resources, therefore the following recommendations will help you to keep good performance:
+
+* The more CPU cores, the better
+* The more nodes, the better
+* The more primary shards the better
+* Put ``savedsearch_*`` indices onto a separate nodes.
+
+You may need to manually toggle the notifications that are sent as part of this feature. For example, when you need to mute notifications before importing large amounts of data, use the ``oro:website-elasticsearch:saved-search:mute`` Symfony console command. To unmute them back, use ``oro:website-elasticsearch:saved-search:unmute`` Symfony console command. By default, all changed products are added to the stored saved search results as if the customers have already been notified about them so that no notifications are sent. Please keep in mind that by specifying the option ``*--reprocess-accumulated-changes'`` you have the ability to reprocess the changed products that have accumulated so far and notify customers about them.
+
+.. note:: This option does not send notifications itself but initiates the processing of the accumulated changes. The notification sending is initiated by the cron command ``oro:website-elasticsearch:saved-search:consume-alerts``.
+
+The cron command ``oro:cron:website-elasticsearch:saved-search:create-alerts`` runs at 00:00 UTC to process the modified products and prepare notifications. You can also start this process manually with the following command: ``oro:website-elasticsearch:saved-search:create-alerts``. The cron command ``oro:cron:website-elasticsearch:saved-search:consume-alerts`` runs at 04:00 UTC to initiate the sending of email notifications. You can also start this process manually with: ``oro:website-elasticsearch:saved-search:consume-alerts``.
+
+.. end_include
+
+.. note:: Saved Search configuration options are also available on the :ref:`organization <organization-commerce--configuration--saved-search>` and :ref:`website <configuration--website-commerce--search--saved-search>` levels.
 
 .. image:: /user/img/system/config_commerce/search/saved-search-global-config.png
    :alt: Saved search configuration on global level
@@ -35,3 +56,7 @@ To configure saved search settings:
    * **Saved Searches Limit Per User** - Customers will not be able to save more searches than the specified limit and will need to delete some existing saved search queries to create a new one.
 
 4. Click **Save Settings**.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+
