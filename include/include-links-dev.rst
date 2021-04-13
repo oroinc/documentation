@@ -5618,4 +5618,7 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ThemeBundle#adding-a-theme-using-configyml" target="_blank">Admin theme configuration</a>
 
+.. |LiipImagineBundle filters reference| raw:: html
+
+   <a href="https://symfony.com/doc/2.x/bundles/LiipImagineBundle/filters.html" target="_blank">LiipImagineBundle filters reference</a>
 
