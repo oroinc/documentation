@@ -219,7 +219,6 @@ Links (Dev)
 
    <a href="https://www.rabbitmq.com/tutorials/amqp-concepts.html" target="_blank">AMQP</a>
 
-
 .. |Redis| raw:: html
 
    <a href="https://redis.io/" target="_blank">Redis</a>
@@ -952,10 +951,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#custom-fields-and-entities-in-search" target="_blank">Make Custom Entities and Fields Searchable</a>
 
-.. |Configure Redis Servers| raw:: html
-
-   <a href="https://github.com/oroinc/redis-config#configure-redis-servers" target="_blank">Configure Redis Servers</a>
-
 .. |ChainProcessor| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor" target="_blank">ChainProcessor</a>
@@ -1492,6 +1487,14 @@ Links (Dev)
 .. |session handler| raw:: html
 
    <a href="https://symfony.com/doc/4.4/components/http_foundation/session_configuration.html#save-handlers" target="_blank">session handler</a>
+
+.. |sessions| raw:: html
+
+   <a href="https://www.php.net/manual/en/intro.session.php" target="_blank">sessions</a>
+
+.. |session data is locked| raw:: html
+
+   <a href="https://www.php.net/manual/en/features.session.security.management.php#features.session.security.management.session-locking" target="_blank">session data is locked</a>
 
 .. |translations| raw:: html
 
@@ -4765,10 +4768,6 @@ Links (Dev)
 
    <a href="https://docs.mongodb.com/manual/core/gridfs/" target="_blank">GridFS</a>
 
-.. |MongoDB PHP Library| raw:: html
-
-   <a href="https://github.com/mongodb/mongo-php-library" target="_blank">MongoDB PHP Library</a>
-
 .. |KnpGaufretteBundle| raw:: html
 
    <a href="https://github.com/KnpLabs/KnpGaufretteBundle" target="_blank">KnpGaufretteBundle</a>
@@ -5126,9 +5125,25 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy" target="_blank">setting up the Local Proxy</a>
 
+.. |SncRedisBundle| raw:: html
+
+   <a href="https://github.com/snc/SncRedisBundle" target="_blank">SncRedisBundle</a>
+
 .. |Define a new client| raw:: html
 
    <a href="https://github.com/snc/SncRedisBundle/blob/3.2.2/Resources/doc/index.md#usage" target="_blank">Define a new client</a>
+
+.. |SncRedisBundle Documentation| raw:: html
+
+   <a href="https://github.com/snc/SncRedisBundle" target="_blank">SncRedisBundle Documentation</a>
+
+.. |Predis Documentation| raw:: html
+
+   <a href="https://github.com/nrk/predis" target="_blank">Predis Documentation</a>
+
+.. |Redis Cluster Tutorial| raw:: html
+
+   <a href="https://redis.io/topics/cluster-tutorial" target="_blank">Redis Cluster Tutorial</a>
 
 .. |changefreq| raw:: html
 
@@ -5505,6 +5520,10 @@ Links (Dev)
 .. |FileManager| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/GaufretteBundle/FileManager.php" target="_blank">FileManager</a>
+
+.. |ConfigurationFactoryInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/GaufretteBundle/DependencyInjection/Factory/ConfigurationFactoryInterface.php" target="_blank">ConfigurationFactoryInterface</a>
 
 .. |DictionaryValueListProviderInterface| raw:: html
 
