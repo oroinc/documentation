@@ -143,10 +143,6 @@ Links (Dev)
 
    <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>
 
-.. |Microsoft Internet Explorer| raw:: html
-
-   <a href="https://www.microsoft.com/en-us/download/internet-explorer.aspx" target="_blank">Microsoft Internet Explorer</a>
-
 .. |Microsoft Edge| raw:: html
 
    <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a>

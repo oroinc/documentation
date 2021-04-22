@@ -22,7 +22,6 @@ Oro applications support the following web browsers:
 
 * |Mozilla Firefox| (latest version)
 * |Google Chrome| (latest version)
-* |Microsoft Internet Explorer| (v.11 and above)
 * |Microsoft Edge| (latest version)
 * |Safari| (latest version)
 
