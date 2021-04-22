@@ -3,7 +3,7 @@
 Search Index
 ============
 
-.. include:: /backend/architecture/tech-stack/search-index/index.rst
+.. include:: /backend/architecture/tech-stack/search-index.rst
    :start-after: begin_search_intro
    :end-before: finish_search_intro
 

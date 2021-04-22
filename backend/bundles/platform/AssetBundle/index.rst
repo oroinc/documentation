@@ -169,7 +169,7 @@ Management Console    [BUNDLE_NAME]/Resources/config/oro/jsmodules.yml
 Storefront            [BUNDLE_NAME]/Resources/views/layouts/[THEME_NAME]/config/jsmodules.yml
 ====================  =====================================================================
 
-Detailed information about JS modules configuration see in the :ref:`JS Modules <reference-format-jsmodules>` topic.
+Detailed information about JS modules configuration is available in the :ref:`JS Modules <reference-format-jsmodules>` topic.
 
 .. _bundle-docs-platform-asset-bundle-commands:
 

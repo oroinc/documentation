@@ -117,7 +117,7 @@ This command enables maintenance mode just for switching between the previous an
 The purpose of this command is to deploy code changes (without updating dependencies) as quickly as possible.
 The difference between this command and the original upgrade:
 
-1. dependencies are not updated (unless the `composer.lock` is changed)
+1. It installs the external dependencies via the composer install
 #. oro:platform:update is not executed
 #. cache:clear is executed optionally (add option skip-cache-rebuild if you do not need to rebuild cache with the new release)
 

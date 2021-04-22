@@ -143,7 +143,6 @@ Recommended and supported browsers are:
 
  * |Mozilla Firefox| (latest)
  * |Google Chrome| (latest)
- * |Microsoft Internet Explorer| 11 and above
  * |Microsoft Edge| (latest)
  * |Safari| (latest)
 

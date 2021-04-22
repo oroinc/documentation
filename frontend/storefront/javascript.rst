@@ -16,7 +16,7 @@ JS Modules Definition
 ---------------------
 
 JS modules configuration file should be placed in the
-`Resources/views/layouts/{theme_name}/config` folder and named `jsmodules.yml`, for
-example `DemoBundle/Resources/views/layouts/base/config/jsmodules.yml`.
+``Resources/views/layouts/{theme_name}/config`` folder and named `jsmodules.yml`, for
+example ``DemoBundle/Resources/views/layouts/base/config/jsmodules.yml``.
 
-Detailed information about JS modules configuration see in the :ref:`JS Modules <reference-format-jsmodules>` topic.
+Detailed information about JS modules configuration is available in the :ref:`JS Modules <reference-format-jsmodules>` topic.
