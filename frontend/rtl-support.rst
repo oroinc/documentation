@@ -33,18 +33,36 @@ Out-of-the-box, the ``default`` Layout theme and ``oro`` back-office theme have 
 But not all declared style inputs need to be processed with RTLCSS processor.
 Often third-party libraries support RTL out-of-the-box and their styles already account for text direction (``[dir="rtl"]``).
 
-The following is a white list of style inputs (`auto_rtl_inputs`) that have to be processed.
+Auto RTL for Layout Theme
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The following is a whitelist of style inputs (`auto_rtl_inputs`) that have to be processed.
 
 By default, all styles from Oro bundles are auto processed:
 
 .. code-block:: yaml
-
-    # src/Acme/NewBundle/Resources/config/oro/assets.yml
+   :caption: src/Acme/NewBundle/Resources/views/layouts/custom/config/assets.yml
 
     auto_rtl_inputs:
         - 'bundles/oro*/**'
 
 This list needs to be extended with a specific |wildcard file mask| to enable auto processing for a custom style.
+See :ref:`Load Style Files from the Bundle <bundle-docs-platform-asset-bundle-load-css-from-bundle>` for more information.
+
+Auto RTL for Back-Office Theme
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The approach for the back-office theme is different. All style groups defined in ``assets.yml`` are automatically processed with the RTLCSS processor,
+with the exeption of groups with the output file name ending with ``...-rtl-ready.css``. Such groups will be omitted by the RTLCSS processor.
+Styles that support RTL should be added to the ``css_rtl_ready`` group which has a specified output value ``css/oro-rtl-ready.css``.
+
+.. code-block:: yaml
+   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
+
+    css_rtl_ready:
+        inputs:
+            - "~third-party-library/that-already-supports-rtl.css"
+
 See :ref:`Load Style Files from the Bundle <bundle-docs-platform-asset-bundle-load-css-from-bundle>` for more information.
 
 Develop
