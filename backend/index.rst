@@ -73,7 +73,7 @@ Backend Developer Guide is an essential resource for developers that provides co
       <li><a class="tag-important" href="cron/">Cron</a></li>
       <li><a class="" href="websockets/">WebSocket Notifications</a></li>
       <li><a class="" href="scopes/">Scopes</a></li>
-      <li><a class="" href="file-storage/">File Storage</a></li>
+      <li><a class="" href="architecture/tech-stack/file-storage">File Storage</a></li>
       <li><a class="" href="feature-toggle/">Feature Toggle</a></li>
       <li><a class="" href="logging/">Logging</a></li>
       <li><a class="" href="system-configuration/">System Configuration</a></li>
@@ -115,6 +115,5 @@ Backend Developer Guide is an essential resource for developers that provides co
    third-party-extensions/index
    automated-tests/index
    api/index
-   file-storage/index
    bundles/index
 
