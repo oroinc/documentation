@@ -168,7 +168,7 @@ We can also move the specified options to the ``parameters.yml``:
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
 
    message-queue-jobs
    consumer/index
@@ -177,6 +177,10 @@ We can also move the specified options to the ``parameters.yml``:
    testing
    rabbit-mq/index
    supervisord
+   stackdriver
+   filtering-messages
+   buffering-messages
+   delayed-messages
 
 **See Also**
 
