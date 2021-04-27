@@ -36,7 +36,7 @@ A :ref:`tax rule <tax-rules>` binds the following items:
 Taxation Configuration
 ----------------------
 
-OroCommerce groups taxation configuration options into the following categories that should be customized in the :ref:`system configuration <configuration--guide--commerce--configuration--taxation>`:
+OroCommerce groups taxation configuration options into the following categories that should be customized in the :ref:`global system configuration <configuration--guide--commerce--configuration--taxation>` or :ref:`per organization <user-guide--taxes--org--promotions>`:
 
 * :ref:`Tax Calculation <user-guide--taxes--tax-configuration>`
 
