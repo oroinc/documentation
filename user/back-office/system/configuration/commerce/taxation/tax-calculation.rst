@@ -18,6 +18,7 @@ To customize the following tax calculation settings that impact the way OroComme
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 .. image:: /user/img/system/config_commerce/taxation/TaxCalculation.png
+   :scale: 60%
    :alt: Global tax calculation configuration
 
 .. note:: Remember to clear the **Use default** check box before setting a custom option.
