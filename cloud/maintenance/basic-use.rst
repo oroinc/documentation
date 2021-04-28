@@ -471,6 +471,17 @@ By default, the `app:console` command runs in the `silent` mode, which means tha
     orocloud-cli app:console "oro:message-queue:consume --memory-limit=512" -vvv
 
 
+Application Schema Update
+--------------------------
+
+Sometimes you may require to perform schema update operations. To do this, use the `app:schema:update` command:
+
+.. code-block:: none
+
+    app:schema:update [--force]
+
+* `--force` is optional, it allows to skip execution confirmation.
+
 Application Cache
 -----------------
 
@@ -731,7 +742,34 @@ To check consumers status, use the `service:status:consumer` command.
 
 The `host` parameter is optional. You can list services from specified job host only. If no parameter is specified,`all` is used by default.
 
+Emergency Commands
+------------------
 
+Emergency commands enable you to turn the maintenance mode on the application on and off without manipulations with services.
+
+Emergency On
+~~~~~~~~~~~~
+
+The idea behind this command is that it does not block the infrastructure from changes that are rolling out continuously (unlike when you turn on the usual maintenance where the infrastructure is blocked from rolling out changes).
+
+To enable emergency maintenance mode of the application without manipulations with services, use the `emergency:on` command.
+
+.. code-block:: none
+
+    emergency:on [--force]
+
+* `--force` is optional, it allows to skip execution confirmation.
+
+Emergency Off
+~~~~~~~~~~~~~
+
+To disable emergency maintenance mode of the application without manipulations with services, use the `emergency:off` command.
+
+.. code-block:: none
+
+    emergency:off [--force]
+
+* `--force` is optional, it allows to skip execution confirmation.
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
