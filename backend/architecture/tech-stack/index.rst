@@ -22,7 +22,6 @@ Oro applications support the following web browsers:
 
 * |Mozilla Firefox| (latest version)
 * |Google Chrome| (latest version)
-* |Microsoft Internet Explorer| (v.11 and above)
 * |Microsoft Edge| (latest version)
 * |Safari| (latest version)
 
@@ -49,10 +48,20 @@ Oro PHP Application
 
 The core component, let us call it **Oro PHP Application**, is a modular **PHP** web application that leverage the **Symfony** framework and **Doctrine ORM** strengths. It interacts with the following system components:
 
-* Database and RDBMS
 * Web Server and PHP
+* Database and RDBMS
+* File Storage
+* Session Storage
 * Message Queue
 * Search Engine
+
+Web Server and PHP
+^^^^^^^^^^^^^^^^^^
+
+A **web server** is an HTTP server that manages client requests and proxies them to the **Oro PHP Application**.
+**Web server** may rely on the **PHP-FPM** to process requests to **Oro PHP Application** and prepare the response.
+
+Supported web servers: |Apache| and |Nginx|
 
 Database and RDBMS
 ^^^^^^^^^^^^^^^^^^
@@ -66,13 +75,30 @@ Supported RDBMs:
 
 .. note:: For implementation details, see :ref:`Database System Component <op-structure--database>` topic for more information about the database component.
 
-Web Server and PHP
-^^^^^^^^^^^^^^^^^^
+File Storage
+^^^^^^^^^^^^
 
-A **web server** is an HTTP server that manages client requests and proxies them to the **Oro PHP Application**.
-**Web server** may rely on the **PHP-FPM** to process requests to **Oro PHP Application** and prepare the response.
+Oro application uses **File Storage** to access data files.
 
-Supported web servers: |Apache| and |Nginx|
+The file storage can be configured to use different filesystems to store the data, like a local filesystem,
+a GridFS storage, etc.
+
+There are two types of storages:
+
+* **private** is intended to store data that should not be available via a direct link, for example,
+  attachments' data, import and export files, protected media cache files, etc.
+* **public** is intended to store data that can be available via a direct link without access checks, for example,
+  resized product images, sitemap files, etc.
+
+.. note:: For implementation details, see :ref:`File Storage <backend-file-storage>` topic for more information about
+   the file storage component.
+
+Session Storage
+^^^^^^^^^^^^^^^
+
+Oro application uses |sessions| to preserve user data between web requests. This information is placed in a persistent
+store that can be accessed from subsequent requests. For implementation details, see
+:ref:`Session Storage <backend-session-storage>` topic.
 
 Message Queue
 ^^^^^^^^^^^^^
@@ -111,8 +137,10 @@ All systems and elements of the Oro application may be hosted on their own dedic
 **Related Topics**
 
 * :ref:`Database <op-structure--database>`
-* :ref:`Search Index <search_index_overview>`
+* :ref:`File Storage <backend-file-storage>`
+* :ref:`Session Storage <backend-session-storage>`
 * :ref:`Message Queue <op-structure--mq--index>`
+* :ref:`Search Index <search_index_overview>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
@@ -123,5 +151,7 @@ All systems and elements of the Oro application may be hosted on their own dedic
    :titlesonly:
 
    database
-   search-index/index
+   file-storage
+   session-storage
    message-queue
+   search-index

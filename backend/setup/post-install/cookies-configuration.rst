@@ -113,6 +113,8 @@ in the `Resources/config/oro/app.yml` file in any bundle or in the `config/confi
             cookie_secure:    'auto'   # determines whether cookies should only be sent over secure connections
             cookie_samesite:  null     # prevents the browser from sending cookie along with cross-site requests
 
+.. note:: The `name` parameter value is defined and can be changed in the `config/config_prod.yml` file.
+
 If a parameter is absent or null, the value of the parameter is taken from the back-office session cookie.
 
 Storefront Remember Me Cookie
