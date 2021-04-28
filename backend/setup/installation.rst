@@ -72,6 +72,15 @@ If you use HTTPS mode, open the ``config/parameters.yml`` file and change the We
 
 For more information on these parameters, see |OroSyncBundle documentation|.
 
+Configure File Storages
+-----------------------
+
+By default an application will be installed with local file systems as :ref:`File Storages <backend-file-storage>`
+with predefined system paths.
+
+To change this configuration, please follow the :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>`
+to lean how this configuration can be changed.
+
 Install Oro Application
 -----------------------
 
