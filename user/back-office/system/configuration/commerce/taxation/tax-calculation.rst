@@ -14,13 +14,14 @@ To customize the following tax calculation settings that impact the way OroComme
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Taxation > Tax Calculation** in the menu to the left.
 
-   .. note::
-      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user/img/system/config_commerce/taxation/TaxCalculation.png
-      :alt: Global tax calculation configuration
+.. image:: /user/img/system/config_commerce/taxation/TaxCalculation.png
+   :scale: 60%
+   :alt: Global tax calculation configuration
 
-   .. note:: Remember to clear the **Use default** check box before setting a custom option.
+.. note:: Remember to clear the **Use default** check box before setting a custom option.
 
 3. In the **Enable Taxation** section, enable or disable taxation by setting or clearing the **Enabled** box. Whenever you use the built-in or third-party tax provider, the taxation should be enabled.
 
@@ -45,7 +46,7 @@ To customize the following tax calculation settings that impact the way OroComme
      * For the destination-based jurisdiction, select **Destination** and define the whether to use the shipping address or billing to as a reference for calculating the customers's local tax rate in the Destination field.
 
      .. image:: /user/img/system/config_commerce/taxation/tax_jur_configuration.png
-         :alt: Global tax jurisdiction configuration
+        :alt: Global tax jurisdiction configuration
 
    b) Set up any tax jurisdiction exceptions - countries and states where tax jurisdiction selection deviates from the core rule. For example, when the main tax jurisdiction is at the sale shipping destination, the exception may be for some countries and states to use shipping origin instead. Click **+ Add**, select a country, type in a state or a region and select the alternative tax jurisdiction base.
 
@@ -61,5 +62,27 @@ To customize the following tax calculation settings that impact the way OroComme
 
 7. In the **Origin** section, provide the origin address (e.g. location of your warehouse or the company legal address) that will be used system-wide for origin-based tax. When the shipping origin is a core jurisdiction, OroCommerce will use the address provided here to find the matching built-in tax jurisdiction rules for tax calculation.
 
-8. Click **Save**.
+8. In the **Promotions** section, select the **Calculate Taxes After Promotions** check box, if you wish to have your taxes calculated on the :ref:`reduced price <user-guide--marketing--promotions>` after the discounts are applied. If this option is disabled, taxes are calculated based on the full price before the discounts are applied. This configuration option is also available on the :ref:`organization configuration level <user-guide--taxes--org--promotions>`.
+
+  .. note:: When a discount applies to the entire order, it is proportionally distributed among all line items and subtracted from the subtotal of each of them. Tax is calculated for each taxable line item after that.
+
+     For example:
+
+     * Line item 1 subtotal = 1000$
+     * Line item 2 subtotal = 100$
+     * Total discount amount = 10$
+     * Tax = 10%
+
+     Discount distribution among all line items:
+
+     * Line item 1 discount amount = (1000 * 10) / (1000 + 100) = 9.09$
+     * Line item 2 discount amount = (100 * 10) / (1000 + 100) = 0.91$
+
+     Taxes for line items:
+
+     * Taxable Line item 1 tax: (1000$ - 9.09$) * 0.1 = 99.091$
+     * Taxable Line item 2 tax: (100$ - 0.91$) * 0.1 = 9.909$
+     * Total tax amount after discounts: 99.091$ + 9.909$ = 109$
+
+9. Click **Save Settings**.
 

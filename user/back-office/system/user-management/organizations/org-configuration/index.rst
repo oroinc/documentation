@@ -78,6 +78,10 @@ The following categories of settings are available for system configuration at o
 
     * :ref:`Saved Search <organization-commerce--configuration--saved-search>`
 
+  * Taxation
+
+    * :ref:`Tax Calculation (Promotions) <user-guide--taxes--org--promotions>`
+
   * Catalog
 
     * :ref:`Filters and Sorters <configuration--guide--commerce--configuration--catalog--filters-sorters--organization>`
