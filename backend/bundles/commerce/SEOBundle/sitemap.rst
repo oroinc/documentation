@@ -110,9 +110,9 @@ Customize Sitemap Provider Logic
 Your new provider should implement `UrlItemsProviderInterface`:
 
 .. code-block:: php
-
-
-    // src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
+   
+   // src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
+   
     class MyProvider implements UrlItemsProviderInterface
     {
         ...
@@ -145,9 +145,9 @@ A new `frontend_master_catalog` feature was created to detect if web catalog res
 The provider that depends on this feature should also implement `FeatureToggleableInterface`, use `FeatureCheckerHolderTrait`:
 
 .. code-block:: php
-
-
-    // src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
+   
+   // src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
+    
     class MyProvider implements UrlItemsProviderInterface, 
     {
         use FeatureCheckerHolderTrait;
@@ -196,7 +196,7 @@ Robot txt files are created for every configured website's domain name of the sy
 If some websites have the same domain name and different subfolders, the final robot txt file for such domain will have
 a links to sitemaps from all such websites. 
 
-The `config/{domain}.txt.dist`, where {domain} is the domain name, file is used as the base for every robots.txt file.
+The `config/robots.{domain}.txt.dist`, where {domain} is the domain name, file is used as the base for every robots.txt file.
 If the file is absent, the `config/robots.txt.dist` file is used.
 If the `robots.txt.dist` file is absent, the following data is used as the base:
 

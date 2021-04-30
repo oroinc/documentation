@@ -41,7 +41,7 @@ Handlers
 Consumer output is based on |Monolog|, so it supports a stack of handlers that can be used to write the log entries to different locations (e.g., files, database, Slack, etc).
 See more information in the |related Symfony documentation|.
 
-It is useful when your production is configured with the real-time log service such as |Google Stackdriver|. Read more in the |How to write logs to Stackdriver|.
+It is useful when your production is configured with the real-time log service such as |Google Stackdriver|. Read more in the :ref:`How to write logs to Stackdriver <dev-guide-mq-stackdriver>`.
 
 Formatters
 ^^^^^^^^^^
@@ -257,7 +257,7 @@ If you want to log the **consumer** channel to a different file, create a new ha
 Third Party Logging Systems
 ---------------------------
 
-* |Writing Logs to Stackdriver|
+* :ref:`Writing Logs to Stackdriver <dev-guide-mq-stackdriver>`
 * :ref:`Writing Logs to ELK Stack <op-structure--mq--elk-stack>`
 
 For more information, see the following external resources:

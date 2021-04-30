@@ -219,7 +219,6 @@ Links (Dev)
 
    <a href="https://www.rabbitmq.com/tutorials/amqp-concepts.html" target="_blank">AMQP</a>
 
-
 .. |Redis| raw:: html
 
    <a href="https://redis.io/" target="_blank">Redis</a>
@@ -952,10 +951,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#custom-fields-and-entities-in-search" target="_blank">Make Custom Entities and Fields Searchable</a>
 
-.. |Configure Redis Servers| raw:: html
-
-   <a href="https://github.com/oroinc/redis-config#configure-redis-servers" target="_blank">Configure Redis Servers</a>
-
 .. |ChainProcessor| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Component/ChainProcessor" target="_blank">ChainProcessor</a>
@@ -1492,6 +1487,14 @@ Links (Dev)
 .. |session handler| raw:: html
 
    <a href="https://symfony.com/doc/4.4/components/http_foundation/session_configuration.html#save-handlers" target="_blank">session handler</a>
+
+.. |sessions| raw:: html
+
+   <a href="https://www.php.net/manual/en/intro.session.php" target="_blank">sessions</a>
+
+.. |session data is locked| raw:: html
+
+   <a href="https://www.php.net/manual/en/features.session.security.management.php#features.session.security.management.session-locking" target="_blank">session data is locked</a>
 
 .. |translations| raw:: html
 
@@ -4109,10 +4112,6 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/logging.html#handlers-writing-logs-to-different-locations" target="_blank">related Symfony documentation</a>
 
-.. |How to write logs to Stackdriver| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MessageQueueBundle/Resources/doc/stackdriver.md" target="_blank">How to write logs to Stackdriver</a>
-
 .. |ELK Stack| raw:: html
 
    <a href="https://www.elastic.co/elk-stack" target="_blank">ELK Stack</a>
@@ -4136,10 +4135,6 @@ Links (Dev)
 .. |ConsoleErrorHandler| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MessageQueueBundle/Log/Handler/ConsoleErrorHandler.php" target="_blank">ConsoleErrorHandler</a>
-
-.. |Writing Logs to Stackdriver| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MessageQueueBundle/Resources/doc/stackdriver.md" target="_blank">Writing Logs to Stackdriver</a>
 
 .. |GitHub Monolog| raw:: html
 
@@ -4448,10 +4443,6 @@ Links (Dev)
 .. |RabbitMQ AMQP Model Explained| raw:: html
 
    <a href="https://www.rabbitmq.com/tutorials/amqp-concepts.html" target="_blank">RabbitMQ AMQP Model Explained</a>
-
-.. |here6| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/MessageQueueBundle/Resources/doc/container_in_consumer.md" target="_blank">here</a>
 
 .. |node's data directory| raw:: html
 
@@ -4764,10 +4755,6 @@ Links (Dev)
 .. |GridFS| raw:: html
 
    <a href="https://docs.mongodb.com/manual/core/gridfs/" target="_blank">GridFS</a>
-
-.. |MongoDB PHP Library| raw:: html
-
-   <a href="https://github.com/mongodb/mongo-php-library" target="_blank">MongoDB PHP Library</a>
 
 .. |KnpGaufretteBundle| raw:: html
 
@@ -5126,9 +5113,25 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy" target="_blank">setting up the Local Proxy</a>
 
+.. |SncRedisBundle| raw:: html
+
+   <a href="https://github.com/snc/SncRedisBundle" target="_blank">SncRedisBundle</a>
+
 .. |Define a new client| raw:: html
 
    <a href="https://github.com/snc/SncRedisBundle/blob/3.2.2/Resources/doc/index.md#usage" target="_blank">Define a new client</a>
+
+.. |SncRedisBundle Documentation| raw:: html
+
+   <a href="https://github.com/snc/SncRedisBundle" target="_blank">SncRedisBundle Documentation</a>
+
+.. |Predis Documentation| raw:: html
+
+   <a href="https://github.com/nrk/predis" target="_blank">Predis Documentation</a>
+
+.. |Redis Cluster Tutorial| raw:: html
+
+   <a href="https://redis.io/topics/cluster-tutorial" target="_blank">Redis Cluster Tutorial</a>
 
 .. |changefreq| raw:: html
 
@@ -5506,6 +5509,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/GaufretteBundle/FileManager.php" target="_blank">FileManager</a>
 
+.. |ConfigurationFactoryInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/GaufretteBundle/DependencyInjection/Factory/ConfigurationFactoryInterface.php" target="_blank">ConfigurationFactoryInterface</a>
+
 .. |DictionaryValueListProviderInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityBundle/Provider/DictionaryValueListProviderInterface.php" target="_blank">DictionaryValueListProviderInterface</a>
@@ -5621,3 +5628,57 @@ Links (Dev)
 .. |LiipImagineBundle filters reference| raw:: html
 
    <a href="https://symfony.com/doc/2.x/bundles/LiipImagineBundle/filters.html" target="_blank">LiipImagineBundle filters reference</a>
+
+.. |Logging Agent| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/agent/" target="_blank">Logging Agent</a>
+
+.. |GCloud SDK| raw:: html
+
+   <a href="https://github.com/GoogleCloudPlatform/google-cloud-php" target="_blank">GCloud SDK</a>
+
+.. |Monolog Handler| raw:: html
+
+   <a href="https://symfony.com/doc/current/logging.html#handlers-that-modify-log-entries" target="_blank">Monolog Handler</a>
+
+.. |Overview of Logs-Based Metrics| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/logs-based-metrics/" target="_blank">Overview of logs-based metrics</a>
+
+.. |How to Create Counter Metric| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/logs-based-metrics/counter-metrics" target="_blank">How to Create Counter Metric</a>
+
+.. |How to Create Distribution Metric| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/logs-based-metrics/distribution-metrics" target="_blank">How to Create Distribution Metric</a>
+
+.. |Creating and Managing Dashboard Widgets| raw:: html
+
+   <a href="https://cloud.google.com/monitoring/charts/" target="_blank">Creating and Managing Dashboard Widgets</a>
+
+.. |create charts and alerts| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/logs-based-metrics/charts-and-alerts" target="_blank">create charts and alerts</a>
+
+.. |MessageFilterInterface| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/MessageFilterInterface.php" target="_blank">MessageFilterInterface</a>
+
+.. |message builders| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Component/MessageQueue/Client/MessageBuilderInterface.php" target="_blank">message builders</a>
+
+.. |message buffer| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/MessageBuffer.php" target="_blank">message buffer</a>
+
+.. |BufferedMessageProducer| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/BufferedMessageProducer.php" target="_blank">BufferedMessageProducer</a>
+
+.. |DbalTransactionWatcher| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/DbalTransactionWatcher.php" target="_blank">DbalTransactionWatcher</a>
+
+
