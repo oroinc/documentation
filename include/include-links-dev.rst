@@ -4108,10 +4108,6 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/logging.html#handlers-writing-logs-to-different-locations" target="_blank">related Symfony documentation</a>
 
-.. |How to write logs to Stackdriver| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Resources/doc/stackdriver.md" target="_blank">How to write logs to Stackdriver</a>
-
 .. |ELK Stack| raw:: html
 
    <a href="https://www.elastic.co/elk-stack" target="_blank">ELK Stack</a>
@@ -4135,10 +4131,6 @@ Links (Dev)
 .. |ConsoleErrorHandler| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Log/Handler/ConsoleErrorHandler.php" target="_blank">ConsoleErrorHandler</a>
-
-.. |Writing Logs to Stackdriver| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Resources/doc/stackdriver.md" target="_blank">Writing Logs to Stackdriver</a>
 
 .. |GitHub Monolog| raw:: html
 
@@ -4447,10 +4439,6 @@ Links (Dev)
 .. |RabbitMQ AMQP Model Explained| raw:: html
 
    <a href="https://www.rabbitmq.com/tutorials/amqp-concepts.html" target="_blank">RabbitMQ AMQP Model Explained</a>
-
-.. |here6| raw:: html
-
-   <a href="https://github.com/oroinc/OroMessageQueueBundle/blob/master/Resources/doc/container_in_consumer.md" target="_blank">here</a>
 
 .. |node's data directory| raw:: html
 
@@ -5636,4 +5624,56 @@ Links (Dev)
 .. |LiipImagineBundle filters reference| raw:: html
 
    <a href="https://symfony.com/doc/2.x/bundles/LiipImagineBundle/filters.html" target="_blank">LiipImagineBundle filters reference</a>
+
+.. |Logging Agent| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/agent/" target="_blank">Logging Agent</a>
+
+.. |GCloud SDK| raw:: html
+
+   <a href="https://github.com/GoogleCloudPlatform/google-cloud-php" target="_blank">GCloud SDK</a>
+
+.. |Monolog Handler| raw:: html
+
+   <a href="https://symfony.com/doc/current/logging.html#handlers-that-modify-log-entries" target="_blank">Monolog Handler</a>
+
+.. |Overview of Logs-Based Metrics| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/logs-based-metrics/" target="_blank">Overview of logs-based metrics</a>
+
+.. |How to Create Counter Metric| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/logs-based-metrics/counter-metrics" target="_blank">How to Create Counter Metric</a>
+
+.. |How to Create Distribution Metric| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/logs-based-metrics/distribution-metrics" target="_blank">How to Create Distribution Metric</a>
+
+.. |Creating and Managing Dashboard Widgets| raw:: html
+
+   <a href="https://cloud.google.com/monitoring/charts/" target="_blank">Creating and Managing Dashboard Widgets</a>
+
+.. |create charts and alerts| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/logs-based-metrics/charts-and-alerts" target="_blank">create charts and alerts</a>
+
+.. |MessageFilterInterface| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/MessageFilterInterface.php" target="_blank">MessageFilterInterface</a>
+
+.. |message builders| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Component/MessageQueue/Client/MessageBuilderInterface.php" target="_blank">message builders</a>
+
+.. |message buffer| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/MessageBuffer.php" target="_blank">message buffer</a>
+
+.. |BufferedMessageProducer| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/BufferedMessageProducer.php" target="_blank">BufferedMessageProducer</a>
+
+.. |DbalTransactionWatcher| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/DbalTransactionWatcher.php" target="_blank">DbalTransactionWatcher</a>
 
