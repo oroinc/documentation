@@ -48,7 +48,7 @@ If value of attribute "call_timeout" is not blank AND equals 20.
             '@equal' => array('$call_timeout', 20)
         )
     );
-    /** @var $conditionFactory \Oro\Bundle\WorkflowBundle\Model\Condition\ConditionFactory */
+    /** @var \Oro\Bundle\WorkflowBundle\Model\Condition\ConditionFactory $conditionFactory */
     $condition = $conditionFactory->create(Configurable::ALIAS, $configuration);
 
     /** @var object $data */
