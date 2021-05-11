@@ -78,10 +78,10 @@ The following filters are also configured automatically:
 - The `composite_identifier` filter for the ID field, if an entity has a composite identifier.
   The operators enabled for this filter are `=`, `!=`, `*`, `!*`.
   It is implemented by |CompositeIdentifierFilter|.
-- The `association` filter for |extended associations|.
+- The `association` filter for :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>`.
   The operators enabled for this filter are `=`, `!=`, `*`, `!*`.
   It is implemented by |ExtendedAssociationFilter|.
-  More details on how to configure extended associations are available in the following topics:
+  More details on how to configure multi-target associations are available in the following topics:
   :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`,
   :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>` and
   :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`.

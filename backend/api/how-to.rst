@@ -334,7 +334,12 @@ Here is an example how the nested objects looks in JSON:API:
 Configure a Nested Association
 ------------------------------
 
-Sometimes a relationship with a group of entities is implemented as two fields, "entityClass" and "entityId", rather than |many-to-one extended association|. But in the API these fields should be represented as a regular relationship. To achieve this, a special data type named ``nestedAssociation`` was implemented. For example, let us suppose that an entity has two fields ``sourceEntityClass`` and ``sourceEntityId`` and you need to expose them in API as ``source`` relationship. To achieve this, use the following configuration:
+Sometimes a relationship with a group of entities is implemented as two fields, "entityClass" and "entityId",
+rather than a :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>`.
+But in the API these fields should be represented as a regular relationship. To achieve this, a special data type
+named ``nestedAssociation`` was implemented. For example, let us suppose that an entity has two fields
+``sourceEntityClass`` and ``sourceEntityId`` and you need to expose them in API as ``source`` relationship.
+To achieve this, use the following configuration:
 
 .. code-block:: yaml
 
@@ -375,7 +380,8 @@ Here is an example how the nested association looks in JSON:API:
 Configure an Extended Many-To-One Association
 ---------------------------------------------
 
-For information about extended associations, see the |Associations| topic.
+For information about this type of associations,
+see the :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>` topic.
 
 Depending on the current entity configuration, each association resource (e.g. attachment) can be assigned to one of the resources (e.g. user, account, contact) that support such associations.
 
@@ -402,7 +408,8 @@ The ``data_type`` parameter has format: ``association:relationType:associationKi
 Configure an Extended Many-To-Many Association
 ----------------------------------------------
 
-For information about extended associations, see the |Associations| topic.
+For information about this type of associations,
+see the :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>` topic.
 
 Depending on the current entity configuration, each association resource (e.g. call) can be assigned to several resources (e.g. user, account, contact) that support such associations.
 
@@ -429,7 +436,8 @@ The ``data_type`` parameter has format: ``association:relationType:associationKi
 Configure an Extended Multiple Many-To-One Association
 ------------------------------------------------------
 
-For information about extended associations, see the |Associations| topic.
+For information about this type of associations,
+see the :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>` topic.
 
 Depending on the current entity configuration, each association resource (e.g. call) can be assigned to several resources (e.g. user, account, contact) that support such associations. However, in case of multiple many-to-one association, a resource can be associated with only one other resource of each type. For example, a call can be associated only with one user, one account, etc.
 

@@ -205,7 +205,7 @@ Performing Access Checks
 
 Once you have configured the ACLs you can protect all parts of your application. Anywhere in your
 PHP code you can use the ``isGranted()`` method of the ``security.authorization_checker`` service
-(which is an instance of the |SymfonyComponentSecurityCoreAuthorizationAuthorizationCheckerInterface| class):
+(which is an instance of the |Symfony AuthorizationCheckerInterface|):
 
 .. code-block:: php
 
