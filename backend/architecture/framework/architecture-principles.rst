@@ -227,7 +227,7 @@ mentioning Symfony components that are actively used in the development of Oro a
 - |Console Component|
 - |DependencyInjection Component|
 - |EventDispatcher Component|
-- ExpressionLanguage Component
+- |ExpressionLanguage Component|
 - |Form Component|
 - |HttpFoundation Component|
 - |HttpKernel Component|

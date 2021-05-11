@@ -5,7 +5,7 @@ Entity Fallback Values
 
 You can set up an entity field to fallback to a different entity's field value.
 To set up such a field, add it to the entity as a property (or create a migration for adding it),
-and add a @ConfigField annotation and doctrine relation to |EntityFieldFallbackValue| (or array configuration in migration) like the following configuration:
+and add a @ConfigField annotation and Doctrine association to |EntityFieldFallbackValue| (or array configuration in migration) like the following configuration:
 
 .. code-block:: php
 

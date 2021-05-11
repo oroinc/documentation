@@ -835,6 +835,10 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/components/event_dispatcher.html" target="_blank">EventDispatcher Component</a>
 
+.. |ExpressionLanguage Component| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/components/expression_language.html" target="_blank">ExpressionLanguage Component</a>
+
 .. |Form Component| raw:: html
 
    <a href="https://symfony.com/doc/4.4/components/form.html" target="_blank">Form Component</a>
@@ -886,70 +890,6 @@ Links (Dev)
 .. |article| raw:: html
 
    <a href="https://medium.com/@fabpot/fabien-potencier-4574622d6a7e" target="_blank">article</a>
-
-.. |Define Custom Form Type for a Field| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Resources/doc/custom_form_type.md" target="_blank">Define Custom Form Type for a Field</a>
-
-.. |Configure Associations to Create Undirectional Relation Between Entities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md" target="_blank">Configure Associations to Create Undirectional Relation Between Entities</a>
-
-.. |Create an API for Managing Associations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations_api.md" target="_blank">Create an API for Managing Associations</a>
-
-.. |Manage Entities Through UI| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#manage-entities-through-ui" target="_blank">Manage Entities Through UI</a>
-
-.. |Modify Entities Using Migration Scripts| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#modify-entities-using-migration-scripts" target="_blank">Modify Entities Using Migration Scripts</a>
-
-.. |Add a Relation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#add-relation" target="_blank">Add a Relation</a>
-
-.. |Add the Option Set Field| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#add-option-set-field" target="_blank">Add the Option Set Field</a>
-
-.. |Create a Custom Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#create-custom-entity" target="_blank">Create a Custom Entity</a>
-
-.. |Apply Entity Extend Changes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#applying-entity-extend-changes" target="_blank">Apply Entity Extend Changes</a>
-
-.. |Prepare Entity Extend Configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#preparing-entity-extend-configuration" target="_blank">Prepare Entity Extend Configuration</a>
-
-.. |Update Database Schema for Extended Entities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#updating-database-schema-for-extended-entities" target="_blank">Update Database Schema for Extended Entities</a>
-
-.. |Warn Up Cache| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#warming-up-the-cache" target="_blank">Warn Up Cache</a>
-
-.. |Configure Custom Form Type| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#custom-form-type-and-options" target="_blank">Configure Custom Form Type</a>
-
-.. |Define Validation Constraints| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#validation-for-extended-fields" target="_blank">Define Validation Constraints</a>
-
-.. |Extend Fields View| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#extend-fields-view" target="_blank">Extend Fields View</a>
-
-.. |Make Custom Entities and Fields Searchable| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle#custom-fields-and-entities-in-search" target="_blank">Make Custom Entities and Fields Searchable</a>
 
 .. |ChainProcessor| raw:: html
 
@@ -1022,10 +962,6 @@ Links (Dev)
 .. |CompositeIdentifierFilter| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ApiBundle/Filter/CompositeIdentifierFilter.php" target="_blank">CompositeIdentifierFilter</a>
-
-.. |extended associations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md" target="_blank">extended associations</a>
 
 .. |ExtendedAssociationFilter| raw:: html
 
@@ -4248,14 +4184,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ApiBundle/Processor/DeleteList/SetDeleteLimit.php" target="_blank">SetDeleteLimit</a>
 
-.. |many-to-one extended association| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md" target="_blank">many-to-one extended association</a>
-
-.. |Associations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md" target="_blank">Associations</a>
-
 .. |the Symfony documentation| raw:: html
 
    <a href="https://symfony.com/doc/2.x/bundles/NelmioApiDocBundle/the-apidoc-annotation.html" target="_blank">the Symfony documentation</a>
@@ -4508,9 +4436,25 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce-sample-extensions/releases/download/0.1/OroB2BBlogPostExampleBundle.zip" target="_blank">OroB2BBlogPostExampleBundle</a>
 
-.. |SymfonyComponentSecurityCoreAuthorizationAuthorizationCheckerInterface| raw:: html
+.. |Symfony AuthorizationCheckerInterface| raw:: html
 
-   <a href="https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Security/Core/Authorization/AuthorizationCheckerInterface.php" target="_blank">Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface</a>
+   <a href="https://github.com/symfony/symfony/blob/4.4/src/Symfony/Component/Security/Core/Authorization/AuthorizationCheckerInterface.php" target="_blank">Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface</a>
+
+.. |Symfony FormTypeGuesserInterface| raw:: html
+
+   <a href="https://github.com/symfony/symfony/blob/4.4/src/Symfony/Component/Form/FormTypeGuesserInterface.php" target="_blank">Symfony\Component\Form\FormTypeGuesserInterface</a>
+
+.. |DoctrineTypeGuesser| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Form/Guesser/DoctrineTypeGuesser.php" target="_blank">DoctrineTypeGuesser</a>
+
+.. |FormConfigGuesser| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Form/Guesser/FormConfigGuesser.php" target="_blank">FormConfigGuesser</a>
+
+.. |ExtendFieldTypeGuesser| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Guesser/ExtendFieldTypeGuesser.php" target="_blank">ExtendFieldTypeGuesser</a>
 
 .. |EmailModelBuilder| raw:: html
 
@@ -4635,6 +4579,26 @@ Links (Dev)
 .. |BlockTypeInterface::finishView| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Component/Layout/BlockTypeInterface.php#L51" target="_blank">BlockTypeInterface::finishView</a>
+
+.. |Doctrine associations| raw:: html
+
+   <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html" target="_blank">Doctrine associations</a>
+
+.. |Doctrine association mappings| raw:: html
+
+   <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html" target="_blank">Doctrine association mappings</a>
+
+.. |Doctrine One-To-Many Bidirectional Association| raw:: html
+
+   <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html#one-to-many-bidirectional" target="_blank">Doctrine documentation</a>
+
+.. |many-to-one association| raw:: html
+
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html#many-to-one-unidirectional" target="_blank">many-to-one association</a>
+
+.. |many-to-many association| raw:: html
+
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html#many-to-many-unidirectional" target="_blank">many-to-many association</a>
 
 .. |Doctrine Filters| raw:: html
 
@@ -5605,6 +5569,78 @@ Links (Dev)
 
    <a href="https://github.com/kiboko-labs/kloud" target="_blank">Docker images and stacks for OroPlatform based applications by the Kiboko team</a>
 
+.. |AbstractAssociationEntityGeneratorExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/src/Oro/Bundle/EntityExtendBundle/Tools/GeneratorExtensions/AbstractAssociationEntityGeneratorExtension.php" target="_blank">AbstractAssociationEntityGeneratorExtension</a>
+
+.. |AbstractConfigType| raw:: html
+
+   <a href="https://github.com/oroinc/platform/src/Oro/Bundle/EntityConfigBundle/Form/Type/AbstractConfigType.php" target="_blank">AbstractConfigType</a>
+
+.. |the Oro Email entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Entity/Email.php" target="_blank">the Oro Email entity</a>
+
+.. |MultipleAssociationChoiceType| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Type/MultipleAssociationChoiceType.php" target="_blank">MultipleAssociationChoiceType</a>
+
+.. |AssociationChoiceType| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Type/AssociationChoiceType.php" target="_blank">AssociationChoiceType</a>
+
+.. |ExtendHelper| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Tools/ExtendHelper.php" target="_blank">ExtendHelper</a>
+
+.. |ExtendExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Migration/Extension/ExtendExtension.php" target="_blank">ExtendExtension</a>
+
+.. |OroOptions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Migration/OroOptions.php" target="_blank">OroOptions</a>
+
+.. |AssociationManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/Manager/AssociationManager.php" target="_blank">AssociationManager</a>
+
+.. |AbstractEnumValue| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/AbstractEnumValue.php" target="_blank">AbstractEnumValue</a>
+
+.. |EnumValueTranslation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/EnumValueTranslation.php" target="_blank">EnumValueTranslation</a>
+
+.. |TWIG extension (Enum)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Twig/EnumExtension.php" target="_blank">TWIG extension</a>
+
+.. |EnumChoiceType| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Type/EnumChoiceType.php" target="_blank">EnumChoiceType</a>
+
+.. |EnumSelectType| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Type/EnumSelectType.php" target="_blank">EnumSelectType</a>
+
+.. |EnumFilter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Filter/EnumFilter.php" target="_blank">EnumFilter</a>
+
+.. |MultiEnumFilter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Filter/MultiEnumFilter.php" target="_blank">MultiEnumFilter</a>
+
+.. |ExtendColumnOptionsGuesser| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Grid/ExtendColumnOptionsGuesser.php" target="_blank">ExtendColumnOptionsGuesser</a>
+
+.. |ActivityManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityBundle/Manager/ActivityManager.php" target="_blank">ActivityManager</a>
+
 .. |Symfony Monolog Documentation| raw:: html
 
    <a href="https://symfony.com/doc/4.4/logging.html#monolog" target="_blank">Symfony Monolog Documentation</a>
@@ -5680,5 +5716,3 @@ Links (Dev)
 .. |DbalTransactionWatcher| raw:: html
 
    <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/DbalTransactionWatcher.php" target="_blank">DbalTransactionWatcher</a>
-
-
