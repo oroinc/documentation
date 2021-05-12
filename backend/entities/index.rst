@@ -19,6 +19,7 @@ In the sections below, you can learn the key things you can come across when wor
    create-entities
    extend-entities/index
    config-entities/index
+   create-custom-entities
    crud
    custom-field-validation
    entity-aliases

@@ -80,4 +80,4 @@ An example of an API request:
 
 .. note:: For the storefront API a customer user email address should be used as `username`.
 
-.. note:: To get the access token for a customer visitor for storefront API, use ``guest`` as `username` and `password` in the request to the authorization server. A new customer visitor is created for each created access token.
+.. note:: To get the access token for a visitor for the storefront API, use ``guest`` as `username` and `password` in the request to the authorization server. A new customer visitor is created for each created access token.

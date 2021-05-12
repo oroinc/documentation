@@ -391,7 +391,7 @@ The **data\_type** attribute can be used to specify a data type of a field. Howe
    "percent_100","Represents a percentage value multiplied by 100. It means that a value is multiplied by 100 before it is stored in the database. E.g. 50% is represented in API as 0.5, but stored in the database as 50."
    "nestedObject","Helps configure nested objects. For details see :ref:`Configure a Nested Object <configure-nested-object>`."
    "nestedAssociation","Helps configure nested associations. For details see :ref:`Configure a Nested Association <configure-nested-association>`."
-   "association:relationType[:associationKind]","Helps configure extended associations. For details, see :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`, :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>` and :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`."
+   "association:relationType[:associationKind]","Helps configure multi-target associations. For details, see :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`, :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>` and :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`."
    "unidirectionalAssociation:targetAssociationName","Helps configure unidirectional associations. For details, see :ref:`Configure an Unidirectional Association <configure-unidirectional-association>`."
    "localizedFallbackValue:fieldName","Helps configure to-many associations to |LocalizedFallbackValue| for the :ref:`Storefront API <web-api--storefront>`."
 

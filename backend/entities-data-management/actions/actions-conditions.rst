@@ -243,7 +243,7 @@ Code Example is a value of the "call_timeout" attribute. It is not blank, and it
             '@equal' => array('$call_timeout', 20)
         )
     );
-    /** @var $conditionFactory \Oro\Bundle\ActionBundle\Model\Condition\ConditionFactory */
+    /** @var \Oro\Bundle\ActionBundle\Model\Condition\ConditionFactory $conditionFactory */
     $condition = $conditionFactory->create(Configurable::ALIAS, $configuration);
 
     /** @var object $data */
