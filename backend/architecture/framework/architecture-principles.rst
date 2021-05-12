@@ -8,7 +8,7 @@ Architecture Principles of Oro Applications
 Symfony Role in OroPlatform
 ---------------------------
 
-.. note:: We are using |Symfony Framework| v. 3.4 LTS in Oro Applications v.3.x.
+.. note:: We use |Symfony Framework| v. 4.4 LTS in Oro Applications v.4.x.
 
 Currently Symfony is the most mature PHP framework that provides a wide range of functions that are typical for any web
 application. Symfony takes care of numerous tasks, for instance:
@@ -81,31 +81,17 @@ At the beginning of Oro applications' development, there were certain constraint
 - Installing a bundle was too cumbersome
 - Removing a bundle was even more cumbersome
 
-At the time there was no |Flex| to address these issues.
-
-.. hint:: Have a look at the |article|  written by Fabien Potensier in which he discusses Symfony Flex.
-
 As a workaround, we changed the bundle registration system in Oro applications in such a way that the bundles acquired the option of auto-registration in the application without the need to modify any of the application files.
 
 In Oro applications, for the bundle to be registered and enabled, it is sufficient to mention the bundle in its  *Resources/config/oro/bundles.yml* file. More precisely, you can activate any bundle in the application simply by putting its main class name in the *Resources/config/oro/bundles.yml* of your bundle (keep in mind, though, that the bundle must first be physically installed with the help of Composer).
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/config/oro/bundles.yml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/bundles.yml
+   
         bundles:
             - { name: Acme\Bundle\DemoBundle\AcmeDemoBundle, priority: 70 }
 
-.. note:: For more details on how to create a bundle, please refer to the :ref:`How to Create a New Bundle <dev-cookbook-framework-how-to-create-new-bundle>` cookbook recipe.
-
-.. note:: **Using Symfony Flex**
-
-    In the 4th version of the Symfony Framework, the default way to manage bundles is by using Symfony Flex.
-
-    As mentioned at the beginning of this article, current versions of Oro applications (v.3.x) use Symfony v.3.4.
-    Fabien Potensier |recommends to consider Flex as an alpha up to 4th versions of Symfony|. Consequently, Oro applications of the current version do not use Flex as the main way to manage the bundles but we intend to introduce it after switching to the 4.4-th version of Symfony Framework (the first LTS version of the 4th generation of Symfony framework).
-
-.. However, you have the technical possibility to switch to using Flex in your custom applications. Since Symfony provides the possibility to use Flex from version 3.3, and the `only mandatory requirement for the transition to Flex use is the change the directory structure in accordance with the 4th version of the Symfony Framework <https://symfony.com/doc/current/setup/flexhtml#upgrading-existing-applications-to-flex>`_, which is already done in the current versions of Oro applications. Please see `Application Directory Structure`_ section for more details about Oro applications directory structure.
+.. note:: For more details on how to create a bundle, please refer to the :ref:`How to Create a New Bundle <dev-cookbook-framework-how-to-create-new-bundle>` topic.
 
 .. _dev-guide-application-web-framework-symfony-application-directory-structure:
 
@@ -113,8 +99,6 @@ Application Directory Structure
 -------------------------------
 
 Oro applications follow the recommendations of Symfony in terms of organizing the structure of the application files and source code.
-
-Despite the fact that current versions of Oro applications use the 3.4th version of Symfony Framework, the structure of Oro application directories has already adopted |Symfony 4 recommendations|.
 
 Please refer to the :ref:`Architecture Guide <architecture-oro-php-application-structure>` for the detailed description of Oro application directory structure.
 
@@ -148,9 +132,8 @@ For example, there are three ways in Oro applications to create navigation items
 3. Add navigation item information to the *Resources/config/oro/navigation.yml* file of your bundle:
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+   :caption:  src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+   
         menu_config:
             items:
                 new_menu_item:
@@ -161,13 +144,6 @@ For example, there are three ways in Oro applications to create navigation items
                 application_menu:
                     children:
                         new_menu_item: ~
-
-.. @todo Add here a list of auto-discovered yaml configuration files after guide creating
-
-.. @todo note:: Uncomment this note after adding the section with description of the admin UI, which allows to manage application parameters
-
-    In addition to using YAML configuration files, OroPlatform enables developers in all Oro applications to create
-    application configuration variables that are aimed to be managed by application users through the UI. This way is widely used in Oro applications for features that should be configured by application users rather than developers.
 
 .. _dev-guide-application-web-framework-symfony-templating-system:
 
@@ -251,7 +227,7 @@ mentioning Symfony components that are actively used in the development of Oro a
 - |Console Component|
 - |DependencyInjection Component|
 - |EventDispatcher Component|
-- ExpressionLanguage Component
+- |ExpressionLanguage Component|
 - |Form Component|
 - |HttpFoundation Component|
 - |HttpKernel Component|

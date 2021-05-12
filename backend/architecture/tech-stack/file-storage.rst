@@ -291,6 +291,60 @@ For example, this case can be figured if the local adapter was used and the file
 the application. By default, the wrapper is configured to use the ``gaufrette-readonly`` protocol.
 To get the full URL of a file use `getReadonlyFilePath()` method of the |FileManager| service.
 
+Migrate Data Command
+--------------------
+
+During the upgrade from a local filesystem storage to another storage type or location, you need to migrate
+data from the previous location. The command can also be used to upload some data to the file storage.
+
+To migrate the data, you can use console command ``oro:gaufrette:migrate-filestorages``.
+
+The command can work in 2 modes: Automatic and Manual.
+
+In the **Automatic** mode, the data is migrated to the current structure by a predefined list of paths that have been used in the application
+before v.4.2.
+
+In the **Manual** mode, a user is asked for a path to be migrated, as well as the Gaufrette file system name
+where the data should migrate to.
+
+The command has a list of pre-configured default paths from which the data is moved in the automatic mode, and a list
+of |FileManager| services where data can be uploaded to.
+
+To add an additional path from which the data is going to be moved or to add an additional |FileManager|, add a new CompilerPass
+in your bundle and add it into the Bundle class:
+
+.. code-block:: php
+
+    <?php
+    namespace Acme\Bundle\SomeBundle\DependencyInjection\Compiler;
+    use Oro\Bundle\GaufretteBundle\Command\MigrateFileStorageCommand;
+    use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+    use Symfony\Component\DependencyInjection\ContainerBuilder;
+    use Symfony\Component\DependencyInjection\Reference;
+    /**
+     * Adds file storage config to the oro:gaufrette:migrate-filestorages migration command.
+     */
+    class MigrateFileStorageCommandCompilerPass implements CompilerPassInterface
+    {
+        /**
+         * {@inheritDoc}
+         */
+        public function process(ContainerBuilder $container): void
+        {
+            $container->getDefinition(MigrateFileStorageCommand::class)
+                // adds the mapping to migrate path /path/to/application/var/some_path
+                // to the filesystem with name 'some_filesystem'
+                ->addMethodCall(
+                    'addMapping',
+                    ['/var/some_path', 'some_filesystem']
+                )
+                // adds the filemanager service as 'some_filesystem' filesystem
+                ->addMethodCall(
+                    'addFileManager',
+                    ['some_filesystem', new Reference('acme_your_bundle.file_manager')]
+                );
+        }
+    }
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

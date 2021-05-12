@@ -59,7 +59,7 @@ Typically, to create a custom application you may follow the common steps:
    related features
 #) :ref:`Customize <architecture--customization--customize>` existing functionality
    (:ref:`menu <doc-create-and-customize-app-menu>`, :ref:`workflow <dev-doc--workflows>`,
-   :ref:`existing entities <add-entity-properties>` etc.)
+   :ref:`extend entities <book-entities-extended-entities>` etc.)
 
 Application Deployment
 ----------------------

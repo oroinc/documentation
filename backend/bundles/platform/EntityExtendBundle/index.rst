@@ -10,23 +10,8 @@ OroEntityExtendBundle enables the entities structure extension using UI or migra
 Related Documentation
 ---------------------
 
-* |Define Custom Form Type for a Field|
-* |Configure Associations to Create Undirectional Relation Between Entities|
-* |Create an API for Managing Associations|
-* |Manage Entities Through UI|
-* |Modify Entities Using Migration Scripts|
-* |Add a Relation|
-* |Add the Option Set Field|
-* |Create a Custom Entity|
-* |Apply Entity Extend Changes|
-* |Prepare Entity Extend Configuration|
-* |Update Database Schema for Extended Entities|
-* |Warn Up Cache|
-* |Configure Custom Form Type|
-* |Define Validation Constraints|
-* |Extend Fields View|
-* |Make Custom Entities and Fields Searchable|
+- :ref:`Extend Entities <book-entities-extended-entities>`
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
-
+  - :ref:`Extended Associations <book-entities-extended-entities-associations>`
+  - :ref:`Option Set Fields <book-entities-extended-entities-enums>`
+  - :ref:`Multi-Target Associations <book-entities-extended-entities-multi-target-associations>`

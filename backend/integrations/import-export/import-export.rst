@@ -427,7 +427,7 @@ You can use the following options:
 |              | interface, but can only be set using annotations.                 |
 +--------------+-------------------------------------------------------------------+
 
-Import One-to-Many Relations
+Import One-To-Many Relations
 ----------------------------
 
 If you want to import one-to-many relations from a CSV file, you should use
@@ -452,7 +452,7 @@ For example:
 You can look it into UI System/Entities/Entity Management. You should import
 all identity fields for the related entity.
 
-Import Many-to-One Relations
+Import Many-To-One Relations
 ----------------------------
 
 If you want to import many-to-one relations, you should use the following

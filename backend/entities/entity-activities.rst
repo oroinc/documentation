@@ -12,16 +12,13 @@ The following example illustrates how to do it:
 
 .. code-block:: php
 
-
     <?php
 
     namespace Oro\Bundle\UserBundle\Migrations\Schema\v1_3;
 
     use Doctrine\DBAL\Schema\Schema;
-
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-
     use Oro\Bundle\ActivityBundle\Migration\Extension\ActivityExtension;
     use Oro\Bundle\ActivityBundle\Migration\Extension\ActivityExtensionAwareInterface;
 
@@ -63,14 +60,13 @@ The following example illustrates how to do it:
 Make an Entity an Activity
 --------------------------
 
-To create an activity from your new entity, you need to make the entity extended and include in the `activity` group.
+To create an activity from your new entity, you need to make the entity extended and include it in the `activity` group.
 
-To make the entity extended, create a base abstract class. The name of this class should start with the `Extend` word, and implement |ActivityInterface|.
+To make the entity extended, create a base abstract class. The name of this class should start with the `Extend` word and implement |ActivityInterface|.
 
 Here is an example:
 
 .. code-block:: php
-
 
     <?php
 
@@ -113,12 +109,36 @@ Use this class as the superclass for your entity. To include the entity in the `
 
 Your entity is now recognized as the activity entity. To make sure that the activity is displayed correctly, you need to configure its UI.
 
+.. _backend-make-entity-activities-working-with-activity-associations:
+
+Working with Activity Associations
+----------------------------------
+
+Activity associations are represented by
+:ref:`multiple many-to-many <book-entities-extended-entities-multi-target-associations-types>` associations.
+This is quite a complex type of associations, and to help work with activities, the |ActivityManager| class was created.
+
+This class provides the following functionality:
+
+* Check whether a specific type of entity has any activity associations.
+* Check whether a specific type of entity can be associated with a specific activity.
+* Get a list of entity types of all activity entities.
+* Get the list of fields responsible for storing activity associations for a specific type of activity entity.
+* Get a query builder that can be used for fetching a list of entities associated with a specific activity.
+* Get a list of fields responsible for storing activity associations for a specific type of entity.
+* Get a query builder that can be used to fetch a list of activity entities associated with a specific entity.
+* Get an array that contains info about all activity associations for a specific type of entity.
+* Get an array that contains info about all activity actions for a specific type of entity.
+* Add a filter by a specific entity to a query builder that is used to get a list of activities.
+* Associate an entity with an activity entity.
+* Remove an association between an entity and an activity entity.
+
 .. _backend-entity-activities-configure-ui:
 
 Configure UI for the Activity Entity
 ------------------------------------
 
-Before using the new activity entity within OroPlatform, you need to do the following:
+Before using the new activity entity within OroPlatform, you need to:
 
 * `Configure UI for Activity List Section`_
 * `Configure UI for an Activity Button`_
@@ -132,12 +152,11 @@ First, create a new action in your controller and a TWIG template responsible fo
 
 Keep in mind that:
 
- - The controller action must accept two parameters: `$entityClass` and `$entityId`.
- - The entity class name can be encoded to avoid routing collisions. That is why you need to use the `oro_entity.routing_helper` service to get the entity by its class name and id.
- - In the following example, the `activity-email-grid` datagrid is used to render the list of activities. This grid is defined in the *datagrids.yml* file:
+- The controller action must accept two parameters: `$entityClass` and `$entityId`.
+- The entity class name can be encoded to avoid routing collisions. That is why you need to use the `oro_entity.routing_helper` service to get the entity by its class name and id.
+- In the following example, the `activity-email-grid` datagrid is used to render the list of activities. This grid is defined in the *datagrids.yml* file:
 
 .. code-block:: php
-
 
     /**
      * This action is used to render the list of emails associated with the given entity
@@ -172,7 +191,7 @@ Keep in mind that:
     </div>
 
 
-Now, you need to bind the controller to your activity entity. It can be done using the ORO entity configuration, for example:
+Now, you need to bind the controller to your activity entity. Use ORO entity configuration, for example:
 
 .. code-block:: php
 
@@ -191,14 +210,14 @@ Now, you need to bind the controller to your activity entity. It can be done usi
     class Email extends ExtendEmail
 
 
-Please note that in the above example, we use the `route` attribute to specify the controller path and the `acl` attribute to set ACL restrictions.
+Please note that the example above contains the `route` attribute to specify the controller path and the `acl` attribute to set ACL restrictions.
 
 Configure UI for an Activity Button
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To add an activity button to the view page of the entity with the assigned activity, you need to do the following:
+To add an activity button to the view page of the entity with the assigned activity:
 
-1. Create two TWIG templates responsible for rendering the button and the link in the dropdown menu. Please note that you should provide both templates, because an action can be rendered either as a button or a link depending on a number of actions, UI theme, device (desktop/mobile), etc.
+1. Create two TWIG templates responsible for rendering the button and the link in the dropdown menu. Please note that you should provide both templates because an action can be rendered either as a button or a link depending on the number of actions, UI theme, device (desktop/mobile), etc.
 
 Here is an example of TWIG templates:
 
@@ -316,7 +335,7 @@ activityLink.html.twig
 Configure Custom Grid for Activity Context Dialog
 -------------------------------------------------
 
-If you want to define a context grid for an entity (e.g., User) in the activity context dialog, add the `context` option in the entity class `@Config` annotation, e.g:
+If you want to define a context grid for an entity (e.g., User) in the activity context dialog, add the `context` option in the entity class `@Config` annotation, for example:
 
 .. code-block:: php
 
@@ -348,8 +367,6 @@ Have a look at the following example of tasks configuration in *datagrids.yml*:
 
 .. code-block:: yaml
 
-
-
     datagrids:
         tasks-grid:
             # extension configuration
@@ -365,7 +382,6 @@ This configuration creates a column named `contexts` and tries to detect the act
 If you wish to configure the column, add a section with the name specified in the `column_name` option:
 
 .. code-block:: yaml
-
 
     datagrids:
         tasks-grid:
@@ -383,7 +399,6 @@ The default one is |OroActivityBundle:Grid:Column/contexts.html.twig|.
 
 .. code-block:: twig
 
-
     {% for item in value %}
         {% spaceless %}
             <span class="context-item">
@@ -397,8 +412,6 @@ The default one is |OroActivityBundle:Grid:Column/contexts.html.twig|.
         {% endspaceless %}
         {{- not loop.last ? ', ' }}
     {% endfor %}
-
-
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
