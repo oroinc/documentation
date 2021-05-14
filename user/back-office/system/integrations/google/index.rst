@@ -14,6 +14,8 @@ Learn more in the following topics:
 * :ref:`Set Up Voice and Video Calls via Hangouts <user-guide-hangouts>`
 * :ref:`Configure Google Tag Manager Integration <gtm-integration>`
 
+.. warning:: Google has retired Google Hangouts and associated services, and this integration is no longer supported.
+
 .. toctree::
    :hidden:
    :maxdepth: 1

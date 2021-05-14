@@ -10,6 +10,8 @@ For those users who make and receive many calls per day and communicate with cli
 
 Additionally, Oro application's integration with :ref:`Google Hangouts <user-guide-hangouts>` enables you to make Hangouts voice or video calls from within your Oro application, providing an advantage for sales and support teams by helping them connect with customers directly.
 
+.. warning:: Google has retired Google Hangouts and associated services, and this integration is no longer supported.
+
 You can make voice calls to a single phone number, or launch a audio / video conference with up to 5 participants. Call data is logged automatically, including any notes made during the call.
 
 Before proceeding to the detailed guidance below, see a short demo on |how to log calls in your Oro application|.
