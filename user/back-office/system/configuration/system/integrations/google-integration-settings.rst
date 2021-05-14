@@ -56,6 +56,8 @@ In the **OAuth 2.0 for email sync** section, check **Enable** to activate sync. 
 Google Hangouts
 ---------------
 
+.. warning:: Google has retired Google Hangouts and associated services, and this integration is no longer supported.
+
 In the :ref:`Google Hangouts <user-guide-hangouts>` section, provide the following details:
 
 * **Enable For Emails** --- Check the box to enable Google Hangouts for emails.

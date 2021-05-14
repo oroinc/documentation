@@ -5,6 +5,8 @@
 Configure Voice and Video Calls via Hangouts in the Back-Office
 ===============================================================
 
+.. warning:: Google has retired Google Hangouts and associated services, and this integration is no longer supported.
+
 Oro application’s integration with Google Hangouts enables you to make Hangouts voice or video calls from within your Oro application, providing an advantage for sales and support teams by helping them connect with customers directly. You can make voice calls to a single phone number, or launch a audio/video conference with up to 5 participants. Call data is logged automatically, including any notes made during the call.
  
 For the integration between Hangouts and your Oro application to be successful, make sure you:
