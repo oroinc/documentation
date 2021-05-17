@@ -1386,7 +1386,7 @@ Links (Dev)
 
 .. |How to Set up Localization, Translation, and Language| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/how-to-setup-localization" target="_blank">How to Set up Localization, Translation, and Language</a>
+   <a href="https://academy.oroinc.com/media-library/how-to-setup-localization" target="_blank">How to Set up Localization, Translation, and Language</a>
 
 .. |Data Localization and Translation (Slideshare)| raw:: html
 
@@ -2870,7 +2870,7 @@ Links (Dev)
 
 .. |Media Library| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library" target="_blank">Media Library</a>
+   <a href="https://academy.oroinc.com/media-library/" target="_blank">Media Library</a>
 
 .. |Upgrade Recommendations| raw:: html
 
