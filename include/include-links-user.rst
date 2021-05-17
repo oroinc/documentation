@@ -9,11 +9,11 @@ Links (User)
 
 .. |how to create and manage contact requests| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/manage-contact-requests" target="_blank">how to create and manage contact requests</a>
+   <a href="https://academy.oroinc.com/media-library/manage-contact-requests" target="_blank">how to create and manage contact requests</a>
 
 .. |how to create and manage events in your Oro application| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/create-manage-events-orocrm#play=lZKiS3TvXNU" target="_blank">how to create and manage events in your Oro application</a>
+   <a href="https://academy.oroinc.com/media-library/create-manage-events-orocrm#play=lZKiS3TvXNU" target="_blank">how to create and manage events in your Oro application</a>
 
 .. |Hangouts Help| raw:: html
 
@@ -21,27 +21,27 @@ Links (User)
 
 .. |how to create and manage tasks| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/create-and-manage-tasks" target="_blank">how to create and manage tasks</a>
+   <a href="https://academy.oroinc.com/media-library/create-and-manage-tasks" target="_blank">how to create and manage tasks</a>
 
 .. |how to create and manage cases in your Oro application| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/create-manage-cases-orocrm" target="_blank">how to create and manage cases in your Oro application</a>
+   <a href="https://academy.oroinc.com/media-library/create-manage-cases-orocrm" target="_blank">how to create and manage cases in your Oro application</a>
 
 .. |how to log calls in your Oro application| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/log-call-orocrm" target="_blank">how to log calls in your Oro application</a>
+   <a href="https://academy.oroinc.com/media-library/log-call-orocrm" target="_blank">how to log calls in your Oro application</a>
 
 .. |how to create customer roles in Oro applications| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-customer-roles" target="_blank">how to create customer roles in Oro applications</a>
+   <a href="https://academy.oroinc.com/media-library/create-customer-roles" target="_blank">how to create customer roles in Oro applications</a>
 
 .. |how to create customer groups in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-customer-groups" target="_blank">how to create customer groups in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/create-customer-groups" target="_blank">how to create customer groups in OroCommerce</a>
 
 .. |how to create customers in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-customer-record" target="_blank">how to create customers in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/create-customer-record" target="_blank">how to create customers in OroCommerce</a>
 
 .. |accounts, contacts and customers| raw:: html
 
@@ -81,7 +81,7 @@ Links (User)
 
 .. |how to create and manage emails| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/create-manage-emails-orocrm" target="_blank">how to create and manage emails</a>
+   <a href="https://academy.oroinc.com/media-library/create-manage-emails-orocrm" target="_blank">how to create and manage emails</a>
 
 .. |OroCommerce Editions| raw:: html
 
@@ -97,7 +97,7 @@ Links (User)
 
 .. |how to work with inventory and warehouses| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/how-to-setup-inventory-and-warehouses" target="_blank">how to work with inventory and warehouses</a>
+   <a href="https://academy.oroinc.com/media-library/how-to-setup-inventory-and-warehouses" target="_blank">how to work with inventory and warehouses</a>
 
 .. |Matomo| raw:: html
 
@@ -113,31 +113,31 @@ Links (User)
 
 .. |how to create a web catalog in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-web-catalog" target="_blank">how to create a web catalog in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/create-web-catalog" target="_blank">how to create a web catalog in OroCommerce</a>
 
 .. |how to create promotions| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions" target="_blank">how to create promotions</a>
+   <a href="https://academy.oroinc.com/media-library/how-to-create-coupons-and-link-them-to-promotions" target="_blank">how to create promotions</a>
 
 .. |how to create a line item promotion| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/create-line-item-promotion" target="_blank">how to create a line item promotion</a>
+   <a href="https://academy.oroinc.com/media-library/create-line-item-promotion" target="_blank">how to create a line item promotion</a>
 
 .. |how to create the Buy X Get Y (Same Product) promotion| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/create-buy-x-get-y-promotion" target="_blank">how to create the Buy X Get Y (Same Product) promotion</a>
+   <a href="https://academy.oroinc.com/media-library/create-buy-x-get-y-promotion" target="_blank">how to create the Buy X Get Y (Same Product) promotion</a>
 
 .. |how to create a shipping promotion| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/how-to-create-shipping-promotions" target="_blank">how to create a shipping promotion</a>
+   <a href="https://academy.oroinc.com/media-library/how-to-create-shipping-promotions" target="_blank">how to create a shipping promotion</a>
 
 .. |how to create coupons and link them to promotions| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions" target="_blank">how to create coupons and link them to promotions</a>
+   <a href="https://academy.oroinc.com/media-library/how-to-create-coupons-and-link-them-to-promotions" target="_blank">how to create coupons and link them to promotions</a>
 
 .. |segment| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/create-segments" target="_blank">segment</a>
+   <a href="https://academy.oroinc.com/media-library/create-segments" target="_blank">segment</a>
 
 .. |Fundamental OroCommerce Training: Organize Products in a Web Catalog| raw:: html
 
@@ -153,31 +153,31 @@ Links (User)
 
 .. |how to create a product family| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-product-attributes-families" target="_blank">how to create a product family</a>
+   <a href="https://academy.oroinc.com/media-library/create-product-attributes-families" target="_blank">how to create a product family</a>
 
 .. |how to create a simple product| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-simple-product" target="_blank">how to create a simple product</a>
+   <a href="https://academy.oroinc.com/media-library/create-simple-product" target="_blank">how to create a simple product</a>
 
 .. |how to create a configurable product| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-configurable-products" target="_blank">how to create a configurable product</a>
+   <a href="https://academy.oroinc.com/media-library/create-configurable-products" target="_blank">how to create a configurable product</a>
 
 .. |how to set up price attributes in OroCommerce| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/setup-price-attributes" target="_blank">how to set up price attributes in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/setup-price-attributes" target="_blank">how to set up price attributes in OroCommerce</a>
 
 .. |how to create product attributes| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-product-attributes-families" target="_blank">how to create product attributes</a>
+   <a href="https://academy.oroinc.com/media-library/create-product-attributes-families" target="_blank">how to create product attributes</a>
 
 .. |how to create a report in your Oro application| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/create-report-orocrm" target="_blank">how to create a report in your Oro application</a>
+   <a href="https://academy.oroinc.com/media-library/create-report-orocrm" target="_blank">how to create a report in your Oro application</a>
 
 .. |creating orders from the shopping list| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-order-shopping-list#play=w7NXMifQZnI" target="_blank">creating orders from the shopping list</a>
+   <a href="https://academy.oroinc.com/media-library/create-order-shopping-list#play=w7NXMifQZnI" target="_blank">creating orders from the shopping list</a>
 
 .. |how to create and work with opportunities| raw:: html
 
@@ -189,7 +189,7 @@ Links (User)
 
 .. |how to configure price lists for customers and customer groups in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/configuring-pricelists" target="_blank">how to configure price lists for customers and customer groups in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/configuring-pricelists" target="_blank">how to configure price lists for customers and customer groups in OroCommerce</a>
 
 .. |Symfony2 expression language| raw:: html
 
@@ -197,7 +197,7 @@ Links (User)
 
 .. |how to create a new order from scratch| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-new-order#play=ztwuz7NX1Y4" target="_blank">how to create a new order from scratch</a>
+   <a href="https://academy.oroinc.com/media-library/create-new-order#play=ztwuz7NX1Y4" target="_blank">how to create a new order from scratch</a>
 
 .. |how to create and work with a lead| raw:: html
 
@@ -205,27 +205,27 @@ Links (User)
 
 .. |how to manage RFQs in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/manage-request-for-quotes" target="_blank">how to manage RFQs in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/manage-request-for-quotes" target="_blank">how to manage RFQs in OroCommerce</a>
 
 .. |how to create tax rules in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-tax-rules" target="_blank">how to create tax rules in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/create-tax-rules" target="_blank">how to create tax rules in OroCommerce</a>
 
 .. |Creating tax codes and jurisdictions in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-tax-code-and-jurisdictions" target="_blank">Creating tax codes and jurisdictions in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/create-tax-code-and-jurisdictions" target="_blank">Creating tax codes and jurisdictions in OroCommerce</a>
 
 .. |Creating tax rules| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/media-library/create-tax-rules" target="_blank">Creating tax rules</a>
+   <a href="https://academy.oroinc.com/media-library/create-tax-rules" target="_blank">Creating tax rules</a>
 
 .. |how to set up a shipping integration in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations" target="_blank">how to set up a shipping integration in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/create-shipping-integrations" target="_blank">how to set up a shipping integration in OroCommerce</a>
 
 .. |how to set up payment method integrations| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-method-integrations" target="_blank">how to set up payment method integrations</a>
+   <a href="https://academy.oroinc.com/media-library/how-to-create-payment-method-integrations" target="_blank">how to set up payment method integrations</a>
 
 .. |GDPR| raw:: html
 
@@ -269,7 +269,7 @@ Links (User)
 
 .. |how to create and manage calendars| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/create-and-manage-calendars#play=fVcOy3TmuQg" target="_blank">how to create and manage calendars</a>
+   <a href="https://academy.oroinc.com/media-library/create-and-manage-calendars#play=fVcOy3TmuQg" target="_blank">how to create and manage calendars</a>
 
 .. |how to create organizations and business units| raw:: html
 
@@ -297,11 +297,11 @@ Links (User)
 
 .. |how to create tags| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/tags-taxonomies" target="_blank">how to create tags</a>
+   <a href="https://academy.oroinc.com/media-library/tags-taxonomies" target="_blank">how to create tags</a>
 
 .. |how to create taxonomies| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/tags-taxonomies" target="_blank">how to create taxonomies</a>
+   <a href="https://academy.oroinc.com/media-library/tags-taxonomies" target="_blank">how to create taxonomies</a>
 
 .. |OroCronBundle| raw:: html
 
@@ -329,11 +329,11 @@ Links (User)
 
 .. |how to create shipping rules in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/create-shipping-rules" target="_blank">how to create shipping rules in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/create-shipping-rules" target="_blank">how to create shipping rules in OroCommerce</a>
 
 .. |how to customize storefront menus in OroCommerce| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/customize-front-end-menus" target="_blank">how to customize storefront menus in OroCommerce</a>
+   <a href="https://academy.oroinc.com/media-library/customize-front-end-menus" target="_blank">how to customize storefront menus in OroCommerce</a>
 
 .. |Oro PayPal Express Integration| raw:: html
 
@@ -489,7 +489,7 @@ Links (User)
 
 .. |how to create a custom field| raw:: html
 
-   <a href="https://www.oroinc.com/orocrm/media-library/create-custom-field" target="_blank">how to create a custom field</a>
+   <a href="https://academy.oroinc.com/media-library/create-custom-field" target="_blank">how to create a custom field</a>
 
 .. |reserved SQL word| raw:: html
 
@@ -513,7 +513,7 @@ Links (User)
 
 .. |how to create payment rules| raw:: html
 
-   <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-rules" target="_blank">how to create payment rules</a>
+   <a href="https://academy.oroinc.com/media-library/how-to-create-payment-rules" target="_blank">how to create payment rules</a>
 
 .. |registered with UPS.com| raw:: html
 
