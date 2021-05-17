@@ -91,7 +91,7 @@ Base Code Style
 Simple Names
 ^^^^^^^^^^^^
 
-.. code-block:: HTML
+.. code-block:: html
 
     <div class="product">
         <p class="product__name">Product name</p>
@@ -106,7 +106,7 @@ The Order of the Attributes
 2. Attributes used for UI customization (e.g., class, data-\*, etc).
 3. Attributes with JSON content.
 
-.. code-block:: none
+.. code-block:: twig
 
     <input name type id
         class
@@ -173,7 +173,7 @@ Comments
 .. code-block:: none
 
     .element {
-        color: $color; /* Use base color */
+        color: $color; // Use base color
     }
 
 Format
@@ -228,7 +228,7 @@ selectors is useful for performance reasons.
 
 **Acceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         ...
@@ -236,7 +236,7 @@ selectors is useful for performance reasons.
 
 **Unacceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     div.element {
         ...
@@ -274,7 +274,7 @@ Use line break for each property declaration.
 
 **Acceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
          position: absolute;
@@ -284,7 +284,7 @@ Use line break for each property declaration.
 
 **Unacceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         position: absolute; top: 0; left: 0;
@@ -353,7 +353,7 @@ Shorthand
 If you use more than 2 parameters (three indents, for example), write
 short:
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         margin: 10px 0 5px;
@@ -361,7 +361,7 @@ short:
 
 If less, then:
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         margin-top: 10px;
@@ -375,7 +375,7 @@ Do not add zero for fractional numbers.
 
 **Acceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         opacity: .5;
@@ -383,7 +383,7 @@ Do not add zero for fractional numbers.
 
 **Unacceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         opacity: 0.5;
@@ -396,7 +396,7 @@ Omit the units for zero value.
 
 **Acceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         margin: 0;
@@ -404,7 +404,7 @@ Omit the units for zero value.
 
 **Unacceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         margin: 0px;
@@ -417,7 +417,7 @@ Use 0 instead of none to specify that a style has no border.
 
 **Acceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
         border: 0;
@@ -425,7 +425,7 @@ Use 0 instead of none to specify that a style has no border.
 
 **Unacceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .element {
        border: none;
@@ -450,7 +450,7 @@ Exceptions are **pseudo elements** and **states**.
 
 **Acceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .block {
         &__element {
@@ -466,7 +466,7 @@ Exceptions are **pseudo elements** and **states**.
 
 **Unacceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .block {
         ...
@@ -491,7 +491,7 @@ them across the block when providing changes to the interface.
 
 **Acceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .block {
         ...
@@ -507,7 +507,7 @@ them across the block when providing changes to the interface.
 
 **Unacceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     .block {
         ...
@@ -596,7 +596,7 @@ from a predefined color scheme.
 
 Example:
 
-.. code-block:: scss
+.. code-block:: none
 
     .block {
         border-color: get-color('additional', 'light');
@@ -628,16 +628,16 @@ Group properties are grouped in the following order:
 7. mixins
 
 Each group should be followed by an empty string.
- 
+
 In CSS, each property can be treated in different groups depending on their
 use: `vertical-align`, `overflow`, `clear`, `resize`,
-`transform`. 
+`transform`.
 
 * |List of all css properties|.
 
 **Acceptable**
 
-.. code-block:: scss
+.. code-block:: none
 
     // variables
     $element-color: #000 !default;
@@ -790,7 +790,7 @@ The Main Mixins and Functions
 
 Helper to clear inner floats.
 
-.. code-block:: scss
+.. code-block:: none
 
     @mixin clearfix {
         &:after {
@@ -809,7 +809,7 @@ Helper to clear inner floats.
 
 Helper for the positioning of pseudo-elements.
 
-.. code-block:: scss
+.. code-block:: none
 
     @mixin after {
         content: '';
@@ -860,7 +860,7 @@ Helper function for organizing z-index
 
 Helper mixin for organizing @media rules
 
-.. code-block:: scss
+.. code-block:: none
 
     @mixin breakpoint($type) {
         $breakpoints: (
@@ -882,15 +882,19 @@ Helper mixin for organizing @media rules
 Best Practices
 --------------
 
-.. code-block:: scss
+.. code-block:: none
 
-    $block-font-title: 'Tahoma' !default;
+    $block-font-title: Tahoma, sans-serif; !default;
     $block-offset: 10px !default;
 
 .. code-block:: none
 
     .block {
         @include clearfix;
+
+        &:hover {
+            background-color: get-color('secondary', 'light');
+        }
 
         &__element {
             float: left;
@@ -900,6 +904,10 @@ Best Practices
             font-size: 14px;
 
             @extend %transition;
+
+            &:hover {
+                border-color: get-color('additional', 'middle');
+            }
 
             // compound class
             &-title {
@@ -913,18 +921,10 @@ Best Practices
             &--first {
                 padding-left: 0;
             }
-
-            &:hover {
-                border-color: get-color('additional', 'middle');
-            }
         }
 
         &__content {
             padding: $list-offset ($list-offset * 2);
-        }
-
-        &:hover {
-            background-color: get-color('secondary', 'light');
         }
 
         // State written &. (the active state of the menu item, for example).

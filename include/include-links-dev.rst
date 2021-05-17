@@ -2600,6 +2600,18 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/build/.eslintrc.yml" target="_blank">.eslintrc.yml</a>
 
+.. |StyleLint| raw:: html
+
+   <a href="https://stylelint.io/" target="_blank">Stylelint</a>
+
+.. |.stylelintrc.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/.stylelintrc.yml" target="_blank">.stylelintrc.yml</a>
+
+.. |.stylelintignore| raw:: html
+
+  <a href="https://github.com/oroinc/platform/blob/master/build/.stylelintignore" target="_blank">.stylelintignore</a>
+
 .. |PHP Coding Standard Fixer| raw:: html
 
    <a href="http://cs.sensiolabs.org/" target="_blank">PHP Coding Standard Fixer</a>

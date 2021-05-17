@@ -28,7 +28,7 @@ By default these settings for list of screen types synchronized with scss breakp
     $breakpoint-mobile: 414px;
     $breakpoint-mobile-small: 360px;
 
-    $oro_breakpoints: (
+    $oro-breakpoints: (
         'desktop': '(min-width: ' + $breakpoint-desktop + ')',
         'tablet': '(max-width: ' +  $breakpoint-tablet + ')',
         'strict-tablet': '(max-width: ' +  $breakpoint-tablet + ') and (min-width: ' + ($breakpoint-tablet-small + 1) + ')',
