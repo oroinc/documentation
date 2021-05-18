@@ -2220,10 +2220,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/merge-configuration.md" target="_blank">Configure an Entity</a>
 
-.. |Fundamentals| raw:: html
-
-   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle#fundamentals" target="_blank">Fundamentals</a>
-
 .. |Abstract File Manager Service| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/GaufretteBundle#orogaufrettebundle" target="_blank">Abstract File Manager Service</a>
@@ -5724,3 +5720,7 @@ Links (Dev)
 .. |DbalTransactionWatcher| raw:: html
 
    <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/DbalTransactionWatcher.php" target="_blank">DbalTransactionWatcher</a>
+
+.. |SerializedFieldsExtension| raw:: html
+
+   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/master/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>
