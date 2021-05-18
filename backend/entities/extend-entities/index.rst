@@ -532,6 +532,7 @@ with href that equals the ``'link'`` option value.
    enums
    associations
    multi-target-associations
+   serialized-fields
 
 
 .. include:: /include/include-links-dev.rst

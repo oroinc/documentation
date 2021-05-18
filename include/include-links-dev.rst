@@ -2224,10 +2224,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/merge-configuration.md" target="_blank">Configure an Entity</a>
 
-.. |Fundamentals| raw:: html
-
-   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle#fundamentals" target="_blank">Fundamentals</a>
-
 .. |Abstract File Manager Service| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/GaufretteBundle#orogaufrettebundle" target="_blank">Abstract File Manager Service</a>
@@ -5699,20 +5695,24 @@ Links (Dev)
 
 .. |MessageFilterInterface| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/MessageFilterInterface.php" target="_blank">MessageFilterInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/MessageQueueBundle/Client/MessageFilterInterface.php" target="_blank">MessageFilterInterface</a>
 
 .. |message builders| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Component/MessageQueue/Client/MessageBuilderInterface.php" target="_blank">message builders</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Component/MessageQueue/Client/MessageBuilderInterface.php" target="_blank">message builders</a>
 
 .. |message buffer| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/MessageBuffer.php" target="_blank">message buffer</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/MessageQueueBundle/Client/MessageBuffer.php" target="_blank">message buffer</a>
 
 .. |BufferedMessageProducer| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/BufferedMessageProducer.php" target="_blank">BufferedMessageProducer</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/MessageQueueBundle/Client/BufferedMessageProducer.php" target="_blank">BufferedMessageProducer</a>
 
 .. |DbalTransactionWatcher| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/DbalTransactionWatcher.php" target="_blank">DbalTransactionWatcher</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/MessageQueueBundle/Client/DbalTransactionWatcher.php" target="_blank">DbalTransactionWatcher</a>
+
+.. |SerializedFieldsExtension| raw:: html
+
+   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/master/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>
