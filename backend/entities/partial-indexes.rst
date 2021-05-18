@@ -22,6 +22,6 @@ To eliminate the negative impact for the MySQL-based instances and automatically
             - 'oro_product'
             - 'idx_oro_product_featured'
         tags:
-            - { name: doctrine.event_listener, event: loadClassMetadata, connection: default }
+            - { name: doctrine.event_listener, event: loadClassMetadata }
 
 The service removes the options that are not supported in MySQL from the index definition.
