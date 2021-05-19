@@ -38,7 +38,7 @@ After installation (described below), a new field called **Storage Type** is dis
   - money
   - percent
 
-To create a serialized field via migration, use |SerializedFieldsExtension|](./Migration/Extension/SerializedFieldsExtension.php). For example:
+To create a serialized field via migration, use |SerializedFieldsExtension|. For example:
 
 .. code-block:: php
 
