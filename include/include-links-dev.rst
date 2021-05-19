@@ -2208,18 +2208,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
-.. |Use Entity Merge| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/getting-started.md" target="_blank">Use Entity Merge</a>
-
-.. |Dependencies Between Entity Merge Bundle Classes (Diagram)| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/classes-diagram.md" target="_blank">Dependencies Between Entity Merge Bundle Classes (Diagram)</a>
-
-.. |Configure an Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/merge-configuration.md" target="_blank">Configure an Entity</a>
-
 .. |Abstract File Manager Service| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/GaufretteBundle#orogaufrettebundle" target="_blank">Abstract File Manager Service</a>

@@ -10,9 +10,7 @@ OroEntityMergeBundle enables application users to merge several entity records i
 Related Documentation
 ---------------------
 
-* |Use Entity Merge|
-* |Dependencies Between Entity Merge Bundle Classes (Diagram)|
-* |Configure an Entity|
+* :ref:`Use Entity Merge <dev-entities-merge>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
