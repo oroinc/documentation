@@ -6,6 +6,8 @@
 Configure Google Settings per Organization
 ==========================================
 
+.. warning:: Google has retired Google Hangouts and associated services, and this integration is no longer supported.
+
 To configure Google Tag Manager and Hangouts settings per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.

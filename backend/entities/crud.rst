@@ -69,15 +69,15 @@ its data:
     namespace AppBundle\Controller;
 
     use AppBundle\Entity\Task;
-    use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+    use Symfony\Component\Routing\Annotation\Route;
     use Symfony\Component\HttpFoundation\Request;
 
     /**
      * @Route("/task")
      */
-    class TaskController extends Controller
+    class TaskController extends AbstractController
     {
         /**
          * @Route("/create", name="app_task_create")

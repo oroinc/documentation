@@ -102,14 +102,12 @@ The controller receives a contact entity and passes it to the view:
         // src/Acme/Bundle/TaskBundle/Controller/TaskController.php
         namespace Acme\Bundle\TaskBundle\Controller;
 
-        use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-        use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-
-        use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
         use Oro\Bundle\ContactBundle\Entity\Contact;
+        use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+        use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+        use Symfony\Component\Routing\Annotation\Route;
 
-        class TaskController extends Controller
+        class TaskController extends AbstractController
         {
             // ...
 

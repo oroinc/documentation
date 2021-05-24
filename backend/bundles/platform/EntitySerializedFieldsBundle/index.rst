@@ -12,7 +12,7 @@ OroEntitySerializedFieldsBundle requires OroPlatform and PHP 7.1 or above.
 Related Documentation
 ---------------------
 
-* |Fundamentals|
+* :ref:`Extend Entities: Serialized Fields <book-entities-extended-entities-serialized-fields>`
 
 
 .. include:: /include/include-links-dev.rst

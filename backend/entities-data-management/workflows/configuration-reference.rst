@@ -19,7 +19,28 @@ Configuration File
 Configuration must be placed into the Resources/config/oro/workflows.yml. file. For example, `src/Acme/DemoWorkflowBundle/Resources/config/oro/workflows.yml`.
 
 The configuration file can be split into parts. All included parts must be placed under the imports section. Imports may be used
-in any part of the workflow configuration.f
+in any part of the workflow configuration.
+
+
+.. _configuration-reference-workflow-imports:
+
+Workflow Imports
+----------------
+
+There are 3 types of imports available:
+
+- resource file import
+- workflow import
+- workflow import with resource option
+
+Resource File Import
+^^^^^^^^^^^^^^^^^^^^
+
+Resource file import is the simplest import of configuration from the specified resource into the current file.
+The imported configuration is recursively merged into the existing one. If the imported configuration contains scalar
+elements with keys that are present in the existing configuration, then they will be overridden by new values.
+If the imported configuration contains numeric array sections that are present in the existing configuration, then
+their elements will be appended after the existing one.
 
 **Example - workflows.yml**
 
@@ -28,44 +49,89 @@ in any part of the workflow configuration.f
 
     imports:
         - { resource: 'workflows/b2b_flow_lead.yml' }
-        - { resource: 'workflows/b2b_flow_sales.yml' }
-        - { resource: 'workflows/b2b_flow_sales_funnel.yml' }
 
-
-**Example - b2b_flow_lead.yml**
-
-.. code-block:: php
-
-
-    imports:
-        - { resource: 'b2b_flow_lead/steps.yml' }
-        - { resource: 'b2b_flow_lead/attributes.yml' }
-        - { resource: 'b2b_flow_lead/transitions.yml' }
-        - { resource: 'b2b_flow_lead/transition_definitions.yml' }
-
-    workflows:
-        b2b_flow_lead:
-            entity: Oro\Bundle\SalesBundle\Entity\Lead
-            entity_attribute: lead
-            start_step: new
-
-.. _configuration-reference-workflow-imports:
-
-Workflow Imports
-----------------
-
-When you need to reuse an existing workflow configuration or its parts, use the `workflow` import directive.
-
-**Import Example (with replace)**
+**Example - workflows/b2b_flow_lead.yml**
 
 .. code-block:: yaml
 
 
     imports:
-        - { workflow: flow_to_import, as: flow_to_recieve, replace: ['transitions.unneeded_transition_from_other_flow']}
+        - { resource: 'imports/steps_transitions.yml' }
+        - { resource: 'imports/transition_definitions.yml' }
+        - { resource: 'imports/extra_transition_definitions.yml' }
+
     workflows:
-        flow_to_recieve:
-            #...
+        b2b_flow_lead:
+            entity: Oro\Bundle\SalesBundle\Entity\Lead
+
+**Example - imports/steps_transitions.yml**
+
+.. code-block:: yaml
+
+
+    workflows:
+        b2b_flow_lead:
+            steps:
+                new:
+                    allowed_transitions: ['qualify']
+                qualified: ~
+            transitions:
+                qualify: ~
+
+**Example - imports/transition_definitions.yml**
+
+.. code-block:: yaml
+
+
+    workflows:
+        b2b_flow_lead:
+            transition_definitions:
+                qualify_definition:
+                    actions:
+                        - '@flash_message': { message: 'Created' }
+
+**Example - imports/extra_transition_definitions.yml**
+
+.. code-block:: yaml
+
+
+    workflows:
+        b2b_flow_lead:
+            transition_definitions:
+                qualify_definition:
+                    actions:
+                        - '@flash_message': { message: 'Qualified' }
+
+**Example - resulting workflow configuration**
+
+.. code-block:: yaml
+
+
+    workflows:
+        b2b_flow_lead:
+            entity: Oro\Bundle\SalesBundle\Entity\Lead
+            steps:
+                new:
+                    allowed_transitions: ['qualify']
+                qualified: ~
+            transitions:
+                qualify: ~
+            transition_definitions:
+                qualify_definition:
+                    actions:
+                        - '@flash_message': { message: 'Created' }
+                        - '@flash_message': { message: 'Qualified' }
+
+
+Workflow Import
+^^^^^^^^^^^^^^^
+
+When you need to reuse an existing workflow configuration or its parts, use the `workflow` import directive. Each imported
+configuration is recursively merged onto the previous one. If the imported configuration contains numeric array sections
+that are already present, then their elements will be appended. Once all imports are processed, the existing
+configuration is merged onto the resulting imported configuration, so scalar values in the existing configuration
+replace values with corresponding keys in the imported configuration, and the numeric arrays' elements in
+the existing configuration are appended after the corresponding numeric arrays elements in the imported configuration.
 
 Options (* - required):
 
@@ -74,11 +140,63 @@ Options (* - required):
 - `replace` * (list) - a list of node paths that should be replaced from imported workflow
 - `resource` (string) - an optional direct file path to load workflow to import from
 
-The example above shows the import of a different workflow configuration (`flow_to_import`) into the current one (`flow_to_recieve`).
+**Example - workflows.yml**
 
-The `flow_to_import` workflow configuration is found across all registered workflows and imported as is (raw configuration without normalization) under node
-`workflows.flow_to_recieve` in the current configuration file. Then, it replaces all nodes defined in the `replace` option to clean all unnecessary segments.
-After that, `flow_to_recieve` from the current config file is recursively merged on top of the imported one. The described operation is performed for each import directive.
+.. code-block:: yaml
+
+
+    imports:
+        - { workflow: b2b_flow_lead, as: b2b_flow_lead_alternative, replace: ['transition_definitions.qualify_definition'] }
+
+    workflows:
+        b2b_flow_lead_alternative:
+            entity: Oro\Bundle\SalesBundle\Entity\AlternativeLead
+            steps:
+                new:
+                    allowed_transitions: ['cancel']
+                cancelled: ~
+            transitions:
+                cancel: ~
+            transition_definitions:
+                qualify_definition:
+                    actions:
+                        - '@flash_message': { message: 'Qualified' }
+                cancel_definition:
+                    actions:
+                        - '@flash_message': { message: 'Cancelled' }
+
+**Example - resulting workflow configuration**
+
+.. code-block:: yaml
+
+
+    workflows:
+        b2b_flow_lead_alternative:
+            entity: Oro\Bundle\SalesBundle\Entity\AlternativeLead
+            steps:
+                new:
+                    allowed_transitions: ['qualify', 'cancel'] # 'cancel' is appended
+                qualified: ~
+                cancelled: ~ # step is added
+            transitions:
+                qualify: ~
+                cancel: ~ # transition is added
+            transition_definitions:
+                qualify_definition: # definition is replaced with the new one
+                    actions:
+                        - '@flash_message': { message: 'Qualified' }
+                cancel_definition: # definition is added
+                    actions:
+                        - '@flash_message': { message: 'Cancelled' }
+
+The example above shows the import of a different workflow configuration (`b2b_flow_lead`) into the current
+one (`b2b_flow_lead_alternative`). As a result, you have the configuration from the `b2b_flow_lead` workflow, but named
+as `b2b_flow_lead_alternative` and with an additional step, transition and transition definition for
+the cancellation flow. At the same time, `qualify_definition` is completely replaced.
+
+The `b2b_flow_lead` workflow configuration is found across all registered workflows and imported as is (raw configuration without normalization) under node
+`workflows.b2b_flow_lead_alternative` in the current configuration file. Then, it replaces all nodes defined in the `replace` option to clean all unnecessary segments.
+After that, `b2b_flow_lead_alternative` from the current config file is recursively merged on top of the imported one. The described operation is performed for each import directive.
 The search for workflow configuration by default is performed across all registered bundles.
 
 Resource Option with Workflow Import
@@ -88,41 +206,79 @@ If you need to load your part of the configuration directly from the file, use t
 
 1. **Resource: Split Parts Reuse**
 
-   .. code-block:: yaml
+    .. code-block:: yaml
 
 
-       imports:
-           - { resource: 'b2b_flow_lead/steps.yml', worklow: b2b_flow_lead, as: new_workflow, replace: [] }
-       workflows:
-           new_workflow:
-              transitions:
-                   #...
-              #other options except steps
+        imports:
+            - { resource: 'imports/steps_transitions.yml', workflow: b2b_flow_lead, as: b2b_flow_lead_alternative, replace: [] }
+            - { resource: 'imports/transition_definitions.yml', workflow: b2b_flow_lead, as: b2b_flow_lead_alternative, replace: [] }
 
-   If you need to reuse part of the workflow with split config by files and don not want to perform all other unnecessary nodes to be specified in `replace` option.
-   For example (as granted above), you are interested in steps only from a different workflow config, and those steps are placed under the `'b2b_flow_lead/steps.yml'` file.
-   So, now you can load them directly by using the `resource` option together with the workflow import options (`workflow`, `as`).
-   And you will have all steps from the `b2b_flow_lead` workflow loaded under your `new_workflow` configuration without any additions.
+        workflows:
+            b2b_flow_lead_alternative:
+                entity: Oro\Bundle\SalesBundle\Entity\AlternativeLead
+                steps:
+                    new:
+                        allowed_transitions: ['cancel']
+                    cancelled: ~
+                transitions:
+                    cancel: ~
+                transition_definitions:
+                    cancel_definition:
+                        actions:
+                            - '@flash_message': { message: 'Cancelled' }
+
+    If you need to reuse part of the workflow with split config by files and do not want to replace all other unnecessary nodes via the `replace` option.
+    Suppose you are interested in basic steps and transitions only from a different workflow config, and those configs are placed under the `'imports/steps_transitions.yml'` file.
+    You can now load them directly by using the `resource` option together with the workflow import options (`workflow`, `as`).
+    You will have all steps from the `b2b_flow_lead` workflow loaded under your `b2b_flow_lead_alternative` configuration without any additions.
+    As a result, you have the basic parts of the `b2b_flow_lead` workflow configuration, but named as `b2b_flow_lead_alternative` and
+    with an additional step, transition and transition definition for the cancellation flow, while `qualify_definition`
+    is reused as is.
+
+    **Example - resulting workflow configuration**
+
+    .. code-block:: yaml
+
+
+        workflows:
+            b2b_flow_lead_alternative:
+                entity: Oro\Bundle\SalesBundle\Entity\AlternativeLead
+                steps:
+                    new:
+                        allowed_transitions: ['qualify', 'cancel'] # 'cancel' is appended
+                    qualified: ~
+                    cancelled: ~ # step is added
+                transitions:
+                    qualify: ~
+                    cancel: ~ # transition is added
+                transition_definitions:
+                    qualify_definition: # definition is reused
+                        actions:
+                            - '@flash_message': { message: 'Qualified' }
+                    cancel_definition: # definition is added
+                        actions:
+                            - '@flash_message': { message: 'Cancelled' }
 
 2. **Resource: Common Template Reuse**
 
-   If you are defining several workflows that are similar to each other, but have different use cases (for example: entities to apply to), use the following approach:
+    If you are defining several workflows that are similar to each other, but have different use cases (for example: entities to apply to), use the following approach:
 
-   .. code-block:: yaml
+    .. code-block:: yaml
 
 
-       imports:
-           - { resource: 'common_flow.yml', workflow: common_flow, as: flow_for_user, replace: [] }
-           - { resource: 'common_flow.yml', workflow: common_flow, as: flow_for_customer, replace: [] }
-       workflows:
-           flow_for_user:
-               entity: User
+        imports:
+            - { resource: 'workflows/b2b_flow_lead.yml', workflow: b2b_flow_lead, as: b2b_flow_lead_alternative, replace: [] }
+            - { resource: 'workflows/b2b_flow_lead.yml', workflow: b2b_flow_lead, as: b2b_flow_lead_priority, replace: [] }
 
-           flow_for_customer:
-               entity: Customer
+        workflows:
+            b2b_flow_lead_alternative:
+                entity: Oro\Bundle\SalesBundle\Entity\AlternativeLead
 
-   Then you can create a file with a workflow which will serve as a template for others (`'common_flow.yml'`).
-   Then, by importing it, you can override its nodes for a particular case (different `entity` but shared remaining configuration).
+            b2b_flow_lead_priority:
+                entity: Oro\Bundle\SalesBundle\Entity\PriorityLead
+
+    When importing the file with a workflow that serves as the basis for others (`'workflows/b2b_flow_lead.yml'`), you can
+    override its nodes for a particular case (different `entity` but shared remaining configuration).
 
 Configuration Loading
 ---------------------
