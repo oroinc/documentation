@@ -191,12 +191,11 @@ Tagging merge strategy:
         oro_entity_merge.strategy.replace:
             class: Oro\Bundle\EntityMergeBundle\Model\Strategy\ReplaceStrategy
             arguments:
-                - '@oro_entity_merge.accessor.delegate'
+                - '@oro_entity_merge.accessor'
             tags:
                 - { name: oro_entity_merge.strategy, priority: 100 }
 
-You can define a `priority` for the strategy which will work with the existing merge modes.
-Thr supported merge strategy with the greatest priority will be used for the merge.
+.. note:: You can specify the priority for the merge strategy. The higher the number of the priority attribute, the more important the strategy is. The priority attribute is optional and defaults to 0.
 
 Tagging merge step:
 
