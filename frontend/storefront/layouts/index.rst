@@ -266,14 +266,14 @@ Add ``@Layout`` annotation to the controller:
 .. code-block:: diff
 
    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-   use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-   + use Oro\Bundle\LayoutBundle\Annotation\Layout;
+   use Symfony\Component\Routing\Annotation\Route;
+   use Oro\Bundle\LayoutBundle\Annotation\Layout;
 
    class UserController extends Controller
    {
        /**
         * @Route("/test", name="demo_layout_test", options={"frontend"=true})
-   +    * @Layout
+        * @Layout
         */
        public function testAction()
        {

@@ -228,9 +228,9 @@ which will serve a view that renders the configured datagrid:
     // src/AppBundle/Controller/TaskController.php
     namespace AppBundle\Controller;
 
-    use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Component\Routing\Annotation\Route;
 
     /**
      * @Route("/task")
