@@ -27,23 +27,25 @@ Method 1: Create a Project with Composer
    .. code-block:: bash
 
       # OroCommerce Community Edition
-      composer create-project oro/commerce-crm-application my_project_name --repository=https://satis.oroinc.com
+      composer create-project oro/commerce-crm-application my_project_name 4.2.3 -n
       # OroCommerce Enterprise Edition
-      composer create-project oro/commerce-crm-enterprise-application my_project_name --repository=https://satis.oroinc.com
+      composer create-project oro/commerce-crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
       # OroCRM Community Edition
-      composer create-project oro/commerce-crm-application my_project_name --repository=https://satis.oroinc.com
+      composer create-project oro/crm-application my_project_name 4.2.3 -n
       # OroCRM Enterprise Edition
-      composer create-project oro/crm-enterprise-application my_project_name --repository=https://satis.oroinc.com
+      composer create-project oro/crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
       # OroPlatform Community Edition
-      composer create-project oro/platform-application my_project_name --repository=https://satis.oroinc.com
+      composer create-project oro/platform-application my_project_name 4.2.3 -n
       # OroCommerce Community Edition for Germany
-      composer create-project oro/commerce-crm-application-de oroapp my_project_name --repository=https://satis.oroinc.com
+      composer create-project oro/commerce-crm-application-de oroapp my_project_name 4.2.3 -n
       # OroCommerce Enterprise Edition for Germany
-      composer create-project oro/commerce-crm-enterprise-application-de my_project_name --repository=https://satis.oroinc.com
+      composer create-project oro/commerce-crm-enterprise-application-de my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
       # OroCommerce Enterprise Edition (without CRM)
-      composer create-project oro/commerce-enterprise-application my_project_name --repository=https://satis.oroinc.com
+      composer create-project oro/commerce-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
 
-   This command creates a new directory called `my_project_name/` that contains an empty project of the most recent stable version.
+   * Replace the ``4.2.3`` with the version to download.
+
+   * This command creates a new directory called `my_project_name/` that contains an empty project.
 
 .. _platform-installation-github-clone:
 .. _clone-the-github-repository:
@@ -56,23 +58,23 @@ Method 2: Use the GitHub Repository
    .. code-block:: bash
 
     # OroCommerce Community Edition
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-application my_project_name
+    git clone -b 4.2.3 https://github.com/oroinc/orocommerce-application my_project_name
     # OroCommerce Enterprise Edition
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-application my_project_name
+    git clone -b 4.2.3 https://github.com/oroinc/orocommerce-enterprise-application my_project_name
     # OroCRM Community Edition
-    git clone -b 4.2.0 https://github.com/oroinc/crm-application my_project_name
+    git clone -b 4.2.3 https://github.com/oroinc/crm-application my_project_name
     # OroCRM Enterprise Edition
-    git clone -b 4.2.0 https://github.com/oroinc/crm-enterprise-application my_project_name
+    git clone -b 4.2.3 https://github.com/oroinc/crm-enterprise-application my_project_name
     # OroPlatform Community Edition
-    git clone -b 4.2.0 https://github.com/oroinc/platform-application my_project_name
+    git clone -b 4.2.3 https://github.com/oroinc/platform-application my_project_name
     # OroCommerce Community Edition for Germany
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-application-de my_project_name
+    git clone -b 4.2.3 https://github.com/oroinc/orocommerce-application-de my_project_name
     # OroCommerce Enterprise Edition for Germany
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-application-de my_project_name
+    git clone -b 4.2.3 https://github.com/oroinc/orocommerce-enterprise-application-de my_project_name
     # OroCommerce Enterprise Edition (without CRM)
-    git clone -b 4.2.0 https://github.com/oroinc/orocommerce-enterprise-nocrm-application my_project_name
+    git clone -b 4.2.3 https://github.com/oroinc/orocommerce-enterprise-nocrm-application my_project_name
 
-   * Replace the ``4.2.0`` with the version to download.
+   * Replace the ``4.2.3`` with the version to download.
 
    * ``my_project_name`` is the directory to clone the application source files into.
 
