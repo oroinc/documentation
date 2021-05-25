@@ -140,7 +140,7 @@ is_system
 **type**: ``boolean``
 
 If this option is set to ``true``, the workflow is treated as built-in which means that it cannot
-be modified or removed via the user inteface.
+be modified or removed via the user interface.
 
 
 start_step

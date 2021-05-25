@@ -43,7 +43,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
       - **Phone** --- Values of the field will be treated by marketing lists as phone numbers.         
 
    * **Show on Grid** --- If set to *Yes*, the field will be displayed in a separate column of the respective grid.
-   * **Show Grid Filter** --- Not available for serialized fields. If set to *Yes*, a corresponding filter will be added to :ref:`grid filters <doc-grids-actions-filters>` by default.
+   * **Show Grid Filter** --- Not available for :ref:`serialized fields <book-entities-extended-entities-serialized-fields>`. If set to *Yes*, a corresponding filter will be added to :ref:`grid filters <doc-grids-actions-filters>` by default.
    * **Show on Form** --- If set to *Yes*, the field value appears as editable on record edit pages.
 
      .. warning:: If the **Show on Form** value has been set to **No** when creating the field, you cannot create or update its values from your Oro application. This is only reasonable for the field values uploaded to the system during synchronization.
@@ -56,7 +56,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
    * **Searchable** --- If set to *Yes*, the entities can be found using the :ref:`search <user-guide-getting-started-search>` by values of this field.
    * **Global Search Boost** --- Available for the product entity in the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option enables you to :ref:`boost <bundle-docs-commerce-website-elastic-search-bundle-attributes-boost>` the value of the field during search.
    * **The Search Result Title** --- If set to *Yes*, the field value will be included into the search result title.
-   * **Auditable** --- Not available for serialized fields. If set to *Yes*, the system will log changes made to this field values when users edit entity records.
+   * **Auditable** --- Not available for :ref:`serialized fields <book-entities-extended-entities-serialized-fields>`. If set to *Yes*, the system will log changes made to this field values when users edit entity records.
    * **Applicable Organizations** --- Defines for what :term:`organizations <Organization>` the custom field will be added to the :term:`entity <Entity>`. **All** is selected by default. Clear the **All** check box to choose specific organizations from the list.
 
    .. caution:: If the **Show on Form** value has been set to *No*, there will be no way to create/update the field values from your Oro application. Thus, such configuration is reasonable only for data which is uploaded to the system during a synchronization.

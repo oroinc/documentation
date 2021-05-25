@@ -271,7 +271,7 @@ The last thing to finish the configuration of your association is to create:
 
 * extensions for the entity config dumper, the entity generator. These extensions instruct the Oro EntityExtendBundle on how to generate Doctrine mapping and PHP code for your association.
 
-* migrations. This extension will add your association using migration scripts (see |Create an Extensions for Database Structure Migrations| for more details).
+* migrations. This extension will add your association using migration scripts (see :ref:`Create an Extensions for Database Structure Migrations <backend-entities-migrations-create-extensions>` for more details).
 
 The following examples show how you can do it:
 
@@ -557,7 +557,7 @@ The last thing to finish the configuration of your association is to create:
 
 * extensions for the entity config dumper and the entity generator. These extensions instruct the Oro EntityExtendBundle how to generate Doctrine mapping and PHP code for your association)
 
-* migrations. This extension will add your association using migration scripts (see |Create an Extensions for Database Structure Migrations| for more details).
+* migrations. This extension will add your association using migration scripts (see :ref:`Create an Extensions for Database Structure Migrations <backend-entities-migrations-create-extensions>` for more details).
 
 The following examples show how you can do it:
 

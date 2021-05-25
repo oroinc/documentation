@@ -1,5 +1,7 @@
 :oro_show_local_toc: false
 
+.. _backend-configuration-annotation-config-field:
+
 @ConfigField
 ============
 
