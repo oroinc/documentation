@@ -10,7 +10,7 @@ Global routing configuration includes the following information:
 
 * Global website URL when reached using secure (https) and insecure (http) connection
 * Options that impact the way metadata for the search engine is generated
-* Pretty URL support (e.g. `/product/view/4` vs `/500-watt-work-light`)
+* Meaningful URL support (e.g. `/product/view/4` vs `/500-watt-work-light`)
 
 .. note:: The :ref:`website level configuration <sys--websites--sysconfig--websites--routing>` has higher priority and overrides this configuration settings.
 
@@ -57,6 +57,7 @@ To change the default global routing settings:
 
    Once you decide on the Web Catalog, click **Save Settings**, and the detailed content tree of the selected web catalog appears under the **Navigation Root** field.
 
+   * **Use Localized Canonical URLs** - When this option is enabled, the system generates canonical URLs using the localized version of URLs slugs (if available). Disabled by default.
    * **Navigation Root** - select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
 
      .. image:: /user/img/system/config_system/visible_content_node.png
