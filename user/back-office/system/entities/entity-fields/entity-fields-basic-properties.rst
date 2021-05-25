@@ -14,7 +14,7 @@ The first step of creating a new entity field is providing information on its ba
 
 1. **Field Name** --- Provide a name of the field that will be used to refer to it in the system. This name must be unique within an entity and it can be neither a |reserved SQL word| nor a |reserved PHP word|.
 
-2. **Storage Type** --- Select how the field is stored in the system:
+2. :ref:`Storage Type <book-entities-extended-entities-serialized-fields>` --- Select how the field is stored in the system:
 
    * **Table Column** --- Use this storage type to store field values in a database table. If this option is selected, the field can be used without the limitations applicable to a serialized field. For this type of fields, :ref:`schema update <schema update>` is required.
 

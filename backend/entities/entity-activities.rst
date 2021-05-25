@@ -6,7 +6,7 @@ Entity Activities
 Enable Activity Association Using Migrations
 --------------------------------------------
 
-Usually, an administrator provides a predefined set of associations between the activity entity and other entities. You can also create this association type using migrations, if necessary.
+Usually, an administrator provides a predefined set of associations between the activity entity and other entities. You can also create this association type using :ref:`migrations <backend-entities-migrations>`, if necessary.
 
 The following example illustrates how to do it:
 

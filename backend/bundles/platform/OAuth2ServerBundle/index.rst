@@ -83,7 +83,7 @@ See :ref:`Manage OAuth Applications <oauth-applications>` and :ref:`Manage Store
 Create OAuth Application via Data Fixtures
 ------------------------------------------
 
-The OAuth applications can be added using data fixtures. For example:
+The OAuth applications can be added using data :ref:`fixtures <backend-entities-fixtures>`. For example:
 
 .. code-block:: php
 

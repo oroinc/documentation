@@ -10,11 +10,8 @@ OroMigrationBundle extends DBAL (database abstraction layer) and provides the ab
 Related Documentation
 ---------------------
 
-* |Database Structure Migrations Overview|
-* |Extensions for Database Structure Migrations|
-* |Create an Extensions for Database Structure Migrations|
-* |Use Data Fixtures|
-* |Use Versioned Data Fixtures|
+* :ref:`Database Structure Migrations Overview <backend-entities-migrations>`
+* :ref:`Use Fixtures <backend-entities-fixtures>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

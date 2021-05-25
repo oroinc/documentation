@@ -94,7 +94,7 @@ ACL protection provides access to files and images of the entity which they are 
 Use Migration Extension (Example)
 ---------------------------------
 
-It is possible to create an image or a file field via migrations using AttachmentExtension. For example:
+It is possible to create an image or a file field via :ref:`migrations <backend-entities-migrations>` using AttachmentExtension. For example:
 
 .. code-block:: php
 

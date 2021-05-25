@@ -2,7 +2,7 @@ Fixtures and Demo Data
 ======================
 
 Before your application contains an interface to create new tasks, you need to load them
-programmatically. In OroPlatform, this can be done by creating classes that are placed in the
+programmatically. In OroPlatform, this can be done by creating :ref:`fixture classes <backend-entities-fixtures>` that are placed in the
 ``Migrations/Data/ORM`` subdirectory of your bundle and that implement the ``FixtureInterface``:
 
 .. code-block:: php
@@ -70,3 +70,6 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
     .. code-block:: bash
 
         $ php bin/console oro:migration:data:load --fixtures-type=demo
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
