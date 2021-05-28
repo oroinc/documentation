@@ -52,6 +52,8 @@ Please be aware that the master catalog product structure impacts the way produc
 
 **Further Practice**
 
-* `Fundamental OroCommerce Online Course <https://oroinc.com/b2b-ecommerce/course/fundamental-orocommerce>`__
+* |Fundamental OroCommerce Online Course|
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
