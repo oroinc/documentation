@@ -9,8 +9,6 @@ Manage dotmailer Integration in the Back-Office
 
 .. begin_include
 
-.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Oro dotmailer extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
-
 Oro application supports integration with dotmailer, allowing you to do the following:
 
 - Map the :ref:`marketing lists <user-guide-marketing-lists>` to address books in dotmailer and keep them synchronized.
