@@ -67,9 +67,6 @@ OroCommerce's shopping lists provide you with a multitude of possibilities that 
 * Duplicating shopping lists
 * Moving all or selected items to a new or existing shopping list using the *Shopping List Items Copy* extension.
 
-.. note::
-       Please note that the |Shopping List Items Copy extension| is only available for select customers. To learn more, you can contact your support representative or fill out our |inquiry form|.
-
 With OroCommerce, online merchants do not need to choose between guest checkouts and customer accounts. You can enable both to ensure a quality shopping experience. Enabling :ref:`guest shopping lists for the storefront <configuration-shopping-list>`, you do not disrupt the checkout process, which is especially important for first-time customers. Unlike registered customers, :ref:`guest users <sys--conf--commerce--guest>` are only limited to one shopping list, but it should be enough for occasional buyers. It is also a good incentive for a guest user to register an account with an OroCommerce webstore to get access to their customer :ref:`account <my-account>` and multiple shopping lists.
 
 .. hint::

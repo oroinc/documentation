@@ -1,16 +1,10 @@
 :oro_documentation_types: OroCRM, OroCommerce
 
 .. _user-guide-dotmailer-configuration:
+.. _user-guide-dotmailer-configuration--dotmailer-side:
 
 Configure dotmailer Integration in the Back-Office
 ==================================================
-
-Install Extension
------------------
-
-To configure dotmailer integration, ensure that you have the dotmailer extension installed in your application. For installation instructions, click |here3|.
-
-.. _user-guide-dotmailer-configuration--dotmailer-side:
 
 Create API Managed User on the dotmailer Side
 ---------------------------------------------

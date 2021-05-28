@@ -139,10 +139,6 @@ Links (User)
 
    <a href="https://academy.oroinc.com/media-library/create-segments" target="_blank">segment</a>
 
-.. |Fundamental OroCommerce Training: Organize Products in a Web Catalog| raw:: html
-
-   <a href="https://oroinc.com/b2b-ecommerce/course/fundamental-orocommerce" target="_blank">Fundamental OroCommerce Training: Organize Products in a Web Catalog</a>
-
 .. |OroCommerce's Video Tutorial: How to Create a web Catalog| raw:: html
 
    <a href="https://www.youtube.com/watch?v=SlW73esqBpk" target="_blank">OroCommerce's Video Tutorial: How to Create a web Catalog</a>
@@ -170,10 +166,6 @@ Links (User)
 .. |how to create product attributes| raw:: html
 
    <a href="https://academy.oroinc.com/media-library/create-product-attributes-families" target="_blank">how to create product attributes</a>
-
-.. |how to create a report in your Oro application| raw:: html
-
-   <a href="https://academy.oroinc.com/media-library/create-report-orocrm" target="_blank">how to create a report in your Oro application</a>
 
 .. |creating orders from the shopping list| raw:: html
 
@@ -631,10 +623,6 @@ Links (User)
 
    <a href="https://test.apruve.com" target="_blank">https://test.apruve.com</a>
 
-.. |here3| raw:: html
-
-   <a href="https://marketplace.orocrm.com/package/orocrm-dotmailer-integration/" target="_blank">here</a>
-
 .. |sign-on| raw:: html
 
    <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">sign-on</a>
@@ -731,10 +719,6 @@ Links (User)
 
    <a href="mailto:it@dpd.com" target="_blank">DPD customer support</a>
 
-.. |inquiry form| raw:: html
-
-   <a href="https://oroinc.com/b2b-ecommerce/contact-us/?repeat=w3tc" target="_blank">inquiry form</a>
-
 .. |Avalara| raw:: html
 
    <a href="https://www.avalara.com/us/en/index.html" target="_blank">Avalara</a>
@@ -779,17 +763,9 @@ Links (User)
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-wirecard-integration/" target="_blank">Wirecard extension</a>
 
-.. |Zendesk extension| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/zendesk-orocrm-integration-2" target="_blank">Zendesk extension</a>
-
 .. |PayPal Express Checkout extension| raw:: html
 
    <a href="https://marketplace.oroinc.com/orocommerce/extension/paypal-express-checkout-for-orocommerce/" target="_blank">PayPal Express Checkout extension</a>
-
-.. |Shopping List Items Copy extension| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/shopping-list-items-copy/" target="_blank">Shopping List Items Copy extension</a>
 
 .. |DPD extension| raw:: html
 
@@ -859,3 +835,26 @@ Links (User)
 
    <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#media-upload" target="_blank">Media Upload</a>
 
+.. |demo extension| raw:: html
+
+   <a href="https://github.com/oroinc/commerce-demo-checkouts" target="_blank">demo extension</a>
+
+.. |the UPS website for more details| raw:: html
+
+   <a href="https://www.ups.com/us/en/help-center/packaging-and-supplies/weight-size.page" target="_blank">the UPS website for more details</a>
+
+.. |the FedEx website for more details| raw:: html
+
+   <a href="https://www.fedex.com/content/dam/fedex/us-united-states/services/GrlPkgGuidelines_fxcom.pdf" target="_blank">the FedEx website for more details</a>
+
+.. |search.allow_expensive_queries| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html#query-dsl-allow-expensive-queries" target="_blank">search.allow_expensive_queries</a>
+
+.. |Fundamental OroCommerce Online Course| raw:: html
+
+   <a href="https://academy.oroinc.com/course/fundamental-orocommerce/" target="_blank">search.allow_expensive_queries</a>
+
+.. |Content Management Online Course| raw:: html
+
+   <a href="https://academy.oroinc.com/course/content-management/" target="_blank">search.allow_expensive_queries</a>

@@ -10,8 +10,6 @@ Oro applications support out of the box integration with Zendesk, enabling you t
 
 .. hint:: While Zendesk integration capabilities are pre-implemented, OroCRM and OroCommerce can be integrated with different third-party systems.
 
-.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Zendesk extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
-
 Generate API token in Zendesk
 -----------------------------
 
