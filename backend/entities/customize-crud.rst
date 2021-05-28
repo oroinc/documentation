@@ -1,8 +1,6 @@
 Customize CRUD Pages
 --------------------
 
-.. https://www.oroinc.com/orocommerce/blog/customizing-crud-orocommerce
-
 OroCommerce equips users and developers with powerful UIs that they can use to manage both simple and complex data entities, including all entity attributes (fields) and relations. As a developer, you can easily enable standard CRUD pages for a new entity, and with the same ease, you can add more fields to any of the entities that you have created before. Just add new entity properties, create a migration script and modify the templates if necessary.
 
 But what if you need to add a few more fields to one of the OroCommerce built-in entities, or to an entity that has been created by somebody else’s extension? Where would you start?
@@ -50,7 +48,7 @@ Installation And Migrations
 
 It might be not necessary for this exercise, but if you plan to distribute your custom bundle, or if you want to deploy it later to another application or machine, you have to create the installation and migration scripts. The installation script should create the required database structures during application installation, and the migration scripts will be used to update your module in the application to a specific version.
 
-.. note:: More information about migrations is available in the |OroMigrationBundle| documentation.
+.. note:: More information about migrations is available in the :ref:`OroMigrationBundle <backend-entities-migrations>` documentation.
 
 We are going to have only one version of our custom bundle in this blog post, so the installation and migration code will look very similar.
 
