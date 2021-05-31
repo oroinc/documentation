@@ -84,7 +84,8 @@ Add a new menu item to the existing featured menu block in the storefront:
 **More on Web Catalogs**
 
 * :ref:`Build a Custom Web Catalog From Scratch (Example) <user-guide--marketing--web-catalog--sample>`
-* |Fundamental OroCommerce Training: Organize Products in a Web Catalog|
+* |Fundamental OroCommerce Online Course|
+* |Content Management Online Course|
 * |OroCommerce's Video Tutorial: How to Create a web Catalog|
 * |OroCommerce Blog: Customizable Web Catalogs in OroCommerce|
 
