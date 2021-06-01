@@ -1,0 +1,65 @@
+{% extends 'OroUIBundle:actions:view.html.twig' %}
+
+{% oro_title_set({params : {"%entity.id%": entity.id }}) %}
+
+{% block navButtons %}
+    {% import 'OroUIBundle::macros.html.twig' as UI %}
+
+    {% placeholder view_navButtons with {entity: entity} %}
+    {% if is_granted('EDIT', entity) %}
+        {{ UI.editButton({
+            'path' : path('acme_wysiwyg_blog_post_update', { id: entity.id }),
+            'entity_label': 'acme.wysiwyg.blogpost.entity_label'|trans
+        }) }}
+    {% endif %}
+{% endblock navButtons %}
+
+{% block pageHeader %}
+    {% set breadcrumbs = {
+        'entity': entity,
+        'indexPath': path('acme_wysiwyg_blog_post_index'),
+        'indexLabel': 'acme.wysiwyg.blogpost.entity_label'|trans,
+        'entityTitle': entity.id
+    } %}
+    {{ parent() }}
+{% endblock pageHeader %}
+
+{% block content_data %}
+    {% import 'OroUIBundle::macros.html.twig' as UI %}
+    {% import 'OroEntityConfigBundle::macros.html.twig' as entityConfig %}
+
+    {% set blogPostContent %}
+        <div class="alert alert-info alert--compact" role="alert">
+            <span class="fa-info alert-icon" aria-hidden="true"></span>
+            {{ 'acme.wysiwyg.blogpost.message.information'|trans }}
+        </div>
+        <div class="cms-content">
+            {{ entity.content|render_content|oro_html_sanitize|raw }}
+        </div>
+    {% endset %}
+
+    {%- set generalInformation -%}
+        <div class="row-fluid form-horizontal">
+            <div class="responsive-block">
+                {{ UI.renderSwitchableHtmlProperty('acme.wysiwyg.blogpost.content.label'|trans, blogPostContent) }}
+            </div>
+            <div class="responsive-block">
+                {{ entityConfig.renderDynamicFields(entity) }}
+            </div>
+        </div>
+    {%- endset -%}
+
+    {% set dataBlocks = [
+        {
+            'title': 'General Information'|trans,
+            'subblocks': [
+                {'data' : [generalInformation]}
+            ]
+        }
+    ] %}
+
+    {% set id = 'blog-post-view' %}
+    {% set data = { 'dataBlocks': dataBlocks } %}
+
+    {{ parent() }}
+{% endblock content_data %}
