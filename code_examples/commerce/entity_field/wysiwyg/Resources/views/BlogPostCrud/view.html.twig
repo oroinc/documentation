@@ -1,9 +1,9 @@
-{% extends 'OroUIBundle:actions:view.html.twig' %}
+{% extends '@OroUI/actions/view.html.twig' %}
 
 {% oro_title_set({params : {"%entity.id%": entity.id }}) %}
 
 {% block navButtons %}
-    {% import 'OroUIBundle::macros.html.twig' as UI %}
+    {% import '@OroUI/macros.html.twig' as UI %}
 
     {% placeholder view_navButtons with {entity: entity} %}
     {% if is_granted('EDIT', entity) %}
@@ -25,8 +25,8 @@
 {% endblock pageHeader %}
 
 {% block content_data %}
-    {% import 'OroUIBundle::macros.html.twig' as UI %}
-    {% import 'OroEntityConfigBundle::macros.html.twig' as entityConfig %}
+    {% import '@OroUI/macros.html.twig' as UI %}
+    {% import '@OroEntityConfig/macros.html.twig' as entityConfig %}
 
     {% set blogPostContent %}
         <div class="alert alert-info alert--compact" role="alert">

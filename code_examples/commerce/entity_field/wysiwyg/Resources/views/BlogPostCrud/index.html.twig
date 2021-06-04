@@ -1,11 +1,11 @@
-{% extends 'OroUIBundle:actions:index.html.twig' %}
+{% extends '@OroUI/actions/index.html.twig' %}
 
 {% set gridName = 'blog-posts-grid' %}
 {% set pageTitle = 'acme.wysiwyg.blogpost.entity_plural_label'|trans %}
 
 {% block navButtons %}
     {% if is_granted('acme_wysiwyg_blog_post_create') %}
-        {% import 'OroUIBundle::macros.html.twig' as UI %}
+        {% import '@OroUI/macros.html.twig' as UI %}
 
         {{ UI.addButton({
             'path': path('acme_wysiwyg_blog_post_create'),
