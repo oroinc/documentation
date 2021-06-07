@@ -130,7 +130,7 @@ Add translations to strings in the template.
 3.1 Create a Template
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 5f62f7ba528d09c17765967bf5e2cc68fb6a2978
+.. oro_integrity_check:: 081b3a1bfcd5ef5feafa78775d8eb1194b18d5a8
 
     .. literalinclude:: /code_examples/commerce/content_widget/copyright/Resources/views/CopyrightContentWidget/view.html.twig
         :language: html
