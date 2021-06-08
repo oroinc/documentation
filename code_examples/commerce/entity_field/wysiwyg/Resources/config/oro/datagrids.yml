@@ -1,0 +1,82 @@
+datagrids:
+    blog-posts-grid:
+        extended_entity_name: 'ACME\Bundle\WysiwygBundle\Entity\BlogPost'
+        acl_resource: acme_wysiwyg_blog_post_view
+        options:
+            entity_pagination: true
+            entityHint: acme.wysiwyg.blogpost.entity_plural_label
+        source:
+            type: orm
+            query:
+                select:
+                    - blogPost.id
+                    - blogPost.content
+                    - blogPost.createdAt
+                    - blogPost.updatedAt
+                from:
+                    - { table: 'ACME\Bundle\WysiwygBundle\Entity\BlogPost', alias: blogPost }
+        columns:
+            id:
+                label: acme.wysiwyg.blogpost.id.label
+            content:
+                label: acme.wysiwyg.blogpost.content.label
+                type: twig
+                frontend_type: html
+                template: ACMEWysiwygBundle:BlogPostCrud:Datagrid/content.html.twig
+            createdAt:
+                label: acme.wysiwyg.blogpost.created_at.label
+                frontend_type: datetime
+            updatedAt:
+                label: acme.wysiwyg.blogpost.updated_at.label
+                frontend_type: datetime
+
+        sorters:
+            columns:
+                id:
+                    data_name: blogPost.id
+                content:
+                    data_name: blogPost.content
+                createdAt:
+                    data_name: blogPost.createdAt
+                updatedAt:
+                    data_name: blogPost.updatedAt
+            default:
+                createdAt: ASC
+        filters:
+            columns:
+                id:
+                    type: number
+                    data_name: blogPost.subject
+                content:
+                    type: string
+                    data_name: blogPost.content
+                createdAt:
+                    type: datetime
+                    data_name: blogPost.createdAt
+                updatedAt:
+                    type: datetime
+                    data_name: blogPost.updatedAt
+        properties:
+            id: ~
+            view_link:
+                type: url
+                route: acme_wysiwyg_blog_post_view
+                params: [ id ]
+            update_link:
+                type: url
+                route: acme_wysiwyg_blog_post_update
+                params: [ id ]
+        actions:
+            view:
+                type: navigate
+                acl_resource: acme_wysiwyg_blog_post_view
+                label: oro.grid.action.view
+                icon: eye
+                link: view_link
+                rowAction: true
+            update:
+                type: navigate
+                acl_resource: acme_wysiwyg_blog_post_update
+                label: oro.grid.action.update
+                icon: edit
+                link: update_link

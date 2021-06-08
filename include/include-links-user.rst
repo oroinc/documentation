@@ -139,10 +139,6 @@ Links (User)
 
    <a href="https://academy.oroinc.com/media-library/create-segments" target="_blank">segment</a>
 
-.. |Fundamental OroCommerce Training: Organize Products in a Web Catalog| raw:: html
-
-   <a href="https://oroinc.com/b2b-ecommerce/course/fundamental-orocommerce" target="_blank">Fundamental OroCommerce Training: Organize Products in a Web Catalog</a>
-
 .. |OroCommerce's Video Tutorial: How to Create a web Catalog| raw:: html
 
    <a href="https://www.youtube.com/watch?v=SlW73esqBpk" target="_blank">OroCommerce's Video Tutorial: How to Create a web Catalog</a>
@@ -170,10 +166,6 @@ Links (User)
 .. |how to create product attributes| raw:: html
 
    <a href="https://academy.oroinc.com/media-library/create-product-attributes-families" target="_blank">how to create product attributes</a>
-
-.. |how to create a report in your Oro application| raw:: html
-
-   <a href="https://academy.oroinc.com/media-library/create-report-orocrm" target="_blank">how to create a report in your Oro application</a>
 
 .. |creating orders from the shopping list| raw:: html
 
@@ -854,3 +846,13 @@ Links (User)
 .. |search.allow_expensive_queries| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html#query-dsl-allow-expensive-queries" target="_blank">search.allow_expensive_queries</a>
+
+.. |Fundamental OroCommerce Online Course| raw:: html
+
+   <a href="https://academy.oroinc.com/course/fundamental-orocommerce/" target="_blank">search.allow_expensive_queries</a>
+
+.. |Content Management Online Course| raw:: html
+
+   <a href="https://academy.oroinc.com/course/content-management/" target="_blank">search.allow_expensive_queries</a>
+
+
