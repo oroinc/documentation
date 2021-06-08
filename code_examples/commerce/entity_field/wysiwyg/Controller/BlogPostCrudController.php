@@ -47,7 +47,7 @@ class BlogPostCrudController extends AbstractController
 
     /**
      * @Route("/create", name="acme_wysiwyg_blog_post_create")
-     * @Template("ACMEWysiwygBundle:BlogPostCrud:update.html.twig")
+     * @Template("@ACMEWysiwyg/BlogPostCrud/update.html.twig")
      * @Acl(
      *      id="acme_wysiwyg_blog_post_create",
      *      type="entity",

@@ -70,7 +70,7 @@ class ProductFormListener
         }
 
         $template = $event->getEnvironment()->render(
-            'OroBlogPostExampleBundle:Product:product_options_view.html.twig',
+            '@OroBlogPostExample/Product/product_options_view.html.twig',
             [
                 'entity' => $product,
                 'productOptions' => $productOptions
@@ -85,7 +85,7 @@ class ProductFormListener
     public function onProductEdit(BeforeListRenderEvent $event)
     {
         $template = $event->getEnvironment()->render(
-            'OroBlogPostExampleBundle:Product:product_options_update.html.twig',
+            '@OroBlogPostExample/Product/product_options_update.html.twig',
             ['form' => $event->getFormView()]
         );
         $this->addBlock($event->getScrollData(), $template, 'oro.blogpostexample.product.section.product_options');

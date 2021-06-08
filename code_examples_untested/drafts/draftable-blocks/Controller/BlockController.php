@@ -49,7 +49,7 @@ class BlockController extends AbstractController
 
     /**
      * @Route("/create", name="acme_cms_block_create")
-     * @Template("ACMECMSBundle:Block:update.html.twig")
+     * @Template("@ACMECMS/Block/update.html.twig")
      * @Acl(
      *      id="acme_cms_block_create",
      *      type="entity",
