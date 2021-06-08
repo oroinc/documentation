@@ -50,7 +50,7 @@ Restrictions for drafts have specific peculiarities. For more information, see t
 Create an Installer/Migration
 -----------------------------
 
-An installer ensures that upon the application installation, the database will contain the entity with the fields defined within bundle.
+An installer :ref:`migration <backend-entities-migrations>` ensures that upon the application installation, the database will contain the entity with the fields defined within bundle.
 Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic for more details.
 
 The fields responsible for the draft must match the interface and have the appropriate types.

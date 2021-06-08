@@ -453,7 +453,7 @@ Use Only Fields with Table Storage in Filtering Expressions
 
 In filtering expression for the price assignment rule, you can use only fields stored as table columns.
 
-Serialized fields cannot be used in the filtering expressions for price lists.
+:ref:`Serialized fields <book-entities-extended-entities-serialized-fields>` cannot be used in the filtering expressions for price lists.
 
 To check a storage type of a field:
 

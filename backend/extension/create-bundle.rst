@@ -116,7 +116,7 @@ That is all --- your bundle is registered and active!
 Generate an Installer for a Bundle
 ----------------------------------
 
-When you have implemented new entities, you want to be sure that upon installing the application, the entities are added to the database. For this, you need to create an installer. You can do it manually, however, it is more convenient to use a dump of the database as a template.
+When you have implemented new entities, you want to be sure that upon installing the application, the entities are added to the database. For this, you need to create an installer :ref:`migration <backend-entities-migrations>`. You can do it manually, however, it is more convenient to use a dump of the database as a template.
 
 To create an installer for AcmeBundle:
 

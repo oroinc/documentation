@@ -1,4 +1,4 @@
-.. _create-custom-entities:
+.. _backend-entities-create-custom-entities:
 
 Create Custom Entities
 ======================

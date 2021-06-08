@@ -212,8 +212,8 @@ Keeping the structure of the master catalog in Products helps adhere to a unifie
 
 **Further Practice**
 
-* `Fundamental OroCommerce Online Course <https://oroinc.com/b2b-ecommerce/course/fundamental-orocommerce>`__
-
+* |Fundamental OroCommerce Online Course|
+* |Content Management Online Course|
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
