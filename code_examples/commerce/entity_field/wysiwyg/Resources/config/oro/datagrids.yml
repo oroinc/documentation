@@ -22,7 +22,7 @@ datagrids:
                 label: acme.wysiwyg.blogpost.content.label
                 type: twig
                 frontend_type: html
-                template: ACMEWysiwygBundle:BlogPostCrud:Datagrid/content.html.twig
+                template: '@ACMEWysiwyg/BlogPostCrud/Datagrid/content.html.twig'
             createdAt:
                 label: acme.wysiwyg.blogpost.created_at.label
                 frontend_type: datetime

@@ -1,6 +1,6 @@
 parameters:
     acme_fast_shipping.integration.type: 'fast_shipping'
-    acme_fast_shipping.admin_view.method_template: 'ACMEFastShippingBundle::method/fastShippingMethodWithOptions.html.twig'
+    acme_fast_shipping.admin_view.method_template: '@@ACMEFastShipping/method/fastShippingMethodWithOptions.html.twig'
 
 services:
     acme_fast_shipping.integration.channel:
