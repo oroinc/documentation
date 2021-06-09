@@ -85,7 +85,7 @@ For more details on how to create a controller and navigation, see the following
 * :ref:`Entity controller <cookbook-entity-controller>`
 * :ref:`Navigation <doc-managing-app-menu>`
 
-.. oro_integrity_check:: 6e5f50428ac12cc66fc5471ee1fa5a480bfca723
+.. oro_integrity_check:: 1c80b3503f42f78551224a2cc94c2e66b2fb0eac
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Controller/BlockController.php
         :language: php
