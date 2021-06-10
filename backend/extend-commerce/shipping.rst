@@ -393,7 +393,7 @@ Add Event Listeners to the System Container
 
 Append the following lines to <bundle_root>/Resources/config/services.yml under the parameters and services sections:
 
-.. oro_integrity_check:: e5b4608f46abe56b90cda56780eee240ce3ffb77
+.. oro_integrity_check:: b9ec220e667ccff5c8a5fcfed945c94d430cc3a9
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
