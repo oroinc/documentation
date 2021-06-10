@@ -2312,6 +2312,26 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#logging-console-commands" target="_blank">Log Console Commands</a>
 
+.. |Database Structure Migrations Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#database-structure-migrations" target="_blank">Database Structure Migrations</a>
+
+.. |Extensions for Database Structure Migrations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#extensions-for-database-structure-migrations" target="_blank">Extensions for Database Structure Migrations</a>
+
+.. |Create an Extensions for Database Structure Migrations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#create-own-extensions-for-database-structure-migrations" target="_blank">Create an Extensions for Database Structure Migrations</a>
+
+.. |Use Data Fixtures| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#data-fixtures" target="_blank">Use Data Fixtures</a>
+
+.. |Use Versioned Data Fixtures| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#versioned-fixtures" target="_blank">Use Versioned Data Fixtures</a>
+
 .. |Menu Data Source| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#menu-data-sources" target="_blank">Menu Data Source</a>
@@ -3955,6 +3975,14 @@ Links (Dev)
 .. |Introduction to Placeholders| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle#introduction-to-placeholders" target="_blank">Introduction to Placeholders</a>
+
+.. |MigrationBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">MigrationBundle</a>
+
+.. |OroMigrationBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">OroMigrationBundle documentation</a>
 
 .. |functional tests| raw:: html
 
@@ -5673,6 +5701,22 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/package/platform/src/Oro/Bundle/MessageQueueBundle/Client/DbalTransactionWatcher.php" target="_blank">DbalTransactionWatcher</a>
 
+.. |Symfony Form Type Options| raw:: html
+
+   <a href="https://symfony.com/doc/current/forms.html#form-type-options" target="_blank">Symfony Form Type Options</a>
+
+.. |AttachmentProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AttachmentBundle/Provider/AttachmentProvider.php" target="_blank">AttachmentProvider</a>
+
+.. |Font Awesome| raw:: html
+
+   <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome</a>
+
+.. |SluggableInterface| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
+
 .. |SerializedFieldsExtension| raw:: html
 
    <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/master/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>
@@ -5832,7 +5876,3 @@ Links (Dev)
 .. |Migration| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Migration.php" target="_blank">Migration</a>
-
-.. |MigrationBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">MigrationBundle</a>
