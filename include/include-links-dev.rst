@@ -5828,3 +5828,19 @@ Links (Dev)
 .. |MigrationBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">MigrationBundle</a>
+
+.. |Symfony Form Type Options| raw:: html
+
+   <a href="https://symfony.com/doc/current/forms.html#form-type-options" target="_blank">Symfony Form Type Options</a>
+
+.. |AttachmentProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AttachmentBundle/Provider/AttachmentProvider.php" target="_blank">AttachmentProvider</a>
+
+.. |Font Awesome| raw:: html
+
+   <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome</a>
+
+.. |SluggableInterface| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
