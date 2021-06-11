@@ -30,12 +30,29 @@ To customize the following tax calculation settings that impact the way OroComme
 5. In the **Calculator** section, select whether to pply taxes per single item in the purchase order or per total for the requested amount of the items of same kind. This may minimize roundoff accumulated error and guard you and your customers against over or under paying.
 
    a) For the **Start Calculation With** option, specify the formula for tax calculation. Tax is calculated either for a unit price or for a product total price. The formula for *Unit price* is:
+
       tax = [ ( unit price * tax rate ) * unit quantity ] + ... + [ ( unit price * tax rate ) * unit quantity ].
       The formula for *Row Total* is:
       tax = [ (unit price * unit quantity) * tax rate ] + ... + [ (unit price * unit quantity) * tax rate ].
+
    b) For the **Start Calculation On** option, select when the rounding off should happen. For **Item**, the taxable amount is rounded up for every item. For **Total**, the total tax is aggregated as is, and the final amount is rounded up.
 
-   c) Set or clear the **Product prices include tax** option. When product prices include tax, the tax amount is subtracted from the unit, product, or total price. Otherwise, the tax is added on top of the unit, product, or total price. See the :ref:`use cases <tax-concept-guide-tax-rules-in-use>` in the Tax Management concept guide.
+   c) Set or clear the **Product Prices Include Tax** option. When product prices include tax, the tax amount is subtracted from the unit, product, or total price. Otherwise, the tax is added on top of the unit, product, or total price.
+
+      .. hint::
+                We use formula (inclTax * taxRate) / (1 + taxRate) to calculate tax. To illustrate this, let's consider an example, where the order total is $200 and tax rate is 10%.
+
+                The formula to calculate tax when the **Product Prices Include Tax** option is set to **Yes** is below:
+
+                1. 1x (item) +1x (item) * 10% (tax) / 100% = 200$, where x is item without tax.
+                2. 1x+0.1x=200$
+                3. (1+0.1)x=200$
+                4. x=200$ / (1+0.1)
+                5. x=181.82$
+
+                The tax in this case is 181.82$*10%=18.18$
+
+                See also the :ref:`use cases <tax-concept-guide-tax-rules-in-use>` in the Tax Management concept guide.
 
 6. In the **Matcher** section:
 
