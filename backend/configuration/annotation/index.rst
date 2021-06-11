@@ -1,4 +1,4 @@
-.. _annotation-config:
+.. _backend-configuration-annotation-config:
 
 Annotations
 ===========
