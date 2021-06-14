@@ -546,6 +546,8 @@ to the ``uploads`` gridFS database.
 
 .. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
 
+.. note:: For OroCommerce 4.1 and 3.1, upload product images into the ``products`` destination (``var/import_export/product_images`` application path). For OroCommerce 4.2+, upload product images via SFTP (application has a configured adapter ``gaufrette_adapter.import_files: local:/mnt/sftproot``; in a CSV file, the path to the file should follow this pattern: ``[sftp-user]/path/to/file/filename.jpg``).
+
 Usage examples:
 
 To display the command description and help, run the following:
