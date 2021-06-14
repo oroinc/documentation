@@ -12,3 +12,4 @@ Demo Environment
    gcp
    azure
    vagrant
+   docker
