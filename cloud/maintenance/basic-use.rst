@@ -12,6 +12,27 @@ To list available OroCloud maintenance management commands, run `orocloud-cli` w
 
 .. warning:: OroCloud maintenance commands may affect the application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
 
+`orocloud.yaml` configuration
+-----------------------------
+
+The `validation` command checks your configuration for syntax errors or wrong configuration values. Use the `files` argument to check custom files or multiple files merge result:
+
+.. code-block:: none
+
+    orocloud-cli config:validate
+    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.prod.yml
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yml /mnt/ocom/app/www/orocloud.prod.yml
+
+Valid changes are applied within 30 minutes or automatically during deployments.
+
+Use  the `help` command to get configuration details or configuration reference:
+
+.. code-block:: none
+
+    orocloud-cli config:help
+    orocloud-cli config:help webserver.limit_whitelist
+    orocloud-cli config:help orocloud_options.webserver.limit_whitelist
+
 Locks
 -----
 
