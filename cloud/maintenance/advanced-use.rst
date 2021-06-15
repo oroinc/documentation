@@ -8,6 +8,24 @@ Deployment and Maintenance Configuration
 
 To modify configuration options for maintenance agent, you need to have the `orocloud.yaml` file placed in the application root. If the application is not yet deployed, modifications can also be made in `/mnt/(ocom|ocrm)/app/orocloud.yaml`.
 
+The `validation` command checks your configuration for syntax errors or wrong configuration values. Use the `files` argument to check custom files or multiple files merge result:
+
+.. code-block:: none
+
+    orocloud-cli config:validate
+    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.prod.yml
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yml /mnt/ocom/app/www/orocloud.prod.yml
+
+Valid changes are applied within 30 minutes or automatically during deployments.
+
+Use the `help` command to get configuration details or configuration reference:
+
+.. code-block:: none
+
+    orocloud-cli config:help
+    orocloud-cli config:help webserver.limit_whitelist
+    orocloud-cli config:help orocloud_options.webserver.limit_whitelist
+
 .. note:: Please do not use double quotes for any variables. Use single quotes instead.
 
 .. note:: Please do not use tabs in `orocloud.yaml` as indentations as they are treated differently by different editors and tools. Since indentation is crucial for  proper interpretation of YAML, **use spaces only**.
@@ -124,7 +142,7 @@ Some options may also be omitted as they are added automatically:
 Application Configuration
 -------------------------
 
-Custom maintenance page, web backend prefix, and consumers debug mode can be configured the following way. Keep in mind that the web_backend_prefix parameter should start with "/" and should not end with "/", for instance '/admin':
+Custom maintenance page, error pages (403, 451, 501, 502), web backend prefix, and consumers debug mode can be configured the following way. Keep in mind that the web_backend_prefix parameter should start with "/" and should not end with "/", for instance '/admin':
 
 .. code-block:: none
 
@@ -133,6 +151,11 @@ Custom maintenance page, web backend prefix, and consumers debug mode can be con
     orocloud_options:
       application:
         maintenance_page: '/mnt/ocom/app/www/maintenance.html'
+        error_pages:
+          403: '/mnt/ocom/app/www/403.html'
+          451: '/mnt/ocom/app/www/451.html'
+          501: '/mnt/ocom/app/www/501.html'
+          502: '/mnt/ocom/app/www/502.html'
         web_backend_prefix: '/my_admin_console_prefix'
         consumers_debug_mode: true
 
