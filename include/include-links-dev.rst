@@ -5876,3 +5876,19 @@ Links (Dev)
 .. |Migration| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Migration.php" target="_blank">Migration</a>
+
+.. |Install Docker| raw:: html
+
+   <a href="https://docs.docker.com/engine/install/" target="_blank">Install Docker</a>
+
+.. |Docker Compose: Install| raw:: html
+
+   <a href="https://docs.docker.com/compose/install" target="_blank">Docker Compose</a>
+
+.. |Smtp service| raw:: html
+
+   <a href="https://github.com/mailhog/MailHog" target="_blank">Smtp service</a>
+
+.. |docker.io/oroinc/commerce-crm-application| raw:: html
+
+   <a href="https://hub.docker.com/r/oroinc/commerce-crm-application" target="_blank">docker.io/oroinc/commerce-crm-application</a>
