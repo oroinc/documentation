@@ -38,8 +38,8 @@ Run Application
 
         docker-compose up -d
 
-    The docker-compose will download the required images and create networks and run containers.
-    To track the logs from the php-fpm container, run `docker-compose logs -f php-fpm`. To get the list of containers, run: `docker-compose ps`.
+   The docker-compose will download the required images and create networks and run containers.
+   To track the logs from the php-fpm container, run `docker-compose logs -f php-fpm`. To get the list of containers, run: `docker-compose ps`.
 
 3. Add a record to file `/etc/hosts`
 
