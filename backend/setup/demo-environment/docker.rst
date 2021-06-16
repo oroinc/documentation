@@ -13,32 +13,26 @@ Prerequisite
 Run Application
 ---------------
 
-1. Download docker compose configuration file
+1. Download the repository with docker compose configuration file
 
    .. code-block:: bash
 
-        mkdir orocommerce-demo
-        cd orocommerce-demo
-        wget https://raw.githubusercontent.com/oroinc/docker/master/docker-compose.yml
+        git clone https://github.com/oroinc/orocommerce-application-demo-docker.git
+        cd orocommerce-application-demo-docker
 
-   or check out the git repository
-
-   .. code-block:: bash
-
-        git clone https://github.com/oroinc/docker.git orocommerce-demo
-        cd orocommerce-demo
-
-2. Restore volumes with required data to launch the application
+   or download the archive file and extract it
 
    .. code-block:: bash
 
-      docker-compose run --rm restore
+      wget https://github.com/oroinc/orocommerce-application-demo-docker/archive/master.tar.gz -O - | tar -xzf -
+      cd orocommerce-application-demo-docker
 
+2. Run application containers
 
-    The configuration is entirely predefined, and you can only change the name of the domain where the application will be located.
-    By default, it is `oro.demo`. If you need to change the domain, create an `.env` file with content `ORO_APP_DOMAIN=my-custom-domain.demo`.
+   The configuration is entirely predefined, and you can only change the name of the domain where the application will be located.
+   By default, it is `oro.demo`. If you need to change the domain, create an `.env` file with content `ORO_APP_DOMAIN=my-custom-domain.demo`.
 
-3. Run application containers
+   Run containers:
 
    .. code-block:: bash
 
@@ -47,13 +41,13 @@ Run Application
     The docker-compose will download the required images and create networks and run containers.
     To track the logs from the php-fpm container, run `docker-compose logs -f php-fpm`. To get the list of containers, run: `docker-compose ps`.
 
-4. Add a record to file `/etc/hosts`
+3. Add a record to file `/etc/hosts`
 
    .. code-block:: bash
 
         127.0.0.1 oro.demo
 
-5. Open the application in a browser: http://oro.demo
+4. Open the application in a browser: ``http://oro.demo``.
 
 Access the Mail Catcher
 -----------------------
@@ -90,12 +84,6 @@ All these services must be running, and MySQL database must be prepared for a fu
         - config:/var/www/oro_app/config
         - public:/var/www/oro_app/public
         - var:/var/www/oro_app/var
-
-
-To remove data, remove docker volumes. For example, to remove ALL volumes, run `docker volume ls -q | xargs -r docker volume rm`.
-
-To manage containers and volumes, use `docker-compose`.
-
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
