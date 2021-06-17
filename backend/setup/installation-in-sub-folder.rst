@@ -13,12 +13,11 @@ For the websites with dedicated domains, you may use default OroCommerce install
 
 To prepare files for the website located in the sub-directory (e.g, /uk), do the following:
 
-1. Copy index.php from *web* directory into the new location (e.g., web/uk/) and modify it to update the relative paths (e.g. adding extra */..* prefix to the path).
+1. Copy index.php from *public* directory into the new location (e.g., web/uk/) and modify it to update the relative paths (e.g. adding extra */..* prefix to the path).
 
    For example:
 
    .. code-block:: php
-
 
        require_once __DIR__.'/../src/AppKernel.php';
 
@@ -26,8 +25,21 @@ To prepare files for the website located in the sub-directory (e.g, /uk), do the
 
    .. code-block:: php
 
-
        require_once __DIR__.'/../../src/AppKernel.php';
+
+   and
+
+   .. code-block:: php
+
+      /** @var \Composer\Autoload\ClassLoader $loader */
+      $loader = require __DIR__.'/../vendor/autoload.php';
+
+   should be changed to
+
+   .. code-block:: php
+
+      /** @var \Composer\Autoload\ClassLoader $loader */
+      $loader = require __DIR__.'/../../vendor/autoload.php';
 
 2. Add WEBSITE_PATH parameter to ServerBag before $response = $kernel->handle($request); This parameter value should be the new website folder name.
 
