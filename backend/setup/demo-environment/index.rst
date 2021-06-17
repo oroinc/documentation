@@ -7,8 +7,10 @@ Demo Environment
    :titlesonly:
    :maxdepth: 1
 
+   docker
    vm
    aws
    gcp
    azure
    vagrant
+
