@@ -12,6 +12,27 @@ To list available OroCloud maintenance management commands, run `orocloud-cli` w
 
 .. warning:: OroCloud maintenance commands may affect the application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
 
+`orocloud.yaml` configuration
+-----------------------------
+
+The `validation` command checks your configuration for syntax errors or wrong configuration values. Use the `files` argument to check custom files or multiple files merge result:
+
+.. code-block:: none
+
+    orocloud-cli config:validate
+    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.prod.yml
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yml /mnt/ocom/app/www/orocloud.prod.yml
+
+Valid changes are applied within 30 minutes or automatically during deployments.
+
+Use  the `help` command to get configuration details or configuration reference:
+
+.. code-block:: none
+
+    orocloud-cli config:help
+    orocloud-cli config:help webserver.limit_whitelist
+    orocloud-cli config:help orocloud_options.webserver.limit_whitelist
+
 Locks
 -----
 
@@ -524,6 +545,8 @@ This can be done with the ``media:upload`` command that allows to upload media f
 to the ``uploads`` gridFS database.
 
 .. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
+
+.. note:: For OroCommerce 4.1 and 3.1, upload product images into the ``products`` destination (``var/import_export/product_images`` application path). For OroCommerce 4.2+, upload product images via SFTP (application has a configured adapter ``gaufrette_adapter.import_files: local:/mnt/sftproot``; in a CSV file, the path to the file should follow this pattern: ``[sftp-user]/path/to/file/filename.jpg``).
 
 Usage examples:
 
