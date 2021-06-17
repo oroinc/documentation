@@ -62,6 +62,7 @@ Use the `is_granted` twig function to check grants in twig templates. To check t
         {# do some job #}
     {% endif %}
 
+.. _backend-security-bundle-field-acl-enable-support:
 
 Enable Support of Field ACL for an Entity
 -----------------------------------------
