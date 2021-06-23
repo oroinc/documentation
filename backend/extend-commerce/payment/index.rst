@@ -507,7 +507,7 @@ Note that the custom message to appear in the block is defined. Do not forget to
 layout.html for the Payment Method Selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: b333ce71832e086f918a64e2b61846e415471cbb
+.. oro_integrity_check:: 3488340424d34118e2ae37588a2ae84c957799ec
 
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_options/layout.yml
      :language: yaml
@@ -527,7 +527,7 @@ layout.html.twig for the Order Review
 layout.html for the Order Review
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: cb75f27db7ab52c1cb7ab79e85283fd1a0477d15
+.. oro_integrity_check:: 3488340424d34118e2ae37588a2ae84c957799ec
 
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_order_submit/layout.yml
      :language: html
