@@ -2,4 +2,4 @@ layout:
     actions:
         - '@setBlockTheme':
             themes:
-                - '@ACMECollectOnDelivery/layouts/default/imports/oro_payment_method_options/layout.html.twig'
+                - 'layout.html.twig'
