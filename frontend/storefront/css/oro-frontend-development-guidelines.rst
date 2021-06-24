@@ -173,7 +173,7 @@ Comments
 .. code-block:: none
 
     .element {
-        color: $color; /* Use base color */
+        color: $color; // Use base color
     }
 
 Format
@@ -628,10 +628,10 @@ Group properties are grouped in the following order:
 7. mixins
 
 Each group should be followed by an empty string.
- 
+
 In CSS, each property can be treated in different groups depending on their
 use: `vertical-align`, `overflow`, `clear`, `resize`,
-`transform`. 
+`transform`.
 
 * |List of all css properties|.
 
@@ -892,6 +892,10 @@ Best Practices
     .block {
         @include clearfix;
 
+        &:hover {
+            background-color: get-color('secondary', 'light');
+        }
+
         &__element {
             float: left;
             width: 25%;
@@ -900,6 +904,10 @@ Best Practices
             font-size: 14px;
 
             @extend %transition;
+
+            &:hover {
+                border-color: get-color('additional', 'middle');
+            }
 
             // compound class
             &-title {
@@ -913,18 +921,10 @@ Best Practices
             &--first {
                 padding-left: 0;
             }
-
-            &:hover {
-                border-color: get-color('additional', 'middle');
-            }
         }
 
         &__content {
             padding: $list-offset ($list-offset * 2);
-        }
-
-        &:hover {
-            background-color: get-color('secondary', 'light');
         }
 
         // State written &. (the active state of the menu item, for example).

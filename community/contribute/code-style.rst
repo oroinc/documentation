@@ -208,18 +208,41 @@ To run the check manually from the command line:
 
     .. code-block:: none
 
-       npm run lint file.js [file.js] [dir] -- [options]
+       npm run eslint file.js [file.js] [dir] -- [options]
 
 .NET Code Style
 ^^^^^^^^^^^^^^^
 
 .NET code MUST follow the Microsoft Managed Recommended Rules. This code style is controlled on the continuous integration with |StyleCop|.
 
-CSS and HTML Code Style
-^^^^^^^^^^^^^^^^^^^^^^^
-There are no defined code styles for the CSS and HTML.
+HTML Code Style
+^^^^^^^^^^^^^^^
 
-It is recommended to use same code style that is used in |Bootstrap|.
+There are no defined code styles for the HTML.
+
+CSS(SCSS) Code Style
+^^^^^^^^^^^^^^^^^^^^
+
+SCSS code style is controlled by the |StyleLint| tool installed on the continuous integration server according to the rules defined in the development repository in the root folder (example: |.stylelintrc.yml|).
+
+We highly recommended developers to configure appropriate code style inspections in the IDE or run these inspections manually before merging changes to the target branches.
+
+.. important::
+    To enable the CSS(SCSS) code style checker in PHPStorm, navigate to **"Languages & Frameworks > Style Sheets > Stylelint"**, enable it, and chose configuration file |.stylelintrc.yml|, |.stylelintignore| from the root repository.
+
+To run the check manually from the command line:
+
+1. First, install the required js-modules in the application directory:
+
+    .. code-block:: none
+
+       npm install
+
+2. Then, run |StyleLint| to check SCSS files for the code-style:
+
+    .. code-block:: none
+
+       npm run stylelint "./src/**/*.scss" -- [options]
 
 **See Also**
 
