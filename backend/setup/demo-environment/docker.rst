@@ -17,15 +17,15 @@ Run Application
 
    .. code-block:: bash
 
-        git clone https://github.com/oroinc/docker-application-demo.git
-        cd docker-application-demo
+        git clone https://github.com/oroinc/docker-demo.git
+        cd docker-demo
 
    or download the archive file and extract it
 
    .. code-block:: bash
 
-      wget https://github.com/oroinc/docker-application-demo/archive/master.tar.gz -O - | tar -xzf -
-      cd docker-application-demo
+      wget https://github.com/oroinc/docker-demo/archive/master.tar.gz -O - | tar -xzf -
+      cd docker-demo
 
 2. Run application containers
 
@@ -41,7 +41,7 @@ Run Application
    The docker-compose will download the required images, create networks and run containers. Application `commerce-crm-application` is used by default.
    You can run other community applications, such as `crm-application`, `platform-application` or `commerce-crm-application-de`.
    To select another application, set a different image in `.env` file, for example:
-   
+
    .. code-block:: bash
 
       ORO_IMAGE=docker.io/oroinc/crm-application
@@ -49,7 +49,7 @@ Run Application
    Alternatively, you can set a variable before the docker-compose command without creating the `.env` file:
 
    .. code-block:: bash
-   
+
       ORO_IMAGE=docker.io/oroinc/crm-application docker-compose up -d
 
    You can also select a different tag (version). For example, set variable `ORO_APP_VERSION=4.2` in `.env` or in the command line.
@@ -89,7 +89,7 @@ This repository provides a Docker Compose configuration file (docker-compose.yam
 .. important:: This deployment is NOT intended for a production environment.
 
 **Docker images with different applications:**
-   
+
 * OroCommerce Community Edition: |docker.io/oroinc/commerce-crm-application|
 * OroCRM Community Edition: |docker.io/oroinc/crm-application|
 * OroPlatform Community Edition: |docker.io/oroinc/platform-application|
