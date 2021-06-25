@@ -9,7 +9,7 @@ Sitemaps help webmasters inform search engines about pages on their sites that a
 
 For multi-language websites, OroSEOBundle provides a *hreflang* attribute on pages that have content in different languages.
 
-In the management console, this bundle provides the following system configuration options:
+In the back-office, this bundle provides the following system configuration options:
 
 * In enterprise edition, there is an ability to disable sitemap generation for specific website with `Enable Sitemap Generation For Website` option of sitemap configuration for the website.
 * Select the domain url that is used in the sitemap. You can call for using either secure or insecure domain. Secure URLs are preferable for the *sitemap.xml* file.

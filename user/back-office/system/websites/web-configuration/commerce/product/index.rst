@@ -11,3 +11,4 @@ Configure Product Settings per Website
    Featured Products <website-featured-products>
    Promotions <website-new-arrivals>
    Configurable Products <website-configurable-products>
+   Customer Settings <website-customer-settings>

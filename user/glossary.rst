@@ -38,6 +38,9 @@ Glossary
    Customer 
       A system :term:`entity <Entity>`. Customers represent businesses, companies or divisions who buy products using the storefront.
 
+   Customer Group
+      Customer groups organize customers into groups and share the price lists, payment and tax-related settings between several customers.
+
    Customer User
       Customer users are actual people who act on behalf of companies (i.e. customers) and have a limited set of permissions which depend on their role and function in the customer organization.
 

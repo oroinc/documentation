@@ -4,7 +4,7 @@ Frontend Sessions and Debug Routes
 Frontend Session
 ----------------
 
-This bundle provides a possibility to configure different session cookie parameters (such as name, path and lifetime) for the storefront and management console. Use ``session`` section for this:
+This bundle provides a possibility to configure different session cookie parameters (such as name, path and lifetime) for the storefront and back-office. Use ``session`` section for this:
 
 .. code-block:: yaml
 

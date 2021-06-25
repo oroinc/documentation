@@ -41,6 +41,8 @@ Now you can set the price attribute value for every product in the **Product Pri
 .. image:: /user/img/products/price_attributes/PriceAttributesInProduct.png
    :alt: Display the location of the product price attributes
 
+.. _user-guide--products--price-attributes-manage:
+
 Manage Price Attributes
 -----------------------
 
@@ -56,16 +58,20 @@ Here, you can create a new price attribute, filter the list of existing ones by 
 
 To remove multiple price attributes, select check boxes in front of the price attributes that you want to delete. At the right end of the list header, click the |IcMore| **More Options** menu and click |IcDelete| **Delete** to remove all selected price attributes.
 
-Find the necessary price attribute in the list and click it.
+Find the necessary price attribute in the list and click on it.
 
 The following information is available immediately:
 
-   * **Price Attribute** -- The name or label of the price attribute.
+* **Price Attribute** -- The name or label of the price attribute.
 
-   * **Field Name** -- The name of the field in the code/database that represents the price attribute.
+* **Field Name** -- The name of the field in the code/database that represents the price attribute.
 
-   * **Currencies** -- The currencies this price attribute is supported for.
+* **Currencies** -- The currencies this price attribute is supported for.
 
+* **Enabled in Product Export** -- If enabled, this price attribute will be used in the :ref:`storefront product listing export <frontstore-guide--navigation-product-data-export>`.
+
+.. image:: /user/img/products/price_attributes/price-attribute-edit.png
+   :alt: Price attribute edit page
 
 .. _doc--price-attributes--actions--edit:
 

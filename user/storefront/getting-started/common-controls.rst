@@ -252,5 +252,24 @@ To save a search result:
    .. image:: /user/img/storefront/navigation/saved-search-acc.png
       :alt: Saved search in the customer user account
 
+.. _frontstore-guide--navigation-product-data-export:
+
+Product Data Export
+-------------------
+
+Registered customer users can export products, their prices, and price tiers into a .csv file from the storefront product collection and search results pages.
+
+To download a product data .csv file:
+
+1. Click on the download icon on the right next to the items per page and filters.
+
+   .. image:: /user/img/storefront/navigation/export.png
+      :alt: Export product data from the storefront product collection page
+
+2. Check your inbox for instructions on how to download the file.
+
+   .. image:: /user/img/storefront/navigation/export-download.png
+      :alt: Download export results
+
 .. include:: /include/include-images.rst
    :start-after: begin

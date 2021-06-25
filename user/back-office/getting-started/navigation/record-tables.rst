@@ -144,6 +144,46 @@ The controls available for fields depend on the field type.
 .. _doc-grids-actions-grid-views-set-default:
 .. _doc-grids-actions-grid-views-rename:
 
+Mass Actions in Tables
+----------------------
+
+With the help of checkboxes preceding individual records, you can perform mass actions on all or selected records.
+
+For example:
+
+* Mass delete and edit some records
+
+.. image:: /user/img/getting_started/records/grids/grids_delete_bulk.png
+   :alt: Delete the selected contact records
+
+* Mass merge contacts, accounts and campaigns
+
+.. image:: /user/img/getting_started/records/grids/grids_merge.png
+   :alt: Merge the selected contact records
+
+* Select which products to add to a product collection content variant in a web catalog
+
+.. image:: /user/img/getting_started/records/grids/web-catalog.png
+
+* Select what products to qualify for a promotion
+
+.. image:: /user/img/getting_started/records/grids/grid-promotions.png
+
+* Choose what products to include to a master catalog category.
+
+.. image:: /user/img/getting_started/records/grids/master-catalog-grid.png
+
+
+.. note:: These checkboxes are for mass actions only and **do not affect records during export**.
+
+To perform mass actions on records:
+
+1. Select the checkboxes next to the records you want apply a mass action to.
+2. Click the ellipsis menu at the right end of the grid table and select the required action.
+
+.. image:: /user/img/getting_started/records/grids/mass-actions.png
+   :alt: Mass actions in grids
+
 Create Saved Table Views (Grid Views)
 -------------------------------------
 

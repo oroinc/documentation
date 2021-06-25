@@ -19,7 +19,7 @@ OroPlatform already contains a SearchBundle and this chapter describes the diffe
 
 The first and the main difference is the way index is stored. The website (frontend) index storage is separated from the platform index storage and may be moved to a separate server and thus may be properly scaled.
 
-Next important difference is in the information they control. The platform index handles the backend information (e.g. management console), and the website index contains information about the frontend (e.g., storefront). As a consequence, platform index is usually smaller and the search and indexation speed is well balanced, while frontend index trades off the indexation speed for a faster search.
+Next important difference is in the information they control. The platform index handles the backend information (e.g. back-office), and the website index contains information about the frontend (e.g., storefront). As a consequence, platform index is usually smaller and the search and indexation speed is well balanced, while frontend index trades off the indexation speed for a faster search.
 
 Though indexation might be a little slower comparing to backend index, frontend index is more flexible in terms of extendability. It is event based, and there are several events that
 allow to customize different parts of search and indexation. 

@@ -129,7 +129,7 @@ Audit of Login Attempts
 
 .. note:: This is a Platform Enterprise feature.
 
-To simplify investigation of any security-related incidents, the application keeps track of all management console login attempts and the following related security events:
+To simplify investigation of any security-related incidents, the application keeps track of all back-office login attempts and the following related security events:
 
 * Successful login
 * Unsuccessful login
