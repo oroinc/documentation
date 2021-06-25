@@ -49,6 +49,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
      .. warning:: If the **Show on Form** value has been set to **No** when creating the field, you cannot create or update its values from your Oro application. This is only reasonable for the field values uploaded to the system during synchronization.
 
    * **Show on View** --- If set to *Yes*, the field is displayed on record view pages.
+   * **Exportable** --- If set to *Yes*, the value of this field will be present in the :ref:`product data export file in the storefront <sys--commerce--product--customer-settings>`.
    * **Priority** --- Defines an order of custom fields on entity record view, edit, and create pages, and on the respective grid. 
   
       Custom fields are always displayed one after another, usually below the system fields. If no priority is defined or the defined priority is 0, the fields will be displayed in the order in which they have been added to the system. The fields with a higher priority (a bigger value) will be displayed before the fields with a lower priority.

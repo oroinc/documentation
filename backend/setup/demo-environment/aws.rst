@@ -179,7 +179,7 @@ For additional information, please see the AWS guide |Connecting to Your Linux I
 Manage the EC2 Instance
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-With the help of the EC2 management console, you can:
+With the help of the EC2 back-office, you can:
 
 - Create additional instances based on the Oro application AMIs
 - Connect to the running instances using a Java SSH client directly from your browser

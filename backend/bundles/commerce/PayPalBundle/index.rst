@@ -3,7 +3,7 @@
 OroPayPalBundle
 ===============
 
-OroPayPalBundle adds |PayPal| integration to the OroCommerce application. For the OroCommerce management console administrator, the bundle provides the ability to enable and configure PayPal payment methods for customer orders. Once PayPal payment methods are enabled, customer users can pay for orders using their existing PayPal account or credit and debit cards.
+OroPayPalBundle adds |PayPal| integration to the OroCommerce application. For the OroCommerce back-office administrator, the bundle provides the ability to enable and configure PayPal payment methods for customer orders. Once PayPal payment methods are enabled, customer users can pay for orders using their existing PayPal account or credit and debit cards.
 
 Testing PayPal Response
 -----------------------

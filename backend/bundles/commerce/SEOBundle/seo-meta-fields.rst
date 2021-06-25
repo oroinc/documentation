@@ -1,7 +1,7 @@
 SEO Meta Fields
 ===============
 
-The OroSEOBundle adds functionality both on the management console and in the storefront. This is done through the extension of existing entities from the platform by adding a new SEO section on the view/edit pages from admin side and adding meta tags in the html code of the configured pages.
+The OroSEOBundle adds functionality both on the back-office and in the storefront. This is done through the extension of existing entities from the platform by adding a new SEO section on the view/edit pages from admin side and adding meta tags in the html code of the configured pages.
 
 The following entities and their corresponding storefront pages have been extended with this the SEO functionality:
 
@@ -10,7 +10,7 @@ The following entities and their corresponding storefront pages have been extend
 - LandingPage (OroCMSBundle) with admin view and edit
 - ContentNode (OroWebCatalogBundle) with admin view and edit
 
-In the management console, for extended entity (e.g., Product, Category, LandingPage, or ContentNode) view and edit pages, the new SEO section with the SEO fields title, description and keywords was added. These SEO options apply to the currently viewed entity and may be modified for all locales.
+In the back-office, for extended entity (e.g., Product, Category, LandingPage, or ContentNode) view and edit pages, the new SEO section with the SEO fields title, description and keywords was added. These SEO options apply to the currently viewed entity and may be modified for all locales.
 
 On the storefront, the SEO fields with their values in the HTML of website pages for the search engines to pick them up.
 

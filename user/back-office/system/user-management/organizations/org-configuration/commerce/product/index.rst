@@ -9,3 +9,4 @@ Configure Product Settings per Organization
    Featured Products <organization-featured-products>
    Promotions <organization-new-arrivals>
    Configurable Products <organization-configurable-products>
+   Customer Settings <organization-customer-settings>

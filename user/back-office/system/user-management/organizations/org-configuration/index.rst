@@ -56,6 +56,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Featured Products <sys--users--organization--commerce--products--featured-products>`
     * :ref:`Promotions <sys--users--organization--commerce--products--new-arrivals>`
     * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products--organization>`
+    * :ref:`Customer Settings <sys--users--organization--commerce--products--customer-settings>`
 
   * Sales
 
