@@ -5873,3 +5873,14 @@ Links (Dev)
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application" target="_blank">docker.io/oroinc/commerce-crm-application</a>
 
+.. |docker.io/oroinc/crm-application| raw:: html
+
+   <a href="https://hub.docker.com/r/oroinc/crm-application" target="_blank">docker.io/oroinc/crm-application</a>
+   
+.. |docker.io/oroinc/platform-application| raw:: html
+
+   <a href="https://hub.docker.com/r/oroinc/platform-application" target="_blank">docker.io/oroinc/platform-application</a>
+
+.. |docker.io/oroinc/commerce-crm-application-de| raw:: html
+
+   <a href="https://hub.docker.com/r/oroinc/commerce-crm-application-de" target="_blank">docker.io/oroinc/commerce-crm-application-de</a>

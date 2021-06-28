@@ -1,7 +1,7 @@
 .. _demo-environment-docker:
 
-Docker for OroCommerce CE
-=========================
+Docker
+======
 
 Prerequisite
 ------------
@@ -17,15 +17,15 @@ Run Application
 
    .. code-block:: bash
 
-        git clone https://github.com/oroinc/orocommerce-application-demo-docker.git
-        cd orocommerce-application-demo-docker
+        git clone https://github.com/oroinc/docker-demo.git
+        cd docker-demo
 
    or download the archive file and extract it
 
    .. code-block:: bash
 
-      wget -O - https://github.com/oroinc/orocommerce-application-demo-docker/archive/master.tar.gz | tar -xz
-      cd orocommerce-application-demo-docker-master
+      wget https://github.com/oroinc/docker-demo/archive/master.tar.gz -O - | tar -xzf -
+      cd docker-demo
 
 2. Run application containers
 
@@ -38,9 +38,23 @@ Run Application
 
         docker-compose up -d
 
-   The docker-compose will download the required images and create networks and run containers.
-   To track the logs from the php-fpm container, run `docker-compose logs -f php-fpm`. To get the list of containers, run: `docker-compose ps`.
+   The docker-compose will download the required images, create networks and run containers. Application `commerce-crm-application` is used by default.
+   You can run other community applications, such as `crm-application`, `platform-application` or `commerce-crm-application-de`.
+   To select another application, set a different image in `.env` file, for example:
+   
+   .. code-block:: bash
 
+      ORO_IMAGE=docker.io/oroinc/crm-application
+
+   Alternatively, you can set a variable before the docker-compose command without creating the `.env` file:
+
+   .. code-block:: bash
+   
+      ORO_IMAGE=docker.io/oroinc/crm-application docker-compose up -d
+
+   You can also select a different tag (version). For example, set variable `ORO_APP_VERSION=4.2` in `.env` or in the command line.
+
+   To track the logs from the php-fpm container, run `docker-compose logs -f php-fpm`. To get the list of containers, run: `docker-compose ps`.
 
 3. Add a record to file `/etc/hosts`
 
@@ -70,21 +84,19 @@ If you deployed the application before, pull up fresh images with `docker-compos
 About this Project
 ------------------
 
-This repository provides a Docker image designed to set up Docker containers for OroCommerce Community Edition application Demo and docker-compose.yml file to manage the containers.
+This repository provides a Docker Compose configuration file (docker-compose.yaml) and demonstrate how you can run different applications and required services in containers. We provide images with the Community Edition of Oro applications in the public Docker Hub.
 
 .. important:: This deployment is NOT intended for a production environment.
 
-**Docker image:** |docker.io/oroinc/commerce-crm-application|
+**Docker images with different applications:**
+
+* OroCommerce Community Edition: |docker.io/oroinc/commerce-crm-application|
+* OroCRM Community Edition: |docker.io/oroinc/crm-application|
+* OroPlatform Community Edition: |docker.io/oroinc/platform-application|
+* OroCommerce Community Edition for Germany: |docker.io/oroinc/commerce-crm-application-de|
 
 One image is used to run containers in several roles: web server, php-fpm, consumer, websocket server, cron service.
-All these services must be running, and MySQL database must be prepared for a full-fledged application. An ORO image with the application creates three volumes to keep data:
-
-.. code-block:: bash
-
-      volumes:
-        - config:/var/www/oro_app/config
-        - public:/var/www/oro_app/public
-        - var:/var/www/oro_app/var
+All these services must be running, and MySQL database must be prepared for a full-fledged application.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
