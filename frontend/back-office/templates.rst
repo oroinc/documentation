@@ -31,10 +31,7 @@ from the DataGridBundle, create a new template file located at
 .. note::
    Keep in mind that templates that are referenced by twig namespaces with ``@``
    (ex. ``@Twig/Exception/exception.html.twig``) can be overridden in both
-   ``src/Resources/`` and ``templates/bundles``. As most of the templates are still
-   referenced by deprecated Symfony notation (ex. ``TwigBundle:Exception:exception.html.twig``), they
-   can be overridden only in ``src/Resources``. To be on the safe side, it is recommended
-   to override everything only in ``src/Resources``.
+   ``src/Resources/`` and ``templates/bundles``.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
