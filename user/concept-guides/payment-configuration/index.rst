@@ -24,7 +24,7 @@ Payment Integration
 
 In OroCommerce, payment methods are conditions required for a sale to be completed. These can include cash in advance, money orders, authorized payment apps like PayPal, and more. To bind any payment method to the checkout process, you need to set up an integration with a payment service that you select.
 
-OroCommerce works with the following payment methods out-of-the-box:
+OroCommerce works with the following payment methods:
 
 * :ref:`Check/Money Order <user-guide--payment--check-money-order>`
 
@@ -58,7 +58,7 @@ OroCommerce works with the following payment methods out-of-the-box:
 
   CyberSource is a payment gateway solution that allows merchants to safely accept and effectively process payments.
 
-.. hint:: Check out |OroCommerce's Extension Marketplace| to download other payment extensions that you can pair with your OroCommerce applications.
+.. hint:: The default OroCommerce application includes the following payment methods out-of-the-box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extension Marketplace| to download other payment extensions that you can pair with your OroCommerce applications.
 
 Payment Rules
 -------------
