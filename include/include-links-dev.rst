@@ -1375,11 +1375,6 @@ Links (Dev)
 
    <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/public/js/formatter/address.js" target="_blank">address.js</a>
 
-.. |OroTranslationBundle Documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle" target="_blank">OroTranslationBundle Documentation</a>
-
-
 .. |How to Set up Localization, Translation, and Language| raw:: html
 
    <a href="https://academy.oroinc.com/media-library/how-to-setup-localization" target="_blank">How to Set up Localization, Translation, and Language</a>
@@ -2443,26 +2438,6 @@ Links (Dev)
 .. |Introduction to Themes| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties" target="_blank">Introduction to Themes</a>
-
-.. |Debug Translator and JS Translations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/configuration.md" target="_blank">Debug Translator and JS Translations</a>
-
-.. |Data Fixtures for Translatable Entities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/data_fixtures.md" target="_blank">Data Fixtures for Translatable Entities</a>
-
-.. |Translation Bundle Form Types| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/form_types.md" target="_blank">Form Types</a>
-
-.. |Translation Strategies| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/translation_strategies.md" target="_blank">Translation Strategies</a>
-
-.. |Translation Context Resolver| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/context_resolver.md" target="_blank">Translation Context Resolver</a>
 
 .. |Inspect with Built-in Dev Tools in a Browser| raw:: html
 
@@ -5876,6 +5851,18 @@ Links (Dev)
 .. |Migration| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Migration.php" target="_blank">Migration</a>
+
+.. |Symfony Translations| raw:: html
+
+   <a href="https://symfony.com/doc/current/translation.html" target="_blank">Symfony Translations</a>
+
+.. |TranslationStrategyInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TranslationBundle/Strategy/TranslationStrategyInterface.php" target="_blank">TranslationStrategyInterface</a>
+
+.. |entity form type| raw:: html
+
+   <a href="http://symfony.com/doc/current/reference/forms/types/entity.html" target="_blank">entity form type</a>
 
 .. |Install Docker| raw:: html
 

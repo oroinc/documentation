@@ -60,11 +60,11 @@ On the **Email Configuration** page, define options applied to all the emails in
      * *Enable IMAP* --- Select the check box to enable retrieving email messages
      * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
      * *IMAP Port* --- Provide the IMAP Port, e.g. 993
-     * *Encryption* --- Select the encryption type, SSL or TSL.
+     * *Encryption* --- Select the encryption type, SSL or TLS.
      * *Enable SMTP* --- Select the check box to enable sending messages
      * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
      * *SMTP Port* --- Provide the SMTP port, e.g. 587
-     * *Encryption* --- Select the encryption type, SSL or TSL.
+     * *Encryption* --- Select the encryption type, SSL or TLS.
      * *User* --- Provide your email address
      * *Password* --- Provide your password
 

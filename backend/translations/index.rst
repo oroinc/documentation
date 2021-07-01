@@ -15,4 +15,7 @@ To lean more about translating static and dynamic content, localization paramete
 .. toctree::
 
    translations
+   configuration
+   Data Fixtures <data-fixtures>
+   migrations
    localization
