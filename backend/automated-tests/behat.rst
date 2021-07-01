@@ -138,7 +138,6 @@ Install dev dependencies using the following command:
 
 .. code-block:: bash
 
-
    composer install
 
 Application Initial State
@@ -288,7 +287,6 @@ You can manually configure test suite for a bundle in the application behat conf
 
 .. code-block:: yaml
 
-
     default: &default
       suites:
         AcmeDemoBundle:
@@ -304,7 +302,6 @@ You can manually configure test suite for a bundle in the application behat conf
 or in a bundle behat configuration ``{BundleName}/Tests/Behat/behat.yml``:
 
 .. code-block:: yaml
-
 
     oro_behat_extension:
       suites:
@@ -345,7 +342,6 @@ All elements must be described in ``{BundleName}/Tests/Behat/behat.yml`` the fol
 
 .. code-block:: yaml
 
-
     oro_behat_extension:
       elements:
         Login:
@@ -363,7 +359,6 @@ where:
 
    .. code-block:: php
 
-
       $this->elementFactory->createElement('Login')
 
 2. ``selector`` defines how web driver shall find the element on the page.
@@ -371,7 +366,6 @@ where:
    XPath selector is also supported and may be provided with the following configuration:
 
    .. code-block:: yaml
-
 
        selector:
            type: xpath
@@ -390,7 +384,6 @@ By default, tests use the |named field selector| to map form fields. Name field 
 
 .. code-block:: yaml
 
-
     oro_behat_extension:
       elements:
         Payment Method Config Type Field:
@@ -408,7 +401,6 @@ By default, tests use the |named field selector| to map form fields. Name field 
 Now you should implement the element's ``setValue`` method:
 
 .. code-block:: php
-
 
     <?php
     namespace Oro\Bundle\PaymentBundle\Tests\Behat\Element;
@@ -436,7 +428,6 @@ Now you can use it in a standard step:
 
 .. code-block:: gherkin
 
-
     Feature: Payment Rules CRUD
       Scenario: Creating Payment Rule
         Given I login as administrator
@@ -451,7 +442,6 @@ Embedded Form Mappings
 Sometimes, a form appears in the iframe. Behat can switch to the iframe by its id. To fill in the form in the iframe correctly, specify the iframe id in the form options:
 
 .. code-block:: yaml
-
 
       oro_behat_extension:
         elements:
@@ -475,7 +465,6 @@ Typical Page configuration:
 
 .. code-block:: yaml
 
-
     oro_behat_extension:
       pages:
         UserProfileView:
@@ -485,7 +474,6 @@ Typical Page configuration:
 Sample Page class:
 
 .. code-block:: php
-
 
     <?php
 
@@ -537,7 +525,6 @@ You can create any number of entities in the feature tests. The ``FixtureContext
 You use both faker and :ref:`entity references <behat-entity-references>` in inline fixtures.
 
 .. code-block:: bash
-
 
     Given the following contacts:
       | First Name | Last Name | Email     |

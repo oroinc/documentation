@@ -181,7 +181,7 @@ In the Oro application, you can use a new Twig template {placeholder} token/tag 
 [Oro] Customization by Modifying the Database Schema
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 
-Use the Oro data migration mechanism to fine-tune the database schema and load initial data to the Oro application. The mechanism that is enabled in the |MigrationBundle| uses specific PHP files and classes (migrations and fixtures) that help you to fulfill:
+Use the Oro data migration mechanism to fine-tune the database schema and load initial data to the Oro application. The mechanism that is enabled in the :ref:`MigrationBundle <backend-entities-migrations>` uses specific PHP files and classes (migrations and fixtures) that help you to fulfill:
 
 * **Data model changes:** Modify the database schema to fit your custom business process
 * **Data initialization:** Add required initial data to the database

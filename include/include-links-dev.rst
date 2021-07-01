@@ -1278,7 +1278,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/UserBundle/Resources/config/validation.yml" target="_blank">predefined validation constraints</a>
 
-
 .. |OroDataAuditBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DataAuditBundle" target="_blank">OroDataAuditBundle</a>
@@ -2617,7 +2616,7 @@ Links (Dev)
 
 .. |OroPlatform issue tracker| raw:: html
 
-   <a href="https://github.com/orocrm/platform/issues?q=" target="_blank">OroPlatform issue tracker</a>
+   <a href="https://github.com/oroinc/platform/issues?q=" target="_blank">OroPlatform issue tracker</a>
 
 .. |OroCommerce issue tracker| raw:: html
 
@@ -2870,6 +2869,7 @@ Links (Dev)
 .. |ActivityListBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle" target="_blank">ActivityListBundle</a>
+
 
 .. |Font Awesome Icon| raw:: html
 
@@ -3169,7 +3169,7 @@ Links (Dev)
 
 .. |OAuth 2.0 Server Authorization Code Grant| raw:: html
 
-   <a href="https://oauth2.thephpleague.com/authorization-server/auth-code-grant/" target="_blank">OAuth 2.0 Server Client Credentials Grant</a>
+   <a href="https://oauth2.thephpleague.com/authorization-server/auth-code-grant/" target="_blank">OAuth 2.0 Server Authorization Code Grant</a>
 
 .. |OAuth 2.0 Server Client Credentials Grant| raw:: html
 
@@ -3185,7 +3185,7 @@ Links (Dev)
 
 .. |OAuth 2.0 Authorization Code Grant| raw:: html
 
-   <a href="https://oauth.net/2/grant-types/authorization-code/" target="_blank">OAuth 2.0 Client Credentials Grant</a>
+   <a href="https://oauth.net/2/grant-types/authorization-code/" target="_blank">OAuth 2.0 Authorization Code Grant</a>
 
 .. |OAuth 2.0 Client Credentials Grant| raw:: html
 
@@ -3525,7 +3525,7 @@ Links (Dev)
 
 .. |UnhandledErrorProcessor| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/UnhandledErrorProcessor.php" target="_blank">UnhandledErrorProcessor</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/ApiBundle/Processor/UnhandledErrorProcessor.php" target="_blank">UnhandledErrorProcessor</a>
 
 .. |BatchUpdateContext| raw:: html
 
@@ -4641,7 +4641,7 @@ Links (Dev)
 
 .. |UserBundle/Tests/Behat/Features/login.feature| raw:: html
 
-   <a href="https://github.com/orocrm/platform/blob/50047c1d8abc5f811d0db759b501b8d27b0bff65/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature" target="_blank">UserBundle/Tests/Behat/Features/login.feature</a>
+   <a href="https://github.com/oroinc/platform/blob/50047c1d8abc5f811d0db759b501b8d27b0bff65/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature" target="_blank">UserBundle/Tests/Behat/Features/login.feature</a>
 
 .. |Hot Module Replacement| raw:: html
 
@@ -5195,10 +5195,6 @@ Links (Dev)
 .. |previously purchased products grid| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/OrderBundle/Resources/config/oro/datagrids.yml#L751" target="_blank">previously purchased products grid</a>
-
-.. |system configuration documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Resources/doc/system_configuration.md" target="_blank">system configuration documentation</a>
 
 .. |website_search.yml| raw:: html
 
@@ -5811,6 +5807,26 @@ Links (Dev)
 .. |Migration| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Migration.php" target="_blank">Migration</a>
+
+.. |AbstractScopeManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Config/AbstractScopeManager.php" target="_blank">AbstractScopeManager</a>
+
+.. |ConfigHandler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Form/Handler/ConfigHandler.php" target="_blank">ConfigHandler</a>
+
+.. |GroupSearchProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Provider/GroupSearchProvider.php" target="_blank">GroupSearchProvider</a>
+
+.. |FieldSearchProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Provider/FieldSearchProvider.php" target="_blank">FieldSearchProvider</a>
+
+.. |SearchProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Provider/SearchProviderInterface.php" target="_blank">SearchProviderInterface</a>
 
 .. |MigrationBundle| raw:: html
 

@@ -36,7 +36,7 @@ On the **Email Configuration** page, define options applied to all the emails in
 
 1. **Signature** --- Add a signature to the emails.
 
-   * *Signature Content* --- Specify the text and formatting of your signature. Bby default, the email signature body is empty.
+   * *Signature Content* --- Specify the text and formatting of your signature. By default, the email signature body is empty.
    * *Append Signature to Email Body* --- Define whether a signature must be added automatically or manually.
 
 2. **Email Synchronization Settings** --- provide details to configure your personal mailbox. Select one of the options below:
