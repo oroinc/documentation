@@ -882,7 +882,7 @@ This action is executed when the following |ApiEvents| are dispatched:
    "post_validate","This event is dispatched at the end of the form submitting process, just after data validation. It can be used to finalize the form after all listeners, including data validation listener, are executed. E.g. it can be used to correct form validation result."
    "pre_flush_data","This event is dispatched after the database transaction is open but before data are flushed into the database."
    "post_flush_data","This event is dispatched after data are successfully flushed into the database but before the database transaction is committed."
-   "post_save_data","This event is dispatched after data successfully are flushed into the database, and the database transaction is committed. It can be used to perform some not crucial operations after data are saved into the database. It means that failure of these operations will not roll back data saved into the database."
+   "post_save_data","This event is dispatched after data are successfully flushed into the database, and the database transaction is committed. It can be used to perform some not crucial operations after data are saved into the database. It means that failure of these operations will not roll back data saved into the database."
 
 .. note:: All these events use the same context, so it can be used to share data between events.
 
