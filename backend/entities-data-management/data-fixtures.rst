@@ -48,7 +48,7 @@ programmatically. In OroPlatform, this can be done by creating :ref:`fixture cla
 
 Use the ``oro:migration:data:load`` command to load all fixtures that have not been loaded yet:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console oro:migration:data:load
 
@@ -56,7 +56,7 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
     You can use the ``--dry-run`` option to first check which fixtures will be loaded:
 
-    .. code-block:: bash
+    .. code-block:: none
 
         $ php bin/console oro:migration:data:load
 
@@ -67,7 +67,7 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
     ``Migrations/Data/Demo/ORM`` subdirectory of your bundle and use the ``--fixtures-type`` option
     of the ``oro:migration:data:load`` command to indicate that the demo data should be loaded:
 
-    .. code-block:: bash
+    .. code-block:: none
 
         $ php bin/console oro:migration:data:load --fixtures-type=demo
 

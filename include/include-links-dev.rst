@@ -11,30 +11,6 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/book/forms.html" target="_blank">form types in the Symfony documentation</a>
 
-.. |Use Emails| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/emails.md" target="_blank">Use Emails</a>
-
-.. |Use Email Templates| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">Use Email Templates</a>
-
-.. |Use Email Template Migrations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates_migrations.md" target="_blank">Use Email Template Migrations</a>
-
-.. |Send Email and Email Template Actions| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/reference/workflow/workflow-entities/transition-actions.md" target="_blank">Send Email and Email Template Actions</a>
-
-.. |Email Ownership| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/reference/security/ownership.md" target="_blank">Email Ownership</a>
-
-.. |Use System Mailboxes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/reference/mailboxes.md" target="_blank">Use System Mailboxes</a>
-
 .. |OroImportExportBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle" target="_blank">OroImportExportBundle</a>
@@ -674,10 +650,6 @@ Links (Dev)
 .. |Providers| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#providers" target="_blank">Providers</a>
-
-.. |relevant documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">relevant documentation </a>
 
 .. |Doctrine ORM documentation| raw:: html
 
@@ -5855,7 +5827,19 @@ Links (Dev)
 .. |docker.io/oroinc/commerce-crm-application| raw:: html
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application" target="_blank">docker.io/oroinc/commerce-crm-application</a>
-   
+
+.. |Sandbox mode| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/api.html#sandbox-extension" target="_blank">Sandbox mode</a>
+
+.. |EntityVariablesProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Twig/Sandbox/EntityVariablesProviderInterface.php" target="_blank">EntityVariablesProviderInterface</a>
+
+.. |VariableProcessorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Twig/Sandbox/VariableProcessorInterface.php" target="_blank">VariableProcessorInterface</a>
+ 
 .. |docker.io/oroinc/crm-application| raw:: html
 
    <a href="https://hub.docker.com/r/oroinc/crm-application" target="_blank">docker.io/oroinc/crm-application</a>
@@ -5867,3 +5851,4 @@ Links (Dev)
 .. |docker.io/oroinc/commerce-crm-application-de| raw:: html
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application-de" target="_blank">docker.io/oroinc/commerce-crm-application-de</a>
+

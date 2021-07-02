@@ -56,7 +56,7 @@ In this case. it is required to provide redis-sentinel endpoints with db numbers
 The master service name, which is configured in *sentinel.conf*, needs to be provided in the
 **redis_\*_sentinel_master_name** parameters.
 
-.. code-block:: bash
+.. code-block:: none
 
     sentinel monitor mymaster 127.0.0.1 2
 

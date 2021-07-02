@@ -213,7 +213,7 @@ To optimize Redis, try the following configurations for performance optimization
 
 * Limits
 
-  .. code-block:: bash
+  .. code-block:: none
 
      maxclients 100000
      maxmemory 512mb
@@ -222,7 +222,7 @@ To optimize Redis, try the following configurations for performance optimization
 
 * Append only mode
 
-  .. code-block:: bash
+  .. code-block:: none
 
      appendonly no
      appendfsync everysec
@@ -232,14 +232,14 @@ To optimize Redis, try the following configurations for performance optimization
 
 * Slow log
 
-  .. code-block:: bash
+  .. code-block:: none
 
      slowlog-log-slower-than 10000
      slowlog-max-len 1024
 
 * Advanced config
 
-  .. code-block:: bash
+  .. code-block:: none
 
      hash-max-ziplist-entries 512
      hash-max-ziplist-value 64

@@ -112,7 +112,7 @@ Unfriendly Consumer Interruption
 
 If the consumer is interrupted abruptly, check the prod.log file. It should contain the following message.
 
-.. code-block:: bash
+.. code-block:: none
 
 
     app.ERROR: Consuming interrupted, reason: Something went wrong.

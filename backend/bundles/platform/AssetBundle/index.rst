@@ -16,7 +16,7 @@ Webpack *entry points* with a list of files are loaded from `assets.yml` files f
 
 To see the list of loaded bundles ordered by the priority, run:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    php bin/console debug:container --parameter=kernel.bundles --format=json
@@ -45,7 +45,7 @@ Enable HMR for CSS links
 
 To enable HMR for CSS links in HTML, import CSS within Javascript. But for performance reasons, it is better to load plain CSS files in the production environment. To handle that automatically we render CSS with the following macro:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     {% import '@OroAsset/Asset.html.twig' as Asset %}
@@ -370,7 +370,7 @@ After the update of NodeJs you might experience an error because node modules we
 
 To fix the error, remove the existing node modules and re-build the assets:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     rm -rf ./node_modules
@@ -384,7 +384,7 @@ Appears when configuration in the cache is broken.
 
 To fix the error, remove an application cache and warm it up:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     rm -rf var/cache/*

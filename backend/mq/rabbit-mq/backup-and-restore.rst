@@ -26,7 +26,7 @@ Exporting Definitions
 
 Use the ``export`` command provided by the :ref:`RabbitMQ management plugin <op-structure--mq--rabbit-command-lines>` to back up definitions.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin export /path/to/your/backup/directory/definitions.backup
 
@@ -38,7 +38,7 @@ Backing Up Messages
 
 The only way to back up messages is to **copy ``msg_stores`` messages data directory**.
 
-.. code-block:: bash
+.. code-block:: none
 
    # check your node directory
    rabbitmqctl eval 'rabbit_mnesia:dir().'
@@ -69,7 +69,7 @@ Import Definitions
 
 Use the ``import`` command provided by the :ref:`RabbitMQ management plugin <op-structure--mq--rabbit-command-lines>` to restore definitions.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin import /path/to/your/backup/directory/definitions.backup
 
@@ -78,7 +78,7 @@ Restore Messages
 
 Copy ``msg_stores`` messages data directory to the |node's data directory|.
 
-.. code-block:: bash
+.. code-block:: none
 
    # stop RabbitMQ node
    rabbitmqctl stop_app

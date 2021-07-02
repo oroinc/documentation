@@ -30,6 +30,6 @@ automatically merged to a single output file and optimized for web presentation.
 
 To apply changes, run the command:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console oro:assets:install  --symlink

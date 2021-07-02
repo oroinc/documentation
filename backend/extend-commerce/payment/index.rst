@@ -138,7 +138,7 @@ To add an icon:
 1. Save the file to the <bundle_root>/Resources/public/img directory.
 2. Install assets:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
        bin/console assets:install --symlink
@@ -205,7 +205,7 @@ Check That the Integration is Created Successfully
 
 1. Clear the application cache:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
        bin/console cache:clear

@@ -77,7 +77,7 @@ You need to configure the following parameters for the testing environment:
 
 3. Install the application in the test environment:
 
-   .. code-block:: bash
+   .. code-block:: none
 
        $ bin/console oro:install --env=test --organization-name=Oro --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=n --application-url=http://localhost
 
@@ -87,11 +87,11 @@ You need to configure the following parameters for the testing environment:
 
    .. caution::	Currently, running different types of automated tests together is not supported. It is, therefore, strongly not recommended to run unit tests and functional tests side by side in one run as this produces errors. Unit tests create mock objects that later interfere with functional test execution and create unnecessary ambiguity. It is possible to disable unit tests on test startup with the help of the test suite option:
 
-   .. code-block:: bash
+   .. code-block:: none
 
          $ php bin/phpunit -c ./ --testsuite=functional
 
-   .. code-block:: bash
+   .. code-block:: none
 
          $ php bin/phpunit -c ./ --testsuite=unit
 

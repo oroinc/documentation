@@ -34,14 +34,14 @@ You can install extensions from the command-line.
 Start with upgrading Composer to the latest version. This may be needed in case the extension to be
 installed uses some bleeding edge feature in its ``composer.json`` file:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ composer self-update
     # add and download extension
 
 Then, install the extension's Composer package using the Composer ``require`` command:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ composer require <extension name> --prefer-dist --update-no-dev
 
@@ -52,7 +52,7 @@ Then, install the extension's Composer package using the Composer ``require`` co
 
 Next, remove old cache:
 
-.. code-block:: bash
+.. code-block:: none
 
     sudo rm -rf var/cache/prod
 
@@ -60,13 +60,13 @@ Repeat this for any other extension you want to install. When you are finished w
 packages, use the ``oro:platform:update`` command to make the application aware of the newly
 installed extensions:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console oro:platform:update --env=prod --force
 
 Finally, make sure to properly clean the cache:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console cache:clear --env=prod
 

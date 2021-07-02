@@ -30,7 +30,7 @@ This configuration adds the 'demo_attr' attribute with the 'Demo' value to all c
 
 To apply this change, execute the **oro:entity-config:update** command:
 
-.. code-block:: bash
+.. code-block:: none
 
    php bin/console oro:entity-config:update
 
@@ -210,7 +210,7 @@ Update Configuration Data
 
 The following command can be used to update configurable entities:
 
-.. code-block:: bash
+.. code-block:: none
 
    php bin/console oro:entity-config:update
 
@@ -221,7 +221,7 @@ Clearing Up the Cache
 
 The following command removes all data related to configurable entities from the application cache:
 
-.. code-block:: bash
+.. code-block:: none
 
    php bin/console oro:entity-config:cache:clear --no-warmup
 
@@ -229,7 +229,7 @@ Debugging Configuration Data
 
 You can use ``oro:entity-config:debug`` command to get a different kind of configuration data as well as add/remove/update configuration of entities. To see all available options run this command with ``--help`` option. As an example the following command shows all configuration data for User entity:
 
-.. code-block:: bash
+.. code-block:: none
 
    php bin/console oro:entity-config:debug "Oro\Bundle\UserBundle\Entity\User"
 
@@ -513,7 +513,7 @@ Below the configuration level, each option's configuration is divided into three
 Secondly, you need to update all configurable entities after configuration parameters have been
 modified or added using the ``oro:entity-config:update`` command:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console oro:entity-config:update --force
 

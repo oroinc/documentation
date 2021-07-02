@@ -216,7 +216,7 @@ modeled as separate entities:
 
 After you have modeled your entities, you need to update the database schema. To update the schema, use the ``doctrine:schema:update command``. Use the ``--dump-sql`` option first to make sure that Doctrine makes the expected changes:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console doctrine:schema:update --dump-sql
 
@@ -224,7 +224,7 @@ If the command displays unexpected information, double-check the configured mapp
 
 When everything is displayed as expected, update the database schema by passing the ``--force`` option:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console doctrine:schema:update --force
 
@@ -232,7 +232,7 @@ When everything is displayed as expected, update the database schema by passing 
 
     Doctrine caches mapping metadata. If the ``doctrine:schema:update`` command does not recognize your changes to the entity mapping, clear the metadata cache manually and update the schema again:
 
-    .. code-block:: bash
+    .. code-block:: none
 
         # clear the metadata cache
         $ php bin/console doctrine:cache:clear-metadata
@@ -360,7 +360,7 @@ Queries executed using the QueryBag, are divided into two groups: use the :metho
 
 To  load and apply migrations to the existing database schema, execute the ``oro:migration:load`` command:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console oro:migration:load --force
 

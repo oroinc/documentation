@@ -15,14 +15,14 @@ Run Application
 
 1. Download the repository with docker compose configuration file
 
-   .. code-block:: bash
+   .. code-block:: none
 
         git clone https://github.com/oroinc/docker-demo.git
         cd docker-demo
 
    or download the archive file and extract it
 
-   .. code-block:: bash
+   .. code-block:: none
 
       wget https://github.com/oroinc/docker-demo/archive/master.tar.gz -O - | tar -xzf -
       cd docker-demo
@@ -34,7 +34,7 @@ Run Application
 
    Run containers:
 
-   .. code-block:: bash
+   .. code-block:: none
 
         docker-compose up -d
 
@@ -42,13 +42,13 @@ Run Application
    You can run other community applications, such as `crm-application`, `platform-application` or `commerce-crm-application-de`.
    To select another application, set a different image in `.env` file, for example:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       ORO_IMAGE=docker.io/oroinc/crm-application
 
    Alternatively, you can set a variable before the docker-compose command without creating the `.env` file:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       ORO_IMAGE=docker.io/oroinc/crm-application docker-compose up -d
 
@@ -58,7 +58,7 @@ Run Application
 
 3. Add a record to file `/etc/hosts`
 
-   .. code-block:: bash
+   .. code-block:: none
 
         127.0.0.1 oro.demo
 

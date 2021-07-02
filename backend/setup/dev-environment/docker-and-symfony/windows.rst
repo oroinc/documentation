@@ -20,7 +20,7 @@ Environment Setup
 
 6. Install PHP 7.4 with all required extensions to Ubuntu 20.04 LTS:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       sudo apt install software-properties-common
       sudo add-apt-repository -y ppa:ondrej/php
@@ -29,7 +29,7 @@ Environment Setup
 
 7. If you going to use an Enterprise Edition of the application, install and enable the mongodb php extension:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       sudo pecl channel-update pecl.php.net
       sudo pecl install mongodb
@@ -38,7 +38,7 @@ Environment Setup
 
 8. Install Node.js 12:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
       curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -46,7 +46,7 @@ Environment Setup
 
 9. Install Composer:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
       php -r "unlink('composer-setup.php');"
@@ -54,7 +54,7 @@ Environment Setup
 
 10. Install Symfony Server:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       sudo apt -y install libnss3-tools
       wget https://get.symfony.com/cli/installer -O - | bash

@@ -10,7 +10,7 @@ Installation
 
 Add `oro/commerce-cybersource` package to your installation:
 
-.. code-block:: bash
+.. code-block:: none
 
    composer require "oro/commerce-cybersource"
 

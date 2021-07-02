@@ -23,7 +23,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 1. Make sure that there are no changes that require the database schema update.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        php bin/console oro:entity-extend:update --dry-run --env=prod
 
@@ -31,14 +31,14 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 2. Go to the Oro application root folder and switch the application to the maintenance mode.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        cd <application-root-folder>
        php bin/console lexik:maintenance:lock --env=prod
 
 3. Stop the cron tasks.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        crontab -e
 
@@ -62,14 +62,14 @@ To retrieve a new version and upgrade your Oro application instance, execute the
            - your changes to ``composer.json`` file are merged to the new file.
            - your changes to configuration files in ``config/`` folder are merged to the new files.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        git pull
        git checkout <VERSION TO UPGRADE>
 
 7. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        composer install --prefer-dist --no-dev
 
@@ -78,13 +78,13 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 9. Remove old caches.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        rm -rf var/cache/*
 
 10. Upgrade the platform.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        php bin/console oro:platform:update --env=prod
 
@@ -101,20 +101,20 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 11. Remove the caches.
 
-    .. code-block:: bash
+    .. code-block:: none
 
         php bin/console cache:clear --env=prod
 
     or, as alternative:
 
-    .. code-block:: bash
+    .. code-block:: none
 
         rm -rf var/cache/*
         php bin/console cache:warmup --env=prod
 
 12. Enable cron.
 
-    .. code-block:: bash
+    .. code-block:: none
 
        crontab -e
 
@@ -126,13 +126,13 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 13. Switch your application back to the normal mode from the maintenance mode.
 
-    .. code-block:: bash
+    .. code-block:: none
 
         php bin/console lexik:maintenance:unlock --env=prod
 
 14. Run the consumer(s).
 
-    .. code-block:: bash
+    .. code-block:: none
 
         php bin/console oro:message-queue:consume --env=prod
 
@@ -149,7 +149,7 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
 1. Make sure that there are no changes that require the database schema update.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        php bin/console oro:entity-extend:update --dry-run --env=prod
 
@@ -157,14 +157,14 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
 2. Go to the Oro application root folder and switch the application to the maintenance mode.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        cd <application-root-folder>
        php bin/console lexik:maintenance:lock --env=prod
 
 3. Stop the cron tasks.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        crontab -e
 
@@ -196,7 +196,7 @@ To retrieve a new version and upgrade your Oro application instance, please exec
           - your changes to configuration files in ``config/`` folder are merged to the new files.
           - upgrade the composer dependency and set up right owner to the retrieved files.
 
-            .. code-block:: bash
+            .. code-block:: none
 
                composer update --prefer-dist --no-dev
 
@@ -205,32 +205,32 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
 9. Remove old caches.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        rm -rf var/cache/*
 
 10. Upgrade the platform.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        php bin/console oro:platform:update --env=prod
 
 11. Remove the caches.
 
-   .. code-block:: bash
+   .. code-block:: none
 
        php bin/console cache:clear --env=prod
 
    or, as alternative:
 
-   .. code-block:: bash
+   .. code-block:: none
 
        rm -rf var/cache/*
        php bin/console cache:warmup --env=prod
 
 12. Enable cron.
 
-    .. code-block:: bash
+    .. code-block:: none
 
           crontab -e
 
@@ -242,13 +242,13 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
 13. Switch your application back to normal mode from the maintenance mode.
 
-    .. code-block:: bash
+    .. code-block:: none
 
           php bin/console lexik:maintenance:unlock --env=prod
 
 14. Run the consumer(s).
 
-    .. code-block:: bash
+    .. code-block:: none
 
           php bin/console oro:message-queue:consume --env=prod
 

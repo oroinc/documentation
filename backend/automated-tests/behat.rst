@@ -136,7 +136,7 @@ If you installed dependencies with ``--no-dev`` parameter earlier, remove ``comp
 
 Install dev dependencies using the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    composer install
@@ -148,7 +148,7 @@ In the Oro application, the initial state is the one when the application enters
 
 Install the application without demo data in production mode using the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     bin/console oro:install  --drop-database --user-name=admin --user-email=admin@example.com  \
@@ -162,7 +162,7 @@ Install Test Automation Tools
 To execute scenarios that use Oro application features run WebKit browser (using ChromeDriver).
 To install ChromeDriver, run the following commands:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
@@ -183,14 +183,14 @@ Prerequisites
 
 Run ChromeDriver:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1
 
 To run ChromeDriver in background, append ampersand symbol (&) to the end of line, like in the following examples:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1 &
@@ -207,28 +207,28 @@ You may use one of the following commands.
 
 Run feature test scenario:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     bin/behat vendor/oro/platform/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature -vvv
 
 Preview all available feature steps:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     bin/behat -dl -s OroUserBundle
 
 View steps with full description and examples:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     bin/behat -di -s OroUserBundle
 
 Every bundle has its dedicated test suite that can be run separately:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     bin/behat -s OroUserBundle
@@ -536,7 +536,7 @@ You can create any number of entities in the feature tests. The ``FixtureContext
 
 You use both faker and :ref:`entity references <behat-entity-references>` in inline fixtures.
 
-.. code-block:: bash
+.. code-block:: none
 
 
     Given the following contacts:
@@ -583,7 +583,7 @@ For example:
 
 Additionally, Alice allows you to |include files| via extension, so you can import files from other bundles:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     include:
@@ -618,7 +618,7 @@ Behat has a native possibility to invoke formatters without executing the tests 
 
 You can try:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     bin/behat --dry-run
@@ -704,7 +704,7 @@ To boost the database isolator, you can mount the database directory to RAM. In 
 
 Create a tmpfs directory:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    sudo mkdir /var/tmpfs
@@ -726,7 +726,7 @@ Add new storage to ``/etc/fstab``:
 
 Copy MySQL to tmpfs:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    sudo service mysql stop
@@ -734,21 +734,21 @@ Copy MySQL to tmpfs:
 
 We need to tell AppArmor to let MySQL write to the new directory by creating an alias between the default directory and the new location.
 
-.. code-block:: bash
+.. code-block:: none
 
 
    echo "alias /var/lib/mysql/ -> /var/tmpfs/mysql," | sudo tee -a /etc/apparmor.d/tunables/alias
 
 For the changes to take effect, restart AppArmor:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    sudo systemctl restart apparmor
 
 Now you can start MySQL again:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    sudo service mysql start
@@ -762,7 +762,7 @@ To prepare for auto-recovery using a startup script:
 
 1. Create a mysql_copy_tmpfs.sh in the bin directory (e.g. /usr/local/bin):
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       #!/bin/bash
@@ -788,7 +788,7 @@ To prepare for auto-recovery using a startup script:
 
 3. Once you have created the files, enable the configured service:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       systemctl enable mysql_copy_tmpfs.service
@@ -858,7 +858,7 @@ However, sometimes it is impossible to do right away (because of the incomplete 
 
 A quick way to do so is to dry-run your feature tests. In the console, run the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    bin/behat path/to/your.feature --dry-run --append-snippets --snippets-type=regex
@@ -904,7 +904,7 @@ If, for any reason, you do not use PhpStorm or behat plugin, you can still find 
 
 Type the following command in your console:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    bin/behat -dl -s AcmeDemoBundle | grep "flash message"
@@ -912,7 +912,7 @@ Type the following command in your console:
 .. image:: /img/backend/tests/grep_flash_messages.png
    :alt: Grep flash messages in the console
 
-.. code-block:: bash
+.. code-block:: none
 
 
    bin/behat -dl -s AcmeDemoBundle | grep "grid"

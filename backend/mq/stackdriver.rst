@@ -11,7 +11,7 @@ A simple example of how you can stream your message queue logs to the Stackdrive
 
 Add Google Cloud SDK package:
 
-.. code-block:: bash
+.. code-block:: none
 
    COMPOSER=dev.json composer require "google/cloud":"~0.70"
 

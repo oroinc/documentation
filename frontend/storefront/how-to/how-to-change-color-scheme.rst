@@ -39,7 +39,7 @@ To change the color scheme:
 
 3. Run the following console commands to publish the changes:
 
-    .. code-block:: bash
+    .. code-block:: none
 
         php bin/console cache:clear
         php bin/console assets:install --symlink

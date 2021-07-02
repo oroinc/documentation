@@ -152,25 +152,25 @@ username.
 
 1. Change the directory to the one where the .pem key file is stored.
 
-    .. code-block:: bash
+    .. code-block:: none
 
         cd <.pem file storage directory>
 
 2. Set permissions for the .pem file to 400.
 
-    .. code-block:: bash
+    .. code-block:: none
 
         chmod 400 <.pem file name>
 
 3. Log into the EC2 instance with Oro Application.
 
-    .. code-block:: bash
+    .. code-block:: none
 
         ssh -i /path/to/file/filenamewithkeys.pem centos@<Public IP>
 
     or
 
-    .. code-block:: bash
+    .. code-block:: none
 
         ssh -i /path/to/file/filenamewithkeys.pem centos@<Public DNS>
 
