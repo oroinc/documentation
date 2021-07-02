@@ -202,7 +202,7 @@ To identify a draft entity, you can create a block that shows whether the entity
 
 Follow the instructions provided in the :ref:`Template <templates-twig>` topic.
 
-.. oro_integrity_check:: 5ac712a78c7c3b59a018ca1f3df23131c9d5624d
+.. oro_integrity_check:: e46cc44901e5611db38e7c682ab89c316576f844
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/views/Block/view.html.twig
         :language: php
