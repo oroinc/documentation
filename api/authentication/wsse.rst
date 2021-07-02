@@ -66,7 +66,7 @@ Header Generation
 
 The console command ``oro:wsse:generate-header`` can be used to generate an authentication header.
 
-.. code-block:: bash
+.. code-block:: none
 
 
     user@host: php bin/console oro:wsse:generate-header yourApiKey

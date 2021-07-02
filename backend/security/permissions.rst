@@ -23,7 +23,7 @@ every application the required permissions should be added\updated by creating a
 
 An example of a simple permission configuration.
 
-.. code-block:: bash
+.. code-block:: none
 
 
     oro_permissions:
@@ -70,7 +70,7 @@ Configuration Load
 
 To load permissions configuration to the DB, execute the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    security:permission:configuration:load [--permissions [PERMISSIONS]]

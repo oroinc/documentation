@@ -39,7 +39,7 @@ Set Up the Environment
 
 To avoid reaching composer API rate limit and to work with enterprise applications, configure |GitHub OAuth token|:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       composer config -g github-oauth.github.com <oauthtoken>
 
@@ -52,33 +52,33 @@ Install the Application
 
 2. Run application services
 
-   .. code-block:: bash
+   .. code-block:: none
 
       docker-compose up -d
 
    .. note::
         On Linux, it may not work if you use Docker as a root user. In this case, consider adding your user to the “docker” group with:
 
-      .. code-block:: bash
+      .. code-block:: none
 
          sudo usermod -aG docker your-user
 
 3. Install application dependencies
 
-   .. code-block:: bash
+   .. code-block:: none
 
       composer install -n
 
 
 4. If you are using an Enterprise edition application, update the parameters.yml file.
 
-   .. code-block:: bash
+   .. code-block:: none
 
       composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
 
 5. Install Oro application
 
-   .. code-block:: bash
+   .. code-block:: none
 
       symfony console oro:install -vvv --sample-data=y --application-url=https://127.0.0.1:8000 --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --organization-name=Oro --timeout=0 --symlink --env=prod -n
 
@@ -99,28 +99,28 @@ using proper PHP version and expose environment variables from the application s
 Run Symfony Server in a ``Dev`` Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    symfony server:start -d
 
 Run Symfony Server in a ``Prod`` Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    symfony server:start -d --passthru=index.php
 
 Open the Application in a Browser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    symfony open:local
 
 Check Application Logs
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    symfony server:log
 
@@ -130,7 +130,7 @@ Switch PHP version
 You can have multiple versions of PHP versions locally. To use a
 specific PHP version for the project, go to the project root folder and run:
 
-.. code-block:: bash
+.. code-block:: none
 
    echo 7.4 > .php-version
 
@@ -140,20 +140,20 @@ console commands wrapped with ``symfony``.
 Run Message Consumer in the Background
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    symfony run -d php bin/console oro:message-queue:consume -vv
 
 You can also ask symfony to restart the message consumer when changes happen in ``src/`` folder:
 
-.. code-block:: bash
+.. code-block:: none
 
    symfony run -d --watch=src php bin/console oro:message-queue:consume -vv
 
 Check Symfony Server status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    symfony server:status
 
@@ -193,35 +193,35 @@ Compose configuration locally. By default, the file is in ``.gitignore``.
 Run Application Services
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    docker-compose up -d
 
 Check Services Logs
 ^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    docker-compose logs -f
 
 Check Application Services Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    docker-compose ps
 
 Stop Application Services (No Data Loss)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    docker-compose stop
 
 Destroy Application Services with all Volumes (Data Loss)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    docker-compose down -v
 
@@ -234,7 +234,7 @@ It is not recommended to store sessions on the same redis server as the
 cache, but for testing purpose, you can enable it with the following
 command:
 
-.. code-block:: bash
+.. code-block:: none
 
    composer set-parameters session_handler="snc_redis.session.handler" redis_dsn_session="%env(ORO_REDIS_URL)%/0"
 

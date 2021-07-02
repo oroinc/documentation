@@ -11,42 +11,6 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/book/forms.html" target="_blank">form types in the Symfony documentation</a>
 
-.. |Use Emails| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EmailBundle/Resources/doc/emails.md" target="_blank">Use Emails</a>
-
-.. |Use Email Templates| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">Use Email Templates</a>
-
-.. |Use Email Template Migrations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates_migrations.md" target="_blank">Use Email Template Migrations</a>
-
-.. |Send Email and Email Template Actions| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EmailBundle/Resources/doc/reference/workflow/workflow-entities/transition-actions.md" target="_blank">Send Email and Email Template Actions</a>
-
-.. |Email Ownership| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EmailBundle/Resources/doc/reference/security/ownership.md" target="_blank">Email Ownership</a>
-
-.. |Use System Mailboxes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EmailBundle/Resources/doc/reference/mailboxes.md" target="_blank">Use System Mailboxes</a>
-
-.. |System Configuration Reference| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Resources/doc/system_configuration.md" target="_blank">System Configuration Reference</a>
-
-.. |Config Management| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Resources/doc/config_management.md" target="_blank">Config Management</a>
-
-.. |Add a New Configuration Scope| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Resources/doc/add_new_config_scope.md" target="_blank">Add a New Configuration Scope</a>
-
 .. |OroImportExportBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ImportExportBundle" target="_blank">OroImportExportBundle</a>
@@ -691,10 +655,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#providers" target="_blank">Providers</a>
 
-.. |relevant documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">relevant documentation </a>
-
 .. |Doctrine ORM documentation| raw:: html
 
    <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html" target="_blank">Doctrine ORM documentation</a>
@@ -919,7 +879,7 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ApiBundle/Filter/FieldAwareFilterInterface.php" target="_blank">FieldAwareFilterInterface</a>
 
-.. |entity configuration| raw:: html
+.. |depend on the entity configuration| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ApiBundle/Config/EntityDefinitionConfig.php" target="_blank">entity configuration</a>
 
@@ -1777,7 +1737,7 @@ Links (Dev)
 
 .. |UnhandledErrorProcessorTestCase| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/UnhandledError/UnhandledErrorProcessorTestCase.php" target="_blank">UnhandledErrorProcessorTestCase</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/ApiBundle/Tests/Unit/Processor/UnhandledError/UnhandledErrorProcessorTestCase.php" target="_blank">UnhandledErrorProcessorTestCase</a>
 
 .. |ConfigProcessorTestCase| raw:: html
 
@@ -5410,7 +5370,7 @@ Links (Dev)
 
 .. |ConfigurationFactoryInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/GaufretteBundle/DependencyInjection/Factory/ConfigurationFactoryInterface.php" target="_blank">ConfigurationFactoryInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/GaufretteBundle/DependencyInjection/Factory/ConfigurationFactoryInterface.php" target="_blank">ConfigurationFactoryInterface</a>
 
 .. |DictionaryValueListProviderInterface| raw:: html
 
@@ -5506,71 +5466,71 @@ Links (Dev)
 
 .. |AbstractAssociationEntityGeneratorExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Tools/GeneratorExtensions/AbstractAssociationEntityGeneratorExtension.php" target="_blank">AbstractAssociationEntityGeneratorExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Tools/GeneratorExtensions/AbstractAssociationEntityGeneratorExtension.php" target="_blank">AbstractAssociationEntityGeneratorExtension</a>
 
 .. |AbstractConfigType| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityConfigBundle/Form/Type/AbstractConfigType.php" target="_blank">AbstractConfigType</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle/Form/Type/AbstractConfigType.php" target="_blank">AbstractConfigType</a>
 
 .. |the Oro Email entity| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Entity/Email.php" target="_blank">the Oro Email entity</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/EmailBundle/Entity/Email.php" target="_blank">the Oro Email entity</a>
 
 .. |MultipleAssociationChoiceType| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Type/MultipleAssociationChoiceType.php" target="_blank">MultipleAssociationChoiceType</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Form/Type/MultipleAssociationChoiceType.php" target="_blank">MultipleAssociationChoiceType</a>
 
 .. |AssociationChoiceType| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Type/AssociationChoiceType.php" target="_blank">AssociationChoiceType</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Form/Type/AssociationChoiceType.php" target="_blank">AssociationChoiceType</a>
 
 .. |ExtendHelper| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Tools/ExtendHelper.php" target="_blank">ExtendHelper</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Tools/ExtendHelper.php" target="_blank">ExtendHelper</a>
 
 .. |OroOptions| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Migration/OroOptions.php" target="_blank">OroOptions</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Migration/OroOptions.php" target="_blank">OroOptions</a>
 
 .. |AssociationManager| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/Manager/AssociationManager.php" target="_blank">AssociationManager</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Entity/Manager/AssociationManager.php" target="_blank">AssociationManager</a>
 
 .. |AbstractEnumValue| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/AbstractEnumValue.php" target="_blank">AbstractEnumValue</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Entity/AbstractEnumValue.php" target="_blank">AbstractEnumValue</a>
 
 .. |EnumValueTranslation| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/EnumValueTranslation.php" target="_blank">EnumValueTranslation</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Entity/EnumValueTranslation.php" target="_blank">EnumValueTranslation</a>
 
 .. |TWIG extension (Enum)| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Twig/EnumExtension.php" target="_blank">TWIG extension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Twig/EnumExtension.php" target="_blank">TWIG extension</a>
 
 .. |EnumChoiceType| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Type/EnumChoiceType.php" target="_blank">EnumChoiceType</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Form/Type/EnumChoiceType.php" target="_blank">EnumChoiceType</a>
 
 .. |EnumSelectType| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Type/EnumSelectType.php" target="_blank">EnumSelectType</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Form/Type/EnumSelectType.php" target="_blank">EnumSelectType</a>
 
 .. |EnumFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Filter/EnumFilter.php" target="_blank">EnumFilter</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Filter/EnumFilter.php" target="_blank">EnumFilter</a>
 
 .. |MultiEnumFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Filter/MultiEnumFilter.php" target="_blank">MultiEnumFilter</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Filter/MultiEnumFilter.php" target="_blank">MultiEnumFilter</a>
 
 .. |ExtendColumnOptionsGuesser| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Grid/ExtendColumnOptionsGuesser.php" target="_blank">ExtendColumnOptionsGuesser</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Grid/ExtendColumnOptionsGuesser.php" target="_blank">ExtendColumnOptionsGuesser</a>
 
 .. |ActivityManager| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityBundle/Manager/ActivityManager.php" target="_blank">ActivityManager</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/ActivityBundle/Manager/ActivityManager.php" target="_blank">ActivityManager</a>
 
 .. |Symfony Monolog Documentation| raw:: html
 
@@ -5650,7 +5610,7 @@ Links (Dev)
 
 .. |SerializedFieldsExtension| raw:: html
 
-   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/master/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>
+   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/4.2/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>
 
 .. |PHP manual| raw:: html
 
@@ -5658,71 +5618,71 @@ Links (Dev)
 
 .. |MigrationQuery| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/MigrationQuery.php" target="_blank">MigrationQuery</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/MigrationQuery.php" target="_blank">MigrationQuery</a>
 
 .. |SqlMigrationQuery| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/SqlMigrationQuery.php" target="_blank">SqlMigrationQuery</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/SqlMigrationQuery.php" target="_blank">SqlMigrationQuery</a>
 
 .. |ParametrizedSqlMigrationQuery| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/ParametrizedSqlMigrationQuery.php" target="_blank">ParametrizedSqlMigrationQuery</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/ParametrizedSqlMigrationQuery.php" target="_blank">ParametrizedSqlMigrationQuery</a>
 
 .. |ConnectionAwareInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/ConnectionAwareInterface.php" target="_blank">ConnectionAwareInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/ConnectionAwareInterface.php" target="_blank">ConnectionAwareInterface</a>
 
 .. |ParametrizedMigrationQuery| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/ParametrizedMigrationQuery.php" target="_blank">ParametrizedMigrationQuery</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/ParametrizedMigrationQuery.php" target="_blank">ParametrizedMigrationQuery</a>
 
 .. |OrderedMigrationInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/OrderedMigrationInterface.php" target="_blank">OrderedMigrationInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/OrderedMigrationInterface.php" target="_blank">OrderedMigrationInterface</a>
 
 .. |Installer| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle/Migrations/Schema" target="_blank">Installer</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/InstallerBundle/Migrations/Schema" target="_blank">Installer</a>
 
 .. |Simple migration| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UserBundle/Migrations/Schema/v1_0/OroUserBundle.php" target="_blank">Simple migration</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/UserBundle/Migrations/Schema/v1_0/OroUserBundle.php" target="_blank">Simple migration</a>
 
 .. |Complex migration| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle/Migrations/Schema/v1_2" target="_blank">Complex migration</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityConfigBundle/Migrations/Schema/v1_2" target="_blank">Complex migration</a>
 
 .. |RenameExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Extension/RenameExtension.php" target="_blank">RenameExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/Extension/RenameExtension.php" target="_blank">RenameExtension</a>
 
 .. |RenameExtensionAwareInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Extension/RenameExtensionAwareInterface.php" target="_blank">RenameExtensionAwareInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/Extension/RenameExtensionAwareInterface.php" target="_blank">RenameExtensionAwareInterface</a>
 
 .. |DatabasePlatformAwareInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Extension/DatabasePlatformAwareInterface.php" target="_blank">DatabasePlatformAwareInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/Extension/DatabasePlatformAwareInterface.php" target="_blank">DatabasePlatformAwareInterface</a>
 
 .. |NameGeneratorAwareInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Extension/NameGeneratorAwareInterface.php" target="_blank">NameGeneratorAwareInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/Extension/NameGeneratorAwareInterface.php" target="_blank">NameGeneratorAwareInterface</a>
 
 .. |DbIdentifierNameGenerator| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Tools/DbIdentifierNameGenerator.php" target="_blank">DbIdentifierNameGenerator</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Tools/DbIdentifierNameGenerator.php" target="_blank">DbIdentifierNameGenerator</a>
 
 .. |VersionedFixtureInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Fixture/VersionedFixtureInterface.php" target="_blank">VersionedFixtureInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Fixture/VersionedFixtureInterface.php" target="_blank">VersionedFixtureInterface</a>
 
 .. |LoadedFixtureVersionAwareInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Fixture/LoadedFixtureVersionAwareInterface.php" target="_blank">LoadedFixtureVersionAwareInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Fixture/LoadedFixtureVersionAwareInterface.php" target="_blank">LoadedFixtureVersionAwareInterface</a>
 
 .. |RenamedFixtureInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Fixture/RenamedFixtureInterface.php" target="_blank">RenamedFixtureInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Fixture/RenamedFixtureInterface.php" target="_blank">RenamedFixtureInterface</a>
 
 .. |doctrine data fixtures manual| raw:: html
 
@@ -5730,107 +5690,107 @@ Links (Dev)
 
 .. |PaymentTermExtension| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PaymentTermBundle/Migration/Extension/PaymentTermExtension.php" target="_blank">PaymentTermExtension</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/PaymentTermBundle/Migration/Extension/PaymentTermExtension.php" target="_blank">PaymentTermExtension</a>
 
 .. |SlugExtension| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RedirectBundle/Migration/Extension/SlugExtension.php" target="_blank">SlugExtension</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/4.2/src/Oro/Bundle/RedirectBundle/Migration/Extension/SlugExtension.php" target="_blank">SlugExtension</a>
 
 .. |RedirectBundle documentation| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/RedirectBundle#migration-extension" target="_blank">RedirectBundle documentation</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/RedirectBundle#migration-extension" target="_blank">RedirectBundle documentation</a>
 
 .. |CustomerExtension| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/SalesBundle/Migration/Extension/CustomerExtension.php" target="_blank">CustomerExtension</a>
+   <a href="https://github.com/oroinc/crm/blob/4.2/src/Oro/Bundle/SalesBundle/Migration/Extension/CustomerExtension.php" target="_blank">CustomerExtension</a>
 
 .. |Migration Extension documentation| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/SalesBundle/Resources/doc/reference/customer.md#migration-extension" target="_blank">Migration Extension documentation</a>
+   <a href="https://github.com/oroinc/crm/blob/4.2/src/Oro/Bundle/SalesBundle/Resources/doc/reference/customer.md" target="_blank">Migration Extension documentation</a>
 
 .. |ActivityExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityBundle/Migration/Extension/ActivityExtension.php" target="_blank">ActivityExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityBundle/Migration/Extension/ActivityExtension.php" target="_blank">ActivityExtension</a>
 
 .. |ActivityListExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Migration/Extension/ActivityListExtension.php" target="_blank">ActivityListExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle/Migration/Extension/ActivityListExtension.php" target="_blank">ActivityListExtension</a>
 
 .. |AttachmentExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AttachmentBundle/Migration/Extension/AttachmentExtension.php" target="_blank">AttachmentExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/AttachmentBundle/Migration/Extension/AttachmentExtension.php" target="_blank">AttachmentExtension</a>
 
 .. |CommentExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CommentBundle/Migration/Extension/CommentExtension.php" target="_blank">CommentExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/CommentBundle/Migration/Extension/CommentExtension.php" target="_blank">CommentExtension</a>
 
 .. |AuditFieldExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataAuditBundle/Migration/Extension/AuditFieldExtension.php" target="_blank">AuditFieldExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DataAuditBundle/Migration/Extension/AuditFieldExtension.php" target="_blank">AuditFieldExtension</a>
 
 .. |ChangeTypeExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Migrations/Extension/ChangeTypeExtension.php" target="_blank">ChangeTypeExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityBundle/Migrations/Extension/ChangeTypeExtension.php" target="_blank">ChangeTypeExtension</a>
 
 .. |ExtendExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Migration/Extension/ExtendExtension.php" target="_blank">ExtendExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Migration/Extension/ExtendExtension.php" target="_blank">ExtendExtension</a>
 
 .. |ConvertToExtendExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Migration/Extension/ConvertToExtendExtension.php" target="_blank">ConvertToExtendExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Migration/Extension/ConvertToExtendExtension.php" target="_blank">ConvertToExtendExtension</a>
 
 .. |DataStorageExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Extension/DataStorageExtension.php" target="_blank">DataStorageExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/Extension/DataStorageExtension.php" target="_blank">DataStorageExtension</a>
 
 .. |ScopeExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ScopeBundle/Migration/Extension/ScopeExtension.php" target="_blank">ScopeExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ScopeBundle/Migration/Extension/ScopeExtension.php" target="_blank">ScopeExtension</a>
 
 .. |Installation| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Installation.php" target="_blank">Installation</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/Installation.php" target="_blank">Installation</a>
 
 .. |Activity List Inheritance Targets documentation| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/inheritance.md" target="_blank">Activity List Inheritance Targets documentation</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle/Resources/doc/inheritance.md" target="_blank">Activity List Inheritance Targets documentation</a>
 
 .. |Enable Comment Association with New Activity Entity| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CommentBundle#how-to-enable-comment-association-with-new-activity-entity-using-migrations" target="_blank">Enable Comment Association with New Activity Entity</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/CommentBundle#how-to-enable-comment-association-with-new-activity-entity-using-migrations" target="_blank">Enable Comment Association with New Activity Entity</a>
 
 .. |query bag| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/QueryBag.php" target="_blank">query bag</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/QueryBag.php" target="_blank">query bag</a>
 
 .. |Migration| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MigrationBundle/Migration/Migration.php" target="_blank">Migration</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/Migration.php" target="_blank">Migration</a>
 
 .. |AbstractScopeManager| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Config/AbstractScopeManager.php" target="_blank">AbstractScopeManager</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Config/AbstractScopeManager.php" target="_blank">AbstractScopeManager</a>
 
 .. |ConfigHandler| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Form/Handler/ConfigHandler.php" target="_blank">ConfigHandler</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Form/Handler/ConfigHandler.php" target="_blank">ConfigHandler</a>
 
 .. |GroupSearchProvider| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Provider/GroupSearchProvider.php" target="_blank">GroupSearchProvider</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Provider/GroupSearchProvider.php" target="_blank">GroupSearchProvider</a>
 
 .. |FieldSearchProvider| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Provider/FieldSearchProvider.php" target="_blank">FieldSearchProvider</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Provider/FieldSearchProvider.php" target="_blank">FieldSearchProvider</a>
 
 .. |SearchProviderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ConfigBundle/Provider/SearchProviderInterface.php" target="_blank">SearchProviderInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ConfigBundle/Provider/SearchProviderInterface.php" target="_blank">SearchProviderInterface</a>
 
 .. |MigrationBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">MigrationBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle" target="_blank">MigrationBundle</a>
 
 .. |Symfony Form Type Options| raw:: html
 
@@ -5838,7 +5798,7 @@ Links (Dev)
 
 .. |AttachmentProvider| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AttachmentBundle/Provider/AttachmentProvider.php" target="_blank">AttachmentProvider</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/AttachmentBundle/Provider/AttachmentProvider.php" target="_blank">AttachmentProvider</a>
 
 .. |Font Awesome| raw:: html
 
@@ -5846,7 +5806,7 @@ Links (Dev)
 
 .. |SluggableInterface| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/4.2/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
 
 .. |Symfony Translations| raw:: html
 
@@ -5880,6 +5840,18 @@ Links (Dev)
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application" target="_blank">docker.io/oroinc/commerce-crm-application</a>
 
+.. |Sandbox mode| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/api.html#sandbox-extension" target="_blank">Sandbox mode</a>
+
+.. |EntityVariablesProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/gitEntityBundle/Twig/Sandbox/EntityVariablesProviderInterface.php" target="_blank">EntityVariablesProviderInterface</a>
+
+.. |VariableProcessorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityBundle/Twig/Sandbox/VariableProcessorInterface.php" target="_blank">VariableProcessorInterface</a>
+ 
 .. |docker.io/oroinc/crm-application| raw:: html
 
    <a href="https://hub.docker.com/r/oroinc/crm-application" target="_blank">docker.io/oroinc/crm-application</a>
@@ -5891,3 +5863,4 @@ Links (Dev)
 .. |docker.io/oroinc/commerce-crm-application-de| raw:: html
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application-de" target="_blank">docker.io/oroinc/commerce-crm-application-de</a>
+

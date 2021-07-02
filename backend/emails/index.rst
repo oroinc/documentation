@@ -80,7 +80,7 @@ metadata to the template:
 |                 |           | edited in the user interface.                                          |
 +-----------------+-----------+------------------------------------------------------------------------+
 
-.. note:: The details on template variables are described in details in the |relevant documentation|.
+.. note:: The details on template variables are described in details in the :ref:`relevant email documentation <bundle-docs-platform-email-bundle>`.
 
 Sending Emails
 --------------
@@ -558,7 +558,7 @@ Refresh the Database Schema
 
 Finally, you have to update the database schema and clear the application cache:
 
-.. code-block:: bash
+.. code-block:: none
 
     # update the database schema
     $ php bin/console doctrine:schema:update --force

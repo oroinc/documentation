@@ -135,7 +135,7 @@ To change the font size and line-height, override the following variables:
 
 .. important:: In all cases above, you have to run the following console commands to publish the changes:
 
-                .. code-block:: bash
+                .. code-block:: none
 
                     php bin/console cache:clear
                     php bin/console assets:install --symlink

@@ -41,7 +41,7 @@ The entity can be configured on the entity and field levels.
 Entity Level Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
     entity_config:
         # Scope of entity merge
@@ -63,7 +63,7 @@ Entity Level Configuration
 
 Example:
 
-.. code-block:: bash
+.. code-block:: none
 
     @Config(
      ....
@@ -79,7 +79,7 @@ Example:
 Fields Level Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
     entity_config:
         # Scope of entity merge
@@ -148,7 +148,7 @@ Fields Level Configuration
 
 Example:
 
-.. code-block:: bash
+.. code-block:: none
 
     class Account
     {
@@ -167,7 +167,7 @@ Mass Action Configuration
 
 Example of merge mass action:
 
-.. code-block:: bash
+.. code-block:: none
 
     datagrids:
         accounts-grid:
@@ -185,7 +185,7 @@ You can define your own "Strategy", "Steps", "Accessor" in the DI by using tags 
 
 Tagging merge strategy:
 
-.. code-block:: bash
+.. code-block:: none
 
     services:
         oro_entity_merge.strategy.replace:
@@ -200,7 +200,7 @@ Thr supported merge strategy with the greatest priority will be used for the mer
 
 Tagging merge step:
 
-.. code-block:: bash
+.. code-block:: none
 
     services:
         oro_entity_merge.step.validate:
@@ -213,7 +213,7 @@ Tagging merge step:
 
 Tagging accessor:
 
-.. code-block:: bash
+.. code-block:: none
 
     services:
         oro_entity_merge.accessor.inverse_association:

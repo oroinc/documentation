@@ -40,7 +40,7 @@ Configure Temporary Queue
 
 Create the `oro.temporary` queue on your host with `durable=true` and `x-max-priority=4`.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare queue --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary" durable=true arguments='{"x-max-priority": 4}'
@@ -50,21 +50,21 @@ Relocate Messages to Temporary Queue
 
 Declare the `oro.temporary` exchange with the `fanout` type to be able to move messages to `oro.temporary` with the original **routing_key**.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary" type="fanout" durable=true
 
 Bind the `oro.temporary` exchange with the `oro.temporary` queue. All message from this exchange will be transferred to the `oro.default` queue.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    source="oro.temporary" destination="oro.temporary" destination_type=queue
 
 Create Dynamic Shovel to relocate all message from the `oro.default` to the `oro.temporary` queue.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqctl set_parameter shovel temporary-queue \
    '{"src-protocol": "amqp091", "src-uri": "amqp://localhost:5672", "src-queue": "oro.default", '\
@@ -73,7 +73,7 @@ Create Dynamic Shovel to relocate all message from the `oro.default` to the `oro
 
 Check if all messages are relocated.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqctl shovel_status | grep "temporary-queue"
 
@@ -81,7 +81,7 @@ Shovel will be removed automatically if you specify the `src-delete-after=queue-
 
 Remove the `oro.temporary` exchange.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin delete exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary"
@@ -91,7 +91,7 @@ Configure Alternate Exchange
 
 Declare the `oro.temporary.alternate` exchange with the `fanout` type to be able to move messages to the `oro.default` queue that does not contain the **routing_key** described in the binding mask.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary.alternate" type="fanout" durable=true
@@ -101,7 +101,7 @@ Configure Dividing Exchange
 
 Declare the `oro.temporary.divide` exchange with the `topic` type to be able to move messages to separate queues by **routing_key**. Specify the `alternate-exchange=oro.temporary.alternate` option that marks the `oro.temporary.alternate` exchange as a **alternate exchange** for the `oro.temporary.divide` exchange.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary.divide" type="topic" durable=true \
@@ -112,14 +112,14 @@ Create Additional Queues
 
 Declare the `oro.email` queue with `durable=true` and `x-max-priority=4`.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare queue --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name=oro.email durable=true arguments='{"x-max-priority": 4}'
 
 Declare the `oro.notification` queue with `durable=true` and `x-max-priority=4`.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare queue --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name=oro.notification durable=true arguments='{"x-max-priority": 4}'
@@ -129,14 +129,14 @@ Configure Bindings
 
 Bind the `oro.temporary.alternate` exchange with the `oro.default` queue. All messages from this exchange will be transferred to the `oro.default` queue.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    source="oro.temporary.alternate" destination="oro.default" destination_type=queue
 
 Bind the `oro.temporary.divide` exchange with the `oro.email` queue by `routing_key=oro.email.#`
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    source="oro.temporary.divide" destination="oro.email" destination_type=queue \
@@ -144,7 +144,7 @@ Bind the `oro.temporary.divide` exchange with the `oro.email` queue by `routing_
 
 Bind the `oro.temporary.divide` exchange with the `oro.notification` queue by `routing_key=oro.notification.#`
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin declare binding --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    source="oro.temporary.divide" destination="oro.notification" destination_type=queue \
@@ -153,7 +153,7 @@ Bind the `oro.temporary.divide` exchange with the `oro.notification` queue by `r
 Relocate Messages to Separate Queues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqctl set_parameter shovel divide-queue \
    '{"src-protocol": "amqp091", "src-uri": "amqp://localhost:5672", "src-queue": "oro.temporary", '\
@@ -162,7 +162,7 @@ Relocate Messages to Separate Queues
 
 Check if all messages are relocated.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqctl shovel_status | grep "divide-queue"
 
@@ -171,21 +171,21 @@ Clear Temporary Exchanges and Queues
 
 Remove the `oro.temporary.alternate` exchange.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin delete exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary.alternate"
 
 Remove the `oro.temporary.divide` exchange.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin delete exchange --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary.divide"
 
 Remove the `oro.temporary` queue.
 
-.. code-block:: bash
+.. code-block:: none
 
    rabbitmqadmin delete queue --host=$HOST --user=$USER --password=$PASSWORD --vhost=$VHOST \
    name="oro.temporary"

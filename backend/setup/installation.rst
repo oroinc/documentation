@@ -19,7 +19,7 @@ There are eight base applications to choose from.
 
 Create your new Oro application project with composer by running one of commands below, depending on the base application you want to install:
 
-.. code-block:: bash
+.. code-block:: none
 
    # OroCommerce Community Edition
    composer create-project oro/commerce-crm-application my_project_name 4.2.3 -n
@@ -84,7 +84,7 @@ Install Oro Application
 
 To start the installation of your Oro application, run the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
    php bin/console oro:install --env=prod --timeout=2000
 
@@ -93,7 +93,7 @@ Follow the on-screen instructions in the console.
 .. note:: You will be prompted to choose the installation with or without demo data. If you discard demo data during installation,
    you can install it later by running the following command:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       php bin/console oro:migration:data:load --fixtures-type=demo --env=prod
 
@@ -111,7 +111,7 @@ Below application directories must be writable both by the web server and the co
 
 If your operation system supports ``setfacl`` utility, use the following script to determine your web server user and grant the needed permissions:
 
-.. code-block:: bash
+.. code-block:: none
 
    HTTPDUSER=$(ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1)
 
@@ -183,7 +183,7 @@ Restart Supervisord
 
 To restart supervisor, run:
 
-.. code-block:: bash
+.. code-block:: none
 
    systemctl restart supervisord
 
@@ -192,7 +192,7 @@ Check the Status of the Background Processes (Optional)
 
 To check the status of the background processes, run:
 
-.. code-block:: bash
+.. code-block:: none
 
    supervisorctl status
 

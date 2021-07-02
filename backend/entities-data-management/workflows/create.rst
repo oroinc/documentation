@@ -105,7 +105,7 @@ It is not recommended to modify a system workflow but you can clone it and modif
 
    For example, you want to dump a configuration of the Alternative Checkout workflow to your CustomBundle:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
        php bin/console oro:debug:workflow:definitions b2b_flow_alternative_checkout > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/config/oro/workflows.yml
@@ -116,7 +116,7 @@ It is not recommended to modify a system workflow but you can clone it and modif
 
 2. Dump the workflow translations. Translation contain labels for workflow steps, transitions, etc., thus it is necessary to clone them too.
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       php bin/console oro:workflow:translations:dump b2b_flow_alternative_checkout --locale=en > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/translations/workflows.en.yml
@@ -137,14 +137,14 @@ It is not recommended to modify a system workflow but you can clone it and modif
 
 5. Load your cloned and adjusted workflow translations:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       php bin/console oro:translation:load
 
 6. Load your cloned and adjusted workflow configuration:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       php bin/console oro:workflow:definitions:load

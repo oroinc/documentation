@@ -147,7 +147,7 @@ Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, 
 ConfigAwareFilterInterface Interface
 ------------------------------------
 
-The |ConfigAwareFilterInterface| interface must be implemented by filters that depend on the |entity configuration|.
+The |ConfigAwareFilterInterface| interface must be implemented by filters that |depend on the entity configuration|.
 
 .. _metaawarefilterinterface:
 

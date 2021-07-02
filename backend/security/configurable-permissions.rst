@@ -30,7 +30,7 @@ It has 4 main options:
 
 An example of a simple configurable permission configuration.
 
-.. code-block:: bash
+.. code-block:: none
 
 
     oro_configurable_permissions:

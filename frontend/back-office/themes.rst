@@ -115,7 +115,7 @@ To use the theme in any application, enable it in the application configuration:
 
 Finally, clear the cache and dump all assets:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console cache:clear
     $ php bin/console assets:install --symlink

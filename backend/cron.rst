@@ -31,13 +31,13 @@ To run a set of commands from your application regularly, configure your system 
 
 * For UNIX-based systems, set up a crontab entry, as illustrated below:
 
-  .. code-block:: bash
+  .. code-block:: none
 
       */1 * * * * /path/to/php /path/to/bin/console oro:cron --env=prod > /dev/null
 
   .. note:: Some OS flavors require a username (usually root) in the crontab entry:
 
-      .. code-block:: bash
+      .. code-block:: none
 
           */1 * * * * root /path/to/php /path/to/bin/console oro:cron --env=prod > /dev/null
 

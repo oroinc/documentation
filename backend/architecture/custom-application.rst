@@ -28,7 +28,7 @@ Once code repository is ready, please follow :ref:`installation <installation>` 
 When your application is up and running, you can use development mode to work on customizations. In order to warm up the 
 application cache in development mode please run:
 
-.. code-block:: bash
+.. code-block:: none
 
         $php bin/console cache:clear --env=dev
 

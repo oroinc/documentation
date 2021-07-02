@@ -18,7 +18,7 @@ It is recommended to use SSD to store the data in the MySQL 8.X database. Howeve
 the steps described in the |optimizing InnoDB Disk I/O| article to avoid
 performance issues and set the following configuration parameters in the **/etc/my.cnf** file:
 
-.. code-block:: bash
+.. code-block:: none
 
    [mysqld]
    innodb_file_per_table = 0
@@ -33,7 +33,7 @@ To minimize the risk of long compilations of SQL queries (which sometimes may ta
 for details, see `MySQL documentation <https://dev.mysql.com/doc/refman/5.6/en/controlling-query-plan-evaluation.html>`_),
 set `optimizer_search_depth` to `0`:
 
-.. code-block:: bash
+.. code-block:: none
 
    [mysqld]
    optimizer_search_depth = 0
@@ -46,7 +46,7 @@ Usage of The utf8mb4 Character Set (The Full 4-Byte UTF-8 Unicode Encoding) in M
 To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4`
 character set. Put the following configuration settings in your options file **/etc/my.cnf**:
 
-.. code-block:: bash
+.. code-block:: none
 
    [client]
    default-character-set = utf8mb4
@@ -62,13 +62,13 @@ MySQL also can load default options from another file (not */etc/my.cnf*). In su
 configuration settings in this file. To find out which configuration files your MySQL server uses, run the
 following command:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ mysqld --help --verbose 2> /dev/null | grep -A1 'Default options'
 
 You will get the output with MySQL config files names similar to this:
 
-.. code-block:: bash
+.. code-block:: none
 
     Default options are read from the following files in the given order:
     /etc/my.cnf /etc/mysql/my.cnf /usr/local/etc/my.cnf ~/.my.cnf

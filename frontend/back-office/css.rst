@@ -31,7 +31,7 @@ You can import Sass modules from **node_modules**. Just prepend them with a ~ to
 
 To apply changes, run the command:
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console oro:assets:install  --symlink
 
@@ -91,14 +91,14 @@ which SCSS code is styling an element directly.
 
 The assets building takes some time. So better build only the theme that is currently required. To speed up the process, add a theme name after the build command.
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console oro:assets:build admin.oro
 
 Also, you can use the watch mode to rebuild assets automatically after some SCSS file is changed.
 Just add the ``--watch`` (or ``-w``) option to the build command.
 
-.. code-block:: bash
+.. code-block:: none
 
     $ php bin/console oro:assets:build --watch
 

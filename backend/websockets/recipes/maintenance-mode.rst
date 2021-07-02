@@ -11,7 +11,7 @@ to perform maintenance tasks.
 
 To do this, execute the following command in the console:
 
-.. code-block:: bash
+.. code-block:: none
 
     lexik:maintenance:lock --env=prod
 
@@ -23,7 +23,7 @@ show a flash message and disable all UI elements on the opened page.
 
 To turn off the maintenance mode, run the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
    bin/console lexik:maintenance:unlock --env=prod
 

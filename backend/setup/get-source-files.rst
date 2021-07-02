@@ -24,7 +24,7 @@ Method 1: Create a Project with Composer
 
 2. Create your new Oro application project with Composer by running one of commands below, depending on the base application you want to install:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       # OroCommerce Community Edition
       composer create-project oro/commerce-crm-application my_project_name 4.2.3 -n
@@ -55,7 +55,7 @@ Method 2: Use the GitHub Repository
 
 1. Clone the Oro application GitHub repository by running one of commands below:
 
-   .. code-block:: bash
+   .. code-block:: none
 
     # OroCommerce Community Edition
     git clone -b 4.2.3 https://github.com/oroinc/orocommerce-application my_project_name
@@ -81,7 +81,7 @@ Method 2: Use the GitHub Repository
 2. Run the ``composer install`` command with ``--prefer-dist --no-dev`` parameter to install all Oro application
    dependencies:
 
-   .. code-block:: bash
+   .. code-block:: none
 
        $ cd <application-root-folder>
        $ composer install --prefer-dist --no-dev
@@ -111,7 +111,7 @@ Method 3: Download the Source Code Archive
 
    Then extract the source files. For example, on a Linux based OS run:
 
-   .. code-block:: bash
+   .. code-block:: none
 
        $ cd <application-root-folder>
        $ tar -xzvf crm-application.tar.gz

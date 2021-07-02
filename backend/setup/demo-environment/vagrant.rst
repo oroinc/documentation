@@ -11,7 +11,7 @@ Every Oro application has a *Vagrantfile* that enables you to set up a virtual m
 
 For example, to set up a VM with OroCommerce CE application v. 4.2.1 locally, run:
 
-.. code-block:: bash
+.. code-block:: none
 
     git clone -b 4.2.1 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
     vagrant up
@@ -44,7 +44,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
 1. Get the Oro application source code:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       git clone -b 4.2.1 <oro_application_clone_url> oroapp && cd oroapp
 
@@ -68,7 +68,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    For Community Editions of the Oro Applications run:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       vagrant up
 
@@ -77,7 +77,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
    - **gittoken** - |Github token| use it to install Oro application dependencies
    - **licence** - Enterprise Licence key for your Oro Application
 
-   .. code-block:: bash
+   .. code-block:: none
 
       gittoken=YourGithubToken licence=YourEnterpsiseLicenceKey vagrant up
 
@@ -101,7 +101,7 @@ The default values for the most important settings are:
 
 **Database settings**
 
-.. code-block:: bash
+.. code-block:: none
 
    DB_USER=dbuser
    DB_PASSWORD=DBP@ssword123
@@ -109,7 +109,7 @@ The default values for the most important settings are:
 
 **Application settings**
 
-.. code-block:: bash
+.. code-block:: none
 
    APP_HOST=localhost
    APP_USER=admin
@@ -121,7 +121,7 @@ To customize the application hostname:
 * Set the new APP_HOST parameter value in the Vagrantfile (e.g. `yourdomain.local`)
 * Map the new hostname to the application host IP address in your local |hosts|  file, like in the following examples:
 
-  .. code-block:: bash
+  .. code-block:: none
 
      192.168.33.10 yourdomain.local www.yourdomain.local
 
@@ -165,7 +165,7 @@ SSH Access to the Virtual Machine
 
 To connect to the virtual machine via SSH, run the following command in the working directory on your host machine:
 
-.. code-block:: bash
+.. code-block:: none
 
    vagrant ssh
 
@@ -173,7 +173,7 @@ You will be logged in the virtual machine as *vagrant* user with *sudo* permissi
 
 To configure SSH access to the virtual machine for the utilities that run on the host machine, like IDE, get the explicit SSH credentials by running the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
    vagrant ssh-config
 
