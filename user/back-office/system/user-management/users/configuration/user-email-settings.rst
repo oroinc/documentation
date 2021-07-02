@@ -48,12 +48,12 @@ On the **Email Configuration** page, define options applied to all the emails in
      * *Connected Account* --- The account connected to Gmail. Click **Retrieve Folders** to load folders from the connected account.
 
 
-   * **Account Type: Office 365** is available when the application is integrated with :ref:`Microsoft Office365 OAuth <user-guide-integrations-azure-oauth>`.
+   * **Account Type: Office 365** is available when the application is integrated with :ref:`Microsoft 365 OAuth <user-guide-integrations-azure-oauth>`.
 
-     * *Connected Account* --- The account connected to Office 365. Click **Retrieve Folders** to load folders from the connected account.
+     * *Connected Account* --- The account connected to Microsoft 365. Click **Retrieve Folders** to load folders from the connected account.
 
    .. image:: /user/img/system/integrations/microsoft/office-365-email-sync.png
-      :alt: Email synchronization settings for Office 365
+      :alt: Email synchronization settings for Microsoft 365
 
    * **Account Type: Other**:
 
@@ -90,7 +90,7 @@ On the **Email Configuration** page, define options applied to all the emails in
 * :ref:`Configure Email Settings Globally <admin-configuration-email-configuration-global>`
 * :ref:`Configure Email Settings per Organization <admin-configuration-email-configuration-organization>`
 * :ref:`Configure Email Settings per Website <admin-configuration-system-mailboxes-website>`
-* :ref:`Configure Microsoft Office365 OAuth <user-guide-integrations-azure-oauth>`
+* :ref:`Configure Microsoft 365 OAuth <user-guide-integrations-azure-oauth>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

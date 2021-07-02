@@ -115,7 +115,7 @@ To configure a system mailbox globally:
    * **Mailbox Label** --- Provide a name for the system mailbox.
    * **Email** --- Provide the email address.
 
-5. In the **Synchronization Settings**, configure your IMAP/SMTP connection or an Office 365 account:
+5. In the **Synchronization Settings**, configure your IMAP/SMTP connection or an Microsoft 365 account:
 
    .. note:: Please be aware that if the Account Type value has changed, a new mailbox will be registered and all data from the currently configured mailbox will be lost.
 
@@ -123,14 +123,14 @@ To configure a system mailbox globally:
 
      * *Connected Account* --- The account connected to Gmail. Click **Retrieve Folders** to load folders from the connected account.
 
-   * **Account Type: Office 365** (is available when the application is integrated with :ref:`Microsoft Office365 OAuth <user-guide-integrations-azure-oauth>`)
+   * **Account Type: Office 365** (is available when the application is integrated with :ref:`Microsoft 365 OAuth <user-guide-integrations-azure-oauth>`)
 
-     * *Connected Account* --- The account connected to Office 365. Click **Retrieve Folders** to load folders from the connected account.
+     * *Connected Account* --- The account connected to Microsoft 365. Click **Retrieve Folders** to load folders from the connected account.
 
 |
 
    .. image:: /user/img/system/integrations/microsoft/system-mailbox-365.png
-      :alt: Email synchronization settings for Office 365
+      :alt: Email synchronization settings for Microsoft 365
 
 |
 

@@ -5822,7 +5822,7 @@ Links (Dev)
 
 .. |Doctrine Configuration Reference| raw:: html
 
-   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Microsoft Graph API</a>
+   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Doctrine Configuration Reference</a>
 
 .. |Install Docker| raw:: html
 
@@ -5851,7 +5851,7 @@ Links (Dev)
 .. |VariableProcessorInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityBundle/Twig/Sandbox/VariableProcessorInterface.php" target="_blank">VariableProcessorInterface</a>
- 
+
 .. |docker.io/oroinc/crm-application| raw:: html
 
    <a href="https://hub.docker.com/r/oroinc/crm-application" target="_blank">docker.io/oroinc/crm-application</a>
@@ -5864,3 +5864,6 @@ Links (Dev)
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application-de" target="_blank">docker.io/oroinc/commerce-crm-application-de</a>
 
+.. |Microsoft Graph API| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/graph/" target="_blank">Microsoft Graph API</a>
