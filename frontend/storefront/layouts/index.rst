@@ -562,7 +562,7 @@ To import the same layout update multiple times on the same page, provide unique
     layout:
         actions:
             - '@setBlockTheme':
-                themes: 'AcmeLayoutBundle:layouts:default/layout.html.twig'
+                themes: '@AcmeLayout/layouts/default/layout.html.twig'
             - '@addTree':
                 items:
                     __update:
@@ -672,7 +672,7 @@ First, the datagrid toolbar in `DataGridBundle` was imported with the following 
     layout:
         actions:
             - '@setBlockTheme':
-                themes: 'AcmeLayoutBundle:layouts:default/layout.html.twig'
+                themes: '@AcmeLayout/layouts/default/layout.html.twig'
             - '@addTree':
                 items:
                     __datagrid_toolbar:

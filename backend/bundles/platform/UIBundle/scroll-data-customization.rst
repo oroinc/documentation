@@ -50,14 +50,14 @@ This definition shows service used as an event listener for event ``oro_ui.scrol
         public function onUserUpdate(BeforeListRenderEvent $event)
         {
             $template = $event->getEnvironment()->render(
-                'MyBundle:User:my_update.html.twig',
+                '@My/User/my_update.html.twig',
                 ['form' => $event->getFormView()]
             );
             $event->getScrollData()->addSubBlockData(0, 0, $template);
         }
     }
 
-And the corresponding template `MyBundle:User:my_update.html.twig`:
+And the corresponding template `@My/User/my_update.html.twig`:
 
 .. code-block:: none
 

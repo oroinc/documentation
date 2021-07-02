@@ -129,7 +129,7 @@ The view passes the "relatedContactId" parameter to the grid:
 
 
     {# src/Acme/Bundle/TaskBundle/Resources/views/Task/contactTasks.html.twig #}
-    {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
+    {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
 
     <div class="widget-content">
         {{ dataGrid.renderGrid('acme-tasks-grid', {relatedContactId: contact.id}) }}

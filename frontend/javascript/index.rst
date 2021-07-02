@@ -67,7 +67,7 @@ Routes module (`oroui/js/app/routes`) is an array with only one route, which mat
 Application Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Macros from `OroAssetBundle:Asset.html.twig` is utilized for passing options to the application's constructor. The configuration is placed in `OroUIBundle::js_modules_config.html.twig` template:
+Macros from `@OroAsset/Asset.html.twig` is utilized for passing options to the application's constructor. The configuration is placed in `@OroUI/js_modules_config.html.twig` template:
 
 .. code-block:: none
 

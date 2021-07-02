@@ -47,7 +47,7 @@ the `Resources/views/layouts` directory, for example
     layout:
         actions:
             - '@setBlockTheme':
-                themes: 'AcmeLayoutBundle:layouts:first_theme/default.html.twig'
+                themes: '@AcmeLayout/layouts/first_theme/default.html.twig'
             - '@addTree':
                 items:
                     head:
@@ -1608,7 +1608,7 @@ Next, we are render this form by adding it to the layout update file:
     layout:
         actions:
             - '@setBlockTheme':
-                themes: 'AcmeLayoutBundle:layouts:first_theme/demo_layout_test/product.html.twig'
+                themes: '@AcmeLayout/layouts/first_theme/demo_layout_test/product.html.twig'
             - '@addTree':
                 items:
                     product_view:
@@ -1866,7 +1866,7 @@ We can now add the product image box to our example page:
     layout:
         actions:
             - '@setBlockTheme':
-                themes: 'AcmeLayoutBundle:layouts:first_theme/demo_layout_test/product.html.twig'
+                themes: '@AcmeLayout/layouts/first_theme/demo_layout_test/product.html.twig'
             - '@addTree':
                 items:
                     product_image_box:
@@ -1961,7 +1961,7 @@ the sample product view page.
     layout:
         actions:
             - '@setBlockTheme':
-                themes: 'AcmeLayoutBundle:layouts:first_theme/demo_layout_test/product.html.twig'
+                themes: '@AcmeLayout/layouts/first_theme/demo_layout_test/product.html.twig'
             - '@add':
                 id: product_shop
                 parentId: product_essential

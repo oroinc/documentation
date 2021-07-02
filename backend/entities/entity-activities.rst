@@ -181,7 +181,7 @@ Keep in mind that:
 .. code-block:: twig
 
 
-    {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
+    {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
 
     <div class="widget-content">
         {{ dataGrid.renderGrid('activity-email-grid', {
@@ -301,10 +301,10 @@ activityLink.html.twig
     placeholders:
     items:
         oro_send_email_button:
-            template: OroEmailBundle:Email:activityButton.html.twig
+            template: '@@OroEmail/Email/activityButton.html.twig'
             acl: oro_email_email_create
         oro_send_email_link:
-            template: OroEmailBundle:Email:activityLink.html.twig
+            template: '@@OroEmail/Email/activityLink.html.twig'
             acl: oro_email_email_create
 
 
@@ -395,7 +395,7 @@ If you wish to configure the column, add a section with the name specified in th
 
 The column type is `twig` (unchangeable), so you can also specify `template`.
 
-The default one is |OroActivityBundle:Grid:Column/contexts.html.twig|.
+The default one is |@OroActivity/Grid/Column/contexts.html.twig|.
 
 .. code-block:: twig
 

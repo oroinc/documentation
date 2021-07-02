@@ -202,20 +202,20 @@ Final Step
 ^^^^^^^^^^
 
 Final step for this tutorial is to add grid to template.
-There is a predefined macro for grid rendering, that is defined in ` OroDataGridBundle::macros.html.twig` and can be imported
-by the following call ``{% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}`` .
+There is a predefined macro for grid rendering, that is defined in `@OroDataGrid/macros.html.twig` and can be imported
+by the following call ``{% import '@OroDataGrid/macros.html.twig' as dataGrid %}`` .
 Macro's name is ``renderGrid``, it takes 2 arguments: grid name, route parameters(used for advanced query building).
 So for displaying our grid we have to add following code to template:
 
 .. code-block:: twig
 
 
-    {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
+    {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
     {% block content %}
          {{ dataGrid.renderGrid('acme-demo-datagrid') }}
     {% endblock %}
 
-.. note:: If your template extends the OroUIBundle:actions:index.html.twig template, macros will be already imported and you only have to set the gridName variable to get the grid rendered
+.. note:: If your template extends the @OroUI/actions/index.html.twig template, macros will be already imported and you only have to set the gridName variable to get the grid rendered
 
 Advanced Configuration
 ^^^^^^^^^^^^^^^^^^^^^^

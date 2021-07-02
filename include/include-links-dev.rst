@@ -455,9 +455,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/widget/widget-manager.js" target="_blank">oroui/js/widget-manager</a>
 
-.. |OroUIBundle:actions:index.html.twig| raw:: html
+.. |@OroUI/actions/index.html.twig| raw:: html
 
-   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/actions/index.html.twig" target="_blank">OroUIBundle:actions:index.html.twig</a>
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/actions/index.html.twig" target="_blank">@OroUI/actions/index.html.twig</a>
 
 .. |ComponentShortcutManager| raw:: html
 
@@ -4732,9 +4732,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityBundle/Resources/config/oro/entity_config.yml" target="_blank">all configuration options</a>
 
-.. |OroActivityBundle:Grid:Column/contexts.html.twig| raw:: html
+.. |@OroActivity/Grid/Column/contexts.html.twig| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityBundle/Resources/views/Grid/Column/contexts.html.twig" target="_blank">OroActivityBundle:Grid:Column/contexts.html.twig</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityBundle/Resources/views/Grid/Column/contexts.html.twig" target="_blank">@OroActivity/Grid/Column/contexts.html.twig</a>
 
 .. |aliases declaration| raw:: html
 

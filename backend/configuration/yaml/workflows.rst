@@ -238,10 +238,10 @@ The id of an access control list a user must be granted access to perform the tr
 dialog_template
 ~~~~~~~~~~~~~~~
 
-**type**: ``string`` **default**: ``OroWorkflowBundle:Widget:widget/transitionForm.html.twig``
+**type**: ``string`` **default**: ``@OroWorkflow/Widget/widget/transitionForm.html.twig``
 
 When the `display_type`_ is ``dialog``, this template will be used to create the page displayed on the user interface. The template being referenced here should extend the default
-``OOroWorkflowBundle:Widget:widget/transitionForm.html.twig`` template.
+``@OroWorkflow/Widget/widget/transitionForm.html.twig`` template.
 
 display_type
 ~~~~~~~~~~~~
@@ -298,11 +298,11 @@ message is translated before it appears on the user interface.
 page_template
 ~~~~~~~~~~~~~
 
-**type**: ``string`` **default**: ``OroWorkflowBundle:Workflow:transitionForm.html.twig``
+**type**: ``string`` **default**: ``@OroWorkflow/Workflow/transitionForm.html.twig``
 
 When the `display_type`_ is ``page``, this template will be used to create the page displayed on
 the user interface. The template being referenced here should extend the default
-``OroWorkflowBundle:Workflow:transitionForm.html.twig`` template.
+``@OroWorkflow/Workflow/transitionForm.html.twig`` template.
 
 step_to
 ~~~~~~~

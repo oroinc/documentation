@@ -139,7 +139,7 @@ You can also use your custom form type for the whole transition handling. Have a
                     form_options:
                         configuration: #define configuration for the custom form type
                             handler: 'default' #which handler should process the from (custom form transition handler)
-                            template: 'OroSaleBundle:Quote:update.html.twig' #our complex form page template
+                            template: '@OroSale/Quote/update.html.twig' #our complex form page template
                             data_provider: 'quote_update' #template context data provider that will provide data for the template
                             data_attribute: 'quote' #attribute to store form data and get from
                         form_init: #here we will prepare our form
@@ -179,10 +179,10 @@ They are:
 
 - `handler` - an alias of a registered service by tag `oro_form.registry.form_handler`. You can use the default one by passing `'default'`. See more about form update handler in |Update Handler|.
 
-- `template` - the name of a template that should be used for the custom form, the default value is `OroWorkflowBundle:actions:update.html.twig`, and this template can be used as a starting point for customizations.
+- `template` - the name of a template that should be used for the custom form, the default value is `@OroWorkflow/actions/update.html.twig`, and this template can be used as a starting point for customizations.
 
 .. note::
-   It should be extended from `OroUIBundle:actions:update.html.twig` for compatibility with transition form page (usually all Oro update templates do so).
+   It should be extended from `@OroUI/actions/update.html.twig` for compatibility with transition form page (usually all Oro update templates do so).
 
 - `data_provider` - an alias of a registered service by tag `oro_form.form_template_data_provider` that implements `Oro\\Bundle\\FormBundle\\Provider\\FormTemplateDataProviderInterface`. It should return all necessary data for specified template as controllers usually do.
 

@@ -50,7 +50,7 @@ Widget Template
 ~~~~~~~~~~~~~~~
 
 To actually render the data grid on the dashboard you need to create a Twig template that is based
-on the ``OroDashboardBundle:Dashboard:widget.html.twig`` template. To do so create a template named
+on the ``@OroDashboard/Dashboard/widget.html.twig`` template. To do so create a template named
 ``recent_tasks_widget.html.twig`` located in the ``Resources/views/Dashboard`` directory of your
 bundle (see :ref:`cookbook-entities-dashboard-config` for an explanation of the schema you should
 follow for the template name and location) with the following content:
@@ -59,8 +59,8 @@ follow for the template name and location) with the following content:
 
 
     {# src/AppBundle/Resources/views/Dashboard/recent_tasks_widget.html.twig #}
-    {% extends 'OroDashboardBundle:Dashboard:widget.html.twig' %}
-    {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
+    {% extends '@OroDashboard/Dashboard/widget.html.twig' %}
+    {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
 
     {% block content %}
         {{ dataGrid.renderGrid('app-recent-tasks-grid') }}

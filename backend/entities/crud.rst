@@ -81,7 +81,7 @@ its data:
     {
         /**
          * @Route("/create", name="app_task_create")
-         * @Template("AppBundle:Task:update.html.twig")
+         * @Template("@App/Task/update.html.twig")
          */
         public function createAction(Request $request)
         {
@@ -90,7 +90,7 @@ its data:
 
         /**
          * @Route("/edit/{id}", name="app_task_update", requirements={"id"="\d+"})
-         * @Template("AppBundle:Task:update.html.twig")
+         * @Template("@App/Task/update.html.twig")
          */
         public function editAction(Task $task, Request $request)
         {
@@ -125,7 +125,7 @@ The Template
 ------------
 
 The template that is responsible to display the form fields should extend the base template
-``OroUIBundle:actions:update.html.twig`` from the OroUIBundle. This templates defines some basic blocks
+``@OroUI/actions/update.html.twig`` from the OroUIBundle. This templates defines some basic blocks
 that you can use. This way your own forms will provide the same look and feel as the ones coming
 with OroPlatform:
 
@@ -135,10 +135,10 @@ with OroPlatform:
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
 
     {# extend the base template from the OroUIBundle #}
-    {% extends 'OroUIBundle:actions:update.html.twig' %}
+    {% extends '@OroUI/actions/update.html.twig' %}
 
     {# reuse the form theme provided with OroPlatform #}
-    {% form_theme form with 'OroFormBundle:Form:fields.html.twig' %}
+    {% form_theme form with '@OroForm/Form/fields.html.twig' %}
 
     {# make the current task accessible with the task variable #}
     {% set task = form.vars.value %}
@@ -176,7 +176,7 @@ with OroPlatform:
             {{ parent() }}
         {% else %}
             {% set title = 'oro.ui.create_entity'|trans({ '%entityName%': 'Task' }) %}
-            {{ include('OroUIBundle::page_title_block.html.twig', { title: title }) %}
+            {{ include('@OroUI/page_title_block.html.twig', { title: title }) %}
         {% endif %}
     {% endblock pageHeader %}
 
@@ -217,7 +217,7 @@ Finally, you need to link both actions on the page that displays the list of tas
 
 **1. Add a link to create new tasks**
 
-The base ``OroUIBundle:actions:index.html.twig`` template from the OroUIBundle that you
+The base ``@OroUI/actions/index.html.twig`` template from the OroUIBundle that you
 :ref:`already used <cookbook-entities-grid-controller>` to embed the data grid comes with a
 pre-defined ``navButtons`` block which you can use to add a button that links to the *create task
 action*:
@@ -226,7 +226,7 @@ action*:
 
 
     {# src/AppBundle/Resources/views/Task/index.html.twig #}
-    {% extends 'OroUIBundle:actions:index.html.twig' %}
+    {% extends '@OroUI/actions/index.html.twig' %}
 
     {% set gridName = 'app-tasks-grid' %}
     {% set pageTitle = 'Task' %}

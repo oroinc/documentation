@@ -20,7 +20,7 @@ All configuration data is placed in the configuration under alias
         engine_parameters:
             ...
         log_queries: true
-        item_container_template: MyBundle:Search:itemContainer.html.twig
+        item_container_template: '@My/Search/itemContainer.html.twig'
         entities_config:
             ...
 
@@ -36,7 +36,7 @@ Description of parameters:
    *oro\_search.log\_queries*) - flag that defines whether it is necessary to log
    search queries to the database;
 -  **item\_container\_template**, default
-   "OroSearchBundle:Datagrid:itemContainer.html.twig" (converted to
+   "@OroSearch/Datagrid/itemContainer.html.twig" (converted to
    container parameter *oro\_search.twig.item\_container\_template*) -
    template used to render entity row in search results;
 -  **entities\_config** (converted to container parameter
@@ -71,7 +71,7 @@ from the search.yml files and has only one configuration for each entity.
     Acme\Bundle\DemoBundle\Entity\Tag:
         alias:                          acme_tag
         title_fields:                   [name]
-        search_template:                DemoBundle:Search:result.html.twig
+        search_template:                '@AcmeDemo/Search/result.html.twig'
         route:
             name:                       acme_tag_search
             parameters:
@@ -103,7 +103,7 @@ Result:
 
         alias:                          acme_tag
         title_fields:                   [subject]
-        search_template:                DemoBundle:Search:result.html.twig
+        search_template:                '@AcmeDemo/Search/result.html.twig'
         route:
             name:                       acme_tag_search
             parameters:
@@ -145,7 +145,7 @@ Example:
 
     Acme\DemoBundle\Entity\Product:
         alias: demo_product                                      # Alias for 'from' keyword in advanced search
-        search_template: AcmeDemoBundle:result.html.twig         # Template to use in search result page for this entity type
+        search_template: '@AcmeDemo/result.html.twig'            # Template to use in search result page for this entity type
         label: Demo products                                     # Label for entity to identify entity in search results
         route:
             name: acme_demo_search_product                       # Route name to generate url link to the entity record

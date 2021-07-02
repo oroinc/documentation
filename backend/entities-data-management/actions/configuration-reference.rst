@@ -211,7 +211,7 @@ Button Options configuration has the following options:
     
 * **group** - *string* - Name of operation button menu. The operation button is a part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
     
-* **template** - *string* - This option provides the possibility to override the button template. Should be extended from `OroActionBundle:Operation:button.html.twig`.
+* **template** - *string* - This option provides the possibility to override the button template. Should be extended from `@OroAction/Operation/button.html.twig`.
     
 * **data** - *array* - This option provides possibility to add data-attributes to the button tag or dynamic attributes for datagrid action.
     
@@ -232,7 +232,7 @@ Example
                icon: fa-check
                class: btn
                group: aсme.demo.operations.demogroup.label
-               template: OroActionBundle:Operation:button.html.twig
+               template: '@OroAction/Operation/button.html.twig'
                data:
                    param: value
                    customTitle: $.customTitle
@@ -248,7 +248,7 @@ Frontend Options enable you to override an operation dialog, page template, or t
 
 Frontend Options configuration has the following options:
 
-* **template** - *string* - You can set custom operation dialog template. Should be extended from `OroActionBundle:Operation:form.html.twig`.
+* **template** - *string* - You can set custom operation dialog template. Should be extended from `@OroAction/Operation/form.html.twig`.
     
 * **title** - *string* - Custom title of operation dialog window.
     
@@ -271,7 +271,7 @@ Example
            # ...
            frontend_options:
                confirmation: aсme.demo.operations.operation_perform_confirm
-               template: OroActionBundle:Operation:form.html.twig
+               template: '@OroAction/Operation/form.html.twig'
                title: aсme.demo.operations.dialog.title
                title_parameters:
                    %%some_param%%: $.paramValue

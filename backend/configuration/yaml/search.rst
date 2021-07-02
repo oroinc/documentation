@@ -37,7 +37,7 @@ the internal search engine of OroPlatform. A fully working example can look like
     search:
         Acme\DemoBundle\Entity\Product:
             alias: demo_product
-            search_template: AcmeDemoBundle:result.html.twig
+            search_template: '@AcmeDemo/result.html.twig'
             label: Demo products
             route:
                 name: acme_demo_search_product

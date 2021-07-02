@@ -136,13 +136,13 @@ do so:
 
 
     {# src/AppBundle/Resources/views/Task/index.html.twig #}
-    {% extends 'OroUIBundle:actions:index.html.twig' %}
+    {% extends '@OroUI/actions/index.html.twig' %}
 
     {% set gridName = 'app-tasks-grid' %}
     {% set pageTitle = 'Task' %}
 
     {% block navButtons %}
-        {% include 'OroImportExportBundle:ImportExport:buttons.html.twig' with {
+        {% include '@OroImportExport/ImportExport/buttons.html.twig' with {
             entity_class: 'AppBundle\\Entity\\Task',
             exportProcessor: 'app_task',
             exportTitle: 'Export',
@@ -894,7 +894,7 @@ Import:
 .. code-block:: twig
 
 
-    {% include 'OroImportExportBundle:ImportExport:buttons.html.twig' with {
+    {% include '@OroImportExport/ImportExport/buttons.html.twig' with {
         entity_class: entity_class,
         exportJob: 'your_custom_entity_class_export_to_csv',
         exportProcessor: exportProcessor,
@@ -985,7 +985,7 @@ include following template:
 .. code-block:: twig
 
 
-    {% include 'OroImportExportBundle:ImportExport:buttons_from_configuration.html.twig' with {
+    {% include '@OroImportExport/ImportExport/buttons_from_configuration.html.twig' with {
         'alias': 'oro_product_index'
     } %}
 
@@ -1044,7 +1044,7 @@ In this case, you have to specify the processors that can be used as selected op
 .. code-block:: twig
 
 
-    {% include 'OroImportExportBundle:ImportExport:buttons.html.twig' with {
+    {% include '@OroImportExport/ImportExport/buttons.html.twig' with {
         ...
         exportProcessor: exportProcessors,
         exportTemplateProcessor: exportTemplateProcessors,

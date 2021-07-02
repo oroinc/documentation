@@ -67,7 +67,7 @@ Therefore, the full example for adding the content to the tracked one in Content
 .. code-block:: php
 
 
-    {% import 'OroUIBundle::macros.html.twig' as UI %}
+    {% import '@OroUI/macros.html.twig' as UI %}
 
     <div {{ UI.renderPageComponentAttributes({
         module: 'orosync/js/app/components/tag-content',
@@ -82,7 +82,7 @@ to the Content Manager tracking registry is
 .. code-block:: twig
 
 
-    {% import 'OroSyncBundle:Include:contentTags.html.twig' as syncMacro %}
+    {% import '@OroSync/Include/contentTags.html.twig' as syncMacro %}
     {{ syncMacro.syncContentTags(entity) }}
 
 To generate a content tag on the backend side, you can use the **oro_sync.content.tag_generator** service directly:
@@ -116,7 +116,7 @@ content type on your content type page, you have to add another content type tag
 .. code-block:: twig
 
 
-    {% import 'OroSyncBundle:Include:contentTags.html.twig' as syncMacro %}
+    {% import '@OroSync/Include/contentTags.html.twig' as syncMacro %}
     {{ syncMacro.syncContentTags(primaryEntity) }}
     {{ syncMacro.syncContentTags(anotherEntity) }}
 

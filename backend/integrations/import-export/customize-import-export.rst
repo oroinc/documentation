@@ -185,13 +185,13 @@ OroImportExportBundle. Include it into the twig template in the navigation block
 
 
     {# src/AppBundle/Resources/views/Task/index.html.twig #}
-    {% extends 'OroUIBundle:actions:index.html.twig' %}
+    {% extends '@OroUI/actions/index.html.twig' %}
 
     {% set gridName = 'app-tasks-grid' %}
     {% set pageTitle = 'Task' %}
 
     {% block navButtons %}
-        {% include 'OroImportExportBundle:ImportExport:buttons.html.twig' with {
+        {% include '@OroImportExport/ImportExport/buttons.html.twig' with {
             entity_class: 'AppBundle\\Entity\\Task',
             exportProcessor: 'app_task',
             exportTitle: 'Export',

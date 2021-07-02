@@ -50,7 +50,7 @@ Usage example:
 
 .. code-block:: html
 
-   {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
+   {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
    {{ dataGrid.renderGrid(name, params, renderParams) }}
 
 
@@ -127,7 +127,7 @@ Usage example:
 .. code-block:: none
 
 
-    {% import 'OroUIBundle::macros.html.twig' as UI %}
+    {% import '@OroUI/macros.html.twig' as UI %}
 
     <div>
         {{ oro_widget_render({

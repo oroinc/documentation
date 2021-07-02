@@ -247,13 +247,13 @@ which will serve a view that renders the configured datagrid:
         }
     }
 
-The view can be very simple if you extend the ``OroUIBundle:actions:index.html.twig`` template:
+The view can be very simple if you extend the ``@OroUI/actions/index.html.twig`` template:
 
 .. code-block:: html+jinja
 
 
     {# src/AppBundle/Resources/views/Task/index.html.twig #}
-    {% extends 'OroUIBundle:actions:index.html.twig' %}
+    {% extends '@OroUI/actions/index.html.twig' %}
 
     {% set gridName = 'app-tasks-grid' %}
     {% set pageTitle = 'Task' %}

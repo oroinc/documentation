@@ -98,7 +98,7 @@ The resulting implementation of the ProductsGridListener may look similar to thi
            $column = [
                'label' => 'Price Lists',
                'type' => 'twig',
-               'template' => 'OroB2BPricingBundle:Datagrid:Column/price_lists.html.twig',
+               'template' => '@OroPricing/Datagrid/Column/priceLists.html.twig',
                'frontend_type' => 'html',
                'renderable' => true,
            ];
@@ -288,7 +288,7 @@ This filter can be added to the grid configuration similarly to how we added new
             $column = [
                 'label' => 'Price Lists',
                 'type' => 'twig',
-                'template' => 'OroCustomGridBundle:Datagrid:Column/price_lists.html.twig',
+                'template' => '@OroCustomGrid/Datagrid/Column/price_lists.html.twig',
                 'frontend_type' => 'html',
                 'renderable' => true,
             ];

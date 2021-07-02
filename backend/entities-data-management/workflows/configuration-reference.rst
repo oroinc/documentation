@@ -694,8 +694,8 @@ Transition configuration has the following options:
 * **init_context_attribute** - *string* - Name of the attribute which contains init context: routeName, entityId, entityClass, referrer, group. Default value - `init_context`
 * **display_type** - *string* - Frontend transition form display type. Possible options are: dialog, page. Display type "page" require "form_options" to be set.
 * **destination_page** - *string* - (optional) Parameter used only when `display_type` equals `page`. Specified value will be converted to url by entity configuration (see action `@resolve_destination_page`). In case when `@redirect` action used in `actions` of transition definition, effect from that option will be ignored. Allowed values: `name` or `index` (`index`  will be converted to `name`) , `view` or `~`. Default value `~`.
-* **page_template** - *string* - Custom transition template for transition pages. Should be extended from OroWorkflowBundle:Workflow:transitionForm.html.twig.
-* **dialog_template** - *string* - Custom transition template for transition dialogs. Should be extended from OroWorkflowBundle:Widget:widget/transitionForm.html.twig.
+* **page_template** - *string* - Custom transition template for transition pages. Should be extended from @OroWorkflow/Workflow/transitionForm.html.twig.
+* **dialog_template** - *string* - Custom transition template for transition dialogs. Should be extended from @OroWorkflow/Widget/widget/transitionForm.html.twig.
 * **frontend_options** - Can have such frontend options as **class** (a CSS class applied to transition button), **icon** (CSS class of icon of transition button).
 * **form_options** - These options will be passed to form type of transition, they can contain options for form types of attributes that will be shown when user clicks transition button. See more at :ref:`Transition Forms <backend--workflows--transition-forms>`.
 * **transition_definition** - *string* - Name of associated transition definition.

@@ -20,7 +20,7 @@ To get the page ready for the client side navigation, follow the steps below:
     </html>
     {% else %}
     {# Template for hash tag navigation#}
-    {% include 'OroNavigationBundle:HashNav:hashNavAjax.html.twig'
+    {% include '@OroNavigation/HashNav/hashNavAjax.html.twig'
         with {'script': block('head_script'), 'messages':block('messages'), 'content': block('page_container')}
     %}
     {% endif %}

@@ -44,7 +44,7 @@ dashboard:
         dashboards:
             # a dashboard named "main" using the given template
             main:
-                twig: OroDashboardBundle:Index:default.html.twig
+                twig: '@OroDashboard/Index/default.html.twig'
 
         widgets_configuration:
             # a "title" option for all dashboard widgets
@@ -71,7 +71,7 @@ dashboard and the options are the values. Currently, there is only one supported
 
 **type**: ``string``
 
-The Twig template used to render the dashboard. ``OroDashboardBundle:Index:default.html.twig`` is
+The Twig template used to render the dashboard. ``@OroDashboard/Index/default.html.twig`` is
 used when no value is configured.
 
 ``widgets``

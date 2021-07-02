@@ -143,7 +143,7 @@ Contain settings for the entity UI.
 
 *  **description** *string* - enables you to change the description of the field.
 
-*  **contact_information** *string* - enables you to change contact information (phone or email) for the entity. Each contact_information type requires its own template. E.g. phone => "OroMarketingListBundle:MarketingList/ExtendField:phone.html.twig".
+*  **contact_information** *string* - enables you to change contact information (phone or email) for the entity. Each contact_information type requires its own template. E.g. phone => "@OroMarketingList/MarketingList/ExtendField/phone.html.twig".
 
 .. _annotation-config-field-enum:
 
