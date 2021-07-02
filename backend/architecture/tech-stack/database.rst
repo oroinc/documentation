@@ -48,8 +48,13 @@ DataBase connection is configured using the following parameters placed in confi
    database_name: commerce_crm_ee
    database_user: postgres
    database_password: null
+   database_server_version: '9.6'
 
 Supported **database_driver** values are *pdo_pgsql* for PostgreSQL and *pdo_mysql* for MySQL.
+
+The **database_server_version** determines the DB engine version used in the application.
+This parameter will be mapped to the **server_version** parameter of the Doctrine configuration.
+See |Doctrine Configuration Reference| documentation for more information on this parameter.
 
 DBAL and ORM
 ^^^^^^^^^^^^

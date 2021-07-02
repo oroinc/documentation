@@ -5629,3 +5629,7 @@ Links (Dev)
 .. |SluggableInterface| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
+
+.. |Doctrine Configuration Reference| raw:: html
+
+   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Microsoft Graph API</a>
