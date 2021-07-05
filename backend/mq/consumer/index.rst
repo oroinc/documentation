@@ -6,14 +6,14 @@ Commands
 
 To start the consumer as a background process, in most cases, you have to run the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
     ./bin/console oro:message-queue:consume
 
 A special case of the consumer is the *oro:message-queue:transport:consume* command that allows to explicitly set a queue
 to consume from and a message processor service. For example:
 
-.. code-block:: bash
+.. code-block:: none
 
     bin/console --env=prod --no-debug oro:message-queue:transport:consume oro.default_queue oro_message_queue.client.delegate_message_processor
 
@@ -34,7 +34,7 @@ option is set, the consumer checks the used memory amount after processing each 
 
 For example, if the following command is run:
 
-.. code-block:: bash
+.. code-block:: none
 
     ./bin/console oro:message-queue:consume --memory-limit=700
 

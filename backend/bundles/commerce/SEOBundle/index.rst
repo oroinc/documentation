@@ -5,7 +5,7 @@
 OroSEOBundle
 ============
 
-OroSEOBundle provides CLI to generate |sitemap.xml| and |robots.txt| files for the OroCommerce application and enables management console administrators to configure sitemap generation options in the system configuration UI. The bundle also provides UI for content managers to set localized Search Engine Optimization (SEO) meta tags (title, description, keywords) for every product, category, content node, and CMS page.
+OroSEOBundle provides CLI to generate |sitemap.xml| and |robots.txt| files for the OroCommerce application and enables back-office administrators to configure sitemap generation options in the system configuration UI. The bundle also provides UI for content managers to set localized Search Engine Optimization (SEO) meta tags (title, description, keywords) for every product, category, content node, and CMS page.
 
 Related Documentation
 ---------------------

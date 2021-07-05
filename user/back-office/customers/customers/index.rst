@@ -61,6 +61,7 @@ All the subsidiary departments and divisions are displayed in the Subsidiaries s
    customer-price-lists
    customer-all-products-menus
    customer-frontend-menus
+   customer-settings
 
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -29,7 +29,7 @@ When creating a new promotion, we specify the following general details and disc
 
 The expressions for these conditions are the following:
 
-.. code-block:: bash
+.. code-block:: none
    
    customer.customer_level.name = "Silver"
    and

@@ -52,13 +52,13 @@ Each block has a **block type** that is responsible for passing options and data
 
 To get a list of available block types, run the command:
 
-.. code-block:: bash
+.. code-block:: none
 
    bin/console oro:debug:layout
 
 To get reference on a single block type with all the available options, run:
 
-.. code-block:: bash
+.. code-block:: none
 
    bin/console oro:debug:layout --type=BLOCK_TYPE_NAME
 
@@ -392,13 +392,13 @@ Data Providers Reference
 
 To get a list of available data providers, run the command:
 
-.. code-block:: bash
+.. code-block:: none
 
    bin/console oro:debug:layout
 
 To get reference on a single data provider, run:
 
-.. code-block:: bash
+.. code-block:: none
 
    bin/console oro:debug:layout --provider=DATA_PROVIDER_NAME
 

@@ -24,13 +24,13 @@ Configuration Structure
 
 To get the overall configuration structure, execute the following command:
 
-.. code-block:: bash
+.. code-block:: none
 
     php bin/console oro:api:config:dump-reference
 
 By default this command shows configuration of nesting entities. To simplify the output you can use the ``--max-nesting-level`` option, e.g.
 
-.. code-block:: bash
+.. code-block:: none
 
     php bin/console oro:api:config:dump-reference --max-nesting-level=0
 

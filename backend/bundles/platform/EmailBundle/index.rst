@@ -10,12 +10,13 @@ OroEmailBundle enables system and user mailboxes in the application and provides
 Related Documentation
 ---------------------
 
-* |Use Emails|
-* |Use Email Templates|
-* |Use Email Template Migrations|
-* |Send Email and Email Template Actions|
-* |Email Ownership|
-* |Use System Mailboxes|
+.. toctree::
+   :maxdepth: 1
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+   emails
+   email-templates
+   email-templates-migrations
+   mailboxes
+   ownership
+   transition-actions
+   recipients-autocompletion

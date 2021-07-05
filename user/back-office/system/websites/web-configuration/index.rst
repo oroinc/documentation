@@ -65,6 +65,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Featured Products <sys--websites--commerce--products--featured-products>`
     * :ref:`Promotions <sys--websites--commerce--products--new-arrivals>`
     * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products--website>`
+    * :ref:`Customer Settings <sys--websites--commerce--products--customer-settings>`
 
   * :ref:`Inventory <user-guide--inventory>`
 

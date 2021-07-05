@@ -13,13 +13,13 @@ Installation
 
 1. Install the extension using the composer:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       composer require oro/layout-cache
 
 2. Clear the application cache:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       php bin/console cache:clear --env=prod
 
@@ -481,7 +481,7 @@ Clear the Render Cache
 
 To clear the render cache, run the command below:
 
-.. code-block:: bash
+.. code-block:: none
 
    php bin/console cache:pool:clear cache.oro_layout.render
 

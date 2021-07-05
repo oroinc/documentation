@@ -10,11 +10,7 @@ OroConfigBundle enables developers to define the application configuration setti
 Related Documentation
 ---------------------
 
-* |System Configuration Reference|
-* |Config Management|
-* |Add a New Configuration Scope|
-
-.. Conditions https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/reference/conditions.md
+* :ref:`System Configuration <backend-system-configuration>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

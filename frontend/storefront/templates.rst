@@ -271,7 +271,7 @@ Twig Filters and Functions
 
 Oro defines a lot of additional filters and functions. To get the full list, run:
 
-.. code-block:: bash
+.. code-block:: none
 
    bin/console debug:twig
 

@@ -9,7 +9,7 @@ Silent Installation
 
 For silent installation, use -n (no interaction) and -q (silence the output messages) parameters, and set the required parameters value, like in the example below. Replace items in bold with the information specific to your deployment.
 
-.. code-block:: bash
+.. code-block:: none
 
 	php -dxcache.cacher=0 bin/console oro:install
            --application-url=<URL that is configured as an entry point for Oro application>

@@ -145,7 +145,7 @@ Create Extended Entities
 
 #. Finally, load the changed configuration using the ``oro:entity-extend:update`` command:
 
-   .. code-block:: bash
+   .. code-block:: none
 
        php bin/console oro:entity-extend:update
 
@@ -160,13 +160,13 @@ Apply Changes
 
 The following command updates the database schema and all related caches to reflect changes made in extended entities:
 
-.. code-block:: bash
+.. code-block:: none
 
     php bin/console oro:entity-extend:update
 
 The ``dry-run`` can be used to show changes without applying them, for example:
 
-.. code-block:: bash
+.. code-block:: none
 
     php bin/console oro:entity-extend:update --dry-run
 

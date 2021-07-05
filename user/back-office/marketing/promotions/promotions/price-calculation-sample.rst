@@ -21,7 +21,7 @@ We are going to illustrate how price calculations work in Oro using the example 
    
    The calculated subtotal is:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       round (1.0149*3 + 3.0209*1) = round (6.0656) = 6.07$.
 
@@ -33,7 +33,7 @@ We are going to illustrate how price calculations work in Oro using the example 
 
    For example, if we add a 10% order discount (on the order edit page in the back-office), the calculated discount subtotal is:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       round (6.07/10) = round (0.607) = 0.61$
 
@@ -54,7 +54,7 @@ We are going to illustrate how price calculations work in Oro using the example 
 
    In this case we take the price for one item, multiple by the percent value and the maximum quantity, and then summarize all discounts from promotions, and round the subtotal. The calculated discount subtotal is:
  
-   .. code-block:: bash
+   .. code-block:: none
 
       round((1.0149-10%) * 0.2 * 2 (maximum quantity in 3 existing)) = round(0.365364) = -0.37$
 
@@ -68,7 +68,7 @@ We are going to illustrate how price calculations work in Oro using the example 
 
 7. **Grand Total**
 
-   .. code-block:: bash
+   .. code-block:: none
 
       6.07 - 0.61 - 0.37 + 10 + 0.61 = 15.70$.
 

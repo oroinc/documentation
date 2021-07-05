@@ -14,7 +14,7 @@ Make Sure Xdebug is Disabled
 Xdebug is a very useful debug tool for PHP, but at the same time it adds lots of overhead, especially for heavy and long
 operations. Xdebug status can be checked with ``php -m`` command:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     # xdebug is enabled
@@ -35,7 +35,7 @@ Import from the UI is good for relatively small amount of data (up to 1000 entit
 or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:csv``
 that allows to import records from the specified CSV file.
 
-.. code-block:: bash
+.. code-block:: none
 
 
     $ php bin/console oro:import:csv --help
@@ -51,7 +51,7 @@ that allows to import records from the specified CSV file.
 
 Here is a small example of its usage:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     $ php bin/console oro:import:csv ~/Contact_2000.csv
@@ -95,7 +95,7 @@ The default environment for CLI is dev. In dev environment the application store
 Therefore, it is recommended to run import in prod environment so it would finish much faster. To do so you should add
 the ``--env=prod`` option to your import command:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     $ php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
@@ -108,7 +108,7 @@ During regular import operation, the validation process is performed twice: firs
 before saving imported entities (invalid entities will not be saved to the DB). Initial validation can be skipped and
 import can be performed without it. To do so, start the import command in no interaction mode with the ``--no-interaction`` option:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     $ php bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
@@ -137,7 +137,7 @@ Disable Optional Listeners
 With OroPlatform you can disable some event listeners for the command execution. The ``oro:platform:optional-listeners``
 command shows the list of all such listeners:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     $ bin/console oro:platform:optional-listeners
@@ -150,7 +150,7 @@ command shows the list of all such listeners:
 To disable these listeners the ``--disabled-listeners`` option can be used. Also this option can receive value "all" -
 it will disable all optional listeners. Here is an example:
 
-.. code-block:: bash
+.. code-block:: none
 
 
     $ bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --disabled-listeners=all --no-interaction --env=prod

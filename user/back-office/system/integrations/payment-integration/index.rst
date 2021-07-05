@@ -32,7 +32,7 @@ Any third party payment system integration involves the following steps to enabl
 Create an Integration with a Payment Method Provider
 ----------------------------------------------------
 
-Out of the box, you may integrate OroCommerce with the following systems and services (click the links for detailed guidance):
+You integrate OroCommerce with the following systems and services:
 
 * :ref:`Check/Money Order <user-guide--payment--check-money-order>`
 * :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
@@ -44,7 +44,7 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
 * :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
 
-.. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the |Oro PayPal Express Integration| package.
+.. hint:: The default OroCommerce application includes the following payment methods out-of-the-box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extension Marketplace| to download other payment extensions that you can pair with your OroCommerce applications.
 
 Remove an Integration with a Payment Method Provider
 ----------------------------------------------------

@@ -23,7 +23,7 @@ Files structure with styles should be the following:
 
 All styles should be placed in ``components`` folder with the same file name as a block name. For example: ``components/input/input.scss``:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    .input {
@@ -38,7 +38,7 @@ All styles should be placed in ``components`` folder with the same file name as 
 
 Another example: ``components/button/button.scss``:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    .button {
@@ -85,7 +85,7 @@ Another example: ``button-config.scss``:
 
 To add blocks to resulting ``styles.css`` file, include them into ``styles.scss``:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    @import: './components/input/input';
@@ -133,7 +133,7 @@ In custom themes you can change globals and settings for a particular component 
 
 We use styles from ``my-theme`` and configs from ``my-custom-theme``. For example: ``components/input/input.scss``:
 
-.. code-block:: bash
+.. code-block:: none
 
 
       .button {

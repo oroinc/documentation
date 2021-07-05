@@ -152,25 +152,25 @@ username.
 
 1. Change the directory to the one where the .pem key file is stored.
 
-    .. code-block:: bash
+    .. code-block:: none
 
         cd <.pem file storage directory>
 
 2. Set permissions for the .pem file to 400.
 
-    .. code-block:: bash
+    .. code-block:: none
 
         chmod 400 <.pem file name>
 
 3. Log into the EC2 instance with Oro Application.
 
-    .. code-block:: bash
+    .. code-block:: none
 
         ssh -i /path/to/file/filenamewithkeys.pem centos@<Public IP>
 
     or
 
-    .. code-block:: bash
+    .. code-block:: none
 
         ssh -i /path/to/file/filenamewithkeys.pem centos@<Public DNS>
 
@@ -179,7 +179,7 @@ For additional information, please see the AWS guide |Connecting to Your Linux I
 Manage the EC2 Instance
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-With the help of the EC2 management console, you can:
+With the help of the EC2 back-office, you can:
 
 - Create additional instances based on the Oro application AMIs
 - Connect to the running instances using a Java SSH client directly from your browser

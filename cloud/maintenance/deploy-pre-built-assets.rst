@@ -34,14 +34,14 @@ When the  application is ready to be released, follow the two steps outlined bel
 
    - For OroCommerce & OroCRM v3.1.4 and higher run:
 
-     .. code-block:: bash
+     .. code-block:: none
 
         php bin/console oro:assets:install --env=prod
         php bin/console oro:translations:dump --env=prod
 
    - For OroCommerce & OroCRM from v3.1.0 to v3.1.4 run:
 
-     .. code-block:: bash
+     .. code-block:: none
 
         php bin/console assets:install --env=prod
         php bin/console oro:assets:build --env=prod
@@ -51,7 +51,7 @@ When the  application is ready to be released, follow the two steps outlined bel
 
    - For the OroCommerce v1.6 & OroCRM v2.6 run:
 
-     .. code-block:: bash
+     .. code-block:: none
 
         php bin/console oro:assets:install --env=prod
         php bin/console assetic:dump --env=prod

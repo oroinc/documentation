@@ -42,7 +42,7 @@ Basically, it is a regular Symfony bundle. The only difference is in the way it 
 ..
 .. .. _Symfony command generate:bundle: http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/commands/generate_bundle.html
 ..
-.. .. code-block:: bash
+.. .. code-block:: none
 ..
 ..
 ..     user@host:/var/www/vhosts/platform-application$ php bin/console generate:bundle
@@ -90,7 +90,7 @@ Now you have all the required files to enable the new bundle. To enable the bund
 
 #. Regenerate the application cache using the console command ``cache:clear``:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
        user@host:/var/www/vhosts/platform-application$ php bin/console cache:clear
@@ -122,21 +122,21 @@ To create an installer for AcmeBundle:
 
 1. Clear the application cache:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       bin/console cache:clear
 
 2. Apply the changes that you defined in your code to the database:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       bin/console doctrine:schema:update
 
 3. Generate an installer and save it to the AcmeBundleInstaller.php:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       bin/console oro:migration:dump --bundle=AcmeBundle > AcmeBundleInstaller.php
@@ -150,14 +150,14 @@ To create an installer for AcmeBundle:
 
 #. Check that the database is synced with your code:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       bin/console doctrine:schema:update --dump-sql
 
    If the database is successfully synchronized, you will see the following message:
 
-   .. code-block:: bash
+   .. code-block:: none
 
 
       Nothing to update - your database is already in sync with the current entity metadata.

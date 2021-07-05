@@ -16,7 +16,7 @@ The following software is required to run JS tests:
 
 Once the `node` is installed, install several modules using |Node Packaged Modules| manager by executing the following command from the root folder of your application:
 
-.. code-block:: bash
+.. code-block:: none
   
     npm install
 
@@ -34,7 +34,7 @@ Running
 
 To run tests, call the following command:
 
-.. code-block:: bash
+.. code-block:: none
    
    npm run test
 
@@ -49,7 +49,7 @@ There are few custom options added for preparing karma config:
 
 To keep tests continuously running and re-executing when any watched file is modified, use the following command:
 
-.. code-block:: bash
+.. code-block:: none
    
    npm run test-watch
 
@@ -63,7 +63,7 @@ Any modification of the source or test file will lead to reassembly, after which
 
 To run specific test, use the `--spec "<path/to/someSpec.js>"` parameter:
 
-.. code-block:: bash
+.. code-block:: none
   
    npm run test-watch -- --spec vendor/oro/platform/src/Oro/Bundle/UIBundle/Tests/JS/mediatorSpec.js
 

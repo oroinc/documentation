@@ -208,7 +208,7 @@ Oro application follows this convention and extends the set of the CLI tools by 
 
 To see all Oro applications console commands, run the following command in the console:
 
-.. code-block:: bash
+.. code-block:: none
 
     bin/console list oro
 

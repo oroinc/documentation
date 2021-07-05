@@ -6,24 +6,27 @@
 .. meta::
    :description: System configuration manuals and how-to guides for the Oro application backend developers
 
+.. _backend-system-configuration:
+
 System Configuration
 ====================
 
-With the |OroConfigBundle| you can define configuration settings in different
+With the help of |OroConfigBundle|, you can define configuration settings in different
 scopes. These settings can be organized and visualized in different configuration
 trees.
 
-.. sidebar:: Scopes
+.. code-block:: php
 
-    Currently, all configuration setting reside in the ``user`` scope. This
-    means that all settings can be configured by the user themself. It is
-    planned to add ``bundle`` and ``application`` levels in the future.
+    <?php
+    $config = $this->get('oro_config.user');
+    $value  = $config->get('oro_anybundle.anysetting');
 
-Managing Configuration Settings
--------------------------------
 
-To define your own configuration settings in a bundle, you use the
-:class:`Oro\\Bundle\\ConfigBundle\\DependencyInjection\\SettingsBuilder` in the well-known
+Manage Configuration Settings
+-----------------------------
+
+To define your own configuration settings in a bundle, use the
+:class:`Oro\\Bundle\\ConfigBundle\\DependencyInjection\\SettingsBuilder` in the
 ``Configuration`` class:
 
 .. code-block:: php
@@ -64,14 +67,42 @@ to the configuration tree. It expects the root node of the tree to which the
 new nodes are appended. The second argument is an array of configuration settings.
 The example above adds two options: ``foo`` and ``bar``. Each option can get
 a default value and a type (one of ``scalar``, ``boolean`` or ``array``). The
-default type if none is specified is ``scalar``.
+default type, if none is specified, is ``scalar``.
+
+Service container parameters can be used as the default value or service that implements ``Oro\Bundle\ConfigBundle\Provider\Value\ValueProviderInterface``. All that is required is interface implementation without any additional setup. You can find a practical implementation of the interface in the ConfigBundle.
+
+Example:
+
+.. code-block:: php
+
+    SettingsBuilder::append($root, [
+        'locale' => [
+            'value' => '%oro_locale.language%',
+        ],
+        'entity_segment_id' => [
+            'value' => '@oro_config.provider.default_segment_id',
+        ],
+    ]);
+
+After the tree is processed in the Extension class, pass configuration data to the container, and set an array with `settings` using the `Containerbuilder#prependExtensionConfiguration` method.
+
+**Example:**
+
+.. code-block:: php
+
+     public function load(array $configs, ContainerBuilder $container)
+     {
+         // ....
+         $container->prependExtensionConfig($this->getAlias(), array_intersect_key($config, array_flip(['settings'])));
+         // ...
+     }
 
 .. seealso::
 
-    If you are not familiar with creating ``Configuration`` classes, read
-    about |semantic configurations| in the official documentation.
+    If you are not familiar with creating ``Configuration`` classes, check out an article on
+    |semantic configurations| in the official documentation.
 
-.. sidebar:: How the ``SettingsBuilder`` Works
+.. note:: How the ``SettingsBuilder`` Works
 
     Internally, the settings builder creates a new tree with ``settings``
     being the root node. For each configuration option passed to the ``append()``
@@ -79,22 +110,31 @@ default type if none is specified is ``scalar``.
 
     Finally, the complete tree is appended to the node that was passed to ``append()``.
 
-Creating Configuration Forms
-----------------------------
+Change Config Value via Console Command
+---------------------------------------
 
-To allow a user to modify their configuration settings, you have to create
-a form that is presented to the user. The form configuration is done in the
+You can change the config parameter value in the global scope via console command `oro:config:update`.
+
+This command has two arguments:
+
+* Config parameter name - the key of config parameter you want to change. For example, 'oro_anybundle.anysetting';
+* Config parameter value - the value you want to set to the parameter.
+
+Create Configuration Forms
+--------------------------
+
+To enable a user to modify their configuration settings, create
+a form to be presented to the user. The form configuration is done in the
 ``system_configuration.yml`` file of the bundle.
 
 Fields
 ^^^^^^
 
-For each option, define a field under ``fields`` key:
+For each option, define a field under the ``fields`` key:
 
 .. code-block:: yaml
+   :caption: Acme/DemoBundle/Resources/config/oro/system_configuration.yml
 
-
-    # Acme/DemoBundle/Resources/config/oro/system_configuration.yml
     system_configuration:
         fields:
             foo:
@@ -107,7 +147,8 @@ For each option, define a field under ``fields`` key:
                 priority: 20
                 tooltip: "A tooltip"
 
-The only required field is ``type`` which can refer to any valid form type.
+The only required field is ``type``, which can refer to any valid form type.
+
 Other supported fields are:
 
 ================ ==============================================================
@@ -124,18 +165,17 @@ Field            Description
 ``priority``     Optional field display order
 ================ ==============================================================
 
-Accessing Configuration Values
-------------------------------
+Access Configuration Values
+---------------------------
 
 In Controllers
 ^^^^^^^^^^^^^^
 
-To retrieve configuration values inside a controller, you have to use the
+To retrieve configuration values inside a controller, use the
 ``oro_config.user`` service which is an instance of ``Oro\ConfigBundle\Config\UserConfigManager``.
 Use its ``get()`` method to retrieve the value of a setting:
 
 .. code-block:: php
-
 
     // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
@@ -155,8 +195,7 @@ Use its ``get()`` method to retrieve the value of a setting:
 
 .. note::
 
-    The actual setting name is to be prefixed by the |bundle alias| (here
-    ``acme_demo`` for AcmeDemoBundle).
+    The actual setting name is to be prefixed by the |bundle alias| (``acme_demo`` for AcmeDemoBundle).
 
 .. _app-config-templates:
 
@@ -168,7 +207,6 @@ value of a configuration option:
 
 .. code-block:: html+jinja
 
-
     {# setting becomes the value the user configured or true if they didn't #}
     {% set setting = oro_config_value('acme_demo.foo') %}
 
@@ -177,8 +215,522 @@ value of a configuration option:
     The actual setting name is to be prefixed by the |bundle alias| (here
     ``acme_demo`` for AcmeDemoBundle).
 
+In Workflows and Operations (Actions)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In workflows, you can use a condition to check that System Configuration has the necessary value.
+
+**Class:** ``Oro\Bundle\ConfigBundle\Condition\IsSystemConfigEqual``
+
+**Alias:** is_system_config_equal
+
+**Description:** Check that System Configuration has the necessary value
+
+**Parameters:**
+
+  * key - configuration key of stored value;
+  * value - compared value;
+
+**Configuration Example**
+
+.. code-block:: bash
+
+   '@is_system_config_equal': ['some_config_path', 'needed value']
+
+Add a New Configuration Scope
+-----------------------------
+
+To add a new config scope:
+
+1. Add scope manager.
+
+   A scope manager is a class that provides access to configuration attributes in a particular scope. This class should extend |AbstractScopeManager|.
+
+   In the simplest case, scope manager looks like this:
+
+   .. code-block:: php
+
+        namespace Acme\Bundle\SomeBundle\Config;
+
+        use Oro\Bundle\ConfigBundle\Config\AbstractScopeManager;
+
+        /**
+         * Test config scope
+         */
+        class TestScopeManager extends AbstractScopeManager
+        {
+            /**
+             * {@inheritdoc}
+             */
+            public function getScopedEntityName()
+            {
+                return 'test'; //scope entity name
+            }
+
+            /**
+             * {@inheritdoc}
+             */
+            public function getScopeId()
+            {
+                return 0; // scope entity id (can be different for different cases)
+            }
+        }
+
+   This manager should be registered as the service with tag `oro_config.scope`:
+
+   .. code-block:: yaml
+
+        acme_test.scope.test:
+            class: Acme\Bundle\SomeBundle\Config\TestScopeManager
+            public: false
+            parent: oro_config.scope_manager.abstract
+            tags:
+                - { name: oro_config.scope, scope: test, priority: 50 }
+
+   After this, the scope `test` will be used when retrieving a config value. This scope will be between `global` and `user` scopes.
+   You can use this scope with the `oro_config.test` config provider.
+
+2. Change scope values via the UI.
+
+   To be able to change values for a new scope, add a new tree structure for this scope in the `system_configuration.yml` file, for example:
+
+   .. code-block:: yaml
+
+        system_configuration:
+           tree:
+              test_configuration:
+                  platform:
+                      children:
+                          general_setup:
+                              children:
+                                  localization:
+                                      priority: 255
+                                      children:
+                                          locale_settings:
+                                              priority: 100
+                                              children:
+                                                  - oro_locale.locale
+        ...
+
+   In this example, a user is allowed to change the `locale` settings in the `test` scope.
+
+   Next, add a new form provider for the test scope:
+
+   .. code-block:: php
+
+        <?php
+
+        namespace Acme\Bundle\SomeBundle\Provider;
+
+        use Oro\Bundle\ConfigBundle\Provider\AbstractProvider;
+
+        class TestConfigurationFormProvider extends AbstractProvider
+        {
+            const TEST_TREE_NAME  = 'test_configuration';
+
+            /**
+             * {@inheritdoc}
+             */
+            public function getTree()
+            {
+                return $this->getTreeData(self::TEST_TREE_NAME, self::CORRECT_FIELDS_NESTING_LEVEL);
+            }
+
+            /**
+             * {@inheritdoc}
+             */
+            public function getJsTree()
+            {
+                return $this->getJsTreeData(self::TEST_TREE_NAME, self::CORRECT_MENU_NESTING_LEVEL);
+            }
+        }
+
+
+   register it as a service:
+
+   .. code-block:: yaml
+
+          acme_test.provider.form_provider.test:
+              class: 'Acme\Bundle\SomeBundle\Provider\TestConfigurationFormProvider'
+              parent: 'oro_config.provider.abstract_provider'
+              lazy: true
+
+   add a new action to manipulate data:
+
+   .. code-block:: php
+
+        /**
+         * @Route(
+         *      "/test-config-route/{activeGroup}/{activeSubGroup}",
+         *      name="test_config",
+         *      requirements={"id"="\d+"},
+         *      defaults={"activeGroup" = null, "activeSubGroup" = null}
+         * )
+         * @Template()
+         */
+        public function testConfigAction(Request $request, $activeGroup = null, $activeSubGroup = null)
+        {
+            $provider = $this->get('acme_test.provider.form_provider.test');
+
+            list($activeGroup, $activeSubGroup) = $provider->chooseActiveGroups($activeGroup, $activeSubGroup);
+
+            $tree = $provider->getJsTree();
+            $form = false;
+
+            if ($activeSubGroup !== null) {
+                $form = $provider->getForm($activeSubGroup);
+
+                $manager = $this->get('oro_config.test');
+
+                if ($this->get('oro_config.form.handler.config')
+                    ->setConfigManager($manager)
+                    ->process($form, $request)
+                ) {
+                    $this->get('session')->getFlashBag()->add(
+                        'success',
+                        $this->get('translator')->trans('oro.config.controller.config.saved.message')
+                    );
+
+                    // outdate content tags, it's only special case for generation that are not covered by NavigationBundle
+                    $taggableData = ['name' => 'organization_configuration', 'params' => [$activeGroup, $activeSubGroup]];
+                    $tagGenerator = $this->get('oro_sync.content.tag_generator');
+                    $sender       = $this->get('oro_sync.content.data_update_topic_sender');
+
+                    $sender->send($tagGenerator->generate($taggableData));
+                }
+            }
+
+            return [
+                'data'           => $tree,
+                'form'           => $form ? $form->createView() : null,
+                'activeGroup'    => $activeGroup,
+                'activeSubGroup' => $activeSubGroup,
+            ];
+        }
+
+   and the template:
+
+   .. code-block:: php
+
+        {% extends 'OroConfigBundle::configPage.html.twig' %}
+        {% import 'OroUIBundle::macros.html.twig' as UI %}
+
+        {% set pageTitle = [
+                'acme_test.some_label'|trans
+            ]
+        %}
+
+        {% set formAction    = path(
+                'test_config',
+                {activeGroup: activeGroup, activeSubGroup: activeSubGroup}
+            )
+        %}
+        {% set routeName = 'test_config' %}
+
+Behat
+-----
+
+To enable one or several configuration options in behat:
+
+.. code-block:: bash
+
+   Given I enable configuration options:
+   | oro_config.some_option  |
+   | oro_config.some_option2 |
+
+Configuration Form Definition
+-----------------------------
+
+The configuration should be placed into the ``Resources/config/oro/system_configuration.yml`` file in any bundle.
+The root node should be `system_configuration`.
+
+Available Nodes
+^^^^^^^^^^^^^^^
+
+- `groups` - definition of field groups.
+- `fields` - definition of field (form type).
+- `tree` - definition of configuration form tree.
+- `api_tree` - definition of configuration items available through the API.
+
+Groups
+^^^^^^
+
+This node should also be declared under root node and contain an array of available field groups with their properties.
+A group is an abstract fields bag, view representation of a group is managed on the template level of a specific configuration template
+and depends on its position in the tree.
+
+This means that a group could be rendered as a fieldset, a tab, or part of an accordion list.
+
+.. code-block:: yaml
+
+    system_configuration:
+        groups:
+            platform: #unique name
+                title: 'Platform'             # title is required
+                icon:  fa-hdd-o
+                priority: 30                  # sort order
+                description: some description # add description on the next line after group header
+                tooltip: some tooltip         # add tooltip on the same line after group header
+                page_reload: false            # if true, page will be reloaded after save if something changed in the group
+
+Groups' definitions will be replaced recursively from configs that will be parsed after the original definition.
+To override an existing group title, redefine the group with the same name and `title` value.
+
+.. code-block:: yaml
+
+    system_configuration:
+        groups:
+            platform:
+                title: 'New title' # overridden title
+
+To customize a group configuration form without implementing its own form type, use the `configurator` option.
+The configurator can be implemented as a static method or service.
+The signature of the configurator must be `function (FormBuilderInterface $builder, array $options)`.
+
+To specify a configurator, use the following syntax:
+
+- `ClassName::methodName` for a static method
+- `@service_id::methodName` for a method in a service
+
+Please note that a group configuration form can have several configurators, and they can be specified in different bundles.
+
+**Example**
+
+.. code-block:: yaml
+
+    system_configuration:
+        groups:
+            # string syntax
+            some_group:
+                configurator: Acme\Bundle\DemoBundle\SettingsFormConfigurator::buildForm
+            # array syntax
+            some_group:
+                configurator:
+                    - Acme\Bundle\DemoBundle\SettingsFormConfigurator::buildForm
+                    - '@acme.settings_form_configurator::buildForm'
+
+.. code-block:: php
+
+    <?php
+
+    namespace Acme\Bundle\DemoBundle;
+
+    use Symfony\Component\Form\FormBuilderInterface;
+
+    class SettingsFormConfigurator
+    {
+        public static function buildForm(FormBuilderInterface $builder, array $options)
+        {
+            // put your configuration code here
+        }
+    }
+
+To customize the handling of a group configuration form, use the `handler` option.
+The handler can be implemented as a static method or a service.
+The signature of the handler must be `function (ConfigManager $manager, ConfigChangeSet $changeSet, Form $form)`.
+
+To specify a handler, use the following syntax:
+
+- `ClassName::methodName` for a static method
+- `@service_id::methodName` for a method in a service
+
+Please note that a group configuration form can have several handlers, and they can be specified in different bundles.
+All handlers are executed only if a group configuration form does not have validation errors and the changed configuration option is saved. See |ConfigHandler| for details.
+
+**Example**
+
+.. code-block:: yaml
+
+    system_configuration:
+        groups:
+            # string syntax
+            some_group:
+                handler: Acme\Bundle\DemoBundle\SettingsFormHandler::handle
+            # array syntax
+            some_group:
+                handler:
+                    - Acme\Bundle\DemoBundle\SettingsFormHandler::handle
+                    - '@acme.settings_form_handler::handle'
+
+.. code-block:: php
+
+    <?php
+
+    namespace Acme\Bundle\DemoBundle;
+
+    use Oro\Bundle\ConfigBundle\Config\ConfigChangeSet;
+    use Oro\Bundle\ConfigBundle\Config\ConfigManager;
+
+    class SettingsFormHandler
+    {
+        public static function handle(ConfigManager $manager, ConfigChangeSet $changeSet)
+        {
+            // put your additional form handling code here
+        }
+    }
+
+Fields
+^^^^^^
+
+Field declaration requires property `type`.
+
+* `data_type` - must be specified for all fields except `ui_only` ones
+* `type` - refers to form type of which field should be created
+* `search_type` - indicates how to search by field value, read more in the [Search Type Provider](#search-type-provider) section
+* `tooltip` - show additional info about field
+* `acl_resource` - determines acl resource to check permissions to change config field value(optional)
+* `priority` - sort order for displaying(optional)
+* `ui_only` - indicates whether a field is used only on UI and do not related to any variable (optional, defaults to false)
+* `property_path` - overrides configuration key where field's value will be stored (by default field's name used as path)
+
+Property `options` is also available; it is a proxy to form type definition.
+
+**Example**
+
+.. code-block:: yaml
+
+    system_configuration:
+        fields:
+            date_format:
+                data_type: string
+                type: text # can be any custom type
+                search_type: text
+                options:
+                   label: 'Date format'
+                   tooltip: 'Some additional information'
+                   resettable: false  # should "use default checkbox" be shown(optional, default: true)
+                   # here we can override any default option of the given form type
+                   # also here can be added field tooltips
+                acl_resource: 'acl_resource_name'
+                priority: 20
+                page_reload: false # if true, page will be reloaded after save if field changed
+
+Tree
+~~~~
+
+Configuration of the form tree defines the nested form elements.
+The tree name should be unique to prevent content merging from other trees.
+All nested elements of the group should be placed under the "child" node.
+The sort order can be set with the "priority" property.
+
+**Example**
+
+.. code-block:: yaml
+
+    system_configuration:
+        tree:
+            tree_name:
+                group1:
+                    priority: 20
+                    children:
+                        some_group2:
+                            children:
+                                some_group3:
+                                    - some_field
+                                    ...
+                                    - some_another_field
+
+API Tree
+````````
+
+The `api_tree` section is used to define which configuration option should be available
+through the API, for example REST API. It can also be used to split the options
+into logical groups. Using the group name, an API client can get only a subset of the options.
+
+Please note that
+
+- An configuration option must be defined in the fields section and must have a `data_type` attribute.
+- Nested groups are allowed. The nesting level is not limited.
+
+**Example**
+
+.. code-block:: yaml
+
+    system_configuration:
+        api_tree:
+            look-and-feel:                                         # group name
+                oro_entity_pagination.enabled: ~                   # configuration option
+            outlook:                                               # group name
+                contacts:                                          # nested group name
+                    oro_crm_pro_outlook.contacts_enabled: ~        # configuration option
+                    oro_crm_pro_outlook.contacts_sync_direction: ~
+                tasks:
+                    oro_crm_pro_outlook.tasks_enabled: ~
+
+Search Type Provider
+~~~~~~~~~~~~~~~~~~~~
+
+You can add your own rules on how system configuration search should work.
+By default, search works:
+
+- for group titles, see |GroupSearchProvider|.
+- for field labels and tooltips, see |FieldSearchProvider|.
+- for fields with `search_type: text`, see |FieldSearchProvider|.
+- for fields with `search_type: choice`, see |FieldSearchProvider|.
+
+Define a Search Provider
+````````````````````````
+
+Create your own `DemoSearchProvider` that implements |SearchProviderInterface|.
+
+.. code-block:: php
+
+    <?php
+
+    namespace Acme\Bundle\DemoBundle\Provider;
+
+    use Oro\Bundle\ConfigBundle\Config\ConfigBag;
+    use Oro\Bundle\ConfigBundle\Provider\SearchProviderInterface;
+
+    class DemoSearchProvider implements SearchProviderInterface
+    {
+        /** @var ConfigBag */
+        private $configBag;
+
+        /**
+         * @param ConfigBag $configBag
+         */
+        public function __construct(ConfigBag $configBag)
+        {
+            // use config bag to obtain group or field configuration data
+            $this->configBag = $configBag;
+        }
+
+        /**
+         * Determines whether this provider is applicable for the given name
+         */
+        public function supports($name)
+        {
+            // example how the field can be determined
+            return $this->configBag->getFieldsRoot($name) !== false;
+        }
+
+        /**
+         * Returns configuration search data by given name
+         */
+        public function getData($name)
+        {
+            // example how to to filter by `search_type`
+            $field = $this->configBag->getFieldsRoot($name);
+            if ($field['search_type'] === 'your_own_search_type') {
+                // return your own search data for current field
+            }
+
+            return [];
+        }
+    }
+
+Register your search provider as a service in the DI container with the `oro_config.configuration_search_provider` tag:
+
+.. code-block:: yaml
+
+    acme_demo.configuration_search_provider.demo:
+        class: Acme\Bundle\DemoBundle\Provider\DemoSearchProvider
+        public: false
+        arguments:
+            - '@oro_config.config_bag'
+        tags:
+            - { name: oro_config.configuration_search_provider, priority: -20 }
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
-
-

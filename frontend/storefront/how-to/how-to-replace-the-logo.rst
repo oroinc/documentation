@@ -145,13 +145,13 @@ Replace Favicons
 
    Clear the cache to reload the Yaml configuration files:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       php bin/console cache:clear
 
    Publish images to the public web folder:
 
-   .. code-block:: bash
+   .. code-block:: none
 
       php bin/console assets:install --symlink
 

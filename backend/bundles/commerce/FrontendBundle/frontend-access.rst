@@ -26,7 +26,7 @@ To add a pattern to the list of allowed URL patterns, call `addAllowedUrlPattern
 Frontend Datagrids
 ------------------
 
-The `frontend` option in the datagrid configuration controls the display of the management console datagrids in the storefront. By default, it is suggested that all datagrids are intended to be used in the management console. To allow a datagrid to be visible in the storefront, the `frontend` option should be set to `true`.
+The `frontend` option in the datagrid configuration controls the display of the back-office datagrids in the storefront. By default, it is suggested that all datagrids are intended to be used in the back-office. To allow a datagrid to be visible in the storefront, the `frontend` option should be set to `true`.
 
 .. code-block:: yaml
 

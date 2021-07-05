@@ -7,77 +7,85 @@ The action is a set of processors that handle a request.
 
 Each action has two required elements:
 
--  **context** -  An object that is used to store the input and output data and share data between processors.
+-  **context** -  An object used to store the input and output data and share data between processors.
 -  **main processor** - The main entry point for an action. This class is responsible for creating the context and executing all of the worker processors.
 
 For more details about these elements, see the `Creating a New Action`_ section.
 
 The following table shows all actions provided out-of-the-box:
 
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| Action Name                | Description                                                                                                        |
-+============================+====================================================================================================================+
-| get                        | Returns an entity by its identifier.                                                                               |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_list                  | Returns a list of entities.                                                                                        |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete                     | Deletes an entity by its identifier.                                                                               |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete\_list               | Deletes a list of entities.                                                                                        |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| create                     | Creates a new entity.                                                                                              |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update                     | Updates an existing entity.                                                                                        |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update\_list               | Updates a list of entities of the same type.                                                                       |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_subresource           | Returns a list of related entities represented by a relationship.                                                  |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update\_subresource        | Updates an entity (or entities, it depends on the association type) connected to an entity the sub-resource        |
-|                            | belongs to. This action do not have default implementation, additional processors should be added for each         |
-|                            | sub-resource.                                                                                                      |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| add\_subresource           | Adds an entity (or entities, it depends on the association type) connected to an entity the sub-resource           |
-|                            | belongs to. This action do not have default implementation, additional processors should be added                  |
-|                            | for each sub-resource.                                                                                             |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete\_subresource        | Deletes an entity (or entities, it depends on the association type) connected to an entity the sub-resource        |
-|                            | belongs to. This action do not have default implementation, additional processors should be added for each         |
-|                            | sub-resource.                                                                                                      |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_relationship          | Returns a relationship data.                                                                                       |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update\_relationship       | Updates "to-one" relationship and completely replaces all members of "to-many" relationship.                       |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| add\_relationship          | Adds one or several entities to a relationship. This action is applicable only for "to-many" relationships.        |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete\_relationship       | Deletes one or several entities from a relationship. This action is applicable only for "to-many" relationships.   |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| options                    | Returns the communication options for a resource.                                                                  |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| customize\_loaded\_data    | Makes modifications of data loaded by *get*, *get\_list* and *get\_subresource* actions.                           |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| customize\_form\_data      | Makes modifications of submitted form data for *create* and *update* actions.                                      |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_config                | Returns a configuration of an entity.                                                                              |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_metadata              | Returns metadata of an entity.                                                                                     |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| normalize\_value           | Converts a value to a requested data type.                                                                         |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| collect\_resources         | Returns a list of all resources accessible through API.                                                            |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| collect\_subresources      | Returns a list of all sub-resources accessible through API for a given entity type.                                |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| not\_allowed               | Builds a response for case when a request does not match any public action.                                        |
-|                            | E.g. when HTTP method is not supported for REST API request.                                                       |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| unhandled\_error           | Builds a response for case when an unexpected error happens before any public action is started.                   |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| batch\_update              | Used by *update\_list* action to update or create a set of entities of the same type.                              |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| batch\_update\_item        | Used by *batch\_update* action to update or create an entity that is a part of a batch operation.                  |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Action Name                                               | Description                                                                            |
++===========================================================+========================================================================================+
+| `get <#get-action>`__                                     | Returns an entity by its identifier.                                                   |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_list <#get-list-action>`__                           | Returns a list of entities.                                                            |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `delete <#delete-action>`__                               | Deletes an entity by its identifier.                                                   |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `delete_list <#delete-list-action>`__                     | Deletes a list of entities.                                                            |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `create <#create-action>`__                               | Creates a new entity.                                                                  |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `update <#update-action>`__                               | Updates an existing entity.                                                            |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `update_list <#update-list-action>`__                     | Updates a list of entities of the same type.                                           |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_subresource <#get-subresource-action>`__             | Returns a list of related entities represented by a relationship.                      |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `update_subresource <#update-subresource-action>`__       | Updates an entity (or entities, it depends on the association type) connected to       |
+|                                                           | an entity the sub-resource belongs to. This action does not have the default           |
+|                                                           | implementation, additional processors should be added for each sub-resource            |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `add_subresource <#add-subresource-action>`__             | Adds an entity (or entities, it depends on the association type) connected to          |
+|                                                           | an entity the sub-resource belongs to. This action does not have default               |
+|                                                           | implementation, additional processors should be added for each sub-resource.           |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `delete_subresource <#delete-subresource-action>`__       | Deletes an entity (or entities, it depends on the association type) connected to       |
+|                                                           | an entity the sub-resource belongs to. This action does not have the default           |
+|                                                           | implementation, additional processors should be added for each sub-resource.           |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_relationship <#get-relationship-action>`__           | Returns a relationship data.                                                           |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `update_relationship <#update-relationship-action>`__     | Updates "to-one" relationship and completely replaces all members of                   |
+|                                                           | "to-many" relationship.                                                                |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `add_relationship <#add-relationship-action>`__           | Adds one or several entities to a relationship. This action is applicable only for     |
+|                                                           | "to-many" relationships.                                                               |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `delete_relationship <#delete-relationship-action>`__     | Deletes one or several entities from a relationship. This action is applicable         |
+|                                                           | only for "to-many" relationships.                                                      |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `options <#options-action>`__                             | Returns the communication options for a resource.                                      |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `customize_loaded_data <#customize-loaded-data-action>`__ | Makes modifications of data loaded by **get**, **get_list** and **get_subresource**    |
+|                                                           | actions.                                                                               |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `customize_form_data <#customize-form-data-action>`__     | Makes modification and validation of submitted data, and entities to be persisted      |
+|                                                           | into the database by **create**, **update**, **update_relationship**,                  |
+|                                                           | **add_relationship** and **delete_relationship** actions.                              |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_config <#get-config-action>`__                       | Returns a configuration of an entity.                                                  |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_metadata <#get-metadata-action>`__                   | Returns metadata of an entity.                                                         |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `normalize_value <#normalize-value-action>`__             | Converts a value to a requested data type.                                             |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `collect_resources <#collect-resources-action>`__         | Returns a list of all resources accessible through API.                                |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `collect_subresources <#collect-subresources-action>`__   | Returns a list of all sub-resources accessible through API for a given entity type.    |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `not_allowed <#not-allowed-action>`__                     | Builds a response for the case when a request does not match any public action.        |
+|                                                           | E.g. when the HTTP method is not supported for the REST API request.                   |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `unhandled_error <#unhandled-error-action>`__             | Builds a response for the case when an unexpected error happens before any public      |
+|                                                           | action is started.                                                                     |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `batch_update <#batch-update-action>`__                   | Used by **update_list** action to update or create a set of entities of the same type. |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `batch_update_item <#batch-update-item-action>`__         | Used by **batch_update** action to update or create an entity that is a part of        |
+|                                                           | a batch operation.                                                                     |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
 
 Please see the :ref:`Processors <web-api--processors>` section for more details about how to create a processor.
 
@@ -114,15 +122,15 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","To add a new processor to this group, include it to the ``security_check`` group of actions that execute this action. For example, compare with the ``security_check`` group of the `create <#create-action>`__ or `update <#update-action>`__ actions."
-   "build\_query","Building a query required to load the data.","--"
-   "load\_data","Loading data.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","Use the same rules as for security_check group to add a new processor to this group."
-   "normalize\_data","Converting the loaded data into an array.","In most cases the processors from this group are skipped because most of entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer|."
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","To add a new processor to this group, include it to the **security_check** group of actions that execute this action. For example, compare with the **security_check** group of the `create <#create-action>`__ or `update <#update-action>`__ actions."
+   "build_query","Building a query required to load the data.","--"
+   "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
+   "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
+   "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer|."
    "finalize","Final validation of the loaded data and adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -133,8 +141,8 @@ For examples of usage, see the ``handleGet`` method of |RequestActionHandler|.
 
 .. _get-list-action:
 
-get\_list Action
-^^^^^^^^^^^^^^^^
+get_list Action
+^^^^^^^^^^^^^^^
 
 This action retrieves a list of entities. For more details, see the |JSON:API: Fetching Data| section of the JSON:API specification.
 
@@ -157,15 +165,15 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "build\_query","Building a query required to load data.","--"
-   "load\_data","Loading data.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","--"
-   "normalize\_data","Converting the loaded data into an array.","In most cases the processors from this group are skipped because most of entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntitiesByEntitySerializer|."
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "build_query","Building a query required to load data.","--"
+   "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
+   "data_security_check","Checking whether access to the loaded data is granted.","--"
+   "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntitiesByEntitySerializer|."
    "finalize","Final validation of the loaded data and adding required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -200,14 +208,14 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "load\_data","Loading an entity to be deleted.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","--"
-   "delete\_data","Deleting an entity.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "load_data","Loading an entity to be deleted.","--"
+   "data_security_check","Checking whether access to the loaded data is granted.","--"
+   "delete_data","Deleting an entity.","--"
    "finalize","Adding required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -218,14 +226,14 @@ For examples of usage, see the ``handleDelete`` method of |RequestActionHandler|
 
 .. _delete-list-action:
 
-delete\_list Action
-^^^^^^^^^^^^^^^^^^^
+delete_list Action
+^^^^^^^^^^^^^^^^^^
 
 This action deletes a list of entities.
 
-The entities list is built based on input filters. Please take into account that at least one filter must be specified. Otherwise, an error raises.
+The entities list is built based on input filters. Please take into account that at least one filter must be specified, otherwise, you will get an error.
 
-By default, the maximum number of entities that can be deleted by one request is 100, see the ``max_delete_entities`` option in :ref:`General Configuration <web-api--configuration-general>`. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in `Resources/config/oro/api.yml`. However, please test your limit carefully because a higher limit may make a more significant impact on the server. An example of how to change the default limit is available in the :ref:`How To <max-number-of-entities-to-be-deleted>` topic.
+By default, the maximum number of entities that can be deleted by one request is 100, see the ``max_delete_entities`` option in :ref:`General Configuration <web-api--configuration-general>`. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in `Resources/config/oro/api.yml`. However, please test your limit carefully because a higher limit may significantly impact the server. An example of how to change the default limit is available in the :ref:`How To <max-number-of-entities-to-be-deleted>` topic.
 
 The route name for REST API: ``oro_rest_api_list``.
 
@@ -246,15 +254,15 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","	Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "build\_query","Building a query that will be used to load an entities list to be deleted.","--"
-   "load\_data","Loading the list of entities to be deleted.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","--"
-   "delete\_data","Deleting the list of entities.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "build_query","Building a query that will be used to load an entities list to be deleted.","--"
+   "load_data","Loading the list of entities to be deleted.","--"
+   "data_security_check","Checking whether access to the loaded data is granted.","--"
+   "delete_data","Deleting the list of entities.","--"
    "finalize","Adding required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -289,16 +297,16 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","If you add own security processor in the **security\_check** group of the `get <#get-action>`__ action, add it to this group as well. It is required because the **VIEW** permission is checked here: the created entity should be returned in response, and the **security\_check** group of the `get <#get-action>`__ action is disabled by **oro_api.update.load_normalized_entity** processor."
-   "load\_data","Creating a new entity object.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","Use the same rules as for **security_check** group to add a new processor to this group."
-   "transform\_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save\_data","Persisting an entity.","The processors from this group are not executed for included entities."
-   "normalize\_data","Converting created entity into array.","The processors from this group are not executed for included entities."
-   "finalize","Adding required response headers.","The processors from this group are not executed for included entities."
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|. Also, the processors from this group are not executed for included entities."
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","If you add your own security processor in the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. It is required because the **VIEW** permission is checked here: the created entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by **oro_api.update.load_normalized_entity** processor."
+   "load_data","Creating a new entity object.","--"
+   "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
+   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+   "normalize_data","Converting created entity into array.","--"
+   "finalize","Adding required response headers.","--"
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|. Also, the processors from this group are not executed for 4."
 
 The following diagram shows the main data flow for this action:
 
@@ -333,16 +341,16 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource is granted.","When you add a new processor to the security_check group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
-   "load\_data","Loading an entity object to be updated.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","Use the same rules as for **security_check** group to add a new processor to this group."
-   "transform\_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save\_data","Persisting an entity.","The processors from this group are not executed for included entities."
-   "normalize\_data","Converting updated entity into an array.","The processors from this group are not executed for included entities."
-   "finalize","Adding the required response headers.","The processors from this group are not executed for included entities."
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|. Also, the processors from this group are not executed for included entities."
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource is granted.","When you add a new processor to the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
+   "load_data","Loading an entity object to be updated.","--"
+   "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
+   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+   "normalize_data","Converting updated entity into an array.","--"
+   "finalize","Adding the required response headers.","--"
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -353,8 +361,8 @@ For examples of usage, see the ``handleUpdate`` method of |RequestActionHandler|
 
 .. _update-list-action:
 
-update\_list Action
-^^^^^^^^^^^^^^^^^^^
+update_list Action
+^^^^^^^^^^^^^^^^^^
 
 This action is intended to create or update the list of entities of the same type.
 
@@ -384,13 +392,13 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource is granted.","When you add a new processor to the security_check group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
-   "load\_data","Loading an request data to the storage.","--"
-   "save\_data","Creating an asynchronous batch operation.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource is granted.","When you add a new processor to the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
+   "load_data","Loading an request data to the storage.","--"
+   "save_data","Creating an asynchronous batch operation.","--"
    "finalize","Adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -401,8 +409,8 @@ For examples of usage, see the ``handleUpdateList`` method of |RequestActionHand
 
 .. _get-subresource-action:
 
-get\_subresource Action
-^^^^^^^^^^^^^^^^^^^^^^^
+get_subresource Action
+^^^^^^^^^^^^^^^^^^^^^^
 
 This action retrieves an entity (for "to-one" relationship) or a list of entities (for "to-many" relationship) connected to the entity by a given association. For more details, see the |JSON:API: Fetching Resources| section of the JSON:API specification.
 
@@ -425,15 +433,15 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "build\_query","Building a query to use to load data.","--"
-   "load\_data","Loading data.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","--"
-   "normalize\_data","Converting the loaded data into an array.","In most cases the processors from this group are skipped because most of entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "build_query","Building a query to use to load data.","--"
+   "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
+   "data_security_check","Checking whether access to the loaded data is granted.","--"
+   "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
    "finalize","Final validation of the loaded data and adding the required response headers","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -444,10 +452,10 @@ For examples of usage, see the ``handleGetSubresource`` method of |RequestAction
 
 .. _update-subresource-action:
 
-update\_subresource Action
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+update_subresource Action
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Updates an entity (or entities, it depends on the association type) connected to an entity the sub-resource belongs to. As this action do not have default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors.
+Updates an entity (or entities, it depends on the association type) connected to an entity the sub-resource belongs to. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -468,16 +476,16 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "load\_data","Loading an entity object to be updated.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","--"
-   "transform\_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save\_data","Persisting an entity.","--"
-   "normalize\_data","Converting the result entity into an array.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "load_data","Loading an entity object to be updated.","--"
+   "data_security_check","Checking whether access to the loaded data is granted.","--"
+   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+   "normalize_data","Converting the resulting entity into an array.","--"
    "finalize","Final validation of the loaded data. Adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -486,7 +494,7 @@ The following diagram shows the main data flow for this action:
 
 For examples of usage, see the ``handleUpdateSubresource`` method of |RequestActionHandler|.
 
-An example how to register a processor to build a form builder:
+An example of how to register a processor to build a form builder:
 
 .. code-block:: php
 
@@ -499,10 +507,10 @@ An example how to register a processor to build a form builder:
 
 .. _add-subresource-action:
 
-add\_subresource Action
-^^^^^^^^^^^^^^^^^^^^^^^
+add_subresource Action
+^^^^^^^^^^^^^^^^^^^^^^
 
-Adds an entity (or entities, it depends on the association type) connected to an entity the sub-resource belongs to. As this action do not have default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors.
+Adds an entity (or entities, it depends on the association type) connected to an entity the sub-resource belongs to. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at |BuildFormBuilder| and |BuildCollectionFormBuilder| as examples of such processors.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -523,16 +531,16 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for to use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "load\_data","Loading an entity object to be updated.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data to be used by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "load_data","Loading an entity object to be updated.","--"
+   "data_security_check","Checking whether access to the loaded data is granted.","--"
    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","--"
-   "normalize\_data","Converting the result entity into an array.","--"
+   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+   "normalize_data","Converting the resulting entity into an array.","--"
    "finalize","Adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -541,7 +549,7 @@ The following diagram shows the main data flow for this action:
 
 For examples of usage, see the ``handleAddSubresource`` method of |RequestActionHandler|.
 
-An example how to register a processor to build a form builder:
+An example of how to register a processor to build a form builder:
 
 .. code-block:: php
 
@@ -554,10 +562,10 @@ An example how to register a processor to build a form builder:
 
 .. _delete-subresource-action:
 
-delete\_subresource Action
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+delete_subresource Action
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Deletes an entity (or entities, it depends on the association type) connected to an entity the sub-resource belongs to. As this action do not have default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at BuildFormBuilder and BuildCollectionFormBuilder as examples of such processors.
+Deletes an entity (or entities, it depends on the association type) connected to an entity the sub-resource belongs to. As this action does not have a default implementation, additional processors should be added, at least a processor that will build a form builder for your sub-resource. Take a look at BuildFormBuilder and BuildCollectionFormBuilder as examples of such processors.
 
 The route name for REST API: ``oro_rest_api_subresource``.
 
@@ -578,16 +586,16 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "load\_data","Loading an entity object to be updated.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "load_data","Loading an entity object to be updated.","--"
+   "data_security_check","Checking whether access to the loaded data is granted.","--"
    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","--"
-   "normalize\_data","Converting the result entity into an array.","--"
+   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+   "normalize_data","Converting the resulting entity into an array.","--"
    "finalize","Adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -596,7 +604,7 @@ The following diagram shows the main data flow for this action:
 
 For examples of usage, see the ``handleDeleteSubresource`` method of |RequestActionHandler|.
 
-An example how to register a processor to build a form builder:
+An example of how to register a processor to build a form builder:
 
 .. code-block:: php
 
@@ -609,8 +617,8 @@ An example how to register a processor to build a form builder:
 
 .. _get-relationship-action:
 
-get\_relationship Action
-^^^^^^^^^^^^^^^^^^^^^^^^
+get_relationship Action
+^^^^^^^^^^^^^^^^^^^^^^^
 
 This action retrieves an entity identifier (for "to-one" relationship) or a list of entities' identifiers (for "to-many" relationship) connected to the entity by a given association. For more details, see the |JSON:API: Fetching Relationships| section of the JSON:API specification.
 
@@ -633,15 +641,15 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "build\_query","Building a query to use to load data.","--"
-   "load\_data","Loading data.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "build_query","Building a query to use to load data.","--"
+   "load_data","Loading data.","--"
    "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "normalize\_data","Converting loaded data into an array.","In most cases the processors from this group are skipped because most of entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
+   "normalize_data","Converting loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
    "finalize","	Final validation of the loaded data and adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -652,8 +660,8 @@ For example of usage, see the ``handleGetRelationship`` method of |RequestAction
 
 .. _update-relationship-action:
 
-update\_relationship Action
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+update_relationship Action
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action changes an entity (for "to-one" relationship) or completely replaces all entities (for "to-many" relationship) connected to a given entity by a given association. For more details, see the |JSON:API: Updating Relationships| section of the JSON:API specification.
 
@@ -676,22 +684,22 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "load\_data","Loading an entity object to be updated.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "load_data","Loading an entity object to be updated.","--"
    "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "transform\_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save\_data","Persisting an entity.","--"
+   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+   "save_data","Persisting an entity.","--"
    "finalize","	Adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
 
 For example of usage, see the ``handleUpdateRelationship`` method of |RequestActionHandler|.
 
 .. _add-relationship-action:
 
-add\_relationship Action
-^^^^^^^^^^^^^^^^^^^^^^^^
+add_relationship Action
+^^^^^^^^^^^^^^^^^^^^^^^
 
 This action adds one or several entities to a "to-many" relationship. For more details, see the |JSON:API: Updating Relationships| section of the JSON:API specification.
 
@@ -714,15 +722,15 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "load\_data","Loading an entity object to be updated.","--"
-   "data\_security\_check","Checking whether access to the loaded data is granted.","--"
-   "transform\_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save\_data","Persisting an entity.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "load_data","Loading an entity object to be updated.","--"
+   "data_security_check","Checking whether access to the loaded data is granted.","--"
+   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+   "save_data","Persisting an entity.","--"
    "finalize","Adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -733,8 +741,8 @@ For examples of usage, see the ``handleAddRelationship`` method of |RequestActio
 
 .. _delete-relationship-action:
 
-delete\_relationship Action
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+delete_relationship Action
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action removes one or several entities from a "to-many" relationship. For more details, see the |JSON:API: Updating Relationships| section of the JSON:API specification.
 
@@ -757,15 +765,15 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize\_input","Preparing the input data for use by processors from the next groups.","--"
-   "security\_check","Checking whether access to the requested resource type is granted.","--"
-   "load\_data","Loading an entity object to be updated.","--"
+   "resource_check","Checking whether the requested resource type is accessible via API.","--"
+   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+   "security_check","Checking whether access to the requested resource type is granted.","--"
+   "load_data","Loading an entity object to be updated.","--"
    "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "transform\_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save\_data","Persisting an entity.","--"
+   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+   "save_data","Persisting an entity.","--"
    "finalize","Adding the required response headers.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
@@ -798,8 +806,8 @@ This action has the following processor groups:
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource\_check","Checking whether the requested resource type is accessible via API and validating the request parameters.","--"
-   "normalize\_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+   "resource_check","Checking whether the requested resource type is accessible via API and validating the request parameters.","--"
+   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 For examples of usage, see the ``handleOptionsItem``, ``handleOptionsList``, ``handleOptionsSubresource`` and ``handleOptionsRelationship`` methods of |RequestActionHandler|.
 
@@ -810,8 +818,8 @@ Auxiliary Actions
 
 .. _customize-loaded-data-action:
 
-customize\_loaded\_data Action
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+customize_loaded_data Action
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action makes modifications to the data loaded by the `get <#get-action>`__, `get_list <#get-list-action>`__ and `get_subresource <#get-subresource-action>`__ actions.
 
@@ -819,9 +827,9 @@ The context class: |CustomizeLoadedDataContext|.
 
 The main processor class: |CustomizeLoadedDataProcessor|.
 
-As example of a processor used to modify the loaded data: |ComputePrimaryField| or :ref:`Add a Computed Field <add-computed-field>`. Run ``php bin/console oro:api:debug customize_loaded_data`` to display other processors registered in this action.
+An example of a processor used to modify the loaded data is |ComputePrimaryField| or :ref:`Add a Computed Field <add-computed-field>`. Run ``php bin/console oro:api:debug customize_loaded_data`` to display other processors registered in this action.
 
-The ``collection`` tag attribute can be used for processors of this action to process all primary entities in `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions or all entities in ``to-many`` associations for `get <#get-action>`__, `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions. An example of a case when using of this attribute can be helpful is if you want to execute one SQL query for all entities in a collection to get an additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
+The ``collection`` tag attribute can be used for processors of this action to process all primary entities in `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions or all entities in ``to-many`` associations for `get <#get-action>`__, `get_list <#get-list-action>`__ or `get_subresource <#get-subresource-action>`__ actions. An example of a case when using this attribute can be helpful if you want to execute one SQL query for all entities in a collection to get additional data instead of executing a separate SQL query for each entity in a collection. The default value the ``collection`` tag attribute is ``false``. An example of a processor that should be executed to a whole collection:
 
 .. code-block:: php
 
@@ -831,30 +839,31 @@ The ``collection`` tag attribute can be used for processors of this action to pr
         tags:
             - { name: oro.api.processor, action: customize_loaded_data, collection: true, class: Acme\Bundle\AppBundle\Entity\MyEntity }
 
-.. important:: The collection elements are an associative array and processors responsible to customize the collection must keep keys in this array without changes.
+.. important:: The collection elements are an associative array, and processors responsible for customizing the collection must keep keys in this array without changes.
 
-Note: All processors for this action has ``identifier_only`` tag attribute set to ``false``. It means that such processors are not executed when loading of relationships. If your processor should be executed when loading of relationships set ``identifier_only`` tag attribute to ``true``. If your processor should be executed when loading of relationships, primary and included entities, set ``identifier_only`` tag attribute to ``null``. E.g.:
+.. note:: All processors for this action have the ``identifier_only`` tag attribute set to ``false``. It means that such processors are not executed when loading relationships. If your processor should be executed when loading the relationships, set the ``identifier_only`` tag attribute to ``true``. If your processor should be executed when loading relationships, primary and included entities, set the ``identifier_only`` tag attribute to ``null``. For example:
 
-.. code-block:: php
+    .. code-block:: php
 
-   services:
-    acme.api.compute_my_field:
-        class: Acme\Bundle\AppBundle\Api\Processor\ComputeMyField
-        tags:
-            - { name: oro.api.processor, action: customize_loaded_data, identifier_only: true, class: Acme\Bundle\AppBundle\Entity\MyEntity }
+       services:
+        acme.api.compute_my_field:
+            class: Acme\Bundle\AppBundle\Api\Processor\ComputeMyField
+            tags:
+                - { name: oro.api.processor, action: customize_loaded_data, identifier_only: true, class: Acme\Bundle\AppBundle\Entity\MyEntity }
 
-
-.. note:: The ``identifier_only`` tag attribute is not supported if the ``collection`` tag attribute equals ``true``. All processors intended for the modification of collections are executed when loading primary entities and entities in to-many associations, even if only identifier field is requested.
+.. note:: The ``identifier_only`` tag attribute is not supported if the ``collection`` tag attribute equals ``true``. All processors intended for the modification of collections are executed when loading primary entities and entities in to-many associations, even if only the identifier field is requested.
 
 .. note:: The |ValueTransformer| can be used in ``customize_loaded_data`` processors to convert a value
           to a format suitable for the API response.
 
 .. _customize-form-data-action:
 
-customize\_form\_data Action
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+customize_form_data Action
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action makes modifications of the submitted form data for the `create <#create-action>`__ and `update <#update-action>`__ actions.
+Makes modification and validation of submitted data, and entities to be persisted into the database by
+the `create <#create-action>`__, `update <#update-action>`__, `update_relationship <#update_relationship-action>`__,
+`add_relationship <#add_relationship-action>`__ and `delete_relationship <#delete_relationship-action>`__ actions.
 
 The context class: |CustomizeFormDataContext|.
 
@@ -867,19 +876,24 @@ This action is executed when the following |ApiEvents| are dispatched:
    :widths: 15, 30
 
    "pre_submit","This event is dispatched at the beginning of the Form::submit() method."
-   "submit","This event is dispatched just before the Form::submit() method."
-   "post_submit","This event is dispatched after the Form::submit() method."
+   "submit","This event is dispatched after the Form::submit() method has submitted and mapped the children, and after reverse transformation to normalized representation."
+   "post_submit","This event is dispatched at the very end of the Form::submit()."
    "pre_validate","This event is dispatched at the end of the form submitting process, just before data validation. It can be used to final form data correcting after all listeners, except data validation listener, are executed and all relationships between submitted data are set."
    "post_validate","This event is dispatched at the end of the form submitting process, just after data validation. It can be used to finalize the form after all listeners, including data validation listener, are executed. E.g. it can be used to correct form validation result."
+   "pre_flush_data","This event is dispatched after the database transaction is open but before data are flushed into the database."
+   "post_flush_data","This event is dispatched after data are successfully flushed into the database but before the database transaction is committed."
+   "post_save_data","This event is dispatched after data are successfully flushed into the database, and the database transaction is committed. It can be used to perform some not crucial operations after data are saved into the database. It means that failure of these operations will not roll back data saved into the database."
 
-Please note the all these events use the same context, so it can be used to share data between events.
+.. note:: All these events use the same context, so it can be used to share data between events.
 
-As example of a processor used to modify the loaded data: |MapPrimaryField|. Also you can run ``php bin/console oro:api:debug customize_form_data`` to display other processors registered in this action.
+.. note:: When a request contains :ref:`included entities <web-services-api--create-update-related-resources>`, these events are dispatched for the included entities first and then for the primary entity. Each entity has its own context. Use the **getSharedData()** method of the `Context <#context-class>`__ class to share data between events for different entities.
+
+An example of a processor used to modify the submitted data is |MapPrimaryField|. You can also run ``php bin/console oro:api:debug customize_form_data`` to display other processors registered in this action.
 
 .. _get-config-action:
 
-get\_config Action
-^^^^^^^^^^^^^^^^^^
+get_config Action
+^^^^^^^^^^^^^^^^^
 
 This action retrieves a configuration of an entity.
 
@@ -901,10 +915,10 @@ Example:
 
 .. _get-metadata-action:
 
-get\_metadata Action
-^^^^^^^^^^^^^^^^^^^^
+get_metadata Action
+^^^^^^^^^^^^^^^^^^^
 
-This action retrieves a metadata of an entity.
+This action retrieves metadata of an entity.
 
 The context class: |MetadataContext|.
 
@@ -924,8 +938,8 @@ Example:
 
 .. _normalize-value-action:
 
-normalize\_value Action
-^^^^^^^^^^^^^^^^^^^^^^^
+normalize_value Action
+^^^^^^^^^^^^^^^^^^^^^^
 
 This action converts an input value to a requested data type.
 
@@ -949,8 +963,8 @@ Example:
 
 .. _collect-resource-action:
 
-collect\_resources Action
-^^^^^^^^^^^^^^^^^^^^^^^^^
+collect_resources Action
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action gets a list of all resources accessible via the API.
 
@@ -984,8 +998,8 @@ Example:
 
 .. _collect-subresource-action:
 
-collect\_subresources Action
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+collect_subresources Action
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action retrieves a list of all sub-resources accessible via the API for a given entity type.
 
@@ -1008,12 +1022,12 @@ Example:
 
 .. _not-allowed-action:
 
-not\_allowed Action
-^^^^^^^^^^^^^^^^^^^
+not_allowed Action
+^^^^^^^^^^^^^^^^^^
 
-This action builds a response for case when a request does not match any public action. An example of such case can be for REST API request with not supported HTTP method.
+This action builds a response for the case when a request does not match any public action. An example of such a case can be for REST API request with unsupported HTTP method.
 
-This action does not have own context class and own processor class. It can work with any context class based on `Context <#context-class>`__ class and it can be processed by any public action processor. Which processor will be used depends on the request attributes.
+This action does not have its own context and processor classes. It can work with any context class based on `Context <#context-class>`__ class and it can be processed by any public action processor. Which processor will be used depends on the request attributes.
 
 Run ``php bin/console oro:api:debug not_allowed`` to list the processors.
 
@@ -1031,12 +1045,12 @@ For examples of usage, see the ``handleNotAllowedItem``, ``handleNotAllowedList`
 
 .. _unhandled-error-action:
 
-unhandled\_error Action
-^^^^^^^^^^^^^^^^^^^^^^^
+unhandled_error Action
+^^^^^^^^^^^^^^^^^^^^^^
 
-This action builds a response for case when an unexpected error happens before any public action is started.
+This action builds a response for the case when an unexpected error happens before any public action is started.
 
-The context class: this action does not have own context class and it uses `Context <#context-class>`__ class.
+The context class: this action does not have its own context class and it uses `Context <#context-class>`__ class.
 
 The main processor class: |UnhandledErrorProcessor|.
 
@@ -1055,8 +1069,8 @@ For examples of usage, see the ``handleUnhandledError`` method of |RequestAction
 
 .. _batch-update-action:
 
-batch\_update Action
-^^^^^^^^^^^^^^^^^^^^
+batch_update Action
+^^^^^^^^^^^^^^^^^^^
 
 This action is intended to update or create a set of entities of the same type that are a part of an asynchronous
 batch operation. It is triggered by the `update_list <#update-list-action>`__ action.
@@ -1088,8 +1102,8 @@ For examples of usage, see |BatchUpdateHandler|.
 
 .. _batch-update-item-action:
 
-batch\_update\_item Action
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+batch_update_item Action
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to create or update an entity that is a part of an asynchronous batch operation.
 It is used by the `batch_update <#batch-update-action>`__ action.
@@ -1158,11 +1172,11 @@ General methods:
 -  **resetErrors()** - Removes all errors.
 -  **isSoftErrorsHandling()** - Retrieves a value that indicates whether to stop the further processing or thrown an exception in case of error.
 -  **setSoftErrorsHandling(softErrorsHandling)** - Sets a value that indicates whether to stop the further processing or thrown an exception in case of error.
--  **setProcessed(operationName)** - Marks a work as already done. In the most cases this method is useless because it is easy to determine when a work is already done just checking a state of a context. However, if a processor performs a complex work, it might be required to mark a work as already done directly.
--  **clearProcessed(operationName)** - Marks a work as not yet done.
+-  **setProcessed(operationName)** - Marks work as done. In most cases, this method is useless because it is easy to determine when work is already done by checking the state of a context. However, if a processor performs complex work, it might be required to mark it as already done directly.
+-  **clearProcessed(operationName)** - Marks work as not yet done.
 -  **isProcessed(operationName)** - Checks whether work is already done.
--  **getSharedData()** - Retrieves an object that is used to share data between a primary action and actions that are executed as part of this action. Also, this object can be used to share data between different kind of child actions.
--  **setSharedData(parameterBag)** - Sets an object that is used to share data.
+-  **getSharedData()** - Retrieves an object used to share data between a primary action and actions that are executed as part of this action. Also, this object can be used to share data between different kind of child actions.
+-  **setSharedData(parameterBag)** - Sets an object used to share data.
 -  **getNormalizationContext()** - Gets a context for response data normalization.
 -  **getInfoRecords()** - Gets a list of records contains an additional information about collections, e.g. "has_more" flag in such record indicates whether a collection has more records than it was requested.
 -  **setInfoRecords(infoRecords)** - Sets a list of records contains an additional information about collections, e.g. "has_more" flag in such record indicates whether a collection has more records than it was requested.
@@ -1249,10 +1263,10 @@ Parent entity metadata related methods:
 Creating a New Action
 ---------------------
 
-To create a new action you need to create two classes:
+To create a new action, to create two classes:
 
--  **context** - This class represents an context in scope of which an action is executed. An instance of this class is used to store the input and output data and share data between processors. This class must extend |ApiContext|. Depending on your needs, you can use another classes derived from |ApiContext|, for example |Context|, |SingleItemContext| or |ListContext|.
--  **main processor** - This class is the main entry point for an action and responsible for creating an instance of the context class and executing all worker processors. This class must extend |ActionProcessor| and implement the ``createContextObject`` method. Depending on your needs, you can use another classes derived from |ActionProcessor|, for example |NormalizeResultActionProcessor|.
+-  **context** - This class represents a context in the scope of which an action is executed. An instance of this class is used to store the input and output data and share data between processors. This class must extend |ApiContext|. Depending on your needs, you can use another classes derived from |ApiContext|, for example |Context|, |SingleItemContext| or |ListContext|.
+-  **main processor** - This class is the main entry point for an action and responsible for creating an instance of the context class and executing all worker processors. This class must extend |ActionProcessor| and implement the ``createContextObject`` method. Depending on your needs, you can use other classes derived from |ActionProcessor|, for example, |NormalizeResultActionProcessor|.
 
 .. code-block:: php
 
@@ -1311,7 +1325,7 @@ If you need to create groups for your action, register them in the ApiBundle con
                     finalize:
                         priority: -30
 
-Please note that the ``priority`` attribute is used to control the order in which groups of processors are executed. The higher the priority, the earlier a group of processors is executed. Default value is 0. The possible range is from -254 to 252. For details on processor creation, see the :ref:`Processors <web-api--processors>` section.
+.. note:: The ``priority`` attribute is used to control the order in which groups of processors are executed. The higher the priority, the earlier a group of processors is executed. The default value is 0. The possible range is from -254 to 252. For details on processor creation, see the :ref:`Processors <web-api--processors>` section.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

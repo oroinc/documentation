@@ -1,7 +1,7 @@
 .. _dev-translation:
 
-Translation
-===========
+Content and User Iterface Translation
+=====================================
 
 There are 3 ways to translate content displayed in Oro applications to a user. You can use:
 
@@ -30,8 +30,7 @@ To translate labels, use the Translation component, which is one of the main Sym
 Oro application adds the translation functionality on top of Symfony's standard approach which enables modification of
 translations via UI.
 
-To use this approach, add the translation file to the bundle:
-**Resources/translations/messages.en.yml**
+To use this approach, add the translation file to the bundle: **Resources/translations/messages.en.yml**
 
 .. code-block:: php
 
@@ -212,8 +211,7 @@ For the grid to have working translations for entities with `Gedmo` fields, add 
                hints:
                    - HINT_TRANSLATABLE
 
-Below is a simple example of a grid configuration which uses the hint:
-**Resources/config/oro/datagrids.yml**
+Below is a simple example of a grid configuration which uses the hint: **Resources/config/oro/datagrids.yml**
 
 
 .. code-block:: php
@@ -364,8 +362,7 @@ inside the bundle class:
         }
     }
 
-As the result, a proxy class is generated in the application cache:
-**cache/prod/oro_entities/Extend/Entity/EX_OroAcmeBundle_Acme.php**
+As the result, a proxy class is generated in the application cache: **cache/prod/oro_entities/Extend/Entity/EX_OroAcmeBundle_Acme.php**
 
 .. code-block:: php
 
@@ -422,10 +419,6 @@ To retrieve a name for the `Localization`, it is enough to use the `getName()` m
 
 **More Sources on Translations**
 
-*Bundle Documentation*
-
-* |OroTranslationBundle Documentation|
-
 *Business User Documentation*
 
 * :ref:`System Localizations and Translations <sys--config--sysconfig--general-setup--localization>`
@@ -447,5 +440,4 @@ To retrieve a name for the `Localization`, it is enough to use the `getName()` m
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
-
 

@@ -31,7 +31,7 @@ communication on frontend, you should configure additional reverse proxy before 
 
 Below you can find an example of this kind of configuration adjustment for **Nginx** (the recommended web server):
 
-.. code-block:: bash
+.. code-block:: none
 
     server {
         # This is your regular configuration for SSL connections to website
@@ -159,7 +159,7 @@ Run the WebSocket Server
 
 OroSyncBundle provides the **gos:websocket:server** console command that runs the WebSocket server:
 
-.. code-block:: bash
+.. code-block:: none
 
     php bin/console gos:websocket:server
 
@@ -169,7 +169,7 @@ recommended to configure a supervisor to run the WebSocket server and ensure its
 For example, you can install |Supervisord| and configure it to run the WebSocket server with following
 configuration instructions:
 
-.. code-block:: bash
+.. code-block:: none
 
     # Supervisord configuration file, e.g. /etc/supervisord.conf
     [program:oro_web_socket]

@@ -25,7 +25,7 @@ Here is an example of the system config section.
 The ``oro_order.enable_purchase_history`` option turns the feature on or off.
 The ``oro_order.order_previously_purchased_period`` option stores the number of days that the purchase history should cover. The products listed as previously purchased are filtered using this timeframe and are displayed in the |previously purchased products grid|.
 
-For more information about system_config.yml, please see the relevant |system configuration documentation|.
+For more information about system_config.yml, please see the relevant :ref:`system configuration documentation <backend-system-configuration>`.
 
 .. _previously-purchased-products-website-search-index:
 

@@ -38,6 +38,7 @@ Default configuration options for the Oro application are provided in brackets b
             database_name (oro_crm):
             database_user (root):
             database_password (null):
+            database_server_version (null):
             mailer_transport (smtp):
             mailer_host (127.0.0.1):
             mailer_port (null):
@@ -65,12 +66,13 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
 
 
        parameters:
-          database_driver:        pdo_mysql
-          database_host:          154.122.122.154
-          database_port:          3606
-          database_name:          orocommerce_database
-          database_user:          orocommerce_database_user
-          database_password:      orocommerce_database_password
+          database_driver:         pdo_mysql
+          database_host:           154.122.122.154
+          database_port:           3606
+          database_name:           orocommerce_database
+          database_user:           orocommerce_database_user
+          database_password:       orocommerce_database_password
+          database_server_version: '8.0' # The DB engine version
 
           mailer_transport:       mail
           mailer_host:            155.122.122.155

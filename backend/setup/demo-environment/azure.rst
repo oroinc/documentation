@@ -1,7 +1,7 @@
 .. _demo-environment-azure:
 
-Azure VM
-=========
+Azure Cloud Platform
+====================
 
 Azure Marketplace enables you to deploy pre-configured demo instances of the latest LTS releases of OroCRM and OroCommerce Community Editions with or without demo data.
 

@@ -196,7 +196,7 @@ Titles
 
 Title can be defined with annotation together with route annotation:
 
-.. code-block:: bash
+.. code-block:: none
 
 
    @TitleTemplate("Route title with %parameter%")
