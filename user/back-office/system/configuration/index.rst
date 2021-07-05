@@ -5,7 +5,7 @@
 Global Configuration Settings
 =============================
 
-Settings under the **System > Configuration** menu enable you set up your Oro application specifically to your business needs. Settings located here are :ref:`system-wide (or global) <doc-system-configuration>`. Configuring these settings globally means that they are by default applied throughout all organizations, websites and users in your system. This is the base configuration level that you can customize :ref:`per organization <doc-organization-configuration>`, :ref:`website <doc-website-configuration>`, or :ref:`user <doc-my-user-configuration>` later on. Selected settings are also available on :ref:`customer group <user-guide--customer-groups--customer-settings>` and :ref:`customer <user-guide--customers--customer-settings>` levels.
+Settings under the **System > Configuration** menu enable you set up your Oro application specifically to your business needs. Settings located here are :ref:`system-wide (or global) <doc-system-configuration>`. Configuring these settings globally means that they are by default applied throughout all organizations, websites and users in your system. This is the base configuration level and you can customize some of its options :ref:`per organization <doc-organization-configuration>`, :ref:`website <doc-website-configuration>`, or :ref:`user <doc-my-user-configuration>` later on. Selected settings are also available on :ref:`customer group <user-guide--customer-groups--customer-settings>` and :ref:`customer <user-guide--customers--customer-settings>` levels.
 
 Based on the level where configuration has taken place, settings can fall back to other levels following the pattern below:
 
@@ -17,9 +17,10 @@ Based on the level where configuration has taken place, settings can fall back t
 
 .. image:: /user/img/system/configuration/ConfigLevels.png
    :align: center
+   :scale: 95%
    :alt: A fallback pattern of the configuration levels
 
-However:
+Be aware that:
 
 * When **Use System** check box is enabled on the configuration page of the required option, system settings override website or organization. Clearing this check box next to the required option and changing its value means that you are configuring this particular option specifically for the selected organization.
 
