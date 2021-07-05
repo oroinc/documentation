@@ -28,7 +28,7 @@ Each email address can be connected to an entity object which is the owner of th
     use Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface;
 
     class User extends ExtendUser implements
-        AdvancedUserInterface,
+        UserInterface,
         \Serializable,
         Taggable,
         EmailOwnerInterface,
