@@ -849,10 +849,10 @@ Links (User)
 
 .. |Fundamental OroCommerce Online Course| raw:: html
 
-   <a href="https://academy.oroinc.com/course/fundamental-orocommerce/" target="_blank">search.allow_expensive_queries</a>
+   <a href="https://academy.oroinc.com/course/fundamental-orocommerce/" target="_blank">Fundamental OroCommerce Online Course</a>
 
 .. |Content Management Online Course| raw:: html
 
-   <a href="https://academy.oroinc.com/course/content-management/" target="_blank">search.allow_expensive_queries</a>
+   <a href="https://academy.oroinc.com/course/content-management/" target="_blank">Content Management Online Course</a>
 
 
