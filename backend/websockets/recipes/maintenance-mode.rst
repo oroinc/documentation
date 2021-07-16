@@ -13,7 +13,7 @@ To do this, execute the following command in the console:
 
 .. code-block:: none
 
-    lexik:maintenance:lock --env=prod
+    oro:maintenance:lock --env=prod
 
 This prompts the site to switch to the maintenance mode. All new visitors will 
 see a message informing that the website is in the maintenance mode. All users 
@@ -25,5 +25,5 @@ To turn off the maintenance mode, run the following command:
 
 .. code-block:: none
 
-   bin/console lexik:maintenance:unlock --env=prod
+   bin/console oro:maintenance:unlock --env=prod
 
