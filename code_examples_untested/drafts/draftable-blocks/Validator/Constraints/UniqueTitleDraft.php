@@ -19,9 +19,6 @@ class UniqueTitleDraft extends Constraint
      */
     public $fields;
 
-    /**
-     * @return string
-     */
     public function getTargets(): string
     {
         return self::PROPERTY_CONSTRAINT;

@@ -25,7 +25,7 @@ Create an entity with 2 fields: **title** and **content** and implement the enti
 .. note::
     For simplicity, use the predefined ``DraftableTrait`` trait:
 
-.. oro_integrity_check:: fedf5a324b0fda71ee4434c2b1b1aebb3ed40ae7
+.. oro_integrity_check:: 5478c2539e289c5908a39a31d4b8d5ee5dc3965c
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Entity/Block.php
         :language: php
@@ -69,7 +69,7 @@ The fields responsible for the draft must match the interface and have the appro
 
 After you complete it, you will have the ``installer`` with the following content:
 
-.. oro_integrity_check:: 578d4bce49529753b92a1539740d77af7b25acf7
+.. oro_integrity_check:: 33c6caf87668281d138d3ee968bd615ff97889fb
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Migrations/Schema/ACMECMSBundleInstaller.php
         :language: php
@@ -144,7 +144,7 @@ Create a form type to handle the draft entity.
 
 Follow the instructions provided in the :ref:`The Form Type <cookbook-entity-form-type>` topic for more details.
 
-.. oro_integrity_check:: fb58b4c11b130357b18d0f65b0e2cb56ebffe9f0
+.. oro_integrity_check:: f3b1753fe15e852c4baa95f177def7be1a2ebbd3
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Form/Type/BlockType.php
         :language: php
@@ -188,7 +188,7 @@ Create an Extension
 
 ``Extension`` is a class that combines the logic of ``Filter`` and ``Matcher``.
 
-.. oro_integrity_check:: 4ab142a5da68ddff0a35ee36658d11bbf34a96fc
+.. oro_integrity_check:: 165b4537dbd1f1bd0da01e2a821e86f3e16f01a9
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Extension/BlockTitleExtension.php
         :language: php

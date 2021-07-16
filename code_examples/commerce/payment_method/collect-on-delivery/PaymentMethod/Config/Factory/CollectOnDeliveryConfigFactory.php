@@ -23,10 +23,6 @@ class CollectOnDeliveryConfigFactory implements CollectOnDeliveryConfigFactoryIn
      */
     private $identifierGenerator;
 
-    /**
-     * @param LocalizationHelper $localizationHelper
-     * @param IntegrationIdentifierGeneratorInterface $identifierGenerator
-     */
     public function __construct(
         LocalizationHelper $localizationHelper,
         IntegrationIdentifierGeneratorInterface $identifierGenerator

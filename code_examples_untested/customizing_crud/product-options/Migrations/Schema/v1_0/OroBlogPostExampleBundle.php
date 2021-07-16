@@ -22,8 +22,6 @@ class OroBlogPostExampleBundle implements Migration
 
     /**
      * Create oro_bpe_prod_opts table
-     *
-     * @param Schema $schema
      */
     protected function createOroBpeProdOptsTable(Schema $schema)
     {
@@ -37,8 +35,6 @@ class OroBlogPostExampleBundle implements Migration
 
     /**
      * Add oro_bpe_prod_opts foreign keys.
-     *
-     * @param Schema $schema
      */
     protected function addOroBpeProdOptsForeignKeys(Schema $schema)
     {

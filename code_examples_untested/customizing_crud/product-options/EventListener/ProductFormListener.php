@@ -23,11 +23,6 @@ class ProductFormListener
     /** @var RequestStack */
     protected $requestStack;
 
-    /**
-     * @param TranslatorInterface $translator
-     * @param DoctrineHelper $doctrineHelper
-     * @param RequestStack $requestStack
-     */
     public function __construct(
         TranslatorInterface $translator,
         DoctrineHelper $doctrineHelper,
@@ -38,9 +33,6 @@ class ProductFormListener
         $this->requestStack = $requestStack;
     }
 
-    /**
-     * @param BeforeListRenderEvent $event
-     */
     public function onProductView(BeforeListRenderEvent $event)
     {
         $request = $this->requestStack->getCurrentRequest();
@@ -79,9 +71,6 @@ class ProductFormListener
         $this->addBlock($event->getScrollData(), $template, 'oro.blogpostexample.product.section.product_options');
     }
 
-    /**
-     * @param BeforeListRenderEvent $event
-     */
     public function onProductEdit(BeforeListRenderEvent $event)
     {
         $template = $event->getEnvironment()->render(

@@ -30,8 +30,6 @@ class OroBlogPostExampleBundleInstaller implements Installation
 
     /**
      * Create oro_bpe_prod_opts table
-     *
-     * @param Schema $schema
      */
     protected function createOroBpeProdOptsTable(Schema $schema)
     {
@@ -45,8 +43,6 @@ class OroBlogPostExampleBundleInstaller implements Installation
 
     /**
      * Add oro_bpe_prod_opts foreign keys.
-     *
-     * @param Schema $schema
      */
     protected function addOroBpeProdOptsForeignKeys(Schema $schema)
     {
