@@ -91,3 +91,25 @@ parameters:
 
 
 Keep in mind that synchronous indexation is slower than asynchronous because application has to wait for reindexation to finish after every reindexation request.
+
+
+Remove All Text Search Field
+------------------------------------
+
+The application creates an all_text field which consists of every indexed text field by default. As this field is not used, it can be removed to save disk space and CPU time. Just set the ``enable_all_text`` option to false in the application configuration:
+
+.. code-block:: yaml
+   :linenos:
+
+   oro_website_search:
+       engine_parameters:
+           enable_all_text: false
+
+This optimization does not affect default Oro features.
+
+To start using this optimization, the full reindexation has to be started.
+
+.. code-block:: php
+   :linenos:
+
+   php bin/console oro:website-search:reindex --env=prod --scheduled

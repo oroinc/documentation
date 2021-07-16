@@ -135,6 +135,15 @@ Storefront (website) index also supports **relevance optimized search** starting
         engine_parameters:
             relevance_optimization: true
 
+Storefront (website) index supports the possibility to **remove unused all_text field from the index** using the following configuration:
+
+.. code-block:: php
+   :linenos:
+
+    oro_website_search:
+        engine_parameters:
+            enable_all_text: false
+
 Recommended configuration - use relevance optimized search algorithm for both indices, remove unused fields from the index for storefront index.
 
 .. code-block:: php
@@ -151,6 +160,7 @@ Recommended configuration - use relevance optimized search algorithm for both in
        engine_parameters:
            remove_unused_fulltext: true
            relevance_optimization: true
+           enable_all_text: false
 
 OroCommerce 4.2
 ^^^^^^^^^^^^^^^
@@ -175,7 +185,24 @@ Storefront (website) index uses a **relevance optimized search** algorithm by de
 
 Storefront (website) includes optimization that **removes unused fields from the index** out-of-the-box.
 
-The recommended configuration is the default configuration.
+Storefront (website) index supports the possibility to **remove unused all_text field from the index** using the following configuration:
+
+.. code-block:: php
+   :linenos:
+
+    oro_website_search:
+        engine_parameters:
+            enable_all_text: false
+
+Recommended configuration - remove unused all_text field from the index for storefront index.
+
+.. code-block:: php
+   :linenos:
+
+    oro_website_search:
+       engine_parameters:
+           enable_all_text: false
+
 
 Fine-tuning
 -----------
