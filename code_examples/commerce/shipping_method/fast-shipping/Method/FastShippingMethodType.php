@@ -28,10 +28,6 @@ class FastShippingMethodType implements ShippingMethodTypeInterface
      */
     private $isWithPresent;
 
-    /**
-     * @param string $label
-     * @param bool $isWithPresent
-     */
     public function __construct(string $label, bool $isWithPresent)
     {
         $this->label = $label;

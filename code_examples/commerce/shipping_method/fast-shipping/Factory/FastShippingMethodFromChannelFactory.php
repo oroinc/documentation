@@ -39,10 +39,6 @@ class FastShippingMethodFromChannelFactory implements IntegrationShippingMethodF
 
     /**
      * FastShippingMethodFromChannelFactory constructor.
-     * @param IntegrationIdentifierGeneratorInterface $identifierGenerator
-     * @param LocalizationHelper $localizationHelper
-     * @param TranslatorInterface $translator
-     * @param IntegrationIconProviderInterface $integrationIconProvider
      */
     public function __construct(
         IntegrationIdentifierGeneratorInterface $identifierGenerator,
@@ -56,11 +52,6 @@ class FastShippingMethodFromChannelFactory implements IntegrationShippingMethodF
         $this->integrationIconProvider = $integrationIconProvider;
     }
 
-    /**
-     * @param Channel $channel
-     *
-     * @return FastShippingMethod
-     */
     public function create(Channel $channel): FastShippingMethod
     {
         $id = $this->identifierGenerator->generateIdentifier($channel);
@@ -71,11 +62,6 @@ class FastShippingMethodFromChannelFactory implements IntegrationShippingMethodF
         return new FastShippingMethod($id, $label, $icon, $channel->isEnabled(), $types);
     }
 
-    /**
-     * @param Channel $channel
-     *
-     * @return string
-     */
     private function getChannelLabel(Channel $channel): string
     {
         /** @var FastShippingSettings $transport */
@@ -84,19 +70,11 @@ class FastShippingMethodFromChannelFactory implements IntegrationShippingMethodF
         return (string) $this->localizationHelper->getLocalizedValue($transport->getLabels());
     }
 
-    /**
-     * @param Channel $channel
-     *
-     * @return string|null
-     */
     private function getIcon(Channel $channel): ?string
     {
         return $this->integrationIconProvider->getIcon($channel);
     }
 
-    /**
-     * @return array
-     */
     private function createTypes(): array
     {
         $withoutPresentLabel = $this->translator

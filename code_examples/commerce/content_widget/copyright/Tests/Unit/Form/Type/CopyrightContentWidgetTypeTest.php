@@ -19,10 +19,6 @@ class CopyrightContentWidgetTypeTest extends FormIntegrationTestCase
 
     /**
      * @dataProvider submitDataProvider
-     *
-     * @param array|null $defaultData
-     * @param array|null $submittedData
-     * @param array $expectedData
      */
     public function testSubmit(?array $defaultData, ?array $submittedData, array $expectedData): void
     {
@@ -38,9 +34,6 @@ class CopyrightContentWidgetTypeTest extends FormIntegrationTestCase
         $this->assertEquals($expectedData, $form->getData());
     }
 
-    /**
-     * @return array
-     */
     public function submitDataProvider(): array
     {
         return [

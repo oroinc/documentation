@@ -54,11 +54,6 @@ class FastShippingSettings extends Transport
         return $this->labels;
     }
 
-    /**
-     * @param LocalizedFallbackValue $label
-     *
-     * @return FastShippingSettings
-     */
     public function addLabel(LocalizedFallbackValue $label): FastShippingSettings
     {
         if (!$this->labels->contains($label)) {
@@ -68,11 +63,6 @@ class FastShippingSettings extends Transport
         return $this;
     }
 
-    /**
-     * @param LocalizedFallbackValue $label
-     *
-     * @return FastShippingSettings
-     */
     public function removeLabel(LocalizedFallbackValue $label): FastShippingSettings
     {
         if ($this->labels->contains($label)) {
@@ -82,9 +72,6 @@ class FastShippingSettings extends Transport
         return $this;
     }
 
-    /**
-     * @return ParameterBag
-     */
     public function getSettingsBag(): ParameterBag
     {
         if (null === $this->settings) {

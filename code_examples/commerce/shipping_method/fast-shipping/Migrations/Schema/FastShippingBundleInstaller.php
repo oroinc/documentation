@@ -34,8 +34,6 @@ class FastShippingBundleInstaller implements Installation
 
     /**
      * Create acme_fast_ship_transport_label table
-     *
-     * @param Schema $schema
      */
     protected function createAcmeFastShipTransportLabelTable(Schema $schema)
     {
@@ -49,8 +47,6 @@ class FastShippingBundleInstaller implements Installation
 
     /**
      * Add acme_fast_ship_transport_label foreign keys.
-     *
-     * @param Schema $schema
      */
     protected function addAcmeFastShipTransportLabelForeignKeys(Schema $schema)
     {

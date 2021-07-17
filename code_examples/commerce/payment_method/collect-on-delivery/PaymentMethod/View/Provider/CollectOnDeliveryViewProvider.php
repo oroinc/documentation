@@ -18,10 +18,6 @@ class CollectOnDeliveryViewProvider extends AbstractPaymentMethodViewProvider
     /** @var CollectOnDeliveryConfigProviderInterface */
     private $configProvider;
 
-    /**
-     * @param CollectOnDeliveryConfigProviderInterface $configProvider
-     * @param CollectOnDeliveryViewFactoryInterface $factory
-     */
     public function __construct(
         CollectOnDeliveryConfigProviderInterface $configProvider,
         CollectOnDeliveryViewFactoryInterface $factory
@@ -43,9 +39,6 @@ class CollectOnDeliveryViewProvider extends AbstractPaymentMethodViewProvider
         }
     }
 
-    /**
-     * @param CollectOnDeliveryConfigInterface $config
-     */
     protected function addCollectOnDeliveryView(CollectOnDeliveryConfigInterface $config)
     {
         $this->addView(

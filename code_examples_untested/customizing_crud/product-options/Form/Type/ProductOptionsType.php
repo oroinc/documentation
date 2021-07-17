@@ -14,7 +14,6 @@ class ProductOptionsType extends AbstractType
 {
     const BLOCK_PREFIX = 'oro_blogpostexample_product_options';
 
-
     /**
      * {@inheritdoc}
      */

@@ -36,8 +36,6 @@ class ACMECollectOnDeliveryBundleInstaller implements Installation
 
     /**
      * Create acme_coll_on_deliv_trans_label table
-     *
-     * @param Schema $schema
      */
     protected function createAcmeCollOnDelivTransLabelTable(Schema $schema)
     {
@@ -51,8 +49,6 @@ class ACMECollectOnDeliveryBundleInstaller implements Installation
 
     /**
      * Create acme_coll_on_deliv_short_label table
-     *
-     * @param Schema $schema
      */
     protected function createAcmeCollOnDelivShortLabelTable(Schema $schema)
     {
@@ -66,8 +62,6 @@ class ACMECollectOnDeliveryBundleInstaller implements Installation
 
     /**
      * Add acme_coll_on_deliv_trans_label foreign keys.
-     *
-     * @param Schema $schema
      */
     protected function addAcmeCollOnDelivTransLabelForeignKeys(Schema $schema)
     {
@@ -88,8 +82,6 @@ class ACMECollectOnDeliveryBundleInstaller implements Installation
 
     /**
      * Add acme_coll_on_deliv_short_label foreign keys.
-     *
-     * @param Schema $schema
      */
     protected function addAcmeCollOnDelivShortLabelForeignKeys(Schema $schema)
     {

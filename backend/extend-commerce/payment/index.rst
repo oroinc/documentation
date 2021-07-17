@@ -193,7 +193,7 @@ Follow the instructions provided in the :ref:`How to generate an installer <inst
 
  After you complete it, you will have the class <bundle_root>/Migrations/Schema/CollectOnDeliveryBundleInstaller.php with the following content:
 
-.. oro_integrity_check:: 5179cea0cc73d864dc7e3d64223431b399e1644f
+.. oro_integrity_check:: 16acc2bc4e6ddca5012ce3be42365e1f106b1674
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Migrations/Schema/ACMECollectOnDeliveryBundleInstaller.php
       :language: php
@@ -245,7 +245,7 @@ Configuration Factory Interface
 Configuration Factory Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: c016c86f4c54041582d8d6e8d1082d8ada205494
+.. oro_integrity_check:: 67d77ca88f0c999bedf5cb2c46bb1667c12a916d
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Factory/CollectOnDeliveryConfigFactory.php
       :language: php
@@ -274,7 +274,7 @@ Configuration Provider Interface
 Configuration Provider Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: cc61d82703108956e0b2d5d29251f34e7c7c2ab1
+.. oro_integrity_check:: 8e856908d68443ab9949351deade1ce497fb5e85
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Provider/CollectOnDeliveryConfigProvider.php
       :language: php
@@ -356,7 +356,7 @@ To add a payment method view provider, create <bundle_root>/PaymentMethod/View/P
 Payment Method View Provider Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 5b63d635d1d94540d7d7de7e13085d12540c2635
+.. oro_integrity_check:: 2cc7b1798e83e17e07f2613e1b1b3e6c0ff04045
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Provider/CollectOnDeliveryViewProvider.php
       :language: php
@@ -372,7 +372,7 @@ Finally, to implement the payment method view, create <bundle_root>/PaymentMetho
 Payment Method View Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 1efaecb8407e7b1746e6ec3cd996bc89bc88f487
+.. oro_integrity_check:: 399d6ec2dd60ca618295e01b3a065e6b78589de4
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/CollectOnDeliveryView.php
       :language: php
@@ -426,7 +426,7 @@ To add a payment method provider, create <bundle_root>/PaymentMethod/Provider/Co
 Provider Class
 ~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 6d37ef6aa949694d2b37d4f00f28b44cd714a25e
+.. oro_integrity_check:: 701f621ac837514bdb2e144abc8d46daddce4eb8
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Provider/CollectOnDeliveryMethodProvider.php
       :language: php
@@ -442,7 +442,7 @@ Now, implement the main method. To do this, create the <bundle_root>/PaymentMeth
 Class
 ~~~~~
 
-.. oro_integrity_check:: f5a248f93ffe0a9e85436a1fe654a1f3fbf03b31
+.. oro_integrity_check:: 30d6e4f46257eb1f02824cf6b3b04a13cae97e4d
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/CollectOnDelivery.php
       :language: php
@@ -456,7 +456,7 @@ Class
 
       .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/CollectOnDelivery.php
          :language: php
-         :lines: 60-63
+         :lines: 57-60
 
 
 
