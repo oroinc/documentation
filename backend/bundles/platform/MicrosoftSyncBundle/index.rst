@@ -5,51 +5,34 @@
 OroMicrosoftSyncBundle
 ======================
 
-OroMicrosoftSyncBundle enables integration with Microsoft 365 in Oro applications via |Microsoft Graph API|.
+OroMicrosoftSyncBundle enables integration with Microsoft 365 in the Oro applications via |Microsoft Graph API|.
 
-The bundle allow to synchronize calendar events between Oro application and Microsoft 365.
+The bundle allows to synchronize calendar events and tasks between the Oro application and Microsoft 365.
 
-Configure Microsoft 365 OAuth Settings Application
---------------------------------------------------
+.. _bundle-docs-platform-microsoft-sync-bundle-sync-status-command:
 
-OroMicrosoftSyncBundle uses the same :ref:`Microsoft 365 OAuth Integration <user-guide-integrations-azure-oauth>` application as for email synchronization.
+CLI Command to Check Sync Status
+--------------------------------
 
-To use calendar event synchronization, add the **Calendars.ReadWrite** API permissions to the list of permissions
-of the application as well as the default list.
+Use ``oro:microsoft-sync:status`` command to check the status of synchronizations with Microsoft 365.
+This command shows the list of all supported synchronizations, as well as the following information for each synchronization:
 
-Calendar Synchronization Configuration
---------------------------------------
+* **Resource Type** - Synchronization type.
+* **Enabled** - Indicates whether the synchronization is enabled.
+* **In Progress** - Indicates whether the synchronization is currently running.
+* **Last Sync At** - The date and time when synchronization was last performed.
+* **Next Sync At** - The date and time when synchronization happens next.
 
-The Microsoft Settings block in the system configuration has global configuration of the Calendar synchronization.
+.. code-block:: none
 
-.. image:: /img/backend/bundles/MicrosoftSyncBundle/ms-calendar-system.png
-   :alt: Calendar settings on system configuration page
+    php bin/console oro:microsoft-sync:status --current-organization=1 --current-user=1
 
-* **Enabled** - Indicates whether the synchronization of calendar events is enabled.
-* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft, and Both.
-* **Conflict Resolution** - The conflict resolution strategy that should be used if the same calendar events are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
 
-These config parameters can be changes at the organization level.
+Related Documentation
+---------------------
 
-To configure the synchronization for a specific user, go to the user configuration page.
+* :ref:`Configure Microsoft Integration in the Back-Office <user-guide-integrations-microsoft>`
 
-.. image:: /img/backend/bundles/MicrosoftSyncBundle/ms-calendar-system.png
-   :alt: Calendar settings on user configuration page
-
-* **Connect** - Allows to connect the Microsoft 365 account calendar to be synchronized.
-* **Sync Interval (In Minutes)** - Determines how often data synchronization will be performed.
-* **Enabled** - Indicates whether the synchronization of calendar events is enabled for the user.
-* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft, and Both.
-* **Conflict Resolution** - The conflict resolution strategy that should be used if the same calendar events are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
-
-By pressing the **Connect** button, a pop-up window with the log-in promt to the Microsoft 365 is displayed. After a
-successful log-in and granting the permissions, the config page will display the Microsoft 365 account name
-and the **Check connection** button instead of the **Connect** button.
-
-.. image:: /img/backend/bundles/MicrosoftSyncBundle/ms-calendar-user-connected.png
-   :alt: Calendar settings on user configuration page
-
-By pressing the **Check connection** button, you can check the correct state of connection between Oro and Microsoft.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
