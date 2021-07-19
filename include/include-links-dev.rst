@@ -5812,6 +5812,10 @@ Links (Dev)
 
    <a href="http://symfony.com/doc/current/reference/forms/types/entity.html" target="_blank">entity form type</a>
 
+.. |Microsoft Graph API| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/graph/" target="_blank">Microsoft Graph API</a>
+
 .. |Doctrine Configuration Reference| raw:: html
 
    <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Microsoft Graph API</a>

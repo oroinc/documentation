@@ -2,10 +2,10 @@
 
 .. _user-guide-integrations-azure-oauth:
 
-Configure Microsoft Office365 OAuth Integration
-===============================================
+Configure Microsoft 365 OAuth Integration
+=========================================
 
-Integration with Microsoft Office365 via oAuth 2 API enables users to log in with their Office365 account and connect their mailbox to the Oro application using OAuth authentication.
+Integration with Microsoft 365 via OAuth 2 API enables users to log in with their Microsoft 365 account and connect their mailbox to the Oro application using OAuth authentication.
 To achieve this, you need to register a custom Azure application and :ref:`connect it with your Oro application <configuration-integrations-azure>`.
 
 Register an Application in Azure
@@ -68,10 +68,10 @@ Next, define the rights that the application will be able to grant.
 
    |
 
-   The screenshot below illustrates a set of permissions for User profile + Email access to Office 365 services provided by Microsoft. You can use this set to authorize IMAP/POP/SMTP access (receiving, synchronizing and sending email messages and email account information):
+   The screenshot below illustrates a set of permissions for User profile + Email access to Microsoft 365 services provided by Microsoft.You can use this set to authorize IMAP/POP/SMTP access (receiving, synchronizing and sending email messages and email account information):
 
    .. image:: /user/img/system/integrations/microsoft/example-permissions.png
-      :alt: An example of a set of permissions for user profile and email access to office 365
+      :alt: An example of a set of permissions for user profile and email access to Microsoft 365
 
 3. Click **Add a permission** and then **Microsoft Graph**.
 
@@ -99,9 +99,9 @@ Next, define the rights that the application will be able to grant.
 Configure Integration in the Oro Back-Office
 --------------------------------------------
 
-Once your Azure Active Directory application is configured, you can connect it to your Oro application. Please follow the steps outlined in the :ref:`Configure Microsoft Office365 oAuth Settings <configuration-integrations-azure>` section on how to achieve this.
+Once your Azure Active Directory application is configured, you can connect it to your Oro application. Please follow the steps outlined in the :ref:`Configure Microsoft 365 OAuth Settings <configuration-integrations-azure>` section on how to achieve this.
 
-For instructions on how to connect Office365 account type once the connection between Azure and Oro has been established, please see :ref:`User Email Synchronization Settings <my_email_configuration>` and :ref:`System Mailbox Synchronization Settings <admin-configuration-system-mailboxes>` documentation.
+For instructions on how to connect Microsoft 365 account type once the connection between Azure and Oro has been established, please see :ref:`User Email Synchronization Settings <my_email_configuration>` and :ref:`System Mailbox Synchronization Settings <admin-configuration-system-mailboxes>` documentation.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

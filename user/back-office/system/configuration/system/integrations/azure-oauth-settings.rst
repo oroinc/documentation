@@ -1,9 +1,9 @@
 .. _configuration-integrations-azure:
 
-Configure Microsoft Office365 oAuth Settings (Azure Active Directory Application)
-=================================================================================
+Configure Microsoft 365 OAuth Settings (Azure Active Directory Application)
+===========================================================================
 
-.. note:: This article is part of the :ref:`Microsoft Office365 OAuth Integration <user-guide-integrations-azure-oauth>` topic.
+.. note:: This article is part of the :ref:`Microsoft 365 OAuth Integration <user-guide-integrations-azure-oauth>` topic.
 
 To integrate a configured Azure Active Directory Application:
 
@@ -25,10 +25,12 @@ To integrate a configured Azure Active Directory Application:
    .. image:: /user/img/system/integrations/microsoft/redirect-url-azure-side.png
       :alt: How to connect Redirect URI
 
-   * **oAuth 2.0 for Office 365 emails sync** - Click *Enable* to connect to the Azure active directory application. Wait for the green success message to confirm authorization.
+   * **Microsoft 365 Integrations** - Click **Enable Emails Sync** to enable the emails synchronization with Office 365.
 
 3. Click **Save Settings**.
 
-.. note:: Once the connection between Azure and Oro has been established, you can connect Office365 account as your personal mailbox or a system mailbox in the Oro application. For instructions, please see the :ref:`User Email Synchronization Settings <my_email_configuration>` and :ref:`System Mailbox Synchronization Settings <admin-configuration-system-mailboxes>` documentation.
+.. note:: To enable and configure the emails synchronization for users, please see
+   the :ref:`User Email Synchronization Settings <my_email_configuration>`
+   and :ref:`System Mailbox Synchronization Settings <admin-configuration-system-mailboxes>`.
 
 
