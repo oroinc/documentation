@@ -5,7 +5,7 @@
 OroBatchBundle
 ==============
 
-OroBatchBundle adds AkeneoBatchBundle to Oro applications and enables the batch architecture usage for data processing.
+OroBatchBundle is a Batch architecture bundle inspired by Spring Batch and [AkeneoBatchBundle](https://github.com/akeneo/BatchBundle). Enables the batch architecture usage for data processing.
 
 Related Documentation
 ---------------------

@@ -85,13 +85,13 @@ Oro\\Bundle\\ImportExportBundle\\Context\\StepExecutionProxyContext
 
 **Description:**
 
-StepExecutionProxyContext is a wrapper of the Akeneo\\Bundle\\BatchBundle\\Entity\\StepExecution instance from AkeneoBatchBundle.
+StepExecutionProxyContext is a wrapper of the Oro\\Bundle\\BatchBundle\\Entity\\StepExecution instance from OroBatchBundle.
 
-**Akeneo\Bundle\BatchBundle\Entity\StepExecution**
+**Oro\Bundle\BatchBundle\Entity\StepExecution**
 
-The instance of this class can store the data of step execution, such as a number of records that were read/written, errors, exceptions, warnings, and an execution context (Akeneo\\Bundle\\BatchBundle\\Item\\ExecutionContext) as well as the abstract data generated during the execution.
+The instance of this class can store the data of step execution, such as a number of records that were read/written, errors, exceptions, warnings, and an execution context (Oro\\Bundle\\BatchBundle\\Item\\ExecutionContext) as well as the abstract data generated during the execution.
 
-As the import/export domain has its own terms, ContextInterface expands the Akeneo\\Bundle\\BatchBundle\\Entity\\StepExecution interface and separates its clients from OroBatchBundle.
+As the import/export domain has its own terms, ContextInterface expands the Oro\\Bundle\\BatchBundle\\Entity\\StepExecution interface and separates its clients from OroBatchBundle.
 
 Context Registry
 ^^^^^^^^^^^^^^^^
@@ -102,7 +102,7 @@ Oro\\Bundle\\ImportExportBundle\\Context\\ContextRegistry
 
 **Description:**
 
-ContextRegistry is a storage which gets a specific instance of the context based on Akeneo\\Bundle\\BatchBundle\\Entity\\StepExecution and provides the interface to get a single instance context using Akeneo\\Bundle\\BatchBundle\\Entity\\StepExecution.
+ContextRegistry is a storage which gets a specific instance of the context based on Oro\\Bundle\\BatchBundle\\Entity\\StepExecution and provides the interface to get a single instance context using Oro\\Bundle\\BatchBundle\\Entity\\StepExecution.
 
 Reader
 ------

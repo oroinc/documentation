@@ -481,7 +481,7 @@ Add a New Provider to Support Different Formats
 To write your own provider for import operations, you should create a class
 that extends the :class:`Oro\\Bundle\\ImportExportBundle\\Reader\\AbstractReader`
 class. To support custom export formats, you just need to create a new class
-that implements the |ItemWriterInterface| from the |Akeneo BatchBundle|.
+that implements the |ItemWriterInterface| from the |OroBatchBundle|.
 The new classes must be declared as services:
 
 .. code-block:: yaml

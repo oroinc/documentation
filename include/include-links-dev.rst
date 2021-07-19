@@ -37,7 +37,7 @@ Links (Dev)
 
 .. |ItemWriterInterface| raw:: html
 
-   <a href="https://github.com/akeneo/batch/blob/master/Item/ItemWriterInterface.php" target="_blank">ItemWriterInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/Item/ItemWriterInterface.php" target="_blank">ItemWriterInterface</a>
 
 .. |Akeneo BatchBundle| raw:: html
 
