@@ -51,9 +51,6 @@ Let's assume there is a product entity with the following index structure:
             -
                 name: price
                 type: decimal
-            -
-                name: all_text
-                type: text
 
 
 and you want the following query to be executed:
@@ -67,7 +64,7 @@ and you want the following query to be executed:
     FROM
         oro_product
     WHERE
-        text.all_text ~ product
+        text.name ~ product
     ORDER_BY
         decimal.price ASC
 
@@ -86,7 +83,7 @@ The following example illustrates how to build and execute such a query:
         ->addSelect(['text.sku', 'text.name', 'decimal.price'])
         ->from('oro_product');
     $query->getCriteria()
-        ->andWhere(Criteria::expr()->contains('text.all_text', 'product'))
+        ->andWhere(Criteria::expr()->contains('text.name', 'product'))
         ->orderBy(['decimal.price' => Query::ORDER_ASC]);
 
     /** @var EngineInterface $engine */
@@ -126,7 +123,7 @@ Let's execute the request to the search index mentioned above using second type 
     $query
         ->addSelect(['text.sku', 'text.name', 'decimal.price'])
         ->setFrom('oro_product')
-        ->addWhere(Criteria::expr()->contains('text.all_text', 'product'))
+        ->addWhere(Criteria::expr()->contains('text.name', 'product'))
         ->setOrderBy('decimal.price', Query::ORDER_ASC);
 
     /** @var Result $engine */
@@ -168,7 +165,7 @@ Let's have a look at the example of such repository:
             $query = $this->createQuery();
             $query
                 ->addSelect(['text.sku', 'text.name', 'decimal.price'])
-                ->addWhere(Criteria::expr()->contains('text.all_text', $string))
+                ->addWhere(Criteria::expr()->contains('text.name', $string))
                 ->setOrderBy('decimal.price', Query::ORDER_ASC);
 
             return $query->getResult();

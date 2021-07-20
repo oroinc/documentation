@@ -160,9 +160,6 @@ Following is the product entity mapping configuration for OroCommerce deployment
             -
                 name: price
                 type: decimal
-            -
-                name: all_text
-                type: text
 
 As you can see, no placeholders are used and the search index contains the following information:
 
@@ -176,13 +173,11 @@ As you can see, no placeholders are used and the search index contains the follo
             sku: "PR1",
             names: "First product",
             price: 12.00,
-            all_text: "PR1 First product"
         },
         2: {
             sku: "PR2",
             names: "Second product",
             price: 25.00,
-            all_text: "PR2 Second product"
         }
     }
 
@@ -197,7 +192,7 @@ Query for this index is quite simple:
     FROM
         oro_product
     WHERE
-        text.all_text ~ product
+        text.names ~ product
     ORDER_BY
         decimal.price ASC
 
@@ -227,9 +222,6 @@ Use placeholders `WEBSITE_ID`, `LOCALIZATION_ID` and `CURRENCY`, like in the map
             -
                 name: all_text_LOCALIZATION_ID
                 type: text
-            -
-                name: all_text
-                type: text
 
 
 Based on this configuration, the data may the following:
@@ -248,7 +240,6 @@ Based on this configuration, the data may the following:
             price_GBP: 9.00,
             all_text_1: "PR1 First product",
             all_text_2: "PR1 Первый продукт",
-            all_text: "PR1 First product Первый продукт"
         },
         2: {
             sku: "PR2",
@@ -258,7 +249,6 @@ Based on this configuration, the data may the following:
             price_GBP: 20.00,
             all_text_1: "PR2 Second product",
             all_text_2: "PR2 Второй продукт",
-            all_text: "PR2 Second product Второй продукт"
         }
     }
 
@@ -273,14 +263,12 @@ Based on this configuration, the data may the following:
             names_2: "Первый продукт",
             price_RUR: 100.00,
             all_text_2: "PR1 Первый продукт",
-            all_text: "PR1 Первый продукт"
         },
         2: {
             sku: "PR2",
             names_2: "Второй продукт",
             price_RUR: 200.00,
             all_text_2: "PR2 Второй продукт",
-            all_text: "PR2 Второй продукт"
         }
     }
 

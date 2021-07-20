@@ -206,10 +206,6 @@ Let's assume that you have the following index structure and want to index the p
                 name: all_text_LOCALIZATION_ID
                 type: text
                 store: false
-            -
-                name: all_text
-                type: text
-                store: false
 
 Below is an example of the index listener for the index structure above:
 
@@ -326,7 +322,6 @@ And here is what search index might contain after the indexation:
             names_2: "Первый продукт",
             all_text_1: "PR1 First product",
             all_text_2: "PR1 Первый продукт",
-            all_text: "PR1 First product Первый продукт"
         },
         2: {
             sku: "PR2",
@@ -334,7 +329,6 @@ And here is what search index might contain after the indexation:
             names_2: "Второй продукт",
             all_text_1: "PR2 Second product",
             all_text_2: "PR2 Второй продукт",
-            all_text: "PR2 Second product Второй продукт"
         }
     }
 
@@ -348,14 +342,10 @@ And here is what search index might contain after the indexation:
             sku: "PR1",
             names_2: "Первый продукт",
             all_text_2: "PR1 Первый продукт",
-            all_text: "PR1 Первый продукт"
         },
         2: {
             sku: "PR2",
             names_2: "Второй продукт",
             all_text_2: "PR2 Второй продукт",
-            all_text: "PR2 Второй продукт"
         }
     }
-
-Values in all `all_text` fields are generated automatically based on the values of all fields passed to search index.
