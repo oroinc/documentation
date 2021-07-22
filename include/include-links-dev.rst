@@ -1151,26 +1151,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/permissions.md" target="_blank">Permissions in ActivityList Bundle</a>
 
-.. |Use Address Bundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/usage.md#usage" target="_blank">Use Address Bundle</a>
-
-.. |Address Entities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/entities.md" target="_blank">Address Entities</a>
-
-.. |Form Types| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/form_types.md#address-form-types" target="_blank">Form Types</a>
-
-.. |Address Type Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/address_type.md" target="_blank">Address Type Entity</a>
-
-.. |Validate Addresses and Address Collection| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/validators.md" target="_blank">Validate Addresses and Address Collection</a>
-
 .. |Bundle Components| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/BatchBundle#components" target="_blank">Bundle Components</a>
@@ -2290,14 +2270,6 @@ Links (Dev)
 .. |Console Commands| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NotificationBundle#console-commands" target="_blank">Console Commands</a>
-
-.. |Organization Bundle Overview| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/OrganizationBundle#overview" target="_blank">Organization Bundle Overview</a>
-
-.. |Entity Ownerships| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/OrganizationBundle#entity-ownerships" target="_blank">Entity Ownerships</a>
 
 .. |Use Maintenance Mode| raw:: html
 
