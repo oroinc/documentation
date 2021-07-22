@@ -6,7 +6,6 @@ namespace ACME\Bundle\DemoBundle\Twig;
 use Oro\Bundle\AttachmentBundle\Entity\File;
 use Oro\Bundle\AttachmentBundle\Manager\AttachmentManager;
 use Oro\Bundle\LayoutBundle\Provider\Image\ImagePlaceholderProviderInterface;
-use Oro\Bundle\ProductBundle\Helper\ProductImageHelper;
 use Psr\Container\ContainerInterface;
 use Symfony\Contracts\Service\ServiceSubscriberInterface;
 use Twig\Extension\AbstractExtension;
@@ -19,10 +18,7 @@ use Twig\TwigFunction;
  */
 class ProductImageExtension extends AbstractExtension implements ServiceSubscriberInterface
 {
-    const NAME = 'acme_product_image';
-
-    /** @var ContainerInterface */
-    private $container;
+    private ContainerInterface $container;
 
     public function __construct(ContainerInterface $container)
     {
@@ -43,9 +39,7 @@ class ProductImageExtension extends AbstractExtension implements ServiceSubscrib
     public function getProductFilteredImage(?File $file, string $filter): string
     {
         if ($file) {
-            $attachmentManager = $this->container->get('oro_attachment.manager');
-
-            return $attachmentManager->getFilteredImageUrl($file, $filter);
+            return $this->getAttachmentManager()->getFilteredImageUrl($file, $filter);
         }
 
         return $this->getProductImagePlaceholder($filter);
@@ -53,17 +47,7 @@ class ProductImageExtension extends AbstractExtension implements ServiceSubscrib
 
     public function getProductImagePlaceholder(string $filter): string
     {
-        $imagePlaceholderProvider = $this->container->get('oro_product.provider.product_image_placeholder');
-
-        return $imagePlaceholderProvider->getPath($filter);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return self::NAME;
+        return $this->getImagePlaceholderProvider()->getPath($filter);
     }
 
     /**
@@ -74,7 +58,16 @@ class ProductImageExtension extends AbstractExtension implements ServiceSubscrib
         return [
             'oro_attachment.manager' => AttachmentManager::class,
             'oro_product.provider.product_image_placeholder' => ImagePlaceholderProviderInterface::class,
-            'oro_product.helper.product_image_helper' => ProductImageHelper::class,
         ];
+    }
+
+    private function getAttachmentManager(): AttachmentManager
+    {
+        return $this->container->get('oro_attachment.manager');
+    }
+
+    private function getImagePlaceholderProvider(): ImagePlaceholderProviderInterface
+    {
+        return $this->container->get('oro_product.provider.product_image_placeholder');
     }
 }

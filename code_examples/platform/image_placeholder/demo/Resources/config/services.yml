@@ -18,3 +18,10 @@ services:
         public: false
         arguments:
             - '/bundles/acmedemo/images/demo_placeholder_default.png'
+
+    acme_demo.twig.product_image_extension:
+        class: ACME\Bundle\DemoBundle\Twig\ProductImageExtension
+        arguments:
+            - '@oro_platform.twig.service_locator'
+        tags:
+            - { name: twig.extension }
