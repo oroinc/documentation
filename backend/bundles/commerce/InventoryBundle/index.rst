@@ -140,16 +140,11 @@ It works in the same way as the `isLowInventoryProduct`_ method, but has differe
 This method takes an argument as an array of the |Product entity| and |ProductUnit entity| entities and returns an array of product ids with  a boolean result.
 ``True``  is returned if the quantity of the product is less than the ``lowInventoryThreshold`` option.  ``False`` is returned if the quantity of the product is greater than the ``lowInventoryThreshold`` option, or if ``highlightLowInventory`` is not checked.
 
-Twig Extensions
----------------
+Twig
+----
 
-LowInventoryExtension
-^^^^^^^^^^^^^^^^^^^^^
-
-The |OroBundleInventoryBundleTwigLowInventoryExtension| class.
-
-This extension depends on `LowInventoryProvider`_ and provides the oro_is_low_inventory_product twig function which is used in twig templates to check low inventory for a specific product.
-The following is an example of using this function in twig templates:
+To to check low inventory for a specific product in Twig templates, the ``oro_is_low_inventory_product`` Twig function
+is used. The following example illustrates how to use this function/how this function is used:
 
 .. code-block:: twig
 

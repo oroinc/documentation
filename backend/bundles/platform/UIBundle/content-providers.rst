@@ -23,7 +23,7 @@ Twig
 ----
 
 When a page is loaded for the first time, its content is mostly rendered by twig. To get content from the content providers from the
-twig template, `oro_ui_content_provider_manager` global variable was added. It contains an instance of `\Oro\Bundle\UIBundle\ContentProvider\ContentProviderManager`.
+twig template, use the `oro_get_content` Twig function.
 
 Example:
 
@@ -31,6 +31,9 @@ Getting an array of all flash:
 
 .. code-block:: twig
 
+   {% set contentProviderContent = oro_get_content(null, ['flashMessages'])|first %}
 
-   {% set contentProviderContent = oro_ui_content_provider_manager.getContent(['flashMessages'])|first %}
-
+The first argument of this Twig function is an array contains an additional content.
+If there is no an additional content, this argument can by `null` or empty array.
+The second argument of this Twig function is an array contains the names of context elements to be returned.
+If this argument is `null` or empty array, all context elements will be returned.

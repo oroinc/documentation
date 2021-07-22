@@ -4323,6 +4323,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Form/Guesser/ExtendFieldTypeGuesser.php" target="_blank">ExtendFieldTypeGuesser</a>
 
+.. |AbstractTwigSandboxConfigurationPass| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/DependencyInjection/Compiler/AbstractTwigSandboxConfigurationPass.php" target="_blank">AbstractTwigSandboxConfigurationPass</a>
+
 .. |EmailModelBuilder| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Builder/EmailModelBuilder.php" target="_blank">EmailModelBuilder</a>
@@ -4775,10 +4779,6 @@ Links (Dev)
 .. |ProductUnit entity| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Entity/ProductUnit.php" target="_blank">ProductUnit entity</a>
-
-.. |OroBundleInventoryBundleTwigLowInventoryExtension| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Twig/LowInventoryExtension.php" target="_blank">Oro\Bundle\InventoryBundle\Twig\LowInventoryExtension</a>
 
 .. |OroBundleInventoryBundleValidatorLowInventoryCheckoutLineItemValidator| raw:: html
 

@@ -64,7 +64,7 @@ It means that only a limited set of variables is allowed in email templates:
 
 The list of these variables is provided on the Email Template edit page of the admin UI (on the System > Emails > Templates menu item).
 
-Also, additional Twig functions, filters, and tags are registered and allowed to be used in Email Templates. You can find the complete list of these functions, filters, and tags by searching for mentions of the 'oro_email.twig.email_security_policy' service in the Oro Application CompillerPass Classes. You can also check out the topic on :ref:`Email <user-guide-email-template>`.
+Also, additional Twig functions, filters, and tags are registered and allowed to be used in Email Templates. You can find the complete list of these functions, filters, and tags by searching classes inherited from |AbstractTwigSandboxConfigurationPass|. You can also check out the topic on :ref:`Email <user-guide-email-template>`.
 
 Extend Available Data in Email Templates
 ----------------------------------------
@@ -194,24 +194,42 @@ An example:
 
    .. code-block:: php
 
-        class TwigSandboxConfigurationPass implements CompilerPassInterface
+        class TwigSandboxConfigurationPass extends AbstractTwigSandboxConfigurationPass
         {
-            const EMAIL_TEMPLATE_SANDBOX_SECURITY_POLICY_SERVICE_KEY = 'oro_email.twig.email_security_policy';
-            const EMAIL_TEMPLATE_RENDERER_SERVICE_KEY = 'oro_email.email_renderer';
+            /**
+             * {@inheritdoc}
+             */
+            protected function getFunctions(): array
+            {
+                return [
+                    'some_function'
+                ];
+            }
 
             /**
-             * {@inheritDoc}
+             * {@inheritdoc}
              */
-            public function process(ContainerBuilder $container)
+            protected function getFilters(): array
             {
-                $securityPolicyDef = $container->getDefinition('oro_email.twig.email_security_policy');
-                $securityPolicyDef->replaceArgument(
-                    4,
-                    array_merge($securityPolicyDef->getArgument(4), ['some_function'])
-                );
+                return [];
+            }
 
-                $container->getDefinition('oro_email.email_renderer')
-                    ->addMethodCall('addExtension', [new Reference('acme.twig.my_extension')]);
+            /**
+             * {@inheritdoc}
+             */
+            protected function getTags(): array
+            {
+                return [];
+            }
+
+            /**
+             * {@inheritdoc}
+             */
+            protected function getExtensions(): array
+            {
+                return [
+                    'acme.twig.my_extension'
+                ];
             }
         }
 
