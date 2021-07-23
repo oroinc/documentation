@@ -97,10 +97,6 @@ class Block implements DraftableInterface, DatesAwareInterface
         return $this->title;
     }
 
-    /**
-     * @param string $title
-     * @return Block
-     */
     public function setTitle(string $title): Block
     {
         $this->title = $title;

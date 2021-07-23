@@ -37,13 +37,6 @@ class FastShippingMethod implements ShippingMethodInterface, ShippingMethodIconA
      */
     private $enabled;
 
-    /**
-     * @param string $identifier
-     * @param string $label
-     * @param string|null $icon
-     * @param bool $enabled
-     * @param array $types
-     */
     public function __construct(string $identifier, string $label, ?string $icon, bool $enabled, array $types)
     {
         $this->identifier = $identifier;

@@ -15,6 +15,7 @@ The section focuses on the integrations pre-implemented for your Oro application
 * how to use email marketing activities and email marketing automation (Mailchimp, dotmailer)
 * how to configure Google single sign-on, Hangouts calls, and Tag Manager
 * how to create the code that may be embedded to a third-party website to enable communication between the third-party website users and the Oro application
+* how to configure Microsoft 365 calendar events and tasks synchronization
 
 Check the following integrations that can be enabled/disabled and configured in **System > Configuration > Integration**:
 
@@ -37,6 +38,7 @@ Check the following integrations that can be enabled/disabled and configured in 
 
 * :ref:`Google Integration (Single Sign-On, Hangouts, Tag Manager) <admin-configuration-google>`
 * :ref:`Microsoft 365 OAuth Integration <user-guide-integrations-azure-oauth>`
+* :ref:`Microsoft 365 Integration (Calendar Events, Tasks) <user-guide-integrations-microsoft>`
 * :ref:`dotmailer Integration <user-guide-dotmailer-overview>`
 * :ref:`Mailchimp Integration <user-guide-mc-integration>`
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
@@ -60,3 +62,4 @@ Check the following integrations that can be enabled/disabled and configured in 
    Embedded Forms <embedded-forms/index>
    Google Integration <google/index>
    Microsoft 365 OAuth <azure-oauth>
+   Microsoft 365 Integration <microsoft/index>

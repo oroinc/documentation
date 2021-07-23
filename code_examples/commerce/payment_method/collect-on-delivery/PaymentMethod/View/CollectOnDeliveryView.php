@@ -16,9 +16,6 @@ class CollectOnDeliveryView implements PaymentMethodViewInterface
      */
     protected $config;
 
-    /**
-     * @param CollectOnDeliveryConfigInterface $config
-     */
     public function __construct(CollectOnDeliveryConfigInterface $config)
     {
         $this->config = $config;
