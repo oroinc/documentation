@@ -16,14 +16,14 @@ oro_behat_extension:
         ACMECMSBundle:
             contexts:
                 - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
-                - OroDataGridBundle::GridContext
-                - OroFormBundle::FormContext
-                - OroCMSBundle::FeatureContext
-                - OroApplicationBundle::CommerceMainContext
-                - OroNavigationBundle::TabContext
-                - OroNavigationBundle::FeatureContext
-                - OroUserBundle::FeatureContext
-                - OroActionBundle::OroActionContext
-                - OroSecurityBundle::ACLContext
+                - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
+                - Oro\Bundle\FormBundle\Tests\Behat\Context\FormContext
+                - Oro\Bundle\CMSBundle\Tests\Behat\Context\FeatureContext
+                - Oro\Bundle\ApplicationBundle\Tests\Behat\Context\CommerceMainContext
+                - Oro\Bundle\NavigationBundle\Tests\Behat\Context\TabContext
+                - Oro\Bundle\NavigationBundle\Tests\Behat\Context\FeatureContext
+                - Oro\Bundle\UserBundle\Tests\Behat\Context\FeatureContext
+                - Oro\Bundle\ActionBundle\Tests\Behat\Context\OroActionContext
+                - Oro\Bundle\SecurityBundle\Tests\Behat\Context\ACLContext
             paths:
                 - '@ACMECMSBundle/Tests/Behat/Features'
