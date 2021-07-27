@@ -14,5 +14,5 @@ In the back-office, for extended entity (e.g., Product, Category, LandingPage, o
 
 On the storefront, the SEO fields with their values in the HTML of website pages for the search engines to pick them up.
 
-The Product, Category, LandingPage and ContentNode entities are extended form extensions with three new fields that are stored as collections of LocalizedFallbackValue.
+The Product, Category, LandingPage and ContentNode entities are extended form extensions with three new fields that are stored as collections of :ref:`LocalizedFallbackValue <bundle-docs-platform-locale-bundle-localization>`.
 Therefore these new fields added through extend extension are many-to-many relations between the specified entities and LocalizedFallbackValue entity.

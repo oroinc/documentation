@@ -1331,10 +1331,6 @@ Links (Dev)
 
    <a href="https://github.com/doctrine-extensions/DoctrineExtensions/blob/main/doc/translatable.md" target="_blank">Gedmo/Translatable</a>
 
-.. |LocalizedFallbackValue| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/entities.md#localizedfallbackvalue" target="_blank">LocalizedFallbackValue</a>
-
 .. |in the official Symfony documentation| raw:: html
 
    <a href="https://symfony.com/doc/4.4/setup/file_permissions.html" target="_blank">in the official Symfony documentation</a>
@@ -2198,42 +2194,6 @@ Links (Dev)
 .. |Use Installer| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle" target="_blank">Use Installer</a>
-
-.. |Locale Settings| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md" target="_blank">Locale Settings</a>
-
-.. |Number Formatting| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md" target="_blank">Number Formatting</a>
-
-.. |DateTime Formatting| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/datetime-formatting.md" target="_blank">DateTime Formatting</a>
-
-.. |Address Formatting| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/address-formatting.md" target="_blank">Address Formatting</a>
-
-.. |Name Formatting| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/name-formatting.md" target="_blank">Name Formatting</a>
-
-.. |Localization and LocalizedFallbackValue Entities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/entities.md" target="_blank">Localization and LocalizedFallbackValue Entities</a>
-
-.. |Localized Values| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/localized-values.md" target="_blank">Localized Values</a>
-
-.. |Current Localization| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/current-localization.md" target="_blank">Current Localization</a>
-
-.. |Manage Localizations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/managing-localizations.md" target="_blank">Manage Localizations</a>
 
 .. |Enable Error Logs Email Notification| raw:: html
 
@@ -5832,3 +5792,10 @@ Links (Dev)
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application-de" target="_blank">docker.io/oroinc/commerce-crm-application-de</a>
 
+.. |NumberFormatter| raw:: html
+
+   <a href="http://www.php.net/manual/en/class.numberformatter.php" target="_blank">NumberFormatter</a>
+
+.. |List of available timezones in PHP| raw:: html
+
+   <a href="https://www.php.net/manual/en/timezones.php" target="_blank">List of available timezones in PHP</a>

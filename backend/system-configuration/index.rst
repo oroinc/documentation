@@ -233,7 +233,7 @@ In workflows, you can use a condition to check that System Configuration has the
 
 **Configuration Example**
 
-.. code-block:: bash
+.. code-block:: yaml
 
    '@is_system_config_equal': ['some_config_path', 'needed value']
 

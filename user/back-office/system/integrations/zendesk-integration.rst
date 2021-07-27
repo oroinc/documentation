@@ -63,7 +63,7 @@ To create an integration with Zendesk:
 6. If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g., if the same customer details were edited from both Oro application and Zendesk):
 
    * **Remote wins** --- Zendesk data is applied to both Zendesk and the Oro application.
-   * **Local wins** --- Oro application data is applied to both Zendesk and Oro the application.
+   * **Local wins** --- Oro application data is applied to both Zendesk and the Oro application.
 
 .. _user-guide-Zendesk-channel-integration-details_edit:
 

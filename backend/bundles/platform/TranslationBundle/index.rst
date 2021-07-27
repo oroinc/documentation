@@ -101,7 +101,7 @@ Classes Description
 Configuration
 ^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: yaml
 
     services:
         Oro\Bundle\TranslationBundle\Form\Type\TranslatableEntityType:
