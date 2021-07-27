@@ -17,5 +17,3 @@ Related Documentation
 * :ref:`Define Owner for Related Entities on Integration Level <dev-integrations-integrations-default-owner>`
 * :ref:`Save Service Data Between Synchronizations <dev-integrations-integrations-additional-capabilities>`
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin

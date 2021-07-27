@@ -234,13 +234,13 @@ To run the check manually from the command line:
 
 1. First, install the required js-modules in the application directory:
 
-    .. code-block:: none
+   .. code-block:: none
 
        npm install
 
 2. Then, run |StyleLint| to check SCSS files for the code-style:
 
-    .. code-block:: none
+   .. code-block:: none
 
        npm run stylelint "./src/**/*.scss" -- [options]
 

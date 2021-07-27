@@ -94,13 +94,13 @@ The value of the parameter is the MongoDB DSN string described in the previous c
 
 The following example shows the reconfiguration of the **public** adapter:
 
-.. code:: yaml
+.. code-block:: yaml
 
    gaufrette_adapter.public: 'gridfs:mongodb://user:password@host:27017/media'
 
 To get the list of existing Gaufrette adapters, use the following command:
 
-.. code:: bash
+.. code-block:: none
 
    bin/console debug:config knp_gaufrette adapters
 
@@ -111,13 +111,13 @@ As for the adapter configuration, the parameter's value is the MongoDB DSN strin
 
 The following example shows the reconfiguration of the ``attachments`` filesystem:
 
-.. code:: yaml
+.. code-block:: yaml
 
    gaufrette_filesystem.attachments: 'gridfs:mongodb://user:password@host:27017/attachments'
 
 To get the list of existing Gaufrette filesystems, use the following command:
 
-.. code:: bash
+.. code-block:: none
 
    bin/console debug:config knp_gaufrette filesystems
 

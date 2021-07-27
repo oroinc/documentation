@@ -31,15 +31,18 @@ Locale settings uses system configuration as a source.
 Related Documentation
 ---------------------
 
-* |Locale Settings|
-* |Number Formatting|
-* |DateTime Formatting|
-* |Address Formatting|
-* |Name Formatting|
-* |Localization and LocalizedFallbackValue Entities|
-* |Localized Values|
-* |Current Localization|
-* |Manage Localizations|
+.. toctree::
+   :maxdepth: 1
+
+   locale-settings
+   number-formatting
+   datetime-formatting
+   name-formatting
+   address-formatting
+   entities
+   managing-localizations
+   current-localization
+   localized-values
 
 
 .. include:: /include/include-links-dev.rst
