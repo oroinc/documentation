@@ -118,7 +118,7 @@ TwigExtension and template examples
 
 To use the providers we have created previously, we need to create TwigExtension that fetches the Product image in the appropriate dimension or, if the main image is unavailable, provides the placeholder instead. 
 
-    .. oro_integrity_check:: 064b0a1ef931bff14b16668207afbba5a1daba87
+    .. oro_integrity_check:: dab32e3102e47dfe2ac89159aee02a43c00fe9d8
 
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Twig/ProductImageExtension.php
             :language: php

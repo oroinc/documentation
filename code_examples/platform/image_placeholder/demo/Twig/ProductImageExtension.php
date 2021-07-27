@@ -56,14 +56,14 @@ class ProductImageExtension extends AbstractExtension implements ServiceSubscrib
     public static function getSubscribedServices()
     {
         return [
-            'oro_attachment.manager' => AttachmentManager::class,
+            AttachmentManager::class,
             'oro_product.provider.product_image_placeholder' => ImagePlaceholderProviderInterface::class,
         ];
     }
 
     private function getAttachmentManager(): AttachmentManager
     {
-        return $this->container->get('oro_attachment.manager');
+        return $this->container->get(AttachmentManager::class);
     }
 
     private function getImagePlaceholderProvider(): ImagePlaceholderProviderInterface
