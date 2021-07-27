@@ -2067,10 +2067,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/chart-configuration.md" target="_blank">Configure Charts</a>
 
-.. |Enable Comment Association Using Migrations| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CommentBundle#how-to-enable-comment-association-with-new-activity-entity-using-migrations" target="_blank">Enable Comment Association Using migrations</a>
-
 .. |Use Cron Command| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CronBundle#usage" target="_blank">Use Cron Command</a>
@@ -2194,18 +2190,6 @@ Links (Dev)
 .. |Use Installer| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle" target="_blank">Use Installer</a>
-
-.. |Enable Error Logs Email Notification| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#error-logs-email-notifications" target="_blank">Enable Error Logs Email Notification</a>
-
-.. |Temporarily Decrease Log Level| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#temporarily-decrease-log-level" target="_blank">Temporarily Decrease Log Level</a>
-
-.. |Log Console Commands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#logging-console-commands" target="_blank">Log Console Commands</a>
 
 .. |Menu Data Source| raw:: html
 
@@ -5792,6 +5776,10 @@ Links (Dev)
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application-de" target="_blank">docker.io/oroinc/commerce-crm-application-de</a>
 
+.. |ConsoleCommandSubscriber| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LoggerBundle/EventSubscriber/ConsoleCommandSubscriber.php" target="_blank">ConsoleCommandSubscriber</a>
+
 .. |NumberFormatter| raw:: html
 
    <a href="http://www.php.net/manual/en/class.numberformatter.php" target="_blank">NumberFormatter</a>
@@ -5799,3 +5787,4 @@ Links (Dev)
 .. |List of available timezones in PHP| raw:: html
 
    <a href="https://www.php.net/manual/en/timezones.php" target="_blank">List of available timezones in PHP</a>
+
