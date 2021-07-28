@@ -1159,6 +1159,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php" target="_blank">MemoryCacheChain</a>
 
+.. |MemoryCache| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCache.php" target="_blank">MemoryCache</a>
+
 .. |FilesystemCache| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/FilesystemCache.php" target="_blank">FilesystemCache</a>

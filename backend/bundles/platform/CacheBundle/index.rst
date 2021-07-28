@@ -293,6 +293,8 @@ there until the process ends. With HTTP request this would work perfectly well, 
 after every change with Localizations. Missing cache clearing for any of these cases leads
 to outdated data in ``LocalizationManager``.
 
+The |MemoryCache| class can be used when you need fast implementation of a memory cache.
+
 .. _bundle-docs-platform-cache-bundle--persistent-or-shared-cache:
 
 Persistent or Shared Cache
