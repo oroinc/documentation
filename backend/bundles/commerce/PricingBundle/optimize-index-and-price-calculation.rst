@@ -22,7 +22,7 @@ OroCommerce storefront responsiveness.
 
 To launch the price recalculation process, run the following console command:
 
-``bin/console oro:price-lists:recalculate --all``
+``php bin/console oro:price-lists:recalculate --all``
 
 Execution time may vary from seconds on bare factory data to multiple hours for
 several hundred thousand product prices.
@@ -45,7 +45,7 @@ Enterprise edition only).
 
 To launch the indexation process, use the following console command:
 
-``bin/console oro:website:reindex``
+``php bin/console oro:website:reindex``
 
 Execution time may range from few minutes to several hours, depending on the
 hardware and software configuration and the volume of data that is indexed.

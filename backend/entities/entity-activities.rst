@@ -12,8 +12,6 @@ The following example illustrates how to do it:
 
 .. code-block:: php
 
-    <?php
-
     namespace Oro\Bundle\UserBundle\Migrations\Schema\v1_3;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -24,8 +22,7 @@ The following example illustrates how to do it:
 
     class OroUserBundle implements Migration, ActivityExtensionAwareInterface
     {
-        /** @var ActivityExtension */
-        protected $activityExtension;
+        protected ActivityExtension $activityExtension;
 
         /**
          * {@inheritdoc}
@@ -67,8 +64,6 @@ To make the entity extended, create a base abstract class. The name of this clas
 Here is an example:
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\EmailBundle\Model;
 
@@ -172,9 +167,9 @@ Keep in mind that:
      */
     public function activityAction($entityClass, $entityId)
     {
-        return array(
+        return [
             'entity' => $this->get('oro_entity.routing_helper')->getEntity($entityClass, $entityId)
-        );
+        ];
     }
 
 

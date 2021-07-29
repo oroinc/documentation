@@ -132,9 +132,7 @@ To log into all environments, add the following code to ``config.yml``. To log o
 .. note:: Out of the box, the Fingers Crossed Handler is already enabled, and you don't have to configure it manually.
 
 .. code-block:: yaml
-
-
-    # config/config_prod.yml
+   :caption: config/config_prod.yml
 
     monolog:
         handlers:
@@ -152,9 +150,7 @@ Interrupting Consumer from Code
 Create consumption extension with its own logic:
 
 .. code-block:: php
-
-   <?php
-   // src/Acme/Bundle/DemoBundle/Consumption/Extension/CustomExtension.php
+   :caption: src/Acme/Bundle/DemoBundle/Consumption/Extension/CustomExtension.php
 
    namespace Oro\Component\MessageQueue\Consumption\Extension;
 
@@ -180,9 +176,7 @@ Create consumption extension with its own logic:
 Declare service:
 
 .. code-block:: yaml
-
-
-    # src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
     services:
         acme_demo.consumption.custom_extension:

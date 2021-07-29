@@ -30,7 +30,7 @@ application cache in development mode please run:
 
 .. code-block:: none
 
-        $php bin/console cache:clear --env=dev
+        php bin/console cache:clear --env=dev
 
 To access application in development mode, add `index_dev.php` to the base URL
 (example: ``http://orocrm.example.com/index_dev.php``).

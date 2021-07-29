@@ -98,7 +98,7 @@ the ``--env=prod`` option to your import command:
 .. code-block:: none
 
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
+    php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
 
 
 Skip Import File Validation

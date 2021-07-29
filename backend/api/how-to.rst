@@ -509,8 +509,6 @@ Here is an example of the controller:
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AppBundle\Controller\Api;
 
     use Symfony\Component\HttpFoundation\Request;
@@ -656,8 +654,6 @@ The following steps describe how to create such API resources:
 
    .. code-block:: php
 
-       <?php
-
           namespace Acme\Bundle\AppBundle\Api\Model;
 
           class Account
@@ -726,8 +722,6 @@ The following steps describe how to create such API resources:
 4. Create a processor to handle data, e.g.:
 
     .. code-block:: php
-
-       <?php
 
           namespace Acme\Bundle\AppBundle\Api\Processor;
 
@@ -808,8 +802,6 @@ To do this, you need to perform the following:
 
 
     .. code-block:: php
-
-       <?php
 
        namespace Acme\Bundle\AppBundle\Api\Processor;
 
@@ -907,8 +899,6 @@ To implement this approach, you need to perform the following:
 
     .. code-block:: php
 
-        <?php
-
         namespace Oro\Bundle\UserBundle\Api;
 
         use Oro\Bundle\ApiBundle\Request\EntityIdResolverInterface;
@@ -921,8 +911,7 @@ To implement this approach, you need to perform the following:
          */
         class MineUserEntityIdResolver implements EntityIdResolverInterface
         {
-            /** @var TokenAccessorInterface */
-            private $tokenAccessor;
+            private TokenAccessorInterface $tokenAccessor;
 
             /**
              * @param TokenAccessorInterface $tokenAccessor
@@ -1003,8 +992,6 @@ For example, imagine that a "price" field need to be added to a product API. The
 2. Create a processor for ``customize_loaded_data`` action that will set a value for the "price" field
 
     .. code-block:: php
-
-        <?php
 
         namespace Acme\Bundle\AppBundle\Api\Processor;
 
@@ -1130,8 +1117,6 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
 
 .. code-block:: php
 
-      <?php
-
       namespace Acme\Bundle\AppBundle\Api\Processor;
 
       use Acme\Bundle\AppBundle\Entity\Account;
@@ -1145,12 +1130,8 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
        */
       class SetAccountContactsAssociationQuery implements ProcessorInterface
       {
-          /** @var DoctrineHelper */
-          private $doctrineHelper;
+          private DoctrineHelper $doctrineHelper;
 
-          /**
-           * @param DoctrineHelper $doctrineHelper
-           */
           public function __construct(DoctrineHelper $doctrineHelper)
           {
               $this->doctrineHelper = $doctrineHelper;
@@ -1197,8 +1178,6 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
 
 
   .. code-block:: php
-
-      <?php
 
       namespace Acme\Bundle\AppBundle\Api\Processor;
 
@@ -1286,8 +1265,6 @@ For example, the following API processor validates that a value of a virtual fie
 a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\DemoBundle\Api\Processor;
 

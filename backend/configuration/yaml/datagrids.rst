@@ -82,9 +82,8 @@ need to hide or show some options depending on the data of the entry, you can cr
 decides whether or not an action is visible for an entry:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
     datagrids:
         grid-name:
             # ...

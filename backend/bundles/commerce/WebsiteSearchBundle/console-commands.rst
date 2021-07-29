@@ -16,20 +16,19 @@ Reindexation might take long time for a big volume of data, so it would be good 
 
 To reindex all entities, use the following command:
 
-.. code-block:: php
+.. code-block:: bash
 
-
-    > php bin/console oro:website-search:reindex
+    $ php bin/console oro:website-search:reindex
     Starting reindex task for all mapped entities
     Total indexed items: 733
 
 
 To reindex only a certain website and specific entity, use the --website-id and --class parameters:
 
-.. code-block:: php
+.. code-block:: bash
 
 
-    > bin/console oro:website-search:reindex --website-id 1 --class OroUserBundle:User
+    $ php bin/console oro:website-search:reindex --website-id 1 --class OroUserBundle:User
 
 Normally, reindexation is performed immediately after the reindex command is issued. However, it can also be scheduled to be performed in the background by the Message Queue consumers.
 
@@ -45,8 +44,7 @@ Please use the following parameter to run a scheduled, background indexation :
 
 .. code-block:: php
 
-
-    > bin/console oro:website-search:reindex --scheduled
+    php bin/console oro:website-search:reindex --scheduled
 
 This command will not directly run indexation - it will immediately quit, putting a reindex request to the Queue. The process itself will be performed in the background by the consumers.
 
@@ -56,8 +54,7 @@ You can specify a range of IDs of products to be reindexed, for example:
 
 .. code-block:: php
 
-
-    > bin/console oro:website-search:reindex --scheduled --product-id=1-5000
+    php bin/console oro:website-search:reindex --scheduled --product-id=1-5000
 
 The parameter also supports ID range splitting.
 
@@ -65,8 +62,7 @@ Let's assume we have a very large database of 5M products and want to distribute
  
 .. code-block:: php
 
-
-    > bin/console oro:website-search:reindex --scheduled --product-id=1-5000000/1000
+    php bin/console oro:website-search:reindex --scheduled --product-id=1-5000000/1000
 
 This command will generate reindex requests with 1000 products per each, thus allowing to split the 5M product pool into 5000 * 1k chunks. This strategy might drastically improve reindexation performance, depending on the amount of available consumers.
 
@@ -74,6 +70,5 @@ If you do not know the exact amount of products in the database, you can use the
 
 .. code-block:: php
 
-
-    > bin/console oro:website-search:reindex --scheduled --product-id=*/1000
+    php bin/console oro:website-search:reindex --scheduled --product-id=*/1000
 

@@ -17,7 +17,6 @@ trees.
 
 .. code-block:: php
 
-    <?php
     $config = $this->get('oro_config.user');
     $value  = $config->get('oro_anybundle.anysetting');
 
@@ -30,9 +29,8 @@ To define your own configuration settings in a bundle, use the
 ``Configuration`` class:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/DependencyInjection/Configuration.php
 
-
-    // src/Acme/DemoBundle/DependencyInjection/Configuration.php
     namespace Acme\DemoBundle\DependencyInjection;
 
     use Oro\Bundle\ConfigBundle\DependencyInjection\SettingsBuilder;
@@ -176,8 +174,8 @@ To retrieve configuration values inside a controller, use the
 Use its ``get()`` method to retrieve the value of a setting:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Controller/DemoController.php
 
-    // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -410,7 +408,7 @@ To add a new config scope:
 
    and the template:
 
-   .. code-block:: php
+   .. code-block:: twig
 
         {% extends 'OroConfigBundle::configPage.html.twig' %}
         {% import 'OroUIBundle::macros.html.twig' as UI %}

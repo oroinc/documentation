@@ -6,9 +6,8 @@ programmatically. In OroPlatform, this can be done by creating :ref:`fixture cla
 ``Migrations/Data/ORM`` subdirectory of your bundle and that implement the ``FixtureInterface``:
 
 .. code-block:: php
+   :caption: src/AppBundle/Migrations/Data/ORM/LoadTasks.php
 
-
-    // src/AppBundle/Migrations/Data/ORM/LoadTasks.php
     namespace AppBundle\Migrations\Data\ORM;
 
     use AppBundle\Entity\Priority;
@@ -50,7 +49,7 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
 .. code-block:: none
 
-    $ php bin/console oro:migration:data:load
+    php bin/console oro:migration:data:load
 
 .. tip::
 
@@ -58,7 +57,7 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
     .. code-block:: none
 
-        $ php bin/console oro:migration:data:load
+        php bin/console oro:migration:data:load
 
 .. tip::
 
@@ -69,7 +68,7 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
     .. code-block:: none
 
-        $ php bin/console oro:migration:data:load --fixtures-type=demo
+        php bin/console oro:migration:data:load --fixtures-type=demo
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

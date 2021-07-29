@@ -42,7 +42,7 @@ But you should note that the elastic index dump must be created from the old ver
 
      .. code-block:: none
 
-        bin/console lexik:maintenance:lock --env=prod
+        php bin/console lexik:maintenance:lock --env=prod
 
 
 2. Create Elastic search index dump. Consider you must do this **before** updating code to new version.
@@ -57,7 +57,7 @@ But you should note that the elastic index dump must be created from the old ver
 
      .. code-block:: none
 
-        bin/console oro:website-elasticsearch:dump-website-index elasticsearch7 website-index-es7.dump --env=prod
+        php bin/console oro:website-elasticsearch:dump-website-index elasticsearch7 website-index-es7.dump --env=prod
 
    It creates the `website-index-es7.dump` file with |search index dump in the Elasticsearch bulk API| format which is applicable for Elasticsearch version 7.\*.
 
@@ -80,13 +80,13 @@ But you should note that the elastic index dump must be created from the old ver
 
    .. code-block:: none
 
-      bin/console oro:platform:update --skip-search-reindexation --env=prod
+      php bin/console oro:platform:update --skip-search-reindexation --env=prod
 
 8. Now you need to execute command which will create an empty indexes (without any data) with correct elastic search mappings:
 
    .. code-block:: none
 
-      bin/console oro:website-elasticsearch:create-website-indexes --env=prod
+      php bin/console oro:website-elasticsearch:create-website-indexes --env=prod
 
 
 9. Upload the dump data to the Elasticsearch 7.\* index, the Elasticsearch 7.\* bulk API, and the dump file created previously using a standard curl CLI command:

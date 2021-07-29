@@ -45,9 +45,6 @@ This migration should implement `ExtendExtensionAwareInterface`.
             ...
         }
 
-        /**
-         * @param Schema $schema
-         */
         private function createRelationToBlogPostFromContentVariant(Schema $schema)
         {
             if ($schema->hasTable('oro_web_catalog_variant')) {

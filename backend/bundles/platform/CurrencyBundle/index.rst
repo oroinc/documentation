@@ -10,7 +10,10 @@ OroCurrencyBundle supports the system currency configuration and introduces curr
 Related Documentation
 ---------------------
 
-* |Configure Datagrid to Enable Multi Currency Inline Edit|
+.. toctree::
+   :maxdepth: 1
+
+   multi-currency-editor-view
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

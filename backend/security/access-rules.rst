@@ -24,7 +24,7 @@ The options that can change the behavior of AccessRuleWalker:
 - **checkRootEntity** --- Determines whether the root entity should be protected. The default value is `true`.
 - **checkRelations** --- Determines whether entities associated with the root entity should be protected. The default value is `true`.
 
-The options that can change the behaviour of access rules:
+The options that can change the behavior of access rules:
 
  - **aclDisable** --- Allows to disable the |AclAccessRule|. The default value is `false`.
  - **aclCheckOwner** --- Enables checking of the current joined entity if it is the owner of the parent entity.
@@ -90,9 +90,6 @@ Add a New Access Rule
 To add a new access rule, create a new class that implements |AccessRuleInterface|, for example:
 
  .. code-block:: php
-
-
-    <?php
 
     namespace Acme\DemoBundle\AccessRule;
 

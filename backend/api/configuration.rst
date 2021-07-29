@@ -37,8 +37,7 @@ By default this command shows configuration of nesting entities. To simplify the
 The default nesting level is ``3`` . It is specified in the configuration of ApiBundle via the ``config_max_nesting_level`` parameter. If needed, change this value:
 
 .. code-block:: yaml
-
-    # config/config.yml
+   :caption: config/config.yml
 
     oro_api:
         config_max_nesting_level: 3
@@ -532,7 +531,7 @@ The ``actions`` configuration section allows to specify action-specific options.
 
    *  **exclude** *boolean* - Indicates whether the field should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__ section.
    *  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path, e.g. ``user.firstName``. Each property name must be equal to the name of existing property of an entity. The ``_`` value can be used if a field value is not mapped to any property of an entity, e.g. for computed fields.
-   *  **direction** *string* - Indicates whether the field is input-only, output-only or bidirectional. The input-only means that the request data can contain this field, but the response data cannot. The output-only means that the response data can contain this field, but the request data cannot. The bidirectional is the default behaviour and means that both the request data and the response data can contain this field.
+   *  **direction** *string* - Indicates whether the field is input-only, output-only or bidirectional. The input-only means that the request data can contain this field, but the response data cannot. The output-only means that the response data can contain this field, but the request data cannot. The bidirectional is the default behavior and means that both the request data and the response data can contain this field.
    *  **form\_type** *string* - The form type that should be used for the field.
    *  **form\_options** *array* - The form options that should be used for the field.
 

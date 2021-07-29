@@ -100,7 +100,7 @@ The following example shows the reconfiguration of the **public** adapter:
 
 To get the list of existing Gaufrette adapters, use the following command:
 
-.. code-block:: none
+.. code-block:: bash
 
    bin/console debug:config knp_gaufrette adapters
 
@@ -149,8 +149,6 @@ as the configuration factory for the `oro_gaufrette` bundle in your bundle class
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AppBundle\DependencyInjection\Factory;
 
     use Oro\Bundle\GaufretteBundle\DependencyInjection\Factory\ConfigurationFactoryInterface;
@@ -171,8 +169,6 @@ as the configuration factory for the `oro_gaufrette` bundle in your bundle class
     }
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\AppBundle;
 
@@ -315,7 +311,6 @@ in your bundle and add it into the Bundle class:
 
 .. code-block:: php
 
-    <?php
     namespace Acme\Bundle\SomeBundle\DependencyInjection\Compiler;
     use Oro\Bundle\GaufretteBundle\Command\MigrateFileStorageCommand;
     use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;

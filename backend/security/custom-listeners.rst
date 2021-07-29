@@ -19,7 +19,7 @@ Listener uses following options:
 
 Example:
 
-.. code-block:: php
+.. code-block:: bash
 
    php bin/console oro:import:csv ~/Contact_10k.csv --current-user=admin --current-organization=1
 

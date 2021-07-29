@@ -41,9 +41,8 @@ be stored in the bundle's ``Resources/config/oro`` directory):
 ~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+   :caption: Resources/config/oro/locale_data.yml
 
-
-    # Resources/config/oro/locale_data.yml
     US:
         currency_code: USD
         phone_prefix: '1'
@@ -66,9 +65,8 @@ address).
 ~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+   :caption: Resources/config/oro/name_format.yml
 
-
-    # Resources/config/oro/name_format.yml
     en: "%prefix% %first_name% %middle_name% %last_name% %suffix%"
     ru: "%last_name% %first_name% %middle_name%"
 
@@ -87,9 +85,8 @@ This file specifies a name format per locale. Allowed placeholders are:
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+   :caption: Resources/config/oro/address_format.yml
 
-
-    # Resources/config/oro/address_format.yml
     US:
         format: "%name%\n%organization%\n%street%\n%CITY% %REGION_CODE% %COUNTRY_ISO2% %postal_code%"
     RU:

@@ -87,11 +87,11 @@ UserBundle/Entity/Provider/EmailOwnerProvider.php
         {
             /** @var User $user */
             $user = $em->getRepository('OroUserBundle:User')
-                ->findOneBy(array('email' => $email));
+                ->findOneBy(['email' => $email]);
             if ($user === null) {
                 /** @var Email $emailEntity */
                 $emailEntity = $em->getRepository('OroUserBundle:Email')
-                    ->findOneBy(array('email' => $email));
+                    ->findOneBy(['email' => $email]);
                 if ($emailEntity !== null) {
                     $user = $emailEntity->getUser();
                 }

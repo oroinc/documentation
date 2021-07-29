@@ -28,11 +28,11 @@ To set up a cookie banner:
 
    **For dev mode**
 
-   .. code-block:: php
+   .. code-block:: bash
 
 
       rm -rf var/cache/*
-      php composer.phar install --prefer-dist --no-dev
+      composer install --prefer-dist --no-dev
       php bin/console oro:platform:update --env=prod --force
       php bin/console oro:message-queue:consume --env=dev
 
@@ -42,7 +42,7 @@ To set up a cookie banner:
 
 
       rm -rf var/cache/*
-      php composer.phar install --prefer-dist --no-dev
+      composer install --prefer-dist --no-dev
       php bin/console oro:platform:update --env=prod --force
       php bin/console oro:message-queue:consume --env=prod
 
@@ -56,7 +56,6 @@ To add a translation to the cookie banner to present information in the desired 
 1. Run the following command:
 
    .. code-block:: php
-
 
       php bin/console oro:translation:load --env=prod
 

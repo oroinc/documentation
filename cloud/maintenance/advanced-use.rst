@@ -10,7 +10,7 @@ To modify configuration options for maintenance agent, you need to have the `oro
 
 The `validation` command checks your configuration for syntax errors or wrong configuration values. Use the `files` argument to check custom files or multiple files merge result:
 
-.. code-block:: none
+.. code-block:: bash
 
     orocloud-cli config:validate
     orocloud-cli config:validate /mnt/ocom/app/www/orocloud.prod.yml
@@ -20,7 +20,7 @@ Valid changes are applied within 30 minutes or automatically during deployments.
 
 Use the `help` command to get configuration details or configuration reference:
 
-.. code-block:: none
+.. code-block:: bash
 
     orocloud-cli config:help
     orocloud-cli config:help webserver.limit_whitelist
@@ -34,8 +34,7 @@ With `orocloud.yaml` it is possible to override the following nodes:
 
 **install_commands**
 
-.. code-block:: none
-
+.. code-block:: yaml
 
     ---
     orocloud_options:
@@ -47,8 +46,7 @@ With `orocloud.yaml` it is possible to override the following nodes:
 
 **upgrade_commands**
 
-.. code-block:: none
-
+.. code-block:: yaml
 
     ---
     orocloud_options:
@@ -58,8 +56,7 @@ With `orocloud.yaml` it is possible to override the following nodes:
 
 **git clone configuration**
 
-.. code-block:: none
-
+.. code-block:: yaml
 
     ---
     orocloud_options:
@@ -70,8 +67,7 @@ With `orocloud.yaml` it is possible to override the following nodes:
 
 **composer_command**
 
-.. code-block:: none
-
+.. code-block:: yaml
 
     ---
     orocloud_options:
@@ -93,8 +89,7 @@ Some options may also be omitted as they are added automatically:
 
 **after_composer_install_commands**
 
-.. code-block:: none
-
+.. code-block:: yaml
 
     ---
     orocloud_options:
@@ -104,8 +99,7 @@ Some options may also be omitted as they are added automatically:
 
 **db_extensions**
 
-.. code-block:: none
-
+.. code-block:: yaml
 
     ---
     orocloud_options:
@@ -116,8 +110,7 @@ Some options may also be omitted as they are added automatically:
 
 **before_backup_create_commands**
 
-.. code-block:: none
-
+.. code-block:: yaml
 
     ---
     orocloud_options:

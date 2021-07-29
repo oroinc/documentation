@@ -26,9 +26,8 @@ The ``source`` option is used to configure a Doctrine query builder that is used
 to be displayed in the grid:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         app-tasks-grid:
             source:
@@ -52,9 +51,8 @@ Displayed Columns
 Then, the ``columns`` option needs to be used to configure how which data will be displayed:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         app-tasks-grid:
             # ...
@@ -82,9 +80,8 @@ Use the ``sorters`` option to define on which columns' header the user can click
 data:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         app-tasks-grid:
             # ...
@@ -120,9 +117,8 @@ The ``data_name`` denotes the name of the property to filter and will be used as
 datagrid's query builder.
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         app-tasks-grid:
             # ...
@@ -150,9 +146,8 @@ Complete Datagrid Configuration
 The final datagrid configuration now looks like this:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         app-tasks-grid:
             source:
@@ -223,9 +218,8 @@ To make your datagrid accessible you need to create a controller that can be vis
 which will serve a view that renders the configured datagrid:
 
 .. code-block:: php
+   :caption: src/AppBundle/Controller/TaskController.php
 
-
-    // src/AppBundle/Controller/TaskController.php
     namespace AppBundle\Controller;
 
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -250,9 +244,8 @@ which will serve a view that renders the configured datagrid:
 The view can be very simple if you extend the ``OroUIBundle:actions:index.html.twig`` template:
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Task/index.html.twig
 
-
-    {# src/AppBundle/Resources/views/Task/index.html.twig #}
     {% extends 'OroUIBundle:actions:index.html.twig' %}
 
     {% set gridName = 'app-tasks-grid' %}
@@ -269,9 +262,8 @@ Link to the Action
 At last, you need to make the action accessible by creating a menu item:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/navigation.yml
 
-
-    # src/AppBundle/Resources/config/oro/navigation.yml
     menu_config:
         items:
             task_list:

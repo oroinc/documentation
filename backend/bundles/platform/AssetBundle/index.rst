@@ -16,8 +16,7 @@ Webpack *entry points* with a list of files are loaded from `assets.yml` files f
 
 To see the list of loaded bundles ordered by the priority, run:
 
-.. code-block:: none
-
+.. code-block:: bash
 
    php bin/console debug:container --parameter=kernel.bundles --format=json
 

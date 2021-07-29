@@ -102,12 +102,8 @@ To extend a scope with a criterion that may be provided by your bundle:
     {
         public const USER = 'user';
 
-        /** @var TokenStorageInterface */
-        private $tokenStorage;
+        private TokenStorageInterface $tokenStorage;
 
-        /**
-         * @param TokenStorageInterface $tokenStorage
-         */
         public function __construct(TokenStorageInterface $tokenStorage)
         {
             $this->tokenStorage = $tokenStorage;

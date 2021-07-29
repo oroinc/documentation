@@ -23,9 +23,6 @@ To implement a new content widget, create a class that stores content widget typ
 
 .. code-block:: php
 
-
-    <?php
-
     namespace ACME\Bundle\CopyrightBundle\ContentWidget;
 
     use Oro\Bundle\CMSBundle\ContentWidget\AbstractContentWidgetType;
@@ -150,9 +147,6 @@ Add translations to strings in the template.
 
     .. code-block:: php
 
-
-        <?php
-
         namespace ACME\Bundle\CopyrightBundle\ContentWidget;
 
         use Oro\Bundle\CMSBundle\ContentWidget\AbstractContentWidgetType;
@@ -219,9 +213,6 @@ Add translations to strings in the template.
 Override *getWidgetData* method in the Content Widget Type.
 
 .. code-block:: php
-
-
-    <?php
 
     namespace ACME\Bundle\CopyrightBundle\ContentWidget;
 

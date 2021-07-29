@@ -32,14 +32,8 @@ Simple CSV Storage example:
      */
     class CSVFilePriceStorage implements ProductPriceStorageInterface
     {
-        /**
-         * @var DoctrineHelper
-         */
-        private $doctrineHelper;
+        private DoctrineHelper $doctrineHelper;
 
-        /**
-         * @param DoctrineHelper $doctrineHelper
-         */
         public function __construct(DoctrineHelper $doctrineHelper)
         {
             $this->doctrineHelper = $doctrineHelper;
@@ -81,11 +75,6 @@ Simple CSV Storage example:
             return ['USD'];
         }
 
-        /**
-         * @param array $data
-         * @param Product $product
-         * @return ProductPriceDTO
-         */
         private function createPriceDTO(array $data, Product $product): ProductPriceDTO
         {
             /** @var ProductUnit $productUnit */
@@ -140,9 +129,6 @@ For more information, see |Feature Toggle Bundle|.
 Voter example:
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Acme\Bundle\PricingBundle\Feature;
 

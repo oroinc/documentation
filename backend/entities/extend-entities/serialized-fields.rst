@@ -44,8 +44,6 @@ To create a serialized field via migration, use |SerializedFieldsExtension|. For
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AppBundle\Migrations\Schema\v1_1;
 
     use Doctrine\DBAL\Schema\Schema;

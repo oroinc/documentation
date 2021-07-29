@@ -9,9 +9,8 @@ Create and Embed Custom Stylesheets
 SCSS files should be stored in the ``Resources/public/css/`` folder of a bundle and registered in the ``Resources/config/oro/assets.yml`` configuration file:
 
 .. code-block:: yaml
+   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
 
-
-    # src/Acme/NewBundle/Resources/config/oro/assets.yml
     css:
         inputs:
             - 'bundles/acmenew/css/colors.scss'
@@ -22,9 +21,8 @@ SCSS files should be stored in the ``Resources/public/css/`` folder of a bundle 
 You can import Sass modules from **node_modules**. Just prepend them with a ~ to tell Webpack that this is not a relative import.
 
 .. code-block:: yaml
+   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
 
-
-    # src/Acme/NewBundle/Resources/config/oro/assets.yml
     css:
         inputs:
             - '~prismjs/themes/prism-coy.css'
@@ -33,7 +31,7 @@ To apply changes, run the command:
 
 .. code-block:: none
 
-    $ php bin/console oro:assets:install  --symlink
+    php bin/console oro:assets:install  --symlink
 
 In this example, all four SCSS files from your bundle along with all the other files from the Oro Platform
 and third-party bundles will be merged and dumped to the ``public/css/oro.css`` file.
@@ -42,9 +40,8 @@ If you want to keep your CSS code separately, you can dump all your SCSS files t
 To do that, define a new entry point in ``assets.yml``
 
 .. code-block:: yaml
+   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
 
-
-    # src/Acme/NewBundle/Resources/config/oro/assets.yml
     acme_styles: # entry point name
         inputs:
             - 'bundles/acmenew/css/colors.scss'
@@ -56,9 +53,8 @@ To do that, define a new entry point in ``assets.yml``
 Use the corresponding placeholder to put compiled CSS file to the head of your document
 
 .. code-block:: yaml
+   :caption: src/Acme/Bundle/NewBundle/Resources/config/oro/placeholders.yml
 
-
-    # src/Acme/Bundle/NewBundle/Resources/config/oro/placeholders.yml
     placeholders:
         placeholders:
             head_style:
@@ -73,9 +69,8 @@ Use the corresponding placeholder to put compiled CSS file to the head of your d
 and finally, add the template for rendering the style tag.
 
 .. code-block:: html+jinja
+   :caption: src/Acme/Bundle/NewBundle/Resources/views/acme_css.html.twig
 
-
-    # src/Acme/Bundle/NewBundle/Resources/views/acme_css.html.twig
     <link rel="stylesheet" media="all" href="{{ asset('css/acme.css') }}" />
 
 .. warning::
@@ -93,14 +88,14 @@ The assets building takes some time. So better build only the theme that is curr
 
 .. code-block:: none
 
-    $ php bin/console oro:assets:build admin.oro
+    php bin/console oro:assets:build admin.oro
 
 Also, you can use the watch mode to rebuild assets automatically after some SCSS file is changed.
 Just add the ``--watch`` (or ``-w``) option to the build command.
 
 .. code-block:: none
 
-    $ php bin/console oro:assets:build --watch
+    php bin/console oro:assets:build --watch
 
 Refer to :ref:`Asset Commands <bundle-docs-platform-asset-bundle-commands>` for more information.
 

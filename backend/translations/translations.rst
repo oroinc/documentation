@@ -52,9 +52,6 @@ or in the `php` code:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Oro\Bundle\AcmeBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -104,9 +101,6 @@ Bellow is an example of an entity which must work with `Gedmo/Translatable` for 
 
 .. code-block:: php
 
-
-   <?php
-
    namespace Oro\Bundle\AcmeBundle\Entity;
 
    use Doctrine\ORM\Mapping as ORM;
@@ -151,9 +145,6 @@ Bellow is an example of an entity which must work with `Gedmo/Translatable` for 
            return $this->name;
        }
 
-       /**
-        * @param string $locale
-        */
        public function setLocale(string $locale)
        {
            $this->locale = $locale;
@@ -172,9 +163,6 @@ Also, `Gedmo/Translatable` requires a dictionary with all translations for the o
 
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Oro\Bundle\AcmeBundle\Entity;
 
@@ -273,9 +261,6 @@ To use `LocalizedFallbackValue` for fields into the entity, make it is extendabl
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Oro\Bundle\AcmeBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -309,9 +294,6 @@ To use `LocalizedFallbackValue` for fields into the entity, make it is extendabl
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Oro\Bundle\AcmeBundle\Model;
 
     use Oro\Bundle\LocaleBundle\Entity\Localization;
@@ -335,9 +317,6 @@ inside the bundle class:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Oro\Bundle\AcmeBundle;
 
     use Oro\Bundle\LocaleBundle\DependencyInjection\Compiler\DefaultFallbackExtensionPass;
@@ -346,9 +325,6 @@ inside the bundle class:
 
     class OroAcmeBundle extends Bundle
     {
-        /**
-         * @param ContainerBuilder $container
-         */
         public function build(ContainerBuilder $container)
         {
             parent::build($container);
@@ -364,9 +340,6 @@ inside the bundle class:
 As the result, a proxy class is generated in the application cache: **cache/prod/oro_entities/Extend/Entity/EX_OroAcmeBundle_Acme.php**
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Extend\Entity;
 
@@ -389,9 +362,6 @@ To be able to provide translations in the UI, use the following example of the f
 
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Oro\Bundle\AcmeBundle\Form\Type;
 

@@ -35,9 +35,8 @@ annotations for the entity.
 Example of annotation configuration:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Product.php
 
-
-    // src/Acme/DemoBundle/Entity/Product.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;

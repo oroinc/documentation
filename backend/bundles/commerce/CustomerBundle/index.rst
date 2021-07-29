@@ -27,10 +27,6 @@ The example of the frontend permissions configuration for entity is provided bel
 
 .. code-block:: php
 
-
-    <?php
-    ....
-
      /**
      * @ORM\Entity()
      * @Config(

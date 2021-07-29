@@ -36,9 +36,6 @@ You can create content blocks with a collection of predefined content variants u
 
     class LoadHomePageSlider extends AbstractFixture
     {
-        /**
-         * @param ObjectManager $manager
-         */
         public function load(ObjectManager $manager)
         {
             $slider = new ContentBlock();

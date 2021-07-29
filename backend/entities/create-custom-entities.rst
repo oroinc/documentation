@@ -7,8 +7,6 @@ A custom entity is an entity that has no PHP class in any bundle. The definition
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;

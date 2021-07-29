@@ -27,7 +27,7 @@ Important Notes
 
 By default, all datagrids that use ORM datasource are marked by the |HINT_PRECISE_ORDER_BY| query hint. This guarantees that rows are sorted the same way independently of the state of SQL server and the values of OFFSET and LIMIT clauses. More details are available in the |Queries Limits| section of PostgreSQL documentation.
 
-If you need to disable this behaviour for your datagrid, use the following configuration:
+If you need to disable this behavior for your datagrid, use the following configuration:
 
 .. code-block:: yaml
 

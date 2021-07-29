@@ -72,7 +72,7 @@ An example of usage:
 
 .. note:: Keep in mind that cache is also cleared when you run
 
-.. code-block:: php
+.. code-block:: bash
 
    php bin/console cache:clear
 
@@ -89,7 +89,7 @@ An example of usage:
 
 .. note:: Keep in mind that cache is also warmed up when you run
 
-.. code-block:: php
+.. code-block:: bash
 
    php bin/console cache:clear
 

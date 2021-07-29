@@ -38,7 +38,6 @@ It is **required** to add or update a DocBlock for any method you modify or prod
 
    .. code-block:: php
 
-
         /**
          * Returns the products associated with the provided line item.
          *

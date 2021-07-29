@@ -22,9 +22,8 @@ First, you need to create a form type that makes it possible to let the user ent
 needed to describe a task:
 
 .. code-block:: php
+   :caption: src/AppBundle/Form/TaskType.php
 
-
-    // src/AppBundle/Form/TaskType.php
     namespace AppBundle\Form;
 
     use Symfony\Component\Form\AbstractType;
@@ -63,9 +62,8 @@ new task should be created, and one that is able to fetch an existing task to le
 its data:
 
 .. code-block:: php
+   :caption: src/AppBundle/Controller/TaskController.php
 
-
-    // src/AppBundle/Controller/TaskController.php
     namespace AppBundle\Controller;
 
     use AppBundle\Entity\Task;
@@ -112,9 +110,8 @@ Then, make sure that the controller is loaded in your routing configuration so t
 which controller needs to be called for particular routes:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/routing.yml
 
-
-    # src/AppBundle/Resources/config/routing.yml
     app_task:
         resource: '@AppBundle/Controller/TaskController.php'
         type: annotation
@@ -130,9 +127,7 @@ that you can use. This way your own forms will provide the same look and feel as
 with OroPlatform:
 
 .. code-block:: none
-
-
-    {# src/AppBundle/Resources/views/Task/update.html.twig #}
+   :caption: src/AppBundle/Resources/views/Task/update.html.twig
 
     {# extend the base template from the OroUIBundle #}
     {% extends 'OroUIBundle:actions:update.html.twig' %}
@@ -223,9 +218,8 @@ pre-defined ``navButtons`` block which you can use to add a button that links to
 action*:
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Task/index.html.twig
 
-
-    {# src/AppBundle/Resources/views/Task/index.html.twig #}
     {% extends 'OroUIBundle:actions:index.html.twig' %}
 
     {% set gridName = 'app-tasks-grid' %}
@@ -247,9 +241,8 @@ the update action is built and then add this URL to the list of available action
 configuration:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         app-tasks-grid:
             # ...

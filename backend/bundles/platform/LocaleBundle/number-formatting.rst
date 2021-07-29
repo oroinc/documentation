@@ -123,12 +123,12 @@ A list of custom attributes, text attributes, symbols and locale can be passed a
     echo $numberFormatter->format(
         -100000.123,
         \NumberFormatter::DECIMAL,
-        'attributes' => array(\NumberFormatter::GROUPING_SIZE => 4),
-        'textAttributes' => array(\NumberFormatter::NEGATIVE_PREFIX => 'MINUS '),
-        'symbols' => array(
+        'attributes' => [\NumberFormatter::GROUPING_SIZE => 4],
+        'textAttributes' => [\NumberFormatter::NEGATIVE_PREFIX => 'MINUS '],
+        'symbols' => [
             \NumberFormatter::DECIMAL_SEPARATOR_SYMBOL => ',',
             \NumberFormatter::GROUPING_SEPARATOR_SYMBOL => '.',
-        ),
+        ],
     );
     // outputs: "MINUS 10.0000,123"
 
@@ -146,7 +146,7 @@ Formats currency number. Currency code should be specified, otherwise default cu
     // outputs: "$1,234.57" if default locale is en_US and currency is 'USD'
 
     // Specify custom currency and locale
-    echo $numberFormatter->formatCurrency(1234.56789, 'EUR', array(), array(), array(), 'ru_RU');
+    echo $numberFormatter->formatCurrency(1234.56789, 'EUR', [], [], [], 'ru_RU');
     // outputs: "1 234,57 €"
 
 formatDecimal
@@ -165,9 +165,9 @@ Formats decimal number.
     // Specify custom locale and attributes
     echo $numberFormatter->formatDecimal(
         1234.56789,
-        'attributes' => array('fraction_digits' => 10),
-        'textAttributes' => array('positive_prefix' => '+',),
-        'symbols' => array(\NumberFormatter::DECIMAL_SEPARATOR_SYMBOL => ',', \NumberFormatter::GROUPING_SEPARATOR_SYMBOL => ' '),
+        'attributes' => ['fraction_digits' => 10],
+        'textAttributes' => ['positive_prefix' => '+',],
+        'symbols' => [\NumberFormatter::DECIMAL_SEPARATOR_SYMBOL => ',', \NumberFormatter::GROUPING_SEPARATOR_SYMBOL => ' '],
         'en_US'
     );
     // outputs: "+12 345,6789000000"
@@ -185,7 +185,7 @@ Formats percent number.
     echo $numberFormatter->formatPercent(1);
     // outputs: "100%"
 
-    echo $numberFormatter->formatPercent(.567, array(), array(), array(), 'en_US');
+    echo $numberFormatter->formatPercent(.567, [], [], [], 'en_US');
     // outputs: "56,7%"
 
 
@@ -201,7 +201,7 @@ Formats spellout number. If locale is not specified, the  default one will be us
     echo $numberFormatter->formatSpellout(1);
     // outputs: "one"
 
-    echo $numberFormatter->formatSpellout(21, array(), array(), array(), 'en_US');
+    echo $numberFormatter->formatSpellout(21, [], [], [], 'en_US');
     // outputs: "twenty-one"
 
 formatDuration
@@ -218,9 +218,9 @@ Formats duration number. If locale is not specified, the default one is used.
 
     echo $numberFormatter->formatDuration(
         3661,
-        array(),
-        array(\NumberFormatter::DEFAULT_RULESET => "%with-words"),
-        array(),
+        [],
+        [\NumberFormatter::DEFAULT_RULESET => "%with-words"],
+        [],
         'en_US'
     );
     // outputs: "1 hour, 1 minute, 1 second"
@@ -237,7 +237,7 @@ Formats ordinal number. If locale is not specified, the default one is used.
     echo $numberFormatter->formatOrdinal(1);
     // outputs: "1st"
 
-    echo $numberFormatter->formatOrdinal(3, array(), array(), array(), 'en_US');
+    echo $numberFormatter->formatOrdinal(3, [], [], [], 'en_US');
     // outputs: "3rd"
 
 getAttribute

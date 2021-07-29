@@ -20,9 +20,6 @@ First, create an event listener class:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\TestBundle\EventListener;
 
     use Oro\Bundle\ProductBundle\Entity\Product;
@@ -31,9 +28,6 @@ First, create an event listener class:
 
     class SetWebsiteSearchRelevanceWeightListener
     {
-        /**
-         * @param IndexEntityEvent $event
-         */
         public function onIndexEntity(IndexEntityEvent $event)
         {
             /** @var Product $product */
@@ -82,4 +76,4 @@ Specify a mapping for the added `relevance_weight` field in the `Resources/confi
             type: decimal
 
 
-Finally, clear the cache using the ``bin/console cache:clear --env=prod`` command and trigger reindexation of the required entity using the ``bin/console oro:website-search:reindex --class=OroProductBundle:Product --env=prod`` command.
+Finally, clear the cache using the ``php bin/console cache:clear --env=prod`` command and trigger reindexation of the required entity using the ``php bin/console oro:website-search:reindex --class=OroProductBundle:Product --env=prod`` command.

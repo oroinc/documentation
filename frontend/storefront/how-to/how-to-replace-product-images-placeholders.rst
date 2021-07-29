@@ -20,9 +20,8 @@ Replace a Placeholder
 2. Specify the main placeholder image in your :ref:`theme configuration file <dev-doc-frontend-layouts-theming-definition>`:
 
    .. code-block:: yaml
+      :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
-
-      // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
       image_placeholders:
         product: '@AppBundle/Resources/public/default/product/no_image.png'
         category: '@AppBundle/Resources/public/default/product/no_image.png'
@@ -30,9 +29,8 @@ Replace a Placeholder
    or if files are in the same bundle with theme.yml
 
    .. code-block:: yaml
+      :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
-
-      // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
       image_placeholders:
         product: '/bundles/app/default/product/no_image.png'
         category: '/bundles/app/default/product/no_image.png'

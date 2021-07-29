@@ -43,10 +43,10 @@ The illustration for this example is below:
                     target_fields:          [relevance_weight]
 
 
-3. Clear the cache using the ``bin/console cache:clear --env=prod`` command.
+3. Clear the cache using the ``php bin/console cache:clear --env=prod`` command.
 4. Restart all consumers. 
 
-If you have already populated values, you may need to run reindexation using the ``bin/console oro:search:reindex --env=prod`` command to pass relevance weight to search index.
+If you have already populated values, you may need to run reindexation using the ``php bin/console oro:search:reindex --env=prod`` command to pass relevance weight to search index.
 
 Event Listener
 ^^^^^^^^^^^^^^
@@ -95,4 +95,4 @@ Then, register this event listener in the DI container:
                 - { name: kernel.event_listener, event: oro_search.prepare_entity_map, method: onPrepareEntityMap }
 
 
-Finally, clear the cache using the ``bin/console cache:clear --env=prod`` command and trigger reindexation of the required entity using the ``bin/console oro:search:reindex 'Oro\Bundle\OrganizationBundle\Entity\BusinessUnit' --env=prod`` command.
+Finally, clear the cache using the ``php bin/console cache:clear --env=prod`` command and trigger reindexation of the required entity using the ``php bin/console oro:search:reindex 'Oro\Bundle\OrganizationBundle\Entity\BusinessUnit' --env=prod`` command.

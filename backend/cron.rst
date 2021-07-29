@@ -56,9 +56,8 @@ Implementing *CronCommandInterface* requires the implementation of the |getDefau
 value is **5 0 \* \* \***.
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Command/DemoCommand.php
 
-
-    // src/Acme/DemoBundle/Command/DemoCommand.php
     namespace Acme\DemoBundle\Command;
 
     use Oro\Bundle\CronBundle\Command\CronCommandInterface;
@@ -68,8 +67,7 @@ value is **5 0 \* \* \***.
 
     class DemoCommand extends Command implements CronCommandInterface
     {
-        /** @var string */
-        protected static $defaultName = 'oro:cron:demo';
+        protected static string $defaultName = 'oro:cron:demo';
 
         public function getDefaultDefinition()
         {

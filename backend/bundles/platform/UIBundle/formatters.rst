@@ -42,8 +42,7 @@ This manager has method `format` that applies the given formatter to the paramet
     use Oro\Bundle\UIBundle\Formatter\FormatterManager;
 
     ...
-    /** @var FormatterManager **/
-    protected $formatterManager
+    protected FormatterManager $formatterManager
     ...
 
     $date = new \DateTime();
