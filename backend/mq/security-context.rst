@@ -11,7 +11,7 @@ a |security token|
 exists in the |token storage|, the security token is serialized and added to the message. When the consumer processes this message, the security token
 is extracted from the message and is added to the token storage on the consumer side.
 
-Sometimes, however, this behaviour need to be changed for certain types of messages.
+Sometimes, however, this behavior need to be changed for certain types of messages.
 
 The following sections describe how this can be achieved.
 

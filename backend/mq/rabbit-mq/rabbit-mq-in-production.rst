@@ -104,8 +104,7 @@ Create a template unit file to allow systemd to address multiple units from a si
 For example, name it `oro-message-queue@.service` and put it into `/lib/systemd/system/` folder.
 
 .. code-block:: none
-
-   # /lib/systemd/system/oro-message-queue@.service
+   :caption: /lib/systemd/system/oro-message-queue@.service
 
    [Unit]
    Description=ORO AMQP consumer oro.%i

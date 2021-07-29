@@ -74,9 +74,6 @@ If an entity does not contain the `customerUser` property:
       {
           use FeatureCheckerHolderTrait;
 
-          /**
-           * @param AfterFormProcessEvent $event
-           */
           public function beforeFlush(AfterFormProcessEvent $event)
           {
               // No actions if consents feature disabled

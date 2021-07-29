@@ -80,9 +80,6 @@ To implement 3rd approach for your configuration, you need to take the following
 
 .. code-block:: php
 
-   
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\DependencyInjection;
 
     use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -108,9 +105,6 @@ To implement 3rd approach for your configuration, you need to take the following
 
 .. code-block:: php
 
-   
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\Provider;
 
     use Acme\Bundle\AcmeBundle\DependencyInjection\MyConfiguration;
@@ -124,9 +118,6 @@ To implement 3rd approach for your configuration, you need to take the following
     {
         private const CONFIG_FILE = 'Resources/config/oro/my_config.yml';
 
-        /**
-         * @return array
-         */
         public function getConfiguration(): array
         {
             return $this->doGetConfig();
@@ -211,9 +202,6 @@ Here is an example how to use these methods:
         $this->configuration = $config;
     }
 
-    /**
-     * @return array|null
-     */
     private function fetchConfigFromCache(): ?array
     {
         $config = null;
@@ -228,17 +216,11 @@ Here is an example how to use these methods:
         return $config;
     }
 
-    /**
-     * @param array $config
-     */
     private function saveConfigToCache(array $config): void
     {
         $this->cache->save(self::CACHE_KEY, [$this->configProvider->getCacheTimestamp(), $config]);
     }
 
-    /**
-     * @return array
-     */
     private function loadConfig(): array
     {
         $config = $this->configProvider->getConfiguration();
@@ -272,8 +254,7 @@ we need to make sure that we do not keep old values in the memory. Consider this
 
     class LocalizationManager
     {
-        /** @var \Doctrine\Common\Cache\ArrayCache */
-        private $cacheProvider;
+        private \Doctrine\Common\Cache\ArrayCache $cacheProvider;
 
         public function getLocalization($id)
         {

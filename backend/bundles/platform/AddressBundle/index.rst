@@ -110,11 +110,11 @@ Address collection can be added to a form following the next three steps:
 
         $builder->add(
             'addresses',
-            'oro_address_collection',
-            array(
+            AddressCollectionType::class,
+            [
                 'required' => false,
                 'type'     => 'oro_address'
-            )
+            ]
         );
 
 
@@ -127,7 +127,7 @@ Address collection can be added to a form following the next three steps:
 
 3) Add *@OroAddress/Include/fields.html.twig* to the template to enable address form field types.
 
-   .. code-block:: php
+   .. code-block:: twig
 
      {% form_theme form with ['@OroAddress/Include/fields.html.twig']}
 

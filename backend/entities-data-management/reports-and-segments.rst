@@ -24,9 +24,8 @@ file called ``datagrids.yml`` in the ``Resources/config/oro`` directory of your 
 following example:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
     datagrids:
         orocrm_report-opportunities-won_by_period:
             pageTitle: orocrm.report.opportunities_won_by_period
@@ -195,9 +194,8 @@ a configuration file named ``navigation.yml`` that is located in the ``Resources
 of your bundle:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
         items:
             account_opportunity:

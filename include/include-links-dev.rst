@@ -5732,6 +5732,54 @@ Links (Dev)
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application" target="_blank">docker.io/oroinc/commerce-crm-application</a>
 
+.. |Select2| raw:: html
+
+   <a href="http://ivaynberg.github.io/select2/" target="_blank">Select2</a>
+
+.. |underscore.js| raw:: html
+
+   <a href="http://underscorejs.org/" target="_blank">underscore.js</a>
+
+.. |oroform/js/expression-editor-util| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/expression-editor-util.js" target="_blank">oroform/js/expression-editor-util</a>
+
+.. |oroform/js/app/views/expression-editor-view| raw:: html
+
+   <a href="FormBundle/Resources/public/js/app/views/expression-editor-view.js" target="_blank">oroform/js/app/views/expression-editor-view</a>
+
+.. |TinyMCE| raw:: html
+
+   <a href="https://www.tinymce.com/" target="_blank">TinyMCE</a>
+
+.. |in the app.yml file| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/config/oro/app.yml" target="_blank">in the app.yml file</a>
+
+.. |jQuery Validation Plugin| raw:: html
+
+   <a href="http://jqueryvalidation.org/" target="_blank">jQuery Validation Plugin</a>
+
+.. |Symfony validation| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/validation.html" target="_blank">Symfony validation</a>
+
+.. |available keys here| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/tools/frontend-type-map.js" target="_blank">available keys here</a>
+
+.. |orouser/js/tools/acl-users-search-api-accessor| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/UserBundle/Resources/doc/client-side/acl-users-search-api-accessor.md" target="_blank">orouser/js/tools/acl-users-search-api-accessor</a>
+
+.. |datepicker documentation| raw:: html
+
+   <a href="http://api.jqueryui.com/datepicker/" target="_blank">datepicker documentation</a>
+
+.. |jQuery Timepicker documentation| raw:: html
+
+   <a href="https://github.com/jonthornton/jquery-timepicker#options" target="_blank">jQuery Timepicker documentation</a>
+
 .. |Sandbox mode| raw:: html
 
    <a href="https://twig.symfony.com/doc/2.x/api.html#sandbox-extension" target="_blank">Sandbox mode</a>
@@ -5755,6 +5803,10 @@ Links (Dev)
 .. |docker.io/oroinc/commerce-crm-application-de| raw:: html
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application-de" target="_blank">docker.io/oroinc/commerce-crm-application-de</a>
+
+.. |Taggable interface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TagBundle/Entity/Taggable.php" target="_blank">Taggable interface</a>
 
 .. |ConsoleCommandSubscriber| raw:: html
 

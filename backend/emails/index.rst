@@ -29,9 +29,8 @@ class provides a ``getEmailsDir()`` method which should return the path of the d
 contains your templates:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/DataFixtures/ORM/EmailTemplatesFixture.php
 
-
-    // src/Acme/Bundle/DemoBundle/DataFixtures/ORM/EmailTemplatesFixture.php
     namespace Acme\Bundle\DemoBundle\DataFixtures\ORM;
 
     use Oro\Bundle\EmailBundle\Migrations\Data\ORM\AbstractEmailFixture;
@@ -106,9 +105,8 @@ You can manually create an email by creating a new instance of the ``Email`` mod
 the setter methods for all the properties you want to be set:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Controller/EmailController.php
 
-
-    // src/Acme/DemoBundle/Controller/EmailController.php
     namespace Acme\DemoBundle\Controller;
 
     use Oro\Bundle\EmailBundle\Form\Model\Email;
@@ -184,9 +182,8 @@ create an email model based on such a persisted entity, by using the useful
 |EmailModelBuilder| helper class:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Controller/EmailController.php
 
-
-    // src/Acme/DemoBundle/Controller/EmailController.php
     namespace Acme\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -207,9 +204,8 @@ responsible for sending the email and persisting it to the database (which also 
 contexts to customers, users, and so on):
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Controller/EmailController.php
 
-
-    // src/Acme/DemoBundle/Controller/EmailController.php
     namespace Acme\DemoBundle\Controller;
 
     // ...
@@ -257,9 +253,8 @@ To be notified by such an event, you have to create an
 information. The easiest way to register a new `EmailNotification` is to create data fixtures:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Migrations/Data/ORM/CreateCommentNotification.php
 
-
-    // src/Acme/DemoBundle/Migrations/Data/ORM/CreateCommentNotification.php
     namespace Acme\DemoBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -341,9 +336,8 @@ Each entity owning an email address must have its own email entity that implemen
 Sample ``Email`` entity:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Entity/ApplicantEmail.php
 
-
-    // src/Acme/Bundle/DemoBundle/Entity/ApplicantEmail.php
     namespace Acme\Bundle\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -421,9 +415,8 @@ The entity that is the owner of the email address has to implement the
 For ``Applicant`` entity, the implementation should be similar to the following:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Entity/Applicant.php
 
-
-    // src/Acme/Bundle/DemoBundle/Entity/Applicant.php
     namespace Acme\Bundle\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -508,9 +501,8 @@ contains two methods:
 The provider class should then look like this:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Entity/Provider/EmailOwnerProvider.php
 
-
-    // src/Acme/Bundle/DemoBundle/Entity/Provider/EmailOwnerProvider.php
     namespace Acme\Bundle\DemoBundle\Entity\Provider;
 
     use Acme\Bundle\DemoBundle\Entity\ApplicantEmail;
@@ -542,9 +534,8 @@ You then need to create a service for the new ``EmailOwnerProvider`` class and t
 ``oro_email.owner.provider`` tag to make the application aware of the new email provider:
 
 .. code-block:: yaml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
-
-    # src/Acme/Bundle/DemoBundle/Resources/config/services.yml
     services:
         acme_demo.provider.email_owner_provider:
             class: Acme\Bundle\DemoBundle\Entity\Provider\EmailOwnerProvider
@@ -558,13 +549,13 @@ Refresh the Database Schema
 
 Finally, you have to update the database schema and clear the application cache:
 
-.. code-block:: none
+.. code-block:: bash
 
     # update the database schema
-    $ php bin/console doctrine:schema:update --force
+    php bin/console doctrine:schema:update --force
 
     # warm up the application cache
-    $ php bin/console cache:warmup
+    php bin/console cache:warmup
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

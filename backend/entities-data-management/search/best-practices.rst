@@ -21,9 +21,6 @@ Here is example of the search repository for the standard index type and its def
 
 .. code-block:: php
 
-
-   <?php
-
    namespace Oro\Bundle\UserBundle\Search;
 
    use Oro\Bundle\SearchBundle\Query\Criteria\Criteria;
@@ -71,9 +68,6 @@ Here is example of the search repository for the standard index type and its def
 And here is example of the search repository for the website index type and its definition:
 
 .. code-block:: php
-
-
-   <?php
 
    namespace Oro\Bundle\ProductBundle\Search;
 

@@ -164,7 +164,7 @@ Filters
 
   This filter uses the *format* method from the product unit value formatter, and has the same logic.
 
-  .. code-block:: none
+  .. code-block:: twig
 
      {{ value|oro_format_product_unit_value(unit) }}
 
@@ -172,7 +172,7 @@ Filters
 
   This filter uses the *formatShort* method from the product unit value formatter, and has the same logic.
 
-  .. code-block:: none
+  .. code-block:: twig
 
       {{ value|oro_format_short_product_unit_value(unit) }}
 
@@ -180,7 +180,7 @@ Filters
 
   This filter uses the *formatCode* method from the product unit value formatter, and has the same logic.
 
-  .. code-block:: none
+  .. code-block:: twig
 
       {{ value|oro_format_product_unit_code(unitCode, isShort) }}
 
@@ -188,7 +188,7 @@ Filters
 
   This filter uses the *format* method from the product unit label formatter, and has the same logic.
 
-  .. code-block:: none
+  .. code-block:: twig
 
       {{ value|oro_format_product_unit_label(code) }}
 
@@ -196,7 +196,7 @@ Filters
 
   This filter is an alias of *oro_format_product_unit_label* with pre-specified argument *isShort* set to `true`.
 
-  .. code-block:: none
+  .. code-block:: twig
 
       {{ value|oro_format_short_product_unit_label(code) }}
 

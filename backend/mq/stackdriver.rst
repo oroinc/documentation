@@ -11,16 +11,14 @@ A simple example of how you can stream your message queue logs to the Stackdrive
 
 Add Google Cloud SDK package:
 
-.. code-block:: none
+.. code-block:: bash
 
    COMPOSER=dev.json composer require "google/cloud":"~0.70"
 
 Create **StackdriverHandler** that uses GCloud SDK:
 
 .. code-block:: php
-   :caption: // src/Acme/Bundle/DemoBundle/Log/Handler/StackdriverHandler.php
-
-    <?php
+   :caption: src/Acme/Bundle/DemoBundle/Log/Handler/StackdriverHandler.php
 
     namespace Acme\Bundle\DemoBundle\Log\Handler;
 

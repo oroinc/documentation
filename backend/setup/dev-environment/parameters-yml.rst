@@ -62,8 +62,7 @@ The Sample of Configuration Parameters
 
 The sample contents of the **<installation directory>/config/parameters.yml** file for OroCommerce:
 
-.. code-block:: none
-
+.. code-block:: yaml
 
        parameters:
           database_driver:         pdo_mysql

@@ -110,9 +110,8 @@ Customize Sitemap Provider Logic
 Your new provider should implement `UrlItemsProviderInterface`:
 
 .. code-block:: php
+   :caption: src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
 
-
-    // src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
     class MyProvider implements UrlItemsProviderInterface
     {
         ...
@@ -145,9 +144,8 @@ A new `frontend_master_catalog` feature was created to detect if web catalog res
 The provider that depends on this feature should also implement `FeatureToggleableInterface`, use `FeatureCheckerHolderTrait`:
 
 .. code-block:: php
+   :caption: src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
 
-
-    // src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
     class MyProvider implements UrlItemsProviderInterface, 
     {
         use FeatureCheckerHolderTrait;

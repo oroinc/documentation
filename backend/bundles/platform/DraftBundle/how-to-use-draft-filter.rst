@@ -32,26 +32,12 @@ This example describes how to disable the draft filter. The following validator 
     */
    class UniqueTitleDraftValidator extends ConstraintValidator
    {
-       /**
-        * @var ManagerRegistry
-        */
-       private $registry;
+       private ManagerRegistry $registry;
 
-       /**
-        * @var DraftableFilterManager
-        */
-       private $filterManager;
+       private DraftableFilterManager $filterManager;
 
-       /**
-        * @var TranslatorInterface
-        */
-       private $translator;
+       private TranslatorInterface $translator;
 
-       /**
-        * @param ManagerRegistry $registry
-        * @param DraftableFilterManager $filterManager
-        * @param TranslatorInterface $translator
-        */
        public function __construct(
            ManagerRegistry $registry,
            DraftableFilterManager $filterManager,

@@ -10,16 +10,18 @@ OroFormBundle implements a set of form types and validation rules for the applic
 Related Documentation
 ---------------------
 
-* |Form Components Overview|
-* |Autocomplete Form Type|
-* |Text Autocomplete Form Type|
-* |Entity Create or Select Form Type|
-* |Configure UI DataBlock|
-* |Set up Validation Rules for Form Fields|
-* |Update Handler|
-* |Connect Inline Editors on View Pages|
-* |Expression Editor|
-* |Allow Custom HTML Tags in WYSIWYG Editor|
+.. toctree::
+   :maxdepth: 1
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+   form-components
+   update-handler
+   create-or-select-form-type
+   rich-text-form-type
+   autocomplete-form-type
+   text-autocomplete-form-type
+   ui-datablock-config
+   expression-editor
+   Client Side Validation <js-validation>
+   InlineEditableViewComponent <inline-editable-view-component>
+   editor/index
+   search-apis

@@ -132,7 +132,7 @@ Let's execute the request to the search index mentioned above using second type 
     /** @var Result $engine */
     $result = $query->getResult();
 
-As you can see, the interface is similar, but you are not aware about search engine and index type that is used. This information is resolved on the factory level, so you can override and decorate the service that represents the factory to customize search behaviour.
+As you can see, the interface is similar, but you are not aware about search engine and index type that is used. This information is resolved on the factory level, so you can override and decorate the service that represents the factory to customize search behavior.
 
 .. note:: There is a hard limit of 1000 on quantity of results which search query can return.
 

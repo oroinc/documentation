@@ -46,7 +46,7 @@ With composer, you can manage dependencies by editing the composer.json file (se
 
 Every Oro application contains a composer.json file in the application root directory.
 
-.. note:: Note that installation requires `composer.json` file to define the package dependencies and the minimal required version for every package. However, with a composer.lock which is a file that is created as an artifact after the installation, the package dependencies may be additionally locked to the exact package version per package. This is used to avoid unexpected behaviour that may occur whenever the newer version of the package diverges from the older version and introduces changes to the critical features.
+.. note:: Note that installation requires `composer.json` file to define the package dependencies and the minimal required version for every package. However, with a composer.lock which is a file that is created as an artifact after the installation, the package dependencies may be additionally locked to the exact package version per package. This is used to avoid unexpected behavior that may occur whenever the newer version of the package diverges from the older version and introduces changes to the critical features.
 
 The required packages (dependencies) are listed in the following way:
 

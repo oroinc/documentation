@@ -102,19 +102,19 @@ Month names depends on the application language in the Locale Settings.
 
 .. code-block:: php
 
-    // array(
+    // [
     //   1 => 'January', 'February', 'March', 'April', 'May', 'June', 'July',
     //   'August', 'September', 'October', 'November', 'December',
-    // )
+    // ]
     $wideMonthNames = $calendar->getMonthNames();
     $wideMonthNames = $calendar->getMonthNames(Calendar::WIDTH_WIDE);
 
-    // array(1 => 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+    // [1 => 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     $abbreviatedMonthNames = $calendar->getMonthNames(Calendar::WIDTH_ABBREVIATED);
 
     $shortMonthNames = $calendar->getMonthNames(Calendar::WIDTH_SHORT);
 
-    // array(1 => 'J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D')
+    // [1 => 'J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D']
     $narrowMonthNames = $calendar->getMonthNames(Calendar::WIDTH_NARROW);
 
 Days of Week Names
@@ -124,7 +124,7 @@ Names for days of the week depend on the application language in the Locale Sett
 
 .. code-block:: php
 
-    // array(
+    // [
     //   Calendar::DOW_SUNDAY    => 'Sunday',
     //   Calendar::DOW_MONDAY    => 'Monday',
     //   Calendar::DOW_TUESDAY   => 'Tuesday',
@@ -132,11 +132,11 @@ Names for days of the week depend on the application language in the Locale Sett
     //   Calendar::DOW_THURSDAY  => 'Thursday',
     //   Calendar::DOW_FRIDAY    => 'Friday',
     //   Calendar::DOW_SATURDAY  => 'Saturday',
-    // );
+    // ];
     $wideDowNames = $calendar->getDayOfWeekNames();
     $wideDowNames = $calendar->getDayOfWeekNames(Calendar::WIDTH_WIDE);
 
-    // array(
+    // [
     //   Calendar::DOW_SUNDAY    => 'Sun',
     //   Calendar::DOW_MONDAY    => 'Mon',
     //   Calendar::DOW_TUESDAY   => 'Tue',
@@ -144,11 +144,11 @@ Names for days of the week depend on the application language in the Locale Sett
     //   Calendar::DOW_THURSDAY  => 'Thu',
     //   Calendar::DOW_FRIDAY    => 'Fri',
     //   Calendar::DOW_SATURDAY  => 'Sat',
-    // );
+    // ];
     $abbreviatedDowNames = $calendar->getDayOfWeekNames(Calendar::WIDTH_ABBREVIATED);
     $shortDowNames = $calendar->getDayOfWeekNames(Calendar::WIDTH_SHORT);
 
-    // array(
+    // [
     //   Calendar::DOW_SUNDAY    => 'S',
     //   Calendar::DOW_MONDAY    => 'M',
     //   Calendar::DOW_TUESDAY   => 'T',
@@ -156,7 +156,7 @@ Names for days of the week depend on the application language in the Locale Sett
     //   Calendar::DOW_THURSDAY  => 'T',
     //   Calendar::DOW_FRIDAY    => 'F',
     //   Calendar::DOW_SATURDAY  => 'S',
-    // );
+    // ];
     $narrowDowNames = $calendar->getDayOfWeekNames(Calendar::WIDTH_NARROW);
 
 Location
@@ -299,9 +299,9 @@ If user wants to regenerate these dumped information, he have to execute two com
 
 .. code-block:: php
 
-    > php bin/console cache:clear
+    $ php bin/console cache:clear
     Clearing the cache for the dev environment with debug true
-    > php bin/console oro:localization:dump
+    $ php bin/console oro:localization:dump
     17:28:34 [file+] oro.locale_data.js
 
 

@@ -154,22 +154,17 @@ the ``@Config`` annotation:
 
 .. code-block:: php
 
-
     /**
-    ...
-    * @Config(
-    *  defaultValues={
-        ...
-    *      "security"={
-    *          "type"="ACL",
-               "permissions"="All"
-    *          "group_name"="SomeGroup"
-    *          "category"="SomeCategory"
-    *      }
-        ...
-    *  }
-    * )
-    ...
+     * @Config(
+     *  defaultValues={
+     *      "security"={
+     *          "type"="ACL",
+     *          "permissions"="All",
+     *          "group_name"="SomeGroup",
+     *          "category"="SomeCategory",
+     *      }
+     *  }
+     * )
      */
      class MyEntity
 
@@ -284,9 +279,8 @@ the controller method. Restricting access can be done in two different ways:
    permission to check for:
 
    .. code-block:: php-annotations
+      :caption: src/Acme/DemoBundle/Controller/ProductController.php
 
-
-       // src/Acme/DemoBundle/Controller/ProductController.php
        namespace Acme\DemoBundle\Controller;
 
        use Oro\Bundle\SecurityBundle\Annotation\Acl;
@@ -315,9 +309,8 @@ the controller method. Restricting access can be done in two different ways:
    The ACL configuration from the example above looks like this:
 
    .. code-block:: yaml
+      :caption: src/Acme/DemoBundle/Resources/config/oro/acls.yml
 
-
-       # src/Acme/DemoBundle/Resources/config/oro/acls.yml
        acls:
            product_edit:
                type: entity
@@ -328,9 +321,8 @@ the controller method. Restricting access can be done in two different ways:
    in the acls.yml file. The name of the ACL resource is used as the parameter of this annotation:
 
    .. code-block:: php-annotations
+      :caption: src/Acme/DemoBundle/Controller/ProductController.php
 
-
-       // src/Acme/DemoBundle/Controller/ProductController.php
        namespace Acme\DemoBundle\Controller;
 
        use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
@@ -352,9 +344,8 @@ the controller method. Restricting access can be done in two different ways:
    YAML configuration of your ACL to define which method(s) should be protected:
 
    .. code-block:: yaml
+      :caption: src/Acme/DemoBundle/Resources/config/oro/acls.yml
 
-
-       # src/Acme/DemoBundle/Resources/config/oro/acls.yml
        acls:
            product_edit:
                type: entity
@@ -400,9 +391,8 @@ the set of domain objects the user is granted access to. To achieve this, use th
 provided by the OroSecurityBundle:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Controller/DemoController.php
 
-
-    // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -438,9 +428,8 @@ Sometimes it is not possible to do an ACL check in the controller using annotati
 In this case, you can use the ``isGranted`` function:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Controller/DemoController.php
 
-
-    // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -549,9 +538,8 @@ certain part of your application. To achieve this, use the special ``action`` ty
         }
 
     .. code-block:: yaml
+       :caption: src/Acme/DemoBundle/Resources/config/oro/acls.yml
 
-
-        # src/Acme/DemoBundle/Resources/config/oro/acls.yml
         acls:
             protected_action:
                 type: action

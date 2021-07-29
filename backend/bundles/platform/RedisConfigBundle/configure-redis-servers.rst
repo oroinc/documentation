@@ -11,7 +11,7 @@ Ubuntu Xenial or later
 
 Install redis-server via apt
 
-.. code-block:: none
+.. code-block:: bash
 
     sudo apt install redis-server
 
@@ -20,20 +20,20 @@ Configure Second Instance as LRU Memory Cache
 
 Create folders for the **redis-cache** server
 
-.. code-block:: none
+.. code-block:: bash
 
     sudo mkdir -p /var/lib/redis-cache /var/log/redis-cache /var/run/redis-cache
     sudo chown redis:redis /var/lib/redis-cache /var/log/redis-cache /var/run/redis-cache
 
 Create tmpfiles config
 
-.. code-block:: none
+.. code-block:: bash
 
     echo "d /run/redis-cache 2775 redis redis -" | sudo tee /usr/lib/tmpfiles.d/redis-cache-server.conf
 
 Copy original configs for the second server
 
-.. code-block:: none
+.. code-block:: bash
 
     sudo cp -rp /etc/redis /etc/redis-cache
 
@@ -132,14 +132,14 @@ Create systemd unit `/lib/systemd/system/redis-cache-server.service` for **redis
 
 Enable and start systemd unit
 
-.. code-block:: none
+.. code-block:: bash
 
     systemctl enable redis-cache-server.service
     systemctl start redis-cache
 
 Verify the status of the new service
 
-.. code-block:: none
+.. code-block:: bash
 
     systemctl status redis-cache
 

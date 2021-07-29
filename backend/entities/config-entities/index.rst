@@ -30,7 +30,7 @@ This configuration adds the 'demo_attr' attribute with the 'Demo' value to all c
 
 To apply this change, execute the **oro:entity-config:update** command:
 
-.. code-block:: none
+.. code-block:: bash
 
    php bin/console oro:entity-config:update
 
@@ -38,7 +38,6 @@ An example how to get a value of a configuration attribute:
 
 .. code-block:: php
 
-    <?php
         /** @var ConfigProvider $acmeConfigProvider */
         $acmeConfigProvider = $this->get('oro_entity_config.provider.acme');
 
@@ -50,7 +49,6 @@ If you want to set a value different than the default one for some entity, write
 
 .. code-block:: php
 
-    <?php
     /**
      * @ORM\Entity
      * @Config(
@@ -71,7 +69,6 @@ The result is demonstrated in the following code:
 
 .. code-block:: php
 
-    <?php
         /** @var ConfigProvider $acmeConfigProvider */
         $acmeConfigProvider = $this->get('oro_entity_config.provider.acme');
 
@@ -125,8 +122,6 @@ To add config validation to your bundle:
 Example:
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\SecurityProBundle\Config\Validation;
 
@@ -184,8 +179,6 @@ For example, the following code gets the configuration provider for the 'extend'
 
 .. code-block:: php
 
-    <?php
-
     /** @var ConfigProvider $configProvider */
     $configProvider = $this->get('oro_entity_config.provider.extend');
 
@@ -210,7 +203,7 @@ Update Configuration Data
 
 The following command can be used to update configurable entities:
 
-.. code-block:: none
+.. code-block:: bash
 
    php bin/console oro:entity-config:update
 
@@ -221,7 +214,7 @@ Clearing Up the Cache
 
 The following command removes all data related to configurable entities from the application cache:
 
-.. code-block:: none
+.. code-block:: bash
 
    php bin/console oro:entity-config:cache:clear --no-warmup
 
@@ -229,7 +222,7 @@ Debugging Configuration Data
 
 You can use ``oro:entity-config:debug`` command to get a different kind of configuration data as well as add/remove/update configuration of entities. To see all available options run this command with ``--help`` option. As an example the following command shows all configuration data for User entity:
 
-.. code-block:: none
+.. code-block:: bash
 
    php bin/console oro:entity-config:debug "Oro\Bundle\UserBundle\Entity\User"
 
@@ -259,9 +252,8 @@ To make the ``Hotel`` entity from the first part of the chapter configurable, si
 use it in the class docblock:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-    // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -281,9 +273,8 @@ You can also change the default value of each configurable option using the ``de
 argument:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-    // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -313,9 +304,8 @@ Similar to the ``@Config`` annotation for entities, you can use the
 annotation to make properties of an entity configurable:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-    // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -341,9 +331,8 @@ annotation to make properties of an entity configurable:
 Default values can be changed in the same way as it can be done on the entity level:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-    // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -380,9 +369,8 @@ created per bundle which means that a bundle can extend the set of available opt
 options, you create a ``entity_config.yml`` file in your bundle which can look like this:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
     entity_config:
         acme_demo:
             entity:
@@ -513,9 +501,9 @@ Below the configuration level, each option's configuration is divided into three
 Secondly, you need to update all configurable entities after configuration parameters have been
 modified or added using the ``oro:entity-config:update`` command:
 
-.. code-block:: none
+.. code-block:: bash
 
-    $ php bin/console oro:entity-config:update --force
+    php bin/console oro:entity-config:update --force
 
 When the ``oro:entity-config:update`` command is executed without using the ``--force`` option,
 only new values will be added, but no existing parameters will be updated.

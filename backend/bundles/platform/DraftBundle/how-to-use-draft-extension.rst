@@ -64,17 +64,11 @@ The example below illustrates the way to use context. We only update the draft e
     */
    class DateTimeExtension extends AbstractDuplicatorExtension
    {
-       /**
-        * @return Filter
-        */
        public function getFilter(): Filter
        {
            return new DateTimeFilter();
        }
 
-       /**
-        * @return Matcher
-        */
        public function getMatcher(): Matcher
        {
            return new PropertyTypeMatcher(\DateTime::class);
@@ -112,16 +106,8 @@ The example below illustrates the way to create and use the filter. This filter 
     */
    class OwnerFilter implements Filter
    {
-       /**
-        * @var TokenStorageInterface
-        */
-       private $tokenStorage;
+       private TokenStorageInterface $tokenStorage;
 
-       /**
-        * OwnerFilter constructor.
-        *
-        * @param TokenStorageInterface $tokenStorage
-        */
        public function __construct(TokenStorageInterface $tokenStorage)
        {
            $this->tokenStorage = $tokenStorage;

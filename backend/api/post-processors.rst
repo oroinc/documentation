@@ -28,8 +28,6 @@ To create a new post processor, you need to do the following:
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\ProductBundle\Api\PostProcessor;
 
     use Oro\Bundle\ApiBundle\PostProcessor\PostProcessorInterface;
@@ -58,8 +56,6 @@ To create a new post processor, you need to do the following:
    the post processor options.
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\ProductBundle\Api\PostProcessor;
 

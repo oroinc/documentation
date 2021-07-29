@@ -15,7 +15,7 @@ There are 2 ways to override the `oro_product.sku.regex_pattern` parameter in yo
 
 1. Add the `oro_product.sku.regex_pattern` parameter to the `Resources/config/services.yml` file in your bundle.
     
-   .. code-block:: php
+   .. code-block:: yaml
       :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
 
@@ -47,7 +47,6 @@ There are 2 ways to override the `oro_product.sku.regex_pattern` parameter in yo
    
    .. code-block:: php
       :caption: src/Acme/DemoBundle/DemoBundle.php
-
 
        namespace DemoBundle;
 

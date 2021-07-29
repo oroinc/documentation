@@ -19,8 +19,8 @@ Format Values in Layout Configs
 Use `locale` layout data provider and `getLocalizedValue()`.
 
 .. code-block:: yaml
+   :caption: .../Resources/views/layouts/.../myconfig.yml
 
-    # .../Resources/views/layouts/.../myconfig.yml
     layout:
         actions:
             - '@add':
@@ -36,8 +36,8 @@ Use datagrid property with type `localized_value` and attribute `data_name` to s
 If the current localization is not detected, SQL relation will be joined to the default fallback values. Otherwise, it will be received by LocalizationHelper; sorters and filters will be removed.
 
 .. code-block:: yaml
+   :caption: .../Resources/config/oro/datagrids.yml
 
-    # .../Resources/config/oro/datagrids.yml
     datagrids:
         my-localizations-grid:
             source:

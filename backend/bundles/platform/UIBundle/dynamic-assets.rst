@@ -25,9 +25,6 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 
    .. code-block:: php
 
-
-       <?php
-
        namespace Acme\Bundle\SomeBundle;
 
        use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -54,9 +51,6 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 
    .. code-block:: php
 
-
-       <?php
-
        namespace Acme\Bundle\SomeBundle\Controller;
 
        use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -65,13 +59,13 @@ For example, let us assume that `acme` asset package should use the dynamic vers
        {
            public function updateAction()
            {
-               ...
+               // ...
 
                /** @var Oro\Bundle\UIBundle\Asset\DynamicAssetVersionManager $assetVersionManager */
                $assetVersionManager = $this->get('oro_ui.dynamic_asset_version_manager');
                $assetVersionManager->updateAssetVersion('acme');
 
-               ...
+               // ...
            }
        }
 

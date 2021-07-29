@@ -37,10 +37,8 @@ For more information, see the following external resources:
 DBAL Transport
 --------------
 
-.. code-block:: none
-
-
-    # config/parameters.yml
+.. code-block:: yaml
+   :caption: config/parameters.yml
 
         message_queue_transport: DBAL
         message_queue_transport_config: ~
@@ -131,8 +129,7 @@ guest with the default password of guest, granted full access to the /
 virtual host) are the following:
 
 .. code-block:: yaml
-
-    # config/config.yml
+   :caption: config/config.yml
 
     oro_message_queue:
       transport:
@@ -147,8 +144,7 @@ virtual host) are the following:
 We can also move the specified options to the ``parameters.yml``:
 
 .. code-block:: yaml
-
-    # config/config.yml
+   :caption: config/config.yml
 
     oro_message_queue:
         transport:
@@ -157,8 +153,7 @@ We can also move the specified options to the ``parameters.yml``:
         client: ~
 
 .. code-block:: yaml
-
-    # config/parameters.yml
+   :caption: config/parameters.yml
 
         message_queue_transport: 'amqp'
         message_queue_transport_config: { host: 'localhost', port: '5672', user: 'guest', password: 'guest', vhost: '/' }

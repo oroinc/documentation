@@ -19,12 +19,8 @@ Usually, you do not need to provide a predefined set of associations between the
     ...
     class AcmeBundle implements Migration, CommentExtensionAwareInterface
     {
-        /** @var CommentExtension */
-        protected $comment;
+        protected CommentExtension $comment;
 
-        /**
-         * @param CommentExtension $commentExtension
-         */
         public function setCommentExtension(CommentExtension $commentExtension)
         {
             $this->comment = $commentExtension;
@@ -38,10 +34,6 @@ Usually, you do not need to provide a predefined set of associations between the
             self::addComment($schema, $this->comment);
         }
 
-        /**
-         * @param Schema           $schema
-         * @param CommentExtension $commentExtension
-         */
         public static function addComment(Schema $schema, CommentExtension $commentExtension)
         {
             $commentExtension->addCommentAssociation($schema, 'acme_entity');
@@ -55,7 +47,7 @@ Show Entity Comments in Activity List Widget
 
 If you created the new activity entity and want to comment on it in the activity list widget, implement CommentProviderInterface. For example:
 
-.. code-block:: none
+.. code-block:: php
 
     class AcmeActivityListProvider implements ActivityListProviderInterface, CommentProviderInterface
     {

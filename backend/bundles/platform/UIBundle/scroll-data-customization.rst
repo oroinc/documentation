@@ -44,9 +44,6 @@ This definition shows service used as an event listener for event ``oro_ui.scrol
 
     class UpdateUserListener
     {
-        /**
-         * @param BeforeListRenderEvent $event
-         */
         public function onUserUpdate(BeforeListRenderEvent $event)
         {
             $template = $event->getEnvironment()->render(

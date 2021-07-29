@@ -20,9 +20,8 @@ You can create your own :ref:`migrations <backend-entities-migrations>` that can
 A migration is a class which implements the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Migration/1_0/CustomMigration.php
 
-
-    // src/Acme/DemoBundle/Migration/1_0/CustomMigration.php
     namespace Acme\DemoBundle\Migration\1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -49,9 +48,8 @@ Load Custom Data Fixtures
 To load your own data :ref:`fixtures <backend-entities-fixtures>`, you will need to implement Doctrine's *"FixtureInterface"*:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
 
-
-    // src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
     namespace Acme\DemoBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\FixtureInterface;

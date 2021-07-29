@@ -18,9 +18,8 @@ Suppose that you have a grid configuration and a named parameter inside where cl
 For example:
 
 .. code-block:: yaml
+   :caption: src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrids:
         # ...
         acme-tasks-grid:
@@ -44,9 +43,8 @@ to configure mapping between datagrid and query parameters.
 You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml`` using the following syntax:
 
 .. code-block:: yaml
+   :caption: src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrids:
         # ...
         acme-tasks-grid:
@@ -67,9 +65,8 @@ In case if names of the parameter in the grid and the query do not match you can
 where the key will be the name of the query parameter, and the value will match the name of the parameter in the grid:
 
 .. code-block:: yaml
+   :caption: src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrids:
         # ...
         acme-tasks-grid:
@@ -96,10 +93,8 @@ Now we need to pass the parameter with name "relatedContactId" to our grid.
 The controller receives a contact entity and passes it to the view:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/TaskBundle/Controller/TaskController.php
 
-
-    <?php
-        // src/Acme/Bundle/TaskBundle/Controller/TaskController.php
         namespace Acme\Bundle\TaskBundle\Controller;
 
         use Oro\Bundle\ContactBundle\Entity\Contact;
@@ -126,9 +121,8 @@ The controller receives a contact entity and passes it to the view:
 The view passes the "relatedContactId" parameter to the grid:
 
 .. code-block:: html+jinja
+   :caption: src/Acme/Bundle/TaskBundle/Resources/views/Task/contactTasks.html.twig
 
-
-    {# src/Acme/Bundle/TaskBundle/Resources/views/Task/contactTasks.html.twig #}
     {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
 
     <div class="widget-content">
@@ -143,10 +137,8 @@ you need to implement additional logic before binding parameters, etc.), you can
 ``oro_datagrid.datagrid.build.after`` event and set the parameter for the source query in this listener:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/TaskBundle/EventListener/ParameterListener.php
 
-
-    <?php
-    // src/Acme/Bundle/TaskBundle/EventListener/ParameterListener.php
     namespace Acme\Bundle\TaskBundle\EventListener;
 
     use Doctrine\ORM\QueryBuilder;
@@ -183,9 +175,8 @@ you need to implement additional logic before binding parameters, etc.), you can
 Register this listener in the container:
 
 .. code-block:: yaml
+   :caption: src/Acme/Bundle/TaskBundle/Resources/config/services.yml
 
-
-    # src/Acme/Bundle/TaskBundle/Resources/config/services.yml
     services:
         acme_task.event_listener.acme_tasks_grid_parameter_listener:
             class: Acme\Bundle\TaskBundle\EventListener\ParameterListener

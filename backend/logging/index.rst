@@ -240,7 +240,6 @@ Example 1
 
 .. code-block:: php
 
-   <?php
    // in case of injection logger to constructor
    // do some work
 
@@ -256,7 +255,6 @@ Example 2
 
 .. code-block:: php
 
-   <?php
    // in case of using LoggerAwareInterface
    // do some work
 
@@ -274,7 +272,6 @@ Example 3
 
 .. code-block:: php
 
-   <?php
    // do some work
 
    catch (MyCustomExpectedException $e) {
@@ -290,12 +287,10 @@ Handling exceptions without logging is incorrect:
 
 .. code-block:: php
 
-   <?php
    // do some work
    catch (Exception $e) {
    }
 
-   <?php
    // do some work
    catch (Exception $e) {
        // do some work without logging

@@ -19,9 +19,8 @@ In order to have your entity available in the admin UI to be able to assign perm
 users you have to enable ACLs for these entities using the ``@Config`` annotation:
 
 .. code-block:: php
+   :caption: src/AppBundle/Entity/Task.php
 
-
-    // src/AppBundle/Entity/Task.php
     namespace AppBundle\Entity;
 
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
@@ -61,9 +60,8 @@ You have two options to define your custom access control lists:
 #. In your controller class, you can use the ``@Acl`` annotation:
 
    .. code-block:: php
+      :caption: src/AppBundle/Controller/TaskController.php
 
-
-       // src/AppBundle/Controller/TaskController.php
        namespace AppBundle\Controller;
 
        use AppBundle\Entity\Task;
@@ -123,9 +121,8 @@ You have two options to define your custom access control lists:
    file named ``acls.yml``:
 
    .. code-block:: yaml
+      :caption: src/AppBundle/Resources/config/oro/acls.yml
 
-
-       # src/AppBundle/Resources/config/oro/acls.yml
        acls:
            app_task_create:
                type: entity
@@ -154,9 +151,8 @@ You have two options to define your custom access control lists:
     ``entity``:
 
     .. code-block:: php
+       :caption: src/AppBundle/Controller/PageController.php
 
-
-        // src/AppBundle/Controller/PageController.php
         namespace AppBundle\Controller;
 
         use Oro\Bundle\SecurityBundle\Annotation\Acl;
@@ -182,9 +178,8 @@ You have two options to define your custom access control lists:
     bind the ACL to using the ``bindings`` option:
 
     .. code-block:: yaml
+       :caption: src/AppBundle/Resources/config/oro/acls.yml
 
-
-        # src/AppBundle/Resources/config/oro/acls.yml
         acls:
             app_static_pages:
                 type: action
@@ -254,9 +249,8 @@ Use the ``acl_resource_id`` option to hide navigation items from users who are n
 the action being linked. The value of this option is the name of the ACL to check for:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/navigation.yml
 
-
-    # src/AppBundle/Resources/config/oro/navigation.yml
     menu_config:
         items:
             task_list:
@@ -272,9 +266,8 @@ controllers with them in a single step using the ``@Acl`` annotation. However, y
 to an existing access control list using the ``@AclAncestor`` annotation:
 
 .. code-block:: php
+   :caption: src/AppBundle/Controller/TaskController.php
 
-
-    // src/AppBundle/Controller/TaskController.php
     namespace AppBundle\Controller;
 
     use AppBundle\Entity\Task;
@@ -301,9 +294,8 @@ Inside your templates you can use the ``is_granted()`` Twig function to check fo
 permissions to hide parts of your views for users who do not have the required permissions:
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Task/update.html.twig
 
-
-    {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
         {% if is_granted('app_task_edit') %}
             Some info if access is granted
@@ -317,9 +309,8 @@ In case if you want to check access more deeply, you can set the entity instance
 ``is_granted()`` function:
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Task/update.html.twig
 
-
-    {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
         {# an `entity` variable contains an Test entity instance #}
         {% if is_granted('app_task_edit', entity) %}
@@ -332,9 +323,8 @@ At this example, will be checked access level for the given object instance.
 In case if you have no an ACL annotation, you can set the permission name directly as the first parameter:
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Task/update.html.twig
 
-
-    {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
         {# an `entity` variable contains an Test entity instance #}
         {% if is_granted('EDIT', entity) %}
@@ -350,9 +340,8 @@ In a data grid you can protect the entire result set (to not show results if the
 granted access and the action embedding the grid accidentally was not protected):
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         app-tasks-grid:
             source:
@@ -367,9 +356,8 @@ Also use the ``acl_resource`` option to hide actions in a data grid the user doe
 to:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         app-tasks-grid:
             # ...

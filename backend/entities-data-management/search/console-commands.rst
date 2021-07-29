@@ -17,18 +17,17 @@ will be removed. This command is used for queued indexation.
 
 Single entity indexation:
 
-.. code-block:: none
+.. code-block:: bash
 
 
-    > php bin/console oro:search:index OroUserBundle:User 1
+    $ php bin/console oro:search:index OroUserBundle:User 1
     Started index update for entities.
 
 Multiple entities indexation:
 
-.. code-block:: none
+.. code-block:: bash
 
-
-    > php bin/console oro:search:index "Oro\Bundle\ContactBundle\Entity\Contact" 1 2 3 4 5 6 7 8 9 10
+    $ php bin/console oro:search:index "Oro\Bundle\ContactBundle\Entity\Contact" 1 2 3 4 5 6 7 8 9 10
     Started index update for entities.
 
 oro:search:reindex
@@ -45,16 +44,14 @@ All entities reindexation:
 
 .. code-block:: none
 
-
-    > php bin/console oro:search:reindex
+    $ php bin/console oro:search:reindex
     Started reindex task for all mapped entities
 
 One entity reindexation:
 
-.. code-block:: none
+.. code-block:: bash
 
-
-    > bin/console oro:search:reindex OroUserBundle:User
+    $ php bin/console oro:search:reindex OroUserBundle:User
     Started reindex task for "OroUserBundle:User" entity
 
 Normally, reindexation is performed immediately after the reindex
@@ -69,8 +66,7 @@ consumer worker to use this mode.
 
 Please use the following parameter to enable it:
 
-.. code-block:: none
+.. code-block:: bash
 
-
-    > bin/console oro:search:reindex --scheduled
+    php bin/console oro:search:reindex --scheduled
 

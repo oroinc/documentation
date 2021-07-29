@@ -29,16 +29,13 @@ Create Extended Entities
 #. Create the *extend entity* class:
 
    .. code-block:: php
+      :caption: src/Acme/DemoBundle/Model/ExtendHotel.php
 
-
-       // src/Acme/DemoBundle/Model/ExtendHotel.php
        namespace Acme\DemoBundle\Model;
 
        class ExtendHotel
        {
            /**
-            * Constructor
-            *
             * The real implementation of this method is auto generated.
             *
             * IMPORTANT: If the derived class has own constructor it must call parent constructor.
@@ -57,9 +54,8 @@ Create Extended Entities
 #. Let the *entity class* extend the *extend entity* class:
 
    .. code-block:: php
+      :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-       // src/Acme/DemoBundle/Entity/Hotel.php
        namespace Acme\DemoBundle\Entity;
 
        use Acme\DemoBundle\Model\ExtendHotel;
@@ -102,9 +98,8 @@ Create Extended Entities
 #. Add new fields using a migration script:
 
    .. code-block:: php
+      :caption: src/Acme/DemoBundle/Migrations/Schema/v2_0;
 
-
-       // src/Acme/DemoBundle/Migrations/Schema/v2_0;
        namespace Acme\DemoBundle\Migrations\Schema\v2_0;
 
        use Doctrine\DBAL\Schema\Schema;
@@ -145,7 +140,7 @@ Create Extended Entities
 
 #. Finally, load the changed configuration using the ``oro:entity-extend:update`` command:
 
-   .. code-block:: none
+   .. code-block:: bash
 
        php bin/console oro:entity-extend:update
 
@@ -160,13 +155,13 @@ Apply Changes
 
 The following command updates the database schema and all related caches to reflect changes made in extended entities:
 
-.. code-block:: none
+.. code-block:: bash
 
     php bin/console oro:entity-extend:update
 
 The ``dry-run`` can be used to show changes without applying them, for example:
 
-.. code-block:: none
+.. code-block:: bash
 
     php bin/console oro:entity-extend:update --dry-run
 
@@ -184,9 +179,8 @@ To achieve this, add a new field ``partnerSince`` to store the date and time of 
 To add the field, create a migration:
 
 .. code-block:: php
+   :caption: src/AppBundle/Migrations/Schema/v1_0/AddPartnerSinceToContact.php
 
-
-    // src/AppBundle/Migrations/Schema/v1_0/AddPartnerSinceToContact.php
     namespace AppBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -212,15 +206,12 @@ To add the field, create a migration:
    and should extend an Extend class:
 
    .. code-block:: php
+      :caption: src/AppBundle/Entity/Contact.php
 
-
-       // src/AppBundle/Entity/Contact.php
        namespace AppBundle\Entity;
 
        use Doctrine\ORM\Mapping as ORM;
-
        use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-
        use AppBundle\Entity\Model\ExtendContact;
 
        /**
@@ -234,9 +225,8 @@ To add the field, create a migration:
 
 
    .. code-block:: php
+      :caption: src/AppBundle/Model/ExtendContact.php
 
-
-       // src/AppBundle/Model/ExtendContact.php
        namespace AppBundle\Model;
 
        class ExtendContact
@@ -254,8 +244,6 @@ To add the field, create a migration:
            /**
             * A skeleton method for the setter. You can add it to use autocomplete hints from the IDE.
             * The real implementation of this method is auto generated.
-            *
-            * @param \DateTime $partnerSince
             */
            public function setPartnerSince(\DateTime $partnerSince)
            {
@@ -269,13 +257,13 @@ It is passed through the ``options`` argument of the ``addColumn()`` method:
 
    :emphasize-lines: 3
 
-   ...
+   // ...
             $table->addColumn('partnerSince', 'datetime', [
                 'oro_options' => [
                     'extend' => ['owner' => ExtendScope::OWNER_CUSTOM],
                 ],
             ]);
-   ...
+   // ...
 
 All options nested under this key are handled outside of the usual Doctrine migration workflow.
 
@@ -330,8 +318,6 @@ There are a few ways to define a custom form type for a particular field:
 #. Through the compiler pass to add or override the guesser's mappings:
 
     .. code-block:: php
-
-        <?php
 
         namespace Acme\Bundle\AcmeBundle\DependencyInjection\Compiler;
 

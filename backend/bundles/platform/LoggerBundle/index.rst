@@ -16,7 +16,7 @@ Error Logs Email Notifications
 
 To enable error logs email notification, run the ``oro:logger:email-notification`` command with semicolons separating the recipients, for example:
 
-.. code-block:: php
+.. code-block:: bash
 
    php bin/console oro:logger:email-notification --recipients="admin@example.com;support@example.com"
 
@@ -34,7 +34,7 @@ and equals to ``error``, you can update it in the application configuration.
 
 To find problems, you can change this value for a specific time for a specific user by running the following command:
 
-.. code-block:: php
+.. code-block:: bash
 
    php bin/console oro:logger:level debug "1 hour" --user=admin@example.com
 

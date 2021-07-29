@@ -42,9 +42,8 @@ if you also like to display an icon. You then also need to implement the ``getIc
 returns a path to the icon relative to the project's web directory:
 
 .. code-block:: php
+   :caption: src/AppBundle/Integration/TaskChannel.php
 
-
-        // src/AppBundle/Integration/TaskChannel.php
         namespace AppBundle\Integration;
 
         // ...
@@ -66,9 +65,8 @@ attribute which must be a unique value that is used internally by the OroIntegra
 to the channel:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/integration.yml
 
-
-    // src/AppBundle/Resources/config/integration.yml
     services:
         app.integration.task:
             class: AppBundle\Integration\TaskChannel
@@ -107,9 +105,8 @@ to give the transport an identifier using the ``type`` attribute that must be un
 channel:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/integration.yml
 
-
-        // src/AppBundle/Resources/config/integration.yml
         services:
             app.integration.transport.rest:
                  class: AppBundle\Integration\RestTransport
@@ -139,9 +136,8 @@ Your final step is to implement the :class:`Oro\\Bundle\\IntegrationBundle\\Prov
     A string that identifies the connector. This must be unique throughout the channel.
 
 .. code-block:: php
+   :caption: src/AppBundle/Integration/TaskConnector.php
 
-
-    // src/AppBundle/Integration/TaskConnector.php
     namespace AppBundle\Integration;
 
     use Oro\Bundle\IntegrationBundle\Provider\ConnectorInterface;
@@ -175,9 +171,8 @@ connector is associated with. The ``type`` attribute must get the same value tha
 the connector's ``getType()`` method:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/integration.yml
 
-
-            // src/AppBundle/Resources/config/integration.yml
             services:
                 class: AppBundle\Integration\TaskConnector
                 tags:

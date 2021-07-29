@@ -323,9 +323,6 @@ The following is an example of the data provider:
 .. code-block:: php
    :caption: src/Acme/Bundle/ProductBundle/Layout/DataProvider/ProductVariantsProvider.php
 
-
-    <?php
-
     namespace Acme\Bundle\ProductBundle\Layout\DataProvider;
 
     use Symfony\Component\PropertyAccess\PropertyAccess;
@@ -337,7 +334,6 @@ The following is an example of the data provider:
     {
         /**
          * @param Product $product
-         *
          * @return array
          */
         public function getVariants(Product $product)

@@ -42,12 +42,12 @@ If value of attribute "call_timeout" is not blank AND equals 20.
 .. code-block:: php
 
 
-    $configuration = array(
-        '@and' => array(
-            '@not_blank' => array('$call_timeout'),
-            '@equal' => array('$call_timeout', 20)
-        )
-    );
+    $configuration = [
+        '@and' => [
+            '@not_blank' => ['$call_timeout'],
+            '@equal' => ['$call_timeout', 20]
+        ]
+    ];
     /** @var \Oro\Bundle\WorkflowBundle\Model\Condition\ConditionFactory $conditionFactory */
     $condition = $conditionFactory->create(Configurable::ALIAS, $configuration);
 

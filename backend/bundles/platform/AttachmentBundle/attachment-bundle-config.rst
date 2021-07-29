@@ -155,8 +155,7 @@ Also, you can enable attachments for an entity, e.g.,:
 
        class AcmeDemoBundle implements Migration, AttachmentExtensionAwareInterface
        {
-           /** @var AttachmentExtension */
-           protected $attachmentExtension;
+           protected AttachmentExtension $attachmentExtension;
 
            /**
             * {@inheritdoc}

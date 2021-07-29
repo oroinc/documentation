@@ -164,7 +164,7 @@ To start usage of this optimization search index must be completely removed and 
 Force Refresh
 -------------
 
-Elasticsearch is an asynchronous search engine, which means that data might be available with a small delay after it was scheduled for indexation. If you want to make is work synchronously then you should trigger |refresh operation| after each reindexation request. To enable such synchronous behaviour you should define option `force_refresh` at engine parameters:
+Elasticsearch is an asynchronous search engine, which means that data might be available with a small delay after it was scheduled for indexation. If you want to make is work synchronously then you should trigger |refresh operation| after each reindexation request. To enable such synchronous behavior you should define option `force_refresh` at engine parameters:
 
 .. code-block:: yaml
 
