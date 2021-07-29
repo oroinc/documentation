@@ -2219,30 +2219,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NotificationBundle#console-commands" target="_blank">Console Commands</a>
 
-.. |Use Maintenance Mode| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#maintenance-mode" target="_blank">Use Maintenance Mode</a>
-
-.. |Use Lazy Services| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#lazy-services" target="_blank">Use Lazy Services</a>
-
-.. |Add Application Configuration Settings from any Bundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#add-application-configuration-settings-from-any-bundle" target="_blank">Add Application Configuration Settings from any Bundle</a>
-
-.. |Mark Doctrine Listeners as Optional| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#optional-listeners" target="_blank">Mark Doctrine Listeners as Optional</a>
-
-.. |Mark Doctrine Listeners as Lazy| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#optional-listeners" target="_blank">Mark Doctrine Listeners as Lazy</a>
-
-.. |Global Options for Console Commands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#global-options-for-console-commands" target="_blank">Global Options for Console Commands</a>
-
 .. |Configure Dedicated Database Connection for Reports| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md" target="_blank">Configure Dedicated Database Connection for Reports</a>
@@ -5791,4 +5767,20 @@ Links (Dev)
 .. |List of available timezones in PHP| raw:: html
 
    <a href="https://www.php.net/manual/en/timezones.php" target="_blank">List of available timezones in PHP</a>
+
+.. |lazy services| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/service_container/lazy_services.html" target="_blank">lazy services</a>
+
+.. |Event Listeners| raw:: html
+
+   <a href="https://symfony.com/doc/current/doctrine/events.html" target="_blank">Event Listeners</a>
+
+.. |Entity Listeners| raw:: html
+
+   <a href="https://symfony.com/doc/current/bundles/DoctrineBundle/entity-listeners.html" target="_blank">Entity Listeners</a>
+
+.. |Lazy loading for Event Listeners| raw:: html
+
+   <a href="https://symfony.com/doc/current/doctrine/events.html#lazy-loading-for-event-listeners" target="_blank">Lazy loading for Event Listeners</a>
 
