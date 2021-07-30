@@ -8,6 +8,10 @@
 Bundles Documentation
 =====================
 
+Bundles in Oro applications are a collection of files with the source code, configurations and additional assets organized in a conventional structure and providing ready-to-use functionality. Each Oro application comes with many prebuilt bundles organized in composer packages.
+
+This section extends the rest of the Developer Guide, providing insight into core bundles implementation architecture and infrequently customizable features, which is particularly useful for non-standard customizations for backend and frontend developers as many features are interconnected.
+
 .. _bundle-docs-platform:
 
 OroPlatform Bundles

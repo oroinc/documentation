@@ -24,7 +24,7 @@ Perform the following steps to override DefaultImagePlaceholderProvider that is 
 
     .. oro_integrity_check:: f0c09880fa1116a4825ca0a82736b57c0e99f690
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 15-20
 
@@ -33,7 +33,7 @@ Perform the following steps to override DefaultImagePlaceholderProvider that is 
 
     .. oro_integrity_check:: 58c6173a55e803851934184406a16d303bacfcb7
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3-17, 19-20, 23-27
 
@@ -44,7 +44,7 @@ Make sure to insert CompilerPass to the bundle root file.
 
     .. oro_integrity_check:: 863fcd4b086f644f4ddf9fcb9b4a13cd13db2427
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/ACMEDemoBundle.php
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/ACMEDemoBundle.php
             :language: php
             :lines: 3-18
 
@@ -60,7 +60,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: 2ac24197d6a62119c91073a68605bbf727aa746c
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 9-14
 
@@ -69,7 +69,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: 7aaabbe519eb3d88a5e7d1c249b9de1ea95d0294
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3, 17-18, 20, 22, 24-25
 
@@ -78,7 +78,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: bb2a8417ea2afac9c33a17382665b4015f52d70a
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/theme.yml
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/theme.yml
             :language: yaml
 
 
@@ -98,7 +98,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: e0f0d27a96b3445f8e63ccc7d993161cbda17f25
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 3-8
 
@@ -107,7 +107,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: ac8ab7028833306161b99ed116551edba5e9fc3c
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3, 17-18, 20, 21, 24-25
 
@@ -120,13 +120,13 @@ To use the providers we have created previously, we need to create TwigExtension
 
     .. oro_integrity_check:: dab32e3102e47dfe2ac89159aee02a43c00fe9d8
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Twig/ProductImageExtension.php
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Twig/ProductImageExtension.php
             :language: php
             :lines: 3-73
 
     .. oro_integrity_check:: b42a7622dc5a2373180b0cda478dec1c01680895
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 22-27
 
@@ -134,7 +134,7 @@ You can use Twig functions declared in the extension for your templates.
 
     .. oro_integrity_check:: 720664e4d33059416d77280adad786d6148abce1
 
-        .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig
+        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig
             :language: html+twig
 
             
