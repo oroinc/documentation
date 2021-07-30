@@ -23,6 +23,11 @@ Developer Documentation is intended for developers and contains information abou
    <h2><a href="../frontend/">Frontend Developer Guide</a></h2>
    <p>Frontend Developer Guide provides the themes to prototype your application's storefront and back-office design.</p>
 
+.. raw:: html
+
+   <h2><a href="../bundles/">Bundles Documentation</a></h2>
+   <p>This section extends the rest of the Developer Guide, providing insight into core bundles implementation architecture and infrequently customizable features, which is particularly useful for non-standard customizations for backend and frontend developers as many features are interconnected.</p>
+
 ..
     .. raw:: html
 
