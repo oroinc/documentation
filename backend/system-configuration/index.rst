@@ -646,14 +646,14 @@ Please note that
 
     system_configuration:
         api_tree:
-            look-and-feel:                                         # group name
-                oro_entity_pagination.enabled: ~                   # configuration option
-            outlook:                                               # group name
-                contacts:                                          # nested group name
-                    oro_crm_pro_outlook.contacts_enabled: ~        # configuration option
-                    oro_crm_pro_outlook.contacts_sync_direction: ~
+            look-and-feel:                               # group name
+                oro_entity_pagination.enabled: ~         # configuration option
+            sync:                                        # group name
+                contacts:                                # nested group name
+                    acme_sync.contacts_enabled: ~        # configuration option
+                    acme_sync.contacts_sync_direction: ~
                 tasks:
-                    oro_crm_pro_outlook.tasks_enabled: ~
+                    acme_sync.tasks_enabled: ~
 
 Search Type Provider
 ~~~~~~~~~~~~~~~~~~~~
