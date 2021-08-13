@@ -410,8 +410,8 @@ To add a new config scope:
 
    .. code-block:: twig
 
-        {% extends 'OroConfigBundle::configPage.html.twig' %}
-        {% import 'OroUIBundle::macros.html.twig' as UI %}
+        {% extends '@OroConfig/configPage.html.twig' %}
+        {% import '@OroUI/macros.html.twig' as UI %}
 
         {% set pageTitle = [
                 'acme_test.some_label'|trans
