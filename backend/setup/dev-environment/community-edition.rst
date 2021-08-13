@@ -23,7 +23,7 @@ Enable Required Package Repositories
 
 Add the EPEL repository to your `yum` package manager by running:
 
-.. code-block:: none
+.. code-block:: bash
 
    yum install -y epel-release
    yum update -y
@@ -34,7 +34,7 @@ Install Nginx, NodeJS, Git, Supervisor, and Wget
 
 Install most of the required Oro application environment components using the following commands:
 
-.. code-block:: none
+.. code-block:: bash
 
    curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
    yum install -y nginx wget git nodejs supervisor yum-utils
@@ -45,13 +45,13 @@ Install MySQL
 
 As you need to install MySQL 8.0 to replace the default MariaDB replica in CentoOS, get the MySQL 8.0 package from the MySQL official repository:
 
-.. code-block:: none
+.. code-block:: bash
 
    wget https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm && rpm -ivh mysql80-community-release-el7-1.noarch.rpm
 
 Next, install MySQL 8.0 using the following command:
 
-.. code-block:: none
+.. code-block:: bash
 
    yum install -y mysql-community-server
 
@@ -60,7 +60,7 @@ Install PHP
 
 As you need to install PHP 7.4 instead of CentOS 7 native PHP 5.6 version, get the PHP 7.4 packages from the REMI repository:
 
-.. code-block:: none
+.. code-block:: bash
 
    wget http://rpms.remirepo.net/enterprise/remi-release-7.rpm && rpm -Uvh remi-release-7.rpm
    yum-config-manager --enable remi-php74
@@ -68,7 +68,7 @@ As you need to install PHP 7.4 instead of CentOS 7 native PHP 5.6 version, get t
 
 Next, install PHP 7.4 and the required dependencies using the following command:
 
-.. code-block:: none
+.. code-block:: bash
 
    yum install -y php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-mbstring php-zip php-intl php-opcache
 
@@ -77,7 +77,7 @@ Install Composer
 
 Run the commands below, or use another Composer installation process described in the |official documentation|.
 
-.. code-block:: none
+.. code-block:: bash
 
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
    php -r "unlink('composer-setup.php');"
@@ -86,7 +86,7 @@ Run the commands below, or use another Composer installation process described i
 Enable Installed Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: none
+.. code-block:: bash
 
    systemctl start mysqld php-fpm nginx supervisord
    systemctl enable mysqld php-fpm nginx supervisord
@@ -107,7 +107,7 @@ For the production environment, it is strongly recommended to keep *SELinux* ena
 In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode.
 However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
 
-.. code-block:: none
+.. code-block:: bash
 
    sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
    setenforce permissive
@@ -135,13 +135,13 @@ Change the Default MySQL Password for Root User
 
 To find the temporary mysql *root* user password that was created automatically, run:
 
-.. code-block:: none
+.. code-block:: bash
 
    grep 'temporary password' /var/log/mysqld.log
 
 Use this password to login to mysql CLI as root user and change the temporary password to the new secure one (we have used the `P@ssword123`):
 
-.. code-block:: none
+.. code-block:: bash
 
    mysql -uroot -p
    ALTER USER 'root'@'localhost' IDENTIFIED BY 'P@ssword123';
@@ -194,7 +194,7 @@ Set the default authentication plugin to mysql_native_password:
 
 For the changes to take effect, restart MySQL server by running:
 
-.. code-block:: none
+.. code-block:: bash
 
    systemctl restart mysqld
 
@@ -377,7 +377,7 @@ web page latency as described in the :ref:`Performance Optimization of the Oro A
 
 For the changes to take effect, restart `nginx` by running:
 
-.. code-block:: none
+.. code-block:: bash
 
    systemctl restart nginx
 
@@ -429,7 +429,7 @@ To configure PHP, perform the following changes in the configuration files:
 
 For the changes to take effect, restart PHP-FPM by running:
 
-.. code-block:: none
+.. code-block:: bash
 
    systemctl restart php-fpm
 

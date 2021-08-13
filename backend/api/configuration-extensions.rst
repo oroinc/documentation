@@ -18,7 +18,6 @@ Each configuration extension must implement |ConfigExtensionInterface| (you can 
 
 .. code-block:: php
 
-    <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
     use Oro\Bundle\ApiBundle\Config\Extension\AbstractConfigExtension;
@@ -28,8 +27,8 @@ Each configuration extension must implement |ConfigExtensionInterface| (you can 
     }
 
 .. code-block:: yaml
+   :caption: config/config.yml
 
-    # config/config.yml
     services:
       acme.api.my_config_extension:
         class: Acme\Bundle\AcmeBundle\Api\MyConfigExtension
@@ -81,7 +80,6 @@ Example:
 
 .. code-block:: php
 
-    <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
     use Symfony\Component\Config\Definition\Builder\NodeBuilder;
@@ -142,7 +140,6 @@ An example of simple configuration section:
 
 .. code-block:: php
 
-    <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
     use Symfony\Component\Config\Definition\Builder\NodeBuilder;
@@ -160,7 +157,6 @@ An example of a configuration section that can be extended by other bundles:
 
 .. code-block:: php
 
-    <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
     use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
@@ -187,7 +183,6 @@ An example of a configuration section loader:
 
 .. code-block:: php
 
-    <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
     use Oro\Bundle\ApiBundle\Config\Loader\AbstractConfigLoader;
@@ -212,7 +207,6 @@ An example of a configuration extension:
 
 .. code-block:: php
 
-    <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
     use Oro\Bundle\ApiBundle\Config\Extension\AbstractConfigExtension;
@@ -249,8 +243,8 @@ An example of how to use the created configuration section:
 To check that your configuration section is added correctly, run ``php bin/console oro:api:config:dump-reference``. The output should look similar to the following:
 
 .. code-block:: yaml
+   :caption: Resources/config/oro/api.yml
 
-    # The structure of "Resources/config/oro/api.yml"
     api:
         entities:
             name:

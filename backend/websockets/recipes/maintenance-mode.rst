@@ -25,5 +25,5 @@ To turn off the maintenance mode, run the following command:
 
 .. code-block:: none
 
-   bin/console oro:maintenance:unlock --env=prod
+   php bin/console oro:maintenance:unlock --env=prod
 

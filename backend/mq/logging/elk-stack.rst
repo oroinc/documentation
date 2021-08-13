@@ -19,8 +19,7 @@ Logstash supports a variety of inputs that pull in all events from a multitude o
 Configure |Monolog Logstash formatter| in your ``config_%env%.yml`` file.
 
 .. code-block:: yaml
-
-    # path/to/config_prod.yml
+   :caption: path/to/config_prod.yml
 
     monolog:
        handlers:

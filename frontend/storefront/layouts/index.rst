@@ -417,9 +417,6 @@ As an example, consider a data provider that returns product details:
 
     class ProductDataProvider
     {
-        /**
-         * @param Product $product
-         */
         public function getCode(Product $product)
         {
             return $product->getId();

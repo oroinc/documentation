@@ -243,10 +243,7 @@ Unique Job
 
     class MessageProcessor implements MessageProcessorInterface
     {
-        /**
-         * @var JobRunner
-         */
-        private $jobRunner;
+        private JobRunner $jobRunner;
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
@@ -278,15 +275,9 @@ In the example below, a root job is created. As soon as its work is completed, i
 
     class MessageProcessor implements MessageProcessorInterface
     {
-        /**
-         * @var JobRunner
-         */
-        private $jobRunner;
+        private JobRunner $jobRunner;
 
-        /**
-         * @var DependentJobService
-         */
-        private $dependentJob;
+        private DependentJobService $dependentJob;
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
@@ -328,15 +319,9 @@ Example:
 
     class Step1MessageProcessor implements MessageProcessorInterface
     {
-        /**
-         * @var JobRunner
-         */
-        private $jobRunner;
+        private JobRunner $jobRunner;
 
-        /**
-         * @var MessageProducerInterface
-         */
-        private $producer;
+        private MessageProducerInterface $producer;
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
@@ -374,10 +359,7 @@ Example:
 
     class Step2MessageProcessor implements MessageProcessorInterface
     {
-        /**
-         * @var JobRunner
-         */
-        private $jobRunner;
+        private JobRunner $jobRunner;
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
@@ -408,9 +390,6 @@ The *JobConfigurationProvider::getTimeBeforeStaleForJobName($jobName);* method s
 In the example below, all jobs are treated as "stale" after an hour.
 
 .. code-block:: php
-
-
-    <?php
 
     use Oro\Component\MessageQueue\Provider\JobConfigurationProviderInterface;
 
@@ -467,10 +446,7 @@ Examples
 
     class MessageProcessor implements MessageProcessorInterface
     {
-        /**
-         * @var JobRunner
-         */
-        private $jobRunner;
+        private JobRunner $jobRunner;
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
@@ -496,15 +472,9 @@ Examples
 
     class Step1MessageProcessor implements MessageProcessorInterface
     {
-        /**
-         * @var JobRunner
-         */
-        private $jobRunner;
+        private JobRunner $jobRunner;
 
-        /**
-         * @var MessageProducerInterface
-         */
-        private $producer;
+        private MessageProducerInterface $producer;
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
@@ -539,10 +509,7 @@ Examples
 
     class Step2MessageProcessor implements MessageProcessorInterface
     {
-        /**
-         * @var JobRunner
-         */
-        private $jobRunner;
+        private JobRunner $jobRunner;
 
         public function process(MessageInterface $message, SessionInterface $session)
         {

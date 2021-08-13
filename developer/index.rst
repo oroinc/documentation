@@ -26,6 +26,11 @@ Developer Documentation is intended for developers and contains information abou
 
 .. raw:: html
 
+   <h2><a href="../bundles/">Bundles Documentation</a></h2>
+   <p>This section extends the rest of the Developer Guide, providing insight into core bundles implementation architecture and infrequently customizable features, which is particularly useful for non-standard customizations for backend and frontend developers as many features are interconnected.</p>
+
+.. raw:: html
+
    <h2><a href="../api/">Web Services API Guide</a></h2>
    <p>Web Services API Guide enables developers to integrate Oro functionality into third-party software systems.</p>
 

@@ -78,7 +78,7 @@ To receive the select options or radio buttons values, use the ``oro_entity_exte
         ...
         ->add(
             'visibilityForCustomer',
-            EntityChangesetType::NAME,
+            EntityChangesetType::class,
             [
                 'class' => 'OroB2B\Bundle\CustomerBundle\Entity\Customer'
             ]

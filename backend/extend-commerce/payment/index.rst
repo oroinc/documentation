@@ -138,10 +138,10 @@ To add an icon:
 1. Save the file to the <bundle_root>/Resources/public/img directory.
 2. Install assets:
 
-   .. code-block:: none
+   .. code-block:: bash
 
 
-       bin/console assets:install --symlink
+       php bin/console assets:install --symlink
 
 To make sure that the icon is accessible for the web interface, check if it appears (as a copy or a symlink depending on the settings selected during the application installation) in the /public/bundles/collect_on_delivery/img directory of your application.
 
@@ -205,10 +205,10 @@ Check That the Integration is Created Successfully
 
 1. Clear the application cache:
 
-   .. code-block:: none
+   .. code-block:: bash
 
 
-       bin/console cache:clear
+       php bin/console cache:clear
 
    .. note::
 

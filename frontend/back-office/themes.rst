@@ -33,9 +33,8 @@ Customizing the layout of your Platform application is as easy as defining your 
 your application's configuration using the ``oro_theme`` option:
 
 .. code-block:: yaml
+   :caption: config/config.yml
 
-
-    # config/config.yml
     oro_theme:
         themes:
             mytheme:
@@ -58,9 +57,8 @@ Reusable Themes
 In addition to customizing your own application, you can also provide a theme that can be reused in different applications. To achieve this, specify the theme's options in the ``settings.yml`` file that is located in the ``Resources/public/themes/<theme-name>`` directory of your bundle:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/public/themes/acme-theme/settings.yml
 
-
-    # src/Acme/DemoBundle/Resources/public/themes/acme-theme/settings.yml
     styles:
         - bundles/acmebundle/themes/acme-theme/css/main.css
         - bundles/acmebundle/themes/acme-theme/css/ie.css
@@ -72,9 +70,8 @@ In addition to customizing your own application, you can also provide a theme th
 To use the theme in any application, enable it in the application configuration:
 
 .. code-block:: yaml
+   :caption: config/config.yml
 
-
-    # config/config.yml
     oro_theme:
         active_theme: acme-theme
 
@@ -117,9 +114,9 @@ Finally, clear the cache and dump all assets:
 
 .. code-block:: none
 
-    $ php bin/console cache:clear
-    $ php bin/console assets:install --symlink
-    $ php bin/console oro:assets:build
+    php bin/console cache:clear
+    php bin/console assets:install --symlink
+    php bin/console oro:assets:build
 
 .. _book-themes-overriding:
 
@@ -145,9 +142,8 @@ like this:
 So, place the ``settings.yml`` file in the ``Resources/public/themes/oro`` directory of your bundle and define the values you want to change:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/public/oro/
 
-
-    # src/Acme/DemoBundle/Resources/public/oro/
     label: Custom Oro Theme
     icon: images/custom_favicon.ico
 
@@ -157,10 +153,7 @@ So, place the ``settings.yml`` file in the ``Resources/public/themes/oro`` direc
     registered after the bundle it is overriding the themes from:
 
     .. code-block:: php
-
-
-        // src/AppKernel.php
-        // ...
+       :caption: src/AppKernel.php
 
         class AppKernel extends OroKernel
         {

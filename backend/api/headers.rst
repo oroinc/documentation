@@ -47,8 +47,6 @@ To add a custom key to the ``X-Include`` header:
 
     .. code-block:: php
 
-        <?php
-
         namespace Oro\Bundle\ApiBundle\Processor\DeleteList;
 
         use Oro\Component\ChainProcessor\ContextInterface;
@@ -99,8 +97,6 @@ To add a custom key to the ``X-Include`` header:
 2. Create a processor to remove your response header when an error occurs:
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\ApiBundle\Processor\DeleteList;
 

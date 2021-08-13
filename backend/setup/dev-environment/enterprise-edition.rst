@@ -31,7 +31,7 @@ To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.
 
 Add required repositories to your `yum` package manager and install the |software collections| management utils by running:
 
-.. code-block:: none
+.. code-block:: bash
 
    yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-7.rpm yum-utils scl-utils centos-release-scl centos-release-scl-rh
    yum-config-manager --add-repo http://koji.oro.cloud/rpms/oro-el7.repo
@@ -43,7 +43,7 @@ Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, Supervisor, and Wg
 
 Install most of the required Oro application environment components using the following commands:
 
-.. code-block:: none
+.. code-block:: bash
 
    curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
    yum install -y rh-postgresql96 rh-postgresql96-postgresql rh-postgresql96-postgresql-server rh-postgresql96-postgresql-contrib rh-postgresql96-postgresql-syspaths oro-elasticsearch7 oro-elasticsearch7-runtime oro-elasticsearch7-elasticsearch oro-redis5 oro-redis5-runtime oro-redis5-redis oro-rabbitmq-server37 oro-rabbitmq-server37-runtime oro-rabbitmq-server37-rabbitmq-server nginx nodejs wget git bzip2 supervisor
@@ -53,7 +53,7 @@ Install PHP
 
 Install PHP 7.4 and the required dependencies using the following command:
 
-.. code-block:: none
+.. code-block:: bash
 
    yum install -y php-cli php-fpm php-opcache php-mbstring php-pgsql php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-tidy php-zip php-devel php-pear
 
@@ -62,7 +62,7 @@ Install Composer
 
 Run the commands below, or use another Composer installation process described in the |official documentation|.
 
-.. code-block:: none
+.. code-block:: bash
 
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
    php -r "unlink('composer-setup.php');"
@@ -84,7 +84,7 @@ For the production environment, it is strongly recommended to keep *SELinux* ena
 In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode.
 However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
 
-.. code-block:: none
+.. code-block:: bash
 
    sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
    setenforce permissive
@@ -110,7 +110,7 @@ Prepare PostgreSQL Database
 Initialize a PostgreSQL Database Cluster
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: none
+.. code-block:: bash
 
    scl enable rh-postgresql96 bash
    postgresql-setup --initdb
@@ -141,7 +141,7 @@ Change the Password for the *postgres* User
 
 To set the password for the *postgres* user to the new secure one, run the following commands:
 
-.. code-block:: none
+.. code-block:: bash
 
    systemctl start rh-postgresql96-postgresql
    su postgres
@@ -155,7 +155,7 @@ Create a Database for your Oro Application
 
 To create the `oro` database that will be used by the Oro application, run the following commands:
 
-.. code-block:: none
+.. code-block:: bash
 
    CREATE DATABASE oro;
    \c oro

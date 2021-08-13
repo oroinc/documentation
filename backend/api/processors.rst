@@ -18,8 +18,6 @@ To create a new processor, create a class that implements |ProcessorInterface| a
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\ProductBundle\Api\Processor;
 
     use Oro\Bundle\ApiBundle\Processor\Context;
@@ -271,8 +269,6 @@ The simplest way is just throw an exception. For example:
 
 .. code-block:: php
 
-    <?php
-
     namespace Oro\Bundle\ApiBundle\Processor\Shared;
 
     use Doctrine\ORM\QueryBuilder;
@@ -290,12 +286,8 @@ The simplest way is just throw an exception. For example:
      */
     class LoadEntityByEntitySerializer implements ProcessorInterface
     {
-        /** @var EntitySerializer */
-        private $entitySerializer;
+        private EntitySerializer $entitySerializer;
 
-        /**
-         * @param EntitySerializer $entitySerializer
-         */
         public function __construct(EntitySerializer $entitySerializer)
         {
             $this->entitySerializer = $entitySerializer;
@@ -350,8 +342,6 @@ This way is good to for unexpected and security errors (for security errors, thr
 Another way to add an **Error** object to the context is good for validation errors because it allows you to add several errors:
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\ApiBundle\Processor\Shared;
 

@@ -208,9 +208,9 @@ Oro application follows this convention and extends the set of the CLI tools by 
 
 To see all Oro applications console commands, run the following command in the console:
 
-.. code-block:: none
+.. code-block:: bash
 
-    bin/console list oro
+    php bin/console list oro
 
 .. _dev-guide-application-web-framework-symfony-list-of-symfony-components-used-in-oro-applications:
 

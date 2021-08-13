@@ -18,7 +18,6 @@ The following example illustrates enabling attributes for the *Product* entity:
 
 .. code-block:: php
 
-    <?php
     /**
      * @ORM\Entity
      * @Config(

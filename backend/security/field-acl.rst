@@ -21,12 +21,10 @@ The second parameter of this method should be an instance of |FieldVote|:
 
 .. code-block:: php
 
-
-    <?php
-    ....
+    // ....
     use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
     use Symfony\Component\Security\Acl\Voter\FieldVote;
-    ...
+    // ...
 
     $isGranted = $this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, 'fieldName'));
 
@@ -38,13 +36,11 @@ If you have no entity instance but you know a class name, ID of the record, the 
  
 .. code-block:: php
 
-
-    <?php
-    ....
+    // ....
     use Oro\Bundle\SecurityBundle\Acl\Domain\DomainObjectReference;
     use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
     use Symfony\Component\Security\Acl\Voter\FieldVote;
-    ...
+    // ...
 
     $entityReference = new DomainObjectReference($entityClassName, $entityId, $ownerId, $organizationId);
     $isGranted = $this->authorizationChecker->isGranted('VIEW', new FieldVote($entityReference, 'fieldName'));
@@ -77,10 +73,6 @@ The following example is an illustration of the entity configuration:
 
 .. code-block:: php
 
-
-    <?php
-    ....
-
      /**
      * @ORM\Entity()
      * @Config(
@@ -110,9 +102,6 @@ The following example is an illustration of the entity configuration:
 If you have no access to the entity to modify the Config annotation, set the `field_acl_supported` parameter with the migration:
  
 .. code-block:: php
-
- 
-    <?php
 
     namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
 
@@ -166,19 +155,13 @@ For example:
 
 .. code-block:: php
 
-
-    <?php
-    ....
-
      use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
-    ...
+     // ...
 
      class SomeEntity extends ExtendSomeEntity
      {
-     ...
+     // ...
          /**
-          * @var string
-          *
           * @ORM\Column()
           * @ConfigField(
           *      defaultValues={
@@ -189,7 +172,7 @@ For example:
           * )
           */
          protected $firstName;
-     ...
+     // ...
      }
  
 .. include:: /include/include-links-dev.rst

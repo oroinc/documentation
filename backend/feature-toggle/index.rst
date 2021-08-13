@@ -90,9 +90,6 @@ Configuration extension:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\ProcessorBundle\Config;
 
     use Oro\Bundle\FeatureToggleBundle\Configuration\ConfigurationExtensionInterface;
@@ -209,9 +206,6 @@ Extension:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\CategoryBundle\Form\Extension;
 
     use Symfony\Component\Form\AbstractTypeExtension;
@@ -243,7 +237,7 @@ Extension:
 
             $builder->add(
                 'category',
-                'acme_category_tree',
+                AcmeCategoryTreeType::class,
                 [
                     'required' => false,
                     'mapped' => false,
@@ -284,23 +278,14 @@ Such voter looks as follows:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\ProcessorBundle\Voter;
 
     use Oro\Bundle\FeatureToggleBundle\Checker\Voter\VoterInterface;
 
     class FeatureVoter implements VoterInterface
     {
-        /**
-         * @var StateChecker
-         */
-        private $stateChecker;
+        private StateChecker $stateChecker;
 
-        /**
-         * @param StateChecker $stateChecker
-         */
         public function __construct(StateChecker $stateChecker) {
             $this->stateChecker = $stateChecker;
         }
@@ -380,9 +365,6 @@ Use Checker for Commands
 Commands launched as subcommands cannot be skipped globally. To avoid running such commands, add an implementation of FeatureCheckerAwareInterface to your parent command, import FeatureCheckerHolderTrait (via `use FeatureCheckerHolderTrait;`), and check the feature status via featureChecker that is automatically injected into your command.
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Acme\Bundle\FixtureBundle\Command;
 

@@ -167,8 +167,6 @@ RabbitMQ is used as a broker with minimum configuration.
 
 .. code-block:: php
 
-    <?php
-
     use Oro\Component\AmqpMessageQueue\Transport\Amqp\AmqpConnection;
 
     $connection = AmqpConnection::createFromConfig([
@@ -185,7 +183,6 @@ bundle to use it.
 
 .. code-block:: php
 
-    <?php
     namespace Oro\Bundle\AmqpMessageQueueBundle;
 
     use Oro\Bundle\MessageQueueBundle\DependencyInjection\OroMessageQueueExtension;
@@ -208,8 +205,8 @@ bundle to use it.
 The config:
 
 .. code-block:: yaml
+   :caption: config/config.yml
 
-    # config/config.yml
     oro_message_queue:
         transport:
             default: 'amqp'

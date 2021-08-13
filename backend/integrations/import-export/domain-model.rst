@@ -301,7 +301,7 @@ ProcessorRegistry provides a storage of all registered processors declared by th
 * **unregisterProcessor(type, entityName, alias)** - unregisters the processor using the input parameters;
 * **hasProcessor(type, alias)** - checks that the processor is registered;
 * **getProcessor(type, alias)** - gets the registered processor;
-* **getProcessorsByEntity(type, entityName)** - gets the registered processor by an entity. The import can have several processors for an entity, for example, one processor for the "Add and Replace" import behaviour and the other for the "Delete" import behaviour;
+* **getProcessorsByEntity(type, entityName)** - gets the registered processor by an entity. The import can have several processors for an entity, for example, one processor for the "Add and Replace" import behavior and the other for the "Delete" import behavior;
 * **getProcessorAliasesByEntity(type, entityName)** - gets all processors aliases by a type and entity name;
 * **getProcessorEntityName(type, alias)** - gets an entity name by the processor type and alias.
 
@@ -455,17 +455,17 @@ DefaultDataConverter is applicable in simple cases of import/export. It can conv
 
 
     // Multi-dimensional
-    array(
-        'name' => array(
+    [
+        'name' => [
             'first_name' => 'John',
             'last_name' => 'Doe',
-        )
-    );
+        ]
+    ];
     // One-dimensional
-    array(
+    [
         'name:first_name' => 'John',
         'name:last_name' => 'Doe',
-    );
+    ];
 
 
 **Methods:**

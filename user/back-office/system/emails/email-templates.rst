@@ -70,8 +70,7 @@ The full list of these functions is the following:
 
    **Invalid template**:
 
-   .. code-block:: php
-
+   .. code-block:: twig
 
         <table>
             <thead>
@@ -96,8 +95,7 @@ The full list of these functions is the following:
 
    **Valid template**:
 
-   .. code-block:: php
-
+   .. code-block:: twig
 
         <table>
             <thead>

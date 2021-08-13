@@ -33,9 +33,8 @@ sort the result (the id can be used as a sorting criteria as more recent tasks w
 ids):
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         # ...
         app-recent-tasks-grid:
@@ -56,9 +55,8 @@ bundle (see :ref:`cookbook-entities-dashboard-config` for an explanation of the 
 follow for the template name and location) with the following content:
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Dashboard/recent_tasks_widget.html.twig
 
-
-    {# src/AppBundle/Resources/views/Dashboard/recent_tasks_widget.html.twig #}
     {% extends '@OroDashboard/Dashboard/widget.html.twig' %}
     {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
 
@@ -82,9 +80,8 @@ Adding Widget Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/dashboards.yml
 
-
-    # src/AppBundle/Resources/config/oro/dashboards.yml
     dashboards:
         widgets:
             recent_tasks:

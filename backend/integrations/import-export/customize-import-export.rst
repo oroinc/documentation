@@ -46,9 +46,8 @@ To enable Oro application read configuration settings from the configuration fil
 extension class in the entity bundle and implement the *load* method, like in the example below:
 
 .. code-block:: php
+   :caption: src/AppBundle/DependencyInjection/AppExtension.php
 
-
-    // src/AppBundle/DependencyInjection/AppExtension.php
     namespace AppBundle\DependencyInjection;
 
     use Symfony\Component\Config\FileLocator;
@@ -126,9 +125,8 @@ In the *fillEntityData* method, populate the values for the attributes that shal
 Please refer to the following example:
 
 .. code-block:: php
+   :caption: src/AppBundle/ImportExport/TemplateFixture;
 
-
-    // src/AppBundle/ImportExport/TemplateFixture;
     namespace AppBundle\ImportExport\TemplateFixture;
 
     use AppBundle\Entity\Task;
@@ -182,9 +180,8 @@ To enable export and import for Oro application users, reuse the ``buttons.html.
 OroImportExportBundle. Include it into the twig template in the navigation block (*block navButtons*). Provide the valid entity_class, export and import processor aliases from the configuration file that is described in the `Configure import and export services (processors)`_ section.
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Task/index.html.twig #}
 
-
-    {# src/AppBundle/Resources/views/Task/index.html.twig #}
     {% extends '@OroUI/actions/index.html.twig' %}
 
     {% set gridName = 'app-tasks-grid' %}

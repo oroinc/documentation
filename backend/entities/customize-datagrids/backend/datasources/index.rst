@@ -66,9 +66,6 @@ To implement your own datasource type:
             return $this->arraySource;
         }
 
-        /**
-         * @param array $source
-         */
         public function setArraySource(array $source)
         {
             $this->arraySource = $source;

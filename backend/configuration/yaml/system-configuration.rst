@@ -33,9 +33,8 @@ The following example shows a complete working configuration taken from the |sys
 of the |ActivityListBundle| from OroPlatform:
 
 .. code-block:: yaml
+   :caption: src/Oro/Bundle/ActivityListBundle/Resources/config/oro/system_configuration.yml
 
-
-    # src/Oro/Bundle/ActivityListBundle/Resources/config/oro/system_configuration.yml
     system_configuration:
         groups:
             activity_list_settings:

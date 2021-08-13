@@ -11,9 +11,8 @@ All the configuration described below is added to the ``importexport.yml`` file 
 extension class in your bundle that loads the configuration file:
 
 .. code-block:: php
+   :caption: src/AppBundle/DependencyInjection/AppExtension.php
 
-
-    // src/AppBundle/DependencyInjection/AppExtension.php
     namespace AppBundle\DependencyInjection;
 
     use Symfony\Component\Config\FileLocator;
@@ -41,9 +40,8 @@ OroImportExportBundle. All you need to do is creating services that are based on
 from the OroImportExportBundle and let them know which entity class they have to handle:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/importexport.yml
 
-
-    # src/AppBundle/Resources/config/importexport.yml
     services:
         app.importexport.data_converter:
             parent: oro_importexport.data_converter.configurable
@@ -75,9 +73,8 @@ be imported, you can provide them with an example file that will be created base
 fixtures:
 
 .. code-block:: php
+   :caption: src/AppBundle/ImportExport/TemplateFixture;
 
-
-    // src/AppBundle/ImportExport/TemplateFixture;
     namespace AppBundle\ImportExport\TemplateFixture;
 
     use AppBundle\Entity\Task;
@@ -113,9 +110,8 @@ fixtures:
 Then, register your fixtures class as a service:
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/importexport.yml
 
-
-    # src/AppBundle/Resources/config/importexport.yml
     services:
         # ...
 
@@ -133,9 +129,8 @@ OroImportExportBundle while passing it the names of the needed services (see the
 do so:
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Task/index.html.twig
 
-
-    {# src/AppBundle/Resources/views/Task/index.html.twig #}
     {% extends '@OroUI/actions/index.html.twig' %}
 
     {% set gridName = 'app-tasks-grid' %}
@@ -193,9 +188,8 @@ Import is a basic operation for any entity. The import operation is one step.
 See the following example configuration:
 
 .. code-block:: yaml
+   :caption:  Oro/Bundle/ImportExportBundle/Resources/config/batch_jobs.yml
 
-
-    # Oro/Bundle/ImportExportBundle/Resources/config/batch_jobs.yml
     connector:
         name: oro_importexport
         jobs:
@@ -527,9 +521,8 @@ the following methods:
     as a service in the ``Resources/config/importexport.yml`` file:
 
     .. code-block:: yaml
+       :caption: src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
 
-
-        # src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
         services:
 
             orocrm_contact.importexport.strategy.contact.add_or_replace:
@@ -564,26 +557,26 @@ Generally, you should implement both interfaces if you need to add both import a
 
    class GroupNormalizer extends ConfigurableEntityNormalizer
    {
-       public function normalize($object, $format = null, array $context = array())
+       public function normalize($object, $format = null, array $context = [])
        {
            $result = parent::normalize($object, $format, $context);
 
            // call some service to modify $result
        }
 
-       public function denormalize($data, $class, $format = null, array $context = array())
+       public function denormalize($data, $class, $format = null, array $context = [])
        {
            // call some service to modify $data
 
            return parent::denormalize($data, $class, $format, $context);
        }
 
-       public function supportsNormalization($data, $format = null, array $context = array())
+       public function supportsNormalization($data, $format = null, array $context = [])
        {
            return $data instanceof Group;
        }
 
-       public function supportsDenormalization($data, $type, $format = null, array $context = array())
+       public function supportsDenormalization($data, $type, $format = null, array $context = [])
        {
            return is_array($data) && $type == 'Oro\Bundle\ContactBundle\Entity\Group';
        }
@@ -628,7 +621,7 @@ The data converter is responsible for converting the header of the import/export
          */
         protected function getHeaderConversionRules()
         {
-            return array('ID' => 'id', 'Label' => 'label');
+            return ['ID' => 'id', 'Label' => 'label'];
         }
 
         /**
@@ -636,7 +629,7 @@ The data converter is responsible for converting the header of the import/export
          */
         protected function getBackendHeader()
         {
-            return array('id', 'label');
+            return ['id', 'label'];
         }
     }
 
@@ -783,9 +776,6 @@ The fixture implementation is based on the default import/export process.
          */
         protected $userFixture;
 
-        /**
-         * @param TemplateFixtureInterface $userFixture
-         */
         public function __construct(TemplateFixtureInterface $userFixture)
         {
             $this->userFixture = $userFixture;
@@ -801,7 +791,7 @@ The fixture implementation is based on the default import/export process.
                 ->setFirstName('Jerry')
                 ->setLastName('Coleman');
 
-            return new \ArrayIterator(array($contact));
+            return new \ArrayIterator([$contact]);
         }
 
         public function getEntityClass()
@@ -929,9 +919,6 @@ providers for each entity with options, described in the beginning of the sectio
          */
         private $translator;
 
-        /**
-         * @param TranslatorInterface $translator
-         */
         public function __construct(TranslatorInterface $translator)
         {
             $this->translator = $translator;
@@ -1057,7 +1044,7 @@ In this case, you have to specify the processors that can be used as selected op
 
 *Import a pop-up customization:*
 
-To implement custom behaviour of the import pop-up, you can extend the default **ImportType** from OroImportExportBundle and implement a custom form appearance.
+To implement custom behavior of the import pop-up, you can extend the default **ImportType** from OroImportExportBundle and implement a custom form appearance.
 
 .. code-block:: php
 
