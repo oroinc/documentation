@@ -6,5 +6,3 @@ services:
       context: ./docker/python
     volumes:
       - ./:/documentation
-      - ./docker/tmp:/tmp
-    command: tail -f /dev/null
