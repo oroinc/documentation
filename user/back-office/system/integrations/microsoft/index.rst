@@ -52,7 +52,7 @@ The Microsoft Settings block in the system configuration has global configuratio
    :alt: Calendar settings on system configuration page
 
 * **Enable Calendar Sync** - Indicates whether the synchronization of calendar events is enabled.
-* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft, and Both.
+* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
 * **Conflict Resolution** - The conflict resolution strategy that should be used if the same calendar events are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
 
 These config parameters can be changes at the organization level.
@@ -63,8 +63,10 @@ To configure the synchronization for a specific user, go to the user configurati
    :alt: Calendar settings on user configuration page
 
 * **Enabled** - Indicates whether the synchronization of calendar events is enabled for the user.
-* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft, and Both.
+* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
 * **Conflict Resolution** - The conflict resolution strategy that should be used if the same calendar events are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
+
+   .. note:: If the synchronization enables and the **Sync Direction** is Oro to Microsoft or Bidirectional, the attendees invitations on Oro side will be disabled.
 
 .. _user-guide-integrations-microsoft-tasks:
 
@@ -77,7 +79,7 @@ The Microsoft Settings block in the system configuration has global configuratio
    :alt: Tasks settings on system configuration page
 
 * **Enable Tasks Sync** - Indicates whether the synchronization of tasks is enabled.
-* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft, and Both.
+* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
 * **Conflict Resolution** - The conflict resolution strategy that should be used if the same tasks are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
 
 These config parameters can be changes at the organization level.
@@ -88,7 +90,7 @@ To configure the synchronization for a specific user, go to the user configurati
    :alt: Tasks settings on user configuration page
 
 * **Enabled** - Indicates whether the synchronization of tasks is enabled for the user.
-* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft, and Both.
+* **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
 * **Conflict Resolution** - The conflict resolution strategy that should be used if the same tasks are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
 
 
