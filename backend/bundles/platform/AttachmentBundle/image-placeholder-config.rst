@@ -122,7 +122,7 @@ To use the providers we have created previously, we need to create TwigExtension
 
         .. literalinclude:: ../../../../code_examples/platform/image_placeholder/demo/Twig/ProductImageExtension.php
             :language: php
-            :lines: 3-92
+            :lines: 3-80
 
 
 You can use Twig functions declared in the extension for your templates.

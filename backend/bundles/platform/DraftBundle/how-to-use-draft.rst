@@ -115,7 +115,7 @@ To manage the entity, we need to create a grid to display original and draft ent
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
         :language: php
-        :lines: 35-57
+        :lines: 35-56
 
 
 .. important::
@@ -133,7 +133,7 @@ Follow the instructions provided in the :ref:`Work with Operations <bundle-docs-
 
     .. literalinclude:: ../../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/actions.yml
         :language: php
-        :lines: 2-33
+        :lines: 2-29
 
 
 
