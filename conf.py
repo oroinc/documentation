@@ -43,7 +43,7 @@ extensions = [
     'ext.sitemap',
     # Disable generating of sitemapindex.xml
 #    'ext.sitemap-index',
-    'ext.redirects'
+    'ext.redirects',
 ]
 
 spelling_lang='en_US'
@@ -92,8 +92,8 @@ copyright = u'2017, Oro Team'
 #today_fmt = '%B %d, %Y'
 
 # List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-exclude_patterns = ['_build', 'completeReference/overview', 'sphinx', '_themes']
+# directories to ignore when looking for source files. , 'backend', 'frontend', 'community', 'developer', 'user'
+exclude_patterns = ['_build', 'completeReference/overview', 'sphinx', 'docker', '_themes']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
