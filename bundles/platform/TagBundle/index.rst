@@ -108,10 +108,10 @@ Then you are able to manually render tags somewhere else in the entity view temp
 
 .. code-block:: none
 
-    {% import 'OroUIBundle::macros.html.twig' as ui %}
-    {% import 'OroTagBundle::macros.html.twig' as Tag %}
+    {% import '@OroUI/macros.html.twig' as UI %}
+    {% import '@OroTag/macros.html.twig' as Tag %}
     ...
-    {{ ui.renderHtmlProperty('oro.tag.entity_plural_label'|trans, Tag.renderView(entity)) }}
+    {{ UI.renderHtmlProperty('oro.tag.entity_plural_label'|trans, Tag.renderView(entity)) }}
     ...
 
 .. toctree::
