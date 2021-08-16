@@ -55,11 +55,7 @@ for the transaction watcher aware connection proxy in your application, for exam
     {
         public function __construct(KernelInterface $kernel)
         {
-            $loader = new ClassLoader(
-                AddTransactionWatcherCompilerPass::CONNECTION_PROXY_NAMESPACE . '\\',
-                AddTransactionWatcherCompilerPass::getConnectionProxyRootDir($kernel->getCacheDir())
-            );
-            $loader->register();
+            TransactionWatcherConfigurator::registerConnectionProxies($kernel->getCacheDir());
         }
 
         public function build(ContainerBuilder $container)
