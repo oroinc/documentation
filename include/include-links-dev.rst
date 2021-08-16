@@ -4427,9 +4427,9 @@ Links (Dev)
 
    <a href="http://mink.behat.org/en/latest/" target="_blank">open source browser controller/emulator</a>
 
-.. |Symfony2| raw:: html
+.. |SymfonyExtension| raw:: html
 
-   <a href="https://github.com/Behat/Symfony2Extension/blob/master/doc/index.rst" target="_blank">Symfony2</a>
+   <a href="https://github.com/FriendsOfBehat/SymfonyExtension/blob/master/DOCUMENTATION.md" target="_blank">SymfonyExtension</a>
 
 .. |Driver Feature Support| raw:: html
 
