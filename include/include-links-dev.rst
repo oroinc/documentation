@@ -2242,34 +2242,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SyncBundle#orosyncbundle" target="_blank">Usage and Logging Levels</a>
 
-.. |Regular and Secure Connections Configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SyncBundle/Resources/doc/configuration.md#configuration" target="_blank">Regular and Secure Connections Configuration</a>
-
-.. |Websocket Client| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SyncBundle/Resources/doc/client.md#client" target="_blank">Websocket Client</a>
-
-.. |Topics and Handlers| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SyncBundle/Resources/doc/topics-handlers.md#topics-and-handlers" target="_blank">Topics and Handlers</a>
-
-.. |Authentication| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SyncBundle/Resources/doc/authentication.md" target="_blank">Authentication</a>
-
-.. |Content Outdating Notifications (Frontend and Backend Implementation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SyncBundle/Resources/doc/content-outdating.md" target="_blank">Content Outdating Notifications (Frontend and Backend Implementation</a>
-
-.. |Origin Checking| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SyncBundle/Resources/doc/origin-checking.md" target="_blank">Origin Checking</a>
-
-.. |SyncBundle Mediator Handlers| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/SyncBundle/Resources/doc/mediator-handlers.md" target="_blank">Mediator Handlers</a>
-
 .. |Introduction to Themes| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ThemeBundle#theme-properties" target="_blank">Introduction to Themes</a>
@@ -5839,3 +5811,8 @@ Links (Dev)
 .. |Lazy loading for Event Listeners| raw:: html
 
    <a href="https://symfony.com/doc/current/doctrine/events.html#lazy-loading-for-event-listeners" target="_blank">Lazy loading for Event Listeners</a>
+
+.. |orosync/js/content-manager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/Resources/public/js/content-manager.js" target="_blank">orosync/js/content-manager</a>
+
