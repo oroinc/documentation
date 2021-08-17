@@ -417,7 +417,7 @@ provided by the OroSecurityBundle:
 In this example, first, a query is built that selects all products from the database which are more
 expensive than ``19.99`` order by their price. Then, the query builder is passed to the ``apply()``
 method of the ``oro_security.acl_helper`` service. This service, an instance of the
-:class:`Oro\\Bundle\\SecurityBundle\\ORM\\Walker\\AclHelper` class, modifies the query only to the
+``Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper`` class, modifies the query only to the
 return entities the user has access to.
 
 Manual Access Checks

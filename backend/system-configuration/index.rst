@@ -25,7 +25,7 @@ Manage Configuration Settings
 -----------------------------
 
 To define your own configuration settings in a bundle, use the
-:class:`Oro\\Bundle\\ConfigBundle\\DependencyInjection\\SettingsBuilder` in the
+``Oro\Bundle\ConfigBundle\DependencyInjection\SettingsBuilder`` in the
 ``Configuration`` class:
 
 .. code-block:: php

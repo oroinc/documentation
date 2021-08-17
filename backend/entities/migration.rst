@@ -293,7 +293,7 @@ To use another extension in your extension, the extension class should implement
 Events During Migration
 -----------------------
 
-The :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Loader\\MigrationsLoader` dispatches two events when migrations are being executed, *oro_migration.pre_up* and *oro_migration.post_up*. You can listen to either event and register your own migrations in your event listener. Use the :method:`Oro\\Bundle\\MigrationBundle\\Event\\MigrationEvent::addMigration` method of the passed event instance to register your custom migrations:
+The ``Oro\Bundle\MigrationBundle\Migration\Loader\MigrationsLoader`` dispatches two events when migrations are being executed, *oro_migration.pre_up* and *oro_migration.post_up*. You can listen to either event and register your own migrations in your event listener. Use the ``Oro\Bundle\MigrationBundle\Event\MigrationEvent::addMigration`` method of the passed event instance to register your custom migrations:
 
 .. code-block:: php
    :caption: src/Acme/DemoBundle/EventListener/RegisterCustomMigrationListener.php
