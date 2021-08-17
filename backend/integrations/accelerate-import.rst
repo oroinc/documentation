@@ -177,7 +177,7 @@ it will disable all optional listeners. Here is an example:
 Write Custom Import Strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
+OroPlatform provides ``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy``
 to be used as the default one. This strategy automatically handles field types, relations etc.
 However, all this functionality significantly slows down the import process and might perform
 operations and requests that are not required for some specific cases.

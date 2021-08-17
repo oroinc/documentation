@@ -72,8 +72,8 @@ In this example, the *importexport.yml* file is located in the *Resources/config
 Configure Import and Export Services (Processors)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In OroPlatform, import and export processor are implemented in the :class:`Oro\\Bundle\\ImportExportBundle\\Processor\\ImportProcessor` and
-:class:`Oro\\Bundle\\ImportExportBundle\\Processor\\ExportProcessor` classes that ship with the
+In OroPlatform, import and export processor are implemented in the ``Oro\Bundle\ImportExportBundle\Processor\ImportProcessor`` and
+``Oro\Bundle\ImportExportBundle\Processor\ExportProcessor`` classes that ship with the
 OroImportExportBundle.
 
 In the *importexport.yml* configuration file located in the *Resources/config* directory, define the secrvices that are based on the on abstract OroImportExportBundle services, like in the following example:

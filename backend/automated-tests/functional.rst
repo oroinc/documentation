@@ -121,7 +121,7 @@ before a test starts and is rolled back when a test ends.
 Loading Data Fixtures
 ^^^^^^^^^^^^^^^^^^^^^
 
-Use the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::loadFixtures`
+Use the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::loadFixtures``
 method to load a fixture in a test:
 
 .. code-block:: php
@@ -280,8 +280,8 @@ Writing Functional Tests
 
 To create a functional test case:
 
-1. Extend the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase` class
-2. Prepare the test client (an instance of the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\Client` class)
+1. Extend the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class
+2. Prepare the test client (an instance of the ``Oro\Bundle\TestFrameworkBundle\Test\Client`` class)
 3. Prepare fixtures (optional)
 4. Prepare container (optional)
 5. Call test functionality
@@ -485,7 +485,7 @@ Testing ACLs in a Controller
 
 In this example, a user without sufficient permissions is trying to access
 a controller action. The
-:method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::assertHtmlResponseStatusCodeEquals`
+``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::assertHtmlResponseStatusCodeEquals``
 method is used to ensure that access to the requested resource is
 denied for the user:
 
@@ -609,10 +609,10 @@ Testing Commands
 ^^^^^^^^^^^^^^^^
 
 When OroPlatform is installed, you can test commands by using the
-:method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::runCommand`
-method from the ``WebTestCase`` class. This method executes a command with
+``runCommand()``
+method from the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class. This method executes a command with
 given parameters and returns its output as a string. For example, see
-what the test for the :class:`Oro\\Bundle\\SearchBundle\\EventListener\\UpdateSchemaDoctrineListener`
+what the test for the ``Oro\Bundle\SearchBundle\EventListener\UpdateSchemaDoctrineListener``
 class from the SearchBundle looks like:
 
 .. code-block:: php
@@ -675,7 +675,7 @@ Testing Services or Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To test services or repositories, you can access the service container through
-the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::getContainer`
+the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::getContainer``
 method:
 
 .. code-block:: php

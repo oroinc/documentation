@@ -326,7 +326,7 @@ Organizing migrations is relatively simple if you follow the basic conventions b
     :phpfunction:`version_compare` function. Therefore, it is a good practice to name them  following the ``v1_0``,
     ``v2_0`` pattern.
 
-When migration to a particular schema version is performed, all migration classes from the corresponding directory are evaluated. Then,  the contents of their ``up()`` method is executed. A class is treated as a migration class when it implements the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface.
+When migration to a particular schema version is performed, all migration classes from the corresponding directory are evaluated. Then,  the contents of their ``up()`` method is executed. A class is treated as a migration class when it implements the ``Oro\Bundle\MigrationBundle\Migration\Migration`` interface.
 
 For example, the migration class for the ``Hotel`` entity looks is illustrated below:
 
@@ -354,7 +354,7 @@ For example, the migration class for the ``Hotel`` entity looks is illustrated b
 
 You can modify the database using the interface the Doctrine DBAL offers with its ``Schema`` class, and you can also execute queries directly using the ``QueryBag``, if necessary.
 
-Queries executed using the QueryBag, are divided into two groups: use the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\QueryBag::addPreQuery`  to add a query that is executed before the schema changes from the migration class are performed. Queries scheduled with the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\QueryBag::addPostQuery` method are executed after the schema is modified.
+Queries executed using the QueryBag, are divided into two groups: use the ``Oro\Bundle\MigrationBundle\Migration\QueryBag::addPreQuery``  to add a query that is executed before the schema changes from the migration class are performed. Queries scheduled with the ``Oro\Bundle\MigrationBundle\Migration\QueryBag::addPostQuery`` method are executed after the schema is modified.
 
 To  load and apply migrations to the existing database schema, execute the ``oro:migration:load`` command:
 

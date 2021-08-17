@@ -124,20 +124,20 @@ The application provides formatter services that can be used to format dates
 and numbers in the backend which are actually simple wrappers for the INTL
 library:
 
-* :class:`Oro\\Bundle\\LocaleBundle\\Formatter\\DateTimeFormatter`
+* ``Oro\Bundle\LocaleBundle\Formatter\DateTimeFormatter``
 
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\DateTimeFormatter::formatDate`
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\DateTimeFormatter::formatTime`
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\DateTimeFormatter::format`
+  * ``formatDate()``
+  * ``formatTime()``
+  * ``format()``
 
-* :class:`Oro\\Bundle\\LocaleBundle\\Formatter\\NumberFormatter`
+* ``Oro\Bundle\LocaleBundle\Formatter\NumberFormatter``
 
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\NumberFormatter::formatDecimal`
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\NumberFormatter::formatPercent`
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\NumberFormatter::formatCurrency`
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\NumberFormatter::formatSpellout`
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\NumberFormatter::formatDuration`
-  * :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\NumberFormatter::formatOrdinal`
+  * ``formatDecimal()``
+  * ``formatPercent()``
+  * ``formatCurrency()``
+  * ``formatSpellout()``
+  * ``formatDuration()``
+  * ``formatOrdinal()``
 
 These formatter methods can be used in twig templates as filters:
 
@@ -193,15 +193,15 @@ before they’re rendered. Localization includes the formatting of name parts
 according to a specified format (see :ref:`localization-config-file-name-format`).
 
 On the backend side, such an entity must implement the
-:class:`name interface <Oro\\Bundle\\LocaleBundle\\Model\\FullNameInterface>`.
+``Oro\Bundle\LocaleBundle\Model\FullNameInterface``.
 This interface contains methods to extract all parts of a name, including
 the name prefix, the first name, the middle name, the last name and the name
 suffix. Furthermore, there are separate interfaces for each name part that
 can be used when an entity defines only a subset of the full name definition.
 
 Formatting is done on backend side by applying the
-:method:`Oro\\Bundle\\LocaleBundle\\Formatter\\NameFormatter::format` method
-from the :class:`Oro\\Bundle\\LocaleBundle\\Formatter\\NameFormatter` class.
+``Oro\Bundle\LocaleBundle\Formatter\NameFormatter::format`` method
+from the ``Oro\Bundle\LocaleBundle\Formatter\NameFormatter`` class.
 It receives an entity and returns it as string which is formatted according
 to the defined rules.
 
@@ -238,12 +238,12 @@ interface. In this case, the name will be rendered according to the country's
 default locale and will be used instead of an appropriate placeholder.
 
 To support formatting, an address entity should implement the
-:class:`Oro\\Bundle\\LocaleBundle\\Model\\AddressInterface` which defines
+``Oro\Bundle\LocaleBundle\Model\AddressInterface`` which defines
 methods to retrieve all required address parts (street, city, region name/code,
 postal code, country name/ISO2/ISO3 and organization).
 
-The backend formatter, :class:`Oro\\Bundle\\LocaleBundle\\Formatter\\AddressFormatter`,
-provides a :method:`Oro\\Bundle\\LocaleBundle\\Formatter\\AddressFormatter::format`
+The backend formatter, ``Oro\Bundle\LocaleBundle\Formatter\AddressFormatter``,
+provides a ``format()``
 method which returns a string representation of an address that can include
 default newline separators (``\n``).
 

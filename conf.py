@@ -42,8 +42,8 @@ extensions = [
     'ext.assets-timestamp',
     'ext.sitemap',
     # Disable generating of sitemapindex.xml
-    # 'ext.sitemap-index',
-    'ext.redirects'
+#    'ext.sitemap-index',
+    'ext.redirects',
 ]
 
 spelling_lang='en_US'

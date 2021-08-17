@@ -1,0 +1,7 @@
+version: '3.5'
+services:
+  doc:
+    image: oroinc/documentation:sphinx-1.8.5
+    build: .
+    volumes:
+        - ./:/documentation
