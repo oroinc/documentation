@@ -17,7 +17,7 @@ Execute Custom Migrations
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can create your own migrations that can be executed during the installation.
-A migration is a class which implements the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface:
+A migration is a class which implements the ``Oro\Bundle\MigrationBundle\Migration\Migration`` interface:
 
 .. code-block:: php
     :linenos:
@@ -39,15 +39,15 @@ A migration is a class which implements the :class:`Oro\\Bundle\\MigrationBundle
 
 .. note:: Entity metadata in the PHP entity classes (annotations) should match exactly what the schema migration is doing. If you create a migration that modifies the type, length or another property of an existing entity field, please remember to make the same change in the PHP entity class annotations.
 
-In the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration::up`,
+In the ``up()``,
 you can modify the database schema and/or add additional SQL queries that
 are executed before and after the schema changes.
 
-The :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Loader\\MigrationsLoader`
+The ``Oro\Bundle\MigrationBundle\Migration\Loader\MigrationsLoader``
 dispatches two events when migrations are being executed, *oro_migration.pre_up*
 and *oro_migration.post_up*. You can listen to either event and register
 your own migrations in your event listener. Use the
-:method:`Oro\\Bundle\\MigrationBundle\\Event\\MigrationEvent::addMigration` method
+``Oro\Bundle\MigrationBundle\Event\MigrationEvent::addMigration()`` method
 of the passed event instance to register your custom migrations:
 
 .. code-block:: php
