@@ -20,6 +20,8 @@
 
 import os
 
+from sphinx.util import logging
+
 TEMPLATE = """<html>
   <head><meta http-equiv="refresh" content="0; url=%s"/></head>
 </html>
@@ -27,9 +29,10 @@ TEMPLATE = """<html>
 
 
 def generate_redirects(app):
+    logger = logging.getLogger(__name__)
     path = os.path.join(app.srcdir, app.config.redirects_file)
     if not os.path.exists(path):
-        app.info("Could not find redirects file at '%s'" % path)
+        logger.info("Could not find redirects file at '%s'" % path)
         return
 
     get_target_uri = app.builder.get_target_uri
@@ -39,7 +42,7 @@ def generate_redirects(app):
         for line in redirects.readlines():
             from_path, to_path = line.rstrip().split(' ')
 
-            app.debug("Redirecting '%s' to '%s'" % (from_path, to_path))
+            logger.debug("Redirecting '%s' to '%s'" % (from_path, to_path))
 
             redirected_filename = get_outfilename(from_path)
             redirected_directory = os.path.dirname(redirected_filename)
