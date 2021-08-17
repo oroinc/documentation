@@ -93,7 +93,7 @@ Adding Widget Configuration
                 description: This widget displays the most recent tasks
 
 The configured ``oro_dashboard_widget`` route refers to a controller action that comes as part of
-the :class:`Oro\\Bundle\\DashboardBundle\\Controller\\DashboardController` and simply renders a
+the ``Oro\Bundle\DashboardBundle\Controller\DashboardController`` and simply renders a
 template whose name is inferred from route parameters (the name of the template that the controller
 is looking for follows the ``{{bundle}}:Dashboard:{{name}}`` pattern where ``{{bundle}}`` and
 ``{{name}}`` refer to the route parameters of the dashboard config).

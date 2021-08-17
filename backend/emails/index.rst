@@ -15,7 +15,7 @@ Email Templates
 ---------------
 
 Communicating with customers is an important part of every business. In OroPlatform, an email
-address is represented by the :class:`Oro\\Bundle\\EmailBundle\\Entity\\EmailAddress` class.
+address is represented by the ``Oro\Bundle\EmailBundle\Entity\EmailAddress`` class.
 
 When creating emails, your may reuse the text that is frequently sent for
 a certain purpose. For this, they can create templates and reuse them as needed. Besides letting
@@ -88,7 +88,7 @@ Create an Email
 ~~~~~~~~~~~~~~~
 
 An email that is created and sent by OroPlatform is centered around the
-:class:`Oro\\Bundle\\EmailBundle\\Form\\Model\\Email` model class which reflects all the properties
+``Oro\Bundle\EmailBundle\Form\Model\Email`` model class which reflects all the properties
 of an email.
 
 There are two ways to create a new email:
@@ -222,7 +222,7 @@ contexts to customers, users, and so on):
         }
     }
 
-When calling the :method:`Oro\\Bundle\\EmailBundle\\Mailer\\Processor::process` the mailer
+When calling the ``Oro\Bundle\EmailBundle\Mailer\Processor::process`` the mailer
 processor performs the following steps:
 
 #. It creates a new ``\Swift_Message`` instance and populate it with the data from your ``Email``
@@ -249,7 +249,7 @@ database. To achieve this OroPlatform comes with the NotificationBundle. This bu
 an event listener that is executed whenever a Doctrine entity is created, updated or removed.
 
 To be notified by such an event, you have to create an
-:class:`Oro\\Bundle\\NotificationBundle\\Entity\\EmailNotification` that contains all the necessary
+``Oro\Bundle\NotificationBundle\Entity\EmailNotification`` that contains all the necessary
 information. The easiest way to register a new `EmailNotification` is to create data fixtures:
 
 .. code-block:: php
@@ -319,7 +319,7 @@ Implement the Email Entity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each entity owning an email address must have its own email entity that implements the
-:class:`Oro\\Bundle\\EmailBundle\\Entity\\EmailInterface`. This interface defines four methods:
+``Oro\Bundle\EmailBundle\Entity\EmailInterface``. This interface defines four methods:
 
 ``getEmailField()``
     Returns the name of the database table column that holds the actual email address.
@@ -392,7 +392,7 @@ An Email Owner
 ~~~~~~~~~~~~~~
 
 The entity that is the owner of the email address has to implement the
-:class:`Oro\\Bundle\\EmailBundle\\Entity\\EmailOwnerInterface`:
+``Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface``:
 
 ``getClass()``
     The fully qualified class name of the entity.
@@ -487,7 +487,7 @@ Implement ``EmailOwnerProviderInterface``
 
 In order to make the application able to find the owner of a certain email address, you have to
 create a provider that implements the
-:class:`Oro\\Bundle\\EmailBundle\\Entity\\Provider\\EmailOwnerProviderInterface`. This interface
+``Oro\Bundle\EmailBundle\Entity\Provider\EmailOwnerProviderInterface``. This interface
 contains two methods:
 
 ``getEmailOwnerClass()``

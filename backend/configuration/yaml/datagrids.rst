@@ -90,7 +90,7 @@ decides whether or not an action is visible for an entry:
             action_configuration: ['@acme_demo.datagrid_action_config', getActionPermissions]
 
 The configured service method receives an instance of the
-:class:`Oro\\Bundle\\DataGridBundle\\Datasource\\ResultRecordInterface` to access the value of the
+``Oro\Bundle\DataGridBundle\Datasource\ResultRecordInterface`` to access the value of the
 current datagrid row and must return an array in which each key refers to an action and the boolean
 value indicates whether or not the action will be shown.
 
@@ -218,7 +218,7 @@ configuration for the default value.
 .. tip::
 
     When filtering datetime columns, you can use some special placeholders that are defined in the
-    :class:`Oro\\Bundle\\FilterBundle\\Provider\\DateModifierInterface` (the constants prefixed
+    ``Oro\Bundle\FilterBundle\Provider\DateModifierInterface`` (the constants prefixed
     with ``VAR_``) to work with dynamic default values.
 
 options
