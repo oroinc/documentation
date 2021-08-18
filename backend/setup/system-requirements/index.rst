@@ -34,7 +34,8 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | Web server configuration recommendations are well |
 |                   | described in |Symfony web server documentation|   |
 +-------------------+---------------------------------------------------+
-| *PHP*             | * |PHP| >=7.4.14 and < 8.0                        |
+| *PHP*             | * |PHP| for **v4.2.0 - v4.2.3** >=7.4.14 and < 8.0|
+|                   | * |PHP| for **4.2.4+** >=7.4.14                   |
 |                   | * PHP CLI, the same version as for the web server |
 +-------------------+---------------------------------------------------+
 | *PHP Settings*    | Few updates to default PHP configuration settings |
