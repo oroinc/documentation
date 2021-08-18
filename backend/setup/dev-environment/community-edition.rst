@@ -58,15 +58,15 @@ Next, install MySQL 8.0 using the following command:
 Install PHP
 ^^^^^^^^^^^
 
-As you need to install PHP 7.4 instead of CentOS 7 native PHP 5.6 version, get the PHP 7.4 packages from the REMI repository:
+As you need to install PHP 8.0 instead of CentOS 7 native PHP 5.6 version, get the PHP 8.0 packages from the REMI repository:
 
 .. code-block:: bash
 
-   wget http://rpms.remirepo.net/enterprise/remi-release-7.rpm && rpm -Uvh remi-release-7.rpm
+   wget http://rpms.remirepo.net/enterprise/remi-release-8.rpm && rpm -Uvh remi-release-8.rpm
    yum-config-manager --enable remi-php74
    yum update -y
 
-Next, install PHP 7.4 and the required dependencies using the following command:
+Next, install PHP 8.0 and the required dependencies using the following command:
 
 .. code-block:: bash
 

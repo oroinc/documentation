@@ -25,7 +25,7 @@ To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.
 
 * Extra Packages for Enterprise Linux (EPEL) repository by |Red Hat|
 * Oro Enterprise Linux Packages (OELP) repository by Oro engineers
-* Remi's PHP 7.4 RPM repository for Enterprise Linux 7
+* Remi's PHP 8.0 RPM repository for Enterprise Linux 7
 
 .. note:: The necessary installation packages are distributed using the |software collections|.
 
@@ -35,7 +35,7 @@ Add required repositories to your `yum` package manager and install the |softwar
 
    yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-7.rpm yum-utils scl-utils centos-release-scl centos-release-scl-rh
    yum-config-manager --add-repo http://koji.oro.cloud/rpms/oro-el7.repo
-   yum-config-manager --enable remi-php74
+   yum-config-manager --enable remi-php80
    yum update -y
 
 Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, Supervisor, and Wget
@@ -51,7 +51,7 @@ Install most of the required Oro application environment components using the fo
 Install PHP
 ^^^^^^^^^^^
 
-Install PHP 7.4 and the required dependencies using the following command:
+Install PHP 8.0 and the required dependencies using the following command:
 
 .. code-block:: bash
 
