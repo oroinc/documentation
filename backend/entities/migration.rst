@@ -215,7 +215,7 @@ Here is a list of available extensions:
 
 * |CommentExtension| - Adds comments association to the entity. More information is available in |Enable Comment Association with New Activity Entity|.
 
-* |AuditFieldExtension| - Add a possibility for developers to extend data types for DataAudit. More information is available in the |Add New Auditable Types| topic.
+* |AuditFieldExtension| - Add a possibility for developers to extend data types for DataAudit. More information is available in the :ref:`Add New Auditable Types <bundle-docs-platform--data-audit--add-new-types>` topic.
 
 * |ChangeTypeExtension| - Allows to change the type of entity primary column type.
 

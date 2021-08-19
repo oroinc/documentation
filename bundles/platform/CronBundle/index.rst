@@ -10,7 +10,7 @@ OroCronBundle introduces a command used in the crontab configuration and in the 
 Related Documentation
 ---------------------
 
-* |Use Cron Command|
+* :ref:`Cron Developer Guide <dev-guide-system-cron-jobs>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
