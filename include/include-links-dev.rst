@@ -2070,10 +2070,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ChartBundle/Resources/doc/reference/chart-configuration.md" target="_blank">Configure Charts</a>
 
-.. |Use Cron Command| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/CronBundle#usage" target="_blank">Use Cron Command</a>
-
 .. |Configure Datagrid to Enable Multi Currency Inline Edit| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/CurrencyBundle/Resources/doc/editor/multi-currency-editor-view.md" target="_blank">Configure Datagrid to Enable Multi Currency Inline Edit</a>
@@ -2101,18 +2097,6 @@ Links (Dev)
 .. |Configure Grid Widget| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DashboardBundle#grid-widget-configuration" target="_blank">Configure Grid Widget</a>
-
-.. |Entity Configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DataAuditBundle#entity-configuration" target="_blank">Entity Configuration</a>
-
-.. |Additional Fields| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DataAuditBundle#additional-fields" target="_blank">Additional Fields</a>
-
-.. |Add New Auditable Types| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DataAuditBundle/Resources/doc/audit.md" target="_blank">Add New Auditable Types</a>
 
 .. |Use OroDistributionBundle| raw:: html
 
@@ -5714,7 +5698,7 @@ Links (Dev)
 
 .. |oroform/js/expression-editor-util| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/expression-editor-util.js" target="_blank">oroform/js/expression-editor-util</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/FormBundle/Resources/public/js/expression-editor-util.js" target="_blank">oroform/js/expression-editor-util</a>
 
 .. |oroform/js/app/views/expression-editor-view| raw:: html
 
@@ -5726,7 +5710,7 @@ Links (Dev)
 
 .. |in the app.yml file| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/config/oro/app.yml" target="_blank">in the app.yml file</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/FormBundle/Resources/config/oro/app.yml" target="_blank">in the app.yml file</a>
 
 .. |jQuery Validation Plugin| raw:: html
 
@@ -5738,11 +5722,11 @@ Links (Dev)
 
 .. |available keys here| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/tools/frontend-type-map.js" target="_blank">available keys here</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/FormBundle/Resources/public/js/tools/frontend-type-map.js" target="_blank">available keys here</a>
 
 .. |orouser/js/tools/acl-users-search-api-accessor| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/UserBundle/Resources/doc/client-side/acl-users-search-api-accessor.md" target="_blank">orouser/js/tools/acl-users-search-api-accessor</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/UserBundle/Resources/doc/client-side/acl-users-search-api-accessor.md" target="_blank">orouser/js/tools/acl-users-search-api-accessor</a>
 
 .. |datepicker documentation| raw:: html
 
@@ -5782,11 +5766,11 @@ Links (Dev)
 
 .. |Taggable interface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TagBundle/Entity/Taggable.php" target="_blank">Taggable interface</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/TagBundle/Entity/Taggable.php" target="_blank">Taggable interface</a>
 
 .. |ConsoleCommandSubscriber| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LoggerBundle/EventSubscriber/ConsoleCommandSubscriber.php" target="_blank">ConsoleCommandSubscriber</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/LoggerBundle/EventSubscriber/ConsoleCommandSubscriber.php" target="_blank">ConsoleCommandSubscriber</a>
 
 .. |NumberFormatter| raw:: html
 
@@ -5814,5 +5798,5 @@ Links (Dev)
 
 .. |orosync/js/content-manager| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/Resources/public/js/content-manager.js" target="_blank">orosync/js/content-manager</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/SyncBundle/Resources/public/js/content-manager.js" target="_blank">orosync/js/content-manager</a>
 
