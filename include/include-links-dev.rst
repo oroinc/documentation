@@ -4479,6 +4479,14 @@ Links (Dev)
 
    <a href="https://github.com/liip/LiipImagineBundle" target="_blank">LiipImagineBundle</a>
 
+.. |JpegOptimPostProcessor| raw:: html
+
+   <a href="https://github.com/liip/LiipImagineBundle/blob/afa4193c7fde027426ebb19e73878cd026438bbd/Resources/doc/post-processors/jpeg-optim.rst" target="_blank">LiipImagineBundle: JpegOptimPostProcessor</a>
+
+.. |PngquantPostProcessor| raw:: html
+
+   <a href="https://github.com/liip/LiipImagineBundle/blob/afa4193c7fde027426ebb19e73878cd026438bbd/Resources/doc/post-processors/png-quant.rst" target="_blank">LiipImagineBundle: PngquantPostProcessor</a>
+
 .. |ScopeCriteriaProviderInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ScopeBundle/Manager/ScopeCriteriaProviderInterface.php" target="_blank">ScopeCriteriaProviderInterface</a>

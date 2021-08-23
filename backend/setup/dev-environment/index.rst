@@ -36,31 +36,30 @@ Prepare Development Tools
 
 #. Configure PHPStorm:
 
-   #. Install and configure |Symfony plugin| and |Oro plugin| by following the |official PHPStorm plugin management instructions|.
+   * Install and configure |Symfony plugin| and |Oro plugin| by following the |official PHPStorm plugin management instructions|.
 
-   #. Exclude the following directories in PhpStorm (to avoid class duplication and indexation overhead) by right-clicking on the directory and selecting **Mark Directory As > Excluded**:
+   * Exclude the following directories in PhpStorm (to avoid class duplication and indexation overhead) by right-clicking on the directory and selecting **Mark Directory As > Excluded**:
 
-      * var/cache
-      * public/bundles
+     * var/cache
+     * public/bundles
 
-   #. Enable code quality checks in PHPStorm:
+   * Enable code quality checks in PHPStorm:
 
-      * |Enable PHP Code Sniffer| (use PSR2 or Symfony2 code standards)
+     * |Enable PHP Code Sniffer| (use PSR2 or Symfony2 code standards)
+     * |Enable PHP Mess Detector|, making sure that:
 
-      * |Enable PHP Mess Detector|, making sure that:
+       * **Cyclomatic complexity** DOES NOT exceed the limit of **15**.
+       * The limit of the **NPath complexity** is set to **200** (the default PHPMD limit).
 
-         * **Cyclomatic complexity** DOES NOT exceed the limit of **15**.
-         * The limit of the **NPath complexity** is set to **200** (the default PHPMD limit).
+   * Configure xDebug
 
-   #. Configure xDebug
+     * Integrate a debugging tool into your IDE that provides a range of features to improve the PHP development experience. See |how to set up integration between PhpStorm and xDebug| for more information.
 
-      * Integrate a debugging tool into your IDE to be able to set breakpoints in a code, see watches and go over a stack trace in real time. See |how to set up integration between PhpStorm and xDebug|.
+   * Configure PhpUnit
 
-   #. Configure PhpUnit
+     * If you write tests for your code, integrate |PhpUnit with PhpStorm| and use it |for actual testing|.
 
-      * If you write tests for your code, integrate |PhpUnit with PhpStorm| and use it |for actual testing|.
-
-      .. note:: You can also set the default configuration for the PhpUnit test runner (path to phpunit.xml, the working directory, etc.). Then you can just right-click a test file and select **Run <file>** to run all tests from the file.
+     .. note:: You can also set the default configuration for the PhpUnit test runner (path to phpunit.xml, the working directory, etc.). Then you can right-click a test file and select **Run <file>** to run all tests from the file.
 
 .. _dev-guide-development-practice-setup-dev-env-create-app:
 
@@ -73,9 +72,9 @@ Create a Custom Application
 
    .. note:: Pay attention to the |Keep your fork synced| section of this Github guide. You have to set the original Oro application repository as the remote upstream in order to be able to pull improvements and fixes from the original Oro application.
 
-4. (optional) Change the **README.md** file in your repo to describe your application.
+2. (optional) Change the **README.md** file in your repo to describe your application.
 
-5. (optional) Change the package name of your application in the **composer.json** file.
+3. (optional) Change the package name of your application in the **composer.json** file.
 
 .. important:: Please be aware that in accordance with the :ref:`Oro PHP Application structure <architecture-oro-php-application-structure>`, you have to use only the following folders and files to place your code in your custom application:
 
@@ -133,6 +132,7 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    Docker & Symfony Server <docker-and-symfony/index>
    Web Server Configuration <web-server-config>
    Environment Types <environment-type-based-configuration>
+   parameters-yml
    Healthcheck and Data Monitoring <monitoring>
 
 
