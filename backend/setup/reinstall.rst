@@ -1,7 +1,7 @@
 .. index::
     single: Patch
 
-.. _reinstall:
+.. _reinstall-application:
 
 Reinstall
 =========
