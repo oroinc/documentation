@@ -250,7 +250,7 @@ backend/bundles/platform/MigrationBundle /bundles/platform/MigrationBundle/
 backend/bundles/platform/NavigationBundle /bundles/platform/NavigationBundle/
 backend/bundles/platform/NoteBundle /bundles/platform/NoteBundle/
 backend/bundles/platform/NotificationBundle /bundles/platform/NotificationBundle/
-backend/bundles/platform/NotificationBundle/notification-event /bundles/platform/NotificationBundle/notification-event
+backend/bundles/platform/NotificationBundle/notification-event /bundles/platform/NotificationBundle/
 backend/bundles/platform/OAuth2ServerBundle /bundles/platform/OAuth2ServerBundle/
 backend/bundles/platform/OrganizationBundle /bundles/platform/OrganizationBundle/
 backend/bundles/platform/PlatformBundle /bundles/platform/PlatformBundle/
@@ -305,3 +305,4 @@ backend/bundles/platform/UIBundle/twig-placeholders /bundles/platform/UIBundle/t
 backend/bundles/platform/UIBundle/widgets /bundles/platform/UIBundle/widgets
 backend/bundles/platform/WindowsBundle /bundles/platform/WindowsBundle/
 backend/bundles/platform/WorkflowBundle /bundles/platform/WorkflowBundle/
+bundles/platform/NotificationBundle/notification-event /bundles/platform/NotificationBundle
