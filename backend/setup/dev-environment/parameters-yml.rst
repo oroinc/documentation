@@ -2,124 +2,166 @@
 
 .. _installation--parameters-yml-description:
 
-Infrastructure-related Oro Application Configuration
-====================================================
+Infrastructure-Related Configuration Parameters
+===============================================
 
 Infrastructure-related configuration parameters are stored in the *config/parameters.yml* file and grouped in the following way:
 
 * The ``database_`` parameters are used to connect to the database.
 * The ``mailer_`` parameters define settings used to deliver emails sent by the application.
 * The ``websocket_`` parameters define settings for the web UI.
+* The ``search_`` parameters are used to connect to the search engine.
+* The ``website_search_engine_index_prefix`` index prefix for website search engine.
+* The ``web_backend_prefix`` URL prefix for the back-office.
 * The ``session_handler`` value specifies the PHP |session handler| to be used.
 * The ``secret`` value is used to generate |CSRF tokens|.
+* The ``installed`` parameter identifies the project ready state:
+
+   * ``null`` --- The project is not installed or requires :ref:`reinstallation <reinstall-application>`.
+   * ``2021-07-08T17:30:36+03:00`` --- The project is installed.
+
 * The ``assets_version`` parameter is used to bust the cache on assets by globally adding a query parameter to all rendered asset paths.
 * The ``assets_version_strategy`` value defines the strategy used to generate the global assets version. The available values are:
 
-     * ``null`` --- The asset's version stays unchanged.
+   * ``null`` --- The asset's version stays unchanged.
+   * ``time_hash`` --- A hash of the current time.
+   * ``incremental`` --- The next asset's version is the previous version incremented by one (e.g. ``ver1`` -> ``ver2`` or ``1`` -> ``2``).
 
-     * ``time_hash`` --- A hash of the current time.
-
-     * ``incremental`` --- The next asset's version is the previous version incremented by one (e.g. ``ver1`` -> ``ver2`` or ``1`` -> ``2``).
-
+* The ``enterprise_licence`` value defines the project enterprise licence.
+* The ``message_`` parameters are used to connect to the message queue transport.
+* The ``enable_price_sharding`` value enables :ref:`price list sharding <admin-price-list-sharding>`.
+* The ``deployment_type`` value defines the :ref:`type of the environment <environment-type-based-configuration>` where the project was deployed.
+* The ``liip_imagine.jpegoptim.binary`` path to the |JpegOptimPostProcessor| library.
+* The ``liip_imagine.pngquant.binary`` path to the |PngquantPostProcessor| library.
 
 .. _book-installation-github-clone-configuration-params--default:
 
 Default Configuration Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Default configuration options for the Oro application are provided in brackets below:
+Default configuration options for the Oro application are defined in the ``config/parameters.yml.dist`` file. Some options have inline values, others refer to environment variables, therefore they can be set and changed in runtime without application cache rebuild. Default values for environment variables are provided at the end of the ``config/parameters.yml`` files, with the parameter names in a format ``env(ENVIRONMENT_VARIABLE_NAME)``.
 
-      .. code-block:: text
+.. code-block:: yaml
 
+   parameters:
+       database_driver:        pdo_mysql
+       database_host:          '%env(ORO_DB_HOST)%'
+       env(ORO_DB_HOST): 127.0.0.1
 
-            database_driver (pdo_mysql):
-            database_host (127.0.0.1):
-            database_port (null):
-            database_name (oro_crm):
-            database_user (root):
-            database_password (null):
-            database_server_version (null):
-            mailer_transport (smtp):
-            mailer_host (127.0.0.1):
-            mailer_port (null):
-            mailer_encryption (null):
-            mailer_user (null):
-            mailer_password (null):
-            websocket_bind_address (0.0.0.0):
-            websocket_bind_port (8080):
-            websocket_frontend_host ('*'):
-            websocket_frontend_port (8080):
-            websocket_backend_host ('*'):
-            websocket_backend_port (8080):
-            session_handler (session.handler.native_file):
-            secret (ThisTokenIsNotSoSecretChangeIt):
-            installed (null):
-            assets_version (null):
-            assets_version_strategy: time_hash
-
-The Sample of Configuration Parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sample Configuration Parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The sample contents of the **<installation directory>/config/parameters.yml** file for OroCommerce:
 
 .. code-block:: yaml
 
-       parameters:
-          database_driver:         pdo_mysql
-          database_host:           154.122.122.154
-          database_port:           3606
-          database_name:           orocommerce_database
-          database_user:           orocommerce_database_user
-          database_password:       orocommerce_database_password
-          database_server_version: '8.0' # The DB engine version
+   parameters:
+       database_driver:        pdo_mysql
+       database_host:          '%env(ORO_DB_HOST)%'
+       database_port:          '%env(ORO_DB_PORT)%'
+       database_name:          '%env(ORO_DB_NAME)%'
+       database_user:          '%env(ORO_DB_USER)%'
+       database_password:      '%env(ORO_DB_PASSWORD)%'
+       database_server_version: '%env(ORO_DB_VERSION)%'
+       database_driver_options: []
 
-          mailer_transport:       mail
-          mailer_host:            155.122.122.155
-          mailer_port:            22
-          mailer_encryption:      TLS
-          mailer_user:            orocommerce_mail_user
-          mailer_password:        orocommerce_mail_password
+       mailer_transport:       '%env(ORO_MAILER_DRIVER)%'
+       mailer_host:            '%env(ORO_MAILER_HOST)%'
+       mailer_port:            '%env(ORO_MAILER_PORT)%'
+       mailer_encryption:      '%env(ORO_MAILER_ENCRYPTION)%'
+       mailer_user:            '%env(ORO_MAILER_USER)%'
+       mailer_password:        '%env(ORO_MAILER_PASSWORD)%'
 
-          # WebSocket server config
-          websocket_bind_address:  "0.0.0.0"  # The host IP the socket server will bind to
-          websocket_bind_port:     8080       # The port the socket server will listen on
-          websocket_frontend_host: "*"        # Websocket host the browser will connect to
-          websocket_frontend_port: 8080       # Websocket port the browser will connect to
-          websocket_backend_host:  "*"        # Websocket host the application server will connect to
-          websocket_backend_port:  8080       # Websocket port the application server will connect to
+       # WebSocket server config
+       websocket_bind_address:                "0.0.0.0"  # The host IP the socket server will bind to
+       websocket_bind_port:                   8080       # The port the socket server will listen on
+       websocket_frontend_host:               "*"        # Websocket host the browser will connect to
+       websocket_frontend_port:               8080       # Websocket port the browser will connect to
+       websocket_frontend_path:               ""         # Websocket url path the browser will connect to (for example "/websocket" or "/ws")
+       websocket_backend_host:                "*"        # Websocket host the application server will connect to
+       websocket_backend_port:                8080       # Websocket port the application server will connect to
+       websocket_backend_path:                ""         # Websocket url path the application server will connect to (for example "/websocket" or "/ws")
+       websocket_backend_transport:           tcp        # Socket transport (for example "tcp", "ssl" or "tls")
+       websocket_backend_ssl_context_options: {}         # Socket context options, usually needed when using secure transport
+       # search engine configuration
+       search_engine_name:                 orm
+       search_engine_host:                 '%env(ORO_SEARCH_HOST)%'
+       search_engine_port:                 '%env(ORO_SEARCH_PORT)%'
+       search_engine_index_prefix:         '%env(ORO_SEARCH_INDEX_PREFIX)%'
+       search_engine_username:             '%env(ORO_SEARCH_USER)%'
+       search_engine_password:             '%env(ORO_SEARCH_PASSWORD)%'
+       search_engine_ssl_verification:     '%env(ORO_SEARCH_ENGINE_SSL_VERIFICATION)%'
+       search_engine_ssl_cert:             '%env(ORO_SEARCH_ENGINE_SSL_CERT)%'
+       search_engine_ssl_cert_password:    '%env(ORO_SEARCH_ENGINE_SSL_CERT_PASSWORD)%'
+       search_engine_ssl_key:              '%env(ORO_SEARCH_ENGINE_SSL_KEY)%'
+       search_engine_ssl_key_password:     '%env(ORO_SEARCH_ENGINE_SSL_KEY_PASSWORD)%'
 
-          # search engine configuration
-          search_engine_name:       orm
-          search_engine_host:       156.122.122.156
-          search_engine_port:       ~
-          search_engine_index_name: oro_search
-          search_engine_username:   orocommerce_search_user
-          search_engine_password:   orocommerce_search_password
-          search_engine_ssl_verification: ~
-          search_engine_ssl_cert: ~
-          search_engine_ssl_cert_password: ~
-          search_engine_ssl_key: ~
-          search_engine_ssl_key_password: ~
+       # website search engine configuration
+       website_search_engine_index_prefix: '%env(ORO_SEARCH_WEBSITE_INDEX_PREFIX)%'
 
-          # website search engine configuration
-          website_search_engine_index_name: oro_website_search
+       # Used to hide backend under specified prefix, should be started with "/", for instance "/admin"
+       web_backend_prefix:         '/admin'
 
-          # Used to hide backend under specified prefix, should start with "/" and should not finish with "/", for instance "/admin"
-          web_backend_prefix:         '/admin'
+       session_handler:        session.handler.native_file
 
-          session_handler:        session.handler.native_file
+       secret:                 '%env(ORO_SECRET)%'
+       installed:              ~
+       assets_version:         ~
+       assets_version_strategy: time_hash # A strategy should be used to generate the global assets version, can be:
+                                          # null        - the assets version stays unchanged
+                                          # time_hash   - a hash of the current time
+                                          # incremental - the next assets version is the previous version is incremented by one (e.g. 'ver1' -> 'ver2' or '1' -> '2')
+       enterprise_licence: ~
+       message_queue_transport: 'dbal'
+       message_queue_transport_config: ~
+       enable_price_sharding: '%env(bool:ORO_ENABLE_PRICE_SHARDING)%'
 
-          secret:                 ThisTokenIsNotSoSecretChangeIt
-          installed:              ~
-          assets_version:         ~
-          assets_version_strategy: time_hash # A strategy should be used to generate the global assets version, can be:
-                 # null        - the assets version stays unchanged
-                 # time_hash   - a hash of the current time
-                # incremental - the next assets version is the previous version is incremented by one (e.g. 'ver1' -> 'ver2' or '1' -> '2')
-          enterprise_licence: ~
-          message_queue_transport: 'dbal'
-          message_queue_transport_config: ~
+       deployment_type: ~
 
+       # Post processors binary
+       liip_imagine.jpegoptim.binary: null
+       liip_imagine.pngquant.binary: null
+
+       # Fallback values (used if environmental variables are not set)
+       env(ORO_DB_HOST): 127.0.0.1
+       env(ORO_DB_PORT): null
+       env(ORO_DB_NAME): b2b_crm_ee_dev
+       env(ORO_DB_USER): root
+       env(ORO_DB_PASSWORD): null
+       env(ORO_DB_VERSION): null
+
+       env(ORO_MAILER_DRIVER): sendmail
+       env(ORO_MAILER_HOST): 127.0.0.1
+       env(ORO_MAILER_PORT): null
+       env(ORO_MAILER_ENCRYPTION): null
+       env(ORO_MAILER_USER): null
+       env(ORO_MAILER_PASSWORD): null
+
+       env(ORO_SEARCH_HOST): 127.0.0.1
+       env(ORO_SEARCH_PORT): null
+       env(ORO_SEARCH_INDEX_PREFIX): oro_search
+       env(ORO_SEARCH_USER): null
+       env(ORO_SEARCH_PASSWORD): null
+       env(ORO_SEARCH_ENGINE_SSL_VERIFICATION): null
+       env(ORO_SEARCH_ENGINE_SSL_CERT): null
+       env(ORO_SEARCH_ENGINE_SSL_CERT_PASSWORD): null
+       env(ORO_SEARCH_ENGINE_SSL_KEY): null
+       env(ORO_SEARCH_ENGINE_SSL_KEY_PASSWORD): null
+       env(ORO_SEARCH_WEBSITE_INDEX_PREFIX): oro_website_search
+
+       env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
+       env(ORO_ENABLE_PRICE_SHARDING): '0'
+
+Environment Variables
+^^^^^^^^^^^^^^^^^^^^^
+
+An environment variable is a variable whose value is set outside the application, typically through a functionality built into the operating system. You can find the list of all the infrastructure-related environment variables available in the application in the config/parameters.yml file.
+
+In the above parameters.yml file example, the ``database_driver`` parameter value is provided directly in the YAML file and cannot be changed in runtime without the application cache rebuild, while the ``database_host`` parameter can be set in runtime by the environment variable named ``ORO_DB_HOST``.
+
+The default value for the ORO_DB_HOST environment variable is provided at the end of the file and is set to ``127.0.0.1``. It is used when the environment variable ``ORO_DB_HOST`` is not provided.
+
+.. warning:: Environment variables are always string and are not cast automatically to integer, null, or other types. You should never pass an empty environment variable, like 'ORO_DB_HOST=' or 'ORO_DB_HOST=NULL'. Instead, it should never be available (never be set).
 
 
 .. include:: /include/include-links-dev.rst
