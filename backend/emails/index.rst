@@ -274,9 +274,7 @@ information. The easiest way to register a new `EmailNotification` is to create 
             // the event to be notified of, pre-defined event names are
             // oro.notification.event.entity_post_update, oro.notification.event.entity_post_remove
             // and oro.notification.event.entity_post_persist
-            $eventRepository = $manager->getRepository('Oro\Bundle\NotificationBundle\Entity\Event');
-            $event = $eventRepository->findOneByName('oro.notification.event.entity_post_persist');
-            $notification->setEvent($event);
+            $notification->setEventName('oro.notification.event.entity_post_persist');
 
             // recipients must be an instance of Oro\Bundle\NotificationBundle\Entity\RecipientList
             // which represents a collection of recipients, each recipient can either be an email
