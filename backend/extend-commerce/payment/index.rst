@@ -98,7 +98,7 @@ Set up Services with DependencyInjection
 
 To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/CollectOnDeliveryExtension.php with the following content:
 
-.. oro_integrity_check:: 3c198ccc9101e347c55f4a2b7929dc285d21eb5c
+.. oro_integrity_check:: e2f07c0d002567a930002e7af0d23942297d311d
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/DependencyInjection/ACMECollectOnDeliveryExtension.php
       :language: php

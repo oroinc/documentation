@@ -39,14 +39,13 @@ To define your own configuration settings in a bundle, use the
 
     class Configuration implements ConfigurationInterface
     {
-        public function getConfigTreeBuilder()
+        public function getConfigTreeBuilder(): TreeBuilder
         {
-            $treeBuilder = new TreeBuilder();
-            $rootNode = $treeBuilder->root('acme_demo');
+            $treeBuilder = new TreeBuilder('acme_demo');
 
             // provide your regular Symfony configuration here
 
-            SettingsBuilder::append($rootNode, [
+            SettingsBuilder::append($treeBuilder->getRootNode(), [
                 'foo' => [
                     'value' => true,
                     'type' => 'boolean',

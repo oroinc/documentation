@@ -90,10 +90,9 @@ To implement 3rd approach for your configuration, you need to take the following
         /**
          * {@inheritdoc}
          */
-        public function getConfigTreeBuilder()
+        public function getConfigTreeBuilder(): TreeBuilder
         {
-            $treeBuilder = new TreeBuilder();
-            $rootNode = $treeBuilder->root('my_config');
+            $treeBuilder = new TreeBuilder('my_config');
 
             // build the configuration tree here
 
