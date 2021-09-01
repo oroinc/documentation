@@ -10,12 +10,11 @@ OroQueryDesignerBundle allows developers to define and configure the UI for appl
 Related Documentation
 ---------------------
 
-* |Configure Query Designer|
-* |Configure Filters|
-* |Modify an Existing Filter|
-* |Grouping Configuration|
-* |Configure Aggregating Functions|
-* |Condition Builder Component|
+.. toctree::
+   :maxdepth: 1
+
+   config
+   condition-builder
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

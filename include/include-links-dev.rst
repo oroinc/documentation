@@ -339,30 +339,6 @@ Links (Dev)
 
    <a href="http://supervisord.org/" target="_blank">Supervisord</a>
 
-.. |Configure Query Designer| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/backend/config.md#query-designer-configuration" target="_blank">Configure Query Designer</a>
-
-.. |Configure Filters| raw:: html
-
-   <a href="http://supervisord.org/" target="_blank">Configure Filters</a>
-
-.. |Modify an Existing Filter| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/backend/config.md#how-modify-existing-filter-from-your-bundle" target="_blank">Modify an Existing Filter</a>
-
-.. |Grouping Configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/backend/config.md#grouping-configuration" target="_blank">Grouping Configuration</a>
-
-.. |Configure Aggregating Functions| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/backend/config.md#aggregating-functions-configuration" target="_blank">Configure Aggregating Functions</a>
-
-.. |Condition Builder Component| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/frontend/condition-builder.md" target="_blank">Condition Builder Component</a>
-
 .. |SensioFrameworkExtraBundle documentation| raw:: html
 
    <a href="https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/index.html" target="_blank">SensioFrameworkExtraBundle documentation</a>
@@ -5804,3 +5780,14 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/Provider/AdditionalEmailAssociationProviderInterface.php" target="_blank">AdditionalEmailAssociationProviderInterface</a>
 
+.. |Configuration.php file| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/QueryDesigner/Configuration.php" target="_blank">Configuration.php file</a>
+
+.. |configuration of default filters| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/config/oro/query_designer.yml" target="_blank">configuration of default filters</a>
+
+.. |By default| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/config/oro/query_designer.yml" target="_blank">By default</a>

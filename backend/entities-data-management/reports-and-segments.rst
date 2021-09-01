@@ -245,7 +245,7 @@ Frontend Implementation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 A frontend part of the segment management is based on *condition builder* that comes from *OroQueryDesignerBundle*.
-See the |Condition Builder Component| topic for more details. A **segmentation filter** roots from *AbstractFilter* of *OroFilterBundle* and provides the ajax-based autocomplete field, which, in turn, is based on the *JQuery.Select2* plugin.
+See the :ref:`Condition Builder Component <bundle-docs-platform-query-designer-bundle-condition-builder-component>` topic for more details. A **segmentation filter** roots from *AbstractFilter* of *OroFilterBundle* and provides the ajax-based autocomplete field, which, in turn, is based on the *JQuery.Select2* plugin.
 
 .. _backend-segments-backend-implementation:
 
