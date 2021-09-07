@@ -1,5 +1,5 @@
-Upgrade Website Index to Elasticsearch 7.\*
-===========================================
+Upgrade Website Index to Elasticsearch >=7.7, <8.0
+==================================================
 
 You have two options to perform the upgrade: either via full reindexation or via search index dump.
 
