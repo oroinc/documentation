@@ -107,7 +107,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *Database*       | * |PostgreSQL| / |EnterpriseDB| 9.6                 |
 +------------------+-----------------------------------------------------+
-| *Search Index*   | * |Elasticsearch| 7.*                               |
+| *Search Index*   | * |Elasticsearch| >=7.7, <8.0                       |
 +------------------+-----------------------------------------------------+
 | *Job Queue*      | * |RabbitMQ| 3.7.21 and above with Erlang/OTP       |
 |                  |   version 21.3 and higher.                          |
