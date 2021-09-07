@@ -4391,9 +4391,9 @@ Links (Dev)
 
    <a href="http://mink.behat.org/en/latest/guides/drivers.html" target="_blank">Driver Feature Support</a>
 
-.. |WebDriver| raw:: html
+.. |ChromeDriver| raw:: html
 
-   <a href="https://sites.google.com/a/chromium.org/chromedriver/" target="_blank">WebDriver</a>
+   <a href="https://sites.google.com/chromium.org/driver/" target="_blank">ChromeDriver</a>
 
 .. |NodeElement| raw:: html
 
@@ -5791,3 +5791,11 @@ Links (Dev)
 .. |By default| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/config/oro/query_designer.yml" target="_blank">By default</a>
+
+.. |PHP 8.0| raw:: html
+
+   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP 8.0</a>
+
+.. |Composer| raw:: html
+
+   <a href="https://getcomposer.org/" target="_blank">Composer</a>
