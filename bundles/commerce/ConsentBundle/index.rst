@@ -16,12 +16,11 @@ Related Documentation
 * :ref:`Add the Customer Consents Field to a Form (Example) <bundle-docs-commerce-consent-bundle-consent-field>`
 * :ref:`Add the Agreements Step to a Custom Checkout Based on the Default Checkout Workflow (Example) <bundle-docs-commerce-consent-bundle-default-checkout>`
 * :ref:`Add the Agreements Section to a Custom Checkout Based on the Single Page Checkout Workflow (Example) <bundle-docs-commerce-consent-bundle-single-page-checkout>`
-* :ref:`Add a Cookie Banner to the Website <bundle-docs-commerce-consent-bundle-cookie-banner>`
+* :ref:`Add a Cookie Banner to the Website <bundle-docs-commerce-cookie-consent-bundle>`
 
 .. toctree::
    :hidden:
 
-   cookie-banner
    add-form-field
    default-checkout
    single-page-checkout

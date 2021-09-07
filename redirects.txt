@@ -306,3 +306,4 @@ backend/bundles/platform/UIBundle/widgets /bundles/platform/UIBundle/widgets
 backend/bundles/platform/WindowsBundle /bundles/platform/WindowsBundle/
 backend/bundles/platform/WorkflowBundle /bundles/platform/WorkflowBundle/
 bundles/platform/NotificationBundle/notification-event /bundles/platform/NotificationBundle
+bundles/commerce/ConsentBundle/cookie-banner /bundles/commerce/CookieConsentBundle

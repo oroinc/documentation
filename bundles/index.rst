@@ -53,17 +53,16 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
 
 .. csv-table::
 
-   "**C**", "**O**",  "**W**"
-   ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`", ":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`", ":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
-   ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`", "**P**", :ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`
-   ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`", ":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`", :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`
-   ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`", ":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`"
-   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`", "**S**"
-   "**F**", ":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
-   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", "**T**"
-   "**I**", ":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
-   ":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`"
-   ":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`"
+   "**C**", ":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`", "**T**"
+   ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`", "**O**", ":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
+   ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`", ":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`", "**W**"
+   ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`", "**P**", ":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+   ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`", ":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`", ":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
+   ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`", ":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`", ":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
+   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`", ":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`"
+   "**F**", ":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`"
+   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", "**S**"
+   "**I**", ":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
 
 
 .. toctree::
@@ -147,6 +146,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    InventoryBundle <commerce/InventoryBundle/index>
    OrderBundle <commerce/OrderBundle/index>
    PayPalBundle <commerce/PayPalBundle/index>
+   PromotionBundle <commerce/PromotionBundle/index>
    PricingBundle <commerce/PricingBundle/index>
    ProductBundle <commerce/ProductBundle/index>
    SEOBundle <commerce/SEOBundle/index>
