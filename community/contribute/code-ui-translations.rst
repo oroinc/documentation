@@ -88,7 +88,7 @@ Update Translation in Oro Application
 Contact Oro Translation Team
 ----------------------------
 
-.. include:: /community/issues.rst
+.. include:: /community/report-issues/translation.rst
    :start-after: begin_report_translation_issue
    :end-before: finish_report_translation_issue
 

@@ -5799,3 +5799,7 @@ Links (Dev)
 .. |Composer| raw:: html
 
    <a href="https://getcomposer.org/" target="_blank">Composer</a>
+
+.. |Bug Bounty| raw:: html
+
+   <a href="https://oroinc.com/bug-bounty/" target="_blank">Bug Bounty</a>
