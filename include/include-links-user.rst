@@ -855,4 +855,7 @@ Links (User)
 
    <a href="https://academy.oroinc.com/course/content-management/" target="_blank">Content Management Online Course</a>
 
+.. |Twitter| raw:: html
+
+   <a href="https://twitter.com/OroDocs" target="_blank">Twitter</a>
 

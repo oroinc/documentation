@@ -4550,7 +4550,7 @@ Links (Dev)
 
 .. |Workflow Entities| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/workflow-entities.md" target="_blank">Workflow Entities</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/WorkflowBundle/Resources/doc/workflow-entities.md" target="_blank">Workflow Entities</a>
 
 .. |CheckoutLineItems| raw:: html
 
@@ -5796,3 +5796,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/QueryDesignerBundle/Resources/config/oro/query_designer.yml" target="_blank">By default</a>
 
+.. |Composer| raw:: html
+
+   <a href="https://getcomposer.org/" target="_blank">Composer</a>
+
+.. |Bug Bounty| raw:: html
+
+   <a href="https://oroinc.com/bug-bounty/" target="_blank">Bug Bounty</a>

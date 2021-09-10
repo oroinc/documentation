@@ -128,21 +128,21 @@ We would love you to contribute to our source code and documentation, and help u
     </ul>
 
 
-Please sign the :ref:`Contributor License Agreement <contributing--cla>` (CLA) before suggesting changes to the source code or documentation.
+Please read and sign the :ref:`Contributor License Agreement <contributing--cla>` (CLA) before suggesting changes to the source code or documentation.
 
 
 Report Issues
 -------------
 
-If you encounter any issues with your Oro application or noticed inaccuracies in our documentation, please inform us about them.
+If you encounter any issues with your Oro application or spot inaccuracies in our documentation, please inform us about them.
 
 **We recognize how important it is to help protect your privacy and security. Please refer to this topic to learn how to communicate security issues to us.**
 
 .. raw:: html
 
     <div class="btn-holder">
-        <a class="button btn-yellow reference internal" href="issues#doc-community-issue-report"><span class="std std-ref">Report an Issue</span></a>
-        <a class="button btn-orangedark reference internal" href="issues#reporting-security-issues"><span class="std std-ref">Report a Security Issue</span></a>
+        <a class="button btn-yellow reference internal" href="report-issues"><span class="std std-ref">Report an Issue</span></a>
+        <a class="button btn-orangedark reference internal" href="report-issues/security"><span class="std std-ref">Report a Security Issue</span></a>
     </div>
 
 Learn about Release Versions and Dates
@@ -157,7 +157,7 @@ Please refer to the :ref:`Understand Release Process <doc--community--release>` 
    :hidden:
 
    contribute/index
-   issues
+   report-issues/index
    release-process
 
 .. include:: /include/include-links-dev.rst
