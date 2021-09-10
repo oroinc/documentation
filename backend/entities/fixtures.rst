@@ -27,8 +27,6 @@ Example:
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\DemoBundle\Migrations\DataFixtures\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -62,8 +60,6 @@ To have the possibility to load this fixture again, it must return a version gre
 If the fixture needs to know the last loaded version, it must implement |LoadedFixtureVersionAwareInterface| and the `setLoadedVersion` method:
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\DemoBundle\Migrations\DataFixtures\ORM;
 
@@ -116,8 +112,6 @@ To prevent the fixture from loading again, this fixture must implement |RenamedF
 Example:
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\DemoBundle\Migrations\DataFixtures\ORM;
 

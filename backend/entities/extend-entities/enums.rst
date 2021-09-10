@@ -18,8 +18,6 @@ The following example shows how it can be done:
 
 .. code-block:: php
 
-    <?php
-
     namespace Oro\Bundle\SalesBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -63,8 +61,6 @@ To load a list of options, use data fixtures, for example:
 
 .. code-block:: php
 
-    <?php
-
     namespace Oro\Bundle\DemoDataBundle\Migrations\Data\Demo\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -80,9 +76,6 @@ To load a list of options, use data fixtures, for example:
             'Direct Mail' => false
         ];
 
-        /**
-         * @param ObjectManager $manager
-         */
         public function load(ObjectManager $manager)
         {
             $className = ExtendHelper::buildEnumValueClassName('lead_source');

@@ -44,9 +44,6 @@ To configure datasource, create a datagrid event listener and subscribe to the `
 
     class MyCustomListener
     {
-        /**
-        * @param BuildAfter $event
-        */
         public function onBuildAfter(BuildAfter $event)
         {
             $datagrid = $event->getDatagrid();

@@ -69,9 +69,8 @@ Replace Favicons
                Also, please, make sure to change the option id: favicon_theme_icon. This option will change background color for the top bar on andriod devices.
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/favicon.yml
 
-
-       // src/AppBundle/Resources/views/layouts/{your_theme_id}/favicon.yml
        layout:
            actions:
                - '@setOption':
@@ -164,17 +163,15 @@ Replace a Logo
 2. Specify the main favicon image in your :ref:`theme configuration file <dev-doc-frontend-layouts-theming-definition>`:
 
    .. code-block:: yaml
+      :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
-
-      // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
       logo: '@AppBundle/Resources/public/default/logo/logo.svg'
 
    or
 
    .. code-block:: yaml
+      :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
-
-      // src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
       logo: 'bundles/{your_theme_id}/images/logo/logo.svg'
 
 

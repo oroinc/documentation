@@ -446,7 +446,6 @@ The first thing you need to do is make sure that your entity is extendable and h
          * The real implementation of this method is auto generated.
          *
          * @param object $target Any configurable entity that can be associated with this activity
-         *
          * @return bool
          */
         public function hasActivityTarget($target)

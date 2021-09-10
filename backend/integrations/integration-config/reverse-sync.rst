@@ -10,7 +10,7 @@ that will make export.
 Export Job Definition
 ---------------------
 
-The definition of the export job is similar to import. It is an additional job for `Akeneo\\Bundle\\BatchBundle`
+The definition of the export job is similar to import. It is an additional job for `Oro\\Bundle\\BatchBundle`
 that should be added to `batch_job.yml`. A job might be declared with multiple steps, but a good practice is to use one connector for one entity.
 In order to read a entity from the database, there is additional reader placed in OroIntegrationBundle `oro_integration.reader.entity.by_id`,
 it takes the `EntityReaderById::ID_FILTER` option from the context object(`ContextInterface`) for the matching entity to read.

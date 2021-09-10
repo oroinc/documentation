@@ -156,9 +156,9 @@ When all the conditions apply, the field makes a good candidate for pre-emptive 
 
 When metadata caching is turned on than any changes to entity will be not seen by doctrine until cache refresh. Remember to clear metadata cache any time when metadata was changed.
 
-.. code-block:: text
+.. code-block:: bash
 
-   # bin/console doctrine:cache:clear-metadata
+   php bin/console doctrine:cache:clear-metadata
 
 Hydrations
 ~~~~~~~~~~

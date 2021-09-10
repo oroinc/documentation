@@ -33,3 +33,4 @@ All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-java
     back-office/index
     javascript/index
     rtl-support
+    Optimize Assets Build <optimize-build>

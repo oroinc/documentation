@@ -155,8 +155,6 @@ Example:
          ...
 
         /**
-         * @var string
-         *
          * @ORM\Column(type="string", length=255)
          * @ConfigField(defaultValues={"merge"={"enable"=true}})
          */

@@ -30,11 +30,6 @@ class UniqueTitleDraftValidator extends ConstraintValidator
      */
     private $translator;
 
-    /**
-     * @param ManagerRegistry $registry
-     * @param DraftableFilterManager $filterManager
-     * @param TranslatorInterface $translator
-     */
     public function __construct(
         ManagerRegistry $registry,
         DraftableFilterManager $filterManager,

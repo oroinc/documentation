@@ -17,7 +17,6 @@ trees.
 
 .. code-block:: php
 
-    <?php
     $config = $this->get('oro_config.user');
     $value  = $config->get('oro_anybundle.anysetting');
 
@@ -26,13 +25,12 @@ Manage Configuration Settings
 -----------------------------
 
 To define your own configuration settings in a bundle, use the
-:class:`Oro\\Bundle\\ConfigBundle\\DependencyInjection\\SettingsBuilder` in the
+``Oro\Bundle\ConfigBundle\DependencyInjection\SettingsBuilder`` in the
 ``Configuration`` class:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/DependencyInjection/Configuration.php
 
-
-    // src/Acme/DemoBundle/DependencyInjection/Configuration.php
     namespace Acme\DemoBundle\DependencyInjection;
 
     use Oro\Bundle\ConfigBundle\DependencyInjection\SettingsBuilder;
@@ -41,14 +39,13 @@ To define your own configuration settings in a bundle, use the
 
     class Configuration implements ConfigurationInterface
     {
-        public function getConfigTreeBuilder()
+        public function getConfigTreeBuilder(): TreeBuilder
         {
-            $treeBuilder = new TreeBuilder();
-            $rootNode = $treeBuilder->root('acme_demo');
+            $treeBuilder = new TreeBuilder('acme_demo');
 
             // provide your regular Symfony configuration here
 
-            SettingsBuilder::append($rootNode, [
+            SettingsBuilder::append($treeBuilder->getRootNode(), [
                 'foo' => [
                     'value' => true,
                     'type' => 'boolean',
@@ -176,8 +173,8 @@ To retrieve configuration values inside a controller, use the
 Use its ``get()`` method to retrieve the value of a setting:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Controller/DemoController.php
 
-    // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -233,7 +230,7 @@ In workflows, you can use a condition to check that System Configuration has the
 
 **Configuration Example**
 
-.. code-block:: bash
+.. code-block:: yaml
 
    '@is_system_config_equal': ['some_config_path', 'needed value']
 
@@ -410,10 +407,10 @@ To add a new config scope:
 
    and the template:
 
-   .. code-block:: php
+   .. code-block:: twig
 
-        {% extends 'OroConfigBundle::configPage.html.twig' %}
-        {% import 'OroUIBundle::macros.html.twig' as UI %}
+        {% extends '@OroConfig/configPage.html.twig' %}
+        {% import '@OroUI/macros.html.twig' as UI %}
 
         {% set pageTitle = [
                 'acme_test.some_label'|trans
@@ -648,14 +645,14 @@ Please note that
 
     system_configuration:
         api_tree:
-            look-and-feel:                                         # group name
-                oro_entity_pagination.enabled: ~                   # configuration option
-            outlook:                                               # group name
-                contacts:                                          # nested group name
-                    oro_crm_pro_outlook.contacts_enabled: ~        # configuration option
-                    oro_crm_pro_outlook.contacts_sync_direction: ~
+            look-and-feel:                               # group name
+                oro_entity_pagination.enabled: ~         # configuration option
+            sync:                                        # group name
+                contacts:                                # nested group name
+                    acme_sync.contacts_enabled: ~        # configuration option
+                    acme_sync.contacts_sync_direction: ~
                 tasks:
-                    oro_crm_pro_outlook.tasks_enabled: ~
+                    acme_sync.tasks_enabled: ~
 
 Search Type Provider
 ~~~~~~~~~~~~~~~~~~~~

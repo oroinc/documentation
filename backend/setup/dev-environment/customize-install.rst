@@ -17,12 +17,11 @@ Execute Custom Migrations
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can create your own :ref:`migrations <backend-entities-migrations>` that can be executed during the installation.
-A migration is a class which implements the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface:
+A migration is a class which implements the ``Oro\Bundle\MigrationBundle\Migration\Migration`` interface:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Migration/1_0/CustomMigration.php
 
-
-    // src/Acme/DemoBundle/Migration/1_0/CustomMigration.php
     namespace Acme\DemoBundle\Migration\1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -39,7 +38,7 @@ A migration is a class which implements the :class:`Oro\\Bundle\\MigrationBundle
 
 .. note:: Entity metadata in the PHP entity classes (annotations) should match exactly what the schema migration is doing. If you create a migration that modifies the type, length or another property of an existing entity field, please remember to make the same change in the PHP entity class annotations.
 
-In the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration::up`, you can modify the database schema and/or add additional SQL queries that are executed before and after the schema changes.
+In the ``Oro\Bundle\MigrationBundle\Migration\Migration::up``, you can modify the database schema and/or add additional SQL queries that are executed before and after the schema changes.
 
 .. _load-custom-data-fixtures:
 
@@ -49,9 +48,8 @@ Load Custom Data Fixtures
 To load your own data :ref:`fixtures <backend-entities-fixtures>`, you will need to implement Doctrine's *"FixtureInterface"*:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
 
-
-    // src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
     namespace Acme\DemoBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\FixtureInterface;

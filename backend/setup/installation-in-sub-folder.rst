@@ -45,12 +45,11 @@ To prepare files for the website located in the sub-directory (e.g, /uk), do the
 
    .. code-block:: php
 
-
-        ...
+        // ...
         $request = Request::createFromGlobals();
         $request->server->add(['WEBSITE_PATH' => '/<yoursitename>']);
         $response = $kernel->handle($request);
-        ...
+        // ...
 
 where <yoursitename> is *uk* in our example.
 

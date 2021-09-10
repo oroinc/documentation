@@ -36,19 +36,12 @@ Add a Workflow
 
 In the ``workflows.yml``, use the ``workflows`` key to specify that you are going to add workflows.
 
-.. code-block:: yaml
-
-
-    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
-
 The value of the ``workflows`` key is the array of workflows.
 
 To define a new workflow, add its name to the array.
 
 .. code-block:: yaml
-
-
-    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:   # This is the workflow name.
@@ -61,9 +54,7 @@ For each workflow key, the corresponding value is the array of the workflow sett
 In the following example, you can find the configuration of the **Phone Call** workflow. This workflow defines the process of making a call to a customer:
 
 .. code-block:: yaml
-
-
-    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:
@@ -84,9 +75,7 @@ Define the the user-interface workflow name:
 +----------------------------------------+---------------------+
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:

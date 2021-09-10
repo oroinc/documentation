@@ -94,13 +94,13 @@ The value of the parameter is the MongoDB DSN string described in the previous c
 
 The following example shows the reconfiguration of the **public** adapter:
 
-.. code:: yaml
+.. code-block:: yaml
 
    gaufrette_adapter.public: 'gridfs:mongodb://user:password@host:27017/media'
 
 To get the list of existing Gaufrette adapters, use the following command:
 
-.. code:: bash
+.. code-block:: bash
 
    bin/console debug:config knp_gaufrette adapters
 
@@ -111,13 +111,13 @@ As for the adapter configuration, the parameter's value is the MongoDB DSN strin
 
 The following example shows the reconfiguration of the ``attachments`` filesystem:
 
-.. code:: yaml
+.. code-block:: yaml
 
    gaufrette_filesystem.attachments: 'gridfs:mongodb://user:password@host:27017/attachments'
 
 To get the list of existing Gaufrette filesystems, use the following command:
 
-.. code:: bash
+.. code-block:: none
 
    bin/console debug:config knp_gaufrette filesystems
 
@@ -149,8 +149,6 @@ as the configuration factory for the `oro_gaufrette` bundle in your bundle class
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AppBundle\DependencyInjection\Factory;
 
     use Oro\Bundle\GaufretteBundle\DependencyInjection\Factory\ConfigurationFactoryInterface;
@@ -171,8 +169,6 @@ as the configuration factory for the `oro_gaufrette` bundle in your bundle class
     }
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\AppBundle;
 
@@ -314,8 +310,6 @@ To add an additional path from which the data is going to be moved or to add an 
 in your bundle and add it into the Bundle class:
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\SomeBundle\DependencyInjection\Compiler;
 

@@ -352,8 +352,6 @@ There are several things you can do to improve Doctrine performance:
 
   .. code-block:: php
 
-
-     <?php
      $query = $em->createQuery("SELECT u FROM MyProject\User u");
      $query->setFetchMode("MyProject\User", "address", \Doctrine\ORM\Mapping\ClassMetadata::FETCH_EAGER);
      $query->execute();

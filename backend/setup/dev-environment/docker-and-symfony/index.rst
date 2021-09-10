@@ -90,7 +90,7 @@ Use a Symfony Server
 To automatically apply environment variables exposed by Symfony Server
 from Docker Compose and to use the proper PHP version, you should run
 all the symfony application commands using ``symfony console`` instead
-of ``bin/console``. Use ``symfony php`` to run php binaries
+of ``php bin/console``. Use ``symfony php`` to run php binaries
 using proper PHP version and expose environment variables from the application services defined with Docker Compose.
 
 .. note::
@@ -132,9 +132,9 @@ specific PHP version for the project, go to the project root folder and run:
 
 .. code-block:: none
 
-   echo 7.4 > .php-version
+   echo 8.0 > .php-version
 
-This will switch the php version to 7.4 for Symfony Server and all the
+This will switch the php version to 8.0 for Symfony Server and all the
 console commands wrapped with ``symfony``.
 
 Run Message Consumer in the Background

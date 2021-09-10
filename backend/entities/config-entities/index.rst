@@ -30,7 +30,7 @@ This configuration adds the 'demo_attr' attribute with the 'Demo' value to all c
 
 To apply this change, execute the **oro:entity-config:update** command:
 
-.. code-block:: none
+.. code-block:: bash
 
    php bin/console oro:entity-config:update
 
@@ -38,7 +38,6 @@ An example how to get a value of a configuration attribute:
 
 .. code-block:: php
 
-    <?php
         /** @var ConfigProvider $acmeConfigProvider */
         $acmeConfigProvider = $this->get('oro_entity_config.provider.acme');
 
@@ -50,7 +49,6 @@ If you want to set a value different than the default one for some entity, write
 
 .. code-block:: php
 
-    <?php
     /**
      * @ORM\Entity
      * @Config(
@@ -71,7 +69,6 @@ The result is demonstrated in the following code:
 
 .. code-block:: php
 
-    <?php
         /** @var ConfigProvider $acmeConfigProvider */
         $acmeConfigProvider = $this->get('oro_entity_config.provider.acme');
 
@@ -125,8 +122,6 @@ To add config validation to your bundle:
 Example:
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\SecurityProBundle\Config\Validation;
 
@@ -184,8 +179,6 @@ For example, the following code gets the configuration provider for the 'extend'
 
 .. code-block:: php
 
-    <?php
-
     /** @var ConfigProvider $configProvider */
     $configProvider = $this->get('oro_entity_config.provider.extend');
 
@@ -210,7 +203,7 @@ Update Configuration Data
 
 The following command can be used to update configurable entities:
 
-.. code-block:: none
+.. code-block:: bash
 
    php bin/console oro:entity-config:update
 
@@ -221,7 +214,7 @@ Clearing Up the Cache
 
 The following command removes all data related to configurable entities from the application cache:
 
-.. code-block:: none
+.. code-block:: bash
 
    php bin/console oro:entity-config:cache:clear --no-warmup
 
@@ -229,7 +222,7 @@ Debugging Configuration Data
 
 You can use ``oro:entity-config:debug`` command to get a different kind of configuration data as well as add/remove/update configuration of entities. To see all available options run this command with ``--help`` option. As an example the following command shows all configuration data for User entity:
 
-.. code-block:: none
+.. code-block:: bash
 
    php bin/console oro:entity-config:debug "Oro\Bundle\UserBundle\Entity\User"
 
@@ -255,13 +248,12 @@ The ``@Config`` Annotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To make the ``Hotel`` entity from the first part of the chapter configurable, simply import the
-:class:`@Config <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\Config>` annotation and
+``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config`` annotation and
 use it in the class docblock:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-    // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -281,9 +273,8 @@ You can also change the default value of each configurable option using the ``de
 argument:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-    // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -309,13 +300,12 @@ The ``@ConfigField`` Annotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Similar to the ``@Config`` annotation for entities, you can use the
-:class:`@ConfigField <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`
+``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField``
 annotation to make properties of an entity configurable:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-    // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -341,9 +331,8 @@ annotation to make properties of an entity configurable:
 Default values can be changed in the same way as it can be done on the entity level:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Hotel.php
 
-
-    // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -380,9 +369,8 @@ created per bundle which means that a bundle can extend the set of available opt
 options, you create a ``entity_config.yml`` file in your bundle which can look like this:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
     entity_config:
         acme_demo:
             entity:
@@ -430,7 +418,7 @@ The key used in the first level of the entity configuration is a custom identifi
 a kind of namespace for the additional options. For each scope, a different service is created (its
 name follows the schema ``oro_entity_config.provider.<scope>``). For example, the service name for
 the options configured in the example above is ``oro_entity_config.provider.acme_demo``. It is an
-instance of the :class:`Oro\\Bundle\\EntityConfigBundle\\Provider\\ConfigProvider` class.
+instance of the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider`` class.
 
 Options can be configured on two levels: on the entity level or per field. The example above adds a new ``comment`` property that allows the users to
 add custom comments per configurable entity. It also adds the ``auditable`` option on the field
@@ -513,9 +501,9 @@ Below the configuration level, each option's configuration is divided into three
 Secondly, you need to update all configurable entities after configuration parameters have been
 modified or added using the ``oro:entity-config:update`` command:
 
-.. code-block:: none
+.. code-block:: bash
 
-    $ php bin/console oro:entity-config:update --force
+    php bin/console oro:entity-config:update --force
 
 When the ``oro:entity-config:update`` command is executed without using the ``--force`` option,
 only new values will be added, but no existing parameters will be updated.
@@ -576,36 +564,36 @@ was defined in the ``acme_demo`` scope):
     $acmeDemoProvider = $container->get('oro_entity_config.provider.acme_demo');
 
 Then you need to fetch the configuration in this scope for a particular entity or entity field
-using the :method:`Oro\\Bundle\\EntityConfigBundle\\Provider\\ConfigProvider::getConfig` method. The
+using the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider::getConfig`` method. The
 configuration for such a configurable object (an entity or a field) is represented by an instance
-of the :class:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface`:
+of the ``Oro\Bundle\EntityConfigBundle\Config\ConfigInterface``:
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::get`
+``get()``
     Returns the actually configured value for an option.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::set`
+``set()``
     Changes the value of an option to a new value.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::remove`
+``remove()``
     Removes the particular option.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::has`
+``has()``
     Checks whether or not an option with the given name exists.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::is`
+``is()``
     Checks if the value of an option equals the given value.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::in`
+``in()``
     Checks if the value of an option is one of the given values.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::all`
+``all()``
     Returns all parameters for the configurable object.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::setValues`
+``setValues()``
     Replaces values for the given options with some given values.
 
 Please note that it is not enough to modify configuration values in the provider. You also need to
-persist your changes by calling the :method:`Oro\\Bundle\\EntityConfigBundle\\Provider\\ConfigProvider::flush`
+persist your changes by calling the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider::flush``
 method afterwards:
 
 .. code-block:: php

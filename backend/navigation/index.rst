@@ -38,9 +38,8 @@ You can create new navigation under the ``items`` key. Each item must be identif
 name which acts as a key in the menu configuration:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
         items:
             blog:
@@ -76,9 +75,8 @@ The next step is to compose a tree of the menu items that you created before. Th
 build under the ``tree`` key:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
         tree:
             application_menu:
@@ -113,9 +111,8 @@ If you wanted to create a dedicated blog tab instead, you would just have to con
 as child items of the ``application_menu`` entry like this:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
         tree:
             application_menu:
@@ -137,9 +134,7 @@ Breadcrumb Provider
 To use breadcrumb provider, create layout update with the predefined **breadcrumbs** block type and the **menu_name** option:
 
 .. code-block:: yaml
-
-
-    # CustomerBundle/Resources/views/layouts/blank/imports/oro_customer_page/oro_customer_page.yml
+   :caption: CustomerBundle/Resources/views/layouts/blank/imports/oro_customer_page/oro_customer_page.yml
 
     layout:
         imports:
@@ -162,9 +157,7 @@ Breadcrumbs Block Type
 You can avoid usage of breadcrumb provider. For that, you should create layout update with the predefined **breadcrumbs** block type and the **breadcrumbs** option:
 
 .. code-block:: yaml
-
-
-    # WebCatalogBundle/Resources/views/layouts/blank/oro_product_frontend_product_index/product_index.yml
+   :caption: WebCatalogBundle/Resources/views/layouts/blank/oro_product_frontend_product_index/product_index.yml
 
     layout:
         actions:

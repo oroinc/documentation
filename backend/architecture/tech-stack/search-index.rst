@@ -317,7 +317,7 @@ Standard search index type provides CLI command oro:search:reindex that can be u
 
 Website search index type provides similar CLI command called oro:website-search:reindex which used to manually trigger full reindexation of all entities, only entities of a specific class or entities for a specific website. It also has a flag called scheduled to run indexation asynchronously. Here are :ref:`some examples of how to work with the  oro:website-search:reindex command <website-search-bundle-console-commands>`.
 
-Website search index type provides an event called oro_website_search.reindexation_request to manually trigger reindexation process for the specified scope of entities. It uses event class ``Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent`` which accepts boolean parameter $scheduled to specify whether indexation has to be asynchronous (default behaviour) or synchronous. Here are :ref:`some event triggering examples <bundles-commerce-website-search-indexation>`.
+Website search index type provides an event called oro_website_search.reindexation_request to manually trigger reindexation process for the specified scope of entities. It uses event class ``Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent`` which accepts boolean parameter $scheduled to specify whether indexation has to be asynchronous (default behavior) or synchronous. Here are :ref:`some event triggering examples <bundles-commerce-website-search-indexation>`.
 
 Both standard and website search index types have synchronous and asynchronous indexers which trigger corresponding type of indexation. All following indexers implement the same standard indexer interface ``Oro\Bundle\SearchBundle\Engine\IndexerInterface``:
 

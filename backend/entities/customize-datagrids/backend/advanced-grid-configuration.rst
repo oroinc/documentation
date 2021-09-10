@@ -392,17 +392,11 @@ Problem 10
           /** @var AuthorizationCheckerInterface */
           private $authorizationChecker;
 
-          /**
-           * @param AuthorizationCheckerInterface $authorizationChecker
-           */
           public function __construct(AuthorizationCheckerInterface $authorizationChecker)
           {
               $this->authorizationChecker = $authorizationChecker;
           }
 
-          /**
-           * @param BuildBefore $event
-           */
           public function onBuildBefore(BuildBefore $event)
           {
               if (!$this->authorizationChecker->isGranted('acme_bundle_show_budget_columns')) {

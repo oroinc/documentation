@@ -18,7 +18,7 @@
 from sphinx.util import nodes as sphinx_nodes
 from docutils import nodes
 from sphinx import addnodes
-
+from sphinx.environment.adapters.toctree import TocTree
 
 def html_page_context(app, pagename, templatename, context, doctree):
     """Event handler for the html-page-context signal.
@@ -75,15 +75,15 @@ def get_local_toc_for(builder, docname, maxdepth=-1):
     if maxdepth < 0:
         maxdepth = env.metadata[docname].get('tocdepth', 0)
 
-    toctree = env.toctree
+    toctree = TocTree(env)
     try:
-        toc = toctree.tocs[docname].deepcopy()
+        toc = env.tocs[docname].deepcopy()
         toctree._toctree_prune(toc, 2, maxdepth)
     except KeyError:
         # the document does not exist anymore: return a dummy node that
         # renders to nothing
         return nodes.paragraph()
-    sphinx_nodes.process_only_nodes(toc, builder.tags, warn_node=env.warn_node)
+    sphinx_nodes.process_only_nodes(toc, builder.tags)
     for node in toc.traverse(nodes.reference):
         node['refuri'] = node['anchorname'] or '#'
     return toc

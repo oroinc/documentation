@@ -204,7 +204,6 @@ settings.
 - Cache the whole ``product_view_container`` block forever, but render the ``product_price_container`` block dynamically:
 
   .. code-block:: yaml
-
      :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
      layout:
@@ -226,7 +225,6 @@ settings.
 -  Cache the whole ``product_view_container`` block for 1 day, but the ``product_price_container`` block only for 15 minutes:
 
    .. code-block:: yaml
-
       :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
       layout:
@@ -363,7 +361,6 @@ product information when product has been updated:
 1. Tag the block that renders product information
 
    .. code-block:: yaml
-
       :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
       layout:
@@ -379,7 +376,6 @@ product information when product has been updated:
    on post update event:
 
    .. code-block:: php
-
       :caption: src/AcmeDemoBundle/EventListener/ProductUpdateListener.php
 
       <?php
@@ -393,8 +389,7 @@ product information when product has been updated:
 
       class ProductUpdateListener
       {
-          /** @var TagAwareAdapterInterface */
-          private $cache;
+          private TagAwareAdapterInterface $cache;
 
           public function __construct(TagAwareAdapterInterface $cache)
           {
@@ -413,7 +408,6 @@ product information when product has been updated:
 3. Register the listener in a service container:
 
    .. code-block:: yaml
-
       :caption: src/AcmeDemoBundle/Resources/config/services.yml
 
       services:
@@ -454,7 +448,6 @@ render cache. To configure it:
 1. |Define a new client| in the ``snc_redis`` configuration section and specify the connection DSN, e.g.,:
 
    .. code-block:: yaml
-
       :caption: config/config.yml
 
       snc_redis:
@@ -467,7 +460,6 @@ render cache. To configure it:
    Redis client:
 
    .. code-block:: yaml
-
       :caption: src/AcmeDemoBundle/Resources/config/services.yml
 
       services:

@@ -16,10 +16,6 @@ class BlockType extends AbstractType
 {
     public const NAME = 'acme_cms_block';
 
-    /**
-     * @param FormBuilderInterface $builder
-     * @param array $options
-     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder

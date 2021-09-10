@@ -24,9 +24,8 @@ file called ``datagrids.yml`` in the ``Resources/config/oro`` directory of your 
 following example:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
     datagrids:
         orocrm_report-opportunities-won_by_period:
             pageTitle: orocrm.report.opportunities_won_by_period
@@ -195,9 +194,8 @@ a configuration file named ``navigation.yml`` that is located in the ``Resources
 of your bundle:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
     menu_config:
         items:
             account_opportunity:
@@ -247,7 +245,7 @@ Frontend Implementation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 A frontend part of the segment management is based on *condition builder* that comes from *OroQueryDesignerBundle*.
-See the |Condition Builder Component| topic for more details. A **segmentation filter** roots from *AbstractFilter* of *OroFilterBundle* and provides the ajax-based autocomplete field, which, in turn, is based on the *JQuery.Select2* plugin.
+See the :ref:`Condition Builder Component <bundle-docs-platform-query-designer-bundle-condition-builder-component>` topic for more details. A **segmentation filter** roots from *AbstractFilter* of *OroFilterBundle* and provides the ajax-based autocomplete field, which, in turn, is based on the *JQuery.Select2* plugin.
 
 .. _backend-segments-backend-implementation:
 

@@ -20,10 +20,8 @@ Let us assume that we want to create the AcmeNewBundle and put it under the name
 in the ``/src`` directory. We need to create the corresponding directory structure and the bundle file with the following content:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/NewBundle/AcmeNewBundle.php
 
-
-    <?php
-    // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
     namespace Acme\Bundle\NewBundle;
 
     use Symfony\Component\HttpKernel\Bundle\Bundle;
@@ -80,9 +78,8 @@ Now you have all the required files to enable the new bundle. To enable the bund
 #. Create Resources/config/oro/bundles.yml with the following content:
 
    .. code-block:: yaml
+      :caption: src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
 
-
-       # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
        bundles:
            - Acme\Bundle\NewBundle\AcmeNewBundle
 
@@ -122,24 +119,24 @@ To create an installer for AcmeBundle:
 
 1. Clear the application cache:
 
-   .. code-block:: none
+   .. code-block:: bash
 
 
-      bin/console cache:clear
+      php bin/console cache:clear
 
 2. Apply the changes that you defined in your code to the database:
 
-   .. code-block:: none
+   .. code-block:: bash
 
 
-      bin/console doctrine:schema:update
+      php bin/console doctrine:schema:update
 
 3. Generate an installer and save it to the AcmeBundleInstaller.php:
 
-   .. code-block:: none
+   .. code-block:: bash
 
 
-      bin/console oro:migration:dump --bundle=AcmeBundle > AcmeBundleInstaller.php
+      php bin/console oro:migration:dump --bundle=AcmeBundle > AcmeBundleInstaller.php
 
 
    .. hint:: The generated installer may contain a lot of excessive information as the same database table might contain options related to different bundles and entities while the generator has no option to distinguish which entity 'has added' particular options. Delete the information unrelated to your entities from the output file.
@@ -150,10 +147,10 @@ To create an installer for AcmeBundle:
 
 #. Check that the database is synced with your code:
 
-   .. code-block:: none
+   .. code-block:: bash
 
 
-      bin/console doctrine:schema:update --dump-sql
+      php bin/console doctrine:schema:update --dump-sql
 
    If the database is successfully synchronized, you will see the following message:
 

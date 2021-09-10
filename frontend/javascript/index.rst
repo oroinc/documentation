@@ -8,9 +8,7 @@
 JavaScript Architecture
 =======================
 
-Client-side architecture of OroPlatform, OroCRM, and OroCommerce is built on |Chaplin|
-(an architecture for JavaScript Web applications based on the |Backbone.js|
-library).
+Client-side architecture of OroPlatform, OroCRM, and OroCommerce is built on |Chaplin| architecture for JavaScript Web applications based on the |Backbone.js| library).
 
 The Backbone provides little structure above simple routing, individual models,
 views and their binding. Chaplin addresses these limitations by providing
@@ -19,7 +17,7 @@ patterns and best practices.
 
 However, as we distribute functionality of some pages over multiple bundles
 (several bundles can extend a page with their own functionalities), we had to extend the
-|Chaplin| approach for our needs.
+|Chaplin| approach.
 
 Technology Stack
 ----------------
@@ -47,9 +45,9 @@ The application gets initialized by the `oroui/js/app` module that is entry poin
 
 This module exports an instance of the `application` (extension of `Chaplin.Application`); it depends on:
 
-- `oroui/js/app/application`, Application class
-- `oroui/js/app/routes`, collection of routers
-- `oroui/js/app`'s configuration
+- ``oroui/js/app/application``, Application class
+- ``oroui/js/app/routes``, collection of routers
+- configuration of ``oroui/js/app``
 - and some `app modules` (optional)
 
 Routes
@@ -99,7 +97,6 @@ File structures and naming conventions use best practices of Backbone
 development adopted for Oro needs.
 
 .. code-block:: text
-
 
     AcmeBundle/Resources/public
     ├── css
@@ -199,7 +196,6 @@ Fore more details see:
 
 - |Underscore.js template function documentation|
 - :ref:`JavaScript Modularity of OroPlatform based applications<dev-doc-frontend-javascript-modularity>`
-
 
 .. _frontend-architecture-page-layout-view:
 

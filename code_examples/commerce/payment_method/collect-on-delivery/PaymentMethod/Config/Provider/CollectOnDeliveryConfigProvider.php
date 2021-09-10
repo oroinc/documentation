@@ -34,11 +34,6 @@ class CollectOnDeliveryConfigProvider implements CollectOnDeliveryConfigProvider
      */
     protected $logger;
 
-    /**
-     * @param ManagerRegistry $doctrine
-     * @param LoggerInterface $logger
-     * @param CollectOnDeliveryConfigFactoryInterface $configFactory
-     */
     public function __construct(
         ManagerRegistry $doctrine,
         LoggerInterface $logger,

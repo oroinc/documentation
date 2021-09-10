@@ -53,10 +53,10 @@ Datagrid Configuration Details
    :header: "Options name","Default value","Description"
    :widths: 15, 15, 30
 
-   "enable","false","Marks or unmarks this column as editable. The behaviour depends on main inline_editing.behaviour: `enable_all` - false will disable editing this cell. `enable_selected` - true will enable editing this cell."
+   "enable","false","Marks or unmarks this column as editable. The behavior depends on main inline_editing.behavior: `enable_all` - false will disable editing this cell. `enable_selected` - true will enable editing this cell."
    "acl_resource","-","Enables inline editing if access granted to specified resource. By default is checked EDIT permission to specified entity"
    "entity_name","-","Entity class name for saving data. By default it tries to get value from `extended_entity_name`"
-   "behaviour","enable_all","Specifies the way to enable the inline editing. Possible values: `enable_all` - (default). this will enable inline editing where possible. `enable_selected` - disable by default, enable only on configured cells"
+   "behavior","enable_all","Specifies the way to enable the inline editing. Possible values: `enable_all` - (default). this will enable inline editing where possible. `enable_selected` - disable by default, enable only on configured cells"
    "plugin","``orodatagrid/js/app/plugins/grid/inline-editing-plugin``","Specifies the plugin realization"
    "default_editors","``orodatagrid/js/default-editors``","Specifies default editors for front-end types"
    "cell_editor","``{component: 'orodatagrid/js/app/components/cell-popup-editor-component'}``","Specifies default cell_editor_component and their options"
@@ -116,7 +116,7 @@ Column Configuration Options
    :header: "Options name","Default value","Description"
    :widths: 15, 15, 30
 
-   "enable","-","Marks or unmarks this column as editable. The behaviour depends on main inline_editing.behaviour: ``enable_all`` - false will disable editing this cell. ``enable_selected`` - true will enable editing this cell."
+   "enable","-","Marks or unmarks this column as editable. The behavior depends on main inline_editing.behavior: ``enable_all`` - false will disable editing this cell. ``enable_selected`` - true will enable editing this cell."
    "save_api_accessor","-","Allows to override default api accessor for the whole grid. Please see :ref:`documentation for oroui/js/tools/api-accessor <bundle-docs-platform-ui-bundle-apiaccessor>` for details"
    "editor.component","-","Allows to override component used to display view and specified in ``datagrid.{grid-uid}.inline_editing.cell_editor.component``"
    "editor.component_options","{}","Specifies options to pass into the cell editor component"

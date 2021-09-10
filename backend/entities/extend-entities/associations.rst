@@ -26,8 +26,6 @@ Many-To-One, Unidirectional
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;

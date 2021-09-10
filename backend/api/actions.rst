@@ -1270,8 +1270,6 @@ To create a new action, to create two classes:
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\ProductBundle\Api\Processor;
 
     use Oro\Bundle\ApiBundle\Processor\ApiContext;
@@ -1281,8 +1279,6 @@ To create a new action, to create two classes:
     }
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\ProductBundle\Api\Processor;
 

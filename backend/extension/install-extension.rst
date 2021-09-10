@@ -60,15 +60,15 @@ Repeat this for any other extension you want to install. When you are finished w
 packages, use the ``oro:platform:update`` command to make the application aware of the newly
 installed extensions:
 
-.. code-block:: none
+.. code-block:: bash
 
-    $ php bin/console oro:platform:update --env=prod --force
+    php bin/console oro:platform:update --env=prod --force
 
 Finally, make sure to properly clean the cache:
 
-.. code-block:: none
+.. code-block:: bash
 
-    $ php bin/console cache:clear --env=prod
+    php bin/console cache:clear --env=prod
 
 
 .. include:: /include/include-links-dev.rst

@@ -415,6 +415,8 @@ A single attribute can be described with the following configuration:
   * **object** - object should support serialize/deserialize, option "class" is required for this type
   * **entity** - Doctrine entity, option "class" is required and it must be a Doctrine manageable class
 
+* **default** - Default value of an attribute. This value should correspond to the attribute type.
+
 * **label** (translation file field) - *translatable*: `oro.workflow.{workflow_name}.attribute.{attribute_name}.label` . Label can be shown in the UI
 * **entity_acl** - Defines an ACL for the specific entity stored in this attribute.
 
@@ -464,9 +466,7 @@ Enable Users to Modify Attributes
 You can enable a user to modify attributes of the record during transitions. To do this, list attributes that can be modified during any of the workflow's transitions under the ``attributes`` key:
 
 .. code-block:: yaml
-
-
-    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:
@@ -520,9 +520,7 @@ For attributes, you need to add labels into two places: first, to the list of al
 +----------------------------------------------------------------------------------------------+------------------------------------------------------------------------+
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:
@@ -536,9 +534,7 @@ For attributes, you need to add labels into two places: first, to the list of al
                         label: 'Call Successful'
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:
@@ -769,9 +765,7 @@ Define how the workflow transition name will appear on the user interface and th
 +----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:

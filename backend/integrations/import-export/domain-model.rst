@@ -85,13 +85,13 @@ Oro\\Bundle\\ImportExportBundle\\Context\\StepExecutionProxyContext
 
 **Description:**
 
-StepExecutionProxyContext is a wrapper of the Akeneo\\Bundle\\BatchBundle\\Entity\\StepExecution instance from AkeneoBatchBundle.
+StepExecutionProxyContext is a wrapper of the Oro\\Bundle\\BatchBundle\\Entity\\StepExecution instance from OroBatchBundle.
 
-**Akeneo\Bundle\BatchBundle\Entity\StepExecution**
+**Oro\Bundle\BatchBundle\Entity\StepExecution**
 
-The instance of this class can store the data of step execution, such as a number of records that were read/written, errors, exceptions, warnings, and an execution context (Akeneo\\Bundle\\BatchBundle\\Item\\ExecutionContext) as well as the abstract data generated during the execution.
+The instance of this class can store the data of step execution, such as a number of records that were read/written, errors, exceptions, warnings, and an execution context (Oro\\Bundle\\BatchBundle\\Item\\ExecutionContext) as well as the abstract data generated during the execution.
 
-As the import/export domain has its own terms, ContextInterface expands the Akeneo\\Bundle\\BatchBundle\\Entity\\StepExecution interface and separates its clients from OroBatchBundle.
+As the import/export domain has its own terms, ContextInterface expands the Oro\\Bundle\\BatchBundle\\Entity\\StepExecution interface and separates its clients from OroBatchBundle.
 
 Context Registry
 ^^^^^^^^^^^^^^^^
@@ -102,7 +102,7 @@ Oro\\Bundle\\ImportExportBundle\\Context\\ContextRegistry
 
 **Description:**
 
-ContextRegistry is a storage which gets a specific instance of the context based on Akeneo\\Bundle\\BatchBundle\\Entity\\StepExecution and provides the interface to get a single instance context using Akeneo\\Bundle\\BatchBundle\\Entity\\StepExecution.
+ContextRegistry is a storage which gets a specific instance of the context based on Oro\\Bundle\\BatchBundle\\Entity\\StepExecution and provides the interface to get a single instance context using Oro\\Bundle\\BatchBundle\\Entity\\StepExecution.
 
 Reader
 ------
@@ -301,7 +301,7 @@ ProcessorRegistry provides a storage of all registered processors declared by th
 * **unregisterProcessor(type, entityName, alias)** - unregisters the processor using the input parameters;
 * **hasProcessor(type, alias)** - checks that the processor is registered;
 * **getProcessor(type, alias)** - gets the registered processor;
-* **getProcessorsByEntity(type, entityName)** - gets the registered processor by an entity. The import can have several processors for an entity, for example, one processor for the "Add and Replace" import behaviour and the other for the "Delete" import behaviour;
+* **getProcessorsByEntity(type, entityName)** - gets the registered processor by an entity. The import can have several processors for an entity, for example, one processor for the "Add and Replace" import behavior and the other for the "Delete" import behavior;
 * **getProcessorAliasesByEntity(type, entityName)** - gets all processors aliases by a type and entity name;
 * **getProcessorEntityName(type, alias)** - gets an entity name by the processor type and alias.
 
@@ -455,17 +455,17 @@ DefaultDataConverter is applicable in simple cases of import/export. It can conv
 
 
     // Multi-dimensional
-    array(
-        'name' => array(
+    [
+        'name' => [
             'first_name' => 'John',
             'last_name' => 'Doe',
-        )
-    );
+        ]
+    ];
     // One-dimensional
-    array(
+    [
         'name:first_name' => 'John',
         'name:last_name' => 'Doe',
-    );
+    ];
 
 
 **Methods:**

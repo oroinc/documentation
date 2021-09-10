@@ -1,7 +1,7 @@
 .. _behat-tests:
 
-Behat Tests
-===========
+Integration Testing with Behat
+==============================
 
 Concepts
 --------
@@ -12,10 +12,10 @@ The information below summarizes concepts and tools that are important for under
 * **Behat** is a |Behavior Driven Development framework| for PHP.
 * **Mink** is an |open source browser controller/emulator| for web applications developed using PHP.
 * **OroElementFactory** creates elements in contexts.
-* **Symfony2 Extension** provides integration with |Symfony2|.
+* |SymfonyExtension| provides an integration with Symfony and Mink driver for Symfony application.
 * **@OroTestFrameworkBundle\Behat\ServiceContainer\OroTestFrameworkExtension** provides integration with Oro BAP based applications.
 * **Selenium2Driver** Selenium2Driver provides a bridge for the WebDriver's wire protocol.
-* **ChromeDriver** |WebDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more.
+* |ChromeDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more.
 
 .. _behat-conventions:
 
@@ -239,39 +239,53 @@ Architecture
 DI Containers
 ^^^^^^^^^^^^^
 
-Behat is a Symfony console application with its own container and services. A Behat container may be configured through Extensions using *behat.yml* in the root of the application directory.
+Behat is a Symfony console application with its own container and services. A Behat container may be configured through
+Extensions using *behat.yml* in the root of the application directory.
 
-Application container may be used by injected Kernel in your Context after you implement ``KernelAwareContext`` and use ``KernelDictionary`` trait.
+Application container may be used by injected Kernel in your Context after you implement
+``Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareInterface`` and use
+``Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareTrait`` trait.
 
 .. code-block:: php
 
 
-    use Behat\Symfony2Extension\Context\KernelAwareContext;
-    use Behat\Symfony2Extension\Context\KernelDictionary;
+    use Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareInterface;
+    use Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareTrait;
     use Oro\Bundle\TestFrameworkBundle\Behat\Context\OroFeatureContext;
 
-    class FeatureContext extends OroFeatureContext implements KernelAwareContext
+    class FeatureContext extends OroFeatureContext implements AppKernelAwareInterface
     {
-        use KernelDictionary;
+        use AppKernelAwareTrait;
 
         public function useContainer()
         {
-            $doctrine = $this->getContainer()->get('doctrine');
+            $doctrine = $this->getAppContainer()->get('doctrine');
         }
     }
 
-Moreover, you can inject application services in behat Context:
+Moreover, you can inject into the behat context dependencies from either behat or application containers by declaring
+it as a service in ``services.yml`` located besides the ``behat.yml``:
 
 .. code-block:: yaml
-
+    :caption: AcmeBehatBundle/Tests/Behat/behat.yml
 
     oro_behat_extension:
       suites:
         OroCustomerAccountBridgeBundle:
           contexts:
-            - OroImportExportBundle::ImportExportContext:
-                - '@oro_entity.entity_alias_resolver'
-                - '@oro_importexport.processor.registry'
+            - Oro\Bundle\ImportExportBundle\Tests\Behat\Context\ImportExportContext
+
+.. code-block:: yaml
+    :caption: AcmeBehatBundle/Tests/Behat/services.yml
+
+    services:
+      Oro\Bundle\ImportExportBundle\Tests\Behat\Context\ImportExportContext:
+      	public: true
+      	arguments:
+     	  - '@doctrine'
+     	  - '%acme.batch_size%'
+
+.. note:: Context service must be marked as public.
 
 Autoload Suites
 ^^^^^^^^^^^^^^^
@@ -296,8 +310,8 @@ You can manually configure test suite for a bundle in the application behat conf
           bundle: AcmeDemoBundle
           contexts:
             - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
-            - OroDataGridBundle::GridContext
-            - AcmeDemoBundle::FeatureContext
+            - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
+            - Oro\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext
           paths:
             - 'vendor/Acme/DemoBundle/Tests/Behat/Features'
 
@@ -311,8 +325,8 @@ or in a bundle behat configuration ``{BundleName}/Tests/Behat/behat.yml``:
         AcmeDemoBundle:
           contexts:
             - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
-            - OroDataGridBundle::GridContext
-            - AcmeDemoBundle::FeatureContext
+            - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
+            - Oro\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext
           paths:
             - '@AcmeDemoBundle/Tests/Behat/Features'
 
@@ -323,14 +337,14 @@ Manually configured test suits are not autoloaded by the extension.
 Feature Isolation
 ^^^^^^^^^^^^^^^^^
 
-Every feature can interact with the application and perform CRUD operations. As a result, the database may be modified. To avoid data collisions, the features are isolated: the database and cache directories are dumped before running the feature tests; they are restored after the feature tests execution is complete.
+Every feature can interact with the application and perform some operations. As a result, the application state may be modified. To avoid data collisions and dependencies between features when they are running one-by-one, the features are isolated: for example, the database and cache directories are dumped before running the feature tests; they are restored after the feature tests execution is complete.
 
 Every isolator must implement the ``Oro\Bundle\TestFrameworkBundle\Behat\Isolation\IsolatorInterface`` and ``oro_behat.isolator`` tags with priority.
 
 Disable Feature Isolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can disable feature isolation by adding the ``--skip-isolators=database,cache`` option to behat console command. In this case, the combination of the feature tests might run much faster, but the test logic should care about the database and cache consistency.
+You can disable feature isolation by adding the ``--skip-isolators`` option to the bin/behat console command. As a result, the Behat no longer takes notice of the database, cache, and other layers' isolation. This means the application state is not restored to the initial state, and the result is preserved after the test.
 
 Page Object
 -----------
@@ -411,8 +425,11 @@ Now you should implement the element's ``setValue`` method:
 
 
     <?php
+
     namespace Oro\Bundle\PaymentBundle\Tests\Behat\Element;
+
     use Oro\Bundle\TestFrameworkBundle\Behat\Element\Element;
+
     class PaymentMethodConfigType extends Element
     {
         /**

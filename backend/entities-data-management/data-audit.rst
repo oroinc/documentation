@@ -3,9 +3,6 @@
 Data Audit
 ==========
 
-Introduction
-------------
-
 The |OroDataAuditBundle| leverages the Loggable |Doctrine extension1|
 (|StofDoctrineExtension|) to provide changelogs for your entities.
 
@@ -15,8 +12,8 @@ Entity Configuration
 DataAudit can only be enabled for Configurable entities. To add a property
 of an entity to the changelog, you simply have to enable the audit
 for the entity itself and specify some fields you want to be logged. To achieve this,
-you should use the :class:`@Config <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\Config>`
-and :class:`@ConfigField <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`
+you should use the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config``
+and ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField``
 annotations for the entity.
 
 .. caution::
@@ -35,9 +32,8 @@ annotations for the entity.
 Example of annotation configuration:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Entity/Product.php
 
-
-    // src/Acme/DemoBundle/Entity/Product.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
@@ -111,6 +107,104 @@ Each entity object gets its own history. Therefore, changesets get version
 numbers starting with 1. Each time a new changeset is created, a new version
 number is created by incrementing the highest existing version number for a
 particular entity by one.
+
+Additional Fields
+-----------------
+
+You can store additional fields in every entry of the audit log. There are no requirements for the type of data.
+If the object is passed to an array, it is properly sanitized and converted to the supported format.
+To clarify the need of additional fields, see the example below:
+
+Suppose a developer creates an extension that integrates OroCRM with an external System A. This integration synchronizes Product entities between systems. However, the identifier of the Product entity is different in CRM (**id**) and System A (**system_id**). System A tracks changes in CRM calling API audit endpoint and matches Products on its side by system_id, so it will be helpful to attach this field to every response (for example, when a Product is removed). To make it happen, one can use "additional fields". The entity must implement *AuditAdditionalFieldsInterface*.
+
+In our example, it can look like this:
+
+.. code-block:: php
+
+    namespace MyBundle\Entity;
+
+    use Oro\Bundle\DataAuditBundle\Entity\AuditAdditionalFieldsInterface;
+
+    class Product implements AuditAdditionalFieldsInterface
+    {
+        // rest of code
+
+        public function getAdditionalFields()
+        {
+            return ['system_id' => $this->getSystemId()];
+        }
+    }
+
+Segment
+-------
+
+DataAuditBundle extends OroSegmentBundle by new filter type "Data audit".
+
+* This filter can be used to filter records based on if they
+
+  * had field changed to value (e.g. Contact who changed job position to "Director")
+  * had field changed to value in period of time (e.g. Contact who changed job position to "Director" within last week)
+
+* Following conditions have to be fulfilled in order to be able to filter by specific field
+
+  * entity has to be auditable
+  * field has to be auditable
+
+.. _bundle-docs-platform--data-audit--add-new-types:
+
+Add New Auditable Types
+-----------------------
+
+To add new auditable types, register a new type in your bundle's boot method:
+
+.. code-block:: php
+
+    use Oro\Bundle\DataAuditBundle\Model\AuditFieldTypeRegistry;
+
+    class MyBundle extends Bundle
+    {
+        public function boot()
+        {
+            /**
+             * You can also use AuditFieldTypeRegistry::overrideType to replace existing type
+             * But make sure you move old data into new columns
+             */
+            AuditFieldTypeRegistry::addType($doctrineType = 'datetimetz', $auditType = 'datetimetz');
+        }
+    }
+
+
+Next, create a migration which will add columns to the AuditField entity:
+
+.. code-block:: php
+
+    use Doctrine\DBAL\Schema\Schema;
+
+    use Oro\Bundle\DataAuditBundle\Migration\Extension\AuditFieldExtension;
+    use Oro\Bundle\DataAuditBundle\Migration\Extension\AuditFieldExtensionAwareInterface;
+    use Oro\Bundle\MigrationBundle\Migration\Migration;
+    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+    class MyMigration implements Migration, AuditFieldExtensionAwareInterface
+    {
+        /** @var AuditFieldExtension */
+        private $auditFieldExtension;
+
+        public function setAuditFieldExtension(AuditFieldExtension $extension)
+        {
+            $this->auditFieldExtension = $extension;
+        }
+
+        public function up(Schema $schema, QueryBag $queries)
+        {
+            $this->auditFieldExtension->addType($schema, $doctrineType = 'datetimetz', $auditType = 'datetimetz');
+        }
+    }
+
+
+To see the auditable option in the entity configuration, make sure your field type is in the allowed types here: **DataAuditBundle/Resources/config/oro/entity_config.yml**.
+
+To make sure your column is displayed correctly in the grids (segments, reports...), it might be necessary to create new column options guesser with tag **oro_datagrid.column_options_guesser** and set **frontend_type property**.
 
 Browsing the Change History
 ---------------------------

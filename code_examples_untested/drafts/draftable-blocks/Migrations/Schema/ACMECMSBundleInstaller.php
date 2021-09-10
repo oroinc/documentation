@@ -31,9 +31,6 @@ class ACMECMSBundleInstaller implements Installation
         $this->addAcmeCmsBlockForeignKeys($schema);
     }
 
-    /**
-     * @param Schema $schema
-     */
     private function createAcmeCmsBlockColumns(Schema $schema): void
     {
         $table = $schema->createTable('acme_cms_block');
@@ -57,9 +54,6 @@ class ACMECMSBundleInstaller implements Installation
         $table->addUniqueIndex(['title'], 'UNIQ_11767F6E2B36786B');
     }
 
-    /**
-     * @param Schema $schema
-     */
     private function addAcmeCmsBlockForeignKeys(Schema $schema): void
     {
         $table = $schema->getTable('acme_cms_block');
