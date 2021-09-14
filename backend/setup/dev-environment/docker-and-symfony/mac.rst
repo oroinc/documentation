@@ -25,7 +25,7 @@ Environment Setup
 
    .. code-block:: none
 
-      brew install php@7.4 composer node docker-compose
+      brew install php@7.4 composer node@14 docker-compose
       echo 'export PATH="/usr/local/opt/php@7.4/bin:$PATH" \nexport PATH="/usr/local/opt/php@7.4/sbin:$PATH" \nexport PATH="/usr/local/opt/node@12/bin:$PATH"' >> ~/.bash_profile
 
 4. If you going to use an Enterprise Edition of the application, install and enable the mongodb php extension:
