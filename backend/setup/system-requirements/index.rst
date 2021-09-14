@@ -89,8 +89,8 @@ Oro applications are compatible with most web servers with PHP support, but the 
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| v.12 used for JS assets minification  |
-|                   |   and SCSS assets build.                          |
+| *Assets*          | * |Node.js| >=12.0,<15.0 used for JS assets       |
+|                   |   minification and SCSS assets build.             |
 +-------------------+---------------------------------------------------+
 
 .. note::

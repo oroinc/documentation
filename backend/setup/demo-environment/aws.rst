@@ -20,7 +20,7 @@ Every AMI (Amazon Machine Image) contains an installed Oro Application along wit
    "**Web server**","Nginx v.1.12"
    "**Database**","MySQL 5.7"
    "**PHP**","PHP >=7.3.13"
-   "**Other tools**","NodeJS v.12, Git v.2.7, Composer v.1.9"
+   "**Other tools**","NodeJS >=12.0,<15.0, Git v.2.7, Composer v.1.9"
 
 .. note: This deployment configuration is suitable for development or testing environments and for applications with a relatively small
     amount of data. For the description of the production environment for |oro_app_name| with large data, see the

@@ -36,12 +36,12 @@ Environment Setup
       sudo echo extension=mongodb.so | sudo tee -a /etc/php/7.4/fpm/php.ini
       sudo echo extension=mongodb.so | sudo tee -a /etc/php/7.4/cli/php.ini
 
-8. Install Node.js 12:
+8. Install Node.js 14:
 
    .. code-block:: bash
 
       sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-      curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+      curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
       sudo apt -y install nodejs
 
 9. Install Composer:

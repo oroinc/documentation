@@ -14,12 +14,12 @@ Environment Setup
 
       sudo apt -y install php php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-zip php-intl php-mbstring php-opcache php-curl php-bcmath php-ldap php-pgsql
 
-2. Install Node.js 12:
+2. Install Node.js 14:
 
    .. code-block:: bash
 
       sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-      curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+      curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
       sudo apt -y install nodejs
 
 3. Install Docker and Docker Compose:
