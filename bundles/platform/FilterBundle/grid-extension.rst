@@ -93,7 +93,7 @@ String Filter
 
 Provides filtering using string comparison.
 
-`type: string` - Validated by TextFilterType in backend and rendered by :ref:`Oro.Filter.ChoiceFilter <backend-entities-filters-js-widgets-oro-filter-choice-filter>`.  When case_insensitive is set to false, it is possible to convert value by using callback defined in 'value_conversion'.
+`type: string` - Validated by TextFilterType in the backend and rendered by ``oro/filter/choice-filter``.  When case_insensitive is set to false, it is possible to convert value by using callback defined in 'value_conversion'.
 
 Number and Percent Filter
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -104,7 +104,7 @@ Provides filtering by numbers comparison.
 
 `type: number` - integer/decimal filter
 
-Validated by :ref:`NumberFilterType <backend-filters-form-types--number>` in backend and rendered by :ref:`Oro.Filter.NumberFilter <backend-entities-filters-js-widgets-oro-filter-number-filter>`.
+Validated by :ref:`NumberFilterType <backend-filters-form-types--number>` in the backend and rendered by ``oro/filter/number-filter``.
 
 `type: number-range` - integer/decimal filter
 
@@ -112,32 +112,31 @@ Validated by :ref:`NumberFilterType <backend-filters-form-types--number>` in bac
 
 `type: currency` - currency filter
 
-Validated by :ref:`NumberRangeFilterType <backend-filters-form-types-oro-type-number-range-filter>` in backend
-and rendered by :ref:`Oro.Filter.NumberRangeFilter <backend-entities-filters-js-widgets-oro-filter-number-range-filter>`.
+Validated by :ref:`NumberRangeFilterType <backend-filters-form-types-oro-type-number-range-filter>` in the backend
+and rendered by ``oro/filter/number-range-filter``.
 
 Boolean Filter
 ^^^^^^^^^^^^^^
 
 Provides filtering for boolean values.
 
-`type: boolean` - Validated by :ref:`BooleanFilterType <backend-filters-form-types-oro-type-boolean-filter>` in backend
-and rendered by :ref:`Oro.Filter.ChoiceFilter <backend-entities-filters-js-widgets-oro-filter-choice-filter>` with a predefined set of options (yes/no)
+`type: boolean` - Validated by :ref:`BooleanFilterType <backend-filters-form-types-oro-type-boolean-filter>` in the backend and rendered by ``oro/filter/boolean-filter`` with a predefined set of options (yes/no).
 
 Choice Filter
 ^^^^^^^^^^^^^
 
 Provides filtering data using a list of predefined choices
 
-`type: choice` - Validated by :ref:`ChoiceFilterType <backend-filters-form-types-oro-type-choice-filter>` in backend
-and rendered by :ref:`Oro.Filter.ChoiceFilter <backend-entities-filters-js-widgets-oro-filter-choice-filter>`.
+`type: choice` - Validated by :ref:`ChoiceFilterType <backend-filters-form-types-oro-type-choice-filter>` in the backend
+and rendered by ``oro/filter/select-filter``.
 
 Entity Filter
 ^^^^^^^^^^^^^
 
 Provides filtering data using list of choices that extracted from database.
 
-`type: entity` - Validated by :ref:`EntityFilterType <backend-filters-form-types-oro-type-entity-filter>` in backend
-and rendered by :ref:`Oro.Filter.ChoiceFilter <backend-entities-filters-js-widgets-oro-filter-choice-filter>`.
+`type: entity` - Validated by :ref:`EntityFilterType <backend-filters-form-types-oro-type-entity-filter>` in the backend
+and rendered by ``oro/filter/select-filter``.
 
 Date Filter
 ^^^^^^^^^^^
@@ -145,7 +144,7 @@ Date Filter
 Provides filtering data by date values
 
 `type: date` - Validated by :ref:`DateRangeFilterType <backend-filters-form-types-oro-type-daterange-filter>`.
-Rendered by :ref:`Oro.Filter.DateFilter <backend-entities-filters-js-widgets-oro-filter-date-filter>`.
+Rendered by ``oro/filter/date-filter``.
 
 DateTime Filter
 ^^^^^^^^^^^^^^^
@@ -153,23 +152,23 @@ DateTime Filter
 Provides filtering data by datetime values
 
 `type: datetime` - Validated by :ref:`DateTimeRangeFilterType <backend-filters-form-types-oro-type-datetime-filter>`.
-Rendered by :ref:`Oro.Filter.DateTimeFilter <backend-entities-filters-js-widgets-oro-filter-datetime-filter>`.
+Rendered by ``oro/filter/datetime-filter``.
 
 DateGrouping Filter
 ^^^^^^^^^^^^^^^^^^^
 
 Provides grouping dates using list of predefined choices: Day, Month, Quarter, Year
 
-`type: datetime` - Validated by :ref:`DateGroupingFilterType <backend-filters-form-types-grouping>` in backend
-and rendered by :ref:`Oro.Filter.ChoiceFilter <backend-entities-filters-js-widgets-oro-filter-choice-filter>`.
+`type: datetime` - Validated by :ref:`DateGroupingFilterType <backend-filters-form-types-grouping>` in the backend
+and rendered by ``oro/filter/datetime-filter```.
 
 SkipEmptyPeriods Filter
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Provides skipping empty data using list of predefined choices: Yes, No
 
-`type: choice` - Validated by :ref:`SkipEmptyPeriodsFilterType <backend-filters-form-types-skip-empty-periods>` in backend
-and rendered by :ref:`Oro.Filter.ChoiceFilter <backend-entities-filters-js-widgets-oro-filter-choice-filter>`.
+`type: choice` - Validated by :ref:`SkipEmptyPeriodsFilterType <backend-filters-form-types-skip-empty-periods>` in the backend
+and rendered by ``oro/filter/select-filter``.
 
 Customization
 -------------
@@ -178,3 +177,15 @@ To implement your filter you have to do following:
 
 - Develop class that implements ``Oro\Bundle\FilterBundle\Filter\FilterInterface`` (also there is basic implementation in AbstractFilter class)
 - Register your filter as service with tag { name: oro\_filter.extension.orm\_filter.filter, type: YOUR\_FILTER\_TYPE }
+- Create and register JavaScript module for the new filter. The *map-filter-module-name.js* defines the JavaScript module name for a filter based on frontend_type by the pattern ``'oro/filter/{{type}}-filter'``. Since module name does not represent the real path to the filter file, add the alias and dynamic-imports definitions to your *jsmodules.yml* file. E.g.:
+
+  .. code-block:: yaml
+
+     aliases:
+         oro/filter/subcategory-filter$: orocatalog/js/filter/subcategory-filter
+     dynamic-imports:
+         orodatagrid:
+             - oro/filter/subcategory-filter
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

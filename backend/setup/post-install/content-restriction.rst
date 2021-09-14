@@ -88,7 +88,6 @@ You can use the following reference table that illustrates the three modes and w
 
 .. image:: /img/backend/setup/content-restriction/modes.png
    :alt: Three modes of configuration and use cases
-   :scale: 90%
 
 **Related Articles**
 
