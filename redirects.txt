@@ -308,3 +308,7 @@ backend/bundles/platform/WorkflowBundle /bundles/platform/WorkflowBundle/
 bundles/platform/NotificationBundle/notification-event /bundles/platform/NotificationBundle
 bundles/commerce/ConsentBundle/cookie-banner /bundles/commerce/CookieConsentBundle
 community/issues /community/report-issues/index
+backend/entities/filters /bundles/platform/FilterBundle
+backend/entities/filters/grid-extension /bundles/platform/FilterBundle/grid-extension
+backend/entities/filters/filter-form-types /bundles/platform/FilterBundle/filter-form-types
+backend/entities/filters/javascript-widgets /bundles/platform/FilterBundle

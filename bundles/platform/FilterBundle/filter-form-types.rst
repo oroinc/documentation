@@ -94,10 +94,6 @@ oro\_type\_filter
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\TextFilterType``
 
-**JS Class**
-
-*ro.Filter.TextFilter*
-
 .. _backend-filters-form-types--number:
 
 oro\_type\_number\_filter Form Type
@@ -137,10 +133,6 @@ oro\_type\_filter
 **Class**
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\NumberFilterType``
-
-**JS Class**
-
-*Oro.Filter.NumberFilter*
 
 **Options**
 
@@ -202,10 +194,6 @@ oro\_type\_number\_filter
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\NumberRangeFilterType``
 
-**JS Class**
-
-*Oro.Filter.NumberRangeFilter*
-
 **Options**
 
 * **data\_type** - This option can be used for configuration of value field type. Can be a value of one of constants:
@@ -251,11 +239,6 @@ oro\_type\_filter
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\ChoiceFilterType``
 
-**JS Classes**
-
-*Oro.Filter.MultiSelectFilter*
-*Oro.Filter.SelectFilter*
-
 .. _backend-filters-form-types-oro-type-entity-filter:
 
 oro\_type\_entity\_filter Form Type
@@ -281,11 +264,6 @@ oro\_type\_choice\_filter
 **Class**
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\EntityFilterType``
-
-**JS Classes**
-
-*Oro.Filter.MultiSelectFilter*
-*Oro.Filter.SelectFilter*
 
 .. _backend-filters-form-types-oro-type-boolean-filter:
 
@@ -315,10 +293,6 @@ oro\_type\_choice\_filter
 **Class**
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\BooleanFilterType``
-
-**JS Class**
-
-*Oro.Filter.SelectFilter*
 
 .. _backend-filters-form-types-oro-type-daterange-filter:
 
@@ -361,10 +335,6 @@ oro\_type\_filter
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\DateRangeFilterType``
 
-**JS Classes**
-
-*Oro.Filter.DateFilter*
-
 **Options Description**
 
 * **widget\_options** - Value of this option will be used by javascript widget to correctly display its data. Default value of this option depend from of current application locale options.
@@ -403,10 +373,6 @@ oro\_type\_date\_range\_filter
 **Class**
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\DateRangeFilterType``
-
-**JS Classes**
-
-*Oro.Filter.DateFilter*
 
 oro\_type\_date\_range Form Type
 --------------------------------
@@ -494,11 +460,6 @@ oro\_type\_choice\_filter
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\DateGroupingFilterType``
 
-**JS Classes**
-
-*Oro.Filter.MultiSelectFilter*
-*Oro.Filter.SelectFilter*
-
 .. _backend-filters-form-types-skip-empty-periods:
 
 oro\_type\_skip\_empty\_periods\_filter Form Type
@@ -526,11 +487,6 @@ oro\_type\_choice\_filter
 **Class**
 
 ``Oro\Bundle\FilterBundle\Form\Type\Filter\DateGroupingFilterType``
-
-**JS Classes**
-
-*Oro.Filter.MultiSelectFilter*
-*Oro.Filter.SelectFilter*
 
 Example of Usage
 ----------------
