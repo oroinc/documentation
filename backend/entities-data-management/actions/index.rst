@@ -163,7 +163,7 @@ Supposing you need to disable the default `DELETE` operation for your new `MyEnt
    :linenos:
 
     operations:
-        DELETE:f
+        DELETE:
             exclude_entities: ['MyEntity']
 
 The operation merges special additional condition to the default operation during the configuration compilation, so that the default `DELETE` operation doesn't match your entity and is not displayed as well.
