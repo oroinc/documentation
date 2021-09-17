@@ -78,7 +78,25 @@ You need to configure the following parameters for the testing environment:
 
    .. code-block:: none
 
-       $ bin/console oro:install --env=test --organization-name=Oro --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=n --application-url=http://localhost
+       $ php bin/console oro:install --env=test
+
+   .. note::
+
+       When the following options are not provided, they are set up automatically for the ``test`` environment:
+           * --user-name=admin
+           * --user-email=admin\@example.com
+           * --user-firstname=John
+           * --user-lastname=Doe
+           * --user-password=admin
+           * --sample-data=n
+           * --organization-name=OroInc
+           * --application-url=http://localhost/
+           * --language=en
+           * --formatting-code=en_US
+           * --skip-assets
+           * --skip-translations
+           * --no-interaction
+           * --timeout=600
 
    During installation, the database structure is set up and standard fixtures are loaded.
 

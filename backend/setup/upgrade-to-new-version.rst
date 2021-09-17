@@ -99,6 +99,16 @@ To retrieve a new version and upgrade your Oro application instance, execute the
         the `oro:search:reindex` and `oro:website-search:reindex` commands.
         See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
 
+   .. note::
+
+       When the following options are not provided, they are set up automatically for the ``test`` environment:
+           * --force
+           * --skip-assets
+           * --skip-translations
+           * --timeout=600
+
+       The verbose mode is always set to debug in the ``test`` enviroment.
+
 11. Remove the caches.
 
     .. code-block:: none
