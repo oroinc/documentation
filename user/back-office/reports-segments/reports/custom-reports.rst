@@ -273,6 +273,8 @@ In the main menu, navigate to **Reports & Segments**. Custom reports are gathere
 Export a Report
 ---------------
 
+.. note:: Please be aware the Export Grid button may not be available for some reports if the grid you want to export contains grouping by a related entity. 
+
 1. Open the report that you want to export:
 
    * To export a custom report, navigate to **Reports & Segments > Manage Reports** in the main menu and click the required report.
