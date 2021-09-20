@@ -1,3 +1,5 @@
+.. _entities-data-management-fixtures:
+
 Fixtures and Demo Data
 ======================
 
