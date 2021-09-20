@@ -65,6 +65,16 @@ Running Tests
           extensions: &default_extensions
               Behat\MinkExtension:
                   base_url: "https://example.com"
+              # This configuration changes artifacts URLs to local file links.
+              # Remove it if artifacts URLs are the same as for the tested application
+              # or change the base_url to the custom base URL for artifacts.
+              Oro\Bundle\TestFrameworkBundle\Behat\ServiceContainer\OroTestFrameworkExtension:
+                  artifacts:
+                      handlers:
+                          local:
+                              directory: '%paths.base%/public/media/behat'
+                              base_url: ~ # default is '%mink.base_url%/media/behat/'
+                              auto_clear: false
 
 3. Start the ChromeDriver:
 
