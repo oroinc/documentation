@@ -2151,30 +2151,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/CustomizeFormDataContext.php" target="_blank">Events</a>
 
-.. |Use Installer| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle" target="_blank">Use Installer</a>
-
-.. |Menu Data Source| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#menu-data-sources" target="_blank">Menu Data Source</a>
-
-.. |Create Menu with Builder| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#your-first-menu" target="_blank">Create Menu with Builder</a>
-
-.. |Render Menus| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#rendering-menus" target="_blank">Render Menus</a>
-
-.. |Disable Menu Items| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#disabling-menu-items-as-part-of-a-feature" target="_blank">Disable Menu Items</a>
-
-.. |Configure Breadcrumbs| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#breadcrumb-provider" target="_blank">Configure Breadcrumbs</a>
-
 .. |Configure Dedicated Database Connection for Reports| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md" target="_blank">Configure Dedicated Database Connection for Reports</a>
@@ -5799,6 +5775,10 @@ Links (Dev)
 .. |Composer| raw:: html
 
    <a href="https://getcomposer.org/" target="_blank">Composer</a>
+
+.. |CommandExecutor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/InstallerBundle/CommandExecutor.php" target="_blank">CommandExecutor</a>
 
 .. |Bug Bounty| raw:: html
 
