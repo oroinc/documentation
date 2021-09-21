@@ -1,5 +1,3 @@
-:oro_show_local_toc: false
-
 .. _bundle-docs-platform-navigation-bundle:
 
 OroNavigationBundle
