@@ -76,6 +76,8 @@ Configure Consent Form
    .. image:: /user/img/google/create_id.jpg
       :alt: The Create Client ID page
 
+.. note:: Please pay attention to the **Authorized Redirect URIs**, the value from the **System > Configuration > Google Settings > Google Integration Settings > Redirect URI** must be added in Authorized Redirect URIs configuration.
+
 8. Your client ID is generated.
 
    .. image:: /user/img/google/id_secret.jpg
@@ -104,6 +106,8 @@ To configure the integration with Google in your OroCRM or OroCommerce applicati
    "**Client ID** ","The Client ID generated in the API console."
    "**Client Secret**","The Client Secret generated in the API console."
    "**Google API Key** ","The API Key generated in the API console. Provide a valid |Google API key| to activate maps for addresses in the system."
+   "**Redirect URI**","**READ-ONLY** field, the value is auto-generated and should be added in **Authorized Redirect URIs** configuration mentioned above, see step 7 of **Configure Consent Form** part."
+
 
 4. Define the following fields for **Google Sign-on:**
 
@@ -117,7 +121,7 @@ To configure the integration with Google in your OroCRM or OroCommerce applicati
 | **OAuth 2.0 for email sync** | Check **Enable.**                                                                                                                                                                                                                    |
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. image:: /user/img/google/oro_google_integration_new.png
+.. image:: /user/img/google/google_integration_new.jpg
    :alt: Global Google integration settings
 
 Log in with Google
