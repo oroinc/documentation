@@ -383,7 +383,7 @@ To add a new config scope:
                     ->setConfigManager($manager)
                     ->process($form, $request)
                 ) {
-                    $this->get('session')->getFlashBag()->add(
+                    $request->getSession()->getFlashBag()->add(
                         'success',
                         $this->get('translator')->trans('oro.config.controller.config.saved.message')
                     );

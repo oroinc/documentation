@@ -41,7 +41,7 @@ Sample reindexation triggered from the code:
 
     // reindexation scope - $websitesIds = [2], $classesNames = [], $ids = [], $scheduled = true
     $event = new ReindexationRequestEvent([], [2]);
-    $eventDispatcher->dispatch(ReindexationRequestEvent::EVENT_NAME, $reindexationEvent);
+    $eventDispatcher->dispatch($reindexationEvent, ReindexationRequestEvent::EVENT_NAME);
 
 From the CLI
 ^^^^^^^^^^^^

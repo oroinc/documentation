@@ -258,7 +258,7 @@ This factory generates an individual configuration set for each instance of the 
 
 Create the <bundle_root>/Factory/FastShippingMethodFromChannelFactory.php class with the following content:
 
-.. oro_integrity_check:: abeb7c686a820ca95bbf0a679e7696840e9adb7b
+.. oro_integrity_check:: bd8f0d53c1423ab9927f635ed24ef3ff7c9b8f56
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Factory/FastShippingMethodFromChannelFactory.php
        :language: php
