@@ -66,7 +66,10 @@ To configure the synchronization for a specific user, go to the user configurati
 * **Sync Direction** - Data synchronization direction. Can be Oro to Microsoft, Microsoft to Oro, and Bidirectional.
 * **Conflict Resolution** - The conflict resolution strategy that should be used if the same calendar events are changed in both Microsoft and Oro. This option is applicable only when bidirectional data synchronization is configured.
 
-   .. note:: If the synchronization enables and the **Sync Direction** is Oro to Microsoft or Bidirectional, the attendees invitations on Oro side will be disabled.
+.. note:: If the synchronization is enabled on the system level, the following calendar events features will be disabled:
+
+     * Sending the invitаtion emails to attendees from the Oro side;
+     * Adding calendar events in attendees' calendars when creating a calendar event with attendees on the Oro side.
 
 .. _user-guide-integrations-microsoft-tasks:
 
