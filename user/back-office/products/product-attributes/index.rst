@@ -25,8 +25,6 @@ Add new product attributes to introduce new custom parameters in your product de
 
 .. hint:: Instead of using one general purpose attribute (e.g., color), create multiple specific attributes (e.g., car_color, laptop_color, table_color). This prevents loading all attributes as filters on all product pages and as a result, reduces the load on the database and improves the overall application performance.
 
-
-
 .. _products--product-attributes--create:
 
 
