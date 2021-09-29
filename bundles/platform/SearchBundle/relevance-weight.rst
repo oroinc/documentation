@@ -33,7 +33,6 @@ The illustration for this example is below:
 
 .. code-block:: yaml
 
-
     search:
         Oro\Bundle\OrganizationBundle\Entity\BusinessUnit:
             fields:
@@ -56,9 +55,6 @@ This approach requires creation of an event listener responsible for dynamic cal
 First, create an event listener class:
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Acme\Bundle\TestBundle\EventListener;
 
@@ -86,7 +82,6 @@ First, create an event listener class:
 Then, register this event listener in the DI container:
 
 .. code-block:: yaml
-
 
     services:
         acme_test.event_listener.search.set_search_relevance_weight:

@@ -43,8 +43,6 @@ The following example shows it:
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;

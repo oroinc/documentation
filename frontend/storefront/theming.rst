@@ -1,6 +1,5 @@
 .. _dev-doc-frontend-layouts-theming:
 
-
 Themes
 ======
 
@@ -97,7 +96,11 @@ From UI
 
 To change the theme from the back-office, refer to :ref:`Theme <configuration--commerce--design--theme>` section.
 
-To get the full configuration reference, run the ``bin/console config:dump-reference oro_layout`` command.
+To get the full configuration reference, run the ``oro:layout:config:dump-reference`` command which dumps the reference structure for `Resources/views/layouts/THEME_NAME/theme.yml`:
+
+.. code-block:: none
+
+   php bin/console oro:layout:config:dump-reference
 
 .. _dev-doc-frontend-layouts-theming-dir-stucture:
 

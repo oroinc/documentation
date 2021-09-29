@@ -38,7 +38,7 @@ For example, if the following command is run:
 
     php bin/console oro:message-queue:consume --memory-limit=700
 
-this means that:
+This means that:
 
 * The consumer is processing a message.
 * The consumer is checking the used memory amount.

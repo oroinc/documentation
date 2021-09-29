@@ -175,6 +175,11 @@ Dependency Injection Tags
 
 * :ref:`Translate Content in Oro Applications <dev-translation>`
 
+.. toctree::
+   :hidden:
+
+   Commands <commands>
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 

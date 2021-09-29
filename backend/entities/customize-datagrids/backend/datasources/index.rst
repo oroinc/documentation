@@ -23,9 +23,6 @@ To implement your own datasource type:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\Datagrid\Datasource;
 
     use Oro\Bundle\DataGridBundle\Datagrid\DatagridInterface;

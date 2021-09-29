@@ -143,7 +143,7 @@ This command loads processes configuration from .yml configuration files to the 
 oro:process:handle-trigger
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This command handles the trigger with a specified identifier and the process name. The command has two required options:
+This command executes a process trigger with a specified identifier and the process name. The command has two required options:
 
 - **--id** - the identifier of the ProcessTrigger to handle
 - **--name** - the name of ProcessDefinition. The trigger should belong to this ProcessDefinition

@@ -43,12 +43,12 @@ If your index is totally broken and you need to create it from scratch, or you n
 
 Standard search index provides following CLI commands (:ref:`here are examples of work with these commands <search_index_db_from_md--console-commands>`):
 
-* *oro:search:reindex* - allows to reindex all entities or only of a specific entity class; indexation can be synchronous (default behavior) or asynchronous;
-* *oro:search:index* - allows to reindex specific entities by their entity class and identifiers; indexation is asynchronous.
+* *oro:search:reindex* - rebuilds the search index and allows to reindex all entities or only entities of a specific entity class; indexation can be synchronous (default behavior) or asynchronous;
+* *oro:search:index* - allows to update search index for specific entities by their entity class and identifiers; indexation is asynchronous.
 
-Website search index provides following command (:ref:`here are examples of work with this command <website-search-bundle-console-commands>`):
+Website search index provides the following command (:ref:`here are examples of working with this command <website-search-bundle-console-commands>`):
 
-* **oro:website-search:reindex** - allows to reindex all entities, or only of a specific entity class, or entities for a specific website, or specific entities by their identifiers; indexation can be synchronous (default behavior) or asynchronous.
+* **oro:website-search:reindex** - rebuilds the storefront search index and allows to reindex all entities, or only entities of a specific entity class, or entities for a specific website, or specific entities by their identifiers; indexation can be synchronous (default behavior) or asynchronous.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

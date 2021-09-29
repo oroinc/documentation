@@ -217,5 +217,10 @@ To get breadcrumbs from a custom data provider, create a layout update with pred
 
 After rendering of breadcrumbs block type, you should see menu labels separated by slashes. All breadcrumb items can be clickable, except for the last one that represents the current page.
 
+.. toctree::
+   :hidden:
+
+   Commands <commands>
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

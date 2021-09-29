@@ -16,5 +16,11 @@ Related Documentation
 * :ref:`Processes <backend--entities-data-management--processes>`
 * |Workflow Entities|
 
+
+.. toctree::
+   :hidden:
+
+   Commands <commands>
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

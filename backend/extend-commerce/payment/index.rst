@@ -198,15 +198,12 @@ Follow the instructions provided in the :ref:`How to generate an installer <inst
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Migrations/Schema/ACMECollectOnDeliveryBundleInstaller.php
       :language: php
 
-
-
 Check That the Integration is Created Successfully
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Clear the application cache:
 
    .. code-block:: bash
-
 
        php bin/console cache:clear
 
@@ -240,8 +237,6 @@ Configuration Factory Interface
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Factory/CollectOnDeliveryConfigFactoryInterface.php
       :language: php
 
-
-
 Configuration Factory Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -249,8 +244,6 @@ Configuration Factory Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Factory/CollectOnDeliveryConfigFactory.php
       :language: php
-
-
 
 Create a Provider for the Payment Method Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -260,7 +253,6 @@ A configuration provider accepts and integration id and returns settings based o
 
 To add a payment method configuration provider, in the directory <bundle_root>/PaymentMethod/Config/Provider/ create interface CollectOnDeliveryConfigProviderInterface.php and the class CollectOnDeliveryConfigProvider.php that implements this interface:
 
-
 Configuration Provider Interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -268,8 +260,6 @@ Configuration Provider Interface
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Provider/CollectOnDeliveryConfigProviderInterface.php
       :language: php
-
-
 
 Configuration Provider Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -279,13 +269,10 @@ Configuration Provider Class
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Provider/CollectOnDeliveryConfigProvider.php
       :language: php
 
-
-
 Implement Payment Method Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the <bundle_root>/PaymentMethod/Config directory, create the CollectOnDeliveryConfigInterface.php interface and the CollectOnDeliveryConfig.php class that implements this interface:
-
 
 Configuration Interface
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -295,8 +282,6 @@ Configuration Interface
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/CollectOnDeliveryConfigInterface.php
       :language: php
 
-
-
 Configuration Class
 ~~~~~~~~~~~~~~~~~~~
 
@@ -304,8 +289,6 @@ Configuration Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/CollectOnDeliveryConfig.php
       :language: php
-
-
 
 Add the Payment Method Configuration Factory and Provider to the Services Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -317,8 +300,6 @@ To register the payment method configuration factory and provider, append the fo
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
       :lines: 23-35
-
-
 
 Create a Factory for the Payment Method View
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -334,8 +315,6 @@ Payment Method View Factory Interface
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Factory/CollectOnDeliveryViewFactoryInterface.php
       :language: php
-
-
 
 Payment Method View Factory Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -361,13 +340,10 @@ Payment Method View Provider Class
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Provider/CollectOnDeliveryViewProvider.php
       :language: php
 
-
-
 Implement the Payment Method View
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Finally, to implement the payment method view, create <bundle_root>/PaymentMethod/ViewCollectOnDeliveryView.php:
-
 
 Payment Method View Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -376,8 +352,6 @@ Payment Method View Class
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/CollectOnDeliveryView.php
       :language: php
-
-
 
 Add the Payment Method View Factory and Provider to the Services Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -389,8 +363,6 @@ To register the payment method view factory and provider, append the following k
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
       :lines: 41-53
-
-
 
 Create a Factory for the Main Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -405,8 +377,6 @@ Factory Interface
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Factory/CollectOnDeliveryPaymentMethodFactoryInterface.php
       :language: php
 
-
-
 Factory Class
 ~~~~~~~~~~~~~
 
@@ -415,13 +385,10 @@ Factory Class
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Factory/CollectOnDeliveryPaymentMethodFactory.php
       :language: php
 
-
-
 Create Provider for the Main Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To add a payment method provider, create <bundle_root>/PaymentMethod/Provider/CollectOnDeliveryProvider.php:
-
 
 Provider Class
 ~~~~~~~~~~~~~~
@@ -431,13 +398,10 @@ Provider Class
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Provider/CollectOnDeliveryMethodProvider.php
       :language: php
 
-
-
 Implement the Main Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now, implement the main method. To do this, create the <bundle_root>/PaymentMethod/CollectOnDelivery.php class:
-
 
 Class
 ~~~~~
@@ -447,8 +411,6 @@ Class
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/CollectOnDelivery.php
       :language: php
 
-
-
 .. hint::
    Pay attention to the lines:
 
@@ -457,7 +419,6 @@ Class
       .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/CollectOnDelivery.php
          :language: php
          :lines: 57-60
-
 
 
    This is where you define which transaction types are associated with the payment method. To keep it simple, for Collect On Delivery a single transaction is defined. Thus, it will work the following way: when a user submits an order, the "purchase" transaction takes place, and the order status becomes "purchased".
@@ -500,8 +461,6 @@ layout.html.twig for the Payment Method Selection
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_options/layout.html.twig
      :language: html
 
-
-
 Note that the custom message to appear in the block is defined. Do not forget to add translations in the messages.en.yml for any custom text that you add.
 
 layout.html for the Payment Method Selection
@@ -512,8 +471,6 @@ layout.html for the Payment Method Selection
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_options/layout.yml
      :language: yaml
 
-
-
 layout.html.twig for the Order Review
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -521,8 +478,6 @@ layout.html.twig for the Order Review
 
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_order_submit/layout.html.twig
      :language: html
-
-
 
 layout.html for the Order Review
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -532,10 +487,9 @@ layout.html for the Order Review
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/views/layouts/default/imports/oro_payment_method_order_submit/layout.yml
      :language: html
 
-
-
 Define a Translation for the Custom Message
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 In step, you have added a custom message to the payment method block. Define a translation for it in the messages.en.yml which now should look like the following:
 
 .. oro_integrity_check:: 78a3b6d66b645c81a453332b7aa6cee382ca1ddd
@@ -544,8 +498,7 @@ In step, you have added a custom message to the payment method block. Define a t
       :language: yaml
 
 
-
-Check That Payment Method is Added
+Check That Payment Method Is Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now, the Collect On Delivery payment method is fully implemented.

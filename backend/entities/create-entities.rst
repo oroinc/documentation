@@ -354,7 +354,7 @@ You can modify the database using the interface the Doctrine DBAL offers with it
 
 Queries executed using the QueryBag, are divided into two groups: use the ``Oro\Bundle\MigrationBundle\Migration\QueryBag::addPreQuery``  to add a query that is executed before the schema changes from the migration class are performed. Queries scheduled with the ``Oro\Bundle\MigrationBundle\Migration\QueryBag::addPostQuery`` method are executed after the schema is modified.
 
-To  load and apply migrations to the existing database schema, execute the ``oro:migration:load`` command:
+To load and apply migrations to the existing database schema, execute the ``oro:migration:load`` command:
 
 .. code-block:: none
 

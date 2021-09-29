@@ -87,14 +87,32 @@ Create a Custom Application
 
 .. _dev-guide-development-practice-setup-dev-env-setup-env:
 
-Setup Application Environment
------------------------------
+Set Up Application Environment
+------------------------------
 
 If you are using CentOS, you can follow the :ref:`Environment Setup for Community Edition <environment-setup-community>`
 or :ref:`Environment Setup for Enterprise Edition <environment-setup-enterprise>` to set up the environment for your custom Oro application.
 Otherwise, we recommend using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`.
 
 Alternatively, to have a fully dockerized environment, you can use |Docker images and stacks for OroPlatform based applications by the Kiboko team|.
+
+To checks that the environment meets the application requirements, use the ``oro:check-requirements`` command:
+
+.. code-block:: none
+
+   php bin/console oro:check-requirements
+
+By default, this command shows only errors, but you can increase the verbosity to see warnings and informational messages too:
+
+.. code-block:: none
+
+   php bin/console oro:check-requirements -v
+
+.. code-block:: none
+
+   php bin/console oro:check-requirements -vv
+
+The command will return 0 on exit if all application requirements are met and it will return 1 if some of the requirements are not fulfilled.
 
 .. _dev-guide-development-practice-setup-dev-env-install-app:
 
@@ -105,7 +123,7 @@ When the environment is set up, follow the instructions in the :ref:`Installatio
 
 .. note::
 
-   In case of using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`, follow :ref:`this guide <setup-dev-env-docker-symfony-install-application>`.
+   If you use :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`, follow :ref:`this guide <setup-dev-env-docker-symfony-install-application>`.
 
 .. _dev-guide-development-practice-setup-dev-env-create-bundle:
 

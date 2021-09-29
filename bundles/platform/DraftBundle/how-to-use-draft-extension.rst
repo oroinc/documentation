@@ -21,7 +21,6 @@ Example:
 
 .. code-block:: php
 
-
     oro_draft.duplicator_extension.localization_extension:
         class: Oro\Bundle\DraftBundle\Duplicator\Extension\DuplicatorExtension
         arguments:
@@ -46,9 +45,6 @@ Default actions:
 The example below illustrates the way to use context. We only update the draft entity creation date. The draft entity publication date remains unchanged.
 
 .. code-block:: php
-
-
-   <?php
 
    namespace Oro\Bundle\DraftBundle\Duplicator\Extension;
 
@@ -92,9 +88,6 @@ The example below illustrates the way to create and use the filter. This filter 
 
 .. code-block:: php
 
-
-   <?php
-
    namespace Oro\Bundle\DraftBundle\Duplicator\Filter;
 
    use Oro\Bundle\DraftBundle\Entity\DraftableInterface;
@@ -133,9 +126,6 @@ Matcher indicates the criteria that the filter is following to work successfully
 As an example, consider a matcher that takes properties names. This enables you to use one filter for multiple properties.
 
 .. code-block:: php
-
-
-   <?php
 
    namespace Oro\Bundle\DraftBundle\Duplicator\Matcher;
 

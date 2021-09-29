@@ -27,7 +27,7 @@ automatically merged to a single output file and optimized for web presentation.
                 # List of file masks for inputs that has to be processed with RTL plugin
                 - 'acmedemo/path/**'
 
-To apply changes, run the command:
+To apply changes, run the the following command that installs and builds application assets:
 
 .. code-block:: none
 

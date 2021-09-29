@@ -25,5 +25,6 @@ Related Documentation
    combined-price-lists
    price-storage
    pricing-strategy
+   Commands <commands>
 
 

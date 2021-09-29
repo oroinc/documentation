@@ -62,8 +62,6 @@ Many-To-One, Bidirectional
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -111,8 +109,6 @@ Many-To-Many, Unidirectional
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -151,8 +147,6 @@ Many-To-Many, Unidirectional, Without Default Entity
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -190,8 +184,6 @@ Many-To-Many, Bidirectional
 ---------------------------
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\AcmeBundle\Migrations\Schema\v1_0;
 
@@ -241,8 +233,6 @@ Many-To-Many, Bidirectional, Without Default Entity
 ---------------------------------------------------
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\AcmeBundle\Migrations\Schema\v1_0;
 
@@ -297,8 +287,6 @@ on the "many" side, so it implies a bidirectional type of relationship.
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -336,8 +324,6 @@ One-To-Many, Bidirectional, Without Default Entity
 --------------------------------------------------
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\AcmeBundle\Migrations\Schema\v1_0;
 

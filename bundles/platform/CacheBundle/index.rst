@@ -29,7 +29,6 @@ The following example shows how these services can be used:
 
 .. code-block:: none
 
-   
     services:
         acme.test.cache:
             public: false
@@ -42,7 +41,6 @@ in the application configuration file, for example:
 
 .. code-block:: none
 
-   
     services:
         oro.cache.abstract:
             abstract: true
@@ -151,7 +149,6 @@ To implement 3rd approach for your configuration, you need to take the following
 
 .. code-block:: yaml
 
-   
     services:
         acme.my_configuration_provider:
             class: Acme\Bundle\AcmeBundle\Provider\MyConfigurationProvider
@@ -171,7 +168,6 @@ An example of a custom warmer:
 
 .. code-block:: yaml
 
-   
     services:
         acme.my_configuration_provider.warmer:
             class: Oro\Component\Config\Cache\ConfigCacheWarmer
@@ -186,7 +182,6 @@ methods of the configuration provider to check if the Application cache needs to
 Here is an example how to use these methods:
 
 .. code-block:: php
-
 
     private function ensureConfigLoaded()
     {
@@ -249,9 +244,6 @@ we need to make sure that we do not keep old values in the memory. Consider this
 
 .. code-block:: php
 
-   
-    <?php
-
     class LocalizationManager
     {
         private \Doctrine\Common\Cache\ArrayCache $cacheProvider;
@@ -312,7 +304,6 @@ Here is an example of such configuration:
 
 .. code-block:: yaml
 
-   
     Oro\Bundle\OrderBundle\Entity\OrderAddress:
         attributes:
             id:
@@ -328,7 +319,6 @@ the default normalizer ``GetSetMethodNormalizer``. In such case new normalizer s
 tagged with ``oro_cache_generator_normalizer``.
 
 .. code-block:: yaml
-
 
    acme_cache.serializer.normalizer:
       class: AcmeBundle\Normalizer\CustomObjectNormalizer

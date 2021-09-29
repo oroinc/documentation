@@ -8,6 +8,8 @@ What is the difference between the `Deploy` and `Upgrade` commands?
 
 The 'deploy' command executes `oro:install` while the 'upgrade' command executes `oro:platform:update`. The `oro:install` command populates the database with the minimal necessary data for application operation. The `oro:platform:update` prepares the existing data for the upgrade by running the necessary data migrations. The update also ensures that the data is preserved and compatible with the updated version of the application.
 
+.. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command description for more information.
+
 How can I remove existing data and install the application from scratch in the staging environment?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

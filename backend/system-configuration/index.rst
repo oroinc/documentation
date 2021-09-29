@@ -118,6 +118,20 @@ This command has two arguments:
 * Config parameter name - the key of config parameter you want to change. For example, 'oro_anybundle.anysetting';
 * Config parameter value - the value you want to set to the parameter.
 
+For example, to update the back-office and storefront URLs of an OroCommerce instance respectively, run:
+
+.. code-block:: none
+
+    php bin/console oro:config:update oro_ui.application_url 'http://admin.example.com'
+
+.. code-block:: none
+
+    php bin/console oro:config:update oro_website.url 'http://store.example.com'
+
+.. code-block:: none
+
+    php bin/console oro:config:update oro_website.secure_url 'https://store.example.com'
+
 Create Configuration Forms
 --------------------------
 
@@ -316,8 +330,6 @@ To add a new config scope:
 
    .. code-block:: php
 
-        <?php
-
         namespace Acme\Bundle\SomeBundle\Provider;
 
         use Oro\Bundle\ConfigBundle\Provider\AbstractProvider;
@@ -509,8 +521,6 @@ Please note that a group configuration form can have several configurators, and 
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\DemoBundle;
 
     use Symfony\Component\Form\FormBuilderInterface;
@@ -551,8 +561,6 @@ All handlers are executed only if a group configuration form does not have valid
                     - '@acme.settings_form_handler::handle'
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\DemoBundle;
 
@@ -672,8 +680,6 @@ Define a Search Provider
 Create your own `DemoSearchProvider` that implements |SearchProviderInterface|.
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\DemoBundle\Provider;
 

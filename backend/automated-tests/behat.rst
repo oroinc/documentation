@@ -154,6 +154,7 @@ Install the application without demo data in production mode using the following
       --application-url=http://dev-crm.local --user-firstname=John --user-lastname=Doe \
       --user-password=admin  --organization-name=ORO --env=prod --sample-data=n --timeout=3000
 
+.. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command refference for more information.
 
 Install Test Automation Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -402,7 +403,6 @@ Now you should implement the element's ``setValue`` method:
 
 .. code-block:: php
 
-    <?php
     namespace Oro\Bundle\PaymentBundle\Tests\Behat\Element;
     use Oro\Bundle\TestFrameworkBundle\Behat\Element\Element;
     class PaymentMethodConfigType extends Element
@@ -474,8 +474,6 @@ Typical Page configuration:
 Sample Page class:
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\UserBundle\Tests\Behat\Page;
 

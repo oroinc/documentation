@@ -35,7 +35,7 @@ To switch from flat pricing back to CPL, use the following command:
 
    php "bin/console" oro:price-lists:switch-pricing-storage combined
 
-You will be prompted to run reindexation:
+You will be prompted to run reindexation which will recalculate combined price lists and product prices:
 
 .. code-block:: php
 

@@ -127,7 +127,7 @@ If you need to load your part of the configuration directly from the file, use t
 Configuration Loading
 ---------------------
 
-To load the configuration, execute the following command:
+To load workflow definitions to the database, execute the following command:
 
 .. code-block:: php
 

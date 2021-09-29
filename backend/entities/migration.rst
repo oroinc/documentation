@@ -132,7 +132,7 @@ Migrations Dump Command
 
 Use the **oro:migration:dump** command to help create installation files. This command outputs the current database structure as plain SQL or as ``Doctrine\DBAL\Schema\Schema`` queries.
 
-This command supports the folowing additional options:
+This command supports the following additional options:
 
 - **plain-sql** - Outputs schema as plain SQL queries
 - **bundle** - The bundle name for which the migration is generated

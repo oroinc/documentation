@@ -34,6 +34,8 @@ With `orocloud.yaml` it is possible to override the following nodes:
 
 **install_commands**
 
+.. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command description for more information.
+
 .. code-block:: yaml
 
     ---
@@ -784,9 +786,9 @@ To restore it as is, run the following command in the target environment:
 
     * **option "--flush-elasticsearch"** - Flush ElasticSearch. All ElasticSearch data will be lost.
 
-    * **option "--run-base-reindex"** - Run command [oro:search:reindex] in background.
+    * **option "--run-base-reindex"** - Run command [oro:search:reindex] in background to update search index for the specified entities.
 
-    * **option "--run-website-reindex"** - Run command [oro:website-search:reindex] in background.
+    * **option "--run-website-reindex"** - Run command [oro:website-search:reindex] in background to rebuild storefront search index.
 
 .. note:: If during dump:load not all components(db,ess,rpm) are selected, the application may be not working. By default only db will be restored.
 

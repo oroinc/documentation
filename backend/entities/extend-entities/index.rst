@@ -510,6 +510,52 @@ In case of a string, it will be formatted in a twig template automatically based
 field with text equal to ``'title'``. Title will also be escaped. If ``'link'`` option exists, we show the field as a link
 with href that equals the ``'link'`` option value.
 
+Console Commands
+----------------
+
+* Clear cache.
+
+  Use the ``oro:entity-extend:cache:clear`` command to clear extended entity cache.
+
+  .. code-block:: none
+
+     php bin/console oro:entity-extend:cache:clear
+
+* Skip warming up cache.
+
+  Use the ``--no-warmup`` option to skip warming up the cache after cleaning:
+
+   .. code-block:: none
+
+      php bin/console oro:entity-extend:cache:clear --no-warmup
+
+* Warm up cache.
+
+  Use the ``oro:entity-extend:cache:warmup`` command to warms up extended entity cache and its related caches (Doctrine metadata, Doctrine proxy classes for extended entities, cache of entity aliases).
+
+  .. code-block:: none
+
+     php bin/console oro:entity-extend:cache:warmup
+
+  The ``--cache-dir`` option can be used to override the default cache directory location.
+
+  .. code-block:: none
+
+     php bin/console oro:entity-extend:cache:warmup --cache-dir=<path>
+
+* Update schema.
+
+  Use the ``oro:entity-extend:update-schema`` command to updates database schema for extend entities.
+
+  .. code-block:: none
+
+     php bin/console oro:entity-extend:update-schema
+
+  The --dry-run option can be used to print the changes without applying them:
+
+  .. code-block:: none
+
+     php bin/console oro:entity-extend:update --dry-run
 
 .. toctree::
    :titlesonly:
