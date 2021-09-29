@@ -107,5 +107,15 @@ Each item in the `applicable` array can have the following attributes:
 - `parent_entity` - the name of parent entity, for example ``OroUserBundle:User`` or ``Oro\Bundle\UserBundle\Entity\User``
 - `identifier` - true/false, check if the field is the primary key
 
+Dump Reference Structure
+------------------------
+
+You can dumps the reference structure for Resources/config/oro/query_designer.yml by using the following command:
+
+.. code-block:: none
+
+   php bin/console oro:query-designer:config:dump-reference
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

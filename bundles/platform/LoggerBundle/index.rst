@@ -16,11 +16,21 @@ Error Logs Email Notifications
 
 To enable error logs email notification, run the ``oro:logger:email-notification`` command with semicolons separating the recipients, for example:
 
-.. code-block:: bash
+.. code-block:: none
 
    php bin/console oro:logger:email-notification --recipients="admin@example.com;support@example.com"
 
 To disable the notifications, run the command with the ``--disable`` flag.
+
+The ``--recipients`` option can be used to update the list of the recipients that will receive email notifications about the logged errors:
+
+.. code-block:: none
+
+   php bin/console oro:logger:email-notification --recipients=<recipients>
+
+.. code-block:: none
+
+   php bin/console oro:logger:email-notification --recipients='email1@example.com;email2@example.com;emailN@example.com'
 
 Or you can configure recipients list using web interface from **System > Configuration > General Setup > Application Settings > Error Logs Notifications** section.
 

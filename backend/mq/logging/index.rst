@@ -25,7 +25,7 @@ Consumer console command has different |verbosity levels| that determine the mes
   "``-vvv``","``LogLevel::DEBUG`` and higher"
 
 All the ``LogLevel::ERROR`` logs and higher also will be printed to the ``prod.log`` file.
-You can change minimal log level that should be printed to the ``prod.log`` file using the ``oro:logger:level`` command.
+You can change minimal log level that should be printed to the ``prod.log`` file using the ``oro:logger:level`` command which temporarily changes the configured logging level.
 For more details, see the :ref:`Temporarily Decrease Log Level <bundle-docs-platform-logger-bundle>` documentation.
 
 .. note:: Keep in mind that ``prod.log`` is just an example. Your log file name may differ depending on your Monolog handlers configuration.

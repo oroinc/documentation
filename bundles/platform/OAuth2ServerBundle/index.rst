@@ -87,8 +87,6 @@ The OAuth applications can be added using data :ref:`fixtures <backend-entities-
 
 .. code-block:: php
 
-    <?php
-
     namespace Oro\Bundle\OAuth2ServerBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;

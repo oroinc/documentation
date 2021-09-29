@@ -27,8 +27,6 @@ To provide the current localization, create a custom extension, implement ``Oro\
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\DemoBundle\Extension;
 
     use Oro\Bundle\LocaleBundle\Entity\Localization;

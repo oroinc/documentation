@@ -114,11 +114,11 @@ The following variables are available in the script:
 - `$container` - Symfony2 DI container
 - `$commandExecutor` - an instance of the |CommandExecutor| class. You can use it to execute Symfony console commands
 
-.. note:: If you have multiple PHP versions installed, you need to configure the `PHP_PATH` variable with PHP binary path used by the webserver
 
-          - Apache2: `SetEnv PHP_PATH /usr/bin/php`
-          - Nginx: `fastcgi_param PHP_PATH /usr/bin/php;`
-          - PHP Built-in server: `/usr/bin/php bin/console...`
+.. toctree::
+   :hidden:
+
+   Commands <commands>
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

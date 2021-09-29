@@ -18,7 +18,7 @@ If you need to apply patches to the application, create a patch directory in the
 
 Keep in mind that if your application supports patch application on its own (for example via a specific bundle), you need to make sure there are no conflicts between these approaches and the same patch is not applied twice.  
 
-Note: Use the following command to make sure that the patch is correct and can be applied before deploying it into the production:
+..note:: Use the following command to make sure that the patch is correct and can be applied before deploying it into the production:
 
 .. code-block:: bash
 

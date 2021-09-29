@@ -15,3 +15,10 @@ Related Documentation
 * :ref:`Configure UI for the Activity Entity <backend-entity-activities-configure-ui>`
 * :ref:`Configure Custom Grid for Activity Context Dialog <backend-entity-activities-configure-custom-grid>`
 * :ref:`Enable Contexts Column in Activity Entity Grids <backend-entity-activities-enable-context-column>`
+* :ref:`CLI Commands ActivityBundle <bundle-docs-platform-activity-bundle-commands>`
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Commands <commands>

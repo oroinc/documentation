@@ -33,9 +33,6 @@ To configure datasource, create a datagrid event listener and subscribe to the `
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
 
     use Oro\Bundle\DataGridBundle\Datasource\ArrayDatasource\ArrayDatasource;

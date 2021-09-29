@@ -20,8 +20,6 @@ Each email address can be connected to an entity object which is the owner of th
 .. code-block:: php
    :caption: UserBundle/Entity/User.php
 
-    <?php
-
     namespace Oro\Bundle\UserBundle\Entity;
 
     ...
@@ -45,8 +43,6 @@ Each email address can be connected to an entity object which is the owner of th
 .. code-block:: php
    :caption: UserBundle/Entity/Email.php
 
-    <?php
-
     namespace Oro\Bundle\UserBundle\Entity;
 
     ...
@@ -61,8 +57,6 @@ UserBundle/Entity/Provider/EmailOwnerProvider.php
 
 .. code-block:: php
    :caption: UserBundle/Entity/Email.php
-
-    <?php
 
     namespace Oro\Bundle\UserBundle\Entity\Provider;
 
@@ -135,8 +129,6 @@ For example:
 
 .. code-block:: php
    :caption: AcmeEmailBodyLoader.php
-
-    <?php
 
     class AcmeEmailBodyLoader implements EmailBodyLoaderInterface
         /**

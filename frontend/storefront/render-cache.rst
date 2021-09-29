@@ -41,7 +41,6 @@ To enable the layout block cache, provide the ``cache`` block option.
 
 .. code-block:: yaml
 
-
    layout:
      actions:
        - '@setOption':
@@ -55,7 +54,6 @@ Disable the Cache
 By default, the cache is disabled for all the blocks. You can also disable the cache enabled by another layout update.
 
 .. code-block:: yaml
-
 
    layout:
      actions:
@@ -81,7 +79,6 @@ for post-cache substitution).
 
 .. code-block:: yaml
 
-
    layout:
      actions:
        - '@setOption':
@@ -101,7 +98,6 @@ user is logged in or not).
 **For example**, vary the cache item by a product id:
 
 .. code-block:: yaml
-
 
    layout:
      actions:
@@ -145,7 +141,6 @@ Indicates when the cache must be enabled.
 
 .. code-block:: yaml
 
-
    layout:
      actions:
        - '@setOption':
@@ -166,7 +161,6 @@ with the ``product_ID`` tag:
 
 .. code-block:: yaml
    :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
-
 
    layout:
      actions:
@@ -254,7 +248,6 @@ with the layout update or cache a wrapping container instead.
 
 .. code-block:: yaml
 
-
    layout:
      actions:
        - '@setOption':
@@ -278,9 +271,6 @@ interface and mark it with the ``layout_cache.extension`` DI tag.
 
 .. code-block:: php
    :caption: src/AcmeDemoBundle/Cache/Extension/DayOfWeekExtension.php
-
-
-   <?php
 
    namespace AcmeDemoBundle\Cache\Extension;
 
@@ -317,9 +307,6 @@ logged in:
 .. code-block:: php
    :caption: src/AcmeDemoBundle/Cache/Metadata/DisableCacheForLoggedInUsersCacheMetadataProvider.php
 
-
-   <?php
-
    namespace AcmeDemoBundle\Cache\Cache\Metadata;
 
    use Oro\Bundle\LayoutCacheBundle\Cache\Metadata\CacheMetadataProviderInterface;
@@ -343,7 +330,6 @@ logged in:
 
 .. code-block:: yaml
    :caption: src/AcmeDemoBundle/Resources/config/services.yml
-
 
    services:
      AcmeDemoBundle\Cache\Cache\Metadata\DisableCacheForLoggedInUsersCacheMetadataProvider:
@@ -377,8 +363,6 @@ product information when product has been updated:
 
    .. code-block:: php
       :caption: src/AcmeDemoBundle/EventListener/ProductUpdateListener.php
-
-      <?php
 
       namespace AcmeDemoBundle\EventListener;
 

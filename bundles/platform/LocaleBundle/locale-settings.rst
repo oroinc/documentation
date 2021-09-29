@@ -295,7 +295,7 @@ Localization Dumping
 
 Localization information is stored in ``*.yml`` files in appropriate bundles, but during installation these data is dumped to container parameters (on backend) and to file ``oro.locale_data.js`` (on frontend).
 
-If user wants to regenerate these dumped information, he have to execute two commands - cache:clear and oro:localization:dump:
+If a user wants to regenerate these dumped information, they need to execute two commands - ``cache:clear`` to clear the cache and ``oro:localization:dump`` to dumps locale settings for use in JavaScript:
 
 .. code-block:: php
 

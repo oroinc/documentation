@@ -315,8 +315,6 @@ So, to enable certain entities and actions for the Anonymous Customer User role 
 
 Once the application is installed, the predefined Non-Authenticated Visitors role will have the mentioned permissions/capabilities enabled.
 
-
-
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 

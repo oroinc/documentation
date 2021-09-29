@@ -3,7 +3,13 @@ Email Templates Migrations
 
 This section describes how to create migration for email template to update it to a new version:
 
-1. Get `MD5` hash of old template content (previous version). The most straightforward way is to run ``Oro\Bundle\EmailBundle\Command\GenerateMd5ForEmailsCommand``. It will output all available template names with hashes from the current database state. Copy hash for a specific template name.
+1. Get `MD5` hash of old template content (previous version). The most straightforward way is to run ``Oro\Bundle\EmailBundle\Command\GenerateMd5ForEmailsCommand`` to generates MD5 hashes for email template contents:
+
+   .. code-block:: none
+
+      php bin/console oro:email:generate-md5
+
+   It will output all available template names with hashes from the current database state. Copy hash for a specific template name.
 
 2. Create migration class extending ``Oro\Bundle\EmailBundle\Migrations\Data\ORM\AbstractHashEmailMigration`` and implement two required methods.
 

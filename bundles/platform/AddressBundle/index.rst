@@ -89,15 +89,14 @@ PHP API
 
 .. code-block:: php
 
-    <?php
-        //create empty address entity
-        $address = mew Address();
+   //create empty address entity
+   $address = mew Address();
 
-        //process insert/update
-        $this->get('oro_address.form.handler.address')->process($entity)
+   //process insert/update
+   $this->get('oro_address.form.handler.address')->process($entity)
 
-        //accessing address form service
-        $this->get('oro_address.form.address')
+   //accessing address form service
+   $this->get('oro_address.form.address')
 
 Address Collection
 ^^^^^^^^^^^^^^^^^^
@@ -108,14 +107,14 @@ Address collection can be added to a form following the next three steps:
 
    .. code-block:: php
 
-        $builder->add(
-            'addresses',
-            AddressCollectionType::class,
-            [
-                'required' => false,
-                'type'     => 'oro_address'
-            ]
-        );
+       $builder->add(
+           'addresses',
+           AddressCollectionType::class,
+           [
+               'required' => false,
+               'type'     => 'oro_address'
+           ]
+       );
 
 
 2) Add AddressCollectionTypeSubscriber. AddressCollectionTypeSubscriber must be initialized with an address collection field name and an address class name.

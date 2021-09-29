@@ -13,5 +13,10 @@ Related Documentation
 * :ref:`Database Structure Migrations Overview <backend-entities-migrations>`
 * :ref:`Use Fixtures <backend-entities-fixtures>`
 
+.. toctree::
+   :hidden:
+
+   Commands <commands>
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

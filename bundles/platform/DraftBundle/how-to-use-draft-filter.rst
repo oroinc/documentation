@@ -14,9 +14,6 @@ This example describes how to disable the draft filter. The following validator 
 
 .. code-block:: php
 
-
-   <?php
-
    namespace ACME\Bundle\CMSBundle\Validator\Constraints;
 
    use ACME\Bundle\CMSBundle\Entity\Block;

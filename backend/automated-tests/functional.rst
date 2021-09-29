@@ -100,6 +100,8 @@ You need to configure the following parameters for the testing environment:
 
    During installation, the database structure is set up and standard fixtures are loaded.
 
+   .. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command refference for more information.
+
 4. Run tests using phpunit with the proper --testsuite option (unit or functional).
 
    .. caution::	Currently, running different types of automated tests together is not supported. It is, therefore, strongly not recommended to run unit tests and functional tests side by side in one run as this produces errors. Unit tests create mock objects that later interfere with functional test execution and create unnecessary ambiguity. It is possible to disable unit tests on test startup with the help of the test suite option:

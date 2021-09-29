@@ -15,7 +15,6 @@ Usually, you do not need to provide a predefined set of associations between the
 
 .. code-block:: php
 
-    <?php
     ...
     class AcmeBundle implements Migration, CommentExtensionAwareInterface
     {

@@ -25,3 +25,8 @@ Related Documentation
 * :ref:`Filtering Messages in the Message Producer <dev-guide-mq-filtering-messages>`
 * :ref:`Buffering Messages in the Message Producer <dev-guide-mq-buffering-messages>`
 * :ref:`Delaying a Message <dev-guide-mq-delaying-messages>`
+
+.. toctree::
+   :hidden:
+
+   Commands <commands>

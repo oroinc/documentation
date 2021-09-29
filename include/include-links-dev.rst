@@ -5658,7 +5658,7 @@ Links (Dev)
 
 .. |oroform/js/app/views/expression-editor-view| raw:: html
 
-   <a href="FormBundle/Resources/public/js/app/views/expression-editor-view.js" target="_blank">oroform/js/app/views/expression-editor-view</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/app/views/expression-editor-view.js" target="_blank">oroform/js/app/views/expression-editor-view</a>
 
 .. |TinyMCE| raw:: html
 
@@ -5756,6 +5756,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/Provider/AdditionalEmailAssociationProviderInterface.php" target="_blank">AdditionalEmailAssociationProviderInterface</a>
 
+.. |Supported Date and Time Formats| raw:: html
+
+   <a href="https://php.net/manual/datetime.formats.php" target="_blank">Supported Date and Time Formats</a>
+
 .. |Configuration.php file| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/QueryDesigner/Configuration.php" target="_blank">Configuration.php file</a>
@@ -5783,3 +5787,4 @@ Links (Dev)
 .. |Bug Bounty| raw:: html
 
    <a href="https://oroinc.com/bug-bounty/" target="_blank">Bug Bounty</a>
+

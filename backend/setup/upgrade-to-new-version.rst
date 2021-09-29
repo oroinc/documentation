@@ -95,8 +95,8 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
       * ``--schedule-search-reindexation`` --- postpone search reindexation process until
         the message queue consumer is started (on step 12 below).
-      * ``--skip-search-reindexation`` --- skip search reindexation. Later, you can start it manually using
-        the `oro:search:reindex` and `oro:website-search:reindex` commands.
+      * ``--skip-search-reindexation`` --- skip search reindexation. Later, you can start it manually using commands
+        `oro:search:reindex` to update search index for the specified entities and `oro:website-search:reindex` to rebuild storefront search index.
         See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
 
    .. note::

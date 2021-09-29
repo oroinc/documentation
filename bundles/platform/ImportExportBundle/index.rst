@@ -18,5 +18,10 @@ Related Documentation
 * :ref:`Postpone Processing of the Row <dev-integrations-import-export-postponing-rows>`
 * :ref:`Events and Strategy Events <dev-integrations-import-export-events>`
 
+.. toctree::
+   :hidden:
+
+   Commands <commands>
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
