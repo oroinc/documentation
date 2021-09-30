@@ -112,50 +112,10 @@ Now you can go to System > Entities in the back-office. The 'Demo Attr' column s
 
 .. hint:: Check out the :ref:`example of YAML config <yaml-format-config-entity>`.
 
-Add Custom Config Validation
-----------------------------
+Add Custom Entity Config Validation
+-----------------------------------
 
-To add config validation to your bundle:
-
-1. Create a configuration file that implements ``ConfigurationEntityInterface`` or ``ConfigurationFieldInterface``. For entity config, use ``ConfigurationEntityInterface`` and the class that ends with EntityConfiguration. For field config, use ``ConfigurationFieldInterface`` and the class that ends with FieldConfiguration.
-
-Example:
-
-.. code-block:: php
-
-    namespace Oro\Bundle\SecurityProBundle\Config\Validation;
-
-    use Oro\Bundle\EntityConfigBundle\Config\Validation\ConfigurationEntityInterface;
-    use Symfony\Component\Config\Definition\Builder\NodeBuilder;
-
-    /**
-     * Configuration for security section
-     */
-    class SecurityEntityConfiguration implements ConfigurationEntityInterface
-    {
-        public function getSectionName(): string
-        {
-            return 'security';
-        }
-
-        public function setConfigurationForSection(NodeBuilder &$nodeBuilder): void
-        {
-            $nodeBuilder
-                ->variableNode('share_scopes')->end()
-            ;
-        }
-    }
-
-2. Add this class to ``services.yml`` with tag ``oro_entity_config.validation.entity_config`` .
-
-Example:
-
-.. code-block:: yaml
-
-    Oro\Bundle\SecurityProBundle\Config\Validation\SecurityEntityConfiguration:
-        tags:
-            - oro_entity_config.validation.entity_config
-
+For details on how to add validation, see the :ref:`Entity Configuration Validation <book-entities-entity-configuration-validation>` topic.
 
 Implementation
 --------------
@@ -649,6 +609,11 @@ method afterwards:
 
     Use the ``oro:entity-config:debug`` command to displays entity configuration and access or modify configuration values from the
     command line.
+
+.. toctree::
+   :hidden:
+
+   validation
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
