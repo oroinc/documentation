@@ -375,6 +375,10 @@ Links (Dev)
 
    <a href="http://backbonejs.org/#Events" target="_blank">Backbone events API</a>
 
+.. |Backbone View| raw:: html
+
+   <a href="http://backbonejs.org/#View" target="_blank">Backbone View</a>
+
 .. |declarative event bindings| raw:: html
 
    <a href="https://github.com/chaplinjs/chaplin/blob/master/docs/chaplin.view.md#listen" target="_blank">declarative event bindings</a>
@@ -415,6 +419,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/UIBundle/Resources/public/js/app/components/base/component.js" target="_blank">oroui/js/app/components/base/component</a>
 
+.. |oroui/js/app/views/base/view|  raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/UIBundle/Resources/public/js/app/views/base/view.js" target="_blank">oroui/js/app/views/base/view</a>
+
 .. |oroui/js/app/modules/jstree-actions-module.js|  raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/jstree-actions-module.js" target="_blank">oroui/js/app/modules/jstree-actions-module.js</a>
@@ -445,7 +453,7 @@ Links (Dev)
 
 .. |oroui/js/app/modules/input-widgets| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/input-widgets.js" target="_blank">oroui/js/app/modules/input-widgets|</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/input-widgets.js" target="_blank">oroui/js/app/modules/input-widgets</a>
 
 .. |jQuery-UI widget| raw:: html
 
@@ -5658,7 +5666,7 @@ Links (Dev)
 
 .. |oroform/js/app/views/expression-editor-view| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/app/views/expression-editor-view.js" target="_blank">oroform/js/app/views/expression-editor-view</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/FormBundle/Resources/public/js/app/views/expression-editor-view.js" target="_blank">oroform/js/app/views/expression-editor-view</a>
 
 .. |TinyMCE| raw:: html
 
@@ -5758,7 +5766,7 @@ Links (Dev)
 
 .. |AdditionalEmailAssociationProviderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/Provider/AdditionalEmailAssociationProviderInterface.php" target="_blank">AdditionalEmailAssociationProviderInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/NotificationBundle/Provider/AdditionalEmailAssociationProviderInterface.php" target="_blank">AdditionalEmailAssociationProviderInterface</a>
 
 .. |Supported Date and Time Formats| raw:: html
 
