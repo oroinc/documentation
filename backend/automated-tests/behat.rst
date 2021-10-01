@@ -689,7 +689,7 @@ Cucumber does not differentiate between the keywords, but choosing the right one
           | Password | <password> |
       And I press "Log in"
       Then I should be on "/user/login"
-      And I should see "Invalid user name or password."
+      And I should see "Invalid username or password."
 
       Examples:
       | login | password |
