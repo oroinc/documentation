@@ -75,6 +75,10 @@ Links (Dev)
 
    <a href="https://github.com/GeniusesOfSymfony/WebSocketBundle" target="_blank">GosWebSocketBundle</a>
 
+.. |PHP unserialization vulnerability| raw:: html
+
+   <a href="https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf" target="_blank">PHP unserialization vulnerability</a>
+
 .. |Apache| raw:: html
 
    <a href="https://httpd.apache.org/" target="_blank">Apache</a>
@@ -5432,14 +5436,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
 
-.. |ExtendScope.php| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/EntityConfig/ExtendScope.php" target="_blank">ExtendScope.php</a>
-
-.. |IndexScope.php| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/EntityConfig/IndexScope.php" target="_blank">IndexScope.php</a>
-
 .. |SerializedFieldsExtension| raw:: html
 
    <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/master/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>
@@ -5694,7 +5690,7 @@ Links (Dev)
 
 .. |orouser/js/tools/acl-users-search-api-accessor| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UserBundle/Resources/doc/client-side/acl-users-search-api-accessor.md" target="_blank">orouser/js/tools/acl-users-search-api-accessor</a>
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/UserBundle/Resources/doc/client-side/acl-users-search-api-accessor.md" target="_blank">orouser/js/tools/acl-users-search-api-accessor</a>
 
 .. |datepicker documentation| raw:: html
 

@@ -213,23 +213,8 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 
 * **is_serialized** *boolean* - if TRUE then field data will be saved in serialized_data column without doctrine schema update.
 
-* **state** *string* - the state of the extend config field. See available states in |ExtendScope.php|.
-
-* **is_extend** *boolean* - if true, the config entity is able to extend.
-
-* **is_deleted** *boolean* - if true, the config entity is able to delete.
-
-* **upgradeable** *boolean* - if true the extend config entity is able to update.
-
-* **pk_columns** *string[]* - a list of Primary Keys column name.
-
-* **index** *string[]* - a list of index fields of the entity. See available index states in |IndexScope.php|
-
-* **schema** *array* - contains information about the structure and entity class of the extend.
-
-* **relation** *array* - contains information about the relation of the entity.
-
-* **extend_class** *string* - extends class name.
+It also can have the following parameters: **is_extend**, **state**, **is_deleted**, **upgradeable**, **extend_class**,
+**pk_columns**, **index**, **schema**, **relation** , **inherit** .
 
 ``form``
 ~~~~~~~~
@@ -238,7 +223,7 @@ This attribute configures :ref:`Custom Form Type for Fields <book-entities-exten
 
 * **form_type** *string* - form type for a specific entity.
 
-* **form_options** *array* - form options for a specific entity.
+* **form_type** *array* - form options for a specific entity.
 
 * **grid_name** *string* - name of grid of the entity. Examples: 'users-select-grid', 'contacts-select-grid', 'customer-customers-select-grid'.
 
@@ -296,14 +281,6 @@ The attribute set owner of the entity. For more information, see :ref:`Access Le
 
    - ``FRONTEND_USER``
    - ``FRONTEND_CUSTOMER``
-
-* **owner_field_name** *string* - the name of the owner field; if `owner_type` is ORGANIZATION, than this parameter equals `organization_field_name`.
-
-* **owner_column_name** *string* - the name of the owner column; if `owner_type` is ORGANIZATION, than this parameter equals `organization_column_name`.
-
-* **organization_field_name** *string* - the name of the organization field; if `owner_type` is ORGANIZATION, than this parameter equals `owner_field_name`.
-
-* **organization_column_name** *string* - the name of the organization column; if `owner_type` is ORGANIZATION, than this parameter equals `owner_column_name`.
 
 Attributes for frontend owners: **frontend_owner_field_name**, **frontend_owner_column_name**,
 **frontend_customer_field_name**, **frontend_customer_column_name**.
