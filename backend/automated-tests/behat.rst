@@ -1,7 +1,7 @@
 .. _behat-tests:
 
-Behat Tests
-===========
+Integration Testing with Behat
+==============================
 
 Concepts
 --------
@@ -15,7 +15,7 @@ The information below summarizes concepts and tools that are important for under
 * **Symfony2 Extension** provides integration with |Symfony2|.
 * **@OroTestFrameworkBundle\Behat\ServiceContainer\OroTestFrameworkExtension** provides integration with Oro BAP based applications.
 * **Selenium2Driver** Selenium2Driver provides a bridge for the WebDriver's wire protocol.
-* **ChromeDriver** |WebDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more.
+* |ChromeDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more.
 
 .. _behat-conventions:
 
@@ -321,14 +321,14 @@ Manually configured test suits are not autoloaded by the extension.
 Feature Isolation
 ^^^^^^^^^^^^^^^^^
 
-Every feature can interact with the application and perform CRUD operations. As a result, the database may be modified. To avoid data collisions, the features are isolated: the database and cache directories are dumped before running the feature tests; they are restored after the feature tests execution is complete.
+Every feature can interact with the application and perform some operations. As a result, the application state may be modified. To avoid data collisions and dependencies between features when they are running one-by-one, the features are isolated: for example, the database and cache directories are dumped before running the feature tests; they are restored after the feature tests execution is complete.
 
 Every isolator must implement the ``Oro\Bundle\TestFrameworkBundle\Behat\Isolation\IsolatorInterface`` and ``oro_behat.isolator`` tags with priority.
 
 Disable Feature Isolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can disable feature isolation by adding the ``--skip-isolators=database,cache`` option to behat console command. In this case, the combination of the feature tests might run much faster, but the test logic should care about the database and cache consistency.
+You can disable feature isolation by adding the ``--skip-isolators`` option to the bin/behat console command. As a result, the Behat no longer takes notice of the database, cache, and other layers' isolation. This means the application state is not restored to the initial state, and the result is preserved after the test.
 
 Page Object
 -----------

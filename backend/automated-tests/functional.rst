@@ -1,7 +1,7 @@
 .. _functional-tests:
 
-Functional Tests
-================
+Functional Testing with PHPUnit
+===============================
 
 Functional tests check the integration of the different layers of an application.
 

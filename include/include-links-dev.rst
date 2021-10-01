@@ -4371,9 +4371,9 @@ Links (Dev)
 
    <a href="http://mink.behat.org/en/latest/guides/drivers.html" target="_blank">Driver Feature Support</a>
 
-.. |WebDriver| raw:: html
+.. |ChromeDriver| raw:: html
 
-   <a href="https://sites.google.com/a/chromium.org/chromedriver/" target="_blank">WebDriver</a>
+   <a href="https://sites.google.com/chromium.org/driver/" target="_blank">ChromeDriver</a>
 
 .. |NodeElement| raw:: html
 
@@ -5796,3 +5796,6 @@ Links (Dev)
 
    <a href="https://oroinc.com/bug-bounty/" target="_blank">Bug Bounty</a>
 
+.. |PHP 7.4 or 8.0| raw:: html
+
+   <a href="https://www.php.net/manual/en/install.php" target="_blank">|PHP 7.4 or 8.0|</a>
