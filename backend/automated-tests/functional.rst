@@ -72,7 +72,6 @@ You need to configure the following parameters for the testing environment:
            session_handler: null
            locale: en
            secret: ThisTokenIsNotSoSecretChangeIt
-           installed: '2014-08-12T09:05:04-07:00'
 
 3. Install the application in the test environment:
 

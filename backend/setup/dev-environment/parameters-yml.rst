@@ -15,13 +15,6 @@ Infrastructure-related configuration parameters are stored in the *config/parame
 * The ``web_backend_prefix`` URL prefix for the back-office.
 * The ``session_handler`` value specifies the PHP |session handler| to be used.
 * The ``secret`` value is used to generate |CSRF tokens|.
-* The ``installed`` parameter identifies the project ready state:
-
-   * ``null`` --- The project is not installed or requires :ref:`reinstallation <reinstall-application>`.
-   * ``2021-07-08T17:30:36+03:00`` --- The project is installed.
-
-* The ``assets_version`` parameter is used to bust the cache on assets by globally adding a query parameter to all rendered asset paths.
-* The ``assets_version_strategy`` value defines the strategy used to generate the global assets version. The available values are:
 
    * ``null`` --- The asset's version stays unchanged.
    * ``time_hash`` --- A hash of the current time.
@@ -105,12 +98,6 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
        session_handler:        session.handler.native_file
 
        secret:                 '%env(ORO_SECRET)%'
-       installed:              ~
-       assets_version:         ~
-       assets_version_strategy: time_hash # A strategy should be used to generate the global assets version, can be:
-                                          # null        - the assets version stays unchanged
-                                          # time_hash   - a hash of the current time
-                                          # incremental - the next assets version is the previous version is incremented by one (e.g. 'ver1' -> 'ver2' or '1' -> '2')
        enterprise_licence: ~
        message_queue_transport: 'dbal'
        message_queue_transport_config: ~

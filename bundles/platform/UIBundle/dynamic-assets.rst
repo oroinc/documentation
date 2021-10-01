@@ -17,9 +17,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
           assets:
               packages:
                   acme:
-                      version: %assets_version%
-                      version_format: ~ # use the default format
-
+                      version_strategy: 'Oro\Bundle\AssetBundle\VersionStrategy\BuildVersionStrategy'
 
 2. Set |DynamicAssetVersionStrategy| for this package.
 
@@ -77,7 +75,7 @@ The usage of your assets is the same as other assets, for example by the well-kn
    {{ asset('test.js', 'acme') }}
    {# the result may be something like this: test.js?version=123-2 #}
    {# where #}
-   {# '123' is the static asset version specified in %assets_version% parameter #}
+   {# '123' is the static asset version #}
    {# '2' is the dynamic asset version; this number is increased each time you call $assetVersionManager->updateAssetVersion('acme') #}
 
 
