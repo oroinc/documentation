@@ -2059,30 +2059,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CurrencyBundle/Resources/doc/editor/multi-currency-editor-view.md" target="_blank">Configure Datagrid to Enable Multi Currency Inline Edit</a>
 
-.. |Configure Dashboard| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#dashboard-configuration" target="_blank">Configure Dashboard</a>
-
-.. |Add a New Dashboard| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-add-new-dashboard" target="_blank">Add a New Dashboard</a>
-
-.. |Make a Dashboard the First Page of the Application| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-make-a-dashboard-a-first-page-of-your-application" target="_blank">Make a Dashboard the First Page of the Application</a>
-
-.. |Add New Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-add-new-widget" target="_blank">Add New Widget</a>
-
-.. |Configure a Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#widget-configuration" target="_blank">Configure a Widget</a>
-
-.. |Configure Grid Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#grid-widget-configuration" target="_blank">Configure Grid Widget</a>
-
 .. |Use OroDistributionBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#usage" target="_blank">Use OroDistributionBundle</a>
