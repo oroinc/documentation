@@ -1135,10 +1135,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/permissions.md" target="_blank">Permissions in ActivityList Bundle</a>
 
-.. |Bundle Components| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/BatchBundle#components" target="_blank">Bundle Components</a>
-
 .. |MemoryCacheChain| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php" target="_blank">MemoryCacheChain</a>
@@ -1158,7 +1154,6 @@ Links (Dev)
 .. |Symfony Validation Component| raw:: html
 
    <a href="https://symfony.com/doc/4.4/validation.html" target="_blank">Symfony Validation Component</a>
-
 
 .. |SPL| raw:: html
 
@@ -5772,3 +5767,114 @@ Links (Dev)
 
    <a href="https://oroinc.com/bug-bounty/" target="_blank">Bug Bounty</a>
 
+.. |IdentityIterationStrategyInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentityIterationStrategyInterface.php" target="_blank">Bug Bounty</a>
+
+.. |SelectIdentifierWalker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/SelectIdentifierWalker.php" target="_blank">SelectIdentifierWalker</a>
+
+.. |IdentifierHydrator| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentifierHydrator.php" target="_blank">IdentifierHydrator</a>
+
+.. |LimitIdentifierWalker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/LimitIdentifierWalker.php" target="_blank">LimitIdentifierWalker</a>
+
+.. |Calendar Manager| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Manager/CalendarManager.php" target="_blank">Calendar Manager</a>
+
+.. |CalendarProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/CalendarProviderInterface.php" target="_blank">CalendarProviderInterface</a>
+
+.. |context menu template| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/views/Calendar/Menu/contextMenu.html.twig" target="_blank">context menu template</a>
+
+.. |Backbone model| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/model.js" target="_blank">Backbone model</a>
+
+.. |Backbone collection| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/collection.js" target="_blank">Backbone collection</a>
+
+.. |manager| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/color-manager.js" target="_blank">manager</a>
+
+.. |calendar items list| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/view.js" target="_blank">calendar items list</a>
+
+.. |oro_system_calendar| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/SystemCalendar.php" target="_blank">oro_system_calendar</a>
+
+.. |SystemCalendarProvider| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/SystemCalendarProvider.php" target="_blank">SystemCalendarProvider</a>
+
+.. |PublicCalendarProvider| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/PublicCalendarProvider.php" target="_blank">PublicCalendarProvider</a>
+
+.. |CalendarEvent| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/CalendarEvent.php" target="_blank">CalendarEvent</a>
+
+.. |Entity/Recurrence| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/Recurrence.php" target="_blank">Entity/Recurrence</a>
+
+.. |Model/Recurrence| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence.php" target="_blank">Model/Recurrence</a>
+
+.. |Model/Recurrence/AbstractStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/AbstractStrategy.php" target="_blank">Model/Recurrence/AbstractStrategy</a>
+
+.. |Model/Recurrence/DailyStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/DailyStrategy.php" target="_blank">Model/Recurrence/DailyStrategy</a>
+
+.. |Model/Recurrence/DelegateStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/DelegateStrategy.php" target="_blank">Model/Recurrence/DelegateStrategy</a>
+
+.. |Model/Recurrence/MonthlyStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/MonthlyStrategy.php" target="_blank">Model/Recurrence/MonthlyStrategy</a>
+
+.. |Model/Recurrence/MonthNthStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/MonthNthStrategy.php" target="_blank">Model/Recurrence/MonthNthStrategy</a>
+
+.. |Model/Recurrence/StrategyInterface| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/StrategyInterface.php" target="_blank">Model/Recurrence/StrategyInterface</a>
+
+.. |Model/Recurrence/WeeklyStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/WeeklyStrategy.php" target="_blank">Model/Recurrence/WeeklyStrategy</a>
+
+.. |Model/Recurrence/YearlyStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/YearlyStrategy.php" target="_blank">Model/Recurrence/YearlyStrategy</a>
+
+.. |Model/Recurrence/YearNthStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/YearNthStrategy.php" target="_blank">Model/Recurrence/YearNthStrategy</a>
+
+.. |specifications| raw:: html
+
+   <a href="https://icalendar.org/iCalendar-RFC-5545/3-8-4-7-unique-identifier.html" target="_blank">specifications</a>
+
+.. |update| raw:: html
+
+   <a href="https://icalendar.org/New-Properties-for-iCalendar-RFC-7986/5-3-uid-property.html" target="_blank">update</a>
