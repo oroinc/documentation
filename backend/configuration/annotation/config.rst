@@ -115,7 +115,7 @@ Provides customer configuration, such as registered customer classes, entity lab
 ``dataaudit``
 ~~~~~~~~~~~~~
 
-The parameter use OroDataAuditBundle to provide changelogs for your entities. Read more about :ref:`Data Audit <data-audit>` bundle.
+The parameter use OroDataAuditBundle to provide changelogs for your entities. Read more about :ref:`Data Audit <entities-data-management-data-audit>` bundle.
 
 * **auditable** *boolean* - enables dataaudit for this entity. If it is not specified or set to false, you can enable audit in the UI.
 

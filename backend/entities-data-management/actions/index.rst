@@ -134,7 +134,6 @@ Execute a command to validate all operations configuration:
 
 .. code-block:: php
 
-
     php bin/console oro:action:configuration:validate
 
 .. note:: All configurations apply automatically after their changes are made in developer environment.
@@ -162,7 +161,6 @@ How to disable a CRUD default operation for my Bundle?
 Supposing you need to disable the default `DELETE` operation for your new `MyEntity` entity. Here is the case which describes the solution. You can do this in `actions.yml` under your bundle configuration resources directory:
 
 .. code-block:: php
-
 
     operations:
         DELETE:
@@ -225,7 +223,7 @@ Operation Diagram
 
 The following diagram shows operation processes logic in graphical representation:
 
-.. image:: /img/backend/bundles/ActionBundle/operation.png
+.. image:: /img/bundles/ActionBundle/operation.png
    :alt: Operation Diagram
 
 .. toctree::

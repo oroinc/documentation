@@ -27,21 +27,21 @@ Method 1: Create a Project with Composer
    .. code-block:: none
 
       # OroCommerce Community Edition
-      composer create-project oro/commerce-crm-application my_project_name 4.2.3 -n
+      composer create-project oro/commerce-crm-application my_project_name 4.2.3
       # OroCommerce Enterprise Edition
-      composer create-project oro/commerce-crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+      composer create-project oro/commerce-crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com
       # OroCRM Community Edition
-      composer create-project oro/crm-application my_project_name 4.2.3 -n
+      composer create-project oro/crm-application my_project_name 4.2.3
       # OroCRM Enterprise Edition
-      composer create-project oro/crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+      composer create-project oro/crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com
       # OroPlatform Community Edition
-      composer create-project oro/platform-application my_project_name 4.2.3 -n
+      composer create-project oro/platform-application my_project_name 4.2.3
       # OroCommerce Community Edition for Germany
-      composer create-project oro/commerce-crm-application-de oroapp my_project_name 4.2.3 -n
+      composer create-project oro/commerce-crm-application-de oroapp my_project_name 4.2.3
       # OroCommerce Enterprise Edition for Germany
-      composer create-project oro/commerce-crm-enterprise-application-de my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+      composer create-project oro/commerce-crm-enterprise-application-de my_project_name 4.2.3 --repository=https://satis.oroinc.com
       # OroCommerce Enterprise Edition (without CRM)
-      composer create-project oro/commerce-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+      composer create-project oro/commerce-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com
 
    * Replace the ``4.2.3`` with the version to download.
 

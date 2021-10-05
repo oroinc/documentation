@@ -201,7 +201,7 @@ Create a layout update that includes the **oro_product_view** import and has the
 
 Our simple product has the following look:
 
-.. image:: /img/backend/bundles/ProductBundle/simple_product.png
+.. image:: /img/bundles/ProductBundle/simple_product.png
    :alt: Simple Product example
 
 .. code-block:: yaml
@@ -225,7 +225,7 @@ Add the **product variants** block and the template.
 
 Our configurable product has the following look:
 
-.. image:: /img/backend/bundles/ProductBundle/configurable_product.png
+.. image:: /img/bundles/ProductBundle/configurable_product.png
    :alt: Configurable Product example
 
 Product Variants Block:
@@ -376,7 +376,7 @@ The condition is: **conditions: 'context["category_id"] == 4'**.
 
 The result is:
 
-.. image:: /img/backend/bundles/ProductBundle/change_product_by_category_example_1.png
+.. image:: /img/bundles/ProductBundle/change_product_by_category_example_1.png
    :alt: Change Product Page by Category example 1
 
 .. code-block:: yaml
@@ -420,7 +420,7 @@ The condition is: **conditions: '6 in context["category_ids"]'**.
 
 The result is:
 
-.. image:: /img/backend/bundles/ProductBundle/change_product_by_category_example_2.png
+.. image:: /img/bundles/ProductBundle/change_product_by_category_example_2.png
    :alt: Change Product Page by Category example 2
 
 .. code-block:: yaml
@@ -532,7 +532,7 @@ In the **Page Templates** section, choose **Custom page template** in the **Prod
 
 In the storefront, here is what it will look like:
 
-.. image:: /img/backend/bundles/ProductBundle/global_product_view_page_with_custom_page_template.png
+.. image:: /img/bundles/ProductBundle/global_product_view_page_with_custom_page_template.png
    :alt: Global Product View Page with Custom Page Template
 
 Entity level
@@ -544,5 +544,5 @@ In the **Design** section, choose **Additional page template** in the **Page Tem
 
 In the storefront, here is what it will look like:
 
-.. image:: /img/backend/bundles/ProductBundle/entity_product_view_page_with_custom_page_template.png
+.. image:: /img/bundles/ProductBundle/entity_product_view_page_with_custom_page_template.png
    :alt: Entity Product View Page with Custom Page Template

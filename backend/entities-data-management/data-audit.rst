@@ -1,4 +1,4 @@
-.. _data-audit:
+.. _entities-data-management-data-audit:
 
 Data Audit
 ==========

@@ -67,7 +67,7 @@ Search Indexer
 
 Search indexer class is responsible for putting the entity information into the search index and should implement the `Oro\\Bundle\SearchBundle\\Engine\\IndexerInterface` interface. Default synchronous indexer is accessible via the `oro_website_search.indexer` service.
 
-.. image:: /img/backend/bundles/WebsiteSearchBundle/website_search_indexer.png
+.. image:: /img/bundles/WebsiteSearchBundle/website_search_indexer.png
    :alt: Search Indexer
 
 For indexation, indexer performs the following steps:

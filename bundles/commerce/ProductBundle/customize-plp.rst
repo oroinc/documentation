@@ -14,7 +14,7 @@ For the first case, create the first level category (with **id = 8**) that conta
 
 The page looks the following way:
 
-.. image:: /img/backend/bundles/ProductBundle/static_block_only.png
+.. image:: /img/bundles/ProductBundle/static_block_only.png
    :alt: Static Block only example
 
 Create the layout update:
@@ -147,7 +147,7 @@ For the second case, create a second level category (with **id = 9**) that conta
 
 The page looks the following way:
 
-.. image:: /img/backend/bundles/ProductBundle/static_block_and_products.png
+.. image:: /img/bundles/ProductBundle/static_block_and_products.png
    :alt: Static Block and Products example
 
 Create the layout update:
@@ -222,7 +222,7 @@ For the third case, create a third level category (all **ids** that are **not eq
 
 The page looks the following way:
 
-.. image:: /img/backend/bundles/ProductBundle/products_only.png
+.. image:: /img/bundles/ProductBundle/products_only.png
    :alt: Products only example
 
 Create a layout update:
