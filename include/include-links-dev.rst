@@ -5878,3 +5878,11 @@ Links (Dev)
 .. |update| raw:: html
 
    <a href="https://icalendar.org/New-Properties-for-iCalendar-RFC-7986/5-3-uid-property.html" target="_blank">update</a>
+
+.. |NotificationAlertInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertInterface.php" target="_blank">NotificationAlertInterface</a>
+
+.. |NotificationAlertManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertManager.php" target="_blank">NotificationAlertManager</a>
