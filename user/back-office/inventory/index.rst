@@ -15,7 +15,7 @@ Manage Inventory in the Back-Office
 
 Inventory helps you track the availability of your product in one or more warehouses, display it for the buyer and sales people, and automatically adjust it after every operation in the Oro application. You can create one or more warehouses, configure inventory management options, manage product inventory status and track product quantities in every warehouse.
 
-.. note:: Community Edition enables you to create one warehouse, while Enterprise Edition (EE) offers multi-warehouse management feature and allows sellers to add an unlimited number of warehouses.
+Community Edition enables you to create one warehouse, while Enterprise Edition (EE) offers multi-warehouse management feature and allows sellers to add an unlimited number of warehouses. When adding a new organization, remember to update the :ref:`organization's configuration settings <user-management-organizations>` (including its owner and a :ref:`warehouse <warehouses-organization>`).
 
 .. note::
     See a short demo on |how to work with inventory and warehouses|, or keep reading the sections below.
