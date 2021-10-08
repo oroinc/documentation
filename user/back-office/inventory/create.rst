@@ -11,7 +11,7 @@ Manage Warehouses in the Back-Office
 Create a Warehouse
 ------------------
 
-.. note:: Creating multiple warehouses is an Enterprise edition feature.
+.. note:: Creating multiple warehouses is an Enterprise edition feature. When adding a new organization, remember to update the :ref:`organization's configuration settings <user-management-organizations>` (including its owner and a :ref:`warehouse <warehouses-organization>`).
 
 To create a new warehouse:
 

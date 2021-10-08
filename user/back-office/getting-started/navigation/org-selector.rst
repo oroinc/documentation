@@ -133,13 +133,14 @@ will get access to the records in different organizations.
 
 .. note:: This feature is only available in the Enterprise edition.
 
-For example, if you are working at the worldwide help desk of a multinational organization, you should be able to access customer records in all the organization within your
-company in order to open cases based on the customer requests. Similarly, if you are the CEO of a big enterprise
+For example, if you are working at the worldwide help desk of a multinational organization, you should be able to access customer records in all the organization within your company in order to open cases based on the customer requests. Similarly, if you are the CEO of a big enterprise
 comprised of multiple independent divisions, you would like to have access to every one of them in order to check their
 performance.
 
 As organizations are often much bigger and more separated than business units, the user will have to switch to the
 necessary organization to work with data in each one of them.
+
+When adding a new organization, remember to update the :ref:`organization's configuration settings <user-management-organizations>` (including its owner and a :ref:`warehouse <warehouses-organization>`).
 
 
 Switching Between Organizations
@@ -172,14 +173,7 @@ When creating a record in the global organization, the user should select an org
 
 .. note::
 
-    A record can belong to the global organization as well — if this is the case, the record won’t be accessible from
+    A record can belong to the global organization as well — if this is the case, the record will not be accessible from
     anywhere else other than the global organization itself. One example of such a record may be an aggregate report
     based on data from multiple organizations — it will make sense only within the global organization where all the
     necessary data is available.
-
-Conclusion
-----------
-
-Organizations and business units to which users belong will define the data available to them and will mirror the
-company structure and related rules from the physical world to the software application.
-
