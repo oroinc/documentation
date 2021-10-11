@@ -8,4 +8,4 @@ Configure Catalog Settings per Organization
 
    Filters and Sorters <organization-filters-sorters>
    Related Products <organization-related-products>
-   Pricing <pricing>
+   (Flat) Pricing <pricing>

@@ -39,9 +39,9 @@ To view all configuration options, launch the `config:dump-reference` command:
 Add a New Widget
 ----------------
 
-A widget is a twig template that is displayed in the desired position on the dashboard. As an illustration,  let us create a widget that will display information in the form of a datagrid table.
+ A widget is a twig template that is displayed in the desired position on the dashboard. As an illustration,  let us create a widget that will display information in the form of a datagrid table.
 
-To create such widget, first, make sure you create a grid using `datagrids.yml`. Below is an example of creating a `dashboard-recent-calls-grid` grid:
+ To create such widget, first, make sure you create a grid using `datagrids.yml`. Below is an example of creating a `dashboard-recent-calls-grid` grid:
 
 .. code-block:: yaml
 
