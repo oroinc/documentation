@@ -14,8 +14,6 @@ To enable or disable the display of the form in the storefront per organization:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
 .. image:: /user/img/system/user_management/org_configuration/customers/ContactUsOrg.png
 
 4. In **Contact Requests**, select the *Allow Contact Requests* check box to enable the Contact Us form.
