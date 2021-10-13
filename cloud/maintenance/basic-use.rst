@@ -518,16 +518,11 @@ Sometimes you may require to clear the application cache (for example, after app
 .. code-block:: none
 
 
-    orocloud-cli cache:rebuild [--force] [--skip-session-flush]
+    orocloud-cli cache:rebuild [--force]
 
 .. note:: Since the `cache:rebuild` operation requires the `Consumer` and `Cron` jobs to be stopped, a confirmation message is displayed before execution.
 
 * `--force` is optional, it allows to skip execution confirmation.
-* `--skip-session-flush` is optional, it allows to skip session data deletion (e.g., logged-in users are not logged out after the command completion).
-* `--cleanup-existing-cache` is optional, it allows to physically cleanup the existing cache and rebuild the new one from scratch (confirmation will be required).
-* `--force-cleanup-existing-cache` is optional, it allows to skip confirmation when using the `--cleanup-existing-cache` option.
-
-.. note:: When the `--cleanup-existing-cache` option is used, the maintenance mode is enabled.
 
 .. _orocloud-maintenance-use-media-upload:
 
