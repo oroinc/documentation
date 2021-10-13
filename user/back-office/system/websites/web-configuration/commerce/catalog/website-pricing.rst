@@ -8,7 +8,7 @@ Configure Pricing Settings (Currencies) per Website
 
 .. note:: The website level configuration has higher priority and overrides the global configuration settings.
 
-.. important:: Please, be aware that the configuration settings described below are for the default pricing feature (combined price list pricing) that comes out-of-the-box with your OroCommerce application. If you have :ref:`flat pricing configured for the whole application <dev-guide-setup-flat-pricing>` (a simple pricing engine without strategies and merges), then the configuration page will have the Display Currency and General/Price List Settings. Flat pricing is also available on :ref:`organization <configuration--guide--commerce--configuration--catalog--pricing--organization>` level. :ref:`It is enabled <dev-guide-setup-flat-pricing>` by your system administrator via the console, not the UI.
+.. important:: Please, be aware that the configuration settings described below are for the default pricing feature (combined price list pricing) that comes out-of-the-box with your OroCommerce application. If you have :ref:`flat pricing configured for the whole application <dev-guide-setup-flat-pricing>` (a simple pricing engine without strategies and merges), then the configuration page will have the Display Currency as well as General/Price List Settings. Flat pricing is also available on :ref:`organization <configuration--guide--commerce--configuration--catalog--pricing--organization>` level. :ref:`It is enabled <dev-guide-setup-flat-pricing>` by your system administrator via the console, not the UI.
 
           .. image:: /user/img/system/websites/web_configuration/flat-pricing-website-config.png
              :alt: Website pricing configuration page when flat pricing is enabled
@@ -29,10 +29,7 @@ To enable currencies per website:
 
    * **Default Currency** --- The currency that is used by default to show prices in the storefront.
 
-   To customize the option configuration:
-
-   a) Clear the **Use Organization** check box next to the option.
-   b) Select or type in the new option value.
+   To customize the option configuration, clear the **Use Organization** check box next to the option and select or type in the new option value.
 
 5. Click **Save Settings**.
 
