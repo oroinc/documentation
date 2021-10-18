@@ -11,7 +11,7 @@ To achieve this, you need to register a custom Azure application and :ref:`conne
 Register an Application in Azure
 --------------------------------
 
-Create a new Azure Active Directory Application
+Create a New Azure Active Directory Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The first step is to |create a new Azure Active Directory application| on the Microsoft side:
@@ -52,8 +52,12 @@ Create a Client Secret
 
    |
 
-   .. important:: Remember to copy the client secret as soon as you create it. You will not be able to retrieve it after you perform another operation or leave the page.
+   Remember to copy the client secret as soon as you create it. You will not be able to retrieve it after you perform another operation or leave the page.
 
+   .. important:: To integrate with the Oro application, make sure to use the **client secret value**, not the secret ID.
+
+                  .. image:: /user/img/system/integrations/microsoft/client-secret-value-id.png
+                     :alt: Client secret value and ID on the Microsoft side
 
 Grant API Permissions
 ^^^^^^^^^^^^^^^^^^^^^
@@ -95,6 +99,7 @@ Next, define the rights that the application will be able to grant.
    .. important:: Please be aware that in order to complete the active directory application configuration, you will need to copy the value of the **Redirect URI** from the Microsoft System Configuration Settings of your Oro application and paste it into the Azure application settings:
 
       .. image:: /user/img/system/integrations/microsoft/redirect-url-azure-side.png
+         :alt: Copy Redirect URI and paste it into the Azure application settings
 
 Configure Integration in the Oro Back-Office
 --------------------------------------------
