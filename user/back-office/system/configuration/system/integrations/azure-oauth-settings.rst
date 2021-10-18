@@ -14,11 +14,14 @@ To integrate a configured Azure Active Directory Application:
    .. image:: /user/img/system/integrations/microsoft/azure-directory-application-settings.png
       :alt: Azure Active Directory Application Settings
 
-|
-
    * **Application (Client) ID** - The client id generated on the Azure side when creating an active directory application. It is located on the main application page under **Essentials**. Selecting the *Use Default* checkbox resets the value.
 
-   * **Directory (tenant) ID** - The directory id generated on the Azure side when creating an active directory application. It is located on the main application page under **Essentials**.
+   * **Client Secret** - Provide the client secret value generated on the Azure side. To integrate with the Oro application, make sure to use the *client secret value*, not the secret ID.
+
+   .. image:: /user/img/system/integrations/microsoft/client-secret-value-id.png
+      :alt: Client secret value and ID on the Microsoft side
+
+   * **Directory (Tenant) ID** - The directory id generated on the Azure side when creating an active directory application. It is located on the main application page under **Essentials**.
 
    * **Redirect URI** - Copy this value and add it to your Azure Application trusted redirect URIs in order to complete the connection.
 
