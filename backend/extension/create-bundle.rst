@@ -8,8 +8,6 @@
 Create a Bundle
 ===============
 
-New bundle can be created either manually, or automatically using standard Symfony console command.
-
 Create a Bundle Manually
 ------------------------
 
@@ -20,10 +18,8 @@ Let us assume that we want to create the AcmeNewBundle and put it under the name
 in the ``/src`` directory. We need to create the corresponding directory structure and the bundle file with the following content:
 
 .. code-block:: php
-    :linenos:
+   :caption: src/Acme/Bundle/NewBundle/AcmeNewBundle.php
 
-    <?php
-    // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
     namespace Acme\Bundle\NewBundle;
 
     use Symfony\Component\HttpKernel\Bundle\Bundle;
@@ -42,8 +38,8 @@ Basically, it is a regular Symfony bundle. The only difference is in the way it 
 ..
 .. .. _Symfony command generate:bundle: http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/commands/generate_bundle.html
 ..
-.. .. code-block:: bash
-..     :linenos:
+.. .. code-block:: none
+..
 ..
 ..     user@host:/var/www/vhosts/platform-application$ php bin/console generate:bundle
 ..     Bundle namespace: Acme/Bundle/NewBundle
@@ -80,9 +76,8 @@ Now you have all the required files to enable the new bundle. To enable the bund
 #. Create Resources/config/oro/bundles.yml with the following content:
 
    .. code-block:: yaml
-       :linenos:
+      :caption: src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
 
-       # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
        bundles:
            - Acme\Bundle\NewBundle\AcmeNewBundle
 
@@ -90,8 +85,8 @@ Now you have all the required files to enable the new bundle. To enable the bund
 
 #. Regenerate the application cache using the console command ``cache:clear``:
 
-   .. code-block:: bash
-       :linenos:
+   .. code-block:: none
+
 
        user@host:/var/www/vhosts/platform-application$ php bin/console cache:clear
        Clearing the cache for the dev environment with debug true
@@ -100,14 +95,21 @@ Now you have all the required files to enable the new bundle. To enable the bund
 
        If you are working in production environment, you have to use parameter ``--env=prod`` with the command.
 
-Now open the application user interface in development mode (use the link ``http://<oro-application-base-url>/app_dev.php/``) and click the
-|Symfony profiler config icon|:
+Check if your bundle is registered and active with following command:
 
-.. image:: /img/backend/extension/dashboard.png
+    .. code-block:: none
 
-Here you can find your new bundle in the list of active bundles:
+        php bin/console debug:container --parameter=kernel.bundles --format=json | grep AcmeNewBundle
 
-.. image:: /img/backend/extension/profiler.png
+    .. note::
+
+        Replace `grep` argument with your bundle's proper name
+
+In case if your bundle is registered and active next output(alike one) will be displayed in console after running the command
+
+    .. code-block:: none
+
+        "AcmeNewBundle": "Acme\\Bundle\\NewBundle\\AcmeNewBundle",
 
 That is all --- your bundle is registered and active!
 
