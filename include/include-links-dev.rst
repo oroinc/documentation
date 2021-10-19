@@ -2010,46 +2010,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TagBundle/Resources/doc/viewer/tags-view.md" target="_blank">Tags View (Usage Example)</a>
 
-.. |Add a Calendar Provider| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/provider.md" target="_blank">Add a Calendar Provider</a>
-
-.. |Context Calendar Menu| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/contextMenu.md" target="_blank">Context Calendar Menu</a>
-
-.. |Configure System Calendars| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/systemCalendars.md" target="_blank">Configure System Calendars</a>
-
-.. |Create a Calendar Event Action| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/workflowAction.md" target="_blank">Create a Calendar Event Action</a>
-
-.. |Manage Recurring Events| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/recurringEvents.md" target="_blank">Manage Recurring Events</a>
-
-.. |Use Unique Calendar Identifier| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/uid.md" target="_blank">Use Unique Calendar Identifier</a>
-
-.. |Event Organizers| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/eventOrganizers.md" target="_blank">Event Organizers</a>
-
-.. |Attendee Entity| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/attendees.md" target="_blank">Attendee Entity</a>
-
-.. |Use Charts| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/usage.md" target="_blank">Use Charts</a>
-
-.. |Configure Charts| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/chart-configuration.md" target="_blank">Configure Charts</a>
-
 .. |Configure Datagrid to Enable Multi Currency Inline Edit| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CurrencyBundle/Resources/doc/editor/multi-currency-editor-view.md" target="_blank">Configure Datagrid to Enable Multi Currency Inline Edit</a>
@@ -2069,10 +2029,6 @@ Links (Dev)
 .. |Manage Packages| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Manage Packages</a>
-
-.. |Configure and Use OroEmbeddedBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
 .. |Abstract File Manager Service| raw:: html
 
