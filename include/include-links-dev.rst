@@ -2110,10 +2110,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle#orosyncbundle" target="_blank">Usage and Logging Levels</a>
 
-.. |Introduction to Themes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties" target="_blank">Introduction to Themes</a>
-
 .. |Inspect with Built-in Dev Tools in a Browser| raw:: html
 
    <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md#inspect-with-built-in-dev-tools-in-a-browser" target="_blank">Inspect with Built-in Dev Tools in a Browser</a>
