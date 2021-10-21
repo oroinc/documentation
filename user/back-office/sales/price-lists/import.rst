@@ -5,7 +5,7 @@
 Import Prices Into the Price List
 =================================
 
-.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+.. hint:: This section is part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
 
 **Import File** option helps import a large bulk of product prices into the price list using the .csv file.
 

@@ -6,7 +6,7 @@
 Configure Integration with CyberSource Payment Service
 ======================================================
 
-.. hint:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. hint:: This section is part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 .. hint:: The feature requires extension, so visit Oro Marketplace to download the |CyberSource extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 

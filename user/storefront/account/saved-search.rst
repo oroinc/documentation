@@ -3,6 +3,8 @@
 Manage Saved Search in the Storefront
 =====================================
 
+.. hint:: The Saved Search feature is available since OroCommerce v4.2.4. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 Registered customer users can save their search queries with custom labels, as well as get notified when a new product falls under the search conditions and when products from the search query result are back in stock. All saved search results are reflected in the Saved Searches menu in the customer user accounts. Here, they can view the search results, rename them, as well as see whether new product and back in stock alerts are enabled for specific saves search results in the table.
 
 Keep in mind that search result notifications have a :ref:`limit preconfigured in the back-office <configuration--guide--commerce--configuration--saved-search>`. This means that email notifications are not sent for the existing search queries that include more products than the set limit, and it is also not possible to enable email notifications for new search queries with more products than set by the pre-configured limit.

@@ -267,7 +267,7 @@ is similar to the "Controller" component in Chaplin, however, it implements a di
 flow:
 
 * The "Controller" represents one screen of the application and is created when the page URL is changed
-* The "Page Component" represents a part of the page with certain functionality and is created in the course of page processing, subject to the settings declared in the HTML.
+* The "Page Component" represents part of the page with certain functionality and is created in the course of page processing, subject to the settings declared in the HTML.
 
 Define a Page Component
 ^^^^^^^^^^^^^^^^^^^^^^^

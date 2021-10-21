@@ -7,7 +7,7 @@ Customize Menus per Organization
 
 .. important:: Multi-organization management is only available in the Enterprise edition.
 
-.. hint:: This section is a part of the :ref:`Storefront and Back-Office Menu Management Concept Guide <menu-management-concept-guide>` topic that provides the general understanding of the available storefront and back-office menu types and their management in Oro applications.
+.. hint:: This section is part of the :ref:`Storefront and Back-Office Menu Management Concept Guide <menu-management-concept-guide>` topic that provides the general understanding of the available storefront and back-office menu types and their management in Oro applications.
 
 To customize a **storefront menu** for a particular organization:
 

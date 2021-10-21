@@ -6,7 +6,7 @@
 Configure Website System Settings
 =================================
 
-.. hint:: This section is a part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
+.. hint:: This section is part of the :ref:`Multi-Website Configuration <website-management-concept-guide>` concept guide topic that provides the general understanding of multiple website configuration concept in Oro applications.
 
 .. important:: Multi-website management is only available in the Enterprise edition.
 

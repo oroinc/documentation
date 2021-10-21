@@ -40,7 +40,7 @@ To configure the product image settings globally:
 Image Watermark
 ---------------
 
-In the **Product Image Watermark** section, you can control the watermark that will appear on top of every image uploaded as a part of product details on two levels, globally and :ref:`per website <sys--websites--commerce--product--product-images>`.
+In the **Product Image Watermark** section, you can control the watermark that will appear on top of every image uploaded as part of product details on two levels, globally and :ref:`per website <sys--websites--commerce--product--product-images>`.
 
    * **File** — The image file with the watermark on a transparent background.
    * **Size** — The size of the watermark in percentage compared to the whole image.

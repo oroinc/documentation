@@ -7,7 +7,7 @@
 Custom Oro Application
 ======================
 
-No two businesses are alike. This motto is a part of Oro products philosophy and this is why flexibility is one of
+No two businesses are alike. This motto is part of Oro products philosophy and this is why flexibility is one of
 the key principles that drive architecture in Oro. Depending on what you are planning to build, you can
 create your custom application with minimum functions starting either with |OroPlatform|, or |OroCRM|, or
 |OroCommerce| application as a baseline. No matter what is your starting point, there is no difference

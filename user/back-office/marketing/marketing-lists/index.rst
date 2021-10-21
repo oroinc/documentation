@@ -122,7 +122,7 @@ Details provide you with the following insights:
 
 * **SUBSCRIBED** --- status of the contact's subscription. Initially, all the contacts in the list are subscribed (the column value is "Yes"). When after the email campaigns that were targeting the marketing list, a user has unsubscribed, the value changes to "No", and the user is excluded from the following mailings.
 
-.. note:: When the same record is a part of different marketing lists, its data from other marketing lists will not affect the TOTAL CONTACTED and LAST CONTACTED values in the list you are viewing.
+.. note:: When the same record is part of different marketing lists, its data from other marketing lists will not affect the TOTAL CONTACTED and LAST CONTACTED values in the list you are viewing.
 
 Manage Contact Subscription
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

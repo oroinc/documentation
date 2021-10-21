@@ -6,7 +6,7 @@
 Import Product Information
 --------------------------
 
-.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+.. hint:: This section is part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
 
 The **Import File** option helps import a large bulk of product information into the product catalog using the .csv file.
 

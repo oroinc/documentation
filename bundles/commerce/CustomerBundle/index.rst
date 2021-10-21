@@ -221,7 +221,7 @@ When using guest functionality for some business products, you should specify th
 Configure Guest Access and Permissions
 --------------------------------------
 
-When we implement guest functionality for some product, it should be tied with the related feature and added to system configuration on the global, organization, and website level). By default, it should be disabled:
+When we implement guest functionality for some product, it should be tied with the related feature and added to system configuration on the global, organization, and website levels. By default, it should be disabled:
 
 .. code-block:: php
 

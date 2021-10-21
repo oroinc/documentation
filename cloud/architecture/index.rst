@@ -155,7 +155,7 @@ Disaster Recovery Principles
 
 Oro uses a cold disaster recovery location. No resources are allocated or billed until the disaster recovery is initiated. In case a disastrous event takes place at the primary location, the OroCloud environment is re-created at a different GCP Region unaffected by the disaster. Each GCP Region that is used for production hosting has a designated Disaster Recovery location.
 
-Oro provides both primary and Disaster Recovery IP addresses to the customer as a part of onboarding information. These IP addresses must be added to the whitelists if any whitelisting is used.
+Oro provides both primary and Disaster Recovery IP addresses to the customer as part of onboarding information. These IP addresses must be added to the whitelists if any whitelisting is used.
 
 Disaster Recovery Flow
 ~~~~~~~~~~~~~~~~~~~~~~

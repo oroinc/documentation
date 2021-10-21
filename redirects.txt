@@ -312,3 +312,4 @@ backend/entities/filters /bundles/platform/FilterBundle
 backend/entities/filters/grid-extension /bundles/platform/FilterBundle/grid-extension
 backend/entities/filters/filter-form-types /bundles/platform/FilterBundle/filter-form-types
 backend/entities/filters/javascript-widgets /bundles/platform/FilterBundle
+user/back-office/system/configuration/commerce/customer/cookie-consent-banner /user/back-office/system/configuration/commerce/customer/global-customer-users

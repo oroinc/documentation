@@ -19,7 +19,7 @@ Rabbitmqctl is the original CLI tool that comes with RabbitMQ and does not requi
 rabbitmqadmin
 -------------
 
-Rabbitmqadmin is a part of |RabbitMQ Management Plugin| that can perform same actions that the Web-based UI does.
+Rabbitmqadmin is part of |RabbitMQ Management Plugin| that can perform same actions that the Web-based UI does.
 
 rabbitmq-plugins
 ----------------

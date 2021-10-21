@@ -7,7 +7,7 @@ Widgets
 
 Examples of widgets are: contact information, opportunity information, address book, add address form, import form, workflow transitions, etc.
 
-**Widget container** is a part of UI where widgets are shown. A Widget Container can show different types of widgets.
+**Widget container** is part of UI where widgets are shown. A Widget Container can show different types of widgets.
 
 Examples of implemented BAP widget containers:
 

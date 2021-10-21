@@ -209,7 +209,7 @@ Button Options configuration has the following options:
     
 * **class** - *string* - CSS class applied to the operation button.
     
-* **group** - *string* - Name of operation button menu. The operation button is a part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
+* **group** - *string* - Name of operation button menu. The operation button is part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
     
 * **template** - *string* - This option provides the possibility to override the button template. Should be extended from `@OroAction/Operation/button.html.twig`.
     

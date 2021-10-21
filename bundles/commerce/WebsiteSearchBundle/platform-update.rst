@@ -3,7 +3,7 @@
 Reindexation During Platform Update
 ===================================
 
-Note that when you execute ``oro:platform:update`` command as a part of update process, it performs full reindexation of all the affected entities in the foreground.
+Note that when you execute ``oro:platform:update`` command as part of update process, it performs full reindexation of all the affected entities in the foreground.
 
 To avoid this, you can use the ``--schedule-search-reindexation`` and ``--skip-search-reindexation`` options that were added to the ``oro:platform:update`` command by the SearchBundle and were extended by this bundle to also affect the Website search index:
 

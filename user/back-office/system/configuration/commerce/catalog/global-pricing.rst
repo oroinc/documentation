@@ -6,7 +6,7 @@
 Configure Global Pricing Settings
 =================================
 
-.. hint:: This section is a part of the :ref:`Price Management <user-guide--pricing>` topic that provides the general understanding of pricing concept in Oro applications.
+.. hint:: This section is part of the :ref:`Price Management <user-guide--pricing>` topic that provides the general understanding of pricing concept in Oro applications.
 
 Global pricing configuration helps you:
 

@@ -12,7 +12,7 @@ Full Reindexation
 
 This option is suitable for upgrades from version lower than 1.6, or if you have a small number of entities (fewer than a hundred thousand).
 
-Search index upgrade is a part of the :ref:`application upgrade <upgrade-application>`.
+Search index upgrade is part of the :ref:`application upgrade <upgrade-application>`.
 So, once you've turned on maintenance mode through ``app/console lexik:maintenance:lock --env=prod``, you need to perform the following actions:
 
 1. |Stop old Elasticsearch|
@@ -27,7 +27,7 @@ Search Index Dump
 Search index dump is suitable only if you perform upgrade from versions 1.6 to 3.1, and you have a large number of entities.
 The biggest advantage of this approach is that you do not need to schedule reindexation and wait until it is finished.
 
-Generating the search index dump is also a part of standard procedure of application upgrade.
+Generating the search index dump is also part of standard procedure of application upgrade.
 But you should note that the elastic index dump must be created from the old version of the code (1.6 to 3.1). So follow next step of upgrade procedure:
 
 1. Turn on maintenance mode to switch the application to the maintenance mode through
