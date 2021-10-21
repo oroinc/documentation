@@ -40,6 +40,6 @@ Learn more on price lists in the following topics:
 **Related Topics**
 
 * :ref:`Price Management Concept Guide <user-guide--pricing>`
-
+* :ref:`Your Price vs Listed Price <frontstore-guide--navigation-product-price>`
 
 
