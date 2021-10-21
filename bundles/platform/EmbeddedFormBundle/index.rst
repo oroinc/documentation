@@ -65,8 +65,8 @@ This message will appear after a successful form submitting.
 You can customize the success message on the create and update embedded form pages.
 It is possible to set your text for the back link by adding it in the `{back_link}` placeholder using the following syntax ``{back_link|Back link text}``.
 
-Get a Code
-----------
+Get Code
+--------
 
 The *Get code* section is located on the view embedded form page. Example:
 
