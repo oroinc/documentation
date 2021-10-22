@@ -3,7 +3,7 @@
 OroBatchBundle
 ==============
 
-OroBatchBundle adds AkeneoBatchBundle to Oro applications and enables batch architecture usage for data processing.
+OroBatchBundle adds |AkeneoBatchBundle| to Oro applications and enables batch architecture usage for data processing.
 
 Components
 ----------

@@ -3,7 +3,7 @@
 Navigate through Multi Page Checkout in the Storefront
 ------------------------------------------------------
 
-.. hint:: This section is a part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
+.. hint:: This section is part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
 
 **Step 1: Billing Information**
 

@@ -35,6 +35,7 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`Flat Rate <doc--integrations--flat-rate>`
   * :ref:`UPS <doc--integrations--ups>`
   * :ref:`FedEx <doc--integrations--fedex>`
+  * :ref:`DPD <doc--integrations--dpd>`
 
 * :ref:`Google Integration (Single Sign-On, Hangouts, Tag Manager) <admin-configuration-google>`
 * :ref:`Microsoft 365 OAuth Integration <user-guide-integrations-azure-oauth>`

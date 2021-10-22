@@ -5,7 +5,7 @@
 Manage Landing Pages in the Back-Office
 =======================================
 
-.. hint:: This section is a part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides the general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
+.. hint:: This section is part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides the general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
 
 :term:`Landing Page` is a marketing tool that generates interest and leads for your sales pipeline and has a distinct call to action with a single focused objective.
 

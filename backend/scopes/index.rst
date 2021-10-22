@@ -313,7 +313,7 @@ In this code example, we build a query and modify it with the ScopeCriteria meth
     $scopeCriteria = $this->scopeManager->getCriteria('web_content');
     $scopeCriteria->applyToJoinWithPriority($qb, 'scopes');
 
-As you do not pass the context to the scope manager in the getCriteria method, the current context is used by default (e.g., a logged-in customer is a part of Customer with id=1, and this customer is a part of CustomerGroup with id=1).
+As you do not pass the context to the scope manager in the getCriteria method, the current context is used by default (e.g., a logged-in customer is part of Customer with id=1, and this customer is part of CustomerGroup with id=1).
 
 The scopes applicable for the current context are:
 

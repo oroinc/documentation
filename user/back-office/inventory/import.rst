@@ -7,7 +7,7 @@ Import Inventory Levels and Statuses
 
 When your need your Oro application and other systems (like asset management and accounting software) exchange and synchronize product inventory information, you may transfer the inventory data from and into the Oro application in the .csv format.
 
-.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+.. hint:: This section is part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
 
 Inventory Statuses and Levels
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

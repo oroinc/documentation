@@ -3,7 +3,7 @@
 Application Framework
 =====================
 
-**Application Framework** functionality is a part of **OroPlatform** that determines the structure of the Oro application (code
+**Application Framework** functionality is part of **OroPlatform** that determines the structure of the Oro application (code
 organization, file structure, application flow routine) and the way of interaction between independent components in the application.
 
 In this section, you'll find a description of the main principles on how to organize your adjustments to Oro applications.

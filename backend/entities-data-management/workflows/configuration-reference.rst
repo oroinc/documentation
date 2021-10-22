@@ -768,7 +768,7 @@ Cron trigger configuration has the following options.
 Conditions Configuration
 ------------------------
 
-Conditions configuration is a part of Transition Definition Configuration. It declares a tree structure of conditions
+Conditions configuration is part of Transition Definition Configuration. It declares a tree structure of conditions
 that are applied on the Workflow Item to check if the Transition could be performed. Single condition configuration
 contains alias - a unique name of condition and options.
 

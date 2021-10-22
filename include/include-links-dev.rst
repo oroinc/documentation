@@ -2746,6 +2746,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/OroAkeneoBundle/blob/1.6.0/README.md" target="_blank">relevant Akeneo documentation</a>
 
+.. |AkeneoBatchBundle| raw:: html
+
+   <a href="https://github.com/oroinc/OroAkeneoBundle/blob/1.6.0/README.md" target="_blank">AkeneoBatchBundle</a>
+
 .. |client - server architecture| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">client - server architecture</a>

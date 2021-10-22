@@ -37,7 +37,7 @@ You can proceed to the configuration steps with this information.
 Configure DNS to Authorize the Oro SMTP Relay as a Legitimate Sender
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To ensure successful email delivery, you need to make modifications to your DNS record. These modifications will authenticate the Oro SMTP relay as a legitimate SMTP server which can send emails from your organization. This is necessary because modern email recipient servers filter out emails to spam if the sender server does not belong to the sender’s domain or is unauthorized. As a part of your request fulfillment, Oro support will perform all actions with Oro SMTP relay and send you a link to the page with new data for your DNS record.
+To ensure successful email delivery, you need to make modifications to your DNS record. These modifications will authenticate the Oro SMTP relay as a legitimate SMTP server which can send emails from your organization. This is necessary because modern email recipient servers filter out emails to spam if the sender server does not belong to the sender’s domain or is unauthorized. As part of your request fulfillment, Oro support will perform all actions with Oro SMTP relay and send you a link to the page with new data for your DNS record.
 
 You will need administrative access to your DNS managing tool. Alternatively, you can transfer this link to the person responsible for the DNS support in your organization according to your internal procedures.
 

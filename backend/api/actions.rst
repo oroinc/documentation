@@ -14,70 +14,78 @@ For more details about these elements, see the `Creating a New Action`_ section.
 
 The following table shows all actions provided out-of-the-box:
 
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| Action Name                | Description                                                                                                        |
-+============================+====================================================================================================================+
-| get                        | Returns an entity by its identifier.                                                                               |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_list                  | Returns a list of entities.                                                                                        |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete                     | Deletes an entity by its identifier.                                                                               |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete\_list               | Deletes a list of entities.                                                                                        |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| create                     | Creates a new entity.                                                                                              |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update                     | Updates an existing entity.                                                                                        |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update\_list               | Updates a list of entities of the same type.                                                                       |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_subresource           | Returns a list of related entities represented by a relationship.                                                  |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update\_subresource        | Updates an entity (or entities, it depends on the association type) connected to an entity the sub-resource        |
-|                            | belongs to. This action do not have default implementation, additional processors should be added for each         |
-|                            | sub-resource.                                                                                                      |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| add\_subresource           | Adds an entity (or entities, it depends on the association type) connected to an entity the sub-resource           |
-|                            | belongs to. This action do not have default implementation, additional processors should be added                  |
-|                            | for each sub-resource.                                                                                             |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete\_subresource        | Deletes an entity (or entities, it depends on the association type) connected to an entity the sub-resource        |
-|                            | belongs to. This action do not have default implementation, additional processors should be added for each         |
-|                            | sub-resource.                                                                                                      |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_relationship          | Returns a relationship data.                                                                                       |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| update\_relationship       | Updates "to-one" relationship and completely replaces all members of "to-many" relationship.                       |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| add\_relationship          | Adds one or several entities to a relationship. This action is applicable only for "to-many" relationships.        |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| delete\_relationship       | Deletes one or several entities from a relationship. This action is applicable only for "to-many" relationships.   |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| options                    | Returns the communication options for a resource.                                                                  |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| customize\_loaded\_data    | Makes modifications of data loaded by *get*, *get\_list* and *get\_subresource* actions.                           |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| customize\_form\_data      | Makes modifications of submitted form data for *create* and *update* actions.                                      |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_config                | Returns a configuration of an entity.                                                                              |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| get\_metadata              | Returns metadata of an entity.                                                                                     |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| normalize\_value           | Converts a value to a requested data type.                                                                         |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| collect\_resources         | Returns a list of all resources accessible through API.                                                            |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| collect\_subresources      | Returns a list of all sub-resources accessible through API for a given entity type.                                |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| not\_allowed               | Builds a response for case when a request does not match any public action.                                        |
-|                            | E.g. when HTTP method is not supported for REST API request.                                                       |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| unhandled\_error           | Builds a response for case when an unexpected error happens before any public action is started.                   |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| batch\_update              | Used by *update\_list* action to update or create a set of entities of the same type.                              |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
-| batch\_update\_item        | Used by *batch\_update* action to update or create an entity that is a part of a batch operation.                  |
-+----------------------------+--------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Action Name                                               | Description                                                                            |
++===========================================================+========================================================================================+
+| `get <#get-action>`__                                     | Returns an entity by its identifier.                                                   |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_list <#get-list-action>`__                           | Returns a list of entities.                                                            |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `delete <#delete-action>`__                               | Deletes an entity by its identifier.                                                   |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `delete_list <#delete-list-action>`__                     | Deletes a list of entities.                                                            |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `create <#create-action>`__                               | Creates a new entity.                                                                  |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `update <#update-action>`__                               | Updates an existing entity.                                                            |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `update_list <#update-list-action>`__                     | Updates a list of entities of the same type.                                           |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_subresource <#get-subresource-action>`__             | Returns a list of related entities represented by a relationship.                      |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `update_subresource <#update-subresource-action>`__       | Updates an entity (or entities, it depends on the association type) connected to       |
+|                                                           | an entity the sub-resource belongs to. This action does not have the default           |
+|                                                           | implementation, additional processors should be added for each sub-resource            |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `add_subresource <#add-subresource-action>`__             | Adds an entity (or entities, it depends on the association type) connected to          |
+|                                                           | an entity the sub-resource belongs to. This action does not have default               |
+|                                                           | implementation, additional processors should be added for each sub-resource.           |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `delete_subresource <#delete-subresource-action>`__       | Deletes an entity (or entities, it depends on the association type) connected to       |
+|                                                           | an entity the sub-resource belongs to. This action does not have the default           |
+|                                                           | implementation, additional processors should be added for each sub-resource.           |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_relationship <#get-relationship-action>`__           | Returns a relationship data.                                                           |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `update_relationship <#update-relationship-action>`__     | Updates "to-one" relationship and completely replaces all members of                   |
+|                                                           | "to-many" relationship.                                                                |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `add_relationship <#add-relationship-action>`__           | Adds one or several entities to a relationship. This action is applicable only for     |
+|                                                           | "to-many" relationships.                                                               |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `delete_relationship <#delete-relationship-action>`__     | Deletes one or several entities from a relationship. This action is applicable         |
+|                                                           | only for "to-many" relationships.                                                      |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `options <#options-action>`__                             | Returns the communication options for a resource.                                      |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `customize_loaded_data <#customize-loaded-data-action>`__ | Makes modifications of data loaded by **get**, **get_list** and **get_subresource**    |
+|                                                           | actions.                                                                               |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `customize_form_data <#customize-form-data-action>`__     | Makes modification and validation of submitted data, and entities to be persisted      |
+|                                                           | into the database by **create**, **update**, **update_relationship**,                  |
+|                                                           | **add_relationship** and **delete_relationship** actions.                              |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_config <#get-config-action>`__                       | Returns a configuration of an entity.                                                  |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `get_metadata <#get-metadata-action>`__                   | Returns metadata of an entity.                                                         |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `normalize_value <#normalize-value-action>`__             | Converts a value to a requested data type.                                             |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `collect_resources <#collect-resources-action>`__         | Returns a list of all resources accessible through API.                                |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `collect_subresources <#collect-subresources-action>`__   | Returns a list of all sub-resources accessible through API for a given entity type.    |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `not_allowed <#not-allowed-action>`__                     | Builds a response for the case when a request does not match any public action.        |
+|                                                           | E.g. when the HTTP method is not supported for the REST API request.                   |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `unhandled_error <#unhandled-error-action>`__             | Builds a response for the case when an unexpected error happens before any public      |
+|                                                           | action is started.                                                                     |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `batch_update <#batch-update-action>`__                   | Used by **update_list** action to update or create a set of entities of the same type. |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
+| `batch_update_item <#batch-update-item-action>`__         | Used by **batch_update** action to update or create an entity that is part of          |
+|                                                           | a batch operation.                                                                     |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------+
 
 Please see the :ref:`Processors <web-api--processors>` section for more details about how to create a processor.
 
@@ -1058,7 +1066,7 @@ For examples of usage, see the ``handleUnhandledError`` method of |RequestAction
 batch\_update Action
 ^^^^^^^^^^^^^^^^^^^^
 
-This action is intended to update or create a set of entities of the same type that are a part of an asynchronous
+This action is intended to update or create a set of entities of the same type that are part of an asynchronous
 batch operation. It is triggered by the `update_list <#update-list-action>`__ action.
 
 The context class: |BatchUpdateContext|.
@@ -1091,7 +1099,7 @@ For examples of usage, see |BatchUpdateHandler|.
 batch\_update\_item Action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action is intended to create or update an entity that is a part of an asynchronous batch operation.
+This action is intended to create or update an entity that is part of an asynchronous batch operation.
 It is used by the `batch_update <#batch-update-action>`__ action.
 
 The context class: |BatchUpdateItemContext|.
