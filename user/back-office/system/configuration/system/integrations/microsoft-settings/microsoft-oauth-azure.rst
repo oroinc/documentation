@@ -2,11 +2,11 @@
 
 .. _user-guide-integrations-azure-oauth:
 
-Configure Microsoft 365 OAuth Integration
-=========================================
+Configure Microsoft 365 OAuth Integration (Azure Active Directory Application)
+==============================================================================
 
 Integration with Microsoft 365 via OAuth 2 API enables users to log in with their Microsoft 365 account and connect their mailbox to the Oro application using OAuth authentication.
-To achieve this, you need to register a custom Azure application and :ref:`connect it with your Oro application <configuration-integrations-azure>`.
+To achieve this, you need to register a custom Azure application and connect it with your Oro application.
 
 Register an Application in Azure
 --------------------------------
@@ -104,9 +104,42 @@ Next, define the rights that the application will be able to grant.
 Configure Integration in the Oro Back-Office
 --------------------------------------------
 
-Once your Azure Active Directory application is configured, you can connect it to your Oro application. Please follow the steps outlined in the :ref:`Configure Microsoft 365 OAuth Settings <configuration-integrations-azure>` section on how to achieve this.
+Once your Azure Active Directory application is configured, you can connect it to your Oro application.
 
-For instructions on how to connect Microsoft 365 account type once the connection between Azure and Oro has been established, please see :ref:`User Email Synchronization Settings <my_email_configuration>` and :ref:`System Mailbox Synchronization Settings <admin-configuration-system-mailboxes>` documentation.
+For that:
+
+1. Navigate to **System > Configuration > Integrations > Microsoft Settings**.
+
+2. Provide the following details under **Azure Active Directory Application Settings**:
+
+   .. image:: /user/img/system/config_system/azure-directory-application-settings.png
+      :alt: Azure Active Directory Application Settings
+
+   * **Application (Client) ID** - The client id generated on the Azure side when creating an active directory application. It is located on the main application page under **Essentials**. Selecting the *Use Default* checkbox resets the value.
+
+   * **Client Secret** - Provide the client secret value generated on the Azure side. To integrate with the Oro application, make sure to use the *client secret value*, not the secret ID.
+
+   .. image:: /user/img/system/integrations/microsoft/client-secret-value-id.png
+      :alt: Client secret value and ID on the Microsoft side
+
+   * **Directory (Tenant) ID** - The directory id generated on the Azure side when creating an active directory application. It is located on the main application page under **Essentials**.
+
+   * **Redirect URI** - Copy this value and add it to your Azure Application trusted redirect URIs in order to complete the connection.
+
+   .. image:: /user/img/system/integrations/microsoft/redirect-url-azure-side.png
+      :alt: How to connect Redirect URI
+
+3. Click **Save Settings**.
+
+.. note:: To enable and configure email synchronization on the system level, please see the :ref:`Global Email Synchronization Settings <doc-email-configuration>` and :ref:`Global System Mailbox Synchronization Settings <admin-configuration-system-mailboxes-global>`.
+
+
+**Related Topics**
+
+* :ref:`Configure Global Microsoft Settings <configuration-integrations-microsoft>`
+* :ref:`Microsoft 365 Single Sign-On <user-guide-integrations-microsoft-single-sign-on>`
+* :ref:`Microsoft 365 Integrations <user-guide-integrations-microsoft>`
+
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
