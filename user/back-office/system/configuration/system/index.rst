@@ -27,9 +27,9 @@ Learn how to configure localization options, currency and tracking, as well as u
 -------------------------------------------------------------------------------
 
 * :ref:`Google Settings <admin-configuration-integrations-google>`
+* :ref:`Microsoft Settings <configuration-integrations-microsoft>`
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
 * :ref:`Dotmailer Settings <admin-configuration-dotmailer-integration-settings>`
-* :ref:`Microsoft Settings <configuration-integrations-microsoft>`
 
 
 :ref:`Websites <configuration--guide--system--configuration--websites>`

@@ -45,7 +45,7 @@ To create a new marketing campaign:
 
    * **Report Scale** - Defines the default time scale of the events graph. Provides the schedule for the consumer to prepare the reports. You can choose between the hourly, daily or monthly options.
 
-  .. note:: Keep in mind that usually the consumer takes some time to run the job queue. However, if you want to check the performance immediately, you can enable :ref:`dynamic tracking <admin-configuration-tracking>` in the system configuration under **System > Configuration > General Setup > Tracking**. By default, this option is disabled, as this behavior is preferred for the production environment. But for testing purposes, you can enable this option to bypass the consumer and log visits and other events as soon as they occur.
+  .. note:: Keep in mind that usually the consumer takes some time to run the job queue. However, if you want to check the performance immediately, you can enable :ref:`dynamic tracking <admin-configuration-tracking>` in the system configuration under **System > Configuration > System Configuration > General Setup > Tracking**. By default, this option is disabled, as this behavior is preferred for the production environment. But for testing purposes, you can enable this option to bypass the consumer and log visits and other events as soon as they occur.
 
 .. note:: Custom fields may be added, subject to specific business needs.
 

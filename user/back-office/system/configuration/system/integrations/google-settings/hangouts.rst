@@ -18,7 +18,9 @@ For the integration between Hangouts and your Oro application to be successful, 
 Configure the Integration 
 -------------------------
 
-To enable the the integration in the Oro application:
+.. note:: Google Hangouts are configured globally and :ref:`per organization <user-guide-hangouts-org>`.
+
+To enable the integration in the Oro application on the global level:
  
 1. Navigate to the **System > Configuration** in the main menu.
 2. Click **Integrations > Google Settings** in the panel to the left.
@@ -42,14 +44,15 @@ In order to start a hangout call from the page of a record:
 2. Hover the mouse over a phone number or an email address on the page.
 
    .. image:: /user/img/system/integrations/google/hover.png
+      :alt: Hangout icon on a contact record page
 
 3. Click the hangouts icon.
 4. In the **Invite Contacts to a Google Hangout** form , click **Start a Hangout**.
 
    .. image:: /user/img/system/integrations/google/invite.png
+      :alt: Invite Contacts to a Google Hangout form
 
-5. If you have already logged into your Google account, the call starts immediately, otherwise you will be
-    prompted to log in. 
+5. If you have already logged into your Google account, the call starts immediately, otherwise you will be prompted to log in.
 
 .. _user-guide-hangouts-call:
 
@@ -79,7 +82,7 @@ Once the contact has joined the session, you can talk.
 Call via the Log Call Form
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To make calls from :ref:`Log Call <doc-activities-calls>` form, click **Start a Hangout** in the bottom right corner.
+To make calls from the :ref:`Log Call <doc-activities-calls>` form, click **Start a Hangout** in the bottom right corner.
 
 .. image:: /user/img/system/integrations/google/log_call_hangout.png
 
@@ -103,6 +106,10 @@ To start a Hangout call with contacts invited to an event:
 **Related Topics**
 
 * :ref:`Activities: Calls <doc-activities-calls>`
+* :ref:`Configure Global Google Settings <admin-configuration-integrations-google>`
+* :ref:`Configure Google Integration Settings <system-configuration-integrations-google>`
+* :ref:`Configure Google Single Sign On <user-guide-google-single-sign-on>`
+* :ref:`Configure Google Tag Manager Integration <gtm-integration>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

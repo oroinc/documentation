@@ -253,7 +253,7 @@ A list of events on the tracking website page helps you monitor every occurrence
 
 In the example above, you can see the three kinds of events defined for the Jack and Johnson E-commerce website tracking. As soon as a user gets on any of the website pages, a *visit* event is logged with the *1* value. As soon as a user gets to the **Orders** page of the website, an *Order* event is logged, with the value that stores an ordered item id. As soon as a user gets to the **Item Details** page of the website, a *View item* event is logged with a value that stores a viewed item id.
 
-.. important:: To make sure that synchronization between your website and the application is successful, you may need to enable dynamic website tracking. For this, navigate to **System > Configuration > General Setup > Tracking**, and select the **Enable Dynamic Tracking** check box.
+.. important:: To make sure that synchronization between your website and the application is successful, you may need to enable dynamic website tracking. For this, navigate to **System > Configuration > System Configuration > General Setup > Tracking**, and select the **Enable Dynamic Tracking** check box.
 
    .. image:: /user/img/marketing/tracking_websites/enable_dynamic_tracking_new.png
       :alt: Enable dynamic tracking in system configuration
