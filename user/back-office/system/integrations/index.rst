@@ -38,9 +38,6 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`DPD <doc--integrations--dpd>`
 
 * :ref:`Google Integration (Single Sign-On, Hangouts, Tag Manager) <admin-configuration-google>`
-* :ref:`Microsoft 365 OAuth Integration <user-guide-integrations-azure-oauth>`
-* :ref:`Microsoft 365 Integration (Calendar Events, Tasks) <user-guide-integrations-microsoft>`
-* :ref:`Microsoft 365 Single Sign-On <user-guide-integrations-microsoft-single-sign-on>`
 * :ref:`dotmailer Integration <user-guide-dotmailer-overview>`
 * :ref:`Mailchimp Integration <user-guide-mc-integration>`
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
@@ -63,6 +60,4 @@ Check the following integrations that can be enabled/disabled and configured in 
    LDAP Integration <ldap-integration>
    Embedded Forms <embedded-forms/index>
    Google Integration <google/index>
-   Microsoft 365 OAuth <azure-oauth>
-   Microsoft 365 Integration <microsoft/index>
-   Microsoft 365 Single Sign-On <microsoft/microsoft-single-sign-on>
+

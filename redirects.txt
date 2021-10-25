@@ -312,4 +312,8 @@ backend/entities/filters /bundles/platform/FilterBundle
 backend/entities/filters/grid-extension /bundles/platform/FilterBundle/grid-extension
 backend/entities/filters/filter-form-types /bundles/platform/FilterBundle/filter-form-types
 backend/entities/filters/javascript-widgets /bundles/platform/FilterBundle
+user/back-office/system/configuration/system/integrations/azure-oauth-settings /user/back-office/system/configuration/system/integrations/microsoft-settings/index
+user/back-office/system/integrations/microsoft/index /user/back-office/system/configuration/system/integrations/microsoft-settings/microsoft-365-integrations
+user/back-office/system/integrations/microsoft/microsoft-single-sign-on /user/back-office/system/configuration/system/integrations/microsoft-settings/microsoft-single-sign-on
+user/back-office/system/integrations/azure-oauth /user/back-office/system/configuration/system/integrations/microsoft-settings/microsoft-oauth-azure
 user/back-office/system/configuration/commerce/customer/cookie-consent-banner /user/back-office/system/configuration/commerce/customer/global-customer-users

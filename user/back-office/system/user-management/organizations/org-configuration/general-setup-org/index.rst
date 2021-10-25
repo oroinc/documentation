@@ -16,6 +16,8 @@ Learn how to configure localization options, currency and tracking, as well and 
   * :ref:`Currency <admin-configuration-currency-org>`
   * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
   * :ref:`Website Routing Settings <organization-config-website-routing>`
+  * :ref:`Google Settings <organization-google-settings>`
+  * :ref:`Microsoft Settings <organization-configuration-microsoft>`
 
 .. toctree::
    :hidden:
