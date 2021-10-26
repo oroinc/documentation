@@ -343,7 +343,7 @@ Datagrid options enable to define options of datagrid mass operation. They provi
 
 Single datagrid options can be described with the following configuration:
 
-* **mass_action_provider** - *string* - Service name. This service must be marked with the `oro_action.datagrid.mass_action_provider` tag. Also it must implement Oro\Bundle\ActionBundle\Datagrid\Provider\MassActionProviderInterface. The "getActions" method of this provider must return array of mass action configurations.
+* **mass_action_provider** - *string* - Service name. This service must be marked with the `oro_action.datagrid.mass_action_provider` tag. Also it must implement Oro\\Bundle\\ActionBundle\\Datagrid\\Provider\\MassActionProviderInterface. The "getActions" method of this provider must return array of mass action configurations.
     
 * **mass_action** - *array* - Mass action configuration. See the datagrid documentation.
     

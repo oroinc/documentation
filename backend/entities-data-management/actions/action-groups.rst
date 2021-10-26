@@ -62,7 +62,7 @@ Note that **Action group** runs with empty context data. For example, if a calle
 Call from PHP
 -------------
 
-All named action groups are internally gathered under the `oro_action.action_group_registry` registry service which is the instance of the Oro\Bundle\ActionBundle\Model\ActionGroupRegistry class.
+All named action groups are internally gathered under the `oro_action.action_group_registry` registry service which is the instance of the Oro\\Bundle\\ActionBundle\\Model\\ActionGroupRegistry class.
 It has simple api to `get` the |action group| configured instance and perform its execution by applying the `\\Oro\\Bundle\\ActionBundle\\Model\\ActionGroup::execute` method with proper parameters.
 
 Recommendations

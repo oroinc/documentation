@@ -69,7 +69,7 @@ Please use the following parameter to enable it:
 
     php bin/console oro:search:reindex --scheduled
 
-You can limit the reindexation to a specific entity with the ``--class`` option. Both the FQCN (Oro\Bundle\UserBundle\Entity\User) and short (OroUserBundle:User)
+You can limit the reindexation to a specific entity with the ``--class`` option. Both the FQCN (Oro\\Bundle\\UserBundle\\Entity\\User) and short (OroUserBundle:User)
   class names are accepted:
 
 .. code-block:: none

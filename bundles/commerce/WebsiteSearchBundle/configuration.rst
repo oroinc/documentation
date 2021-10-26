@@ -54,7 +54,7 @@ Here is an example of mapping configuration for the product bundle:
                 name: names_LOCALIZATION_ID
                 type: text
 
-This example shows configuration for the `Oro\\Bundle\\ProductBundle\\Entity\Product` entity that uses `oro_product_WEBSITE_ID` alias. This alias contains `WEBSITE_ID` placeholder that generates a separate scope in the storage for each website. The real alias that is stored looks like `oro_product_1` (for a website with ID=1).
+This example shows configuration for the `Oro\\Bundle\\ProductBundle\\Entity\\Product` entity that uses `oro_product_WEBSITE_ID` alias. This alias contains `WEBSITE_ID` placeholder that generates a separate scope in the storage for each website. The real alias that is stored looks like `oro_product_1` (for a website with ID=1).
 
 In the field configuration, we've defined `sku` and `names_LOCALIZATION_ID` fields.
 The `sku` is a plain text field that is stored for every entity.

@@ -13,7 +13,7 @@ The information below summarizes concepts and tools that are important for under
 * **Mink** is an |open source browser controller/emulator| for web applications developed using PHP.
 * **OroElementFactory** creates elements in contexts.
 * |SymfonyExtension| provides an integration with Symfony and Mink driver for Symfony application.
-* **@OroTestFrameworkBundle\Behat\ServiceContainer\OroTestFrameworkExtension** provides integration with Oro BAP based applications.
+* **Oro\\Bundle\\TestFrameworkBundle\\Behat\\ServiceContainer\\OroTestFrameworkExtension** provides integration with Oro BAP based applications.
 * **Selenium2Driver** Selenium2Driver provides a bridge for the WebDriver's wire protocol.
 * |ChromeDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more.
 
@@ -807,8 +807,8 @@ To prepare for auto-recovery using a startup script:
 
    It starts automatically after rebooting the machine.
 
-Couldn't generate random unique value for Oro\Bundle\UserBundle\Entity\User: username in 128 tries
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Couldn't generate random unique value for Oro\\Bundle\\UserBundle\\Entity\\User: username in 128 tries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A hot fix:
 

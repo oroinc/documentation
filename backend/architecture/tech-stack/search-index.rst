@@ -54,8 +54,8 @@ Common Interfaces
 
 Common interfaces are used at all index types to provide high-level abstraction for functionality that has to work with any type of search index (e.g. datagrids).
 
-* **Search engine interface** Oro\Bundle\SearchBundle\Engine\EngineInterface is used to perform search requests to a search index.
-* **Search indexer interface** Oro\Bundle\SearchBundle\Engine\IndexerInterface is used for indexation, i.e. to change state of a search index (save data, remove data, reset index).
+* **Search engine interface** Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface is used to perform search requests to a search index.
+* **Search indexer interface** Oro\\Bundle\\SearchBundle\\Engine\\IndexerInterface is used for indexation, i.e. to change state of a search index (save data, remove data, reset index).
 
 Standard Index Type
 ^^^^^^^^^^^^^^^^^^^
@@ -272,8 +272,8 @@ Object Representation
 ^^^^^^^^^^^^^^^^^^^^^
 
 Object representation has two levels - low and high.
-**Low-level object** (Oro\Bundle\SearchBundle\Query\Query, sometime called search query builder) represents a query and has parts similar to string represenation (select, where etc). Low-level query is not aware about specific search engine. It is used by all search engines as a main query representation. Low-level object is in fact a |Data transfer object|.
-**High-level object** (implementation of Oro\Bundle\SearchBundle\Query\SearchQueryInterface) is used to hide search engine specific logic from a developer. It embeds low-level object and proxies most of the calls. High-level objects are created by the query factory (implementation of Oro\Bundle\SearchBundle\Query\Factory\QueryFactoryInterface). Each index type has its own implementation of high-level object which encapsulates the way this query has to be executed, and its own implementation of query factory responsible for creation of high-level object. High-level object is in fact a |Facade|.
+**Low-level object** (Oro\\Bundle\\SearchBundle\\Query\\Query, sometime called search query builder) represents a query and has parts similar to string represenation (select, where etc). Low-level query is not aware about specific search engine. It is used by all search engines as a main query representation. Low-level object is in fact a |Data transfer object|.
+**High-level object** (implementation of Oro\\Bundle\\SearchBundle\\Query\\SearchQueryInterface) is used to hide search engine specific logic from a developer. It embeds low-level object and proxies most of the calls. High-level objects are created by the query factory (implementation of Oro\\Bundle\\SearchBundle\\Query\\Factory\\QueryFactoryInterface). Each index type has its own implementation of high-level object which encapsulates the way this query has to be executed, and its own implementation of query factory responsible for creation of high-level object. High-level object is in fact a |Facade|.
 Following diagram demonstrates connection between low-level object, high-level object, query factory and search engine:
 
 .. image:: /img/backend/architecture/op_structure_search_index_object_representation.png
@@ -284,10 +284,10 @@ Triggering Search Request
 The recommended way to trigger search request is to get instance of high-level object, build a query, execute it and get results. It's also recommended to isolate all search requests in a search repository (see :ref:`Best Practices <search--best-practices>` section) to separate storage logic from business logic.
 However, if you really need to work on a lower level (e.g. to write functional test) then you can get instance of an appropriate search engine type. All following engines implement standard search engine interface ``Oro\Bundle\SearchBundle\Engine\EngineInterface``:
 
-* standard ORM engine - Oro\Bundle\SearchBundle\Engine\Orm, service ID is oro_search.search.engine;
-* standard Elasticsearch engine - Oro\Bundle\ElasticSearchBundle\Engine\ElasticSearch, service ID is oro_search.search.engine;
-* website ORM engine - Oro\Bundle\WebsiteSearchBundle\Engine\ORM\OrmEngine, service ID is oro_website_search.engine;
-* website Elasticsearch engine - Oro\Bundle\WebsiteElasticSearchBundle\Engine\ElasticSearchEngine, service ID is oro_website_search.engine.
+* standard ORM engine - Oro\\Bundle\\SearchBundle\\Engine\\Orm, service ID is oro_search.search.engine;
+* standard Elasticsearch engine - Oro\\Bundle\\ElasticSearchBundle\\Engine\\ElasticSearch, service ID is oro_search.search.engine;
+* website ORM engine - Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\OrmEngine, service ID is oro_website_search.engine;
+* website Elasticsearch engine - Oro\\Bundle\\WebsiteElasticSearchBundle\\Engine\\ElasticSearchEngine, service ID is oro_website_search.engine.
 
 All these engines accept low-level query and execution context as an arguments, and return result object with list of found entities, total number of results and requested aggregated data.
 
@@ -322,12 +322,12 @@ Website search index type provides an event called oro_website_search.reindexati
 
 Both standard and website search index types have synchronous and asynchronous indexers which trigger corresponding type of indexation. All following indexers implement the same standard indexer interface ``Oro\Bundle\SearchBundle\Engine\IndexerInterface``:
 
-* standard asynchronous indexer - Oro\Bundle\SearchBundle\Async\Indexer, service ID is oro_search.async.indexer
-* standard synchronous ORM indexer - Oro\Bundle\SearchBundle\Engine\OrmIndexer, service ID is oro_search.search.engine.indexer
-* standard synchronous Elasticsearch - Oro\Bundle\ElasticSearchBundle\Engine\ElasticSearchIndexer, service ID is oro_search.search.engine.indexer
-* website asynchronous indexer - Oro\Bundle\WebsiteSearchBundle\Engine\AsyncIndexer, service ID is oro_website_search.async.indexer
-* website ORM indexer - Oro\Bundle\WebsiteSearchBundle\Engine\ORM\OrmIndexer, service ID is oro_website_search.indexer
-* website Elasticsearch indexer - Oro\Bundle\WebsiteElasticSearchBundle\Engine\ElasticSearchIndexer, service ID is oro_website_search.indexer
+* standard asynchronous indexer - Oro\\Bundle\\SearchBundle\\Async\\Indexer, service ID is oro_search.async.indexer
+* standard synchronous ORM indexer - Oro\\Bundle\\SearchBundle\\Engine\\OrmIndexer, service ID is oro_search.search.engine.indexer
+* standard synchronous Elasticsearch - Oro\\Bundle\\ElasticSearchBundle\\Engine\\ElasticSearchIndexer, service ID is oro_search.search.engine.indexer
+* website asynchronous indexer - Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer, service ID is oro_website_search.async.indexer
+* website ORM indexer - Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\OrmIndexer, service ID is oro_website_search.indexer
+* website Elasticsearch indexer - Oro\\Bundle\\WebsiteElasticSearchBundle\\Engine\\ElasticSearchIndexer, service ID is oro_website_search.indexer
 
 All these indexers accept entities of entity class that has to be reindexed.
 

@@ -19,7 +19,7 @@ Configuration
 
 All custom Permissions are described in the ``permissions.yml`` configuration file inside a corresponding bundle. Currently it is not
 possible to add a Permission globally - for all groups (applications); all required groups should be listed manually. So for
-every application the required permissions should be added\updated by creating a corresponding ``permissions.yml`` file.
+every application the required permissions should be added\\updated by creating a corresponding ``permissions.yml`` file.
 
 An example of a simple permission configuration.
 

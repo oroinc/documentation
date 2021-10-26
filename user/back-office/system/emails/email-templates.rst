@@ -295,7 +295,7 @@ get_payment_methods (OroCommerce Only)
 
 **Description:** Returns the allowed payment methods for orders.
 
-**Returns:** array of \Oro\Bundle\PaymentBundle\Twig\DTO\PaymentMethodObject objests with payment method label and options
+**Returns:** array of Oro\\Bundle\\PaymentBundle\\Twig\\DTO\\PaymentMethodObject objests with payment method label and options
 (can be used as array of strings thanks to PaymentMethodObject::__toString method)
 
 **Example:**
@@ -357,7 +357,7 @@ get_payment_status (OroCommerce only)
 
 **Description:** Returns the payment status for requested order.
 
-**Returns:** string, one of \Oro\Bundle\PaymentBundle\Provider\PaymentStatusProvider class statuses
+**Returns:** string, one of Oro\\Bundle\\PaymentBundle\\Provider\\PaymentStatusProvider class statuses
 ('full', 'partially', 'invoiced', 'authorized', 'declined', 'pending')
 
 **Example:**

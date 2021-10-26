@@ -62,7 +62,7 @@ By default, the synchronization is executed by a CRON job every 30 minutes. Outs
 
 Email synchronization functionality is implemented in the following classes:
 
-- ImapEmailSynchronizer - extends OroEmailBundle\Sync\AbstractEmailSynchronizer class to work with IMAP mailboxes.
+- ImapEmailSynchronizer - extends OroEmailBundle\\Sync\\AbstractEmailSynchronizer class to work with IMAP mailboxes.
 - ImapEmailSynchronizationProcessor - implements email synchronization algorithm used for synchronizing emails through IMAP.
 - EmailSyncCommand - allows executing email synchronization as a CRON job or through the command line.
 

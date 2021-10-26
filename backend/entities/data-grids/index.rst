@@ -284,7 +284,7 @@ Key Classes
 
 - ``Datagrid\Manager`` - responsible of preparing the grid and its configuration.
 - ``Datagrid\Builder`` - responsible for creating and configuring the datagrid object and its datasource. Contains registered datasource type and extensions, also it performs check for datasource availability according to ACL
-- ``Datagrid\Datagrid`` - the main grid object, has knowledge ONLY about the datasource object and the interaction with it, all further modifications of the results and metadata come from the extensions Extension\Acceptor - is a visitable mediator, contains all applied extensions and provokes visits at different points of the interactions.
+- ``Datagrid\Datagrid`` - the main grid object, has knowledge ONLY about the datasource object and the interaction with it, all further modifications of the results and metadata come from the extensions Extension\\Acceptor - is a visitable mediator, contains all applied extensions and provokes visits at different points of the interactions.
 - ``Extension\ExtensionVisitorInterface`` - visitor interface
 - ``Extension\AbstractExtension`` - basic empty implementation
 - ``Datasource\DatasourceInterface`` - link object between data and grid. Should provide results as array of ResultRecordInterface compatible objects

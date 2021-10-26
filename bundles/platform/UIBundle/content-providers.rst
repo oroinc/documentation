@@ -8,7 +8,7 @@ OroPlatform is a hybrid application that supports JS navigation, but it still re
 Content Provider Implementation
 -------------------------------
 
-To implement a content provider, you need to implement `\Oro\Bundle\UIBundle\ContentProvider\ContentProviderInterface`
+To implement a content provider, you need to implement ``Oro\Bundle\UIBundle\ContentProvider\ContentProviderInterface``
 and register your class as a service with tag `oro_ui.content_provider`.
 The `alias` attribute of this tag is required and it is used to specify a unique name of the content provider.
 

@@ -87,7 +87,7 @@ Oro\\Bundle\\ImportExportBundle\\Context\\StepExecutionProxyContext
 
 StepExecutionProxyContext is a wrapper of the Oro\\Bundle\\BatchBundle\\Entity\\StepExecution instance from OroBatchBundle.
 
-**Oro\Bundle\BatchBundle\Entity\StepExecution**
+**Oro\\Bundle\\BatchBundle\\Entity\\StepExecution**
 
 The instance of this class can store the data of step execution, such as a number of records that were read/written, errors, exceptions, warnings, and an execution context (Oro\\Bundle\\BatchBundle\\Item\\ExecutionContext) as well as the abstract data generated during the execution.
 

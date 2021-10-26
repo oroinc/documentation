@@ -15,7 +15,7 @@ Translation context resolver should be used to humanize translation keys and giv
 Classes Description
 ^^^^^^^^^^^^^^^^^^^
 
-* **TranslationBundle\Extension\TranslationContextResolverInterface** - extensions interface for resolving Translation Context by translation key.
+* **TranslationBundle\\Extension\\TranslationContextResolverInterface** - extensions interface for resolving Translation Context by translation key.
 
 Configuration
 ~~~~~~~~~~~~~
@@ -90,9 +90,9 @@ Form Types Description
 Classes Description
 ^^^^^^^^^^^^^^^^^^^
 
-* **TranslationBundle \ Form \ Type \ TranslatableEntityType** - class for translatable\_entity form type, provides functionality to work with translatable entities;
+* **TranslationBundle\\Form\\Type\\TranslatableEntityType** - class for translatable\_entity form type, provides functionality to work with translatable entities;
 
-* **TranslationBundle \ Form \ DataTransformer \ CollectionToArrayTransformer** - extends standard Doctrine transformer to support empty array as data source.
+* **TranslationBundle\\Form\\DataTransformer\\CollectionToArrayTransformer** - extends standard Doctrine transformer to support empty array as data source.
 
 Configuration
 ^^^^^^^^^^^^^

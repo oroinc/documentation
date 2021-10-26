@@ -322,7 +322,7 @@ To create a shipping method type, add the <bundle_root>/Method/FastShippingMetho
 
 * ``calculatePrice``-- Contains the main logic and returns the shipping price for the given ``$context``.
 
-.. note:: If you implement a more complicated shipping method, see Oro\Bundle\ShippingBundle\Context\ShippingContextInterface for attributes that can affect a shipping price (e.g., shipping address information or line items).
+.. note:: If you implement a more complicated shipping method, see Oro\\Bundle\\ShippingBundle\\Context\\ShippingContextInterface for attributes that can affect a shipping price (e.g., shipping address information or line items).
 
 Define Translation for the Shipping Method Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

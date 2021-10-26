@@ -31,7 +31,7 @@ To create a menu with PHP Builder, register it as the `oro_menu.builder` tag in 
         tags:
            - { name: oro_menu.builder, alias: main }
 
-All menu builders must implement ``Oro\Menu\BuilderInterface`` with the `build()` method. In the `build()` method, bundles manipulate the menu items. All builders are collected in `BuilderChainProvider`, which is registered in the system as Knp\Menu Provider.
+All menu builders must implement ``Oro\Menu\BuilderInterface`` with the `build()` method. In the `build()` method, bundles manipulate the menu items. All builders are collected in `BuilderChainProvider`, which is registered in the system as Knp\\Menu Provider.
 Configurations are collected in the Extension and passed into the Configuration class. In the future, more additional configurations can be created, for example, to get menu configurations from annotations or some persistent storage like a database. Once the menu structure is created, the `oro_menu.configure.<menu_alias>` event is dispatched, with MenuItem and MenuFactory available.
 
 .. code-block:: php
