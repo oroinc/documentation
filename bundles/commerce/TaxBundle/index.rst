@@ -92,7 +92,7 @@ You can add your own custom tax logic with custom tax provider.
                - { name: oro_tax.tax_provider, alias: demo, priority: 10 }
 
 
-3. Navigate to the admin panel under System > Configuration > Taxation > Tax Calculation and chose your own custom **Tax Provider** in the dropdown list.
+3. Navigate to the admin panel under System > Configuration > Commerce > Taxation > Tax Calculation and chose your own custom **Tax Provider** in the dropdown list.
 
 
 .. include:: /include/include-links-dev.rst

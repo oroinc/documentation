@@ -317,3 +317,7 @@ user/back-office/system/integrations/microsoft/index /user/back-office/system/co
 user/back-office/system/integrations/microsoft/microsoft-single-sign-on /user/back-office/system/configuration/system/integrations/microsoft-settings/microsoft-single-sign-on
 user/back-office/system/integrations/azure-oauth /user/back-office/system/configuration/system/integrations/microsoft-settings/microsoft-oauth-azure
 user/back-office/system/configuration/commerce/customer/cookie-consent-banner /user/back-office/system/configuration/commerce/customer/global-customer-users
+user/back-office/system/configuration/system/integrations/google-integration-settings /user/back-office/system/configuration/system/integrations/google-settings/index
+user/back-office/system/integrations/google/index /user/back-office/system/configuration/system/integrations/google-settings/index
+user/back-office/system/integrations/google/hangouts /user/back-office/system/configuration/system/integrations/google-settings/hangouts
+user/back-office/system/integrations/google/google-single-sign-on /user/back-office/system/configuration/system/integrations/google-settings/google-single-sign-on

@@ -28,7 +28,7 @@ To configure the Single Sign-On with Microsoft 365 in your OroCRM or OroCommerce
 Log in with Microsoft 365
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When a user opens the login page of an instance for which single sign-on capability is enabled, they can see an additional **Log in with Microsoft 365** button.
+When a user opens the login page of the instance with the enabled single sign-on capability, they can see an additional **Log in with Microsoft 365** button.
 
 .. image:: /user/img/microsoft/log_in_with_microsoft_365.jpg
    :alt: The login page with the button to log in with Microsoft 365

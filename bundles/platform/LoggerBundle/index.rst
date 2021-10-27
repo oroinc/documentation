@@ -32,7 +32,7 @@ The ``--recipients`` option can be used to update the list of the recipients tha
 
    php bin/console oro:logger:email-notification --recipients='email1@example.com;email2@example.com;emailN@example.com'
 
-Or you can configure recipients list using web interface from **System > Configuration > General Setup > Application Settings > Error Logs Notifications** section.
+Or you can configure recipients list using web interface from **System > Configuration > System Configuration > General Setup > Application Settings > Error Logs Notifications** section.
 
 To change log level for email notifications , update the ``monolog.handlers.swift.level`` parameter in ``config_prod.yml``.
 

@@ -347,9 +347,9 @@ Links (User)
 
    <a href="https://console.developers.google.com/apis" target="_blank">Google Developers Console</a>
 
-.. |instructions on obtaining credentials the Google side| raw:: html
+.. |instructions on obtaining credentials on the Google side| raw:: html
 
-   <a href="https://support.google.com/cloud/answer/6158862?hl=en" target="_blank">instructions on obtaining credentials the Google side</a>
+   <a href="https://support.google.com/cloud/answer/6158862?hl=en" target="_blank">instructions on obtaining credentials on the Google side</a>
 
 .. |Canonical link| raw:: html
 

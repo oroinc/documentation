@@ -11,7 +11,7 @@ Emails in mailboxes are visible in the user inbox for a user authorized to view 
 Configuration
 ^^^^^^^^^^^^^
 
-System Mailboxes can be created and configured under *System > Configuration > Email Configuration > System Mailboxes*. When set up with IMAP Synchronization, mailbox emails will synchronize using the same cron job as all other emails (oro:cron:imap-sync). SMTP settings can also be specified for sending automatic and manual replies to that mailbox.
+System Mailboxes can be created and configured under *System > Configuration > System Configuration > General Setup > Email Configuration > System Mailboxes*. When set up with IMAP Synchronization, mailbox emails will synchronize using the same cron job as all other emails (oro:cron:imap-sync). SMTP settings can also be specified for sending automatic and manual replies to that mailbox.
 
 Email Processing
 ^^^^^^^^^^^^^^^^
