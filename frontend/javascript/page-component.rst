@@ -116,6 +116,49 @@ In this case it's better to define a function that accepts options and performs 
         };
     }
 
+Initialize Components on DOM Events
+-----------------------------------
+
+You can postpone initialization for some components until a specific DOM event occurs to improve page performance.
+
+You can do this for components that do not change the UI ( i.e., have no visual impact on a page), for example, when an initially hidden popup/dropdown has initialized.
+
+For that purpose, the component's DOM-element or its container has to have an additional attribute ``data-page-component-init-on`` defined. A value is an event name or a comma-separated list of events.
+
+The following three events are currently supported: ``"click"``, ``"focusin"`` and ``"mouseover"``.
+
+.. code-block:: html
+
+    <button data-page-component-init-on="click,focusin"
+         data-page-component-module="mybundle/js/app/components/foo-component">Show more...</button>
+
+Below is another example illustrating several components within the `init-on` container:
+
+.. code-block:: html
+
+    <form data-page-component-init-on="click,focusin">
+        <label>
+            Country <input name="country"
+                           data-page-component-module="mybundle/js/app/components/country-suggest-component"/>
+        </label>
+        <div data-page-component-view="mybundle/js/app/views/company-addresses-view"></div>
+    </form>
+
+When the `init-on` container includes a view-component that renders HTML and has to be initialized immediately, define a specific value in the ``data-page-component-init-on="asap"`` attribute for the element responsible for that view-component. This way, the view-component will be initialized as soon as possible even though it is within the `init-on` container.
+
+.. code-block:: html
+
+    <form data-page-component-init-on="click,focusin">
+        <label>
+            Country <input name="country"
+                           data-page-component-module="mybundle/js/app/components/country-suggest-component"/>
+        </label>
+        <div data-page-component-init-on="asap"
+             data-page-component-view="mybundle/js/app/views/company-addresses-view"></div>
+    </form>
+
+In this example, ``company-addresses-view`` is initialized and rendered without a user's interaction with the interface.
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
