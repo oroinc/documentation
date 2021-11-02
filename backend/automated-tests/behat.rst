@@ -106,7 +106,17 @@ Configuration
 Application Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use default configuration for the application installed in production mode. If you do not have any mail server configured locally, set the ``mailer_transport`` setting in *parameters.yml* to ``null``.
+Use the default configuration for the application installed in the production mode.
+
+To test emails, install |Mailcatcher| and set up mailer_* options in the ``config/parameters.yml`` file:
+
+  .. code-block:: yaml
+
+     mailer_transport: smtp
+     mailer_host: 127.0.0.1
+     mailer_port: 1025
+
+Behat framework uses mailcatcher UI to assert emails. By default, the framework expects mailcatcher UI at ``http://127.0.0.1:1080/``. To change the URL, provide the ``ORO_MAILER_WEB_URL`` environment variable.
 
 Behat Configuration
 ~~~~~~~~~~~~~~~~~~~

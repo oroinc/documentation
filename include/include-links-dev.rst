@@ -5842,3 +5842,7 @@ Links (Dev)
 .. |NotificationAlertManager| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertManager.php" target="_blank">NotificationAlertManager</a>
+
+.. |Mailcatcher| raw:: html
+
+   <a href="https://mailcatcher.me/" target="_blank">Mailcatcher</a>
