@@ -237,13 +237,13 @@ Code Example is a value of the "call_timeout" attribute. It is not blank, and it
 .. code-block:: php
 
 
-    $configuration = array(
-        '@and' => array(
-            '@not_blank' => array('$call_timeout'),
-            '@equal' => array('$call_timeout', 20)
-        )
-    );
-    /** @var $conditionFactory \Oro\Bundle\ActionBundle\Model\Condition\ConditionFactory */
+    $configuration = [
+        '@and' => [
+            '@not_blank' => ['$call_timeout'],
+            '@equal' => ['$call_timeout', 20]
+        ]
+    ];
+    /** @var \Oro\Bundle\ActionBundle\Model\Condition\ConditionFactory $conditionFactory */
     $condition = $conditionFactory->create(Configurable::ALIAS, $configuration);
 
     /** @var object $data */

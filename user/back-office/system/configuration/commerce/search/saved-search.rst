@@ -7,6 +7,8 @@ Configure Global Saved Search Settings
 
 .. begin_include
 
+.. hint:: The Saved Search feature is available since OroCommerce v4.2.4. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 You can configure the ability for registered customer users to save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock.
 
 By default, saved search is enabled if Elasticsearch is used as the search engine for the application. Please be aware that additional configuration of Elasticsearch may be required as the saved search feature uses percolate queries.

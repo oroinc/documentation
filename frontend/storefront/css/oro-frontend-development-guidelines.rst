@@ -35,7 +35,7 @@ A block is a logical self-contained functional component of the user interface.
 
 A block identifier should match the corresponding :ref:`layout block type identifier <dev-doc-frontend-layouts-layout>`.
 
-Block names (a part of the block identifier) may be prefixed with a short namespace or a bundle
+Block names (part of the block identifier) may be prefixed with a short namespace or a bundle
 identifier if similar blocks are provided by multiple bundles to eliminate confusion, for instance.
 
 **Examples:**

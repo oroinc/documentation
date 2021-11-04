@@ -34,7 +34,8 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | Web server configuration recommendations are well |
 |                   | described in |Symfony web server documentation|   |
 +-------------------+---------------------------------------------------+
-| *PHP*             | * |PHP| >=7.4.14 and < 8.0                        |
+| *PHP*             | * |PHP| for **v4.2.0 - v4.2.3** >=7.4.14 and < 8.0|
+|                   | * |PHP| for **4.2.4+** >=7.4.14                   |
 |                   | * PHP CLI, the same version as for the web server |
 +-------------------+---------------------------------------------------+
 | *PHP Settings*    | Few updates to default PHP configuration settings |
@@ -90,7 +91,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| v.12 or later used for JS assets      |
+| *Assets*          | * |Node.js| >=12.0,<15.0 used for JS assets       |
 |                   |   minification and SCSS assets build.             |
 +-------------------+---------------------------------------------------+
 
@@ -108,7 +109,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *Database*       | * |PostgreSQL| / |EnterpriseDB| 12.5 or 13          |
 +------------------+-----------------------------------------------------+
-| *Search Index*   | * |Elasticsearch| 7.*                               |
+| *Search Index*   | * |Elasticsearch| >=7.7, <8.0                       |
 +------------------+-----------------------------------------------------+
 | *Job Queue*      | * |RabbitMQ| 3.8.x                                  |
 +------------------+-----------------------------------------------------+

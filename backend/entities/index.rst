@@ -45,7 +45,6 @@ In the sections below, you can learn the key things you can come across when wor
    acls
    attachments
    customize-crud
-   filters/index
    fixtures
 
 .. include:: /include/include-links-dev.rst

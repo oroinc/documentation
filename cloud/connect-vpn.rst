@@ -54,7 +54,7 @@ Used client software: openvpn 2.4.x, network-manager-openvpn, network-manager-op
 
 1. Install the required packages:
 
-   .. code-block:: none
+   .. code-block:: bash
 
       sudo apt install network-manager-openvpn-gnome network-manager-openvpn openvpn
 

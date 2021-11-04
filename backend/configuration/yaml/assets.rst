@@ -11,9 +11,8 @@ The ``assets.yml`` file used to load Sass and CSS files. The input files will be
 automatically merged to a single output file and optimized for web presentation.
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/assets.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/oro/assets.yml
     assets:
         css:
             inputs:
@@ -28,8 +27,8 @@ automatically merged to a single output file and optimized for web presentation.
                 # List of file masks for inputs that has to be processed with RTL plugin
                 - 'acmedemo/path/**'
 
-To apply changes, run the command:
+To apply changes, run the the following command that installs and builds application assets:
 
 .. code-block:: none
 
-    $ php bin/console oro:assets:install  --symlink
+    php bin/console oro:assets:install  --symlink

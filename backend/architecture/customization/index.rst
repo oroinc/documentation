@@ -126,7 +126,7 @@ Decorate existing services to change their default behavior. For more informatio
 [Symfony] Use Dependency Injection Tags
 """""""""""""""""""""""""""""""""""""""
 
-With the dependency injection tags, you can register a service of specific a type (for example data provider for the layout, custom action for the workflow system, etc.) in the dependency injection container. To do so, tag your service with a specified dependency injection tag to make it a part of Oro application.
+With the dependency injection tags, you can register a service of specific a type (for example data provider for the layout, custom action for the workflow system, etc.) in the dependency injection container. To do so, tag your service with a specified dependency injection tag to make it part of Oro application.
 
 For example, to add a new payment method in your OroCommerce application, first create your own implementation of the *PaymentMethodProviderInterface* and tag it with the existing *oro_payment.payment_method_provider* tag, like in the following example:
 

@@ -145,6 +145,8 @@ Contain settings for the entity UI.
 
 *  **contact_information** *string* - enables you to change contact information (phone or email) for the entity. Each contact_information type requires its own template. E.g. phone => "OroMarketingListBundle:MarketingList/ExtendField:phone.html.twig".
 
+*  **actualize_owning_side_on_change** *boolean* - if set to true, the "Updated At" and "Updated By" fields of the owning entity will be updated on collection item updates. Applicable for ref-many and oneToMany relations only.
+
 .. _annotation-config-field-enum:
 
 ``enum``
@@ -322,7 +324,7 @@ Attributes that using to set up :ref:`search <user-guide-getting-started-search>
 
 * **searchable** *boolean* - Indicates what custom field could be searchable.
 
-* **title_field** - Indicates what custom text field is a part of search result title.
+* **title_field** - Indicates what custom text field is part of search result title.
 
 ``security``
 ~~~~~~~~~~~~

@@ -98,7 +98,7 @@ the ``--env=prod`` option to your import command:
 .. code-block:: none
 
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
+    php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
 
 
 Skip Import File Validation
@@ -157,16 +157,16 @@ it will disable all optional listeners. Here is an example:
 
 .. caution::
 
-    Remember that disabling listeners actually disables a part of backend functionality, so before using it
-    make sure this part is not required. E.g. if the ``oro_search.index_listener`` listener is disabled then
+    Remember that disabling listeners actually disables part of the backend functionality, so before using it
+    make sure this part is not required. E.g., if the ``oro_search.index_listener`` listener is disabled, then
     imported entities will not be found by the search engine (however, this may be fixed by manual search reindex
-    using the ``oro:search:reindex`` command).
+    using the ``oro:search:reindex`` command, which rebuilds the search index).
 
 
 Write Custom Import Strategy
 ----------------------------
 
-OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
+OroPlatform provides ``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy``
 to be used as the default one. This strategy automatically handles field types, relations etc.
 However, all this functionality significantly slows down the import process and might perform
 operations and requests that are not required for some specific cases.

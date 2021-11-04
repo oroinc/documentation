@@ -19,7 +19,7 @@ These methods are detailed below.
 Method 1: Create a Project with Composer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Make sure you are using PHP >=7.4.14 and < 8.0 or higher and have Composer installed. If you do not, use the Composer
+1. Make sure you are using PHP >=7.4.14 or higher and have Composer installed. If you do not, use the Composer
    installation process described in the |Composer installation documentation|.
 
 2. Create your new Oro application project with Composer by running one of commands below, depending on the base application you want to install:
@@ -27,21 +27,21 @@ Method 1: Create a Project with Composer
    .. code-block:: none
 
       # OroCommerce Community Edition
-      composer create-project oro/commerce-crm-application my_project_name 4.2.3 -n
+      composer create-project oro/commerce-crm-application my_project_name 4.2.3
       # OroCommerce Enterprise Edition
-      composer create-project oro/commerce-crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+      composer create-project oro/commerce-crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com
       # OroCRM Community Edition
-      composer create-project oro/crm-application my_project_name 4.2.3 -n
+      composer create-project oro/crm-application my_project_name 4.2.3
       # OroCRM Enterprise Edition
-      composer create-project oro/crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+      composer create-project oro/crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com
       # OroPlatform Community Edition
-      composer create-project oro/platform-application my_project_name 4.2.3 -n
+      composer create-project oro/platform-application my_project_name 4.2.3
       # OroCommerce Community Edition for Germany
-      composer create-project oro/commerce-crm-application-de oroapp my_project_name 4.2.3 -n
+      composer create-project oro/commerce-crm-application-de oroapp my_project_name 4.2.3
       # OroCommerce Enterprise Edition for Germany
-      composer create-project oro/commerce-crm-enterprise-application-de my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+      composer create-project oro/commerce-crm-enterprise-application-de my_project_name 4.2.3 --repository=https://satis.oroinc.com
       # OroCommerce Enterprise Edition (without CRM)
-      composer create-project oro/commerce-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+      composer create-project oro/commerce-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com
 
    * Replace the ``4.2.3`` with the version to download.
 

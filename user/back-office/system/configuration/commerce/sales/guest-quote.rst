@@ -7,7 +7,7 @@ Configure Global Settings for Quotes
 
 .. begin_guest_quote
 
-.. hint:: This section is a part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+.. hint:: This section is part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
 
 The section describes how to enable or disable the quote functionality for the registered and guest users. The settings can be configured on three levels, :ref:`global <sys--conf--commerce--guest--enable--guest_quotes>`, :ref:`organization <sys--organization-quotes>`, and :ref:`website <sys--websites-quotes>`.
 

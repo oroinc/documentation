@@ -37,11 +37,8 @@ Each of these blocks has children in the final structure, so they represent a *c
 - A **Container** is a block type responsible for holding and rendering its children.
 - A **Final block** is a block type that renders content based on data, but it cannot have children.
 
-The **layout** built by providing a set of actions called a :ref:`layot update <dev-doc-frontend-layouts-layout-updates>`.
+The **layout** built by providing a set of actions called a :ref:`layout update <dev-doc-frontend-layouts-layout-updates>`.
 Layout updates can be defined for a specific route and a specific :ref:`theme <dev-doc-frontend-layouts-theming>`.
-
-.. todo
-   describe available block variables and options
 
 .. _dev-doc-frontend-block-types:
 
@@ -371,7 +368,7 @@ default values, etc. In order to prevent copypasting of the boilerplate code, **
 Each configurator should implement the |ContextConfiguratorInterface|,
 and be registered as a service in the DI container with the `layout.context_configurator` tag.
 
-For debugging purposes, the `bin/console oro:debug:layout` command has been added. It helps monitor the way the context data-resolver will
+For debugging purposes, use the `bin/console oro:debug:layout` command. It helps monitor the way the context data-resolver will
 be configured by the **context configurators**.
 
 .. _dev-doc-frontend-layouts-layout-data-providers:
@@ -417,9 +414,6 @@ As an example, consider a data provider that returns product details:
 
     class ProductDataProvider
     {
-        /**
-         * @param Product $product
-         */
         public function getCode(Product $product)
         {
             return $product->getId();
@@ -738,4 +732,3 @@ Then, we modified the code as follows:
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
-

@@ -536,13 +536,10 @@ collection of the layout context using a :ref:`context configurator <dev-doc-fro
 
     class ProductContextConfigurator implements ContextConfiguratorInterface
     {
-        /** @var Request|null */
-        protected $request;
+        protected Request|null $request = null;
 
         /**
          * Synchronized DI method call, sets current request for further usage
-         *
-         * @param Request $request
          */
         public function setRequest(Request $request = null)
         {
@@ -755,13 +752,10 @@ language code from the request and save it in the layout context.
 
     class LocaleContextConfigurator implements ContextConfiguratorInterface
     {
-        /** @var Request|null */
-        protected $request;
+        protected Request|null $request = null;
 
         /**
          * Synchronized DI method call, sets current request for further usage
-         *
-         * @param Request $request
          */
         public function setRequest(Request $request = null)
         {
@@ -1503,7 +1497,7 @@ First, we need to create a new form type and register it in the container:
             $builder
                 ->add(
                     'color',
-                    'choice',
+                    ChoiceType::class,
                     [
                         'label'    => 'Color',
                         'required' => true,
@@ -1514,7 +1508,7 @@ First, we need to create a new form type and register it in the container:
                 )
                 ->add(
                     'qty',
-                    'text',
+                    TextType::class,
                     [
                         'required' => true,
                         'label' => 'Qty'

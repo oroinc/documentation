@@ -53,8 +53,6 @@ The |DescriptionsConfigExtra| is used to request human-readable descriptions of 
 
 .. code-block:: php
 
-    <?php
-
     namespace Oro\Bundle\ApiBundle\Config;
 
     use Oro\Bundle\ApiBundle\Processor\GetConfig\ConfigContext;

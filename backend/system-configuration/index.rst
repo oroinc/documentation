@@ -17,7 +17,6 @@ trees.
 
 .. code-block:: php
 
-    <?php
     $config = $this->get('oro_config.user');
     $value  = $config->get('oro_anybundle.anysetting');
 
@@ -26,13 +25,12 @@ Manage Configuration Settings
 -----------------------------
 
 To define your own configuration settings in a bundle, use the
-:class:`Oro\\Bundle\\ConfigBundle\\DependencyInjection\\SettingsBuilder` in the
+``Oro\Bundle\ConfigBundle\DependencyInjection\SettingsBuilder`` in the
 ``Configuration`` class:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/DependencyInjection/Configuration.php
 
-
-    // src/Acme/DemoBundle/DependencyInjection/Configuration.php
     namespace Acme\DemoBundle\DependencyInjection;
 
     use Oro\Bundle\ConfigBundle\DependencyInjection\SettingsBuilder;
@@ -120,6 +118,20 @@ This command has two arguments:
 * Config parameter name - the key of config parameter you want to change. For example, 'oro_anybundle.anysetting';
 * Config parameter value - the value you want to set to the parameter.
 
+For example, to update the back-office and storefront URLs of an OroCommerce instance respectively, run:
+
+.. code-block:: none
+
+    php bin/console oro:config:update oro_ui.application_url 'http://admin.example.com'
+
+.. code-block:: none
+
+    php bin/console oro:config:update oro_website.url 'http://store.example.com'
+
+.. code-block:: none
+
+    php bin/console oro:config:update oro_website.secure_url 'https://store.example.com'
+
 Create Configuration Forms
 --------------------------
 
@@ -176,8 +188,8 @@ To retrieve configuration values inside a controller, use the
 Use its ``get()`` method to retrieve the value of a setting:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/Controller/DemoController.php
 
-    // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -233,7 +245,7 @@ In workflows, you can use a condition to check that System Configuration has the
 
 **Configuration Example**
 
-.. code-block:: bash
+.. code-block:: yaml
 
    '@is_system_config_equal': ['some_config_path', 'needed value']
 
@@ -317,8 +329,6 @@ To add a new config scope:
    Next, add a new form provider for the test scope:
 
    .. code-block:: php
-
-        <?php
 
         namespace Acme\Bundle\SomeBundle\Provider;
 
@@ -410,7 +420,7 @@ To add a new config scope:
 
    and the template:
 
-   .. code-block:: php
+   .. code-block:: twig
 
         {% extends 'OroConfigBundle::configPage.html.twig' %}
         {% import 'OroUIBundle::macros.html.twig' as UI %}
@@ -511,8 +521,6 @@ Please note that a group configuration form can have several configurators, and 
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\DemoBundle;
 
     use Symfony\Component\Form\FormBuilderInterface;
@@ -553,8 +561,6 @@ All handlers are executed only if a group configuration form does not have valid
                     - '@acme.settings_form_handler::handle'
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\DemoBundle;
 
@@ -674,8 +680,6 @@ Define a Search Provider
 Create your own `DemoSearchProvider` that implements |SearchProviderInterface|.
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\DemoBundle\Provider;
 

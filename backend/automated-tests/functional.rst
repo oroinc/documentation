@@ -1,7 +1,7 @@
 .. _functional-tests:
 
-Functional Tests
-================
+Functional Testing with PHPUnit
+===============================
 
 Functional tests check the integration of the different layers of an application.
 
@@ -55,9 +55,8 @@ You need to configure the following parameters for the testing environment:
    For example:
 
    .. code-block:: yaml
+      :caption: config/parameters_test.yml
 
-
-       # config/parameters_test.yml
        parameters:
            database_host: 127.0.0.1
            database_port: null
@@ -79,9 +78,29 @@ You need to configure the following parameters for the testing environment:
 
    .. code-block:: none
 
-       $ bin/console oro:install --env=test --organization-name=Oro --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=n --application-url=http://localhost
+       $ php bin/console oro:install --env=test
+
+   .. note::
+
+       When the following options are not provided, they are set up automatically for the ``test`` environment:
+           * --user-name=admin
+           * --user-email=admin\@example.com
+           * --user-firstname=John
+           * --user-lastname=Doe
+           * --user-password=admin
+           * --sample-data=n
+           * --organization-name=OroInc
+           * --application-url=http://localhost/
+           * --language=en
+           * --formatting-code=en_US
+           * --skip-assets
+           * --skip-translations
+           * --no-interaction
+           * --timeout=600
 
    During installation, the database structure is set up and standard fixtures are loaded.
+
+   .. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command refference for more information.
 
 4. Run tests using phpunit with the proper --testsuite option (unit or functional).
 
@@ -102,9 +121,8 @@ The ``@dbIsolationPerTest`` annotation adds a transaction that will be performed
 before a test starts and is rolled back when a test ends.
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
 
-
-    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -121,13 +139,12 @@ before a test starts and is rolled back when a test ends.
 Loading Data Fixtures
 ^^^^^^^^^^^^^^^^^^^^^
 
-Use the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::loadFixtures`
+Use the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::loadFixtures``
 method to load a fixture in a test:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
 
-
-    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -155,9 +172,8 @@ or a path to the |nelmio/alice| file.
 An example of a fixture:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
 
-
-    // src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -175,9 +191,8 @@ An example of a fixture:
     }
 
 .. code-block:: yaml
+   :caption: src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/bar_data.yml
 
-
-        # src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/bar_data.yml
         Oro\Bundle\FooBarBundle\Entity\BarEntity:
             bar:
                 name: test
@@ -186,9 +201,8 @@ You can also implement the ``Doctrine\Common\DataFixtures\DependentFixtureInterf
 which enables to load fixtures depending on other fixtures being already loaded:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
 
-
-    // src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
 
     use Doctrine\Common\DataFixtures\DependentFixtureInterface;
@@ -241,9 +255,8 @@ Further, you can use reference-specific entities from fixtures, e.g.:
 Now, you can reference the fixture by the configured name in your test:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
 
-
-    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -280,8 +293,8 @@ Writing Functional Tests
 
 To create a functional test case:
 
-1. Extend the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase` class
-2. Prepare the test client (an instance of the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\Client` class)
+1. Extend the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class
+2. Prepare the test client (an instance of the ``Oro\Bundle\TestFrameworkBundle\Test\Client`` class)
 3. Prepare fixtures (optional)
 4. Prepare container (optional)
 5. Call test functionality
@@ -308,9 +321,8 @@ Simple initialization works for testing commands and services when authenticatio
 is not required.
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
 
-
-    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -328,9 +340,8 @@ is not required.
 Initialization with custom AppKernel options:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
 
-
-    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -348,9 +359,8 @@ Initialization with custom AppKernel options:
 Initialization with authentication:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
 
-
-    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -380,9 +390,8 @@ Testing Controllers
 Have a look at an example of a controller test from OroCRM:
 
 .. code-block:: php
+   :caption: src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php
 
-
-    // src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php
     namespace Oro\Bundle\TaskBundle\Tests\Functional\Controller;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -485,14 +494,13 @@ Testing ACLs in a Controller
 
 In this example, a user without sufficient permissions is trying to access
 a controller action. The
-:method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::assertHtmlResponseStatusCodeEquals`
+``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::assertHtmlResponseStatusCodeEquals``
 method is used to ensure that access to the requested resource is
 denied for the user:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/UserBundle/Tests/Functional/UsersTest
 
-
-    // src/Oro/Bundle/UserBundle/Tests/Functional/UsersTest
     namespace Oro\Bundle\UserBundle\Tests\Functional;
 
     use Oro\Bundle\UserBundle\Tests\Functional\DataFixtures\LoadUserData;
@@ -539,9 +547,8 @@ denied for the user:
 Here is an example of a fixture that adds a user without permissions:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/UserBundle/Tests/Functional/DataFixtures/LoadUserData.php
 
-
-    // src/Oro/Bundle/UserBundle/Tests/Functional/DataFixtures/LoadUserData.php
     namespace Oro\Bundle\UserBundle\Tests\Functional\DataFixtures;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -609,16 +616,15 @@ Testing Commands
 ^^^^^^^^^^^^^^^^
 
 When OroPlatform is installed, you can test commands by using the
-:method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::runCommand`
-method from the ``WebTestCase`` class. This method executes a command with
+``runCommand()``
+method from the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class. This method executes a command with
 given parameters and returns its output as a string. For example, see
-what the test for the :class:`Oro\\Bundle\\SearchBundle\\EventListener\\UpdateSchemaDoctrineListener`
+what the test for the ``Oro\Bundle\SearchBundle\EventListener\UpdateSchemaDoctrineListener``
 class from the SearchBundle looks like:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/SearchBundle/Tests/Functional/EventListener/UpdateSchemaListenerTest.php
 
-
-    // src/Oro/Bundle/SearchBundle/Tests/Functional/EventListener/UpdateSchemaListenerTest.php
     namespace Oro\Bundle\SearchBundle\Tests\Functional\EventListener;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -675,13 +681,12 @@ Testing Services or Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To test services or repositories, you can access the service container through
-the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::getContainer`
+the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::getContainer``
 method:
 
 .. code-block:: php
+   :caption: src/Oro/Bundle/FooBarBundle/Tests/Functional/FooBarTest.php
 
-
-    // src/Oro/Bundle/FooBarBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;

@@ -25,7 +25,7 @@ You need to create such file for each language that you will use.
 
 .. tip::
 
-   To simplify creation of the translation file, you can first create a workflow configuration, and then dump all related translation keys to the `workflows.{lang_code}.yml`. For example, if you create workflow 'my_workflow':
+   To simplify creation of the translation file, you can first create a workflow configuration, and then dump all related translation keys to the `workflows.{lang_code}.yml`.   For example, if you create workflow 'my_workflow':
 
    `bin/console oro:workflow:translations:dump my_workflow --locale=en > <YourBundle>/Resources/translations/workflows.en.yml`
 
@@ -36,19 +36,12 @@ Add a Workflow
 
 In the ``workflows.yml``, use the ``workflows`` key to specify that you are going to add workflows.
 
-.. code-block:: yaml
-
-
-    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
-
 The value of the ``workflows`` key is the array of workflows.
 
 To define a new workflow, add its name to the array.
 
 .. code-block:: yaml
-
-
-    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:   # This is the workflow name.
@@ -61,9 +54,7 @@ For each workflow key, the corresponding value is the array of the workflow sett
 In the following example, you can find the configuration of the **Phone Call** workflow. This workflow defines the process of making a call to a customer:
 
 .. code-block:: yaml
-
-
-    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:
@@ -84,9 +75,7 @@ Define the the user-interface workflow name:
 +----------------------------------------+---------------------+
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:
@@ -107,17 +96,15 @@ It is not recommended to modify a system workflow but you can clone it and modif
 
    .. code-block:: none
 
-
        php bin/console oro:debug:workflow:definitions b2b_flow_alternative_checkout > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/config/oro/workflows.yml
 
-   where /<Acme>/Bundle/<CustomBundle> is a path to the bundle you want to create a workflow for.
+   where /<Acme>/Bundle/<CustomBundle> is a path to the bundle you want to create a workflow for and command ``oro:debug:workflow:definitions`` displays current workflow definitions registered in the application.
 
    The copy of the initial file will be created in the destination directory.
 
 2. Dump the workflow translations. Translation contain labels for workflow steps, transitions, etc., thus it is necessary to clone them too.
 
    .. code-block:: none
-
 
       php bin/console oro:workflow:translations:dump b2b_flow_alternative_checkout --locale=en > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/translations/workflows.en.yml
 
@@ -135,7 +122,7 @@ It is not recommended to modify a system workflow but you can clone it and modif
 
    .. image:: /img/backend/workflows/workflow_config_remove_init.png
 
-5. Load your cloned and adjusted workflow translations:
+5. Load your cloned and adjusted workflow translations to the database:
 
    .. code-block:: none
 

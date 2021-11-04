@@ -8,9 +8,7 @@
 JavaScript Architecture
 =======================
 
-Client-side architecture of OroPlatform, OroCRM, and OroCommerce is built on |Chaplin|
-(an architecture for JavaScript Web applications based on the |Backbone.js|
-library).
+Client-side architecture of OroPlatform, OroCRM, and OroCommerce is built on |Chaplin| architecture for JavaScript Web applications based on the |Backbone.js| library).
 
 The Backbone provides little structure above simple routing, individual models,
 views and their binding. Chaplin addresses these limitations by providing
@@ -19,7 +17,7 @@ patterns and best practices.
 
 However, as we distribute functionality of some pages over multiple bundles
 (several bundles can extend a page with their own functionalities), we had to extend the
-|Chaplin| approach for our needs.
+|Chaplin| approach.
 
 Technology Stack
 ----------------
@@ -47,9 +45,9 @@ The application gets initialized by the `oroui/js/app` module that is entry poin
 
 This module exports an instance of the `application` (extension of `Chaplin.Application`); it depends on:
 
-- `oroui/js/app/application`, Application class
-- `oroui/js/app/routes`, collection of routers
-- `oroui/js/app`'s configuration
+- ``oroui/js/app/application``, Application class
+- ``oroui/js/app/routes``, collection of routers
+- configuration of ``oroui/js/app``
 - and some `app modules` (optional)
 
 Routes
@@ -92,6 +90,8 @@ Macros from `OroAssetBundle:Asset.html.twig` is utilized for passing options to 
 
 It is placed in a twig-template in order to get access to backend variables in runtime, which is impossible to do in `jsmodules.yml` file.
 
+.. _dev-doc-frontend-javascript-naming-conventions:
+
 Naming Conventions
 ------------------
 
@@ -99,7 +99,6 @@ File structures and naming conventions use best practices of Backbone
 development adopted for Oro needs.
 
 .. code-block:: text
-
 
     AcmeBundle/Resources/public
     ├── css
@@ -166,7 +165,7 @@ Application Lifecycle
 ---------------------
 
 Chaplin extends Backbone concept introducing missing parts (such as a controller)
-and providing a solid lifecycle for the application components:
+and providing a solid life cycle for the application components:
 
 .. image:: /img/frontend/frontend_architecture/chaplin-lifecycle.png
    :target: http://docs.chaplinjs.org/
@@ -175,7 +174,7 @@ As a result, a controller and all of its models and views exist only between the
 navigation actions. Once the route is changed, the active controller gets disposed,
 as well as all of its nested views and related models. A new controller is created
 for the current route, and new views and models are created in the new
-active controller. This approach of the limited lifecycle of application components
+active controller. This approach of the limited life cycle of application components
 solves memory leak issues. The rest of the components, such as the ``application`` itself,
 ``router``, ``dispatcher``, ``layout``, and ``composer`` (see the picture above)
 exist all through the navigation.
@@ -199,7 +198,6 @@ Fore more details see:
 
 - |Underscore.js template function documentation|
 - :ref:`JavaScript Modularity of OroPlatform based applications<dev-doc-frontend-javascript-modularity>`
-
 
 .. _frontend-architecture-page-layout-view:
 
@@ -269,7 +267,7 @@ is similar to the "Controller" component in Chaplin, however, it implements a di
 flow:
 
 * The "Controller" represents one screen of the application and is created when the page URL is changed
-* The "Page Component" represents a part of the page with certain functionality and is created in the course of page processing, subject to the settings declared in the HTML.
+* The "Page Component" represents part of the page with certain functionality and is created in the course of page processing, subject to the settings declared in the HTML.
 
 Define a Page Component
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -359,7 +357,7 @@ Example
 
 This way, we guarantee that all the necessary handlers are declared before
 they are used. The handlers can be executed by any component or view
-in the Chaplin lifecycle.
+in the Chaplin life cycle.
 
 .. code-block:: javascript
 
@@ -376,13 +374,13 @@ in the Chaplin lifecycle.
     :titlesonly:
     :maxdepth: 1
 
+    js-quick-start
     javascript-modularity
     js-unittests
     composer-js-dependencies
     component-shortcuts
     page-component
     registry
-
 
 
 .. include:: /include/include-links-dev.rst

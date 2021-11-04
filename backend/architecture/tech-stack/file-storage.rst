@@ -94,13 +94,13 @@ The value of the parameter is the MongoDB DSN string described in the previous c
 
 The following example shows the reconfiguration of the **public** adapter:
 
-.. code:: yaml
+.. code-block:: yaml
 
    gaufrette_adapter.public: 'gridfs:mongodb://user:password@host:27017/media'
 
 To get the list of existing Gaufrette adapters, use the following command:
 
-.. code:: bash
+.. code-block:: bash
 
    bin/console debug:config knp_gaufrette adapters
 
@@ -111,13 +111,13 @@ As for the adapter configuration, the parameter's value is the MongoDB DSN strin
 
 The following example shows the reconfiguration of the ``attachments`` filesystem:
 
-.. code:: yaml
+.. code-block:: yaml
 
    gaufrette_filesystem.attachments: 'gridfs:mongodb://user:password@host:27017/attachments'
 
 To get the list of existing Gaufrette filesystems, use the following command:
 
-.. code:: bash
+.. code-block:: none
 
    bin/console debug:config knp_gaufrette filesystems
 
@@ -149,8 +149,6 @@ as the configuration factory for the `oro_gaufrette` bundle in your bundle class
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\AppBundle\DependencyInjection\Factory;
 
     use Oro\Bundle\GaufretteBundle\DependencyInjection\Factory\ConfigurationFactoryInterface;
@@ -171,8 +169,6 @@ as the configuration factory for the `oro_gaufrette` bundle in your bundle class
     }
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\AppBundle;
 
@@ -297,7 +293,7 @@ Migrate Data Command
 During the upgrade from a local filesystem storage to another storage type or location, you need to migrate
 data from the previous location. The command can also be used to upload some data to the file storage.
 
-To migrate the data, you can use console command ``oro:gaufrette:migrate-filestorages``.
+To migrate the data, you can use console command ``oro:gaufrette:migrate-filestorages`` which moves the application files from old storages to the proper Gaufrette file storages.
 
 The command can work in 2 modes: Automatic and Manual.
 
@@ -310,12 +306,17 @@ where the data should migrate to.
 The command has a list of pre-configured default paths from which the data is moved in the automatic mode, and a list
 of |FileManager| services where data can be uploaded to.
 
+The path that has to be migrated can be set with the ``--migration-path`` option.
+
+The Gaufrette file system name can be set with the ``--gaufrette-filesystem`` option.
+
+To get the list of available file systems, run command with the ``--mode=filesystems-list`` option.
+
 To add an additional path from which the data is going to be moved or to add an additional |FileManager|, add a new CompilerPass
 in your bundle and add it into the Bundle class:
 
 .. code-block:: php
 
-    <?php
     namespace Acme\Bundle\SomeBundle\DependencyInjection\Compiler;
     use Oro\Bundle\GaufretteBundle\Command\MigrateFileStorageCommand;
     use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;

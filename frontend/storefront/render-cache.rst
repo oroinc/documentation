@@ -41,7 +41,6 @@ To enable the layout block cache, provide the ``cache`` block option.
 
 .. code-block:: yaml
 
-
    layout:
      actions:
        - '@setOption':
@@ -55,7 +54,6 @@ Disable the Cache
 By default, the cache is disabled for all the blocks. You can also disable the cache enabled by another layout update.
 
 .. code-block:: yaml
-
 
    layout:
      actions:
@@ -81,7 +79,6 @@ for post-cache substitution).
 
 .. code-block:: yaml
 
-
    layout:
      actions:
        - '@setOption':
@@ -101,7 +98,6 @@ user is logged in or not).
 **For example**, vary the cache item by a product id:
 
 .. code-block:: yaml
-
 
    layout:
      actions:
@@ -145,7 +141,6 @@ Indicates when the cache must be enabled.
 
 .. code-block:: yaml
 
-
    layout:
      actions:
        - '@setOption':
@@ -166,7 +161,6 @@ with the ``product_ID`` tag:
 
 .. code-block:: yaml
    :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
-
 
    layout:
      actions:
@@ -204,7 +198,6 @@ settings.
 - Cache the whole ``product_view_container`` block forever, but render the ``product_price_container`` block dynamically:
 
   .. code-block:: yaml
-
      :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
      layout:
@@ -226,7 +219,6 @@ settings.
 -  Cache the whole ``product_view_container`` block for 1 day, but the ``product_price_container`` block only for 15 minutes:
 
    .. code-block:: yaml
-
       :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
       layout:
@@ -256,7 +248,6 @@ with the layout update or cache a wrapping container instead.
 
 .. code-block:: yaml
 
-
    layout:
      actions:
        - '@setOption':
@@ -280,9 +271,6 @@ interface and mark it with the ``layout_cache.extension`` DI tag.
 
 .. code-block:: php
    :caption: src/AcmeDemoBundle/Cache/Extension/DayOfWeekExtension.php
-
-
-   <?php
 
    namespace AcmeDemoBundle\Cache\Extension;
 
@@ -319,9 +307,6 @@ logged in:
 .. code-block:: php
    :caption: src/AcmeDemoBundle/Cache/Metadata/DisableCacheForLoggedInUsersCacheMetadataProvider.php
 
-
-   <?php
-
    namespace AcmeDemoBundle\Cache\Cache\Metadata;
 
    use Oro\Bundle\LayoutCacheBundle\Cache\Metadata\CacheMetadataProviderInterface;
@@ -346,7 +331,6 @@ logged in:
 .. code-block:: yaml
    :caption: src/AcmeDemoBundle/Resources/config/services.yml
 
-
    services:
      AcmeDemoBundle\Cache\Cache\Metadata\DisableCacheForLoggedInUsersCacheMetadataProvider:
        tags: [layout_cache.metadata_provider]
@@ -363,7 +347,6 @@ product information when product has been updated:
 1. Tag the block that renders product information
 
    .. code-block:: yaml
-
       :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
       layout:
@@ -379,10 +362,7 @@ product information when product has been updated:
    on post update event:
 
    .. code-block:: php
-
       :caption: src/AcmeDemoBundle/EventListener/ProductUpdateListener.php
-
-      <?php
 
       namespace AcmeDemoBundle\EventListener;
 
@@ -393,8 +373,7 @@ product information when product has been updated:
 
       class ProductUpdateListener
       {
-          /** @var TagAwareAdapterInterface */
-          private $cache;
+          private TagAwareAdapterInterface $cache;
 
           public function __construct(TagAwareAdapterInterface $cache)
           {
@@ -413,7 +392,6 @@ product information when product has been updated:
 3. Register the listener in a service container:
 
    .. code-block:: yaml
-
       :caption: src/AcmeDemoBundle/Resources/config/services.yml
 
       services:
@@ -454,7 +432,6 @@ render cache. To configure it:
 1. |Define a new client| in the ``snc_redis`` configuration section and specify the connection DSN, e.g.,:
 
    .. code-block:: yaml
-
       :caption: config/config.yml
 
       snc_redis:
@@ -467,7 +444,6 @@ render cache. To configure it:
    Redis client:
 
    .. code-block:: yaml
-
       :caption: src/AcmeDemoBundle/Resources/config/services.yml
 
       services:

@@ -41,6 +41,7 @@ To manage a specific calendar event from the page of all calendar events:
    * |IcDelete| Delete
 
    .. image:: /user/img/activities/ManageCalendarEventsPage.png
+      :scale: 50%
       :alt: The actions available for a calendar event on the calendar event's grid
 
 From the Calendar Event Page

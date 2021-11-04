@@ -23,8 +23,6 @@ Below is an example of a migration file:
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -35,10 +33,7 @@ Below is an example of a migration file:
 
     class AcmeTestBundle implements Migration, RenameExtensionAwareInterface
     {
-        /**
-         * @var RenameExtension
-         */
-        protected $renameExtension;
+        protected RenameExtension $renameExtension;
 
         /**
          * @inheritdoc
@@ -81,8 +76,6 @@ For example, let's assume we have migrations `v1_0`, `v1_1`, `v1_2`, `v1_3` and 
 Below is an example of an install migration file:
 
 .. code-block:: php
-
-    <?php
 
     namespace Acme\Bundle\TestBundle\Migrations\Schema;
 
@@ -139,7 +132,7 @@ Migrations Dump Command
 
 Use the **oro:migration:dump** command to help create installation files. This command outputs the current database structure as plain SQL or as ``Doctrine\DBAL\Schema\Schema`` queries.
 
-This command supports the folowing additional options:
+This command supports the following additional options:
 
 - **plain-sql** - Outputs schema as plain SQL queries
 - **bundle** - The bundle name for which the migration is generated
@@ -159,8 +152,6 @@ You cannot always use standard Doctrine methods to modify the database structure
 
 .. code-block:: php
 
-    <?php
-
     namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
@@ -171,10 +162,7 @@ You cannot always use standard Doctrine methods to modify the database structure
 
     class AcmeTestBundle implements Migration, RenameExtensionAwareInterface
     {
-        /**
-         * @var RenameExtension
-         */
-        protected $renameExtension;
+        protected RenameExtension $renameExtension;
 
         /**
          * @inheritdoc
@@ -227,7 +215,7 @@ Here is a list of available extensions:
 
 * |CommentExtension| - Adds comments association to the entity. More information is available in |Enable Comment Association with New Activity Entity|.
 
-* |AuditFieldExtension| - Add a possibility for developers to extend data types for DataAudit. More information is available in the |Add New Auditable Types| topic.
+* |AuditFieldExtension| - Add a possibility for developers to extend data types for DataAudit. More information is available in the :ref:`Add New Auditable Types <bundle-docs-platform--data-audit--add-new-types>` topic.
 
 * |ChangeTypeExtension| - Allows to change the type of entity primary column type.
 
@@ -254,8 +242,6 @@ To create your own extension:
 
     .. code-block:: php
 
-        <?php
-
         namespace Acme\Bundle\TestBundle\Migration\Extension;
 
         use Doctrine\DBAL\Schema\Schema;
@@ -275,8 +261,6 @@ To create your own extension:
 2. Create `*AwareInterface` in the same namespace. It is important that the interface name is ``{ExtensionClass}AwareInterface`` and the set method is ``set{ExtensionClass}({ExtensionClass} ${extensionName})``.    For example:
 
     .. code-block:: php
-
-        <?php
 
         namespace Acme\Bundle\TestBundle\Migration\Extension;
 
@@ -309,12 +293,11 @@ To use another extension in your extension, the extension class should implement
 Events During Migration
 -----------------------
 
-The :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Loader\\MigrationsLoader` dispatches two events when migrations are being executed, *oro_migration.pre_up* and *oro_migration.post_up*. You can listen to either event and register your own migrations in your event listener. Use the :method:`Oro\\Bundle\\MigrationBundle\\Event\\MigrationEvent::addMigration` method of the passed event instance to register your custom migrations:
+The ``Oro\Bundle\MigrationBundle\Migration\Loader\MigrationsLoader`` dispatches two events when migrations are being executed, *oro_migration.pre_up* and *oro_migration.post_up*. You can listen to either event and register your own migrations in your event listener. Use the ``Oro\Bundle\MigrationBundle\Event\MigrationEvent::addMigration`` method of the passed event instance to register your custom migrations:
 
 .. code-block:: php
+   :caption: src/Acme/DemoBundle/EventListener/RegisterCustomMigrationListener.php
 
-
-    // src/Acme/DemoBundle/EventListener/RegisterCustomMigrationListener.php
     namespace Acme\DemoBundle\EventListener;
 
     use Acme\DemoBundle\Migration\CustomMigration;
@@ -344,3 +327,54 @@ Migrations registered in the *oro_migration.pre_up* event are executed before th
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+.. _installer_generate:
+
+Generate an Installer for a Bundle
+----------------------------------
+
+When you have implemented new entities, you want to be sure that upon installing the application, the entities are added to the database. For this, you need to create an installer :ref:`migration <backend-entities-migrations>`. You can do it manually, however, it is more convenient to use a dump of the database as a template.
+
+To create an installer for AcmeBundle:
+
+1. Clear the application cache:
+
+   .. code-block:: bash
+
+
+      php bin/console cache:clear
+
+2. Apply the changes that you defined in your code to the database:
+
+   .. code-block:: bash
+
+
+      php bin/console doctrine:schema:update
+
+3. Generate an installer and save it to the AcmeBundleInstaller.php:
+
+   .. code-block:: bash
+
+
+      php bin/console oro:migration:dump --bundle=AcmeBundle > AcmeBundleInstaller.php
+
+
+   .. hint:: The generated installer may contain a lot of excessive information as the same database table might contain options related to different bundles and entities while the generator has no option to distinguish which entity 'has added' particular options. Delete the information unrelated to your entities from the output file.
+
+ Move AcmeBundleInstall.php to the AcmeBundle/Migrations/Schema directory.
+
+#. Reinstall your application instance.
+
+#. Check that the database is synced with your code:
+
+   .. code-block:: bash
+
+
+      php bin/console doctrine:schema:update --dump-sql
+
+   If the database is successfully synchronized, you will see the following message:
+
+   .. code-block:: none
+
+
+      Nothing to update - your database is already in sync with the current entity metadata.

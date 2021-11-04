@@ -121,7 +121,7 @@ value of the ``Assigned To`` field can be changed. When the "exclude_definitions
 provoke self-triggering.
 
 .. note::
-         - If you want to test this process configuration in a real application, you can place this configuration into the ``Oro/Bundle/WorkflowBundle/Resources/config/oro/processes.yml`` file and reload the definitions using the console command``bin/console oro:process:configuration:load``. After that, you can create a ``Contact`` of the changed assigned user and ensure that the process works.
+         - If you want to test this process configuration in a real application, you can place this configuration into the ``Oro/Bundle/WorkflowBundle/Resources/config/oro/processes.yml`` file and reload the definitions using the console command ``php bin/console oro:process:configuration:load``. After that, you can create a ``Contact`` of the changed assigned user and ensure that the process works.
          - Expression `$.` allows you to access the main data container; for processes, it is an instance of ``Oro\Bundle\WorkflowBundle\Model\ProcessData``.
          - Expression `$` (shortcut) or `$.data` allows you to access the current entity; above in example it is ``Oro\Bundle\ContactBundle\Entity\Contact``.
 
@@ -143,7 +143,7 @@ This command loads processes configuration from .yml configuration files to the 
 oro:process:handle-trigger
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This command handles the trigger with a specified identifier and the process name. The command has two required options:
+This command executes a process trigger with a specified identifier and the process name. The command has two required options:
 
 - **--id** - the identifier of the ProcessTrigger to handle
 - **--name** - the name of ProcessDefinition. The trigger should belong to this ProcessDefinition

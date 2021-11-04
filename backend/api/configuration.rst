@@ -37,8 +37,7 @@ By default this command shows configuration of nesting entities. To simplify the
 The default nesting level is ``3`` . It is specified in the configuration of ApiBundle via the ``config_max_nesting_level`` parameter. If needed, change this value:
 
 .. code-block:: yaml
-
-    # config/config.yml
+   :caption: config/config.yml
 
     oro_api:
         config_max_nesting_level: 3
@@ -393,7 +392,7 @@ The **data\_type** attribute can be used to specify a data type of a field. Howe
    "nestedAssociation","Helps configure nested associations. For details see :ref:`Configure a Nested Association <configure-nested-association>`."
    "association:relationType[:associationKind]","Helps configure multi-target associations. For details, see :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`, :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>` and :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`."
    "unidirectionalAssociation:targetAssociationName","Helps configure unidirectional associations. For details, see :ref:`Configure an Unidirectional Association <configure-unidirectional-association>`."
-   "localizedFallbackValue:fieldName","Helps configure to-many associations to |LocalizedFallbackValue| for the :ref:`Storefront API <web-api--storefront>`."
+   "localizedFallbackValue:fieldName","Helps configure to-many associations to :ref:`LocalizedFallbackValue <bundle-docs-platform-locale-bundle-localization>` for the :ref:`Storefront API <web-api--storefront>`."
 
 .. note:: The `scalar`, `object`, `array`, `objects`, `strings` and `data-type[]` data types are interchangeable in case they are used to represent an association as a field. They were introduced to increase readability of configs and automatically generated documentation, e.g. for API Sandbox. The `scalar` is usually used if a value of the field contains a scalar value. The `array`, `strings` and `data-type[]` are usually used if a value of the field contains a list of scalar values. The `object` is usually used if a value of the field contains several properties. The `objects` is usually used if a value of the field contains a list of items that have several properties.
 
@@ -532,7 +531,7 @@ The ``actions`` configuration section allows to specify action-specific options.
 
    *  **exclude** *boolean* - Indicates whether the field should be excluded for a particular action. This property is described above in `"exclude" option <#exclude-option>`__ section.
    *  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path, e.g. ``user.firstName``. Each property name must be equal to the name of existing property of an entity. The ``_`` value can be used if a field value is not mapped to any property of an entity, e.g. for computed fields.
-   *  **direction** *string* - Indicates whether the field is input-only, output-only or bidirectional. The input-only means that the request data can contain this field, but the response data cannot. The output-only means that the response data can contain this field, but the request data cannot. The bidirectional is the default behaviour and means that both the request data and the response data can contain this field.
+   *  **direction** *string* - Indicates whether the field is input-only, output-only or bidirectional. The input-only means that the request data can contain this field, but the response data cannot. The output-only means that the response data can contain this field, but the request data cannot. The bidirectional is the default behavior and means that both the request data and the response data can contain this field.
    *  **form\_type** *string* - The form type that should be used for the field.
    *  **form\_options** *array* - The form options that should be used for the field.
 

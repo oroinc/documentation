@@ -53,7 +53,7 @@ To create a new email campaign:
      email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
      "**Sender Email**","Optional."
      "**Sender Name**","Optional."
-     "**Campaign**","Optional. A :ref:`Marketing Campaign <user-guide-marketing-campaigns>` this email campaign is a part of."
+     "**Campaign**","Optional. A :ref:`Marketing Campaign <user-guide-marketing-campaigns>` this email campaign is part of."
      "**Description**","Optional."
 
    .. note:: Custom fields may be added, subject to specific business needs.

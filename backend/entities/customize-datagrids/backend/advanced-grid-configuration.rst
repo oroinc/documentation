@@ -21,13 +21,11 @@ Example:
 
 .. code-block:: twig
 
-
    [dataGrid.renderGrid(gridName, {groupId: entityId})]
 
 This param will be passed to the datagrid parameter bag and will be bound to the datasource query in the listener of the ``oro_datagrid.datagrid.build.after`` event automatically if you specify the ``bind_parameters`` option in the datasource configuration:
 
 .. code-block:: yaml
-
 
     datagrids:
         acme-demo-grid:
@@ -379,9 +377,6 @@ Problem 10
 
   .. code-block:: php
 
-
-      <?php
-
       namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
 
       use Oro\Bundle\DataGridBundle\Event\BuildBefore;
@@ -392,17 +387,11 @@ Problem 10
           /** @var AuthorizationCheckerInterface */
           private $authorizationChecker;
 
-          /**
-           * @param AuthorizationCheckerInterface $authorizationChecker
-           */
           public function __construct(AuthorizationCheckerInterface $authorizationChecker)
           {
               $this->authorizationChecker = $authorizationChecker;
           }
 
-          /**
-           * @param BuildBefore $event
-           */
           public function onBuildBefore(BuildBefore $event)
           {
               if (!$this->authorizationChecker->isGranted('acme_bundle_show_budget_columns')) {

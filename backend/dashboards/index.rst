@@ -33,9 +33,8 @@ sort the result (the id can be used as a sorting criteria as more recent tasks w
 ids):
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
 
-
-    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
         # ...
         app-recent-tasks-grid:
@@ -56,9 +55,8 @@ bundle (see :ref:`cookbook-entities-dashboard-config` for an explanation of the 
 follow for the template name and location) with the following content:
 
 .. code-block:: html+jinja
+   :caption: src/AppBundle/Resources/views/Dashboard/recent_tasks_widget.html.twig
 
-
-    {# src/AppBundle/Resources/views/Dashboard/recent_tasks_widget.html.twig #}
     {% extends 'OroDashboardBundle:Dashboard:widget.html.twig' %}
     {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
 
@@ -82,9 +80,8 @@ Adding Widget Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+   :caption: src/AppBundle/Resources/config/oro/dashboards.yml
 
-
-    # src/AppBundle/Resources/config/oro/dashboards.yml
     dashboards:
         widgets:
             recent_tasks:
@@ -96,7 +93,7 @@ Adding Widget Configuration
                 description: This widget displays the most recent tasks
 
 The configured ``oro_dashboard_widget`` route refers to a controller action that comes as part of
-the :class:`Oro\\Bundle\\DashboardBundle\\Controller\\DashboardController` and simply renders a
+the ``Oro\Bundle\DashboardBundle\Controller\DashboardController`` and simply renders a
 template whose name is inferred from route parameters (the name of the template that the controller
 is looking for follows the ``{{bundle}}:Dashboard:{{name}}`` pattern where ``{{bundle}}`` and
 ``{{name}}`` refer to the route parameters of the dashboard config).

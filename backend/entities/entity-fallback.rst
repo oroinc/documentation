@@ -108,7 +108,7 @@ Next we need to render the field in the main object's class type, by embedding t
 
 .. code-block:: php
 
-    $builder->add('someFieldName', EntityFieldFallbackValueType::NAME);
+    $builder->add('someFieldName', EntityFieldFallbackValueType::class);
 
 This type defines 3 fields: `scalarValue` (which will hold the entity's own value, if no fallback is wanted),
 `useFallback` (checkbox for ui to select/deselect fallback possibility) and `fallback` (which by default will render a dropdown with fallback list,

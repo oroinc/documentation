@@ -64,7 +64,7 @@ This key should be used for ``PasswordDigest`` generation on the client side.
 Header Generation
 -----------------
 
-The console command ``oro:wsse:generate-header`` can be used to generate an authentication header.
+The console command ``oro:wsse:generate-header`` can be used to generate an authentication header for a given user API key.
 
 .. code-block:: none
 
@@ -95,6 +95,11 @@ An example of an authentication header generation with PHP:
         $created
     );
 
+The ``oro:customer-user:wsse:generate-header`` command generates X-WSSE HTTP header for a given customer user API key.
+
+.. code-block:: none
+
+   php bin/console oro:customer-user:wsse:generate-header
 
 Header and Nonce Lifetime
 -------------------------
@@ -106,6 +111,14 @@ This rule is aimed to improve the safety of the application and prevent *"replay
 
 Therefore, the header generation algorithm should be implemented on the side of the client application, and headers should be re-generated for each request.
 
+Flush WSSE Nonce Cache
+----------------------
+
+To flush WSSE none cache, use the following command:
+
+.. code-block:: none
+
+   oro:wsse:nonces:delete
 
 Example of a REST API Request
 -----------------------------

@@ -16,10 +16,8 @@ Let's assume that we are using demo bundle from :ref:`How to create new bundle <
 article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php`` file should look like this:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/NewBundle/AcmeNewBundle.php
 
-
-    <?php
-    // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
     namespace Acme\Bundle\NewBundle;
 
     use Symfony\Component\HttpKernel\Bundle\Bundle;
@@ -33,7 +31,7 @@ article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php``
     }
 
 .. caution::
-    Due to the Symfony default behaviour the routing from the parent bundle will not be imported automatically.
+    Due to the Symfony default behavior the routing from the parent bundle will not be imported automatically.
     So in case if you have any controllers defined in your child bundle you should copy routing definitions from the
     parent bundle.
     You can check the `Routing` section of Symfony's |How to Override any Part of a Bundle| manual for more information.
@@ -41,9 +39,8 @@ article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php``
 In our case will need to add the ``routing.yml`` file with the following content:
 
 .. code-block:: yaml
+   :caption: src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml
 
-
-    # src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml
     acme_parent_bundle:
         resource:     "@!OroUserBundle/Controller"
         type:         annotation

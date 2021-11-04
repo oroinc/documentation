@@ -288,8 +288,6 @@ Once you configured everything, you can start producing messages:
 
 .. code-block:: php
 
-    <?php
-
     /** @var Oro\Component\MessageQueue\Client\MessageProducer $messageProducer **/
     $messageProducer = $container->get('oro_message_queue.message_producer');
 
@@ -299,7 +297,6 @@ To consume messages you have to first create a message processor:
 
 .. code-block:: php
 
-    <?php
     use Oro\Component\MessageQueue\Consumption\MessageProcessor;
 
     class FooMessageProcessor implements MessageProcessor, TopicSubscriberInterface
@@ -394,8 +391,6 @@ transport layer:
 
 .. code-block:: php
 
-    <?php
-
     use Oro\Component\MessageQueue\Transport\Dbal\DbalConnection;
     use Doctrine\DBAL\Configuration;
     use Doctrine\DBAL\DriverManager;
@@ -454,7 +449,6 @@ layer:
 
 .. code-block:: php
 
-    <?php
     use Oro\Component\MessageQueue\Consumption\MessageProcessor;
 
     class FooMessageProcessor implements MessageProcessor
@@ -469,7 +463,6 @@ layer:
 
 .. code-block:: php
 
-    <?php
     use Doctrine\DBAL\Configuration;
     use Doctrine\DBAL\DriverManager;
     use Oro\Component\MessageQueue\Consumption\ChainExtension;

@@ -149,16 +149,16 @@ Do not select `All (SELECT *)` columns when only certain fields are required. B
 Add indexes only under the following circumstances:
 
 * When you know how table will be queried
-* When you know that the index field will be a part of the where clause
+* When you know that the index field will be part of the where clause
 * When a field is highly selectable.
 
 When all the conditions apply, the field makes a good candidate for pre-emptive tuning. Otherwise do not add indexes for all fields, because this will slow down insert/update operations and will require more disk space.
 
 When metadata caching is turned on than any changes to entity will be not seen by doctrine until cache refresh. Remember to clear metadata cache any time when metadata was changed.
 
-.. code-block:: text
+.. code-block:: bash
 
-   # bin/console doctrine:cache:clear-metadata
+   php bin/console doctrine:cache:clear-metadata
 
 Hydrations
 ~~~~~~~~~~

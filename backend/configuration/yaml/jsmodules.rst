@@ -97,7 +97,7 @@ Insert a module name to this section nested into the subsection with the name of
 .. code-block:: yaml
 
 
-    dynamic-imports
+    dynamic-imports:
         oroui:
             - jquery
             - oroui/js/app/components/view-component

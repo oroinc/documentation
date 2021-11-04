@@ -98,7 +98,7 @@ Learn more on the configuration and localization of consents in OroCommerce in t
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 * :ref:`Cookie Consent Banner <frontstore-guide--cookie-banner>`
-* :ref:`Add a Cookie Banner to the Website <bundle-docs-commerce-consent-bundle-cookie-banner>`
+* :ref:`Add a Cookie Banner to the Website <bundle-docs-commerce-cookie-consent-bundle>`
 
 **Related Topics**
 

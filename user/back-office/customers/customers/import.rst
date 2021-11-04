@@ -5,7 +5,7 @@
 Import Customers
 ================
 
-.. hint:: This section is a part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
+.. hint:: This section is part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
 
 You can import the bulk details of updated or processed customer information in the .csv format:
 

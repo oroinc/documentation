@@ -187,7 +187,7 @@ Images
 
 .. |IcInvitation| raw:: html
 
-   <i class="fa fa-reply fa-lg" aria-hidden="true"></i>
+   <i class="fas fa-reply fa-lg" aria-hidden="true"></i>
 
 .. |IcInviteYes| raw:: html
 

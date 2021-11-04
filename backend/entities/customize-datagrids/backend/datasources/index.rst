@@ -23,9 +23,6 @@ To implement your own datasource type:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\Datagrid\Datasource;
 
     use Oro\Bundle\DataGridBundle\Datagrid\DatagridInterface;
@@ -66,9 +63,6 @@ To implement your own datasource type:
             return $this->arraySource;
         }
 
-        /**
-         * @param array $source
-         */
         public function setArraySource(array $source)
         {
             $this->arraySource = $source;

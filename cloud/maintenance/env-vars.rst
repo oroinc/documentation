@@ -43,5 +43,7 @@ How to Configure Environment Type Based Application
 
 .. note:: For more details on the environment type based application configuration, please see the |related documentation in the backend developer guide|.
 
+.. warning:: Environment variables are always string and are not cast automatically to integer, null, or other types. You should never pass an empty environment variable, like 'ORO_DB_HOST=' or 'ORO_DB_HOST=NULL'. Instead, it should never be available (never be set). More information about environment variables is available in the :ref:`parameters.yml description <installation--parameters-yml-description>` section.
+
 .. include:: /include/include-links-cloud.rst
    :start-after: begin

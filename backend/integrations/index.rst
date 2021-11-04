@@ -19,3 +19,4 @@ Choose the model of transferring data to build your integration flow:
 
    integration-config/index
    import-export/index
+   notification-alerts

@@ -134,7 +134,6 @@ Execute a command to validate all operations configuration:
 
 .. code-block:: php
 
-
     php bin/console oro:action:configuration:validate
 
 .. note:: All configurations apply automatically after their changes are made in developer environment.
@@ -163,9 +162,8 @@ Supposing you need to disable the default `DELETE` operation for your new `MyEnt
 
 .. code-block:: php
 
-
     operations:
-        DELETE:f
+        DELETE:
             exclude_entities: ['MyEntity']
 
 The operation merges special additional condition to the default operation during the configuration compilation, so that the default `DELETE` operation doesn't match your entity and is not displayed as well.
@@ -225,7 +223,7 @@ Operation Diagram
 
 The following diagram shows operation processes logic in graphical representation:
 
-.. image:: /img/backend/bundles/ActionBundle/operation.png
+.. image:: /img/bundles/ActionBundle/operation.png
    :alt: Operation Diagram
 
 .. toctree::

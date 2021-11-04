@@ -236,6 +236,8 @@ The search shows up-to-date product information, such as SKU, name, price, and i
 Saved Search
 ------------
 
+.. hint:: The Saved Search feature is available since OroCommerce v4.2.4. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 Customer users can save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock.
 
 To save a search result:
@@ -270,6 +272,39 @@ To download a product data .csv file:
 
    .. image:: /user/img/storefront/navigation/export-download.png
       :alt: Download export results
+
+.. _frontstore-guide--navigation-product-price:
+
+Your Price and Listed Price
+---------------------------
+
+Products in the storefront have two types of price displayed, Your Price and Listed Price.
+
+.. image:: /user/img/products/products/your_listed_pricing_equal.png
+     :alt: Your price and listed price are the same in the storefront
+
+Listed Price is the price set for each available product unit and their variation of quantity (tiers). Your Price is Listed price under your current tier pricing configuration.
+
+Suppose we have one product in the default price list with the following price tiers set in the back-office:
+
+* 1 item - $1
+* 10 items - $0.80
+* 100 items - $0.50
+* 1000 items - $0.30
+
+.. image:: /user/img/storefront/navigation/product-tiers-df-pl.png
+   :alt: Illustration of price tiers for one product
+
+This means that product price per 1 item will change depending on how many items a buyer wants to purchase. The more they purchase, the cheaper the price per item is going to be in this scenario. The following image illustrates how price tiers are going to be displayed for a user in the storefront.
+
+.. image:: /user/img/storefront/navigation/price-tiers-product-listing.png
+   :alt: Illustration of price tiers in the storefront
+
+When a buyer tries to  change the quantity of the items, this triggers change in Your Price.
+
+.. image:: /user/img/storefront/navigation/your-listed-price.gif
+   :alt: Illustration of the price change after when a user changes product quantity
+
 
 .. include:: /include/include-images.rst
    :start-after: begin

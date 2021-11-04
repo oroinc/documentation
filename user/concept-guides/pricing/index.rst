@@ -222,6 +222,7 @@ Best Practices
    * :ref:`Generate Product Price Automatically <user-guide--pricing--price-list-auto>`
    * :ref:`Review Examples of Price Rule Automation <price-rules--auto--examples>`
    * :ref:`Filtering Expression Syntax <user-guide--pricing--auto--expression>`, :ref:`Autocomplete <user-guide--pricing--price-list-auto--autocomplete>` and :ref:`Storage Type <user-guide--pricing--auto--expression--storage-type>`
+   * :ref:`Your Price vs Listed Price <frontstore-guide--navigation-product-price>`
 
 * :ref:`Global Pricing Configuration <pricing-configuration>`
 * :ref:`Price Lists Configuration per Website <sys--website--edit--price-lists>`

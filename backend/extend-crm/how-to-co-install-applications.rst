@@ -13,12 +13,12 @@ To install OroCommerce and OroCRM from scratch, please :ref:`install OroCommerce
 
 To add OroCommerce to an existing instance of OroCRM, please follow the ordinary :ref:`OroCRM upgrade process <upgrade-application>` and ensure you add the OroCommerce package as a dependency during the step 5. Once the upgrade process is complete, please run following commands to add necessary initial OroCommerce configuration:
 
-.. code-block:: none
+.. code-block:: bash
 
-    bin/console oro:config:update oro_website.url https://unsecure.url
-    bin/console oro:config:update oro_website.secure_url http://secure.url
+    php bin/console oro:config:update oro_website.url https://unsecure.url
+    php bin/console oro:config:update oro_website.secure_url http://secure.url
 
-where `http://unsecure.url` and `https://secure.url` are urls for the OroCommerce storefront.
+where `http://unsecure.url` and `https://secure.url` are urls for the OroCommerce storefront. The ``oro:config:update`` command updates a configuration value in the global scope.
 
 
 .. include:: /include/include-links-dev.rst

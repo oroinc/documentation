@@ -32,7 +32,7 @@ Let us check which configuration options are available for different versions of
 
 Each change of the configuration options requires index recreation and full indexation. You can do it using the following commands for the back-office (standard) index:
 
-.. code-block:: php
+.. code-block:: bash
 
 
     php bin/console oro:elasticsearch:create-standard-indexes --env=prod
@@ -40,7 +40,7 @@ Each change of the configuration options requires index recreation and full inde
 
 The same can be done for the storefront (website) index using commands:
 
-.. code-block:: php
+.. code-block:: bash
 
 
     php bin/console oro:website-elasticsearch:create-website-indexes --env=prod

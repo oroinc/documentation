@@ -36,7 +36,7 @@ After that, the old message is **REJECTED**.
 Redelivery Message Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Run ``bin/console config:dump oro_message_queue`` command to see message queue configurations.
+Run ``php bin/console config:dump oro_message_queue`` command to see message queue configurations.
 
 .. code-block:: yaml
 
@@ -60,8 +60,7 @@ Run ``bin/console config:dump oro_message_queue`` command to see message queue c
 Example how to change redelivery delay time:
 
 .. code-block:: yaml
-
-    # config/config_prod.yml
+   :caption: config/config_prod.yml
 
     oro_message_queue:
         client:

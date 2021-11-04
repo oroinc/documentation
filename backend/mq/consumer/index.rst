@@ -8,14 +8,14 @@ To start the consumer as a background process, in most cases, you have to run th
 
 .. code-block:: none
 
-    ./bin/console oro:message-queue:consume
+    php bin/console oro:message-queue:consume
 
 A special case of the consumer is the *oro:message-queue:transport:consume* command that allows to explicitly set a queue
 to consume from and a message processor service. For example:
 
 .. code-block:: none
 
-    bin/console --env=prod --no-debug oro:message-queue:transport:consume oro.default_queue oro_message_queue.client.delegate_message_processor
+    php bin/console --env=prod --no-debug oro:message-queue:transport:consume oro.default_queue oro_message_queue.client.delegate_message_processor
 
 .. note:: Add **-vvv** to find out what is going while you are consuming messages. There is a lot of valuable debug info there.
 
@@ -36,9 +36,9 @@ For example, if the following command is run:
 
 .. code-block:: none
 
-    ./bin/console oro:message-queue:consume --memory-limit=700
+    php bin/console oro:message-queue:consume --memory-limit=700
 
-this means that:
+This means that:
 
 * The consumer is processing a message.
 * The consumer is checking the used memory amount.

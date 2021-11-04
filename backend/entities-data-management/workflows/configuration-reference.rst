@@ -127,7 +127,7 @@ If you need to load your part of the configuration directly from the file, use t
 Configuration Loading
 ---------------------
 
-To load the configuration, execute the following command:
+To load workflow definitions to the database, execute the following command:
 
 .. code-block:: php
 
@@ -308,9 +308,7 @@ Enable Users to Modify Attributes
 You can enable a user to modify attributes of the record during transitions. To do this, list attributes that can be modified during any of the workflow's transitions under the ``attributes`` key:
 
 .. code-block:: yaml
-
-
-    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:
@@ -364,9 +362,7 @@ For attributes, you need to add labels into two places: first, to the list of al
 +----------------------------------------------------------------------------------------------+------------------------------------------------------------------------+
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:
@@ -380,9 +376,7 @@ For attributes, you need to add labels into two places: first, to the list of al
                         label: 'Call Successful'
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:
@@ -613,9 +607,7 @@ Define how the workflow transition name will appear on the user interface and th
 +----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 .. code-block:: yaml
-
-
-        # src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:
@@ -776,7 +768,7 @@ Cron trigger configuration has the following options.
 Conditions Configuration
 ------------------------
 
-Conditions configuration is a part of Transition Definition Configuration. It declares a tree structure of conditions
+Conditions configuration is part of Transition Definition Configuration. It declares a tree structure of conditions
 that are applied on the Workflow Item to check if the Transition could be performed. Single condition configuration
 contains alias - a unique name of condition and options.
 

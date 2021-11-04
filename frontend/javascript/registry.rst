@@ -3,7 +3,7 @@
 Registry
 ========
 
-A registry is a singleton service that allows to share some instances with unique identifiers (with property `globalId`). It takes care of the lifecycle for shared instances, and collects information about those who requested the instance and removes it once the list of applicants gets empty.
+A registry is a singleton service that allows to share some instances with unique identifiers (with property `globalId`). It takes care of the life cycle for shared instances, and collects information about those who requested the instance and removes it once the list of applicants gets empty.
 
 Registry API
 ------------

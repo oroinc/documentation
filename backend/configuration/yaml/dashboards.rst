@@ -28,9 +28,8 @@ The ``dashboards.yml`` file is used to configure dashboards and widgets that are
 dashboard:
 
 .. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/dashboards.yml
 
-
-    # src/Acme/DemoBundle/Resources/config/dashboards.yml
     dashboards:
         widgets:
             # a "my_calendar" widget displaying the user's calendar on the dashboard

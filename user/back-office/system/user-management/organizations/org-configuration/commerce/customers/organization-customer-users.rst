@@ -41,7 +41,20 @@ To change the default customer user configuration settings for an organization:
 
 7. In the **Login as Customer User** section, you can enable user impersonation for a specific organization. User impersonation allows back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
 
-8. Click **Save Settings**.
+8. In the **Cookies Banner** section, enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time.
+
+   .. image:: /user/img/system/user_management/org_configuration/customers/cookie-banner-organization.png
+      :alt: Cookie banner section
+
+   To configure cookie consent banner on the organization level, take the following steps:
+
+   * **Show Banner** --- Select the check box to display the cookie consent banner to the website's visitor.
+
+   * **Cookies Banner Text** --- Provide the message of the cookie banner. To edit the text for a specific language, click the language button and edit the text for the needed language.
+
+   * **Landing Page** - Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
+
+9. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin

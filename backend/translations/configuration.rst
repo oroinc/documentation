@@ -16,7 +16,7 @@ Additionally, refresh the backend and browser cache. All translated strings will
 brackets, and untranslated strings will be wrapped into exclamation marks with dashes. Frontend translations
 have suffix "JS" to distinguish them from backend translations.
 
-.. code-block:: bash
+.. code-block:: none
 
     [Contact] - translated backend string
     !!!---Account---!!! - not translated backend string
@@ -40,9 +40,14 @@ is ignored. To turn off JS translations generation, set option `js_translation.d
             debug: false
 
 
-If you turned off JS translations generation, do it manually by executing the command below:
+If you turned off JS translations generation, do it manually by executing the the command below which dumps translations for use in JavaScript:
 
-.. code-block:: bash
+.. code-block:: none
 
     php bin/console oro:translation:dump
 
+The ``--locale`` option can be used to dump translations only for the specified locales:
+
+.. code-block:: none
+
+    php bin/console oro:translation:dump --locale=<locale1> --locale=<locale2> --locale=<localeN>

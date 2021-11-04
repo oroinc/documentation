@@ -89,7 +89,7 @@ Action Group Diagram
 
 The following diagram shows the logic of the action group process in graphical representation:
 
-.. image:: /img/backend/bundles/ActionBundle/action_group.png
+.. image:: /img/bundles/ActionBundle/action_group.png
    :alt: Action Group Diagram
 
 .. include:: /include/include-links-dev.rst

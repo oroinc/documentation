@@ -1,6 +1,6 @@
 .. _environment-type-based-configuration:
 
-Environment Type Based Application Configuration
+Environment Type-Based Application Configuration
 ================================================
 
 Use different default configurations based on the environment where the application is deployed:
@@ -15,9 +15,7 @@ Use different default configurations based on the environment where the applicat
 Deployment type (``deployment_type``) is one of the options in **parameters.yml** file, and it is asked during ``composer install``.
 
       .. code-block:: text
-
-
-            # config/parameters.yml
+         :caption: config/parameters.yml
 
             parameters:
                 # ...
@@ -30,18 +28,14 @@ This configuration will have the highest priority.
 For example:
 
       .. code-block:: text
-
-
-                # config/parameters.yml
+         :caption: config/parameters.yml
 
                 parameters:
                     # ...
                     deployment_type: local
 
       .. code-block:: text
-
-
-                # config/deployment/config_local.yml
+         :caption: config/deployment/config_local.yml
 
                 monolog:
                     handlers:
