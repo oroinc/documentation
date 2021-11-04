@@ -12,7 +12,7 @@ Global routing configuration includes the following information:
 * Options that impact the way metadata for the search engine is generated
 * Meaningful URL support (e.g. `/product/view/4` vs `/500-watt-work-light`)
 
-.. note:: The :ref:`website level configuration <sys--websites--sysconfig--websites--routing>` has higher priority and overrides this configuration settings.
+.. note:: The website routing settings can be configured globally, per :ref:`organization <organization-config-website-routing>`, and per:ref:`website <sys--websites--sysconfig--websites--routing>`.
 
 To change the default global routing settings:
 
@@ -29,22 +29,6 @@ To change the default global routing settings:
 
    * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
 
-   * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
-
-     When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
-
-     When *Direct URL* is selected, the page URL is built using the page title (e.g. `/500-watt-work-light`).
-
-     .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
-
-   * **Prefer Self-Contained Web Catalog Canonical URLs** - When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types, if they are available. This option is enabled by default.
-
-   * **Canonical URL Security Type** - this option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
-
-     When *Insecure* is selected, the website base URL in the canonical link matches the **URL** value.
-
-     When *Secure* is selected, the **Secure URL** value is used instead.
-
    * **Create Redirects** - this option defines a strategy for creating redirects when the URL building rules change. Supported options: *Ask*, *Never*, *Always*.
 
      When *Ask* is selected, OroCommerce prompts to confirm redirect creation on every change.
@@ -57,8 +41,7 @@ To change the default global routing settings:
 
    Once you decide on the Web Catalog, click **Save Settings**, and the detailed content tree of the selected web catalog appears under the **Navigation Root** field.
 
-   * **Use Localized Canonical URLs** - When this option is enabled, the system generates canonical URLs using the localized version of URLs slugs (if available). Disabled by default.
-   * **Navigation Root** - select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
+    * **Navigation Root** - select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
 
      .. image:: /user/img/system/config_system/visible_content_node.png
         :alt: The selected sub-menu nodes that will be visible in the storefront
@@ -79,9 +62,34 @@ To change the default global routing settings:
 
    * **Landing Page URL Prefix** - The prefix that is appended to the landing page slug in the URL.
 
+
+5. In the **Canonical URLs** section, define the following options:
+
+   .. image:: /user/img/system/config_system/canonical-url-section.png
+      :alt: Global Canonical URLs configuration
+
+   * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
+
+     When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
+
+     When *Direct URL* is selected, the page URL is built using the page title (e.g. `/500-watt-work-light`).
+
+     .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
+
+   * **Canonical URL Security Type** - this option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
+
+     When *Insecure* is selected, the website base URL in the canonical link matches the **URL** value.
+
+     When *Secure* is selected, the **Secure URL** value is used instead.
+
+   * **Use Localized Canonical URLs** - When this option is enabled, the system generates canonical URLs using the localized version of URLs slugs (if available). Disabled by default. Keep in mind that the option is available since OroCommerce v4.2.4. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+   * **Prefer Self-Contained Web Catalog Canonical URLs** - When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types, if they are available. This option is enabled by default.
+
+
 .. _routing-website-matchers-global:
 
-5. In **Website Matchers**, configure the following parameters to identify the visitors of your website through various tracking options:
+6. In **Website Matchers**, configure the following parameters to identify the visitors of your website through various tracking options:
 
    .. image:: /user/img/system/config_system/routing_website_matchers.png
       :class: with-border
@@ -95,12 +103,12 @@ To change the default global routing settings:
 
    * **Cookie Name** - the name of the cookie that stores information about the current website in the customer's browser. To track the website, you need to set the related cookie value in the :ref:`website's configuration <sys--websites--sysconfig--websites--routing>` creating an individual parameter specific for the required website.
 
-6. To customize any of these options:
+7. To customize any of these options:
 
    a) Clear the **Use Default** box next to the option.
    b) Select the new option.
 
-4. Click **Save**.
+8. Click **Save**.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

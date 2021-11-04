@@ -115,7 +115,7 @@ To configure a system mailbox globally:
    * **Mailbox Label** --- Provide a name for the system mailbox.
    * **Email** --- Provide the email address.
 
-5. In the **Synchronization Settings**, configure your IMAP/SMTP connection or an Microsoft 365 account:
+5. In the **Synchronization Settings**, configure your IMAP/SMTP connection or a Microsoft 365 account:
 
    .. note:: Please be aware that if the Account Type value has changed, a new mailbox will be registered and all data from the currently configured mailbox will be lost.
 

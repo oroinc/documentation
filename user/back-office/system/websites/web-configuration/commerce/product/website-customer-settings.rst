@@ -5,6 +5,8 @@
 Configure Customer Settings for Product Data Export per Website
 ===============================================================
 
+.. hint:: This feature is available since OroCommerce v4.2.5. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 You can control whether to allow registered customer users to export products, their prices, and price tiers into a .csv file from the storefront product collection and search results pages. You can configure these settings :ref:`globally <sys--commerce--product--customer-settings>`, :ref:`per organization <sys--users--organization--commerce--products--customer-settings>`, website, :ref:`customer group <user-guide--customer-groups--customer-settings>`, and :ref:`customer <user-guide--customers--customer-settings>`.
 
 .. hint::

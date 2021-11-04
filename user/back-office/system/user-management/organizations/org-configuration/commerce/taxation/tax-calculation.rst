@@ -12,12 +12,15 @@ You can control whether you want to calculate taxes before or after discounts ar
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 
-3. Select **Commerce > Taxation** in the menu to the left.
+3. Select **Commerce > Taxation > Tax Calculation** in the menu to the left.
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 .. image:: /user/img/system/user_management/org_configuration/taxation/tax-calculation-org.png
    :alt: Calculate Taxes After Promotions configuration option on organization level
+
+
+.. hint:: The **Calculate Taxes After Promotions** feature is available since OroCommerce v4.2.5. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 4. You can enable or disable the **Calculate Taxes After Promotions** option. Select the check box if you wish to have your taxes calculated on the :ref:`reduced price <user-guide--marketing--promotions>` after the discounts are applied. If this option is disabled, taxes are calculated based on the full price before the discounts are applied.
 

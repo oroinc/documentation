@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM, OroCommerce
+:oro_documentation_types: OroCRM
 
 .. _user-guide-integrations-azure-oauth:
 
