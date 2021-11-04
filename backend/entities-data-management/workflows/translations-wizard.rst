@@ -47,3 +47,7 @@ When the translation file is updated, you might need to load translations into t
     bin/console oro:translation:load
 
 Now, if you need to **update** an existing workflow, you can perform the same operations because dumped translations of `oro:workflow:translations:dump` will be filled by the existing and newly created nodes of the text. For full customization, (replace config nodes, rename them), dump the output of command elsewhere so you could manually choose what to update.
+
+.. hint::
+    - To rebuild translation cache, use command ``oro:translation:rebuild-cache``.
+    - to download and update translations, use command ``oro:translation:update``.

@@ -5,6 +5,8 @@
 Configure Global Customer User Settings
 =======================================
 
+Customer User settings can be configured globally, :ref:`per organization <system--user-mngm--organization--configuration--commerce--customers--customer-users>`, and :ref:`per website <system--website--configuration--commerce--customers--customer-users>`.
+
 To change the default customer user configuration settings globally:
 
 1. Navigate to **System > Configuration** in the main menu.
@@ -41,6 +43,7 @@ To change the default customer user configuration settings globally:
 
    * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
 
+
 .. _system-configuration-user-impersonation:
 
 Configure User Impersonation
@@ -57,7 +60,37 @@ Configure User Impersonation
                                        :alt: User impersonation config option"
 
 
-7. Click **Save Settings**.
+
+.. _configuration--guide--commerce--configuration--cookie-consents:
+
+Configure Cookie Consent Banner Settings
+----------------------------------------
+
+In the **Cookies Banner** section, you can enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time. This banner lets visitors know that their data is being collected and get their consent to use the data.
+
+The :ref:`CookieConsentBannerBundle <bundle-docs-commerce-cookie-consent-bundle>` allows to show such warning to the user.
+
+If the application was installed without demo data, the banner is disabled. To configure cookie consent banner on the global level, take the following steps:
+
+1. **Show Banner** --- Select the check box to display the cookie consent banner to the website's visitor.
+
+   .. image:: /user/img/system/config_commerce/cookie_banner/banner-settings.png
+      :alt: Cookie consent banner config
+
+2. **Cookies Banner Text** --- Provide the message of the cookie banner. To edit the text for a specific language, click the language button and edit the text for the needed language.
+
+   .. image:: /user/img/system/config_commerce/cookie_banner/text-language-button.png
+      :alt: Text language button
+
+3. **Landing Page** - Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
+
+   .. image:: /user/img/system/config_commerce/cookie_banner/cookie-banner-landing-page.png
+      :alt: Text language button
+
+4. Click **Save Settings**.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
 
 
 .. include:: /include/include-images.rst

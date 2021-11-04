@@ -28,7 +28,7 @@ The first step of creating a new entity field is providing information on its ba
 
    * **BigInt** --- Select this type if the values of this field must be very big positive or negative whole numbers like 111222333444555. Save range is from -999,999,999,999,999 to 999,999,999,999,999.
    * **Boolean** --- Select this type if you need a simple list with two values: 'Yes' and 'No.'
-   * **Currency** --- Select this type if this field is used to store monetary values. The symbol of the applicable currency will appear near this field in the entity records. The value in the field will have 2 decimal positions. 
+   * **Money** --- Select this type if this field is used to store monetary values. The symbol of the applicable currency will appear near this field in the entity records. The value in the field will have 2 decimal positions.
    * **Date** --- Select this type if you need to save dates. The field will have a built-in calendar picker.
    * **DateTime** --- Select this type if you need fields to save date and time values. There will be two fields on the interface under common title: one is for storing date values with a built-in calendar picker, the other is a list of time values in half-hour increments.
    * **Decimal** --- Select this type if the values of your custom field represent decimal fractions like 1.25, 0.5, -8.4 and you need high precision.

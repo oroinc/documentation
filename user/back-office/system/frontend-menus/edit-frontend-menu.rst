@@ -85,7 +85,7 @@ Add a Menu Item
 
      .. note:: A user agent string is a combination of user agent application versions, operating systems, crawlers, and other scripts that are specific for each user (e.g., Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36).
 
-        A user agent substring is a part of the string mentioned above (e.g., Mozilla, Windows, Safari, etc).
+        A user agent substring is part of the string mentioned above (e.g., Mozilla, Windows, Safari, etc).
 
         .. image:: /user/img/system/frontend_menu/user_agent.png
            :alt: The settings under User Agent

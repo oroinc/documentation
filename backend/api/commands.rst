@@ -16,6 +16,12 @@ Usually you need to run this command when you add a new entity to `Resources/con
 
     php bin/console oro:api:cache:clear
 
+The ``--no-warmup`` option can be used to skip warming up the cache after cleaning:
+
+.. code-block:: none
+
+   php bin/console oro:api:cache:clear --no-warmup
+
 .. _oroapidoccacheclear:
 
 oro:api:doc:cache:clear
@@ -95,17 +101,72 @@ To display all actions, run this command without parameters:
 
     php bin/console oro:api:debug
 
-To display processors registered for a particular action, run this command with the action name as an argument:
+To see the processors registered for a given action, specify the action name as an argument:
 
 .. code-block:: none
 
-    php bin/console oro:api:debug get_list
+    php bin/console oro:api:debug <action>
 
-Use the ``request-type`` option to display the processors related to a particular request type:
+or
 
 .. code-block:: none
 
-    php bin/console oro:api:debug get_list --request-type=rest --request-type=json_api
+    php bin/console oro:api:debug --no-docs <action>
+
+The list of the processors can be limited to some group specified as the second argument:
+
+.. code-block:: none
+
+    php bin/console oro:api:debug <action> <group>
+
+or
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --no-docs <action> <group>
+
+The --attribute option can be used to show the processors that will be executed only when the context has a given attribute with the specified value.
+The attribute name and value should be separated by a colon, e.g. --attribute=collection:true   for a scalar value, or --attribute=extra:[definition,filters] for an array value:
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --attribute=collection:true <action>
+
+or
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --attribute=extra:[definition,filters] <action>
+
+The --processors and --processors-without-description options can be used to display all processors and all processors without descriptions respectively:
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --processors
+
+or
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --processors-without-description
+
+The --request-type option can limit the scope to the specified request type(s).  Omitting this option is equivalent to --request-type=rest --request-type=json_api. Available types: rest, json_api, batch, or use any to include all request types:
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --request-type=rest other options and arguments
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --request-type=json_api other options and arguments
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --request-type=batch other options and arguments
+
+.. code-block:: none
+
+    php bin/console oro:api:debug --request-type=any other options and arguments
 
 oro:api:config:dump
 -------------------
@@ -189,6 +250,12 @@ To display the entity metadata used for a particular request type, use the ``--r
 
     php bin/console oro:api:metadata:dump users --request-type=rest --request-type=json_api
 
+To include the HATEOAS links to the metadata, use the ``--hateoas`` option:
+
+.. code-block:: none
+
+   php bin/console oro:api:metadata:dump --hateoas <entity>
+
 oro:api:config:dump-reference
 -----------------------------
 
@@ -197,6 +264,12 @@ This command shows the structure of `Resources/config/oro/api.yml`.
 .. code-block:: none
 
     php bin/console oro:api:config:dump-reference
+
+The --max-nesting-level option can be used to limit the depth of nesting target entities:
+
+.. code-block:: none
+
+   php bin/console oro:api:config:dump-reference --max-nesting-level=<number>
 
 .. _web-api--commands--oro-cron-api-async_operations-cleanup:
 

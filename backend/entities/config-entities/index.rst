@@ -28,7 +28,7 @@ To illustrate how metadata can be added to an entity, lets add the following YAM
 
 This configuration adds the 'demo_attr' attribute with the 'Demo' value to all configurable entities. The configurable entity is an entity marked with the `@Config` annotation. This code also automatically adds a service named **oro_entity_config.provider.acme** into the DI container. You can use this service to get a value of the 'demo_attr' attribute for a particular entity.
 
-To apply this change, execute the **oro:entity-config:update** command:
+To apply this change, execute the **oro:entity-config:update** command that updates configuration data for entities:
 
 .. code-block:: bash
 
@@ -214,15 +214,31 @@ Clearing Up the Cache
 
 The following command removes all data related to configurable entities from the application cache:
 
-.. code-block:: bash
+.. code-block:: none
+
+ php bin/console oro:entity-config:cache:clear
+
+The ``--no-warmup`` option can be used to skip warming up the cache after cleaning:
+
+.. code-block:: none
 
    php bin/console oro:entity-config:cache:clear --no-warmup
 
+Warmimg Up the Cache
+--------------------
+
+To warm up entity config cache, use the ``oro:entity-config:cache:warmup`` command.
+
+.. code-block:: none
+
+   php bin/console oro:entity-config:cache:warmup
+
 Debugging Configuration Data
+----------------------------
 
 You can use ``oro:entity-config:debug`` command to get a different kind of configuration data as well as add/remove/update configuration of entities. To see all available options run this command with ``--help`` option. As an example the following command shows all configuration data for User entity:
 
-.. code-block:: bash
+.. code-block:: none
 
    php bin/console oro:entity-config:debug "Oro\Bundle\UserBundle\Entity\User"
 
@@ -501,12 +517,36 @@ Below the configuration level, each option's configuration is divided into three
 Secondly, you need to update all configurable entities after configuration parameters have been
 modified or added using the ``oro:entity-config:update`` command:
 
-.. code-block:: bash
+.. code-block:: none
 
     php bin/console oro:entity-config:update --force
 
 When the ``oro:entity-config:update`` command is executed without using the ``--force`` option,
 only new values will be added, but no existing parameters will be updated.
+
+.. code-block:: none
+
+   php bin/console oro:entity-config:update
+
+The ``--dry-run`` option outputs modifications without actually applying them.
+
+.. code-block:: none
+
+    php bin/console oro:entity-config:update --dry-run
+
+A regular expression provided with the ``--filter`` option will be used to filter entities by their class names:
+
+.. code-block:: none
+
+    php bin/console oro:entity-config:update --filter=<regexp>
+
+.. code-block:: none
+
+    php bin/console oro:entity-config:update --filter='Oro\\Bundle\\User*'
+
+.. code-block:: none
+
+    php bin/console oro:entity-config:update --filter='^Oro\\(.*)\\Region$'
 
 .. _book-entities-indexed-attributes:
 
@@ -607,7 +647,7 @@ method afterwards:
 
 .. tip::
 
-    Use the ``oro:entity-config:debug`` command to access or modify configuration values from the
+    Use the ``oro:entity-config:debug`` command to displays entity configuration and access or modify configuration values from the
     command line.
 
 .. include:: /include/include-links-dev.rst

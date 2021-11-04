@@ -19,7 +19,7 @@ Example:
         tags:
             - { name: acme.price_strategy, alias: your_strategy }
             
-After this, your strategy will be available in the **System\Configuration\Commerce\Catalog\Pricing\Pricing Strategy** in the OroCommerce back-office.
+After this, your strategy will be available in the **System\\Configuration\\Commerce\\Catalog\\Pricing\\Pricing Strategy** in the OroCommerce back-office.
 
 Merge By Priority
 -----------------

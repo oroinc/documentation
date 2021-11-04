@@ -13,7 +13,7 @@ The information below summarizes concepts and tools that are important for under
 * **Mink** is an |open source browser controller/emulator| for web applications developed using PHP.
 * **OroElementFactory** creates elements in contexts.
 * |SymfonyExtension| provides an integration with Symfony and Mink driver for Symfony application.
-* **@OroTestFrameworkBundle\Behat\ServiceContainer\OroTestFrameworkExtension** provides integration with Oro BAP based applications.
+* **Oro\\Bundle\\TestFrameworkBundle\\Behat\\ServiceContainer\\OroTestFrameworkExtension** provides integration with Oro BAP based applications.
 * **Selenium2Driver** Selenium2Driver provides a bridge for the WebDriver's wire protocol.
 * |ChromeDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more.
 
@@ -106,7 +106,17 @@ Configuration
 Application Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use default configuration for the application installed in production mode. If you do not have any mail server configured locally, set the ``mailer_transport`` setting in *parameters.yml* to ``null``.
+Use the default configuration for the application installed in the production mode.
+
+To test emails, install |Mailcatcher| and set up mailer_* options in the ``config/parameters.yml`` file:
+
+  .. code-block:: yaml
+
+     mailer_transport: smtp
+     mailer_host: 127.0.0.1
+     mailer_port: 1025
+
+Behat framework uses mailcatcher UI to assert emails. By default, the framework expects mailcatcher UI at ``http://127.0.0.1:1080/``. To change the URL, provide the ``ORO_MAILER_WEB_URL`` environment variable.
 
 Behat Configuration
 ~~~~~~~~~~~~~~~~~~~
@@ -155,6 +165,7 @@ Install the application without demo data in production mode using the following
       --application-url=http://dev-crm.local --user-firstname=John --user-lastname=Doe \
       --user-password=admin  --organization-name=ORO --env=prod --sample-data=n --timeout=3000
 
+.. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command refference for more information.
 
 Install Test Automation Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -423,9 +434,6 @@ Now you should implement the element's ``setValue`` method:
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Oro\Bundle\PaymentBundle\Tests\Behat\Element;
 
     use Oro\Bundle\TestFrameworkBundle\Behat\Element\Element;
@@ -502,9 +510,6 @@ Typical Page configuration:
 Sample Page class:
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Oro\Bundle\UserBundle\Tests\Behat\Page;
 
@@ -694,7 +699,7 @@ Cucumber does not differentiate between the keywords, but choosing the right one
           | Password | <password> |
       And I press "Log in"
       Then I should be on "/user/login"
-      And I should see "Invalid user name or password."
+      And I should see "Invalid username or password."
 
       Examples:
       | login | password |
@@ -812,8 +817,8 @@ To prepare for auto-recovery using a startup script:
 
    It starts automatically after rebooting the machine.
 
-Couldn't generate random unique value for Oro\Bundle\UserBundle\Entity\User: username in 128 tries
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Couldn't generate random unique value for Oro\\Bundle\\UserBundle\\Entity\\User: username in 128 tries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A hot fix:
 

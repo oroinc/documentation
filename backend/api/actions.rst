@@ -83,7 +83,7 @@ The following table shows all actions provided out-of-the-box:
 +-----------------------------------------------------------+----------------------------------------------------------------------------------------+
 | `batch_update <#batch-update-action>`__                   | Used by **update_list** action to update or create a set of entities of the same type. |
 +-----------------------------------------------------------+----------------------------------------------------------------------------------------+
-| `batch_update_item <#batch-update-item-action>`__         | Used by **batch_update** action to update or create an entity that is a part of        |
+| `batch_update_item <#batch-update-item-action>`__         | Used by **batch_update** action to update or create an entity that is part of          |
 |                                                           | a batch operation.                                                                     |
 +-----------------------------------------------------------+----------------------------------------------------------------------------------------+
 
@@ -1072,7 +1072,7 @@ For examples of usage, see the ``handleUnhandledError`` method of |RequestAction
 batch_update Action
 ^^^^^^^^^^^^^^^^^^^
 
-This action is intended to update or create a set of entities of the same type that are a part of an asynchronous
+This action is intended to update or create a set of entities of the same type that are part of an asynchronous
 batch operation. It is triggered by the `update_list <#update-list-action>`__ action.
 
 The context class: |BatchUpdateContext|.
@@ -1105,7 +1105,7 @@ For examples of usage, see |BatchUpdateHandler|.
 batch_update_item Action
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action is intended to create or update an entity that is a part of an asynchronous batch operation.
+This action is intended to create or update an entity that is part of an asynchronous batch operation.
 It is used by the `batch_update <#batch-update-action>`__ action.
 
 The context class: |BatchUpdateItemContext|.

@@ -8,9 +8,7 @@ OroNotificationBundle extends the OroEmailBundle capabilities and enables the em
 Console Commands
 ----------------
 
-* ``oro:maintenance-notification`` - Sends an email notification to the application users.
-
-The *oro:maintenance-notification* command sends an email notification to the recipients listed in System Configuration > General Setup > Email Configuration > Maintenance Notifications > Recipients.
+The *oro:maintenance-notification* command sends an email notification to the recipients listed in **System Configuration > General Setup > Email Configuration > Maintenance Notifications > Recipients**.
 
 If the recipient list in the system configuration is left empty, the notification will be sent to all active application users.
 
@@ -36,7 +34,6 @@ The ``--sender_name`` and ``--sender_email`` options can be used to override the
 .. code-block:: bash
 
    php bin/console oro:maintenance-notification --message=<message> --sender_name=<name> --sender_email=<email> --env=prod
-
 
 Create Notification Rule
 ------------------------

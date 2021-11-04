@@ -20,7 +20,6 @@ Configuration
 
 .. code-block:: php
 
-
     workflows:
         phone_call:
             entity: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneCall
@@ -194,9 +193,6 @@ PhoneCall Entity
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\DemoWorkflowBundle\Entity;
 
     use Doctrine\Common\Collections\ArrayCollection;
@@ -290,9 +286,6 @@ PhoneConversation Entity
 ------------------------
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Acme\Bundle\DemoWorkflowBundle\Entity;
 

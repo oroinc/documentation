@@ -6,6 +6,7 @@ YAML
 .. toctree::
    :maxdepth: 1
 
+   bundles-config
    acls
    acl-categories
    assets

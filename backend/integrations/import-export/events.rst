@@ -3,7 +3,7 @@
 Events
 ======
 
-All events are available in the Oro\Bundle\ImportExportBundle\Event\Events class.
+All events are available in the Oro\\Bundle\\ImportExportBundle\\Event\\Events class.
 
 `AFTER_ENTITY_PAGE_LOADED`
 
@@ -56,7 +56,7 @@ This event occurs after a job is processed. It is used to perform some actions a
 Strategy Events
 ---------------
 
-All strategy events are available in the Oro\Bundle\ImportExportBundle\Event\StrategyEvent class.
+All strategy events are available in the Oro\\Bundle\\ImportExportBundle\\Event\\StrategyEvent class.
 
 **Usage Example:**
 

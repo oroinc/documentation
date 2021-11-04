@@ -283,7 +283,7 @@ If you need to load your part of the configuration directly from the file, use t
 Configuration Loading
 ---------------------
 
-To load the configuration, execute the following command:
+To load workflow definitions to the database, execute the following command:
 
 .. code-block:: php
 
@@ -926,7 +926,7 @@ Cron trigger configuration has the following options.
 Conditions Configuration
 ------------------------
 
-Conditions configuration is a part of Transition Definition Configuration. It declares a tree structure of conditions
+Conditions configuration is part of Transition Definition Configuration. It declares a tree structure of conditions
 that are applied on the Workflow Item to check if the Transition could be performed. Single condition configuration
 contains alias - a unique name of condition and options.
 

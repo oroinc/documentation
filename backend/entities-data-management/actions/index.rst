@@ -11,7 +11,7 @@ Operations (Actions)
 
 Every active *operation* shows a button or a link on the corresponding page. The button is displayed only if all the described preconditions are met. For the *operation* button or link to be displayed the `preconditions` section should evaluate to `true`.  After a user clicks on the button or link the *operation* will be performed only if the `conditions` section evaluates to `true`. Also, if the operation has a form dialog configuration, then a a modal dialog with fields appears when clicking the button. 
 
-Each *operation* relates to an entity type (consists of a full class name) or\and a route of the page where the operations should be displayed or\and a datagrid. Before the page loading, ActionBundle chooses *operations* that have a corresponding page entity|route. Then these *operations* are checked against the preconditions. If all the preconditions are met - the operation's button is displayed.
+Each *operation* relates to an entity type (consists of a full class name) or\\and a route of the page where the operations should be displayed or\\and a datagrid. Before the page loading, ActionBundle chooses *operations* that have a corresponding page entity|route. Then these *operations* are checked against the preconditions. If all the preconditions are met - the operation's button is displayed.
 Upon clicking the button - all the performed operations (and underlined actions) are executed provided that all the preconditions of *operation* and conditions of *actions* are met.
 
 Operation Configuration
@@ -134,7 +134,6 @@ Execute a command to validate all operations configuration:
 
 .. code-block:: php
 
-
     php bin/console oro:action:configuration:validate
 
 .. note:: All configurations apply automatically after their changes are made in developer environment.
@@ -163,9 +162,8 @@ Supposing you need to disable the default `DELETE` operation for your new `MyEnt
 
 .. code-block:: php
 
-
     operations:
-        DELETE:f
+        DELETE:
             exclude_entities: ['MyEntity']
 
 The operation merges special additional condition to the default operation during the configuration compilation, so that the default `DELETE` operation doesn't match your entity and is not displayed as well.
@@ -225,7 +223,7 @@ Operation Diagram
 
 The following diagram shows operation processes logic in graphical representation:
 
-.. image:: /img/backend/bundles/ActionBundle/operation.png
+.. image:: /img/bundles/ActionBundle/operation.png
    :alt: Operation Diagram
 
 .. toctree::

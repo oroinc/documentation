@@ -197,6 +197,14 @@ Under this key, options that are applied on the field level will be configured:
 You can use the same options to configure entity fields that you can use when configuring
 :ref:`options for an entity class <reference-entity-config-entity-items>`.
 
+Dump Reference Structure
+------------------------
+
+Use the ``oro:entity:config:dump-reference`` command to dump the reference structure for ``Resources/config/oro/entity.yml``:
+
+.. code-block:: none
+
+   php bin/console oro:entity:config:dump-reference
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

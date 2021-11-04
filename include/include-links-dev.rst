@@ -371,6 +371,10 @@ Links (Dev)
 
    <a href="http://backbonejs.org/#Events" target="_blank">Backbone events API</a>
 
+.. |Backbone View| raw:: html
+
+   <a href="http://backbonejs.org/#View" target="_blank">Backbone View</a>
+
 .. |declarative event bindings| raw:: html
 
    <a href="https://github.com/chaplinjs/chaplin/blob/master/docs/chaplin.view.md#listen" target="_blank">declarative event bindings</a>
@@ -411,6 +415,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/components/base/component.js" target="_blank">oroui/js/app/components/base/component</a>
 
+.. |oroui/js/app/views/base/view|  raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/views/base/view.js" target="_blank">oroui/js/app/views/base/view</a>
+
 .. |oroui/js/app/modules/jstree-actions-module.js|  raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/jstree-actions-module.js" target="_blank">oroui/js/app/modules/jstree-actions-module.js</a>
@@ -441,7 +449,7 @@ Links (Dev)
 
 .. |oroui/js/app/modules/input-widgets| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/input-widgets.js" target="_blank">oroui/js/app/modules/input-widgets|</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/modules/input-widgets.js" target="_blank">oroui/js/app/modules/input-widgets</a>
 
 .. |jQuery-UI widget| raw:: html
 
@@ -1127,10 +1135,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/permissions.md" target="_blank">Permissions in ActivityList Bundle</a>
 
-.. |Bundle Components| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/BatchBundle#components" target="_blank">Bundle Components</a>
-
 .. |MemoryCacheChain| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php" target="_blank">MemoryCacheChain</a>
@@ -1150,7 +1154,6 @@ Links (Dev)
 .. |Symfony Validation Component| raw:: html
 
    <a href="https://symfony.com/doc/4.4/validation.html" target="_blank">Symfony Validation Component</a>
-
 
 .. |SPL| raw:: html
 
@@ -2007,73 +2010,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TagBundle/Resources/doc/viewer/tags-view.md" target="_blank">Tags View (Usage Example)</a>
 
-.. |Add a Calendar Provider| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/provider.md" target="_blank">Add a Calendar Provider</a>
-
-.. |Context Calendar Menu| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/contextMenu.md" target="_blank">Context Calendar Menu</a>
-
-.. |Configure System Calendars| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/systemCalendars.md" target="_blank">Configure System Calendars</a>
-
-.. |Create a Calendar Event Action| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/workflowAction.md" target="_blank">Create a Calendar Event Action</a>
-
-.. |Manage Recurring Events| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/recurringEvents.md" target="_blank">Manage Recurring Events</a>
-
-.. |Use Unique Calendar Identifier| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/uid.md" target="_blank">Use Unique Calendar Identifier</a>
-
-.. |Event Organizers| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/eventOrganizers.md" target="_blank">Event Organizers</a>
-
-.. |Attendee Entity| raw:: html
-
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/attendees.md" target="_blank">Attendee Entity</a>
-
-.. |Use Charts| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/usage.md" target="_blank">Use Charts</a>
-
-.. |Configure Charts| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/chart-configuration.md" target="_blank">Configure Charts</a>
-
 .. |Configure Datagrid to Enable Multi Currency Inline Edit| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CurrencyBundle/Resources/doc/editor/multi-currency-editor-view.md" target="_blank">Configure Datagrid to Enable Multi Currency Inline Edit</a>
-
-.. |Configure Dashboard| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#dashboard-configuration" target="_blank">Configure Dashboard</a>
-
-.. |Add a New Dashboard| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-add-new-dashboard" target="_blank">Add a New Dashboard</a>
-
-.. |Make a Dashboard the First Page of the Application| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-make-a-dashboard-a-first-page-of-your-application" target="_blank">Make a Dashboard the First Page of the Application</a>
-
-.. |Add New Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-add-new-widget" target="_blank">Add New Widget</a>
-
-.. |Configure a Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#widget-configuration" target="_blank">Configure a Widget</a>
-
-.. |Configure Grid Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#grid-widget-configuration" target="_blank">Configure Grid Widget</a>
 
 .. |Use OroDistributionBundle| raw:: html
 
@@ -2090,10 +2029,6 @@ Links (Dev)
 .. |Manage Packages| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Manage Packages</a>
-
-.. |Configure and Use OroEmbeddedBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
 
 .. |Abstract File Manager Service| raw:: html
 
@@ -2151,30 +2086,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/CustomizeFormDataContext.php" target="_blank">Events</a>
 
-.. |Use Installer| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle" target="_blank">Use Installer</a>
-
-.. |Menu Data Source| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#menu-data-sources" target="_blank">Menu Data Source</a>
-
-.. |Create Menu with Builder| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#your-first-menu" target="_blank">Create Menu with Builder</a>
-
-.. |Render Menus| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#rendering-menus" target="_blank">Render Menus</a>
-
-.. |Disable Menu Items| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#disabling-menu-items-as-part-of-a-feature" target="_blank">Disable Menu Items</a>
-
-.. |Configure Breadcrumbs| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#breadcrumb-provider" target="_blank">Configure Breadcrumbs</a>
-
 .. |Configure Dedicated Database Connection for Reports| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md" target="_blank">Configure Dedicated Database Connection for Reports</a>
@@ -2198,10 +2109,6 @@ Links (Dev)
 .. |Usage and Logging Levels| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle#orosyncbundle" target="_blank">Usage and Logging Levels</a>
-
-.. |Introduction to Themes| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties" target="_blank">Introduction to Themes</a>
 
 .. |Inspect with Built-in Dev Tools in a Browser| raw:: html
 
@@ -2838,6 +2745,10 @@ Links (Dev)
 .. |relevant Akeneo documentation| raw:: html
 
    <a href="https://github.com/oroinc/OroAkeneoBundle/blob/1.6.0/README.md" target="_blank">relevant Akeneo documentation</a>
+
+.. |AkeneoBatchBundle| raw:: html
+
+   <a href="https://github.com/oroinc/OroAkeneoBundle/blob/1.6.0/README.md" target="_blank">AkeneoBatchBundle</a>
 
 .. |client - server architecture| raw:: html
 
@@ -5682,7 +5593,7 @@ Links (Dev)
 
 .. |oroform/js/app/views/expression-editor-view| raw:: html
 
-   <a href="FormBundle/Resources/public/js/app/views/expression-editor-view.js" target="_blank">oroform/js/app/views/expression-editor-view</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/app/views/expression-editor-view.js" target="_blank">oroform/js/app/views/expression-editor-view</a>
 
 .. |TinyMCE| raw:: html
 
@@ -5780,6 +5691,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/Provider/AdditionalEmailAssociationProviderInterface.php" target="_blank">AdditionalEmailAssociationProviderInterface</a>
 
+.. |Supported Date and Time Formats| raw:: html
+
+   <a href="https://php.net/manual/datetime.formats.php" target="_blank">Supported Date and Time Formats</a>
+
 .. |Configuration.php file| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/QueryDesigner/Configuration.php" target="_blank">Configuration.php file</a>
@@ -5799,3 +5714,135 @@ Links (Dev)
 .. |Composer| raw:: html
 
    <a href="https://getcomposer.org/" target="_blank">Composer</a>
+
+.. |CommandExecutor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/InstallerBundle/CommandExecutor.php" target="_blank">CommandExecutor</a>
+
+.. |Bug Bounty| raw:: html
+
+   <a href="https://oroinc.com/bug-bounty/" target="_blank">Bug Bounty</a>
+
+.. |IdentityIterationStrategyInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentityIterationStrategyInterface.php" target="_blank">Bug Bounty</a>
+
+.. |SelectIdentifierWalker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/SelectIdentifierWalker.php" target="_blank">SelectIdentifierWalker</a>
+
+.. |IdentifierHydrator| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentifierHydrator.php" target="_blank">IdentifierHydrator</a>
+
+.. |LimitIdentifierWalker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/LimitIdentifierWalker.php" target="_blank">LimitIdentifierWalker</a>
+
+.. |Calendar Manager| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Manager/CalendarManager.php" target="_blank">Calendar Manager</a>
+
+.. |CalendarProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/CalendarProviderInterface.php" target="_blank">CalendarProviderInterface</a>
+
+.. |context menu template| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/views/Calendar/Menu/contextMenu.html.twig" target="_blank">context menu template</a>
+
+.. |Backbone model| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/model.js" target="_blank">Backbone model</a>
+
+.. |Backbone collection| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/collection.js" target="_blank">Backbone collection</a>
+
+.. |manager| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/color-manager.js" target="_blank">manager</a>
+
+.. |calendar items list| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/view.js" target="_blank">calendar items list</a>
+
+.. |oro_system_calendar| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/SystemCalendar.php" target="_blank">oro_system_calendar</a>
+
+.. |SystemCalendarProvider| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/SystemCalendarProvider.php" target="_blank">SystemCalendarProvider</a>
+
+.. |PublicCalendarProvider| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/PublicCalendarProvider.php" target="_blank">PublicCalendarProvider</a>
+
+.. |CalendarEvent| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/CalendarEvent.php" target="_blank">CalendarEvent</a>
+
+.. |Entity/Recurrence| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/Recurrence.php" target="_blank">Entity/Recurrence</a>
+
+.. |Model/Recurrence| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence.php" target="_blank">Model/Recurrence</a>
+
+.. |Model/Recurrence/AbstractStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/AbstractStrategy.php" target="_blank">Model/Recurrence/AbstractStrategy</a>
+
+.. |Model/Recurrence/DailyStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/DailyStrategy.php" target="_blank">Model/Recurrence/DailyStrategy</a>
+
+.. |Model/Recurrence/DelegateStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/DelegateStrategy.php" target="_blank">Model/Recurrence/DelegateStrategy</a>
+
+.. |Model/Recurrence/MonthlyStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/MonthlyStrategy.php" target="_blank">Model/Recurrence/MonthlyStrategy</a>
+
+.. |Model/Recurrence/MonthNthStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/MonthNthStrategy.php" target="_blank">Model/Recurrence/MonthNthStrategy</a>
+
+.. |Model/Recurrence/StrategyInterface| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/StrategyInterface.php" target="_blank">Model/Recurrence/StrategyInterface</a>
+
+.. |Model/Recurrence/WeeklyStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/WeeklyStrategy.php" target="_blank">Model/Recurrence/WeeklyStrategy</a>
+
+.. |Model/Recurrence/YearlyStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/YearlyStrategy.php" target="_blank">Model/Recurrence/YearlyStrategy</a>
+
+.. |Model/Recurrence/YearNthStrategy| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/YearNthStrategy.php" target="_blank">Model/Recurrence/YearNthStrategy</a>
+
+.. |specifications| raw:: html
+
+   <a href="https://icalendar.org/iCalendar-RFC-5545/3-8-4-7-unique-identifier.html" target="_blank">specifications</a>
+
+.. |update| raw:: html
+
+   <a href="https://icalendar.org/New-Properties-for-iCalendar-RFC-7986/5-3-uid-property.html" target="_blank">update</a>
+
+.. |NotificationAlertInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertInterface.php" target="_blank">NotificationAlertInterface</a>
+
+.. |NotificationAlertManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertManager.php" target="_blank">NotificationAlertManager</a>
+
+.. |Mailcatcher| raw:: html
+
+   <a href="https://mailcatcher.me/" target="_blank">Mailcatcher</a>

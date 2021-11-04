@@ -9,6 +9,8 @@ Configure Saved Search Settings per Organization
    :start-after: begin_include
    :end-before: end_include
 
+.. hint:: The Saved Search feature is available since OroCommerce v4.2.4. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 .. note:: Saved Search configuration options are also available on the :ref:`global <configuration--guide--commerce--configuration--saved-search>` and :ref:`website <configuration--website-commerce--search--saved-search>` levels.
 
 .. image:: /user/img/system/user_management/org_configuration/search/saved-search-org-config.png

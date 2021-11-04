@@ -40,9 +40,14 @@ is ignored. To turn off JS translations generation, set option `js_translation.d
             debug: false
 
 
-If you turned off JS translations generation, do it manually by executing the command below:
+If you turned off JS translations generation, do it manually by executing the the command below which dumps translations for use in JavaScript:
 
 .. code-block:: none
 
     php bin/console oro:translation:dump
 
+The ``--locale`` option can be used to dump translations only for the specified locales:
+
+.. code-block:: none
+
+    php bin/console oro:translation:dump --locale=<locale1> --locale=<locale2> --locale=<localeN>

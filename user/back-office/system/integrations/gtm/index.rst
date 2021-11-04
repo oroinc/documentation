@@ -505,7 +505,7 @@ To create a new integration with Google Tag Manager in your Oro application:
 
 Once the integration is saved, it becomes available in the Integrations grid under **System > Integrations > Manage Integrations**.
 
-.. important:: To enable a Google Tag Manager integration for data mapping, connect it to the application in the system settings :ref:`globally <admin-configuration-integrations-google>`, :ref:`per organization <organization-google-settings>` or :ref:`website <website-google-settings>`.
+.. important:: To enable a Google Tag Manager integration for data mapping, connect it to the application in the system settings :ref:`globally <system-configuration-integrations-google>`, :ref:`per organization <organization-google-settings>` or :ref:`website <website-google-settings>`.
 
 
 .. include:: /include/include-links-user.rst

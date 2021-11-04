@@ -3,7 +3,7 @@
 Previously Purchased Products
 =============================
 
-The Previously Purchased Products functionality adds the previously purchased products grid to the customer pages under `Account >  Previously Purchased` on the frontend. By default, previously purchased products are disabled. To enable this functionality, navigate to **System > Configuration > Orders > Purchase History > Enabled Purchase History** in the admin panel.
+The Previously Purchased Products functionality adds the previously purchased products grid to the customer pages under `Account >  Previously Purchased` on the frontend. By default, previously purchased products are disabled. To enable this functionality, navigate to **System > Configuration > Commerce > Orders > Purchase History > Enabled Purchase History** in the admin panel.
 
 .. _previously-purchased-products-config:
 

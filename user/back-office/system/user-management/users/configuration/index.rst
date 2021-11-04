@@ -28,6 +28,10 @@ More information about the options available for each of the two categories is a
     * :ref:`Display Settings <doc-my-user-configuration-display>`
     * :ref:`Email Configuration <my_email_configuration>`
 
+  * Integrations
+
+    * :ref:`Microsoft Settings <user-configuration-microsoft-settings>`
+
 * **Commerce**
 
   * Sales
@@ -41,6 +45,7 @@ More information about the options available for each of the two categories is a
    Localization <user-localization>
    Display Settings <user-display-settings>
    Email Configuration <user-email-settings>
+   Microsoft Settings <user-microsoft-settings>
    Contacts <user-sales-info>
 
 

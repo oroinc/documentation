@@ -72,15 +72,34 @@ You need to configure the following parameters for the testing environment:
            session_handler: null
            locale: en
            secret: ThisTokenIsNotSoSecretChangeIt
-           installed: '2014-08-12T09:05:04-07:00'
 
 3. Install the application in the test environment:
 
    .. code-block:: none
 
-       $ bin/console oro:install --env=test --organization-name=Oro --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=n --application-url=http://localhost
+       $ php bin/console oro:install --env=test
+
+   .. note::
+
+       When the following options are not provided, they are set up automatically for the ``test`` environment:
+           * --user-name=admin
+           * --user-email=admin\@example.com
+           * --user-firstname=John
+           * --user-lastname=Doe
+           * --user-password=admin
+           * --sample-data=n
+           * --organization-name=OroInc
+           * --application-url=http://localhost/
+           * --language=en
+           * --formatting-code=en_US
+           * --skip-assets
+           * --skip-translations
+           * --no-interaction
+           * --timeout=600
 
    During installation, the database structure is set up and standard fixtures are loaded.
+
+   .. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command refference for more information.
 
 4. Run tests using phpunit with the proper --testsuite option (unit or functional).
 

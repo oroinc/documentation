@@ -13,10 +13,7 @@ Basic statements:
 * UI of bundles (css and templates markup) should be "themable", it means that CSS and UI components of bundle should be affectable by theme to change look and feel of application (at least colors and icons)
 * A theme is a set of CSS/SCSS files that will be included at the end of all CSS files to cascade styles and change look and feel
 
-Related Documentation
----------------------
-
-* |Introduction to Themes|
+For more information, see the topic on :ref:`back-office themes <book-themes>` in the developer guide.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

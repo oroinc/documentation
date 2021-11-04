@@ -65,6 +65,16 @@ Running Tests
           extensions: &default_extensions
               Behat\MinkExtension:
                   base_url: "https://example.com"
+              # This configuration changes artifacts URLs to local file links.
+              # Remove it if artifacts URLs are the same as for the tested application
+              # or change the base_url to the custom base URL for artifacts.
+              Oro\Bundle\TestFrameworkBundle\Behat\ServiceContainer\OroTestFrameworkExtension:
+                  artifacts:
+                      handlers:
+                          local:
+                              directory: '%paths.base%/public/media/behat'
+                              base_url: ~ # default is '%mink.base_url%/media/behat/'
+                              auto_clear: false
 
 3. Start the ChromeDriver:
 
@@ -91,7 +101,7 @@ To test a feature, you often need different data loaded (users to login, product
 
 .. note:: Your local application source code must match the code of the tested application. Otherwise, you may face issues with the data load.
 
-1. Provide database credentials for the tested application and set the installed flag to true to the config/parameters.yml file. E.g.:
+1. Provide database credentials for the tested application to the config/parameters.yml file. E.g.:
 
    .. code-block:: yaml
 
@@ -102,9 +112,6 @@ To test a feature, you often need different data loaded (users to login, product
           database_name:          oro_db
           database_user:          oro_db_user
           database_password:      oro_db_pass
-          # ...
-          installed:              true
-          # ...
 
 2. Create a ``behat.yml`` file in the application folder. In this file, set the ``base_url`` option to the application URL to test.
 
@@ -129,21 +136,6 @@ To test a feature, you often need different data loaded (users to login, product
    .. code-block:: bash
 
       php bin/behat --skip-isolators-but-load-fixtures -- <path-to-behat.feature>
-
-Troubleshooting
----------------
-
-When testing the remote application, ensure the ``installed`` parameter in the ``config/parameters.yml`` file is set to ``false``, ``~`` or ``null``. Otherwise, the Behat framework will try to connect to the database to read the entities metadata and may fail with the following errors:
-
-.. code-block:: none
-
-   An exception occurred in driver: SQLSTATE[08006] [7] could not connect to server: Connection refused
-
-or
-
-.. code-block:: none
-
-   SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "oro_config" does not exist
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -11,8 +11,11 @@ Related Documentation
 ---------------------
 
 * :ref:`Use Filter Form Types <backend-filters-form-types>`
-* :ref:`Javascript Widgets (Frontend Side Filter) <backend-entities-filters-js-widgets>`
 * :ref:`Grid Extension <backend-entities-filters-grid-extension>`
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
+.. toctree::
+   :hidden:
+
+   filter-form-types
+   grid-extension
+

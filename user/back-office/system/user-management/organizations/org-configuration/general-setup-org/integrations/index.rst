@@ -7,3 +7,4 @@ Configure Integration Settings per Organization
    :maxdepth: 1
 
    Google Settings <organization-google>
+   Microsoft Settings <organization-microsoft>

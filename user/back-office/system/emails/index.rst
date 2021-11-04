@@ -29,7 +29,7 @@ All email settings are located in the system, organization, website, or user con
 
 **Related Topics**
 
-* :ref:`Configure an Integration with Google <admin-configuration-google>`
+* :ref:`Configure an Integration with Google <system-configuration-integrations-google>`
 
 .. toctree::
    :titlesonly:

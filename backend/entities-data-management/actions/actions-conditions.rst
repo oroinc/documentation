@@ -217,7 +217,7 @@ To add custom condition, simply add a service to DIC with the "oro_action.condit
             tags:
                 - { name: oro_action.condition, alias: blank|empty }
 
-The "|" symbol in alias can be used to demonstrate several aliases. Note that service class must implement Oro\Component\ConfigExpression\ExpressionInterface.
+The "|" symbol in alias can be used to demonstrate several aliases. Note that service class must implement Oro\\Component\\ConfigExpression\\ExpressionInterface.
 
 Configurable Condition
 ^^^^^^^^^^^^^^^^^^^^^^

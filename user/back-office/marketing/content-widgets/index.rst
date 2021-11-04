@@ -6,7 +6,7 @@
 Manage Content Widgets in the Back-Office
 =========================================
 
-.. hint:: This section is a part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides the general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
+.. hint:: This section is part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides the general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
 
 Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. :ref:`WYSIWYG fields <getting-started-wysiwyg-editor-field>` are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
 

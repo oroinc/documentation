@@ -15,7 +15,6 @@ Usually, you do not need to provide a predefined set of associations between the
 
 .. code-block:: php
 
-    <?php
     ...
     class AcmeBundle implements Migration, CommentExtensionAwareInterface
     {
@@ -68,7 +67,7 @@ The comment widget will be rendered into ```div.message .comment``` node of the 
 Attachment Configuration
 ------------------------
 
-MIME types of comment attachments can be configured at **System > Configuration > Upload settings > File Mime Types**.
+MIME types of comment attachments can be configured at **System > Configuration > System Configuration > General Setup > Upload settings > File Mime Types**.
 
 Maximum file size will be taken from **System > Entity Management > Comment > Attachment Field > File Size**.
 

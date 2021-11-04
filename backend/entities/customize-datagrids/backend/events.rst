@@ -36,9 +36,6 @@ As an illustration, let's add one more column to a specific datagrid. For this, 
 
 .. code-block:: php
 
-
-    <?php
-
     namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
 
     use Oro\Bundle\DataGridBundle\Event\BuildBefore;
@@ -87,9 +84,6 @@ The ``BuildAfter`` event class has access to |Datagrid| instance.
 As an example, let us filter the datagrid by a certain value from the request params. For this, create an event listener and modify the query builder, as illustrated below:
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
 
@@ -175,9 +169,6 @@ For instance, if you have complex data that is hard to process with the standard
 you can create an event listener and fetch the data once the rows are fetched from the ``datasource``.
 
 .. code-block:: php
-
-
-    <?php
 
     namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
 

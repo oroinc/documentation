@@ -296,7 +296,7 @@ The query is retrieved using the following code:
     }
 
 
-A `$query` variable contains instance of *\Doctrine\ORM\Query*. Add it to the statement of any doctrine query in the following way:
+A `$query` variable contains instance of *\\Doctrine\\ORM\\Query*. Add it to the statement of any doctrine query in the following way:
 
 .. code-block:: php
 

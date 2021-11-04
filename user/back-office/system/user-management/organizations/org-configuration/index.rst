@@ -33,6 +33,8 @@ The following categories of settings are available for system configuration at o
   * Integrations
 
     * :ref:`Google Settings <user-guide-hangouts-org>`
+    * :ref:`Microsoft Settings <organization-configuration-microsoft>`
+
 
 * **Commerce**
 
@@ -87,6 +89,7 @@ The following categories of settings are available for system configuration at o
 
     * :ref:`Filters and Sorters <configuration--guide--commerce--configuration--catalog--filters-sorters--organization>`
     * :ref:`Related Items <sys--users--organization--commerce--catalog--related-products>`
+    * :ref:`Pricing <configuration--guide--commerce--configuration--catalog--pricing--organization>`
 
   * Inventory
 

@@ -8,7 +8,7 @@ OroAssetBundle adds the possibility to install project assets using webpack.
 Architecture
 ------------
 
-Under the hood `oro:assets:build` command uses webpack to build assets.
+Under the hood `oro:assets:build` command runs webpack to build assets.
 
 The application contains `webpack.config.js` file that generates webpack configuration using `webpack-config-builder`.
 
@@ -170,118 +170,6 @@ Storefront            [BUNDLE_NAME]/Resources/views/layouts/[THEME_NAME]/config/
 
 Detailed information about JS modules configuration is available in the :ref:`JS Modules <reference-format-jsmodules>` topic.
 
-.. _bundle-docs-platform-asset-bundle-commands:
-
-Commands
---------
-
-`oro:assets:build`
-^^^^^^^^^^^^^^^^^^
-
-The command runs webpack to build assets.
-
-In the `dev` environment, the command builds assets without minification and with source maps.
-In the `prod` environment, assets are minified and do not include source maps.
-
-.. note:: When using the `watch` mode after changing the asset's configuration in `assets.yml` files, it is required to restart the command; otherwise, it will not detect the changes.
-
-Use Commands
-~~~~~~~~~~~~
-
-* ``oro:assets:build [-w|--watch] [-i|--npm-install] [--] [<theme>]``
-* ``oro:assets:build admin.oro`` to build assets only for the default management-console theme called `admin.oro`
-* ``oro:assets:build default --watch`` to build assets only for the `blank` theme with enabled `watch` mode
-
-Arguments
-~~~~~~~~~
-
-`theme`
-"""""""
-
-Theme name to build. When not provided, all available themes are built.
-
-Options
-~~~~~~~
-
-`--skip-css`
-""""""""""""
-
-Allows assembling scripts only, without rebuilding the styles.
-
-`--skip-js`
-"""""""""""
-
-Allows assembling styles only, without rebuilding the scripts.
-
-`--skip-babel`
-""""""""""""""
-
-This option turns off Babel utilization during the building process. It allows assembling ES as it is, without transpiling it to JS.
-
-It is a useful option for development purposes that enables you to assemble scripts for browsers that support ES well natively, e.g., Chrome, FireFox, Safari.
-
-`--skip-sourcemap`
-""""""""""""""""""
-
-Turns off SourceMaps building.
-
-`--skip-rtl`
-""""""""""""
-
-Turns off building RTL styles for those themes that has RTL support.
-
-`--analyze`
-"""""""""""
-
-Turns on BundleAnalyzerPlugin for the build.
-
-`--hot`
-"""""""
-
-Turn on hot module replacement. It allows all styles to be updated at runtime
-without the need for a full refresh.
-
-`--key`
-"""""""
-
-SSL Certificate key PEM file path. It is used only with hot module replacement.
-
-`--cert`
-""""""""
-
-SSL Certificate cert PEM file path. It is used only with hot module replacement.
-
-`--cacert`
-""""""""""
-
-SSL Certificate cacert PEM file path. It is used only with hot module replacement.
-
-`--pfx`
-"""""""
-
-When used via the CLI, a path to an SSL .pfx file. If used in options, it should be the bytestream of the .pfx file.
-It is used only with hot module replacement.
-
-`--pfxPassphrase`
-"""""""""""""""""
-
-The passphrase to a SSL PFX file. It is used only with hot module replacement.
-
-`--force-warmup|-f`
-"""""""""""""""""""
-
-Warm up the asset-config.json cache.
-
-`--watch|-w`
-""""""""""""
-
-Turn on watch mode. This means that after the initial build, webpack continues to watch the changes in any of the resolved files.
-
-`--npm-install|-i`
-""""""""""""""""""
-
-Reinstall npm dependencies to be used by webpack. It is required when `node_modules` folder is corrupted.
-
 Configuration Reference
 -----------------------
 
@@ -416,6 +304,12 @@ ERROR in Entry module not found: Error: Can't resolve './src'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Make sure the ``webpack.config.js`` file exists in the project root, and the command has permissions to read it.
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Commands <commands>
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

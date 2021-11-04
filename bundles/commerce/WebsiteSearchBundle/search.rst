@@ -8,7 +8,7 @@ Search engine is an entry point in Oro application that is used to perform searc
 
 This method accepts a low level query object (`Oro\\Bundle\\SearchBundle\\Query\Query`), sends a request to the search engine and returns result object (`Oro\\Bundle\\SearchBundle\\Query\Result`). The `$context` variable may be used to pass additional parameters specific for the search engines. A default website search engine is accessible via the `oro_website_search.engine` service.
 
-.. image:: /img/backend/bundles/WebsiteSearchBundle/website_search_engine.png
+.. image:: /img/bundles/WebsiteSearchBundle/website_search_engine.png
    :alt: Search Engine
 
 Every engine may have its own requests to modify the way request is sent. However, every engine should support the `Oro\\Bundle\\WebsiteSearchBundle\\Event\\BeforeSearchEvent` out of the box. This event is triggered before the engine queries the search index storage, so the developer can check request parameters and modify the query according to the business logics.

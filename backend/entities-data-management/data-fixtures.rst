@@ -1,3 +1,5 @@
+.. _entities-data-management-fixtures:
+
 Fixtures and Demo Data
 ======================
 
@@ -51,24 +53,30 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
     php bin/console oro:migration:data:load
 
-.. tip::
+The fixtures type ("main", or "demo") can be specified with the ``--fixtures-type=<type>`` option. For example, you can create data fixtures that should only be loaded when you want to to present your application with some demo data. To do so place your data fixture classes in the ``Migrations/Data/Demo/ORM`` subdirectory of your bundle and use the ``--fixtures-type`` option of the ``oro:migration:data:load`` command to indicate that the demo data should be loaded:
 
-    You can use the ``--dry-run`` option to first check which fixtures will be loaded:
+.. code-block:: none
 
-    .. code-block:: none
+   php bin/console oro:migration:data:load --fixtures-type=demo
 
-        php bin/console oro:migration:data:load
+The ``--dry-run`` option can be used to print the list of fixtures without applying them:
 
-.. tip::
+.. code-block:: none
 
-    You can create data fixtures that should only be loaded when you want to to present your
-    application with some demo data. To do so place your data fixture classes in the
-    ``Migrations/Data/Demo/ORM`` subdirectory of your bundle and use the ``--fixtures-type`` option
-    of the ``oro:migration:data:load`` command to indicate that the demo data should be loaded:
+    php bin/console oro:migration:data:load --dry-run
 
-    .. code-block:: none
+The ``--bundles`` option can be used to load the fixtures only from the specified bundles:
 
-        php bin/console oro:migration:data:load --fixtures-type=demo
+.. code-block:: none
+
+    php bin/console oro:migration:data:load --bundles=<BundleOne> --bundles=<BundleTwo> --bundles=<BundleThree>
+
+The ``--exclude`` option will skip loading fixtures from the specified bundles:
+
+.. code-block:: none
+
+    php bin/console oro:migration:data:load --exclude=<BundleOne> --exclude=<BundleTwo> --exclude=<BundleThree>
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

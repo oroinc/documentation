@@ -258,7 +258,7 @@ This factory generates an individual configuration set for each instance of the 
 
 Create the <bundle_root>/Factory/FastShippingMethodFromChannelFactory.php class with the following content:
 
-.. oro_integrity_check:: abeb7c686a820ca95bbf0a679e7696840e9adb7b
+.. oro_integrity_check:: bd8f0d53c1423ab9927f635ed24ef3ff7c9b8f56
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Factory/FastShippingMethodFromChannelFactory.php
        :language: php
@@ -322,7 +322,7 @@ To create a shipping method type, add the <bundle_root>/Method/FastShippingMetho
 
 * ``calculatePrice``-- Contains the main logic and returns the shipping price for the given ``$context``.
 
-.. note:: If you implement a more complicated shipping method, see Oro\Bundle\ShippingBundle\Context\ShippingContextInterface for attributes that can affect a shipping price (e.g., shipping address information or line items).
+.. note:: If you implement a more complicated shipping method, see Oro\\Bundle\\ShippingBundle\\Context\\ShippingContextInterface for attributes that can affect a shipping price (e.g., shipping address information or line items).
 
 Define Translation for the Shipping Method Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

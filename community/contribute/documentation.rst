@@ -443,15 +443,24 @@ At Oro, we avoid formatting external links in typical RST manner (e.g., `GitHub 
 
       |GDPR portal|
 
-* Add the following link to the bottom of your documentation page:
+* Depending on which documentation section you are contributing to, add the following links to the bottom of your documentation page:
 
   .. code-block:: none
 
-
-      .. include:: /include/include-links.rst
+      .. include:: /include/include-links-cloud.rst
          :start-after: begin
 
-* In the include-links.rst file, embed the link into html with the target="_blank" parameter into the required documentation component section (Cloud Documentation, Dev Documentation, User Documentation):
+     or
+
+      .. include:: /include/include-links-dev.rst
+         :start-after: begin
+
+     or
+
+     .. include:: /include/include-links-user.rst
+         :start-after: begin
+
+* In the include-links-[section].rst file, embed the link into html with the target="_blank" parameter into the required documentation component section (Cloud Documentation, Dev Documentation, User Documentation):
 
   .. code-block:: none
 
@@ -466,7 +475,7 @@ Submit Documentation Updates
 
 Once you are ready, create a pull request in the |Oro documentation| repository with changes from your forked repository. See :ref:`Code Version Control <code-version-control>` for more information on using repository.
 
-After documentation review, your changes will be merged to the Oro documentation and will be published on the Oro website.
+After documentation review, your changes will be merged to the Oro documentation and will be published on the documentation website.
 
 
 **See Also**

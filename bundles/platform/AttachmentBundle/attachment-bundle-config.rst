@@ -266,7 +266,6 @@ You can use 3 parameters for optimization images:
 
 .. note:: This feature covers backward compatibility, so all existing images will not be deleted or replaced (even after migration), in which case only new images will be processed. To optimize old images, you need to delete them manually.
 
-
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 

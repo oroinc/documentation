@@ -10,7 +10,7 @@ The list of allowed origins is not directly configurable via the UI. By default,
 How to Customize
 ----------------
 
-To add custom origins, create a provider that implements``Oro\Bundle\SyncBundle\Authentication\Origin\OriginProviderInterface`` and declare it as a service with tag `oro_sync.origin_provider`, e.g.
+To add custom origins, create a provider that implements ``Oro\Bundle\SyncBundle\Authentication\Origin\OriginProviderInterface`` and declare it as a service with tag `oro_sync.origin_provider`, e.g.
 
 .. code-block:: yaml
 

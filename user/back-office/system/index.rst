@@ -79,4 +79,5 @@ Oro applications enable you to configure system settings on four configuration l
    Consent Management <consent-management/index>
    Websites <websites/index>
    Localization <localization/index>
+   Alerts <alerts/index>
 

@@ -120,25 +120,22 @@ isLowInventoryCollection
       * @param array $data products collection with optional ProductUnit's
       * [
       *     [
-      *         'product' => Product Entity,
-      *         'product_unit' => ProductUnit entity (optional)
+      *         'product' => Product entity,
+      *         'product_unit' => ProductUnit entity (optional),
+      *         'highlight_low_inventory' => bool (optional),
+      *         'low_inventory_threshold' => int (optional)
       *     ],
       *     ...
       * ]
       *
-      * @return array
-      * [
-      *      'product id' => bool - has low inventory marker,
-      *       ...
-      *      'product id' => bool
-      * ]
+      * @return [product id => is low inventory, ...]
       */
      public function isLowInventoryCollection(array $data)
 
 
 It works in the same way as the `isLowInventoryProduct`_ method, but has differences in taken up arguments and returned values.
-This method takes an argument as an array of the |Product entity| and |ProductUnit entity| entities and returns an array of product ids with  a boolean result.
-``True``  is returned if the quantity of the product is less than the ``lowInventoryThreshold`` option.  ``False`` is returned if the quantity of the product is greater than the ``lowInventoryThreshold`` option, or if ``highlightLowInventory`` is not checked.
+This method takes an argument as an array of the |Product entity| and |ProductUnit entity| entities and returns an array of product ids with a boolean result.
+``true`` is returned if the quantity of the product is less than the ``lowInventoryThreshold`` option. ``false`` is returned if the quantity of the product is greater than the ``lowInventoryThreshold`` option, or if ``highlightLowInventory`` is not checked.
 
 Twig
 ----

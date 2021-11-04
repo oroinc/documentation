@@ -209,7 +209,7 @@ Button Options configuration has the following options:
     
 * **class** - *string* - CSS class applied to the operation button.
     
-* **group** - *string* - Name of operation button menu. The operation button is a part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
+* **group** - *string* - Name of operation button menu. The operation button is part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
     
 * **template** - *string* - This option provides the possibility to override the button template. Should be extended from `@OroAction/Operation/button.html.twig`.
     
@@ -343,7 +343,7 @@ Datagrid options enable to define options of datagrid mass operation. They provi
 
 Single datagrid options can be described with the following configuration:
 
-* **mass_action_provider** - *string* - Service name. This service must be marked with the `oro_action.datagrid.mass_action_provider` tag. Also it must implement Oro\Bundle\ActionBundle\Datagrid\Provider\MassActionProviderInterface. The "getActions" method of this provider must return array of mass action configurations.
+* **mass_action_provider** - *string* - Service name. This service must be marked with the `oro_action.datagrid.mass_action_provider` tag. Also it must implement Oro\\Bundle\\ActionBundle\\Datagrid\\Provider\\MassActionProviderInterface. The "getActions" method of this provider must return array of mass action configurations.
     
 * **mass_action** - *array* - Mass action configuration. See the datagrid documentation.
     
