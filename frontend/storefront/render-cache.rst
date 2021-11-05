@@ -1,27 +1,11 @@
-OroCommerce Render Cache Extension
-==================================
+OroCommerce Render Caching
+==========================
 
 One of the ways to significantly improve website performance is to enable caching.
-OroCommerce Render Cache Extension provides the server-side cache for OroCommerce storefront
-layouts. With a few layout-block options, you can enable cache for specific layout blocks
+With a few layout-block options, you can enable cache for specific layout blocks
 permanently or for a particular time and invalidate it with the cache tags from a regular
-Symfony service when needed. The extension also supports complex caching strategies using
+Symfony service when needed. Provided mechanism also supports complex caching strategies using
 the custom cache metadata provider PHP class.
-
-Installation
-------------
-
-1. Install the extension using the composer:
-
-   .. code-block:: none
-
-      composer require oro/layout-cache
-
-2. Clear the application cache:
-
-   .. code-block:: none
-
-      php bin/console cache:clear --env=prod
 
 Cache Layout Blocks
 -------------------
