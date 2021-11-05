@@ -1,6 +1,6 @@
 version: '3.5'
 services:
   doc:
-    image: oroinc/documentation:orodoc-2.0
+    image: oroinc/documentation:sphinx-1.8.5
     volumes:
-       - ./:/documentation
+        - ./:/documentation

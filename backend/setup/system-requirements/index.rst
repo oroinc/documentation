@@ -89,8 +89,8 @@ Oro applications are compatible with most web servers with PHP support, but the 
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| v.12 used for JS assets minification  |
-|                   |   and SCSS assets build.                          |
+| *Assets*          | * |Node.js| >=12.0,<15.0 used for JS assets       |
+|                   |   minification and SCSS assets build.             |
 +-------------------+---------------------------------------------------+
 
 .. note::
@@ -107,7 +107,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *Database*       | * |PostgreSQL| / |EnterpriseDB| 9.6                 |
 +------------------+-----------------------------------------------------+
-| *Search Index*   | * |Elasticsearch| 7.*                               |
+| *Search Index*   | * |Elasticsearch| >=7.7, <8.0                       |
 +------------------+-----------------------------------------------------+
 | *Job Queue*      | * |RabbitMQ| 3.7.21 and above with Erlang/OTP       |
 |                  |   version 21.3 and higher.                          |

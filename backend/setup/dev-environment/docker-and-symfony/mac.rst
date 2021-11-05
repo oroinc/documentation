@@ -21,11 +21,11 @@ Environment Setup
       brew cask install docker
       open /Applications/Docker.app
 
-3. Install PHP 7.4, Composer, Node.js 12 and Docker Compose:
+3. Install PHP 7.4, Composer, Node.js 14 and Docker Compose:
 
    .. code-block:: bash
 
-      brew install php@7.4 composer node@12 docker-compose
+      brew install php@7.4 composer node@14 docker-compose
       composer self-update --1
       echo 'export PATH="/usr/local/opt/php@7.4/bin:$PATH" \nexport PATH="/usr/local/opt/php@7.4/sbin:$PATH" \nexport PATH="/usr/local/opt/node@12/bin:$PATH"' >> ~/.bash_profile
 

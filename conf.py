@@ -43,7 +43,7 @@ extensions = [
     'ext.sitemap',
     # Disable generating of sitemapindex.xml
 #    'ext.sitemap-index',
-    'ext.redirects'
+    'ext.redirects',
 ]
 
 spelling_lang='en_US'

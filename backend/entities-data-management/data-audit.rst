@@ -15,8 +15,8 @@ Entity Configuration
 DataAudit can only be enabled for Configurable entities. To add a property
 of an entity to the changelog, you simply have to enable the audit
 for the entity itself and specify some fields you want to be logged. To achieve this,
-you should use the :class:`@Config <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\Config>`
-and :class:`@ConfigField <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`
+you should use the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config``
+and ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField``
 annotations for the entity.
 
 .. caution::

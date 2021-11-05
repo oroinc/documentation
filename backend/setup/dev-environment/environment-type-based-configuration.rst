@@ -1,6 +1,6 @@
 .. _environment-type-based-configuration:
 
-Environment Type Based Application Configuration
+Environment Type-Based Application Configuration
 ================================================
 
 Use different default configurations based on the environment where the application is deployed:

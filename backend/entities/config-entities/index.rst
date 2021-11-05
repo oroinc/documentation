@@ -12,53 +12,6 @@ entities as well as the fields of your entities. For example, you can now config
 labels used when showing an entity in the UI or you can set up access levels to control how
 entities can be viewed and modified.
 
-Add Custom Config Validation
-----------------------------
-
-To add config validation to your bundle:
-
-1. Create a configuration file that implements ``ConfigurationEntityInterface`` or ``ConfigurationFieldInterface``. For entity config, use ``ConfigurationEntityInterface`` and the class that ends with EntityConfiguration. For field config, use ``ConfigurationFieldInterface`` and the class that ends with FieldConfiguration.
-
-Example:
-
-.. code-block:: php
-
-    <?php
-
-    namespace Oro\Bundle\SecurityProBundle\Config\Validation;
-
-    use Oro\Bundle\EntityConfigBundle\Config\Validation\ConfigurationEntityInterface;
-    use Symfony\Component\Config\Definition\Builder\NodeBuilder;
-
-    /**
-     * Configuration for security section
-     */
-    class SecurityEntityConfiguration implements ConfigurationEntityInterface
-    {
-        public function getSectionName(): string
-        {
-            return 'security';
-        }
-
-        public function setConfigurationForSection(NodeBuilder &$nodeBuilder): void
-        {
-            $nodeBuilder
-                ->variableNode('share_scopes')->end()
-            ;
-        }
-    }
-
-2. Add this class to ``services.yml`` with tag ``oro_entity_config.validation.entity_config`` .
-
-Example:
-
-.. code-block:: yaml
-
-    Oro\Bundle\SecurityProBundle\Config\Validation\SecurityEntityConfiguration:
-        tags:
-            - oro_entity_config.validation.entity_config
-
-
 Configure Entities and Their Fields
 -----------------------------------
 
@@ -79,7 +32,7 @@ The ``@Config`` Annotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To make the ``Hotel`` entity from the first part of the chapter configurable, simply import the
-:class:`@Config <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\Config>` annotation and
+``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config`` annotation and
 use it in the class docblock:
 
 .. code-block:: php
@@ -133,7 +86,7 @@ The ``@ConfigField`` Annotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Similar to the ``@Config`` annotation for entities, you can use the
-:class:`@ConfigField <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`
+``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField``
 annotation to make properties of an entity configurable:
 
 .. code-block:: php
@@ -254,7 +207,7 @@ The key used in the first level of the entity configuration is a custom identifi
 a kind of namespace for the additional options. For each scope, a different service is created (its
 name follows the schema ``oro_entity_config.provider.<scope>``). For example, the service name for
 the options configured in the example above is ``oro_entity_config.provider.acme_demo``. It is an
-instance of the :class:`Oro\\Bundle\\EntityConfigBundle\\Provider\\ConfigProvider` class.
+instance of the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider`` class.
 
 Options can be configured on two levels: on the entity level or per field. The example above adds a new ``comment`` property that allows the users to
 add custom comments per configurable entity. It also adds the ``auditable`` option on the field
@@ -379,36 +332,36 @@ was defined in the ``acme_demo`` scope):
     $acmeDemoProvider = $container->get('oro_entity_config.provider.acme_demo');
 
 Then you need to fetch the configuration in this scope for a particular entity or entity field
-using the :method:`Oro\\Bundle\\EntityConfigBundle\\Provider\\ConfigProvider::getConfig` method. The
+using the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider::getConfig`` method. The
 configuration for such a configurable object (an entity or a field) is represented by an instance
-of the :class:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface`:
+of the ``Oro\Bundle\EntityConfigBundle\Config\ConfigInterface``:
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::get`
+``get()``
     Returns the actually configured value for an option.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::set`
+``set()``
     Changes the value of an option to a new value.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::remove`
+``remove()``
     Removes the particular option.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::has`
+``has()``
     Checks whether or not an option with the given name exists.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::is`
+``is()``
     Checks if the value of an option equals the given value.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::in`
+``in()``
     Checks if the value of an option is one of the given values.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::all`
+``all()``
     Returns all parameters for the configurable object.
 
-:method:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface::setValues`
+``setValues()``
     Replaces values for the given options with some given values.
 
 Please note that it is not enough to modify configuration values in the provider. You also need to
-persist your changes by calling the :method:`Oro\\Bundle\\EntityConfigBundle\\Provider\\ConfigProvider::flush`
+persist your changes by calling the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider::flush``
 method afterwards:
 
 .. code-block:: php
