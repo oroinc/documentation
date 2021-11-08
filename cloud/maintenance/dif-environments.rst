@@ -22,7 +22,7 @@ One of the solutions is to create different Git branches for different environme
       1.2.3-prod   # Branch of release 1.2.3 for "prod" environment
       1.2.3-stage  # Branch of release 1.2.3 for "stage" environment
 
-2. When preparing a new release, run a command with the `--tag` parameter depending on the environment.
+2. When preparing a new release, run a command with the `--reference` parameter depending on the environment.
 
    For example:
 
@@ -30,10 +30,10 @@ One of the solutions is to create different Git branches for different environme
 
 
       # Run upgrade for "prod" environment
-      orocloud-cli upgrade --tag=1.2.3-prod
+      orocloud-cli upgrade --reference=1.2.3-prod
 
       # Run upgrade for "stage" environment
-      orocloud-cli upgrade --tag=1.2.3-stage
+      orocloud-cli upgrade --reference=1.2.3-stage
 
    This approach has some extra costs to maintain the additional branches in your repository. It is not always convenient if you prefer to use different tags for every new release.
 
