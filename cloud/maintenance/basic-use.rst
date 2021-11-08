@@ -20,8 +20,8 @@ The `validation` command checks your configuration for syntax errors or wrong co
 .. code-block:: none
 
     orocloud-cli config:validate
-    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.prod.yml
-    orocloud-cli config:validate /mnt/ocom/app/orocloud.yml /mnt/ocom/app/www/orocloud.prod.yml
+    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.prod.yaml
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.prod.yaml
 
 Valid changes are applied within 30 minutes or automatically during deployments.
 
@@ -213,11 +213,11 @@ Use the sanitized backups:
 
 * to share the sanitized data with the OroCloud and OroSupport team,
 * for local debug and development,
-* to sanitize and transfer database and media from the production to the staging environment, etc.
+* to sanitize and transfer database from the production to the staging environment, etc.
 
 The following commands are available:
 
-* **backup:create:sanitized** -- creates a sanitized backup of database data and media (for the `remote` backup type). Encryption is not applied (for the `local` backup type)
+* **backup:create:sanitized** -- creates a sanitized backup of database data. Encryption is not applied
 * **backup:list:sanitized** -- lists available sanitized backups
 * **backup:restore:sanitized** -- restores the application from the sanitized backup
 
@@ -235,43 +235,20 @@ To display the command description and help, run:
 
 
     Description:
-      Creates a sanitized backup of database data and media (for the `remote` backup type). Encryption is not applied (for the `local` backup type)
+      Creates a sanitized backup of database data. Encryption is not applied
 
     Usage:
       backup:create:sanitized [options]
 
     Options:
           --log=LOG                    Log to file
-      -t, --backup-type[=BACKUP-TYPE]  Determines backup type, local (DEFAULT) (not encrypted, for debug|development purposes) OR remote (to be restored on another environment). [default: "local"]
-      -e, --environment[=ENVIRONMENT]  Name of the destination environment where data dump will be copied (for 'remote' backup-type).
-          --exclude-media              Exclude media from the dump (for 'remote' backup-type).
-          --exclude-media-cache        Exclude media cache (resized images) from the dump (for 'remote' backup-type).
       -h, --help                       Display a help message
       -q, --quiet                      Do not output any message
       -V, --version                    Display the application version
       -n, --no-interaction             Do not ask any interactive question
       -v|vv|vvv, --verbose             Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
 
-* **option "--backup-type"** - There are two backup types: `local` and `remote`. The `local` sanitized backup can be downloaded for development, testing, or debug purposes on the local machine and cannot contain media data. The `remote` backup type means it can be transferred to another OroCloud environment and may contain media data e.g. create sanitized backup on production environment and transfer it to staging environment for restoration.
-
-* **option "--environment"** - Allows to specify the destination environment for backup, and is applicable only for the `remote` backup types. For the `local` backup type, this option is ignored. If no environment is linked,  the appropriate message appears, for example:
-
-.. code-block:: none
-
-
-    Aborting!
-    Cannot proceed, as there is no linked environments yet.
-    Please, contact the support team.
-
-.. note:: In such case, you need to contact the support team to link the environment. Specify the environment name for `source` and `destination`. Keep in mind that the direction is **important**, you can create a remote sanitized backup only on the `source` environment and restore it only on the `destination` environment. Also, all the `remote` backups that you create are located under **only** on the `destination` environment.
-
-If only one environment is linked, it will be used by default, so the option can be omitted; otherwise, the destination environment will be requested interactively.
-
-* **option "--exclude-media"** - is applicable only for the `remote` backup type and is used in case media data is not needed.
-
-* **option "--exclude-media-cache"** - is applicable only for the `remote` backup type and is used in case media cache data is not needed (e.g., resized product images).
-
-To create the `local` backup, use the command:
+To create a backup, use the command:
 
 .. code-block:: none
 
@@ -295,24 +272,6 @@ Once you have created the sanitized backup, you can determine its location with 
 
 
     scp oro_cloud_username@oro_cloud_hostname:/path/to/the/backup/file target_username@target_hostname:/path/to/the/target/backup/file
-
-To create the `remote` backup, use the command:
-
-.. code-block:: none
-
-
-    orocloud-cli backup:create:sanitized --backup-type remote
-
-.. code-block:: none
-
-
-    ➤ Executing task backup:create:sanitized
-    Please select an environment to copy the data dump:
-      [1] my-environment-dev
-      [2] my-environment-uat
-      [3] my-environment-staging
-     > 3
-    ✔ Ok [43s 297ms]
 
 See :ref:`Sanitizing Configuration <orocloud-maintenance-advanced-use-sanitization-conf>` for details on how to configure the sanitizing scope and strategy.
 
@@ -342,32 +301,7 @@ The command output is similar to the following:
 
 * **column "DATE"** - the date and time when a sanitized backup is created
 
-* **column "PATH"** - is applicable only for the `local` backup type. A full path where sanitized database dump is stored, so it can be used to download such backup.
-
-If the environment contains the `remote` backup types, the output is similar to the following:
-
-.. code-block:: none
-
-
-    ➤ Executing task backup:list:sanitized
-    +-----------------+-----------------------------------------------------+---------------------+-------+
-    | DATE            | PATH                                                | SOURCE              | MEDIA |
-    +-----------------+-----------------------------------------------------+---------------------+-------+
-    | 2020-01-16-1824 | -                                                   | my-environment-dev  | Yes   |
-    | 2020-01-11-2121 | /mnt/ocom/backup/20200111212117-sanitized-db.sql.gz | local               | No    |
-    | 2020-01-10-1747 | /mnt/ocom/backup/20200110174752-sanitized-db.sql.gz | local               | No    |
-    | 2019-12-12-1714 | -                                                   | my-environment-uat  | No    |
-    | 2019-12-11-1334 | /mnt/ocom/backup/20191211133414-sanitized-db.sql.gz | local               | No    |
-    +-----------------+-----------------------------------------------------+---------------------+-------+
-    [my-environment-staging] Total 5 item(s), 1 page(s). Current page: 1, items per page: 25.
-
-* **column "DATE"** - the date and time when the sanitized backup is created
-
-* **column "PATH"** - for the `remote` backup type, the column is empty
-
-* **column "SOURCE"** - the source of backup. For the `local` backup types, the value is always `local`. For the `remote` backup , the column contains the name of the environment that was used to create the backup
-
-* **column "MEDIA"** - for the `local` backups, the value is always `No`. For the `remote` backups, it notifies whether the backup contains media data or not
+* **column "PATH"** - a full path where sanitized database dump is stored, so it can be used to download such backup.
 
 Restore Sanitized Backup
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -462,6 +396,9 @@ The command output is similar to the following:
 Application Commands
 --------------------
 
+Custom Commands
+~~~~~~~~~~~~~~~
+
 Run application commands via `app:console`, for example:
 
 .. code-block:: none
@@ -474,14 +411,14 @@ To pass a command that contains arguments or options, wrap the command in quotes
 .. code-block:: none
 
 
-    orocloud-cli app:console "oro:message-queue:consume --memory-limit=512 --time-limit='+30 seconds'"
+    orocloud-cli app:console "oro:user:list --all"
 
 If a command contains quotes and is wrapped in the same quotes type, the inner quotes must be escaped with  ``\``.
 
 .. code-block:: none
 
 
-    orocloud-cli app:console "oro:message-queue:consume --memory-limit=512 --time-limit=\"+30 seconds\""
+    orocloud-cli app:console "oro:user:list --roles=\"Sales Manager\""
 
 
 By default, the `app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g., to monitor command execution in real-time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
@@ -489,11 +426,11 @@ By default, the `app:console` command runs in the `silent` mode, which means tha
 .. code-block:: none
 
 
-    orocloud-cli app:console "oro:message-queue:consume --memory-limit=512" -vvv
+    orocloud-cli app:console -vvv "oro:user:list"
 
 
-Application Schema Update
---------------------------
+Schema Update
+~~~~~~~~~~~~~
 
 Sometimes you may require to perform schema update operations. To do this, use the `app:schema:update` command:
 
@@ -504,7 +441,7 @@ Sometimes you may require to perform schema update operations. To do this, use t
 * `--force` is optional, it allows to skip execution confirmation.
 
 Application Cache
------------------
+~~~~~~~~~~~~~~~~~
 
 Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache with downtime. This command does the following:
 
@@ -526,8 +463,34 @@ Sometimes you may require to clear the application cache (for example, after app
 
 .. _orocloud-maintenance-use-media-upload:
 
+Cached Translated Values
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+:ref:`Execute Update Cached Translated Values operation <update-translation-cache>`
+
+.. code-block:: none
+
+
+    orocloud-cli app:translation:update
+
+API Cache
+~~~~~~~~~
+
+:ref:`Warmup API and API doc caches <oroapidoccacheclear-command>`
+
+
+.. code-block:: none
+
+
+    orocloud-cli app:cache:api
+
+Media Commands
+--------------
+
+.. note:: Commands are available with configured :ref:`OroGridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>` only.
+
 Media Upload
-------------
+~~~~~~~~~~~~
 
 .. note:: The files in the source directory always overwrite the same files in the destination directory.
 
@@ -536,7 +499,7 @@ Media Upload
 Sometimes, you may require to upload media files that relate to custom CMS page(s) or products
 to a specific ``public`` directory.
 This can be done with the ``media:upload`` command that allows to upload media files, e.g.,
-``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml``
+``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml | mp4``
 to the ``uploads`` gridFS database.
 
 .. note:: By default, the command runs in the ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with the ``--force`` flag.
@@ -739,7 +702,7 @@ To reroute the messages from RabbitMQ queue to exchange, use the `rabbitmq:rerou
 
 * `queue` argument is required, RabbitMQ queue name, e.g., `oro.unprocessed`.
 * `exchange` argument is required, RabbitMQ exchange name, e.g., `oro.default`.
-* `filter` option is optional, filter messages by the topic name (oro.message_queue.client.topic_name). Example: oro.cron.*. Default - all messages.
+* `contains` option is optional, filter messages by the topic name ("oro.message_queue.client.topic_name" key), examples: "oro.search", "reindex", "oro.search.reindex". Default - all messages.
 
 .. note:: The ``queue`` argument value can be retrieved with the `rabbitmq:queue:list` command.
 

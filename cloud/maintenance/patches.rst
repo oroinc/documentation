@@ -36,20 +36,20 @@ Use the following commands to work with patches:
 .. code-block:: none
 
    ➤ Executing task patch:list
-   +---------------------+----------------------------------+------------+
-   | DATE                | HASH (md5)                       | PATCH      |
-   +---------------------+----------------------------------+------------+
-   | 2018-10-16 17:18:29 | b3d1e7ea5c476f0dba0b7588a8a93b70 | test.patch |
-   +---------------------+----------------------------------+------------+
+    +---------------------+-----------------------------------------------------------------+
+    | DATE                | FILE                                                            |
+    +---------------------+-----------------------------------------------------------------+
+    | 2021-11-03 15:14:54 | /mnt/ocom/app/persistent_shared/patch/20211016150803/test.patch |
+    +---------------------+-----------------------------------------------------------------+
 
-.. note:: Please note that the value in the ``HASH (md5)`` column is used for the `patch:revert` and `patch:view` commands as an argument.
+.. note:: Please note that the value in the ``FILE`` column is used for the `patch:revert` and `patch:view` commands as an argument.
 
-* **patch:view** - shows the content of the specified patch, requires the patch HASH as an argument.
+* **patch:view** - shows the content of the specified patch, requires the full path to the patch file as an argument.
 
 .. code-block:: none
 
 
-   [ ~]$ orocloud-cli patch:view b3d1e7ea5c476f0dba0b7588a8a93b70
+   [ ~]$ orocloud-cli patch:view /mnt/ocom/app/persistent_shared/patch/20211016150803/test.patch
    ➤ Executing task patch:view
    [localhost]
    Index: web/app.php
@@ -72,31 +72,18 @@ Use the following commands to work with patches:
 
 * **patch:apply**  - applies a patch. Requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically applied against your codebase.
 
-* **patch:revert** - reverts a patch, requires the patch HASH and|or the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically reverted against your codebase.
+* **patch:revert** - reverts a patch, requires the full path to the patch file as an argument (/mnt/maint-data is suggested), by default the command runs in DRY-RUN mode, which means that changes will not be applied, only validated. Passing the `--force` option causes the specified patch to be physically reverted against your codebase.
 
 Usage examples:
 
-* Revert by a patch hash, dry-run mode (only shows what will be done):
+* Revert by a patch, dry-run mode (only shows what will be done):
 
   .. code-block:: bash
 
-     orocloud-cli patch:revert b3d1e7ea5c476f0dba0b7588a8a93b70
+     orocloud-cli patch:revert /mnt/ocom/app/persistent_shared/patch/20211016150803/test.patch
 
-* Revert by a patch hash, force mode (patch will be physically reverted against your codebase):
-
-  .. code-block:: bash
-
-     orocloud-cli patch:revert b3d1e7ea5c476f0dba0b7588a8a93b70 --force
-
-* Revert by a patch file, the case when patch file content is not available (the full path specified with the `-f` option)
+* Revert by a patch, force mode (patch will be physically reverted against your codebase):
 
   .. code-block:: bash
 
-     orocloud-cli patch:revert b3d1e7ea5c476f0dba0b7588a8a93b70 -f ~/test.patch
-
-* Revert by a patch, the case when patch hash is not shown in the `patch:list` (was applied with an old version of the agent or via `deployment.after_composer_install_commands`)
-
-  .. code-block:: bash
-
-     orocloud-cli patch:revert - -f ~/test.patch
-
+     orocloud-cli patch:revert /mnt/ocom/app/persistent_shared/patch/20211016150803/test.patch --force

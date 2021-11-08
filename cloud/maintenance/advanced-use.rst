@@ -145,18 +145,18 @@ Custom maintenance page, error pages (403, 451, 501, 502), web backend prefix, a
     ---
     orocloud_options:
       application:
-        maintenance_page: '/mnt/ocom/app/www/maintenance.html'
+        maintenance_page: 'public/maintenance.html'
         error_pages:
-          403: '/mnt/ocom/app/www/403.html'
-          451: '/mnt/ocom/app/www/451.html'
-          501: '/mnt/ocom/app/www/501.html'
-          502: '/mnt/ocom/app/www/502.html'
+          403: 'public/403.html'
+          451: 'public/403.html'
+          501: 'public/403.html'
+          502: 'public/403.html'
         web_backend_prefix: '/my_admin_console_prefix'
         consumers_debug_mode: true
 
-.. note:: ``/mnt/ocom/app/www`` is the application root path for the `OroCommerce` application type. For `OroCRM`, use the ``/mnt/ocrm/app/www`` path. The `maintenance.html` file should be available in application repository in the specified path. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 30 minutes.
+.. note:: ``maintenance_page`` and ``error_pages`` are relative paths to files in application repository. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 30 minutes.
 
-.. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to Service Desk before making any change. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``cache:rebuild`` to change the value in the application’s parameters.yml file.
+.. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to Service Desk before making any change. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``upgrade:source`` to apply changes.
 
 Webserver Configuration
 -----------------------
@@ -711,7 +711,7 @@ This means that you can push data from the current environment to the linked env
     * **option "--indices"** - Comma-separated Elastic indices list to be included in the dump. If not set - all indices will be included.
 
 
-.. note:: GridFS media content and RabbitMQ messages sync is not supported. If media component is selected, sync may take a long time.
+.. note:: RabbitMQ messages sync is not supported. If media component is selected, sync may take a long time.
 
 When data push is done, you may start with import in the target environment.
 
