@@ -107,7 +107,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
 +------------------+-----------------------------------------------------+
-| *Database*       | * |PostgreSQL| / |EnterpriseDB| 12.5 or 13          |
+| *Database*       | * |PostgreSQL| / |EnterpriseDB| 12.7                |
 +------------------+-----------------------------------------------------+
 | *Search Index*   | * |Elasticsearch| >=7.7, <8.0                       |
 +------------------+-----------------------------------------------------+
