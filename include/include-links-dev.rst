@@ -257,7 +257,7 @@ Links (Dev)
 
 .. |PHP CS Fixer settings| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/build/.php_cs" target="_blank">PHP CS Fixer settings</a>
+   <a href="https://github.com/oroinc/platform/blob/master/build/.php_cs" target="_blank">PHP CS Fixer settings</a>
 
 .. |Github guide on forking a repo| raw:: html
 
@@ -5625,7 +5625,7 @@ Links (Dev)
 
 .. |orouser/js/tools/acl-users-search-api-accessor| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/master/package/platform/src/Oro/Bundle/UserBundle/Resources/doc/client-side/acl-users-search-api-accessor.md" target="_blank">orouser/js/tools/acl-users-search-api-accessor</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UserBundle/Resources/doc/client-side/acl-users-search-api-accessor.md" target="_blank">orouser/js/tools/acl-users-search-api-accessor</a>
 
 .. |datepicker documentation| raw:: html
 

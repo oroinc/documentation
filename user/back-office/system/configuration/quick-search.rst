@@ -19,6 +19,10 @@ You can search for configuration options in the back-office on any level:
 
 4. Per user --- Navigate to **System > User Management > Users** in the main menu. Hover over the |IcMore| **More Options** menu to the right of the necessary user and click |IcConfig| to reach the configuration page.
 
+5. Per customer group — Navigate to **Customers > Customer Groups** in the main menu. Hover over the **More Options** menu to the right of the necessary group and click |IcConfig| to reach the configuration page.
+
+6. Per customer — Navigate to **Customers > Customers** in the main menu. Hover over the **More Options** menu to the right of the necessary customer and click |IcConfig| to reach the configuration page.
+
 As an example, let us find the **Localization** menu via the **Quick Search** field. The menu resides under **System Configuration > General Setup** in the left panel.
 
 To find the menu, proceed with the following steps:
