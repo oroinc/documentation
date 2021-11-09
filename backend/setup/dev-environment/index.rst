@@ -50,6 +50,7 @@ Prepare Development Tools
 
        * **Cyclomatic complexity** DOES NOT exceed the limit of **15**.
        * The limit of the **NPath complexity** is set to **200** (the default PHPMD limit).
+     * |Enable PHP CS Fixer| (use |PHP CS Fixer settings| )
 
    * Configure xDebug
 

@@ -245,11 +245,19 @@ Links (Dev)
 
 .. |Enable PHP Code Sniffer| raw:: html
 
-   <a href="https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm" target="_blank">Enable PHP Code Sniffer</a>
+   <a href="https://www.jetbrains.com/help/phpstorm/using-php-code-sniffer.html" target="_blank">Enable PHP Code Sniffer</a>
 
 .. |Enable PHP Mess Detector| raw:: html
 
-   <a href="https://confluence.jetbrains.com/display/PhpStorm/PHP+Mess+Detector+in+PhpStorm" target="_blank">Enable PHP Mess Detector</a>
+   <a href="https://www.jetbrains.com/help/phpstorm/using-php-mess-detector.html" target="_blank">Enable PHP Mess Detector</a>
+
+.. |Enable PHP CS Fixer| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html" target="_blank">Enable PHP CS Fixer</a>
+
+.. |PHP CS Fixer settings| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/master/package/platform/build/.php_cs" target="_blank">PHP CS Fixer settings</a>
 
 .. |Github guide on forking a repo| raw:: html
 
