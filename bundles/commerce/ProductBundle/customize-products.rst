@@ -14,4 +14,5 @@ Please, have a look at the :ref:`Quick Start guide <dev-doc-frontend-layouts-qui
 
    customize-pdp
    customize-plp
+   customize-product-lists
    customize-products-sku-validation

@@ -5,24 +5,27 @@ Related Items
 
 Usually, when you sell a product you also offer your customers some related products that are a tempting or useful add-on to the product. For example, if you are selling phones, it is good to show fitting accessories next to it. This is where the Related Items functionality comes handy.
 
+.. _bundle-docs-commerce-product-bundle-related-classes:
+
 Classes
 -------
+
+.. _bundle-docs-commerce-product-bundle-related-config-provider:
 
 Config provider
 ^^^^^^^^^^^^^^^
 
-Class `Oro\\Bundle\\ProductBundle\\RelatedItem\\AbstractRelatedItemConfigProvider` provides you with the configuration for Related Items.
+The interface ``Oro\Bundle\ProductBundle\RelatedItem\RelatedItemConfigProviderInterface`` represents the configuration for Related Items.
 
 Example:
 
-You can find example in `Oro\\Bundle\\ProductBundle\\RelatedItem\\RelatedProductRelatedProductsConfigProvider`.
+You can find example in ``Oro\Bundle\ProductBundle\RelatedItem\RelatedProduct\RelatedProductsConfigProvider``.
 
 Here is the quick overview of its usage:
 
 **isEnabled()**
 
 .. code-block:: php
-
 
    $this->get('oro_product.related_item.related_product.config_provider')->isEnabled();
 
@@ -32,7 +35,6 @@ Returns information on whether the Related Items functionality is enabled.
 
 .. code-block:: php
 
-
    $this->get('oro_product.related_item.related_product.config_provider')->getLimit();
 
 Returns integer describing how many related products can be assigned for one product.
@@ -41,10 +43,9 @@ Returns integer describing how many related products can be assigned for one pro
 
 .. code-block:: php
 
-
    $this->get('oro_product.related_item.related_product.config_provider')->isBidirectional();
 
-Returns information about the relation type. To illustrate the difference between uni- and bidirectional relation, let us consider the following example. Product B is a related item of Product A. If bidirectional attribute value is set to true, the product A is also considered as related item of Product B (see [Strategy](#strategy)). This does not apply when the relation is not bidirectional. 
+Returns information about the relation type. To illustrate the difference between uni- and bidirectional relation, let us consider the following example. Product B is a related item of Product A. If bidirectional attribute value is set to true, the product A is also considered as related item of Product B (see `Finder Strategy <#finder-sStrategy>`__). This does not apply when the relation is not bidirectional.
 
 When viewing product A in the storefront, a buyer can always see the Product B in related items.
 When viewing product B in the storefront, the buyer may or may not see the Product A in related items (depending on the type of relationship).
@@ -71,22 +72,26 @@ When viewing product B in the storefront, the buyer may or may not see the Produ
 
 For more information about configuration see |OroConfigBundle|.
 
+.. _bundle-docs-commerce-product-bundle-related-strategies:
+
 Strategies
 ^^^^^^^^^^
+
+.. _bundle-docs-commerce-product-bundle-related-finder-strategy:
 
 Finder Strategy
 ~~~~~~~~~~~~~~~
 
-The finder strategy (*Oro\\Bundle\\ProductBundle\\RelatedItem\\FinderStrategyInterface*) provides related products for a user.
-You can see a simple example in *Oro\\Bundle\\ProductBundle\\RelatedItem\\RelatedProduct\\AssignerDatabaseStrategy*
+The finder strategy (``Oro\Bundle\ProductBundle\RelatedItem\FinderStrategyInterface``) provides related products
+for a user.
+You can see a simple example in ``Oro\Bundle\ProductBundle\RelatedItem\RelatedProduct\FinderDatabaseStrategy``
 where related products are fetched from the database. This strategy takes into account the configuration from the Config Provider.
 
 For more complex logic, you can create your own strategy.
 
-For this, implement Oro\\Bundle\\ProductBundle\\RelatedItem\\Strategy\\StrategyInterface, overload or decorate its definition: "oro_product.related_products.strategy", and provide the implementation of the *find* method:
+For this, implement ``Oro\Bundle\ProductBundle\RelatedItem\FinderStrategyInterface``, overload or decorate its definition: "oro_product.related_products.strategy", and provide the implementation of the ``find`` method:
 
 .. code-block:: php
-
 
     /**
      * @param Product $product
@@ -97,20 +102,21 @@ For this, implement Oro\\Bundle\\ProductBundle\\RelatedItem\\Strategy\\StrategyI
 where $product is a Product object for which you are searching related products.
 The method has to return an array of Products.
 
+.. _bundle-docs-commerce-product-bundle-related-assigner-strategy:
+
 Assigner Strategy
 ~~~~~~~~~~~~~~~~~
 
-*Oro\\Bundle\\ProductBundle\\RelatedItem\\AssignerStrategyInterface*
-Use *AssignerStrategyInterface* to store the relation between the product and its related item. 
+The assigner strategy (``Oro\Bundle\ProductBundle\RelatedItem\AssignerStrategyInterface``) provides a way to store
+the relation between the product and its related item.
 An example of the implementation can be found in 
-*Oro\\Bundle\\ProductBundle\\RelatedItem\\RelatedProducts\\AssignerDatabaseStrategy*.
+``Oro\Bundle\ProductBundle\RelatedItem\RelatedProduct\AssignerDatabaseStrategy``.
 
 It defines two methods:
 
 1. **addRelations()**
 
    .. code-block:: php
-
 
        /**
         * @param Product $productFrom
@@ -131,7 +137,6 @@ It defines two methods:
 2. **removeRelations()**
 
    .. code-block:: php
-
 
        /**
         * @param Product $productFrom

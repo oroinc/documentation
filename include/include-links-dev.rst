@@ -4935,6 +4935,22 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Search/Reindex/ProductReindexManager.php" target="_blank">ProductReindexManager</a>
 
+.. |ProductListBuilder| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Provider/ProductListBuilder.php" target="_blank">ProductListBuilder</a>
+
+.. |ProductView| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Model/ProductView.php" target="_blank">ProductView</a>
+
+.. |BuildQueryProductListEvent| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Event/BuildQueryProductListEvent.php" target="_blank">BuildQueryProductListEvent</a>
+
+.. |BuildResultProductListEvent| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Event/BuildResultProductListEvent.php" target="_blank">BuildResultProductListEvent</a>
+
 .. |PreviouslyPurchasedConfigProvider| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Provider/PreviouslyPurchasedConfigProvider.php" target="_blank">PreviouslyPurchasedConfigProvider</a>
