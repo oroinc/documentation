@@ -15,9 +15,13 @@ to consume from and a message processor service. For example:
 
 .. code-block:: none
 
-    php bin/console --env=prod --no-debug oro:message-queue:transport:consume oro.default_queue oro_message_queue.client.delegate_message_processor
+    php bin/console --env=prod --no-debug oro:message-queue:transport:consume oro.default oro_dataaudit.async.audit_changed_entities
 
 .. note:: Add **-vvv** to find out what is going while you are consuming messages. There is a lot of valuable debug info there.
+
+.. note::
+        Message with topic that is not claimed by any message processor is passed to ``\Oro\Component\MessageQueue\Client\NoopMessageProcessor``
+        that does nothing but requeue such incoming message. Default status can be changed via ``oro_message_queue.client.noop_status`` configuration option.
 
 
 Options
@@ -90,6 +94,13 @@ The notification period can be changed in the application configuration file usi
 The default value of the `heartbeat_update_period` option is 15 minutes.
 
 To disable the Consumer Heartbeat notifications, set the `heartbeat_update_period` option to 0.
+
+Third-party consumers
+---------------------
+
+It is possible to push in a message queue the message that is intended for processing by an external consumer. To do so
+it is needed to push such message in the queue that is not consumed by Oro application consumer, otherwise such
+message would likely be processed by ``\Oro\Component\MessageQueue\Client\NoopMessageProcessor``.
 
 .. toctree::
    :hidden:

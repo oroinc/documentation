@@ -40,12 +40,11 @@ Logs will be formatted like:
     "@fields": {
         "channel":"consumer",
         "level":250,
-        "processor":"Oro\\Component\\MessageQueue\\Router\\RouteRecipientListProcessor",
+        "processor":"Oro\\Bundle\\RedirectBundle\\Async\\UrlCacheMassJobProcessor",
         "message_id":"oro.5cc7e18f1a6746.10499608",
         "message_body":"",
         "message_properties": {
              "oro.message_queue.client.topic_name":"oro.redirect.calculate_cache.mass",
-             "oro.message_queue.client.processor_name":"oro_message_queue.client.route_message_processor",
              "oro.message_queue.client.queue_name":"oro.default"
         },
         "message_headers": {

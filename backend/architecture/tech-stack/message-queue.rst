@@ -82,7 +82,7 @@ component is split into several layers:
 
 -  **Transport** - The transport API provides a common way for programs
    to create, send, receive and read messages. Inspired by |Java Message Service|.
--  **Router** - An implementation of |RecipientList| pattern.
+-  **MessageRouter** - An implementation of |RecipientList| pattern.
 -  **Consumption** - the layer provides tools to simplify consumption of
    messages. It provides a cli command, a queue consumer, message
    processor and ways to extend it.
@@ -98,11 +98,9 @@ component is split into several layers:
 Flow
 ^^^^
 
-The client's message producer sends a message to a router message
-processor. It takes the message and search for real recipients who is
-interested in such a message. Then, It sends a copy of a message for all
-of them. Each target message processor takes its copy of the message and
-process it.
+It takes the message and multiplies it for every queue where the message 
+should be sent. Next, it forwards each message to the message queue 
+driver which then sends a message using a transport message producer. 
 
 .. figure:: /img/backend/architecture/message_flow_diagram.png
    :alt: The message flow
@@ -127,7 +125,7 @@ Key Classes
 -  |TopicSubscriberInterface| - Kind of EventSubscriberInterface. It
    allows you to keep a processing code and topics it is subscribed to
    in one place.
--  |MessageConsumeCommand| - A command you use to consume messages.
+-  |ConsumeMessagesCommand| - A command you use to consume messages.
 -  |QueueConsumer| - A class that works inside the command and watch
    for a new message and once it is get it pass it to a message
    processor.

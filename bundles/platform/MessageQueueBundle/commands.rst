@@ -76,11 +76,11 @@ The ``oro:message-queue:topics`` command lists available message queue topics.
 oro:message-queue:transport:consume
 -----------------------------------
 
-The ``oro:message-queue:transport:consume`` command consumes message from a specified message queue. The message processor service should be specified as the second argument.
+The ``oro:message-queue:transport:consume`` command consumes message from a specified message queue. The message processor service can be specified as the second argument.
 
 .. code-block:: none
 
-   php bin/console oro:message-queue:transport:consume <queue> <processor-service>
+   php bin/console oro:message-queue:transport:consume <queue> [processor-service]
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

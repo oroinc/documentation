@@ -3362,9 +3362,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/MessageQueue/Client/TopicSubscriberInterface.php" target="_blank">TopicSubscriberInterface</a>
 
-.. |MessageConsumeCommand| raw:: html
+.. |ConsumeMessagesCommand| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/MessageQueue/Client/ConsumeMessagesCommand.php" target="_blank">MessageConsumeCommand</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/MessageQueue/Client/ConsumeMessagesCommand.php" target="_blank">ConsumeMessagesCommand</a>
 
 .. |QueueConsumer| raw:: html
 

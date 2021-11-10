@@ -145,7 +145,6 @@ Below is the topic mapping for default queues configuration.
 
   * oro.message_queue.job.calculate_root_job_status
   * oro.message_queue.job.root_job_stopped
-  * oro_message_queue.route_message
   * oro.cron.run_command
   * oro.cron.run_command.delayed
   * oro.translation.dump_js_translations

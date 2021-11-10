@@ -62,7 +62,7 @@ Here is an example how to add a processor to the list of security agnostic proce
 
     oro_message_queue:
         security_agnostic_processors:
-            - 'oro_message_queue.client.route_message_processor'
+            - 'oro_message_queue.job.calculate_root_job_status_processor'
 
 
 .. include:: /include/include-links-dev.rst
