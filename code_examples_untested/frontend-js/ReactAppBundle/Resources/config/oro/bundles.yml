@@ -1,0 +1,2 @@
+bundles:
+    - Acme\Bundle\ReactAppBundle\AcmeReactAppBundle

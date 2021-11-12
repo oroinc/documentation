@@ -1,0 +1,13 @@
+{% block _react_app_block_widget %}
+    {% set attr = layout_attr_defaults(attr, {
+        'data-page-component-react-app': {
+            reactApp: 'acmereactapp/js/react-app/App',
+            initialTitle: 'React demo',
+            initialContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        }
+    }) %}
+
+    <div {{ block('block_attributes') }}>
+        {{ block_widget(block) }}
+    </div>
+{% endblock %}

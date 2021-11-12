@@ -5867,6 +5867,18 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertManager.php" target="_blank">NotificationAlertManager</a>
 
+.. |Single File Components| raw:: html
+
+    <a href="https://v3.vuejs.org/guide/single-file-component.html#introduction" target="_blank">Single File Components</a>
+
+.. |React Doc| raw:: html
+
+    <a href="https://reactjs.org/docs/getting-started.html" target="_blank">React Getting Started</a>
+
+.. |Vue3 Doc| raw:: html
+
+    <a href="https://v3.vuejs.org/guide/introduction.html" target="_blank">Vue 3 Documentation</a>
+
 .. |Mailcatcher| raw:: html
 
    <a href="https://mailcatcher.me/" target="_blank">Mailcatcher</a>

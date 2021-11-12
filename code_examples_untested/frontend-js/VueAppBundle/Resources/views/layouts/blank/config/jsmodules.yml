@@ -1,0 +1,8 @@
+aliases:
+    vue: vue/dist/vue.esm-bundler
+app-modules:
+    - oroui/js/app/modules/vue-module
+dynamic-imports:
+    acmevueapp:
+        - oroui/js/app/components/vue-app-component
+        - acmevueapp/js/vue-app/App

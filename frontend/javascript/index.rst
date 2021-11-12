@@ -381,6 +381,7 @@ in the Chaplin life cycle.
     component-shortcuts
     page-component
     registry
+    frameworks-integration/index
 
 
 .. include:: /include/include-links-dev.rst
