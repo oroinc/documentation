@@ -177,7 +177,7 @@ To use your custom form type that replaces the default transition form, set the 
 
 They are:
 
-- `handler` - an alias of a registered service by tag `oro_form.registry.form_handler`. You can use the default one by passing `'default'`. See more about form update handler in |Update Handler|.
+- `handler` - an alias of a registered service by tag `oro_form.registry.form_handler`. You can use the default one by passing `'default'`. See more about form update handler in :ref:`Update Handler <bundle-docs-platform-form-bundle-update-handler>`.
 
 - `template` - the name of a template that should be used for the custom form, the default value is `@OroWorkflow/actions/update.html.twig`, and this template can be used as a starting point for customizations.
 

@@ -222,19 +222,19 @@ Mapping Default Frontend Type and Editor
    :header: "Frontend type","Editor view"
    :widths: 15, 15
 
-   "string","|text-editor-view|"
-   "phone", "|text-editor-view|"
-   "datetime","|datetime-editor-view|"
-   "date","|date-editor-view|"
-   "currency","|number-editor-view|"
-   "number","|number-editor-view|"
-   "integer","|number-editor-view|"
-   "decimal","|number-editor-view|"
-   "percent","|percent-editor-view|"
-   "select ","|select-editor-view|"
-   "multi-select","|multi-select-editor-view|"
-   "relation","|relation-editor-view|"
-   "multi-relation","|multi-relation-editor-view|"
+   "string",":ref:`TextEditorView <bundle-docs-platform-form-bundle-edit-text-editor-view>`"
+   "phone", ":ref:`TextEditorView <bundle-docs-platform-form-bundle-edit-text-editor-view>`"
+   "datetime",":ref:`DatetimeEditorView <bundle-docs-platform-form-bundle-edit-date-time-editor-view>`"
+   "date",":ref:`DateEditorView <bundle-docs-platform-form-bundle-edit-date-editor-view>`"
+   "currency",":ref:`NumberEditorView <bundle-docs-platform-form-bundle-number-editor-view>`"
+   "number",":ref:`NumberEditorView <bundle-docs-platform-form-bundle-number-editor-view>`"
+   "integer",":ref:`NumberEditorView <bundle-docs-platform-form-bundle-number-editor-view>`"
+   "decimal",":ref:`NumberEditorView <bundle-docs-platform-form-bundle-number-editor-view>`"
+   "percent",":ref:`PercentEditorView <bundle-docs-platform-form-bundle-percent-editor-view>`"
+   "select ",":ref:`SelectEditorView <bundle-docs-platform-form-bundle-edit-select-editor-view>`"
+   "multi-select",":ref:`MultiSelectEditorView <bundle-docs-platform-form-bundle-multi-select-editor-view>`"
+   "relation",":ref:`RelatedIdRelationEditorView <bundle-docs-platform-form-bundle-related-id-relation-editor-view>`"
+   "multi-relation",":ref:`MultiRelationEditorView <bundle-docs-platform-form-bundle-multi-relation-editor-view>`"
 
 Taken from :ref:`default-editors <bundle-docs-platform-datagrid-default-editors>`.
 
@@ -245,21 +245,21 @@ Supported Editors
    :header: "Editor","Description"
    :widths: 15, 15
 
-   "|text-editor-view|","Editing text/phone cells"
-   "|number-editor-view|","Editing number/integer/decimal/currency cells"
-   "|percent-editor-view|","Editing percent  cells"
-   "|date-editor-view|","Editing date cells"
-   "|datetime-editor-view|","Editing datetime cells"
-   "|select-editor-view|","Editing select cells (predefined choices)"
-   "|related-id-select-editor-view|","Editing cells which already contain label (and no value) using predefined choices"
-   "|related-id-relation-editor-view|","Editing cells which already contain label (and no value) using search api"
-   "|multi-relation-editor-view|","Editing cells with specific format, for many to one relations"
-   "|multi-select-editor-view|","Editing cells with specific format, for multiselect field"
+   ":ref:`TextEditorView <bundle-docs-platform-form-bundle-edit-text-editor-view>`","Editing text/phone cells"
+   ":ref:`NumberEditorView <bundle-docs-platform-form-bundle-number-editor-view>`","Editing number/integer/decimal/currency cells"
+   ":ref:`PercentEditorView <bundle-docs-platform-form-bundle-percent-editor-view>`","Editing percent  cells"
+   ":ref:`DateEditorView <bundle-docs-platform-form-bundle-edit-date-editor-view>`","Editing date cells"
+   ":ref:`DatetimeEditorView <bundle-docs-platform-form-bundle-edit-date-time-editor-view>`","Editing datetime cells"
+   ":ref:`SelectEditorView <bundle-docs-platform-form-bundle-edit-select-editor-view>`","Editing select cells (predefined choices)"
+   ":ref:`RelatedIdSelectEditorView <bundle-docs-platform-form-bundle-related-id-select-editor-view>`","Editing cells which already contain label (and no value) using predefined choices"
+   ":ref:`RelatedIdRelationEditorView <bundle-docs-platform-form-bundle-related-id-relation-editor-view>`","Editing cells which already contain label (and no value) using search api"
+   ":ref:`MultiRelationEditorView <bundle-docs-platform-form-bundle-multi-relation-editor-view>`","Editing cells with specific format, for many to one relations"
+   ":ref:`MultiSelectEditorView <bundle-docs-platform-form-bundle-multi-select-editor-view>`","Editing cells with specific format, for multiselect field"
 
 Supported Search API's for ``related-id-relation-editor-view``
 --------------------------------------------------------------
 
-Please find the list of supported search APIs in the |Search APIs section|.
+Please find the list of supported search APIs in the :ref:`Search APIs section <bundle-docs-platform-form-bundle-search-apis>`.
 
 
 .. include:: /include/include-links-dev.rst

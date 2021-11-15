@@ -1,3 +1,5 @@
+.. _bundle-docs-platform-email-bundle-template:
+
 Email Templates
 ===============
 

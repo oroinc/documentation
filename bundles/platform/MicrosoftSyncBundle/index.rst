@@ -31,7 +31,7 @@ This command shows the list of all supported synchronizations, as well as the fo
 Related Documentation
 ---------------------
 
-* :ref:`Configure Microsoft Integration in the Back-Office <user-guide-integrations-microsoft>`
+* :ref:`Configure Microsoft Integration in the Back-Office <configuration-integrations-microsoft>`
 
 
 .. include:: /include/include-links-dev.rst

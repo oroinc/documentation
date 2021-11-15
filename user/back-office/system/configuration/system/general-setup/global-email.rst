@@ -53,8 +53,6 @@ To configure email settings globally:
 
    * **Attachments** --- Configure the following attachment options:
 
-     .. hint:: The **Maximum Attachment Size, Mb** feature is available since OroCRM :ref:`v4.1.3 <system-information>`.
-
      * *Maximum Attachment Size, Mb* --- Set the maximum attachment size in Mb. Attachments that exceed the defined size will not be uploaded. You can remove size limitations by setting the size to 0.
      * *Enable Attachment Sync* --- Enable loading attachments on email sync. 
      * *Maximum Sync Attachment Size (Mb)* --- Set the maximum sync attachment size in Mb. Attachments that exceed the defined size will not be downloaded. You can remove size limitations by setting the size to 0.
@@ -115,7 +113,7 @@ To configure a system mailbox globally:
    * **Mailbox Label** --- Provide a name for the system mailbox.
    * **Email** --- Provide the email address.
 
-5. In the **Synchronization Settings**, configure your IMAP/SMTP connection or an Microsoft 365 account:
+5. In the **Synchronization Settings**, configure your IMAP/SMTP connection or a Microsoft 365 account:
 
    .. note:: Please be aware that if the Account Type value has changed, a new mailbox will be registered and all data from the currently configured mailbox will be lost.
 

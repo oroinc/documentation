@@ -12,7 +12,7 @@ Global routing configuration includes the following information:
 * Options that impact the way metadata for the search engine is generated
 * Meaningful URL (e.g. `/product/view/4` vs `/500-watt-work-light`)
 
-.. note:: The :ref:`website level configuration <sys--websites--sysconfig--websites--routing>` has higher priority and overrides this configuration settings.
+.. note:: The website routing settings can be configured globally, per :ref:`organization <organization-config-website-routing>`, and per:ref:`website <sys--websites--sysconfig--websites--routing>`.
 
 To change the default global routing settings:
 

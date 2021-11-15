@@ -1,3 +1,5 @@
+.. _bundle-docs-platform-form-bundle-percent-editor-view:
+
 PercentEditorView ⇐ NumberEditorView
 ====================================
 

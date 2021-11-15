@@ -1,3 +1,5 @@
+.. _bundle-docs-platform-form-bundle-related-id-select-editor-view:
+
 RelatedIdSelectEditorView ⇐ SelectEditorView
 ============================================
 

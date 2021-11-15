@@ -303,7 +303,7 @@ and once all of them are resolved, it triggers the ``page:afterChange`` event.
 
 .. seealso::
 
-    For more details, see the |Page Component| documentation.
+    For more details, see the :ref:`Page Component <dev-doc-frontend-page-component>` documentation.
 
 .. _frontend-architecture-app-module:
 

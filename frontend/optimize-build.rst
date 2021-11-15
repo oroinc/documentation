@@ -1,8 +1,6 @@
 Optimize Build Performance of CSS and JavaScript Assets
 =======================================================
 
-.. hint:: This feature is available since OroPlatform v4.2.5. To check which application version you are running, see the :ref:`system information <system-information>`.
-
 There are two factors that affect the build performance of CSS and JavaScript asset the most, JavaScript compilation with Babel and the number of enabled layout themes.
 
 JavaScript Compilation with Babel

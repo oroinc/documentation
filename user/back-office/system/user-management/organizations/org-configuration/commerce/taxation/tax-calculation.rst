@@ -12,7 +12,7 @@ You can control whether you want to calculate taxes before or after discounts ar
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 
-3. Select **Commerce > Taxation** in the menu to the left.
+3. Select **Commerce > Taxation > Tax Calculation** in the menu to the left.
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 

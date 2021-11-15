@@ -1,3 +1,5 @@
+.. _bundle-docs-platform-form-bundle-multi-select-editor-view:
+
 MultiSelectEditorView ⇐ SelectEditorView
 ========================================
 

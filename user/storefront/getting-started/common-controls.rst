@@ -236,8 +236,6 @@ The search shows up-to-date product information, such as SKU, name, price, and i
 Saved Search
 ------------
 
-.. hint:: The Saved Search feature is available since OroCommerce v4.2.4. To check which application version you are running, see the :ref:`system information <system-information>`.
-
 Customer users can save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock.
 
 To save a search result:
