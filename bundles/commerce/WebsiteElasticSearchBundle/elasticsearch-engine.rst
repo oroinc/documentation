@@ -29,11 +29,7 @@ Example configuration:
                 name: all_text_LOCALIZATION_ID
                 type: text
                 store: false
-            -
-                name: all_text
-                type: text
                 default_search_field: true
-                store: false
 
 
 If your deployment hosts two websites with IDs `1` and `2`, the following search index mappings are built automatically, based on the above configuration:
@@ -51,7 +47,7 @@ If your deployment hosts two websites with IDs `1` and `2`, the following search
               }
             },
             "query" : {
-              "default_field" : "all_text"
+              "default_field" : "all_text_LOCALIZATION_ID"
             },
             "max_result_window" : "10000000",
             "analysis" : {
@@ -129,16 +125,6 @@ If your deployment hosts two websites with IDs `1` and `2`, the following search
               }
             ],
             "properties" : {
-              "all_text" : {
-                "type" : "keyword",
-                "fields" : {
-                  "analyzed" : {
-                    "type" : "text",
-                    "analyzer" : "fulltext_index_analyzer",
-                    "search_analyzer" : "fulltext_search_analyzer"
-                  }
-                }
-              },
               "sku" : {
                 "type" : "keyword",
                 "store" : true,
@@ -180,11 +166,11 @@ placeholder. Product information contains the following:
 
 * The dynamic fields mapping with `names_LOCALIZATION_ID`, `descriptions_LOCALIZATION_ID` and `all_text_LOCALIZATION_ID` placeholders in these types are used to automatically set mapping for the fields that match provided patterns.
 
-* The plain mapping is defined for `sku`, `all_text` and `tmp_alias` fields.  A `tmp_alias` is a special field used during the indexation.
+* The plain mapping is defined for `sku` and `tmp_alias` fields.  A `tmp_alias` is a special field used during the indexation.
 
 * The default configuration for analyzer and tokenizer.
 
-* By default, all fields are stored, but you may configure some to be not. Storing fields means that, apart from being queried, it is possible to read and return them from the server. Disabling storing of some fields (like the `all_text`) can save some storage space.
+* By default, all fields are stored, but you may configure some to be not. Storing fields means that, apart from being queried, it is possible to read and return them from the server. Disabling storing of some fields can save some storage space.
 
 * The default field for querying is specified via the `default_field`.
 

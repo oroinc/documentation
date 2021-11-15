@@ -208,7 +208,6 @@ Here is example of the document from the website index type under oro_product_WE
    "is_visible_by_default":1,
    "all_text_1":"Retail Supplies Credit Card Pin Pad Reader Choosing the right credit card processing terminal to fit your business needs can help you increase your profits and reduce your processing costs. This credit card reader helps you do just that. Its' easy-to-use ATM style interface accepts PIN-based debit card transactions and swipes traditional payment cards. It also accepts chip cards and features a built-in receipt printer Product Information & Features: Catalog Page: 2976 Performs PIN based debit card transactions Accepts chip cards Prints transaction receipts Connectivity: USB (not included) Large, backlit display Supports all magnetic stripe cards Color: Purple Technical Specs: Width: 6\u201d Height: 3\u201d Weight: .6 lb. ACME defaultMetaDescription defaultMetaKeywords 1AB92",
    "sku":"1AB92",
-   "all_text":"1AB92 Retail Supplies Credit Card Pin Pad Reader Choosing the right credit card processing terminal to fit your business needs can help you increase your profits and reduce your processing costs. This credit card reader helps you do just that. Its' easy-to-use ATM style interface accepts PIN-based debit card transactions and swipes traditional payment cards. It also accepts chip cards and features a built-in receipt printer Product Information & Features: Catalog Page: 2976 Performs PIN based debit card transactions Accepts chip cards Prints transaction receipts Connectivity: USB (not included) Large, backlit display Supports all magnetic stripe cards Color: Purple Technical Specs: Width: 6\u201d Height: 3\u201d Weight: .6 lb. ACME defaultMetaDescription defaultMetaKeywords",
    "names_1":"Credit Card Pin Pad Reader",
    "shortDescriptions_1":"Choosing the right credit card processing terminal to fit your business needs can help you increase your profits and reduce your processing costs. This credit card reader helps you do just that. Its' easy-to-use ATM style interface accepts PIN-based debit card transactions and swipes traditional payment cards. It also accepts chip cards and features a built-in receipt printer",
    "inventory_status":"out_of_stock",
@@ -255,7 +254,7 @@ Pay attention to the following facts:
 
 * multiple values are denormalized to a one level structure according to passed placeholder values - assigned_to_ASSIGN_TYPE_ASSIGN_ID, minimal_price_CPL_ID_CURRENCY_UNIT etc
 * localized values are related to specific locale (LOCALIZATION_ID = 1) - names_LOCALIZATION_ID, shortDescriptions_LOCALIZATION_ID etc
-* standard and localized all-text fields (LOCALIZATION_ID = 1) - all_text and all_text_LOCALIZATION_ID
+* localized all-text fields (LOCALIZATION_ID = 1) - all_text_LOCALIZATION_ID
 * tmp_alias field is used to maintain outdated data during the reindexation and understand which entities has to be removed after the reindexation
 
 Search Request
