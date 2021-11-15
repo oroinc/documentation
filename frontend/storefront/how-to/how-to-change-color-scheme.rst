@@ -31,7 +31,7 @@ To change the color scheme:
 
 2. To get the color you need, use the ``get-color($palette, $key);`` function.
 
-    .. code-block:: scss
+   .. code-block:: scss
 
         .input {
             color: get-color('secondary', 'main');
@@ -39,7 +39,7 @@ To change the color scheme:
 
 3. Run the following console commands to publish the changes:
 
-    .. code-block:: none
+   .. code-block:: none
 
         php bin/console cache:clear
         php bin/console assets:install --symlink

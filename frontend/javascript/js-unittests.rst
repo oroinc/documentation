@@ -81,7 +81,6 @@ The example below illustrates the spec for the `oroui/js/mediator` module:
 
 .. code-block:: js
 
-
    import mediator from 'oroui/js/mediator';
    import Backbone from 'backbone';
 
@@ -107,7 +106,6 @@ However, because `Jasmine-jQuery` requires the full path to a fixture resource, 
 
 .. code-block:: js
 
-
       import 'jasmine-jquery';
       import $ from 'jquery';
       import html from 'text-loader!./Fixture/markup.html';
@@ -123,7 +121,6 @@ However, because `Jasmine-jQuery` requires the full path to a fixture resource, 
               expect($('li')).toHaveLength(5);
           });
       });
-
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

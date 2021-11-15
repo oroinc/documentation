@@ -57,7 +57,6 @@ Routes module (`oroui/js/app/routes`) is an array with only one route, which mat
 
 .. code-block:: yaml
 
-
     [
         ['*pathname', 'page#index']
     ]
@@ -68,7 +67,6 @@ Application Configuration
 Macros from `@OroAsset/Asset.html.twig` is utilized for passing options to the application's constructor. The configuration is placed in `@OroUI/js_modules_config.html.twig` template:
 
 .. code-block:: none
-
 
    {% import '@OroAsset/Asset.html.twig' as Asset %}
    {{ Asset.js_modules_config({
@@ -167,7 +165,7 @@ Application Lifecycle
 Chaplin extends Backbone concept introducing missing parts (such as a controller)
 and providing a solid life cycle for the application components:
 
-.. image:: /img/frontend/frontend_architecture/chaplin-lifecycle.png
+.. image:: /img/frontend/frontend-architecture/chaplin-lifecycle.png
    :target: http://docs.chaplinjs.org/
 
 As a result, a controller and all of its models and views exist only between the
@@ -223,7 +221,6 @@ The route module contains the only route mask that always leads to the PageContr
 
 .. code-block:: javascript
 
-
     module.exports = [
         ['*pathname', 'page#index']
     ];
@@ -243,7 +240,7 @@ series of system events to notify the environment that the page content has chan
      * page:update
      * page:afterChange
 
-.. image:: /img/frontend/frontend_architecture/page-controller.png
+.. image:: /img/frontend/frontend-architecture/page-controller.png
    :alt: Page Controller
 
 These events are handled by global views (views and components that exist throughout
@@ -279,7 +276,6 @@ data-attributes in the HTML node:
 * ``data-page-component-options`` --- a safe JSON-string
 
 .. code-block:: html+jinja
-
 
     {% set options  = {
         metadata: metaData,
@@ -327,7 +323,6 @@ App Modules are declared in the ``jsmodules.yml`` configuration file in the cust
 
 .. code-block:: yaml
 
-
     app-modules:
         - oroui/js/app/modules/messenger-module
 
@@ -341,7 +336,6 @@ Example
 ``oroui/js/app/modules/messenger-module`` declares handlers of the messenger in ``mediator``.
 
 .. code-block:: javascript
-
 
     import mediator from 'oroui/js/mediator';
     import messenger from 'oroui/js/messenger';
@@ -360,7 +354,6 @@ they are used. The handlers can be executed by any component or view
 in the Chaplin life cycle.
 
 .. code-block:: javascript
-
 
     mediator.execute('showMessage', 'success', 'Record is saved');
 

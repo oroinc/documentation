@@ -3,7 +3,6 @@
 How to Change Fonts and Typography in the Storefront
 ====================================================
 
-
 .. note:: We assume that you are making all customizations in your custom ``AppBundle`` (placed in the folder ``src/AppBundle``).
 
 .. note:: You have to insert this code into your own **styles.scss** file as described in
@@ -26,7 +25,6 @@ To update fonts, merge ``$theme-fonts`` with your ``$theme-custom-fonts``.
 .. note:: You have to put the font files in your bundle public folder beforehand, e.g., ``Resources/public/default/fonts``.
 
 .. code-block:: scss
-
 
     $theme-custom-fonts: (
         'main': (
@@ -68,8 +66,7 @@ To disable all Oro fonts without overriding them with yours:
 1. Override ``$theme-fonts: ();``
 2. Call mixin ``font-face()`` or ``use-font-face();``
 
-    .. code-block:: scss
-
+   .. code-block:: scss
 
          $theme-fonts: ();
 
@@ -135,7 +132,7 @@ To change the font size and line-height, override the following variables:
 
 .. important:: In all cases above, you have to run the following console commands to publish the changes:
 
-                .. code-block:: none
+               .. code-block:: none
 
                     php bin/console cache:clear
                     php bin/console assets:install --symlink

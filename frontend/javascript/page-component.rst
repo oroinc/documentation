@@ -16,14 +16,12 @@ To define PageComponent for a block define several data-attributes for the HTML 
 
 .. code-block:: twig
 
-
     {% set options  = {
         metadata: metaData,
         data: data
     } %}
     <div data-page-component-module="mybundle/js/app/components/grid-component"
          data-page-component-options="{{ options|json_encode }}"></div>
-
 
 .. hint::
         See also :ref:`Component Shortcuts <dev-doc-frontend-component-shortcuts>`
@@ -69,7 +67,6 @@ An instance of BaseComponent has several methods:
 
 .. code-block:: javascript
 
-
     MyComponent = BaseComponent.extend({
         initialize: function (options) {
             options = options || {};
@@ -108,7 +105,6 @@ For some trivial cases writing the entire component as extension from `BaseCompo
 In this case it's better to define a function that accepts options and performs the initialization:
 
 .. code-block:: javascript
-
 
     define(['jquery', 'js/my-widget'], function ($) {
         return function (options) {
@@ -158,7 +154,6 @@ When the `init-on` container includes a view-component that renders HTML and has
     </form>
 
 In this example, ``company-addresses-view`` is initialized and rendered without a user's interaction with the interface.
-
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

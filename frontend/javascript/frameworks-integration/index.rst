@@ -1,29 +1,26 @@
 .. _dev-doc-frameworks-integration:
 
-Frameworks Integration
-======================
+Framework Integration
+=====================
 
-This section will talk about how you can include/develop Vue or React application in the project based ORO application.
+This section discusses including and developing Vue or React applications into a project based on the Oro application.
 
-Why It's needed?
-----------------
+It is often necessary to implement a complex interactive interface in the Oro application. Since the Oro frontend is built on Backbone, a somewhat outdated library, it might be challenging to implement. This tutorial explains how to integrate modern JavaScript frameworks and libraries and run them in the context of the Oro application.
 
-It is often necessary to implement a complex interactive interface in an ORO application. Since the ORO frontend is built on Backbone, which is a rather outdated library, it might be difficult to implement. This tutorial will explain how to integrate modern JavaScript frameworks and libraries and run them in the context of an ORO application.
+You can always do this with a page component by creating a Vue/React application directly in the ``initialize`` method.
 
-In general you can always do this with a page-component, you can create a Vue/React application directly in the ``initialize`` method.
+For more information on using the Page Component, see the :ref:`Page Component <dev-doc-frontend-page-component>` topic.
 
-How to use Page Component you can see here :ref:`Page Component <dev-doc-frontend-page-component>`
-
-How to create applications in Vue 3 you can see here official documentation |Vue3 Doc|
-How to create a React app you can see here official documentation |React Doc|
+To learn how to create applications in Vue 3, see the |official Vue 3 documentation|.
+To learn how to create a React app, see the |official React documentation|.
 
 .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1
 
-    vue-integration
-    react-integration
-    customize-setup-components
+   vue-integration
+   react-integration
+   customize-setup-components
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

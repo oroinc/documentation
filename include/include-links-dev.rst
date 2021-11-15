@@ -5871,13 +5871,13 @@ Links (Dev)
 
     <a href="https://v3.vuejs.org/guide/single-file-component.html#introduction" target="_blank">Single File Components</a>
 
-.. |React Doc| raw:: html
+.. |official React documentation| raw:: html
 
-    <a href="https://reactjs.org/docs/getting-started.html" target="_blank">React Getting Started</a>
+    <a href="https://reactjs.org/docs/getting-started.html" target="_blank">official React documentation</a>
 
-.. |Vue3 Doc| raw:: html
+.. |official Vue 3 documentation| raw:: html
 
-    <a href="https://v3.vuejs.org/guide/introduction.html" target="_blank">Vue 3 Documentation</a>
+    <a href="https://v3.vuejs.org/guide/introduction.html" target="_blank">official Vue 3 documentation</a>
 
 .. |Mailcatcher| raw:: html
 

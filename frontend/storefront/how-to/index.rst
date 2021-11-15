@@ -12,15 +12,15 @@ Follow the links below to learn how to adapt the appearance of the default OroCo
 
 Change Corporate Identity:
 
-    .. toctree::
-        :includehidden:
-        :titlesonly:
-        :maxdepth: 2
+.. toctree::
+   :includehidden:
+   :titlesonly:
+   :maxdepth: 2
 
-        how-to-replace-the-logo
-        how-to-change-color-scheme
-        how-to-change-fonts
-        how-to-change-media-breakpoints
-        how-to-change-offsets
-        how-to-replace-product-images-placeholders
-        how-to-override-remove-files
+   Replace Logo and Favicon <how-to-replace-the-logo>
+   Change Color Scheme <how-to-change-color-scheme>
+   Change Fonts and Typography <how-to-change-fonts>
+   Change Media Breakpoints <how-to-change-media-breakpoints>
+   Change Offsets <how-to-change-offsets>
+   Replace Placeholder Images for Products <how-to-replace-product-images-placeholders>
+   Override, Remove or Disable Files <how-to-override-remove-files>

@@ -1,5 +1,5 @@
-Override, Remove, Disable Files
-===============================
+How to Override, Remove, Disable Files
+======================================
 
 Override or Disable Files
 -------------------------
@@ -7,7 +7,6 @@ Override or Disable Files
 To remove or override `scss/css`, create an assets.yml and write the following config in ``Resources/views/layouts/{theme_name}/`` for layout theme, or in ``Resources/config/oro/`` for back-office.
 
 .. code-block:: yaml
-
 
    styles:
        inputs:

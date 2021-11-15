@@ -3,7 +3,6 @@
 How to Replace a Logo and a Favicon in the Storefront
 =====================================================
 
-
 The following article describes how to replace logo and favicon images in your custom OroCommerce application. Please follow all the steps outlines below to replace the favicon and the logo.
 
 This topic assumes that you have previously created a custom application, a bundle, and a storefront theme, as described in the :ref:`Storefront Customization <storefront_customization_guide>` topic.
@@ -65,80 +64,79 @@ Replace Favicons
 
 2. Create a :ref:`Layout Update <dev-doc-frontend-layouts-layout-updates>` file to replace other specific favicons in the storefront.
 
-.. important:: Please make sure to remove the default Oro favicons via the layout update, otherwise, they will be used instead of the new ones. 
-               Also, please, make sure to change the option id: favicon_theme_icon. This option will change background color for the top bar on andriod devices.
+   .. important:: Please make sure to remove the default Oro favicons via the layout update, otherwise, they will be used instead of the new ones. Also, please, make sure to change the option id: favicon_theme_icon. This option will change background color for the top bar on android devices.
 
-.. code-block:: yaml
-   :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/favicon.yml
+   .. code-block:: yaml
+      :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/favicon.yml
 
-       layout:
-           actions:
-               - '@setOption':
-                   id: apple_57x57
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-57x57.png")'
-               - '@setOption':
-                   id: apple_60x60
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-60x60.png")'
-               - '@setOption':
-                   id: apple_72x72
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-72x72.png")'
-               - '@setOption':
-                   id: apple_76x76
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-76x76.png")'
-               - '@setOption':
-                   id: apple_114x114
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-114x114.png")'
-               - '@setOption':
-                   id: apple_144x144
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-144x144.png")'
-               - '@setOption':
-                   id: apple_120x120
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-120x120.png")'
-               - '@setOption':
-                   id: apple_152x152
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-152x152.png")'
-               - '@setOption':
-                   id: apple_180x180
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-180x180.png")'
-               - '@setOption':
-                   id: favicon_32x32
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/favicon-32x32.png")'
-               - '@setOption':
-                   id: android_chrome_192x192
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/android-chrome-192x192.png")'
-               - '@setOption':
-                   id: favicon_96x96
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/favicon-96x96.png")'
-               - '@setOption':
-                   id: favicon_16x16
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/favicon-16x16.png")'
-               - '@setOption':
-                   id: favicon_manifest
-                   optionName: href
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/manifest.json")'
-               - '@setOption':
-                   id: msapplication_tileimage
-                   optionName: content
-                   optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/mstile-144x144.png")'
-               - '@setOption':
-                   id: favicon_theme_icon
-                   optionName: content
-                   optionValue: '#ed2d27'
-               - '@remove':
-                   id: favicon_mask_icon
+           layout:
+               actions:
+                   - '@setOption':
+                       id: apple_57x57
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-57x57.png")'
+                   - '@setOption':
+                       id: apple_60x60
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-60x60.png")'
+                   - '@setOption':
+                       id: apple_72x72
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-72x72.png")'
+                   - '@setOption':
+                       id: apple_76x76
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-76x76.png")'
+                   - '@setOption':
+                       id: apple_114x114
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-114x114.png")'
+                   - '@setOption':
+                       id: apple_144x144
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-144x144.png")'
+                   - '@setOption':
+                       id: apple_120x120
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-120x120.png")'
+                   - '@setOption':
+                       id: apple_152x152
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-152x152.png")'
+                   - '@setOption':
+                       id: apple_180x180
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/apple-touch-icon-180x180.png")'
+                   - '@setOption':
+                       id: favicon_32x32
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/favicon-32x32.png")'
+                   - '@setOption':
+                       id: android_chrome_192x192
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/android-chrome-192x192.png")'
+                   - '@setOption':
+                       id: favicon_96x96
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/favicon-96x96.png")'
+                   - '@setOption':
+                       id: favicon_16x16
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/favicon-16x16.png")'
+                   - '@setOption':
+                       id: favicon_manifest
+                       optionName: href
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/manifest.json")'
+                   - '@setOption':
+                       id: msapplication_tileimage
+                       optionName: content
+                       optionValue: '=data["asset"].getUrl("bundles/app/default/favicons/mstile-144x144.png")'
+                   - '@setOption':
+                       id: favicon_theme_icon
+                       optionName: content
+                       optionValue: '#ed2d27'
+                   - '@remove':
+                       id: favicon_mask_icon
 
 3. Rebuild the assets:
 
@@ -173,7 +171,6 @@ Replace a Logo
       :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
       logo: 'bundles/{your_theme_id}/images/logo/logo.svg'
-
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

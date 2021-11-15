@@ -15,7 +15,6 @@ It is used by the registry to preserve only the objects (instances, passed in a 
 
 .. code-block:: javascript
 
-
     /**
      * Puts instance into registry
      *
@@ -25,11 +24,9 @@ It is used by the registry to preserve only the objects (instances, passed in a 
      */
     put: function(instance, applicant) { ... }
 
-
 The `globalId` is also used to get the object from the registry:
 
 .. code-block:: javascript
-
 
     /**
      * Fetches instance from registry by globalId
@@ -44,7 +41,6 @@ The `globalId` is also used to get the object from the registry:
 It is pretty common case when these two methods are used together to fetch existing instance or create a new one and return it.
 
 .. code-block:: javascript
-
 
     var registry = require('oroui/js/app/services/registry');
     var BaseClass = require('oroui/js/base-class');
@@ -75,7 +71,6 @@ There are two other methods that allow maintain the up-to-date information in th
 
 .. code-block:: javascript
 
-
     /**
      * Adds applicant relation to registry for instance
      *
@@ -97,7 +92,6 @@ registry has to be notified that the new applicant holds the instance.
 
 .. code-block:: javascript
 
-
         initialize: function(options) {
             this.instance = options.instance;
             registry.retain(this.instance, this); 
@@ -108,7 +102,6 @@ When the applicant does not need a shared instance any more, it can notify the r
 
 .. code-block:: javascript
 
-
         disable: function() {
             registry.relieve(this.instance, this);
             delete this.instance;
@@ -116,7 +109,6 @@ When the applicant does not need a shared instance any more, it can notify the r
 
 .. hint::
     See other methods documentation in |registry.js|
-
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

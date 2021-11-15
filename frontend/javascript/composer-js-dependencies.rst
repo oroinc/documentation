@@ -45,7 +45,6 @@ An example of `composer.json` containing NPM dependencies in the `extra.npm` sec
 
 .. code-block:: json
 
-
 	{
 		"name": "oro/calendar-bundle",
 
@@ -61,15 +60,14 @@ An example of `composer.json` containing NPM dependencies in the `extra.npm` sec
 Application Install When Lock Files Already Exist
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If `package-lock.json` already exists, post-install command ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets``
-runs `npm ci` which looks into the lock file, fetches NPM packages, and puts them into `node_modules/` directory.
+If `package-lock.json` already exists, post-install command ``Oro\Bundle\InstallerBundle\Composer\ScriptHandler::installAssets`` runs `npm ci` which looks into the lock file, fetches NPM packages, and puts them into the `node_modules/` directory.
 
 Adding New NPM Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - Add the NPM package name and version constraint to the `extra.npm` section of composer.json, e.g `"fullcalendar": "3.4.0"`
- - Delete `composer.lock` and the `package-lock.json` files
- - Run `composer install`
+- Add the NPM package name and version constraint to the `extra.npm` section of composer.json, e.g `"fullcalendar": "3.4.0"`.
+- Delete `composer.lock` and the `package-lock.json` files.
+- Run `composer install`.
 
 Resolving Conflicting NPM Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

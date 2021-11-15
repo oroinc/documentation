@@ -1,138 +1,140 @@
 .. _dev-doc-vue-integration:
 
-Vue3 Integration
-================
+Integrate Vue 3
+===============
 
-Make sure that you place all JS modules in the bundle's public folder. If there is no bundle yet, create one following the instruction in the :ref:`Create a Bundle <dev-cookbook-framework-how-to-create-new-bundle>` topic.
+Make sure that you place all JS modules in the bundle's public folder. If the bundle does not exist, create one following the instruction in the :ref:`Create a Bundle <dev-cookbook-framework-how-to-create-new-bundle>` topic.
 
 Keep in mind that if you create a new bundle or fail to create symlinks when installing the application, you need to run the following command ``bin/console assets:install --symlink``. For more information, please see :ref:`OroAssetBundle <bundle-docs-platform-asset-bundle>` documentation.
 
 Declarative Rendering
 ---------------------
 
-The example below will show how to create a simple component such as the one shown in the screenshot. The example is simple but shows the approach by which you can create more complex functionality that the client needs. We'll use the standard Vue3 approach here.
+The example below illustrates creating a simple component, such as the one shown in the screenshot, using the standard Vue 3 approach.
 
-.. image:: /img/frontend/frontend_architecture/frameworks/vue-demo.png
+.. image:: /img/frontend/frontend-architecture/frameworks/vue-demo.png
    :alt: Vue demo
+   :align: center
 
-1. For first need install dependencies, goto root folder and modify ``composer.json`` (or ``dev.json`` if you use developer mode) file with next code. After update composer config file need executed next command ``composer install``.
+1. Install dependencies. Navigate to the root folder and modify the ``composer.json`` (or ``dev.json`` if you use the developer mode) file with the code below. After updating the composer config file, execute the ``composer install`` command.
 
-.. code-block:: json
+   .. code-block:: json
 
-    "extra": {
-        "npm": {
-            "vue": "^3.2.20"
+        "extra": {
+            "npm": {
+                "vue": "^3.2.20"
+            }
         }
-    }
 
-.. note:: How add dependencies to composer take a look :ref:`Managing NPM dependencies with Composer <dev-doc-frontend-composer-js-dependencies>`.
+   .. note:: To learn how to add dependencies to Composer, see :ref:`Managing NPM dependencies with Composer <dev-doc-frontend-composer-js-dependencies>`.
 
-2. Create template for vue component.
+2. Create a template for the Vue component.
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/public/js/vue-app/App.html
-    :caption: src/{YourBundleName}/Resources/public/js/vue/App.html
-    :language: none
+   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/public/js/vue-app/App.html
+      :caption: src/{YourBundleName}/Resources/public/js/vue/App.html
+      :language: none
 
-.. important:: In all code examples, the name of the bundle is set to ``AcmeBundle`` when copying, do not forget to correct the name of the bundle in the paths according to your bundle.
+   .. important:: In all code examples, the bundle's name is set to ``AcmeBundle``. When copying, remember to correct the name of the bundle in the paths according to your bundle.
 
-3. Create Vue component and copy code below
+3. Create a Vue component and copy the code below:
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/public/js/vue-app/App.js
-    :caption: src/{YourBundleName}/Resources/public/js/vue/App.js
-    :language: javascript
+   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/public/js/vue-app/App.js
+      :caption: src/{YourBundleName}/Resources/public/js/vue/App.js
+      :language: javascript
 
-4. For provide runtime rendering template need create alias for Vue import. Since Vue is not a basic framework for ORO, the first thing to do is to include a special Page Component that correctly integrates the Vue application into the ORO application lifecycle. Also add path for page component to ``dynamic-imports:``. Create file and put code below.
+4. To provide a runtime rendering template, create an alias for the Vue import. Since Vue is not the base framework for Oro, enable Page Component to start the Vue application, which will ensure proper integration into the Oro application lifecycle. Next, add the path for page component to ``dynamic-imports:``, create a file, and insert the code below:
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/config/jsmodules.yml
-    :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
-    :language: yaml
+   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/config/jsmodules.yml
+      :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
+      :language: yaml
 
-5. To build the application after changes, run the ``npm run build`` command.  To rebuild the application automatically, run the ``npm run watch`` command.
+5. To build the application after changes, run the ``npm run build`` command. To rebuild the application automatically, run the ``npm run watch`` command.
 
-6. We can now define in the Twig template where our Vue app will be displayed with a special Page component using the ``data-page-component-vue-app`` shortcut. Copy and paste the code below.
+6. In the Twig template, define where our Vue app will be displayed with a specific Page component using the ``data-page-component-vue-app`` shortcut. Copy and paste the code below:
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/layout.html.twig
-    :caption: src/{YourBundleName}/Resources/views/layout.html.twig
-    :language: html+jinja
+   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/layout.html.twig
+      :caption: src/{YourBundleName}/Resources/views/layout.html.twig
+      :language: html+jinja
 
-7. Register your new widget and append it to the page container in layout. For this, create file. For more on layout update, see the :ref:`Layout <dev-doc-frontend-layouts-layout>` topic.
+7. Register your new widget and append it to the page container in layout. Create a file for this. For more information on the layout update, see the :ref:`Layout <dev-doc-frontend-layouts-layout>` topic.
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/layout.yml
-    :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/layout.yml
-    :language: yaml
+   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/layout.yml
+      :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/layout.yml
+      :language: yaml
 
 Single File Components
 ----------------------
 
-Vue provide possible to use one file for component. You can see more information at official documentation |Single File Components|.
+Vue makes it possible to use one file for the component. For more information, see the official |Single File Components| documentation.
 
-Webpack config at current ORO application version doesn't support ``vue-loader``. Need modify ``webpack.config.js`` file at root of your application.
+The webpack config does not support the ``vue-loader`` out-of-the-box. You need to modify the ``webpack.config.js`` file at the root of your application.
 
-This example will implement the same functionality that was discussed above. But it will use the Single File Component in Vue3.
+The example below implements the same functionality discussed above but uses the Single File Component in Vue3.
 
-.. image:: /img/frontend/frontend_architecture/frameworks/vue-sfc-demo.png
+.. image:: /img/frontend/frontend-architecture/frameworks/vue-sfc-demo.png
    :alt: Vue SFC demo
+   :align: center
 
-1. For first install ``vue-loader``. Run command ``npm install vue-loader@next -D``.
+1. Install the ``vue-loader`` by running the command ``npm install vue-loader@next -D``.
 
-2. Open your ``webpack.config.js`` and replace for code below
+2. Open your ``webpack.config.js`` and replace the code with the one below:
 
-.. code-block:: javascript
+   .. code-block:: javascript
 
-    const { VueLoaderPlugin } = require('vue-loader');
-    const OroConfig = require('@oroinc/oro-webpack-config-builder');
+        const { VueLoaderPlugin } = require('vue-loader');
+        const OroConfig = require('@oroinc/oro-webpack-config-builder');
 
-    OroConfig
-        .enableLayoutThemes()
-        .setPublicPath('public/')
-        .setCachePath('var/cache');
+        OroConfig
+            .enableLayoutThemes()
+            .setPublicPath('public/')
+            .setCachePath('var/cache');
 
-    module.exports = () => {
-        const webpackConfigs = OroConfig.getWebpackConfig()();
+        module.exports = () => {
+            const webpackConfigs = OroConfig.getWebpackConfig()();
 
-        webpackConfigs.forEach(webpackConfig => {
-            webpackConfig.module.rules = [
-                {
-                    test: /\.vue$/,
-                    loader: 'vue-loader'
-                },
-                ...webpackConfig.module.rules
-            ];
+            webpackConfigs.forEach(webpackConfig => {
+                webpackConfig.module.rules = [
+                    {
+                        test: /\.vue$/,
+                        loader: 'vue-loader'
+                    },
+                    ...webpackConfig.module.rules
+                ];
 
-            webpackConfig.plugins = [
-                ...webpackConfig.plugins,
-                new VueLoaderPlugin()
-            ];
-        });
+                webpackConfig.plugins = [
+                    ...webpackConfig.plugins,
+                    new VueLoaderPlugin()
+                ];
+            });
 
-        return webpackConfigs;
-    }
+            return webpackConfigs;
+        }
 
-4. Create Vue component and copy code below
+4. Create a Vue component and copy the code below:
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/public/js/vue-app/App.vue
-    :caption: src/{YourBundleName}/Resources/public/js/vue/App.vue
-    :language: none
+   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/public/js/vue-app/App.vue
+      :caption: src/{YourBundleName}/Resources/public/js/vue/App.vue
+      :language: none
 
-5. For provide runtime rendering template need create alias for Vue import. Since Vue is not a basic framework for ORO, the first thing to do is to include a special Page Component that correctly integrates the Vue application into the ORO application lifecycle. Also add path for page component to ``dynamic-imports:``. Create file and put code below.
+5. To provide a runtime rendering template, create an alias for the Vue import. Since Vue is not the base framework for Oro, enable Page Component to start the Vue application, which will ensure proper integration into the Oro application lifecycle. Next, add the path for page component to ``dynamic-imports:``, create a file, and insert the code below:
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/config/jsmodules.yml
-    :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
-    :language: none
+   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/config/jsmodules.yml
+      :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
+      :language: none
 
 6. To build the application after changes, run the ``npm run build`` command.  To rebuild the application automatically, run the ``npm run watch`` command.
 
-7. Once the page component with Vue instance is created, declare it in the template of the required page. Copy and paste the code below.
+7. Once the page component with Vue instance is created, declare it in the template of the required page. Copy and paste the code below:
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/layout.html.twig
-    :caption: src/{YourBundleName}/Resources/views/layout.html.twig
-    :language: html+jinja
+   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/layout.html.twig
+      :caption: src/{YourBundleName}/Resources/views/layout.html.twig
+      :language: html+jinja
 
-8. Register your new widget and append it to the page container in layout. For this, create file. For more on layout update, see the :ref:`Layout <dev-doc-frontend-layouts-layout>` topic.
+8. Register your new widget and append it to the page container in the layout. Create a file for this. For more information on the layout update, see the :ref:`Layout <dev-doc-frontend-layouts-layout>` topic.
 
-.. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/layout.yml
-    :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/layout.yml
-    :language: yaml
+   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/layout.yml
+      :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/layout.yml
+      :language: yaml
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

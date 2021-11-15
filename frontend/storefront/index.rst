@@ -33,7 +33,7 @@ The OroCommerce storefront design architecture has some differences from the bac
     layouts/index
     templates
     images
-    how-to/index
+    Customization How-To Guides <how-to/index>
     render-cache
     debugging
 

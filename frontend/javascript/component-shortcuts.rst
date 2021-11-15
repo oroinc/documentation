@@ -14,14 +14,11 @@ Example:
 
 .. code-block:: html
 
-
     <div data-page-component-collapse>
         Some content to collapse
     </div>
 
-
 .. code-block:: javascript
-
 
     // register shortcuts in ComponentShortcutsManager
     var ComponentShortcutsManager = require('oroui/js/component-shortcuts-manager');
@@ -32,7 +29,6 @@ Example:
             widgetModule: 'oroui/js/widget/collapse-widget'
         }
     });
-
 
 Object Value
 ------------
@@ -41,14 +37,11 @@ Example:
 
 .. code-block:: html
 
-
     <div data-page-component-collapse="{{ {storageKey: 'entityWorkflow' ~ entityId}|json_encode }}">
         Some content to collapse
     </div>
 
-
 .. code-block:: javascript
-
 
     // register shortcuts in ComponentShortcutsManager
     var ComponentShortcutsManager = require('oroui/js/component-shortcuts-manager');
@@ -59,7 +52,6 @@ Example:
             widgetModule: 'oroui/js/widget/collapse-widget'
         }
     });
-
 
 Scalar Value
 ------------
@@ -70,14 +62,11 @@ Example:
 
 .. code-block:: html
 
-
     <div data-page-component-jquery="oroui/js/widget/collapse-widget">
         Some content to collapse
     </div>
 
-
 .. code-block:: javascript
-
 
     // register shortcuts in ComponentShortcutsManager
     var ComponentShortcutsManager = require('oroui/js/component-shortcuts-manager');
@@ -87,7 +76,6 @@ Example:
         scalarOption: 'widgetModule'
     });
 
-
 ComponentShortcutsManager
 -------------------------
 
@@ -95,7 +83,6 @@ ComponentShortcutsManager is used to register shortcuts. Also containing helper 
 by element attributes and shortcut config.
 
 **References:**
-
 
 * |ComponentShortcutManager|
 * |ComponentShortcutsModule|

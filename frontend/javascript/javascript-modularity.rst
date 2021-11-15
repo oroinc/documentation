@@ -57,7 +57,6 @@ have to be loaded and executed and, therefore, keeping the global scope clean.
 
 .. code-block:: javascript
 
-
     define(function (require) {
         'use strict';
 
@@ -79,7 +78,6 @@ For that you may use |scriptjs| library.
 It takes care of downloading and evaluating the external script at runtime.
 
 .. code-block:: javascript
-
 
     import scriptjs from 'scriptjs';
     import BaseView from 'oroui/jsbase/view';
