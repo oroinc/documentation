@@ -377,7 +377,7 @@ In the shipping rules, this template is used to display the configured settings 
 
 Create the /Resources/views/method/fastShippingMethodWithOptions.html.twig file with the following content:
 
-.. oro_integrity_check:: 8cf48c50cb8c00b5988622f79dd17e05f8e200b2
+.. oro_integrity_check:: f55e95f71cd666f8f087f41e091540086d3241a2
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/views/method/fastShippingMethodWithOptions.html.twig
        :language: html
