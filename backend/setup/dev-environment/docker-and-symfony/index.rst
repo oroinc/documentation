@@ -94,7 +94,7 @@ of ``php bin/console``. Use ``symfony php`` to run php binaries
 using proper PHP version and expose environment variables from the application services defined with Docker Compose.
 
 .. note::
-     On Windows with WSL2 the website is accessible using https://localhost:8000, instead of https://127.0.0.1:8000.
+     On Windows with WSL2 the website is accessible using ``https://localhost:8000``, instead of ``https://127.0.0.1:8000``.
 
 Run Symfony Server in a ``Dev`` Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

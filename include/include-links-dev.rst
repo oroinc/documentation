@@ -75,10 +75,6 @@ Links (Dev)
 
    <a href="https://github.com/GeniusesOfSymfony/WebSocketBundle" target="_blank">GosWebSocketBundle</a>
 
-.. |PHP unserialization vulnerability| raw:: html
-
-   <a href="https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf" target="_blank">PHP unserialization vulnerability</a>
-
 .. |Apache| raw:: html
 
    <a href="https://httpd.apache.org/" target="_blank">Apache</a>
@@ -1845,10 +1841,6 @@ Links (Dev)
 
    <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>
 
-.. |Page Component| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md" target="_blank">Page Component</a>
-
 .. |Underscore.js template function documentation| raw:: html
 
    <a href="https://underscorejs.org/#template" target="_blank">Underscore.js template function documentation</a>
@@ -2057,10 +2049,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/reference/js_validation.md" target="_blank">Set up Validation Rules for Form Fields</a>
 
-.. |Update Handler| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/reference/update_handler.md" target="_blank">Update Handler</a>
-
 .. |Connect Inline Editors on View Pages| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/reference/inline-editable-view-component.md" target="_blank">Connect Inline Editors on View Pages</a>
@@ -2211,7 +2199,7 @@ Links (Dev)
 
 .. |StyleCop| raw:: html
 
-   <a href="https://stylecop.codeplex.com/" target="_blank">StyleCop</a>
+   <a href="https://github.com/StyleCop/StyleCop" target="_blank">StyleCop</a>
 
 .. |Google JavaScript Style Guide| raw:: html
 
@@ -3602,9 +3590,9 @@ Links (Dev)
 
    <a href="https://medium.com/hipages-engineering/scaling-elasticsearch-b63fa400ee9e" target="_blank">Scaling Elasticsearch</a>
 
-.. |Web Performance Tuning: Latency and Throughput| raw:: html
+.. |Web Performance Tuning: 4.2. Latency and Throughput| raw:: html
 
-   <a href="https://www.safaribooksonline.com/library/view/web-performance-tuning/059600172X/ch04s02.html" target="_blank">Web Performance Tuning: Latency and Throughput</a>
+   <a href="https://www.oreilly.com/library/view/web-performance-tuning/059600172X/" target="_blank">Web Performance Tuning: 4.2. Latency and Throughput</a>
 
 .. |Website Search Index Type| raw:: html
 
@@ -3816,7 +3804,7 @@ Links (Dev)
 
 .. |the Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/2.x/bundles/NelmioApiDocBundle/the-apidoc-annotation.html" target="_blank">the Symfony documentation</a>
+   <a href="https://symfony.com/bundles/NelmioApiDocBundle/current/index.html" target="_blank">the Symfony documentation</a>
 
 .. |AbstractFormatter class in NelmioApiDocBundle| raw:: html
 
@@ -4773,7 +4761,7 @@ Links (Dev)
 
 .. |Flex Microform| raw:: html
 
-   <a href="https://developer.cybersource.com/api/developer-guides/dita-flex/SAFlexibleToken/FlexMicroform.html" target="_blank">Flex Microform</a>
+   <a href="https://developer.cybersource.com/api/soap-developer-guides/dita-flex/SAFlexibleToken/FlexMicroform.html" target="_blank">Flex Microform</a>
 
 .. |PurchasePaymentAction| raw:: html
 
@@ -4971,30 +4959,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DataGridBundle/Datagrid/Manager.php" target="_blank">DatagridManager</a>
 
-.. |text-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/text-editor-view.md" target="_blank">text-editor-view</a>
-
-.. |datetime-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/datetime-editor-view.md" target="_blank">datetime-editor-view</a>
-
-.. |date-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/date-editor-view.md" target="_blank">date-editor-view</a>
-
-.. |number-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/number-editor-view.md" target="_blank">number-editor-view</a>
-
-.. |percent-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/percent-editor-view.md" target="_blank">percent-editor-view</a>
-
-.. |select-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/select-editor-view.md" target="_blank">select-editor-view</a>
-
 .. |YamlConverter| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DataGridBundle/Datasource/Orm/QueryConverter/YamlConverter.php" target="_blank">YamlConverter</a>
@@ -5019,22 +4983,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/DataGridBundle/Extension/FieldAcl/FieldAclExtension.php" target="_blank">Field ACL extension</a>
 
-.. |multi-select-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/multi-select-editor-view.md" target="_blank">multi-select-editor-view</a>
-
-.. |relation-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-relation-editor-view.md" target="_blank">relation-editor-view</a>
-
-.. |multi-relation-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/multi-relation-editor-view.md" target="_blank">multi-relation-editor-view</a>
-
-.. |related-id-relation-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-relation-editor-view.md" target="_blank">related-id-relation-editor-view</a>
-
 .. |Create Custom Field Type| raw:: html
 
    <a href="http://symfony.com/doc/master/cookbook/form/create_custom_field_type.html" target="_blank">Create Custom Field Type</a>
@@ -5042,14 +4990,6 @@ Links (Dev)
 .. |Types| raw:: html
 
    <a href="http://symfony.com/doc/master/reference/forms/types.html" target="_blank">Types</a>
-
-.. |Search APIs section| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/reference/search-apis.md" target="_blank">Search APIs section</a>
-
-.. |related-id-select-editor-view| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-select-editor-view.md" target="_blank">related-id-select-editor-view</a>
 
 .. |CC-BY-NC-SA 4.0| raw:: html
 
@@ -5257,11 +5197,11 @@ Links (Dev)
 
 .. |EnumFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Filter/EnumFilter.php" target="_blank">EnumFilter</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/FilterBundle/Filter/EnumFilter.php" target="_blank">EnumFilter</a>
 
 .. |MultiEnumFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityExtendBundle/Filter/MultiEnumFilter.php" target="_blank">MultiEnumFilter</a>
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/FilterBundle/Filter/MultiEnumFilter.php" target="_blank">MultiEnumFilter</a>
 
 .. |ExtendColumnOptionsGuesser| raw:: html
 
@@ -5293,7 +5233,7 @@ Links (Dev)
 
 .. |LiipImagineBundle filters reference| raw:: html
 
-   <a href="https://symfony.com/doc/2.x/bundles/LiipImagineBundle/filters.html" target="_blank">LiipImagineBundle filters reference</a>
+   <a href="https://symfony.com/bundles/LiipImagineBundle/current/index.html" target="_blank">LiipImagineBundle filters reference</a>
 
 .. |Logging Agent| raw:: html
 
@@ -5346,6 +5286,22 @@ Links (Dev)
 .. |DbalTransactionWatcher| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/MessageQueueBundle/Client/DbalTransactionWatcher.php" target="_blank">DbalTransactionWatcher</a>
+
+.. |Symfony Form Type Options| raw:: html
+
+   <a href="https://symfony.com/doc/current/forms.html#form-type-options" target="_blank">Symfony Form Type Options</a>
+
+.. |AttachmentProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/AttachmentBundle/Provider/AttachmentProvider.php" target="_blank">AttachmentProvider</a>
+
+.. |Font Awesome| raw:: html
+
+   <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome</a>
+
+.. |SluggableInterface| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/4.2/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
 
 .. |SerializedFieldsExtension| raw:: html
 
@@ -5531,21 +5487,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle" target="_blank">MigrationBundle</a>
 
-.. |Symfony Form Type Options| raw:: html
-
-   <a href="https://symfony.com/doc/current/forms.html#form-type-options" target="_blank">Symfony Form Type Options</a>
-
-.. |AttachmentProvider| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/AttachmentBundle/Provider/AttachmentProvider.php" target="_blank">AttachmentProvider</a>
-
-.. |Font Awesome| raw:: html
-
-   <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome</a>
-
-.. |SluggableInterface| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/4.2/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
 
 .. |Symfony Translations| raw:: html
 

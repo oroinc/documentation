@@ -85,6 +85,9 @@ string ``*public* *getNameFormat*([string *locale*])``
 
 Get the name format based on the locale; if the argument is not passed, locale from the system configuration is used.
 
+
+.. _bundle-docs-platform-locale-bundle-format-name:
+
 Twig
 ----
 

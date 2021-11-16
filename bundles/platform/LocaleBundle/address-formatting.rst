@@ -93,6 +93,8 @@ string ``*public* *getAddressFormat*([string *localeOrRegion*])``
 
 Get address format based on the locale or region; if the argument is not passed, locale from the system configuration will be used.
 
+.. _bundle-docs-platform-locale-bundle-oro-format-address:
+
 Twig
 ----
 

@@ -1,3 +1,5 @@
+.. _bundle-docs-platform-form-bundle-update-handler:
+
 Update Handler
 ==============
 

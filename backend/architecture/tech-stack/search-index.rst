@@ -425,7 +425,7 @@ References
 
 * |Elasticsearch References|
 * |Scaling Elasticsearch|
-* |Web Performance Tuning: Latency and Throughput|
+* |Web Performance Tuning: 4.2. Latency and Throughput|
 * :ref:`Standard Search Index Type <search_index_db_from_md>`
 * :ref:`Elasticsearch support for Standard Index Type <elastic-search>`
 * |Website Search Index Type|

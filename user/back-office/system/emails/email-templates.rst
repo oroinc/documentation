@@ -576,7 +576,7 @@ order_line_items (OroCommerce only)
     </table>
 
 .. note:: If none of these Twig functions cover your cases, you can **create a custom Twig function** that returns the desired data that you can use in email templates.
-    Please, see |OroEmailBundle documentation| for details.
+    Please, see :ref:`OroEmailBundle documentation <bundle-docs-platform-email-bundle-template>` for details.
 
 Filters
 ^^^^^^^
@@ -596,12 +596,12 @@ On top of functions, you can use filters in email templates. The full set of the
 * |upper|
 * :ref:`oro_html_sanitize <bundle-docs-platform-ui-bundle-twig-filters>`
 * |oro_format|
-* |oro_format_address|
+* :ref:`oro_format_address <bundle-docs-platform-locale-bundle-oro-format-address>`
 * |oro_format_date|
 * |oro_format_time|
 * |oro_format_datetime|
 * oro_format_datetime_organization
-* |oro_format_name|
+* :ref:`oro_format_name <bundle-docs-platform-locale-bundle-format-name>`
 * |oro_format_price|
 * |oro_format_currency|
 * :ref:`oro_format_short_product_unit_value <product-bundle-short-formatting>`

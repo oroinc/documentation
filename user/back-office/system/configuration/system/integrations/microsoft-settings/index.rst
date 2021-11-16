@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _configuration-integrations-microsoft:
 

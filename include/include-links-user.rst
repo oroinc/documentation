@@ -375,10 +375,6 @@ Links (User)
 
    <a href="https://symfony.com/doc/4.4/reference/twig_reference.html#path" target="_blank">the Symfony Twig Extensions (Path)</a>
 
-.. |OroEmailBundle documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">OroEmailBundle documentation</a>
-
 .. |default| raw:: html
 
    <a href="https://twig.symfony.com/doc/2.x/filters/default.html" target="_blank">default</a>
@@ -427,10 +423,6 @@ Links (User)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/UIBundle/Twig/FormatExtension.php#L76" target="_blank">oro_format</a>
 
-.. |oro_format_address| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/address-formatting.md#oro_format_address" target="_blank">oro_format_address</a>
-
 .. |oro_format_date| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L122" target="_blank">oro_format_date</a>
@@ -442,10 +434,6 @@ Links (User)
 .. |oro_format_datetime| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L92" target="_blank">oro_format_datetime</a>
-
-.. |oro_format_name| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/name-formatting.md#oro_format_name" target="_blank">oro_format_name</a>
 
 .. |oro_format_price| raw:: html
 
@@ -537,7 +525,7 @@ Links (User)
 
 .. |zero amount transaction| raw:: html
 
-   <a href="https://developer.paypal.com/docs/classic/payflow/integration-guide/?mark=Zero%20Amount%20Authorization#submitting-account-verifications" target="_blank">zero amount transaction</a>
+   <a href="https://developer.paypal.com/docs/payflow/integration-guide/?mark=Zero%20Amount%20Authorization#submitting-account-verifications" target="_blank">zero amount transaction</a>
 
 .. |https://registration.paypal.com/| raw:: html
 
@@ -619,13 +607,9 @@ Links (User)
 
    <a href="https://test.apruve.com" target="_blank">https://test.apruve.com</a>
 
-.. |here3| raw:: html
-
-   <a href="https://marketplace.orocrm.com/package/orocrm-dotmailer-integration/" target="_blank">here</a>
-
 .. |sign-on| raw:: html
 
-   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-dotdigital" target="_blank">sign-on</a>
 
 .. |https://r1-app.dotmailer.com/| raw:: html
 
@@ -633,7 +617,7 @@ Links (User)
 
 .. |Single sign-on| raw:: html
 
-   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">Single sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-dotdigital" target="_blank">Single sign-on</a>
 
 .. |Google Tag Manager| raw:: html
 
