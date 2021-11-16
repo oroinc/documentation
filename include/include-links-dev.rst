@@ -5615,6 +5615,18 @@ Links (Dev)
 
    <a href="https://hub.docker.com/r/oroinc/commerce-crm-application-de" target="_blank">docker.io/oroinc/commerce-crm-application-de</a>
 
+.. |Link types: preload| raw:: html
+
+   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload" target="_blank">MDN Link types: preload</a>
+
+.. |glyphhanger| raw:: html
+
+   <a href="https://github.com/zachleat/glyphhanger" target="_blank">glyphhanger</a>
+
+.. |Web Font Tools| raw:: html
+
+   <a href="https://github.com/bramstein/homebrew-webfonttools" target="_blank">Web Font Tools</a>
+
 .. |Taggable interface| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/TagBundle/Entity/Taggable.php" target="_blank">Taggable interface</a>
