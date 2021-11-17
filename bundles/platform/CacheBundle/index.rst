@@ -51,6 +51,44 @@ in the application configuration file, for example:
 The ``oro.cache.abstract.without_memory_cache service`` is always declared automatically based on
 ``oro.cache.abstract`` service.
 
+.. important::
+
+    Please note that abstract cache services are deprecated and will be removed in one of the future LTS releases.
+    Use :ref:`Data Cache Service <bundle-docs-platform-cache-bundle--data-cache-service>` instead.
+
+.. _bundle-docs-platform-cache-bundle--data-cache-service:
+
+Data Cache Service
+------------------
+
+We recommend using service ``oro.data.cache`` to cache the application data. This service uses |ChainAdapter| to improve cache operations.
+
+You can inject it into the service where you need to cache the data:
+
+.. code-block:: none
+
+    services:
+        acme.my_data_cache.service:
+            class: ACME\Bundle\ACMEBundle\Provider\CacheService
+            public: false
+            arguments:
+                - '@oro.data.cache'
+
+You can also set a namespace for the cache pool that extends ``oro.data.cache``:
+
+.. code-block:: none
+
+    services:
+        acme.data.cache:
+            parent: oro.data.cache
+            tags:
+                - { name: 'cache.pool', namespace: 'acme' }
+
+        acme.my_data_cache.service:
+            class: ACME\Bundle\ACMEBundle\Provider\CacheService
+            arguments:
+                - '@acme.data.cache'
+
 .. _bundle-docs-platform-cache-bundle--caching-static-configs:
 
 Caching Static Configuration
@@ -283,13 +321,12 @@ the persistent one.
 Default Cache Implementation
 ----------------------------
 
-There are two abstract services you can use as a parent for your cache services. Default implementations are
+There are two abstract services you can use as a parent for your cache services. Default implementations is
 following:
 
-- for CLI requests: |MemoryCacheChain| with only |FilesystemCache| as a cache provider
-- for other requests: |MemoryCacheChain| with |ArrayCache| on the top of |FilesystemCache|
+For services based on ``oro.data.cache`` the: |ChainAdapter| with |ArrayAdapter| on the top of |FilesystemAdapter|
 
-For services based on ``oro.cache.abstract.without_memory_cache`` the |MemoryCacheChain| is not used.
+For services based on ``oro.data.cache.without_memory_cache`` the |ChainAdapter| is not used.
 
 .. _bundle-docs-platform-cache-bundle--complex-objects-keys:
 

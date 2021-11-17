@@ -1159,6 +1159,19 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/validation.html" target="_blank">Symfony Validation Component</a>
 
+.. |ChainAdapter| raw:: html
+
+   <a href="https://symfony.com/doc/current/cache.html#creating-a-cache-chain" target="_blank">Symfony Cache ChainAdapter</a>
+
+.. |ArrayAdapter| raw:: html
+
+   <a href="https://symfony.com/doc/current/components/cache/adapters/array_cache_adapter.html" target="_blank">Symfony ArrayAdapter</a>
+
+.. |FilesystemAdapter| raw:: html
+
+   <a href="https://symfony.com/doc/current/components/cache/adapters/filesystem_adapter.html" target="_blank">Symfony FilesystemAdapter</a>
+
+
 .. |SPL| raw:: html
 
    <a href="http://php.net/manual/en/book.spl.php" target="_blank">SPL</a>
