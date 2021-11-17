@@ -1201,9 +1201,19 @@ Links (Dev)
    <a href="https://symfony.com/doc/4.4/reference/forms/types.html" target="_blank">in the Symfony documentation</a>
 
 
-.. |SwiftMailer configuration| raw:: html
+.. |Mailer configuration| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/configuration/swiftmailer.html" target="_blank">SwiftMailer configuration</a>
+   <a href="https://symfony.com/doc/current/reference/configuration/framework.html#mailer" target="_blank">Mailer configuration</a>
+
+
+.. |Symfony Mailer| raw:: html
+
+   <a href="https://symfony.com/components/Mailer" target="_blank">Symfony Mailer</a>
+
+
+.. |Multiple Email Transports| raw:: html
+
+   <a href="https://symfony.com/doc/current/mailer.html#multiple-email-transports" target="_blank">Multiple Email Transports</a>
 
 
 .. |Symfony Cookbook How to Register Event Listeners and Subscribers| raw:: html

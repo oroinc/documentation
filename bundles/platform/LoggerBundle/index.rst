@@ -34,7 +34,7 @@ The ``--recipients`` option can be used to update the list of the recipients tha
 
 Or you can configure recipients list using web interface from **System > Configuration > System Configuration > General Setup > Application Settings > Error Logs Notifications** section.
 
-To change log level for email notifications , update the ``monolog.handlers.swift.level`` parameter in ``config_prod.yml``.
+To change log level for email notifications , update the ``monolog.handlers.symfony_mailer.level`` parameter in ``config_prod.yml``.
 
 Temporarily Decrease Log Level
 ------------------------------

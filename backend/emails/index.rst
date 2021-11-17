@@ -210,29 +210,29 @@ contexts to customers, users, and so on):
 
     // ...
 
-    class EmailController extends Controller
+    class EmailController extends AbstractController
     {
         public function sendMailAction()
         {
             // ...
             $email = ...;
 
-            $processor = $this->get('oro_email.mailer.processor');
-            $processor->process($email);
+            $processor = $this->get('oro_email.sender.email_model_sender');
+            $processor->send($email);
         }
     }
 
-When calling the ``Oro\Bundle\EmailBundle\Mailer\Processor::process`` the mailer
-processor performs the following steps:
+When calling the ``Oro\Bundle\EmailBundle\Sender\EmailModelSender::send`` the mailer
+sender performs the following steps:
 
-#. It creates a new ``\Swift_Message`` instance and populate it with the data from your ``Email``
-   object.
+#. It creates a new ``\Symfony\Component\Mime\Email`` instance and populate it with the data from your
+   ``\Oro\Bundle\EmailBundle\Form\Model\Email`` object.
 
-#. If you did not pass an ``EmailOrigin`` object which should be used to associate the mail in the
-   user interface with, the processor will create on based on the sender address and the selected
+#. If you did not pass an ``\Oro\Bundle\EmailBundle\Entity\EmailOrigin`` object which should be used to associate
+   the mail in the user interface with, the sender will create on based on the sender address and the selected
    organization.
 
-#. The email will be sent based on your application's |SwiftMailer configuration| (if the current
+#. The email will be sent based on your application's |Mailer configuration| (if the current
    user configured a custom SMTP server in their settings, the configured server will be used
    instead).
 
