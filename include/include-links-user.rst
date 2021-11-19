@@ -843,3 +843,7 @@ Links (User)
 
    <a href="https://twitter.com/OroDocs" target="_blank">Twitter</a>
 
+.. |Oro-Microsoft 365 Integration| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce/extension/oro-microsoft-365-integration/" target="_blank">Oro-Microsoft 365 Integration</a>
+

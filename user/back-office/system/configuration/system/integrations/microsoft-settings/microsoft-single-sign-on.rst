@@ -1,11 +1,12 @@
-:oro_documentation_types: OroCRM, OroCommerce
+:oro_documentation_types: OroCRM, OroCommerce, Extension
 
 .. _user-guide-integrations-microsoft-single-sign-on:
 
 Configure Microsoft 365 Single Sign-On in the Back-Office
 =========================================================
 
-.. hint:: Microsoft 365 Single Sign-On is available since OroCRM v4.2.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint::
+    Microsoft 365 Single Sign-On is available since OroCRM v4.2.7 as part of the |Oro-Microsoft 365 Integration| extension. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Oro application supports Microsoft 365 Single Sign-On. This means that for a user that has the same primary email
 in the Oro application and Microsoft accounts, it is possible to use only their Microsoft set of credentials to

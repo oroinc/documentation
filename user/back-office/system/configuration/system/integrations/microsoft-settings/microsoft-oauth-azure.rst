@@ -5,8 +5,7 @@
 Configure Microsoft 365 OAuth Integration (Azure Active Directory Application)
 ==============================================================================
 
-Integration with Microsoft 365 via OAuth 2 API enables users to log in with their Microsoft 365 account and connect their mailbox to the Oro application using OAuth authentication.
-To achieve this, you need to register a custom Azure application and connect it with your Oro application.
+Integration with Microsoft 365 via OAuth 2 API enables users to log in with their Microsoft 365 account and connect their mailbox to the Oro application using OAuth authentication. To achieve this, you need to register a custom Azure application and connect it with your Oro application.
 
 Register an Application in Azure
 --------------------------------

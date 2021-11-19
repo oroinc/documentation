@@ -5678,7 +5678,7 @@ Links (Dev)
 
 .. |PHP 7.4 or 8.0| raw:: html
 
-   <a href="https://www.php.net/manual/en/install.php" target="_blank">|PHP 7.4 or 8.0|</a>
+   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP 7.4 or 8.0</a>
 
 .. |IdentityIterationStrategyInterface| raw:: html
 

@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM
+:oro_documentation_types: OroCRM, Commerce, Extension
 
 .. _user-guide-integrations-microsoft:
 
@@ -7,14 +7,14 @@ Configure Microsoft 365 Integration in the Back-Office
 
 .. hint:: Microsoft 365 calendar synchronization is available since OroCRM v4.2.5. Task synchronization is available since v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
-To configure email, calendar events, and task synchronization with Microsoft 365, follow the steps outlined below.
-
 .. note:: To use calendar events and tasks, add the **Calendars.ReadWrite** and **Tasks.ReadWrite** API permissions to the list of application permissions as well as the default list.
+
+To configure email, calendar events, and task synchronization with Microsoft 365, follow the steps outlined below:
 
 1. Navigate to **System > Configuration > Integrations > Microsoft Settings** in the main menu.
 
-  .. image:: /user/img/system/config_system/microsoft-sync-settings.png
-     :alt: Microsoft 365 Integration settings
+   .. image:: /user/img/system/config_system/microsoft-sync-settings.png
+      :alt: Microsoft 365 Integration settings
 
 2. Make sure that the :ref:`Azure Active Directory Application Settings <user-guide-integrations-azure-oauth>` are filled.
 
