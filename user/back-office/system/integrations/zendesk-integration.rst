@@ -77,7 +77,7 @@ As an illustration, we have created a sample Zendesk integration with two-way sy
 
 Initially the integration is inactive. In order to activate it, click **Activate** on the integration details page.
 
-.. note:: To edit, deactivate, schedule sync or delete the integration, navigate to the the page with all integrations **System > Integrations > Manage Integrations**.
+.. note:: To edit, deactivate, schedule sync or delete the integration, navigate to the page with all integrations **System > Integrations > Manage Integrations**.
 
     .. image:: /user/img/system/integrations/zendesk/zendesk_edit.png
 
@@ -91,7 +91,7 @@ Once integration has been created, the data is automatically synchronized.
 To start the synchronization manually:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
-2. For the the integraion with Zendesk, hover over the |IcMore| **More Options** menu to the right and click |BSchedule| to schedule sync.
+2. For the integraion with Zendesk, hover over the |IcMore| **More Options** menu to the right and click |BSchedule| to schedule sync.
 
 .. note:: Alternatively, open the integration details page and click **Schedule Sync** on the top right. 
 

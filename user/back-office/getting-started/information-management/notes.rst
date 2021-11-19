@@ -35,7 +35,7 @@ To add a note to a record:
 All the notes added to a record are displayed and can be reached from the **Activity** section of the record pages:
 
 .. image:: /user/img/getting_started/records/add_note_view.png
-   :alt: View the notes added to a record under the the Activity section
+   :alt: View the notes added to a record under the Activity section
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

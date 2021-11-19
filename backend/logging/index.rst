@@ -151,7 +151,7 @@ Placeholder rules:
 * The message MAY contain placeholders which implementors MAY replace with values from the context array.
 * Placeholder names MUST correspond to the keys in the context array.
 * Placeholder names MUST be delimited with a single opening brace { and a single closing brace }. There MUST NOT be any whitespace between the delimiters and the placeholder name.
-* Placeholder names SHOULD be composed only of the the following characters: A-Z, a-z, 0-9, underscore _, and period.
+* Placeholder names SHOULD be composed only of the following characters: A-Z, a-z, 0-9, underscore _, and period.
 
 Context
 -------

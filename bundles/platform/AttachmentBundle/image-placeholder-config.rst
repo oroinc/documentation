@@ -52,7 +52,7 @@ Make sure to insert CompilerPass to the bundle root file.
 Theme Image Placeholder Provider
 --------------------------------
 
-The second way to define an image placeholder is to set it on the theme layer. 
+The second way to define an image placeholder is to set it on the theme layer.
 
 To do this, perform the following:
 

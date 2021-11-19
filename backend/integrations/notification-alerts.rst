@@ -66,7 +66,7 @@ Alert entity datagrid columns:
       "**ITEM ID**","integer","The value is optional. The identifier of the specific resource (Entity) item, e.g. Task id or CalendarEvent id, etc.
 
         .. note:: The value can be empty, for example the case when Exception triggered on the step when entity id is not defined"
-      "**EXTERNAL ID**","string","The value is optional. The identifier of the specific resource item from external application, for example the Task id or CalendarEvent id of the the remote service, e.g. Microsoft Calendar or Task"
+      "**EXTERNAL ID**","string","The value is optional. The identifier of the specific resource item from external application, for example the Task id or CalendarEvent id of the remote service, e.g. Microsoft Calendar or Task"
       "**RESOLVED**","bool","Determines if the alert has been resolved, for example the alert can be raised during the first sync attempt due to timeout or connection issues and resolved later after retry, even without involving the administrator"
 
 Manipulating alerts in CLI

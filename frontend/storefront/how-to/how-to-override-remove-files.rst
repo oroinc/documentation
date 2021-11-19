@@ -19,7 +19,7 @@ To remove or override `scss/css`, create an assets.yml file in your theme and wr
 Remove Unnecessary Oro Files
 ----------------------------
 
-Remove all `scss/css`: all themes use styles registered in this theme and from parent themes.
+Remove all `scss/css`: all the themes use styles registered in this theme and from parent themes.
 You cannot change this behavior without changes in assets build logic.
 To remove all assets, override `oro_layout.assetic.layout_resource` service in your bundle and customize assets collect logic.
 

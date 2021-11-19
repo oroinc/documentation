@@ -31,7 +31,7 @@ To reach the Single Page Checkout workflow:
 
    .. note:: If the workflow is active, you can deactivate it from the list page by clicking |IcDeactivate|.
 
-   On the the Single Page Checkout workflow page, you can perform the following actions:
+   On the Single Page Checkout workflow page, you can perform the following actions:
 
    * Activate --- Click |IcActivate| **Activate** on the top right of the page to activate the workflow.
    * Deactivate (if the workflow is active) -- click |IcDeactivate| **Deactivate** on the top right of the page to deactivate the workflow.

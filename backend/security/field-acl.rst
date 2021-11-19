@@ -49,7 +49,7 @@ If you have no entity instance but you know a class name, ID of the record, the 
 Check Field ACL in TWIG Templates
 ---------------------------------
 
-Use the `is_granted` twig function to check grants in twig templates. To check the field, use the the field name as the third parameter of the function:
+Use the `is_granted` twig function to check grants in twig templates. To check the field, use the field name as the third parameter of the function:
  
 .. code-block:: php
 

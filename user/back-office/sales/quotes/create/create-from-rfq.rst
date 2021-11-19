@@ -61,7 +61,7 @@ To create a new quote from the customer request for quote (RFQ):
 
    .. image Shipping Options.
 
-7. In the **Shipping Information**, configure the default shipping option pre-selected for the the customer on the checkout:
+7. In the **Shipping Information**, configure the default shipping option pre-selected for the customer on the checkout:
 
    .. a) In the **Shipping Methods** list, tick the boxes next to the shipping methods that you would like the customer use for this order delivery.
 

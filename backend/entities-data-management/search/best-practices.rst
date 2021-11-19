@@ -147,7 +147,7 @@ There are several ways to optimize the search index and speed up the search and 
 
 * **Index data optimization**. You can check what entity data is not required (or not used) in the search index, remove it from mapping and/or indexed data, and trigger full reindexation (it might take some time). After that, each search document should become smaller and the whole index should take less space on your disk.
 
-* **Index structure optimization**. If you are using Elasticsearch, you can change the way full-text index is built: change default index analyzers, index tokenizers and index token filters to the the fastest ones.
+* **Index structure optimization**. If you are using Elasticsearch, you can change the way full-text index is built: change default index analyzers, index tokenizers and index token filters to the fastest ones.
 
 * **Accessibility optimization**. You can measure the delay required to connect to the search index storage and try to decrease this value. For example, move it to a server with a smaller network delay and connection time. If you are using Elasticsearch cluster, then you can check where shards and replicas are placed and optimize this infrastructure, as well.
 
