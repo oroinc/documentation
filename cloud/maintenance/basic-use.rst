@@ -71,6 +71,8 @@ Upgrade
 
 During the Oro application upgrade, the Oro cloud maintenance tool pulls the new version of the application source code from the repository (either from a new tag or branch) and runs the `oro:platform:update` command to launch the upgrade and any data migrations.
 
+.. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
+
 .. note:: By default, `upgrade` commands are run with the `--skip-search-reindexation` option. However, you can use the `--schedule-search-reindexation` option if you require reindexation.
 
 .. warning:: It is recommended to create a backup before launching an upgrade. If the upgrade does not succeed, you can roll back the application to the previous state and sustain all the data and configuration.
@@ -432,6 +434,8 @@ By default, the `app:console` command runs in the `silent` mode, which means tha
 Schema Update
 ~~~~~~~~~~~~~
 
+.. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
+
 Sometimes you may require to perform schema update operations. To do this, use the `app:schema:update` command:
 
 .. code-block:: none
@@ -442,6 +446,8 @@ Sometimes you may require to perform schema update operations. To do this, use t
 
 Application Cache
 ~~~~~~~~~~~~~~~~~
+
+.. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
 
 Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache with downtime. This command does the following:
 
