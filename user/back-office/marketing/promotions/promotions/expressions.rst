@@ -240,7 +240,7 @@ See more information about using collections in the **Collection Validation** se
 
 To validate all items in the collection (e.g. products in the order being submitted), or ensure that at least one value has a particular quality (e.g. it meets bulk quantity requirements), use *items.all(sub-condition)* and *items.any(sub-condition)*  expression phrases. The sub-condition is an expression that applies to every item. Note that it is enclosed in brackets, and no single/double quotes ('/") are used as they are reserved for the text values.
 
-When you are using `all` or `any` method, you provide the named collection of elements (e.g. products) and Oro automatically guesses the name of the single element (e.g. product). It is produced by stripping the trailing 's' for countable nouns and by adding a leading 'Item' the the uncountable ones, like in: `milk.all(milkItem.isfresh)`.
+When you are using `all` or `any` method, you provide the named collection of elements (e.g. products) and Oro automatically guesses the name of the single element (e.g. product). It is produced by stripping the trailing 's' for countable nouns and by adding a leading 'Item' the uncountable ones, like in: `milk.all(milkItem.isfresh)`.
 
 The `items.all(nested_expression)` expression is `true` when the nested condition is satisfied for every item in the collection. When an item evaluation results in `false`, the `items.all()` immediately returns `false` without processing the remaining items.
 

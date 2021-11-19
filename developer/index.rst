@@ -22,7 +22,7 @@ Developer Documentation is intended for developers and contains information abou
 .. raw:: html
 
    <h2><a href="../frontend/">Frontend Developer Guide</a></h2>
-   <p>Frontend Developer Guide provides the themes to prototype your application's storefront and back-office design.</p>
+   <p>Frontend Developer Guide provides themes to prototype your application's storefront and back-office design.</p>
 
 .. raw:: html
 

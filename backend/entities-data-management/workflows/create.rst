@@ -66,7 +66,7 @@ In the following example, you can find the configuration of the **Phone Call** w
 
 **Translations**
 
-Define the the user-interface workflow name:
+Define the user-interface workflow name:
 
 +----------------------------------------+---------------------+
 | Translation Key                        | Description         |

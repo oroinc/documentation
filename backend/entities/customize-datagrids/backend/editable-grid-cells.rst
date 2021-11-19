@@ -97,7 +97,7 @@ Then, add ``visibilityForCustomer`` field in the template.
     form_row(form.visibilityForCustomer, {'id': 'customer-product-visibility-changeset'})
     ...
 
-Attribute ``id`` must be specified in the ``selector`` parameter of the the grid config: ``selector: '#customer-product-visibility-changeset'``.
+Attribute ``id`` must be specified in the ``selector`` parameter of the grid config: ``selector: '#customer-product-visibility-changeset'``.
 
 As a result, field ``visibilityForCustomer`` which contains data in current format is going to be hidden:
 

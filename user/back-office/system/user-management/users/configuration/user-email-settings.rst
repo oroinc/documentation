@@ -4,7 +4,7 @@
 .. _admin-configuration-email-configuration-user:
 .. _my_email_configuration:
 .. _doc-my-user-configuration-email:
-.. _user-guide-using-emails-vie:
+
 
 Configure Email Settings per User
 =================================

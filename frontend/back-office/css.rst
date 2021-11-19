@@ -84,7 +84,7 @@ The application uses a Webpack tool for assets building. It supports a quite use
 compiled CSS to SCSS sources. So, in browser's web inspector (e.g., Google Chrome), you can see
 which SCSS code is styling an element directly.
 
-The assets building takes some time. So better build only the theme that is currently required. To speed up the process, add a theme name after the build command.
+The assets building takes some time, so it is better to build only the theme that is currently required. To speed up the process, add a theme name after the build command.
 
 .. code-block:: none
 

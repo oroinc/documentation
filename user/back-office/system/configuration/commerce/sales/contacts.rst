@@ -160,7 +160,7 @@ This would allow John Doe to:
 4. Click **Save Settings**. The information should become available on the website.
 
    .. image:: /user/img/system/config_commerce/sales/FrontSalesRepInfoLoggedIn.png
-      :alt: Illustrate how the the John Doe's contact info is displayed in the storefront
+      :alt: Illustrate how the John Doe's contact info is displayed in the storefront
 
 .. include:: /include/include-images.rst
    :start-after: begin

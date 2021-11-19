@@ -63,7 +63,6 @@ The **allowed options in the theme configuration** file is the following:
 
 .. code-block:: yaml
 
-
     #DemoBundle/Resources/views/layouts/first_theme/theme.yml
     label:  First Theme
     logo:   bundles/demo/themes/images/logo.png

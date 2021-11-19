@@ -40,7 +40,7 @@ is ignored. To turn off JS translations generation, set option `js_translation.d
             debug: false
 
 
-If you turned off JS translations generation, do it manually by executing the the command below which dumps translations for use in JavaScript:
+If you turned off JS translations generation, do it manually by executing the command below which dumps translations for use in JavaScript:
 
 .. code-block:: none
 
