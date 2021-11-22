@@ -51,13 +51,13 @@ To create a new user in the Oro application:
    * **Avatar** -- Click **Choose File** to upload a photo of the user you are creating.
    * **Send An Email Invitation** --- Select this check box to send an email invitation to the user once the profile is created. The invitation is sent to the email address specified in the **Primary Email** field.
    * **Primary Email** --- The main email address of the user.
-   * **Emails** --- Click **Add Another Email** and type an additional email address in the field that appears. You can add as many email addresses as required. To delete an email address, click **x** next to the email field that you want to delete.
+   * **Emails** --- Click **Add Another Email** and type an additional email address in the field that appears. You can add as many email addresses as required. To delete an email address, click **x** next to the email field you want to delete.
    * **Phone** --- The user's phone number.
 
-4. In the **Additional** section provide more information about the user (e.g. the job title). When visible custom fields are added to the **User** entity, they appear in this section.
+4. In the **Additional** section, provide more information about the user (e.g. the job title). When visible custom fields are added to the **User** entity, they appear in this section.
 5. In the **Groups and Roles** section, select the required system-wide :ref:`group <user-management-groups>` and :ref:`role <user-guide-user-management-permissions>` for the user you are creating.
 
-   .. important:: If you have the Enterprise edition of the Oro application, and you wish to limit access of the user you are creating to a specific organization, select it in the **Access Settings** section. If the organization has organization-specific roles, these will appear on the list in the **Group and Roles** section once you select the required organization in **Access Settings**.
+   .. important:: If you have the Enterprise edition of the Oro application and wish to limit access of the user you are creating to a specific organization, select it in the **Access Settings** section. If the organization has organization-specific roles, these will appear on the list in the **Group and Roles** section once you select the required organization in **Access Settings**.
 
    The following screenshot illustrates system-wide roles with no organization selected in **Access Settings**:
 
@@ -91,7 +91,7 @@ Once the user is created, it becomes available in the table of all users under *
 
    .. image:: /user/img/system/user_management/user_edit.png
 
-For information on the activities you can perform from the user profile page (such as send an email, or assign a calendar event), check out the :ref:`Activities <user-guide-activities>` topic.
+For information on the activities you can perform from the user profile page (such as sending an email, or assigning a calendar event), check out the :ref:`Activities <user-guide-activities>` topic.
 
 .. _doc-user-management-users-actions-create-ldap:
 
@@ -100,7 +100,7 @@ Create Users via LDAP
 
 The Enterprise edition of the Oro application supports integration with LDAP (Lightweight Directory Access Protocol) server which enables you to import existing user information (including role identifiers) from the LDAP server into the application.
 
-To enable import of LDAP records, you first need to set up integration with LDAP. Once the integration is established, user profiles are imported to the application and users can use their usual credentials to log into the application.
+To enable the import of LDAP records, you first need to set up integration with LDAP. Once the integration is established, user profiles are imported to the application and users can use their usual credentials to log into the application.
 
 Using LDAP integration does not prevent you from creating user records in the Oro application manually. Manually created user records are not imported back to your LDAP server.
 

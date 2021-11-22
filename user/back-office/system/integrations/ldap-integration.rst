@@ -20,7 +20,7 @@ Install LDAP Extension
 ----------------------
 
 LDAP extension is only available for Enterprise Edition users and comes with Enterprise versions of every Oro
-application, which means that no additional installation is required. However, if you happen to use a custom Enterprise Edition application without the LDAP extension, you can install separately. For this, use the |composer| to install *oro/crm-pro-ldap-bundle* package in your Oro Enterprise application, as described in the :ref:`Extensions and Package Manager Guide <cookbook-extensions-composer>` topic.
+application, which means that no additional installation is required. However, you can install it separately if you use a custom Enterprise Edition application without the LDAP extension. For this, use the |composer| to install *oro/crm-pro-ldap-bundle* package in your Oro Enterprise application, as described in the :ref:`Extensions and Package Manager Guide <cookbook-extensions-composer>` topic.
 
 Create LDAP Integration
 -----------------------
@@ -49,15 +49,15 @@ To set up an integration with LDAP:
      - *TLS*
    
      "
-     "**Base Distinguished Name***","The default base distinguished name used by the LDAP server for search (e.g. to 
-     search for LDAP accounts). This option is required for most account related operations and should indicate the 
+     "**Base Distinguished Name***","The default base distinguished name used by the LDAP server for search (e.g., to
+     search for LDAP accounts). This option is required for most account-related operations and should indicate the
      distinguished name under which accounts are located."
      "**Default Business Unit Owner***","A :term:`business unit <Business Unit>` that will by default own the newly 
      imported users in Oro application (members of this unit can manage the user records subject to the
      role settings).
      
      If you want to assign users to multiple business units, 
-     this can be done after the synchronization is complete - another option is to create separate integrations for every default business unit. "
+     this can be done after the synchronization is complete. Another option is to create separate integrations for every default business unit."
    
    Optionally, provide the following values, if they are required by the target LDAP server:
    
@@ -86,11 +86,11 @@ To set up an integration with LDAP:
 
    .. image:: /user/img/system/integrations/ldap/ldap_synch.png
 
-   Select the **Enable Two Way Sync** check box to upload user-related data both from the LDAP server to Oro application and back. 
+   Select the **Enable Two Way Sync** check box to upload user-related data both from the LDAP server to the Oro application and back.
 
-   If the box is unselected, data from the LDAP server will be loaded into Oro application, but changes performed in Oro application will not be synchronized with the target server.
+   If the box is unselected, data from the LDAP server will be loaded into the Oro application, but changes performed in Oro application will not be synchronized with the target server.
 
-7. If two-way synchronization is enabled, define the priority used for conflict resolution (e.g. if the same user details were edited from both Oro application and the target LDAP server):
+7. If two-way synchronization is enabled, define the priority used for conflict resolution (e.g., if the same user details were edited from both Oro application and the target LDAP server):
 
    * **Remote wins**: the LDAP server data will be applied
    * **Local wins**: the Oro application data will be applied
@@ -103,21 +103,21 @@ To set up an integration with LDAP:
      :header: "",""
      :widths: 10, 30
    
-     "**User Filter***","The filter used to search for users in the target LDAP server. (e.g. 
+     "**User Filter***","The filter used to search for users in the target LDAP server. (e.g.,
      objectClass=inetOrgPerson)" 
-     "**Username***","An attribute of the LDAP server that corresponds to Oro's user name (e.g. sn)."
-     "**Primary Email***","An attribute of the LDAP server that corresponds to Oro's Primary Email (e.g. cn)."
-     "**First Name***","An attribute of the LDAP server that corresponds to Oro's First Name (e.g. givenName)."
-     "**Last Name***","An attribute of the LDAP server that corresponds to Oro's Last Name (e.g. displayName)."
-     "**Role Filter***","The filter used to search for roles in the target LDAP server. (e.g. 
+     "**Username***","An attribute of the LDAP server that corresponds to Oro's user name (e.g., sn)."
+     "**Primary Email***","An attribute of the LDAP server that corresponds to Oro's Primary Email (e.g., cn)."
+     "**First Name***","An attribute of the LDAP server that corresponds to Oro's First Name (e.g., givenName)."
+     "**Last Name***","An attribute of the LDAP server that corresponds to Oro's Last Name (e.g., displayName)."
+     "**Role Filter***","The filter used to search for roles in the target LDAP server. (e.g.,
      objectClass=simpleSecurityObject)" 
-     "**Role Id Attribute***","An attribute of the LDAP server that corresponds to Oro's Role Id (e.g. cn)."
+     "**Role Id Attribute***","An attribute of the LDAP server that corresponds to Oro's Role Id (e.g., cn)."
      "**Role User Id Attribute***","An attribute of the LDAP server that corresponds to Oro's attribute that binds a
-     user to a role (e.g. roleOccupant)."
+     user to a role (e.g., roleOccupant)."
      "**Export User Object Class***","The class of the LDAP server objects that correspond to Oro's user profiles
-     (e.g. inetOrgPerson)."
+     (e.g., inetOrgPerson)."
      "**Export User Base Distinguished Name***","Distinguished name of the directory that contains LDAP server objects 
-     that correspond to  the user profiles in the Oro application (e.g. dc=orocrm,dc=com)."
+     that correspond to  the user profiles in the Oro application (e.g., dc=orocrm,dc=com)."
 
    * Click **+Add** under **Role Mapping** to map roles of Oro application and the target LDAP server.
    * Define the role name in the target LDAP server and choose the role in Oro application to map.
@@ -125,7 +125,7 @@ To set up an integration with LDAP:
      .. image:: /user/img/system/integrations/ldap/ldap_role_mapping_add_role.png
   
   
-9. Once the integration is established, user profiles are imported to the Oro application and users will be able to use their
+9. Once the integration is established, user profiles are imported to the Oro application, and users will be able to use their
 usual credentials to log into the Oro application.
 
 .. note::
