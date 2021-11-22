@@ -31,7 +31,7 @@ To configure email settings per organization:
 
    * **Email Threads** --- **Display Email Conversations As** and **Display Emails In Activity Lists As** define how emails and replies are displayed to the users, as threads or separately. Two options are available: threaded and non-threaded.
 
-   * **SMTP Settings** --- SMTP protocol allows to send email messages. Click **Check SMTP Connection** once you provide the following details:
+   * **SMTP Settings** --- SMTP protocol allows sending email messages. Click **Check SMTP Connection** once you provide the following details:
 
      * *Host* --- SMTP Host name, e.g. smtp.gmail.com
      * *Port* --- SMTP Port number, e.g. 465
@@ -39,7 +39,7 @@ To configure email settings per organization:
      * *Username* --- Your email address
      * *Password* --- The password for your email address
 
-   * **HTML in templates** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows to paste any HTML code into a template or an email body editor without tag stripping.
+   * **HTML in templates** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows pasting any HTML code into a template or an email body editor without tag stripping.
    
    * **System Mailboxes** --- A :ref:`system mailbox <admin-configuration-system-mailboxes>` allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**. 
 

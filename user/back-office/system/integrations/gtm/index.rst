@@ -272,33 +272,6 @@ To configure it correctly, provide the following tag, trigger, and variable conf
 .. image:: /user/img/system/integrations/gtm/checkout.png
    :alt: checkout tag configuration details
 
-.. _page-views:
-
-pageView
-````````
-
-To track each time a page loads in a web browser, create a *pageView* tag.
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
-
-* **Name** --- pageView tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- pageView
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
-
-**Triggering**
-
-* **Name** --- All Pages
-* **Trigger Type** --- Page View
-
-.. image:: /user/img/system/integrations/gtm/pageView.png
-   :alt: pageView tag configuration details
-
 .. _product-clicks:
 
 productClick
@@ -478,6 +451,35 @@ To configure it correctly, provide the following tag, trigger, and variable conf
 
 .. image:: /user/img/system/integrations/gtm/purchase.png
    :alt: purchase tag configuration details
+
+.. _page-views:
+
+pageView
+````````
+
+To track each time a page loads in a web browser, create a *pageView* tag.
+
+.. note:: The pageView tag is a universal tag for tracking any page and is used in the guide as an implementation example. For the E-Commerce flow, productDetail tag is used.
+
+To configure it correctly, provide the following tag, trigger, and variable configuration options:
+
+* **Name** --- pageView tag
+* **Track Type** --- Event
+* **Category** --- Ecommerce
+* **Action** --- pageView
+* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
+* **Enable overriding settings in this tag** --- Yes
+* **Tracking ID** --- Inherited from Settings variable
+* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
+* **Use Data Layer** --- Yes
+
+**Triggering**
+
+* **Name** --- All Pages
+* **Trigger Type** --- Page View
+
+.. image:: /user/img/system/integrations/gtm/pageView.png
+   :alt: pageView tag configuration details
 
 .. _gtm-integration-oro-side:
 

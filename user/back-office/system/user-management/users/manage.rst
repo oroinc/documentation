@@ -44,7 +44,7 @@ To enable/disable several users at the same time, use mass actions:
 Activate a User
 ---------------
 
-When user exceed allowed number of failed login attempts, the system automatically locks them out. User authentication status changes to **Locked** and the **Activate** button appears on the user page.
+When a user exceed the allowed number of failed login attempts, the system automatically locks them out. User authentication status changes to **Locked**, and the **Activate** button appears on the user page.
 
 To activate a user:
 
@@ -64,7 +64,7 @@ Delete a User
 To delete a user from the system:
 
 1. Navigate to **System > User Management > Users**.
-2. In the table of all users, hover over the ellipsis menu at the end of the row of the selected user, and click |IcDelete| **Delete**.
+2. In the table of all users, hover over the ellipsis menu at the end of the row of the selected user and click |IcDelete| **Delete**.
 
    .. important:: Keep in mind that you can delete only those users who have no records assigned to them.
 
@@ -81,7 +81,7 @@ To delete a user from the system:
 Export Multiple Users
 ---------------------
 
-You can export all user records into a .csv file. The exported file will contain all user record fields marked to be exported in the **User** entity settings. For more information about how to configure which fields will be exported, see the :ref:`Entity Fields <admin-guide-create-entity-fields>` topic.
+You can export all user records into a .csv file. The exported file will contain all user record fields marked to be exported in the **User** entity settings. For more information about configuring which fields will be exported, see the :ref:`Entity Fields <admin-guide-create-entity-fields>` topic.
 
 .. note:: All existing user records are exported at once. Passwords are stored and exported in the hashed form.
 
@@ -100,7 +100,7 @@ To export user records:
 Generate an API Key for a User
 ------------------------------
 
-When the integration with a third-party software or other work requirements demand a user to have the API access to the Oro application key for the user. This key is used to grant the user access to the required API while protecting their password from being disclosed to the third party.
+Integration with third-party software sometimes requires API access to the Oro application. A user can generate an API key to grant access to the required API while protecting their password from being disclosed to the third party.
 
 1. Navigate to **System > User Management > Users** in the main menu.
 2. On the page of all users, click once on the selected user to open their page.
@@ -175,7 +175,7 @@ Add an Application
 To add a new OAuth application in the back-office:
 
 1. Navigate to **System > User Management > Users** in the main menu.
-2. Click on a user name that you want to add an oauth application to.
+2. Click on a user name that you want to add an OAuth application to.
 3. In the **OAuth Applications** section, click **Add Application** on the top right and provide the following details in the pop-up dialog:
 
    .. image:: /user/img/getting_started/user_menu/oauth/oauth_tab.png
@@ -187,14 +187,14 @@ To add a new OAuth application in the back-office:
 
 4. Click **Create**.
 
-A corresponding notification is sent to the primary email address of the user, the owner of oauth application. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
+A corresponding notification is sent to the user's primary email address, the owner of the OAuth application. You can change the default recipient, localization, or email contents if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
 
 Once the application is created, you are provided with a Client ID and a Client Secret. Click on the |IcCopy| icon to copy the credentials to the clipboard.
 
 .. image:: /user/img/getting_started/user_menu/oauth/oauth_credentials.png
    :alt: OAuth credentials
 
-.. important:: For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe so you can access it later.
+.. important:: For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe to access it later.
 
 You can add as many applications as you need for any of your existing organizations. All added applications are displayed in the grid, and you can filter them by name, organization, and status.
 
