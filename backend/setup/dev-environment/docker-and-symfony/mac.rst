@@ -18,7 +18,7 @@ Environment Setup
 
    .. code-block:: none
 
-      brew cask install docker
+      brew install --cask docker
       open /Applications/Docker.app
 
 3. Install PHP 7.4, Composer, Node.js 14 and Docker Compose:
@@ -32,7 +32,8 @@ Environment Setup
 
    .. code-block:: none
 
-      pecl install mongodb
+      pecl channel-update pecl.php.net
+      pecl install mongodb-1.9.1
       echo "extension=\"mongodb.so\"" >> /usr/local/etc/php/7.4/php.ini
 
 5. Configure PHP:

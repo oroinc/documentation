@@ -37,11 +37,17 @@ Set Up the Environment
 
 **Recommendations**
 
-To avoid reaching composer API rate limit and to work with enterprise applications, configure |GitHub OAuth token|:
+1. To avoid reaching composer API rate limit and to work with enterprise applications, configure |GitHub OAuth token|:
 
    .. code-block:: none
 
       composer config -g github-oauth.github.com <oauthtoken>
+
+2. To consume less memory on composer operations it's highly recommended to install symfony flex composer plugin globally:
+
+   .. code-block:: none
+
+      composer global require symfony/flex
 
 .. _setup-dev-env-docker-symfony-install-application:
 
@@ -74,7 +80,7 @@ Install the Application
 
    .. code-block:: none
 
-      composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
+      composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" session_handler=snc_redis.session.handler redis_dsn_session='%env(ORO_REDIS_URL)%/0' redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
 
 5. Install Oro application
 
@@ -226,17 +232,6 @@ Destroy Application Services with all Volumes (Data Loss)
    docker-compose down -v
 
 For more details, see |Overview of Docker Compose|.
-
-Store Sessions in Redis
------------------------
-
-It is not recommended to store sessions on the same redis server as the
-cache, but for testing purpose, you can enable it with the following
-command:
-
-.. code-block:: none
-
-   composer set-parameters session_handler="snc_redis.session.handler" redis_dsn_session="%env(ORO_REDIS_URL)%/0"
 
 Troubleshooting
 ---------------
