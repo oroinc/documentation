@@ -137,10 +137,19 @@ Some options may also be omitted as they are added automatically:
 Application Configuration
 -------------------------
 
-Custom maintenance page, error pages (403, 451, 501, 502), web backend prefix, and consumers debug mode can be configured the following way. Keep in mind that the web_backend_prefix parameter should start with "/" and should not end with "/", for instance '/admin':
+There are two types of pages in Oro cloud, maintenance and error. Maintenance pages allow to determine the page you will see when you move the application into the maintenance mode. Error pages allow to redefine the standard pages that will be displayed in the event of the following errors:
+
+* Error 403 can be returned by the application itself when authorization is blocked, and by the web application firewall. 
+
+  .. note:: This status also can also be returned by nginx when the requested URL is forbidden or by the OroCommerce application itself. These pages are mananged by ngnix and the  application respectively.
+
+* Error 451 appears when requests are blocked by the firewall if they do not fit access policy, for example, when a request is coming from a forbidden IP address (see `OroCloud WAF Configuration`_ section for more information)
+* Error 501 is returned when when service is not implemented and/or the application does not support the requested functionality
+* Error 502 is returned when the server is unavailable (for example, because of the outage).
+
+Custom maintenance page, error pages (403, 451, 501, 502), web backend prefix, and consumers debug mode can be configured as described below. Keep in mind that the web_backend_prefix parameter should start with "/" and should not end with "/", for instance '/admin':
 
 .. code-block:: none
-
 
     ---
     orocloud_options:
@@ -148,15 +157,16 @@ Custom maintenance page, error pages (403, 451, 501, 502), web backend prefix, a
         maintenance_page: 'public/maintenance.html'
         error_pages:
           403: 'public/403.html'
-          451: 'public/403.html'
-          501: 'public/403.html'
-          502: 'public/403.html'
+          451: 'public/451.html'
+          501: 'public/501.html'
+          502: 'public/502.html'
         web_backend_prefix: '/my_admin_console_prefix'
         consumers_debug_mode: true
 
-.. note:: ``maintenance_page`` and ``error_pages`` are relative paths to files in application repository. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 30 minutes.
 
-.. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to Service Desk before making any change. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``upgrade:source`` to apply changes.
+The ``maintenance_page`` and ``error_pages`` are relative paths to files in the application repository. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 30 minutes.
+
+.. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to the Service Desk before making any changes. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``upgrade:source`` to apply changes.
 
 Webserver Configuration
 -----------------------
@@ -164,7 +174,6 @@ Webserver Configuration
 Webserver configuration can be modified, as illustrated below:
 
 .. code-block:: none
-
 
     ---
     orocloud_options:
