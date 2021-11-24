@@ -654,7 +654,7 @@ Oro\\Bundle\\ImportExportBundle\\Serializer\\Normalizer\\AbstractContextModeAwar
 
 **Description:**
 
-AbstractContextModeAwareNormalizer ia an abstract normalizer that manages the available normalizers and default modes.
+AbstractContextModeAwareNormalizer is an abstract normalizer that manages the available normalizers and default modes.
 
 **Methods:**
 
