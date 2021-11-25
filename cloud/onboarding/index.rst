@@ -79,7 +79,6 @@ On top of deployment and configuration processes described in this topic, you ma
 * Granting access to application logs
 * Configuring Message Queue
 * Configuring application resources
-* Enabling availability check monitoring
 
 Please refer to the :ref:`checklist of all OroCommerce Cloud application deployment and configuration activities <support-requests-further-app-deployment>` for task delivery estimates and information that you need to provide to the Support team to fulfil your requests. Please be aware that the checklist includes those activities that can only be completed by the Support Team, unless otherwise stated.
 
