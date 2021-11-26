@@ -16,7 +16,7 @@ The assets can be build only for a specific theme if its name is provided as an 
 
 .. code-block:: none
 
-    php bin/console oro:assets:build <theme-name>
+    php bin/console oro:assets:build <theme-name>[,<theme-name>]
 
 .. code-block:: none
 
@@ -29,6 +29,10 @@ The assets can be build only for a specific theme if its name is provided as an 
 .. code-block:: none
 
     php bin/console oro:assets:build admin.oro
+
+.. code-block:: none
+
+    php bin/console oro:assets:build default,admin.oro
 
 With ``--env=dev``, the assets are built without minification and with source-maps, while with ``--env=prod``, the assets are minified and do not include source-maps:
 

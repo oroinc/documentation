@@ -93,10 +93,10 @@ To add blocks to resulting ``styles.css`` file, include them into ``styles.scss`
 
 To include configs in the resulting ``styles.css`` file, add them  to the ``assets.yml`` file located in ``MyBundle/Resources/views/layouts/my-theme/config/``:
 
-.. code-block:: css
+.. code-block:: yaml
 
 
-   styles:
+   css:
        inputs:
            - 'bundles/mybundle/my-theme/scss/settings/global-settings.scss'
            - 'bundles/mybundle/my-theme/scss/variables/button-config.scss'
@@ -166,7 +166,7 @@ Another example: ``input-config.scss``:
 .. code-block:: css
 
 
-   styles:
+   css:
        inputs:
            - 'bundles/mybundle/my-custom-theme/scss/settings/global-settings.scss'
            - 'bundles/mybundle/my-custom-theme/scss/variables/input-config.scss'

@@ -34,7 +34,7 @@ SCSS files as other template assets (images as javascripts) and :ref:`layout upd
 CSS Files Structure
 -------------------
 
-Assets for each theme are located in a particular theme folder, e.g., *BundleName/Resources/public/theme\_name/scss/*.
+Assets for each theme are located in a particular theme folder, e.g., ``BundleName/Resources/public/{theme_name}/scss/``.
 
 Core styles are located in |UIBundle|: *UIBundle/Resources/public/blank/scss/*.
 
@@ -48,9 +48,9 @@ CSS structure has three folders, **components**, **settings**, and **variables**
 
 Each bundle has its own **styles.scss** that collects all variables, settings, and components styles.
 
-To enable css for a particular theme, add the styles.scss file name to the **assets.yml** file in the appropriate bundle, e.g., *BundleName/Resources/views/layouts/theme\_name/config/assets.yml*.
+To enable css for a particular theme, add the styles.scss file name to the **assets.yml** file in the appropriate bundle, e.g., ``BundleName/Resources/views/layouts/{theme_name}/config/assets.yml``.
 
-An example of the three folders structure (e.g., the *BundleName/Resources/views/layouts/theme\_name/scss/* folder):
+An example of the three folders structure (e.g., the ``BundleName/Resources/views/layouts/{theme_name}/scss/`` folder):
 
 ::
 
@@ -70,9 +70,8 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
         page-title-config.scss
     styles.scss
 
-*BundleName/Resources/views/layouts/theme\_name/scss/styles.scss*
-
 .. code-block:: scss
+    :caption: BundleName/Resources/views/layouts/{theme_name}/scss/styles.scss
 
     @import 'components/page-container';
     @import 'components/page-header';
@@ -80,11 +79,10 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
     @import 'components/page-footer';
     @import 'components/page-title';
 
-*BundleName/Resources/views/layouts/theme\_name/config/assets.yml*
-
 .. code-block:: yaml
+    :caption: BundleName/Resources/views/layouts/{theme_name}/config/assets.yml
 
-    styles:
+    css:
         inputs:
             - 'bundles/oroui/blank/scss/settings/global-settings.scss'
             - 'bundles/oroui/blank/scss/variables/base-config.scss'
@@ -101,16 +99,15 @@ An example of the three folders structure (e.g., the *BundleName/Resources/views
         auto_rtl_inputs:
             # List of file masks for inputs that has to be processed with RTL plugin
             - 'bundles/oro*/**'
-        filters: ['cssrewrite', 'cssmin']
         output: 'css/styles.css'
 
-Compiler collects all styles in one file for the theme. All files should be sorted by priority. There are files with a **settings folder** at the top followed by **variables** and all **styles.scss** at the end.
+Compiler collects all styles in one file for the theme. All files should be sorted by priority.
+There are files with a **settings folder** at the top followed by **variables** and all **styles.scss** at the end.
 
 Example:
 
-*application/commerce/public/build/base/styles.scss*
-
-::
+.. code-block:: scss
+    :caption: application/commerce/public/build/{theme_name}/css/styles.css.scss
 
     @import "../bundles/oroui/blank/scss/settings/global-settings.scss";
     @import "../bundles/oroui/blank/scss/variables/base-config.scss";
@@ -119,13 +116,48 @@ Example:
     @import "../bundles/oroui/blank/scss/variables/page-content-config.scss";
     @import "../bundles/oroui/blank/scss/variables/page-footer-config.scss";
     @import "../bundles/oroui/blank/scss/variables/page-title-config.scss";
-    @import "../bundles/orocustomer/blank/scss/**styles.scss**";
+    @import "../bundles/orocustomer/blank/scss/styles.scss";
     @import "~prismjs/themes/prism-coy.css";
 
 This structure enables us to change styles for components on a bundle
 level, on a component level and for a particular theme. The main idea
 of this approach is not to override styles in a child
 theme from the parent one. We just change settings and add additional CSS(SASS).
+
+.. _dev-doc-frontend-storefront-primary-settings-and-variables:
+
+Define Custom Primary Settings and Variables
+--------------------------------------------
+
+To customize primary settings and variables (such as colors, fonts, etc.),
+create the ``Resources/views/layouts/{theme_name}/config/assets.yml`` file in your
+theme and write the following config in it:
+
+.. code-block:: yaml
+    :caption: Resources/views/layouts/{theme_name}/config/assets.yml
+
+    css:
+        inputs:
+            - 'bundles/{your_bundle}/{theme_name}/scss/settings/primary-settings.scss'
+            - 'bundles/{your_bundle}/{theme_name}/scss/variables/primary-variables.scss'
+
+Create files ``settings/primary-settings.scss`` and ``variables/primary-variables.scss`` accordingly with the desired variables definition.
+They will pop up within the import list of the build's entry point file:
+
+.. code-block:: scss
+    :caption: application/commerce/public/build/{theme_name}/css/styles.css.scss
+
+    @import "../bundles/{your_bundle}/{theme_name}/scss/settings/primary-settings.scss";
+    @import "../bundles/oroui/blank/scss/settings/global-settings.scss";
+    @import "../bundles/{your_bundle}/{theme_name}/scss/variables/primary-variables.scss";
+    @import "../bundles/oroui/blank/scss/variables/base-config.scss";
+    @import "../bundles/oroui/blank/scss/variables/page-container-config.scss";
+    @import "../bundles/oroui/blank/scss/variables/page-header-config.scss";
+    @import "../bundles/oroui/blank/scss/variables/page-content-config.scss";
+    @import "../bundles/oroui/blank/scss/variables/page-footer-config.scss";
+    @import "../bundles/oroui/blank/scss/variables/page-title-config.scss";
+    @import "../bundles/orocustomer/blank/scss/styles.scss";
+    @import "~prismjs/themes/prism-coy.css";
 
 .. _dev-doc-frontend-storefront-css-override-files:
 
@@ -136,12 +168,12 @@ To remove or override ``scss/css``, create the ``Resources/views/layouts/{theme_
 theme and write the following config in it:
 
 .. code-block:: yaml
+    :caption: Resources/views/layouts/{theme_name}/config/assets.yml
 
-    styles:
+    css:
         inputs:
             - 'bundles/oroform/blank/scss/styles.scss': ~ // file will be removed from build process
-            - 'bundles/oroform/blank/scss/styles.scss': 'bundles/oroform/your_theme/scss/styles.scss' // file will be overridden
-
+            - 'bundles/oroform/blank/scss/styles.scss': 'bundles/oroform/{theme_name}/scss/styles.scss' // file will be overridden
 
 .. _dev-doc-frontend-css-theme-extending:
 
@@ -153,9 +185,8 @@ theme in the :ref:`theme.yml <dev-doc-frontend-layouts-theming-definition>` file
 
 For example, if you need to inherit the default theme from *blank*, perform the following:
 
-*/theme.yml*
-
-::
+.. code-block:: yaml
+    :caption: /theme.yml
 
     parent: blank
 
@@ -164,9 +195,8 @@ It enables you to inherit all styles from the parent theme and have access to al
 Here is an example of using the default theme. The aim is to change the global settings and the appearance of form elements. For this, we create theme folders and several scss files in the corresponding bundles
 (FrontEndBundle, FormBundle).
 
-*FrontEndBundle/Resources/public/default/scss/*
-
-::
+.. code-block:: none
+    :caption: FrontEndBundle/Resources/public/default/scss/
 
     settings/
         global-settings.scss
@@ -175,11 +205,9 @@ Here is an example of using the default theme. The aim is to change the global s
         page-footer-config.scss
         page-title-config.scss
 
-*FrontEndBundle/Resources/views/layouts/default/config/*
+.. code-block:: yaml
+    :caption: FrontEndBundle/Resources/views/layouts/default/config/assets.yml
 
-::
-
-    assets.yml/
         inputs:
             - 'bundles/orofrontend/default/scss/settings/global-settings.scss'
 
@@ -187,12 +215,10 @@ Here is an example of using the default theme. The aim is to change the global s
             - 'bundles/orofrontend/default/scss/variables/page-footer-config.scss'
             - 'bundles/orofrontend/default/scss/variables/page-title-config.scss'
             - 'bundles/orofrontend/default/scss/styles.scss'
-        filters: ['cssrewrite', 'cssmin']
         output: 'css/styles.css'
 
-*FormBundle/Resources/public/default/scss/*
-
-::
+.. code-block:: none
+    :caption: FormBundle/Resources/public/default/scss/
 
     components/
         input.scss
@@ -204,9 +230,8 @@ Here is an example of using the default theme. The aim is to change the global s
 
 Update and add new variables for this component
 
-*input-config.scss*
-
 .. code-block:: scss
+    :caption: input-config.scss
 
     $input-padding: 10px 12px; // update the variable's value with blank theme
     $input-font-size: 13px; // update the variable's value with blank theme
@@ -214,9 +239,8 @@ Update and add new variables for this component
 
 Add missing styles for this component
 
-*input.scss*
-
 .. code-block:: none
+    :caption: input.scss
 
     .input {
         margin: $input-offset;
@@ -226,29 +250,26 @@ Add missing styles for this component
         }
     }
 
-*styles.scss*
-
 .. code-block:: scss
+    :caption: styles.scss
 
         @import 'components/input';
 
 *FormBundle/Resources/views/layouts/default/config/*
 
-::
+.. code-block:: yaml
+    :caption: assets.yml
 
-    assets.yml/
         inputs:
             - 'bundles/oroform/default/scss/settings/global-settings.scss'
             - 'bundles/oroform/default/scss/variables/input-config.scss'
             - 'bundles/oroform/default/scss/styles.scss'
-        filters: ['cssrewrite', 'cssmin']
         output: 'css/styles.css'
 
 In the main file of the default theme, we have:
 
-*application/commerce/public/build/default/styles.css.scss*
-
-::
+.. code-block:: none
+    :caption: application/commerce/public/build/default/styles.css.scss
 
     @import "../bundles/oroui/**blank**/scss/**settings**/global-settings.scss";
 

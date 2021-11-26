@@ -24,3 +24,4 @@ Change Corporate Identity:
    Change Offsets <how-to-change-offsets>
    Replace Placeholder Images for Products <how-to-replace-product-images-placeholders>
    Override, Remove or Disable Files <how-to-override-remove-files>
+   Create Extra JS Build for a Landing Page <how-to-create-extra-js-build-for-landing-page>
