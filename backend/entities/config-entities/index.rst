@@ -14,6 +14,50 @@ entities can be viewed and modified.
 Getting Started
 ---------------
 
+You can use configuration to define a new entity config attribute:
+
+1. Create a configuration file that implements ``EntityConfigInterface`` or ``FieldConfigInterface``. For entity config, use ``EntityConfigInterface`` and the class that ends with EntityConfiguration. For field config, use ``FieldConfigInterface`` and the class that ends with FieldConfiguration.
+
+Example:
+
+.. code-block:: php
+
+    namespace Acme\DemoBundle\EntityConfig;
+
+    use Oro\Bundle\EntityConfigBundle\Config\Processor\EntityConfigInterface;
+    use Symfony\Component\Config\Definition\Builder\NodeBuilder;
+
+    class AcmeDemoAttrConfiguration implements EntityConfigInterface
+    {
+        public function getSectionName(): string
+        {
+            return 'acme';
+        }
+
+        public function configure(NodeBuilder $nodeBuilder): void
+        {
+            $nodeBuilder
+                ->scalarNode('demo_attr')
+                    ->info('`string` demo attribute description.')
+                    ->defaultNull()
+                ->end()
+            ;
+        }
+    }
+
+2. Add this class to ``services.yml`` with tag ``oro_entity_config.validation.entity_config`` .
+
+Example:
+
+.. code-block:: yaml
+
+    Acme\DemoBundle\EntityConfig\AcmeDemoAttrConfiguration:
+        tags:
+            - oro_entity_config.config_processor
+
+Add Settings to entity_config.yml
+---------------------------------
+
 To illustrate how metadata can be added to an entity, lets add the following YAML file (this file must be located in ``[BundleName]/Resources/config/oro/entity_config.yml``):
 
 .. code-block:: yaml
@@ -24,7 +68,8 @@ To illustrate how metadata can be added to an entity, lets add the following YAM
                 items:                             # starts a description of entity attributes
                     demo_attr:                     # adds an attribute named 'demo_attr'
                         options:
-                            default_value: 'Demo'  # sets the default value for 'demo_attr' attribute
+                            priority: 100
+                            indexed:  true
 
 This configuration adds the 'demo_attr' attribute with the 'Demo' value to all configurable entities. The configurable entity is an entity marked with the `@Config` annotation. This code also automatically adds a service named **oro_entity_config.provider.acme** into the DI container. You can use this service to get a value of the 'demo_attr' attribute for a particular entity.
 
@@ -111,51 +156,6 @@ Essentially, it is all you need to add metadata to any entity. But in most cases
 Now you can go to System > Entities in the back-office. The 'Demo Attr' column should be displayed in the grid. Click Edit on any entity to open the edit entity form. 'Demo Attr' field should be displayed there.
 
 .. hint:: Check out the :ref:`example of YAML config <yaml-format-config-entity>`.
-
-Add Custom Config Validation
-----------------------------
-
-To add config validation to your bundle:
-
-1. Create a configuration file that implements ``ConfigurationEntityInterface`` or ``ConfigurationFieldInterface``. For entity config, use ``ConfigurationEntityInterface`` and the class that ends with EntityConfiguration. For field config, use ``ConfigurationFieldInterface`` and the class that ends with FieldConfiguration.
-
-Example:
-
-.. code-block:: php
-
-    namespace Oro\Bundle\SecurityProBundle\Config\Validation;
-
-    use Oro\Bundle\EntityConfigBundle\Config\Validation\ConfigurationEntityInterface;
-    use Symfony\Component\Config\Definition\Builder\NodeBuilder;
-
-    /**
-     * Configuration for security section
-     */
-    class SecurityEntityConfiguration implements ConfigurationEntityInterface
-    {
-        public function getSectionName(): string
-        {
-            return 'security';
-        }
-
-        public function setConfigurationForSection(NodeBuilder &$nodeBuilder): void
-        {
-            $nodeBuilder
-                ->variableNode('share_scopes')->end()
-            ;
-        }
-    }
-
-2. Add this class to ``services.yml`` with tag ``oro_entity_config.validation.entity_config`` .
-
-Example:
-
-.. code-block:: yaml
-
-    Oro\Bundle\SecurityProBundle\Config\Validation\SecurityEntityConfiguration:
-        tags:
-            - oro_entity_config.validation.entity_config
-
 
 Implementation
 --------------

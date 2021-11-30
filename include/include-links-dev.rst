@@ -5350,6 +5350,14 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RedirectBundle/Entity/SluggableInterface.php" target="_blank">SluggableInterface</a>
 
+.. |ExtendScope.php| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/EntityConfig/ExtendScope.php" target="_blank">ExtendScope.php</a>
+
+.. |IndexScope.php| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/EntityConfig/IndexScope.php" target="_blank">IndexScope.php</a>
+
 .. |SerializedFieldsExtension| raw:: html
 
    <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/master/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>

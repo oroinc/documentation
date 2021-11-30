@@ -124,7 +124,7 @@ Create Extended Entities
                            'owner' => ExtendScope::OWNER_CUSTOM
                        ],
                        'entity' => ['label' => 'Hotel rating'],
-                       'datagrid' => ['is_visible' => false]
+                       'datagrid' => ['is_visible' => DatagridScope::IS_VISIBLE_FALSE]
                    ]]
                );
            }

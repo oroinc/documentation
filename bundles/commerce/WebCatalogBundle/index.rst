@@ -63,7 +63,7 @@ This migration should implement `ExtendExtensionAwareInterface`.
                             'cascade' => ['persist', 'remove'],
                             'on_delete' => 'CASCADE',
                         ],
-                        'datagrid' => ['is_visible' => false],
+                        'datagrid' => ['is_visible' => DatagridScope::IS_VISIBLE_FALSE],
                         'form' => ['is_enabled' => false],
                         'view' => ['is_displayable' => false],
                         'merge' => ['display' => false],
