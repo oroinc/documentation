@@ -22,8 +22,8 @@ To open display settings:
 2. Select **System Configuration > General Setup > Display Settings** in the menu to the left.
 
 .. image:: /user/img/system/config_system/display_settings.png
-   :width: 500
    :alt: Global display settings configuration
+   :align: center
 
 **User Bar**
 
@@ -59,15 +59,18 @@ The following options are available:
 +===========================+================================================================================================================+
 | Items Per Page By Default | Defines the number of items displayed on one page of the grid by default (every time you open the grid).       |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Lock Headers In Grids     | Select this check box to ensure that headers of a record grid will stay visible while you scroll.              |
+| Lock Headers In Grids     | Ensures that grid headers stay visible while you scroll.                                                       |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
+| Row Link Navigation       | Enables the ability for the row in the grid to behave like a native link. By right-clicking on the item in the |
+|                           | the grid, you can open it in a new tab/window.                                                                 |
++---------------------------+----------------------------------------------------------------------------------------------------------------+
+| Record Pagination         | Enables the user navigate to the previous or next grid record from a record view page.                         |
 |                           |                                                                                                                |
 |                           | .. image:: /user/img/system/config_system/user_configuration_pagination.png                                    |
 |                           |    :alt: A record pagination sample                                                                            |
 |                           |                                                                                                                |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Record Pagination Limit   | Defines a maximum number of records available for the record pagination                                        |
+| Record Pagination Limit   | Defines a maximum number of records available for the record pagination.                                       |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 
 
