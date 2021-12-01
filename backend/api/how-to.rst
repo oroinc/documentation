@@ -811,9 +811,9 @@ To do this, you need to perform the following:
 
        class CheckErpRequestType implements ProcessorInterface
        {
-           const REQUEST_HEADER_NAME = 'X-Integration-Type';
-           const REQUEST_HEADER_VALUE = 'ERP';
-           const REQUEST_TYPE = 'erp';
+           private const REQUEST_HEADER_NAME = 'X-Integration-Type';
+           private const REQUEST_HEADER_VALUE = 'ERP';
+           private const REQUEST_TYPE = 'erp';
 
            /**
             * {@inheritdoc}

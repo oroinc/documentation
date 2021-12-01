@@ -59,7 +59,7 @@ The |DescriptionsConfigExtra| is used to request human-readable descriptions of 
 
     class DescriptionsConfigExtra implements ConfigExtraInterface
     {
-        const NAME = 'descriptions';
+        public const NAME = 'descriptions';
 
         public function getName()
         {
