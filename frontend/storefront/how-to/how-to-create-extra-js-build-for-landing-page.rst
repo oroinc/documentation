@@ -5,7 +5,7 @@ How to Create Extra JS Build for a Landing Page
 
 To optimize the performance of landing pages and minimize the amount of loaded JS on those pages, you can build an extra JS build only with essential modules.
 
-.. _dev-doc-declare-extra=js-build-for-layout-theme:
+.. _dev-doc-declare-extra-js-build-for-layout-theme:
 
 Declare Extra JS Build for Layout Theme
 ---------------------------------------
@@ -145,3 +145,18 @@ For that purpose, create a layout update and specify the following options:
 .. note:: See :ref:`Layout <dev-doc-frontend-layouts-layout>` documentation for more details.
 
 The landing page will now load the custom JS build.
+
+.. _how-to-create-extra-js-build-for-landing-page-optimized-theme:
+
+Optimized Theme
+---------------
+
+*Optimized* theme inherits the *default* theme and has the same styles and JavaScript builds. However, it has an additional *landing* build defined, which is used on CMS pages.
+
+To enable this theme:
+
+1. Add it to list of :ref:`enabled themes <frontend-optimize-javascript-assets-enabled-layout-themes>` in the config file
+2. Enable the :ref:`optimized theme <configuration--commerce--design--theme>` in the system configuration.
+
+   .. note::
+    Use the *optimized* theme with **caution** as there is a risk of breaking the functionality that you may have added through WYSIWYG.  Be sure that all the necessary modules used on your CMS pages are included into the *landing* build.

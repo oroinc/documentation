@@ -36,22 +36,22 @@ To configure the storefront theme options globally:
 
    For example, this is how the address book looks in the storefront for the default and custom themes:
 
-   **Default theme**
+     **Default theme**
 
-   .. image:: /user/img/system/config_commerce/design/MyProfileAddressBooks.png
-      :alt: A sample of the Address Book menu in the storefront if the default theme is enabled
+     .. image:: /user/img/system/config_commerce/design/MyProfileAddressBooks.png
+        :alt: A sample of the Address Book menu in the storefront if the default theme is enabled
 
-   **Custom theme**
+     **Custom theme**
 
-   .. image:: /user/img/system/config_commerce/design/address_book_compact.png
-      :alt: A sample of the Address Book menu in the storefront if the custom theme is enabled
+     .. image:: /user/img/system/config_commerce/design/address_book_compact.png
+        :alt: A sample of the Address Book menu in the storefront if the custom theme is enabled
 
-   **Product Image Placeholder** --- select the image file that will appear on the product listing and product view pages for the products that have no associated images to avoid a blank image page.
+   * **Product Image Placeholder** --- select the image file that will appear on the product listing and product view pages for the products that have no associated images to avoid a blank image page.
 
    .. image:: /user/img/system/config_commerce/design/product_image_placeholder.png
       :alt: A sample of the product image placeholder on the product listing page
 
-   **Category Image Placeholder** --- select the image file to be applied to the category that has no associated image. The image is usually used in various category widgets (e.g., *Featured Categories*).
+   * **Category Image Placeholder** --- select the image file to be applied to the category that has no associated image. The image is usually used in various category widgets (e.g., *Featured Categories*).
 
    .. image:: /user/img/system/config_commerce/design/category_image_placeholder.png
       :alt: A sample of the product image placeholder for the on the product listing age
@@ -94,9 +94,9 @@ To configure the storefront theme options globally:
 
 7. In the **Grid Settings** section, configure the following options:
 
-   **Responsive Grids** --- This option makes storefront grids responsible, realigning row cells to fit various screen sizes.
+   * **Responsive Grids** --- This option makes storefront grids responsible, realigning row cells to fit various screen sizes.
 
-   **Swipe Actions Grids** --- This option enables swipe actions for the storefront grids on mobile devices.
+   * **Swipe Actions Grids** --- This option enables swipe actions for the storefront grids on mobile devices.
 
 8. Click **Save Settings**.
 

@@ -1,3 +1,5 @@
+.. _frontend-optimize-javascript-assets:
+
 Optimize Build Performance of CSS and JavaScript Assets
 =======================================================
 
@@ -15,6 +17,8 @@ If you have to support only the latest version of mainstream browsers, consider 
 
    oro_asset:
        disable_babel: true
+
+.. _frontend-optimize-javascript-assets-enabled-layout-themes:
 
 Enabled Layout Themes
 ---------------------
