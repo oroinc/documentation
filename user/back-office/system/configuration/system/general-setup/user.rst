@@ -53,7 +53,7 @@ Configure Login Attempts
 Configure Password Change Policy
 --------------------------------
 
-.. note:: This feature is only available in the Enterprise edition and is applied to both storefront and back-office users.
+.. note:: This feature is only available in the Enterprise edition and is only applied to back-office users.
 
 .. csv-table::
   :widths: 10, 30 
