@@ -263,7 +263,7 @@ The attribute enables you to merge the scope of an entity.
 
 * **enable** *boolean* - enables merge for this entity.
 
-* **cast_method** *string* - options for rendering entity as string in the UI. Method of entity to cast object to string. If these options are empty __toString will be used (if it's available).
+* **cast_method** *string* - options for rendering entity as string in the UI. Method of entity to cast object to string. If these options are empty __toString will be used (if available).
 
 * **template** *string* - a twig template to render object as string.
 

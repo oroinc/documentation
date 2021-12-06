@@ -33,7 +33,7 @@ To create a :term:`consent <Consent>` in OroCommerce:
    * **Web Catalog** --- Select the web catalog where you intend to use this consent.
    * **Content Node** --- Content nodes are added to web catalogs as landing pages, and linked as content variants to the catalog nodes. The selected web сatalog node can be configured to display different landing pages (content variants) in different languages. To link the consent to the required node, click on the required node in the tree to select it.
 
-     .. note:: It is recommended have the required web catalog and the node created prior to creating a new consent. Read more on catalogs in the :ref:`Web Catalogs <user-guide--web-catalog>` topic.
+     .. note:: It is recommended to have the required web catalog and the node created prior to creating a new consent. Read more on catalogs in the :ref:`Web Catalogs <user-guide--web-catalog>` topic.
 
      .. image:: /user/img/system/consents/link_consent_to_node.png
         :class: with-border

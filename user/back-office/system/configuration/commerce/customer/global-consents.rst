@@ -66,7 +66,8 @@ To add consents to the list of enabled consents:
 
 #. If more than one consent is added to the **Enabled User Consents** list, you can drag and drop them to set the order in which these consents will be displayed in the storefront.
 
-   .. note:: The number of consents that can be added to the list equals the number of consents created in the application. In addition, once consent cannot be added twice.
+   .. note::
+        The number of consents that can be added to the list equals the number of consents created in the application. In addition, one consent cannot be added twice.
 
 #. To delete a consent from the list of enabled consents, click **x** next to it.
 #. Click **Save Settings** on the top right.
