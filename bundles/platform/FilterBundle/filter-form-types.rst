@@ -15,7 +15,7 @@ The following filters form types are available:
    :header: "Class","Name", "Short Description"
    :widths: 15, 15, 30
 
-   "FilterType","oro_type_filter","Basic type for all filters, declares two children value and type"
+   "FilterType","oro_type_filter","Basic type for all filters, declares two children, value and type"
    "TextFilterType","oro_type_text_filter","Represents text filter form"
    "NumberFilterType","oro_type_number_filter","Represents number filter form"
    "NumberRangeFilterType","oro_type_number_range_filter","Represents number range filter form"
@@ -58,12 +58,12 @@ oro\_type\_filter Form Type
 
 **Options Description**
 
-* **field_type** - This option declares type of value child element.
-* **field_options** - Value of this option will be used as options array for value field.
-* **operator_choices** - Value of this option will be used as value of "choices" option of type field.
-* **operator_type** - This option declares type of type child element. By default has "choice" value.
-* **operator_options** - Value of this option will be used as options array for type field.
-* **show_filter** - If FALSE then filter will be hidden when it's rendered in filter list.
+* **field_type** - This option declares the type of the value child element.
+* **field_options** - Value of this option will be used as the options array for the value field.
+* **operator_choices** - Value of this option will be used as the value of the "choices" option of the type field.
+* **operator_type** - This option declares the type of type child element. By default, the velue is "choice".
+* **operator_options** - Value of this option will be used as the options array for the type field.
+* **show_filter** - If FALSE, then the filter will be hidden when it is rendered in the filter list.
 
 oro\_type\_text\_filter Form Type
 ---------------------------------

@@ -43,7 +43,7 @@ Set Up the Environment
 
       composer config -g github-oauth.github.com <oauthtoken>
 
-2. To consume less memory on composer operations it's highly recommended to install symfony flex composer plugin globally:
+2. To consume less memory on composer operations, it is highly recommended to install the Symfony Flex composer plugin globally:
 
    .. code-block:: none
 
