@@ -2,8 +2,11 @@
 
 {# ... #}
 {% set productImage = product.imagesByType('listing').first.image|default(null) %}
-{% set productImageUrl = product_filtered_image(productImage, product_image_size) %}
 
-<picture>
-    <img src="{{ productImageUrl }}" alt="Product Image" itemprop="image">
-</picture>
+{% include '@OroAttachment/Twig/picture.html.twig' with {
+    sources: product_filtered_picture_sources(productImage, product_image_size),
+    img_attrs: {
+        alt: 'Product Image',
+        itemprop: 'image'
+    }
+} %}
