@@ -1,3 +1,4 @@
+:oro_documentation_types: Extension
 :oro_show_local_toc: false
 
 .. _bundle-docs-platform-microsoft-sync-bundle:
@@ -5,8 +6,7 @@
 OroMicrosoftSyncBundle
 ======================
 
-.. hint:: Microsoft 365 calendar synchronization is available since OroCRM v4.2.5. Task synchronization is available since v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
-
+.. hint:: Microsoft 365 calendar synchronization is available since OroCRM v4.2.5 as part of the |Oro-Microsoft 365 Integration| extension. Task synchronization is available since v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 OroMicrosoftSyncBundle enables integration with Microsoft 365 in the Oro applications via |Microsoft Graph API|.
 
@@ -38,4 +38,7 @@ Related Documentation
 
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin

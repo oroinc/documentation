@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM, Commerce, Extension
+:oro_documentation_types: OroCRM, OroCommerce, Extension
 
 .. _user-guide-integrations-microsoft:
 

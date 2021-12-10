@@ -845,5 +845,5 @@ Links (User)
 
 .. |Oro-Microsoft 365 Integration| raw:: html
 
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/oro-microsoft-365-integration/" target="_blank">Oro-Microsoft 365 Integration</a>
+   <a href="https://extensions.oroinc.com/orocommerce/extension/oro-microsoft-365-integration/" target="_blank">Oro-Microsoft 365 Integration</a>
 
