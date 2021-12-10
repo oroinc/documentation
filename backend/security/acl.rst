@@ -57,8 +57,7 @@ comes with the following five levels (ordered up from the bottom of the hierarch
 +-----------------+------------------+-----------------------------------------------------------+
 
 Each record is associated with an owning organization. When a user logs into the system, they work in
-the scope of one of their organizations. If a user is a member in several organizations, they can
-switch the organization scope that is used to perform access checks.
+the scope of one of their organizations.
 
 .. note::
 
@@ -568,6 +567,31 @@ When collecting entities to search, information about the owner and the organiza
 
 Every search query is ACL protected with Search ACL helper. This helper limits data with the current access levels for entities which are used in the query.
 
+Organization Сontext
+^^^^^^^^^^^^^^^^^^^^
+
+.. hint:: The `ignore_preferred_organization_tokens` parameter is available since OroCRM v4.2.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+As mentioned previously, each record is associated with an owning organization. When a user logs into the system,
+they work in the scope of one of their organizations.
+
+In Enterprise editions, a user can be assigned to multiple organizations.
+
+During the login, if the security token supports organizations, then the current organization in the token is replaced
+with the preferred one. If a user logs into the system for the first time, the first available organization is used.
+
+After the login, the user can switch their current organization.
+
+For the security token to ignore the preferable organization, for example an API token, add its class name
+to the `ignore_preferred_organization_tokens` parameter of the `OrganizationPro` bundle in the app.yml file
+of your bundle:
+
+.. code-block:: yaml
+   :caption: src/Acme/DemoBundle/Resources/config/oro/app.yml
+   
+   oro_organization_pro:
+        ignore_preferred_organization_tokens:
+            - Acme\Demo\Your\Token\Class
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
