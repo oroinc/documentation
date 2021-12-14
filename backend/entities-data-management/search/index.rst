@@ -17,6 +17,7 @@ Search Index
    query-builder
    best-practices
    elastic-tuning
+   fuzzy-search
    troubleshooting
 
 .. note:: For architecture guide, see :ref:`Search Index Architecture <search_index_overview>`.
