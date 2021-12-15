@@ -132,7 +132,7 @@ To use the providers we have created previously, we need to create TwigExtension
 
 You can use Twig functions declared in the extension for your templates.
 
-    .. oro_integrity_check:: 720664e4d33059416d77280adad786d6148abce1
+    .. oro_integrity_check:: efbb826d9642a8ba17afa98a7722d319788941b7
 
         .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig
             :language: html+twig
