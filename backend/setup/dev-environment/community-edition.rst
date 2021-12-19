@@ -36,7 +36,7 @@ Install most of the required Oro application environment components using the fo
 
 .. code-block:: bash
 
-   curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+   curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
    yum install -y nginx wget git nodejs supervisor yum-utils
 
 
@@ -63,7 +63,7 @@ As you need to install PHP 8.0 instead of CentOS 7 native PHP 5.6 version, get t
 .. code-block:: bash
 
    wget http://rpms.remirepo.net/enterprise/remi-release-8.rpm && rpm -Uvh remi-release-8.rpm
-   yum-config-manager --enable remi-php74
+   yum-config-manager --enable remi-php80
    yum update -y
 
 Next, install PHP 8.0 and the required dependencies using the following command:
