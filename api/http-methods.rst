@@ -8,28 +8,28 @@ The primary or most commonly-used HTTP methods are POST, GET, PUT, PATCH, and DE
 Below is a table summarizing HTTP methods available in Oro API and their return values in combination with the resource URIs:
 
 
-+-------------+----------------+----------------------------------------+----------------------------------------------+
-| HTTP Method | CRUD operation | Entire Collection (e.g. /users)        |         Specific Item (e.g. /users/{id})     |
-+=============+================+========================================+==============================================+
-| GET         | Read           | 200 (OK), list of entities.            | 200 (OK), single entity.                     |
-|             |                | Use pagination, sorting and filtering  |                                              |
-|             |                | to navigate big lists.                 | 404 (Not Found), if ID not found or invalid. |
-|             |                |                                        |                                              |
-+-------------+----------------+----------------------------------------+----------------------------------------------+
-| POST        | Create         | 201 (Created), Response contains       | **not applicable**                           |
-|             |                | response similar to **GET** /user/{id} |                                              |
-|             |                | containing new ID.                     |                                              |
-+-------------+----------------+----------------------------------------+----------------------------------------------+
-| PATCH       | Update         | **not applicable**                     | 200 (OK) or 204 (No Content).                |
-|             |                |                                        |                                              |
-|             |                |                                        | 404 (Not Found), if ID not found or invalid. |
-+-------------+----------------+----------------------------------------+----------------------------------------------+
-| DELETE      | Delete         | 200(OK) or 403(Forbidden) or           | 200 (OK).                                    |
-|             |                | 400(Bad Request) if no filter          |                                              |
-|             |                | is specified.                          | 404 (Not Found), if ID not found or invalid. |
-+-------------+----------------+----------------------------------------+----------------------------------------------+
-| PUT         | Update/Replace | **not implemented**                    | **not implemented**                          |
-+-------------+----------------+----------------------------------------+----------------------------------------------+
++-------------+----------------+------------------------------------------------+----------------------------------------------+
+| HTTP Method | CRUD operation | Entire Collection (e.g. /users)                | Specific Item (e.g. /users/{id})             |
++=============+================+================================================+==============================================+
+| GET         | Read           | 200 (OK), list of entities.                    | 200 (OK), single entity.                     |
+|             |                | Use pagination, sorting and filtering          |                                              |
+|             |                | to navigate big lists.                         | 404 (Not Found), if ID not found or invalid. |
+|             |                |                                                |                                              |
++-------------+----------------+------------------------------------------------+----------------------------------------------+
+| POST        | Create         | 201 (Created), Response contains               | **not applicable**                           |
+|             |                | response similar to **GET** /user/{id}         |                                              |
+|             |                | containing new ID.                             |                                              |
++-------------+----------------+------------------------------------------------+----------------------------------------------+
+| PATCH       | Update         | :ref:`Batch API <web-services-api--batch-api>` | 200 (OK) or 204 (No Content).                |
+|             |                |                                                |                                              |
+|             |                |                                                | 404 (Not Found), if ID not found or invalid. |
++-------------+----------------+------------------------------------------------+----------------------------------------------+
+| DELETE      | Delete         | 204 (No Content).                              | 204 (No Content).                            |
+|             |                |                                                |                                              |
+|             |                | 400(Bad Request) if no filter is specified.    | 404 (Not Found), if ID not found or invalid. |
++-------------+----------------+------------------------------------------------+----------------------------------------------+
+| PUT         | Update/Replace | **not implemented**                            | **not implemented**                          |
++-------------+----------------+------------------------------------------------+----------------------------------------------+
 
 
 Also, the HTTP methods can be classified by the *idempotent* and *safe* properties.
