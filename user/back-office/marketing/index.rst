@@ -29,7 +29,7 @@ The Marketing Menu in the Oro application provides access tools for managing the
 
 Marketing lists can be used to synchronize with subscribers lists in :ref:`MailChimp <user-guide-mc-integration>`, and once the integration is configured, :ref:`send an email campaign via MailChimp <user-guide-mailchimp-campaign>`.
 
-Also, the Oro application supports out-of-the-box integration with :ref:`dotmailer <user-guide-dm-integration>`, allowing you to map the marketing lists to address books in dotmailer, use your address books to :ref:`send an email campaign via dotmailer <user-guide-dotmailer-campaign>`, and :ref:`manage dotmailer data fields and mappings <user-guide-dotmailer-data-fields>`.
+Also, the Oro application supports out-of-the-box integration with :ref:`Dotdigital <user-guide-dm-integration>`, allowing you to map the marketing lists to address books in Dotdigital, use your address books to :ref:`send an email campaign via Dotdigital <user-guide-dotmailer-campaign>`, and :ref:`manage Dotdigital data fields and mappings <user-guide-dotmailer-data-fields>`.
 
 :ref:`Email Campaigns <user-guide-email-campaigns>` can be generated and sent in your Oro application without the involvement of external marketing automation applications. This means that once you have defined the rules for a :ref:`marketing list <user-guide-marketing-lists>` generation and have created an :ref:`email template <user-guide-email-template>`, you can easily set up an email campaign within which all the contacts on the list will receive personalized emails in compliance with the campaign. You can then collect statistics for such campaigns and :ref:`create reports <user-guide-reports>`.
 

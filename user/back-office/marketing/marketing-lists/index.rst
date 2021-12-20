@@ -7,7 +7,7 @@ Manage Marketing Lists in the Back-Office
 
 With the Oro application, you can automatically generate a :term:`marketing list <Marketing Lists>` of contacts that will be used for marketing purposes (mass call or mailing). For example, you can create a list of personal and contact details of customer users who registered after October 1 and whose shipping address is in California.
 
-With marketing lists, you can run :ref:`email campaigns <user-guide-email-campaigns>` in the Oro application. You can also synchronize Oro application marketing lists with subscribers lists in :ref:`MailChimp <user-guide-mc-integration>` and address books in :ref:`dotmailer <user-guide-dm-integration>`.
+With marketing lists, you can run :ref:`email campaigns <user-guide-email-campaigns>` in the Oro application. You can also synchronize Oro application marketing lists with subscribers lists in :ref:`MailChimp <user-guide-mc-integration>` and address books in :ref:`Dotdigital <user-guide-dm-integration>`.
 
 Marketing lists may be based on the contacts from the following items:
 
@@ -44,6 +44,7 @@ To create a new marketing list:
       :widths: 10, 30
 
       "**Name**","A name used to refer to the marketing list in the system."
+      "**Include Previously Contacted Members**","The option is helpful when you change the filter conditions of the marketing list. The contacts that were on the list before the condition update, might not meet the new rules. So, if you enable the check box, the marketing list would include both new records (based on new rules) and the ones that were contacted in the past (based on previous conditions)."
       "**Entity**","Choose an entity from the dropdown. Only the entities that have contact details (E-mail or phone number) are available. Records of the chosen entity and entities related to it will be used to create the list of contacts."
       "**Type**","Chose the list type from the dropdown:
 
@@ -175,7 +176,7 @@ To cancel sharing the marketing list with a particular person, click **Share**, 
 Synchronize a Marketing List with External System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As soon as Oro application has been integrated with a third party system, to which a marketing list may be mapped, you will see **Connect to** buttons with which you can, for example, map the list to :ref:`subscribers lists in MailChimp <user-guide-mc-integration>` or :ref:`address books in dotmailer <user-guide-dm-integration>`.
+As soon as Oro application has been integrated with a third party system, to which a marketing list may be mapped, you will see **Connect to** buttons with which you can, for example, map the list to :ref:`subscribers lists in MailChimp <user-guide-mc-integration>` or :ref:`address books in Dotdigital <user-guide-dm-integration>`.
 
 .. image:: /user/img/marketing/marketing/map_ml.png
    :alt: The Connect to buttons
