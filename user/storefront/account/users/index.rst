@@ -13,6 +13,7 @@ To locate users:
 2. Click **Users** in the menu on the left.
 
 .. image:: /user/img/storefront/users_roles/Users.png
+   :alt: Navigation path to the Users section
 
 On the All Users page, you can view and edit the existing users, or create new ones.
 
@@ -25,9 +26,11 @@ The Users grid shows the following data:
 * Email Address
 * Enabled
 * Confirmed
-* More Actions (View, Edit, Enable/Disable, Delete).
+* Locked
+* More Actions (View, Edit, Enable/Disable, Delete, Unlock).
 
-.. image:: /user/img/storefront/users_roles/UsersActions.png
+.. image:: /user/img/storefront/users_roles/users-actions.png
+   :alt: Display the actions that a user can perform from the Users section
 
 Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
