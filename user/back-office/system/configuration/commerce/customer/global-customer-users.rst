@@ -14,6 +14,9 @@ To change the default customer user configuration settings globally:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
+   .. image:: /user/img/system/config_commerce/customer/global-customer-user-settings.png
+      :alt: Display the global customer user settings configuration
+
 3. To customize any of the options for customer users:
 
      a) Clear the **Use Default** box next to the option.
@@ -37,9 +40,19 @@ To change the default customer user configuration settings globally:
 
 5. In the **Customer Visitor** section, configure the options for the anonymous users:
 
+   .. image:: /user/img/system/config_commerce/customer/global-customer-user-settings2.png
+      :alt: Display the global customer user settings configuration. Part 2
+
    * **Customer Visitor Cookie Lifetime (Days)** --- Once the provided period expires, active customer visitor (anonymous user) sessions will be reset. Keep in mind that the uniqueness of email addresses and personal data is checked only for the registered users. It means that no two users can have identical personal information unless they are customer visitors (guest users). Multiple guest customers are allowed to have exactly the same data, including email addresses.
 
-6. In the **REST API** section, configure the following options:
+6. In the **Login Attempts** section, configure the following options:
+
+   * **Enable Failed Logins Limit** --- Defines whether a user can be locked out when the max number of login attempts is reached. By default, the option is enabled.
+   * **Max Login Attempts** --- The number of attempts within the login failure lockout interval that a user has to authenticate before they are locked out. By default, the number is set to 10.
+   * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally. By default, it is set to 60 minutes.
+   * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock. By default, it is set to 60 minutes.
+
+7. In the **REST API** section, configure the following options:
 
    * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
 

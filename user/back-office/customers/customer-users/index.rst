@@ -20,8 +20,9 @@ In Customer Users section, you can:
 * View requests for quotes, quotes, sales orders, and shopping lists created by the customer user.
 * View communication with the customer that happened using email, notes or scheduled events.
 * View additional information attached to customer user.
-* Enable and disable the customer.
+* Enable and disable the customer user.
 * Reset the customer user password.
+* Unlock the customer user that was locked out when the max number of login attempts is reached.
 * Add OAuth applications
 
 .. note:: You can delegate this function to the customer who will access user and role management in the OroCommerce storefront (see the :ref:`Delegating Users and Role Management to the Customer <user-guide--customers--customer-user-delegate>` section for more information).
