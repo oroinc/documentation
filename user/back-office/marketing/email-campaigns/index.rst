@@ -121,7 +121,7 @@ This generates an email based on the template you've selected, populates it with
 .. note::
 
     If an Email Campaign has been created as a result of integration with :ref:`MailChimp <user-guide-mc-integration>` or
-    :ref:`dotmailer <user-guide-dm-integration>`, its record will be automatically created in Oro application, and related
+    :ref:`Dotdigital <user-guide-dm-integration>`, its record will be automatically created in Oro application, and related
     statistics will be uploaded and synchronized.
 
 .. stop
@@ -131,8 +131,8 @@ This generates an email based on the template you've selected, populates it with
    :hidden:
 
    sending-email-campaign-via-mailchimp
-   sending-email-campaign-via-dotmailer
-   dotmailer-data-fields-mappings
+   sending-email-campaign-via-dotdigital
+   dotdigital-data-fields-mappings
 
 .. include:: /include/include-images.rst
    :start-after: begin

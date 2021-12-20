@@ -611,9 +611,9 @@ Links (User)
 
    <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-dotdigital" target="_blank">sign-on</a>
 
-.. |https://r1-app.dotmailer.com/| raw:: html
+.. |https://r1-app.dotdigital.com/| raw:: html
 
-   <a href="https://r1-app.dotmailer.com/" target="_blank">https://r1-app.dotmailer.com/</a>
+   <a href="https://r1-app.dotdigital.com/" target="_blank">https://r1-app.dotdigital.com/</a>
 
 .. |Single sign-on| raw:: html
 

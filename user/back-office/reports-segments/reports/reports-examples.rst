@@ -118,8 +118,8 @@ Output:
 
 **Related Topics**
 
-:ref:`Use System Reports <user-guide--business-intelligence--reports--use-system-reports>`
-:ref:`Use Custom Reports <user-guide--business-intelligence--reports--use-custom-reports>`
+* :ref:`Use System Reports <user-guide--business-intelligence--reports--use-system-reports>`
+* :ref:`Use Custom Reports <user-guide--business-intelligence--reports--use-custom-reports>`
 
 .. include:: /include/include-images.rst
    :start-after: begin
