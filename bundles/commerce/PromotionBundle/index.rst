@@ -142,7 +142,7 @@ Next, define a service for this class that decorates `oro_promotion.rule_filtrat
         decorates: oro_promotion.rule_filtration.service
         decoration_priority: 300
         arguments:
-            - '@app.promotion.rule_filtration.my_filter.inner'
+            - '@.inner'
 
 Please keep in mind the `decoration_priority` affects the order in which filters are executed.
 
