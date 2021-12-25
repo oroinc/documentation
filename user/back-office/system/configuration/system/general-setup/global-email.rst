@@ -115,7 +115,7 @@ To configure a system mailbox globally:
 
 5. In the **Synchronization Settings**, configure your IMAP/SMTP connection or a Microsoft 365 account:
 
-   .. note:: Please be aware that if the Account Type value has changed, a new mailbox will be registered and all data from the currently configured mailbox will be lost.
+   .. note:: Please be aware that if the Account Type value has changed, a new mailbox will be registered, and all data from the currently configured mailbox will be lost. However, if the Account Type value has changed from or to the **Other** type, a new mailbox will *not* be registered, and all data from the currently configured mailbox will stay. This helps migrate existing mailboxes from the basic IMAP configuration to Microsoft or Gmail.
 
    * **Account Type: Gmail** (is available when the application is integrated with Google and :ref:`OAuth 2.0 for email sync <admin-configuration-integrations-google-gmail-oauth>`  is enabled.)
 
