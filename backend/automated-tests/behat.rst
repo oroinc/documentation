@@ -603,6 +603,22 @@ For example:
     @fixture-OroOrganizationBundle:BusinessUnit.yml
     Feature: Adding attributes for workflow transition
 
+In case if specific security context is required for fixture it can be setup with additional options passed with fixture's tag
+in query like parameters style.
+Available options are ``user`` and ``user_reference``. ``user`` option accepts username and ``user_reference`` one
+accepts user's reference created in previously run fixtures.
+
+For example:
+
+
+.. code-block:: gherkin
+
+
+    @fixture-OroSecurityTestBundle:platform/user.yml
+    @fixture-OroSecurityTestBundle:commerce/shopping-list.yml?user_reference=xss_user
+    @fixture-OroSecurityTestBundle:commerce/saved-search.yml?user=admin
+    Feature: Store front saved search MUST NOT contain XSS vulnerabilities
+
 Additionally, Alice allows you to |include files| via extension, so you can import files from other bundles:
 
 .. code-block:: none
