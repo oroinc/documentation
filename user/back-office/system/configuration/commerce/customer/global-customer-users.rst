@@ -104,6 +104,7 @@ If the application was installed without demo data, the banner is disabled. To c
 
 4. Click **Save Settings**.
 
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 

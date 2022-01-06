@@ -12,6 +12,8 @@ How to Change Fonts and Typography in the Storefront
 Disable and Override Fonts
 --------------------------
 
+.. hint:: This feature is available since OroCommerce v4.2.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 To disable all Oro fonts, override the ``$theme-fonts`` variable and set ``map`` to *empty*.
 
 .. code-block:: scss
