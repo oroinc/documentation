@@ -1111,30 +1111,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActionBundle/Provider/Event/OnButtonsMatched.php" target="_blank">`OnButtonsMatched`</a>
 
-.. |Fundamentals: Activities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle#fundamentals" target="_blank">Fundamentals</a>
-
-.. |Add Widget to a Page| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle#add-widget-into-a-page" target="_blank">Add Widget to a Page</a>
-
-.. |Show Widget and Its Button on a Specific page| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle#show-widget-and-its-button-on-specific-page-viewedit" target="_blank">Show Widget and Its Button on a Specific page</a>
-
-.. |Register a New Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle#add-widget-into-a-page" target="_blank">Register a New Entity</a>
-
-.. |Add Inheritance of Activity Lists to the Target Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle/Resources/doc/inheritance.md" target="_blank">Add Inheritance of Activity Lists to the Target Entity</a>
-
-.. |Permissions in ActivityList Bundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle/Resources/doc/permissions.md" target="_blank">Permissions in ActivityList Bundle</a>
-
 .. |MemoryCacheChain| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php" target="_blank">MemoryCacheChain</a>
