@@ -11,6 +11,7 @@ Related Documentation
 ---------------------
 
 * :ref:`Configure Supported Mime Types <bundle-docs-platform-attachment-bundle-config>`
+* :ref:`WebP Images Strategy <attachment-bundle-webp-strategy>`
 * :ref:`File Types <attachment-bundle-file-types>`
 * :ref:`Image Types <attachment-bundle-image-types>`
 * :ref:`Configure Storage <attachment-bundle-storage>`
@@ -26,4 +27,6 @@ Related Documentation
    :hidden:
 
    attachment-bundle-config
+   displaying-pictures
+   generating-image-file-urls
    image-placeholder-config

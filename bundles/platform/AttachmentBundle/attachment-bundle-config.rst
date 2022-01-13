@@ -31,6 +31,31 @@ To add or remove available mime types, add changes to the ``upload_file_mime_typ
                 - image/jpeg
                 - image/png
 
+.. _attachment-bundle-webp-strategy:
+
+WebP Images Strategy
+--------------------
+
+OroAttachmentBundle provides ``oro_attachment.webp_strategy`` configuration that gives ability to control if uploaded images are displayed in WebP format.
+
+There are three available options:
+
+- *for_all* - converts an image to WebP format and provides a source for it in a <picture> tag when displaying an image. Image in the original format will not be used as a fallback, so the browsers that do not support WebP will be ignored.
+
+- *if_supported* - converts an image to WebP format and provides a source for it in a <picture> tag when displaying an image. Image in the original format will be used as a fallback for the old browsers that do not support WebP. This is the default option.
+
+- *disabled* - does not convert an image to WebP format and only displays the image in the original format.
+
+To change the WebP strategy, change the ``webp_strategy`` configuration in the config.yml file:
+
+.. code-block:: yaml
+
+        oro_attachment:
+            webp_strategy: for_all
+
+
+.. note:: The strategy ``if_supported`` increases storage usage because each image is stored in 2 formats simultaneously.
+
 .. _attachment-bundle-file-types:
 
 File Types
