@@ -360,6 +360,7 @@ The default configuration for extension with alias "oro_attachment":
         processors_allowed:   true
         png_quality:          100
         jpeg_quality:         85
+        webp_strategy:        if_supported
 
 oro_batch
 _________
