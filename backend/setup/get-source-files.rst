@@ -19,7 +19,7 @@ These methods are detailed below.
 Method 1: Create a Project with Composer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Make sure you are using PHP >=8.0.0 or higher and have Composer installed. If you do not, use the Composer
+1. Make sure you are using PHP >=8.1 and have Composer installed. If you do not, use the Composer
    installation process described in the |Composer installation documentation|.
 
 2. Create your new Oro application project with Composer by running one of commands below, depending on the base application you want to install:

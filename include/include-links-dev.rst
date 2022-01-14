@@ -5690,9 +5690,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/config/oro/query_designer.yml" target="_blank">By default</a>
 
-.. |PHP 8.0| raw:: html
+.. |PHP 8.1| raw:: html
 
-   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP 8.0</a>
+   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP 8.1</a>
 
 .. |Composer| raw:: html
 
