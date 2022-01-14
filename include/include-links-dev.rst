@@ -2049,10 +2049,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/CustomizeFormDataContext.php" target="_blank">Events</a>
 
-.. |Configure Dedicated Database Connection for Reports| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md" target="_blank">Configure Dedicated Database Connection for Reports</a>
-
 .. |ScopeBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">ScopeBundle</a>
