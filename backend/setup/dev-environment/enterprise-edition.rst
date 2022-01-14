@@ -12,7 +12,7 @@ Before you proceed, please refer to the :ref:`System Requirements <system-requir
 Prepare a Server with OS
 ------------------------
 
-Get a dedicated physical or virtual server with at least 4Gb RAM with the CentOS v7.4 installed. Ensure that you
+Get a dedicated physical or virtual server with at least 4Gb RAM with the CentOS v8 installed. Ensure that you
 can run processes as a *root* user or user with *sudo* permissions.
 
 Environment Setup
@@ -25,18 +25,18 @@ To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.
 
 * Extra Packages for Enterprise Linux (EPEL) repository by |Red Hat|
 * Oro Enterprise Linux Packages (OELP) repository by Oro engineers
-* Remi's PHP 8.0 RPM repository for Enterprise Linux 7
+* Remi's PHP 8.1 RPM repository for Enterprise Linux 7
 
 .. note:: The necessary installation packages are distributed using the |software collections|.
 
-Add required repositories to your `yum` package manager and install the |software collections| management utils by running:
+Add required repositories to your `dnf` package manager and install the |software collections| management utils by running:
 
 .. code-block:: bash
 
-   yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-7.rpm yum-utils scl-utils centos-release-scl centos-release-scl-rh
-   yum-config-manager --add-repo http://koji.oro.cloud/rpms/oro-el7.repo
-   yum-config-manager --enable remi-php80
-   yum update -y
+   dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+   dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+   dnf -y group install "Development Tools"
+   dnf -y update
 
 Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, Supervisor, and Wget
 ----------------------------------------------------------------------------------
@@ -46,16 +46,32 @@ Install most of the required Oro application environment components using the fo
 .. code-block:: bash
 
    curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
-   yum install -y rh-postgresql13 rh-postgresql13-postgresql rh-postgresql13-postgresql-server rh-postgresql13-postgresql-contrib rh-postgresql13-postgresql-syspaths oro-elasticsearch7 oro-elasticsearch7-runtime oro-elasticsearch7-elasticsearch oro-redis6 oro-redis6-runtime oro-redis6-redis oro-rabbitmq-server39 oro-rabbitmq-server39-runtime oro-rabbitmq-server39-rabbitmq-server nginx nodejs wget git bzip2 supervisor
+
+Install Postgresql 14 on CentOS 8:
+.. code-block:: bash
+
+   dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+   dnf -qy module disable postgresql
+   dnf install -y postgresql14-server
+   dnf install -y postgresql14-contrib
+   /usr/pgsql-14/bin/postgresql-14-setup initdb
+
+Install other required applications:
+
+.. code-block:: bash
+
+   dnf install -y oro-elasticsearch7 oro-elasticsearch7-runtime oro-elasticsearch7-elasticsearch oro-redis6 oro-redis6-runtime oro-redis6-redis oro-rabbitmq-server39 oro-rabbitmq-server39-runtime oro-rabbitmq-server39-rabbitmq-server nginx nodejs wget git bzip2 supervisor
 
 Install PHP
 ^^^^^^^^^^^
 
-Install PHP 8.0 and the required dependencies using the following command:
+Install PHP 8.1 and the required dependencies using the following command:
 
 .. code-block:: bash
 
-   yum install -y php-cli php-fpm php-opcache php-mbstring php-pgsql php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-tidy php-zip php-devel php-pear
+   dnf module reset php
+   dnf module install php:remi-8.1 -y
+   dnf install -y php-cli php-fpm php-opcache php-mbstring php-pgsql php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-tidy php-zip php-devel php-pear
 
 Install Composer
 ^^^^^^^^^^^^^^^^

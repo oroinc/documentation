@@ -8,21 +8,21 @@ This guide demonstrates how to set up :ref:`Docker and Symfony Server developmen
 Environment Setup
 -----------------
 
-1. Install PHP 8.0 with all required extensions:
+1. Install PHP 8.1 with all required extensions:
 
    .. code-block:: none
 
       sudo apt install software-properties-common
       sudo add-apt-repository -y ppa:ondrej/php
       sudo apt update
-      sudo apt -y install php8.0 php8.0-fpm php8.0-cli php8.0-pdo php8.0-mysqlnd php8.0-xml php8.0-soap php8.0-gd php8.0-zip php8.0-intl php8.0-mbstring php8.0-opcache php8.0-curl php8.0-bcmath php8.0-ldap php8.0-pgsql php8.0-dev php8.0-mongodb
+      sudo apt -y install php8.1 php8.1-fpm php8.1-cli php8.1-pdo php8.1-mysqlnd php8.1-xml php8.1-soap php8.1-gd php8.1-zip php8.1-intl php8.1-mbstring php8.1-opcache php8.1-curl php8.1-bcmath php8.1-ldap php8.1-pgsql php8.1-dev php8.1-mongodb
 
 2. Configure PHP:
 
    .. code-block:: none
 
-      echo -e "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" | sudo tee -a  /etc/php/8.0/fpm/php.ini
-      echo -e "memory_limit = 2048M" | sudo tee -a  /etc/php/8.0/cli/php.ini
+      echo -e "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" | sudo tee -a  /etc/php/8.1/fpm/php.ini
+      echo -e "memory_limit = 2048M" | sudo tee -a  /etc/php/8.1/cli/php.ini
 
 3. Install Node.js 16:
 

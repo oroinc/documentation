@@ -12,7 +12,7 @@ Before you proceed, please refer to the :ref:`System Requirements <system-requir
 Prepare a Server with OS
 ------------------------
 
-Get a dedicated physical or virtual server with at least 4Gb RAM with the CentOS v7.4 installed. Ensure that you
+Get a dedicated physical or virtual server with at least 4Gb RAM with the CentOS v8 installed. Ensure that you
 can run processes as a *root* user or user with *sudo* permissions.
 
 Environment Setup
@@ -21,13 +21,13 @@ Environment Setup
 Enable Required Package Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add the EPEL repository to your `yum` package manager by running:
+Add the EPEL repository to your `dnf` package manager by running:
 
 .. code-block:: bash
 
-   yum install -y epel-release
-   yum update -y
-
+   dnf config-manager --set-enabled powertools -y
+   dnf install epel-release epel-next-release -y
+   dnf update -y
 
 Install Nginx, NodeJS, Git, Supervisor, and Wget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -37,8 +37,7 @@ Install most of the required Oro application environment components using the fo
 .. code-block:: bash
 
    curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
-   yum install -y nginx wget git nodejs supervisor yum-utils
-
+   dnf install -y nginx wget git nodejs supervisor yum-utils
 
 Install MySQL
 ^^^^^^^^^^^^^
@@ -47,30 +46,38 @@ As you need to install MySQL 8.0 to replace the default MariaDB replica in Cento
 
 .. code-block:: bash
 
-   wget https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm && rpm -ivh mysql80-community-release-el7-1.noarch.rpm
+   wget https://dev.mysql.com/get/mysql80-community-release-el8-2.noarch.rpm && rpm -ivh mysql80-community-release-el8-2.noarch.rpm
 
 Next, install MySQL 8.0 using the following command:
 
 .. code-block:: bash
 
-   yum install -y mysql-community-server
+   dnf install -y mysql-community-server
+
+If you have an error: "Unable to find a match: mysql-community-server", switch off current version of MySQL:
+
+.. code-block:: bash
+
+   dnf module disable mysql -y
 
 Install PHP
 ^^^^^^^^^^^
 
-As you need to install PHP 8.0 instead of CentOS 7 native PHP 5.6 version, get the PHP 8.0 packages from the REMI repository:
+As you need to install PHP 8.1 instead of CentOS 7 native PHP 5.6 version, get the PHP 8.1 packages from the REMI repository:
 
 .. code-block:: bash
 
-   wget http://rpms.remirepo.net/enterprise/remi-release-8.rpm && rpm -Uvh remi-release-8.rpm
-   yum-config-manager --enable remi-php80
-   yum update -y
+   dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+   dnf install php81 -y
 
-Next, install PHP 8.0 and the required dependencies using the following command:
+   dnf module reset php
+   dnf module enable php:remi-8.1 -y
+
+Next, install PHP 8.1 and the required dependencies using the following command:
 
 .. code-block:: bash
 
-   yum install -y php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-mbstring php-zip php-intl php-opcache
+   dnf install -y php php-cli php-common php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-mbstring php-zip php-intl php-opcache
 
 Install Composer
 ^^^^^^^^^^^^^^^^
