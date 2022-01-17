@@ -26,12 +26,12 @@ An example of a message filter that removes duplicated messages:
          */
         public function apply(MessageBuffer $buffer): void
         {
-            if (!$buffer->hasMessagesForTopic(Topics::MY_TOPIC)) {
+            if (!$buffer->hasMessagesForTopic(MySampleTopic::getName())) {
                 return;
             }
 
             $processedMessages = [];
-            $messages = $buffer->getMessagesForTopic(Topics::MY_TOPIC);
+            $messages = $buffer->getMessagesForTopic(MySampleTopic::getName());
             foreach ($messages as $messageId => $message) {
                 $messageKey = (string)$message['id'];
                 if (isset($processedMessages[$messageKey])) {
@@ -50,7 +50,7 @@ An example of a message filter that removes duplicated messages:
         acme.my_message_filter:
             class: Oro\Bundle\VisibilityBundle\Model\MyMessageFilter
             tags:
-                - { name: oro_message_queue.message_filter, topic: !php/const Acme\Bundle\AcmeBundle\Async\Topics::MY_TOPIC }
+                - { name: oro_message_queue.message_filter, topic: !php/const Acme\Bundle\AcmeBundle\Async\Topic\MySampleTopic::NAME }
 
 .. note::
         - The filtering is not executed after filters made changes in the |message buffer|.

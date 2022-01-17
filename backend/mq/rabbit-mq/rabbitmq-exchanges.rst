@@ -174,7 +174,7 @@ Delayed Message Exchange is a RabbitMQ community plugin.
     $message = new Message();
     $message->setDelay(30);
 
-    $this->messageProducer->send(Topics::TOPIC_NAME, $message);
+    $this->messageProducer->send(SampleTopicName::getName(), $message);
 
 Dead Letter
 -----------

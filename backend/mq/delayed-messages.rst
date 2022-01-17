@@ -15,7 +15,7 @@ Example:
     $message = new Message([]);
     $message->setDelay(10); // message will be consumed after 10 seconds
 
-    $this->messageProducer->send(Topics::MESSAGE_TOPIC, $message);
+    $this->messageProducer->send(SampleTopic::getName(), $message);
 
 
 Redelivery Process
