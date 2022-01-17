@@ -2085,18 +2085,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">ScopeBundle</a>
 
-.. |Initialize a Sidebar| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#sidebar-initializing" target="_blank">Initialize a Sidebar</a>
-
-.. |Configure a Sidebar Widget in YAML| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#widget-configuration-in-yaml" target="_blank">Configure a Sidebar Widget in YAML</a>
-
-.. |Create a Sidebar Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#creating-widgets" target="_blank">Create a Sidebar Widget</a>
-
 .. |Usage and Logging Levels| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle#orosyncbundle" target="_blank">Usage and Logging Levels</a>
