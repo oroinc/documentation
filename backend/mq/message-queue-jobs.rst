@@ -119,11 +119,11 @@ The benefits are the following:
 
 **Example of createDelayed and runDelayed Usage**
 
-The processor subscribes to ``Topics::DO_BIG_JOB`` and runs a unique big
-job (the name of the job is Topics::DO\_BIG\_JOB - the same as the topic
-name so it will not be possible to run another big job at the same time)
+The processor subscribes to ``DoBigJobTopic`` and runs a unique big
+job (the name of the job is ``DoBigJobTopic::getName()`` - the same as the topic
+name so it will not be possible to run another big job at the same time).
 The processor creates a set of delayed jobs, each of them sends
-``Topics::DO_SMALL_JOB`` message.
+``DoSmallJobTopic`` message.
 
 .. code-block:: php
 
@@ -132,18 +132,18 @@ The processor creates a set of delayed jobs, each of them sends
          */
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $bigJobParts = JSON::decode($message->getBody());
+            $bigJobParts = $message->getBody();
 
             $result = $this->jobRunner->runUnique( //a root job is creating here
                 $message->getMessageId(),
-                Topics::DO_BIG_JOB,
+                DoBigJobTopic::getName(),
                 function (JobRunner $jobRunner) use ($bigJobParts) {
 
                     foreach ($bigJobParts as $smallJob) {
                         $jobRunner->createDelayed( // child jobs are creating here and get new status
-                            sprintf('%s:%s', Topics::DO_SMALL_JOB, $smallJob),
+                            sprintf('%s:%s', DoSmallJobTopic::getName(), $smallJob),
                             function (JobRunner $jobRunner, Job $child) use ($smallJob) {
-                                $this->producer->send(Topics::DO_SMALL_JOB, [ // messages for child jobs are sent here
+                                $this->producer->send(DoSmallJobTopic::getName(), [ // messages for child jobs are sent here
                                     'smallJob' => $smallJob,
                                     'jobId' => $child->getId(), // the created child jobs ids are passing as message body params
                                 ]);
@@ -158,7 +158,7 @@ The processor creates a set of delayed jobs, each of them sends
             return $result ? self::ACK : self::REJECT;
         }
 
-The processor subscribes to the ``Topics::DO_SMALL_JOB`` and runs the
+The processor subscribes to the ``DoSmallJobTopic`` and runs the
 created delayed job.
 
 .. code-block:: php
@@ -168,7 +168,7 @@ created delayed job.
          */
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $payload = JSON::decode($message->getBody());
+            $payload = $message->getBody();
 
             $result = $this->jobRunner->runDelayed($payload['jobId'], function (JobRunner $jobRunner) use ($payload) {
                 //the child job status with the id $payload['jobId'] is changed from new to running
@@ -247,7 +247,7 @@ Unique Job
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $data = JSON::decode($message->getBody());
+            $data = $message->getBody();
 
             $result = $this->jobRunner->runUnique(
                 $message->getMessageId(),
@@ -281,7 +281,7 @@ In the example below, a root job is created. As soon as its work is completed, i
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $data = JSON::decode($message->getBody());
+            $data = $message->getBody();
 
             $result = $this->jobRunner->runUnique(
                 $message->getMessageId(),
@@ -325,7 +325,7 @@ Example:
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $data = JSON::decode($message->getBody());
+            $data = $message->getBody();
 
             $result = $this->jobRunner->runUnique(
                 $message->getMessageId(),
@@ -339,7 +339,7 @@ Example:
                         $runner->createDelayed(
                             $jobName,
                             function (JobRunner $runner, Job $childJob) use ($entity) {
-                                $this->producer->send('oro:index:index-single-entity', [
+                                $this->producer->send(IndexEntityTopic::getName(), [
                                     'entityId' => $entity->getId(),
                                     'jobId' => $childJob->getId(),
                                 ])
@@ -363,7 +363,7 @@ Example:
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $data = JSON::decode($message->getBody());
+            $data = $message->getBody();
 
             $result = $this->jobRunner->runDelayed(
                 $data['jobId'],
@@ -450,7 +450,7 @@ Examples
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $data = JSON::decode($message->getBody());
+            $data = $message->getBody();
 
             $result = $this->jobRunner->runUnique(
                 $message->getMessageId(),
@@ -478,7 +478,7 @@ Examples
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $data = JSON::decode($message->getBody());
+            $data = $message->getBody();
 
             $result = $this->jobRunner->runUnique(
                 $message->getMessageId(),
@@ -492,7 +492,7 @@ Examples
                         $runner->createDelayed(
                             $jobName,
                             function (JobRunner $runner, Job $childJob) use ($entity) {
-                                $this->producer->send('oro:index:index-single-entity', [
+                                $this->producer->send(IndexEntityTopic::getName(), [
                                     'entityId' => $entity->getId(),
                                     'jobId' => $childJob->getId(),
                                 ])
@@ -513,7 +513,7 @@ Examples
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $data = JSON::decode($message->getBody());
+            $data = $message->getBody();
 
             $result = $this->jobRunner->runDelayed(
                 $data['jobId'],

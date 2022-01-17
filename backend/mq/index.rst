@@ -165,6 +165,7 @@ We can also move the specified options to the ``parameters.yml``:
    :hidden:
    :maxdepth: 1
 
+   message-queue-topics
    message-queue-jobs
    consumer/index
    security-context

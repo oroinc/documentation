@@ -38,11 +38,11 @@ Terminology
 -  **Message** - An information message which contains a *message topic*
    that indicates which *message processor(s)* will process it and a
    *message body* - array of parameters required for the processing, for
-   example an entity id or a channel name. Messages are created and sent
+   example an entity id or a channel name. Messages are validated and sent
    by a *message producer* and put to the "tail" of the *message queue*.
-   When the message comes up, it is processed by a *consumer* using a
-   *message processor*. Messages also contain a number of additional
-   settings (see `Message settings <#message-settings>`__).
+   When the message comes up to a *consumer*, its structure is validated,
+   then passed to a *message processor*. Messages also contain a number
+   of additional settings (see `Message settings <#message-settings>`__).
 -  **Message Queue** - A FIFO queue that holds *queue messages* until
    they are processed. There can be one or more queues. If we use only
    one queue, it is much easier. If there are several queues, it is much
@@ -51,11 +51,7 @@ Terminology
    processes them. It processes one message at a time: once one message
    has finished being processed, the next message follows. For each
    message, the consumer runs a *message processor* subscribed to the
-   *message topic* (if one exists). If there are several processors
-   subscribed to the same topic, they can be run in parallel (actually
-   messages are sent via broker and if the broker sees that a message
-   has several receivers, it clones the message to create an individual
-   message for each receiver). There can be more than one consumer and
+   *message topic* (if one exists). There can be more than one consumer and
    they can work on different servers. It can be done to increase the
    performance. When implementing a message processor, a developer
    should remember that *there can be several consumers working on
@@ -63,10 +59,10 @@ Terminology
 -  **Message Processor** - Processes the queue messages (i.e. contains a
    code that should run when a consumer processes a message with the
    specified topic).
--  **Message Topic** - An identifier that indicates which message
-   processor should be executed for the message. One processor can
-   subscribe to several topics. Also, there can be several processes
-   subscribed to the same topic.
+-  **Message Topic** - A class that contains a topic name (identifier),
+   description, the default priority and message body structure rules.
+   The topic name indicates which processor should be executed for
+   the message. One processor can subscribe to several topics.
 -  **Job** - A message processor can process a message directly or
    create a job. Jobs are created in the db and allow monitoring of the
    processes status, start and end time, interrupt processes. Also, if
@@ -138,7 +134,7 @@ Message Settings
 ^^^^^^^^^^^^^^^^
 
 -  **Topic** - Refers to the term 'Message Topic' above.
--  **Body** - A string or json encoded array with some data.
+-  **Body** - A string or an array with some data.
 -  **Priority** - Can be ``MessagePriority::VERY_LOW``,
    ``MessagePriority::LOW``, ``MessagePriority::NORMAL``,
    ``MessagePriority::HIGH``, ``MessagePriority::VERY_HIGH``.
@@ -281,6 +277,40 @@ run processes B and C. That could be done in parallel.
 
    Simple Parallel Process Running Flow
 
+First, declare the MQ topic by creating a class that implements ``Oro\Component\MessageQueue\Topic\TopicInterface``. Then, register it as a service with tag ``oro_message_queue.topic``. For more details, see the :ref:`Message Queue Topics <dev-guide-mq-topics>`.
+
+.. code-block:: php
+   :caption: Async/Topic/SampleTopic.php
+
+    class SampleTopic extends AbstractTopic
+    {
+        public static function getName(): string
+        {
+            return 'oro.message_queue.sample_topic';
+        }
+
+        public static function getDescription(): string
+        {
+            return 'Sample topic description';
+        }
+
+        public function configureMessageBody(OptionsResolver $resolver): void
+        {
+            $resolver
+                ->setRequired('sample_key')
+                ->setAllowedTypes('sample_key', 'string');
+        }
+    }
+
+.. code-block:: yaml
+   :caption: Resources/config/mq_topics.yml
+
+    services:
+        _defaults:
+            tags:
+                - { name: oro_message_queue.topic }
+
+        Oro\Bundle\SampleBundle\Async\Topic\SampleTopic: ~
 
 Once you configured everything, you can start producing messages:
 
@@ -289,28 +319,29 @@ Once you configured everything, you can start producing messages:
     /** @var Oro\Component\MessageQueue\Client\MessageProducer $messageProducer **/
     $messageProducer = $container->get('oro_message_queue.message_producer');
 
-    $messageProducer->send('aFooTopic', 'Something has happened');
+    $messageProducer->send(SampleTopic::getName(), ['sample_key' => 'sample_value']);
 
-To consume messages you have to first create a message processor:
+To consume messages, first create a message processor:
 
 .. code-block:: php
 
+    use Oro\Bundle\SampleBundle\Async\Topic\SampleTopic;
     use Oro\Component\MessageQueue\Consumption\MessageProcessor;
 
     class FooMessageProcessor implements MessageProcessor, TopicSubscriberInterface
     {
-        public function process(Message $message, Session $session)
+        public function process(Message $message, Session $session): string
         {
-            echo $message->getBody();
+            echo $message->getBody()['sample_key'];
 
             return self::ACK;
             // return self::REJECT; // when the message is broken
             // return self::REQUEUE; // the message is fine but you want to postpone processing
         }
 
-        public static function getSubscribedTopics()
+        public static function getSubscribedTopics(): array
         {
-            return ['aFooTopic'];
+            return SampleTopic::getName();
         }
     }
 
@@ -333,19 +364,10 @@ Code example:
 
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $data = JSON::decode($message->getBody());
-
-            if ({$message is invalid}) {
-                $this->logger->critical(
-                    sprintf('Got invalid message: "%s"', $message->getBody()),
-                    ['message' => $message]
-                );
-
-                return self::REJECT;
-            }
+            $data = $message->getBody();
 
             foreach ($data['ids'] as $id) {
-                $this->producer->send(Topics::DO_SOMETHING_WITH_ENTITY, [
+                $this->producer->send(DoSomethingWithEntity::getName(), [
                     'id' => $id,
                     'targetClass' => $data['targetClass'],
                     'targetId' => $data['targetId'],
@@ -361,7 +383,7 @@ Code example:
         }
 
 The processor in the example accepts an array of some entity ids and
-sends a message ``Topics:DO_SOMETHING_WITH_ENTITY`` to each id. The
+sends a message ``DoSomethingWithEntity`` to each id. The
 messages are put to the message queue and will be processed when their
 turn comes. It could be done in parallel if several consumers are
 running.
@@ -497,7 +519,7 @@ and changes its status without creating any job.
          */
         public function process(MessageInterface $message, SessionInterface $session)
         {
-            $body = JSON::decode($message->getBody());
+            $body = $message->getBody();
 
             if (! isset($body['id'])) {
                 $this->logger->critical(
