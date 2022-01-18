@@ -34,7 +34,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | Web server configuration recommendations are well |
 |                   | described in |Symfony web server documentation|   |
 +-------------------+---------------------------------------------------+
-| *PHP*             | * |PHP| >=8.0.0                                   |
+| *PHP*             | * |PHP| >=8.1                                     |
 |                   | * PHP CLI, the same version as for the web server |
 +-------------------+---------------------------------------------------+
 | *PHP Settings*    | Few updates to default PHP configuration settings |
@@ -91,7 +91,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| >=14 <=16 used for JS assets          |
+| *Assets*          | * |Node.js| 16 used for JS assets                 |
 |                   |   minification and SCSS assets build.             |
 +-------------------+---------------------------------------------------+
 
@@ -107,11 +107,11 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
 +------------------+-----------------------------------------------------+
-| *Database*       | * |PostgreSQL| / |EnterpriseDB| 14                  |
+| *Database*       | * |PostgreSQL| / |EnterpriseDB| 13.5                |
 +------------------+-----------------------------------------------------+
-| *Search Index*   | * |Elasticsearch| >=7.7, <8.0                       |
+| *Search Index*   | * |Elasticsearch| >=7.16.1, <8.0                    |
 +------------------+-----------------------------------------------------+
-| *Job Queue*      | * |RabbitMQ| 3.8.x                                  |
+| *Job Queue*      | * |RabbitMQ| 3.9.x                                  |
 +------------------+-----------------------------------------------------+
 
 .. _sys-requirements-postgre-config:
@@ -130,7 +130,7 @@ Optional recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 * |Tidy PHP extension| should be installed to make sure that HTML is correctly converted into a text representation
-* |Redis| - could be used for more efficient application caching. Supported versions of Redis >=5.*.
+* |Redis| - could be used for more efficient application caching. Supported versions of Redis 6.2.
 * The performance of :ref:`MySQL can be optimized <mysql-optimization>` by adjusting the configuration
 * |PNGQuant| and |JPEGOptim| are used if it is necessary to optimize the image size in storage
 

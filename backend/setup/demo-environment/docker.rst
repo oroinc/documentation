@@ -52,7 +52,7 @@ Run Application
 
       ORO_IMAGE=docker.io/oroinc/crm-application docker-compose up -d
 
-   You can also select a different tag (version). For example, set variable `ORO_APP_VERSION=4.2` in `.env` or in the command line.
+   You can also select a different tag (version). For example, set variable `ORO_APP_VERSION=5.0` in `.env` or in the command line.
 
    To track the logs from the php-fpm container, run `docker-compose logs -f php-fpm`. To get the list of containers, run: `docker-compose ps`.
 

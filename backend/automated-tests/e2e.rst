@@ -30,7 +30,7 @@ For example, you can integrate with an external payment and shipping system and 
 Prerequisites
 -------------
 
-- |PHP 8.0|
+- |PHP 8.1|
 - |Composer|
 - The latest version of |Google Chrome|
 - The |ChromeDriver| binary for your platform

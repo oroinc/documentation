@@ -41,7 +41,14 @@ To change the default customer user configuration settings for an organization:
 
 7. In the **Login as Customer User** section, you can enable user impersonation for a specific organization. User impersonation allows back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
 
-8. In the **Cookies Banner** section, enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time.
+8. In the **Login Attempts** section, configure the following options:
+
+   * **Enable Failed Logins Limit** --- Defines whether a user can be locked out when the max number of login attempts is reached.
+   * **Max Login Attempts** --- The number of attempts within the login failure lockout interval that a user has to authenticate before they are locked out.
+   * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally.
+   * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock.
+
+9. In the **Cookies Banner** section, enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time.
 
    .. image:: /user/img/system/user_management/org_configuration/customers/cookie-banner-organization.png
       :alt: Cookie banner section
@@ -54,7 +61,7 @@ To change the default customer user configuration settings for an organization:
 
    * **Landing Page** - Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
 
-9. Click **Save Settings**.
+10. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -31,7 +31,7 @@ In a multi-org environment, each organization may have one or several websites. 
 The settings that are shared across the websites are the following:
 
 * :ref:`Customer management <user-guide--customers--customer-users>` --- Out-of-the-box, a customer user with the registered account can log into all websites within one organization with the same credentials, regardless of the website where they have registered.
-* :ref:`Integration configuration <user-guide-integrations>` --- Once you configure Google, dotmailer, Zendesk, or any other integration, it becomes available for all your websites automatically. Payment and shipping integrations, however, can be assigned to selected websites.
+* :ref:`Integration configuration <user-guide-integrations>` --- Once you configure Google, Dotdigital, Zendesk, or any other integration, it becomes available for all your websites automatically. Payment and shipping integrations, however, can be assigned to selected websites.
 * :ref:`Taxation configuration <configuration--guide--commerce--configuration--taxation>` --- The setting allows to enable taxation, select the tax provider, set Sales and VAT taxes, and calculate the tax on shipping once across all websites.
 * :ref:`Workflow configuration <doc--system--workflow-management>` --- Any workflows that you activate for your application (checkout, quote, rfq, or any other custom one) are automatically enabled for all the websites within one organization. However, the decision on whether to enable a guest checkout is made individually for each website.
 

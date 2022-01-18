@@ -367,7 +367,7 @@ This section describes configuration of entity fields.
                 field10:
                     post_processor: twig
                     post_processor_options:
-                        template: '@OroApi/Field/render_content.html.twig'
+                        template: '@Acme/Api/Field/some_template.html.twig'
 
 .. _fields-special-data-types:
 

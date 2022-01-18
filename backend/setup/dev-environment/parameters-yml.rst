@@ -11,7 +11,7 @@ Infrastructure-related configuration parameters are stored in the *config/parame
 * The ``mailer_`` parameters define settings used to deliver emails sent by the application.
 * The ``websocket_`` parameters define settings for the web UI.
 * The ``search_`` parameters are used to connect to the search engine.
-* The ``website_search_engine_index_prefix`` index prefix for website search engine.
+* The ``website_search_`` parameters are used to connect to the website search engine.
 * The ``web_backend_prefix`` URL prefix for the back-office.
 * The ``session_handler`` value specifies the PHP |session handler| to be used.
 * The ``secret`` value is used to generate |CSRF tokens|.
@@ -71,21 +71,10 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
        websocket_backend_path:                ""         # Websocket url path the application server will connect to (for example "/websocket" or "/ws")
        websocket_backend_transport:           tcp        # Socket transport (for example "tcp", "ssl" or "tls")
        websocket_backend_ssl_context_options: {}         # Socket context options, usually needed when using secure transport
-       # search engine configuration
-       search_engine_name:                 orm
-       search_engine_host:                 '%env(ORO_SEARCH_HOST)%'
-       search_engine_port:                 '%env(ORO_SEARCH_PORT)%'
-       search_engine_index_prefix:         '%env(ORO_SEARCH_INDEX_PREFIX)%'
-       search_engine_username:             '%env(ORO_SEARCH_USER)%'
-       search_engine_password:             '%env(ORO_SEARCH_PASSWORD)%'
-       search_engine_ssl_verification:     '%env(ORO_SEARCH_ENGINE_SSL_VERIFICATION)%'
-       search_engine_ssl_cert:             '%env(ORO_SEARCH_ENGINE_SSL_CERT)%'
-       search_engine_ssl_cert_password:    '%env(ORO_SEARCH_ENGINE_SSL_CERT_PASSWORD)%'
-       search_engine_ssl_key:              '%env(ORO_SEARCH_ENGINE_SSL_KEY)%'
-       search_engine_ssl_key_password:     '%env(ORO_SEARCH_ENGINE_SSL_KEY_PASSWORD)%'
 
-       # website search engine configuration
-       website_search_engine_index_prefix: '%env(ORO_SEARCH_WEBSITE_INDEX_PREFIX)%'
+       # search engine configuration
+       search_engine_dsn:          '%env(ORO_SEARCH_ENGINE_DSN)%'
+       website_search_engine_dsn:  '%env(ORO_WEBSITE_SEARCH_ENGINE_DSN)%'
 
        # Used to hide backend under specified prefix, should be started with "/", for instance "/admin"
        web_backend_prefix:         '/admin'
@@ -112,19 +101,14 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
        env(ORO_DB_PASSWORD): null
        env(ORO_DB_VERSION): null
 
-       env(ORO_MAILER_DSN): "native://default"
+       env(ORO_MAILER_DSN): 'native://default'
 
-       env(ORO_SEARCH_HOST): 127.0.0.1
-       env(ORO_SEARCH_PORT): null
-       env(ORO_SEARCH_INDEX_PREFIX): oro_search
-       env(ORO_SEARCH_USER): null
-       env(ORO_SEARCH_PASSWORD): null
-       env(ORO_SEARCH_ENGINE_SSL_VERIFICATION): null
-       env(ORO_SEARCH_ENGINE_SSL_CERT): null
-       env(ORO_SEARCH_ENGINE_SSL_CERT_PASSWORD): null
-       env(ORO_SEARCH_ENGINE_SSL_KEY): null
-       env(ORO_SEARCH_ENGINE_SSL_KEY_PASSWORD): null
-       env(ORO_SEARCH_WEBSITE_INDEX_PREFIX): oro_website_search
+       env(ORO_SEARCH_ENGINE_DSN): 'orm:'
+       env(ORO_WEBSITE_SEARCH_ENGINE_DSN): 'orm:'
+
+       # Elastic search's DSN example:
+       #env(ORO_SEARCH_ENGINE_DSN): 'elastic-search://valid_user:valid_password@127.0.0.1:9200?prefix=oro_search'
+       # 'valid_user:valid_password@' DSN's part can be skipped if authentication is not required.
 
        env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
        env(ORO_ENABLE_PRICE_SHARDING): '0'

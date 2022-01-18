@@ -9,7 +9,7 @@ Marketing Automation Concept Guide
 
 In Oro applications, you can manage, perform, and track the results of your marketing activities, like email campaigns and website activities tracking.
 
-You can integrate with the external services (MailChimp and dotmailer) and synchronize marketing campaign configuration and results between these services and Oro application.
+You can integrate with the external services (MailChimp and Dotdigital) and synchronize marketing campaign configuration and results between these services and Oro application.
 
 In Oro application and external systems, you can launch marketing campaigns distributed via email to the custom group of contacts. The custom group is generated as :ref:`marketing list <user-guide-marketing-lists>`.
 
@@ -29,10 +29,10 @@ In Oro application, you can use the following marketing tools:
 
 .. note:: Configure tracking settings in Oro application via the :ref:`system configuration <admin-configuration-tracking>`.
 
-Via dotmailer
--------------
+Via Dotdigital
+--------------
 
-.. include:: /user/back-office/system/integrations/dotmailer/index.rst
+.. include:: /user/back-office/system/integrations/dotdigital/index.rst
    :start-after: begin_include
    :end-before: finish_include
 

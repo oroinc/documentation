@@ -12,7 +12,7 @@ Before you proceed, please refer to the :ref:`System Requirements <system-requir
 Prepare a Server with OS
 ------------------------
 
-Get a dedicated physical or virtual server with at least 4Gb RAM with the CentOS v7.4 installed. Ensure that you
+Get a dedicated physical or virtual server with at least 4Gb RAM with the CentOS v8 installed. Ensure that you
 can run processes as a *root* user or user with *sudo* permissions.
 
 Environment Setup
@@ -25,18 +25,18 @@ To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.
 
 * Extra Packages for Enterprise Linux (EPEL) repository by |Red Hat|
 * Oro Enterprise Linux Packages (OELP) repository by Oro engineers
-* Remi's PHP 8.0 RPM repository for Enterprise Linux 7
+* Remi's PHP 8.1 RPM repository for Enterprise Linux 7
 
 .. note:: The necessary installation packages are distributed using the |software collections|.
 
-Add required repositories to your `yum` package manager and install the |software collections| management utils by running:
+Add required repositories to your `dnf` package manager and install the |software collections| management utils by running:
 
 .. code-block:: bash
 
-   yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-7.rpm yum-utils scl-utils centos-release-scl centos-release-scl-rh
-   yum-config-manager --add-repo http://koji.oro.cloud/rpms/oro-el7.repo
-   yum-config-manager --enable remi-php80
-   yum update -y
+   dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+   dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+   dnf -y group install "Development Tools"
+   dnf -y update
 
 Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, Supervisor, and Wget
 ----------------------------------------------------------------------------------
@@ -45,17 +45,33 @@ Install most of the required Oro application environment components using the fo
 
 .. code-block:: bash
 
-   curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
-   yum install -y rh-postgresql96 rh-postgresql96-postgresql rh-postgresql96-postgresql-server rh-postgresql96-postgresql-contrib rh-postgresql96-postgresql-syspaths oro-elasticsearch7 oro-elasticsearch7-runtime oro-elasticsearch7-elasticsearch oro-redis5 oro-redis5-runtime oro-redis5-redis oro-rabbitmq-server37 oro-rabbitmq-server37-runtime oro-rabbitmq-server37-rabbitmq-server nginx nodejs wget git bzip2 supervisor
+   curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
+
+Install Postgresql 14 on CentOS 8:
+.. code-block:: bash
+
+   dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+   dnf -qy module disable postgresql
+   dnf install -y postgresql14-server
+   dnf install -y postgresql14-contrib
+   /usr/pgsql-14/bin/postgresql-14-setup initdb
+
+Install other required applications:
+
+.. code-block:: bash
+
+   dnf install -y oro-elasticsearch7 oro-elasticsearch7-runtime oro-elasticsearch7-elasticsearch oro-redis6 oro-redis6-runtime oro-redis6-redis oro-rabbitmq-server39 oro-rabbitmq-server39-runtime oro-rabbitmq-server39-rabbitmq-server nginx nodejs wget git bzip2 supervisor
 
 Install PHP
 ^^^^^^^^^^^
 
-Install PHP 8.0 and the required dependencies using the following command:
+Install PHP 8.1 and the required dependencies using the following command:
 
 .. code-block:: bash
 
-   yum install -y php-cli php-fpm php-opcache php-mbstring php-pgsql php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-tidy php-zip php-devel php-pear
+   dnf module reset php
+   dnf module install php:remi-8.1 -y
+   dnf install -y php-cli php-fpm php-opcache php-mbstring php-pgsql php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-tidy php-zip php-devel php-pear
 
 Install Composer
 ^^^^^^^^^^^^^^^^
@@ -112,7 +128,7 @@ Initialize a PostgreSQL Database Cluster
 
 .. code-block:: bash
 
-   scl enable rh-postgresql96 bash
+   scl enable rh-postgresql13 bash
    postgresql-setup --initdb
 
 Enable Password Protected PostgreSQL Authentication
@@ -122,7 +138,7 @@ By default, PostgreSQL is configured to use `ident` authentication.
 
 To use the password-based authentication instead, replace the `ident` with the `md5` in the `pg_hba.conf` file.
 
-Open the file */var/opt/rh/rh-postgresql96/lib/pgsql/data/pg_hba.conf* and change the following strings:
+Open the file */var/opt/rh/rh-postgresql13/lib/pgsql/data/pg_hba.conf* and change the following strings:
 
 .. code-block:: none
 
@@ -143,7 +159,7 @@ To set the password for the *postgres* user to the new secure one, run the follo
 
 .. code-block:: bash
 
-   systemctl start rh-postgresql96-postgresql
+   systemctl start rh-postgresql13-postgresql
    su postgres
    psql
    \password
@@ -391,8 +407,8 @@ Create RabbitMQ User
 
 .. code-block:: none
 
-   source scl_source enable oro-rabbitmq-server37
-   systemctl start oro-rabbitmq-server37-rabbitmq-server
+   source scl_source enable oro-rabbitmq-server39
+   systemctl start oro-rabbitmq-server39-rabbitmq-server
    rabbitmqctl add_user <new_rabbitmq_user> <new_rabbitmq_user_password>
    rabbitmqctl set_user_tags <new_rabbitmq_user> administrator
    rabbitmqctl set_permissions -p / <new_rabbitmq_user> ".*" ".*" ".*"
@@ -426,8 +442,8 @@ Enable Installed Services
 
 .. code-block:: none
 
-   systemctl restart rh-postgresql96-postgresql oro-rabbitmq-server37-rabbitmq-server oro-redis5-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
-   systemctl enable rh-postgresql96-postgresql oro-rabbitmq-server37-rabbitmq-server oro-redis5-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
+   systemctl restart rh-postgresql13-postgresql oro-rabbitmq-server39-rabbitmq-server oro-redis6-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
+   systemctl enable rh-postgresql13-postgresql oro-rabbitmq-server39-rabbitmq-server oro-redis6-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
 
 Configure Storage For Import Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -12,7 +12,7 @@ The section focuses on the integrations pre-implemented for your Oro application
 * what payment providers to use to help process different types of payments (PayPal, Apruve, Authorize.Net, etc.)
 * what shipping methods you can offer your OroCommerce customers (UPS, FedEx)
 * how to set up integrations with payment and shipping services
-* how to use email marketing activities and email marketing automation (Mailchimp, dotmailer)
+* how to use email marketing activities and email marketing automation (Mailchimp, Dotdigital)
 * how to configure Google Tag Manager
 * how to create the code that may be embedded to a third-party website to enable communication between the third-party website users and the Oro application
 * how to configure Microsoft 365 calendar events and tasks synchronization
@@ -37,7 +37,7 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`FedEx <doc--integrations--fedex>`
   * :ref:`DPD <doc--integrations--dpd>`
 
-* :ref:`dotmailer Integration <user-guide-dotmailer-overview>`
+* :ref:`Dotdigital Integration <user-guide-dotmailer-overview>`
 * :ref:`Mailchimp Integration <user-guide-mc-integration>`
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
 * :ref:`LDAP Integration <user-guide-ldap-integration>`
@@ -53,7 +53,7 @@ Check the following integrations that can be enabled/disabled and configured in 
    Manage Integrations: Payment Method Integration <payment-integration/index>
    Manage Integrations: Shipping Method Integration <shipping-integration/index>
    Google Tag Manager Integration <gtm/index>
-   dotmailer Integration <dotmailer/index>
+   Dotdigital Integration <dotdigital/index>
    MailChimp Integration <mailchimp-integration>
    Zendesk Integration <zendesk-integration>
    LDAP Integration <ldap-integration>

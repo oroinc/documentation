@@ -421,10 +421,10 @@ By default, there is no possibility to retrieve targets of such associations. To
         entities:
             Oro\Bundle\CallBundle\Entity\Call:
                 fields:
-                    activityTargets:
-                        data_type: association:manyToMany:activity
+                    targets:
+                        data_type: association:manyToMany
 
-After applying the configuration, the ``activityTargets`` relationship becomes available in scope of the :ref:`get_list <get-list-action>`, :ref:`get <get-action>` , :ref:`create <create-action>` and :ref:`update <update-action>` actions. The ``activityTargets`` relationship also becomes  available as a subresource and thus, it is possible to perform :ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`, :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions.
+After applying the configuration, the ``targets`` relationship becomes available in scope of the :ref:`get_list <get-list-action>`, :ref:`get <get-action>` , :ref:`create <create-action>` and :ref:`update <update-action>` actions. The ``targets`` relationship also becomes  available as a subresource and thus, it is possible to perform :ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`, :ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>` and :ref:`delete_relationship <delete-relationship-action>` actions.
 
 The ``data_type`` parameter has format: ``association:relationType:associationKind``, where
 

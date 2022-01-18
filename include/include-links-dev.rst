@@ -1115,30 +1115,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Provider/Event/OnButtonsMatched.php" target="_blank">`OnButtonsMatched`</a>
 
-.. |Fundamentals: Activities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle#fundamentals" target="_blank">Fundamentals</a>
-
-.. |Add Widget to a Page| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle#add-widget-into-a-page" target="_blank">Add Widget to a Page</a>
-
-.. |Show Widget and Its Button on a Specific page| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle#show-widget-and-its-button-on-specific-page-viewedit" target="_blank">Show Widget and Its Button on a Specific page</a>
-
-.. |Register a New Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle#add-widget-into-a-page" target="_blank">Register a New Entity</a>
-
-.. |Add Inheritance of Activity Lists to the Target Entity| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/inheritance.md" target="_blank">Add Inheritance of Activity Lists to the Target Entity</a>
-
-.. |Permissions in ActivityList Bundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/permissions.md" target="_blank">Permissions in ActivityList Bundle</a>
-
 .. |MemoryCacheChain| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php" target="_blank">MemoryCacheChain</a>
@@ -2105,25 +2081,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/CustomizeFormDataContext.php" target="_blank">Events</a>
 
-.. |Configure Dedicated Database Connection for Reports| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md" target="_blank">Configure Dedicated Database Connection for Reports</a>
-
 .. |ScopeBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">ScopeBundle</a>
-
-.. |Initialize a Sidebar| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#sidebar-initializing" target="_blank">Initialize a Sidebar</a>
-
-.. |Configure a Sidebar Widget in YAML| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#widget-configuration-in-yaml" target="_blank">Configure a Sidebar Widget in YAML</a>
-
-.. |Create a Sidebar Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#creating-widgets" target="_blank">Create a Sidebar Widget</a>
 
 .. |Usage and Logging Levels| raw:: html
 
@@ -5714,9 +5674,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/config/oro/query_designer.yml" target="_blank">By default</a>
 
-.. |PHP 8.0| raw:: html
+.. |PHP 8.1| raw:: html
 
-   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP 8.0</a>
+   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP 8.1</a>
 
 .. |Composer| raw:: html
 
