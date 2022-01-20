@@ -5642,7 +5642,7 @@ Links (Dev)
 
 .. |IdentityIterationStrategyInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentityIterationStrategyInterface.php" target="_blank">Bug Bounty</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentityIterationStrategyInterface.php" target="_blank">IdentityIterationStrategyInterface</a>
 
 .. |SelectIdentifierWalker| raw:: html
 
