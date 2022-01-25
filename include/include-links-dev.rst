@@ -2069,14 +2069,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/twig-inspector/blob/master/LICENSE" target="_blank">License</a>
 
-.. |JavaScript Components API| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/WindowsBundle/Resources/doc/javascript_window_components.md" target="_blank">JavaScript Components API</a>
-
-.. |Windows as Widget| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/WindowsBundle/Resources/doc/windows_as_widget.md" target="_blank">Windows as Widget</a>
-
 .. |ConfigExtensionInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ApiBundle/Config/Extension/ConfigExtensionInterface.php" target="_blank">ConfigExtensionInterface</a>
