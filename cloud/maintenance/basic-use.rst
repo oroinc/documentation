@@ -5,15 +5,15 @@ Maintenance Commands
 
 Once you are connected to the OroCloud server, you can run a series of maintenance commands.
 
-The List of OroCloud Maintenance Management Commands
-----------------------------------------------------
+OroCloud Maintenance Management Commands List
+---------------------------------------------
 
 To list available OroCloud maintenance management commands, run `orocloud-cli` without parameters.
 
 .. warning:: OroCloud maintenance commands may affect the application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
 
-`orocloud.yaml` configuration
------------------------------
+Configuration of `orocloud.yaml`
+--------------------------------
 
 The `validation` command checks your configuration for syntax errors or wrong configuration values. Use the `files` argument to check custom files or multiple files merge result:
 
@@ -33,6 +33,86 @@ Use  the `help` command to get configuration details or configuration reference:
     orocloud-cli config:help webserver.limit_whitelist
     orocloud-cli config:help orocloud_options.webserver.limit_whitelist
 
+Logs
+----
+
+List Logs
+~~~~~~~~~
+
+.. code-block:: none
+
+    orocloud-cli orocloud-cli log:list
+
+The command output is similar to the following:
+
+.. code-block:: none
+
+    ➤ Executing task log:list
+    +------------------+-----------------+-----------------------------------+
+    | DATE             | OPERATION       | FILE                              |
+    +------------------+-----------------+-----------------------------------+
+    | 2021-12-08 16:13 | upgrade:source  | upgrade:source_20211208161329.log |
+    +------------------+-----------------+-----------------------------------+
+    [localhost] Total 1 item(s), 1 page(s). Current page: 1, items per page: 25.
+    ✔ Ok [5ms]
+
+
+View Logs
+~~~~~~~~~
+
+.. code-block:: none
+
+    orocloud-cli orocloud-cli log:view upgrade:source_20211208161329.log
+
+The command output is similar to the following:
+
+.. code-block:: none
+
+    ➤ Executing task log:view
+    Wed Dec  8 16:13:29 UTC 2021 : Clone source code from repository
+    Wed Dec  8 16:13:44 UTC 2021 : Run composer install
+    Wed Dec  8 16:15:49 UTC 2021 : Upgrade application
+    Dumping exposed routes.
+
+    [dir+]  /opt/ocom/app/deploy/20211208161329/public/media/js
+    [file+] /opt/ocom/app/deploy/20211208161329/public/media/js/admin_routes.json
+    Dumping exposed routes.
+
+    [file+] /opt/ocom/app/deploy/20211208161329/public/media/js/frontend_routes.json
+    16:16:54 [file+] oro.locale_data.js
+    Move "/opt/ocom/app/deploy/20211208161329/public/bundles/components" to "/opt/ocom/app/deploy/20211208161329/public/js/components"
+    WARNING: The directory "/opt/ocom/app/deploy/20211208161329/public/bundles/components" does not exist
+
+     Installing assets as hard copies.
+
+     --- -------------------------------------------- ----------------
+          Bundle                                       Method / Error
+     --- -------------------------------------------- ----------------
+
+     ..............
+
+      > loading [jsmessages] ... processed 1803 records.
+      > loading [maintenance] ... processed 7 records.
+      > loading [tooltips] ... processed 20 records.
+      > loading [HWIOAuthBundle] ... processed 9 records.
+      > loading [entities] ... processed 4840 records.
+      > loading [workflows] ... processed 625 records.
+    Loading translations [en_AU] (0) ...
+    Loading translations [en_CA] (0) ...
+    Loading translations [en_GB] (0) ...
+    Loading translations [en_US] (0) ...
+    Loading translations [fr_CA] (0) ...
+    Loading translations [fr_FR] (1) ...
+      > loading [messages] ... processed 6 records.
+    Loading translations [de_DE] (1) ...
+      > loading [messages] ... processed 6 records.
+    Loading translations [es_AR] (0) ...
+    All messages successfully processed.
+    Rebuilding cache ... Done.
+    Wed Dec  8 16:31:56 UTC 2021 : Upgrade completed successfully.
+    ✔ Ok [26ms]
+
+
 Locks
 -----
 
@@ -41,7 +121,6 @@ Any time the `orocloud-cli` command runs with any argument or options, the maint
 As an example:
 
 .. code-block:: none
-
 
     WARNING!
     Another `orocloud-cli` instance is already running PID `2860`.
@@ -88,7 +167,6 @@ To upgrade the Oro application, run the `upgrade` command:
 
 .. code-block:: none
 
-
     orocloud-cli upgrade
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file from. Use a valid tag or branch from the Oro application repository, for example, the |1.6| branch or the|1.6.1| tag.
@@ -110,7 +188,6 @@ To perform Oro application upgrade with minimal downtime, run the `upgrade:rolli
 
 .. code-block:: none
 
-
     orocloud-cli upgrade:rolling
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file. Use a valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
@@ -129,7 +206,6 @@ Upgrade With Minimal Downtime (Source Upgrade)
 To perform Oro application upgrade with minimal downtime, run the `upgrade:source` command:
 
 .. code-block:: none
-
 
     orocloud-cli upgrade:source
 
@@ -158,7 +234,6 @@ To back up the application state, run the `backup:create` command:
 
 .. code-block:: none
 
-
     orocloud-cli  backup:create [--label=my-backup]
 
 `--label` is an optional parameter for any comments related to the backup
@@ -170,13 +245,11 @@ To view the list of the backups, run the `backup:list` command:
 
 .. code-block:: none
 
-
     orocloud-cli  backup:list
 
 The command output is similar to the following:
 
 .. code-block:: none
-
 
     ➤ Executing task backup:list
     +-----------------+-----------------------+
@@ -198,7 +271,6 @@ Restore Everything
 To restore the information from backup, run the `backup:restore` command:
 
 .. code-block:: none
-
 
     orocloud-cli  backup:restore {backup_date}
 
@@ -230,11 +302,9 @@ To display the command description and help, run:
 
 .. code-block:: none
 
-
     orocloud-cli backup:create:sanitized --help
 
 .. code-block:: none
-
 
     Description:
       Creates a sanitized backup of database data. Encryption is not applied
@@ -250,17 +320,15 @@ To display the command description and help, run:
       -n, --no-interaction             Do not ask any interactive question
       -v|vv|vvv, --verbose             Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
 
-To create a backup, use the command:
+To create a backup, use the following command:
 
 .. code-block:: none
-
 
     orocloud-cli backup:create:sanitized
 
 The command output is similar to the following:
 
 .. code-block:: none
-
 
     ➤ Executing task backup:create:sanitized
     [localhost] Done, sanitized backup saved to: '/mnt/ocom/backup/20200101102000-sanitized-db.sql.gz'
@@ -271,7 +339,6 @@ The resulting backup is not encrypted and is located next to the ordinary encryp
 Once you have created the sanitized backup, you can determine its location with the `backup:list:sanitized` command and download it using:
 
 .. code-block:: none
-
 
     scp oro_cloud_username@oro_cloud_hostname:/path/to/the/backup/file target_username@target_hostname:/path/to/the/target/backup/file
 
@@ -284,13 +351,11 @@ To review the list of available sanitized backups, their creation timestamps and
 
 .. code-block:: none
 
-
     orocloud-cli backup:list:sanitized
 
 The command output is similar to the following:
 
 .. code-block:: none
-
 
     ➤ Executing task backup:list
     +-----------------+-----------------------------------------------------+
@@ -312,11 +377,9 @@ To display the command description and help, run the following:
 
 .. code-block:: none
 
-
     orocloud-cli backup:restore:sanitized --help
 
 .. code-block:: none
-
 
     Description:
       Restores the application from the sanitized backup.
@@ -345,7 +408,6 @@ To restore the information from the sanitized backup, run the `backup:restore:sa
 
 .. code-block:: none
 
-
     orocloud-cli  backup:restore:sanitized {backup_date}
 
 .. note:: The `{backup_date}` argument is one of the available backups listed in the `backup:list:sanitized` command output, e.g., `2020-01-01-1025`.
@@ -355,7 +417,6 @@ To restore the information from the sanitized backup, run the `backup:restore:sa
 The command output is similar to the following:
 
 .. code-block:: none
-
 
     ➤ Executing task notification:start
     ➤ Executing task notification:configure
@@ -405,13 +466,11 @@ Run application commands via `app:console`, for example:
 
 .. code-block:: none
 
-
     orocloud-cli app:console oro:user:list
 
 To pass a command that contains arguments or options, wrap the command in quotes.
 
 .. code-block:: none
-
 
     orocloud-cli app:console "oro:user:list --all"
 
@@ -419,14 +478,12 @@ If a command contains quotes and is wrapped in the same quotes type, the inner q
 
 .. code-block:: none
 
-
     orocloud-cli app:console "oro:user:list --roles=\"Sales Manager\""
 
 
 By default, the `app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g., to monitor command execution in real-time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
 
 .. code-block:: none
-
 
     orocloud-cli app:console -vvv "oro:user:list"
 
@@ -460,7 +517,6 @@ Sometimes you may require to clear the application cache (for example, after app
 
 .. code-block:: none
 
-
     orocloud-cli cache:rebuild [--force]
 
 .. note:: Since the `cache:rebuild` operation requires the `Consumer` and `Cron` jobs to be stopped, a confirmation message is displayed before execution.
@@ -476,7 +532,6 @@ Cached Translated Values
 
 .. code-block:: none
 
-
     orocloud-cli app:translation:update
 
 API Cache
@@ -487,13 +542,61 @@ API Cache
 
 .. code-block:: none
 
-
     orocloud-cli app:cache:api
+
+Credentials Commands
+--------------------
+
+.. note:: Credentials commands are not available in production (`prod`) environments.
+
+Get all connection credentials in the `yaml` format:
+
+.. code-block:: none
+
+    orocloud-cli credentials
+
+Get all connection credentials in the `json` format:
+
+.. code-block:: none
+
+    orocloud-cli credentials --format=json
+
+Get the connection credentials value:
+
+.. code-block:: none
+
+    orocloud-cli credentials --selector=[database][host]
 
 Media Commands
 --------------
 
 .. note:: Commands are available with configured :ref:`OroGridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>` only.
+
+Media List
+~~~~~~~~~~
+
+To list files from the `uploads` adapter, use:
+
+.. code-block:: none
+
+    orocloud-cli media:list --adapter=uploads
+
+Use the `filter` prefix to filter listed files:
+
+.. code-block:: none
+
+    orocloud-cli media:list --adapter=public --filter=cache/attachment/filter/product_original
+
+Media Download
+~~~~~~~~~~~~~~
+
+Downloads media content from a source adapter to the destination (/mnt/ocom/backup or /mnt/ocrm/backup).
+
+To download a file from the `private` adapter, use:
+
+.. code-block:: none
+
+    orocloud-cli media:download --adapter=private attachments/61b0871967033945666770.jpeg
 
 Media Upload
 ~~~~~~~~~~~~
@@ -517,7 +620,6 @@ Usage examples:
 To display the command description and help, run the following:
 
 .. code-block:: none
-
 
     orocloud-cli media:upload --help
 
@@ -555,11 +657,9 @@ Also, if some files cannot be transferred due to particular restrictions, the ap
 
 .. code-block:: none
 
-
     orocloud-cli media:upload /tmp/media
 
 .. code-block:: none
-
 
     ➤ Executing task media:upload
     100 files processed, last batch size is 16.08 MB.
@@ -572,11 +672,9 @@ The following command transfers media files from the `/tmp/media` directory into
 
 .. code-block:: none
 
-
     orocloud-cli media:upload /tmp/media --force
 
 .. code-block:: none
-
 
     ➤ Executing task media:upload
     100 files processed, last batch size is 16.08 MB.
@@ -588,7 +686,6 @@ The following command transfers media files from the `/tmp/media` directory into
 If source file extension is not allowed, the appropriate notification is displayed. For example:
 
 .. code-block:: none
-
 
     ➤ Executing task media:upload
     100 files processed, last batch size is 16.08 MB.
@@ -619,7 +716,6 @@ To view the messages list of the RabbitMQ, use the `rabbitmq:queue:list` command
 
 .. code-block:: none
 
-
     rabbitmq:queue:list [options] [--] [<vhost> [<queue>]]
 
 * `vhost` argument is required, RabbitMQ vhost name, e.g., `oro`.
@@ -629,11 +725,9 @@ To get the list of available ``vhost`` values, please execute `rabbitmq:queue:li
 
 .. code-block:: none
 
-
     orocloud-cli rabbitmq:queue:list
 
 .. code-block:: none
-
 
     The argument 'vhost' is missing. Please provide one.
 
@@ -649,11 +743,9 @@ To get the list of available ``queue`` values, please execute `rabbitmq:queue:li
 
 .. code-block:: none
 
-
     orocloud-cli rabbitmq:queue:list oro
 
 .. code-block:: none
-
 
     The argument 'queue' is missing. Please provide one.
     +---------------+---------+
@@ -666,11 +758,9 @@ To get the list of messages, please execute `rabbitmq:queue:list` with the ``vho
 
 .. code-block:: none
 
-
     orocloud-cli rabbitmq:queue:list oro oro.default
 
 .. code-block:: none
-
 
     +------------------------+---------+----------------------------------------------------+-------------+
     | routing key            | message | payload                                            | redelivered |
@@ -688,7 +778,6 @@ To purge the messages from the RabbitMQ, use the `rabbitmq:queue:purge` command.
 
 .. code-block:: none
 
-
     rabbitmq:queue:purge [options] [--] [<vhost> [<queue>]]
 
 * `vhost` argument is required, RabbitMQ vhost name, e.g., `oro`.
@@ -702,7 +791,6 @@ RabbitMq Reroute
 To reroute the messages from RabbitMQ queue to exchange, use the `rabbitmq:reroute:queue` command.
 
 .. code-block:: none
-
 
     rabbitmq:reroute:queue [options] [--] [<queue> [<exchange>]]
 
@@ -723,7 +811,6 @@ Check Consumers Status
 To check consumers status, use the `service:status:consumer` command.
 
 .. code-block:: none
-
 
     service:status:consumer [options] [--] [<host>]
 
