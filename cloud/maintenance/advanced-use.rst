@@ -13,8 +13,14 @@ The `validation` command checks your configuration for syntax errors or wrong co
 .. code-block:: bash
 
     orocloud-cli config:validate
-    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.prod.yml
-    orocloud-cli config:validate /mnt/ocom/app/orocloud.yml /mnt/ocom/app/www/orocloud.prod.yml
+
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml
+
+    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.yaml
+
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml
+
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml /mnt/ocom/app/www/orocloud_prod.yaml
 
 Valid changes are applied within 30 minutes or automatically during deployments.
 
@@ -357,12 +363,7 @@ WAF Rules
 
 Rules to manage HTTP requests filtering are defined in the following sections of the `orocloud.yaml` file.
 
-Before implementing changes in this file on production, you should always test it at the environment stage  to avoid issues with live application. Also, you can use the following command to check the correctness of the file syntax afterwards:
-
-.. code-block:: none
-
-
-    ssh user@main_node_ip 'cat /mnt/ocom/app/orocloud.yaml' | yamllint -
+Before implementing changes in this file on production, you should always test it at the environment stage to avoid issues with live application.
 
 Source filtering rules are defined in the ``webserver`` section. This is the child element of the ``orocloud_options`` data structure. Here is an example of rules definitions:
 

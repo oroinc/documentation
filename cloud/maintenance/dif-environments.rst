@@ -5,7 +5,48 @@ Configuration in Different Environments
 A typical OroCloud project has at least 2 environments: “prod” and “stage”. The OroCloud application can be |configured using orocloud.yaml file|.
 
 Sometimes, a specific application configuration should be applied in one environment, but not in the other.
-For example, assuming HTTP Basic Auth should be enabled only for the application in the stage environment. Below you can find 2 possible approaches to cover this case.
+For example, assuming HTTP Basic Auth should be enabled only for the application in the stage environment. Below you can find three possible approaches to cover this case.
+
+Environment Type Approach
+-------------------------
+
+The maintenance agent is merging three different yaml files to load it's configuration:
+
+
+   .. code-block:: none
+
+      /mnt/{ocom,ocrm}/app/orocloud.yaml
+      /mnt/{ocom,ocrm}/app/www/orocloud.yaml
+      /mnt/{ocom,ocrm}/app/www/orocloud_{dev,stag,uat,prod}.yaml
+
+
+For example, `orocloud.yaml` file in the repository root contains common configuration for all environments:
+
+
+   .. code-block:: none
+
+      # cat orocloud.yaml
+      orocloud_options:
+        application:
+          maintenance_page: 'relative/path/m.html'
+
+and basic auth enabled in `dev` environment only using `orocloud_dev.yaml`:
+
+
+   .. code-block:: none
+
+      # cat orocloud_dev.yaml
+      orocloud_options:
+         webserver:
+            locations:
+               root:
+               type: php
+               location: '~ /index\.php(/|$)'
+               auth_basic_enable: true
+               auth_basic_userlist:
+                  user:
+                     ensure: present
+                     password: pass
 
 Git Branches Approach
 ---------------------

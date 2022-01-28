@@ -20,8 +20,14 @@ The `validation` command checks your configuration for syntax errors or wrong co
 .. code-block:: none
 
     orocloud-cli config:validate
-    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.prod.yaml
-    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.prod.yaml
+
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml
+
+    orocloud-cli config:validate /mnt/ocom/app/www/orocloud.yaml
+
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml
+
+    orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml /mnt/ocom/app/www/orocloud_prod.yaml
 
 Valid changes are applied within 30 minutes or automatically during deployments.
 
