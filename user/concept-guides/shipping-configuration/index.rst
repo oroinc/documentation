@@ -46,7 +46,7 @@ OroCommerce works with the following shipping methods out-of-the-box:
 
 .. note:: You must have at least one shipping method available for your customers to allow them to proceed through the checkout. Without a shipping method, the buyer receives an error message asking them to contact the seller to complete the order.
 
-.. hint:: Check out |OroCommerce's Extension Marketplace| to download other shipping services that you can pair with your OroCommerce applications.
+.. hint:: Check out |OroCommerce's Extensions Store| to download other shipping services that you can pair with your OroCommerce applications.
 
 Shipping Rules
 --------------

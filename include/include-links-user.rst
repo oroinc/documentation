@@ -687,9 +687,9 @@ Links (User)
 
    <a href="https://github.com/oroinc/resource-library" target="_blank">Resource Library Extension</a>
 
-.. |OroCommerce's Extension Marketplace| raw:: html
+.. |OroCommerce's Extensions Store| raw:: html
 
-   <a href="https://marketplace.oroinc.com/orocommerce/" target="_blank">OroCommerce's Extension Marketplace</a>
+   <a href="https://extensions.oroinc.com/orocommerce/" target="_blank">OroCommerce's Extensions Store</a>
 
 .. |DPD developer eSolutions portal| raw:: html
 

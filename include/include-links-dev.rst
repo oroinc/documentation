@@ -1197,9 +1197,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/SecurityBundle/Annotation/AclAncestor.php" target="_blank">@AclAncestor</a>
 
-.. |Oro MarketplaceCommerce| raw:: html
+.. |Oro Extensions Store Commerce| raw:: html
 
-   <a href="https://marketplace.oroinc.com/orocommerce" target="_blank">Oro Marketplace</a>
+   <a href="https://extensions.oroinc.com/orocommerce/" target="_blank">Oro Extensions Store</a>
 
 .. |Symfony Standard Edition| raw:: html
 
@@ -1317,9 +1317,9 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/security/csrf.html" target="_blank">CSRF tokens</a>
 
-.. |OroCRM Marketplace| raw:: html
+.. |OroCRM Extensions Store| raw:: html
 
-   <a href="http://marketplace.orocrm.com/" target="_blank">OroCRM Marketplace</a>
+   <a href="https://extensions.oroinc.com/orocrm/" target="_blank">OroCRM Extensions Store</a>
 
 .. |ProductHolderInterface| raw:: html
 
@@ -2229,9 +2229,9 @@ Links (Dev)
 
    <a href="https://www.jetbrains.com/help/phpstorm/2016.3/configuring-line-separators.html" target="_blank">line break separator</a>
 
-.. |Oro marketplace| raw:: html
+.. |Oro Extensions Store| raw:: html
 
-   <a href="https://platform-marketplace.orocrm.com/" target="_blank">Oro marketplace</a>
+   <a href="https://extensions.oroinc.com/oroplatform/" target="_blank">Oro Extensions Store</a>
 
 .. |OroPlatformBundle| raw:: html
 
@@ -3850,17 +3850,17 @@ Links (Dev)
 
    <a href="https://packagist.oroinc.com/" target="_blank">Oro Packagist repository</a>
 
-.. |https://marketplace.oroinc.com/oroplatform| raw:: html
+.. |https://extensions.oroinc.com/oroplatform/| raw:: html
 
-   <a href="https://marketplace.oroinc.com/oroplatform" target="_blank">https://marketplace.oroinc.com/oroplatform</a>
+   <a href="https://extensions.oroinc.com/oroplatform/" target="_blank">https://extensions.oroinc.com/oroplatform/</a>
 
-.. |https://marketplace.orocrm.com/| raw:: html
+.. |https://extensions.oroinc.com/orocrm/| raw:: html
 
-   <a href="https://marketplace.orocrm.com/" target="_blank">https://marketplace.orocrm.com/</a>
+   <a href="https://extensions.oroinc.com/orocrm/" target="_blank">https://extensions.oroinc.com/orocrm/</a>
 
-.. |https://marketplace.orocommerce.com/| raw:: html
+.. |https://extensions.oroinc.com/orocommerce/| raw:: html
 
-   <a href="https://marketplace.orocommerce.com/" target="_blank">https://marketplace.orocommerce.com/</a>
+   <a href="https://extensions.oroinc.com/orocommerce/" target="_blank">https://extensions.oroinc.com/orocommerce/</a>
 
 .. |https://github.com/oroinc/| raw:: html
 

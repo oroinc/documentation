@@ -27,7 +27,7 @@ The Marketing Menu in the Oro application provides access tools for managing the
 
 :ref:`Marketing lists <user-guide-marketing-lists>` are lists of contacts segmented according to conditions which are defined for the purpose of bulk emailing or telephone outreach. In your Oro application, virtually every entity is available as a marketing list target. For instance, marketing lists can be created based on accounts (primary email of a default contact is used), or, if you are using OroCommerce, from customer users, quotes, orders, and shopping lists.
 
-Marketing lists can be used to synchronize with subscribers lists in :ref:`MailChimp <user-guide-mc-integration>`, and once the integration is configured, :ref:`send an email campaign via MailChimp <user-guide-mailchimp-campaign>`.
+Marketing lists can be used to synchronize with subscribers lists in :ref:`Mailchimp <user-guide-mc-integration>`, and once the integration is configured, :ref:`send an email campaign via Mailchimp <user-guide-mailchimp-campaign>`.
 
 Also, the Oro application supports out-of-the-box integration with :ref:`dotmailer <user-guide-dm-integration>`, allowing you to map the marketing lists to address books in dotmailer, use your address books to :ref:`send an email campaign via dotmailer <user-guide-dotmailer-campaign>`, and :ref:`manage dotmailer data fields and mappings <user-guide-dotmailer-data-fields>`.
 

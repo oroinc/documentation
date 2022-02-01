@@ -7,7 +7,7 @@ Manage Apruve Payment Service in the Back-Office
 
 .. hint:: This section is part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
-.. hint:: The feature requires extension, so visit Oro Marketplace to download the |Apruve extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
+.. hint:: The feature requires extension, so visit Oro Extensions Store to download the |Apruve extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 Apruve is a B2B credit management service that provides a credit line for your buyers. Apruve manages business account for OroCommerce sellers starting from credit approval and financing and facilitates credit-related interactions with buyer via their account set up, invoicing, and payment.
 
