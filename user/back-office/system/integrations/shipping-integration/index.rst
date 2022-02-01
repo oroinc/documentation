@@ -18,7 +18,7 @@ Out-of-the-box, you can create an integration with the following third-party pro
 * :ref:`FedEx <doc--integrations--fedex>`
 * :ref:`DPD <doc--integrations--dpd>`
 
-.. hint:: Check out |OroCommerce's Extension Marketplace| to download other shipping services that you can pair with your OroCommerce applications.
+.. hint:: Check out |OroCommerce's Extensions Store| to download other shipping services that you can pair with your OroCommerce applications.
 
 Delete a Shipping Integration
 -----------------------------

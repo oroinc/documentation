@@ -2,20 +2,20 @@
 
 .. _user-guide-mc-integration:
 
-Configure MailChimp Integration in the Back-Office
+Configure Mailchimp Integration in the Back-Office
 ==================================================
 
 .. begin_include
 
 .. _user-guide-mc-integration--mailchimp-side:
 
-Configure Integration on the MailChimp Side
+Configure Integration on the Mailchimp Side
 -------------------------------------------
 
-To configure the integration with Oro application on the MailChimp side, you need to
+To configure the integration with Oro application on the Mailchimp side, you need to
 create an API key. To do that:
 
-1. Login to MailChimp.
+1. Login to Mailchimp.
 
 2. Navigate to your name in the upper right corner.
 
@@ -57,11 +57,11 @@ Configure Integration on the Oro Side
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | **Field**                    | **Description**                                                                                                                                                                                                                                                                                                                         |
    +==============================+=========================================================================================================================================================================================================================================================================================================================================+
-   | **Type**                     | Among other third-party services, choose MailChimp as this is the integration we are configuring. A form specific to MailChimp will be displayed.                                                                                                                                                                                       |
+   | **Type**                     | Among other third-party services, choose Mailchimp as this is the integration we are configuring. A form specific to Mailchimp will be displayed.                                                                                                                                                                                       |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | **Name**                     | Specify the integration **Name** as it will be referred to within Oro application.                                                                                                                                                                                                                                                      |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **API Key**                  | Paste the API key you copied in your MailChimp account. Click **Check Connection**. **Everything’s Chimpy** means that the connection was successful and    you are now authorized.                                                                                                                                                     |
+   | **API Key**                  | Paste the API key you copied in your Mailchimp account. Click **Check Connection**. **Everything’s Chimpy** means that the connection was successful and    you are now authorized.                                                                                                                                                     |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | **Activity Update Interval** | Now set the **Activity Update Interval** to a period you plan to run your campaign for. This should be set based on the length of your campaign and data    storage requirements specific to your Oro instance.                                                                                                                         |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -69,9 +69,9 @@ Configure Integration on the Oro Side
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | **Owner**                    | The Owner determines the list of users who can manage the integration and the data synchronized with it. This means that the owner receives the data    produced by the email campaign. All **Entities** imported within the integration will be assigned to the selected user. It is suggested to select a marketing rep as the owner. |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **Enable Two Way Sync**      | Use this section to enable or disable two-way synchronization. By default, **Enable Two Way Sync** is unchecked. If it remains unchecked, unsubscribes    will pass from MailChimp to Oro application. If enabled, subscription status can be passed from Oro application to MailCHimp and the other way around.                        |
+   | **Enable Two Way Sync**      | Use this section to enable or disable two-way synchronization. By default, **Enable Two Way Sync** is unchecked. If it remains unchecked, unsubscribes    will pass from Mailchimp to Oro application. If enabled, subscription status can be passed from Oro application to MailCHimp and the other way around.                        |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **Sync Priority:**           | **Remote Wins** means that the MailChimp will be considered the master and override conflicts with the Oro application. **Local Wins** means that local data will    be the master and override any conflicts with MailChimp.                                                                                                           |
+   | **Sync Priority:**           | **Remote Wins** means that the Mailchimp will be considered the master and override conflicts with the Oro application. **Local Wins** means that local data will    be the master and override any conflicts with Mailchimp.                                                                                                           |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    .. image:: /user/img/system/integrations/mailchimp/choose_mc_integration.png
@@ -95,7 +95,7 @@ In order to sync your integration:
 
 **Related Topic**
 
-* :ref:`Sending Email Campaign via MailChimp <user-guide-mailchimp-campaign>`
+* :ref:`Sending Email Campaign via Mailchimp <user-guide-mailchimp-campaign>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

@@ -24,7 +24,7 @@ To be able to create an OAuth application, make sure that you generate private a
 
           *OAuth authorization is not available as encryption keys configuration was not complete. Please contact your administrator.*
 
-.. Install OAuth extension from Oro Marketplace <link> (3.1).
+.. Install OAuth extension from Oro Extensions Store <link> (3.1).
 
 .. finish_oauth1
 

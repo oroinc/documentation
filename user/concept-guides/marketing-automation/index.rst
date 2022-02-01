@@ -9,7 +9,7 @@ Marketing Automation Concept Guide
 
 In Oro applications, you can manage, perform, and track the results of your marketing activities, like email campaigns and website activities tracking.
 
-You can integrate with the external services (MailChimp and Dotdigital) and synchronize marketing campaign configuration and results between these services and Oro application.
+You can integrate with the external services (Mailchimp and Dotdigital) and synchronize marketing campaign configuration and results between these services and Oro application.
 
 In Oro application and external systems, you can launch marketing campaigns distributed via email to the custom group of contacts. The custom group is generated as :ref:`marketing list <user-guide-marketing-lists>`.
 
@@ -36,18 +36,18 @@ Via Dotdigital
    :start-after: begin_include
    :end-before: finish_include
 
-Via MailChimp
+Via Mailchimp
 -------------
 
-Oro application supports out of the box integration with MailChimp, allowing you to do the following:
+Oro application supports out of the box integration with Mailchimp, allowing you to do the following:
 
-* Map the :ref:`Marketing Lists <user-guide-marketing-lists>` as segments in MailChimp and keep them synchronized.
-* Use existing segments in MailChimp and import them to Oro application.
-* Schedule importing statistics of the MailChimp campaigns into Oro Application.
+* Map the :ref:`Marketing Lists <user-guide-marketing-lists>` as segments in Mailchimp and keep them synchronized.
+* Use existing segments in Mailchimp and import them to Oro application.
+* Schedule importing statistics of the Mailchimp campaigns into Oro Application.
 
-To use MailChimp with Oro application, ensure that all the necessary integration steps are complete. See :ref:`MailChimp Integration <user-guide-mc-integration>` for more information.
+To use Mailchimp with Oro application, ensure that all the necessary integration steps are complete. See :ref:`Mailchimp Integration <user-guide-mc-integration>` for more information.
 
-After the integration is configured, you can :ref:`Send Email Campaign via MailChimp <user-guide-mailchimp-campaign>`.
+After the integration is configured, you can :ref:`Send Email Campaign via Mailchimp <user-guide-mailchimp-campaign>`.
 
 .. automation_finish
 

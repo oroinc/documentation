@@ -120,7 +120,7 @@ This generates an email based on the template you've selected, populates it with
 
 .. note::
 
-    If an Email Campaign has been created as a result of integration with :ref:`MailChimp <user-guide-mc-integration>` or
+    If an Email Campaign has been created as a result of integration with :ref:`Mailchimp <user-guide-mc-integration>` or
     :ref:`Dotdigital <user-guide-dm-integration>`, its record will be automatically created in Oro application, and related
     statistics will be uploaded and synchronized.
 

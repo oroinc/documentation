@@ -40,9 +40,9 @@ The following sections introduce the recommended ways of adjusting and customizi
 Customize the Source Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In addition to existing extensions, you can create your own customization of the Oro application source code and either use it internally or publish it to the Oro marketplace, if necessary.
+In addition to existing extensions, you can create your own customization of the Oro application source code and either use it internally or publish it to the Oro Extensions Store, if necessary.
 
-.. hint:: For more information on how to install extensions from the Oro Marketplace, see the :ref:`Installing and extension <cookbook-extensions-composer>` guide.
+.. hint:: For more information on how to install extensions from the Oro Extensions Store, see the :ref:`Installing and extension <cookbook-extensions-composer>` guide.
 
 .. warning:: Customization may apply to the application only and should be created in a custom bundle in the src folder of your Oro application. Do not customize packages, Oro and Symfony bundles, and components to avoid difficulties when upgrading the customized system.
 
@@ -196,10 +196,10 @@ Use the Oro data migration mechanism to fine-tune the database schema and load i
 
 Please, see the :ref:`OroMigrationBundle <backend-entities-migrations>` documentation for more details on database structure and model modification.
 
-Publish Your Complete Customization as a Package on the Oro Marketplace
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Publish Your Complete Customization as a Package on the Oro Extensions Store
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once your customization is ready, you can publish it in a dedicated repository that follows the :ref:`package repository requirements <architecture-oro-php-application-structure>`, create a reusable package, and share it on the Oro marketplace. See :ref:`How to add extension to the Oro marketplace <dev--extend--how-to-publish-extension-on-the-marketplace>` for more information.
+Once your customization is ready, you can publish it in a dedicated repository that follows the :ref:`package repository requirements <architecture-oro-php-application-structure>`, create a reusable package, and share it on the Oro Extensions Store. See :ref:`How to add extension to the Oro Extensions Store <dev--extend--how-to-publish-extension-on-the-marketplace>` for more information.
 
 Customize via UI
 ^^^^^^^^^^^^^^^^

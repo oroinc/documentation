@@ -133,14 +133,14 @@ application. This does not change when using OroPlatform. But additionally to th
 dependency management with Composer, you can also install a special type of package - an Oro
 Extension. An extension is a package that adds new features to the Platform. To achieve this, the
 |OroDistributionBundle| leverages Composer and |Packagist|. All extensions are feature on the
-|Oro MarketplaceCommerce|. The cool thing is that you do not have to use the command-line to install
+|Oro Extensions Store Commerce|. The cool thing is that you do not have to use the command-line to install
 extensions (of course, you can do this if you want to), but that a user with admin permissions can
 install them on their own in the UI.
 
 .. seealso::
 
     You can also :ref:`add your own extension <dev--extend--how-to-publish-extension-on-the-marketplace>`
-    to the Oro Marketplace.
+    to the Oro Extensions Store.
 
 
 .. include:: /include/include-links-dev.rst
