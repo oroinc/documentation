@@ -4,18 +4,18 @@
 .. index::
     single: Marketplace; Add an Extension
 
-Add an Extension to Oro Marketplace
-===================================
+Add an Extension to Oro Extensions Store
+========================================
 
-The |Oro Marketplace| is the place where developers can publish their extensions and customers can obtain them.
+The |Oro Extensions Store| is the place where developers can publish their extensions and customers can obtain them.
 
-There are two types of extensions in the Oro Marketplace: free and paid. Free extensions are distributed directly
-from the Marketplace, whereas paid extensions must be purchased from the publisher’s website.
+There are two types of extensions in the Oro Extensions Store: free and paid. Free extensions are distributed directly
+from the Oro Extensions Store, whereas paid extensions must be purchased from the publisher’s website.
 
 Package Preparation
 -------------------
 
-Before you add an extension to the Marketplace you have to prepare the package and upload it to some repository.
+Before you add an extension to the Oro Extensions Store you have to prepare the package and upload it to some repository.
 
 Paid extensions can be published anywhere. Their publishers are fully responsible for proper packaging, distribution
 and payment processing.
@@ -43,7 +43,7 @@ We only accept extensions under OSL-3 or MIT licenses.
 Adding an Extension
 -------------------
 
-To be able to add an extension you have to be logged in to tho OroCRM Marketplace website. The Add Extension page
+To be able to add an extension you have to be logged in to tho OroCRM Extensions Store website. The Add Extension page
 can be reached via the user menu in the top right corner of the page or via link on the My Marketplace page.
 
 First thing you have to do is to choose an extension type: paid or free.
@@ -55,13 +55,13 @@ Paid Extensions
 
 For paid extensions the following information must be specified.
 
-**Extension Name** – Name of the extension as it will appear in the Marketplace.
+**Extension Name** – a name of the extension as it will appear in the Extensions Store.
 
-**Web URL** – the user will be navigated to this URL when he clicks Get Extension button on the application view
-in the Marketplace. Usually this is an extension page on publisher’s website.
+**Web URL** – a user will be navigated to this URL when they click Get Extension button on the application view
+in the Extensions Store. Usually this is an extension page on publisher’s website.
 
 **Price** – the price of the extension in US dollars. Note that we do not process any payments
-in the Marketplace and the publisher is fully responsible for keeping the price up to date.
+in the Extensions Store and the publisher is fully responsible for keeping the price up to date.
 
 .. note::
 
@@ -72,15 +72,15 @@ in the Marketplace and the publisher is fully responsible for keeping the price 
 **Pricing Info** – any additional information about pricing of the extension you want to provide.
 This field is optional.
 
-**Short Description** – a short overview of the extension that will appear on its page in the Marketplace.
+**Short Description** – a short overview of the extension that will appear on its page in the Extensions Store.
 This is also an optional field.
 
 **Choose default image** – you may add up to 8 images to your extension and choose the default one
-that will appear along to its name in the Marketplace and on the extension page. The images must be
+that will appear along to its name in the Extensions Store and on the extension page. The images must be
 in JPEG, PNG, or GIF formats, up to 1MB in size.
 
-**Marketplace and Category selection** – each extension must belong to at least one marketplace
-(e.g. OroCRM or OroPlatform), and belong to at least one category. If you do not see a proper category
+**Category selection** – each extension must belong to at least one product
+(e.g., OroCRM, OroCommerce, or OroPlatform) and belong to at least one category. If you do not see a proper category
 to put your extension in, you can request for creation of a new one in the form on the right.
 
 **Description, Release Notes, and Previous Versions** – These fields are optional and are supposed
@@ -102,10 +102,10 @@ Here is the list of fields and their sources:
 * **Previous Versions** – taken from version history on GitHub (if tags are used)
 
 This means you will only have to specify the *Extension Name*, choose a *default image*,
-and specify *marketplaces and categories*.
+and specify *categories*.
 
 After you have published the application it will appear on the My Marketplace page in Pending status.
-The status will be changed shortly after our administrator reviews the extension and allows it to the Marketplace.
+The status will be changed shortly after our administrator reviews the extension and allows it to the Oro Extensions Store.
 Note that admin review is necessary only for the initial publication; all subsequent changes
 will not require admin approbation and will be published immediately.
 

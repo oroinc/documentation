@@ -145,7 +145,7 @@ Application
   .. image:: /user/img/system/user_management/sys_config.png
 
 * **Assign/Unassign Tags** --- Enables a user to assign/unassign :ref:`tags <admin-guide-tag-management>` to records.
-* **Connect to MailChimp** --- Enables a user to map the contents of a marketing list in |oro_application| to use a segment of the subscribers list in :ref:`MailChimp <user-guide-mailchimp-campaign>`. When the capability is enabled, the **Connect to MailChimp** button appears on the page of the selected marketing list. Make sure that the integration between |oro_application| and :ref:`MailChimp is configured <user-guide-mc-integration>` for the capability to work.
+* **Connect to Mailchimp** --- Enables a user to map the contents of a marketing list in |oro_application| to use a segment of the subscribers list in :ref:`Mailchimp <user-guide-mailchimp-campaign>`. When the capability is enabled, the **Connect to Mailchimp** button appears on the page of the selected marketing list. Make sure that the integration between |oro_application| and :ref:`Mailchimp is configured <user-guide-mc-integration>` for the capability to work.
 
 * **Export Grid View** --- Enables a user to export the grid views that they have configured.
 

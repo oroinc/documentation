@@ -54,7 +54,7 @@ Check the following integrations that can be enabled/disabled and configured in 
    Manage Integrations: Shipping Method Integration <shipping-integration/index>
    Google Tag Manager Integration <gtm/index>
    Dotdigital Integration <dotdigital/index>
-   MailChimp Integration <mailchimp-integration>
+   Mailchimp Integration <mailchimp-integration>
    Zendesk Integration <zendesk-integration>
    LDAP Integration <ldap-integration>
    Embedded Forms <embedded-forms/index>
