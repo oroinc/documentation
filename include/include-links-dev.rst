@@ -2673,6 +2673,14 @@ Links (Dev)
 
    <a href="https://packagist.org/" target="_blank">Packagist</a>
 
+.. |5.0 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/5.0" target="_blank">5.0 branch</a>
+
+.. |5.1 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">5.1 branch</a>
+
 .. |OroPackagist| raw:: html
 
    <a href="https://packagist.oroinc.com/" target="_blank">OroPackagist</a>
@@ -3072,10 +3080,6 @@ Links (Dev)
 .. |4.2 branch| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce-application/tree/4.2" target="_blank">4.2 branch</a>
-
-.. |5.0 branch| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">5.0 branch</a>
 
 .. |relevant FeatureToggleBundle documentation| raw:: html
 
