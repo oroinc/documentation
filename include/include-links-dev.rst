@@ -2890,6 +2890,14 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/MigrationBundle#versioned-fixtures" target="_blank">Use Versioned Data Fixtures</a>
 
+.. |5.0 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/5.0" target="_blank">5.0 branch</a>
+
+.. |5.1 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">5.1 branch</a>
+
 .. |Menu Data Source| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/NavigationBundle#menu-data-sources" target="_blank">Menu Data Source</a>
@@ -3581,10 +3589,6 @@ Links (Dev)
 .. |4.2 branch| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce-application/tree/4.2" target="_blank">4.2 branch</a>
-
-.. |5.0 branch| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">5.0 branch</a>
 
 .. |relevant FeatureToggleBundle documentation| raw:: html
 
