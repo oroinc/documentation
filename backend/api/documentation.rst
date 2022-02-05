@@ -207,7 +207,7 @@ Example:
     {@request:json_api}
     Example:
 
-    ` ` `JSON
+    ```JSON
     {
         "data": {
            "type": "entities",
@@ -216,7 +216,7 @@ Example:
            }
         }
     }
-    ` ` `
+    ```
     {@/request}
 
     ## FIELDS
