@@ -1111,7 +1111,7 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
                       target_type: to-many
                       property_path: _
 
-- Add a processor to register QRM query that should be used to get enabled contacts for the :ref:`get <get-action>` and :ref:`get_list <get-list-action>` actions
+- Add a processor to register ORM query that should be used to get enabled contacts for the :ref:`get <get-action>` and :ref:`get_list <get-list-action>` actions
 
   **Note:** Aliases ``e`` and ``r`` are reserved and both must exist in the query. The alias ``e`` must correspond to the owning entity of the association. The alias ``r`` must correspond to the target entity of the association.
 
@@ -1174,7 +1174,7 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
                   - { name: oro.api.processor, action: get_config, extra: '!identifier_fields_only', class: Acme\Bundle\AppBundle\Entity\Account, priority: -35 }
 
 
-- Add a processor to register QRM query that should be used to get enabled contacts for the :ref:`get_subresource <get-subresource-action>` and :ref:`get_relationship <get-relationship-action>` actions
+- If the query added on the previous step is not applicable to load subresources, add a processor to register ORM query that should be used to get enabled contacts for the :ref:`get_subresource <get-subresource-action>` and :ref:`get_relationship <get-relationship-action>` actions
 
 
   .. code-block:: php
