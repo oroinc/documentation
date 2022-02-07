@@ -22,23 +22,23 @@ Create your new Oro application project with composer by running one of commands
 .. code-block:: none
 
    # OroCommerce Community Edition
-   composer create-project oro/commerce-crm-application my_project_name 4.2.3 -n
+   composer create-project oro/commerce-crm-application my_project_name 5.0.0 -n
    # OroCommerce Enterprise Edition
-   composer create-project oro/commerce-crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/commerce-crm-enterprise-application my_project_name 5.0.0 --repository=https://satis.oroinc.com -n
    # OroCRM Community Edition
-   composer create-project oro/crm-application my_project_name 4.2.3 -n
+   composer create-project oro/crm-application my_project_name 5.0.0 -n
    # OroCRM Enterprise Edition
-   composer create-project oro/crm-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/crm-enterprise-application my_project_name 5.0.0 --repository=https://satis.oroinc.com -n
    # OroPlatform Community Edition
-   composer create-project oro/platform-application my_project_name 4.2.3 -n
+   composer create-project oro/platform-application my_project_name 5.0.0 -n
    # OroCommerce Community Edition for Germany
-   composer create-project oro/commerce-crm-application-de oroapp my_project_name 4.2.3 -n
+   composer create-project oro/commerce-crm-application-de oroapp my_project_name 5.0.0 -n
    # OroCommerce Enterprise Edition for Germany
-   composer create-project oro/commerce-crm-enterprise-application-de my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/commerce-crm-enterprise-application-de my_project_name 5.0.0 --repository=https://satis.oroinc.com -n
    # OroCommerce Enterprise Edition (without CRM)
-   composer create-project oro/commerce-enterprise-application my_project_name 4.2.3 --repository=https://satis.oroinc.com -n
+   composer create-project oro/commerce-enterprise-application my_project_name 5.0.0 --repository=https://satis.oroinc.com -n
 
-* Replace the ``4.2.3`` with the version to download.
+* Replace the ``5.0.0`` with the version to download.
 
 * This command creates a new directory called `my_project_name/` that contains an empty project. An absolute path to the directory will be used in the following steps and will be referred to as **<application-root-folder>** further in this topic.
 
