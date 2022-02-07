@@ -375,7 +375,7 @@ scv_version_dirs = {
 # Branch names not mentioned here will be used "as is"
 scv_version_human_readable_names = {
     'doc-2.6': '1.6',
-    'master': '5.0 RC',
+    'master': '5.0',
     # NEXT VERSION: Add mapping between branch name and human readable names
 }
 
@@ -383,13 +383,14 @@ scv_version_human_readable_names = {
 scv_build_args_per_version = {
     # Exclude cloud doc for master and other branches. Latest LTS version must have it only
     # use redirect.html for index page for all versions except LTS (root) version
-    'master': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
+    # 'master': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
     'doc-2.6': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
     # NEXT LTS:
     # For the next LTS version we need to build previous LTS without cloud doc (as only last LTS contains actual)
     # And previous LTS should be built in the subdirectory, that's why we use redirect.html as index
     '3.1': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
     '4.1': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
+    '4.2': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
 }
 
 # Generate sitemap.xml file only for current version (see ext.sitemap),
