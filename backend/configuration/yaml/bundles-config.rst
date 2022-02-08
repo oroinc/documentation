@@ -75,6 +75,12 @@ The default configuration for extension with alias "oro_api":
                 # Example:
                 - web_api
 
+            # The list of services that should be reset to its initial state after API documentation cache for a specific view is warmed up.
+            resettable_services:
+
+                # Example:
+                - acme.api.some_provider
+
         # All supported API views.
         api_doc_views:
 

@@ -128,7 +128,7 @@ Initialize a PostgreSQL Database Cluster
 
 .. code-block:: bash
 
-   scl enable rh-postgresql96 bash
+   scl enable rh-postgresql13 bash
    postgresql-setup --initdb
 
 Enable Password Protected PostgreSQL Authentication
@@ -138,7 +138,7 @@ By default, PostgreSQL is configured to use `ident` authentication.
 
 To use the password-based authentication instead, replace the `ident` with the `md5` in the `pg_hba.conf` file.
 
-Open the file */var/opt/rh/rh-postgresql96/lib/pgsql/data/pg_hba.conf* and change the following strings:
+Open the file */var/opt/rh/rh-postgresql13/lib/pgsql/data/pg_hba.conf* and change the following strings:
 
 .. code-block:: none
 
@@ -159,7 +159,7 @@ To set the password for the *postgres* user to the new secure one, run the follo
 
 .. code-block:: bash
 
-   systemctl start rh-postgresql96-postgresql
+   systemctl start rh-postgresql13-postgresql
    su postgres
    psql
    \password
@@ -407,8 +407,8 @@ Create RabbitMQ User
 
 .. code-block:: none
 
-   source scl_source enable oro-rabbitmq-server37
-   systemctl start oro-rabbitmq-server37-rabbitmq-server
+   source scl_source enable oro-rabbitmq-server39
+   systemctl start oro-rabbitmq-server39-rabbitmq-server
    rabbitmqctl add_user <new_rabbitmq_user> <new_rabbitmq_user_password>
    rabbitmqctl set_user_tags <new_rabbitmq_user> administrator
    rabbitmqctl set_permissions -p / <new_rabbitmq_user> ".*" ".*" ".*"
@@ -442,8 +442,8 @@ Enable Installed Services
 
 .. code-block:: none
 
-   systemctl restart rh-postgresql96-postgresql oro-rabbitmq-server37-rabbitmq-server oro-redis5-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
-   systemctl enable rh-postgresql96-postgresql oro-rabbitmq-server37-rabbitmq-server oro-redis5-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
+   systemctl restart rh-postgresql13-postgresql oro-rabbitmq-server39-rabbitmq-server oro-redis6-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
+   systemctl enable rh-postgresql13-postgresql oro-rabbitmq-server39-rabbitmq-server oro-redis6-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
 
 Configure Storage For Import Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
