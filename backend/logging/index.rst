@@ -93,7 +93,7 @@ Using Logger
               calls:
                   - [setLogger, ['@logger']]
 
-#. Every independent component should use its own channel with the *oro_* prefix:
+#. If necessary, you can use the DI tag monolog.logger and use it to set the name of the channel for logging messages. You may want to prefix the name of the channels to exclude intersections with channels from other components:
 
    .. code-block:: text
 

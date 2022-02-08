@@ -15,29 +15,29 @@ Features are defined in configuration files placed into `Resources/config/oro/fe
 
 Each feature consists of one required option, the label. You can configure the following sections, out-of-the-box:
 
- - label - a feature title
- - description - a feature description
- - toggle - a system configuration option key that is used as a feature toggle
- - dependencies - a list of feature names that the current feature depends on
- - routes - a list of route names
- - configuration - a list of system configuration groups and fields
- - workflows - a list of workflow names
- - processes - a list of process names
- - operations - a list of operation names
- - api_resources - a list of entity FQCNs that are available as API resources
- - commands - a list of commands which depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled
- - entities - a list of entity FQCNs
- - field_configs - a list of field names
- - dashboard_widgets - a list of dashboard widget names
- - cron_jobs - a list of cron job names
- - navigation_items - a list of navigation items
- - placeholder_items - a list of placeholder item names
- - mq_topics - a list of MQ topic names
+ - ``label`` - A feature title.
+ - ``description`` - A feature description.
+ - ``toggle`` - A :ref:`system configuration <backend-system-configuration>` option key that is used as a feature toggle.
+ - ``dependencies`` - A list of feature names that the feature depends on. The feature is enabled when all the features from this list are also enabled.
+ - ``routes`` - A list of route names.
+ - ``configuration`` - A list of :ref:`system configuration <backend-system-configuration>` group and field names.
+ - ``workflows`` - A list of :ref:`workflow <backend--workflows--intro>` names.
+ - ``processes`` - A list of :ref:`process <backend--entities-data-management--processes>` names.
+ - ``operations`` - A list of :ref:`operation <bundle-docs-platform-action-bundle-operations>` names.
+ - ``api_resources`` - A list of entity FQCNs that are available as API resources.
+ - ``commands`` - A list of command names which depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled.
+ - ``entities`` - A list of entity FQCNs.
+ - ``field_configs`` - A list of field names regardless of an entity.
+ - ``dashboard_widgets`` - A list of :ref:`dashboard widget <dev-dashboards>` names.
+ - ``sidebar_widgets`` - A list of :ref:`sidebar widget <bundle-docs-platform-sidebar-bundle>` names.
+ - ``cron_jobs`` - A list of command names that are executed by the :ref:`cron <dev-guide-system-cron-jobs>`.
+ - ``navigation_items`` - A list of :ref:`navigation item <doc-managing-app-menu>` names.
+ - ``placeholder_items`` - A list of :ref:`placeholder item <backend-placeholders>` names.
+ - ``mq_topics`` - A list of :ref:`message queue topic <dev-guide-mq-topics>` names.
 
-Example of the features.yml configuration
+An example of the `features.yml` configuration:
 
 .. code-block:: yaml
-
 
     features:
         acme:
@@ -66,17 +66,27 @@ Example of the features.yml configuration
             entities:
                 - Acme\Bundle\Entity\Page
             field_configs:
-                - 'some_field_name'
+                - some_field_name
             dashboard_widgets:
-                - 'page_dashboard_widget'
+                - page_dashboard_widget
+            sidebar_widgets:
+                - acme_sidebar_widget
             cron_jobs:
-                - 'acme:cron:sync-job'
+                - acme:cron:sync-job
             navigation_items:
-                - 'application_menu.sales_tab.acme_order_list'
+                - application_menu.sales_tab.acme_order_list
             placeholder_items:
                 - acme_create_page_button
             mq_topics:
-                - 'acme.mq_topics.calculate'
+                - acme.mq_topics.calculate
+
+
+.. note:: The ``oro:feature-toggle:config:dump-reference`` command can be used to dump the reference structure for `Resources/config/oro/features.yml`:
+
+    .. code-block:: none
+
+       php bin/console oro:feature-toggle:config:dump-reference
+
 
 .. _feature-toggle-new-options:
 
@@ -115,7 +125,6 @@ Extension registration:
 
 .. code-block:: yaml
 
-
     services:
         acme.configuration.feature_configuration_extension:
             class: Acme\Bundle\ProcessorBundle\Config\FeatureConfigurationExtension
@@ -144,7 +153,6 @@ Layout Updates
 
 .. code-block:: yaml
 
-
     layout:
         actions:
             - '@add':
@@ -165,7 +173,6 @@ In processes, workflows and operations, config expressions may be used to check 
 
     .. code-block:: yaml
 
-
         '@feature_enabled':
             feature: 'feature_name'
             scope_identifier: $.scopeIdentifier
@@ -174,7 +181,6 @@ In processes, workflows and operations, config expressions may be used to check 
 * Check the resource state
 
     .. code-block:: yaml
-
 
         '@feature_resource_enabled':
             resource: 'some_route'
@@ -252,7 +258,6 @@ Extension registration:
 
 .. code-block:: yaml
 
-
     services:
         acme_category.form.extension.product_form:
             class: Acme\Bundle\CategoryBundle\Form\Extension\ProductFormExtension
@@ -313,7 +318,6 @@ Now, configure a voter:
 
 .. code-block:: yaml
 
-
     services:
         acme_process.voter.feature_voter:
             class: Acme\Bundle\ProcessorBundle\Voter\FeatureVoter
@@ -338,7 +342,6 @@ Strategy configuration (may be defined in Resources/config/oro/app.yml)
 
 .. code-block:: yaml
 
-
     oro_featuretoggle:
         strategy: affirmative
         allow_if_all_abstain: true
@@ -347,7 +350,6 @@ Strategy configuration (may be defined in Resources/config/oro/app.yml)
 or in feature definition
 
 .. code-block:: yaml
-
 
     features:
         acme:

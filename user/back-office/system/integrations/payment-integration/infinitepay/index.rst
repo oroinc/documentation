@@ -8,7 +8,7 @@ Manage InfinitePay Payment Service in the Back-Office
 
 .. hint:: This section is part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
-.. hint:: The feature requires extension, so visit Oro Marketplace to download the |InfinitePay extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
+.. hint:: The feature requires extension, so visit Oro Extensions Store to download the |InfinitePay extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 
 InfinitePay is a financial management company that provides guaranteed delayed payments on open account terms.
 

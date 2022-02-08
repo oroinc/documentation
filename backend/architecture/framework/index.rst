@@ -43,7 +43,7 @@ If you want to adjust Oro application functionality, the **first step** to organ
 `Change an Existing Functionality`_.
 
 **Finally**, if you're ready to pack and share your adjustments to Oro application, you can
-`Create and Publish an Extension`_ to the |Oro marketplace|.
+`Create and Publish an Extension`_ to the |Oro Extensions Store|.
 
 Prepare Your Custom Application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,7 +75,7 @@ Create and Publish an Extension
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are ready to publish your adjustment in Oro application for free or paid usage of community members, see the
-:ref:`How to Add an Extension to the OroPlatform Marketplace <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
+:ref:`How to Add an Extension to the OroPlatform Extensions Store <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
 article for the details on how to do this.
 
 Related Cookbook Articles
@@ -84,7 +84,7 @@ Related Cookbook Articles
 * :ref:`Create Custom Oro Application <dev-cookbook-create-custom-oro-application>`
 * :ref:`Create a Simple CRUD <dev-cookbook-framework-create-simple-crud>`
 * :ref:`How to Create a New Bundle <dev-cookbook-framework-how-to-create-new-bundle>`
-* :ref:`How to Add an Extension to the OroCRM Marketplace <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
+* :ref:`How to Add an Extension to the OroCRM Extensions Store <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
 * :ref:`How to Manage OroPlatform Extensions <dev-cookbook-framework-how-to-manage-extensions>`
 
 .. toctree::

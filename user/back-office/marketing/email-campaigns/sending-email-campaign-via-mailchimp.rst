@@ -2,26 +2,26 @@
 
 .. _user-guide-mailchimp-campaign:
 
-Send an Email Campaign via MailChimp
+Send an Email Campaign via Mailchimp
 ====================================
 
-Oro applications support an out-of-the-box integration with MailChimp, enabling you to:
+Oro applications support an out-of-the-box integration with Mailchimp, enabling you to:
 
-* Map the Marketing Lists as segments in MailChimp and keep them synchronized.
-* Use existing segments in MailChimp and import them to the Oro application.
-* Schedule importing statistics of the MailChimp campaigns into Oro Application.
+* Map the Marketing Lists as segments in Mailchimp and keep them synchronized.
+* Use existing segments in Mailchimp and import them to the Oro application.
+* Schedule importing statistics of the Mailchimp campaigns into Oro Application.
 
 .. image:: /user/img/marketing/marketing/mailchimp/mc_diagram.png
    :alt: Sending email campaign via mailchimp
 
-.. note:: To use MailChimp with the Oro application, ensure that all the necessary integration steps are completed. See :ref:`MailChimp Integration <user-guide-mc-integration>` for more information.
+.. note:: To use Mailchimp with the Oro application, ensure that all the necessary integration steps are completed. See :ref:`Mailchimp Integration <user-guide-mc-integration>` for more information.
 
 Prepare Data for the Campaign in Oro
 ------------------------------------
 
 Email campaigns are based on data in marketing lists. 
 
-To create a campaign in the Oro application, create a :ref:`Marketing List <user-guide-marketing-lists>` first. This list will create a segment on the MailChimp side:
+To create a campaign in the Oro application, create a :ref:`Marketing List <user-guide-marketing-lists>` first. This list will create a segment on the Mailchimp side:
  
 1. Navigate to **Marketing > Marketing Lists > Create Marketing List** in the main menu.
 2. Complete the following fields:
@@ -32,24 +32,24 @@ To create a campaign in the Oro application, create a :ref:`Marketing List <user
    * **Type** --- The type of marketing list update. *Dynamic* means that all changes you make to your marketing list are automatic. *On Demand*  means that updates are performed manually.
    * **Owner** --- Limits the list of users that can manage the marketing list to the users, whose :ref:`roles <user-guide-user-management-permissions-roles>` allow managing marketing lists of the owner. 
 
-   .. important:: You can add multiple columns to your marketing list in Oro, but only First Name, Last Name, and Email details are synced over to MailChimp.
+   .. important:: You can add multiple columns to your marketing list in Oro, but only First Name, Last Name, and Email details are synced over to Mailchimp.
 
-3. Add email information to the marketing list to send an email campaign via MailChimp.
+3. Add email information to the marketing list to send an email campaign via Mailchimp.
 
    .. image:: /user/img/marketing/marketing/mailchimp/o_marketing_list_email.png
       :alt: Add email field to the columns
 
 4. Click **Save and Close**.
 
-Sync Oro Marketing List Data with a MailChimp Audience
+Sync Oro Marketing List Data with a Mailchimp Audience
 ------------------------------------------------------
 
-MailChimp Side
+Mailchimp Side
 ^^^^^^^^^^^^^^
 
-To create an audience on the MailChimp side:
+To create an audience on the Mailchimp side:
 
-1. Login to your MailChimp account.
+1. Login to your Mailchimp account.
 #. Click **Audience** in the menu above.
 #. In the **Manage Audience** dropdown, select **View audiences**.
 
@@ -59,7 +59,7 @@ To create an audience on the MailChimp side:
 #. Click **Create Audience** on the top right and then **Create Audience** in the popup.
 
    .. image:: /user/img/marketing/marketing/mailchimp/create_audience.png
-      :alt: Create a new audience in MailChimp
+      :alt: Create a new audience in Mailchimp
 
 #. Provide the following information:
 
@@ -84,27 +84,27 @@ To create an audience on the MailChimp side:
 Oro Side
 ^^^^^^^^
 
-To upload subscribers from OroCRM into the newly created MailChimp audience, synchronize the applications:
+To upload subscribers from OroCRM into the newly created Mailchimp audience, synchronize the applications:
 
 1. Open Oro application.
 #. Navigate to **System > Manage Integrations** in the main menu.
-#. Click on the MailChimp integration to open its page.
+#. Click on the Mailchimp integration to open its page.
 #. Click **Schedule Sync**.
 
-To map contents of the Oro application marketing list to use a segment of the **Subscribers List** in MailChimp:
+To map contents of the Oro application marketing list to use a segment of the **Subscribers List** in Mailchimp:
 
 1. Navigate to **Marketing > Marketing Lists** in the main menu.
 #. Click on the required marketing list to open its details page.
-#. Click **Connect to MailChimp** in the top right corner.
-#. Provide **MailChimp Segment Name**.
-#. Select **MailChimp Integration**.
-#. Select **MailChimp Subscribers List**, the audience that you have created.
+#. Click **Connect to Mailchimp** in the top right corner.
+#. Provide **Mailchimp Segment Name**.
+#. Select **Mailchimp Integration**.
+#. Select **Mailchimp Subscribers List**, the audience that you have created.
 #. Click **Connect**.
 
    .. image:: /user/img/marketing/marketing/mailchimp/o_select_mc_subscribers_list2.png
-      :alt: Map contents of an Oro marketing list to use a segment of the subscribers' list in MailChimp
+      :alt: Map contents of an Oro marketing list to use a segment of the subscribers' list in Mailchimp
 
-Once you are connected, the MailChimp button is displayed at the top with the following actions in the dropdown:
+Once you are connected, the Mailchimp button is displayed at the top with the following actions in the dropdown:
 
 * **Synchronize** --- Start sync manually
 * **Connection Settings** --- Change connection or integration for the current marketing list in the Oro application
@@ -113,35 +113,35 @@ Once you are connected, the MailChimp button is displayed at the top with the fo
 .. image:: /user/img/marketing/marketing/mailchimp/ml_connected_to_mc.png
    :alt: The marketing list is connected to mailchimp
 
-.. note:: Please be aware that if a marketing list contains invalid emails, they can be rejected by MailChimp and excluded from further synchronization.
+.. note:: Please be aware that if a marketing list contains invalid emails, they can be rejected by Mailchimp and excluded from further synchronization.
 
-At this point, if you go back to MailChimp, you will be able to see data from the Oro application (subscribers’ first and last names and contact details)
-synced into your MailChimp list. Please keep in mind that other information that you may have specified when creating a list on the Oro side, such as dates of
+At this point, if you go back to Mailchimp, you will be able to see data from the Oro application (subscribers’ first and last names and contact details)
+synced into your Mailchimp list. Please keep in mind that other information that you may have specified when creating a list on the Oro side, such as dates of
 birth or custom details, *are not synced*.
 
 .. image:: /user/img/marketing/marketing/mailchimp/mc_test_list2.jpg
    :alt: Columns that will be synced
 
-Create a Campaign in MailChimp
+Create a Campaign in Mailchimp
 ------------------------------
 
 Select Campaign Type
 ^^^^^^^^^^^^^^^^^^^^
 
-Now that you have configured the integration with MailChimp and created a
-marketing list, you can create and send an email campaign in MailChimp:
+Now that you have configured the integration with Mailchimp and created a
+marketing list, you can create and send an email campaign in Mailchimp:
 
-1. Log into your MailChimp account.
+1. Log into your Mailchimp account.
 #. Click **Campaigns** in the main menu.
 #. Click **Create Campaign** on the top right.
 
    .. image:: /user/img/marketing/marketing/mailchimp/mc_create_campaign.png
-      :alt: Create and send campaign on the MailChimp side
+      :alt: Create and send campaign on the Mailchimp side
 
 #. Click **Create an Email** in the popup.
 
    .. image:: /user/img/marketing/marketing/mailchimp/new_create_email_camp_mc.png
-      :alt: The popup dialog in MailChimp displaying the button to create a new email
+      :alt: The popup dialog in Mailchimp displaying the button to create a new email
 
 #. Select the type of the campaign to send:
 
@@ -205,7 +205,7 @@ wish to promote your email in social media, select **Connect to Twitter** or **C
    .. image:: /user/img/marketing/marketing/mailchimp/prepare_for_launch.png
       :alt: Send the email campaign from mailchimp
 
-8. To look at your campaign statistics in the MailChimp mobile app, click **Track Performance in Our Mobile App** on the same page.
+8. To look at your campaign statistics in the Mailchimp mobile app, click **Track Performance in Our Mobile App** on the same page.
 
    .. image:: /user/img/marketing/marketing/mailchimp/campaign_sent.png
       :alt: A message informing that the email campaign is sent
@@ -220,7 +220,7 @@ wish to promote your email in social media, select **Connect to Twitter** or **C
 Receive Campaign Statistics on the Oro Side
 -------------------------------------------
 
-Once you have sent out your email campaign in MailChimp, information about your email campaign should have been exported to OroCRM.
+Once you have sent out your email campaign in Mailchimp, information about your email campaign should have been exported to OroCRM.
 
 As soon as export has been completed, your email campaign should appear in **Marketing > Email Campaigns.** By clicking on your recent campaign,
 you will be able to see subscriber activity statistics, such as the number of clicks, bounces, opens, etc. Numbers in each column for each contact define the number of times an action has been performed, e.g., 2 opened, 1 click, 1 unsubscribe. These statistics will help you understand the outcome of your campaign and let you filter contacts for the next one.
@@ -237,7 +237,7 @@ In the :ref:`Filters <user-guide-getting-started-filters>` section:
 1. Drag **Apply Segment** to the field on the right.
 2. Choose the list that you used for your previous campaign.
 3. Drag **Field Condition** to set the conditions to the list.
-4. Select **Customer User > Marketing Activity > Email Campaign > Email Campaign (MailChimp Campaign) > Opens.**
+4. Select **Customer User > Marketing Activity > Email Campaign > Email Campaign (Mailchimp Campaign) > Opens.**
 5. Select **Field Value.** In our case, it is 0.
 
    .. image:: /user/img/marketing/marketing/mailchimp/o_segment_opens_zero.jpg
@@ -251,7 +251,7 @@ This list is now displayed on the :ref:`Marketing List Page <user-guide-marketin
 
 **Related Articles**
 
-* :ref:`Configure MailChimp Integration <user-guide-mc-integration>`
+* :ref:`Configure Mailchimp Integration <user-guide-mc-integration>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

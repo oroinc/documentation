@@ -27,7 +27,6 @@ Each email address can be connected to an entity object which is the owner of th
         EmailOwnerInterface,
         EmailHolderInterface,
         FullNameInterface,
-        NotificationEmailInterface,
         AdvancedApiUserInterface
     {
         ...
