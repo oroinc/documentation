@@ -62,12 +62,10 @@ To change the default customer user configuration settings globally:
 Configure User Impersonation
 ----------------------------
 
-.. hint:: This feature is available in the Enterprise edition since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
-
 .. csv-table::
   :widths: 10, 30
 
-  "**Login as Customer User**","This option enables back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront as a specific customer user. This option is disabled by default. User impersonation is also available at :ref:`organization level <organization-user-impersonation>`.
+  "**Login as Customer User**","This option enables back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront as a specific customer user (available for Enterprise edition applications). This option is disabled by default. User impersonation is also available at :ref:`organization level <organization-user-impersonation>`.
 
                                     .. image:: /user/img/system/config_commerce/customer/user_impersonation.png
                                        :alt: User impersonation config option"
