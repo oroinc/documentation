@@ -334,7 +334,7 @@ For more information, see the :ref:`Configuring Permissions for Entities <backen
 
 * **field_acl_supported** *boolean* - enable this attribute to prepare the system to check access to the entity fields. For more information, see :ref:`Enable Support of Field ACL for an Entity <backend-security-bundle-field-acl-enable-support>`.
 
-* **share_scopes** *string[]* - determines within which group an object can be shared. For example, if share_scope=[organization], then a user can share the object only to organizations. Role permission "Share" says who can share, "Share Scope" says how an object can be shared.
+* **share_scopes** *string[]* - determines within which group an object can be shared (available for the Enterprise edition only). For example, if share_scope=[organization], then a user can share the object only to organizations. Role permission "Share" says who can share, "Share Scope" says how an object can be shared.
 
 Other possible attributes for security: **group**, **share_grid**, **field_acl_enabled**, **show_restricted_fields**.
 

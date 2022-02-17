@@ -27,7 +27,7 @@ To add a new OAuth application in the back-office:
    .. image:: /user/img/getting_started/user_menu/oauth/oauth_tab.png
       :alt: Add an oauth application
 
-   * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations.
+   * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations (available for the Enterprise edition only).
    * **Application Name** --- Provide a meaningful name for the application you are adding.
    * **Active** --- Select the **Active** check box to activate the new application.
 

@@ -48,7 +48,7 @@ Accounts aggregate information on all your customers and their activities. Here 
 
 You can manage information collected within accounts. Below is an overview of what actions you can perform from the view page of any account:
 
-* Share an account by clicking **Share** and providing information in a pop up form.
+* Share an account by clicking **Share** and providing information in a pop up form (available for the Enterprise edition).
 
   .. image:: /user/img/customers/accounts/accounts_view_actions_share.png
      :alt: The sharing settings dialog displayed after clicking the share button on the account page

@@ -84,6 +84,8 @@ Products, product attributes, and product families are managed per organization.
 
 .. note:: Products from other organizations are not visible in the storefront. If you want multiple websites to share the same product collection, make sure that these websites are in the same organization.
 
+.. note:: The multi-org and multi-website functionality is only available in the Enterprise edition.
+
 If you have a multi-org application, you can create products with the same SKU and URL slug in different organizations. You can also manage the product attributes of each organization independently of other organizations in the system. It means that any product attribute modifications fulfilled within one organization do not affect the product attributes available in others.
 
 Some product attributes are global, which means that they were created in the global organization and can only be managed by its admins. You can use global attributes in other organizations but not edit them or create a new product attribute with the same name as a global attribute.

@@ -137,7 +137,7 @@ This section contains information related to the tracking of the product invento
     - *Yes* — The inventory status is being interactively updated based on the amount of product available in warehouses.
     - *No* — The inventory status is set manually."
    "**Inventory Threshold**","A minimum quantity of the product that is treated as 'in stock'. When a product quantity drops below this value, the product is considered to be out of stock."
-   "**Backorders**","Defines whether backorders are accepted.
+   "**Backorders**","Defines whether backorders are accepted. The feature is only available in the Enterprise edition.
 
     - *Yes* — Buyers can order products in the quantities that are not currently available in the warehouses. The remaining portion of the order will be sustained until the product gets back in stock.
     - *No* — Products can be ordered only in the quantities that are available in the warehouses."

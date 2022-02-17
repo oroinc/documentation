@@ -5,7 +5,10 @@
 Configure Global Microsoft Settings
 ===================================
 
-Oro application supports the integration with Microsoft. With its help, you can configure Azure Active Directory Application, Microsoft 365 single sign-on, and OAuth2 with Microsoft for email, calendar, and task synchronization.
+Oro application supports the integration with Microsoft. With its help, you can configure Azure Active Directory Application and OAuth2 with Microsoft for email synchronization.
+
+
+ With the Enterprise edition, you can configure Microsoft 365 single sign-on, calendar, and task synchronization.
 
 .. note:: These settings can be configured globally, :ref:`per organization <organization-configuration-microsoft>`, and :ref:`user <user-configuration-microsoft-settings>`.
 

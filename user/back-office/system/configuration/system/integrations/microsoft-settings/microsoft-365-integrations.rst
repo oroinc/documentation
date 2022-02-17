@@ -5,6 +5,8 @@
 Configure Microsoft 365 Integration in the Back-Office
 ======================================================
 
+.. note:: The feature is available for the Enterprise edition only.
+
 To configure email, calendar events, and task synchronization with Microsoft 365, follow the steps outlined below.
 
 .. note:: To use calendar events and tasks, add the **Calendars.ReadWrite** and **Tasks.ReadWrite** API permissions to the list of application permissions as well as the default list.
