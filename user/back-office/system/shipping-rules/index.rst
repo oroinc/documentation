@@ -164,7 +164,7 @@ To create a shipping rule:
 
 #. In the **Websites** section, specify the website(s) that the shipping rule should apply to, if you have more than one website. This field is optional and may be left empty. Hold the Ctrl key to choose several websites, if necessary.
 
-      .. note:: Please note that application of shipping rules to websites is only available for Enterprise customers.
+      .. note:: Please note that application of shipping rules to websites is only available for the Enterprise customers.
 
       .. image:: /user/img/system/shipping_rules/SHRuleView1.png
 

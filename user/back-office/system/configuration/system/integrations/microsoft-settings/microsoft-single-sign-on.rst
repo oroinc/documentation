@@ -5,6 +5,8 @@
 Configure Microsoft 365 Single Sign-On in the Back-Office
 =========================================================
 
+.. note:: The feature is available for the Enterprise edition only.
+
 Oro application supports Microsoft 365 Single Sign-On. This means that for a user that has the same primary email
 in the Oro application and Microsoft accounts, it is possible to use only their Microsoft set of credentials to
 securely authenticate themselves in the ORO application without using the usual back-office login form.

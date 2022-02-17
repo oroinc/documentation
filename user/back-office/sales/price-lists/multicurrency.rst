@@ -5,7 +5,7 @@
 Manage Prices in Multiple Currencies
 ====================================
 
-.. note:: Before you begin, ensure that the necessary currencies are enabled in the :ref:`global <sys--config--sysconfig--general-setup--currency>` and :ref:`website <sys--websites--sysconfig--currency>` configuration.
+.. note:: Before you begin, ensure that the necessary currencies are enabled in the :ref:`global <sys--config--sysconfig--general-setup--currency>` and :ref:`website <sys--websites--sysconfig--currency>` configuration. Keep in mind that the multi-currency feature is only available in the Enterprise edition.
 
 Enable Multiple Currencies for the Price List
 ---------------------------------------------

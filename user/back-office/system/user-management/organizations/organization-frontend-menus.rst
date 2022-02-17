@@ -17,8 +17,6 @@ To customize a **storefront menu** for a particular organization:
 4. Update the menu contents following the guidelines provided in the :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` section.
    The changes apply automatically.
 
-.. note:: This option is available in the Enterprise edition only.
-
 |
 
 .. _backend-menu-organization:

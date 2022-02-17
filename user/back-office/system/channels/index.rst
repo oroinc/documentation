@@ -13,7 +13,7 @@ Today, successful businesses usually have more than one sales site. These may be
 
 Each channel record represents one source of customer-related data.
 
-Oro Community Edition has two types of channels: Web (built for online stores) and Sales (built for business-to-business activities). For enterprise clients, additional types of channels can be added during system integration.
+Oro Community Edition has two types of channels: Web (built for online stores) and Sales (built for business-to-business activities). For the enterprise clients, additional types of channels can be added during system integration.
 
 There is no limit to the number of channel records that may be defined for one OroC application instance. Upon creation, you can choose what kind of customer-related information will be collected from each channel, as described below.
 

@@ -236,6 +236,8 @@ The search shows up-to-date product information, such as SKU, name, price, and i
 Saved Search
 ------------
 
+.. note:: The feature is only available in the Enterprise edition applications.
+
 Customer users can save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock.
 
 To save a search result:
