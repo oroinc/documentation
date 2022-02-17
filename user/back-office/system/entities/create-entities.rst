@@ -31,7 +31,7 @@ To create a new entity:
    .. image:: /user/img/system/entity_management/create_entity_communication_collaboration.png
       :alt: Basic settings available under the communication and collaboration section
 
-   - **Share Scopes** --- This subsection defines whether the records of the entity can be shared with an individual user or the whole business unit/organization (available for Enterprise edition only).
+   - **Share Scopes** --- This subsection defines whether the records of the entity can be shared with an individual user or the whole business unit/organization (available for the Enterprise edition only).
      
       .. caution::  This section is currently unavailable for custom entities. 
    

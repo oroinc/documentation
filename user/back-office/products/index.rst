@@ -19,7 +19,7 @@ OroCommerce enables you to create and manage products in the way that fits speci
 
 It is suggested to start with the :ref:`Products <doc--products--before-you-begin>` section to familiarize yourself with the product cycle in OroCommerce, find out how to create different types of products (simple and configurable), and how to set up a matrix form to display multiple variations of one configurable product in the storefront.
 
-Refer to the :ref:`Products Grid <doc--products--characteristics>` section to learn about the actions available for products from the grid, such as duplicating, importing, or inline editing, as well as how to manage product quantities in multiple warehouses on the product page.
+Refer to the :ref:`Products Grid <doc--products--characteristics>` section to learn about the actions available for products from the grid, such as duplicating, importing, or inline editing, as well as how to manage product quantities in multiple warehouses on the product page. Keep in mind that the multi-warehouse feature is only available in the Enterprise edition.
 
 To learn more about the ways to control the visibility of the products you created for specific customers, customer groups, or websites, navigate to the :ref:`Manage Product Visibility <products--product-visibility>` section. Here, you will learn how to set up specific visibility settings, as well as configure visibility priorities.
 

@@ -91,7 +91,7 @@ Set Up Application Environment
 ------------------------------
 
 If you are using CentOS, you can follow the :ref:`Environment Setup for Community Edition <environment-setup-community>`
-or :ref:`Environment Setup for Enterprise Edition <environment-setup-enterprise>` to set up the environment for your custom Oro application.
+or :ref:`Environment Setup for the Enterprise Edition <environment-setup-enterprise>` to set up the environment for your custom Oro application.
 Otherwise, we recommend using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`.
 
 Alternatively, to have a fully dockerized environment, you can use |Docker images and stacks for OroPlatform based applications by the Kiboko team|.

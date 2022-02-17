@@ -181,7 +181,7 @@ Manage Tracking Websites
 
 You can manage tracking websites directly from their details page. Here, you can perform the following actions:
 
-* :ref:`Share <user-guide-marketing-tracking-websites-share-page>` the website tracking summary with other Oro application user
+* :ref:`Share <user-guide-marketing-tracking-websites-share-page>` the website tracking summary with other Oro application user (available for the Enterprise edition only)
 * Edit the existing website tracking record
 * Delete the unnecessary website tracking
 
@@ -202,7 +202,7 @@ Hover over the |IcMore| **More Options** menu to the right of the required track
 Share the Tracking Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To share the website tracking summary with other Oro application user:
+To share the website tracking summary with other Oro application user (available for the Enterprise edition only):
 
 1. Navigate to **Marketing > Tracking Websites** in the main menu.
 

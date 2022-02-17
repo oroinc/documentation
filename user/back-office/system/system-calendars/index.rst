@@ -31,7 +31,7 @@ To create a system or an organization calendar:
    
    * **Calendar Name** --- This is the only mandatory field. Defines the name used to refer to the calendar in the system.
    * **Color** --- Choose the color used to highlight events in the calendar by default.
-   * **Scope** --- Define if this is a system or organization calendar (meaningful for enterprise edition only).
+   * **Scope** --- Define if this is a system or organization calendar (meaningful for the Enterprise edition only).
 
     .. image:: /user/img/system/system_calendars/create_system_cal_new.png
  
