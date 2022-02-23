@@ -5,7 +5,7 @@
 Multi-Website Configuration Concept Guide
 =========================================
 
-.. important:: Multi-website management is only available in the Enterprise edition.
+.. important:: Multi-website management is available for the Enterprise edition only.
 
 Whether you are running a multinational B2B or B2C eCommerce business across countries or selling multiple brands to customers in the neighboring states, it is important to have the necessary tools and solutions in place and manage all your online stores from a single instance.
 

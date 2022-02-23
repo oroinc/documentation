@@ -144,7 +144,7 @@ For more details on how to create a price list and enable it for a particular we
 Customize Product Inventory per Website
 ---------------------------------------
 
-You can also create and manage multiple warehouses, track your inventory status and the availability of your products, as well as their quantities, in each warehouse assigned to a particular website.
+You can also create and manage multiple warehouses (EE feature), track your inventory status and the availability of your products, as well as their quantities, in each warehouse assigned to a particular website.
 
 The :ref:`Warehouses and Inventory <user-guide--inventory>` section covers the details on how to configure inventory-related settings globally and per a website.
 

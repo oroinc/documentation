@@ -86,7 +86,7 @@ To create a payment rule:
 
 #. In the **Websites** section, specify the website(s) that the payment rule should apply to, if you have more than one website. This field is optional and may be left empty. Hold the Ctrl key to choose several websites, if necessary.
 
-   .. note:: Please note that application of payment rules to websites is only available for Enterprise customers.
+   .. note:: Please note that application of payment rules to websites is only available for the Enterprise customers.
 
    .. image:: /user/img/system/payment_rules/websites_payment_rule.png
       :class: with-border

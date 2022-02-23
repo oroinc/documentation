@@ -164,7 +164,7 @@ Application
      - To enable a user to personalize menus for themselves and configure menus for each organization individually, include the **Manage Menus** capability into the user role.
      - To enable a user to configure menus for the whole enterprise (all organizations that exist in the Oro application) at once, in addition to the **Manage Menus** capability, include also the **Access System Configuration** capability into the user role.
 
-  .. warning::  For Enterprise Edition only:
+  .. warning::  for the Enterprise Edition only:
 
      - If your enterprise includes several organizations, changes made at **System > Menus** affect all organizations.
      - To apply changes only to a specific organization, make changes at the organization level.

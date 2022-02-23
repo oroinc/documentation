@@ -10,9 +10,9 @@ Manage Inventory Levels in the Back-Office
 Manage Levels in the Inventory Registry
 ---------------------------------------
 
-To manage quantities for all products in multiple warehouses:
+To manage quantities for all products in multiple warehouses (multi-warehouse feature is only available in the Enterprise edition):
 
-1. Navigate to the **Inventory > Manage Inventory** in the main menu.
+1. Navigate to **Inventory > Manage Inventory** in the main menu.
 2. Filter the product inventory to limit the records to the subset you would like to update.
 3. Edit inventory status and quantity in the respective columns directly by clicking on the current value.
 
@@ -30,7 +30,7 @@ Manage Levels per Product
 
 .. start_products_manage_inventory
 
-To manage quantities for a single product in multiple warehouses:
+To manage quantities for a single product in multiple warehouses (multi-warehouse feature is only available in the Enterprise edition):
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
 2. Click the product that you want to manage the inventory for. The product view page opens.

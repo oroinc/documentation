@@ -19,7 +19,7 @@ user records into Oro and map LDAP user role identifiers to Oro roles.
 Install LDAP Extension
 ----------------------
 
-LDAP extension is only available for Enterprise Edition users and comes with Enterprise versions of every Oro
+LDAP extension is only available for the Enterprise Edition users and comes with Enterprise versions of every Oro
 application, which means that no additional installation is required. However, if you happen to use a custom Enterprise Edition application without the LDAP extension, you can install separately. For this, use the |composer| to install *oro/crm-pro-ldap-bundle* package in your Oro Enterprise application, as described in the :ref:`Extensions and Package Manager Guide <cookbook-extensions-composer>` topic.
 
 Create LDAP Integration

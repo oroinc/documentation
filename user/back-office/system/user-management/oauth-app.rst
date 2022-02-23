@@ -13,7 +13,8 @@ Overview
 
 .. begin_oauth1
 
-Oro applications support oAuth 2.0 credentials authorization grant type to enable connection of third-party applications to the web API. To connect a third-party application, you need to add it and configure its pre-generated credentials in the back-office of your Oro application. These credentials are managed on user level which enables generation of different credentials for various applications across multiple organizations.
+Oro applications support OAuth 2.0 credentials authorization grant type to enable connection of third-party applications to the web API. To connect a third-party application, you need to add it and configure its pre-generated credentials in the back-office of your Oro application. These credentials are managed on user level which enables generation of different credentials for various applications across multiple organizations (the multi-org functionality is only available in the Enterprise edition).
+
 
 Starting Conditions
 ^^^^^^^^^^^^^^^^^^^
@@ -39,7 +40,7 @@ To create a new OAuth application in the back-office:
 
     |image_app_create|
 
-   * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations.
+   * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations (available for the Enterprise edition only).
    * **Application Name** --- Provide a meaningful name for the application you are adding.
    * **Active** --- Select the **Active** check box to activate the new application.
    * **Grants** --- Select the grant type to apply to the new application. Currently, the available grant types are *Authorization Code*, *Client Credentials* and *Password*. The |Authorization Code Grant| type is used by confidential and public clients to exchange an authorization code for an access token, the |OAuth Client Credentials Grant| type is used for machine-to-machine authentication (e.g., in a cron job that performs maintenance tasks over an API) and |OAuth Password Grant| is used by trusted first-party clients to exchange the credentials (username and password) for an access token.

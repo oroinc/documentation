@@ -158,6 +158,8 @@ As soon as at least one item has been deleted from the marketing list, it is mov
 Share the Marketing List
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. note:: Sharing records is available in the Enterprise edition applications.
+
 To share the marketing list with other Oro application user:
 
 #. Navigate to **Marketing > Marketing Lists** in the main menu.

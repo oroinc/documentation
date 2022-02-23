@@ -164,7 +164,7 @@ To save a table as a new one:
 To manage saved views, click **Options** next to the view name. The following is the list of options available:
 
 1. Rename 
-2. Share with Others/Unshare
+2. Share with Others/Unshare (available for the Enterprise edition only)
 3. Delete (custom views) 
 4. Set as Default 
 

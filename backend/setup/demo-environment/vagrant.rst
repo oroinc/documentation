@@ -72,7 +72,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
       vagrant up
 
-   For Enterprise Editions of Oro applications, specify the following two environment variables:
+   for the Enterprise Editions of Oro applications, specify the following two environment variables:
 
    - **gittoken** - |Github token| use it to install Oro application dependencies
    - **licence** - Enterprise Licence key for your Oro Application
