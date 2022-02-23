@@ -27,7 +27,7 @@ Storefront fuzzy search can be configured under
 
 There are four configuration options that can be set there.
 
-**Enable Fuzzy Search** enables fuzzy search in the appropriate area. This options has to be checked to display the
+**Enable Fuzzy Search** enables fuzzy search in the appropriate area. This option has to be checked to display the
 following options.
 
 **Error Tolerance** sets how many errors in each word application may ignore. The default value is *One*,
