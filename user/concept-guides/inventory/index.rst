@@ -107,7 +107,7 @@ Disable the **Upcoming** option to remove the label for the upcoming products wh
 
 **Backorders**
 
-The option determines whether OroCommerce accepts backorders. Backorders do not affect order status processing. Payment is still authorized or captured once the order is submitted, regardless of whether the product is in stock. Products are shipped once they become available. The inventory level may get negative if **Backorders** and **Decrement Inventory** are enabled.
+The option determines whether OroCommerce Enterprise accepts backorders. Backorders do not affect order status processing. Payment is still authorized or captured once the order is submitted, regardless of whether the product is in stock. Products are shipped once they become available. The inventory level may get negative if **Backorders** and **Decrement Inventory** are enabled.
 
 .. image:: /user/img/concept-guides/inventory/backorders.png
    :alt: Negative inventory level values

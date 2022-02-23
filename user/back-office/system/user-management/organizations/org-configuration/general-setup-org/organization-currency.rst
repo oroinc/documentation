@@ -88,7 +88,7 @@ The information about the allowed currencies options is grouped in the following
 |                        | when the base currency is changed. Maximum precision is 10 digits.                                          |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 
-1. To change the base currency, click the **Base** option in the corresponding row. This will lead to reconversion of all multi-currency data to the new base currency, and all values will be re-converted according to the current rates.
+1. To change the base currency, click the **Base** option in the corresponding row. This will lead to reconversion of all multi-currency data to the new base currency, and all values will be re-converted according to the current rates. Keep in mind that multi-currency is only available in the Enterprise edition.
 
    Before:
 

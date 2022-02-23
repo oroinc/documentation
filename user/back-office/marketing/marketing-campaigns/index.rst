@@ -171,6 +171,8 @@ Hover over the |IcMore| **More Options** menu to the right of the required track
 Share a Marketing Campaign
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. note:: Sharing records is available in the Enterprise edition applications.
+
 To share a marketing campaign with other Oro application user:
 
 1. Navigate to **Marketing > Campaigns** in the main menu.

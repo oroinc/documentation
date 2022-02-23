@@ -85,6 +85,8 @@ You can review the history of a specific record if you have the corresponding pe
 Share Records
 -------------
 
+.. note:: Sharing records is available in the Enterprise edition applications.
+
 Sharing records is convenient when you need assistance from other system users who might have no access to the related record. For example, if there is a task related to an opportunity that should be performed by a person from a marketing team but the marketing associates have no access to the opportunity records, the sales manager can share the record with a specific user (or group of users).
 
 To share a record, click **Share** on the top right of record page, and enter the name of the user to share the record with in the corresponding **Share with** field. You can also click the list icon to select such user(s).

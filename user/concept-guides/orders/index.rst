@@ -177,6 +177,8 @@ You can view discounts applied to a specific order under the dedicated Promotion
 
     * **Backorders**
 
+      .. note:: The feature is available for the Enterprise edition applications.
+
       You can let buyers order products in the quantities that are not currently available in the warehouses. The remaining portion of the order will be sustained until the product gets back in stock. See :ref:`Product Inventory Options <configuration--guide--commerce--configuration--inventory--product-options>` for configuration steps.
 
     Please see the :ref:`Commerce Configuration topic <configuration--guide--commerce--configuration>` to find more useful order and inventory related configuration options.

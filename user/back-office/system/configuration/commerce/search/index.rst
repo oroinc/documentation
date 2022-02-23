@@ -5,7 +5,7 @@
 Configure Global (Saved) Search Settings
 ========================================
 
-Learn how to configure saved search for the OroCommerce storefront:
+Learn how to configure saved search for the OroCommerce Enterprise storefront:
 
 .. toctree::
 

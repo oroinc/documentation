@@ -25,7 +25,7 @@ Your account menu has the following sections:
 * :ref:`Order History <my-account-order-history>` -- stores the information on all your orders both open and already submitted.
 * :ref:`Previously Purchased <frontstore-guide--previously-purchased>` -- lists all items you bought from the store in the past. By default, previously purchased products are sorted by recency with the newest items displayed first. The visibility of this section depends on the configuration of a particular website.
 * :ref:`Quotes <my-account-quotes>` -- provides the information on whether the submitted request for quote has been accepted by sales representatives and under what conditions. Here, you can view all the offered quotes and decide whether to accept them and submit an order or keep negotiating.
-* :ref:`Saved Search <my-account-saved-search>` -- reflects customer users' saved search queries.
+* :ref:`Saved Search <my-account-saved-search>` -- reflects customer users' saved search queries (meaningful for the Enterprise edition application).
 * :ref:`Manage Payment Profiles <frontstore-guide--cim>` -- stores your credit card information enabling you to view and manage payment and address information, add new credit cards and bank accounts (available for Authorize.Net customer profiles).
 
 .. toctree::

@@ -50,7 +50,7 @@ The following page opens:
     .. image:: /user/img/system/config_commerce/catalog/filters_and_sorters_storefront.png
        :alt: The storefront product page illustrating the Default Filter Panel State configuration
 
-    * **Filter Panel Position** --- enables to select the required position of the filter bar in the storefront (applicable since OroCommerce v4.2.0. To check which application version you are running, see the :ref:`system information <system-information>`). There are two options available:
+    * **Filter Panel Position** --- enables to select the required position of the filter bar in the storefront. There are two options available:
 
      When *Top* (default) is selected, the filter bar is displayed on the top of the product listing page.
 

@@ -4137,10 +4137,6 @@ Links (Dev)
 
    <a href="https://grapesjs.com/docs/modules/Components.html#iscomponent" target="_blank">the component type</a>
 
-.. |OroCloud| raw:: html
-
-   <a href="/cloud">OroCloud</a>
-
 .. |autoconfiguration| raw:: html
 
    <a href="https://symfony.com/doc/current/service_container.html#the-autoconfigure-option" target="_blank">autoconfiguration</a>
