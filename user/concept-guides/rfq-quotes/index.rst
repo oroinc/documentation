@@ -68,7 +68,7 @@ To make the most of an RFQ-friendly store, make sure you enable all related feat
 
 * **Request For Quote Configuration**
 
-  The setting defines whether to enable or disable the RFQ feature for the back-office and the storefront. The configuration is convenient for businesses that run multiple websites. This way, you can selectively enable the RFQ feature for certain websites and disable it for those that do not need it at all (for instance, if an RFQ is sent through emails and agreements).
+  The setting defines whether to enable or disable the RFQ feature for the back-office and the storefront. The configuration is convenient for businesses that run multiple websites (Enterprise edition only). This way, you can selectively enable the RFQ feature for certain websites and disable it for those that do not need it at all (for instance, if an RFQ is sent through emails and agreements).
 
   .. image:: /user/img/concept-guides/rfq/RFQ_system_config.png
      :alt: Global RFQ configuration settings

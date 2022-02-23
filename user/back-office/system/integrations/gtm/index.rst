@@ -64,7 +64,7 @@ To enable Enhanced E-commerce:
 
 6. Click **Save**
 
-.. important:: Google Analytics tracks only one currency at a time. This means that if, for example, your default currency is set to **US dollars**, but you have a multi-currency web store, a purchase of 100EUR will be tracked in the converted dollar amount of 113USD (depending on the currency rate that day). To set the default currency in your Google Analytics account, navigate to **Admin > View Settings > Basic Settings > Currency displayed as**.
+.. important:: Google Analytics tracks only one currency at a time. This means that if, for example, your default currency is set to **US dollars**, but you have a multi-currency web store (available for the Enterprise edition only), a purchase of 100EUR will be tracked in the converted dollar amount of 113USD (depending on the currency rate that day). To set the default currency in your Google Analytics account, navigate to **Admin > View Settings > Basic Settings > Currency displayed as**.
 
                .. image:: /user/img/system/integrations/gtm/tracked_currency.png
                   :alt: Currency settings in Google Analytics

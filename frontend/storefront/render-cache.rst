@@ -391,26 +391,7 @@ Configure the Cache Storage
 You can use filesystem or Redis as a cache storage. By default, render
 cache uses filesystem cache storage.
 
-To enable **Redis** support, append the following config to the
-``config/config.yml`` file.
-
-.. code-block:: yaml
-
-   :caption: config/config.yml
-
-   framework:
-     cache:
-       pools:
-         cache.oro_layout.render:
-           adapter: cache.adapter.doctrine
-           provider: oro.layout_cache.cache_provider
-           tags: true
-
-Pay attention, that Redis configuration is not compatible with the
-filesystem cache storage. To enable filesystem storage back, remove the
-above mentioned configuration.
-
-When using Redis, it is recommended to use a separate server for the
+When using **Redis**, it is recommended to use a separate server for the
 render cache. To configure it:
 
 1. |Define a new client| in the ``snc_redis`` configuration section and specify the connection DSN, e.g.,:
@@ -424,17 +405,21 @@ render cache. To configure it:
                   type: predis
                   dsn: redis://localhost/5
 
-2. Override the ``oro.layout_cache.cache_provider`` service to use a new
-   Redis client:
+2. Define layout render cache pool with the ``RedisTagAware`` adapter and provider defined above:
 
    .. code-block:: yaml
-      :caption: src/AcmeDemoBundle/Resources/config/services.yml
+      :caption: config/config.yml
 
-      services:
-        oro.layout_cache.cache_provider:
-          class: Doctrine\Common\Cache\PredisCache
-          arguments:
-            - '@snc_redis.render_cache'
+      framework:
+          cache:
+              pools:
+                  cache.oro_layout.render:
+                      adapter: cache.adapter.redis_tag_aware
+                      provider: snc_redis.render_cache
+
+Keep in mind that Redis configuration is not compatible with the
+filesystem cache storage. To enable filesystem storage back, remove the
+above mentioned configuration.
 
 Clear the Render Cache
 ----------------------

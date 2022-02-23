@@ -5,7 +5,7 @@
 Multi-Currency Opportunities
 ============================
 
-Multi-currency feature is available for Enterprise Edition only. You can find a complete guide on multi-currency in :ref:`multi-currency guide <user-guide-multi-currency>`.
+Multi-currency feature is available for the Enterprise Edition only. You can find a complete guide on multi-currency in :ref:`multi-currency guide <user-guide-multi-currency>`.
 
 Currency configuration allows to track and record sales made in different currencies, specifically:
 

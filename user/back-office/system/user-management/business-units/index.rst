@@ -9,7 +9,7 @@ A :term:`business unit <Business Unit>` represents a group of users with similar
 
 For instance, one toy company with three toy shops can be set up as the main organization with three child business units created under it, one for each toy store. Permissions could be used to restrict access for these business units.
 
-.. note:: If strict data isolation is needed between business units, it makes sense to use the :ref:`multi-organization <user-ee-multi-org-system>` approach.
+.. note:: If strict data isolation is needed between business units, it makes sense to use the :ref:`multi-organization <user-ee-multi-org-system>` approach (available for the Enterprise edition only).
 
 .. note:: See a short demo on |how to create organizations and business units| or keep reading the step-by-step guidance below.
 
