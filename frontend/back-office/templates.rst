@@ -23,15 +23,10 @@ Override Twig Templates
 -----------------------
 
 You can override one of the platform templates by adding a template
-to the same path under ``src/Resources/``.
+to the same path under ``templates/bundles``.
 For example, to override the ``Grid/widget/widget.html.twig`` template
 from the DataGridBundle, create a new template file located at
-``src/Resources/OroDataGridBundle/views/Grid/widget/widget.html.twig``.
-
-.. note::
-   Keep in mind that templates that are referenced by twig namespaces with ``@``
-   (ex. ``@Twig/Exception/exception.html.twig``) can be overridden in both
-   ``src/Resources/`` and ``templates/bundles``.
+``templates/bundles/OroDataGridBundle/Grid/widget/widget.html.twig``.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
