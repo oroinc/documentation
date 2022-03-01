@@ -24,52 +24,46 @@ Run the command without arguments to see the list of all supported entities:
 
     php bin/console oro:price-lists:pl-storage-reorganize
 
-oro:price-lists:recalculate
----------------------------
+oro:price-lists:schedule-recalculate
+------------------------------------
 
-The ``oro:price-lists:recalculate`` command recalculates combined price lists and product prices.
+The ``oro:price-lists:schedule-recalculate`` command schedules recalculation of combined price lists and product prices.
 
 .. code-block:: none
 
-    php bin/console oro:price-lists:recalculate
+    php bin/console oro:price-lists:schedule-recalculate
 
 Use the ``--customer``, ``--customer-group`` or ``--website`` options to recalculate only the prices related to the specified customers, customer groups or websites:
 
 .. code-block:: none
 
-    php bin/console oro:price-lists:recalculate --customer=<ID1> --customer=<ID2> --customer=<IDN>
+    php bin/console oro:price-lists:schedule-recalculate --customer=<ID1> --customer=<ID2> --customer=<IDN>
 
 .. code-block:: none
 
-    php bin/console oro:price-lists:recalculate --customer-group=<ID1> --customer-group=<ID2> --customer-group=<IDN>
+    php bin/console oro:price-lists:schedule-recalculate --customer-group=<ID1> --customer-group=<ID2> --customer-group=<IDN>
 
 .. code-block:: none
 
-    php bin/console oro:price-lists:recalculate --website=<ID1> --website=<ID2> --website=<IDN>
+    php bin/console oro:price-lists:schedule-recalculate --website=<ID1> --website=<ID2> --website=<IDN>
 
 The ``--price-list`` option can limit the scope of the recalculations to the combined price lists that are derived from the specified price lists:
 
 .. code-block:: none
 
-    php bin/console oro:price-lists:recalculate --price-list=<ID1> --price-list=<ID2> --price-list=<IDN>
+    php bin/console oro:price-lists:schedule-recalculate --price-list=<ID1> --price-list=<ID2> --price-list=<IDN>
 
 If the price calculation rules refer to other price lists, the --include-dependent option can be used to propagate the changes to all affected price lists:
 
 .. code-block:: none
 
-    php bin/console oro:price-lists:recalculate --include-dependent --price-list=<ID1> --price-list=<ID2> --price-list=<IDN>
+    php bin/console oro:price-lists:schedule-recalculate --include-dependent --price-list=<ID1> --price-list=<ID2> --price-list=<IDN>
 
 This command can also be used with the ``--all`` option to recalculate all combined price lists in the system:
 
 .. code-block:: none
 
-    php bin/console oro:price-lists:recalculate --all
-
-The two additional options ``--disable-triggers`` (not available in MySQL-based databases) and ``--use-insert-select`` may help to speed up the calculations on large data sets.
-
-.. code-block:: none
-
-    php bin/console oro:price-lists:recalculate --all --disable-triggers --use-insert-select
+    php bin/console oro:price-lists:schedule-recalculate --all
 
 oro:price-lists:switch-pricing-storage
 --------------------------------------
