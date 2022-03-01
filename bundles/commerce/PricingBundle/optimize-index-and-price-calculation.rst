@@ -22,13 +22,10 @@ OroCommerce storefront responsiveness.
 
 To launch the price recalculation process, run the following console command:
 
-``php bin/console oro:price-lists:recalculate --all``
+``php bin/console oro:price-lists:schedule-recalculate --all``
 
 Execution time may vary from seconds on bare factory data to multiple hours for
 several hundred thousand product prices.
-
-To optimize the price recalculation, use the ``--disable-triggers`` parameter in
-the command above to disable the triggers and speed up the SQL insert execution.
 
 Indexation
 ^^^^^^^^^^
