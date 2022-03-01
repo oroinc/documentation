@@ -5512,7 +5512,7 @@ Links (Dev)
 
 .. |Doctrine Configuration Reference| raw:: html
 
-   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Microsoft Graph API</a>
+   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Doctrine Configuration Reference</a>
 
 .. |Install Docker| raw:: html
 
