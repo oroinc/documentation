@@ -94,6 +94,7 @@ More information about the options available for each of the two categories is a
   * Search
 
     * :ref:`Saved Search <configuration--website-commerce--search--saved-search>`
+    * :ref:`Fuzzy Search <configuration--website-commerce--search--fuzzy-search>`
 
   * Orders
 

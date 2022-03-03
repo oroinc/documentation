@@ -25,6 +25,7 @@ Learn how to configure localization options, currency and tracking, as well and 
    Currency <global-currency>
    Display Settings <display>
    User Settings <user>
+   Search <search>
    Tracking <tracking>
    Upload Settings <upload>
    Email and System Mailbox Configuration <global-email>
