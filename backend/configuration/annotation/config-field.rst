@@ -324,8 +324,6 @@ Attributes that using to set up :ref:`search <user-guide-getting-started-search>
 
 * **searchable** *boolean* - Indicates what custom field could be searchable.
 
-* **title_field** - Indicates what custom text field is part of search result title.
-
 ``security``
 ~~~~~~~~~~~~
 

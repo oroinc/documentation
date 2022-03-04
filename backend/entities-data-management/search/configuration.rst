@@ -70,7 +70,6 @@ from the search.yml files and has only one configuration for each entity.
 
     Acme\Bundle\DemoBundle\Entity\Tag:
         alias:                          acme_tag
-        title_fields:                   [name]
         search_template:                '@AcmeDemo/Search/result.html.twig'
         route:
             name:                       acme_tag_search
@@ -89,7 +88,6 @@ from the search.yml files and has only one configuration for each entity.
 
     Acme\Bundle\DemoBundle\Entity\Tag:
         alias:                          acme_tag
-        title_fields:                   [subject]
         fields:
             -
                 name:                   subject
@@ -102,7 +100,6 @@ Result:
 
 
         alias:                          acme_tag
-        title_fields:                   [subject]
         search_template:                '@AcmeDemo/Search/result.html.twig'
         route:
             name:                       acme_tag_search
@@ -152,7 +149,6 @@ Example:
             parameters:                                          # Array with parameters for route
                 id: id
         mode: normal                                             # optional, default normal. Defines behavior for entities
-        title_fields: [name]                                     # with inheritance hierarchy. See possible values in config
         fields:                                                  # dump reference or in class constants Oro\Bundle\SearchBundle\Query\Mode
             -
                 name: name                                       # Name of field in entity
