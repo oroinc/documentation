@@ -325,10 +325,24 @@ If you are experienced at HTML coding, you can enter your own HTML code into the
 .. image:: /user/img/concept-guides/content-management/input_html_code.png
    :alt: Input HTML code into the WYSIWYG editor via the import popup dialog
 
-You can also edit the existing HTML code that was already applied to the canvas based on the created content. For this, click the **</>** icon on the toolbar from the right.
+You can also edit the existing HTML code that was already applied to the canvas based on the created content. For this, click the |IcUpload| icon on the toolbar from the right.
 
 .. image:: /user/img/concept-guides/content-management/edit_htm_code.png
    :alt: Edit the existing HTML code via the popup dialog
+
+
+Disable the GrapeJs Style Manager
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. hint:: This feature is available since OroCommerce v4.2.10. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+If you are importing a complex HTML code to the editor and want to preserve its styling, you can disable the WYSIWYG built-in style manager to prevent GrapeJs from breaking those styles.
+
+For that, click the **</>** icon on the toolbar. You won't be able to apply and customize styles of your content. Keep in mind that if you exit the external markup mode, the editor may change the source code and break the imported content markup and styles.
+
+
+.. image:: /user/img/concept-guides/content-management/external-markup-button.png
+   :alt: Disable WYSIWYG style manager
 
 
 **Related Topics**
