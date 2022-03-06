@@ -186,7 +186,8 @@ Proceed to create the attribute as described below.
 
    "**Show On View**","Defines whether the attribute is visible or hidden in the storefront."
    "**Show On Form**","Defines whether the attribute is enabled in the storefront forms."
-   "**Searchable**","If enabled, attribute content can be found in the storefront via search."
+   "**Exportable**","If enabled, the attribute content is to be displayed in the product data export file in the storefront."
+   "**Searchable**","If enabled, the attribute content can be found in the storefront via search."
    "**Filterable**","Defines whether a dedicated filter is available for the attribute in the storefront."
    "**Filter By**","Defines the type of filtering to be applied to the attribute:
 
@@ -196,7 +197,9 @@ Proceed to create the attribute as described below.
 
    .. note:: Please note that the sortable option is not applicable for the multi-select attribute type. Make sure to set the option to '0' or 'No' when using the importing strategy."
 
-.. image:: /user/img/products/product_attributes/productattributes_create_frontend.png
+   "**Global Search Boost**", "Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option enables you to :ref:`boost <bundle-docs-commerce-website-elastic-search-bundle-attributes-boost>` the value of the field during search. By default, the boost for sku is set to 5, for names to 3, meaning that the searchable word is first searched among SKUs, than names, etc. The option works for searchable attributes only."
+
+.. image:: /user/img/products/product_attributes/product_attributes_create_frontend.png
    :alt: The settings available in the Frontend options section
 
 4. In the **Backoffice options** section, fill in the **Import & Export** subsection to configure details of the product attribute's import/export:
