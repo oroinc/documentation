@@ -7,3 +7,4 @@ Configure Search Settings per Website
    :maxdepth: 1
 
    Saved Search <website-saved-search>
+   Fuzzy Search <website-fuzzy-search>

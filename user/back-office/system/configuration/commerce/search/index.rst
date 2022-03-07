@@ -5,8 +5,9 @@
 Configure Global (Saved) Search Settings
 ========================================
 
-Learn how to configure saved search for the OroCommerce Enterprise storefront:
+Learn how to configure saved search for the OroCommerce Enterprise storefront and fuzzy search in the website search index requests to Elasticsearch:
 
 .. toctree::
 
    Saved Search <saved-search>
+   Fuzzy Search <fuzzy-search>

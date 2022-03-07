@@ -104,6 +104,7 @@ Learn how to define the merchant country.
 ---------------------------------------------------------------------
 
 * :ref:`Saved Search <configuration--guide--commerce--configuration--saved-search>`
+* :ref:`Fuzzy Search in the Storefront <configuration--guide--commerce--configuration--fuzzy-search>`
 
 :ref:`Orders <configuration--guide--commerce--configuration--order>`
 --------------------------------------------------------------------
