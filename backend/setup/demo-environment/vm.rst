@@ -9,7 +9,7 @@ For a more flexible and secure evaluation experience, you can deploy a virtual m
 
 .. note:: OS X, Windows, and Linux-based operation systems support Oracle VM VirtualBox.
 
-Before you proceed, ensure that VM VirtualBox v.6.2.x is installed in your local or corporate environment and is accessible.
+Before you proceed, ensure that VM VirtualBox v.6.1.x is installed in your local or corporate environment and is accessible.
 
 To download the virtual machine image on the |OroCommerce VM| or |OroCRM VM| website click on the **download** link.
 
