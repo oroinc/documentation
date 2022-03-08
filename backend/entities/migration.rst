@@ -187,10 +187,49 @@ You cannot always use standard Doctrine methods to modify the database structure
     }
 
 As you can see from the example above, your migration class should implement |RenameExtensionAwareInterface| and `setRenameExtension` method in order to use the |RenameExtension|.
+
+Another example below illustrates how to use database specific features in migration:
+
+.. code-block:: php
+
+   namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_1;
+
+   use Doctrine\DBAL\Platforms\PostgreSqlPlatform;
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\MigrationBundle\Migration\Extension\DatabasePlatformAwareInterface;
+   use Oro\Bundle\MigrationBundle\Migration\Extension\DatabasePlatformAwareTrait;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+   use Oro\Bundle\MigrationBundle\Migration\SqlMigrationQuery;
+
+   class CreateFunctionalIndex implements Migration, DatabasePlatformAwareInterface
+   {
+       use DatabasePlatformAwareTrait;
+
+       /**
+        * @inheritDoc
+        */
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           if ($this->platform instanceof PostgreSqlPlatform) {
+               $query = new SqlMigrationQuery(
+                   "CREATE INDEX test_idx1 ON test_table (LOWER(serialized_data->>'test_key'))"
+               );
+           } else {
+               $query = new SqlMigrationQuery(
+                   "CREATE INDEX test_idx1 ON test_table ((LOWER(JSON_VALUE(serialized_data, '\$.test_key'))))"
+               );
+           }
+
+           $queries->addPostQuery($query);
+       }
+   }
+
 You can also use the following additional interfaces in your migration class:
 
 - `ContainerAwareInterface` - provides an access to Symfony dependency container.
 - |DatabasePlatformAwareInterface| - allows to write database type independent migrations.
+- |ConnectionAwareInterface| - provides access to the database connection.
 - |NameGeneratorAwareInterface| - provides access to the |DbIdentifierNameGenerator| class used to generate names of indices, foreign key constraints, etc.
 
 Here is a list of available extensions:
