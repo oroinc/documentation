@@ -53,7 +53,7 @@ Locale Settings class also provides help static methods related to locales:
 
 2. ``Oro\Bundle\LocaleBundle\Model\LocaleSettings::getLocales`` returns the list of all available locales.
 
-3. ``Oro\Bundle\LocaleBundle\Model\LocaleSettings::getCountryByLocale`` gets country by locale. If it could not find the result, than it returns the default country.
+3. ``Oro\Bundle\LocaleBundle\Model\LocaleSettings::getCountryByLocale`` gets country by locale. If it cannot find the result, then it returns the default country.
 
 Language
 --------

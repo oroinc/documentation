@@ -197,7 +197,7 @@ Proceed to create the attribute as described below.
 
    .. note:: Please note that the sortable option is not applicable for the multi-select attribute type. Make sure to set the option to '0' or 'No' when using the importing strategy."
 
-   "**Global Search Boost**", "Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option enables you to :ref:`boost <bundle-docs-commerce-website-elastic-search-bundle-attributes-boost>` the value of the field during search. By default, the boost for sku is set to 5, for names to 3, meaning that the searchable word is first searched among SKUs, than names, etc. The option works for searchable attributes only."
+   "**Global Search Boost**", "Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option enables you to :ref:`boost <bundle-docs-commerce-website-elastic-search-bundle-attributes-boost>` the value of the field during search. By default, the boost for sku is set to 5, for names to 3, meaning that the searchable word is first searched among SKUs, then names, etc. The option works for searchable attributes only."
 
 .. image:: /user/img/products/product_attributes/product_attributes_create_frontend.png
    :alt: The settings available in the Frontend options section

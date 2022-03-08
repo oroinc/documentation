@@ -336,7 +336,7 @@ Disable the GrapeJs Style Manager
 If you are importing a complex HTML code to the editor and want to preserve its styling, you can disable the WYSIWYG built-in style manager to prevent GrapeJs from breaking those styles.
 
 
- For that, click the **</>** icon on the toolbar. You won't be able to apply and customize styles of your content. Keep in mind that if you exit the external markup mode, the editor may change the source code and break the imported content markup and styles.
+ For that, click the **</>** icon on the toolbar. You will not be able to apply and customize styles of your content. Keep in mind that if you exit the external markup mode, the editor may change the source code and break the imported content markup and styles.
 
 
 .. image:: /user/img/concept-guides/content-management/external-markup-button.png

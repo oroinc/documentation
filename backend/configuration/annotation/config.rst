@@ -101,7 +101,7 @@ Attributes enable you to create additional entity fields dynamically. Read more 
 
 * **enabled** *boolean* - indicates whether the entity can have comments.
 
-* **immutable** *boolean* - is used to prohibit changing the comment association state (regardless of whether it is enabled or not) for the entity. If TRUE, than the current state cannot be changed.
+* **immutable** *boolean* - is used to prohibit changing the comment association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
 ``customer``
 ~~~~~~~~~~~~

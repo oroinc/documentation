@@ -2,8 +2,10 @@
 
 .. _configuration--guide--commerce--configuration--fuzzy-search:
 
-Configure Global Fuzzy Search Settings
-======================================
+Configure Global Storefront Fuzzy Search Settings
+=================================================
+
+.. important:: The feature is available for the Enterprise edition only.
 
 .. hint:: Fuzzy search is available since v5.0.1. To check which application version you are running, see the :ref:`system information <system-information>`.
 

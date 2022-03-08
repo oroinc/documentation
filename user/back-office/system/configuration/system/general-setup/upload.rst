@@ -41,7 +41,7 @@ To configure the upload settings globally:
 
    **Enable Image Optimization** --- Select whether to enable the system to optimize the image, reducing the final image size. If disabled, all the images are uploaded without size modifications.
 
-   Keep in mind that all the images uploaded in earlier application versions, remain intact. They won't be deleted or replaced even after migration. If you want to resize them, then you should delete them manually and reupload.
+   Keep in mind that all the images uploaded in earlier application versions, remain intact. They will not be deleted or replaced even after migration. If you want to resize them, then you should delete them manually and reupload.
 
    **JPEG Resize Quality (%)** --- The setting determines the percentage of the .jpg image resize quality. You can set the values from 30 to 100. The higher the value, the better the image quality.
 

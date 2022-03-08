@@ -2,8 +2,10 @@
 
 .. _configuration--website-commerce--search--fuzzy-search:
 
-Configure Fuzzy Search Settings per Website
-===========================================
+Configure Storefront Fuzzy Search Settings per Website
+======================================================
+
+.. important:: The feature is available for the Enterprise edition only.
 
 .. hint:: Fuzzy search is available since v5.0.1. To check which application version you are running, see the :ref:`system information <system-information>`.
 
