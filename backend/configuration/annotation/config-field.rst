@@ -99,7 +99,7 @@ Add a property of an entity to the changelog.
 
 *  **propagate** *boolean* - use the option to enable reverse side audit for the relations.
 
-*  **immutable** *boolean* - this attribute can be used to prohibit changing the auditable state (regardless of whether it is enabled or not) for the entity field. If TRUE, than the current state cannot be changed.
+*  **immutable** *boolean* - this attribute can be used to prohibit changing the auditable state (regardless of whether it is enabled or not) for the entity field. If TRUE, then the current state cannot be changed.
 
 .. _annotation-config-field-datagrid:
 

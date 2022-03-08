@@ -345,7 +345,7 @@ file:
 1) First, you need to :ref:`locate the block <dev-doc-frontend-locate-block-themes>` that is used for rendering the
    content you want to override.
 2) Then, find the name for a new block. If the original block name starts
-   with the underscore character (``_``), than you can use the same block
+   with the underscore character (``_``), then you can use the same block
    name. Otherwise, the Twig block is used for rendering multiple layout
    blocks, and you should select the content you want to override.
 

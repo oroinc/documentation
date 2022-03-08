@@ -2,8 +2,10 @@
 
 .. _configuration--system-configuration--general-setup-sysconfig--search-global:
 
-Configure Global (Fuzzy) Search Settings
-========================================
+Configure Global Back-Office Fuzzy Search Settings
+==================================================
+
+.. important:: The feature is available for the Enterprise edition only.
 
 You can set up back-office error-tolerant (fuzzy) search in website search index requests to Elasticsearch. When enabled, it finds similar results for the passed request phrase word by word. Please be aware that this feature is not supported by the ORM search engine. For configuration options to set up fuzzy search in the storefront, see the :ref:`Fuzzy Search in Storefront topic <configuration--guide--commerce--configuration--fuzzy-search>`.
 

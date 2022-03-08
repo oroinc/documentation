@@ -2,8 +2,10 @@
 
 .. _configuration--website-commerce--search--fuzzy-search:
 
-Configure Fuzzy Search Settings per Website
-===========================================
+Configure Storefront Fuzzy Search Settings per Website
+======================================================
+
+.. important:: The feature is available for the Enterprise edition only.
 
 You can set up storefront error-tolerant (fuzzy) search in website search index requests to Elasticsearch. When enabled, it finds similar results for the passed request phrase word by word. Please be aware that this feature is not supported by the ORM search engine. For configuration options to set up fuzzy search in the back-office, see the :ref:`General Setup Configuration topic <configuration--system-configuration--general-setup-sysconfig--search-global>`.
 
