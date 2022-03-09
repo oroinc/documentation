@@ -73,6 +73,21 @@ The **allowed options in the theme configuration** file is the following:
 
 w here ``first_name`` is a unique theme identifier.
 
+Enable the Theme
+----------------
+
+Add the theme name to the following configuration in the ``config/config.yml`` file in an application, and remove themes that the application does not use:
+
+.. code-block:: yaml
+
+   #config/config.yml
+   oro_layout:
+       enabled_themes:
+            - first_theme
+            - view-switcher
+
+The ``view-switcher`` theme is required for the management of CMS pages and should always be enabled.
+
 Activate the Theme
 ------------------
 
