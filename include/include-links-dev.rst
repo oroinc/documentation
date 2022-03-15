@@ -5817,3 +5817,27 @@ Links (Dev)
 .. |Mailcatcher| raw:: html
 
    <a href="https://mailcatcher.me/" target="_blank">Mailcatcher</a>
+
+.. |Contact entity| raw:: html
+
+   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ContactBundle/Entity/Contact.php" target="_blank">Contact entity</a>
+
+.. |Lead entity| raw:: html
+
+   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/SalesBundle/Entity/Lead.php" target="_blank">Lead entity</a>
+
+.. |Customer User entity| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/CustomerUser.php" target="_blank">Customer User entity</a>
+
+.. |RFP Request entity| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RFPBundle/Entity/Request.php" target="_blank">RFP Request entity</a>
+
+.. |User entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UserBundle/Entity/User.php" target="_blank">User entity</a>
+
+.. |Mailbox entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Entity/Mailbox.php" target="_blank">Mailbox entity</a>

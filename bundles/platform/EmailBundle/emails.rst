@@ -10,6 +10,8 @@ Database Diagram
 Email Address Owners
 --------------------
 
+.. _email-address-owners:
+
 Each email address can be connected to an entity object which is the owner of this email address. An email address can have one and only one owner. User and Contact entities can own an email address, but other entities can be easily configured for this purpose. Let's take a look at the changes made in OroUserBundle to allow the User entity to be the owner:
 
 .. code-block:: php
@@ -51,14 +53,16 @@ Each email address can be connected to an entity object which is the owner of th
 UserBundle/Entity/Provider/EmailOwnerProvider.php
 
 .. code-block:: php
-   :caption: UserBundle/Entity/Email.php
+   :caption: UserBundle/Entity/Provider/EmailOwnerProvider.php
 
     namespace Oro\Bundle\UserBundle\Entity\Provider;
 
     use Doctrine\ORM\EntityManager;
-    use Oro\Bundle\UserBundle\Entity\User;
-    use Oro\Bundle\UserBundle\Entity\Email;
+    use Oro\Bundle\BatchBundle\ORM\Query\BufferedQueryResultIterator;
+    use Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface;
     use Oro\Bundle\EmailBundle\Entity\Provider\EmailOwnerProviderInterface;
+    use Oro\Bundle\UserBundle\Entity\Email;
+    use Oro\Bundle\UserBundle\Entity\User;
 
     class EmailOwnerProvider implements EmailOwnerProviderInterface
     {
@@ -67,25 +71,93 @@ UserBundle/Entity/Provider/EmailOwnerProvider.php
          */
         public function getEmailOwnerClass()
         {
-            return 'Oro\Bundle\UserBundle\Entity\User';
+            return User::class;
         }
+
         /**
          * {@inheritdoc}
          */
         public function findEmailOwner(EntityManager $em, $email)
         {
-            /** @var User $user */
-            $user = $em->getRepository('OroUserBundle:User')
-                ->findOneBy(['email' => $email]);
-            if ($user === null) {
-                /** @var Email $emailEntity */
-                $emailEntity = $em->getRepository('OroUserBundle:Email')
-                    ->findOneBy(['email' => $email]);
-                if ($emailEntity !== null) {
+            /** @var User|null $user */
+            $user = $em->getRepository(User::class)->findOneBy(['email' => $email]);
+            if (null === $user) {
+                /** @var Email|null $emailEntity */
+                $emailEntity = $em->getRepository(Email::class)->findOneBy(['email' => $email]);
+                if (null !== $emailEntity) {
                     $user = $emailEntity->getUser();
                 }
             }
+
             return $user;
+        }
+
+        /**
+         * {@inheritdoc}
+         */
+        public function getOrganizations(EntityManager $em, $email)
+        {
+            $result = [];
+
+            $rows = $em->createQueryBuilder()
+                ->from(User::class, 'u')
+                ->select('o.id')
+                ->join('u.organizations', 'o')
+                ->where('u.email = :email')
+                ->setParameter('email', $email)
+                ->getQuery()
+                ->getArrayResult();
+            foreach ($rows as $row) {
+                $result[] = (int)$row['id'];
+            }
+
+            $rows = $em->createQueryBuilder()
+                ->from(Email::class, 'ue')
+                ->select('o.id')
+                ->join('ue.user', 'u')
+                ->join('u.organizations', 'o')
+                ->where('ue.email = :email')
+                ->setParameter('email', $email)
+                ->getQuery()
+                ->getArrayResult();
+            foreach ($rows as $row) {
+                $result[] = (int)$row['id'];
+            }
+
+            if ($result) {
+                $result = array_values(array_unique($result));
+            }
+
+            return $result;
+        }
+
+        /**
+         * {@inheritdoc}
+         */
+        public function getEmails(EntityManager $em, $organizationId)
+        {
+            $qb = $em->createQueryBuilder()
+                ->from(User::class, 'u')
+                ->select('u.email')
+                ->where('u.organization = :organizationId')
+                ->setParameter('organizationId', $organizationId)
+                ->orderBy('u.id');
+            $iterator = new BufferedQueryResultIterator($qb);
+            foreach ($iterator as $row) {
+                yield $row['email'];
+            }
+
+            $qb = $em->createQueryBuilder()
+                ->from(Email::class, 'ue')
+                ->select('ue.email')
+                ->join('ue.user', 'u')
+                ->where('u.organization = :organizationId')
+                ->setParameter('organizationId', $organizationId)
+                ->orderBy('ue.id');
+            $iterator = new BufferedQueryResultIterator($qb);
+            foreach ($iterator as $row) {
+                yield $row['email'];
+            }
         }
     }
 
@@ -104,7 +176,7 @@ The code blocks above illustrate the following steps to configure a new owner:
 
 1. Implement EmailOwnerInterface in the entity which you wish to make an email address owner.
 2. Implement EmailInterface in the entity responsible for storing emails.
-3. Implement EmailOwnerProviderInterface in your bundle. This interface has two methods. The first one, getEmailOwnerClass, returns the full name of your entity class. The second one, findEmailOwner, searches for an owner entity by the given email address.
+3. Implement EmailOwnerProviderInterface in your bundle.
 4. Register your email owner provider as a service and mark it by oro_email.owner.provider tag. The order attribute is optional and can be used to resolve ambiguity when several email address owners have the same email address. In this case, the owner with the lower value of the order attribute wins.
 
 Before the system can work with your email address owner, you have to do two things:

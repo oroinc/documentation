@@ -486,15 +486,21 @@ Implement ``EmailOwnerProviderInterface``
 In order to make the application able to find the owner of a certain email address, you have to
 create a provider that implements the
 ``Oro\Bundle\EmailBundle\Entity\Provider\EmailOwnerProviderInterface``. This interface
-contains two methods:
+contains the following methods:
 
 ``getEmailOwnerClass()``
-    This is the class of the email owner entity (the class implementing the
+    Gets the class of an email address owner entity (the class implementing the
     ``EmailOwnerInterface`` which is the ``Applicant`` class in the example above).
 
 ``findEmailOwner()``
-    Returns an entity that is the owner of an email address or ``null`` if no such owner exists.
-    The returned object must be an instance of the class specified by ``getEmailOwnerClass()``.
+    Finds an entity object that is an owner of an email address or ``null`` if no such owner exists.
+    The returned object must be an instance of the class specified by the ``getEmailOwnerClass()`` method.
+
+``getOrganizations()``
+    Gets the list of organization IDs where an email address is used.
+
+``getEmails()``
+    Gets the list of email addresses for an organization.
 
 The provider class should then look like this:
 
@@ -503,29 +509,63 @@ The provider class should then look like this:
 
     namespace Acme\Bundle\DemoBundle\Entity\Provider;
 
+    use Acme\Bundle\DemoBundle\Entity\Applicant;
     use Acme\Bundle\DemoBundle\Entity\ApplicantEmail;
     use Doctrine\ORM\EntityManager;
+    use Oro\Bundle\BatchBundle\ORM\Query\BufferedQueryResultIterator;
     use Oro\Bundle\EmailBundle\Entity\Provider\EmailOwnerProviderInterface;
 
     class EmailOwnerProvider implements EmailOwnerProviderInterface
     {
         public function getEmailOwnerClass()
         {
-            return 'Acme\Bundle\DemoBundle\Entity\Applicant';
+            return Applicant::class;
         }
 
         public function findEmailOwner(EntityManager $em, $email)
         {
-            $applicantEmailRepo = $em->getRepository('AcmeDemoBundle:ApplicantEmail');
-            /** @var ApplicantEmail $applicantEmail */
-            $applicantEmail = $applicantEmailRepo->findOneBy(['email' => $email]);
-
-            if (null !== $applicantEmail) {
-                return $applicantEmail->getEmailOwner();
+            /** @var ApplicantEmail|null $emailEntity */
+            $emailEntity = $em->getRepository(ApplicantEmail::class)->findOneBy(['email' => $email]);
+            if (null === $emailEntity) {
+                return null;
             }
 
-            return null;
+            return $emailEntity->getEmailOwner();
         }
+
+         public function getOrganizations(EntityManager $em, $email)
+         {
+             $rows = $em->createQueryBuilder()
+                 ->from(ApplicantEmail::class, 'e')
+                 ->select('IDENTITY(a.organization) AS id')
+                 ->join('e.owner', 'a')
+                 ->where('e.email = :email')
+                 ->setParameter('email', $email)
+                 ->getQuery()
+                 ->getArrayResult();
+
+             $result = [];
+             foreach ($rows as $row) {
+                 $result[] = (int)$row['id'];
+             }
+
+             return $result;
+         }
+
+          public function getEmails(EntityManager $em, $organizationId)
+          {
+              $qb = $em->createQueryBuilder()
+                  ->from(ApplicantEmail::class, 'e')
+                  ->select('e.email')
+                  ->join('e.owner', 'a')
+                  ->where('a.organization = :organizationId')
+                  ->setParameter('organizationId', $organizationId)
+                  ->orderBy('e.id');
+              $iterator = new BufferedQueryResultIterator($qb);
+              foreach ($iterator as $row) {
+                  yield $row['email'];
+              }
+          }
     }
 
 You then need to create a service for the new ``EmailOwnerProvider`` class and tag it with the
