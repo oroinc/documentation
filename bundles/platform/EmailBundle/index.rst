@@ -20,4 +20,5 @@ Related Documentation
    ownership
    transition-actions
    recipients-autocompletion
+   public-private-emails
    Commands <commands>
