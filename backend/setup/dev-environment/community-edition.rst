@@ -12,7 +12,7 @@ Before you proceed, please refer to the :ref:`System Requirements <system-requir
 Prepare a Server with OS
 ------------------------
 
-Get a dedicated physical or virtual server with at least 4Gb RAM with the CentOS v8 installed. Ensure that you
+Get a dedicated physical or virtual server with at least 4Gb RAM with the Oracle Linux v8 installed. Ensure that you
 can run processes as a *root* user or user with *sudo* permissions.
 
 Environment Setup
@@ -21,63 +21,35 @@ Environment Setup
 Enable Required Package Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add the EPEL repository to your `dnf` package manager by running:
+Add the EPEL and remi repositories by running:
 
 .. code-block:: bash
 
-   dnf config-manager --set-enabled powertools -y
-   dnf install epel-release epel-next-release -y
-   dnf update -y
+   dnf -y install dnf-plugin-config-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+   dnf -y module enable mysql:8.0 nodejs:16 php:remi-8.1
+   dnf -y upgrade
 
-Install Nginx, NodeJS, Git, Supervisor, and Wget
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Install most of the required Oro application environment components using the following commands:
+Add Oro public repository:
 
 .. code-block:: bash
 
-   curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
-   dnf install -y nginx wget git nodejs supervisor yum-utils
+    cat >"/etc/yum.repos.d/oropublic.repo" <<__EOF__
+    [oropublic]
+    name=OroPublic
+    baseurl=https://nexus.oro.cloud/repository/oropublic/8/x86_64/
+    enabled=1
+    gpgcheck=0
+    module_hotfixes=1
+    __EOF__
 
-Install MySQL
-^^^^^^^^^^^^^
-
-As you need to install MySQL 8.0 to replace the default MariaDB replica in CentoOS, get the MySQL 8.0 package from the MySQL official repository:
-
-.. code-block:: bash
-
-   wget https://dev.mysql.com/get/mysql80-community-release-el8-2.noarch.rpm && rpm -ivh mysql80-community-release-el8-2.noarch.rpm
-
-Next, install MySQL 8.0 using the following command:
+Install Nginx, NodeJS, PHP, MySQL Server
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
-   dnf install -y mysql-community-server
+   dnf -y --setopt=install_weak_deps=False --best install pngquant jpegoptim findutils rsync glibc-langpack-en psmisc wget bzip2 unzip p7zip p7zip-plugins parallel patch nodejs npm git-core jq bc mysql-server php-common php-cli php-fpm php-opcache php-mbstring php-mysqlnd php-pgsql php-pdo php-json php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-sodium php-tidy php-imap php-pecl-zip php-pecl-mongodb
+   dnf -y --setopt=install_weak_deps=False --best --nogpgcheck install oro-nginx oro-nginx-mod-http-cache_purge oro-nginx-mod-http-cookie_flag oro-nginx-mod-http-geoip oro-nginx-mod-http-gridfs oro-nginx-mod-http-headers_more oro-nginx-mod-http-naxsi oro-nginx-mod-http-njs oro-nginx-mod-http-pagespeed oro-nginx-mod-http-sorted_querystring oro-nginx-mod-http-testcookie_access oro-nginx-mod-http-xslt-filter
 
-If you have an error: "Unable to find a match: mysql-community-server", switch off current version of MySQL:
-
-.. code-block:: bash
-
-   dnf module disable mysql -y
-
-Install PHP
-^^^^^^^^^^^
-
-As you need to install PHP 8.1 instead of CentOS 7 native PHP 5.6 version, get the PHP 8.1 packages from the REMI repository:
-
-.. code-block:: bash
-
-   dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-   dnf install php81 -y
-
-   dnf module reset php
-   dnf module enable php:remi-8.1 -y
-
-Next, install PHP 8.1 and the required dependencies using the following command:
-
-.. code-block:: bash
-
-   dnf install -y php php-cli php-common php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-mbstring php-zip php-intl php-opcache
 
 Install Composer
 ^^^^^^^^^^^^^^^^
@@ -95,8 +67,8 @@ Enable Installed Services
 
 .. code-block:: bash
 
-   systemctl start mysqld php-fpm nginx supervisord
-   systemctl enable mysqld php-fpm nginx supervisord
+   systemctl start mysqld php-fpm nginx
+   systemctl enable mysqld php-fpm nginx
 
 Environment Configuration
 -------------------------
@@ -140,17 +112,11 @@ Prepare MySQL Database
 Change the Default MySQL Password for Root User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To find the temporary mysql *root* user password that was created automatically, run:
+Log in to mysql CLI as the root user and change the password to a new secure one (for example, `P@ssword123`):
 
 .. code-block:: bash
 
-   grep 'temporary password' /var/log/mysqld.log
-
-Use this password to login to mysql CLI as root user and change the temporary password to the new secure one (we have used the `P@ssword123`):
-
-.. code-block:: bash
-
-   mysql -uroot -p
+   mysql -uroot
    ALTER USER 'root'@'localhost' IDENTIFIED BY 'P@ssword123';
 
 Replace `P@ssword123` with your secret password. Ensure it contains at least one upper case letter, one lower case letter,
@@ -167,6 +133,7 @@ use the HDD, set the following configuration parameters in the **/etc/my.cnf** f
    [mysqld]
    innodb_file_per_table = 0
    wait_timeout = 28800
+   bind-address = 127.0.0.1
 
 To minimize the risk of long compilations of SQL queries (which sometimes may take hours or even days;
 for details, see `MySQL documentation <https://dev.mysql.com/doc/refman/5.6/en/controlling-query-plan-evaluation.html>`_),
@@ -248,7 +215,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
         }
 
         location ~ ^/(index|index_dev|config|install)\.php(/|$) {
-            fastcgi_pass 127.0.0.1:9000;
+            fastcgi_pass php-fpm;
             # or
             # fastcgi_pass unix:/var/run/php/php7-fpm.sock;
             fastcgi_split_path_info ^(.+\.php)(/.*)$;
@@ -326,7 +293,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
                 return 404;
             }
             include                         fastcgi_params;
-            fastcgi_pass                    127.0.0.1:9000;
+            fastcgi_pass                    php-fpm;
             fastcgi_index                   index.php;
             fastcgi_intercept_errors        on;
             fastcgi_connect_timeout         300;

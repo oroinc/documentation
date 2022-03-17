@@ -12,7 +12,7 @@ Before you proceed, please refer to the :ref:`System Requirements <system-requir
 Prepare a Server with OS
 ------------------------
 
-Get a dedicated physical or virtual server with at least 4Gb RAM with the CentOS v8 installed. Ensure that you
+Get a dedicated physical or virtual server with at least 4Gb RAM with the Oracle Linux v8 installed. Ensure that you
 can run processes as a *root* user or user with *sudo* permissions.
 
 Environment Setup
@@ -24,54 +24,80 @@ Enable Required Package Repositories
 To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.) required for OroCommerce Enterprise Edition application operation, use the following repositories:
 
 * Extra Packages for Enterprise Linux (EPEL) repository by |Red Hat|
-* Oro Enterprise Linux Packages (OELP) repository by Oro engineers
-* Remi's PHP 8.1 RPM repository for Enterprise Linux 7
+* Remi's PHP 8.1 RPM repository for Enterprise Linux 8
+* Oro Public repository
+* Elasticsearch repository
+* Rabbitmq and rabbitmq-erlang repositories
 
-.. note:: The necessary installation packages are distributed using the |software collections|.
-
-Add required repositories to your `dnf` package manager and install the |software collections| management utils by running:
+Add the EPEL and remi repositories by running:
 
 .. code-block:: bash
 
-   dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-   dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-   dnf -y group install "Development Tools"
-   dnf -y update
+   dnf -y install dnf-plugin-config-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:16 php:remi-8.1
+   dnf -y upgrade
 
-Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, Supervisor, and Wget
+Add Oro public repository:
+
+.. code-block:: bash
+
+    cat >"/etc/yum.repos.d/oropublic.repo" <<__EOF__
+    [oropublic]
+    name=OroPublic
+    baseurl=https://nexus.oro.cloud/repository/oropublic/8/x86_64/
+    enabled=1
+    gpgcheck=0
+    module_hotfixes=1
+    __EOF__
+
+Add the Elasticsearch repository:
+
+.. code-block:: bash
+
+    rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+    cat >"/etc/yum.repos.d/elasticsearch.repo" <<__EOF__
+    [elasticsearch]
+    name=Elasticsearch repository for 7.x packages
+    baseurl=https://artifacts.elastic.co/packages/7.x/yum
+    gpgcheck=1
+    gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+    enabled=1
+    autorefresh=1
+    type=rpm-md
+    __EOF__
+
+Add Rabbitmq and rabbitmq-erlang repositories:
+
+.. code-block:: bash
+
+    curl -1sLf 'https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/setup.rpm.sh' | bash
+    rpm --import https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc
+    rpm --import https://packagecloud.io/rabbitmq/rabbitmq-server/gpgkey
+    cat >"/etc/yum.repos.d/rabbitmq.repo" <<__EOF__
+    [rabbitmq_server]
+    name=rabbitmq_server
+    baseurl=https://packagecloud.io/rabbitmq/rabbitmq-server/el/8/x86_64/
+    repo_gpgcheck=1
+    gpgcheck=1
+    enabled=1
+    # PackageCloud's repository key and RabbitMQ package signing key
+    gpgkey=https://packagecloud.io/rabbitmq/rabbitmq-server/gpgkey
+    https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc
+    sslverify=1
+    sslcacert=/etc/pki/tls/certs/ca-bundle.crt
+    metadata_expire=300
+    __EOF__
+
+Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, and Wget
 ----------------------------------------------------------------------------------
 
 Install most of the required Oro application environment components using the following commands:
 
 .. code-block:: bash
 
-   curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
+    dnf -y --setopt=install_weak_deps=False --best install pngquant jpegoptim findutils rsync glibc-langpack-en psmisc wget bzip2 unzip p7zip p7zip-plugins parallel patch nodejs npm git-core jq bc postgresql postgresql-server postgresql-contrib redis elasticsearch rabbitmq-server php-common php-cli php-fpm php-opcache php-mbstring php-mysqlnd php-pgsql php-pdo php-json php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-sodium php-tidy php-imap php-pecl-zip php-pecl-mongodb
+    dnf -y --setopt=install_weak_deps=False --best --nogpgcheck install oro-nginx oro-nginx-mod-http-cache_purge oro-nginx-mod-http-cookie_flag oro-nginx-mod-http-geoip oro-nginx-mod-http-gridfs oro-nginx-mod-http-headers_more oro-nginx-mod-http-naxsi oro-nginx-mod-http-njs oro-nginx-mod-http-pagespeed oro-nginx-mod-http-sorted_querystring oro-nginx-mod-http-testcookie_access oro-nginx-mod-http-xslt-filter
 
-Install Postgresql 14 on CentOS 8:
-.. code-block:: bash
-
-   dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
-   dnf -qy module disable postgresql
-   dnf install -y postgresql14-server
-   dnf install -y postgresql14-contrib
-   /usr/pgsql-14/bin/postgresql-14-setup initdb
-
-Install other required applications:
-
-.. code-block:: bash
-
-   dnf install -y oro-elasticsearch7 oro-elasticsearch7-runtime oro-elasticsearch7-elasticsearch oro-redis6 oro-redis6-runtime oro-redis6-redis oro-rabbitmq-server39 oro-rabbitmq-server39-runtime oro-rabbitmq-server39-rabbitmq-server nginx nodejs wget git bzip2 supervisor
-
-Install PHP
-^^^^^^^^^^^
-
-Install PHP 8.1 and the required dependencies using the following command:
-
-.. code-block:: bash
-
-   dnf module reset php
-   dnf module install php:remi-8.1 -y
-   dnf install -y php-cli php-fpm php-opcache php-mbstring php-pgsql php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-tidy php-zip php-devel php-pear
 
 Install Composer
 ^^^^^^^^^^^^^^^^
@@ -128,7 +154,6 @@ Initialize a PostgreSQL Database Cluster
 
 .. code-block:: bash
 
-   scl enable rh-postgresql13 bash
    postgresql-setup --initdb
 
 Enable Password Protected PostgreSQL Authentication
@@ -138,7 +163,7 @@ By default, PostgreSQL is configured to use `ident` authentication.
 
 To use the password-based authentication instead, replace the `ident` with the `md5` in the `pg_hba.conf` file.
 
-Open the file */var/opt/rh/rh-postgresql13/lib/pgsql/data/pg_hba.conf* and change the following strings:
+Open the file */var/lib/pgsql/data/pg_hba.conf* and change the following strings:
 
 .. code-block:: none
 
@@ -159,7 +184,7 @@ To set the password for the *postgres* user to the new secure one, run the follo
 
 .. code-block:: bash
 
-   systemctl start rh-postgresql13-postgresql
+   systemctl start postgresql
    su postgres
    psql
    \password
@@ -207,7 +232,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
         }
 
         location ~ ^/(index|index_dev|config|install)\.php(/|$) {
-            fastcgi_pass 127.0.0.1:9000;
+            fastcgi_pass php-fpm;
             # or
             # fastcgi_pass unix:/var/run/php/php7-fpm.sock;
             fastcgi_split_path_info ^(.+\.php)(/.*)$;
@@ -285,7 +310,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
                 return 404;
             }
             include                         fastcgi_params;
-            fastcgi_pass                    127.0.0.1:9000;
+            fastcgi_pass                    php-fpm;
             fastcgi_index                   index.php;
             fastcgi_intercept_errors        on;
             fastcgi_connect_timeout         300;
@@ -387,31 +412,34 @@ To configure PHP, perform the following changes in the configuration files:
      opcache.max_accelerated_files=32531
      opcache.save_comments=1
 
-* Install the mongodb php extension
-
-  .. code-block:: none
-
-     pecl install mongodb
-
-* Enable the mongodb php extension in the `php.ini` file (*/etc/php.ini*):
-
-  .. code-block:: none
-
-     extension="mongodb.so"
-
 Configure RabbitMQ
 ^^^^^^^^^^^^^^^^^^
+
+Enable Required RabbitMQ Plugins
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: none
+
+   pushd /usr/lib/rabbitmq/lib/rabbitmq_server-*/plugins/
+   wget -q https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/3.9.0/rabbitmq_delayed_message_exchange-3.9.0.ez
+   popd
+   rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
+   rabbitmq-plugins enable --offline rabbitmq_management
+   echo "127.0.0.1 $(hostname -s)" >> /etc/hosts
+   systemctl start rabbitmq-server
+
+After this step you can use the Web UI of the RabbitMQ management plugin (``http://localhost:15672``).
+
 
 Create RabbitMQ User
 ~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
 
-   source scl_source enable oro-rabbitmq-server39
-   systemctl start oro-rabbitmq-server39-rabbitmq-server
    rabbitmqctl add_user <new_rabbitmq_user> <new_rabbitmq_user_password>
+   rabbitmqctl add_vhost "/oro"
+   rabbitmqctl set_permissions -p "/oro" "$RABBITMQ_USER" ".*" ".*" ".*"
    rabbitmqctl set_user_tags <new_rabbitmq_user> administrator
-   rabbitmqctl set_permissions -p / <new_rabbitmq_user> ".*" ".*" ".*"
 
 Replace `<new_rabbitmq_user>` and `<new_rabbitmq_user_password>` with your custom username and password values.
 
@@ -421,29 +449,33 @@ For security reasons, delete the default RabbitMQ user:
 
    rabbitmqctl delete_user guest
 
-Enable Required RabbitMQ Plugins
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Configure Elasticsearch
+^^^^^^^^^^^^^^^^^^^^^^^
+
+In the `jvm.options` file (*/etc/elasticsearch/jvm.options*) , set the memory limits to the following:
 
 .. code-block:: none
 
-   rabbitmq-plugins enable rabbitmq_delayed_message_exchange
+   -Xms2g
+   -Xmx2g
 
-Enable the RabbitMQ WebControl Management Plugin
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For big installation, set more memory.
+
+In the `elasticsearch.yml` file (*/etc/elasticsearch/elasticsearch.yml*), set an option `path.repo` to make snapshots and disable `geoip.downloader`, which requires a license:
 
 .. code-block:: none
 
-   rabbitmq-plugins enable rabbitmq_management
+   path.repo: /tmp
+   ingest.geoip.downloader.enabled: false
 
-After this step you can use the Web UI of the RabbitMQ management plugin (``http://localhost:15672``).
 
 Enable Installed Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: none
 
-   systemctl restart rh-postgresql13-postgresql oro-rabbitmq-server39-rabbitmq-server oro-redis6-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
-   systemctl enable rh-postgresql13-postgresql oro-rabbitmq-server39-rabbitmq-server oro-redis6-redis oro-elasticsearch7-elasticsearch php-fpm nginx supervisord
+   systemctl restart postgresql rabbitmq-server redis elasticsearch php-fpm nginx
+   systemctl enable postgresql rabbitmq-server redis elasticsearch php-fpm nginx
 
 Configure Storage For Import Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

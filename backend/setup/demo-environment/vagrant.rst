@@ -85,7 +85,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. note:: When you run `vagrant up` for the first time, the Oro application installation may take some time, as the following time-consuming steps happen:
 
-             * Base CentOS/7 box download
+             * Base Oracle Linux 8 box download
              * LEMP stack installation on the guest system
              * Installation of composer dependencies for Oro application
              * Oro application installation; note that loading demo data takes extra time.
@@ -123,7 +123,7 @@ To customize the application hostname:
 
   .. code-block:: none
 
-     192.168.33.10 yourdomain.local www.yourdomain.local
+     192.168.56.10 yourdomain.local www.yourdomain.local
 
 Now you can open the Oro application in a browser via the ``http://yourdomain.local/`` URL.
 
