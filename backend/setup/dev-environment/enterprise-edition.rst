@@ -88,8 +88,8 @@ Add Rabbitmq and rabbitmq-erlang repositories:
     metadata_expire=300
     __EOF__
 
-Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, and Wget
-----------------------------------------------------------------------------------
+Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, PHP and Wget
+--------------------------------------------------------------------------
 
 Install most of the required Oro application environment components using the following commands:
 
@@ -438,7 +438,7 @@ Create RabbitMQ User
 
    rabbitmqctl add_user <new_rabbitmq_user> <new_rabbitmq_user_password>
    rabbitmqctl add_vhost "/oro"
-   rabbitmqctl set_permissions -p "/oro" "$RABBITMQ_USER" ".*" ".*" ".*"
+   rabbitmqctl set_permissions -p "/oro" "<new_rabbitmq_user>" ".*" ".*" ".*"
    rabbitmqctl set_user_tags <new_rabbitmq_user> administrator
 
 Replace `<new_rabbitmq_user>` and `<new_rabbitmq_user_password>` with your custom username and password values.
