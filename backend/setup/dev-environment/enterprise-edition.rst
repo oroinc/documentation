@@ -82,7 +82,7 @@ Add Rabbitmq and rabbitmq-erlang repositories:
     enabled=1
     # PackageCloud's repository key and RabbitMQ package signing key
     gpgkey=https://packagecloud.io/rabbitmq/rabbitmq-server/gpgkey
-    https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc
+           https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc
     sslverify=1
     sslcacert=/etc/pki/tls/certs/ca-bundle.crt
     metadata_expire=300
@@ -95,7 +95,7 @@ Install most of the required Oro application environment components using the fo
 
 .. code-block:: bash
 
-    dnf -y --setopt=install_weak_deps=False --best install pngquant jpegoptim findutils rsync glibc-langpack-en psmisc wget bzip2 unzip p7zip p7zip-plugins parallel patch nodejs npm git-core jq bc postgresql postgresql-server postgresql-contrib redis elasticsearch rabbitmq-server php-common php-cli php-fpm php-opcache php-mbstring php-mysqlnd php-pgsql php-pdo php-json php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-sodium php-tidy php-imap php-pecl-zip php-pecl-mongodb
+   dnf -y --setopt=install_weak_deps=False --best install pngquant jpegoptim findutils rsync glibc-langpack-en psmisc wget bzip2 unzip p7zip p7zip-plugins parallel patch nodejs npm git-core jq bc postgresql postgresql-server postgresql-contrib redis elasticsearch rabbitmq-server php-common php-cli php-fpm php-opcache php-mbstring php-mysqlnd php-pgsql php-pdo php-json php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-sodium php-tidy php-imap php-pecl-zip php-pecl-mongodb
     dnf -y --setopt=install_weak_deps=False --best --nogpgcheck install oro-nginx oro-nginx-mod-http-cache_purge oro-nginx-mod-http-cookie_flag oro-nginx-mod-http-geoip oro-nginx-mod-http-gridfs oro-nginx-mod-http-headers_more oro-nginx-mod-http-naxsi oro-nginx-mod-http-njs oro-nginx-mod-http-pagespeed oro-nginx-mod-http-sorted_querystring oro-nginx-mod-http-testcookie_access oro-nginx-mod-http-xslt-filter
 
 
