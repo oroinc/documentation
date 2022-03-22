@@ -1129,11 +1129,11 @@ Links (Dev)
 
 .. |ArrayCache| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/ArrayCache.php" target="_blank">ArrayCache</a>
+   <a href="https://symfony.com/doc/current/components/cache/adapters/array_cache_adapter.html" target="_blank">ArrayCache</a>
 
 .. |Symfony Validation Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/validation.html" target="_blank">Symfony Validation Component</a>
+   <a href="https://symfony.com/doc/current/validation.html" target="_blank">Symfony Validation Component</a>
 
 .. |ChainAdapter| raw:: html
 

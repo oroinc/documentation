@@ -11,51 +11,6 @@ OroCacheBundle
 OroCacheBundle introduces the configuration of the application data cache storage used by the application bundles
 for different cache types.
 
-.. _bundle-docs-platform-cache-bundle--abstract-services:
-
-Abstract Cache Services
------------------------
-
-There are two abstract services you can use as a parent for your cache services:
-
--  ``oro.cache.abstract`` - this cache should be used for caching data
-   that need to be shared between nodes in a web farm
--  ``oro.cache.abstract.without_memory_cache`` - the same as ``oro.cache.abstract`` but without using
-   additional in-memory caching, it can be used to avoid unnecessary memory usage and performance penalties
-   if in-memory caching is not needed, e.g. you implemented some more efficient in-memory caching strategy
-   around your cache service
-
-The following example shows how these services can be used:
-
-.. code-block:: none
-
-    services:
-        acme.test.cache:
-            public: false
-            parent: oro.cache.abstract
-            calls:
-                - [ setNamespace, [ 'acme_test' ] ]
-
-Also the ``oro.cache.abstract`` service can be re-declared
-in the application configuration file, for example:
-
-.. code-block:: none
-
-    services:
-        oro.cache.abstract:
-            abstract: true
-            class:                Oro\Bundle\CacheBundle\Provider\PhpFileCache
-            arguments:            [%kernel.cache_dir%/oro_data]
-
-
-The ``oro.cache.abstract.without_memory_cache service`` is always declared automatically based on
-``oro.cache.abstract`` service.
-
-.. important::
-
-    Please note that abstract cache services are deprecated and will be removed in one of the future LTS releases.
-    Use :ref:`Data Cache Service <bundle-docs-platform-cache-bundle--data-cache-service>` instead.
-
 .. _bundle-docs-platform-cache-bundle--data-cache-service:
 
 Data Cache Service
@@ -226,21 +181,21 @@ Here is an example how to use these methods:
             return;
         }
 
-        $config = $this->fetchConfigFromCache();
+        $cacheItem = $this->cache->getItem(self::CACHE_KEY);
+        $config = $this->fetchConfigFromCache($cacheItem);
         if (null === $config) {
             $config = $this->loadConfig();
-            $this->saveConfigToCache($config);
+            $this->saveConfigToCache($cacheItem, $config);
         }
         $this->configuration = $config;
     }
 
-    private function fetchConfigFromCache(): ?array
+    private function fetchConfigFromCache(CacheItemInterface $cacheItem): ?array
     {
         $config = null;
-        $cachedData = $this->cache->fetch(self::CACHE_KEY);
-        if (false !== $cachedData) {
-            list($timestamp, $value) = $cachedData;
-            if ($this->configProvider->isCacheFresh($timestamp)) {
+        if ($cacheItem->isHit()) {
+            [$timestamp, $value] = $cacheItem->get();
+            if ($this->mappingConfigProvider->isCacheFresh($timestamp)) {
                 $config = $value;
             }
         }
@@ -248,9 +203,10 @@ Here is an example how to use these methods:
         return $config;
     }
 
-    private function saveConfigToCache(array $config): void
+    private function saveMappingConfigToCache(CacheItemInterface $cacheItem, array $config): void
     {
-        $this->cache->save(self::CACHE_KEY, [$this->configProvider->getCacheTimestamp(), $config]);
+        $cacheItem->set([$this->mappingConfigProvider->getCacheTimestamp(), $config]);
+        $this->cache->save($cacheItem);
     }
 
     private function loadConfig(): array
@@ -267,9 +223,9 @@ Here is an example how to use these methods:
 Caching Symfony Validation Rules
 --------------------------------
 
-By default, rules for |Symfony Validation Component| are cached using ``oro.cache.abstract`` service,
+By default, rules for |Symfony Validation Component| are cached using ``oro.cache.adapter.persistent`` service,
 but you can change this to make validation caching suit some custom requirements. To do this, you need
-to redefine the ``oro_cache.provider.validation`` service.
+to redefine the ``cache.validator`` cache pool configuring some custom service provider.
 
 .. _bundle-docs-platform-cache-bundle--memory-based-cache:
 
@@ -283,21 +239,21 @@ we need to make sure that we do not keep old values in the memory. Consider this
 
     class LocalizationManager
     {
-        private \Doctrine\Common\Cache\ArrayCache $cacheProvider;
+        private Symfony\Component\Cache\Adapter\ArrayAdapter $cacheProvider;
 
         public function getLocalization($id)
         {
-            $localization = $this->cacheProvider->fetch($id);
-
-            // ... all other operations, fetch from DB if cache is empty
-            // ... save in cache data from DB
+            $localization = $this->cacheProvider->get($id, function () {
+                // ... all other operations, fetch from DB if cache is empty
+                // ... save in cache data from DB, see Symfony\Contracts\Cache\CacheInterface
+            });
 
             return $localization;
         }
 
     }
 
-Since ``$cacheProvider`` in our example is an implementation of memory ``ArrayCache``, we will keep the data
+Since ``$cacheProvider`` in our example is an implementation of memory ``ArrayAdapter``, we will keep the data
 there until the process ends. With HTTP request this would work perfectly well, but when our
 ``LocalizationManager`` is used in some long-running CLI processes, we have to manually clear memory cache
 after every change with Localizations. Missing cache clearing for any of these cases leads
