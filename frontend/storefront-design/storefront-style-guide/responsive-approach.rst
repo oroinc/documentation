@@ -7,7 +7,7 @@ Responsive web design is an approach to web design that makes web pages render w
 
 Breakpoints are points of adjustment of the interface following the resolution of the display. For the correct implementation of the theme design, designers need to provide interface designs in the following resolutions (horizontal):
 
-* 320px - small mobile device
+* 375px - mobile device
 * 768px - tablet
 * 1440px - desktop
 

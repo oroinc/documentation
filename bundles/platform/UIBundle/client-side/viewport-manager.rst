@@ -22,11 +22,10 @@ By default these settings for list of screen types synchronized with scss breakp
     $breakpoint-tablet: $breakpoint-desktop - 1px;
     $breakpoint-tablet-small: 992px;
 
-    // iPhone 4s (320*480), iPhone 5s (320*568), iPhone 6s (375*667), iPhone 6s Plus (414*763)
+    // iPhone 6s (375*667), iPhone 6s Plus (414*763)
     $breakpoint-mobile-big: 767px;
     $breakpoint-mobile-landscape: 640px;
     $breakpoint-mobile: 414px;
-    $breakpoint-mobile-small: 360px;
 
     $oro-breakpoints: (
         'desktop': '(min-width: ' + $breakpoint-desktop + ')',
@@ -89,10 +88,6 @@ By default these settings for list of screen types synchronized with scss breakp
         {
             name: 'mobile',
             max: 414
-        },
-        {
-            name: 'mobile-small',
-            max: 360
         }
     ]
 

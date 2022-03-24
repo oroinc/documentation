@@ -18,7 +18,7 @@ Open a sketch file and navigate to the **Layers** panel on the left:
 
 * **Elements & Controls** - contains artboards with interface elements, color palette, and typography settings
 * **Symbols** - contains a list of *symbols* used in the interface
-* **Pages** - contains a list of all pages of the OroCommerce Storefront in the following resolutions: 320px, 768px, 1440px
+* **Pages** - contains a list of all pages of the OroCommerce Storefront in the following resolutions: 375px, 768px, 1440px
 
 .. image:: /img/frontend/storefront-design/LetsCustomize.jpg
    :alt: The banner that announces to customize the OroCommerce storefront
