@@ -27,9 +27,10 @@ For example:
                 SOME_FITLER_NAME: # uses for query param, and for setting default filters
                     type: string  # Filter type, list of available types described below
                     data_name: g.id
-                    enabled: true|false #whether filter enabled or not. If filter is not enabled it will not be displayed in filter list but will be accessible in filter management.
-                    disabled: true|false #If filter is disabled it will not be displayed in filter list and will not be available in filter management.
+                    renderable: true|false #whether filter available or not. If filter is not renderable it will not be displayed in filter list but will be accessible in filter management.
                     visible: true|false #If set to "false" - filter will not be displayed anywhere in UI. However, one can still set filter's value in backend or via url in frontend
+                    disabled: true|false #If filter is disabled it will not be displayed in filter list and will not be available in filter management.
+                    order: number #The number of filter's position, allows to change order of the filters (by default it is not defined and follows columns order)
                     force_like: true|false #Different search engines uses different methods for text search. When `force_like` is set to true, text-based filters will use simple `LIKE %%` OR `NOT LIKE %%`statement which depends on a chosen operator
                     min_length: integer #In case of text-based filters this option introduce possibility to ignore filters with less characters then specified. Validation message will also appear
                     divisor: number #In case of number-based filters this option will filter values rendered with datagrid divisor option.

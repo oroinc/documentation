@@ -131,7 +131,7 @@ Properties can be used to pass additional data generated for each row, for examp
 
 The configuration format is different depending on the column type, but there is a list of keys shared between all types.
 
-- `type`  - backend formatter type (`field` by default)
+- `type` - backend formatter type (`field` by default)
 - `label` - column title (translated on backend, translation should be placed in "messages" domain)
 - `frontend_type` - frontend formatters that process the column value (`string` by default)
 - `editable` - is a column editable on frontend (`false` by default)
@@ -140,6 +140,7 @@ The configuration format is different depending on the column type, but there is
 - `order` - the number of column's position, allows to change order of the columns over :ref:`Datagrid Settings <customize-datagrid-settings>` and save it in :ref:`Grid View <customize-datagrids-extensions-grid-views>` (by default it is not defined and the columns are rendered in the order in which they are declared in the configuration)
 - `required` - if it is `true`, the column cannot be hidden over :ref:`Datagrid Settings <customize-datagrid-settings>` (`false` by default)
 - `manageable` - if it is `false`, the column does not appear in :ref:`Datagrid Settings <customize-datagrid-settings>` (`true` by default)
+- `disabled` - allows removing a column from grid (`false` by default)
 - `shortenableLabel` - could column label be abbreviated or shortened with ellipsis (`true` - by default)
 
 For a detailed explanation, see the section on :ref:`formatters <customize-datagrids-extensions-formatter>`.

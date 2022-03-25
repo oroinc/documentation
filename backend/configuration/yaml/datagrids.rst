@@ -48,6 +48,10 @@ This is a map of actions that can be performed from the datagrid. The keys are u
 identifiers inside the grid, but do not have a special meaning. For each action, a map must be
 passed configuring the action using the following options:
 
+``disabled`` (**type**: ``boolean`` **default**: ``false``)
+
+    Enables you to manage action accessibility.
+
 ``icon`` (**type**: ``string``)
 
     The name of the Font Awesome icon that represents the action.
@@ -112,6 +116,10 @@ grid. For each column you have to pass a map of options to configure how the col
     When the ``type`` option is set to ``translatable``, this is treated as an expression that will
     be evaluated to gain the value's translated representation.
 
+``disabled`` (**type**: ``boolean`` **default**: ``false``)
+
+    Enables you to remove the column from the grid.
+
 ``frontend_type`` (**type**: ``string``)
 
     The widget type that renders the value. Available types that are shipped with OroPlatform by
@@ -127,6 +135,12 @@ grid. For each column you have to pass a map of options to configure how the col
 
     This option is only available when the ``frontend_type`` is ``html``. Currently, only ``twig``
     is supported as a value to indicate that a Twig template should be rendered.
+
+``order`` (**type**: ``int``)
+
+     The number that indicates the position of the column; it allows to change the order of the columns. By default
+     it is not defined and columns are rendered in the order in which they are declared
+     in the configuration.
 
 ``template`` (**type**: ``string``)
 
@@ -167,9 +181,17 @@ columns
 For each column that can be filtered (the key of the map) a map of options can be given that
 specifies how the actual filter looks like. The available options are:
 
+``case_insensitive`` (**type**: ``bool`` **default**: ``true``)
+
+    [Postgres only] When set to false, string filter searching becomes case sensitive.
+
 ``data_name`` (**type**: ``string``)
 
     The name of the column from the data source whose values will be filtered.
+
+``disabled`` (**type**: ``boolean`` **default**: ``false``)
+
+    Enables you to remove the filter from the grid.
 
 ``filter_by_having`` (**type**: ``bool`` **default**: ``false``)
 
@@ -181,10 +203,6 @@ specifies how the actual filter looks like. The available options are:
 
     When set to true, text-based search applies the ``LIKE %value%`` or ``NOT LIKE %value%`` statement to the search string by default. It depends on a chosen operator.
 
-``min_length`` (**type**: ``integer`` **default**: ``0``)
-
-    Specify minimum length of the search string. When the search string length is below the limit, OroCRM shows a validation message to the user and ignores the filter value.
-
 ``label`` (**type**: ``string``)
 
     By default, the label for the filter will be the same as the one configured in the
@@ -192,13 +210,19 @@ specifies how the actual filter looks like. The available options are:
     a label that is different from the column headline or if you want to filter the grid by an
     attribute that is not shown in the grid.
 
+``min_length`` (**type**: ``integer`` **default**: ``0``)
+
+    Specify the minimum length of the search string. When the search string length is below the limit, OroCRM shows a validation message to the user and ignores the filter value.
+
+``order`` (**type**: ``int``)
+
+     The number that indicates the position of the filter; it allows to change the order of the filter. By default,
+     it is not defined and filters are rendered in the order in which they are declared
+     in the configuration or for columns.
+
 ``type`` (**type**: ``string``)
 
     The type of the filter to be used in the UI.
-
-``case_insensitive`` (**type**: ``bool`` **default**: ``true``)
-
-    [Postgres only] When set to false, string filter searching is case sensitive.
 
 ``value_conversion`` (**type**: ``string|array``)
 
@@ -370,6 +394,10 @@ ordered by default.
 
 columns
 ~~~~~~~
+
+``disabled`` (**type**: ``boolean`` **default**: ``false``)
+
+    Allows to manage sorter accessibility.
 
 **type**: ``map``
 

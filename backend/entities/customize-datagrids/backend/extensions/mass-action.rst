@@ -31,10 +31,9 @@ If you wish to disable a mass action, specify the following:
     datagrids:
         users-grid:
             ...
-            options:
-                mass_actions:
-                    delete:
-                        enabled: false
+            mass_actions:
+                delete:
+                    disabled: true
 
 
 In case of more complicated mass types, register your service with the ``oro_datagrid.extension.mass_action.type`` tag:
