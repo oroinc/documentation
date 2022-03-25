@@ -47,6 +47,9 @@ Sorters setting should be placed under the `sorters` tree node.
                     type: fixed
                     value_key: someAlias
 
+                otherColumn:
+                    disabled: true
+
             ....
 
             sorters:
@@ -59,6 +62,8 @@ Sorters setting should be placed under the `sorters` tree node.
                     someColumn:
                         data_name: someAlias
                         apply_callback: callable # if you want to apply some operations instead of just adding ORDER BY
+                    otherColumn:
+                        disabled: true|false # allows to disable sorting for the column if it is defined somewhere
                 default:
                     label: DESC # sorters enabled by default, key is a column name
 
@@ -81,3 +86,4 @@ Sorters setting should be placed under the `sorters` tree node.
 .. note::
      * Customization can be done using the `apply_callback` options.
      * Column name should be equal to the name of the corresponding column.
+     * You must disable the sorter if it is defined but the column is disabled

@@ -112,6 +112,10 @@ This configuration will be passed to the JavaScript component.
         action2: true # shown
         action3: {param1: 'value1'} # shown and pass {param1: 'value1'} to component
 
+    actions:
+        action1:
+            disabled: true # prevents passiing of the action data to the JavaScript component
+
 
 .. code-block:: yaml
 
