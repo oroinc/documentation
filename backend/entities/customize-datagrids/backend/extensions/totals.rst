@@ -24,6 +24,7 @@ The totals setting should be placed under the `totals` tree node.
               extends: grand_total
               per_page: true
               hide_if_one_page: true
+              disabled: false
               columns:
                 name:
                     label: 'page total'
@@ -63,4 +64,5 @@ The totals setting should be placed under the `totals` tree node.
     - the total config can be taken from another total row with the **extends** parameter.
     - **per_page** parameter switches data calculation only for the current page data
     - if **hide_if_one_page** is true, then this total row is hidden on full data set.
+    - if **disabled** is true, then this total row is removed.
     - **divisor** if you need to divide the value by a number before rendering it to the user (**not required**)
