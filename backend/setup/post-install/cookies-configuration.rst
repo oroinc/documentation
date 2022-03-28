@@ -90,7 +90,7 @@ in the `Resources/config/oro/app.yml` file in any bundle or in the `config/confi
 
 By default, this cookie has `cookie_httponly` parameter with false value.
 
-Possible values of the `cookie_samesite` parameter are: 'strict', 'lax' and null.
+Possible values of the `cookie_samesite` parameter are: 'strict', 'lax', 'none', and null.
 
 Storefront Session Cookie
 ------------------------------
