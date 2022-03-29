@@ -180,6 +180,28 @@ used to control how the options are presented in the UI that lets the modify con
         By default, the values configured by the user will be treated as is. They will be passed to
         the translator if the ``translatable`` options is enabled.
 
+    ``required_property`` (**type**: ``map``  **default**: ``null``)
+
+        The configuration property item and value required for this item to be displayed. If the required property item is located in the same scope, then the change of the required property triggers the AJAX request that reloads the form to update the list of displayed fields.
+
+        ``code`` (**type**: ``string``)
+
+            The configuration property item name required for this item to be displayed.
+
+        ``value`` (**type**: ``string``)
+
+            The configuration property item value required for this item to be displayed.
+
+        ``config_id`` (**type**: ``map``)
+
+            ``scope`` (**type**: ``string``)
+
+                The scope of the configuration property item required for this item to be displayed. For example: ``entity``, ``extend``, ``attachment``, etc. If empty, the current scope is used.
+
+    ``required_properties`` (**type**: ``collection`` **default**: ``null``)
+
+        A collection of required configuration property items. The structure of each item is the same as in the ``required_property`` option.
+
 ``field``
 ---------
 

@@ -19,6 +19,7 @@ Related Documentation
    product-unit-formatting
    product-variant-search
    related-items
+   external-product-images
 
 
 .. include:: /include/include-links-dev.rst

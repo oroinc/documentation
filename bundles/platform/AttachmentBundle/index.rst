@@ -14,6 +14,7 @@ Related Documentation
 * :ref:`WebP Images Strategy <attachment-bundle-webp-strategy>`
 * :ref:`File Types <attachment-bundle-file-types>`
 * :ref:`Image Types <attachment-bundle-image-types>`
+* :ref:`Externally Stored Files <attachment-bundle-externally-stored-files>`
 * :ref:`Configure Storage <attachment-bundle-storage>`
 * :ref:`Use Migration Extension (Example) <attachment-bundle-migration-extension>`
 * :ref:`Configure Attachments <backend--entity-attachments>`
