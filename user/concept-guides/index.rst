@@ -41,6 +41,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
       <li><a class="" href="localization/label-translation/">Translation of Product Attribute Labels</a></li>
       <li><a class="" href="marketing-automation/">Track Marketing Activities</a></li>
       <li><a class="" href="checkout/">Checkout Configuration</a></li>
+      <li><a class="" href="search/">Search Functions</a></li>
     </ul>
 
 .. toctree::
@@ -70,6 +71,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    Promotion Management <promotions/index>
    Consent Management <consents/index>
    Checkout Configuration <checkout/index>
+   Search Functions <search/index>
 
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -2,10 +2,10 @@
 
 :oro_documentation_types: OroCRM, OroCommerce
 
-Navigation and Search
-=====================
+Navigation
+==========
 
-The Navigation and Search section guides you on the basics of navigating the default back-office of your Oro application and illustrates how to:
+The Navigation section guides you on the basics of navigating the default back-office of your Oro application and illustrates how to:
 
 * access a particular section in one click with useful navigation tools
 * pin the most important records to monitor the changes and be able to reach them instantly
@@ -23,7 +23,6 @@ The Navigation and Search section guides you on the basics of navigating the def
    navigation-basics
    record-tables
    shortcuts
-   search
    org-selector
    pinbar
    user-menu
