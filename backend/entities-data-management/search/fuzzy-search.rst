@@ -24,7 +24,7 @@ The fuzzy search options can be configured both for the back-office and storefro
 
 The back-office settings are configured under **System Configuration > General Setup > Search > Fuzzy Search** on the :ref:`global level <configuration--system-configuration--general-setup-sysconfig--search-global>` only.
 
-The storefront settings are configured under **Commerce > Search > Fuzzy Search > Fuzzy Search in Storefront** on the :ref:`global <configuration--guide--commerce--configuration--fuzzy-search>` and :ref:`website <configuration--website-commerce--search--fuzzy-search>` levels.
+The storefront settings are configured under **System Configuration > Commerce > Search > Fuzzy Search > Fuzzy Search in Storefront** on the :ref:`global <configuration--guide--commerce--configuration--fuzzy-search>` and :ref:`website <configuration--website-commerce--search--fuzzy-search>` levels.
 
 The fuzzy search options are the following:
 

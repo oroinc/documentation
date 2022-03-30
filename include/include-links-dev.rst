@@ -21,15 +21,15 @@ Links (Dev)
 
 .. |ContactBundle| raw:: html
 
-   <a href="https://github.com/orocrm/crm/tree/master/src/Oro/Bundle/ContactBundle" target="_blank">ContactBundle</a>
+   <a href="https://github.com/oroinc/crm/tree/master/src/Oro/Bundle/ContactBundle" target="_blank">ContactBundle</a>
 
 .. |ImportExport namespace| raw:: html
 
-   <a href="https://github.com/orocrm/crm/tree/master/src/Oro/Bundle/ContactBundle/ImportExport" target="_blank">ImportExport namespace</a>
+   <a href="https://github.com/oroinc/crm/tree/master/src/Oro/Bundle/ContactBundle/ImportExport" target="_blank">ImportExport namespace</a>
 
 .. |Resources/config/importexport.yml| raw:: html
 
-   <a href="https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml" target="_blank">Resources/config/importexport.yml</a>
+   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml" target="_blank">Resources/config/importexport.yml</a>
 
 .. |Symfony Serializer component| raw:: html
 
@@ -45,7 +45,7 @@ Links (Dev)
 
 .. |ContactAddOrReplaceStrategy| raw:: html
 
-   <a href="https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactBundle/ImportExport/Strategy/ContactAddOrReplaceStrategy.php" target="_blank">ContactAddOrReplaceStrategy</a>
+   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ContactBundle/ImportExport/Strategy/ContactAddOrReplaceStrategy.php" target="_blank">ContactAddOrReplaceStrategy</a>
 
 .. |OroIntegrationBundle| raw:: html
 
@@ -2283,7 +2283,7 @@ Links (Dev)
 
 .. |OroCRM issue tracker| raw:: html
 
-   <a href="https://github.com/orocrm/crm/issues?q=" target="_blank">OroCRM issue tracker</a>
+   <a href="https://github.com/oroinc/crm/issues?q=" target="_blank">OroCRM issue tracker</a>
 
 .. |Contributor License Agreement| raw:: html
 

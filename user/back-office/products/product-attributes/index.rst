@@ -177,6 +177,8 @@ Proceed to create the attribute as described below.
    - **Related Entity Detailed** -- Available only for the Many to Many and One to Many relations. Select those fields of the entity selected in **Target Entity** which contain additional information that you want to see on the master entity record edit page. The values of the fields selected will be available in the dialog that appears when you click the title of the related entity on the master page edit page. Hold the **Ctrl** key to choose several fields.
    - **Target Field** -- Available only for the Many to One relation. Select the field of the entity selected in **Target Entity** by which the entity records will be tied."
 
+.. _products--product-attributes--create-frontend-options:
+
 3. In the **Frontend options** section, set up the storefront options applicable to the product attribute.
 
 .. important:: Please note that if the option is not applicable to attributes of the selected type (e.g., image, text, multi-select, etc.), it does not appear in this section.
