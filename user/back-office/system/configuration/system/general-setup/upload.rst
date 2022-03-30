@@ -34,7 +34,14 @@ To configure the upload settings globally:
 
 .. hint:: Be aware that the Image Processing options are only available if libraries |JPEGOptim| and |PNGQuant| are set up.
 
-8. In the **Image Processing** section, you can control whether to optimize or not the size of the uploading images in the storage. By default, the setting is enabled, which means that the size of all images that you upload to the system is compressed while preserving the quality.
+8. In the **Externally Stored Files**
+
+   **Allowed URLs RegExp** --- The setting determines the regular expression that describes allowed URLs for externally stored files and images. If left empty, no external files and images will be allowed.
+
+   .. image:: /user/img/system/config_system/upload_settings_5.png
+      :alt: Upload settings on global level
+
+9. In the **Image Processing** section, you can control whether to optimize or not the size of the uploading images in the storage. By default, the setting is enabled, which means that the size of all images that you upload to the system is compressed while preserving the quality.
 
    .. image:: /user/img/system/config_system/upload_settings_3.png
       :alt: Upload settings on global level
@@ -47,7 +54,7 @@ To configure the upload settings globally:
 
    **PNG Resize Quality (%)** --- The setting provides two options for controlling the quality of .png images. *Preserve quality* enables the system to slightly resize the image with the full preservation of the quality. *Minimize file size* enables the system to resize the image to its minimal possible size while still keeping the high quality.
 
-9. In the **WebP Settings** section, you can control the quality of the resized images in the WebP format. By default, images are additionally converted to the WebP format, so each image is provided to browser in two variants: a resized image in the original format and a resized image in the WebP format.
+10. In the **WebP Settings** section, you can control the quality of the resized images in the WebP format. By default, images are additionally converted to the WebP format, so each image is provided to browser in two variants: a resized image in the original format and a resized image in the WebP format.
 
    .. image:: /user/img/system/config_system/upload_settings_4.png
       :alt: Upload settings on global level
@@ -56,7 +63,7 @@ To configure the upload settings globally:
 
    Keep in mind that all the images uploaded in earlier application versions remain intact. They will not be deleted or replaced even after migration. If you want to resize them, then delete them manually and reupload.
 
-10. Click **Save Settings**.
+11. Click **Save Settings**.
 
 If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the configuration of the entity will prevail and override the corresponding global one.
 

@@ -313,7 +313,7 @@ In case of extended fields, OroPlatform has three guessers (with decreasing prio
 
 Each provides guesses, and the best guess is selected based on the guesser's confidence (low, medium, high, very high).
 
-There are a few ways to define a custom form type for a particular field:
+There are a few ways to define a custom form type and form options for a particular extend field:
 
 #. Through the compiler pass to add or override the guesser's mappings:
 
@@ -327,18 +327,33 @@ There are a few ways to define a custom form type for a particular field:
 
         class AcmeExtendGuesserPass implements CompilerPassInterface
         {
-            const GUESSER_SERVICE_KEY = 'oro_entity_extend.form.guesser.extend_field';
-
             /**
              * {@inheritdoc}
              */
             public function process(ContainerBuilder $container)
             {
-                $guesser = $container->findDefinition(self::GUESSER_SERVICE_KEY);
+                $guesser = $container->findDefinition('oro_entity_extend.provider.extend_field_form_type');
                 $guesser->addMethodCall(
                     'addExtendTypeMapping',
                     ["extend-type", "form-type", [option1: 12, option2: false, ...]]
                 );
+            }
+        }
+
+#. With a custom form extend field options provider that can be used for providing form options that need a complex logic and cannot be declared in compiler pass:
+
+    .. code-block:: php
+
+        class ExtendFieldCustomFormOptionsProvider implements ExtendFieldFormOptionsProviderInterface
+        {
+            public function getOptions(string $className, string $fieldName): array
+            {
+                $options = [];
+                if ($className == '...' && $fieldName == '...') {
+                    $options['custom_option'] = 'custom_value';
+                }
+
+                return $options;
             }
         }
 
@@ -389,7 +404,7 @@ There are a few ways to define a custom form type for a particular field:
             }
         }
 
-#. Register it in the dependency injection container:
+    Register it in the dependency injection container:
 
     .. code-block:: yaml
 

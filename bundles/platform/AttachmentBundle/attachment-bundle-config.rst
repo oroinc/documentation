@@ -58,17 +58,26 @@ To change the WebP strategy, change the ``webp_strategy`` configuration in the c
 
 .. _attachment-bundle-file-types:
 
-File Types
-----------
+File Field Type
+---------------
 
-File types enable to upload files to any entity.
+**File** field provides the ability to upload file to any entity. It supports the following options:
 
-When creating a new file field type, a user should specify the maximum size of the file supported for this field. On the entity record's details page, this field is displayed as a link to download this file.
+- **Stored Externally**
+- **File Size (MB)**
+- **MIME Types**
+- **Maximum Number Of Files**
+
+On the entity record's details page, this field is displayed as a link to download this file.
 
 MultiFile Types
 ---------------
 
-**MultiFile** field provides the ability to upload a collection of files to any entity. It supports the options of a maximum file size and a maximum number of files allowed to be added.
+**MultiFile** field provides the ability to upload a collection of files to any entity. It supports the following options:
+
+- **Stored Externally**
+- **File Size (MB)**
+- **MIME Types**
 
 On the entity record's details page, this field is displayed as a grid with links to download files.
 
@@ -77,9 +86,15 @@ On the entity record's details page, this field is displayed as a grid with link
 Image Types
 -----------
 
-Image file types enable to upload images to any entity.
+**Image** field provides the ability to upload an image to any entity. It supports the following options:
 
-When creating a new image field type, a user should specify the maximum size of the file supported for this field as well as its width and height to enable the thumbnail image preview.
+- **Stored Externally**
+- **File Size (MB)**
+- **Thumbnail width**
+- **Thumbnail height**
+- **MIME Types**
+
+When creating a new **Image** field, a user should specify the maximum size of the file supported for this field as well as its width and height to enable the thumbnail image preview.
 
 On the entity record's details page, this field is displayed as a thumbnail image with a link to download the original image file.
 
@@ -88,7 +103,14 @@ It can be used with Digital Asset Management (DAM) functionality.
 MultiImage Types
 ----------------
 
-**MultiImage** field provides the ability to upload a collection of images to any entity. It supports the following options: a maximum file size, thumbnail width and height, a maximum number of files allowed to be added.
+**MultiImage** field provides the ability to upload a collection of images to any entity. It supports the following options:
+
+- **Stored Externally**
+- **File Size (MB)**
+- **Thumbnail width**
+- **Thumbnail height**
+- **MIME Types**
+- **Maximum Number Of Files**
 
 On the entity record's details page, this field is displayed as a grid with a thumbnail image and links to download the original image file.
 
@@ -108,6 +130,20 @@ in |KnpGaufretteBundle documentation|.
 
 Image thumbnail files are created from |LiipImagineBundle| and are stored in the public storage
 (``public/media/cache/attachment`` directory if the local filesystem is used as storage).
+
+.. _attachment-bundle-externally-stored-files:
+
+Externally Stored Files
+-----------------------
+
+When a field of type ``File``, ``MultiFile``, ``Image``, ``MultiImage`` is created it can be configured with
+the option **Stored Externally** to store an external URL of a file instead of uploading it. This option indicates
+whether the file referenced by this field is stored externally on a third party service. If enabled,
+the URL text input is displayed instead of the file upload input.
+The URLs provided by the users should match the *Allowed URLs RegExp* specified in the :ref:`system settings <admin-configuration-upload-settings>`.
+The system will not process, resize or modify the files that are stored externally.
+
+.. note:: The file referenced in the field with enabled option **Stored Externally** cannot be protected by ACL as external URL is out of reach of an application.
 
 ACL Protection
 --------------

@@ -175,6 +175,8 @@ If the :ref:`DAM functionality <digital-assets>` is enabled for the entity field
 
 Keep in mind that if values are provided in both columns, the value of the **UUID** column is always prioritized first, regardless of what is mentioned in the **URI** column.
 
+If the :ref:`Externally Stored Files <attachment-bundle-externally-stored-files>` is enabled for the entity field, then, the file is not actually uploaded, but stored just as an external URL that points to a third party service. The URL still must be publicly available to be checked for accessibility and MIME type of the externally stored file.
+
 .. note:: Pay attention that URLs to files or images exported from the ACL protected fields are not publicly accessible and cannot be used for import as is.
 
 
