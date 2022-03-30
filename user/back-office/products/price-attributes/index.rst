@@ -5,7 +5,7 @@
 Manage Price Attributes in the Back-Office
 ==========================================
 
-A :term:`Price Attribute` is a custom parameter, like manufacturer's suggested retail price (MSRP) or minimum advertised price (MAP), that may be needed as input information for your retail price listed on the website. Price attributes help you extend the product options with any custom value related to the price formation.
+A :term:`Price Attribute` is a custom parameter, like manufacturer's suggested retail price (MSRP), minimum advertised price (MAP), or shipping cost that may be needed as input information for your retail price listed on the website. Price attributes help you extend the product options with any custom value related to the price formation.
 
 Before reading on, consider watching a short demo from our media library on |how to set up price attributes in OroCommerce|.
 
@@ -98,7 +98,6 @@ To edit a price attribute:
 
 Next, in the product details, adjust the price attribute values and provide values for newly added currencies.
 
-
 Set a Price Attribute Value in the Product Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -108,17 +107,27 @@ To set a price attribute (e.g., Minimal Advertised Price) for a product:
 
 #. Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| **Edit** to start editing its details.
 
-   The following page opens:
+   Price attributes such as MSRP and MAP are available under the **Product Prices** section of the product view/edit page:
 
    .. image:: /user/img/products/price_attributes/PriceAttributesInProduct.png
       :alt: Price attributes in the Product Prices section of the selected product
+
+   :ref:`Shipping cost price attribute <products--shipping-options-price-attribute>` information is available under the **Shipping Options** section of the product view/edit page:
+
+   .. image:: /user/img/products/price_attributes/shipping-cost-price-attribute.png
+      :alt: Illustration of shipping cost information on the product view page
+
+   Shipping cost can work in conjunction with a shipping method, such as :ref:`Fixed Shipping Cost <doc-integration-fixed-shipping-cost>`. For example, if the shipping cost for a product is set to $2.70 and the surcharge configured for the Fixed Shipping Cost shipping method is $3, then the shipping charge at checkout will equate to $5.70.
+
+   .. image:: /user/img/products/price_attributes/shipping-cost-price-attribute-with-integration.png
+      :scale: 42%
+      :alt: Illustration of how shipping cost set for the price attribute works on combination with the surcharge defined in the fixed product shipping cost integration
 
 #. Provide the value per unit and currency.
 
 #. Click **Save**.
 
 Now you can use the price attribute as a variable parameter in price list generation.
-
 
 .. include:: /include/include-images.rst
    :start-after: begin

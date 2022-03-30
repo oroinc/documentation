@@ -14,6 +14,7 @@ Create an Integration with a Shipping Service Provider
 Out-of-the-box, you can create an integration with the following third-party providers (click the links for detailed guidance) to offer their shipping services for the quotes and orders placed using OroCommerce.
 
 * :ref:`Flat Rate <doc--integrations--flat-rate>`
+* :ref:`Fixed Product Shipping Cost <doc-integration-fixed-shipping-cost>`
 * :ref:`UPS <doc--integrations--ups>`
 * :ref:`FedEx <doc--integrations--fedex>`
 * :ref:`DPD <doc--integrations--dpd>`
@@ -60,6 +61,7 @@ The shipping methods created due to this integration are no longer usable in Oro
    :maxdepth: 2
 
    Flat Rate Shipping Integration <flat-rate>
+   Fixed Product Shipping Cost Integration <fixed-shipping>
    UPS Shipping Integration <ups>
    FedEx Shipping Integration <fedex>
    DPD Shipping Integration <dpd>
