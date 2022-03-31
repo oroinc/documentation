@@ -33,6 +33,7 @@ Check the following integrations that can be enabled/disabled and configured in 
 * :ref:`Manage Integrations: Shipping Method Integration <user-guide--shipping--configuration--common-details>`
 
   * :ref:`Flat Rate <doc--integrations--flat-rate>`
+  * :ref:`Fixed Product Shipping Cost <doc-integration-fixed-shipping-cost>`
   * :ref:`UPS <doc--integrations--ups>`
   * :ref:`FedEx <doc--integrations--fedex>`
   * :ref:`DPD <doc--integrations--dpd>`

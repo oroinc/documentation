@@ -22,7 +22,7 @@ Multi-Website Feature Capabilities
 
 In many cases, segmenting information is useful for large organizations with varied offerings. OroCommerce has taken care of simplifying the setup procedure for all your :ref:`websites <system-websites>`, enabling you to create the necessary content once and leverage it across multiple websites, without labor-intensive copying of data , be it 2, 3, or 100 websites.
 
-In a multi-org environment, each organization may have one or several websites. All the settings configured per organization can be adopted by all running websites withing this particular organization, but cannot be applied to other organizations. To change the organization and see the related content and available websites, use the switcher on the top left.
+In a multi-org environment, each organization may have one or several websites. All the settings configured per organization can be adopted by all running websites within this particular organization, but cannot be applied to other organizations. To change the organization and see the related content and available websites, use the switcher on the top left.
 
  .. image:: /user/img/concept-guides/websites/Oro_organization.png
     :alt: A list of websites created within one organization

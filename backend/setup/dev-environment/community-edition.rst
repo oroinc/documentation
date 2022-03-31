@@ -50,7 +50,6 @@ Install Nginx, NodeJS, PHP, MySQL Server
    dnf -y --setopt=install_weak_deps=False --best install pngquant jpegoptim findutils rsync glibc-langpack-en psmisc wget bzip2 unzip p7zip p7zip-plugins parallel patch nodejs npm git-core jq bc mysql-server php-common php-cli php-fpm php-opcache php-mbstring php-mysqlnd php-pgsql php-pdo php-json php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-sodium php-tidy php-imap php-pecl-zip php-pecl-mongodb
    dnf -y --setopt=install_weak_deps=False --best --nogpgcheck install oro-nginx oro-nginx-mod-http-cache_purge oro-nginx-mod-http-cookie_flag oro-nginx-mod-http-geoip oro-nginx-mod-http-gridfs oro-nginx-mod-http-headers_more oro-nginx-mod-http-naxsi oro-nginx-mod-http-njs oro-nginx-mod-http-pagespeed oro-nginx-mod-http-sorted_querystring oro-nginx-mod-http-testcookie_access oro-nginx-mod-http-xslt-filter
 
-
 Install Composer
 ^^^^^^^^^^^^^^^^
 
@@ -61,17 +60,6 @@ Run the commands below, or use another Composer installation process described i
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php
    php -r "unlink('composer-setup.php');"
    mv composer.phar /usr/bin/composer
-
-Enable Installed Services
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: bash
-
-   systemctl start mysqld php-fpm nginx
-   systemctl enable mysqld php-fpm nginx
-
-Environment Configuration
--------------------------
 
 Perform Security Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -105,6 +93,17 @@ However, for your staging or production environment, please adjust the commands 
 sections to run environment management commands as well as application install and update via a dedicated admin user.
 
 Commands for running the web server, php-fpm process, cron commands, background processes, etc., are executed via the dedicated *application user* (*nginx*). Reuse them without modification, if you keep the same username. Otherwise, adjust them accordingly.
+
+Enable Installed Services
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   systemctl start mysqld php-fpm nginx
+   systemctl enable mysqld php-fpm nginx
+
+Environment Configuration
+-------------------------
 
 Prepare MySQL Database
 ^^^^^^^^^^^^^^^^^^^^^^
