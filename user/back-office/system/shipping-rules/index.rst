@@ -197,6 +197,26 @@ For example:
 
 .. image:: /user/img/system/shipping_rules/shipping_rule_method_flat.png
 
+.. _shipping-rule-fixed-product-shipping-cost:
+
+Fixed Product Shipping Cost
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. hint:: Fixed Product Shipping Cost is available since v4.2.16. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+For the fixed product shipping cost method, provide the following information:
+
+* In the **Surcharge Type** field, select whether the surcharge comes as a fixed amount in the selected currency or as an amount in percents.
+
+* In the **Surcharge Amount** field, provide the surcharge amount depending on the surcharge type selected in the previous option.
+
+  * For **fixed amount**, type in the amount number.
+  * For **percent**, select whether the surcharge is on the product shipping cost or product price and type in the surcharge amount in percents.
+
+.. image:: /user/img/system/integrations/fixed-product-cost/fixed-product-cost-rules.png
+   :alt: Configuration options for fixed product shipping cost rule
+
+
 UPS
 ^^^
 

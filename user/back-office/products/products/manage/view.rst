@@ -201,10 +201,23 @@ Click the |IcView| **View** icon at the end of the row to open the corresponding
 
 .. For how to filter displayed prices, configure visible fields, etc., see the :ref:`Grids <doc-grids>` topic.
 
+.. _products--shipping-options-price-attribute:
+
 Shipping Options
 ^^^^^^^^^^^^^^^^
 
-This section presents information about package weight, dimensions, and freight class.
+This section presents information about package weight, dimensions, and freight class, as well as shipping cost price attribute with selected currency and unit options.
+
+.. image:: /user/img/products/price_attributes/shipping-cost-price-attribute.png
+   :alt: Illustration of shipping cost information on the product view page
+
+Shipping cost can work in conjunction with a shipping method, such as :ref:`Fixed Shipping Cost <doc-integration-fixed-shipping-cost>`. For example, if the shipping cost for a product is set to $2.70 and the surcharge configured for the Fixed Shipping Cost shipping method is $3, then the shipping charge at checkout will equate to $5.70.
+
+.. image:: /user/img/products/price_attributes/shipping-cost-price-attribute-with-integration.png
+   :scale: 42%
+   :alt: Illustration of how shipping cost set for the price attribute works on combination with the surcharge defined in the fixed product shipping cost integration
+
+.. hint:: Fixed Product Shipping Cost is available since v4.2.16. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Design
 ^^^^^^

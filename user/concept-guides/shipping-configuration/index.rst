@@ -30,6 +30,8 @@ OroCommerce works with the following shipping methods out-of-the-box:
 
   A flat rate shipping method allows sellers to specify one specific price to ship the order. For example, you can set up a shipping method and a rule which sets a flat rate fee of 3.99 to ship an order to a customer anywhere in the US, and another flat rate shipping method and rule which enable shipping the package overnight to anywhere in the world for $29.99. These prices are automatically added to orders during the checkout.
 
+* :ref:`Fixed Product Shipping Cost <doc-integration-fixed-shipping-cost>`
+
 * :ref:`UPS <doc--integrations--ups>`
 
   To set up a UPS integration, you need to register with UPS.com and open a UPS account with the necessary shipping services level.
