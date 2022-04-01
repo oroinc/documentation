@@ -15,9 +15,10 @@ Support Desk
 
 OroCloud's customer support is available for Oro authorized partners and Enterprise Edition customers.
 
-For support and assistance requests, there is a customer support desk that is available 24x7x365 for ticket submission and further ticket-related communication:
+For support, assistance, or security incident requests, there is a customer support desk that is available 24x7x365 for ticket submission and further ticket-related communication:
 
 .. image:: /cloud/img/cloud/support_portal.png
+   :alt: The list of available support requests
 
 .. note:: Please find the link to the Oro Inc. support desk in your Welcome to Oro Enterprise email.
 
@@ -34,7 +35,7 @@ Support Process
 Create a Support Request
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you are struggling to resolve an issue with the existing documentation and you would like to get technical assistance:
+If you are struggling to resolve an issue with the existing documentation, and you would like to get technical assistance or report security issue:
 
 #. Proceed to the Oro Inc. support desk using the link in your Welcome to Oro Enterprise email.
 #. Log into your existing account or register a new one.
@@ -42,15 +43,18 @@ If you are struggling to resolve an issue with the existing documentation and yo
 
    * Technical Request
    * Bug
+   * Data Migration
+   * New Environment Request
+   * Access Request
+   * Security Issue/Incident
    * Consulting Business Request
-   * New Feature or Improvement
-   * Other
 
 #. Once you select the category, the issue details will be captured in the similar form.
 
-   Note that the available information may vary depending on the issue type.
+   Note that the information to be provided may vary depending on the issue type.
 
-   .. image:: /cloud/img/cloud/create_request.png
+   .. image:: /cloud/img/cloud/create-technical-request.png
+      :alt: A technical request creation form
 
 #. Provide the necessary information (your license key and company name), and describe your request in the summary and description boxes. Please attach any files that may help in issue resolution (e.g., log files, screenshots, etc.)
 
@@ -59,27 +63,24 @@ If you are struggling to resolve an issue with the existing documentation and yo
 Comment on Your Request
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You can get back to any of your created requests using the user menu at the top right.
+You can get back to any of your created requests via the **Requests** menu on the top right. Click the menu and select the required option, either **Created by me** or **All**.
 
-Click on your user picture, and select **Created by me** or **All** under the `REQUESTS` group.
+.. image:: /cloud/img/cloud/request-menu.png
+   :alt: Available options under the Request menu
 
-.. image:: /cloud/img/cloud/list_requests.png
-
-The list of the ticket will open.
-
-Click on the individual ticket to expand its details. You can always add comments and attachments to the ticket and review the responses from the support team.
+The page with all listed tickets opens. Click on the required ticket to expand its details. You can always add comments and attachments to the ticket and review the responses from the support team.
 
 Share Support Requests in Your Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To keep multiple people in your organization informed of support requests and their progress, you may request Oro support to create an Organization group and include the accounts that should have shared access to the tickets.
 
-Once the group is created, and one of the grouped accounts proceeds to the ticket creation, the new field will be added to the request details where they can specify if the request should stay *private* or be *shared with the group*.
+Once the group is created, and one of the grouped accounts proceeds to the ticket creation, a new field will be added to the request details where they can specify if the request should stay *private* or be *shared with the group*.
 
 Mark the Ticket as Resolved
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once the support team has provided you with a solution, please mark the ticket as resolved by clicking the Resolved link on the top right of the ticket details.
+Once the support team has provided you with a solution, please mark the ticket as resolved by clicking the **Resolved** link on the top right of the ticket details.
 
 Support Request Priorities
 --------------------------
