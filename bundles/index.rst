@@ -64,6 +64,22 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", "**R**"
    "**I**", ":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`"
 
+
+
+.. _bundle-docs-extensions:
+
+Extensions' Bundles
+-------------------
+
+All documentation that relates to extensions' bundles is collected below.
+
+
+.. csv-table::
+
+   "**D**", "", ""
+   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`","",""
+
+
 .. toctree::
    :hidden:
 
@@ -154,3 +170,4 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
+   DotmailerBundle <extensions/DotmailerBundle/index>
