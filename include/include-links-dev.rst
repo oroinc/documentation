@@ -5849,3 +5849,12 @@ Links (Dev)
 .. |Mailbox entity| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Entity/Mailbox.php" target="_blank">Mailbox entity</a>
+
+.. |integration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle" target="_blank">integration</a>
+
+.. |dotdigital| raw:: html
+
+   <a href="https://dotdigital.com/" target="_blank">dotdigital</a>
+
