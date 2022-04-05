@@ -27,7 +27,7 @@ Providing the following information will increase the chances of your issue bein
 * Details about your environment:
     * Version of the product (is it master? the latest stable version?)
     * Extensions you have installed and customizations, if any
-    * Server operating system (Windows, Ubuntu, CentOS, RHEL, Fedora, other Linux) version and bitness (32-bit, 64-bit)
+    * Server operating system (Windows, Ubuntu, Oracle Linux, RHEL, Fedora, other Linux) version and bitness (32-bit, 64-bit)
     * PHP version
     * Database (MySQL, PostgreSQL) version
     * Web-server (Apache, Nginx) version and how PHP is set up (as a module, or PHP-FPM)

@@ -180,7 +180,7 @@ System configuration is managed as a code via the configuration management tool 
 Installed Software
 ~~~~~~~~~~~~~~~~~~
 
-Centos OS
+Oracle Linux OS
 Nginx
 PHP
 PostgreSQL
