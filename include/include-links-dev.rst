@@ -5858,7 +5858,18 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle" target="_blank">integration</a>
 
-.. |dotdigital| raw:: html
+.. |Dotdigital| raw:: html
 
-   <a href="https://dotdigital.com/" target="_blank">dotdigital</a>
+   <a href="https://dotdigital.com/" target="_blank">Dotdigital</a>
 
+.. |MailChimp| raw:: html
+
+   <a href="https://mailchimp.com/" target="_blank">MailChimp</a>
+
+.. |OroMailChimpBundle| raw:: html
+
+   <a href="https://github.com/oroinc/OroCRMMailChimpBundle" target="_blank">OroMailChimpBundle</a>
+
+.. |create an audience| raw:: html
+
+   <a href="https://mailchimp.com/help/create-audience/" target="_blank">create an audience</a>
