@@ -190,3 +190,15 @@ Links (Cloud)
 .. |Google CDN| raw:: html
 
    <a href="https://cloud.google.com/cdn" target="_blank">Google CDN</a>
+
+.. |https://github.com/oroinc/phpstan-rules| raw:: html
+
+   <a href="https://github.com/oroinc/phpstan-rules" target="_blank">https://github.com/oroinc/phpstan-rules</a>
+
+.. |https://github.com/fabpot/local-php-security-checker/| raw:: html
+
+   <a href="https://github.com/fabpot/local-php-security-checker/" target="_blank">https://github.com/fabpot/local-php-security-checker/</a>
+
+.. |https://github.com/FriendsOfPHP/security-advisories| raw:: html
+
+   <a href="https://github.com/FriendsOfPHP/security-advisories" target="_blank">https://github.com/FriendsOfPHP/security-advisories</a>

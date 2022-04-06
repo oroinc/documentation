@@ -19,7 +19,7 @@ OroCloud Documentation
 
    architecture/index
    environments
-   security
+   security/index
    monitoring
    onboarding/index
    connect-vpn
