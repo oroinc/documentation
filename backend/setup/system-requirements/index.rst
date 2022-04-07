@@ -19,7 +19,7 @@ Resources configuration depends on the data size and number of active users and 
 Operating Systems
 ~~~~~~~~~~~~~~~~~
 
-Linux distributions (RedHat, Ubuntu, Debian, CentOS) are recommended for the production setup.
+Linux distributions (RedHat, Ubuntu, Debian, Oracle Linux) are recommended for the production setup.
 Windows 7 and above and Mac OS X can be used for the development environment.
 
 Software

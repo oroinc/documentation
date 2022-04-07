@@ -13,7 +13,7 @@ Meet the Hardware and OS Requirements
 
 * **Operating System**
 
-  The recommended OS for Oro applications is CentOS. However, it is possible to set up the development environment on any Linux, Mac, or Windows with WSL2.
+  The recommended OS for Oro applications is Oracle Linux. However, it is possible to set up the development environment on any Linux, Mac, or Windows with WSL2.
 
 * **Disk Drive**
 
@@ -91,7 +91,7 @@ Create a Custom Application
 Set Up Application Environment
 ------------------------------
 
-If you are using CentOS, you can follow the :ref:`Environment Setup for Community Edition <environment-setup-community>`
+If you are using Oracle Linux, you can follow the :ref:`Environment Setup for Community Edition <environment-setup-community>`
 or :ref:`Environment Setup for the Enterprise Edition <environment-setup-enterprise>` to set up the environment for your custom Oro application.
 Otherwise, we recommend using :ref:`Docker and Symfony Server <setup-dev-env-docker-symfony>`.
 
