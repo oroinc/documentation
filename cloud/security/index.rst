@@ -1,5 +1,3 @@
-:orphan:
-
 :title: OroCloud Security Settings
 
 .. meta::
@@ -8,17 +6,16 @@
 .. _cloud_security:
 
 Security
---------
+========
 
 Network Segmentation
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Resources of the OroCloud environment are isolated in the dedicated Google Cloud Platform project. The network for the production deployment is divided into the following two subnets:
 
 * `Application subnet`_
 * `Maintenance DMZ subnet`_
 
-.. important:: Please do not change subfolders' permissions using either SFTP client or application PHP code, all subfolders must be created only via SFTP client.
 
 The following diagram illustrates the network segmentation of a typical Oro application deployment in OroCloud environment:
 
@@ -49,7 +46,7 @@ The **maintenance DMZ subnet** is reserved exclusively for the VPN gateway node,
 The OroCloud support team or your authorized IT support may access the VPN Gateway via a secure OpenVPN connection. OpenVPN uses multi-factor authentication to enforce the traffic protection for the information transferred between the client workstation and OroCloud resources.
 
 Traffic and Firewall Rules
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 In the **application subnet**, the incoming traffic is allowed via the following channels:
 
@@ -61,7 +58,7 @@ The traffic that does not leave the network and the outgoing traffic is not rest
 In the **maintenance DMZ subnet**, the incoming traffic is allowed from the **OpenVPN** bridge only via UDP on the 31194 port. The traffic that does not leave the network and the outgoing traffic is not restricted.
 
 Connecting to the Production OroCloud Environment Using VPN
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------------
 
 The OroCloud support team will provide individual maintenance access (using SSH2 protocol) via VPN to the production instance hosts for your company’s authorized IT support.
 
@@ -72,10 +69,12 @@ To gain access, a customer needs to send the request to Oro's customer support p
 See how to connect VPN in your operating system in the :ref:`Connect OroCloud VPN <cloud_connect_vpn>` topic.
 
 DDoS Protection
-~~~~~~~~~~~~~~~
+---------------
 
 Google Cloud Platform provides a number of tools to prevent and defend against DDoS attacks.
 See |GCP DDoS protection| for more details.
+
+
 
 **What’s Next**
 
@@ -87,3 +86,8 @@ See |GCP DDoS protection| for more details.
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
+
+.. toctree::
+   :maxdepth: 1
+
+   best-practices
