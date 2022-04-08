@@ -5869,3 +5869,15 @@ Links (Dev)
 .. |create an audience| raw:: html
 
    <a href="https://mailchimp.com/help/create-audience/" target="_blank">create an audience</a>
+
+.. |Apruve payment method| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/PaymentBundle" target="_blank">Apruve payment method</a>
+
+.. |at the checkout| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/CheckoutBundle" target="_blank">at the checkout</a>
+
+.. |Apruve| raw:: html
+
+   <a href="https://apruve.com/" target="_blank">Apruve</a>

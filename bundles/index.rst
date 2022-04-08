@@ -76,8 +76,8 @@ All documentation that relates to extensions' bundles is collected below.
 
 .. csv-table::
 
-   "**D**", "M", ""
-   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",""
+   "A", "**D**", "M",
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`", ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`"
 
 
 .. toctree::
@@ -170,5 +170,6 @@ All documentation that relates to extensions' bundles is collected below.
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
+   ApruveBundle <extensions/ApruveBundle/index>
    DotmailerBundle <extensions/DotmailerBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
