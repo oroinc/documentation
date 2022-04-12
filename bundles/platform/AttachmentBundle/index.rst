@@ -27,3 +27,4 @@ Related Documentation
 
    attachment-bundle-config
    image-placeholder-config
+   generating-image-file-urls

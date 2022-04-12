@@ -5796,6 +5796,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/EmailBundle/Entity/Mailbox.php" target="_blank">Mailbox entity</a>
 
+.. |decorate service| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/service_container/service_decoration.html" target="_blank">decorate service</a>
+
 .. |integration| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/IntegrationBundle" target="_blank">integration</a>

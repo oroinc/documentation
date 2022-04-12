@@ -45,7 +45,21 @@ To configure the upload settings globally:
 
    **PNG Resize Quality (%)** --- The setting provides two options for controlling the quality of .png images. *Preserve quality* enables the system to slightly resize the image with the full preservation of the quality. *Minimize file size* enables the system to resize the image to its minimal possible size while still keeping the high quality.
 
-9. Click **Save Settings**.
+9. In the **File Names** section, you can control whether to use original file names. By default, the setting is enabled.
+
+   .. image:: /user/img/system/config_system/upload_settings_3.png
+      :alt: File names section on global level
+
+   .. hint:: The **File Names** settings can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
+
+   **Enable Original File Names** --- When enabled, the original file name is appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") are replaced with "-" (dash).
+
+   For example, the name of the file is **coffee_maker/bosch_#RND123.jpg**, the system-generated hash value is ``media/cache/attachment/filter/product_gallery_main/b6d3b12a2194f276376d682d2e7e6bd1/1/5bae287538.jpg``. If the option is enabled, the file name is displayed in the storefront as follows ``media/cache/attachment/filter/product_gallery_main/623364376a0e8125036727/1/5bae287538-coffee-maker-bosch-RND123.jpg``
+
+   .. note::
+      When this option is enabled, the **Enable Original File Names** setting for Product Images is hidden from the system configuration page.
+
+10. Click **Save Settings**.
 
 If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the configuration of the entity will prevail and override the corresponding global one.
 
