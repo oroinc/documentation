@@ -10,3 +10,4 @@ General Setup Settings per Website
    Localization <website-localization>
    Email Settings <website-email-settings>
    Display Settings <website-display-settings>
+   Upload Settings <website-upload-settings>
