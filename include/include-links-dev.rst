@@ -5827,3 +5827,28 @@ Links (Dev)
 .. |Apruve| raw:: html
 
    <a href="https://apruve.com/" target="_blank">Apruve</a>
+
+.. |Authorize.Net| raw:: html
+
+   <a href="https://www.authorize.net/" target="_blank">Authorize.Net</a>
+
+.. |CIM| raw:: html
+
+   <a href="https://www.authorize.net/our-features/secure-customer-data/" target="_blank">CIM</a>
+
+.. |eCheck transactions| raw:: html
+
+   <a href="https://www.authorize.net/payments/echeck/" target="_blank">eCheck transactions</a>
+
+.. |Accept.js| raw:: html
+
+   <a href="https://developer.authorize.net/api/reference/features/acceptjs.html" target="_blank">Accept.js</a>
+
+.. |Sandbox test server| raw:: html
+
+   <a href="https://sandbox.authorize.net/" target="_blank">Sandbox test server</a>
+
+.. |developer site| raw:: html
+
+   <a href="https://developer.authorize.net/" target="_blank">Developers site</a>
+
