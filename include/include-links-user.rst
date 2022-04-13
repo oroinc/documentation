@@ -679,10 +679,6 @@ Links (User)
 
    <a href="https://symfony.com/doc/4.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
 
-.. |DPD| raw:: html
-
-   <a href="https://marketplace.oroinc.com/orocommerce/extension/orocommerce-dpd-integration/#description" target="_blank">DPD</a>
-
 .. |Resource Library Extension| raw:: html
 
    <a href="https://github.com/oroinc/resource-library" target="_blank">Resource Library Extension</a>

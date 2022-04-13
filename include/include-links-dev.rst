@@ -5856,3 +5856,31 @@ Links (Dev)
 
    <a href="https://developer.authorize.net/" target="_blank">Developers site</a>
 
+.. |DPD website| raw:: html
+
+   <a href="https://www.dpd.com/" target="_blank">DPD</a>
+
+.. |shipping methods| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ShippingBundle" target="_blank">shipping methods</a>
+
+.. |operation button| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle" target="_blank">operation button</a>
+
+.. |OroDPDBundle| raw:: html
+
+   <a href="https://github.com/oroinc/OroDpdBundle" target="_blank">OroDPDBundle</a>
+
+.. |OroDotmailerBundle| raw:: html
+
+   <a href="https://github.com/oroinc/OroCRMDotmailerBundle" target="_blank">OroDotmailerBundle</a>
+
+.. |OroAuthorizeNetBundle| raw:: html
+
+   <a href="https://github.com/oroinc/OroAuthorizeNetBundle" target="_blank">OroAuthorizeNetBundle</a>
+
+.. |OroApruveBundle| raw:: html
+
+   <a href="https://github.com/oroinc/OroApruveBundle" target="_blank">OroApruveBundle</a>
+

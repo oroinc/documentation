@@ -3,7 +3,7 @@
 OroAuthorizeNetBundle
 =====================
 
-OroAuthorizeNetBundle adds the |Authorize.Net| |integration| to OroCommerce applications.
+|OroAuthorizeNetBundle| adds the |Authorize.Net| |integration| to OroCommerce applications.
 
 The bundle allows admin users to enable and configure the Authorize.Net payment method for customer orders, which allows customers to pay for orders with credit and debit cards or eChecks using Authorize.Net Payment Gateway.
 
