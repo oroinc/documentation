@@ -3,7 +3,7 @@
 OroDotmailerBundle
 ==================
 
-OroDotmailerBundle provides |integration| with |Dotdigital| marketing automation platform for Oro applications.
+|OroDotmailerBundle| provides |integration| with |Dotdigital| marketing automation platform for Oro applications.
 
 The bundle enables users to create and configure the integration and connect Oro marketing lists to Dotdigital address books. It provides UI to set data fields mapping between Dotdigital data and Oro application entities and schedule synchronization or start it manually.
 

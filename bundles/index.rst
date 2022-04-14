@@ -64,21 +64,19 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", "**R**","",""
    "**I**", ":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`","",""
 
-
-
 .. _bundle-docs-extensions:
 
 Extensions' Bundles
 -------------------
 
-All documentation that relates to extensions' bundles is collected below.
+Documentation that relates to extensions' bundles is collected below. You can download extensions from the |Oro Extensions Store Commerce|.
 
 
 .. csv-table::
 
    "A", "**D**", "**M**", ""
    ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`", ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`"
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`","","",""
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","",""
 
 .. toctree::
    :hidden:
@@ -173,4 +171,9 @@ All documentation that relates to extensions' bundles is collected below.
    ApruveBundle <extensions/ApruveBundle/index>
    AuthorizeNetBundle <extensions/AuthorizeNetBundle/index>
    DotmailerBundle <extensions/DotmailerBundle/index>
+   DPDBundle <extensions/DPDBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
+
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
