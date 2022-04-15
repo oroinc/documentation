@@ -1,13 +1,13 @@
 :oro_documentation_types: OroCommerce
 
-.. _storefront-oauth-app:
+.. _customer-user-oauth-app:
 
-Manage Storefront OAuth Applications in the Back-Office
-=======================================================
+Manage Customer User OAuth Applications in the Back-Office
+==========================================================
 
 The section contains the list of all OAuth applications created for customer users in the back-office. You can view and manage the existing OAuth applications, create new applications selecting the necessary grant type depending on your business needs, either client credentials or a password.
 
-.. image:: /user/img/system/storefront_oauth_app/storefront_oauth_app_list.png
+.. image:: /user/img/customers/customer_user_oauth_app/customer_user_oauth_app_list.png
    :alt: A list of all existing oauth applications
 
 
@@ -18,13 +18,13 @@ The section contains the list of all OAuth applications created for customer use
 .. note:: For the details on how to add an OAuth application to a selected user in the back-office, refer to the :ref:`Add OAuth applications to a selected customer user <user-guide--customers--customer-users--oauth>` topic.
 
 
-.. |path| replace:: **System > User Management > OAuth Applications**
+.. |path| replace:: **Customers > Customer User OAuth Applications**
 
-.. |image_app_create| image:: /user/img/system/storefront_oauth_app/storefront_oauth_app_create.png
+.. |image_app_create| image:: /user/img/customers/customer_user_oauth_app/customer_user_oauth_app_create.png
 
-.. |image_credentials| image:: /user/img/system/storefront_oauth_app/storefront_oauth_app_credentials.png
+.. |image_credentials| image:: /user/img/customers/customer_user_oauth_app/customer_user_oauth_app_credentials.png
 
-.. |image_app_actions| image:: /user/img/system/storefront_oauth_app/storefront_oauth_app_actions.png
+.. |image_app_actions| image:: /user/img/customers/customer_user_oauth_app/customer_user_oauth_app_actions.png
 
 
 

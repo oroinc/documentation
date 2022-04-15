@@ -76,7 +76,7 @@ The default configuration of OroOAuth2ServerBundle is illustrated below:
 Manage OAuth Applications
 -------------------------
 
-See :ref:`Manage OAuth Applications <oauth-applications>` and :ref:`Manage Storefront OAuth Applications <storefront-oauth-app>`.
+See :ref:`Manage OAuth Applications <oauth-applications>` and :ref:`Manage Customer User OAuth Applications <customer-user-oauth-app>`.
 
 .. _bundle-docs-platform-oauth2-server-bundle--create-app-via-data-fixtures:
 

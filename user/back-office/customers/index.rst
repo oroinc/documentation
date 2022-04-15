@@ -38,3 +38,5 @@ Below is an illustration of the account hierarchy where CRM-related concepts are
    Customer Users <customer-users/index>
    Customer User Roles <customer-user-roles/index>
    Business Customers <business-customers/index>
+   Customer User Login Attempts <login-attempts/index>
+   Customer User OAuth Applications <customer-user-oauth-app/index>

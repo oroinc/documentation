@@ -18,7 +18,7 @@ It is implemented by the :ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth
 |OAuth 2.0 Authorization Code Grant|, |OAuth 2.0 Client Credentials Grant| and |OAuth 2.0 Password Grant|.
 
 For more details, see :ref:`Manage OAuth Applications <oauth-applications>`
-and :ref:`Manage Storefront OAuth Applications <storefront-oauth-app>`.
+and :ref:`Manage Customer User OAuth Applications <customer-user-oauth-app>`.
 
 Generate Tokens
 ---------------
