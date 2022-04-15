@@ -174,7 +174,7 @@ You can add as many applications as you need for any of your existing organizati
 
 Use the generated Client ID and Client Secret to retrieve an access token to connect to your Oro application.
 
-.. note:: For the aggregated information on all OAuth applications created by customer users in the back-office, refer to the general :ref:`Storefront OAuth Applications <storefront-oauth-app>` topic.
+.. note:: For the aggregated information on all OAuth applications created by customer users in the back-office, refer to the general :ref:`Customer User OAuth Applications <customer-user-oauth-app>` topic.
 
 
 .. include:: /include/include-images.rst

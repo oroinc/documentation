@@ -56,6 +56,11 @@ OAuth Applications
 
 The section aggregates information on all OAuth applications created for users in the back-office. Here, you can view and manage the existing OAuth applications, create new ones, and get access tokens through the applications with client credentials and passwords grant types. Check out the :ref:`OAuth Applications <oauth-applications>` topic for more details on how to add the application both from the Oro and third-party sides.
 
+Login Attempts
+--------------
+
+The section aggregates the login info data in one datagrid. This simplifies investigation of any security-related incidents.
+Check out the :ref:`Login Attempts <user-guide-user-management-login-attempts>` topic for more details.
 
 .. toctree::
    :hidden:
@@ -66,6 +71,7 @@ The section aggregates information on all OAuth applications created for users i
    User Groups <groups/index>
    Business Units <business-units/index>
    Organizations <organizations/index>
+   Login Attempts <login-attempts/index>
    OAuth Applications <oauth-app>
 
 .. include:: /include/include-images.rst

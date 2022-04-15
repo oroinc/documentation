@@ -137,7 +137,7 @@ To simplify investigation of any security-related incidents, the application kee
 * Autodeactivation email has been sent
 * Reset password email has been sent
 
-The log is stored in the database in the *oro_logger_log_entry* table.
+The log is stored in the *security* log channel.
 
 .. image:: /user/img/system/data_audit/oro_logger_log_entry.png
    :alt: Record login details in a database table
@@ -152,6 +152,8 @@ In addition to the type of the security event, the following details are recorde
 * last login date and time
 * user creation date and time
 * IP address
+
+Login attempts can be accessed from the back-office UI. See :ref:`Login Attempts UI <user-guide-user-management-login-attempts>` for more information.
 
 **Related Topics**
 

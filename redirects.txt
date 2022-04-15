@@ -327,5 +327,6 @@ user/back-office/system/integrations/dotmailer/dotmailer-single-sign-on /user/ba
 user/back-office/marketing/email-campaigns/sending-email-campaign-via-dotmailer /user/back-office/marketing/email-campaigns/sending-email-campaign-via-dotdigital
 user/back-office/marketing/email-campaigns/dotmailer-data-fields-mappings /user/back-office/marketing/email-campaigns/dotdigital-data-fields-mappings
 user/back-office/system/configuration/system/integrations/dotmailer-integration-settings /user/back-office/system/configuration/system/integrations/dotdigital-integration-settings
+user/back-office/system/storefront-oauth-app /user/back-office/customers/customer-user-oauth-app
 user/back-office/getting-started/navigation/search /user/concept-guides/search/index
 cloud/security /cloud/security/index
