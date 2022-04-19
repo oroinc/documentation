@@ -11,7 +11,7 @@ During the synchronization, the Oro application loads emails from the user's inb
 - When the synchronization settings change, folders are synchronized automatically, but not the emails.
 
 
-By default, the synchronization is executed by a CRON job every 30 minutes. You can launch synchronization manually using the following command:
+By default, the synchronization is executed by a CRON job every minute. You can launch synchronization manually using the following command:
 
 .. code-block:: bash
 
