@@ -54,7 +54,7 @@ During the synchronization, the Oro application loads emails from the user's inb
  - When an empty folder is deleted on the email server, during the synchronization via IMAP, it gets deleted in OroCRM. Folders with the existing emails that have already been synchronized remain intact and are kept by OroCRM.
  - When the synchronization settings change, folders are synchronized automatically, but not the emails.
 
-By default, the synchronization is executed by a CRON job every 30 minutes. Outside that schedule, launch synchronization manually using the following command:
+By default, the synchronization is executed by a CRON job every minute. Outside that schedule, launch synchronization manually using the following command:
 
 .. code-block:: bash
 
