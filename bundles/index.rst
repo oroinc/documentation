@@ -74,8 +74,8 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "A", "**D**", "**M**", ""
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`", ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`"
+   "A", "**D**", "**G**", "M"
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`", ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`", ":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`", ":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`"
    ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","",""
 
 .. toctree::
@@ -172,6 +172,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
    AuthorizeNetBundle <extensions/AuthorizeNetBundle/index>
    DotmailerBundle <extensions/DotmailerBundle/index>
    DPDBundle <extensions/DPDBundle/index>
+   GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
 
 
