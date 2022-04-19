@@ -5938,3 +5938,14 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/OroApruveBundle" target="_blank">OroApruveBundle</a>
 
+.. |products-embedded-list-gtm-component.js| raw:: html
+
+   <a href="https://github.com/oroinc/google-tag-manager/blob/master/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/components/products-embedded-list-gtm-component.js" target="_blank">products-embedded-list-gtm-component.js</a>
+
+.. |product-details-gtm-helper.js| raw:: html
+
+   <a href="https://github.com/oroinc/google-tag-manager/blob/master/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/product-details-gtm-helper.js" target="_blank">product-details-gtm-helper.js</a>
+
+.. |OroGoogleTagManagerBundle| raw:: html
+
+   <a href="https://github.com/oroinc/google-tag-manager/" target="_blank">OroGoogleTagManagerBundle</a>
