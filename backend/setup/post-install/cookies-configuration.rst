@@ -84,13 +84,12 @@ in the `Resources/config/oro/app.yml` file in any bundle or in the `config/confi
     oro_security:
         ...
         csrf_cookie:
-            cookie_httponly:  false   # if true, the HttpOnly flag will be included in the HTTP response header
             cookie_secure:    'auto'  # determines whether cookies should only be sent over secure connections
             cookie_samesite:  null    # prevents the browser from sending cookie along with cross-site requests
 
-By default, this cookie has `cookie_httponly` parameter with false value.
-
 Possible values of the `cookie_samesite` parameter are: 'strict', 'lax', 'none', and null.
+
+.. important:: Starting from platform version 4.2.11, the value of the `HTTPOnly` parameter for this cookie is always ‘false’ and cannot be changed to ‘true’ since the cookie value must be available in the JavaScript that sends AJAX requests to the server.
 
 Storefront Session Cookie
 ------------------------------
