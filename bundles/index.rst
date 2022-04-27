@@ -74,9 +74,12 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "A", "**D**", "**G**", "M"
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`", ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`", ":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`", ":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`"
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","",""
+   "A", "**D**", "**G**", ":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`"
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`", ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`", ":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`", "**P**"
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`"
+
+
+
 
 .. toctree::
    :hidden:
@@ -174,6 +177,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
    DPDBundle <extensions/DPDBundle/index>
    GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
+   PaypalExpressBundle <extensions/PaypalExpressBundle/index>
 
 
 .. include:: /include/include-links-dev.rst
