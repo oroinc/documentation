@@ -214,6 +214,25 @@ Click the link block again to display the **Style Manager** menu settings. In th
 .. image:: /user/img/concept-guides/content-management/insert_clickable_image_3.png
    :alt: Add the link to the link block in the Settings section under the Style Manager menu
 
+Manage Image Sources (Srcset)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To set or remove an image source (srcset) depending on media screen sizes (desktop, tablet, mobile, etc), click the image to display its menu settings. Click |IcConfig| to open the **Picture Sources Manager** menu and upload the required picture for the necessary screen size.
+
+.. image:: /user/img/concept-guides/content-management/picture-sources-manager.png
+   :alt: Pointing to the Picture Sources Manager icon in the image settings menu
+
+For that:
+1. Click **Add Source**.
+2. Select the picture from the list of available :ref:`DA records <digital-assets>`.
+3. Select the breakpoint (screen format) from **Media Query**. The field will be populated with the values default for the format. You can add as many formats as needed to display the picture properly on different screen sizes.
+4. Click **Save**.
+
+
+.. image:: /user/img/concept-guides/content-management/picture-source-manager-steps.png
+   :alt: Steps you Pointing to the Picture Sources Manager icon in the image settings menu
+
+
 
 Insert Files
 ^^^^^^^^^^^^
