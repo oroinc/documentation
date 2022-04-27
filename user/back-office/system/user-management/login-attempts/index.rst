@@ -6,8 +6,8 @@
 Login Attempts
 ==============
 
-.. note::
-    The feature available starting from platform version 5.0.3.
+
+.. hint:: The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To simplify investigation of any security-related incidents, the administrator can check the successful and unsuccessful
 login attempts.
@@ -19,7 +19,7 @@ The list of all login attempts is available under **System > User Management > L
 .. image:: /user/img/system/user_management/login_attempts/login_attempts.png
    :alt: Login Attempts
 
-The administrator can also open this list directly from the customer user view page by clicking on the link with the date of the  last login:
+The administrator can also open this list directly from the back-office user view page by clicking on the link with the date of the last login:
 
 .. image:: /user/img/system/user_management/login_attempts/user_view_page.png
    :alt: Link to Login Attempts on View Page
@@ -28,6 +28,11 @@ In this case, the data in datagrid will be filtered by this user:
 
 .. image:: /user/img/system/user_management/login_attempts/filtered_login_attempts.png
    :alt: Filtered Login Attempts
+
+**Related Topics**
+
+* :ref:`Customer User Login Attempts <user-guide--customers--customer-login-attempts>`
+* :ref:`Audit of Login Attempts <admin-guide-data-audit-login-attempts>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

@@ -136,6 +136,8 @@ Image thumbnail files are created from |LiipImagineBundle| and are stored in the
 Externally Stored Files
 -----------------------
 
+.. hint:: The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 When a field of type ``File``, ``MultiFile``, ``Image``, ``MultiImage`` is created it can be configured with
 the option **Stored Externally** to store an external URL of a file instead of uploading it. This option indicates
 whether the file referenced by this field is stored externally on a third party service. If enabled,

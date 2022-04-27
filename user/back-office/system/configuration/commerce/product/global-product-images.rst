@@ -28,11 +28,7 @@ To configure the product image settings globally:
      a) Clear the **Use Default** check box next to the option.
      b) Enable the required check box or enter the necessary file size and type information.
 
-4. In the **General** section, configure the following options:
-
-   **Enable Original File Names** --- When enabled, the original image file name will be appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") will be replaced with "-" (dash).
-
-   For example, the name of the file is **coffee_maker/bosch_#RND123.jpg**, the system-generated hash value is "media/cache/attachment/product_gallery_main/5bae287538.jpg". If the option is enabled, the file name will be displayed in the storefront as follows "media/cache/attachment/product_gallery_main/5bae287538-coffee-maker-bosch-RND123.jpg"
+.. note:: As of application version 5.0.2, the **Enable Original File Names** option is hidden. To configure the original image file names, navigate to :ref:`General Setup > Upload Settings <admin-configuration-upload-settings>` in the system configuration.
 
 
 .. _sys--commerce--product--product-images:

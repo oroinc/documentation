@@ -124,6 +124,8 @@ The report grid contains the following columns:
   "ORGANIZATION",":term:`Organization`, within which the change has been performed."
   "LOGGED AT","Date and time when the event was logged."
 
+.. _admin-guide-data-audit-login-attempts:
+
 Audit of Login Attempts
 -----------------------
 
@@ -159,3 +161,5 @@ Login attempts can be accessed from the back-office UI. See :ref:`Login Attempts
 
 * :ref:`Entity Management <entities-management>`
 * :ref:`Reports <user-guide-reports>`
+* :ref:`Back-Office User Login Attempts <user-guide-user-management-login-attempts>`
+* :ref:`Customer User Login Attempts <user-guide--customers--customer-login-attempts>`

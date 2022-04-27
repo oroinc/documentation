@@ -5,8 +5,7 @@
 Customer User Login Attempts
 ============================
 
-.. note::
-    The feature available starting from platform version 5.0.3.
+.. hint:: The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To simplify investigation of any security-related incidents, the administrator can check the successful and unsuccessful
 login attempts of customer users.
@@ -27,6 +26,11 @@ In this case, the data in datagrid will be filtered by this customer user:
 
 .. image:: /user/img/customers/login_attempts/filtered_login_attempts.png
    :alt: Filtered Customer User Login Attempts
+
+**Related Topics**
+
+* :ref:`Back-Office User Login Attempts <user-guide-user-management-login-attempts>`
+* :ref:`Audit of Login Attempts <admin-guide-data-audit-login-attempts>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

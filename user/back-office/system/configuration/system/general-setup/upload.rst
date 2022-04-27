@@ -12,7 +12,7 @@ To define the size and formats of the files, reduce the size of images to be upl
 To configure the upload settings globally:
 
 1. Navigate to **System > Configuration** in the main menu.
-2. In the **System Configuration** menu to the left, expand **General Setup** and click **Upload Settings**.
+2. Go to **System Configuration > General Setup > Upload Settings**.
 
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
@@ -32,16 +32,16 @@ To configure the upload settings globally:
 
 .. hint:: The **MIME types** settings can be configured globally and :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`.
 
-.. hint:: Be aware that the Image Processing options are only available if libraries |JPEGOptim| and |PNGQuant| are set up.
-
 8. In the **Externally Stored Files**
 
-   **Allowed URLs RegExp** --- The setting determines the regular expression that describes allowed URLs for externally stored files and images. If left empty, no external files and images will be allowed.
+   **Allowed URLs RegExp** --- The setting determines the regular expression that describes allowed URLs for externally stored files and images. If left empty, no external files and images will be allowed. The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
    .. image:: /user/img/system/config_system/upload_settings_5.png
       :alt: Upload settings on global level
 
 9. In the **Image Processing** section, you can control whether to optimize or not the size of the uploading images in the storage. By default, the setting is enabled, which means that the size of all images that you upload to the system is compressed while preserving the quality.
+
+   .. hint:: Be aware that the Image Processing options are only available if libraries |JPEGOptim| and |PNGQuant| are set up.
 
    .. image:: /user/img/system/config_system/upload_settings_3.png
       :alt: Upload settings on global level
@@ -68,7 +68,7 @@ To configure the upload settings globally:
    .. image:: /user/img/system/config_system/upload_settings_6.png
       :alt: File names section on global level
 
-   .. hint:: The **File Names** settings can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
+   .. hint:: The **File Names** setting is available since v5.0.2. and can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
 
    **Enable Original File Names** --- When enabled, the original file name is appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") are replaced with "-" (dash).
 
