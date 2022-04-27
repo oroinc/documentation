@@ -5949,3 +5949,60 @@ Links (Dev)
 .. |OroGoogleTagManagerBundle| raw:: html
 
    <a href="https://github.com/oroinc/google-tag-manager/" target="_blank">OroGoogleTagManagerBundle</a>
+
+.. |PayPal REST API| raw:: html
+
+   <a href="https://developer.paypal.com/api/rest/" target="_blank">PayPal REST API</a>
+
+.. |Payflow Gateway| raw:: html
+
+   <a href="https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/" target="_blank">Payflow Gateway</a>
+
+.. |PayPal PHP SDK| raw:: html
+
+   <a href="https://github.com/paypal/PayPal-PHP-SDK" target="_blank">PayPal PHP SDK</a>
+
+.. |PayPalExpressTransport| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalExpressTransport.php" target="_blank">PayPalExpressTransport</a>
+
+.. |PayPalClient| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalClient.php" target="_blank">PayPalClient</a>
+
+.. |PayPalSDKObjectTranslator| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalSDKObjectTranslator.php" target="_blank">PayPalSDKObjectTranslator</a>
+
+.. |PaymentActionRegistry| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionRegistry.php" target="_blank">PaymentActionRegistry</a>
+
+.. |CompletePaymentActionRegistry| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/CompletePaymentActionRegistry.php" target="_blank">CompletePaymentActionRegistry</a>
+
+.. |PaymentActionExecutor| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionExecutor.php" target="_blank">PaymentActionExecutor</a>
+
+.. |CompleteVirtualAction| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/CompleteVirtualAction.php" target="_blank">CompleteVirtualAction</a>
+
+.. |PaymentActionInterface| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionInterface.php" target="_blank">PaymentActionInterface</a>
+
+.. |AuthorizeAndCaptureAction| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/AuthorizeAndCaptureAction.php" target="_blank">AuthorizeAndCaptureAction</a>
+
+.. |AuthorizeOnCompleteAction| raw:: html
+
+   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/AuthorizeOnCompleteAction.php" target="_blank">AuthorizeOnCompleteAction</a>
+
+.. |REST API Samples| raw:: html
+
+   <a href="http://paypal.github.io/PayPal-PHP-SDK/sample/" target="_blank">REST API Samples</a>
+
