@@ -5870,9 +5870,9 @@ Links (Dev)
 
    <a href="https://mailchimp.com/help/create-audience/" target="_blank">create an audience</a>
 
-.. |Apruve payment method| raw:: html
+.. |payment method| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/PaymentBundle" target="_blank">Apruve payment method</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/PaymentBundle" target="_blank">payment method</a>
 
 .. |at the checkout| raw:: html
 
@@ -6002,3 +6002,6 @@ Links (Dev)
 
    <a href="http://paypal.github.io/PayPal-PHP-SDK/sample/" target="_blank">REST API Samples</a>
 
+.. |Infinite Pay| raw:: html
+
+   <a href="https://www.infinitepay.de/" target="_blank">Infinite Pay</a>

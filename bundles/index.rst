@@ -74,11 +74,11 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "A", "**D**", "**G**", ":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`"
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`", ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`", ":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`", "**P**"
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`"
-
-
+   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**",""
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",""
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`","**P**",""
+   "**D**","**I**",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
+   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`","",""
 
 
 .. toctree::
@@ -176,6 +176,7 @@ Documentation that relates to extensions' bundles is collected below. You can do
    DotmailerBundle <extensions/DotmailerBundle/index>
    DPDBundle <extensions/DPDBundle/index>
    GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
+   InfinitePayBundle <extensions/InfinitePayBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
 
