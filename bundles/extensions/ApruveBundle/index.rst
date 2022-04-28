@@ -5,7 +5,7 @@ OroApruveBundle
 
 |OroApruveBundle| adds |integration| with |Apruve| B2B Credit Management and Automation Platform in Oro applications.
 
-The bundle allows admin users to enable and configure the |Apruve payment method| available |at the checkout| process and enables customers to pay for orders by credit obligations attested by Apruve.
+The bundle allows admin users to enable and configure the Apruve |payment method| available |at the checkout| process and enables customers to pay for orders by credit obligations attested by Apruve.
 
 Technical Components
 --------------------
