@@ -1,3 +1,5 @@
+.. _user-guide-sales-back-office:
+
 :oro_documentation_types: OroCRM, OroCommerce
 
 :title: Sales Management in the OroCommerce and OroCRM Back-Office
