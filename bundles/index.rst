@@ -81,6 +81,16 @@ Documentation that relates to extensions' bundles is collected below. You can do
    ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`","",""
 
 
+CRM Bundles
+-----------
+
+.. csv-table::
+
+    "A","C", "S"
+    ":ref:`ActivityContactBundle <bundle-docs-crm-activity-contact-bundle>`", ":ref:`ChannelBundle <bundle-docs-crm-channel-bundle>`", ":ref:`SalesBundle <bundle-docs-crm-sales-bundle>`"
+    ":ref:`AnalyticsBundle <bundle-docs-crm-analytics-bundle>`", "", ""
+
+
 .. toctree::
    :hidden:
 
@@ -171,6 +181,10 @@ Documentation that relates to extensions' bundles is collected below. You can do
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
+   ActivityContactBundle <crm/ActivityContactBundle/index>
+   AnalyticsBundle <crm/AnalyticsBundle/index>
+   ChannelBundle <crm/ChannelBundle/index>
+   SalesBundle <crm/SalesBundle/index>
    ApruveBundle <extensions/ApruveBundle/index>
    AuthorizeNetBundle <extensions/AuthorizeNetBundle/index>
    DotmailerBundle <extensions/DotmailerBundle/index>
