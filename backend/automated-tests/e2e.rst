@@ -149,3 +149,52 @@ or
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+Using Secrets Variables in Tests
+--------------------------------
+
+.. hint:: This feature is available since OroCommerce v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+To test a feature, you may need to use sensitive data like credentials which should not be defined in fixtures. You can define this variables in secrets variable file and use those variables in your scenarios.
+
+1. Create a ``.behat-secrets.yml`` file in the application folder. In this file, set your configuration variables for use them in test.
+
+   .. code-block:: yaml
+
+      secrets:
+          login:
+              username: admin
+              password: s3crEtPas$
+
+2. Modify your scenario with variables in format ``<Secret:variable.path>``
+
+   .. code-block:: gherkin
+
+      Feature: Example to use secrets variables
+        Scenario: Login into Admin with variables
+          Given I go to "admin"
+          And I fill form with:
+            | Username | <Secret:login.username> |
+            | Password | <Secret:login.password> |
+          And I click "Log in"
+
+Built-in Scenarios
+------------------
+
+To configure predefined integrations you can use one of built-in scenario.
+
+1. To use scenarios you need to install extension
+
+   .. code-block:: bash
+
+      composer require oro/e2e-tests --dev -n
+
+2. Copy ``.behat-secrets.yml.dist`` to ``.behat-secrets.yml`` in the application root and modify necessary credentials to actual one.
+
+3. Check available scenarios in ``vendor/oro/e2e-tests/Tests/Behat/Features/``
+
+4. Run scenario
+
+   .. code-block:: bash
+
+      php bin/behat --skip-isolators -- vendor/oro/e2e-tests/Tests/Behat/Features/create_mailchimp_integration.feature
