@@ -5955,3 +5955,20 @@ Links (Dev)
 .. |Infinite Pay| raw:: html
 
    <a href="https://www.infinitepay.de/" target="_blank">Infinite Pay</a>
+
+.. |RFM| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/RFM_(market_research)" target="_blank">RFM</a>
+
+.. |ActivityContactMigrationQuery| raw:: html
+
+   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Migration/ActivityContactMigrationQuery.php" target="_blank">ActivityContactMigrationQuery</a>
+
+.. |oro:activity-contact:recalculate| raw:: html
+
+   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Command/ActivityContactRecalculateCommand.php" target="_blank">oro:activity-contact:recalculate</a>
+
+.. |DirectionProviderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
+
