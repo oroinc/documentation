@@ -242,11 +242,14 @@ An example:
 
         class AcmeMyBundle extends Bundle
         {
-            public function build(ContainerBuilder $container)
+            /**
+             * {@inheritdoc}
+             */
+            public function build(ContainerBuilder $container): void
             {
-                $container->addCompilerPass(new TwigSandboxConfigurationPass());
-
                 parent::build($container);
+
+                $container->addCompilerPass(new TwigSandboxConfigurationPass());
             }
         }
 

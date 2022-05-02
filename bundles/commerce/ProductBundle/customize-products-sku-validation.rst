@@ -56,7 +56,10 @@ There are 2 ways to override the `oro_product.sku.regex_pattern` parameter in yo
 
        class DemoBundle extends Bundle
        {
-           public function build(ContainerBuilder $container)
+           /**
+            * {@inheritdoc}
+            */
+           public function build(ContainerBuilder $container): void
            {
                parent::build($container);
 

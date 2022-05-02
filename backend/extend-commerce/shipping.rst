@@ -18,7 +18,7 @@ First, create and enable the FastShippingBundle bundle for your shipping method 
 
 1. In the /src/ACME/Bundle/FastShippingBundle/ directory of your application, create class ACMEFastShippingBundle.php:
 
-.. oro_integrity_check:: 68a42f8675c61b7e479501ed5fadc15d63fbc883
+.. oro_integrity_check:: c9ec62cd64e0827ce2eddc984855eecdead44f51
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/ACMEFastShippingBundle.php
        :language: php
@@ -149,11 +149,11 @@ To register the channel type and transport, append the following key-values to <
 Set up Services with DependencyInjection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/FastShippingExtension.php with the following content:
+To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/ACMEFastShippingExtension.php with the following content:
 
-.. oro_integrity_check:: 03400de1f9e19f08b99a7aaffa96f859a9c0e6dc
+.. oro_integrity_check:: cf8a8b8654b7ec4b0b1ac1c3510f5b73db7f5ee5
 
-   .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/DependencyInjection/FastShippingExtension.php
+   .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/DependencyInjection/ACMEFastShippingExtension.php
        :language: php
 
 

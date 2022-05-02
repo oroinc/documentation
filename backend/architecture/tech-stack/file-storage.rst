@@ -182,7 +182,7 @@ as the configuration factory for the `oro_gaufrette` bundle in your bundle class
         /**
          * {@inheritDoc}
          */
-        public function build(ContainerBuilder $container)
+        public function build(ContainerBuilder $container): void
         {
             parent::build($container);
 

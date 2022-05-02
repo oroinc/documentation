@@ -35,7 +35,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
            /**
             * {@inheritdoc}
             */
-           public function build(ContainerBuilder $container)
+           public function build(ContainerBuilder $container): void
            {
                parent::build($container);
 

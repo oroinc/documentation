@@ -17,7 +17,7 @@ First, create and enable the CollectOnDeliveryBundle bundle for your payment met
 
 1. In the /src/ACME/Bundle/CollectOnDeliveryBundle/ directory of your application, create class ACMECollectOnDeliveryBundle.php:
 
-.. oro_integrity_check:: 77ce5cbc1534c61de3f96d2212bae5a0331e054a
+.. oro_integrity_check:: 5bfdbfa14e2c7e618ee83dadda54ca679b2bdd2f
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/ACMECollectOnDeliveryBundle.php
        :language: php
@@ -98,7 +98,7 @@ Set up Services with DependencyInjection
 
 To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/CollectOnDeliveryExtension.php with the following content:
 
-.. oro_integrity_check:: e2f07c0d002567a930002e7af0d23942297d311d
+.. oro_integrity_check:: 23b4a7074d71c77276cafda210dad234b18d1e5f
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/DependencyInjection/ACMECollectOnDeliveryExtension.php
       :language: php

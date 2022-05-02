@@ -42,11 +42,11 @@ Pay attention to the way the chain works. It gets the first suitable value from 
 
 Make sure to insert CompilerPass to the bundle root file.
 
-    .. oro_integrity_check:: 863fcd4b086f644f4ddf9fcb9b4a13cd13db2427
+    .. oro_integrity_check:: d83c325ff43f58942e660b11ceff64d6ecb6bed1
 
         .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/ACMEDemoBundle.php
             :language: php
-            :lines: 3-18
+            :lines: 3-21
 
 
 Theme Image Placeholder Provider

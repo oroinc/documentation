@@ -325,7 +325,10 @@ inside the bundle class:
 
     class OroAcmeBundle extends Bundle
     {
-        public function build(ContainerBuilder $container)
+        /**
+         * {@inheritdoc}
+         */
+        public function build(ContainerBuilder $container): void
         {
             parent::build($container);
 

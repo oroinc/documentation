@@ -163,8 +163,10 @@ To add new auditable types, register a new type in your bundle's boot method:
 
     class MyBundle extends Bundle
     {
-        public function boot()
+        public function boot(): void
         {
+            parent::boot();
+
             /**
              * You can also use AuditFieldTypeRegistry::overrideType to replace existing type
              * But make sure you move old data into new columns

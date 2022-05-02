@@ -7,12 +7,12 @@ use ACME\Bundle\DemoBundle\DependencyInjection\Compiler\ImagePlaceholderProvider
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-/**
- * The ACMEDemoBundle bundle class.
- */
 class ACMEDemoBundle extends Bundle
 {
-    public function build(ContainerBuilder $container)
+    /**
+     * {@inheritdoc}
+     */
+    public function build(ContainerBuilder $container): void
     {
         parent::build($container);
 

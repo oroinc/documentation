@@ -192,8 +192,13 @@ bundle to use it.
 
     class AcmeCoreBundle extends Bundle
     {
-        public function build(ContainerBuilder $container)
+        /**
+         * {@inheritdoc}
+         */
+        public function build(ContainerBuilder $container): void
         {
+            parent::build($container);
+
             /** @var OroMessageQueueExtension $extension */
             $extension = $container->getExtension('oro_message_queue');
             $extension->addTransportFactory(new AmqpTransportFactory());

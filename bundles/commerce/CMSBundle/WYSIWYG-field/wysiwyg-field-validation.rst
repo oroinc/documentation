@@ -69,7 +69,7 @@ To connect your custom HTML Purifier mode with the content restrictions mode, yo
 
 To be able to use the ``content_restrictions_additional`` and ``content_restrictions_extra`` modes in configuration, you should add this mode to the ``oro_cms`` extension.
 
-    .. oro_integrity_check:: fa38ac7298cf82acf17f7f1ef41d905cdff2f2da
+    .. oro_integrity_check:: db5347f15266821b6925b6235c2a56685335dc84
 
         .. literalinclude:: /code_examples_untested/wysiwyg_field/wysiwyg-validation/ACMEWysiwygValidationBundle.php
             :language: php
