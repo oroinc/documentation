@@ -204,7 +204,12 @@ See the following example configuration:
                             reader:    oro_importexport.reader.csv
                             processor: oro_importexport.processor.import_delegate
                             writer:    oro_importexport.writer.entity
-                        parameters: ~
+                        parameters:
+                            # Number of items used by writer service in one iteration, the default value is null
+                            batch_size: 1000
+                            # Indicates whether the import step statistics will be displayed in the import final result
+                            # should be included in the summarized job context, the default value is false
+                            add_to_job_summary: true
 
 The import algorithm being performed is (in pseudocode):
 
@@ -230,6 +235,11 @@ a ``Oro\Bundle\ImportExportBundle\Processor\ProcessorInterface``
 and a writer to it and executes it in the ``StepExecutor`` through the
 ``execute()`` method. After
 this step is done, all imported items are written to the destination.
+
+.. seealso::
+
+    You can control the number of rows read from the source in one iteration
+    with parameter ``oro_importexport.import.size_of_batch`` (default value is 1000).
 
 Import Process in Detail
 ------------------------
@@ -320,6 +330,12 @@ The export algorithm being performed is (in pseudocode):
           - save plain array to array of items for save
         - end loop
         - save array of prepared items to DB
+
+
+.. seealso::
+
+    You can control the number of rows written to a CSV file in one iteration
+    with parameter ``oro_importexport.export.size_of_batch`` (default value is 5000).
 
 Serializer and Normalizer
 -------------------------
