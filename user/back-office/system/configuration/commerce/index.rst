@@ -20,9 +20,10 @@ Learn how to set up product and category visibility restrictions, customer user 
 :ref:`Guests <configuration--guide--commerce--configuration--guests>`
 ---------------------------------------------------------------------
 
-Learn how to enable guest access.
+Learn how to enable guest access and SEO settings.
 
 * :ref:`Website Access <sys--conf--commerce--guest-access--global>`
+* :ref:`SEO <sys--conf--commerce--guest-seo--global>`
 
 
 :ref:`Catalog <configuration--guide--commerce--configuration--catalog>`

@@ -41,6 +41,7 @@ The following categories of settings are available for system configuration at o
   * Guests
 
     * :ref:`Website Access <guest-access-org>`
+    * :ref:`SEO <sys--conf--commerce--guest-seo--org>`
 
   * Customer
 
