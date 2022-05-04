@@ -183,26 +183,33 @@ In Controllers
 ^^^^^^^^^^^^^^
 
 To retrieve configuration values inside a controller, use the
-``oro_config.user`` service which is an instance of ``Oro\ConfigBundle\Config\UserConfigManager``.
+``oro_config.manager`` service which is an instance of ``Oro\ConfigBundle\Config\ConfigManager``.
 Use its ``get()`` method to retrieve the value of a setting:
 
 .. code-block:: php
    :caption: src/Acme/DemoBundle/Controller/DemoController.php
 
-    namespace Acme\DemoBundle\Controller;
+   namespace Acme\DemoBundle\Controller;
 
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+   use Oro\Bundle\ConfigBundle\Config\ConfigManager;
+   use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-    class DemoController extends Controller
-    {
-        public function demoAction()
-        {
-            $config = $this->get('oro_config.user');
-            $foo = $config->get('acme_demo.foo');
+   class DemoController extends AbstractController
+   {
+       private ConfigManager $configManager;
 
-            // ...
-        }
-    }
+       public function __constructor(ConfigManager $configManager)
+       {
+           $this->configManager = $configManager;
+       }
+
+       public function demoAction()
+       {
+           $foo = $this->configManager->get('acme_demo.foo');
+
+           // ...
+       }
+   }
 
 .. note::
 

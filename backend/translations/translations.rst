@@ -54,17 +54,20 @@ or in the `php` code:
 
     namespace Oro\Bundle\AcmeBundle\Controller;
 
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Contracts\Translation\TranslatorInterface;
 
-    class AcmeController extends Controller
+    class AcmeController
     {
-        /**
-         * @return array
-         */
-        public function viewAction()
+        private $translator;
+        public function __constructor(TranslatorInterface $translator)
+        {
+            $this->translator = $translator;
+        }
+
+        public function viewAction(): array
         {
             return [
-                'label' => $this->get('translator')->trans('oro.translation.some_field.label')
+                'label' => $this->translator->trans('oro.translation.some_field.label')
             ];
         }
     }

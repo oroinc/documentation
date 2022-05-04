@@ -66,10 +66,10 @@ You have two options to define your custom access control lists:
 
        use AppBundle\Entity\Task;
        use Oro\Bundle\SecurityBundle\Annotation\Acl;
-       use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+       use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
        use Symfony\Component\HttpFoundation\Request;
 
-       class TaskController extends Controller
+       class TaskController extends AbstractController
        {
            /**
             * @Acl(
@@ -156,9 +156,9 @@ You have two options to define your custom access control lists:
         namespace AppBundle\Controller;
 
         use Oro\Bundle\SecurityBundle\Annotation\Acl;
-        use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+        use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-        class PageController extends Controller
+        class PageController extends AbstractController
         {
             /**
              * @Acl(
@@ -272,9 +272,9 @@ to an existing access control list using the ``@AclAncestor`` annotation:
 
     use AppBundle\Entity\Task;
     use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-    class TaskController extends Controller
+    class TaskController extends AbstractController
     {
         /**
          * @AclAncestor("app_task_view")
