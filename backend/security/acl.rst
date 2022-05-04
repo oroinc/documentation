@@ -283,9 +283,9 @@ the controller method. Restricting access can be done in two different ways:
        namespace Acme\DemoBundle\Controller;
 
        use Oro\Bundle\SecurityBundle\Annotation\Acl;
-       use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+       use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-       class ProductController extends Controller
+       class ProductController extends AbstractController
        {
            /**
             * @Acl(
@@ -325,9 +325,9 @@ the controller method. Restricting access can be done in two different ways:
        namespace Acme\DemoBundle\Controller;
 
        use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
-       use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+       use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-       class ProductController extends Controller
+       class ProductController extends AbstractController
        {
            /**
             * @AclAncestor("product_edit")
@@ -394,22 +394,32 @@ provided by the OroSecurityBundle:
 
     namespace Acme\DemoBundle\Controller;
 
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Acme\DemoBundle\Entity\Product;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+    use Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper;
 
-    class DemoController extends Controller
+    class DemoController extends AbstractController
     {
         public function protectedAction()
         {
-            $repository = $this->getDoctrine()->getRepository('AcmeDemoBundle:Product');
+            $repository = $this->container->get('doctrine')->getRepository(Product::class);
             $queryBuilder = $repository
-                ->createQueryBuilder('p');
+                ->createQueryBuilder('p')
                 ->where('p.price > :price')
                 ->orderBy('p.price', 'ASC')
                 ->setParameter('price', 19.99);
-            $aclHelper = $this->get('oro_security.acl_helper');
+            $aclHelper = $this->container->get(AclHelper::class);
             $query = $aclHelper->apply($queryBuilder, 'VIEW');
 
             // ...
+        }
+
+        public static function getSubscribedServices(): array
+        {
+            return array_merge(
+                parent::getSubscribedServices(),
+                [AclHelper::class]
+            );
         }
     }
 
@@ -431,10 +441,10 @@ In this case, you can use the ``isGranted`` function:
 
     namespace Acme\DemoBundle\Controller;
 
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
     use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
-    class DemoController extends Controller
+    class DemoController extends AbstractController
     {
         public function protectedAction()
         {

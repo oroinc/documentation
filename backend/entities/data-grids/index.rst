@@ -223,13 +223,13 @@ which will serve a view that renders the configured datagrid:
     namespace AppBundle\Controller;
 
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
     use Symfony\Component\Routing\Annotation\Route;
 
     /**
      * @Route("/task")
      */
-    class TaskController extends Controller
+    class TaskController extends AbstractController
     {
         /**
          * @Route("/", name="app_task_index")

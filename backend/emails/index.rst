@@ -111,9 +111,9 @@ the setter methods for all the properties you want to be set:
 
     use Oro\Bundle\EmailBundle\Form\Model\Email;
     use Oro\Bundle\EmailBundle\Form\Model\EmailAttachment;
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-    class EmailController extends Controller
+    class EmailController extends AbstractController
     {
         public function sendMailAction()
         {
@@ -186,9 +186,9 @@ create an email model based on such a persisted entity, by using the useful
 
     namespace Acme\DemoBundle\Controller;
 
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-    class EmailController extends Controller
+    class EmailController extends AbstractController
     {
         public function sendMailAction()
         {

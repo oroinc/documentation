@@ -513,10 +513,10 @@ Here is an example of the controller:
 
     use Symfony\Component\HttpFoundation\Request;
     use Symfony\Component\HttpFoundation\Response;
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
     use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
-    class MyResourceController extends Controller
+    class MyResourceController extends AbstractController
     {
         /**
          * Retrieve a specific record.

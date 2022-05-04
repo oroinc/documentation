@@ -23,12 +23,12 @@ The current token value is stored in the cookie `_csrf` for HTTP connections and
     // ...
 
     use Oro\Bundle\SecurityBundle\Annotation\CsrfProtection;
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
     /**
      * @CsrfProtection
      */
-    class AjaxController extends Controller
+    class AjaxController extends AbstractController
     {
         /**
          * @Route("/ajax/change-stus/{statusName}", name="acme_ajax_change_status", methods={"POST"})
@@ -47,9 +47,9 @@ The current token value is stored in the cookie `_csrf` for HTTP connections and
     // ...
 
     use Oro\Bundle\SecurityBundle\Annotation\CsrfProtection;
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-    class AjaxController extends Controller
+    class AjaxController extends AbstractController
     {
         /**
          * @Route("/ajax/change-stus/{statusName}", name="acme_ajax_change_status", methods={"POST"})

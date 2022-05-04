@@ -49,23 +49,31 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 
    .. code-block:: php
 
-       namespace Acme\Bundle\SomeBundle\Controller;
+        namespace Acme\Bundle\SomeBundle\Controller;
 
-       use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+        use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-       class SomeController extends Controller
-       {
-           public function updateAction()
-           {
-               // ...
+        class SomeController extends AbstractController
+        {
+            public function updateAction()
+            {
+             // ...
 
-               /** @var Oro\Bundle\UIBundle\Asset\DynamicAssetVersionManager $assetVersionManager */
-               $assetVersionManager = $this->get('oro_ui.dynamic_asset_version_manager');
-               $assetVersionManager->updateAssetVersion('acme');
+                /** @var Oro\Bundle\UIBundle\Asset\DynamicAssetVersionManager $assetVersionManager */
+                $assetVersionManager = $this->container->get('oro_ui.dynamic_asset_version_manager');
+                $assetVersionManager->updateAssetVersion('acme');
 
-               // ...
-           }
-       }
+                // ...
+            }
+
+            public static function getSubscribedServices(): array
+            {
+                return array_merge(
+                    parent::getSubscribedServices(),
+                    ['oro_ui.dynamic_asset_version_manager' => DynamicAssetVersionManager::class]
+                );
+            }
+        }
 
 The usage of your assets is the same as other assets, for example by the well-known `asset()` Twig function:
 
