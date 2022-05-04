@@ -7,3 +7,4 @@ Configure Guest Settings per Website
    :maxdepth: 1
 
    Website Access <website-guest-access>
+   SEO <website-seo>

@@ -7,3 +7,4 @@ Configure Guest Access Settings per Organization
    :maxdepth: 1
 
    Website Access <organization-guest-access>
+   SEO <organization-seo>

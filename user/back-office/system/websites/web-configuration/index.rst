@@ -54,6 +54,7 @@ More information about the options available for each of the two categories is a
   * :ref:`Guests <sys--conf--commerce--guest>`
 
     * :ref:`Website Access <sys--conf--commerce--guest-access--website>`
+    * :ref:`SEO <sys--conf--commerce--guest-seo--website>`
 
   * Design
 
