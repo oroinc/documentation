@@ -35,6 +35,8 @@ Entities that support slug prototypes should implement one of the following inte
 Entities that support slugs should implement ``Oro\Bundle\RedirectBundle\Entity\SlugAwareInterface`` which is implemented in ``Oro\Bundle\RedirectBundle\Entity\SlugAwareTrait``.
 In most cases, you can use ``Oro\Bundle\RedirectBundle\Entity\SluggableInterface``. It extends ``LocalizedSlugPrototypeWithRedirectAwareInterface`` and ``SlugAwareInterface``. The corresponding trait name is ``SlugAwareTrait``.
 
+.. _bundle-docs-commerce-redireect-bundle-migration-extension:
+
 Migration Extension
 ^^^^^^^^^^^^^^^^^^^
 

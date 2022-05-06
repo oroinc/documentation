@@ -5347,17 +5347,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/4.2/src/Oro/Bundle/RedirectBundle/Migration/Extension/SlugExtension.php" target="_blank">SlugExtension</a>
 
-.. |RedirectBundle documentation| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/RedirectBundle#migration-extension" target="_blank">RedirectBundle documentation</a>
-
 .. |CustomerExtension| raw:: html
 
    <a href="https://github.com/oroinc/crm/blob/4.2/src/Oro/Bundle/SalesBundle/Migration/Extension/CustomerExtension.php" target="_blank">CustomerExtension</a>
-
-.. |Migration Extension documentation| raw:: html
-
-   <a href="https://github.com/oroinc/crm/blob/4.2/src/Oro/Bundle/SalesBundle/Resources/doc/reference/customer.md" target="_blank">Migration Extension documentation</a>
 
 .. |ActivityExtension| raw:: html
 
@@ -5638,107 +5630,107 @@ Links (Dev)
 
 .. |IdentityIterationStrategyInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentityIterationStrategyInterface.php" target="_blank">IdentityIterationStrategyInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentityIterationStrategyInterface.php" target="_blank">IdentityIterationStrategyInterface</a>
 
 .. |SelectIdentifierWalker| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/SelectIdentifierWalker.php" target="_blank">SelectIdentifierWalker</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/SelectIdentifierWalker.php" target="_blank">SelectIdentifierWalker</a>
 
 .. |IdentifierHydrator| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentifierHydrator.php" target="_blank">IdentifierHydrator</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/IdentifierHydrator.php" target="_blank">IdentifierHydrator</a>
 
 .. |LimitIdentifierWalker| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/LimitIdentifierWalker.php" target="_blank">LimitIdentifierWalker</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/BatchBundle/ORM/Query/ResultIterator/LimitIdentifierWalker.php" target="_blank">LimitIdentifierWalker</a>
 
 .. |Calendar Manager| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Manager/CalendarManager.php" target="_blank">Calendar Manager</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Manager/CalendarManager.php" target="_blank">Calendar Manager</a>
 
 .. |CalendarProviderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/CalendarProviderInterface.php" target="_blank">CalendarProviderInterface</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Provider/CalendarProviderInterface.php" target="_blank">CalendarProviderInterface</a>
 
 .. |context menu template| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/views/Calendar/Menu/contextMenu.html.twig" target="_blank">context menu template</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Resources/views/Calendar/Menu/contextMenu.html.twig" target="_blank">context menu template</a>
 
 .. |Backbone model| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/model.js" target="_blank">Backbone model</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Resources/public/js/calendar/connection/model.js" target="_blank">Backbone model</a>
 
 .. |Backbone collection| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/collection.js" target="_blank">Backbone collection</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Resources/public/js/calendar/connection/collection.js" target="_blank">Backbone collection</a>
 
 .. |manager| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/color-manager.js" target="_blank">manager</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Resources/public/js/calendar/color-manager.js" target="_blank">manager</a>
 
 .. |calendar items list| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/public/js/calendar/connection/view.js" target="_blank">calendar items list</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Resources/public/js/calendar/connection/view.js" target="_blank">calendar items list</a>
 
 .. |oro_system_calendar| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/SystemCalendar.php" target="_blank">oro_system_calendar</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Entity/SystemCalendar.php" target="_blank">oro_system_calendar</a>
 
 .. |SystemCalendarProvider| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/SystemCalendarProvider.php" target="_blank">SystemCalendarProvider</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Provider/SystemCalendarProvider.php" target="_blank">SystemCalendarProvider</a>
 
 .. |PublicCalendarProvider| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Provider/PublicCalendarProvider.php" target="_blank">PublicCalendarProvider</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Provider/PublicCalendarProvider.php" target="_blank">PublicCalendarProvider</a>
 
 .. |CalendarEvent| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/CalendarEvent.php" target="_blank">CalendarEvent</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Entity/CalendarEvent.php" target="_blank">CalendarEvent</a>
 
 .. |Entity/Recurrence| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Entity/Recurrence.php" target="_blank">Entity/Recurrence</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Entity/Recurrence.php" target="_blank">Entity/Recurrence</a>
 
 .. |Model/Recurrence| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence.php" target="_blank">Model/Recurrence</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence.php" target="_blank">Model/Recurrence</a>
 
 .. |Model/Recurrence/AbstractStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/AbstractStrategy.php" target="_blank">Model/Recurrence/AbstractStrategy</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/AbstractStrategy.php" target="_blank">Model/Recurrence/AbstractStrategy</a>
 
 .. |Model/Recurrence/DailyStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/DailyStrategy.php" target="_blank">Model/Recurrence/DailyStrategy</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/DailyStrategy.php" target="_blank">Model/Recurrence/DailyStrategy</a>
 
 .. |Model/Recurrence/DelegateStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/DelegateStrategy.php" target="_blank">Model/Recurrence/DelegateStrategy</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/DelegateStrategy.php" target="_blank">Model/Recurrence/DelegateStrategy</a>
 
 .. |Model/Recurrence/MonthlyStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/MonthlyStrategy.php" target="_blank">Model/Recurrence/MonthlyStrategy</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/MonthlyStrategy.php" target="_blank">Model/Recurrence/MonthlyStrategy</a>
 
 .. |Model/Recurrence/MonthNthStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/MonthNthStrategy.php" target="_blank">Model/Recurrence/MonthNthStrategy</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/MonthNthStrategy.php" target="_blank">Model/Recurrence/MonthNthStrategy</a>
 
 .. |Model/Recurrence/StrategyInterface| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/StrategyInterface.php" target="_blank">Model/Recurrence/StrategyInterface</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/StrategyInterface.php" target="_blank">Model/Recurrence/StrategyInterface</a>
 
 .. |Model/Recurrence/WeeklyStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/WeeklyStrategy.php" target="_blank">Model/Recurrence/WeeklyStrategy</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/WeeklyStrategy.php" target="_blank">Model/Recurrence/WeeklyStrategy</a>
 
 .. |Model/Recurrence/YearlyStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/YearlyStrategy.php" target="_blank">Model/Recurrence/YearlyStrategy</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/YearlyStrategy.php" target="_blank">Model/Recurrence/YearlyStrategy</a>
 
 .. |Model/Recurrence/YearNthStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Model/Recurrence/YearNthStrategy.php" target="_blank">Model/Recurrence/YearNthStrategy</a>
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/4.2/Model/Recurrence/YearNthStrategy.php" target="_blank">Model/Recurrence/YearNthStrategy</a>
 
 .. |specifications| raw:: html
 
@@ -5750,11 +5742,11 @@ Links (Dev)
 
 .. |NotificationAlertInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertInterface.php" target="_blank">NotificationAlertInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertInterface.php" target="_blank">NotificationAlertInterface</a>
 
 .. |NotificationAlertManager| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertManager.php" target="_blank">NotificationAlertManager</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/NotificationBundle/NotificationAlert/NotificationAlertManager.php" target="_blank">NotificationAlertManager</a>
 
 .. |Single File Components| raw:: html
 
@@ -5822,11 +5814,11 @@ Links (Dev)
 
 .. |payment method| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/PaymentBundle" target="_blank">payment method</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/PaymentBundle" target="_blank">payment method</a>
 
 .. |at the checkout| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/CheckoutBundle" target="_blank">at the checkout</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/CheckoutBundle" target="_blank">at the checkout</a>
 
 .. |Apruve| raw:: html
 
@@ -5862,11 +5854,11 @@ Links (Dev)
 
 .. |shipping methods| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ShippingBundle" target="_blank">shipping methods</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/4.2/src/Oro/Bundle/ShippingBundle" target="_blank">shipping methods</a>
 
 .. |operation button| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle" target="_blank">operation button</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActionBundle" target="_blank">operation button</a>
 
 .. |OroDPDBundle| raw:: html
 
@@ -5886,11 +5878,11 @@ Links (Dev)
 
 .. |products-embedded-list-gtm-component.js| raw:: html
 
-   <a href="https://github.com/oroinc/google-tag-manager/blob/master/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/components/products-embedded-list-gtm-component.js" target="_blank">products-embedded-list-gtm-component.js</a>
+   <a href="https://github.com/oroinc/google-tag-manager/tree/4.2/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/components/products-embedded-list-gtm-component.js" target="_blank">products-embedded-list-gtm-component.js</a>
 
 .. |product-details-gtm-helper.js| raw:: html
 
-   <a href="https://github.com/oroinc/google-tag-manager/blob/master/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/product-details-gtm-helper.js" target="_blank">product-details-gtm-helper.js</a>
+   <a href="https://github.com/oroinc/google-tag-manager/tree/4.2/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/product-details-gtm-helper.js" target="_blank">product-details-gtm-helper.js</a>
 
 .. |OroGoogleTagManagerBundle| raw:: html
 
@@ -5910,43 +5902,43 @@ Links (Dev)
 
 .. |PayPalExpressTransport| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalExpressTransport.php" target="_blank">PayPalExpressTransport</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Transport/PayPalExpressTransport.php" target="_blank">PayPalExpressTransport</a>
 
 .. |PayPalClient| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalClient.php" target="_blank">PayPalClient</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Transport/PayPalClient.php" target="_blank">PayPalClient</a>
 
 .. |PayPalSDKObjectTranslator| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalSDKObjectTranslator.php" target="_blank">PayPalSDKObjectTranslator</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Transport/PayPalSDKObjectTranslator.php" target="_blank">PayPalSDKObjectTranslator</a>
 
 .. |PaymentActionRegistry| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionRegistry.php" target="_blank">PaymentActionRegistry</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Method/PaymentAction/PaymentActionRegistry.php" target="_blank">PaymentActionRegistry</a>
 
 .. |CompletePaymentActionRegistry| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/CompletePaymentActionRegistry.php" target="_blank">CompletePaymentActionRegistry</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Method/PaymentAction/Complete/CompletePaymentActionRegistry.php" target="_blank">CompletePaymentActionRegistry</a>
 
 .. |PaymentActionExecutor| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionExecutor.php" target="_blank">PaymentActionExecutor</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Method/PaymentAction/PaymentActionExecutor.php" target="_blank">PaymentActionExecutor</a>
 
 .. |CompleteVirtualAction| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/CompleteVirtualAction.php" target="_blank">CompleteVirtualAction</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Method/PaymentAction/CompleteVirtualAction.php" target="_blank">CompleteVirtualAction</a>
 
 .. |PaymentActionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionInterface.php" target="_blank">PaymentActionInterface</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Method/PaymentAction/PaymentActionInterface.php" target="_blank">PaymentActionInterface</a>
 
 .. |AuthorizeAndCaptureAction| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/AuthorizeAndCaptureAction.php" target="_blank">AuthorizeAndCaptureAction</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Method/PaymentAction/Complete/AuthorizeAndCaptureAction.php" target="_blank">AuthorizeAndCaptureAction</a>
 
 .. |AuthorizeOnCompleteAction| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/AuthorizeOnCompleteAction.php" target="_blank">AuthorizeOnCompleteAction</a>
+   <a href="https://github.com/oroinc/paypal-express/blob/4.2/Method/PaymentAction/Complete/AuthorizeOnCompleteAction.php" target="_blank">AuthorizeOnCompleteAction</a>
 
 .. |REST API Samples| raw:: html
 
@@ -5962,13 +5954,13 @@ Links (Dev)
 
 .. |ActivityContactMigrationQuery| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Migration/ActivityContactMigrationQuery.php" target="_blank">ActivityContactMigrationQuery</a>
+   <a href="https://github.com/oroinc/crm/tree/4.2/src/Oro/Bundle/ActivityContactBundle/Migration/ActivityContactMigrationQuery.php" target="_blank">ActivityContactMigrationQuery</a>
 
 .. |oro:activity-contact:recalculate| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Command/ActivityContactRecalculateCommand.php" target="_blank">oro:activity-contact:recalculate</a>
+   <a href="https://github.com/oroinc/crm/tree/4.2/src/Oro/Bundle/ActivityContactBundle/Command/ActivityContactRecalculateCommand.php" target="_blank">oro:activity-contact:recalculate</a>
 
 .. |DirectionProviderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
+   <a href="https://github.com/oroinc/crm/tree/4.2/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
 
