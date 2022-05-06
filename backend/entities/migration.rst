@@ -238,11 +238,11 @@ Here is a list of available extensions:
 
 * |PaymentTermExtension| - Adds payment term association to the entity.
 
-* |SlugExtension| - Adds slugs to the entity. More information is available in the |RedirectBundle documentation|.
+* |SlugExtension| - Adds slugs to the entity. More information is available in the :ref:`RedirectBundle documentation <bundle-docs-commerce-redireect-bundle-migration-extension>`.
 
 **CRM**
 
-* |CustomerExtension| - Adds association between the target customer table and the customer table. More information is available in the |Migration Extension documentation|.
+* |CustomerExtension| - Adds association between the target customer table and the customer table. More information is available in the :ref:`Migration Extension documentation <bundle-docs-crm-sales-bundle-migration-extension>`.
 
 **Platform**
 

@@ -253,7 +253,7 @@ Links (Dev)
 
 .. |PHP CS Fixer settings| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/build/.php_cs" target="_blank">PHP CS Fixer settings</a>
+   <a href="https://github.com/oroinc/platform/blob/master/build/.php-cs-fixer.php" target="_blank">PHP CS Fixer settings</a>
 
 .. |Github guide on forking a repo| raw:: html
 
@@ -2195,7 +2195,7 @@ Links (Dev)
 
 .. |.eslintrc.yml| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/build/.eslintrc.yml" target="_blank">.eslintrc.yml</a>
+   <a href="https://github.com/oroinc/platform-application/blob/master/.eslintrc.yml" target="_blank">.eslintrc.yml</a>
 
 .. |StyleLint| raw:: html
 
@@ -2203,11 +2203,11 @@ Links (Dev)
 
 .. |.stylelintrc.yml| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/.stylelintrc.yml" target="_blank">.stylelintrc.yml</a>
+   <a href="https://github.com/oroinc/platform-application/blob/master/.stylelintrc.yml" target="_blank">.stylelintrc.yml</a>
 
 .. |.stylelintignore| raw:: html
 
-  <a href="https://github.com/oroinc/platform/blob/master/build/.stylelintignore" target="_blank">.stylelintignore</a>
+  <a href="https://github.com/oroinc/platform-application/blob/master/.stylelintignore" target="_blank">.stylelintignore</a>
 
 .. |PHP Coding Standard Fixer| raw:: html
 
@@ -5402,17 +5402,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RedirectBundle/Migration/Extension/SlugExtension.php" target="_blank">SlugExtension</a>
 
-.. |RedirectBundle documentation| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/RedirectBundle#migration-extension" target="_blank">RedirectBundle documentation</a>
-
 .. |CustomerExtension| raw:: html
 
    <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/SalesBundle/Migration/Extension/CustomerExtension.php" target="_blank">CustomerExtension</a>
-
-.. |Migration Extension documentation| raw:: html
-
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/SalesBundle/Resources/doc/reference/customer.md#migration-extension" target="_blank">Migration Extension documentation</a>
 
 .. |ActivityExtension| raw:: html
 
