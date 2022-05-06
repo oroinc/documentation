@@ -21,15 +21,15 @@ Links (Dev)
 
 .. |ContactBundle| raw:: html
 
-   <a href="https://github.com/oroinc/crm/tree/master/src/Oro/Bundle/ContactBundle" target="_blank">ContactBundle</a>
+   <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ContactBundle" target="_blank">ContactBundle</a>
 
 .. |ImportExport namespace| raw:: html
 
-   <a href="https://github.com/oroinc/crm/tree/master/src/Oro/Bundle/ContactBundle/ImportExport" target="_blank">ImportExport namespace</a>
+   <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ContactBundle/ImportExport" target="_blank">ImportExport namespace</a>
 
 .. |Resources/config/importexport.yml| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml" target="_blank">Resources/config/importexport.yml</a>
+   <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml" target="_blank">Resources/config/importexport.yml</a>
 
 .. |Symfony Serializer component| raw:: html
 
@@ -45,7 +45,7 @@ Links (Dev)
 
 .. |ContactAddOrReplaceStrategy| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ContactBundle/ImportExport/Strategy/ContactAddOrReplaceStrategy.php" target="_blank">ContactAddOrReplaceStrategy</a>
+   <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ContactBundle/ImportExport/Strategy/ContactAddOrReplaceStrategy.php" target="_blank">ContactAddOrReplaceStrategy</a>
 
 .. |OroIntegrationBundle| raw:: html
 
@@ -253,7 +253,7 @@ Links (Dev)
 
 .. |PHP CS Fixer settings| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/build/.php_cs" target="_blank">PHP CS Fixer settings</a>
+   <a href="https://github.com/oroinc/platform/blob/5.0/build/.php-cs-fixer.php" target="_blank">PHP CS Fixer settings</a>
 
 .. |Github guide on forking a repo| raw:: html
 
@@ -1756,7 +1756,7 @@ Links (Dev)
 
 .. |SetWebsite| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/WebsiteBundle/Api/Processor/SetWebsite.php" target="_blank">SetWebsite</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/WebsiteBundle/Api/Processor/SetWebsite.php" target="_blank">SetWebsite</a>
 
 .. |SetCurrency| raw:: html
 
@@ -1764,31 +1764,31 @@ Links (Dev)
 
 .. |SetCustomer| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Api/Processor/SetCustomer.php" target="_blank">SetCustomer</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/CustomerBundle/Api/Processor/SetCustomer.php" target="_blank">SetCustomer</a>
 
 .. |SetCustomerUser| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Api/Processor/SetCustomerUser.php" target="_blank">SetCustomerUser</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/CustomerBundle/Api/Processor/SetCustomerUser.php" target="_blank">SetCustomerUser</a>
 
 .. |ResourceTypeResolverInterface| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Api/ResourceTypeResolverInterface.php" target="_blank">ResourceTypeResolverInterface</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/FrontendBundle/Api/ResourceTypeResolverInterface.php" target="_blank">ResourceTypeResolverInterface</a>
 
 .. |ResourceApiUrlResolverInterface| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Api/ResourceApiUrlResolverInterface.php" target="_blank">ResourceApiUrlResolverInterface</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/FrontendBundle/Api/ResourceApiUrlResolverInterface.php" target="_blank">ResourceApiUrlResolverInterface</a>
 
 .. |ResourceTypeResolver| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Api/ResourceTypeResolver.php" target="_blank">ResourceTypeResolver</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/FrontendBundle/Api/ResourceTypeResolver.php" target="_blank">ResourceTypeResolver</a>
 
 .. |ResourceRestApiGetActionUrlResolver| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Api/ResourceRestApiGetActionUrlResolver.php" target="_blank">ResourceRestApiGetActionUrlResolver</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/FrontendBundle/Api/ResourceRestApiGetActionUrlResolver.php" target="_blank">ResourceRestApiGetActionUrlResolver</a>
 
 .. |ResourceRestApiGetListActionUrlResolver| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Api/ResourceRestApiGetListActionUrlResolver.php" target="_blank">ResourceRestApiGetListActionUrlResolver</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/FrontendBundle/Api/ResourceRestApiGetListActionUrlResolver.php" target="_blank">ResourceRestApiGetListActionUrlResolver</a>
 
 
 .. Frontend
@@ -2143,7 +2143,7 @@ Links (Dev)
 
 .. |composer.json| raw:: html
 
-   <a href="https://github.com/oroinc/crm-application/blob/master/composer.json" target="_blank">composer.json</a>
+   <a href="https://github.com/oroinc/crm-application/blob/5.0/composer.json" target="_blank">composer.json</a>
 
 .. |composer documentation| raw:: html
 
@@ -2195,7 +2195,7 @@ Links (Dev)
 
 .. |.eslintrc.yml| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/build/.eslintrc.yml" target="_blank">.eslintrc.yml</a>
+   <a href="https://github.com/oroinc/platform-application/blob/5.0/.eslintrc.yml" target="_blank">.eslintrc.yml</a>
 
 .. |StyleLint| raw:: html
 
@@ -2203,11 +2203,11 @@ Links (Dev)
 
 .. |.stylelintrc.yml| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/.stylelintrc.yml" target="_blank">.stylelintrc.yml</a>
+   <a href="https://github.com/oroinc/platform-application/blob/5.0/.stylelintrc.yml" target="_blank">.stylelintrc.yml</a>
 
 .. |.stylelintignore| raw:: html
 
-  <a href="https://github.com/oroinc/platform/blob/master/build/.stylelintignore" target="_blank">.stylelintignore</a>
+  <a href="https://github.com/oroinc/platform-application/blob/5.0/.stylelintignore" target="_blank">.stylelintignore</a>
 
 .. |PHP Coding Standard Fixer| raw:: html
 
@@ -2251,11 +2251,11 @@ Links (Dev)
 
 .. |in the phpcs.xml file| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/build/Oro/phpcs.xml" target="_blank">in the phpcs.xml file</a>
+   <a href="https://github.com/oroinc/platform/blob/5.0/build/Oro/phpcs.xml" target="_blank">in the phpcs.xml file</a>
 
 .. |in the phpmd.xml file| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/build/phpmd.xml" target="_blank">in the phpmd.xml file</a>
+   <a href="https://github.com/oroinc/platform/blob/5.0/build/phpmd.xml" target="_blank">in the phpmd.xml file</a>
 
 .. |line break separator| raw:: html
 
@@ -2419,7 +2419,7 @@ Links (Dev)
 
 .. |standard Oro configuration| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/build" target="_blank">standard Oro configuration</a>
+   <a href="https://github.com/oroinc/platform/tree/5.0/build" target="_blank">standard Oro configuration</a>
 
 .. |integration with PHP Code Sniffer| raw:: html
 
@@ -2543,7 +2543,7 @@ Links (Dev)
 
 .. |ReportBundle| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ReportCRMBundle/Resources/config/oro/datagrids.yml" target="_blank">ReportBundle</a>
+   <a href="https://github.com/oroinc/crm/blob/5.0/src/Oro/Bundle/ReportCRMBundle/Resources/config/oro/datagrids.yml" target="_blank">ReportBundle</a>
 
 .. |4.2 branch| raw:: html
 
@@ -4147,7 +4147,7 @@ Links (Dev)
 
 .. |default theme| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/FrontendBundle/Resources/views/layouts/default" target="_blank">default theme</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/FrontendBundle/Resources/views/layouts/default" target="_blank">default theme</a>
 
 .. |Context::getHash| raw:: html
 
@@ -4448,51 +4448,51 @@ Links (Dev)
 
 .. |OroBundleCustomerBundleSecurityTokenAnonymousCustomerUserToken| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Token/AnonymousCustomerUserToken.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Token\AnonymousCustomerUserToken</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/CustomerBundle/Security/Token/AnonymousCustomerUserToken.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Token\AnonymousCustomerUserToken</a>
 
 .. |OroBundleCustomerBundleEntityCustomerVisitor| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitor.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitor</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitor.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitor</a>
 
 .. |OroBundleCustomerBundleSecurityFirewallAnonymousCustomerUserAuthenticationListener| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Firewall/AnonymousCustomerUserAuthenticationListener.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Firewall\AnonymousCustomerUserAuthenticationListener</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/CustomerBundle/Security/Firewall/AnonymousCustomerUserAuthenticationListener.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Firewall\AnonymousCustomerUserAuthenticationListener</a>
 
 .. |OroBundleCustomerBundleSecurityAnonymousCustomerUserAuthenticationProvider| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/AnonymousCustomerUserAuthenticationProvider.php" target="_blank">Oro\Bundle\CustomerBundle\Security\AnonymousCustomerUserAuthenticationProvider</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/CustomerBundle/Security/AnonymousCustomerUserAuthenticationProvider.php" target="_blank">Oro\Bundle\CustomerBundle\Security\AnonymousCustomerUserAuthenticationProvider</a>
 
 .. |OroBundleCustomerBundleSecurityListenerCustomerVisitorCookieResponseListener| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Listener/CustomerVisitorCookieResponseListener.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Listener\CustomerVisitorCookieResponseListener</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/CustomerBundle/Security/Listener/CustomerVisitorCookieResponseListener.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Listener\CustomerVisitorCookieResponseListener</a>
 
 .. |OroBundleCustomerBundleEntityCustomerVisitorManager| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitorManager.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitorManager</a>
+   <a href="https://github.com/oroinc/customer-portal/blob/5.0/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitorManager.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitorManager</a>
 
 .. |OroBundleCustomerBundleDependencyInjectionSecurityAnonymousCustomerUserFactory| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/DependencyInjection/Security/AnonymousCustomerUserFactory.php" target="_blank">Oro\Bundle\CustomerBundle\DependencyInjection\Security\AnonymousCustomerUserFactory</a>
+   <a href="https://github.com/oroinc/customer-portal/blob/5.0/src/Oro/Bundle/CustomerBundle/DependencyInjection/Security/AnonymousCustomerUserFactory.php" target="_blank">Oro\Bundle\CustomerBundle\DependencyInjection\Security\AnonymousCustomerUserFactory</a>
 
 .. |listener| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Firewall/AnonymousCustomerUserAuthenticationListener.php" target="_blank">listener</a>
+   <a href="https://github.com/oroinc/customer-portal/blob/5.0/src/Oro/Bundle/CustomerBundle/Security/Firewall/AnonymousCustomerUserAuthenticationListener.php" target="_blank">listener</a>
 
 .. |provider| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/AnonymousCustomerUserAuthenticationProvider.php" target="_blank">provider</a>
+   <a href="https://github.com/oroinc/customer-portal/blob/5.0/src/Oro/Bundle/CustomerBundle/Security/AnonymousCustomerUserAuthenticationProvider.php" target="_blank">provider</a>
 
 .. |OroBundleCustomerBundleEntityCustomerVisitorOwnerAwareInterface| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitorOwnerAwareInterface.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitorOwnerAwareInterface</a>
+   <a href="https://github.com/oroinc/customer-portal/blob/5.0/src/Oro/Bundle/CustomerBundle/Entity/CustomerVisitorOwnerAwareInterface.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\CustomerVisitorOwnerAwareInterface</a>
 
 .. |OroBundleCustomerBundleOwnerAnonymousOwnershipDecisionMaker| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Owner/AnonymousOwnershipDecisionMaker.php" target="_blank">Oro\Bundle\CustomerBundle\Owner\AnonymousOwnershipDecisionMaker</a>
+   <a href="https://github.com/oroinc/customer-portal/blob/5.0/src/Oro/Bundle/CustomerBundle/Owner/AnonymousOwnershipDecisionMaker.php" target="_blank">Oro\Bundle\CustomerBundle\Owner\AnonymousOwnershipDecisionMaker</a>
 
 .. |OroBundleCustomerBundleEntityGuestCustomerUserManager| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/GuestCustomerUserManager.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\GuestCustomerUserManager</a>
+   <a href="https://github.com/oroinc/customer-portal/blob/5.0/src/Oro/Bundle/CustomerBundle/Entity/GuestCustomerUserManager.php" target="_blank">Oro\Bundle\CustomerBundle\Entity\GuestCustomerUserManager</a>
 
 .. |official Gaufrette documentation| raw:: html
 
@@ -4992,7 +4992,7 @@ Links (Dev)
 
 .. |CC-BY-NC-SA 4.0| raw:: html
 
-   <a href="https://github.com/oroinc/documentation/blob/master/LICENSE" target="_blank">CC-BY-NC-SA 4.0</a>
+   <a href="https://github.com/oroinc/documentation/blob/5.0/LICENSE" target="_blank">CC-BY-NC-SA 4.0</a>
 
 .. |pip| raw:: html
 
@@ -5312,7 +5312,7 @@ Links (Dev)
 
 .. |SerializedFieldsExtension| raw:: html
 
-   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/master/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>
+   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle/blob/5.0/Migration/Extension/SerializedFieldsExtension.php" target="_blank">SerializedFieldsExtension</a>
 
 .. |PHP manual| raw:: html
 
@@ -5398,17 +5398,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/orocommerce/blob/5.0/src/Oro/Bundle/RedirectBundle/Migration/Extension/SlugExtension.php" target="_blank">SlugExtension</a>
 
-.. |RedirectBundle documentation| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/RedirectBundle#migration-extension" target="_blank">RedirectBundle documentation</a>
-
 .. |CustomerExtension| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/SalesBundle/Migration/Extension/CustomerExtension.php" target="_blank">CustomerExtension</a>
-
-.. |Migration Extension documentation| raw:: html
-
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/SalesBundle/Resources/doc/reference/customer.md#migration-extension" target="_blank">Migration Extension documentation</a>
+   <a href="https://github.com/oroinc/crm/blob/5.0/src/Oro/Bundle/SalesBundle/Migration/Extension/CustomerExtension.php" target="_blank">CustomerExtension</a>
 
 .. |ActivityExtension| raw:: html
 
@@ -5828,31 +5820,31 @@ Links (Dev)
 
 .. |Contact entity| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ContactBundle/Entity/Contact.php" target="_blank">Contact entity</a>
+   <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ContactBundle/Entity/Contact.php" target="_blank">Contact entity</a>
 
 .. |Lead entity| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/SalesBundle/Entity/Lead.php" target="_blank">Lead entity</a>
+   <a href="https://github.com/oroinc/crm/blob/5.0/src/Oro/Bundle/SalesBundle/Entity/Lead.php" target="_blank">Lead entity</a>
 
 .. |Customer User entity| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Entity/CustomerUser.php" target="_blank">Customer User entity</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.0/src/Oro/Bundle/CustomerBundle/Entity/CustomerUser.php" target="_blank">Customer User entity</a>
 
 .. |RFP Request entity| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/RFPBundle/Entity/Request.php" target="_blank">RFP Request entity</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/5.0/src/Oro/Bundle/RFPBundle/Entity/Request.php" target="_blank">RFP Request entity</a>
 
 .. |User entity| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UserBundle/Entity/User.php" target="_blank">User entity</a>
+   <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/UserBundle/Entity/User.php" target="_blank">User entity</a>
 
 .. |Mailbox entity| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Entity/Mailbox.php" target="_blank">Mailbox entity</a>
+   <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/EmailBundle/Entity/Mailbox.php" target="_blank">Mailbox entity</a>
 
 .. |integration| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle" target="_blank">integration</a>
+   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/IntegrationBundle" target="_blank">integration</a>
 
 .. |Dotdigital| raw:: html
 
@@ -5872,11 +5864,11 @@ Links (Dev)
 
 .. |payment method| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/PaymentBundle" target="_blank">payment method</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/5.0/src/Oro/Bundle/PaymentBundle" target="_blank">payment method</a>
 
 .. |at the checkout| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/CheckoutBundle" target="_blank">at the checkout</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/5.0/src/Oro/Bundle/CheckoutBundle" target="_blank">at the checkout</a>
 
 .. |Apruve| raw:: html
 
@@ -5912,11 +5904,11 @@ Links (Dev)
 
 .. |shipping methods| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ShippingBundle" target="_blank">shipping methods</a>
+   <a href="https://github.com/oroinc/orocommerce/tree/5.0/src/Oro/Bundle/ShippingBundle" target="_blank">shipping methods</a>
 
 .. |operation button| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle" target="_blank">operation button</a>
+   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/ActionBundle" target="_blank">operation button</a>
 
 .. |OroDPDBundle| raw:: html
 
@@ -5936,11 +5928,11 @@ Links (Dev)
 
 .. |products-embedded-list-gtm-component.js| raw:: html
 
-   <a href="https://github.com/oroinc/google-tag-manager/blob/master/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/components/products-embedded-list-gtm-component.js" target="_blank">products-embedded-list-gtm-component.js</a>
+   <a href="https://github.com/oroinc/google-tag-manager/tree/5.0/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/components/products-embedded-list-gtm-component.js" target="_blank">products-embedded-list-gtm-component.js</a>
 
 .. |product-details-gtm-helper.js| raw:: html
 
-   <a href="https://github.com/oroinc/google-tag-manager/blob/master/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/product-details-gtm-helper.js" target="_blank">product-details-gtm-helper.js</a>
+   <a href="https://github.com/oroinc/google-tag-manager/tree/5.0/src/Oro/Bundle/GoogleTagManagerBundle/Resources/public/js/app/product-details-gtm-helper.js" target="_blank">product-details-gtm-helper.js</a>
 
 .. |OroGoogleTagManagerBundle| raw:: html
 
@@ -5960,43 +5952,43 @@ Links (Dev)
 
 .. |PayPalExpressTransport| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalExpressTransport.php" target="_blank">PayPalExpressTransport</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Transport/PayPalExpressTransport.php" target="_blank">PayPalExpressTransport</a>
 
 .. |PayPalClient| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalClient.php" target="_blank">PayPalClient</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Transport/PayPalClient.php" target="_blank">PayPalClient</a>
 
 .. |PayPalSDKObjectTranslator| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Transport/PayPalSDKObjectTranslator.php" target="_blank">PayPalSDKObjectTranslator</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Transport/PayPalSDKObjectTranslator.php" target="_blank">PayPalSDKObjectTranslator</a>
 
 .. |PaymentActionRegistry| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionRegistry.php" target="_blank">PaymentActionRegistry</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Method/PaymentAction/PaymentActionRegistry.php" target="_blank">PaymentActionRegistry</a>
 
 .. |CompletePaymentActionRegistry| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/CompletePaymentActionRegistry.php" target="_blank">CompletePaymentActionRegistry</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Method/PaymentAction/Complete/CompletePaymentActionRegistry.php" target="_blank">CompletePaymentActionRegistry</a>
 
 .. |PaymentActionExecutor| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionExecutor.php" target="_blank">PaymentActionExecutor</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Method/PaymentAction/PaymentActionExecutor.php" target="_blank">PaymentActionExecutor</a>
 
 .. |CompleteVirtualAction| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/CompleteVirtualAction.php" target="_blank">CompleteVirtualAction</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Method/PaymentAction/CompleteVirtualAction.php" target="_blank">CompleteVirtualAction</a>
 
 .. |PaymentActionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/PaymentActionInterface.php" target="_blank">PaymentActionInterface</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Method/PaymentAction/PaymentActionInterface.php" target="_blank">PaymentActionInterface</a>
 
 .. |AuthorizeAndCaptureAction| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/AuthorizeAndCaptureAction.php" target="_blank">AuthorizeAndCaptureAction</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Method/PaymentAction/Complete/AuthorizeAndCaptureAction.php" target="_blank">AuthorizeAndCaptureAction</a>
 
 .. |AuthorizeOnCompleteAction| raw:: html
 
-   <a href="https://github.com/oroinc/paypal-express/blob/master/Method/PaymentAction/Complete/AuthorizeOnCompleteAction.php" target="_blank">AuthorizeOnCompleteAction</a>
+   <a href="https://github.com/oroinc/paypal-express/tree/5.0/Method/PaymentAction/Complete/AuthorizeOnCompleteAction.php" target="_blank">AuthorizeOnCompleteAction</a>
 
 .. |REST API Samples| raw:: html
 
@@ -6012,13 +6004,13 @@ Links (Dev)
 
 .. |ActivityContactMigrationQuery| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Migration/ActivityContactMigrationQuery.php" target="_blank">ActivityContactMigrationQuery</a>
+   <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ActivityContactBundle/Migration/ActivityContactMigrationQuery.php" target="_blank">ActivityContactMigrationQuery</a>
 
 .. |oro:activity-contact:recalculate| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Command/ActivityContactRecalculateCommand.php" target="_blank">oro:activity-contact:recalculate</a>
+   <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ActivityContactBundle/Command/ActivityContactRecalculateCommand.php" target="_blank">oro:activity-contact:recalculate</a>
 
 .. |DirectionProviderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
+   <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
 

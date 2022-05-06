@@ -21,6 +21,8 @@ This option enables you to configure this relation and display a particular form
 You can define the icon image, choose a grid and create a form route data.
 Customer information will be displayed on the opportunity, lead view, and entity edit pages.
 
+.. _bundle-docs-crm-sales-bundle-migration-extension:
+
 Migration Extension
 ~~~~~~~~~~~~~~~~~~~
 
