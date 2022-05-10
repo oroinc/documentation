@@ -5814,6 +5814,10 @@ Links (Dev)
 
    <a href="https://mailcatcher.me/" target="_blank">Mailcatcher</a>
 
+.. |official Microsoft WSL documentation| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank">official Microsoft WSL documentation</a>
+
 .. |decorate service| raw:: html
 
    <a href="https://symfony.com/doc/5.4/service_container/service_decoration.html" target="_blank">decorate service</a>
@@ -6017,4 +6021,5 @@ Links (Dev)
 .. |DirectionProviderInterface| raw:: html
 
    <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
+
 
