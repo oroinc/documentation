@@ -32,7 +32,7 @@ Prepare Development Tools
 
 #. |Install PHPStorm| as the recommended IDE.
 
-    .. note:: Although PHPStorm is recommended, it is not the required IDE for Oro application development. If you use a different IDE, skip the PHPStorm configuration steps below.
+   .. note:: Although PHPStorm is recommended, it is not the required IDE for Oro application development. If you use a different IDE, skip the PHPStorm configuration steps below.
 
 #. Configure PHPStorm:
 

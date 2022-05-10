@@ -39,48 +39,50 @@ Set Up the Environment
 
 To avoid reaching composer API rate limit and to work with enterprise applications, configure |GitHub OAuth token|:
 
-   .. code-block:: none
+.. code-block:: none
 
-      composer config -g github-oauth.github.com <oauthtoken>
+   composer config -g github-oauth.github.com <oauthtoken>
 
 .. _setup-dev-env-docker-symfony-install-application:
 
 Install the Application
 -----------------------
 
-1. :ref:`Get the Oro application source code <installation--get-files>` and go to the application folder.
+1. :ref:`Get the Oro application source code <installation--get-files>` .
 
-2. Run application services
+2. Run application services in the folder with your application:
 
-   .. code-block:: none
+.. code-block:: none
 
-      docker-compose up -d
+   docker-compose up -d
 
-   .. note::
-        On Linux, it may not work if you use Docker as a root user. In this case, consider adding your user to the “docker” group with:
+.. note::
+    On Linux, it may not work if you use Docker as a root user. In this case, consider adding your user to the “docker” group with:
 
-      .. code-block:: none
+.. code-block:: none
 
-         sudo usermod -aG docker your-user
+   sudo usermod -aG docker your-user
 
-3. Install application dependencies
+3. Install application dependencies:
 
-   .. code-block:: none
+.. code-block:: none
 
-      composer install -n
+   composer install -n
 
+4. If you are using an Enterprise edition application, update the parameters.yml file. Skip this step if you are installing a Community edition application.
 
-4. If you are using an Enterprise edition application, update the parameters.yml file.
+.. code-block:: none
 
-   .. code-block:: none
+   composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
 
-      composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
+5. Install Oro application. This may take up to several minutes:
 
-5. Install Oro application
+.. code-block:: none
 
-   .. code-block:: none
+   symfony console oro:install -vvv --sample-data=y --application-url=https://127.0.0.1:8000 --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --organization-name=Oro --timeout=0 --symlink --env=prod -n
 
-      symfony console oro:install -vvv --sample-data=y --application-url=https://127.0.0.1:8000 --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --organization-name=Oro --timeout=0 --symlink --env=prod -n
+.. image:: /img/backend/setup/wsl/app-installation-in-progress.png
+   :alt: Oro application installation in progress
 
 .. _setup-dev-env-docker-symfony-services:
 
@@ -150,7 +152,9 @@ You can also ask symfony to restart the message consumer when changes happen in 
 
    symfony run -d --watch=src php bin/console oro:message-queue:consume -vv
 
-Check Symfony Server status
+.. note:: You can kill Symfony server processes with command ``killall <PID>``, you can get PID  from the ``symfony server:status`` output.
+
+Check Symfony Server Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: none
