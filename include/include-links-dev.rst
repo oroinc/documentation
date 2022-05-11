@@ -5764,6 +5764,18 @@ Links (Dev)
 
    <a href="https://mailcatcher.me/" target="_blank">Mailcatcher</a>
 
+.. |official Microsoft WSL documentation| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank">official Microsoft WSL documentation</a>
+
+.. |decorate service| raw:: html
+
+   <a href="https://symfony.com/doc/5.4/service_container/service_decoration.html" target="_blank">decorate service</a>
+
+.. |form type extension| raw:: html
+
+   <a href="https://symfony.com/doc/5.4/form/create_form_type_extension.html" target="_blank">form type extension</a>
+
 .. |Contact entity| raw:: html
 
    <a href="https://github.com/oroinc/crm/blob/4.2/src/Oro/Bundle/ContactBundle/Entity/Contact.php" target="_blank">Contact entity</a>
@@ -5787,10 +5799,6 @@ Links (Dev)
 .. |Mailbox entity| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Bundle/EmailBundle/Entity/Mailbox.php" target="_blank">Mailbox entity</a>
-
-.. |decorate service| raw:: html
-
-   <a href="https://symfony.com/doc/4.4/service_container/service_decoration.html" target="_blank">decorate service</a>
 
 .. |integration| raw:: html
 
@@ -5963,4 +5971,5 @@ Links (Dev)
 .. |DirectionProviderInterface| raw:: html
 
    <a href="https://github.com/oroinc/crm/tree/4.2/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
+
 
