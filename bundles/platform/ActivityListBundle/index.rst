@@ -140,6 +140,8 @@ If you select more than one activity type in the filter, you can filter based on
 .. image:: /img/bundles/ActivityListBundle/activity-in-segment-filters.png
    :alt: Activity widget in segment's filters
 
+.. _bundle-docs-platform-activity-list-bundle-inheritance:
+
 Add Inheritance of Activity Lists to the Target Entity
 ------------------------------------------------------
 

@@ -7,8 +7,7 @@ Passing Security Context from Producer to Consumer
 --------------------------------------------------
 
 By default, if the code that sent a message to the message queue works in some security context, or in other words,
-a |security token|
-exists in the |token storage|, the security token is serialized and added to the message. When the consumer processes this message, the security token
+a security token exists in the token storage, the security token is serialized and added to the message. When the consumer processes this message, the security token
 is extracted from the message and is added to the token storage on the consumer side.
 
 Sometimes, however, this behavior need to be changed for certain types of messages.
@@ -20,7 +19,7 @@ Adding Custom Security Token to Message
 
 If you need to process a message in the security context that is different to the producer's security context,
 you can add a security token to the message manually. The added token can be an instance of a class that implements the
-|TokenInterface|. A string represents the already serialized token or *null* if the message is processed without a security context. To add the security token, the `oro.security.token` property should be used.
+TokenInterface. A string represents the already serialized token or *null* if the message is processed without a security context. To add the security token, the `oro.security.token` property should be used.
 
 For instance:
 
