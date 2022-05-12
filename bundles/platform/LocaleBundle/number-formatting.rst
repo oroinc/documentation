@@ -1,3 +1,5 @@
+:oro_local_toc_max_depth: 3
+
 .. _bundle-docs-platform-locale-bundle-number-formatting:
 
 Number Formatting

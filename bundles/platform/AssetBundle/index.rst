@@ -250,8 +250,7 @@ By default, dev-server will be served over HTTP. It can optionally be served ove
 Troubleshooting
 ---------------
 
-Error: Node Sass does not yet support your current environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Error: Node Sass does not yet support your current environment**
 
 After the update of NodeJs you might experience an error because node modules were built on the old NodeJs version that is not compatible with the new one.
 
@@ -264,8 +263,7 @@ To fix the error, remove the existing node modules and re-build the assets:
     php bin/console cache:clear
     php bin/console oro:assets:build
 
-JS engine not found
-^^^^^^^^^^^^^^^^^^^
+**JS engine not found**
 
 Appears when configuration in the cache is broken.
 
@@ -277,13 +275,11 @@ To fix the error, remove an application cache and warm it up:
     rm -rf var/cache/*
     php bin/console cache:warmup
 
-Error: "output" for "assets" group in theme "oro" is not defined
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Error: "output" for "assets" group in theme "oro" is not defined**
 
 Please follow |AssetBundle upgrade documentation| to update `assets.yml` files according to new requirements.
 
-Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID**
 
 This happens because by default webpack-dev-server uses a self-signed SSL certificate.
 
@@ -291,8 +287,7 @@ To fix an error we recommend to :ref:`provide your own SSL certificate <enable-h
 
 Alternatively, you can open a stylesheet link in a new tab of a Browser, click "Show Advanced" and "Proceed to localhost (unsafe)". This loads the webpack-dev-server asset with a self-signed certificate.
 
-Error: listen EADDRINUSE: address already in use 127.0.0.1:8081
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Error: listen EADDRINUSE: address already in use 127.0.0.1:8081**
 
 There are two cases when the error can appear:
 
@@ -300,8 +295,7 @@ There are two cases when the error can appear:
 2. The port is busy with a different process. To fix, change the :ref:`port configuration in config/config.yml <port>`.
 
 
-ERROR in Entry module not found: Error: Can't resolve './src'
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**ERROR in Entry module not found: Error: Can't resolve './src'**
 
 Make sure the ``webpack.config.js`` file exists in the project root, and the command has permissions to read it.
 
