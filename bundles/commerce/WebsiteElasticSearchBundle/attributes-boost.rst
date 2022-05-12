@@ -3,7 +3,7 @@
 Attributes Boost
 ================
 
-.. note:: This feature is only available in the Enterprise edition and if Elastic search is used as the search engine.
+.. note:: This feature is only available in the Enterprise edition and if Elasticsearch is used as the search engine.
 
 Attribute boosting enables you to influence the relevancy ranking of the search results by the value of the attributes.
 

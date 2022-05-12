@@ -1,3 +1,5 @@
+:oro_local_toc_max_depth: 3
+
 .. _bundle-docs-extensions-paypalexpress:
 
 OroPayPalExpressBundle
