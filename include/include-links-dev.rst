@@ -257,7 +257,7 @@ Links (Dev)
 
 .. |Github guide on forking a repo| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">Github guide on forking a repo</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">Github guide on forking a repo</a>
 
 .. |make a package| raw:: html
 
@@ -265,7 +265,7 @@ Links (Dev)
 
 .. |Keep your fork synced| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/#keep-your-fork-synced" target="_blank">Keep your fork synced</a>
+   <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork" target="_blank">Keep your fork synced</a>
 
 .. |Vagrant| raw:: html
 
@@ -917,11 +917,11 @@ Links (Dev)
 
 .. |SearchQueryFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/ApiBundle/Filter/SearchQueryFilter.php" target="_blank">SearchQueryFilter</a>
+   <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/SearchBundle/Api/Filter/SearchQueryFilter.php" target="_blank">SearchQueryFilter</a>
 
 .. |SearchAggregationFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/ApiBundle/Filter/SearchAggregationFilter.php" target="_blank">SearchQueryFilter</a>
+   <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/SearchBundle/Api/Filter/SearchAggregationFilter.php" target="_blank">SearchQueryFilter</a>
 
 .. |FilterInterface| raw:: html
 
@@ -1239,7 +1239,7 @@ Links (Dev)
 
 .. |fork application repository| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">fork application repository</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">fork application repository</a>
 
 .. |Symfony Best Practices| raw:: html
 
@@ -1372,18 +1372,6 @@ Links (Dev)
 .. |AbstractMessageQueueAssertTrait| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/MessageQueueBundle/Test/Assert/AbstractMessageQueueAssertTrait.php" target="_blank">AbstractMessageQueueAssertTrait</a>
-
-.. |security token| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">security token</a>
-
-.. |token storage| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/Storage/TokenStorageInterface.html" target="_blank">token storage</a>
-
-.. |TokenInterface| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">TokenInterface</a>
 
 .. |ContainerResetExtension| raw:: html
 
@@ -2339,11 +2327,11 @@ Links (Dev)
 
 .. |Fork| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo" target="_blank">Fork</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">Fork</a>
 
 .. |Clone| raw:: html
 
-   <a href="https://help.github.com/articles/cloning-a-repository/" target="_blank">Clone</a>
+   <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" target="_blank">Clone</a>
 
 .. |OroCommerce project| raw:: html
 
@@ -4824,7 +4812,7 @@ Links (Dev)
 
 .. |Elasticsearch per-request configuration documentation| raw:: html
 
-   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/_per_request_configuration.html" target="_blank">Elasticsearch per-request configuration documentation</a>
+   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/5.x/_per_request_configuration.html" target="_blank">Elasticsearch per-request configuration documentation</a>
 
 .. |applicable analyzers| raw:: html
 
@@ -5446,10 +5434,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/MigrationBundle/Migration/Installation.php" target="_blank">Installation</a>
 
-.. |Activity List Inheritance Targets documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/ActivityListBundle/Resources/doc/inheritance.md" target="_blank">Activity List Inheritance Targets documentation</a>
-
 .. |Enable Comment Association with New Activity Entity| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/CommentBundle#how-to-enable-comment-association-with-new-activity-entity-using-migrations" target="_blank">Enable Comment Association with New Activity Entity</a>
@@ -5628,7 +5612,7 @@ Links (Dev)
 
 .. |Entity Listeners| raw:: html
 
-   <a href="https://symfony.com/doc/current/bundles/DoctrineBundle/entity-listeners.html" target="_blank">Entity Listeners</a>
+   <a href="https://symfony.com/bundles/DoctrineBundle/current/entity-listeners.html" target="_blank">Entity Listeners</a>
 
 .. |Lazy loading for Event Listeners| raw:: html
 
