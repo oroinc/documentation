@@ -209,7 +209,7 @@ Here is a list of available extensions:
 
 * ActivityExtension - Adds association between the given table and the table that contains activity records.
 
-* |ActivityListExtension| - Adds association between the given table and the activity list table. See an example of usage in the |Activity List Inheritance Targets documentation|.
+* |ActivityListExtension| - Adds association between the given table and the activity list table. See an example of usage in the :ref:`Activity List Inheritance Targets documentation <bundle-docs-platform-activity-list-bundle-inheritance>`.
 
 * |AttachmentExtension| - Provides an ability to create file and attachment fields and attachment association. More information is available in the :ref:`Use Migration Extension Example in AttachmentBundle <attachment-bundle-migration-extension>`.
 

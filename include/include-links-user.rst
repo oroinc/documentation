@@ -45,23 +45,23 @@ Links (User)
 
 .. |accounts, contacts and customers| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/22091" target="_blank">accounts, contacts and customers</a>
+   <a href="https://academy.oroinc.com/media-library/22091" target="_blank">accounts, contacts and customers</a>
 
 .. |how to create and edit contact records| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0" target="_blank">how to create and edit contact records</a>
+   <a href="https://academy.oroinc.com/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0" target="_blank">how to create and edit contact records</a>
 
 .. |creating and editing| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/22093" target="_blank">creating and editing</a>
+   <a href="https://academy.oroinc.com/media-library/22093" target="_blank">creating and editing</a>
 
 .. |managing| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/22095" target="_blank">managing</a>
+   <a href="https://academy.oroinc.com/media-library/22095" target="_blank">managing</a>
 
 .. |merging account records| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/merge-account-records-2" target="_blank">merging account records</a>
+   <a href="https://academy.oroinc.com/media-library/merge-account-records-2" target="_blank">merging account records</a>
 
 .. |territory| raw:: html
 
@@ -69,15 +69,15 @@ Links (User)
 
 .. |how to add comments| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/add-comments-orocrm" target="_blank">how to add comments</a>
+   <a href="https://academy.oroinc.com/media-library/add-comments-orocrm" target="_blank">how to add comments</a>
 
 .. |how to add attachments in your Oro application| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/add-attachments-orocrm" target="_blank">how to add attachments in your Oro application</a>
+   <a href="https://academy.oroinc.com/media-library/add-attachments-orocrm" target="_blank">how to add attachments in your Oro application</a>
 
 .. |how to add notes| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/add-notes-orocrm" target="_blank">how to add notes</a>
+   <a href="https://academy.oroinc.com/media-library/add-notes-orocrm" target="_blank">how to add notes</a>
 
 .. |how to create and manage emails| raw:: html
 
@@ -85,7 +85,7 @@ Links (User)
 
 .. |OroCommerce Editions| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/full-features-list" target="_blank">OroCommerce Editions</a>
+   <a href="https://oroinc.com/b2b-ecommerce/editions/" target="_blank">OroCommerce Editions</a>
 
 .. |OroCRM Editions| raw:: html
 
@@ -173,7 +173,7 @@ Links (User)
 
 .. |how to create and work with opportunities| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/create-work-opportunity" target="_blank">how to create and work with opportunities</a>
+   <a href="https://academy.oroinc.com/media-library/create-work-opportunity" target="_blank">how to create and work with opportunities</a>
 
 .. |quotes| raw:: html
 
@@ -193,7 +193,7 @@ Links (User)
 
 .. |how to create and work with a lead| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/create-work-lead" target="_blank">how to create and work with a lead</a>
+   <a href="https://academy.oroinc.com/media-library/create-work-lead" target="_blank">how to create and work with a lead</a>
 
 .. |how to manage RFQs in OroCommerce| raw:: html
 
@@ -357,11 +357,11 @@ Links (User)
 
 .. |how to synchronize your mailbox with an Oro application| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/synchronize-mailbox-orocrm" target="_blank">how to synchronize your mailbox with an Oro application</a>
+   <a href="https://academy.oroinc.com/media-library/synchronize-mailbox-orocrm" target="_blank">how to synchronize your mailbox with an Oro application</a>
 
 .. |how to create and configure system mailboxes| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/create-configure-system-mailboxes" target="_blank">how to create and configure system mailboxes</a>
+   <a href="https://academy.oroinc.com/media-library/create-configure-system-mailboxes" target="_blank">how to create and configure system mailboxes</a>
 
 .. |the Twig doc| raw:: html
 
@@ -465,7 +465,7 @@ Links (User)
 
 .. |how to create notification rules| raw:: html
 
-   <a href="https://oroinc.com/orocrm/media-library/create-notification-rules" target="_blank">how to create notification rules</a>
+   <a href="https://academy.oroinc.com/media-library/create-notification-rules" target="_blank">how to create notification rules</a>
 
 .. |how to create a custom field| raw:: html
 

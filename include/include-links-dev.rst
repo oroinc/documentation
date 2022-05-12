@@ -253,7 +253,7 @@ Links (Dev)
 
 .. |Github guide on forking a repo| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">Github guide on forking a repo</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">Github guide on forking a repo</a>
 
 .. |make a package| raw:: html
 
@@ -261,7 +261,7 @@ Links (Dev)
 
 .. |Keep your fork synced| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/#keep-your-fork-synced" target="_blank">Keep your fork synced</a>
+   <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork" target="_blank">Keep your fork synced</a>
 
 .. |Vagrant| raw:: html
 
@@ -1207,7 +1207,7 @@ Links (Dev)
 
 .. |fork application repository| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">fork application repository</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">fork application repository</a>
 
 .. |Symfony Best Practices| raw:: html
 
@@ -1340,18 +1340,6 @@ Links (Dev)
 .. |AbstractMessageQueueAssertTrait| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MessageQueueBundle/Test/Assert/AbstractMessageQueueAssertTrait.php" target="_blank">AbstractMessageQueueAssertTrait</a>
-
-.. |security token| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">security token</a>
-
-.. |token storage| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/Storage/TokenStorageInterface.html" target="_blank">token storage</a>
-
-.. |TokenInterface| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">TokenInterface</a>
 
 .. |ContainerResetExtension| raw:: html
 
@@ -2175,7 +2163,7 @@ Links (Dev)
 
 .. |.stylelintignore| raw:: html
 
-  <a href="https://github.com/oroinc/platform-application/tree/4.2/build/.stylelintignore" target="_blank">.stylelintignore</a>
+  <a href="https://github.com/oroinc/platform-application/blob/4.2/.stylelintignore" target="_blank">.stylelintignore</a>
 
 .. |PHP Coding Standard Fixer| raw:: html
 
@@ -2307,11 +2295,11 @@ Links (Dev)
 
 .. |Fork| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo" target="_blank">Fork</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">Fork</a>
 
 .. |Clone| raw:: html
 
-   <a href="https://help.github.com/articles/cloning-a-repository/" target="_blank">Clone</a>
+   <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" target="_blank">Clone</a>
 
 .. |OroCommerce project| raw:: html
 
@@ -4705,15 +4693,15 @@ Links (Dev)
 
 .. |CyberSourceCheckoutListener| raw:: html
 
-   <a href="https://github.com/oroinc/cybersource/blob/4.2/src/Oro/Bundle/CyberSourceBundle/EventListener/Callback/CyberSourceCheckoutListener.php" target="_blank">CyberSourceCheckoutListener</a>
+   <a href="https://github.com/oroinc/cybersource/blob/4.2-beta/src/Oro/Bundle/CyberSourceBundle/EventListener/Callback/CyberSourceCheckoutListener.php" target="_blank">CyberSourceCheckoutListener</a>
 
 .. |OrderReviewComponent| raw:: html
 
-   <a href="https://github.com/oroinc/cybersource/blob/4.2/src/Oro/Bundle/CyberSourceBundle/Resources/public/js/app/components/hosted-checkout/order-review-component.js" target="_blank">OrderReviewComponent</a>
+   <a href="https://github.com/oroinc/cybersource/blob/4.2-beta/src/Oro/Bundle/CyberSourceBundle/Resources/public/js/app/components/hosted-checkout/order-review-component.js" target="_blank">OrderReviewComponent</a>
 
 .. |CreditCardComponent| raw:: html
 
-   <a href="https://github.com/oroinc/cybersource/blob/4.2/src/Oro/Bundle/CyberSourceBundle/Resources/public/js/app/components/checkout-api/credit-card-component.js" target="_blank">CreditCardComponent</a>
+   <a href="https://github.com/oroinc/cybersource/blob/4.2-beta/src/Oro/Bundle/CyberSourceBundle/Resources/public/js/app/components/checkout-api/credit-card-component.js" target="_blank">CreditCardComponent</a>
 
 .. |Flex Microform| raw:: html
 
@@ -4721,15 +4709,15 @@ Links (Dev)
 
 .. |PurchasePaymentAction| raw:: html
 
-   <a href="https://github.com/oroinc/cybersource/blob/4.2/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CheckoutApi/PurchasePaymentAction.php" target="_blank">Flex Microform</a>
+   <a href="https://github.com/oroinc/cybersource/blob/4.2-beta/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CheckoutApi/PurchasePaymentAction.php" target="_blank">PurchasePaymentAction</a>
 
 .. |CapturePaymentAction| raw:: html
 
-   <a href=""https://github.com/oroinc/cybersource/blob/4.2/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CapturePaymentAction.php" target="_blank">CapturePaymentAction</a>
+   <a href="https://github.com/oroinc/cybersource/blob/4.2-beta/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CapturePaymentAction.php" target="_blank">CapturePaymentAction</a>
 
 .. |CancelPaymentAction| raw:: html
 
-   <a href="https://github.com/oroinc/cybersource/blob/4.2/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CancelPaymentAction.php" target="_blank">CancelPaymentAction</a>
+   <a href="https://github.com/oroinc/cybersource/blob/4.2-beta/src/Oro/Bundle/CyberSourceBundle/Method/PaymentAction/CancelPaymentAction.php" target="_blank">CancelPaymentAction</a>
 
 .. |SystemPage Model| raw:: html
 
@@ -4797,7 +4785,7 @@ Links (Dev)
 
 .. |Elasticsearch per-request configuration documentation| raw:: html
 
-   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/_per_request_configuration.html" target="_blank">Elasticsearch per-request configuration documentation</a>
+   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/5.x/_per_request_configuration.html" target="_blank">Elasticsearch per-request configuration documentation</a>
 
 .. |applicable analyzers| raw:: html
 
@@ -5395,10 +5383,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/MigrationBundle/Migration/Installation.php" target="_blank">Installation</a>
 
-.. |Activity List Inheritance Targets documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/ActivityListBundle/Resources/doc/inheritance.md" target="_blank">Activity List Inheritance Targets documentation</a>
-
 .. |Enable Comment Association with New Activity Entity| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/CommentBundle#how-to-enable-comment-association-with-new-activity-entity-using-migrations" target="_blank">Enable Comment Association with New Activity Entity</a>
@@ -5522,7 +5506,7 @@ Links (Dev)
 
 .. |EntityVariablesProviderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/gitEntityBundle/Twig/Sandbox/EntityVariablesProviderInterface.php" target="_blank">EntityVariablesProviderInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/4.2/src/Oro/Bundle/EntityBundle/Twig/Sandbox/EntityVariablesProviderInterface.php" target="_blank">EntityVariablesProviderInterface</a>
 
 .. |VariableProcessorInterface| raw:: html
 
@@ -5582,7 +5566,7 @@ Links (Dev)
 
 .. |Entity Listeners| raw:: html
 
-   <a href="https://symfony.com/doc/current/bundles/DoctrineBundle/entity-listeners.html" target="_blank">Entity Listeners</a>
+   <a href="https://symfony.com/bundles/DoctrineBundle/current/entity-listeners.html" target="_blank">Entity Listeners</a>
 
 .. |Lazy loading for Event Listeners| raw:: html
 
