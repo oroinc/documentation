@@ -112,6 +112,12 @@ The ``--analyze`` option can be used to run BundleAnalyzerPlugin:
 
     php bin/console oro:assets:build --analyze
 
+The ``--verbose`` option can be used to show expanded output information about failed build such as list of processed files and stack trace:
+
+.. code-block:: none
+
+    php bin/console oro:assets:build --verbose
+
 oro:assets:install
 ------------------
 
