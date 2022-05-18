@@ -381,35 +381,43 @@ Example:
 Stale Jobs
 ----------
 
-It is not possible to create two unique jobs with the same name. That is why, if one unique job is not able to finish its work, it can block another job. To handle such situation, use **stale jobs**.
+You cannot create two unique jobs with the same name, so if one unique job is unable to finish its work, it can block another job. To handle this, use **stale jobs**.
 
-By default, *JobProcessor* uses *NullJobConfigurationProvider*, so a unique job will never be "stale". If you want to change that behavior, create your own provider that implements *JobConfigurationProviderInterface*.
+By default, `JobProcessor` uses `JobConfigurationProvider`, so a unique job will be “staled” after 1800 seconds, which is the “time_before_stale“ default value.
 
-The *JobConfigurationProvider::getTimeBeforeStaleForJobName($jobName);* method should return the number of seconds after which a job is considered "stale". If you do not want job to be staled, return null or -1.
+In this case, if the second unique job with the same name is created, but the previous job has not been updated for more than one hour and has not started a child, it gets the ``Job::STATUS_STALE`` status, and a new job is created.
 
-In the example below, all jobs are treated as "stale" after an hour.
+In addition, if the processor tries to finish a “stale” job, it is removed.
+
+If you do not wish for that job to be staled, use `NullJobConfigurationProvider` where the `getTimeBeforeStaleForJobName` method returns null:
 
 .. code-block:: php
 
-    use Oro\Component\MessageQueue\Provider\JobConfigurationProviderInterface;
+    namespace Oro\Component\MessageQueue\Provider;
 
-    class JobConfigurationProvider implements JobConfigurationProviderInterface
+    class NullJobConfigurationProvider implements JobConfigurationProviderInterface
     {
         /**
          * {@inheritdoc}
          */
         public function getTimeBeforeStaleForJobName($jobName)
-        {
-            return 3600;
-        }
+       {
+            return null;
+       }
     }
 
     $jobProcessor = new JobProcessor(/* arguments */);
-    $jobProcessor->setJobConfigurationProvider(new JobConfigurationProvider());
+    $jobProcessor->setJobConfigurationProvider(new NullJobConfigurationProvider());
 
-In this case, if the second unique job with the same name is created but the previous job has not been updated for more than one hour and has not started a child, it gets the **Job::STATUS_STALE** status, and a new job is created.
+To configure a specific job with a custom “time_before_stale” value, use the following configuration:
 
-Additionally, if the processor tries to finish a "stale" job, it is removed.
+.. code-block:: php
+
+   oro_message_queue:
+       time_before_stale:
+           jobs:
+               'oro_dotmailer:export_contacts_status_update': 3600
+
 
 Jobs Statuses
 -------------
