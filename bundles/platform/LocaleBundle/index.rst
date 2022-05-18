@@ -43,6 +43,7 @@ Related Documentation
    managing-localizations
    current-localization
    localized-values
+   commands
 
 
 .. include:: /include/include-links-dev.rst
