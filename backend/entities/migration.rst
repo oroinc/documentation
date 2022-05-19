@@ -395,12 +395,10 @@ To create an installer for AcmeBundle:
    .. code-block:: bash
 
 
-      php bin/console oro:migration:dump --bundle=AcmeBundle > AcmeBundleInstaller.php
+      php bin/console oro:migration:dump --bundle=AcmeBundle
 
 
-   .. hint:: The generated installer may contain a lot of excessive information as the same database table might contain options related to different bundles and entities while the generator has no option to distinguish which entity 'has added' particular options. Delete the information unrelated to your entities from the output file.
-
- Move AcmeBundleInstall.php to the AcmeBundle/Migrations/Schema directory.
+ The generated AcmeBundleInstaller.php will be placed into the AcmeBundle/Migrations/Schema directory.
 
 #. Reinstall your application instance.
 
