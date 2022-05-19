@@ -49,6 +49,12 @@ The ``--bundle`` option can be used to show only the portion of the schema that 
 
     php bin/console oro:migration:dump --bundle=<bundle-name>
 
+The ``--all`` option can be used to create migration script for all bundles:
+
+.. code-block:: none
+
+    php bin/console oro:migration:dump --all
+
 Use the ``--migration-version`` option to specify the migration version for the generated PHP code:
 
 .. code-block:: none
