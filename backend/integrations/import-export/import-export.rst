@@ -437,6 +437,8 @@ You can use the following options:
 |              | interface, but can only be set using annotations.                 |
 +--------------+-------------------------------------------------------------------+
 
+.. note:: You can check the :ref:`@ConfigField <annotation-config-field-importexport>` section for more information.
+
 Import One-To-Many Relations
 ----------------------------
 
