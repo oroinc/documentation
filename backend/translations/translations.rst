@@ -240,6 +240,7 @@ Below is a simple example of a grid configuration which uses the hint: **Resourc
 In this case, the values in the name field are displayed in the required language, and filtering and sorting for the
 values happens in the selected language.
 
+.. _localizedfallbackvalue-entity-from-orolocalebundle:
 
 LocalizedFallbackValue Entity from OroLocaleBundle
 --------------------------------------------------

@@ -63,6 +63,9 @@ This example sets the ``auditable`` option from the ``dataaudit`` scope to ``tru
 
 *  **max_number_of_files** *integer* - sets the max number of files.
 
+* **immutable** *boolean* - is used to prohibit changing the attachment association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
+
 .. _annotation-config-field-attribute:
 
 ``attribute``
@@ -90,6 +93,9 @@ Attribute fields have a dedicated CRUD and field types, similarly to the extend 
 
 *  **search_boost** *integer* -  enables you to influence the relevancy ranking of the search results by the value of the attributes.
 
+* **immutable** *boolean* - is used to prohibit changing the attribute association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
+
 .. _annotation-config-field-dataaudit:
 
 ``dataaudit``
@@ -116,6 +122,9 @@ Contain some settings for the datagrid screen.
 
 *  **order** *integer* - enables you to change datagrid column position.
 
+* **immutable** *boolean* - is used to prohibit changing the datagrid association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
+
 .. _annotation-config-field-draft:
 
 ``draft``
@@ -125,6 +134,9 @@ Contain some settings for the datagrid screen.
 
 *  **draftable** *boolean* - defines whether field can involved in the draft operation.
 
+* **immutable** *boolean* - is used to prohibit changing the draftable association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
+
 .. _annotation-config-field-email:
 
 ``email``
@@ -133,6 +145,9 @@ Contain some settings for the datagrid screen.
 Sets default settings for :ref:`OroEmailBundle <bundle-docs-platform-email-bundle>`.
 
 *  **available_in_template** *boolean* - if set to true, the field can be used in email templates.
+
+* **immutable** *boolean* - is used to prohibit changing the email association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 
 .. _annotation-config-field-entity:
 
@@ -148,6 +163,8 @@ Contain settings for the entity UI.
 *  **contact_information** *string* - enables you to change contact information (phone or email) for the entity. Each contact_information type requires its own template. E.g. phone => "@OroMarketingList/MarketingList/ExtendField/phone.html.twig".
 
 *  **actualize_owning_side_on_change** *boolean* - if set to true, the "Updated At" and "Updated By" fields of the owning entity will be updated on collection item updates. Applicable for ref-many and oneToMany relations only.
+
+* **immutable** *boolean* - is used to prohibit changing the entity association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
 .. _annotation-config-field-enum:
 
@@ -165,6 +182,8 @@ The enum functionality is described in :ref:`Option Set Fields <book-entities-ex
 * **enum_public** *boolean* - indicates whether an enum is public or not. This temporary attribute is used to create/edit an enum on a field edit page. As part of the schema update procedure, the value of this attribute is moved to the entity.enum.public attribute. This flag cannot be changed for system enums (owner='system').
 
 * **enum_options** *array* - the list of enum values. This temporary attribute is used to create/edit an enum on a field edit page. As part of the schema update procedure, the value of this attribute is moved to a table that is used to store enum values.
+
+* **immutable** *boolean* - is used to prohibit changing the enum association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
 
 .. _annotation-config-field-extend:
 
@@ -201,6 +220,9 @@ This attribute sets default settings for :ref:`Extend Entities <book-entities-ex
 
 * **fetch** *string* - the type of fetch mode for the relation. Possible values are 'lazy', 'extra_lazy', and 'eager'.
 
+* **immutable** *boolean* - is used to prohibit changing the extend association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
+
 It also can have the following parameters: **owner**, **state**, **is_deleted**, **nullable**, **default**, **length**, **precision**, **scale**.
 
 .. _annotation-config-field-fallback:
@@ -213,6 +235,9 @@ You can set up an entity field to fall back to a different entity’s field valu
 * **fallbackList** *array* - contains a list of possible fallback entities.
 
 * **fallbackType** *string* - specifies the type of the field value.
+
+* **immutable** *boolean* - is used to prohibit changing the fallback association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 
 .. _annotation-config-field-form:
 
@@ -227,6 +252,9 @@ The attribute specifies a custom form type for the field.
 
 * **form_options** *boolean* - form options for a specific field. For more information, see |Symfony Form Type Options| .
 
+* **immutable** *boolean* - is used to prohibit changing the form association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
+
 .. _annotation-config-field-frontend:
 
 ``frontend``
@@ -238,6 +266,8 @@ Set default parameters for the storefront view pages.
 
 * **is_editable** *boolean* - defines if the field is enabled in the storefront forms.
 
+* **immutable** *boolean* - is used to prohibit changing the frontend association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 .. _annotation-config-field-importexport:
 
 ``importexport``
@@ -245,19 +275,7 @@ Set default parameters for the storefront view pages.
 
 :ref:`OroImportExportBundle <bundle-docs-platform-import-export-bundle>` helps developers enable the UI for the application users to export entity records to files, import them back to the application, and configure the import/export options for entity fields in the entity management UI.
 
-* **identity** *boolean* - fields with this option are used to identify (search) the entity. You can use multiple identity fields for one entity.
-
-* **excluded** *boolean* - fields with this option cannot be exported.
-
-* **order** *integer* - used to configure a custom column order.
-
-* **full** *boolean* - all related entity fields' are exported. Fields with the excluded option are skipped. If the option is set to false (the default value), only fields with an identity are exported.
-
-* **process_as_scalar** *boolean* - defines whether a relation field is processed as scalar value when exporting data.
-
-* **header** *string* - sets a custom field header. By default, field label is used.
-
-Possible attributes are: ``fallback_field``, ``short``, ``immutable`` .
+.. include:: /backend/configuration/annotation/config-field/import-export.rst
 
 .. _annotation-config-field-merge:
 
@@ -305,6 +323,9 @@ Settings of :ref:`entity merge <dev-entities-merge>`.
 
 * **autoescape** - controls escaping of the value when rendered in the Merge table. Use 'false' to disable escaping for the field (i.e., RichText) or set the Twig 'escape' method to enable: 'html' (or true), 'html_attr', 'css', 'js', 'url'.
 
+* **immutable** *boolean* - is used to prohibit changing the merge association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
+
 ``multicurrency``
 ~~~~~~~~~~~~~~~~~
 
@@ -314,10 +335,16 @@ As currency functionality is represented by three fields (from entity side) we h
 
 * **virtual_field** *string* - This attribute is used to retrieve the label to be used for virtual field `target`.
 
+* **immutable** *boolean* - is used to prohibit changing the multicurrency association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
+
 ``organization``
 ~~~~~~~~~~~~~~~~
 
 * **applicable** -  is used to specify for which organizations custom field will be visible. On the field edit page, it is represented with form type ``oro_type_choice_organization_type``, which provides a selector for organizations (regardless of whether it is activated or not) defined in the application so that a user can select a specific organization(s) or "ALL" organizations.
+
+* **immutable** *boolean* - is used to prohibit changing the applicable association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 
 ``search``
 ~~~~~~~~~~
@@ -328,12 +355,17 @@ Attributes that using to set up :ref:`search <user-guide-getting-started-search>
 
 * **title_field** - Indicates what custom text field is part of search result title.
 
+* **immutable** *boolean* - is used to prohibit changing the searchable association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 ``security``
 ~~~~~~~~~~~~
 
 Attributes that using to set up :ref:`security <backend-security-bundle-intro>` functionality.
 
 * **permissions** *string* - The following permissions are supported for fields: VIEW, EDIT.
+
+* **immutable** *boolean* - is used to prohibit changing the security association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 
 ``view``
 ~~~~~~~~
@@ -345,6 +377,9 @@ Attributes that using to set up Entity View Page`.
 * **priority** *integer* - Priority of field.
 
 * **type** *string* - Type of view. Example: 'html'.
+
+* **immutable** *boolean* - is used to prohibit changing the view association state (regardless of whether it is enabled or not) for the entity. If TRUE, then the current state cannot be changed.
+
 
 
 .. include:: /include/include-links-dev.rst
