@@ -392,30 +392,12 @@ You can use filesystem or Redis as a cache storage. By default, render
 cache uses filesystem cache storage.
 
 When using **Redis**, it is recommended to use a separate server for the
-render cache. To configure it:
-
-1. |Define a new client| in the ``snc_redis`` configuration section and specify the connection DSN, e.g.,:
+render cache. To configure it, define ``redis_dsn_layout`` option in parameters.yml
 
    .. code-block:: yaml
-      :caption: config/config.yml
+      :caption: config/parameters.yml
 
-      snc_redis:
-          clients:
-              render_cache:
-                  type: predis
-                  dsn: redis://localhost/5
-
-2. Define layout render cache pool with the ``RedisTagAware`` adapter and provider defined above:
-
-   .. code-block:: yaml
-      :caption: config/config.yml
-
-      framework:
-          cache:
-              pools:
-                  cache.oro_layout.render:
-                      adapter: cache.adapter.redis_tag_aware
-                      provider: snc_redis.render_cache
+      redis_dsn_layout: 'redis://localhost/5'
 
 Keep in mind that Redis configuration is not compatible with the
 filesystem cache storage. To enable filesystem storage back, remove the
