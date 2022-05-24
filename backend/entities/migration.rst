@@ -1,9 +1,193 @@
+.. _book-entities-database-schema-update:
 .. _backend-entities-migrations:
 
 Database Structure Migrations
 =============================
 
 Each bundle can have migration files that enable you to update the database schema.
+
+To create a schema (database structure) migration, follow a few steps below.
+
+Create Schema Migration
+-----------------------
+
+Create Database Dump
+^^^^^^^^^^^^^^^^^^^^
+
+It is required to create a database dump before any database changes.
+
+Synchronize Code with the Database
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After you have modeled your entities, you need to update the database schema. To update the schema, use the ``doctrine:schema:update command``. Use the ``--dump-sql`` option first to make sure that Doctrine makes the expected changes:
+
+.. .. code-block:: none
+
+..    php bin/console doctrine:schema:update --dump-sql
+
+If the command displays unexpected information, double-check the configured mapping information and rerun the command.
+
+When everything is displayed as expected, update the database schema by passing the ``--force`` option:
+
+.. code-block:: none
+
+    php bin/console doctrine:schema:update --force
+
+.. tip::
+
+    Doctrine caches mapping metadata. If the ``doctrine:schema:update`` command does not recognize your changes to the entity mapping, clear the metadata cache manually and update the schema again:
+
+    .. code-block:: none
+
+        # clear the metadata cache
+        php bin/console doctrine:cache:clear-metadata
+
+        # check the schema change queries to be executed
+        php bin/console doctrine:schema:update --dump-sql
+
+        # apply the schema changes to the database
+        php bin/console doctrine:schema:update --force
+
+.. caution::
+
+    Do not use the ``doctrine:schema:update`` command with your production database. Instead,
+    create migrations to update the schema of your database. You can read more about using
+    migrations in the :ref:`Update Database Schema <book-entities-database-schema-update>` section. To run migrations
+    and emulate complete migration process, use the ``oro:platform:update`` command.
+
+.. _installer_generate:
+
+Generate an Installer
+^^^^^^^^^^^^^^^^^^^^^
+
+Generate an Installer for a Bundle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When you have implemented new entities, you want to be sure that upon installing the application, the entities are added to the database. For this, you need to create an installer :ref:`migration <backend-entities-migrations>`. You can do it manually, however, it is more convenient to use a dump of the database as a template.
+
+To create an installer for DemoBundle:
+
+1. Clear the application cache:
+
+      .. code-block:: bash
+
+         php bin/console cache:clear
+
+2. Apply the changes that you defined in your code to the database:
+
+      .. code-block:: bash
+
+         php bin/console doctrine:schema:update
+
+3. Generate an installer and save it to the AcmeBundleInstaller.php:
+
+   .. code-block:: bash
+
+
+      php bin/console oro:migration:dump --bundle=AcmeBundle
+
+
+The generated AcmeBundleInstaller.php will be placed into the AcmeBundle/Migrations/Schema directory.
+
+#. Reinstall your application instance.
+
+#. Check that the database is synced with your code:
+
+   .. code-block:: bash
+
+      php bin/console doctrine:schema:update --dump-sql
+
+   If the database is successfully synchronized, you will see the following message:
+
+   .. code-block:: none
+
+      Nothing to update - your database is already in sync with the current entity metadata.
+
+Migrations Dump Command
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Use the **oro:migration:dump** command to help create installation files. This command outputs the current database structure as plain SQL or as ``Doctrine\DBAL\Schema\Schema`` queries.
+
+This command supports the following additional options:
+
+- **plain-sql** - Outputs schema as plain SQL queries
+- **bundle** - The bundle name for which the migration is generated
+- **migration-version** - Migration version number. This option sets the value returned by the `getMigrationVersion` method of the generated installation file.
+
+Each bundle can have an **installation** file. This migration file replaces running multiple migration files. Install migration class must implement the |Installation| interface and the `up` and `getMigrationVersion` methods. The `getMigrationVersion` method must return the max migration version number that this installation file replaces.
+
+When an install migration file is found during the install process (when you install the system from scratch), it is loaded first, followed by the migration files with versions greater than the version returned by the `getMigrationVersion` method.
+
+For example, let's assume we have migrations `v1_0`, `v1_1`, `v1_2`, `v1_3` and installed the migration class. This class returns `v1_2` as the migration version. That is why, during the install process, the install migration file is loaded first, followed only by migration file `v1_3`. In this case, migrations from `v1_0` to `v1_2` are not loaded.
+
+Below is an example of an install migration file:
+
+.. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/AcmeDemoBundleInstaller.php
+
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema;
+
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\MigrationBundle\Migration\Installation;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+   class AcmeDemoBundleInstaller implements Installation
+   {
+       public function getMigrationVersion()
+       {
+           return 'v1_0';
+       }
+
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           /** Tables generation **/
+           $this->createAcmeDocumentTable($schema);
+           $this->createDocumentPriorityTable($schema);
+
+           /** Foreign keys generation **/
+           $this->addAcmeDocumentForeignKeys($schema);
+       }
+
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       public function createAcmeDocumentTable(Schema $schema): void
+       {
+           $table = $schema->createTable('acme_document');
+           $table->addColumn('id', 'integer', ['autoincrement' => true]);
+           $table->addColumn('subject', 'string', ['length' => 255, 'notnull' => true]);
+           $table->addColumn('description', 'string', ['length' => 255, 'notnull' => true]);
+           $table->addColumn('due_date', 'datetime', ['comment' => '(DC2Type:datetime)']);
+           $table->addColumn('document_priority_id', 'integer', ['notnull' => false]);
+           $table->setPrimaryKey(['id']);
+       }
+
+       public function createDocumentPriorityTable(Schema $schema): void
+       {
+           $table = $schema->createTable('acme_document_priority');
+           $table->addColumn('id', 'integer', ['autoincrement' => true]);
+           $table->addColumn('label', 'string', []);
+           $table->setPrimaryKey(['id']);
+           $table->addUniqueIndex(['label'], 'uidx_label_doc');
+       }
+
+       protected function addAcmeDocumentForeignKeys(Schema $schema)
+       {
+           $table = $schema->getTable('acme_document');
+           $table->addForeignKeyConstraint(
+               $schema->getTable('acme_document_priority'),
+               ['document_priority_id'],
+               ['id'],
+               ['onUpdate' => null, 'onDelete' => 'SET NULL']
+           );
+       }
+   }
+
+Create Versioned Schema Migrations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A good practice is for a bundle to have the installation file for the current version and migration files for migrating from the previous to the current version.
 
 Migration files should be located in the ``Migrations\Schema\version_number`` folder. A version number must be a PHP-standardized version number string but with some limitations. This string must not contain "." and "+" characters as a version parts separator. You can find more information about PHP-standardized version number string in the |PHP manual|.
 
@@ -22,100 +206,43 @@ If you have several migration classes within the same version and you need to ma
 Below is an example of a migration file:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_1/AddTmpTestTable.php
 
-    namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_0;
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_1;
 
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-    use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtension;
-    use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtensionAwareInterface;
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-    class AcmeTestBundle implements Migration, RenameExtensionAwareInterface
-    {
-        protected RenameExtension $renameExtension;
+   class AddTmpTestTable implements Migration
+   {
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           $table = $schema->createTable('tmp_test_table');
+           $table->addColumn('id', 'integer', ['autoincrement' => true]);
+           $table->addColumn('created', 'datetime', []);
+           $table->addColumn('field', 'string', ['length' => 500]);
+           $table->addColumn('another_field', 'string', ['length' => 255]);
+           $table->addColumn('test_column', 'json', []);
+           $table->setPrimaryKey(['id']);
+       }
+   }
 
-        /**
-         * @inheritdoc
-         */
-        public function setRenameExtension(RenameExtension $renameExtension)
-        {
-            $this->renameExtension = $renameExtension;
-        }
+..
+   You can use the following algorithm for new versions of your bundle:
 
-        /**
-         * @inheritdoc
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $table = $schema->createTable('test_table');
-            $table->addColumn('id', 'integer', ['autoincrement' => true]);
-            $table->addColumn('created', 'datetime', []);
-            $table->addColumn('field', 'string', ['length' => 500]);
-            $table->addColumn('another_field', 'string', ['length' => 255]);
-            $table->setPrimaryKey(['id']);
+   - Create a new migration.
+   - Apply it with **oro:migration:load**.
+   - Generate a new installation file with **oro:migration:dump**.
+   - If required, add migration extension calls to the generated installation.
 
-            $this->renameExtension->renameTable(
-                $schema,
-                $queries,
-                'old_table_name',
-                'new_table_name'
-            );
-            $queries->addQuery(
-                "ALTER TABLE another_table ADD COLUMN test_column INT NOT NULL",
-            );
-        }
-    }
+Restore the Database Dump
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Each bundle can also have an **installation** file. This migration file replaces running multiple migration files. Install migration class must implement the |Installation| interface and the `up` and `getMigrationVersion` methods. The `getMigrationVersion` method must return the max migration version number that this installation file replaces.
+In case of problems or a database crash, you can restore the database dump.
 
-When an install migration file is found during the install process (when you install the system from scratch), it is loaded first, followed by the migration files with versions greater than the version returned by the `getMigrationVersion` method.
-
-For example, let's assume we have migrations `v1_0`, `v1_1`, `v1_2`, `v1_3` and installed the migration class. This class returns `v1_2` as the migration version. That is why, during the install process, the install migration file is loaded first, followed only by migration file `v1_3`. In this case, migrations from `v1_0` to `v1_2` are not loaded.
-
-Below is an example of an install migration file:
-
-.. code-block:: php
-
-    namespace Acme\Bundle\TestBundle\Migrations\Schema;
-
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\MigrationBundle\Migration\Installation;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-
-    class AcmeTestBundleInstaller implements Installation
-    {
-        /**
-         * @inheritdoc
-         */
-        public function getMigrationVersion()
-        {
-            return 'v1_1';
-        }
-
-        /**
-         * @inheritdoc
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $table = $schema->createTable('test_installation_table');
-            $table->addColumn('id', 'integer', ['autoincrement' => true]);
-            $table->addColumn('field', 'string', ['length' => 500]);
-            $table->setPrimaryKey(['id']);
-        }
-    }
-
-A good practice is for a bundle to have the installation file for the current version and migration files for migrating from the previous to the current version.
-
-You can use the following algorithm for new versions of your bundle:
-
-- Create a new migration.
-- Apply it with **oro:migration:load**.
-- Generate a new installation file with **oro:migration:dump**.
-- If required, add migration extension calls to the generated installation.
-
-Load Migrations Command
------------------------
+Load Schema Migrations
+^^^^^^^^^^^^^^^^^^^^^^
 
 To run migrations, use the **oro:migration:load** command. This command collects migration files from bundles, sorts them by their version number, and applies changes.
 
@@ -126,17 +253,6 @@ This command supports the following additional options:
 - **show-queries** - Outputs list of database queries for each migration file;
 - **bundles** - A list of bundles to load data from. If option is not set, migrations are taken from all bundles;
 - **exclude** - A list of bundle names where migrations should be skipped.
-
-Migrations Dump Command
------------------------
-
-Use the **oro:migration:dump** command to help create installation files. This command outputs the current database structure as plain SQL or as ``Doctrine\DBAL\Schema\Schema`` queries.
-
-This command supports the following additional options:
-
-- **plain-sql** - Outputs schema as plain SQL queries
-- **bundle** - The bundle name for which the migration is generated
-- **migration-version** - Migration version number. This option sets the value returned by the `getMigrationVersion` method of the generated installation file.
 
 Examples of Database Structure Migrations
 -----------------------------------------
@@ -151,50 +267,46 @@ Extensions for Database Structure Migrations
 You cannot always use standard Doctrine methods to modify the database structure. For example, ``Schema::renameTable`` does not work because it drops an existing table and then creates a new one. To help you manage such a case and enable you to to add additional functionality to any migration, use the extensions mechanism. The following example illustrates how |RenameExtension| can be used:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/TestRenameTable.php
 
-    namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_0;
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_2;
 
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-    use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtension;
-    use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtensionAwareInterface;
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+   use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtension;
+   use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtensionAwareInterface;
 
-    class AcmeTestBundle implements Migration, RenameExtensionAwareInterface
-    {
-        protected RenameExtension $renameExtension;
+   class TestRenameTable implements Migration, RenameExtensionAwareInterface
+   {
+       protected RenameExtension $renameExtension;
 
-        /**
-         * @inheritdoc
-         */
-        public function setRenameExtension(RenameExtension $renameExtension)
-        {
-            $this->renameExtension = $renameExtension;
-        }
+       public function setRenameExtension(RenameExtension $renameExtension)
+       {
+           $this->renameExtension = $renameExtension;
+       }
 
-        /**
-         * @inheritdoc
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $this->renameExtension->renameTable(
-                $schema,
-                $queries,
-                'old_table_name',
-                'new_table_name'
-            );
-        }
-    }
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           $this->renameExtension->renameTable(
+               $schema,
+               $queries,
+               'tmp_test_table',
+               'new_test_table'
+           );
+       }
+   }
 
 As you can see from the example above, your migration class should implement |RenameExtensionAwareInterface| and `setRenameExtension` method in order to use the |RenameExtension|.
 
 Another example below illustrates how to use database specific features in migration:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_3/CreateFunctionalIndex.php
 
-   namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_1;
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_3;
 
-   use Doctrine\DBAL\Platforms\PostgreSqlPlatform;
+   use Doctrine\DBAL\Platforms\PostgreSQL94Platform;
    use Doctrine\DBAL\Schema\Schema;
    use Oro\Bundle\MigrationBundle\Migration\Extension\DatabasePlatformAwareInterface;
    use Oro\Bundle\MigrationBundle\Migration\Extension\DatabasePlatformAwareTrait;
@@ -206,18 +318,16 @@ Another example below illustrates how to use database specific features in migra
    {
        use DatabasePlatformAwareTrait;
 
-       /**
-        * @inheritDoc
-        */
        public function up(Schema $schema, QueryBag $queries)
        {
-           if ($this->platform instanceof PostgreSqlPlatform) {
+
+           if ($this->platform instanceof PostgreSQL94Platform) {
                $query = new SqlMigrationQuery(
-                   "CREATE INDEX test_idx1 ON test_table (LOWER(serialized_data->>'test_key'))"
+                   "CREATE INDEX test_idx1 ON new_test_table (LOWER(test_column->>'test_key'))"
                );
            } else {
                $query = new SqlMigrationQuery(
-                   "CREATE INDEX test_idx1 ON test_table ((LOWER(JSON_VALUE(serialized_data, '\$.test_key'))))"
+                   "CREATE INDEX test_idx1 ON new_test_table ((LOWER(JSON_VALUE(test_column, '\$.test_key'))))"
                );
            }
 
@@ -280,8 +390,9 @@ To create your own extension:
 1. Create an extension class in the ``YourBundle/Migration/Extension`` directory. Using ``YourBundle/Migration/Extension`` directory is not mandatory, but highly recommended. For example:
 
     .. code-block:: php
+      :caption: src/Acme/Bundle/DemoBundle/Migrations/Extension/MyExtension.php
 
-        namespace Acme\Bundle\TestBundle\Migration\Extension;
+        namespace Acme\Bundle\DemoBundle\Migration\Extension;
 
         use Doctrine\DBAL\Schema\Schema;
         use Oro\Bundle\MigrationBundle\Migration\QueryBag;
@@ -300,8 +411,9 @@ To create your own extension:
 2. Create `*AwareInterface` in the same namespace. It is important that the interface name is ``{ExtensionClass}AwareInterface`` and the set method is ``set{ExtensionClass}({ExtensionClass} ${extensionName})``.    For example:
 
     .. code-block:: php
+      :caption: src/Acme/Bundle/DemoBundle/Migrations/Extension/MyExtensionAwareInterface.php
 
-        namespace Acme\Bundle\TestBundle\Migration\Extension;
+        namespace Acme\Bundle\DemoBundle\Migration\Extension;
 
         /**
          * MyExtensionAwareInterface should be implemented by migrations that depends on a MyExtension.
@@ -319,9 +431,10 @@ To create your own extension:
 3. Register an extension in the dependency container. For example:
 
     .. code-block:: yaml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/services.yml
 
         services:
-            Acme\Bundle\TestBundle\Migration\Extension\MyExtension:
+            Acme\Bundle\DemoBundle\Migration\Extension\MyExtension:
                 tags:
                     - { name: oro_migration.extension, extension_name: test /*, priority: -10 - priority attribute is optional an can be helpful if you need to override existing extension */ }
 
@@ -335,11 +448,11 @@ Events During Migration
 The ``Oro\Bundle\MigrationBundle\Migration\Loader\MigrationsLoader`` dispatches two events when migrations are being executed, *oro_migration.pre_up* and *oro_migration.post_up*. You can listen to either event and register your own migrations in your event listener. Use the ``Oro\Bundle\MigrationBundle\Event\MigrationEvent::addMigration`` method of the passed event instance to register your custom migrations:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/EventListener/RegisterCustomMigrationListener.php
+   :caption: src/Acme/Bundle/DemoBundle/EventListener/RegisterCustomMigrationListener.php
 
-    namespace Acme\DemoBundle\EventListener;
+    namespace Acme\Bundle\DemoBundle\EventListener;
 
-    use Acme\DemoBundle\Migration\CustomMigration;
+    use Acme\Bundle\DemoBundle\Migration\CustomMigration;
     use Oro\Bundle\MigrationBundle\Event\PostMigrationEvent;
     use Oro\Bundle\MigrationBundle\Event\PreMigrationEvent;
 
@@ -367,51 +480,4 @@ Migrations registered in the *oro_migration.pre_up* event are executed before th
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
-.. _installer_generate:
 
-Generate an Installer for a Bundle
-----------------------------------
-
-When you have implemented new entities, you want to be sure that upon installing the application, the entities are added to the database. For this, you need to create an installer :ref:`migration <backend-entities-migrations>`. You can do it manually, however, it is more convenient to use a dump of the database as a template.
-
-To create an installer for AcmeBundle:
-
-1. Clear the application cache:
-
-   .. code-block:: bash
-
-
-      php bin/console cache:clear
-
-2. Apply the changes that you defined in your code to the database:
-
-   .. code-block:: bash
-
-
-      php bin/console doctrine:schema:update
-
-3. Generate an installer and save it to the AcmeBundleInstaller.php:
-
-   .. code-block:: bash
-
-
-      php bin/console oro:migration:dump --bundle=AcmeBundle
-
-
- The generated AcmeBundleInstaller.php will be placed into the AcmeBundle/Migrations/Schema directory.
-
-#. Reinstall your application instance.
-
-#. Check that the database is synced with your code:
-
-   .. code-block:: bash
-
-
-      php bin/console doctrine:schema:update --dump-sql
-
-   If the database is successfully synchronized, you will see the following message:
-
-   .. code-block:: none
-
-
-      Nothing to update - your database is already in sync with the current entity metadata.

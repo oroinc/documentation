@@ -12,6 +12,5 @@ Bundles and Extensions
    :titlesonly:
 
    create-bundle
-   override-bundle-functionality
    install-extension
    add-extension

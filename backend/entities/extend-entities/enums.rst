@@ -1,7 +1,7 @@
 .. _book-entities-extended-entities-enums:
 
-Option Set Fields
-=================
+Option Enum Set Fields
+======================
 
 The option set, also named as the enum, is a special type of a field which allows to choose one or more options
 from a predefined set of options. The OroPlatform provides two different data types for these purposes:
@@ -12,46 +12,48 @@ from a predefined set of options. The OroPlatform provides two different data ty
 The option sets are quite complex types, but to understand how they work, you need to know that both
 ``enum`` and ``multiEnum`` types are based on regular |Doctrine associations|. The main difference between them is that
 ``enum`` type is based on |many-to-one association|, while ``multiEnum`` type is based on |many-to-many association|.
-To add the option set field to an entity you can use |ExtendExtension|.
+To add the option set field to an entity you, can use |ExtendExtension|.
 
 The following example shows how it can be done:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_6/AddEnumFieldOroUser.php
 
-    namespace Oro\Bundle\SalesBundle\Migrations\Schema\v1_0;
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_6;
 
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
-    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-    use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
+   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-    class OroSalesBundle implements Migration, ExtendExtensionAwareInterface
-    {
-        protected $extendExtension;
+   class AddEnumFieldOroUser implements Migration, ExtendExtensionAwareInterface
+   {
+       protected $extendExtension;
 
-        public function setExtendExtension(ExtendExtension $extendExtension)
-        {
-            $this->extendExtension = $extendExtension;
-        }
+       public function setExtendExtension(ExtendExtension $extendExtension)
+       {
+           $this->extendExtension = $extendExtension;
+       }
 
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $table = $schema->createTable('orocrm_sales_lead');
-            $this->extendExtension->addEnumField(
-                $schema,
-                $table,
-                'source', // field name
-                'lead_source', // enum code
-                false, // only one option can be selected
-                false, // an administrator can add new options and remove existing ones
-                [
-                    'extend' => ['owner' => ExtendScope::OWNER_CUSTOM]
-                ]
-            );
-        }
-    }
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           $table = $schema->getTable('oro_user');
+           $this->extendExtension->addEnumField(
+               $schema,
+               $table,
+               'internal_rating', // field name
+               'user_internal_rating', // enum code
+               false, // only one option can be selected
+               false, // an administrator can add new options and remove existing ones
+               [
+                   'extend' => ['owner' => ExtendScope::OWNER_CUSTOM]
+               ]
+           );
+       }
+   }
+
 
 Please mind the enum code parameter. Each option set should have code and be unique system-wide,
 and with length of no more than 21 characters (due to dynamic name generation and prefix).
@@ -60,38 +62,41 @@ The same principle applies to the field name. In the case above, it should be le
 To load a list of options, use data fixtures, for example:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadUserInternalRatingData.php
 
-    namespace Oro\Bundle\DemoDataBundle\Migrations\Data\Demo\ORM;
+   namespace Oro\Bundle\DemoBundle\Migrations\Data\ORM;
 
-    use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Persistence\ObjectManager;
-    use Oro\Bundle\EntityExtendBundle\Entity\Repository\EnumValueRepository;
-    use Oro\Bundle\EntityExtendBundle\Tools\ExtendHelper;
+   use Doctrine\Common\DataFixtures\AbstractFixture;
+   use Doctrine\Persistence\ObjectManager;
+   use Oro\Bundle\EntityExtendBundle\Entity\Repository\EnumValueRepository;
+   use Oro\Bundle\EntityExtendBundle\Tools\ExtendHelper;
 
-    class LoadLeadSourceData extends AbstractFixture
-    {
-        /** @var array */
-        protected $data = [
-            'Website'     => true,
-            'Direct Mail' => false
-        ];
+   class LoadUserInternalRatingData extends AbstractFixture
+   {
+       protected array $data = [
+           '1' => true,
+           '2' => false,
+           '3' => false,
+           '4' => false,
+           '5' => false
+       ];
 
-        public function load(ObjectManager $manager)
-        {
-            $className = ExtendHelper::buildEnumValueClassName('lead_source');
+       public function load(ObjectManager $manager)
+       {
+           $className = ExtendHelper::buildEnumValueClassName('user_internal_rating');
 
-            /** @var EnumValueRepository $enumRepo */
-            $enumRepo = $manager->getRepository($className);
+           /** @var EnumValueRepository $enumRepo */
+           $enumRepo = $manager->getRepository($className);
 
-            $priority = 1;
-            foreach ($this->data as $name => $isDefault) {
-                $enumOption = $enumRepo->createEnumValue($name, $priority++, $isDefault);
-                $manager->persist($enumOption);
-            }
+           $priority = 1;
+           foreach ($this->data as $name => $isDefault) {
+               $enumOption = $enumRepo->createEnumValue($name, $priority++, $isDefault);
+               $manager->persist($enumOption);
+           }
 
-            $manager->flush();
-        }
-    }
+           $manager->flush();
+       }
+   }
 
 As you can see in this example, we use the **buildEnumValueClassName()** method to convert the option set code
 to the class name of an entity responsible for storing all options of this option set. It is important because

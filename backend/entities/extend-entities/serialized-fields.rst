@@ -6,7 +6,7 @@ Serialized Fields
 OroPlatform provides the ability to create custom entities or custom fields for extended entities.
 This package provides a possibility to avoid schema update when you create custom fields.
 
-However, these fields have some restrictions. Their data is stores in the `serialized_data` column as a serialized array but field `serialized_data` is hidden from the UI on entity config page.
+However, these fields have some restrictions. Their data is stored in the `serialized_data` column as a serialized array but the `serialized_data` field is hidden from the UI on entity config page.
 
 Not supported features:
 
@@ -14,14 +14,14 @@ Not supported features:
 - segments and reports
 - charts
 - search
-- relations, enums and option set field types
+- relations, enums, and option set field types
 - data audit
 - usage of such fields in Doctrine query builder
 
-The Serialized Fields bundle adds a new field called Storage Type within New field creation page where you need choose one of two storage types:
+The Serialized Fields bundle adds a new field called Storage Type within New field creation page where you need to choose one of the two storage types:
 
-- `Table Column` option will allow to create custom field as usual;
-- `Serialized field` option means that you can avoid schema update and start to use this field immediately. Keep in mind that in this case field types are limited to the following:
+- The `Table Column` option enables to create custom field as usual;
+- The `Serialized field` option means that you can avoid schema update and start to use this field immediately. Keep in mind that in this case field types are limited to the following:
 
    - BigInt
    - Boolean
@@ -43,8 +43,9 @@ The Serialized Fields bundle adds a new field called Storage Type within New fie
 To create a serialized field via migration, use |SerializedFieldsExtension|. For example:
 
 .. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddSerializedFieldMigration.php
 
-    namespace Acme\Bundle\AppBundle\Migrations\Schema\v1_1;
+    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_5;
 
     use Doctrine\DBAL\Schema\Schema;
 
@@ -75,7 +76,7 @@ To create a serialized field via migration, use |SerializedFieldsExtension|. For
         public function up(Schema $schema, QueryBag $queries)
         {
             $this->serializedFieldsExtension->addSerializedField(
-                $schema->getTable('my_table'),
+                $schema->getTable('acme_document'),
                 'my_serialized_field',
                 'string',
                 [

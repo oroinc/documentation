@@ -5158,6 +5158,11 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/EntityExtendBundle/Migration/OroOptions.php" target="_blank">OroOptions</a>
 
+.. |@ConfigField| raw:: html
+
+   <a href="https://doc.oroinc.com/backend/configuration/annotation/config-field" target="_blank">@ConfigField</a>
+
+
 .. |AssociationManager| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/EntityExtendBundle/Entity/Manager/AssociationManager.php" target="_blank">AssociationManager</a>
@@ -5340,7 +5345,7 @@ Links (Dev)
 
 .. |Complex migration| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/EntityConfigBundle/Migrations/Schema/v1_2" target="_blank">Complex migration</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/5.0/src/Oro/Bundle/ProductBundle/Migrations/Schema/OroProductBundleInstaller.php" target="_blank">Complex migration</a>
 
 .. |RenameExtension| raw:: html
 
