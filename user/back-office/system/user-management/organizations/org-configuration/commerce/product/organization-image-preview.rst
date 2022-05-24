@@ -18,16 +18,10 @@ In the Product Images section of Commerce configuration settings, you can contro
    .. image:: /user/img/system/user_management/org_configuration/products/ImagePreviewOrganization.png
       :class: with-border
 
+.. note:: As of application version 4.2.11, the **Enable Original File Names** option is hidden. To configure the original image file names, navigate to :ref:`General Setup > Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` in the system configuration.
+
 4. Clear the **Use System** check box to change the system-wide setting.
-
-5. In the **General** section, configure the following options:
-
-   **Enable Original File Names** --- When enabled, the original image file name will be appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") will be replaced with "-" (dash).
-
-   For example, the name of the file is **coffee_maker/bosch_#RND123.jpg**, the system-generated hash value is "media/cache/attachment/product_gallery_main/5bae287538.jpg". If the option is enabled, the file name will be displayed in the storefront as follows "media/cache/attachment/product_gallery_main/5bae287538-coffee-maker-bosch-RND123.jpg"
-
-
-6. In the **Image Gallery Options** section, enable or disable the required options.
+5. In the **Image Gallery Options** section, enable or disable the required options.
 
 **Enable Image Preview on Product Listing**:
 
@@ -62,7 +56,7 @@ In the Product Images section of Commerce configuration settings, you can contro
 
      Flick through the pictures in the gallery by pressing < or > arrows without leaving the product page.
 
-7. Click **Save**.
+6. Click **Save**.
 
 .. finish
 

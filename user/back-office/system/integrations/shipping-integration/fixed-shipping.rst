@@ -7,7 +7,7 @@ Configure Fixed Product Shipping Cost Integration in the Back-Office
 
 .. hint:: This section is part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides a general understanding of the shipping concept in OroCommerce.
 
-.. hint:: Fixed Product Shipping Cost is available since v4.2.16. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: Fixed Product Shipping Cost is available since v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 In OroCommerce, you can set a fixed shipping cost to a product or a group of products and configure the required rules and surcharges for them. To enable this shipping method, first, create a Fixed Product Cost shipping integration to expose it as a shipping method for the storefront.
 

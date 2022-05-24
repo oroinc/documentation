@@ -12,7 +12,7 @@ To define the size and formats of the files, reduce the size of images to be upl
 To configure the upload settings globally:
 
 1. Navigate to **System > Configuration** in the main menu.
-2. In the **System Configuration** menu to the left, expand **General Setup** and click **Upload Settings**.
+2. Go to **System Configuration > General Setup > Upload Settings**.
 
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
@@ -45,12 +45,12 @@ To configure the upload settings globally:
 
    **PNG Resize Quality (%)** --- The setting provides two options for controlling the quality of .png images. *Preserve quality* enables the system to slightly resize the image with the full preservation of the quality. *Minimize file size* enables the system to resize the image to its minimal possible size while still keeping the high quality.
 
-9. In the **File Names** section, you can control whether to use original file names. By default, the setting is enabled.
+9. In the **File Names** section, you can control whether to use original file names.
 
    .. image:: /user/img/system/config_system/upload_settings_3.png
       :alt: File names section on global level
 
-   .. hint:: The **File Names** settings can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
+   .. hint:: The **File Names** setting is available since v4.2.11. and can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
 
    **Enable Original File Names** --- When enabled, the original file name is appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") are replaced with "-" (dash).
 

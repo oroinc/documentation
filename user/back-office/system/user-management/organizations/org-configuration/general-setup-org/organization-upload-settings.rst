@@ -23,12 +23,12 @@ To configure **MIME types** per organization:
 
 6. Add any MIME type by writing the required file or image format in the text box.
 
-7. In the **File Names** section, you can control whether to use original file names. By default, the setting is enabled.
+7. In the **File Names** section, you can control whether to use original file names.
 
    .. image:: /user/img/system/user_management/org_configuration/general/upload_settings_3.png
       :alt: File names section on organization level
 
-   .. hint:: The **File Names** settings can be configured :ref:`globally <admin-configuration-upload-settings>`, per organization and :ref:`per website <upload-settings--website>`.
+   .. hint:: The **File Names** setting is available since v4.2.11. and can be configured :ref:`globally <admin-configuration-upload-settings>`, per organization, and :ref:`per website <upload-settings--website>`.
 
    **Enable Original File Names** --- When enabled, the original file name is appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") are replaced with "-" (dash).
 

@@ -1,14 +1,14 @@
 Public and Private Emails
 =========================
 
-.. note:: The feature available starting from 4.2.10 platform.
+.. hint:: This feature is available since OroCommerce v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 During synchronization of email boxes, there are a set of emails that belongs to the business entities, such as
 to the Contact or Lead, and not belongs to them, for example, the correspondence between two users.
 
 There are two types of emails in the system. The first type includes emails with addresses tied to business entities, such as contacts, leads. The second type includes the rest, such as correspondence between two users in the system.
 
-Public and private emails were introduced to process access to these two different  types of emails.
+Public and private emails were introduced to process access to these two different types of emails.
 
 A public email is an email where at least one of the addresses used by recipients or senders is public.
 In other cases, the email is considered private.
