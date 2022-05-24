@@ -3,7 +3,7 @@
 Multi-Target Extended Associations
 ==================================
 
-The Oro |EntityExtendBundle| allows creating a particular type of relationship between entities named
+The Oro |EntityExtendBundle| allows to create a particular type of relationship between entities named
 **multi-target extended associations**. This relationship allows you to create a unidirectional association between
 some entity(s) and different kinds of other entities when types of target entities are not known or can be changed.
 
@@ -12,10 +12,10 @@ some entity(s) and different kinds of other entities when types of target entiti
 Introduction
 ------------
 
-Let's consider an example when you have an Email entity owned either by a user or a contact. To implement such
+Suppose you have an Email entity owned either by a user or a contact. To implement such
 relationship, you have two choices:
 
-- The first approach can be to use two regular Doctrine many-to-one associations, one for a user and another for contact.
+- The first approach can be to use two regular Doctrine many-to-one associations. One is for the user, and another for the contact.
   Also, to generalize how to work with the owner, you can create several helper methods in the Email entity,
   like ``getOwner`` and ``setOwner``.
 
@@ -554,9 +554,9 @@ For example, suppose you want to prohibit associating any activity with some ent
 
 The last thing to finish the configuration of your association is to create:
 
-* extensions for the entity config dumper and the entity generator. These extensions instruct the Oro EntityExtendBundle how to generate Doctrine mapping and PHP code for your association)
+* extensions for the entity config dumper and the entity generator. These extensions instruct the Oro EntityExtendBundle on how to generate Doctrine mapping and PHP code for your association.
 
-* migrations. This extension will add your association using migration scripts (see :ref:`Create an Extensions for Database Structure Migrations <backend-entities-migrations-create-extensions>` for more details).
+* migrations. This extension adds your association using migration scripts (see :ref:`Create an Extensions for Database Structure Migrations <backend-entities-migrations-create-extensions>` for more details).
 
 The following examples show how you can do it:
 

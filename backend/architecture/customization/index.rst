@@ -111,12 +111,13 @@ To enable it in the Oro application, register the bundle in the bundles.yml file
 This immediately enforces the customization changes defined in the bundle to apply to your Oro application.
 However, next, you may need to implement custom changes in the existing business logics to benefit from the enabled capabilities.
 
-[Symfony] Extend the Existing Bundle via Inheritance or Using Compiler Passes
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+..
+    [Symfony] Extend the Existing Bundle via Inheritance or Using Compiler Passes
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Use Symfony inheritance (e.g. override controllers, templates, routes of this parent bundle) to customize the existing Oro application bundle. For detailed information, please, see the :ref:`How to extend existing bundle <how-to-extend-existing-bundle>` topic in Oro documentation and |How to use compiler passes| in Symfony documentation.
+    Use Symfony inheritance (e.g. override controllers, templates, routes of this parent bundle) to customize the existing Oro application bundle. For detailed information, please, see the |How to use compiler passes| in Symfony documentation.
 
-.. note:: Inheritance techniques are easier to implement and maintain than the compiler pass approach.
+    .. note:: Inheritance techniques are easier to implement and maintain than the compiler pass approach.
 
 [Symfony] Replace Services
 """"""""""""""""""""""""""

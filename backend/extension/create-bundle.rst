@@ -14,17 +14,17 @@ Create a Bundle Manually
 First you need to specify name and namespace of your bundle. Symfony framework already has
 |best practices for bundle structure and bundle name| and we recommend to follow these practices and use them.
 
-Let us assume that we want to create the AcmeNewBundle and put it under the namespace ``Acme\Bundle\NewBundle``
+Let us assume that we want to create the AcmeDemoBundle and put it under the namespace ``Acme\Bundle\DemoBundle``
 in the ``/src`` directory. We need to create the corresponding directory structure and the bundle file with the following content:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/NewBundle/AcmeNewBundle.php
+   :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
 
-    namespace Acme\Bundle\NewBundle;
+    namespace Acme\Bundle\DemoBundle;
 
     use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-    class AcmeNewBundle extends Bundle
+    class DemoBundle extends Bundle
     {
     }
 
@@ -42,8 +42,8 @@ Basically, it is a regular Symfony bundle. The only difference is in the way it 
 ..
 ..
 ..     user@host:/var/www/vhosts/platform-application$ php bin/console generate:bundle
-..     Bundle namespace: Acme/Bundle/NewBundle
-..     Bundle name [AcmeNewBundle]:
+..     Bundle namespace: Acme/Bundle/DemoBundle
+..     Bundle name [AcmeDemoBundle]:
 ..     Target directory [/var/www/vhosts/platform-application/src]:
 ..     Configuration format (yml, xml, php, or annotation): yml
 ..     Do you want to generate the whole directory structure [no]?
@@ -76,10 +76,10 @@ Now you have all the required files to enable the new bundle. To enable the bund
 #. Create Resources/config/oro/bundles.yml with the following content:
 
    .. code-block:: yaml
-      :caption: src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
 
        bundles:
-           - Acme\Bundle\NewBundle\AcmeNewBundle
+           - Acme\Bundle\DemoBundle\AcmeDemoBundle
 
    This file provides a list of bundles to register --- all such files will be automatically parsed to load required bundles.
 
@@ -109,7 +109,7 @@ In case if your bundle is registered and active next output(alike one) will be d
 
     .. code-block:: none
 
-        "AcmeNewBundle": "Acme\\Bundle\\NewBundle\\AcmeNewBundle",
+        "AcmeNewBundle": "Acme\\Bundle\\DemoBundle\\AcmeDemoBundle",
 
 That is all --- your bundle is registered and active!
 
