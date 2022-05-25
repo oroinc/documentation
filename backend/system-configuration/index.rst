@@ -367,8 +367,8 @@ To add a new config scope:
    .. code-block:: yaml
 
           acme_test.provider.form_provider.test:
-              class: 'Acme\Bundle\SomeBundle\Provider\TestConfigurationFormProvider'
-              parent: 'oro_config.provider.abstract_provider'
+              class: Acme\Bundle\SomeBundle\Provider\TestConfigurationFormProvider
+              parent: oro_config.provider.abstract_provider
               lazy: true
 
    add a new action to manipulate data:

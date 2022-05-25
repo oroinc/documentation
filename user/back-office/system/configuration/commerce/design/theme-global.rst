@@ -62,8 +62,6 @@ To configure the storefront theme options globally:
 
    *Default template* (tabbed), *Short page*, *Two-column page*, and *List page* templates are available out of the box. For preview and more information on these options, see the :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>` topic.
 
-   Select the **Use Parent Scope Value** check box to use the default value.
-
 5. In the **Filter Settings** section, specify how the multi-select filters should look in the storefront. Available options are *Drop-down* and *All at once*.
 
    For example, this is how the user menu looks for different values:
