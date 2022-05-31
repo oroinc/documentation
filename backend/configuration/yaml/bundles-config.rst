@@ -1117,8 +1117,24 @@ The default configuration for extension with alias "oro_translation":
         debug_translator:     false
         locales:              []
         default_required:     true
-        manager_registry:     doctrine
         templating:           '@OroTranslation/default.html.twig'
+        # The configuration of Gedmo translatable entities that should be synchronized with the translator component. All translation messages for these entities should be in the "entities" domain.
+        translatable_dictionaries:
+
+            # Example:
+            Acme\Bundle\AppBundle\Entity\Country: { name: { translation_key_prefix: acme_country., key_field_name: iso2Code } }
+
+            # Prototype
+            entity class:
+
+                # Prototype
+                translatable field name:
+
+                    # The prefix for the translation message key.
+                    translation_key_prefix: ~
+
+                    # The field name where the key is stored.
+                    key_field_name:       ~
 
 oro_user
 ________

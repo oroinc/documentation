@@ -62,16 +62,6 @@ Once the default language is changed, update the label for the required product 
 
 4. Click **Save and Close** (or its version in your default language).
 
-5. Update the translation cache by clicking on the link in the pop-up dialog.
-
-   .. image:: /user/img/system/localization/labels/update_translation_cache.png
-      :alt: Click on the link to update cache once the label is translated
-
-6. Once you are redirected to the translations page, click **Update Cache** (or its version in your default language) on the top right.
-
-   .. image:: /user/img/system/localization/labels/update_cache_page.png
-      :alt: Update translation cache
-
 The product attribute label and it options are updated in the storefront.
 
    .. image:: /user/img/system/localization/labels/label_updated.png

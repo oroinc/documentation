@@ -39,15 +39,10 @@ This way, file `<YourBundleDirectory>/Resources/translations/workflows.en.yml` i
 
 **Step 3**
 
-When the translation file is updated, you might need to load translations into the system from that file; for this, run the following command:
-
-.. code-block:: none
-
-
-    bin/console oro:translation:load
+When the translation file is updated, you might need to load translations into the system from that file; for this, run the :ref:`oro:translation:load <oro-translation-load-command>` command.
 
 Now, if you need to **update** an existing workflow, you can perform the same operations because dumped translations of `oro:workflow:translations:dump` will be filled by the existing and newly created nodes of the text. For full customization, (replace config nodes, rename them), dump the output of command elsewhere so you could manually choose what to update.
 
 .. hint::
-    - To rebuild translation cache, use command ``oro:translation:rebuild-cache``.
-    - to download and update translations, use command ``oro:translation:update``.
+    - To rebuild translation cache, use the :ref:`oro:translation:rebuild-cache <oro-translation-rebuild-cache-command>` command.
+    - to download and update translations, use the :ref:`oro:translation:update <oro-translation-update-command>` command.

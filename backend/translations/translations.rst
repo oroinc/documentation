@@ -1,7 +1,7 @@
 .. _dev-translation:
 
-Content and User Iterface Translation
-=====================================
+Content and User Interface Translation
+======================================
 
 There are 3 ways to translate content displayed in Oro applications to a user. You can use:
 
@@ -10,6 +10,8 @@ There are 3 ways to translate content displayed in Oro applications to a user. Y
 * `LocalizedFallbackValue Entity from OroLocaleBundle`_
 
 This topic explains when to use each of the three approaches and provides implementation examples.
+
+.. _dev-translation--symfony-translator:
 
 Standard Symfony Translator
 ---------------------------
@@ -30,25 +32,22 @@ To translate labels, use the Translation component, which is one of the main Sym
 Oro application adds the translation functionality on top of Symfony's standard approach which enables modification of
 translations via UI.
 
-To use this approach, add the translation file to the bundle: **Resources/translations/messages.en.yml**
+To use this approach, add translations to |Symfony Translation Files|, e.g. `Resources/translations/messages.en.yml`:
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     oro:
        translation:
            some_field:
                label: Localized value
 
-Use the Symfony translator to translate a label in the `twig` template:
-**Resources/views/Form/form.html.twig**
+Use the Symfony translator to translate a label in the ``twig`` template:
 
-.. code-block:: php
+.. code-block:: twig
 
+    {{ 'oro.translation.some_field.label'|trans }}
 
-    {{ ‘oro.translation.some_field.label’|trans }}
-
-or in the `php` code:
+or in the ``php`` code:
 
 .. code-block:: php
 
@@ -72,7 +71,7 @@ or in the `php` code:
         }
     }
 
-More information on how to use it is available in |Symfony Documentation1|.
+More information on how to use it is available in |Symfony Documentation (Translations)|.
 
 Translatable Doctrine Extension
 -------------------------------
@@ -100,7 +99,7 @@ able to filter and sort data by Country and Region in a grid with addresses. In 
 Such fields are displayed in the UI in the selected language. All requests to the database will change in order for the
 translations grid to retrieve data based on the current locale.
 
-Bellow is an example of an entity which must work with `Gedmo/Translatable` for the `name` field of this entity.
+Bellow is an example of an entity which must work with ``Gedmo/Translatable`` for the ``name`` field of this entity.
 
 .. code-block:: php
 
@@ -162,7 +161,7 @@ Bellow is an example of an entity which must work with `Gedmo/Translatable` for 
        }
    }
 
-Also, `Gedmo/Translatable` requires a dictionary with all translations for the original entity fields:
+Also, ``Gedmo/Translatable`` requires a dictionary with all translations for the original entity fields:
 
 
 .. code-block:: php
@@ -187,11 +186,10 @@ Also, `Gedmo/Translatable` requires a dictionary with all translations for the o
     }
 
 
-For the grid to have working translations for entities with `Gedmo` fields, add the `HINT_TRANSLATABLE` hint:
-**Resources/config/oro/datagrids.yml**
+For the grid to have working translations for entities with ``Gedmo`` fields, add the ``HINT_TRANSLATABLE`` hint
+in `Resources/config/oro/datagrids.yml` configuration file:
 
 .. code-block:: php
-
 
     datagrids:
        acme-grid:
@@ -202,11 +200,9 @@ For the grid to have working translations for entities with `Gedmo` fields, add 
                hints:
                    - HINT_TRANSLATABLE
 
-Below is a simple example of a grid configuration which uses the hint: **Resources/config/oro/datagrids.yml**
-
+Below is a simple example of a grid configuration that uses the hint:
 
 .. code-block:: php
-
 
     datagrids:
        acme-grid:
@@ -261,7 +257,7 @@ exist, it is taken from the parent. This allows for setting up a flexible transl
 
 To implement this approach, use the :ref:`LocalizedFallbackValue <bundle-docs-platform-locale-bundle-localization>`.
 
-To use `LocalizedFallbackValue` for fields into the entity, make it is extendable:
+To use ``LocalizedFallbackValue`` for fields into the entity, make it is extendable:
 
 .. code-block:: php
 
@@ -344,7 +340,8 @@ inside the bundle class:
         }
     }
 
-As the result, a proxy class is generated in the application cache: **cache/prod/oro_entities/Extend/Entity/EX_OroAcmeBundle_Acme.php**
+As the result, a proxy class is generated in the application cache:
+``cache/prod/oro_entities/Extend/Entity/EX_OroAcmeBundle_Acme.php``
 
 .. code-block:: php
 
@@ -391,7 +388,7 @@ To be able to provide translations in the UI, use the following example of the f
         }
     }
 
-To retrieve a name for the `Localization`, it is enough to use the `getName()` method.
+To retrieve a name for the ``Localization``, it is enough to use the ``getName()`` method.
 
 **More Sources on Translations**
 

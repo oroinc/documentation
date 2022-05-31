@@ -80,12 +80,7 @@ Create a new localization with a specific configuration by clicking **Create Loc
 
 6. Click **Save** in the top right.
 
-7. Now, you need to update the translation cache so that all the changes could enter into force.
-
-   * Click the reference link at the top to move to the **Translations** page.
-   * Click **Update Cache** in the top right.
-
-Once the localization is configured and the cache is updated, you need to enable it in the system configuration menu. Proceed to the :ref:`Localization Settings <localization--localization>` section and follow the steps described in the guide.
+Once the localization is configured, you need to enable it in the system configuration menu. Proceed to the :ref:`Localization Settings <localization--localization>` section and follow the steps described in the guide.
 
 .. finish
 

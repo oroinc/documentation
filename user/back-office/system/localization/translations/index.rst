@@ -2,6 +2,8 @@
 
 .. _localization--translations:
 
+.. _localization--translations--config:
+
 Configure Translations in the Back-Office
 =========================================
 
@@ -15,51 +17,45 @@ To add or edit the text translated to the target language, navigate to **System 
 
 The following information about the translations is available in the All Translations list:
 
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| Name                     | Description                                                                                                                    |
-+==========================+================================================================================================================================+
-| LANGUAGE                 | The language of the text system elements available to the user.                                                                |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| TRANSLATED               | The status indicates whether the text items are translated to the target language (Yes/No).                                    |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| ENGLISH TRANSLATION      | The column contains the english translation of the text items.                                                                 |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| TRANSLATED VALUE         | The translation value of the text item to the target language.                                                                 |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| CURRENT (CACHED) VALUE   | The translation of the system element currently displayed to the user on the UI of the Oro application.                        |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| KEY                      | A coded text string that identifies the text system element and is used to find its translation to the target language         |
-|                          | (e.g. oro.ui.updated_at) in Oro applications.                                                                                  |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| DOMAIN                   | The logical affiliation to a particular functionality that organises linguistic sources by domain (e.g. tooltips, security,    |
-|                          | entities, jsmessages, maintenance, install, workflows, messages, validators, HWIOAuthBundle).                                  |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| CONTEXT                  | The detailed location of the translated functional component (e.g., Workflow "Checkout" -> Name).                              |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------+
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Name                | Description                                                                                                                    |
++=====================+================================================================================================================================+
+| LANGUAGE            | The language of the text system elements available to the user.                                                                |
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| TRANSLATED          | The status indicates whether the text items are translated to the target language (Yes/No).                                    |
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| ENGLISH TRANSLATION | The column contains the english translation of the text items.                                                                 |
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| TRANSLATED VALUE    | The translation value of the text item to the target language.                                                                 |
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| CURRENT VALUE       | The translation of the system element currently displayed to the user on the UI of the Oro application.                        |
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| KEY                 | A coded text string that identifies the text system element and is used to find its translation to the target language         |
+|                     | (e.g. oro.ui.updated_at) in Oro applications.                                                                                  |
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| DOMAIN              | The logical affiliation to a particular functionality that organises linguistic sources by domain (e.g. tooltips, security,    |
+|                     | entities, jsmessages, maintenance, install, workflows, messages, validators, HWIOAuthBundle).                                  |
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| CONTEXT             | The detailed location of the translated functional component (e.g., Workflow "Checkout" -> Name).                              |
++---------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 .. important::
 
    Remember a rule of thumb:
 
-   The translations which are currently displayed to the user in the Oro application are located in the **Current (cached) value** column. This column inherits the values from the **Translated value** column upon update. If there is no translation provided for a specific language, the **Current (cached) value** column is populated with the default English translation mentioned in the **English translation** column. If the system element doesn't have the English equivalent, the **Current (cached) value** column takes the value from the **Key** column.
+   The translations which are currently displayed to the user in the Oro application are located in the **Current value** column. This column inherits the values from the **Translated value** column upon update. If there is no translation provided for a specific language, the **Current value** column is populated with the default English translation mentioned in the **English translation** column. If the system element doesn't have the English equivalent, the **Current value** column takes the value from the **Key** column.
 
    .. image:: /user/img/system/localization/translations_rule_of_thumb.png
 
+.. note::
+
+  Presence of a high number of custom translations affects website performance. To avoid this, consider
+  moving these translations to the source code, as described in the :ref:`developer documentation <dev-translation--add-to-source-code>`.
 
 Verify Translations
 ^^^^^^^^^^^^^^^^^^^
 
 View and check the validity of all the available UI element translations. Use search and filters to help find the necessary text element.
-
-.. _update-translation-cache:
-
-Update Cached Translated Values
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If the translations were imported manually or from the Crowdin website as described in the :ref:`Languages <localization--languages>` section, they appear in the **Translated value** column.
-After the import or an update, click **Update Cache** on the top right to populate the **Current (cached) value** column with the updated information from the **Translated value** column.
-
-  .. image:: /user/img/system/localization/translations_update_cache.png
 
 Update Translated Value
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,7 +65,6 @@ Add a translation to any UI element or update the existing one by proceeding a f
   1) Double-click the cell in the **Translated Value** column.
   #) Type in the translation of the required system items.
   #) Click |IcActivate| to save the changes.
-  #) Click **Update Cache** on the top right to enable the translation.
 
      .. image:: /user/img/system/localization/translations_add.png
 

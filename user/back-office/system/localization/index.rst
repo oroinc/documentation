@@ -24,8 +24,6 @@ To translate the Oro application's storefront and back-office to a desired langu
 
     **Step 2**. In the :ref:`Translations <localization--translations>` section, check the existing and imported translations for the UI system elements (e.g., labels, checkboxes, buttons, notifications, etc.). There, you can add, modify, or delete translation texts for these items if necessary.
 
-              .. note:: Remember to :ref:`update the cache <update-translation-cache>` after each translation adjustment.
-
     **Step 3**. In the :ref:`Localizations <localization--localizations>` section, create a localization that inherits a translation from another language when the translation to the main language of the localization is not available. This helps avoid double efforts when translating to similar and related languages and dialects of the same language.
 
     **Step 4**. Once the necessary localizations are created, you can now translate the content elements (e.g., names, titles, labels, descriptions, etc.) using inline :ref:`content translation <content-translation>` available for most of the text fields.

@@ -66,8 +66,6 @@ To add a translation to the cookie banner to present information in the desired 
    * *oro_cookie_banner.button_label*
 
 #. Add translation for the banner text and label.
-#. Click **Update Cache** on the top right.
-#. Once cache is updated, the translated banner will be displayed in the storefront.
 
 **Related Topics**
 

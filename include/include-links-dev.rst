@@ -1309,9 +1309,13 @@ Links (Dev)
 
    <a href="https://www.slideshare.net/YevhenShyshkin/data-localization-and-translation" target="_blank">Data Localization and Translation (Slideshare)</a>
 
-.. |Symfony Documentation1| raw:: html
+.. |Symfony Documentation (Translations)| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/translation.html" target="_blank">Symfony Documentation</a>
+   <a href="https://symfony.com/doc/current/translation.html" target="_blank">Symfony Documentation</a>
+
+.. |Symfony Translation Files| raw:: html
+
+   <a href="https://symfony.com/doc/current/translation.html#translation-resource-file-names-and-locations" target="_blank">translation files</a>
 
 .. |Gedmo/Translatable| raw:: html
 

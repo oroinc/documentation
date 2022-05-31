@@ -534,7 +534,7 @@ Sometimes you may require to clear the application cache (for example, after app
 Cached Translated Values
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-:ref:`Execute Update Cached Translated Values operation <update-translation-cache>`
+:ref:`To add translations to the source code <dev-translation--add-to-source-code>`, run:
 
 .. code-block:: none
 
@@ -544,7 +544,6 @@ API Cache
 ~~~~~~~~~
 
 :ref:`Warmup API and API doc caches <oroapidoccacheclear-command>`
-
 
 .. code-block:: none
 

@@ -72,10 +72,7 @@ Now, once the language has appeared in the list, you can perform the following a
 
 4. Click |IcActivate| to enable the language for the application.
 
-
-Now, you need to update the translation cache so that all the changes could enter into force. Click the reference link at the top and follow the steps described in the :ref:`Translations <localization--translations>` section.
-
-   .. image:: /user/img/system/localization/languages_reference_link.png
+   .. important:: Some languages in the grid may have the update status and the button from Crowdin missing. This means that this language is disabled from management via Crowdin and that a developer manages data. You need to contact your administrator or developer to update data from the Crowdin for such a language.
 
 .. finish
 

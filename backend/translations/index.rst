@@ -19,3 +19,4 @@ To lean more about translating static and dynamic content, localization paramete
    Data Fixtures <data-fixtures>
    migrations
    localization
+   translations-add-to-source-code
