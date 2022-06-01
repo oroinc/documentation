@@ -6008,3 +6008,18 @@ Links (Dev)
    <a href="https://github.com/oroinc/crm/tree/5.0/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
 
 
+.. |Stripe account dashboard| raw:: html
+
+   <a href="https://dashboard.stripe.com/test/dashboard" target="_blank">Stripe account dashboard</a>
+
+.. |Stripe documentation| raw:: html
+
+   <a href="https://stripe.com/docs/js" target="_blank">Stripe documentation</a>
+
+.. |Finalize payments on the server| raw:: html
+
+   <a href="https://stripe.com/docs/payments/accept-a-payment-synchronously" target="_blank">Finalize payments on the server</a>
+
+.. |Style object| raw:: html
+
+   <a href="https://stripe.com/docs/js/appendix/style" target="_blank">Style object</a>

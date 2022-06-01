@@ -29,6 +29,8 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
   * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
   * :ref:`CyberSource Payment Service <user-guide--payment--payment-providers-cybersource>`
+  * :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`
+
 
 * :ref:`Manage Integrations: Shipping Method Integration <user-guide--shipping--configuration--common-details>`
 

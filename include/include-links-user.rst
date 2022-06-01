@@ -838,3 +838,12 @@ Links (User)
 .. |Twitter| raw:: html
 
    <a href="https://twitter.com/OroDocs" target="_blank">Twitter</a>
+
+.. |Stripe| raw:: html
+
+   <a href="https://stripe.com/" target="_blank">Stripe</a>
+
+.. |add your business details| raw:: html
+
+   <a href="https://dashboard.stripe.com/account/onboarding/business-structure" target="_blank">add your business details</a>
+
