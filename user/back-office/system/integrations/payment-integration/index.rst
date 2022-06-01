@@ -43,6 +43,8 @@ You integrate OroCommerce with the following systems and services:
 * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
 * :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
+* :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`
+
 
 .. hint:: The default OroCommerce application includes the following payment methods out-of-the-box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extensions Store| to download other payment extensions that you can pair with your OroCommerce applications.
 
@@ -87,5 +89,7 @@ The payment methods that were based on this integration are no longer usable in 
    InfinitePay Payment Service <infinitepay/index>
    Ingenico Payment Service <ingenico/index>
    CyberSource Payment Service <cybersource/index>
+   Stripe Payment Service <stripe/index>
    Payments at Checkout <checkout/index>
+
 

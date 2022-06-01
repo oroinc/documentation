@@ -5999,6 +5999,22 @@ Links (Dev)
 
    <a href="https://www.infinitepay.de/" target="_blank">Infinite Pay</a>
 
+.. |Stripe account dashboard| raw:: html
+
+   <a href="https://dashboard.stripe.com/test/dashboard" target="_blank">Stripe account dashboard</a>
+
+.. |Stripe documentation| raw:: html
+
+   <a href="https://stripe.com/docs/js" target="_blank">Stripe documentation</a>
+
+.. |Finalize payments on the server| raw:: html
+
+   <a href="https://stripe.com/docs/payments/accept-a-payment-synchronously" target="_blank">Finalize payments on the server</a>
+
+.. |Style object| raw:: html
+
+   <a href="https://stripe.com/docs/js/appendix/style" target="_blank">Style object</a>
+
 .. |RFM| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/RFM_(market_research)" target="_blank">RFM</a>
