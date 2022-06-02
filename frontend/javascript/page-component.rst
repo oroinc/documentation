@@ -155,5 +155,23 @@ When the `init-on` container includes a view-component that renders HTML and has
 
 In this example, ``company-addresses-view`` is initialized and rendered without a user's interaction with the interface.
 
+.. note:: Be aware that although possible, the approach with ``data-page-component-init-on="asap"`` is not recommended. It requires the addition of an attribute to the parent element and then adds attributes to all sibling components that should ignore the postponed initialization.
+
+The ``data-page-component-init-on`` attribute also allows to define the CSS selector to delegate event listeners to a specific element within same layout and postpone component initialization until a DOM event occurs.
+
+.. code-block:: html
+
+    <form id="foo-form">
+        <label>
+            Country <input name="country"
+                           data-page-component-init-on="click,focusin #foo-form"
+                           data-page-component-module="mybundle/js/app/components/country-suggest-component"/>
+        </label>
+        <div data-page-component-view="mybundle/js/app/views/company-addresses-view"></div>
+    </form>
+
+In the example above, the ``init-on`` action is delegated to the ``#foo-form`` element. Component ``mybundle/js/app/components/country-suggest-component`` is initialized on a click or focusin event, while the  ``mybundle/js/app/views/company-addresses-view`` component is initialized from the start.
+This approach is preferable over using the ``data-page-component-init-on="asap"`` attribute to ignore the postponed initialization.
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
