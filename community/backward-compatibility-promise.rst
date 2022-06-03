@@ -11,7 +11,7 @@ Our Backward Compatibility Promise
 Code Compatibility Promise
 --------------------------
 
-In compliance with our :ref:`Release Process <doc--community--release>` and to ensure seamless upgrades, we promise the following::
+In compliance with our :ref:`Release Process <doc--community--release>` and to ensure seamless upgrades, we promise the following:
 
 1. MAJOR and MINOR releases MAY introduce backward-incompatible changes. MAJOR, MINOR, and PATCH are SemVer terms that describe release versions (e.g., 2.1.4), where 2 is a MAJOR, 1 is a MINOR, and 4 is a PATCH release (MAJOR.MINOR.PATCH).
 2. Internal implementation and some parts of the logic MAY be changed even in PATCH releases, however, they should preserve the external interface following the instructions provided below.
