@@ -44,15 +44,17 @@ This section summarizes the limitations and agreements that are important for sh
         | Related Entity        | User               |
 
   .. code-block:: yaml
+    :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
 
-
-      Workflow Edit Form:
-        selector: 'form[name="oro_workflow_definition_form"]'
-        class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
-        options:
-          mapping:
-            Name: 'oro_workflow_definition_form[label]'
-            Related Entity: 'oro_workflow_definition_form[related_entity]'
+      oro_behat_extension:
+        elements:
+          Workflow Edit Form:
+            selector: 'form[name="oro_workflow_definition_form"]'
+            class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+            options:
+              mapping:
+                Name: 'oro_workflow_definition_form[label]'
+                Related Entity: 'oro_workflow_definition_form[related_entity]'
 
 - Use menu and links to get the right :ref:`pages <behat-page-element>` instead of the direct page URL
 
@@ -278,16 +280,16 @@ Moreover, you can inject into the behat context dependencies from either behat o
 it as a service in ``services.yml`` located besides the ``behat.yml``:
 
 .. code-block:: yaml
-    :caption: AcmeBehatBundle/Tests/Behat/behat.yml
+    :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
 
     oro_behat_extension:
       suites:
-        OroCustomerAccountBridgeBundle:
+        AcmeDemoBundle:
           contexts:
             - Oro\Bundle\ImportExportBundle\Tests\Behat\Context\ImportExportContext
 
 .. code-block:: yaml
-    :caption: AcmeBehatBundle/Tests/Behat/services.yml
+    :caption: Acme/Bundle/DemoBundle/Tests/Behat/services.yml
 
     services:
       Oro\Bundle\ImportExportBundle\Tests\Behat\Context\ImportExportContext:
@@ -306,13 +308,12 @@ Autoload Suites
 During initialization, the extension creates a test suite with a bundle name if any ``Tests/Behat/Features`` directory exists in a bundle.
 Thus, if the bundle has no Features directory - no test suite would be created for it.
 
-If you need some specific feature steps for your bundle, create the ``AcmeDemoBundle\Tests\Behat\Context\FeatureContext`` class. This context is added to the suite with other common contexts.
+If you need some specific feature steps for your bundle, create the ``Acme\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext`` class. This context is added to the suite with other common contexts.
 The complete list of common context is configured in the behat configuration file under the ``shared_contexts``.
 
 You can manually configure test suite for a bundle in the application behat configuration:
 
 .. code-block:: yaml
-
 
     default: &default
       suites:
@@ -324,12 +325,12 @@ You can manually configure test suite for a bundle in the application behat conf
             - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
             - Oro\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext
           paths:
-            - 'vendor/Acme/DemoBundle/Tests/Behat/Features'
+            - 'vendor/Acme/Bundle/DemoBundle/Tests/Behat/Features'
 
-or in a bundle behat configuration ``{BundleName}/Tests/Behat/behat.yml``:
+or in a bundle behat configuration ``{BundlePath}/Tests/Behat/behat.yml``:
 
 .. code-block:: yaml
-
+    :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
 
     oro_behat_extension:
       suites:
@@ -366,10 +367,10 @@ Elements
 Elements is a service layer in behat tests. They wrap the complex business logic. Take a minute to investigate base Mink |NodeElement|.
 
 It has many public methods; some of them are applicable only to certain elements. Every Bundle test can contain a particular number of elements.
-All elements must be described in ``{BundleName}/Tests/Behat/behat.yml`` the following way:
+All elements must be described in ``{BundlePath}/Tests/Behat/behat.yml`` the following way:
 
 .. code-block:: yaml
-
+    :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
 
     oro_behat_extension:
       elements:
@@ -420,7 +421,7 @@ By default, tests use the |named field selector| to map form fields. Name field 
       elements:
         Payment Method Config Type Field:
           class: Oro\Bundle\PaymentBundle\Tests\Behat\Element\PaymentMethodConfigType
-        PaymentRuleForm:
+        Payment Rule Form:
           selector: "form[id^='oro_payment_methods_configs_rule']"
           class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
           options:
@@ -584,7 +585,7 @@ Sometimes you need many different entities with complex relationships. In such c
 
 .. hint:: See |Alice documentation2| for more information.
 
-Fixtures should be located in the ``{BundleName}/Tests/Behat/Features/Fixtures`` directory. To load a fixture before the feature tests execution, add a tag (annotation) that is constructed using the following convention ``@fixture-BundleName:fixture_file_name.yml``, e.g.:
+Fixtures should be located in the ``{BundlePath}/Tests/Behat/Features/Fixtures`` directory. To load a fixture before the feature tests execution, add a tag (annotation) that is constructed using the following convention ``@fixture-BundleName:fixture_file_name.yml``, e.g.:
 
 .. code-block:: gherkin
 
@@ -627,7 +628,8 @@ Additionally, Alice allows you to |include files| via extension, so you can impo
     include:
         - '@OroCustomerBundle/Tests/Behat/Features/Fixtures/CustomerUserAmandaRCole.yml'
 
-**You should always include fixtures from other bundles with entities that were declared within that bundle see :ref:`Conventions <behat-conventions>`.**
+**You should always include fixtures from other bundles with entities that were declared within that bundle see** :ref:`Conventions <behat-conventions>`.
+
 
 .. _behat-entity-references:
 
@@ -636,7 +638,7 @@ Entity References
 
 You can use references to the entities in both inline and |alice fixtures|.
 
-``{Bundle}\Tests\Behat\ReferenceRepositoryInitializer`` used to create references for objects that already exist in the database.
+``{BundlePath}\Tests\Behat\ReferenceRepositoryInitializer`` used to create references for objects that already exist in the database.
 
 * It is prohibited to modify or add new entities within Initializer.
 * It should implement ``ReferenceRepositoryInitializerInterface`` and should not have dependencies.
@@ -672,7 +674,7 @@ Each feature can have alice fixtures, :ref:`added by tags <behat-alice-fixtures>
 Write a Feature
 ---------------
 
-Every bundle should contain its own behat tests for features in the ``{BundleName}/Tests/Behat/Features/`` directory.
+Every bundle should contain its own behat tests for features in the ``{BundlePath}/Tests/Behat/Features/`` directory.
 Every feature is a separate file with the ``.feature`` extension and a specific syntax.
 
 .. hint:: See more at |Cucumber doc reference|.
