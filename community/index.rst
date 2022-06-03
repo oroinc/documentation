@@ -149,6 +149,11 @@ Learn about Release Versions and Dates
 
 Please refer to the :ref:`Understand Release Process <doc--community--release>` topic to learn more about Oro versioning strategy, release and support cycle, and upgrade recommendations.
 
+Our Backward Compatibility Promise
+----------------------------------
+
+Please refer to the :ref:`Our Backward Compatibility Promise <doc--community--backward-compatibility>` topic to learn more about Oro Backward Compatibility Promise.
+
 .. toctree::
    :includehidden:
    :titlesonly:
@@ -158,6 +163,7 @@ Please refer to the :ref:`Understand Release Process <doc--community--release>` 
    contribute/index
    issues
    release-process
+   backward-compatibility-promise
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
