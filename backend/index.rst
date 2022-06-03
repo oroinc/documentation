@@ -82,6 +82,7 @@ Backend Developer Guide is an essential resource for developers that provides co
       <li><a class="" href="extend-crm/">Extending OroCRM</a></li>
       <li><a class="tag-important" href="extend-commerce/">Extending OroCommerce</a></li>
       <li><a class="tag-very-important" href="api/">API Developer Guide</a></li>
+      <li><a class="" href="organization-types/">Organization Types</a></li>
    </ul>
 
 
@@ -114,5 +115,6 @@ Backend Developer Guide is an essential resource for developers that provides co
    third-party-extensions/index
    automated-tests/index
    api/index
+   organization-types/index
 
 

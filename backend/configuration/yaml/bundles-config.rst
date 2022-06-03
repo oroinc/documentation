@@ -1006,6 +1006,27 @@ The default configuration for extension with alias "oro_oauth2_server":
             # The list of security firewalls for which OAuth 2.0 authorization should be enabled.
             oauth_firewalls:      []
 
+oro_organization_pro
+____________________
+
+The default configuration for extension with alias "oro_organization_pro":
+
+.. code-block:: yaml
+
+    oro_organization_pro:
+
+        # The list of security token classes that should ignore a preferred organization for a user.
+        ignore_preferred_organization_tokens: []
+
+        # The configuration of the organization types feature.
+        organization_types:
+
+            # Whether the organization types feature is enabled or not.
+            enabled:              true
+
+            # A list of organization types that should be disabled.
+            disabled_organization_types: []
+
 oro_paypal
 __________
 

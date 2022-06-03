@@ -577,7 +577,7 @@ When collecting entities to search, information about the owner and the organiza
 
 Every search query is ACL protected with Search ACL helper. This helper limits data with the current access levels for entities which are used in the query.
 
-Organization Сontext
+Organization Context
 ^^^^^^^^^^^^^^^^^^^^
 
 As mentioned previously, each record is associated with an owning organization. When a user logs into the system,

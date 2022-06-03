@@ -18,6 +18,7 @@ To create a new organization in the Oro applications:
 3. In the **General** section, provide the following details:
 
    * **Status** --- The current status of the organization (active or inactive).
+   * **Organization Type** --- An :ref:`organization type <user-management-organization-types>` is a set of predefined :ref:`restrictions and limitations provided by a developer <dev-organization-types>`. By default, all organizations are assigned to the **General** organization type, which means that an organization is allowed access to all functionality without any restrictions or limitations. This field is only available in the Enterprise edition and when there is at least one organization type in the application.
    * **Name** --- The name used to refer to the organization on the interface.
    * **Description** --- Short description of the organization record.
 
