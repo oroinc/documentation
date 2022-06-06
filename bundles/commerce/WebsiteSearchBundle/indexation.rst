@@ -336,3 +336,107 @@ And here is what search index might contain after the indexation:
             all_text_2: "PR2 Второй продукт",
         }
     }
+
+Partial Indexation
+------------------
+
+Partial indexation is a feature that reduces the load on the engine by updating the index partially.
+
+Index Groups
+^^^^^^^^^^^^
+
+The index is divided into groups, which include specific fields that should be used in the update process.
+
+Out of the box, the following indexation field groups are configured for the Product entity:
+
+- *main* - all values that affect the `all_text` fields  (ID, SKU, units, type, attribute, etc.) 
+
+- *image* - product images.
+
+- *price* - product prices.
+
+- *visibility* - product visibility.
+
+- *order* - last ordered date.
+
+Group Configuration
+^^^^^^^^^^^^^^^^^^^
+
+To configure partial indexation, update the `website_search.yml` configuration file and add a `group` field to the `fields` section.
+
+An example configuration:
+
+.. code-block:: yaml
+
+
+    Oro\Bundle\ProductBundle\Entity\Product:
+    fields:
+        -
+            name: minimal_price_CPL_ID_CURRENCY_UNIT
+            type: decimal
+            group: pricing
+        -
+            name: minimal_price_CPL_ID_CURRENCY
+            type: decimal
+            group: pricing
+
+        -   name: minimal_price_PRICE_LIST_ID_CURRENCY_UNIT
+            type: decimal
+            group: pricing
+
+        -   name: minimal_price_PRICE_LIST_ID_CURRENCY
+            type: decimal
+            group: pricing
+
+To specify the field groups that should be reindexed, add the indexation context parameter (e.g., partial). It indicates which parts of the search index document should be updated. The event listeners responsible for the re-indexation check this parameter and decide whether to collect the required data or skip it.
+
+An example of the indexation request for a pricing field group:
+
+.. code-block:: php
+
+
+    namespace Acme\Bundle\Index;
+
+    use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+    use Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent;
+
+    class FooReindexProductPricing
+    {
+        public function triggerReindex(): void
+        {
+            /** @var EventDispatcherInterface $eventDispatcher */
+            $eventDispatcher = $this->container->get('event_dispatcher');
+
+            $event = new ReindexationRequestEvent([Product::class], [], [], true, ['pricing']);
+            $eventDispatcher->dispatch($event, ReindexationRequestEvent::EVENT_NAME);
+        }
+    }
+
+
+To restrict index processing for a specific group, use `ContextTrait`.
+
+An example of the indexation listener for a pricing field group:
+
+.. code-block:: php
+
+
+    namespace Acme\Bundle\EventListener;
+
+    use Oro\Bundle\WebsiteSearchBundle\Engine\Context\ContextTrait;
+
+    class FooProductPricingIndexerListener
+    {
+        use ContextTrait;
+
+        public function onProductSearchIndex(IndexEntityEvent $event)
+        {
+            if (!$this->hasContextFieldGroup($event->getContext(), 'pricing')) {
+                return;
+            }
+
+            // ...
+        }
+    }
+
+.. note::
+    Keep in mind that to include the field data in `ALL TEXT`, you must use the main field group only.
