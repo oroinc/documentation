@@ -6031,4 +6031,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
 
+.. |Sending Emails with Mailer| raw:: html
 
+   <a href="https://symfony.com/doc/current/mailer.html#transport-setup" target="_blank">Sending Emails with Mailer</a>

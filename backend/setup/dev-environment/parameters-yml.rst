@@ -8,7 +8,7 @@ Infrastructure-Related Configuration Parameters
 Infrastructure-related configuration parameters are stored in the *config/parameters.yml* file and grouped in the following way:
 
 * The ``database_`` parameters are used to connect to the database.
-* The ``mailer_`` parameters define settings used to deliver emails sent by the application.
+* The ``mailer_`` parameters define settings used to deliver emails sent by the application. See |Sending Emails with Mailer| for more information.
 * The ``websocket_`` parameters define settings for the web UI.
 * The ``search_`` parameters are used to connect to the search engine.
 * The ``website_search_`` parameters are used to connect to the website search engine.
