@@ -6023,3 +6023,7 @@ Links (Dev)
 .. |Style object| raw:: html
 
    <a href="https://stripe.com/docs/js/appendix/style" target="_blank">Style object</a>
+
+.. |Sending Emails with Mailer| raw:: html
+
+   <a href="https://symfony.com/doc/current/mailer.html#transport-setup" target="_blank">Sending Emails with Mailer</a>
