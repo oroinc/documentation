@@ -163,8 +163,8 @@ Please refer to the :ref:`Our Backward Compatibility Promise <doc--community--ba
 
    contribute/index
    report-issues/index
-   release-process
-   backward-compatibility-promise
+   Release Process <release-process>
+   Backward Compatibility <backward-compatibility-promise>
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
