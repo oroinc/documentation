@@ -12,7 +12,7 @@ If you encounter any issues with your Oro application or notice inaccuracies in 
 .. toctree::
    :maxdepth: 1
 
-   code
-   security
-   doc
-   translation
+   Source Code Issue <code>
+   Security Issue <security>
+   Documentation Issue <doc>
+   Translation Issue <translation>
