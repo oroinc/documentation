@@ -25,12 +25,12 @@ Each feature consists of one required option, the label. You can configure the f
  - ``processes`` - A list of :ref:`process <backend--entities-data-management--processes>` names.
  - ``operations`` - A list of :ref:`operation <bundle-docs-platform-action-bundle-operations>` names.
  - ``api_resources`` - A list of entity FQCNs that are available as API resources.
- - ``commands`` - A list of command names which depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled.
+ - ``commands`` - A list of commands that depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled.
  - ``entities`` - A list of entity FQCNs.
  - ``field_configs`` - A list of field names regardless of an entity.
  - ``dashboard_widgets`` - A list of :ref:`dashboard widget <dev-dashboards>` names.
  - ``sidebar_widgets`` - A list of :ref:`sidebar widget <bundle-docs-platform-sidebar-bundle>` names.
- - ``cron_jobs`` - A list of command names that are executed by the :ref:`cron <dev-guide-system-cron-jobs>`.
+ - ``cron_jobs`` - A list of CRON commands that depend on the feature. These commands are not executed by the :ref:`cron <dev-guide-system-cron-jobs>` when the feature is disabled.
  - ``navigation_items`` - A list of :ref:`navigation item <doc-managing-app-menu>` names.
  - ``placeholder_items`` - A list of :ref:`placeholder item <backend-placeholders>` names.
  - ``mq_topics`` - A list of :ref:`message queue topic <dev-guide-mq-topics>` names.
