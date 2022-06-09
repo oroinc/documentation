@@ -27,7 +27,6 @@ Each feature consists of one required option, the label. You can configure the f
  - ``api_resources`` - A list of entity FQCNs that are available as API resources.
  - ``commands`` - A list of commands that depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled.
  - ``entities`` - A list of entity FQCNs.
- - ``field_configs`` - A list of field names regardless of an entity.
  - ``dashboard_widgets`` - A list of :ref:`dashboard widget <dev-dashboards>` names.
  - ``sidebar_widgets`` - A list of :ref:`sidebar widget <bundle-docs-platform-sidebar-bundle>` names.
  - ``cron_jobs`` - A list of CRON commands that depend on the feature. These commands are not executed by the :ref:`cron <dev-guide-system-cron-jobs>` when the feature is disabled.
@@ -65,8 +64,6 @@ An example of the `features.yml` configuration:
                 - oro:search:index
             entities:
                 - Acme\Bundle\Entity\Page
-            field_configs:
-                - some_field_name
             dashboard_widgets:
                 - page_dashboard_widget
             sidebar_widgets:
