@@ -15,7 +15,7 @@ Data import is available for a number of different entities, including, but not 
 Oro applications have built-in import templates available for every importable entity. You need to download them before you initiate **any** import operation and make sure your data fits the template format. The templates are ready for you to export from the import dialogs of every importable entity; this way, they are never lost and are always on hand and ready for you. Each of these templates is different, depending on what entity you need to import.
 
 .. image:: /user/img/concept-guides/import/export-template.png
-   :alt: Export template
+   :alt: Download Import Template
    :align: center
 
 That is why it is essential to:

@@ -21,7 +21,7 @@ You can import the bulk details of updated or processed master catalog categorie
 
 Alternatively,
 
-1. Click **Export Template** to download a sample .csv file with the necessary headers.
+1. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 2. Based on the downloaded file, create your bulk information in the .csv format.
 3. Once your file is ready, click **Choose File** and select the .csv file you have prepared.
 4. Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
@@ -30,7 +30,7 @@ Alternatively,
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
 
-**Example of a master catalog categories bulk export template**
+**Example of a master catalog categories bulk import template**
 
 .. container:: scroll-table
 

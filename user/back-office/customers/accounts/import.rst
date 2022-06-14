@@ -18,7 +18,7 @@ You can import the bulk details of updated or processed account information in t
 
 |image|
 
-4. Click **Export Template** to download a sample .csv file with the necessary headers.
+4. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 5. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.
 6. **Validate import results**: Click **Validate** to check your import results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
 7. **Launch import:** After successful validation, click **Import File**.

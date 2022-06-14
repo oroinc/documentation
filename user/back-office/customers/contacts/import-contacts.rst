@@ -31,7 +31,7 @@ To import a bulk of contacts:
 
 .. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
 
-4. Click **Export Template** to download a sample .csv file with the necessary headers.
+4. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 
 5. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
 
