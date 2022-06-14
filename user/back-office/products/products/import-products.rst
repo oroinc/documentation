@@ -85,7 +85,7 @@ To import a bulk of product images:
 .. image:: /user/img/products/products/import_product_images.png
    :alt: The steps that are necessary to perform to import the product price attributes successfully
 
-5. Click **Export Template** to download a sample .csv file with the necessary headers.
+5. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 
 6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format.
 
@@ -123,7 +123,7 @@ To import a bulk of related products:
 .. image:: /user/img/products/products/import_related_products.png
    :alt:  The steps to perform to import of related products
 
-5. Click **Export Template** to download a sample .csv file with the necessary headers.
+5. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
 7. **Validate import results**: Click Validate to check your import results. If there are any Records with errors, fix them in the .csv file before starting the import.
 8. **Launch import**: After successful validation, click Import File.
@@ -161,7 +161,7 @@ To import a bulk of product price attributes:
 .. image:: /user/img/products/products/import_product_price_attributes.png
    :alt: The steps that are necessary to perform to import the product price attributes successfully
 
-5. Click **Export Template** to download a sample .csv file with the necessary headers.
+5. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 
 6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
 

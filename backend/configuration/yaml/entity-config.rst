@@ -96,6 +96,10 @@ Example of 'Entity' Scope Configuration
                                 empty_value:    false
                                 block:          entity
                                 label:          'Auditable'
+                    import_export:
+                        import_template:
+                            use_in_template: true                       # Specify whether this config item should be available in the import fields template
+                            value: Yes                                  # The value of the item in import template example data
 
 ``entity``
 ----------
@@ -218,6 +222,24 @@ Under this key, options that are applied on the field level will be configured:
 
 You can use the same options to configure entity fields that you can use when configuring
 :ref:`options for an entity class <reference-entity-config-entity-items>`.
+
+Additional options:
+
+``import_export`` (**type**: ``map``)
+
+    Configures the usage of the config item during import or export:
+
+    ``import_template`` (**type**: ``map``)
+
+        Configures the usage of the config item during import:
+
+           ``use_in_template`` (**type**: ``boolean``)
+
+               Specify whether this config item should be available in the import fields template.
+
+           ``value`` (**type**: ``mixed``)
+
+               The value of the item in the import template example data. If this item does not exist in the configuration, the empty value will be added to the template demo data.
 
 Dump Reference Structure
 ------------------------

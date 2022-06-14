@@ -72,7 +72,7 @@ To simplify creation of entity fields, you can import a .csv file with a list of
 
 4. In the dialog that opens, you can:
 
-   * **Export Template** --- Enables you to download a .csv file with sample data.
+   * **Download Import Template** --- Enables you to download a .csv file with sample data.
    * **Validate** --- Enables you to check the file for errors before uploading it. Validation results are sent to your email. If there are any records with errors, you can fix them in the .csv file before importing to the application.
    * **Upload the file** --- Click **Choose File** to select the .csv file you prepared, and click **Submit**.
 
