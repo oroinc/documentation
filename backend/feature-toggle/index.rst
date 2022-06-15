@@ -59,7 +59,10 @@ An example of the `features.yml` configuration:
             operations:
                 - acme_some_operation
             api_resources:
+                # bind whole API resource / bind all API actions for API resource
                 - Acme\Bundle\Entity\Page
+                # bind only specific API actions for API resource
+                - [Acme\Bundle\Entity\Page, [create, update, delete, delete_list]]
             commands:
                 - oro:search:index
             entities:
