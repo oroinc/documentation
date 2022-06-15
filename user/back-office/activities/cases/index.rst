@@ -5,11 +5,11 @@
 Manage Cases in the Back-Office
 ===============================
 
-Cases are issues or problems reported by customers or found internally. With Oro, you can record, monitor, and solve cases in time to ensure that small and big issues do not harm the business of your company.
+Cases are issues or problems reported by customers or found internally. With Oro, you can record, monitor, and solve cases in time to ensure that small and big issues do not harm your company's business.
 
 Oro application also provides an out-of-box integration with the :ref:`Zendesk <user-guide-zendesk-integration>` customer support platform. Once Oro and Zendesk are integrated, you can sync Zendesk tickets as cases into the Oro application.
 
-Before proceeding to the step-by-step guidance, have a look at a short demo on |how to create and manage cases in your Oro application|.
+Before proceeding to the step-by-step guidance, see a demo on |how to create and manage cases in your Oro application|.
 
 .. raw:: html
 
@@ -45,7 +45,7 @@ To create a new case:
      "**Assigned To**","Assign a user responsible for resolving the issue (optional)."
      "**Source**","Provide the source of the issue. The possible options are email, other (default), phone, or web."
      "**Status**","Defines the current status of the case processing. The possible options are open (default), in progress, resolved, and closed."
-     "**Priority**","Define priority of the task. The possible options are low, normal (default), high."
+     "**Priority**","Define the priority of the task. The possible options are low, normal (default), high."
      "**Related Contact**","Define a :term:`contact record <Contact>` related to the case (optional)."
      "**Related Account**","Define an :term:`account record <Account>` related to the case (optional)."
 
@@ -60,7 +60,7 @@ You can view cases from the following pages in your Oro application:
 
 1. From the page of all cases under **Activities > Cases**.
 
-2. From the **Additional Information** section on the page of the user to whom the case was assigned (**System > User Management > Users**).
+2. From the **Additional Information** section on the user's page to whom the case was assigned (**System > User Management > Users**).
 
 3. From the **Additional Information** section on the page of a contact related to the case (**Customers > Contacts**).
 

@@ -5,7 +5,7 @@
 Manage Contact Requests in the Back-Office
 ==========================================
 
-Contact requests are used to track contact with individuals who are requesting information such as product information, support, partnership information, or any other types of assistance. Oro has a standard embedded contact form out-of-the-box for you to add to your websites. When your customers use this form, contact requests are automatically generated and added to the page of all contacts in your Oro application. 
+Contact requests are used to track contact with individuals who are requesting information such as product information, support, partnership information, or any other types of assistance. Oro has a standard embedded contact form out-of-the-box for you to add to your websites. Contact requests are automatically generated and added to the page of all contacts in your Oro application when your customers use this form.
 
 Additionally, contact requests are used for consent management purposes when a customer :ref:`declines a consent <user-guide--consents--create>` in the OroCommerce storefront. When the **Declined Consent Notification** option is enabled for a specific consent, a notification is created in the back-office as a contact request to inform that the consent has been declined. Read more information on consents in the relevant :ref:`Data Protection and Consent Management <user-guide--consents>` topic.
 
@@ -20,7 +20,7 @@ See a short demo in our media library on |how to create and manage contact reque
 Create a Contact Request
 ------------------------
 
-In case you need to register a certain request received from a customer by phone or email, you can create a contact request manually from within your Oro application.
+If you need to register a particular request received from a customer by phone or email, you can manually create a contact request within your Oro application.
 
 1. Navigate to **Activities > Contact Requests** in the main menu.
 2. Click **Create Contact Request** on the top right.
@@ -40,14 +40,13 @@ In case you need to register a certain request received from a customer by phone
      - Email
 
      By default, the field is set to *Email*."
-     "**Phone** and **Email**","Contact details related to the request. The values are determined by the *Preferred Contact
-     Method* and must be defined."
+     "**Phone** and **Email**","Contact details related to the request. The values are determined by the *Preferred Contact Method* and must be defined."
      "**Contact Reason**","Choose a contact reason from the list to simplify request analysis. By default, the field is set to *Other*. To create a new contact reason that can be assigned to a certain contact request, refer to the :ref:`Contact Reasons <admin-guide-contact-reasons>` topic for more details."
      "**Comment**","The text of the request."
 
 4. Click **Save** on the top right.
 
-.. note:: If you use OroCommerce application, you can also relate a contact request to a customer user or a website, if necessary.
+.. note:: If you use the OroCommerce application, you can also relate a contact request to a customer user or a website, if necessary.
 
           .. image:: /user/img/activities/CreateContactRequestCommerce.png
              :alt: Display the additional section with the options to select a customer user or a website
@@ -57,7 +56,7 @@ Create a Contact Request from a Third-Party Application
 
 Add the code for the form to your website, as described in the :ref:`Embedded Forms guide <admin-embedded-forms>` topic. Every time a customer completes the form, the information is automatically synced to your Oro application.
 
-.. note::  Use the *Contact Request form* type for your website. Other contact request types can be developed in the course of integration, according to your specific business needs.
+.. note::  Use the *Contact Request form* type for your website. Other contact request types can be developed in the course of integration according to your specific business needs.
 
 View and Manage Contact Requests
 --------------------------------

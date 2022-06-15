@@ -21,7 +21,7 @@ To create a new customer:
    .. image:: /user/img/customers/customers/CustomersCreate.png
       :alt: An empty form is displayed when creating a new customer
 
-#. Optionally, select an existing :ref:`account <user-guide-accounts>` to help track sales actions and metrics for the customer that is a member of the bigger customer organization. When it remains empty, the new account is created for the new customer automatically.
+#. Optionally, select an existing :ref:`account <user-guide-accounts>` to help track sales actions and metrics for the customer that is a member of the more prominent customer organization. When it remains empty, a new account is automatically created for the new customer.
 
 #. Fill in the customer **Name**.
 
@@ -39,7 +39,7 @@ To create a new customer:
 
 #. In the **Price Lists** section, add price lists and prioritize them as described in the :ref:`Price List Management for a Customer Group <user-guide--customers--customer-groups--pricelist>` section.
 
-#. When OroCommerce is deployed with InfinitePay payments support, the customer's VAT Id shall be captured for their creditworthiness verification. VAT Id should be valid, and the billing address should match the one provided for the VAT registration. These are prerequisites to enable payments via :ref:`InfinitePay <user-guide--payment--prerequisites--infinitepay>` for the customer users.
+#. When OroCommerce is deployed with InfinitePay payments support, the customer's VAT Id shall be captured for creditworthiness verification. VAT Id should be valid, and the billing address should match the one provided for the VAT registration. These are prerequisites to enable payments via :ref:`InfinitePay <user-guide--payment--prerequisites--infinitepay>` for the customer users.
 
 #. Click **Save** in the top right.
 
@@ -47,6 +47,7 @@ To create a new customer:
 
    .. image:: /user/img/customers/customers/unable_to_delete_customers.png
       :alt: A note appears when deleting a customer warning that no entities can be deleted
+
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

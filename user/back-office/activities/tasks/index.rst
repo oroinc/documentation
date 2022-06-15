@@ -16,7 +16,7 @@ Create and Manage Tasks in the Back-Office
 
 In your Oro application, tasks represent assignments that need to be accomplished by a user. Keeping track of tasks helps organize the work process and ensure that all the important work is done.
 
-Within Oro application, you can create and assign tasks, organize them by priority, set their due date and manage them at any stage. In the sections below, you will learn how to create and manage tasks from various pages of your Oro application.
+Within the Oro application, you can create and assign tasks, organize them by priority, set their due date, and manage them at any stage. In the sections below, you will learn how to create and manage tasks from various pages of your Oro application.
 
 Before reading on, consider watching a short demo from our media library on |how to create and manage tasks|.
 
@@ -27,4 +27,5 @@ Before reading on, consider watching a short demo from our media library on |how
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
+
 

@@ -16,9 +16,9 @@ Infrastructure-related configuration parameters are stored in the *config/parame
 * The ``session_handler`` value specifies the PHP |session handler| to be used.
 * The ``secret`` value is used to generate |CSRF tokens|.
 
-   * ``null`` --- The asset's version stays unchanged.
-   * ``time_hash`` --- A hash of the current time.
-   * ``incremental`` --- The next asset's version is the previous version incremented by one (e.g. ``ver1`` -> ``ver2`` or ``1`` -> ``2``).
+  * ``null`` --- The asset's version stays unchanged.
+  * ``time_hash`` --- A hash of the current time.
+  * ``incremental`` --- The next asset's version is the previous version incremented by one (e.g. ``ver1`` -> ``ver2`` or ``1`` -> ``2``).
 
 * The ``enterprise_licence`` value defines the project enterprise licence.
 * The ``message_`` parameters are used to connect to the message queue transport.

@@ -28,12 +28,12 @@ To add a calendar event when viewing a list of events:
    * **Title** --- A name for your calendar event.
    * **Description** --- Any details regarding the event: summary, agenda, etc. Use the embedded editor to format text, add images, links, etc.
 
-     .. important:: Whether the embedded editor is available, is specified in the configuration. If you have access to the **My Configuration** page, see the **WYSIWYG settings** section of the :ref:`Display Settings <doc-my-user-configuration-display>` description. 
+     .. important:: Whether the embedded editor is available is specified in the configuration. If you have access to the **My Configuration** page, see the **WYSIWYG settings** section of the :ref:`Display Settings <doc-my-user-configuration-display>` description.
      
-       * If you do not have access to the page, contact your administrator who can enable the editor at the organization level. 
+       * If you do not have access to the page, contact your administrator, who can enable the editor at the organization level.
        * If you are an administrator, see the **WYSIWYG settings** section of the :ref:`System Display Settings <doc-configuration-display-settings>` description.
 
-   * **Color** --- Select the color to label the event with. The first item is the calendar color and it is selected by default. Click a different color to change the setting. To customize the color using a color picker, click the last color in the line (initially it is blank).
+   * **Color** --- Select the color to label the event with. The first item is the calendar color and it is selected by default. Click a different color to change the setting. To customize the color using a color picker, click the last color in the line (it is initially blank).
 
    .. image:: /user/img/activities/activities_events_actions_add2.png
       :alt: Selecting the color label for the event.
@@ -49,7 +49,7 @@ To add a calendar event when viewing a list of events:
 
    * **Reminders** --- A notification about the upcoming event. Click **+Add** to configure when and how OroCommerce and OroCRM remind the participants about the event:
 
-     * Specify the type of the notification: whether to show a flash message in Oro application or send the notification email.
+     * Specify the type of the notification: whether to show a flash message in the Oro application or send the notification email.
      * Select the time units in which the time lag between a reminder and the event is measured: minutes, hours, days, or weeks.
      * Enter what number of selected time intervals the time lag between a reminder and the event comprises.
 
@@ -57,7 +57,7 @@ To add a calendar event when viewing a list of events:
 
      .. important:: Reminders are disabled for recurring events.
 
-     .. note:: In Oro applications, an event start time is displayed adjusted according to the recipient's timezone settings both in notification emails and flash messages.  (That is, if the event is set to start at 7 a.m. in the organizational calendar that is run according to the New York time, the start time displayed in the reminder to the user in Tokio will be 8 p.m.)
+     .. note:: In the Oro applications, an event start time is displayed adjusted according to the recipient's timezone settings both in notification emails and flash messages.  (That is, if the event is set to start at 7 a.m. in the organizational calendar that is run according to the New York time, the start time displayed in the reminder to the user in Tokio will be 8 p.m.)
 
    * **Call via Hangout** --- Enable this option to plan a Google Hangout meeting for the calendar event. When enabled, a button that starts Hangout call appears on the event card and view page when viewed by the guest.
 
@@ -117,7 +117,7 @@ To add calendar events on the **My Calendar** page or in the **Today's Calendar*
   
 4. Click **Save**. The event appears in your calendar if you have specified yourself as an event owner or a guest.
 
-5. Refresh a page to update the widget after you created the new event.
+5. Refresh a page to update the widget after creating the new event.
 
 .. _user-guide-activities-events-add-system-calendar:
 

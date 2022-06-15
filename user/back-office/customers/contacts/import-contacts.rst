@@ -23,7 +23,7 @@ Import Contacts
 
 To import a bulk of contacts:
 
-1. In the main menu, navigate to **Customers > Contacts**. The contact list opens.
+1. In the main menu, navigate to **Customers > Contacts**.
 
 2. Click **Import File** on the top right.
 

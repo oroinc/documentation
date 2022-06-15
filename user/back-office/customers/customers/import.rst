@@ -13,7 +13,7 @@ You can import the bulk details of updated or processed customer information in 
 2. Click **Import File** on the top right.
 3. In the **Import** dialog, click **Choose File**, select the .csv file you prepared, and then click **Import File**.
 
-.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+.. note: Ensure your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
 
 |image|
 
@@ -23,7 +23,7 @@ You can import the bulk details of updated or processed customer information in 
 7. **Launch import:** After successful validation, click **Import File**.
 8. Click **Cancel** to decline the import.
 
-.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
 **Import File** option helps import the customer information using the .csv file that follows the customer details data structure.
 

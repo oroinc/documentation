@@ -73,7 +73,7 @@ Enable a Bundle
 
 Now you have all the required files to enable the new bundle. To enable the bundle:
 
-#. Create Resources/config/oro/bundles.yml with the following content:
+#. Create a Resources/config/oro/bundles.yml file with the following content:
 
    .. code-block:: yaml
       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
@@ -81,37 +81,34 @@ Now you have all the required files to enable the new bundle. To enable the bund
        bundles:
            - Acme\Bundle\DemoBundle\AcmeDemoBundle
 
-   This file provides a list of bundles to register --- all such files will be automatically parsed to load required bundles.
+   This file provides a list of bundles to register. All such files are automatically parsed to load the required bundles.
 
-#. Regenerate the application cache using the console command ``cache:clear``:
+#. Regenerate the application cache using console command ``cache:clear``:
 
    .. code-block:: none
-
 
        user@host:/var/www/vhosts/platform-application$ php bin/console cache:clear
        Clearing the cache for the dev environment with debug true
 
    .. note::
 
-       If you are working in production environment, you have to use parameter ``--env=prod`` with the command.
+       If you are working in production environment, use parameter ``--env=prod`` with the command.
 
-Check if your bundle is registered and active with following command:
+#. Check if your bundle is registered and active with following command:
 
-    .. code-block:: none
+   .. code-block:: none
 
-        php bin/console debug:container --parameter=kernel.bundles --format=json | grep AcmeNewBundle
+      php bin/console debug:container --parameter=kernel.bundles --format=json | grep AcmeNewBundle
 
-    .. note::
+   .. note::
 
-        Replace `grep` argument with your bundle's proper name
+       Replace `grep` argument with your bundle's proper name
 
-In case if your bundle is registered and active next output(alike one) will be displayed in console after running the command
+#. When your bundle is registered and active, the following output (or a similar one) will be displayed in the console after running the command:
 
-    .. code-block:: none
+   .. code-block:: none
 
-        "AcmeNewBundle": "Acme\\Bundle\\DemoBundle\\AcmeDemoBundle",
-
-That is all --- your bundle is registered and active!
+      "AcmeNewBundle": "Acme\\Bundle\\DemoBundle\\AcmeDemoBundle",
 
 References
 ----------

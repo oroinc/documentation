@@ -31,11 +31,11 @@ To change the price list settings for the customer group:
    .. image:: /user/img/customers/customer_groups/pricing_pricelist_add.png
       :alt: Adding a new price list to the pricelist section
 
-   .. note:: The price list is appended to the bottom of the list and, initially, has a lower priority than the existing price lists. Adjust the price list priority if necessary and specify whether the merge is allowed (the later is shown only for the **Merge by priority** price selection strategy).
+   .. note:: The price list is appended to the bottom of the list and, initially, has a lower priority than the existing price lists. Adjust the price list priority if necessary and specify whether the merge is allowed (the latter is shown only for the **Merge by priority** price selection strategy).
 
    c) To control the way prices are merged into the combined price list, select or clear the **Merge Allowed** option for the price lists.
 
-   When merge is allowed, the prices for the tiers and units that are missing in the higher priority price list may be covered by the prices from the lower priority price lists that support the price merge.
+   When the merge is allowed, the prices for the tiers and units missing in the higher priority price list may be covered by the prices from the lower priority price lists that support the price merge.
 
    d) To delete a price list from the default price lists, click the |IcDeactivate| **Deactivate** icon at the end of the corresponding row.
 
