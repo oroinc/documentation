@@ -158,19 +158,12 @@ Replace Favicons
 Replace a Logo
 --------------
 
-1. Place a new logo image to your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/images/logo.png``).
+1. Place a new logo image to your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/images/logo.svg``).
 
 2. Specify the main favicon image in your :ref:`theme configuration file <dev-doc-frontend-layouts-theming-definition>`:
 
    .. code-block:: yaml
-      :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
-
-      logo: '@AppBundle/Resources/public/default/logo/logo.svg'
-
-   or
-
-   .. code-block:: yaml
-      :caption: src/AppBundle/Resources/views/layouts/{your_theme_id}/theme.yml
+      :caption: src/{your_bundle_id}/Resources/views/layouts/{your_theme_id}/theme.yml
 
       logo: 'bundles/{your_theme_id}/images/logo/logo.svg'
 
