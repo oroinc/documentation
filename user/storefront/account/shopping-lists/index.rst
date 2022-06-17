@@ -31,6 +31,7 @@ Clicking on the |IcChevronDown| icon next to the button will open a drop-down wi
 .. image:: /user/img/storefront/shopping_lists/shopping_list_widget.png
    :alt: A sample of the shopping list widget
 
+.. note::  If the content of the shopping list has changed, the attempt to resume checkout process from the shopping list view page will restart the checkout process. The data provided previously (e.g., new addresses in address form and other form field) are preserved.
 
 .. toctree::
    :maxdepth: 1

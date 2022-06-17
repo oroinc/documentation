@@ -25,6 +25,7 @@ For more details, review the sections outlined below:
 * :ref:`Guest Checkout <frontstore-guide--orders-checkout--guest>` --- illustrates the options that guest customers can have to submit their order.
 * :ref:`Promotions at Checkout <frontstore-guide--orders-checkout--promotions>` --- describes the way to use promotions and coupons at checkout.
 
+.. note:: If the content of the shopping list has changed, the attempt to resume checkout from the shopping list view page will restart the checkout process. The data provided previously (e.g., new addresses in address form and other form field) are preserved.
 
 
 .. toctree::
