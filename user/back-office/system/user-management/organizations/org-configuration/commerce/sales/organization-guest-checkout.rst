@@ -33,11 +33,17 @@ To configure checkout settings per organization:
 
    When the guest checkout is enabled, click **Save Settings** to display the additional **Guest Checkout Owner Settings** section.
 
-7. In the **Guest Checkout Owner Settings** section, select the default owner of the guest checkout. Depending on the roles and permissions of the owner, guest data (e.g. shopping lists) may or may not be viewed and managed by the users who are subordinated to the owner.
+7. In the **Guest Checkout Owner Settings** section, select the default owner of the guest checkout. Depending on the roles and permissions of the owner, guest data (e.g., shopping lists) may or may not be viewed and managed by the users who are subordinated to the owner.
 
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest checkout data, adjust permissions for the checkout entity in their roles accordingly.
 
-8. Click **Save Settings**.
+8. In the **Checkout Options** section, set the following option:
+
+   * **Maximum Line Items per Page** --- Set the number of line items to display on the checkout page. The provided value will be used as the implied maximum number of checkout line items to display at once. If the number of checkout line items exceeds this value, the "Show All Items" will no longer be available and this number will be shown as the maximum pager value.
+
+   * **Start New Checkout If Shopping List Items Changed** --- If this option is enabled, and the content of the shopping list has changed, an attempt to resume the checkout process from the shopping list view page will result in restarting the checkout process.  The setting is available starting from v.4.2.12 To check which application version you are running, see the :ref:`system information <system-information>`.
+
+9. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin
