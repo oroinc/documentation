@@ -340,6 +340,8 @@ And here is what search index might contain after the indexation:
 Partial Indexation
 ------------------
 
+.. hint:: The feature is available starting from OroCommerce v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 Partial indexation is a feature that reduces the load on the engine by updating the index partially.
 
 Index Groups

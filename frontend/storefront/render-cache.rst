@@ -403,6 +403,8 @@ Keep in mind that Redis configuration is not compatible with the
 filesystem cache storage. To enable filesystem storage back, remove the
 above mentioned configuration.
 
+.. hint:: Option ``redis_dsn_layout`` is available starting from OroPlatform v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 Clear the Render Cache
 ----------------------
 
