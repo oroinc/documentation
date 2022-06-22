@@ -8,7 +8,7 @@ Recent Emails
 
 .. start_emails_widget
 
-The Recent Emails widget allows you to see most recent additions to your inbox and outbox.
+The Recent Emails widget allows you to see the most recent additions to your inbox and outbox.
 
 .. image:: /user/img/dashboards/recent_emails.png
    :alt: A sample of the Recent Emails widget

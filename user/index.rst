@@ -15,7 +15,7 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 .. raw:: html
 
    <h2><a href="concept-guides/">Concept Guides</a></h2>
-   <p>Concept Guides provide overviews of features and use-cases, help out with the general understanding of large topics.</p>
+   <p>Concept Guides provide overviews of features and use-cases, help out with a general understanding of large topics.</p>
 
 .. raw:: html
 

@@ -5,7 +5,7 @@
 Dialog Windows
 --------------
 
-Dialog windows and flash notifications are used to notify you about something important.
+Dialog windows and flash notifications are used to notify you about important events.
 
 If just a notification is needed (e.g., to mark the success or failure of an operation, a reminder, etc.), the flash
 message will appear.

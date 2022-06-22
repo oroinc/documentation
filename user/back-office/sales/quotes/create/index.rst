@@ -7,7 +7,7 @@ Create a Quote
 
 .. begin_create_quote
 
-.. hint:: This section is part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+.. hint:: This section is part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides a general understanding of the RFQ and quote concepts in OroCommerce.
 
 You can create a quote based on the customer request for quote, or from scratch, based on the customer interaction outside the Oro application.
 

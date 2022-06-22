@@ -125,7 +125,7 @@ option.
 The ``target_fields`` option list the named indexes to which the property value will be added.
 
 For example, a contact may have the properties ``firstName``, ``lastName``, and ``namePrefix`` and
-all three properties should be searched when the user is loooking for a value in the virtual
+all three properties should be searched when the user is looking for a value in the virtual
 ``name`` field (when using the advanced search API). In this case, all three properties will list
 the ``name`` field in ``target_fields``:
 

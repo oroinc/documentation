@@ -3,13 +3,10 @@
 
 .. _user-guide-activities-comments:
 
-Add Comments
-============
-
-You Oro application enables you to add comments on details of an activity. For instance, you may want to comment on a task or a logged call that was made, or possibly comment that you can't attend a particular meeting.
+Your Oro application enables you to add comments to an activity, such as leaving a comment on a task or a call.
 
 .. important::
-    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description.
+    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 in the :ref:`Create an Entity <doc-entity-actions-create>` action description.
 
 .. note:: See a short demo on |how to add comments|, or keep reading the guidance below.
 
@@ -20,7 +17,7 @@ You Oro application enables you to add comments on details of an activity. For i
 How to Create and View Comments
 -------------------------------
 
-Once a record or an activity have been created, a comment can be added to it from:
+Once a record or an activity is created, you can add a comment to it from:
 
 - The page of a specific record
 - When editing a specific record
@@ -30,10 +27,10 @@ Once a record or an activity have been created, a comment can be added to it fro
 
    The ability to view and write comments depends on the permissions and role settings defined in the system for the Comment entity.
 
-To add a comment: 
+To add a comment:
 
 1. Click **Add Comment**.
-2. Enter the comment into the text-box.
+2. Enter the comment into the text box.
 3. Click **Choose File** to upload a file to your comment.
 4. Click **Add** to save the comment.
 
@@ -44,7 +41,8 @@ To add a comment:
 
     You can :ref:`edit <doc-entity-actions-edit>` the **Comment** entity and add new fields if required.
 
- .. note:: Comments for cases have an additional **Make Public** check box when your Oro application is integrated with Zendesk. This enables you to make a specific comment  public in :ref:`Zendesk <user-guide-zendesk-integration>`.
+ .. note:: Comments for cases have an additional **Make Public** check box when your Oro application is integrated with Zendesk. This enables you to make a specific comment public in :ref:`Zendesk <user-guide-zendesk-integration>`.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
+

@@ -6,7 +6,7 @@
 Manage Warehouses in the Back-Office
 ====================================
 
-.. hint:: This section is part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides the general understanding of the inventory and warehouse concepts.
+.. hint:: This section is part of the :ref:`Inventory and Warehouse Management <concept-guide--inventory>` topic that provides a general understanding of the inventory and warehouse concepts.
 
 Create a Warehouse
 ------------------
@@ -30,8 +30,8 @@ To create a new warehouse:
 3. Enter the warehouse name.
 4. Fill in the address:
 
-   * To use the default warehouse address from shipping system configuration, set the **Use Shipping Origin** box.
-   * To use custom warehouse address, enter the Country, Region/State, Zip/Postal code, City, and street address.
+   * To use the default warehouse address from the shipping system configuration, set the **Use Shipping Origin** box.
+   * To use a custom warehouse address, enter the Country, Region/State, Zip/Postal code, City, and street address.
 
 5. Click **Save**.
 

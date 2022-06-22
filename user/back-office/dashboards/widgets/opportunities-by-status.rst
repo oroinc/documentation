@@ -6,7 +6,7 @@
 Opportunities by Status
 -----------------------
 
-The Opportunities by Status widget displays the breakdown of opportunities by status in a form of a bar chart.
+The Opportunities by Status widget displays the breakdown of opportunities by status in the form of a bar chart.
 
 .. image:: /user/img/dashboards/opp_by_status.png
    :alt: A sample of the Opportunities by Status widget
@@ -24,7 +24,7 @@ You can adjust the following settings for the opportunities by status widget:
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** check box and provide a new name.
 * **Business unit** --- select the business unit to present statistics for.
 * **Role** --- select the user’s role (e.g. a sales manager, an administrator, a leads development rep, etc.) to see statistics for.
-* **Owner** --- select the owner for the widget to see statistics for a certain user.
+* **Owner** --- select the owner for the widget to see statistics for a particular user.
 * **Date Range** --- the time for which the widget details are displayed.
 * **Excluded Statuses** --- select what status the widget should not display (e.g. Closed Won).
 * **Display data** --- choose which data to display on the chart. The *count* shows the number of opportunities in a particular status, and *amount* displays their total budget.

@@ -2,7 +2,6 @@
 
 .. _user-guide-getting-started-user-menu:
 
-
 User Menu
 =========
 
@@ -12,4 +11,4 @@ access your user profile, calendar, mailbox, and task list. It is also used to l
 .. image:: /user/img/getting_started/navigation/user_menu_new.png
    :alt: User menu dropdown
 
-See the :ref:`User Menu <user-guide-intro-log-in-edit-profile>` section for detailed information on the available actions and information.
+See the :ref:`User Menu <user-guide-intro-log-in-edit-profile>` section for detailed information on the available actions.

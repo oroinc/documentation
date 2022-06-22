@@ -54,7 +54,7 @@ You can add the same widgets a number of times and assign them different owners.
 Manage Widgets on a Dashboard
 -----------------------------
 
-You can easily create and manage widgets for various team members. For instance, as a a sales manager can create the same widgets for each sales rep within the organization to be able to see results of each sales rep’s work.
+You can easily create and manage widgets for various team members. For instance, as a sales manager you could create the same widgets for each sales rep within the organization to be able to see results of each sales rep’s work.
 
 You can manage widgets using tools in their header:
 

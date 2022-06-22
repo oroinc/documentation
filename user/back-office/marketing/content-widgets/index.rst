@@ -6,7 +6,7 @@
 Manage Content Widgets in the Back-Office
 =========================================
 
-.. hint:: This section is part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides the general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
+.. hint:: This section is part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides a general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
 
 Content widgets are snippets of structured information that you can insert into any WYSIWYG field in your application. :ref:`WYSIWYG fields <getting-started-wysiwyg-editor-field>` are available throughout OroCommerce; for example, in category descriptions, on edit pages of products, content blocks, and landing pages.
 
@@ -70,14 +70,14 @@ To create a new content widget:
 
     |
 
-   * **Product Mini Block** - Enables you to add a block with product information with or without prices, and/or the **Add to Shopping List** button.
+   * **Product Mini Block** - Enables you to add a block with product information with or without prices and/or the **Add to Shopping List** button.
 
      .. image:: /user/img/marketing/content_widgets/mini-block.png
         :alt: A product mini block form
 
     |
 
-   * **Product Segment** - Enables you to add a product segment content widget, and configure how many max and min items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Only segments with type *Product* are listed in the **Segment** field dropdown. You can modify an existing :ref:`segment <user-guide--business-intelligence--filters-segments>` or create a new one under **Reports&Segments > Manage Segments**.
+   * **Product Segment** - Enables you to add a product segment content widget, configure how many max and min items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Only segments with type *Product* are listed in the **Segment** field dropdown. You can modify an existing :ref:`segment <user-guide--business-intelligence--filters-segments>` or create a new one under **Reports&Segments > Manage Segments**.
 
      .. image:: /user/img/marketing/content_widgets/product-segment.png
         :alt: A product mini block form
@@ -91,7 +91,7 @@ To create a new content widget:
 
    |
 
-   .. hint:: Each content widget may have various representations in the form of layouts. Layouts are defined by developers using the existing :ref:`layout update functionality <dev-doc-frontend-layouts-layout>`, which enables you to alternate between the pre-configured designs for each widget in the back-office.
+   .. hint:: Each content widget may have various representations in the form of layouts. Developers define layouts using the existing :ref:`layout update functionality <dev-doc-frontend-layouts-layout>`, which enables you to alternate between the pre-configured designs for each widget in the back-office.
 
              .. image:: /user/img/marketing/content_widgets/layout-dropdown.png
                 :scale: 50%

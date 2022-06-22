@@ -6,7 +6,7 @@
 Campaigns by Close Revenue
 --------------------------
 
-The Campaigns by Close Revenue widget shows the top 5 campaigns that generate the most income.
+The Campaigns by Close Revenue widget shows the top five most income-generating campaigns.
 
 .. image:: /user/img/dashboards/campaign_revenue.png
    :alt: A sample of the Campaigns by Close Revenue widget

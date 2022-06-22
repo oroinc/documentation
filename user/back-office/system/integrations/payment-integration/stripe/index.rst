@@ -5,9 +5,10 @@
 Manage Stripe Payment Service in the Back-Office
 ================================================
 
+
 .. hint:: The Stripe payment service is available starting from Orocommerce v5.0.4. To check which application version you are running, see the :ref:`system information <system-information>`.
 
-.. hint:: This section is part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. hint:: This section is part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides a general understanding of the payment concept in OroCommerce.
 
 .. hint:: The feature requires extension, so visit |Oro Extensions Store| to download the Stripe extension and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
 

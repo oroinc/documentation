@@ -6,7 +6,7 @@
 Opportunity Generating Campaigns
 --------------------------------
 
-The widget shows you top 5 campaigns that generate the biggest number of opportunities.
+The widget shows you the top five campaigns that generate the highest number of opportunities.
 
 .. image:: /user/img/dashboards/op_generating_camp.png
    :alt: A sample of the Opportunity Generating Campaigns widget

@@ -7,11 +7,11 @@ Export Records
 
 You might need to export the necessary information and download it as a .csv file to reuse it in the third-party systems. You can export customer data (accounts, contacts, customers, customer users, business customers), sales data (leads, opportunities, prices in the price list, products), taxes (rates, rules), warehouse, and inventory information (inventory levels and statuses).
 
-Another scenario for using export is when you plan bulk data update that is easily automated in the spreadsheet software (e.g. raise the price by 20%).
+Another scenario for using export is when you plan bulk data update that is easily automated in the spreadsheet software (e.g., raise the price by 20%).
 
 To export the necessary records (e.g., customer information) in a .csv format:
 
-1. In the main menu, navigate to menu item to export the list of the necessary data (e.g., **Customers > Customers**).
+1. In the main menu, navigate to the menu item to export the list of the necessary data (e.g., **Customers > Customers**).
 
    The following screen opens.
 
@@ -20,7 +20,7 @@ To export the necessary records (e.g., customer information) in a .csv format:
 
 2. Click **Export** on the top right.
 
-.. hint:: You may receive the following warning message which notifies you about the limits for the number of columns that can be exported. Such warning can be displayed on the listing page of any exportable entity.
+.. hint:: You may receive the following warning message, which notifies you about the limits for the number of columns that can be exported. Such warning can be displayed on the listing page of any exportable entity.
 
             +------------------------------------------------------------------------------------------------------------------------------+
             | It appears that the number of fields stored as columns in the X table (the fields that are relations or that have ever been  |

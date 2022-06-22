@@ -7,7 +7,7 @@
 Manage Dashboards in the Back-Office
 ====================================
 
-Dashboard is a default page you see after you log in. It is an adjustable view that may contain many types of information blocks (widgets), such as today’s calendar, recent calls and emails, quick launchpad, etc. You can have several dashboards that serve different purposes and switch between them.
+The dashboard is a default page you see after you log in. It is an adjustable view that may contain different information blocks (widgets), such as today’s calendar, recent calls, emails, quick launchpad, etc. You can have several dashboards that serve different purposes and switch between them.
 
 Create a Dashboard
 ------------------
@@ -21,9 +21,9 @@ To create a dashboard:
    .. image:: /user/img/dashboards/dashboards_1.png
       :alt: A form for creating a new dashboard
 
-   * **Label** --- Name used to refer to the dashboard in the system.
-   * **Clone from** --- Choose an existing dashboard to be used as a base for a new one. If you want to create a dashboard from the scratch, choose the *Blank Dashboard* option.
-   * **Owner** --- Limits the list of users who can manage the dashboard to the users, whose roles allow managing dashboards of the owner (e.g. the owner, members of the same business unit, head of the department, etc.)
+   * **Label** --- The name used to refer to the dashboard in the system.
+   * **Clone from** --- Choose an existing dashboard to be used as a base for a new one. If you want to create a dashboard from scratch, choose the *Blank Dashboard* option.
+   * **Owner** --- Limits the list of users who can manage the dashboard to the users whose roles allow managing dashboards of the owner (e.g., the owner, members of the same business unit, head of the department, etc.)
 
 #. Click **Save and Close** on the top right.
 

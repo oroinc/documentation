@@ -7,8 +7,8 @@ My Calendar
 
 To reach your calendar settings:
 
-1.  Click on your user name on the top right of the application page.
-2.  Click **My Calendar** .
+1. Click on your user name on the top right of the application page.
+2. Click **My Calendar** .
 
 From the calendar page, you can:
 
@@ -76,7 +76,7 @@ You can remove the calendars of other users from your list:
 1. Hover over the name of the selected calendar.
 2. Click the ellipsis menu at the end of the corresponding row, and then click **Remove calendar**.
 
-.. important:: You cannot remove **My Tasks**, system calendars, and your personal calendar.
+.. important:: You cannot remove **My Tasks**, system calendars, and your calendar.
 
 
 .. _doc-activities-events-actions-explore-statuses:
@@ -86,14 +86,14 @@ Explore Calendar Event Statuses
 
 Icons within event cells represent invitation statuses depending on whether the invitation has been accepted:
 
--  |IcInvitation| **Not Responded** --- This is a basic status of the invitation. It appears in the following cases:
+-  |IcInvitation| **Not Responded** --- This is the primary status of the invitation. It appears in the following cases:
 
    - You have not given any response to the invitation.
    - You are the event owner and are not required to respond.
 
 -  |IcInviteYes| **Accepted** --- You have agreed to attend the event (you have responded **Yes** to the event invitation).
 
--  |IcInviteMaybe| **Tentatively Accepted** --- You are not sure whether you are going to attend the event (you have responded **Maybe** to the event invitation).
+-  |IcInviteMaybe| **Tentatively Accepted** --- You are not sure whether you will attend the event (you have responded **Maybe** to the invitation).
 
 -  No icon is displayed in the following cases:
 
@@ -101,7 +101,7 @@ Icons within event cells represent invitation statuses depending on whether the 
    - This is an event from the system calendar.
    - The calendar record represents a task.
 
-- The |IcReminder| **Reminder** icon appears when the event owner set up reminders about the event.
+- The |IcReminder| **Reminder** icon appears when the event owner sets up reminders about the event.
 
 .. image:: /user/img/getting_started/user_menu/My_Calendar_Statuses.png
    :alt: The status of your calendar events

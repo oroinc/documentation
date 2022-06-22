@@ -2,8 +2,6 @@
 
 .. _user-guide-marketing-campaigns:
 
-.. updated on 19 October 2018
-
 Manage Marketing Campaigns in the Back-Office
 =============================================
 
@@ -102,9 +100,7 @@ The first option is a URL parameter:
 
       ?pk_campaign=btwogonefree
 
-It is used when you want one tracking website to calculate events for multiple campaigns. It should be added to the URL of the website you want to monitor. So the event is logged only when a user reaches the website via the specific link with this parameter (for example, *sample-site.net?pk_campaign=btwogonefree*).
-
-It is used when you have a tracking website and you want to calculate the events for multiple campaigns and from different sources, such as an email link, Youtube, social media, paid ads or organic search visits. This parameter should be appended to the URL of every website page that you want to monitor. An event is logged only when a user reaches this page via the specific link with this parameter.
+It is used when you have a tracking website, and you want to calculate the events for multiple campaigns and from different sources, such as an email link, Youtube, social media, paid ads or organic search visits. It should be added to the URL of the website you want to monitor. The event is logged only when a user reaches the website via the specific link with this parameter (for example, *sample-site.net?pk_campaign=btwogonefree*).
 
 In the **Events** section on the campaign’s page, you will see all the events logged under this campaign.
 

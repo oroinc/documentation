@@ -5,7 +5,7 @@
 My Configuration
 ================
 
-In this section, you can personalize the configuration of your Oro application. This configuration, if made through your profile menu, does not affect other users. To configure the settings for the whole system, please see the :ref:`System Configuration <doc-config-menus>` guide.
+In this section, you can personalize the configuration of your Oro application. If made through your profile menu, this configuration does not affect other users. To configure the settings for the whole system, please see the :ref:`System Configuration <doc-config-menus>` guide.
 
 To reach the **My Configuration** page:
 
@@ -14,7 +14,7 @@ To reach the **My Configuration** page:
 
 .. important:: User-level configuration settings can fall back to organization settings. For this, select the **Use Organization** check box next to the selected option. To go back to the default user-level settings, click **Reset** on the top right.
 
-Two categories of settings are available for configuration at user level:
+Two categories of settings are available for configuration at the user level:
 
 * System Configuration (General Setup, Integrations)
 * Commerce (Sales)
@@ -44,13 +44,13 @@ In the Localization section, you can configure the following localization and ma
 
 **Map options**
 
-+------------------+--------------------------------------------------------------------------------+
-| Field            | Description                                                                    |
-+==================+================================================================================+
-| Temperature Unit | Select the temperature unit. This settings will be applied for weather on map. |
-+------------------+--------------------------------------------------------------------------------+
-| Wind Speed Unit  | Select the wind speed unit.                                                    |
-+------------------+--------------------------------------------------------------------------------+
++------------------+----------------------------------------------------------------------------------------+
+| Field            | Description                                                                            |
++==================+========================================================================================+
+| Temperature Unit | Select the temperature unit. These settings will be applied to the weather on the map. |
++------------------+----------------------------------------------------------------------------------------+
+| Wind Speed Unit  | Select the wind speed unit.                                                            |
++------------------+----------------------------------------------------------------------------------------+
 
 **Localization settings**
 
@@ -79,29 +79,29 @@ In the Display section, you can configure the following display options:
 
 **Navigation bar**
 
-+----------+----------------------------------------------------------------------------------------------------+
-| Field    | Description                                                                                        |
-+==========+====================================================================================================+
-| Position | Select whether the application main menu will be positioned at the top of the page or on its left. |
-+----------+----------------------------------------------------------------------------------------------------+
++----------+-------------------------------------------------------------------------------------------------------+
+| Field    | Description                                                                                           |
++==========+=======================================================================================================+
+| Position | Select whether the application's main menu will be positioned at the top of the page or on its left.  |
++----------+-------------------------------------------------------------------------------------------------------+
 
 **Data Grid settings**
 
-+---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Field                     | Description                                                                                                    |
-+===========================+================================================================================================================+
-| Items Per Page By Default | Select how many records will appear on one page of record grids.                                               |
-+---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Lock Headers In Grids     | Select this check box to ensure that headers of a record grid will stay visible while you scroll.              |
-+---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
-|                           |                                                                                                                |
-|                           | .. image:: /user/img/getting_started/user_menu/user_configuration_pagination.png                               |
-|                           |    :alt: A record pagination sample                                                                            |
-|                           |                                                                                                                |
-+---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Record Pagination Limit   | Type the maximum number of records that the user can navigate from a record view page.                         |
-+---------------------------+----------------------------------------------------------------------------------------------------------------+
++---------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Field                     | Description                                                                                                       |
++===========================+===================================================================================================================+
+| Items Per Page By Default | Select how many records will appear on one page of record grids.                                                  |
++---------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Lock Headers In Grids     | Select this check box to ensure that headers of a record grid will stay visible while you scroll.                 |
++---------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Record Pagination         | Select this check box to enable the user to navigate to the previous or next grid record from a record view page. |
+|                           |                                                                                                                   |
+|                           | .. image:: /user/img/getting_started/user_menu/user_configuration_pagination.png                                  |
+|                           |    :alt: A record pagination sample                                                                               |
+|                           |                                                                                                                   |
++---------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Record Pagination Limit   | Type the maximum number of records the user can navigate from a record view page.                                 |
++---------------------------+-------------------------------------------------------------------------------------------------------------------+
 
 **Activity lists**
 
@@ -120,7 +120,7 @@ In the Display section, you can configure the following display options:
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
 | Field                 | Description                                                                                               |
 +=======================+===========================================================================================================+
-| Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
+| Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes, and comments.                    |
 |                       |                                                                                                           |
 |                       | .. image:: /user/img/getting_started/user_menu/user_configuration_wysiwyg.png                             |
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
@@ -156,7 +156,7 @@ For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-st
 Update Email Configuration Options
 ----------------------------------
 
-In the Email Configuration section, you can configure the following email related options:
+In the Email Configuration section, you can configure the following email-related options:
 
 **Signature**
 
@@ -173,28 +173,28 @@ In the Email Configuration section, you can configure the following email relate
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field                             | Description                                                                                                                                                                              |
 +===================================+==========================================================================================================================================================================================+
-| Enable IMAP                       | Select this check box to enable the IMAP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that alow you to configure IMAP settings will appear.    |
+| Enable IMAP                       | Select this check box to enable the IMAP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that allow you to configure IMAP settings will appear.   |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| IMAP Host                         | Available only when **Enable IMAP** is selected. Enter a host name of your IMAP server, e.g. imap.gmail.com.                                                                             |
+| IMAP Host                         | Available only when **Enable IMAP** is selected. Enter the hostname of your IMAP server, e.g., imap.gmail.com.                                                                           |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| IMAP Port                         | Available only when **Enable IMAP** is selected. Enter a port that IMAP uses, e.g. 993.                                                                                                  |
+| IMAP Port                         | Available only when **Enable IMAP** is selected. Enter a port that IMAP uses, e.g., 993.                                                                                                 |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Encryption                        | Available only when **Enable IMAP** is selected. Select the type of encryption: **SSL** or **TLS**.                                                                                      |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Enable SMTP                       | Select this check box to enable the SMTP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that alow you to configure SMTP settings will appear.    |
+| Enable SMTP                       | Select this check box to enable the SMTP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that allow you to configure SMTP settings will appear.   |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| SMTP Host                         | Available only when **Enable SMTP** is selected. Enter a host name of your SMTP server, e.g. imap.gmail.com.                                                                             |
+| SMTP Host                         | Available only when **Enable SMTP** is selected. Enter the hostname of your SMTP server, e.g., imap.gmail.com.                                                                           |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| SMTP Port                         | Available only when **Enable SMTP** is selected. Enter a port that SMTP uses, e.g. 993.                                                                                                  |
+| SMTP Port                         | Available only when **Enable SMTP** is selected. Enter a port that SMTP uses, e.g., 993.                                                                                                 |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Encryption                        | Available only when **Enable SMTP** is selected. Select the type of encryption: **SSL** or **TLS**.                                                                                      |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| User                              | Enter a username used to access mailbox on the configured server. For example, for Gmail, an email address server as a username: alanwise@gmail.com                                      |
+| User                              | Enter a username used to access the mailbox on the configured server. For example, for Gmail, an email address server as a username: alanwise@gmail.com                                  |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Password                          | Enter the password to a user's mailbox.                                                                                                                                                  |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Click **Check Connection/Retrieve Folders** to check whether the specified synchronization settings are correct, and to retrieve the current folder structure of the user's remote mailbox.
+Click **Check Connection/Retrieve Folders** to check whether the specified synchronization settings are correct and to retrieve the current folder structure of the user's remote mailbox.
 
 **Email Threads**
 
@@ -203,31 +203,31 @@ Click **Check Connection/Retrieve Folders** to check whether the specified synch
 +==================================================+====================================================================================================================================================================================================+
 | Display Email Conversations As                   | Select whether to visually group original emails with replies to them or show all emails separately.                                                                                               |
 +--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Display Email Conversations In Activity Lists As | Select whether to visually group original emails with replies to them in the **Activities** sections of the record view pages or show all emails separately.                                       |
+| Display Email Conversations In Activity Lists As | Select whether to visually group original emails with replies in the **Activities** sections of the record view pages or show all emails separately.                                               |
 +--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 **Reply**
 
-+----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Field                | Description                                                                                                                                                                                        |
-+======================+====================================================================================================================================================================================================+
-| Default Reply Button | Select which button will be default for replying to emails: **Reply** or **Reply All**. Other button will continue be available in the **Reply** menu, it will just not be on the top of the list. |
-|                      |                                                                                                                                                                                                    |
-|                      | .. image:: /user/img/getting_started/user_menu/reply_selector.png                                                                                                                                  |
-|                      |    :alt: Selecting the default button for replying to emails                                                                                                                                       |
-|                      |                                                                                                                                                                                                    |
-+----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field                | Description                                                                                                                                                                                              |
++======================+==========================================================================================================================================================================================================+
+| Default Reply Button | Select which button will be default for replying to emails: **Reply** or **Reply All**. The other button will continue to be available in the **Reply** menu, and it will not be on the top of the list. |
+|                      |                                                                                                                                                                                                          |
+|                      | .. image:: /user/img/getting_started/user_menu/reply_selector.png                                                                                                                                        |
+|                      |    :alt: Selecting the default button for replying to emails                                                                                                                                             |
+|                      |                                                                                                                                                                                                          |
++----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Update Contact Information
 --------------------------
 
-In the **Customer Visible Contact Info** list, the user will see the options that are enabled and selected in **Available User Options** on the system, website or organization levels.
+In the **Customer Visible Contact Info** list, the user will see the options enabled and selected in **Available User Options** on the system, website, or organization levels.
 
 .. image:: /user/img/getting_started/user_menu/sales_rep_info.png
    :alt: Selecting customer visible contact info in the contacts menu on the user configuration level
 
-More information on how to configure the contact information visible to the customers of your store, please refer to the :ref:`Configure Sales Representative Information <sys--conf--commerce--sales--contacts>` topic of the Configuration guide and the :ref:`contact information configuration sample <sys--conf--commerce--sales--contacts--sample>`.
+For more information on how to configure the contact information visible to the customers of your store, please refer to the :ref:`Configure Sales Representative Information <sys--conf--commerce--sales--contacts>` topic of the Configuration guide and the :ref:`contact information configuration sample <sys--conf--commerce--sales--contacts--sample>`.
 
 **Related Topics**
 

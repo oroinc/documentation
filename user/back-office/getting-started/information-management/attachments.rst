@@ -6,7 +6,7 @@
 Add Attachments
 ===============
 
-Adding attachments in your Oro application helps keep track of assets such as paper copies of a return, or a bill of service written on site. This way, the representative can attach the copy to a customer's case, the customer, or account records.
+Attachments help keep track of assets such as paper copies of a return or a bill of service written on-site. This way, the representative can attach the copy to a customer's case, the customer, or account records.
 
 See a short demo on |how to add attachments in your Oro application|, or keep reading the step-by-step guidance below.
 
@@ -15,7 +15,7 @@ See a short demo on |how to add attachments in your Oro application|, or keep re
    <iframe width="560" height="315" src="https://www.youtube.com/embed/TyG001xOw3U" frameborder="0" allowfullscreen></iframe>
 
 .. important::
-    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description
+    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 in the :ref:`Create an Entity <doc-entity-actions-create>` action description.
 
 
 How to Add Attachments

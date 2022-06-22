@@ -9,7 +9,7 @@
 Review Multiple Checkouts in the Storefront
 ===========================================
 
-.. hint:: This section is part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
+.. hint:: This section is part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides a general understanding of single-page and multi-page checkout concepts.
 
 Once the products for purchase and their quantity have been selected, both registered and guest customers have to go through a series of steps to submit the order.
 

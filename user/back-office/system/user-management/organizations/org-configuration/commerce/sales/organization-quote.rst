@@ -5,7 +5,7 @@
 Configure Quote Settings per Organization
 =========================================
 
-.. hint:: This section is part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides the general understanding of the RFQ and quote concepts in OroCommerce.
+.. hint:: This section is part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides a general understanding of the RFQ and quote concepts in OroCommerce.
 
 The section describes how to enable or disable the quote functionality for the registered and guest users for a particular  organization.
 

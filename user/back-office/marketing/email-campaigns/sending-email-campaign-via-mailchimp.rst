@@ -245,7 +245,7 @@ In the :ref:`Filters <user-guide-getting-started-filters>` section:
 
    The same way you can apply any conditions of your choice.
 
-6. When you are done, click **Save and Close**.
+6. When you are ready, click **Save and Close**.
 
 This list is now displayed on the :ref:`Marketing List Page <user-guide-marketing-lists>` and contains contacts sorted according to your conditions.
 

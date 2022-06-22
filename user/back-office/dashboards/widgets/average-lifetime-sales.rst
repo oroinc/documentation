@@ -6,7 +6,7 @@
 Average Lifetime Sales
 ----------------------
 
-This widget shows average lifetime sales for each data channel in a form of a line chart. This allows managers to understand the revenue of customers over time and helps establish Lifetime Customer Value. In addition, this allows a business to assess what should be the customer acquisition cost.
+This widget shows average lifetime sales for each data channel in a line chart. The widget allows managers to understand customers' revenue over time and helps establish Lifetime Customer Value. In addition, this enables a business to assess what should be the customer acquisition cost.
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
