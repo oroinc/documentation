@@ -264,7 +264,7 @@ To add a table to your web page, you need to drag the table block to the canvas 
 
 To insert/delete the rows and columns inside the table, click the required cell and select the action from the settings bar that appears next to the cell. Keep in mind that when a user adds the table markup (cell joints, complex tables) via the |IcUpload| **Import** icon, the setting might be affected.
 
-.. hint:: The insert/delete the rows and columns setting is available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The insert/delete the rows and columns setting is available starting from v5.0.4. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 .. image:: /user/img/concept-guides/content-management/table-settings.png
    :alt: Selecting the insert row before action from the cell's settings bar

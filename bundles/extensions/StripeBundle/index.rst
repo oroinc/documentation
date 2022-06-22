@@ -8,7 +8,7 @@ OroStripeBundle provides Stripe payment service for card payments.
 Configuration
 -------------
 
-.. hint:: The Stripe payment service is available since v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The Stripe payment service is available starting from Orocommerce v5.0.4. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To be able to use Stripe for payments, first configure an :ref:`integration in the back-office <user-guide--payment--payment-providers-stripe--overview>`
 

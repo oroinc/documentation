@@ -62,7 +62,7 @@ OroCommerce works with the following payment methods:
 
 * :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`
 
-.. hint:: The Stripe payment service is available since v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The Stripe payment service is available starting from Orocommerce v5.0.4. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Stripe is an integrated suite of payment products that powers online payments and help companies detect and fight the fraud on the website.
 
