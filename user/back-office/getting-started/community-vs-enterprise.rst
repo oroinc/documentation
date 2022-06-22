@@ -7,7 +7,7 @@ Community vs Enterprise Edition
 
 Oro application comes in two editions, Community Edition (CE) and Enterprise Edition (EE).
 
-The key differences between CE and EE is the application’s enhanced performance scalability, extended functional capabilities and customer support.
+The key difference between CE and EE is the application’s enhanced performance scalability, extended functional capabilities, and customer support.
 
 On top of the features available in Oro CE, Oro EE provides:
 
@@ -20,7 +20,7 @@ On top of the features available in Oro CE, Oro EE provides:
 * Support for inventory management across multiple warehouses.
 * OroCRM capabilities integrated into OroCommerce interface.
 
-Complete information on differences between Community and Enterprise editions is illustrated in |OroCommerce Editions| and |OroCRM Editions|.
+Complete information on the differences between Community and Enterprise editions is illustrated in |OroCommerce Editions| and |OroCRM Editions|.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

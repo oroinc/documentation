@@ -5,7 +5,7 @@
 Application Authentication
 ==========================
 
-The Oro application back-office is the administration area of your online web store where you deal with various aspects of your website.
+The Oro application back-office is the administration area of your online web store, where you deal with various aspects of your website.
 
 This section explains the key issues that you may encounter when accessing the application, such as:
 

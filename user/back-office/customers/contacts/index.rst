@@ -5,7 +5,7 @@
 Manage Contacts in the Back-Office
 ==================================
 
-.. hint:: This section is part of the :ref:`Customer Management <concept-guide-customers>` topic that provides the general understanding of accounts, contacts, customers, and customer hierarchy available in the Oro applications.
+.. hint:: This section is part of the :ref:`Customer Management <concept-guide-customers>` topic that provides a general understanding of accounts, contacts, customers, and customer hierarchy available in the Oro applications.
 
 In your Oro application, you can use :term:`contacts <Contact>` to save details of actual people you are getting in touch with during business activities.
 

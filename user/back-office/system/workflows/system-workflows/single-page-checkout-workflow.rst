@@ -5,7 +5,7 @@
 Configure Single Page Checkout Workflow in the Back-Office
 ==========================================================
 
-.. hint:: This section is part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides the general understanding of single-page and multi-page checkout concepts.
+.. hint:: This section is part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides a general understanding of single-page and multi-page checkout concepts.
 
 Overview
 --------

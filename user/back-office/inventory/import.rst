@@ -5,7 +5,7 @@
 Import Inventory Levels and Statuses
 ====================================
 
-When your need your Oro application and other systems (like asset management and accounting software) exchange and synchronize product inventory information, you may transfer the inventory data from and into the Oro application in the .csv format.
+When your need your Oro application and other systems (like asset management and accounting software) to exchange and synchronize product inventory information, you can transfer the inventory data from and into the Oro application in the .csv format.
 
 .. hint:: This section is part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
 
@@ -25,7 +25,7 @@ Inventory Statuses and Levels
 .. hint::
 
           * Inventory status should be *In Stock*, *Out of Stock*, or *Discontinued*.
-          * The warehouse and unit should be created prior to the inventory levels import.
+          * The warehouse and unit should be created before the inventory levels import.
 
 To import a bulk of |imported_information|:
 
@@ -43,9 +43,9 @@ To import a bulk of |imported_information|:
 7. **Launch import:** After successful validation, click **Import File**.
 8. Click **Cancel** to decline the import.
 
-.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
-Follow the on-screen guidance for any additional actions. For example, for the inventory template, select one of the options: a) inventory statuses only or b) detailed inventory levels.
+Follow the on-screen guidance for any additional actions. For example, select one option for the inventory template: a) inventory statuses only or b) detailed inventory levels.
 
 .. raw:: HTML
 
@@ -78,5 +78,5 @@ Inventory Statuses Only
 
 .. note:: Inventory status should be *In Stock*, *Out of Stock*, or *Discontinued*.
 
-Inventory status import process is similar to the :ref:`inventory level <import-inventory-levels>` import.
+The inventory status import process is similar to the :ref:`inventory level <import-inventory-levels>` import.
 

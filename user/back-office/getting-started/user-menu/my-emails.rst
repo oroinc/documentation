@@ -8,13 +8,13 @@
 My Emails
 =========
 
-.. note:: Before you start using **My Emails**, please configure your personal mailbox connection to the mail server. See :ref:`Personal Email Configuration <my-email-configuration>` for more information.
+.. note: Before using **My Emails**, please configure your personal mailbox connection to the mail server. See :ref:`Personal Email Configuration <my-email-configuration>` for more information.
 
-Oro application allows you to send and receive emails from within the system using both personal and system (company-wide) mailboxes. You can neatly design letters using HTML formatting and a built-in text editor, create and use email templates, attach files to emails, configure personalized signatures.
+Oro application allows you to send and receive emails from within the system using both personal and system (company-wide) mailboxes. You can neatly design letters using HTML formatting and a built-in text editor, create and use email templates, attach files to emails, and configure personalized signatures.
 
-It is also possible to configure auto-actions and auto-responses. For example, with auto-actions, for each email received to a certain mailbox, a lead record or a case may be created in the system.
+It is also possible to configure auto-actions and auto-responses. For example, with auto-actions, a lead record or a case may be created in the system for each email received to a particular mailbox.
 
-Oro also provides a feature of auto-assignment to contact, thanks to which new emails synced into the application are automatically linked to contacts, if email addresses of these contacts appeared in the correspondence.
+Oro also provides a feature of auto-assignment to contacts, thanks to which new emails synced into the application are automatically linked to contacts if the email addresses of these contacts appear in the correspondence.
 
 
    See a short demo on |how to create and manage emails|, or keep reading the step-by-step guidance below.
@@ -54,7 +54,7 @@ Use Filters
 
 To enable filters for My Emails page, click the |IcFilter| button on the right:
 
-Filters sort your emails based on certain criteria, such as subject, date/time, message type, folders, status, mailbox, etc.
+Filters sort your emails based on specific criteria, such as subject, date/time, message type, folders, status, mailbox, etc.
 
 To find a specific record, click |IcFilter| and select the necessary search parameter from the list:
 
@@ -86,23 +86,23 @@ To compose a new email:
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**          | **Description**                                                                                                                                                                                                                       |
 +====================+=======================================================================================================================================================================================================================================+
-| **From**           | The **From** field should contain the email address of the sender. Note that the primary email address is used as a default value and additional addresses are available in the selector for the **From** field.                      |
+| **From**           | The **From** field should contain the sender's email address. Note that the primary email address is used as a default value and additional addresses are available in the selector for the **From** field.                           |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **To**             | The **To** field should contain the email(s) of the recipient(s). You can add more than one email to the field.                                                                                                                       |
 |                    | **Cc:** Clicking **Cc** (carbon copy) will prompt a new field to appear to include more recipients to the emails whom the sender wishes to *publicly* inform of the message. Such recipients will be visible to all other recipients. |
 |                    | **Bcc:** Clicking **Bcc** (blind carbon copy) will prompt a new field to appear to include those recipients whom the sender wishes to inform of the email *discreetly*. Such recipients are not visible to anyone.                    |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Subject**        | Short, descriptive outline of the email message displayed in the mailbox of the recipients.                                                                                                                                           |
+| **Subject**        | Short, descriptive outline of the email message displayed in the recipients' mailbox.                                                                                                                                                 |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Apply Template** | You can apply a pre-configured template for your email. More information on email template configuration can be found In the :ref:`corresponding <user-guide-email-template>` section of this guide.                                  |
 |                    |  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific :ref:`roles and permissions <user-guide-user-management-permissions-roles>` defined in the system configuration.            |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Type**           | Select the type of the message to be sent:                                                                                                                                                                                            |
 |                    | **HTML:** The email will be coded so that the text is formatted and images are added.                                                                                                                                                 |
-|                    | **Plain:** The email will contain plain text with no formatting or special layout options.                                                                                                                                            |
+|                    | **Plain:** The email will contain plain text with no formatting or unique layout options.                                                                                                                                             |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Body**           | Enter the text of your email.                                                                                                                                                                                                         |
-|                    | You can customize you email text using the following features:                                                                                                                                                                        |
+|                    | You can customize your email text using the following features:                                                                                                                                                                       |
 |                    | -  Bold, Italic, Underline styles                                                                                                                                                                                                     |
 |                    | -  Text color                                                                                                                                                                                                                         |
 |                    | -  Background color                                                                                                                                                                                                                   |
@@ -127,7 +127,7 @@ To compose a new email:
 |                    | Click **Upload** and select the necessary file to be uploaded from your computer as an attachment to your email.                                                                                                                      |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Contexts**       | Context is any record or records that ha(s)ve meaningful relation to an email conversation. When you add context of a record to the email conversation, it will be displayed in the **Activity** section of that record’s page.       |
-|                    | **Note**: If an email has been created from an entity record view page (e.g. from a lead’s page), this record will be added as a context automatically.                                                                               |
+|                    | **Note**: If an email has been created from an entity record view page (e.g., from a lead’s page), this record will be added as a context automatically.                                                                              |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 3. Click **Send** to send your email.
@@ -151,7 +151,7 @@ You can save several of such emails as drafts.
 View Emails
 -----------
 
-To **open** an email, click once either on the email or the **View** icon at the right end of the email.
+To **open** an email, click on either the email or the **View** icon at the right end of the email.
 
 From the email details page, you can:
 

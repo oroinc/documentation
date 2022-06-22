@@ -7,7 +7,7 @@
 Configure Global Shipping Tax Settings
 ======================================
 
-.. hint:: This section is part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides the general understanding of the tax configuration and management in OroCommerce.
+.. hint:: This section is part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides a general understanding of the tax configuration and management in OroCommerce.
 
 You can select a shipping tax code that should be used for shipping total cost calculation and specify if the shipping cost already contains a tax.
 

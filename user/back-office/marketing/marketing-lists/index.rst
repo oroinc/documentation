@@ -5,11 +5,11 @@
 Manage Marketing Lists in the Back-Office
 =========================================
 
-With the Oro application, you can automatically generate a :term:`marketing list <Marketing Lists>` of contacts that will be used for marketing purposes (mass call or mailing). For example, you can create a list of personal and contact details of customer users who registered after October 1 and whose shipping address is in California.
+With the Oro application, you can automatically generate a :term:`marketing list <Marketing Lists>` of contacts for marketing purposes, like mass calls or mailing. For example, you can create a list of personal and contact details of customer users who registered after October 1 and whose shipping address is in California.
 
 With marketing lists, you can run :ref:`email campaigns <user-guide-email-campaigns>` in the Oro application. You can also synchronize Oro application marketing lists with subscribers lists in :ref:`Mailchimp <user-guide-mc-integration>` and address books in :ref:`Dotdigital <user-guide-dm-integration>`.
 
-Marketing lists may be based on the contacts from the following items:
+You can build marketing lists  based on the contacts from the following entities:
 
 * Accounts (via primary email of default contact)
 * Customer users
@@ -19,8 +19,6 @@ Marketing lists may be based on the contacts from the following items:
 * Business Customer
 * Lead
 * Contact
-
-The way to create and manage contacts in a marketing list is described below.
 
 .. _user-guide-marketing-lists-create:
 .. _user-guide-marketing-marketing-list-create-general:
@@ -45,32 +43,32 @@ To create a new marketing list:
 
       "**Name**","A name used to refer to the marketing list in the system."
       "**Include Previously Contacted Members**","The option is helpful when you change the filter conditions of the marketing list. The contacts that were on the list before the condition update, might not meet the new rules. So, if you enable the check box, the marketing list would include both new records (based on new rules) and the ones that were contacted in the past (based on previous conditions)."
-      "**Entity**","Choose an entity from the dropdown. Only the entities that have contact details (E-mail or phone number) are available. Records of the chosen entity and entities related to it will be used to create the list of contacts."
+      "**Entity**","Choose an entity from the dropdown. Only entities with contact details (email or phone number) are available. Records of the chosen entity and entities related to it will be used to create the list of contacts."
       "**Type**","Chose the list type from the dropdown:
 
-      - **Dynamic** lists are updated as soon as any changes have taken place in the system.
+      - **Dynamic** lists are updated as soon as any changes have occurred in the system.
 
       - **On demand** lists will be updated only following the user request (click |BRefresh| to refresh the table on the view page of the marketing list record)."
-      "**Owner**","Limits the list of users that can manage the marketing list to the users, whose roles allow managing marketing lists of the owner (e.g., the owner, members of the same business unit, system administrator, etc.)."
+      "**Owner**","Limits the list of users that can manage the marketing list to the users whose roles allow managing marketing lists of the owner (e.g., the owner, members of the same business unit, system administrator, etc.)."
       "**Description**","Free text to help you and other users understand the purpose or peculiarities of the list in the future."
 
    .. note:: Custom fields may be added subject to specific business needs.
-  
+
    .. image:: /user/img/marketing/marketing/list_general_details_ex.png
       :alt: A sample of a filled marketing list
-  
-#. In the *Filters* section, define the Activity and/or Data audit and/or Field Condition and/or Condition Group filters that will be used to select the records for the list.
 
-   More information about the ways to define filters is provided in the :ref:`Filters Management <user-guide--business-intelligence--filters-management>` guide.
+#. In the *Filters* section, define the Activity and/or Data audit and/or Field Condition and/or Condition Group filters used to select the records for the list.
 
-   The contacts that match the filter condition will be automatically subscribed to the mailing list. You can later unsubscribe a contact or remove them from the mailing list.
+   See more information on how to define filters in the :ref:`Filters Management <user-guide--business-intelligence--filters-management>` topic.
 
-#. In the **Columns** section, define the set of fields that will be shown in the marketing list details on the general page for every target contact.
+   The contacts that match the filter condition are automatically subscribed to the mailing list. You can later unsubscribe a contact or remove them from the mailing list.
+
+#. In the **Columns** section, define the fields to be shown in the marketing list details on the main page for every target contact.
 
    .. image:: /user/img/marketing/marketing/list_columns.png
       :alt: View the settings under the Columns and Filters section
-  
-   .. note:: Marketing activities require some contact information, so at least one column that contains it must be selected. A list of these fields is provided in the **Designer** section.
+
+   .. note:: Please select at least one column with contact information for the marketing activity. A list of these fields is in the **Designer** section.
 
    For every column:
 
@@ -86,7 +84,7 @@ To create a new marketing list:
 
 #. Once you finish configuring the marketing list, click **Save and Close** in the top right corner.
 
-Now, you can use contacts of your marketing lists to run dedicated campaigns.
+Now, you can use contacts from your marketing lists to run dedicated campaigns.
 
 Manage Marketing Lists
 ----------------------
@@ -110,20 +108,19 @@ To view the Marketing List details:
    .. image:: /user/img/marketing/marketing/list_view_page.png
       :alt: The details page of the selected marketing list
 
-Here, you can preview the details of users that will be contacted via the campaigns that are based on this mailing list. You can also manage the marketing list as described in the sections below.
+Here, you can preview the details of the users who will be contacted via the campaigns based on this mailing list. You can also manage the marketing list as described in the sections below.
 
 Details provide you with the following insights:
 
 * A quick preview of the contact data --- the columns added to the marketing list (e.g., when :ref:`creating a marketing list <user-guide-marketing-marketing-list-create-columns>`).
 
-* **TOTAL CONTACTED** --- the number of times a record of this marketing list was contacted within different email campaigns.
+* **TOTAL CONTACTED** --- the number of times a record of this marketing list was contacted as part of different email campaigns.
 
-* **LAST CONTACTED** --- the date when a record of this marketing list was last contacted within
-  different email campaigns.
+* **LAST CONTACTED** --- the date when a record of this marketing list was last contacted as part of different email campaigns.
 
-* **SUBSCRIBED** --- status of the contact's subscription. Initially, all the contacts in the list are subscribed (the column value is "Yes"). When after the email campaigns that were targeting the marketing list, a user has unsubscribed, the value changes to "No", and the user is excluded from the following mailings.
+* **SUBSCRIBED** --- the subscription status of a contact. Initially, all the contacts in the list are subscribed (the column value is "Yes"). If a user unsubscribes after receiving an email as part of the email campaign, the value changes to "No", and the user is excluded from the following campaigns.
 
-.. note:: When the same record is part of different marketing lists, its data from other marketing lists will not affect the TOTAL CONTACTED and LAST CONTACTED values in the list you are viewing.
+.. note:: When the same record is part of different marketing lists, its data from other marketing lists will not affect the TOTAL CONTACTED and LAST CONTACTED values on the list.
 
 Manage Contact Subscription
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -136,9 +133,7 @@ To toggle the contact's subscription to the marketing list:
 
 #. For the necessary contact, hover over the |IcMore| more actions menu and modify the contact's subscription to the marketing list by clicking |IcUns| or |IcSub|.
 
-When not subscribed, the person will not be contacted in the email campaigns.
-
-.. what happens?
+The person will not be contacted in the email campaigns when not subscribed.
 
 Remove the Person From the Marketing List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -151,7 +146,7 @@ To remove the person from the marketing list:
 
 #. For the necessary contact, hover over the |IcMore| more actions menu and click |IcRemove| to remove the item from the list.
 
-As soon as at least one item has been deleted from the marketing list, it is moved to the **Removed Items** section where you can view |IcView| the contact details or restore |UndoRem| the contact in the marketing list.
+Once at least one item is deleted from the marketing list, it is moved to the **Removed Items** section, where you can view |IcView| the contact details or restore |UndoRem| the contact.
 
 .. image:: /user/img/marketing/marketing/ml_removed_items.png
    :alt: View deleted records in the Removed Items section
@@ -161,7 +156,7 @@ Share the Marketing List
 
 .. note:: Sharing records is available in the Enterprise edition applications.
 
-To share the marketing list with other Oro application user:
+To share the marketing list with other Oro application users:
 
 #. Navigate to **Marketing > Marketing Lists** in the main menu.
 
@@ -169,7 +164,7 @@ To share the marketing list with other Oro application user:
 
 #. Click **Share** in the top right corner to open the **Sharing Settings**.
 
-#. Type in the user name next to the *Share with* text, or search for the necessary user: click |IcBars|, find the person you need, select the checkbox next to their name, and click **Add**.
+#. Type in the user name next to the *Share with* text, or search for the necessary user. Next, click |IcBars|, find the required person, select the checkbox next to their name, and click **Add**.
 
 You can preview the sharing status and see who you already shared the marketing list with. For this, click **Share** again.
 
@@ -178,7 +173,7 @@ To cancel sharing the marketing list with a particular person, click **Share**, 
 Synchronize a Marketing List with External System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As soon as Oro application has been integrated with a third party system, to which a marketing list may be mapped, you will see **Connect to** buttons with which you can, for example, map the list to :ref:`subscribers lists in Mailchimp <user-guide-mc-integration>` or :ref:`address books in Dotdigital <user-guide-dm-integration>`.
+Once you integrate your Oro application with a third-party mailing system,   **Connect to** buttons are added to the marketing list page. This way, for example, you can map the current marketing list to the :ref:`lists of subscribers in Mailchimp <user-guide-mc-integration>` or :ref:`address books in Dotdigital <user-guide-dm-integration>`.
 
 .. image:: /user/img/marketing/marketing/map_ml.png
    :alt: The Connect to buttons
@@ -187,4 +182,3 @@ As soon as Oro application has been integrated with a third party system, to whi
 
 .. include:: /include/include-images.rst
    :start-after: begin
-

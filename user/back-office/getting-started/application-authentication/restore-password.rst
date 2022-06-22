@@ -18,5 +18,5 @@ If you forgot your password, perform the following steps:
 4. The password reset link is sent to your email address.
 5. Follow the link and instructions in your email to change your password.
 
-.. warning:: You can request password reset only once a day.
+.. warning:: You can request a password reset only once a day.
 

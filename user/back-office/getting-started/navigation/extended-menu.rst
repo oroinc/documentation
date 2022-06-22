@@ -17,12 +17,12 @@ All the page names available in the lists are clickable links to the relevant pa
 History
 -------
 
-This section displays links to the 20 latest pages you have visited in reverse chronological order. This list is particularly useful when you want to open a page that you have recently used without searching for it.
+This section displays links to the 20 latest pages you have visited in reverse chronological order. This list is helpful when you want to open a page that you have recently used without searching for it.
 
 Favorites
 ---------
 
-The links to all the pages that you have marked as "favorites" are displayed in this section. Most of the pages can be marked as  "favorite". This is handy when you need to return to the same page repeatedly.
+The links to all the pages that you have marked as "favorites" are displayed in the Favorites section to make it easier to return to the same page repeatedly.
 
 To add a page to the favorites list, click the star-shaped *Mark as favorite* icon in the top right corner of the page.
 
@@ -40,4 +40,3 @@ Most Viewed
 
 This section displays links to the most frequently used pages. Every time you visit a page, the Oro application recalculates the
 statistics and updates the list.
-

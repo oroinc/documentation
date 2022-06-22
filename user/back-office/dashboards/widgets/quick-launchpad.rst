@@ -6,7 +6,7 @@
 Quick Launchpad
 ---------------
 
-The Quick Launchpad widget gives you access to most commonly used actions and pages.
+The Quick Launchpad widget gives you access to the most commonly used actions and pages.
 
 .. image:: /user/img/dashboards/quick_launchpad.png
    :alt: A sample of the Quick Launchpad widget

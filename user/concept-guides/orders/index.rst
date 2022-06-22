@@ -144,7 +144,7 @@ Order Details
 Sales reps can see all order operation from their OroCommerce back-office, such as internal order statuses, shipping methods and dates, payment methods, terms and statuses, order totals, and more.
 If an order is created from an RFQ, quote, or another order, sales reps can access the corresponding record via a link from the **Source Document** field. If the order is created from scratch in the back-office or the quick order form in the storefront, this field remains blank.
 
-Since OroCommerce Enterprise Edition supports multiple :ref:`warehouses <user-guide--inventory--warehouse--create>`, orders in this application edition show information on the warehouse that the goods are shipped from.
+As OroCommerce Enterprise Edition supports multiple :ref:`warehouses <user-guide--inventory--warehouse--create>`, orders in this application edition show information on the warehouse that the goods are shipped from.
 
 .. image::  /user/img/sales/orders/order_details_general.png
 

@@ -18,7 +18,7 @@ To edit the existing customer login page:
 1. Navigate to **Marketing > Customer Login Pages** in the main menu.
 2. Click |IcEdit| at the end of the row.
 
-   .. note:: There is only one customer login page available and you cannot create more. If you update the login page in one organization, the changes will be reflected in other existing organizations.
+   .. note:: There is only one customer login page available, and you cannot create more. If you update the login page in one organization, the changes will be reflected in other existing organizations.
 
    .. image:: /user/img/marketing/customer_login_pages/customer_login_page.png
       :alt: Blank customer login page
@@ -45,7 +45,7 @@ To edit the existing customer login page:
    .. image:: /user/img/marketing/customer_login_pages/logo.png
       :alt: Logo added to the login page
 
-   To remove selected logo, click |IcRemove| next to uploaded file.
+   Click |IcRemove| next to the uploaded file to remove the selected logo.
 
 7. To add a **Background Image**, click *Choose File* next to the **Background Image** field and select a background picture for the login page.
 

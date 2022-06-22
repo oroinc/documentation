@@ -6,7 +6,7 @@ Configure Pricing Settings per Organization
 ===========================================
 
 .. hint::
-    This section is part of the :ref:`Price Management <user-guide--pricing>` topic that provides the general understanding of pricing concept in Oro applications.
+    This section is part of the :ref:`Price Management <user-guide--pricing>` topic that provides a general understanding of pricing concept in Oro applications.
 
 OroCommerce comes with a Combined Price List (CPL) functionality built for the needs of large B2B businesses with multiple price lists, pricing strategies, price fallbacks, and price merges. If your operate a small-scale business without complex pricing, or use an external third-party pricing system to generate and manage prices outside of OroCommerce, you can :ref:`switch from the default CPL pricing to a simpler flat pricing <dev-guide-setup-flat-pricing>`. The Pricing configuration page on the organization level has different options, depending on whether you have CPL or flat pricing configured for your application.
 

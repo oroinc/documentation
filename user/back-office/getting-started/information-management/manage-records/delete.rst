@@ -5,7 +5,7 @@ Delete Records
 
 .. start_delete
 
-Some records in your Oro application can be removed from the system using bulk delete (e.g. marketing lists, contacts, email campaigns, etc).
+Some records in your Oro application can be removed from the system using bulk delete (e.g., marketing lists, contacts, email campaigns, etc).
 
 To delete several records:
 

@@ -5,7 +5,7 @@
 Flash Notifications
 ===================
 
-To inform a user about any event that has been executed or failed in the system, use a flash notification.
+Use a flash notification to inform a user about any executed or failed event in the system.
 
 Success flash messages are displayed against a green background:
 
@@ -13,7 +13,7 @@ Success flash messages are displayed against a green background:
    :alt: An example of a successful flash message
    :width: 60%
 
-If something goes wrong, the flash message is displayed against a red background in order to attract your attention.
+If something goes wrong, the flash message is displayed against a red background to attract your attention.
 
 .. image:: /user/img/getting_started/navigation/flash_error.png
    :alt: A flash message example of a failed operation
@@ -32,6 +32,3 @@ Sometimes, a flash message can contain links to other pages.
    :width: 60%
 
 Flash messages appear on the top of the screen for several seconds and then disappear.
-
-
-

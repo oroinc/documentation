@@ -6,7 +6,7 @@
 Purchase Funnel
 ---------------
 
-The Purchase Funnel widget gives you a quick overview of purchases. It allows managers to effectively track conversion rate of each step of their ecommerce funnel. This provides crucial insight and identifies steps in the conversion funnel that require optimization to improve customer experience and increase sales.
+The Purchase Funnel widget gives you a quick overview of purchases. It allows managers to effectively track the conversion rate of each step of their eCommerce funnel. This provides crucial insight and identifies steps in the conversion funnel that require optimization to improve customer experience and increase sales.
 
 .. image:: /user/img/dashboards/purchase_funnel.png
    :alt: A sample of the Purchase Funnel widget

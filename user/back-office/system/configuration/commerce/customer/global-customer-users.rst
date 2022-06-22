@@ -72,8 +72,6 @@ Configure User Impersonation
                                     .. image:: /user/img/system/config_commerce/customer/user_impersonation.png
                                        :alt: User impersonation config option"
 
-
-
 .. _configuration--guide--commerce--configuration--cookie-consents:
 
 Configure Cookie Consent Banner Settings
