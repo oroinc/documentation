@@ -179,6 +179,58 @@ Also, you can enable attachments for an entity, e.g.,:
            }
        }
 
+An example of creating MultiImage and MultiFile fields using migration using AttachmentExtension. For example:
+
+.. code-block:: php
+
+
+       namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_1;
+
+       use Doctrine\DBAL\Schema\Schema;
+
+       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtension;
+       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareInterface;
+       use Oro\Bundle\MigrationBundle\Migration\Migration;
+       use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+       class AcmeDemoBundle implements Migration, AttachmentExtensionAwareInterface
+       {
+           /** @var AttachmentExtension */
+           protected $attachmentExtension;
+
+           /**
+            * {@inheritdoc}
+            */
+           public function setAttachmentExtension(AttachmentExtension $attachmentExtension)
+           {
+               $this->attachmentExtension = $attachmentExtension;
+           }
+
+           /**
+            * {@inheritdoc}
+            */
+           public function up(Schema $schema, QueryBag $queries)
+           {
+               $this->attachmentExtension->addMultiImageRelation(
+                   $schema,
+                   'entity_table_name', // entity table, e.g. oro_user, orocrm_contact etc.
+                   'new_field_multiimage_name', // field name
+                   [], //additional options for relation
+                   7, // max allowed file size in megabytes, can be omitted, by default 1 Mb
+                   100, // thumbnail width in pixels, can be omitted, by default 32
+                   100 // thumbnail height in pixels, can be omitted, by default 32
+               );
+
+              $this->attachmentExtension->addMultiFileRelation(
+                   $schema,
+                   'entity_table_name', // entity table, e.g. oro_user, orocrm_contact etc.
+                   'new_field_multifile_name', // field name
+                   [], //additional options for relation
+                   7 // max allowed file size in megabytes, can be omitted, by default 1 Mb
+               );
+           }
+       }
+
 .. _attachment-bundle-image-formatters:
 
 Image Formatters
