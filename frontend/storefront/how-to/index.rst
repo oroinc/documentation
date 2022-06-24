@@ -22,6 +22,7 @@ Change Corporate Identity:
    Change Fonts and Typography <how-to-change-fonts>
    Change Media Breakpoints <how-to-change-media-breakpoints>
    Change Offsets <how-to-change-offsets>
+   Customize Checkbox <how-to-customize-checkbox>
    Replace Placeholder Images for Products <how-to-replace-product-images-placeholders>
    Override, Remove or Disable Files <how-to-override-remove-files>
    Create Extra JS Build for a Landing Page <how-to-create-extra-js-build-for-landing-page>
