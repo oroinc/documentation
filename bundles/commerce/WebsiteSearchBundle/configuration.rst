@@ -31,7 +31,7 @@ Mapping Configuration
 To add an entity to a search engine, provide the following information in system configuration:
 
 * entity alias - it is used in search engine queries to specify which entities have to be selected from the index.
-* a list of entity fields that should be included in the search index, with their types. Supported types are `text`, `integer`, `decimal` and `datetime`. This configuration is used to define the storage structure for the search index, that is necessary for the search speed optimization.
+* a list of entity fields that should be included in the search index, with their types. Supported types are `text`, `integer`, `decimal` and `datetime`. This configuration is used to define the storage structure for the search index, that is necessary for the search speed optimization. You can specify an optional "fulltext" option to define whether the text field should have a full-text search index.
 
 You can use placeholders in mapping configuration (e.g. LOCALIZTION_ID in the example below). Placeholders are dynamically substituted with the values based on the current environment (e.g., current website, localization, language). Use placeholders to get the identifier of the related entities.
 
@@ -53,14 +53,18 @@ Here is an example of mapping configuration for the product bundle:
             -
                 name: names_LOCALIZATION_ID
                 type: text
+            -
+                name: status
+                type: text
+                fulltext: false
 
 This example shows configuration for the `Oro\\Bundle\\ProductBundle\\Entity\\Product` entity that uses `oro_product_WEBSITE_ID` alias. This alias contains `WEBSITE_ID` placeholder that generates a separate scope in the storage for each website. The real alias that is stored looks like `oro_product_1` (for a website with ID=1).
 
-In the field configuration, we've defined `sku` and `names_LOCALIZATION_ID` fields.
+In the field configuration, we've defined `sku`, `names_LOCALIZATION_ID` and `status` fields.
 The `sku` is a plain text field that is stored for every entity.
 The `names_LOCALIZATION_ID` is also a text value, but this value is localized
 (i.e. differs for every language) and uses `LOCALIZATION_ID` placeholder to map the localized values in storage (e.g. `names_1` for localization[1],  and `names_2` for localization[2]).
-
+The `status` is a text field, for which the option "fulltext" is specified, indicating that the text field does not have a full-text search index.
 
 Engine Configuration
 --------------------
