@@ -25,7 +25,7 @@ Setting VIEW and EDIT class-based permissions to `MyBundle:MyEntity` class for t
     public function setViewEditPermissions()
     {
         $sid = $manager->getSid('ROLE_MANAGER');
-        $oid = $manager->getOid('Entity:MyBundle:MyEntity');
+        $oid = $manager->getOid('entity:MyBundle:MyEntity');
         $builder = $manager->getMaskBuilder($oid);
         //building necessary permissions mask, see Acl/Extension/EntityMaskBuilder class for a list of permission constants
         $mask = $builder->add('VIEW_SYSTEM')->add('EDIT_SYSTEM')->get();
@@ -57,7 +57,7 @@ Granting `some_action_id` capability for the Manager Role:
     public function setExecutePermissions()
     {
         $sid = $manager->getSid('ROLE_MANAGER');
-        $oid = $manager->getOid('Action:some_action_id');
+        $oid = $manager->getOid('action:some_action_id');
         $builder = $manager->getMaskBuilder($oid);
         //building necessary permissions mask, for actions only EXECUTE mask is currently available
         $mask = $builder->add('EXECUTE')->get();
@@ -86,9 +86,9 @@ The descriptor is a string in the following format: "ExtensionKey:Class"
 Examples:
 
  - getOid($object);
- - getOid('Entity:AcmeBundle\SomeClass')
- - getOid('Entity:AcmeBundle:SomeEntity')
- - getOid('Action:Some Action')
+ - getOid('entity:AcmeBundle\SomeClass')
+ - getOid('entity:AcmeBundle:SomeEntity')
+ - getOid('action:some_action')
 
 The **getMaskBuilder** function gets the new instance of the mask builder which can be used to build a permission bitmask for an object with the given object identity.
 
@@ -101,9 +101,9 @@ For example, the following calls return the same mask builder:
 .. code-block:: php
 
 
-   $manager->getMaskBuilder($manager->getOid('entity: AcmeBundle:AcmeEntity'))
-   $manager->getMaskBuilder($manager->getOid('entity: AcmeBundle:AcmeEntity'), 'VIEW')
-   $manager->getMaskBuilder($manager->getOid('entity: AcmeBundle:AcmeEntity'), 'DELETE')
+   $manager->getMaskBuilder($manager->getOid('entity:AcmeBundle:AcmeEntity'))
+   $manager->getMaskBuilder($manager->getOid('entity:AcmeBundle:AcmeEntity'), 'VIEW')
+   $manager->getMaskBuilder($manager->getOid('entity:AcmeBundle:AcmeEntity'), 'DELETE')
 
 
 because VIEW, CREATE, EDIT, DELETE and ASSIGN permissions are supported by the EntityMaskBuilder class and it is the default mask builder for the 'Entity' extension.
@@ -115,8 +115,8 @@ For example, the following calls are identical:
 .. code-block:: php
 
 
-   $manager->getMaskBuilder($manager->getOid('action: Acme Action'))
-   $manager->getMaskBuilder($manager->getOid('entity: Acme Action'), 'EXECUTE')
+   $manager->getMaskBuilder($manager->getOid('action:acme_action'))
+   $manager->getMaskBuilder($manager->getOid('action:acme_action'), 'EXECUTE')
 
 
 The **setPermission**  function updates or creates object-based or class-based ACE with the given attributes.

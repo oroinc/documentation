@@ -467,11 +467,11 @@ The main entry point is `isGranted` method:
 .. code-block:: php
 
 
-   isGranted($attributes[, $object])
+   isGranted($attribute, $subject = null)
 
-**$attributes** can be a role name(s), permission name(s), an ACL annotation id, a string in format "permission;descriptor" (e.g., "VIEW;entity:AcmeDemoBundle:AcmeEntity" or "EDIT;action:acme_action") or some other identifiers depending on registered security voters.
+**$attribute** can be a role name, permission name, an ACL annotation id, a string in format "permission;descriptor" (e.g., "VIEW;entity:Acme\DemoBundle\Entity\AcmeEntity" or "EXECUTE;action:acme_action") or some other identifiers depending on registered security voters.
 
-**$object** can be an entity type descriptor (e.g., "entity:Acme/DemoBundle/Entity/AcmeEntity" or  "action:some_action"), an entity object, instance of `ObjectIdentity`, `DomainObjectReference` or `DomainObjectWrapper`
+**$subject** can be an entity type descriptor (e.g., "entity:Acme\DemoBundle\Entity\AcmeEntity" or "action:some_action"), an entity object, instance of `Symfony\Component\Security\Acl\Domain\ObjectIdentity`, `Oro\Bundle\SecurityBundle\Acl\Domain\DomainObjectReference`, `Oro\Bundle\SecurityBundle\Acl\Domain\DomainObjectWrapper` or `Symfony\Component\Security\Acl\Voter\FieldVote`.
 
 **Examples**
 
@@ -487,7 +487,7 @@ Checking VIEW access to the entity by class name
 .. code-block:: php
 
 
-   $this->authorizationChecker->isGranted('VIEW', 'Entity:MyBundle:MyEntity' );
+   $this->authorizationChecker->isGranted('VIEW', 'entity:' . MyEntity::class);
 
 
 Checking VIEW access to the entity's field
@@ -495,7 +495,7 @@ Checking VIEW access to the entity's field
 .. code-block:: php
 
 
-   $this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, $fieldName) );
+   $this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, $fieldName));
 
 
 Checking ASSIGN access to the entity object
