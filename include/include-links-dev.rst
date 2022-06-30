@@ -4341,6 +4341,10 @@ Links (Dev)
 
    <a href="https://github.com/liip/LiipImagineBundle/blob/afa4193c7fde027426ebb19e73878cd026438bbd/Resources/doc/post-processors/png-quant.rst" target="_blank">LiipImagineBundle: PngquantPostProcessor</a>
 
+.. |LiipImagineBundle Data Roots Parameter| raw:: html
+
+   <a href="https://github.com/liip/LiipImagineBundle#data-roots" target="_blank">LiipImagineBundle</a>
+
 .. |ScopeCriteriaProviderInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ScopeBundle/Manager/ScopeCriteriaProviderInterface.php" target="_blank">ScopeCriteriaProviderInterface</a>

@@ -79,6 +79,32 @@ with predefined system paths.
 To change this configuration, please follow the :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>`
 to lean how this configuration can be changed.
 
+Configure Application For Media Storage as a Sub-Folder
+-------------------------------------------------------
+
+The application's default `public/media` folder can have many files.
+
+To make better use of the disk space, you can decide to move files to external storage (see :ref:`File Storages <backend-file-storage>` and :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>` topics to learn how to switch to the external storage), or use another volume or directory as a file storage.
+
+If the customizer decides to use another volume or directory as file storage, they can do it in two ways:
+
+- with a symlink
+- by binding one directory path (the folder outside your web root) to another
+
+If using symlink, add an additional configuration of the `data_root` parameter of the LiipImagine bundle.
+For example, if you want files to be located in `/home/public/media` directory, add the following configuration:
+
+.. code-block:: yaml
+
+liip_imagine:
+    loaders:
+        default:
+            filesystem:
+                data_root: "/home/public"
+
+You can find more info about `data_root` parameter configuration in |LiipImagineBundle Data Roots Parameter| documentation.
+
+
 Install Oro Application
 -----------------------
 
