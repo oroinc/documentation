@@ -110,6 +110,18 @@ Entity name providers are registered in the DI container by `oro_entity.name_pro
 
 The priority can be specified to move the provider up or down the provider's chain. The bigger the priority number is, the earlier the provider will be executed. The priority value is optional and defaults to 0.
 
+In simple cases, you can configure fields that should be used to get an entity name
+via ``oro_entity.entity_name_representation`` in `Resources/config/oro/app.yml` in any bundle or `config/config.yml`
+of your application, for example:
+
+.. code-block:: yaml
+
+    oro_entity:
+        entity_name_representation:
+            Oro\Bundle\OrganizationBundle\Entity\Organization:
+                full: [ name ]
+                short: [ name ]
+
 **Default behavior**
 
 The bundled provider ``Oro\Bundle\EntityBundle\Provider\EntityNameProvider`` will resolve entity titles by trying to find suitable fields in the entity. For 'short' format it tries to use one string field from the list 'firstName', 'name', 'title', 'subject' (in that order). For 'full' it will use a space-delimited concatenation of all non-serialized string fields. If some of the fields is found but the resulting title is empty (i.e. value of the fields is null) it will return the entity id.

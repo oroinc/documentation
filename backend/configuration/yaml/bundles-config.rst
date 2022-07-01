@@ -501,6 +501,16 @@ The default configuration for extension with alias "oro_entity":
 
     oro_entity:
 
+        # The configuration of an entity's text representation.
+        entity_name_representation:
+
+            # Examples:
+            Acme\AppBundle\Entity\User: { full: [namePrefix, firstName, middleName, lastName, nameSuffix], short: [firstName, lastName] }
+            Acme\AppBundle\Entity\Organization: { full: [name] }
+
+            # Prototype
+            class:                []
+
         # Default doctrine`s query cache lifetime
         default_query_cache_lifetime: null
 
