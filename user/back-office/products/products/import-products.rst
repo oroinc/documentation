@@ -42,7 +42,7 @@ To import a bulk of product information:
 
 6. Click **Cancel** to decline the import.
 
-.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
 .. _user-guide-import-product-images:
 
@@ -55,7 +55,7 @@ local directory as storage.
 
 Then, fill the table with the name of the image file, the SKU name of the product, and a place for the image to be displayed, where **1** is **display** and **0** is **do not display**.
 
-If you are running your application on OroCloud, please be aware that prior to proceeding with the product images upload via the UI (the process which assigns images to products and makes them available in the asset library), you need to:
+If you are running your application on OroCloud, please be aware that before proceeding with the product images upload via the UI (the process which assigns images to products and makes them available in the asset library), you need to:
 
 1. Upload all your images to OroCloud using FTP/SFTP.
 2. Follow the step outlined in the |Media Upload| cloud documentation to move the uploaded images to the appropriate folder before starting product images import.
@@ -80,14 +80,14 @@ To import a bulk of product images:
 
 4. Click **Choose File** and select the .csv file you prepared.
 
-.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+.. note: Ensure your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
 
 .. image:: /user/img/products/products/import_product_images.png
    :alt: The steps that are necessary to perform to import the product price attributes successfully
 
 5. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 
-6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format.
+6. **Prepare data for import**: Create your bulk information in the .csv format based on the downloaded file.
 
 Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
 
@@ -121,7 +121,7 @@ To import a bulk of related products:
 .. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
 
 .. image:: /user/img/products/products/import_related_products.png
-   :alt:  The steps to perform to import of related products
+   :alt:  The steps to perform to import related products
 
 5. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
@@ -129,7 +129,7 @@ To import a bulk of related products:
 8. **Launch import**: After successful validation, click Import File.
 9. **Click Cancel** to decline the import.
 
-.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
 .. _user-guide-import-product-price-attributes:
 
@@ -163,13 +163,13 @@ To import a bulk of product price attributes:
 
 5. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 
-6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
+6. **Prepare data for import**: Create your bulk information in the .csv format based on the downloaded file. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
 
 7. Select the strategy for uploading the file:
 
-   * **Add and Replace** strategy overrides the existing price attribute data (MAP/MSRP/etc) with the one mentioned in the file for the corresponding product item. Also, it adds the price attribute data to the products with the empty values.
+   * **Add and Replace** strategy overrides the existing price attribute data (MAP/MSRP/etc.) with the one mentioned in the file for the corresponding product item. Also, it adds the price attribute data to the products with empty values.
 
-   * **Reset and Add** strategy removes the existing price attribute values for all the products (regardless of the currency) if the price attribute is listed in the file. For example, if an MSRP value is provided for a Product A, all the MSRP values in all the currencies are removed for all the products. If MAP is not mentioned it the file, the MAP values remain intact.
+   * **Reset and Add** strategy removes the existing price attribute values for all the products (regardless of the currency) if the price attribute is listed in the file. For example, if an MSRP value is provided for Product A, all the MSRP values in all the currencies are removed for all the products. If MAP is not mentioned in the file, the MAP values remain intact.
 
      As an illustration, let us fill the table with the following information:
 
@@ -179,7 +179,7 @@ To import a bulk of product price attributes:
 
         "TAG1","MSRP","item","USD","20"
 
-     Originally, the TAG1 item as well as all other items on the **Product** page have some MSRP attribute price.
+     Initially, the TAG1 item and all other items on the **Product** page have some MSRP attribute price.
 
      Once we imported the .csv file, all the MSRP attribute prices were deleted, and the TAG1 item acquired a new MSRP price of 20 USD instead of the previous 7 USD.
 
@@ -192,7 +192,7 @@ To import a bulk of product price attributes:
 
 10. Click **Cancel** to decline the import.
 
-.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

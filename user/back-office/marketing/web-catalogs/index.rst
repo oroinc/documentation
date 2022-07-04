@@ -5,11 +5,11 @@
 Manage Web Catalogs in the Back-Office
 ======================================
 
-.. hint:: This section is part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides a general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
+.. hint:: This section is part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides a general understanding of the tools that help manage the content of your websites, such as web catalog, landing page, content blocks, widgets, and WYSIWYG editor.
 
-:term:`Web Catalog` is a content management tool that helps build highly personalized custom versions of your websites by mixing in category pages, product pages, landing pages and pre-existing system pages in different variations based on the customer account information, their customer group or language preference.
+:term:`Web Catalog` is a content management tool that helps build highly personalized custom versions of your websites by mixing in category pages, product pages, landing pages, and pre-existing system pages in different variations based on the customer account information, their customer group, or language preference.
 
-With OroCommerce web catalog and content tree, you can organize the target website structure to gain improved purchasing experience and use a set of in-place SEO tools to make it reachable for your target audience.
+With the OroCommerce web catalog and content tree, you can organize the target website structure to gain an improved purchasing experience and use a set of in-place SEO tools to make it reachable for your target audience.
 
 The web catalog content nodes may be of the following types:
 

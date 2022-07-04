@@ -5,7 +5,7 @@
 Build a Custom Web Catalog From Scratch (Example)
 =================================================
 
-For illustration purposes, a sample web catalog set up is provided below.
+For illustration purposes, a sample web catalog setup is provided below.
 
 Create First Level Menu
 -----------------------
@@ -18,7 +18,7 @@ A website that distributes beauty and skincare products to shops worldwide is to
 4. Baby and Child
 5. Toiletries
 
-These sections will serve as the first level of the storefront main menu. In the back-office, they will be called the root nodes.
+These sections will serve as the first level of the storefront's main menu. In the back-office, they will be called the root nodes.
 
 To set up root content nodes in the back-office, we:
 
@@ -36,10 +36,10 @@ To set up root content nodes in the back-office, we:
 12. Set the necessary restrictions (or inherit parent restrictions).
 13. Add a landing page linked to Health and Pharmacy.
 14. Click **Save**.
- 
-This way, we create all the required first level menus.  
 
-.. note:: Make sure that you create first level nodes from Web Catalog 2017 in the nodes section on the left of the page.
+This way, we create all the required first-level menus.
+
+.. note:: Make sure you create first-level nodes from Web Catalog 2017 in the nodes section on the left of the page.
 
 .. image:: /user/img/marketing/web_catalogs/use_case/Create1RootNode.png
    :alt: The details of the Web Catalog 2017
@@ -48,16 +48,16 @@ This way, we create all the required first level menus.
 Create Sub-level Menu
 ---------------------
 
-Once all first level nodes have been created, we can create the sub-menu nodes (second level menus) that would populate root nodes.
+Once all first-level nodes have been created, we can create the sub-menu nodes (second-level menus) that would populate root nodes.
 
-Each of the main menu sections will have the following second level menus:
+Each of the main menu sections will have the following second-level menus:
 
 1. Health and Pharmacy: Vitamins and Supplements, Lifestyle and Wellbeing, Women's Health, Men's Health, Baby and Child Health.
 2. Beauty and Skincare: Makeup, Nails, Facial Skincare, Body Skincare, Hair, Fashion Accessories.
 3. Fragrance: Perfume, Aftershave.
 4. Baby and Child: Pregnancy and Maternity, Feeding, Bathing, and Changing.
-5. Toiletries: Hair, Dental, Washing and Bathing.
-   
+5. Toiletries: Hair, Dental, Washing, and Bathing.
+
 To set up content nodes in the back-office:
 
 1. Select the root node you are creating the sub-node for. In our case, it is *Health and Pharmacy*.
@@ -66,12 +66,12 @@ To set up content nodes in the back-office:
 4. Fill in the SEO section.
 5. Set the necessary restrictions (or inherit parent restrictions).
 6. Add a product collection to *Vitamins and Supplements*.
-   
+
 
 .. image:: /user/img/marketing/web_catalogs/use_case/Create1SubMenuNode.png
-   :alt: View the Web Catalog 2017 content tree with the first and second level menus
+   :alt: View the Web Catalog 2017 content tree with the first and second-level menus
 
-This way, we create all the required second level menus.  
+This way, we create all the required second-level menus.
 
 
 Each of such levels can be populated with more levels, or nodes, if necessary, and each node can have a page (:ref:`system <user-guide--marketing--web-catalog--content-variant-system-page>`, :ref:`landing <user-guide--marketing--web-catalog--content-variant-landing page>`, :ref:`product <user-guide--marketing--web-catalog--content-variant-product-page>`), a :ref:`product collection <user-guide--marketing--web-catalog--content-variant-product-collection>`, or a :ref:`category <user-guide--marketing--web-catalog--content-variant-category>` mapped into it.
@@ -105,4 +105,5 @@ Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog-
 
 .. include:: /include/include-images.rst
    :start-after: begin
-   
+
+

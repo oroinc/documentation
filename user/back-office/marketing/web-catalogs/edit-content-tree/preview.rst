@@ -5,7 +5,7 @@
 Preview Web Catalog
 -------------------
 
-OroCommerce enables you to preview web catalog pages in the storefront applying different restrictions dynamically and checking how the content is reflected depending on these restrictions.
+OroCommerce enables you to preview web catalog pages in the storefront, applying different restrictions dynamically and checking how the content is reflected depending on these restrictions.
 
 .. note:: The ability to preview web catalog nodes is controlled by the *Storefront Preview* permissions defined for the selected role in the system configuration.
 
@@ -23,14 +23,14 @@ To start previewing a selected node, follow the steps outlined below:
     .. image:: /user/img/marketing/web_catalogs/web_catalog_preview.png
        :alt: Clicking Preview on the top right of the Lighting  Products content node
 
-4. The storefront page of the related content node opens in the preview mode in a new tab. The mode allows you to browse other pages as well. The configuration panel on the top of the page enables you to switch between websites, localizations, customer groups, and customers to ensure that the page is displayed properly based on different restriction scopes applied.
+4. The storefront page of the related content node opens in the preview mode in a new tab. The mode allows you to browse other pages as well. The configuration panel on the top of the page enables you to switch between websites, localizations, customer groups, and customers to ensure that the page is displayed correctly, based on different restriction scopes.
 
     .. image:: /user/img/marketing/web_catalogs/preview_mode.png
        :alt: Configuration panel in the storefront
 
 5. If you want to adjust any settings and preview the results, you need to save these settings first.
 
-To illustrate the example, let's consider the case where you run two businesses in the US and Canada selling various lighting products. While the US warehouse is all packed with the necessary products, the warehouse in Canada is only expecting the delivery. To notify the wholesale customers that the products are on the way, you have created a dedicated landing page. This way, your restrictions for the *Lighting Products* node can be configured the following way:
+To illustrate the example, let's consider the case where you run two businesses in the US and Canada selling various lighting products. While the US warehouse is all packed with the necessary products, the warehouse in Canada is only expecting the delivery. You have created a dedicated landing page to notify the wholesale customers that the products are on the way. This way, your restrictions for the *Lighting Products* node can be configured the following way:
 
 * The Lighting Products category page is visible for all customers, customer groups, and localizations of the US website.
 * The related landing page is visible for all wholesale customers of the Canada website.

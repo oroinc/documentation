@@ -47,14 +47,14 @@ To create a master catalog category:
 
    * **Large Image** — An image reserved for customization purposes.
 
-4. In the **Short Description** section, provide a short but meaningful description of the category you are creating as a default value. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the short description in the text field.
+4. In the **Short Description** section, provide a short but meaningful description of the category you are creating as a default value. Move from tab to tab to localize the description by setting the required fallback option. You can select whether to fall back to the default value, parent localization, or a custom value from the dropdown. When selecting the custom value, provide the localized version of the short description in the text field.
 
     .. image:: /user/img/products/master_catalog/localize_short_descriptions_category.png
        :alt: Localization fallback option for the short description of the master catalog
 
-5. In the **Long Description** section, provide a long default description of the category. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
+5. In the **Long Description** section, provide a long default description of the category. Move from tab to tab to localize the description by setting the required fallback option. You can select whether to fall back to the default value, parent localization, or a custom value from the dropdown. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
 
-6. In the **Products** section, select the items for the category you are creating. Use available filters to narrow down your search and speed up the selection of the necessary product items.
+6. In the **Products** section, select the items for the category you are creating. Use available filters to narrow your search and speed up the selection of the necessary product items.
 
 .. _master-catalog-inventory:
 
@@ -67,21 +67,21 @@ To create a master catalog category:
       :header: "Field","Description"
       :widths: 30, 60
 
-      "**Unit Of Quantity**", "A product unit that is shown by default in the product details page in the storefront. Available options are *each*, *hour*, *item*, *kilogram*, *piece*, *set*, and *Parent Category*. The latter is used to refer to the same product quantity unit configured for the corresponding parent category."
-      "**Precision**", "An acceptable value (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g. 0.5 kg)."
+      "**Unit Of Quantity**", "A product unit that is shown by default in the product details page in the storefront. Available options are *each*, *hour*, *item*, *kilogram*, *piece*, *set*, and *Parent Category*. The latter refers to the same product quantity unit configured for the corresponding parent category."
+      "**Precision**", "An acceptable value (number of digits after the decimal point) for the quantity that a user may order or add to the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g., 0.5 kg)."
 
 .. include:: /user/back-office/products/products/create-simple.rst
    :start-after: start_inventory
    :end-before: finish_inventory
 
-8. The **Activity** section displays all the :ref:`activities <user-guide-productivity-tools>` available for the selected category, such as *call*, *task*, *email*, *note*, or *calendar event*. You can use filters to select any activity type and date of its implementation.
+8. The **Activity** section displays all the :ref:`activities <user-guide-productivity-tools>` available for the selected category, such as *call*, *task*, *email*, *note*, or *calendar event*. You can use filters to select any activity type and the date of its implementation.
 
 .. _master-catalog-visibility:
 
 9. In the **Visibility** section, you can set a visibility restriction for the master catalog category and the products assigned to this category by clicking the necessary tab.
 
    * **Visibility to All** --- The default visibility settings of the selected category.
-   * **Visibility to Customer Groups** --- The settings that define whether to show or hide the selected category from the group of customers in the storefront. Customers may be grouped based on authentication options or type of business that the customers are in.
+   * **Visibility to Customer Groups** --- The settings that define whether to show or hide the selected category from the group of customers in the storefront. Customers can be grouped based on authentication options or the type of business that the customers are in.
    * **Visibility to Customers** --- The settings that define whether to show or hide the selected category from the user's organization or business unit (customer) in the storefront.
 
 In the tab, select one of the following options:
@@ -97,9 +97,9 @@ In the tab, select one of the following options:
 
 10. In the **SEO** section, fill in the following details to help search engines show your master catalog content to the relevant audience.
 
-   * **Meta Keywords** --- Enter the meta keywords for the product. A meta keyword is a specific type of a meta tag that appears in the HTML code of a web page and helps tell search engines what the topic of the page is.
-   * **Meta Title** --- Enter the meta title for the product. A meta title is what is seen by search engine users and helps a search engine to index the page.
-   * **Meta Description** --- Enter the meta description for the product. A meta description summarizes a page content. Search engines show a meta description in search results if they see the searched phrase in the description.
+   * **Meta Keywords** --- Enter the meta keywords for the product. A meta keyword is a specific type of meta tag that appears in the HTML code of a web page and helps tell search engines what the topic of the page is.
+   * **Meta Title** --- Enter the meta title for the product. A meta title is what is seen by the search engine users and helps a search engine to index the page.
+   * **Meta Description** --- Enter the meta description for the product. A meta description summarizes a page's content. Search engines show a meta description in search results if they see the searched phrase in the description.
 
    Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
@@ -113,7 +113,7 @@ In the tab, select one of the following options:
 Create a Master Catalog Subcategory
 -----------------------------------
 
-Once you are done creating the main master catalog category, proceed to its subcategory creation.
+Once you have created the main master catalog category, proceed to its subcategory creation.
 
 To distribute the product items into more specific and detailed product families, create a master catalog subcategory:
 
@@ -126,13 +126,13 @@ To distribute the product items into more specific and detailed product families
 
 3. Provide the information following the guide in the :ref:`Create a Master Catalog Category <user-guide--master-catalog--category_creation>` section.
 
-.. note:: Please note that one product item cannot be linked to both a category and a subcategory.
+.. note:: Please note that you cannot link one product item to both a category and a subcategory.
 
 
 Link the Master Catalog Category to a Web Catalog
 -------------------------------------------------
 
-Now, when the master catalog category is created, you need to link it to a :ref:`web catalog <user-guide--web-catalog>` for the customer to view it from the storefront.
+When the master catalog category is created, you need to link it to a :ref:`web catalog <user-guide--web-catalog>` for the customer to view it from the storefront.
 
 Proceed with the following steps:
 
@@ -140,9 +140,7 @@ Proceed with the following steps:
 
 2. Add the master catalog category following the guide illustrated in the :ref:`Add a Category (Web Catalog Content) <user-guide--marketing--web-catalog--content-variant-category>` section.
 
-
 .. important:: As a follow-up, see the :ref:`Configure Product and Category Visibility to Customers <user-guide--customers--configuration--visibility>` topic for the details on how to control the default visibility settings for master catalog categories and subcategories through the back-office.
-
 
 
 **Related Articles**

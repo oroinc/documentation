@@ -5,7 +5,7 @@
 Manage Price Attributes in the Back-Office
 ==========================================
 
-A :term:`Price Attribute` is a custom parameter, like manufacturer's suggested retail price (MSRP), minimum advertised price (MAP), or shipping cost that may be needed as input information for your retail price listed on the website. Price attributes help you extend the product options with any custom value related to the price formation.
+A :term:`Price Attribute` is a custom parameter, like the manufacturer's suggested retail price (MSRP), minimum advertised price (MAP), or shipping cost that may be needed as input information for your retail price listed on the website. Price attributes help you extend the product options with any custom value related to the price formation.
 
 Before reading on, consider watching a short demo from our media library on |how to set up price attributes in OroCommerce|.
 
@@ -24,7 +24,7 @@ To create a new price attribute:
 
 #. Click **Create Price Attribute**. The following page opens:
 
-#. Type in the price attribute name (that is used as a UI label) and the field name that is used in the code and in the database to refer to the price attribute container.
+#. Type in the price attribute name (used as a UI label) and the field name used in the code and database to refer to the price attribute container.
 
 #. Select the currencies that are supported for this price attribute:
 
@@ -54,7 +54,7 @@ To view all price attributes, navigate to **Products > Price Attributes** in the
 .. image:: /user/img/products/price_attributes/PriceAttributes.png
    :alt: The page of all price attributes
 
-Here, you can create a new price attribute, filter the list of existing ones by a price attribute name or a field name, view price attribute details by clicking on the item. Also, you can  |IcView| view, |IcEdit| edit, or |IcDelete| delete a price attribute by hovering over the |IcMore| **More Options** menu to the right of the item.
+Here, you can create a new price attribute, filter the list of existing ones by a price attribute name or a field name, and view price attribute details by clicking on the item. Also, you can  |IcView| view, |IcEdit| edit, or |IcDelete| delete a price attribute by hovering over the |IcMore| **More Options** menu to the right of the item.
 
 To remove multiple price attributes, select check boxes in front of the price attributes that you want to delete. At the right end of the list header, click the |IcMore| **More Options** menu and click |IcDelete| **Delete** to remove all selected price attributes.
 
@@ -66,9 +66,9 @@ The following information is available immediately:
 
 * **Field Name** -- The name of the field in the code/database that represents the price attribute.
 
-* **Currencies** -- The currencies this price attribute is supported for.
+* **Currencies** -- The currencies in which this price attribute is supported.
 
-* **Enabled in Product Export** -- If enabled, this price attribute will be used in the :ref:`storefront product listing export <frontstore-guide--navigation-product-data-export>`.
+* **Enabled in Product Export** -- If enabled, this price attribute is used in the :ref:`storefront product listing export <frontstore-guide--navigation-product-data-export>`.
 
 .. image:: /user/img/products/price_attributes/price-attribute-edit.png
    :alt: Price attribute edit page
@@ -84,7 +84,7 @@ To edit a price attribute:
 
 #. Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| **Edit** to start editing its details.
 
-#. Amend the price attribute name (that is used as a UI label) and/or the field name that is used in the code and in the database to refer to the price attribute container.
+#. Amend the price attribute name (used as a UI label) and/or the field name used in the code and database to refer to the price attribute container.
 
 #. Modify the selection of the currencies that are supported for this price attribute:
 
@@ -96,7 +96,7 @@ To edit a price attribute:
 
 #. Click **Save**.
 
-Next, in the product details, adjust the price attribute values and provide values for newly added currencies.
+Next, adjust the price attribute values and provide values for newly added currencies in the product details.
 
 Set a Price Attribute Value in the Product Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -121,7 +121,9 @@ To set a price attribute (e.g., Minimal Advertised Price) for a product:
 
    .. image:: /user/img/products/price_attributes/shipping-cost-price-attribute-with-integration.png
       :scale: 42%
-      :alt: Illustration of how shipping cost set for the price attribute works on combination with the surcharge defined in the fixed product shipping cost integration
+      :alt: Illustration of how shipping cost set for the price attribute works in combination with the surcharge defined in the fixed product shipping cost integration
+
+   .. hint:: Fixed Product Shipping Cost has been available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 #. Provide the value per unit and currency.
 

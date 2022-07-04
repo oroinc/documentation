@@ -13,7 +13,7 @@ When creating a product, you can select one of the available pre-designed page t
 
 .. tip:: You can create a product from the product list. To open it, navigate to **Products > Products > Create Product** in the main menu.
 
-There are several page template available out of the box:
+There are several page templates available out of the box:
 
 .. image:: /user/img/products/products/PageTemplate.png
    :alt: The list of available page templates

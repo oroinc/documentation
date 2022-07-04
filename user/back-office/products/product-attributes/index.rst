@@ -10,22 +10,22 @@ Overview
 
 .. hint:: This section is part of the :ref:`Product Management <concept-guides--product-management>` topic that provides a general understanding of the product concept in OroCommerce.
 
-A :term:`Product Attribute` is a special type of custom field in the product details. For product attributes, OroCommerce enables you to manage and group attributes that are unique to a special product family. By adding the product attributes only to the product families they fit, you can limit the product data to the necessary characteristics.
+A :term:`Product Attribute` is a type of a custom field in the product details. For product attributes, OroCommerce enables you to manage and group attributes that are unique to a particular product family. By adding the product attributes only to the product families they fit, you can limit the product data to the necessary characteristics.
 
-For example, when your OroCommerce store sells TVs and T-shirts, these items share some generic attributes (e.g., name, vendor), and differ in the remaining attributes set. For example, there might be a *Screen properties* group that contains *resolution*, *diagonal*, and *matrix* that should be linked to the products in the TV product family. For the T-shirts family, the linked attribute group may have color, size, material, fit and care guidance (washing, ironing, dry cleaning, etc).
+For example, when your OroCommerce store sells TVs and T-shirts, these items share some generic attributes (e.g., name, vendor), and differ in the remaining attributes set. For example, there might be a *Screen properties* group containing *resolution*, *diagonal*, and *matrix* that should be linked to the products in the TV product family. For the T-shirts family, the linked attribute group may have color, size, material, fit, and care guidance (washing, ironing, dry cleaning, etc.).
 
-.. note:: Product attributes can be managed per organization. Any changes made to product attributes within one organization do not affect the attributes from others. The attributes that are created in the global organization can be used in other organizations, but only the admins of the global organization can edit them.
+.. note:: You can manage product attributes per organization. Any changes made to product attributes within one organization do not affect the attributes of others. You can use the attributes created in the global organization in other organizations, but only a system administrator of the global organization can edit them.
 
 By default, OroCommerce comes with the following system product attributes:
 
 .. image:: /user/img/products/product_attributes/ProductAttributes_oob.png
    :alt: The list of the default system product attributes
 
-Add new product attributes to introduce new custom parameters in your product details. Include product attributes into the new or existing attribute group in one or multiple product families.
+Add new product attributes to introduce new custom parameters in your product details. Include product attributes in one or multiple product families into the new or existing attribute group.
 
 .. note:: System attributes are shared among all product families. You can reorganize the way system attributes are grouped, but you cannot remove a product attribute from the product family.
 
-.. hint:: Instead of using one general purpose attribute (e.g., color), create multiple specific attributes (e.g., car_color, laptop_color, table_color). This prevents loading all attributes as filters on all product pages and as a result, reduces the load on the database and improves the overall application performance.
+.. hint:: Instead of using one general-purpose attribute (e.g., color), create multiple specific attributes (e.g., car_color, laptop_color, table_color). This prevents loading all attributes as filters on all product pages and as a result, reduces the load on the database and improves the overall application performance.
 
 .. _products--product-attributes--create:
 
@@ -38,9 +38,9 @@ See a short demo on |how to create product attributes|, or keep reading the step
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ja7-3G7ljTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Creation of an attribute happens in two steps:
+The creation of an attribute happens in two steps:
 
-* In step 1, you specify the basic properties, such as the attribute name and type.
+* In step 1, specify basic properties, such as the attribute name and type.
 * In step 2, you specify more advanced properties, some of which may depend on the selected attribute type.
 
 Step 1: Select Attribute Type
@@ -52,7 +52,7 @@ To create an attribute:
 
 2. Click **Create Attribute**.
 
-.. hint:: You may receive the following warning message which notifies you about the limits for the number of attributes that can be created, which can effect the future export of entities.
+.. hint:: You may receive the following warning message, which notifies you about the limits for the number of attributes that can be created, which can affect the future export of entities.
 
           +------------------------------------------------------------------------------------------------------------------------------+
           | The number of attributes stored as columns in the X table (the attributes that are relations or that have ever been marked   |
@@ -70,14 +70,14 @@ To create an attribute:
 .. csv-table::
    :widths: 10, 30
 
-   "**Field Name**","Fill in the field name that should be used to store the values of the product attribute. It should be between 2 and 22 characters long. Use only alphabetic symbols, underscore and numbers."
+   "**Field Name**","Fill in the field name that should be used to store the values of the product attribute. It should be between 2 and 22 characters long. Use only alphabetic symbols, underscore, and numbers."
    "**Type**","Select an attribute type to store the value of the specific data type. For the list of available field types and their purposes, refer to the :ref:`relevant section <field-file-types>` of the Entity Field Properties topic or see descriptions in Step 2 below.
 
    Select one of the **Relations** for the attribute to connect your custom entities as product information (these can be used for business intelligence and segments):
 
-   - **Many to many** --- No limit of how many entity records of the selected type can be connected to the attribute, e.g., many custom entity records can be related to many products.
+   - **Many to many** --- No limit on how many entity records of the selected type can be connected to the attribute, e.g., many custom entity records can be related to many products.
    - **Many to one** --- Attributes cannot have more than one entity record related to them, e.g., Products A-Z can relate to Promotion A. Product A cannot relate to multiple promotions. You can reuse the same promotion in multiple product details.
-   - **One to many** --- One attribute can relate to many entity records, but every related entity record may be connected only once, e.g., Product A can be related to many promotions, but Promotion A cannot be related to multiple products."
+   - **One to many** --- One attribute can relate to many entity records, but every related entity record can be connected only once. For example, product A can be related to many promotions, but Promotion A cannot be related to multiple products."
 
 4. Click **Continue** to load the next page.
 

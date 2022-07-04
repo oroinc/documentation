@@ -5,7 +5,9 @@
 Manage Inventory
 ================
 
-To manage quantities for a single product in multiple warehouses (multi-warehouse feature is only available in the Enterprise edition):
+.. hint:: Multi-warehouse feature is only available in the Enterprise edition.
+
+To manage quantities for a single product in multiple warehouses:
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
 2. Click the product that you want to manage the inventory for. The product view page opens.
@@ -17,4 +19,4 @@ To manage quantities for a single product in multiple warehouses (multi-warehous
 
 5. Click **Save**.
 
-For more information about inventory, see :ref:`Warehouses and Inventory <user-guide--inventory>`.
+For more inventory information, see :ref:`Warehouses and Inventory <user-guide--inventory>`.

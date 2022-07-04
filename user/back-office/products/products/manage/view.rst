@@ -6,16 +6,14 @@ View Product Details
 ====================
 
 1. In the main menu, navigate to **Products > Products**. The product list opens.
-2. Choose the product that you need to modify, and click the corresponding row.
+2. Choose the product you want to modify, and click the corresponding row.
 
-   Alternatively, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcView| **View** icon.
-
-   The page with product details opens. To learn what you can find and perform when viewing the product details, see the following section.
+   Alternatively, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcView| **View** icon to open the product details page.
 
 Product Details
 ---------------
 
-Note that the exact set of sections (and their content) may vary depending on the configuration of the :ref:`family that the product belongs to <products--product-families>`. Each section of the product details reflects the product attribute group configured within the product family and may contain any number of custom fields.
+The exact set of sections (and their content) can vary depending on the configuration of the :ref:`family to which the product belongs <products--product-families>`. Each section of the product details reflects the product attribute group configured within the product family and may contain any number of custom fields.
 
 This topic describes only the default sections and fields and the most common ones.
 
@@ -29,9 +27,9 @@ Header
 .. image:: /user/img/products/products/products_review_top.png
    :alt: A sample of a product header
 
-On the top left of the page, you can see the product name. Next to it, there is the product status indicating whether the product is enabled or disabled.
+You can see the product name on the top left of the page. Next to it, there is the product status indicating whether the product is enabled or disabled.
 
-In the next row, you can see when the product has been created and updated.
+In the next row, you can see when the product was created and updated.
 
 Additionally, you can |IcCopy| duplicate, |IcEdit| edit, or |IcDelete| delete the product by clicking the corresponding button.
 
@@ -39,10 +37,10 @@ In the **More Actions** drop-down, you can:
 
   - **Manage Visibility** — Click this button to configure the product's visibility at different levels (customer, customer group, region). See the :ref:`Manage a Product's Visibility <products--product-visibility>` action description.
   - **Manage Inventory** — Click this button to configure how many product units are available in each warehouse. See the :ref:`Manage Inventory <doc--products--actions--manage-inventory>` action description.
-  - **Add Attachment** — Click this button to attach a file to this product. In the popup dialog, choose the file to attach. You can also add a comment or change the owner, if required. Save it.
-  - **Add Note** — Click this button to make a note related to this product. In the popup dialog, enter the required text. Use the rich-text editor (if enabled) to format your message. You can also attach a file to your note and define additional context for it. Click **Add**.
+  - **Add Attachment** — Click this button to attach a file to this product. In the pop-up dialog, choose the file to attach. You can also add a comment or change the owner if required. Save it.
+  - **Add Note** — Click this button to make a note related to this product. In the pop-up dialog, enter the required text. Use the rich-text editor (if enabled) to format your message. You can also attach a file to your note and define the additional context for it. Click **Add**.
 
-In the next row, you can check which user is responsible for the product (owns it). Click the owner name to open the profile of the corresponding user. Enclosed in parentheses, there is the name of the organization that the owner belongs too.
+In the next row, you can check which user is responsible for the product (owns it). Click the owner name to open the profile of the corresponding user. Enclosed in parentheses is the name of the organization to which the owner belongs.
 Click the **Change History** link to see who, how, and when modified the product.
 
 
@@ -58,14 +56,14 @@ General
 
    "**Category**","The category under which the product is listed."
    "**SKU**","The :term:`stock keeping unit <Stock keeping unit (SKU)>` that helps identify the product and track it in inventory."
-   "**Name**","The name of the product how it appears on the user interface."
-   "**Type**", "Whether it is a simple product or product that have variants (configurable) --- i.e., unites several simple products. The example of a configurable product is scissors that can be bought with either red or green handles."
+   "**Name**","The product's name as it appears in the user interface."
+   "**Type**", "Whether it is a simple product or product that has variants (configurable) --- i.e., unites several simple products. An example of a configurable product is a pair of scissors with either red or green handles."
    "**Is Featured**", "Whether the product is included in the featured products listing."
    "**New Arrival**", "Whether the product is included in the listing of new arrivals. When set to *Yes*, the product is highlighted in the storefront."
    "**Brand**", "The :ref:`brand <user-guide--product-brands>` that the product belongs to."
    "**Tax Code**", "The code that helps identify what taxes to apply to the product."
    "**Description**", "A detailed information about the product. It appears in the product details."
-   "**Short Description**", "A short but meaningful description of the product. It is displayed in the catalog listing."
+   "**Short Description**", "A short but meaningful product description. It is displayed in the catalog listing."
 
 If the product's family contains the group with the code "general", all attributes from the group also appear in this section.
 
@@ -91,12 +89,12 @@ For each product variant, the following information is displayed:
    "**Enabled**", "Whether the product variant is enabled and can be used."
    "**Inventory Status**", "Whether the product variant is in stock."
 
-.. For how to filter displayed products, configure visible fields, etc., see the :ref:`Grids <doc-grids>` topic.
+.. To filter displayed products, configure visible fields, etc., see the :ref:`Grids <doc-grids>` topic.
 
 Images
 ^^^^^^
 
-There is a list of images associated with the product in this section. For each image you can see:
+There is a list of images associated with the product in this section. For each image, you can see:
 
 * The file name and preview.
 * Whether this is the main image that represents the product and appears in the product details view.
@@ -108,18 +106,18 @@ If the product's family contains the group with the code "images", all attribute
 Unit of Quantity
 ^^^^^^^^^^^^^^^^
 
-This section contains information about units this product is measured in.
+This section contains information about the units this product is measured in.
 
 .. csv-table::
    :header: "Field", "Description"
    :widths: 30, 60
 
    "**Unit**","The main product unit that is used as default in the product details in the storefront and the acceptable precision (number of digits after the decimal point) for it"
-   "**Additional Units**","The list of additional units of quantity applicable for the product. For each unit, the following information is displayed:
+   "**Additional Units**","The list of additional quantity units applicable for the product. For each unit, the following information is displayed:
 
     - The name of the unit.
-    - The acceptable precision, in a number of digits after the decimal point.
-    - The number of main units that the additional unit contains.
+    - The acceptable precision in the number of digits after the decimal point.
+    - The number of primary units that the additional unit contains.
     - Whether selling product in these units is enabled."
 
 Inventory
@@ -132,15 +130,15 @@ This section contains information related to the tracking of the product invento
    :widths: 30, 60
 
    "**Inventory Status**","Whether the product is in stock, out of stock, or discontinued."
-   "**Managed Inventory**","The method of the inventory management.
+   "**Managed Inventory**","The inventory management method.
 
     - *Yes* — The inventory status is being interactively updated based on the amount of product available in warehouses.
     - *No* — The inventory status is set manually."
    "**Inventory Threshold**","A minimum quantity of the product that is treated as 'in stock'. When a product quantity drops below this value, the product is considered to be out of stock."
    "**Backorders**","Defines whether backorders are accepted. The feature is only available in the Enterprise edition.
 
-    - *Yes* — Buyers can order products in the quantities that are not currently available in the warehouses. The remaining portion of the order will be sustained until the product gets back in stock.
-    - *No* — Products can be ordered only in the quantities that are available in the warehouses."
+    - *Yes* — Buyers can order products in quantities not currently available in the warehouses. The remaining portion of the order will be sustained until the product is back in stock.
+    - *No* — Products can be ordered only in the quantities available in the warehouses."
    "**Decrement Inventory**","Whether the inventory is decremented upon order.
 
     - *Yes* — The ordered quantity is subtracted from the total available quantity of products upon order.
@@ -148,7 +146,7 @@ This section contains information related to the tracking of the product invento
    "**Minimum Quantity to Order**","A minimum quantity that a buyer or sales person can claim in the RFQ, a customer order, quote, or a shopping list."
    "**Maximum Quantity to Order**","A maximum quantity that a buyer or sales person can claim in the RFQ, a customer order, quote, or a shopping list."
 
-For more information on the inventory management, see :ref:`Inventory <user-guide--inventory>`.
+For more information on inventory management, see :ref:`Inventory <user-guide--inventory>`.
 
 Related Items
 ^^^^^^^^^^^^^
@@ -157,7 +155,7 @@ In this section:
 
 * The products listed on the **Related Items** tab appear in the respective section of the product details in the back-office.
 
-* The products listed on the **Up-sell Items** tab appear and in the **You may be also interested in** section in the product details in the storefront.
+* The products listed on the **Up-sell Items** tab appear, and in the **You may also be interested in** section in the product details in the storefront.
 
  .. The products listed on the **Cross-sell** tab appear in the **You may also like these products** section in the storefront during the checkout.
 
@@ -177,10 +175,10 @@ To review related / up-sell products, click the required tab. The following rela
    "**Updated At**","When the related / up-sell product has been updated."
 
 
-.. note:: Note that the number of products that appear in the corresponding sections in the storefront can be limited by catalog configuration options. For more information on related items, see :ref:`Related Products <products--related-products>`.
+.. note:: The number of products appearing in the storefront's corresponding sections can be limited by catalog configuration options. For related items, see :ref:`Related Products <products--related-products>`.
 .. and :ref:`Up-Sell Products <doc--products--up-sell-products>`.
 
-To add or remove related items, click the required tab, then click the  **Quick Edit** link at the right end of the section header. See the :ref:`Manage Related Products <products--related-products>` action description.
+To add or remove related items, click the required tab and the  **Quick Edit** link at the right end of the section header. See the :ref:`Manage Related Products <products--related-products>` action description.
 
 .. For how to filter displayed products, configure visible fields, etc., see the :ref:`Grids <doc-grids>` topic.
 
@@ -195,18 +193,16 @@ For more information, see the :ref:`Price Attributes <user-guide--products--pric
 Product Prices
 ^^^^^^^^^^^^^^
 
-In this section, you can find information on prices set for the product. You can see: in which currency a price is set, for which unit of measurement and quantity, and the price list it is stored in.
+In this section, you can find information on the prices set for the product. You can see in which currency a price is set, for which unit of measurement and quantity, and the price list it is stored in.
 
 Click the |IcView| **View** icon at the end of the row to open the corresponding price list.
-
-.. For how to filter displayed prices, configure visible fields, etc., see the :ref:`Grids <doc-grids>` topic.
 
 .. _products--shipping-options-price-attribute:
 
 Shipping Options
 ^^^^^^^^^^^^^^^^
 
-This section presents information about package weight, dimensions, and freight class, as well as shipping cost price attribute with selected currency and unit options.
+This section presents information about package weight, dimensions, freight class, shipping cost, price attribute with selected currency, and unit options.
 
 .. image:: /user/img/products/price_attributes/shipping-cost-price-attribute.png
    :alt: Illustration of shipping cost information on the product view page
@@ -259,11 +255,15 @@ To delete the activity, click the |IcMore| **More Options** menu at the end of t
 
 You can add and delete an activity context.
 
-To add a context to the activity, click the |IcMore| **More Options** menu at the end of the row, and the click |IcContext| **Add Context**. In the **Add Context Entity** dialog, choose the desired context and click it to select.
+To add a context to the activity, click the |IcMore| **More Options** menu at the end of the row, and then click |IcContext| **Add Context**. In the **Add Context Entity** dialog, choose the desired context by clicking on it.
 
-To delete a context from the activity, click the **x** icon next to the context that you want to remove.
+To delete a context from the activity, click the **x** icon next to the context you want to remove.
 
-You can add a comment under a particular activity. To do this, click the activity to expand it and click **Add Comment**. In the **Add Comment** dialog, type your message. Use the built-in text editor to format your comment. You can also attach a file to your comment. For this, click the **Upload** link in the dialog and locate the required file. When the comment is ready, click **Add**.
+You can add a comment under a particular activity. To do this:
+Click the activity to expand it and click **Add Comment**.
+In the **Add Comment** dialog, type your message.
+Use the built-in text editor to format your comment. You can also attach a file to your comment.
+For this, click the **Upload** link in the dialog and locate the required file. When the comment is ready, click **Add**.
 
 To edit or delete a comment, click the |IcMore| **More Options** menu next to it and click the |IcEdit| **Edit** or |IcDelete| **Delete** icon correspondingly.
 
@@ -280,15 +280,8 @@ To edit an attachment, click the |IcEdit| **Edit** icon at the end of the row.
 
 To delete an attachment, click the |IcDelete| **Delete** icon at the end of the row.
 
-To delete multiple attachments, select check boxes in front of the files that you want to delete, click the |IcMore| **More Options** menu at the end of the list header, and then click |IcDelete| **Delete**.
+To delete multiple attachments, select check boxes in front of the files you want to delete, click the |IcMore| **More Options** menu at the end of the list header and then click |IcDelete| **Delete**.
 
 
 .. include:: /include/include-images.rst
    :start-after: begin
-
-
-
-
-
-
-

@@ -1,13 +1,11 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--marketing--web-catalog--content-variant:
 
 Configure Content Variants for the Content Node
 ===============================================
 
-This section provides an overview of the content node types and a brief guidance on their setup.
+This section provides an overview of the content node types and guidance on their setup.
 
-.. note:: The first content variant that is added to the node is marked as the default variant. When you add more content variants, please, specify the restrictions next to the content variant details. These restrictions will limit the use of this content variant only to specific cases.
+.. note:: The first content variant added to the node is marked as the default variant. Specify the restrictions next to the content variant details when adding more content variants. These restrictions will limit the use of this content variant only to specific cases.
 
 .. image:: /user/img/marketing/web_catalogs/ContentVariantSection.png
    :alt: Specify the restrictions for the default content node
@@ -17,7 +15,7 @@ This section provides an overview of the content node types and a brief guidance
 Add a System Page
 -----------------
 
-System page is one of the standard pre-designed pages of OroCommerce storefront (e.g. Requests for Quotes, Open Orders).
+The system page is one of the standard pre-designed pages of the OroCommerce storefront (e.g., Requests for Quotes, Open Orders).
 
 To add a system page to the menu in the OroCommerce storefront:
 
@@ -30,31 +28,31 @@ To add a system page to the menu in the OroCommerce storefront:
 
 #. This step applies only to the content nodes with more than one content variant.
 
-   When your system page is not selected as a default variant for the content node, there is a *Restrictions* section beneath the selected system page. In this section, you can define the condition when the system page overrides the default content variant. See the :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
+   When your system page is not selected as a default variant for the content node,  you can define the condition when the system page overrides the default content variant. See the :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
-#. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
+#. Click **Save** when you have filled in the web catalog content node or keep adding the content variants.
 
 .. _user-guide--marketing--web-catalog--content-variant-product-page:
 
 Add a Product Page
 ------------------
 
-Product page node is a direct link to the product details in OroCommerce storefront.
+The product page node is a direct link to the product details in the OroCommerce storefront.
 
 To add a product page node to the menu in the OroCommerce storefront:
 
 #. Select the **Add Product Page** in the Content Variants list.
 
    .. image:: /user/img/marketing/web_catalogs/WebCatalogCreateContentVariantsProductPage.png
-      :alt: Add product page and specify the restrictions
+      :alt: Add product page and spec there is a *Restrictions* section beneath the selected system page.ify the restrictions
 
 #. Select the product from the list. To use search, start typing the product name or SKU in the box. To use filtering, click on the **bars**, and select the filtering conditions in the *Manage filters* section.
 
 #. This step applies only to the content nodes with more than one content variant.
 
-   When your product page is not selected as a default variant for the content node, there is a *Restrictions* section beneath the selected product. In this section, you can define the condition when the product details override the default content variant. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
+   When your product page is not selected as a default variant for the content node, you can define the condition when the product details override the default content variant in the *Restrictions* section beneath the selected product. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
-#. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
+#. Click **Save** when you have filled in the web catalog content node or continue to add the content variants.
 
 .. _user-guide--marketing--web-catalog:
 
@@ -65,7 +63,7 @@ Add All Products Page to Web Catalog
 
 Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it as part of your web catalog.
 
-.. note:: Please note that it is recommended to enable the All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
+.. note:: We do not recommend enabling the All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
 
 1. Navigate to **Marketing > Web Catalogs** in the main menu.
 2. For the necessary web catalog, hover over the |IcMore| more actions menu to the right and click |IcEditContentTree| to start editing the catalog content tree.
@@ -73,7 +71,7 @@ Once the All Products page has been enabled in the system configuration :ref:`gl
   .. image:: /user/img/marketing/web_catalogs/AllProductsEditContentTree.png
      :alt: Click the content tree icon in the more options menu of the Default Web Catalog
 
-3. In the **Content Nodes** menu on the left, select the node to which you need to add the All Products page by clicking it.
+3. In the **Content Nodes** menu on the left, click on the node to select the one you want to add the All Products page to.
 4. Click **Create Content Node** on the top right of the page.
 5. Complete the required fields to :ref:`configure the web catalog node <user-guide--marketing--web-catalog--content-node>`.
 6. In the **Content Variants** section, make sure to add the All Products as the system page. To do this:
@@ -96,7 +94,7 @@ Once the All Products page has been enabled in the system configuration :ref:`gl
 Add a Category
 --------------
 
-Category node is a direct link to the product category with the list of products in the OroCommerce storefront.
+A category node is a direct link to the product category with the list of products in the OroCommerce storefront.
 
 To add a category node to the menu in the OroCommerce storefront:
 
@@ -109,12 +107,12 @@ To add a category node to the menu in the OroCommerce storefront:
 
    The available options are:
 
-   * **Include, show as filter** - Used to include all the products assigned to the subcategories of the selected category in addition to the products that are already assigned directly. The subcategories of the first level with at least one product will be displayed as a category filter in the OroCommerce storefront.
+   * **Include, show as filter** - Used to include all the products assigned to the subcategories of the selected category and the products already assigned directly. The subcategories of the first level with at least one product will be displayed as a category filter in the OroCommerce storefront.
 
      .. image:: /user/img/marketing/web_catalogs/subcategory_filter_1.png
         :alt: Illustration of the Include, show as filter option
 
-   * **Do not include** - Used to include the products assigned only to the selected category. In case the category has a subcategory, its product items will not be displayed.
+   * **Do not include** - Used to include the products assigned only to the selected category. If the category has a subcategory, its product items will not be displayed.
 
 3. Select the category from the product catalog tree. To use search, start typing the category name in the box. Use **>** and **v** to expand/collapse the tree node.
 
@@ -123,9 +121,9 @@ To add a category node to the menu in the OroCommerce storefront:
 
 4. This step applies only to the content nodes with more than one content variant.
 
-   When your category is not selected as a default variant for the content node, there is a *Restrictions* section beneath the tree of categories. In this section, you can define the condition when the selected category overrides the default content variant. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
+   When your category is not selected as a default variant for the content node, you can define the condition when the selected category overrides the default content variant in the *Restrictions* section beneath the categories tree. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
-5. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
+5. Click **Save** when you have filled in the web catalog content node or keep adding the content variants.
 
 .. _user-guide--marketing--web-catalog--content-variant-landing page:
 
@@ -151,7 +149,7 @@ To add a landing page node to the menu in the OroCommerce storefront:
 
 #. This step applies only to the content nodes with more than one content variant.
 
-   When your landing page is not selected as a default variant for the content node, there is a *Restrictions* section beneath the selected landing page. In this section, you can define the condition when the landing page overrides the default content variant. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
+   When your landing page is not selected as a default variant for the content node, you can define the condition when the landing page overrides the default content variant in the *Restrictions* section beneath the selected landing page. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
 #. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
 
@@ -187,7 +185,7 @@ Product Collection is a filter-based segment that helps you display a custom and
 
    .. note:: |IcFilter| **Advanced Filter** is hidden by default.
 
-   Click **Preview Results** to check whether the products found via the filter match your criteria, or to exclude unnecessary items from the list.
+   Click **Preview Results** to check whether the products found via the filter match your criteria or to exclude unnecessary items from the list.
 
    .. image:: /user/img/marketing/web_catalogs/PreviewResultsExclude.png
       :alt: Click Preview Results
@@ -196,7 +194,7 @@ Product Collection is a filter-based segment that helps you display a custom and
 
 4. To add a product to the collection manually:
 
-   Click **Add** next to |IcFilter| **Advanced Filter** to add the selected products manually. This can be used in cases when you have few products to be added and there is no need to set up a complicated filter, or when you need to add specific products that may be out of the filter's scope.
+   Click **Add** next to |IcFilter| **Advanced Filter** to add the selected products manually. This can be used when you have a few products to be added, and there is no need to set up a complicated filter, or when you need to add specific products that may be out of the filter's scope.
 
    .. image:: /user/img/marketing/web_catalogs/AddProductsManually.png
       :alt: Click Add and select the products manually
@@ -212,7 +210,7 @@ Product Collection is a filter-based segment that helps you display a custom and
 
    Tick the Selected box to the left of the necessary products, and click **Add**.
 
-   .. note:: You may use filter on the top of the dialog to limit the scope of the products and make it fit into the visible area.
+   .. note:: You can use the filter on the top of the dialog to limit the scope of the products and make them fit into the visible area.
 
    .. image:: /user/img/marketing/web_catalogs/ExcludeItemsFromProductCollection.png
       :alt: Select the necessary products manually
@@ -226,23 +224,24 @@ Product Collection is a filter-based segment that helps you display a custom and
 
 7. This step applies only to the content nodes with more than one content variant.
 
-   When your collection is not selected as a default variant for the content node, there is a *Restrictions* section beneath the product collection preview. In this section, you can define the condition when the product collection overrides the default content variant. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
+   When your collection is not selected as a default variant for the content node, you can define the condition when the product collection overrides the default content variant in the *Restrictions* section beneath the product collection preview. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
-8. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
+8. Click **Save** when you have filled in the web catalog content node or keep adding the content variants.
 
 .. _user-guide--marketing--web-catalog--default-content-variant:
 
 Set a Default Content Variant
 -----------------------------
 
-The first content variant that is added to the node is marked as the default variant.
+The first content variant added to the node is marked as the default variant.
 
-When you add more content variants, they have a dedicated restrictions section next to the content variant details. These restrictions will limit the use of this content variant only to specific cases; the default option is used in any other case.
+When adding more content variants, they have a dedicated restrictions section next to the content variant details. These restrictions will limit the use of this content variant only to specific cases; the default option is used in any other case.
 
-To set up a newly added content variant as default, select the radio on the top left of its type.
+Select the radio on the top left of its type to set up a newly added content variant as default.
 
 .. image:: /user/img/marketing/web_catalogs/change_default_variant.png
    :alt: Select the content variant to make it the default one
 
 .. include:: /include/include-images.rst
    :start-after: begin
+

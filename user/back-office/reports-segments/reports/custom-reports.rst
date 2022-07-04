@@ -12,7 +12,7 @@ To create a custom report:
 
 1. Navigate to **Reports and Segments > Manage Custom Reports** in the main menu.
 2. Click **Create Report** at the top right of the page.
-3. On the **Create Report** page, define properties of the report, as described in the sections below.
+3. On the **Create Report** page, define the report's properties, as described in the sections below.
 
 General
 ^^^^^^^
@@ -20,7 +20,7 @@ General
 .. image:: /user/img/reports/custom_reports_1.png
    :alt: View the Create Report page
 
-The following fields are mandatory and **must** be defined for a report:
+The following fields are mandatory, and **must** be defined for a report:
 
 .. csv-table::
   :header: "Field","Description"
@@ -31,8 +31,8 @@ The following fields are mandatory and **must** be defined for a report:
   It is recommended to create a name that indicates the information the report presents."
   "**Entity**","A target :term:`entity <Entity>` of the report. Its data will be used to generate the report.
 
-  Select one of the entities from the list. (You can also start typing the entity name in the text field to narrow down your entity choices.)"
-  "**Report Type**","Select *Table* from the list. The report will present the data in the form of the table. Currently, this is the only available type."
+  Select one of the entities from the list. (You can also start typing the entity name in the text field to narrow down your entity choices)."
+  "**Report Type**","Select *Table* from the list. The report will present the data in the form of a table. Currently, this is the only available type."
   "**Owner**","Select the user who can manage this report and be responsible for it."
 
 The only optional system field is **Description**. It can be used to save additional information about the report.
@@ -45,12 +45,12 @@ In the **Designer** section, you can define the structure of your report.
 .. image:: /user/img/reports/custom_reports_2.png
    :alt: View the settings under the Designer section
 
-There are four main subsections that help you build your report:
+Four main subsections help you build your report:
 
-- **Columns**—In this subsection, you define which columns your report will contain.
-- **Grouping**—In this subsection, you can define how the information in your report will be aggregated.
-- **Grouping by Date**—In this subsection, you can enable period filters.
-- **Filters**—In this subsection, you apply filters to the data of your report to select only the information you need.
+- **Columns**—Define which columns your report will contain.
+- **Grouping**—Define how the information in your report will be aggregated.
+- **Grouping by Date**—Enable period filters.
+- **Filters**—Apply filters to your report's data to select only the necessary information.
 
 Columns
 ~~~~~~~
@@ -76,17 +76,17 @@ To add a column:
   By default, the field label is used."
   "**Function**","Select a function that you want to apply to the field values. The function processes a set of values and displays the requested information.
 
-  For example, you want a report that shows the number of opportunities with each of the statuses **Open**, **Closed Won** and **Closed Lost**. Then, you can create a report with target entity **Opportunity**. For the opportunity's columns, add **Status** and **Id**. For the **Id** field, specify the **Count** function.
+  For example, you want a report showing the number of opportunities with each status of **Open**, **Closed Won**, and **Closed Lost**. Then, you can create a report with the target entity **Opportunity**. Add **Status** and **Id**for the opportunity's columns. For the **Id** field, specify the **Count** function.
 
   .. image:: /user/img/reports/custom_reports_3.png
      :alt: Create a report for the opportunity entity with the status and ID columns
 
-  As the result, the system takes the first of the statuses and counts how many Ids are listed under it, and the same for other statuses.
+  As a result, the system takes the first of the statuses and counts how many Ids are listed under it, and the same for other statuses.
 
   .. image:: /user/img/reports/custom_reports_4.png
      :alt: The opportunity report output provided that the Count function was selected for the ID column
 
-  There are some field-specific functions (e.g. **Won Count** that shows the number of won opportunities) for the opportunity's **Status** field. The most common functions are the following:
+  Some field-specific functions (e.g., **Won Count** that shows the number of won opportunities) for the opportunity's **Status** field. The most common functions are the following:
 
   - **None**—The data is not aggregated, you will see field values as they are.
 
@@ -94,7 +94,7 @@ To add a column:
 
   - **Sum**—The column displays the sum of all values in the set.
 
-  - **Average**—The column displays arithmetical mean of the values in the set.
+  - **Average**—The column displays the arithmetical mean of the values in the set.
 
   - **Min**—The column displays the smallest value in the set.
 
@@ -106,10 +106,10 @@ To add a column:
   "**Sorting**","Select the sorting order for the field.
 
   - **None**—The data in the field are not sorted.
-  - **Asc**—The data are sorted in the ascending order (e.g. from the smallest to the largest number, or from A to Z).
-  - **Desc**—The data are sorted in the descending order (e.g. from the largest to the smallest number, or from Z to A).
+  - **Asc**—The data are sorted in the ascending order (e.g., from the smallest to the largest number, or from A to Z).
+  - **Desc**—The data are sorted in descending order (e.g., from the largest to the smallest number, or from Z to A).
 
-  .. important:: If sorting is defined for several columns, the report is sorted according to the order specified for the first column, and then, if multiple values of other columns correspond to any value of a first column, they will be sorted according to the order defined for the next columns.
+  .. important:: If sorting is defined for several columns, the report is sorted according to the order specified for the first column, and then, if multiple values of other columns correspond to any value of a first column, they will be sorted according to the order defined for the following columns.
 
     Let us display the following table.
 
@@ -182,7 +182,7 @@ To move a column, click the |IcArrowsV| **Move** icon to the right of the corres
 Grouping
 ~~~~~~~~
 
-When you specify a function for some of the fields, you need to add all other fields (that do not have any function specified for them) to the **Grouping** section.
+When you specify a function for some of the fields, you must add all other fields (that do not have any function specified for them) to the **Grouping** section.
 
 Add a Field to Grouping
 """""""""""""""""""""""
@@ -207,7 +207,7 @@ In this section, you can define whether to show additional period filters for th
 .. image:: /user/img/reports/custom_reports_6.png
    :alt: The report output with the enabled grouping by day filter
 
-With these filters, you can define the date range to filter the report data and group the data in this range by periods (days, month, quarters, years).
+With these filters, you can define the date range to filter the report data and group the data in this range by periods (days, months, quarters, years).
 You can also decide whether to show or not the periods that do not contain any data.
 
 .. image:: /user/img/reports/custom_reports_7.png
@@ -244,8 +244,8 @@ OroCommerce supports line charts. To create a line chart for the report, define 
    :widths: 10, 30
 
    "**Chart Type**","Currently only the **Line Chart** option is available"
-   "**Category (X Axis)**","Select the fields with the values which will form the X Axis of the report chart"
-   "**Value (Y Axis)**","Choose the fields with the values which will form the Y Axis of the report chart"
+   "**Category (X Axis)**","Select the fields with the values which will form the X Axis of the report chart."
+   "**Value (Y Axis)**","Choose the fields with the values which will form the Y Axis of the report chart."
 
 For more details, see the :ref:`chart example <user-guide--business-intelligence--reports--chart-examples>`.
 
@@ -265,7 +265,7 @@ Alternatively, hover over the |IcEllipsisH| **More Options** menu and click the 
 From the Custom Report View Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the main menu, navigate to **Reports & Segments**. Custom reports are gathered in sections by the name of the field they are related to. Select the required section, navigated further to the desired report, and click it.
+In the main menu, navigate to **Reports & Segments**. Custom reports are gathered in sections by the name of the field they are related to. Select the required section, navigate to the desired report, and click it.
 
 .. image:: /user/img/reports/custom_reports_10.png
    :alt: Navigating to the custom report from the main menu
@@ -273,7 +273,7 @@ In the main menu, navigate to **Reports & Segments**. Custom reports are gathere
 Export a Report
 ---------------
 
-.. note:: Please be aware the Export Grid button may not be available for some reports if the grid you want to export contains grouping by a related entity. 
+.. note:: Please be aware the Export Grid button may not be available for some reports if the grid you want to export contains grouping by a related entity.
 
 1. Open the report that you want to export:
 
@@ -281,7 +281,7 @@ Export a Report
 
    * To export a system report, navigate to **Reports & Segments > Reports** in the main menu and further to the required report (e.g. **Reports & Segments > Reports > Accounts > Life Time**).
 
-2. On the report page, click the **Export Grid** button in the upper-left corner, and then click **CSV** or **XLSX** to export the report to the file of the corresponding format.
+2. On the report page, click the **Export Grid** button in the upper-left corner and then click **CSV** or **XLSX** to export the report to the file of the corresponding format.
 
    .. image:: /user/img/reports/custom_reports_11.png
       :alt: Highlight the Export Grid button on the custom report's details page
@@ -347,7 +347,7 @@ You can delete multiple custom reports at a time.
 
 2. Select multiple custom reports by clicking |Bdropdown| in the left corner of the list header.
 
-3. Hover over the |IcMore| **More Options** menu at the end of the list header and click |IcDelete| to delete multiple reports at a time.
+3. Hover over the |IcMore| **More Options** menu at the end of the list header and click |IcDelete| to delete multiple reports simultaneously.
 
    .. image:: /user/img/reports/custom_reports_16.png
       :alt: Using the bulk delete function to delete multiple custom reports

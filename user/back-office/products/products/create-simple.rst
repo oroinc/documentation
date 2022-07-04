@@ -58,20 +58,20 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
         For every additional unit, provide precision and conversion rate compared to the main unit of quantity.
 
-        Select the **Sell** check box to enable selling the product in these units. Unless **Sell** is selected, the unit is considered to be a draft.
+        Select the **Sell** check box to enable selling the product in these units. Unless **Sell** is selected, the unit is considered a draft.
 
         You can delete the unnecessary unit of quantity by clicking the |IcClose| **Delete** icon next to it.
 
-   #) In the **Tax Code** list, select the :ref:`product tax code <taxes--product-tax-code>` that defines the percentage of tax that may be included into the purchase order during the checkout.
+   #) In the **Tax Code** list, select the :ref:`product tax code <taxes--product-tax-code>` that defines the percentage of tax that can be included in the purchase order during the checkout.
 
       The tax calculation process depends on the tax jurisdiction that you decided to use in OroCommerce and other tax calculation options.
 
-8. In the **Short Description** section, provide a short but meaningful default description that best positions the product for your target audience and will appear in the catalog listing. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the short description in the text field.
+8. In the **Short Description** section, provide a short but meaningful default description that best positions the product for your target audience and will appear in the catalog listing. Move from tab to tab to localize the description by setting the required fallback option. You can select whether to fall back to the default value, parent localization, or a custom value from the dropdown. When selecting the custom value, provide the localized version of the short description in the text field.
 
     .. image:: /user/img/products/products/localize_short_descriptions_product.png
        :alt: Localization fallback option for the short description of the simple product
 
-9. In the **Description** section, provide a long default description of the product that will appear on the product view page. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
+9. In the **Description** section, provide a long default product description that will appear on the product view page. Move from tab to tab to localize the description by setting the required fallback option. From the dropdown, you can select whether to fall back to the default value, parent localization, or a custom value. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
 
 10. In the **Image** section, add a new image to the product by clicking **+Add Image** and then **Choose Image**. You can either upload a new image or select the required one from the list of available :ref:`digital assets <digital-assets>` records.
 
@@ -84,8 +84,8 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
 12. In the **SEO** section, provide the following information:
 
-   * **Meta Keywords** --- Enter the meta keywords for the product. A meta keyword is a specific type of a meta tag that appears in the HTML code of a web page and helps tell search engines what the topic of the page is.
-   * **Meta Title** --- Enter the meta title for the product. A meta title is what is seen by search engine users and helps a search engine to index the page.
+   * **Meta Keywords** --- Enter the meta keywords for the product. A meta keyword is a specific type of meta tag that appears in the HTML code of a web page and helps tell search engines what the page's topic is.
+   * **Meta Title** --- Enter the meta title for the product. A meta title is seen by search engine users and helps a search engine index the page.
    * **Meta Description** --- Enter the meta description for the product. A meta description summarizes a page content. Search engines show a meta description in search results if they see the searched phrase in the description.
 
 .. _create-simple-product-inventory:
@@ -101,32 +101,32 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
       "**Inventory Status**","This setting enables you to define and modify status information for the stock of the product."
       "**Managed Inventory**","This setting defines the method for :ref:`inventory <user-guide--inventory>` management. With *Use category defaults*, the product's **Manage Inventory** inherits the setting selected for the product's parent category. With *Use system config*, the product uses the system configuration setting. Selecting *Yes* enables interactive updates based on the product inventory information from the **Inventory > Warehouses** section. Selecting *No* disables connection to the inventory, and uses the static **Inventory Status** value."
       "**Highlight Low Inventory**","This option defines if low inventory for products is displayed in the storefront."
-      "**Inventory Threshold**","A minimum quantity of the product that is treated as In stock. When a product quantity drops below this value, the product inventory status becomes Out Of Stock."
+      "**Inventory Threshold**","A minimum quantity of the product treated as In stock. When a product quantity drops below this value, the product inventory status becomes Out Of Stock."
       "**Low Inventory Threshold**","The minimum stock level defined for the product. Reaching the defined level will trigger a warning message to the buyer in the storefront."
-      "**Backorders**","A flag that indicates whether OroCommerce accepts backorders (EE feature). When set to *Yes*, buyers and salespeople can order products in the quantities that are not currently available in the warehouses. The remaining portion of the order will be sustained until the product gets back in stock."
-      "**Decrement Inventory**","A flag that indicates whether OroCommerce decrements inventory upon order. When both **Decrement Inventory** and **Backorders** are enabled, a product quantity may become negative."
+      "**Backorders**","A flag that indicates whether OroCommerce accepts backorders (EE feature). When set to *Yes*, buyers and salespeople can order products in quantities not currently available in the warehouses. The remaining portion of the order will be sustained until the product is back in stock."
+      "**Decrement Inventory**","A flag that indicates whether OroCommerce decrements inventory upon order. A product quantity can become negative when both **Decrement Inventory** and **Backorders** are enabled."
       "**Minimum Quantity to Order**","A minimum quantity that a buyer or salesperson can claim in the RFQ, customer order, quote, or a shopping list."
       "**Maximum Quantity to Order**","A maximum quantity that a buyer or salesperson can claim in the RFQ, customer order, :ref:`quote <user-guide--sales--quotes>`, or a shopping list."
-      "**Is Upcoming**","This option informs a customer that the product of the selected category is not in stock currently, but will be available later. When set to *Yes*, additional **Availability Date** is displayed. To remove the upcoming products label, set the option to *No* or customize the required behavior in the :ref:`system configuration <upcoming-products-config>`."
-      "**Availability Date**","The date which indicates the exact date and time since when the selected product will be available in stock."
+      "**Is Upcoming**","This option informs a customer that the product of the selected category is not in stock currently but will be available later. When set to *Yes*, an additional **Availability Date** is displayed. To remove the upcoming products label, set the option to *No* or customize the required behavior in the :ref:`system configuration <upcoming-products-config>`."
+      "**Availability Date**","The date which indicates the exact date and time since the selected product will be available in stock."
 
    .. finish_inventory
 
    .. image:: /user/img/products/products/simple_product_inventory.png
       :alt: The detailed settings of the inventory section
 
-14. In the **Product Price** section, add fixed product prices. Note that fixed prices override the automatically generated :ref:`price lists <user-guide--pricing>`.
+14. Add fixed product prices in the **Product Price** section. Note that fixed prices override the automatically generated :ref:`price lists <user-guide--pricing>`.
 
-    Click **+Add**, select a price list, specify quantity, units, price value, and currency.
+    Click **+Add**, select a price list, and specify quantity, units, price value, and currency.
 
     .. image:: /user/img/products/products/SimpleProductPrices.png
        :alt: The product prices setting
 
-15. In the **Shipping Options** section, click **+Add Options** and provide unit, weight and weight measuring unit, dimensions (width, height, depth), and dimensions measuring unit and freight class.
+15. In the **Shipping Options** section, click **+Add Options** and provide unit, weight, and weight measuring unit, dimensions (width, height, depth), and dimensions measuring unit and freight class.
 
-16. Review translation rules for a product name, URL slug, description, and short description.
+16. Review translation rules for a product name, URL slug, long description, and short description.
 
-    To enter translation manually, click |IcTranslations|, clear the **Use <parent translation>** check box next to the required language, and provide your version of the translation.
+    To enter translation manually, click |IcTranslations|, clear the **Use <parent translation>** check box next to the required language, and provide your translation version.
 
     .. image:: /user/img/products/products/ProductsCreateTranslation.png
        :alt: Provide the relevant translation
@@ -144,7 +144,7 @@ Once the core product information is saved, you may add related products and up-
 
 To add related products to the product information:
 
-1. Navigate to the **Products > Products** using main menu.
+1. Navigate to the **Products > Products** using the main menu.
 #. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| **View** icon to preview its details.
 #. Navigate to the **Related Items** section and click the |IcEdit| **Quick Edit** link in the section header.
 
@@ -154,7 +154,7 @@ To add related products to the product information:
 
 #. In the **Select Related Products For** dialog:
 
-   a) Select the **Is Related** check boxes next to the products to mark them as related. Use filter to limit the number of listed products and find the necessary items.
+   a) Select the **Is Related** check boxes next to the products to mark them as related. Use a filter to limit the number of listed products and find the necessary items.
 
    b) Click **Select Products**.
 
@@ -162,7 +162,7 @@ To add related products to the product information:
 
    .. note:: To delete a related item, click |IcDelete| **Delete**  next to it.
 
-#. Once you are done adding the related items, click **Save and Close**.
+#. Once you add the related items, click **Save and Close**.
 
 Now, you can configure related products :ref:`globally <sys--commerce--catalog--relate-products>`, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>` in the system configuration.
 
@@ -182,7 +182,7 @@ To add up-sell items to the product information:
 
 #. In the **Select Up-Sell Items For** dialog:
 
-   a) Select the **Is Related** check boxes next to the products to mark them as related. Use filter to limit the number of listed products and find the necessary items.
+   a) Select the **Is Related** check boxes next to the products to mark them as related. Use a filter to limit the number of listed products and find the necessary items.
 
    b) Click **Select Products**.
 
@@ -190,7 +190,7 @@ To add up-sell items to the product information:
 
    .. note:: To delete a related item, click |IcDelete| **Delete**  next to it.
 
-#. Once you are done adding the related items, click **Save and Close**.
+#. Once you add the related items, click **Save and Close**.
 
 Now, you can configure up-sell products :ref:`globally <sys--commerce--catalog--relate-products>`, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>` in the system configuration.
 

@@ -5,7 +5,6 @@
 .. meta::
    :description: Marketing campaigns, promotions, and web catalog management guides for the OroCommerce and OroCRM back-office users
 
-
 .. _user-guide-marketing:
 
 Manage Marketing Activities in the Back-Office

@@ -7,7 +7,7 @@
 Use Filters in the Back-Office
 ==============================
 
-Filters are used to define a set of records to be displayed. Its configuration enables users to automatically select only the records that meet the filter requirements.
+Filters are used to define a set of records to be displayed. Its configuration automatically enables users to select only the records that meet the filter requirements.
 Filters are always created for the records of a specific type (:term:`entity <Entity>`) specified in the general details of the relevant field.
 
 This section will help you learn the basics of filtering expressions and their elements.
@@ -15,7 +15,7 @@ This section will help you learn the basics of filtering expressions and their e
 Filter Options
 --------------
 
-To define filter, use any of the following filter options or combine them:
+To define a filter, use any of the following filter options or combine them:
 
 - **Field Condition**: select only the records with specific values of the selected :term:`fields <Field>`.
 - **Activity**: select only the records to which a specific kind of :ref:`activity <user-guide-activities>` has been/has not been assigned.
@@ -33,8 +33,8 @@ AND/OR Operators
 
 To combine the conditions of two or more filters, you can use the operators **AND** and **OR**:
 
-- If **AND** is used, only the records that meet conditions of all the connected filters will be selected.
-- If **OR** is used, all the records that meet conditions of any of the connected filters will be selected.
+- If **AND** is used, only the records that meet the conditions of all the connected filters will be selected.
+- If **OR** is used, all the records that meet the conditions of any of the connected filters will be selected.
 
 The following sections provide a detailed explanation of the filters with examples for different operators.
 
@@ -57,7 +57,7 @@ To define a field condition:
 
 2. Click **Choose a field**.
 
-3. A list of fields appears. At the top of the list, you can see the name of the field, for which the records are filtered. (In the example below it is an Opportunity). Below the Opportunity name, there is a list of all available fields related to it.
+3. A list of fields appears. At the top of the list, you can see the field's name, for which the records are filtered. (In the example below, it is an Opportunity). Below the Opportunity name is a list of all available fields related to it.
 
   .. image:: /user/img/reports/filters_4.png
      :alt: View the list of fields related to the opportunity record
@@ -69,9 +69,9 @@ To define a field condition:
   .. image:: /user/img/reports/filters_5.png
      :alt: Filtering the opportunity record by status
 
-  - You can also select a field of another entity, related to it. For example, if you want the list to contain only Opportunities assigned to a certain customer, scroll down the list and select this field under the *Related Entities* header.
+  - You can also select a field of another related entity. For example, if you want the list to contain only Opportunities assigned to a customer, scroll down the list and select this field under the *Related Entities* header.
 
-    The name of the selected field (in our example, it is *Customer*) will appear at the top of the list.
+    The name of the selected field (e.g., *Customer*) will appear at the top of the list.
 
     .. image:: /user/img/reports/filters_7.png
        :alt: Filtering the opportunity record by customer name
@@ -112,10 +112,10 @@ To define the activity settings:
     .. image:: /user/img/reports/filters_11.png
        :alt: Creating a filter condition using the Activity option setting Has Activity to All
 
-  - *Choose a field*: select the field to filter by. For example, we will select only the records, for which a call was logged after June 1, 2019.
+  - *Choose a field*: select the field to filter by. For example, we will select only the records for which a call was logged after June 1, 2019.
 
     .. image:: /user/img/reports/filters_12.png
-       :alt: Creating a filter condition for the calls that were logged after June 1, 2019.
+       :alt: Creating a filter condition for the calls logged after June 1, 2019.
 
 
 .. _user-guide--business-intelligence--filters-data-audit:
@@ -123,7 +123,7 @@ To define the activity settings:
 Data Audit
 ----------
 
-The **Data audit** filter specifies a rule for the record changes recorded in the system. Only the records that meet the condition will be selected.
+The **Data Audit** filter specifies a rule for the record changes recorded in the system. Only the records that meet the condition will be selected.
 
 To define the data audit settings:
 
@@ -135,7 +135,7 @@ To define the data audit settings:
 
 3. Select the date when the changes have/have not been applied.
 
-For example, we will select only the records, for which Job Title value has been changed since June 1, 2019.
+For example, we will select only the records for which the Job Title value has been changed since June 1, 2019.
 
 .. image:: /user/img/reports/filters_14.png
    :alt: Creating a filter condition for job titles that have been changed since June 1, 2019
@@ -143,14 +143,14 @@ For example, we will select only the records, for which Job Title value has been
 
 .. note::
 
-    You can combine any number of Activity, Data audit, and Field Condition filters, joining them with the **AND** and **OR** operators.
+    You can combine any number of Activity, Data Audit, and Field Condition filters, joining them with the **AND** and **OR** operators.
 
 .. _user-guide--business-intelligence--filters-condition-groups:
 
 Conditions Groups
 -----------------
 
-A conditions group is a set of activity and/or data audit, and/or field condition filters already joined with the **AND** and **OR** operators. A field condition works as the brackets in mathematics, so all the filters added to a condition group are applied first.
+A conditions group is a set of activity and/or data audit and/or field condition filters already joined with the **AND** and **OR** operators. A field condition works as the brackets in mathematics, so all the filters added to a condition group are applied first.
 
 To define the **Condition Group** filter:
 
@@ -158,22 +158,22 @@ To define the **Condition Group** filter:
 2. Add the Activity, Data audit, and Field Condition filters to the section that appears.
 3. Define the conditions and conjunctions between them.
 
-.. important:: Keep in mind that if a user generates a report with several conditions (for example, A and B) in one conditions group, they receive the report that includes the values that satisfy the A condition, the B condition, and both. In case you want to get the report only with both conditions applied, enable the **Group Same-Entity Conditions Within Condition Groups** option in the :ref:`system configuration <doc-configuration-display-settings-report>`. This way, the report will contain only the values that match all the defined conditions.
+.. important:: Keep in mind that if a user generates a report with several conditions (for example, A and B) in one conditions group, they receive the report that includes the values that satisfy the A condition, the B condition, and both. If you want to get the report only with both conditions applied, enable the **Group Same-Entity Conditions Within Condition Groups** option in the :ref:`system configuration <doc-configuration-display-settings-report>`. This way, the report will only contain values that match all the defined conditions.
 
-For complex conditions, it is a good idea to draw an outline of the conditions first.
+For complex conditions, it is a good idea to outline the conditions first.
 
-A condition group may also be included into another condition group as a separate filter.
+A condition group may also be included in another condition group as a separate filter.
 
 .. _user-guide-filters-segments:
 
 Segments
 --------
 
-A segment is a set of the Activity, Data audit, Field Condition, and Condition Group filters created separately for the records of a specific field. It can be updated dynamically or upon a user's request.
+A segment is a set of the Activity, Data Audit, Field Condition, and Condition Group filters created separately for the records of a specific field. It can be updated dynamically or upon a user's request.
 
 In other words, if you often need to use a specific set of conditions to filter the entity records, you can create a segment and use it instead of redefining the same conditions again.
 
-The ways to create and manage segments are described more detailed in the :ref:`Segments guide <user-guide--business-intelligence--filters-segments>`.
+The ways to create and manage segments are described in more detail in the :ref:`Segments guide <user-guide--business-intelligence--filters-segments>`.
 
 To add a segment to the filters:
 
@@ -182,10 +182,10 @@ To add a segment to the filters:
    .. image:: /user/img/reports/filters_15.png
       :alt: Dragging Apply segment to the box
 
-2. Click **Choose segment** and select one of the Segment predefined in the system.
+2. Click **Choose segment** and select one of the segments predefined in the system.
 
-Subject to the conjunction with the rest of conditions, the list will now include:
+Subject to the conjunction with the rest of the conditions, the list will now include:
 
- - Only the records from the segment that correspond to the rest of conditions (**AND** is used).
+ - Only the records from the segment that correspond to the rest of the conditions (**AND** is used).
 
- - The records that correspond to the rest of conditions and the segment (**OR** is used).
+ - The records that correspond to the rest of the conditions and the segment (**OR** is used).

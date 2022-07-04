@@ -79,7 +79,6 @@ After that, you can use features from the math library in the custom source code
 
 .. code-block:: none
 
-
    ...
 
    use \NumPHP\NumArray;
@@ -100,7 +99,6 @@ Similarly, add a Symfony-compatible bundle to your Oro application via composer 
 To enable it in the Oro application, register the bundle in the bundles.yml file in your custom bundle:
 
 .. code-block:: none
-
    :caption: CustomBundle/Resources/config/oro/bundles.yml
 
    bundles:
@@ -132,7 +130,6 @@ With the dependency injection tags, you can register a service of specific a typ
 For example, to add a new payment method in your OroCommerce application, first create your own implementation of the *PaymentMethodProviderInterface* and tag it with the existing *oro_payment.payment_method_provider* tag, like in the following example:
 
 .. code-block:: none
-
    :caption: CustomBundle/Resources/config/services.yml
 
    custom_bundle.method.provider.payment_method_name:
@@ -149,7 +146,6 @@ The behavior that has already been applied to the default payment methods is now
 Use event listeners to interfere with the existing data processing flow and customize it. You can also design new business logics for processing the events. For example, to log a number of web-browsers that are connected to the application server through the websockets (WS) protocol, create your own listener of the clank.client.connected event:
 
 .. code-block:: none
-
    :caption: CustomBundle/Resources/config/services.yml
 
    custom_bundle.wss.listener:
