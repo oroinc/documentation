@@ -31,7 +31,7 @@ To filter the output of a Best Selling Products report:
    .. image:: /user/img/reports/system_reports_4.png
       :alt: Highlight the Update button that is used to reload the page
 
-5. Also, you can manage the columns of the report by clicking |IcSettings| to the right and opening the **Grid Settings** to see the list of columns that organize the item details.
+5. Also, you can manage the report's columns by clicking |IcSettings| to the right and opening the **Grid Settings** to see the list of columns that organize the item details.
 
 6. To reorder the columns, click and hold the column name, then drag it to a new location. To show / hide a column, select / clear the **Show** check box next to it.
 

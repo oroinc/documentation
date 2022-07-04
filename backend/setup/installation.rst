@@ -96,11 +96,11 @@ For example, if you want files to be located in `/home/public/media` directory, 
 
 .. code-block:: yaml
 
-liip_imagine:
-    loaders:
-        default:
-            filesystem:
-                data_root: "/home/public"
+    liip_imagine:
+        loaders:
+            default:
+                filesystem:
+                    data_root: "/home/public"
 
 You can find more info about `data_root` parameter configuration in |LiipImagineBundle Data Roots Parameter| documentation.
 

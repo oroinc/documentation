@@ -1,7 +1,7 @@
 :oro_documentation_types: OroCommerce
 
 .. _export-products:
-.. _doc--products--actions--exmport:
+.. _doc--products--actions--export:
 
 Export Product Information
 --------------------------
@@ -69,7 +69,7 @@ To export the product information or price attribute data in a .csv format:
           Reaching 100% of the limit triggers a warning message on a potential inactive export when clicking the Export button.
 
 
-3. Once export is complete, you will receive an email to download the .csv file.
+3. Once the export is complete, you will receive an email to download the .csv file.
 
 
 

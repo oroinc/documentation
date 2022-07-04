@@ -15,7 +15,7 @@ Below is an example of a simple report that displays a particular budget per opp
 .. image:: /user/img/reports/reports_examples_1.png
    :alt: An example of a simple report that displays a particular budget per opportunity
 
-1. Once you set up the *Budget amount* column, click **Add** to add it into the **Columns** list.
+1. Once you set up the *Budget amount* column, click **Add** to add it to the **Columns** list.
 
 2. Click **Save**.
 
@@ -86,14 +86,14 @@ The report preview:
 
 .. hint::
 
-    Once a report is generated, you can click the name of a column to sort all the data in the report by the specified field value (ascending or descending).
+    Once a report is generated, you can click the column name to sort all the data in the report by the specified field value (ascending or descending).
 
     Here is an example of the report ordered by the **Name** column:
 
     .. image:: /user/img/reports/reports_examples_11.png
        :alt: Preview of the report outcome ordered by Name in the descending order
 
-    As you can see in the outlined area, there are opportunities which are won, lost and requires analysis for Albers Super Markets. You can view the budget details for the all those groups.
+    As you can see in the outlined area, some opportunities are won, lost or require analysis for Albers Super Markets. You can view the budget details for all those groups.
 
 .. note::
 
@@ -109,7 +109,7 @@ Let us make a chart for the budget per opportunity status report (not grouped by
 Configuration:
 
 .. image:: /user/img/reports/reports_examples_12.png
-   :alt: Configuring the line chart with the status in the X axis and budget amount in the Y axis
+   :alt: Configuring the line chart with the status on the X axis and budget amount on the Y axis
 
 Output:
 

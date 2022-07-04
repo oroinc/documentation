@@ -5,7 +5,7 @@
 Manage Segments in the Back-Office
 ==================================
 
-Segments are dynamically filtered subsets of the data (e.g. product collection, marketing list). To use a set of records in reports, filters, web catalog nodes or marketing lists, you can create a segment and reuse it instead of copying the same query as a condition.
+Segments are dynamically filtered subsets of the data (e.g., product collection, marketing list). To use a set of records in reports, filters, web catalog nodes, or marketing lists, you can create a segment and reuse it instead of copying the same query as a condition.
 
 .. image:: /user/img/reports/use_segments_in_filter.png
    :alt: Creating a filter condition using the Apply Segment option
@@ -38,11 +38,11 @@ To create a new segment:
 
    a) Fill in the segment name.
 
-   #) *Optionally*, add a **Description** to help you and other users to understand the purpose or peculiarities of the segment in the future.
+   #) *Optionally*, add a **Description** to help you and other users understand the segment's purpose or peculiarities in the future.
 
-   #) Select the main entity that segment should look up.
+   #) Select the primary entity that segment should look up.
 
-   #) Select the segment type from the list. **Dynamic** segments are updated as soon as any changes have taken place in the system. **Manual** segments are updated only following the manual refresh action when viewing the segment details.
+   #) Select the segment type from the list. **Dynamic** segments are updated as soon as any changes have occurred in the system. **Manual** segments are updated only following the manual refresh action when viewing the segment details.
 
    #) Optionally, specify the records limit. The segment shows the first X results in case the limit is provided.
 
@@ -53,7 +53,7 @@ To create a new segment:
    .. image:: /user/img/reports/list_columns.png
       :alt: Illustrate the Designer section on the create segment page
 
-   In order to add a column to the grid:
+   To add a column to the grid:
 
       a) Choose a field from the drop-down in the **Column** section.
 
@@ -66,9 +66,9 @@ To create a new segment:
       #) Reorder the columns by clicking on the line and dragging it to the necessary location.
 
       .. image:: /user/img/reports/segments_column.png
-         :alt: Adding the product status, featured products, product id and sku columns in the designer section
+         :alt: Adding the product status, featured products, product id, and SKU columns in the designer section
 
-   In order to manage the columns, use action icons in the last column:
+   To manage the columns, use action icons in the last column:
 
       - Delete a column from the segment with |IcDelete|.
 

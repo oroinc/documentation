@@ -7,7 +7,7 @@ Import Coupons
 
 .. start
 
-**Import File** option helps import large bulk of coupon information into the coupons list using the .csv file.
+**Import File** option helps import large bulk of coupon information into the list of the coupons using the .csv file.
 
 **Example of coupon bulk import template**
 
@@ -21,9 +21,9 @@ Import Coupons
 
 To import a bulk of coupons:
 
-1. In the main menu, navigate to **Marketing > Promotions > Coupons**. The coupons list opens.
+1. In the main menu, navigate to **Marketing > Promotions > Coupons**.
 
-2. Click **Import File** on the top right.
+2. Click **Import File** on the top right of the page.
 
 3. **Prepare data for import**: Create your bulk information in the .csv format. Once your file is ready, click **Choose File**, select the prepared comma-separated values (.csv) file, and click **Import File**.
 
@@ -36,8 +36,7 @@ To import a bulk of coupons:
 
 6. Click **Cancel** to decline the import.
 
-.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
 
 .. finish
-

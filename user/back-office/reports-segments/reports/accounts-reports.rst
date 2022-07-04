@@ -12,7 +12,7 @@ The **Accounts Life Time Value** report is located under **Reports and Segments 
 .. image:: /user/img/customers/accounts/accounts_report_by_lifetime.png
    :alt: The list of lifetime value reports for accounts
 
-The **Accounts by Opportunities** report is located under **Reports and Segments > Reports > Accounts > By Opportunities**. It displays the number of won, lost and pending opportunities for all the customers assigned to the account.
+The **Accounts by Opportunities** report is located under **Reports and Segments > Reports > Accounts > By Opportunities**. It displays the number of won, lost, and pending opportunities for all the customers assigned to the account.
 
 .. image:: /user/img/customers/accounts/accounts_report_by_opportunity.png
    :alt: Accounts by opportunities

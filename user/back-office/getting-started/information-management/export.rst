@@ -33,7 +33,7 @@ To export the necessary records (e.g., customer information) in a .csv format:
             Reaching 100% of the limit triggers a warning message on a potential inactive export when clicking the Export button.
 
 
-3. Once export is complete, you will receive an email to download the .csv file.
+3. Once the export is complete, you will receive an email to download the .csv file.
 
 .. note:: Keep in mind that by clicking **Export** you download all records of the selected entity regardless of the filters applied to the grid. To export only the list of filtered records, use the **Export Grid** functionality where it is available.
 

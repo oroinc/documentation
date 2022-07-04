@@ -8,7 +8,7 @@
 Concept Guides
 ==============
 
-Concept Guides introduce you to the business logic behind comprehensive OroCRM and OroCommerce concepts. They aggregate information, explore various use-cases and serve as reference points to the feature-based documentation under Back-office and Commerce Storefront.
+Concept Guides introduce you to the business logic behind comprehensive OroCRM and OroCommerce concepts. They aggregate information, explore various use-cases and serve as reference points to the feature-based documentation under Back-Office and Commerce Storefront.
 
 Complementary to the how-to approach of the Back-office section of the documentation, Concept Guides give you context and references to other how-to articles in the documentation.
 

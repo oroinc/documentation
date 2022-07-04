@@ -31,7 +31,7 @@ Edit Product Families
 To edit a product family:
 
 1. Navigate to **Products > Product Families** in the main menu.
-2. Choose the required product family from the list and click the |IcMore| **More Options** menu at the end of the corresponding row, and click the |IcEdit| **Edit** icon.
+2. Choose the required product family from the list, click the |IcMore| **More Options** menu at the end of the corresponding row, and click the |IcEdit| **Edit** icon.
 3. Update the necessary information.
 4. Click **Save** on the top right of the page.
 
@@ -54,7 +54,7 @@ Add a New Product Attribute Group
 Add a Product Attribute to the Attribute Group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. In the *Attribute Groups* field, start typing the product attribute name. A filtered list will appear as you type. Select the attribute from the list or press ``Enter`` once there is only one option.
+1. Start typing the product attribute name in the *Attribute Groups* field. A filtered list will appear as you type. Select the attribute from the list or press ``Enter`` once there is only one option.
 2. Once you are done with the product attribute organization, click **Save**.
 
    .. image:: /user/img/products/product_families/ProductAttributeAddToGroup.png
@@ -68,7 +68,7 @@ Move a Product Attribute to Another Attribute Group
    .. image:: /user/img/products/product_families/ProductAttributeFamiliesMove.png
       :alt: Moving a product attribute to another attribute group
 
-   Adding such attribute to another group will remove it from its current group.
+   Adding such an attribute to another group will remove it from its current group.
 2. Once you are done with the product attribute organization, click **Save**.
 
 Delete a Product Attribute from the Attribute Group

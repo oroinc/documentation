@@ -9,7 +9,7 @@ Manage Coupons in Orders
 
 In your Oro application, you can manage coupons from the page of the selected :ref:`order <user-guide--sales--orders>`. Specifically, you can:
 
-1. View the coupon applied to the order under **Promotions and Discounts** of the order page.
+1. View the coupon applied to the order under **Promotions and Discounts** on the order page.
 2. Add a coupon to the order manually.
 
 View Coupon Codes
@@ -37,7 +37,7 @@ To add a coupon code to the required order from its page:
 
 1. Navigate to **Sales > Orders** in the main menu.
 2. Click once to open the required order to open it.
-3. On the order page, click **Add Coupon Code** on the top right.
+3. Click **Add Coupon Code** on the top right of the order page.
 
    .. image:: /user/img/marketing/coupons/AddCouponToOrder.png
       :alt: Highlight the Add Coupon Code button on the Order's page
@@ -56,7 +56,7 @@ To add a coupon code to the required order from its page:
 
 7. The applied coupon code will be displayed under **All Promotions** in the **Promotions and Discounts** section.
 
-This way you can apply as many coupons to the order as necessary as long as they belong to different promotions.
+This way, you can apply as many coupons to the order as necessary as long as they belong to different promotions.
 
 Manage Coupons When Editing the Order
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -74,11 +74,10 @@ When editing the selected order, you can perform the following actions with the 
 
 4. |IcDelete| Delete a coupon code.
 
-.. note:: When you add, deactivate, or delete coupons when editing orders, the price totals and the shipping cost may change. Please, review the order totals to make sure that the cost is acceptable.
+.. note:: When you add, deactivate, or delete coupons when editing orders, the price totals, and the shipping cost may change. Please, review the order totals to ensure the cost is acceptable.
 
 
 .. finish_edit_in_order_body
 
 .. include:: /include/include-images.rst
    :start-after: begin
-
