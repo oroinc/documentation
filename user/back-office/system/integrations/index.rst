@@ -39,6 +39,7 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`FedEx <doc--integrations--fedex>`
   * :ref:`DPD <doc--integrations--dpd>`
 
+* :ref:`Google Tag Manager Integration <gtm-ga-4-integration>`
 * :ref:`Dotdigital Integration <user-guide-dotmailer-overview>`
 * :ref:`Mailchimp Integration <user-guide-mc-integration>`
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`

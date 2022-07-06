@@ -19,7 +19,7 @@ To configure Google Tag Manager and Hangouts settings per organization:
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu at the end of the row and click |IcConfig| to start editing the configuration.
 3. Click **System Configuration > Integrations > Google Settings** in the menu to the left.
-4. In **Google Tag Manager Settings**, clear the **Use System** check box and select a :ref:`Google Tag Manager Integration <gtm-integration>` from the list to configure it for the application and enable data mapping.
+4. In **Google Tag Manager Settings**, clear the **Use System** check box and select a :ref:`Google Tag Manager Integration <gtm-ga-4-integration>` from the list to configure it for the application and enable data mapping.
 
 5. In the **Google Hangouts** section, provide the following details:
 

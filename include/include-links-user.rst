@@ -848,3 +848,59 @@ Links (User)
    <a href="https://dashboard.stripe.com/account/onboarding/business-structure" target="_blank">add your business details</a>
 
 
+.. |Google Analytics 4| raw:: html
+
+   <a href="https://support.google.com/analytics/answer/9306384?hl=en&ref_topic=9303319" target="_blank">Google Analytics 4</a>
+
+
+.. |Download the .json file (GA4)| raw:: html
+
+   <a href="http://academy.oroinc.com/wp-content/uploads/sites/21/2022/06/oroGa4Container.zip" target="_blank">Download the .json file</a>
+
+.. |Google Analytics 4 Event| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events" target="_blank">Google Analytics 4 Event</a>
+
+.. |add_to_cart| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#add_to_cart" target="_blank">add_to_cart</a>
+
+.. |remove_from_cart| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#remove_from_cart" target="_blank">remove_from_cart</a>
+
+.. |begin_checkout| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#begin_checkout" target="_blank">begin_checkout</a>
+
+.. |add_shipping_info| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#add_shipping_info" target="_blank">add_shipping_info</a>
+
+.. |add_payment_info| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#add_payment_info" target="_blank">add_payment_info</a>
+
+.. |select_item| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#select_item" target="_blank">select_item</a>
+
+.. |view_item| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_item" target="_blank">view_item</a>
+
+.. |view_item_list| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_item_list" target="_blank">view_item_list</a>
+
+.. |select_promotion| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#select_promotion" target="_blank">select_promotion</a>
+
+.. |view_promotion| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#view_promotion" target="_blank">view_promotion</a>
+
+.. |purchaseGA4| raw:: html
+
+   <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#purchase" target="_blank">purchase</a>

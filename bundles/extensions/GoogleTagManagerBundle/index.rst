@@ -5,7 +5,7 @@ GoogleTagManagerBundle
 
 |OroGoogleTagManagerBundle| adds integration with |Google Tag Manager| (GTM), which enables users to add tracking tags to their OroCommerce web store pages with the help of |Enhanced E-commerce| and collect information on customer behavior, purchases, product clicks, page views, etc. All this information can subsequently be shared with Google Analytics to measure various user interactions with products on their website through |E-Commerce reports|. This can help you get a full picture of on-page visitor behavior, how well your marketing strategies work, and how to target your audience better.
 
-To learn how to create a new integration with Google Tag Manager in your Oro application, please see :ref:`a step-by-step user guide on configuring GTM <gtm-integration>`.
+To learn how to create a new integration with Google Tag Manager in your Oro application, please see :ref:`a step-by-step user guide on configuring GTM <gtm-ga-4-integration>`.
 
 Add Server-Side Events
 ----------------------

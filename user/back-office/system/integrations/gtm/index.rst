@@ -1,514 +1,525 @@
 :oro_documentation_types: OroCRM, OroCommerce, Extension
 
-.. _gtm-integration:
+.. _gtm-ga-4-integration:
 
 Configure Google Tag Manager Integration in the Back-Office
 ===========================================================
 
-Integration between your Oro application and |Google Tag Manager| enables you to add tracking tags to your OroCommerce web store pages with the help of |Enhanced E-commerce| and collect information on customer behavior, purchases, product clicks, page views, etc. All this information can subsequently be shared with Google Analytics to measure various user interactions with products on your website through |E-Commerce reports|. This can help you get a full picture of on-page visitor behavior, how well your marketing strategies work, and how to target your audience better.
+.. hint:: Google Universal Analytics is deprecated on July 1, 2023 and is replaced with Google Analytics 4.
 
-.. hint:: The feature requires extension, so visit Oro Extensions Store to download the |Google Tag Manager extension| and then use the composer to :ref:`install the extension to your application <cookbook-extensions-composer>`.
+Integration between your Oro application and |Google Tag Manager| enables you to add tracking tags to your OroCommerce web store pages and collect information on customer behavior, purchases, product clicks, page views, etc. All this information can subsequently be shared with Google Analytics 4 (GA4), enabling you to monitor various user interactions with products on your website. This can help you get a complete picture of on-page visitor behavior, how well your marketing strategies work, and how to target your audience better.
 
-In this topic, we are going to illustrate how to :ref:`integrate your Oro application with Google Tag Manager <gtm-integration-oro-side>` and pass data to Google Analytics using two methods:
-
-* By importing a pre-configured container with pre-defined tags and triggers for all collected events, or
-* By configuring tags for all required events manually
+.. hint:: This feature requires a |Google Tag Manager extension|, which you can download from the Oro Extensions Store. Next, use the composer to :ref:`install it on your application <cookbook-extensions-composer>`.
 
 .. hint::
-    Please, be aware that you must have |Google Tag Manager1| and |Google Analytics| accounts already created to proceed with the integration between your Oro application and Google Tag Manager, and pass data to Google Analytics.
+    Please, be aware that you must have |Google Tag Manager1| and |Google Analytics 4| accounts already created to proceed with the integration between your Oro application and Google Tag Manager and pass data to Google Analytics 4.
 
-Configure Google Analytics Settings
------------------------------------
+On the Google Analytics Side
+----------------------------
 
-.. _ga-tracking-id:
+Create a Google Analytics 4 Property
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Retrieve Tracking ID
+To create a GA4 property, navigate to your Google Analytics account.
+
+1. Click |IcConfig| **Admin** on the bottom left.
+2. Click **+ Create Property** under the **Property** column.
+3. Provide a name for the property, select the reporting time zone and the currency. Keep in mind that Google Analytics tracks only one currency at a time. This means that if, for example, your default currency is set to **US Dollar**, but you have a multi-currency web store (available for the Enterprise edition only), a purchase of 100EUR will be tracked in the converted dollar amount of 107USD (depending on the currency rate that day).
+4. Click **Next**. Select your industry category and business size.
+5. Click **Create**.
+
+.. image:: /user/img/system/integrations/gtm/create-GA4-property-2.png
+   :alt: Illustrating the steps to be followed to create a new GA4 property based on method 2
+
+
+Set up a Data Stream
 ^^^^^^^^^^^^^^^^^^^^
 
-You require |Google Analytics Tracking ID| to configure your Google Tag Manager variable for the tag that tracks events on your OroCommerce website.
+Once you created a property, the next step is to set up a data stream to start collecting data.
 
-The Tracking ID is located in your Google Analytics account under **Admin > Tracking Info > Tracking Code**.
+1. In your **Admin** menu, make sure you have selected the required property under the **Property** column.
+2. Click **Data Streams** and select the platform (Web, Android app, or IOS app) to add a data stream. You can add as many data streams as required.
 
-    .. image:: /user/img/system/integrations/gtm/tracking_id.png
-       :alt: Tracking ID in Google Analytics
+.. image:: /user/img/system/integrations/gtm/add-data-stream.png
+   :alt: Illustrating the steps to be performed to add a data stream
 
-Keep the ID at hand when you start configuring tags in Google Tag Manager.
+3. For Web, provide the URL of your website (e.g., "mywebsite.com") and a stream name. Click **Create stream**.
+4. For IOS app or Android app, add the Android package name, the app name, or the App Store ID, then click **Register app**. Follow the provided instructions to finish the configuration of data streams.
 
-Enable Google Analytics Enhanced E-Commerce
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Once a data stream is set, add tags to your web pages via Google Tag Manager.
 
-|Google Analytics Enhanced E-commerce| enables you to get better insights into the shopping behavior of your web store users (e.g., by offering you out-of-the-box reports on products, brands, orders). It sends valuable data, such as product impressions, promotions, and sales data with any of your Google Analytics page views and events. You can use page views to track product impressions and product purchases, and use events to track checkout steps and product clicks.
+.. image:: /user/img/system/integrations/gtm/data-stream-details.png
+   :alt: Illustrating the data stream details page
 
-You need to enable Enhanced E-commerce in your Google Analytics account and map your checkout steps to retrieve the data collected by Google Tag Manager on your OroCommerce website. Please keep in mind that in order for Enhanced E-commerce to retrieve and process information, you need to select Data Layer as a source of E-commerce data when configuring tags in Google Tag Manager.
+.. _data-stream-measurement-id:
 
-To enable Enhanced E-commerce:
+.. hint:: Keep the Measurement ID at hand, as you will need it when configuring tags in Google Tag Manager.
 
-1. Navigate to your Google Analytics account, and click **Admin > All Web Site Data > E-commerce Settings**.
+            .. image:: /user/img/system/integrations/gtm/data-stream-measurement-id.png
+               :alt: Highlighting the data stream's measurement ID
 
-   .. image:: /user/img/system/integrations/gtm/ecommerce_settings.png
-      :alt: Enhanced E-commerce setup
 
-2. Toggle the switches to set **Enable E-commerce** and **Enable Enhanced E-commerce Reporting** to **ON**.
+On the Google Tag Manager Side
+------------------------------
 
-   .. image:: /user/img/system/integrations/gtm/ecommerce_switcher.png
-      :alt: Enable E-commerce and Reporting
+Create Tags via GTM
+^^^^^^^^^^^^^^^^^^^
 
-3. In the **Checkout Labeling** section, add your checkout steps to the funnel.
+To collect information (events) from your web store, you need to create tags in your Google Tag Manager account for each event you want to track.
 
-   The following screenshot illustrates mapping of the checkout steps of the default OroCommerce web store.
+There are two ways to create tags:
 
-    .. image:: /user/img/system/integrations/gtm/mapping_checkout_steps.png
-       :alt: Mapping checkout steps to Enhanced E-commerce
+* :ref:`By importing our preconfigured container with the tags <import-container-to-gtm>` for all collected events. Importing pre-defined tags requires minimal effort, as each tag has already been pre-configured with triggers and variables to enable you to connect to your OroCommerce website.
 
-   Adding checkout steps of your web store enables you to track checkout behavior.
+Or
 
-6. Click **Save**
+* :ref:`By configuring tags for all required events manually <gtm4-create-tags-manually>`. Creating tags from scratch is more time-consuming but allows you to provide custom data during configuration or create tags only for specific events.
 
-.. important:: Google Analytics tracks only one currency at a time. This means that if, for example, your default currency is set to **US dollars**, but you have a multi-currency web store (available for the Enterprise edition only), a purchase of 100EUR will be tracked in the converted dollar amount of 113USD (depending on the currency rate that day). To set the default currency in your Google Analytics account, navigate to **Admin > View Settings > Basic Settings > Currency displayed as**.
+.. _import-container-to-gtm:
 
-               .. image:: /user/img/system/integrations/gtm/tracked_currency.png
-                  :alt: Currency settings in Google Analytics
+Option 1: Import a Container
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Configure Google Tag Manager Settings
--------------------------------------
+We have prepared a .json file with a container that includes pre-configured tags to simplify your tag configuration process. You need to import this file into your Google Tag Manager account and substitute the dummy Measurement ID in the **GA4 var** variable with the data stream's Measurement ID of your Google Analytics 4 account.
 
-To collect information (events) from your web store, you need to create tags in your Google Tag Manager account for each event that you want to track. Enhanced E-commerce enables you to track and collect information about the following events:
+For that:
 
-* :ref:`Page Views <page-views>`
-* :ref:`Product Impressions <product-impressions>`
-* :ref:`Product Clicks <product-clicks>`
-* :ref:`Add to Cart <add-to-cart>`
-* :ref:`Remove from Cart <remove-from-cart>`
-* :ref:`Promotion Impressions <promotion-impressions>`
-* :ref:`Promotion Clicks <promotion-clicks>`
-* :ref:`Checkout <checkout-event>`
-* :ref:`Purchases <purchase-event>`
-
-You can either import pre-defined tags that we have configured for all types of events that can be collected for Enhanced E-commerce, or create tags manually for those events that you would like to track. Importing pre-defined tags requires minimal efforts, as each tag has already been pre-configured with triggers and variables that will enable you to connect to your OroCommerce website. Creating tags from scratch requires more time but allows you to provide custom data during configuration, or create tags only for specific events.
-
-.. _gtm-container-id:
-
-Retrieve Container ID
-^^^^^^^^^^^^^^^^^^^^^
-
-You require |Google Tag Manager Container ID| to integrate with your Oro application.
-
-The Container ID is located in your Google Tag Manager account on the top right of the workspace page. It is formatted as *GTM-XXXXXX*.
-
-.. image:: /user/img/system/integrations/gtm/containder_id.png
-   :alt: Container id in Google Tag Manager account
-
-Keep the container ID at hand when you start creating an :ref:`integration <gtm-integration-oro-side>` between Google Tag Manager and OroCommerce.
-
-Option 1: Import Container
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To simplify tag configuration, download a .json file with a container that includes tags that have already been pre-defined for your convenience. All you need to do is import this file into your Google Tag Manager account, and substitute the dummy Tracking ID in the variable to the Tracking ID of your Google Analytics account.
-
-.. image:: /user/img/system/integrations/gtm/import_gtm_container.png
-   :alt: Minimal effort GTM integration
-
-Follow the steps below to complete import:
-
-1. |Download the .json file| with a pre-configured container.
+1. |Download the .json file (GA4)| with a pre-configured container.
 #. Save and extract the archive on your computer.
 #. In your Google Tag Manager account, navigate to **Admin > Import Container**.
 
-   .. image:: /user/img/system/integrations/gtm/import_container.png
-      :alt: Import container in GTM
+.. image:: /user/img/system/integrations/gtm/import-container.png
+   :alt: Import container in GTM
 
-#. Click **Choose container file** to import the extracted .json file. The file contains 10 tags, 9 triggers, and 6 variables.
+#. Click **Choose container file** to import the extracted .json file. The file contains 12 tags, 11 triggers, and 11 variables.
 #. Choose the workspace and |importgtm| option.
-
-   .. image:: /user/img/system/integrations/gtm/confirm_import.png
-      :alt: Confirm container import
-
 #. Click **Confirm** to start file import.
 
-The container that you have imported contains a dummy Tracking ID number. You need to :ref:`change the ID <gtm-container-id>` to be able to transfer correct data to Google Analytics.
+.. image:: /user/img/system/integrations/gtm/confirm-container-import.png
+   :alt: Confirm container import
 
-To change the tracking ID for the imported variable:
 
-1. In your Google Tag Manager Account, click **Variables** in the left menu pane.
-#. In the **User-defined Variables** section, click **GA var** to open its configuration page.
+The container that you have imported contains a dummy data stream's Measurement ID for the **GA4 var** variable. You need to change the ID to be able to transfer correct data to Google Analytics 4.
 
-    .. image:: /user/img/system/integrations/gtm/user_defined_variable.png
-       :alt: Open imported variable
+To change the measurement ID for the imported variable:
 
-#. Click the **Edit** icon
+1. In your Google Tag Manager Account, click **Variables** in the menu to the left.
+2. In the **User-Defined Variables** section, click **GA4 var** to open its configuration page.
+3. Click the **Edit** icon.
 
-   .. image:: /user/img/system/integrations/gtm/edit_variable.png
-      :alt: Edit imported variable configuration
+.. image:: /user/img/system/integrations/gtm/edit-GA4-var-tag.png
+   :alt: Edit imported variable configuration
 
-#. Provide your :ref:`Google Analytics Tracking ID <ga-tracking-id>` number that follows the **UA-XXXXXXXXX-1** instead of the dummy number.
-#. Click **Save** to save variable settings.
+4. Provide the :ref:`measurement ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern instead of the dummy number.
+5. Click **Save** to save variable settings.
+6. Click **Submit** and then **Publish** on the top right to apply the changes.
 
-Option 2: Configure Tags Manually
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _ga4-ga-tag-table:
 
-To start collecting information from your web store, you need to create a variable and triggers to populate tags for all or selected events that you want to track on your website. When configuring tags manually, make sure that:
+Except for the GA4 tag, the imported container also includes several pre-configured event tags. To customize the pre-defined parameters, refer to the |Google Analytics 4 Event| developer documentation for the list of the recommended event parameters.
 
-* The variable is of Google Analytics Type
-* Tags have *Enable Enhanced Ecommerce Features* enabled
-* Tags use *Data Layer* to store information and pass it to Google Analytics
+* :ref:`add_to_cart <gtm-ga4-add-to-cart>`
+* :ref:`remove_from_cart <gtm-ga4-remove-from-cart>`
+* :ref:`begin_checkout <gtm-ga4-begin-checkout>`
+* :ref:`add_shipping_info <gtm-ga4-add-shipping-info>`
+* :ref:`add_payment_info <gtm-ga4-add-payment-info>`
+* :ref:`select_item <gtm-ga4-select-item>`
+* :ref:`view_item <gtm-ga4-view-item>`
+* :ref:`view_item_list <gtm-ga4-view-item-list>`
+* :ref:`select_promotion <gtm-ga4-select-promotion>`
+* :ref:`view_promotion <gtm-ga4-view-promotion>`
+* :ref:`purchase <gtm-ga4-purchase>`
+* pageView
 
-.. image:: /user/img/system/integrations/gtm/full_gtm_intgration.png
-   :alt: A diagram showing complete GTM integration
 
-.. _create-gtm-variable:
+.. _gtm4-create-tags-manually:
 
-Create a Variable
-~~~~~~~~~~~~~~~~~
+Option 2: Create Tags Manually
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To create a variable that enables you to configure Google Analytics settings for the tags:
+Google Tag Manager enables you to create one of the two tags that are passed to Google Analytics 4. Those are **Google Analytics: GA4 Configuration** as the principal configuration tag and **Google Analytics: GA4 Event**, which enables you to track custom events.
 
-1. In the left pane menu of your workspace, click **Variables** and then **New**.
-#. Provide variable name, e.g., {{GA var}}.
-#. Click **Variable Configuration**.
-#. For **Variable Type**, select *Google Analytics Settings*. This setting ensures that tracking data is sent to Google Analytics.
-#. Provide the Tracking ID from your Google Analytics account.
+To create a **Google Analytics: GA4 Configuration** tag:
 
-   .. hint:: The Tracking ID is located in your Google Analytics account under **Admin > Tracking Info > Tracking Code**.
+1. Navigate to the left menu of the Workspace page and click **Tags > New**.
+2. Click **Tag Configuration**.
+3. Select **Google Analytics: GA4 Configuration** from the tag list.
+4. Enter the :ref:`measurement ID <data-stream-measurement-id>` of your Google Analytics data stream.
+5. Optionally, add the parameters to configure the **Fields to Set**, **User Properties**, and **Advanced Settings** fields.
+6. Click **Triggering** and select the necessary events that would fire the tag when they occur.
+7. Save the tag configuration and publish it.
 
-#. Click **Save**.
+.. image:: /user/img/system/integrations/gtm/configure-GA4-tag.png
+   :alt: The steps to be performed to configure a GA4 tag
 
-Create Tags
-~~~~~~~~~~~
 
-To create a new tag, navigate to the left side of the main interface, click **Tags** and then **New**.
+To create a **Google Analytics: GA4 Event** tag for custom events:
 
-.. image:: /user/img/system/integrations/gtm/create_tag_alternative.png
-   :alt: Create a tag via Google Tag Manager's left panel
+1. Navigate to the left menu of the Workspace page and click **Tags > New**.
+2. Click **Tag Configuration**.
+3. Select **Google Analytics: GA4 Event** from the tag list.
+4. For **Configuration Tag**, select the *GA4 tag* configuration tag you have just created.
+5. For **Event Name**, provide the name for the event (e.g., add_to_cart). See the |Google Analytics 4 Event| developer documentation for the list of recommended event parameters.
+6. Under **Event Parameters**, click **Add Row**, and provide a name and a value for the parameter. Add as many parameters as required for a particular event. See the |Google Analytics 4 Event| developer documentation for the list of recommended event parameters.
+7. Optionally, add the parameters to configure the **User Properties** and **Advanced Settings** fields.
+8. Click **Triggering** and select the necessary events that would fire the tag when they occur.
+9. Save the tag configuration and publish it.
 
-Further configuration options depend on the event type that you want to track.
+.. image:: /user/img/system/integrations/gtm/create-GA4-event-tag.png
+   :alt: The steps to be performed to create an add_to_cart GA4 event tag manually
 
-.. _add-to-cart:
 
-addToCart
-`````````
+Google Analytics 4 requires the event names and parameters to comply with their regulations. To configure the manually-added tags correctly, provide the following parameters and triggers for each tag:
 
-To track when items are added to customer user shopping lists in your web store, create an *addToCart* tag.
+.. _gtm-ga4-add-to-cart:
 
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+add_to_cart
+"""""""""""
 
-**Tag Configuration**
-
-* **Name** --- addToCart tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- addToCart
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
-
-**Triggering**
-
-* **Name** --- addToCart
-* **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
-
-.. image:: /user/img/system/integrations/gtm/addToCart.png
-   :alt: addToCart tag configuration details
-
-.. _remove-from-cart:
-
-removeFromCart
-``````````````
-
-To track when items are removed from customer user shopping lists in your web store, create a *removeFromCart* tag.
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+The |add_to_cart| tag signifies that a customer user has added an item to a shopping list or submitted a request for quote.
 
 **Tag Configuration**
 
-* **Name** --- removeFromCart tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- removeFromCart
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- add_to_cart
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "currency","{{ecommerce.currency}}"
+   "items","{{ecommerce.items}}"
+
 
 **Triggering**
 
-* **Name** --- removeFromCart
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **Event name** --- add_to_cart
+* **This trigger fires on** --- All Custom Events
 
-.. image:: /user/img/system/integrations/gtm/removeFromCart.png
-   :alt: removeFromCart tag configuration details
 
-.. _checkout-event:
+.. _gtm-ga4-remove-from-cart:
 
-checkout
-````````
+remove_from_cart
+""""""""""""""""
 
-To measure each step in a checkout process, create a *checkout* tag.
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+The |remove_from_cart| tag signifies that a customer user has removed an item from a shopping list.
 
 **Tag Configuration**
 
-* **Name** --- checkout tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- checkout
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- remove_from_cart
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "currency","{{ecommerce.currency}}"
+   "items","{{ecommerce.items}}"
+
 
 **Triggering**
 
-* **Name** --- checkout
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **Event name** --- remove_from_cart
+* **This trigger fires on** --- All Custom Events
 
-.. image:: /user/img/system/integrations/gtm/checkout.png
-   :alt: checkout tag configuration details
 
-.. _product-clicks:
+.. _gtm-ga4-begin-checkout:
 
-productClick
-````````````
+begin_checkout
+""""""""""""""
 
-To measure product clicks, create a *productClick* tag.
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+The |begin_checkout| tag signifies that a customer user has started a checkout process.
 
 **Tag Configuration**
 
-* **Name** --- productClick tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- productClick
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- begin_checkout
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "currency","{{ecommerce.currency}}"
+   "items","{{ecommerce.items}}"
+
 
 **Triggering**
 
-* **Name** --- productClick
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **Event name** --- begin_checkout
+* **This trigger fires on** --- All Custom Events
 
-.. image:: /user/img/system/integrations/gtm/productClick.png
-   :alt: productClick tag configuration details
 
-.. _product-detail:
+.. _gtm-ga4-add-shipping-info:
 
-productDetail
-`````````````
+add_shipping_info
+"""""""""""""""""
 
-To track product detail views, create a *productDetail* tag.
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+The |add_shipping_info| tag signifies that a customer user has selected a shipping method at checkout.
 
 **Tag Configuration**
 
-* **Name** --- productDetail tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- productDetail
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- add_shipping_info
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "currency","{{ecommerce.currency}}"
+   "items","{{ecommerce.items}}"
+   "shipping_tier","{{ecommerce.shipping_tier}}"
+
 
 **Triggering**
 
-* **Name** --- productDetail tag
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **Event name** --- add_shipping_info
+* **This trigger fires on** --- All Custom Events
 
-.. image:: /user/img/system/integrations/gtm/productDetail.png
-   :alt: productDetail tag configuration details
 
-.. _product-impressions:
+.. _gtm-ga4-add-payment-info:
 
-productImpression
-`````````````````
+add_payment_info
+""""""""""""""""
 
-To track how many times a product was seen on the web page, create a *productImpression* tag.
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+The |add_payment_info| tag signifies that a customer user has selected a payment method at checkout.
 
 **Tag Configuration**
 
-* **Name** --- productImpression tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- productImpression
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- add_payment_info
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "currency","{{ecommerce.currency}}"
+   "items","{{ecommerce.items}}"
+   "payment_type","{{ecommerce.payment_type}}"
+
 
 **Triggering**
 
-* **Name** --- productImpression
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **Event name** --- add_payment_info
+* **This trigger fires on** --- All Custom Events
 
-.. image:: /user/img/system/integrations/gtm/productImpression.png
-   :alt: productImpression tag configuration details
 
-.. _promotion-clicks:
+.. _gtm-ga4-select-item:
 
-promotionClick
-``````````````
+select_item
+"""""""""""
 
-To measure clicks on promotions on your website, create a *promotionClick* tag.
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+The |select_item| tag signifies that a customer user has clicked a product.
 
 **Tag Configuration**
 
-* **Name** --- promotionClick tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- promotionClick
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- select_item
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "items","{{ecommerce.items}}"
+   "item_list_name","{{ecommerce.item_list_name}}"
 
 **Triggering**
 
-* **Name** --- promotionClick
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **Event name** --- select_item
+* **This trigger fires on** --- All Custom Events
 
-.. image:: /user/img/system/integrations/gtm/promotionClick.png
-   :alt: productClick tag configuration details
 
-.. _promotion-impressions:
+.. _gtm-ga4-view-item:
 
-promotionImpression
-```````````````````
+view_item
+"""""""""
 
-To track how many times a promotion was seen on the web page, create a *promotionImpression* tag.
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+The |view_item| tag signifies that a customer user has reviewed a product details page.
 
 **Tag Configuration**
 
-* **Name** --- promotionImpression tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- promotionImpression
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- view_item
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "currency","{{ecommerce.currency}}"
+   "items","{{ecommerce.items}}"
+
 
 **Triggering**
 
-* **Name** --- promotionImpression
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **Event name** --- view_item
+* **This trigger fires on** --- All Custom Events
 
-.. image:: /user/img/system/integrations/gtm/promotionImpression.png
-   :alt: promotionImpression tag configuration details
 
-.. _purchase-event:
+.. _gtm-ga4-view-item-list:
+
+view_item_list
+""""""""""""""
+
+The |view_item_list| tag signifies that a customer user has looked over a list of products in a product block (top selling, featured, new arrivals, related, upsell).
+
+**Tag Configuration**
+
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- view_item_list
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "currency","{{ecommerce.currency}}"
+   "items","{{ecommerce.items}}"
+
+
+**Triggering**
+
+* **Trigger Type** --- Custom Event
+* **Event name** --- view_item_list
+* **This trigger fires on** --- All Custom Events
+
+
+.. _gtm-ga4-select-promotion:
+
+select_promotion
+""""""""""""""""
+
+The |select_promotion| tag signifies that a customer user has clicked a slider from the homepage slider :ref:`content block <user-guide--landing-pages--marketing--content-blocks>` on your main website page.
+
+**Tag Configuration**
+
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- select_promotion
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "items","{{ecommerce.items}}"
+
+
+**Triggering**
+
+* **Trigger Type** --- Custom Event
+* **Event name** --- select_promotion
+* **This trigger fires on** --- All Custom Events
+
+
+.. _gtm-ga4-view-promotion:
+
+view_promotion
+""""""""""""""
+
+The |view_promotion| tag signifies that a customer user has reviewed a slider from the homepage slider block.
+
+**Tag Configuration**
+
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- view_promotion
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "items","{{ecommerce.items}}"
+
+
+**Triggering**
+
+* **Trigger Type** --- Custom Event
+* **Event name** --- view_promotion
+* **This trigger fires on** --- All Custom Events
+
+
+.. _gtm-ga4-purchase:
 
 purchase
-````````
+""""""""
 
-To collect transaction details once the order was placed, create a *purchase* tag:
-
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
+The |purchaseGA4| tag signifies that a customer user has submitted an order.
 
 **Tag Configuration**
 
-* **Name** --- purchase tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- purchase
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
+* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Event Name** --- purchase
+* **Event Parameters**
+
+.. csv-table::
+   :header: "Parameter Name","Value"
+   :widths: 20, 20
+
+   "currency","{{ecommerce.currency}}"
+   "items","{{ecommerce.items}}"
+   "transaction_id","{{ecommerce.transaction_id}}"
+   "affiliation","{{ecommerce.affiliation}}"
+   "coupon","{{ecommerce.coupon}}"
+   "shipping","{{ecommerce.shipping}}"
+   "tax","{{ecommerce.tax}}"
+   "shipping_tier","{{ecommerce.shipping_tier}}"
+   "payment_type","{{ecommerce.payment_type}}"
+
 
 **Triggering**
 
-* **Name** --- purchase
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **Event name** --- purchase
+* **This trigger fires on** --- All Custom Events
 
-.. image:: /user/img/system/integrations/gtm/purchase.png
-   :alt: purchase tag configuration details
 
-.. _page-views:
 
-pageView
-````````
 
-To track each time a page loads in a web browser, create a *pageView* tag.
+On the Oro Side
+---------------
 
-.. note:: The pageView tag is a universal tag for tracking any page and is used in the guide as an implementation example. For the E-Commerce flow, productDetail tag is used.
+Configure a Google Tag Manager Integration in the Back-Office
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To configure it correctly, provide the following tag, trigger, and variable configuration options:
-
-* **Name** --- pageView tag
-* **Track Type** --- Event
-* **Category** --- Ecommerce
-* **Action** --- pageView
-* **Google Analytics Settings** --- :ref:`{{GA var}} <create-gtm-variable>`
-* **Enable overriding settings in this tag** --- Yes
-* **Tracking ID** --- Inherited from Settings variable
-* **More Settings > Ecommerce > Enable Enhanced Ecommerce Features** --- True
-* **Use Data Layer** --- Yes
-
-**Triggering**
-
-* **Name** --- All Pages
-* **Trigger Type** --- Page View
-
-.. image:: /user/img/system/integrations/gtm/pageView.png
-   :alt: pageView tag configuration details
-
-.. _gtm-integration-oro-side:
-
-Create and Enable Google Tag Manager Integration
-------------------------------------------------
-
-To create a new integration with Google Tag Manager in your Oro application:
+To configure a Google Tag Manager integration:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
 2. Click **Create Integration** on the top right.
-3. In the **Type** fields, select **Google Tag Manager**.
+3. In the **Type** field, select **Google Tag Manager**.
 4. In the **Name** field, provide the name for the integration you are creating to refer to it in the Oro application. Since you can create many Google Tag Manager integrations, make sure the name is meaningful.
-5. In the **Container ID** field, provide the :ref:`container ID <gtm-container-id>` that follows the *GTM-XXXXXXX* pattern. You can find container ID in your Google Tag Manager Account.
-
-   .. image:: /user/img/system/integrations/gtm/containder_id.png
-      :alt: Container id in Google Tag Manager account
-
+5. In the **Container ID** field, provide the |Google Tag Manager Container ID|. The Container ID is located in your Google Tag Manager account on the top right of the workspace page. It is formatted as *GTM-XXXXXX*.
 6. In the **Status** field, set the integration to *Active* to enable it. Should you need to disable it, select *Inactive* from the list.
-
-   .. image:: /user/img/system/integrations/gtm/gtm_integration.png
-      :alt: Google tag manager integration creation form
-
 7. In the **Default Owner**, select the owner of the integration.
 8. Click **Save and Close**.
 
-Once the integration is saved, it becomes available in the Integrations grid under **System > Integrations > Manage Integrations**.
+.. image:: /user/img/system/integrations/gtm/gtm-configuration.png
+   :alt: Google tag manager integration creation form
 
-.. important:: To enable a Google Tag Manager integration for data mapping, connect it to the application in the system settings :ref:`globally <system-configuration-integrations-google>`, :ref:`per organization <organization-google-settings>` or :ref:`website <website-google-settings>`.
+
+**Next Steps**
+
+Once the GTM integration is configured, you must connect it to the application in the system settings on the required level:
+
+* :ref:`Enable the Google Tag Manager integration globally <system-configuration-integrations-google>`
+* :ref:`Enable the Google Tag Manager integration per organization <organization-google-settings>`
+* :ref:`Enable the Google Tag Manager integration per website <website-google-settings>`
+
 
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-images.rst
    :start-after: begin

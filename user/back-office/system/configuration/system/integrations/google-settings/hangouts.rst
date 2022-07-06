@@ -109,7 +109,7 @@ To start a Hangout call with contacts invited to an event:
 * :ref:`Configure Global Google Settings <admin-configuration-integrations-google>`
 * :ref:`Configure Google Integration Settings <system-configuration-integrations-google>`
 * :ref:`Configure Google Single Sign On <user-guide-google-single-sign-on>`
-* :ref:`Configure Google Tag Manager Integration <gtm-integration>`
+* :ref:`Configure Google Tag Manager Integration <gtm-ga-4-integration>`
 
 .. include:: /include/include-images.rst
    :start-after: begin
