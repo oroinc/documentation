@@ -40,6 +40,8 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`FedEx <doc--integrations--fedex>`
   * :ref:`DPD <doc--integrations--dpd>`
 
+* :ref:`Google Tag Manager Integration (Google Universal Analytics) <gtm-integration>`
+* :ref:`Google Tag Manager Integration (Google Analytics 4) <gtm-ga-4-integration>`
 * :ref:`Dotdigital Integration <user-guide-dotmailer-overview>`
 * :ref:`Mailchimp Integration <user-guide-mc-integration>`
 * :ref:`Zendesk Integration <user-guide-zendesk-integration>`
@@ -56,6 +58,7 @@ Check the following integrations that can be enabled/disabled and configured in 
    Manage Integrations: Payment Method Integration <payment-integration/index>
    Manage Integrations: Shipping Method Integration <shipping-integration/index>
    Google Tag Manager Integration <gtm/index>
+   Google Tag Manager (GA4) Integration <gtm-ga4/index>
    Dotdigital Integration <dotdigital/index>
    Mailchimp Integration <mailchimp-integration>
    Zendesk Integration <zendesk-integration>
