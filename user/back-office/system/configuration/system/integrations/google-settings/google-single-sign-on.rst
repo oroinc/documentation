@@ -131,7 +131,8 @@ Now, a Google-registered user can click the **Login using Google** button to ent
 * :ref:`Configure Global Google Settings <admin-configuration-integrations-google>`
 * :ref:`Configure Google Integration Settings <system-configuration-integrations-google>`
 * :ref:`Set Up Voice and Video Calls via Hangouts <user-guide-hangouts>`
-* :ref:`Configure Google Tag Manager Integration <gtm-integration>`
+* :ref:`Configure Google Tag Manager Integration (Universal Analytics) <gtm-integration>`
+* :ref:`Configure Google Tag Manager Integration (Google Analytics 4) <gtm-ga-4-integration>`
 
 
 .. include:: /include/include-links-user.rst

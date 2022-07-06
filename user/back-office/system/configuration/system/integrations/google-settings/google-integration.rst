@@ -25,14 +25,19 @@ To configure Google integration-related settings in the back-office:
 
 5. In the **OAuth 2.0 for email sync** section, check **Enable** to activate synchronization with emails. Please, make sure that Gmail API is enabled in |Google Developers Console|.
 
-6. In the **Google Tag Manager Settings** section, clear the **Use Default** check box and select a :ref:`Google Tag Manager Integration <gtm-integration>` from the list to configure it for the application and enable data mapping.
+6. In the **Google Tag Manager Settings** section:
+
+    * Clear the **Use Default** check box.
+    * For the **Google Tag Manager** Integration filed, select the :ref:`GTM integration <gtm-ga-4-integration>` you have configured for the application. Click **Save** to display an additional option.
+    * For **Data Collection For**, select the Google Analytics type (Universal, GA4, or both) that connects to your GTM account to enable data mapping.
 
 **Related Topics**
 
 * :ref:`Configure Global Google Settings <admin-configuration-integrations-google>`
 * :ref:`Configure Google Single Sign On <user-guide-google-single-sign-on>`
 * :ref:`Set Up Voice and Video Calls via Hangouts <user-guide-hangouts>`
-* :ref:`Configure Google Tag Manager Integration <gtm-integration>`
+* :ref:`Configure Google Tag Manager Integration (Google Universal Analytics) <gtm-integration>`
+* :ref:`Configure Google Tag Manager Integration (GA4) <gtm-ga-4-integration>`
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

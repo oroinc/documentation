@@ -2,8 +2,8 @@
 
 .. _gtm-integration:
 
-Configure Google Tag Manager Integration in the Back-Office
-===========================================================
+Configure Google Tag Manager Integration in the Back-Office (Google Universal Analytics)
+========================================================================================
 
 Integration between your Oro application and |Google Tag Manager| enables you to add tracking tags to your OroCommerce web store pages with the help of |Enhanced E-commerce| and collect information on customer behavior, purchases, product clicks, page views, etc. All this information can subsequently be shared with Google Analytics to measure various user interactions with products on your website through |E-Commerce reports|. This can help you get a full picture of on-page visitor behavior, how well your marketing strategies work, and how to target your audience better.
 
@@ -17,8 +17,8 @@ In this topic, we are going to illustrate how to :ref:`integrate your Oro applic
 .. hint::
     Please, be aware that you must have |Google Tag Manager1| and |Google Analytics| accounts already created to proceed with the integration between your Oro application and Google Tag Manager, and pass data to Google Analytics.
 
-Configure Google Analytics Settings
------------------------------------
+Configure Google Universal Analytics Settings
+---------------------------------------------
 
 .. _ga-tracking-id:
 
@@ -125,7 +125,7 @@ Follow the steps below to complete import:
 
 #. Click **Confirm** to start file import.
 
-The container that you have imported contains a dummy Tracking ID number. You need to :ref:`change the ID <gtm-container-id>` to be able to transfer correct data to Google Analytics.
+The container that you have imported contains a dummy Tracking ID number. You need to change the ID to be able to transfer correct data to Google Analytics.
 
 To change the tracking ID for the imported variable:
 

@@ -28,7 +28,8 @@ Click the relevant topic below to start configuring the required setting:
 * :ref:`Configure Google Integration Settings <system-configuration-integrations-google>`
 * :ref:`Configure Google Single Sign On <user-guide-google-single-sign-on>`
 * :ref:`Set Up Voice and Video Calls via Hangouts <user-guide-hangouts>`
-* :ref:`Configure Google Tag Manager Integration <gtm-integration>`
+* :ref:`Configure Google Tag Manager Integration (Universal Analytics) <gtm-integration>`
+* :ref:`Configure Google Tag Manager Integration (Google Analytics 4) <gtm-ga-4-integration>`
 
 
 .. include:: /include/include-links-user.rst

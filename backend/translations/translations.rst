@@ -1,7 +1,7 @@
 .. _dev-translation:
 
-Content and User Iterface Translation
-=====================================
+Content and User Interface Translation
+======================================
 
 There are 3 ways to translate content displayed in Oro applications to a user. You can use:
 
