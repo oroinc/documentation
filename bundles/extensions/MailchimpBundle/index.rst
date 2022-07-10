@@ -57,6 +57,13 @@ Segment export has four steps:
 - **handle_unsubscribe_state** unsubscribes members from the audience in MailChimp
 - **handle_delete_state** deletes members from the audience in MailChimp
 
+.. note::
+     When the MailChimp audience has more than 100 merge vars, sync env variable *oro_mailchimp.client.merge_fields_count* with the actual number of merge vars.
+
+    To make marketing list members accepted without the merge vars values even when they are required, set the env variable ``oro_mailchimp.client.member_skip_merge_validation`` to *true*.
+
+     Place any env variable into the config/parameters.yml file.
+
 Extended Merge Vars
 -------------------
 
