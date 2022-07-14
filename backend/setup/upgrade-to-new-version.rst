@@ -60,6 +60,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
            - your changes to ``src/AppKernel.php`` file are merged to the new file.
            - your changes to ``src/`` folder are merged and it contains the custom files.
            - your changes to ``composer.json`` file are merged to the new file.
+           - your changes to ``packages.json`` file are merged to the new file.
            - your changes to configuration files in ``config/`` folder are merged to the new files.
 
    .. code-block:: none
@@ -203,6 +204,7 @@ To retrieve a new version and upgrade your Oro application instance, please exec
           - your changes to ``src/AppKernel.php`` file are merged to the new file.
           - your changes to ``src/`` folder are merged and it contains the custom files.
           - your changes to ``composer.json`` file are merged to the new file.
+          - your changes to ``package.json`` file are merged to the new file.
           - your changes to configuration files in ``config/`` folder are merged to the new files.
           - upgrade the composer dependency and set up right owner to the retrieved files.
 
