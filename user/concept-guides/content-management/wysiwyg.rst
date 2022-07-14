@@ -252,6 +252,8 @@ To add multiple columns to your content, you need to drag the block with the req
 
 Columns are fully responsive and adapted to content, formatting, and styles that you apply afterwards.
 
+.. _wysiwyg-add-tables:
+
 Add Tables
 ^^^^^^^^^^
 
@@ -354,6 +356,41 @@ You can also edit the existing HTML code that was already applied to the canvas 
 
 .. image:: /user/img/concept-guides/content-management/edit_htm_code.png
    :alt: Edit the existing HTML code via the popup dialog
+
+Input an HTML Code Fragment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To insert a piece of HTML code anywhere on the web page:
+
+1. Drag the **</> Custom Code** block to the required place of your canvas.
+2. Enter the desired HTML code.
+3. Click **Import**.
+
+.. image:: /user/img/concept-guides/content-management/insert_piece_of_htm_code.png
+   :alt: Inserting a piece of HTML code into the web page
+
+If you are inserting a table, you can edit it in two ways:
+
+* through the HTML code dialog (**</>**);
+* by merging (|IcObjectGroup|) the code into your web page content to adjust it via UI. Be aware that merging the table is an irreversible action that doesn't allow you to undo the merging. Refer to the :ref:`Add a table <wysiwyg-add-tables>` section for more details on how to manage tables via UI.
+
+.. image:: /user/img/concept-guides/content-management/edit-HTML-table.png
+   :alt: Illustrating the two ways of table editing
+
+
+Insert a Code Snippet
+^^^^^^^^^^^^^^^^^^^^^
+
+To insert a code snippet into your web page:
+
+1. Drag the |IcFileCode| **Code Example** to your canvas.
+2. Type the required text in the block.
+
+The text appears formatted as code on your web page.
+
+.. image:: /user/img/concept-guides/content-management/insert-code-snippet.png
+   :alt: Illustrating the two ways of table editing
+
 
 Disable the GrapeJs Style Manager
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
