@@ -586,3 +586,12 @@ Images
 
    <i class="fas fa-download" aria-hidden="true"></i>
 
+.. |IcObjectGroup| raw:: html
+
+   <i class="fas fa-object-group" aria-hidden="true"></i>
+
+.. |IcFileCode| raw:: html
+
+   <i class="fas fa-file-code" aria-hidden="true"></i>
+
+
