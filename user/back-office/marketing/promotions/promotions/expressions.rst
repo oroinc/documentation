@@ -225,8 +225,8 @@ See more information about using collections in the **Collection Validation** se
   - less or equal: <=
   - more or equal: >=
   - matches (regexp)
-  - in
-  - not in
+  - in ["Option A", "Option B"]
+  - not in ["Option A", "Option B"]
 
 * Logical:
 
@@ -269,6 +269,12 @@ For expression evaluation, OroCommerce walks through the *lineItems* collection 
           and
         inventoryLevel.productUnitPrecision.sell
       )
+   )
+
+   lineItems.any(
+     lineItem.product.sku in ['SKU1', 'SKU2']
+        or
+     lineItem.product.sku not in ['SKU3', 'SKU4']
    )
 
 The `lineItems.all(...)` expression is a loop through the elements of `lineItems` collection. It exposes every element of the collection inside the loop (in round brackets) as a `lineItem`.
