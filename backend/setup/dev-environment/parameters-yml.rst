@@ -104,6 +104,8 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
        liip_imagine.jpegoptim.binary: null
        liip_imagine.pngquant.binary: null
 
+       tracking_data_folder: '%env(ORO_TRACKING_DATA_FOLDER)%'
+
        # Fallback values (used if environmental variables are not set)
        env(ORO_DB_HOST): 127.0.0.1
        env(ORO_DB_PORT): null
@@ -128,6 +130,9 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
 
        env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
        env(ORO_ENABLE_PRICE_SHARDING): '0'
+
+       # Website tracking data folder, default value is 'var/data/import_files/tracking'
+       env(ORO_TRACKING_DATA_FOLDER): null
 
 Environment Variables
 ^^^^^^^^^^^^^^^^^^^^^
