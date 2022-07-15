@@ -8,9 +8,9 @@ OroStripeBundle provides Stripe payment service for card payments.
 Configuration
 -------------
 
-.. hint:: The Stripe payment service is available starting from Orocommerce v5.0.4. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The Stripe payment service is available starting from Orocommerce v5.0.5. To check which application version you are running, see the :ref:`system information <system-information>`.
 
-To be able to use Stripe for payments, first configure an :ref:`integration in the back-office <user-guide--payment--payment-providers-stripe--overview>`
+.. To be able to use Stripe for payments, first configure an :ref:`integration in the back-office <user-guide--payment--payment-providers-stripe--overview>`
 
 Payment Flow
 -------------
@@ -51,10 +51,10 @@ To support Stripe events that are not currently supported, create a new EventHan
 handling logic. Handler should implement the ``Oro\Bundle\StripeBundle\EventHandler\StripeEventHandlerInterface`` interface.
 
 
-**Related Articles**
+.. **Related Articles**
 
-* :ref:`Manage Stripe Payment Service in the Back-Office <user-guide--payment--payment-providers-stripe--overview>`
-* :ref:`Payment Configuration Concept Guide <user-guide--payment>`
+..  :ref:`Manage Stripe Payment Service in the Back-Office <user-guide--payment--payment-providers-stripe--overview>`
+..  :ref:`Payment Configuration Concept Guide <user-guide--payment>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -364,7 +364,7 @@ You can also edit the existing HTML code that was already applied to the canvas 
 Input an HTML Code Fragment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. hint:: The feature is available starting from OroCommerce v5.0.4. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The feature is available starting from OroCommerce v5.0.5. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To insert a piece of HTML code anywhere on the web page:
 
