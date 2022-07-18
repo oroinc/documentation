@@ -19,7 +19,7 @@ The WebsiteElasticSearchBundle bundle has exactly the same requirements as Elast
    configuration
    attributes-boost
    request-builders
-   upgrade-to-es7
+   upgrade-to-es8
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
