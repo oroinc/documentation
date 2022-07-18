@@ -59,9 +59,9 @@ Links (Cloud)
 
    <a href="https://cloud.google.com/cloud-console/" target="_blank">GCP console</a>
 
-.. |Stackdriver Logging| raw:: html
+.. |Logs Explorer| raw:: html
 
-   <a href="https://cloud.google.com/logging/docs/view/overview" target="_blank">Stackdriver Logging</a>
+   <a href="https://cloud.google.com/logging/docs/view/overview" target="_blank">Logs Explorer</a>
 
 .. |cron| raw:: html
 
