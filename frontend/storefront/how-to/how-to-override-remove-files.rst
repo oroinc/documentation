@@ -10,8 +10,8 @@ To remove or override `scss/css`, create an assets.yml and write the following c
 
    css:
        inputs:
-           - 'bundles/oroform/blank/scss/styles.scss': ~ // file will be removed from build process
-           - 'bundles/oroform/blank/scss/styles.scss': 'bundles/oroform/your_theme/scss/styles.scss' // file will be overridden
+           - 'bundles/oroform/default/scss/styles.scss': ~ // file will be removed from build process
+           - 'bundles/oroform/default/scss/styles.scss': 'bundles/oroform/your_theme/scss/styles.scss' // file will be overridden
 
 .. _frontend-styles-customization-remove-unnecessary-files:
 

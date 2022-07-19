@@ -160,7 +160,7 @@ Below is an example of updating the product block for product lists via layout u
     layout:
         actions:
             - '@setBlockTheme':
-                themes: '@OroGoogleTagManager/layouts/blank/imports/oro_product_list_item/oro_product_list_item.html.twig'
+                themes: '@OroGoogleTagManager/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig'
             - '@add':
                 id: __google_tag_manager_product_model_expose
                 parentId: __product

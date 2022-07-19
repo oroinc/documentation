@@ -181,7 +181,7 @@ Render Breadcrumb in Layouts
 To use a breadcrumb provider, create a layout update with a predefined block type **breadcrumbs** and option **menu_name**:
 
 .. code-block:: yaml
-   :caption: CustomerBundle/Resources/views/layouts/blank/imports/oro_customer_page/oro_customer_page.yml
+   :caption: CustomerBundle/Resources/views/layouts/default/imports/oro_customer_page/oro_customer_page.yml
 
     layout:
         imports:
@@ -202,12 +202,12 @@ Usage of Breadcrumbs Block Type
 To get breadcrumbs from a custom data provider, create a layout update with predefined block type **breadcrumbs** and option **breadcrumbs**:
 
 .. code-block:: yaml
-   :caption: WebCatalogBundle/Resources/views/layouts/blank/oro_product_frontend_product_index/product_index.yml
+   :caption: WebCatalogBundle/Resources/views/layouts/default/oro_product_frontend_product_index/product_index.yml
 
     layout:
         actions:
             - '@setBlockTheme':
-                themes: '@OroWebCatalog/layouts/blank/oro_product_frontend_product_index/product_index.html.twig'
+                themes: '@OroWebCatalog/layouts/default/oro_product_frontend_product_index/product_index.html.twig'
             - '@addTree':
                 items:
                     category_breadcrumbs:

@@ -62,7 +62,7 @@ Below is an example of JS Modules config with a minimal list of modules that mig
             - controllers/page-controller
             - orocommercemenu/js/app/views/header-row-view
             - orocookieconsent/js/views/cookie-banner-view
-            - orofrontend/blank/js/app/views/proxy-focus-view
+            - orofrontend/default/js/app/views/proxy-focus-view
             - orofrontend/default/js/app/views/scroll-top-view
             - orofrontend/default/js/app/views/sticky-panel-view
             - orofrontend/js/app/views/dom-relocation-view

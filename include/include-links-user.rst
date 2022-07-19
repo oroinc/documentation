@@ -109,7 +109,7 @@ Links (User)
 
 .. |configuration| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/views/layouts/blank/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/views/layouts/default/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>
 
 .. |how to create a web catalog in OroCommerce| raw:: html
 
