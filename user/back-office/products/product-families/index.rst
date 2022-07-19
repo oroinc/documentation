@@ -36,3 +36,4 @@ In this section, you will learn how to:
    manage
 
 .. include:: /include/include-images.rst
+   :start-after: begin

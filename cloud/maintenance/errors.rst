@@ -13,7 +13,7 @@ Troubleshooting performance issues is not always straightforward, as many things
 Error Handling
 --------------
 
-Stackdriver Error Reporting enables you to identify and understand your application errors by aggregating and displaying errors produced in your running cloud services.
+Google Cloud’s Error Reporting enables you to identify and understand your application errors by aggregating and displaying errors produced in your running cloud services.
 
 .. image:: /cloud/img/gcp/gcp-console.png
    :alt: GCP console displaying all errors
@@ -69,7 +69,7 @@ Review the list below to learn what helpful error reporting features are availab
 Log Monitoring
 --------------
 
-Collecting and processing logs are essential when troubleshooting errors. OroCloud uses the |Stackdriver Logging| service to collect logs from all system components of the application environment, and all logs are available via the |GCP console|. Logs are grouped per host and type.
+Collecting and processing logs are essential when troubleshooting errors. OroCloud uses the |Logs Explorer| service to collect logs from all system components of the application environment, and all logs are available via the |GCP console|. Logs are grouped per host and type.
 
 A number of logs are available from the GCP - standard component system logs, and application-specific. Application-specific logs are *app prod* and *consumer*; other logs are responsible for aggregating component-specific errors, like *naxsi-error* or *nginx-error*. However, understanding of the OroCloud deployment architecture is essential to work with the provided information efficiently.
 
@@ -98,7 +98,7 @@ DB slow logs are part of PostgreSQL host logging and are available in *pgsql* ho
 
 .. hint:: You can filter all logs by their source, level, time, and host.
 
-For more information on logging, refer to Google's |Stackdriver Logging| documentation.
+For more information on logging, refer to Google's |Logs Explorer| documentation.
 
 Adding Fields to Log Summary Line
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
