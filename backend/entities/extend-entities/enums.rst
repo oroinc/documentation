@@ -22,21 +22,27 @@ The following example shows how it can be done:
    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_6;
 
    use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\MigrationBundle\Migration\Migration;
    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
    class AddEnumFieldOroUser implements Migration, ExtendExtensionAwareInterface
    {
-       protected $extendExtension;
+       protected ExtendExtension $extendExtension;
 
+       /**
+        * @inheritDoc
+        */
        public function setExtendExtension(ExtendExtension $extendExtension)
        {
            $this->extendExtension = $extendExtension;
        }
 
+       /**
+        * @inheritDoc
+        */
        public function up(Schema $schema, QueryBag $queries)
        {
            $table = $schema->getTable('oro_user');
@@ -64,7 +70,7 @@ To load a list of options, use data fixtures, for example:
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadUserInternalRatingData.php
 
-   namespace Oro\Bundle\DemoBundle\Migrations\Data\ORM;
+   namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
 
    use Doctrine\Common\DataFixtures\AbstractFixture;
    use Doctrine\Persistence\ObjectManager;
@@ -81,6 +87,9 @@ To load a list of options, use data fixtures, for example:
            '5' => false
        ];
 
+       /**
+        * @inheritDoc
+        */
        public function load(ObjectManager $manager)
        {
            $className = ExtendHelper::buildEnumValueClassName('user_internal_rating');

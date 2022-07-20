@@ -204,27 +204,30 @@ If you have several migration classes within the same version and you need to ma
 Below is an example of a migration file:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_1/AddTmpTestTable.php
+    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_1/AddTmpTestTable.php
 
-   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_1;
+    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_1;
 
-   use Doctrine\DBAL\Schema\Schema;
-   use Oro\Bundle\MigrationBundle\Migration\Migration;
-   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+    use Doctrine\DBAL\Schema\Schema;
+    use Oro\Bundle\MigrationBundle\Migration\Migration;
+    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-   class AddTmpTestTable implements Migration
-   {
-       public function up(Schema $schema, QueryBag $queries)
-       {
-           $table = $schema->createTable('tmp_test_table');
-           $table->addColumn('id', 'integer', ['autoincrement' => true]);
-           $table->addColumn('created', 'datetime', []);
-           $table->addColumn('field', 'string', ['length' => 500]);
-           $table->addColumn('another_field', 'string', ['length' => 255]);
-           $table->addColumn('test_column', 'json', []);
-           $table->setPrimaryKey(['id']);
-       }
-   }
+    class AddTmpTestTable implements Migration
+    {
+       /**
+        * @inheritDoc
+        */
+        public function up(Schema $schema, QueryBag $queries)
+        {
+            $table = $schema->createTable('tmp_test_table');
+            $table->addColumn('id', 'integer', ['autoincrement' => true]);
+            $table->addColumn('created', 'datetime', []);
+            $table->addColumn('field', 'string', ['length' => 500]);
+            $table->addColumn('another_field', 'string', ['length' => 255]);
+            $table->addColumn('test_column', 'json', []);
+            $table->setPrimaryKey(['id']);
+        }
+    }
 
 ..
    You can use the following algorithm for new versions of your bundle:
@@ -265,20 +268,23 @@ Extensions for Database Structure Migrations
 You cannot always use standard Doctrine methods to modify the database structure. For example, ``Schema::renameTable`` does not work because it drops an existing table and then creates a new one. To help you manage such a case and enable you to to add additional functionality to any migration, use the extensions mechanism. The following example illustrates how |RenameExtension| can be used:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/TestRenameTable.php
+    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/TestRenameTable.php
 
-   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_2;
+    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_2;
 
-   use Doctrine\DBAL\Schema\Schema;
-   use Oro\Bundle\MigrationBundle\Migration\Migration;
-   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-   use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtension;
-   use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtensionAwareInterface;
+    use Doctrine\DBAL\Schema\Schema;
+    use Oro\Bundle\MigrationBundle\Migration\Migration;
+    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+    use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtension;
+    use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtensionAwareInterface;
 
-   class TestRenameTable implements Migration, RenameExtensionAwareInterface
-   {
+    class TestRenameTable implements Migration, RenameExtensionAwareInterface
+    {
        protected RenameExtension $renameExtension;
 
+       /**
+        * @inheritDoc
+        */
        public function setRenameExtension(RenameExtension $renameExtension)
        {
            $this->renameExtension = $renameExtension;
@@ -293,7 +299,7 @@ You cannot always use standard Doctrine methods to modify the database structure
                'new_test_table'
            );
        }
-   }
+    }
 
 As you can see from the example above, your migration class should implement |RenameExtensionAwareInterface| and `setRenameExtension` method in order to use the |RenameExtension|.
 
@@ -456,14 +462,24 @@ The ``Oro\Bundle\MigrationBundle\Migration\Loader\MigrationsLoader`` dispatches 
 
     class RegisterCustomMigrationListener
     {
-        // listening to the oro_migration.pre_up event
-        public function preUp(PreMigrationEvent $event)
+        /**
+        * Listening to the oro_migration.pre_up event
+        *
+        * @param PreMigrationEvent $event
+        * @return void
+        */
+        public function onPreUp(PreMigrationEvent $event): void
         {
             $event->addMigration(new CustomMigration());
         }
 
-        // listening to the oro_migration.post_up event
-        public function postUp(PostMigrationEvent $event)
+        /**
+         * Listening to the oro_migration.post_up event
+         *
+         * @param PostMigrationEvent $event
+         * @return void
+         */
+        public function onPostUp(PostMigrationEvent $event): void
         {
             $event->addMigration(new CustomMigration());
         }

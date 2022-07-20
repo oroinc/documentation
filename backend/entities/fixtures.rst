@@ -27,7 +27,7 @@ Example:
 
 .. code-block:: php
 
-    namespace Acme\DemoBundle\Migrations\DataFixtures\ORM;
+    namespace Acme\Bundle\DemoBundle\Migrations\DataFixtures\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Persistence\ObjectManager;
@@ -37,7 +37,7 @@ Example:
     class LoadSomeDataFixture extends AbstractFixture implements VersionedFixtureInterface
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function getVersion()
         {
@@ -45,7 +45,7 @@ Example:
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function load(ObjectManager $manager)
         {
@@ -61,43 +61,40 @@ If the fixture needs to know the last loaded version, it must implement |LoadedF
 
 .. code-block:: php
 
-    namespace Acme\DemoBundle\Migrations\DataFixtures\ORM;
+    namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Persistence\ObjectManager;
-
+    use Oro\Bundle\MigrationBundle\Fixture\LoadedFixtureVersionAwareInterface;
     use Oro\Bundle\MigrationBundle\Fixture\VersionedFixtureInterface;
-    use Oro\Bundle\MigrationBundle\Fixture\RequestVersionFixtureInterface;
 
-    class LoadSomeDataFixture extends AbstractFixture implements VersionedFixtureInterface, LoadedFixtureVersionAwareInterface
+    class LoadSomeDataFixture extends AbstractFixture
+        implements VersionedFixtureInterface, LoadedFixtureVersionAwareInterface
     {
-        /**
-         * @var $currendDBVersion string
-         */
-        protected $currendDBVersion = null;
+        protected ?string $loadedVersion;
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function setLoadedVersion($version = null)
         {
-            $this->currendDBVersion = $version;
+            $this->loadedVersion = $version;
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function getVersion()
+        public function getVersion(): string
         {
             return '2.0';
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function load(ObjectManager $manager)
         {
-            // Here we can check last loaded version and load data data difference between last
+            // Here we can check last loaded version and load data difference between last
             // uploaded version and current version
         }
     }
@@ -113,7 +110,7 @@ Example:
 
 .. code-block:: php
 
-    namespace Acme\DemoBundle\Migrations\DataFixtures\ORM;
+    namespace Acme\Bundle\DemoBundle\Migrations\DataFixtures\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Persistence\ObjectManager;
@@ -123,17 +120,17 @@ Example:
     class LoadSomeDataFixture extends AbstractFixture implements RenamedFixtureInterface
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function getPreviousClassNames(): array
         {
             return [
-                'Acme\PreviousBundle\Migrations\DataFixtures\ORM\PreviousClassNameOfDataFixture'
+                'Acme\Bundle\DemoBundle\Migrations\DataFixtures\ORM\PreviousClassNameOfDataFixture'
             ];
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function load(ObjectManager $manager)
         {
@@ -142,4 +139,4 @@ Example:
     }
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

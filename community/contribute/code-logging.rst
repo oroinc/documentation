@@ -10,10 +10,10 @@ Use Monolog logger that implements the PSR-3 LoggerInterface, de-facto logging s
 
 .. code-block:: php
 
-   $logger->critical('I left the oven on!', [
-       // include extra "context" info in your logs
-       'cause' => 'in_hurry',
-   ]);
+    $logger->critical('I left the oven on!', [
+        // include extra "context" info in your logs
+        'cause' => 'in_hurry',
+    ]);
 
 Debug, info, notice, warning, error, critical, and alert methods have two arguments:
 * A string with a human readable message.
@@ -27,50 +27,50 @@ How to Use Logger
    You can be restricted to call __constructor() in case it is private or instantiated not using service container, by CompilerPass or factory that are not under your control etc.
 #. In service container configuration add logger (@logger) as required argument to constructor or in setter in case LoggerAwareInterface used:
 
-   **Constructor injection**
+    **Constructor injection**
 
-   .. code-block:: text
+    .. code-block:: text
 
-      services:
-          acme.logger_aware_service:
-              class:     AcmeBundle\Foo\BarLoggerAwareService
-              arguments: ['@logger']
+        services:
+            acme_demo.logger_aware_service:
+                class: Acme\Bundle\DemoBundle\Foo\BarLoggerAwareService
+                arguments: ['@logger']
 
    *Setter injection*
 
-   .. code-block:: text
+    .. code-block:: text
 
-      services:
-          acme.logger_aware_service:
-              class:     AcmeBundle\Foo\BarLoggerAwareService
-              calls:
-                  - [setLogger, ['@logger']]
+        services:
+            acme_demo.logger_aware_service:
+                class: Acme\Bundle\DemoBundle\Foo\BarLoggerAwareService
+                calls:
+                    - [setLogger, ['@logger']]
 
 #. Every independent component should use its own channel with the *oro_* prefix:
 
-   .. code-block:: text
+    .. code-block:: text
 
-      tags:
-          - { name: monolog.logger, channel: oro_api }
+        tags:
+            - { name: monolog.logger, channel: oro_api }
 
    You can reuse existing channel only to override or extend the existing logger aware service.
 
 #. If LoggerAwareInterface was used, every logger method call should be wrapped with the following check to ensure that the logger exists, and no exceptions are triggered due to its unavailability:
 
-   .. code-block:: text
+    .. code-block:: text
 
-      if (null !== $this->logger){
-          $this->logger->debug($message,  $context);
-      }
+        if (null !== $this->logger){
+            $this->logger->debug($message,  $context);
+        }
 
 #. Messages should be simple and human-readable. Any extra information should be passed in the context variables:
 
-   .. code-block:: text
+    .. code-block:: text
 
-      $this->logger->debug(
-          'Authentication failure, forward triggered.',
-          ['failure_path' => $path]
-      );
+        $this->logger->debug(
+            'Authentication failure, forward triggered.',
+            ['failure_path' => $path]
+        );
 
 #. When you need a user-friendly message on production instead of a real one, use the following approach (see this sample): when something goes wrong for the user, but the system is still usable, display a message like "Something has gone wrong, contact the system administrator" and log the real exception to facilitate the future debug process.
    You can use this approach when:
@@ -204,47 +204,47 @@ Example 1
 
 .. code-block:: php
 
-   <?php
-   // in case of injection logger to constructor
-   // do some work
+    <?php
+    // in case of injection logger to constructor
+    // do some work
 
-   catch (\Exception $e) {
-       $this->logger->error($message, ['exception'=> $e]);
-       // optionally
-       $this->session->getFlashBag()->add('warning', $message);
-       // recover
-   }
+    catch (\Exception $e) {
+        $this->logger->error($message, ['exception'=> $e]);
+        // optionally
+        $this->session->getFlashBag()->add('warning', $message);
+        // recover
+    }
 
 Example 2
 ^^^^^^^^^
 
 .. code-block:: php
 
-   <?php
-   // in case of using LoggerAwareInterface
-   // do some work
+    <?php
+    // in case of using LoggerAwareInterface
+    // do some work
 
-   catch (\Exception $e) {
-       if (null !== $this->logger){
-           $this->logger->error($message, ['exception'=> $e]);
-       }
-       // optionally
-       $this->session->getFlashBag()->add('warning', $message);
-       // recover
-   }
+    catch (\Exception $e) {
+        if (null !== $this->logger){
+            $this->logger->error($message, ['exception'=> $e]);
+        }
+        // optionally
+        $this->session->getFlashBag()->add('warning', $message);
+        // recover
+    }
 
 Example 3
 ^^^^^^^^^
 
 .. code-block:: php
 
-   <?php
-   // do some work
+    <?php
+    // do some work
 
-   catch (MyCustomExpectedException $e) {
-       $this->logger->error($message, ['exception'=> $e]);
-       // recover
-   }
+    catch (MyCustomExpectedException $e) {
+        $this->logger->error($message, ['exception'=> $e]);
+        // recover
+    }
 
 
 Incorrect Exceptions Handling
@@ -254,16 +254,16 @@ Handling exceptions without logging is incorrect:
 
 .. code-block:: php
 
-   <?php
-   // do some work
-   catch (Exception $e) {
-   }
+    <?php
+    // do some work
+    catch (Exception $e) {
+    }
 
-   <?php
-   // do some work
-   catch (Exception $e) {
-       // do some work without logging
-   }
+    <?php
+    // do some work
+    catch (Exception $e) {
+        // do some work without logging
+    }
 
 
 How to Enable Logger Only on Dev Environment
@@ -282,4 +282,4 @@ Never log sensitive data. Under any circumstances. We mean it. Use data anonymiz
 * |How to Do Application Logging Right|
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

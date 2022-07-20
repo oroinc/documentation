@@ -10,7 +10,7 @@ Please see the :ref:`Debug Information <dev-doc-frontend-layouts-debugging>` sec
 Static Block Only
 -----------------
 
-For the first case, create the first level category (with **id = 8**) that contains a static block only. 
+For the first case, create the first level category (with **id = 8**) that contains a static block only.
 
 The page looks the following way:
 
@@ -20,7 +20,7 @@ The page looks the following way:
 Create the layout update:
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block_only.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block_only.yml
 
 
     layout:
@@ -32,7 +32,7 @@ Create the layout update:
 
         actions:
             - '@setBlockTheme':
-                themes: '@AcmeProduct/layouts/default/oro_product_frontend_product_index/static_block.html.twig'
+                themes: '@AcmeDemo/layouts/default/oro_product_frontend_product_index/static_block.html.twig'
 
             - '@addTree':
                 items:
@@ -76,7 +76,7 @@ Create the layout update:
 Create a template:
 
 .. code-block:: twig
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block.html.twig
 
 
     {% block _featured_products_container_widget %}
@@ -143,7 +143,7 @@ Create a template:
 Static Block and Products
 -------------------------
 
-For the second case, create a second level category (with **id = 9**) that contains a static block and products. 
+For the second case, create a second level category (with **id = 9**) that contains a static block and products.
 
 The page looks the following way:
 
@@ -153,7 +153,7 @@ The page looks the following way:
 Create the layout update:
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block_and_products.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block_and_products.yml
 
 
     layout:
@@ -163,8 +163,8 @@ Create the layout update:
         actions:
             - '@setBlockTheme':
                 themes:
-                    - '@AcmeProduct/layouts/default/oro_product_frontend_product_index/products.html.twig'
-                    - '@AcmeProduct/layouts/default/oro_product_frontend_product_index/static_block.html.twig'
+                    - '@AcmeDemo/layouts/default/oro_product_frontend_product_index/products.html.twig'
+                    - '@AcmeDemo/layouts/default/oro_product_frontend_product_index/static_block.html.twig'
 
             - '@addTree':
                 items:
@@ -186,7 +186,7 @@ Create the layout update:
 Extend static block template with our block:
 
 .. code-block:: twig
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_index/static_block.html.twig
 
 
     ...
@@ -218,7 +218,7 @@ Extend static block template with our block:
 Products Only
 -------------
 
-For the third case, create a third level category (all **ids** that are **not equal 8 or 9**) that contains products only. 
+For the third case, create a third level category (all **ids** that are **not equal 8 or 9**) that contains products only.
 
 The page looks the following way:
 
@@ -228,7 +228,7 @@ The page looks the following way:
 Create a layout update:
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/products_only.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_index/products_only.yml
 
 
     layout:
@@ -237,7 +237,7 @@ Create a layout update:
 
         actions:
             - '@setBlockTheme':
-                themes: '@AcmeProduct/layouts/default/oro_product_frontend_product_index/products.html.twig'
+                themes: '@AcmeDemo/layouts/default/oro_product_frontend_product_index/products.html.twig'
             - '@addTree':
                 items:
                     product_index_page:
@@ -255,7 +255,7 @@ Create a layout update:
 Create a template:
 
 .. code-block:: twig
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_index/products.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_index/products.html.twig
 
 
     {% block _product_grid_container_widget %}

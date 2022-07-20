@@ -17,11 +17,11 @@ a chain of classes that implement ``Oro\Bundle\AttachmentBundle\Provider\FileUrl
 
 .. code-block:: php
 
-        // Generates a URL for resized image of $image with $filterName LiipImagine filter.
-        $imageUrl = $this->fileUrlProvider->getFilteredImageUrl($image, $filterName);
-        // Generates a URL for resized image of $image with $filterName LiipImagine filter and converted to 'webp' format.
-        // Extension 'webp' will be appended to the filename.
-        $webpImageUrl = $this->fileUrlProvider->getFilteredImageUrl($image, $filterName, 'webp');
+    // Generates a URL for resized image of $image with $filterName LiipImagine filter.
+    $imageUrl = $this->fileUrlProvider->getFilteredImageUrl($image, $filterName);
+    // Generates a URL for resized image of $image with $filterName LiipImagine filter and converted to 'webp' format.
+    // Extension 'webp' will be appended to the filename.
+    $webpImageUrl = $this->fileUrlProvider->getFilteredImageUrl($image, $filterName, 'webp');
 
 .. _attachment-bundle-custom-url-provider:
 
@@ -31,48 +31,66 @@ Custom URL Provider
 In order to hook into the logic of generating a URL for a file or image, |decorate service| ``oro_attachment.provider.file_url`` with a class that implements the ``Oro\Bundle\AttachmentBundle\Provider\FileUrlProviderInterface`` interface. For example:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/AppBundle/CustomUrlProvider.php
+    :caption: src/Acme/Bundle/DemoBundle/Provider/CustomUrlProvider.php
 
-        class CustomUrlProvider implements FileUrlProviderInterface
+    namespace Acme\Bundle\DemoBundle\Provider;
+
+    use Oro\Bundle\AttachmentBundle\Entity\File;
+    use Oro\Bundle\AttachmentBundle\Provider\FileUrlProviderInterface;
+    use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+
+    class CustomUrlProvider implements FileUrlProviderInterface
+    {
+        private FileUrlProviderInterface $innerFileUrlProvider;
+
+        /**
+         * @param FileUrlProviderInterface $innerFileUrlProvider
+         */
+        public function __construct(FileUrlProviderInterface $innerFileUrlProvider)
         {
-            private FileUrlProviderInterface $innerFileUrlProvider;
-
-            public function __construct(FileUrlProviderInterface $innerFileUrlProvider)
-            {
-                $this->innerFileUrlProvider = $innerFileUrlProvider;
-            }
-
-            public function getFileUrl(File $file, string $action = self::FILE_ACTION_GET, int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
-            {
-                return 'custom url here';
-            }
-
-            public function getResizedImageUrl(File $file, int $width, int $height, string $format = '', int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
-            {
-                return 'custom url here';
-            }
-
-            public function getFilteredImageUrl(File $file, string $filterName, string $format = '', int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
-            {
-                if (/* custom condition here */) {
-                    /* custom logic here */
-                    return 'http://example.org/my-custom-url.png';
-                }
-
-                // Pass the control to the decorated class if the custom condition is not satisfied.
-                return $this->innerFileUrlProvider->getFilteredImageUrl($file, $filterName, $format, $referenceType);
-            }
+            $this->innerFileUrlProvider = $innerFileUrlProvider;
         }
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/AppBundle/Resources/config/services.yml
+        /**
+         * @inheritDoc
+         */
+        public function getFileUrl(File $file, string $action = self::FILE_ACTION_GET, int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
+        {
+            return 'custom url here';
+        }
 
-        services:
-            acme.custom_file_url_provider:
-                class: Acme\Bundle\AppBundle\CustomFileUrlProvider
-                decorates: oro_attachment.provider.file_url
-                arguments:
-                    - '@.inner'
+        /**
+         * @inheritDoc
+         */
+        public function getResizedImageUrl(File $file, int $width, int $height, string $format = '', int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
+        {
+            return 'custom url here';
+        }
+
+        /**
+         * @inheritDoc
+         */
+        public function getFilteredImageUrl(File $file, string $filterName, string $format = '', int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
+        {
+            if (/* custom condition here */) {
+                /* custom logic here */
+                return 'http://example.org/my-custom-url.png';
+            }
+
+            // Pass the control to the decorated class if the custom condition is not satisfied.
+            return $this->innerFileUrlProvider->getFilteredImageUrl($file, $filterName, $format, $referenceType);
+        }
+    }
+
+.. code-block:: yaml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+
+    services:
+        acme.custom_file_url_provider:
+            class: Acme\Bundle\DemoBundle\Provider\CustomUrlProvider
+            decorates: oro_attachment.provider.file_url
+            arguments:
+                - '@.inner'
 
 .. _attachment-bundle-custom-filename-provider:
 
@@ -83,156 +101,187 @@ To hook into the logic of generating a filename for a file or image, |decorate s
 with a class that implements the ``Oro\Bundle\AttachmentBundle\Provider\FileNameProviderInterface`` interface. For example:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/AppBundle/CustomUrlProvider.php
+    :caption: src/Acme/Bundle/DemoBundle/Provider/CustomFileNameProvider.php
 
-        use Oro\Bundle\AttachmentBundle\Entity\File;
-        use Oro\Bundle\AttachmentBundle\Provider\FileNameProviderInterface;
-        use Oro\Bundle\AttachmentBundle\Tools\FilenameExtensionHelper;
-        use Oro\Bundle\AttachmentBundle\Tools\FilenameSanitizer;
-        use Oro\Bundle\CatalogBundle\Entity\Category;
-        use Oro\Bundle\CatalogBundle\Entity\Repository\CategoryRepository;
-        use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;
-        use Oro\Bundle\ProductBundle\Entity\Brand;
-        use Oro\Bundle\ProductBundle\Entity\Product;
-        use Oro\Bundle\ProductBundle\Entity\ProductImage;
+    namespace Acme\Bundle\DemoBundle\Provider;
+
+    use Oro\Bundle\AttachmentBundle\Entity\File;
+    use Oro\Bundle\AttachmentBundle\Provider\FileNameProviderInterface;
+    use Oro\Bundle\AttachmentBundle\Tools\FilenameExtensionHelper;
+    use Oro\Bundle\AttachmentBundle\Tools\FilenameSanitizer;
+    use Oro\Bundle\CatalogBundle\Entity\Category;
+    use Oro\Bundle\CatalogBundle\Entity\Repository\CategoryRepository;
+    use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;
+    use Oro\Bundle\ProductBundle\Entity\Brand;
+    use Oro\Bundle\ProductBundle\Entity\Product;
+    use Oro\Bundle\ProductBundle\Entity\ProductImage;
+
+    class CustomFileNameProvider implements FileNameProviderInterface
+    {
+        private const SEPARATOR = '-';
+
+        private FileNameProviderInterface $innerProvider;
+        private DoctrineHelper            $doctrineHelper;
 
         /**
-         * Uses a sanitized filename including the product name, brand name and category name for Product Images.
+         * @param FileNameProviderInterface $innerProvider
+         * @param DoctrineHelper $doctrineHelper
          */
-        class CustomFileNameProvider implements FileNameProviderInterface
-        {
-            private const SEPARATOR = '-';
-
-            private FileNameProviderInterface $innerProvider;
-
-            private DoctrineHelper $doctrineHelper;
-
-            public function __construct(
-                FileNameProviderInterface $innerProvider,
-                DoctrineHelper $doctrineHelper
-            ) {
-                $this->innerProvider = $innerProvider;
-                $this->doctrineHelper = $doctrineHelper;
-            }
-
-            public function getFileName(File $file): string
-            {
-                if (!$this->isApplicable($file)) {
-                    return $this->innerProvider->getFileName($file);
-                }
-
-                return $this->getNameWithFormat($file);
-            }
-
-            public function getFilteredImageName(File $file, string $filterName, string $format = ''): string
-            {
-                if (!$this->isApplicable($file)) {
-                    return $this->innerProvider->getFilteredImageName($file, $filterName, $format);
-                }
-
-                return $this->getNameWithFormat($file, $format);
-            }
-
-            public function getResizedImageName(File $file, int $width, int $height, string $format = ''): string
-            {
-                if (!$this->isApplicable($file)) {
-                    return $this->innerProvider->getResizedImageName($file, $width, $height, $format);
-                }
-
-                return $this->getNameWithFormat($file, $format);
-            }
-
-            private function getNameWithFormat(File $file, string $format = ''): string
-            {
-                $extension = $file->getExtension() ?? pathinfo($file->getFilename(), PATHINFO_EXTENSION);
-                $filename = str_replace(
-                    '.' . $extension,
-                    '',
-                    $file->getFilename()
-                );
-
-                $parentEntity = $this->getParentEntity($file);
-                if ($parentEntity instanceof ProductImage) {
-                    $product = $parentEntity->getProduct();
-
-                    $brandName = $this->getBrandName($product);
-                    if ($brandName) {
-                        $filename .= self::SEPARATOR . $brandName;
-                    }
-
-                    $categoryTitle = $this->getCategoryTitle($product);
-                    if ($categoryTitle) {
-                        $filename .= self::SEPARATOR . $categoryTitle;
-                    }
-
-                    $filename .= self::SEPARATOR . $product->getDefaultName();
-                }
-
-                $filename .= '.' . $extension;
-                $filename = FilenameExtensionHelper::addExtension($filename, $format);
-
-                return FilenameSanitizer::sanitizeFilename($filename);
-            }
-
-            /**
-             * Provider is applicable for files uploaded as Product Images.
-             */
-            private function isApplicable(File $file): bool
-            {
-                return $file->getParentEntityClass() === ProductImage::class
-                    && $file->getOriginalFilename();
-            }
-
-            private function getParentEntity(File $file): ?ProductImage
-            {
-                $parentEntityClass = $file->getParentEntityClass();
-                if (!$parentEntityClass) {
-                    return null;
-                }
-
-                $parentEntityId = $file->getParentEntityId();
-                if (!$parentEntityId) {
-                    return null;
-                }
-
-                return $this->doctrineHelper->getEntity($parentEntityClass, $parentEntityId);
-            }
-
-            private function getCategoryTitle(Product $product): ?string
-            {
-                /** @var CategoryRepository $repository */
-                $repository = $this->doctrineHelper->getEntityRepository('OroCatalogBundle:Category');
-                $category = $repository->findOneByProduct($product);
-
-                if ($category instanceof Category) {
-                    return $category->getDenormalizedDefaultTitle();
-                }
-
-                return null;
-            }
-
-            private function getBrandName(Product $product): ?string
-            {
-                $brand = $product->getBrand();
-                if ($brand instanceof Brand) {
-                    return $brand->getDefaultName();
-                }
-
-                return null;
-            }
+        public function __construct(
+            FileNameProviderInterface $innerProvider,
+            DoctrineHelper $doctrineHelper
+        ) {
+            $this->innerProvider  = $innerProvider;
+            $this->doctrineHelper = $doctrineHelper;
         }
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/AppBundle/Resources/config/services.yml
+        /**
+         * @inheritDoc
+         */
+        public function getFileName(File $file): string
+        {
+            if (!$this->isApplicable($file)) {
+                return $this->innerProvider->getFileName($file);
+            }
 
-        services:
-            acme.provider.custom_filename_provider:
-                class: Acme\Bundle\AppBundle\Provider\CustomFileNameProvider
-                decorates: oro_attachment.provider.file_name
-                decoration_priority: -200
-                arguments:
-                    - '@.inner'
-                    - '@oro_entity.doctrine_helper'
+            return $this->getNameWithFormat($file);
+        }
+
+        /**
+         * @inheritDoc
+         */
+        public function getFilteredImageName(File $file, string $filterName, string $format = ''): string
+        {
+            if (!$this->isApplicable($file)) {
+                return $this->innerProvider->getFilteredImageName($file, $filterName, $format);
+            }
+
+            return $this->getNameWithFormat($file, $format);
+        }
+
+        /**
+         * @inheritDoc
+         */
+        public function getResizedImageName(File $file, int $width, int $height, string $format = ''): string
+        {
+            if (!$this->isApplicable($file)) {
+                return $this->innerProvider->getResizedImageName($file, $width, $height, $format);
+            }
+
+            return $this->getNameWithFormat($file, $format);
+        }
+
+        /**
+         * Provider is applicable for files uploaded as Product Images.
+         *
+         * @param File $file
+         * @return bool
+         */
+        private function isApplicable(File $file): bool
+        {
+            return $file->getParentEntityClass() === ProductImage::class
+                && $file->getOriginalFilename();
+        }
+
+        /**
+         * @param File $file
+         * @param string $format
+         * @return string
+         */
+        private function getNameWithFormat(File $file, string $format = ''): string
+        {
+            $extension = $file->getExtension() ?? pathinfo($file->getFilename(), PATHINFO_EXTENSION);
+            $filename  = str_replace(
+                '.' . $extension,
+                '',
+                $file->getFilename()
+            );
+
+            $parentEntity = $this->getParentEntity($file);
+            if ($parentEntity instanceof ProductImage) {
+                $product = $parentEntity->getProduct();
+
+                $brandName = $this->getBrandName($product);
+                if ($brandName) {
+                    $filename .= self::SEPARATOR . $brandName;
+                }
+
+                $categoryTitle = $this->getCategoryTitle($product);
+                if ($categoryTitle) {
+                    $filename .= self::SEPARATOR . $categoryTitle;
+                }
+
+                $filename .= self::SEPARATOR . $product->getDefaultName();
+            }
+
+            $filename .= '.' . $extension;
+            $filename = FilenameExtensionHelper::addExtension($filename, $format);
+
+            return FilenameSanitizer::sanitizeFilename($filename);
+        }
+
+        /**
+         * @param File $file
+         * @return ProductImage|null
+         */
+        private function getParentEntity(File $file): ?ProductImage
+        {
+            $parentEntityClass = $file->getParentEntityClass();
+            if (!$parentEntityClass) {
+                return null;
+            }
+
+            $parentEntityId = $file->getParentEntityId();
+            if (!$parentEntityId) {
+                return null;
+            }
+
+            return $this->doctrineHelper->getEntity($parentEntityClass, $parentEntityId);
+        }
+
+        /**
+         * @param Product $product
+         * @return string|null
+         */
+        private function getCategoryTitle(Product $product): ?string
+        {
+            /** @var CategoryRepository $repository */
+            $repository = $this->doctrineHelper->getEntityRepository('OroCatalogBundle:Category');
+            $category   = $repository->findOneByProduct($product);
+
+            if ($category instanceof Category) {
+                return $category->getDenormalizedDefaultTitle();
+            }
+
+            return null;
+        }
+
+        /**
+         * @param Product $product
+         * @return string|null
+         */
+        private function getBrandName(Product $product): ?string
+        {
+            $brand = $product->getBrand();
+            if ($brand instanceof Brand) {
+                return $brand->getDefaultName();
+            }
+
+            return null;
+        }
+    }
+
+.. code-block:: yaml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+
+    services:
+        acme.provider.custom_filename_provider:
+            class: Acme\Bundle\DemoBundle\Provider\CustomFileNameProvider
+            decorates: oro_attachment.provider.file_name
+            decoration_priority: -200
+            arguments:
+                - '@.inner'
+                - '@oro_entity.doctrine_helper'
 
 .. _attachment-bundle-image-file-twig:
 
@@ -257,5 +306,5 @@ OroAttachmentBundle provides the following TWIG functions for images and files:
 See ``Oro\Bundle\AttachmentBundle\Twig\FileExtension`` for more information on functions arguments.
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin
 

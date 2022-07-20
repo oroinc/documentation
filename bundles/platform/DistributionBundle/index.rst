@@ -14,7 +14,7 @@ Add `Resources/config/oro/bundles.yml` file to every bundle you want to be autor
 
     bundles:
         - { name: VendorName\Bundle\VendorBundle\VendorAnyBundle, priority: 50 }
-        - { name: My\Bundle\MyBundle\MyCustomBundle, priority: 50 }
+        - { name: Acme\Bundle\DemoBundle\AcmeDemoBundle, priority: 50 }
     #   - ...
 
 

@@ -4,7 +4,7 @@
 :title: System Configuration Management in OroCommerce, OroCRM, OroPlatform
 
 .. meta::
-   :description: System configuration manuals and how-to guides for the Oro application backend developers
+    :description: System configuration manuals and how-to guides for the Oro application backend developers
 
 .. _backend-system-configuration:
 
@@ -29,9 +29,9 @@ To define your own configuration settings in a bundle, use the
 ``Configuration`` class:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/DependencyInjection/Configuration.php
+    :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/Configuration.php
 
-    namespace Acme\DemoBundle\DependencyInjection;
+    namespace Acme\Bundle\DemoBundle\DependencyInjection;
 
     use Oro\Bundle\ConfigBundle\DependencyInjection\SettingsBuilder;
     use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -39,6 +39,9 @@ To define your own configuration settings in a bundle, use the
 
     class Configuration implements ConfigurationInterface
     {
+        /**
+         * @inheritDoc
+         */
         public function getConfigTreeBuilder(): TreeBuilder
         {
             $treeBuilder = new TreeBuilder('acme_demo');
@@ -144,7 +147,7 @@ Fields
 For each option, define a field under the ``fields`` key:
 
 .. code-block:: yaml
-   :caption: Acme/DemoBundle/Resources/config/oro/system_configuration.yml
+    :caption: Acme/Bundle/DemoBundle/Resources/config/oro/system_configuration.yml
 
     system_configuration:
         fields:
@@ -187,29 +190,29 @@ To retrieve configuration values inside a controller, use the
 Use its ``get()`` method to retrieve the value of a setting:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Controller/DemoController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/DemoController.php
 
-   namespace Acme\DemoBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
-   use Oro\Bundle\ConfigBundle\Config\ConfigManager;
-   use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+    use Oro\Bundle\ConfigBundle\Config\ConfigManager;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-   class DemoController extends AbstractController
-   {
-       private ConfigManager $configManager;
+    class DemoController extends AbstractController
+    {
+        private ConfigManager $configManager;
 
-       public function __constructor(ConfigManager $configManager)
-       {
-           $this->configManager = $configManager;
-       }
+        public function __constructor(ConfigManager $configManager)
+        {
+            $this->configManager = $configManager;
+        }
 
-       public function demoAction()
-       {
-           $foo = $this->configManager->get('acme_demo.foo');
+        public function demoAction()
+        {
+            $foo = $this->configManager->get('acme_demo.foo');
 
-           // ...
-       }
-   }
+            // ...
+        }
+    }
 
 .. note::
 
@@ -262,33 +265,30 @@ To add a new config scope:
 
 1. Add scope manager.
 
-   A scope manager is a class that provides access to configuration attributes in a particular scope. This class should extend |AbstractScopeManager|.
+    A scope manager is a class that provides access to configuration attributes in a particular scope. This class should extend |AbstractScopeManager|.
 
-   In the simplest case, scope manager looks like this:
+    In the simplest case, scope manager looks like this:
 
-   .. code-block:: php
+    .. code-block:: php
 
-        namespace Acme\Bundle\SomeBundle\Config;
+        namespace Acme\Bundle\DemoBundle\Config;
 
         use Oro\Bundle\ConfigBundle\Config\AbstractScopeManager;
 
-        /**
-         * Test config scope
-         */
         class TestScopeManager extends AbstractScopeManager
         {
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
-            public function getScopedEntityName()
+            public function getScopedEntityName(): string
             {
                 return 'test'; //scope entity name
             }
 
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
-            public function getScopeId()
+            public function getScopeId(): ?int
             {
                 return 0; // scope entity id (can be different for different cases)
             }
@@ -298,21 +298,22 @@ To add a new config scope:
 
    .. code-block:: yaml
 
-        acme_test.scope.test:
-            class: Acme\Bundle\SomeBundle\Config\TestScopeManager
-            public: false
-            parent: oro_config.scope_manager.abstract
-            tags:
-                - { name: oro_config.scope, scope: test, priority: 50 }
+        services:
+            acme_demo.scope.test:
+                class: Acme\Bundle\DemoBundle\Config\TestScopeManager
+                public: false
+                parent: oro_config.scope_manager.abstract
+                tags:
+                    - { name: oro_config.scope, scope: test, priority: 50 }
 
-   After this, the scope `test` will be used when retrieving a config value. This scope will be between `global` and `user` scopes.
-   You can use this scope with the `oro_config.test` config provider.
+    After this, the scope `test` will be used when retrieving a config value. This scope will be between `global` and `user` scopes.
+    You can use this scope with the `oro_config.test` config provider.
 
 2. Change scope values via the UI.
 
-   To be able to change values for a new scope, add a new tree structure for this scope in the `system_configuration.yml` file, for example:
+    To be able to change values for a new scope, add a new tree structure for this scope in the `system_configuration.yml` file, for example:
 
-   .. code-block:: yaml
+    .. code-block:: yaml
 
         system_configuration:
            tree:
@@ -330,50 +331,51 @@ To add a new config scope:
                                                   - oro_locale.locale
         ...
 
-   In this example, a user is allowed to change the `locale` settings in the `test` scope.
+    In this example, a user is allowed to change the `locale` settings in the `test` scope.
 
-   Next, add a new form provider for the test scope:
+    Next, add a new form provider for the test scope:
 
-   .. code-block:: php
+    .. code-block:: php
 
-        namespace Acme\Bundle\SomeBundle\Provider;
+        namespace Acme\Bundle\DemoBundle\Provider;
 
         use Oro\Bundle\ConfigBundle\Provider\AbstractProvider;
 
         class TestConfigurationFormProvider extends AbstractProvider
         {
-            const TEST_TREE_NAME  = 'test_configuration';
+            protected const TEST_TREE_NAME = 'test_configuration';
 
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
-            public function getTree()
+            protected function getTreeName(): string
             {
                 return $this->getTreeData(self::TEST_TREE_NAME, self::CORRECT_FIELDS_NESTING_LEVEL);
             }
 
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
-            public function getJsTree()
+            protected function getParentCheckboxLabel(): string
             {
                 return $this->getJsTreeData(self::TEST_TREE_NAME, self::CORRECT_MENU_NESTING_LEVEL);
             }
         }
 
 
-   register it as a service:
+    register it as a service:
 
-   .. code-block:: yaml
+    .. code-block:: yaml
 
-          acme_test.provider.form_provider.test:
-              class: Acme\Bundle\SomeBundle\Provider\TestConfigurationFormProvider
-              parent: oro_config.provider.abstract_provider
-              lazy: true
+        services:
+            acme_demo.provider.form_provider.test:
+                class: Acme\Bundle\DemoBundle\Provider\TestConfigurationFormProvider
+                parent: oro_config.provider.abstract_provider
+                lazy: true
 
-   add a new action to manipulate data:
+    add a new action to manipulate data:
 
-   .. code-block:: php
+    .. code-block:: php
 
         /**
          * @Route(
@@ -386,7 +388,7 @@ To add a new config scope:
          */
         public function testConfigAction(Request $request, $activeGroup = null, $activeSubGroup = null)
         {
-            $provider = $this->get('acme_test.provider.form_provider.test');
+            $provider = $this->get('acme_demo.provider.form_provider.test');
 
             list($activeGroup, $activeSubGroup) = $provider->chooseActiveGroups($activeGroup, $activeSubGroup);
 
@@ -424,9 +426,9 @@ To add a new config scope:
             ];
         }
 
-   and the template:
+    and the template:
 
-   .. code-block:: twig
+    .. code-block:: twig
 
         {% extends '@OroConfig/configPage.html.twig' %}
         {% import '@OroUI/macros.html.twig' as UI %}
@@ -450,9 +452,9 @@ To enable one or several configuration options in behat:
 
 .. code-block:: bash
 
-   Given I enable configuration options:
-   | oro_config.some_option  |
-   | oro_config.some_option2 |
+    Given I enable configuration options:
+    | oro_config.some_option  |
+    | oro_config.some_option2 |
 
 Configuration Form Definition
 -----------------------------
@@ -518,16 +520,16 @@ Please note that a group configuration form can have several configurators, and 
         groups:
             # string syntax
             some_group:
-                configurator: Acme\Bundle\DemoBundle\SettingsFormConfigurator::buildForm
+                configurator: Acme\Bundle\DemoBundle\Form\Configurator\SettingsFormConfigurator::buildForm
             # array syntax
             some_group:
                 configurator:
-                    - Acme\Bundle\DemoBundle\SettingsFormConfigurator::buildForm
+                    - Acme\Bundle\DemoBundle\Form\Configurator\SettingsFormConfigurator::buildForm
                     - '@acme.settings_form_configurator::buildForm'
 
 .. code-block:: php
 
-    namespace Acme\Bundle\DemoBundle;
+    namespace Acme\Bundle\DemoBundle\Form\Configurator;
 
     use Symfony\Component\Form\FormBuilderInterface;
 
@@ -559,16 +561,16 @@ All handlers are executed only if a group configuration form does not have valid
         groups:
             # string syntax
             some_group:
-                handler: Acme\Bundle\DemoBundle\SettingsFormHandler::handle
+                handler: Acme\Bundle\DemoBundle\Form\Handler\SettingsFormHandler::handle
             # array syntax
             some_group:
                 handler:
-                    - Acme\Bundle\DemoBundle\SettingsFormHandler::handle
+                    - Acme\Bundle\DemoBundle\Form\Handler\SettingsFormHandler::handle
                     - '@acme.settings_form_handler::handle'
 
 .. code-block:: php
 
-    namespace Acme\Bundle\DemoBundle;
+    namespace Acme\Bundle\DemoBundle\Form\Handler;
 
     use Oro\Bundle\ConfigBundle\Config\ConfigChangeSet;
     use Oro\Bundle\ConfigBundle\Config\ConfigManager;
@@ -694,8 +696,7 @@ Create your own `DemoSearchProvider` that implements |SearchProviderInterface|.
 
     class DemoSearchProvider implements SearchProviderInterface
     {
-        /** @var ConfigBag */
-        private $configBag;
+        private ConfigBag $configBag;
 
         /**
          * @param ConfigBag $configBag
@@ -707,20 +708,20 @@ Create your own `DemoSearchProvider` that implements |SearchProviderInterface|.
         }
 
         /**
-         * Determines whether this provider is applicable for the given name
+         * @inheritDoc
          */
-        public function supports($name)
+        public function supports($name): bool
         {
             // example how the field can be determined
             return $this->configBag->getFieldsRoot($name) !== false;
         }
 
         /**
-         * Returns configuration search data by given name
+         * @inheritDoc
          */
-        public function getData($name)
+        public function getData($name): array
         {
-            // example how to to filter by `search_type`
+            // example how to filter by `search_type`
             $field = $this->configBag->getFieldsRoot($name);
             if ($field['search_type'] === 'your_own_search_type') {
                 // return your own search data for current field
@@ -734,13 +735,14 @@ Register your search provider as a service in the DI container with the `oro_con
 
 .. code-block:: yaml
 
-    acme_demo.configuration_search_provider.demo:
-        class: Acme\Bundle\DemoBundle\Provider\DemoSearchProvider
-        public: false
-        arguments:
-            - '@oro_config.config_bag'
-        tags:
-            - { name: oro_config.configuration_search_provider, priority: -20 }
+    services:
+        acme_demo.configuration_search_provider.demo:
+            class: Acme\Bundle\DemoBundle\Provider\DemoSearchProvider
+            public: false
+            arguments:
+                - '@oro_config.config_bag'
+            tags:
+                - { name: oro_config.configuration_search_provider, priority: -20 }
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

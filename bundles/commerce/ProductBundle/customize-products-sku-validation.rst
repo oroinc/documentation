@@ -15,57 +15,57 @@ There are 2 ways to override the `oro_product.sku.regex_pattern` parameter in yo
 
 1. Add the `oro_product.sku.regex_pattern` parameter to the `Resources/config/services.yml` file in your bundle.
     
-   .. code-block:: yaml
-      :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+    .. code-block:: yaml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
-
-       parameters:
-           ...
-           oro_product.sku.regex_pattern: '/^[a-z]*$/'
+        parameters:
+            # ...
+            oro_product.sku.regex_pattern: '/^[a-z]*$/'
 
 2. Write appropriate CompilerPass in your bundle
 
-   .. code-block:: php
-      :caption: src/Acme/DemoBundle/DependencyInjection/Compiler/OverrideProductSKUCompilerPass.php
+    .. code-block:: php
+        :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/Compiler/OverrideProductSKUCompilerPass.php
 
+        namespace Acme\Bundle\DemoBundle\DependencyInjection\Compiler;
 
-       namespace Acme\DemoBundle\DependencyInjection\Compiler;
+        use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+        use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-       use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
-       use Symfony\Component\DependencyInjection\ContainerBuilder;
-
-       class OverrideProductSKUCompilerPass implements CompilerPassInterface
-       {
-           public function process(ContainerBuilder $container)
-           {
-               $container->setParameter('oro_product.sku.regex_pattern', '/^[a-z]*$/');
-           }
-       }
-
+        class OverrideProductSKUCompilerPass implements CompilerPassInterface
+        {
+            /**
+             * @inheritDoc
+             */
+            public function process(ContainerBuilder $container)
+            {
+                $container->setParameter('oro_product.sku.regex_pattern', '/^[a-z]*$/');
+            }
+        }
     
-   and register this CompilerPass in the build() method of the bundle class
+    and register this CompilerPass in the build() method of the bundle class
    
-   .. code-block:: php
-      :caption: src/Acme/DemoBundle/DemoBundle.php
+    .. code-block:: php
+        :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
 
-       namespace DemoBundle;
+        namespace Acme\Bundle\DemoBundle;
 
-       use Acme\DemoBundle\DependencyInjection\Compiler\OverrideProductSKUCompilerPass;
-       use Symfony\Component\DependencyInjection\ContainerBuilder;
-       use Symfony\Component\HttpKernel\Bundle\Bundle;
+        use Acme\Bundle\DemoBundle\DependencyInjection\Compiler\OverrideProductSKUCompilerPass;
+        use Symfony\Component\DependencyInjection\ContainerBuilder;
+        use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-       class DemoBundle extends Bundle
-       {
-           /**
-            * {@inheritdoc}
-            */
-           public function build(ContainerBuilder $container): void
-           {
-               parent::build($container);
+        class AcmeDemoBundle extends Bundle
+        {
+            /**
+             * @inheritDoc
+             */
+            public function build(ContainerBuilder $container): void
+            {
+                parent::build($container);
 
-               $container->addCompilerPass(new OverrideProductSKUCompilerPass());
-           }
-       }
+                $container->addCompilerPass(new OverrideProductSKUCompilerPass());
+            }
+        }
 
 Override the Validation Message
 -------------------------------
@@ -73,8 +73,7 @@ Override the Validation Message
 If you need to change the default `'This value should contain only latin letters, numbers and symbols "-" or "_".'` validation message, override the `oro.product.sku.not_match_regex` translation key. To do that, add the appropriate translation to the `translations/validators.en.yml` file in your bundle:
 
 .. code-block:: yaml
-   :caption: translations/validators.en.yaml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/translations/validators.en.yaml
 
-
-    oro.product.sku.not_match_regex: This vaule should contain only latin letters in lower case.
+    oro.product.sku.not_match_regex: This value should contain only latin letters in lower case.
 

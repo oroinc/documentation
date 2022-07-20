@@ -11,9 +11,9 @@ Example:
 
     # Validator
     oro_acme.validator.acme_custom_grid_field_validator:
-        class: Acme\DemoBundle\Entity\Manager\Field\CustomGridFeildValidator
+        class: Acme\Bundle\DemoBundle\Entity\Manager\Field\CustomGridFeildValidator
         tags:
-            - {name: oro_entity.custom_grid_field_validator, entity_name: Oro_Bundle_AcmeBundle_Entity_Foo }
+            - {name: oro_entity.custom_grid_field_validator, entity_name: Acme_Bundle_DemoBundle_Entity_Foo }
 
 Each validator should implement ``Oro\Bundle\EntityBundle\Entity\Manager\Field\CustomGridFieldValidatorInterface`` and
 add tag description. 

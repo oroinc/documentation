@@ -38,7 +38,7 @@ The following is a white list of style inputs (`auto_rtl_inputs`) that have to b
 By default, all styles from Oro bundles are auto processed:
 
 .. code-block:: yaml
-   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/assets.yml
 
     auto_rtl_inputs:
         - 'bundles/oro*/**'

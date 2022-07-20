@@ -275,87 +275,86 @@ some of its objects to a set of users. Now you can control who can enter certain
 the controller method. Restricting access can be done in two different ways:
 
 #. Use the ``@Acl`` annotation on a controller method, providing the entity class name and the
-   permission to check for:
+    permission to check for:
 
-   .. code-block:: php-annotations
-      :caption: src/Acme/DemoBundle/Controller/ProductController.php
+    .. code-block:: php-annotations
+        :caption: src/Acme/Bundle/DemoBundle/Controller/ProductController.php
 
-       namespace Acme\DemoBundle\Controller;
+        namespace Acme\Bundle\DemoBundle\Controller;
 
-       use Oro\Bundle\SecurityBundle\Annotation\Acl;
-       use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+        use Oro\Bundle\SecurityBundle\Annotation\Acl;
+        use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-       class ProductController extends AbstractController
-       {
-           /**
-            * @Acl(
-            *   id="product_edit",
-            *   type="entity",
-            *   class="AcmeDemoBundle:Product",
-            *   permission="EDIT"
-            * )
-            */
-           public function editAction()
-           {
-               // ...
-           }
-       }
+        class ProductController extends AbstractController
+        {
+            /**
+             * @Acl(
+             *   id="product_edit",
+             *   type="entity",
+             *   class="AcmeDemoBundle:Product",
+             *   permission="EDIT"
+             * )
+             */
+            public function editAction()
+            {
+                // ...
+            }
+        }
 
 #. When you need to perform a particular check repeatedly, writing ``@Acl`` over and
-   over again becomes a tedious task. This becomes even a more serious issue when your requirements
-   change and you have to change a lot of ACLs.
+    over again becomes a tedious task. This becomes even a more serious issue when your requirements
+    change and you have to change a lot of ACLs.
 
-   The ACL configuration from the example above looks like this:
+    The ACL configuration from the example above looks like this:
 
-   .. code-block:: yaml
-      :caption: src/Acme/DemoBundle/Resources/config/oro/acls.yml
+    .. code-block:: yaml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
-       acls:
-           product_edit:
-               type: entity
-               class: AcmeDemoBundle:Product
-               permission: EDIT
+        acls:
+            product_edit:
+                type: entity
+                class: AcmeDemoBundle:Product
+                permission: EDIT
 
-   Annotation @AclAncestor enables you to reuse acl resources defined with the ACL annotation or described
-   in the acls.yml file. The name of the ACL resource is used as the parameter of this annotation:
+    Annotation @AclAncestor enables you to reuse acl resources defined with the ACL annotation or described
+    in the acls.yml file. The name of the ACL resource is used as the parameter of this annotation:
 
-   .. code-block:: php-annotations
-      :caption: src/Acme/DemoBundle/Controller/ProductController.php
+    .. code-block:: php-annotations
+        :caption: src/Acme/Bundle/DemoBundle/Controller/ProductController.php
 
-       namespace Acme\DemoBundle\Controller;
+        namespace Acme\Bundle\DemoBundle\Controller;
 
-       use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
-       use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+        use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
+        use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-       class ProductController extends AbstractController
-       {
-           /**
-            * @AclAncestor("product_edit")
-            */
-           public function editAction()
-           {
-               // ...
-           }
-       }
+        class ProductController extends AbstractController
+        {
+            /**
+             * @AclAncestor("product_edit")
+             */
+            public function editAction()
+            {
+                // ...
+            }
+        }
 
-   Sometimes you want to protect a controller method coming from code that you do not control.
-   Therefore, you cannot add the ``@AclAncestor`` annotation to it. Use the ``bindings`` key in the
-   YAML configuration of your ACL to define which method(s) should be protected:
+    Sometimes you want to protect a controller method coming from code that you do not control.
+    Therefore, you cannot add the ``@AclAncestor`` annotation to it. Use the ``bindings`` key in the
+    YAML configuration of your ACL to define which method(s) should be protected:
 
-   .. code-block:: yaml
-      :caption: src/Acme/DemoBundle/Resources/config/oro/acls.yml
+    .. code-block:: yaml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
-       acls:
-           product_edit:
-               type: entity
-               class: AcmeDemoBundle:Product
-               permission: EDIT
-               bindings:
-                   - class: Acme\DemoBundle\Controller\ProductController
-                     method: editAction
+        acls:
+            product_edit:
+                type: entity
+                class: AcmeDemoBundle:Product
+                permission: EDIT
+                bindings:
+                    - { class: Acme\Bundle\DemoBundle\Controller\ProductController, method: editAction }
 
 
-   You can read detailed explanations for all available YAML configuration options :ref:`in the reference section <access-control-lists>`.
+    You can read detailed explanations for all available YAML configuration options :ref:`in the reference section <access-control-lists>`.
 
 **Using Param Converters**
 
@@ -374,7 +373,6 @@ You can protect a datasource with ACL by adding the acl_resource parameter under
 
 .. code-block:: php
 
-
     datagrids:
         DATAGRID_NAME_HERE:
             source:
@@ -390,11 +388,11 @@ the set of domain objects the user is granted access to. To achieve this, use th
 provided by the OroSecurityBundle:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Controller/DemoController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/DemoController.php
 
-    namespace Acme\DemoBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
-    use Acme\DemoBundle\Entity\Product;
+    use Acme\Bundle\DemoBundle\Entity\Product;
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
     use Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper;
 
@@ -437,9 +435,9 @@ Sometimes it is not possible to do an ACL check in the controller using annotati
 In this case, you can use the ``isGranted`` function:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Controller/DemoController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/DemoController.php
 
-    namespace Acme\DemoBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
     use Symfony\Component\Security\Core\Exception\AccessDeniedException;
@@ -471,7 +469,7 @@ The main entry point is `isGranted` method:
 
 **$attribute** can be a role name, permission name, an ACL annotation id, a string in format "permission;descriptor" (e.g., "VIEW;entity:Acme\DemoBundle\Entity\AcmeEntity" or "EXECUTE;action:acme_action") or some other identifiers depending on registered security voters.
 
-**$subject** can be an entity type descriptor (e.g., "entity:Acme\DemoBundle\Entity\AcmeEntity" or "action:some_action"), an entity object, instance of `Symfony\Component\Security\Acl\Domain\ObjectIdentity`, `Oro\Bundle\SecurityBundle\Acl\Domain\DomainObjectReference`, `Oro\Bundle\SecurityBundle\Acl\Domain\DomainObjectWrapper` or `Symfony\Component\Security\Acl\Voter\FieldVote`.
+**$object** can be an entity type descriptor (e.g., "entity:Acme/Bundle/DemoBundle/Entity/AcmeEntity" or  "action:some_action"), an entity object, instance of `ObjectIdentity`, `DomainObjectReference` or `DomainObjectWrapper`
 
 **Examples**
 
@@ -479,31 +477,27 @@ Checking access to some ACL annotation resource
 
 .. code-block:: php
 
-
-   $this->authorizationChecker->isGranted('some_resource_id')
+    $this->authorizationChecker->isGranted('some_resource_id')
 
 Checking VIEW access to the entity by class name
 
 .. code-block:: php
 
-
-   $this->authorizationChecker->isGranted('VIEW', 'entity:' . MyEntity::class);
+    $this->authorizationChecker->isGranted('VIEW', 'entity:' . MyEntity::class);
 
 
 Checking VIEW access to the entity's field
 
 .. code-block:: php
 
-
-   $this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, $fieldName));
+    $this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, $fieldName));
 
 
 Checking ASSIGN access to the entity object
 
 .. code-block:: php
 
-
-   $this->authorizationChecker->isGranted('ASSIGN', $myEntity);
+    $this->authorizationChecker->isGranted('ASSIGN', $myEntity);
 
 
 Checking access is performed in the following way: **Object-Scope**->**Class-Scope**->**Default Permissions**.
@@ -512,8 +506,7 @@ For example, we are checking View permission to $myEntity object of MyEntity cla
 
 .. code-block:: php
 
-
-   $this->authorizationChecker->isGranted('VIEW', $myEntity);
+    $this->authorizationChecker->isGranted('VIEW', $myEntity);
 
 the first ACL for `$myEntity` object is checked; if nothing is found, then it checks ACL for `MyEntity` class and if no records are found, finally checks the Default(root) permissions.
 
@@ -547,7 +540,7 @@ certain part of your application. To achieve this, use the special ``action`` ty
         }
 
     .. code-block:: yaml
-       :caption: src/Acme/DemoBundle/Resources/config/oro/acls.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
         acls:
             protected_action:
@@ -560,7 +553,6 @@ Manual Access Check on an Object Field
 Developer can check access to the given entity field by passing instance `FieldVote` class to the `isGranted` method of the |Authorization Checker|:
 
 .. code-block:: php
-
 
     $entity = $repository->findOneBy('id' => 10);
 
@@ -595,11 +587,11 @@ to the `ignore_preferred_organization_tokens` parameter of the `OrganizationPro`
 of your bundle:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/app.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
 
-   oro_organization_pro:
+    oro_organization_pro:
         ignore_preferred_organization_tokens:
-            - Acme\Demo\Your\Token\Class
+            - Acme\Bundle\DemoBundle\Your\Token\Class
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

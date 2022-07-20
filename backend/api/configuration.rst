@@ -5,13 +5,13 @@ Configuration Reference
 
 The configuration declares all aspects related to a specific entity. The configuration should be placed in `Resources/config/oro/api.yml` to be automatically loaded.
 
-All entities, except custom entities, dictionaries, and enumerations are inaccessible via the API. To make an entity available via the data, enable it directly. For example, to make the ``Acme\Bundle\ProductBundle\Product`` entity available via the API, use the following configuration:
+All entities, except custom entities, dictionaries, and enumerations are inaccessible via the API. To make an entity available via the data, enable it directly. For example, to make the ``Acme\Bundle\DemoBundle\Product`` entity available via the API, use the following configuration:
 
 .. code-block:: yaml
 
     api:
         entities:
-            Acme\Bundle\ProductBundle\Product: ~
+            Acme\Bundle\DemoBundle\Product: ~
 
 If an auto-generated alias for your entity does not look good enough for you, change it in `Resources/config/oro/entity.yml`. For more details, see the :ref:`entity aliases documentation <entity-aliases>`.
 
@@ -53,26 +53,25 @@ The top level configuration example:
 
     api:
         entity_aliases:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
-                ...
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                # ...
 
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 exclude:
-                ...
+                    # ...
                 fields:
-                    ...
+                    # ...
                 filters:
                     fields:
-                        ...
+                        # ...
                 sorters:
                     fields:
-                        ...
+                        # ...
                 actions:
-                    ...
+                    # ...
                 subresources:
-                    ...
-            ...
+                    # ...
 
 
 .. _web-api--exclude-option:
@@ -88,9 +87,9 @@ Example:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity1:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 exclude: true # exclude the entity from the API
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity2:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity2:
                 fields:
                     field1:
                         exclude: true # exclude the field from the API
@@ -103,7 +102,7 @@ Example:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity1:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 sorters:
                     fields:
                         field1:
@@ -120,9 +119,9 @@ Please note that the ``exclude`` option is applicable only for the API. To exclu
     oro_entity:
         exclusions:
             # whole entity exclusion
-            - { entity: Acme\Bundle\AcmeBundle\Entity\AcmeEntity1 }
-            # exclude field1 of Acme\Bundle\AcmeBundle\Entity\Entity2 entity
-            - { entity: Acme\Bundle\AcmeBundle\Entity\AcmeEntity2, field: field1 }
+            - { entity: Acme\Bundle\DemoBundle\Entity\SomeEntity1 }
+            # exclude field1 of Acme\Bundle\DemoBundle\Entity\Entity2 entity
+            - { entity: Acme\Bundle\DemoBundle\Entity\SomeEntity2, field: field1 }
 
 .. _web-api--entity-aliases-config:
 
@@ -145,7 +144,7 @@ Please see the :ref:`Entity aliases documentation <entity-aliases>` for more det
 
     api:
         entity_aliases:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 alias: acmeentity
                 plural_alias: acmeentities
 
@@ -157,10 +156,10 @@ To completely replace an ORM entity with a model in the API, use the ``override_
 
     api:
         entity_aliases:
-            Acme\Bundle\AcmeBundle\Api\Model\AcmeModel:
+            Acme\Bundle\DemoBundle\Api\Model\SomeModel:
                 alias: acmeentity
                 plural_alias: acmeentities
-                override_class: Acme\Bundle\AcmeBundle\Entity\AcmeEntity
+                override_class: Acme\Bundle\DemoBundle\Entity\SomeEntity
 
 .. note:: The model class must be a subclass of the overridden entity class.
 
@@ -172,9 +171,9 @@ To completely replace an ORM entity with a model in the API, use the ``override_
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Api\Model\AcmeModel: ~
+            Acme\Bundle\DemoBundle\Api\Model\SomeModel: ~
 
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 fields:
                     target:
                         data_type: association:manyToOne
@@ -185,7 +184,7 @@ To completely replace an ORM entity with a model in the API, use the ``override_
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Api\Model\AcmeModel: ~
+            Acme\Bundle\DemoBundle\Api\Model\SomeModel: ~
                 fields:
                     target:
                         data_type: association:manyToOne
@@ -253,8 +252,8 @@ By default, the following form options are set:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
-                documentation_resource: '@AcmeAcmeBundle/Resources/doc/api/acme_entity.md'
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                documentation_resource: '@AcmeDemoBundle/Resources/doc/api/some_entity.md'
                 inherit: false
                 exclusion_policy: all
                 max_results: 25
@@ -265,9 +264,9 @@ By default, the following form options are set:
                     - HINT_TRANSLATABLE
                     - { name: HINT_FILTER_BY_CURRENT_USER }
                     - { name: HINT_FORCE_PARTIAL_LOAD, value: false }
-                    - { name: HINT_CUSTOM_OUTPUT_WALKER, value: 'Acme\Bundle\AcmeBundle\AST_Walker_Class'}
+                    - { name: HINT_CUSTOM_OUTPUT_WALKER, value: 'Acme\Bundle\DemoBundle\AST_Walker_Class'}
                 excluded: false
-                form_type: Acme\Bundle\AcmeBundle\Api\Form\Type\AcmeEntityType
+                form_type: Acme\Bundle\DemoBundle\Api\Form\Type\SomeEntityType
                 form_options:
                     validation_groups: ['Default', 'api', 'my_group']
                 form_event_subscriber: acme.api.form_listener.test_entity
@@ -311,7 +310,7 @@ This section describes configuration of entity fields.
 
    api:
     entities:
-        Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+        Acme\Bundle\DemoBundle\Entity\SomeEntity:
             fields:
                 # Exclude a field
                 field1:
@@ -349,12 +348,12 @@ This section describes configuration of entity fields.
                 # A to-one association
                 field7:
                     data_type: integer # the data type of an identifier field of the target
-                    target_class: Acme\Bundle\AcmeBundle\Api\Model\AcmeTargetEntity
+                    target_class: Acme\Bundle\DemoBundle\Api\Model\SomeTargetEntity
 
                 # A to-many association
                 field8:
                     data_type: integer # the data type of an identifier field of the target
-                    target_class: Acme\Bundle\AcmeBundle\Api\Model\AcmeTargetEntity
+                    target_class: Acme\Bundle\DemoBundle\Api\Model\SomeTargetEntity
                     target_type: collection
 
                 # A computed field
@@ -367,7 +366,7 @@ This section describes configuration of entity fields.
                 field10:
                     post_processor: twig
                     post_processor_options:
-                        template: '@Acme/Api/Field/some_template.html.twig'
+                        template: '@AcmeDemo/Api/Field/some_template.html.twig'
 
 .. _fields-special-data-types:
 
@@ -428,7 +427,7 @@ This section describes fields by which the result data can be filtered. It conta
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 filters:
                     exclusion_policy: all
                     fields:
@@ -479,7 +478,7 @@ This section describes fields by which the result data can be sorted. It contain
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 sorters:
                     fields:
                         field1:
@@ -561,7 +560,7 @@ Disable all action for an entity:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 # this entity does not have own API resource
                 actions: false
 
@@ -571,7 +570,7 @@ Disable the ``delete`` action for an entity:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     delete:
                         exclude: true
@@ -582,7 +581,7 @@ You can use a short syntax:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     delete: false
 
@@ -592,7 +591,7 @@ Set a custom ACL resource for the ``get_list`` action:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     get_list:
                         acl_resource: acme_view_resource
@@ -603,7 +602,7 @@ Turn off the access checks for the ``get`` action:
 
     api:
         entities:
-           Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+           Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     get:
                         acl_resource: ~
@@ -614,7 +613,7 @@ Add an additional status code for the ``delete`` action:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     delete:
                         status_codes:
@@ -626,7 +625,7 @@ or
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     delete:
                         status_codes:
@@ -639,7 +638,7 @@ Remove existing status code for the ``delete`` action:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     delete:
                         status_codes:
@@ -651,7 +650,7 @@ or
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     delete:
                         status_codes:
@@ -664,7 +663,7 @@ Exclude a field for the ``update`` action:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 actions:
                     update:
                         fields:

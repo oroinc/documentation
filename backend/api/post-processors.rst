@@ -28,7 +28,7 @@ To create a new post processor, you need to do the following:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\ProductBundle\Api\PostProcessor;
+    namespace Acme\Bundle\DemoBundle\Api\PostProcessor;
 
     use Oro\Bundle\ApiBundle\PostProcessor\PostProcessorInterface;
 
@@ -48,7 +48,7 @@ To create a new post processor, you need to do the following:
 .. code-block:: yaml
 
     acme.api.post_processor.some:
-        class: Acme\Bundle\ProductBundle\Api\PostProcessor\SomePostProcessor
+        class: Acme\Bundle\DemoBundle\Api\PostProcessor\SomePostProcessor
         tags:
             - { name: oro.api.post_processor, alias: some }
 
@@ -57,7 +57,7 @@ To create a new post processor, you need to do the following:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\ProductBundle\Api\PostProcessor;
+    namespace Acme\Bundle\DemoBundle\Api\PostProcessor;
 
     use Oro\Bundle\ApiBundle\Util\ConfigUtil;
     use Symfony\Component\Config\Definition\Builder\NodeBuilder;
@@ -98,7 +98,7 @@ To create a new post processor, you need to do the following:
 .. code-block:: yaml
 
     acme.api.config_extension.post_processor.some:
-        class: Acme\Bundle\ProductBundle\Api\PostProcessor\SomePostProcessorConfigExtension
+        class: Acme\Bundle\DemoBundle\Api\PostProcessor\SomePostProcessorConfigExtension
 
 5. Register the config extension in `Resources/config/oro/app.yml` in your bundle
    or `config/config.yml` of your application.

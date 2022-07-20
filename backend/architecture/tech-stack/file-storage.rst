@@ -149,38 +149,50 @@ as the configuration factory for the `oro_gaufrette` bundle in your bundle class
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AppBundle\DependencyInjection\Factory;
+    namespace Acme\Bundle\DemoBundle\DependencyInjection\Factory;
 
     use Oro\Bundle\GaufretteBundle\DependencyInjection\Factory\ConfigurationFactoryInterface;
 
     class SomeAdapterConfigurationFactory implements ConfigurationFactoryInterface
     {
+        /**
+         * @inheritDoc
+         */
         public function getAdapterConfiguration(string $configString): array
         {
+            // implement logic here
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getKey(): string
         {
+            // implement logic here
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getHint(): string
         {
+            // implement logic here
         }
     }
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AppBundle;
+    namespace Acme\Bundle\DemoBundle;
 
-    use Acme\Bundle\AppBundle\DependencyInjection\Factory\SomeAdapterConfigurationFactory;
+    use Acme\Bundle\DemoBundle\DependencyInjection\Factory\SomeAdapterConfigurationFactory;
     use Oro\Bundle\GaufretteBundle\DependencyInjection\OroGaufretteExtension;
     use Symfony\Component\DependencyInjection\ContainerBuilder;
     use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-    class AcmeAppBundle extends Bundle
+    class AcmeDemoBundle extends Bundle
     {
         /**
-         * {@inheritDoc}
+         * @inheritDoc
          */
         public function build(ContainerBuilder $container): void
         {
@@ -317,7 +329,7 @@ in your bundle and add it into the Bundle class:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\SomeBundle\DependencyInjection\Compiler;
+    namespace Acme\Bundle\DemoBundle\DependencyInjection\Compiler;
 
     use Oro\Bundle\GaufretteBundle\Command\MigrateFileStorageCommand;
     use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
@@ -330,9 +342,9 @@ in your bundle and add it into the Bundle class:
     class MigrateFileStorageCommandCompilerPass implements CompilerPassInterface
     {
         /**
-         * {@inheritDoc}
+         * @inheritDoc
          */
-        public function process(ContainerBuilder $container): void
+        public function process(ContainerBuilder $container)
         {
             $container->getDefinition(MigrateFileStorageCommand::class)
                 // adds the mapping to migrate path /path/to/application/var/some_path

@@ -23,14 +23,14 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 
    .. code-block:: php
 
-       namespace Acme\Bundle\SomeBundle;
+       namespace Acme\Bundle\DemoBundle;
 
        use Symfony\Component\DependencyInjection\ContainerBuilder;
        use Symfony\Component\HttpKernel\Bundle\Bundle;
 
        use Oro\Bundle\UIBundle\DependencyInjection\Compiler\DynamicAssetVersionPass;
 
-       class AcmeSomeBundle extends Bundle
+       class DemoBundle extends Bundle
        {
            /**
             * {@inheritdoc}
@@ -49,7 +49,7 @@ For example, let us assume that `acme` asset package should use the dynamic vers
 
    .. code-block:: php
 
-        namespace Acme\Bundle\SomeBundle\Controller;
+        namespace Acme\Bundle\DemoBundle\Controller;
 
         use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 

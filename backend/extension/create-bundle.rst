@@ -24,11 +24,47 @@ in the ``/src`` directory. We need to create the corresponding directory structu
 
     use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-    class DemoBundle extends Bundle
+    class AcmeDemoBundle extends Bundle
     {
     }
 
 Basically, it is a regular Symfony bundle. The only difference is in the way it will be enabled (see chapter `Enable a Bundle`_).
+
+Create a Bundle Service Container Extension
+-------------------------------------------
+
+For a load configuration files you need to create Service Container Extension. See |Symfony Configuration Files|
+
+.. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/AcmeDemoExtension.php
+
+    namespace Acme\Bundle\DemoBundle\DependencyInjection;
+
+    use Symfony\Component\Config\FileLocator;
+    use Symfony\Component\DependencyInjection\ContainerBuilder;
+    use Symfony\Component\DependencyInjection\Extension\Extension;
+    use Symfony\Component\DependencyInjection\Loader;
+
+    class AcmeDemoExtension extends Extension
+    {
+        /**
+         * @inheritDoc
+         */
+       public function load(array $configs, ContainerBuilder $container)
+        {
+            $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
+            // register services configuration
+            $loader->load('services.yml');
+            // register other configurations in the same way
+        }
+    }
+
+Create basic ``Resources/config/services.yml`` for define service parameters. See |Symfony Service Parameters|
+
+.. code-block:: yaml
+  :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+
+   services:
 
 
 .. Create bundle automatically
@@ -98,7 +134,7 @@ Now you have all the required files to enable the new bundle. To enable the bund
 
    .. code-block:: none
 
-      php bin/console debug:container --parameter=kernel.bundles --format=json | grep AcmeNewBundle
+      php bin/console debug:container --parameter=kernel.bundles --format=json | grep AcmeDemoBundle
 
    .. note::
 
@@ -108,7 +144,7 @@ Now you have all the required files to enable the new bundle. To enable the bund
 
    .. code-block:: none
 
-      "AcmeNewBundle": "Acme\\Bundle\\DemoBundle\\AcmeDemoBundle",
+      "AcmeDemoBundle": "Acme\\Bundle\\DemoBundle\\AcmeDemoBundle",
 
 References
 ----------

@@ -15,27 +15,42 @@ Usually, you do not need to provide a predefined set of associations between the
 
 .. code-block:: php
 
-    ...
-    class AcmeBundle implements Migration, CommentExtensionAwareInterface
-    {
-        protected CommentExtension $comment;
+    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_5;
 
-        public function setCommentExtension(CommentExtension $commentExtension)
+    use Doctrine\DBAL\Schema\Schema;
+    use Oro\Bundle\CommentBundle\Migration\Extension\CommentExtension;
+    use Oro\Bundle\CommentBundle\Migration\Extension\CommentExtensionAwareInterface;
+    use Oro\Bundle\MigrationBundle\Migration\Migration;
+    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+    class AddCommentAssociation  implements Migration, CommentExtensionAwareInterface
+    {
+        protected CommentExtension $commentExtension;
+
+        /**
+         * @inheritDoc
+         */
+        public function setCommentExtension(CommentExtension $commentExtension): void
         {
-            $this->comment = $commentExtension;
+            $this->commentExtension = $commentExtension;
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function up(Schema $schema, QueryBag $queries)
         {
             self::addComment($schema, $this->comment);
         }
 
-        public static function addComment(Schema $schema, CommentExtension $commentExtension)
+        /**
+         * @param Schema $schema
+         * @param CommentExtension $commentExtension
+         * @return void
+         */
+        public static function addComment(Schema $schema, CommentExtension $commentExtension): void
         {
-            $commentExtension->addCommentAssociation($schema, 'acme_entity');
+            $commentExtension->addCommentAssociation($schema, 'acme_demo_entity');
         }
     }
 
@@ -48,19 +63,25 @@ If you created the new activity entity and want to comment on it in the activity
 
 .. code-block:: php
 
-    class AcmeActivityListProvider implements ActivityListProviderInterface, CommentProviderInterface
+    namespace Acme\Bundle\DemoBundle\Provider;
+
+    // ...
+    use Oro\Bundle\ActivityListBundle\Model\ActivityListProviderInterface;
+    use Oro\Bundle\CommentBundle\Model\CommentProviderInterface;
+
+    class SomeActivityListProvider implements ActivityListProviderInterface, CommentProviderInterface
     {
-    ...
-    /**
-     * {@inheritdoc}
-     */
-    public function isCommentsEnabled($entityClass)
-    {
-        return
-            $this->configManager->hasConfig($entityClass)
-            && $this->configManager->getEntityConfig('comment', $entityClass)->is('enabled');
+        // ...
+
+        /**
+         * @inheritDoc
+         */
+        public function isCommentsEnabled($entityClass)
+        {
+            return $this->configManager->hasConfig($entityClass)
+                && $this->configManager->getEntityConfig('comment', $entityClass)->is('enabled');
+        }
     }
-    ...
 
 The comment widget will be rendered into ```div.message .comment``` node of the js/activityItemTemplate.html.twig template.
 
@@ -73,4 +94,4 @@ Maximum file size will be taken from **System > Entity Management > Comment > At
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

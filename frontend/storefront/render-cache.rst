@@ -144,7 +144,7 @@ users for 10 minutes. The cache varies for different products and is tagged
 with the ``product_ID`` tag:
 
 .. code-block:: yaml
-   :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
    layout:
      actions:
@@ -182,7 +182,7 @@ settings.
 - Cache the whole ``product_view_container`` block forever, but render the ``product_price_container`` block dynamically:
 
   .. code-block:: yaml
-     :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
+     :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
      layout:
        actions:
@@ -203,7 +203,7 @@ settings.
 -  Cache the whole ``product_view_container`` block for 1 day, but the ``product_price_container`` block only for 15 minutes:
 
    .. code-block:: yaml
-      :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
       layout:
         actions:
@@ -254,9 +254,9 @@ interface and mark it with the ``layout_cache.extension`` DI tag.
 **For example**, vary all the cache items by a day of the week:
 
 .. code-block:: php
-   :caption: src/AcmeDemoBundle/Cache/Extension/DayOfWeekExtension.php
+   :caption: src/Acme/Bundle/DemoBundle/Cache/Extension/DayOfWeekExtension.php
 
-   namespace AcmeDemoBundle\Cache\Extension;
+   namespace Acme\Bundle\DemoBundle\Cache\Extension;
 
    use Oro\Bundle\LayoutCacheBundle\Cache\Extension\RenderCacheExtensionInterface;
 
@@ -269,11 +269,11 @@ interface and mark it with the ``layout_cache.extension`` DI tag.
    }
 
 .. code-block:: yaml
-   :caption: src/AcmeDemoBundle/Resources/config/services.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
 
    services:
-     AcmeDemoBundle\Cache\Extension\DayOfWeekExtension:
+     Acme\Bundle\DemoBundle\Cache\Extension\DayOfWeekExtension:
        tags: [layout_cache.extension]
 
 Cache Layout Blocks with PHP
@@ -289,9 +289,9 @@ interface and mark it with the ``layout_cache.metadata_provider`` DI tag.
 logged in:
 
 .. code-block:: php
-   :caption: src/AcmeDemoBundle/Cache/Metadata/DisableCacheForLoggedInUsersCacheMetadataProvider.php
+   :caption: src/Acme/Bundle/DemoBundle/Cache/Metadata/DisableCacheForLoggedInUsersCacheMetadataProvider.php
 
-   namespace AcmeDemoBundle\Cache\Cache\Metadata;
+   namespace Acme\Bundle\DemoBundle\Cache\Cache\Metadata;
 
    use Oro\Bundle\LayoutCacheBundle\Cache\Metadata\CacheMetadataProviderInterface;
    use Oro\Bundle\LayoutCacheBundle\Cache\Metadata\LayoutCacheMetadata;
@@ -313,10 +313,10 @@ logged in:
    }
 
 .. code-block:: yaml
-   :caption: src/AcmeDemoBundle/Resources/config/services.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
    services:
-     AcmeDemoBundle\Cache\Cache\Metadata\DisableCacheForLoggedInUsersCacheMetadataProvider:
+     Acme\Bundle\DemoBundle\Cache\Cache\Metadata\DisableCacheForLoggedInUsersCacheMetadataProvider:
        tags: [layout_cache.metadata_provider]
 
 Invalidating Cache by Tags
@@ -331,7 +331,7 @@ product information when product has been updated:
 1. Tag the block that renders product information
 
    .. code-block:: yaml
-      :caption: src/AcmeDemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/cache_product_view.yml
 
       layout:
         actions:
@@ -346,9 +346,9 @@ product information when product has been updated:
    on post update event:
 
    .. code-block:: php
-      :caption: src/AcmeDemoBundle/EventListener/ProductUpdateListener.php
+      :caption: src/Acme/Bundle/DemoBundle/EventListener/ProductUpdateListener.php
 
-      namespace AcmeDemoBundle\EventListener;
+      namespace Acme\Bundle\DemoBundle\EventListener;
 
       use Doctrine\ORM\Event\LifecycleEventArgs;
       use Oro\Bundle\ProductBundle\Entity\Product;
@@ -376,7 +376,7 @@ product information when product has been updated:
 3. Register the listener in a service container:
 
    .. code-block:: yaml
-      :caption: src/AcmeDemoBundle/Resources/config/services.yml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
       services:
         Oro\Bundle\LayoutCacheBundle\EventListener\ProductUpdateListener:

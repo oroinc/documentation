@@ -98,7 +98,7 @@ development adopted for Oro needs.
 
 .. code-block:: text
 
-    AcmeBundle/Resources/public
+    Acme/Bundle/DemoBundle/Resources/public
     ├── css
     │   └── style.css
     ├── templates // frontend templates

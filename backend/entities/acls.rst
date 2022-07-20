@@ -19,13 +19,15 @@ In order to have your entity available in the admin UI to be able to assign perm
 users you have to enable ACLs for these entities using the ``@Config`` annotation:
 
 .. code-block:: php
-   :caption: src/AppBundle/Entity/Task.php
+   :caption: src/Acme/Bundle/DemoBundle/Entity/Task.php
 
-    namespace AppBundle\Entity;
+    namespace Acme\Bundle\DemoBundle\Entity;
 
+    use Doctrine\ORM\Mapping as ORM;
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
 
     /**
+     * @ORM\Entity
      * @Config(
      *     defaultValues={
      *         "security"={
@@ -37,7 +39,6 @@ users you have to enable ACLs for these entities using the ``@Config`` annotatio
      */
     class Task
     {
-        // ...
     }
 
 After you have done this and have cleared the cache you can toggle all kinds of permission checks
@@ -60,11 +61,11 @@ You have two options to define your custom access control lists:
 #. In your controller class, you can use the ``@Acl`` annotation:
 
    .. code-block:: php
-      :caption: src/AppBundle/Controller/TaskController.php
+      :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
 
-       namespace AppBundle\Controller;
+       namespace Acme\Bundle\DemoBundle\Controller;
 
-       use AppBundle\Entity\Task;
+       use Acme\Bundle\DemoBundle\Entity\Task;
        use Oro\Bundle\SecurityBundle\Annotation\Acl;
        use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
        use Symfony\Component\HttpFoundation\Request;
@@ -73,9 +74,9 @@ You have two options to define your custom access control lists:
        {
            /**
             * @Acl(
-            *   id="app_task_view",
+            *   id="acme_task_view",
             *   type="entity",
-            *   class="AppBundle:Task",
+            *   class="AcmeDemoBundle:Task",
             *   permission="VIEW"
             * )
             */
@@ -86,9 +87,9 @@ You have two options to define your custom access control lists:
 
            /**
             * @Acl(
-            *   id="app_task_create",
+            *   id="acme_task_create",
             *   type="entity",
-            *   class="AppBundle:Task",
+            *   class="AcmeDemoBundle:Task",
             *   permission="CREATE"
             * )
             */
@@ -99,9 +100,9 @@ You have two options to define your custom access control lists:
 
            /**
             * @Acl(
-            *   id="app_task_edit",
+            *   id="acme_task_edit",
             *   type="entity",
-            *   class="AppBundle:Task",
+            *   class="AcmeDemoBundle:Task",
             *   permission="EDIT"
             * )
             */
@@ -121,27 +122,27 @@ You have two options to define your custom access control lists:
    file named ``acls.yml``:
 
    .. code-block:: yaml
-      :caption: src/AppBundle/Resources/config/oro/acls.yml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
        acls:
-           app_task_create:
+           acme_task_create:
                type: entity
-               class: AppBundle\Entity\Task
+               class: Acme\Bundle\DemoBundle\Entity\Task
                permission: CREATE
 
-           app_task_delete:
+           acme_task_delete:
                type: entity
-               class: AppBundle\Entity\Task
+               class: Acme\Bundle\DemoBundle\Entity\Task
                permission: DELETE
 
-           app_task_edit:
+           acme_task_edit:
                type: entity
-               class: AppBundle\Entity\Task
+               class: Acme\Bundle\DemoBundle\Entity\Task
                permission: EDIT
 
-           app_task_view:
+           acme_task_view:
                type: entity
-               class: AppBundle\Entity\Task
+               class: Acme\Bundle\DemoBundle\Entity\Task
                permission: VIEW
 
 .. sidebar:: Security Actions that Are not Related to an Entity
@@ -151,9 +152,9 @@ You have two options to define your custom access control lists:
     ``entity``:
 
     .. code-block:: php
-       :caption: src/AppBundle/Controller/PageController.php
+        :caption: src/Acme/Bundle/DemoBundle/Controller/PageController.php
 
-        namespace AppBundle\Controller;
+        namespace Acme\Bundle\DemoBundle\Controller;
 
         use Oro\Bundle\SecurityBundle\Annotation\Acl;
         use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -162,7 +163,7 @@ You have two options to define your custom access control lists:
         {
             /**
              * @Acl(
-             *     id="app_static_pages",
+             *     id="acme_static_pages",
              *     type="action"
              * )
              */
@@ -170,21 +171,19 @@ You have two options to define your custom access control lists:
             {
                 // ...
             }
-
-            // ...
         }
 
     When configuring the ACL using the YAML config format, you also have to set the controller to
     bind the ACL to using the ``bindings`` option:
 
     .. code-block:: yaml
-       :caption: src/AppBundle/Resources/config/oro/acls.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
         acls:
-            app_static_pages:
+            acme_static_pages:
                 type: action
                 bindings:
-                    class: AppBundle\Controller\PageController
+                    class: Acme\Bundle\DemoBundle\Controller\PageController
                     method: showAction
 
     .. seealso::
@@ -207,8 +206,8 @@ PHP code you can use the ``isGranted()`` method of the ``security.authorization_
 
     $authorizationChecker = $this->get('security.authorization_checker');
 
-    if ($authorizationChecker->isGranted('app_static_pages')) {
-        // do something when the user is granted permissions for the app_static_pages ACL
+    if ($authorizationChecker->isGranted('acme_static_pages')) {
+        // do something when the user is granted permissions for the acme_static_pages ACL
     }
 
 You can set the second parameter to check access on Object level (with Access Level check):
@@ -220,8 +219,8 @@ You can set the second parameter to check access on Object level (with Access Le
 
     $authorizationChecker = $this->get('security.authorization_checker');
 
-    if ($authorizationChecker->isGranted('app_task_edit', $taskEntity)) {
-         // do something when the user is granted permissions for the app_task_edit ACL of the entity in $taskEntity
+    if ($authorizationChecker->isGranted('acme_task_edit', $taskEntity)) {
+         // do something when the user is granted permissions for the acme_task_edit ACL of the entity in $taskEntity
     }
 
 In case if you does not have proper ACL annotation, you can set the first parameter as the
@@ -249,14 +248,14 @@ Use the ``acl_resource_id`` option to hide navigation items from users who are n
 the action being linked. The value of this option is the name of the ACL to check for:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/navigation.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
 
     menu_config:
         items:
             task_list:
                 label: Tasks
-                route: app_task_index
-                acl_resource_id: app_task_view
+                route: acme_task_index
+                acl_resource_id: acme_task_view
 
 Protecting Controllers Refering to Existing ACLs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -266,25 +265,23 @@ controllers with them in a single step using the ``@Acl`` annotation. However, y
 to an existing access control list using the ``@AclAncestor`` annotation:
 
 .. code-block:: php
-   :caption: src/AppBundle/Controller/TaskController.php
+   :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
 
-    namespace AppBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
-    use AppBundle\Entity\Task;
+    use Acme\Bundle\DemoBundle\Entity\Task;
     use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
     class TaskController extends AbstractController
     {
         /**
-         * @AclAncestor("app_task_view")
+         * @AclAncestor("acme_task_view")
          */
         public function viewAction(Task $task)
         {
             // ...
         }
-
-        // ...
     }
 
 Show Parts of Templates Based on Permissions
@@ -294,10 +291,10 @@ Inside your templates you can use the ``is_granted()`` Twig function to check fo
 permissions to hide parts of your views for users who do not have the required permissions:
 
 .. code-block:: html+jinja
-   :caption: src/AppBundle/Resources/views/Task/update.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/update.html.twig
 
     {% block someBlock %}
-        {% if is_granted('app_task_edit') %}
+        {% if is_granted('acme_task_edit') %}
             Some info if access is granted
         {% endif %}
     {% endblock %}
@@ -309,11 +306,11 @@ In case if you want to check access more deeply, you can set the entity instance
 ``is_granted()`` function:
 
 .. code-block:: html+jinja
-   :caption: src/AppBundle/Resources/views/Task/update.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/update.html.twig
 
     {% block someBlock %}
         {# an `entity` variable contains an Test entity instance #}
-        {% if is_granted('app_task_edit', entity) %}
+        {% if is_granted('acme_task_edit', entity) %}
             Some info if access is granted
         {% endif %}
     {% endblock %}
@@ -323,7 +320,7 @@ At this example, will be checked access level for the given object instance.
 In case if you have no an ACL annotation, you can set the permission name directly as the first parameter:
 
 .. code-block:: html+jinja
-   :caption: src/AppBundle/Resources/views/Task/update.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/update.html.twig
 
     {% block someBlock %}
         {# an `entity` variable contains an Test entity instance #}
@@ -340,12 +337,12 @@ In a data grid you can protect the entire result set (to not show results if the
 granted access and the action embedding the grid accidentally was not protected):
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        app-tasks-grid:
+        acme-tasks-grid:
             source:
-                acl_resource: app_task_view
+                acl_resource: acme_task_view
 
         # ...
 
@@ -356,10 +353,10 @@ Also use the ``acl_resource`` option to hide actions in a data grid the user doe
 to:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        app-tasks-grid:
+        acme-tasks-grid:
             # ...
             actions:
                 # ...
@@ -368,13 +365,13 @@ to:
                     label: Edit
                     link: update_link
                     icon: edit
-                    acl_resource: app_task_edit
+                    acl_resource: acme_task_edit
                 delete:
                     type: delete
                     label: Delete
                     link: delete_link
                     icon: trash
-                    acl_resource: app_task_delete
+                    acl_resource: acme_task_delete
 
 Check Access on ORM Queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -383,14 +380,19 @@ You can protect your Doctrine ORM query with ``apply`` method of ``oro_security.
 
 .. code-block:: php
 
+    namespace Acme\Bundle\DemoBundle\Controller;
 
+    use Acme\Bundle\DemoBundle\Entity\Task;
     use Doctrine\ORM\Query;
     use Doctrine\ORM\QueryBuilder;
-
     use Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper;
 
     class TaskController extends Controller
     {
+        /**
+         * @param Task $task
+         * @return array
+         */
         public function viewAction(Task $task)
         {
             /** @var QueryBuilder $qb */
@@ -403,8 +405,6 @@ You can protect your Doctrine ORM query with ``apply`` method of ``oro_security.
 
             // ...
         }
-
-        // ...
     }
 
 As result, the query will be modified and the result data set will contain only the records user can see.

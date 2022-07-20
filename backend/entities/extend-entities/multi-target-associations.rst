@@ -249,14 +249,17 @@ For example, suppose you want to prohibit creating notes for some entity. In tha
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Entity;
+    namespace Acme\Bundle\DemoBundle\Entity;
+
+    use Doctrine\ORM\Mapping as ORM;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
 
     /**
      * @ORM\Entity
      * @ORM\Table(name="acme_my_entity")
      * @Config(
      *      defaultValues={
-     *          "note"={
+     *          "activity"={
      *              "immutable"=true
      *          }
      *      }
@@ -535,7 +538,10 @@ For example, suppose you want to prohibit associating any activity with some ent
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Entity;
+    namespace Acme\Bundle\DemoBundle\Entity;
+
+    use Doctrine\ORM\Mapping as ORM;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
 
     /**
      * @ORM\Entity
@@ -726,4 +732,4 @@ The following examples show how you can do it:
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

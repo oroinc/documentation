@@ -2585,6 +2585,14 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/bundles/best_practices.html#bundle-name" target="_blank">best practices for bundle structure and bundle name</a>
 
+.. |Symfony Configuration Files| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/configuration.html#configuration-files" target="_blank">Symfony Configuration Files</a>
+
+.. |Symfony Service Parameters| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/service_container.html#service-parameters" target="_blank">Symfony Service Parameters</a>
+
 .. |Symfony profiler config icon| raw:: html
 
    <a href="https://symfony.com/doc/current/book/internals.html#profiler" target="_blank">Symfony profiler config icon</a>

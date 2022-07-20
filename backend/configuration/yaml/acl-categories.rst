@@ -19,7 +19,7 @@ The ``acl_categories.yml`` file is used to configure ACL categories for the :ref
 An example of the configuration file:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/acl_categories.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acl_categories.yml
 
     acl_categories:
         some_category:

@@ -98,11 +98,11 @@ Similarly, add a Symfony-compatible bundle to your Oro application via composer 
 
 To enable it in the Oro application, register the bundle in the bundles.yml file in your custom bundle:
 
-.. code-block:: none
-   :caption: CustomBundle/Resources/config/oro/bundles.yml
+.. code-block:: yaml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
 
    bundles:
-     -  { name: \FOS\RestBundle\FOSRestBundle, priority: 100 }
+     -  { name: FOS\RestBundle\FOSRestBundle, priority: 100 }
 
 .. note:: See the topic on :ref:`Differences to Common Symfony Applications <book_differences>` for more information on bundle registration effect.
 
@@ -129,11 +129,11 @@ With the dependency injection tags, you can register a service of specific a typ
 
 For example, to add a new payment method in your OroCommerce application, first create your own implementation of the *PaymentMethodProviderInterface* and tag it with the existing *oro_payment.payment_method_provider* tag, like in the following example:
 
-.. code-block:: none
-   :caption: CustomBundle/Resources/config/services.yml
+.. code-block:: yaml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
-   custom_bundle.method.provider.payment_method_name:
-       class: Custom\Bundle\CustomBundle\Method\Provider\NameOfMethodProvider
+   demo_bundle.method.provider.payment_method_name:
+       class: Acme\Bundle\DemoBundle\Method\Provider\NameOfMethodProvider
        public: false
        tags:
             - { name: oro_payment.payment_method_provider }
@@ -143,15 +143,15 @@ The behavior that has already been applied to the default payment methods is now
 [Symfony] Events and Event Listeners
 """"""""""""""""""""""""""""""""""""
 
-Use event listeners to interfere with the existing data processing flow and customize it. You can also design new business logics for processing the events. For example, to log a number of web-browsers that are connected to the application server through the websockets (WS) protocol, create your own listener of the clank.client.connected event:
+Use event listeners to interfere with the existing data processing flow and customize it. You can also design new business logics for processing the events. For example, to log a number of web-browsers that are connected to the application server through the websockets (WS) protocol, create your own listener of the gos_web_socket.client_connected event:
 
-.. code-block:: none
-   :caption: CustomBundle/Resources/config/services.yml
+.. code-block:: yaml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
-   custom_bundle.wss.listener:
-       class: Custom\Bundle\CustomBundle\EventListener\WssConnectionEventListener
+   demo_bundle.wss.listener:
+       class: Acme\Bundle\DemoBundle\EventListener\WssConnectionEventListener
        tags:
-            - { name: kernel.event_listener, event: clank.client.connected, method: onClientConnect }
+            - { name: kernel.event_listener, event: gos_web_socket.client_connected, method: onClientConnect }
 
 Remember to implement custom processing of the registered changes, if necessary.
 

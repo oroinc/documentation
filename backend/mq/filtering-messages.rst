@@ -19,19 +19,34 @@ An example of a message filter that removes duplicated messages:
 
 .. code-block:: php
 
+    namespace Acme\Bundle\DemoBundle\Async;
+
+    use Oro\Bundle\MessageQueueBundle\Client\MessageBuffer;
+    use Oro\Bundle\MessageQueueBundle\Client\MessageFilterInterface;
+
     class MyMessageFilter implements MessageFilterInterface
     {
+        private string $topic;
+
         /**
-         * {@inheritDoc}
+         * @param string $topic
+         */
+        public function __construct(string $topic)
+        {
+            $this->topic = $topic;
+        }
+
+        /**
+         * @inheritDoc
          */
         public function apply(MessageBuffer $buffer): void
         {
-            if (!$buffer->hasMessagesForTopic(MySampleTopic::getName())) {
+            if (!$buffer->hasMessagesForTopic($this->topic)) {
                 return;
             }
 
             $processedMessages = [];
-            $messages = $buffer->getMessagesForTopic(MySampleTopic::getName());
+            $messages = $buffer->getMessagesForTopic($this->topic);
             foreach ($messages as $messageId => $message) {
                 $messageKey = (string)$message['id'];
                 if (isset($processedMessages[$messageKey])) {
@@ -47,14 +62,16 @@ An example of a message filter that removes duplicated messages:
 .. code-block:: yaml
 
     services:
-        acme.my_message_filter:
-            class: Oro\Bundle\VisibilityBundle\Model\MyMessageFilter
+        acme_demo.my_message_filter:
+            class: Acme\Bundle\DemoBundle\Async\MyMessageFilter
+            arguments:
+                - !php/const Acme\Bundle\DemoBundle\Async\Topic\MySampleTopic::NAME
             tags:
-                - { name: oro_message_queue.message_filter, topic: !php/const Acme\Bundle\AcmeBundle\Async\Topic\MySampleTopic::NAME }
+                - { name: oro_message_queue.message_filter, topic: !php/const Acme\Bundle\DemoBundle\Async\Topic\MySampleTopic::NAME }
 
 .. note::
-        - The filtering is not executed after filters made changes in the |message buffer|.
-        - All messages represented by |message builders| are resolved before the filtering is executed.
+    - The filtering is not executed after filters made changes in the |message buffer|.
+    - All messages represented by |message builders| are resolved before the filtering is executed.
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

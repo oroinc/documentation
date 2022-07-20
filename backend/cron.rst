@@ -1,7 +1,7 @@
 :title: Cron Setup and Configuration in OroCommerce, OroCRM, OroPlatform
 
 .. meta::
-   :description: Instructions on the time-based cron jobs setup and configuration in the Oro applications for the backend developers
+    :description: Instructions on the time-based cron jobs setup and configuration in the Oro applications for the backend developers
 
 .. _dev-guide-system-cron-jobs:
 
@@ -31,19 +31,19 @@ To run a set of commands from your application regularly, configure your system 
 
 * For UNIX-based systems, set up a crontab entry, as illustrated below:
 
-  .. code-block:: none
+    .. code-block:: none
 
-      */1 * * * * /path/to/php /path/to/bin/console oro:cron --env=prod > /dev/null
+        */1 * * * * /path/to/php /path/to/bin/console oro:cron --env=prod > /dev/null
 
-  .. note:: Some OS flavors require a username (usually root) in the crontab entry:
+    .. note:: Some OS flavors require a username (usually root) in the crontab entry:
 
-      .. code-block:: none
+        .. code-block:: none
 
-          */1 * * * * root /path/to/php /path/to/bin/console oro:cron --env=prod > /dev/null
+            */1 * * * * root /path/to/php /path/to/bin/console oro:cron --env=prod > /dev/null
 
 * For Windows, use the Control Panel to configure the Task Scheduler to do the same.
 
-  .. note:: This entry in the crontab does not presuppose the execution of cron commands every minute. The oro:cron command only ensures that the actual commands are added to the scheduler which in its turn makes sure that they are executed at desired time.
+    .. note:: This entry in the crontab does not presuppose the execution of cron commands every minute. The oro:cron command only ensures that the actual commands are added to the scheduler which in its turn makes sure that they are executed at desired time.
 
 .. _dev-cookbook-system-cron-create-commands:
 
@@ -56,30 +56,46 @@ Implementing *CronCommandInterface* requires the implementation of the |getDefau
 value is **5 0 \* \* \***.
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Command/DemoCommand.php
+    :caption: src/Acme/Bundle/DemoBundle/Command/SomeCronCommand.php
 
-    namespace Acme\DemoBundle\Command;
+    namespace Acme\Bundle\DemoBundle\Command;
 
     use Oro\Bundle\CronBundle\Command\CronCommandInterface;
+    use Symfony\Component\Console\Command\Command;
     use Symfony\Component\Console\Input\InputInterface;
     use Symfony\Component\Console\Output\OutputInterface;
-    use Symfony\Component\Console\Command\Command;
 
-    class DemoCommand extends Command implements CronCommandInterface
+    class SomeCronCommand extends Command implements CronCommandInterface
     {
-        protected static string $defaultName = 'oro:cron:demo';
+        protected static $defaultName = 'oro:cron:acme_demo_some';
 
-        public function getDefaultDefinition()
+        /**
+         * @inheritDoc
+         */
+        public function getDefaultDefinition(): string
         {
             return '5 0 * * *';
         }
 
+        /**
+         * @inheritDoc
+         */
+        public function isActive(): bool
+        {
+            return true;
+        }
 
+        /**
+         * @inheritDoc
+         */
         protected function configure()
         {
             // ...
         }
 
+        /**
+         * @inheritDoc
+         */
         protected function execute(InputInterface $input, OutputInterface $output)
         {
             // ...
@@ -111,4 +127,4 @@ command in the DB. After that, the Cron command will be ready to evaluate and ex
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

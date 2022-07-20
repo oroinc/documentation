@@ -7,29 +7,35 @@ A custom entity is an entity that has no PHP class in any bundle. The definition
 
 .. code-block:: php
 
-    namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_0;
+    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
+    use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
     use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
     use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-    use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-    class AcmeTestBundle implements Migration, ExtendExtensionAwareInterface
+    class AcmeDemoBundle implements Migration, ExtendExtensionAwareInterface
     {
-        protected $extendExtension;
+        protected ExtendExtension $extendExtension;
 
+        /**
+         * @inheritDoc
+         */
         public function setExtendExtension(ExtendExtension $extendExtension)
         {
             $this->extendExtension = $extendExtension;
         }
 
+        /**
+         * @inheritDoc
+         */
         public function up(Schema $schema, QueryBag $queries)
         {
             $table = $this->extendExtension->createCustomEntityTable(
                 $schema,
-                'TestCustomEntity'
+                'CustomEntity'
             );
             $table->addColumn(
                 'name',

@@ -18,7 +18,7 @@ To create a new processor, create a class that implements |ProcessorInterface| a
 
 .. code-block:: php
 
-    namespace Acme\Bundle\ProductBundle\Api\Processor;
+    namespace Acme\Bundle\DemoBundle\Api\Processor;
 
     use Oro\Bundle\ApiBundle\Processor\Context;
     use Oro\Component\ChainProcessor\ContextInterface;
@@ -30,7 +30,7 @@ To create a new processor, create a class that implements |ProcessorInterface| a
     class DoSomething implements ProcessorInterface
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function process(ContextInterface $context)
         {
@@ -44,7 +44,7 @@ To create a new processor, create a class that implements |ProcessorInterface| a
 
     services:
         acme.api.do_something:
-            class: Acme\Bundle\ProductBundle\Api\Processor\DoSomething
+            class: Acme\Bundle\DemoBundle\Api\Processor\DoSomething
             tags:
                 - { name: oro.api.processor, action: get, group: normalize_input, priority: 10 }
 
@@ -88,7 +88,7 @@ For example, a simple condition which is used to filter processors by the action
 
     services:
         acme.api.do_something:
-            class: Acme\Bundle\ProductBundle\Api\Processor\DoSomething
+            class: Acme\Bundle\DemoBundle\Api\Processor\DoSomething
             tags:
                 - { name: oro.api.processor, action: get }
 
@@ -111,50 +111,64 @@ Examples of Processor Conditions
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor }
 
 -  A processor is executed only for a specified action.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list }
 
 -  A processor is executed only for a specified action and group.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize }
 
 -  A processor is executed only for a specified action, group and request type.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest }
 
 -  A processor is executed for all requests except for the specified one.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, requestType: !rest }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, requestType: !rest }
 
 -  A processor is executed only for REST requests that conform to the |JSON:API| specification.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest&json_api }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest&json_api }
 
 -  A processor is executed either for REST requests or requests that conform to the |JSON:API| specification.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest|json_api }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest|json_api }
 
 **Please note** that a value can contain either ``&`` (logical AND) or ``|`` (logical OR) operators, but you cannot combine them.
 
@@ -162,37 +176,47 @@ Examples of Processor Conditions
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest&!json_api }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, requestType: rest&!json_api }
 
 -  A processor is executed for several specified actions.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get, group: initialize, priority: 10 }
-            - { name: oro.api.processor, action: get_list, group: initialize, priority: 5 }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get, group: initialize, priority: 10 }
+                - { name: oro.api.processor, action: get_list, group: initialize, priority: 5 }
 
 -  A processor is executed only for a specified entity.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, class: Oro\Bundle\UserBundle\Entity\User }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, class: Oro\Bundle\UserBundle\Entity\User }
 
 -  A processor is executed only for entities that implement an certain interface or extend a certain base class. Currently, there are two attributes that are compared by the **instance of** instead of **equal** operator. These attributes are **class** and **parentClass**.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, class: Oro\Bundle\UserBundle\Entity\AbstractUser }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, class: Oro\Bundle\UserBundle\Entity\AbstractUser }
 
 -  A processor is executed only when ``someAttribute`` exists in the context.
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, someAttribute: exists }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, someAttribute: exists }
 
 **Please note** that ``exists`` operators cannot be used together with ``&`` (logical AND) and ``|`` (logical OR) operators.
 
@@ -200,8 +224,10 @@ Examples of Processor Conditions
 
 .. code-block:: yaml
 
-        tags:
-            - { name: oro.api.processor, action: get_list, group: initialize, someAttribute: '!exists' }
+    services:
+        acme.api.do_something:
+            tags:
+                - { name: oro.api.processor, action: get_list, group: initialize, someAttribute: '!exists' }
 
 For more examples, see the |configuration of existing processors|. See ``processors.*.yml`` files.
 
@@ -220,7 +246,7 @@ Please note that to validate input data for :ref:`create <create-action>` and :r
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 fields:
                     primaryEmail:
                         form_options:
@@ -384,8 +410,9 @@ All API logs are written into the api channel. To inject the API logger directly
 
 .. code-block:: yaml
 
-        acme.api.some_processor:
-            class: Acme\Bundle\AcmeBundle\Api\Processor\DoSomething
+    services:
+        acme.api.do_something:
+            class: Acme\Bundle\DemoBundle\Api\Processor\DoSomething
             arguments:
                 - '@logger'
             tags:
@@ -394,4 +421,4 @@ All API logs are written into the api channel. To inject the API logger directly
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

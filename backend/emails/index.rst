@@ -1,7 +1,7 @@
 :title: Backend Emails Configuration in OroCommerce, OroCRM, OroPlatform
 
 .. meta::
-   :description: Emails and templates configuration manuals for the backend developers
+    :description: Emails and templates configuration manuals for the backend developers
 
 .. _dev-emails:
 
@@ -29,14 +29,17 @@ class provides a ``getEmailsDir()`` method which should return the path of the d
 contains your templates:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/DataFixtures/ORM/EmailTemplatesFixture.php
+    :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/EmailTemplatesFixture.php
 
-    namespace Acme\Bundle\DemoBundle\DataFixtures\ORM;
+    namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
 
     use Oro\Bundle\EmailBundle\Migrations\Data\ORM\AbstractEmailFixture;
 
     class EmailTemplatesFixture extends AbstractEmailFixture
     {
+        /**
+         * @inheritDoc
+         */
         public function getEmailsDir()
         {
             return $this->container
@@ -105,9 +108,9 @@ You can manually create an email by creating a new instance of the ``Email`` mod
 the setter methods for all the properties you want to be set:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Controller/EmailController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
 
-    namespace Acme\DemoBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
     use Oro\Bundle\EmailBundle\Form\Model\Email;
     use Oro\Bundle\EmailBundle\Form\Model\EmailAttachment;
@@ -182,9 +185,9 @@ create an email model based on such a persisted entity, by using the useful
 |EmailModelBuilder| helper class:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Controller/EmailController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
 
-    namespace Acme\DemoBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
@@ -204,9 +207,9 @@ responsible for sending the email and persisting it to the database (which also 
 contexts to customers, users, and so on):
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Controller/EmailController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
 
-    namespace Acme\DemoBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
     // ...
 
@@ -214,8 +217,8 @@ contexts to customers, users, and so on):
     {
         public function sendMailAction()
         {
+            $email = new Email();
             // ...
-            $email = ...;
 
             $processor = $this->get('oro_email.sender.email_model_sender');
             $processor->send($email);
@@ -253,9 +256,9 @@ To be notified by such an event, you have to create an
 information. The easiest way to register a new `EmailNotification` is to create data fixtures:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Migrations/Data/ORM/CreateCommentNotification.php
+    :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/CreateCommentNotification.php
 
-    namespace Acme\DemoBundle\Migrations\Data\ORM;
+    namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Persistence\ObjectManager;
@@ -264,12 +267,15 @@ information. The easiest way to register a new `EmailNotification` is to create 
 
     class CreateCommentNotification extends AbstractFixture
     {
+        /**
+         * @inheritDoc
+         */
         public function load(ObjectManager $manager)
         {
             $notification = new EmailNotification();
 
             // the FQCN of the entity
-            $notification->setEntityName('Acme\DemoBundle\Entity\Comment');
+            $notification->setEntityName('Acme\Bundle\DemoBundle\Entity\Comment');
 
             // the event to be notified of, pre-defined event names are
             // oro.notification.event.entity_post_update, oro.notification.event.entity_post_remove
@@ -334,7 +340,7 @@ Each entity owning an email address must have its own email entity that implemen
 Sample ``Email`` entity:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Entity/ApplicantEmail.php
+    :caption: src/Acme/Bundle/DemoBundle/Entity/ApplicantEmail.php
 
     namespace Acme\Bundle\DemoBundle\Entity;
 
@@ -363,21 +369,33 @@ Sample ``Email`` entity:
          */
         private $applicant;
 
+        /**
+         * @inheritDoc
+         */
         public function getEmailField()
         {
             return 'email';
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getId()
         {
             return $this->id;
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getEmail()
         {
             return $this->email;
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getEmailOwner()
         {
             return $this->applicant;
@@ -413,10 +431,11 @@ The entity that is the owner of the email address has to implement the
 For ``Applicant`` entity, the implementation should be similar to the following:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Entity/Applicant.php
+    :caption: src/Acme/Bundle/DemoBundle/Entity/Applicant.php
 
     namespace Acme\Bundle\DemoBundle\Entity;
 
+    use Doctrine\Common\Collections\Collection;
     use Doctrine\ORM\Mapping as ORM;
     use Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface;
 
@@ -447,31 +466,49 @@ For ``Applicant`` entity, the implementation should be similar to the following:
          */
         private $lastName;
 
+        /**
+         * @inheritDoc
+         */
         public function getClass()
         {
             return 'Acme\Bundle\DemoBundle\Entity\Applicant';
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getEmailFields()
         {
             return ['email'];
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getId()
         {
             return $this->id;
         }
 
+        /**
+         * @return Collection
+         */
         public function getEmails()
         {
             return $this->emails;
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getFirstName()
         {
             return $this->firstName;
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getLastName()
         {
             return $this->lastName;
@@ -505,7 +542,7 @@ contains the following methods:
 The provider class should then look like this:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Entity/Provider/EmailOwnerProvider.php
+    :caption: src/Acme/Bundle/DemoBundle/Entity/Provider/EmailOwnerProvider.php
 
     namespace Acme\Bundle\DemoBundle\Entity\Provider;
 
@@ -513,15 +550,22 @@ The provider class should then look like this:
     use Acme\Bundle\DemoBundle\Entity\ApplicantEmail;
     use Doctrine\ORM\EntityManagerInterface;
     use Oro\Bundle\BatchBundle\ORM\Query\BufferedQueryResultIterator;
+    use Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface;
     use Oro\Bundle\EmailBundle\Entity\Provider\EmailOwnerProviderInterface;
 
     class EmailOwnerProvider implements EmailOwnerProviderInterface
     {
+        /**
+         * @inheritDoc
+         */
         public function getEmailOwnerClass(): string
         {
             return Applicant::class;
         }
 
+        /**
+         * @inheritDoc
+         */
         public function findEmailOwner(EntityManagerInterface $em, string $email): ?EmailOwnerInterface
         {
             /** @var ApplicantEmail|null $emailEntity */
@@ -533,39 +577,45 @@ The provider class should then look like this:
             return $emailEntity->getEmailOwner();
         }
 
-         public function getOrganizations(EntityManagerInterface $em, string $email): array
-         {
-             $rows = $em->createQueryBuilder()
-                 ->from(ApplicantEmail::class, 'e')
-                 ->select('IDENTITY(a.organization) AS id')
-                 ->join('e.owner', 'a')
-                 ->where('e.email = :email')
-                 ->setParameter('email', $email)
-                 ->getQuery()
-                 ->getArrayResult();
+        /**
+         * @inheritDoc
+         */
+        public function getOrganizations(EntityManagerInterface $em, string $email): array
+        {
+            $rows = $em->createQueryBuilder()
+                ->from(ApplicantEmail::class, 'e')
+                ->select('IDENTITY(a.organization) AS id')
+                ->join('e.owner', 'a')
+                ->where('e.email = :email')
+                ->setParameter('email', $email)
+                ->getQuery()
+                ->getArrayResult();
 
-             $result = [];
-             foreach ($rows as $row) {
-                 $result[] = (int)$row['id'];
-             }
+            $result = [];
+            foreach ($rows as $row) {
+                $result[] = (int)$row['id'];
+            }
 
-             return $result;
-         }
+            return $result;
+        }
 
-          public function getEmails(EntityManagerInterface $em, int $organizationId): iterable
-          {
-              $qb = $em->createQueryBuilder()
-                  ->from(ApplicantEmail::class, 'e')
-                  ->select('e.email')
-                  ->join('e.owner', 'a')
-                  ->where('a.organization = :organizationId')
-                  ->setParameter('organizationId', $organizationId)
-                  ->orderBy('e.id');
-              $iterator = new BufferedQueryResultIterator($qb);
-              foreach ($iterator as $row) {
-                  yield $row['email'];
-              }
-          }
+        /**
+         * @inheritDoc
+         */
+        public function getEmails(EntityManagerInterface $em, int $organizationId): iterable
+        {
+            $qb = $em->createQueryBuilder()
+                ->from(ApplicantEmail::class, 'e')
+                ->select('e.email')
+                ->join('e.owner', 'a')
+                ->where('a.organization = :organizationId')
+                ->setParameter('organizationId', $organizationId)
+                ->orderBy('e.id');
+            $iterator = new BufferedQueryResultIterator($qb);
+            foreach ($iterator as $row) {
+                yield $row['email'];
+            }
+        }
     }
 
 You then need to create a service for the new ``EmailOwnerProvider`` class and tag it with the
@@ -596,4 +646,4 @@ Finally, you have to update the database schema and clear the application cache:
     php bin/console cache:warmup
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

@@ -30,10 +30,10 @@ Example of grid configuration:
                         - customer.name
                         - IDENTITY(customerProductVisibility.visibility) as visibility
                     from:
-                        - { table: 'Acme\Bundle\AcmeBundle\Entity\Customer', alias: customer }
+                        - { table: 'Acme\Bundle\DemoBundle\Entity\Customer', alias: customer }
                     join:
                         left:
-                            - { join: 'Acme\Bundle\AcmeBundle\Entity\CustomerProductVisibility', alias: customerProductVisibility, conditionType: WITH, condition: 'customerProductVisibility.customer = customer' }
+                            - { join: 'Acme\Bundle\DemoBundle\Entity\CustomerProductVisibility', alias: customerProductVisibility, conditionType: WITH, condition: 'customerProductVisibility.customer = customer' }
                     where:
                         and:
                             - IDENTITY(customerProductVisibility.product) = :product_id

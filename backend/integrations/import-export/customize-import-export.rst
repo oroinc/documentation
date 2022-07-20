@@ -46,20 +46,23 @@ To enable Oro application read configuration settings from the configuration fil
 extension class in the entity bundle and implement the *load* method, like in the example below:
 
 .. code-block:: php
-   :caption: src/AppBundle/DependencyInjection/AppExtension.php
+    :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/AcmeDemoExtension.php
 
-    namespace AppBundle\DependencyInjection;
+    namespace Acme\Bundle\DemoBundle\DependencyInjection;
 
     use Symfony\Component\Config\FileLocator;
     use Symfony\Component\DependencyInjection\ContainerBuilder;
     use Symfony\Component\DependencyInjection\Extension\Extension;
-    use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+    use Symfony\Component\DependencyInjection\Loader;
 
-    class AppExtension extends Extension
+    class AcmeDemoExtension extends Extension
     {
+        /**
+         * @inheritDoc
+         */
         public function load(array $configs, ContainerBuilder $container)
         {
-            $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/Resources/config'));
+            $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
             $loader->load('importexport.yml');
         }
     }
@@ -80,31 +83,30 @@ In the *importexport.yml* configuration file located in the *Resources/config* d
 .. note:: In the tags section, specify the entity to enable import/export for.
 
 .. code-block:: yaml
-    :caption: src/AppBundle/Resources/config/importexport.yml
-
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/importexport.yml
 
     services:
-        app.importexport.data_converter:
+        acme_demo.importexport.data_converter:
             parent: oro_importexport.data_converter.configurable
 
-        app.importexport.processor.export:
+        acme_demo.importexport.processor.export:
             parent: oro_importexport.processor.export_abstract
             calls:
-                - [setDataConverter, ['@app.importexport.data_converter']]
+                - [setDataConverter, ['@acme_demo.importexport.data_converter']]
             tags:
                 - name: oro_importexport.processor
                   type: export
-                  entity: AppBundle\Entity\Task
-                  alias: app_task
-        app.importexport.processor.import:
+                  entity: Acme\Bundle\DemoBundle\Entity\Task
+                  alias: acme_task
+        acme_demo.importexport.processor.import:
             parent: oro_importexport.processor.import_abstract
             calls:
-                - [setDataConverter, ['@app.importexport.data_converter']]
+                - [setDataConverter, ['@acme_demo.importexport.data_converter']]
             tags:
                 - name: oro_importexport.processor
                   type: import
-                  entity: AppBundle\Entity\Task
-                  alias: app_task
+                  entity: Acme\Bundle\DemoBundle\Entity\Task
+                  alias: acme_task
 
 Prepare Import Data Template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -125,26 +127,43 @@ In the *fillEntityData* method, populate the values for the attributes that shal
 Please refer to the following example:
 
 .. code-block:: php
-   :caption: src/AppBundle/ImportExport/TemplateFixture;
+    :caption: src/Acme/Bundle/DemoBundle/ImportExport/TemplateFixture;
 
-    namespace AppBundle\ImportExport\TemplateFixture;
+    namespace Acme\Bundle\DemoBundle\ImportExport\TemplateFixture;
 
-    use AppBundle\Entity\Task;
+    use Acme\Bundle\DemoBundle\Entity\Task;
     use Oro\Bundle\ImportExportBundle\TemplateFixture\AbstractTemplateRepository;
     use Oro\Bundle\ImportExportBundle\TemplateFixture\TemplateFixtureInterface;
 
     class TaskFixture extends AbstractTemplateRepository implements TemplateFixtureInterface
     {
-        public function getEntityClass()
+        /**
+         * @inheritDoc
+         */
+        protected function createEntity($key): Task
         {
-            return 'AppBundle\Entity\Task';
+            return new Task($key);
         }
 
+        /**
+         * @inheritDoc
+         */
+        public function getEntityClass(): string
+        {
+            return Task::class;
+        }
+
+        /**
+         * @inheritDoc
+         */
         public function getData()
         {
             return $this->getEntityData('example-task');
         }
 
+        /**
+         * @inheritDoc
+         */
         public function fillEntityData($key, $entity)
         {
             $entity->setId(1);
@@ -152,24 +171,17 @@ Please refer to the following example:
             $entity->setDescription('Please call the customer to talk about their future plans.');
             $entity->setDueDate(new \DateTime('+3 days'));
         }
-
-        protected function createEntity($key)
-        {
-            return new Task();
-        }
     }
 
-Next, in the *importexport.yml* file located in the *src/AppBundle/Resources/config/ folder*, register the newly created fixtures class as a service. Please refer to the following example:
+Next, in the *importexport.yml* file located in the *src/Acme/Bundle/DemoBundle/Resources/config/ folder*, register the newly created fixtures class as a service. Please refer to the following example:
 
 .. code-block:: yaml
-    :caption: src/AppBundle/Resources/config/importexport.yml
-
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/importexport.yml
 
     services:
         # ...
-
-        app.importexport.template_fixture.task:
-            class: AppBundle\ImportExport\TemplateFixture\TaskFixture
+        acme_demo.importexport.template_fixture.task:
+            class: Acme\Bundle\DemoBundle\ImportExport\TemplateFixture\TaskFixture
             tags:
                 - { name: oro_importexport.template_fixture }
 
@@ -180,19 +192,19 @@ To enable export and import for Oro application users, reuse the ``buttons.html.
 OroImportExportBundle. Include it into the twig template in the navigation block (*block navButtons*). Provide the valid entity_class, export and import processor aliases from the configuration file that is described in the `Configure import and export services (processors)`_ section.
 
 .. code-block:: html+jinja
-   :caption: src/AppBundle/Resources/views/Task/index.html.twig #}
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/index.html.twig #}
 
     {% extends '@OroUI/actions/index.html.twig' %}
 
-    {% set gridName = 'app-tasks-grid' %}
+    {% set gridName = 'acme-tasks-grid' %}
     {% set pageTitle = 'Task' %}
 
     {% block navButtons %}
         {% include '@OroImportExport/ImportExport/buttons.html.twig' with {
-            entity_class: 'AppBundle\\Entity\\Task',
-            exportProcessor: 'app_task',
+            entity_class: 'Acme\\Bundle\\DemoBundle\\Entity\\Task',
+            exportProcessor: 'acme_task',
             exportTitle: 'Export',
-            importProcessor: 'app_task',
+            importProcessor: 'acme_task',
             importTitle: 'Import',
             datagridName: gridName
         } %}

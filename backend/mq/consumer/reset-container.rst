@@ -64,7 +64,7 @@ For example:
 .. code-block:: yaml
 
     acme.consumption.my_extension:
-        class: Acme\Bundle\AppBundle\Async\Consumption\Extension\MyExtension
+        class: Acme\Bundle\DemoBundle\Async\Consumption\Extension\MyExtension
         public: false
         tags:
             - { name: oro_message_queue.consumption.extension, persistent: true }

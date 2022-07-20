@@ -60,13 +60,13 @@ An example of the `features.yml` configuration:
                 - acme_some_operation
             api_resources:
                 # bind whole API resource / bind all API actions for API resource
-                - Acme\Bundle\Entity\Page
+                - Acme\Bundle\DemoBundle\Entity\Page
                 # bind only specific API actions for API resource
-                - [Acme\Bundle\Entity\Page, [create, update, delete, delete_list]]
+                - [Acme\Bundle\DemoBundle\Entity\Page, [create, update, delete, delete_list]]
             commands:
                 - oro:search:index
             entities:
-                - Acme\Bundle\Entity\Page
+                - Acme\Bundle\DemoBundle\Entity\Page
             dashboard_widgets:
                 - page_dashboard_widget
             sidebar_widgets:
@@ -100,7 +100,7 @@ Configuration extension:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\ProcessorBundle\Config;
+    namespace Acme\Bundle\DemoBundle\Config;
 
     use Oro\Bundle\FeatureToggleBundle\Configuration\ConfigurationExtensionInterface;
     use Symfony\Component\Config\Definition\Builder\NodeBuilder;
@@ -127,7 +127,7 @@ Extension registration:
 
     services:
         acme.configuration.feature_configuration_extension:
-            class: Acme\Bundle\ProcessorBundle\Config\FeatureConfigurationExtension
+            class: Acme\Bundle\DemoBundle\Config\FeatureConfigurationExtension
             tags:
                 - { name: oro_feature.config_extension }
 
@@ -212,7 +212,7 @@ Extension:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\CategoryBundle\Form\Extension;
+    namespace Acme\Bundle\DemoBundle\Form\Extension;
 
     use Symfony\Component\Form\AbstractTypeExtension;
     use Symfony\Component\Form\FormBuilderInterface;
@@ -259,8 +259,8 @@ Extension registration:
 .. code-block:: yaml
 
     services:
-        acme_category.form.extension.product_form:
-            class: Acme\Bundle\CategoryBundle\Form\Extension\ProductFormExtension
+        acme_demo.form.extension.product_form:
+            class: Acme\Bundle\DemoBundle\Form\Extension\ProductFormExtension
         tags:
             - { name: oro_featuretogle.feature, feature: acme_feature }
 
@@ -283,7 +283,7 @@ Such voter looks as follows:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\ProcessorBundle\Voter;
+    namespace Acme\Bundle\DemoBundle\Voter;
 
     use Oro\Bundle\FeatureToggleBundle\Checker\Voter\VoterInterface;
 
@@ -319,9 +319,9 @@ Now, configure a voter:
 .. code-block:: yaml
 
     services:
-        acme_process.voter.feature_voter:
-            class: Acme\Bundle\ProcessorBundle\Voter\FeatureVoter
-            arguments: [ '@acme_process.voter.state_checker' ]
+        acme_demo.voter.feature_voter:
+            class: Acme\Bundle\DemoBundle\Voter\FeatureVoter
+            arguments: [ '@acme_demo.voter.state_checker' ]
             tags:
                 - { name: oro_featuretogle.voter }
 
@@ -368,7 +368,7 @@ Commands launched as subcommands cannot be skipped globally. To avoid running su
 
 .. code-block:: php
 
-    namespace Acme\Bundle\FixtureBundle\Command;
+    namespace Acme\Bundle\DemoBundle\Command;
 
     use Oro\Bundle\FeatureToggleBundle\Checker\FeatureCheckerHolderTrait;
     use Oro\Bundle\FeatureToggleBundle\Checker\FeatureCheckerAwareInterface;
