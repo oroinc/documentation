@@ -51,15 +51,26 @@ for the transaction watcher aware connection proxy in your application, for exam
 
 .. code-block:: php
 
-    class AppBundle extends Bundle
+    namespace Acme\Bundle\DemoBundle;
+
+    use Oro\Component\DoctrineUtils\DBAL\TransactionWatcherConfigurator;
+    use Oro\Component\DoctrineUtils\DependencyInjection\AddTransactionWatcherCompilerPass;
+    use Symfony\Component\DependencyInjection\ContainerBuilder;
+    use Symfony\Component\HttpKernel\Bundle\Bundle;
+    use Symfony\Component\HttpKernel\KernelInterface;
+
+    class AcmeDemoBundle extends Bundle
     {
+        /**
+         * @param KernelInterface $kernel
+         */
         public function __construct(KernelInterface $kernel)
         {
             TransactionWatcherConfigurator::registerConnectionProxies($kernel->getCacheDir());
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function build(ContainerBuilder $container): void
         {
@@ -72,4 +83,4 @@ for the transaction watcher aware connection proxy in your application, for exam
     }
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

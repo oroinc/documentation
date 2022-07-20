@@ -38,7 +38,7 @@ You can create new navigation under the ``items`` key. Each item must be identif
 name which acts as a key in the menu configuration:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
 
     menu_config:
         items:
@@ -75,7 +75,7 @@ The next step is to compose a tree of the menu items that you created before. Th
 build under the ``tree`` key:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
 
     menu_config:
         tree:
@@ -111,7 +111,7 @@ If you wanted to create a dedicated blog tab instead, you would just have to con
 as child items of the ``application_menu`` entry like this:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
 
     menu_config:
         tree:
@@ -134,7 +134,7 @@ Breadcrumb Provider
 To use breadcrumb provider, create layout update with the predefined **breadcrumbs** block type and the **menu_name** option:
 
 .. code-block:: yaml
-   :caption: CustomerBundle/Resources/views/layouts/default/imports/oro_customer_page/oro_customer_page.yml
+    :caption: CustomerBundle/Resources/views/layouts/default/imports/oro_customer_page/oro_customer_page.yml
 
     layout:
         imports:
@@ -157,7 +157,7 @@ Breadcrumbs Block Type
 You can avoid usage of breadcrumb provider. For that, you should create layout update with the predefined **breadcrumbs** block type and the **breadcrumbs** option:
 
 .. code-block:: yaml
-   :caption: WebCatalogBundle/Resources/views/layouts/default/oro_product_frontend_product_index/product_index.yml
+    :caption: WebCatalogBundle/Resources/views/layouts/default/oro_product_frontend_product_index/product_index.yml
 
     layout:
         actions:
@@ -192,8 +192,8 @@ Title can be defined with annotation together with route annotation:
 .. code-block:: none
 
 
-   @TitleTemplate("Route title with %parameter%")
+    @TitleTemplate("Route title with %parameter%")
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

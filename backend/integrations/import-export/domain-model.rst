@@ -633,7 +633,7 @@ Serializer is a class extended from a standard Symfony's serializer and used ins
 
     services:
         acme_demo.importexport.user_normalizer:
-            class: Acme\Bundle\AcmeBundle\ImportExport\UserNormalizer
+            class: Acme\Bundle\DemoBundle\ImportExport\UserNormalizer
             tags:
                 - { name: oro_importexport.normalizer }
 

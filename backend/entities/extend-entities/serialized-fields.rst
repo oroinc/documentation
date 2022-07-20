@@ -45,48 +45,44 @@ To create a serialized field via migration, use |SerializedFieldsExtension|. For
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_5/AddSerializedFieldMigration.php
 
-    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_5;
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_5;
 
-    use Doctrine\DBAL\Schema\Schema;
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
+   use Oro\Bundle\EntitySerializedFieldsBundle\Migration\Extension\SerializedFieldsExtension;
+   use Oro\Bundle\EntitySerializedFieldsBundle\Migration\Extension\SerializedFieldsExtensionAwareInterface;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-    use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
-    use Oro\Bundle\EntitySerializedFieldsBundle\Migration\Extension\SerializedFieldsExtension;
-    use Oro\Bundle\EntitySerializedFieldsBundle\Migration\Extension\SerializedFieldsExtensionAwareInterface;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+   class AddSerializedFieldMigration implements Migration, SerializedFieldsExtensionAwareInterface
+   {
+       protected SerializedFieldsExtension $serializedFieldsExtension;
 
-    class AddSerializedFieldMigration implements
-        Migration,
-        SerializedFieldsExtensionAwareInterface
-    {
-        /** @var SerializedFieldsExtension */
-        protected $serializedFieldsExtension;
+       /**
+        * @inheritDoc
+        */
+       public function setSerializedFieldsExtension(SerializedFieldsExtension $serializedFieldsExtension)
+       {
+           $this->serializedFieldsExtension = $serializedFieldsExtension;
+       }
 
-        /**
-         * {@inheritdoc}
-         */
-        public function setSerializedFieldsExtension(SerializedFieldsExtension $serializedFieldsExtension)
-        {
-            $this->serializedFieldsExtension = $serializedFieldsExtension;
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $this->serializedFieldsExtension->addSerializedField(
-                $schema->getTable('acme_document'),
-                'my_serialized_field',
-                'string',
-                [
-                    'extend'    => [
-                        'owner' => ExtendScope::OWNER_CUSTOM,
-                    ]
-                ]
-            );
-        }
-    }
+       /**
+        * @inheritDoc
+        */
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           $this->serializedFieldsExtension->addSerializedField(
+               $schema->getTable('acme_document'),
+               'my_serialized_field',
+               'string',
+               [
+                   'extend'    => [
+                       'owner' => ExtendScope::OWNER_CUSTOM,
+                   ]
+               ]
+           );
+       }
+   }
 
 Serialized files support the same set of config options as other :ref:`configurable fields <backend-configuration-annotation-config-field>`.
 

@@ -23,13 +23,13 @@ To add additional actions to the installation process, use event listeners. Curr
    .. code-block:: yaml
 
         services:
-            Acme\Bundle\MyBundle\EventListener\MyListener:
+            Acme\Bundle\DemoBundle\EventListener\MyListener:
                 tags:
                     - { name: kernel.event_listener, event: installer.database_preparation.after, method: onAfterDatabasePreparation }
 
    .. code-block:: php
 
-        namespace Acme\Bundle\MyBundle\EventListener;
+        namespace Acme\Bundle\DemoBundle\EventListener;
 
         use Oro\Bundle\InstallerBundle\InstallerEvent
 
@@ -50,13 +50,13 @@ To add additional actions to the installation process, use event listeners. Curr
    .. code-block:: yaml
 
         services:
-            Acme\Bundle\MyBundle\EventListener\MyListener:
+            Acme\Bundle\DemoBundle\EventListener\MyListener:
                 tags:
                     - { name: kernel.event_listener, event: installer.finish, method: onFinish }
 
    .. code-block:: php
 
-        namespace Acme\Bundle\MyBundle\EventListener;
+        namespace Acme\Bundle\DemoBundle\EventListener;
 
         class MyListener
         {

@@ -14,18 +14,19 @@ In your own bundles, services must be marked as lazy in service declaration by a
 
 For example:
 
-.. code-block:: none
+.. code-block:: yaml
 
-    acme.some_service:
-        class: Acme\Bundle\AcmeBundle\SomeService
-        arguments:
-            - '@acme.another_service'
-        lazy: true
+    services:
+        acme.some_service:
+            class: Acme\Bundle\DemoBundle\SomeService
+            arguments:
+                - '@acme.another_service'
+            lazy: true
 
 For external bundles, their services can be marked as lazy using file */Resources/config/oro/lazy\_services.yml* in each
 bundle. This file should contain a plain list of service names under key *lazy_services*. For example:
 
-.. code-block:: none
+.. code-block:: yaml
 
     lazy_services:
         - assetic.asset_manager
@@ -86,13 +87,13 @@ For example:
 
     services:
         acme.event_listener:
-            class: AppBundle\EventListener\DoctrineEventListener
+            class: Acme\Bundle\DemoBundle\EventListener\DoctrineEventListener
             tags:
                 - { name: doctrine.event_listener, event: postPersist, lazy: false }
         acme.entity_listener:
-            class: AppBundle\EventListener\DoctrineEntityListener
+            class: Acme\Bundle\DemoBundle\EventListener\DoctrineEntityListener
             tags:
-                - { name: doctrine.orm.entity_listener, entity: AppBundle\Entity\MyEntity, event: postPersist, lazy: false }
+                - { name: doctrine.orm.entity_listener, entity: Acme\Bundle\DemoBundle\Entity\MyEntity, event: postPersist, lazy: false }
 
 Global Options for Console Commands
 -----------------------------------
@@ -112,8 +113,9 @@ For example:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Provider\Console;
+    namespace Acme\Bundle\DemoBundle\Provider\Console;
 
+    use Oro\Bundle\PlatformBundle\Provider\Console\GlobalOptionsProviderInterface;
     use Symfony\Component\Console\Command\Command;
     use Symfony\Component\Console\Input\InputInterface;
     use Symfony\Component\Console\Input\InputOption;
@@ -121,7 +123,7 @@ For example:
     class MyNewGlobalOptionsProvider implements GlobalOptionsProviderInterface
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function addGlobalOptions(Command $command)
         {
@@ -132,14 +134,15 @@ For example:
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function resolveGlobalOptions(InputInterface $input)
         {
             // Get the option's value and do something with it
             $option = $input->getOption('new-option');
-            ...
+            // ...
         }
+    }
 
 Next, register this provider as a service with tag *oro_platform.console.global_options_provider*:
 
@@ -147,15 +150,15 @@ Next, register this provider as a service with tag *oro_platform.console.global_
 
     services:
         acme.provider.console.my_new_global_options_provider:
-            class: Acme\Bundle\AcmeBundle\Provider\Console\MyNewGlobalOptionsProvider
+            class: Acme\Bundle\DemoBundle\Provider\Console\MyNewGlobalOptionsProvider
             tags:
                 - { name: oro_platform.console.global_options_provider }
 
 
 .. toctree::
-   :hidden:
+    :hidden:
 
-   Commands <commands>
+    Commands <commands>
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

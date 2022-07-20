@@ -19,10 +19,10 @@ Example:
   
 .. code-block:: none
 
-      acme_demo.formatter.some_formatter:
-          class: Acme\Bundle\AcmeBundle\Formatter\SomeFormatter
-          tags:
-            - { name: oro_formatter, formatter: some_formatter }    
+    acme_demo.formatter.some_formatter:
+        class: Acme\Bundle\DemoBundle\Formatter\SomeFormatter
+        tags:
+            - { name: oro_formatter, formatter: some_formatter }
 
 
 The service class should implement the ``Oro\Bundle\UIBundle\Formatter\FormatterInterface`` interface.

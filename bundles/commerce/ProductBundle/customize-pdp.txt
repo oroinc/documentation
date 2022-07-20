@@ -5,7 +5,7 @@ Customize Product View Page
 
 In this example we look at how to customize product with different product types, and change product page by category.
 
-Every product view page contains the current **product_type** in the layout context. You can use it in your layout update **conditions**. When you customize any page, remember to use **Symfony Profiler** and look into the **Layout** section, where the current layout **context** data and actual layout **tree** can be found. 
+Every product view page contains the current **product_type** in the layout context. You can use it in your layout update **conditions**. When you customize any page, remember to use **Symfony Profiler** and look into the **Layout** section, where the current layout **context** data and actual layout **tree** can be found.
 
 Please see the :ref:`Debug Information <dev-doc-frontend-layouts-debugging>` section for more details.
 
@@ -14,13 +14,13 @@ First, create an **import** and a **template** that will be used in a **Simple P
 Import:
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/imports/oro_product_view/layout.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/imports/oro_product_view/layout.yml
 
 
     layout:
         actions:
             - '@setBlockTheme':
-                themes: '@AcmeProduct/layouts/default/imports/oro_product_view/layout.html.twig'
+                themes: '@AcmeDemo/layouts/default/imports/oro_product_view/layout.html.twig'
 
             - '@addTree':
                 items:
@@ -88,7 +88,7 @@ Import:
 Template:
 
 .. code-block:: twig
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/imports/oro_product_view/layout.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/imports/oro_product_view/layout.html.twig
 
 
     {% block _product_container_widget %}
@@ -195,7 +195,7 @@ Template:
 Simple Product
 --------------
 
-In our case a simple product inherits all import properties. 
+In our case a simple product inherits all import properties.
 
 Create a layout update that includes the **oro_product_view** import and has the **conditions** to check if the current product has a **simple** product type.
 
@@ -205,7 +205,7 @@ Our simple product has the following look:
    :alt: Simple Product example
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/simple_product.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/simple_product.yml
 
 
     layout:
@@ -231,7 +231,7 @@ Our configurable product has the following look:
 Product Variants Block:
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/configurable_product.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/configurable_product.yml
 
 
     layout:
@@ -240,7 +240,7 @@ Product Variants Block:
 
         actions:
             - '@setBlockTheme':
-                themes: '@AcmeProduct/layouts/default/oro_product_frontend_product_view/configurable_product.html.twig'
+                themes: '@AcmeDemo/layouts/default/oro_product_frontend_product_view/configurable_product.html.twig'
 
             - '@add':
                 id: product_variants
@@ -255,7 +255,7 @@ Product Variants Block:
 Template:
 
 .. code-block:: twig
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/configurable_product.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/configurable_product.html.twig
 
 
     {% block _product_variants_widget %}
@@ -287,12 +287,12 @@ Block Types
 For this example we need to create a **product_variants** block type used in the **configurable product** layout update.
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/config/block_types.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/block_types.yml
 
 
     services:
     ...
-        acme_product.layout.type.product_variants:
+        acme_demo.layout.type.product_variants:
             parent: oro_layout.block_type.abstract_configurable_container
             calls:
                 - [setOptionsConfig, [{variants: {required: true}}]]
@@ -307,13 +307,13 @@ Data Providers
 Also, we need to create a **product_variants** data provider used in the **configurable product** layout update.
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/config/services.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
 
     services:
     ...
-        acme_product.layout.data_provider.product_variants:
-            class: Acme\Bundle\ProductBundle\Layout\DataProvider\ProductVariantsProvider
+        acme_demo.layout.data_provider.product_variants:
+            class: Acme\Bundle\DemoBundle\Layout\DataProvider\ProductVariantsProvider
             tags:
                 - { name: layout.data_provider, alias: product_variants }
     ...
@@ -321,9 +321,9 @@ Also, we need to create a **product_variants** data provider used in the **confi
 The following is an example of the data provider:
 
 .. code-block:: php
-   :caption: src/Acme/Bundle/ProductBundle/Layout/DataProvider/ProductVariantsProvider.php
+   :caption: src/Acme/Bundle/DemoBundle/Layout/DataProvider/ProductVariantsProvider.php
 
-    namespace Acme\Bundle\ProductBundle\Layout\DataProvider;
+    namespace Acme\Bundle\DemoBundle\Layout\DataProvider;
 
     use Symfony\Component\PropertyAccess\PropertyAccess;
 
@@ -364,7 +364,7 @@ Change Product Page by Category
 -------------------------------
 
 Every product view page contains the current **category_id** and the **category_ids** in the layout context. You can use these values to evaluate the layout **conditions**. When you customize any page, remember to use **Symfony Profiler** and look into the **Layout** section, where the current layout **context** data and actual layout **tree** can be found.
- 
+
 Please see the :ref:`Debug Information <dev-doc-frontend-layouts-debugging>` section for more details.
 
 Example 1 (by category ID)
@@ -380,13 +380,13 @@ The result is:
    :alt: Change Product Page by Category example 1
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/headlamps.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/headlamps.yml
 
 
     layout:
         actions:
             - '@setBlockTheme':
-                themes: '@AcmeProduct/layouts/default/oro_product_frontend_product_view/headlamps.html.twig'
+                themes: '@AcmeDemo/layouts/default/oro_product_frontend_product_view/headlamps.html.twig'
 
             - '@add':
                 id: product_sale_banner
@@ -395,12 +395,12 @@ The result is:
                 siblingId: ~
                 prepend: false
 
-        conditions: 'context["category_id"] == 4'
+        conditions: 'context["category_id"] == 5'
 
 Template:
 
 .. code-block:: twig
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/headlamps.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/headlamps.html.twig
 
 
     {% block _product_sale_banner_widget %}
@@ -414,9 +414,9 @@ Template:
 Example 2 (by parent category ID)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As an example, we want to add a sale banner to all products in first level category and their children. We have a category called "Furniture" with **id = 6**.
+As an example, we want to add a sale banner to all products in first level category and their children. We have a category called "Furniture" with **id = 12**.
 
-The condition is: **conditions: '6 in context["category_ids"]'**.
+The condition is: **conditions: '12 in context["category_ids"]'**.
 
 The result is:
 
@@ -424,13 +424,13 @@ The result is:
    :alt: Change Product Page by Category example 2
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/furniture.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/furniture.yml
 
 
     layout:
         actions:
             - '@setBlockTheme':
-                themes: '@AcmeProduct/layouts/default/oro_product_frontend_product_view/furniture.html.twig'
+                themes: '@AcmeDemo/layouts/default/oro_product_frontend_product_view/furniture.html.twig'
 
             - '@add':
                 id: product_sale_banner
@@ -439,12 +439,12 @@ The result is:
                 siblingId: ~
                 prepend: true
 
-        conditions: '6 in context["category_ids"]'
+        conditions: '12 in context["category_ids"]'
 
 Template:
 
 .. code-block:: twig
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/furniture.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/furniture.html.twig
 
 
     {% block _product_sale_banner_widget %}
@@ -465,7 +465,7 @@ First, create a **config** for the **page_templates** in our **theme**.
 
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/config/page_templates.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/config/page_templates.yml
 
 
     templates:
@@ -486,7 +486,7 @@ First, create a **config** for the **page_templates** in our **theme**.
 Next, add some **layout updates**:
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/custom/layout.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/custom/layout.yml
 
 
     layout:
@@ -498,13 +498,13 @@ Next, add some **layout updates**:
                 parentId: product_view_aside_container
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/additional/layout.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/additional/layout.yml
 
 
     layout:
         actions:
             - '@setBlockTheme':
-                themes: '@AcmeProduct/layouts/default/oro_product_frontend_product_view/page_template/additional/layout.html.twig'
+                themes: '@AcmeDemo/layouts/default/oro_product_frontend_product_view/page_template/additional/layout.html.twig'
             - '@add':
                 id: product_view_banner
                 blockType: block
@@ -513,7 +513,7 @@ Next, add some **layout updates**:
 Add some **templates**:
 
 .. code-block:: twig
-   :caption: src/Acme/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/additional/layout.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/page_template/additional/layout.html.twig
 
 
     {% block _product_view_banner_widget %}
@@ -528,7 +528,7 @@ Global Level
 
 To apply a **custom page template** to all products, go to **System > Configuration > Commerce > Design > Theme**.
 
-In the **Page Templates** section, choose **Custom page template** in the **Product Page** select. 
+In the **Page Templates** section, choose **Custom page template** in the **Product Page** select.
 
 In the storefront, here is what it will look like:
 

@@ -9,19 +9,19 @@ Create and Embed Custom Stylesheets
 SCSS files should be stored in the ``Resources/public/css/`` folder of a bundle and registered in the ``Resources/config/oro/assets.yml`` configuration file:
 
 .. code-block:: yaml
-   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/assets.yml
 
     css:
         inputs:
-            - 'bundles/acmenew/css/colors.scss'
-            - 'bundles/acmenew/css/top-menu.scss'
-            - 'bundles/acmenew/css/popups.scss'
-            - 'bundles/acmenew/css/product-view-page.scss'
+            - 'bundles/acmedemo/css/colors.scss'
+            - 'bundles/acmedemo/css/top-menu.scss'
+            - 'bundles/acmedemo/css/popups.scss'
+            - 'bundles/acmedemo/css/product-view-page.scss'
 
 You can import Sass modules from **node_modules**. Just prepend them with a ~ to tell Webpack that this is not a relative import.
 
 .. code-block:: yaml
-   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/assets.yml
 
     css:
         inputs:
@@ -40,20 +40,20 @@ If you want to keep your CSS code separately, you can dump all your SCSS files t
 To do that, define a new entry point in ``assets.yml``
 
 .. code-block:: yaml
-   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/assets.yml
 
     acme_styles: # entry point name
         inputs:
-            - 'bundles/acmenew/css/colors.scss'
-            - 'bundles/acmenew/css/top-menu.scss'
-            - 'bundles/acmenew/css/popups.scss'
-            - 'bundles/acmenew/css/product-view-page.scss'
+            - 'bundles/acmedemo/css/colors.scss'
+            - 'bundles/acmedemo/css/top-menu.scss'
+            - 'bundles/acmedemo/css/popups.scss'
+            - 'bundles/acmedemo/css/product-view-page.scss'
         output: 'css/acme.css' # new output file path relative to the public/ folder
 
 Use the corresponding placeholder to put compiled CSS file to the head of your document
 
 .. code-block:: yaml
-   :caption: src/Acme/Bundle/NewBundle/Resources/config/oro/placeholders.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/placeholders.yml
 
     placeholders:
         placeholders:
@@ -64,18 +64,18 @@ Use the corresponding placeholder to put compiled CSS file to the head of your d
 
         items:
             acme_css:
-                template: "@AcmeNew/acme_css.html.twig"
+                template: "@AcmeDemo/acme_css.html.twig"
 
 and finally, add the template for rendering the style tag.
 
 .. code-block:: html+jinja
-   :caption: src/Acme/Bundle/NewBundle/Resources/views/acme_css.html.twig
+    :caption: src/Acme/Bundle/DemoBundle/Resources/views/acme_css.html.twig
 
     <link rel="stylesheet" media="all" href="{{ asset('css/acme.css') }}" />
 
 .. warning::
 
-   You can also put your code in CSS files which will be compiled together with SCSS files. However, keep in mind that the CSS loader is deprecated by the ``node-sass`` npm module, and it will stop working after the module update.
+    You can also put your code in CSS files which will be compiled together with SCSS files. However, keep in mind that the CSS loader is deprecated by the ``node-sass`` npm module, and it will stop working after the module update.
 
 Development Tips
 ----------------
@@ -100,4 +100,4 @@ Just add the ``--watch`` (or ``-w``) option to the build command.
 Refer to :ref:`Asset Commands <bundle-docs-platform-asset-bundle-commands>` for more information.
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

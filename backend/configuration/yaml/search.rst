@@ -30,10 +30,10 @@ The ``search.yml`` file is used to configure how your entities are indexed to ma
 the internal search engine of OroPlatform. A fully working example can look like this:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/search.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/search.yml
 
     search:
-        Acme\DemoBundle\Entity\Product:
+        Acme\Bundle\DemoBundle\Entity\Product:
             alias: demo_product
             search_template: '@AcmeDemo/result.html.twig'
             label: Demo products
@@ -131,7 +131,7 @@ the ``name`` field in ``target_fields``:
 
 
     search:
-        Acme\ContactBunde\Entity\Contact:
+        Acme\Bundle\DemoBundle\Entity\Contact:
             fields:
                 - name: firstName
                   target_type: text
@@ -205,4 +205,4 @@ one of the configured :ref:`fields <reference-format-search-fields>`.
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

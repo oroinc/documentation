@@ -20,7 +20,7 @@ To add a pattern to the list of allowed URL patterns, call `addAllowedUrlPattern
 
 
     acme_frontend.guest_access.provider.guest_access_urls_provider:
-        class: Acme\Bundle\MyFrontendBundle\GuestAccess\Provider\MyGuestAccessAllowedUrlsProvider
+        class: Acme\Bundle\DemoBundle\GuestAccess\Provider\MyGuestAccessAllowedUrlsProvider
         tags: ['oro_frontend.guest_access_urls_provider']
 
 Frontend Datagrids

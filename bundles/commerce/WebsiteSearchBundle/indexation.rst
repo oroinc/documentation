@@ -128,7 +128,7 @@ If you need to add another placeholder type which is not declared yet, you will 
 .. code-block:: php
 
 
-    namespace AppBundle\WebsiteSearch;
+    namespace Acme\Bundle\DemoBundle\WebsiteSearch;
 
     use Oro\Bundle\WebsiteSearchBundle\Placeholder\AbstractPlaceholder;
 
@@ -137,17 +137,17 @@ If you need to add another placeholder type which is not declared yet, you will 
         const NAME = 'FOO_ID';
 
         /**
-         * {@inheritDoc}
+         * @inheritDoc
          */
-        public function getPlaceholder()
+        public function getPlaceholder(): string
         {
             return self::NAME;
         }
 
         /**
-         * {@inheritDoc}
+         * @inheritDoc
          */
-        public function getDefaultValue()
+        public function getDefaultValue(): string
         {
             return '0';
         }
@@ -158,8 +158,8 @@ If you need to add another placeholder type which is not declared yet, you will 
 
 
     services:
-        app.website_search.foo_placeholder:
-            class: AppBundle\WebsiteSearch\FooPlaceholder
+        acme_demo.website_search.foo_placeholder:
+            class: Acme\Bundle\DemoBundle\WebsiteSearch\FooPlaceholder
             tags:
                 - { name: website_search.placeholder }
 
@@ -174,7 +174,7 @@ Asynchronous indexer is using `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncMe
 
 * on 1 indexation request message to handle entity `Product` within all websites `[1, 2, 3, 4, 5]` it splits the message into 5 different smaller messages, that allows handling each `Product` entity with each websiteId separately
 
-* on messages that contain large amounts of entityIds, it splits entityIds table into smaller chunks, for example 1000 entityIds will be split into 10 messages with 100 entityIds each  
+* on messages that contain large amounts of entityIds, it splits entityIds table into smaller chunks, for example 1000 entityIds will be split into 10 messages with 100 entityIds each
 
 For each message `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncMessaging\\SearchMessageProcessor` builds jobs with unique names to avoid parallel reindexation of same sets of entities, and runs them **unique** performing actual reindexation. In case, no parameters have been passed (empty class and context), the job will **NOT** be run as unique.
 
@@ -349,7 +349,7 @@ The index is divided into groups, which include specific fields that should be u
 
 Out of the box, the following indexation field groups are configured for the Product entity:
 
-- *main* - all values that affect the `all_text` fields  (ID, SKU, units, type, attribute, etc.) 
+- *main* - all values that affect the `all_text` fields  (ID, SKU, units, type, attribute, etc.)
 
 - *image* - product images.
 
@@ -395,7 +395,7 @@ An example of the indexation request for a pricing field group:
 .. code-block:: php
 
 
-    namespace Acme\Bundle\Index;
+    namespace Acme\Bundle\DemoBundle\Index;
 
     use Symfony\Component\EventDispatcher\EventDispatcherInterface;
     use Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent;
@@ -420,7 +420,7 @@ An example of the indexation listener for a pricing field group:
 .. code-block:: php
 
 
-    namespace Acme\Bundle\EventListener;
+    namespace Acme\Bundle\DemoBundle\EventListener;
 
     use Oro\Bundle\WebsiteSearchBundle\Engine\Context\ContextTrait;
 

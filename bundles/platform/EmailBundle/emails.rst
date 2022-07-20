@@ -194,36 +194,46 @@ Emails can be loaded from different sources, for example, using IMAP protocol or
 For example:
 
 .. code-block:: php
-   :caption: AcmeEmailBodyLoader.php
+    :caption: src/Acme/Bundle/DemoBundle/Email/SomeEmailBodyLoader.php
 
-    class AcmeEmailBodyLoader implements EmailBodyLoaderInterface
+    namespace Acme\Bundle\DemoBundle\Email;
+
+    use Acme\Bundle\DemoBundle\Entity\SomeEmailOrigin;
+    use Doctrine\ORM\EntityManager;
+    use Oro\Bundle\EmailBundle\Entity\Email;
+    use Oro\Bundle\EmailBundle\Entity\EmailFolder;
+    use Oro\Bundle\EmailBundle\Entity\EmailOrigin;
+    use Oro\Bundle\EmailBundle\Provider\EmailBodyLoaderInterface;
+
+    class SomeEmailBodyLoader implements EmailBodyLoaderInterface
+    {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function supports(EmailOrigin $origin)
         {
-            return $origin instanceof AcmeEmailOrigin;
+            return $origin instanceof SomeEmailOrigin;
         }
+
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function loadEmailBody(EmailFolder $folder, Email $email, EntityManager $em)
         {
+            // implementation
         }
     }
-
-
 
 .. code-block:: yaml
    :caption: services.yml
 
     services:
-        oro_acme.email_body_loader:
+        acme_demo.email_body_loader:
             public: false
-            class: Acme\Bundle\AcmeBundle\Email\AcmeEmailBodyLoader
+            class: Acme\Bundle\DemoBundle\Email\SomeEmailBodyLoader
             arguments:
             tags:
-                - { name: oro_acme.email_body_loader }
+                - { name: acme_demo.email_body_loader }
 
 Key Classes
 -----------

@@ -22,7 +22,7 @@ Configuration
 
     workflows:
         phone_call:
-            entity: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneCall
+            entity: Acme\Bundle\DemoBundle\Entity\PhoneCall
             start_step: start_call
             steps:
                 start_call:
@@ -38,7 +38,7 @@ Configuration
                 phone_call:
                     type: entity
                     options:
-                        class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneCall
+                        class: Acme\Bundle\DemoBundle\Entity\PhoneCall
                 call_timeout:
                     type: integer
                 call_successfull:
@@ -52,7 +52,7 @@ Configuration
                 conversation:
                     type: entity
                     options:
-                        class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
+                        class: Acme\Bundle\DemoBundle\Entity\PhoneConversation
             variable_definitions:
                 variables:
                     var1:
@@ -103,7 +103,7 @@ Configuration
                 connected_definition: # Try to make call connected
                     # Check that timeout is set
                     conditions:
-                        @not_blank: [$call_timeout]
+                        '@not_blank': [$call_timeout]
                     # Set call_successfull = true
                     actions:
                         - '@assign_value':
@@ -111,7 +111,7 @@ Configuration
                 not_answered_definition: # Callee did not answer
                     # Make sure that caller waited at least 60 seconds
                     conditions: # call_timeout not empty and >= 60
-                        @and:
+                        '@and':
                             - '@not_blank': [$call_timeout]
                             - '@ge': [$call_timeout, 60]
                     # Set call_successfull = false
@@ -121,7 +121,7 @@ Configuration
                 end_conversation_definition:
                     conditions:
                         # Check required properties are set
-                        @and:
+                        '@and':
                             - '@not_blank': [$conversation_result]
                             - '@not_blank': [$conversation_comment]
                             - '@not_blank': [$conversation_successful]
@@ -130,7 +130,7 @@ Configuration
                     actions:
                         - '@create_entity': # create PhoneConversation
                             parameters:
-                                class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
+                                class: Acme\Bundle\DemoBundle\Entity\PhoneConversation
                                 attribute: $conversation
                                 data:
                                     result: $conversation_result
@@ -141,7 +141,7 @@ Configuration
 Translation File Configuration
 ------------------------------
 
-To define translatable textual representation of the configuration fields, create translation file `DemoWorkflowBundle\\Resources\\translations\\workflows.en.yml` with the  following content.
+To define translatable textual representation of the configuration fields, create translation file `Acme\\Bundle\\DemoBundle\\Resources\\translations\\workflows.en.yml` with the  following content.
 
 .. code-block:: yaml
 
@@ -193,13 +193,13 @@ PhoneCall Entity
 
 .. code-block:: php
 
-    namespace Acme\Bundle\DemoWorkflowBundle\Entity;
+    namespace Acme\Bundle\DemoBundle\Entity;
 
     use Doctrine\Common\Collections\ArrayCollection;
     use Doctrine\ORM\Mapping as ORM;
 
     /**
-     * @ORM\Table(name="acme_demo_workflow_phone_call")
+     * @ORM\Table(name="acme_demo_phone_call")
      * @ORM\Entity
      */
     class PhoneCall
@@ -287,12 +287,12 @@ PhoneConversation Entity
 
 .. code-block:: php
 
-    namespace Acme\Bundle\DemoWorkflowBundle\Entity;
+    namespace Acme\Bundle\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
 
     /**
-     * @ORM\Table(name="acme_demo_workflow_phone_conversation")
+     * @ORM\Table(name="acme_demo_phone_conversation")
      * @ORM\Entity
      */
     class PhoneConversation

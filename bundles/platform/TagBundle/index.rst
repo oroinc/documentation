@@ -43,18 +43,17 @@ The following example shows it:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\TestBundle\Migrations\Schema\v1_0;
+    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
-
     use Oro\Bundle\EntityExtendBundle\Migration\OroOptions;
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-    class AcmeTestBundle implements Migration
+    class AcmeDemoBundle implements Migration
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function up(Schema $schema, QueryBag $queries)
         {

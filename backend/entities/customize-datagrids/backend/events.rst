@@ -36,19 +36,20 @@ As an illustration, let's add one more column to a specific datagrid. For this, 
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
+    namespace Acme\Bundle\DemoBundle\EventListener\Datagrid;
 
     use Oro\Bundle\DataGridBundle\Event\BuildBefore;
 
     class AdditionalColumnDatagridListener
     {
         /**
-        * @param BuildBefore $event
-        */
-        public function onBuildBefore(BuildBefore $event)
+         * @param BuildBefore $event
+         * @return void
+         */
+        public function onBuildBefore(BuildBefore $event): void
         {
             $config = $event->getConfig();
-            $config->offsetSetByPath('[columns][myCustomColumn]', ['label' => 'acme.my_custom_column.label']);
+            $config->offsetSetByPath('[columns][myCustomColumn]', ['label' => 'acme.demo.my_custom_column.label']);
             $config->offsetAddToArrayByPath('[source][query][select]', ['123 as myCustomColumn']);
         }
     }
@@ -59,8 +60,8 @@ Once the listener is created, register it in `services.yml`:
 .. code-block:: yaml
 
 
-    acme_bundle.event_listener.datagrid.additional_column:
-        class: Acme\Bundle\AcmeBundle\EventListener\Datagrid\AdditionalColumnDatagridListener
+    acme_demo.event_listener.datagrid.additional_column:
+        class: Acme\Bundle\DemoBundle\EventListener\Datagrid\AdditionalColumnDatagridListener
         tags:
             - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.before.DATAGRID_NAME, method: onBuildBefore }
 
@@ -85,17 +86,28 @@ As an example, let us filter the datagrid by a certain value from the request pa
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
+    namespace Acme\Bundle\DemoBundle\EventListener\Datagrid;
 
-    use Oro\Bundle\DataGridBundle\Event\BuildAfter;
     use Oro\Bundle\DataGridBundle\Datasource\Orm\OrmDatasource;
+    use Oro\Bundle\DataGridBundle\Event\BuildAfter;
+    use Symfony\Component\HttpFoundation\RequestStack;
 
     class FilterByRequestParamListener
     {
+        protected RequestStack $requestStack;
+
+        /**
+         * @param RequestStack $requestStack
+         */
+        public function __construct(RequestStack $requestStack) {
+            $this->requestStack = $requestStack;
+        }
+
         /**
          * @param BuildAfter $event
+         * @return void
          */
-        public function onBuildAfter(BuildAfter $event)
+        public function onBuildAfter(BuildAfter $event): void
         {
             $datasource = $event->getDatagrid()->getDatasource();
             if (!$datasource instanceof OrmDatasource) {
@@ -118,8 +130,10 @@ Once the listener is created, register it in ``services.yml``:
 .. code-block:: yaml
 
 
-    acme_bundle.event_listener.datagrid.filter_by_request_param:
-    class: Acme\Bundle\AcmeBundle\EventListener\Datagrid\FilterByRequestParamListener
+    acme_demo.event_listener.datagrid.filter_by_request_param:
+    class: Acme\Bundle\DemoBundle\EventListener\Datagrid\FilterByRequestParamListener
+    arguments:
+        - '@request_stack'
     tags:
         - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.after.DATAGRID_NAME, method: onBuildAfter }
 
@@ -170,17 +184,18 @@ you can create an event listener and fetch the data once the rows are fetched fr
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
+    namespace Acme\Bundle\DemoBundle\EventListener\Datagrid;
 
-    use Oro\Bundle\DataGridBundle\Event\OrmResultAfter;
     use Oro\Bundle\DataGridBundle\Datasource\ResultRecord;
+    use Oro\Bundle\DataGridBundle\Event\OrmResultAfter;
 
     class ComplexDataDatagridListener
     {
         /**
          * @param OrmResultAfter $event
+         * @return void
          */
-        public function onResultAfter(OrmResultAfter $event)
+        public function onResultAfter(OrmResultAfter $event): void
         {
             /** @var ResultRecord[] $records */
             $records = $event->getRecords();
@@ -200,8 +215,8 @@ Once the event listener is created, register it in ``services.yml``:
 .. code-block:: yaml
 
 
-    acme_bundle.event_listener.datagrid.complex_data:
-        class: Acme\Bundle\AcmeBundle\EventListener\Datagrid\ComplexDataDatagridListener
+    acme_demo.event_listener.datagrid.complex_data:
+        class: Acme\Bundle\DemoBundle\EventListener\Datagrid\ComplexDataDatagridListener
         tags:
             - { name: kernel.event_listener, event: oro_datagrid.orm_datasource.result.after.DATAGRID_NAME, method: onResultAfter }
 

@@ -27,40 +27,42 @@ Add Discount
 
 To add a new discount that can be selected in promotion configuration, create a discount class that implements ``Oro\Bundle\PromotionBundle\Discount\DiscountInterface``. You can use ``Oro\Bundle\PromotionBundle\Discount\AbstractDiscount`` as a base class for it. After that, register your discount as a `shared: false` service, and add it to the ``Oro\Bundle\PromotionBundle\Discount\DiscountFactory`` by invoking the `addType` method in the service definition:
 
-.. code-block:: none
+.. code-block:: yaml
 
-    app.promotion.discount.my_discount:
-        class: AppBundle\Promotion\Discount\OrderDiscount
-        shared: false
+    services:
+        acme_demo.promotion.discount.my_discount:
+            class: Acme\Bundle\DemoBundle\Promotion\Discount\OrderDiscount
+            shared: false
 
-    oro_promotion.discount_factory:
-        class: Oro\Bundle\PromotionBundle\Discount\DiscountFactory
-        public: false
-        arguments:
-            - '@service_container'
-        calls:
-            - ['addType', ['order', 'oro_promotion.discount.order_discount']]
-            - ['addType', ['line_item', 'oro_promotion.discount.line_item_discount']]
-            - ['addType', ['buy_x_get_y', 'oro_promotion.discount.buy_x_get_y_discount']]
-            - ['addType', ['shipping', 'oro_promotion.discount.shipping_discount']]
-            - ['addType', ['my_discount', 'app.promotion.discount.my_discount']]
+        oro_promotion.discount_factory:
+            class: Oro\Bundle\PromotionBundle\Discount\DiscountFactory
+            public: false
+            arguments:
+                - '@service_container'
+            calls:
+                - ['addType', ['order', 'oro_promotion.discount.order_discount']]
+                - ['addType', ['line_item', 'oro_promotion.discount.line_item_discount']]
+                - ['addType', ['buy_x_get_y', 'oro_promotion.discount.buy_x_get_y_discount']]
+                - ['addType', ['shipping', 'oro_promotion.discount.shipping_discount']]
+                - ['addType', ['my_discount', 'acme_demo.promotion.discount.my_discount']]
 
 Add Discount Form Type
 ^^^^^^^^^^^^^^^^^^^^^^
 
 You also need to specify the FormType information for your discount. First, create a FormType for it. You can use some of the already available ones for reference, for example, ``Oro\Bundle\PromotionBundle\Form\Type\LineItemDiscountOptionsType``. Next, add it to ``Oro\Bundle\PromotionBundle\Provider\DiscountFormTypeProvider`` in services:
 
-.. code-block:: none
+.. code-block:: yaml
 
-    oro_promotion.discount_type_to_form_type_provider:
-        class: Oro\Bundle\PromotionBundle\Provider\DiscountFormTypeProvider
-        calls:
-            - ['setDefaultFormType', ['oro_promotion_order_discount_options']]
-            - ['addFormType', ['order', 'oro_promotion_order_discount_options']]
-            - ['addFormType', ['line_item', 'oro_promotion_line_item_discount_options']]
-            - ['addFormType', ['buy_x_get_y', 'oro_promotion_buy_x_get_y_discount_options']]
-            - ['addFormType', ['shipping', 'oro_promotion_shipping_discount_options']]
-            - ['addFormType', ['my_discount', 'my_discount_options_form_type_alias']]
+    services:
+        oro_promotion.discount_type_to_form_type_provider:
+            class: Oro\Bundle\PromotionBundle\Provider\DiscountFormTypeProvider
+            calls:
+                - ['setDefaultFormType', ['oro_promotion_order_discount_options']]
+                - ['addFormType', ['order', 'oro_promotion_order_discount_options']]
+                - ['addFormType', ['line_item', 'oro_promotion_line_item_discount_options']]
+                - ['addFormType', ['buy_x_get_y', 'oro_promotion_buy_x_get_y_discount_options']]
+                - ['addFormType', ['shipping', 'oro_promotion_shipping_discount_options']]
+                - ['addFormType', ['my_discount', 'my_discount_options_form_type_alias']]
 
 Organize New Discount Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -83,13 +85,14 @@ Discount Context Converters
 
 ``Oro\Bundle\PromotionBundle\Discount\DiscountContext`` is created based on the source entity by discount context converters. If you need to support a new source entity, create a class that implements ``Oro\Bundle\PromotionBundle\Discount\Converter\DiscountContextConverterInterface`` and tag its service with `'oro_promotion.discount_context_converter'` to be able to convert this entity into context.
 
-.. code-block:: none
+.. code-block:: yaml
 
-    app.promotion.custom_entity_context_data_converter:
-        class: AppBundle\Promotion\CustomEntityContextDataConverter
-        public: false
-        tags:
-            - { name: 'oro_promotion.discount_context_converter' }
+    services:
+        acme_demo.promotion.custom_entity_context_data_converter:
+            class: Acme\Bundle\DemoBundle\Promotion\CustomEntityContextDataConverter
+            public: false
+            tags:
+                - { name: 'oro_promotion.discount_context_converter' }
 
 The discount converter should return ``Oro\Bundle\PromotionBundle\Discount\DiscountContext``. Also, keep in mind that line items in ``Oro\Bundle\PromotionBundle\Discount\DiscountContext::$lineItems`` are stored in a unified format ``Oro\Bundle\PromotionBundle\Discount\DiscountLineItem``. ``Oro\Bundle\ShoppingListBundle\Entity\LineItem`` and ``Oro\Bundle\OrderBundle\Entity\OrderLineItem`` transform line items to this format with the help of converters.
 
@@ -119,13 +122,14 @@ Promotions are filtered based on context. Each entity to which promotions can be
 
 If you need to support a new source entity, you should create a class that implements ``Oro\Bundle\PromotionBundle\Context\ContextDataConverterInterface`` and tag its service with `'oro_promotion.promotion_context_converter'`, to be able to convert this entity into context.
 
-.. code-block:: none
+.. code-block:: yaml
 
-    app.promotion.custom_entity_context_data_converter:
-        class: AppBundle\Promotion\CustomEntityContextDataConverter
-        public: false
-        tags:
-            - { name: 'oro_promotion.promotion_context_converter' }
+    services:
+        acme_demo.promotion.custom_entity_context_data_converter:
+            class: Acme\Bundle\DemoBundle\Promotion\CustomEntityContextDataConverter
+            public: false
+            tags:
+                - { name: 'oro_promotion.promotion_context_converter' }
 
 Add a New Filter
 ^^^^^^^^^^^^^^^^
@@ -134,15 +138,16 @@ You can create your own promotion filtration service to apply additional restric
 First, you need to create a class that implements ``Oro\Bundle\RuleBundle\RuleFiltration\RuleFiltrationServiceInterface`` and contains the required filtration logic.
 Next, define a service for this class that decorates `oro_promotion.rule_filtration.service` and accepts the decorated service as a parameter:
 
-.. code-block:: none
+.. code-block:: yaml
 
-    app.promotion.rule_filtration.my_filter:
-        class: AppBundle\Promotion\RuleFiltration\MyFilterFiltrationService
-        public: false
-        decorates: oro_promotion.rule_filtration.service
-        decoration_priority: 300
-        arguments:
-            - '@.inner'
+    services:
+        acme_demo.promotion.rule_filtration.my_filter:
+            class: Acme\Bundle\DemoBundle\Promotion\RuleFiltration\MyFilterFiltrationService
+            public: false
+            decorates: oro_promotion.rule_filtration.service
+            decoration_priority: 300
+            arguments:
+                - '@.inner'
 
 Please keep in mind the `decoration_priority` affects the order in which filters are executed.
 
@@ -157,11 +162,12 @@ To make your filters skippable, you may inherit `AbstractSkippableFiltrationServ
 
 To skip a filter during coupon application, the `disableFilter` method should be called for the `oro_promotion.handler.frontend_coupon_handler` service with the filter's class name:
 
-.. code-block:: none
+.. code-block:: yaml
 
-    oro_promotion.handler.frontend_coupon_handler:
-        calls:
-            - [disableFilter, ['Oro\Bundle\PromotionBundle\RuleFiltration\ShippingFiltrationService']]
+    services:
+        oro_promotion.handler.frontend_coupon_handler:
+            calls:
+                - [disableFilter, ['Oro\Bundle\PromotionBundle\RuleFiltration\ShippingFiltrationService']]
 
 Discount Strategy
 -----------------

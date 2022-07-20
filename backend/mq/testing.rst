@@ -20,7 +20,7 @@ The following example shows how to test whether a message was sent.
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Tests\Functional;
+    namespace Acme\Bundle\DemoBundle\Tests\Functional;
 
     use Oro\Bundle\MessageQueueBundle\Test\Functional\MessageQueueExtension;
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -85,9 +85,9 @@ For example:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Tests\Unit;
+    namespace Acme\Bundle\DemoBundle\Tests\Unit;
 
-    use Acme\Bundle\AcmeBundle\SomeClass;
+    use Acme\Bundle\DemoBundle\SomeClass;
     use Oro\Bundle\MessageQueueBundle\Test\Unit\MessageQueueExtension;
 
     class SomeTest extends \PHPUnit\Framework\TestCase
@@ -106,4 +106,4 @@ For example:
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

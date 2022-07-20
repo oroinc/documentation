@@ -35,7 +35,7 @@ This param will be passed to the datagrid parameter bag and will be bound to the
                     select:
                         - u
                     from:
-                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
+                        { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
                 where:
                     and:
                         - u.group = :groupId
@@ -43,7 +43,7 @@ This param will be passed to the datagrid parameter bag and will be bound to the
                     - groupId
 
 .. hint::
-        Read more in :ref:`parameters binding <datagrids-customize-parameter-binding>`.
+    Read more in :ref:`parameters binding <datagrids-customize-parameter-binding>`.
 
 Problem 2
 ~~~~~~~~~
@@ -56,7 +56,6 @@ For example, *a grid should show users for a group that are currently editing an
 To solve this problem, we have to modify the query. We are going to add an additional field that will show the value of the "assigned state".
 
 .. code-block:: yaml
-
 
     datagrids:
         acme-demo-grid:
@@ -76,7 +75,7 @@ To solve this problem, we have to modify the query. We are going to add an addit
                                   THEN true ELSE false END
                              END) as isAssigned
                     from:
-                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
+                        { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
                 bind_parameters:
                     - groupId
             columns:
@@ -141,7 +140,6 @@ The next step is to modify the query. We are going to add an additional field ``
 
 .. code-block:: yaml
 
-
     datagrids:
         acme-demo-grid:
             source:
@@ -152,7 +150,7 @@ The next step is to modify the query. We are going to add an additional field ``
                         - u.username
                         - CASE WHEN u.enabled = true THEN 'enabled' ELSE 'disabled' END as enabled
                     from:
-                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
+                        { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
                 bind_parameters:
                     - groupId
             options:
@@ -177,10 +175,9 @@ Example for radio buttons:
 
 .. code-block:: yaml
 
-
     datagrids:
         acme-demo-grid:
-            ... # some configuration
+            # ... some configuration
             columns:
                 username:
                     label: oro.user.username.label
@@ -223,7 +220,6 @@ To solve this problem, use ``@oro_entity_extend.enum_value_provider->getEnumChoi
 
 .. code-block:: yaml
 
-
     choices:
        enabled: Active
        disabled: Inactive
@@ -231,7 +227,6 @@ To solve this problem, use ``@oro_entity_extend.enum_value_provider->getEnumChoi
 Example:
 
 .. code-block:: yaml
-
 
     datagrids:
         acme-demo-grid:
@@ -259,10 +254,9 @@ Example:
 
 .. code-block:: yaml
 
-
     datagrids:
         acme-demo-grid:
-            ... # some configuration
+            # ... some configuration
             options:
                 jsmodules:
                   - your/builder/amd/module/name
@@ -281,10 +275,9 @@ Example:
 
 .. code-block:: yaml
 
-
     datagrids:
         acme-demo-grid:
-            ... # some configuration
+            # ... some configuration
             options:
                 routerEnabled: false
 
@@ -301,13 +294,12 @@ Example:
 
 .. code-block:: yaml
 
-
     datagrids:
         acme-demo-grid:
-            ... # some configuration
+            # ... some configuration
             source:
                 skip_acl_apply: true
-                ... # some configuration of source
+                # ... some configuration of source
 
 
 Problem 8
@@ -320,26 +312,24 @@ Problem 8
 - configure the grid (set option 'skip_acl_apply' to TRUE)
 - override option 'acl_resource' and to make it ``false``
 
-  .. code-block:: yaml
+    .. code-block:: yaml
 
-
-      datagrids:
-          acme-demo-grid:
-              ... # some configuration
-              acl_resource: false
-              source:
-                  skip_acl_apply: true
-                  ... # some configuration of source
+        datagrids:
+            acme-demo-grid:
+                # some configuration
+                acl_resource: false
+                source:
+                    skip_acl_apply: true
+                    # some configuration of source
 
 - declare your own grid listener
 
-  .. code-block:: yaml
+    .. code-block:: yaml
 
-
-      my_bundle.event_listener.my_grid_listener:
-              class: 'Acme\DemoBundle\EventListener\MyGridListener'
-              tags:
-                  - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.before.my-grid-name, method: onBuildBefore }
+        my_bundle.event_listener.my_grid_listener:
+            class: 'Acme\Bundle\DemoBundle\EventListener\MyGridListener'
+            tags:
+                - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.before.my-grid-name, method: onBuildBefore }
 
 - implement the grid listener, for example:
 
@@ -356,15 +346,14 @@ Problem 9
 - configure the grid with option 'skip_acl_apply' set to TRUE, which will ignore applying of ACL to the source query of the grid
 - configure the grid with option 'acl_resource' set to the name of an ACL resource, it will check the permission to this ACL resource before the datagrid data is loaded
 
-  .. code-block:: yaml
+    .. code-block:: yaml
 
-
-      datagrids:
-          acme-demo-grid:
-              ... # some configuration
-              acl_resource: 'acme_demo_entity_view'
-              source:
-                  skip_acl_apply: true
+        datagrids:
+            acme-demo-grid:
+                # ... some configuration
+                acl_resource: 'acme_demo_entity_view'
+                source:
+                    skip_acl_apply: true
 
 Problem 10
 ~~~~~~~~~~
@@ -374,36 +363,56 @@ Problem 10
 **Solution**:
 
 - Create a datagrid event listener listening to the `BuildBefore` event and add columns only if the user has appropriate permissions
+    .. code-block:: php
 
-  .. code-block:: php
+        namespace Acme\Bundle\DemoBundle\EventListener\Datagrid;
 
-      namespace Acme\Bundle\AcmeBundle\EventListener\Datagrid;
+        use Oro\Bundle\DataGridBundle\Datagrid\Common\DatagridConfiguration;
+        use Oro\Bundle\DataGridBundle\Event\BuildBefore;
+        use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 
-      use Oro\Bundle\DataGridBundle\Event\BuildBefore;
-      use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
+        class BudgetColumnsListener
+        {
+            private AuthorizationCheckerInterface $authorizationChecker;
 
-      class BudgetColumnsListener
-      {
-          /** @var AuthorizationCheckerInterface */
-          private $authorizationChecker;
+            /**
+             * @param AuthorizationCheckerInterface $authorizationChecker
+             */
+            public function __construct(AuthorizationCheckerInterface $authorizationChecker)
+            {
+                $this->authorizationChecker = $authorizationChecker;
+            }
 
-          public function __construct(AuthorizationCheckerInterface $authorizationChecker)
-          {
-              $this->authorizationChecker = $authorizationChecker;
-          }
+            public function onBuildBefore(BuildBefore $event): void
+            {
+                if (!$this->authorizationChecker->isGranted('acme_demo_show_budget_columns')) {
+                    return;
+                }
 
-          public function onBuildBefore(BuildBefore $event)
-          {
-              if (!$this->authorizationChecker->isGranted('acme_bundle_show_budget_columns')) {
-                  return;
-              }
+                $config = $event->getConfig();
 
-              $config = $event->getConfig();
+                $this->addSourceQueryConfig($config);
+                $this->addColumnsConfig($config);
+            }
 
-              $this->addSourceQueryConfig($config);
-              $this->addColumnsConfig($config);
-          }
-      }
+            /**
+             * @param DatagridConfiguration $config
+             * @return void
+             */
+            private function addSourceQueryConfig(DatagridConfiguration $config): void
+            {
+                // implementation here
+            }
+
+            /**
+             * @param DatagridConfiguration $config
+             * @return void
+             */
+            private function addColumnsConfig(DatagridConfiguration $config)
+            {
+                // implementation here
+            }
+        }
 
 
 Problem 11
@@ -422,78 +431,71 @@ There are several ways to configure these messages.
 
 * If the `entityHint` option is set in the grid configuration, it is used to compile `noDataMessage`.
 
-  For example:
+    For example:
 
-  .. code-block:: yaml
+    .. code-block:: yaml
 
-
-     datagrids:
-         acme-demo-grid:
-             source:
-                 type: orm
-                 query:
-                     select:
-                         - u.id
-                         - u.username
-                     from:
-                         { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
-             options:
-                 entityHint: oro.user.entity_plural_label
+        datagrids:
+            acme-demo-grid:
+                source:
+                    type: orm
+                    query:
+                        select:
+                            - u.id
+                            - u.username
+                        from:
+                            { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
+                options:
+                    entityHint: oro.user.entity_plural_label
 
 "There are no users" message is displayed for an empty grid and "No users were found to match your search. Try modifying your search criteria..." is shown for empty filtered grid.
 
 * If `entityHint` is not set in the grid configuration, then it is automatically taken from the entity on the basis of which this grid is built.
 
-  For example:
+    For example:
 
-  .. code-block:: yaml
+    .. code-block:: yaml
 
-
-      datagrids:
-          acme-demo-grid:
-              source:
-                  type: orm
-                  query:
-                      select:
-                          - u.id
-                          - u.username
-                      from:
-                          { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
-          options:
-         ...
+        datagrids:
+            acme-demo-grid:
+                source:
+                    type: orm
+                    query:
+                        select:
+                            - u.id
+                            - u.username
+                        from:
+                            { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
+            options:
+                # ...
 
 "There are no users" message is shown for empty grid and "No users were found to match your search. Try modifying your search criteria..." is shown for empty filtered grid.
 
 * If `noDataMessages` option is set in the grid configuration, then corresponding messages for empty grid and empty filtered grid are taken from the specified translation keys.
 
-  For example:
+    For example:
 
-  .. code-block:: yaml
+    .. code-block:: yaml
 
+        datagrids:
+            acme-demo-grid:
+                source:
+                    type: orm
+                    query:
+                        select:
+                            - u.id
+                            - u.username
+                        from:
+                            { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
+            options:
+                noDataMessages:
+                    emptyGrid: acme.my_custom_empty_grid_message
+                    emptyFilteredGrid: acme.my_custom_empty_filtered_grid_message
+            # ...
 
-     datagrids:
-         acme-demo-grid:
-             source:
-                 type: orm
-                 query:
-                     select:
-                         - u.id
-                         - u.username
-                     from:
-                         { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
-         options:
-             noDataMessages:
-                 emptyGrid: acme.my_custom_empty_grid_message
-                 emptyFilteredGrid: acme.my_custom_empty_filtered_grid_message
-        ...
+    .. code-block:: yaml
+        :caption: Resources/translations/messages.en.yml
 
-
-  messages.en.yml:
-
-  .. code-block:: yaml
-
-
-      acme:
-          my_custom_empty_grid_message: 'There are no users'
-          my_custom_empty_filtered_grid_message: 'No users were found to match your search. Try modifying your search criteria...'
-
+        acme:
+            my_custom_empty_grid_message: 'There are no users'
+            my_custom_empty_filtered_grid_message: 'No users were found to match your search. Try modifying your search criteria...'

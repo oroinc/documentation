@@ -21,7 +21,7 @@ The ``acls.yml`` file of a bundle can contain a map with access control lists. E
 is the unique name of an ACL while the values for each ACL is a map of options:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/acls.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
     acls:
 
@@ -35,7 +35,7 @@ is the unique name of an ACL while the values for each ACL is a map of options:
         user_delete:
             label: Delete Users
             type: entity
-            class: Acme\DemoBundle\Entity\User
+            class: Acme\Bundle\DemoBundle\Entity\User
             permission: DELETE
 
 ``bindings``

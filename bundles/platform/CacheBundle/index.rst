@@ -23,8 +23,8 @@ You can inject it into the service where you need to cache the data:
 .. code-block:: none
 
     services:
-        acme.my_data_cache.service:
-            class: ACME\Bundle\ACMEBundle\Provider\CacheService
+        acme_demo.my_data_cache.service:
+            class: Acme\Bundle\DemoBundle\Provider\CacheService
             public: false
             arguments:
                 - '@oro.data.cache'
@@ -34,13 +34,13 @@ You can also set a namespace for the cache pool that extends ``oro.data.cache``:
 .. code-block:: none
 
     services:
-        acme.data.cache:
+        acme_demo.data.cache:
             parent: oro.data.cache
             tags:
-                - { name: 'cache.pool', namespace: 'acme' }
+                - { name: 'cache.pool', namespace: 'acme_demo' }
 
-        acme.my_data_cache.service:
-            class: ACME\Bundle\ACMEBundle\Provider\CacheService
+        acme_demo.my_data_cache.service:
+            class: Acme\Bundle\DemoBundle\Provider\CacheService
             arguments:
                 - '@acme.data.cache'
 
@@ -71,7 +71,7 @@ To implement 3rd approach for your configuration, you need to take the following
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\DependencyInjection;
+    namespace Acme\Bundle\DemoBundle\DependencyInjection;
 
     use Symfony\Component\Config\Definition\Builder\TreeBuilder;
     use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -79,7 +79,7 @@ To implement 3rd approach for your configuration, you need to take the following
     class MyConfiguration implements ConfigurationInterface
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function getConfigTreeBuilder(): TreeBuilder
         {
@@ -95,19 +95,23 @@ To implement 3rd approach for your configuration, you need to take the following
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Provider;
+    namespace Acme\Bundle\DemoBundle\Provider;
 
-    use Acme\Bundle\AcmeBundle\DependencyInjection\MyConfiguration;
+    use Acme\Bundle\DemoBundle\DependencyInjection\MyConfiguration;
+    use Oro\Bundle\ActionBundle\Configuration\ConfigurationProviderInterface;
     use Oro\Component\Config\Cache\PhpArrayConfigProvider;
     use Oro\Component\Config\Loader\CumulativeConfigLoader;
     use Oro\Component\Config\Loader\CumulativeConfigProcessorUtil;
     use Oro\Component\Config\Loader\YamlCumulativeFileLoader;
     use Oro\Component\Config\ResourcesContainerInterface;
 
-    class MyConfigurationProvider extends PhpArrayConfigProvider
+    class MyConfigurationProvider extends PhpArrayConfigProvider  implements ConfigurationProviderInterface
     {
         private const CONFIG_FILE = 'Resources/config/oro/my_config.yml';
 
+        /**
+         * @inheritDoc
+         */
         public function getConfiguration(): array
         {
             return $this->doGetConfig();
@@ -118,12 +122,12 @@ To implement 3rd approach for your configuration, you need to take the following
          */
         protected function doLoadConfig(ResourcesContainerInterface $resourcesContainer)
         {
-            $configs = [];
+            $configs      = [];
             $configLoader = new CumulativeConfigLoader(
                 'my_config',
                 new YamlCumulativeFileLoader(self::CONFIG_FILE)
             );
-            $resources = $configLoader->load($resourcesContainer);
+            $resources    = $configLoader->load($resourcesContainer);
             foreach ($resources as $resource) {
                 $configs[] = $resource->data;
             }
@@ -142,8 +146,8 @@ To implement 3rd approach for your configuration, you need to take the following
 .. code-block:: yaml
 
     services:
-        acme.my_configuration_provider:
-            class: Acme\Bundle\AcmeBundle\Provider\MyConfigurationProvider
+        acme_demo.my_configuration_provider:
+            class: Acme\Bundle\DemoBundle\Provider\MyConfigurationProvider
             public: false
             parent: oro.static_config_provider.abstract
             arguments:
@@ -161,11 +165,11 @@ An example of a custom warmer:
 .. code-block:: yaml
 
     services:
-        acme.my_configuration_provider.warmer:
+        acme_demo.my_configuration_provider.warmer:
             class: Oro\Component\Config\Cache\ConfigCacheWarmer
             public: false
             arguments:
-                - '@acme.my_configuration_provider'
+                - '@acme_demo.my_configuration_provider'
             tags:
                 - { name: kernel.cache_warmer }
 
@@ -314,10 +318,10 @@ tagged with ``oro_cache_generator_normalizer``.
 
 .. code-block:: yaml
 
-   acme_cache.serializer.normalizer:
-      class: AcmeBundle\Normalizer\CustomObjectNormalizer
-      tags:
-         - { name: 'oro_cache_generator_normalizer' }
+    acme_demo.serializer.normalizer:
+        class: Acme\Bundle\DemoBundle\Normalizer\CustomObjectNormalizer
+        tags:
+            - { name: 'oro_cache_generator_normalizer' }
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

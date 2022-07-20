@@ -20,7 +20,7 @@ First, create an event listener class:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\TestBundle\EventListener;
+    namespace Acme\Bundle\DemoBundle\EventListener;
 
     use Oro\Bundle\ProductBundle\Entity\Product;
     use Oro\Bundle\SearchBundle\Engine\IndexerInterface;
@@ -28,7 +28,11 @@ First, create an event listener class:
 
     class SetWebsiteSearchRelevanceWeightListener
     {
-        public function onIndexEntity(IndexEntityEvent $event)
+        /**
+         * @param IndexEntityEvent $event
+         * @return void
+         */
+        public function onIndexEntity(IndexEntityEvent $event): void
         {
             /** @var Product $product */
             foreach ($event->getEntities() as $product) {
@@ -41,7 +45,7 @@ First, create an event listener class:
          * @param Product $product
          * @return float
          */
-        private function calculateRelevanceWeight(Product $product)
+        private function calculateRelevanceWeight(Product $product): float
         {
             switch ($product->getInventoryStatus()->getId()) {
                 case Product::INVENTORY_STATUS_IN_STOCK:
@@ -60,7 +64,7 @@ Then, register this event listener in the DI container:
 
 
     acme_test.event_listener.website_search.set_website_search_relevance_weight:
-        class: Acme\Bundle\TestBundle\EventListener\SetWebsiteSearchRelevanceWeightListener
+        class: Acme\Bundle\DemoBundle\EventListener\SetWebsiteSearchRelevanceWeightListener
         tags:
             - { name: kernel.event_listener, event: oro_website_search.event.index_entity.product, method: onIndexEntity }
 

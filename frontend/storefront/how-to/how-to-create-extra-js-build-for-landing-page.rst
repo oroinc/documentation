@@ -16,7 +16,7 @@ If the customization is for a stock theme, you can create a new ``theme.yml`` fi
 This configuration fragment will be merged into a complete theme configuration during the build.
 
 .. code-block:: yaml
-   :caption: BundleName/Resources/views/layouts/{theme_name}/theme.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{theme_name}/theme.yml
 
     extra_js_builds:
         - landing
@@ -43,7 +43,7 @@ Below is an example of JS Modules config with a minimal list of modules that mig
 .. note:: Depending on the functionality on your page, you may need to modify this configuration; for example, add and/or remove modules in the ``app-modules`` and ``dynamic-imports`` sections.
 
 .. code-block:: yaml
-   :caption: BundleName/Resources/views/layouts/{theme_name}/config/jsmodules-landing.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{theme_name}/config/jsmodules-landing.yml
 
     app-modules:
         - orofrontend/default/js/app/modules/input-widgets
@@ -128,7 +128,7 @@ For that purpose, create a layout update and specify the following options:
 - ``publicPath`` for the ``layout_js_modules_config`` block
 
 .. code-block:: yaml
-   :caption: BundleName/Resources/views/layouts/{theme_name}/oro_cms_frontend_page_view/layout.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{theme_name}/oro_cms_frontend_page_view/layout.yml
 
     layout:
         actions:

@@ -23,7 +23,7 @@ The following example shows how to add validation constraints to API resources u
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 fields:
                     primaryEmail:
                         form_options:
@@ -36,8 +36,8 @@ The following example shows how to add validation constraints to API resources u
                                 # add Symfony\Component\Validator\Constraints\Length validation constraint
                                 - Length:
                                     max: 50
-                                # add Acme\Bundle\AcmeBundle\Validator\Constraints\Alphanumeric validation constraint
-                                - Acme\Bundle\AcmeBundle\Validator\Constraints\Alphanumeric: ~
+                                # add Acme\Bundle\DemoBundle\Validator\Constraints\Alphanumeric validation constraint
+                                - Acme\Bundle\DemoBundle\Validator\Constraints\Alphanumeric: ~
 
 
 Also, see how to :ref:`validate virtual fields <validate-virtual-fields>`.
@@ -103,19 +103,19 @@ Example:
 .. code-block:: yaml
 
         acme.form.type.datetime:
-            class: Acme\Bundle\AcmeBundle\Form\Type\DateTimeType
+            class: Acme\Bundle\DemoBundle\Form\Type\DateTimeType
             tags:
                 - { name: form.type, alias: acme_datetime } # allow to use the form type on UI 
                 - { name: oro.api.form.type, alias: acme_datetime } # allow to use the form type in API
 
         acme.form.extension.datetime:
-            class: Acme\Bundle\AcmeBundle\Form\Extension\DateTimeExtension
+            class: Acme\Bundle\DemoBundle\Form\Extension\DateTimeExtension
             tags:
                 - { name: form.type_extension, alias: acme_datetime } # add the form extension to UI forms
                 - { name: oro.api.form.type_extension, alias: acme_datetime } # add the form extension to API forms
 
         acme.form.guesser.test:
-            class: Acme\Bundle\AcmeBundle\Form\Guesser\TestGuesser
+            class: Acme\Bundle\DemoBundle\Form\Guesser\TestGuesser
             tags:
                 - { name: form.type_guesser } # add the form type guesser to UI forms
                 - { name: oro.api.form.type_guesser } # add the form type guesser to API forms

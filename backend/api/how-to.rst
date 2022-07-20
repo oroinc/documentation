@@ -12,7 +12,7 @@ By default, API for entities is disabled. To turn on API for an entity, add the 
 
     api:
         entities:
-            Acme\Bundle\ProductBundle\Product: ~
+            Acme\Bundle\DemoBundle\Entity\SomeEntity: ~
 
 .. _turn-on-api-for-entity-disabled-in-entity-yml:
 
@@ -27,8 +27,8 @@ Let us consider the case when you have the following `Resources/config/oro/entit
 
     oro_entity:
         exclusions:
-            - { entity: Acme\Bundle\AcmeBundle\Entity\AcmeEntity1 }
-            - { entity: Acme\Bundle\AcmeBundle\Entity\AcmeEntity2, field: field1 }
+            - { entity: Acme\Bundle\DemoBundle\Entity\SomeEntity1 }
+            - { entity: Acme\Bundle\DemoBundle\Entity\SomeEntity2, field: field1 }
 
 To override these rules in the API, add the following lines to the `Resources/config/oro/api.yml`:
 
@@ -36,9 +36,9 @@ To override these rules in the API, add the following lines to the `Resources/co
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity1:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 exclude: false # override exclude rule from entity.yml
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity2:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity2:
                 fields:
                     field1:
                         exclude: false # override exclude rule from entity.yml
@@ -63,7 +63,7 @@ To enable these operators, use ``operators`` option for filters in `Resources/co
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity1:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 filters:
                     fields:
                         field1:
@@ -80,7 +80,7 @@ Depending on the |collation| settings of your database the case-insensitive filt
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity1:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 filters:
                     fields:
                         field1:
@@ -95,7 +95,7 @@ Also sometimes data in the database are already converted to lowercase or upperc
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity1:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 filters:
                     fields:
                         field1:
@@ -144,7 +144,7 @@ For example, to change permissions for the ``delete`` action, add the following 
 
     api:
         entities:
-            Acme\Bundle\ProductBundle\Product:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 actions:
                     delete:
                         acl_resource: access_entity_view
@@ -155,7 +155,7 @@ If there is the ``access_entity_view`` ACL resource:
 
     access_entity_view:
         type: entity
-        class: Acme\Bundle\ProductBundle\Product
+        class: Acme\Bundle\DemoBundle\Entity\SomeEntity1
         permission: VIEW
 
 As a result, the ``VIEW`` permission will be used instead of the ``DELETE`` permission.
@@ -171,7 +171,7 @@ You can disable access checks for some action by setting ``null`` as a value for
 
     api:
         entities:
-            Acme\Bundle\ProductBundle\Product:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 actions:
                     get_list:
                         acl_resource: ~
@@ -189,7 +189,7 @@ If an action should be inaccessible, disable it in `Resources/config/oro/api.yml
 
     api:
         entities:
-            Acme\Bundle\ProductBundle\Product:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 actions:
                     delete:
                         exclude: true
@@ -200,7 +200,7 @@ You can use the short syntax:
 
     api:
         entities:
-            Acme\Bundle\ProductBundle\Product:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 actions:
                     delete: false
 
@@ -217,7 +217,7 @@ If your want to use another limit, set it using the ``max_results`` option in `R
 
     api:
         entities:
-            Acme\Bundle\ProductBundle\Product:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 actions:
                     delete_list:
                         max_results: 200
@@ -228,7 +228,7 @@ You can remove the limit at all. To do this, set ``-1`` as a value for the ``max
 
     api:
         entities:
-            Acme\Bundle\ProductBundle\Product:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity1:
                 actions:
                     delete_list:
                         max_results: -1
@@ -360,16 +360,16 @@ Here is an example how the nested association looks in JSON:API:
 .. code-block:: json
 
     {
-      "data": {
-        "type": "orders",
-        "id": "1",
-        "relationships": {
-          "source": {
-            "type": "contacts",
-            "id": 123
-          }
+        "data": {
+            "type": "orders",
+            "id": "1",
+            "relationships": {
+                "source": {
+                    "type": "contacts",
+                    "id": 123
+                }
+            }
         }
-      }
     }
 
 
@@ -472,11 +472,11 @@ To illustrate the configuration of an unidirectional association, consider two e
 
     api:
         entities:
-            Acme\Bundle\AppBundle\Entity\Category:
+            Acme\Bundle\DemoBundle\Entity\Category:
                 fields:
                     products:
                         data_type: unidirectionalAssociation:category
-                        target_class: Acme\Bundle\AppBundle\Entity\Product
+                        target_class: Acme\Bundle\DemoBundle\Entity\Product
 
 .. note:: Only many-to-one and many-to-many unidirectional associations are supported.
 
@@ -509,12 +509,12 @@ Here is an example of the controller:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AppBundle\Controller\Api;
+    namespace Acme\Bundle\DemoBundle\Controller\Api;
 
+    use Nelmio\ApiDocBundle\Annotation\ApiDoc;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
     use Symfony\Component\HttpFoundation\Request;
     use Symfony\Component\HttpFoundation\Response;
-    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-    use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
     class MyResourceController extends AbstractController
     {
@@ -562,7 +562,7 @@ Here is an example of the controller:
          *
          * @return Response
          */
-        public function getAction(Request $request)
+        public function getAction(Request $request): Response
         {
             // add an implementation here
         }
@@ -576,7 +576,7 @@ An example of the `Resources/config/oro/routing.yml` configuration file:
         path: '%oro_api.rest.prefix%myresources/{id}'
         methods: [GET]
         defaults:
-            _controller: AcmeAppBundle:Api\MyResource:get
+            _controller: AcmeDemoBundle:Api\MyResource:get
         options:
             group: rest_api
 
@@ -626,7 +626,7 @@ For example, let your entity has the ``id`` field that is the primary key and th
 
     api:
         entities:
-            Acme\Bundle\AppBundle\Entity\SomeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 identifier_field_names: ['uuid']
 
 You can also exclude the ``id`` field (primary key) if you do not want to expose it via API:
@@ -635,7 +635,7 @@ You can also exclude the ``id`` field (primary key) if you do not want to expose
 
     api:
         entities:
-            Acme\Bundle\AppBundle\Entity\SomeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 identifier_field_names: ['uuid']
                 fields:
                     id:
@@ -652,31 +652,30 @@ The following steps describe how to create such API resources:
 
 1. Create a PHP class to represent the API resource. Usually, such classes are named as models and located in the ``Api/Model`` directory. For example:
 
-   .. code-block:: php
+    .. code-block:: php
 
-          namespace Acme\Bundle\AppBundle\Api\Model;
+        namespace Acme\Bundle\DemoBundle\Api\Model;
 
-          class Account
-          {
-              /** @var string|null */
-              private $name;
+        class Account
+        {
+            private ?string $name;
 
-              /**
-               * @return string|null
-               */
-              public function getName()
-              {
-                  return $this->name;
-              }
+            /**
+             * @return string|null
+             */
+            public function getName(): ?string
+            {
+                return $this->name;
+            }
 
-              /**
-               * @param string|null $name
-               */
-              public function setName($name)
-              {
-                  $this->name = $name;
-              }
-          }
+            /**
+             * @param string|null $name
+             */
+            public function setName(?string $name): void
+            {
+                $this->name = $name;
+            }
+        }
 
 
 2. Describe the model in the `Resources/config/oro/api.yml` configuration file in your bundle, e.g.:
@@ -685,11 +684,11 @@ The following steps describe how to create such API resources:
 
         api:
             entity_aliases:
-                Acme\Bundle\AppBundle\Api\Model\Account:
+                Acme\Bundle\DemoBundle\Api\Model\Account:
                     alias: registeraccount
                     plural_alias: registeraccount
             entities:
-                Acme\Bundle\AppBundle\Api\Model\Account:
+                Acme\Bundle\DemoBundle\Api\Model\Account:
                     fields:
                         name:
                             data_type: string
@@ -723,25 +722,25 @@ The following steps describe how to create such API resources:
 
     .. code-block:: php
 
-          namespace Acme\Bundle\AppBundle\Api\Processor;
+        namespace Acme\Bundle\DemoBundle\Api\Processor;
 
-          use Acme\Bundle\AppBundle\Api\Model\Account;
-          use Oro\Component\ChainProcessor\ContextInterface;
-          use Oro\Component\ChainProcessor\ProcessorInterface;
+        use Acme\Bundle\DemoBundle\Api\Model\Account;
+        use Oro\Component\ChainProcessor\ContextInterface;
+        use Oro\Component\ChainProcessor\ProcessorInterface;
 
-          class RegisterAccount implements ProcessorInterface
-          {
-              /**
-               * {@inheritdoc}
-               */
-              public function process(ContextInterface $context)
-              {
-                  /** @var Account $account */
-                  $account = $context->getResult();
+        class RegisterAccount implements ProcessorInterface
+        {
+            /**
+             * @inheritDoc
+             */
+            public function process(ContextInterface $context)
+            {
+                /** @var Account $account */
+                $account = $context->getResult();
 
-                  // implement registration of a new account
-              }
-          }
+                // implement registration of a new account
+            }
+        }
 
 
 5. Register a processor in the dependency injection container, e.g.:
@@ -750,9 +749,9 @@ The following steps describe how to create such API resources:
 
        services:
           acme.api.register_account:
-              class: Acme\Bundle\AppBundle\Api\Processor\RegisterAccount
+              class: Acme\Bundle\DemoBundle\Api\Processor\RegisterAccount
               tags:
-                  - { name: oro.api.processor, action: create, group: save_data, class: Acme\Bundle\AppBundle\Api\Model\Account }
+                  - { name: oro.api.processor, action: create, group: save_data, class: Acme\Bundle\DemoBundle\Api\Model\Account }
 
 .. _enable-custom-api:
 
@@ -803,60 +802,59 @@ To do this, you need to perform the following:
 
     .. code-block:: php
 
-       namespace Acme\Bundle\AppBundle\Api\Processor;
+        namespace Acme\Bundle\DemoBundle\Api\Processor;
 
-       use Oro\Component\ChainProcessor\ContextInterface;
-       use Oro\Component\ChainProcessor\ProcessorInterface;
-       use Oro\Bundle\ApiBundle\Processor\Context;
+        use Oro\Bundle\ApiBundle\Processor\Context;
+        use Oro\Component\ChainProcessor\ContextInterface;
+        use Oro\Component\ChainProcessor\ProcessorInterface;
 
-       class CheckErpRequestType implements ProcessorInterface
-       {
-           private const REQUEST_HEADER_NAME = 'X-Integration-Type';
-           private const REQUEST_HEADER_VALUE = 'ERP';
-           private const REQUEST_TYPE = 'erp';
+        class CheckErpRequestType implements ProcessorInterface
+        {
+            private const REQUEST_HEADER_NAME  = 'X-Integration-Type';
+            private const REQUEST_HEADER_VALUE = 'ERP';
+            private const REQUEST_TYPE         = 'erp';
 
-           /**
-            * {@inheritdoc}
-            */
-           public function process(ContextInterface $context)
-           {
-               /** @var Context $context */
-
-               $requestType = $context->getRequestType();
-               if (!$requestType->contains(self::REQUEST_TYPE)
-                   && self::REQUEST_HEADER_VALUE === $context->getRequestHeaders()->get(self::REQUEST_HEADER_NAME)
-               ) {
-                   $requestType->add(self::REQUEST_TYPE);
-               }
-           }
-       }
+            /**
+             * @inheritDoc
+             */
+            public function process(ContextInterface $context)
+            {
+                /** @var Context $context */
+                $requestType = $context->getRequestType();
+                if (!$requestType->contains(self::REQUEST_TYPE)
+                    && self::REQUEST_HEADER_VALUE === $context->getRequestHeaders()->get(self::REQUEST_HEADER_NAME)
+                ) {
+                    $requestType->add(self::REQUEST_TYPE);
+                }
+            }
+        }
 
 
 6. Register this processor in the dependency injection container in the `Resources/config/services.yml` file:
 
     .. code-block:: yaml
 
-       acme.api.erp.check_erp_request_type:
-          class: Acme\Bundle\AppBundle\Api\Processor\CheckErpRequestType
-          tags:
-              - { name: oro.api.processor, action: get, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: get_list, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: delete, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: delete_list, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: create, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: update, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: update_list, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: get_subresource, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: delete_subresource, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: add_subresource, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: update_subresource, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: get_relationship, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: delete_relationship, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: add_relationship, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: update_relationship, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: not_allowed, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: unhandled_error, group: initialize, priority: 250 }
-              - { name: oro.api.processor, action: options, group: initialize, priority: 250 }
+        acme.api.erp.check_erp_request_type:
+            class: Acme\Bundle\DemoBundle\Api\Processor\CheckErpRequestType
+            tags:
+                - { name: oro.api.processor, action: get, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: get_list, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: delete, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: delete_list, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: create, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: update, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: update_list, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: get_subresource, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: delete_subresource, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: add_subresource, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: update_subresource, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: get_relationship, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: delete_relationship, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: add_relationship, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: update_relationship, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: not_allowed, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: unhandled_error, group: initialize, priority: 250 }
+                - { name: oro.api.processor, action: options, group: initialize, priority: 250 }
 
 
 7. Execute the ``cache:clear`` command to apply the changes and the ``oro:api:doc:cache:clear`` command to build API Sandbox.
@@ -871,7 +869,7 @@ for the ``oro.api.processor`` tag, e.g.:
 .. code-block:: yaml
 
     acme.api.erp.do_something:
-        class: Acme\Bundle\AppBundle\Api\Processor\DoSomething
+        class: Acme\Bundle\DemoBundle\Api\Processor\DoSomething
         tags:
             - { name: oro.api.processor, action: get, group: initialize, requestType: erp, priority: -10 }
 
@@ -982,7 +980,7 @@ For example, imagine that a "price" field need to be added to a product API. The
 
         api:
             entities:
-                Acme\Bundle\AppBundle\Entity\Product:
+                Acme\Bundle\DemoBundle\Entity\Product:
                     fields:
                         price:
                             data_type: money
@@ -993,24 +991,20 @@ For example, imagine that a "price" field need to be added to a product API. The
 
     .. code-block:: php
 
-        namespace Acme\Bundle\AppBundle\Api\Processor;
+        namespace Acme\Bundle\DemoBundle\Api\Processor;
 
         use Oro\Bundle\ApiBundle\Processor\CustomizeLoadedData\CustomizeLoadedDataContext;
-        use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
-        use Oro\Bundle\EntityConfigBundle\Entity\FieldConfigModel;
-        use Oro\Bundle\EntityConfigBundle\Entity\Repository\FieldConfigModelRepository;
         use Oro\Component\ChainProcessor\ContextInterface;
         use Oro\Component\ChainProcessor\ProcessorInterface;
 
         class ComputeProductPriceField implements ProcessorInterface
         {
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
             public function process(ContextInterface $context)
             {
                 /** @var CustomizeLoadedDataContext $context */
-
                 $data = $context->getData();
 
                 $priceFieldName = $context->getResultFieldName('price');
@@ -1018,21 +1012,20 @@ For example, imagine that a "price" field need to be added to a product API. The
                     return;
                 }
 
-                 $productIdFieldName = $context->getResultFieldName('id');
-                 if (!$productIdFieldName || empty($data[$productIdFieldName])) {
-                     return;
-                 }
+                $productIdFieldName = $context->getResultFieldName('id');
+                if (!$productIdFieldName || empty($data[$productIdFieldName])) {
+                    return;
+                }
 
-                 $data[$priceFieldName] = $this->loadProductPrice($data[$productIdFieldName]);
-                 $context->setData($data);
+                $data[$priceFieldName] = $this->loadProductPrice((int)$data[$productIdFieldName]);
+                $context->setData($data);
             }
 
             /**
-             * @param int $productId
-             *
-             * @return float|null
+             * @param int $productIdFieldName
+             * @return null|float
              */
-            private function loadProductPrice($productId)
+            private function loadProductPrice(int $productIdFieldName): ?float
             {
                 // load the product price in this method
             }
@@ -1045,9 +1038,9 @@ For example, imagine that a "price" field need to be added to a product API. The
 
         services:
             acme.api.compute_product_price_field:
-                class: Acme\Bundle\AppBundle\Api\Processor\ComputeProductPriceField
+                class: Acme\Bundle\DemoBundle\Api\Processor\ComputeProductPriceField
                 tags:
-                    - { name: oro.api.processor, action: customize_loaded_data, class: Acme\Bundle\AppBundle\Entity\Product }
+                    - { name: oro.api.processor, action: customize_loaded_data, class: Acme\Bundle\DemoBundle\Entity\Product }
 
 
 Add an Association with a Custom Query
@@ -1104,10 +1097,10 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
 
       api:
           entities:
-              Acme\Bundle\AppBundle\Entity\Account:
+              Acme\Bundle\DemoBundle\Entity\Account:
               fields:
                   contacts:
-                      target_class: Acme\Bundle\AppBundle\Entity\Contact
+                      target_class: Acme\Bundle\DemoBundle\Entity\Contact
                       target_type: to-many
                       property_path: _
 
@@ -1117,129 +1110,128 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
 
 .. code-block:: php
 
-      namespace Acme\Bundle\AppBundle\Api\Processor;
+    namespace Acme\Bundle\DemoBundle\Api\Processor;
 
-      use Acme\Bundle\AppBundle\Entity\Account;
-      use Oro\Bundle\ApiBundle\Processor\GetConfig\ConfigContext;
-      use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
-      use Oro\Component\ChainProcessor\ContextInterface;
-      use Oro\Component\ChainProcessor\ProcessorInterface;
+    use Acme\Bundle\DemoBundle\Entity\Account;
+    use Oro\Bundle\ApiBundle\Processor\GetConfig\ConfigContext;
+    use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
+    use Oro\Component\ChainProcessor\ContextInterface;
+    use Oro\Component\ChainProcessor\ProcessorInterface;
 
-      /**
-       * Adds a query for "contacts" association of Account entity.
-       */
-      class SetAccountContactsAssociationQuery implements ProcessorInterface
-      {
-          private DoctrineHelper $doctrineHelper;
+    /**
+     * Adds a query for "contacts" association of Account entity.
+     */
+    class SetAccountContactsAssociationQuery implements ProcessorInterface
+    {
+        protected DoctrineHelper $doctrineHelper;
 
-          public function __construct(DoctrineHelper $doctrineHelper)
-          {
-              $this->doctrineHelper = $doctrineHelper;
-          }
+        /**
+         * @param DoctrineHelper $doctrineHelper
+         */
+        public function __construct(DoctrineHelper $doctrineHelper)
+        {
+            $this->doctrineHelper = $doctrineHelper;
+        }
 
-          /**
-           * {@inheritdoc}
-           */
-          public function process(ContextInterface $context)
-          {
-              /** @var ConfigContext $context */
-
-              $definition = $context->getResult();
-              $contactsField = $definition->getField('contacts');
-              if (null !== $contactsField
-                  && !$contactsField->isExcluded()
-                  && null === $contactsField->getAssociationQuery()
-              ) {
-                  $contactsField->setAssociationQuery(
-                      $this->doctrineHelper
-                          ->createQueryBuilder(Account::class, 'e')
-                          ->innerJoin('e.contactLinks', 'links')
-                          ->innerJoin('links.contact', 'r')
-                          ->where('links.enabled = :contacts_enabled')
-                          ->setParameter('contacts_enabled', true)
-                  );
-              }
-          }
-      }
+        /**
+         * @inheritDoc
+         */
+        public function process(ContextInterface $context)
+        {
+            /** @var ConfigContext $context */
+            $definition    = $context->getResult();
+            $contactsField = $definition->getField('contacts');
+            if (null !== $contactsField
+                && !$contactsField->isExcluded()
+                && null === $contactsField->getAssociationQuery()
+            ) {
+                $contactsField->setAssociationQuery(
+                    $this->doctrineHelper
+                        ->createQueryBuilder(Account::class, 'e')
+                        ->innerJoin('e.contactLinks', 'links')
+                        ->innerJoin('links.contact', 'r')
+                        ->where('links.enabled = :contacts_enabled')
+                        ->setParameter('contacts_enabled', true)
+                );
+            }
+        }
+    }
 
 
 .. code-block:: yaml
 
       services:
           acme.api.set_account_contacts_association_query:
-              class: Acme\Bundle\AppBundle\Api\Processor\SetAccountContactsAssociationQuery
+              class: Acme\Bundle\DemoBundle\Api\Processor\SetAccountContactsAssociationQuery
               arguments:
                   - '@oro_api.doctrine_helper'
               tags:
-                  - { name: oro.api.processor, action: get_config, extra: '!identifier_fields_only', class: Acme\Bundle\AppBundle\Entity\Account, priority: -35 }
+                  - { name: oro.api.processor, action: get_config, extra: '!identifier_fields_only', class: Acme\Bundle\DemoBundle\Entity\Account, priority: -35 }
 
 
 - If the query added on the previous step is not applicable to load subresources, add a processor to register ORM query that should be used to get enabled contacts for the :ref:`get_subresource <get-subresource-action>` and :ref:`get_relationship <get-relationship-action>` actions
 
+    .. code-block:: php
 
-  .. code-block:: php
+        namespace Acme\Bundle\DemoBundle\Api\Processor;
 
-      namespace Acme\Bundle\AppBundle\Api\Processor;
+        use Acme\Bundle\DemoBundle\Entity\Contact;
+        use Acme\Bundle\DemoBundle\Entity\AccountContactLink;
+        use Oro\Bundle\ApiBundle\Collection\Join;
+        use Oro\Bundle\ApiBundle\Processor\Subresource\Shared\AddParentEntityIdToQuery;
+        use Oro\Bundle\ApiBundle\Processor\Subresource\SubresourceContext;
+        use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
+        use Oro\Component\ChainProcessor\ContextInterface;
+        use Oro\Component\ChainProcessor\ProcessorInterface;
 
-      use Acme\Bundle\AppBundle\Entity\Contact;
-      use Acme\Bundle\AppBundle\Entity\AccountContactLink;
-      use Doctrine\ORM\Query\Expr\Join;
-      use Oro\Bundle\ApiBundle\Processor\Subresource\Shared\AddParentEntityIdToQuery;
-      use Oro\Bundle\ApiBundle\Processor\Subresource\SubresourceContext;
-      use Oro\Bundle\ApiBundle\Util\DoctrineHelper;
-      use Oro\Component\ChainProcessor\ContextInterface;
-      use Oro\Component\ChainProcessor\ProcessorInterface;
+        /**
+         * Builds ORM QueryBuilder object that will be used to get a list of contacts
+         * for Account entity for "get_relationship" and "get_subresource" actions.
+         */
+        class BuildAccountContactsSubresourceQuery implements ProcessorInterface
+        {
+            protected DoctrineHelper $doctrineHelper;
 
-      /**
-       * Builds ORM QueryBuilder object that will be used to get a list of contacts
-       * for Account entity for "get_relationship" and "get_subresource" actions.
-       */
-      class BuildAccountContactsSubresourceQuery implements ProcessorInterface
-      {
-          /** @var DoctrineHelper */
-          private $doctrineHelper;
+            /**
+             * @param DoctrineHelper $doctrineHelper
+             */
+            public function __construct(DoctrineHelper $doctrineHelper)
+            {
+                $this->doctrineHelper = $doctrineHelper;
+            }
 
-          /**
-           * @param DoctrineHelper $doctrineHelper
-           */
-          public function __construct(DoctrineHelper $doctrineHelper)
-          {
-              $this->doctrineHelper = $doctrineHelper;
-          }
+            /**
+             * @inheritDoc
+             */
+            public function process(ContextInterface $context)
+            {
+                /** @var SubresourceContext $context */
+                if ($context->hasQuery()) {
+                    // a query is already built
+                    return;
+                }
 
-          /**
-           * {@inheritdoc}
-           */
-          public function process(ContextInterface $context)
-          {
-              /** @var SubresourceContext $context */
+                $query = $this->doctrineHelper
+                    ->createQueryBuilder(Contact::class, 'e')
+                    ->innerJoin(AccountContactLink::class, 'links', Join::WITH, 'links.contact = e')
+                    ->where('links.account = :' . AddParentEntityIdToQuery::PARENT_ENTITY_ID_QUERY_PARAM_NAME)
+                    ->setParameter(AddParentEntityIdToQuery::PARENT_ENTITY_ID_QUERY_PARAM_NAME, $context->getParentId());
 
-              if ($context->hasQuery()) {
-                  // a query is already built
-                  return;
-              }
-
-              $query = $this->doctrineHelper
-                  ->createQueryBuilder(Contact::class, 'e')
-                  ->innerJoin(AccountContactLink::class, 'links', Join::WITH, 'links.contact = e')
-                  ->where('links.account = :' . AddParentEntityIdToQuery::PARENT_ENTITY_ID_QUERY_PARAM_NAME)
-                  ->setParameter(AddParentEntityIdToQuery::PARENT_ENTITY_ID_QUERY_PARAM_NAME, $context->getParentId());
-
-              $context->setQuery($query);
-          }
-      }
+                $context->setQuery($query);
+            }
+        }
 
 
-  .. code-block:: yaml
+    .. code-block:: yaml
 
-      services:
-          acme.api.build_account_contacts_subresource_query:
-              class: Acme\Bundle\AppBundle\Api\Processor\BuildAccountContactsSubresourceQuery
-              arguments:
-                  - '@oro_api.doctrine_helper'
-              tags:
-                  - { name: oro.api.processor, action: get_subresource, group: build_query, association: contacts, parentClass: Acme\Bundle\AppBundle\Entity\Account, priority: -90 }
-                  - { name: oro.api.processor, action: get_relationship, group: build_query, association: contacts, parentClass: Acme\Bundle\AppBundle\Entity\Account, priority: -90 }
+        services:
+            acme.api.build_account_contacts_subresource_query:
+                class: Acme\Bundle\DemoBundle\Api\Processor\BuildAccountContactsSubresourceQuery
+                arguments:
+                    - '@oro_api.doctrine_helper'
+                tags:
+                    - { name: oro.api.processor, action: get_subresource, group: build_query, association: contacts, parentClass: Acme\Bundle\DemoBundle\Entity\Account, priority: -90 }
+                    - { name: oro.api.processor, action: get_relationship, group: build_query, association: contacts, parentClass: Acme\Bundle\DemoBundle\Entity\Account, priority: -90 }
 
 
 .. _disable-hateoas:
@@ -1262,7 +1254,7 @@ Like with regular fields, values of these fields need to be validated during the
 In this case, you can use an API processor for the ``post_submit`` event of the :ref:`customize_form_data <customize-form-data-action>` action because common Symfony Forms validators are not applicable.
 
 For example, the following API processor validates that a value of a virtual field called ``label`` should not be blank for
-a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
+a new ``Acme\Bundle\DemoBundle\Entity\SomeEntity`` entity:
 
 .. code-block:: php
 
@@ -1274,13 +1266,10 @@ a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
     use Oro\Component\ChainProcessor\ProcessorInterface;
     use Symfony\Component\Validator\Constraints\NotBlank;
 
-    /**
-     * Checks that "label" field is submitted during create.
-     */
     class ValidateLabelField implements ProcessorInterface
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function process(ContextInterface $context)
         {
@@ -1307,8 +1296,8 @@ a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
         acme.api.validate_label_field:
             class: Acme\Bundle\DemoBundle\Api\Processor\ValidateLabelField
             tags:
-                - { name: oro.api.processor, action: customize_form_data, event: post_submit, class: Acme\DemoBundle\Entity\SomeEntity }
+                - { name: oro.api.processor, action: customize_form_data, event: post_submit, class: Acme\Bundle\DemoBundle\Entity\SomeEntity }
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

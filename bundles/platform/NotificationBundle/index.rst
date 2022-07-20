@@ -14,26 +14,26 @@ If the recipient list in the system configuration is left empty, the notificatio
 
 .. code-block:: bash
 
-   php bin/console oro:maintenance-notification --env=prod
+    php bin/console oro:maintenance-notification --env=prod
 
 The text of the message can be provided either as the value of the ``--message`` option or it can be read from a text file specified in the --file option:
 
 .. code-block:: bash
 
-   php bin/console oro:maintenance-notification --message=<message-text> --env=prod
-   php bin/console oro:maintenance-notification --file=<path-to-text-file> --env=prod
+    php bin/console oro:maintenance-notification --message=<message-text> --env=prod
+    php bin/console oro:maintenance-notification --file=<path-to-text-file> --env=prod
 
 The ``--subject`` option can be used to override the default subject provided by the configured email template:
 
 .. code-block:: bash
 
-   php bin/console oro:maintenance-notification --message=<message> --subject=<subject> --env=prod
+    php bin/console oro:maintenance-notification --message=<message> --subject=<subject> --env=prod
 
 The ``--sender_name`` and ``--sender_email`` options can be used to override the default name and email address of the sender:
 
 .. code-block:: bash
 
-   php bin/console oro:maintenance-notification --message=<message> --sender_name=<name> --sender_email=<email> --env=prod
+    php bin/console oro:maintenance-notification --message=<message> --sender_name=<name> --sender_email=<email> --env=prod
 
 Create Notification Rule
 ------------------------
@@ -57,47 +57,75 @@ An example:
 
 1. Create an additional associations provider:
 
-   .. code-block:: php
+    .. code-block:: php
+
+        namespace Acme\Bundle\DemoBundle\Provider;
+
+        use Acme\Bundle\DemoBundle\Entity\Some;
+        use Acme\Bundle\DemoBundle\Entity\Target;
+        use Oro\Bundle\NotificationBundle\Provider\AdditionalEmailAssociationProviderInterface;
+        use Symfony\Contracts\Translation\TranslatorInterface;
 
         class MyAdditionalEmailAssociationProvider implements AdditionalEmailAssociationProviderInterface
         {
+            private TranslatorInterface $translator;
+
+            /**
+             * @param TranslatorInterface $translator
+             * @return void
+             */
+            public function __construct(TranslatorInterface $translator)
+            {
+                $this->translator = $translator;
+            }
+
+            /**
+             * @inheritDoc
+             */
             public function getAssociations(string $entityClass): array
             {
-                if (!is_a($entityClass, MyEntity::class, true)) {
+                if (!is_a($entityClass, Some::class, true)) {
                     return [];
                 }
 
                 return [
-                    'someAccociation' => [
-                        'label'        => $this->translator->trans('acme.my_entity.some_accociation'),
-                        'target_class' => MyTargetEntity::class
+                    'someAssociation' => [
+                        'label'        => $this->translator->trans('acme.my_entity.some_association'),
+                        'target_class' => Target::class
                     ]
                 ];
             }
 
+            /**
+             * @inheritDoc
+             */
             public function isAssociationSupported($entity, string $associationName): bool
             {
                 return
-                    $entity instanceof MyEntity
-                    && 'someAccociation' === $associationName;
+                    $entity instanceof Some
+                    && 'someAssociation' === $associationName;
             }
 
+            /**
+             * @inheritDoc
+             */
             public function getAssociationValue($entity, string $associationName)
             {
-                $targetEntity = get target entity logic
-
-                return $targetEntity;
+                // get target entity logic
+                // return target entity
             }
         }
 
 2. Register the provider in the DI container:
 
-   .. code-block:: yaml
+    .. code-block:: yaml
 
         services:
             acme.additional_email_association_provider.my:
-                class: Acme\Bundle\AcmeBundle\Provider\MyAdditionalEmailAssociationProvider
+                class: Acme\Bundle\DemoBundle\Provider\MyAdditionalEmailAssociationProvider
                 public: false
+                arguments:
+                    - '@translator'
                 tags:
                     - { name: oro_notification.additional_email_association_provider }
 
@@ -109,7 +137,7 @@ Register an Event to Send Notification Emails
 To allow creating :ref:`notification rules <system-notification-rules>` for new types of events, register them in the ``Resources/config/oro/app.yml`` file in your bundle.
 
 .. code-block:: yaml
-   :caption: Resources/config/oro/app.yml
+    :caption: Resources/config/oro/app.yml
 
     oro_notification:
         events:
@@ -117,4 +145,4 @@ To allow creating :ref:`notification rules <system-notification-rules>` for new 
             - my_custom_event_2
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

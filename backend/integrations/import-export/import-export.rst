@@ -11,20 +11,23 @@ All the configuration described below is added to the ``importexport.yml`` file 
 extension class in your bundle that loads the configuration file:
 
 .. code-block:: php
-   :caption: src/AppBundle/DependencyInjection/AppExtension.php
+    :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/AcmeDemoExtension.php
 
-    namespace AppBundle\DependencyInjection;
+    namespace Acme\Bundle\DemoBundle\DependencyInjection;
 
     use Symfony\Component\Config\FileLocator;
     use Symfony\Component\DependencyInjection\ContainerBuilder;
     use Symfony\Component\DependencyInjection\Extension\Extension;
-    use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+    use Symfony\Component\DependencyInjection\Loader;
 
-    class AppExtension extends Extension
+    class AcmeDemoExtension extends Extension
     {
+        /**
+         * @inheritDoc
+         */
         public function load(array $configs, ContainerBuilder $container)
         {
-            $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/Resources/config'));
+            $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
             $loader->load('importexport.yml');
         }
     }
@@ -40,30 +43,30 @@ OroImportExportBundle. All you need to do is creating services that are based on
 from the OroImportExportBundle and let them know which entity class they have to handle:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/importexport.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/importexport.yml
 
     services:
-        app.importexport.data_converter:
+        acme_demo.importexport.data_converter:
             parent: oro_importexport.data_converter.configurable
 
-        app.importexport.processor.export:
+        acme_demo.importexport.processor.export:
             parent: oro_importexport.processor.export_abstract
             calls:
-                - [setDataConverter, ['@app.importexport.data_converter']]
+                - [setDataConverter, ['@acme_demo.importexport.data_converter']]
             tags:
                 - name: oro_importexport.processor
                   type: export
-                  entity: AppBundle\Entity\Task
-                  alias: app_task
-        app.importexport.processor.import:
+                  entity: Acme\Bundle\DemoBundle\Entity\Task
+                  alias: acme_task
+        acme_demo.importexport.processor.import:
             parent: oro_importexport.processor.import_abstract
             calls:
-                - [setDataConverter, ['@app.importexport.data_converter']]
+                - [setDataConverter, ['@acme_demo.importexport.data_converter']]
             tags:
                 - name: oro_importexport.processor
                   type: import
-                  entity: AppBundle\Entity\Task
-                  alias: app_task
+                  entity: Acme\Bundle\DemoBundle\Entity\Task
+                  alias: acme_task
 
 Provide Sample Data
 -------------------
@@ -73,26 +76,43 @@ be imported, you can provide them with an example file that will be created base
 fixtures:
 
 .. code-block:: php
-   :caption: src/AppBundle/ImportExport/TemplateFixture;
+    :caption: src/Acme/Bundle/DemoBundle/ImportExport/TemplateFixture;
 
-    namespace AppBundle\ImportExport\TemplateFixture;
+    namespace Acme\Bundle\DemoBundle\ImportExport\TemplateFixture;
 
-    use AppBundle\Entity\Task;
+    use Acme\Bundle\DemoBundle\Entity\Task;
     use Oro\Bundle\ImportExportBundle\TemplateFixture\AbstractTemplateRepository;
     use Oro\Bundle\ImportExportBundle\TemplateFixture\TemplateFixtureInterface;
 
     class TaskFixture extends AbstractTemplateRepository implements TemplateFixtureInterface
     {
-        public function getEntityClass()
+        /**
+         * @inheritDoc
+         */
+        protected function createEntity($key): Task
         {
-            return 'AppBundle\Entity\Task';
+            return new Task($key);
         }
 
+        /**
+         * @inheritDoc
+         */
+        public function getEntityClass(): string
+        {
+            return Task::class;
+        }
+
+        /**
+         * @inheritDoc
+         */
         public function getData()
         {
             return $this->getEntityData('example-task');
         }
 
+        /**
+         * @inheritDoc
+         */
         public function fillEntityData($key, $entity)
         {
             $entity->setId(1);
@@ -100,23 +120,17 @@ fixtures:
             $entity->setDescription('Please call the customer to talk about their future plans.');
             $entity->setDueDate(new \DateTime('+3 days'));
         }
-
-        protected function createEntity($key)
-        {
-            return new Task();
-        }
     }
 
 Then, register your fixtures class as a service:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/importexport.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/importexport.yml
 
     services:
         # ...
-
-        app.importexport.template_fixture.task:
-            class: AppBundle\ImportExport\TemplateFixture\TaskFixture
+        acme_demo.importexport.template_fixture.task:
+            class: Acme\Bundle\DemoBundle\ImportExport\TemplateFixture\TaskFixture
             tags:
                 - { name: oro_importexport.template_fixture }
 
@@ -129,19 +143,19 @@ OroImportExportBundle while passing it the names of the needed services (see the
 do so:
 
 .. code-block:: html+jinja
-   :caption: src/AppBundle/Resources/views/Task/index.html.twig
+    :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/index.html.twig
 
     {% extends '@OroUI/actions/index.html.twig' %}
 
-    {% set gridName = 'app-tasks-grid' %}
+    {% set gridName = 'acme-tasks-grid' %}
     {% set pageTitle = 'Task' %}
 
     {% block navButtons %}
         {% include '@OroImportExport/ImportExport/buttons.html.twig' with {
-            entity_class: 'AppBundle\\Entity\\Task',
-            exportProcessor: 'app_task',
+            entity_class: 'Acme\\Bundle\\DemoBundle\\Entity\\Task',
+            exportProcessor: 'acme_task',
             exportTitle: 'Export',
-            importProcessor: 'app_task',
+            importProcessor: 'acme_task',
             importTitle: 'Import',
             datagridName: gridName
         } %}
@@ -188,7 +202,7 @@ Import is a basic operation for any entity. The import operation is one step.
 See the following example configuration:
 
 .. code-block:: yaml
-   :caption:  Oro/Bundle/ImportExportBundle/Resources/config/batch_jobs.yml
+    :caption:  Oro/Bundle/ImportExportBundle/Resources/config/batch_jobs.yml
 
     connector:
         name: oro_importexport
@@ -457,7 +471,6 @@ For example:
 
 .. code-block:: text
 
-
     "Addresses 1 First name"
 
 ``FieldName`` may be a field label or a column name from a configuration field.
@@ -481,7 +494,6 @@ For example:
 
 .. code-block:: text
 
-
     "Owner Username"
 
 Extension of Import/Export Contacts
@@ -498,10 +510,9 @@ The new classes must be declared as services:
 
 .. code-block:: yaml
 
-
     services:
         oro_importexport.reader.csv:
-            class: Acme\DemoBundle\ImportExport\Reader\ExcelFileReader
+            class: Acme\Bundle\DemoBundle\ImportExport\Reader\ExcelFileReader
 
         oro_importexport.writer.csv:
             class: Oro\Bundle\ImportExportBundle\Writer\CsvFileWriter
@@ -539,10 +550,9 @@ the following methods:
     as a service in the ``Resources/config/importexport.yml`` file:
 
     .. code-block:: yaml
-       :caption: src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
+        :caption: src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
 
         services:
-
             orocrm_contact.importexport.strategy.contact.add_or_replace:
                 class: Oro\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrUpadteOrDeleteStrategy
                 parent: oro_importexport.strategy.configurable_add_or_replace
@@ -1024,14 +1034,14 @@ The same thing is applicable for the export of the templates used for the import
         calls:
             - [setDataConverter, ['@oro.importexport.data_converter']]
         tags:
-            - { name: oro_importexport.processor, type: export, entity: 'Acme\DemoBundle\Entity\EntityName', alias: oro_some_type }
+            - { name: oro_importexport.processor, type: export, entity: 'Acme\Bundle\DemoBundle\Entity\EntityName', alias: oro_some_type }
 
     oro.importexport.processor.export.another_type:
         parent: oro_importexport.processor.export_abstract
         calls:
             - [setDataConverter, ['@oro.importexport.data_converter']]
         tags:
-            - { name: oro_importexport.processor, type: export, entity: 'Acme\DemoBundle\Entity\EntityName', alias: oro_another_type }
+            - { name: oro_importexport.processor, type: export, entity: 'Acme\Bundle\DemoBundle\Entity\EntityName', alias: oro_another_type }
 
 
 *Translation keys for selections in an export pop-up:*
@@ -1066,16 +1076,16 @@ To implement custom behavior of the import pop-up, you can extend the default **
 
 .. code-block:: php
 
-
-    use Symfony\Component\Form\AbstractTypeExtension;
-    use Symfony\Component\Form\FormBuilderInterface;
+    namespace Acme\Bundle\DemoBundle\Form\Extension;
 
     use Oro\Bundle\ImportExportBundle\Form\Type\ImportType;
+    use Symfony\Component\Form\AbstractTypeExtension;
+    use Symfony\Component\Form\FormBuilderInterface;
 
     class CustomImportTypeExtension extends AbstractTypeExtension
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public static function getExtendedTypes(): iterable
         {
@@ -1083,9 +1093,9 @@ To implement custom behavior of the import pop-up, you can extend the default **
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function buildForm(FormBuilderInterface $builder, array $options)
+        public function buildForm(FormBuilderInterface $builder, array $options): void
         {
             // Please add your custom implementation to generate the form
         }
@@ -1101,16 +1111,16 @@ Example of displaying the form with choice (radio buttons):
 
 .. code-block:: php
 
-
-    use Symfony\Component\Form\AbstractTypeExtension;
-    use Symfony\Component\Form\FormBuilderInterface;
+    namespace Acme\Bundle\DemoBundle\Form\Extension;
 
     use Oro\Bundle\ImportExportBundle\Form\Type\ExportType;
+    use Symfony\Component\Form\AbstractTypeExtension;
+    use Symfony\Component\Form\FormBuilderInterface;
 
     class CustomExportTypeExtension extends AbstractTypeExtension
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public static function getExtendedTypes(): iterable
         {
@@ -1118,9 +1128,9 @@ Example of displaying the form with choice (radio buttons):
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function buildForm(FormBuilderInterface $builder, array $options)
+        public function buildForm(FormBuilderInterface $builder, array $options): void
         {
             // Please add your custom implementation to generate the form
         }
@@ -1144,4 +1154,4 @@ of your project.
 Both filesystems can be changed with the configuration of the :ref:`File Storage <backend-file-storage>`.
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

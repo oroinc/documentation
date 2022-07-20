@@ -17,21 +17,21 @@ File `<bundleResourceRoot>/config/oro/actions.yml`
 
 .. code-block:: none
 
-    action_groups:                                  # root node for action groups
-        demo_flash_greetings_to:                    # name of action group
-            parameters:                             # parameters declaration node
-                what:                               # name of the parameter
-                    type: AcmeBundle/String/Phrase  # (optional, default = any) type validation of parameter (available types: integer, string, boolean, array, double, object, PHP class)
-                    message: "Bad type"             # (optional) message to be prompted if parameter validation failure met
-                    default: "Hello"                # (optional) default value for optional parameter, if not set then parameter `what` is required
-                who: ~                              # set all defaults to parameter options (type: any)
-            conditions:                             # Condition expression
+    action_groups:                                      # root node for action groups
+        demo_flash_greetings_to:                        # name of action group
+            parameters:                                 # parameters declaration node
+                what:                                   # name of the parameter
+                    type: AcmeDemoBundle/String/Phrase  # (optional, default = any) type validation of parameter (available types: integer, string, boolean, array, double, object, PHP class)
+                    message: "Bad type"                 # (optional) message to be prompted if parameter validation failure met
+                    default: "Hello"                    # (optional) default value for optional parameter, if not set then parameter `what` is required
+                who: ~                                  # set all defaults to parameter options (type: any)
+            conditions:                                 # Condition expression
                 @not_empty: [$.who]
-            actions:                                # list of actions that should be executed
+            actions:                                    # list of actions that should be executed
                 - '@call_service_method':
                     service: type_guesser
                     method: guess
-                    method_parameters: [$.who]      # as you can see, parameters are accessible from root $.<parameterName>
+                    method_parameters: [$.who]          # as you can see, parameters are accessible from root $.<parameterName>
                     attribute: $.typeOfWho
                 - '@flash_message':
                     message: "%param1%, %param2%!"

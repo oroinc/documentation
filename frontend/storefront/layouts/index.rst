@@ -408,9 +408,9 @@ As an example, consider a data provider that returns product details:
 .. code-block:: php
 
 
-    namespace Acme\Bundle\ProductBundle\Layout\Extension;
+    namespace Acme\Bundle\DemoBundle\Layout\Extension;
 
-    use Acme\Bundle\ProductBundle\Entity\Product;
+    use Acme\Bundle\DemoBundle\Entity\Product;
 
     class ProductDataProvider
     {
@@ -431,7 +431,7 @@ To make the layout engine aware of your data provider, register it as a service 
 
 
     acme_product.layout.data_provider.product:
-        class: Acme\Bundle\ProductBundle\Layout\DataProvider\ProductProvider
+        class: Acme\Bundle\DemoBundle\Layout\DataProvider\ProductProvider
         tags:
             - { name: layout.data_provider, alias: product }
 

@@ -28,7 +28,7 @@ The ``dashboards.yml`` file is used to configure dashboards and widgets that are
 dashboard:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/dashboards.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/dashboards.yml
 
     dashboards:
         widgets:
@@ -186,4 +186,4 @@ widget options:
     user input.
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

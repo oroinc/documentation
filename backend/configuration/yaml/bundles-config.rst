@@ -427,7 +427,7 @@ The default configuration for extension with alias "oro_calendar":
         #     false        - both organization and system calendars are disabled
         #     organization - only organization calendar is enabled
         #     system       - only system calendar is enabled
-        # 
+        #
         enabled_system_calendar: system
 
 oro_contact
@@ -1153,7 +1153,7 @@ The default configuration for extension with alias "oro_translation":
         translatable_dictionaries:
 
             # Example:
-            Acme\Bundle\AppBundle\Entity\Country: { name: { translation_key_prefix: acme_country., key_field_name: iso2Code } }
+            Acme\Bundle\DemoBundle\Entity\Country: { name: { translation_key_prefix: acme_country., key_field_name: iso2Code } }
 
             # Prototype
             entity class:

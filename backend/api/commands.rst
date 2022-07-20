@@ -22,7 +22,7 @@ The ``--no-warmup`` option can be used to skip warming up the cache after cleani
 
 .. code-block:: none
 
-   php bin/console oro:api:cache:clear --no-warmup
+    php bin/console oro:api:cache:clear --no-warmup
 
 .. _oroapidoccacheclear:
 
@@ -215,13 +215,13 @@ If a new extra section was added, pass the FQCN of a ConfigExtra:
 
 .. code-block:: none
 
-    php bin/console oro:api:config:dump users --extra="Acme\Bundle\AcmeBundle\Config\AcmeConfigExtra"
+    php bin/console oro:api:config:dump users --extra="Acme\Bundle\DemoBundle\Config\AcmeConfigExtra"
 
 You can pass multiple options:
 
 .. code-block:: none
 
-    php bin/console oro:api:config:dump users --extra=sorters --extra=descriptions --extra=filters --extra="Acme\Bundle\AcmeBundle\Config\AcmeConfigExtra"
+    php bin/console oro:api:config:dump users --extra=sorters --extra=descriptions --extra=filters --extra="Acme\Bundle\DemoBundle\Config\MyConfigExtra"
 
 oro:api:metadata:dump
 ---------------------
@@ -256,7 +256,7 @@ To include the HATEOAS links to the metadata, use the ``--hateoas`` option:
 
 .. code-block:: none
 
-   php bin/console oro:api:metadata:dump --hateoas <entity>
+    php bin/console oro:api:metadata:dump --hateoas <entity>
 
 oro:api:config:dump-reference
 -----------------------------
@@ -271,7 +271,7 @@ The --max-nesting-level option can be used to limit the depth of nesting target 
 
 .. code-block:: none
 
-   php bin/console oro:api:config:dump-reference --max-nesting-level=<number>
+    php bin/console oro:api:config:dump-reference --max-nesting-level=<number>
 
 .. _web-api--commands--oro-cron-api-async_operations-cleanup:
 
@@ -292,4 +292,4 @@ To show the number of obsolete asynchronous operations without the deletion of t
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

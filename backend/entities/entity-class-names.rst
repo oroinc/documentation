@@ -18,23 +18,25 @@ To create own provider just create a class implementing |EntityClassNameProvider
 
 .. code-block:: php
 
+    namespace Acme\Bundle\DemoBundle\Provider;
+
     use Oro\Bundle\EntityBundle\Provider\AbstractEntityClassNameProvider;
     use Oro\Bundle\EntityBundle\Provider\EntityClassNameProviderInterface;
 
     class AcmeClassNameProvider extends AbstractEntityClassNameProvider implements EntityClassNameProviderInterface
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function getEntityClassName($entityClass)
+        public function getEntityClassName(string $entityClass): ?string
         {
             // add your implementation here
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function getEntityClassPluralName($entityClass)
+        public function getEntityClassPluralName(string $entityClass): ?string
         {
             // add your implementation here
         }
@@ -43,7 +45,7 @@ To create own provider just create a class implementing |EntityClassNameProvider
 .. code-block:: yaml
 
     entity_class_name_provider.acme:
-        class: Acme\Bundle\TestBundle\Provider\AcmeClassNameProvider
+        class: Acme\Bundle\DemoBundle\Provider\AcmeClassNameProvider
         public: false
         tags:
             - { name: oro_entity.name_provider, priority: 100 }

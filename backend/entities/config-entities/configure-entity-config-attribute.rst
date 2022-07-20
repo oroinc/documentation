@@ -19,11 +19,18 @@ Example:
 
    class AcmeDemoAttrEntityConfiguration implements EntityConfigInterface
    {
+
+       /**
+        * @inheritDoc
+        */
        public function getSectionName(): string
        {
            return 'acme';
        }
 
+       /**
+        * @inheritDoc
+        */
        public function configure(NodeBuilder $nodeBuilder): void
        {
            $nodeBuilder

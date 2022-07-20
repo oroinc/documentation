@@ -22,33 +22,39 @@ First, you need to create a form type that makes it possible to let the user ent
 needed to describe a task:
 
 .. code-block:: php
-   :caption: src/AppBundle/Form/TaskType.php
+   :caption: src/Acme/Bundle/DemoBundle/Form/TaskType.php
 
-    namespace AppBundle\Form;
+   namespace Acme\Bundle\DemoBundle\Form;
 
-    use Symfony\Component\Form\AbstractType;
-    use Symfony\Component\Form\FormBuilderInterface;
-    use Symfony\Component\OptionsResolver\OptionsResolver;
+   use Symfony\Component\Form\AbstractType;
+   use Symfony\Component\Form\FormBuilderInterface;
+   use Symfony\Component\OptionsResolver\OptionsResolver;
 
-    class TaskType extends AbstractType
-    {
-        public function buildForm(FormBuilderInterface $builder)
-        {
-            $builder
-                ->add('subject')
-                ->add('description')
-                ->add('dueDate')
-                ->add('priority')
-            ;
-        }
+   class TaskType extends AbstractType
+   {
+       /**
+        * @inheritDoc
+        */
+       public function buildForm(FormBuilderInterface $builder, array $options)
+       {
+           $builder
+               ->add('subject')
+               ->add('description')
+               ->add('dueDate')
+               ->add('priority')
+           ;
+       }
 
-        public function configureOptions(OptionsResolver $resolver)
-        {
-            $resolver->setDefaults([
-                'data_class' => 'AppBundle\Entity\Task',
-            ]);
-        }
-    }
+       /**
+        * @inheritDoc
+        */
+       public function configureOptions(OptionsResolver $resolver)
+       {
+           $resolver->setDefaults([
+               'data_class' => 'Acme\Bundle\DemoBundle\Entity\Task',
+           ]);
+       }
+   }
 
 .. seealso:: Learn more about |form types in the Symfony documentation|.
 
@@ -62,15 +68,16 @@ new task should be created, and one that is able to fetch an existing task to le
 its data:
 
 .. code-block:: php
-   :caption: src/AppBundle/Controller/TaskController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
 
-    namespace AppBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
-    use AppBundle\Entity\Task;
+    use Acme\Bundle\DemoBundle\Entity\Task;
+    use Acme\Bundle\DemoBundle\Form\TaskType;
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-    use Symfony\Component\Routing\Annotation\Route;
     use Symfony\Component\HttpFoundation\Request;
+    use Symfony\Component\Routing\Annotation\Route;
 
     /**
      * @Route("/task")
@@ -78,30 +85,35 @@ its data:
     class TaskController extends AbstractController
     {
         /**
-         * @Route("/create", name="app_task_create")
-         * @Template("@App/Task/update.html.twig")
+         * @Route("/create", name="acme_task_create")
+         * @Template("@AcmeDemo/Task/update.html.twig")
          */
-        public function createAction(Request $request)
+        public function createAction(Request $request): array
         {
             return $this->update(new Task(), $request);
         }
 
         /**
-         * @Route("/edit/{id}", name="app_task_update", requirements={"id"="\d+"})
-         * @Template("@App/Task/update.html.twig")
+         * @Route("/edit/{id}", name="acme_task_update", requirements={"id"="\d+"})
+         * @Template("@AcmeDemo/Task/update.html.twig")
          */
-        public function editAction(Task $task, Request $request)
+        public function editAction(Task $task, Request $request): array
         {
             return $this->update($task, $request);
         }
 
-        private function update(Task $task, Request $request)
+        /**
+         * @param Task $task
+         * @param Request $request
+         * @return array
+         */
+        private function update(Task $task, Request $request): array
         {
-            $form = $this->createForm(new TaskType(), $task);
+            $form = $this->createForm(TaskType::class, $task);
 
             return [
                 'entity' => $task,
-                'form' => $form->createView(),
+                'form'   => $form->createView(),
             ];
         }
     }
@@ -110,11 +122,13 @@ Then, make sure that the controller is loaded in your routing configuration so t
 which controller needs to be called for particular routes:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/routing.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/routing.yml
 
-    app_task:
-        resource: '@AppBundle/Controller/TaskController.php'
+    acme_task:
+        resource: '@AcmeDemoBundle/Controller/TaskController.php'
         type: annotation
+
+
 
 .. _cookbook-entity-template:
 
@@ -127,7 +141,8 @@ that you can use. This way your own forms will provide the same look and feel as
 with OroPlatform:
 
 .. code-block:: none
-   :caption: src/AppBundle/Resources/views/Task/update.html.twig
+    :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/update.html.twig
+
 
     {# extend the base template from the OroUIBundle #}
     {% extends '@OroUI/actions/update.html.twig' %}
@@ -147,14 +162,13 @@ with OroPlatform:
     {% endif %}
 
     {% block navButtons %}
-        {# the cancelButton() macro creates a button that discards the
-           entered data and leads the user to the linked controller #}
+        {# the cancelButton() macro creates a button that discards the entered data and leads
+           the user to the linked controller #}
         {{ UI.cancelButton(path('app_task_index')) }}
 
-        {# the dropdownSaveButton() macro offers a way to let the user select
-           between different options when saving an entity, the selected option
-           will be passed to the controller handling the request as an additonal
-           parameter #}
+        {# the dropdownSaveButton() macro offers a way to let the user select between different
+           options when saving an entity, the selected option will be passed to the controller
+           handling the request as an additional parameter #}
         {{ UI.dropdownSaveButton({
             'html': UI.saveAndCloseButton() ~ UI.saveAndStayButton()
         }) }}
@@ -192,9 +206,8 @@ with OroPlatform:
             }]
         %}
 
-        {# the data variable is a special variable that is used in the
-           parent content_data block to render the visual content "blocks"
-           of a page #}
+        {# the data variable is a special variable that is used in the parent content_data block
+           to render the visual content "blocks" of a page #}
         {% set data = {
             'formErrors': form_errors(form) ? form_errors(form) : null,
             'dataBlocks': dataBlocks,
@@ -202,6 +215,7 @@ with OroPlatform:
 
         {{ parent() }}
     {% endblock content_data %}
+
 
 .. _controller-entity-grid-create-edit-link:
 
@@ -218,11 +232,12 @@ pre-defined ``navButtons`` block which you can use to add a button that links to
 action*:
 
 .. code-block:: html+jinja
-   :caption: src/AppBundle/Resources/views/Task/index.html.twig
+    :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/index.html.twig
+
 
     {% extends '@OroUI/actions/index.html.twig' %}
 
-    {% set gridName = 'app-tasks-grid' %}
+    {% set gridName = 'acme-tasks-grid' %}
     {% set pageTitle = 'Task' %}
 
     {% block navButtons %}
@@ -234,6 +249,7 @@ action*:
         </div>
     {% endblock %}
 
+
 **2. Link task rows to the related update action**
 
 To make it possible to modify each task you need to define a property that describes how the URL of
@@ -241,10 +257,10 @@ the update action is built and then add this URL to the list of available action
 configuration:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        app-tasks-grid:
+        acme-tasks-grid:
             # ...
             properties:
                 id: ~
@@ -274,21 +290,23 @@ You can delete an entity through the :ref:`DELETE operation <bundle-docs-platfor
 
 .. code-block:: php
 
-
-    @Config(
-         routeName="oro_task_index",
-         routeView="oro_task_view",
-         defaultValues={
-             "entity"={
-                 "icon"="fa-tasks"
-             },
+    /*
+     * @Config(
+     *      routeName="acme_task_index",
+     *      routeView="acme_task_view",
+     *      defaultValues={
+     *          "entity"={
+     *              "icon"="fa-tasks"
+     *          }
+     *      }
+     * )
+     */
 
 See the sample configuration of the default ``DELETE`` operation in the |Actions| topic.
 
 If the default configuration is not valid for your particular case, create your own operation that would inherit from the default one following the example:
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     DELETE:
         exclude_entities:
@@ -313,4 +331,4 @@ If the default configuration is not valid for your particular case, create your 
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin
