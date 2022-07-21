@@ -1,3 +1,5 @@
+:oro_local_toc_max_depth: 2
+
 .. _bundle-docs-commerce-inventory-bundle:
 
 OroInventoryBundle
@@ -10,7 +12,6 @@ Configuration
 -------------
 
 .. code-block:: yaml
-
 
     product_inventory_options:
         children:
