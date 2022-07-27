@@ -4954,13 +4954,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Datasource/Orm/OrmDatasource.php" target="_blank">OrmDatasource</a>
 
-.. |ParameterBinderAwareInterface| raw:: html
+.. |BindParametersInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Datasource/ParameterBinderAwareInterface.php" target="_blank">ParameterBinderAwareInterface</a>
-
-.. |ParameterBinderInterface| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Datasource/ParameterBinderInterface.php" target="_blank">ParameterBinderInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Datasource/BindParametersInterface.php" target="_blank">BindParametersInterface</a>
 
 .. |DatasourceBindParametersListener| raw:: html
 

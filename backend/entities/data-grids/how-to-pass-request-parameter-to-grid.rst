@@ -86,8 +86,7 @@ where the key will be the name of the query parameter, and the value will match 
 
 .. caution::
 
-    A datasource must implement the ``Oro\Bundle\DataGridBundle\Datasource\ParameterBinderAwareInterface``
-    to support the ``bind_parameters`` option.
+    A datasource must implement the |BindParametersInterface| to support the ``bind_parameters`` option.
 
 Now we need to pass the parameter with name "relatedContactId" to our grid.
 The controller receives a contact entity and passes it to the view:
