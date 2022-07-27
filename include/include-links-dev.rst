@@ -921,7 +921,11 @@ Links (Dev)
 
 .. |SearchAggregationFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Api/Filter/SearchAggregationFilter.php" target="_blank">SearchQueryFilter</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Api/Filter/SearchAggregationFilter.php" target="_blank">SearchAggregationFilter</a>
+
+.. |SimpleSearchFilter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Api/Filter/SimpleSearchFilter.php" target="_blank">SimpleSearchFilter</a>
 
 .. |FilterInterface| raw:: html
 
