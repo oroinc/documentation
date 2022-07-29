@@ -210,6 +210,7 @@ Examples of such filters are:
 * |NestedTreeFilter|
 * |SearchQueryFilter|
 * |SearchAggregationFilter|
+* |SimpleSearchFilter|
 * |PrimaryFieldFilter|
 
 .. _standalonefilterwithdefaultvalue-base-class:

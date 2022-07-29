@@ -95,12 +95,12 @@ The full format for declaring parameters binding is also available:
 Support of Parameter Binding by Datasource
 ------------------------------------------
 
-Datasource must implement |ParameterBinderAwareInterface| to support the ``bind_parameters`` option.
+Datasource must implement |BindParametersInterface| to support the ``bind_parameters`` option.
 
 Parameter Binder Class
 ----------------------
 
-Parameter binder class must implements |ParameterBinderInterface| and depends on datasources implementation.
+Parameter binder class depends on datasources implementation.
 
 Example of usage:
 
@@ -121,7 +121,7 @@ Example of usage:
 Parameter Binding Listener
 --------------------------
 
-|DatasourceBindParametersListener| is responsible for running the binding of the datasource parameters. It checks whether the datasource implements |ParameterBinderInterface| and whether it has the ``bind_parameters`` option.
+|DatasourceBindParametersListener| is responsible for running the binding of the datasource parameters. It checks whether the datasource implements |BindParametersInterface| and whether it has the ``bind_parameters`` option.
 
 If the grid configuration is applicable, then parameters configuration specified in the ``bind_parameters`` is passed to the datasource method ``bindParameters``.
 
