@@ -79,6 +79,12 @@ The ``--symlink`` option tells the asset installer to create symlinks instead of
 
     php bin/console oro:install --symlink
 
+The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths:
+
+.. code-block:: none
+
+    php bin/console oro:install --relative-symlink
+
 The --skip-download-translations and --skip-translations options can be used to skip the step of downloading translations (already downloaded translations  will be applied if present), or skip applying the translations completely:
 
 .. code-block:: none
@@ -167,6 +173,12 @@ The ``--symlink`` option tells the asset installer to create symlinks instead of
 .. code-block:: none
 
     php bin/console oro:platform:update --force --symlink
+
+The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths:
+
+.. code-block:: none
+
+    php bin/console oro:platform:update --force --relative-symlink
 
 The ``--skip-download-translations`` and ``--skip-translations`` options can be used to skip the step of downloading translations (already downloaded translations will be applied if present), or skip applying the translations completely:
 
