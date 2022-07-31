@@ -33,8 +33,8 @@ The following information about the translations is available in the All Transla
 | KEY                 | A coded text string that identifies the text system element and is used to find its translation to the target language         |
 |                     | (e.g. oro.ui.updated_at) in Oro applications.                                                                                  |
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| DOMAIN              | The logical affiliation to a particular functionality that organises linguistic sources by domain (e.g. tooltips, security,    |
-|                     | entities, jsmessages, maintenance, install, workflows, messages, validators, HWIOAuthBundle).                                  |
+| DOMAIN              | The logical affiliation to a particular functionality that organises linguistic sources by domain (e.g. security, entities     |
+|                     | jsmessages, maintenance, install, workflows, messages, validators, HWIOAuthBundle).                                            |
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | CONTEXT             | The detailed location of the translated functional component (e.g., Workflow "Checkout" -> Name).                              |
 +---------------------+--------------------------------------------------------------------------------------------------------------------------------+

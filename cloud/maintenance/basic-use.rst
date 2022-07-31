@@ -99,7 +99,6 @@ The command output is similar to the following:
 
       > loading [jsmessages] ... processed 1803 records.
       > loading [maintenance] ... processed 7 records.
-      > loading [tooltips] ... processed 20 records.
       > loading [HWIOAuthBundle] ... processed 9 records.
       > loading [entities] ... processed 4840 records.
       > loading [workflows] ... processed 625 records.
