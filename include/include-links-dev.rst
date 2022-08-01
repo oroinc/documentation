@@ -2737,13 +2737,13 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/SynchronousCommandInterface.php" target="_blank">SynchronousCommandInterface</a>
 
-.. |CronCommandInterface| raw:: html
+.. |CronCommandScheduleDefinitionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php" target="_blank">CronCommandInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandScheduleDefinitionInterface.php" target="_blank">CronCommandScheduleDefinitionInterface</a>
 
-.. |getDefaultDefinition()| raw:: html
+.. |CronCommandActivationInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php#L14" target="_blank">getDefaultDefinition()</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandActivationInterface.php" target="_blank">CronCommandActivationInterface</a>
 
 .. |crontab compatible| raw:: html
 

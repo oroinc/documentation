@@ -14,11 +14,12 @@ The nature and algorithms of these timely-based tasks can be diverse and complic
 
 Therefore, to strengthen the task to create and schedule such components, OroPlatform provides the :ref:`OroCronBundle <bundle-docs-platform-cron-bundle>` . With its help, it is considerably easier to run Symfony Console commands through cronjobs (on UNIX-based operating systems) or the Windows task scheduler.
 
-OroCronBundle provides CronCommandInterface and two console commands to set up the cron tasks schedule.
+The OroCronBundle provides two interfaces that help to implement console commands that should be executed by the cron:
 
-**CronCommandInterface** allows defining the console command along with its schedule in a crontab compatible string in the command class.
+- |CronCommandScheduleDefinitionInterface| allows defining the console command along with its schedule in a crontab compatible string in the command class.
+- |CronCommandActivationInterface| allows defining a conditional logic for the cron command.
 
-The **oro:cron:definitions:load** command scans for all commands from the oro:cron namespace that implements the CronCommandInterface. For each detected command, a new |Schedule| entry is created and saved into the database. This command runs on install and update, and can also be run manually if some cron commands or command definitions are changed.
+The **oro:cron:definitions:load** command scans for all commands from the oro:cron namespace that implements the |CronCommandScheduleDefinitionInterface|. For each detected command, a new |Schedule| entry is created and saved into the database. This command runs on install and update, and can also be run manually if some cron commands or command definitions are changed.
 
 The second command is **oro:cron**. It takes all schedules from the database (created by the oro:cron:definitions:load command) and adds the commands that are due to the Message Queue. This command should run every minute.
 
@@ -50,9 +51,9 @@ To run a set of commands from your application regularly, configure your system 
 Scheduled Commands in OroPlatform
 ---------------------------------
 
-A scheduled command in OroPlatform is a regular Symfony console command that implements additional |CronCommandInterface| and has the **oro:cron** namespace.
+A scheduled command in OroPlatform is a regular Symfony console command that implements additional |CronCommandScheduleDefinitionInterface| and has the **oro:cron** namespace.
 
-Implementing *CronCommandInterface* requires the implementation of the |getDefaultDefinition()| method. It returns the |crontab compatible| description of when the command should be executed. For example, if a command should run every day five minutes after midnight, the appropriate
+Implementing |CronCommandScheduleDefinitionInterface| requires the implementation of the **getDefaultDefinition()** method. It returns the |crontab compatible| description of when the command should be executed. For example, if a command should run every day five minutes after midnight, the appropriate
 value is **5 0 \* \* \***.
 
 .. code-block:: php
@@ -60,17 +61,17 @@ value is **5 0 \* \* \***.
 
     namespace Acme\Bundle\DemoBundle\Command;
 
-    use Oro\Bundle\CronBundle\Command\CronCommandInterface;
+    use Oro\Bundle\CronBundle\Command\CronCommandScheduleDefinitionInterface;
     use Symfony\Component\Console\Command\Command;
     use Symfony\Component\Console\Input\InputInterface;
     use Symfony\Component\Console\Output\OutputInterface;
 
-    class SomeCronCommand extends Command implements CronCommandInterface
+    class SomeCronCommand extends Command implements CronCommandScheduleDefinitionInterface
     {
         protected static $defaultName = 'oro:cron:acme_demo_some';
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function getDefaultDefinition(): string
         {
@@ -78,15 +79,7 @@ value is **5 0 \* \* \***.
         }
 
         /**
-         * @inheritDoc
-         */
-        public function isActive(): bool
-        {
-            return true;
-        }
-
-        /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         protected function configure()
         {
@@ -94,7 +87,7 @@ value is **5 0 \* \* \***.
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         protected function execute(InputInterface $input, OutputInterface $output)
         {
@@ -102,23 +95,30 @@ value is **5 0 \* \* \***.
         }
     }
 
+Conditional Activation of Cron Commands
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By default, all cron commands are executed every time when the cron triggers it. But sometimes it is required
+to execute a command only when certain conditions are met.
+In this case a cron command should implement |CronCommandActivationInterface| interface and provide the custom activation logic in the **isActive()** method.
+
 Synchronous Cron Commands
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, **all Cron commands are executed asynchronously** by sending a message to the queue.
+By default, **all cron commands are executed asynchronously** by sending a message to the queue.
 
-Sometimes it is necessary to execute a Cron command **immediately** when Cron triggers it, without sending the message
+Sometimes it is necessary to execute a cron command **immediately** when cron triggers it, without sending the message
 to the queue.
 
-To do this, a Cron command should implement the |SynchronousCommandInterface| interface. In this case, the command will be executed as a background process.
+To do this, a cron command should implement the |SynchronousCommandInterface| interface. In this case, the command will be executed as a background process.
 
 .. note:: Please note that the synchronous commands must be designed well-performed and should not block process execution as it may affect scheduled execution of other commands.
 
 Scheduling Cron Commands in DB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After creating the Cron commands classes, run the **oro:cron:definitions:load** command to schedule the created
-command in the DB. After that, the Cron command will be ready to evaluate and execute it during the next **oro:cron** command tick.
+After creating the cron commands classes, run the **oro:cron:definitions:load** command to schedule the created
+command in the DB. After that, the cron command will be ready to evaluate and execute it during the next **oro:cron** command tick.
 
 **Related Topics**
 
