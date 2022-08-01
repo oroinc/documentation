@@ -130,9 +130,7 @@ Below is the topic mapping for default queues configuration.
   * oro.importexport.export
   * oro.importexport.post_export
   * oro.importexport.pre_import
-  * oro.importexport.pre_http_import
   * oro.importexport.import
-  * oro.importexport.http_import
   * oro.importexport.send_import_notification
   * oro.importexport.save_import_export_result
   * oro.imap.clear_inactive_mailbox
