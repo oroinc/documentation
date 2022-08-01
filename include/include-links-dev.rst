@@ -4201,10 +4201,6 @@ Links (Dev)
 
    <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html" target="_blank">Doctrine association mappings</a>
 
-.. |Doctrine One-To-Many Bidirectional Association| raw:: html
-
-   <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html#one-to-many-bidirectional" target="_blank">Doctrine documentation</a>
-
 .. |many-to-one association| raw:: html
 
    <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html#many-to-one-unidirectional" target="_blank">many-to-one association</a>
