@@ -20,6 +20,7 @@ The WebsiteElasticSearchBundle bundle has exactly the same requirements as Elast
    attributes-boost
    request-builders
    upgrade-to-es7
+   synonym-management
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
