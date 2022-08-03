@@ -120,7 +120,7 @@ For example, ``product_view_attribute_group_general_attribute_text_sku`` block f
 
 .. code-block:: twig
 
-   {#ProductBundle/Resources/views/layouts/blank/oro_product_frontend_product_view/layout.html.twig #}
+   {#ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/layout.html.twig #}
 
    {% block _product_view_attribute_group_general_attribute_text_sku_widget %}
     {% set attr = layout_attr_defaults(attr, {
@@ -137,7 +137,7 @@ To override the template, we need to create a block theme twig file in the same 
 
 .. code-block:: diff
 
-    {#DemoBundle/Resources/views/layouts/blank/oro_product_frontend_product_view/sku.html.twig #}
+    {#DemoBundle/Resources/views/layouts/default/oro_product_frontend_product_view/sku.html.twig #}
 
     {% block _product_view_attribute_group_general_attribute_text_sku_widget %}
      {% set attr = layout_attr_defaults(attr, {

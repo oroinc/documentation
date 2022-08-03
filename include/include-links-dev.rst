@@ -361,7 +361,7 @@ Links (Dev)
 
 .. |Default scss breakpoints| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/blank/scss/settings/partials/_breakpoints.scss" target="_blank">Default scss breakpoints</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/default/scss/settings/_breakpoints.scss" target="_blank">Default scss breakpoints</a>
 
 .. |official plugin documentation| raw:: html
 
@@ -1865,9 +1865,9 @@ Links (Dev)
 
    <a href="https://twig.symfony.com/" target="_blank">Twig official documentation</a>
 
-.. |Bootstrap v.3 toolkit| raw:: html
+.. |Bootstrap v.4 toolkit| raw:: html
 
-   <a href="https://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap v.3 toolkit</a>
+   <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap v.4 toolkit</a>
 
 .. |SCSS| raw:: html
 
@@ -1983,7 +1983,7 @@ Links (Dev)
 
 .. |this block theme| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/views/layouts/blank/oro_product_frontend_product_view/layout.html.twig" target="_blank">this block theme</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/layout.html.twig" target="_blank">this block theme</a>
 
 .. |List of all css properties| raw:: html
 
@@ -4512,7 +4512,7 @@ Links (Dev)
 
 .. |example of using low_inventory| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Resources/views/layouts/blank/imports/oro_product_list_item/low_inventory.html.twig" target="_blank">example of using low_inventory</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Resources/views/layouts/default/imports/oro_product_list_item/low_inventory.html.twig" target="_blank">example of using low_inventory</a>
 
 .. |OroBundleInventoryBundleEventListenerLowInventoryCheckoutLineItemValidationListener| raw:: html
 

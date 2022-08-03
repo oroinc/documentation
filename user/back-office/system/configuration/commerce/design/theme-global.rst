@@ -32,7 +32,7 @@ To configure the storefront theme options globally:
 
 3. In the **Theme Settings** section, configure the following options:
 
-   * **Theme** --- select the theme from the list. The theme controls general design of the storefront that defines its look and feel. *Default*, *blank*, and *custom* themes are available out of the box for the storefront.
+   * **Theme** --- select the theme from the list. The theme controls general design of the storefront that defines its look and feel. *Default* and *custom* themes are available out-of-the-box for the storefront.
 
    For example, this is how the address book looks in the storefront for the default and custom themes:
 

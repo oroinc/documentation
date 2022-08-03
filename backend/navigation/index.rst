@@ -134,7 +134,7 @@ Breadcrumb Provider
 To use breadcrumb provider, create layout update with the predefined **breadcrumbs** block type and the **menu_name** option:
 
 .. code-block:: yaml
-    :caption: CustomerBundle/Resources/views/layouts/blank/imports/oro_customer_page/oro_customer_page.yml
+    :caption: CustomerBundle/Resources/views/layouts/default/imports/oro_customer_page/oro_customer_page.yml
 
     layout:
         imports:
@@ -157,12 +157,12 @@ Breadcrumbs Block Type
 You can avoid usage of breadcrumb provider. For that, you should create layout update with the predefined **breadcrumbs** block type and the **breadcrumbs** option:
 
 .. code-block:: yaml
-    :caption: WebCatalogBundle/Resources/views/layouts/blank/oro_product_frontend_product_index/product_index.yml
+    :caption: WebCatalogBundle/Resources/views/layouts/default/oro_product_frontend_product_index/product_index.yml
 
     layout:
         actions:
             - '@setBlockTheme':
-                themes: '@OroWebCatalog/layouts/blank/oro_product_frontend_product_index/product_index.html.twig'
+                themes: '@OroWebCatalog/layouts/default/oro_product_frontend_product_index/product_index.html.twig'
             - '@addTree':
                 items:
                     category_breadcrumbs:
