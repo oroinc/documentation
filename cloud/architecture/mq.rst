@@ -141,7 +141,6 @@ Below is the topic mapping for default queues configuration.
 
 * ``oro.system`` queue manages topics:
 
-  * oro.message_queue.job.calculate_root_job_status
   * oro.message_queue.job.root_job_stopped
   * oro.cron.run_command
   * oro.cron.run_command.delayed
