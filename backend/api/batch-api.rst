@@ -81,6 +81,9 @@ The default configuration of this cron job is illustrated below:
                 # The maximum number of seconds that the cron job can spend in one run.
                 cleanup_process_timeout: 3600 # 1 hour
 
+                # The maximum number of seconds after which an operation will be removed regardless of status.
+                operation_timeout: 3600 # 1 hour
+
 .. _web-api--batch-api--storage-config:
 
 Storage Configuration
