@@ -3,6 +3,8 @@
 Synonym Management
 ==================
 
+.. hint:: The feature is available since OroCommerce Enterprise v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 This feature allows setting search synonyms to be applied during the full-text search in the storefront.
 Full-text search is used in many places, for example, during the global search.
 
