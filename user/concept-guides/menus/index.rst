@@ -183,7 +183,7 @@ Usermenu
 Calendar_menu
 ^^^^^^^^^^^^^
 
-**Calendar_menu** is a service menu that is located on the **My Calendar** page under the ellipsis menu to the right from the calendar name. The actions in the menu help to change the displayed calendar color, hide or remove a calendar.
+**Calendar_menu** is a service menu that is located on the **My Calendar** page under the ellipsis menu to the right from the calendar name. The actions in the menu help change the displayed calendar color, hide or remove a calendar.
 
 .. image:: /user/img/concept-guides/menus/calendar_menu.png
    :alt: A sample of the calendar_menu in the back-office

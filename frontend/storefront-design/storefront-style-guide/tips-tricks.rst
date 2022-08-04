@@ -5,7 +5,7 @@
 Tips & Tricks
 -------------
 
-Sketch is a powerful and lightweight tool for creating user interface designs. Each designer tries to improve their skills and optimize design creation workflow. In this section, we will give you tips and tricks on working with Sketch, which will help to solve possible difficulties, inconveniences and increase the speed of work.
+Sketch is a powerful and lightweight tool for creating user interface designs. Each designer tries to improve their skills and optimize design creation workflow. In this section, we will give you tips and tricks on working with Sketch, which will help solve possible difficulties, inconveniences and increase the speed of work.
 
 Useful Extensions
 ^^^^^^^^^^^^^^^^^

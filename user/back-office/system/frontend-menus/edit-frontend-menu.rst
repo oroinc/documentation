@@ -133,7 +133,7 @@ Add a Menu Item
 
   * The *!is_logged_in()* function stands for the *non-registered users*. If entered, only the unregistered users are enabled to view the corresponding menu item.
 
-  * The *config_value('some_identifier')* function limits visibility of the corresponding menu item upon specifying certain value instead of *'some_identifier'*.
+  * The *config_value('some_identifier')* function limits visibility of the corresponding menu item upon specifying certain value instead of *'some_identifier'*. Keep in mind that to get the value for *'some_identifier'*, you need to ask the developer for assistance.
 
 As an example, let us make the **About** section in the storefront visible to customers with configured taxes. For this, we need to:
 

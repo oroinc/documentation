@@ -87,7 +87,7 @@ In the same manner, the access may be limited for users assigned to the child un
 may only see the information that has been reported or assigned to them directly, and office employees will see
 information reported by any of their co-workers.
 
-This will protect information on one hand and help to protect users from being overwhelmed with non-relevant
+This will protect information on one hand and help protect users from being overwhelmed with non-relevant
 information.
 
 Please refer to the Access and permissions section for more details.
