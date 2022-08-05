@@ -594,4 +594,6 @@ Images
 
    <i class="fas fa-file-code" aria-hidden="true"></i>
 
+.. |PaintBrush| raw:: html
 
+   <i class="fas fa-paint-brush" aria-hidden="true"></i>

@@ -48,8 +48,8 @@ WYSIWYG enables you to do the following:
 
 .. contents:: :local:
 
-Add Formatting and Styles to Text
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Add Formatting and Styles to Text Block
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To add formatting such as bold, italic, and underlining to your text, you need to drag the text block, enter the required text, and left-click the block to display the menu with additional formatting options.
 
@@ -64,6 +64,7 @@ Click the necessary option to (from left to right):
 * Underline the text
 * Add a strikethrough effect on your text (|ICstrikethrough|)
 * Insert links to the text
+* Apply formatting and styles to the selected text fragment (available since OroCommerce v5.0.6.)
 * Create a numbered list
 * Create a bulleted list
 * Set your text below the standard line of type with the subscript icon
@@ -79,6 +80,24 @@ To set the opacity of the text block and add its background color, use the **Dec
 
 .. image:: /user/img/concept-guides/content-management/decorations.png
    :alt: The detail settings in the Decorations section of the Style Manager Block
+
+Add Formatting and Styles to a Text Fragment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. hint:: The feature is available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+To apply special formatting (italic, bold, font faces, sizes, colors) to a particular text fragment in the text block:
+
+1. Select the fragment and click |PaintBrush| to wrap the text into the **Text Style** block. Use the ``<span data-type="text-style"> </span>`` code if you import the text in HTML.
+
+.. image:: /user/img/concept-guides/content-management/wrap-to-style-fragment.png
+   :alt: Highlighting the Apply Styles feature
+
+2. Click the block with the text fragment and start applying the required styles and formatting, separately from the other text in the block, through the **Style Manager** menu.
+
+.. image:: /user/img/concept-guides/content-management/edit-wrap-to-style-fragment.png
+   :alt: Applying the styles to the selected text fragment through the Apply Styles feature
+
 
 Shift the Text to a New Line
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
