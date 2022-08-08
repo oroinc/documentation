@@ -329,4 +329,8 @@ user/back-office/marketing/email-campaigns/dotmailer-data-fields-mappings /user/
 user/back-office/system/configuration/system/integrations/dotmailer-integration-settings /user/back-office/system/configuration/system/integrations/dotdigital-integration-settings
 user/back-office/getting-started/navigation/search /user/concept-guides/search/index
 user/back-office/system/storefront-oauth-app /user/back-office/customers/customer-user-oauth-app
-cloud/security /cloud/security/index
+bundles/commerce/ProductBundle/customize-products /bundles/commerce/ProductBundle/customize-products/index
+bundles/commerce/ProductBundle/customize-pdp /bundles/commerce/ProductBundle/customize-products/customize-pdp
+bundles/commerce/ProductBundle/customize-plp /bundles/commerce/ProductBundle/customize-products/customize-plp
+bundles/commerce/ProductBundle/customize-product-lists /bundles/commerce/ProductBundle/customize-products/customize-product-lists
+bundles/commerce/ProductBundle/customize-products-sku-validation /bundles/commerce/ProductBundle/customize-products/customize-products-sku-validation

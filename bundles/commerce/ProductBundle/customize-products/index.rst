@@ -1,7 +1,7 @@
 .. _bundle-docs-platform-product-bundle-customize:
 
-Customize Products Using Layouts
-================================
+Product Customization Using Layouts
+===================================
 
 The goal of this guide is to demonstrate how to customize the product view or list pages.
 
