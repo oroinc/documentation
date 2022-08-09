@@ -14,12 +14,11 @@ Related Documentation
    :maxdepth: 1
 
    actions
-   customize-products
    product-attributes
    product-unit-formatting
    product-variant-search
    related-items
-
+   customize-products/index
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
