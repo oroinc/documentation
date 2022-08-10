@@ -1,0 +1,11 @@
+ACME\Bundle\WysiwygBundle\Entity\BlogPost:
+    properties:
+        content:
+            - Oro\Bundle\CMSBundle\Validator\Constraints\TwigContent: ~
+            - Oro\Bundle\CMSBundle\Validator\Constraints\WYSIWYG: ~
+        extraContent:
+            - Oro\Bundle\CMSBundle\Validator\Constraints\TwigContent: ~
+            - Oro\Bundle\CMSBundle\Validator\Constraints\WYSIWYG: ~
+        extraContentStyle:
+            - Oro\Bundle\CMSBundle\Validator\Constraints\TwigContent: ~
+            - Oro\Bundle\CMSBundle\Validator\Constraints\WYSIWYG: ~

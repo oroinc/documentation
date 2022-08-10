@@ -10,8 +10,9 @@ Feature: Check wysiwyg field migrations
     When I go to System / Entities / Entity Management / Blog Posts
     And click "Create Blog Post"
     And I fill "Blog Post Form" with:
-      | Content | <div>Some Content</div> |
-      | Teaser  | <div>Some Teaser</div>  |
+      | Content       | <div>Some Content</div>       |
+      | Teaser        | <div>Some Teaser</div>        |
+      | Extra Content | <div>Some Extra Content</div> |
     And save and close form
     Then I should see "Blog Post has been saved successfully" flash message
 
@@ -26,4 +27,5 @@ Feature: Check wysiwyg field migrations
     Then I should see "Current content view is simplified, please check the page on the Storefront to see the actual result."
     And I should see "Some Content"
     And I should see "Some Teaser"
+    And I should see "Some Extra Content"
 

@@ -11,6 +11,7 @@ Related Documentation
 ---------------------
 
 * :ref:`Content Widgets <content-widgets>`
+* :ref:`WYSIWYG Field <WYSIWYG-field-dev-guide>`
 * :ref:`Content Blocks <bundle-docs-commerce-cms-bundle-content-blocks>`
 * :ref:`Editor Components <bundle-docs-commerce-cms-bundle-editor-components>`
 

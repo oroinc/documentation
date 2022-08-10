@@ -1,15 +1,22 @@
 acme.wysiwyg:
     blogpost:
-        entity_label:               'Blog Post'
-        entity_plural_label:        'Blog Posts'
+        entity_label: 'Blog Post'
+        entity_plural_label: 'Blog Posts'
         entity_grid_all_view_label: 'All %entity_plural_label%'
-        id.label:                   'ID'
-        content.label:              'Content'
-        created_at.label:           'Created At'
-        updated_at.label:           'Updated At'
-        organization.label:         'Organization'
-        teaser.label:               'Teaser'
+        id.label: 'ID'
+        content.label: 'Content'
+        extra_content.label: 'Extra Content'
+        extra_content_style.label: 'Extra Content Style'
+        extra_content_properties.label: 'Extra Content Style'
+        created_at.label: 'Created At'
+        updated_at.label: 'Updated At'
+        organization.label: 'Organization'
+        teaser.label: 'Teaser'
+        sections:
+            general: 'General Information'
+            extra_content: 'Extra Content'
+            additional: 'Additional Information'
 
         message:
-            saved:                  'Blog Post has been saved successfully.'
-            information:            'Current content view is simplified, please check the page on the Storefront to see the actual result.'
+            saved: 'Blog Post has been saved successfully.'
+            information: 'Current content view is simplified, please check the page on the Storefront to see the actual result.'

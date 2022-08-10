@@ -15,14 +15,23 @@ class BlogPostType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
-        $builder->add(
-            'content',
-            WYSIWYGType::class,
-            [
-                'required' => false,
-                'label' => 'acme.wysiwyg.blogpost.content.label',
-            ]
-        );
+        $builder
+            ->add(
+                'content',
+                WYSIWYGType::class,
+                [
+                    'required' => false,
+                    'label' => 'acme.wysiwyg.blogpost.content.label',
+                ]
+            )
+            ->add(
+                'extraContent',
+                WYSIWYGType::class,
+                [
+                    'required' => false,
+                    'label' => 'acme.wysiwyg.blogpost.extra_content.label',
+                ]
+            );
     }
 
     public function configureOptions(OptionsResolver $resolver): void
