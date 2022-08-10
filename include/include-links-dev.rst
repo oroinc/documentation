@@ -6032,6 +6032,26 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/current/mailer.html#transport-setup" target="_blank">Sending Emails with Mailer</a>
 
+.. |CumulativeConfigLoader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/ComponentConfig/Loader/CumulativeConfigLoader.php" target="_blank">CumulativeConfigLoader</a>
+
+.. |CumulativeResourceManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/ComponentConfig/CumulativeResourceManager.php" target="_blank">CumulativeResourceManager</a>
+
+.. |YAML file loader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/ComponentConfig/Loader/YamlCumulativeFileLoader.php" target="_blank">YAML file loader</a>
+
+.. |"Foldering" file loader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/ComponentConfig/Loader/FolderingCumulativeFileLoader.php" target="_blank">"Foldering" file loader</a>
+
+.. |SystemAwareResolver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/ComponentConfig/Resolver/SystemAwareResolver.php" target="_blank">SystemAwareResolver</a>
+
 .. |official Elasticsearch documentation on search synonyms| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html#_solr_synonyms_2" target="_blank">official Elasticsearch documentation on search synonyms</a>
