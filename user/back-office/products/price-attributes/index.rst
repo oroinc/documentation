@@ -123,7 +123,7 @@ To set a price attribute (e.g., Minimal Advertised Price) for a product:
       :scale: 42%
       :alt: Illustration of how shipping cost set for the price attribute works in combination with the surcharge defined in the fixed product shipping cost integration
 
-   .. hint:: Fixed Product Shipping Cost has been available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+   .. hint:: Fixed Product Shipping Cost is available starting from OroCommerce v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 #. Provide the value per unit and currency.
 

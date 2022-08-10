@@ -8,3 +8,4 @@ Configure Search Settings per Website
 
    Saved Search <website-saved-search>
    Fuzzy Search <website-fuzzy-search>
+   Search Synonyms <website-search-synonyms>

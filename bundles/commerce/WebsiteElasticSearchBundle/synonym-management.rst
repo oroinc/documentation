@@ -1,15 +1,17 @@
-Synonym Management
-==================
+.. _bundle-docs-commerce-website-elasticsearch-bundle-synonyms:
+
+Search Synonym Management
+=========================
 
 This feature allows setting search synonyms to be applied during the full-text search in the storefront.
 Full-text search is used in many places, for example, during the global search.
 
-This feature works only together with the Elasticsearch engine.
+This feature works only together with the Elasticsearch search engine.
 
 Configuration
 -------------
 
-Synonyms are enabled via the configuration menu under **System Configuration > Commerce > Search > Synonyms** by selecting the **Enable Synonyms** checkbox. This configuration option also adds a submenu Synonyms under the Marketing main and refreshes synonym configuration in indices.
+Synonyms are enabled via the configuration menu under **System Configuration > Commerce > Search > Search Synonyms** by selecting the **Enable Search Synonyms** checkbox. This configuration option also adds a submenu Search Synonyms under the Marketing menu and refreshes synonym configuration in search indices.
 
 How It Works
 ------------
@@ -18,9 +20,9 @@ You can add synonyms via Marketing > Synonyms manually or via the import. In bot
 
 * **Owner** --- a standard Oro owner on the Business Unit level;
 
-* **Websites**  --- the websites you want to use the synonym;
+* **Websites**  --- the websites where you want to use the synonym;
 
-* **Entities** --- the entities you want to use the synonym (such as the `product` entity);
+* **Entities** --- the entities you want to use the synonym. This field is hidden out-of-the-box because there is only one available entity (Product);
 
 * **Synonyms**  ---  the actual synonym words.
 
