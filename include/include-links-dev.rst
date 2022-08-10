@@ -5956,4 +5956,24 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/crm/tree/4.2/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
 
+.. |CumulativeConfigLoader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Component/Config/Loader/CumulativeConfigLoader.php" target="_blank">CumulativeConfigLoader</a>
+
+.. |CumulativeResourceManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Component/Config/CumulativeResourceManager.php" target="_blank">CumulativeResourceManager</a>
+
+.. |YAML file loader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Component/Config/Loader/YamlCumulativeFileLoader.php" target="_blank">YAML file loader</a>
+
+.. |"Foldering" file loader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Component/Config/Loader/FolderingCumulativeFileLoader.php" target="_blank">"Foldering" file loader</a>
+
+.. |SystemAwareResolver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Component/Config/Resolver/SystemAwareResolver.php" target="_blank">SystemAwareResolver</a>
+
 
