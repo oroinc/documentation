@@ -4,7 +4,6 @@ navigation:
             blog_post_list:
                 label: 'acme.wysiwyg.blogpost.entity_plural_label'
                 route: 'acme_wysiwyg_blog_post_index'
-                position: 10
                 extras:
                     routes: [ '/^acme_wysiwyg_blog_post_/' ]
 
@@ -15,9 +14,7 @@ navigation:
                         children:
                             entities_list:
                                 children:
-                                    entity_management:
-                                        children:
-                                            blog_post_list: ~
+                                    blog_post_list: ~
 
     titles:
         acme_wysiwyg_blog_post_index: ~
