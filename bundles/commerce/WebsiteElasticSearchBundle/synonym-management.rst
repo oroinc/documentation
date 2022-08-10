@@ -13,7 +13,7 @@ This feature works only together with the Elasticsearch search engine.
 Configuration
 -------------
 
-Synonyms are enabled via the configuration menu under **System Configuration > Commerce > Search > Synonyms** by selecting the **Enable Synonyms** checkbox. This configuration option also adds a submenu Synonyms under the Marketing main and refreshes synonym configuration in indices.
+Synonyms are enabled via the configuration menu under **System Configuration > Commerce > Search > Search Synonyms** by selecting the **Enable Search Synonyms** checkbox. This configuration option also adds a submenu Search Synonyms under the Marketing menu and refreshes synonym configuration in search indices.
 
 How It Works
 ------------
