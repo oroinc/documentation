@@ -5,7 +5,7 @@
 Create Storefront Search Synonyms
 =================================
 
-.. hint:: The feature is available since OroCommerce Enterprise v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The feature is available starting from OroCommerce Enterprise v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 In OroCommerce Enterprise Edition, you can create a synonym group where a search for one word from this group in the OroCommerce storefront would return results for all the synonyms in this group. Synonym management is enabled :ref:`globally <configuration--guide--commerce--search--synonyms>` and :ref:`per website <configuration--website-commerce--search--synonyms>` in the system configuration, and subsequently managed through **Marketing > Search > Search Synonyms** in the main menu.
 

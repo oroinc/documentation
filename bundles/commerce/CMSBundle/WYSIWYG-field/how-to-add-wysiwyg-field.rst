@@ -5,7 +5,7 @@ How to Add WYSIWYG Field
 
 There are two ways to add a WYSIWYG field - via the Entity Management UI and programmatically.
 
-.. hint:: The ability to add a WYSIWYG field in the two abovementioned ways is available starting from OroCommerce v5.0.5. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The ability to add a WYSIWYG field in the two abovementioned ways is available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 .. _how-to-add-wysiwyg-field-via-ui:
 

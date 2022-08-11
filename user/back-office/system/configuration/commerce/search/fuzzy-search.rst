@@ -7,7 +7,7 @@ Configure Global Storefront Fuzzy Search Settings
 
 .. important:: The feature is available for the Enterprise edition only.
 
-.. hint:: Fuzzy search is available since v5.0.1. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: Fuzzy search is available starting from v5.0.1. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 You can set up storefront error-tolerant (fuzzy) search in website search index requests to Elasticsearch. When enabled, it finds similar results for the passed request phrase word by word. Please be aware that this feature is not supported by the ORM search engine. For configuration options to set up fuzzy search in the back-office, see the :ref:`General Setup Configuration topic <configuration--system-configuration--general-setup-sysconfig--search-global>`.
 

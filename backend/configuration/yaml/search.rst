@@ -210,7 +210,7 @@ one of the configured :ref:`fields <reference-format-search-fields>`.
 
 **type**: ``sequence``
 
-Note: Usage of this field is deprecated since 2.0. Register an EntityNameProvider instead.
+Note: Usage of this field is deprecated starting from 2.0. Register an EntityNameProvider instead.
 The list of fields to build the title for the result set. The value used here denote to the
 :ref:`configured fields <reference-format-search-fields>`.
 

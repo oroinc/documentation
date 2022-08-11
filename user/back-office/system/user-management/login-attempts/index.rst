@@ -7,7 +7,7 @@ Login Attempts
 ==============
 
 
-.. hint:: The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The feature is available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To simplify investigation of any security-related incidents, the administrator can check the successful and unsuccessful
 login attempts.

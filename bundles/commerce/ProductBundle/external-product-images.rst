@@ -3,7 +3,7 @@
 Externally Stored Product Images
 ================================
 
-.. hint:: The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The feature is available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Out-of-the-box, product images are stored in-house and with the support of :ref:`Digital Asset Manager <digital-assets>`. If you need to switch the product images field to the :ref:`externally stored files <attachment-bundle-externally-stored-files>` flow, you have to do it manually via code as the **Stored Externally** entity field config cannot be changed from the UI for the already existing fields.
 

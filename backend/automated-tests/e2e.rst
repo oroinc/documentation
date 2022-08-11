@@ -143,7 +143,7 @@ To test a feature, you often need different data loaded (users to login, product
 Using Secrets Variables in Tests
 --------------------------------
 
-.. hint:: This feature is available since OroCommerce v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available starting from OroCommerce v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To test a feature, you may need to use sensitive data like credentials which should not be defined in fixtures. You can define this variables in secrets variable file and use those variables in your scenarios.
 

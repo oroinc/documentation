@@ -3,7 +3,7 @@
 How to Display a WYSIWYG Field
 ==============================
 
-.. hint:: The feature is available starting from OroCommerce v5.0.5. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The feature is available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 A WYSIWYG field can contain complex HTML, CSS structures, and dynamic content that should be successfully rendered and
 displayed in the storefront. For that reason, be aware that:

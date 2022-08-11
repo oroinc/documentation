@@ -34,7 +34,7 @@ To configure the upload settings globally:
 
 8. In the **Externally Stored Files**
 
-   **Allowed URLs RegExp** --- The setting determines the regular expression that describes allowed URLs for externally stored files and images. If left empty, no external files and images will be allowed. The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+   **Allowed URLs RegExp** --- The setting determines the regular expression that describes allowed URLs for externally stored files and images. If left empty, no external files and images will be allowed. The feature is available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
    .. image:: /user/img/system/config_system/upload_settings_5.png
       :alt: Upload settings on global level
@@ -68,7 +68,7 @@ To configure the upload settings globally:
    .. image:: /user/img/system/config_system/upload_settings_6.png
       :alt: File names section on global level
 
-   .. hint:: The **File Names** setting is available since v5.0.2. and can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
+   .. hint:: The **File Names** setting is available starting from v5.0.2. and can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
 
    **Enable Original File Names** --- When enabled, the original file name is appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") are replaced with "-" (dash).
 

@@ -1,7 +1,7 @@
 Public and Private Emails
 =========================
 
-.. hint:: The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The feature is available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 During synchronization of email boxes, there are a set of emails that belongs to the business entities, such as
 to the Contact or Lead, and not belongs to them, for example, the correspondence between two users.

@@ -61,7 +61,7 @@ To change the WebP strategy, change the ``webp_strategy`` configuration in the c
 File Field Type
 ---------------
 
-.. hint:: The file field types are available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The file field types are available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 **File** field provides the ability to upload file to any entity. It supports the following options:
 
@@ -75,7 +75,7 @@ On the entity record's details page, this field is displayed as a link to downlo
 MultiFile Types
 ---------------
 
-.. hint:: The MultiFile types are available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The MultiFile types are available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 **MultiFile** field provides the ability to upload a collection of files to any entity. It supports the following options:
 
@@ -90,7 +90,7 @@ On the entity record's details page, this field is displayed as a grid with link
 Image Types
 -----------
 
-.. hint:: The image types are available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The image types are available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 **Image** field provides the ability to upload an image to any entity. It supports the following options:
 
@@ -109,7 +109,7 @@ It can be used with Digital Asset Management (DAM) functionality.
 MultiImage Types
 ----------------
 
-.. hint:: The MultiImage types are available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The MultiImage types are available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 **MultiImage** field provides the ability to upload a collection of images to any entity. It supports the following options:
 
@@ -144,7 +144,7 @@ Image thumbnail files are created from |LiipImagineBundle| and are stored in the
 Externally Stored Files
 -----------------------
 
-.. hint:: The feature is available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The feature is available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 When a field of type ``File``, ``MultiFile``, ``Image``, ``MultiImage`` is created it can be configured with
 the option **Stored Externally** to store an external URL of a file instead of uploading it. This option indicates
