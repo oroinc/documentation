@@ -1,7 +1,7 @@
 Public and Private Emails
 =========================
 
-.. hint:: This feature is available since OroCommerce v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available starting from OroCommerce v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 During synchronization of email boxes, there are a set of emails that belongs to the business entities, such as
 to the Contact or Lead, and not belongs to them, for example, the correspondence between two users.

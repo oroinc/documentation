@@ -334,7 +334,7 @@ You can also edit the existing HTML code that was already applied to the canvas 
 Disable the GrapeJs Style Manager
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. hint:: This feature is available since OroCommerce v4.2.10. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available starting from OroCommerce v4.2.10. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 If you are importing a complex HTML code to the editor and want to preserve its styling, you can disable the WYSIWYG built-in style manager to prevent GrapeJs from breaking those styles.
 

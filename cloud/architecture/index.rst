@@ -46,7 +46,7 @@ The OroCloud infrastructure uses fully redundant components and services for Oro
 Google CDN
 ~~~~~~~~~~
 
-The content delivery network is the geographically distributed network of the caching proxy servers that help to improve response time for static content as well as provide high availability for service. Google CDN uses |edge servers distributed globally| and perfectly integrated with Google Cloud Platform logging and monitoring services. For more information, see |Google CDN| documentation.
+The content delivery network is the geographically distributed network of the caching proxy servers that help improve response time for static content as well as provide high availability for service. Google CDN uses |edge servers distributed globally| and perfectly integrated with Google Cloud Platform logging and monitoring services. For more information, see |Google CDN| documentation.
 
 Oro customers also can use other CDN providers. Please contact Oro Support to check if your CDN is compatible with Oro application.
 

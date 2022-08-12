@@ -53,7 +53,7 @@ To configure email settings globally:
 
    * **Attachments** --- Configure the following attachment options:
 
-     .. hint:: The **Maximum Attachment Size, Mb** feature is available since OroCRM :ref:`v4.1.3 <system-information>`.
+     .. hint:: The **Maximum Attachment Size, Mb** feature is available starting from OroCRM :ref:`v4.1.3 <system-information>`.
 
      * *Maximum Attachment Size, Mb* --- Set the maximum attachment size in Mb. Attachments that exceed the defined size will not be uploaded. You can remove size limitations by setting the size to 0.
      * *Enable Attachment Sync* --- Enable loading attachments on email sync. 

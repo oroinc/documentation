@@ -50,7 +50,7 @@ To configure the upload settings globally:
    .. image:: /user/img/system/config_system/upload_settings_3.png
       :alt: File names section on global level
 
-   .. hint:: The **File Names** setting is available since v4.2.11. and can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
+   .. hint:: The **File Names** setting is available starting from v4.2.11. and can be configured globally, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and :ref:`per website <upload-settings--website>`.
 
    **Enable Original File Names** --- When enabled, the original file name is appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") are replaced with "-" (dash).
 

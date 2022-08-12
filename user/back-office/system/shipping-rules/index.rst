@@ -202,7 +202,7 @@ For example:
 Fixed Product Shipping Cost
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. hint:: Fixed Product Shipping Cost is available since v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: Fixed Product Shipping Cost is available starting from v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 For the fixed product shipping cost method, provide the following information:
 

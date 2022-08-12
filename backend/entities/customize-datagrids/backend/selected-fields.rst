@@ -25,7 +25,7 @@ How to Use
 Selected fields providers enable fetching field names which must be present in the datasource
 query of the datagrid. This data can be used in datagrid extensions which modify the datagrid configuration, add new columns,
 sorters, etc. The purpose is **to detect whether it is necessary to add a certain field or join the datasource query as not every
-field added to the query is actually displayed to the end user. This can greatly help to improve performance of datagrids that
+field added to the query is actually displayed to the end user. This can greatly help improve performance of datagrids that
 work with tables which can have many records.**
 
 For example, the ``oro_datagrid.provider.selected_fields`` service is used in the ``oro_entity_extend.datagrid.extension.dynamic_fields`` datagrid extension to prevent adding joins for extended fields which are not going to be displayed to the end user.

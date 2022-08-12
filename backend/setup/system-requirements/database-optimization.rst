@@ -6,7 +6,7 @@ MySQL Optimization
 Overview
 --------
 
-This article contains descriptions of some known issues and recipes that might help to get the best
+This article contains descriptions of some known issues and recipes that might help get the best
 application performance.
 
 .. _mysql-hdd-sdd:

@@ -45,7 +45,7 @@ This means that:
 * If it exceeds the option value (i.e. 705 MB, 780MB, or 1300 MB) the consumer is terminated (and Supervisord re-runs it)
 * If not, the consumer continues to process the message.
 
-We recommend to always set this option to the value 2-3 times lower than PHP memory limit. It will help to avoid PHP memory
+We recommend to always set this option to the value 2-3 times lower than PHP memory limit. It will help avoid PHP memory
 limit error during message processing.
 
 We recommend to set the ``--time-limit`` option (e.g. ``--time-limit='now+600 seconds``) to 5-10 minutes if you use the DBAL transport to avoid database connection issues.

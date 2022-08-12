@@ -47,7 +47,7 @@ To change the default customer user configuration settings globally:
 
 6. In the **Login Attempts** section, configure the following options:
 
-   .. hint:: This feature is available since OroCommerce v4.2.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+   .. hint:: This feature is available starting from OroCommerce v4.2.8. To check which application version you are running, see the :ref:`system information <system-information>`.
 
    * **Enable Failed Logins Limit** --- Defines whether a user can be locked out when the max number of login attempts is reached. By default, the option is disabled.
    * **Max Login Attempts** --- The number of attempts within the login failure lockout interval that a user has to authenticate before they are locked out. By default, the number is set to 10.
@@ -64,7 +64,7 @@ To change the default customer user configuration settings globally:
 Configure User Impersonation
 ----------------------------
 
-.. hint:: This feature is available in the Enterprise edition since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available in the Enterprise edition starting from OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 .. csv-table::
   :widths: 10, 30

@@ -6,7 +6,7 @@
 OroMicrosoftSyncBundle
 ======================
 
-.. hint:: Microsoft 365 calendar synchronization is available since OroCRM v4.2.5 as part of the |Oro-Microsoft 365 Integration| extension. Task synchronization is available since v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: Microsoft 365 calendar synchronization is available starting from OroCRM v4.2.5 as part of the |Oro-Microsoft 365 Integration| extension. Task synchronization is available starting from v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 OroMicrosoftSyncBundle enables integration with Microsoft 365 in the Oro applications via |Microsoft Graph API|.
 

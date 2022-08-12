@@ -3,7 +3,7 @@
 Right to Left UI Support
 ========================
 
-.. hint:: This feature is available since OroCommerce v4.2.3. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available starting from OroCommerce v4.2.3. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Oro provides support for Right to Left User Interface development.
 

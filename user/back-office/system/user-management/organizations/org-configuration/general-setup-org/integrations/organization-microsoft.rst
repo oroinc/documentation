@@ -5,7 +5,7 @@
 Configure Microsoft Settings per Organization
 =============================================
 
-.. hint:: Microsoft 365 calendar synchronization is available since OroCRM v4.2.5. Task synchronization is available since v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: Microsoft 365 calendar synchronization is available starting from OroCRM v4.2.5. Task synchronization is available starting from v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To configure email, calendar events, and task synchronization with Microsoft 365 for a particular organization, follow the steps outlined below.
 

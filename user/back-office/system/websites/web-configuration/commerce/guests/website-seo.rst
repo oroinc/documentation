@@ -5,7 +5,7 @@
 Configure SEO Settings per Website
 ==================================
 
-.. hint:: The SEO configuration is available since v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The SEO configuration is available starting from v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 All products that do not have assigned prices contain Schema.org Microdata markup with a product schema without price information. Some search crawlers (e.g., Google) consider these products invalid and can exclude them from the search index.
 

@@ -83,7 +83,7 @@ To change the default global routing settings:
 
      When *Secure* is selected, the **Secure URL** value is used instead.
 
-   * **Use Localized Canonical URLs** - When this option is enabled, the system generates canonical URLs using the localized version of URLs slugs (if available). Disabled by default. Keep in mind that the option is available since OroCommerce v4.2.4. To check which application version you are running, see the :ref:`system information <system-information>`.
+   * **Use Localized Canonical URLs** - When this option is enabled, the system generates canonical URLs using the localized version of URLs slugs (if available). Disabled by default. Keep in mind that the option is available starting from OroCommerce v4.2.4. To check which application version you are running, see the :ref:`system information <system-information>`.
 
    * **Prefer Self-Contained Web Catalog Canonical URLs** - When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types, if they are available. This option is enabled by default.
 

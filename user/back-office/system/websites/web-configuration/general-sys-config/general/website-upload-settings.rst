@@ -21,7 +21,7 @@ To configure the upload settings for a particular website:
    .. image:: /user/img/system/websites/web_configuration/upload_settings_websites.png
       :alt: File names section on website level
 
-   .. hint:: The **File Names** setting is available since v4.2.11. and can be configured :ref:`globally <admin-configuration-upload-settings>`, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and per website.
+   .. hint:: The **File Names** setting is available starting from v4.2.11. and can be configured :ref:`globally <admin-configuration-upload-settings>`, :ref:`per organization <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` and per website.
 
    **Enable Original File Names** --- When enabled, the original file name is appended to the system-generated hash value. All non-alphanumeric characters (e.g., ":", ")", ",", "~") are replaced with "-" (dash).
 

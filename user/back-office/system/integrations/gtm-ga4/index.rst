@@ -5,7 +5,7 @@
 Configure Google Tag Manager Integration in the Back-Office (Google Analytics 4)
 ================================================================================
 
-.. hint:: The configuration of Google Tag Manager with Google Analytics 4 is available since OroCommerce v4.2.13. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The configuration of Google Tag Manager with Google Analytics 4 is available starting from OroCommerce v4.2.13. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Integration between your Oro application and |Google Tag Manager| enables you to add tracking tags to your OroCommerce web store pages and collect information on customer behavior, purchases, product clicks, page views, etc. All this information can subsequently be shared with Google Analytics 4 (GA4), enabling you to monitor various user interactions with products on your website. This can help you get a complete picture of on-page visitor behavior, how well your marketing strategies work, and how to target your audience better.
 

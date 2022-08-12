@@ -37,7 +37,7 @@ To change the default customer user configuration settings for an organization:
 
 .. _organization-user-impersonation:
 
-.. hint:: The **Login as Customer User** feature is available in the Enterprise edition since OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The **Login as Customer User** feature is available in the Enterprise edition starting from OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 7. In the **Login as Customer User** section, you can enable user impersonation for a specific organization. User impersonation allows back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
 
@@ -48,7 +48,7 @@ To change the default customer user configuration settings for an organization:
    * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally.
    * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock.
 
-.. hint:: This feature is available since OroCommerce v4.2.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available starting from OroCommerce v4.2.8. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 9. In the **Cookies Banner** section, enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time.
 

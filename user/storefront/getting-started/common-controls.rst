@@ -236,7 +236,7 @@ The search shows up-to-date product information, such as SKU, name, price, and i
 Saved Search
 ------------
 
-.. hint:: The Saved Search feature is available since OroCommerce Enterprise v4.2.4. To find out which application version you are running, ask your system administrator to check the :ref:`system information <system-information>`.
+.. hint:: The Saved Search feature is available starting from OroCommerce Enterprise v4.2.4. To find out which application version you are running, ask your system administrator to check the :ref:`system information <system-information>`.
 
 Customer users can save search queries, return to these saved search queries later, receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock.
 
@@ -259,7 +259,7 @@ To save a search result:
 Product Data Export
 -------------------
 
-.. hint:: The feature is available since OroCommerce v4.2.5. To find out which application version you are running, ask your system administrator to check the :ref:`system information <system-information>`.
+.. hint:: The feature is available starting from OroCommerce v4.2.5. To find out which application version you are running, ask your system administrator to check the :ref:`system information <system-information>`.
 
 Registered customer users can export products, their prices, and price tiers into a .csv file from the storefront product collection and search results pages.
 

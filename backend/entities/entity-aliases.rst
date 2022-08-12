@@ -23,7 +23,7 @@ The generation rules are the following:
 - Hidden entities are ignored.
 
 It is possible, however, to define custom rules for entity aliases in the ``Resources/config/oro/entity.yml`` configuration file.
-This can help to avoid naming conflicts or make the entity aliases more readable or more user-friendly.
+This can help avoid naming conflicts or make the entity aliases more readable or more user-friendly.
 
 You can explicitly define aliases for a specific entity in the ``entity_aliases`` section of ``Resources/config/oro/entity.yml``:
 

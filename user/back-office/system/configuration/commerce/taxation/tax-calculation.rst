@@ -79,7 +79,7 @@ To customize the following tax calculation settings that impact the way OroComme
 
 7. In the **Origin** section, provide the origin address (e.g. location of your warehouse or the company legal address) that will be used system-wide for origin-based tax. When the shipping origin is a core jurisdiction, OroCommerce will use the address provided here to find the matching built-in tax jurisdiction rules for tax calculation.
 
-.. hint:: The **Calculate Taxes After Promotions** feature is available since OroCommerce v4.2.5. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The **Calculate Taxes After Promotions** feature is available starting from OroCommerce v4.2.5. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 8. In the **Promotions** section, select the **Calculate Taxes After Promotions** check box, if you wish to have your taxes calculated on the :ref:`reduced price <user-guide--marketing--promotions>` after the discounts are applied. If this option is disabled, taxes are calculated based on the full price before the discounts are applied. This configuration option is also available on the :ref:`organization configuration level <user-guide--taxes--org--promotions>`.
 

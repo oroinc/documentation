@@ -5,7 +5,7 @@
 Configure Microsoft 365 Integration in the Back-Office
 ======================================================
 
-.. hint:: Microsoft 365 calendar synchronization is available since OroCRM Enterprise v4.2.5. Task synchronization is available since v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: Microsoft 365 calendar synchronization is available starting from OroCRM Enterprise v4.2.5. Task synchronization is available starting from v4.2.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 .. note:: To use calendar events and tasks, add the **Calendars.ReadWrite** and **Tasks.ReadWrite** API permissions to the list of application permissions as well as the default list.
 

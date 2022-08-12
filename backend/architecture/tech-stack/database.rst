@@ -177,7 +177,7 @@ Logging aspects
 ---------------
 
 All logs must follow :ref:`Logging Conventions <community--contribute--logging-conventions>`. Logs should not contains sensitive data like credit card numbers, passwords, etc.
-Enable MySQL Slow query Logs for logging slow queries. This can help to determine issues with database and help to debug them.
+Enable MySQL Slow query Logs for logging slow queries. This can help determine issues with database and debug them.
 
 References
 ----------

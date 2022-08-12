@@ -570,7 +570,7 @@ Every search query is ACL protected with Search ACL helper. This helper limits d
 Organization Сontext
 ^^^^^^^^^^^^^^^^^^^^
 
-.. hint:: The `ignore_preferred_organization_tokens` parameter is available since OroCRM v4.2.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The `ignore_preferred_organization_tokens` parameter is available starting from OroCRM v4.2.8. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 As mentioned previously, each record is associated with an owning organization. When a user logs into the system,
 they work in the scope of one of their organizations.

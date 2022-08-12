@@ -15,7 +15,7 @@ With Standard Combined Pricing
 
 With standard CPL pricing, you can change **Price Calculation Precision In Price Lists** on the organization level.
 
-.. hint:: This feature is available since OroCommerce v4.2.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available starting from OroCommerce v4.2.7. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Price Calculation Precision In Price Lists represents the number of digits allowed in the fractional part of the price calculation rule results. The results will be rounded using the "round half away from zero" rule (2.5 will be rounded to 3). If this value is empty, the system will not apply any rounding until the maximum supported price precision (4 digits) is reached.
 

@@ -217,7 +217,7 @@ Shipping cost can work in conjunction with a shipping method, such as :ref:`Fixe
    :scale: 42%
    :alt: Illustration of how shipping cost set for the price attribute works on combination with the surcharge defined in the fixed product shipping cost integration
 
-.. hint:: Fixed Product Shipping Cost is available since v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: Fixed Product Shipping Cost is available starting from v4.2.11. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Design
 ^^^^^^
