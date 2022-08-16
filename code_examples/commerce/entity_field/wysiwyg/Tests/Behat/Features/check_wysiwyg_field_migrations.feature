@@ -7,7 +7,7 @@ Feature: Check wysiwyg field migrations
 
   Scenario: Create blog post
     Given I login as administrator
-    When I go to System / Entities / Entity Management / Blog Posts
+    When I go to System / Entities / Blog Posts
     And click "Create Blog Post"
     And I fill "Blog Post Form" with:
       | Content | <div>Some Content</div> |
@@ -16,7 +16,7 @@ Feature: Check wysiwyg field migrations
     Then I should see "Blog Post has been saved successfully" flash message
 
   Scenario: Check datagrid
-    When I go to System / Entities / Entity Management / Blog Posts
+    When I go to System / Entities / Blog Posts
     Then I should see following grid:
       | Content      |
       | Some Content |

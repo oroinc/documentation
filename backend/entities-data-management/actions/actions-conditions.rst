@@ -85,7 +85,7 @@ Create Date
 .. code-block:: none
 
     - '@create_date':
-        attribute: $sales_funnel_start_date
+        attribute: $action_start_date
 
 OR
 
@@ -95,7 +95,7 @@ OR
         conditions:
                 # optional condition configuration
         parameters:
-            attribute: $sales_funnel_start_date
+            attribute: $action_start_date
             date: '2014-04-01' # must use quotes because date parameter requires string value
 
 Copy Values

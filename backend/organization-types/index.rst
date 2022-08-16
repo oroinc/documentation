@@ -34,7 +34,7 @@ To add an organization type:
            organization_type:
                acme:
                    label: Acme
-                   description: The Acme organization type cn be used to ...
+                   description: The organization type for ...
 
 4. Rebuild the application cache via the ``php bin/console cache:clear`` command.
 
@@ -60,10 +60,19 @@ The full configuration options available in `Resources/config/oro/organization_t
             # The description of an organization type.
             description:          ~ # Required
 
-            # A list of feature names that are enabled for an organization type.
+            # The strategy how to handle the features.
+            strategy:             exclude_list # One of "exclude_list"; "include_list"
+
+            # The names of features that are enabled for an organization type.
             enabled_features:     []
 
-            # A list of feature names that are disabled for an organization type.
+            # The names of features that are disabled for an organization type.
             disabled_features:    []
 
 You can also see this information by running the ``php bin/console oro:organization-type:config:dump-reference`` command.
+
+There are two strategies to handle features, ``exclude_list`` and ``include_list``.
+The ``exclude_list`` strategy is used by default and it grants access to all features that are not specified
+in the lists of enabled and disabled features.
+The ``include_list`` strategy denies access to all features that are not specified in the lists
+of enabled and disabled features.

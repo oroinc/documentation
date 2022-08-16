@@ -443,9 +443,9 @@ Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\AttributeAssembler* for more d
             new_company_name:
                 type: string
             opportunity:
-                property_path: sales_funnel.opportunity
+                property_path: entity.opportunity
             opportunity_name:
-                property_path: sales_funnel.opportunity.name
+                property_path: entity.opportunity.name
 
 
 Enable Users to Modify Attributes

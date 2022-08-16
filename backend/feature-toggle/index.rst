@@ -25,6 +25,7 @@ Each feature consists of one required option, the label. You can configure the f
  - ``processes`` - A list of :ref:`process <backend--entities-data-management--processes>` names.
  - ``operations`` - A list of :ref:`operation <bundle-docs-platform-action-bundle-operations>` names.
  - ``api_resources`` - A list of entity FQCNs that are available as API resources.
+ - ``frontend_api_resources`` - A list of entity FQCNs that are available as the storefront API resources.
  - ``commands`` - A list of commands that depend on the feature. Running these commands is impossible or is not reasonable when the feature is disabled.
  - ``entities`` - A list of entity FQCNs.
  - ``dashboard_widgets`` - A list of :ref:`dashboard widget <dev-dashboards>` names.
@@ -59,6 +60,11 @@ An example of the `features.yml` configuration:
             operations:
                 - acme_some_operation
             api_resources:
+                # bind whole API resource / bind all API actions for API resource
+                - Acme\Bundle\DemoBundle\Entity\Page
+                # bind only specific API actions for API resource
+                - [Acme\Bundle\DemoBundle\Entity\Page, [create, update, delete, delete_list]]
+            frontend_api_resources:
                 # bind whole API resource / bind all API actions for API resource
                 - Acme\Bundle\DemoBundle\Entity\Page
                 # bind only specific API actions for API resource
@@ -140,7 +146,7 @@ Feature state is determined by `FeatureChecker`. There are proxy classes that ex
 
 Feature state is resolved by `isFeatureEnabled($featureName, $scopeIdentifier = null)`
 
-Feature resource types are nodes of feature configuration (routes, workflows, configuration, processes, operations, api_resources), resources are their values. Resource is disabled if it is included into at least one disabled feature.
+Feature resource types are nodes of feature configuration (routes, workflows, configuration, processes, operations, API resources, etc.), resources are their values. Resource is disabled if it is included into at least one disabled feature.
 Resource state is resolved by `public function isResourceEnabled($resource, $resourceType, $scopeIdentifier = null)`
 
 Layout Updates
