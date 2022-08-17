@@ -17,6 +17,21 @@ In the back-office, this bundle provides the following system configuration opti
 
 To change the frequency of the sitemap generation globally, update the **Changefreq** option in the *Default* section in the **System Configuration > Websites > Sitemap**. The sitemap cron definition will adjust automatically.
 
+Landing Page Configuration
+--------------------------
+
+* **Exclude Direct URLs Of Landing Pages** *boolean* - Enable the option to include only landing pages that are assigned to particular web catalog nodes into the website's sitemap and exclude those accessed via direct URL. Enabling the option prevents landing page duplication in the sitemap file (the default value is true).
+
+.. hint:: The *Include Landing Pages Not Used In Web Catalog* feature is available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+* **Include Landing Pages Not Used In Web Catalog** *boolean* - Enable the option to include both assigned to web catalog nodes and unassigned landing pages into the sitemap file (the default value is false).
+
+Possible combinations
+
+.. image:: /img/bundles/SEOBundle/sitemap-config-options.png
+   :alt: Table that explains what landing pages are included and excluded into the sitemap file depending on the selected config options
+
+
 Technical Details
 -----------------
 
