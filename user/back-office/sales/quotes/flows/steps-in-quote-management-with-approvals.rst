@@ -21,11 +21,11 @@ When Quote Management with Approvals is enabled, the quote status may be one of 
 
 * Sent to Customer --- the quote is sent to the customer.
 
-* Closed --- the quote is closed and no further actions with the quote are possible unless it is reopened.
+* Closed --- the quote is closed, and no further actions with it are possible unless it is reopened.
 
 * Deleted --- the quote has been removed.
 
-The following table describes which options are available for each of the statuses and how the corresponding transitions change the quote status.
+The following table describes the options available for each status and how the corresponding transitions change the quote status.
 
 .. note::
 
@@ -58,7 +58,7 @@ The following table describes which options are available for each of the status
 |                        | Click **Approve and Send to Customer** to indicate that you would like to approve the quote and send it to the customer.                                                                | *        |       | Draft                 |
 |                        |                                                                                                                                                                                         |          |       |                       |
 |                        | In the **Approve and Send to Customer** dialog, check who will receive the notification about the quote and the notification text, and click **Send**.                                  |          |       |                       |
-|                        | The quote will appear in the customer profile in the storefront and the buyer will receive a notification about it.                                                                     |          |       |                       |
+|                        | The quote will appear in the customer profile in the storefront, and the buyer will receive a notification about it.                                                                    |          |       |                       |
 |                        +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
 |                        | Click **Approve** to grant your approval on the quote.                                                                                                                                  | *        |       | Approved              |
 |                        |                                                                                                                                                                                         |          |       |                       |
@@ -71,7 +71,7 @@ The following table describes which options are available for each of the status
 | Approved               | Click **Send to Customer** to directly send this quote to the customer.                                                                                                                 | *        | *     | Sent to Customer      |
 |                        |                                                                                                                                                                                         |          |       |                       |
 |                        | In the **Send to Customer** dialog, check who will receive the notification about the quote and the notification text, and click **Send**.                                              |          |       |                       |
-|                        | The quote will appear in the customer profile in the storefront and the buyer will receive a notification about it.                                                                     |          |       |                       |
+|                        | The quote will appear in the customer profile in the storefront, and the buyer will receive a notification about it.                                                                    |          |       |                       |
 +------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
 | Not Approved           |                                                                                                                                                                                         |          |       | Open                  |
 +------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
@@ -95,10 +95,3 @@ The following table describes which options are available for each of the status
 +------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
 
 .. note:: The **Accept** and **Decline** transitions (from the **Sent to Customer** step) are reserved for future use.
-
-.. Future options for Sent to Customer step:
-
-.. |                                                                | Click **Accept** to accept the quote. *(B, in the storefront)*                                                                                                                                 |          |       | *     | Closed                |
-   |                                                                +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-------+-----------------------+
-   |                                                                | Click **Decline** to decline the quote. *(B, in he storefront)*                                                                                                                                |          |       | *     | Closed                |
-   |                                                                +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-------+-----------------------+

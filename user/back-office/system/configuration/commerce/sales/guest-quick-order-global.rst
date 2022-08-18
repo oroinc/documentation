@@ -24,7 +24,7 @@ To enable the quick order form globally for registered and unregistered users:
 .. image:: /user/img/system/config_commerce/sales/QOFGlobal.png
    :alt: Global quick order form configuration
 
-3. Clear the **Use Default** check box to override the default configuration options.
+3. Clear the **Use Default** checkbox to override the default configuration options.
 
 4. In the **Quick Order Form** section, enable or disable the quick order form functionality for the registered users. By default the quick order form is enabled.
 

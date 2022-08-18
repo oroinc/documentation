@@ -26,9 +26,9 @@ The section describes how to enable or disable the quote functionality for the r
    .. image:: /user/img/system/user_management/org_configuration/sales/org_quote_config.png
       :alt: Quote configuration options per organization
 
-4. Clear the **Use System** check box to change the value.
+4. Clear the **Use System** checkbox to change the value.
 5. In the **General** section, toggle the **Enable Quote (Store Front)** option to display or hide the Quote section under the Account menu for registered customers.
-6. In the **Guest Quote** section, select the **Enable Guest Quote** check box to generate unique links for sending quotes to guest users.
+6. In the **Guest Quote** section, select the **Enable Guest Quote** checkbox to generate unique links for sending quotes to guest users.
 7. Click **Save Settings**.
 
 

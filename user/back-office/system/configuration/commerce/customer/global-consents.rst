@@ -27,8 +27,8 @@ To enable consents:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. Next to the **Enable User Consents** field, clear the **Use Default** check box.
-4. Select the **Enable User Consents** check box.
+3. Next to the **Enable User Consents** field, clear the **Use Default** checkbox.
+4. Select the **Enable User Consents** checkbox.
 
    .. image:: /user/img/system/config_commerce/customer/enable_consents_globally.png
       :class: with-border
@@ -42,7 +42,7 @@ To enable consents:
       :class: with-border
       :alt: Consent management menu
 
-6. Next to the **Contact Reason** field, clear the **Use Default** check box.
+6. Next to the **Contact Reason** field, clear the **Use Default** checkbox.
 7. If the consent is declined in the storefront, a notification is created in the back-office as :ref:`a contact reason <admin-guide-contact-reasons>`. Select the contact reason from the list for a declined consent notification.
 
    .. image:: /user/img/system/config_commerce/customer/contact_reason_config.png
@@ -59,7 +59,7 @@ Once the consents are enabled, you can add all or selected consents to the list 
 
 To add consents to the list of enabled consents:
 
-1. Next to the **Enabled User Consents** field, clear the **Use Default** check box.
+1. Next to the **Enabled User Consents** field, clear the **Use Default** checkbox.
 #. Click **Add Consent** and select the required consent(s) from the list.
 
    Alternatively, click on the hamburger menu and select the consent(s) from its list.

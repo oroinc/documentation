@@ -14,7 +14,7 @@ To enable guest access per website:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
 5. Select the **Enable Guest Access** checkbox.
 

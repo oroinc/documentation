@@ -74,7 +74,7 @@ You can map contacts from the Oro marketing list into your Dotdigital address bo
 
    * **Integration** --- Choose your **Integration** from the list of integrations available in your Oro instance.
    * **Address Book** --- Select the address book we have just created from the list of all Dotdigital address books available for connection. Note that the list will not contain the **All Contacts** and **Test** address books that are automatically generated in Dotdigital. Nor will it contain the address books that have already been connected to another marketing list in Oro.
-   * **Create New Entities** --- This check box controls whether new entities can be created. If a contact is found in an address book but no email match in the application is found, a new entity will be created in the application based on the mapping setup. A new entity will be created only if **two way sync** mapping is configured for each of the entity's required fields.
+   * **Create New Entities** --- This checkbox controls whether new entities can be created. If a contact is found in an address book but no email match in the application is found, a new entity will be created in the application based on the mapping setup. A new entity will be created only if **two way sync** mapping is configured for each of the entity's required fields.
 
    .. image:: /user/img/marketing/marketing/dotdigital/connect_dotdigital_address_book.png
       :alt: Selecting the necessary address book from the dropdown of the popup dialog box

@@ -12,7 +12,7 @@ To reach the **My Configuration** page:
 1. Click on your user name on the top right of the application page.
 2. Click **My Configuration**.
 
-.. important:: User-level configuration settings can fall back to organization settings. For this, select the **Use Organization** check box next to the selected option. To go back to the default user-level settings, click **Reset** on the top right.
+.. important:: User-level configuration settings can fall back to organization settings. For this, select the **Use Organization** checkbox next to the selected option. To go back to the default user-level settings, click **Reset** on the top right.
 
 Two categories of settings are available for configuration at the user level:
 
@@ -70,7 +70,7 @@ In the Display section, you can configure the following display options:
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | Field              | Description                                                                                                                        |
 +====================+====================================================================================================================================+
-| Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name).                       |
+| Show Recent Emails | Select this checkbox to display the recent emails on the user bar (they will appear next to the user name).                        |
 |                    |                                                                                                                                    |
 |                    | .. image:: /user/img/getting_started/user_menu/user_configuration_showemailsuserbar.png                                            |
 |                    |    :alt: A recent emails icon displayed on the user bar                                                                            |
@@ -92,9 +92,9 @@ In the Display section, you can configure the following display options:
 +===========================+===================================================================================================================+
 | Items Per Page By Default | Select how many records will appear on one page of record grids.                                                  |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------+
-| Lock Headers In Grids     | Select this check box to ensure that headers of a record grid will stay visible while you scroll.                 |
+| Lock Headers In Grids     | Select this checkbox to ensure that headers of a record grid will stay visible while you scroll.                  |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------+
-| Record Pagination         | Select this check box to enable the user to navigate to the previous or next grid record from a record view page. |
+| Record Pagination         | Select this checkbox to enable the user to navigate to the previous or next grid record from a record view page.  |
 |                           |                                                                                                                   |
 |                           | .. image:: /user/img/getting_started/user_menu/user_configuration_pagination.png                                  |
 |                           |    :alt: A record pagination sample                                                                               |
@@ -120,7 +120,7 @@ In the Display section, you can configure the following display options:
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
 | Field                 | Description                                                                                               |
 +=======================+===========================================================================================================+
-| Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes, and comments.                    |
+| Enable WYSIWYG Editor | Select this checkbox to enable text formatting tools for emails, notes, and comments.                     |
 |                       |                                                                                                           |
 |                       | .. image:: /user/img/getting_started/user_menu/user_configuration_wysiwyg.png                             |
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
@@ -144,7 +144,7 @@ For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-st
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | Field                               | Description                                                                                                      |
 +=====================================+==================================================================================================================+
-| Display SQL In Reports And Segments | Select this check box to enable the user to review the SQL request sent to the system for a report or a segment. |
+| Display SQL In Reports And Segments | Select this checkbox to enable the user to review the SQL request sent to the system for a report or a segment.  |
 |                                     |                                                                                                                  |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
@@ -173,7 +173,7 @@ In the Email Configuration section, you can configure the following email-relate
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field                             | Description                                                                                                                                                                              |
 +===================================+==========================================================================================================================================================================================+
-| Enable IMAP                       | Select this check box to enable the IMAP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that allow you to configure IMAP settings will appear.   |
+| Enable IMAP                       | Select this checkbox to enable the IMAP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that allow you to configure IMAP settings will appear.    |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | IMAP Host                         | Available only when **Enable IMAP** is selected. Enter the hostname of your IMAP server, e.g., imap.gmail.com.                                                                           |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -181,7 +181,7 @@ In the Email Configuration section, you can configure the following email-relate
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Encryption                        | Available only when **Enable IMAP** is selected. Select the type of encryption: **SSL** or **TLS**.                                                                                      |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Enable SMTP                       | Select this check box to enable the SMTP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that allow you to configure SMTP settings will appear.   |
+| Enable SMTP                       | Select this checkbox to enable the SMTP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that allow you to configure SMTP settings will appear.    |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | SMTP Host                         | Available only when **Enable SMTP** is selected. Enter the hostname of your SMTP server, e.g., imap.gmail.com.                                                                           |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

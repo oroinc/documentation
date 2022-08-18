@@ -31,7 +31,7 @@ To create a payment rule:
 
 #. In the **General Information** section:
 
-   a) Select the **Enabled** check box to activate the payment rule. You may keep it clear while you are drafting and testing the conditions.
+   a) Select the **Enabled** checkbox to activate the payment rule. You may keep it clear while you are drafting and testing the conditions.
 
    #) Specify the payment rule name and sort order to set the priority compared to other payment rules.
 
@@ -132,7 +132,7 @@ Organize a Payment Rule List
 
 To define which columns to show in the table, click |IcSettings| above the table on the far right:
 
-* To choose the columns to be displayed in the table, select the check box next to the required column under **Show**. Clear the check box to make the column disappear from the table.
+* To choose the columns to be displayed in the table, select the checkbox next to the required column under **Show**. Clear the checkbox to make the column disappear from the table.
 
 * To change the order of the columns, click |IcReorder| next to the name of the column you wish to move, hold the mouse button and drag the column to the required position.
 

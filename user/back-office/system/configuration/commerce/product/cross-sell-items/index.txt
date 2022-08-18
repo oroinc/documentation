@@ -24,7 +24,7 @@ To add cross-sell products to the product information:
 
 #. In the **Select Cross-Sell Products For** dialog:
 
-   a) Select the **Is Related** check boxes next to the products to mark them as related. Use filter to limit the number of listed products and find the necessary items.
+   a) Select the **Is Related** checkboxes next to the products to mark them as related. Use filter to limit the number of listed products and find the necessary items.
 
    b) Click **Select Products**.
 

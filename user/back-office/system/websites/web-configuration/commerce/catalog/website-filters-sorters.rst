@@ -39,7 +39,7 @@ To configure filters and sorting options per website:
 
 5. To change any of the options set on the organization level:
 
-     a) Clear the **Use Organization** check box next to the option.
+     a) Clear the **Use Organization** checkbox next to the option.
      b) Select the necessary checkbox or a value.
 
 6. Click **Save Settings**.

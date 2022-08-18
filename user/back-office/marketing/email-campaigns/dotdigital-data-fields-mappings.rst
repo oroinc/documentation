@@ -112,7 +112,7 @@ A form will emerge with the following fields to fill in within the **General** s
 
 Configure your mapping in the **Mapping Configuration** section of the same page.
 
-Select the **Two Way Sync** check box if you want to update application entities with data from Dotdigital.
+Select the **Two Way Sync** checkbox if you want to update application entities with data from Dotdigital.
 
 Perform Sync
 ^^^^^^^^^^^^

@@ -94,7 +94,7 @@ The following key rules apply to consents in OroCommerce:
 
 * **All consents are obtained through explicit actions**
 
-  The check boxes next to consents are never pre-selected and you can opt in only by explicitly clicking **Accept** under the consent.
+  The checkboxes next to consents are never pre-selected and you can opt in only by explicitly clicking **Accept** under the consent.
 
   .. image:: /user/img/storefront/profile/explicit_accept_consent.png
 
@@ -134,7 +134,7 @@ To accept a :ref:`consent <frontstore-guide--profile-consents>` from the page of
 
    .. note:: You can view the description of the available consents in the **Account Info** by clicking on the consent links. The |ConsentDeclined| icon indicates that the consent has not been accepted, while the |IcActivate| indicated that it has been read, understood and accepted.
 
-4. In the **Data Protection** section, select the check box next to the consent that you want to accept. At this point you are prompted to read the text of the consent.
+4. In the **Data Protection** section, select the checkbox next to the consent that you want to accept. At this point you are prompted to read the text of the consent.
 
    .. image:: /user/img/storefront/profile/accept_consent_explicitly.png
 
@@ -160,7 +160,7 @@ To decline the :ref:`consent <frontstore-guide--profile-consents>` that you have
 
    .. note:: You can view the description of the available consents in the **Account Info** section by clicking on the consent links. The |ConsentDeclined| icon indicates that the consent has not been accepted, while the |IcActivate| indicated that it has been read, understood and accepted.
 
-4. In the **Data Protection** section, clear the check box next to the consent that you want to revoke.
+4. In the **Data Protection** section, clear the checkbox next to the consent that you want to revoke.
 5. Click **Save** on the bottom left of the page.
 6. Confirm that you wish to decline the consent by clicking **Yes, Save**. You will be automatically redirected to the page of your profile.
 

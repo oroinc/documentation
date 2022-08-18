@@ -18,7 +18,7 @@ In the Product Images section of Commerce configuration settings, you can contro
    .. image:: /user/img/system/user_management/org_configuration/products/ImagePreviewOrganization.png
       :class: with-border
 
-4. Clear the **Use System** check box to change the system-wide setting.
+4. Clear the **Use System** checkbox to change the system-wide setting.
 
 5. In the **General** section, configure the following options:
 

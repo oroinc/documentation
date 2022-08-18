@@ -21,7 +21,7 @@ To enable the quick order form for registered and unregistered users per organiz
 .. image:: /user/img/system/user_management/org_configuration/sales/org_quick_order_form.png
    :alt: Configure quick order form per organization
 
-4. Clear the **Use System** check box to override the system-wide configuration options.
+4. Clear the **Use System** checkbox to override the system-wide configuration options.
 
 5. In the **Quick Order Form** section, enable or disable the quick order form functionality for the registered users. By default the quick order form is enabled.
 

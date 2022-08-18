@@ -56,9 +56,9 @@ To create a new company address:
    * State
    * Zip/Postal Code
 
-   To make the new address primary, select the **Is Primary Address** check box.
+   To make the new address primary, select the **Is Primary Address** checkbox.
 
-   .. note:: The **Is Primary Address** check box appears only when you already have at least one address in **All Company Addresses**. If you adding the first address, it will become primary by default.
+   .. note:: The **Is Primary Address** checkbox appears only when you already have at least one address in **All Company Addresses**. If you adding the first address, it will become primary by default.
 
    For address type and usage, enable the following options if required:
 
@@ -104,9 +104,9 @@ To create a new personal address:
    * State
    * Zip/Postal Code
 
-   To make the new address primary, select the **Is Primary Address** check box.
+   To make the new address primary, select the **Is Primary Address** checkbox.
 
-   .. note:: The **Is Primary Address** check box appears only when you already have at least one address in **All My Addresses**. If you are adding the first address, it will become primary by default.
+   .. note:: The **Is Primary Address** checkbox appears only when you already have at least one address in **All My Addresses**. If you are adding the first address, it will become primary by default.
 
    For address type and usage, enable the following options if required:
 

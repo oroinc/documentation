@@ -26,7 +26,7 @@ To view a specific RFQ in the back-office:
    * Customer Status
 
 5. In the **Notes** section, you can view the comments added by the customer regarding the RFQ.
-6. In the **Line Items** section, you can review the products, requested quantity, target prices and notes to the line items, if any.
+6. In the **Line Items** section, you can review the products, requested quantity, target prices, and notes to the line items, if any.
 7. The **Activity** section displays :ref:`activities <user-guide-productivity-tools>` available for RFQs.
 
 .. finish

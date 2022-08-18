@@ -18,8 +18,8 @@ To configure the product search settings globally:
 
 3. Customize any of the options by proceeding through the following steps:
 
-   a) Clear the **Use Default** check box next to the option.
-   b) Enable the required check box or enter the necessary file size and type information.
+   a) Clear the **Use Default** checkbox next to the option.
+   b) Enable the required checkbox or enter the necessary file size and type information.
 
 4. In the **Product Fulltext Search** section, configure the following options:
 

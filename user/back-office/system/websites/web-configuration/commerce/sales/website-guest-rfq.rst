@@ -21,7 +21,7 @@ To configure the request for quote settings per website:
 .. image:: /user/img/system/websites/web_configuration/website_rfq_config.png
    :alt: RFQ configuration options per website
 
-4. Clear the **Use Organization** check box to override the organization-wide configuration options.
+4. Clear the **Use Organization** checkbox to override the organization-wide configuration options.
 
 5. In the **General** section, customize the following options:
 
@@ -42,7 +42,7 @@ To configure the request for quote settings per website:
 
   .. hint:: Make sure you enable :ref:`Guest Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list-per-website>` in the back-office to let guest customers create RFQs from the shopping lists in their storefront.
 
-  By default, guest request for quote submission is disabled. To enable it, clear *Use Organization* and select the *Enable Guest RFQ* check box. When the guest RFQ is enabled, click **Save Settings** to display the additional **Guest RFQ Owner Settings** section.
+  By default, guest request for quote submission is disabled. To enable it, clear *Use Organization* and select the *Enable Guest RFQ* checkbox. When the guest RFQ is enabled, click **Save Settings** to display the additional **Guest RFQ Owner Settings** section.
 
 8. In the **Guest RFQ Owner Settings** section, select the user who will be the default owner of all guest RFQs.  Depending on the roles and permissions of the owner, guest RFQs may or may not be viewed and managed by the users who are subordinated to the owner.
 

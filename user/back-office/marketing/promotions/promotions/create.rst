@@ -25,7 +25,7 @@ In the All Promotions grid, you can click any promotion to view its details, hov
    * **Owner** --- Select the user responsible for the promotion from the list, or click |IcBars| to load the list of users to choose from. By default, the current user in predefined as the promotion owner.
    * **Name** --- Specify the promotion name to distinguish it from other promotions.
    * **Sort Order** --- Enter the sort order to set the priority compared to other available promotions. The lower is the number, the higher is the priority.
-   * **Enabled** --- Enable the check box to activate the promotion. To deactivate it, clear the check box.
+   * **Enabled** --- Enable the checkbox to activate the promotion. To deactivate it, clear the checkbox.
    * **Stop Further Rule Processing** --- Select this option if you wish to prevent applying other promotions with lower priority.
 
       For instance, if there are three promotions for the same products with sort orders 1, 2 and 3 respectively, and the promotion with sort order 2 has **Stop Further Rule Processing** enabled, then when the turn reaches such promotion, the queue stops and promotion with sort order 3 is not applied.

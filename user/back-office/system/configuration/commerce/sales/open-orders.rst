@@ -9,7 +9,7 @@ You can define whether to display open :term:`orders <Order>` within the Order H
  
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Sales > Open Orders** in the menu to the left.
-3. In the **Open Orders** section, clear the **Use Default** check box and update the default option.
+3. In the **Open Orders** section, clear the **Use Default** checkbox and update the default option.
 4. For the **Show Open Orders** field, select whether to display or hide the open orders within the Order History menu in the storefront.
 5. For **Show Open Orders on a Separate Page** field:
 

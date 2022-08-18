@@ -19,7 +19,7 @@ You can customize marketing features, such as :ref:`marketing lists <user-guide-
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. To enable/disable the necessary feature, first clear the **Use Default** check box and then select the required option.
+3. To enable/disable the necessary feature, first clear the **Use Default** checkbox and then select the required option.
 
 .. image:: /user/img/system/config_system/marketing_features.png
    :alt: Global marketing features configuration

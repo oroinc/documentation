@@ -19,7 +19,7 @@ To create a user group:
    * **Owner** --- The group owner represents a business unit whose members can manage the group subject to the :ref:`access and permission settings <user-guide-user-management-permissions>`.
    * **Name** --- The name used to refer to the user group on the interface.
 
-4. In the **Users** section, select the **Has Group** check box next to the required users to add them to the group you are creating. 
+4. In the **Users** section, select the **Has Group** checkbox next to the required users to add them to the group you are creating.
 
    .. note:: One user can belong to more than one group.
 

@@ -10,7 +10,7 @@
 Manage Sales in the Back-Office
 ===============================
 
-OroCommerce and OroCRM are a best-of-suite product package for eCommerce companies, especially those with a strong focus on B2B eCommerce. They are typically implemented as a single end-to-end solution and support virtually any business case related to eCommerce business development.
+OroCommerce and OroCRM are best-of-suite product packages for eCommerce companies, especially those with a strong focus on B2B eCommerce. They are typically implemented as a single end-to-end solution and support virtually any business case related to eCommerce business development.
 
 By blending the traditional CRM sales (leads, opportunities, sales territories) and eCommerce order management and tracking tools (orders, RFQs, quotes, shopping lists, payment terms, and price lists), you can leapfrog a few levels up in your sales and marketing productivity.
 
@@ -29,6 +29,9 @@ You can find more in-depth information on all Oro sales tools below:
    Price Lists <price-lists/index>
    Payment Terms <payment-terms/index>
    Sales Territories <sales-territories>
+
+
+
 
 
 

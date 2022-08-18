@@ -29,7 +29,7 @@ To enable currencies per website:
 
    * **Default Currency** --- The currency that is used by default to show prices in the storefront.
 
-   To customize the option configuration, clear the **Use Organization** check box next to the option and select or type in the new option value.
+   To customize the option configuration, clear the **Use Organization** checkbox next to the option and select or type in the new option value.
 
 5. Click **Save Settings**.
 

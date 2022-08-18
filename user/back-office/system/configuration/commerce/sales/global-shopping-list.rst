@@ -26,7 +26,7 @@ To set the shopping list globally:
    .. image:: /user/img/system/config_commerce/sales/global_shopping_list_settings.png
       :alt: Global shopping list configuration settings
 
-   .. note:: To update any of the options, clear *Use Default* check box first.
+   .. note:: To update any of the options, clear *Use Default* checkbox first.
 
 3. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
 4. In the **Guest Shopping List** section, define the following options:

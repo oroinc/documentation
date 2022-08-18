@@ -40,7 +40,7 @@ To configure filters and sorting options per organization:
 
 5. To change any of the default options set on the global level:
 
-     a) Clear the **Use System** check box next to the option.
+     a) Clear the **Use System** checkbox next to the option.
      b) Select the necessary checkbox or a value.
 
 6. Click **Save Settings**.

@@ -9,19 +9,19 @@ Navigate through Multi Page Checkout in the Storefront
 
 1. Enter billing information for the order by selecting an existing address from the address book, or creating a new one.
 
-2. If you wish to use the provided billing address for shipping, select the **Ship to this address** check box.
+2. If you wish to use the provided billing address for shipping, select the **Ship to this address** checkbox.
 
 3. Click **Continue** to proceed to the next step.
 
 **Step 2: Shipping Information**
 
-.. note:: If the **Ship to this address** check box has been selected in the Billing Information step, this step will be skipped.
+.. note:: If the **Ship to this address** checkbox has been selected in the Billing Information step, this step will be skipped.
 
 1. Enter shipping information for the order by selecting an existing address from the address book, or creating a new one.
 
-   If the **Ship to this address** check box has been checked in the Billing Information step, the provided address will be automatically selected in the Shipping Information step.
+   If the **Ship to this address** checkbox has been checked in the Billing Information step, the provided address will be automatically selected in the Shipping Information step.
 
-   To use billing information for shipping, select the **Use billing address** check box.
+   To use billing information for shipping, select the **Use billing address** checkbox.
 
    .. image:: /user/img/system/workflows/checkout/UseBillingAddressBox.png
 
@@ -66,7 +66,7 @@ Navigate through Multi Page Checkout in the Storefront
    * **Do not ship later than** --- Click the field to select the date on which the order expires.
    * **PO Number** --- Enter the purchase order number for reference.
    * **Notes** --- Provide any additional information regarding the order.
-   * **Delete this shopping list after submitting order** --- Select this check box to remove the shopping list after the order is completed.
+   * **Delete this shopping list after submitting order** --- Select this checkbox to remove the shopping list after the order is completed.
 
 3. To submit the order, click **Submit Order** at the bottom of the page.
 

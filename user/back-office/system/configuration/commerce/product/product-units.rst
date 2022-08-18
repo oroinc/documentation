@@ -38,7 +38,7 @@ The following options are available:
 
 3. To customize any of these options:
 
-     a) Clear the **Use Default** check box next to the option.
+     a) Clear the **Use Default** checkbox next to the option.
      b) Enter the updated quantity.
 
 4. Click **Save**.

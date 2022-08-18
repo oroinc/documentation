@@ -22,7 +22,7 @@ To create a new organization in the Oro applications:
    * **Name** --- The name used to refer to the organization on the interface.
    * **Description** --- Short description of the organization record.
 
-4. In the **Users** section, select the **Has Group** check box next to the required users to add them to the organization you are creating.
+4. In the **Users** section, select the **Has Group** checkbox next to the required users to add them to the organization you are creating.
 5. In the **Additional** section, specify whether the organization has global access level. Only one organization with global access can exist in the system. When the organization with global access already exists in the system, the **Global Access** field is disabled.
 6. Click **Save and Close**.
 

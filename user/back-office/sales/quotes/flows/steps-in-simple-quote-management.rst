@@ -13,11 +13,11 @@ When Quote Management (without approvals) is enabled, the quote status may be on
 
 * Sent to Customer --- the quote is sent to the customer.
 
-* Closed --- the quote is closed and no further actions with the quote are possible unless it is reopened.
+* Closed --- the quote is closed, and no further actions with it are possible unless it is reopened.
 
 * Deleted --- the quote has been removed.
 
-The following table describes which options are available for each of the statuses and how the corresponding transitions change the quote status.
+The following table describes which options are available for each status and how the corresponding transitions change the quote status.
 
 .. note::
 
@@ -46,7 +46,7 @@ The following table describes which options are available for each of the status
 |                        +---------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
 |                        | Click **Create New Quote** to create a copy of the quote.                                                                                         | *        | *     | Sent to Customer      |
 |                        |                                                                                                                                                   |          |       |                       |
-|                        | In the **Create New Quote** dialog, select whether to copy notes made on the quote and when the current quote is to expire, and click **Submit**. |          |       |                       |
+|                        | In the **Create New Quote** dialog, select whether to copy notes made on the quote and when the current quote is to expire and click **Submit**.  |          |       |                       |
 |                        +---------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
 |                        | Click **Declined by Customer** to indicate that the customer did not agree to the terms of the quote.                                             | *        | *     | Closed                |
 +------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
@@ -54,4 +54,3 @@ The following table describes which options are available for each of the status
 +------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
 | Deleted                | Click **Undelete** to restore the quote.                                                                                                          | *        | *     | Draft                 |
 +------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
-

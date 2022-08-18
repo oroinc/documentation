@@ -35,27 +35,27 @@ To create a new entity:
      
       .. caution::  This section is currently unavailable for custom entities. 
    
-      - **User** --- Select this check box if the entity records can be shared with an individual user.
+      - **User** --- Select this checkbox if the entity records can be shared with an individual user.
       
-      - **Business Unit** --- Select this check box if the entity records can be shared with the whole business unit. 
+      - **Business Unit** --- Select this checkbox if the entity records can be shared with the whole business unit.
             
-      - **Organization** --- Select this check box if the entity records can be shared with the whole organization.     
+      - **Organization** --- Select this checkbox if the entity records can be shared with the whole organization.
    
    - **Activities** --- Defines which activities users can add from the page of an entity record. When you add an activity from the entity record page, the entity record appears as a context for this activity. For more information about the activities, see the :ref:`Activities <user-guide-activities>` topic.
          
-      - **Emails** --- Select this check box to enable sending emails from the page of an entity record. 
+      - **Emails** --- Select this checkbox to enable sending emails from the page of an entity record.
       
-      - **Calendar Events** --- Select this check box to enable adding calendar events from the page of an entity record. 
+      - **Calendar Events** --- Select this checkbox to enable adding calendar events from the page of an entity record.
       
-      - **Calls** --- Select this check box to enable logging calls from the page of an entity record.  
+      - **Calls** --- Select this checkbox to enable logging calls from the page of an entity record.
       
-      - **Tasks** --- Select this check box to enable adding tasks from the page of an entity record.
+      - **Tasks** --- Select this checkbox to enable adding tasks from the page of an entity record.
    
-      - **Notes** --- Select this check box to enable adding notes to an entity record. Notes are added via the action button and are displayed in the **Activity** section on the page of an entity record.
+      - **Notes** --- Select this checkbox to enable adding notes to an entity record. Notes are added via the action button and are displayed in the **Activity** section on the page of an entity record.
         
         .. image:: /user/img/system/entity_management/entity_addnotes.png
            :width: 40%
-           :alt: The add note button becomes available if the notes check box is enabled
+           :alt: The add note button becomes available if the notes checkbox is enabled
    
         .. image:: /user/img/system/entity_management/entity_addnotes2.png
            :alt: View the list of notes in the activity section of an entity record page

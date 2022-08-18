@@ -16,7 +16,7 @@ In this section, you can configure the storefront Web API feature availability f
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
 5. In the **Web API** section, select whether to enable or disable the storefront API feature for your application by setting the **Enable Storefront API** option.
 

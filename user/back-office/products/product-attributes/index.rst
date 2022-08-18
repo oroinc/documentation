@@ -128,7 +128,7 @@ Proceed to create the attribute as described below.
    "**Select** and **Multi-Select**", "Perform the following actions:
 
    1. Click **+ Add** next to **Options**.
-   2. Type in the option label. Enable the check box next to the default option.
+   2. Type in the option label. Enable the checkbox next to the default option.
    3. Repeat for more options.
 
       .. image:: /user/img/products/product_attributes/ProductAttributesCreate2_1_Select3.png
@@ -231,7 +231,7 @@ Proceed to create the attribute as described below.
     - *Email* --- When this option is selected, the product attribute value is treated by marketing lists as email addresses.
     - *Phone* --- When this option is selected, the product attribute value is treated by marketing lists as a phone number."
    "**Show on Form**","In this field, select *Yes* if you wish to have the product attribute displayed and be editable on record and page edits."
-   "**Applicable Organization**","This check box determines whether you want the product attribute to be available throughout all organizations."
+   "**Applicable Organization**","This checkbox determines whether you want the product attribute to be available throughout all organizations."
    "**Available in Email Templates**", "Select *Yes* if you wish the product attribute to be available in email templates. To use the product attribute value in the email template:
 
     1.  When creating an attribute, mark it as *Available in Email Templates*.

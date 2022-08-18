@@ -13,7 +13,7 @@ If you are not currently logged into the Oro application, the **Login** page ope
 
    .. important:: Typically, you receive your credentials directly from an administrator, or they are automatically sent to the email address specified in your Oro application profile upon the profile creation. Oro application can be set up to accept your existing corporate username and password. This is possible if your organization utilizes LDAP to share them across multiple applications. Please check with your system administrator to see if this is the case.
 
-2. If you want to be automatically registered the next time you open the Oro application from this device, select the **Remember me on this computer** check box.
+2. If you want to be automatically registered the next time you open the Oro application from this device, select the **Remember me on this computer** checkbox.
 3. Click **Log In**.
 
 .. caution::  We recommend changing your password immediately after the first login. See :ref:`Change Your Password <doc-my-user-actions-change-password>` for more information.

@@ -11,7 +11,7 @@ You can configure available system settings on four configuration levels: system
 
 On organization level, there are a number of options that you can configure specifically for the organization, but which will not affect system-wide configuration or configuration for a particular user.
 
-.. important:: Organization-level configuration settings can fall back to system settings. For this, select the **Use System** check box next to the selected option. To go back to the default organization-level settings, click **Reset** on the top right.
+.. important:: Organization-level configuration settings can fall back to system settings. For this, select the **Use System** checkbox next to the selected option. To go back to the default organization-level settings, click **Reset** on the top right.
 
 The following categories of settings are available for system configuration at organization level (follow the links for more information):
 

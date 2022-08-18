@@ -56,7 +56,7 @@ To configure the integration between CyberSource and OroCommerce, follow the ste
        .. image:: /user/img/system/integrations/cybersource/checkout-api-storefront.png
           :alt: Payment in the storefront with checkout API
 
-   * **Test Mode** --- Select this check box to use CyberSource in the test mode that enables you to use the connection to the gateway without sending transaction information for processing.
+   * **Test Mode** --- Select this checkbox to use CyberSource in the test mode that enables you to use the connection to the gateway without sending transaction information for processing.
    * **Merchant ID** - A CyberSource Merchant ID, also referred to as Organization ID, is a unique value within CyberSource that you define during account registration.
    * **Merchant Descriptor** - Enables you to submit merchant descriptor value displayed on a cardholder's statement.
    * **Profile ID** - Identifies the profile to use with each transaction

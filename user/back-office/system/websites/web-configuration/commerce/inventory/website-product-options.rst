@@ -38,7 +38,7 @@ To customize the default product options per website:
 
 4. To customize any of these options:
 
-   a) Clear the **Use Organization** check box next to the option.
+   a) Clear the **Use Organization** checkbox next to the option.
    b) Select **Yes/No** for the flag-like options, and type in the updated value for the threshold-like options.
 
 5. Click **Save Settings**.

@@ -88,7 +88,7 @@ System Configuration
 
 You can define system-wide visibility for products and categories for existing customers. This setting applies whenever visibility is set to 'config'.
 
-Products and categories are visible by default. To change this, navigate to **System > Configuration > Commerce > Customer > Visibility** in the main menu, clear the **Use default** check box, and toggle the options (*hidden*/*shown*).
+Products and categories are visible by default. To change this, navigate to **System > Configuration > Commerce > Customer > Visibility** in the main menu, clear the **Use default** checkbox, and toggle the options (*hidden*/*shown*).
 
 .. image:: /user/img/products/products/product_visibility/ConfigVisibilityOptions.png
    :alt: View the global visibility settings for products and categories under the system configuration page

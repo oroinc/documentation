@@ -44,7 +44,7 @@ To create a new role in:
 
    * To specify access levels for :ref:`field-level permissions <user-guide-user-management-permissions-roles--field-level-acl>`, click **+** to the left of the entity name. Click on the arrow icon next to the required permission, and select the access level from the list. Read more on how to enable field-level permissions in the :ref:`Apply Permissions to Entity Fields <user-guide-user-management-permissions-roles--apply--field-level-acl>` topic.
 
-   * To set system capabilities, enable or disable the check box next to the required options.  
+   * To set system capabilities, enable or disable the checkbox next to the required options.
    
      .. image:: /user/img/system/user_management/cloned_role_system_capabilities.png
 
@@ -54,7 +54,7 @@ To create a new role in:
 
    .. image:: /user/img/system/user_management/create_role_workflow_permissions.png
 
-7. In the **Users** section, select check boxes in front of the users to whom you want to assign this role.
+7. In the **Users** section, select checkboxes in front of the users to whom you want to assign this role.
 8. Click **Save**. 
 
 .. _user-guide-user-management-permissions-roles--clone:
@@ -94,7 +94,7 @@ You can create a role by cloning the existing one:
        
    * To specify access levels for :ref:`field-level permissions <user-guide-user-management-permissions-roles--field-level-acl>`, click **+** to the left of the entity name. Click on the arrow icon next to the required permission, and select the access level from the list. Read more on how to enable field-level permissions in the :ref:`Apply Permissions to Entity Fields <user-guide-user-management-permissions-roles--apply--field-level-acl>` topic.
 
-   * To set system capabilities, enable or disable the check box next to the required options.  
+   * To set system capabilities, enable or disable the checkbox next to the required options.
    
      .. image:: /user/img/system/user_management/cloned_role_system_capabilities.png
 
@@ -104,7 +104,7 @@ You can create a role by cloning the existing one:
 
    .. image:: /user/img/system/user_management/create_role_workflow_permissions.png
 
-8. In the **Users** section, select check boxes in front of the users to whom you want to assign this role.
+8. In the **Users** section, select checkboxes in front of the users to whom you want to assign this role.
 9. Click **Save**. 
 
 .. _user-guide-user-management-permissions-roles--edit:

@@ -19,7 +19,7 @@ In this section, you can specify the display settings for the organization.
       :width: 500
       :alt: Settings menu configuration for organization
 
-4. Clear the **Use System** check box to change the system-wide setting.
+4. Clear the **Use System** checkbox to change the system-wide setting.
 
 **Map Settings**
 
@@ -42,7 +42,7 @@ In this section, you can specify the display settings for the organization.
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
 | Field                 | Description                                                                                               |
 +=======================+===========================================================================================================+
-| Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
+| Enable WYSIWYG Editor | Select this checkbox to enable text formatting tools for emails, notes and comments.                      |
 |                       |                                                                                                           |
 |                       | .. image:: /user/img/system/user_management/org_configuration/general/user_configuration_wysiwyg.png      |
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
@@ -70,7 +70,7 @@ For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-st
 +===========================+================================================================================================================+
 | Items Per Page By Default | Select how many records will appear on one page of record grids.                                               |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Record Pagination         | Select this check box to enable user navigation to the previous or next record list from a record view page.   |
+| Record Pagination         | Select this checkbox to enable user navigation to the previous or next record list from a record view page.    |
 |                           |                                                                                                                |
 |                           | .. image:: /user/img/system/config_system/user_configuration_pagination.png                                    |
 |                           |    :alt: A record pagination sample                                                                            |
@@ -110,7 +110,7 @@ To change any color in the set:
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | Field                               | Description                                                                                                      |
 +=====================================+==================================================================================================================+
-| Display SQL In Reports And Segments | Select this check box to enable the user to review the SQL request sent to the system for a custom               |
+| Display SQL In Reports And Segments | Select this checkbox to enable the user to review the SQL request sent to the system for a custom                |
 |                                     | report or a segment.                                                                                             |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 

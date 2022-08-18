@@ -52,7 +52,7 @@ To create a new customer user:
    .. image:: /user/img/customers/customer_users/CustomerUsersCreate.png
       :alt: The customer user creation form
 
-#. Select the **Enabled** check box to enable the user to log into the system and to do their work within it upon creation.
+#. Select the **Enabled** checkbox to enable the user to log into the system and to do their work within it upon creation.
 
 #. Fill in the customer **Name** and other personal information.
 
@@ -62,7 +62,7 @@ To create a new customer user:
 
 #. Assign a sales representative who will be assisting this customer user. By default, the customer sales representative applies to the customer user.
 
-#. Select the **Generate Password** and **Send Welcome Email** check boxes.
+#. Select the **Generate Password** and **Send Welcome Email** checkboxes.
 
 #. Select the website of customer user registration. While the customer user may have access to other websites within the same organization, the email notifications concerning their user account will point to this website. See :ref:`Managing Websites <user-guide--system-websites>` for more information.
 
@@ -72,7 +72,7 @@ To create a new customer user:
 
 #. In the **Roles** section, select the roles that should apply to the customer user. When several roles are selected, granted permissions are accumulated from all the assigned roles. See :ref:`Managing Customer User Roles <user-guide--customers--customer-user-roles>` for more information.
 
-   .. important:: At least one role must be assigned if the **Enabled** check box is selected. Disabled customer users can be saved without roles, but you will need to assign roles to them later before enabling them.
+   .. important:: At least one role must be assigned if the **Enabled** checkbox is selected. Disabled customer users can be saved without roles, but you will need to assign roles to them later before enabling them.
 
 #. Click **Save** on the top right.
 
@@ -152,7 +152,7 @@ To add a new OAuth application for a customer user in the back-office:
 
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to.
    * **Application Name** --- Provide a meaningful name for the application you are adding.
-   * **Active** --- Select the **Active** check box to activate the new application.
+   * **Active** --- Select the **Active** checkbox to activate the new application.
 
 4. Click **Create**.
 

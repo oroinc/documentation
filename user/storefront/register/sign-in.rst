@@ -17,6 +17,6 @@ To start working with the store, ensure you have an account created. If you are 
 
 3. Click **Sign In**.
 
-.. note:: The **Remember Me** check box saves your credentials, so that next time you visit the website you can automatically log in.
+.. note:: The **Remember Me** checkbox saves your credentials, so that next time you visit the website you can automatically log in.
 
 .. finish

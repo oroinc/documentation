@@ -15,7 +15,7 @@ To enable the quick order form per website both for the registered and guest use
 
    .. image:: /user/img/system/websites/web_configuration/QOFWeb.png
 
-4. Clear the **Use Organization** check box to override the organization-wide configuration options.
+4. Clear the **Use Organization** checkbox to override the organization-wide configuration options.
 
 5. In the **Quick Order Form** section, enable or disable the quick order form functionality for the registered users. By default the quick order form is enabled.
 

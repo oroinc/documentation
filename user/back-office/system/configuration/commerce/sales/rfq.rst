@@ -28,7 +28,7 @@ To configure the request for quote settings globally:
    :class: with-border
    :alt: Global rfq configuration
 
-3. Clear the **Use Default** check box to override the default configuration options.
+3. Clear the **Use Default** checkbox to override the default configuration options.
 
 4. In the **General** section, customize the following options:
 
@@ -52,7 +52,7 @@ To configure the request for quote settings globally:
 
   .. hint:: Make sure you enable :ref:`Guest Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list>` in the back-office to let guest customers create RFQs from the shopping lists in their storefront.
 
-  By default, guest request for quote submission is disabled. To enable it, clear *Use Default* and select the *Enable Guest RFQ* check box. When the guest RFQ is enabled, click **Save Settings** to display the additional **Guest RFQ Owner Settings** section.
+  By default, guest request for quote submission is disabled. To enable it, clear *Use Default* and select the *Enable Guest RFQ* checkbox. When the guest RFQ is enabled, click **Save Settings** to display the additional **Guest RFQ Owner Settings** section.
 
 7. In the **Guest RFQ Owner Settings** section, select the user who will be the default owner of all guest RFQs.  Depending on the roles and permissions of the owner, guest RFQs may or may not be viewed and managed by the users who are subordinated to the owner.
 

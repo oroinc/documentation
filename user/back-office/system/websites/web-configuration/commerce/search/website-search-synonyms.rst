@@ -18,8 +18,8 @@ To enable synonyms per website:
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Clear the **Use Organization** check box.
-5. Select the **Enable Search Synonyms** check box to add the ability to search for synonyms during the full-text search in the storefront.
+4. Clear the **Use Organization** checkbox.
+5. Select the **Enable Search Synonyms** checkbox to add the ability to search for synonyms during the full-text search in the storefront.
 6. Click **Save Settings**.
 
 .. Enabling synonyms in the application triggers the creation of the *Search Synonyms** menu under **Marketing > Search**.

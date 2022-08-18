@@ -29,7 +29,7 @@ To create a :term:`consent <Consent>` in OroCommerce:
    * **Owner** --- The owner is pre-populated with the user creating the consent but this value can be changed to another user of the system by clicking |IcBars| and selecting a user from the list.
    * **Name** --- The name of the consent displayed in the back-office and storefront. Use the folder icon next to the option to provide a localized name for the consent.
    * **Type** --- Define whether the user can proceed without giving their consent. The mandatory consents must be accepted by customer users in the storefront to be able to register, proceed to the checkout and create an RFQ.
-   * **Declined Consent Notification** --- When the check box is enabled, a notification is created in the back-office as a :ref:`contact request <user-guide-activities-requests>` if a consent is declined by a customer user in the storefront.
+   * **Declined Consent Notification** --- When the checkbox is enabled, a notification is created in the back-office as a :ref:`contact request <user-guide-activities-requests>` if a consent is declined by a customer user in the storefront.
    * **Web Catalog** --- Select the web catalog where you intend to use this consent.
    * **Content Node** --- Content nodes are added to web catalogs as landing pages, and linked as content variants to the catalog nodes. The selected web сatalog node can be configured to display different landing pages (content variants) in different languages. To link the consent to the required node, click on the required node in the tree to select it.
 

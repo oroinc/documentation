@@ -47,7 +47,7 @@ The first step of creating a new entity field is providing information on its ba
    * **File** --- Select this type if you are going to use this field to store files. If you need to store image files with .gif, .jpeg or .png file extensions, consider the *Image* file type instead.   
    * **Image** --- Select this type if you are going to use this field to store images (e.g. photos). The thumbnail of the uploaded image will be displayed in the entity record. You will be able to download the full image by clicking this thumbnail. 
    * **Select** --- Use this type if you want your field to be a list that enables users to select one value at a time. For example, the 'Grade Service' list that contains values from 1 to 5.
-   * **Multi-Select** --- Use this type if you want your field to be a set of check boxes. Users will be able to select several values at a time. For example, the 'Working Days' list that contains days of week.
+   * **Multi-Select** --- Use this type if you want your field to be a set of checkboxes. Users will be able to select several values at a time. For example, the 'Working Days' list that contains days of week.
    * **Multiple Images** ---  Select this type if you want to add the ability to upload more than one image to an entity.
 
      .. image::  /user/img/system/entity_management/multiple-images.png

@@ -29,7 +29,7 @@ To configure localization settings globally:
    .. image:: /user/img/system/config_system/localization_configuration_global.png
       :alt: Global localization configuration options
 
-   Configure the required options by clearing the **Use Default** check box and providing your own data.
+   Configure the required options by clearing the **Use Default** checkbox and providing your own data.
 
 3. In the **Location Options** section, provide:
 
