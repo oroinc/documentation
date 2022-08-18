@@ -29,7 +29,7 @@ To add a new OAuth application in the back-office:
 
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations (available for the Enterprise edition only).
    * **Application Name** --- Provide a meaningful name for the application you are adding.
-   * **Active** --- Select the **Active** check box to activate the new application.
+   * **Active** --- Select the **Active** checkbox to activate the new application.
 
 4. Click **Create**.
 

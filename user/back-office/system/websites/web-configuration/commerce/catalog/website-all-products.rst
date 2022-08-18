@@ -36,8 +36,8 @@ Enable All Products Page per Website
 
    .. image:: /user/img/system/websites/web_configuration/AllProductsWebsite.png
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
-5. In the **All Products** section, select the **Enable All Products Page** check box.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
+5. In the **All Products** section, select the **Enable All Products Page** checkbox.
 6. Click **Save Settings** on the top right of the page.
 
 .. _user-guide--all-products--sample:
@@ -54,7 +54,7 @@ For this, first enable the All Products page in the system:
 1. Navigate to **System > Websites**.
 2. For *Europe*, hover over the |IcMore| more actions menu, and click |IcConfig|.
 3. Select **Commerce > Catalog > Special Pages** in the panel to the left.
-4. In the **All Products** section, select the **Enable All Products Page** check box.
+4. In the **All Products** section, select the **Enable All Products Page** checkbox.
 
    .. image:: /user/img/products/all_products_page/SampleAllProducts3.png
 

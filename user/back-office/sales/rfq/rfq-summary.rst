@@ -11,22 +11,22 @@ To view all the Requests for Quotes, navigate to **Sales > Requests for Quote** 
 
 .. image:: /user/img/sales/rfq/rfq_1.2.png
    :class: with-border
-   :alt: The list of all refqs available in the system
+   :alt: The list of all RFQs available in the system
 
 Here, you can perform the following actions:
 
 * **View per page** --- In the list, select the number of items to be displayed per page. Available options are 10, 25, 50, and 100.
-* **Filter** --- Click |IcFilter| to show filters per column. You can limit displayed items to those that match filtering criteria provided.
-* **Sort** --- To sort the items by the values in a particular column (e.g. RFQ#, Submitted by, etc.), click the respective column header. When sorting is ascending, an upward arrow appears next to the column name. When sorting is descending, a downward arrow appears.
+* **Filter** --- Click |IcFilter| to show filters per column. You can limit displayed items to those that match the filtering criteria provided.
+* **Sort** --- To sort the items by the values in a particular column (e.g., RFQ#, Submitted by, etc.), click the respective column header. When sorting is ascending, an upward arrow appears next to the column name. When sorting is descending, a downward arrow appears.
 * **Refresh** --- Click |IcRedo| to reload the information about the items. If another user recently updated the item details, these changes are reflected upon the refresh.
-* **Reset** --- Click |IcReset| to roll back the view per page, filters and columns configuration to the default values.
-* **Manage columns** --- Open the **Grid Settings** by clicking |IcSettings| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. To show / hide a column, select / clear the **Show** check box next to it.
+* **Reset** --- Click |IcReset| to roll back the view per page, filters, and columns configuration to the default values.
+* **Manage columns** --- Open the **Grid Settings** by clicking |IcSettings| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. To show / hide a column, select / clear the **Show** checkbox next to it.
 
-Choose the required RFQ in the list, hover over the |IcEllipsisH| **More Options** menu and perform one of the following:
+Choose the required RFQ in the list, hover over the |IcEllipsisH| **More Options** menu, and perform one of the following:
 
 .. image:: /user/img/sales/rfq/rfq_3.png
    :class: with-border
-   :alt: The actions you can perform to any rfq from the rfq grid
+   :alt: The actions you can perform to any RFQ from the RFQ grid
 
 * Click |IcView| to :ref:`View the details <user-guide--sales--requests-for-quote--details>` of the request for quote.
 * Click |IcMarkProcessed| to :ref:`Mark the RFQ as Processed <user-guide--sales--requests-for-quote--steps-and-transitions--processed>`.

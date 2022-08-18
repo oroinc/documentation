@@ -84,7 +84,7 @@ With the Customer User Role you can manage the following access- and permissions
 .. image:: /user/img/storefront/users_roles/AccessPermissions.png
 
 .. csv-table::
-  :header: "Field", "Entities", "Capabilities (Check boxes)"
+  :header: "Field", "Entities", "Capabilities (Checkboxes)"
   :widths: 10, 20, 50
 
   "**All**","Address, Customer User, Customer User Address, Customer User Roles, Grid (Table) View","Account Management:

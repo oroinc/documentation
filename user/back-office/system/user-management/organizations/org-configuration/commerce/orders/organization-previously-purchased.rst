@@ -17,9 +17,9 @@ Configure Purchase History Settings per Organization
 
 4. In the **Purchase History** section:
 
-   * *Enable Purchase History* --- Clear the **Use System** check box and select the **Enable Purchase History** check box to enable the Previously Purchased Products page.
+   * *Enable Purchase History* --- Clear the **Use System** checkbox and select the **Enable Purchase History** checkbox to enable the Previously Purchased Products page.
 
-   * *Display Products Purchased Within (Days)* --- The period of 90 days is set by default. To change it, clear the **Use System** check box and enter the number of days that the purchase history should cover.
+   * *Display Products Purchased Within (Days)* --- The period of 90 days is set by default. To change it, clear the **Use System** checkbox and enter the number of days that the purchase history should cover.
 
 5. Click **Save Settings** on the top right of the page.
 

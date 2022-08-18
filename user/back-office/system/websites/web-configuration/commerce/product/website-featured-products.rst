@@ -24,7 +24,7 @@ Now, update the featured products segment for a website:
 
 4. To customize the segment option:
 
-     a) Clear the **Use Organization** check box next to the option.
+     a) Clear the **Use Organization** checkbox next to the option.
      b) Select the new segment from the list.
 
 5. Click **Save**.

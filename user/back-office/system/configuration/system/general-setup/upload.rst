@@ -22,7 +22,7 @@ To configure the upload settings globally:
    .. image:: /user/img/system/config_system/upload_settings_2.png
       :alt: Upload settings on global level
 
-4. Clear the **Use Default** check box next to the option.
+4. Clear the **Use Default** checkbox next to the option.
 
 5. In the **File Size Settings** section, provide the maximum file size (in MB) that is allowed to be uploaded to the application.
 

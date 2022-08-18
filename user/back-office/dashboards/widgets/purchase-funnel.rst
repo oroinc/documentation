@@ -21,7 +21,7 @@ Purchase Funnel Widget Configuration
 
 You can adjust the following settings for the purchase funnel widget:
 
-* **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** check box and provide a new name.
+* **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** checkbox and provide a new name.
 * **Date Range** --- the time for which the widget details are displayed.
 
 .. image:: /user/img/dashboards/purchase_funnel_config.png

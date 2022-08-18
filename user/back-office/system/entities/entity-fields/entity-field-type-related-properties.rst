@@ -82,8 +82,8 @@ Depending on the entity type selected when defining the :ref:`basic properties <
    "Options","Define values that will be included in the select list.
 
                 - To add an option, click the **+Add**.
-                - To set the default option, select the check box next to the option.
-                - Click the **Do not set as Default** link to clear the **Default** check boxes.
+                - To set the default option, select the checkbox next to the option.
+                - Click the **Do not set as Default** link to clear the **Default** checkboxes.
                 - To move an option up or down on the list, drag the |IcPosition| **Move** icon next to the option.
                 - To delete an option, click **x** next to the option.  When you delete an option, it is removed from all the entity records in the system where it is currently present.
    "

@@ -25,8 +25,8 @@ To configure the product image settings globally:
 
 3. Customize any of the options by proceeding through the following steps:
 
-     a) Clear the **Use Default** check box next to the option.
-     b) Enable the required check box or enter the necessary file size and type information.
+     a) Clear the **Use Default** checkbox next to the option.
+     b) Enable the required checkbox or enter the necessary file size and type information.
 
 .. note:: As of application version 5.0.2, the **Enable Original File Names** option is hidden. To configure the original image file names, navigate to :ref:`General Setup > Upload Settings <admin-configuration-upload-settings>` in the system configuration.
 

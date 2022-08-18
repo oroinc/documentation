@@ -30,7 +30,7 @@ To open display settings:
 +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field              | Description                                                                                                                                           |
 +====================+=======================================================================================================================================================+
-| Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name). The functionality is enabled by default. |
+| Show Recent Emails | Select this checkbox to display the recent emails on the user bar (they will appear next to the user name). The functionality is enabled by default.  |
 |                    |                                                                                                                                                       |
 |                    | .. image:: /user/img/system/config_system/user_configuration_showemailsuserbar.png                                                                    |
 |                    |    :alt: A recent emails icon displayed on the user bar                                                                                               |
@@ -99,7 +99,7 @@ The value is enabled by default.
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
 | Field                 | Description                                                                                               |
 +=======================+===========================================================================================================+
-| Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
+| Enable WYSIWYG Editor | Select this checkbox to enable text formatting tools for emails, notes and comments.                      |
 |                       |                                                                                                           |
 |                       | .. image:: /user/img/system/config_system/user_configuration_wysiwyg.png                                  |
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
@@ -175,14 +175,14 @@ To change any color in the set:
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 | Field                               | Description                                                                                                          |
 +=====================================+======================================================================================================================+
-| Group Same-Entity Conditions Within | Select this check box to enable report generation for an entity only if the values match all the field conditions    |
+| Group Same-Entity Conditions Within | Select this checkbox to enable report generation for an entity only if the values match all the field conditions     |
 | Condition Groups                    | queries within a :ref:`conditions group <user-guide--business-intelligence--filters-condition-groups>`. This means   |
 |                                     | that if two conditions (A and B) are applied in a condition group, the report will be generated only when both of    |
-|                                     | them are satisfied. Disable the check box to receive the report that would include the values which satisfy the A    |
+|                                     | them are satisfied. Disable the checkbox to receive the report that would include the values which satisfy the A     |
 |                                     | condition, the B condition, and both.                                                                                |
 |                                     |                                                                                                                      |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-| Display SQL In Reports And Segments | Select this check box to enable the user to review the SQL request sent to the system for a report or a segment.     |
+| Display SQL In Reports And Segments | Select this checkbox to enable the user to review the SQL request sent to the system for a report or a segment.      |
 |                                     | This way, users can check if a report has been developed correctly.                                                  |
 |                                     |                                                                                                                      |
 |                                     | .. image:: /user/img/system/config_system/user_configuration_showsql.png                                             |

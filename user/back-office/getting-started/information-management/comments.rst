@@ -41,7 +41,7 @@ To add a comment:
 
     You can :ref:`edit <doc-entity-actions-edit>` the **Comment** entity and add new fields if required.
 
- .. note:: Comments for cases have an additional **Make Public** check box when your Oro application is integrated with Zendesk. This enables you to make a specific comment public in :ref:`Zendesk <user-guide-zendesk-integration>`.
+ .. note:: Comments for cases have an additional **Make Public** checkbox when your Oro application is integrated with Zendesk. This enables you to make a specific comment public in :ref:`Zendesk <user-guide-zendesk-integration>`.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin

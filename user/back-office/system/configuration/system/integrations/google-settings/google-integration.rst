@@ -27,10 +27,9 @@ To configure Google integration-related settings in the back-office:
 
 6. In the **Google Tag Manager Settings** section:
 
-    * Clear the **Use Default** check box.
+    * Clear the **Use Default** checkbox.
     * For the **Google Tag Manager** Integration filed, select the :ref:`GTM integration <gtm-ga-4-integration>` you have configured for the application. Click **Save** to display an additional option.
     * For **Data Collection For**, select the Google Analytics type (Universal, GA4, or both) that connects to your GTM account to enable data mapping.
-
 
 **Related Topics**
 

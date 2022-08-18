@@ -29,15 +29,15 @@ To import a bulk of product prices:
 
 3. Click **Choose File** and select the .csv file you prepared.
 
-.. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
+.. note: Ensure your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
 
 4. Click **Download Import Template** to download a sample .csv file with the necessary headers.
 
-5. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
+5. **Prepare data for import**: Create your bulk information in the .csv format based on the downloaded file. Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
 
 6. Select the strategy for uploading the file:
 
-   * **Add and Replace** strategy overrides the existing prices with the ones mentioned in the file for the corresponding product item. Also, it adds new prices to the products with the empty values.
+   * **Add and Replace** strategy overrides the existing prices with the ones mentioned in the file for the corresponding product item. Also, it adds new prices to the products with empty values.
 
    * **Reset and Add** strategy removes all the existing prices and adds only the ones listed in the .csv file.
 
@@ -50,9 +50,9 @@ To import a bulk of product prices:
 
 9. Click **Cancel** to decline the import.
 
-.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+.. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
-Follow the on-screen guidance for any additional actions. For example, for the inventory template, select one of the options: a) inventory statuses only or b) detailed inventory levels.
+Follow the on-screen guidance for any additional actions. For example, select one option for the inventory template: a) inventory statuses only or b) detailed inventory levels.
 
 .. raw:: HTML
 

@@ -18,7 +18,7 @@ To define the custom localization options for the particular website:
 
    .. image:: /user/img/system/websites/web_configuration/localization_configuration_website.png
 
-4. Clear the **Use Organization** check box to change the default options, and provide new values.
+4. Clear the **Use Organization** checkbox to change the default options, and provide new values.
 
 5. Select one or multiple enabled localizations for the website from the list to support the translation of the storefront UI elements to the target language.
 

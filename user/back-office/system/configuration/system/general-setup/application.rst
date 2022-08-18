@@ -14,7 +14,7 @@ You can view details of your application settings and control the Web API featur
    .. image:: /user/img/system/config_system/application_settings_global.png
       :alt: The application settings available on the global level
 
-   .. note:: To change the default settings, clear the **Use Default** check box first.
+   .. note:: To change the default settings, clear the **Use Default** checkbox first.
 
    * **Application URL** --- The URL of the application 
    * **Recipient Email Addresses** --- To send notifications to specific people, type their email addresses separated by semicolons (;). Leave this field empty to disable error logs notification.

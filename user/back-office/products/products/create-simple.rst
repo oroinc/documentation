@@ -58,7 +58,7 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
         For every additional unit, provide precision and conversion rate compared to the main unit of quantity.
 
-        Select the **Sell** check box to enable selling the product in these units. Unless **Sell** is selected, the unit is considered a draft.
+        Select the **Sell** checkbox to enable selling the product in these units. Unless **Sell** is selected, the unit is considered a draft.
 
         You can delete the unnecessary unit of quantity by clicking the |IcClose| **Delete** icon next to it.
 
@@ -126,7 +126,7 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
 16. Review translation rules for a product name, URL slug, long description, and short description.
 
-    To enter translation manually, click |IcTranslations|, clear the **Use <parent translation>** check box next to the required language, and provide your translation version.
+    To enter translation manually, click |IcTranslations|, clear the **Use <parent translation>** checkbox next to the required language, and provide your translation version.
 
     .. image:: /user/img/products/products/ProductsCreateTranslation.png
        :alt: Provide the relevant translation
@@ -154,7 +154,7 @@ To add related products to the product information:
 
 #. In the **Select Related Products For** dialog:
 
-   a) Select the **Is Related** check boxes next to the products to mark them as related. Use a filter to limit the number of listed products and find the necessary items.
+   a) Select the **Is Related** checkboxes next to the products to mark them as related. Use a filter to limit the number of listed products and find the necessary items.
 
    b) Click **Select Products**.
 
@@ -182,7 +182,7 @@ To add up-sell items to the product information:
 
 #. In the **Select Up-Sell Items For** dialog:
 
-   a) Select the **Is Related** check boxes next to the products to mark them as related. Use a filter to limit the number of listed products and find the necessary items.
+   a) Select the **Is Related** checkboxes next to the products to mark them as related. Use a filter to limit the number of listed products and find the necessary items.
 
    b) Click **Select Products**.
 

@@ -16,7 +16,7 @@ To define the custom localization options for a particular organization:
    .. image:: /user/img/system/localization/localization_configuration_organization.png
       :alt: Localization configuration options per organization
 
-   Here, you can configure the following options by clearing the **Use System** check box and providing your own data.
+   Here, you can configure the following options by clearing the **Use System** checkbox and providing your own data.
 
 4. In the **Location Options** section, provide:
 

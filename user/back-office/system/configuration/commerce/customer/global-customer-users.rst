@@ -81,7 +81,7 @@ The :ref:`CookieConsentBannerBundle <bundle-docs-commerce-cookie-consent-bundle>
 
 If the application was installed without demo data, the banner is disabled. To configure cookie consent banner on the global level, take the following steps:
 
-1. **Show Banner** --- Select the check box to display the cookie consent banner to the website's visitor.
+1. **Show Banner** --- Select the checkbox to display the cookie consent banner to the website's visitor.
 
    .. image:: /user/img/system/config_commerce/cookie_banner/banner-settings.png
       :alt: Cookie consent banner config

@@ -24,7 +24,7 @@ To enable the integration in the Oro application on the global level:
  
 1. Navigate to the **System > Configuration** in the main menu.
 2. Click **Integrations > Google Settings** in the panel to the left.
-3. In the **Google Hangouts** section, select the following check boxes:
+3. In the **Google Hangouts** section, select the following checkboxes:
  
    * **Enable for Emails** --- to call via email (you can invite up to 5 users to a Google Hangout by emailing them)
    * **Enable for Phones** --- to make phone calls 

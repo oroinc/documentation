@@ -56,7 +56,7 @@ To create an integration with Zendesk:
   
 5. In the **Synchronization Settings** section, enable/disable the two-way synchronization.
 
-   Select the **Enable Two Way Sync** check box, if you want to download data both from Zendesk to your Oro application and back. 
+   Select the **Enable Two Way Sync** checkbox, if you want to download data both from Zendesk to your Oro application and back.
    
    If the box is left unselected, data from Zendesk is loaded into the Oro application, but changes performed within it are not loaded back into Zendesk.
 

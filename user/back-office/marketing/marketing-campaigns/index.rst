@@ -180,7 +180,7 @@ To share a marketing campaign with other Oro application user:
 .. image:: /user/img/marketing/marketing/marketing_campaign_share.png
    :alt: The sharing settings popup of a marketing campaign
 
-4. Type in the username in the *Share with* field, or search for the necessary user: click |IcBars|, find the person you need, select the check box next to their name, and click **Add**.
+4. Type in the username in the *Share with* field, or search for the necessary user: click |IcBars|, find the person you need, select the checkbox next to their name, and click **Add**.
 
 The **Already shared with** section gets automatically populated with the person you have added.
 

@@ -42,7 +42,7 @@ To enable PayPal Express payments:
 
    * **Client ID** and **Client Secret** are values, generated individually through the PayPal website. For more information on how to get the sandbox API credentials, refer to the :ref:`Obtain Sandbox Credentials <paypal-express--sandbox-credentials>` section. For the production API credentials, refer to the :ref:`Obtain Production Credentials <paypal-express--production-credentials>` guide.
 
-   * **Sandbox Mode** --- Select this check box to check the PayPal Express interaction process in the test mode without any charges. It enables you to connect to the gateway in a safe environment with no risk to both customers and sales representatives.
+   * **Sandbox Mode** --- Select this checkbox to check the PayPal Express interaction process in the test mode without any charges. It enables you to connect to the gateway in a safe environment with no risk to both customers and sales representatives.
 
    * **Status**  --- Set the status to **Active** to enable the integration.
    * **Default Owner** --- A user who is responsible for this integration and manages it.

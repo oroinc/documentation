@@ -77,7 +77,7 @@ Tables can be viewed, saved as new ones, shared, renamed, set as default and del
 2. To save a table as a new one: click **Save as New**.
 
     * **Enter New List Name**: Define a name of the new view table.
-    * **Set as Default**: Select this check box to set the new table as the default one.
+    * **Set as Default**: Select this checkbox to set the new table as the default one.
     * **Add**: Click **Add** to add a new saved view table.
     * **Cancel**: Click **Cancel** to exit.
 
@@ -106,7 +106,7 @@ The following action buttons can be available:
 
    .. image:: /user/img/storefront/navigation/TableSettings.png
 
-   * You can manually select the columns by clicking on the check box next to the required field.
+   * You can manually select the columns by clicking on the checkbox next to the required field.
    * To show/hide all columns in the table, click **Select All**/**Deselect All**.
    * To clear customization, click |IcReset| **Reset**.
    * To change the order of the columns, click on the ellipsis icon next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
@@ -248,7 +248,7 @@ To save a search result:
    .. image:: /user/img/storefront/navigation/saved-search.png
       :alt: Saved search icon in the Filters panel
 
-3. Select the check boxes for *New Product* and/or *Inventory Status* if you want to receive notifications.
+3. Select the checkboxes for *New Product* and/or *Inventory Status* if you want to receive notifications.
 4. Click **Add**. Your search query is now saved under **My Account > Saved Search**.
 
    .. image:: /user/img/storefront/navigation/saved-search-acc.png

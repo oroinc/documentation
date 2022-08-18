@@ -21,7 +21,7 @@ To customize the following tax calculation settings that impact the way OroComme
    :scale: 60%
    :alt: Global tax calculation configuration
 
-.. note:: Remember to clear the **Use default** check box before setting a custom option.
+.. note:: Remember to clear the **Use default** checkbox before setting a custom option.
 
 3. In the **Enable Taxation** section, enable or disable taxation by setting or clearing the **Enabled** box. Whenever you use the built-in or third-party tax provider, the taxation should be enabled.
 
@@ -79,7 +79,7 @@ To customize the following tax calculation settings that impact the way OroComme
 
 7. In the **Origin** section, provide the origin address (e.g. location of your warehouse or the company legal address) that will be used system-wide for origin-based tax. When the shipping origin is a core jurisdiction, OroCommerce will use the address provided here to find the matching built-in tax jurisdiction rules for tax calculation.
 
-8. In the **Promotions** section, select the **Calculate Taxes After Promotions** check box, if you wish to have your taxes calculated on the :ref:`reduced price <user-guide--marketing--promotions>` after the discounts are applied. If this option is disabled, taxes are calculated based on the full price before the discounts are applied. This configuration option is also available on the :ref:`organization configuration level <user-guide--taxes--org--promotions>`.
+8. In the **Promotions** section, select the **Calculate Taxes After Promotions** checkbox, if you wish to have your taxes calculated on the :ref:`reduced price <user-guide--marketing--promotions>` after the discounts are applied. If this option is disabled, taxes are calculated based on the full price before the discounts are applied. This configuration option is also available on the :ref:`organization configuration level <user-guide--taxes--org--promotions>`.
 
   .. note:: When a discount applies to the entire order, it is proportionally distributed among all line items and subtracted from the subtotal of each of them. Tax is calculated for each taxable line item after that.
 

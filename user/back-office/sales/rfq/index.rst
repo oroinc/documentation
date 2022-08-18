@@ -7,11 +7,11 @@ Manage Request for Quotes (RFQ) in the Back-Office
 
 .. hint:: This section is part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides a general understanding of the RFQ and quote concepts in OroCommerce.
 
-:term:`RFQs (Requests for quotes) <Request for Quote>` are used by sales representatives to assist customers and meet their needs through negotiations on a better price, more convenient quantities of products, or additional services. Once a customer submits a request for quotes in the Oro storefront, it immediately becomes available in the Oro back-office.
+:term:`RFQs (Requests for quotes) <Request for Quote>` are used by sales representatives to assist customers and meet their needs through negotiations on a better price, more convenient quantities of products, or additional services. Once a customer submits a request for a quote in the Oro storefront, it immediately becomes available in the Oro back-office.
 
-Prior to starting your work with RFQs, make sure that you have:
+Before starting your work with RFQs, make sure that you have:
 
-1. **Configured RFQ related workflows** --- activate or deactivate the RFQ :ref:`workflows <doc--workflows--actions--system>` that control the interactions between the storefront and the back-office. These workflows help buyers and sales managers run the process automatically and provide the corresponding status upon this interaction.
+1. **Configured RFQ-related workflows** --- activate or deactivate the RFQ :ref:`workflows <doc--workflows--actions--system>` that control the interactions between the storefront and the back-office. These workflows help buyers, and sales managers run the process automatically and provide the corresponding status upon this interaction.
 
    .. image:: /user/img/sales/rfq/rfq_1.png
       :alt: Illustrate two RFQ-related workflows in the system configuration
@@ -52,4 +52,3 @@ Read more on RFQs in the topic below:
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
-

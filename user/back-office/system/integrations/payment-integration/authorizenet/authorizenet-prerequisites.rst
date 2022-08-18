@@ -81,7 +81,7 @@ To enable the test mode, complete the following:
 
 1. Navigate to **System > Integrations > Manage Integrations**.
 2. Click the Authorize.Net integration for which you would like to turn the test mode on.
-3. On the integration edit page, find the **Test Mode** check box and select it.
+3. On the integration edit page, find the **Test Mode** checkbox and select it.
 
    .. image:: /user/img/system/integrations/authorizenet/authorizenet_testmode.png
 

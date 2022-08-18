@@ -15,7 +15,7 @@ To configure email, calendar events, and task synchronization with Microsoft 365
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu at the end of the row and click |IcConfig| to start editing the configuration.
 3. Click **System Configuration > Integrations > Microsoft Settings** in the menu to the left.
-4. Clear the **Use System** check box to provide the values for a particular organization overriding the global settings.
+4. Clear the **Use System** checkbox to provide the values for a particular organization overriding the global settings.
 
   .. image:: /user/img/system/user_management/org_configuration/general/microsoft-settings-organization.png
      :alt: Microsoft 365 Integration settings on the organization level

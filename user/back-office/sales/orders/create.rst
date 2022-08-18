@@ -39,7 +39,7 @@ To create a new order from scratch:
    b) **Quantity**: Enter product quantity.
    c) **Warehouse**: Choose a warehouse from the drop-down, or click |IcBars| to see a list of all warehouses.
    d) **Price**: Enter the price for the product, or click |IcBars| to select the price from the list.
-   e) **Ship by**: If required, choose a date that the order must be shipped by at the customer’s request.
+   e) **Ship by**: If required, choose a date by which the order must be shipped at the customer’s request.
    f) **Add Notes**: Click the *add notes* link if you would like to add a note about the item.
    g) **Taxes**: View taxes calculated for the product(s) (if configured).
 
@@ -59,15 +59,13 @@ To create a new order from scratch:
    c) **Overridden Shipping Cost Amount**: If required, override the shipping cost by adding your own value.
 
    .. image:: /user/img/sales/orders/orders_create_shippinginfo2.png
-      :alt: The shipping options displayed after clicking the Calculate Shipping button.
+      :alt: The shipping options are displayed after clicking the Calculate Shipping button.
 
-8. In the **Additional** section, enter additional details, if required (e.g. PO number, Do Not Ship Later Than date, payment term, and warehouse to ship items from), and add notes for the customer.
+8. In the **Additional** section, enter additional details, if required (e.g., the PO number, the Do Not Ship Later Than date, the payment term, and the warehouse to ship the items from), and add notes for the customer.
 
 9. In the **Order Totals** section, review the final amount.
 
 10. To save the order, click **Save** on the top right of the page.
-
-The new order is now created.
 
 .. hint::
 
@@ -82,7 +80,7 @@ The new order is now created.
 Create an Order from a Shopping List
 ------------------------------------
 
-Any time a customer creates a new shopping list, it can be accessed in the back-office.  This is helpful if a customer needs assistance finding particular items or with creating an order.
+Any time a customer creates a new shopping list, it can be accessed in the back-office. This is helpful if a customer needs assistance finding particular items or creating an order.
 
 .. hint:: See a short demo on |creating orders from the shopping list| or keep reading for step-by-step guidance.
 
@@ -102,16 +100,14 @@ To create an order from a shopping list:
 
 4. The Create Order form opens, prepopulated with the information from the shopping list:
 
-   Amend or add new details to the order, if necessary, as described in :ref:`the Create an Order from Scratch <user-guide--sales--orders--create>` topic.
+   Amend or add new details to the order, as described in :ref:`the Create an Order from Scratch <user-guide--sales--orders--create>` topic.
 
    .. image:: /user/img/sales/orders/orders_create_fromshoppinglist1.png
-      :alt: The Create Order form prepopulated with the information from the shopping list
+      :alt: The Create Order form is prepopulated with the information from the shopping list
 
    .. warning:: When you modify the order content, order totals and shipping costs may change. Please, review the shipping method selection before saving the order to make sure that the shipping cost is acceptable.
 
-5. Click **Save** when you are done.
-
-The new order is now created.
+5. Click **Save**.
 
    .. image:: /user/img/sales/orders/orders_create_fromshoppinglist2.png
       :alt: The new order just created
@@ -127,7 +123,7 @@ The new order is now created.
 Create an Order from an RFQ
 ---------------------------
 
-To create an order based on a request for quote (RFQ):
+To create an order based on a request for a quote (RFQ):
 
 1. Navigate to **Sales > Requests for Quote** in the main menu.
 2. Open the selected RFQ from the grid.
@@ -139,9 +135,9 @@ To create an order based on a request for quote (RFQ):
 
 The Create Order form opens prepopulated with the information from the RFQ:
 
-4. Amend or add new details to the order, if necessary, as described in :ref:`the Create an Order from Scratch topic <user-guide--sales--orders--create>`.
+4. Amend or add new details to the order, as described in :ref:`the Create an Order from Scratch topic <user-guide--sales--orders--create>`.
 
-   .. warning:: When you modify the order content, order totals and shipping costs may change. Please, review the shipping method selection before saving the order to make sure that the shipping cost is acceptable.
+   .. warning:: When you modify the order content, order totals and shipping costs may change. Please, review the shipping method selection before saving the order to ensure that the shipping cost is acceptable.
 
 5. Click **Save** when you have finished.
 

@@ -11,7 +11,7 @@ Manage Orders in the Back-Office
 
 In **Sales > Orders**, you can view, edit and delete the already submitted orders and create new orders on behalf of the buyers.
 
-While many customers will use the online store to create orders, they can also come from other avenues such as phone calls, emails, contact us requests or from other sales channels. An Oro application makes it easy to create an order for customers in the back-office. When creating or editing an order, you can create new customers or new customer users on the fly, configure shipping options, add discounts, and more.
+While many customers will use the online store to create orders, they can also come from other avenues such as phone calls, emails, contact us requests, or other sales channels. An Oro application makes creating an order for customers in the back-office easy. When creating or editing an order, you can create new customers or new customer users on the fly, configure shipping options, add discounts, and more.
 
 Create Orders
 -------------

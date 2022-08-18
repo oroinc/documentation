@@ -59,19 +59,19 @@ To create a new user, click **+Create User** on the top right of the page, next 
 A form will emerge with the following data to provide:
 
 * Customer
-* Enabled check box
+* Enabled checkbox
 * Email Address
 * Name Prefix
 * First Name
 * Middle Name
 * Last Name
 * Name Suffix
-* Send Welcome Email check box
+* Send Welcome Email checkbox
 * Birthday
 * Password
 * Confirm Password
-* Generate Password check box
-* Roles: administrator/buyer check boxes
+* Generate Password checkbox
+* Roles: administrator/buyer checkboxes
 
 .. include:: /include/include-images.rst
    :start-after: begin

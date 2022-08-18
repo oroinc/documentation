@@ -33,7 +33,7 @@ To filter the output of a Best Selling Products report:
 
 5. Also, you can manage the report's columns by clicking |IcSettings| to the right and opening the **Grid Settings** to see the list of columns that organize the item details.
 
-6. To reorder the columns, click and hold the column name, then drag it to a new location. To show / hide a column, select / clear the **Show** check box next to it.
+6. To reorder the columns, click and hold the column name, then drag it to a new location. To show / hide a column, select / clear the **Show** checkbox next to it.
 
 .. include:: /include/include-images.rst
    :start-after: begin

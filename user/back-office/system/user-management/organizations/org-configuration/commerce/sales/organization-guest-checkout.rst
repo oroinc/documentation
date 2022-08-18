@@ -18,7 +18,7 @@ To configure checkout settings per organization:
 
    .. image:: /user/img/system/user_management/org_configuration/sales/CheckoutOrg.png
 
-4. Clear the **Use System** check box to change the system-wide setting.
+4. Clear the **Use System** checkbox to change the system-wide setting.
 
 5. In the **Customer Users Registration** section, you can:
 

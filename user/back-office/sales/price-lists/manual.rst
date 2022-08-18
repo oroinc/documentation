@@ -9,7 +9,7 @@ You can add a product price in the specific currency to the price list manually 
 
 * While editing a product, in the **Product Prices** section of the product details.
 
-* When viewing the price list details, by clicking **+ Add Product Price**.
+* Click **+ Add Product Price** when viewing the price list details.
 
 .. note:: The ability to add product prices from the price list and product pages depends on the *Create* role permission for the Product Price entity. If it is set to *None* for a particular role, adding prices will not be permitted for a user with this role. Please see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` topic for more details.
 
@@ -23,8 +23,7 @@ To add a product price in the price list:
 
 1. Navigate to **Sales > Price Lists** in the main menu.
 
-2. Click on the price list that you would like to add the price into.
-   The price list details open.
+2. Click on the price list to which you would like to add the price.
 
 3. Click **+ Add Product Price**.
    The **Add Product Price** dialog appears.
@@ -38,7 +37,7 @@ To add a product price in the price list:
 
    To illustrate how price tiers work, let us consider the following example:
 
-   When the product prices in USD are provided for one item, ten items, and fifty items, and a buyer orders 20 items, they will see price provided for ten items.
+   When the product prices in USD are provided for one item, ten items, and fifty items, and a buyer orders 20 items, they will see the price provided for ten items.
 
 #. Select the unit of quantity for the price.
 
@@ -59,8 +58,6 @@ To add a product price in the product details:
 
 2. Find the product you would like to add the price for, click the |IcMore| **More Options** menu at the end of the corresponding row, and then click the |IcEdit| **Edit** icon.
 
-   The product details open.
-
 3. In the **Product Prices** section, click **+ Add**.
 
    .. image:: /user/img/sales/pricelist/prices_for_product.png
@@ -74,7 +71,7 @@ To add a product price in the product details:
 
    To illustrate how price tiers work, let us consider the following example:
 
-   When the product prices in USD are provided for one item, ten items, and fifty items, and a buyer orders 20 items, they will see price provided for ten items.
+   When the product prices in USD are provided for one item, ten items, and fifty items, and a buyer orders 20 items, they will see the price provided for ten items.
 
 #. Select the unit of quantity from the list.
 

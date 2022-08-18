@@ -22,7 +22,7 @@ To configure email settings per website:
    * **Sender Email** --- The **From** address which the recipients will see, e.g. no-reply@example.com
    * **Sender Name** --- The sender name displayed to recipients.
 
-  Clear the **Use Organization** check box to change the default options, and provide new values.
+  Clear the **Use Organization** checkbox to change the default options, and provide new values.
 
 5. Click **Save Settings**.
 

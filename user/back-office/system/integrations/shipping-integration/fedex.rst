@@ -93,7 +93,7 @@ To enable the integration with FedEx in order to request the shipping cost estim
 
 Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-5. Set the **Test Mode** check box into the necessary state. Enable it if you are using the test FedEx access key and disable for the production access.
+5. Set the **Test Mode** checkbox into the necessary state. Enable it if you are using the test FedEx access key and disable for the production access.
 
    .. note:: For security reasons, it is critically important to use the mode that matches your environment and the FedEx access key type.
 
@@ -153,7 +153,7 @@ Once you have successfully configured the OroCommerce FedEx integration, and the
 
 5. Follow the steps described in the aforementioned Configure a FedEx Integration in OroCommerce section to set up the production integration between FedEx and OroCommerce.
 
-   .. important:: Make sure that the **Test Mode** check box is NOT selected as you are configuring the production integration.
+   .. important:: Make sure that the **Test Mode** checkbox is NOT selected as you are configuring the production integration.
 
 
 **Related Topics**

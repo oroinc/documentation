@@ -99,7 +99,7 @@ The **Designer** section consists of a table and an interactive chart representa
 
 .. image:: /user/img/system/workflows/auto_sort.gif
 
-- **Show transition labels** (select this check box in the top left corner of the chart to display transition labels in the chart).
+- **Show transition labels** (select this checkbox in the top left corner of the chart to display transition labels in the chart).
 - **Drag transitions from one step to another** (point to one of four corners of the step box, and when the cursor changes shape to the hand, click the corner and drag an arrow to another step).
 
 .. image:: /user/img/system/workflows/drag_transition.gif
@@ -175,7 +175,7 @@ To add a transition to a workflow:
 
    * **Entity Field** --- This is the field of the workflow entity or its related entities that will appear on the view form of the transition. Use these if you want a user to add or edit some entity data in the transition.
    * **Label** --- Use the field if you want to change the way it is displayed on the user interface. The system label value of the entity is used by default.
-   * **Required** --- Select the **Required** check box if the definition of the attribute should be mandatory for the transition.
+   * **Required** --- Select the **Required** checkbox if the definition of the attribute should be mandatory for the transition.
    * **+Add** --- Click **+Add** to add a new attribute.
 
 The following is an example of an attribute added for the **Register a Complaint** transition in the sample Opportunity Support Flow. The entity selected for the attribute is Additional Comments. Its label has been changed to **Specify the Complaint**.
@@ -252,7 +252,7 @@ Clicking each of these buttons will pass the user on to the next step specified 
 
 .. image:: /user/img/system/workflows/19_osf_ui.png
 
-As an illustration, we have unselected the **Display Steps Ordered** check box in the edit mode for the same workflow. Here is what the steps look like in this case:
+As an illustration, we have unselected the **Display Steps Ordered** checkbox in the edit mode for the same workflow. Here is what the steps look like in this case:
 
 .. image:: /user/img/system/workflows/20_osf_ui_5.png
 

@@ -18,10 +18,9 @@ In the Product Images section of Commerce configuration settings, you can contro
    .. image:: /user/img/system/user_management/org_configuration/products/ImagePreviewOrganization.png
       :class: with-border
 
-
 .. note:: As of application version 5.0.2, the **Enable Original File Names** option is hidden. To configure the original image file names, navigate to :ref:`General Setup > Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>` in the system configuration.
 
-4. Clear the **Use System** check box to change the system-wide setting.
+4. Clear the **Use System** checkbox to change the system-wide setting.
 
 
 5. In the **Image Gallery Options** section, enable or disable the required options.

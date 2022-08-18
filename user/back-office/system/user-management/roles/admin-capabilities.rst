@@ -179,7 +179,7 @@ Application
 
   .. image:: /user/img/system/config_system/user_configuration_showsql.png
 
-  .. hint:: This capability must be also enabled in the report settings. For this, in the main menu, navigate to **System Configuration > Display Settings > Report settings**, and select the **Display SQL in Reports And Segments** check box.
+  .. hint:: This capability must be also enabled in the report settings. For this, in the main menu, navigate to **System Configuration > Display Settings > Report settings**, and select the **Display SQL in Reports And Segments** checkbox.
 
 Calendar
 ^^^^^^^^

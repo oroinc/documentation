@@ -21,7 +21,7 @@ You can update the product watermark settings, enable image preview and configur
 
 .. note:: As of application version 5.0.2, the **Enable Original File Names** option is hidden. To configure the original image file names, navigate to :ref:`General Setup > Upload Settings <upload-settings--website>` in the system configuration.
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
 5. In the **Product Image Watermark** section, the following options are available:
 

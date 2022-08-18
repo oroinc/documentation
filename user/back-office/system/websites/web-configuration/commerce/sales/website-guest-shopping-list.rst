@@ -22,7 +22,7 @@ To configure them per website:
   .. image:: /user/img/system/websites/web_configuration/shopping_list_website_config.png
      :alt: Shopping list configuration per website
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 5. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
 6. In the **Guest Shopping List** section, define the following options:
 

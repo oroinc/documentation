@@ -25,7 +25,7 @@ To configure storefront fuzzy search settings:
 .. image:: /user/img/system/websites/web_configuration/website-fuzzy-search.png
    :alt: Storefront fuzzy search configuration options on the website level
 
-4. You can enable or disable the following options (clear the **Use Organization** check box to customize the settings):
+4. You can enable or disable the following options (clear the **Use Organization** checkbox to customize the settings):
 
    * **Enable Fuzzy Search** --- enables fuzzy search in the appropriate area. This option is disabled by default.
    * **Error Tolerance** --- sets how many errors in each word the application ignores. Possible values are:

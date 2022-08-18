@@ -19,7 +19,7 @@ To enable orders history per organization:
 .. image:: /user/img/system/user_management/org_configuration/sales/org_open_orders.png
    :alt: Order History setting options per organization
 
-4. In the **Open Orders** section, clear the **Use System** check box and update the system-wide option.
+4. In the **Open Orders** section, clear the **Use System** checkbox and update the system-wide option.
 5. For the **Show Open Orders** field, select whether to display or hide the open orders within the Order History menu in the storefront.
 6. For **Show Open Orders on a Separate Page** field:
 

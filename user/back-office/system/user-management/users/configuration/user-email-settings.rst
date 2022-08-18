@@ -32,7 +32,7 @@ Settings
 
 On the **Email Configuration** page, define options applied to all the emails in the application.
 
-.. note:: To change any of the system-wide options, clear the **Use Organization** check box first.
+.. note:: To change any of the system-wide options, clear the **Use Organization** checkbox first.
 
 1. **Signature** --- Add a signature to the emails.
 
@@ -57,11 +57,11 @@ On the **Email Configuration** page, define options applied to all the emails in
 
    * **Account Type: Other**:
 
-     * *Enable IMAP* --- Select the check box to enable retrieving email messages
+     * *Enable IMAP* --- Select the checkbox to enable retrieving email messages
      * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
      * *IMAP Port* --- Provide the IMAP Port, e.g. 993
      * *Encryption* --- Select the encryption type, SSL or TLS.
-     * *Enable SMTP* --- Select the check box to enable sending messages
+     * *Enable SMTP* --- Select the checkbox to enable sending messages
      * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
      * *SMTP Port* --- Provide the SMTP port, e.g. 587
      * *Encryption* --- Select the encryption type, SSL or TLS.

@@ -53,7 +53,7 @@ To enable field-level access:
    .. important:: Keep in mind that in |oro_application| field-level permissions can be applied only to the account, opportunity and custom entities. 
 
 3. On the page of the selected entity, click **Edit** on the top right.
-4. In the **Other** section, enable the **Field Level ACL** check box.
+4. In the **Other** section, enable the **Field Level ACL** checkbox.
 
    .. image:: /user/img/system/user_management/access_field_level_acl_enable.png
 
@@ -80,9 +80,9 @@ To enable field-level access:
    .. important:: Keep in mind that in |oro_application| field-level permissions can be applied only to the account, opportunity and custom entities. 
 
 3. On the page of the selected entity, click **Edit** on the top right.
-4. In the **Other** section, enable the **Show Restricted** check box. 
+4. In the **Other** section, enable the **Show Restricted** checkbox.
 
-   .. important:: To be able to apply permissions entity fields when creating or editing a role, make sure that the **Field Level ACL** check box is enabled for the selected entity.
+   .. important:: To be able to apply permissions entity fields when creating or editing a role, make sure that the **Field Level ACL** checkbox is enabled for the selected entity.
 
    .. image:: /user/img/system/user_management/access_field_level_acl_showrestricted.png
 

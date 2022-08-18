@@ -7,14 +7,14 @@ Manage Sales Territories in the Back-Office
 
 .. note:: Sales Territories are only available in the Enterprise edition.
 
-A :term:`sales territory <Sales Territories>` is the customer group or geographical area for which an individual sales person or a sales team holds responsibility. Territories can be based on various factors such as geography, industry, product line, the expected revenue, etc. Territory Management is a system by which customer accounts are grouped based on a defined set of criteria. This makes for easy sharing of customer accounts among sales teams in your company. In the simplest scenario, you can assign tasks based on geographical territory relation, where a sales rep A can be responsible for country A, a sales rep B can be responsible for country B.
+A :term:`sales territory <Sales Territories>` is the customer group or geographical area for which an individual salesperson or a sales team holds responsibility. Territories can be based on various factors such as geography, industry, product line, expected revenue, etc. Territory Management is a system by which customer accounts are grouped based on a defined set of criteria. This makes for easy sharing of customer accounts among sales teams in your company. In the simplest scenario, you can assign tasks based on geographical territory relation, where a sales rep A can be responsible for country A, and a sales rep B can be responsible for country B.
 
-Currently, the sales territory management is available for leads, opportunities and all types of customers.
+The sales territory management is available for leads, opportunities, and customers.
 
-With sales territories you can:
+With sales territories, you can:
 
 - Define territories for leads, opportunities, and any customer type
-- Organize and balance the workload of sales people
+- Organize and balance the workload of salespeople
 - Automatically assign records to different territories
 - Prioritize specific territories making sure they do not overlap
 - Filter data by territory via the dashboard widget
@@ -22,12 +22,12 @@ With sales territories you can:
 Enable Territories
 ------------------
 
-Sales Territories are disabled by default. Prior to starting work with territory management, ensure that it is enabled in your Oro application instance. For configuration instructions, see the :ref:`relevant guide <sys--configuration--crm--sales-pipeline--sales-territories>`.
+Sales Territories are disabled by default. Before starting work with territory management, ensure that it is enabled in your Oro application instance. For configuration instructions, see the :ref:`relevant guide <sys--configuration--crm--sales-pipeline--sales-territories>`.
 
 Create a Territory
 ------------------
 
-Territories menu becomes available under **Sales** in the main menu when the sales territories feature is enabled in system configuration.
+Territories menu becomes available under **Sales** in the main menu when the sales territories feature is enabled in the system configuration.
 
 To create a new territory:
 
@@ -44,17 +44,17 @@ To create a new territory:
 
       "**Name**","The name specified for your territory."
       "**Owner**","Limits the list of users who can manage the territory."
-      "**Priority**","Territory with the highest priority (e.g. 1) will be assigned to the record in case of overlapping definitions. The lower is the number, the higher is the priority. For more details on priorities, see the next section of the guide."
+      "**Priority**","A territory with the highest priority (e.g., 1) will be assigned to the record in case of overlapping definitions. The lower the number, the higher the priority. For more details on priorities, see the next section of the guide."
       "**Description**","If necessary, enter a short but meaningful description related to the territory you are creating."
 
 Set a Priority
 ^^^^^^^^^^^^^^
 
-Setting a priority determines what records the territory should display, or which territory should display what data.
+Setting a priority determines what records a territory should display or which territory should display what data.
 
-.. note:: Please avoid using negative priority numbers as this may cause the confusion.
+.. note:: Always use positive numbers.
 
-As an illustration, two overlapping territories have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of leads' addresses have France specified for the country and Paris for the city within the same address record.
+As an illustration, two overlapping territories have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of the leads' addresses have France specified for the country and Paris for the city within the same address record.
 
 .. image:: /user/img/sales/sales_territories/leads_france_paris.png
    :alt: The list of all territories highlighting the two that overlap Paris
@@ -73,43 +73,43 @@ So, in this scenario, Leads France will have **no** assigned leads as Leads Pari
 Use Filters
 ^^^^^^^^^^^
 
-A number of :ref:`filters <user-guide-filters-management>` will be displayed on the Create Territory page. Each filter will correspond to the entity for which the territory has been enabled. Setting conditions to the filter of a specific entity will add a territory to its records. For instance, if you enable territories for leads, a Lead filter will become available in the Create Territory form. When you set conditions to the Lead filter, a territory will be added to the records of leads.
+A number of :ref:`filters <user-guide-filters-management>` is displayed on the Create Territory page. Each filter corresponds to the entity for which the territory has been enabled. Setting conditions to the filter of a specific entity adds a territory to its records. For instance, if you enable territories for leads, a Lead filter will become available in the Create Territory form. When you set conditions to the Lead filter, a territory will be added to the records of leads.
 
 .. image:: /user/img/sales/sales_territories/filters.png
    :alt: Display the filter possibilities in the storefront
 
-.. note::  
+.. note::
   When conditions are not set for a specific entity, a territory is not added to its records.
 
-As an example, we have set a condition to the Opportunity filter, looking only for those that have the budget amount higher than $1000.
+For example, we have set a condition to the Opportunity filter, looking only for those with a budget higher than $1000.
 
 .. image:: /user/img/sales/sales_territories/set_filter.png
-   :alt: Display the filter condition configured for the opportunity entity that would search only the records that have the budget amount higher than $1000.
+   :alt: Display the filter condition configured for the opportunity entity that would search only the records with a budget amount higher than $1000.
 
 Once the territory is saved, it will need to be activated to be able to function (see the section below).
 
 Activate a Territory
 --------------------
 
-Once the details have been saved, a new territory with its matching records should become available in the **Matching Records** section. Matching records are records filtered according to the conditions determined for a specific territory. By default, the territory is inactive. To activate the territory and assign it to the opportunity records, click :guilabel:`Activate`.
+Once the details have been saved, a new territory with matching records should become available in the **Matching Records** section. Matching records are records filtered according to the conditions determined for a specific territory. By default, the territory is inactive. To activate the territory and assign it to the opportunity records, click **Activate**.
 
 .. note:: Note that if the territory has not been activated, the Territory column of the Matching records grid will not contain any values yet.
 
-Note that you can edit the territory only when it is inactive. If you wish to edit the territory that is active, click :guilabel:`Deactivate` and then :guilabel:`Edit`.
+Note that you can edit the territory only when it is inactive. If you wish to edit an active territory, click **Deactivate** and then **Edit**.
 
-Once the territory has been activated, **Assigned Records** section will become available on the territory view page. Assigned records are records that have been assigned a specific territory as the result of the filter conditions determined when creating a territory. 
+Once the territory has been activated, **Assigned Records** section will become available on the territory view page. Assigned records are records that have been assigned a specific territory as the result of the filter conditions determined when creating a territory.
 
 .. image:: /user/img/sales/sales_territories/opp_activate.png
    :alt: A sample of the Opportunity territory with the records that have the budget amount higher than $1000
 
-When entities have been assigned a territory, each of them will be displayed on the view page of the territory, to which they have been assigned.
+When entities have been assigned a territory, each is displayed on the view page of the territory they have been assigned.
 
-.. note:: When a territory is activated, it is automatically assigned to all existing records that fall under its definition, and to all new records when they are created.
+.. note:: When a territory is activated, it is automatically assigned to all existing records that fall under its definition and to all new records when they are created.
 
 Manage Territories from the Territories Grid
 --------------------------------------------
 
-As soon as the territory has been created and records assigned, you can view and manage it within the Territories grid.
+Once the territory has been created and records assigned, you can view and manage it within the Territories grid.
 
 You can perform the following actions for an **inactive** territory from the grid:
 
@@ -129,7 +129,7 @@ You can perform the following actions for an **active** territory from the grid:
 .. image:: /user/img/sales/sales_territories/active_territory_manage.png
    :alt: The actions you can perform to active territories from the grid
 
-It is possible to filter records by territories. To enable the territory filter, click :guilabel:`Grid Settings` and, in the **Filter** tab, select **Territory** from the list.
+It is possible to filter records by territories. To enable the territory filter, click  **Grid Settings** and, in the **Filter** tab, select **Territory** from the list.
 
 .. image:: /user/img/sales/sales_territories/grid_filters.png
    :alt: The steps you need to take to add a territory filter to the filter tab
@@ -137,13 +137,13 @@ It is possible to filter records by territories. To enable the territory filter,
 .. image:: /user/img/sales/sales_territories/grid_filters_vip.png
    :alt: Filter the opportunity records by the Opportunity territory
 
-View Territories 
+View Territories
 ----------------
 
 From the Grid of an Assigned Record
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To be able to view territory assignment from the grid of the related entity, make sure that **Territory** is enabled in the **Grid Settings**. 
+To view territory assignment from the grid of the related entity, make sure that **Territory** is enabled in the **Grid Settings**.
 
 .. image:: /user/img/sales/sales_territories/grid_settings_territory.png
    :alt: Highlight the territory filter in the grid settings
@@ -172,7 +172,7 @@ Sales Territories can also be used in the following widgets:
 - Opportunities Statistics
 - Opportunities by Status
 
-Within these widgets, you can view records filtered within one or several specific territories.
+You can view records filtered within one or several specific territories within these widgets.
 
 .. image:: /user/img/sales/sales_territories/forecasts.png
    :alt: Enabling territories for the Forecast widget

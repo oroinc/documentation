@@ -14,7 +14,7 @@ To enable it, make sure you:
 Enable RTL
 ----------
 
-The localization entity now has a check box **Enable RTL Mode**, which need to be selected.
+The localization entity now has a checkbox **Enable RTL Mode**, which need to be selected.
 
 .. image:: /img/frontend/rtl-support/localization-configuration.png
    :alt: Enabled RTL support for a Localization

@@ -27,7 +27,7 @@ A matrix form is applied to a configurable product with up to two attributes.
 
 To configure a matrix form view for a particular case:
 
-1. Clear the **Use System** check box next to the corresponding view page and select the necessary option from the list.
+1. Clear the **Use System** checkbox next to the corresponding view page and select the necessary option from the list.
 
 2. The options available are:
 
@@ -52,7 +52,7 @@ To configure a matrix form view for a particular case:
 
     .. image:: /user/img/system/config_commerce/product/matrix_form_view_in_shipping_lists.png
 
-6. **Allow To Add Empty Products** --- If enabled, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use System** check box next to the option and then the check box of the option itself.
+6. **Allow To Add Empty Products** --- If enabled, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use System** checkbox next to the option and then the checkbox of the option itself.
 
 
 Variations
@@ -64,7 +64,7 @@ In the cases where you have plenty of products, you may need to clear the produc
 
 To configure the required settings for simple products variations:
 
-1. Clear the **Use System** check box next to the **Display Simple Variations** field.
+1. Clear the **Use System** checkbox next to the **Display Simple Variations** field.
 
 2. Select the necessary option from the list:
 

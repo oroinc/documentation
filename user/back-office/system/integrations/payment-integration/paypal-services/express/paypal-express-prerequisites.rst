@@ -125,7 +125,7 @@ Once you have successfully configured the PayPal Express integration as describe
 
 #. Use the credentials to set up the production integration between PayPal Express and OroCommerce.
 
-.. note:: Remember NOT to select the **Sandbox Mode** check box as you are configuring the production integration.
+.. note:: Remember NOT to select the **Sandbox Mode** checkbox as you are configuring the production integration.
 
 
 .. include:: /include/include-links-user.rst

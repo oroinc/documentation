@@ -17,7 +17,7 @@ To configure **MIME types** per organization:
    .. image:: /user/img/system/user_management/org_configuration/general/upload_settings_2.png
       :alt: Selecting mime types for a file or an image in the upload settings menu
 
-4. Clear the **Use Default** check box next to the option.
+4. Clear the **Use Default** checkbox next to the option.
 
 5. Select a set of mime types that will be supported for the file and image attachments in the system.
 

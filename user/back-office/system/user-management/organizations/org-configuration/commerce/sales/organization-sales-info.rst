@@ -23,7 +23,7 @@ To enable or disable the display of sales representative information in the stor
 
    * **Pre-configured** - in the *Contact Details* text field, specify custom contact details you wish to be displayed.
 
-   Such organization settings override settings set on the :ref:`system level <sys--conf--commerce--sales--contacts-global>` unless **Use System** check box is enabled.
+   Such organization settings override settings set on the :ref:`system level <sys--conf--commerce--sales--contacts-global>` unless **Use System** checkbox is enabled.
 
 5. Options selected as **Available User Options** determine what options the user will see in the **Customer Visible Contact Info** list in their user configuration settings (in **My User > My Configuration > Commerce > Sales > Contacts > Customer Visible Contact Info**).
 
@@ -33,7 +33,7 @@ To enable or disable the display of sales representative information in the stor
    * **Use User Profile Data** -- allow setting the option of user profile details to be displayed.
    * **Enter Manually** -- allow to set the option of manually entered text in the *Enter Contact Info* field.
 
-   Such organization settings override settings set at the :ref:`system level <sys--conf--commerce--sales--contacts-global>` unless **Use System** check box is enabled.
+   Such organization settings override settings set at the :ref:`system level <sys--conf--commerce--sales--contacts-global>` unless **Use System** checkbox is enabled.
 
 6. In the **Guest Contact** text box, you may enter contact information that will be shown to non-authenticated visitors. Click **Use System** to use the text configured at the system level.
 7. Click **Save Settings**.

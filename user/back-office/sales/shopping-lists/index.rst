@@ -46,9 +46,9 @@ To view a specific shopping list in the back-office:
    * |IcEdit| Modify details of the product added as a line item to the shopping list.
    * |IcDelete| remove the line item from the shopping list.
 
-   .. note:: To handle significant volume of data, use page switcher, increase *View Per Page* or use filters to narrow down the list to the information you need.
+   .. note:: To handle a significant volume of data, use page switcher, increase *View Per Page*, or use filters to narrow down the list to the information you need.
 
-5. The **Totals** section displays the aggregated amounts, like subtotal, tax, discount, and the total amount that is due for payment of the items in the shopping list. OroCommerce automatically recalculates these amounts when new items are edited in, added to or removed from the shopping list.
+5. The **Totals** section displays the aggregated amounts, like subtotal, tax, discount, and the total amount due for payment of the items in the shopping list. OroCommerce automatically recalculates these amounts when new items are edited in, added to, or removed from the shopping list.
 
    .. image:: /user/img/sales/shopping_lists/ShoppingListsViewPageTotals.png
       :alt: The shopping list amount details specified in the Totals section
@@ -58,7 +58,7 @@ To view a specific shopping list in the back-office:
    .. image:: /user/img/sales/shopping_lists/sl_sales_orders.png
       :alt: The shopping list orders details specified in the Sales Orders section
 
-7. The **Marketing Activity** section shows any activity of this kind associated with the shopping list.
+7. The **Marketing Activity** section shows any marketing activity associated with the shopping list.
 
 
 Manage Shopping Lists
@@ -71,7 +71,7 @@ From the shopping list view page, you can perform the following actions for the 
 
 **1. Duplicate List**
 
-    Click the **Duplicate List** button. The copy of the shopping list is created. You can now modify it or convert it into order. The name of the copied list will include the time and date of duplicating the list.
+    Click the **Duplicate List** button to create a copy of the shopping list. You can now modify it or convert it into order. The name of the copied list will include the time and date of duplicating the list.
 
    .. image:: /user/img/sales/shopping_lists/SLDplicateName.png
       :class: with-border
@@ -83,7 +83,7 @@ From the shopping list view page, you can perform the following actions for the 
 
     * *Owner*: Choose a user as the product owner.
     * *Product*: Choose the product from the list, or click |IcBars| and select the item from the list of all products.
-    * *Quantity*: Enter the quantity of product units to be purchased.
+    * *Quantity*: Enter the number of product units to be purchased.
     * *Unit*: Select whether the product quantity is specified for items, sets, or kilograms. More units may be available depending on your system customization.
     * *Notes*: Enter additional information for the product, if necessary.
 
@@ -95,9 +95,6 @@ From the shopping list view page, you can perform the following actions for the 
 
     See :ref:`Create an order from the shopping list <user-guide--sales--orders--create--from-shopping-lists>` for detailed guidance.
 
-
-
-  
 .. include:: /include/include-images.rst
    :start-after: begin
 

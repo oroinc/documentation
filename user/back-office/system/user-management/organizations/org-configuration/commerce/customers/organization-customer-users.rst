@@ -56,7 +56,7 @@ To change the default customer user configuration settings for an organization:
 
    To configure cookie consent banner on the organization level, take the following steps:
 
-   * **Show Banner** --- Select the check box to display the cookie consent banner to the website's visitor.
+   * **Show Banner** --- Select the checkbox to display the cookie consent banner to the website's visitor.
 
    * **Cookies Banner Text** --- Provide the message of the cookie banner. To edit the text for a specific language, click the language button and edit the text for the needed language.
 

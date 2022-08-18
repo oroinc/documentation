@@ -22,22 +22,22 @@ Based on the level where configuration has taken place, settings can fall back t
 
 Be aware that:
 
-* When **Use System** check box is enabled on the configuration page of the required option, system settings override website or organization. Clearing this check box next to the required option and changing its value means that you are configuring this particular option specifically for the selected organization.
+* When **Use System** checkbox is enabled on the configuration page of the required option, system settings override website or organization. Clearing this checkbox next to the required option and changing its value means that you are configuring this particular option specifically for the selected organization.
 
   .. image:: /user/img/system/configuration/system_checkbox.png
      :alt: Organization configuration settings
 
-* When **Use Organization** check box is enabled on the configuration page of the required option, organization settings override system. Clearing this check box next to the required option and changing the default value means that your are introducing changes for a specific user.
+* When **Use Organization** checkbox is enabled on the configuration page of the required option, organization settings override system. Clearing this checkbox next to the required option and changing the default value means that your are introducing changes for a specific user.
 
   .. image:: /user/img/system/configuration/org_checkbox.png
      :alt: User configuration settings
 
-* When **Use Website** check box is enabled on the configuration page of the required option, website settings prevail. Clearing this check box next to the required option and changing the default value means that you are introducing changes for a specific customer group.
+* When **Use Website** checkbox is enabled on the configuration page of the required option, website settings prevail. Clearing this checkbox next to the required option and changing the default value means that you are introducing changes for a specific customer group.
 
   .. image:: /user/img/system/configuration/website-check-box.png
      :alt: Customer group configuration settings
 
-* When **Use Customer Group** check box is enabled on the configuration page of the required option, customer group settings prevail. Clearing this check box box next to the required option and changing the default value means you are introducing changes at customer level.
+* When **Use Customer Group** checkbox is enabled on the configuration page of the required option, customer group settings prevail. Clearing this checkbox box next to the required option and changing the default value means you are introducing changes at customer level.
 
   .. image:: /user/img/system/configuration/customer-group-checkbox.png
      :alt: Customer configuration settings

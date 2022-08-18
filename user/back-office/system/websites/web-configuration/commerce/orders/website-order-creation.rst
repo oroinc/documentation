@@ -12,7 +12,7 @@ To configure the order creation options per website:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. In the **Order Creation** section, clear the **Use Organization** check box if it is selected and select the required status for **New Internal Order Status**.
+3. In the **Order Creation** section, clear the **Use Organization** checkbox if it is selected and select the required status for **New Internal Order Status**.
 
 #. Click **Save Settings**.
 

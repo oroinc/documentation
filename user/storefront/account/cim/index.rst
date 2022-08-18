@@ -32,7 +32,7 @@ To create a new credit card payment profile:
    * **Expiration Date** --- Provide the expiration date for the card you are attaching to the account.
    * **CVV** --- Provide the verification number displayed at the back of the card.
    * **Address** --- Provide billing address details (organization, phone and fax fields are optional).
-   * **Set as Default** --- Select the check box to mark the current credit card as default. The default credit card is displayed on the top of the payment method dropdown list during checkout.
+   * **Set as Default** --- Select the checkbox to mark the current credit card as default. The default credit card is displayed on the top of the payment method dropdown list during checkout.
 
 3. Click **Save**.
 
@@ -55,7 +55,7 @@ To add a new card during the checkout:
    .. image:: /user/img/storefront/cim/new_card_at_checkout_form.png
       :alt: New credit card form at checkout
 
-3. To save the details of the card for the future use, select the **Save Payment Details** check box.
+3. To save the details of the card for the future use, select the **Save Payment Details** checkbox.
 
    .. image:: /user/img/storefront/cim/card_form_fillied_in_checkout.png
       :alt: Credit card form filled in during checkout
@@ -73,7 +73,7 @@ Manage a Credit Card Profile
   .. image:: /user/img/storefront/cim/update_payment_profile.png
      :alt: Edit payment profile info
 
-  To update card information, select the **Update Credit Card Information** check box and provide new information in the credit card form.
+  To update card information, select the **Update Credit Card Information** checkbox and provide new information in the credit card form.
 
   .. image:: /user/img/storefront/cim/update_credit_card_info.png
      :alt: Update credit card payment details
@@ -99,7 +99,7 @@ To create a new back account profile:
    * **Name** --- Provide the name for the bank account.
    * **Bank Account** --- Provide bank account details, such as the routing number, the account number, the bank name.
    * **Address** --- Provide address details (organization, phone and fax fields are optional).
-   * **Set as Default** --- Select the check box to mark the current bank account as default. The default bank account is displayed on the top of the payment method dropdown list during checkout.
+   * **Set as Default** --- Select the checkbox to mark the current bank account as default. The default bank account is displayed on the top of the payment method dropdown list during checkout.
 
 3. Click **Save**.
 
@@ -119,7 +119,7 @@ To add a new bank account during checkout:
 
 2. Provide the details of the new bank account in the form.
 
-3. To save the details of the bank account for the future use, select the **Save Payment Details** check box.
+3. To save the details of the bank account for the future use, select the **Save Payment Details** checkbox.
 
     .. image:: /user/img/storefront/cim/new_acc_at_checkout_form.png
        :alt: New bank account form at checkout
@@ -136,7 +136,7 @@ Manage a Bank Account
   .. image:: /user/img/storefront/cim/update_bank_acc_profile.png
      :alt: Edit bank account payment profile info
 
-  To update card information, select the **Update Bank Account Information** check box and provide new information in the bank account form.
+  To update card information, select the **Update Bank Account Information** checkbox and provide new information in the bank account form.
 
   .. image:: /user/img/storefront/cim/update_bank_acc_info.png
      :alt: Update bank account payment details

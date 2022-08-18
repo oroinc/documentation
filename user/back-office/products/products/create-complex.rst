@@ -63,7 +63,7 @@ To add a new configurable product and make it available in the master catalog (f
       "**Owner**","Limits the list of users who can manage the product."
       "**SKU**","Enter the product SKU number. The field is mandatory."
       "**Name**","Enter the name of the product. The field is mandatory."
-      "**Configurable Attributes**", "Define the configurable attributes that distinguish product variants by selecting the check boxes next to them.
+      "**Configurable Attributes**", "Define the configurable attributes that distinguish product variants by selecting the checkboxes next to them.
 
       .. note:: A configurable product should contain at least one configurable attribute of select or boolean type.
 
@@ -105,7 +105,7 @@ To add a new configurable product and make it available in the master catalog (f
    .. image:: /user/img/products/products/SimpleProductDesign.png
       :alt: The list of available page templates in the dropdown of the Page Template field
 
-13. In the **Product Variants** section, select the configurable product variants by ticking the **Is Variant** check box next to the product.
+13. In the **Product Variants** section, select the configurable product variants by ticking the **Is Variant** checkbox next to the product.
 
    .. image:: /user/img/products/products/SampleProductVariantsForConfigProduct.png
       :alt: Selecting the configurable product variants
@@ -114,7 +114,7 @@ To add a new configurable product and make it available in the master catalog (f
 
 14. Review translation rules for a product name, URL slug, long description, and short description.
 
-   To manually enter a translation, click |IcTranslations|, clear the **Use <parent translation>** check box next to the required language, and provide your translation version.
+   To manually enter a translation, click |IcTranslations|, clear the **Use <parent translation>** checkbox next to the required language, and provide your translation version.
 
    .. image:: /user/img/products/products/ProductsCreateTranslation.png
       :alt: Provide the relevant translation

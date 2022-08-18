@@ -22,7 +22,7 @@ To configure the Single Sign-On with Microsoft 365 in your OroCRM or OroCommerce
 
 3. Define the following fields for **Microsoft 365 Single Sign-on**:
 
-   * **Enable** --- Select the check box to enable the Single Sign-On setting.
+   * **Enable** --- Select the checkbox to enable the Single Sign-On setting.
    * **Domains** --- A comma-separated list of allowed domains. It limits the list of application domains for which single sign-on can be used. Leave the field empty to set *No* for such limitation.
    * **Redirect URI** --- **READ-ONLY** field, the value is auto-generated and should be added in Azure Application Redirect URIs configuration.
 

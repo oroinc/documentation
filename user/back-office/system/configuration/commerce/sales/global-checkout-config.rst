@@ -32,8 +32,8 @@ To configure checkout options globally:
 
    To disable the options:
 
-   a) Clear the **Use Default** check box.
-   b) Clear the **Allow Registration** and **Allow Checkout without Email Confirmation** check boxes.
+   a) Clear the **Use Default** checkbox.
+   b) Clear the **Allow Registration** and **Allow Checkout without Email Confirmation** checkboxes.
 
 #. In the **Guest Checkout** section, set whether guest checkout should be enabled or disabled.
 
@@ -60,7 +60,7 @@ To configure checkout options globally:
 
    By default, guest checkout is disabled.
 
-   To enable it, clear *Use Default* and select the *Enable Guest Checkout* check box.
+   To enable it, clear *Use Default* and select the *Enable Guest Checkout* checkbox.
 
    When the guest checkout is enabled, click **Save Settings** to display the additional **Guest Checkout Owner Settings** section.
 

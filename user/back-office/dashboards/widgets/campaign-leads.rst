@@ -22,7 +22,7 @@ Campaign Leads Widget Configuration
 
 You can adjust the following settings for the campaign leads widget:
 
-* **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** check box and provide a new name.
+* **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** checkbox and provide a new name.
 * **Date Range** --- the time for which the widget details are displayed.
 
 .. image:: /user/img/dashboards/campaign_leads_config.png

@@ -7,12 +7,12 @@ Send a Guest Quote
 
 .. hint:: This section is part of the :ref:`RFQ and Quote Management <concept-guide-rfq-quotes>` topic that provides a general understanding of the RFQ and quote concepts in OroCommerce.
 
-Non-authenticated customer users can request a quote for the products they are interested in. When the sales representative processes the request and creates a quote in the back-office, buyers can access the quote via a unique direct link through the email.
+Non-authenticated customer users can request a quote for the products in which they are interested. When the sales representative processes the request and creates a quote in the back-office, buyers can access the quote via a unique direct link through the email.
 
 Once a guest customer user submits an RFQ in the storefront, this RFQ appears in the back-office.
 
 To create a guest quote from the received RFQ:
- 
+
 1. Navigate to **Sales > Requests for Quotes** in the main menu.
 2. Click once on the required RFQ to open its page.
 3. Click **Create Quote** on the top right.
@@ -27,11 +27,11 @@ To create a guest quote from the received RFQ:
       :alt: Request field in the quote information section
 
 6. Click **Send to Customer** on the top right.
-  
-   In the displayed form, the template to be applied is by default set to *quote_email_link_guest* and the link to the guest quote is provided in the text body.
+
+   In the displayed form, the template to be applied is by default set to *quote_email_link_guest*, and the link to the guest quote is provided in the text body.
 
    .. image:: /user/img/sales/quotes/guest_quote_email.png
-      :alt: Guest quote email 
+      :alt: Guest quote email
 
 7. Click **Send** to email the quote to the buyer.
 8. Once the email is sent, the link is displayed in the Quote Information section in the Unique Guest Link field.
@@ -49,11 +49,11 @@ To create a guest quote from the received RFQ:
    .. note:: If the quote expires, you will no longer be able to submit the quote via the link.
 
             .. image:: /user/img/sales/quotes/quote_expired.png
-               :alt: Quote link expired 
+               :alt: Quote link expired
 
 10. When the customer submits the quote and completes the checkout process, you will receive their order details in the back-office.
 
-.. note:: The existing quote workflows, their steps and transitions in the back-office work the same way for guest quotes.
+.. note:: The existing quote workflows, steps, and transitions in the back-office work the same way for guest quotes.
 
 **Related Topics**
 

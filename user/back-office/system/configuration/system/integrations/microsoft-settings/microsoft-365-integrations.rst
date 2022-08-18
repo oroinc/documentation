@@ -18,7 +18,7 @@ To configure email, calendar events, and task synchronization with Microsoft 365
 
 2. Make sure that the :ref:`Azure Active Directory Application Settings <user-guide-integrations-azure-oauth>` are filled.
 
-3. In the **Microsoft 365 Integrations** section, select the related check boxes to enable email, calendar, and tasks synchronization with Microsoft 365.
+3. In the **Microsoft 365 Integrations** section, select the related checkboxes to enable email, calendar, and tasks synchronization with Microsoft 365.
 
 4. In the **Synchronization Settings** section, determine how often the data synchronization should be performed. The interval is set in minutes.
 

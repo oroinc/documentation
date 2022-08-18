@@ -15,11 +15,11 @@ To enable or disable the display of the form in the storefront per website:
 
    .. image:: /user/img/system/websites/web_configuration/ContactUsWeb.png
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
-5. In **Contact Requests**, select the *Allow Contact Requests* check box to enable the Contact Us form.
+5. In **Contact Requests**, select the *Allow Contact Requests* checkbox to enable the Contact Us form.
 
-   To disable it in the storefront, clear the check box. You can still use the :ref:`Contact Us widget <user-guide--landing-pages-create>` in your web catalog pages.
+   To disable it in the storefront, clear the checkbox. You can still use the :ref:`Contact Us widget <user-guide--landing-pages-create>` in your web catalog pages.
 
 6. Click **Save Settings**.
 

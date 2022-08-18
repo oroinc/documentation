@@ -103,7 +103,7 @@ To create a shipping rule:
 
 #. In the **General Information** section, provide the following information:
 
-   - Select the **Enabled** check box to activate the shipping rule. You may keep it unselected while you are drafting and testing the conditions.
+   - Select the **Enabled** checkbox to activate the shipping rule. You may keep it unselected while you are drafting and testing the conditions.
 
    - **Name**—Specify the shipping rule name.
 
@@ -111,7 +111,7 @@ To create a shipping rule:
 
    - **Currency**—Select the shipping cost currency from the list. Please note that the list of available shipping methods will depend upon which currency is selected here.
 
-   - Select the **Stop Further Rule Processing** check box to prevent applying other shipping rules with lower priority. See :ref:`Stop Further Rule Processing Mode <doc--shipping-rules--overview--stop-further-processing>`.
+   - Select the **Stop Further Rule Processing** checkbox to prevent applying other shipping rules with lower priority. See :ref:`Stop Further Rule Processing Mode <doc--shipping-rules--overview--stop-further-processing>`.
 
    .. image:: /user/img/system/shipping_rules/shipping_rule_general.png
 
@@ -227,7 +227,7 @@ For the UPS shipping method, provide the following information:
 * In the **Additional Options** section, provide the following information for each option that you want to use:
 
   - **Surcharge**—To customize the shipping cost, enter a value to charge on top of the UPS standard rates (like the extra cost for this shipping method). It is applied together with the global shipping method surcharge.
-  - Select the **Active** check box in the **Status** column to enable the option.
+  - Select the **Active** checkbox in the **Status** column to enable the option.
 
 For example:
 
@@ -244,7 +244,7 @@ For the FedEx shipping method, provide the following information:
 * In the **Additional Options** section, provide the following information for each option that you want to use:
 
   - **Surcharge** — To customize the shipping cost, enter a value to charge on top of the FedEx standard rates (like the extra cost for this shipping method). It is applied together with the global shipping method surcharge.
-  - Select the **Active** check box in the **Status** column to enable the option.
+  - Select the **Active** checkbox in the **Status** column to enable the option.
 
 For example:
 
@@ -256,7 +256,7 @@ DPD
 In the **Additional Options** section, provide the following information for each option that you want to use:
 
 - **Handle Fee**—An additional cost for order processing (packing and mailing, etc) charged by your company. It is applied as a surcharge to the flat fee specified in the used DPD integration.
-- Select the **Active** check box in the **Status** column to enable the option.
+- Select the **Active** checkbox in the **Status** column to enable the option.
 
 .. image:: /user/img/system/shipping_rules/shipping_rule_method_dpd.png
 
@@ -308,7 +308,7 @@ Organize a Shipping Rule List
 
 To define which columns to show in the table, click |IcSettings| above the table on the far right:
 
-* To choose the columns to be displayed in the table, select the check box next to the required column under **Show**. Clear the check box to make the column disappear from the table.
+* To choose the columns to be displayed in the table, select the checkbox next to the required column under **Show**. Clear the checkbox to make the column disappear from the table.
 
 * To change the order of the columns, click |IcReorder| next to the name of the column you wish to move, hold the mouse button and drag the column to the required position.
 

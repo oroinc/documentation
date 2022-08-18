@@ -13,7 +13,7 @@ You can control the way product inventory is displayed for your buyers (in the s
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
 5. In the **Store Frontend** section, select the following statuses:
 

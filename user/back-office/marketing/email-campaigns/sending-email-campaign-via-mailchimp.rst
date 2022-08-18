@@ -172,7 +172,7 @@ Once you selected the campaign type, provide the following information for the c
  
      **Pre-Built Segments** section of the same page allows you to choose contacts based on subscriber engagement (New Subscribers, Active Subscribers, Inactive Subscribers), or customer behavior (Repeat Customers)  and demographics (available after connection to your store).
 
-   * **Personalize the** *To* **field > Merge Tag** --- Select this check box to personalize the emails in your campaign. This adds relevance to your emails and helps avoid spam filters. You will be asked to include **Merge Tags** to your email. Merge tags are personalization options. They include the names of the subscribers you want to send your emails to. In the provided field, specify merge tags for your recipients, i.e. \*\|FNAME\|\* or \*\|FNAME\|\* \*\|LNAME\|\*\ .
+   * **Personalize the** *To* **field > Merge Tag** --- Select this checkbox to personalize the emails in your campaign. This adds relevance to your emails and helps avoid spam filters. You will be asked to include **Merge Tags** to your email. Merge tags are personalization options. They include the names of the subscribers you want to send your emails to. In the provided field, specify merge tags for your recipients, i.e. \*\|FNAME\|\* or \*\|FNAME\|\* \*\|LNAME\|\*\ .
 
 Click **Save** to proceed to the next step.
 

@@ -21,7 +21,7 @@ To update the related products settings per organization:
 
    To customize any of these options:
 
-     a) Clear the **Use Default** check box next to the option.
+     a) Clear the **Use Default** checkbox next to the option.
      b) Set or clear the option, or enter the quantity.
 
 4. In the **Related Products** section, the following options are available:
@@ -40,7 +40,7 @@ To update the related products settings per organization:
 
      To customize any of these options:
 
-     a) Clear the **Use Default** check box next to the option.
+     a) Clear the **Use Default** checkbox next to the option.
      b) Set or clear the option, or enter the quantity.
 
 5. In the **Up-Sell Products** section, the following options are available:
@@ -57,7 +57,7 @@ To update the related products settings per organization:
 
    To customize any of these options:
 
-   a) Clear the **Use System** check box next to the option.
+   a) Clear the **Use System** checkbox next to the option.
    b) Set or clear the option, or enter the quantity.
 
 6. Click **Save**.

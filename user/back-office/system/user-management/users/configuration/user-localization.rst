@@ -18,7 +18,7 @@ To define the custom localization options for the particular user:
    .. image:: /user/img/system/user_management/localization_configuration_user.png
       :alt: Localization options available on the user level
 
-Here, you can configure the following options by clearing the **Use Organization** check box and providing your own data:
+Here, you can configure the following options by clearing the **Use Organization** checkbox and providing your own data:
 
 4. In the **Location Options** section, provide:
 

@@ -103,7 +103,7 @@ The shopping list view page contains the following information and options:
 7. Total
 8. A list of all shopping lists available
 
-Here you can add a note to the current shopping list, as well as each of the items within this list, by enabling the **Add a Note to This Shopping List** check box.
+Here you can add a note to the current shopping list, as well as each of the items within this list, by enabling the **Add a Note to This Shopping List** checkbox.
 
 .. image:: /user/img/storefront/shopping_lists/AddNoteShoppingList.png
 

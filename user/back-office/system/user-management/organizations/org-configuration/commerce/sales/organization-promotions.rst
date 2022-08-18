@@ -19,7 +19,7 @@ To configure the setting per organization:
    .. image:: /user/img/system/user_management/org_configuration/sales/promotions-org.png
       :alt: Configure promotions per organization
 
-4. Clear the **Use System** check box to customize the setting.
+4. Clear the **Use System** checkbox to customize the setting.
 
 5. **Case-Insensitive Coupon Codes** --- option determines whether to consider or ignore the letter case of the applied coupon codes. By default, the option is disabled, meaning that the system carefully checks the entered coupon code against the letter case, so *SpringSale*, *SPRINGSALE*, and *springsale*, are considered to be the three different codes. When the option is enabled, the mentioned codes will be considered equal.
 

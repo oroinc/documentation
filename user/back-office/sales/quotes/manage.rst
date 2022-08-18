@@ -23,7 +23,7 @@ Edit a Quote from the Quote Grid
    This option is available only when:
 
    * :ref:`Quote Management Flow <simple-quote-management>` / :ref:`Backoffice Quote Flow with Approvals <quote-management-with-approvals>` are inactive.
-   * One of the workflows is active and the current workflow step allows editing the quote.
+   * One of the workflows is active, and the current workflow step allows editing the quote.
 
 To edit a quote:
 
@@ -31,7 +31,7 @@ To edit a quote:
 
 #. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| **Edit** icon to start editing its details.
 
-   .. important:: Note that the icon that starts a workflow looks alike to the **Edit** icon. Please check the hint that appears when you hoover over the icon to make sure that you select the desired action.
+   .. important:: The icon that starts a workflow looks like the **Edit** icon. Please check the hint that appears when you hover over the icon to make sure that you select the desired action.
 
 #. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
 
@@ -80,18 +80,18 @@ Delete a Quote from the Quote Grid
    This option is available only when:
 
    * :ref:`Quote Management Flow <simple-quote-management>` / :ref:`Backoffice Quote Flow with Approvals <quote-management-with-approvals>` are inactive
-   * One of the workflows is active and the current workflow step allows quote deletion.
+   * One of the workflows is active, and the current workflow step allows quote deletion.
 
 1. In the main menu, navigate to **Sales > Quotes**. The quote list opens.
-2. Choose the quote that you need to delete, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcDelete| **Delete** icon.
+2. Choose the quote you need to delete, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcDelete| **Delete** icon.
 #. In the confirmation dialog, click **Yes, Delete**.
 
 .. finish
 
 .. _quotes--actions--delete--fromviewpage:
 
-Delete a Quot from the Quote View Page
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Delete a Quote from the Quote View Page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. important::
    You can delete a quote in this way only when the :ref:`Quote Management Flow <simple-quote-management>` / :ref:`Backoffice Quote Flow with Approvals <quote-management-with-approvals>` are inactive. Otherwise, use the Delete transition defined within the active workflow:
@@ -114,10 +114,10 @@ Delete Multiple Quotes
 ^^^^^^^^^^^^^^^^^^^^^^
 
 1. In the main menu, navigate to **Sales > Quotes**. The quote list opens.
-2. Select the check boxes in front of the quotes that you need to delete, click the |IcMore| **More Options** menu at the end of list header, and then click |IcDelete| **Delete**.
+2. Select the checkboxes in front of the quotes that you need to delete, click the |IcMore| **More Options** menu at the end of the list header, and then click |IcDelete| **Delete**.
 
    .. tip::
-      To select bulk of items quickly, click |IcSortDesc| next to the check box at the beginning of the table header and then select one of the following options:
+      To select a bulk of items quickly, click |IcSortDesc| next to the checkbox at the beginning of the table header and then select one of the following options:
 
       * *All* --- Select all quotes.
       * *All Visible* --- Select only quotes that are visible on the page now.

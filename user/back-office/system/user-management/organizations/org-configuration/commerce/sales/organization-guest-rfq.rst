@@ -21,7 +21,7 @@ To configure the request for quote settings per organization:
 .. image:: /user/img/system/user_management/org_configuration/sales/org_rfq_config.png
    :alt: Rfq configuration options per organization
 
-4. Clear the **Use System** check box to override the global configuration options.
+4. Clear the **Use System** checkbox to override the global configuration options.
 
 5. In the **General** section, customize the following options:
 
@@ -40,7 +40,7 @@ To configure the request for quote settings per organization:
    * Select **Always** to notify the related entity each time an RFQ is submitted.
    * Select **If user has no sales reps assigned** to notify the related entity only in case they do not have any assigned sales representatives.
 
-7. In the **Guest RFQ** section, set whether guests are allowed to submit a request for quote. By default, guest request for quote submission is disabled. To enable it, clear *Use System* and select the *Enable Guest RFQ* check box. When the guest RFQ is enabled, click **Save Settings** to display the additional **Guest RFQ Owner Settings** section.
+7. In the **Guest RFQ** section, set whether guests are allowed to submit a request for quote. By default, guest request for quote submission is disabled. To enable it, clear *Use System* and select the *Enable Guest RFQ* checkbox. When the guest RFQ is enabled, click **Save Settings** to display the additional **Guest RFQ Owner Settings** section.
 
   .. hint:: Make sure you enable :ref:`Guest Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list-per-organization>` in the back-office to let guest customers create RFQs from the shopping lists in their storefront.
 

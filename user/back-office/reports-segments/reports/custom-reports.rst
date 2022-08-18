@@ -217,9 +217,9 @@ You can also decide whether to show or not the periods that do not contain any d
   :header: "Field","Description"
   :widths: 10, 30
 
-      "Enable Grouping by Date","Select this check box to enable additional date filters."
+      "Enable Grouping by Date","Select this checkbox to enable additional date filters."
       "Date Field","Select the date field which will be used for grouping. Only the date fields related to the selected entity are available."
-      "Allow to Skip Empty Time Periods","Select/deselect this check box to show/hide the periods that do not contain any data."
+      "Allow to Skip Empty Time Periods","Select/deselect this checkbox to show/hide the periods that do not contain any data."
 
 Filters
 ~~~~~~~

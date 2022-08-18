@@ -43,7 +43,7 @@ Create a Test Account
 
 The OroCommerce Apruve configuration offers you a possibility to select a test mode to test your store first and ensure that the integration is working properly. Test mode activation should be performed on both sides.
 
-On the OroCommerce side, you need to enable the test mode when setting up the integration by selecting the **Test Mode** check box (see :ref:`Apruve Payment Method Integration <user-guide--payment--configuration--payment-method-integration--apruve>`).
+On the OroCommerce side, you need to enable the test mode when setting up the integration by selecting the **Test Mode** checkbox (see :ref:`Apruve Payment Method Integration <user-guide--payment--configuration--payment-method-integration--apruve>`).
 
 On the Apruve side, you need to follow the |https://test.apruve.com| link and create a test account. This test account is identical to the |https://app.apruve.com| regular one but exists only as a test environment that can be used for exploring the Apruve software and its functionality without any risks of the money being charged.
 

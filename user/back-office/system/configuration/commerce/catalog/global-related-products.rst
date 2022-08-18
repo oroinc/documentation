@@ -65,7 +65,7 @@ To update the related and up-sell products settings globally:
 
      To customize any of these options:
 
-     a) Clear the **Use Default** check box next to the option.
+     a) Clear the **Use Default** checkbox next to the option.
      b) Set or clear the option, or enter the quantity.
 
 
@@ -96,7 +96,7 @@ To update the related and up-sell products settings globally:
 
    To customize any of these options:
 
-   a) Clear the **Use Default** check box next to the option.
+   a) Clear the **Use Default** checkbox next to the option.
    b) Set or clear the option, or enter the quantity.
 
 5. Click **Save**.

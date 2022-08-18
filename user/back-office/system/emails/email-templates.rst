@@ -630,7 +630,7 @@ To create email templates for different localizations, even the inactive ones, m
 .. image:: /user/img/system/emails/templates/email_template_localization.png
    :alt: Navigating from one language tab to another
 
-To enable the email template fallback to the parent localization, select the **Use <localization> (Parent Localization)** check box. If the localization does not have a parent, you can enable fallback to the default template value.
+To enable the email template fallback to the parent localization, select the **Use <localization> (Parent Localization)** checkbox. If the localization does not have a parent, you can enable fallback to the default template value.
 
 .. .. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
    :align: middle

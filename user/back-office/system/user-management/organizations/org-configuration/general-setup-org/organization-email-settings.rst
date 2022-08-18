@@ -21,9 +21,9 @@ To configure email settings per organization:
 
 3. On the **Email Configuration** page, define options applied to all the emails in the application.
 
-   .. note:: To change any of the system-wide options, clear the **Use System** check box first.
+   .. note:: To change any of the system-wide options, clear the **Use System** checkbox first.
 
-   * **Email settings** --- User emails are enabled by default. To disable the option, clear the **Use System** check box and clear the **Enable User Emails** option.
+   * **Email settings** --- User emails are enabled by default. To disable the option, clear the **Use System** checkbox and clear the **Enable User Emails** option.
    * **Signature** --- Add a signature to the emails. 
 
      * *Signature Content* --- Specify the text and formatting of your signature. By default, the email signature body is empty.
@@ -66,22 +66,22 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
 
 6. In the **Synchronization Settings**, configure your IMAP/SMTP connection:
 
-   * *Enable IMAP* --- Select the check box to enable retrieving email messages
+   * *Enable IMAP* --- Select the checkbox to enable retrieving email messages
    * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
    * *IMAP Port* --- Provide the IMAP Port, e.g. 993
    * *Encryption* --- Select the encryption type, SSL or TLS
-   * *Enable SMPT* --- Select the check box to enable sending messages
+   * *Enable SMPT* --- Select the checkbox to enable sending messages
    * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
    * *SMTP Port* --- Provide the SMTP port, e.g. 587
    * *Encryption* --- Select the encryption type, SSL or TLS
    * *User* --- Provide your email address
    * *Password* --- Provide your password
 
-7. Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the check boxes next to the folders you wish to synchronize. 
+7. Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the checkboxes next to the folders you wish to synchronize.
 
    .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail, are provided on the |Google support page|.
 
-   .. hint:: To enable connection, select the check box next to |Allow Access for Less Secure Apps Box|.
+   .. hint:: To enable connection, select the checkbox next to |Allow Access for Less Secure Apps Box|.
 
 8. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox. 
 
