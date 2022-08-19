@@ -70,41 +70,10 @@ Description:
 
 Show a simple Error Flash Message
 
-modalHandler
-^^^^^^^^^^^^
-
-Options:
-
-* `xhr`: {Object|Error}
-
-Description:
-
-Show an error only in modal
-
 Default Options
 ---------------
 
 The following options can be redefined when calling the `error` module
-
-headerServerError
-^^^^^^^^^^^^^^^^^
-
-* **Type:** {String}
-* **Default:** 'Server error'
-
-Description:
-
-Used as the modal title in modalHandler method if the error comes from the server
-
-headerUserError
-^^^^^^^^^^^^^^^
-
-* **Type:** {String}
-* **Default:** 'User input error'
-
-Description:
-
-Used as the modal title in modalHandler method if it is a user error
 
 message
 ^^^^^^^
