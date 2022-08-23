@@ -81,6 +81,10 @@ To configure localization settings globally:
      .. note::
         Refer to the :ref:`Localizations <localization--localizations>` section for more details.
 
+
+   * **Automatically Switch Localization Based on URL** --- The option enables the automatic switch of the customer user's initial localization to the target localization of the URL page they visit (available since OroCommerce v5.0.6). This way, if a German-localized storefront user visits a French-localized URL, the user's localization will automatically be changed to the French localization matching the URL.
+
+
 6. Click **Save Settings**.
 
 .. finish_1

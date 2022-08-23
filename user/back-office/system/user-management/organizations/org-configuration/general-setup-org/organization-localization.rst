@@ -64,6 +64,8 @@ To define the custom localization options for a particular organization:
      .. image:: /user/img/system/localization/language_tabs_email_template.png
         :alt: Language tabs in email templates
 
+   * **Automatically Switch Localization Based on URL** --- The option enables the automatic switch of the customer user's initial localization to the target localization of the URL page they visit (available since OroCommerce v5.0.6). This way, if a German-localized storefront user visits a French-localized URL, the user's localization will automatically be changed to the French localization matching the URL.
+
 7. Click **Save Settings**.
 
 

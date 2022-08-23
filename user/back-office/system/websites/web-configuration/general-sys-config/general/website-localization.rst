@@ -24,7 +24,9 @@ To define the custom localization options for the particular website:
 
 6. Select the default localization for the storefront of the website.
 
-7. Click **Save** to the save the settings.
+7. Enable the **Automatically Switch Localization Based on URL** option to automatically switch the customer user's initial localization to the target localization of the URL page they visit (available since OroCommerce v5.0.6). This way, if a German-localized storefront user visits a French-localized URL, the user's localization will automatically be changed to the French localization matching the URL.
+
+8. Click **Save** to the save the settings.
 
 .. include:: /include/include-images.rst
    :start-after: begin
