@@ -483,10 +483,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle" target="_blank">OroDatagridBundle</a>
 
-.. |OroFormUpdateHandler| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Model/UpdateHandler.php" target="_blank">OroFormUpdateHandler</a>
-
 .. |Actions| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/config/oro/actions.yml" target="_blank">Actions</a>

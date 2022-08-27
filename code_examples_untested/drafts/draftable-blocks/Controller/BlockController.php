@@ -4,7 +4,7 @@ namespace ACME\Bundle\CMSBundle\Controller;
 
 use ACME\Bundle\CMSBundle\Entity\Block;
 use ACME\Bundle\CMSBundle\Form\Type\BlockType;
-use Oro\Bundle\FormBundle\Model\UpdateHandler;
+use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
 use Oro\Bundle\SecurityBundle\Annotation\Acl;
 use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
@@ -22,10 +22,8 @@ class BlockController extends AbstractController
      * @Route("/", name="acme_cms_block_index")
      * @Template
      * @AclAncestor("acme_cms_block_view")
-     *
-     * @return array
      */
-    public function indexAction()
+    public function indexAction(): array
     {
         return ['entity_class' => Block::class];
     }
@@ -39,10 +37,8 @@ class BlockController extends AbstractController
      *      class="ACMECMSBundle:Block",
      *      permission="VIEW"
      * )
-     * @param Block $block
-     * @return array
      */
-    public function viewAction(Block $block)
+    public function viewAction(Block $block): array
     {
         return ['entity' => $block];
     }
@@ -56,10 +52,8 @@ class BlockController extends AbstractController
      *      class="ACMECMSBundle:Block",
      *      permission="CREATE"
      * )
-     *
-     * @return array|RedirectResponse
      */
-    public function createAction()
+    public function createAction(): array|RedirectResponse
     {
         $block = new Block();
 
@@ -75,48 +69,31 @@ class BlockController extends AbstractController
      *      class="ACMECMSBundle:Block",
      *      permission="EDIT"
      * )
-     * @param Block $block
-     * @return array|RedirectResponse
      */
-    public function updateAction(Block $block)
+    public function updateAction(Block $block): array|RedirectResponse
     {
         return $this->update($block);
     }
 
-    /**
-     * @param Block $block
-     * @return array|RedirectResponse
-     */
-    protected function update(Block $block)
+    protected function update(Block $block): array|RedirectResponse
     {
-        return $this->get(UpdateHandler::class)->handleUpdate(
+
+        return $this->get(UpdateHandlerFacade::class)->handleUpdate(
             $block,
             $this->createForm(BlockType::class, $block),
-            function (Block $block) {
-                return [
-                    'route' => 'acme_cms_block_update',
-                    'parameters' => ['id' => $block->getId()]
-                ];
-            },
-            function (Block $block) {
-                return [
-                    'route' => 'acme_cms_block_view',
-                    'parameters' => ['id' => $block->getId()]
-                ];
-            },
             $this->get(TranslatorInterface::class)->trans('acme.cms.controller.saved.message')
         );
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public static function getSubscribedServices(): array
     {
         return array_merge(
             parent::getSubscribedServices(),
             [
-                UpdateHandler::class,
+                UpdateHandlerFacade::class,
                 TranslatorInterface::class,
             ]
         );
