@@ -97,13 +97,13 @@ Sometimes, during the consuming and processing messages, it is necessary to inte
   :header: "Output", "Description"
   :widths: 20,20
 
-  "``app.WARNING: Consuming interrupted, reason: Interrupt execution.``","Consumer was interrupted with stop signal: ``SIGTERM``, ``SIGQUIT`` or ``SIGINT``"
-  "``app.WARNING: Consuming interrupted, reason: The limit time has passed.``","Passed time limit configured with command option ``--time-limit``"
-  "``app.WARNING: Consuming interrupted, reason: The message limit reached.``","Passed message limit configured with command option ``--message-limit``"
-  "``app.WARNING: Consuming interrupted, reason: The memory limit reached.``","Passed time limit configured with command option ``--memory-limit``"
-  "``app.WARNING: Consuming interrupted, reason: The cache was cleared.``","Cache was cleared (it also will be triggered after saving *System Configuration*), more details |here|"
-  "``app.WARNING: Consuming interrupted, reason: The cache was invalidated.``","Schema was updated, and cache was cleared"
-  "``app.WARNING: Consuming interrupted, reason: The Maintenance mode has been deactivated.``","Maintenance mode was turned off"
+  "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: Interrupt execution.``","Consumer was interrupted with stop signal: ``SIGTERM``, ``SIGQUIT`` or ``SIGINT``"
+  "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: The limit time has passed.``","Passed time limit configured with command option ``--time-limit``"
+  "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: The message limit reached.``","Passed message limit configured with command option ``--message-limit``"
+  "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: The memory limit reached.``","Passed time limit configured with command option ``--memory-limit``"
+  "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: The cache was cleared.``","Cache was cleared (it also will be triggered after saving *System Configuration*), more details |here|"
+  "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: The cache was invalidated.``","Schema was updated, and cache was cleared"
+  "``app.WARNING: Consuming interrupted. Queue: ""oro.default"", reason: The Maintenance mode has been deactivated.``","Maintenance mode was turned off"
 
 The normal interruption occurs only after processing a message. If an event was fired during a message processing, a consumer completes the message processing and interrupts after the processing is done.
 
