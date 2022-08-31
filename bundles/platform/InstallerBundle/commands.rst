@@ -141,6 +141,8 @@ Runs OroScript files in the application scope:
 
    php bin/console oro:platform:run-script
 
+.. _installer-bundle-commands-oro-platform-update:
+
 oro:platform:update
 -------------------
 

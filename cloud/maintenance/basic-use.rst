@@ -348,6 +348,8 @@ Once you have created the sanitized backup, you can determine its location with 
 
     scp oro_cloud_username@oro_cloud_hostname:/path/to/the/backup/file target_username@target_hostname:/path/to/the/target/backup/file
 
+.. hint:: Follow the :ref:`Restore a Database Dump <setup-from-db-dump_restore_local_cloud>` to see how to restore database dump locally.
+
 See :ref:`Sanitizing Configuration <orocloud-maintenance-advanced-use-sanitization-conf>` for details on how to configure the sanitizing scope and strategy.
 
 The List of Existing Sanitized Backups
