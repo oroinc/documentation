@@ -43,24 +43,21 @@
 {% block content_data %}
     {% set id = 'blog-post-edit' %}
 
-    {% set dataBlocks = [{
-        'title': 'acme.wysiwyg.blogpost.content.label'|trans,
-        'subblocks': [
-            {
-                'title': '',
-                'data': [
-                    form_widget(form.content),
-                    form_widget(form.content_style),
-                    form_widget(form.content_properties),
-                ]
-            }
-        ]
-    }] %}
+    {% set dataBlocks = oro_form_additional_data(form, 'acme.wysiwyg.blogpost.teaser.label'|trans) %}
 
-    {% set dataBlocks = dataBlocks|merge(oro_form_additional_data(form, 'acme.wysiwyg.blogpost.teaser.label'|trans)) %}
+    {% set dataBlocks = dataBlocks|merge([
+        {
+            'title': 'acme.wysiwyg.blogpost.content.label'|trans,
+            'subblocks': [{'title': '', 'data': [form_widget(form.content)]}]
+        },
+        {
+            'title': 'acme.wysiwyg.blogpost.extra_content.label'|trans,
+            'subblocks': [{'title': '', 'data': [form_widget(form.extraContent)]}]
+        }
+    ]) %}
 
     {% set data = {
-        'formErrors': form_errors(form)? form_errors(form) : null,
+        'formErrors': form_errors(form) ? form_errors(form) : null,
         'dataBlocks': dataBlocks,
     } %}
     {{ parent() }}

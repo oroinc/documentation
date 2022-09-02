@@ -28,34 +28,25 @@
     {% import '@OroUI/macros.html.twig' as UI %}
     {% import '@OroEntityConfig/macros.html.twig' as entityConfig %}
 
-    {% set blogPostContent %}
-        <div class="alert alert-info alert--compact" role="alert">
-            <span class="fa-info alert-icon" aria-hidden="true"></span>
-            {{ 'acme.wysiwyg.blogpost.message.information'|trans }}
-        </div>
-        <div class="cms-content">
-            {{ entity.content|render_content|oro_html_sanitize|raw }}
-        </div>
-    {% endset %}
-
-    {%- set generalInformation -%}
-        <div class="row-fluid form-horizontal">
-            <div class="responsive-block">
-                {{ UI.renderSwitchableHtmlProperty('acme.wysiwyg.blogpost.content.label'|trans, blogPostContent) }}
-            </div>
-            <div class="responsive-block">
-                {{ entityConfig.renderDynamicFields(entity) }}
-            </div>
-        </div>
-    {%- endset -%}
-
     {% set dataBlocks = [
         {
-            'title': 'General Information'|trans,
+            'title': 'acme.wysiwyg.blogpost.sections.general'|trans,
             'subblocks': [
-                {'data' : [generalInformation]}
+                {'data' : [UI.renderCollapsibleWysiwygContentPreview(entity.content, entity, 'content', 'acme.wysiwyg.blogpost.message.information')]}
             ]
-        }
+        },
+        {
+            'title': 'acme.wysiwyg.blogpost.sections.extra_content'|trans,
+            'subblocks': [
+                {'data' : [UI.renderCollapsibleWysiwygContentPreview(entity.extraContent, entity, 'extraContent', 'acme.wysiwyg.blogpost.message.information')]}
+            ]
+        },
+        {
+            'title': 'acme.wysiwyg.blogpost.sections.additional'|trans,
+            'subblocks': [
+                {'data' : [entityConfig.renderDynamicFields(entity)]}
+            ]
+        },
     ] %}
 
     {% set id = 'blog-post-view' %}

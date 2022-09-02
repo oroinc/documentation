@@ -638,10 +638,11 @@ Please use the following conventions to design your `sanitize.update_*` strategy
 Elasticsearch Synonyms Configuration
 ------------------------------------
 
+.. note:: Please avoid simultaneous use of :ref:`search synonyms <bundle-docs-commerce-website-elasticsearch-bundle-synonyms>` and the method of adding synonyms described in this article, as this will lead to unpredictable behavior.
+
 To configure synonyms in Elasticsearch service, use the following field in orocloud.yaml:
 
 .. code-block:: none
-
 
     orocloud_options:
       elasticsearch:
@@ -656,7 +657,6 @@ To configure synonyms in Elasticsearch service, use the following field in orocl
 You can use separate synonym lists for each index, or use '*' as index name in order to apply the same synonyms list to all indices.
 
 .. code-block:: none
-
 
     orocloud_options:
       elasticsearch:
@@ -678,7 +678,6 @@ To retrieve a list of the environments to which you can sync the sanitized data 
 
 .. code-block:: none
 
-
     orocloud-cli dump:environments
 
 .. note:: If you have no environments in the output, ask the support team to update your environment settings.
@@ -687,11 +686,9 @@ This means that you can push data from the current environment to the linked env
 
 .. code-block:: none
 
-
     orocloud-cli dump:create --help
 
 .. code-block:: none
-
 
     Description:
       Create application environment data dump and copy it to another environment.
@@ -720,7 +717,6 @@ This means that you can push data from the current environment to the linked env
 
     * **option "--indices"** - Comma-separated Elastic indices list to be included in the dump. If not set - all indices will be included.
 
-
 .. note:: RabbitMQ messages sync is not supported. If media component is selected, sync may take a long time.
 
 When data push is done, you may start with import in the target environment.
@@ -729,11 +725,9 @@ To list all available data dumps that can be restored to the current environment
 
 .. code-block:: none
 
-
     orocloud-cli dump:list --help
 
 .. code-block:: none
-
 
     Description:
       Lists all available data dumps that can be restored to the current environment.
@@ -757,11 +751,9 @@ To restore it as is, run the following command in the target environment:
 
 .. code-block:: none
 
-
     orocloud-cli dump:load --help
 
 .. code-block:: none
-
 
     Description:
       Load application data from the dump to the current environment.
@@ -805,7 +797,6 @@ To restore it as is, run the following command in the target environment:
 .. note:: If during dump:load not all components(db,ess,rpm) are selected, the application may be not working. By default only db will be restored.
 
 .. note:: During dump:load, the database is always sanitized.
-
 
 .. include:: /include/include-links-cloud.rst
    :start-after: begin
