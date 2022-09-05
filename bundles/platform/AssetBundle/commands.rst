@@ -137,7 +137,7 @@ The ``--relative-symlink`` option tells the asset installer to create symlinks w
 
 .. code-block:: none
 
-    php bin/console oro:install --relative-symlink
+    php bin/console oro:assets:install --relative-symlink
 
 You may run individual steps if necessary as follows:
 

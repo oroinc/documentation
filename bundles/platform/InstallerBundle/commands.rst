@@ -67,24 +67,6 @@ The ``--language`` and ``--formatting`` code options should be used to specify t
 
     php bin/console oro:install --language=en --formatting-code=en_US
 
-The ``--skip-assets`` option can be used to skip install and build of the frontend assets:
-
-.. code-block:: none
-
-    php bin/console oro:install --skip-assets
-
-The ``--symlink`` option tells the asset installer to create symlinks instead of copying the assets (it may be useful during development):
-
-.. code-block:: none
-
-    php bin/console oro:install --symlink
-
-The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths:
-
-.. code-block:: none
-
-    php bin/console oro:install --relative-symlink
-
 The --skip-download-translations and --skip-translations options can be used to skip the step of downloading translations (already downloaded translations  will be applied if present), or skip applying the translations completely:
 
 .. code-block:: none
@@ -163,24 +145,6 @@ The ``--force`` option is just a safety switch. The command will exit after chec
 .. code-block:: none
 
     php bin/console oro:platform:update --force
-
-The ``--skip-assets`` option can be used to skip install and build of the frontend assets:
-
-.. code-block:: none
-
-    php bin/console oro:platform:update --force --skip-assets
-
-The ``--symlink`` option tells the asset installer to create symlinks instead of copying the assets (it may be useful during development):
-
-.. code-block:: none
-
-    php bin/console oro:platform:update --force --symlink
-
-The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths:
-
-.. code-block:: none
-
-    php bin/console oro:platform:update --force --relative-symlink
 
 The ``--skip-download-translations`` and ``--skip-translations`` options can be used to skip the step of downloading translations (already downloaded translations will be applied if present), or skip applying the translations completely:
 
