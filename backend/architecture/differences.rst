@@ -142,6 +142,10 @@ install them on their own in the UI.
     You can also :ref:`add your own extension <dev--extend--how-to-publish-extension-on-the-marketplace>`
     to the Oro Extensions Store.
 
+Related Articles
+----------------
+
+* :ref:`Bundle-less Structure <dev-backend-architecture-bundle-less-structure>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

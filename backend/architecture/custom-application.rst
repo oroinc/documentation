@@ -82,6 +82,10 @@ Oro applications are scalable.
     get more information.
 
 
+Related Articles
+----------------
+
+* :ref:`Bundle-less Structure <dev-backend-architecture-bundle-less-structure>`
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
-

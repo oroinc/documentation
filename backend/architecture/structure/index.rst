@@ -145,6 +145,10 @@ It is recommended to include additional files, like:
 
 .. finish_oro_php_app_structure
 
+Related Articles
+^^^^^^^^^^^^^^^^
+
+* :ref:`Bundle-less Structure <dev-backend-architecture-bundle-less-structure>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

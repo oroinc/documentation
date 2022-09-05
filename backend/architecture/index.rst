@@ -40,6 +40,7 @@ Architecture Overview
    customization/index
    differences
    custom-application
+   Bundle-less Structure <bundle-less-structure>
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

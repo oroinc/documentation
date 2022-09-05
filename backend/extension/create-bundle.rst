@@ -151,7 +151,7 @@ References
 
 * |Symfony Best Practices for Structuring Bundles|
 * |Symfony Framework Events|
-
+* :ref:`Bundle-less Structure <dev-backend-architecture-bundle-less-structure>`
 
 
 .. include:: /include/include-links-dev.rst
