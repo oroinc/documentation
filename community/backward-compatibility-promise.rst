@@ -25,6 +25,7 @@ This BC promise applies to all PHP code except for:
 - PHPUnit tests (located in ``*/Tests/Unit/``)
 - Behat tests (located in ``*/Tests/Behat/``)
 - Functional tests (located in ``*/Tests/Functional/``)
+- Other code related to tests (located in ``*/Test/``)
 - Bundles with the testing framework extensions and demo data definitions ``*/Bundle/TestFrameworkBundle/``, ``*/Bundle/TestFrameworkCRMBundle/``, ``*/Bundle/DemoDataBundle/``, ``*/Bundle/DemoDataCommerceCRMBundle/``
 - An enterprise package with additional OroCRM demo data ``oro/crm-pro-demo-data-bundle``
 
