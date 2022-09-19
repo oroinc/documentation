@@ -74,7 +74,7 @@ To enable quote approval for users with the particular role (e.g., for all sales
 
 3. Click **Quotes** to get to the permissions and capabilities related to quotes management.
 
-4. In the capabilities list, select the **Review and approve quotes** check box.
+4. In the capabilities list, select the **Review and approve quotes** checkbox.
 
 5. Click **Save And Close** on the top right.
 
@@ -100,7 +100,7 @@ If the option is disabled, do the following to enable it:
 
 3. Click **Configuration** on the top right.
 
-4. Select the **Price Override Requires Approval** check box.
+4. Select the **Price Override Requires Approval** checkbox.
 
 5. Click **Save And Close** on the top right.
 

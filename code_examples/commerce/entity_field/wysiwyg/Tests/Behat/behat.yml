@@ -13,6 +13,10 @@ oro_behat_extension:
             type: 'xpath'
             locator: '//*[@name="acme_wysiwyg_blog_post[teaser]"]'
             class: Oro\Bundle\CMSBundle\Tests\Behat\Element\WysiwygField
+          Extra Content:
+            type: 'xpath'
+            locator: '//*[@name="acme_wysiwyg_blog_post[extraContent]"]'
+            class: Oro\Bundle\CMSBundle\Tests\Behat\Element\WysiwygField
   suites:
     ACMEWysiwygBundle:
       contexts:

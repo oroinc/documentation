@@ -17,7 +17,7 @@ Configure Checkout Settings per Website
 
    .. image:: /user/img/system/websites/web_configuration/CheckoutWeb.png
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
 5. In the **Customer Users Registration** section, you can:
 

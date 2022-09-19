@@ -20,17 +20,20 @@ the integration section of the admin interface. A channel is a class that has to
 ``Oro\Bundle\IntegrationBundle\Provider\ChannelInterface``:
 
 .. code-block:: php
+    :caption: src/Acme/Bundle/DemoBundle/Integration/TaskChannel.php
 
-
-    namespace AppBundle\Integration;
+    namespace Acme\Bundle\DemoBundle\Integration;
 
     use Oro\Bundle\IntegrationBundle\Provider\ChannelInterface;
 
     class TaskChannel implements ChannelInterface
     {
-        public function getLabel()
+        /**
+         * @inheritDoc
+         */
+        public function getLabel(): string
         {
-            return 'app.task_channel.label';
+            return 'acme.task_channel.label';
         }
     }
 
@@ -42,22 +45,31 @@ if you also like to display an icon. You then also need to implement the ``getIc
 returns a path to the icon relative to the project's web directory:
 
 .. code-block:: php
-   :caption: src/AppBundle/Integration/TaskChannel.php
+    :caption: src/Acme/Bundle/DemoBundle/Integration/TaskChannel.php
 
-        namespace AppBundle\Integration;
+    namespace Acme\Bundle\DemoBundle\Integration;
 
-        // ...
-        use Oro\Bundle\IntegrationBundle\Provider\IconAwareIntegrationInterface;
+    use Oro\Bundle\IntegrationBundle\Provider\ChannelInterface;
+    use Oro\Bundle\IntegrationBundle\Provider\IconAwareIntegrationInterface;
 
-        class TaskChannel implements ChannelInterface, IconAwareIntegrationInterface
+    class TaskChannel implements ChannelInterface, IconAwareIntegrationInterface
+    {
+        /**
+         * @inheritDoc
+         */
+        public function getLabel(): string
         {
-            // ...
-
-            public function getIcon()
-            {
-                return 'icons/task.png';
-            }
+            return 'acme.task_channel.label';
         }
+
+        /**
+         * @inheritDoc
+         */
+        public function getIcon(): string
+        {
+            return 'icons/task.png';
+        }
+    }
 
 After having created the class you need to make it available in the user interface by registering
 it as a service and tag it with the ``oro_integration.channel`` tag and configure the ``type``
@@ -65,13 +77,13 @@ attribute which must be a unique value that is used internally by the OroIntegra
 to the channel:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/integration.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/integration.yml
 
     services:
-        app.integration.task:
-            class: AppBundle\Integration\TaskChannel
+        acme_demo.integration.task:
+            class: Acme\Bundle\DemoBundle\Integration\TaskChannel
             tags:
-                - { name: oro_integration.channel, type: app_channel }
+                - { name: oro_integration.channel, type: acme_task_channel }
 
 .. _cookbook-integration-transport:
 
@@ -105,13 +117,13 @@ to give the transport an identifier using the ``type`` attribute that must be un
 channel:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/integration.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/integration.yml
 
-        services:
-            app.integration.transport.rest:
-                 class: AppBundle\Integration\RestTransport
-                tags:
-                    - { name: oro_integration.transport, channel_type: app_channel, type: rest }
+    services:
+        acme_demo.integration.transport.rest:
+            class: Acme\Bundle\DemoBundle\Integration\RestTransport
+            tags:
+                - { name: oro_integration.transport, channel_type: acme_task_channel, type: rest }
 
 .. _cookbook-integration-connector:
 
@@ -136,30 +148,42 @@ Your final step is to implement the ``Oro\Bundle\IntegrationBundle\Provider\Conn
     A string that identifies the connector. This must be unique throughout the channel.
 
 .. code-block:: php
-   :caption: src/AppBundle/Integration/TaskConnector.php
+   :caption: src/Acme/Bundle/DemoBundle/Integration/TaskConnector.php
 
-    namespace AppBundle\Integration;
+    namespace Acme\Bundle\DemoBundle\Integration;
 
     use Oro\Bundle\IntegrationBundle\Provider\ConnectorInterface;
 
     class TaskConnector implements ConnectorInterface
     {
-        public function getLabel()
+        /**
+         * @inheritDoc
+         */
+        public function getLabel(): string
         {
-            return 'app.connector.task.label';
+            return 'acme.connector.task.label';
         }
 
-        public function getImportExportEntityFQCN()
+        /**
+         * @inheritDoc
+         */
+        public function getImportEntityFQCN(): string
         {
-            return 'AppBundle\Entity\Task';
+            return 'Acme\Bundle\DemoBundle\Entity\Task';
         }
 
+        /**
+         * @inheritDoc
+         */
         public function getImportJobName()
         {
-            return 'app_task_import';
+            return 'acme_task_import';
         }
 
-        public function getType()
+        /**
+         * @inheritDoc
+         */
+        public function getType(): string
         {
             return 'task';
         }
@@ -171,13 +195,14 @@ connector is associated with. The ``type`` attribute must get the same value tha
 the connector's ``getType()`` method:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/integration.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/integration.yml
 
-            services:
-                class: AppBundle\Integration\TaskConnector
-                tags:
-                    - { name: oro_integration.connector, channel_type: app_channel, type: task }
+    services:
+        acme_demo.connector.task
+            class: Acme\Bundle\DemoBundle\Integration\TaskConnector
+            tags:
+                - { name: oro_integration.connector, channel_type: acme_task_channel, type: task }
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

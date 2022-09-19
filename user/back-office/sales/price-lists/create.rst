@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--pricing--create-pricelist:
 
 Create a Price List
@@ -30,11 +28,11 @@ To create a new price list:
 
    a) **Name** --- Type in the price list name.
 
-   b) **Currencies** --- Select one or more currencies that you would like to enable for the prices in the price list.
+   b) **Currencies** --- Select one or more currencies you would like to enable for the prices in the price list.
 
-   .. note:: The price in every currency should be provided explicitly. There is no automatic conversion.
+   .. note:: You should provide the price in every currency explicitly. There is no automatic conversion.
 
-   c) **Active** --- Set the option to enable the price list. Keep the price list inactive while drafting the prices. Deactivate the price list to disable temporarily the prices it contains.
+   c) **Active** --- Set the option to enable the price list. Keep the price list inactive while drafting the prices. Deactivate the price list to temporarily disable the prices it contains.
 
    d) **Schedule** --- Add a timetable for price list activation and deactivation.
 
@@ -52,27 +50,27 @@ To create a new price list:
          :class: with-border
          :alt: Scheduling time to activate the price list
 
-      To add another time slot, click **+ Add** below the time table. Add as many slots as you need.
+      Click **+ Add** below the timetable to add another time slot. Add as many slots as you need.
 
 4. In the **Product Assignment** section, enter criteria to filter the products and add them to the price list. See :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>` for more information.
 
    .. note:: Optionally, in addition to rule-based product assignment, you can add a product price to the price list manually in one of the following ways:
 
-      * While editing  product (in the **Product Prices** section).
+      * While editing a product (in the **Product Prices** section).
 
         .. image:: /user/img/sales/pricelist/prices_for_product.png
            :class: with-border
            :alt: Adding the prices for the medical tag product to the Default PL manually when editing the product details
 
-      * When viewing the price list details, by clicking **+ Add Product Price**.
+      * Click **+ Add Product Price** when viewing the price list details.
 
         .. image:: /user/img/sales/pricelist/prices_for_price_list.png
            :class: with-border
            :alt: Adding product price in the popup dialog that opens when clicking the Add Product Price button
 
-      You can override the existing rule-based price. A manual entry has higher priority.
+      You can override the existing rule-based price. A manual entry has a higher priority.
 
-5. In the **Price Calculation Rules** section, specify rules for price calculation based on the price attributes (e.g. msrp) and other product details. You may use conditions to apply the rule to the subset or the filtered products. See :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>` for more information.
+5. In the **Price Calculation Rules** section, specify rules for price calculation based on the price attributes (e.g., MSRP) and other product details. You may use conditions to apply the rule to the subset or the filtered products. See :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>` for more information.
 
 6. Click **Save**.
 

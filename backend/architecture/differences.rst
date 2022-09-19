@@ -25,19 +25,19 @@ This file has to contain a list of bundle classes to initialize under the ``bund
 this will only be one class name:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/bundles.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
 
     bundles:
-        - Acme\DemoBundle\AcmeDemoBundle
+        - Acme\Bundle\DemoBundle\AcmeDemoBundle
 
 Optionally, you can also specify a priority. The priority defines the order in which bundles will
 be loaded. If you omit the priority, its value will implicitly be 0:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/bundles.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
 
     bundles:
-        - { name: Acme\DemoBundle\AcmeDemoBundle, priority: 10 }
+        - { name: Acme\Bundle\DemoBundle\AcmeDemoBundle, priority: 10 }
 
 .. caution::
 
@@ -57,7 +57,7 @@ However, usually you would manually an import for your routing configuration in 
 ``routing.yml`` file in your ``config`` directory like this:
 
 .. code-block:: yaml
-   :caption: config/routing.yml
+    :caption: config/routing.yml
 
     default_controller:
         resource: "@AcmeDemoBundle/Controller/DefaultController.php"
@@ -81,9 +81,9 @@ things easier by providing an |@Acl| annotation that you can use to define an AC
 a controller in a single step:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Controller/BlogController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/BlogController.php
 
-    namespace Acme\DemoBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
     use Oro\Bundle\SecurityBundle\Annotation\Acl;
 
@@ -105,9 +105,9 @@ a controller in a single step:
 Furthermore, once an ACL has been defined, you can reuse it using the |@AclAncestor| annotation:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Controller/BlogController.php
+    :caption: src/Acme/Bundle/DemoBundle/Controller/BlogController.php
 
-    namespace Acme\DemoBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
     use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
 
@@ -142,6 +142,10 @@ install them on their own in the UI.
     You can also :ref:`add your own extension <dev--extend--how-to-publish-extension-on-the-marketplace>`
     to the Oro Extensions Store.
 
+Related Articles
+----------------
+
+* :ref:`Bundle-less Structure <dev-backend-architecture-bundle-less-structure>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -16,7 +16,7 @@ There are a few ways to define a custom form type and form options for a particu
 #. Through the compiler pass to add or override the guesser's mappings:
 
     .. code-block:: php
-      :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/Compiler/AcmeExtendGuesserPass.php
+        :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/Compiler/AcmeExtendGuesserPass.php
 
         namespace Acme\Bundle\DemoBundle\DependencyInjection\Compiler;
 
@@ -26,8 +26,10 @@ There are a few ways to define a custom form type and form options for a particu
 
         class AcmeExtendGuesserPass implements CompilerPassInterface
         {
-
-            public function process(ContainerBuilder $container): void
+            /**
+             * @inheritDoc
+             */
+            public function process(ContainerBuilder $container)
             {
                 $guesser = $container->findDefinition('oro_entity_extend.provider.extend_field_form_type');
                 $guesser->addMethodCall(
@@ -40,14 +42,21 @@ There are a few ways to define a custom form type and form options for a particu
 #. With a custom form extend field options provider that can be used for providing form options that need a complex logic and cannot be declared in compiler pass:
 
     .. code-block:: php
-      :caption: src/Acme/Bundle/DemoBundle/Provider/ExtendFieldCustomFormOptionsProvider.php
+        :caption: src/Acme/Bundle/DemoBundle/Provider/ExtendFieldCustomFormOptionsProvider.php
+
+        namespace Acme\Bundle\DemoBundle\Provider;
+
+        use Oro\Bundle\EntityExtendBundle\Provider\ExtendFieldFormOptionsProviderInterface;
 
         class ExtendFieldCustomFormOptionsProvider implements ExtendFieldFormOptionsProviderInterface
         {
+            /**
+             * @inheritDoc
+             */
             public function getOptions(string $className, string $fieldName): array
             {
                 $options = [];
-                if ($className == '...' && $fieldName == '...') {
+                if ($className === '...' && $fieldName === '...') {
                     $options['custom_option'] = 'custom_value';
                 }
 
@@ -68,17 +77,25 @@ There are a few ways to define a custom form type and form options for a particu
 #. With a custom guesser that will have higher priority or will provide a guess with the highest confidence value:
 
     .. code-block:: php
-      :caption: src/Acme/Bundle/DemoBundle/Form/Guesser/CustomTypeGuesser/CustomTypeGuesser.php
+        :caption: src/Acme/Bundle/DemoBundle/Form/Guesser/CustomTypeGuesser.php
+
+        namespace Acme\Bundle\DemoBundle\Form\Guesser;
+
+        use Symfony\Component\Form\FormTypeGuesserInterface;
+        use Symfony\Component\Form\Guess\TypeGuess;
+        use Symfony\Component\Form\Guess\ValueGuess;
 
         class CustomTypeGuesser implements FormTypeGuesserInterface
         {
-
-            public function guessType($className, $property)
+            /**
+             * @inheritDoc
+             */
+            public function guessType(string $class, string $property)
             {
                 // some conditions here
-                if ($className == '...' && $property == '') {
+                if ($class === '...' && $property === '') {
                     $guessedType = '';
-                    $options = [...];
+                    $options     = [];
                     return new TypeGuess($guessedType, $options, TypeGuess::HIGH_CONFIDENCE);
                 }
 
@@ -86,17 +103,26 @@ There are a few ways to define a custom form type and form options for a particu
                 return new ValueGuess(false, ValueGuess::LOW_CONFIDENCE);
             }
 
-            public function guessRequired($class, $property)
+            /**
+             * @inheritDoc
+             */
+            public function guessRequired(string $class, string $property)
             {
                 return new ValueGuess(false, ValueGuess::LOW_CONFIDENCE);
             }
 
-            public function guessMaxLength($class, $property)
+            /**
+             * @inheritDoc
+             */
+            public function guessMaxLength(string $class, string $property)
             {
                 return new ValueGuess(null, ValueGuess::LOW_CONFIDENCE);
             }
 
-            public function guessPattern($class, $property)
+            /**
+             * @inheritDoc
+             */
+            public function guessPattern(string $class, string $property)
             {
                 return new ValueGuess(null, ValueGuess::LOW_CONFIDENCE);
             }

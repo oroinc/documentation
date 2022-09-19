@@ -10,7 +10,7 @@ Manage Opportunities
 Opportunity Grid
 ----------------
 
-The following actions can be performed for opportunities from the grid:
+You can perform the following actions for opportunities from the grid:
 
 * Export and import opportunity record details with Export and Import buttons.
 * Delete an opportunity from the system: |IcDelete|
@@ -52,29 +52,10 @@ To edit the opportunity from the grid, double-click on the field or the inline e
 .. image:: /user/img/sales/opportunities/inline_editing_2.jpg
    :alt: Inline editing for opportunities
 
-
-.. Do the same for a record within its view page:
-
-.. .. image:: /user/img/sales/opportunities/view_inline_editing_1.png
-
-.. .. image:: /user/img/sales/opportunities/view_inline_editing_2.png
-
-.. Currently you can use inline editing for the following fields within the view page of a record:
-
-.. - Opportunity Name
-.. - Status
-.. - Contact
-.. - Probability
-.. - Budget Amount
-.. - Tags
-.. - Close Reason
-.. - Close Revenue
-.. - Expected Close Date
-
 Kanban Board
 ^^^^^^^^^^^^
 
-As an alternative to grid view, you can view Opportunities in Kanban board. To change grid view to board view, open **Grid/Board** menu and click :guilabel:`Board`.
+As an alternative to grid view, you can view Opportunities in Kanban board. To change grid view to board view, open **Grid/Board** menu and click **Board**.
 
 .. image:: /user/img/sales/opportunities/kanban_1.jpg
    :alt: Kanban Board switcher
@@ -98,14 +79,14 @@ Within the board, you can:
   .. image:: /user/img/sales/opportunities/edit_opp_kanban.png
      :alt: Manage opportunities from Kanban Board
 
-.. important:: Note that inline editing feature is not available for board view. Inline editing is only possible within the grid view.
+.. important:: Note that the inline editing feature is unavailable for board view. Inline editing is only possible within the grid view.
 
 .. finish_manage_opportunities
 
 View Opportunities
 ------------------
 
-Customer, Account and Opportunity view pages contain a list of relevant opportunities, so the full history of the deals with a particular customer or account can be viewed in one place, thus helping the sales representatives find clues for the current deals.
+Customer, Account, and Opportunity view pages contain a list of relevant opportunities, so the complete history of the deals with a particular customer or account can be viewed in one place, thus helping the sales representatives find clues for the current deals.
 
 **Customer view:**
 

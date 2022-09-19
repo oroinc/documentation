@@ -63,7 +63,7 @@ The tables not only display record data but also contain links to the pages of t
 
 #. |IcSettings| **Grid Settings** --- Use to define which columns to show in the table.
 
-   * You can manually select the columns by clicking on the check box next to the required field.
+   * You can manually select the columns by clicking on the checkbox next to the required field.
    * To show all columns in the table, click **Select All**.
    * To change the order of the columns, click on the arrow icon next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
    * Use the quick search field to find the required item quickly.
@@ -100,7 +100,7 @@ The following actions are available for filters:
 2. To apply a filter, click on its button in the bar and specify your query in the control that appears. Note that filter controls might look different depending on the type of data you are going to filter — whether it is textual, numeric, date, or option set. After the filter is applied, its query will appear in the controls, so you can easily recall how you have filtered the data.
 
 3. Click on a cross **x** after the query to remove a filter.
-4. To select which filters from the available set to display, click **Manage Filters**. Select the check boxes in front of the filters you want to display. You can use a search field at the top of the list to quickly find the required filter.
+4. To select which filters from the available set to display, click **Manage Filters**. Select the checkboxes in front of the filters you want to display. You can use a search field at the top of the list to quickly find the required filter.
 
 Types of Filters
 ^^^^^^^^^^^^^^^^

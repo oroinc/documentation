@@ -65,9 +65,10 @@ The following is a list of supported operators:
  - **<=** - Less than or equal;
  - **\>** - Greater than;
  - **\>=** - Greater than or equal;
- - **IN** - Checks that left operand should contains in the list of right operand;
- - **NIN** - Checks that left operand should not contains in the list of right operand.
- 
+ - **IN** - Checks that the left operand matches any value in the list from the right operand;
+ - **NIN** - Checks that the left operand does not match any value in the list from the right operand;
+ - **CONTAINS** - For string fields, checks that the left operand contains a substring from the right operand. For array fields, checks that any value in the list from the left operand is matched any value in the list from the right operand.
+
 If the value of the expression on the left or right is not the expression object, it is converted to a *value expression*.
 
 * |NullComparison| represents IS NULL or IS NOT NULL comparison expression.
@@ -89,9 +90,9 @@ Add a New Access Rule
 
 To add a new access rule, create a new class that implements |AccessRuleInterface|, for example:
 
- .. code-block:: php
+.. code-block:: php
 
-    namespace Acme\DemoBundle\AccessRule;
+    namespace Acme\Bundle\DemoBundle\AccessRule;
 
     use Doctrine\Common\Util\ClassUtils;
     use Oro\Bundle\SecurityBundle\AccessRule\AccessRuleInterface;
@@ -103,7 +104,7 @@ To add a new access rule, create a new class that implements |AccessRuleInterfac
     class ContactAccessRule implements AccessRuleInterface
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function isApplicable(Criteria $criteria): bool
         {
@@ -111,7 +112,7 @@ To add a new access rule, create a new class that implements |AccessRuleInterfac
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function process(Criteria $criteria): void
         {
@@ -122,13 +123,12 @@ To add a new access rule, create a new class that implements |AccessRuleInterfac
 
 Next, the access rule class should be registered as a service with the `oro_security.access_rule` tag:
 
- .. code-block:: yaml
-
+.. code-block:: yaml
 
     acme_demo.access_rule.contact:
-        class: Acme\DemoBundle\AccessRule\ContactAccessRule
+        class: Acme\Bundle\DemoBundle\AccessRule\ContactAccessRule
         tags:
-            - { name: oro_security.access_rule, type: ORM, entityClass: Acme\DemoBundle\Entity\Contact }
+            - { name: oro_security.access_rule, type: ORM, entityClass: Acme\Bundle\DemoBundle\Entity\Contact }
 
 Here, the `type` and `entityClass` are options for the `oro_security.access_rule` tag that are used to
 define conditions when an access rule should be applicable.

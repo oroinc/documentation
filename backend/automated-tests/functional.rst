@@ -92,7 +92,6 @@ You need to configure the following parameters for the testing environment:
            * --application-url=http://localhost/
            * --language=en
            * --formatting-code=en_US
-           * --skip-assets
            * --skip-translations
            * --no-interaction
            * --timeout=600

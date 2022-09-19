@@ -31,6 +31,11 @@ Developer Documentation is intended for developers and contains information abou
 
 .. raw:: html
 
+   <h2><a href="../components/">Components Documentation</a></h2>
+   <p>This section offers documentation on Oro Config Component which provides additional resource types to the Symfony Config Component infrastructure responsible for loading configurations from different data sources and optionally monitoring these data sources for changes.</p>
+
+.. raw:: html
+
    <h2><a href="../api/">Web Services API Guide</a></h2>
    <p>Web Services API Guide enables developers to integrate Oro functionality into third-party software systems.</p>
 

@@ -26,25 +26,24 @@ To implement the ability to enable the feature in the scope of a channel, create
 
 .. code-block:: yaml
 
-      channels:
-          entity_data:
-             -
-                name: Oro\Bundle\SomeEntity\Entity\RealEntity                # Entity FQCN
-                dependent:                                                      # Service entities that dependent on availability of main entity
-                      - Oro\Bundle\SomeEntity\Entity\RealEntityStatus
-                      - Oro\Bundle\SomeEntity\Entity\RealEntityCloseReason
-                navigation_items:                                               # Navigation items that responsible for entity visibility
-                      - menu.tab.real_entity_list
-
-             -
-                name: Oro\Bundle\AcmeDemoBundle\Entity\AnotherEntity
+    channels:
+        entity_data:
+            -
+                name: Acme\Bundle\DemoBundle\Entity\RealEntity              # Entity FQCN
+                dependent:                                                  # Service entities that dependent on availability of main entity
+                    - Acme\Bundle\DemoBundle\Entity\RealEntityStatus
+                    - Acme\Bundle\DemoBundle\Entity\RealEntityCloseReason
+                navigation_items:                                           # Navigation items that responsible for entity visibility
+                    - menu.tab.real_entity_list
+            -
+                name: Acme\Bundle\DemoBundle\Entity\AnotherEntity
                 dependent: ~
                 navigation_items:
                     - menu.tab.entity_funnel_list
                     - menu.tab.some_tab.some_tab.some_value
                 belongs_to:
-                    integration: integration_type_name                   # If entity belongs to integration, correspondent node should be set
-                    connector:   another                                 # connector name
+                    integration: integration_type_name                      # If entity belongs to integration, correspondent node should be set
+                    connector:   another                                    # connector name
 
 +--------------------------+---------------------------------------------------------------------------------------------------+
 | Option                   | Description                                                                                       |
@@ -85,16 +84,16 @@ Channel is configured by the `Channel Type` and `Entities` fields. Some types of
 
 .. code-block:: yaml
 
-      channel_types:
-            customer_channel_type:
-                label: Channel type name
-                entities:
-                    - Oro\Bundle\AcmeBundle\Entity\Entity
-                    - Oro\Bundle\AcmeBundle\Entity\Customer
-                integration_type: some_type
-                customer_identity: Oro\Bundle\ChannelBundle\Entity\CustomerIdentity
-                lifetime_value: field
-                priority: -10
+    channel_types:
+        customer_channel_type:
+            label: Channel type name
+            entities:
+                - Acme\Bundle\DemoBundle\Entity\Some
+                - Acme\Bundle\DemoBundle\Entity\Another
+            integration_type: some_type
+            customer_identity: Oro\Bundle\ChannelBundle\Entity\CustomerIdentity
+            lifetime_value: field
+            priority: -10
 
 +---------------------+------------------------------------------------------------------------------------------------------------------------------+----------+
 | Option              | Description                                                                                                                  | Required |

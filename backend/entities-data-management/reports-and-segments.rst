@@ -24,7 +24,7 @@ file called ``datagrids.yml`` in the ``Resources/config/oro`` directory of your 
 following example:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
         orocrm_report-opportunities-won_by_period:
@@ -194,7 +194,7 @@ a configuration file named ``navigation.yml`` that is located in the ``Resources
 of your bundle:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
 
     menu_config:
         items:
@@ -324,4 +324,4 @@ A `$query` variable contains instance of *\\Doctrine\\ORM\\Query*. Add it to the
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

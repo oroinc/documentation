@@ -22,16 +22,16 @@ To edit an entity:
 
    There are also several additional fields in the **Other** section that are available only when you edit an entity:
 
-   - **Field Level ACL** --- Select this check box to define that permissions can be set on individual fields of this entity. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
+   - **Field Level ACL** --- Select this checkbox to define that permissions can be set on individual fields of this entity. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
 
-   - **Show Restricted** --- Select this check box if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields on the interface. Fields disabled for modifying will appear dimmed on the interface. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
+   - **Show Restricted** --- Select this checkbox if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields on the interface. Fields disabled for modifying will appear dimmed on the interface. For more information about field level ACLs, see the :ref:`Entity Fields <doc-entity-fields>` topic.
 
    - **Searchable** --- Defines whether record users can search for and find records of this entity via your Oro application's :ref:`search functionality <user-guide-getting-started-search>`.
 
      - **Yes** --- Select this value from the list if users can search for and find records of this entity.     
      - **No**--- Select this value from the list if records of this entity are invisible for search.
 
-   - **Applicable Organizations** --- Select in which organizations this entity will be available. The default value is **All**. To specify a particular organization, clear the **All** check box and click the field that appears to choose the organization from the list.     
+   - **Applicable Organizations** --- Select in which organizations this entity will be available. The default value is **All**. To specify a particular organization, clear the **All** checkbox and click the field that appears to choose the organization from the list.
 
 4. Click **Save And Close**.
 

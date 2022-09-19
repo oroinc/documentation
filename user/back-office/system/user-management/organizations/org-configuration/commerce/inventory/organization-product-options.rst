@@ -39,7 +39,7 @@ To customize the default product options per organization:
 
 4. To customize any of these options:
 
-     a) Clear the **Use System** check box next to the option.
+     a) Clear the **Use System** checkbox next to the option.
      b) Select **Yes/No** for the flag-like options, and type in the updated value for the threshold-like options.
 
 5. Click **Save Settings**.

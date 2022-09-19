@@ -37,18 +37,18 @@ To set up integration with Authorize.Net, complete the following:
    * **Transaction Key** --- A secret key that helps secure transactions to and from the Authorize.Net payment gateway.
    * **Check Credentials** --- Click the button to make sure that the provided credentials are valid.
    * **Client Key** --- A public key that helps secure transactions to and from the Authorize.Net payment gateway.
-   * **Require CVV Entry** --- When this check box is selected, a buyer is prompted to enter a CVV code during checkout.
+   * **Require CVV Entry** --- When this checkbox is selected, a buyer is prompted to enter a CVV code during checkout.
 
-     .. important:: Select this check box only if you turned on the Card Code Verification (CCV) security feature on your Authorize.Net merchant interface. If a card code is not required, hiding the CVV field from buyers helps them keep their card code safe.
+     .. important:: Select this checkbox only if you turned on the Card Code Verification (CCV) security feature on your Authorize.Net merchant interface. If a card code is not required, hiding the CVV field from buyers helps them keep their card code safe.
 
-   * **Test Mode** --- Select this check box to use Authorize.Net in the test mode that enables you to use the connection to the gateway without sending transaction information to a processing institution. See :ref:`Using Authorize.Net in Test Mode <user-guide--payment--prerequisites--authorizenet-testing>` for more information.
+   * **Test Mode** --- Select this checkbox to use Authorize.Net in the test mode that enables you to use the connection to the gateway without sending transaction information to a processing institution. See :ref:`Using Authorize.Net in Test Mode <user-guide--payment--prerequisites--authorizenet-testing>` for more information.
 
 6. In the **eCheck** section, provide the following information:
 
    .. image:: /user/img/system/integrations/authorizenet/echeck_section_management_console.png
       :alt: eCheck section in the back-office filled in with sample details
 
-   * **Enable** --- Click this check box to enable |eCheck payments|.
+   * **Enable** --- Click this checkbox to enable |eCheck payments|.
    * **Label** --- This payment method name/label is displayed as a payment option for the buyer during the checkout in the OroCommerce storefront.
    * **Short Label** --- This payment method name/label is displayed in the order history.
    * **Bank Account Types** --- Bank account types to be available for the eCheck checkout (e.g., a savings or checking account).
@@ -62,7 +62,7 @@ To set up integration with Authorize.Net, complete the following:
    .. image:: /user/img/system/integrations/authorizenet/cim_form_management_console.png
       :alt: CIM section in the back-office
 
-   * **Enable CIM** --- Click this check box to enable |Customer Information Manager Integration|. When the integration is enabled, the :ref:`Manage Payment Profiles <frontstore-guide--cim>` section is added to the Account menu in the storefront.
+   * **Enable CIM** --- Click this checkbox to enable |Customer Information Manager Integration|. When the integration is enabled, the :ref:`Manage Payment Profiles <frontstore-guide--cim>` section is added to the Account menu in the storefront.
 
    * **CIM Websites** --- Select the websites for which you wish to enable Customer Information Manager integration.
 

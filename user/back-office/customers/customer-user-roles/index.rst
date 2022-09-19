@@ -56,7 +56,7 @@ To create a new customer user role:
 
 5. In the **Workflows** section, specify access levels for workflows and workflow transitions. There are two permissions for workflows, **view** and **perform transitions**. By default, all workflow access levels are set to **None**. Choose the workflow or the transition to which you want to assign different permissions, click on the action name and select the required access level from the list.
 
-6. In the **Customer Users** section, select check boxes in front of the customer users to whom you want to assign this role.
+6. In the **Customer Users** section, select checkboxes in front of the customer users to whom you want to assign this role.
 
 7. Click **Save**
 

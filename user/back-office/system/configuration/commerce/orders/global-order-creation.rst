@@ -20,7 +20,7 @@ To assign an order status globally:
 
 3. In the **Order Creation** section:
 
-   a) Clear the **Use System** check box if it is selected.
+   a) Clear the **Use System** checkbox if it is selected.
    b) From the **New Internal Order Status** list, select the required status.
 
 #. Click **Save Settings**.

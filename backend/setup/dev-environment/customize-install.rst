@@ -20,9 +20,9 @@ You can create your own :ref:`migrations <backend-entities-migrations>` that can
 A migration is a class which implements the ``Oro\Bundle\MigrationBundle\Migration\Migration`` interface:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Migration/1_0/CustomMigration.php
+    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_0/CustomMigration.php
 
-    namespace Acme\DemoBundle\Migration\1_0;
+    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
     use Oro\Bundle\MigrationBundle\Migration\Migration;
@@ -30,6 +30,9 @@ A migration is a class which implements the ``Oro\Bundle\MigrationBundle\Migrati
 
     class CustomMigration implements Migration
     {
+        /**
+         * @inheritDoc
+         */
         public function up(Schema $schema, QueryBag $queries)
         {
             // ...
@@ -48,15 +51,18 @@ Load Custom Data Fixtures
 To load your own data :ref:`fixtures <backend-entities-fixtures>`, you will need to implement Doctrine's *"FixtureInterface"*:
 
 .. code-block:: php
-   :caption: src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
+    :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/CustomFixture.php
 
-    namespace Acme\DemoBundle\Migrations\Data\ORM;
+    namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
 
     use Doctrine\Common\DataFixtures\FixtureInterface;
     use Doctrine\Persistence\ObjectManager;
 
     class CustomFixture implements FixtureInterface
     {
+        /**
+         * @inheritDoc
+         */
         public function load(ObjectManager $manager)
         {
             // ...
@@ -76,4 +82,4 @@ To load your own data :ref:`fixtures <backend-entities-fixtures>`, you will need
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

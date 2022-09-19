@@ -1681,18 +1681,12 @@ You can handle the form from the layout data provider in the controller:
 
 ::
 
-        /**
-         * @param Product $product
-         * @return array|RedirectResponse
-         */
-        protected function add(Product $product)
+        protected function add(Product $product): array|RedirectResponse
         {
-            $handler = $this->get('oro_form.model.update_handler');
-
-            return $handler->update(
+            return $this->get(UpdateHandlerFacade::class)->update(
                 $product,
                 $this->get('acme_product.layout.data_provider.product_form')->getProductForm($product),
-                'Product Successfully Added!',
+                $this->get(TranslatorInterface::class)->trans('oro.controller.product.saved.message')
             );
         }
 

@@ -280,7 +280,7 @@ To edit an attachment, click the |IcEdit| **Edit** icon at the end of the row.
 
 To delete an attachment, click the |IcDelete| **Delete** icon at the end of the row.
 
-To delete multiple attachments, select check boxes in front of the files you want to delete, click the |IcMore| **More Options** menu at the end of the list header and then click |IcDelete| **Delete**.
+To delete multiple attachments, select checkboxes in front of the files you want to delete, click the |IcMore| **More Options** menu at the end of the list header and then click |IcDelete| **Delete**.
 
 
 .. include:: /include/include-images.rst

@@ -14,7 +14,7 @@ To enable it, make sure you:
 Enable RTL
 ----------
 
-The localization entity now has a check box **Enable RTL Mode**, which need to be selected.
+The localization entity now has a checkbox **Enable RTL Mode**, which need to be selected.
 
 .. image:: /img/frontend/rtl-support/localization-configuration.png
    :alt: Enabled RTL support for a Localization
@@ -38,7 +38,7 @@ The following is a white list of style inputs (`auto_rtl_inputs`) that have to b
 By default, all styles from Oro bundles are auto processed:
 
 .. code-block:: yaml
-   :caption: src/Acme/NewBundle/Resources/config/oro/assets.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/assets.yml
 
     auto_rtl_inputs:
         - 'bundles/oro*/**'

@@ -19,10 +19,9 @@ To make OroCloud skip the assets build during the upgrade, override upgrade comm
     orocloud_options:
       deployment:
         upgrade_commands:
-          - 'oro:platform:update --skip-assets'
+          - 'oro:platform:update'
           - 'assets:install'
 
-- The ``oro:platform:update --skip-assets`` command runs the upgrade process without assets build.
 - The ``assets:install`` command installs assets that are served directly, and should not be built. This operation is fairly quick.
 
 Store Pre-Built Assets in a Git Repository

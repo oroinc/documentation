@@ -24,7 +24,7 @@ To configure product data export settings per website:
 .. image:: /user/img/system/websites/web_configuration/web-product-data-export.png
    :alt: Product data export configuration options on website level
 
-4. Enable the following options by clearing the **Use Organization** check box next to the required option:
+4. Enable the following options by clearing the **Use Organization** checkbox next to the required option:
 
    * **Enable Product Grid Export** --- Enable this option to allow customers in the storefront to export selected product data. Once you enable this option and click **Save Settings** on the top right, options **Include Product Prices** and **Include Price Tiers** will be displayed.
    * **Include Product Prices** --- Enable this option to add product prices to the exported product data file. Data will be displayed only for the primary unit, minimum quantity and the currency currently selected in the storefront.

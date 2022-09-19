@@ -10,7 +10,7 @@ You can define whether to display open :term:`orders <Order>` within the Order H
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Sales > Orders History** in the menu to the left.
-4. In the **Open Orders** section, clear the **Use Organization** check box and update the default option.
+4. In the **Open Orders** section, clear the **Use Organization** checkbox and update the default option.
 5. For the **Show Open Orders** field, select whether to display or hide the open orders within the Order History menu in the storefront.
 6. For **Show Open Orders on a Separate Page** field:
 

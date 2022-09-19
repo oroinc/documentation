@@ -24,7 +24,7 @@ Entity Configuration
     ``entity_config`` key, but a scope key must be used as an intermediate mapping key:
 
     .. code-block:: yaml
-       :caption: src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/entity_config.yml
 
         entity_config:
             demo_scope:
@@ -248,7 +248,7 @@ Use the ``oro:entity:config:dump-reference`` command to dump the reference struc
 
 .. code-block:: none
 
-   php bin/console oro:entity:config:dump-reference
+    php bin/console oro:entity:config:dump-reference
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

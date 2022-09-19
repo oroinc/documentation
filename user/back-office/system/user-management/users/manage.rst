@@ -34,7 +34,7 @@ Enable/Disable Multiple Users
 To enable/disable several users at the same time, use mass actions:
 
 1. Navigate to **System > User Management > Users**.
-2. In the table of all users, select the check boxes in front of the names of those users whose passwords you want to reset.
+2. In the table of all users, select the checkboxes in front of the names of those users whose passwords you want to reset.
 3. Click the ellipsis menu at the right end of the table header row and then click |IcActivate| **Enable** or |IcBan| **Disable**.
 
    .. image:: /user/img/system/user_management/users_enable_disable_mass_action.png
@@ -151,7 +151,7 @@ Reset Multiple Passwords
 When you suspect a security breach, you can reset passwords for multiple users at the same time:
 
 1. Navigate to **System > User Management > Users**.
-2. In the table of all users, select the check boxes in front of the names of those users whose passwords you want to reset.
+2. In the table of all users, select the checkboxes in front of the names of those users whose passwords you want to reset.
 3. Click the ellipsis menu at the right end of the table header row and then click |IcPassReset| **Reset Password**.
 4. In the **Reset Password** dialog box, click **Reset**. The password reset links are sent to the primary email addresses of the selected users.
 
@@ -183,7 +183,7 @@ To add a new OAuth application in the back-office:
 
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations. Keep in mind that the multi-org functionality is only available in the Enterprise edition.
    * **Application Name** --- Provide a meaningful name for the application you are adding.
-   * **Active** --- Select the **Active** check box to activate the new application.
+   * **Active** --- Select the **Active** checkbox to activate the new application.
 
 4. Click **Create**.
 

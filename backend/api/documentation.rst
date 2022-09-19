@@ -19,13 +19,13 @@ The source with the highest priority is the configuration file. The documentatio
 
     api:
         entities:
-            Acme\Bundle\AppBundle\Entity\AcmeEntity:
-                documentation_resource: '@AcmeAppBundle/Resources/doc/api/acme_entity.md'
+            Acme\Bundle\DemoBundle\Entity\AcmeEntity:
+                documentation_resource: '@AcmeDemoBundle/Resources/doc/api/acme_entity.md'
 
 If the documentation was not found neither the configuration file nor in the Markdown documentation file, OroPlatform tries to use system-wide descriptions of entities and fields. These descriptions are usually provided in translation files. This is the best way to document fields because the descriptions can be used in other places, not only in API. Here is an example of a translation file that contains descriptions for entities and fields:
 
 .. code-block:: yaml
-   :caption: Acme/Bundle/AppBundle/Resources/translations/messages.en.yml
+    :caption: Acme/Bundle/DemoBundle/Resources/translations/messages.en.yml
 
     oro:
         sales:
@@ -61,7 +61,7 @@ Each resource documentation should starts from '#' (h1) header that contains Ful
 
 .. code-block:: none
 
-    # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
+    # Acme\Bundle\DemoBundle\Entity\SomeEntity
 
 As already mentioned above, a single documentation file may contain documentation for several resources. In general, such approach is used to document the main resource and related resources. For example, you can document resources for the User and UseStatus entities in the same file.
 
@@ -69,7 +69,7 @@ Start the next level with the ``##`` (h2) header and use it to announce one of t
 
 .. code-block:: none
 
-    # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
+    # Acme\Bundle\DemoBundle\Entity\SomeEntity
 
     ## ACTIONS
     ...
@@ -105,7 +105,7 @@ Example:
 
 .. code-block:: none
 
-    # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
+    # Acme\Bundle\DemoBundle\Entity\SomeEntity
 
     ## ACTIONS
 
@@ -158,7 +158,7 @@ Example:
 
 .. code-block:: none
 
-    # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
+    # Acme\Bundle\DemoBundle\Entity\SomeEntity
 
     ## ACTIONS
 
@@ -193,7 +193,7 @@ Example:
 
 .. code-block:: none
 
-    # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
+    # Acme\Bundle\DemoBundle\Entity\SomeEntity
 
     ## ACTIONS
 
@@ -239,4 +239,4 @@ For example, to add a text when ``feature1`` is enabled and ``feature2`` is disa
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

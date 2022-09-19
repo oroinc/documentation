@@ -45,7 +45,7 @@ Here, you can manage both inventory and upcoming products options.
 
 3. To customize any of these options:
 
-     a) Clear the **Use Default** check box next to the option.
+     a) Clear the **Use Default** checkbox next to the option.
      b) Select **Yes/No** for the flag-like options, and type in the updated value for the threshold-like options.
 
 4. Click **Save Settings**.

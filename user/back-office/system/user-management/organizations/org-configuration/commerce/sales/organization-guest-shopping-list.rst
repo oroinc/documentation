@@ -22,7 +22,7 @@ To configure them per organization:
    .. image:: /user/img/system/user_management/org_configuration/sales/shopping_list_org_config.png
       :alt: Shopping list configuration per organization
 
-4. Clear the **Use System** check box to change the global setting.
+4. Clear the **Use System** checkbox to change the global setting.
 5. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
 6. In the **Guest Shopping List** section, define the following options:
 

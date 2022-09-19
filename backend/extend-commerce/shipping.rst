@@ -229,7 +229,7 @@ The methods are the following:
 * ``getLabel`` --- Returns the shipping method's label that appears on the shipping rule edit page. It can also be a Symfony translated message.
 * ``getIcon`` --- Returns the icon that appears on the shipping rule edit page.
 * ``isEnabled`` --- Defines, whether the integration of the shipping method is enabled by default.
-* ``isGrouped`` --- Defines how shipping method's types appear in the shipping method configuration on the user interface. If set to ``true``, the types appear in the table where each line contains the **Active** check box that enables users to enable individual shipping method types for a particular shipping method configuration.
+* ``isGrouped`` --- Defines how shipping method's types appear in the shipping method configuration on the user interface. If set to ``true``, the types appear in the table where each line contains the **Active** checkbox that enables users to enable individual shipping method types for a particular shipping method configuration.
 
 * ``getSortOrder`` ---  Defines the order in which shipping methods appear on the user interface. For example, in the following screenshot, the Flat rate sort order is lower than the UPS sort order:
 

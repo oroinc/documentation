@@ -15,7 +15,7 @@ To save a search result:
    .. image:: /user/img/storefront/navigation/saved-search.png
       :alt: Saved search icon in the Filters panel
 
-3. Select the check boxes for *New Product* and/or *Inventory Status* if you want to receive notifications.
+3. Select the checkboxes for *New Product* and/or *Inventory Status* if you want to receive notifications.
 4. Click **Add**. Your search query is now saved under **My Account > Saved Search**.
 
    .. image:: /user/img/storefront/navigation/saved-search-account-table.png

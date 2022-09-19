@@ -19,7 +19,7 @@ You can control whether you want to calculate taxes before or after discounts ar
 .. image:: /user/img/system/user_management/org_configuration/taxation/tax-calculation-org.png
    :alt: Calculate Taxes After Promotions configuration option on organization level
 
-4. You can enable or disable the **Calculate Taxes After Promotions** option. Select the check box if you wish to have your taxes calculated on the :ref:`reduced price <user-guide--marketing--promotions>` after the discounts are applied. If this option is disabled, taxes are calculated based on the full price before the discounts are applied.
+4. You can enable or disable the **Calculate Taxes After Promotions** option. Select the checkbox if you wish to have your taxes calculated on the :ref:`reduced price <user-guide--marketing--promotions>` after the discounts are applied. If this option is disabled, taxes are calculated based on the full price before the discounts are applied.
 
   .. note:: When a discount applies to the entire order, it is proportionally distributed among all line items and subtracted from the subtotal of each of them. Tax is calculated for each taxable line item after that.
 

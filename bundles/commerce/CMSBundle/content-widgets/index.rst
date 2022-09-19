@@ -252,7 +252,7 @@ for a widget type, follow the steps below:
 5.1 Add Template Definition to Theme Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a ``widgets.yml`` file for certain theme (e.g., blank) in the config folder ``Resources/views/layouts/blank/config/widgets.yml``:
+Create a ``widgets.yml`` file for certain theme (e.g., default) in the config folder ``Resources/views/layouts/default/config/widgets.yml``:
 
 .. code-block:: xml
 
@@ -268,7 +268,7 @@ Create a ``widgets.yml`` file for certain theme (e.g., blank) in the config fold
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create a layout update file in the appropriate content widget folder inside the desired theme.
-Keep in mind that all widget layout update files should follow a naming convention: ``content_widget/{your_unique_widget_type_name}``, e.g.,: ``Resources/views/layouts/blank/content_widget/copyright/content_widget.yml``.
+Keep in mind that all widget layout update files should follow a naming convention: ``content_widget/{your_unique_widget_type_name}``, e.g.,: ``Resources/views/layouts/default/content_widget/copyright/content_widget.yml``.
 
 .. code-block:: xml
 
@@ -279,7 +279,7 @@ Keep in mind that all widget layout update files should follow a naming conventi
                 themes: 'content_widget.html.twig'
     ...
 
-Follow the same steps with templates for the layout update with customized markup ``Resources/views/layouts/blank/content_widget/copyright/content_widget.html.twig``:
+Follow the same steps with templates for the layout update with customized markup ``Resources/views/layouts/default/content_widget/copyright/content_widget.html.twig``:
 
 .. code-block:: html
 

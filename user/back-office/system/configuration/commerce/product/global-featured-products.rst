@@ -42,7 +42,7 @@ To customize the segment for featured products globally:
 
 3. To customize the segment option:
 
-     a) Clear the **Use Default** check box next to the option.
+     a) Clear the **Use Default** checkbox next to the option.
      b) Select the new segment from the list.
 
 4. Click **Save**.

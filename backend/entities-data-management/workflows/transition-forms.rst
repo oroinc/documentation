@@ -191,7 +191,7 @@ They are:
 Form Reuse Recommendation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The best approach when creating a new entity management (entity controller) while developing is to use the `Oro\\Bundle\\FormBundle\\Model\\UpdateHandler::update` method functionality.
+The best approach when creating a new entity management (entity controller) while developing is to use the `Oro\\Bundle\\FormBundle\\Model\\UpdateHandlerFacade::update` method functionality.
 So that if you encapsulate your logic into proper parts of the form handling process, then you should easily be able to create a workflow with the custom form type. As custom form workflow transition handling is based on reusing those parts in transition configuration.
 
 Transition Forms and Layouts

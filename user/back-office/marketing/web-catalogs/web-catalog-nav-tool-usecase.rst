@@ -28,7 +28,7 @@ Define the navigation root for the main menu so that the only relevant categorie
 
 Once the navigation root scope is defined, the main menu in the storefront should display the sub-menus only from the selected navigation root range.
 
-.. note:: Keep in mind that the *Navigation Root* option appears in the routing configuration settings when you clear the **Use Default** check box next to the *Web Catalog* field, select the necessary web catalog from the list (if you have more than one), and click **Save Settings**.
+.. note:: Keep in mind that the *Navigation Root* option appears in the routing configuration settings when you clear the **Use Default** checkbox next to the *Web Catalog* field, select the necessary web catalog from the list (if you have more than one), and click **Save Settings**.
 
 Step 2: Add a Content Node
 --------------------------

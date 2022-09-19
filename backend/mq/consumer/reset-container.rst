@@ -28,10 +28,10 @@ For example:
 
     oro_message_queue:
         persistent_processors:
-            - 'oro_message_queue.job.calculate_root_job_status_processor'
+            - 'oro_message_queue.client.noop_message_processor'
 
 This config file informs the |ContainerResetExtension| that the container should not be cleared after executing the
-**oro_message_queue.job.calculate_root_job_status_processor** processor.
+**oro_message_queue.client.noop_message_processor** processor.
 
 Persistent Services
 -------------------
@@ -64,7 +64,7 @@ For example:
 .. code-block:: yaml
 
     acme.consumption.my_extension:
-        class: Acme\Bundle\AppBundle\Async\Consumption\Extension\MyExtension
+        class: Acme\Bundle\DemoBundle\Async\Consumption\Extension\MyExtension
         public: false
         tags:
             - { name: oro_message_queue.consumption.extension, persistent: true }

@@ -40,5 +40,5 @@ Enable All Products Page Globally
    .. image:: /user/img/system/config_commerce/catalog/AllProductsSystem.png
       :alt: All Products global configuration settings
 
-3. In the **All Products** section, select the **Enable All Products Page** check box.
+3. In the **All Products** section, select the **Enable All Products Page** checkbox.
 4. Click **Save Settings** on the top right of the page.

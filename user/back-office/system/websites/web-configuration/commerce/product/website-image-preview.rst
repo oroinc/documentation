@@ -19,7 +19,7 @@ You can update the product watermark settings, enable image preview and configur
 .. image:: /user/img/system/websites/web_configuration/ProductImagesPerWebsiteOptions.png
    :class: with-border
 
-4. Clear the **Use Organization** check box to change the organization-wide setting.
+4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
 5. In the **General** section, configure the following options:
 

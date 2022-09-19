@@ -24,12 +24,12 @@ To configure email settings globally:
 
 2. Click **System Configuration > General Setup > Email Configuration** in the panel to the left.
 
-3. On the **Email Configuration** page, define options applied to all the emails generated within the instance. To change any of the default options, clear the **Use Default** check box first.
+3. On the **Email Configuration** page, define options applied to all the emails generated within the instance. To change any of the default options, clear the **Use Default** checkbox first.
 
    .. image:: /user/img/system/config_system/email_config_1.png
       :alt: Email configuration menu
 
-   * **Email settings** --- User emails are enabled by default. To disable the option, clear the **Use Default** check box and clear the **Enable User Emails** option.
+   * **Email settings** --- User emails are enabled by default. To disable the option, clear the **Use Default** checkbox and clear the **Enable User Emails** option.
    * **Autocomplete** --- Define the number of characters that are required to enable auto-complete for emails.
    * **Signature** --- Add a signature to the emails.
 
@@ -134,22 +134,22 @@ To configure a system mailbox globally:
 
    * **Account Type: Other**:
 
-     * *Enable IMAP* --- Select the check box to enable retrieving email messages
+     * *Enable IMAP* --- Select the checkbox to enable retrieving email messages
      * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
      * *IMAP Port* --- Provide the IMAP Port, e.g. 993
      * *Encryption* --- Select the encryption type, SSL or TLS.
-     * *Enable SMTP* --- Select the check box to enable sending messages
+     * *Enable SMTP* --- Select the checkbox to enable sending messages
      * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
      * *SMTP Port* --- Provide the SMTP port, e.g. 587
      * *Encryption* --- Select the encryption type, SSL or TLS.
      * *User* --- Provide your email address
      * *Password* --- Provide your password
 
-    Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the check boxes next to the folders you wish to synchronize. In the example below, synchronization has been done for a Gmail mailbox. The INBOX folder will be synchronized.
+    Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the checkboxes next to the folders you wish to synchronize. In the example below, synchronization has been done for a Gmail mailbox. The INBOX folder will be synchronized.
 
    .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail are provided on the |Google support page|.
 
-   .. hint:: To enable connection, select the check box next to |Allow Access for Less Secure Apps Box|.
+   .. hint:: To enable connection, select the checkbox next to |Allow Access for Less Secure Apps Box|.
 
    .. image:: /user/img/system/config_system/synchronize_mb.png
       :alt: An example of synchronization for a gmail mailbox

@@ -90,16 +90,16 @@ Note that it is not possible to close an opportunity from the table of all oppor
 To close an opportunity as won:
 
 1. Click **Close As Won**.
-#.	Provide **Close Revenue**.
-#.	Provide **Expected Close Date**.
-#.	Click **Submit**.
+#. Provide **Close Revenue**.
+#. Provide **Expected Close Date**.
+#. Click **Submit**.
 
 To close an opportunity as Lost:
 
-1.	Click **Close As Lost**.
-#.	Select **Close Reason** from the list.
-#.	Select the **Expected Close Date**.
-#.	Click **Submit**.
+1. Click **Close As Lost**.
+#. Select **Close Reason** from the list.
+#. Select the **Expected Close Date**.
+#. Click **Submit**.
 
 Other
 ~~~~~
@@ -126,15 +126,15 @@ OroCommerce Opportunity Flow enables sales reps to create |quotes| directly from
 
 .. note:: Creating a quote from the opportunity page is only available if the opportunity is related to a Commerce customer. Otherwise, the workflow will behave exactly like the standard Opportunity Management flow (for standard flow, see the `Manage Opportunity Workflow`_ section of the guide).
 
-When OroCommerce Opportunity flow is activated in **System > Workflows** and an opportunity is related to a Commerce customer, the **Create Quote** button appears on the top right of the opportunity page.
+When OroCommerce Opportunity flow is activated in **System > Workflows**, and an opportunity is related to a Commerce customer, the **Create Quote** button appears on the top right of the opportunity page.
 
-.. note:: Creating a quote from the opportunity page is only available for **open** opportunities, i.e. not closed or lost. 
+.. note:: Creating a quote from the opportunity page is only available for **open** opportunities, i.e., not closed or lost.
 
 .. image:: /user/img/sales/opportunities/commerce_flow.png
    :alt: OroCommerce opportunity flow grid
 
 .. image:: /user/img/sales/opportunities/create_quote.png
-   :alt: Creating a quote from opportunity view page
+   :alt: Creating a quote from the opportunity view page
 
 Click **Create Quote** to start creating a new quote.
 
@@ -150,20 +150,20 @@ From the opportunity page, the following actions are possible for the quote:
 - Delete: |IcDelete|
 - Expire: |IcExpire|
 
-.. note:: Note that availability of the **Expire** option for a quote within the opportunity page depends on the types of workflows activated in your system.
+.. note:: Note that the availability of the **Expire** option for a quote within the opportunity page depends on the types of workflows activated in your system.
 
 .. image:: /user/img/sales/opportunities/quote_created_opp.png
    :alt: A quote created from an opportunity
 
-On the Quote page, the relation to the opportunity (which this quote has been created from) remains, as illustrated in the following screenshot:
+On the Quote page, the relation to the opportunity (which this quote has been created from) remains:
 
 .. image:: /user/img/sales/opportunities/quote_opp.png
-   :alt: Relation between the quote and opportunity on quote page
+   :alt: Relation between the quote and opportunity on the quote page
 
 .. image:: /user/img/sales/opportunities/quote_opp_edit.png
-   :alt: Relation between the quote and opportunity on quote page
+   :alt: Relation between the quote and opportunity on the quote page
 
-.. note:: Although opportunity relation can be displayed on the quote page, it is not possible to manage it. When there is no opportunity relation available for a quote, inactive **Opportunity** field is displayed.
+.. note:: Although opportunity relation can be displayed on the quote page, it is impossible to manage it. When no opportunity relation is available for a quote, the inactive **Opportunity** field is displayed.
 
 You can create any number of quotes for one open opportunity.
 
@@ -174,4 +174,3 @@ You can create any number of quotes for one open opportunity.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
-

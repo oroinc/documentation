@@ -17,7 +17,7 @@ To change the default currency settings per organization:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Remove the **Use System** check box to enable the currency configuration for the organization.
+4. Remove the **Use System** checkbox to enable the currency configuration for the organization.
 
 Currency Settings
 -----------------
@@ -46,7 +46,7 @@ The following sections become available within the **Currency** tab:
 |                        |                                                                                                             |
 |                        | To customize the **Display Format**:                                                                        |
 |                        |                                                                                                             |
-|                        | a) Clear the **Use System** check box next to the option.                                                   |
+|                        | a) Clear the **Use System** checkbox next to the option.                                                    |
 |                        | b) Select the new option value (either *Currency Code* or *Currency Symbol*).                               |
 |                        |                                                                                                             |
 |                        | **Note:** Not all currencies might have symbols. For such currencies, ISO codes are used instead.           |

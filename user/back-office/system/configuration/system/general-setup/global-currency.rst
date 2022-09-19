@@ -79,7 +79,7 @@ The following sections are available within the **Currency** tab:
 |                        |                                                                                                                 |
 |                        | To customize the **Display Format**:                                                                            |
 |                        |                                                                                                                 |
-|                        | a) Clear the **Use Default** check box next to the option.                                                      |
+|                        | a) Clear the **Use Default** checkbox next to the option.                                                       |
 |                        | b) Select the new option value (either *Currency Code* or *Currency Symbol*).                                   |
 |                        |                                                                                                                 |
 |                        | **Note:** Not all currencies might have symbols. For such currencies, ISO codes are used instead.               |

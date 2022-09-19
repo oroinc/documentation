@@ -15,8 +15,8 @@ To configure order automation per organization:
 
 #. In the **Order Automation** section:
 
-   a) Clear the **Use System** check box.
-   b) Select the **Enable Automatic Order Cancellation** check box to automatically cancel the order when its 'do not ship later than' date is passed.
+   a) Clear the **Use System** checkbox.
+   b) Select the **Enable Automatic Order Cancellation** checkbox to automatically cancel the order when its 'do not ship later than' date is passed.
 
 #. Click **Save Settings**.
 

@@ -49,7 +49,7 @@ To create a new coupon:
    * **Owner** --- Select the business unit responsible for the coupon.
    * **Coupon Code** --- Enter the coupon code. Code value should be numeric, alphabetic or both, and have no spaces. This field is mandatory.
    * **Promotion** --- Select the promotion that the coupon should relate to, or click |IcBars| to load the list of promotions to choose from. Please note that only promotions with the **Triggered by** option set to *Coupons and Conditions* will be displayed on the list of available promotions. If there are no promotions to link the coupon to, they can be created and added to the coupon later.
-   * **Enabled** --- Enable the check box to activate the coupon. To deactivate it, clear the check box.
+   * **Enabled** --- Enable the checkbox to activate the coupon. To deactivate it, clear the checkbox.
    * **Uses Per Coupon** --- Enter the number of times that the coupon may be used.
    * **Uses Per Person** --- Enter the number of times a specific customer can use the coupon.
    * **Valid From/Until** --- Provide the expiration date and time for the coupon.
@@ -72,7 +72,7 @@ To generate new coupons:
 3. In the form, complete the following fields:
 
    * **Promotion** --- Select the promotion that the coupon should relate to, or click |IcBars| to load the list of promotions to choose from. Please note that only promotions with the *Triggered by* :ref:`option <user-guide--marketing--promotions--create>` set to *Coupons and Conditions* will be displayed on the list of available promotions.
-   * **Enabled** --- Enable the check box to activate the coupons.
+   * **Enabled** --- Enable the checkbox to activate the coupons.
    * **Uses Per Coupon** --- Enter the number of times the coupon can be used.
    * **Uses Per Person** --- Enter the number of times a specific customer can use the coupon.
    * **Valid From/Until** --- Provide the expiration date and time for the coupon.
@@ -109,7 +109,7 @@ The page contains the list of all available coupons in your Oro application. Fro
 4. Import coupons: Click  **Import** on the top right.
 5. View coupon details: Click on the item from the list to open its details page.
 6. Hover over the |IcMore| **More Options** menu to the right of the necessary coupon and select either to |IcView| **View**, |IcEdit| **Edit**, or |IcDelete| **Delete** the existing coupons from the system.
-7. Mass edit or mass delete coupons: Select the check boxes on the left of the corresponding rows. Click |IcMore| on the far right of the table header. Click |IcEdit| **Edit** to edit, or |IcDelete| **Delete** to delete the selected coupons.
+7. Mass edit or mass delete coupons: Select the checkboxes on the left of the corresponding rows. Click |IcMore| on the far right of the table header. Click |IcEdit| **Edit** to edit, or |IcDelete| **Delete** to delete the selected coupons.
 
    .. image:: /user/img/marketing/coupons/MassActionsCoupons.png
       :alt: The illustration of a mass action
@@ -123,7 +123,7 @@ The page contains the list of all available coupons in your Oro application. Fro
 
 9. Organize a coupons list to define which columns to show in the grid: Click |IcSettings| above the table on the far right.
 
-   * To choose the columns to be displayed in the table, select the check box next to the required column under **Show**. Clear the check box to make the column disappear from the table.
+   * To choose the columns to be displayed in the table, select the checkbox next to the required column under **Show**. Clear the checkbox to make the column disappear from the table.
    * To change the order of the columns, click |IcReorder| next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
    * To refresh the coupon list, click |IcRedo|.
    * To reset the coupon list, click |IcRefresh| to clear list customization and return to default settings. Reset applies to all filters, records per page, and sorting changes you have made.

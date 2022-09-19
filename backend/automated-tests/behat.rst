@@ -26,22 +26,20 @@ This section summarizes the limitations and agreements that are important for sh
 
 - **Use form mapping instead of selectors in your scenarios** to keep them clear and understandable for people from both the technical and nontechnical world.
 
-  **Do not**:
+    **Do not**:
 
-  .. code-block:: gherkin
+    .. code-block:: gherkin
 
+        I fill in "oro_workflow_definition_form[label]" with "User Workflow Test"
+        I fill in "oro_workflow_definition_form[related_entity]" with "User"
 
-      I fill in "oro_workflow_definition_form[label]" with "User Workflow Test"
-      I fill in "oro_workflow_definition_form[related_entity]" with "User"
+    **Do**:
 
-  **Do**:
+    .. code-block:: gherkin
 
-  .. code-block:: gherkin
-
-
-      And I fill "Workflow Edit Form" with:
-        | Name                  | User Workflow Test |
-        | Related Entity        | User               |
+        And I fill "Workflow Edit Form" with:
+          | Name                  | User Workflow Test |
+          | Related Entity        | User               |
 
   .. code-block:: yaml
     :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
@@ -58,44 +56,41 @@ This section summarizes the limitations and agreements that are important for sh
 
 - Use menu and links to get the right :ref:`pages <behat-page-element>` instead of the direct page URL
 
-  **Do**:
+    **Do**:
 
-  .. code-block:: gherkin
+    .. code-block:: gherkin
 
+        And I open User Index page
 
-      And I open User Index page
+    **Don't**:
 
-  **Don't**:
+    .. code-block:: gherkin
 
-  .. code-block:: gherkin
-
-
-      And I go to "/users"
+        And I go to "/users"
 
 * **Avoid scenario redundancy** (e.g., repeating the same sequence of steps, like login, in multiple scenarios).
 
-  Cover the feature with the sequential scenarios where every following scenario reuses outcomes (the states and data) prepared by their predecessors.
-  This path was chosen because of the following benefits:
+    Cover the feature with the sequential scenarios where every following scenario reuses outcomes (the states and data) prepared by their predecessors.
+    This path was chosen because of the following benefits:
 
-    - Faster scenario execution due to the shared user session and smart data preparation. The login action in the initial scenario opens the session that is reusable by the following scenarios. Preliminary scenarios (e.g., create) prepare data for the following scenarios (e.g., delete).
-    - Feature level isolation boosts execution speed, especially in the slow test environments.
-    - Minimized routine development actions (e.g., you do not have to load fixtures for every scenario; instead, you reuse the available outcomes of the previous scenarios).
-    - Easy handling of the application states that are difficult to emulate with data fixtures only (e.g., when adding new entity fields in the UI).
+        - Faster scenario execution due to the shared user session and smart data preparation. The login action in the initial scenario opens the session that is reusable by the following scenarios. Preliminary scenarios (e.g., create) prepare data for the following scenarios (e.g., delete).
+        - Feature level isolation boosts execution speed, especially in the slow test environments.
+        - Minimized routine development actions (e.g., you do not have to load fixtures for every scenario; instead, you reuse the available outcomes of the previous scenarios).
+        - Easy handling of the application states that are difficult to emulate with data fixtures only (e.g., when adding new entity fields in the UI).
 
-  By coupling scenarios, the ease of debugging and bug localization get sacrificed. It is difficult to debug UI features and the scenarios that happen after several preliminary scenarios. The longer the line, the harder it is to isolate the issue. Once the issue occurs, you have to spend additional time localizing it and identifying the root cause (e.g., the delete scenario may malfunction vs the delete scenario may fail due to the issues in the preliminary scenario, for example, create). The most critical actions/scenarios usually precede the less critical ones.
+    By coupling scenarios, the ease of debugging and bug localization get sacrificed. It is difficult to debug UI features and the scenarios that happen after several preliminary scenarios. The longer the line, the harder it is to isolate the issue. Once the issue occurs, you have to spend additional time localizing it and identifying the root cause (e.g., the delete scenario may malfunction vs the delete scenario may fail due to the issues in the preliminary scenario, for example, create). The most critical actions/scenarios usually precede the less critical ones.
 
 - **Use semantical yml fixtures**
 
-  Use only the entities that are in the bundle you are testing. Any other entities should be included via import.  See :ref:`Alice fixtures <behat-alice-fixtures>` for more information.
+    Use only the entities that are in the bundle you are testing. Any other entities should be included via import.  See :ref:`Alice fixtures <behat-alice-fixtures>` for more information.
 
 - **Name elements in camelCase style without spaces**
 
-  You can still refer to it using the camelCase style with spaces in the behat scenarios. For example, an element named ``OroProductForm`` may be mentioned in the step of the scenario as "Oro Product From":
+    You can still refer to it using the camelCase style with spaces in the behat scenarios. For example, an element named ``OroProductForm`` may be mentioned in the step of the scenario as "Oro Product From":
 
-  .. code-block:: gherkin
+    .. code-block:: gherkin
 
-
-     I fill "Oro Product From" with:
+        I fill "Oro Product From" with:
 
 - **Use Scenario: Feature Background instead of the Background step**
 
@@ -112,11 +107,11 @@ Use the default configuration for the application installed in the production mo
 
 To test emails, install |Mailcatcher| and set up mailer_* options in the ``config/parameters.yml`` file:
 
-  .. code-block:: yaml
+    .. code-block:: yaml
 
-     mailer_transport: smtp
-     mailer_host: 127.0.0.1
-     mailer_port: 1025
+         mailer_transport: smtp
+         mailer_host: 127.0.0.1
+         mailer_port: 1025
 
 Behat framework uses mailcatcher UI to assert emails. By default, the framework expects mailcatcher UI at ``http://127.0.0.1:1080/``. To change the URL, provide the ``ORO_MAILER_WEB_URL`` environment variable.
 
@@ -128,9 +123,8 @@ Create your *behat.yml* (it is ignored by git automatically and is never committ
 
 .. code-block:: gherkin
 
-
     imports:
-      - ./behat.yml.dist
+        - ./behat.yml.dist
 
     default: &default
         extensions: &default_extensions
@@ -150,8 +144,7 @@ Install dev dependencies using the following command:
 
 .. code-block:: none
 
-
-   composer install
+    composer install
 
 Application Initial State
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -161,7 +154,6 @@ In the Oro application, the initial state is the one when the application enters
 Install the application without demo data in production mode using the following command:
 
 .. code-block:: none
-
 
     bin/console oro:install  --drop-database --user-name=admin --user-email=admin@example.com  \
       --application-url=http://dev-crm.local --user-firstname=John --user-lastname=Doe \
@@ -176,7 +168,6 @@ To execute scenarios that use Oro application features run WebKit browser (using
 To install ChromeDriver, run the following commands:
 
 .. code-block:: none
-
 
     CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
     mkdir -p "$HOME/chrome" || true
@@ -198,15 +189,13 @@ Run ChromeDriver:
 
 .. code-block:: none
 
-
-   chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1
+    chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1
 
 To run ChromeDriver in background, append ampersand symbol (&) to the end of line, like in the following examples:
 
 .. code-block:: none
 
-
-   chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1 &
+    chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1 &
 
 Run Tests
 ~~~~~~~~~
@@ -222,13 +211,11 @@ Run feature test scenario:
 
 .. code-block:: none
 
-
     bin/behat vendor/oro/platform/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature -vvv
 
 Preview all available feature steps:
 
 .. code-block:: none
-
 
     bin/behat -dl -s OroUserBundle
 
@@ -236,13 +223,11 @@ View steps with full description and examples:
 
 .. code-block:: none
 
-
     bin/behat -di -s OroUserBundle
 
 Every bundle has its dedicated test suite that can be run separately:
 
 .. code-block:: none
-
 
     bin/behat -s OroUserBundle
 
@@ -260,7 +245,6 @@ Application container may be used by injected Kernel in your Context after you i
 ``Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareTrait`` trait.
 
 .. code-block:: php
-
 
     use Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareInterface;
     use Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareTrait;
@@ -292,11 +276,11 @@ it as a service in ``services.yml`` located besides the ``behat.yml``:
     :caption: Acme/Bundle/DemoBundle/Tests/Behat/services.yml
 
     services:
-      Oro\Bundle\ImportExportBundle\Tests\Behat\Context\ImportExportContext:
-      	public: true
-      	arguments:
-     	  - '@doctrine'
-     	  - '%acme.batch_size%'
+        Oro\Bundle\ImportExportBundle\Tests\Behat\Context\ImportExportContext:
+            public: true
+            arguments:
+                - '@doctrine'
+                - '%acme.batch_size%'
 
 .. note:: Context service must be marked as public.
 
@@ -316,16 +300,16 @@ You can manually configure test suite for a bundle in the application behat conf
 .. code-block:: yaml
 
     default: &default
-      suites:
-        AcmeDemoBundle:
-          type: symfony_bundle
-          bundle: AcmeDemoBundle
-          contexts:
-            - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
-            - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
-            - Oro\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext
-          paths:
-            - 'vendor/Acme/Bundle/DemoBundle/Tests/Behat/Features'
+        suites:
+            AcmeDemoBundle:
+                type: symfony_bundle
+                bundle: AcmeDemoBundle
+                contexts:
+                    - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
+                    - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
+                    - Oro\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext
+                paths:
+                    - 'vendor/Acme/Bundle/DemoBundle/Tests/Behat/Features'
 
 or in a bundle behat configuration ``{BundlePath}/Tests/Behat/behat.yml``:
 
@@ -333,14 +317,14 @@ or in a bundle behat configuration ``{BundlePath}/Tests/Behat/behat.yml``:
     :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
 
     oro_behat_extension:
-      suites:
-        AcmeDemoBundle:
-          contexts:
-            - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
-            - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
-            - Oro\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext
-          paths:
-            - '@AcmeDemoBundle/Tests/Behat/Features'
+        suites:
+            AcmeDemoBundle:
+                contexts:
+                    - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
+                    - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
+                    - Oro\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext
+                paths:
+                    - '@AcmeDemoBundle/Tests/Behat/Features'
 
 Manually configured test suits are not autoloaded by the extension.
 
@@ -373,35 +357,33 @@ All elements must be described in ``{BundlePath}/Tests/Behat/behat.yml`` the fol
     :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
 
     oro_behat_extension:
-      elements:
-        Login:
-          selector: '#login-form'
-          class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
-          options:
-            mapping:
-              Username: '_username'
-              Password: '_password'
+        elements:
+            Login:
+                selector: '#login-form'
+                class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+                options:
+                    mapping:
+                      Username: '_username'
+                      Password: '_password'
 
 where:
 
 1. ``Login`` is an element name that MUST be unique.
    The element can be created in context by ``OroElementFactory`` by its name:
 
-   .. code-block:: php
+    .. code-block:: php
 
-
-      $this->elementFactory->createElement('Login')
+        $this->elementFactory->createElement('Login')
 
 2. ``selector`` defines how web driver shall find the element on the page.
    By default, when the selector type is not specified, the |css selector| is used.
    XPath selector is also supported and may be provided with the following configuration:
 
-   .. code-block:: yaml
+    .. code-block:: yaml
 
-
-       selector:
-           type: xpath
-           locator: //span[id='mySpan']/ancestor::form/
+        selector:
+            type: xpath
+            locator: //span[id='mySpan']/ancestor::form/
 
 3. The ``class`` namespace for element's class (should be extended from ``Oro\Bundle\TestFrameworkBundle\Behat\Element\Element``).
    When omitted, the ``Oro\Bundle\TestFrameworkBundle\Behat\Element\Element`` class is used by default.
@@ -416,20 +398,19 @@ By default, tests use the |named field selector| to map form fields. Name field 
 
 .. code-block:: yaml
 
-
     oro_behat_extension:
-      elements:
-        Payment Method Config Type Field:
-          class: Oro\Bundle\PaymentBundle\Tests\Behat\Element\PaymentMethodConfigType
-        Payment Rule Form:
-          selector: "form[id^='oro_payment_methods_configs_rule']"
-          class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
-          options:
-            mapping:
-              Method:
-                type: 'xpath'
-                locator: '//div[@id[starts-with(.,"uniform-oro_payment_methods_configs_rule_method")]]'
-                element: Payment Method Config Type Field
+        elements:
+            Payment Method Config Type Field:
+                class: Oro\Bundle\PaymentBundle\Tests\Behat\Element\PaymentMethodConfigType
+            Payment Rule Form:
+                selector: "form[id^='oro_payment_methods_configs_rule']"
+                class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+                options:
+                    mapping:
+                        Method:
+                            type: 'xpath'
+                            locator: '//div[@id[starts-with(.,"uniform-oro_payment_methods_configs_rule_method")]]'
+                            element: Payment Method Config Type Field
 
 Now you should implement the element's ``setValue`` method:
 
@@ -462,7 +443,6 @@ Now you can use it in a standard step:
 
 .. code-block:: gherkin
 
-
     Feature: Payment Rules CRUD
       Scenario: Creating Payment Rule
         Given I login as administrator
@@ -478,17 +458,16 @@ Sometimes, a form appears in the iframe. Behat can switch to the iframe by its i
 
 .. code-block:: yaml
 
-
-      oro_behat_extension:
+    oro_behat_extension:
         elements:
-          CustomContactUsForm:
-            selector: 'div#page'
-            class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
-            options:
-              embedded-id: embedded-form
-              mapping:
-                First name: 'custom_bundle_contactus_contact_request[firstName]'
-                Last name: 'custom_bundle_contactus_contact_request[lastName]'
+            CustomContactUsForm:
+                selector: 'div#page'
+                class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+                options:
+                    embedded-id: embedded-form
+                    mapping:
+                        First name: 'custom_bundle_contactus_contact_request[firstName]'
+                        Last name: 'custom_bundle_contactus_contact_request[lastName]'
 
 .. _behat-page-element:
 
@@ -501,12 +480,11 @@ Typical Page configuration:
 
 .. code-block:: yaml
 
-
     oro_behat_extension:
-      pages:
-        UserProfileView:
-          class: Oro\Bundle\UserBundle\Tests\Behat\Page\UserProfileView
-          route: 'oro_user_profile_view'
+        pages:
+            UserProfileView:
+              class: Oro\Bundle\UserBundle\Tests\Behat\Page\UserProfileView
+              route: 'oro_user_profile_view'
 
 Sample Page class:
 
@@ -561,7 +539,6 @@ You use both faker and :ref:`entity references <behat-entity-references>` in inl
 
 .. code-block:: none
 
-
     Given the following contacts:
       | First Name | Last Name | Email     |
       | Joan       | Anderson  | <email()> |
@@ -588,7 +565,6 @@ Sometimes you need many different entities with complex relationships. In such c
 Fixtures should be located in the ``{BundlePath}/Tests/Behat/Features/Fixtures`` directory. To load a fixture before the feature tests execution, add a tag (annotation) that is constructed using the following convention ``@fixture-BundleName:fixture_file_name.yml``, e.g.:
 
 .. code-block:: gherkin
-
 
     @fixture-OroCRMBundle:mass_action.yml
     Feature: Mass Delete records
@@ -696,7 +672,6 @@ Cucumber does not differentiate between the keywords, but choosing the right one
 
 .. code-block:: gherkin
 
-
     Feature: User login
       In order to login in application
       As an OroCRM admin
@@ -746,52 +721,46 @@ Create a tmpfs directory:
 
 .. code-block:: none
 
-
-   sudo mkdir /var/tmpfs
-   sudo mount -t tmpfs -o size=4G tmpfs /var/tmpfs
+    sudo mkdir /var/tmpfs
+    sudo mount -t tmpfs -o size=4G tmpfs /var/tmpfs
 
 Edit ``/etc/mysql/mysql.conf.d/mysqld.cnf``
 
 .. code-block:: ini
 
-
-   datadir = /var/tmpfs/mysql
+    datadir = /var/tmpfs/mysql
 
 Add new storage to ``/etc/fstab``:
 
 .. code-block:: ini
 
 
-   tmpfs  /var/tmpfs  tmpfs  nodev,nosuid,noexec,noatime,size=4G  0 0
+    tmpfs  /var/tmpfs  tmpfs  nodev,nosuid,noexec,noatime,size=4G  0 0
 
 Copy MySQL to tmpfs:
 
 .. code-block:: none
 
-
-   sudo service mysql stop
-   sudo cp -Rfp /var/lib/mysql /var/tmpfs
+    sudo service mysql stop
+    sudo cp -Rfp /var/lib/mysql /var/tmpfs
 
 We need to tell AppArmor to let MySQL write to the new directory by creating an alias between the default directory and the new location.
 
 .. code-block:: none
 
-
-   echo "alias /var/lib/mysql/ -> /var/tmpfs/mysql," | sudo tee -a /etc/apparmor.d/tunables/alias
+    echo "alias /var/lib/mysql/ -> /var/tmpfs/mysql," | sudo tee -a /etc/apparmor.d/tunables/alias
 
 For the changes to take effect, restart AppArmor:
 
 .. code-block:: none
 
-
-   sudo systemctl restart apparmor
+    sudo systemctl restart apparmor
 
 Now you can start MySQL again:
 
 .. code-block:: none
 
-
-   sudo service mysql start
+    sudo service mysql start
 
 (optional) Create Startup Script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -802,38 +771,36 @@ To prepare for auto-recovery using a startup script:
 
 1. Create a mysql_copy_tmpfs.sh in the bin directory (e.g. /usr/local/bin):
 
-   .. code-block:: none
+    .. code-block:: none
 
-
-      #!/bin/bash
-      cp -Rfp /var/lib/mysql /var/tmpfs
+        #!/bin/bash
+        cp -Rfp /var/lib/mysql /var/tmpfs
 
 2. Create a unit configuration file */etc/systemd/system/mysql_copy_tmpfs.service* that will schedule priority of the service execution before the MySQL starts:
 
-   .. code-block:: gherkin
+    .. code-block:: gherkin
 
 
-      [Unit]
-      Description=Copy mysql to tmpfs
-      Before=mysql.service
-      After=mount.target
+        [Unit]
+        Description=Copy mysql to tmpfs
+        Before=mysql.service
+        After=mount.target
 
-      [Service]
-      User=mysql
-      Type=oneshot
-      ExecStart=/bash/script/path/mysql_copy_tmpfs.sh
+        [Service]
+        User=mysql
+        Type=oneshot
+        ExecStart=/bash/script/path/mysql_copy_tmpfs.sh
 
-      [Install]
-      WantedBy=multi-user.target
+        [Install]
+        WantedBy=multi-user.target
 
 3. Once you have created the files, enable the configured service:
 
-   .. code-block:: none
+    .. code-block:: none
 
+        systemctl enable mysql_copy_tmpfs.service
 
-      systemctl enable mysql_copy_tmpfs.service
-
-   It starts automatically after rebooting the machine.
+    It starts automatically after rebooting the machine.
 
 Couldn't generate random unique value for Oro\\Bundle\\UserBundle\\Entity\\User: username in 128 tries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -847,23 +814,21 @@ Remove (unique) suffix in entity property in entity fixture, like in the followi
 
 .. code-block:: yaml
 
-
-   Oro\Bundle\UserBundle\Entity\User:
-       charlie:
-         firstName: Marge
-         lastName: Marge Simpson
-         username (unique): marge228
+    Oro\Bundle\UserBundle\Entity\User:
+        charlie:
+            firstName: Marge
+            lastName: Marge Simpson
+            username (unique): marge228
 
 **Corrected fixture**:
 
 .. code-block:: yaml
 
-
-   Oro\Bundle\UserBundle\Entity\User:
-       charlie:
-         firstName: Marge
-         lastName: Marge Simpson
-         username: marge228
+    Oro\Bundle\UserBundle\Entity\User:
+        charlie:
+            firstName: Marge
+            lastName: Marge Simpson
+            username: marge228
 
 **Route cause**
 
@@ -873,12 +838,11 @@ This option still may be used if combined with the autogenerated fake value, lik
 
 .. code-block:: yaml
 
-
-   Oro\Bundle\UserBundle\Entity\User:
-       charlie:
-         firstName (unique): <firstName()>
-         lastName: Marge Simpson
-         username: marge228
+    Oro\Bundle\UserBundle\Entity\User:
+        charlie:
+            firstName (unique): <firstName()>
+            lastName: Marge Simpson
+            username: marge228
 
 Append snippets
 ^^^^^^^^^^^^^^^
@@ -900,8 +864,7 @@ A quick way to do so is to dry-run your feature tests. In the console, run the f
 
 .. code-block:: none
 
-
-   bin/behat path/to/your.feature --dry-run --append-snippets --snippets-type=regex
+    bin/behat path/to/your.feature --dry-run --append-snippets --snippets-type=regex
 
 
 The feature is executed in the *--dry-run* mode, and at the final stage of execution, you are prompted to add undefined steps mock implementation to one of the existing contexts.
@@ -917,7 +880,7 @@ Auto Suggestion in PhpStorm
 While designing a scenario in the feature file, PhpStorm offers you hints on the implemented steps that match the keywords.  E.g., when you type *grid* or *form*, the steps that involve these items pop up in the suggestions block.
 
 .. image:: /img/backend/tests/phpstorm_step_suggestion.png
-   :alt: PhPStorm step suggestion
+    :alt: PhPStorm step suggestion
 
 If PhpStorm does not offer you any hints as you type, please, verify the following:
 
@@ -930,10 +893,10 @@ Find the Necessary Context
 Every Context class should implement the ``Behat\Behat\Context\Context`` interface. Get the list of implemented contexts and find the necessary one by name.
 
 .. image:: /img/backend/tests/context_implements_interface.png
-   :alt: Context implements interface
+    :alt: Context implements interface
 
 .. image:: /img/backend/tests/find_context.png
-   :alt: Find context file
+    :alt: Find context file
 
 Usually, the name of context is self-explanatory, e.g., GridContext, FormContext, ACLContext, etc.
 
@@ -946,22 +909,19 @@ Type the following command in your console:
 
 .. code-block:: none
 
-
-   bin/behat -dl -s AcmeDemoBundle | grep "flash message"
+    bin/behat -dl -s AcmeDemoBundle | grep "flash message"
 
 .. image:: /img/backend/tests/grep_flash_messages.png
-   :alt: Grep flash messages in the console
+    :alt: Grep flash messages in the console
 
 .. code-block:: none
 
-
-   bin/behat -dl -s AcmeDemoBundle | grep "grid"
+    bin/behat -dl -s AcmeDemoBundle | grep "grid"
 
 .. image:: /img/backend/tests/grep_grid.png
-   :alt: Grep flash messages in the console
+    :alt: Grep flash messages in the console
 
 You can use the behat command-line interface only after you install the application.
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
-
+    :start-after: begin

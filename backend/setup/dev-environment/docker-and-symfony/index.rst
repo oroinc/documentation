@@ -79,7 +79,7 @@ Install the Application
 
 .. code-block:: none
 
-   symfony console oro:install -vvv --sample-data=y --application-url=https://127.0.0.1:8000 --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --organization-name=Oro --timeout=0 --symlink --env=prod -n
+   symfony console oro:install -vvv --sample-data=y --application-url=https://127.0.0.1:8000 --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --organization-name=Oro --timeout=0 --env=prod -n
 
 .. image:: /img/backend/setup/wsl/app-installation-in-progress.png
    :alt: Oro application installation in progress

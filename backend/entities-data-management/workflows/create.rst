@@ -17,7 +17,7 @@ To correctly display the user interface text concerning workflow process (button
 
 Create translation files as:
 
-`<YourBundle>/Resources/translations/workflows.{lang_code}.yml`,
+`src/Acme/Bundle/DemoBundle/Resources/translations/workflows.{lang_code}.yml`,
 
 where `{lang_code}` is a two-letter language code, e.g., `workflows.en.yml`.
 
@@ -25,9 +25,9 @@ You need to create such file for each language that you will use.
 
 .. tip::
 
-   To simplify creation of the translation file, you can first create a workflow configuration, and then dump all related translation keys to the `workflows.{lang_code}.yml`.   For example, if you create workflow 'my_workflow':
+    To simplify creation of the translation file, you can first create a workflow configuration, and then dump all related translation keys to the `workflows.{lang_code}.yml`.   For example, if you create workflow 'my_workflow':
 
-   `bin/console oro:workflow:translations:dump my_workflow --locale=en > <YourBundle>/Resources/translations/workflows.en.yml`
+    `bin/console oro:workflow:translations:dump my_workflow --locale=en > src/Acme/Bundle/DemoBundle/Resources/translations/workflows.en.yml`
 
 For more information, see :ref:`Workflow Translation Wizard <backend--workflows--translation-wizard>`.
 
@@ -41,7 +41,7 @@ The value of the ``workflows`` key is the array of workflows.
 To define a new workflow, add its name to the array.
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:   # This is the workflow name.
@@ -54,7 +54,7 @@ For each workflow key, the corresponding value is the array of the workflow sett
 In the following example, you can find the configuration of the **Phone Call** workflow. This workflow defines the process of making a call to a customer:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:
@@ -75,12 +75,12 @@ Define the user-interface workflow name:
 +----------------------------------------+---------------------+
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/translations/workflows.en.yml
 
-        oro:
-            workflow:
-                phone_call:
-                    label: 'Phone Call'                      # The workflow name as it appears on the user interface.
+    oro:
+        workflow:
+            phone_call:
+                label: 'Phone Call'                      # The workflow name as it appears on the user interface.
 
 
 .. _workflows--actions--clone:
@@ -92,49 +92,47 @@ It is not recommended to modify a system workflow but you can clone it and modif
 
 1. Dump the workflow configuration.
 
-   For example, you want to dump a configuration of the Alternative Checkout workflow to your CustomBundle:
+    For example, you want to dump a configuration of the Alternative Checkout workflow to your DemoBundle:
 
-   .. code-block:: none
+    .. code-block:: none
 
-       php bin/console oro:debug:workflow:definitions b2b_flow_alternative_checkout > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/config/oro/workflows.yml
+        php bin/console oro:debug:workflow:definitions b2b_flow_alternative_checkout > /home/oro/commerce-application/src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml
 
-   where /<Acme>/Bundle/<CustomBundle> is a path to the bundle you want to create a workflow for and command ``oro:debug:workflow:definitions`` displays current workflow definitions registered in the application.
+    where /Acme/Bundle/DemoBundle is a path to the bundle you want to create a workflow for and command ``oro:debug:workflow:definitions`` displays current workflow definitions registered in the application.
 
-   The copy of the initial file will be created in the destination directory.
+    The copy of the initial file will be created in the destination directory.
 
 2. Dump the workflow translations. Translation contain labels for workflow steps, transitions, etc., thus it is necessary to clone them too.
 
-   .. code-block:: none
+    .. code-block:: none
 
-      php bin/console oro:workflow:translations:dump b2b_flow_alternative_checkout --locale=en > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/translations/workflows.en.yml
+        php bin/console oro:workflow:translations:dump b2b_flow_alternative_checkout --locale=en > /home/oro/commerce-application/src/Acme/Bundle/DemoBundle/Resources/translations/workflows.en.yml
 
-   The copy of the initial file will be created in the destination directory.
+    The copy of the initial file will be created in the destination directory.
 
 3. Open copied files with workflow configuration and translations. Change the workflow name in both files. If required, adjust other settings.
 
-   .. important:: You need to change the workflow name to avoid conflicts with the existing workflow: workflows must have unique names in the system.
+    .. important:: You need to change the workflow name to avoid conflicts with the existing workflow: workflows must have unique names in the system.
 
-   .. image:: /img/backend/workflows/workflow_config_change_name.png
+    .. image:: /img/backend/workflows/workflow_config_change_name.png
 
-   .. image:: /img/backend/workflows/workflow_transl_change_name.png
+    .. image:: /img/backend/workflows/workflow_transl_change_name.png
 
 4. Remove section ``init_routes`` from the cloned workflow configuration:
 
-   .. image:: /img/backend/workflows/workflow_config_remove_init.png
+    .. image:: /img/backend/workflows/workflow_config_remove_init.png
 
 5. Load your cloned and adjusted workflow translations to the database:
 
-   .. code-block:: none
+    .. code-block:: none
 
-
-      php bin/console oro:translation:load
+        php bin/console oro:translation:load
 
 6. Load your cloned and adjusted workflow configuration:
 
-   .. code-block:: none
+    .. code-block:: none
 
-
-      php bin/console oro:workflow:definitions:load
+        php bin/console oro:workflow:definitions:load
 
 Toggle Workflow Enable/Disable
 ------------------------------
@@ -153,7 +151,6 @@ This approach can be used if there is a need to automatically activate workflow 
 Here is example of such configuration:
 
 .. code-block:: yaml
-
 
     workflows:
         b2b_flow_sales:
@@ -236,16 +233,17 @@ Some workflows can be used to expand an existing configuration and replace the o
 
 .. code-block:: yaml
 
-
-        disable_operations:
-            operation_one:      #disable operation for custom entities (match by context)
-                - EntityClass1
-                - EntityClass2
-                - EntityClass3
-            operation_two: ~    #disable operation for any occurrences
+    workflows:
+        WORKFLOW_NAME:
+            disable_operations:
+                operation_one:      #disable operation for custom entities (match by context)
+                    - EntityClass1
+                    - EntityClass2
+                    - EntityClass3
+                operation_two: ~    #disable operation for any occurrences
 
 .. note::
-      See :ref:`Work with Operations <bundle-docs-platform-action-bundle-operations>` for more details.
+    See :ref:`Work with Operations <bundle-docs-platform-action-bundle-operations>` for more details.
 
 Filter by Scopes
 ----------------
@@ -256,18 +254,19 @@ Example of scope configuration:
 
 .. code-block:: yaml
 
-
-        scopes:
-            -
-                scopeField1: 2
-            -
-                scopeField1: 42
-                scopeField2: 3
-                scopeField3: 77
+    workflows:
+        WORKFLOW_NAME:
+            scopes:
+                -
+                    scopeField1: 2
+                -
+                    scopeField1: 42
+                    scopeField2: 3
+                    scopeField3: 77
 
 .. note::
-   The `scopeField1`, `scopeField2`, and `scopeField3` are scope criteria that are delivered by scope providers. Scope provider should be registered in the Oro application for the `workflow_definition` scope type.
+    The `scopeField1`, `scopeField2`, and `scopeField3` are scope criteria that are delivered by scope providers. Scope provider should be registered in the Oro application for the `workflow_definition` scope type.
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

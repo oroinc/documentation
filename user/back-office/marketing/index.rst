@@ -22,7 +22,9 @@ The Marketing Menu in the Oro application provides access tools for managing the
 * :ref:`Landing page <user-guide--landing-pages>`
 * :ref:`Content Blocks <user-guide--landing-pages--marketing--content-blocks>`
 * :ref:`Customer Login Pages <customer-login-pages>`
+* :ref:`Content Widgets <user-guide--landing-pages--marketing--content-widgets>`
 * :ref:`Digital Assets <digital-assets>`
+* :ref:`Search Synonyms <user-guide-search-synonyms>`
 
 :ref:`Marketing lists <user-guide-marketing-lists>` are lists of contacts segmented according to conditions that are defined for bulk emailing or telephone outreach. In your Oro application, virtually every entity is available as a marketing list target. For instance, marketing lists can be created based on accounts (primary email of a default contact is used) or, if you are using OroCommerce, from customer users, quotes, orders, and shopping lists.
 
@@ -61,4 +63,5 @@ In the storefront, you can also customize the content of :ref:`Customer Login Pa
    Customer Login Pages <customer-login-pages/index>
    Content Widgets <content-widgets/index>
    Digital Assets <digital-assets/index>
+   Search Synonyms <synonyms/index>
 

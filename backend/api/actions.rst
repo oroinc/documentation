@@ -118,24 +118,24 @@ Existing worker processors: |processors.get.yml|, |processors.shared.yml|. Run `
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","To add a new processor to this group, include it to the **security_check** group of actions that execute this action. For example, compare with the **security_check** group of the `create <#create-action>`__ or `update <#update-action>`__ actions."
-   "build_query","Building a query required to load the data.","--"
-   "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
-   "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
-   "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer|."
-   "finalize","Final validation of the loaded data and adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
+    "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","To add a new processor to this group, include it to the **security_check** group of actions that execute this action. For example, compare with the **security_check** group of the `create <#create-action>`__ or `update <#update-action>`__ actions."
+    "build_query","Building a query required to load the data.","--"
+    "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
+    "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
+    "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer|."
+    "finalize","Final validation of the loaded data and adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/get.png
-   :alt: Data flow for get action
+    :alt: Data flow for get action
 
 For examples of usage, see the ``handleGet`` method of |RequestActionHandler|.
 
@@ -161,24 +161,24 @@ Existing worker processors: |processors.get_list.yml|, |processors.shared.yml|. 
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "build_query","Building a query required to load data.","--"
-   "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntitiesByEntitySerializer|."
-   "finalize","Final validation of the loaded data and adding required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "build_query","Building a query required to load data.","--"
+    "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntitiesByEntitySerializer|."
+    "finalize","Final validation of the loaded data and adding required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/get_list.png
-   :alt: Data flow for get_list action
+    :alt: Data flow for get_list action
 
 For examples of usage, see the ``handleGetList`` method of |RequestActionHandler|.
 
@@ -204,23 +204,23 @@ Existing worker processors: |processors.delete.yml|, |processors.shared.yml|. Ru
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "load_data","Loading an entity to be deleted.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "delete_data","Deleting an entity.","--"
-   "finalize","Adding required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "load_data","Loading an entity to be deleted.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "delete_data","Deleting an entity.","--"
+    "finalize","Adding required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/delete.png
-   :alt: Data flow for delete action
+    :alt: Data flow for delete action
 
 For examples of usage, see the ``handleDelete`` method of |RequestActionHandler|.
 
@@ -250,24 +250,24 @@ Existing worker processors: |processors.delete_list.yml|, |processors.shared.yml
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","	Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "build_query","Building a query that will be used to load an entities list to be deleted.","--"
-   "load_data","Loading the list of entities to be deleted.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "delete_data","Deleting the list of entities.","--"
-   "finalize","Adding required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","	Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "build_query","Building a query that will be used to load an entities list to be deleted.","--"
+    "load_data","Loading the list of entities to be deleted.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "delete_data","Deleting the list of entities.","--"
+    "finalize","Adding required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/get_list.png
-   :alt: Data flow for delete_list action.
+    :alt: Data flow for delete_list action.
 
 For examples of usage, see the ``handleDeleteList`` method of |RequestActionHandler|.
 
@@ -293,25 +293,25 @@ Existing worker processors: |processors.create.yml|, |processors.shared.yml|. Ru
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","If you add your own security processor in the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. It is required because the **VIEW** permission is checked here: the created entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by **oro_api.update.load_normalized_entity** processor."
-   "load_data","Creating a new entity object.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
-   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
-   "normalize_data","Converting created entity into array.","--"
-   "finalize","Adding required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|. Also, the processors from this group are not executed for 4."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","If you add your own security processor in the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. It is required because the **VIEW** permission is checked here: the created entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by **oro_api.update.load_normalized_entity** processor."
+    "load_data","Creating a new entity object.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
+    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+    "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+    "normalize_data","Converting created entity into array.","--"
+    "finalize","Adding required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|. Also, the processors from this group are not executed for 4."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/create.png
-   :alt: Data flow for create action
+    :alt: Data flow for create action
 
 For examples of usage, see the ``handleCreate`` method of |RequestActionHandler|.
 
@@ -337,25 +337,25 @@ Existing worker processors: |processors.update.yml|, |processors.shared.yml|. Ru
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource is granted.","When you add a new processor to the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
-   "load_data","Loading an entity object to be updated.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
-   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
-   "normalize_data","Converting updated entity into an array.","--"
-   "finalize","Adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource is granted.","When you add a new processor to the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
+    "load_data","Loading an entity object to be updated.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","Use the same rules as for the **security_check** group to add a new processor to this group."
+    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+    "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+    "normalize_data","Converting updated entity into an array.","--"
+    "finalize","Adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/update.png
-   :alt: Data flow for update action
+    :alt: Data flow for update action
 
 For examples of usage, see the ``handleUpdate`` method of |RequestActionHandler|.
 
@@ -388,22 +388,22 @@ Existing worker processors: |processors.update_list.yml|, |processors.shared.yml
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource is granted.","When you add a new processor to the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
-   "load_data","Loading an request data to the storage.","--"
-   "save_data","Creating an asynchronous batch operation.","--"
-   "finalize","Adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource is granted.","When you add a new processor to the **security_check** group of the `get <#get-action>`__ action, add it to this group as well. This is necessary because the **VIEW** permission is checked here: the updated entity should be returned in the response, and the **security_check** group of the `get <#get-action>`__ action is disabled by the **oro_api.update.load_normalized_entity** processor."
+    "load_data","Loading an request data to the storage.","--"
+    "save_data","Creating an asynchronous batch operation.","--"
+    "finalize","Adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/update_list.png
-   :alt: Data flow for update_list action
+    :alt: Data flow for update_list action
 
 For examples of usage, see the ``handleUpdateList`` method of |RequestActionHandler|.
 
@@ -429,24 +429,24 @@ Existing worker processors: |processors.get_subresource.yml|,  |processors.share
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "build_query","Building a query to use to load data.","--"
-   "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
-   "finalize","Final validation of the loaded data and adding the required response headers","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "build_query","Building a query to use to load data.","--"
+    "load_data","Loading data.","Use the `customize_loaded_data <#customize-loaded-data-action>`__ action to modify loaded data."
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "normalize_data","Converting the loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
+    "finalize","Final validation of the loaded data and adding the required response headers","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/get_subresource.png
-   :alt: Data flow for get_subresource action
+    :alt: Data flow for get_subresource action
 
 For examples of usage, see the ``handleGetSubresource`` method of |RequestActionHandler|.
 
@@ -472,25 +472,25 @@ Existing worker processors: |processors.change_subresource.yml|, |processors.sha
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "load_data","Loading an entity object to be updated.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
-   "normalize_data","Converting the resulting entity into an array.","--"
-   "finalize","Final validation of the loaded data. Adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "load_data","Loading an entity object to be updated.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+    "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+    "normalize_data","Converting the resulting entity into an array.","--"
+    "finalize","Final validation of the loaded data. Adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/update_subresource.png
-   :alt: Data flow for update_subresource action
+    :alt: Data flow for update_subresource action
 
 For examples of usage, see the ``handleUpdateSubresource`` method of |RequestActionHandler|.
 
@@ -498,12 +498,12 @@ An example of how to register a processor to build a form builder:
 
 .. code-block:: php
 
-   acme.api.items.build_form_builder:
+    acme.api.items.build_form_builder:
         class: Oro\Bundle\ApiBundle\Processor\Subresource\ChangeSubresource\BuildFormBuilder
         arguments:
             - '@oro_api.form_helper'
         tags:
-            - { name: oro.api.processor, action: update_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, priority: 100 }
+            - { name: oro.api.processor, action: update_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\DemoBundle\Entity\ShoppingList, priority: 100 }
 
 .. _add-subresource-action:
 
@@ -527,25 +527,25 @@ Existing worker processors: |processors.change_subresource.yml|, |processors.sha
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data to be used by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "load_data","Loading an entity object to be updated.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
-   "normalize_data","Converting the resulting entity into an array.","--"
-   "finalize","Adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data to be used by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "load_data","Loading an entity object to be updated.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+    "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+    "normalize_data","Converting the resulting entity into an array.","--"
+    "finalize","Adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/add_subresource.png
-   :alt: Data flow for add_subresource actions
+    :alt: Data flow for add_subresource actions
 
 For examples of usage, see the ``handleAddSubresource`` method of |RequestActionHandler|.
 
@@ -553,12 +553,12 @@ An example of how to register a processor to build a form builder:
 
 .. code-block:: php
 
-   acme.api.items.build_form_builder:
+    acme.api.items.build_form_builder:
         class: Oro\Bundle\ApiBundle\Processor\Subresource\ChangeSubresource\BuildFormBuilder
         arguments:
             - '@oro_api.form_helper'
         tags:
-            - { name: oro.api.processor, action: add_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, priority: 100 }
+            - { name: oro.api.processor, action: add_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\DemoBundle\Entity\ShoppingList, priority: 100 }
 
 .. _delete-subresource-action:
 
@@ -582,25 +582,25 @@ Existing worker processors: |processors.change_subresource.yml|, |processors.sha
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "load_data","Loading an entity object to be updated.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
-   "normalize_data","Converting the resulting entity into an array.","--"
-   "finalize","Adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "load_data","Loading an entity object to be updated.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+    "save_data","Persisting an entity.","Use the `customize_form_data <#customize-form-data-action>`__ action to modify and validate submitted data, and entities to be persisted into the database."
+    "normalize_data","Converting the resulting entity into an array.","--"
+    "finalize","Adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/delete_subresource.png
-   :alt: Data flow for delete_subresource action
+    :alt: Data flow for delete_subresource action
 
 For examples of usage, see the ``handleDeleteSubresource`` method of |RequestActionHandler|.
 
@@ -608,12 +608,12 @@ An example of how to register a processor to build a form builder:
 
 .. code-block:: php
 
-   acme.api.items.build_form_builder:
+    acme.api.items.build_form_builder:
         class: Oro\Bundle\ApiBundle\Processor\Subresource\ChangeSubresource\BuildFormBuilder
         arguments:
             - '@oro_api.form_helper'
         tags:
-            - { name: oro.api.processor, action: delete_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\ShoppingListBundle\Entity\ShoppingList, priority: 100 }
+            - { name: oro.api.processor, action: delete_subresource, group: transform_data, association: items, parentClass: Acme\Bundle\DemoBundle\Entity\ShoppingList, priority: 100 }
 
 .. _get-relationship-action:
 
@@ -637,24 +637,24 @@ Existing worker processors: |processors.get_relationship.yml|, |processors.share
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "build_query","Building a query to use to load data.","--"
-   "load_data","Loading data.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "normalize_data","Converting loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
-   "finalize","	Final validation of the loaded data and adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "build_query","Building a query to use to load data.","--"
+    "load_data","Loading data.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "normalize_data","Converting loaded data into an array.","In most cases, the processors from this group are skipped because most entities are loaded by the |EntitySerializer| and it returns already normalized data. For details see |LoadEntityByEntitySerializer| and |LoadEntitiesByEntitySerializer|."
+    "finalize","	Final validation of the loaded data and adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/get_relationship.png
-   :alt: Data flow for get_relationship flow
+    :alt: Data flow for get_relationship flow
 
 For example of usage, see the ``handleGetRelationship`` method of |RequestActionHandler|.
 
@@ -680,19 +680,19 @@ Existing worker processors: |processors.update_relationship.yml|, |processors.sh
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "load_data","Loading an entity object to be updated.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","--"
-   "finalize","	Adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "load_data","Loading an entity object to be updated.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+    "save_data","Persisting an entity.","--"
+    "finalize","	Adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by any processor from previous groups. For implementation details see |NormalizeResultActionProcessor|."
 
 For example of usage, see the ``handleUpdateRelationship`` method of |RequestActionHandler|.
 
@@ -718,24 +718,24 @@ Existing worker processors: |processors.add_relationship.yml|, |processors.share
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "load_data","Loading an entity object to be updated.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","--"
-   "finalize","Adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "load_data","Loading an entity object to be updated.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+    "save_data","Persisting an entity.","--"
+    "finalize","Adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/add_relationship.png
-   :alt: Data flow for add_relationship action
+    :alt: Data flow for add_relationship action
 
 For examples of usage, see the ``handleAddRelationship`` method of |RequestActionHandler|.
 
@@ -761,24 +761,24 @@ Existing worker processors: |processors.delete_relationship.yml|, |processors.sh
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API.","--"
-   "normalize_input","Preparing the input data for use by processors from the next groups.","--"
-   "security_check","Checking whether access to the requested resource type is granted.","--"
-   "load_data","Loading an entity object to be updated.","--"
-   "data_security_check","Checking whether access to the loaded data is granted.","--"
-   "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
-   "save_data","Persisting an entity.","--"
-   "finalize","Adding the required response headers.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API.","--"
+    "normalize_input","Preparing the input data for use by processors from the next groups.","--"
+    "security_check","Checking whether access to the requested resource type is granted.","--"
+    "load_data","Loading an entity object to be updated.","--"
+    "data_security_check","Checking whether access to the loaded data is granted.","--"
+    "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
+    "save_data","Persisting an entity.","--"
+    "finalize","Adding the required response headers.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/delete_relationship.png
-   :alt: Data flow for delete_relationship action
+    :alt: Data flow for delete_relationship action
 
 For examples of usage, see the ``handleDeleteRelationship`` method of |RequestActionHandler|.
 
@@ -802,12 +802,12 @@ Existing worker processors: |processors.options.yml|, |processors.shared.yml|. R
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 15, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 15, 30
 
-   "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
-   "resource_check","Checking whether the requested resource type is accessible via API and validating the request parameters.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
+    "resource_check","Checking whether the requested resource type is accessible via API and validating the request parameters.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if an exception has been thrown by a processor of one of the previous groups. For implementation details, see |NormalizeResultActionProcessor|."
 
 For examples of usage, see the ``handleOptionsItem``, ``handleOptionsList``, ``handleOptionsSubresource`` and ``handleOptionsRelationship`` methods of |RequestActionHandler|.
 
@@ -833,11 +833,11 @@ The ``collection`` tag attribute can be used for processors of this action to pr
 
 .. code-block:: php
 
-   services:
-    acme.api.process_my_collection:
-        class: Acme\Bundle\AppBundle\Api\Processor\ProcessMyCollection
-        tags:
-            - { name: oro.api.processor, action: customize_loaded_data, collection: true, class: Acme\Bundle\AppBundle\Entity\MyEntity }
+    services:
+        acme.api.process_my_collection:
+            class: Acme\Bundle\DemoBundle\Api\Processor\ProcessMyCollection
+            tags:
+                - { name: oro.api.processor, action: customize_loaded_data, collection: true, class: Acme\Bundle\DemoBundle\Entity\MyEntity }
 
 .. important:: The collection elements are an associative array, and processors responsible for customizing the collection must keep keys in this array without changes.
 
@@ -845,11 +845,11 @@ The ``collection`` tag attribute can be used for processors of this action to pr
 
     .. code-block:: php
 
-       services:
-        acme.api.compute_my_field:
-            class: Acme\Bundle\AppBundle\Api\Processor\ComputeMyField
-            tags:
-                - { name: oro.api.processor, action: customize_loaded_data, identifier_only: true, class: Acme\Bundle\AppBundle\Entity\MyEntity }
+        services:
+            acme.api.compute_my_field:
+                class: Acme\Bundle\DemoBundle\Api\Processor\ComputeMyField
+                tags:
+                    - { name: oro.api.processor, action: customize_loaded_data, identifier_only: true, class: Acme\Bundle\DemoBundle\Entity\MyEntity }
 
 .. note:: The ``identifier_only`` tag attribute is not supported if the ``collection`` tag attribute equals ``true``. All processors intended for the modification of collections are executed when loading primary entities and entities in to-many associations, even if only the identifier field is requested.
 
@@ -872,17 +872,17 @@ The main processor class: |CustomizeFormDataProcessor|.
 This action is executed when the following |ApiEvents| are dispatched:
 
 .. csv-table::
-   :header: "Event Name","Description"
-   :widths: 15, 30
+    :header: "Event Name","Description"
+    :widths: 15, 30
 
-   "pre_submit","This event is dispatched at the beginning of the Form::submit() method."
-   "submit","This event is dispatched after the Form::submit() method has submitted and mapped the children, and after reverse transformation to normalized representation."
-   "post_submit","This event is dispatched at the very end of the Form::submit()."
-   "pre_validate","This event is dispatched at the end of the form submitting process, just before data validation. It can be used to final form data correcting after all listeners, except data validation listener, are executed and all relationships between submitted data are set."
-   "post_validate","This event is dispatched at the end of the form submitting process, just after data validation. It can be used to finalize the form after all listeners, including data validation listener, are executed. E.g. it can be used to correct form validation result."
-   "pre_flush_data","This event is dispatched after the database transaction is open but before data are flushed into the database."
-   "post_flush_data","This event is dispatched after data are successfully flushed into the database but before the database transaction is committed."
-   "post_save_data","This event is dispatched after data are successfully flushed into the database, and the database transaction is committed. It can be used to perform some not crucial operations after data are saved into the database. It means that failure of these operations will not roll back data saved into the database."
+    "pre_submit","This event is dispatched at the beginning of the Form::submit() method."
+    "submit","This event is dispatched after the Form::submit() method has submitted and mapped the children, and after reverse transformation to normalized representation."
+    "post_submit","This event is dispatched at the very end of the Form::submit()."
+    "pre_validate","This event is dispatched at the end of the form submitting process, just before data validation. It can be used to final form data correcting after all listeners, except data validation listener, are executed and all relationships between submitted data are set."
+    "post_validate","This event is dispatched at the end of the form submitting process, just after data validation. It can be used to finalize the form after all listeners, including data validation listener, are executed. E.g. it can be used to correct form validation result."
+    "pre_flush_data","This event is dispatched after the database transaction is open but before data are flushed into the database."
+    "post_flush_data","This event is dispatched after data are successfully flushed into the database but before the database transaction is committed."
+    "post_save_data","This event is dispatched after data are successfully flushed into the database, and the database transaction is committed. It can be used to perform some not crucial operations after data are saved into the database. It means that failure of these operations will not roll back data saved into the database."
 
 .. note:: All these events use the same context, so it can be used to share data between events.
 
@@ -909,9 +909,9 @@ Example:
 
 .. code-block:: php
 
-   /** @var ConfigProvider $configProvider */
-   $configProvider = $container->get('oro_api.config_provider');
-   $config = $configProvider->getConfig($entityClassName, $version, $requestType, $configExtras);
+    /** @var ConfigProvider $configProvider */
+    $configProvider = $container->get('oro_api.config_provider');
+    $config = $configProvider->getConfig($entityClassName, $version, $requestType, $configExtras);
 
 .. _get-metadata-action:
 
@@ -1034,12 +1034,12 @@ Run ``php bin/console oro:api:debug not_allowed`` to list the processors.
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 30, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 30, 30
 
-   "initialize","The context initialization.","--"
-   "build_response","Building the action response body, if the current request type requires it.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","--"
+    "build_response","Building the action response body, if the current request type requires it.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 For examples of usage, see the ``handleNotAllowedItem``, ``handleNotAllowedList``, ``handleNotAllowedSubresource`` and ``handleNotAllowedRelationship`` methods of |RequestActionHandler|.
 
@@ -1059,11 +1059,11 @@ Run ``php bin/console oro:api:debug unhandled_error`` to list the processors.
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 30, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 30, 30
 
-   "initialize","The context initialization.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
+    "initialize","The context initialization.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
 For examples of usage, see the ``handleUnhandledError`` method of |RequestActionHandler|.
 
@@ -1084,19 +1084,19 @@ Existing worker processors:|processors.batch_update.yml|. Run ``php bin/console 
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 30, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 30, 30
 
-   "initialize","The context initialization.","--"
-   "finalize","Adding the required response headers.","--"
-   "save_data","Persisting entities.","--"
-   "save_errors","Persisting found errors.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |ByStepNormalizeResultActionProcessor|."
+    "initialize","The context initialization.","--"
+    "finalize","Adding the required response headers.","--"
+    "save_data","Persisting entities.","--"
+    "save_errors","Persisting found errors.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |ByStepNormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/batch_update.png
-   :alt: Data flow for batch_update action
+    :alt: Data flow for batch_update action
 
 For examples of usage, see |BatchUpdateHandler|.
 
@@ -1117,17 +1117,17 @@ Existing worker processors:|processors.batch_update_item.yml|. Run ``php bin/con
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
-   :widths: 15, 30, 30
+    :header: "Group Name","Responsibility of Processors","Description"
+    :widths: 15, 30, 30
 
-   "initialize","The context initialization.","--"
-   "transform_data","Converts the request data to entity object.","--"
-   "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |ByStepNormalizeResultActionProcessor|."
+    "initialize","The context initialization.","--"
+    "transform_data","Converts the request data to entity object.","--"
+    "normalize_result","Building the action result.","The processors from this group are executed even if a processor of one of the previous groups throws an exception. For implementation details, see |ByStepNormalizeResultActionProcessor|."
 
 The following diagram shows the main data flow for this action:
 
 .. image:: /img/backend/api/batch_update_item.png
-   :alt: Data flow for batch_update_item action
+    :alt: Data flow for batch_update_item action
 
 For examples of usage, see |BatchUpdateItem|.
 
@@ -1270,7 +1270,7 @@ To create a new action, to create two classes:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\ProductBundle\Api\Processor;
+    namespace Acme\Bundle\DemoBundle\Api\Processor;
 
     use Oro\Bundle\ApiBundle\Processor\ApiContext;
 
@@ -1280,7 +1280,7 @@ To create a new action, to create two classes:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\ProductBundle\Api\Processor;
+    namespace Acme\Bundle\DemoBundle\Api\Processor;
 
     use Oro\Component\ChainProcessor\ActionProcessor;
 
@@ -1299,12 +1299,12 @@ Additionally, you need to register your processor in the dependency injection co
 
 .. code-block:: yaml
 
-        acme.my_action.processor:
-            class: Acme\Bundle\ProductBundle\Api\Processor\MyActionProcessor
-            public: false
-            arguments:
-                - '@oro_api.processor_bag'
-                - my_action # the name of an action
+    acme.my_action.processor:
+        class: Acme\Bundle\DemoBundle\Api\Processor\MyActionProcessor
+        public: false
+        arguments:
+            - '@oro_api.processor_bag'
+            - my_action # the name of an action
 
 If you need to create groups for your action, register them in the ApiBundle configuration. To do this, add `Resources/config/oro/app.yml` to your bundle, for example:
 
@@ -1324,4 +1324,4 @@ If you need to create groups for your action, register them in the ApiBundle con
 .. note:: The ``priority`` attribute is used to control the order in which groups of processors are executed. The higher the priority, the earlier a group of processors is executed. The default value is 0. The possible range is from -254 to 252. For details on processor creation, see the :ref:`Processors <web-api--processors>` section.
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

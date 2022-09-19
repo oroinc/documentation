@@ -91,7 +91,7 @@ To change the default global pricing settings:
 
    * **Default Currency** --- The currency that is used by default to show prices in the storefront.
 
-3. To customize the option configuration, clear the **Use Default** check box next to the option and select or type in the new option value.
+3. To customize the option configuration, clear the **Use Default** checkbox next to the option and select or type in the new option value.
 
 #. To add a price list to the default price lists:
 

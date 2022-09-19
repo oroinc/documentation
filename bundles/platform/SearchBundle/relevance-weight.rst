@@ -56,7 +56,7 @@ First, create an event listener class:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\TestBundle\EventListener;
+    namespace Acme\Bundle\DemoBundle\EventListener;
 
     use Oro\Bundle\OrganizationBundle\Entity\BusinessUnit;
     use Oro\Bundle\SearchBundle\Engine\IndexerInterface;
@@ -65,7 +65,11 @@ First, create an event listener class:
 
     class SetSearchRelevanceWeightListener
     {
-        public function onPrepareEntityMap(PrepareEntityMapEvent $event)
+        /**
+         * @param PrepareEntityMapEvent $event
+         * @return void
+         */
+        public function onPrepareEntityMap(PrepareEntityMapEvent $event): void
         {
             $entity = $event->getEntity();
 
@@ -85,7 +89,7 @@ Then, register this event listener in the DI container:
 
     services:
         acme_test.event_listener.search.set_search_relevance_weight:
-            class: Acme\Bundle\TestBundle\EventListener\SetSearchRelevanceWeightListener
+            class: Acme\Bundle\DemoBundle\EventListener\SetSearchRelevanceWeightListener
             tags:
                 - { name: kernel.event_listener, event: oro_search.prepare_entity_map, method: onPrepareEntityMap }
 

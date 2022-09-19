@@ -26,7 +26,7 @@ To configure email, calendar events, and task synchronization with Microsoft 365
    .. image:: /user/img/system/user_management/user-microsoft-conection.png
       :alt: Settings menu options available on the user level
 
-7. Clear the **Use Organization** check box to override the organization-wide setting for a selected user.
+7. Clear the **Use Organization** checkbox to override the organization-wide setting for a selected user.
 
 8. In the **Synchronization Settings** section, determine how often the data synchronization should be performed. The interval is set in minutes.
 

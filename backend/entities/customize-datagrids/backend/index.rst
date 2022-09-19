@@ -101,7 +101,7 @@ If datasource supports parameters binding, you can specify an additional option 
                     select:
                         - u
                     from:
-                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
+                        { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
                 where:
                     and:
                         - u.group = :group_id
@@ -157,7 +157,7 @@ So lets define few columns:
                 query:
                     select: [ o.firstName, o.lastName, o.age ]
                     from:
-                        - { table: ACME\Bundle\DemoBundle\Entity\SomeEntity, alias: o } #defining table class using FQCN
+                        - { table: Acme\Bundle\DemoBundle\Entity\SomeEntity, alias: o } #defining table class using FQCN
     #                    - { table: '%acme_demo.entity.some_entity.class%', alias: o } #defining table class using parameter
             columns:
                 firstName:                                   # data identifier will be taken from column name

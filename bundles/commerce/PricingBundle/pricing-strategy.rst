@@ -14,7 +14,7 @@ Example:
 
 
     oro_pricing.pricing_strategy.merge_price_combining_strategy:
-        class: Acme\Bundle\AcmeBundle\PricingStrategy\YourPricingStrategy
+        class: Acme\Bundle\DemoBundle\PricingStrategy\YourPricingStrategy
         parent: acme.pricing_strategy.your_pricing_strategy
         tags:
             - { name: acme.price_strategy, alias: your_strategy }

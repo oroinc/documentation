@@ -7,7 +7,7 @@ Manage Payment Terms in the Back-Office
 
 Use payment terms configured per customer to help them use the payment conditions guaranteed by their contract with your company.
 
-Payment term is a set of conditions required for the sale to be completed, e.g. the period that is allowed to a buyer to pay off the amount due. Payment terms may also include cash in advance requirement, cash collection on delivery, a deferred payment period of 10/20/30 days, etc.
+A payment term is a set of conditions required for a sale to be completed, e.g., the period that is allowed for a buyer to pay off the amount due. Payment terms may also include cash in the advance requirement, cash collection on delivery, a deferred payment period of 10/20/30 days, etc.
 
 .. hint:: **To use payment terms in the storefront:**
 
@@ -35,7 +35,7 @@ To create a new payment term:
       :class: with-border
       :alt: Provide payment term name
 
-3. Type in the label that is informative for both the sales person and the customer buyer, as it will be exposed as one of the payment options for both parties.
+3. Type in the label that is informative for both the salesperson and the customer buyer, as it will be exposed as one of the payment options for both parties.
 4. Click **Save**.
 
 .. finish_payment_term

@@ -25,9 +25,9 @@ To create a new quote from the customer request for quote (RFQ):
 
    b) Enter the quote expiration information in the **Valid Until** date and time boxes.
 
-   c) Select an order fulfilment officer in the **Assigned To** box.
+   c) Select an order fulfillment officer in the **Assigned To** box.
 
-   d) Select the assigned customer user that will receive the order delivery in the **Assigned Customer** box.
+   d) Select the assigned customer user to receive the order delivery in the **Assigned Customer** box.
 
    .. image New Quote > Line Items (filled)
 
@@ -37,11 +37,11 @@ To create a new quote from the customer request for quote (RFQ):
 
       .. image Sample offer.
 
-      To offer alternative quantity and prices, use **+ Add Offer**.
+      To offer alternative quantities and prices, use **+ Add Offer**.
 
       .. image Add Offer
 
-      Add notes to the quote line, if necessary: click **Add notes** in the Seller Notes section.
+      If necessary, add notes to the quote line: click **Add notes** in the Seller Notes section.
 
       .. image Notes
 
@@ -53,34 +53,34 @@ To create a new quote from the customer request for quote (RFQ):
 
      .. image Add Product
 
-6. In the **Shipping Address** section, provide the details about shipping destination address, if possible.
+6. In the **Shipping Address** section, provide the details about the shipping destination address, if possible.
 
    .. image Shipping address
 
-   Depending on the system configuration, the customer may be offered a limited set of the shipping options (only those that are available for the provided address).
+   Depending on the system configuration, the customer may be offered limited shipping options (only those available for the provided address).
 
    .. image Shipping Options.
 
 7. In the **Shipping Information**, configure the default shipping option pre-selected for the customer on the checkout:
 
-   .. a) In the **Shipping Methods** list, tick the boxes next to the shipping methods that you would like the customer use for this order delivery.
+   .. a) In the **Shipping Methods** list, tick the boxes next to the shipping methods you would like the customer to use for this order delivery.
 
    a) In the **Shipping Methods** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration on the checkout.
 
-   .. .. note:: When none of the methods are selected, the customer can use any of the listed methods.
+   .. .. note:: When none of the methods are selected, the customer can use any listed methods.
 
    .. .. note:: Once you change the existing settings, the previous configuration will be saved for your information in the previously Selected Shipping Method log above the list of the shipping methods.
 
-   .. b) If necessary, select the preferred shipping method from the **Default Shipping Method** list. The customer will be able to change the option to any other available shipping method.
+   .. b) If necessary, select the preferred shipping method from the **Default Shipping Method** list. The customer can change the option to any other available shipping method.
 
-   b) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one dynamically generated based on the shipping method selection.
+   b) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one that is dynamically generated based on the selected shipping method.
 
-   c) To enforce using only the default Shipping method selected earlier, enable the **Shipping Method Locked** flag. When the shippig method is locked, the buyer does not see any other payment options but the default one.
+   c) To enforce using only the default Shipping method selected earlier, enable the **Shipping Method Locked** flag. When the shipping method is locked, the buyer does not see any other payment options but the default one.
 
-   d) Tick the **Allow Unlisted Shipping Methods** box to allow using the shipping method that is already selected as a default one, even if it is disabled by the shipping rule configuration.
+   d) Tick the **Allow Unlisted Shipping Methods** box to allow using the shipping method already selected as a default one, even if the shipping rule configuration disables it.
 
 8. Optionally, select a **Payment Term** as an available payment method.
 
 9. Click **Save**.
 
-Once the quote is created, you can send it to the customer who can further negotiate or convert it to order and proceed to the checkout.
+Once the quote is created, you can send it to the customer, who can further negotiate or convert it to order and proceed to the checkout.

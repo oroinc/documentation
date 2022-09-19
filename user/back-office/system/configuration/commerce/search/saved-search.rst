@@ -42,7 +42,7 @@ To configure saved search settings:
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. You can enable or disable the following options (clear the **Use Default** check box to customize the settings):
+3. You can enable or disable the following options (clear the **Use Default** checkbox to customize the settings):
 
    * **Enable Saved Search Results** - When this option is enabled, customer users can save their search results to return to them later from the "Saved Searches" page in their account and to subscribe to periodic email notifications.
 

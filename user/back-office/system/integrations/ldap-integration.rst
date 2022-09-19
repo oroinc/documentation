@@ -86,7 +86,7 @@ To set up an integration with LDAP:
 
    .. image:: /user/img/system/integrations/ldap/ldap_synch.png
 
-   Select the **Enable Two Way Sync** check box to upload user-related data both from the LDAP server to the Oro application and back.
+   Select the **Enable Two Way Sync** checkbox to upload user-related data both from the LDAP server to the Oro application and back.
 
    If the box is unselected, data from the LDAP server will be loaded into the Oro application, but changes performed in Oro application will not be synchronized with the target server.
 

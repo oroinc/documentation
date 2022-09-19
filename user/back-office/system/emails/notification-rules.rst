@@ -54,13 +54,13 @@ To create a notification rule:
    An email notification can be sent to specific users and/or user groups and/or external email address:
 
    * **Users** --- Specify users to send notifications to. Start entering a name of the user, and when suggestions appear, click one to select it. Click the **x** icon to remove a user from recipients.
-   * **Groups** --- Select check boxes in front of the user groups whose members are to receive the notifications.
+   * **Groups** --- Select checkboxes in front of the user groups whose members are to receive the notifications.
    * **Email** --- Enter the required email address.
-   * **Owner** --- Select this check box to send notifications to the owner of the record for which the event takes place.
+   * **Owner** --- Select this checkbox to send notifications to the owner of the record for which the event takes place.
 
-   .. hint:: The **Owner** check box is available only when the entity selected for **Entity Name** has the :ref:`ownership type <user-guide-user-management-permissions-ownership-type>` set to *User*.
+   .. hint:: The **Owner** checkbox is available only when the entity selected for **Entity Name** has the :ref:`ownership type <user-guide-user-management-permissions-ownership-type>` set to *User*.
 
-   * **Additional Associations** --- This is a list of entities with the email field whose records can be linked to records of the entity selected for the **Event Name**. Select check boxes in front of the required associations to send notification emails to their addresses.
+   * **Additional Associations** --- This is a list of entities with the email field whose records can be linked to records of the entity selected for the **Event Name**. Select checkboxes in front of the required associations to send notification emails to their addresses.
     
      Example:
 

@@ -81,7 +81,7 @@ Example of ``convertAssociationJoinToSubquery`` usage in a datagrid listener:
             $config->getOrmQuery()->convertAssociationJoinToSubquery(
                 'g',
                 'groupName',
-                'Acme\Bundle\AppBundle\Entity\UserGroup'
+                'Acme\Bundle\DemoBundle\Entity\UserGroup'
             );
         }
     }
@@ -96,7 +96,7 @@ The original query:
         select:
             - g.name as groupName
         from:
-            - { table: Acme\Bundle\AppBundle\Entity\User, alias: u }
+            - { table: Acme\Bundle\DemoBundle\Entity\User, alias: u }
         join:
             left:
                 - { join: u.group, alias: g }
@@ -109,9 +109,9 @@ The converted query:
 
     query:
         select:
-            - (SELECT g.name FROM Acme\Bundle\AppBundle\Entity\UserGroup AS g WHERE g = u.group) as groupName
+            - (SELECT g.name FROM Acme\Bundle\DemoBundle\Entity\UserGroup AS g WHERE g = u.group) as groupName
         from:
-            - { table: Acme\Bundle\AppBundle\Entity\User, alias: u }
+            - { table: Acme\Bundle\DemoBundle\Entity\User, alias: u }
 
 Please investigate this class to find out all other features.
 

@@ -18,7 +18,7 @@ Each configuration extension must implement |ConfigExtensionInterface| (you can 
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Api;
+    namespace Acme\Bundle\DemoBundle\Api;
 
     use Oro\Bundle\ApiBundle\Config\Extension\AbstractConfigExtension;
 
@@ -27,12 +27,12 @@ Each configuration extension must implement |ConfigExtensionInterface| (you can 
     }
 
 .. code-block:: yaml
-   :caption: config/config.yml
+    :caption: config/config.yml
 
     services:
-      acme.api.my_config_extension:
-        class: Acme\Bundle\AcmeBundle\Api\MyConfigExtension
-        public: false
+        acme.api.my_config_extension:
+            class: Acme\Bundle\DemoBundle\Api\MyConfigExtension
+            public: false
 
     oro_api:
         config_extensions:
@@ -80,7 +80,7 @@ Example:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Api;
+    namespace Acme\Bundle\DemoBundle\Api;
 
     use Symfony\Component\Config\Definition\Builder\NodeBuilder;
     use Oro\Bundle\ApiBundle\Config\Extension\AbstractConfigExtension;
@@ -88,9 +88,9 @@ Example:
     class MyConfigExtension extends AbstractConfigExtension
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function getConfigureCallbacks()
+        public function getConfigureCallbacks(): array
         {
             return [
                 'entities.entity' => function (NodeBuilder $node) {
@@ -100,9 +100,9 @@ Example:
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function getPreProcessCallbacks()
+        public function getPreProcessCallbacks(): array
         {
             return [
                 'entities.entity' => function (array $config) {
@@ -113,9 +113,9 @@ Example:
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function getPostProcessCallbacks()
+        public function getPostProcessCallbacks(): array
         {
             return [
                 'entities.entity' => function (array $config) {
@@ -140,14 +140,17 @@ An example of simple configuration section:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Api;
+    namespace Acme\Bundle\DemoBundle\Api\Config\Definition;
 
-    use Symfony\Component\Config\Definition\Builder\NodeBuilder;
     use Oro\Bundle\ApiBundle\Config\Definition\AbstractConfigurationSection;
+    use Symfony\Component\Config\Definition\Builder\NodeBuilder;
 
     class MyConfiguration extends AbstractConfigurationSection
     {
-        public function configure(NodeBuilder $node)
+        /**
+         * @inheritDoc
+         */
+        public function configure(NodeBuilder $node): void
         {
             $node->scalarNode('some_option');
         }
@@ -157,15 +160,18 @@ An example of a configuration section that can be extended by other bundles:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Api;
+    namespace Acme\Bundle\DemoBundle\Api\Config\Definition;
 
+    use Oro\Bundle\ApiBundle\Config\Definition\AbstractConfigurationSection;
     use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
     use Symfony\Component\Config\Definition\Builder\NodeBuilder;
-    use Oro\Bundle\ApiBundle\Config\Definition\AbstractConfigurationSection;
 
     class MyConfiguration extends AbstractConfigurationSection
     {
-        public function configure(NodeBuilder $node)
+        /**
+         * @inheritDoc
+         */
+        public function configure(NodeBuilder $node): void
         {
             $sectionName = 'my_section';
 
@@ -183,14 +189,15 @@ An example of a configuration section loader:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Api;
+    namespace Acme\Bundle\DemoBundle\Api\Config\Loader;
 
+    use Acme\Bundle\DemoBundle\Api\Config\MyConfigSection;
     use Oro\Bundle\ApiBundle\Config\Loader\AbstractConfigLoader;
 
     class MyConfigLoader extends AbstractConfigLoader
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
         public function load(array $config)
         {
@@ -207,24 +214,26 @@ An example of a configuration extension:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Api;
+    namespace Acme\Bundle\DemoBundle\Api\Config\Extension;
 
+    use Acme\Bundle\DemoBundle\Api\Config\Definition\MyConfiguration;
+    use Acme\Bundle\DemoBundle\Api\Config\Loader\MyConfigLoader;
     use Oro\Bundle\ApiBundle\Config\Extension\AbstractConfigExtension;
 
     class MyConfigExtension extends AbstractConfigExtension
     {
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function getEntityConfigurationSections()
+        public function getEntityConfigurationSections(): array
         {
             return ['my_section' => new MyConfiguration()];
         }
 
         /**
-         * {@inheritdoc}
+         * @inheritDoc
          */
-        public function getEntityConfigurationLoaders()
+        public function getEntityConfigurationLoaders(): array
         {
             return ['my_section' => new MyConfigLoader()];
         }
@@ -236,14 +245,14 @@ An example of how to use the created configuration section:
 
     api:
         entities:
-            Acme\Bundle\AcmeBundle\Entity\AcmeEntity:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
                 my_section:
                     my_option: value
 
 To check that your configuration section is added correctly, run ``php bin/console oro:api:config:dump-reference``. The output should look similar to the following:
 
 .. code-block:: yaml
-   :caption: Resources/config/oro/api.yml
+    :caption: Resources/config/oro/api.yml
 
     api:
         entities:
@@ -252,4 +261,4 @@ To check that your configuration section is added correctly, run ``php bin/conso
                     my_option: ~
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

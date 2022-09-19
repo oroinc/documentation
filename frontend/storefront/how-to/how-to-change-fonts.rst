@@ -3,7 +3,7 @@
 How to Change Fonts and Typography in the Storefront
 ====================================================
 
-.. note:: We assume that you are making all customizations in your custom ``AppBundle`` (placed in the folder ``src/AppBundle``).
+.. note:: We assume that you are making all customizations in your custom ``AcmeDemoBundle`` (placed in the folder ``src/Acme/Bundle/DemoBundle``).
 
 .. note:: You have to insert this code into your own **styles.scss** file as described in
     the :ref:`CSS Files Structure <dev-doc-frontend-css-theme-structure>` article.

@@ -192,7 +192,6 @@ The important part in this migration (which is different from common Doctrine mi
 It is passed through the ``options`` argument of the ``addColumn()`` method:
 
 .. code-block:: php
-
    :emphasize-lines: 3
 
    // ...

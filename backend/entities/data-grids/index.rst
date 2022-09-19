@@ -26,10 +26,10 @@ The ``source`` option is used to configure a Doctrine query builder that is used
 to be displayed in the grid:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        app-tasks-grid:
+        acme-tasks-grid:
             source:
                 type: orm
                 query:
@@ -40,7 +40,7 @@ to be displayed in the grid:
                         - task.dueDate
                         - priority.label AS taskPriority
                     from:
-                        - { table: Acme\Bundle\AppBundle\Entity\Task, alias: task }
+                        - { table: Acme\Bundle\DemoBundle\Entity\Task, alias: task }
                     join:
                         left:
                             - { join: task.priority, alias: priority }
@@ -51,10 +51,10 @@ Displayed Columns
 Then, the ``columns`` option needs to be used to configure how which data will be displayed:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        app-tasks-grid:
+        acme-tasks-grid:
             # ...
             columns:
                 id:
@@ -80,10 +80,10 @@ Use the ``sorters`` option to define on which columns' header the user can click
 data:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        app-tasks-grid:
+        acme-tasks-grid:
             # ...
             sorters:
                 columns:
@@ -117,10 +117,10 @@ The ``data_name`` denotes the name of the property to filter and will be used as
 datagrid's query builder.
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        app-tasks-grid:
+        acme-tasks-grid:
             # ...
             filters:
                 columns:
@@ -146,10 +146,10 @@ Complete Datagrid Configuration
 The final datagrid configuration now looks like this:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/datagrids.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        app-tasks-grid:
+        acme-tasks-grid:
             source:
                 type: orm
                 query:
@@ -160,7 +160,7 @@ The final datagrid configuration now looks like this:
                         - task.dueDate
                         - priority.label AS taskPriority
                     from:
-                        - { table: Acme\Bundle\AppBundle\Entity\Task, alias: task }
+                        - { table: Acme\Bundle\DemoBundle\Entity\Task, alias: task }
                     join:
                         left:
                             - { join: task.priority, alias: priority }
@@ -218,9 +218,9 @@ To make your datagrid accessible you need to create a controller that can be vis
 which will serve a view that renders the configured datagrid:
 
 .. code-block:: php
-   :caption: src/AppBundle/Controller/TaskController.php
+   :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
 
-    namespace AppBundle\Controller;
+    namespace Acme\Bundle\DemoBundle\Controller;
 
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -232,10 +232,10 @@ which will serve a view that renders the configured datagrid:
     class TaskController extends AbstractController
     {
         /**
-         * @Route("/", name="app_task_index")
+         * @Route("/", name="acme_task_index")
          * @Template()
          */
-        public function indexAction()
+        public function indexAction(): array
         {
             return [];
         }
@@ -244,11 +244,11 @@ which will serve a view that renders the configured datagrid:
 The view can be very simple if you extend the ``@OroUI/actions/index.html.twig`` template:
 
 .. code-block:: html+jinja
-   :caption: src/AppBundle/Resources/views/Task/index.html.twig
+   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/index.html.twig
 
     {% extends '@OroUI/actions/index.html.twig' %}
 
-    {% set gridName = 'app-tasks-grid' %}
+    {% set gridName = 'acme-tasks-grid' %}
     {% set pageTitle = 'Task' %}
 
 You simply need to configure the name of your datagrid and the title you wish to be displayed.
@@ -262,13 +262,13 @@ Link to the Action
 At last, you need to make the action accessible by creating a menu item:
 
 .. code-block:: yaml
-   :caption: src/AppBundle/Resources/config/oro/navigation.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
 
     menu_config:
         items:
             task_list:
                 label: Tasks
-                route: app_task_index
+                route: acme_task_index
         tree:
             application_menu:
                 children:
@@ -333,7 +333,7 @@ Mixin is a datagrid that contains additional (common) information for use by oth
                 type: orm
                 query:
                     from:
-                        { table: ACME\Bundle\DemoBundle\Entity\User, alias:u }
+                        { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
 
 **Related Articles**
 

@@ -45,7 +45,7 @@ To check whether the field has been added to the Customer entity:
    .. image:: /user/img/system/entity_management/customer_page_referral_entity.png
       :alt: View the +add button in the additional section
 
-   In the dialog that opens, enable the check box next to the required contact, and click **Select**.
+   In the dialog that opens, enable the checkbox next to the required contact, and click **Select**.
    Once selected, the contact is added to the customer record.
 
 Create an Entity Field With a Many to One Relation

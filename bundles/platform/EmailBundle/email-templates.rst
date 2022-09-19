@@ -77,7 +77,7 @@ An example:
 
 1. Create a variable provider:
 
-   .. code-block:: php
+    .. code-block:: php
 
         class MyVariablesProvider implements EntityVariablesProviderInterface
         {
@@ -115,7 +115,7 @@ An example:
 
 2. Create a variable processor:
 
-   .. code-block:: php
+    .. code-block:: php
 
         class MyVariableProcessor implements VariableProcessorInterface
         {
@@ -131,17 +131,17 @@ An example:
 
 3. Register variable provider and processor in the DI container:
 
-   .. code-block:: yaml
+    .. code-block:: yaml
 
         services:
-            acme.emailtemplate.my_variable_provider:
-                class: Acme\Bundle\AcmeBundle\Provider\MyVariablesProvider
+            acme_demo.emailtemplate.my_variable_provider:
+                class: Acme\Bundle\DemoBundle\Provider\MyVariablesProvider
                 public: false
                 tags:
                     - { name: oro_email.emailtemplate.variable_provider, scope: entity }
 
-            acme.emailtemplate.my_variable_processor:
-                class: Acme\Bundle\AcmeBundle\Provider\MyVariableProcessor
+            acme_demo.emailtemplate.my_variable_processor:
+                class: Acme\Bundle\DemoBundle\Provider\MyVariableProcessor
                 public: false
                 tags:
                     - { name: oro_email.emailtemplate.variable_processor, alias: my_processor }
@@ -155,18 +155,29 @@ An example:
 
 1. Create a Twig extension:
 
-   .. code-block:: php
+    .. code-block:: php
 
+        namespace Acme\Bundle\DemoBundle\Twig;
+
+        use Acme\Bundle\DemoBundle\Entity\Some;
         use Twig\Extension\AbstractExtension;
+        use Twig\TwigFunction;
 
         class MyExtension extends AbstractExtension
         {
-            public function getFunctions()
+            /**
+             * @inheritDoc
+             */
+            public function getFunctions(): array
             {
-                return [new Twig\TwigFunction('some_function', [$this, 'getSomeVariableValue'])];
+                return [new TwigFunction('some_function', [$this, 'getSomeVariableValue'])];
             }
 
-            public function getSomeVariableValue(MyEntity $entity): array
+            /**
+             * @param Some $entity
+             * @return array
+             */
+            public function getSomeVariableValue(Some $entity): array
             {
                 $result = [];
                 foreach ($entity->getProducts() as $product) {
@@ -182,11 +193,11 @@ An example:
 
 2. Register the Twig extension in the DI container:
 
-   .. code-block:: yaml
+    .. code-block:: yaml
 
         services:
             acme.twig.my_extension:
-                class: Acme\Bundle\AcmeBundle\Twig\MyExtension
+                class: Acme\Bundle\DemoBundle\Twig\MyExtension
                 public: false
                 tags:
                     - { name: twig.extension }
@@ -194,12 +205,16 @@ An example:
 
 3. Create a DI compiler pass to register the created extension and function in the Email Twig Environment:
 
-   .. code-block:: php
+    .. code-block:: php
+
+        namespace Acme\Bundle\DemoBundle\DependencyInjection\Compiler;
+
+        use Oro\Bundle\EmailBundle\DependencyInjection\Compiler\AbstractTwigSandboxConfigurationPass;
 
         class TwigSandboxConfigurationPass extends AbstractTwigSandboxConfigurationPass
         {
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
             protected function getFunctions(): array
             {
@@ -209,7 +224,7 @@ An example:
             }
 
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
             protected function getFilters(): array
             {
@@ -217,7 +232,7 @@ An example:
             }
 
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
             protected function getTags(): array
             {
@@ -225,7 +240,7 @@ An example:
             }
 
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
             protected function getExtensions(): array
             {
@@ -238,12 +253,18 @@ An example:
 
 4. Register the created compiler pass:
 
-   .. code-block:: php
+    .. code-block:: php
 
-        class AcmeMyBundle extends Bundle
+        namespace Acme\Bundle\DemoBundle;
+
+        use Acme\Bundle\DemoBundle\DependencyInjection\Compiler\TwigSandboxConfigurationPass;
+        use Symfony\Component\DependencyInjection\ContainerBuilder;
+        use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+        class AcmeDemoBundle extends Bundle
         {
             /**
-             * {@inheritdoc}
+             * @inheritDoc
              */
             public function build(ContainerBuilder $container): void
             {
@@ -313,4 +334,4 @@ Valid template:
     </table>
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

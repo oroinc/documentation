@@ -44,7 +44,7 @@ The example below illustrates creating a simple component, such as the one shown
 
 4. To provide a runtime rendering template, create an alias for the Vue import. Since Vue is not the base framework for Oro, enable Page Component to start the Vue application, which will ensure proper integration into the Oro application lifecycle. Next, add the path for page component to ``dynamic-imports:``, create a file, and insert the code below:
 
-   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/config/jsmodules.yml
+   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/default/config/jsmodules.yml
       :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
       :language: yaml
 
@@ -52,13 +52,13 @@ The example below illustrates creating a simple component, such as the one shown
 
 6. In the Twig template, define where our Vue app will be displayed with a specific Page component using the ``data-page-component-vue-app`` shortcut. Copy and paste the code below:
 
-   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/layout.html.twig
+   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/default/layout.html.twig
       :caption: src/{YourBundleName}/Resources/views/layout.html.twig
       :language: html+jinja
 
 7. Register your new widget and append it to the page container in layout. Create a file for this. For more information on the layout update, see the :ref:`Layout <dev-doc-frontend-layouts-layout>` topic.
 
-   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/blank/layout.yml
+   .. literalinclude:: /code_examples_untested/frontend-js/VueAppBundle/Resources/views/layouts/default/layout.yml
       :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/layout.yml
       :language: yaml
 
@@ -118,7 +118,7 @@ The example below implements the same functionality discussed above but uses the
 
 5. To provide a runtime rendering template, create an alias for the Vue import. Since Vue is not the base framework for Oro, enable Page Component to start the Vue application, which will ensure proper integration into the Oro application lifecycle. Next, add the path for page component to ``dynamic-imports:``, create a file, and insert the code below:
 
-   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/config/jsmodules.yml
+   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/default/config/jsmodules.yml
       :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/config/jsmodules.yml
       :language: none
 
@@ -126,13 +126,13 @@ The example below implements the same functionality discussed above but uses the
 
 7. Once the page component with Vue instance is created, declare it in the template of the required page. Copy and paste the code below:
 
-   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/layout.html.twig
+   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/default/layout.html.twig
       :caption: src/{YourBundleName}/Resources/views/layout.html.twig
       :language: html+jinja
 
 8. Register your new widget and append it to the page container in the layout. Create a file for this. For more information on the layout update, see the :ref:`Layout <dev-doc-frontend-layouts-layout>` topic.
 
-   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/blank/layout.yml
+   .. literalinclude:: /code_examples_untested/frontend-js/VueSFCAppBundle/Resources/views/layouts/default/layout.yml
       :caption: src/{YourBundleName}/Resources/views/layouts/{theme}/layout.yml
       :language: yaml
 

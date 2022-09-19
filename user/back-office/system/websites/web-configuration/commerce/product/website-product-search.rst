@@ -18,8 +18,8 @@ To configure the product search settings per website:
 
 4. Customize any of the options by proceeding through the following steps:
 
-   a) Clear the **Use Organization** check box next to the option.
-   b) Enable the required check box or enter the necessary file size and type information.
+   a) Clear the **Use Organization** checkbox next to the option.
+   b) Enable the required checkbox or enter the necessary file size and type information.
 
 5. In the **Product Fulltext Search** section, configure the following options:
 

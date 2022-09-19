@@ -19,14 +19,14 @@ In the Display section, you can configure the following display options for a pa
    .. image:: /user/img/system/user_management/my_user_config_display.png
       :alt: Settings menu options available on the user level
 
-4. Clear the **Use Organization** check box to change the organization-wide setting for the following options:
+4. Clear the **Use Organization** checkbox to change the organization-wide setting for the following options:
 
    **User bar**
 
    +--------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Field              | Description                                                                                                                      |
    +====================+==================================================================================================================================+
-   | Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name).                     |
+   | Show Recent Emails | Select this checkbox to display the recent emails on the user bar (they will appear next to the user name).                      |
    |                    |                                                                                                                                  |
    |                    | .. image:: /user/img/system/user_management/user_configuration_showemailsuserbar.png                                             |
    |                    |    :alt: A recent emails icon displayed on the user bar                                                                          |
@@ -48,9 +48,9 @@ In the Display section, you can configure the following display options for a pa
    +===========================+================================================================================================================+
    | Items Per Page By Default | Select how many records will appear on one page of record grids.                                               |
    +---------------------------+----------------------------------------------------------------------------------------------------------------+
-   | Lock Headers In Grids     | Select this check box to ensure that headers of a record grid will stay visible while you scroll.              |
+   | Lock Headers In Grids     | Select this checkbox to ensure that headers of a record grid will stay visible while you scroll.               |
    +---------------------------+----------------------------------------------------------------------------------------------------------------+
-   | Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
+   | Record Pagination         | Select this checkbox to enable the user navigate to the previous or next grid record from a record view page.  |
    |                           |                                                                                                                |
    |                           | .. image:: /user/img/system/config_system/user_configuration_pagination.png                                    |
    |                           |    :alt: A record pagination sample                                                                            |
@@ -77,7 +77,7 @@ In the Display section, you can configure the following display options for a pa
    +-----------------------+-----------------------------------------------------------------------------------------------------------+
    | Field                 | Description                                                                                               |
    +=======================+===========================================================================================================+
-   | Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
+   | Enable WYSIWYG Editor | Select this checkbox to enable text formatting tools for emails, notes and comments.                      |
    |                       |                                                                                                           |
    |                       | .. image:: /user/img/system/config_system/user_configuration_wysiwyg.png                                  |
    |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
@@ -101,7 +101,7 @@ For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-st
    +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
    | Field                               | Description                                                                                                      |
    +=====================================+==================================================================================================================+
-   | Display SQL In Reports And Segments | Select this check box to enable the user to review the SQL request sent to the system for a report or a segment. |
+   | Display SQL In Reports And Segments | Select this checkbox to enable the user to review the SQL request sent to the system for a report or a segment.  |
    |                                     |                                                                                                                  |
    +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 

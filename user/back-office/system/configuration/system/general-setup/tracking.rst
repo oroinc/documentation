@@ -32,7 +32,7 @@ To tune the tracking configuration:
 
 .. note:: To enable the data transfer to a Matomo account, the **identifier** field of the Tracking Website record should be the same as the |Website ID| used by Matomo.
 
-3. Clear the **Use Default** check box to customize the required option.
+3. Clear the **Use Default** checkbox to customize the required option.
 
 4. Select the checkbox next to the option, choose a new value from the list, or type in the necessary information.
 

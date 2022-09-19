@@ -35,7 +35,7 @@ To update the related products settings per website:
 
    To customize any of these options:
 
-   a) Clear the **Use Organization** check box next to the option.
+   a) Clear the **Use Organization** checkbox next to the option.
    b) Set or clear the option, or enter the quantity.
 
 .. begin_upsell_items_body
@@ -54,7 +54,7 @@ To update the related products settings per website:
 
    To customize any of these options:
 
-   a) Clear the **Use Organization** check box next to the option.
+   a) Clear the **Use Organization** checkbox next to the option.
    b) Set or clear the option, or enter the quantity.
 
 6. Click **Save**.

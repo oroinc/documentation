@@ -17,6 +17,19 @@ In the back-office, this bundle provides the following system configuration opti
 
 To change the frequency of the sitemap generation globally, update the **Changefreq** option in the *Default* section in the **System Configuration > Websites > Sitemap**. The sitemap cron definition will adjust automatically.
 
+Landing Page Configuration
+--------------------------
+
+* **Exclude Direct URLs Of Landing Pages** *boolean* - Enable the option to include only landing pages that are assigned to particular web catalog nodes into the website's sitemap and exclude those accessed via direct URL. Enabling the option prevents landing page duplication in the sitemap file (the default value is true).
+
+* **Include Landing Pages Not Used In Web Catalog** *boolean* - Enable the option to include both assigned to web catalog nodes and unassigned landing pages into the sitemap file (the default value is false).
+
+Possible combinations
+
+.. image:: /img/bundles/SEOBundle/sitemap-config-options.png
+   :alt: Table that explains what landing pages are included and excluded into the sitemap file depending on the selected config options
+
+
 Technical Details
 -----------------
 
@@ -43,9 +56,8 @@ To add custom logic to providers, each provider dispatches events on start and e
 .. code-block:: php
 
 
-
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function getUrlItems(WebsiteInterface $website, $version)
     {
@@ -75,13 +87,12 @@ To create a simple provider, create an instance of the `UrlItemsProvider` with a
 
 .. code-block:: yaml
 
-
     my_provider:
-        class: Oro\Bundle\SEOBundle\Sitemap\Provider\UrlItemProvider
+        class: Acme\Bundle\DemoBundle\Sitemap\Provider\MyProvider
         parent: oro_seo.sitemap.provider.url_items_provider
         arguments:
             - 'my_provider'
-            - AppBundle/Entity/MyEntity
+            - Acme\Bundle\DemoBundle\Entity\Some
         tags:
             - { name: oro_seo.sitemap.url_items_provider, alias: 'my_provider' }
 
@@ -90,14 +101,13 @@ Add a New Provider Available While the Website is Locked
 
 .. code-block:: yaml
 
-
     acme.sitemap.provider.router_sitemap_urls_provider:
-        class: Acme\Bundle\SEOBundle\Sitemap\Provider\AcmeUrlsProvider
+        class: Acme\Bundle\DemoBundle\Sitemap\Provider\SomeUrlsProvider
         public: false
         arguments:
             - '@router'
         tags:
-            - { name: oro_seo.sitemap.website_access_denied_urls_provider, alias: 'acme_urls' }
+            - { name: oro_seo.sitemap.website_access_denied_urls_provider, alias: 'some_urls' }
 
 If the URL provider should always be available, use both `oro_seo.sitemap.url_items_provider` and `oro_seo.sitemap.website_access_denied_urls_provider` tags.
 
@@ -110,19 +120,22 @@ Customize Sitemap Provider Logic
 Your new provider should implement `UrlItemsProviderInterface`:
 
 .. code-block:: php
-   :caption: src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
+    :caption: src/Acme/Bundle/DemoBundle/Sitemap/Provider/MyProvider.php
+
+    namespace Acme\Bundle\DemoBundle\Sitemap\Provider;
+
+    use Oro\Component\SEO\Provider\UrlItemsProviderInterface;
+    use Oro\Component\Website\WebsiteInterface;
 
     class MyProvider implements UrlItemsProviderInterface
     {
-        ...
-            /**
-             * {@inheritdoc}
-             */
-            public function getUrlItems(WebsiteInterface $website)
-            {
-                //Return \Generator|Oro\Bundle\SEOBundle\Model\DTO\UrlItem[]
-            }
-        ...
+        /**
+         * @inheritDoc
+         */
+        public function getUrlItems(WebsiteInterface $website, $version)
+        {
+            // return \Generator|Oro\Bundle\SEOBundle\Model\DTO\UrlItem[]
+        }
     }
 
 and should be register in `UrlItemsProviderRegistry` using the `oro_seo.sitemap.url_items_provider` tag:
@@ -131,7 +144,7 @@ and should be register in `UrlItemsProviderRegistry` using the `oro_seo.sitemap.
 
 
     my_provider:
-        class: AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
+        class: Acme\Bundle\DemoBundle\Sitemap\Provider\MyProvider
         tags:
             - { name: oro_seo.sitemap.url_items_provider, alias: 'my_provider' }
 
@@ -144,32 +157,36 @@ A new `frontend_master_catalog` feature was created to detect if web catalog res
 The provider that depends on this feature should also implement `FeatureToggleableInterface`, use `FeatureCheckerHolderTrait`:
 
 .. code-block:: php
-   :caption: src/AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
+    :caption: src/Acme/Bundle/DemoBundle/Sitemap/Provider/MyProvider.php
 
-    class MyProvider implements UrlItemsProviderInterface, 
+    namespace Acme\Bundle\DemoBundle\Sitemap\Provider;
+
+    use Oro\Bundle\FeatureToggleBundle\Checker\FeatureCheckerHolderTrait;
+    use Oro\Component\SEO\Provider\UrlItemsProviderInterface;
+    use Oro\Component\Website\WebsiteInterface;
+
+    class MyProvider implements UrlItemsProviderInterface
     {
         use FeatureCheckerHolderTrait;
-        ...
-            /**
-             * {@inheritdoc}
-             */
-            public function getUrlItems(WebsiteInterface $website)
-            {
-                if (!$this->isFeaturesEnabled()) {
-                    return;
-                }
-                //Return \Generator|Oro\Bundle\SEOBundle\Model\DTO\UrlItem[]
+
+        /**
+         * @inheritDoc
+         */
+        public function getUrlItems(WebsiteInterface $website, $version)
+        {
+            if (!$this->isFeaturesEnabled()) {
+                return;
             }
-        ...
+            // return \Generator|Oro\Bundle\SEOBundle\Model\DTO\UrlItem[]
+        }
     }
 
 and should be tagged with the `oro_featuretogle.feature` tag for the `frontend_master_catalog` feature.
 
 .. code-block:: yaml
 
-
     my_provider:
-        class: AppBundle/Sitemap/Provider/WebCatalogUrlItemsProvider
+        class: Acme\Bundle\DemoBundle\Sitemap\Provider\MyProvider
         tags:
             - { name: oro_seo.sitemap.url_items_provider, alias: 'my_provider' }
             - { name: oro_featuretogle.feature, feature: frontend_master_catalog }
@@ -246,4 +263,4 @@ Sitemap generation is a deferred process that is executed using the `SitemapGene
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

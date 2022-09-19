@@ -27,51 +27,55 @@ Many-To-One, Unidirectional
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_7/AddDocumentRelationToUser.php
 
-    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
 
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
-    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-    use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
+   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
+   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-    class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
-    {
-        protected $extendExtension;
+   class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
+   {
+       protected ExtendExtension $extendExtension;
 
-        /**
-         * {@inheritdoc}
-         */
-        public function setExtendExtension(ExtendExtension $extendExtension)
-        {
-            $this->extendExtension = $extendExtension;
-        }
+       /**
+        * @inheritDoc
+        */
+       public function setExtendExtension(ExtendExtension $extendExtension)
+       {
+           $this->extendExtension = $extendExtension;
+       }
 
-        /**
-         * {@inheritdoc}
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $this->addRelationsToUser($schema);
-        }
+       /**
+        * @inheritDoc
+        */
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           $this->addRelationsToUser($schema);
+       }
 
-        private function addRelationsToUser(Schema $schema)
-        {
-            $this->extendExtension->addManyToOneRelation(
-                $schema,
-                'oro_user', // owning side table
-                'document', // owning side field name
-                'acme_document', // inverse side table
-                'id', // column name is used to show related entity
-                [
-                    'extend' => [
-                        'owner' => ExtendScope::OWNER_CUSTOM
-                    ]
-                ]
-            );
-        }
-    }
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
+       {
+           $this->extendExtension->addManyToOneRelation(
+               $schema,
+               'oro_user', // owning side table
+               'document', // owning side field name
+               'acme_document', // inverse side table
+               'id', // column name is used to show related entity
+               [
+                   'extend' => [
+                       'owner' => ExtendScope::OWNER_CUSTOM
+                   ]
+               ]
+           );
+       }
+   }
 
 Many-To-One, Bidirectional
 --------------------------
@@ -82,18 +86,18 @@ Many-To-One, Bidirectional
    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
 
    use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\MigrationBundle\Migration\Migration;
    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
    class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
    {
-       protected $extendExtension;
+       protected ExtendExtension $extendExtension;
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function setExtendExtension(ExtendExtension $extendExtension)
        {
@@ -101,14 +105,18 @@ Many-To-One, Bidirectional
        }
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function up(Schema $schema, QueryBag $queries)
        {
            $this->addRelationsToUser($schema);
        }
 
-       private function addRelationsToUser(Schema $schema)
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
        {
            $this->extendExtension->addManyToOneRelation(
                $schema,
@@ -149,18 +157,18 @@ Many-To-Many, Unidirectional
    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
 
    use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\MigrationBundle\Migration\Migration;
    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
    class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
    {
-       protected $extendExtension;
+       protected ExtendExtension $extendExtension;
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function setExtendExtension(ExtendExtension $extendExtension)
        {
@@ -168,14 +176,18 @@ Many-To-Many, Unidirectional
        }
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function up(Schema $schema, QueryBag $queries)
        {
            $this->addRelationsToUser($schema);
        }
 
-       private function addRelationsToUser(Schema $schema)
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
        {
            $this->extendExtension->addManyToManyRelation(
                $schema,
@@ -203,18 +215,18 @@ Many-To-Many, Unidirectional, Without Default Entity
    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
 
    use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\MigrationBundle\Migration\Migration;
    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
    class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
    {
-       protected $extendExtension;
+       protected ExtendExtension $extendExtension;
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function setExtendExtension(ExtendExtension $extendExtension)
        {
@@ -222,14 +234,18 @@ Many-To-Many, Unidirectional, Without Default Entity
        }
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function up(Schema $schema, QueryBag $queries)
        {
            $this->addRelationsToUser($schema);
        }
 
-       private function addRelationsToUser(Schema $schema)
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
        {
            $this->extendExtension->addManyToManyRelation(
                $schema,
@@ -258,18 +274,18 @@ Many-To-Many, Bidirectional
    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
 
    use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\MigrationBundle\Migration\Migration;
    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
    class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
    {
-       protected $extendExtension;
+       protected ExtendExtension $extendExtension;
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function setExtendExtension(ExtendExtension $extendExtension)
        {
@@ -277,14 +293,18 @@ Many-To-Many, Bidirectional
        }
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function up(Schema $schema, QueryBag $queries)
        {
            $this->addRelationsToUser($schema);
        }
 
-       private function addRelationsToUser(Schema $schema)
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
        {
            $this->extendExtension->addManyToManyRelation(
                $schema,
@@ -328,18 +348,18 @@ Many-To-Many, Bidirectional, Without Default Entity
    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
 
    use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\MigrationBundle\Migration\Migration;
    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
    class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
    {
-       protected $extendExtension;
+       protected ExtendExtension $extendExtension;
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function setExtendExtension(ExtendExtension $extendExtension)
        {
@@ -347,14 +367,18 @@ Many-To-Many, Bidirectional, Without Default Entity
        }
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function up(Schema $schema, QueryBag $queries)
        {
            $this->addRelationsToUser($schema);
        }
 
-       private function addRelationsToUser(Schema $schema)
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
        {
            $this->extendExtension->addManyToManyRelation(
                $schema,
@@ -368,7 +392,7 @@ Many-To-Many, Bidirectional, Without Default Entity
                    'extend' => [
                        'owner' => ExtendScope::OWNER_CUSTOM,
                        'without_default' => true
-                    ]
+                   ]
                ]
            );
            $this->extendExtension->addManyToManyInverseRelation(
@@ -389,12 +413,8 @@ Many-To-Many, Bidirectional, Without Default Entity
        }
    }
 
-One-To-Many, Bidirectional
---------------------------
-
-According to the |Doctrine One-To-Many Bidirectional Association|, the one-to-many relationship must be implemented
-as bidirectional unless it uses an additional join-table. Oro implementation of the ExtendExtension defines association
-on the "many" side, so it implies a bidirectional type of relationship.
+One-To-Many, Unidirectional
+---------------------------
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_7/AddDocumentRelationToUser.php
@@ -402,18 +422,18 @@ on the "many" side, so it implies a bidirectional type of relationship.
    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
 
    use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\MigrationBundle\Migration\Migration;
    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
    class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
    {
-       protected $extendExtension;
+       protected ExtendExtension $extendExtension;
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function setExtendExtension(ExtendExtension $extendExtension)
        {
@@ -421,14 +441,18 @@ on the "many" side, so it implies a bidirectional type of relationship.
        }
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function up(Schema $schema, QueryBag $queries)
        {
            $this->addRelationsToUser($schema);
        }
 
-       private function addRelationsToUser(Schema $schema)
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
        {
            $this->extendExtension->addOneToManyRelation(
                $schema,
@@ -447,8 +471,8 @@ on the "many" side, so it implies a bidirectional type of relationship.
        }
    }
 
-One-To-Many, Bidirectional, Without Default Entity
---------------------------------------------------
+One-To-Many, Unidirectional, Without Default Entity
+---------------------------------------------------
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_7/AddDocumentRelationToUser.php
@@ -456,18 +480,18 @@ One-To-Many, Bidirectional, Without Default Entity
    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
 
    use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
    use Oro\Bundle\MigrationBundle\Migration\Migration;
    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
    class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
    {
-       protected $extendExtension;
+       protected ExtendExtension $extendExtension;
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function setExtendExtension(ExtendExtension $extendExtension)
        {
@@ -475,14 +499,18 @@ One-To-Many, Bidirectional, Without Default Entity
        }
 
        /**
-        * {@inheritdoc}
+        * @inheritDoc
         */
        public function up(Schema $schema, QueryBag $queries)
        {
            $this->addRelationsToUser($schema);
        }
 
-       private function addRelationsToUser(Schema $schema)
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
        {
            $this->extendExtension->addOneToManyRelation(
                $schema,
@@ -496,6 +524,149 @@ One-To-Many, Bidirectional, Without Default Entity
                    'extend' => [
                        'owner' => ExtendScope::OWNER_CUSTOM,
                        'without_default' => true
+                   ]
+               ]
+           );
+       }
+   }
+
+One-To-Many, Bidirectional
+--------------------------
+
+.. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_7/AddDocumentRelationToUser.php
+
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
+
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
+   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
+   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+   class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
+   {
+       protected ExtendExtension $extendExtension;
+
+       /**
+        * @inheritDoc
+        */
+       public function setExtendExtension(ExtendExtension $extendExtension)
+       {
+           $this->extendExtension = $extendExtension;
+       }
+
+       /**
+        * @inheritDoc
+        */
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           $this->addRelationsToUser($schema);
+       }
+
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
+       {
+           $this->extendExtension->addOneToManyRelation(
+               $schema,
+               'oro_user', // owning side table
+               'document', // owning side field name
+               'acme_document', // inverse side table
+               ['subject'], // column names are used to show a title of related entity
+               ['description'], // column names are used to show detailed info about related entity
+               ['subject'], // Column names are used to show related entity in a grid
+               [
+                   'extend' => [
+                       'owner' => ExtendScope::OWNER_CUSTOM
+                   ]
+               ]
+           );
+           $this->extendExtension->addOneToManyInverseRelation(
+               $schema,
+               'oro_user', // owning side table
+               'document', // owning side field name
+               'acme_document', // inverse side table
+               'user', // inverse side field name
+               'username', // column name are used to show a title of owning side entity
+               [
+                   'extend' => [
+                       'owner' => ExtendScope::OWNER_CUSTOM
+                   ]
+               ]
+           );
+       }
+   }
+
+One-To-Many, Bidirectional, Without Default Entity
+--------------------------------------------------
+
+.. code-block:: php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_7/AddDocumentRelationToUser.php
+
+   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_7;
+
+   use Doctrine\DBAL\Schema\Schema;
+   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
+   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
+   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
+   use Oro\Bundle\MigrationBundle\Migration\Migration;
+   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+
+   class AddDocumentRelationToUser implements Migration, ExtendExtensionAwareInterface
+   {
+       protected ExtendExtension $extendExtension;
+
+       /**
+        * @inheritDoc
+        */
+       public function setExtendExtension(ExtendExtension $extendExtension)
+       {
+           $this->extendExtension = $extendExtension;
+       }
+
+       /**
+        * @inheritDoc
+        */
+       public function up(Schema $schema, QueryBag $queries)
+       {
+           $this->addRelationsToUser($schema);
+       }
+
+       /**
+        * @param Schema $schema
+        * @return void
+        */
+       private function addRelationsToUser(Schema $schema): void
+       {
+           $this->extendExtension->addOneToManyRelation(
+               $schema,
+               'oro_user', // owning side table
+               'document', // owning side field name
+               'acme_document', // inverse side table
+               ['subject'], // column names are used to show a title of related entity
+               ['description'], // column names are used to show detailed info about related entity
+               ['subject'], // Column names are used to show related entity in a grid
+               [
+                   'extend' => [
+                       'owner' => ExtendScope::OWNER_CUSTOM,
+                       'without_default' => true
+                   ]
+               ]
+           );
+           $this->extendExtension->addOneToManyInverseRelation(
+               $schema,
+               'oro_user', // owning side table
+               'document', // owning side field name
+               'acme_document', // inverse side table
+               'user', // inverse side field name
+               'username', // column name are used to show a title of owning side entity
+               [
+                   'extend' => [
+                       'owner' => ExtendScope::OWNER_CUSTOM
                    ]
                ]
            );

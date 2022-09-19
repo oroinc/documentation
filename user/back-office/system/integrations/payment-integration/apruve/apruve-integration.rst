@@ -35,7 +35,7 @@ To set up a payment method integration with Apruve, perform the following steps:
 
 5. In the **Integration** section, provide the following information:
 
-   * **Test Mode** --- If the check box is selected, the Apruve interaction process can be checked in the test mode without any charges. It enables you to connect to the gateway in a safe environment with no risk to both customers and sales representatives.
+   * **Test Mode** --- If the checkbox is selected, the Apruve interaction process can be checked in the test mode without any charges. It enables you to connect to the gateway in a safe environment with no risk to both customers and sales representatives.
 
    * **API Key** --- An identifier that helps authenticate your account, it is generated individually through the Apruve website.
    * **Merchant ID** --- It is generated individually through the Apruve website.

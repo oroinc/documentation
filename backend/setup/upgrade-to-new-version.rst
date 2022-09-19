@@ -104,7 +104,6 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
        When the following options are not provided, they are set up automatically for the ``test`` environment:
            * --force
-           * --skip-assets
            * --skip-translations
            * --timeout=600
 

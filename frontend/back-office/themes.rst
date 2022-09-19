@@ -57,15 +57,15 @@ Reusable Themes
 In addition to customizing your own application, you can also provide a theme that can be reused in different applications. To achieve this, specify the theme's options in the ``settings.yml`` file that is located in the ``Resources/public/themes/<theme-name>`` directory of your bundle:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/public/themes/acme-theme/settings.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/public/themes/acme-theme/settings.yml
 
     styles:
-        - bundles/acmebundle/themes/acme-theme/css/main.css
-        - bundles/acmebundle/themes/acme-theme/css/ie.css
+        - bundles/acmedemo/themes/acme-theme/css/main.css
+        - bundles/acmedemo/themes/acme-theme/css/ie.css
     label: Acme Demo Theme
-    icon: bundles/acmebundle/themes/acme-theme/images/favicon.ico
-    logo: bundles/acmebundle/themes/acme-theme/images/logo.png
-    screenshot: bundles/acmebundle/themes/acme-theme/images/screenshot.png
+    icon: bundles/acmedemo/themes/acme-theme/images/favicon.ico
+    logo: bundles/acmedemo/themes/acme-theme/images/logo.png
+    screenshot: bundles/acmedemo/themes/acme-theme/images/screenshot.png
 
 To use the theme in any application, enable it in the application configuration:
 
@@ -84,12 +84,12 @@ To use the theme in any application, enable it in the application configuration:
         List of available themes:
         acme-theme (active)
          - label: Acme Demo Theme
-         - logo: bundles/acmebundle/themes/acme-theme/images/logo.png
-         - icon: bundles/acmebundle/themes/acme-theme/images/favicon.ico
-         - screenshot: bundles/acmebundle/themes/acme-theme/images/screenshot.png
+         - logo: bundles/acmedemo/themes/acme-theme/images/logo.png
+         - icon: bundles/acmedemo/themes/acme-theme/images/favicon.ico
+         - screenshot: bundles/acmedemo/themes/acme-theme/images/screenshot.png
          - styles:
-             - bundles/acmebundle/themes/acme-theme/css/main.css
-             - bundles/acmebundle/themes/acme-theme/css/ie.css
+             - bundles/acmedemo/themes/acme-theme/css/main.css
+             - bundles/acmedemo/themes/acme-theme/css/ie.css
         demo:
          - label: Demo Theme
          - logo: bundles/oroui/themes/demo/images/favicon.ico
@@ -138,7 +138,7 @@ For example, let's suppose that you want to use the *Oro* theme from the OroUIBu
 Place the ``settings.yml`` file in the ``Resources/public/themes/oro`` directory of your bundle and define the values you want to change:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/public/oro/
+   :caption: src/Acme/Bundle/DemoBundle/Resources/public/oro/
 
     label: Custom Oro Theme
     icon: images/custom_favicon.ico
@@ -159,7 +159,7 @@ Place the ``settings.yml`` file in the ``Resources/public/themes/oro`` directory
                     // ...
                     new ThirdParty\Bundle\ThirdPartyBundle(),
                     // ...
-                    new Acme\DemoBundle\AcmeDemoBundle(),
+                    new Acme\Bundle\DemoBundle\AcmeDemoBundle(),
                     // ...
                 ];
 
@@ -170,4 +170,4 @@ Place the ``settings.yml`` file in the ``Resources/public/themes/oro`` directory
         }
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

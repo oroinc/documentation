@@ -19,7 +19,7 @@ To enable consents for the storefront on the website level:
       :class: with-border
       :alt: Enable consents checkbox on the website level
 
-#. Clear the **Use Organization** check box under the **+Add Consent** button.
+#. Clear the **Use Organization** checkbox under the **+Add Consent** button.
 #. Click **+Add Consent** and select the consent from the list. 
 
    Alternatively, click on the hamburger menu and select the consent from its list.

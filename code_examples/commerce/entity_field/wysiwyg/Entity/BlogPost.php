@@ -62,6 +62,41 @@ class BlogPost extends ExtendBlogPost implements DatesAwareInterface
     protected $content;
 
     /**
+     * @var null|string
+     *
+     * @ORM\Column(name="extra_content", type="wysiwyg", nullable=true)
+     * @ConfigField(
+     *      defaultValues={
+     *          "attachment"={
+     *              "acl_protected"=false
+     *          }
+     *      }
+     * )
+     */
+    protected $extraContent;
+
+    /**
+     * @var null|string
+     *
+     * @ORM\Column(name="extra_content_style", type="wysiwyg_style", nullable=true)
+     * @ConfigField(
+     *      defaultValues={
+     *          "attachment"={
+     *              "acl_protected"=false
+     *          }
+     *      }
+     * )
+     */
+    protected $extraContentStyle;
+
+    /**
+     * @var null|array
+     *
+     * @ORM\Column(name="extra_content_properties", type="wysiwyg_properties", nullable=true)
+     */
+    protected $extraContentProperties;
+
+    /**
      * @var null|OrganizationInterface
      *
      * @ORM\ManyToOne(targetEntity="Oro\Bundle\OrganizationBundle\Entity\Organization")
@@ -82,6 +117,42 @@ class BlogPost extends ExtendBlogPost implements DatesAwareInterface
     public function setContent(?string $content): self
     {
         $this->content = $content;
+
+        return $this;
+    }
+
+    public function getExtraContent(): ?string
+    {
+        return $this->extraContent;
+    }
+
+    public function setExtraContent(?string $extraContent): self
+    {
+        $this->extraContent = $extraContent;
+
+        return $this;
+    }
+
+    public function getExtraContentStyle(): ?string
+    {
+        return $this->extraContentStyle;
+    }
+
+    public function setExtraContentStyle(?string $extraContentStyle): self
+    {
+        $this->extraContentStyle = $extraContentStyle;
+
+        return $this;
+    }
+
+    public function getExtraContentProperties(): ?array
+    {
+        return $this->extraContentProperties;
+    }
+
+    public function setExtraContentProperties(?array $extraContentProperties): self
+    {
+        $this->extraContentProperties = $extraContentProperties;
 
         return $this;
     }

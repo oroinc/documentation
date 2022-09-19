@@ -9,6 +9,5 @@ services:
         arguments:
             - '@doctrine'
             - '@oro_draft.manager.draftable_filter'
-            - '@translator'
         tags:
-            - { name: validator.constraint_validator, alias: acme_cms_unique_title_draft_validator }
+            - { name: validator.constraint_validator }

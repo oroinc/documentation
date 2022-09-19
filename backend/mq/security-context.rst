@@ -42,7 +42,7 @@ For example:
 
     oro_message_queue:
         security_agnostic_topics:
-            - 'oro.message_queue.job.calculate_root_job_status'
+            - 'oro.message_queue.job.root_job_stopped'
 
 Please note that for such messages the security token is never added to the message. Moreover, even if the security
 token was added to the message manually, it will be removed before the message is sent to the message queue.
@@ -61,7 +61,7 @@ Here is an example how to add a processor to the list of security agnostic proce
 
     oro_message_queue:
         security_agnostic_processors:
-            - 'oro_message_queue.job.calculate_root_job_status_processor'
+            - 'oro_message_queue.client.noop_message_processor'
 
 
 .. include:: /include/include-links-dev.rst

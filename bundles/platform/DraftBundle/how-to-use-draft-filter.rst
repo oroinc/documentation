@@ -14,60 +14,53 @@ This example describes how to disable the draft filter. The following validator 
 
 .. code-block:: php
 
-   namespace ACME\Bundle\CMSBundle\Validator\Constraints;
+   namespace Acme\Bundle\DemoBundle\Validator\Constraints;
 
-   use ACME\Bundle\CMSBundle\Entity\Block;
-   use Doctrine\ORM\EntityManager;
+   use Acme\Bundle\DemoBundle\Entity\Block;
    use Doctrine\Persistence\ManagerRegistry;
    use Oro\Bundle\DraftBundle\Manager\DraftableFilterManager;
    use Symfony\Component\Validator\Constraint;
    use Symfony\Component\Validator\ConstraintValidator;
-   use Symfony\Contracts\Translation\TranslatorInterface;
+   use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 
    /**
-    * Checks if at least one record exists (includes draft entities).
+    * Validates whether at least one record exists (includes draft entities).
     */
    class UniqueTitleDraftValidator extends ConstraintValidator
    {
-       private ManagerRegistry $registry;
-
+       private ManagerRegistry $doctrine;
        private DraftableFilterManager $filterManager;
 
-       private TranslatorInterface $translator;
-
        public function __construct(
-           ManagerRegistry $registry,
-           DraftableFilterManager $filterManager,
-           TranslatorInterface $translator
+           ManagerRegistry $doctrine,
+           DraftableFilterManager $filterManager
        ) {
-           $this->registry = $registry;
+           $this->doctrine = $doctrine;
            $this->filterManager = $filterManager;
-           $this->translator = $translator;
        }
 
        /**
-        * @param string|null $value
-        * @param UniqueTitleDraft|Constraint $constraint
+        * {@inheritDoc}
         */
        public function validate($value, Constraint $constraint): void
        {
-           /** @var EntityManager $entityManager */
-           $entityManager = $this->registry->getManagerForClass(Block::class);
+           if (!$constraint instanceof UniqueTitleDraft) {
+               throw new UnexpectedTypeException($constraint, UniqueTitleDraft::class);
+           }
+
            $this->filterManager->disable(Block::class);
-           $result = $entityManager
-               ->getRepository(Block::class)
-               ->findBy(['title' => $value]);
+           try {
+               $result = $this->doctrine->getRepository(Block::class)->findBy(['title' => $value]);
+           } finally {
+               $this->filterManager->enable(Block::class);
+           }
 
            $countResult = count($result);
-
-           $this->filterManager->enable(Block::class);
-
            if (0 === $countResult || (1 === $countResult && $this->context->getObject() === current($result))) {
                return;
            }
 
-           $message = $this->translator->trans($constraint->message);
-           $this->context->buildViolation($message)->addViolation();
+           $this->context->addViolation($constraint->message);
        }
    }
 

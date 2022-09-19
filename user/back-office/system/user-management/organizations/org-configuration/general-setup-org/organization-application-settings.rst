@@ -18,7 +18,7 @@ To change the default settings per organization:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Clear the **Use System** check box to change the system-wide setting.
+4. Clear the **Use System** checkbox to change the system-wide setting.
 
 5. In the **Web API** section, select the required options:
 

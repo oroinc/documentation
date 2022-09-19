@@ -10,13 +10,13 @@ Configuration of Workflow declares all aspects related to a specific workflow:
 * attributes involved in the workflow
 * entity related to the workflow
 
-The structure of the configuration is declared in class `oro\\Bundle\\WorkflowBundle\\Configuration\\WorkflowConfiguration`.
+The structure of the configuration is declared in class `Oro\\Bundle\\WorkflowBundle\\Configuration\\WorkflowConfiguration`.
 
 
 Configuration File
 ------------------
 
-Configuration must be placed into the Resources/config/oro/workflows.yml. file. For example, `src/Acme/DemoWorkflowBundle/Resources/config/oro/workflows.yml`.
+Configuration must be placed into the Resources/config/oro/workflows.yml. file. For example, `src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml`.
 
 The configuration file can be split into parts. All included parts must be placed under the imports section. Imports may be used
 in any part of the workflow configuration.
@@ -46,14 +46,12 @@ their elements will be appended after the existing one.
 
 .. code-block:: yaml
 
-
     imports:
         - { resource: 'workflows/b2b_flow_lead.yml' }
 
 **Example - workflows/b2b_flow_lead.yml**
 
 .. code-block:: yaml
-
 
     imports:
         - { resource: 'imports/steps_transitions.yml' }
@@ -68,7 +66,6 @@ their elements will be appended after the existing one.
 
 .. code-block:: yaml
 
-
     workflows:
         b2b_flow_lead:
             steps:
@@ -82,7 +79,6 @@ their elements will be appended after the existing one.
 
 .. code-block:: yaml
 
-
     workflows:
         b2b_flow_lead:
             transition_definitions:
@@ -94,7 +90,6 @@ their elements will be appended after the existing one.
 
 .. code-block:: yaml
 
-
     workflows:
         b2b_flow_lead:
             transition_definitions:
@@ -105,7 +100,6 @@ their elements will be appended after the existing one.
 **Example - resulting workflow configuration**
 
 .. code-block:: yaml
-
 
     workflows:
         b2b_flow_lead:
@@ -144,7 +138,6 @@ Options (* - required):
 
 .. code-block:: yaml
 
-
     imports:
         - { workflow: b2b_flow_lead, as: b2b_flow_lead_alternative, replace: ['transition_definitions.qualify_definition'] }
 
@@ -168,7 +161,6 @@ Options (* - required):
 **Example - resulting workflow configuration**
 
 .. code-block:: yaml
-
 
     workflows:
         b2b_flow_lead_alternative:
@@ -207,7 +199,6 @@ If you need to load your part of the configuration directly from the file, use t
 1. **Resource: Split Parts Reuse**
 
     .. code-block:: yaml
-
 
         imports:
             - { resource: 'imports/steps_transitions.yml', workflow: b2b_flow_lead, as: b2b_flow_lead_alternative, replace: [] }
@@ -287,7 +278,6 @@ To load workflow definitions to the database, execute the following command:
 
 .. code-block:: php
 
-
     php bin/console oro:workflow:definitions:load
 
 The command has two options:
@@ -358,8 +348,7 @@ A single workflow configuration has the following properties:
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:                                                    # Root elements
         b2b_flow_sales:                                           # A unique name of workflow
@@ -436,8 +425,7 @@ Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\AttributeAssembler* for more d
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         b2b_flow_sales:
@@ -455,9 +443,9 @@ Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\AttributeAssembler* for more d
             new_company_name:
                 type: string
             opportunity:
-                property_path: sales_funnel.opportunity
+                property_path: entity.opportunity
             opportunity_name:
-                property_path: sales_funnel.opportunity.name
+                property_path: entity.opportunity.name
 
 
 Enable Users to Modify Attributes
@@ -466,7 +454,7 @@ Enable Users to Modify Attributes
 You can enable a user to modify attributes of the record during transitions. To do this, list attributes that can be modified during any of the workflow's transitions under the ``attributes`` key:
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/config/oro/workflows.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml
 
     workflows:
         phone_call:
@@ -475,7 +463,7 @@ You can enable a user to modify attributes of the record during transitions. To 
                     phone_call:                             # The workflow attribute.
                     type: entity
                     options:
-                        class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneCall
+                        class: Acme\Bundle\DemoBundle\Entity\PhoneCall
                     call_timeout:                           # The workflow attribute.
                     type: integer
                     call_successful:                        # The workflow attribute.
@@ -489,7 +477,7 @@ You can enable a user to modify attributes of the record during transitions. To 
                 conversation:
                     type: entity
                     options:
-                        class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
+                        class: Acme\Bundle\DemoBundle\Entity\PhoneConversation
 
 .. tip::
 
@@ -498,7 +486,6 @@ You can enable a user to modify attributes of the record during transitions. To 
     To automatically store and retrieve attributes data by a property path (i.e. such attributes can be considered as links to an entity's values), use the :ref:`property_path option <reference-format-workflow-attributes-property-path>` instead:
 
     .. code-block:: yaml
-
 
         workflows:
             phone_call:
@@ -520,7 +507,7 @@ For attributes, you need to add labels into two places: first, to the list of al
 +----------------------------------------------------------------------------------------------+------------------------------------------------------------------------+
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/translations/workflows.en.yml
 
         oro:
             workflow:
@@ -534,17 +521,17 @@ For attributes, you need to add labels into two places: first, to the list of al
                         label: 'Call Successful'
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/translations/workflows.en.yml
 
-        oro:
-            workflow:
-                phone_call:
-                    transition:
-                        connected:
-                            ...
-                            attribute:
-                                opportunity:
-                                    label: 'Call Successful'
+    oro:
+        workflow:
+            phone_call:
+                transition:
+                    connected:
+                        # ...
+                        attribute:
+                            opportunity:
+                                label: 'Call Successful'
 
 
 Variables Configuration
@@ -583,14 +570,13 @@ A single variable can be described with the following configuration:
   * **identifier** - *string* - Applies to entities only. Class identifier specifies the identity field which will be used to query for the desired entity, in case a default entity needs to be loaded upon workflow assembling. Not specifying it will read the identifier field names from the entity's metadata. Please note that it is not necessary to use a primary key, any **unique** key is supporter, as long as it is not a composite key.
 
 .. important::
-        Unlike attributes, variable configuration does contain information about how to render variables in the configuration form, with the `form_options` node under `options`. Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\VariableAssembler* for more details.
+    Unlike attributes, variable configuration does contain information about how to render variables in the configuration form, with the `form_options` node under `options`. Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\VariableAssembler* for more details.
 
 **Example**
 
 Defining a variable:
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         my_workflow:
@@ -610,10 +596,9 @@ Defining a variable:
 
 Using a variable:
 
-.. code-block:: php
+.. code-block:: yaml
 
-
-    ...
+    # ...
         preconditions:
             '@and':
                 ...
@@ -642,8 +627,7 @@ Summarizing all above, a step has the following configuration:
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         phone_call:
@@ -706,8 +690,7 @@ To configure transitions, define the following:
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         phone_call:
@@ -765,20 +748,19 @@ Define how the workflow transition name will appear on the user interface and th
 +----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 .. code-block:: yaml
-   :caption: src/Acme/DemoBundle/Resources/translations/workflows.en.yml
+    :caption: src/Acme/Bundle/DemoBundle/Resources/translations/workflows.en.yml
 
-        oro:
-            workflow:
-                phone_call:
-                    transition:
-                        connected:
-                                    label: 'Connected'
-                                warning_message: 'Connection performed!'
-                    not_answered
-                                label: 'Not Answered'
-                    end_conversation
-                                label: 'End Conversation'
-
+    oro:
+        workflow:
+            phone_call:
+                transition:
+                    connected:
+                                label: 'Connected'
+                            warning_message: 'Connection performed!'
+                not_answered
+                            label: 'Not Answered'
+                end_conversation
+                            label: 'End Conversation'
 
 
 Transition Definition Configuration
@@ -795,8 +777,7 @@ Transition definition configuration has the following options.
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         phone_call:
@@ -836,7 +817,7 @@ Transition definition configuration has the following options.
                     # Pass data from workflow to conversation
                     actions:
                         - '@create_entity': # create PhoneConversation
-                            class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
+                            class: Acme\Bundle\DemoBundle\Entity\PhoneConversation
                             attribute: $conversation
                             data:
                                 result: $conversation_result
@@ -872,8 +853,7 @@ Event trigger configuration has the next options.
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         phone_call:
@@ -907,8 +887,7 @@ Cron trigger configuration has the following options.
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         phone_call:
@@ -947,8 +926,7 @@ Also it is possible to refer to any property of Workflow Item using "$." prefix.
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         phone_call:
@@ -990,8 +968,7 @@ Similarly to Conditions, alias of Action starts from "@" symbol and must refer t
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         phone_call:
@@ -1002,7 +979,7 @@ Similarly to Conditions, alias of Action starts from "@" symbol and must refer t
                         - '@assign_value': [$call_attempt, 1]
                     actions:
                         - '@create_entity': # create an entity PhoneConversation
-                            class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
+                            class: Acme\Bundle\DemoBundle\Entity\PhoneConversation
                             attribute: $conversation
                             data: # Fill values of freshly created PhoneConversation with data from current WorkflowItem
                                 result: $conversation_result
@@ -1033,8 +1010,7 @@ Single entity restriction can be described with the following configuration:
 
 **Example**
 
-.. code-block:: php
-
+.. code-block:: yaml
 
     workflows:
         opportunity_flow:
@@ -1065,4 +1041,4 @@ Single entity restriction can be described with the following configuration:
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

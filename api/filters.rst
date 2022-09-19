@@ -340,7 +340,7 @@ Include the **roles** relation with the **fields** filter.
             "email": "admin@local.com"
           },
           "relationships": {
-            "roles": {
+            "userRoles": {
               "data": [
                 {
                   "type": "userroles",
@@ -398,7 +398,7 @@ should be used.
             "email": "admin@local.com"
           },
           "relationships": {
-            "roles": {
+            "userRoles": {
               "data": [
                 {
                   "type": "userroles",

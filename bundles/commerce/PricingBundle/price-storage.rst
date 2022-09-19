@@ -11,13 +11,13 @@ ProductPriceStorageInterface
 
 - **getPrices** - returns an array of `ProductPriceInterface[]` by the requested criteria (`ProductPriceScopeCriteriaInterface`), products, product unit codes, and currencies. Use `ProductPriceDTO` as the implementation of `ProductPriceInterface`.
 - **getSupportedCurrencies** - returns a list of currencies supported by the storage. Currencies should be in ISO 4217 format.
- 
+
 Simple CSV Storage example:
 
 .. code-block:: php
 
 
-    namespace Acme\Bundle\PricingBundle\Storage;
+    namespace Acme\Bundle\DemoBundle\Storage;
 
     use Oro\Bundle\CurrencyBundle\Entity\Price;
     use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;
@@ -48,8 +48,9 @@ Simple CSV Storage example:
             array $productUnitCodes = null,
             array $currencies = null
         ) {
+            $productEntities = $this->doctrineHelper->getEntityRepository(Product::class)->findBy(['id' => $products]);
             $productsBySku = [];
-            foreach ($products as $product) {
+            foreach ($productEntities as $product) {
                 $productsBySku[$product->getSku()] = $product;
             }
 
@@ -72,9 +73,17 @@ Simple CSV Storage example:
          */
         public function getSupportedCurrencies(ProductPriceScopeCriteriaInterface $scopeCriteria)
         {
+            /**
+             * Only test solution, must be rewritten for the real case
+             */
             return ['USD'];
         }
 
+        /**
+         * @param array $data
+         * @param Product $product
+         * @return ProductPriceDTO
+         */
         private function createPriceDTO(array $data, Product $product): ProductPriceDTO
         {
             /** @var ProductUnit $productUnit */
@@ -102,7 +111,7 @@ ProductPriceScopeCriteriaInterface
 Replacing Default Storage
 -------------------------
 
-To replace default storage implementation decorate `oro_pricing.storage.prices` service. 
+To replace default storage implementation decorate `oro_pricing.storage.prices` service.
 Read more in the Symfony article on |How to Decorate Services|.
 
 Service definition example:
@@ -111,7 +120,7 @@ Service definition example:
 
 
     acme_pricing.storage.csv_file:
-        class: Acme\Bundle\PricingBundle\Storage\CSVFilePriceStorage
+        class: Acme\Bundle\DemoBundle\Storage\CSVFilePriceStorage
         public: false
         decorates: oro_pricing.storage.prices
         arguments:
@@ -122,7 +131,7 @@ Disable Oro Pricing
 ^^^^^^^^^^^^^^^^^^^
 
 Oro pricing is controlled by the `oro_pricing` feature. It may be disabled by switching off the appropriate system config option
-or by voting `VoterInterface::FEATURE_DISABLED` for the `oro_pricing` feature. 
+or by voting `VoterInterface::FEATURE_DISABLED` for the `oro_pricing` feature.
 
 For more information, see |Feature Toggle Bundle|.
 
@@ -130,7 +139,7 @@ Voter example:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\PricingBundle\Feature;
+    namespace Acme\Bundle\DemoBundle\Feature;
 
     use Oro\Bundle\FeatureToggleBundle\Checker\Voter\VoterInterface;
 

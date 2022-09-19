@@ -23,7 +23,7 @@ To implement your own datasource type:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\Datagrid\Datasource;
+    namespace Acme\Bundle\DemoBundle\Datagrid\Datasource;
 
     use Oro\Bundle\DataGridBundle\Datagrid\DatagridInterface;
     use Oro\Bundle\DataGridBundle\Datasource\DatasourceInterface;
@@ -33,18 +33,19 @@ To implement your own datasource type:
     {
         const TYPE = 'acme_custom';
 
-        /**
-         * @var array
-         */
-        protected $arraySource = [];
+        protected array $arraySource = [];
 
-        /** {@inheritdoc} */
+        /**
+         * @inheritDoc
+         */
         public function process(DatagridInterface $grid, array $config)
         {
             $grid->setDatasource(clone $this);
         }
 
-        /** {@inheritdoc} */
+        /**
+         * @inheritDoc
+         */
         public function getResults()
         {
             $rows = [];
@@ -58,12 +59,16 @@ To implement your own datasource type:
         /**
          * @return array
          */
-        public function getArraySource()
+        public function getArraySource(): array
         {
             return $this->arraySource;
         }
 
-        public function setArraySource(array $source)
+        /**
+         * @param array $source
+         * @return void
+         */
+        public function setArraySource(array $source): void
         {
             $this->arraySource = $source;
         }
@@ -76,7 +81,7 @@ Add the service definition to ``services.yml``:
 
 
     acme_bundle.datagrid.datasource.array:
-        class: Acme\Bundle\AcmeBundle\Datagrid\Datasource\CustomDatasource
+        class: Acme\Bundle\DemoBundle\Datagrid\Datasource\CustomDatasource
         tags:
             - { name: oro_datagrid.datasource, type: acme_custom }
 

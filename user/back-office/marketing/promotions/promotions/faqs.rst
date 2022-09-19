@@ -18,7 +18,7 @@ This quick reference guide illustrates the most common issues that you may face 
 
 2. **I need to create a promotion but I don’t see this option in the main menu**.
 
-   Make sure that promotions are enabled for your OroCommerce instance. If you have the corresponding permissions, navigate to **System > Configuration > Commerce > Promotions** and select the *Enable Promotions* check box. Otherwise, please contact your administrator. 
+   Make sure that promotions are enabled for your OroCommerce instance. If you have the corresponding permissions, navigate to **System > Configuration > Commerce > Promotions** and select the *Enable Promotions* checkbox. Otherwise, please contact your administrator.
 
 3. **I have created a new promotion for all products but a different promotion seems to be applied instead**.
 

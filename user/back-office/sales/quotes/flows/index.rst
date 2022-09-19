@@ -34,7 +34,7 @@ Read more in :ref:`Quote Management with Approvals <doc--workflows--backoffice-q
 Workflow-Specific Statuses and Steps
 ------------------------------------
 
-Depending on the active workflow, the quote statuses and management steps may differ.
+The quote statuses and management steps may differ depending on the active workflow.
 
 Follow the links below for more information on available steps and transitions.
 

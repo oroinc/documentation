@@ -49,7 +49,7 @@ To create a new user in the Oro application:
    * **Name Suffix** --- A name suffix of the user. A name suffix is used after the user's name and provides additional information about the user.
    * **Birthday** --- Click this field and select the user's date of birth using a pop-up calendar. Alternatively, type the date in the format defined by your current :ref:`locale <doc-user-management-users-configuration-localization>`.
    * **Avatar** -- Click **Choose File** to upload a photo of the user you are creating.
-   * **Send An Email Invitation** --- Select this check box to send an email invitation to the user once the profile is created. The invitation is sent to the email address specified in the **Primary Email** field.
+   * **Send An Email Invitation** --- Select this checkbox to send an email invitation to the user once the profile is created. The invitation is sent to the email address specified in the **Primary Email** field.
    * **Primary Email** --- The main email address of the user.
    * **Emails** --- Click **Add Another Email** and type an additional email address in the field that appears. You can add as many email addresses as required. To delete an email address, click **x** next to the email field you want to delete.
    * **Phone** --- The user's phone number.
@@ -67,7 +67,7 @@ To create a new user in the Oro application:
 
    .. image:: /user/img/system/user_management/groups_roles_organization.jpg
 
-6. In **Access Settings** select the check boxes in front of the organization(s) you want the user to have access to.
+6. In **Access Settings** select the checkboxes in front of the organization(s) you want the user to have access to.
 
    .. caution:: Note that the user will not be able to log into the system if no organization is selected for them. In addition, at least one role must be selected. Otherwise, you will not be able to save the user.
 

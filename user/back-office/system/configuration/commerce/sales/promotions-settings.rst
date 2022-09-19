@@ -20,7 +20,7 @@ To reach promotion configuration:
 
    .. note:: By default, promotions are enabled and the **Combine All Discounts** strategy is set.
 
-3. To customize the default settings, clear the **Use Default** check box next to the option.
+3. To customize the default settings, clear the **Use Default** checkbox next to the option.
 
 4. Enable or disable the following options as required:
 

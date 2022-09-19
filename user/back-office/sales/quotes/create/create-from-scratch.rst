@@ -28,9 +28,9 @@ To create a new quote from scratch:
 
    c) Optionally, enter a **PO Number** for the customer reference.
 
-   #) If necessary, set the **Do Not Ship Later Than** date, to limit the order validity based on the information from the customer.
+   #) If necessary, set the **Do Not Ship Later Than** date to limit the order validity based on the information from the customer.
 
-   #) Select an order fulfilment officer in the **Assigned To** box.
+   #) Select an order fulfillment officer in the **Assigned To** box.
 
    #) Select the assigned customer user that will receive the order delivery in the **Assigned Customer** box.
 
@@ -63,11 +63,11 @@ To create a new quote from scratch:
 
       4. Type in the unit price and select a currency.
 
-      To offer alternative quantity and prices, use **+ Add Offer**.
+      To offer alternative quantities and prices, use **+ Add Offer**.
 
       .. image Add Offer
 
-      Add notes to the quote line, if necessary: click **Add notes** in the Seller Notes section.
+      If necessary, add notes to the quote line: click **Add notes** in the Seller Notes section.
 
       .. image Notes
 
@@ -79,9 +79,9 @@ To create a new quote from scratch:
 
    .. image Add Product
 
-6. In the **Shipping Address** section, enter the shipping address, organization name and name of the person the future order should be shipped to.
+6. In the **Shipping Address** section, enter the shipping address, organization name, and name of the person to which the future order should be shipped.
 
-   .. note:: Keep in mind that the shipping address you enter when creating a quote will be the only option available for the customer on the checkout.
+   .. note:: Keep in mind that the shipping address you enter when creating a quote will be the only option available for the customer at the checkout.
 
 7. In the **Shipping Information** section, configure the recommended shipping options for the customer:
 
@@ -90,20 +90,20 @@ To create a new quote from scratch:
 
    a) In the **Shipping Method** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration on the checkout.
 
-   .. .. note:: When none of the methods are selected, the customer can use any of the listed methods.
+   .. .. note:: When none of the methods are selected, the customer can use any listed methods.
 
    .. .. note:: Once you change the existing settings, the previous configuration will be saved for your information in the previously Selected Shipping Method log above the list of the shipping methods.
 
-   .. b) If necessary, select the preferred shipping method from the **Default Shipping Method** list. The customer will be able to change the option to any other available shipping method.
+   .. b) If necessary, select the preferred shipping method from the **Default Shipping Method** list. The customer can change the option to any other available shipping method.
 
-   b) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one dynamically generated based on the shipping method selection.
+   b) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one that is dynamically generated based on the selected shipping method.
 
    c) To enforce using only the default Shipping method selected earlier, enable the **Shipping Method Locked** flag. When the shipping method is locked, the buyer does not see any other payment options but the default one.
 
-   d) Tick the **Allow Unlisted Shipping Methods** box to allow using the shipping method that is already selected as a default one, even if it is disabled by the shipping rule configuration.
+   d) Tick the **Allow Unlisted Shipping Methods** box to allow using the shipping method already selected as a default one, even if the shipping rule configuration disables it.
 
 8. Optionally, select a **Payment Term** as an available payment method.
 
-   .. note:: Be aware that although opportunity relation can be displayed on the quote page, it is not possible to manage it. When there is no opportunity relation available for a quote, inactive **Opportunity** field is displayed. More information on the relationship between opportunities and quotes is available in the relevant :ref:`OroCommerce Opportunity Flow <mc-sales-opportunities-quote>` topic.
+   .. note:: Be aware that although opportunity relation can be displayed on the quote page, it is not possible to manage it. When no opportunity relation is available for a quote, the inactive **Opportunity** field is displayed. More information on the relationship between opportunities and quotes is available in the :ref:`OroCommerce Opportunity Flow <mc-sales-opportunities-quote>` topic.
 
 9. Click **Save**.

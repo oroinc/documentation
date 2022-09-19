@@ -12,7 +12,7 @@ To configure Google Tag Manager settings per website:
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Click **System Configuration > Integrations > Google Settings** in the menu to the left.
-4. In the **Google Tag Manager Settings**, clear the **Use Organization** check box and select a :ref:`Google Tag Manager Integration <gtm-ga-4-integration>` from the list to configure it for the application and enable data mapping.
+4. In the **Google Tag Manager Settings**, clear the **Use Organization** checkbox and select a :ref:`Google Tag Manager Integration <gtm-ga-4-integration>` from the list to configure it for the application and enable data mapping.
 5. Click **Save Settings**.
 
 .. include:: /include/include-images.rst

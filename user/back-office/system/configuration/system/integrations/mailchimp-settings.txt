@@ -7,7 +7,7 @@ If you have MailChimp integration configured, you can control MailChimp synchron
 
 1. Navigate to **System > Configuration** in the main menu.
 2. In the menu to the left, click **System Configuration > Integrations > MailChimp Settings**.
-3. In the **Synchronization Settings** section, clear the **Use Default** check box and select one of the two options in the **Static Segment Synchronization Mode** field:
+3. In the **Synchronization Settings** section, clear the **Use Default** checkbox and select one of the two options in the **Static Segment Synchronization Mode** field:
 
    * **On data update** --- Synchronization is scheduled both by cron and as soon as data in static segment changes.
    * **Scheduled** --- Synchronization is scheduled only by cron.

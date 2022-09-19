@@ -52,7 +52,7 @@ Submit Your Translations
 
 #. Select the target language (e.g. Korean).
 
-   Translations are stored in yaml files organized by bundles (e.g. OroAlternativeCheckoutBundle, OroCatalogBundle) and by groups (e.g. messages, tooltips).
+   Translations are stored in yaml files organized by bundles (e.g. OroAlternativeCheckoutBundle, OroCatalogBundle) and by groups (e.g. messages, jsmessages).
 
 #. Select the yaml file with the translations you would like to contribute to.
 

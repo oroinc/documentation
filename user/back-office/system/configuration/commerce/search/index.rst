@@ -2,12 +2,13 @@
 
 .. _configuration--guide--commerce--configuration--search:
 
-Configure Global (Saved) Search Settings
-========================================
+Configure Global Search Settings
+================================
 
-Learn how to configure saved search for the OroCommerce Enterprise storefront and fuzzy search in the website search index requests to Elasticsearch:
+Learn how to configure search synonyms, saved search for the OroCommerce Enterprise storefront and fuzzy search in the website search index requests to Elasticsearch:
 
 .. toctree::
 
    Saved Search <saved-search>
    Fuzzy Search <fuzzy-search>
+   Search Synonyms <search-synonyms>

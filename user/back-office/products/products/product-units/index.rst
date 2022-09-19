@@ -71,7 +71,7 @@ Another example is for a product with 3 units: *item, set and kilogram*, where *
 Control Unit Visibility: Sell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can control the visibility of product units in the storefront by enabling or disabling the *Sell* check box next to the required product unit when creating or editing a product.
+You can control the visibility of product units in the storefront by enabling or disabling the *Sell* checkbox next to the required product unit when creating or editing a product.
 
 When *Sell* is enabled for a product unit, this makes the unit visible to the customer users in the storefront when they are viewing this product. When *Sell* is disabled, the product unit is only visible in the back-office and is hidden from the customer users in the OroCommerce storefront.
 

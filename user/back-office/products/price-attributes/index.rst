@@ -56,7 +56,7 @@ To view all price attributes, navigate to **Products > Price Attributes** in the
 
 Here, you can create a new price attribute, filter the list of existing ones by a price attribute name or a field name, and view price attribute details by clicking on the item. Also, you can  |IcView| view, |IcEdit| edit, or |IcDelete| delete a price attribute by hovering over the |IcMore| **More Options** menu to the right of the item.
 
-To remove multiple price attributes, select check boxes in front of the price attributes that you want to delete. At the right end of the list header, click the |IcMore| **More Options** menu and click |IcDelete| **Delete** to remove all selected price attributes.
+To remove multiple price attributes, select checkboxes in front of the price attributes that you want to delete. At the right end of the list header, click the |IcMore| **More Options** menu and click |IcDelete| **Delete** to remove all selected price attributes.
 
 Find the necessary price attribute in the list and click on it.
 
@@ -123,7 +123,7 @@ To set a price attribute (e.g., Minimal Advertised Price) for a product:
       :scale: 42%
       :alt: Illustration of how shipping cost set for the price attribute works in combination with the surcharge defined in the fixed product shipping cost integration
 
-   .. hint:: Fixed Product Shipping Cost has been available since v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+   .. hint:: Fixed Product Shipping Cost is available starting from OroCommerce v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 #. Provide the value per unit and currency.
 

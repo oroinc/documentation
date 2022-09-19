@@ -32,7 +32,7 @@ To set up the new arrivals icons and segment per organization:
    .. image:: /user/img/system/user_management/org_configuration/products/NewArrivalsBlockOrg.png
       :alt: New arrivals configuration per organization
 
-4. In the **New Product Icons**, clear the **Use Default** check box and select *Yes* in the **Show on Product View** list to enable new product icons. To disable the icons, select *No*.
+4. In the **New Product Icons**, clear the **Use Default** checkbox and select *Yes* in the **Show on Product View** list to enable new product icons. To disable the icons, select *No*.
 
 5. In the **New Arrivals** section provide the following information:
 
@@ -47,7 +47,7 @@ To set up the new arrivals icons and segment per organization:
 
    * **Use Slider On Mobile** -- When the slider is enabled, the block occupies less screen space, while showing larger product images.
 
-.. note:: When enabled, **Use System** allows for system settings to be used. Clear this check box to enable manual change of settings.
+.. note:: When enabled, **Use System** allows for system settings to be used. Clear this checkbox to enable manual change of settings.
 
 6. Click **Save Settings**.
 

@@ -5,9 +5,9 @@
 Add a Shipping Tracking Number to the Order
 -------------------------------------------
 
-When a customer user submits an order, they provide the shipping address and, optionally, the *Do Not Ship Later Than* date. Based on this information and their selected shipping method, they may see the shipping cost estimate. After a salesperson adds the shipping service and their tracking number to the order, the customer user can track the delivery (if this option is provided by the shipping company).
+When a customer user submits an order, they provide the shipping address and, optionally, the *Do Not Ship Later Than* date. They may see the shipping cost estimate based on this information and their selected shipping method. After a salesperson adds the shipping service and their tracking number to the order, the customer user can track the delivery (if the shipping company provides this option).
 
-To add a tracking information about the shipping to the order:
+To add a piece of tracking information about the shipping to the order:
 
 1. Navigate to **Sales > Orders** using the main menu.
 
@@ -32,4 +32,4 @@ To add a tracking information about the shipping to the order:
 After the tracking information for shipping has been provided, it becomes available to the buyer in the storefront.
 
 .. image:: /user/img/sales/orders/ShippingTrackingFront.png
-   :alt: Display the shipping tracking number in Order History section of the customer account menu in the storefront
+   :alt: Display the shipping tracking number in the Order History section of the customer account menu in the storefront

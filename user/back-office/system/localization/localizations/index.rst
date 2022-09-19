@@ -74,7 +74,7 @@ Create a new localization with a specific configuration by clicking **Create Loc
 
 3. Select the language formatting style.
 
-4. If the localization you are creating requires Right-to-Left text direction, select the check box for **Enable RTL Mode**.
+4. If the localization you are creating requires Right-to-Left text direction, select the checkbox for **Enable RTL Mode**.
 
 5. Select the parent localization from the available list. If no relations are set, the current localization inherits the English translation equivalents by default.
 

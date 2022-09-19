@@ -42,7 +42,7 @@ To create a new marketing list:
       :widths: 10, 30
 
       "**Name**","A name used to refer to the marketing list in the system."
-      "**Include Previously Contacted Members**","The option is helpful when you change the filter conditions of the marketing list. The contacts that were on the list before the condition update, might not meet the new rules. So, if you enable the check box, the marketing list would include both new records (based on new rules) and the ones that were contacted in the past (based on previous conditions)."
+      "**Include Previously Contacted Members**","The option is helpful when you change the filter conditions of the marketing list. The contacts that were on the list before the condition update, might not meet the new rules. So, if you enable the checkbox, the marketing list would include both new records (based on new rules) and the ones that were contacted in the past (based on previous conditions)."
       "**Entity**","Choose an entity from the dropdown. Only entities with contact details (email or phone number) are available. Records of the chosen entity and entities related to it will be used to create the list of contacts."
       "**Type**","Chose the list type from the dropdown:
 

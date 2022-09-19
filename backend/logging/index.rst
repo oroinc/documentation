@@ -1,7 +1,7 @@
 :title: Logging Concept and Strategy in OroCommerce, OroCRM, OroPlatform
 
 .. meta::
-   :description: An overview of the logging concept, strategy, and standards
+    :description: An overview of the logging concept, strategy, and standards
 
 .. _dev-guide-system-logging:
 
@@ -54,10 +54,10 @@ Use Monolog logger that implements the PSR-3 LoggerInterface, de facto logging s
 
 .. code-block:: php
 
-   $logger->critical('I left the oven on!', [
-       // include extra "context" info in your logs
-       'cause' => 'in_hurry',
-   ]);
+    $logger->critical('I left the oven on!', [
+        // include extra "context" info in your logs
+        'cause' => 'in_hurry',
+    ]);
 
 Debug, info, notice, warning, error, critical, and alert methods have two arguments:
 
@@ -70,64 +70,66 @@ Using Logger
 #. If your class provides any kind of extensibility without class modification by dispatching events or providing extensions system, add the logger as an extension or an event listener, do not inject it into the main service.
 #. Inject logger to the constructor of the extension or the main service as a required dependency if you are able to change the class signature, otherwise use LoggerAwareInterface.
 
-   You can be restricted to call __constructor() in case it is private or instantiated not using service container, by CompilerPass or factory that are not under your control etc.
+    You can be restricted to call __constructor() in case it is private or instantiated not using service container, by CompilerPass or factory that are not under your control etc.
 
 #. In service container configuration, add logger (@logger) as a required argument to the constructor or in setter in case LoggerAwareInterface was used:
 
-   **Constructor injection**
+    **Constructor injection**
 
-   .. code-block:: text
+    .. code-block:: text
 
-      services:
-          acme.logger_aware_service:
-              class:     AcmeBundle\Foo\BarLoggerAwareService
-              arguments: ['@logger']
+        services:
+            acme.logger_aware_service:
+                class: Acme\Bundle\DemoBundle\Foo\BarLoggerAwareService
+                arguments: ['@logger']
 
-   *Setter injection*
+    *Setter injection*
 
-   .. code-block:: text
+    .. code-block:: text
 
-      services:
-          acme.logger_aware_service:
-              class:     AcmeBundle\Foo\BarLoggerAwareService
-              calls:
-                  - [setLogger, ['@logger']]
+        services:
+            acme.logger_aware_service:
+                class: Acme\Bundle\DemoBundle\Foo\BarLoggerAwareService
+                calls:
+                    - [setLogger, ['@logger']]
 
 #. If necessary, you can use the DI tag monolog.logger and use it to set the name of the channel for logging messages. You may want to prefix the name of the channels to exclude intersections with channels from other components:
 
-   .. code-block:: text
+    .. code-block:: text
 
-      tags:
-          - { name: monolog.logger, channel: oro_api }
+        services:
+            acme.logger_aware_service:
+                tags:
+                    - { name: monolog.logger, channel: oro_api }
 
-   You can reuse an existing channel only to override or extend the existing logger aware service.
+    You can reuse an existing channel only to override or extend the existing logger aware service.
 
 #. If LoggerAwareInterface was used, every logger method call should be wrapped with the following check to ensure that the logger exists and no exceptions are triggered due to its unavailability:
 
-   .. code-block:: text
+    .. code-block:: text
 
-      if (null !== $this->logger){
-          $this->logger->debug($message, $context);
-      }
+        if (null !== $this->logger){
+            $this->logger->debug($message, $context);
+        }
 
 #. Messages should be simple and human-readable. Any extra information should be passed in the context variables:
 
-   .. code-block:: text
+    .. code-block:: text
 
-      $this->logger->debug(
-          'Authentication failure, forward triggered.',
-          ['failure_path' => $path]
-      );
+        $this->logger->debug(
+            'Authentication failure, forward triggered.',
+            ['failure_path' => $path]
+        );
 
 #. When you need a user-friendly message on production instead of a real one, use the following approach (see this sample): when something goes wrong for the user but the system is still usable, display a message similar to "Something has gone wrong, contact the system administrator" and log the real exception to facilitate the future debug process.
 
-   You can use this approach when:
+    You can use this approach when:
 
-      * A form was submitted but the expected action was stopped which led to the exception.
-      * A system is not able to save the record to the database because of a MySQL error (for example, when you use a non-unique key).
-      * A system fails to send a message to the queue, or the queue does not respond.
-      * A system fails to send an external request or a third-party API did not respond or responded with an unexpected message.
-      * Etc.
+        * A form was submitted but the expected action was stopped which led to the exception.
+        * A system is not able to save the record to the database because of a MySQL error (for example, when you use a non-unique key).
+        * A system fails to send a message to the queue, or the queue does not respond.
+        * A system fails to send an external request or a third-party API did not respond or responded with an unexpected message.
+        * Etc.
 
 #. Preserve the context. Always place your logging calls next to the actions it logs, in the same method or class. Avoid logging the operation progress, input, or outcome in the external class that triggers operation execution.
 #. It is recommended to use debug, info, notice, warning, error, critical, and alert methods defined in LoggerInterface with a specified log level instead of the log() method.
@@ -240,44 +242,44 @@ Example 1
 
 .. code-block:: php
 
-   // in case of injection logger to constructor
-   // do some work
+    // in case of injection logger to constructor
+    // do some work
 
-   catch (\Exception $e) {
-       $this->logger->error($message, ['exception'=> $e]);
-       // optionally
-       $this->session->getFlashBag()->add('warning', $message);
-       // recover
-   }
+    catch (\Exception $e) {
+        $this->logger->error($message, ['exception'=> $e]);
+        // optionally
+        $this->session->getFlashBag()->add('warning', $message);
+        // recover
+    }
 
 Example 2
 ^^^^^^^^^
 
 .. code-block:: php
 
-   // in case of using LoggerAwareInterface
-   // do some work
+    // in case of using LoggerAwareInterface
+    // do some work
 
-   catch (\Exception $e) {
-       if (null !== $this->logger){
-           $this->logger->error($message, ['exception'=> $e]);
-       }
-       // optionally
-       $this->session->getFlashBag()->add('warning', $message);
-       // recover
-   }
+    catch (\Exception $e) {
+        if (null !== $this->logger){
+            $this->logger->error($message, ['exception'=> $e]);
+        }
+        // optionally
+        $this->session->getFlashBag()->add('warning', $message);
+        // recover
+    }
 
 Example 3
 ^^^^^^^^^
 
 .. code-block:: php
 
-   // do some work
+    // do some work
 
-   catch (MyCustomExpectedException $e) {
-       $this->logger->error($message, ['exception'=> $e]);
-       // recover
-   }
+    catch (MyCustomExpectedException $e) {
+        $this->logger->error($message, ['exception'=> $e]);
+        // recover
+    }
 
 
 Incorrect Exceptions Handling
@@ -287,14 +289,14 @@ Handling exceptions without logging is incorrect:
 
 .. code-block:: php
 
-   // do some work
-   catch (Exception $e) {
-   }
+    // do some work
+    catch (Exception $e) {
+    }
 
-   // do some work
-   catch (Exception $e) {
-       // do some work without logging
-   }
+    // do some work
+    catch (Exception $e) {
+        // do some work without logging
+    }
 
 
 Enable Logger Only on Dev Environment
@@ -311,4 +313,4 @@ Additional Information
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin

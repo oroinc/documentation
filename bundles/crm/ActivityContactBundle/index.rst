@@ -31,7 +31,7 @@ Create a provider that implements |DirectionProviderInterface| and make it a tag
 .. code-block:: none
 
     tags:
-        - { name: oro_activity_direction.provider, class: Acme\Bundle\AppBundle\Entity\MyActivity }
+        - { name: oro_activity_direction.provider, class: Acme\Bundle\DemoBundle\Entity\MyActivity }
 
 Install and Update Features
 ---------------------------

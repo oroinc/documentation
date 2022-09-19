@@ -1,3 +1,4 @@
 <div class="cms-content">
-    {{ value|render_content|oro_html_sanitize|raw }}
+    {% import '@OroUI/macros.html.twig' as UI %}
+    {{ UI.renderWysiwygContentPreview(value) }}
 </div>

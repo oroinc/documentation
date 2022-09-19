@@ -9,7 +9,7 @@ presentation for a group of pages. You can think of a **theme** as the skin for 
 Files that the theme consists of are :ref:`layout updates <dev-doc-frontend-layouts-layout-updates>`,
 **styles**, **scripts**, and anything else related to the look and feel of the page.
 
-Out-of-the-box, OroCommerce comes with :ref:`three themes: blank, default, custom <dev-doc-frontend-layouts-theming>`.
+Out-of-the-box, OroCommerce comes with :ref:`two themes: default, custom <dev-doc-frontend-layouts-theming>`.
 
 We recommend creating your own theme if you want to customize out-of-the-box OroCommerce storefront. To create your own theme, you have to choose one of the three base themes as the parent for your own.
 
@@ -149,11 +149,10 @@ This is a typical theme directory structure, where `AcmeDemoBundle` is a bundle 
 Built-in OroCommerce Themes
 ---------------------------
 
-Out-of-the-box, the OroCommerce application comes with three predefined storefront themes: blank, default, and custom.
+Out-of-the-box, the OroCommerce application comes with two predefined storefront themes: default, and custom.
 
-* **The blank theme** is a simple theme aimed at providing the base for future decorations.
-* **The default theme** is a fully featured theme that extends the blank theme and provides the complete look and feel for the OroCommerce storefront UI out-of-the-box.
+* **The default theme** is a fully featured theme that provides the complete look and feel for the OroCommerce storefront UI out-of-the-box.
 * **The custom theme** is a sample that illustrates how to build your own custom theme.
 
-The *blank* and *default* themes are aimed to be *base for any* :ref:`customizations <storefront_customization_guide>`.
+The *default* theme is aimed to be *base for any* :ref:`customizations <storefront_customization_guide>`.
 

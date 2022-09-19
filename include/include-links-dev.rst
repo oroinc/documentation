@@ -361,7 +361,7 @@ Links (Dev)
 
 .. |Default scss breakpoints| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/blank/scss/settings/partials/_breakpoints.scss" target="_blank">Default scss breakpoints</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/default/scss/settings/_breakpoints.scss" target="_blank">Default scss breakpoints</a>
 
 .. |official plugin documentation| raw:: html
 
@@ -482,10 +482,6 @@ Links (Dev)
 .. |OroDatagridBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle" target="_blank">OroDatagridBundle</a>
-
-.. |OroFormUpdateHandler| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Model/UpdateHandler.php" target="_blank">OroFormUpdateHandler</a>
 
 .. |Actions| raw:: html
 
@@ -921,7 +917,11 @@ Links (Dev)
 
 .. |SearchAggregationFilter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Api/Filter/SearchAggregationFilter.php" target="_blank">SearchQueryFilter</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Api/Filter/SearchAggregationFilter.php" target="_blank">SearchAggregationFilter</a>
+
+.. |SimpleSearchFilter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Api/Filter/SimpleSearchFilter.php" target="_blank">SimpleSearchFilter</a>
 
 .. |FilterInterface| raw:: html
 
@@ -1861,9 +1861,9 @@ Links (Dev)
 
    <a href="https://twig.symfony.com/" target="_blank">Twig official documentation</a>
 
-.. |Bootstrap v.3 toolkit| raw:: html
+.. |Bootstrap v.4 toolkit| raw:: html
 
-   <a href="https://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap v.3 toolkit</a>
+   <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap v.4 toolkit</a>
 
 .. |SCSS| raw:: html
 
@@ -1979,7 +1979,7 @@ Links (Dev)
 
 .. |this block theme| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/views/layouts/blank/oro_product_frontend_product_view/layout.html.twig" target="_blank">this block theme</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/views/layouts/default/oro_product_frontend_product_view/layout.html.twig" target="_blank">this block theme</a>
 
 .. |List of all css properties| raw:: html
 
@@ -2585,6 +2585,14 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/4.4/bundles/best_practices.html#bundle-name" target="_blank">best practices for bundle structure and bundle name</a>
 
+.. |Symfony Configuration Files| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/configuration.html#configuration-files" target="_blank">Symfony Configuration Files</a>
+
+.. |Symfony Service Parameters| raw:: html
+
+   <a href="https://symfony.com/doc/4.4/service_container.html#service-parameters" target="_blank">Symfony Service Parameters</a>
+
 .. |Symfony profiler config icon| raw:: html
 
    <a href="https://symfony.com/doc/current/book/internals.html#profiler" target="_blank">Symfony profiler config icon</a>
@@ -2725,13 +2733,13 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/SynchronousCommandInterface.php" target="_blank">SynchronousCommandInterface</a>
 
-.. |CronCommandInterface| raw:: html
+.. |CronCommandScheduleDefinitionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php" target="_blank">CronCommandInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandScheduleDefinitionInterface.php" target="_blank">CronCommandScheduleDefinitionInterface</a>
 
-.. |getDefaultDefinition()| raw:: html
+.. |CronCommandActivationInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php#L14" target="_blank">getDefaultDefinition()</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandActivationInterface.php" target="_blank">CronCommandActivationInterface</a>
 
 .. |crontab compatible| raw:: html
 
@@ -4189,10 +4197,6 @@ Links (Dev)
 
    <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html" target="_blank">Doctrine association mappings</a>
 
-.. |Doctrine One-To-Many Bidirectional Association| raw:: html
-
-   <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html#one-to-many-bidirectional" target="_blank">Doctrine documentation</a>
-
 .. |many-to-one association| raw:: html
 
    <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/association-mapping.html#many-to-one-unidirectional" target="_blank">many-to-one association</a>
@@ -4504,7 +4508,7 @@ Links (Dev)
 
 .. |example of using low_inventory| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Resources/views/layouts/blank/imports/oro_product_list_item/low_inventory.html.twig" target="_blank">example of using low_inventory</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Resources/views/layouts/default/imports/oro_product_list_item/low_inventory.html.twig" target="_blank">example of using low_inventory</a>
 
 .. |OroBundleInventoryBundleEventListenerLowInventoryCheckoutLineItemValidationListener| raw:: html
 
@@ -4942,13 +4946,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Datasource/Orm/OrmDatasource.php" target="_blank">OrmDatasource</a>
 
-.. |ParameterBinderAwareInterface| raw:: html
+.. |BindParametersInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Datasource/ParameterBinderAwareInterface.php" target="_blank">ParameterBinderAwareInterface</a>
-
-.. |ParameterBinderInterface| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Datasource/ParameterBinderInterface.php" target="_blank">ParameterBinderInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Datasource/BindParametersInterface.php" target="_blank">BindParametersInterface</a>
 
 .. |DatasourceBindParametersListener| raw:: html
 
@@ -6038,3 +6038,27 @@ Links (Dev)
 .. |Sending Emails with Mailer| raw:: html
 
    <a href="https://symfony.com/doc/current/mailer.html#transport-setup" target="_blank">Sending Emails with Mailer</a>
+
+.. |CumulativeConfigLoader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Config/Loader/CumulativeConfigLoader.php" target="_blank">CumulativeConfigLoader</a>
+
+.. |CumulativeResourceManager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Config/CumulativeResourceManager.php" target="_blank">CumulativeResourceManager</a>
+
+.. |YAML file loader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Config/Loader/YamlCumulativeFileLoader.php" target="_blank">YAML file loader</a>
+
+.. |"Foldering" file loader| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Config/Loader/FolderingCumulativeFileLoader.php" target="_blank">"Foldering" file loader</a>
+
+.. |SystemAwareResolver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Config/Resolver/SystemAwareResolver.php" target="_blank">SystemAwareResolver</a>
+
+.. |official Elasticsearch documentation on search synonyms| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html#_solr_synonyms_2" target="_blank">official Elasticsearch documentation on search synonyms</a>

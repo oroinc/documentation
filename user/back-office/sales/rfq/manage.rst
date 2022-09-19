@@ -51,9 +51,9 @@ Once the message is prepared and sent, the quote backoffice status is changed to
    :width: 100%
    :alt: A sample of the quote with the Sent to Customer status and available actions
 
-From this page, you can cancel |IcTimes| or expire |IcExpireQuote| the quote, delete |IcDelete| the quote, and the backoffice status will change to *Closed*.
+From this page, you can cancel |IcTimes| or expire |IcExpireQuote| the quote, delete |IcDelete| the quote, and the back-office status will change to *Closed*.
 
-Additionally, you can create a new quote for the customer, or, if the customer declined the offer, you can mark this quote as **Declined by Customer**.
+Additionally, you can create a new quote for the customer, or if the customer declined the offer, you can mark it as **Declined by Customer**.
 
 For more detailed information, please check the :ref:`Quote Management Flow <simple-quote-management>` to learn additional details on the steps and actions available at every step.
 
@@ -66,12 +66,12 @@ To create an order from an RFQ:
 2. Find the required RFQ and click on it.
 3. Click **Create an Order** on the top right.
 
-.. note:: You can find more information on how to create an order from an RFQ, add additional products, add offers specific for the customer, edit or add shipping and billing information, calculate shipping options, add discounts and more, in the relevant :ref:`Create an Order from an RFQ <user-guide--sales--orders--create--from-rfq>` topic.
+.. note:: You can find more information on how to create an order from an RFQ, add additional products, add offers specifically for the customer, edit or add shipping and billing information, calculate shipping options, add discounts, and more in the relevant :ref:`Create an Order from an RFQ <user-guide--sales--orders--create--from-rfq>` topic.
 
 The **More Actions** menu enables users to :ref:`add notes <user-guide-add-note>` to the order, :ref:`send an email <user-guide-using-emails>` to the customer or :ref:`add an event <doc-activities-events>`. An event could be used to schedule a call or a meeting.
 
 .. image:: /user/img/sales/rfq/rfq_11.png
-   :alt: Click Create Order from the rfq view page
+   :alt: Click Create Order from the RFQ view page
 
 
 .. _user-guide--sales--requests-for-quote--edit:
@@ -86,7 +86,7 @@ To edit an RFQ:
 3. Click **Edit** on the top right of the page.
 4. Check the fields required in the **General** section and modify the information, if necessary.
 5. Add notes and assignees.
-6. Adjust target prices, quantity and add additional products.
+6. Adjust target prices and quantity and add additional products.
 7. Click **Save and Close** on the top right to save all the changes made.
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions:
@@ -105,28 +105,28 @@ Now you can perform the following actions with an RFQ in the back-office:
 
 .. contents:: :local:
 
-Once the RFQ is submitted by a customer in the storefront, it becomes immediately available in the RFQ back-office in the *Open* status.
+Once a customer submits the RFQ in the storefront, it becomes immediately available in the RFQ back-office in the *Open* status.
 
 .. image:: /user/img/sales/rfq/rfq_12.png
    :class: with-border
-   :alt: Display the rfq with the customer status Submitted in the storefront
+   :alt: Display the RFQ with the customer status Submitted in the storefront
 
 .. image:: /user/img/sales/rfq/rfq_13.png
    :class: with-border
-   :alt: Display the rfq with the internal status Open in the back-office
+   :alt: Display the RFQ with the internal status Open in the back-office
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions--processed:
 
 Mark the RFQ as Processed
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To mark the RFQ as processed, click **Mark as Processed** |IcMarkProcessed| on the RFQ page. This will notify the assigned sales representative that the quote is being processed.
+Click **Mark as Processed** |IcMarkProcessed| on the RFQ page to mark the RFQ as processed. This will notify the assigned sales representative that the quote is being processed.
 
 Marking RFQ as processed will change its internal status to *Processed*.
 
 .. image:: /user/img/sales/rfq/rfq_14.png
    :class: with-border
-   :alt: Display the rfq with the internal status Processed in the back-office
+   :alt: Display the RFQ with the internal status Processed in the back-office
 
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions--more-info:
@@ -146,7 +146,7 @@ The internal status should then change to *More Information Requested*, and the 
 
 .. image:: /user/img/sales/rfq/rfq_16.png
    :class: with-border
-   :alt: Display the rfq with the internal status More Information Requested in the back-office
+   :alt: Display the RFQ with the internal status More Information Requested in the back-office
 
 
 Once the customer responds to the request for additional information, the assigned sales representative is notified that the customer has provided the requested information and can continue processing the request.
@@ -160,18 +160,18 @@ Decline an RFQ
 
 To decline the RFQ,  click **Decline** on the RFQ page.
 
-This will change the internal status to *Declined*, and the customer status to *Cancelled*.
+This will change the internal status to *Declined*and the customer status to *Cancelled*.
 
 .. image:: /user/img/sales/rfq/rfq_17.png
    :class: with-border
-   :alt: Display the rfq with the internal status Declined in the back-office
+   :alt: Display the RFQ with the internal status Declined in the back-office
 
 .. _user-guide--sales--requests-for-quote--steps-and-transitions--delete:
 
 Delete an RFQ
 ^^^^^^^^^^^^^
 
-To delete the RFQ from the list, click **Delete** on the RFQ page.
+Click **Delete** on the RFQ page to delete the RFQ from the list.
 
 The RFQ will be removed from the customer user’s account.
 
@@ -179,8 +179,9 @@ The internal status will be changed to *Deleted*.
 
 .. image:: /user/img/sales/rfq/rfq_18.png
    :class: with-border
-   :alt: Display the rfq with the internal status Deleted in the back-office
+   :alt: Display the RFQ with the internal status Deleted in the back-office
 
 
 .. include:: /include/include-images.rst
    :start-after: begin
+

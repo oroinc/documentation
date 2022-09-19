@@ -37,7 +37,7 @@ To change the default customer user configuration settings for an organization:
 
 .. _organization-user-impersonation:
 
-.. hint:: The **Login as Customer User** feature is available in the Enterprise edition starting from OroCommercev4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The **Login as Customer User** feature is available in the Enterprise edition starting from OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 7. In the **Login as Customer User** section, you can enable user impersonation for a specific organization. User impersonation allows back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
 
@@ -55,7 +55,7 @@ To change the default customer user configuration settings for an organization:
 
    To configure cookie consent banner on the organization level, take the following steps:
 
-   * **Show Banner** --- Select the check box to display the cookie consent banner to the website's visitor.
+   * **Show Banner** --- Select the checkbox to display the cookie consent banner to the website's visitor.
 
    * **Cookies Banner Text** --- Provide the message of the cookie banner. To edit the text for a specific language, click the language button and edit the text for the needed language.
 

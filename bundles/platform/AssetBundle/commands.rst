@@ -133,6 +133,12 @@ If the ``--symlink`` option is provided this command will create symlinks instea
 
     php bin/console oro:assets:install --symlink
 
+The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths:
+
+.. code-block:: none
+
+    php bin/console oro:assets:install --relative-symlink
+
 You may run individual steps if necessary as follows:
 
 .. code-block:: none

@@ -20,17 +20,20 @@ For example:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\DataLayer\Collector;
+    namespace Acme\Bundle\DemoBundle\DataLayer\Collector;
 
     use Doctrine\Common\Collections\Collection;
     use Oro\Bundle\GoogleTagManagerBundle\DataLayer\Collector\CollectorInterface;
 
     class CustomCollector implements CollectorInterface
     {
+        /**
+         * @inheritDoc
+         */
         public function handle(Collection $data): void
         {
             $data->add([
-                'event' => 'acmeEventName',
+                'event'         => 'someEventName',
                 'my-custom-key' => 'My custom data',
             ]);
         }
@@ -40,8 +43,8 @@ For example:
 .. code-block:: yaml
 
     services:
-        acme_bundle.data_layer.collector.user_detail:
-            class: Acme\Bundle\AcmeBundle\DataLayer\Collector\CustomCollector
+        acme_demo.data_layer.collector.user_detail:
+            class: Acme\Bundle\DemoBundle\DataLayer\Collector\CustomCollector
             tags:
                 - { name: oro_google_tag_manager.data_layer.collector }
 
@@ -54,24 +57,23 @@ The example below illustrates adding an event when the entity changes:
 
 .. code-block:: php
 
-    namespace Acme\Bundle\AcmeBundle\EventListener;
+    namespace Acme\Bundle\DemoBundle\EventListener;
 
-    use Acme\Bundle\AcmeBunde\Entity\SomeEntity;
+    use Acme\Bundle\DemoBundle\Entity\Some;
     use Doctrine\ORM\Event\PreUpdateEventArgs;
     use Oro\Bundle\GoogleTagManagerBundle\DataLayer\DataLayerManager;
     use Oro\Bundle\GoogleTagManagerBundle\Provider\GoogleTagManagerSettingsProviderInterface;
 
     class ExampleEventListener
     {
-        /** @var DataLayerManager */
-        private $dataLayerManager;
+        private DataLayerManager $dataLayerManager;
+        private GoogleTagManagerSettingsProviderInterface $settingsProvider;
+        private array $data = [];
 
-        /** @var GoogleTagManagerSettingsProviderInterface */
-        private $settingsProvider;
-
-        /** @var array */
-        private $data = [];
-
+        /**
+         * @param DataLayerManager $dataLayerManager
+         * @param GoogleTagManagerSettingsProviderInterface $settingsProvider
+         */
         public function __construct(
             DataLayerManager $dataLayerManager,
             GoogleTagManagerSettingsProviderInterface $settingsProvider
@@ -80,7 +82,12 @@ The example below illustrates adding an event when the entity changes:
             $this->settingsProvider = $settingsProvider;
         }
 
-        public function preUpdate(SomeEntity $entity, PreUpdateEventArgs $args): void
+        /**
+         * @param Some $entity
+         * @param PreUpdateEventArgs $args
+         * @return void
+         */
+        public function preUpdate(Some $entity, PreUpdateEventArgs $args): void
         {
             // Check enabled GTM integration
             if (!$this->isApplicable()) {
@@ -96,6 +103,9 @@ The example below illustrates adding an event when the entity changes:
             }
         }
 
+        /**
+         * @return void
+         */
         public function postFlush(): void
         {
             // Add all collected messages to DataLayerManager
@@ -110,11 +120,17 @@ The example below illustrates adding an event when the entity changes:
             $this->onClear();
         }
 
+        /**
+         * @return void
+         */
         public function onClear(): void
         {
             $this->data = [];
         }
 
+        /**
+         * @return bool
+         */
         private function isApplicable(): bool
         {
             // Check enable GTM integration
@@ -135,14 +151,14 @@ Register this listener as a service:
 
     services:
         oro_google_tag_manager.event_listener.checkout:
-        acme_bundle.event_listener.example:
-            class: Acme\Bundle\AcmeBundle\EventListener\ExampleEventListener
+        acme_demo.event_listener.example:
+            class: Acme\Bundle\DemoBundle\EventListener\ExampleEventListener
             public: false
             arguments:
                 - '@oro_google_tag_manager.data_layer.manager'
                 - '@oro_google_tag_manager.provider.google_tag_manager_settings'
             tags:
-                - { name: doctrine.orm.entity_listener, entity: 'Acme\Bundle\AcmeBunde\Entity\SomeEntity', event: preUpdate }
+                - { name: doctrine.orm.entity_listener, entity: 'Acme\Bundle\DemoBundle\Entity\Some', event: preUpdate }
                 - { name: doctrine.event_listener, event: postFlush }
                 - { name: doctrine.event_listener, event: onClear }
 
@@ -160,7 +176,7 @@ Below is an example of updating the product block for product lists via layout u
     layout:
         actions:
             - '@setBlockTheme':
-                themes: '@OroGoogleTagManager/layouts/blank/imports/oro_product_list_item/oro_product_list_item.html.twig'
+                themes: '@OroGoogleTagManager/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig'
             - '@add':
                 id: __google_tag_manager_product_model_expose
                 parentId: __product
@@ -199,7 +215,7 @@ For example:
     });
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin
 
 .. include:: /include/include-links-user.rst
-   :start-after: begin
+    :start-after: begin

@@ -8,17 +8,20 @@ programmatically. In OroPlatform, this can be done by creating :ref:`fixture cla
 ``Migrations/Data/ORM`` subdirectory of your bundle and that implement the ``FixtureInterface``:
 
 .. code-block:: php
-   :caption: src/AppBundle/Migrations/Data/ORM/LoadTasks.php
+    :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadTasks.php
 
-    namespace AppBundle\Migrations\Data\ORM;
+    namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
 
-    use AppBundle\Entity\Priority;
-    use AppBundle\Entity\Task;
+    use Acme\Bundle\DemoBundle\Entity\Priority;
+    use Acme\Bundle\DemoBundle\Entity\Task;
     use Doctrine\Common\DataFixtures\FixtureInterface;
     use Doctrine\Persistence\ObjectManager;
 
     class LoadTasks implements FixtureInterface
     {
+        /**
+         * @inheritDoc
+         */
         public function load(ObjectManager $manager)
         {
             $majorPriority = new Priority();
@@ -57,7 +60,7 @@ The fixtures type ("main", or "demo") can be specified with the ``--fixtures-typ
 
 .. code-block:: none
 
-   php bin/console oro:migration:data:load --fixtures-type=demo
+    php bin/console oro:migration:data:load --fixtures-type=demo
 
 The ``--dry-run`` option can be used to print the list of fixtures without applying them:
 
@@ -79,4 +82,4 @@ The ``--exclude`` option will skip loading fixtures from the specified bundles:
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
+    :start-after: begin
