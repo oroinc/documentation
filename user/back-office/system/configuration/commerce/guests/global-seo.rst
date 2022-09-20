@@ -9,7 +9,6 @@ All products that do not have assigned prices contain Schema.org Microdata marku
 
 To prevent products without prices from being blocked by search crawlers, it is recommended to disable Schema.org Microdata for such products. This can be done globally, :ref:`per organization <sys--conf--commerce--guest-seo--org>`, and :ref:`per website <sys--conf--commerce--guest-seo--website>`.
 
-
 To configure the settings globally:
 
 1. Navigate to **System > Configuration > Commerce > Guests > SEO**.
@@ -18,7 +17,8 @@ To configure the settings globally:
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 2. Select the **Disable Product Microdata Without Prices** checkbox. The option is enabled by default.
-3. Click **Save Settings**.
+3. In the **Used Product Description Field**, select the type of the description field from the dropdown. Available options are *Simplified [Long] Description*, *SEO Meta Description*, and *Simplified Short Description*.
+4. Click **Save Settings**.
 
 .. image:: /user/img/system/config_commerce/seo/global-seo-settings.png
    :alt: Global SEO settings configuration

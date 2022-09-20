@@ -16,12 +16,12 @@ To configure the settings per organization:
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization, and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Guests > SEO** in the menu on the left.
 
-
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 4. Select the **Disable Product Microdata Without Prices** checkbox. The option is enabled by default.
-5. Click **Save Settings**.
+5. In the **Used Product Description Field**, select the type of the description field from the dropdown. Available options are *Simplified [Long] Description*, *SEO Meta Description*, and *Simplified Short Description*.
+6. Click **Save Settings**.
 
 .. image:: /user/img/system/config_commerce/seo/org-seo-settings.png
    :alt: SEO settings configuration per organization
