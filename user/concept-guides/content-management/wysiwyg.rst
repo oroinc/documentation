@@ -39,6 +39,8 @@ The main parts of the editor help define the interface and the structure of your
     .. image:: /user/img/getting_started/wysiwyg/layer_manager.png
        :alt: The settings of the WYSIWYG layer manager menu
 
+.. hint:: Content Templates are available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 * **Content Templates** --- A list of :ref:`content templates <user-guide--landing-pages--marketing--content-templates>` grouped by the tags assigned to them. Templates serve as pre-designed content blocks that you can drag to the canvas and modify their fonts, styles, etc. as the page requires.
 
 WYSIWYG Functions
@@ -437,6 +439,8 @@ For that, click the **</>** icon on the toolbar. You will not be able to apply a
 
 Add a Content Template
 ----------------------
+
+.. hint:: The feature is available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To add a :ref:`content template <user-guide--landing-pages--marketing--content-templates>` to the canvas:
 

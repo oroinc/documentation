@@ -7,6 +7,7 @@
 Manage Content Templates in the Back-Office
 ===========================================
 
+.. hint:: Content Templates are available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 .. hint:: This section is part of the :ref:`Content Management Concept Guide <concept-guide-content-management>` topic that provides a general understanding of the tools that help manage the content of your website, such as web catalog, landing page, content blocks, templates, widgets, and WYSIWYG editor.
 
