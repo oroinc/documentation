@@ -5,13 +5,11 @@
 Configure Global SEO Settings
 =============================
 
-.. hint:: The SEO configuration is available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
-
-.. image:: /user/img/system/config_commerce/seo/global-seo-settings.png
-   :alt: Global SEO settings configuration
 
 Disable Product Microdata Without Prices
 ----------------------------------------
+
+.. hint:: This configuration is available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 All products that do not have assigned prices contain Schema.org Microdata markup with a product schema without price information. Some search crawlers (e.g., Google) consider these products invalid and can exclude them from the search index.
 
@@ -30,6 +28,8 @@ To configure the settings globally:
 Enable Product Description
 --------------------------
 
+.. hint:: This configuration is available starting from v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 You can control which product field will be used for the Schema.org description property globally, :ref:`per organization <sys--conf--commerce--guest-seo--org>`, and :ref:`per website <sys--conf--commerce--guest-seo--website>`.
 
 To configure the settings globally:
@@ -46,5 +46,8 @@ To configure the settings globally:
 
 4. Click **Save Settings**.
 
+.. image:: /user/img/system/config_commerce/seo/global-seo-settings.png
+   :alt: Global SEO settings configuration
+   
 .. include:: /include/include-images.rst
    :start-after: begin
