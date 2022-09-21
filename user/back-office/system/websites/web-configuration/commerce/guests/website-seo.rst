@@ -5,13 +5,10 @@
 Configure SEO Settings per Website
 ==================================
 
-.. hint:: The SEO configuration is available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
-
-.. image:: /user/img/system/config_commerce/seo/website-seo-settings.png
-   :alt: SEO settings configuration per website
-
 Disable Product Microdata Without Prices
 ----------------------------------------
+
+.. hint:: This configuration is available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 All products that do not have assigned prices contain Schema.org Microdata markup with a product schema without price information. Some search crawlers (e.g., Google) consider these products invalid and can exclude them from the search index.
 
@@ -32,10 +29,11 @@ To configure the settings per website:
 Enable Product Description
 --------------------------
 
+.. hint:: This configuration is available starting from v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 You can control which product field will be used for the Schema.org description property :ref:`globally <sys--conf--commerce--guest-seo--global>`, :ref:`per organization <sys--conf--commerce--guest-seo--org>`, and per website.
 
 To configure the settings per website:
-
 
 1. Navigate to **System > Websites**.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website, and click |IcConfig| to start editing the configuration.
@@ -46,6 +44,9 @@ To configure the settings per website:
 .. note:: Option **Used Product Description Field** works only when **Include Product Description** is enabled.
 
 6. Click **Save Settings**.
+
+.. image:: /user/img/system/config_commerce/seo/website-seo-settings.png
+   :alt: SEO settings configuration per website
 
 .. include:: /include/include-images.rst
    :start-after: begin

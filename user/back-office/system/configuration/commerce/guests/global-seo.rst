@@ -5,7 +5,6 @@
 Configure Global SEO Settings
 =============================
 
-
 Disable Product Microdata Without Prices
 ----------------------------------------
 

@@ -5,13 +5,10 @@
 Configure SEO Settings per Organization
 =======================================
 
-.. hint:: The SEO configuration is available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
-
-.. image:: /user/img/system/config_commerce/seo/org-seo-settings.png
-   :alt: SEO settings configuration per organization
-
 Disable Product Microdata Without Prices
 ----------------------------------------
+
+.. hint:: This onfiguration is available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 All products that do not have assigned prices contain Schema.org Microdata markup with a product schema without price information. Some search crawlers (e.g., Google) consider these products invalid and can exclude them from the search index.
 
@@ -32,6 +29,8 @@ To configure the settings per organization:
 Enable Product Description
 --------------------------
 
+.. hint:: This configuration is available starting from v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 You can control which product field will be used for the Schema.org description property :ref:`globally <sys--conf--commerce--guest-seo--global>`, per organization, and :ref:`per website <sys--conf--commerce--guest-seo--website>`.
 
 To configure the settings per organization:
@@ -45,6 +44,9 @@ To configure the settings per organization:
 .. note:: Option **Used Product Description Field** works only when **Include Product Description** is enabled.
 
 6. Click **Save Settings**.
+
+.. image:: /user/img/system/config_commerce/seo/org-seo-settings.png
+   :alt: SEO settings configuration per organization
 
 .. include:: /include/include-images.rst
    :start-after: begin
