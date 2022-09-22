@@ -3,7 +3,7 @@
 Testing REST API
 ================
 
-To ensure that your REST API resources work properly, cover them with |functional tests|. To simplify creation of the functional test for REST API resources that conforms to |JSON:API specification|, the |RestJsonApiTestCase| test case was created. The following table contains the list of the most useful methods of this class:
+To ensure that your REST API resources work properly, cover them with |functional tests|. To simplify the creation of the functional test for REST API resources that conforms to |JSON:API specification|, the |RestJsonApiTestCase| test case was created. The following table contains the list of the most valuable methods in this class:
 
 .. csv-table::
    :header: "Method","Description"
@@ -15,7 +15,7 @@ To ensure that your REST API resources work properly, cover them with |functiona
    "cget","Sends the GET request for a list of entities. See :ref:`get_list <get-list-action>` action."
    "post","Sends the POST request for an entity resource. See :ref:`create <create-action>` action. If the second parameter is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
    "patch","Sends the PATCH request for a single entity. See :ref:`update <update-action>` action. If the second parameter is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
-   "cpatch","Sends PATCH request for a list of entities. See :ref:`update_list <update-list-action>` action. If the second parameter is a file name, the file should be located in the ``requests`` directory near to PHP file contains the test."
+   "cpatch","Sends PATCH request for a list of entities. See :ref:`update_list <update-list-action>` action. If the second parameter is a file name, the file should be located in the ``requests`` directory near to PHP file containing the test."
    "delete","Sends the DELETE request for a single entity. See :ref:`delete <delete-action>` action."
    "cdelete","Sends the DELETE request for a list of entities. See :ref:`delete_list <delete-list-action>` action."
    "getSubresource","Sends the GET request for a sub-resource of a single entity. See :ref:`get_subresource <get-subresource-action>` action."
@@ -40,12 +40,12 @@ To ensure that your REST API resources work properly, cover them with |functiona
    "dumpYmlTemplate","Saves a response content to a YAML file. If the first parameter is a file name, the file is saved into the responses directory next to the PHP file that contains the test."
    "getResourceId","Extracts the JSON:API resource identifier from the response. For details, see |JSON:API specification|."
    "getNewResourceIdFromIncludedSection","Extracts the JSON:API resource identifier from the ``included`` section of the response. For details, see :ref:`Create and Update Related Resources Together with a Primary API Resource <web-services-api--create-update-related-resources>`."
-   "getRequestData","Converts the given request to an array that can be sent to the server. The given request can be a path to a file that contains the request data or an array with the request data. If the request is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
+   "getRequestData","Converts the given request to an array that can be sent to the server. The request can be a path to a file containing the request data or an array with the request data. If the request is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
    "getResponseData","Converts the given response to an array that can be used to compare it with a response received from the server. The given response can be a path to a file that contains the response data or an array with the response data. If the response is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
    "getResponseErrors","Extracts the list of errors from the JSON:API response. For details, see |JSON:API specification|."
-   "updateResponseContent","Replaces all values in the given expected response content with corresponding value from the actual response content when the key of an element is equal to the given key and the value of this element is equal to the given placeholder. If the first parameter is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
+   "updateResponseContent","Replaces all values in the given expected response content with the corresponding value from the actual response content when the key of an element is equal to the given key and the value of this element is equal to the given placeholder. If the first parameter is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
    "getApiBaseUrl","Returns the base URL for all REST API requests, e.g. ``http://localhost/api``."
-   "appendEntityConfig","Appends a configuration of an entity. This method is helpful when you create a general functionality and need to test it for different configurations without creating a test entity for each of them. Please note that the configuration is restored after each test and thus, you do not need to do it manually."
+   "appendEntityConfig","Appends a configuration of an entity. This method is helpful when you create a general functionality and need to test it for different configurations without creating a test entity for each of them. Please note that the configuration is restored after each test, and thus, you do not need to do it manually."
 
 .. note:: By default, HATEOAS is disabled in functional tests, although it is enabled by default in production and API Sandbox. It was done to avoid cluttering up the tests with HATEOAS links. In case you want to enable HATEOAS for your test, use HTTP_HATEOAS server parameter, e.g. ``$this->cget(['entity' => 'products'], [], ['HTTP_HATEOAS' => true])``.
 
@@ -54,9 +54,9 @@ To ensure that your REST API resources work properly, cover them with |functiona
 Testing Batch API
 -----------------
 
-To simplify creation of the functional test for REST Batch API resources that conforms to |JSON:API specification|,
-the |RestJsonApiUpdateListTestCase| test case was created. The following table contains the list of the most useful
-methods of this class:
+To simplify the creation of the functional test for REST Batch API resources that conforms to |JSON:API specification|,
+the |RestJsonApiUpdateListTestCase| test case was created. The following table contains the list of the most valuable
+methods in this class:
 
 .. csv-table::
    :header: "Method","Description"
@@ -136,7 +136,7 @@ Fixture file:
         productUnitPrecision: '@product-1->primaryUnitPrecision'
         quantity: 10
 
-The ``dependencies`` section can be used if a fixture depends on another Doctrine or Alice fixtures. References are shared between Alice and Doctrine fixtures.
+You can use the ``dependencies`` section if a fixture depends on another Doctrine or Alice fixtures. References are shared between Alice and Doctrine fixtures.
 
 .. _api-alice-references:
 
@@ -160,7 +160,7 @@ Use methods of properties with references:
 YAML Templates
 --------------
 
-A YAML template is a regular YAML file. The only difference is that you can use references and fakers in values. They will be processed by Alice and replaces with the appropriate real values. For details, see the |Alice documentation|.
+A YAML template is a regular YAML file. The only difference is that you can use references and fakers in values. They will be processed by Alice and replaced with the appropriate real values. For details, see the |Alice documentation|.
 
 .. _assert-expectations:
 
@@ -254,7 +254,7 @@ Alternatively, you can store YAML in a ``.yml`` file:
 Process Single Reference
 ------------------------
 
-To process a single reference, e.g. to compare it with another value:
+To process a single reference, for example, to compare it with another value:
 
 .. code-block:: php
 
@@ -286,7 +286,7 @@ When you develop new tests for REST API, it may be convenient to dump responses 
 Base Test Cases for Unit Tests
 ------------------------------
 
-To simplify |unit testing| of :ref:`API processors <web-api--processors>`, one of the following base classes can be used:
+To simplify |unit testing| of :ref:`API processors <web-api--processors>`, you can use one of the following base classes:
 
 .. csv-table::
    :header: "Class","Action"

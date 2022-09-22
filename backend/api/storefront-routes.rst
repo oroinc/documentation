@@ -5,21 +5,21 @@
 Storefront Routes
 =================
 
-Storefront API has an API resource, named as ``routes``, that returns the information about the storefront URLs.
-This information includes a resource type and the relative URL of an API resource that be used to get the data.
+Storefront API has an API resource ``routes`` that returns the information about the storefront URLs.
+This information includes a resource type and the relative URL of an API resource that you can use to get the data.
 
-To provide this information, the two types of resolvers are used:
+Two types of resolvers are used to provide this information:
 
  - the resource type resolver, that is represented by |ResourceTypeResolverInterface|;
- - the API URL resolver, that is represented by |ResourceApiUrlResolverInterface|.
+ - the API URL resolver that is represented by |ResourceApiUrlResolverInterface|.
 
-The resource type resolvers should be registered in service container with a tag ``oro_frontend.api.resource_type_resolver``,
-and optionally the ``routeName`` tag attribute can be used to specify the route for which the resolver is applicable.
+The resource type resolvers should be registered in the service container with a tag ``oro_frontend.api.resource_type_resolver``,
+and optionally, the ``routeName`` tag attribute can be used to specify the route for which the resolver is applicable.
 
-The API URL resolvers should be registered in service container with a tag ``oro_frontend.api.resource_api_url_resolver``,
-and optionally the ``routeName`` tag attribute can be used to specify the route for which the resolver is applicable.
+The API URL resolvers should be registered in the service container with a tag ``oro_frontend.api.resource_api_url_resolver``,
+and optionally, the ``routeName`` tag attribute can be used to specify the route for which the resolver is applicable.
 
-An example of resolvers registration in `services_api.yml` file:
+An example of resolvers registration in the `services_api.yml` file:
 
 .. code-block:: yaml
 

@@ -69,21 +69,21 @@ To create an installer for AcmeDemoBundle:
 
 1. Clear the application cache:
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         php bin/console cache:clear
+      php bin/console cache:clear
 
 2. Apply the changes that you defined in your code to the database:
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         php bin/console doctrine:schema:update
+      php bin/console doctrine:schema:update
 
 3. Generate an installer and save it to the AcmeDemoBundleInstaller.php:
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         php bin/console oro:migration:dump --bundle=AcmeDemoBundle
+      php bin/console oro:migration:dump --bundle=AcmeDemoBundle
 
 The generated AcmeDemoBundleInstaller.php will be placed into the AcmeDemoBundle/Migrations/Schema directory.
 
@@ -204,7 +204,7 @@ If you have several migration classes within the same version and you need to ma
 Below is an example of a migration file:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_1/AddTmpTestTable.php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_1/AddTmpTestTable.php
 
     namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_1;
 
@@ -268,7 +268,7 @@ Extensions for Database Structure Migrations
 You cannot always use standard Doctrine methods to modify the database structure. For example, ``Schema::renameTable`` does not work because it drops an existing table and then creates a new one. To help you manage such a case and enable you to to add additional functionality to any migration, use the extensions mechanism. The following example illustrates how |RenameExtension| can be used:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/TestRenameTable.php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/TestRenameTable.php
 
     namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_2;
 
@@ -393,7 +393,7 @@ To create your own extension:
 
 1. Create an extension class in the ``YourBundle/Migration/Extension`` directory. Using ``YourBundle/Migration/Extension`` directory is not mandatory, but highly recommended. For example:
 
-    .. code-block:: php
+   .. code-block:: php
       :caption: src/Acme/Bundle/DemoBundle/Migrations/Extension/MyExtension.php
 
         namespace Acme\Bundle\DemoBundle\Migration\Extension;
@@ -414,7 +414,7 @@ To create your own extension:
 
 2. Create `*AwareInterface` in the same namespace. It is important that the interface name is ``{ExtensionClass}AwareInterface`` and the set method is ``set{ExtensionClass}({ExtensionClass} ${extensionName})``.    For example:
 
-    .. code-block:: php
+   .. code-block:: php
       :caption: src/Acme/Bundle/DemoBundle/Migrations/Extension/MyExtensionAwareInterface.php
 
         namespace Acme\Bundle\DemoBundle\Migration\Extension;
@@ -434,7 +434,7 @@ To create your own extension:
 
 3. Register an extension in the dependency container. For example:
 
-    .. code-block:: yaml
+   .. code-block:: yaml
       :caption: src/Acme/Bundle/DemoBundle/Resources/services.yml
 
         services:
