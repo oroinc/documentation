@@ -3,10 +3,10 @@
 Configure Feature Depended Firewall Listeners
 =============================================
 
-API can be enabled or disabled via system configuration. When the API is disabled, the API related security firewalls
-should not use some authorization listeners, for example WSSE and OAuth authorization should be disabled.
+API can be enabled or disabled via the system configuration. When the API is disabled, the API-related security firewalls
+should not use some authorization listeners, for example, WSSE and OAuth authorization should be disabled.
 
-To be able to configure listeners for disabled API feature, the following configuration can be used:
+To be able to configure listeners for a disabled API feature, use the following configuration:
 
 .. code-block:: yaml
 

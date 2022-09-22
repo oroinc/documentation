@@ -9,13 +9,13 @@ The Web API development framework is implemented by :ref:`OroApiBundle <bundle-d
 
 * |ChainProcessor| --- Organizes data processing flow.
 * |EntitySerializer| --- Provides fast access to entities data.
-* |Symfony Form| --- Provides a flexible way to map request data to entity object.
+* |Symfony Form| --- Provides a flexible way to map request data to the entity object.
 
 |FOSRestBundle| and |NelmioApiDocBundle| are also used for REST API.
 
-.. note:: The main format for REST API is described at |JSON:API|. Please make sure that you are familiar with it before you start creating REST API for your entities.
+.. note:: The main format for REST API is described at |JSON:API|. Please make sure that you are familiar with it before creating REST API for your entities.
 
-The auto-generated documentation and sandbox for REST API is available at `/api/doc`, e.g. |http://demo.orocrm.com/api/doc|.
+The auto-generated documentation and sandbox for REST API is available in the `/api/doc`, e.g., |http://demo.orocrm.com/api/doc|.
 
 By default, only custom entities, dictionaries, and enumerations are accessible through the back-office API. For how to make other entities available via the API, see :ref:`Configuration Reference <web-api--configuration>`.
 

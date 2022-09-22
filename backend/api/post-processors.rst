@@ -3,8 +3,8 @@
 Post Processors
 ===============
 
-A post processor is a data transformer that is used to convert a field value to a format suitable for the API.
-The post processors are used only in the :ref:`get <get-action>`, :ref:`get_list <get-list-action>` and
+A post-processor is a data transformer that converts a field value to a format suitable for the API.
+Post-processors are used only in the :ref:`get <get-action>`, :ref:`get_list <get-list-action>` and
 :ref:`get_subresource <get-subresource-action>` actions.
 
 The following table shows all post processors provided out-of-the-box:
@@ -42,8 +42,8 @@ To create a new post processor, you need to do the following:
         }
     }
 
-2. Register the post processor in the dependency injection container using the ``oro.api.post_processor`` tag
-   with the ``alias`` attribute that contains a unique name of the post processor:
+2. Register the post-processor in the dependency injection container using the ``oro.api.post_processor`` tag
+   with the ``alias`` attribute that contains a unique name of the post-processor:
 
 .. code-block:: yaml
 
@@ -53,7 +53,7 @@ To create a new post processor, you need to do the following:
             - { name: oro.api.post_processor, alias: some }
 
 3. Create a :ref:`config extension <web-api--configuration-extensions-create>` if you need to validate
-   the post processor options.
+   the post-processor options.
 
 .. code-block:: php
 
