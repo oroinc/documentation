@@ -5,7 +5,7 @@ Batch API
 
 The Batch API provides a way to create or update a list of entities of the same type via one API request.
 
-For detailed information how this API works see :ref:`update_list <update-list-action>`,
+For detailed information how this API works, see the :ref:`update_list <update-list-action>`,
 :ref:`batch_update <batch-update-action>` and :ref:`batch_update_item <batch-update-item-action>` actions.
 
 .. _web-api--batch-api--enable:
@@ -15,7 +15,7 @@ Enable Batch API for Entity
 
 By default, Batch API is disabled for all API resources. To enable it for an API resource,
 the :ref:`update_list <update-list-action>` action should be enabled for this resource.
-This can be done via ``actions`` section for an entity in `Resources/config/oro/api.yml`.
+You can do this via ``actions`` section for an entity in `Resources/config/oro/api.yml`.
 
 Example:
 
@@ -32,7 +32,7 @@ Example:
 Batch API Configuration
 -----------------------
 
-All configuration options related to Batch API are grouped in ``batch_api`` section of ApiBundle configuration:
+All configuration options related to Batch API are grouped in the ``batch_api`` section of ApiBundle configuration:
 
 .. code-block:: yaml
 
@@ -56,9 +56,8 @@ All configuration options related to Batch API are grouped in ``batch_api`` sect
 Parameters ``chunk_size_per_entity`` and ``included_data_chunk_size_per_entity`` can be used to tuning of
 an API engine to have maximum performance.
 
-To get maximum performance in requests with included entities, the value of the ``included_data_chunk_size_per_entity``
-parameter can be changed to the medium number of related entities that will be set to one primary entity when processing
-the request.
+To get maximum performance in requests with included entities, you can change the value of the ``included_data_chunk_size_per_entity``
+parameter to the medium number of related entities that will be set to one primary entity when processing the request.
 
 .. _web-api--batch-api--async-operation-config:
 
@@ -89,8 +88,7 @@ The default configuration of this cron job is illustrated below:
 Storage Configuration
 ---------------------
 
-The |KnpGaufretteBundle| is used to configure storages for source data files of Batch API requests and
-all files that are created when processing asynchronous batch operations (e.g. chunk files, error files, etc.).
+The |KnpGaufretteBundle| is used to configure storages for source data files of Batch API requests and all files created when processing asynchronous batch operations (e.g., chunk files, error files, etc.).
 
 Here is the default configuration of these storages:
 
@@ -117,8 +115,7 @@ Here is the default configuration of these storages:
                 adapter: api
                 alias: api_filesystem
 
-To change the adapter configuration the `Resources/config/oro/app.yml` in any bundle or `config/config.yml`
-of your application can be used.
+To change the adapter configuration, use `Resources/config/oro/app.yml` in any application bundle or `config/config.yml`.
 The following example shows how to reconfigure this adapter to use a local filesystem:
 
 .. code-block:: yaml
@@ -129,7 +126,7 @@ The following example shows how to reconfigure this adapter to use a local files
                 local:
                     directory: '%kernel.project_dir%/var/api_files'
 
-More examples can be found in |KnpGaufretteBundle documentation|.
+You can find more examples in |KnpGaufretteBundle documentation|.
 
 
 .. include:: /include/include-links-dev.rst

@@ -3,8 +3,8 @@
 How to
 ======
 
-Turn on API for entity
-----------------------
+Turn on API for an Entity
+-------------------------
 
 By default, API for entities is disabled. To turn on API for an entity, add the entity to `Resources/config/oro/api.yml` in your bundle:
 
@@ -16,10 +16,10 @@ By default, API for entities is disabled. To turn on API for an entity, add the 
 
 .. _turn-on-api-for-entity-disabled-in-entity-yml:
 
-Turn on API for entity disabled in Resources/config/oro/entity.yml
-------------------------------------------------------------------
+Turn on API for an Entity Disabled in Resources/config/oro/entity.yml
+---------------------------------------------------------------------
 
-The ``exclusions`` section of `Resources/config/oro/entity.yml` configuration file is used to make an entity or a field inaccessible for a user. The entities and fields from this section are inaccessible via the API as well. However, it is possible to override this rule for the API. To do this, use the ``exclude`` option in `Resources/config/oro/api.yml`.
+The ``exclusions`` section of the `Resources/config/oro/entity.yml` configuration file is used to make an entity or a field inaccessible for a user. The entities and fields from this section are inaccessible via the API as well. However, it is possible to override this rule for the API. To do this, use the ``exclude`` option in `Resources/config/oro/api.yml`.
 
 Let us consider the case when you have the following `Resources/config/oro/entity.yml`:
 

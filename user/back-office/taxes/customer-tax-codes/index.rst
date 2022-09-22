@@ -9,9 +9,9 @@ Manage Customer Tax Codes in the Back-Office
 
 .. hint:: This section is part of the :ref:`Tax Management <concept-guide--taxes>` concept guide that provides a general understanding of the tax configuration and management in OroCommerce.
 
-Customer Tax Code is a label that is assigned to a customer and indicates the tax obligations and exemptions a customer has. The customer tax obligations are taken into account when a customer (user) submits an order.
+A customer tax code is a label assigned to a customer and indicates the tax obligations and exemptions a customer has. The customer tax obligations are considered when a customer (user) submits an order.
 
-The sections below provide guidance on managing customer tax codes, using them to label customers and bind customers to a dedicated tax rules.
+The sections below explain how to manage customer tax codes, using them to label customers and bind customers to dedicated tax rules.
 
 Create a Customer Tax Code
 --------------------------
@@ -28,9 +28,9 @@ To view all customer tax codes, navigate to **Taxes > Customer Tax Codes** in th
 .. image:: /user/img/taxes/customer_tax_codes.png
    :alt: The general page of all customer tax codes
 
-.. note:: To handle a big volume of data, use the page switcher, increase *View Per Page* or use filters to narrow down the list to just the codes you need.
+.. note:: To handle a considerable volume of data, use the page switcher, increase *View Per Page*, or use filters to narrow down the list to just the codes you need.
 
-In the customer tax codes list, you will find the information about the code (unique identifier), detailed description, and the dates when the customer tax code was created and updated.
+In the customer tax codes list, you will find the information about the code (unique identifier), a detailed description, and the dates when the customer tax code was created and updated.
 
 Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or  |IcDelete| to remove the customer tax code.
 
