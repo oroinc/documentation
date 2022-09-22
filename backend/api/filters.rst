@@ -24,20 +24,20 @@ All supported comparison types are listed in the following table:
    :header: "Comparison Type","Operator","Description"
    :widths: 15, 15, 30
 
-   "eq","`=`","For fields and not collection valued associations checks whether a field value is equal to a filter value. For collection valued associations checks whether a collection contains any of filter values."
-   "neq ","`!=`","For fields and not collection valued associations checks whether a field value is not equal to a filter value. For collection valued associations checks whether a collection does not contain any of filter values. Records that have `null` as the field value or empty collection are not returned. To return such records the `neq_or_null` comparison type should be used."
-   "lt","`<`","Checks whether a field value is less than a filter value. Supports numeric, date and time fields."
-   "lte","`<=`","Checks whether a field value is less than or equal to a filter value. Supports numeric, date and time fields."
-   "gt","`>`","Checks whether a field value is greater than a filter value. Supports numeric, date and time fields."
-   "gte","`>=`","Checks whether a field value is greater than or equal to a filter value. Supports numeric, date and time fields."
-   "exists","`*`","For fields and not collection valued associations checks whether a field value is not `null` (if a filter value is `true`) or a field value is `null` (if a filter value is `false`). For collection valued associations checks whether a collection is not empty (if a filter value is `true`) or a collection is empty (if a filter value is `false`)."
-   "neq_or_null","`!*`","For fields and not collection valued associations checks whether a field value is not equal to a filter value or it is `null`. For collection valued associations checks whether a collection does not contain any of filter values or it is empty."
-   "contains","`~`","For string fields checks whether a field value contains a filter value. The `LIKE '%value%'` comparison is used. For collection valued associations checks whether a collection contains all of filter values."
-   "not_contains","`!~`","For string fields checks whether a field value does not contain a filter value. The `NOT LIKE '%value%'` comparison is used. For collection valued associations checks whether a collection does not contain all of filter values."
+   "eq","`=`","For fields and not collection valued associations, it checks whether a field value is equal to a filter value. For collection valued associations, it checks whether a collection contains any of the filter values."
+   "neq ","`!=`","For fields and not collection valued associations, it checks whether a field value is not equal to a filter value. For collection valued associations, it checks that a collection does not contain any filter values. Records with `null` as the field value or an empty collection are not returned. To return them, use the `neq_or_null` comparison type."
+   "lt","`<`","Checks whether a field value is less than a filter value. Supports numeric, date, and time fields."
+   "lte","`<=`","Checks whether a field value is less than or equal to a filter value. Supports numeric, date, and time fields."
+   "gt","`>`","Checks whether a field value is greater than a filter value. Supports numeric, date, and time fields."
+   "gte","`>=`","Checks whether a field value is greater than or equal to a filter value. Supports numeric, date, and time fields."
+   "exists","`*`","For fields and not collection valued associations, it checks whether a field value is not `null` (if a filter value is `true`) or a field value is `null` (if a filter value is `false`). For collection valued associations, it checks whether a collection is not empty (if a filter value is `true`) or empty (if a filter value is `false`)."
+   "neq_or_null","`!*`","For fields and not collection valued associations checks whether a field value is not equal to a filter value, or is `null`. For collection valued associations, it  checks whether a collection does not contain any filter values or is empty."
+   "contains","`~`","For string fields, it checks whether a field value contains a filter value. The `LIKE '%value%'` comparison is used. For collection valued associations, it checks whether a collection contains all of the filter values."
+   "not_contains","`!~`","For string fields, it checks that a field value does not contain a filter value. The `NOT LIKE '%value%'` comparison is used. For collection valued associations, it checks that a collection does not contain all of the filter values."
    "starts_with","`^`","Checks whether a field value starts with a filter value. The `LIKE 'value%'` comparison is used. Supports only string fields."
-   "not_starts_with","`!^`","Checks whether a field value does not start with a filter value. The `NOT LIKE 'value%'` comparison is used. Supports only string fields. "
+   "not_starts_with","`!^`","Checks that a field value does not start with a filter value. The `NOT LIKE 'value%'` comparison is used. Supports only string fields. "
    "ends_with","`$`","Checks whether a field value ends with a filter value. The `LIKE '%value'` comparison is used. Supports only string fields."
-   "not_ends_with","`!$`","Checks whether a field value does not end with a filter value. The `NOT LIKE '%value'` comparison is used. Supports only string fields."
+   "not_ends_with","`!$`","Checks that a field value does not end with a filter value. The `NOT LIKE '%value'` comparison is used. Supports only string fields."
 
 .. _web-api--existing-filters:
 
@@ -75,7 +75,7 @@ See :ref:`Enable Advanced Operators for String Filter <advanced-operators-for-st
 
 The following filters are also configured automatically:
 
-- The `composite_identifier` filter for the ID field, if an entity has a composite identifier.
+- The `composite_identifier` filter for the ID field if an entity has a composite identifier.
   The operators enabled for this filter are `=`, `!=`, `*`, `!*`.
   It is implemented by |CompositeIdentifierFilter|.
 - The `association` filter for :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>`.
@@ -105,10 +105,9 @@ in the  `filters` section and all the existing operators for filters in the `fil
 FilterInterface Interface
 -------------------------
 
-The |FilterInterface| interface must be implemented by all filters.
+All filters must implement the |FilterInterface| interface.
 
-Consider checking out the following classes before implementing your own filters, as each of them may serve
-as a good base class for your own filters:
+Consider checking out the following classes before implementing your own filters, as each of them may serve as a good base class for your own filters:
 
 * :ref:`StandaloneFilter <standalonefilter-base-class>`
 * :ref:`StandaloneFilterWithDefaultValue <standalonefilterwithdefaultvalue-base-class>`,
@@ -120,7 +119,7 @@ as a good base class for your own filters:
 FieldFilterInterface Interface
 ------------------------------
 
-The |FieldFilterInterface| is a marker interface that must be implemented by filters that are applied to a field.
+The |FieldFilterInterface| is a marker interface that filters applied to a field must implement.
 
 Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |CompositeIdentifierFilter|, |NestedTreeFilter|, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
 
@@ -129,7 +128,7 @@ Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, 
 FieldAwareFilterInterface Interface
 -----------------------------------
 
-The |FieldAwareFilterInterface| interface must be implemented by filters that are applied to a field and need to know the field name.
+Filters that are applied to a field and need to know the field name. must implement the |FieldAwareFilterInterface| interface.
 
 Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
 
@@ -138,7 +137,7 @@ Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, 
 CollectionAwareFilterInterface Interface
 ----------------------------------------
 
-The |CollectionAwareFilterInterface| interface must be implemented by filters that can handle a collection valued association.
+Filters that can handle a collection valued association must implement the |CollectionAwareFilterInterface| interface.
 
 Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
 
@@ -147,23 +146,22 @@ Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, 
 ConfigAwareFilterInterface Interface
 ------------------------------------
 
-The |ConfigAwareFilterInterface| interface must be implemented by filters that depend on the |entity configuration|.
+Filters that depend on the |entity configuration| must implement the |ConfigAwareFilterInterface| interface.
 
 .. _metaawarefilterinterface:
 
 MetadataAwareFilterInterface Interface
 --------------------------------------
 
-The |MetadataAwareFilterInterface| interface must be implemented by filters that depend on the |entity metadata|.
-
-An example of such filter is |CompositeIdentifierFilter|.
+Filters that depend on the |entity metadata| must implement the |MetadataAwareFilterInterface| interface.
+An example of such a filter is |CompositeIdentifierFilter|.
 
 .. _requestawarefilterinterface:
 
 RequestAwareFilterInterface Interface
 -------------------------------------
 
-The |RequestAwareFilterInterface| interface must be implemented by filters that depend on a :ref:`request type <api-request-type>`.
+Filters that depend on a :ref:`request type <api-request-type>` must implement the |RequestAwareFilterInterface| interface.
 
 Examples of such filters are |ExtendedAssociationFilter| and |CompositeIdentifierFilter|.
 
@@ -172,35 +170,34 @@ Examples of such filters are |ExtendedAssociationFilter| and |CompositeIdentifie
 SelfIdentifiableFilterInterface Interface
 -----------------------------------------
 
-The |SelfIdentifiableFilterInterface| interface must be implemented by filters that should search their own value by themselves.
+Filters that should search for their value themselves must implement the |SelfIdentifiableFilterInterface| interface.
 
-An example of such filter is |ExtendedAssociationFilter|.
+An example of such a filter is |ExtendedAssociationFilter|.
 
 .. _namedvaluefilterinterface:
 
 NamedValueFilterInterface Interface
 -----------------------------------
 
-The |NamedValueFilterInterface| interface must be implemented by filters that have a named value.
+Filters with a named value should implement the |NamedValueFilterInterface| interface.
 
-An example of such filter is |ExtendedAssociationFilter|.
+An example of such a filter is |ExtendedAssociationFilter|.
 
 .. _specialhandlingfilterinterface:
 
 SpecialHandlingFilterInterface Interface
 ----------------------------------------
 
-The |SpecialHandlingFilterInterface| interface must be implemented by filters that have a special handling
-and as result the common normalization should not be applied to theirs values.
+Filters with special handling must implement the |SpecialHandlingFilterInterface| interface. As a result, common normalization should not be applied to their values.
 
-An example of such filter is |MetaPropertyFilter|, |FieldsFilter|, |IncludeFilter|.
+Examples of such a filter are |MetaPropertyFilter|, |FieldsFilter|, and |IncludeFilter|.
 
 .. _standalonefilter-base-class:
 
 StandaloneFilter Base Class
 ---------------------------
 
-The |StandaloneFilter| is the base class for filters that can be used independently of other filters.
+The |StandaloneFilter| is the base class for filters you can use independently of other filters.
 
 Examples of such filters are:
 
@@ -219,7 +216,7 @@ StandaloneFilterWithDefaultValue Base Class
 -------------------------------------------
 
 The |StandaloneFilterWithDefaultValue| is the base class for filters
-that can be used independently of other filters and have a predefined default value.
+that you can use independently of other filters and have a predefined default value.
 
 Examples of such filters are |PageNumberFilter|, |PageSizeFilter|  and |SortFilter|.
 
@@ -227,27 +224,25 @@ Criteria Class
 --------------
 
 The |Criteria| class represents criteria for filtering data returned by ORM queries.
-This class extends |Doctrine Criteria| class and adds methods to work with joins.
-It is required because API filters can be applied to associations at any nesting level.
+This class extends the |Doctrine Criteria| class and adds methods to work with joins.
+It is required as API filters can be applied to associations at any nesting level.
 
 CriteriaConnector Class
 -----------------------
 
-The |CriteriaConnector| class is used to apply criteria stored in Criteria object
-to QueryBuilder object.
+The |CriteriaConnector| class is used to apply criteria stored in the Criteria object to the QueryBuilder object.
 
-This class uses |CriteriaNormalizer| class to prepare Criteria object before
-criteria are applied to QueryBuilder object.
+This class uses |CriteriaNormalizer| to prepare the Criteria object before criteria are applied to the QueryBuilder object.
 
-Also pay attention to |RequireJoinsDecisionMakerInterface| and |OptimizeJoinsDecisionMakerInterface| interfaces
-and `oro_api.query.require_joins_decision_maker` and `oro_api.query.optimize_joins_decision_maker` services.
-You can decorate these services if your expressions require this.
+Keep in mind that you can decorate |RequireJoinsDecisionMakerInterface| and |OptimizeJoinsDecisionMakerInterface| interfaces
+and `oro_api.query.require_joins_decision_maker` and `oro_api.query.optimize_joins_decision_maker` services if your expressions require this.
+
 
 QueryExpressionVisitor Class
 ----------------------------
 
-The |QueryExpressionVisitor| is used to walk a graph of DQL expressions from Criteria object and turns them into a query. This class is similar to
-|Doctrine QueryExpressionVisitor|, but allows to add new types of expressions easily and helps to build subquery based expressions.
+The |QueryExpressionVisitor| is used to walk a graph of DQL expressions from the Criteria object and turns them into a query. This class is similar to
+|Doctrine QueryExpressionVisitor|, but allows adding new types of expressions easily and helps to build subquery-based expressions.
 
 .. _web-api--query-expressions:
 
@@ -288,11 +283,8 @@ The following query expressions are implemented out-of-the-box:
     "NESTED_TREE","|NestedTreeComparisonExpression|","returns all child nodes for a given node depending on the nesting level"
     "NESTED_TREE_WITH_ROOT","|NestedTreeComparisonExpression|","returns a given node and all child nodes for this node depending on the nesting level"
 
-If necessary, you can add new comparison expressions and use them in your filters.
-For this, create a class that implements the expression logic, register it as a service tagged with the
-`oro.api.query.comparison_expression` in the dependency injection container
-and (if required) decorate the |oro_api.query.require_joins_decision_maker|
-and |oro_api.query.optimize_joins_decision_maker| services.
+You can add new comparison expressions and use them in your filters if necessary. For this, create a class that implements the expression logic, register it as a service tagged with the `oro.api.query.comparison_expression` in the dependency injection container, and decorate the |oro_api.query.require_joins_decision_maker|
+and |oro_api.query.optimize_joins_decision_maker| services if required.
 
 .. _web-api--creating-filter:
 
@@ -301,21 +293,21 @@ Creating a New Filter
 
 To create a new filter:
 
-* Create a class that implements the filtering logic. This class must implement `FilterInterface Interface`_ or extend one of the classes that implement this interface.
+* Create a class that implements the filtering logic. This class must implement `FilterInterface Interface`_ or extend one of the classes implementing this interface.
 * If your filter is complex and depends on other services, create a factory to create the filter.
   Register the factory as a service in the dependency injection container.
-* Register this class in `oro_api / filters` section using `Resources/config/oro/app.yml`.
-  Examples of filters registration can be found in
+* Register this class in the `oro_api / filters` section using `Resources/config/oro/app.yml`.
+  You can find examples of filters registration in
   |api app.yml|.
 
-To configure your filter to be used for an API resource, use the :ref:`type <filters-config>` option of the filter.
+To configure your filter for an API resource, use the :ref:`type <filters-config>` option of the filter.
 
 .. _web-api--other-classes:
 
 Other Classes
 -------------
 
-Consider checking out the list of other classes below as they can provide insight on how data filtering works:
+Consider checking out the list of other classes below, as they can provide insight on how data filtering works:
 
 * |FilterNames| - contains names of predefined filters for a specific request type.
 * |FilterNamesRegistry| - a container for names of predefined filters for all registered request types.
@@ -326,10 +318,10 @@ Consider checking out the list of other classes below as they can provide insigh
 * |FilterCollection| - a collection of filters.
 * |SimpleFilterFactory| - the default implementation of a factory to create filters.
 * |FilterOperatorRegistry| - the container for all registered operators for filters.
-* |MetaPropertyFilter| - a filter that is used to request to add entity meta properties to the result or to request to perform some additional operations.
+* |MetaPropertyFilter| - a filter used to request to add entity meta properties to the result or to perform some additional operations.
 * |AddMetaPropertyFilter| - a processor that adds the "meta" filter that is used to specify which entity meta properties should be returned or which additional operations should be performed.
 * |HandleMetaPropertyFilter| - a processor that handles the "meta" filter.
-* |AddMetaProperties| - a processor that adds configuration of meta properties requested via the "meta" filter.
+* |AddMetaProperties| - a processor that adds the configuration of meta properties requested via the "meta" filter.
 * |FieldsFilter| - a filter that is used to filter entity fields.
 * |AddFieldsFilter| - a processor that adds "fields" filters that are used to filter entity fields.
 * |HandleFieldsFilter| - a processor that handles "fields" filters.

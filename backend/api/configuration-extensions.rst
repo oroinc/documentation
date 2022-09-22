@@ -3,18 +3,14 @@
 Configuration Extensions
 ========================
 
-Configuration extensions help add:
-
--  new options to existing configuration sections
--  new configuration sections
+Configuration extensions help add new options to existing configuration sections and new configuration sections.
 
 .. _web-api--configuration-extensions-create:
 
 Creating a Configuration Extension
 ----------------------------------
 
-
-Each configuration extension must implement |ConfigExtensionInterface| (you can also use |AbstractConfigExtension| as a superclass). To register new configuration extension, add it to `Resources/config/oro/app.yml` in your bundle or use `config/config.yml` of your application. Here is an example:
+Each configuration extension must implement |ConfigExtensionInterface| (you can also use |AbstractConfigExtension| as a superclass). To register a new configuration extension, add it to `Resources/config/oro/app.yml` in your bundle or use `config/config.yml` of your application. Here is an example:
 
 .. code-block:: php
 
@@ -38,15 +34,14 @@ Each configuration extension must implement |ConfigExtensionInterface| (you can 
         config_extensions:
             - acme.api.my_config_extension
 
-
 .. _web-api--configuration-extensions-add-options:
 
 Add Options to an Existing Configuration Section
 ------------------------------------------------
 
-To add options to an existing configuration section, implement the ``getConfigureCallbacks`` method of |ConfigExtensionInterface|. If you need to add logic before the normalization of during the validation of the configuration, implement the ``getPreProcessCallbacks`` and ``getPostProcessCallbacks`` methods.
+To add options to an existing configuration section, implement the ``getConfigureCallbacks`` method of |ConfigExtensionInterface|. If you need to add logic before the normalization during the configuration validation, implement the ``getPreProcessCallbacks`` and ``getPostProcessCallbacks`` methods.
 
-The following table describes existing sections for which new options can be added.
+The following table describes existing sections to which you can add new options.
 
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | Section Name                            | When to use                                                                                                                                   |
@@ -134,9 +129,9 @@ Add New Configuration Section
 
 To add new configuration section,  create a class implements |ConfigurationSectionInterface| and return instance of it in the ``getEntityConfigurationSections`` method of your configuration extension.
 
-By default the configuration is returned as an array, but if you want to provide a class represents the configuration of your section, you can implement a configuration loader. The loader is a class that implements |ConfigLoaderInterface|. An instance of the loader should be returned by the ``getEntityConfigurationLoaders`` method of your configuration extension.
+By default, the configuration is returned as an array, but if you want to provide a class that represents the configuration of your section, you can implement a configuration loader. The loader is a class that implements |ConfigLoaderInterface|. An instance of the loader should be returned by the ``getEntityConfigurationLoaders`` method of your configuration extension.
 
-An example of simple configuration section:
+An example of a simple configuration section:
 
 .. code-block:: php
 
@@ -156,7 +151,7 @@ An example of simple configuration section:
         }
     }
 
-An example of a configuration section that can be extended by other bundles:
+An example of a configuration section that other bundles can extend:
 
 .. code-block:: php
 
