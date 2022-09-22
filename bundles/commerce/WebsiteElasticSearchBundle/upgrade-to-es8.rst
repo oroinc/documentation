@@ -1,4 +1,4 @@
-Upgrade Website Index to Elasticsearch >=8.3, <9.0
+Upgrade Website Index to Elasticsearch >=8.4, <9.0
 ==================================================
 
 You have only one option to perform the upgrade: via full reindexation.
