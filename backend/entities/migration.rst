@@ -69,23 +69,21 @@ To create an installer for DemoBundle:
 
 1. Clear the application cache:
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         php bin/console cache:clear
+      php bin/console cache:clear
 
 2. Apply the changes that you defined in your code to the database:
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         php bin/console doctrine:schema:update
+      php bin/console doctrine:schema:update
 
 3. Generate an installer and save it to the AcmeBundleInstaller.php:
 
    .. code-block:: bash
 
-
-      php bin/console oro:migration:dump --bundle=AcmeBundle
-
+      php bin/console oro:migration:dump --bundle=AcmeDemoBundle
 
 The generated AcmeBundleInstaller.php will be placed into the AcmeBundle/Migrations/Schema directory.
 
@@ -389,7 +387,7 @@ To create your own extension:
 
 1. Create an extension class in the ``YourBundle/Migration/Extension`` directory. Using ``YourBundle/Migration/Extension`` directory is not mandatory, but highly recommended. For example:
 
-    .. code-block:: php
+   .. code-block:: php
       :caption: src/Acme/Bundle/DemoBundle/Migrations/Extension/MyExtension.php
 
         namespace Acme\Bundle\DemoBundle\Migration\Extension;
@@ -410,7 +408,7 @@ To create your own extension:
 
 2. Create `*AwareInterface` in the same namespace. It is important that the interface name is ``{ExtensionClass}AwareInterface`` and the set method is ``set{ExtensionClass}({ExtensionClass} ${extensionName})``.    For example:
 
-    .. code-block:: php
+   .. code-block:: php
       :caption: src/Acme/Bundle/DemoBundle/Migrations/Extension/MyExtensionAwareInterface.php
 
         namespace Acme\Bundle\DemoBundle\Migration\Extension;
@@ -430,7 +428,7 @@ To create your own extension:
 
 3. Register an extension in the dependency container. For example:
 
-    .. code-block:: yaml
+   .. code-block:: yaml
       :caption: src/Acme/Bundle/DemoBundle/Resources/services.yml
 
         services:
