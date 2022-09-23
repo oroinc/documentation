@@ -10,9 +10,9 @@ CLI Commands
 oro:api:cache:clear
 -------------------
 
-This command command clears the API cache.
+This command clears the API cache.
 
-Usually you need to run this command when you add a new entity to `Resources/config/oro/api.yml` or you add a new processor that changes a list of available via the API.
+Usually, you need to run this command when you add a new entity to `Resources/config/oro/api.yml` or a new processor that changes a list of available via the API.
 
 .. code-block:: none
 
@@ -29,7 +29,7 @@ The ``--no-warmup`` option can be used to skip warming up the cache after cleani
 oro:api:doc:cache:clear
 -----------------------
 
-This clears or warms up API documentation cache.
+This clears or warms up the API documentation cache.
 
 If this command is launched without parameters, it warm ups all API documentation caches:
 
@@ -43,7 +43,7 @@ To clear the cache without then warming it up, use the ``--no-warmup`` option:
 
     php bin/console oro:api:doc:cache:clear --no-warmup
 
-To work only with the specified |API documentation views| use ``--view`` option:
+To work only with the specified |API documentation views| use the ``--view`` option:
 
 .. code-block:: none
 
@@ -127,8 +127,8 @@ or
 
     php bin/console oro:api:debug --no-docs <action> <group>
 
-The --attribute option can be used to show the processors that will be executed only when the context has a given attribute with the specified value.
-The attribute name and value should be separated by a colon, e.g. --attribute=collection:true   for a scalar value, or --attribute=extra:[definition,filters] for an array value:
+You can use the ``--attribute`` option to show the processors that will be executed only when the context has a given attribute with the specified value.
+Separate the attribute name and value by a colon, e.g., ``--attribute=collection:true`` for a scalar value, or ``--attribute=extra:[definition,filters]`` for an array value:
 
 .. code-block:: none
 
@@ -140,7 +140,7 @@ or
 
     php bin/console oro:api:debug --attribute=extra:[definition,filters] <action>
 
-The --processors and --processors-without-description options can be used to display all processors and all processors without descriptions respectively:
+Use the ``--processors` and ``--processors-without-description`` options to display all processors and all processors without descriptions, respectively:
 
 .. code-block:: none
 
@@ -152,7 +152,7 @@ or
 
     php bin/console oro:api:debug --processors-without-description
 
-The --request-type option can limit the scope to the specified request type(s).  Omitting this option is equivalent to --request-type=rest --request-type=json_api. Available types: rest, json_api, batch, or use any to include all request types:
+The ``--request-type`` option can limit the scope to the specified request type(s). Omitting this option is equivalent to ``--request-type=rest --request-type=json_api``. The available types are ``rest``, ``json_api``, ``batch``, or use ``any`` to include all request types:
 
 .. code-block:: none
 
@@ -173,7 +173,7 @@ The --request-type option can limit the scope to the specified request type(s). 
 oro:api:config:dump
 -------------------
 
-This command shows configuration for a particular entity.
+This command shows the configuration for a particular entity.
 
 Execute this command with an entity class or entity alias specified as an argument:
 
@@ -193,25 +193,25 @@ To display the configuration used for a particular action, use the ``--action op
 
     php bin/console oro:api:config:dump users --action=update
 
-To display the configuration for a particular request type you can use the ``request-type`` option:
+To display the configuration for a particular request type, use the ``request-type`` option:
 
 .. code-block:: none
 
     php bin/console oro:api:config:dump users --request-type=rest --request-type=json_api
 
-By default no extra configuration data are added into output, but they can be added with the ``--extra`` option. The value for ``extra`` option can be: actions, definition, filters, sorters, descriptions or the full name of a class implements |ConfigExtraInterface|, e.g.
+No extra configuration data are added to the output by default, but you can add them with the ``--extra`` option. The value for the ``extra`` option can be: actions, definition, filters, sorters, descriptions, or the full name of a class implements |ConfigExtraInterface|, e.g.
 
 .. code-block:: none
 
     php bin/console oro:api:config:dump users --extra=filters --extra=sorters
 
-To display the human-readable representation of an entity and its fields:
+To display the human-readable representation of an entity and its fields, use:
 
 .. code-block:: none
 
     php bin/console oro:api:config:dump users --extra=descriptions
 
-If a new extra section was added, pass the FQCN of a ConfigExtra:
+If you added a new extra section, pass the FQCN of a ConfigExtra:
 
 .. code-block:: none
 
@@ -267,7 +267,7 @@ This command shows the structure of `Resources/config/oro/api.yml`.
 
     php bin/console oro:api:config:dump-reference
 
-The --max-nesting-level option can be used to limit the depth of nesting target entities:
+You can use the ``--max-nesting-level`` option to limit the depth of nesting target entities:
 
 .. code-block:: none
 
@@ -290,6 +290,6 @@ To show the number of obsolete asynchronous operations without the deletion of t
 
     php bin/console oro:cron:api:async_operations:cleanup --dry-run
 
-
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+

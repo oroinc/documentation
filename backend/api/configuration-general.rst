@@ -3,11 +3,10 @@
 General Configuration
 =====================
 
-The following general configuration options can be changed via `Resources/config/oro/app.yml` in any bundle
+You can change the following general configuration options via `Resources/config/oro/app.yml` in any bundle
 or `config/config.yml` of your application.
 
 .. code-block:: yaml
-
 
     oro_api:
 
@@ -24,7 +23,7 @@ or `config/config.yml` of your application.
         default_page_size: 10
 
         # The maximum number of primary entities that can be retrieved by a request.
-        # The default value is -1 that means unlimited.
+        # The default value is -1, which means unlimited.
         max_entities: -1
 
         # The maximum number of related entities that can be retrieved by a request.
@@ -35,9 +34,7 @@ or `config/config.yml` of your application.
         # The default value is 100.
         max_delete_entities: 100
 
-To change the maximum number of entities that can be retrieved by a request for a specific API resource
-use the ``max_result`` option in `Resources/config/oro/api.yml`. For details see
+To change the maximum number of entities retrieved by a request for a specific API resource, use the ``max_result`` option in `Resources/config/oro/api.yml`. For details, see
 :ref:`entities <web-api--entities-config>` and :ref:`actions <web-api--actions-config>` configuration sections.
 
-Also see :ref:`How To <max-number-of-entities-to-be-deleted>` to learn how to change the maximum number of entities
-that can be deleted by one request for a specific API resource.
+See the :ref:`API How-To Guide <max-number-of-entities-to-be-deleted>` to learn how to change the maximum number of entities that can be deleted by one request for a specific API resource.

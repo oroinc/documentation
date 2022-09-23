@@ -8,16 +8,16 @@ The Symfony |Validation Component| and |Forms Component| are used to validate an
 Validation
 ----------
 
-The validation rules are loaded from `Resources/config/validation.yml` and annotations as it is commonly done in Symfony applications. So, all validation rules defined for an entity are applicable to the API as well. By default, API uses two validation groups: **Default** and **api**. If you need to add validation constrains that should be applicable in API only you should add them in **api** validation group.
+The validation rules are loaded from `Resources/config/validation.yml` and annotations, as is commonly done in Symfony applications. So, all validation rules defined for an entity also apply to the API. API uses two validation groups: **Default** and **api**. If you need to add validation constraints that should be applied in the API only, add them to the **api** validation group.
 
-In case a validation rule cannot be implemented as a regular validation constraint due to its complexity you can implement it as a processor for ``post_validate`` event of :ref:`customize_form_data <customize-form-data-action>` action. Pay your attention on |FormUtil class|, it contains methods that may be useful in such processor.
+Suppose a validation rule cannot be implemented as a regular validation constraint due to its complexity. In that case, you can implement it as a processor for the ``post_validate`` event of  the :ref:`customize_form_data <customize-form-data-action>` action. Keep in mind that |FormUtil class| contains methods that may be useful in such a processor.
 
-If the input data violates validation constraints, they will be automatically converted to :ref:`validation errors <web-api--processors>` that help build the correct response of the API. The conversion is performed by |CollectFormErrors| processor. By default the HTTP status code for validation errors is ``400 Bad Request``. If you need to change it, you can do it in the following ways:
+If the input data violate validation constraints, they will be automatically converted into the :ref:`validation errors <web-api--processors>` that help build the correct response of the API. The conversion is performed by the |CollectFormErrors| processor. By default, the HTTP status code for validation errors is ``400 Bad Request``. To change it, you can:
 
--  Implement |ConstraintWithStatusCodeInterface| in you constraint class.
--  Implement own constraint text extractor. The API bundle has the |default implementation of constraint text extractor|. To add a new extractor, create a class implements |ConstraintTextExtractorInterface| and tag it with the ``oro.api.constraint_text_extractor`` in the dependency injection container. This service can be also used to change an error code and type for a validation constraint.
+- Implement |ConstraintWithStatusCodeInterface| in you constraint class.
+- Implement your own constraint text extractor. The API bundle has the |default implementation of constraint text extractor|. To add a new extractor, create a class implements |ConstraintTextExtractorInterface| and tag it with the ``oro.api.constraint_text_extractor`` in the dependency injection container. This service can also be used to change an error code and type for a validation constraint.
 
-The following example shows how to add validation constraints to API resources using the `Resources/config/oro/api.yml` configuration file:
+The following example shows how to add validation constraints to the API resources using the `Resources/config/oro/api.yml` configuration file:
 
 .. code-block:: yaml
 
@@ -55,12 +55,12 @@ or `config/config.yml` of your application, e.g.:
 Forms
 -----
 
-The API forms are isolated from the UI forms. This helps avoid collisions and prevent unnecessary performance overhead in the API. Consequently, all the API form types, extensions, and guessers should be registered separately. There are two ways of how to complete this:
+The API forms are isolated from the UI forms. This helps avoid collisions and prevent unnecessary performance overhead in the API. Consequently, all the API form types, extensions, and guessers should be registered separately. There are two ways to complete this:
 
 - Use the application configuration file.
-- Tag the form elements by appropriate tags in the dependency injection container.
+- Tag the form elements with appropriate tags in the dependency injection container.
 
-To register a new form elements using application configuration file, add `Resources/config/oro/app.yml` in any bundle or use `config/config.yml` of your application.
+To register new form elements using the application configuration file, add `Resources/config/oro/app.yml` in any bundle or use `config/config.yml` of your application.
 
 .. code-block:: yaml
 
@@ -86,7 +86,7 @@ To register a new form elements using application configuration file, add `Resou
 
 You can find the already registered API form elements in |Resources/config/oro/app.yml|.
 
-If you need to add new form elements can by tagging them in the dependency injection container, use the tags from the following table:
+If you need to add new form elements can by tagging them in the dependency injection container, use tags from the following table:
 
 +--------------------------------+-----------------------------------------------+
 | Tag                            | Description                                   |
@@ -105,7 +105,7 @@ Example:
         acme.form.type.datetime:
             class: Acme\Bundle\AcmeBundle\Form\Type\DateTimeType
             tags:
-                - { name: form.type, alias: acme_datetime } # allow to use the form type on UI 
+                - { name: form.type, alias: acme_datetime } # allow to use the form type on UI
                 - { name: oro.api.form.type, alias: acme_datetime } # allow to use the form type in API
 
         acme.form.extension.datetime:
