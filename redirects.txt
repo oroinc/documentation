@@ -335,3 +335,5 @@ bundles/commerce/ProductBundle/customize-pdp /bundles/commerce/ProductBundle/cus
 bundles/commerce/ProductBundle/customize-plp /bundles/commerce/ProductBundle/customize-products/customize-plp
 bundles/commerce/ProductBundle/customize-product-lists /bundles/commerce/ProductBundle/customize-products/customize-product-lists
 bundles/commerce/ProductBundle/customize-products-sku-validation /bundles/commerce/ProductBundle/customize-products/customize-products-sku-validation
+bundles/commerce/WebsiteElasticSearchBundle/upgrade-to-es7 /bundles/commerce/WebsiteElasticSearchBundle/upgrade-to-es8
+bundles/platform/ElasticSearchBundle/upgrade-to-es7 /bundles/platform/ElasticSearchBundle/upgrade-to-es8
