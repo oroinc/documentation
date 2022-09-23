@@ -3,7 +3,7 @@
 Headers
 =======
 
-For some types of the REST API requests, you can retrieve an additional information like the total number of records, the number of affected records, etc. To do this, use the ``X-Include`` request header. The value of this header should contain keys separated by a semicolon (;).
+For some types of REST API requests, you can retrieve additional information like the total number of records, the number of affected records, etc. To do this, use the ``X-Include`` request header. The value of this header should contain keys separated by a semicolon (;).
 
 The following example shows how to get the total number of accounts:
 
@@ -27,13 +27,13 @@ The corresponding response:
 Existing X-Include Keys
 -----------------------
 
-The following table describes all existing *keys* for ``X-Include`` header.
+The following table describes all existing *keys* for the ``X-Include`` header.
 
 .. csv-table::
    :header: "Request Type","X-Include key","Response Header","Description"
    :widths: 15, 15, 20, 20
 
-   "all","noHateoas","--","Removes all HATEOAS related links from the response."
+   "all","noHateoas","--","Removes all HATEOAS-related links from the response."
    "get a list of entities","totalCount","X-Include-Total-Count","Returns the total number of entities. It is calculated based on input filters."
    "delete a list of entities","totalCount","X-Include-Total-Count","Returns the total number of entities. It is calculated based on input filters."
    "delete a list of entities","deletedCount","X-Include-Deleted-Count","Returns the number of deleted entities"
@@ -54,8 +54,8 @@ To add a custom key to the ``X-Include`` header:
         use Oro\Bundle\ApiBundle\Processor\Context;
 
         /**
-         * Calculates and sets the total number of deleted records to "X-Include-Deleted-Count" response header,
-         * in case it was requested by "X-Include: deletedCount" request header.
+         * Calculates and sets the total number of deleted records to the "X-Include-Deleted-Count" response header,
+         * in case it was requested by the "X-Include: deletedCount" request header.
          */
         class SetDeletedCountHeader implements ProcessorInterface
         {

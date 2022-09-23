@@ -67,7 +67,7 @@ Configure User Impersonation
 .. csv-table::
   :widths: 10, 30
 
-  "**Login as Customer User**","This option enables back-office users with the **Impersonate User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront as a specific customer user. This option is disabled by default. User impersonation is also available at :ref:`organization level <organization-user-impersonation>`.
+  "**Login as Customer User**","This option enables back-office users with the **Login as Customer User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront as a specific customer user. This option is disabled by default. User impersonation is also available at :ref:`organization level <organization-user-impersonation>`.
 
                                     .. image:: /user/img/system/config_commerce/customer/user_impersonation.png
                                        :alt: User impersonation config option"

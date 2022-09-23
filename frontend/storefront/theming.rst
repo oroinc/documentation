@@ -71,7 +71,7 @@ The **allowed options in the theme configuration** file is the following:
     rtl_support: true
 
 
-w here ``first_name`` is a unique theme identifier.
+where ``first_name`` is a unique theme identifier.
 
 Enable the Theme
 ----------------
@@ -84,9 +84,6 @@ Add the theme name to the following configuration in the ``config/config.yml`` f
    oro_layout:
        enabled_themes:
             - first_theme
-            - view-switcher
-
-The ``view-switcher`` theme is required for the management of CMS pages and should always be enabled.
 
 Activate the Theme
 ------------------

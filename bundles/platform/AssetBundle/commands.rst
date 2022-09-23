@@ -121,7 +121,7 @@ The ``--verbose`` option can be used to show expanded output information about f
 oro:assets:install
 ------------------
 
-The ``oro:assets:install`` command installs and builds assets, dumps JavaScript routes, JavaScript translations, etc.
+The ``oro:assets:install`` command installs and builds assets.
 
 .. code-block:: none
 
@@ -140,10 +140,6 @@ The ``--relative-symlink`` option tells the asset installer to create symlinks w
     php bin/console oro:assets:install --relative-symlink
 
 You may run individual steps if necessary as follows:
-
-.. code-block:: none
-
-    php bin/console fos:js-routing:dump
 
 .. code-block:: none
 
