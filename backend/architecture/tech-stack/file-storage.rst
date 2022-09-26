@@ -8,9 +8,7 @@ This section describes the filesystem abstraction layer used in the Oro applicat
 The file storage abstraction is based on |KnpGaufretteBundle| with :ref:`GaufretteBundle <bundle-docs-platform-gaufrette-bundle>`
 that enables a filesystem abstraction layer in the Oro applications and provides a simplified file manager service for media files.
 
-The file storage can be configured to use different types of filesystem adapters to store the data,
-for example, your local filesystem, GridFS storage, etc. For more details, see
-`File System Adapters Configuration <#file-system-adapters-configuration>`__.
+You can configure the file storage to use different types of filesystem adapters to store the data, for example, your local filesystem, GridFS storage, etc. For more details, see `File System Adapters Configuration <#file-system-adapters-configuration>`__.
 
 .. _backend-file-storage-types-of-storage:
 
@@ -27,8 +25,7 @@ Examples of such data types are attachments' data, import and export files, prot
 If the local filesystem adapter is used by default, then data will be stored in the ``/var/data`` directory of the application.
 
 The **public** file storage adapter is implemented to store data that can be available via a direct link without access checks.
-Examples of such data are resized product images, sitemap files, etc. If the local filesystem adapter is used by default,
-data will be stored in the ``public/media`` directory of the application.
+Examples of such data are resized product images, sitemap files, etc. If the local filesystem adapter is used by default, data will be stored in the ``public/media`` directory of the application.
 
 .. _backend-file-storage--adapters-configuration:
 
@@ -44,21 +41,21 @@ There are two ways to change the configuration of adapters:
 
 1. The usual way that requires the configuration of |KnpGaufretteBundle|.
 
-2. A simplified way, where you can reconfigure the already configured adapters with the `config/parameters.yml` file.
+2. A simplified way where you can reconfigure the already configured adapters with the `config/parameters.yml` file.
 
 .. note::
 
-    Please take into account that old data that was uploaded to the local storage will not be migrated to a new storage.
+   Be aware that old data uploaded to the local storage will not be migrated to the new storage.
 
 .. _backend-file-storage-adapters-configuration-with-knpgaufrettebundle:
 
 File System Adapters Configuration with KnpGaufretteBundle
 ----------------------------------------------------------
 
-As storage types are the |KnpGaufretteBundle| adapters, you can configure them with manual configuration of this bundle.
+As storage types are the |KnpGaufretteBundle| adapters, you can configure them with the manual configuration of this bundle.
 
 For example, to use the Oro GridFS Gaufrette adapter, use the ``oro_gridfs`` adapter type. To configure a new or reconfigure an
-existing adapter, add the |KnpGaufretteBundle| configuration in the `Resources/config/oro/app.yml` file of any bundle
+existing adapter, add the |KnpGaufretteBundle| configuration to the `Resources/config/oro/app.yml` file of any bundle
 or the `config/config.yml` file of your application:
 
 .. code-block:: yaml
@@ -69,28 +66,26 @@ or the `config/config.yml` file of your application:
                 oro_gridfs:
                     mongodb_gridfs_dsn: 'mongodb://127.0.0.1:27017/media'
 
-As you can see from the example, the configuration of ``oro_gridfs`` adapter has the ``mongodb_gridfs_dsn`` parameter
-with the configuration of MongoDB DSN string. The format of this string is the following:
+As you can see from the example, the configuration of the ``oro_gridfs`` adapter has the ``mongodb_gridfs_dsn`` parameter with the configuration of the MongoDB DSN string. The format of this string is the following:
 ``[protocol]://[username]:[password]@[host]:[port]/[database]``, where:
 
 - **protocol** is `mongodb`
-- **username** is username that has an access to the MongoDB database
+- **username** is the username that has access to the MongoDB database
 - **password** is the user's password
 - **host** is the hostname or IP address of the MongoDB server
-- **database** is the MongoDB database name should be used as GridGS storage
+- **database** is the MongoDB database name that should be used as GridGS storage
 
 .. _backend-file-storage-adapters-configuration-with-parameters.yml:
 
 File System Adapters Configuration with parameters.yml
 ------------------------------------------------------
 
-To simplify the configuration of the already existing Gaufrette adapters or filesystems,
-the `config/parameters.yml` file of your application can be used.
+To simplify the configuration of the already existing Gaufrette adapters or filesystems, you can use your application's `config/parameters.yml` file.
 
 To reconfigure an adapter, add the parameter with the ``gaufrette_adapter.[adapter_name]`` name,
 where ``adapter_name`` is the name of an existing adapter.
 
-The value of the parameter is the MongoDB DSN string described in the previous chapter starts with the ``gridfs:`` prefix.
+The parameter's value is the MongoDB DSN string described in the previous chapter, which starts with the ``gridfs:`` prefix.
 
 The following example shows the reconfiguration of the **public** adapter:
 
@@ -107,7 +102,7 @@ To get the list of existing Gaufrette adapters, use the following command:
 To reconfigure a filesystem, add the parameter with the name ``gaufrette_filesystem.[filesystem_name]``,
 where ``filesystem_name`` is the name of an existing filesystem.
 
-As for the adapter configuration, the parameter's value is the MongoDB DSN string starts with the ``gridfs:`` prefix.
+As for the adapter configuration, the parameter's value is the MongoDB DSN string that starts with the ``gridfs:`` prefix.
 
 The following example shows the reconfiguration of the ``attachments`` filesystem:
 
@@ -126,7 +121,7 @@ To get the list of existing Gaufrette filesystems, use the following command:
 Configuration for Cluster MongoDB GridFS Setup
 ----------------------------------------------
 
-If you have installed MongoDB cluster, it can be used as the GridFS storage as well.
+If you have installed MongoDB cluster, it can also be used as the GridFS storage.
 
 In this case, the MongoDB DSN string has the following format:
 ``[protocol]://[user]:[password]@[host1]:[port],[host2]:[port]/[database]``
@@ -142,10 +137,9 @@ Example:
 Add Ability To Configure File System Adapter with parameters.yml
 ----------------------------------------------------------------
 
-Additional Gaufrette adapter types can also be enabled to support configuration via `config/parameters.yml` file.
+You can also enable additional Gaufrette adapter types to support configuration via the `config/parameters.yml` file.
 
-To do this, create a configuration factory class that implements |ConfigurationFactoryInterface| and register it
-as the configuration factory for the `oro_gaufrette` bundle in your bundle class:
+To do this, create a configuration factory class that implements |ConfigurationFactoryInterface| and register it as the configuration factory for the `oro_gaufrette` bundle in your bundle class:
 
 .. code-block:: php
 
@@ -213,7 +207,7 @@ The main access point to the files in storage is the |FileManager| service.
 
 To implement the access point to your type of data in the storage:
 
-- Add new Gaufrette filesystem configuration into the `Resources/config/oro/app.yml` file of your bundle and set **private** or **public** as the filesystem adapter:
+- Add a new Gaufrette filesystem configuration into the `Resources/config/oro/app.yml` file of your bundle and set **private** or **public** as the filesystem adapter:
 
 .. code-block:: yaml
 
@@ -267,8 +261,7 @@ To simplify this case, configure the file manager service with the ``oro_gaufret
 In this case, the files of such storage will be available via the ``http://your_domain/media/sub_directory/filename``
 path, regardless of the adapter configuration used for the public type file storage.
 
-For example, is you have configured ``my_public`` Gaufrette filesystem that uses the **public** adapter, the
-configuration of the file manager service can be the following:
+For example, if you have configured ``my_public`` Gaufrette filesystem that uses the **public** adapter, the configuration of the file manager service can be the following:
 
 .. code-block:: yaml
 
@@ -284,17 +277,17 @@ In this example, the files are available via the ``http://your_domain/media/my_p
 Access to Data via Stream Wrappers
 ----------------------------------
 
-Files in the filesystem can be accessed via stream wrappers, as well as with the help of the |FileManager| service.
+Files in the filesystem can be accessed via stream wrappers and with the help of the |FileManager| service.
 
 The application has two stream wrappers configured to be used with Gaufrette filesystems:
 
 - Common wrapper by the |KnpGaufretteBundle|;
 - Read-only wrapper by the :ref:`OroGaufretteBundle <bundle-docs-platform-gaufrette-bundle>`.
 
-The common stream wrapper allows to get full access to the files stored in the filesystem. By default, the wrapper is configured
-to use the ``gaufrette`` protocol. To get the full URL of a file use `getFilePath()` method of the |FileManager| service.
+The standard stream wrapper allows full access to the files stored in the filesystem. By default, the wrapper is configured
+to use the ``gaufrette`` protocol. To get the full URL of a file use the `getFilePath()` method of the |FileManager| service.
 
-The read-only stream wrapper can be used if you need to read data but do not know if the data to be written is available.
+You can use the read-only stream wrapper if you need to read data but do not know if the data to be written is available.
 For example, this case can be figured if the local adapter was used and the files were uploaded by someone other than the user that runs
 the application. By default, the wrapper is configured to use the ``gaufrette-readonly`` protocol.
 To get the full URL of a file use `getReadonlyFilePath()` method of the |FileManager| service.
@@ -302,29 +295,26 @@ To get the full URL of a file use `getReadonlyFilePath()` method of the |FileMan
 Migrate Data Command
 --------------------
 
-During the upgrade from a local filesystem storage to another storage type or location, you need to migrate
-data from the previous location. The command can also be used to upload some data to the file storage.
+You need to migrate data from the previous location during the upgrade from local filesystem storage to another storage type or location. You can also use the command to upload some data to the file storage.
 
-To migrate the data, you can use console command ``oro:gaufrette:migrate-filestorages`` which moves the application files from old storages to the proper Gaufrette file storages.
+To migrate the data, you can use the console command ``oro:gaufrette:migrate-filestorages`` which moves the application files from old storage to the proper Gaufrette file storage.
 
 The command can work in 2 modes: Automatic and Manual.
 
-In the **Automatic** mode, the data is migrated to the current structure by a predefined list of paths that have been used in the application
-before v.4.2.
+In the **Automatic** mode, the data is migrated to the current structure by a predefined list of paths used in the application before v.4.2.
 
-In the **Manual** mode, a user is asked for a path to be migrated, as well as the Gaufrette file system name
-where the data should migrate to.
+In the **Manual** mode, a user is asked for a path to be migrated and the Gaufrette file system name where the data should migrate.
 
-The command has a list of pre-configured default paths from which the data is moved in the automatic mode, and a list
-of |FileManager| services where data can be uploaded to.
+The command has a list of pre-configured default paths from which the data is moved in the automatic mode and a list
+of |FileManager| services where data can be uploaded.
 
-The path that has to be migrated can be set with the ``--migration-path`` option.
+You can set the path to be migrated with the ``--migration-path`` option.
 
-The Gaufrette file system name can be set with the ``--gaufrette-filesystem`` option.
+You can set the Gaufrette file system name with the ``--gaufrette-filesystem`` option.
 
-To get the list of available file systems, run command with the ``--mode=filesystems-list`` option.
+To get the list of available file systems, run the command with the ``--mode=filesystems-list`` option.
 
-To add an additional path from which the data is going to be moved or to add an additional |FileManager|, add a new CompilerPass
+To add an additional path from which the data is going to be moved or an additional |FileManager|, add a new CompilerPass
 in your bundle and add it into the Bundle class:
 
 .. code-block:: php

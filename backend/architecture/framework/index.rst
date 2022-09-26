@@ -6,7 +6,7 @@ Application Framework
 **Application Framework** functionality is part of **OroPlatform** that determines the structure of the Oro application (code
 organization, file structure, application flow routine) and the way of interaction between independent components in the application.
 
-In this section, you'll find a description of the main principles on how to organize your adjustments to Oro applications.
+In this section, you'll find a description of the main principles for organizing your adjustments to Oro applications.
 
 How It Works
 ------------
@@ -33,16 +33,15 @@ for the synopsis of structural aspects of the Oro applications:
 Getting Started
 ---------------
 
-If you want to adjust Oro application functionality, the **first step** to organize your changes always should be
+If you want to adjust Oro application functionality, the **first step** to organizing your changes should always be to
 `Prepare Your Custom Application`_:
 
 * `Create a Custom Application`_ and
 * `Create a New Bundle`_.
 
-**Next steps** depend on whether you're going to `Create a New Functionality`_ or to
-`Change an Existing Functionality`_.
+**Next steps** depend on whether you're going to `Create a New Functionality`_ or `Change an Existing Functionality`_.
 
-**Finally**, if you're ready to pack and share your adjustments to Oro application, you can
+**Finally**, if you're ready to pack and share your adjustments to the Oro application, you can
 `Create and Publish an Extension`_ to the |Oro Extensions Store|.
 
 Prepare Your Custom Application
@@ -67,14 +66,14 @@ Please see the basic example on how to create a new functionality in the
 Change an Existing Functionality
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to change the existing behavior of Oro application, please refer to the
+If you want to change the existing behavior of the Oro application, please refer to the
 :ref:`Oro Application Customization <architecture--customization--customize>` section of the Architecture Guide
 for the guidance.
 
 Create and Publish an Extension
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are ready to publish your adjustment in Oro application for free or paid usage of community members, see the
+If you are ready to publish your adjustment in the Oro application for free or paid usage of community members, see the
 :ref:`How to Add an Extension to the OroPlatform Extensions Store <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
 article for the details on how to do this.
 
@@ -91,11 +90,6 @@ Related Cookbook Articles
    :hidden:
 
    architecture-principles
-
-
-.. Future Subsections of this guide:Symfony (Application, Application Structure, Bundle, Bundle Structure, Entity, Controller, Templates, DI container, Extensions)+PlatformBundle (auto-dicsovery of configuration files and maintenance mode, lazy services, disable listeners, global options for all commands)+DistributionBundle (bundles auto-registration, routing auto-registration, package management)ConfigBundle InstallerBundle FeatureToggleBundle
-
-.. Currently we describe only Symfony, PlatformBundle and DistributionBundle parts
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

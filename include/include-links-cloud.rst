@@ -202,3 +202,9 @@ Links (Cloud)
 .. |https://github.com/FriendsOfPHP/security-advisories| raw:: html
 
    <a href="https://github.com/FriendsOfPHP/security-advisories" target="_blank">https://github.com/FriendsOfPHP/security-advisories</a>
+
+.. |Sanitized Backup| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#sanitized-backup" target="_blank">Sanitized Backup</a>
+
+

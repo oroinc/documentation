@@ -42,7 +42,7 @@ Prepare a Database Dump
 
 3. OroCloud
 
-    Follow the :ref:`Sanitized Backup <orocloud-maintenance-use-sanitized-backup>` documentation for more details.
+    Follow the |Sanitized Backup| documentation for more details.
 
    .. code-block:: none
 
@@ -158,3 +158,6 @@ Prepare Application
        bin/console oro:user:update admin --user-password=admin
 
 Follow the InstallerBundle documentation for more references on the :ref:`oro:platform:update <installer-bundle-commands-oro-platform-update>` CLI command.
+
+.. include:: /include/include-links-cloud.rst
+   :start-after: begin
