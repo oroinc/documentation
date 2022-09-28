@@ -6055,3 +6055,5 @@ Links (Dev)
 .. |official Elasticsearch documentation on search synonyms| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html#_solr_synonyms_2" target="_blank">official Elasticsearch documentation on search synonyms</a>
+
+

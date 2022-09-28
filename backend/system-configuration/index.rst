@@ -742,5 +742,14 @@ Register your search provider as a service in the DI container with the `oro_con
         tags:
             - { name: oro_config.configuration_search_provider, priority: -20 }
 
+
+.. admonition:: Business Tip
+
+   Major digital transformation is taking place in industries like manufacturing. Learn more about the benefits of |digital transformation in manufacturing industry|.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

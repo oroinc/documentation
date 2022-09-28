@@ -91,5 +91,13 @@ To create a serialized field via migration, use |SerializedFieldsExtension|. For
 Serialized files support the same set of config options as other :ref:`configurable fields <backend-configuration-annotation-config-field>`.
 
 
+.. admonition:: Business Tip
+
+    The upcoming frontier of eCommerce is B2B marketplaces. Discover how a |business-to-business marketplace| can help digitally transform your company.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

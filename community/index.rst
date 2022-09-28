@@ -155,6 +155,12 @@ Our Backward Compatibility Promise
 
 Please refer to the :ref:`Our Backward Compatibility Promise <doc--community--backward-compatibility>` topic to learn more about Oro Backward Compatibility Promise.
 
+
+.. admonition:: Business Tip
+
+    Looking to leverage the new digital commerce trend? Learn more about |B2B marketplaces|, their peculiarities and successful examples.
+
+
 .. toctree::
    :includehidden:
    :titlesonly:
@@ -166,5 +172,5 @@ Please refer to the :ref:`Our Backward Compatibility Promise <doc--community--ba
    Release Process <release-process>
    Backward Compatibility <backward-compatibility-promise>
 
-.. include:: /include/include-links-dev.rst
+.. include:: /include/include-links-seo.rst
    :start-after: begin

@@ -79,5 +79,13 @@ You can also edit the address details of a lead, as illustrated in the screensho
    :alt: Edit lead addresses
 
 
+.. admonition:: Business Tip
+
+   Want to unlock eCommerce opportunities to drive |digital transformation in manufacturing|? Make sure to check out our guide on the topic.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
 .. include:: /include/include-images.rst
    :start-after: begin

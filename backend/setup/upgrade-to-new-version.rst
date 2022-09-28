@@ -267,8 +267,9 @@ To retrieve a new version and upgrade your Oro application instance, please exec
     .. note::
 
         If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
-        after the uprgade to flush cached bytecode from the previous installation.
+        after the upgrade to flush cached bytecode from the previous installation.
 
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+

@@ -85,6 +85,11 @@ Backend Developer Guide is an essential resource for developers that provides co
    </ul>
 
 
+.. admonition:: Business Tip
+
+    Narrow down your choice of |B2B eCommerce software| with our comprehensive platform comparison guide.
+
+
 .. toctree::
    :hidden:
    :titlesonly:
@@ -116,3 +121,5 @@ Backend Developer Guide is an essential resource for developers that provides co
    api/index
 
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

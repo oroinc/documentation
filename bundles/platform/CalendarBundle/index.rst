@@ -12,6 +12,11 @@ The bundle adds an individual calendar for every application user with an abilit
 
 This bundle integrates the jQuery FullCalendar plugin into OroPlatform and provides other calendar related functionality, such as view calendars of other users, system calendars, synchronization with external calendars, etc.
 
+.. admonition:: Business Tip
+
+    B2B marketplaces are the next big thing in eCommerce. Learn how to benefit from a |wholesale B2B marketplace| and digitally transform your business.
+
+
 .. toctree::
    :maxdepth: 1
 
@@ -24,5 +29,5 @@ This bundle integrates the jQuery FullCalendar plugin into OroPlatform and provi
    event-organizers
    attendees
 
-.. include:: /include/include-links-dev.rst
+.. include:: /include/include-links-seo.rst
    :start-after: begin

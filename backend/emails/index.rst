@@ -595,5 +595,14 @@ Finally, you have to update the database schema and clear the application cache:
     # warm up the application cache
     php bin/console cache:warmup
 
+
+.. admonition:: Business Tip
+
+   Do you want to implement smart manufacturing in your company? Learn how |manufacturing digital transformation| can help your company get ahead.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

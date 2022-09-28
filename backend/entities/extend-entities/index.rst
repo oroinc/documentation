@@ -305,3 +305,6 @@ Console Commands
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

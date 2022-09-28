@@ -63,6 +63,12 @@ Link a Product Tax Code to the Tax Rule
 
 You can edit the association of the product tax code with the tax when :ref:`editing the tax rule details <tax-rules-edit>` (see the respective topic for more information).
 
+
+.. admonition:: Business Tip
+
+    Want to thoroughly assess leading |B2B eCommerce solutions|? Check out our platform comparison guide.
+
+
 **Related Articles**
 
 * :ref:`Taxes <user-guide--taxes>`
@@ -85,4 +91,7 @@ You can edit the association of the product tax code with the tax when :ref:`edi
    link-a-tax-code-to-a-product
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
