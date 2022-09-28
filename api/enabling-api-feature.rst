@@ -14,5 +14,13 @@ on the :ref:`global <admin-configuration-application>` and :ref:`organization <a
 on the :ref:`global <admin-configuration-application>`, :ref:`organization <admin-configuration-application-org>`, and :ref:`website <admin-configuration-application-website>` levels.
 
 
+.. admonition:: Business Tip
+
+   Explore our guide on eCommerce to find out |B2B ecommerce meaning|, benefits, and examples.
+
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

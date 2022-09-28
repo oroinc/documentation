@@ -77,6 +77,11 @@ If you are ready to publish your adjustment in the Oro application for free or p
 :ref:`How to Add an Extension to the OroPlatform Extensions Store <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
 article for the details on how to do this.
 
+.. admonition:: Business Tip
+
+   Are you looking for |digital transformation examples in manufacturing|? Discover business cases and digitization success stories in our article.
+
+
 Related Cookbook Articles
 -------------------------
 
@@ -92,4 +97,7 @@ Related Cookbook Articles
    architecture-principles
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

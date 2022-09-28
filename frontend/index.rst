@@ -23,6 +23,12 @@ All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-java
 
 :ref:`Right to Left UI Support <frontend--rtl-support>` guides you on how to enable "Right to Left" text direction UI.
 
+.. admonition:: Business Tip
+
+    Planning to invest in a digital commerce solution? Read our platform comparison guide to explore and review the |top B2B eCommerce platforms|.
+
+
+
 .. toctree::
     :titlesonly:
     :hidden:
@@ -34,3 +40,7 @@ All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-java
     javascript/index
     rtl-support
     Optimize Assets Build <optimize-build>
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

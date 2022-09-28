@@ -283,5 +283,14 @@ To delete an attachment, click the |IcDelete| **Delete** icon at the end of the 
 To delete multiple attachments, select checkboxes in front of the files you want to delete, click the |IcMore| **More Options** menu at the end of the list header and then click |IcDelete| **Delete**.
 
 
+
+.. admonition:: Business Tip
+
+   Searching for |digital transformation examples in manufacturing|? In our post, you'll find business cases and digitization success stories.
+
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

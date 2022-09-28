@@ -27,6 +27,11 @@ After configuring the integration and data synchronization, you can :ref:`Send E
 
 .. finish_include
 
+.. admonition:: Business Tip
+
+   How can your manufacturing company benefit from technological advancements? Learn from these |digital transformation examples in manufacturing|.
+
+
 Key Points of Reference
 -----------------------
 
@@ -45,4 +50,7 @@ Key Points of Reference
    Configure Single Sign-on <dotdigital-single-sign-on>
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

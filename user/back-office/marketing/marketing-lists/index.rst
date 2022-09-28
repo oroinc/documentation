@@ -180,5 +180,13 @@ Once you integrate your Oro application with a third-party mailing system,   **C
 
 .. stop
 
+.. admonition:: Business Tip
+
+   Digital transformation is being driven by technologies in major industries such as manufacturing. Find out more about the role of eCommerce in |manufacturing digital transformation|.
+
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

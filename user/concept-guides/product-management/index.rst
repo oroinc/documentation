@@ -129,8 +129,15 @@ You can configure the :ref:`All Products page <sys--conf--commerce--catalog--spe
 
 As you can see, with OroCommerce you can create an appealing and functional product pages that are the key to sales in online stores of all kinds.
 
+
+.. admonition:: Business Tip
+
+   |What is B2B eCommerce| and how it can benefit your business? You'll find answers to this and other commerce-related questions in our guide.
+
 **Related Articles**
 
 * :ref:`Products User Guide <doc--products>`
 * :ref:`Product-Related Settings in System Configuration <configuration--products>`.
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

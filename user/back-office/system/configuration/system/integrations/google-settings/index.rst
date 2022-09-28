@@ -31,6 +31,13 @@ Click the relevant topic below to start configuring the required setting:
 * :ref:`Configure Google Tag Manager Integration <gtm-ga-4-integration>`
 
 
+.. admonition:: Business Tip
+
+   The industrial sector is living through a digital transformation. Take a closer look at how eCommerce can help achieve |digital transformation in manufacturing|.
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
 

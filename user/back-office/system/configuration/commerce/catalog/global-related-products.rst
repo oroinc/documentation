@@ -101,6 +101,13 @@ To update the related and up-sell products settings globally:
 
 5. Click **Save**.
 
+.. admonition:: Business Tip
+
+   Technology is driving digital transformation in key industries, such as manufacturing. Learn how eCommerce fits into your |manufacturing digital transformation| strategy.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 
 
 .. include:: /include/include-images.rst

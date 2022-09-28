@@ -507,7 +507,6 @@ To configure a Google Tag Manager integration:
 .. image:: /user/img/system/integrations/gtm/gtm-configuration.png
    :alt: Google tag manager integration creation form
 
-
 **Next Steps**
 
 Once the GTM integration is configured, you must connect it to the application in the system settings on the required level:
@@ -515,7 +514,6 @@ Once the GTM integration is configured, you must connect it to the application i
 * :ref:`Enable the Google Tag Manager integration globally <system-configuration-integrations-google>`
 * :ref:`Enable the Google Tag Manager integration per organization <organization-google-settings>`
 * :ref:`Enable the Google Tag Manager integration per website <website-google-settings>`
-
 
 
 .. include:: /include/include-links-user.rst

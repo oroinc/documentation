@@ -130,5 +130,13 @@ For more information, see the following external resources:
 * |Monolog LogstashFormatter|
 
 
+.. admonition:: Business Tip
+
+   Manufacturing companies increasingly embrace digital trends. Here's how |digital transformation in manufacturing industry| is possible with eCommerce.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

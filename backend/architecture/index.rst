@@ -42,5 +42,14 @@ Architecture Overview
    custom-application
    Bundle-less Structure <bundle-less-structure>
 
+.. admonition:: Business Tip
+
+    Are you in the process of selecting the |best eCommerce platform for B2B|? Evaluate nine alternatives on our B2B comparison page.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
