@@ -420,6 +420,11 @@ Standard search index provides API resources that can be used to work with this 
 In both cases API returns list of found entities.
 
 
+.. admonition:: Business Tip
+
+   New technologies empower digital transformation in key industries such as manufacturing. Read how companies use eCommerce to enable |digital transformation in manufacturing|.
+
+
 References
 ----------
 
@@ -432,4 +437,7 @@ References
 
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

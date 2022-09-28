@@ -47,5 +47,13 @@ Generate Tokens
     to the storefront API resources is enabled automatically.
 
 
+.. admonition:: Business Tip
+
+    Want to take advantage of the new digital commerce trend? Check out everything you need to know about a |B2B wholesale marketplace|.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

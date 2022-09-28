@@ -69,10 +69,18 @@ To add a translation to the cookie banner to present information in the desired 
 #. Click **Update Cache** on the top right.
 #. Once cache is updated, the translated banner will be displayed in the storefront.
 
+.. admonition:: Business Tip
+
+   Do you want to use advanced technologies to drive |digital transformation in manufacturing|? Our guide offers relevant tips, examples, and pitfalls to avoid.
+
+
 **Related Topics**
 
 * :ref:`Cookie Consent Banner <frontstore-guide--cookie-banner>`
 * :ref:`Configure Consent Banner <configuration--guide--commerce--configuration--cookie-consents>`
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

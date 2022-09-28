@@ -593,5 +593,14 @@ of your bundle:
         ignore_preferred_organization_tokens:
             - Acme\Demo\Your\Token\Class
 
+
+.. admonition:: Business Tip
+
+   Discover how |digital transformation in manufacturing| improves operations, customer experiences, and sales by reading our guide.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

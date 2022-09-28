@@ -325,8 +325,6 @@ The ``Oro\Bundle\MigrationBundle\Migration\Loader\MigrationsLoader`` dispatches 
 
 Migrations registered in the *oro_migration.pre_up* event are executed before the *main* migrations while migrations registered in the *oro_migration.post_up* event are executed after the *main* migrations have been processed.
 
-.. include:: /include/include-links-dev.rst
-   :start-after: begin
 
 .. _installer_generate:
 
@@ -376,5 +374,17 @@ To create an installer for AcmeBundle:
 
    .. code-block:: none
 
-
       Nothing to update - your database is already in sync with the current entity metadata.
+
+
+
+.. admonition:: Business Tip
+
+   |Digital transformation| has been fueled by technologies in core industries such as manufacturing. Read more about the role of eCommerce in the technological age of manufacturing.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

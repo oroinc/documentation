@@ -189,8 +189,16 @@ For detailed information about EC2 instances management features please see the 
 |Getting Started with Amazon EC2|.
 
 
+.. admonition:: Business Tip
+
+   Explore |digital transformation examples in manufacturing| to learn how digitization improves manufacturing processes, customer experiences, and sales.
+
+
 .. |oro_app_name| replace:: OroCommerce Community Edition
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
 

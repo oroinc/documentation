@@ -158,5 +158,13 @@ Once submitted, the order will be received and dealt with by the sales team.
 .. |order_submitted_img| image:: /user/img/system/workflows/checkout/order_received.png
    :alt: The page of the order in the back-office, once the order is submitted
 
+
+.. admonition:: Business Tip
+
+   Explore our guide to discover how |digital transformation in manufacturing| improves operations, customer experiences, and increases sales.
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

@@ -41,5 +41,14 @@ Authorize.Net has a |Sandbox test server| where you can register a test account 
 
 To test the CIM integration within the sandbox account, make sure the sandbox account is switched to the Live mode.
 
+
+.. admonition:: Business Tip
+
+   Technologies are the driving force for digital transformation in important industries like manufacturing. Learn more about the role of eCommerce in |manufacturing digital transformation|.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

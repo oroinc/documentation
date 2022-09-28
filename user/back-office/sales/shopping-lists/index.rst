@@ -96,10 +96,19 @@ From the shopping list view page, you can perform the following actions for the 
     See :ref:`Create an order from the shopping list <user-guide--sales--orders--create--from-shopping-lists>` for detailed guidance.
 
 
+.. admonition:: Business Tip
 
-  
+    Betting big on the growing digital commerce trend? Discover more about the |business to business marketplace|, its features, and how you can benefit from it.
+
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

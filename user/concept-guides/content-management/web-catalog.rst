@@ -11,6 +11,12 @@ Visually, a web catalog represents the main navigation bar of the storefront web
 
 Sellers can add new pages to existing catalogs or create all new catalogs. They may want to change out catalogs seasonally or create a catalog for a VIP promotion or sale and redirect particular customers to the promotional page. With restrictions, it is easy to ensure that only specific customers can access these personalized pages.
 
+
+.. admonition:: Business Tip
+
+    Are you looking for the |best eCommerce platform for B2B| organizations? Evaluate your options with our platform comparison chart.
+
+
 Web Catalog Elements
 --------------------
 
@@ -218,3 +224,8 @@ Keeping the structure of the master catalog in Products helps adhere to a unifie
 .. include:: /include/include-links-user.rst
    :start-after: begin
 
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

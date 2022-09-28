@@ -368,6 +368,13 @@ in the Chaplin life cycle.
 
     For more details, see |Chaplin documentation|.
 
+
+.. admonition:: Business Tip
+
+   Curious to learn more about |B2B e-commerce| and how it's different from B2C? Read our comprehensive guide on this topic.
+
+
+
 **Related Topics**
 
 .. toctree::
@@ -384,4 +391,7 @@ in the Chaplin life cycle.
 
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

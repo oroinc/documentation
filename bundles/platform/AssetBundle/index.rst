@@ -298,6 +298,13 @@ There are two cases when the error can appear:
 
 Make sure the ``webpack.config.js`` file exists in the project root, and the command has permissions to read it.
 
+
+.. admonition:: Business Tip
+
+    B2B marketplaces are the rising trend in eCommerce. Discover the benefits of a |B2B marketplace|, and what marketplace features you need to succeed.
+
+
+
 .. toctree::
    :maxdepth: 1
    :hidden:
@@ -305,4 +312,7 @@ Make sure the ``webpack.config.js`` file exists in the project root, and the com
    Commands <commands>
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

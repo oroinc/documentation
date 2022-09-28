@@ -90,5 +90,15 @@ In addition to editing an account on the edit page, you can quickly amend the ne
 
 Aggregation capabilities of accounts extend even further, with the ability to merge as many accounts as you want should you need to accumulate information from several accounts. Click |IcMerge| and follow instructions on the screen to proceed with the merge.
 
+
+
+.. admonition:: Business Tip
+
+   Want to leverage eCommerce to drive |digital transformation in manufacturing|? Make sure to read our guide on the subject.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
 .. include:: /include/include-images.rst
    :start-after: begin

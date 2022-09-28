@@ -639,9 +639,18 @@ To enable the email template fallback to the parent localization, select the **U
    :align: middle
 
 
+.. admonition:: Business Tip
+
+   Interested in learning more about |B2B eCommerce| and how it differs from B2C? Read our in-depth information on the subject.
+
+
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

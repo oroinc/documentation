@@ -130,5 +130,13 @@ Using OAuth Authorization in REST API
 See :ref:`OAuth Authentication in API <web-services-api--authentication--oauth>`.
 
 
+.. admonition:: Business Tip
+
+   Find out what sets |B2B eCommerce| apart from B2C and whether your company needs digital commerce.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

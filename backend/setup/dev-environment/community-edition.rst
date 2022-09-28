@@ -470,10 +470,21 @@ For example, the configuration to use :ref:`GridFS <bundle-docs-platform-gridfs-
                 oro_gridfs:
                     mongodb_gridfs_dsn: 'mongodb://127.0.0.1:27017/import_data_files'
 
+
+
+
+.. admonition:: Business Tip
+
+   Looking to take advantage of the recent trend in digital commerce? Learn more about a |wholesale B2B marketplace| and how you can implement it for your business.
+
+
 What's Next
 -----------
 
 * :ref:`Install the Oro Application via the Command-Line Interface <installation>`
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

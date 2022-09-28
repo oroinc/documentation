@@ -17,6 +17,12 @@ The OroCommerce storefront design architecture has some differences from the bac
    - Themes are built on top of the OroLayouts framework which is much more flexible than the placeholders approach used for back-office themes;
    - You can also customize it with themes, but as the architecture is different, you cannot reuse the same theme for OroCommerce storefront and back-office.
 
+.. admonition:: Business Tip
+
+   The manufacturing industry is one of the key sectors fully embracing digitization. Here is how you can enable |digital transformation in manufacturing| with eCommerce.
+
+
+
 .. raw:: html
 
    <h2>Table of Contents</h2>
@@ -37,4 +43,5 @@ The OroCommerce storefront design architecture has some differences from the bac
     render-cache
     debugging
 
-
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

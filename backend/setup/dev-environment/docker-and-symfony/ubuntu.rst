@@ -70,8 +70,19 @@ Environment Setup
 
 8. Restart the terminal and web browser to get them ready.
 
+
+.. admonition:: Business Tip
+
+   Digital technologies are gradually being adopted by manufacturing companies. Learn how eCommerce can help you achieve |digitalization in manufacturing|.
+
+
 What's Next
 -----------
 
 * :ref:`Follow the recommendations <setup-dev-env-docker-symfony-recommendations>`
 * :ref:`Install the Oro Application via the Command-Line Interface <setup-dev-env-docker-symfony-install-application>`
+
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

@@ -154,6 +154,7 @@ Recommended and supported browsers are:
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
 
 **See Also**
 

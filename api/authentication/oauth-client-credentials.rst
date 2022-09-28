@@ -72,3 +72,12 @@ An example of an API request:
     Authorization: Bearer your access token
 
 .. note:: Access tokens for back-office and storefront API are not interchangeable. If you attempt to request data for the storefront API with a token generated for the back-office application, access will be denied.
+
+
+.. admonition:: Business Tip
+
+   |What is B2B eCommerce| and how does it differ from B2C? Read our guide to find out.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

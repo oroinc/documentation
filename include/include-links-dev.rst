@@ -5975,5 +5975,3 @@ Links (Dev)
 .. |SystemAwareResolver| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Component/Config/Resolver/SystemAwareResolver.php" target="_blank">SystemAwareResolver</a>
-
-

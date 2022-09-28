@@ -19,5 +19,12 @@ Configuration data of *Shipping Origin* is used in the DPDBundle as the parcel p
 For more information, see the :ref:`Configure DPD Shipping Integration in the Back-Office <doc--integrations--dpd>` topic in the user guide.
 
 
+.. admonition:: Business Tip
+
+   Manufacturing companies are gradually embracing digital technologies. Discover how eCommerce can help you achieve |digital transformation in manufacturing|.
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

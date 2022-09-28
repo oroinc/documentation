@@ -35,6 +35,11 @@ Before you proceed, consider watching the following media library tutorials:
   * Enable and disable user accounts.
   * Collect statistics on orders and quotes.
 
+.. admonition:: Business Tip
+
+    Looking to invest in digital commerce? Review your options on our |B2B eCommerce platform comparison| page.
+
+
 .. toctree::
    :hidden:
    :titlesonly:
@@ -52,5 +57,7 @@ Before you proceed, consider watching the following media library tutorials:
 .. include:: /include/include-links-user.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 
 

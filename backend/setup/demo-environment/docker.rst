@@ -98,5 +98,14 @@ This repository provides a Docker Compose configuration file (docker-compose.yam
 One image is used to run containers in several roles: web server, php-fpm, consumer, websocket server, cron service.
 All these services must be running, and MySQL database must be prepared for a full-fledged application.
 
+
+.. admonition:: Business Tip
+
+   Technologies are at the forefront of digital change in important sectors like manufacturing. Discover the benefits of |digital transformation for manufacturing companies|.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

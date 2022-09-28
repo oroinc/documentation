@@ -20,5 +20,13 @@ To configure Google Tag Manager settings per website:
 
 5. Click **Save Settings**.
 
+.. admonition:: Business Tip
+
+   Technologies drive digital transformation in critical areas such as manufacturing. Learn how eCommerce can supercharge |digital transformation for manufacturing companies| like yours.
+
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

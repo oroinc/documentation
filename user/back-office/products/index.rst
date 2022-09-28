@@ -29,6 +29,11 @@ To learn how to associate your products with specific brands and create them in 
 
 To check what flows in terms of product creation and management may suit best for your business, check out the `Blueprints`_ section below.
 
+.. admonition:: Business Tip
+
+    Not sure which |B2B eCommerce software| to choose? Our B2B comparison chart helps easily review and narrow down your options.
+
+
 Blueprints
 ----------
 
@@ -80,3 +85,6 @@ This section provides shortcuts to topics that may be useful for various types o
    Product Brands <product-brands/index>
    Price Attributes <price-attributes/index>
 
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

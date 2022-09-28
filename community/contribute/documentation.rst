@@ -478,6 +478,14 @@ Once you are ready, create a pull request in the |Oro documentation| repository 
 After documentation review, your changes will be merged to the Oro documentation and will be published on the documentation website.
 
 
+
+.. admonition:: Business Tip
+
+   Looking for more information on the difference between B2C and |B2B eCommerce|? Our in-depth guide covers this and more.
+
+
+
+
 **See Also**
 
 * :ref:`Version Control <code-version-control>`
@@ -496,5 +504,9 @@ After documentation review, your changes will be merged to the Oro documentation
 
 * :ref:`Release Process <doc--community--release>`
 
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

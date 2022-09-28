@@ -90,6 +90,11 @@ CRM Bundles
     ":ref:`AnalyticsBundle <bundle-docs-crm-analytics-bundle>`", "", ""
 
 
+.. admonition:: Business Tip
+
+    Which |B2B eCommerce solutions| are the best ones? Refer to our platform comparison page to explore and evaluate your digital commerce options.
+
+
 .. toctree::
    :hidden:
 
@@ -193,6 +198,10 @@ CRM Bundles
    MailchimpBundle <extensions/MailchimpBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
 
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

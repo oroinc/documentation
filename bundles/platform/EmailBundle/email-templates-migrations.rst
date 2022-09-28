@@ -47,3 +47,12 @@ Here is an example of such a class:
     }
 
 You can edit email templates in a specified folder. New changes will be applied to the database after the migration is executed. To make things even easier, implement  ``Oro\Bundle\MigrationBundle\Fixture\VersionedFixtureInterface`` so for new updates, it will be enough to increment the version as well as add a new hash to the array. There may be any number of such hashes which guaranty corresponding versions will be updated to actual one.
+
+
+.. admonition:: Business Tip
+
+   What is |business-to-business eCommerce|, and how does it support business growth? In our guide, you'll learn the fundamentals of digital commerce for businesses.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

@@ -83,7 +83,16 @@ Known Issues
 
 Email Campaign Statistics and MailChimp Statistics may differ. Email Campaign Statistics is calculated based on the Export API data which at the moment contains only clicks and opens. MailChimp Statistics contains summary statistics for the MailChimp Email Campaign.
 
+
+.. admonition:: Business Tip
+
+   The industrial sector is undergoing a digital transformation. Discover how eCommerce helps in your |manufacturing digital transformation| journey.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
 
 
