@@ -39,6 +39,10 @@ The main parts of the editor help define the interface and the structure of your
     .. image:: /user/img/getting_started/wysiwyg/layer_manager.png
        :alt: The settings of the WYSIWYG layer manager menu
 
+.. hint:: Content Templates are available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+* **Content Templates** --- A list of :ref:`content templates <user-guide--landing-pages--marketing--content-templates>` grouped by the tags assigned to them. Templates serve as pre-designed content blocks that you can drag to the canvas and modify their fonts, styles, etc. as the page requires.
+
 WYSIWYG Functions
 -----------------
 
@@ -428,6 +432,25 @@ For that, click the **</>** icon on the toolbar. You will not be able to apply a
 
 .. image:: /user/img/concept-guides/content-management/external-markup-button.png
    :alt: Disable WYSIWYG style manager
+
+
+.. _wysiwyg-editor-add-content-template:
+
+
+Add a Content Template
+----------------------
+
+.. hint:: The feature is available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+To add a :ref:`content template <user-guide--landing-pages--marketing--content-templates>` to the canvas:
+
+1. Open the **Content Templates** tab.
+2. Expand |IcSortDesc| the tags to preview the content templates and select the appropriate one from the list. Alternatively, use the Quick Search field and start typing the template's name to speed up the search.
+3. Drag the content template to the WYSIWYG canvas.
+4. Start modifying the style of the elements by navigating from tab to tab of the WYSIWYG editor's manager panel.
+
+.. image:: /user/img/marketing/content-templates/edit-content-template.png
+   :alt: Illustrating the steps you need to take to start editing the selected content template
 
 
 **Related Topics**

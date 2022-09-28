@@ -119,7 +119,7 @@ Toggle the Menu Tree View
   .. image:: /user/img/system/menus/menus_actions_d&dsame.png
      :width: 40%
 
-- If and arrow appears in front of a menu item, then the moved item will become a child of the item that the arrow points to.
+- If an arrow appears in front of a menu item, then the moved item will become a child of the item that the arrow points to.
 
 .. _doc--system--menu--config--add-menu-item:
 
