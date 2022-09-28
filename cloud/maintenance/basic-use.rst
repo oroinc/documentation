@@ -851,5 +851,15 @@ To disable emergency maintenance mode of the application without manipulations w
 
 * `--force` is optional, it allows to skip execution confirmation.
 
+
+.. admonition:: Business Tip
+
+   Want to know everything on |eCommerce B2B| and understand how it differs from B2C? Read our detailed guide on this topic.
+
+
+
 .. include:: /include/include-links-cloud.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

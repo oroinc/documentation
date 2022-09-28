@@ -229,6 +229,11 @@ The generated report shows the products' sku and name and the number of times th
 
 .. hint:: Check out a User Guide topic on :ref:`Reports <user-guide-reports>` for more information on the available out-of-the-box reports and how to build the custom ones.
 
+
+.. admonition:: Business Tip
+
+   Do you want to drive |digital transformation in manufacturing| by utilizing advanced technologies? Find relevant examples and best practices in our article.
+
 **Related Sources**
 
 * |Set Up Your Website Storefront – Buyer’s Perspective|
@@ -244,6 +249,8 @@ The generated report shows the products' sku and name and the number of times th
 .. include:: /include/include-links-user.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 
 
 

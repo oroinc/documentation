@@ -15,6 +15,10 @@ The :ref:`Storefront Style Guide <frontend--storefront-style-guide>` is an examp
   .. image:: /img/frontend/storefront-design/FrontendDesignerGuide.jpg
      :alt: Storefront designs
 
+.. admonition:: Business Tip
+
+   How can your manufacturing company prepare for |digitalization in manufacturing|? In our guide, we share business cases and best practices on succeeding in manufacturing digitization.
+
 
 .. toctree::
    :hidden:
@@ -22,4 +26,7 @@ The :ref:`Storefront Style Guide <frontend--storefront-style-guide>` is an examp
    storefront-style-guide/index
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

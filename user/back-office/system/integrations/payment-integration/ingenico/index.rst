@@ -115,5 +115,14 @@ To view orders and payment details for these orders in the OroCommerce back-offi
    .. image:: /user/img/system/integrations/ingenico/payment-capture.png
       :alt: Payment Captured for Cards
 
+
+.. admonition:: Business Tip
+
+   Technologies drive digital transformation in key industries such as manufacturing. Learn more about the role of eCommerce in |manufacturing digital transformation|.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
 .. include:: /include/include-links-user.rst
    :start-after: begin

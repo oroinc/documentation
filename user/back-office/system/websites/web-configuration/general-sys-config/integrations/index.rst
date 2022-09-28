@@ -15,5 +15,13 @@ To configure Google Tag Manager settings per website:
 4. In the **Google Tag Manager Settings**, clear the **Use Organization** checkbox and select a :ref:`Google Tag Manager Integration <gtm-ga-4-integration>` from the list to configure it for the application and enable data mapping.
 5. Click **Save Settings**.
 
+.. admonition:: Business Tip
+
+   Technologies drive digital transformation in critical areas such as manufacturing. Learn how eCommerce can supercharge |digital transformation for manufacturing companies| like yours.
+
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

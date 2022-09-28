@@ -81,5 +81,12 @@ Nginx
     |in the official Symfony documentation|.
 
 
+.. admonition:: Business Tip
+
+    Thinking to go digital? Explore our thorough platform comparison guide to narrow down your selection of |B2B eCommerce solutions|.
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

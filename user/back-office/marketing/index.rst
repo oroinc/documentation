@@ -59,6 +59,7 @@ In the storefront, you can also customize the content of :ref:`Customer Login Pa
    Tracking Websites <tracking-websites/index>
    Web Catalogs <web-catalogs/index>
    Landing Pages <landing-pages/index>
+   Content Templates <content-templates/index>
    Content Blocks <content-blocks/index>
    Customer Login Pages <customer-login-pages/index>
    Content Widgets <content-widgets/index>

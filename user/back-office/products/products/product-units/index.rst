@@ -162,7 +162,16 @@ Each product unit assigned to a product is listed on the inventory list, where p
 
 More inventory information is available in the :ref:`Warehouse and Inventory <user-guide--inventory>` section.
 
+.. admonition:: Business Tip
+
+    Looking for a digital commerce solution for B2B? Research and compare |B2B eCommerce platforms| in our comparison chart.
+
+
+
 **Related Topics**
 
 * :ref:`Configure Product Units <sys--commerce--product--product-units>`
 * :ref:`Understand Products' Life Cycle <doc--products--before-you-begin>`
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

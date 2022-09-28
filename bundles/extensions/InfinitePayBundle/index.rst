@@ -22,6 +22,10 @@ The following fields will be shown on the payment step if InfinitePay was select
 
 To set an invoice as paid, there are two approaches. The first one is auto-detection by InfinitePay. This requires the shop owner to book this option with InfinitePay and making the company bank account accessible to InfinityPay. The second option is to inform InfinitePay when the money for an order (respective invoice) was received. This is done by triggering **Apply Transaction** to InfinityPay referencing the order id.
 
+.. admonition:: Business Tip
+
+   Considering |business to business eCommerce| for your company? Our comprehensive guide packed with relevant stats and examples will help you decide.
+
 **Related Documentation**
 
 * :ref:`Prerequisites for InfinitePay Integration <user-guide--payment--prerequisites--infinitepay>`
@@ -31,4 +35,7 @@ To set an invoice as paid, there are two approaches. The first one is auto-detec
 * :ref:`System Payment Configuration <configuration--guide--commerce--configuration--payment>`
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

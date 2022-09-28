@@ -10,6 +10,11 @@ Setup
 
 The application setup guides provide the details on how to configure the environment for Oro applications, install the application, upgrade it to a new version making sure to meet all the necessary system requirements.
 
+.. admonition:: Business Tip
+
+    Explore our |B2B eCommerce platform comparison| page to comprehensively review and narrow down your options.
+
+
 
 .. toctree::
    :titlesonly:
@@ -26,3 +31,7 @@ The application setup guides provide the details on how to configure the environ
    launch
    upgrade-to-new-version
    reinstall
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

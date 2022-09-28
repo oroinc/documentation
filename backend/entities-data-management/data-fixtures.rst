@@ -81,5 +81,14 @@ The ``--exclude`` option will skip loading fixtures from the specified bundles:
     php bin/console oro:migration:data:load --exclude=<BundleOne> --exclude=<BundleTwo> --exclude=<BundleThree>
 
 
+
+.. admonition:: Business Tip
+
+   If you've ever been wondering about the differences between B2C and |B2B e-commerce|, our guide will answer all of your possible questions.
+
+
 .. include:: /include/include-links-dev.rst
+    :start-after: begin
+
+.. include:: /include/include-links-seo.rst
     :start-after: begin

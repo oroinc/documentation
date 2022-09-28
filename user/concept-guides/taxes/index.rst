@@ -179,6 +179,11 @@ With this configuration, the order of your LA customer would look as illustrated
 
 Once the tax rule is matched, and all taxes are calculated, the customer can submit the order that is fully compliant with tax obligations.
 
+
+.. admonition:: Business Tip
+
+   Want to harness the power of |digitalization in manufacturing|? Find our how eCommerce makes manufacturing transformation possible in our guide.
+
 **Related Topics**
 
 * :ref:`Taxation Configuration <configuration--guide--commerce--configuration--taxation>`
@@ -191,4 +196,7 @@ Once the tax rule is matched, and all taxes are calculated, the customer can sub
 
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
