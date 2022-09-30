@@ -20,7 +20,6 @@ Application-level Structure Changes
 
 .. code-block:: none
 
-
     oro-application/
     ├── assets/
     |   |── your-assets-dir                             # Here we can store the (scss, js, image, fonts) resources.
