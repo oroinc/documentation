@@ -190,3 +190,7 @@ Links (Cloud)
 .. |Google CDN| raw:: html
 
    <a href="https://cloud.google.com/cdn" target="_blank">Google CDN</a>
+
+.. |Sanitized Backup| raw:: html
+
+   <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#sanitized-backup" target="_blank">Sanitized Backup</a>
