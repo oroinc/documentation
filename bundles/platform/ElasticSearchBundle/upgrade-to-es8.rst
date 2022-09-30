@@ -20,5 +20,16 @@ So, once you have turned on maintenance mode through ``app/console lexik:mainten
 
 Proceed with the :ref:`standard upgrade procedure <upgrade-application>`.
 
+Note
+^^^^
+
+If you are skipping search indexation during the upgrade or keeping all the indices during the Elasticsearch upgrade
+then you have to recreate indices and trigger full indexation manually:
+
+.. code-block:: bash
+
+    php bin/console oro:elasticsearch:create-standard-indexes --env=prod
+    php bin/console oro:search:reindex --env=prod --scheduled
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
