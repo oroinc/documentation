@@ -6,43 +6,43 @@ Integration Testing with Behat
 Concepts
 --------
 
-The information below summarizes concepts and tools that are important for understanding and use of the test framework delivered within OroBehatExtension.
+The information below summarizes concepts and tools essential for understanding and using the test framework delivered within OroBehatExtension.
 
-* **Behavior-driven development (BDD)** is a software development process that emerged from test-driven development (TDD). The Behavior-driven development combines the general techniques and principles of TDD with ideas from domain-driven design and object-oriented analysis and design to provide software development and management teams with shared tools and a shared process to collaborate on software development.
+* **Behavior-driven development (BDD)** is a software development process that emerged from test-driven development (TDD). The behavior-driven development combines the general techniques and principles of TDD with ideas from domain-driven design and object-oriented analysis and design to provide software development and management teams with shared tools and a shared process to collaborate on software development.
 * **Behat** is a |Behavior Driven Development framework| for PHP.
 * **Mink** is an |open source browser controller/emulator| for web applications developed using PHP.
 * **OroElementFactory** creates elements in contexts.
-* |SymfonyExtension| provides an integration with Symfony and Mink driver for Symfony application.
+* |SymfonyExtension| provides integration with Symfony and Mink driver for Symfony application.
 * **Oro\\Bundle\\TestFrameworkBundle\\Behat\\ServiceContainer\\OroTestFrameworkExtension** provides integration with Oro BAP based applications.
 * **Selenium2Driver** Selenium2Driver provides a bridge for the WebDriver's wire protocol.
-* |ChromeDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating to web pages, user input, JavaScript execution, and more.
+* |ChromeDriver| is an open-source tool for automated testing of web apps across many browsers. It provides capabilities for navigating web pages, user input, JavaScript execution, and more.
 
 .. _behat-conventions:
 
 Conventions
 -----------
 
-This section summarizes the limitations and agreements that are important for shared test maintenance and use.
+This section summarizes the limitations and agreements important for shared test maintenance and use.
 
-- **Use form mapping instead of selectors in your scenarios** to keep them clear and understandable for people from both the technical and nontechnical world.
+- **Use form mapping instead of selectors in your scenarios** to keep them clear and understandable for people from technical and non-technical backgrounds.
 
-    **Do not**:
+  **Do not**:
 
-    .. code-block:: gherkin
+  .. code-block:: gherkin
 
-        I fill in "oro_workflow_definition_form[label]" with "User Workflow Test"
-        I fill in "oro_workflow_definition_form[related_entity]" with "User"
+     I fill in "oro_workflow_definition_form[label]" with "User Workflow Test"
+     I fill in "oro_workflow_definition_form[related_entity]" with "User"
 
-    **Do**:
+  **Do**:
 
-    .. code-block:: gherkin
+  .. code-block:: gherkin
 
-        And I fill "Workflow Edit Form" with:
-          | Name                  | User Workflow Test |
-          | Related Entity        | User               |
+     And I fill "Workflow Edit Form" with:
+       | Name                  | User Workflow Test |
+       | Related Entity        | User               |
 
   .. code-block:: yaml
-    :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
+     :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
 
       oro_behat_extension:
         elements:
@@ -54,43 +54,43 @@ This section summarizes the limitations and agreements that are important for sh
                 Name: 'oro_workflow_definition_form[label]'
                 Related Entity: 'oro_workflow_definition_form[related_entity]'
 
-- Use menu and links to get the right :ref:`pages <behat-page-element>` instead of the direct page URL
+- Use the menu and links to get the right :ref:`pages <behat-page-element>` instead of the direct page URL
 
-    **Do**:
+  **Do**:
 
-    .. code-block:: gherkin
+  .. code-block:: gherkin
 
-        And I open User Index page
+      And I open User Index page
 
-    **Don't**:
+  **Don't**:
 
-    .. code-block:: gherkin
+  .. code-block:: gherkin
 
-        And I go to "/users"
+      And I go to "/users"
 
 * **Avoid scenario redundancy** (e.g., repeating the same sequence of steps, like login, in multiple scenarios).
 
-    Cover the feature with the sequential scenarios where every following scenario reuses outcomes (the states and data) prepared by their predecessors.
-    This path was chosen because of the following benefits:
+  Cover the feature with sequential scenarios where every following scenario reuses outcomes (the states and data) prepared by their predecessors.
+  This path has the following benefits:
 
-        - Faster scenario execution due to the shared user session and smart data preparation. The login action in the initial scenario opens the session that is reusable by the following scenarios. Preliminary scenarios (e.g., create) prepare data for the following scenarios (e.g., delete).
-        - Feature level isolation boosts execution speed, especially in the slow test environments.
-        - Minimized routine development actions (e.g., you do not have to load fixtures for every scenario; instead, you reuse the available outcomes of the previous scenarios).
-        - Easy handling of the application states that are difficult to emulate with data fixtures only (e.g., when adding new entity fields in the UI).
+  - Faster scenario execution due to the shared user session and intelligent data preparation. The login action in the initial scenario opens the session that is reusable in the following scenarios. Preliminary scenarios (e.g., create) prepare data for the following scenarios (e.g., delete).
+  - Feature level isolation boosts execution speed, especially in slow test environments.
+  - Minimized routine development actions (e.g., you do not have to load fixtures for every scenario; instead, you reuse the available outcomes of the previous scenarios).
+  - Easy handling of the application states that are difficult to emulate with data fixtures only (e.g., when adding new entity fields in the UI).
 
-    By coupling scenarios, the ease of debugging and bug localization get sacrificed. It is difficult to debug UI features and the scenarios that happen after several preliminary scenarios. The longer the line, the harder it is to isolate the issue. Once the issue occurs, you have to spend additional time localizing it and identifying the root cause (e.g., the delete scenario may malfunction vs the delete scenario may fail due to the issues in the preliminary scenario, for example, create). The most critical actions/scenarios usually precede the less critical ones.
+  By coupling scenarios, the ease of debugging and bug localization get sacrificed. It is challenging to debug UI features and the scenarios that happen after several preliminary scenarios. The longer the line, the harder it is to isolate the issue. Once the issue occurs, you have to spend additional time localizing it and identifying the root cause (e.g., the delete scenario may malfunction vs. the delete scenario may fail due to the issues in the preliminary scenario, for example, create). The most critical actions/scenarios usually precede the less critical ones.
 
-- **Use semantical yml fixtures**
+- **Use semantic yml fixtures**
 
-    Use only the entities that are in the bundle you are testing. Any other entities should be included via import.  See :ref:`Alice fixtures <behat-alice-fixtures>` for more information.
+  Use only the entities that are in the bundle you are testing. Include any other entities via import. See :ref:`Alice fixtures <behat-alice-fixtures>` for more information.
 
 - **Name elements in camelCase style without spaces**
 
-    You can still refer to it using the camelCase style with spaces in the behat scenarios. For example, an element named ``OroProductForm`` may be mentioned in the step of the scenario as "Oro Product From":
+  You can still refer to it using the camelCase style with spaces in the behat scenarios. For example, you can mention an element called ``OroProductForm`` in the step of the scenario as "Oro Product From":
 
-    .. code-block:: gherkin
+  .. code-block:: gherkin
 
-        I fill "Oro Product From" with:
+     I fill "Oro Product From" with:
 
 - **Use Scenario: Feature Background instead of the Background step**
 
@@ -107,19 +107,19 @@ Use the default configuration for the application installed in the production mo
 
 To test emails, install |Mailcatcher| and set up mailer_* options in the ``config/parameters.yml`` file:
 
-    .. code-block:: yaml
+.. code-block:: yaml
 
-         mailer_transport: smtp
-         mailer_host: 127.0.0.1
-         mailer_port: 1025
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_port: 1025
 
-Behat framework uses mailcatcher UI to assert emails. By default, the framework expects mailcatcher UI at ``http://127.0.0.1:1080/``. To change the URL, provide the ``ORO_MAILER_WEB_URL`` environment variable.
+Behat framework uses the mailcatcher UI to assert emails. By default, the framework expects the mailcatcher UI at ``http://127.0.0.1:1080/``. To change the URL, provide the ``ORO_MAILER_WEB_URL`` environment variable.
 
 Behat Configuration
 ~~~~~~~~~~~~~~~~~~~
 
 The base configuration is located in *behat.yml.dist*. Every application has its own *behat.yml.dist* file in the root of the application directory.
-Create your *behat.yml* (it is ignored by git automatically and is never committed to the remote repository), import base configuration and change it to fit your environment:
+Create your *behat.yml* (it is ignored by git automatically and is never committed to the remote repository), import the base configuration, and change it to fit your environment:
 
 .. code-block:: gherkin
 
@@ -138,7 +138,7 @@ Installation
 Install Dev Dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you installed dependencies with ``--no-dev`` parameter earlier, remove ``composer.lock`` file from the root of the application directory.
+If you installed dependencies with the ``--no-dev`` parameter earlier, remove the ``composer.lock`` file from the root of the application directory.
 
 Install dev dependencies using the following command:
 
@@ -149,7 +149,7 @@ Install dev dependencies using the following command:
 Application Initial State
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the Oro application, the initial state is the one when the application enters after installation without demo data. Scenarios that test features should rely on this state and should create any data that is necessary for additional verifications. Data may be created by the steps of the scenario or as :ref:`fixtures <behat-fixtures>`.
+The Oro application's initial state is when the application enters after installation without demo data. Scenarios that test features should rely on this state and create any data necessary for additional verifications. Data may be created by the scenario steps or as :ref:`fixtures <behat-fixtures>`.
 
 Install the application without demo data in production mode using the following command:
 
@@ -159,12 +159,12 @@ Install the application without demo data in production mode using the following
       --application-url=http://dev-crm.local --user-firstname=John --user-lastname=Doe \
       --user-password=admin  --organization-name=ORO --env=prod --sample-data=n --timeout=3000
 
-.. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command refference for more information.
+.. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command reference for more information.
 
 Install Test Automation Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To execute scenarios that use Oro application features run WebKit browser (using ChromeDriver).
+Run the WebKit browser to execute scenarios that use Oro application features (using ChromeDriver).
 To install ChromeDriver, run the following commands:
 
 .. code-block:: none
@@ -175,7 +175,7 @@ To install ChromeDriver, run the following commands:
     unzip "$HOME/chrome/chromedriver_linux64_${CHROME_DRIVER_VERSION}.zip" -d "$HOME/chrome"
     sudo ln -s "$HOME/chrome/chromedriver" /usr/local/bin/chromedriver
 
-.. note:: These commands create a subdirectory for Chrome in your home directory, download ChromeDriver into the directory that you just created, uncompress files, and create a symbolic link.
+.. note:: These commands create a subdirectory for Chrome in your home directory, download ChromeDriver into the directory you just created, uncompress files, and create a symbolic link.
 
 After the command execution is complete, you can use ``chromedriver`` in the terminal.
 
@@ -191,7 +191,7 @@ Run ChromeDriver:
 
     chromedriver --url-base=wd/hub --port=4444 > /tmp/driver.log 2>&1
 
-To run ChromeDriver in background, append ampersand symbol (&) to the end of line, like in the following examples:
+To run ChromeDriver in the background, append the ampersand symbol (&) to the end of the line:
 
 .. code-block:: none
 
@@ -200,14 +200,11 @@ To run ChromeDriver in background, append ampersand symbol (&) to the end of lin
 Run Tests
 ~~~~~~~~~
 
-Before you begin, it is highly recommended to make yourself familiar with behat arguments and options.
-Run ``bin/behat --help`` for a detailed description.
+Before you begin, familiarize yourself with behat arguments and options. Run ``bin/behat --help`` for a detailed description.
 
-When the Oro application is installed without demo data and is running, and the ChromeDriver is running, you can start running the behat tests by feature from the root of the application.
+When the Oro application is installed without demo data and is running, and the ChromeDriver is running, you can start running the behat tests by feature from the root of the application. You can use one of the following commands.
 
-You may use one of the following commands.
-
-Run feature test scenario:
+Run the feature test scenario:
 
 .. code-block:: none
 
@@ -237,12 +234,9 @@ Architecture
 DI Containers
 ^^^^^^^^^^^^^
 
-Behat is a Symfony console application with its own container and services. A Behat container may be configured through
-Extensions using *behat.yml* in the root of the application directory.
+Behat is a Symfony console application with its own container and services. A Behat container may be configured through Extensions using *behat.yml* in the root of the application directory.
 
-Application container may be used by injected Kernel in your Context after you implement
-``Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareInterface`` and use
-``Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareTrait`` trait.
+Application container can be used by the injected Kernel in your Context after you implement ``Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareInterface`` and use ``Oro\Bundle\TestFrameworkBundle\Behat\Context\AppKernelAwareTrait`` trait.
 
 .. code-block:: php
 
@@ -260,8 +254,7 @@ Application container may be used by injected Kernel in your Context after you i
         }
     }
 
-Moreover, you can inject into the behat context dependencies from either behat or application containers by declaring
-it as a service in ``services.yml`` located besides the ``behat.yml``:
+Moreover, you can inject into the behat context dependencies from either behat or application containers by declaring it as a service in ``services.yml`` located beside the ``behat.yml``:
 
 .. code-block:: yaml
     :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
@@ -290,12 +283,12 @@ Autoload Suites
 ``Oro\Bundle\TestFrameworkBundle\Behat\ServiceContainer\OroTestFrameworkExtension`` is used for building testing suites.
 
 During initialization, the extension creates a test suite with a bundle name if any ``Tests/Behat/Features`` directory exists in a bundle.
-Thus, if the bundle has no Features directory - no test suite would be created for it.
+If the bundle has no Features directory, no test suite would be created for it.
 
-If you need some specific feature steps for your bundle, create the ``Acme\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext`` class. This context is added to the suite with other common contexts.
+If you need specific feature steps for your bundle, create the ``Acme\Bundle\DemoBundle\Tests\Behat\Context\FeatureContext`` class. This context is added to the suite with other common contexts.
 The complete list of common context is configured in the behat configuration file under the ``shared_contexts``.
 
-You can manually configure test suite for a bundle in the application behat configuration:
+You can manually configure the test suite for a bundle in the application behat configuration:
 
 .. code-block:: yaml
 
@@ -326,14 +319,14 @@ or in a bundle behat configuration ``{BundlePath}/Tests/Behat/behat.yml``:
                 paths:
                     - '@AcmeDemoBundle/Tests/Behat/Features'
 
-Manually configured test suits are not autoloaded by the extension.
+The extension does not autoload manually configured test suits.
 
 .. _behat-feature-isolation:
 
 Feature Isolation
 ^^^^^^^^^^^^^^^^^
 
-Every feature can interact with the application and perform some operations. As a result, the application state may be modified. To avoid data collisions and dependencies between features when they are running one-by-one, the features are isolated: for example, the database and cache directories are dumped before running the feature tests; they are restored after the feature tests execution is complete.
+Every feature can interact with the application and perform some operations. As a result, the application state may be modified. To avoid data collisions and dependencies between features when they run one-by-one, the features are isolated: for example, the database and cache directories are dumped before running the feature tests; they are restored after the feature test execution is complete.
 
 Every isolator must implement the ``Oro\Bundle\TestFrameworkBundle\Behat\Isolation\IsolatorInterface`` and ``oro_behat.isolator`` tags with priority.
 
@@ -350,11 +343,11 @@ Elements
 
 Elements is a service layer in behat tests. They wrap the complex business logic. Take a minute to investigate base Mink |NodeElement|.
 
-It has many public methods; some of them are applicable only to certain elements. Every Bundle test can contain a particular number of elements.
+It has many public methods; some of them apply only to certain elements. Every Bundle test can contain a particular number of elements.
 All elements must be described in ``{BundlePath}/Tests/Behat/behat.yml`` the following way:
 
 .. code-block:: yaml
-    :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
+   :caption: Acme/Bundle/DemoBundle/Tests/Behat/behat.yml
 
     oro_behat_extension:
         elements:
@@ -371,15 +364,15 @@ where:
 1. ``Login`` is an element name that MUST be unique.
    The element can be created in context by ``OroElementFactory`` by its name:
 
-    .. code-block:: php
+   .. code-block:: php
 
-        $this->elementFactory->createElement('Login')
+       $this->elementFactory->createElement('Login')
 
-2. ``selector`` defines how web driver shall find the element on the page.
+2. ``selector`` defines how the web driver shall find the element on the page.
    By default, when the selector type is not specified, the |css selector| is used.
    XPath selector is also supported and may be provided with the following configuration:
 
-    .. code-block:: yaml
+   .. code-block:: yaml
 
         selector:
             type: xpath
@@ -388,8 +381,8 @@ where:
 3. The ``class`` namespace for element's class (should be extended from ``Oro\Bundle\TestFrameworkBundle\Behat\Element\Element``).
    When omitted, the ``Oro\Bundle\TestFrameworkBundle\Behat\Element\Element`` class is used by default.
 
-4. ``options`` is an array of additional options that are stored in the ``options`` property of the *Element* class.
-   It is highly recommended to supply a class with options mapping for the form elements, as this increases test speed and ensure more accurate field mapping
+4. ``options`` is an array of additional options stored in the ``options`` property of the *Element* class.
+   It is highly recommended to supply a class with options mapping for the form elements, as this increases test speed and ensures more accurate field mapping.
 
 Mapping Form Fields
 ^^^^^^^^^^^^^^^^^^^
@@ -474,7 +467,7 @@ Sometimes, a form appears in the iframe. Behat can switch to the iframe by its i
 Page Element
 ^^^^^^^^^^^^
 
-Page element encapsulates the entire web page with its URL and path to the page. Every Page element should extend from ``Oro\Bundle\TestFrameworkBundle\Behat\Element\Page``.
+The page element encapsulates the entire web page with its URL and path to the page. Every Page element should extend from ``Oro\Bundle\TestFrameworkBundle\Behat\Element\Page``.
 
 Typical Page configuration:
 
@@ -526,9 +519,9 @@ Feature Fixtures
 
 Whenever behat runs a new feature, the application state is reset to default (see :ref:`Feature isolation <behat-feature-isolation>` for more information): there is only one admin user, one organization, one business unit, and default roles in the database.
 
-The feature tests must rely on data that is available in the application after the oro:install command execution. In most cases, this is not enough.
+The feature tests must rely on data available in the application after the oro:install command execution. In most cases, this is not enough.
 
-Thereby you have two ways to get more data in the system: using inline fixtures or alice fixtures.
+You have two ways to get more data in the system: inline or alice fixtures.
 
 Inline Fixtures
 ^^^^^^^^^^^^^^^
@@ -558,7 +551,7 @@ You use both faker and :ref:`entity references <behat-entity-references>` in inl
 Alice Fixtures
 ^^^^^^^^^^^^^^
 
-Sometimes you need many different entities with complex relationships. In such cases, you can use alice fixtures. Alice is a library that allows you to create fixtures in the *yml* format easily.
+Sometimes you need many different entities with complex relationships. In such cases, you can use alice fixtures. Alice is a library that allows you to easily create fixtures in the *yml* format.
 
 .. hint:: See |Alice documentation2| for more information.
 
@@ -575,18 +568,17 @@ For example:
 
 .. code-block:: gherkin
 
-
     @fixture-OroUserBundle:user.yml
     @fixture-OroOrganizationBundle:BusinessUnit.yml
     Feature: Adding attributes for workflow transition
 
-In case if specific security context is required for fixture it can be setup with additional options passed with fixture's tag
-in query like parameters style.
+In case if specific security context is required for fixture, it can be set up with additional options passed with the fixture's tag
+in a query, like parameters style.
+
 Available options are ``user`` and ``user_reference``. ``user`` option accepts username and ``user_reference`` one
 accepts user's reference created in previously run fixtures.
 
 For example:
-
 
 .. code-block:: gherkin
 
@@ -600,12 +592,10 @@ Additionally, Alice allows you to |include files| via extension, so you can impo
 
 .. code-block:: none
 
-
     include:
         - '@OroCustomerBundle/Tests/Behat/Features/Fixtures/CustomerUserAmandaRCole.yml'
 
 **You should always include fixtures from other bundles with entities that were declared within that bundle see** :ref:`Conventions <behat-conventions>`.
-
 
 .. _behat-entity-references:
 
@@ -614,7 +604,7 @@ Entity References
 
 You can use references to the entities in both inline and |alice fixtures|.
 
-``{BundlePath}\Tests\Behat\ReferenceRepositoryInitializer`` used to create references for objects that already exist in the database.
+``{BundlePath}\Tests\Behat\ReferenceRepositoryInitializer`` is used to create references for objects that already exist in the database.
 
 * It is prohibited to modify or add new entities within Initializer.
 * It should implement ``ReferenceRepositoryInitializerInterface`` and should not have dependencies.
@@ -636,16 +626,15 @@ You can try:
 
 .. code-block:: none
 
-
     bin/behat --dry-run
 
-This can be useful in case you are not sure that you have declared all the necessary context for your feature.
+This can be useful in case you are unsure that you have declared all the necessary context for your feature.
 OroBehatExtension enhances this feature and adds extra functionality.
 
 FixturesChecker
 ^^^^^^^^^^^^^^^
 
-Each feature can have alice fixtures, :ref:`added by tags <behat-alice-fixtures>`. **FixturesChecker** will check every feature for ability to load fixtures, without actually loading the fixture.
+Each feature can have alice fixtures, :ref:`added by tags <behat-alice-fixtures>`. **FixturesChecker** will check every feature for the ability to load fixtures without actually loading the fixture.
 
 Write a Feature
 ---------------
@@ -666,7 +655,7 @@ In addition to being a test specification and test documentation, a scenario def
 Normally, a step starts with **Given**, **When**, or **Then**.
 
 If there are multiple Given or When steps underneath each other, you can use **And** or **But** to organize them into logical groups.
-Cucumber does not differentiate between the keywords, but choosing the right one is important for the readability of the scenario as a whole.
+Cucumber does not differentiate between the keywords, but choosing the right one is essential for the readability of the scenario as a whole.
 
 .. hint:: Take a look at the login.feature in OroUserBundle: |UserBundle/Tests/Behat/Features/login.feature|.
 
@@ -704,7 +693,7 @@ Cucumber does not differentiate between the keywords, but choosing the right one
 2. Behat does not parse the following three lines of text: In order to... As an... I need to... These lines provide a human-readable context to the people who will review or modify this feature. They describe the business value derived from the inclusion of the feature into the software.
 3. The line ``Scenario: Success login`` starts the scenario and provides a description for it.
 4. The next six lines are the scenario steps. Every step is matched to a regular expression defined in the Context.
-5. The line ``Scenario Outline: Fail login`` starts the next scenario. In the scenario outline, the placeholders are used instead of the actual values, and the values for scenario execution are provided as a set of examples below the outline. Scenario Outlines helps you run these steps several times, iterating through the values provided in the ``Examples:`` section and thus testing the same flow with different input.  The Scenario Outline is a template which is never run on its own. Instead, a Scenario that follows an outline runs once for each row in the Examples section beneath it (except for the first header row that is skipped). Think of a placeholder as a variable. It is replaced with a real value from the ``Examples:`` table row, where the text between the placeholder angle brackets (e.g., <login>) matches the text of the table column header (e.g., login).
+5. The line ``Scenario Outline: Fail login`` starts the following scenario. In the scenario outline, the placeholders are used instead of the actual values, and the values for scenario execution are provided as examples below the outline. Scenario Outlines help you run these steps several times, iterating through the values provided in the ``Examples:`` section and thus testing the same flow with different inputs. The Scenario Outline is a template that is never run on its own. Instead, a Scenario that follows an outline runs once for each row in the Examples section beneath it (except for the first header row that is skipped). Think of a placeholder as a variable. It is replaced with a real value from the ``Examples:`` table row, where the text between the placeholder angle brackets (e.g., <login>) matches the text of the table column header (e.g., login).
 
 Troubleshooting
 ---------------
@@ -714,8 +703,8 @@ Increase application performance (Ubuntu)
 
 Behat has :ref:`isolators <behat-feature-isolation>` to make behat features independent of each other.
 One of those isolators is the database. It creates a database dump before the execution start, then drops it and restores it from the dump after each feature.
-This can take a while (up to 2 minutes on slow SSD). If you run behat tests often you would like to decrease this time.
-To boost the database isolator, you can mount the database directory to RAM. In the illustration below, we use |tmpfs|:
+This can take a while (up to 2 minutes on slow SSD). If you run behat tests often, you would like to decrease this time.
+You can mount the database directory to RAM to boost the database isolator. In the illustration below, we use |tmpfs|:
 
 Create a tmpfs directory:
 
@@ -733,7 +722,6 @@ Edit ``/etc/mysql/mysql.conf.d/mysqld.cnf``
 Add new storage to ``/etc/fstab``:
 
 .. code-block:: ini
-
 
     tmpfs  /var/tmpfs  tmpfs  nodev,nosuid,noexec,noatime,size=4G  0 0
 
@@ -765,7 +753,7 @@ Now you can start MySQL again:
 (optional) Create Startup Script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After you restart the computer, all the data and the database structure gets lost. Therefore, you should copy data directory manually after every restart. Alternatively, you can create a startup script that may be launched automatically as a systemd service.
+After you restart the computer, all the data and the database structure get lost. Therefore, you should copy the data directory manually after every restart. Alternatively, you can create a startup script that may be launched automatically as a systemd service.
 
 To prepare for auto-recovery using a startup script:
 
@@ -779,7 +767,6 @@ To prepare for auto-recovery using a startup script:
 2. Create a unit configuration file */etc/systemd/system/mysql_copy_tmpfs.service* that will schedule priority of the service execution before the MySQL starts:
 
     .. code-block:: gherkin
-
 
         [Unit]
         Description=Copy mysql to tmpfs
@@ -832,7 +819,7 @@ Remove (unique) suffix in entity property in entity fixture, like in the followi
 
 **Route cause**
 
-Alice remembers all the values for the given entity property and tries to generate a unique value, but this causes issues when there is just one value for the entity property.
+Alice remembers all the values for the given entity property and tries to generate a unique value, which causes issues when there is just one value for the entity property.
 
 This option still may be used if combined with the autogenerated fake value, like in the following example:
 
@@ -849,14 +836,14 @@ Append snippets
 
 The feature development consists of the following design stages:
 
-- Create a draft of the feature: implement a high-level scenario that covers the story.
+- Create a feature draft: implement a high-level scenario covering the story.
   At this stage, you should have a clear understanding of the business outcome that is achieved by the feature test automation.
 
-- Specify all the scenarios that may happen when using the feature. Exact steps are not necessary.
+- Specify all the scenarios that may happen when using the feature. The exact steps are not necessary.
 
 - Finalize the big picture of the implementation and plan the individual steps.
 
-Some of the steps may already be fully automated. Ideally, you should automate the missing steps after you plan using them in your feature test scenarios. If the feature functionality is already implemented, it is necessary to implement the behat steps involved in the feature testing.
+Some of the steps may already be fully automated. Ideally, you should automate the missing steps after you plan to use them in your feature test scenarios. If the feature functionality is already implemented, it is necessary to implement the behat steps involved in the feature testing.
 
 However, sometimes it is impossible to do right away (because of the incomplete feature implementation, blocking issues, or missing information). In this case, you can temporarily mock the steps that are missing implementation.
 
@@ -865,7 +852,6 @@ A quick way to do so is to dry-run your feature tests. In the console, run the f
 .. code-block:: none
 
     bin/behat path/to/your.feature --dry-run --append-snippets --snippets-type=regex
-
 
 The feature is executed in the *--dry-run* mode, and at the final stage of execution, you are prompted to add undefined steps mock implementation to one of the existing contexts.
 
@@ -877,14 +863,14 @@ When you design test automation scenarios for the new feature, you may have trou
 Auto Suggestion in PhpStorm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While designing a scenario in the feature file, PhpStorm offers you hints on the implemented steps that match the keywords.  E.g., when you type *grid* or *form*, the steps that involve these items pop up in the suggestions block.
+While designing a scenario in the feature file, PhpStorm offers hints on the implemented steps matching the keywords. E.g., when you type *grid* or *form*, the steps that involve these items pop up in the suggestions block.
 
 .. image:: /img/backend/tests/phpstorm_step_suggestion.png
     :alt: PhPStorm step suggestion
 
 If PhpStorm does not offer you any hints as you type, please, verify the following:
 
-1. You have installed vendors for at list one application
+1. You have installed vendors for at least one application
 2. You have installed behat plugin for PhpStorm
 
 Find the Necessary Context
@@ -903,7 +889,7 @@ Usually, the name of context is self-explanatory, e.g., GridContext, FormContext
 Use Grep in Console
 ~~~~~~~~~~~~~~~~~~~
 
-If, for any reason, you do not use PhpStorm or behat plugin, you can still find the necessary step by filtering the output of the command that previews all the feature steps (use Grep).
+If you do not use PhpStorm or behat plugin for any reason, you can still find the necessary step by filtering the output of the command that previews all the feature steps (use Grep).
 
 Type the following command in your console:
 
@@ -923,5 +909,14 @@ Type the following command in your console:
 
 You can use the behat command-line interface only after you install the application.
 
+
+.. admonition:: Business Tip
+
+   Digital technologies assist manufacturing companies in remaining competitive. Learn how eCommerce and |digital transformation in manufacturing| can help your business grow.
+
+
 .. include:: /include/include-links-dev.rst
-    :start-after: begin
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

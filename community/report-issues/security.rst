@@ -23,5 +23,13 @@ We will not disclose security issues until our internal investigation is finishe
 
 .. note:: Oro maintains a bug bounty program which means that we recognize and reward researchers who report security issues and vulnerabilities for our websites and products. For more information and eligibility requirements, please refer to the |Bug Bounty| page.
 
+.. admonition:: Business Tip
+
+   Interested in utilizing the latest trend in digital commerce? Become familiar with |B2B marketplaces|, how they work, and successful examples.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

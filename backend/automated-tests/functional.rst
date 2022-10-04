@@ -5,10 +5,7 @@ Functional Testing with PHPUnit
 
 Functional tests check the integration of the different layers of an application.
 
-In this article you will learn how you can improve the experience of writing
-functional tests with OroPlatform. It is recommended to read the Symfony
-|documentation concerning testing|  before you continue. You should also be
-familiar with |PHPUnit|.
+In this article, you will learn how you can improve the experience of writing functional tests with OroPlatform. We recommend that you read the Symfony |documentation concerning testing|  before you continue. You should also be familiar with |PHPUnit|.
 
 When to Write Functional Tests
 ------------------------------
@@ -20,8 +17,7 @@ Functional tests are generally written for:
 * Repositories
 * Other services
 
-The goal of functional tests is not to test separate classes (unit tests),
-but to test the integration of the different parts of an application.
+The goal of functional tests is not to test separate classes (unit tests), ut to test the integration of the different parts of an application.
 
 Add functional tests to supplement unit tests for the following reasons:
 
@@ -35,14 +31,7 @@ Test Environment
 Initialization Client and Loading Fixtures Caveats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To improve the performance of test execution, the initialization of a client
-is only done once per test case by default. This means that the kernel of
-the Symfony application will be booted once per test case. Fixtures are also
-loaded only once per test case by default. On the one hand, initializing and loading
-fixtures once per test case increases the performance of test execution but
-it can also cause bugs because the state of fixtures and the kernel (and as
-a result, the service container) will be shared by default between test methods
-of separate test cases. Be sure to reset this state if necessary.
+To improve the performance of test execution, the initialization of a client is only done once per test case by default. This means that the kernel of the Symfony application will be booted once per test case. Fixtures are also loaded only once per test case by default. On the one hand, initializing and loading fixtures once per test case increases the performance of test execution, but it can also cause bugs because the state of fixtures and the kernel (and, as a result, the service container) will be shared by default between test methods of separate test cases. Be sure to reset this state if necessary.
 
 Test Environment Setup
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -50,7 +39,7 @@ Test Environment Setup
 You need to configure the following parameters for the testing environment:
 
 1. Create a separate database for tests (e.g., add '_test' suffix):
-2. Set up host, port and authentication parameters for the database, the mail server, and the web socket server in the parameters_test.yml file:
+2. Set up host, port, and authentication parameters for the database, the mail server, and the web socket server in the parameters_test.yml file:
 
    For example:
 
@@ -96,13 +85,13 @@ You need to configure the following parameters for the testing environment:
            * --no-interaction
            * --timeout=600
 
-   During installation, the database structure is set up and standard fixtures are loaded.
+   The database structure is set up during installation, and standard fixtures are loaded.
 
-   .. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command refference for more information.
+   .. hint:: See the :ref:`oro:install <bundle-docs-platform-installer-bundle-oro-install-command>` command reference for more information.
 
-4. Run tests using phpunit with the proper --testsuite option (unit or functional).
+4. Run tests using phpunit with an appropriate --testsuite option (unit or functional).
 
-   .. caution::	Currently, running different types of automated tests together is not supported. It is, therefore, strongly not recommended to run unit tests and functional tests side by side in one run as this produces errors. Unit tests create mock objects that later interfere with functional test execution and create unnecessary ambiguity. It is possible to disable unit tests on test startup with the help of the test suite option:
+   .. caution:: Currently, running different automated tests together is not supported. Therefore, it is strongly not recommended to run unit and functional tests side by side in one run, as this produces errors. Unit tests create mock objects that later interfere with functional test execution and create unnecessary ambiguity. It is possible to disable unit tests on test startup with the help of the test suite option:
 
    .. code-block:: none
 
@@ -115,8 +104,7 @@ You need to configure the following parameters for the testing environment:
 Database Isolation
 ^^^^^^^^^^^^^^^^^^
 
-The ``@dbIsolationPerTest`` annotation adds a transaction that will be performed
-before a test starts and is rolled back when a test ends.
+The ``@dbIsolationPerTest`` annotation adds a transaction that will be performed before a test starts and is rolled back when a test ends.
 
 .. code-block:: php
    :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
@@ -137,8 +125,7 @@ before a test starts and is rolled back when a test ends.
 Loading Data Fixtures
 ^^^^^^^^^^^^^^^^^^^^^
 
-Use the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::loadFixtures``
-method to load a fixture in a test:
+Use the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::loadFixtures`` method to load a fixture in a test:
 
 .. code-block:: php
    :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
@@ -164,8 +151,7 @@ method to load a fixture in a test:
         // ...
     }
 
-A fixture must be either a class name that implements ``Doctrine\Common\DataFixtures\FixtureInterface``
-or a path to the |nelmio/alice| file.
+A fixture must be either a class name that implements ``Doctrine\Common\DataFixtures\FixtureInterface`` or a path to the |nelmio/alice| file.
 
 An example of a fixture:
 
@@ -195,8 +181,7 @@ An example of a fixture:
             bar:
                 name: test
 
-You can also implement the ``Doctrine\Common\DataFixtures\DependentFixtureInterface``
-which enables to load fixtures depending on other fixtures being already loaded:
+You can also implement the ``Doctrine\Common\DataFixtures\DependentFixtureInterface`` which enables you to load fixtures depending on other loaded fixtures:
 
 .. code-block:: php
    :caption: src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
@@ -223,7 +208,6 @@ which enables to load fixtures depending on other fixtures being already loaded:
 Further, you can use reference-specific entities from fixtures, e.g.:
 
 .. code-block:: php
-
 
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
 
@@ -275,12 +259,11 @@ Now, you can reference the fixture by the configured name in your test:
 
 .. hint::
 
-    By default the entity manager is cleared after loading each fixture. To prevent clearing a fixture
-    can implement ``Oro\Bundle\TestFrameworkBundle\Test\DataFixtures\InitialFixtureInterface``.
+    By default, the entity manager is cleared after loading each fixture. To prevent clearing a fixture can implement ``Oro\Bundle\TestFrameworkBundle\Test\DataFixtures\InitialFixtureInterface``.
 
 .. hint::
 
-    Sometimes you need a reference to admin organization, user or business unit. The following fixtures can be used to load them:
+    Sometimes you need a reference for an admin organization, a user, or a business unit. You can use the following fixtures to load them:
 
     - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadOrganization``
     - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadUser``
@@ -315,8 +298,7 @@ A functional test for a controller consists of a couple of steps:
 Prepare Client Examples
 -----------------------
 
-Simple initialization works for testing commands and services when authentication
-is not required.
+Simple initialization works for testing commands and services when authentication is not required.
 
 .. code-block:: php
    :caption: src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
@@ -490,11 +472,7 @@ Have a look at an example of a controller test from OroCRM:
 Testing ACLs in a Controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this example, a user without sufficient permissions is trying to access
-a controller action. The
-``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::assertHtmlResponseStatusCodeEquals``
-method is used to ensure that access to the requested resource is
-denied for the user:
+In this example, a user without sufficient permissions is trying to access a controller action. The ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::assertHtmlResponseStatusCodeEquals`` method is used to ensure that access to the requested resource is denied for the user:
 
 .. code-block:: php
    :caption: src/Oro/Bundle/UserBundle/Tests/Functional/UsersTest
@@ -613,12 +591,7 @@ Here is an example of a fixture that adds a user without permissions:
 Testing Commands
 ^^^^^^^^^^^^^^^^
 
-When OroPlatform is installed, you can test commands by using the
-``runCommand()``
-method from the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class. This method executes a command with
-given parameters and returns its output as a string. For example, see
-what the test for the ``Oro\Bundle\SearchBundle\EventListener\UpdateSchemaDoctrineListener``
-class from the SearchBundle looks like:
+When OroPlatform is installed, you can test commands by using the ``runCommand()`` method from the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class. This method executes a command with given parameters and returns its output as a string. For example, see what the test for the ``Oro\Bundle\SearchBundle\EventListener\UpdateSchemaDoctrineListener`` class from the SearchBundle looks like:
 
 .. code-block:: php
    :caption: src/Oro/Bundle/SearchBundle/Tests/Functional/EventListener/UpdateSchemaListenerTest.php
@@ -672,15 +645,12 @@ class from the SearchBundle looks like:
 
 .. seealso::
 
-    Read |Testing Commands| in the official documentation for more information
-    on how to test commands in a Symfony application.
+    Read |Testing Commands| in the official documentation for more information on how to test commands in a Symfony application.
 
 Testing Services or Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To test services or repositories, you can access the service container through
-the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::getContainer``
-method:
+To test services or repositories, you can access the service container through the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::getContainer`` method:
 
 .. code-block:: php
    :caption: src/Oro/Bundle/FooBarBundle/Tests/Functional/FooBarTest.php
@@ -707,15 +677,12 @@ method:
         }
     }
 
-
 Functional Test Example
 -----------------------
 
-This is an example of how you can write an integration test for a class that
-uses Doctrine ORM without mocking its classes and using real Doctrine services:
+This is an example of how you can write an integration test for a class that uses Doctrine ORM without mocking its classes and using real Doctrine services:
 
 .. code-block:: php
-
 
     namespace Oro\Bundle\BatchBundle\Tests\Functional\ORM\QueryBuilder;
 
@@ -780,10 +747,7 @@ uses Doctrine ORM without mocking its classes and using real Doctrine services:
 
 .. caution::
 
-    If your class is responsible for retrieving data, it is better to load
-    fixtures and retrieve them using a test class and then assert that the
-    results are valid. Checking DQL is enough in this case because this it
-    is the sole responsibility of this class to modify the query.
+    If your class is responsible for retrieving data, it is better to load fixtures and retrieve them using a test class and then assert that the results are valid. Checking DQL is enough in this case, as it is the sole responsibility of this class to modify the query.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

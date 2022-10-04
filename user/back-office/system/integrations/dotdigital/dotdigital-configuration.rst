@@ -77,6 +77,12 @@ To sync Dotdigital integration:
 1.  Navigate to **System > Integrations > Manage Integrations**.
 2.  Select the newly created integration.
 3.  Click **Schedule Sync** in the upper-right corner of the page.
+
+
+.. admonition:: Business Tip
+
+   Are you considering |B2B eCommerce| for your business? Make a business case using our in-depth guide, which is filled with useful statistics and examples.
+
    
 **Related Articles**
 
@@ -88,4 +94,7 @@ To sync Dotdigital integration:
 
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

@@ -1,10 +1,10 @@
 End-to-End Testing with Behat
 =============================
 
-With Behat framework, you can write human-readable stories that describe the behavior of your application. These stories might be auto-tested against your application.
-To test the application, we transform user actions into steps and expected outcomes. Scenario steps simulate user interaction with the application through the Google Chrome browser, and as a result, you can modify the application state.
+With Behat framework, you can write human-readable stories describing your application's behavior. These stories might be auto-tested against your application.
+We transform user actions into steps and expected outcomes to test the application. Scenario steps simulate user interaction with the application through the Google Chrome browser so that you can modify the application state.
 
-You can organize dependent scenarios into features. The features are isolated by default to avoid data collisions and dependencies between features when they are running one by one. For example, the database and cache directories are dumped before running the feature tests; they are restored once the execution of the feature tests is complete. This means that when we run Behat tests, they are connected to services used by the application, such as the database, cache, message broker, and so on, and can interact with them, bypassing the application. As a result, these tests are rather integration than end-to-end.
+You can organize dependent scenarios into features. The features are isolated by default to avoid data collisions and dependencies between features when they are running one by one. For example, the database and cache directories are dumped before running the feature tests; they are restored once the feature tests are executed. This means that when we run Behat tests, they are connected to services used by the application, such as the database, cache, message broker, and so on, and can interact with them, bypassing the application. As a result, these tests are rather integration than end-to-end.
 
 You can disable features isolation with the ``--skip-isolation`` option of the bin/behat console command. When isolation is disabled, tests interact only with the application by simulating a user through the browser. In this case, services are not touched, and tests become more black-box and, as a result, **end-to-end**.
 
@@ -16,7 +16,7 @@ There are two main cases when end-to-end tests are helpful:
 Remote Application Testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can test your development, staging, or even production environment remotely with the disabled isolation to ensure crucial features work as expected after deployment. When testing the production application, make sure you consider the artifacts and side effects of the tests because, with disabled isolators, tests change the application state permanently. As a consequence, you should never operate real users' data. For example, to mitigate the effects of running automated scenarios, you can create separate users explicitly for tests.
+You can test your development, staging, or production environment remotely with the disabled isolation to ensure crucial features work as expected after deployment. When testing the production application, consider the artifacts and side effects of the tests because, with disabled isolators, tests change the application state permanently. As a consequence, you should never operate real users' data. For example, to mitigate the effects of running automated scenarios, you can create separate users explicitly for tests.
 
 To test the external application, change the ``base_url`` option in the behat.yml file to the remote one. As many isolators do not support remote application testing, you can test external applications only with the skip-isolators option.
 
@@ -38,7 +38,7 @@ Prerequisites
 
 .. note:: Please avoid reusing an existing local application installation for running end-to-end tests. Instead, create a separate instance of the application with the same code.
 
-.. hint:: If you are using previously installed application, clean up the application state before you begin:
+.. hint:: If you are using a previously installed application, clean up the application state before you begin:
 
           .. code-block:: bash
 
@@ -48,7 +48,7 @@ Prerequisites
 Running Tests
 -------------
 
-1. To test a remote application, define the database server version in the config/parameters.yml file so the application does not attempt to connect to the database:
+1. To test a remote application, define the database server version in the config/parameters.yml file, so the application does not attempt to connect to the database:
 
    .. code-block:: bash
 
@@ -90,14 +90,14 @@ Running Tests
 
    .. hint:: You can use the ``--stop-on-failure`` option to stop processing on the first failed scenario.
 
-You can find Behat features provided by ORO that cover most application features by running the ``php bin/behat --available-features`` command. However, keep in mind that most of them require data fixtures to be loaded to the database, so you cannot use them as-is for the end-to-end testing without the database connection to the tested application.
+You can find Behat features provided by Oro that cover most application features by running the ``php bin/behat --available-features`` command. However, remember that most of them require data fixtures to be loaded to the database, so you cannot use them as-is for the end-to-end testing without the database connection to the tested application.
 
 .. note:: Some behat steps interact with application services. When testing the remote application, avoid using these steps or provide service connection details for the required services in the config/parameters.yml file to fulfill requirements for such step(s).
 
 Running Tests with Data Fixtures
 --------------------------------
 
-To test a feature, you often need different data loaded (users to login, products with prices to add to the shopping list, etc.). Loading all the required data with behat steps might take a while and is often unnecessary. You can load data directly to the database with fixtures before running tests to speed up such scenarios. This requires the database connection from the application instance that runs tests to the tested one.
+To test a feature, you often need different data loaded (users to log in, products with prices to add to the shopping list, etc.). Loading all the required data with behat steps might take a while and is often unnecessary. You can load data directly to the database with fixtures before running tests to speed up such scenarios. This requires the database connection from the application instance that runs tests to the tested one.
 
 .. note:: Your local application source code must match the code of the tested application. Otherwise, you may face issues with the data load.
 
@@ -143,9 +143,9 @@ To test a feature, you often need different data loaded (users to login, product
 Using Secrets Variables in Tests
 --------------------------------
 
-To test a feature, you may need to use sensitive data like credentials which should not be defined in fixtures. You can define this variables in secrets variable file and use those variables in your scenarios.
+To test a feature, you may need to use sensitive data like credentials which should not be defined in fixtures. You can define these variables in the secrets variable file and use those variables in your scenarios.
 
-1. Create a ``.behat-secrets.yml`` file in the application folder. In this file, set your configuration variables for use them in test.
+1. Create a ``.behat-secrets.yml`` file in the application folder, and set your configuration variables to use in the test.
 
    .. code-block:: yaml
 
@@ -154,7 +154,7 @@ To test a feature, you may need to use sensitive data like credentials which sho
               username: admin
               password: s3crEtPas$
 
-2. Modify your scenario with variables in format ``<Secret:variable.path>``
+2. Modify your scenario with variables in format `<Secret:variable.path>``.
 
    .. code-block:: gherkin
 
@@ -169,19 +169,19 @@ To test a feature, you may need to use sensitive data like credentials which sho
 Built-in Scenarios
 ------------------
 
-To configure predefined integrations you can use one of built-in scenario.
+To configure predefined integrations, you can use one of the built-in scenarios.
 
-1. To use scenarios you need to install extension
+1. To use scenarios, install the extension:
 
    .. code-block:: bash
 
       composer require oro/e2e-tests --dev -n
 
-2. Copy ``.behat-secrets.yml.dist`` to ``.behat-secrets.yml`` in the application root and modify necessary credentials to actual one.
+2. Copy ``.behat-secrets.yml.dist`` to ``.behat-secrets.yml`` in the application root and modify the necessary credentials to the actual one.
 
 3. Check available scenarios in ``vendor/oro/e2e-tests/Tests/Behat/Features/``
 
-4. Run scenario
+4. Run the following scenario:
 
    .. code-block:: bash
 

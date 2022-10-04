@@ -193,5 +193,14 @@ To configure a system mailbox globally:
 
 10. Click **Save Settings**.
 
+
+.. admonition:: Business Tip
+
+   A lot of industries are getting a digital makeover. Take a look at how eCommerce fits into the |manufacturing digital transformation| landscape.
+
+
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

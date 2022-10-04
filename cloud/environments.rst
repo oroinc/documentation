@@ -81,3 +81,12 @@ The following table outlines what features are included in different types of Or
   "Live data","x"," "," "," "
 
 .. note:: To use a different default configurations based on the application environment type, please see the :ref:`Environment Type Based Application Configuration <environment-type-based-configuration>` topic.
+
+
+.. admonition:: Business Tip
+
+   What makes smart manufacturing important? Explore the key advantages and challenges of |manufacturing digital transformation| in our guide.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

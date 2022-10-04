@@ -11,6 +11,12 @@ OroCloud Documentation
 .. include:: overview.rst
    :start-after: begin_overview
 
+.. admonition:: Business Tip
+
+    What are the |top B2B platforms|? Review and compare B2B eCommerce offerings on our platform comparison page.
+
+
+
 .. toctree::
    :includehidden:
    :titlesonly:
@@ -27,3 +33,5 @@ OroCloud Documentation
    support
 
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

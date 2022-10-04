@@ -145,6 +145,12 @@ Planned Maintenance Windows
 
 Maintenance windows for the production OroCloud environment are planned and scheduled ahead of time. If the maintenance is initiated by the OroCloud service team and involves only infrastructure changes, the alerts are muted.
 
+
+.. admonition:: Business Tip
+
+   What is the future of |business to business eCommerce|? Learn about the latest trends and commerce technologies in our complete guide.
+
+
 **What’s Next**
 
 * The typical process of OroCloud :ref:`onboarding <cloud_onboarding>`, including the secure certificate exchange and guided access to the necessary tools
@@ -152,4 +158,7 @@ Maintenance windows for the production OroCloud environment are planned and sche
 * Technical :ref:`support <cloud_support>` service details (exclusions, priorities, SLA, etc).
 
 .. include:: /include/include-links-cloud.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

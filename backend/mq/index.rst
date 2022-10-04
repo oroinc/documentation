@@ -159,6 +159,9 @@ We can also move the specified options to the ``parameters.yml``:
         message_queue_transport_config: { host: 'localhost', port: '5672', user: 'guest', password: 'guest', vhost: '/' }
 
 
+.. admonition:: Business Tip
+
+    Looking for the |open-source B2B eCommerce platform|? Our platform comparison page can help you with the decision-making.
 
 
 .. toctree::
@@ -187,3 +190,7 @@ We can also move the specified options to the ``parameters.yml``:
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+

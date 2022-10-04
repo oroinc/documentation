@@ -29,3 +29,11 @@ The OroCloud application maintenance tool helps you to run and control complex m
    faq
 
 * :ref:`Technical support <cloud_support>` service details (exclusions, priorities, SLA, etc).
+
+
+.. admonition:: Business Tip
+
+    Curious about the latest digital eCommerce trends? Learn more about the |wholesale B2B marketplace|, its unique characteristics, and how it can work for you.
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

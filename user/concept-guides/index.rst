@@ -14,6 +14,11 @@ Complementary to the how-to approach of the Back-office section of the documenta
 
 .. note:: When browsing documentation, be on the lookout for  |CommerceIcon|  and |CRMIcon|  application icons on the top right. They indicate whether described features and concepts are available in OroCRM, OroCommerce, or both applications.
 
+.. admonition:: Business Tip
+
+    Want to comprehensively evaluate your |B2B eCommerce platform| options? Take a look at our guide on platform comparison.
+
+
 .. raw:: html
 
     <ul class="tag-cloud">
@@ -74,6 +79,9 @@ Complementary to the how-to approach of the Back-office section of the documenta
    Search Functions <search/index>
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
 
 

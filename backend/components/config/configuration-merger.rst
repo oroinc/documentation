@@ -1,27 +1,22 @@
 :title: OroPlatform, Configuration Merger, Oro Config Component
 
 .. meta::
-   :description: This class provides a way to merge configurations with equal name from any configuration groups.
+   :description: This class provides a way to merge configurations with the same from any configuration group.
 
 .. _dev-components-configuration-merger:
 
 Configuration Merger
 ====================
 
-This class provides a way to merge configurations with equal name from any configuration groups and way to extend one
-configuration from other configuration. Also exists mechanism to replace some nodes of original configuration by nodes
-of configuration which will be extended from this config. For this case you need to set node ``replace`` with list of
-nodes, which you want to replace, on the same level of this nodes.
+This class provides a way to merge configurations with the same name from any configuration group and extend one
+configuration from another. It also offers a mechanism to replace some nodes of the original configuration with nodes of the configuration that will be extended from this configuration. For this case, set the node ``replace`` with a list of nodes that you want to replace on the same level as these nodes.
 
 Initialization
-~~~~~~~~~~~~~~
+--------------
 
-For creating new instance of merger you need list of some keys. It will be used as sorting order for merging all
-configuration from groups which have equal name.
+To create a new instance of a merge, you need a list of keys. It will be used as a sorting order for merging all configurations from groups with the same name.
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\ActionBundle\DependencyInjection\CompilerPass;
 
@@ -42,16 +37,12 @@ configuration from groups which have equal name.
     }
     ...
 
-Using example
-~~~~~~~~~~~~~
+Usage
+-----
 
-Please imagine that you need to load configurations from ``Resources\config\acme.yml`` file located in any bundle in your
-application and merge them to final configurations. For example one bundle, which will be loaded last, override some
-part of configuration from other bundle. All process to load this configurations shows below.
+Suppose you need to load configurations from the ``Resources\config\acme.yml`` file located in any application bundle and merge them into the final configurations. The bundle to be loaded last overrides some part of the configuration from another bundle. All processes to load these configurations shows are illustrated below.
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\ActionBundle\DependencyInjection\CompilerPass;
 
@@ -88,10 +79,11 @@ part of configuration from other bundle. All process to load this configurations
     }
 
 Examples
-~~~~~~~~
+--------
 
-Merge configurations with the same name from two bundles (use append strategy).
-Order of bundles loading: `FirstBundle`, `SecondBundle`.
+**Merge configurations with the same name from two bundles (use append strategy).**
+
+Order of bundles: `FirstBundle`, `SecondBundle`.
 
 .. code-block:: yaml
 
@@ -123,8 +115,7 @@ Result:
              sub_array_param2: value2
              sub_array_param3: value3
 
-Extends one configuration from other configuration (use append strategy)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Extend one configuration from another configuration (use append strategy)**
 
 .. code-block:: yaml
 
@@ -161,10 +152,9 @@ Result:
             sub_array_param3: value3
         new_param: new_value
 
-Merge configurations with the same name from two bundles and extends one configuration from other configuration (use append strategy)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Merge configurations with the same name from two bundles and extends one configuration from another configuration (use append strategy)**
 
-Order of bundles loading: ``FirstBundle``, ``SecondBundle``.
+Order of bundles: ``FirstBundle``, ``SecondBundle``.
 
 .. code-block:: yaml
 
@@ -211,8 +201,7 @@ Result:
              sub_array_param4: value4
          new_param: new_value
 
-Extends one configuration from other configuration (use append and replace strategies)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Extends one configuration from another configuration (use append and replace strategies)**
 
 .. code-block:: yaml
 
@@ -248,10 +237,9 @@ Result:
         new_param: new_value
 
 
-Merge configurations with the same name from two bundles and extends one configuration from other configuration (use append and replace strategy)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Merge configurations with the same name from two bundles and extend one configuration from another configuration (use append and replace strategy)**
 
-Order of bundles loading: ``FirstBundle``, ``SecondBundle``.
+Order of bundles: ``FirstBundle``, ``SecondBundle``.
 
 .. code-block:: yaml
 

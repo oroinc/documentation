@@ -93,9 +93,20 @@ In order to sync your integration:
 
    .. image:: /user/img/system/integrations/mailchimp/o_manage_integrations_orocrm_schedule_sync.png
 
+
+
+.. admonition:: Business Tip
+
+   Technologies drive digital transformation in critical industries such as manufacturing. Learn how eCommerce can accelerate |digital transformation in manufacturing|.
+
+
+
 **Related Topic**
 
 * :ref:`Sending Email Campaign via Mailchimp <user-guide-mailchimp-campaign>`
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

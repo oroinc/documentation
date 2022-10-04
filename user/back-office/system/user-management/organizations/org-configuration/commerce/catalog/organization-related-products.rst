@@ -62,5 +62,13 @@ To update the related products settings per organization:
 
 6. Click **Save**.
 
+.. admonition:: Business Tip
+
+   How can technological advancements help your manufacturing company? Read our guide with four |digital transformation examples in manufacturing|.
+
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

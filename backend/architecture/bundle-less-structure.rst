@@ -6,24 +6,23 @@
 .. _dev-backend-architecture-bundle-less-structure:
 
 Bundle-less Structure
-======================
+=====================
 
-You can organize an OroPlatform based application code within :ref:`Symfony bundles <how-to-create-new-bundle>` or plain directories. Bundle-less directory structure support was added in OroPlatform v5.1 to follow the Symfony best practices and lower the entry level for new developers.
+You can organize an OroPlatform-based application code within :ref:`Symfony bundles <how-to-create-new-bundle>` or plain directories. Bundle-less directory structure support was added to OroPlatform v5.1 to follow the Symfony best practices and lower the entry level for new developers.
 This guide overviews the bundle-less structure and explains how to migrate the application code from the bundles-based to bundle-less structure.
 
-.. note:: The use of **bundle-less structure** is optional. However, for individual customization and expansion of Oro functionality or in other cases when creation a new bundle is impractical, a bundle-less structure can be used.
+.. note:: The use of **bundle-less structure** is optional. However, you can use a bundle-less structure for individual customization and expansion of Oro functionality or when creating a new bundle is impractical.
 
-The *bundle-less structure* includes the following (configuration and directory structure changes) application structure changes.
+The *bundle-less structure* includes the application structure changes outlined below (configuration and directory).
 
-Application-level structure Changes
+Application-level Structure Changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
 
-
     oro-application/
     ├── assets/
-    |   |── your-assets-dir                             # Here we can store our (scss, js, image, fonts) resources.
+    |   |── your-assets-dir                             # Here we can store the (scss, js, image, fonts) resources.
     |   └── ...
     ├── config/
     │   ├── batch_jobs                                  # Import and Export Configuration.
@@ -131,7 +130,7 @@ Application-level structure Changes
 Moving Existing Bundle to Bundle-less Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to port an existing bundle to a bundle-less structure, you must update the directory structure to the one shown above. There is no automatic tool for this update, so you must move your code following these guidelines:
+To port an existing bundle to a bundle-less structure, you must update the directory structure to the one shown above. There is no automatic tool for this update, so you must move your code following these guidelines:
 
 Migrations
 """"""""""
@@ -263,7 +262,7 @@ Workflows
 
     {BundleDir}/Resources/config/oro/workflows.yml -> config/oro/workflows/workflows.yml
 
-.. important:: All application-level workflows can be stored in separate directories, but must be registered in the /config/oro/workflows.yml file (via an import directive).
+.. important:: All application-level workflows can be stored in separate directories but must be registered in the /config/oro/workflows.yml file (via an import directive).
 
 
 Processes
@@ -376,7 +375,7 @@ System Configurations
 Extension and Configuration Moving
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Create Extension and Configuration classes in ``/src/Configuration``
+1. Create Extension and Configuration classes in ``/src/Configuration``.
 
 .. code-block:: php
 
@@ -400,7 +399,7 @@ Extension and Configuration Moving
         }
     }
 
-2. Register the extension in ``AppKernel::build``
+2. Register the extension in ``AppKernel::build``.
 
 .. code-block:: php
 
@@ -415,19 +414,23 @@ Extension and Configuration Moving
 Themes & Layouts
 ~~~~~~~~~~~~~~~~
 
-1. Assets for themes should be moved to ``/src/assets/{your_theme_dir}/``
+1. Assets for themes should be moved to ``/src/assets/{your_theme_dir}/``.
 2. Admin theme configuration:
-    - ``/config/oro/assets.yml``
-    - ``/config/oro/jsmodules.yml``
-3. Storefront Themes and layouts should be placed in ``/templates/layouts/{your_theme_dir}/``
-    -  Themes configuration: ``/templates/layouts/{your_theme_dir}/theme.yml``
-    -  Layout assets configuration: ``/templates/layouts/{your_theme_dir}/config/assets.yml``
-    -  Layout theme configuration: ``/templates/layouts/{your_theme_dir}/config/config.yml``
+
+   - ``/config/oro/assets.yml``
+   - ``/config/oro/jsmodules.yml``
+
+3. Storefront Themes and layouts should be placed in ``/templates/layouts/{your_theme_dir}/``.
+
+   -  Themes configuration: ``/templates/layouts/{your_theme_dir}/theme.yml``
+   -  Layout assets configuration: ``/templates/layouts/{your_theme_dir}/config/assets.yml``
+   -  Layout theme configuration: ``/templates/layouts/{your_theme_dir}/config/config.yml``
 
 Tests
 ~~~~~
 
-1. Unit tests should be placed in ``/src/Test/Unit/``
-2. Functional tests should be placed in ``/src/Test/Functional/``
-3. Behat tests should be placed in ``/src/Test/Behat/``
-    - configuration for Behat services: ``/config/oro/behat_services.yml``
+1. Unit tests should be placed in ``/src/Test/Unit/``.
+2. Functional tests should be placed in ``/src/Test/Functional/``.
+3. Behat tests should be placed in ``/src/Test/Behat/``.
+
+   - Configuration for Behat services: ``/config/oro/behat_services.yml``

@@ -1,23 +1,21 @@
 :title: OroPlatform, Cumulative Resource Loader, Oro Config Component
 
 .. meta::
-   :description: This resource type provides a way to create instance of CumulativeConfigLoader
+   :description: This resource type provides a way to create an instance of CumulativeConfigLoader
 
 .. _dev-components-config-resource-loader-factory:
 
 Resources Loader Factory
 ========================
 
-This class provides methods for creating an instance of **CumulativeConfigLoader** which allows you to load configuration files that can be located in any bundle or application level.
+This class provides methods for creating an instance of **CumulativeConfigLoader**, which allows you to load configuration files from any bundle or application level.
 
 Specification
 ~~~~~~~~~~~~~
 
-Resources Loader Factory provides following methods.
+Resources Loader Factory provides methods ``CumulativeConfigLoaderFactory::create('acme_data' and  'Resources/config/oro/acme.yml')``.
 
-    - ``CumulativeConfigLoaderFactory::create('acme_data', 'Resources/config/oro/acme.yml')``
-
-This methods preparing instance of **CumulativeConfigLoader** with configured configuration loaders.
+This method prepares an instance of **CumulativeConfigLoader** with configured configuration loaders.
 Under the hood, the factory transforms the incoming path to configuration files with the ability to load configs from the application layer.
 
 .. code-block:: none
@@ -37,15 +35,12 @@ Under the hood, the factory transforms the incoming path to configuration files 
         ...
    ]
 
-
 Usage Example
 ~~~~~~~~~~~~~
 
 The following example shows how to create a new **CumulativeConfigLoader** instance using the ``CumulativeConfigLoaderFactory::create('acme_data', 'Resources/config/oro/acme.yml')`` static factory method on a simple configuration provider:
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\AcmeBundle\Configuration;
 
@@ -75,6 +70,3 @@ The following example shows how to create a new **CumulativeConfigLoader** insta
              );
          }
     }
-
-
-

@@ -54,3 +54,13 @@ The following table describes which options are available for each status and ho
 +------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
 | Deleted                | Click **Undelete** to restore the quote.                                                                                                          | *        | *     | Draft                 |
 +------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-----------------------+
+
+
+
+
+.. admonition:: Business Tip
+
+   Learn how digitization improves operations, customer experiences, and sales by exploring |digital transformation examples in manufacturing|.
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

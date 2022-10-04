@@ -109,9 +109,17 @@ message would likely be processed by ``\Oro\Component\MessageQueue\Client\NoopMe
    reset-container
 
 
+.. admonition:: Business Tip
+
+   Key industries like manufacturing are undergoing digital revolution. Find out how eCommerce helps drive |digital transformation in manufacturing|.
+
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 
 
 
