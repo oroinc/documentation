@@ -34,6 +34,8 @@ Read more in the following topics below:
   * :ref:`How to Configure and Apply Custom Permissions to an Entity <backend-security-bundle-permissions>`
   * :ref:`How to Work with Configurable Permissions <backend-security-bundle-configurable-permissions>`
 
+* :ref:`Global View Entities <backend-security-bundle-global-view-entities>`
+
 .. toctree::
    :titlesonly:
    :hidden:
@@ -47,3 +49,4 @@ Read more in the following topics below:
    access-rules
    custom-listeners
    example
+   global-view-entities

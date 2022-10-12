@@ -31,6 +31,8 @@ Related Documentation
   * :ref:`How to Configure and Apply Custom Permissions to an Entity <backend-security-bundle-permissions>`
   * :ref:`How to Work with Configurable Permissions <backend-security-bundle-configurable-permissions>`
 
+* :ref:`Global View Entities <backend-security-bundle-global-view-entities>`
+
 .. tip::
         Take a look an how ACL works in the application in the :ref:`Access Levels and Ownership <backend-security-bundle-example>` topic which illustrates the hierarchy of two sample organizations and access setup within them.
 
