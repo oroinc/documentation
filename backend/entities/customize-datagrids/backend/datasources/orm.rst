@@ -3,13 +3,11 @@
 ORM Datasource
 ===============
 
-This datasource provides an adapter to allow accessing data from the doctrine ORM using the doctrine query builder.
-You can configure a query using the ``query`` param under the source tree. This query will be converted via |YamlConverter| to doctrine ``QueryBuilder`` object.
+This datasource provides an adapter to access data from the doctrine ORM using the doctrine query builder. You can configure a query using the ``query`` param under the source tree. This query will be converted via |YamlConverter| to the doctrine ``QueryBuilder`` object.
 
 **Example**
 
 .. code-block:: yaml
-
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -25,12 +23,11 @@ You can configure a query using the ``query`` param under the source tree. This 
 Important Notes
 ---------------
 
-By default, all datagrids that use ORM datasource are marked by the |HINT_PRECISE_ORDER_BY| query hint. This guarantees that rows are sorted the same way independently of the state of SQL server and the values of OFFSET and LIMIT clauses. More details are available in the |Queries Limits| section of PostgreSQL documentation.
+By default, all datagrids that use ORM datasource are marked by the |HINT_PRECISE_ORDER_BY| query hint. This guarantees that rows are sorted the same way independently of the state of the SQL server and the values of OFFSET and LIMIT clauses. More details are available in the |Queries Limits| section of PostgreSQL documentation.
 
 If you need to disable this behavior for your datagrid, use the following configuration:
 
 .. code-block:: yaml
-
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -51,24 +48,22 @@ You can modify query configuration from PHP code, for example from the datagrid 
 
 .. code-block:: php
 
-
     $query = $config->getOrmQuery();
     $rootAlias = $query->getRootAlias();
     $query->addSelect($rootAlias . '.myField');
 
-In additional to query modification methods, the |OrmQueryConfiguration| contains several useful methods like:
+In addition to query modification methods, the |OrmQueryConfiguration| contains several valuable methods:
 
 - ``getRootAlias()`` - Returns the FIRST root alias of the query.
 - ``getRootEntity($entityClassResolver = null, $lookAtExtendedEntityClassName = false)`` - Returns the FIRST root entity of the query.
 - ``findRootAlias($entityClass, $entityClassResolver = null)`` - Tries to find the root alias for the given entity.
-- ``getJoinAlias($join, $conditionType = null, $condition = null)`` - Returns an alias for the given join. If the query does not contain the specified join, its alias will be generated automatically. This might be helpful if you need to get an alias to extended association that will be joined later.
+- ``getJoinAlias($join, $conditionType = null, $condition = null)`` - Returns an alias for the given join. If the query does not contain the specified join, its alias will be generated automatically. This might be helpful if you need to get an alias to extend the association that will be joined later.
 - ``convertAssociationJoinToSubquery($joinAlias, $columnAlias, $joinEntityClass)`` - Converts an association based join to a subquery. This can be helpful in case of performance issues with a datagrid.
 - ``convertEntityJoinToSubquery($joinAlias, $columnAlias)`` - Converts an entity based join to a subquery. This can be helpful in case of performance issues with a datagrid.
 
 Example of ``convertAssociationJoinToSubquery`` usage in a datagrid listener:
 
 .. code-block:: none
-
 
     public function onPreBuild(PreBuild $event)
     {
@@ -91,7 +86,6 @@ The original query:
 
 .. code-block:: yaml
 
-
     query:
         select:
             - g.name as groupName
@@ -113,7 +107,7 @@ The converted query:
         from:
             - { table: Acme\Bundle\DemoBundle\Entity\User, alias: u }
 
-Please investigate this class to find out all other features.
+Make sure you investigate this class to find out all the other features.
 
 Add Query Hints
 ^^^^^^^^^^^^^^^
@@ -121,7 +115,6 @@ Add Query Hints
 The following example shows how |Doctrine query hints| can be set:
 
 .. code-block:: yaml
-
 
     datagrids:
         DATAGRID_NAME_HERE:
@@ -140,7 +133,6 @@ If you need to set the hint's value, use the following syntax:
 
 .. code-block:: yaml
 
-
     datagrids:
         DATAGRID_NAME_HERE:
             source:
@@ -158,11 +150,9 @@ If you need to set the hint's value, use the following syntax:
                 hints:
                     - { name: HINT_CUSTOM_OUTPUT_WALKER, value: Gedmo\Translatable\Query\TreeWalker\TranslationWalker }
 
-
-Please keep in mind that ORM datasource uses `Query Hint Resolver` service to handle hints. If you create your own query walker and wish to use it in a grid, register it in the Query Hint Resolver. For example, hint ``HINT_TRANSLATABLE`` is registered as an alias for the translation walker and as result the following configurations are equal:
+Please keep in mind that ORM datasource uses the `Query Hint Resolver` service to handle hints. If you create your own query walker and wish to use it in a grid, register it in the Query Hint Resolver. For example, hint ``HINT_TRANSLATABLE`` is registered as an alias for the translation walker, and as a result, the following configurations are equal:
 
 .. code-block:: yaml
-
 
     hints:
         - { name: HINT_CUSTOM_OUTPUT_WALKER, value: Gedmo\Translatable\Query\TreeWalker\TranslationWalker }

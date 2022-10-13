@@ -3,8 +3,8 @@
 References in YAML Configuration
 ================================
 
-You can use a static method call, a service method call and class constant access in YAML datagrid configuration.
-These references will be called by `SystemAwareResolver` while building the datagrid in datagrid manager.
+You can use a static method call, a service method call, and class constant access in the YAML datagrid configuration.
+These references will be called by `SystemAwareResolver` while building the datagrid in the datagrid manager.
 
 References types
 ----------------
@@ -25,7 +25,7 @@ Static Method Call
 
    Acme\Bundle\DemoBundle\SomeClass::testStaticCall
 
-Class name can be defined in container's parameters, or specified directly.
+The class name can be defined in the container's parameters or specified directly.
 
 Constant
 --------
@@ -34,9 +34,9 @@ Constant
 
    Acme\Bundle\DemoBundle\SomeClass::TEST
 
-PHP is_callable used to determine if it is callable or should be treated as constant.
+PHP is_callable is used to determine if it is callable or should be treated as constant.
 
-If it is not callable and no constant exists with such name in the class, the value becomes unchanged.
+The value becomes unchanged if it is not callable and no constant exists with such a name in the class.
 
 Service Injection
 -----------------
@@ -44,4 +44,3 @@ Service Injection
 .. code-block:: none
 
    some_key: @some.serviceID
-

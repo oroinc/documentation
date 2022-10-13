@@ -5,7 +5,7 @@
 Array Datasource
 ================
 
-This datasource provides the ability to set data for the datagrid from thearray.
+This datasource provides the ability to set data for the datagrid from the array.
 
 **Example**
 

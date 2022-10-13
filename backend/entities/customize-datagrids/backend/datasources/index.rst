@@ -3,7 +3,7 @@
 Datasources
 ===========
 
-OroPlatform gives you a wide variety of ways to prepare and supply data to a datagrid by encapsulating all data access in a *datasource* object. Datagrids can be configured to retrieve data from a PHP array, Doctrine ORM, a search engine or any other source by using datasources that implement `DatasourceInterface`.
+OroPlatform gives you a wide variety of ways to prepare and supply data to a datagrid by encapsulating all data access in a *datasource* object. Datagrids can be configured to retrieve data from a PHP array, Doctrine ORM, a search engine, or any other source by using datasources that implement `DatasourceInterface`.
 
 **Supported Types**
 
@@ -86,7 +86,7 @@ Add the service definition to ``services.yml``:
             - { name: oro_datagrid.datasource, type: acme_custom }
 
 
-Now that you have created your custom datasource type, you can use it in any datagrid. In the configuration of the datagrid tells OroPlatform to use this datasource via the `type` parameter under the `source` node:
+Now that you have created your custom datasource type, you can use it in any datagrid. The configuration of the datagrid tells OroPlatform to use this datasource via the `type` parameter under the `source` node:
 
 .. code-block:: yaml
 

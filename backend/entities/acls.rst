@@ -7,16 +7,14 @@ Using ACLs you can granularly grant access to your entities. Doing so requires t
 
 #. :ref:`Create access control lists for all available actions <coobook-entities-acl-create>`.
 
-#. :ref:`Add access checks<coobook-entities-acl-check>` to where your entities are displayed or
-   manipulated.
+#. :ref:`Add access checks<coobook-entities-acl-check>` to where your entities are displayed or manipulated.
 
 .. _coobook-entities-acl-enable:
 
 Activating ACL Checks on your Entities
 --------------------------------------
 
-In order to have your entity available in the admin UI to be able to assign permissions to your
-users you have to enable ACLs for these entities using the ``@Config`` annotation:
+To have your entity available in the admin UI to be able to assign permissions to your users, you have to enable ACLs for these entities using the ``@Config`` annotation:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Entity/Task.php
@@ -41,13 +39,11 @@ users you have to enable ACLs for these entities using the ``@Config`` annotatio
     {
     }
 
-After you have done this and have cleared the cache you can toggle all kinds of permission checks
-(``CREATE``, ``EDIT``, ``DELETE``, ``VIEW``, and ``ASSIGN``) in the user role management interface.
+After you have done this and have cleared the cache, you can toggle all kinds of permission checks (``CREATE``, ``EDIT``, ``DELETE``, ``VIEW``, and ``ASSIGN``) in the user role management interface.
 
 .. tip::
 
-    You can use the optional ``group_name`` attribute to group entities by application. The value
-    of this attribute is used to split the configured access control list into application scopes.
+    You can use the optional ``group_name`` attribute to group entities by application. The value of this attribute is used to split the configured access control list into application scopes.
 
 .. _coobook-entities-acl-create:
 
@@ -112,14 +108,9 @@ You have two options to define your custom access control lists:
            }
        }
 
-   Using the ``@Acl`` annotation does not only create new access control lists to which you can
-   refer in other parts of your code it will also trigger the access decision manager when your
-   actions are accessed by users and thus protect them from being accessed without the needed
-   permissions.
+   Using the ``@Acl`` annotation does not only create new access control lists to which you can refer in other parts of your code, it also triggers the access decision manager when your actions are accessed by users and thus protect them from being accessed without the needed permissions.
 
-#. If you do not want to protect any controller methods or if you prefer to keep the definition of
-   your ACLs separated from the application code, you can define them using some YAML config in a
-   file named ``acls.yml``:
+#. If you do not want to protect any controller methods or if you prefer to keep the definition of your ACLs separated from the application code, you can define them using some YAML config in a file named ``acls.yml``:
 
    .. code-block:: yaml
       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
@@ -147,9 +138,7 @@ You have two options to define your custom access control lists:
 
 .. sidebar:: Security Actions that Are not Related to an Entity
 
-    You can also create access control lists that are only used to protect certain actions that are
-    not related to an entity. To do that just set the type of the ACL to ``action`` instead of
-    ``entity``:
+    You can also create access control lists that are only used to protect specific actions unrelated to an entity. To do that, set the type of the ACL to ``action`` instead of ``entity``:
 
     .. code-block:: php
         :caption: src/Acme/Bundle/DemoBundle/Controller/PageController.php
@@ -173,8 +162,7 @@ You have two options to define your custom access control lists:
             }
         }
 
-    When configuring the ACL using the YAML config format, you also have to set the controller to
-    bind the ACL to using the ``bindings`` option:
+    When configuring the ACL using the YAML config format, you also have to set the controller to use the ``bindings`` option to bind the ACL:
 
     .. code-block:: yaml
        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
@@ -197,12 +185,9 @@ You have two options to define your custom access control lists:
 Performing Access Checks
 ------------------------
 
-Once you have configured the ACLs you can protect all parts of your application. Anywhere in your
-PHP code you can use the ``isGranted()`` method of the ``security.authorization_checker`` service
-(which is an instance of the |Symfony AuthorizationCheckerInterface|):
+Once you have configured the ACLs, you can protect all application parts. You can use the ``isGranted()`` method of the ``security.authorization_checker`` service (which is an instance of the |Symfony AuthorizationCheckerInterface|) anywhere in your PHP code:
 
 .. code-block:: php
-
 
     $authorizationChecker = $this->get('security.authorization_checker');
 
@@ -214,7 +199,6 @@ You can set the second parameter to check access on Object level (with Access Le
 
 .. code-block:: php
 
-
     $taskEntity = $this->getTask();
 
     $authorizationChecker = $this->get('security.authorization_checker');
@@ -223,11 +207,9 @@ You can set the second parameter to check access on Object level (with Access Le
          // do something when the user is granted permissions for the acme_task_edit ACL of the entity in $taskEntity
     }
 
-In case if you does not have proper ACL annotation, you can set the first parameter as the
-permission name you want to check:
+When you do not have proper ACL annotation, you can set the first parameter as the permission name you want to check:
 
 .. code-block:: php
-
 
     $taskEntity = $this->getTask();
 
@@ -237,15 +219,14 @@ permission name you want to check:
         // do something when the user is granted EDIT permission for the $taskEntity
     }
 
-This example will work the same as before. It will check an EDIT permission for the Task instance object.
+This example will work the same as before. It will check EDIT permission for the Task instance object.
 
-However, there are ways to make this checks in different parts of your application:
+However, there are ways to perform these checks in different parts of your application:
 
 Hiding Menu Items
 ~~~~~~~~~~~~~~~~~
 
-Use the ``acl_resource_id`` option to hide navigation items from users who are not granted to access
-the action being linked. The value of this option is the name of the ACL to check for:
+Use the ``acl_resource_id`` option to hide navigation items from users who are not granted access to the linked action. The value of this option is the name of the ACL to check for:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
@@ -257,12 +238,10 @@ the action being linked. The value of this option is the name of the ACL to chec
                 route: acme_task_index
                 acl_resource_id: acme_task_view
 
-Protecting Controllers Refering to Existing ACLs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Protecting Controllers Referring to Existing ACLs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As :ref:`shown above <cookbook-entity-acl-controller>` you can define new ACLs and protect your
-controllers with them in a single step using the ``@Acl`` annotation. However, you can also refer
-to an existing access control list using the ``@AclAncestor`` annotation:
+You can define new ACLs as :ref:`shown above <cookbook-entity-acl-controller>` and protect your controllers with them in a single step using the ``@Acl`` annotation. However, you can also refer to an existing access control list using the ``@AclAncestor`` annotation:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
@@ -287,8 +266,7 @@ to an existing access control list using the ``@AclAncestor`` annotation:
 Show Parts of Templates Based on Permissions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Inside your templates you can use the ``is_granted()`` Twig function to check for certain
-permissions to hide parts of your views for users who do not have the required permissions:
+Inside your templates, you can use the ``is_granted()`` Twig function to check for certain permissions to hide parts of your views for users who do not have the required permissions:
 
 .. code-block:: html+jinja
    :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/update.html.twig
@@ -299,42 +277,38 @@ permissions to hide parts of your views for users who do not have the required p
         {% endif %}
     {% endblock %}
 
-In this example we check access by ACL annotation info without Object to test. So, ``is_granted`` will return
-true as result if user have any access level to EDIT permission to Task entity.
+In this example, we check access by ACL annotation info without an Object to test. So, ``is_granted`` will return true if the user has any access level to EDIT permission to the Task entity.
 
-In case if you want to check access more deeply, you can set the entity instance as the second parameter of
-``is_granted()`` function:
+If you want to perform a deeper access check, you can set the entity instance as the second parameter of the ``is_granted()`` function:
 
 .. code-block:: html+jinja
    :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/update.html.twig
 
     {% block someBlock %}
-        {# an `entity` variable contains an Test entity instance #}
+        {# an `entity` variable contains a Test entity instance #}
         {% if is_granted('acme_task_edit', entity) %}
             Some info if access is granted
         {% endif %}
     {% endblock %}
 
-At this example, will be checked access level for the given object instance.
+This example illustrates the check of the access level for the given object instance.
 
-In case if you have no an ACL annotation, you can set the permission name directly as the first parameter:
+If you have no ACL annotation, you can set the permission name directly as the first parameter:
 
 .. code-block:: html+jinja
    :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/update.html.twig
 
     {% block someBlock %}
-        {# an `entity` variable contains an Test entity instance #}
+        {# an `entity` variable contains a Test entity instance #}
         {% if is_granted('EDIT', entity) %}
             Some info if access is granted
         {% endif %}
     {% endblock %}
 
-
 Restrict Access to Data Grid Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In a data grid you can protect the entire result set (to not show results if the user is not
-granted access and the action embedding the grid accidentally was not protected):
+In a data grid, you can protect the entire result set (not to show results if the user is not granted access and the action embedding the grid was not protected by accident):
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
@@ -349,8 +323,7 @@ granted access and the action embedding the grid accidentally was not protected)
 Hide Unaccessible Grid Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Also use the ``acl_resource`` option to hide actions in a data grid the user does not have access
-to:
+You can also use the ``acl_resource`` option to hide actions in a data grid the user does not have access to:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
@@ -376,7 +349,7 @@ to:
 Check Access on ORM Queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can protect your Doctrine ORM query with ``apply`` method of ``oro_security.acl_helper`` service.
+You can protect your Doctrine ORM query with the ``apply`` method of the ``oro_security.acl_helper`` service.
 
 .. code-block:: php
 
@@ -407,11 +380,9 @@ You can protect your Doctrine ORM query with ``apply`` method of ``oro_security.
         }
     }
 
-As result, the query will be modified and the result data set will contain only the records user can see.
+As a result, the query will be modified, and the result data set will contain only the records the user can see.
 
-By default, VIEW permission used as the second parameter. If you want to check another permission, you can
-set it as the second parameter of ``apply`` method.
-
+By default, VIEW permission is used as the second parameter. If you want to check another permission, you can set it as the second parameter of the ``apply`` method.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

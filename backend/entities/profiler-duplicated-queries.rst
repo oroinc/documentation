@@ -5,7 +5,7 @@ Profiler of Duplicated Queries
 
 Profiler gathers statistical information about the Doctrine queries that have been executed during a request.
 
-Right now the bundle generates statistical information about:
+The bundle generates statistical information about:
 
 - Queries with identical parameters
 - Queries with different parameters

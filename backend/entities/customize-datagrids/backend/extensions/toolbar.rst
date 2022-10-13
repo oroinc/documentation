@@ -25,10 +25,8 @@ Toolbar options:
 - `hide` - will hide toolbar. Can take values true or false.
 - `pageSize` - array, next parameters could be included:
 
-  - `hide` - hide or show number of items per page selector
+  - `hide` - hide or show the number of items per page selector
   - `items` - items per page
   - `default_per_page` - item per page by default
 
-- `pagination` - show or hide pagination block as well as off the paginator extension.
-
-
+- `pagination` - show or hide the pagination block and turn off the paginator extension.

@@ -8,28 +8,22 @@
 Emails
 ======
 
+Once the ORO application is installed, you can access it at the following link
+
 .. index::
-    single: E-Mails
+    single: Emails
 
 Email Templates
 ---------------
 
-Communicating with customers is an important part of every business. In OroPlatform, an email
-address is represented by the ``Oro\Bundle\EmailBundle\Entity\EmailAddress`` class.
+Communicating with customers is an integral part of every business. In OroPlatform, an email address is represented by the ``Oro\Bundle\EmailBundle\Entity\EmailAddress`` class.
 
-When creating emails, your may reuse the text that is frequently sent for
-a certain purpose. For this, they can create templates and reuse them as needed. Besides letting
-the users create and manage templates through the UI, every bundle can provide their own email
-templates.
+When creating emails, you can reuse frequently sent text. For this, they can create templates and reuse them as needed. In addition to enabling the users to create and manage templates through the UI, every bundle can provide its own email templates.
 
-Providing e-mail templates is nothing more than creating Twig templates for the desired format
-(namely HTML or plaintext) in which you can use some pre-defined placeholders to define template
-metadata. Then you create a data fixture that implements the ``AbstractEmailFixture`` class. This
-class provides a ``getEmailsDir()`` method which should return the path of the directory that
-contains your templates:
+To provide mail templates, create Twig templates for the desired format (namely HTML or plaintext) in which you can use pre-defined placeholders to define template metadata. Then you create a data fixture that implements the ``AbstractEmailFixture`` class. This class provides a ``getEmailsDir()`` method, which should return the path of the directory that contains your templates:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/EmailTemplatesFixture.php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/EmailTemplatesFixture.php
 
     namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
 
@@ -51,7 +45,7 @@ contains your templates:
 The format of the email template is determined based on the filename extension you use:
 
 =========================  =============
-Extension                  E-Mail Format
+Extension                  Email Format
 =========================  =============
 ``.html.twig``, ``.html``  HTML
 ``.txt.twig``, ``.txt``    Plaintext
@@ -62,16 +56,15 @@ HTML is used as the default format if none could be derived from the filename ex
 Template Metadata
 ~~~~~~~~~~~~~~~~~
 
-Additionally to the e-mail body, the template must contain some special parameters to add some
-metadata to the template:
+Additionally to the email body, the template must contain some particular parameters to add metadata to the template:
 
 +-----------------+-----------+------------------------------------------------------------------------+
 | Parameter       | Mandatory | Description                                                            |
 +=================+===========+========================================================================+
-| ``@entityName`` | yes       | The fully-qualified class name of the e-mail owner entity (for example |
+| ``@entityName`` | yes       | The fully-qualified class name of the email owner entity (for example  |
 |                 |           | ``Acme\Bundle\DemoBundle\Entity\Applicant``).                          |
 +-----------------+-----------+------------------------------------------------------------------------+
-| ``@subject``    | yes       | The e-mail subject.                                                    |
+| ``@subject``    | yes       | The email subject.                                                     |
 +-----------------+-----------+------------------------------------------------------------------------+
 | ``@name``       | no        | The template name that is visible in the UI (the filename without the  |
 |                 |           | extension is used when this parameter is not set).                     |
@@ -90,9 +83,7 @@ Sending Emails
 Create an Email
 ~~~~~~~~~~~~~~~
 
-An email that is created and sent by OroPlatform is centered around the
-``Oro\Bundle\EmailBundle\Form\Model\Email`` model class which reflects all the properties
-of an email.
+An email that is created and sent by OroPlatform is centered around the ``Oro\Bundle\EmailBundle\Form\Model\Email`` model class which reflects all the properties of an email.
 
 There are two ways to create a new email:
 
@@ -104,11 +95,10 @@ There are two ways to create a new email:
 Create an Email Manually
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can manually create an email by creating a new instance of the ``Email`` model class and call
-the setter methods for all the properties you want to be set:
+You can manually create an email by creating a new instance of the ``Email`` model class and call the setter methods for all the properties you want to be set:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
+   :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
 
     namespace Acme\Bundle\DemoBundle\Controller;
 
@@ -164,28 +154,20 @@ the setter methods for all the properties you want to be set:
 The ``EmailModelBuilder`` Class
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An alternative approach to manually creating ``Email`` models is to use the
-|EmailModelBuilder| helper class which offers several
-methods to create new emails based on existing data:
+An alternative approach to manually creating ``Email`` models is to use the |EmailModelBuilder| helper class which offers several methods to create new emails based on existing data:
 
-|createEmailModel|
-    Create a new email or add missing data to an existing email.
+* |createEmailModel| - Create a new email or add missing data to an existing email.
 
-|createReplyEmailModel|
-    Create an email that is a response to an existing email.
+* |createReplyEmailModel| - Create an email that is a response to an existing email.
 
-|createReplyAllEmailModel|
-    Create an email that is a response to all recipients and the sender of an existing email.
+* |createReplyAllEmailModel| - Create an email that responds to all recipients and the sender of an existing email.
 
-|createForwardEmailModel|
-    Create a new email that forwards an existing email.
+* |createForwardEmailModel| - Create a new email that forwards an existing email.
 
-After emails have been processed (see below), they will be persisted to the database. You can
-create an email model based on such a persisted entity, by using the useful
-|EmailModelBuilder| helper class:
+After emails have been processed (see below), they will be persisted to the database. You can create an email model based on such a persisted entity by using the useful |EmailModelBuilder| helper class:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
+   :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
 
     namespace Acme\Bundle\DemoBundle\Controller;
 
@@ -202,12 +184,10 @@ create an email model based on such a persisted entity, by using the useful
 Send the Email
 ~~~~~~~~~~~~~~
 
-When you created your email model, you can use the integrated mailer processor which is
-responsible for sending the email and persisting it to the database (which also creates the needed
-contexts to customers, users, and so on):
+When you create your email model, you can use the integrated mailer processor, responsible for sending the email and persisting it to the database (which also creates the needed contexts to customers, users, and so on):
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
+   :caption: src/Acme/Bundle/DemoBundle/Controller/EmailController.php
 
     namespace Acme\Bundle\DemoBundle\Controller;
 
@@ -225,38 +205,27 @@ contexts to customers, users, and so on):
         }
     }
 
-When calling the ``Oro\Bundle\EmailBundle\Sender\EmailModelSender::send`` the mailer
-sender performs the following steps:
+When calling the ``Oro\Bundle\EmailBundle\Sender\EmailModelSender::send`` the mailer sender performs the following steps:
 
-#. It creates a new ``\Symfony\Component\Mime\Email`` instance and populate it with the data from your
-   ``\Oro\Bundle\EmailBundle\Form\Model\Email`` object.
+#. It creates a new ``\Symfony\Component\Mime\Email`` instance and populates it with the data from your ``\Oro\Bundle\EmailBundle\Form\Model\Email`` object.
 
-#. If you did not pass an ``\Oro\Bundle\EmailBundle\Entity\EmailOrigin`` object which should be used to associate
-   the mail in the user interface with, the sender will create on based on the sender address and the selected
-   organization.
+#. If you did not pass an ``\Oro\Bundle\EmailBundle\Entity\EmailOrigin`` object, which should be used to associate the mail in the user interface, the sender would create one based on the sender address and the selected organization.
 
-#. The email will be sent based on your application's |Mailer configuration| (if the current
-   user configured a custom SMTP server in their settings, the configured server will be used
-   instead).
+#. The email will be sent based on your application's |Mailer configuration| (if the current user configured a custom SMTP server in their settings, the configured server would be used instead).
 
-#. The sent email is persisted to the database storing all necessary information to be able to
-   view it again in the future through the user interface.
+#. The sent email is persisted to the database storing all necessary information to be able to view it again in the future through the user interface.
 
 #. All the persisted data is returned as an instance of the `Oro\\EmailBundle\\Entity\\EmailUser`.
 
 Receive Email Notifications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes you want to receive emails when entities of a particular class are written to the
-database. To achieve this OroPlatform comes with the NotificationBundle. This bundle registers
-an event listener that is executed whenever a Doctrine entity is created, updated or removed.
+Sometimes you want to receive emails when entities of a particular class are written to the database. To achieve this, OroPlatform comes with the NotificationBundle. This bundle registers an event listener executed whenever a Doctrine entity is created, updated, or removed.
 
-To be notified by such an event, you have to create an
-``Oro\Bundle\NotificationBundle\Entity\EmailNotification`` that contains all the necessary
-information. The easiest way to register a new `EmailNotification` is to create data fixtures:
+To be notified of such an event, you have to create an ``Oro\Bundle\NotificationBundle\Entity\EmailNotification`` that contains all the necessary information. The easiest way to register a new `EmailNotification` is to create data fixtures:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/CreateCommentNotification.php
+   :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/CreateCommentNotification.php
 
     namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
 
@@ -305,16 +274,11 @@ information. The easiest way to register a new `EmailNotification` is to create 
 Email Address Owners
 --------------------
 
-Each email address is owned by exactly one entity. In OroPlatform, ``User`` entities and
-``Contact`` entities can be owners of an email address. Supposed you want to use the CRM to keep
-track of all people that apply to your company. You will then probably create an ``Applicant``
-entity and want to associate an email address to each of them. To let your own entities own an
-email address, you have to follow a few steps:
+Each email address is owned by exactly one entity. In OroPlatform, ``User`` entities and ``Contact`` entities can be owners of an email address. Suppose you want to use the CRM to track all people applying to your company. You will then probably create an ``Applicant`` entity and want to associate an email address to each of them. To let your own entities own an email address, you have to follow a few steps:
 
-#. :ref:`Create an entity that is responsible for storing the email address. <book-emails-emailinterface>`
+#. :ref:`Create an entity responsible for storing the email address. <book-emails-emailinterface>`
 #. :ref:`Create a new owner of an email address. <book-emails-owner>`
-#. :ref:`Publish a provider <book-emails-owner-provider>` that makes it possible to search for the
-   owner of a particular email address.
+#. :ref:`Publish a provider <book-emails-owner-provider>` that makes it possible to search for the owner of a particular email address.
 #. :ref:`Update the database schema and clear the cache <book-emails-schema-cache>`.
 
 .. _book-emails-emailinterface:
@@ -322,25 +286,20 @@ email address, you have to follow a few steps:
 Implement the Email Entity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Each entity owning an email address must have its own email entity that implements the
-``Oro\Bundle\EmailBundle\Entity\EmailInterface``. This interface defines four methods:
+Each entity owning an email address must have its own email entity that implements the ``Oro\Bundle\EmailBundle\Entity\EmailInterface``. This interface defines four methods:
 
-``getEmailField()``
-    Returns the name of the database table column that holds the actual email address.
+* ``getEmailField()`` - Returns the name of the database table column that holds the actual email address.
 
-``getId()``
-    A unique identifier to find a particular email address entity in the database.
+* ``getId()`` - A unique identifier to find a particular email address entity in the database.
 
-``getEmail()``
-    This method returns the actual email address.
+* ``getEmail()`` - This method returns the actual email address.
 
-``getEmailOwner()``
-    The entity that owns a certain email address.
+* ``getEmailOwner()`` - The entity that owns a certain email address.
 
 Sample ``Email`` entity:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Entity/ApplicantEmail.php
+   :caption: src/Acme/Bundle/DemoBundle/Entity/ApplicantEmail.php
 
     namespace Acme\Bundle\DemoBundle\Entity;
 
@@ -407,31 +366,25 @@ Sample ``Email`` entity:
 An Email Owner
 ~~~~~~~~~~~~~~
 
-The entity that is the owner of the email address has to implement the
-``Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface``:
+The entity that is the owner of the email address has to implement the ``Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface``:
 
-``getClass()``
-    The fully qualified class name of the entity.
+* ``getClass()`` - The fully qualified class name of the entity.
 
-``getEmailFields()``
-    A list of properties of the entity that represent valid email addresses. You can specify more
+* ``getEmailFields()`` - A list of properties of the entity that represent valid email addresses. You can specify more
     than one property here.
 
-``getId()``
-    A unique identifier to identify a particular owner entity.
+* ``getId()`` - A unique identifier to identify a particular owner entity.
 
-``getFirstName()``
-    The first name of the email address owner. It will be used to build proper recipient names
+* ``getFirstName()`` - The first name of the email address owner. It will be used to build proper recipient names
     when sending emails.
 
-``getLastName()``
-    The last name of the email address owner. It will be used to build proper recipient names
+* ``getLastName()`` - The last name of the email address owner. It will be used to build proper recipient names
     when sending emails.
 
-For ``Applicant`` entity, the implementation should be similar to the following:
+For the ``Applicant`` entity, the implementation should be similar to the following:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Entity/Applicant.php
+   :caption: src/Acme/Bundle/DemoBundle/Entity/Applicant.php
 
     namespace Acme\Bundle\DemoBundle\Entity;
 
@@ -520,29 +473,21 @@ For ``Applicant`` entity, the implementation should be similar to the following:
 Implement ``EmailOwnerProviderInterface``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to make the application able to find the owner of a certain email address, you have to
-create a provider that implements the
-``Oro\Bundle\EmailBundle\Entity\Provider\EmailOwnerProviderInterface``. This interface
-contains the following methods:
+To make the application able to find the owner of a certain email address, you have to create a provider that implements the
+``Oro\Bundle\EmailBundle\Entity\Provider\EmailOwnerProviderInterface``. This interface contains the following methods:
 
-``getEmailOwnerClass()``
-    Gets the class of an email address owner entity (the class implementing the
-    ``EmailOwnerInterface`` which is the ``Applicant`` class in the example above).
+* ``getEmailOwnerClass()`` - Gets the class of an email address owner entity (the class implementing the ``EmailOwnerInterface`` which is the ``Applicant`` class in the example above).
 
-``findEmailOwner()``
-    Finds an entity object that is an owner of an email address or ``null`` if no such owner exists.
-    The returned object must be an instance of the class specified by the ``getEmailOwnerClass()`` method.
+* ``findEmailOwner()`` - Finds an entity object that is an owner of an email address or ``null`` if no such owner exists. The returned object must be an instance of the class specified by the ``getEmailOwnerClass()`` method.
 
-``getOrganizations()``
-    Gets the list of organization IDs where an email address is used.
+``getOrganizations()`` - Gets the list of organization IDs where an email address is used.
 
-``getEmails()``
-    Gets the list of email addresses for an organization.
+``getEmails()`` - Gets the list of email addresses for an organization.
 
 The provider class should then look like this:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Entity/Provider/EmailOwnerProvider.php
+   :caption: src/Acme/Bundle/DemoBundle/Entity/Provider/EmailOwnerProvider.php
 
     namespace Acme\Bundle\DemoBundle\Entity\Provider;
 
@@ -618,8 +563,7 @@ The provider class should then look like this:
         }
     }
 
-You then need to create a service for the new ``EmailOwnerProvider`` class and tag it with the
-``oro_email.owner.provider`` tag to make the application aware of the new email provider:
+You then need to create a service for the new ``EmailOwnerProvider`` class and tag it with the ``oro_email.owner.provider`` tag to make the application aware of the new email provider:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
@@ -635,7 +579,7 @@ You then need to create a service for the new ``EmailOwnerProvider`` class and t
 Refresh the Database Schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finally, you have to update the database schema and clear the application cache:
+Update the database schema and clear the application cache:
 
 .. code-block:: bash
 

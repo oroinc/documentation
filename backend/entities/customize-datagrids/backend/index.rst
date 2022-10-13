@@ -3,8 +3,8 @@
 Backend Datagrid
 ================
 
-Datagrid is a table oriented representation of the data from a datasource.
-It is configured in a YAML file placed in the ``Resources/config/oro`` folder of your bundle and called ``datagrids.yml``.
+Datagrid is a table-oriented representation of the data from a datasource.
+It is configured in a YAML file placed in your bundle's ``Resources/config/oro`` folder and called ``datagrids.yml``.
 This file should contain the root node ``datagrids`` and each grid configuration must be placed under it.
 
 Getting Started
@@ -20,7 +20,6 @@ For example:
 
 .. code-block:: yaml
 
-
     datagrids:
         acme-demo-datagrid:     # grid identifier
             ...                 # configuration will be here
@@ -28,13 +27,12 @@ For example:
 Datasource
 ^^^^^^^^^^
 
-The next step is to configure datasource, which is a similar array under the ``source`` node.
+The next step is configuring datasource, a similar array under the ``source`` node.
 Choose datasource type and properly configure it. For further details, check the :ref:`datasources <customize--datagrids-datasource>` section.
 
 For example:
 
 .. code-block:: yaml
-
 
     datagrids:
         acme-demo-datagrid:
@@ -50,7 +48,6 @@ Other than the ``query`` yaml-oriented provider, ORM datasource supports an alte
 You use any arbitrary method that returns a valid ``Doctrine\ORM\QueryBuilder`` instance.
 
 .. code-block:: php
-
 
     // @acme_demo.user.repository
     public class UserRepository
@@ -77,7 +74,6 @@ In the datagrid configuration, provide the service and method name:
 
 .. code-block:: yaml
 
-
     datagrids:
         acme-demo-datagrid:
             source:
@@ -91,7 +87,6 @@ Parameters Binding
 If datasource supports parameters binding, you can specify an additional option ``bind_parameters``. For example
 
 .. code-block:: yaml
-
 
     datagrids:
         acme-demo-datagrid:
@@ -118,37 +113,36 @@ See more in the :ref:`parameters binding <datagrids-customize-parameter-binding>
 Columns and Properties
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Next step is columns definition. It is an array as well as other parts of grid configuration.
-The root node for columns is ``columns``, the definition key should be a unique column identifier, the value is an array of the column configuration.
+The next step is column definition. It is an array as well as other parts of the grid configuration.
+The root node for columns is ``columns``, the definition key should be a unique column identifier, and the value is an array of the column configuration.
 The same for properties, but the root node is ``properties``.
 
 A property is something similar to a column but without frontend representation.
-Properties can be used to pass additional data generated for each row, for example URLs of row actions.
+Properties can be used to pass additional data generated for each row, for example, URLs of row actions.
 
-.. note:: The column identifier is used for a suggestion, so best practice is to use an identifier similar to the data identifier (e.g., a field name in DQL).
+.. note:: The column identifier is used for a suggestion, so the best practice is to use an identifier similar to the data identifier (e.g., a field name in DQL).
 
-.. note:: A row identifier property is usually added for correct work, but for simple grids it is excessive.
+.. note:: A row identifier property is usually added for correct work, but for simple grids, it is excessive.
 
 The configuration format is different depending on the column type, but there is a list of keys shared between all types.
 
 - `type` - backend formatter type (`field` by default)
-- `label` - column title (translated on backend, translation should be placed in "messages" domain)
+- `label` - column title (translated on backend, translation should be placed in the "messages" domain)
 - `frontend_type` - frontend formatters that process the column value (`string` by default)
-- `editable` - is a column editable on frontend (`false` by default)
+- `editable` - is a column editable on the frontend (`false` by default)
 - `data_name` - data identifier (column name suggested by default)
 - `renderable` - whether the column should be rendered (`true` by default)
-- `order` - the number of column's position, allows to change order of the columns over :ref:`Datagrid Settings <customize-datagrid-settings>` and save it in :ref:`Grid View <customize-datagrids-extensions-grid-views>` (by default it is not defined and the columns are rendered in the order in which they are declared in the configuration)
+- `order` - the number of column's position, allows to change the order of the columns over :ref:`Datagrid Settings <customize-datagrid-settings>` and save it in :ref:`Grid View <customize-datagrids-extensions-grid-views>` (by default it is not defined and the columns are rendered in the order in which they are declared in the configuration)
 - `required` - if it is `true`, the column cannot be hidden over :ref:`Datagrid Settings <customize-datagrid-settings>` (`false` by default)
 - `manageable` - if it is `false`, the column does not appear in :ref:`Datagrid Settings <customize-datagrid-settings>` (`true` by default)
-- `disabled` - allows removing a column from grid (`false` by default)
-- `shortenableLabel` - could column label be abbreviated or shortened with ellipsis (`true` - by default)
+- `disabled` - allows removing a column from the grid (`false` by default)
+- `shortenableLabel` - could column label be abbreviated or shortened with an ellipsis (`true` - by default)
 
 For a detailed explanation, see the section on :ref:`formatters <customize-datagrids-extensions-formatter>`.
 
-So lets define few columns:
+Let's define a few columns:
 
 .. code-block:: yaml
-
 
     datagrids:
         acme-demo-datagrid:
@@ -172,15 +166,14 @@ So lets define few columns:
 Sorting
 ^^^^^^^
 
-After that you may want to make your columns sortable. Sorting configuration should be placed under the ``sorters`` node.
-In basic sorter implementation, the configuration takes the ``columns`` and ``default`` keys.
-It is an array of column names where the value is sorter configuration.
-There is one required value ``data_name`` that is responsible for knowledge on which datagrid should do sorting.
+After that, you may want to make your columns sortable. The sorting configuration should be placed under the ``sorters`` node.
+The configuration takes the ``columns`` and ``default`` keys in basic sorter implementation.
+It is an array of column names where the value is a sorter configuration.
+One required value, ``data_name``, is responsible for knowing which datagrid should do the sorting.
 
-Lets make all columns sortable:
+Let's make all columns sortable:
 
 .. code-block:: yaml
-
 
     datagrids:
         acme-demo-datagrid:
@@ -202,21 +195,20 @@ For detailed explanation, see the section on :ref:`sorters <customize-datagrids-
 Final Step
 ^^^^^^^^^^
 
-Final step for this tutorial is to add grid to template.
-There is a predefined macro for grid rendering, that is defined in `@OroDataGrid/macros.html.twig` and can be imported
+The final step is to add a grid to the template.
+There is a predefined macro for grid rendering defined in `@OroDataGrid/macros.html.twig` and can be imported
 by the following call ``{% import '@OroDataGrid/macros.html.twig' as dataGrid %}`` .
-Macro's name is ``renderGrid``, it takes 2 arguments: grid name, route parameters(used for advanced query building).
-So for displaying our grid we have to add following code to template:
+Macro's name is ``renderGrid``, and it takes two arguments: grid name, route parameters(used for advanced query building).
+To display our grid, add the following code to the template:
 
 .. code-block:: twig
-
 
     {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
     {% block content %}
          {{ dataGrid.renderGrid('acme-demo-datagrid') }}
     {% endblock %}
 
-.. note:: If your template extends the @OroUI/actions/index.html.twig template, macros will be already imported and you only have to set the gridName variable to get the grid rendered
+.. note:: If your template extends the @OroUI/actions/index.html.twig template, macros will be already imported, and you only have to set the gridName variable to get the grid rendered
 
 Advanced Configuration
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -231,16 +223,16 @@ Extendability
 Behavior Customization
 ^^^^^^^^^^^^^^^^^^^^^^
 
-In order to customize the datagrid (e.g., dynamically added columns, custom actions, add additional data, etc.), you can listen to one of the events dispatched in the datagrid component. More information on events, including their full list, is available in the section on :ref:`events <customize-datagrids-events>`.
+To customize the datagrid (e.g., dynamically added columns, custom actions, add additional data, etc.), you can listen to one of the events dispatched in the datagrid component. More information on events, including their full list, is available in the section on :ref:`events <customize-datagrids-events>`.
 
 Extending
 ^^^^^^^^^
 
 The grid can be extended in several ways:
 
-- create a custom datasource, if needed (e.g., already implemented SearchDatasource for working with search engine)
+- create a custom datasource, if needed (e.g., already implemented SearchDatasource for working with a search engine)
 - create a custom :ref:`extension <customize-datagrid-extensions>`
-- create some addons to the already registered extensions (e.g., a specific backend formatter)
+- create some add-ons to the already registered extensions (e.g., a specific backend formatter)
 - change the base datagrid or the base acceptor class (they are passed to the builder as DIC parameters)
 
 **Related Articles**

@@ -6,13 +6,13 @@ Events
 Events List
 -----------
 
-Datagrids in Oro applications are highly customizable. It is possible to modify an existing grid in order to fetch more data than it was originally defined in the grid configuration.
-In order to provide extendability points, ``build`` and ``result`` events have been introduced.
+Datagrids in Oro applications are highly customizable. It is possible to modify an existing grid to fetch more data than initially defined in the grid configuration.
+To provide extendability points, ``build`` and ``result`` events have been introduced.
 
 Build Events
 ------------
 
-Build events are dispatched by the ``Builder`` class right before and immediately after processing the configuration and building datasource. They are useful in case you need to modify the datagrid or a query configuration.
+Build events are dispatched by the ``Builder`` class right before and immediately after processing the configuration and building datasource. They are helpful in case you need to modify the datagrid or a query configuration.
 
 Four events are dispatched during the build process:
 
@@ -32,7 +32,7 @@ The ``BuildBefore`` event class has access to the |DatagridConfiguration| instan
 .. hint::
         Please note that at this point datasource has not been initialized yet, therefore calling ``$event->getDatagrid()->getDatasource()`` returns ``null``.
 
-As an illustration, let's add one more column to a specific datagrid. For this, create an event listener and modify the existing configuration the following way:
+As an illustration, let's add one more column to a specific datagrid. For this, create an event listener and modify the existing configuration in the following way:
 
 .. code-block:: php
 
@@ -74,15 +74,15 @@ Once the listener is created, register it in `services.yml`:
 BuildAfter Events
 ^^^^^^^^^^^^^^^^^
 
-By listening to these events you can modify the datasource or even the whole datagrid instance. However, the most common case for
+You can modify the datasource or even the whole datagrid instance by listening to these events. However, the most common case for
 this event is to modify the query (add additional joins, selects, the ``where`` conditions, etc.).
 
-You can use generic ``build.after`` event for listening to all or specific datagrids, which will be called
+You can use a generic ``build.after`` event for listening to all or specific datagrids, which will be called
 only for a given datagrid - ``build.after.DATAGRID_NAME``.
 
 The ``BuildAfter`` event class has access to |Datagrid| instance.
 
-As an example, let us filter the datagrid by a certain value from the request params. For this, create an event listener and modify the query builder, as illustrated below:
+For example, let us filter the datagrid by a particular value from the request params. For this, create an event listener and modify the query builder, as illustrated below:
 
 .. code-block:: php
 
@@ -129,7 +129,6 @@ Once the listener is created, register it in ``services.yml``:
 
 .. code-block:: yaml
 
-
     acme_demo.event_listener.datagrid.filter_by_request_param:
     class: Acme\Bundle\DemoBundle\EventListener\Datagrid\FilterByRequestParamListener
     arguments:
@@ -146,8 +145,8 @@ Once the listener is created, register it in ``services.yml``:
 Result Events
 -------------
 
-Result events are type-specific which means that ``datasource`` is responsible for dispatching them.
-Listening to these events is useful both when you need to access a query (e.g., ORM, search) or modify the results.
+Result events are type-specific, which means that ``datasource`` is responsible for dispatching them.
+Listening to these events is useful both when you need to access a query (e.g., ORM, search) and modify the results.
 
 As an example, have a look at the |OrmDatasource|. In the ``getResult()`` method it dispatches 4 main and 2 additional events:
 
@@ -213,7 +212,6 @@ you can create an event listener and fetch the data once the rows are fetched fr
 Once the event listener is created, register it in ``services.yml``:
 
 .. code-block:: yaml
-
 
     acme_demo.event_listener.datagrid.complex_data:
         class: Acme\Bundle\DemoBundle\EventListener\Datagrid\ComplexDataDatagridListener

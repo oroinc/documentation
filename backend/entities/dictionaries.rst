@@ -3,14 +3,14 @@
 Dictionaries
 ============
 
-Dictionary entities are responsible for storing a predefined set of values of a certain type and their translations. They values within a dictionary can have a priority or some other data.
+Dictionary entities are responsible for storing a predefined set of values of a particular type and their translations. The values within a dictionary can have a priority or some other data.
 
 Automatic Creation of REST API for Dictionaries
 -----------------------------------------------
 
-REST API resources for viewing dictionary values are created automatically and they are accessible by the following URL: ``/api/{dictionary_plural_alias}``. For example ``/api/casestatuses``.
+REST API resources for viewing dictionary values are created automatically and are accessible by the following URL: ``/api/{dictionary_plural_alias}``. For example ``/api/casestatuses``.
 
-Please refer to :ref:`entity aliases <entity-aliases>` topic to get a better understanding how the aliases are generated.
+Please refer to :ref:`entity aliases <entity-aliases>` topic to better understand how the aliases are generated.
 
 **Dictionary types supported out-of-the-box**
 
@@ -23,7 +23,7 @@ REST API resources are created automatically for the following types of dictiona
 
 **Creating a custom dictionary type**
 
-If you have a group of entities which can be classified as a dictionary, but by some reason they are not included in the ``dictionary`` group in the entity configuration, and you want to have its entities added to the dictionary REST API, you need to do two things.
+If you have a group of entities that can be classified as a dictionary but are not included in the ``dictionary`` group in the entity configuration, and you need to have its entities added to the dictionary REST API, you need to do two things.
 
 1. Create a dictionary value list provider implementing the |DictionaryValueListProviderInterface| interface.
 
@@ -42,7 +42,7 @@ If you have a group of entities which can be classified as a dictionary, but by 
 
 .. note:: Please note that you can specify the priority for the dictionary value list provider. The bigger the priority number is, the earlier the provider will be executed.
 
-If there are more than one dictionary value list providers that support the same type of dictionary, only the one with the greater priority will be executed. The priority value is optional and defaults to 0.
+If more than one dictionary value list provider supports the same type of dictionary, only the one with the greater priority will be executed. The priority value is optional and defaults to 0.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

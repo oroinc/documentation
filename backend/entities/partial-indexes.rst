@@ -3,13 +3,13 @@
 Partial Indexes
 ===============
 
-To use a partial index for the entity field, add the following condition as additional option to the index definition:
+To use a partial index for the entity field, add the following condition as an additional option to the index definition:
 
 .. code-block:: none
 
    $table->addIndex(['is_featured'], 'idx_oro_product_featured', [], ['where' => '(is_featured = true)']);
-    
-.. note:: PostgreSQL supports partial indexes, however MySQL does not. For MySQL the additional option causes the database schema diversion.
+
+.. note:: PostgreSQL supports partial indexes, however MySQL does not. For MySQL, the additional option causes the database schema diversion.
 
 To eliminate the negative impact for the MySQL-based instances and automatically adjust their database schema, declare the following service:
 
@@ -24,4 +24,4 @@ To eliminate the negative impact for the MySQL-based instances and automatically
         tags:
             - { name: doctrine.event_listener, event: loadClassMetadata }
 
-The service removes the options that are not supported in MySQL from the index definition.
+The service removes the options not supported in MySQL from the index definition.
