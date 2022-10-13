@@ -12,15 +12,15 @@ It provides two functions for getting the entity name:
 
 - string *public* *getName*(object *entity*[, string *format*, string *locale*])
 
-This method can be used to get a text representation of an entity formatted according to the format notation passed (e.g., "full", "short", etc.). If the format is not specified, the default one is used.
+You can use this method to get a text representation of an entity formatted according to the format notation passed (e.g., "full", "short", etc.). If the format is not specified, the default one is used.
 
-To format the text representation using a specific locale, the *locale* parameter may be passed.
+You can pass the *locale* parameter to format the text representation using a specific locale:
 
 - string *public* *getNameDQL*(string *className*, string *alias*[, string *format*, string *locale*])
 
-This method is useful for getting a DQL expression that can be used to get a text representation of the given type of entities formatted according to the format notation passed (e.g., "full", "short", etc.). If the format is not specified, the default one is used.
+This method helps get a DQL expression that can be used to get a text representation of the given type of entities formatted according to the format notation passed (e.g., "full", "short", etc.). If the format is not specified, the default one is used.
 
-To get a text representation using a specific locale, the *locale* parameter may be passed.
+You can pass the *locale* parameter to get a text representation using a specific locale.
 
 Example of usage:
 
@@ -32,7 +32,7 @@ Example of usage:
     echo $entityNameResolver->getName($user); // outputs: John Doe
     echo $entityNameResolver->getNameDQL('Oro\Bundle\UserBundle\Entity\User', 'u'); // outputs: CONCAT(u.firstName, CONCAT(u.lastName, ' ')
 
-The available entity formats can be configured in the `entity_name_formats` section of ``Resources/config/oro/entity.yml`` file:
+You can configure the available entity formats in the `entity_name_formats` section of ``Resources/config/oro/entity.yml`` file:
 
 .. code-block:: yaml
 
@@ -42,15 +42,15 @@ The available entity formats can be configured in the `entity_name_formats` sect
                 fallback: short
             short: ~
 
-Note that it is possible to specify the fallback format for the entity that will be used when the given format is not implemented by any providers.
+Note that it is possible to specify the fallback format for the entity that will be used when no providers do not implement the given format.
 
 Entity Name Providers
 ---------------------
 
-The Entity Name Resolver does not know how to get the entity name by itself but instead it expects to have a collection of Entity Name Providers that will do the job.
-The first provider that is able to return a reliable result wins. The rest of providers will not be asked.
+The Entity Name Resolver does not know how to get the entity name by itself but instead, it expects to have a collection of Entity Name Providers that will do the job.
+The first provider that can return a reliable result wins. The rest of the providers will not be asked.
 
-To create an Entity Name Provider you should implement the |EntityNameProviderInterface|:
+To create an Entity Name Provider, you should implement the |EntityNameProviderInterface|:
 
 .. code-block:: php
 
@@ -94,9 +94,9 @@ To create an Entity Name Provider you should implement the |EntityNameProviderIn
         }
     }
 
-Note that if the provider cannot return a reliable result, FALSE should be returned to keep looking for the other providers in the chain.
+If the provider cannot return a reliable result, FALSE should be returned to keep looking for the other providers in the chain.
 
-Entity name providers are registered in the DI container by `oro_entity.name_provider` tag:
+Entity name providers are registered in the DI container by the `oro_entity.name_provider` tag:
 
 .. code-block:: yaml
 
@@ -108,13 +108,13 @@ Entity name providers are registered in the DI container by `oro_entity.name_pro
         tags:
             - { name: oro_entity.name_provider, priority: -100 }
 
-The priority can be specified to move the provider up or down the provider's chain. The bigger the priority number is, the earlier the provider will be executed. The priority value is optional and defaults to 0.
+You can specify the priority to move the provider up or down the provider's chain. The bigger the priority number is, the earlier the provider will be executed. The priority value is optional and defaults to 0.
 
 **Default behavior**
 
-The bundled provider ``Oro\Bundle\EntityBundle\Provider\EntityNameProvider`` will resolve entity titles by trying to find suitable fields in the entity. For 'short' format it tries to use one string field from the list 'firstName', 'name', 'title', 'subject' (in that order). For 'full' it will use a space-delimited concatenation of all non-serialized string fields. If some of the fields is found but the resulting title is empty (i.e. value of the fields is null) it will return the entity id.
+The bundled provider ``Oro\Bundle\EntityBundle\Provider\EntityNameProvider`` will resolve entity titles by trying to find appropriate fields in the entity. For the 'short' format, it tries to use one string field from the list 'firstName', 'name', 'title', and 'subject' (in that order). For 'full,' it will use a space-delimited concatenation of all non-serialized string fields. If some fields are found, but the resulting title is empty (i.e., the value of the fields is null), it will return the entity id.
 
-If no suitable fields are available (e.g. entity does not have any string fields) then another provider ``Oro\Bundle\EntityBundle\Provider\FallbackEntityNameProvider`` will try to construct a title in the form of 'Item #1' from the entity identifier and `oro.entity.item` translation key.
+If no appropriate fields are available (e.g., the entity does not have any string fields), then another provider ``Oro\Bundle\EntityBundle\Provider\FallbackEntityNameProvider`` will try to construct a title in the form of 'Item #1' from the entity identifier, and `oro.entity.item` translation key.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

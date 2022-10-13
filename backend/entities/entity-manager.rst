@@ -3,7 +3,7 @@
 Entity Manager
 ==============
 
-Class |OroEntityManager| is used to extend some native Doctrine Entity Manager functionality. In case any other modifications are required, your class should extend `OroEntityManager` instead of the Doctrine Entity Manager.
+Class |OroEntityManager| is used to extend some native Doctrine Entity Manager functionality. If any other modifications are required, your class should extend `OroEntityManager` instead of the Doctrine Entity Manager.
 
 **Additional ORM Lifecycle Events**
 

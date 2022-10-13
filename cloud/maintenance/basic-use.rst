@@ -47,7 +47,7 @@ List Logs
 
 .. code-block:: none
 
-    orocloud-cli orocloud-cli log:list
+   orocloud-cli log:list
 
 The command output is similar to the following:
 
@@ -68,7 +68,7 @@ View Logs
 
 .. code-block:: none
 
-    orocloud-cli orocloud-cli log:view upgrade:source_20211208161329.log
+    orocloud-cli log:view upgrade:source_20211208161329.log
 
 The command output is similar to the following:
 

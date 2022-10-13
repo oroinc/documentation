@@ -8,14 +8,13 @@
 Pass Request Parameters to the Grid
 ===================================
 
-In some cases, you need to pass parameters from the request to the grid.
-This task may be solved using grid event listeners. An existing listener implementation also could be used.
+Sometimes, you must pass parameters from the request to the grid.
+For this, use grid event listeners or an existing listener implementation.
 
 Grid Configuration
 ------------------
 
-Suppose that you have a grid configuration and a named parameter inside where clause of its source query.
-For example:
+Suppose you have a grid configuration and a named parameter inside the `where` clause of its source query:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
@@ -32,13 +31,12 @@ For example:
             # ...
         # ...
 
-Our goal is to set :contactId parameter with the value from the request.
+The goal is to set the :contactId parameter with the value from the request.
 
 Solution 1: Grid Parameter Binding
 ----------------------------------
 
-The easiest way that should be sufficient for most situations is to use the parameter binding option of the datasource
-to configure mapping between datagrid and query parameters.
+The easiest way (sufficient for most situations) is to use the parameter binding option of the datasource to configure the mapping between the datagrid and query parameters.
 
 You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml`` using the following syntax:
 
@@ -61,8 +59,7 @@ You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml
             # ...
         # ...
 
-In case if names of the parameter in the grid and the query do not match you can pass associative array of parameters,
-where the key will be the name of the query parameter, and the value will match the name of the parameter in the grid:
+In case if names of the parameter in the grid and the query do not match, you can pass an associative array of parameters, where the key will be the name of the query parameter, and the value will match the name of the parameter in the grid:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
@@ -89,8 +86,7 @@ where the key will be the name of the query parameter, and the value will match 
     A datasource must implement the ``Oro\Bundle\DataGridBundle\Datasource\ParameterBinderAwareInterface``
     to support the ``bind_parameters`` option.
 
-Now we need to pass the parameter with name "relatedContactId" to our grid.
-The controller receives a contact entity and passes it to the view:
+Next, pass the "relatedContactId " parameter to the grid. The controller receives a contact entity and passes it to the view:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/TaskBundle/Controller/TaskController.php
@@ -132,8 +128,7 @@ The view passes the "relatedContactId" parameter to the grid:
 Solution 2. Create Custom Event Listener
 ----------------------------------------
 
-If the first example does not work for you for some reason (datasource does not support parameters binding,
-you need to implement additional logic before binding parameters, etc.), you can create a listener for the
+If the first example does not work for you ( for example, datasource does not support parameters binding, or  you need to implement additional logic before binding parameters), you can create a listener for the
 ``oro_datagrid.datagrid.build.after`` event and set the parameter for the source query in this listener:
 
 .. code-block:: php
@@ -185,9 +180,7 @@ Register this listener in the container:
             tags:
                 - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.after.acme-tasks-grid, method: onBuildAfter }
 
-Remember that you still need to pass the ``relatedContactId`` parameter to the grid to the grid from a Twig template
-Remember that you still need to pass the ``relatedContactId`` parameter to the grid to the grid from a Twig template
-(see example in the previous solution).
+Remember that you still need to pass the ``relatedContactId`` parameter to the grid from a Twig template (see the example in the previous solution).
 
 References
 ----------

@@ -3,9 +3,7 @@
 Merge Entities
 ==============
 
-Entity merge is a complex solution that enables users to merge different entities into one. Usually entity merge is
-used to remove copies of an entity. EntityMergeBundle provides the functionality to select multiple entities from the grid and
-merge them in a wizard.
+Entity merge is a complex solution that enables users to merge different entities into one. Usually, entity merge is used to remove copies of an entity. EntityMergeBundle provides the functionality to select multiple entities from the grid and merge them in a wizard.
 
 Main Entities
 -------------
@@ -14,14 +12,14 @@ Entity merge consists of several related entities.
 
 - **FieldMetadata** - metadata information of field merging.
 - **EntityMetadata** - represents the list of metadata fields and entity merge metadata.
-- **FieldData** - contains entity that was selected as source value and merge strategy mode (replace/unite).
-- **EntityData** - contains the master record that will be the result of the merge and the list of field data.
+- **FieldData** - contains an entity that was selected as source value and merge strategy mode (replace/unite).
+- **EntityData** - contains the master record that will result from the merge and the list of field data.
 - **Strategy** - strategy for entity field merge. The default strategies are unite or replace:
 
    - **UniteStrategy** - merges field values into the master entity. It works only with fields that are represented by a list of entities.
    - **ReplaceStrategy** - replaces the master entity field value with the selected one.
 
-- **Step** - one of merge steps. By default, there are three steps: **ValidateStep**, **MergeFieldsStep** and **RemoveEntitiesStep**.
+- **Step** - one of the merge steps. By default, there are three steps: **ValidateStep**, **MergeFieldsStep** and **RemoveEntitiesStep**.
 - **Accessor** - provides access (get value/set value) for merge fields.
 
 How It Works
@@ -31,7 +29,7 @@ How It Works
 2. A user selects records to merge on the grid and clicks on the **Merge** mass action.
 3. The user is redirected to the merge entities page with a wizard that enables them to set up the merge process by choosing the merge strategy and the preferred values. Here, they can merge several entities into one.
 
-The **Master Record** setting in the wizard enables users to define which entity will contain the results of the merge. Other entities will be removed from the database. All doctrine references to the removed entities will be replaced with the master record.
+The **Master Record** setting in the wizard enables users to define which entity will contain the merge results. Other entities will be removed from the database. All doctrine references to the removed entities will be replaced with the master record.
 
 Configuration
 -------------
@@ -178,8 +176,7 @@ Example of merge mass action:
 Other Configurations
 ^^^^^^^^^^^^^^^^^^^^
 
-You can define your own "Strategy", "Steps", "Accessor" in the DI by using tags with names "oro_entity_merge.strategy",
-"oro_entity_merge.step", "oro_entity_merge.accessor".
+You can define your own "Strategy", "Steps", "Accessor" in the DI by using tags with the names "oro_entity_merge.strategy", "oro_entity_merge.step", "oro_entity_merge.accessor".
 
 Tagging merge strategy:
 
@@ -207,7 +204,6 @@ Tagging merge step:
             tags:
                 - { name: oro_entity_merge.step }
 
-
 Tagging accessor:
 
 .. code-block:: none
@@ -220,11 +216,10 @@ Tagging accessor:
             tags:
                 - { name: oro_entity_merge.accessor }
 
-
 Dependencies
 ------------
 
-Thr following diagram shows dependencies among EntityMergeBundle classes (click on the image to zoom):
+The following diagram shows dependencies among EntityMergeBundle classes (click on the image to zoom):
 
 .. image:: /img/backend/entities/entity_merge_class_diagramm.png
    :scale: 60%

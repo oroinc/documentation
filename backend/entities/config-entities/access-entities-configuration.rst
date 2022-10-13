@@ -4,9 +4,9 @@
 Access Entities Configuration
 =============================
 
-Now that you know how you define additional configuration options and how to use them in your own
+Now that you know how to define additional configuration options and use them in your own
 entities, you will usually want to access the configured values. The main entry point to access the
-configuration is the provider service for the particular scope which has to be retrieved from the
+configuration is the provider service for the particular scope, which has to be retrieved from the
 service container. For example, if you want to work with your newly created ``auditable`` option,
 you will have to use the ``oro_entity_config.provider.acme_demo`` service (the ``auditable`` option
 was defined in the ``acme_demo`` scope):

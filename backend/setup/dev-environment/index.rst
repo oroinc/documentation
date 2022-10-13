@@ -158,7 +158,7 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    Environment Types <environment-type-based-configuration>
    parameters-yml
    Healthcheck and Data Monitoring <monitoring>
-   Set Up From Database Dump <setup-from-db-dump>
+   SetUp From Database Dump <setup-from-db-dump>
 
 
 .. include:: /include/include-links-dev.rst

@@ -6,13 +6,12 @@ Inline Editing
 Enable Inline Editing on a Grid
 -------------------------------
 
-To enable inline editing on a grid, do the following:
+To enable inline editing on a grid:
 
-- Go to the datagrid yml
-- Add the following lines into the datagrid configuration
+1. Navigate to the datagrid.yml file.
+2. Add the following lines to the datagrid configuration:
 
 .. code-block:: yaml
-
 
     datagrids:
         {grid-uid}:
@@ -23,13 +22,12 @@ To enable inline editing on a grid, do the following:
                 http_method: PATCH
                 route: oro_account_update
 
-- Open the corresponding page, all the columns for which the frontend type supports inline editing will become editable
+3. Open the corresponding page, all the columns for which the frontend type supports inline editing will become editable.
 
 Datagrid Configuration Details
 ------------------------------
 
 .. code-block:: yaml
-
 
     datagrids:
         {grid-uid}:
@@ -67,7 +65,6 @@ Datagrid Configuration Details
 
 .. code-block:: yaml
 
-
     save_api_accessor:
         route: oro_opportunity_task_update # for example this route uses following mask
             # to generate url /api/opportunity/{opportunity_id}/tasks/{id}
@@ -81,13 +78,12 @@ Datagrid Configuration Details
 
 Result of the combined options: ``/api/opportunity/23/tasks/{id}?action=patch``
 
-Please note that ``{id}`` will be taken from the current row in the grid.
+The ``{id}`` is taken from the current row in the grid.
 
 Column Configuration Options
 ----------------------------
 
 .. code-block:: yaml
-
 
     datagrids:
         {grid-uid}:
@@ -120,7 +116,7 @@ Column Configuration Options
    "save_api_accessor","-","Allows to override default api accessor for the whole grid. Please see :ref:`documentation for oroui/js/tools/api-accessor <bundle-docs-platform-ui-bundle-apiaccessor>` for details"
    "editor.component","-","Allows to override component used to display view and specified in ``datagrid.{grid-uid}.inline_editing.cell_editor.component``"
    "editor.component_options","{}","Specifies options to pass into the cell editor component"
-   "editor.view","-","Defines view that used to render cell-editor. By default, this view is selected using ``datagrid.{grid-uid}.inline_editing.default_editors`` file."
+   "editor.view","-","Defines view used to render cell-editor. By default, this view is selected using ``datagrid.{grid-uid}.inline_editing.default_editors`` file."
    "editor.view_options","{}","Specifies options to pass into the cell editor view"
    "autocomplete_api_accessor","-","Allow use autocomplete to fill select2 edit form"
 
@@ -128,92 +124,88 @@ Column Configuration Options
 Frontend Special Types
 ----------------------
 
-frontend_type: select - simple choice from provided values
+* frontend_type: select - simple choice from the provided values.
 
-Example:
+  Example:
 
-.. code-block:: yaml
+  .. code-block:: yaml
 
-
-    datagrids:
-        {grid-uid}:
-            # <grid configuration> goes here
-            columns:
-                {column-name}:
-                    frontend_type: select
-                    inline_editing:
-                        enable: true
-                        editor:
-                            view: oroform/js/app/views/editor/select-editor-view
-                        autocomplete_api_accessor:
-                            class: oroui/js/tools/search-api-accessor
-                    choices: # can be used service as data provider @service->getDataMethod
-                        {key}: {value}
-
-
-frontend_type: multi-select - simple choice from provided values allow choose few values
-
-Example:
-
-.. code-block:: yaml
+      datagrids:
+          {grid-uid}:
+              # <grid configuration> goes here
+              columns:
+                  {column-name}:
+                      frontend_type: select
+                      inline_editing:
+                          enable: true
+                          editor:
+                              view: oroform/js/app/views/editor/select-editor-view
+                          autocomplete_api_accessor:
+                              class: oroui/js/tools/search-api-accessor
+                      choices: # can be used service as data provider @service->getDataMethod
+                          {key}: {value}
 
 
-    datagrids:
-        {grid-uid}:
-            # <grid configuration> goes here
-            columns:
-                {column-name}:
-                    frontend_type: multi-select
-                    inline_editing:
-                        enable: true
-                        editor:
-                            view: oroform/js/app/views/editor/multi-select-editor-view
-                        autocomplete_api_accessor:
-                            class: oroui/js/tools/search-api-accessor
-                    choices: # can be used service as data provider @service->getDataMethod
-                        {key}: {value}
+* frontend_type: multi-select - simple choice from the provided values; allows choosing several values:
+
+  Example:
+
+  .. code-block:: yaml
+
+      datagrids:
+          {grid-uid}:
+              # <grid configuration> goes here
+              columns:
+                  {column-name}:
+                      frontend_type: multi-select
+                      inline_editing:
+                          enable: true
+                          editor:
+                              view: oroform/js/app/views/editor/multi-select-editor-view
+                          autocomplete_api_accessor:
+                              class: oroui/js/tools/search-api-accessor
+                      choices: # can be used service as data provider @service->getDataMethod
+                          {key}: {value}
 
 
-frontend_type: relation - select2 type with autocomplete search function
+* frontend_type: relation - select2 type with the autocomplete search function.
 
-Example:
+  Example:
 
-.. code-block:: yaml
+  .. code-block:: yaml
 
-
-    datagrids:
-        {grid-uid}:
-            # <grid configuration> goes here
-            columns:
-                {column-name}:
-                    frontend_type: relation
-                    inline_editing:
-                        enable: true
-                        editor:
-                            view: oroform/js/app/views/editor/related-id-relation-editor-view
-                        autocomplete_api_accessor:
-                            class: oroui/js/tools/search-api-accessor
-
-
-frontend_type: multi-relation - select2 type with autocomplete search function and allow multiple choices
-
-Example:
-
-.. code-block:: yaml
+      datagrids:
+          {grid-uid}:
+              # <grid configuration> goes here
+              columns:
+                  {column-name}:
+                      frontend_type: relation
+                      inline_editing:
+                          enable: true
+                          editor:
+                              view: oroform/js/app/views/editor/related-id-relation-editor-view
+                          autocomplete_api_accessor:
+                              class: oroui/js/tools/search-api-accessor
 
 
-    datagrids:
-        {grid-uid}:
-            # <grid configuration> goes here
-            columns:
-                {column-name}:
-                    frontend_type: multi-relation
-                    inline_editing:
-                        enable: true
-                        editor:
-                            view: oroform/js/app/views/editor/multi-relation-editor-view
-                        autocomplete_api_accessor:
-                            class: oroui/js/tools/search-api-accessor
+* frontend_type: multi-relation - select2 type with the autocomplete search function; allows multiple choices.
+
+  Example:
+
+  .. code-block:: yaml
+
+      datagrids:
+          {grid-uid}:
+              # <grid configuration> goes here
+              columns:
+                  {column-name}:
+                      frontend_type: multi-relation
+                      inline_editing:
+                          enable: true
+                          editor:
+                              view: oroform/js/app/views/editor/multi-relation-editor-view
+                          autocomplete_api_accessor:
+                              class: oroui/js/tools/search-api-accessor
 
 Mapping Default Frontend Type and Editor
 ----------------------------------------
@@ -259,8 +251,7 @@ Supported Editors
 Supported Search API's for ``related-id-relation-editor-view``
 --------------------------------------------------------------
 
-Please find the list of supported search APIs in the :ref:`Search APIs section <bundle-docs-platform-form-bundle-search-apis>`.
-
+The list of supported search APIs is available in the :ref:`Search APIs section <bundle-docs-platform-form-bundle-search-apis>`.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

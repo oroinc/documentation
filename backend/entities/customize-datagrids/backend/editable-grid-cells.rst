@@ -1,14 +1,14 @@
 Editable Datagrid Cells
 =======================
 
-Editable datagrid cells are used to change data directly in the grid. Currently select and radio buttons editable cells are supported.
+Editable datagrid cells are used to change data directly in the grid. Currently, select and radio buttons editable cells are supported.
 
 Example of Use
 --------------
 
-Demonstrative example is ``customer-product-visibility-grid``. On product edit page added customers grid with ``visibilityForCustomer`` column.
-User be able to set visibility type of current product for customer in grid.
-For example, imagine that we already have entity  ``CustomerProductVisibility`` with relations between ``customer``, ``product`` and enum ``visibility``.
+A good example is ``customer-product-visibility-grid``. The product edit page has a customer grid with the ``visibilityForCustomer`` column.
+Users can set the visibility type of the current product for the customer in the grid.
+For example, suppose we already have entity ``CustomerProductVisibility`` with relations between ``customer``, ``product``, and enum ``visibility``.
 
 In this case, a developer should perform three steps, discussed below.
 
@@ -17,7 +17,6 @@ In this case, a developer should perform three steps, discussed below.
 Example of grid configuration:
 
 .. code-block:: yaml
-
 
     datagrids:
         customer-product-visibility-grid:
@@ -48,7 +47,7 @@ Example of grid configuration:
                     label: acme.customer.product_visibility.label
                     frontend_type: select
                     inline_editing:
-                        enable: true # this cell wil be editable
+                        enable: true # this cell will be editable
                     expanded: true # this cell will be rendered as radio buttons
                     choices: "@oro_entity_extend.enum_value_provider->getEnumChoicesByCode('cust_prod_visibility')"
             options:
@@ -62,17 +61,16 @@ Example of grid configuration:
 
 Common options:
 
-Section ``inline_editing`` with option ``enable`` for columns makes the cell editable. Option ``cellSelection`` adds behavior of the editable cell in grid in the frontend.
+The section ``inline_editing`` with the option ``enable`` for columns makes the cell editable. Option ``cellSelection`` adds the editable cell's behavior in the frontend grid.
 
 Event listener ``\Oro\Bundle\DataGridBundle\EventListener\CellSelectionListener`` is applied to all grids with the ``cellSelection`` option.
-If this option is specified, the listener will add a js module ``orodatagrid/js/datagrid/listener/change-editable-cell-listener`` to handle changes behavior in the frontend.
+If this option is specified, the listener will add a js module ``orodatagrid/js/datagrid/listener/change-editable-cell-listener`` to handle changes in behavior in the frontend.
 
-To receive the select options or radio buttons values, use the ``oro_entity_extend.enum_value_provider`` service which provides the ability to get enum values by enum code.
+To receive the select options or radio button values, use the ``oro_entity_extend.enum_value_provider`` service, which provides the ability to get enum values by enum code.
 
 2. **Add** ``oro_entity_changeset`` **to form type**
 
 .. code-block:: php
-
 
     $builder
         ...
@@ -88,10 +86,9 @@ To receive the select options or radio buttons values, use the ``oro_entity_exte
 
 Option ``class`` in ``\Oro\Bundle\FormBundle\Form\Type\EntityChangesetType`` is required. It is the class name of the grid item.
 
-Then, add ``visibilityForCustomer`` field in the template.
+Then, add the ``visibilityForCustomer`` field in the template.
 
 .. code-block:: twig
-
 
     ...
     form_row(form.visibilityForCustomer, {'id': 'customer-product-visibility-changeset'})
@@ -99,21 +96,19 @@ Then, add ``visibilityForCustomer`` field in the template.
 
 Attribute ``id`` must be specified in the ``selector`` parameter of the grid config: ``selector: '#customer-product-visibility-changeset'``.
 
-As a result, field ``visibilityForCustomer`` which contains data in current format is going to be hidden:
+As a result, field ``visibilityForCustomer`` which contains data in the current format is going to be hidden:
 
 .. code-block:: twig
 
-
     {"<customerId>" : {"<visibility>" : "<value>", ...}, ... }
 
-3. **Create custom form handler with processing editable grid cells**
+3. **Create a custom form handler with processing editable grid cells**
 
 To convert enum value in the handler, use method ``getEnumValueByCode`` of the ``oro_entity_extend.enum_value_provider`` service.
 
-Below is an example of such handler:
+Below is an example of such a handler:
 
 .. code-block:: php
-
 
     ...
     /**
@@ -171,4 +166,3 @@ Below is an example of such handler:
         $this->manager->flush();
     }
     ...
-

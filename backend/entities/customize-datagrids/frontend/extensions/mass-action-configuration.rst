@@ -1,14 +1,11 @@
 Mass Action Configuration
 =========================
 
-Using the `themeOptions` parameters in the bundle `layout.yml` file, you can customize
-and tune the way individual mass actions and the mass actions group are shown in the UI,
-when the items delivered by the bundle are shown in the grid view.
+Using the `themeOptions` parameters in the bundle `layout.yml` file, you can customize and tune the way individual mass actions and the mass actions group are shown in the UI when the items delivered by the bundle are shown in the grid view.
 
 Sample configuration in the `layout.yml` file(s) in the ``Resources/views/layouts/theme/page/folder`` in the bundle (e.g., OrderBundle):
 
 .. code-block:: yaml
-
 
     layout:
         actions:
@@ -26,8 +23,7 @@ Sample configuration in the `layout.yml` file(s) in the ``Resources/views/layout
 Controlling Actions List View
 -----------------------------
 
-The `cellActionsHideCount` and `cellLauncherOptions > actionsState` parameters control the way mass actions collapse
-into the show more group (`...`) and will be displayd on hover over the `...`.
+The `cellActionsHideCount` and `cellLauncherOptions > actionsState` parameters control the way mass actions collapse into the show more group (`...`) and will be displayed on hover over the `...`.
 
 When not collapsed, the actions show inline with the item: 'three dots' menu is hidden.
 
@@ -38,14 +34,14 @@ In this case, the actionsHideCount value is ignored.
 
 A user sees only the 'three dots' menu.
 
-To keep all actions expanded, set `actionsState` to `show` and `actionsHideCount` to a reasonably large value (up to the max number of the actions you expect to get).
+To keep all actions expanded, set `actionsState` to `show` and `actionsHideCount` to a reasonably large value (up to the max number of actions you expect to get).
 
 A user sees all line items.
 
-To optimize the space organization, keep most used actions expanded and hide the less frequent ones.
-To do so, set `actionsHideCount` to the average number of the frequently used actions (e.g., 3).
+To optimize the space organization, keep the most used actions expanded and hide the less frequent ones.
+To do so, set `actionsHideCount` to the average number of frequently used actions (e.g., 3).
 
-.. hint:: Some line items are **inline**, other are **hidden**.
+.. hint:: Some line items are **inline**, and others are **hidden**.
 
 A user sees only some line items and the 'three dots' menu.
 
@@ -89,4 +85,3 @@ launcherMode: `text-only`
     <a class="action" href="#action_url">
         <%= label %>
     </a>
-

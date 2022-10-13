@@ -60,7 +60,6 @@ Usage example:
 
 .. code-block:: html
 
-
     <script type="text/template" id="row-template-selector">
         <b><%= model.label %></b><br/>
         <%= model.description %>
@@ -97,7 +96,6 @@ There is the option that allows to turn off Datagrid Settings over `datagrids.ym
 
 .. code-block:: yaml
 
-
     datagrids:
         my-grid:
             ...
@@ -115,7 +113,6 @@ When datagrid is rendered inside widget it's rowClickAction will be disabled and
 
 .. code-block:: javascript
 
-
     {
         datagrid: datagridInstance,
         model: selectedModel
@@ -125,7 +122,6 @@ When datagrid is rendered inside widget it's rowClickAction will be disabled and
 Usage example:
 
 .. code-block:: none
-
 
     {% import '@OroUI/macros.html.twig' as UI %}
 
@@ -149,7 +145,6 @@ Create js module with the handler definition ``your/row-selection/handler`` as s
 
 .. code-block:: javascript
 
-
     import widgetManager from 'oroui/js/widget-manager';
 
     export default function(options) {
@@ -171,7 +166,6 @@ Grid can become customizable through option `split_to_cells` of `datagrid` block
 
 .. code-block:: yaml
 
-
     id: account_users
     ...
     blockType: datagrid
@@ -184,7 +178,6 @@ Grid can become customizable through option `split_to_cells` of `datagrid` block
 According to `split_to_cells` option layout tree of the grid will have hierarchy like this:
 
 .. code-block:: none
-
 
     account_users
         account_users_header_row
@@ -210,7 +203,6 @@ Where `account_users` is the main block, which corresponds to block `id` of `dat
 Block `account_users` contains two other blocks: `account_users_header_row` and `account_users_row`. First responds to the table header, second - table row. In `account_users_header_row` we can see `<block_id>_cell_<column1...N>` blocks which corresponds to  `<th>...</th>` HTML structure. Columns `column1` ... `columnN` were taken from `datagrids.yml` config file:
 
 .. code-block:: yaml
-
 
     columns:
         firstName:
@@ -240,7 +232,6 @@ For example, we want to hide column `email` from `frontend-account-account-user-
 
 .. code-block:: yaml
 
-
     - '@remove':
         id: account_users_header_cell_email
 
@@ -251,7 +242,6 @@ For example, we want to hide column `email` from `frontend-account-account-user-
 In another case, suppose we want make `bold` content of column `firstName`. In `layout.yml.twig` you should create template like this:
 
 .. code-block:: twig
-
 
     {% block _account_users_cell_firstName_value_widget %}
         <b>{{ block_widget(block) }}</b>
@@ -266,7 +256,6 @@ Basic settings for layout grid
 1. In ``layouts/some_theme/layout.yml`` specify:
 
 .. code-block:: yaml
-
 
     layout:
         imports:
@@ -285,7 +274,6 @@ Basic settings for layout grid
 
 .. code-block:: yaml
 
-
     datagrids:
         frontend-some-grid:
     ...
@@ -295,7 +283,6 @@ As we see in `layout.yml`, we need to extend generic layout block first. Later d
 If we open generic layout block for `base` theme (``base/imports/datagrid/layout.yml``) we could see other related with datagrid block: `datagrid_toolbar`:
 
 .. code-block:: yaml
-
 
     layout:
         imports:
@@ -324,7 +311,6 @@ For example, we can set block visibility based on some logic using Symfony expre
 
 .. code-block:: yaml
 
-
     layout:
         actions:
             - '@add':
@@ -339,7 +325,6 @@ For example, we can set block visibility based on some logic using Symfony expre
 In ``DataGridBundle/Layout/Block/Type/DatagridType.php`` defined additional parameters used for grid rendering:
 
 .. code-block:: php
-
 
     'grid_parameters' => [],
     'grid_render_parameters' => [],
@@ -361,7 +346,6 @@ In ``SaleBundle/Resources/views/layouts/default/imports/oro_sale_quote_grid/layo
 
 .. code-block:: yaml
 
-
     - '@setOption':
         id: __datagrid
         optionName: grid_render_parameters
@@ -373,7 +357,6 @@ If we inspect HTML page with grid we see that class atrribute was added to div e
 In order to pass some extra param to grid request lets specify for example `web_catalog_id` context param:
 
 .. code-block:: yaml
-
 
     - '@setOption':
         id: __datagrid

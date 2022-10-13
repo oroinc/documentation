@@ -48,7 +48,7 @@ Example:
 Add Settings to entity_config.yml
 ---------------------------------
 
-To illustrate how metadata can be added to an entity, add the following YAML file (this file must be located in ``[BundleName]/Resources/config/oro/entity_config.yml``):
+To illustrate how you can add metadata to an entity, add the following YAML file (this file must be located in ``[BundleName]/Resources/config/oro/entity_config.yml``):
 
 .. code-block:: yaml
 
@@ -61,7 +61,7 @@ To illustrate how metadata can be added to an entity, add the following YAML fil
                             priority: 100
                             indexed:  true
 
-This configuration adds the 'demo_attr' attribute with the 'Demo' value to all configurable entities. The configurable entity is an entity marked with the `@Config` annotation. This code also automatically adds a service named **oro_entity_config.provider.acme** into the DI container. You can use this service to get a value of the 'demo_attr' attribute for a particular entity.
+This configuration adds the 'demo_attr' attribute with the 'Demo' value to all configurable entities. The configurable entity is an entity marked with the `@Config` annotation. This code also automatically adds a service named **oro_entity_config.provider.acme** into the DI container. You can use this service to get the value of a particular entity's 'demo_attr' attribute.
 
 To apply this change, execute the **oro:entity-config:update** command that updates configuration data for entities:
 
@@ -121,7 +121,7 @@ The result is demonstrated in the following code:
         // the value of $demoAttr2 variable will be 'MyValue'
         $demoAttr2 = $acmeConfigProvider->getConfig('Acme\Bundle\DemoBundle\Entity\MyEntity')->get('demo_attr');
 
-Essentially, it is all you need to add metadata to any entity. But in most cases you want to allow an administrator to manage your attribute in UI. To accomplish this, let's change the YAML file the following way:
+Essentially, it is all you need to add metadata to any entity. But in most cases, you want to allow an administrator to manage your attribute in UI. To accomplish this, let's change the YAML file the following way:
 
 .. code-block:: yaml
 
@@ -149,7 +149,7 @@ Essentially, it is all you need to add metadata to any entity. But in most cases
                                 block:     entity       # specifies in which block on the form this attribute should be displayed
                                 label:     'Demo Attr'  # sets the label name
 
-Now you can go to System > Entities in the back-office. The 'Demo Attr' column should be displayed in the grid. Click Edit on any entity to open the edit entity form. 'Demo Attr' field should be displayed there.
+Now you can go to System > Entities in the back-office. The 'Demo Attr' column should be displayed in the grid. Click Edit on any entity to open the edit entity form. The 'Demo Attr' field should be displayed there.
 
 .. hint:: Check out the :ref:`example of YAML config <yaml-format-config-entity>`.
 

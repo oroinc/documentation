@@ -3,7 +3,7 @@
 CRUD Operations
 ===============
 
-To let the users create new tasks and edit existing ones you need to perform several steps:
+To let the users create new tasks and edit existing ones, follow these steps:
 
 #. :ref:`Create a form type for the Task entity <cookbook-entity-form-type>`.
 
@@ -57,9 +57,7 @@ needed to describe a task:
 The Controllers
 ---------------
 
-You then need to create a controller class that comes with two actions: one that is called when a
-new task should be created, and one that is able to fetch an existing task to let the user modify
-its data:
+You then need to create a controller class that comes with two actions: one that is called when a new task should be created and one that can fetch an existing task to let the user modify its data:
 
 .. code-block:: php
    :caption: src/AppBundle/Controller/TaskController.php
@@ -121,10 +119,7 @@ which controller needs to be called for particular routes:
 The Template
 ------------
 
-The template that is responsible to display the form fields should extend the base template
-``@OroUI/actions/update.html.twig`` from the OroUIBundle. This templates defines some basic blocks
-that you can use. This way your own forms will provide the same look and feel as the ones coming
-with OroPlatform:
+The template that is responsible for displaying the form fields should extend the base template ``@OroUI/actions/update.html.twig`` from the OroUIBundle. This template defines some basic blocks that you can use. This way, your own forms will provide the same look and feel as the ones coming with OroPlatform:
 
 .. code-block:: none
    :caption: src/AppBundle/Resources/views/Task/update.html.twig
@@ -208,14 +203,11 @@ with OroPlatform:
 Linking the Data Grid
 ---------------------
 
-Finally, you need to link both actions on the page that displays the list of tasks:
+Finally, link both actions on the page that displays the list of tasks:
 
 **1. Add a link to create new tasks**
 
-The base ``@OroUI/actions/index.html.twig`` template from the OroUIBundle that you
-:ref:`already used <cookbook-entities-grid-controller>` to embed the data grid comes with a
-pre-defined ``navButtons`` block which you can use to add a button that links to the *create task
-action*:
+The base ``@OroUI/actions/index.html.twig`` template from the OroUIBundle that you :ref:`already used <cookbook-entities-grid-controller>` to embed the data grid comes with a pre-defined ``navButtons`` block, which you can use to add a button that links to the *create a task action*:
 
 .. code-block:: html+jinja
    :caption: src/AppBundle/Resources/views/Task/index.html.twig
@@ -236,9 +228,7 @@ action*:
 
 **2. Link task rows to the related update action**
 
-To make it possible to modify each task you need to define a property that describes how the URL of
-the update action is built and then add this URL to the list of available actions in your data grid
-configuration:
+To make it possible to modify each task, you need to define a property that describes how the URL of the update action is built, and then add this URL to the list of available actions in your data grid configuration:
 
 .. code-block:: yaml
    :caption: src/AppBundle/Resources/config/oro/datagrids.yml
@@ -267,10 +257,9 @@ configuration:
 Deleting Entities
 -----------------
 
-You can delete a task either through the ``DELETE`` operation available for all entities by default or through the customized one. When running ``DELETE``, ensure that your entity has a route from the ``routeName`` option of the entity configuration.
+You can delete a task through the ``DELETE`` operation available for all entities by default or through the customized one. When running ``DELETE``, ensure that your entity has a route from the ``routeName`` option of the entity configuration.
 
-
-You can delete an entity through the :ref:`DELETE operation <bundle-docs-platform-action-bundle-default-operations>` which is enabled by default for all entities. To run the operation, you need to ensure that your entity has the ``routeName`` option of the entity configuration which will be used as a route name to redirect a user after the ``DELETE`` operation (as in the example below).
+You can delete an entity through the :ref:`DELETE operation <bundle-docs-platform-action-bundle-default-operations>` which is enabled by default for all entities. To run the operation, you need to ensure that your entity has the ``routeName`` option of the entity configuration, which will be used as a route name to redirect a user after the ``DELETE`` operation (as in the example below).
 
 .. code-block:: php
 
@@ -285,7 +274,7 @@ You can delete an entity through the :ref:`DELETE operation <bundle-docs-platfor
 
 See the sample configuration of the default ``DELETE`` operation in the |Actions| topic.
 
-If the default configuration is not valid for your particular case, create your own operation that would inherit from the default one following the example:
+If the default configuration is not valid for your particular case, create your own operation that would inherit from the default one, following the example:
 
 .. code-block:: php
 
@@ -314,3 +303,4 @@ If the default configuration is not valid for your particular case, create your 
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+

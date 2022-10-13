@@ -5,12 +5,12 @@
 Sorter Extension
 ================
 
-This extension provides sorting, it also is responsible for passing the "sorter" settings to the view layer.
+This extension provides sorting and is responsible for passing the "sorter" settings to the view layer.
 
 Settings
 --------
 
-Sorters setting should be placed under the `sorters` tree node.
+The sorters setting should be placed under the `sorters` tree node.
 
 .. code-block:: none
 
@@ -80,10 +80,10 @@ Sorters setting should be placed under the `sorters` tree node.
                     1. If a customer already selected 'not_selected' option earlier.
                     2. If the 'default' option is empty or not defined
                     3. If the 'disable_default_sorting' option is set to true
-            
+
 
 
 .. note::
      * Customization can be done using the `apply_callback` options.
      * Column name should be equal to the name of the corresponding column.
-     * You must disable the sorter if it is defined but the column is disabled
+     * Disable the sorter if it is defined but the column is disabled

@@ -3,11 +3,11 @@
 Extensions
 ==========
 
-A datagrid object only takes care of converting datasource to the result set. All other operations are performed by extensions(e.g., pagination, filtering, etc.).
+A datagrid object only takes care of converting datasource to the result set. All other operations are performed by extensions (e.g., pagination, filtering, etc.).
 
 Here is a list of already implemented extensions:
 
-- :ref:`Formatter <customize-datagrids-extensions-formatter>` - responsible for backend field formatting(e.g., generating URL using router, translation using Symfony translator, etc.). This extension also takes care about passing columns configuration to the view layer.
+- :ref:`Formatter <customize-datagrids-extensions-formatter>` - responsible for backend field formatting(e.g., generating URL using router, translation using Symfony translator, etc.). This extension also takes care of passing column configuration to the view layer.
 - :ref:`Pager <customize-datagrid-extensions-pager>` - responsible for pagination
 - :ref:`Sorter <customize-datagrids-extensions-sorters>` - responsible for sorting
 - :ref:`Action <customize-datagrids-extensions-action>` - provides actions configurations for grid
@@ -22,9 +22,9 @@ Here is a list of already implemented extensions:
 Customization
 -------------
 
-To implement your extension you have to do following:
+To implement your extension:
 
-- Develop class that implements ExtensionVisitorInterface (also there is basic implementation in AbstractExtension class)
+- Develop a class that implements ExtensionVisitorInterface (there is also a basic implementation in AbstractExtension class)
 - Register you extension as service with tag { name: oro_datagrid.extension }
 
 .. toctree::

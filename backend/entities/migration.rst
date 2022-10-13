@@ -6,7 +6,7 @@ Database Structure Migrations
 
 Each bundle can have migration files that enable you to update the database schema.
 
-To create a schema (database structure) migration, follow a few steps below.
+To create a schema (database structure) migration, follow the steps below.
 
 Create Schema Migration
 -----------------------
@@ -25,7 +25,7 @@ After you have modeled your entities, you need to update the database schema. To
 
 ..    php bin/console doctrine:schema:update --dump-sql
 
-If the command displays unexpected information, double-check the configured mapping information and rerun the command.
+Double-check the configured mapping information and rerun the command if the command displays unexpected information.
 
 When everything is displayed as expected, update the database schema by passing the ``--force`` option:
 
@@ -53,7 +53,7 @@ When everything is displayed as expected, update the database schema by passing 
     Do not use the ``doctrine:schema:update`` command with your production database. Instead,
     create migrations to update the schema of your database. You can read more about using
     migrations in the :ref:`Update Database Schema <book-entities-database-schema-update>` section. To run migrations
-    and emulate complete migration process, use the ``oro:platform:update`` command.
+    and emulate the complete migration process, use the ``oro:platform:update`` command.
 
 .. _installer_generate:
 
@@ -63,7 +63,7 @@ Generate an Installer
 Generate an Installer for a Bundle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When you have implemented new entities, you want to be sure that upon installing the application, the entities are added to the database. For this, you need to create an installer :ref:`migration <backend-entities-migrations>`. You can do it manually, however, it is more convenient to use a dump of the database as a template.
+When you have implemented new entities, ensure that the entities are added to the database on installing the application. For this, you need to create an installer :ref:`migration <backend-entities-migrations>`. You can do it manually, however, it is more convenient to use a database dump as a template.
 
 To create an installer for DemoBundle:
 
@@ -116,7 +116,7 @@ Each bundle can have an **installation** file. This migration file replaces runn
 
 When an install migration file is found during the install process (when you install the system from scratch), it is loaded first, followed by the migration files with versions greater than the version returned by the `getMigrationVersion` method.
 
-For example, let's assume we have migrations `v1_0`, `v1_1`, `v1_2`, `v1_3` and installed the migration class. This class returns `v1_2` as the migration version. That is why, during the install process, the install migration file is loaded first, followed only by migration file `v1_3`. In this case, migrations from `v1_0` to `v1_2` are not loaded.
+For example, let's assume we have migrations `v1_0`, `v1_1`, `v1_2`, `v1_3` and installed the migration class. This class returns `v1_2` as the migration version. That is why, during the installation process, the install migration file is loaded first, followed only by the migration file `v1_3`. In this case, migrations from `v1_0` to `v1_2` are not loaded.
 
 Below is an example of an install migration file:
 
@@ -189,10 +189,10 @@ A good practice is for a bundle to have the installation file for the current ve
 
 Migration files should be located in the ``Migrations\Schema\version_number`` folder. A version number must be a PHP-standardized version number string but with some limitations. This string must not contain "." and "+" characters as a version parts separator. You can find more information about PHP-standardized version number string in the |PHP manual|.
 
-Each migration class must implement the |Migration| interface and the `up` method. This method receives a current database structure in the `schema` parameter and `queries` parameter, adding additional queries.
+Each migration class must implement the |Migration| interface and the `up` method. This method receives a current database structure in the `schema` and `queries` parameters, adding additional queries.
 
 With the `schema` parameter, you can create or update the database structure without fear of compatibility between database engines.
-If you want to execute additional SQL queries before or after applying a schema modification, you can use the `queries` parameter. This parameter represents a |query bag| and allows to add additional queries which will be executed before (`addPreQuery` method) or after (`addQuery` or `addPostQuery` method). A query can be a string or an instance of a class that implements |MigrationQuery| interface. There are several ready to use implementations of this interface:
+You can use the' queries' parameter if you want to execute additional SQL queries before or after applying a schema modification. This parameter represents a |query bag| and allows adding additional queries, which will be executed before (`addPreQuery` method) or after (`addQuery` or `addPostQuery` method). A query can be a string or an instance of a class that implements |MigrationQuery| interface. There are several ready-to-use implementations of this interface:
 
  - |SqlMigrationQuery| - represents one or more SQL queries
  - |ParametrizedSqlMigrationQuery| - similar to the previous class, but each query can have its own parameters.
@@ -249,7 +249,7 @@ This command supports the following additional options:
 - **force** - Causes the generated by migrations SQL statements to be physically executed against your database;
 - **dry-run** - Outputs list of migrations without applying them;
 - **show-queries** - Outputs list of database queries for each migration file;
-- **bundles** - A list of bundles to load data from. If option is not set, migrations are taken from all bundles;
+- **bundles** - A list of bundles from which to load data. If the option is not set, migrations are taken from all bundles;
 - **exclude** - A list of bundle names where migrations should be skipped.
 
 Examples of Database Structure Migrations
@@ -262,7 +262,7 @@ Examples of Database Structure Migrations
 Extensions for Database Structure Migrations
 --------------------------------------------
 
-You cannot always use standard Doctrine methods to modify the database structure. For example, ``Schema::renameTable`` does not work because it drops an existing table and then creates a new one. To help you manage such a case and enable you to to add additional functionality to any migration, use the extensions mechanism. The following example illustrates how |RenameExtension| can be used:
+You cannot always use standard Doctrine methods to modify the database structure. For example, ``Schema::renameTable`` does not work because it drops an existing table and then creates a new one. To help you manage such a case and enable you to add additional functionality to any migration, use the extensions mechanism. The following example illustrates how |RenameExtension| can be used:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/TestRenameTable.php
@@ -297,7 +297,7 @@ You cannot always use standard Doctrine methods to modify the database structure
 
 As you can see from the example above, your migration class should implement |RenameExtensionAwareInterface| and `setRenameExtension` method in order to use the |RenameExtension|.
 
-Another example below illustrates how to use database specific features in migration:
+Another example below illustrates how to use database-specific features in migration:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_3/CreateFunctionalIndex.php
@@ -335,7 +335,7 @@ Another example below illustrates how to use database specific features in migra
 
 You can also use the following additional interfaces in your migration class:
 
-- `ContainerAwareInterface` - provides an access to Symfony dependency container.
+- `ContainerAwareInterface` - provides access to Symfony dependency container.
 - |DatabasePlatformAwareInterface| - allows to write database type independent migrations.
 - |ConnectionAwareInterface| - provides access to the database connection.
 - |NameGeneratorAwareInterface| - provides access to the |DbIdentifierNameGenerator| class used to generate names of indices, foreign key constraints, etc.
@@ -358,7 +358,7 @@ Here is a list of available extensions:
 
 * |ActivityListExtension| - Adds association between the given table and the activity list table. See an example of usage in the :ref:`Activity List Inheritance Targets documentation <bundle-docs-platform-activity-list-bundle-inheritance>`.
 
-* |AttachmentExtension| - Provides an ability to create file and attachment fields and attachment association. More information is available in the :ref:`Use Migration Extension Example in AttachmentBundle <attachment-bundle-migration-extension>`.
+* |AttachmentExtension| - Provides an ability to create file and attachment fields and attachment associations. More information is available in the :ref:`Use Migration Extension Example in AttachmentBundle <attachment-bundle-migration-extension>`.
 
 * |CommentExtension| - Adds comments association to the entity. More information is available in |Enable Comment Association with New Activity Entity|.
 
@@ -366,7 +366,7 @@ Here is a list of available extensions:
 
 * |ChangeTypeExtension| - Allows to change the type of entity primary column type.
 
-* |ExtendExtension| - Provides the ability to create extended enum tables and fields, and add relations between tables. More information is available in the :ref:`Create Custom Entities <backend-entities-create-custom-entities>` topic.
+* |ExtendExtension| - Provides the ability to create extended enum tables and fields and add relations between tables. More information is available in the :ref:`Create Custom Entities <backend-entities-create-custom-entities>` topic.
 
 * |ConvertToExtendExtension| - Allows to convert existing entity field to extended.
 
@@ -374,7 +374,7 @@ Here is a list of available extensions:
 
 * |DataStorageExtension|- Used ito exchange data between different migrations.
 
-* |ScopeExtension| - Adds  association between the target table and the scope table.
+* |ScopeExtension| - Adds association between the target table and the scope table.
 
 * |SerializedFieldsExtension| - The migration extension that helps manage serialized fields of extended entities. More information is available in the :ref:`Serialized Fields <book-entities-extended-entities-serialized-fields>` topic.
 
@@ -385,7 +385,7 @@ Create Extensions for Database Structure Migrations
 
 To create your own extension:
 
-1. Create an extension class in the ``YourBundle/Migration/Extension`` directory. Using ``YourBundle/Migration/Extension`` directory is not mandatory, but highly recommended. For example:
+1. Create an extension class in the ``YourBundle/Migration/Extension`` directory. Using the ``YourBundle/Migration/Extension`` directory is not mandatory but highly recommended. For example:
 
    .. code-block:: php
       :caption: src/Acme/Bundle/DemoBundle/Migrations/Extension/MyExtension.php
@@ -414,7 +414,7 @@ To create your own extension:
         namespace Acme\Bundle\DemoBundle\Migration\Extension;
 
         /**
-         * MyExtensionAwareInterface should be implemented by migrations that depends on a MyExtension.
+         * MyExtensionAwareInterface should be implemented by migrations that depend on a MyExtension.
          */
         interface MyExtensionAwareInterface
         {
@@ -434,7 +434,7 @@ To create your own extension:
         services:
             Acme\Bundle\DemoBundle\Migration\Extension\MyExtension:
                 tags:
-                    - { name: oro_migration.extension, extension_name: test /*, priority: -10 - priority attribute is optional an can be helpful if you need to override existing extension */ }
+                    - { name: oro_migration.extension, extension_name: test /*, priority: -10 - priority attribute is optional and can be helpful if you need to override existing extension */ }
 
 To access the database platform or the name generator, your extension class should implement |DatabasePlatformAwareInterface| or |NameGeneratorAwareInterface| appropriately.
 
@@ -473,7 +473,7 @@ The ``Oro\Bundle\MigrationBundle\Migration\Loader\MigrationsLoader`` dispatches 
 
     You can learn more about |custom event listeners| in the Symfony documentation.
 
-Migrations registered in the *oro_migration.pre_up* event are executed before the *main* migrations while migrations registered in the *oro_migration.post_up* event are executed after the *main* migrations have been processed.
+Migrations registered in the *oro_migration.pre_up* event are executed before the *main* migrations, while migrations registered in the *oro_migration.post_up* event are executed after the *main* migrations have been processed.
 
 
 .. admonition:: Business Tip
@@ -485,4 +485,3 @@ Migrations registered in the *oro_migration.pre_up* event are executed before th
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
-
