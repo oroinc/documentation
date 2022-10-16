@@ -76,8 +76,11 @@ See :ref:`Enable Advanced Operators for String Filter <advanced-operators-for-st
 The following filters are also configured automatically:
 
 - The `composite_identifier` filter for the ID field if an entity has a composite identifier.
-  The operators enabled for this filter are `=`, `!=`, `*`, `!*`.
+  The operators enabled for this filter are `=`, `!=`.
   It is implemented by |CompositeIdentifierFilter|.
+- The `association_composite_identifier` filter for the ID field if an association has a composite identifier.
+  The operators enabled for this filter are `=`, `!=`.
+  It is implemented by |AssociationCompositeIdentifierFilter|.
 - The `association` filter for :ref:`multi-target associations <book-entities-extended-entities-multi-target-associations>`.
   The operators enabled for this filter are `=`, `!=`, `*`, `!*`.
   It is implemented by |ExtendedAssociationFilter|.
@@ -121,7 +124,7 @@ FieldFilterInterface Interface
 
 The |FieldFilterInterface| is a marker interface that filters applied to a field must implement.
 
-Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |CompositeIdentifierFilter|, |NestedTreeFilter|, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |CompositeIdentifierFilter|, |AssociationCompositeIdentifierFilter|, |NestedTreeFilter|, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
 
 .. _fieldawarefilterinterface:
 
@@ -130,7 +133,7 @@ FieldAwareFilterInterface Interface
 
 Filters that are applied to a field and need to know the field name. must implement the |FieldAwareFilterInterface| interface.
 
-Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter|, |PrimaryFieldFilter| and |AssociationCompositeIdentifierFilter|.
 
 .. _collectionawarefilterinterface:
 
@@ -154,7 +157,7 @@ MetadataAwareFilterInterface Interface
 --------------------------------------
 
 Filters that depend on the |entity metadata| must implement the |MetadataAwareFilterInterface| interface.
-An example of such a filter is |CompositeIdentifierFilter|.
+An example of such a filter is |CompositeIdentifierFilter| and |AssociationCompositeIdentifierFilter|.
 
 .. _requestawarefilterinterface:
 
@@ -163,7 +166,7 @@ RequestAwareFilterInterface Interface
 
 Filters that depend on a :ref:`request type <api-request-type>` must implement the |RequestAwareFilterInterface| interface.
 
-Examples of such filters are |ExtendedAssociationFilter| and |CompositeIdentifierFilter|.
+Examples of such filters are |ExtendedAssociationFilter|, |CompositeIdentifierFilter| and |AssociationCompositeIdentifierFilter|.
 
 .. _selfidentifiablefilterinterface:
 
@@ -204,6 +207,7 @@ Examples of such filters are:
 * :ref:`ComparisonFilter <comparisonfilter-filter>`
 * |ExtendedAssociationFilter|
 * |CompositeIdentifierFilter|
+* |AssociationCompositeIdentifierFilter|
 * |NestedTreeFilter|
 * |SearchQueryFilter|
 * |SearchAggregationFilter|

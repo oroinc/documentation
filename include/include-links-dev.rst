@@ -899,6 +899,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/CompositeIdentifierFilter.php" target="_blank">CompositeIdentifierFilter</a>
 
+.. |AssociationCompositeIdentifierFilter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/AssociationCompositeIdentifierFilter.php" target="_blank">AssociationCompositeIdentifierFilter</a>
+
 .. |ExtendedAssociationFilter| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/ExtendedAssociationFilter.php" target="_blank">ExtendedAssociationFilter</a>
