@@ -308,7 +308,7 @@ The attribute set owner of the entity. For more information, see :ref:`Access Le
 Attributes for frontend owners: **frontend_owner_field_name**, **frontend_owner_column_name**,
 **frontend_customer_field_name**, **frontend_customer_column_name**.
 
-* **global_view** *boolean* - allows to show entities from an organization with system access to another organization.
+* **global_view** *boolean* - allows to show entities from an organization with system access to another organization. For more information, see the :ref:`Global View Entities <backend-security-bundle-global-view-entities>` topic.
 
 ``reminder``
 ~~~~~~~~~~~~
