@@ -3,7 +3,7 @@
 Content and User Interface Translation
 ======================================
 
-There are 3 ways to translate content displayed in Oro applications to a user. You can use:
+There are three ways to translate content displayed in Oro applications to a user. You can use:
 
 * `Standard Symfony Translator`_
 * `Translatable Doctrine Extension`_
@@ -32,7 +32,7 @@ To translate labels, use the Translation component, which is one of the main Sym
 Oro application adds the translation functionality on top of Symfony's standard approach which enables modification of
 translations via UI.
 
-To use this approach, add translations to |Symfony Translation Files|, e.g. `Resources/translations/messages.en.yml`:
+To use this approach, add translations to |Symfony Translation Files|, e.g., `Resources/translations/messages.en.yml`:
 
 .. code-block:: yaml
 

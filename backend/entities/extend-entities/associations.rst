@@ -3,15 +3,15 @@
 Extended Associations
 =====================
 
-This topic shows how to create different types of relationships between entities when the entity type for
-the target side of the relationship is known. For more complex cases, see
+This topic shows how to create different types of relationships between entities when you know the entity type for
+the target side of the relationship. For more complex cases, see
 :ref:`Multi-Target Extended Associations <book-entities-extended-entities-multi-target-associations>`.
 
 Limitations
 -----------
 
-A new relationship may be created between two entities when at least one entity on the *owning* side of the relationship
-(the one that owns the foreign key in the database) is extendable. This rule enables creating a relationship for
+A new relationship can be created between two entities when at least one entity on the *owning* side of the relationship
+(the one that owns the foreign key in the database) is extendable. This rule enables you to create a relationship for
 the following combinations of entities:
 
 .. csv-table::

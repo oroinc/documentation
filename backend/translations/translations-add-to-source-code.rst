@@ -5,7 +5,7 @@ Add Translations To Source Code
 
 Out-of-the-box, only base English translations (``en`` language code) are loaded from the translation files.
 As described in |Symfony Translation Files|, these files are located in the `Resources/translations` directory of any bundle
-and the `translations` directory of the application, e.g. `Resources/translations/messages.en.yml`,
+and the `translations` directory of the application, e.g., `Resources/translations/messages.en.yml`,
 `Resources/translations/validators.en.yml`, etc.
 These translations are compiled in the :ref:`Symfony translation catalogues <dev-translation--symfony-translator>`,
 which are sets of PHP files. As a result, these files are cached by |OPcache| and so it is fairly quick to get these translations.
