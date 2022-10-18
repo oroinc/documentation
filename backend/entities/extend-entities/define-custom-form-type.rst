@@ -3,15 +3,14 @@
 Define Custom Form Type for Fields
 ----------------------------------
 
-Extended fields are rendered as HTML controls, and control type (text, textarea, number, checkbox, etc) is guessed by
-classes implementing |Symfony FormTypeGuesserInterface|.
+Extended fields are rendered as HTML controls, and control type (text, textarea, number, checkbox, etc.) is defined by
+classes that implement |Symfony FormTypeGuesserInterface|.
 
-In case of extended fields, OroPlatform has three guessers (with decreasing priority):
-|FormConfigGuesser|, |ExtendFieldTypeGuesser| and |DoctrineTypeGuesser|.
+In case of extended fields, OroPlatform has three guessers (in decreasing priority): |FormConfigGuesser|, |ExtendFieldTypeGuesser| and |DoctrineTypeGuesser|.
 
 Each provides guesses, and the best guess is selected based on the guesser's confidence (low, medium, high, very high).
 
-There are a few ways to define a custom form type and form options for a particular extend field:
+There are a few ways to define a custom form type and form options for a particular extended field:
 
 #. Through the compiler pass to add or override the guesser's mappings:
 

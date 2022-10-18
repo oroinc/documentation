@@ -17,23 +17,20 @@ For the frontend clients, the authentication ticket can be received by calling t
 route. The response to this request is the JSON object with a ticket field containing a one-time authentication
 ticket.
 
-If the client is backend client, the authentication ticket can be received by calling the **generateTicket** method
-of the |oro_sync.authentication.ticket_provider| service.
+If the client is a backend client, the authentication ticket can be received by calling the **generateTicket** method of the |oro_sync.authentication.ticket_provider| service.
 
-A ticket can be one of two types: 
+A ticket can be of two types:
 
-1. Representing an authenticated user
+1. Representing an authenticated user.
 2. Representing an anonymous client.
 
-The anonymous client ticket could be used only from backend to publish messages using the
-:ref:`WebSocket client <dev-cookbook-system-websockets-publish-to-topic>` service.
+The anonymous client ticket could be used only from the backend to publish messages using the :ref:`WebSocket client <dev-cookbook-system-websockets-publish-to-topic>` service.
 
-The anonymous ticket is generated using a secret key in the application configuration and cannot be
-created without this key.
+The anonymous ticket is generated using a secret key in the application configuration and cannot be created without this key.
 
 Authentication tickets have a limited lifetime of 300 seconds by default.
 
-If the authentication was successful, the client will be able to subscribe and send new messages to topics.
+If the authentication is successful, the client is able to subscribe and send new messages to topics.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

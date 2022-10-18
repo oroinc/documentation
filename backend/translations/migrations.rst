@@ -7,12 +7,12 @@ Provides a useful way to delete custom translation keys during migration.
 
 **Arguments**:
 
-* `domain` (string) - domain of translation keys to process removal by
-* `translationKeys` (array) - an array of translation key strings to remove
+* `domain` (string) - a domain of translation keys to be removed
+* `translationKeys` (array) - an array of translation key strings to be removed
 
 **Example**:
 
-To remove custom keys in your migration, use method `addQuery` of ``Oro\Bundle\MigrationBundle\Migration\QueryBag``.
+To remove custom keys in your migration, use the `addQuery` method of ``Oro\Bundle\MigrationBundle\Migration\QueryBag``.
    
 .. code-block:: php
 
@@ -24,6 +24,6 @@ To remove custom keys in your migration, use method `addQuery` of ``Oro\Bundle\M
     );
 
 
-An ``Oro\Bundle\MigrationBundle\Migration\QueryBag`` instance is usually available in ``Oro\Bundle\MigrationBundle\Migration\Migration::up`` method as second argument.
+An ``Oro\Bundle\MigrationBundle\Migration\QueryBag`` instance is usually available in the ``Oro\Bundle\MigrationBundle\Migration\Migration::up`` method as the second argument.
 
 See :ref:`migration details <backend-entities-migrations>` for more information.

@@ -1,41 +1,28 @@
 Localization
 ============
 
-Localization is the process of translating and adapting a product for a specific
-country or region. OroPlatform allows a user to customize the format of
-date/time/datetime, numeric and percent values, monetary values as well as
-the format of names and addresses.
+Localization is the process of translating and adapting a product for a specific country or region. OroPlatform allows a user to customize the format of date/time/datetime, numeric and percent values, monetary values, and the format of names and addresses.
 
 System Configuration
 --------------------
 
-The OroPlatform system configuration which is available in the **System > Configuration** menu has a special **Localization** section that defines localization parameters.
+To define localization parameters, navigate to the **System > Configuration > General Setup > Localization** menu in the system configuration.
 
 .. image:: /img/backend/localization/system_configuration.png
    :alt: Localization configuration settings
 
-- **Primary Location**: usually refers to the current country and is used
-  to define appropriate address formats and the default currency;
-- **Format address per country**: is a flag used to define whether or not
-  an address should be formatted according to the rules of its country, or
-  if the primary location of the application should be used instead;
-- **First Quarter Starts on**: defines the first day of the first quarter.
-  This value is used to generate proper reports;
-- **Timezone**: defines which timezone should be used to render time and datetime
-  values;
-- **Temperature Unit** and **Wind Speed Unit** are used to render additional
-  information on location maps.
-
-- **Default Localization**: specifies the default language of the back-office and storefront UI.
-
-- **Enabled Localizations**: provides the list of localizations generated automatically based on the data preconfigured in the **System > Localization > Localizations** menu.
+* **Primary Location** --- usually refers to the current country and is used to define appropriate address formats and the default currency.
+* **Format Address per country** --- a flag used to define whether or not the address should be formatted according to the rules of its country, or if the primary location of the application should be used instead.
+* **Timezone** --- defines which timezone should be used to render time and datetime values.
+* **First Quarter Starts on** --- defines the first day of the first quarter. This value is used to generate proper reports.
+* **Temperature Unit** and **Wind Speed Unit** --- used to render additional information on location maps.
+* **Default Localization** --- specifies the default language of the back-office and storefront UI.
+* **Enabled Localizations** --- provides the list of localizations generated automatically based on the data preconfigured under the **System > Localization > Localizations** back-office menu.
 
 Configuration Files
 -------------------
 
-Localization information is stored in configuration files. Each bundle can
-add its own localization information using appropriate files (each has to
-be stored in the bundle's ``Resources/config/oro`` directory):
+Localization information is stored in configuration files. Each bundle can add its own localization information using appropriate files (each has to be stored in the bundle's ``Resources/config/oro`` directory):
 
 ``locale_data.yml``
 ~~~~~~~~~~~~~~~~~~~
@@ -52,12 +39,12 @@ be stored in the bundle's ``Resources/config/oro`` directory):
         phone_prefix: '7'
         default_locale: ru
 
-This file contains the most basic information for countries (``US`` and ``RU``
-are country codes as defined by |ISO 3166|). Each country configuration provides
-information about a country’s currency (according to |ISO 4217|), the phone
-number prefix (as defined in |E.164|) and its default locale (e.g. the locale
-that is used to define the appropriate name format by country for specific
-address).
+This file contains the most basic information for countries (``US`` and ``RU`` are country codes as defined by |ISO 3166|).
+
+Each country configuration provides the information about a country’s currency (according to |ISO 4217|):
+
+* the phone number prefix (as defined in |E.164|)
+* its default locale (e.g., the locale that is used to define the appropriate name format by country for specific address).
 
 .. _localization-config-file-name-format:
 
@@ -92,9 +79,7 @@ This file specifies a name format per locale. Allowed placeholders are:
     RU:
         format: "%postal_code% %COUNTRY% %CITY%\n%STREET%\n%organization%\n%name%"
 
-This file specifies the name format for addresses and, optionally, some additional
-address information. Each placeholder can be lowercased (data will be rendered
-as is) or uppercased (data will be rendered in upper case).
+This file specifies the name format for addresses and, optionally, some additional address information. Each placeholder can be lowercase (data will be rendered as is) or uppercase (data will be rendered in upper case).
 
 The allowed placeholders are:
 
@@ -113,13 +98,9 @@ The allowed placeholders are:
 Date and Numeric Formatting
 ---------------------------
 
-Both dates and numbers (decimal, percent or currency) are formatted using
-|INTL library| functions. Therefore, this library is required and dates and
-numbers are formatted according to the installed version of the library.
+Both dates and numbers (decimal, percent, or currency) are formatted using the |INTL library| functions. Therefore, this library is required and dates and numbers are formatted according to the installed version of the library.
 
-The application provides formatter services that can be used to format dates
-and numbers in the backend which are actually simple wrappers for the INTL
-library:
+The application provides formatter services that can be used to format dates and numbers in the backend which serve as wrappers for the INTL library:
 
 * ``Oro\Bundle\LocaleBundle\Formatter\DateTimeFormatter``
 
@@ -149,8 +130,7 @@ These formatter methods can be used in twig templates as filters:
 - ``oro_format_duration``
 - ``oro_format_ordinal``
 
-For example, the following Twig template prints a formatted datetime and a
-formatted monetary value:
+For example, the following Twig template prints a formatted datetime and a formatted monetary value:
 
 .. code-block:: jinja
 
@@ -158,8 +138,7 @@ formatted monetary value:
     {{ entity.createdAt|oro_format_datetime }}
     {{ item.value|oro_format_currency }}
 
-Supposed that the current locale is ``en`` and that ``USD`` is the currency
-being used, the template will render the following values:
+Suppose that the current locale is ``en``, and that the currency is ``USD``, the template will render the following values:
 
 .. code-block:: text
 
@@ -167,9 +146,7 @@ being used, the template will render the following values:
     May 28, 2014 1:40 PM
     $5,103.00
 
-In addition to backend formatters, the application also provides the following
-similar formatters on the frontend side which are powered by JavaScript and
-can be accessed using JS modules aliases:
+In addition to backend formatters, the application also provides the following JavaScript-powered similar formatters on the frontend side which can be accessed using JS modules aliases:
 
 - ``orolocale/js/formatter/datetime`` (|datetime.js|)
     * ``formatDate(value)``
@@ -185,12 +162,9 @@ can be accessed using JS modules aliases:
 Name Formatting
 ---------------
 
-Some entities in the application may have names that require localization
-before they’re rendered. Localization includes the formatting of name parts
-according to a specified format (see :ref:`localization-config-file-name-format`).
+Some entities in the application may have names that require localization before they are rendered. Localization includes the formatting of name parts according to a specified format (see :ref:`localization-config-file-name-format`).
 
-On the backend side, such an entity must implement the
-``Oro\Bundle\LocaleBundle\Model\FullNameInterface``.
+On the backend side, such an entity must implement the ``Oro\Bundle\LocaleBundle\Model\FullNameInterface``.
 This interface contains methods to extract all parts of a name, including
 the name prefix, the first name, the middle name, the last name and the name
 suffix. Furthermore, there are separate interfaces for each name part that

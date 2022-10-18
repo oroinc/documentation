@@ -3,33 +3,28 @@
 WebSocket Connection Configuration
 ==================================
 
-To configure websockets for Oro applications, perform the following tasks with Oro application configuration
-and environment:
+To configure websockets for your Oro applications, perform the following tasks with Oro application configuration and environment:
 
-1. `Configure a Web Server`_ to ensure messages interaction between the WebSocket server and the clients
-2. `Configure WebSocket-Related Application Parameters`_ to provide interaction URLs for clients
-3. `Run the WebSocket Server`_ and make sure that it is always running
+1. `Configure a Web Server`_ to ensure messages interaction between the WebSocket server and the clients.
+2. `Configure WebSocket-Related Application Parameters`_ to provide interaction URLs for clients.
+3. `Run the WebSocket Server`_ and make sure that it is always running.
 
 Configure a Web Server
 ----------------------
 
-Web server configuration for WebSockets connections depends on whether a site uses secure (HTTPS) or non-secure (HTTP)
-mode. The type of mode used will determine whether WebSocket connections use a secure (WSS) or a non-secure (WS) protocol.
+Web server configuration for WebSockets connections depends on whether a site uses secure (HTTPS) or non-secure (HTTP) mode. The type of mode used will determine whether WebSocket connections use a secure (WSS) or a non-secure (WS) protocol.
 
 Configure a Regular (WS) Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For non-secure connections, there is no need to adjust the Oro application web server configuration to make WebSockets
-work. However, using a secure connection is **strongly recommended** for sites in production mode.
+For non-secure connections, there is no need to adjust the Oro application web server configuration to make WebSockets work. However, using a secure connection is **strongly recommended** for sites in production mode.
 
 Configure a Secure (SSL/WSS) Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You have to make some adjustments for a secure (WSS) connection in the web server configuration because direct backend
-WebSocket SSL/WSS connections are currently not supported. Also, to achieve WSS connection for your WebSocket
-communication on frontend, you should configure additional reverse proxy before WebSocket server.
+You have to make some adjustments for a secure (WSS) connection in the web server configuration because direct backend WebSocket SSL/WSS connections are currently not supported. Also, to achieve WSS connection for your WebSocket communication on frontend, you should configure additional reverse proxy before WebSocket server.
 
-Below you can find an example of this kind of configuration adjustment for **Nginx** (the recommended web server):
+Below, you can find an example of this kind of configuration adjustment for **Nginx** (the recommended web server):
 
 .. code-block:: none
 
@@ -81,7 +76,7 @@ Below you can find an example of this kind of configuration adjustment for **Ngi
         access_log /var/log/nginx/oro_https_access.log;
      }
 
-In this configuration example you should replace the following values:
+In this configuration example, you should replace the following values:
 
 * **example.com** with your configured domain name.
 * **ssl_certificate_key** and **ssl_certificate** with the actual values of your active SSL certificate.
@@ -127,7 +122,7 @@ Set WebSocket settings in the parameters.yml file:
     websocket_backend_transport: "tcp"
     websocket_backend_ssl_context_options: {}
 
-If you want to make backend work under secure connection as well, change the corresponding parameters too:
+If you want to make backend work under secure connection as well, change the corresponding parameters:
 
 .. code-block:: yaml
     
@@ -135,7 +130,7 @@ If you want to make backend work under secure connection as well, change the cor
    websocket_backend_path: "ws"
    websocket_backend_transport: "ssl"
 
-If you use untrusted SSL certificate, configure websocket_backend_ssl_context_options parameter with:
+If you use untrusted SSL certificate, configure the websocket_backend_ssl_context_options parameter with:
 
  .. code-block:: yaml
      
@@ -151,8 +146,7 @@ Since WebSocket server is running as a service, there are three host:port pairs 
 * **websocket_backend_port** and **websocket_backend_host**, **websocket_backend_path** specify the port and the address (websocket_backend_host plus websocket_backend_path URI) to which the application should connect (PHP). By default ("*"), it connects to address 127.0.0.1.
 * **websocket_frontend_port** and **websocket_frontend_host**, **websocket_backend_path** specify the port and the address (websocket_frontend_host plus websocket_backend_path URI) to which the browser should connect (JS). By default ("*"), it connects to the host specified in the browser.
 
-Instead of specifying all 3 sets of host:port parameters, it is possible to use the **websocket_host**
-and **websocket_port** fallback parameters, which will be used for any host or port that is not set explicitly.
+Instead of specifying all 3 sets of host:port parameters, it is possible to use the **websocket_host** and **websocket_port** fallback parameters, which will be used for any host or port that is not set explicitly.
 
 Run the WebSocket Server
 ------------------------
@@ -166,8 +160,7 @@ OroSyncBundle provides the **gos:websocket:server** console command that runs th
 Since the WebSocket server must be guaranteed to run all the time for the WebSockets functionality to work, it is strongly
 recommended to configure a supervisor to run the WebSocket server and ensure its availability.
 
-For example, you can install |Supervisord| and configure it to run the WebSocket server with following
-configuration instructions:
+For example, you can install |Supervisord| and configure it to run the WebSocket server with following configuration instructions:
 
 .. code-block:: none
    :caption: Supervisord configuration file, e.g. /etc/supervisord.conf
@@ -184,8 +177,7 @@ configuration instructions:
 Logging Levels
 --------------
 
-The logging level for the websocket server can be specified with the **-v|vv|vvv** option of the **gos:websocket:server**
-console command.
+The logging level for the websocket server can be specified with the **-v|vv|vvv** option of the **gos:websocket:server** console command.
 
 Please note that logging levels are different in **dev** and **prod** modes by default.
 

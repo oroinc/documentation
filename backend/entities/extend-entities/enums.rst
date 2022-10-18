@@ -9,12 +9,11 @@ from a predefined set of options. The OroPlatform provides two different data ty
 * ``enum`` (named **Select** on UI) - only one option can be selected
 * ``multiEnum`` (named **Multi-Select** on UI) - several options can be selected
 
-The option sets are quite complex types, but to understand how they work, you need to know that both
-``enum`` and ``multiEnum`` types are based on regular |Doctrine associations|. The main difference between them is that
-``enum`` type is based on |many-to-one association|, while ``multiEnum`` type is based on |many-to-many association|.
-To add the option set field to an entity you, can use |ExtendExtension|.
+The option sets are quite complex. Both the ``enum`` and ``multiEnum`` types are based on regular |Doctrine associations|. The main difference between them is that the ``enum`` type is based on |many-to-one association|, while the ``multiEnum`` type is based on |many-to-many association|.
 
-The following example shows how it can be done:
+To add the option set field to an entity, you can use |ExtendExtension|.
+
+The following example illustrates how to do it:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_6/AddEnumFieldOroUser.php
@@ -113,10 +112,8 @@ There are also other functions in the |ExtendHelper| class which can be helpful 
   for option sets that allows to select several options. We use this data to avoid GROUP BY clause.
 * **getEnumTranslationKey()** - Builds label names for option set related translations.
 
-As mentioned above, each option set has its own table to store available options. But translations for all options
-of all option sets are stored in one table. You can find more details in |EnumValueTranslation| and |AbstractEnumValue|.
-The EnumValueTranslation class is used to store translations. The AbstractEnumValue is the base class for all option set
-entities.
+As mentioned above, each option set has its own table to store available options. But translations for all options of all option sets are stored in one table. You can find more details in |EnumValueTranslation| and |AbstractEnumValue|.
+The EnumValueTranslation class is used to store translations. The AbstractEnumValue is the base class for all option set entities.
 
 If for some reason you create system option sets and you have to render them manually, the following components can be helpful:
 

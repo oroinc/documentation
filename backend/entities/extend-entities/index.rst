@@ -216,13 +216,11 @@ The intermediate class is generated automatically based on the configured data w
 
 The ``owner`` attribute can have the following values:
 
-* ``ExtendScope::OWNER_CUSTOM`` --- The field is user-defined, and the core system should handle how the field appears
-  in grids, forms, etc. (if not configured otherwise).
-* ``ExtendScope::OWNER_SYSTEM``--- Nothing is rendered automatically, and the developer must explicitly specify how to
-  show the field in different parts of the system (grids, forms, views, etc.).
+* ``ExtendScope::OWNER_CUSTOM`` --- The field is user-defined, and the core system should handle how the field appears in grids, forms, etc. (if not configured otherwise).
+* ``ExtendScope::OWNER_SYSTEM``--- Nothing is rendered automatically, and the developer must explicitly specify how to show the field in different parts of the system (grids, forms, views, etc.).
 
 .. note::
-   You can see more attribute sets default settings for Extend Entities |@ConfigField|.
+   For more default attribute set settings for Extend Entities, see |@ConfigField|.
 
 .. _book-entities-extended-entities-add-enum-fields:
 
@@ -306,5 +304,4 @@ Console Commands
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
-.. include:: /include/include-links-seo.rst
-   :start-after: begin
+
