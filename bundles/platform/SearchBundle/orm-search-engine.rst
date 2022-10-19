@@ -15,14 +15,12 @@ ORM engine configuration is stored in
 ``Oro/Bundle/SearchBundle/Resources/config/oro/search_engine/orm.yml``
 and does not require any additional engine parameters.
 
-ORM search engine has a straightforward implementation - it simply
-stores index data in appropriate tables: separate tables for ``text``,
+ORM search engine has a straightforward implementation - it stores index data in appropriate tables: separate tables for ``text``,
 ``datetime``, ``decimal`` and ``integer`` value, and another table
 to store general information. The table that stores text data has
 ``fulltext`` index.
 
 .. code-block:: none
-
 
     services:
         oro_search.search.engine:
@@ -38,7 +36,6 @@ Each supported DBMS has its own driver that knows about specific search
 implementation and generates valid SQL.
 
 .. code-block:: none
-
 
     parameters:
         oro_search.drivers:

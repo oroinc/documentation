@@ -20,11 +20,11 @@ Configure a Report
 ^^^^^^^^^^^^^^^^^^
 
 Building a new report is as easy as defining a data grid. A data grid is a YAML configuration living in a
-file called ``datagrids.yml`` in the ``Resources/config/oro`` directory of your bundle. Take a look at the
+file called ``datagrids.yml`` in your bundle's ``Resources/config/oro`` directory. Take a look at the
 following example:
 
 .. code-block:: yaml
-    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
         orocrm_report-opportunities-won_by_period:
@@ -125,9 +125,9 @@ The definition of a data grid consists of the following sections:
 ``source``
 
     The ``source`` property describes which data need to be fetched from the database to collect all
-    data needed for the report. As you can see, you are able to use all the features that you
+    data needed for the report. As you can see, you can use all the features you
     already know from the Doctrine query builder. The ``acl_resource`` specifies the ACL a user has
-    to fullfil to be able to access the data grid.
+    to fulfill to be able to access the data grid.
 
     .. seealso::
 
@@ -138,16 +138,16 @@ The definition of a data grid consists of the following sections:
 
 ``totals``
 
-    Here you configure for which columns of the grid you want to display total values for the
+    Here you configure which columns of the grid you want to display total values for the
     currently shown page (``total``) and for all existing entries (``grand_total``). You can also
     specify custom expressions that will be executed to calculate the actual value being shown
-    (e.g. to display the total revenue, all existing values will summed up.
+    (e.g., to display the total revenue, all existing values will be summed up.
 
 ``columns``
 
     The ``columns`` option configures which columns will be visible in the data grid. As you can
     see, you can either refer to values that are produced by the ``source`` (like ``cnt`` or
-    ``value``) or to a kind of *virtual column* (like ``period``) which can be defined through custom
+    ``value``) or to a kind of *virtual column* (like ``period``), which can be defined through custom
     ``filters`` (see below).
 
 ``sorters``
@@ -157,21 +157,16 @@ The definition of a data grid consists of the following sections:
 
 ``filters``
 
-    The ``filters`` option allows you to provide the user interface to filter the report to display a subset of all available entries only. In the example above, the ``period`` column which
-    was used in other options before lets the user select from a list for which period entries
-    should be shown. The available choices directly refer to the fields that where selected with
-    the ``source`` configuration. Additionally, the ``monthPeriod`` will be taken by default if the
-    user doesn't make a choice to the ``default`` option:
+    The ``filters`` option allows you to provide the user interface to filter the report to display only a subset of all available entries. In the example above, the ``period`` column, used in other options before, lets the user select from a list for which period entries should be shown. The available choices directly refer to the fields selected with the ``source`` configuration. Additionally, the ``monthPeriod`` will be taken by default if the user does not choose the ``default`` option:
 
     .. code-block:: yaml
-
 
         default:
             period: { value: monthPeriod }
 
     The ``filter_by_having`` option used for the ``cnt`` and ``value`` columns is used to filter
     for entries that exactly have the value entered by the user. For the ``closeDate`` and
-    ``createdAt`` columns, the user will be presented a date widget which they can use to select
+    ``createdAt`` columns, the user will be presented with a date widget which they can use to select
     an interval that reduces the set of entries being shown.
 
 ``options``
@@ -181,7 +176,7 @@ The definition of a data grid consists of the following sections:
 
 .. seealso::
 
-    This example is taken from |ReportBundle| which is part of OroPlatform. Refer to it for more
+    This example is taken from |ReportBundle|, which is part of OroPlatform. Refer to it for more
     examples.
 
     You can also find more information on data grids in the |DataGridBundle| documentation.
@@ -194,7 +189,7 @@ a configuration file named ``navigation.yml`` that is located in the ``Resources
 of your bundle:
 
 .. code-block:: yaml
-    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
 
     menu_config:
         items:
@@ -212,15 +207,9 @@ of your bundle:
                         children:
                             account_opportunity: ~
 
-The configuration of your new menu items is grouped under the ``oro_menu_config`` key. First, under
-the ``items`` key you create a new menu item which will be shown in the backend as *Accounts by
-Opportunity*. The report to be shown is selected by using the ``reportGroupName`` and
-``reportName`` options in the ``routerParameters`` which refer to the report name as configured in
-:ref:`the example above <book-reports-configuration>`. Of course, you can simply add additional
-items if you have more custom reports.
+The configuration of your new menu items is grouped under the ``oro_menu_config`` key. First, under the ``items`` key you create a new menu item which will be shown in the backend as *Accounts by Opportunity*. The report to be shown is selected by using the ``reportGroupName`` and ``reportName`` options in the ``routerParameters`` which refer to the report name as configured in :ref:`the example above <book-reports-configuration>`. Of course, you can add additional items if you have more custom reports.
 
-Then, under the ``tree`` key you add the newly created item to the *Reports & Segments* tab of the
-application menu.
+Then, under the ``tree`` key you add the newly created item to the *Reports & Segments* tab of the application menu.
 
 .. _backend-segments-overview:
 
@@ -234,8 +223,7 @@ There are two types of segments:
  1. **Static** (is also called ``On demand``)
  2. **Dynamic**
 
-The difference is that the dynamic segment displays real-time data, and static segment has a set of snapshots. It filters data in the same way as the dynamic one and stores the state in a service table (`oro_segment_snapshot`). So, even if the data is no longer correspond to the filtering criteria in real-time, it will still exist in the dataset of the static segment.
- So, a static segment is a snapshot of the filtered data at some point of time.
+The difference is that the dynamic segment displays real-time data, and the static segment has a set of snapshots. It filters data in the same way as the dynamic one and stores the state in a service table (`oro_segment_snapshot`). So, even if the data no longer corresponds to the filtering criteria in real-time, it will still exist in the dataset of the static segment. A static segment is a snapshot of the filtered data at some point in time.
 
  Also, both segment types have a table representation of data. It can be configured from the segment management pages.
 
@@ -244,8 +232,7 @@ The difference is that the dynamic segment displays real-time data, and static s
 Frontend Implementation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-A frontend part of the segment management is based on *condition builder* that comes from *OroQueryDesignerBundle*.
-See the :ref:`Condition Builder Component <bundle-docs-platform-query-designer-bundle-condition-builder-component>` topic for more details. A **segmentation filter** roots from *AbstractFilter* of *OroFilterBundle* and provides the ajax-based autocomplete field, which, in turn, is based on the *JQuery.Select2* plugin.
+A frontend part of the segment management is based on the *condition builder* that comes from *OroQueryDesignerBundle*. See the :ref:`Condition Builder Component <bundle-docs-platform-query-designer-bundle-condition-builder-component>` topic for more details. A **segmentation filter** roots from *AbstractFilter* of *OroFilterBundle* and provides the ajax-based autocomplete field, which, in turn, is based on the *JQuery.Select2* plugin.
 
 .. _backend-segments-backend-implementation:
 
@@ -255,25 +242,17 @@ Backend Implementation
 Entities
 ~~~~~~~~
 
-**Segment** entity is descendant of the *AbstractQueryDesigner* model that comes from *OroQueryDesignerBundle*.
- Basically, this entity contains an entity name (based on), a json encoded definition and service fields such as created/updated, owner etc. **SegmentType** is a representation of possible segment types.
- Default types are loaded by the data fixture migration mechanism. **SegmentSnapshot** is a service entity.
- It contains snapshots data for **static** segments. It also contains a link to the segment that it belongs to,
- the *entityId* field that is linked to the entity of the type that the segment is based on, and the date when this link was created.
+**Segment** entity is descendant of the *AbstractQueryDesigner* model that comes from *OroQueryDesignerBundle*. This entity contains an entity name (based on), a JSON encoded definition, and service fields such as created/updated, owner, etc. **SegmentType** is a representation of possible segment types. The data fixture migration mechanism loads default types. **SegmentSnapshot** is a service entity. It contains snapshot data for **static** segments: a link to the segment to which it belongs, the *entityId* field linked to the entity of the type that the segment is based on, and the date of link creation.
 
 Query Builders
 ~~~~~~~~~~~~~~
 
-As described before, **static** and **dynamic** segments have different ways of applying a filtering tool.
-There are two strategies, the *DynamicSegmentQueryBuilder* and *StaticSegmentQueryBuilder* correspondent.
+As described before, **static** and **dynamic** segments have different ways of applying a filtering tool. There are two strategies, the *DynamicSegmentQueryBuilder* and *StaticSegmentQueryBuilder* correspondent.
 
 Datagrid
 ~~~~~~~~
 
-For a table representation of the segment, use **OroDataGridBundle**. A grid configuration comes from the segment definition in *Oro\\Bundle\\SegmentBundle\\Grid\\ConfigurationProvider*.
- It retrieves the segment identifier from the grid name and passes the loaded segment entity to *SegmentDatagridConfigurationBuilder*.
- The datagrid configuration does not process filtering to encapsulate filtering logic in *SegmentFilter*.
- So, for those purposes, two proxy classes, *SegmentDatagridConfigurationQueryDesigner* and *DynamicSegmentQueryDesigner*, were created.
+For a table representation of the segment, use **OroDataGridBundle**. A grid configuration comes from the segment definition in *Oro\\Bundle\\SegmentBundle\\Grid\\ConfigurationProvider*. It retrieves the segment identifier from the grid name and passes the loaded segment entity to *SegmentDatagridConfigurationBuilder*. The datagrid configuration does not process filtering to encapsulate filtering logic in *SegmentFilter*. So, for those purposes, two proxy classes, *SegmentDatagridConfigurationQueryDesigner* and *DynamicSegmentQueryDesigner*, were created.
 
 *SegmentDatagridConfigurationQueryDesigner* provides the definition to *segment filter* only. So, the datagrid configuration builder receives the definition for segment filter.
 
@@ -288,7 +267,6 @@ The query is retrieved using the following code:
 
 .. code-block:: php
 
-
     if ($segment->getType()->getName() === SegmentType::TYPE_DYNAMIC) {
         $query = $this->dynamicSegmentQueryBuilder->build($segment);
     } else {
@@ -299,7 +277,6 @@ The query is retrieved using the following code:
 A `$query` variable contains instance of *\\Doctrine\\ORM\\Query*. Add it to the statement of any doctrine query in the following way:
 
 .. code-block:: php
-
 
     /** @var EntityManger $em */
     $classMetadata = $em->getClassMetadata($segment->getEntity());

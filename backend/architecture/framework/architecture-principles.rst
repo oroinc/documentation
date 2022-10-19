@@ -82,7 +82,7 @@ At the beginning of Oro applications' development, there were certain constraint
 
 As a workaround, we changed the bundle registration system in Oro applications so that the bundles acquired the option of auto-registration in the application without needing to modify any of the application files.
 
-For the bundle to be registered and enabled in Oro applications, it is sufficient to mention the bundle in its  *Resources/config/oro/bundles.yml* file. You can activate any bundle in the application simply by putting its primary class name in the *Resources/config/oro/bundles.yml* of your bundle (keep in mind, though, that you must physically install the bundle with the help of Composer).
+For the bundle to be registered and enabled in Oro applications, it is sufficient to mention the bundle in its  *Resources/config/oro/bundles.yml* file. You can activate any bundle in the application by putting its primary class name in the *Resources/config/oro/bundles.yml* of your bundle (keep in mind, though, that you must physically install the bundle with the help of Composer).
 
 .. code-block:: yaml
     :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
