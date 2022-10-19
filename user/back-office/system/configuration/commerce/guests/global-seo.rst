@@ -27,7 +27,7 @@ To configure the settings globally:
 Enable Product Description
 --------------------------
 
-.. hint:: This configuration is available starting from v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This configuration is available starting from v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 You can control which product field will be used for the Schema.org description property globally, :ref:`per organization <sys--conf--commerce--guest-seo--org>`, and :ref:`per website <sys--conf--commerce--guest-seo--website>`.
 

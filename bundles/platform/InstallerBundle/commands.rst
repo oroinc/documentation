@@ -79,7 +79,7 @@ The ``--symlink`` option tells the asset installer to create symlinks instead of
 
     php bin/console oro:install --symlink
 
-The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths:
+The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths (available since v5.0.6 of the application):
 
 .. code-block:: none
 
@@ -176,7 +176,7 @@ The ``--symlink`` option tells the asset installer to create symlinks instead of
 
     php bin/console oro:platform:update --force --symlink
 
-The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths:
+The ``--relative-symlink`` option tells the asset installer to create symlinks with relative paths (available since v5.0.6 of the application):
 
 .. code-block:: none
 
