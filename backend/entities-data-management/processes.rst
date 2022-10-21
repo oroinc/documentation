@@ -13,10 +13,10 @@ Main Entities
 Three entities represent processes:
 
 1. **Definition** is the primary entity that contains information about a specific process. It contains the most important
-information: process-related entity type (e.g., user) and what the actions must be performed with this entity
-(e.g., change the value of a field). Another important option is the execution order that affects the order of processes
+information: process-related entity type (e.g., user) and what actions must be performed with this entity
+(e.g., change the value of a field). Another important option is the execution order which affects the order of processes
 execution if several processes are subscribed to the same event of the same entity. The process can be enabled or disabled.
-Other fields of the process definition contain the process name, when this process was created and when it was last updated.
+Other fields of the process definition contain the process name, when this process was created, and when it was last updated.
 
 2. **Trigger** entity provides information about the trigger used to run the related process when this process is invoked.
 
@@ -32,26 +32,26 @@ Other fields of the process definition contain the process name, when this proce
 
     - **cron**
 
-    Allows execution of processes based on cron-definition. The cron definition itself is specified in the ``cron`` parameter
+    Allows execution of processes based on cron definition. The cron definition itself is specified in the ``cron`` parameter
     (e.g., ``*/1 * * * *``). These triggers can be executed only if the system has configured the cron script with the ``oro:cron`` command.
 
     .. note:: Each trigger can define only one of these types.
 
 3. **Job** is an entity that contains information specific to the performing process in case of delayed processing
-(in this case, JMS job is created). Depending on the event, a job can contain the following data:
+(in this case, a JMS job is created). Depending on the event, a job can contain the following data:
 
     - ``create`` event - entity identity;
     - ``update`` event - entity identity and change set (old and new values);
     - ``delete`` event - entity plain fields (without references).
 
 Each job entity also contains a relation to the trigger used to create this job and entity hash (the full class name
-of the related entity plus the identity of a specific entity). This entity hash is required in order to find all registered jobs
+of the related entity plus the identity of a specific entity). This entity hash is required to find all registered jobs
 for the same entity (e.g., to remove all related jobs).
 
 Principles
 ----------
 
-Each process definition related to an entity type, and each definition can have several triggers.
+Each process definition is related to an entity type, and each definition can have several triggers.
 
 When a user performs an action with an entity that is related to an enabled process definition,
 all existing triggers for this process are analyzed, and the appropriate ones are found to be executed.
@@ -64,7 +64,7 @@ are processed in the order defined by definition.
 Once a specific entity item is deleted, all job processes related to this entity are also deleted.
 
 .. warning:: Performing the action described in the process definition can provoke triggers of other processes (or even the same process).
-             You should either use an appropriate condition to avoid recursion or use the "exclude_definitions" option.
+             You should either use an appropriate condition to avoid recursion or the "exclude_definitions" option.
 
 Configuration
 -------------
@@ -116,12 +116,11 @@ The first trigger is processed immediately after the contact is created, and the
 and sends it to the message queue with priority ``10`` and time-shift ``60``, so the job is processed a minute later than
 the triggered action.
 
-When contact ``Assigned To`` field is updated, then process "contact_definition" is eventually handled, and the
-value of the ``Assigned To`` field can be changed. When the "exclude_definitions" option is specified, this process does not
-provoke self-triggering.
+When contact ``Assigned To`` field is updated, the process "contact_definition" is eventually handled, and the
+value of the ``Assigned To`` field can be changed. This process does not provoke self-triggering when the "exclude_definitions" option is specified.
 
 .. note::
-         - If you want to test this process configuration in a real application, you can place this configuration into the ``Oro/Bundle/WorkflowBundle/Resources/config/oro/processes.yml`` file and reload the definitions using the console command ``php bin/console oro:process:configuration:load``. After that, you can create a ``Contact`` of the changed assigned user and ensure that the process works.
+         - If you want to test this process configuration in an actual application, you can place this configuration into the ``Oro/Bundle/WorkflowBundle/Resources/config/oro/processes.yml`` file and reload the definitions using the console command ``php bin/console oro:process:configuration:load``. After that, you can create a ``Contact`` of the changed assigned user and ensure that the process works.
          - Expression `$.` allows you to access the main data container; for processes, it is an instance of ``Oro\Bundle\WorkflowBundle\Model\ProcessData``.
          - Expression `$` (shortcut) or `$.data` allows you to access the current entity; above in example it is ``Oro\Bundle\ContactBundle\Entity\Contact``.
 
@@ -138,7 +137,7 @@ This command loads processes configuration from .yml configuration files to the 
 - **--directories** - this option specifies directories used to find configuration files (multiple values allowed)
 - **--definitions** - this option specifies names of the process definitions that should be loaded (multiple values allowed)
 
-.. note:: You should run this command if process configuration was changed to upload your changes to DB.
+.. note:: You should run this command if the process configuration was changed to upload your changes to DB.
 
 oro:process:handle-trigger
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -151,7 +150,7 @@ This command executes a process trigger with a specified identifier and the proc
 REST API
 --------
 
-OroWorkflowBundle provides REST API that allows activation and deactivation of processes.
+OroWorkflowBundle provides REST API that allows the activation and deactivation of processes.
 
 Activation URL attributes:
 
@@ -162,7 +161,6 @@ Deactivation URL attributes:
 
 * **route:** ``oro_api_process_deactivate``
 * **parameter:** processDefinition - the name of the appropriate process definition
-
 
 
 .. include:: /include/include-links-dev.rst

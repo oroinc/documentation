@@ -5,13 +5,11 @@ Fuzzy Search
 
 .. important:: The feature is available for the Enterprise edition only.
 
-This feature enables to use error-tolerant (fuzzy) search in search index requests to Elasticsearch. It works only with the Elasticsearch search engine.
+This feature enables the use of error-tolerant (fuzzy) search in search index requests to Elasticsearch. It works only with the Elasticsearch search engine.
 
-It is assumed that the first character of every word in a request is correct. So, the application does not try to change
-the first character to fix an error.
+It is assumed that the first character of every word in a request is correct. So, the application does not try to change the first character to fix an error.
 
-The exact match has higher relevancy comparing to the results with errors. It means that results that match the request word by word
-are at the top of the result set, while those with errors are at the bottom.
+The exact match has higher relevancy compared to the results with errors. It means that results that match the request word by word are at the top of the result set, while those with errors are at the bottom.
 
 The error-tolerant search is applied only to the *contains* and *not contains* operators.
 
@@ -32,17 +30,15 @@ The fuzzy search options are the following:
 
 * **Error Tolerance** sets the number of errors in each word the application can ignore. The default value is *One*, meaning that one error per word can be tolerated.
 
-* **Tolerance Starts From** sets a threshold for the error-tolerant search usage. The default value is *4*, meaning that the application uses the exact match search for small words that have 1-3 characters, and the error-tolerant search for words that have 4+ characters.
+* **Tolerance Starts From** sets a threshold for the error-tolerant search usage. The default value is *4*, meaning that the application uses the exact match search for small words with 1-3 characters and the error-tolerant search for words with 4+ characters.
 
-* **Tolerance Exclusions** enables to set a regular expression for words that must not use the error-tolerant search, exact match search is used instead. This option is beneficial for SKUs, manufacturer IDs, and other identifiers that may have similar values and lead to false-positive results when the error-tolerant search is used.
+* **Tolerance Exclusions** enables setting a regular expression for words that must not use the error-tolerant search; exact match search is used instead. This option is beneficial for SKUs, manufacturer IDs, and other identifiers that may have similar values and lead to false-positive results when the error-tolerant search is used.
 
 .. _elasticsearch-fuzzy-search-important-notes:
 
 Important Notes
 ---------------
 
-The error-tolerant search is not an automatic correction. It just tries to find similar results for the passed request phrase word by word. It is important to remember that the error-tolerant search can lead to a number of false-positive results.
+The error-tolerant search is not an automatic correction. It tries to find similar results for the passed request phrase word by word. It is important to remember that the error-tolerant search can lead to several false-positive results.
 
-The error-tolerant search changes only the way the request is built, but not the index mapping, structure, or content.
-The search is performed against the tokens that are stored in the Elasticsearch index. So, it behaves differently
-for the default configuration, language-optimized configuration, and custom index configuration.
+The error-tolerant search changes only how the request is built, not the index mapping, structure, or content. The search is performed against the tokens stored in the Elasticsearch index. So, it behaves differently for the default, language-optimized, and custom index configurations.

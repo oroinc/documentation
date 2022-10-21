@@ -3,13 +3,13 @@
 Configuration
 =============
 
-OroSearchBundle provides options that can be used to customize the
+OroSearchBundle provides options that you can use to customize the
 search functionality.
 
 System Configuration
 --------------------
 
-All configuration data is placed in the configuration under alias
+All configuration data is placed in the configuration under the alias
 ``oro_search``. Let us look at the configuration example:
 
 .. code-block:: none
@@ -30,17 +30,16 @@ Description of parameters:
    *oro\_search.engine*) - specifies the search engine name used to perform
    search and indexation (see section `Search Engine Configuration`_);
 -  **engine\_parameters** (converted to the container parameter
-   *oro\_search.engine\_parameters*) - additional parameters of the search
-   engine used for initialization (f.e. IP, port, credentials etc);
+   *oro\_search.engine\_parameters*) - additional parameters of the search engine used for initialization (e.g., IP, port, credentials, etc.);
 -  **log\_queries**, default false (converted to container parameter
-   *oro\_search.log\_queries*) - flag that defines whether it is necessary to log
+   *oro\_search.log\_queries*) - a flag that defines whether it is necessary to log
    search queries to the database;
 -  **item\_container\_template**, default
    "@OroSearch/Datagrid/itemContainer.html.twig" (converted to
    container parameter *oro\_search.twig.item\_container\_template*) -
-   template used to render entity row in search results;
+   template used to render an entity row in search results;
 -  **entities\_config** (converted to container parameter
-   *oro\_search.entities\_config*) - entity search configuration, can be
+   *oro\_search.entities\_config*) - entity search configuration that can be
    used to override the default entity search configuration (see section
    :ref:`Entity Configuration <db-search--configuration--entity-configuration>`).
 
@@ -54,12 +53,11 @@ configuration. Merging uses simple rules:
 -  if the node value is scalar, the value will be replaced
 -  if the node value is an array:
 
-   -  by default the value will be replaced
-   -  for node 'fields' this array will be appended by values from the
+   -  by default, the value will be replaced
+   -  for node 'fields', this array will be appended by values from the
       second configuration.
 
-After this step, the application knows about all entity search configurations
-from the search.yml files and has only one configuration for each entity.
+After this step, the application knows about all entity search configurations from the search.yml files and has only one configuration for each entity.
 
 **Example**
 
@@ -123,20 +121,11 @@ Result:
 Entity Configuration
 --------------------
 
-After insert, update or delete entity records, the search index must be
-updated. The search index consists of data from entities by mapping
-parameters. Entity search configuration maps fields to the virtual
-search fields in the search index.
+After inserting, updating, or deleting entity records, the search index must be updated. The search index consists of data from entities by mapping parameters. Entity search configuration maps fields to the virtual search fields in the search index.
 
-Entity search configuration can be stored in main ``config.yml`` file (in
-``oro_search`` config section) or in ``search.yml`` files in the config
-directory of the bundle.
+Entity search configuration can be stored in the main ``config.yml`` file (in ``oro_search`` config section) or in the ``search.yml`` files in the config directory of the bundle.
 
-Configuration is an array that contains info about the bundle name, entity name
-and the array of fields. Fields array contains the array of field name and field
-type. Data from all text fields will be stored in the **all\_text** virtual field.
-Additionally, all the fields will be stored in the ``fieldName`` virtual
-fields, if the ``target_fields`` parameter is not set.
+Configuration is an array that contains info about the bundle name, entity name, and the array of fields. Fields array contains the array of field names and field types. Data from all text fields will be stored in the **all\_text** virtual field. Additionally, all the fields will be stored in the ``fieldName`` virtual fields if the ``target_fields`` parameter is not set.
 
 Example:
 
@@ -187,44 +176,29 @@ Example:
 Search Engine Configuration
 ---------------------------
 
-The search bundle provides the ability to use different search engines through
-the common interface.
+The search bundle provides the ability to use different search engines through the common interface.
 
-Used search engine is defined in the configuration under ``oro_search.engine``
-key. To make engine work, at least one bundle must have s file with the
-*Resources/config/oro/search\_engine/<engine\_name>.yml* name that contains the
-configuration of search engine services that will be added to container
-services.
+The used search engine is defined in the configuration under the ``oro_search.engine`` key. To make the engine work, at least one bundle must have s file with the *Resources/config/oro/search\_engine/<engine\_name>.yml* name that contains the configuration of search engine services that will be added to a container services.
 
-To make the engine work, two services must be defined in the engine
-configuration:
+To make the engine work, two services must be defined in the engine configuration:
 
-  - search service *oro\_search.search.engine* must
-    implement *Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface*.
-  - indexer service *oro\_search.search.engine.indexer* must implement
-    *Oro\\Bundle\\SearchBundle\\Engine\\IndexerInterface*.
+  - search service *oro\_search.search.engine* must implement *Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface*.
+  - indexer service *oro\_search.search.engine.indexer* must implement *Oro\\Bundle\\SearchBundle\\Engine\\IndexerInterface*.
 
-To make implementation easier, there are abstract classes
-*Oro\\Bundle\\SearchBundle\\Engine\\AbstractEngine*
-and *Oro\\Bundle\\SearchBundle\\Engine\\AbstractIndexer*
-that provide useful functionality (such as logging, queuing etc).
+To make implementation easier, there are abstract classes *Oro\\Bundle\\SearchBundle\\Engine\\AbstractEngine* and *Oro\\Bundle\\SearchBundle\\Engine\\AbstractIndexer* that provide useful functionality (such as logging, queuing, etc.).
 
-If the search engine requires some additional parameters (credentials, index configuration etc.), then they can be passed through the configuration using the *oro\_search.engine\_parameters* key, so these parameters can be injected into search services.
+Suppose the search engine requires additional parameters (credentials, index configuration, etc.). In that case, they can be passed through the configuration using the *oro\_search.engine\_parameters* key so these parameters can be injected into search services.
 
-Also, engine configuration can override existing services to support some specific use cases of the search engine (e.g. ORM engine overrides index listener to support single flush).
+Also, engine configuration can override existing services to support some specific use cases of the search engine (e.g., ORM engine overrides index listener to support single flush).
 
 .. _db-search--configuration--datagrid:
 
 Datagrid Configuration
 ----------------------
 
-The SearchBundle supplies a datasource that can be used interchangeably
-with the default ORM datasource. This datasource feeds pure search index
-data, bypassing the default DBMS, thus allowing pure index storage layer
-driven datagrids to be built.
+The SearchBundle supplies a datasource that can be used interchangeably with the default ORM datasource. This datasource feeds pure search index data, bypassing the default DBMS, thus allowing pure index storage layer-driven datagrids to be built.
 
-The following is an example of a DatagridBundle's configuration entry in the
-``Resources/config/oro/datagrids.yml`` file that builds a simple user
+The following is an example of a DatagridBundle's configuration entry in the ``Resources/config/oro/datagrids.yml`` file that builds a simple user
 datagrid using search index data only:
 
 

@@ -23,7 +23,6 @@ Configuration must be placed in the Resources/config/oro/actions.yml file. For e
 
 .. code-block:: yaml
 
-
    operations:
        acme_demo_operation:
            label:  Demo Operation
@@ -41,9 +40,7 @@ Execute a command to validate configuration manually:
 
 .. code-block:: php
 
-
     php bin/console oro:action:configuration:validate
-
 
 Configuration Merging
 ---------------------
@@ -131,7 +128,6 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-
 
    operations:                                             # root elements
        demo_operation:                                     # name of operation
@@ -224,7 +220,6 @@ Example
 
 .. code-block:: php
 
-
    operations:
        demo_operation:
            # ...
@@ -264,7 +259,6 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-
 
    operations:
        demo_operation:
@@ -320,7 +314,6 @@ Example
 
 .. code-block:: php
 
-
    operations:
        demo_operation:
            # ...
@@ -355,7 +348,6 @@ Example
 ^^^^^^^
 
 .. code-block:: php
-
 
    operations:
        demo_operation:
@@ -395,7 +387,6 @@ Example
 
 .. code-block:: php
 
-
    operations:
        demo_operation:
            # ...
@@ -434,7 +425,6 @@ Example
 
 .. code-block:: php
 
-
    operations:
        demo_operation:
            # ...
@@ -459,7 +449,6 @@ Example
 ^^^^^^^
 
 .. code-block:: yaml
-
 
     operations:
         demo_operation:

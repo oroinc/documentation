@@ -3,7 +3,7 @@
 Actions and Conditions in Operations
 ====================================
 
-ActionBundle provides several actions and conditions, besides those that are in the Action Component.
+ActionBundle provides several actions and conditions besides those in the Action Component.
 
 Actions
 -------
@@ -21,7 +21,7 @@ Run Action Group `@run_action_group`.
 - result - (optional) property path where the action group execution context value is allocated
 - results - (optional) property path where the results from action-group-context are mapped to current context keys
 - action_group - action group name
-- parameters_mapping - map of parameters which are passed to the action_group context from the current one
+- parameters_mapping - map of parameters passed to the action_group context from the current one
 
 **Configuration Example**
 
@@ -38,10 +38,10 @@ Run Action Group `@run_action_group`.
 
 
 This configuration executes configured **action group** with the `acme_demo_action_group` name and parameters displayed under the `parameters_mapping` section.
-After the execution of **action group**, processed ActionData (e.g. context) are returned and assigned to the `$.result` attribute of the caller context.
+After the execution of **action group**, processed ActionData (e.g., context) is returned and assigned to the `$.result` attribute of the caller context.
 And `$.result_entity_id` acquires the value of `$.demo_new_attribute` from the Action Group's context.
- 
-Please note that all parameters must pass validation and be accessible under root node of ActionData in the action_group execution body.
+
+Please note that all parameters must pass validation and be accessible under the root node of ActionData in the action_group execution body.
 E.g., `$.entity_class` and `$.entity_id` respectively to their names. See the :ref:`Action Groups <bundle-docs-platform-action-bundle-action-groups>` documentation for more details.
 
 Format Name
@@ -105,7 +105,7 @@ Copy Values
 
 **Alias:** copy_values
 
-**Description:**  Copies the values from a context or an object to the provided attribute and behaves the same as the `array_merge` PHP function.
+**Description:**  Copies the values from a context or an object to the provided attribute and behaves like the `array_merge` PHP function.
 
 .. code-block:: none
 
@@ -157,8 +157,8 @@ Resolve Destination Page
 
 Allowed values for the `destination` parameter:
 
-- for the index page (`routeName`) value can be `name`
-- for the view page (`routeView`) value can be `view`
+- for the index page (`routeName`) value can be `name`.
+- for the view page (`routeView`) value can be `view`.
 
 Duplicate
 ^^^^^^^^^
@@ -173,7 +173,7 @@ Duplicate
 
 - entity - (optional) a property path of the original entity (by default, the `getEntity()` method is used from context)
 - target - (optional) a property path of the original entity, alias for `entity`
-- settings - (optional) a list of filters and matchers to be applied to
+- settings - (optional) a list of filters and matchers to be applied
 - attribute - a target property path where the action results are saved
 
 **Filters and Matchers:**
@@ -208,7 +208,7 @@ Add Custom Condition
 
 The conditions are based on the |ConfigExpression| component.
 
-To add custom condition, simply add a service to DIC with the "oro_action.condition" tag, for example:
+To add a custom condition, add a service to DIC with the "oro_action.condition" tag, for example:
 
 .. code-block:: none
 
@@ -224,9 +224,9 @@ Configurable Condition
 
 **Alias:** - the option is configurable.
 
-**Description:** - uses Condition Assembler to assemble conditions from passed configuration.
-This condition is NOT intended to be used in configuration of Action.
-But it can be used to create a condition based on configuration in runtime.
+**Description:** - uses Condition Assembler to assemble conditions from the passed configuration.
+This condition is NOT intended to be used in the configuration of Action.
+But it can be used to create a condition based on the configuration in runtime.
 
 **Options:** - valid configuration of conditions.
 
@@ -235,7 +235,6 @@ But it can be used to create a condition based on configuration in runtime.
 Code Example is a value of the "call_timeout" attribute. It is not blank, and it equals to 20.
 
 .. code-block:: php
-
 
     $configuration = [
         '@and' => [
@@ -253,4 +252,3 @@ Code Example is a value of the "call_timeout" attribute. It is not blank, and it
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
-

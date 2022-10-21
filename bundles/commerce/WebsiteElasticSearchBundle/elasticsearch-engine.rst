@@ -262,7 +262,7 @@ Indexation
 
 Indexation in the |Elasticsearch| is pretty simple. The data is collected using the standard :ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>` functionality and data is saved to the index according to the specified mappings.
 
-The only interesting part in this engine is how unused entities are removed from index. To do that during the indexation, each entity has one more service field `tmp_alias` which is used to store name of the temporary alias of an entity assigned to it during the indexation. After indexation is finished engine simply removes all entities with alias not equal to an alias of the current indexation (which are outdated entities that must not be present in search index any longer).
+The only interesting part in this engine is how unused entities are removed from index. To do that during the indexation, each entity has one more service field `tmp_alias` which is used to store name of the temporary alias of an entity assigned to it during the indexation. After indexation is finished engine removes all entities with alias not equal to an alias of the current indexation (which are outdated entities that must not be present in search index any longer).
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -53,7 +53,7 @@ Security Agnostic Processors
 Mostly for performance reasons, it is sometimes required to execute a message queue processor without security
 context even if the processed message contains a security token.
 
-The typical use case is routing processors. These processors simply forward a message to the destination processor and it would be unreasonable to waste the processor time to deserialize the security token as it is never used in such types of processors.
+The typical use case is routing processors. These processors forward a message to the destination processor and it would be unreasonable to waste the processor time to deserialize the security token as it is never used in such types of processors.
 
 Here is an example how to add a processor to the list of security agnostic processors using `Resources/config/oro/app.yml` or the application configuration file:
 

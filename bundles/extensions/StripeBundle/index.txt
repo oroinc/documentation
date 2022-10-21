@@ -3,6 +3,8 @@
 OroStripeBundle
 ===============
 
+.. important:: This feature is incomplete and is scheduled for release in version 5.1 LTS. See our :ref:`Release Process <doc--community--release>` page for more information on release dates and support cycle.
+
 OroStripeBundle provides Stripe payment service for card payments.
 
 Configuration

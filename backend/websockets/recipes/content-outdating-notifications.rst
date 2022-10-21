@@ -19,18 +19,16 @@ The content manager stores an array of tags (content identifiers) for every cont
 
 The content manager is subscribed to the **oro/data/update** WebSockets topic. The server sends a notification to this topic whenever any content on the server side has been changed.
 
-The content change message that the content manager receives includes only the tag (identifier) of the changed content. The content manager has the list of tacking tags. If the tag is in that list, the content manager launches specific actions that are planned to be run when the content with this tag is changed. If this tag is not tracked, the contentv manager can ignore this WebSocket message.
+The content change message that the content manager receives includes only the tag (identifier) of the changed content. The content manager has the list of tacking tags. If the tag is in that list, the content manager launches specific actions that are planned to be run when the content with this tag is changed. If this tag is not tracked, the content manager can ignore this WebSocket message.
 
 For the content manager to keep track of the actuality of the content item, it must be explicitly requested by sending **unique content tag** and optional **callback** to the **tagContent** method.
 
 .. code-block:: javascript
 
-
     import loadModules from 'oroui/js/app/services/load-modules';
 
     loadModules('orosync/js/content-manager')
         .then(contentManager => contentManager.tagContent([someContentTag], callback);
-
 
 How to Get the Unique Content Tag
 ---------------------------------
@@ -51,13 +49,11 @@ To generate a content tag on the **frontend side**, you should use the **oro_syn
 
 .. code-block:: php
 
-
     oro_sync_get_content_tags(data, includeCollectionTag = false, processNestedData = false)
 
 Therefore, the full example for adding the content to the tracked one in Content Manager is:
 
 .. code-block:: php
-
 
     {% import '@OroUI/macros.html.twig' as UI %}
 
@@ -72,14 +68,12 @@ That is what the macro **syncContentTags** does if you see it in its source code
 
 .. code-block:: twig
 
-
     {% import '@OroSync/Include/contentTags.html.twig' as syncMacro %}
     {{ syncMacro.syncContentTags(entity) }}
 
 To generate a content tag on the backend side, use the **oro_sync.content.tag_generator** service directly:
 
 .. code-block:: php
-
 
     /** @var TagGeneratorInterface $tagGenerator */
     $tagGenerator = $container->get(‘oro_sync.content.tag_generator’);
@@ -100,7 +94,6 @@ If you use your *custom base template* for the view/edit pages, use macro *syncC
 If your content type depends on another content type, and you want the user to receive notifications about another content type on your content type page, you have to add another content type tag to the Content Manager tracking registry:
 
 .. code-block:: twig
-
 
     {% import '@OroSync/Include/contentTags.html.twig' as syncMacro %}
     {{ syncMacro.syncContentTags(primaryEntity) }}

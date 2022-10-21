@@ -8,7 +8,7 @@ In the previous versions, we also used Composer to manage all external dependenc
 The PHP package dependencies were managed by Composer natively, and the frontend dependencies (NPM and Bower packages) -
 via a Composer “proxy gateway” (asset-packagist) to NPM and Bower registries.
 
-As NPM allows a lot more freedom in package naming, we could no longer update some of our NPM dependencies simply because Composer does not recognize or does not allow some NPM package names (e.g., with a different letter case or special characters). That is why we had to switch from  using asset packagist to calling NPM directly from the composer install and composer update scripts.
+As NPM allows a lot more freedom in package naming, we could no longer update some of our NPM dependencies because Composer does not recognize or does not allow some NPM package names (e.g., with a different letter case or special characters). That is why we had to switch from  using asset packagist to calling NPM directly from the composer install and composer update scripts.
 
 Minimum Requirements
 --------------------
