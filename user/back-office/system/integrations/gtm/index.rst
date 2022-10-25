@@ -509,5 +509,15 @@ Once the integration is saved, it becomes available in the Integrations grid und
 
 .. important:: To enable a Google Tag Manager integration for data mapping, connect it to the application in the system settings :ref:`globally <system-configuration-integrations-google>`, :ref:`per organization <organization-google-settings>` or :ref:`website <website-google-settings>`.
 
+
+.. admonition:: Business Tip
+
+   Do you want to reap the benefits of the new digital commerce trend? Learn more about the |B2B online marketplace| and how it can help you expand into a new market.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
