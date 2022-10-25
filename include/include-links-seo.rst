@@ -56,9 +56,13 @@ Links (SEO)
 
    <a href="https://oroinc.com/b2b-ecommerce/b2b-ecommerce-comparison" target="_blank">open-source B2B eCommerce platform</a>
 
+.. |B2B online marketplace| raw:: html
+
+   <a href="https://oroinc.com/oromarketplace/b2b-marketplace/" target="_blank">B2B online marketplace</a>
+
 .. |B2B marketplaces| raw:: html
 
-   <a href="https://oroinc.com/oromarketplace/b2b-marketplace/" target="_blank">here</a>
+   <a href="https://oroinc.com/oromarketplace/b2b-marketplace/" target="_blank">B2B marketplaces</a>
 
 .. |business-to-business marketplace| raw:: html
 
@@ -91,6 +95,11 @@ Links (SEO)
 .. |B2B marketplace website| raw:: html
 
    <a href="https://oroinc.com/oromarketplace/b2b-marketplace/" target="_blank">B2B marketplace website</a>
+
+.. |B2B marketplace platform| raw:: html
+
+   <a href="https://oroinc.com/oromarketplace/b2b-marketplace/" target="_blank">B2B marketplace platform</a>
+
 
 .. |B2B eCommerce| raw:: html
 

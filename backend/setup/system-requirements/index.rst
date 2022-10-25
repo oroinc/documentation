@@ -150,7 +150,15 @@ Recommended and supported browsers are:
 
     Any browser needs to have cookies and JavaScript turned on.
 
+.. admonition:: Business Tip
+
+   Want to take advantage of the latest trend in digital commerce? Explore the benefits of a |B2B online marketplace| and successful marketplace examples.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
 
 **See Also**

@@ -269,6 +269,14 @@ To retrieve a new version and upgrade your Oro application instance, please exec
         after the upgrade to flush cached bytecode from the previous installation.
 
 
+.. admonition:: Business Tip
+
+   Looking to harness the new trend of digital commerce? Check out our guide on a |B2B marketplace platform|.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
 

@@ -516,6 +516,16 @@ Once the GTM integration is configured, you must connect it to the application i
 * :ref:`Enable the Google Tag Manager integration per website <website-google-settings>`
 
 
+
+.. admonition:: Business Tip
+
+   Do you want to reap the benefits of the new digital commerce trend? Learn more about the |B2B online marketplace| and how it can help you expand into a new market.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
 
