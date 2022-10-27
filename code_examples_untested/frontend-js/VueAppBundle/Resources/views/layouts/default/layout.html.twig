@@ -1,0 +1,13 @@
+{% block _vue_app_block_widget %}
+    {% set attr = layout_attr_defaults(attr, {
+        'data-page-component-vue-app': {
+            vueApp: 'acmevueapp/js/vue-app/App',
+            initialTitle: 'Vue demo',
+            initialContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        }
+    }) %}
+
+    <div {{ block('block_attributes') }}>
+        {{ block_widget(block) }}
+    </div>
+{% endblock %}

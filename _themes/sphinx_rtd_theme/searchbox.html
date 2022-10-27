@@ -1,0 +1,42 @@
+{#
+    basic/searchbox.html
+    ~~~~~~~~~~~~~~~~~~~~
+
+    Sphinx sidebar template: quick search box.
+
+    :copyright: Copyright 2007-2016 by the Sphinx team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+#}
+{%- if pagename != "search" and builder != "singlehtml" %}
+<div id="searchbox" role="search">
+<!--    <form class="search" action="{{ pathto('search') }}" method="get">-->
+    <form class="search">
+        <div class="search-container">
+            <input class="search_text" type="text" placeholder="Search documentation" name="q" />
+            <span class="icon-submit">
+                <i class="fa fa-search search-complete__icon" aria-hidden="true"></i>
+            </span>
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+{% set algoliaOptions = '{hitsPerPage: 10}' %}
+{% if oro_current_version %}
+    {% set algoliaOptions = "{ 'facetFilters': [\"version:" ~ oro_current_version ~ "\"], hitsPerPage: 10 }" %}
+{% endif %}
+<script>
+    docsearch({
+        appId: '71PYJZ7X87',
+        apiKey: '92194359ed33b2b76a70c7f8f305a8f0',
+        indexName: 'oroinc',
+        inputSelector: '#searchbox input[type=text]',
+        algoliaOptions: {{ algoliaOptions }},
+        debug: false
+    });
+</script>
+
+<script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/searchbox.js', 1) }}?{{ oro_assets_timestamp }}"></script>
+{%- endif %}

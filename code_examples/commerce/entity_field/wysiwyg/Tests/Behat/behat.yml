@@ -1,0 +1,27 @@
+oro_behat_extension:
+  elements:
+    Blog Post Form:
+      selector: 'form[name="acme_wysiwyg_blog_post"]'
+      class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+      options:
+        mapping:
+          Content:
+            type: 'xpath'
+            locator: '//*[@name="acme_wysiwyg_blog_post[content]"]'
+            class: Oro\Bundle\CMSBundle\Tests\Behat\Element\WysiwygField
+          Teaser:
+            type: 'xpath'
+            locator: '//*[@name="acme_wysiwyg_blog_post[teaser]"]'
+            class: Oro\Bundle\CMSBundle\Tests\Behat\Element\WysiwygField
+          Extra Content:
+            type: 'xpath'
+            locator: '//*[@name="acme_wysiwyg_blog_post[extraContent]"]'
+            class: Oro\Bundle\CMSBundle\Tests\Behat\Element\WysiwygField
+  suites:
+    ACMEWysiwygBundle:
+      contexts:
+        - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
+        - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
+        - Oro\Bundle\FormBundle\Tests\Behat\Context\FormContext
+      paths:
+        - '@ACMEWysiwygBundle/Tests/Behat/Features'

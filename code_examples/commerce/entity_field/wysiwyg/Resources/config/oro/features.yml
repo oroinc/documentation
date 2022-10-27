@@ -1,0 +1,16 @@
+features:
+    manage_blog_posts:
+        label: acme.wysiwyg.blogpost.feature.manage.label
+        description: acme.wysiwyg.blogpost.feature.manage.description
+        allow_if_all_abstain: true
+        routes:
+            - acme_wysiwyg_blog_post_index
+            - acme_wysiwyg_blog_post_view
+            - acme_wysiwyg_blog_post_create
+            - acme_wysiwyg_blog_post_update
+        entities:
+            - ACME\Bundle\WysiwygBundle\Entity\BlogPost
+        api_resources:
+            - [ACME\Bundle\WysiwygBundle\Entity\BlogPost, [create, update, delete, delete_list]]
+        navigation_items:
+            - application_menu.system_tab.entities_list.blog_post_list

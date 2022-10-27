@@ -1,0 +1,16 @@
+acme:
+    fast_shipping:
+        settings:
+            labels:
+                label: 'Label'
+        transport:
+            label: 'Fast Shipping'
+        channel_type:
+            label: 'Fast Shipping'
+        method:
+            price.label: 'Price'
+            processing_type:
+                without_present.label: 'Fast Shipping Rate Without Present'
+                with_present.label: 'Fast Shipping Rate With Present'
+        form:
+            acme_fast_shipping_options_type.label: 'Fast Shipping Rate'

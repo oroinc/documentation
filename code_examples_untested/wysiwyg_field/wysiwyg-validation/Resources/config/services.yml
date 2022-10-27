@@ -1,0 +1,7 @@
+services:
+    acme_wysiwyg_validation.provider.html_purifier_scope_provider:
+        decorates: oro_cms.provider.html_purifier_scope_provider
+        parent: oro_cms.provider.html_purifier_scope_provider
+        calls:
+            - [addScopeMapping, ['content_restrictions_additional', 'additional']]
+            - [addScopeMapping, ['content_restrictions_extra', 'extra']]

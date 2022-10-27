@@ -1,0 +1,6 @@
+app-modules:
+    - oroui/js/app/modules/vue-module
+dynamic-imports:
+    acmevuesfcapp:
+        - oroui/js/app/components/vue-app-component
+        - acmevuesfcapp/js/vue-app/App.vue

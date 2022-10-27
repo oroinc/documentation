@@ -1,0 +1,10 @@
+layout:
+    actions:
+        - '@setBlockTheme':
+              themes: 'layout.html.twig'
+        
+        - '@add':
+              id: vue_sfc_app_block
+              parentId: page_container
+              prepend: true
+              blockType: block

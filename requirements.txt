@@ -1,0 +1,17 @@
+# Should be in sync with environment/python/requirements.txt
+alabaster==0.7.12
+Babel==2.9.1
+docutils==0.15
+imagesize==1.2.0
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+Pygments==2.9.0
+pytz==2021.1
+requests==2.25.1
+six==1.16.0
+snowballstemmer==2.1.0
+Sphinx==1.8.5
+git+https://github.com/fabpot/sphinx-php.git@master
+sphinxcontrib-phpdomain==0.7.3
+git+https://github.com/oroinc/sphinxdoc-integrity-check-ext.git@sphinx-1.8.5
+git+https://github.com/oroinc/sphinxcontrib-versioning.git@sphinx-1.8.5

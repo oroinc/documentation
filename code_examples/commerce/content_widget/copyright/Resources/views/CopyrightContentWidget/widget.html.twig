@@ -1,0 +1,2 @@
+{%- set copyright = isShort ? 'acme.copyright.text.short' : 'acme.copyright.text.default' -%}
+<copy>{{ copyright|trans({ '%year%': 'now'|date('Y') }) }}</copy>

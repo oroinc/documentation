@@ -1,0 +1,32 @@
+acme.cms:
+    block:
+        entity_label: ACME Block
+        entity_plural_label: ACME Blocks
+        id.label: Id
+        title.label: Title
+        owner.label: Owner
+        draft:
+            entity_label: ACME Block Draft
+            entity_plural_label: ACME Block Drafts
+            owner.label: Owner
+
+        content.label: Content
+        organization.label: Organization
+        draft_owner.label: Draft Owner
+        draft_project.label: Draft Project
+        draft_source.label: Draft Source
+        draft_uuid.label: Draft ID
+
+    sections:
+        general: General
+        content: Content
+        drafts: Drafts
+
+    controller:
+        saved.message: ACME Block has been saved
+
+    menu:
+        management.label: ACME
+
+    validators:
+        unique_title_draft_message: Title already exists.

@@ -1,0 +1,5 @@
+services:
+    _defaults:
+        autoconfigure: true
+
+    ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType: ~

@@ -1,0 +1,56 @@
+{% extends '@OroUI/actions/view.html.twig' %}
+
+{% oro_title_set({params : {"%entity.id%": entity.id }}) %}
+
+{% block navButtons %}
+    {% import '@OroUI/macros.html.twig' as UI %}
+
+    {% placeholder view_navButtons with {entity: entity} %}
+    {% if is_granted('EDIT', entity) %}
+        {{ UI.editButton({
+            'path' : path('acme_wysiwyg_blog_post_update', { id: entity.id }),
+            'entity_label': 'acme.wysiwyg.blogpost.entity_label'|trans
+        }) }}
+    {% endif %}
+{% endblock navButtons %}
+
+{% block pageHeader %}
+    {% set breadcrumbs = {
+        'entity': entity,
+        'indexPath': path('acme_wysiwyg_blog_post_index'),
+        'indexLabel': 'acme.wysiwyg.blogpost.entity_label'|trans,
+        'entityTitle': entity.id
+    } %}
+    {{ parent() }}
+{% endblock pageHeader %}
+
+{% block content_data %}
+    {% import '@OroUI/macros.html.twig' as UI %}
+    {% import '@OroEntityConfig/macros.html.twig' as entityConfig %}
+
+    {% set dataBlocks = [
+        {
+            'title': 'acme.wysiwyg.blogpost.sections.general'|trans,
+            'subblocks': [
+                {'data' : [UI.renderCollapsibleWysiwygContentPreview(entity.content, entity, 'content', 'acme.wysiwyg.blogpost.message.information')]}
+            ]
+        },
+        {
+            'title': 'acme.wysiwyg.blogpost.sections.extra_content'|trans,
+            'subblocks': [
+                {'data' : [UI.renderCollapsibleWysiwygContentPreview(entity.extraContent, entity, 'extraContent', 'acme.wysiwyg.blogpost.message.information')]}
+            ]
+        },
+        {
+            'title': 'acme.wysiwyg.blogpost.sections.additional'|trans,
+            'subblocks': [
+                {'data' : [entityConfig.renderDynamicFields(entity)]}
+            ]
+        },
+    ] %}
+
+    {% set id = 'blog-post-view' %}
+    {% set data = { 'dataBlocks': dataBlocks } %}
+
+    {{ parent() }}
+{% endblock content_data %}

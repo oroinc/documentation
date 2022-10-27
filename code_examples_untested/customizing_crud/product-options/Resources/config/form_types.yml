@@ -1,0 +1,13 @@
+services:
+    oro_blogpostexample.form.type.product_options:
+        class: Oro\Bundle\BlogPostExampleBundle\Form\Type\ProductOptionsType
+        tags:
+            - { name: form.type }
+
+    oro_blogpostexample.form.extension.product_type:
+        class: Oro\Bundle\BlogPostExampleBundle\Form\Extension\ProductOptionsFormTypeExtension
+        public: true
+        arguments:
+            - "@doctrine"
+        tags:
+            - { name: form.type_extension, extended_type: Oro\Bundle\ProductBundle\Form\Type\ProductType }

@@ -1,0 +1,12 @@
+{# Resources/views/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig #}
+
+{# ... #}
+{% set productImage = product.imagesByType('listing').first.image|default(null) %}
+
+{% include '@OroAttachment/Twig/picture.html.twig' with {
+    sources: product_filtered_picture_sources(productImage, product_image_size),
+    img_attrs: {
+        alt: 'Product Image',
+        itemprop: 'image'
+    }
+} %}

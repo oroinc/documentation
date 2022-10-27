@@ -1,0 +1,44 @@
+<div class="footer-container">
+  <aside class="footer-content">
+    <div class="footer-holder">
+      <div class="heading-column">
+        <a href="https://oroinc.com/" class="logo-footer" target="_blank">
+          <img width="117" height="37" src="{{ pathto(link_prefix ~ '_static/images/Oro-Inc-Logo.svg', 1) }}?{{ oro_assets_timestamp }}" alt="Oro Documentation">
+        </a>
+      </div>
+      <div class="columns-holder">
+        <div class="footer-column">
+          <ul>
+            <li class="menu-item-home"><a href="https://oroinc.com" target="_blank">Oro inc</a></li>
+            <li><a href="https://oroinc.com/b2b-ecommerce" target="_blank">OroCommerce</a></li>
+            <li><a href="https://oroinc.com/oromarketplace/" target="_blank">OroMarketplace</a></li>
+            <li><a href="https://oroinc.com/orocrm/" target="_blank">OroCRM</a></li>
+            <li><a href="https://oroinc.com/oroplatform" target="_blank">OroPlatform</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://oroinc.com/partners" target="_blank">Partners</a></li>
+            <li><a href="https://oroinc.com/services" target="_blank">Services</a></li>
+            <li><a href="https://oroinc.com/events" target="_blank">Events</a></li>
+            <li><a href="https://twitter.com/OroDocs" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://oroinc.com/terms-conditions" target="_blank">Terms & conditions</a></li>
+            <li><a href="https://oroinc.com/privacy-policy" target="_blank">Privacy policy</a></li>
+            <li><a href="https://oroinc.com/orocrm/contributor-license-agreement" target="_blank">Contributor license agreement</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <footer class="copyright">
+    <div class="copyright-holder">
+      <p>@<strong>2021</strong> <a href="https://oroinc.com/" target="_blank">Oro, Inc</a>. All Rights Reserved.</p>
+    </div>
+  </footer>
+  {%- block extrafooter %} {% endblock %}
+</div>
+<script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/google-tag-manager.js', 1) }}?{{ oro_assets_timestamp }}"></script>

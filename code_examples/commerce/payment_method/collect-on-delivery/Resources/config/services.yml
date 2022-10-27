@@ -1,0 +1,61 @@
+parameters:
+    acme_collect_on_delivery.method.identifier_prefix.collect_on_delivery: 'collect_on_delivery'
+
+services:
+    acme_collect_on_delivery.generator.collect_on_delivery_config_identifier:
+        parent: oro_integration.generator.prefixed_identifier_generator
+        public: true
+        arguments:
+            - '%acme_collect_on_delivery.method.identifier_prefix.collect_on_delivery%'
+
+    acme_collect_on_delivery.integration.channel:
+        class: ACME\Bundle\CollectOnDeliveryBundle\Integration\CollectOnDeliveryChannelType
+        public: true
+        tags:
+            - { name: oro_integration.channel, type: collect_on_delivery }
+
+    acme_collect_on_delivery.integration.transport:
+        class: ACME\Bundle\CollectOnDeliveryBundle\Integration\CollectOnDeliveryTransport
+        public: false
+        tags:
+            - { name: oro_integration.transport, type: collect_on_delivery, channel_type: collect_on_delivery }
+
+    acme_collect_on_delivery.factory.collect_on_delivery_config:
+        class: ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Factory\CollectOnDeliveryConfigFactory
+        public: false
+        arguments:
+            - '@oro_locale.helper.localization'
+            - '@acme_collect_on_delivery.generator.collect_on_delivery_config_identifier'
+
+    acme_collect_on_delivery.payment_method.config.provider:
+        class: ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Provider\CollectOnDeliveryConfigProvider
+        arguments:
+            - '@doctrine'
+            - '@logger'
+            - '@acme_collect_on_delivery.factory.collect_on_delivery_config'
+
+    acme_collect_on_delivery.factory.method_view.collect_on_delivery:
+        class: ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\View\Factory\CollectOnDeliveryViewFactory
+        public: false
+
+    acme_collect_on_delivery.payment_method_view_provider.collect_on_delivery:
+        class: ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\View\Provider\CollectOnDeliveryViewProvider
+        public: false
+        arguments:
+            - '@acme_collect_on_delivery.payment_method.config.provider'
+            - '@acme_collect_on_delivery.factory.method_view.collect_on_delivery'
+        tags:
+            - { name: oro_payment.payment_method_view_provider }
+
+    acme_collect_on_delivery.factory.method.collect_on_delivery:
+        class: ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Factory\CollectOnDeliveryPaymentMethodFactory
+        public: false
+
+    acme_collect_on_delivery.payment_method_provider.collect_on_delivery:
+        class: ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Provider\CollectOnDeliveryMethodProvider
+        public: false
+        arguments:
+            - '@acme_collect_on_delivery.payment_method.config.provider'
+            - '@acme_collect_on_delivery.factory.method.collect_on_delivery'
+        tags:
+            - { name: oro_payment.payment_method_provider }

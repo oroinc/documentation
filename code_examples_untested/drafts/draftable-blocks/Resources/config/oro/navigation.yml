@@ -1,0 +1,19 @@
+navigation:
+    menu_config:
+        items:
+            acme_management:
+                label:    'acme.cms.menu.management.label'
+                uri:      '#'
+                position: 90
+            acms_block_list:
+                label:           'acme.cms.block.entity_plural_label'
+                route:           'acme_cms_block_index'
+                position:        255
+                extras:
+                    routes:      ['/^acme_cms_block/']
+        tree:
+            application_menu:
+                children:
+                    acme_management:
+                        children:
+                            acms_block_list: ~

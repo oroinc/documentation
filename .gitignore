@@ -1,0 +1,9 @@
+/.settings
+/.buildpath
+/.project
+/.idea
+/_build
+*~
+*.db
+*.pyc
+sphinx-build-errors.log

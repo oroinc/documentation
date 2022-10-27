@@ -1,0 +1,6 @@
+app-modules:
+    - oroui/js/app/modules/react-module
+dynamic-imports:
+    acmereactapp:
+        - oroui/js/app/components/react-app-component
+        - acmereactapp/js/react-app/App

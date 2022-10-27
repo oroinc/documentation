@@ -1,0 +1,10 @@
+oro:
+    blogpostexample:
+        #Form Type Captions
+        product_options:
+            entity_label: 'Product Options (Blog Post Example)'
+            label: 'Custom Options'
+        #View Page Labels
+        product:
+            section:
+                product_options: Product Options (Blog Post Example)

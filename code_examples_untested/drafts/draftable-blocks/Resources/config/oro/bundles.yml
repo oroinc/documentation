@@ -1,0 +1,2 @@
+bundles:
+    - { name: ACME\Bundle\CMSBundle\ACMECMSBundle, priority: 41 }
