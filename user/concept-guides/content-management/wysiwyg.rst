@@ -270,12 +270,60 @@ To insert a file to your content, you need to drag the file block to the canvas.
 Add Columns
 ^^^^^^^^^^^
 
-To add multiple columns to your content, you need to drag the block with the required column number (1,2,3) to the canvas. You can place a column inside another column to extend the quantity of columns, like in the example below:
+.. hint:: Adding columns from Layout is available starting from v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+To add multiple columns to your content:
+
+1. Drag the Columns block under the Layouts section to the required place on your canvas.
+2. From the popup, select the required column number (1,2,3, or more). Columns are fully responsive and adapted to content, formatting, and styles that you apply afterwards.
+3. You can place a column inside another column to extend the quantity of columns, like in the example below:
 
 .. image:: /user/img/concept-guides/content-management/add_columns.png
-   :alt: Placing three columns inside the existing one
+   :alt: Placing a column inside the existing one
 
-Columns are fully responsive and adapted to content, formatting, and styles that you apply afterwards.
+A new setting, **Columns/Columns Item Settings**, is added along under the Style Manager menu that enables you to adjust the number of columns, the gaps between them, and the column content alignment.
+
+.. image:: /user/img/concept-guides/content-management/column-item-settings.png
+   :alt: Displaying a new Columns setting with a set of config options to adjust columns
+
+
+Add Tiles
+^^^^^^^^^
+
+.. hint:: Adding tiles from Layout is available starting from v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+Tiles enable you to display the records on the page as tiles (or bricks) instead of rows.
+
+You can add standalone tiles of any size for text boxes, images, or other multimedia.
+
+For that:
+
+1. Drag the Tiles block under the Layouts section to the required place on your canvas.
+2. From the popup, select the required tile template (1,2,3,1x3,2x3,3x3, or more). Tiles are fully responsive and adapted to content, formatting, and styles that you apply afterwards.
+3. You can place a tile inside another tile to extend the quantity of tiles, like in the example below:
+
+.. image:: /user/img/concept-guides/content-management/add_tiles.png
+   :alt: Placing a tile inside the existing one
+
+A new setting, **Tiles Settings**, is added along under the Style Manager menu that enables you to adjust the number of tiles and the gaps between them.
+
+.. image:: /user/img/concept-guides/content-management/tiles-settings.png
+   :alt: Displaying a new Tiles setting with a set of config options to adjust tiles
+
+
+Add Div Blocks
+^^^^^^^^^^^^^^
+
+.. hint:: Adding div blocks from Layout is available starting from v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+To add a div block with a particular content element to your page:
+
+1. Drag the Div block under the Layouts section to the required place on your canvas.
+2. Insert the required Text, Image, or any other block inside the Div block to wrap the content element into the div container.
+
+.. image:: /user/img/concept-guides/content-management/add-div-block.png
+   :alt: Inspecting the HTML code which displays wrapping the inserted text and image blocks into the div container
+
 
 
 .. _wysiwyg-add-tables:
@@ -438,7 +486,7 @@ For that, click the **</>** icon on the toolbar. You will not be able to apply a
 
 
 Add a Content Template
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. hint:: The feature is available starting from OroCommerce v5.0.6. To check which application version you are running, see the :ref:`system information <system-information>`.
 
