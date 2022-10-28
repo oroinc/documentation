@@ -56,6 +56,7 @@ Below is an example of JS Modules config with a minimal list of modules that mig
         - oroui/js/app/modules/init-layout
         - oroui/js/app/modules/layout-module
         - oroui/js/app/modules/messenger-module
+        - oroui/js/app/modules/swipeable-module
         - oroui/js/app/modules/viewport-module
     dynamic-imports:
         commons:
@@ -82,7 +83,6 @@ Below is an example of JS Modules config with a minimal list of modules that mig
             - oroui/js/app/views/layout-subtree-view
             - oroui/js/app/views/page/content-view
             - oroui/js/app/views/page/messages-view
-            - oroui/js/app/views/swipeable-view
             - oroui/js/mediator
             - orowindows/js/dialog/state/model
             - routing
