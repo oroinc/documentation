@@ -222,11 +222,17 @@ Product Collection is a filter-based segment that helps you display a custom and
    .. image:: /user/img/marketing/web_catalogs/ResetProducts.png
       :alt: Click Reset Products next to the tabs
 
-7. This step applies only to the content nodes with more than one content variant.
+7. To define a sort order for products
+
+   Each product selected in the All Added grid can have a sort order associated, that will define the default order it will appear in the frontend store.
+
+   ..note:: 0 is the highest priority, and you can input any positive decimal number. Empty values will be sorted last.
+
+8. This step applies only to the content nodes with more than one content variant.
 
    When your collection is not selected as a default variant for the content node, you can define the condition when the product collection overrides the default content variant in the *Restrictions* section beneath the product collection preview. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
-8. Click **Save** when you have filled in the web catalog content node or keep adding the content variants.
+9. Click **Save** when you have filled in the web catalog content node or keep adding the content variants.
 
 .. _user-guide--marketing--web-catalog--default-content-variant:
 
