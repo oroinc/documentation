@@ -134,6 +134,8 @@ Only administrators can reset passwords.
 Download MS Outlook Add-in
 --------------------------
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 The Enterprise edition of your Oro application (OroCRM or OroCommerce) supports an out-of-the-box integration with MS Outlook (2010, 2013, 2016). To configure this integration between your Oro Enterprise application and MS Outlook, you need to download the MS Outlook add-in.
 
 The link to the MS Outlook add-in is located in your Oro application instance on the page of your user profile.

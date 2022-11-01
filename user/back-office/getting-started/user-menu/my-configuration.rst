@@ -220,6 +220,8 @@ Click **Check Connection/Retrieve Folders** to check whether the specified synch
 Update MS Outlook Settings
 --------------------------
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 In the MS Outlook settings section, you can configure the following integration and synchronization settings:
 
 .. note:: Integration between MS Outlook and your Oro application is available only for the Enterprise Edition of your Oro application. For more information about the synchronization with Outlook, see the :ref:`Synchronization with Outlook <user-guide-synch-outlook>` guide.

@@ -11,7 +11,7 @@ Logging
 Logger Configuration
 --------------------
 
-.. hint:: This feature is available since OroCommerce v3.1.28. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available starting from OroCommerce v3.1.28. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 Logger Configuration
 --------------------

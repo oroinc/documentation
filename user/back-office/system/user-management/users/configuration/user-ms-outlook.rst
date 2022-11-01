@@ -6,6 +6,8 @@
 MS Outlook Settings per User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 .. begin_my_outlook
 
 In the MS Outlook settings section, you can configure the following integration and synchronization settings for a user:

@@ -7,6 +7,8 @@
 MS Outlook Integration
 ======================
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 The Enterprise edition of your Oro application (OroCRM or OroCommerce) supports an integration with MS Outlook (2010, 2013, 2016). All contacts, tasks and calendar events can be synchronized between Oro and a specific MS Outlook account with the help of an MS Outlook add-in. In addition, with the help of the add-in, leads, opportunities and cases can be created on the Outlook side and synchronized back to Oro.
 
 The following guide outlines the prerequisites for the MS Outlook extension integration, describes the step-by-step setup process on both sides, and gives an overview of the synchronization workflow between the applications.

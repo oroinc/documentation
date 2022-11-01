@@ -5,6 +5,8 @@
 Create Leads, Opportunities and Cases from Outlook
 --------------------------------------------------
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 .. begin_create_lead_opp_case
 
 With the help of the OroCRM for Outlook add-in side panel, you can create leads, opportunities and cases from Outlook based on email data, or manually, and sync the data back to your Oro application.

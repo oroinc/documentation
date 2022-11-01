@@ -6,6 +6,8 @@
 MS Outlook Settings
 -------------------
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 .. begin_outlook_integration_oro
 
 Once you downloaded and installed the add-in, you can configure MS Outlook settings on the Oro side. These settings include:

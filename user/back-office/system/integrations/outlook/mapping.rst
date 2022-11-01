@@ -9,6 +9,8 @@
 Mapping Rules Between Oro and Outlook
 -------------------------------------
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 .. begin_mapping
 
 Specific values of the fields of OroCRM and Outlook records are mapped during synchronization of contacts, tasks, and events.

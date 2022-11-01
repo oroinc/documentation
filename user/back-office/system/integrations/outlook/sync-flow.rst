@@ -5,6 +5,8 @@
 Synchronization Workflow
 ------------------------
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 .. begin_sync_flow
 
 Select Sync Type: Automatic VS Manual

@@ -6,6 +6,8 @@
 Connect MS Outlook Add-in to Oro Instance
 -----------------------------------------
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
  .. begin_connect_outlook
 
 During add-in installation you are required to provide integration settings to ensure correct work between applications:

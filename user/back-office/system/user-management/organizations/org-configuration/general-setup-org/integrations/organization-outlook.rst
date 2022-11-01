@@ -5,6 +5,8 @@
 Outlook Integration Settings per Organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. important:: The Outlook integration is deprecated and therefore no longer maintained. The integration will be removed in version 4.1.
+
 .. hint:: You can read more on this topic in :ref:`MS Outlook Integration <user-guide-synch-outlook>`.
 
 To configure MS Outlook integration settings per organization:
