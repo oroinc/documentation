@@ -224,7 +224,7 @@ Product Collection is a filter-based segment that helps you display a custom and
 
 7. To define a sort order for products
 
-   Each product selected in the All Added grid can have a sort order associated, that will define the default order it will appear in the frontend store.
+   Each product selected in the All Added grid can have a sort order associated with it that will define the default order in which the product will appear in the storefront.
 
    ..note:: 0 is the highest priority, and you can input any positive decimal number. Empty values will be sorted last.
 
