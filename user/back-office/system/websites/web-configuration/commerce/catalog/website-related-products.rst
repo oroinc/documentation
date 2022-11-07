@@ -2,6 +2,7 @@
 
 .. _sys--websites--commerce--catalog--related-products:
 .. _sys--websites--commerce--catalog--upsell-products:
+.. _sys--websites--commerce--catalog--similar-products:
 
 Configure Related Product Settings per Website
 ==============================================
@@ -57,7 +58,11 @@ To update the related products settings per website:
    a) Clear the **Use Organization** checkbox next to the option.
    b) Set or clear the option, or enter the quantity.
 
-6. Click **Save**.
+6. In the **Similar Products** section, the following options are available:
+
+TODO:
+
+7. Click **Save**.
 
 .. include:: /include/include-images.rst
    :start-after: begin

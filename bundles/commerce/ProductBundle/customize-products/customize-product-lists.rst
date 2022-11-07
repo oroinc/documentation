@@ -8,7 +8,7 @@ Product lists are used to show lists of products grouped by some criteria, for e
 The data for these lists are loaded from the :ref:`website search index <bundle-docs-commerce-website-search-bundle>`.
 This was done to avoid unnecessary hydration of product entities, which is quite expensive and requires
 a lot of database requests.
- 
+
 The main entry point to the product lists is |ProductListBuilder|. This builder creates a base query to load products
 from website search index, executes this query and converts the result to a list of |ProductView| objects.
 To be able to customize which data should be loaded, this builder dispatches the following events:
@@ -26,6 +26,7 @@ The following product list types are available out-of-the-box:
 * ``top_selling_items`` for the list of top selling products.
 * ``related_products`` for the list of :ref:`related products <sys--commerce--catalog--relate-products>`.
 * ``upsell_products`` for the list of :ref:`up-sell products <sys--commerce--catalog--upsell-products>`.
+* ``similar_products`` for the list of :ref:`up-sell products <sys--commerce--catalog--similar-products>`.
 * ``product_mini_block`` for a product displayed in :ref:`"Product Mini Block" content widget <concept-guide-content-widgets>`.
 * ``segment_products`` for the list of products displayed in :ref:`"Product Segment" content widget <concept-guide-content-widgets>`.
 

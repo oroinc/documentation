@@ -3,6 +3,7 @@
 .. _sys--commerce--catalog--relate-products--main:
 .. _sys--commerce--catalog--upsell-products:
 .. _sys--commerce--catalog--relate-products:
+.. _sys--commerce--catalog--similar-products:
 
 Configure Global Related Items Settings
 =======================================
@@ -99,7 +100,11 @@ To update the related and up-sell products settings globally:
    a) Clear the **Use Default** checkbox next to the option.
    b) Set or clear the option, or enter the quantity.
 
-5. Click **Save**.
+5. In the **Similar Products** section, the following options are available:
+
+TODO:
+
+6. Click **Save**.
 
 .. admonition:: Business Tip
 

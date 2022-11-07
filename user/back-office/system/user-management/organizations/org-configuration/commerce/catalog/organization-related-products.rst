@@ -2,6 +2,7 @@
 
 .. _sys--users--organization--commerce--catalog--related-products:
 .. _sys--users--organization--commerce--catalog--upsell-products:
+.. _sys--users--organization--commerce--catalog--similar-products:
 
 Configure Related Items Settings per Organization
 =================================================
@@ -60,7 +61,11 @@ To update the related products settings per organization:
    a) Clear the **Use System** checkbox next to the option.
    b) Set or clear the option, or enter the quantity.
 
-6. Click **Save**.
+6. In the **Similar Products** section, the following options are available:
+
+TODO:
+
+7. Click **Save**.
 
 .. admonition:: Business Tip
 
