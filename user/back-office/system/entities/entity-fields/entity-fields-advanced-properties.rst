@@ -12,9 +12,9 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 1. In the **General Information** section, provide:
 
    * **Label** --- Type a label that will be used for referring to the field on the interface. By default, the label is the same as **Name**.
-   * **Description** --- Type a short but meaningful description that will appear as a field tooltip on the interface.  
-   * **Field Type-related Properties** --- Depending on the entity type selected when defining the :ref:`basic properties <admin-guide-create-entity-fields-basic>` for the entity field you are creating, additional :ref:`type-related options <admin-guide-create-entity-fields-type-related>` appear in the **General Information** section once you click **Continue**.  
-     
+   * **Description** --- Type a short but meaningful description that will appear as a field tooltip on the interface.
+   * **Field Type-related Properties** --- Depending on the entity type selected when defining the :ref:`basic properties <admin-guide-create-entity-fields-basic>` for the entity field you are creating, additional :ref:`type-related options <admin-guide-create-entity-fields-type-related>` appear in the **General Information** section once you click **Continue**.
+
 2. In the **Import and Export** section, specify the following information:
 
    .. image:: /user/img/system/entity_management/entity_field_import_and_export.png
@@ -36,11 +36,11 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
       :alt: The general settings of the other section available when creating a new entity field
 
    * **Available in Email Templates** --- If this option is set to *Yes*, values of the field can be used for creating email patterns.
-   * **Contact Information** --- Possible values are:    
+   * **Contact Information** --- Possible values are:
 
       - **Empty** --- The field will not be treated as contact information.
       - **Email** --- Values of the field will be treated by :ref:`marketing lists<user-guide-marketing-lists>` as email addresses.
-      - **Phone** --- Values of the field will be treated by marketing lists as phone numbers.         
+      - **Phone** --- Values of the field will be treated by marketing lists as phone numbers.
 
    * **Show on Grid** --- If set to *Yes*, the field will be displayed in a separate column of the respective grid.
    * **Show Grid Filter** --- Not available for :ref:`serialized fields <book-entities-extended-entities-serialized-fields>`. If set to *Yes*, a corresponding filter will be added to :ref:`grid filters <doc-grids-actions-filters>` by default.
@@ -50,12 +50,13 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 
    * **Show on View** --- If set to *Yes*, the field is displayed on record view pages.
    * **Exportable** --- If set to *Yes*, the value of this field will be present in the :ref:`product data export file in the storefront <sys--commerce--product--customer-settings>`.
-   * **Priority** --- Defines an order of custom fields on entity record view, edit, and create pages, and on the respective grid. 
-  
+   * **Priority** --- Defines an order of custom fields on entity record view, edit, and create pages, and on the respective grid.
+
       Custom fields are always displayed one after another, usually below the system fields. If no priority is defined or the defined priority is 0, the fields will be displayed in the order in which they have been added to the system. The fields with a higher priority (a bigger value) will be displayed before the fields with a lower priority.
 
    * **Searchable** --- If set to *Yes*, the entities can be found using the :ref:`search <user-guide-getting-started-search>` by values of this field.
    * **Global Search Boost** --- Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option enables you to :ref:`boost <bundle-docs-commerce-website-elastic-search-bundle-attributes-boost>` the value of the field during search. By default, the boost for sku is set to 5, for names to 3, meaning that the searchable word is first searched among SKUs, then names, etc. The option works for searchable attributes only.
+   * **Similar Products Boost**" --- Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option allows you to use the attribute in the related products calculation. By default, all attributes are not used. The option works for string, many-to-one, boolean, select and multi-select attributes only.
    * **The Search Result Title** --- If set to *Yes*, the field value will be included into the search result title.
    * **Auditable** --- Not available for :ref:`serialized fields <book-entities-extended-entities-serialized-fields>`. If set to *Yes*, the system will log changes made to this field values when users edit entity records.
    * **Applicable Organizations** --- Defines for what :term:`organizations <Organization>` the custom field will be added to the :term:`entity <Entity>`. **All** is selected by default. Clear the **All** checkbox to choose specific organizations from the list.

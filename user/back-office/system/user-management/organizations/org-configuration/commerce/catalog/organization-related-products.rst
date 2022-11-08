@@ -63,7 +63,39 @@ To update the related products settings per organization:
 
 6. In the **Similar Products** section, the following options are available:
 
-TODO:
+   * **Enable Similar Products** --- Toggles managing similar products on/off. Enabled by default.
+
+     .. note:: Similar products are available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine.
+
+   * **Maximum Items** --- A limit of similar products that are shown to a buyer.
+
+     .. note:: Some similar products may be hidden by the visibility settings. If the list of similar products still exceeds the limit, only the specified number of items (top of the list) will be shown.
+
+   * **Minimum Items** --- The minimum number of similar products that may be shown to the buyer. If the actual number of products is less than this value, the similar products section is hidden in the storefront for the product.
+   * **Show Add Button** --- Enables a buyer to order a similar product from the similar products section in the main product details. When the option is disabled, a buyer needs to open the similar product details before they can add it to the shopping list.
+
+     **Show Add Button is Enabled**
+
+     .. image:: /user/img/system/config_commerce/catalog/RelatedProductPreviewWithAdd.png
+        :class: with-border
+        :alt: A storefront product page illustrating the enabled Add to Shopping list button
+
+     **Show Add Button is Disabled**
+
+     .. image:: /user/img/system/config_commerce/catalog/RelatedProductPreview.png
+        :class: with-border
+        :alt: A storefront product page illustrating the disabled Add to Shopping list button
+
+   * **Use Slider On Mobile** --- When enabled, one similar product is displayed below the main product information. Other similar products are accessible using the horizontal slider. Click < and > to slide through the similar products.
+   * **Product Name Boost** --- Boost factor for the product name, the boost is applied for each matched word. Leave the field empty to disable the boost.
+   * **Product Category Boost** --- Boost factor for the product category. Leave the field empty to disable the boost.
+   * **Product Category Parent Boost** --- Boost factor for the parent of product category. Leave the field empty to disable the boost.
+   * **Product Category 2nd Level Parent Boost** --- Boost factor for the second level parent of product category. Leave the field empty to disable the boost.
+
+     To customize any of these options:
+
+     a) Clear the **Use Default** checkbox next to the option.
+     b) Set or clear the option, or enter the quantity.
 
 7. Click **Save**.
 
