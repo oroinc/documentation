@@ -77,6 +77,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    Consent Management <consents/index>
    Checkout Configuration <checkout/index>
    Search Functions <search/index>
+   Accessibility <accessibility/index>
 
 .. include:: /include/include-images.rst
    :start-after: begin
