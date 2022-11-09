@@ -16,6 +16,7 @@ There are four content widget types:
 * A Contact Us form
 * A Product Mini Block
 * A Product Segment
+* Tabbed Content
 
 Each of these widget types has a different set of options.
 
@@ -42,7 +43,7 @@ To create a new content widget:
 1. Navigate to **Marketing > Content Widgets** in the main menu.
 2. Click **Create Content Widget** on the top right.
 
-   .. note:: If you have more than one organization in your OroCommerce application, first select which organization to add a new content widget to.
+   .. note:: If you have more than one organization in your OroCommerce application, first select the organization to which you want to add a new content widget.
 
 3. Depending on the widget type, form fields are different:
 
@@ -63,11 +64,6 @@ To create a new content widget:
             .. image:: /user/img/marketing/content_widgets/image_slider_2.png
                :alt: Image slider content widget form
 
-   * **Copyright** - Enables you to add a full or shortened version of a copyright notice.
-
-    .. image:: /user/img/marketing/content_widgets/copyright.png
-       :alt: Copyright content widget form
-
     |
 
    * **Product Mini Block** - Enables you to add a block with product information with or without prices and/or the **Add to Shopping List** button.
@@ -84,10 +80,23 @@ To create a new content widget:
 
     |
 
+   * **Tabbed Content** - Enables you to add content to your storefront website in a form of tabs or an accordion. This feature is available starting from OroCommerce v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+     .. image:: /user/img/marketing/content_widgets/tabs-vs-accordion.png
+        :alt: Tabbed vs Accordion view of tabbed content widget
+
+    |
+
+     Tabbed content widget uses the :ref:`WYSIWYG editor <getting-started-wysiwyg-editor-field>` which enables you to inject other content widget(s), such as a contact us form, into your current tabbed content widget.
+
+     .. image:: /user/img/marketing/content_widgets/injected-widget.png
+        :alt: Contact us widget embedded in tabbed content widget
+        :scale: 40%
+
 4. Once you have provided all widget-specific details, click **Save and Close**.
 
-   .. image:: /user/img/marketing/content_widgets/widget-view.png
-      :alt: Content widget view page
+   .. .. image:: /user/img/marketing/content_widgets/widget-view.png
+         :alt: Content widget view page
 
    |
 

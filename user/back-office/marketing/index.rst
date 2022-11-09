@@ -22,6 +22,7 @@ The Marketing Menu in the Oro application provides access tools for managing the
 * :ref:`Landing page <user-guide--landing-pages>`
 * :ref:`Content Blocks <user-guide--landing-pages--marketing--content-blocks>`
 * :ref:`Customer Login Pages <customer-login-pages>`
+* :ref:`Content Widgets <user-guide--landing-pages--marketing--content-widgets>`
 * :ref:`Digital Assets <digital-assets>`
 * :ref:`Search Synonyms <user-guide-search-synonyms>`
 
