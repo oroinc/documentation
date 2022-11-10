@@ -85,7 +85,7 @@ Links (User)
 
 .. |OroCommerce Editions| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/full-features-list" target="_blank">OroCommerce Editions</a>
+   <a href="https://oroinc.com/b2b-ecommerce/editions/" target="_blank">OroCommerce Editions</a>
 
 .. |OroCRM Editions| raw:: html
 
@@ -553,7 +553,7 @@ Links (User)
 
 .. |zero amount transaction| raw:: html
 
-   <a href="https://developer.paypal.com/docs/classic/payflow/integration-guide/?mark=Zero%20Amount%20Authorization#submitting-account-verifications" target="_blank">zero amount transaction</a>
+   <a href="https://developer.paypal.com/docs/payflow/integration-guide/?mark=Zero%20Amount%20Authorization#submitting-account-verifications" target="_blank">zero amount transaction</a>
 
 .. |https://registration.paypal.com/| raw:: html
 
@@ -619,14 +619,6 @@ Links (User)
 
    <a href="http://wirecard.com" target="_blank">wirecard.com</a>
 
-.. |Wirecard Demo Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:demo_mode" target="_blank">Wirecard Demo Mode</a>
-
-.. |Wirecard Test Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:test_mode" target="_blank">Wirecard Test Mode</a>
-
 .. |https://www.apruve.com/| raw:: html
 
    <a href="https://www.apruve.com/" target="_blank">https://www.apruve.com/</a>
@@ -641,7 +633,7 @@ Links (User)
 
 .. |sign-on| raw:: html
 
-   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-dotdigital" target="_blank">sign-on</a>
 
 .. |https://r1-app.dotmailer.com/| raw:: html
 
@@ -649,7 +641,7 @@ Links (User)
 
 .. |Single sign-on| raw:: html
 
-   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">Single sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-dotdigital" target="_blank">Single sign-on</a>
 
 .. |here4| raw:: html
 

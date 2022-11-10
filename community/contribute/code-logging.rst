@@ -287,9 +287,6 @@ Avoid Logging Sensitive Information
 
 Never log sensitive data. Under any circumstances. We mean it. Use data anonymizing or encryption to secure customer identity and their sensitive business-critical information.
 
-**See Also**
-
-* |How to Do Application Logging Right|
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

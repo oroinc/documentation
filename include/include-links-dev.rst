@@ -151,10 +151,6 @@ Links (Dev)
 
    <a href="https://github.com/GeniusesOfSymfony/WebSocketBundle" target="_blank">GosWebSocketBundle</a>
 
-.. |PHP unserialization vulnerability| raw:: html
-
-   <a href="https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf" target="_blank">PHP unserialization vulnerability</a>
-
 .. |Apache| raw:: html
 
    <a href="https://httpd.apache.org/" target="_blank">Apache</a>
@@ -189,7 +185,7 @@ Links (Dev)
 
 .. |Microsoft Edge| raw:: html
 
-   <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a>
+   <a href="https://www.microsoft.com/en-us/edge?form=MA13FJ" target="_blank">Microsoft Edge</a>
 
 .. |Safari| raw:: html
 
@@ -229,7 +225,7 @@ Links (Dev)
 
 .. |karma-jsmodule-exposure| raw:: html
 
-   <a href="https://github.com/laboro/karma-jsmodule-exposure.git" target="_blank">karma-jsmodule-exposure</a>
+   <a href="https://github.com/laboro/karma-requirejs-exposure" target="_blank">karma-jsmodule-exposure</a>
 
 .. |Supervisor| raw:: html
 
@@ -332,7 +328,7 @@ Links (Dev)
 
 .. |Github guide on forking a repo| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">Github guide on forking a repo</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">Github guide on forking a repo</a>
 
 .. |make a package| raw:: html
 
@@ -340,7 +336,7 @@ Links (Dev)
 
 .. |Keep your fork synced| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/#keep-your-fork-synced" target="_blank">Keep your fork synced</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#keep-your-fork-synced" target="_blank">Keep your fork synced</a>
 
 .. |Vagrant| raw:: html
 
@@ -352,7 +348,7 @@ Links (Dev)
 
 .. |Install Vagrant| raw:: html
 
-   <a href="https://www.vagrantup.com/docs/installation/" target="_blank">Install Vagrant</a>
+   <a href="https://developer.hashicorp.com/vagrant/docs/installation" target="_blank">Install Vagrant</a>
 
 .. |Install Git.| raw:: html
 
@@ -376,7 +372,7 @@ Links (Dev)
 
 .. |official Vagrant documentation| raw:: html
 
-   <a href="https://www.vagrantup.com/docs/" target="_blank">official Vagrant documentation</a>
+   <a href="https://developer.hashicorp.com/vagrant/docs" target="_blank">official Vagrant documentation</a>
 
 .. |Docker Provision| raw:: html
 
@@ -600,7 +596,7 @@ Links (Dev)
 
 .. |configuration.php| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Configuration/Configuration.php" target="_blank">configuration.php</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActionBundle/Configuration/ConfigurationProvider.php" target="_blank">configuration.php</a>
 
 .. |ConfigExpression| raw:: html
 
@@ -660,7 +656,7 @@ Links (Dev)
 
 .. |Blackfire in its documentation portal| raw:: html
 
-   <a href="https://blackfire.io/docs/book/" target="_blank">Blackfire in its documentation portal</a>
+   <a href="https://blackfire.io/docs/introduction" target="_blank">Blackfire in its documentation portal</a>
 
 .. |OroConfigBundle| raw:: html
 
@@ -1216,7 +1212,7 @@ Links (Dev)
 
 .. |Doctrine Criteria| raw:: html
 
-   <a href="https://github.com/doctrine/collections/blob/master/lib/Doctrine/Common/Collections/Criteria.php" target="_blank">Doctrine Criteria</a>
+   <a href="https://github.com/doctrine/collections/blob/2.0.x/src/Criteria.php" target="_blank">Doctrine Criteria</a>
 
 .. |CriteriaConnector| raw:: html
 
@@ -1492,7 +1488,7 @@ Links (Dev)
 
 .. |ParamConverter| raw:: html
 
-   <a href="https://symfony.com/doc/3.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html" target="_blank">ParamConverter</a>
+   <a href="https://symfony.com/bundles/SensioFrameworkExtraBundle/current/annotations/converters.html" target="_blank">ParamConverter</a>
 
 
 .. |Font Awesome Icon1| raw:: html
@@ -1561,7 +1557,7 @@ Links (Dev)
 
 .. |fork application repository| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">fork application repository</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">fork application repository</a>
 
 .. |Symfony Best Practices| raw:: html
 
@@ -1593,7 +1589,7 @@ Links (Dev)
 
 .. |@ParamConverter annotation| raw:: html
 
-   <a href="https://symfony.com/doc/3.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html" target="_blank">@ParamConverter annotation</a>
+   <a href="https://symfony.com/bundles/SensioFrameworkExtraBundle/current/annotations/converters.html" target="_blank">@ParamConverter annotation</a>
 
 .. |https://symfony.com/doc/3.4/cookbook/security/acl.html| raw:: html
 
@@ -1650,7 +1646,7 @@ Links (Dev)
 
 .. |Gedmo/Translatable| raw:: html
 
-   <a href="http://atlantic18.github.io/DoctrineExtensions/doc/translatable.html" target="_blank">Gedmo/Translatable</a>
+   <a href="https://github.com/doctrine-extensions/DoctrineExtensions/blob/main/doc/translatable.md" target="_blank">Gedmo/Translatable</a>
 
 .. |LocalizedFallbackValue| raw:: html
 
@@ -1719,18 +1715,6 @@ Links (Dev)
 .. |AbstractMessageQueueAssertTrait| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/MessageQueueBundle/Test/Assert/AbstractMessageQueueAssertTrait.php" target="_blank">AbstractMessageQueueAssertTrait</a>
-
-.. |security token| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">security token</a>
-
-.. |token storage| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/Storage/TokenStorageInterface.html" target="_blank">token storage</a>
-
-.. |TokenInterface| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">TokenInterface</a>
 
 .. |ContainerResetExtension| raw:: html
 
@@ -2178,7 +2162,7 @@ Links (Dev)
 
 .. |Twig Inspector| raw:: html
 
-   <a href="https://github.com/oroinc/twig-inspector/blob/3.1/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector</a>
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector</a>
 
 .. |Asset Commands| raw:: html
 
@@ -2286,7 +2270,7 @@ Links (Dev)
 
 .. |Twig Inspector documentation| raw:: html
 
-   <a href="https://github.com/oroinc/twig-inspector/blob/3.1/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector documentation</a>
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector documentation</a>
 
 .. |LayoutBundle| raw:: html
 
@@ -3088,15 +3072,15 @@ Links (Dev)
 
 .. |Inspect with Built-in Dev Tools in a Browser| raw:: html
 
-   <a href="https://github.com/oroinc/twig-inspector/blob/3.1/Bundle/Resources/doc/usage.md#inspect-with-built-in-dev-tools-in-a-browser" target="_blank">Inspect with Built-in Dev Tools in a Browser</a>
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md#inspect-with-built-in-dev-tools-in-a-browser" target="_blank">Inspect with Built-in Dev Tools in a Browser</a>
 
 .. |Install Bundle| raw:: html
 
-   <a href="https://github.com/oroinc/twig-inspector/blob/3.1/Bundle/Resources/doc/installation.md" target="_blank">Install Bundle</a>
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/installation.md" target="_blank">Install Bundle</a>
 
 .. |License| raw:: html
 
-   <a href="https://github.com/oroinc/twig-inspector/blob/3.1/LICENSE" target="_blank">License</a>
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/LICENSE" target="_blank">License</a>
 
 .. |JavaScript Components API| raw:: html
 
@@ -3208,7 +3192,7 @@ Links (Dev)
 
 .. |StyleCop| raw:: html
 
-   <a href="https://stylecop.codeplex.com/" target="_blank">StyleCop</a>
+   <a href="https://github.com/StyleCop/StyleCop" target="_blank">StyleCop</a>
 
 .. |Google JavaScript Style Guide| raw:: html
 
@@ -3252,7 +3236,7 @@ Links (Dev)
 
 .. |here, by GMetrics| raw:: html
 
-   <a href="http://gmetrics.sourceforge.net/gmetrics-CyclomaticComplexityMetric.html" target="_blank">here, by GMetrics </a>
+   <a href="https://dx42.github.io/gmetrics/" target="_blank">here, by GMetrics </a>
 
 .. |program| raw:: html
 
@@ -3364,11 +3348,11 @@ Links (Dev)
 
 .. |Fork| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo" target="_blank">Fork</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">Fork</a>
 
 .. |Clone| raw:: html
 
-   <a href="https://help.github.com/articles/cloning-a-repository/" target="_blank">Clone</a>
+   <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" target="_blank">Clone</a>
 
 .. |OroCommerce project| raw:: html
 
@@ -3376,15 +3360,7 @@ Links (Dev)
 
 .. |Crowdin tutorial| raw:: html
 
-   <a href="https://support.crowdin.com/for-translators/onlineworkbench/translation-tutorial/" target="_blank">Crowdin tutorial</a>
-
-.. |proofreading| raw:: html
-
-   <a href="https://support.crowdin.com/for-translators/onlineworkbench/proofreading" target="_blank">proofreading</a>
-
-.. |vote| raw:: html
-
-   <a href="https://support.crowdin.com/for-translators/onlineworkbench/voting" target="_blank">vote</a>
+   <a href="https://support.crowdin.com/online-editor/" target="_blank">Crowdin tutorial</a>
 
 .. |Git| raw:: html
 
@@ -3405,10 +3381,6 @@ Links (Dev)
 .. |in Symfony Console Command documentation| raw:: html
 
    <a href="https://symfony.com/doc/3.4/console/logging.html#manually-logging-from-a-console-command" target="_blank">Oro</a>
-
-.. |How to Do Application Logging Right| raw:: html
-
-   <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.173.2198&rep=rep1&type=pdf" target="_blank">How to Do Application Logging Right</a>
 
 .. |ramfs| raw:: html
 
@@ -4448,7 +4420,7 @@ Links (Dev)
 
 .. |Read more on rabbitmqctl(8)| raw:: html
 
-   <a href="https://www.rabbitmq.com/man/rabbitmqctl.1.man.html" target="_blank">Read more on rabbitmqctl(8)</a>
+   <a href="https://www.rabbitmq.com/rabbitmqctl.8.html" target="_blank">Read more on rabbitmqctl(8)</a>
 
 .. |Search engine| raw:: html
 
@@ -4560,7 +4532,7 @@ Links (Dev)
 
 .. |Web Performance Tuning: Latency and Throughput| raw:: html
 
-   <a href="https://www.safaribooksonline.com/library/view/web-performance-tuning/059600172X/ch04s02.html" target="_blank">Web Performance Tuning: Latency and Throughput</a>
+   <a href="https://www.oreilly.com/library/view/web-performance-tuning/059600172X/" target="_blank">Web Performance Tuning: Latency and Throughput</a>
 
 .. |Website Search Index Type| raw:: html
 
@@ -4800,7 +4772,7 @@ Links (Dev)
 
 .. |the Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/2.x/bundles/NelmioApiDocBundle/the-apidoc-annotation.html" target="_blank">the Symfony documentation</a>
+   <a href="https://symfony.com/bundles/NelmioApiDocBundle/current/index.html" target="_blank">the Symfony documentation</a>
 
 .. |AbstractFormatter class in NelmioApiDocBundle| raw:: html
 
@@ -5265,7 +5237,7 @@ Links (Dev)
 
 .. |GridFS| raw:: html
 
-   <a href="https://docs.mongodb.com/manual/core/gridfs/" target="_blank">GridFS</a>
+   <a href="https://www.mongodb.com/docs/manual/core/gridfs/" target="_blank">GridFS</a>
 
 .. |MongoDB PHP Library| raw:: html
 
@@ -5277,7 +5249,7 @@ Links (Dev)
 
 .. |KnpGaufretteBundle documentation| raw:: html
 
-   <a href="https://github.com/KnpLabs/KnpGaufretteBundle/blob/master/README.markdown" target="_blank">KnpGaufretteBundle documentation</a>
+   <a href="https://github.com/KnpLabs/KnpGaufretteBundle/blob/master/README.md" target="_blank">KnpGaufretteBundle documentation</a>
 
 .. |LiipImagineBundle| raw:: html
 

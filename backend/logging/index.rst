@@ -324,10 +324,6 @@ Usually it can be necessary for services that log with INFO and above levels and
 
 You should add the logger in the Decorator of the service and replace the original one with it in the container at CompilerPass based on the environment variable and logger availability. For example, check "Symfony\Component\Translation\LoggingTranslator" that replaces the original "Symfony\Component\Translation\Translator" in "Symfony\Bundle\FrameworkBundle\DependencyInjection\Compiler\LoggingTranslatorPass" based on the container parameter.
 
-Additional Information
-----------------------
-
-|How to Do Application Logging Right|
 
 
 .. include:: /include/include-links-dev.rst

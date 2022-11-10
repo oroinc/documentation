@@ -9,7 +9,7 @@ Parameters for APIs requests:
 
 -  **query** - search string
 
-REST API url: http://domail.com/api/rest/latest/search/advanced
+REST API url: ``http://domail.com/api/rest/latest/search/advanced``
 
 SOAP function name: advancedSearch
 
