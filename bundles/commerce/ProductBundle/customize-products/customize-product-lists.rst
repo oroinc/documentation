@@ -26,7 +26,7 @@ The following product list types are available out-of-the-box:
 * ``top_selling_items`` for the list of top selling products.
 * ``related_products`` for the list of :ref:`related products <sys--commerce--catalog--relate-products>`.
 * ``upsell_products`` for the list of :ref:`up-sell products <sys--commerce--catalog--upsell-products>`.
-* ``similar_products`` for the list of :ref:`up-sell products <sys--commerce--catalog--similar-products>`.
+* ``similar_products`` for the list of :ref:`similar products <sys--commerce--catalog--similar-products>`.
 * ``product_mini_block`` for a product displayed in :ref:`"Product Mini Block" content widget <concept-guide-content-widgets>`.
 * ``segment_products`` for the list of products displayed in :ref:`"Product Segment" content widget <concept-guide-content-widgets>`.
 
