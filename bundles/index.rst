@@ -73,12 +73,11 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**",""
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",""
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`","**P**",""
-   "**D**","**I**",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`","**S**"
-   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`",""
-
+   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",""
+   "**D**","**I**","**P**",""
+   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
 
 CRM Bundles
 -----------
@@ -196,6 +195,7 @@ CRM Bundles
    GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
    InfinitePayBundle <extensions/InfinitePayBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
+   MakerBundle <extensions/MakerBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
    StripeBundle <extensions/StripeBundle/index>
 
