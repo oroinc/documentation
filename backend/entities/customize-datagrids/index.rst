@@ -12,9 +12,9 @@ This topic uses existing OroCommerce datagrids for illustration. If you are not 
 Data Sources
 ------------
 
-A datagrid is usually used to visualize some data coming from a data source. OroDataGridBundle allows for use of various data sources for datagrids, and includes the ORM data source adapter out of the box. It is possible to |implement your own data source adapters| as well.
+A datagrid is usually used to visualize some data coming from a data source. OroDataGridBundle allows for use of various data sources for datagrids, and includes the ORM data source adapter out of the box. It is possible to :ref:`implement your own data source adapters <customize--datagrids-datasource>` as well.
 
-The ORM data source types allow for database query specification, sorters and filters definitions to be specified in the datagrid configuration. Datagrid configuration can be supplied by a developer in YAML format. By convention, the datagrid.yml files placed in Resources/config folders of any application bundle are processed automatically. All supported data source configuration options that can be used in data source configuration section are described in the |datasources section of the DataGridBundle documentation|.
+The ORM data source types allow for database query specification, sorters and filters definitions to be specified in the datagrid configuration. Datagrid configuration can be supplied by a developer in YAML format. By convention, the datagrid.yml files placed in Resources/config folders of any application bundle are processed automatically. All supported data source configuration options that can be used in data source configuration section are described in the :ref:`datasources section of the DataGridBundle documentation <customize--datagrids-datasource>`.
 
 Inner Workings of Datagrids
 ---------------------------
@@ -43,7 +43,7 @@ One of the possible ways to customize this grid would be through events triggere
 
 There are several events triggered before processing the datagrid configuration files. In this case, a good choice is the onBuildBefore event. By listening to this event you can add new elements to the grid configuration or modify already existing configuration in your event listener.
 
-.. note:: More information about grid column definition configuration options is available in the |columns and properties section of the DataGridBundle documentation|.
+.. note:: More information about grid column definition configuration options is available in the :ref:`columns and properties section of the DataGrid documentation <customizing-data-grid-columns-properties>`.
 
 The Product entity has a many-to-one relation with the Business Unit entity, so in order to add the owner column to the grid and load the owner data from the data source, you should modify its query configuration by adding additional join and select parts.
 
@@ -178,7 +178,7 @@ Custom Filters
 
 Our second customization task will be to add filters for the newly introduced column.
 
-In most cases, the |built-in filters| would work just perfectly. But in the case of the price lists column, a custom filter is required. The purpose of this filter will be to modify the data retrieval query depending on the filter values entered by a user.
+In most cases, the :ref:`built-in filters <backend-filters-form-types>` would work just perfectly. But in the case of the price lists column, a custom filter is required. The purpose of this filter will be to modify the data retrieval query depending on the filter values entered by a user.
 
 .. code-block:: php
     :linenos:

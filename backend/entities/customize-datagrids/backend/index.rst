@@ -113,6 +113,8 @@ Each binding calls ``->setParameter('group_id', group_id)`` automatically on the
 
 See more in the :ref:`parameters binding <datagrids-customize-parameter-binding>` section.
 
+.. _customizing-data-grid-columns-properties:
+
 Columns and Properties
 ^^^^^^^^^^^^^^^^^^^^^^
 

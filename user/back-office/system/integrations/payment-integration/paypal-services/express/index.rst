@@ -51,10 +51,17 @@ To enable PayPal Express payments:
 
 Next, set up a payment rule that enables the PayPal Express payment method for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.
 
+.. admonition:: Business Tip
+
+   Want to embrace smart manufacturing in your company? Discover how |digitalization in manufacturing| can help you succeed.
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
 
 .. toctree::

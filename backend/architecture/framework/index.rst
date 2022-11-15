@@ -78,6 +78,11 @@ If you are ready to publish your adjustment in Oro application for free or paid 
 :ref:`How to Add an Extension to the OroPlatform Marketplace <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
 article for the details on how to do this.
 
+.. admonition:: Business Tip
+
+   Are you looking for |digital transformation examples in manufacturing|? Discover business cases and digitization success stories in our article.
+
+
 Related Cookbook Articles
 -------------------------
 
@@ -98,4 +103,7 @@ Related Cookbook Articles
 .. Currently we describe only Symfony, PlatformBundle and DistributionBundle parts
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

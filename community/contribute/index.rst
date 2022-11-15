@@ -38,7 +38,7 @@ We would love you to contribute to our source code and documentation, and help u
                 <img src="../../_static/images/interface.svg" alt="" role="presentation">
             </div>
             <div class="items-body">
-                <p class="first"><a class="reference internal" href="../../backend/setup/dev-environment/index#doc-dev-env-best-practices"><span class="std std-ref">Set Up a Development Environment</span></a></p>
+                <p class="first"><a class="reference internal" href="../../backend/setup/dev-environment/"><span class="std std-ref">Set Up a Development Environment</span></a></p>
                 <p>This article describes best practices in setting up a development environment. It up to you
                     whether to follow the listed recommendation, however take a note that they can greatly facilitate the development
                     process.</p>
@@ -72,6 +72,11 @@ Signing a Contributor License Agreement
 
 Although signing the |Contributor License Agreement| is a prerequisite for accepting your pull request, you only need to do it once. So, if you've done this for any of our open source projects, you're good to go with all of them. If you are submitting a pull request for the first time, our friendly *orocla* robot will automatically add a reminder to your pull request.
 
+.. admonition:: Business Tip
+
+    Looking to capitalize on the recent trend in digital commerce? Find out more about |B2B marketplaces|, their benefits, and real-life examples.
+
+
 **See Also**
 
 * :ref:`Report an Issue <doc--community--issue-report>`
@@ -91,6 +96,9 @@ Although signing the |Contributor License Agreement| is a prerequisite for accep
    code-ui-translations
    documentation
    code-logging
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

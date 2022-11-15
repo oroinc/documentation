@@ -183,3 +183,11 @@ The Oro support team needs to be aware of the expected launch to enable monitori
 The provided data enables the support team to size the client's environment and prepare it to support expected load on the application.
 
 
+.. admonition:: Business Tip
+
+   |What is B2B eCommerce|, and how does it contribute to growth strategies? In our guide, you'll learn the basics of online commerce.
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
+

@@ -98,9 +98,17 @@ To disable the Consumer Heartbeat notifications, set the `heartbeat_update_perio
    reset-container
 
 
+.. admonition:: Business Tip
+
+   Key industries like manufacturing are undergoing digital revolution. Find out how eCommerce helps drive |digital transformation in manufacturing|.
+
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 
 
 

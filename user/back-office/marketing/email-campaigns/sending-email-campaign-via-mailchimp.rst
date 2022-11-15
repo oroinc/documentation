@@ -249,10 +249,18 @@ In the :ref:`Filters <user-guide-getting-started-filters>` section:
 
 This list is now displayed on the :ref:`Marketing List Page <user-guide-marketing-lists>` and contains contacts sorted according to your conditions.
 
+.. admonition:: Business Tip
+
+   Keeping close tabs on the rising digital commerce trend? Make sure to read about a |B2B wholesale marketplace|, its characteristics, and notable examples.
+
+
 **Related Articles**
 
 * :ref:`Configure MailChimp Integration <user-guide-mc-integration>`
 
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

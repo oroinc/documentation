@@ -581,5 +581,14 @@ When collecting entities to search, information about the owner and the organiza
 Every search query is ACL protected with Search ACL helper. This helper limits data with the current access levels for entities which are used in the query.
 
 
+
+.. admonition:: Business Tip
+
+   Discover how |digital transformation in manufacturing| improves operations, customer experiences, and sales by reading our guide.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

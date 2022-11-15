@@ -206,7 +206,12 @@ Dev Mode Log Levels
 The default output of log records is stdout.
 
 
+.. admonition:: Business Tip
+
+   Are you unsure whether your company needs |B2B eCommerce|? Our guide can help with the decision-making.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

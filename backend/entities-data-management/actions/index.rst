@@ -139,6 +139,8 @@ Execute a command to validate all operations configuration:
 
 .. note:: All configurations apply automatically after their changes are made in developer environment.
 
+.. _bundle-docs-platform-action-bundle-default-operations:
+
 Default Operations
 ------------------
 

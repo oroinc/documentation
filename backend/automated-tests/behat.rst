@@ -922,6 +922,14 @@ Type the following command in your console:
 
 You can use the behat command-line interface only after you install the application.
 
+
+.. admonition:: Business Tip
+
+   Digital technologies assist manufacturing companies in remaining competitive. Learn how eCommerce and |digital transformation in manufacturing| can help your business grow.
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

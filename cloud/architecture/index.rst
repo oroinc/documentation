@@ -179,6 +179,11 @@ Redis
 Elasticsearch
 
 
+.. admonition:: Business Tip
+
+    Looking for a new |B2B marketplace solution|? Become familiar with online B2B marketplaces and how they create value for your business.
+
+
 **What’s Next**
 
 * OroCloud :ref:`security <cloud_security>`
@@ -196,4 +201,10 @@ Elasticsearch
    MessageQueue Configuration <mq>
 
 .. include:: /include/include-links-cloud.rst
+   :start-after: begin
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

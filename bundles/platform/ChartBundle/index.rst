@@ -13,5 +13,14 @@ Related Documentation
 * |Use Charts|
 * |Configure Charts|
 
+
+.. admonition:: Business Tip
+
+   The manufacturing industry is going through digital transformation. Discover how online commerce fits into the trend of |digitalization in manufacturing|.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

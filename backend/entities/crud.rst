@@ -277,7 +277,7 @@ Deleting Entities
 You can delete a task either through the ``DELETE`` operation available for all entities by default or through the customized one. When running ``DELETE``, ensure that your entity has a route from the ``routeName`` option of the entity configuration.
 
 
-You can delete an entity through the |DELETE operation| which is enabled by default for all entities. To run the operation, you need to ensure that your entity has the ``routeName`` option of the entity configuration which will be used as a route name to redirect a user after the ``DELETE`` operation (as in the example below).
+You can delete an entity through the :ref:`DELETE operation <bundle-docs-platform-action-bundle-default-operations>` which is enabled by default for all entities. To run the operation, you need to ensure that your entity has the ``routeName`` option of the entity configuration which will be used as a route name to redirect a user after the ``DELETE`` operation (as in the example below).
 
 .. code-block:: php
     :linenos:
@@ -316,7 +316,7 @@ If the default configuration is not valid for your particular case, create your 
             '@and':
                 - '@not_equal': [$.data.parentCategory, null]
 
-.. note:: When creating your own operation, make sure to exclude the entity from the default operation. See more details on |available operations and their configuration| in the related article.
+.. note:: When creating your own operation, make sure to exclude the entity from the default operation. See more details on :ref:`available operations and their configuration <bundle-docs-platform-action-bundle-operations>` in the related article.
 
 
 .. include:: /include/include-links-dev.rst

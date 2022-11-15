@@ -292,8 +292,7 @@ Some workflow components, like an email notification, may be created only via th
 
 .. see :ref:`How to clone a workflow via the command line console <workflows--actions--clone>`.
 
-For how to create and manage workflows from the server side, see :ref:`Workflow Documentation <dev-doc--workflows>`.
-
+For how to create and manage workflows from the server side, see the backend developer guide on :ref:`Workflows <dev-doc--workflows>`.
 
 .. _doc--system--workflow-management--activate:
 
@@ -364,8 +363,18 @@ See the following sections to get more information about the system workflows in
    Custom Workflows <custom-workflows>
    Workflow Steps, Transitions, and Attributes <steps-transitions>
 
+
+.. admonition:: Business Tip
+
+    Want to profit from the recent developments in digital commerce? Learn more about the |B2B eCommerce marketplace|, and the value it creates for businesses like yours.
+
+
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

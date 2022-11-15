@@ -47,8 +47,6 @@ Set up an integration using the credentials provided by Wirecard for the demo mo
 
 .. important:: The credit card numbers suggested by the Wirecard for the use in the demo mode does not pass the validation in OroCommerce that requires that valid card numbers must be used. To test the Wirecard credit card payments, use the :ref:`Test Mode <doc--payment--prerequisites--wirecard-testing-test>`.
 
-For demo credentials and more information about the demo mode, see |Wirecard Demo Mode|.
-
 .. _doc--payment--prerequisites--wirecard-testing-test:
 
 Test Mode
@@ -57,8 +55,6 @@ Test Mode
 In the test mode, the transaction information is sent to the financial institution, however, it reaches only a test server/area provided by the financial institution and actual money transfer does not take place.
 
 Set up an integration using the credentials provided by Wirecard for the test mode. Enable the **Test mode** option to inform the system that you would like only to test the payment process.
-
-For testing credentials and more information about the test mode, see |Wirecard Test Mode|.
 
 .. _doc--payment--prerequisites--wirecard-testing-test-enable:
 

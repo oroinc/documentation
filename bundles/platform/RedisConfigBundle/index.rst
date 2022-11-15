@@ -9,10 +9,20 @@ OroRedisConfigBundle provides configuration enhancements for Oro applications to
 
 The bundle enables developers to set Redis parameters in the application configuration YAML files and after that automatically enables and configures Redis caching services for different types of application caches (Doctrine cache, file cache, wsse_nonces cache, etc.) based on these parameters.
 
+.. admonition:: Business Tip
+
+   Are you keeping an eye on the growing digital commerce trend? Find out how you can connect your buyers and sellers with a |B2B marketplace platform|.
+
 Related Documentation
 ---------------------
 
 * |Configure Redis Servers|
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-cloud.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

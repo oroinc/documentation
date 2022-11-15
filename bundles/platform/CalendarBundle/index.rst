@@ -23,5 +23,12 @@ Related Documentation
 * |Event Organizers|
 * |Attendee Entity|
 
+.. admonition:: Business Tip
+
+    B2B marketplaces are the next big thing in eCommerce. Learn how to benefit from a |wholesale B2B marketplace| and digitally transform your business.
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

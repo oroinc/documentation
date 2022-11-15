@@ -135,5 +135,16 @@ This can be achieved in two ways:
                               1002: 'SET @@SESSION.optimizer_switch="block_nested_loop=off";'
 
 
+
+
+.. admonition:: Business Tip
+
+    B2B marketplaces are the future of eCommerce. Discover how to use a |B2B eCommerce marketplace| to your advantage and digitally revolutionize your company.
+
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

@@ -773,5 +773,15 @@ To check consumers status, use the `service:status:consumer` command.
 The `host` parameter is optional. You can list services from specified job host only. If no parameter is specified,`all` is used by default.
 
 
+
+.. admonition:: Business Tip
+
+   Want to know everything on |eCommerce B2B| and understand how it differs from B2C? Read our detailed guide on this topic.
+
+
+
 .. include:: /include/include-links-cloud.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

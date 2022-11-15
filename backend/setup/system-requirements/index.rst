@@ -95,7 +95,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 
 .. note::
 
-    It is recommended to disable `phar` PHP extension to reduce the risk of |PHP unserialization vulnerability|.
+    It is recommended to disable `phar` PHP extension to reduce the risk of PHP unserialization vulnerability.
 
 Enterprise Edition Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -150,9 +150,16 @@ Recommended and supported browsers are:
 
     Any browser needs to have cookies and JavaScript turned on.
 
+.. admonition:: Business Tip
+
+   Want to take advantage of the latest trend in digital commerce? Explore the benefits of a |B2B online marketplace| and successful marketplace examples.
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 
 **See Also**
 

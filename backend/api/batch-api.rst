@@ -134,5 +134,14 @@ The following example shows how to reconfigure this adapter to use a local files
 More examples can be found in |KnpGaufretteBundle documentation|.
 
 
+
+.. admonition:: Business Tip
+
+   Explore our guide to learn how |digital transformation in manufacturing industry| improves operations, customer experiences, and sales.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

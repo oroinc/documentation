@@ -1272,5 +1272,14 @@ a new ``Acme\DemoBundle\Entity\SomeEntity`` entity:
                 - { name: oro.api.processor, action: customize_form_data, event: post_submit, class: Acme\DemoBundle\Entity\SomeEntity }
 
 
+.. admonition:: Business Tip
+
+   Do you want to get started with |digitalization in manufacturing|? Explore our guide for essential tips, best practices, and success stories.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

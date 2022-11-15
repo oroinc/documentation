@@ -178,5 +178,14 @@ Replace a Logo
       logo: 'bundles/{your_theme_id}/images/logo/logo.svg'
 
 
+
+.. admonition:: Business Tip
+
+   Manufacturing companies can use digital technologies to stay competitive. Discover how eCommerce and |digital transformation in manufacturing| can propel the growth of your company.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

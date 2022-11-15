@@ -1,3 +1,5 @@
+.. _bundles--commerce--indexation-process:
+
 Indexation Process
 ==================
 

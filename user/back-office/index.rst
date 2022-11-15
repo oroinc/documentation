@@ -90,6 +90,9 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
        </ul>
 
 
+.. admonition:: Business Tip
+
+    Are you in search of the |best B2B eCommerce platforms|? To make an informed decision, look through our platform comparison page.
 
 
 .. toctree::
@@ -110,4 +113,7 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
    System <system/index>
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

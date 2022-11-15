@@ -164,11 +164,23 @@ Import Coupons
    :start-after: start
    :end-before: finish
 
+
+
+
+.. admonition:: Business Tip
+
+    Want to dip your toe into the emerging digital commerce trend? Learn more about a |wholesale B2B marketplace|, its unique characteristics, and successful case studies.
+
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
 
 .. toctree::
    :hidden:

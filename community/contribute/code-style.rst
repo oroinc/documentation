@@ -244,17 +244,18 @@ It is highly recommended to configure appropriate code style inspections in the 
 
 To run the check manually from the command line:
 
-1. First, you need to install the required js-modules in the **package/platform/build** directory (|package.json| added to each dev-repo to root folder);
+1. First, you need to install the required js-modules in the application directory
 
-.. code-block:: none
+    .. code-block:: none
 
-    npm install
+       npm install
 
-2. Then, run |ESLint| check from the root of the application directory;
+2. Then, run |ESLint| to check JS files for code-style
 
-.. code-block:: none
+    .. code-block:: none
 
     ./vendor/oro/platform/build/node_modules/.bin/eslint ./vendor/oro/ -c ./vendor/oro/platform/build/.eslintrc.yml --ignore-path ./vendor/oro/platform/build/.eslintignore
+
 
 .NET Code Style
 ^^^^^^^^^^^^^^^

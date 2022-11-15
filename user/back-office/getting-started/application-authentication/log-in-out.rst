@@ -52,3 +52,12 @@ To log out of the Oro application, click **Logout** in the user menu on the top 
 
 .. image:: /user/img/getting_started/app_authentication/logout.png
    :alt: The logout button in the user menu
+
+
+.. admonition:: Business Tip
+
+   Wish to learn something about |B2B commerce| and how it varies from retail? Follow our extensive guide on the matter.
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

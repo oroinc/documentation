@@ -85,7 +85,7 @@ Links (User)
 
 .. |OroCommerce Editions| raw:: html
 
-   <a href="https://oroinc.com/b2b-ecommerce/full-features-list" target="_blank">OroCommerce Editions</a>
+   <a href="https://oroinc.com/b2b-ecommerce/editions/#features-list" target="_blank">OroCommerce Editions</a>
 
 .. |OroCRM Editions| raw:: html
 
@@ -451,10 +451,6 @@ Links (User)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/LocaleBundle/Twig/NumberExtension.php#L212" target="_blank">oro_format_currency</a>
 
-.. |oro_format_short_product_unit_value| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/4.1/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#oro_format_short_product_unit_value" target="_blank">oro_format_short_product_unit_value</a>
-
 .. |join| raw:: html
 
    <a href="https://twig.symfony.com/doc/2.x/filters/join.html" target="_blank">join</a>
@@ -537,7 +533,7 @@ Links (User)
 
 .. |zero amount transaction| raw:: html
 
-   <a href="https://developer.paypal.com/docs/classic/payflow/integration-guide/?mark=Zero%20Amount%20Authorization#submitting-account-verifications" target="_blank">zero amount transaction</a>
+   <a href="https://developer.paypal.com/docs/payflow/integration-guide/?mark=Zero%20Amount%20Authorization#submitting-account-verifications" target="_blank">zero amount transaction</a>
 
 .. |https://registration.paypal.com/| raw:: html
 
@@ -603,14 +599,6 @@ Links (User)
 
    <a href="http://wirecard.com" target="_blank">wirecard.com</a>
 
-.. |Wirecard Demo Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:demo_mode" target="_blank">Wirecard Demo Mode</a>
-
-.. |Wirecard Test Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:test_mode" target="_blank">Wirecard Test Mode</a>
-
 .. |https://apruve.com/| raw:: html
 
    <a href="https://apruve.com/" target="_blank">https://apruve.com/</a>
@@ -625,7 +613,7 @@ Links (User)
 
 .. |sign-on| raw:: html
 
-   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-dotdigital" target="_blank">sign-on</a>
 
 .. |https://r1-app.dotmailer.com/| raw:: html
 
@@ -633,7 +621,7 @@ Links (User)
 
 .. |Single sign-on| raw:: html
 
-   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">Single sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-dotdigital" target="_blank">Single sign-on</a>
 
 .. |here4| raw:: html
 

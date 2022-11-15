@@ -16,7 +16,7 @@ Related Documentation
 * |Debug Translator and JS Translations|
 * |Data Fixtures for Translatable Entities|
 * |Translation Bundle Form Types|
-* |Console Сommands|
+* |Console Commands Translation|
 * |Translation Strategies|
 * |Translation Context Resolver|
 

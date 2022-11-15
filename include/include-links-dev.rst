@@ -111,10 +111,6 @@ Links (Dev)
 
    <a href="https://github.com/GeniusesOfSymfony/WebSocketBundle" target="_blank">GosWebSocketBundle</a>
 
-.. |PHP unserialization vulnerability| raw:: html
-
-   <a href="https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf" target="_blank">PHP unserialization vulnerability</a>
-
 .. |Apache| raw:: html
 
    <a href="https://httpd.apache.org/" target="_blank">Apache</a>
@@ -149,7 +145,7 @@ Links (Dev)
 
 .. |Microsoft Edge| raw:: html
 
-   <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a>
+   <a href="https://www.microsoft.com/en-us/edge?form=MA13FJ" target="_blank">Microsoft Edge</a>
 
 .. |Safari| raw:: html
 
@@ -294,7 +290,7 @@ Links (Dev)
 
 .. |Github guide on forking a repo| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">Github guide on forking a repo</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">Github guide on forking a repo</a>
 
 .. |make a package| raw:: html
 
@@ -302,7 +298,7 @@ Links (Dev)
 
 .. |Keep your fork synced| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/#keep-your-fork-synced" target="_blank">Keep your fork synced</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo/#keep-your-fork-synced" target="_blank">Keep your fork synced</a>
 
 .. |Vagrant| raw:: html
 
@@ -314,7 +310,7 @@ Links (Dev)
 
 .. |Install Vagrant| raw:: html
 
-   <a href="https://www.vagrantup.com/docs/installation/" target="_blank">Install Vagrant</a>
+   <a href="https://developer.hashicorp.com/vagrant/docs/installation" target="_blank">Install Vagrant</a>
 
 .. |Install Git.| raw:: html
 
@@ -338,7 +334,7 @@ Links (Dev)
 
 .. |official Vagrant documentation| raw:: html
 
-   <a href="https://www.vagrantup.com/docs/" target="_blank">official Vagrant documentation</a>
+   <a href="https://developer.hashicorp.com/vagrant/docs" target="_blank">official Vagrant documentation</a>
 
 .. |Docker Provision| raw:: html
 
@@ -552,14 +548,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Component/ConfigExpression/README.md" target="_blank">ConfigExpression</a>
 
-.. |available operations and their configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md" target="_blank">available operations and their configuration</a>
-
-.. |DELETE operation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#default-operations" target="_blank">DELETE operation</a>
-
 .. |build ngx pagespeed from source| raw:: html
 
    <a href="https://modpagespeed.com/doc/build_ngx_pagespeed_from_source" target="_blank">build ngx pagespeed from source</a>
@@ -606,7 +594,7 @@ Links (Dev)
 
 .. |Blackfire in its documentation portal| raw:: html
 
-   <a href="https://blackfire.io/docs/book/" target="_blank">Blackfire in its documentation portal</a>
+   <a href="https://blackfire.io/docs/introduction" target="_blank">Blackfire in its documentation portal</a>
 
 .. |OroConfigBundle| raw:: html
 
@@ -1346,7 +1334,7 @@ Links (Dev)
 
 .. |fork application repository| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">fork application repository</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo/" target="_blank">fork application repository</a>
 
 .. |Symfony Best Practices| raw:: html
 
@@ -1427,7 +1415,7 @@ Links (Dev)
 
 .. |Gedmo/Translatable| raw:: html
 
-   <a href="http://atlantic18.github.io/DoctrineExtensions/doc/translatable.html" target="_blank">Gedmo/Translatable</a>
+   <a href="https://github.com/doctrine-extensions/DoctrineExtensions/blob/main/doc/translatable.md" target="_blank">Gedmo/Translatable</a>
 
 .. |LocalizedFallbackValue| raw:: html
 
@@ -1465,25 +1453,9 @@ Links (Dev)
 
    <a href="https://github.com/orocommerce/orocommerce/blob/071c81dfb0ed3c5240edba0122a7ce5d647ecbcf/src/OroB2B/Bundle/ProductBundle/Model/ProductHolderInterface.php" target="_blank">ProductHolderInterface</a>
 
-.. |implement your own data source adapters| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">implement your own data source adapters</a>
-
-.. |datasources section of the DataGridBundle documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">datasources section of the DataGridBundle documentation</a>
-
 .. |products-grid| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce/blob/4.1/src/Oro/Bundle/ProductBundle/Resources/config/oro/datagrids.yml#L305" target="_blank">products-grid</a>
-
-.. |columns and properties section of the DataGridBundle documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datagrid.md#columns-and-properties" target="_blank">columns and properties section of the DataGridBundle documentation</a>
-
-.. |built-in filters| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FilterBundle/Resources/doc/reference/filter_form_types.md" target="_blank">built-in filters</a>
 
 .. |the CustomGridBundle.zip file| raw:: html
 
@@ -1496,18 +1468,6 @@ Links (Dev)
 .. |AbstractMessageQueueAssertTrait| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/MessageQueueBundle/Test/Assert/AbstractMessageQueueAssertTrait.php" target="_blank">AbstractMessageQueueAssertTrait</a>
-
-.. |security token| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">security token</a>
-
-.. |token storage| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/Storage/TokenStorageInterface.html" target="_blank">token storage</a>
-
-.. |TokenInterface| raw:: html
-
-   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">TokenInterface</a>
 
 .. |ContainerResetExtension| raw:: html
 
@@ -1972,10 +1932,6 @@ Links (Dev)
 .. |Twig Inspector| raw:: html
 
    <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector</a>
-
-.. |Asset Commands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#commands" target="_blank">Asset Commands</a>
 
 .. |placeholders.yml files defined in OroPlatform bundles| raw:: html
 
@@ -2589,10 +2545,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/form_types.md" target="_blank">Form Types</a>
 
-.. |Console Сommands| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/commands.md" target="_blank">Console commands</a>
-
 .. |Translation Strategies| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/translation_strategies.md" target="_blank">Translation Strategies</a>
@@ -2711,7 +2663,7 @@ Links (Dev)
 
 .. |StyleCop| raw:: html
 
-   <a href="https://stylecop.codeplex.com/" target="_blank">StyleCop</a>
+   <a href="https://dx42.github.io/gmetrics/" target="_blank">StyleCop</a>
 
 .. |Google JavaScript Style Guide| raw:: html
 
@@ -2724,10 +2676,6 @@ Links (Dev)
 .. |.eslintrc.yml| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.1/build/.eslintrc.yml" target="_blank">.eslintrc.yml</a>
-
-.. |package.json| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/build/package.json" target="_blank">package.json</a>
 
 .. |PHP Coding Standard Fixer| raw:: html
 
@@ -2755,7 +2703,7 @@ Links (Dev)
 
 .. |here, by GMetrics| raw:: html
 
-   <a href="http://gmetrics.sourceforge.net/gmetrics-CyclomaticComplexityMetric.html" target="_blank">here, by GMetrics </a>
+   <a href="https://dx42.github.io/gmetrics/" target="_blank">here, by GMetrics </a>
 
 .. |program| raw:: html
 
@@ -2867,11 +2815,11 @@ Links (Dev)
 
 .. |Fork| raw:: html
 
-   <a href="https://help.github.com/articles/fork-a-repo" target="_blank">Fork</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">Fork</a>
 
 .. |Clone| raw:: html
 
-   <a href="https://help.github.com/articles/cloning-a-repository/" target="_blank">Clone</a>
+   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository" target="_blank">Clone</a>
 
 .. |OroCommerce project| raw:: html
 
@@ -2880,14 +2828,6 @@ Links (Dev)
 .. |Crowdin tutorial| raw:: html
 
    <a href="https://support.crowdin.com/for-translators/onlineworkbench/translation-tutorial/" target="_blank">Crowdin tutorial</a>
-
-.. |proofreading| raw:: html
-
-   <a href="https://support.crowdin.com/for-translators/onlineworkbench/proofreading" target="_blank">proofreading</a>
-
-.. |vote| raw:: html
-
-   <a href="https://support.crowdin.com/for-translators/onlineworkbench/voting" target="_blank">vote</a>
 
 .. |Git| raw:: html
 
@@ -2904,10 +2844,6 @@ Links (Dev)
 .. |Oro| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce-application" target="_blank">Oro</a>
-
-.. |How to Do Application Logging Right| raw:: html
-
-   <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.173.2198&rep=rep1&type=pdf" target="_blank">How to Do Application Logging Right</a>
 
 .. |ramfs| raw:: html
 
@@ -3068,10 +3004,6 @@ Links (Dev)
 .. |OroNavigationBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/NavigationBundle" target="_blank">OroNavigationBundle</a>
-
-.. |datasource documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">datasource documentation</a>
 
 .. |ReportBundle| raw:: html
 
@@ -4007,7 +3939,7 @@ Links (Dev)
 
 .. |Read more on rabbitmqctl(8)| raw:: html
 
-   <a href="https://www.rabbitmq.com/man/rabbitmqctl.1.man.html" target="_blank">Read more on rabbitmqctl(8)</a>
+   <a href="https://www.rabbitmq.com/rabbitmqctl.8.html" target="_blank">Read more on rabbitmqctl(8)</a>
 
 .. |Search engine| raw:: html
 
@@ -4053,18 +3985,6 @@ Links (Dev)
 
    <a href="https://en.wikipedia.org/wiki/Facade_pattern" target="_blank">Facade</a>
 
-.. |examples of a work with this command| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md" target="_blank">examples of a work with this command</a>
-
-.. |examples of a work with oro:website-search:reindex command| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/4.1/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/console_commands.md" target="_blank">examples of a work with oro:website-search:reindex command</a>
-
-.. |examples of a triggering of this event| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/4.1/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/indexation.md" target="_blank">examples of a triggering of this event</a>
-
 .. |several clustering solutions| raw:: html
 
    <a href="https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling" target="_blank">several clustering solutions</a>
@@ -4093,10 +4013,6 @@ Links (Dev)
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/replica-shards.html" target="_blank">Elasticsearch replicas</a>
 
-.. |configuration similar to ORM configuration| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md#datagrid-configuration" target="_blank">configuration similar to ORM configuration</a>
-
 .. |Elastic HQ| raw:: html
 
    <a href="http://www.elastichq.org/" target="_blank">Elastic HQ</a>
@@ -4111,7 +4027,7 @@ Links (Dev)
 
 .. |Web Performance Tuning: Latency and Throughput| raw:: html
 
-   <a href="https://www.safaribooksonline.com/library/view/web-performance-tuning/059600172X/ch04s02.html" target="_blank">Web Performance Tuning: Latency and Throughput</a>
+   <a href="https://www.oreilly.com/library/view/web-performance-tuning/059600172X/" target="_blank">Web Performance Tuning: Latency and Throughput</a>
 
 .. |Website Search Index Type| raw:: html
 
@@ -4343,7 +4259,7 @@ Links (Dev)
 
 .. |the Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/2.x/bundles/NelmioApiDocBundle/the-apidoc-annotation.html" target="_blank">the Symfony documentation</a>
+   <a href="https://symfony.com/bundles/NelmioApiDocBundle/current/index.html" target="_blank">the Symfony documentation</a>
 
 .. |AbstractFormatter class in NelmioApiDocBundle| raw:: html
 
@@ -4580,10 +4496,6 @@ Links (Dev)
 .. |Monolog LogstashFormatter| raw:: html
 
    <a href="https://github.com/Seldaek/monolog/blob/master/src/Monolog/Formatter/LogstashFormatter.php" target="_blank">Monolog LogstashFormatter</a>
-
-.. |Page Component documentation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md" target="_blank">Page Component documentation</a>
 
 .. |OroB2BBlogPostExampleBundle| raw:: html
 
@@ -4835,7 +4747,7 @@ Links (Dev)
 
 .. |GridFS| raw:: html
 
-   <a href="https://docs.mongodb.com/manual/core/gridfs/" target="_blank">GridFS</a>
+   <a href="https://www.mongodb.com/docs/manual/core/gridfs/" target="_blank">GridFS</a>
 
 .. |MongoDB PHP Library| raw:: html
 
@@ -5420,31 +5332,31 @@ Links (Dev)
 
 .. |DatagridConfiguration| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatagrid/Common/DatagridConfiguration.php" target="_blank">DatagridConfiguration</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundle/Datagrid/Common/DatagridConfiguration.php" target="_blank">DatagridConfiguration</a>
 
 .. |Datagrid| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatagrid/Datagrid.php" target="_blank">Datagrid</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundle/Datagrid/Datagrid.php" target="_blank">Datagrid</a>
 
 .. |OrmDatasource| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/Orm/OrmDatasource.php" target="_blank">OrmDatasource</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Datasource/Orm/OrmDatasource.php" target="_blank">OrmDatasource</a>
 
 .. |ParameterBinderAwareInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/ParameterBinderAwareInterface.php" target="_blank">ParameterBinderAwareInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Datasource/ParameterBinderAwareInterface.php" target="_blank">ParameterBinderAwareInterface</a>
 
 .. |ParameterBinderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/ParameterBinderInterface.php" target="_blank">ParameterBinderInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Datasource/ParameterBinderInterface.php" target="_blank">ParameterBinderInterface</a>
 
 .. |DatasourceBindParametersListener| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleEventListener/DatasourceBindParametersListener.php" target="_blank">DatasourceBindParametersListener</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundle/EventListener/DatasourceBindParametersListener.php" target="_blank">DatasourceBindParametersListener</a>
 
 .. |DatagridManager| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatagrid/Manager.php" target="_blank">DatagridManager</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundle/Datagrid/Manager.php" target="_blank">DatagridManager</a>
 
 .. |text-editor-view| raw:: html
 
@@ -5472,7 +5384,7 @@ Links (Dev)
 
 .. |YamlConverter| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/Orm/QueryConverter/YamlConverter.php" target="_blank">YamlConverter</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Datasource/Orm/QueryConverter/YamlConverter.php" target="_blank">YamlConverter</a>
 
 .. |HINT_PRECISE_ORDER_BY| raw:: html
 
@@ -5484,7 +5396,7 @@ Links (Dev)
 
 .. |OrmQueryConfiguration| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleDatasource/Orm/OrmQueryConfiguration.php" target="_blank">OrmQueryConfiguration</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/DataGridBundle/Datasource/Orm/OrmQueryConfiguration.php" target="_blank">OrmQueryConfiguration</a>
 
 .. |existing CSV writer| raw:: html
 
@@ -5492,23 +5404,23 @@ Links (Dev)
 
 .. |Field ACL extension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundleExtension/FieldAcl/FieldAclExtension.php" target="_blank">Field ACL extension</a>
+   <a href="https://github.com/oroinc/platform/tree/4.1/src/Oro/Bundle/DataGridBundle/Extension/FieldAcl/FieldAclExtension.php" target="_blank">Field ACL extension</a>
 
 .. |multi-select-editor-view| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/multi-select-editor-view.md" target="_blank">multi-select-editor-view</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FormBundle/Resources/doc/editor/multi-select-editor-view.md" target="_blank">multi-select-editor-view</a>
 
 .. |relation-editor-view| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-relation-editor-view.md" target="_blank">relation-editor-view</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-relation-editor-view.md" target="_blank">relation-editor-view</a>
 
 .. |multi-relation-editor-view| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/multi-relation-editor-view.md" target="_blank">multi-relation-editor-view</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FormBundle/Resources/doc/editor/multi-relation-editor-view.md" target="_blank">multi-relation-editor-view</a>
 
 .. |related-id-relation-editor-view| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-relation-editor-view.md" target="_blank">related-id-relation-editor-view</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-relation-editor-view.md" target="_blank">related-id-relation-editor-view</a>
 
 .. |Create Custom Field Type| raw:: html
 
@@ -5520,11 +5432,11 @@ Links (Dev)
 
 .. |Search APIs section| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/search-apis.md" target="_blank">Search APIs section</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FormBundle/Resources/doc/reference/search-apis.md" target="_blank">Search APIs section</a>
 
 .. |related-id-select-editor-view| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-select-editor-view.md" target="_blank">related-id-select-editor-view</a>
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/FormBundle/Resources/doc/editor/related-id-select-editor-view.md" target="_blank">related-id-select-editor-view</a>
 
 .. |CC-BY-NC-SA 4.0| raw:: html
 
@@ -5616,4 +5528,8 @@ Links (Dev)
 
 .. |Doctrine Configuration Reference| raw:: html
 
-   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Microsoft Graph API</a>
+   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Doctrine Configuration Reference</a>
+
+.. |Console Commands Translation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/4.1/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/commands.md" target="_blank">Console Commands</a>

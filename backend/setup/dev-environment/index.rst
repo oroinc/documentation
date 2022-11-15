@@ -6,6 +6,11 @@ Set up Development Environment for OroPlatform Based Application
 
 To set up the development environment for Oro applications customization tasks, please follow the steps outlined in the sections below.
 
+.. admonition:: Business Tip
+
+    Are you searching for the |best B2B eCommerce solution|? Utilize our platform comparison chart to weigh your alternatives.
+
+
 .. _dev-guide-development-practice-setup-dev-env-requirements:
 
 Meet the Hardware and OS Requirements
@@ -137,4 +142,7 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
 
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

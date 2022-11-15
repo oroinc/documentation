@@ -53,7 +53,19 @@ Find more information about Web API in the following topics:
 
 The documentation for the server-side developers can be found in :ref:`API Developer Guide <web-api>`.
 
+
+.. admonition:: Business Tip
+
+    Looking for the |open source B2B eCommerce platform| that can meet your business needs? Make sure to check our comprehensive platform comparison page.
+
+
+
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
 
 .. toctree::

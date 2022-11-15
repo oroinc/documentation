@@ -146,5 +146,13 @@ Community developers and users have access to the following two product branches
 +-------------------------------+-------------------+--------------------------------+
 
 
+.. admonition:: Business Tip
+
+   Want to find out everything about |business-to-business eCommerce| and how it varies from B2C? Check out our in-depth overview of the subject.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

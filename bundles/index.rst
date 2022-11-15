@@ -66,6 +66,11 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    ":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`"
 
 
+.. admonition:: Business Tip
+
+    Which |B2B eCommerce solutions| are the best ones? Refer to our platform comparison page to explore and evaluate your digital commerce options.
+
+
 .. toctree::
    :hidden:
 
@@ -153,3 +158,10 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
 
+
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

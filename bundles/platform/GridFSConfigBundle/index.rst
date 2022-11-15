@@ -91,12 +91,20 @@ Example:
 
    mongodb_gridfs_dsn_attachment: 'mongodb://user:password@host1:27017,host2:27017/attachment'
 
-Related links
--------------
+
+.. admonition:: Business Tip
+
+   Digital transformation innovates manufacturing. Get a deeper understanding of the role of eCommerce in the |digital transformation for manufacturing|.
+
+**Related Topics**
 
 * |GridFS|
 * |MongoDB PHP Library|
 * |KnpGaufretteBundle|
 
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

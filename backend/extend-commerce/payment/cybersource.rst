@@ -52,5 +52,14 @@ The CyberSource payment method supports **Capture** and **Cancel** actions. Both
 * Business logic for **Capture** action is implemented in |CapturePaymentAction|
 * Business logic for **Cancel** action is implemented in |CancelPaymentAction|
 
+
+.. admonition:: Business Tip
+
+   Digital technologies help manufacturing brands remain competitive. Find out how eCommerce and |digital transformation in manufacturing| can propel your company's growth.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

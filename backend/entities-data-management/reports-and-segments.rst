@@ -133,7 +133,7 @@ The definition of a data grid consists of the following sections:
     .. seealso::
 
         You can learn more about other data source types and how to implement your own adapter in
-        the |datasource documentation|.
+        the :ref:`datasource documentation <customize--datagrids-datasource>`.
 
 ``properties``
 

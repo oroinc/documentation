@@ -22,6 +22,12 @@ There are two types of themes:
 All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-javascript>` except for the way the JS modules are registered.
 
 
+.. admonition:: Business Tip
+
+    Planning to invest in a digital commerce solution? Read our platform comparison guide to explore and review the |top B2B eCommerce platforms|.
+
+
+
 .. toctree::
     :titlesonly:
     :hidden:
@@ -31,3 +37,6 @@ All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-java
     storefront-design/index
     back-office/index
     javascript/index
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

@@ -87,6 +87,14 @@ Details of all :ref:`orders <user-guide--sales--orders>` submitted from the OroC
      :alt: DPD shipping Tracking number location
      :align: center
 
+
+.. admonition:: Business Tip
+
+   Wondering if your organization needs |eCommerce B2B| technology? Our guide will help you decide.
+
+
 .. include:: /include/include-links-user.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

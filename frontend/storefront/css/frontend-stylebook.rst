@@ -41,5 +41,13 @@ JS Components
        * In the category, use the elements navigation tree on the left to jump to the element`s description, preview, and a code sample.
 
 
+.. admonition:: Business Tip
+
+   If you want to get more insights into |B2B commerce| and its differences to B2C, check out our comprehensive guide on this topic.
+
+
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

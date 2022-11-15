@@ -606,7 +606,7 @@ On top of functions, you can use filters in email templates. The full set of the
 * |oro_format_name|
 * |oro_format_price|
 * |oro_format_currency|
-* |oro_format_short_product_unit_value|
+* :ref:`oro_format_short_product_unit_value <bundle-docs-commerce-product-bundle-formatting>`
 * |join|
 
 Tags
@@ -641,9 +641,18 @@ To enable the email template fallback to the parent localization, select the **U
    :align: middle
 
 
+.. admonition:: Business Tip
+
+   Interested in learning more about |B2B eCommerce| and how it differs from B2C? Read our in-depth information on the subject.
+
+
+
 .. include:: /include/include-images.rst
    :start-after: begin
 
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

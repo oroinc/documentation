@@ -314,11 +314,11 @@ Triggering Reindexation
 
 Both standard and website index types automatically trigger reindexation process when entity data or related configuration is changed.
 
-Standard search index type provides CLI command oro:search:reindex that can be used to manually trigger full reindexation of all entities, or only entities of a specific class. It has flag called scheduled to run indexation asynchronously. Here are |examples of a work with this command|.
+Standard search index type provides CLI command oro:search:reindex that can be used to manually trigger full reindexation of all entities, or only entities of a specific class. It has a flag called scheduled to run indexation asynchronously. Here are :ref:`some examples of how to work with this command <search_index_db_from_md--console-commands>`.
 
-Website search index type provides similar CLI command called oro:website-search:reindex which used to manually tirgger full reindexation of all entities, only entities of a specific class or entitie for a specific website. It also has flag called scheduled to run indexation  asynchronously. Here are |examples of a work with oro:website-search:reindex command|.
+Website search index type provides similar CLI command called oro:website-search:reindex which used to manually trigger full reindexation of all entities, only entities of a specific class or entities for a specific website. It also has a flag called scheduled to run indexation asynchronously. Here are :ref:`some examples of how to work with the  oro:website-search:reindex command <website-search-bundle-console-commands>`.
 
-Website search index type provides an event called oro_website_search.reindexation_request to manually trigger reindexation process for the specified scope of entities. It uses event class ``Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent`` which accepts boolean parameter $scheduled to specify whether indexation has to be asynchronous (default behaviour) or synchronous. Here are |examples of a triggering of this event|.
+Website search index type provides an event called oro_website_search.reindexation_request to manually trigger reindexation process for the specified scope of entities. It uses event class ``Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent`` which accepts boolean parameter $scheduled to specify whether indexation has to be asynchronous (default behaviour) or synchronous. Here are :ref:`some event triggering examples <bundles--commerce--indexation-process>`.
 
 Both standard and website search index types have synchronous and asynchronous indexers which trigger corresponding type of indexation. All following indexers implement the same standard indexer interface ``Oro\Bundle\SearchBundle\Engine\IndexerInterface``:
 
@@ -391,7 +391,7 @@ Use Cases
 Datagrids
 ^^^^^^^^^
 
-There is a special datagrid search datasource that works with search index. Search datasource works with high-level search query object, so both index types are supported. Datagrids based on this datasource use |configuration similar to ORM configuration| - developer can specify shown columns, filters, sorters, properties and actions.
+There is a special datagrid search datasource that works with search index. Search datasource works with high-level search query object, so both index types are supported. Datagrids based on this datasource use :ref:`configuration similar to ORM configuration <db-search--configuration--datagrid>` - developer can specify shown columns, filters, sorters, properties and actions.
 
 Implemented search datagrids:
 
@@ -419,6 +419,10 @@ Standard search index provides API resources that can be used to work with this 
 
 In both cases API returns list of found entities.
 
+.. admonition:: Business Tip
+
+   New technologies empower digital transformation in key industries such as manufacturing. Read how companies use eCommerce to enable |digital transformation in manufacturing|.
+
 
 References
 ----------
@@ -432,4 +436,7 @@ References
 
 
 .. include:: /include/include-links-dev.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

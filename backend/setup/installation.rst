@@ -214,6 +214,12 @@ Congratulations! You've Successfully Installed Your Oro Application
 
 You should now be able to open the homepage *http(s)://<your-domain-name>/* and use the application.
 
+
+.. admonition:: Business Tip
+
+    Do you wish to take advantage of the new digital commerce trend? Explore our |B2B marketplace| guide.
+
+
 What's Next
 -----------
 
@@ -232,3 +238,5 @@ If you need to customize the described installation scenario, refer to the follo
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

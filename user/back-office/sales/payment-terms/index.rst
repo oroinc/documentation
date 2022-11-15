@@ -56,5 +56,14 @@ The customer is now bound to the selected payment term.
 
 .. finish_link_payment_term
 
+
+.. admonition:: Business Tip
+
+    Manufacturing firms are gradually embracing digital technologies. Learn how to use eCommerce to achieve |digital transformation in manufacturing|.
+
+
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin

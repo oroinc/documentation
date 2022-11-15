@@ -945,5 +945,15 @@ migrations to make the association available through all stages of the entity ge
        }
 
 
+
+.. admonition:: Business Tip
+
+    Looking for a way to leverage online commerce? Here's everything you need to know about a |B2B online marketplace| and what makes it work.
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
+

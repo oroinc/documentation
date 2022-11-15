@@ -63,6 +63,11 @@ Below is a table summarizing HTTP methods by its idempotency and safety:
 +-------------+------------+------+
 
 
+.. admonition:: Business Tip
+
+    Researching |B2B eCommerce platforms|? Explore our platform comparison guide to help you make an informed decision.
+
+
 .. _web-services-api--http-methods--get:
 
 GET
@@ -130,8 +135,13 @@ On successful deletion, the HTTP response status code 204 (No Content) returns w
     If you DELETE a resource, it is removed. Repeatedly calling DELETE on that resource will often return a 404 (NOT FOUND) status code since it was already removed and, therefore, is no longer findable.
 
 
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-seo.rst
    :start-after: begin
