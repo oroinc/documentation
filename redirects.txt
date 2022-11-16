@@ -332,3 +332,8 @@ bundles/commerce/ProductBundle/customize-products /bundles/commerce/ProductBundl
 bundles/commerce/ProductBundle/customize-pdp /bundles/commerce/ProductBundle/customize-products/customize-pdp
 bundles/commerce/ProductBundle/customize-plp /bundles/commerce/ProductBundle/customize-products/customize-plp
 bundles/commerce/ProductBundle/customize-products-sku-validation /bundles/commerce/ProductBundle/customize-products/customize-products-sku-validation
+user/back-office/system/integrations/outlook/connect /user/back-office/system/integrations
+user/back-office/system/integrations/outlook/mapping /user/back-office/system/integrations
+user/back-office/system/configuration/system/integrations/outlook-settings-oro /user/back-office/system/configuration/system/integrations
+user/back-office/system/user-management/organizations/org-configuration/general-setup-org/integrations/organization-outlook /user/back-office/system/user-management/organizations/org-configuration/general-setup-org/integrations
+user/back-office/system/user-management/users/configuration/user-ms-outlook /user/back-office/system/user-management/users/configuration

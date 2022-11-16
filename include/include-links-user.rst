@@ -817,7 +817,7 @@ Links (User)
 
 .. |the UPS website for more details| raw:: html
 
-   <a href="https://www.ups.com/us/en/help-center/packaging-and-supplies/weight-size.page" target="_blank">the UPS website for more details</a>
+   <a href="https://www.ups.com/us/en/shipping/order-supplies.page" target="_blank">the UPS website for more details</a>
 
 .. |the FedEx website for more details| raw:: html
 
