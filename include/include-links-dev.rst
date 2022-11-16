@@ -105,7 +105,7 @@ Links (Dev)
 
 .. |Microsoft Edge| raw:: html
 
-   <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a>
+   <a href="https://www.microsoft.com/en-us/edge?form=MA13FJ" target="_blank">Microsoft Edge</a>
 
 .. |Safari| raw:: html
 
@@ -277,7 +277,7 @@ Links (Dev)
 
 .. |Install Vagrant| raw:: html
 
-   <a href="https://www.vagrantup.com/docs/installation/" target="_blank">Install Vagrant</a>
+   <a href="https://developer.hashicorp.com/vagrant/docs/installation/" target="_blank">Install Vagrant</a>
 
 .. |Install Git.| raw:: html
 
@@ -301,7 +301,7 @@ Links (Dev)
 
 .. |official Vagrant documentation| raw:: html
 
-   <a href="https://www.vagrantup.com/docs/" target="_blank">official Vagrant documentation</a>
+   <a href="https://developer.hashicorp.com/vagrant/docs/" target="_blank">official Vagrant documentation</a>
 
 .. |Docker Provision| raw:: html
 
@@ -350,10 +350,6 @@ Links (Dev)
 .. |oroui/js/app/application| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/UIBundle/Resources/public/js/app/application.js" target="_blank">oroui/js/app/application</a>
-
-.. |System Aware Resolver Component| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Component/Config/Resources/doc/system_aware_resolver.md" target="_blank">System Aware Resolver Component</a>
 
 .. |Symfony PropertyAccess Component| raw:: html
 
@@ -953,7 +949,7 @@ Links (Dev)
 
 .. |Doctrine Criteria| raw:: html
 
-   <a href="https://github.com/doctrine/collections/blob/master/lib/Doctrine/Common/Collections/Criteria.php" target="_blank">Doctrine Criteria</a>
+   <a href="https://github.com/doctrine/collections/blob/2.0.x/src/Criteria.php" target="_blank">Doctrine Criteria</a>
 
 .. |CriteriaConnector| raw:: html
 
@@ -2223,7 +2219,7 @@ Links (Dev)
 
 .. |here, by GMetrics| raw:: html
 
-   <a href="http://gmetrics.sourceforge.net/gmetrics-CyclomaticComplexityMetric.html" target="_blank">here, by GMetrics </a>
+   <a href="https://dx42.github.io/gmetrics/" target="_blank">here, by GMetrics </a>
 
 .. |PHP Mess Detector (PHPMD)| raw:: html
 
@@ -2339,15 +2335,7 @@ Links (Dev)
 
 .. |Crowdin tutorial| raw:: html
 
-   <a href="https://support.crowdin.com/for-translators/onlineworkbench/translation-tutorial/" target="_blank">Crowdin tutorial</a>
-
-.. |proofreading| raw:: html
-
-   <a href="https://support.crowdin.com/for-translators/onlineworkbench/proofreading" target="_blank">proofreading</a>
-
-.. |vote| raw:: html
-
-   <a href="https://support.crowdin.com/for-translators/onlineworkbench/voting" target="_blank">vote</a>
+   <a href="https://support.crowdin.com/crowdin-intro/" target="_blank">Crowdin tutorial</a>
 
 .. |Git| raw:: html
 
@@ -2364,10 +2352,6 @@ Links (Dev)
 .. |Oro| raw:: html
 
    <a href="https://github.com/oroinc/orocommerce-application" target="_blank">Oro</a>
-
-.. |How to Do Application Logging Right| raw:: html
-
-   <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.173.2198&rep=rep1&type=pdf" target="_blank">How to Do Application Logging Right</a>
 
 .. |ramfs| raw:: html
 
@@ -4311,7 +4295,7 @@ Links (Dev)
 
 .. |GridFS| raw:: html
 
-   <a href="https://docs.mongodb.com/manual/core/gridfs/" target="_blank">GridFS</a>
+   <a href="https://www.mongodb.com/docs/manual/core/gridfs/" target="_blank">GridFS</a>
 
 .. |KnpGaufretteBundle| raw:: html
 
@@ -4425,10 +4409,6 @@ Links (Dev)
 .. |TransitionContext| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/WorkflowBundle/Processor/Context/TransitionContext.php" target="_blank">TransitionContext</a>
-
-.. |Workflow Entities| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/WorkflowBundle/Resources/doc/workflow-entities.md" target="_blank">Workflow Entities</a>
 
 .. |CheckoutLineItems| raw:: html
 

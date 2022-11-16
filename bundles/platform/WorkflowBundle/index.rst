@@ -14,7 +14,7 @@ Related Documentation
 * :ref:`Workflow Bundle Configuration Reference <backend--workflows--config-reference>`
 * :ref:`Translations Wizard <backend--workflows--translation-wizard>`
 * :ref:`Processes <backend--entities-data-management--processes>`
-* |Workflow Entities|
+* :ref:`Workflow Entities <backend--workflows--intro>`
 
 
 .. toctree::

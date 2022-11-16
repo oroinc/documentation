@@ -55,7 +55,7 @@ Each placeholder item can have the following properties:
 - **acl** - The ACL resource(s). Can be a string or array of strings. Can be used to restrict access to the item. If several ACL resources are provided an access is granted only if all of them grant an access.
 - **data** - An additional data to be passed to TWIG template or controller.
 
-Each property can be a constant or some expression supported by |System Aware Resolver Component|. Examples can be found in existing *placeholders.yml* files.
+Each property can be a constant or some expression supported by :ref:`System Aware Resolver Component <dev-components-system-aware-resolver>`. Examples can be found in existing *placeholders.yml* files.
 
 Rendering Placeholders
 ^^^^^^^^^^^^^^^^^^^^^^
