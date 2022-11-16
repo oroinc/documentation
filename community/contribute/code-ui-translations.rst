@@ -58,7 +58,7 @@ Submit Your Translations
 
 #. Submit your translation. For more information on using Crowdin, please see the |Crowdin tutorial|.
 
-After you have submitted the translation, it will be queued for |proofreading|. Other translators can |vote| for it.
+After you have submitted the translation, it will be queued for proofreading. Other translators can vote for it.
 
 When the translation is approved, it is marked with a green check mark and moved to the end of the list on the translation page. Approved translations are merged (published) to the Oro application translations once a day and become available in Oro application in the language settings (to open the language settings, in the main menu, navigate to **System > Configuration > Language Settings**).
 

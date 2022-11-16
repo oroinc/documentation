@@ -3,8 +3,6 @@
 .. meta::
    :description: This resource type provides a way to resolve datagrid configs with system configs.
 
-.. _dev-components-system-aware-resolver:
-
 System Aware Resolver
 =====================
 

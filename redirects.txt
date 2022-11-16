@@ -337,3 +337,9 @@ bundles/commerce/ProductBundle/customize-product-lists /bundles/commerce/Product
 bundles/commerce/ProductBundle/customize-products-sku-validation /bundles/commerce/ProductBundle/customize-products/customize-products-sku-validation
 bundles/commerce/WebsiteElasticSearchBundle/upgrade-to-es7 /bundles/commerce/WebsiteElasticSearchBundle/upgrade-to-es8
 bundles/platform/ElasticSearchBundle/upgrade-to-es7 /bundles/platform/ElasticSearchBundle/upgrade-to-es8
+bundles/commerce/ProductBundle/customize-products-sku-validation /bundles/commerce/ProductBundle/customize-products/customize-products-sku-validation
+user/back-office/system/integrations/outlook/connect /user/back-office/system/integrations
+user/back-office/system/integrations/outlook/mapping /user/back-office/system/integrations
+user/back-office/system/configuration/system/integrations/outlook-settings-oro /user/back-office/system/configuration/system/integrations
+user/back-office/system/user-management/organizations/org-configuration/general-setup-org/integrations/organization-outlook /user/back-office/system/user-management/organizations/org-configuration/general-setup-org/integrations
+user/back-office/system/user-management/users/configuration/user-ms-outlook /user/back-office/system/user-management/users/configuration
