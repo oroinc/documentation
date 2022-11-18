@@ -1,12 +1,20 @@
+:title: OroPlatform, Cumulative Resources, Oro Config Component
+
+.. meta::
+   :description: This resource type provides a way to load configuration from any bundle without additional registration.
+
+.. _dev-components-cumulative-resources:
+
 Cumulative Resources
 ====================
 
 This resource type provides a way to load configuration from any bundle without an additional registration of configuration files in each bundle.
 
-For example, to load configuration for your current bundle from the `Resources\config\acme.yml` file in a different bundle, you can allow other bundles to provide additional configuration. In this case, a bundle that requires this configuration can use |CumulativeConfigLoader|, as illustrated below:
+For example, to load configuration for your current bundle from the ``Resources\config\acme.yml`` file in a different bundle, you can allow other bundles to provide additional configuration. In this case, a bundle that requires this configuration can use **CumulativeConfigLoader**, as illustrated below:
 
 .. code-block:: php
-   :caption: Acme\Bundle\SomeBundle\DependencyInjection;
+
+    namespace Acme\Bundle\SomeBundle\DependencyInjection;
 
     use Symfony\Component\Config\FileLocator;
     use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -39,14 +47,14 @@ For example, to load configuration for your current bundle from the `Resources\c
         }
     }
 
-
 Initialization
 --------------
 
-The `Cumulative Resources` routine needs to be initialized in your application Kernel class before you can use it. The initialization steps include clearing the state of |CumulativeResourceManager|, which should be done before constructors of any bundle are called. The following example shows how it is done in OroPlatform:
+The ``Cumulative Resources`` routine needs to be initialized in your application Kernel class before you can use it. The initialization steps include clearing the state of **CumulativeResourceManager**, which should be done before constructors of any bundle are called. The following example shows how it is done in OroPlatform:
 
 .. code-block:: php
-   :caption: Oro\Bundle\DistributionBundle;
+
+    namespace Oro\Bundle\DistributionBundle;
 
     use Oro\Component\Config\CumulativeResourceManager;
     use Symfony\Component\HttpKernel\Kernel;
@@ -79,15 +87,14 @@ The `Cumulative Resources` routine needs to be initialized in your application K
 Resource Loaders
 ----------------
 
-As well as the `Symfony Config Component`, the `Oro Config Component` uses its own loader for each resource type. Currently, the following loaders are implemented:
+As well as the ``Symfony Config Component``, the ``Oro Config Component`` uses its own loader for each resource type. Currently, the following loaders are implemented:
 
-- |YAML file loader| is responsible for loading YAML files. Do not provide any normalization or validation of loaded data.
-- |"Foldering" file loader| provides a way to load a configuration file in a folder that conforms to a particular pattern.
+- ``YAML file loader``, YamlCumulativeFileLoader.php, is responsible for loading YAML files. Do not provide any normalization or validation of loaded data.
+- ``"Foldering" file loader``, FolderingCumulativeFileLoader.php, provides a way to load a configuration file in a folder that conforms to a particular pattern.
 
-Examples
---------
 
-1. Load configuration from different file types, for example, YAML and XML:
+Load Configuration from Different File Types
+--------------------------------------------
 
 .. code-block:: php
 
@@ -111,34 +118,8 @@ Examples
     }
 
 
-2. Load configuration from different files:
-
-.. code-block:: php
-
-    class AcmeSomeExtension extends Extension
-    {
-        public function load(array $configs, ContainerBuilder $container)
-        {
-            $acmeConfig = [
-                'foo' => [],
-                'bar' => []
-            ];
-            $configLoader = new CumulativeConfigLoader(
-                'acme_config',
-                [
-                    new YamlCumulativeFileLoader('Resources/config/foo.yml')
-                    new YamlCumulativeFileLoader('Resources/config/bar.yml')
-                ]
-            );
-            $resources = $configLoader->load(new ContainerBuilderAdapter($container));
-            foreach ($resources as $resource) {
-                $acmeConfig[$resource->name] = array_merge($acmeConfig[$resource->name], $resource->data);
-            }
-        }
-    }
-
-
-3. Load configuration files located in different folders:
+Load Configuration Files from Different Folders
+-----------------------------------------------
 
 .. code-block:: php
 
@@ -163,11 +144,12 @@ Examples
         }
     }
 
-5. YML inheritance
+Yml Inheritance
+---------------
 
 You can use inheritance in .yml files, for example:
 
-.. code-block:: yaml
+.. code-block:: php
 
     imports:
         - { resource: 'child1.yml' }

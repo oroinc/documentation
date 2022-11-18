@@ -343,3 +343,9 @@ user/back-office/system/integrations/outlook/mapping /user/back-office/system/in
 user/back-office/system/configuration/system/integrations/outlook-settings-oro /user/back-office/system/configuration/system/integrations
 user/back-office/system/user-management/organizations/org-configuration/general-setup-org/integrations/organization-outlook /user/back-office/system/user-management/organizations/org-configuration/general-setup-org/integrations
 user/back-office/system/user-management/users/configuration/user-ms-outlook /user/back-office/system/user-management/users/configuration
+backend/components/index /components/index
+backend/components/config/index /components/index
+backend/components/config/configuration-merger /components/configuration-merger
+backend/components/config/cumulative-resources /components/cumulative-resources
+backend/components/config/resource-loader-factory /components/resource-loader-factory
+backend/components/config/system-aware-resolver /components/system-aware-resolver
