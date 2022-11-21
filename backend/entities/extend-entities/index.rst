@@ -289,6 +289,13 @@ Console Commands
 
      php bin/console oro:entity-extend:update --dry-run
 
+
+.. admonition:: Business Tip
+
+    Looking for a way to leverage online commerce? Here's everything you need to know about a |B2B online marketplace| and what makes it work.
+
+
+
 .. toctree::
    :titlesonly:
    :maxdepth: 2
@@ -304,4 +311,5 @@ Console Commands
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
-
+.. include:: /include/include-links-seo.rst
+   :start-after: begin

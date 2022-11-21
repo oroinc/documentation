@@ -1,3 +1,5 @@
+.. _dev-components-system-aware-resolver:
+
 System Aware Resolver
 =====================
 
