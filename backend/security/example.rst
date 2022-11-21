@@ -3,11 +3,7 @@
 Access Levels and Ownership (Example)
 =====================================
 
-The following sections provide some insight on how the ACL checks work. It is assumed that there
-are two organizations, *Main Organization* and *Second Organization*. The *Main Organization*
-contains the *Main Business Unit*, *Second Organization* contains *Second Business Unit*.
-*Child Business Unit* is a subordinate of *Second Business Unit*. Additionally, the following users
-have been created:
+The following sections provide some insight into how the ACL checks work. Suppose there are two organizations, *Main Organization* and *Second Organization*. The *Main Organization* contains the *Main Business Unit*, *Second Organization* contains *Second Business Unit*. *Child Business Unit* is a subordinate of *Second Business Unit*. Additionally, the following users have been created:
 
 +--------+-------------------------+--------------------------+------------------------+
 | User   | Created in Organization | Created in Business Unit | Assigned to            |
@@ -29,8 +25,7 @@ have been created:
 User Ownership
 ~~~~~~~~~~~~~~
 
-Imagine that each user created two accounts (one in *Main Organization* and one in *Second
-Organization*):
+Imagine that each user created two accounts (one in *Main Organization* and one in *Second Organization*):
 
 ==========  =================  ===================
 Created by  Main Organization  Second Organization
@@ -97,7 +92,7 @@ Mary
 Mike
 ....
 
-The user Mike cannot login into the *Main Organization*.
+The user Mike cannot log in to the *Main Organization*.
 
 +---------------+---------------------+
 | Access Level  | Second Organization |
@@ -144,7 +139,7 @@ Robert
 Mark
 ....
 
-The user Mark cannot login into the *Main Organization*.
+The user Mark cannot log in to the *Main Organization*.
 
 +---------------+---------------------+
 | Access Level  | Second Organization |
@@ -165,8 +160,7 @@ The user Mark cannot login into the *Main Organization*.
 Business Unit Ownership
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-When the ownership type is *"Business Unit"*, access cannot be granted on the user level. The
-minimum acccess level is the Business Unit level.
+When the ownership type is *"Business Unit"*, access cannot be granted on the user level. The minimum access level is the Business Unit level.
 
 Imagine that the following data has been created:
 
@@ -222,7 +216,7 @@ Mary
 Mike
 ....
 
-The user Mark cannot login into the *Main Organization*.
+The user Mark cannot log in to the *Main Organization*.
 
 +---------------+---------------------+
 | Access Level  | Second Organization |
@@ -260,7 +254,7 @@ Robert
 Mark
 ....
 
-The user Mark cannot login into the *Main Organization*.
+The user Mark cannot log in to the *Main Organization*.
 
 +---------------+---------------------+
 | Access Level  | Second Organization |
@@ -281,8 +275,7 @@ The user Mark cannot login into the *Main Organization*.
 Organization Ownership
 ~~~~~~~~~~~~~~~~~~~~~~
 
-When the ownership type is *"Organization"*, access cannot be granted on the user level, the
-business level or the division level. The minimum acccess level is the Organization level.
+When the ownership type is *"Organization"*, access cannot be granted on the user, business, or division levels. The minimum access level is the Organization level.
 
 Imagine that the following data has been created:
 
@@ -314,7 +307,7 @@ John, Mary, Robert
 Mike, Mark
 ..........
 
-The users cannot login into the *Main Organization*.
+The users cannot log in to the *Main Organization*.
 
 +--------------+---------------------+
 | Access Level | Second Organization |

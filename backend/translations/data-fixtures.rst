@@ -1,7 +1,7 @@
 Data Fixtures for Translation Entities
 ======================================
 
-Article provides information about data fixtures for translatable entities.
+The article provides information about data fixtures for translatable entities.
 
 Classes Description
 -------------------
@@ -9,31 +9,30 @@ Classes Description
 AbstractTranslatableEntityFixture
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This class is intended for creating translatable entities. It gathers translation files,
-defines existing locales and provides service methods to perform translation.
+The purpose of this class is to create translatable entities. It gathers translation files, defines existing locales, and provides service methods to perform translation.
 
-Descended classes must define method "loadEntities".
+Descended classes must define the method "loadEntities".
 
 Constants:
 
-* **ENTITY\_DOMAIN** - translation domain that contains translations for translatable entities, default value is "entities";
+* **ENTITY\_DOMAIN** - a translation domain that contains translations for translatable entities; the default value is "entities";
 
-* **DOMAIN\_FILE\_REGEXP** - regular expression for matching appropriate translation files and extracting locale.
+* **DOMAIN\_FILE\_REGEXP** - a regular expression for matching appropriate translation files and extracting the locale.
 
 Methods:
 
-* **load** - method from Doctrine AbstractFixture, entry point for data fixture run, sets translator property and runs the loadEntities method;
+* **load** - a method from Doctrine AbstractFixture, an entry point for the data fixture run; it sets the translator property and runs the loadEntities method;
 
-* **setContainer** - method from ContainerAwareInterface, sets container property;
+* **setContainer** - a method from ContainerAwareInterface, sets container property;
 
-* **loadEntities** - abstract method, must be specified in descendant classes to load entities;
+* **loadEntities** - an abstract method, must be specified in the descendant classes to load entities;
 
-* **getDomainFileRegExp** - returns formed regular expression based on source expression and current domain;
+* **getDomainFileRegExp** - returns a formed regular expression based on the source expression and the current domain;
 
-* **getTranslationLocales** - parses all translation files and searches for files that match formed regular expression, returns list of locales with appropriate translations;
+* **getTranslationLocales** - parses all translation files and searches for files that match the formed regular expression; returns a list of locales with appropriate translations;
 
 * **translate** - translates string for specified ID, prefix, and locale;
 
-Parameters and domain can also be specified manually;
+You can also specify parameters and the domain manually;
 
-* **getTranslationId** - forms translation ID based on the entity string ID and entity prefix.
+* **getTranslationId** - forms a translation ID based on the entity string ID and entity prefix.

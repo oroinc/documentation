@@ -3,9 +3,9 @@
 Access Rules
 ============
 
-Symfony security system allows to check access to an existing object by the Authorization Checker's `isGranted` method.
+Symfony security system allows checking access to an existing object by the Authorization Checker's `isGranted` method.
 
-You can also check access to queries, such as Doctrine ORM query or Search query, for instance. 
+You can also check access to queries, such as Doctrine ORM query or Search query.
 
 Protect ORM Queries
 -------------------
@@ -13,11 +13,11 @@ Protect ORM Queries
 To protect ORM queries, an |AclHelper| was implemented. With its help, when you call the `apply` method of the ACL helper with ORM Query Builder or ORM Query, the |AccessRuleWalker| is used
 to process the query. This walker modifies the query's AST following the restrictions imposed by access rules.
 
-An access rule is the class that implements the |AccessRuleInterface| interface.
+An access rule is a class that implements the |AccessRuleInterface| interface.
 
 Each access rule modifies expressions of the |Criteria object|.
 
-The behavior of access rules and AccessRuleWalker can be changed with additional options that can be set as the third parameter of `apply` method.
+You can change the behavior of access rules and AccessRuleWalker with additional options that you can set as the third parameter of the `apply` method.
 
 The options that can change the behavior of AccessRuleWalker:
 
@@ -26,21 +26,20 @@ The options that can change the behavior of AccessRuleWalker:
 
 The options that can change the behavior of access rules:
 
- - **aclDisable** --- Allows to disable the |AclAccessRule|. The default value is `false`.
- - **aclCheckOwner** --- Enables checking of the current joined entity if it is the owner of the parent entity.
- - **aclParentClass** --- Contains the parent class name of the current joined entity. This option is used together with the check owner option.
- - **aclParentField** --- Contains the field name by which the current entity is joined. This option is used together with the check owner option.
- - **availableOwnerEnable** --- Enables the |AvailableOwnerAccessRule|. The default value is `false`.
- - **availableOwnerTargetEntityClass**  --- The target class name whose access level should be used for the check in |AvailableOwnerAccessRule|.
- - **availableOwnerCurrentOwner** --- The ID of owner that should be available even if ACL check denies access.
+- **aclDisable** --- Allows to disable the |AclAccessRule|. The default value is `false`.
+- **aclCheckOwner** --- Enables checking of the current joined entity if it is the owner of the parent entity.
+- **aclParentClass** --- Contains the parent class name of the current joined entity. This option is used together with the check owner option.
+- **aclParentField** --- Contains the field name by which the current entity is joined. This option is used together with the check owner option.
+- **availableOwnerEnable** --- Enables the |AvailableOwnerAccessRule|. The default value is `false`.
+- **availableOwnerTargetEntityClass**  --- The target class name whose access level should be used for the check in |AvailableOwnerAccessRule|.
+- **availableOwnerCurrentOwner** --- The owner's ID that should be available even if the ACL check denies access.
 
 To find all possible options, see classes that implement |AccessRuleInterface|.
 
 Criteria Object
 ---------------
 
-The criteria holds the necessary information about the type of query being checked, the object that should be checked, 
-the access level, additional options and the expression that should be added to the query to limit access to the given object.
+The criteria hold the necessary information about the type of query being checked, the object that should be checked, the access level, additional options, and the expression that should be added to the query to limit access to the given object.
 
 Additional criteria options represent a list of parameters that you can use to modify the behavior of an access rule.
 
@@ -59,15 +58,15 @@ The following types of expressions are supported:
 
 The following is a list of supported operators:
 
- - **=** - Equality;
- - **<>** - Inequality;
- - **<** - Less than;
- - **<=** - Less than or equal;
- - **\>** - Greater than;
- - **\>=** - Greater than or equal;
- - **IN** - Checks that the left operand matches any value in the list from the right operand;
- - **NIN** - Checks that the left operand does not match any value in the list from the right operand;
- - **CONTAINS** - For string fields, checks that the left operand contains a substring from the right operand. For array fields, checks that any value in the list from the left operand is matched any value in the list from the right operand.
+- **=** - Equality;
+- **<>** - Inequality;
+- **<** - Less than;
+- **<=** - Less than or equal;
+- **\>** - Greater than;
+- **\>=** - Greater than or equal;
+- **IN** - Checks that the left operand matches any value in the list from the right operand;
+- **NIN** - Checks that the left operand does not match any value in the list from the right operand;
+- **CONTAINS** - For string fields, it checks that the left operand contains a substring from the right operand. For array fields, it checks that any value in the list from the left operand is matched any value in the list from the right operand.
 
 If the value of the expression on the left or right is not the expression object, it is converted to a *value expression*.
 
@@ -83,7 +82,7 @@ If the value of the expression on the left or right is not the expression object
 
 * |Subquery| is used to build a subquery.
 
-* |Association| is used to make a check of access rules by a related association.
+* |Association| is used to check access rules by a related association.
 
 Add a New Access Rule
 ---------------------
@@ -130,27 +129,26 @@ Next, the access rule class should be registered as a service with the `oro_secu
         tags:
             - { name: oro_security.access_rule, type: ORM, entityClass: Acme\Bundle\DemoBundle\Entity\Contact }
 
-Here, the `type` and `entityClass` are options for the `oro_security.access_rule` tag that are used to
-define conditions when an access rule should be applicable.
+Here, the `type` and `entityClass` are options for the `oro_security.access_rule` tag used to define conditions when an access rule should be applied.
 
-In this example the access rule is applied to all ACL protected ORM queries that have the *Contact* entity.
+This example applies the access rule to all ACL-protected ORM queries with the *Contact* entity.
 
 The `oro_security.access_rule` tag options that can be used for any access rule:
 
-- `type` - the type of a query, e.g. `ORM`.
+- `type` - the query type, e.g. `ORM`.
 - `permission` - the ACL permission, e.g. `VIEW`.
 - `entityClass` - the FQCN of an entity.
-- `loggedUserClass` - the FQCN of a logged in user.
+- `loggedUserClass` - the FQCN of a logged-in user.
 
 .. note::
-    The`oro_security.access_rule` tag can be used with options specific for a particular access rule. Using options for the `oro_security.access_rule` tag is more preferable that implementing logic in the `isApplicable()` method because it allows to not initialize a rule service if it is not applicable. The `isApplicable()` method is intended for complex logic that cannot be achieved via the tag options.
+    You can use The`oro_security.access_rule` tag with options specific to a particular access rule. Using options for the `oro_security.access_rule` tag is preferable to implementing logic in the `isApplicable()` method because it allows not to initialize a rule service if it is not applicable. The `isApplicable()` method is intended for complex logic that cannot be achieved via the tag options.
 
 To add additional options you need to create a class that implements |AccessRuleOptionMatcherInterface| and decorate the service `oro_security.access_rule_option_matcher`.
 
 Access Rules Visitor
 --------------------
 
-If you want to apply access rule expressions to your type of queries, use a class that extends an abstract |Visitor|.
+If you want to apply access rule expressions to your type of query, use a class that extends an abstract |Visitor|.
 
 For example,|AstVisitor| converts access rule expressions to Doctrine AST conditions.
 
@@ -159,7 +157,7 @@ Check |AccessRuleWalker| for details on how to use this visitor.
 Adding OR Expressions
 ---------------------
 
-When adding OR expressions, they should be added with the lowest priority. If OR expression is added first, it will effectively function as AND expression.
+The OR expressions should be added with the lowest priority. If the OR expression is added first, it will effectively function as an AND expression.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -113,11 +113,11 @@ After the tree is processed in the Extension class, pass configuration data to t
 Change Config Value via Console Command
 ---------------------------------------
 
-You can change the config parameter value in the global scope via console command `oro:config:update`.
+You can change the config parameter value in the global scope via the console command `oro:config:update`.
 
 This command has two arguments:
 
-* Config parameter name - the key of config parameter you want to change. For example, 'oro_anybundle.anysetting';
+* Config parameter name - the key of the config parameter you want to change. For example, 'oro_anybundle.anysetting';
 * Config parameter value - the value you want to set to the parameter.
 
 For example, to update the back-office and storefront URLs of an OroCommerce instance respectively, run:
@@ -306,7 +306,7 @@ To add a new config scope:
                 tags:
                     - { name: oro_config.scope, scope: test, priority: 50 }
 
-    After this, the scope `test` will be used when retrieving a config value. This scope will be between `global` and `user` scopes.
+    After this, the scope `test` will be used when retrieving a config value. This scope will be between the `global` and `user` scopes.
     You can use this scope with the `oro_config.test` config provider.
 
 2. Change scope values via the UI.
@@ -409,7 +409,7 @@ To add a new config scope:
                         $this->get('translator')->trans('oro.config.controller.config.saved.message')
                     );
 
-                    // outdate content tags, it's only special case for generation that are not covered by NavigationBundle
+                    // outdated content tags, it's only special case for generation that is not covered by NavigationBundle
                     $taggableData = ['name' => 'organization_configuration', 'params' => [$activeGroup, $activeSubGroup]];
                     $tagGenerator = $this->get('oro_sync.content.tag_generator');
                     $sender       = $this->get('oro_sync.content.data_update_topic_sender');
@@ -473,8 +473,8 @@ Available Nodes
 Groups
 ^^^^^^
 
-This node should also be declared under root node and contain an array of available field groups with their properties.
-A group is an abstract fields bag, view representation of a group is managed on the template level of a specific configuration template
+This node should also be declared under the root node and contain an array of available field groups with their properties.
+A group is an abstract field bag, view representation of a group is managed on the template level of a specific configuration template
 and depends on its position in the tree.
 
 This means that a group could be rendered as a fieldset, a tab, or part of an accordion list.
@@ -488,8 +488,8 @@ This means that a group could be rendered as a fieldset, a tab, or part of an ac
                 icon:  fa-hdd-o
                 priority: 30                  # sort order
                 description: some description # add description on the next line after group header
-                tooltip: some tooltip         # add tooltip on the same line after group header
-                page_reload: false            # if true, page will be reloaded after save if something changed in the group
+                tooltip: some tooltip         # add a tooltip on the same line after group header
+                page_reload: false            # if true, the page will be reloaded after saving if something changed in the group
 
 Groups' definitions will be replaced recursively from configs that will be parsed after the original definition.
 To override an existing group title, redefine the group with the same name and `title` value.
@@ -510,7 +510,7 @@ To specify a configurator, use the following syntax:
 - `ClassName::methodName` for a static method
 - `@service_id::methodName` for a method in a service
 
-Please note that a group configuration form can have several configurators, and they can be specified in different bundles.
+Please note that a group configuration form can have several configurators, which can be specified in different bundles.
 
 **Example**
 
@@ -589,13 +589,13 @@ Fields
 Field declaration requires property `type`.
 
 * `data_type` - must be specified for all fields except `ui_only` ones
-* `type` - refers to form type of which field should be created
+* `type` - refers to the form type of the field that should be created
 * `search_type` - indicates how to search by field value, read more in the [Search Type Provider](#search-type-provider) section
 * `tooltip` - show additional info about field
 * `acl_resource` - determines acl resource to check permissions to change config field value(optional)
 * `priority` - sort order for displaying(optional)
-* `ui_only` - indicates whether a field is used only on UI and do not related to any variable (optional, defaults to false)
-* `property_path` - overrides configuration key where field's value will be stored (by default field's name used as path)
+* `ui_only` - indicates whether a field is used only in the UI and related to any variable (optional, defaults to false)
+* `property_path` - overrides configuration key where the field's value will be stored (by default, the field's name is used as path)
 
 Property `options` is also available; it is a proxy to form type definition.
 
@@ -617,13 +617,13 @@ Property `options` is also available; it is a proxy to form type definition.
                    # also here can be added field tooltips
                 acl_resource: 'acl_resource_name'
                 priority: 20
-                page_reload: false # if true, page will be reloaded after save if field changed
+                page_reload: false # if true, the page will be reloaded after saving if the field changed
 
 Tree
 ~~~~
 
 Configuration of the form tree defines the nested form elements.
-The tree name should be unique to prevent content merging from other trees.
+The tree name should be unique to prevent content from merging from other trees.
 All nested elements of the group should be placed under the "child" node.
 The sort order can be set with the "priority" property.
 
@@ -653,7 +653,7 @@ into logical groups. Using the group name, an API client can get only a subset o
 
 Please note that
 
-- An configuration option must be defined in the fields section and must have a `data_type` attribute.
+- A configuration option must be defined in the fields section and have a `data_type` attribute.
 - Nested groups are allowed. The nesting level is not limited.
 
 **Example**
@@ -712,7 +712,7 @@ Create your own `DemoSearchProvider` that implements |SearchProviderInterface|.
          */
         public function supports($name): bool
         {
-            // example how the field can be determined
+            // example of how the field can be determined
             return $this->configBag->getFieldsRoot($name) !== false;
         }
 
