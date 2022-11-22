@@ -460,6 +460,7 @@ Configuration Form Definition
 -----------------------------
 
 The configuration should be placed into the ``Resources/config/oro/system_configuration.yml`` file in any bundle.
+
 The root node should be `system_configuration`.
 
 Available Nodes
