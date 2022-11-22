@@ -10,7 +10,7 @@ Security
 
 OroSecurityBundle extends Symfony security capabilities to enable a role-based ACL security system in the Oro applications.
 
-The bundle enables developers to set up access restrictions for entities and non-entity related actions using the DOC-block annotations and the YAML configuration files. It also provides UI for application administrators to configure the entity-specific permissions for particular user roles based on the entity ownership.
+The bundle enables developers to set up access restrictions for entities and non-entity-related actions using the DOC-block annotations and the YAML configuration files. It also provides UI for application administrators to configure the entity-specific permissions for particular user roles based on entity ownership.
 
 Read more in the following topics below:
 

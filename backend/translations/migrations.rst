@@ -3,7 +3,7 @@ Schema Migrations
 
 **Class:** ``Oro\Bundle\TranslationBundle\Migration\DeleteTranslationKeysQuery``
 
-Provides a useful way to delete custom translation keys during migration.
+It provides a useful way to delete custom translation keys during migration.
 
 **Arguments**:
 
@@ -13,7 +13,7 @@ Provides a useful way to delete custom translation keys during migration.
 **Example**:
 
 To remove custom keys in your migration, use the `addQuery` method of ``Oro\Bundle\MigrationBundle\Migration\QueryBag``.
-   
+
 .. code-block:: php
 
     $queryBag->addQuery(

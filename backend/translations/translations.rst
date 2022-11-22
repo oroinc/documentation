@@ -3,13 +3,13 @@
 Content and User Interface Translation
 ======================================
 
-There are three ways to translate content displayed in Oro applications to a user. You can use:
+There are three ways to translate content displayed in the Oro applications to a user. You can use:
 
 * `Standard Symfony Translator`_
 * `Translatable Doctrine Extension`_
 * `LocalizedFallbackValue Entity from OroLocaleBundle`_
 
-This topic explains when to use each of the three approaches and provides implementation examples.
+This topic explains when to use the three approaches and provides implementation examples.
 
 Standard Symfony Translator
 ---------------------------
@@ -22,12 +22,12 @@ Standard Symfony Translator
 
 The application you are developing is highly likely to contain some static content that is independent of any dynamic
 application data, is always displayed in the same place, and never changes. Examples of such content are labels of field
-forms, static text in the interface, flash messages, etc. Keep in mind this translation approach is used only for static
-content that does not have impact on any entity (entity field values).
+forms, static text in the interface, flash messages, etc. Keep in mind that this translation approach is used only for static
+content that does not impact any entity (entity field values).
 
-To translate labels, use the Translation component, which is one of the main Symfony framework components.
+To translate labels, use the Translation component, one of the main Symfony framework components.
 
-Oro application adds the translation functionality on top of Symfony's standard approach which enables modification of
+Oro application adds the translation functionality on top of Symfony's standard approach, which enables modification of
 translations via UI.
 
 To use this approach, add the translation file to the bundle: **Resources/translations/messages.en.yml**
@@ -43,7 +43,6 @@ Use the Symfony translator to translate a label in the `twig` template:
 **Resources/views/Form/form.html.twig**
 
 .. code-block:: php
-
 
     {{ ‘oro.translation.some_field.label’|trans }}
 
@@ -80,26 +79,16 @@ Translatable Doctrine Extension
    :header: "Pros", "Cons"
    :widths: 15,15
 
-   " * Dynamic content in the application can be easily translated.
-    * The translatable fields have value related to the actual language of the application.", "
-    * The user must switch the current language into the required language in the system configuration to fill in the fields with the required values.
-    * Translatable fields can have values only for some languages but not for `Localizations`."
+    "* Dynamic content in the application can be easily translated.
+     * The translatable fields have a value related to the actual language of the application.","
+     * The user must switch the current language to the required language in the system configuration to fill the fields with the required values.
+     * Translatable fields can have values only for some languages but not for `Localizations`."
 
+Dynamic content is another type of content used in Oro applications. What is displayed in the UI is based on data loaded from fixtures into the database and entered by users in the UI. As a rule, this data is based on dictionaries used in certain entities.
 
-Dynamic content is another type of content used in Oro applications. What is displayed in the UI is based on data loaded
-from fixtures into the database and entered by users in the UI. As a rule, this data is based on dictionaries used in
-certain entities.
+Examples of such data are the Country and Region fields used in the Address entity. The application has dictionaries for each of these entities with all available translations for all translatable fields of these entities (into all available languages). For instance, these fields must consider the language selected for the interface when users must be able to filter and sort data by Country and Region in a grid with addresses. In this case, use |Gedmo/Translatable|. Such fields are displayed in the UI in the selected language. All requests to the database will change for the translations grid to retrieve data based on the current locale.
 
-Examples of such data are the Country and Region fields which are used in the Address entity. The application has
-dictionaries for each of these entities with all available translations for all translatable fields of these entities
-(into all available languages).
-For instance, these fields must take into account the language selected for the interface in cases when users must be
-able to filter and sort data by Country and Region in a grid with addresses. In this case, use
-|Gedmo/Translatable|.
-Such fields are displayed in the UI in the selected language. All requests to the database will change in order for the
-translations grid to retrieve data based on the current locale.
-
-Bellow is an example of an entity which must work with `Gedmo/Translatable` for the `name` field of this entity.
+Below is an example of an entity that must work with ``Gedmo/Translatable`` for the ``name`` field of this entity.
 
 .. code-block:: php
 
@@ -163,7 +152,6 @@ Bellow is an example of an entity which must work with `Gedmo/Translatable` for 
 
 Also, `Gedmo/Translatable` requires a dictionary with all translations for the original entity fields:
 
-
 .. code-block:: php
 
     namespace Oro\Bundle\AcmeBundle\Entity;
@@ -185,12 +173,10 @@ Also, `Gedmo/Translatable` requires a dictionary with all translations for the o
         private $content;
     }
 
-
 For the grid to have working translations for entities with `Gedmo` fields, add the `HINT_TRANSLATABLE` hint:
 **Resources/config/oro/datagrids.yml**
 
 .. code-block:: php
-
 
     datagrids:
        acme-grid:
@@ -205,7 +191,6 @@ Below is a simple example of a grid configuration which uses the hint: **Resourc
 
 
 .. code-block:: php
-
 
     datagrids:
        acme-grid:
@@ -236,8 +221,7 @@ Below is a simple example of a grid configuration which uses the hint: **Resourc
                        data_name: country.name
 
 
-In this case, the values in the name field are displayed in the required language, and filtering and sorting for the
-values happens in the selected language.
+In this case, the values in the name field are displayed in the required language, and filtering and sorting for the values happen in the selected language.
 
 .. _localizedfallbackvalue-entity-from-orolocalebundle:
 
@@ -255,12 +239,12 @@ LocalizedFallbackValue Entity from OroLocaleBundle
 
 UI language is incorporated into the localization entity. You can have several localizations in the application with the
 same interface language. However, data for various localizations may differ.
-In addition, if the current localization is assigned a parent localization then in cases when a field value does not
+In addition, if the current localization is assigned a parent localization, then in cases when a field value does not
 exist, it is taken from the parent. This allows for setting up a flexible translation tree via the UI.
 
 To implement this approach, use the :ref:`LocalizedFallbackValue <bundle-docs-platform-locale-bundle-localization>`.
 
-To use `LocalizedFallbackValue` for fields into the entity, make it is extendable:
+To use ``LocalizedFallbackValue`` for fields in the entity, make it extendable:
 
 .. code-block:: php
 
@@ -314,9 +298,7 @@ To use `LocalizedFallbackValue` for fields into the entity, make it is extendabl
         }
     }
 
-Enable ``Oro\Bundle\LocaleBundle\DependencyInjection\Compiler\DefaultFallbackExtensionPass`` for the entity and the field
-inside the bundle class:
-
+Enable ``Oro\Bundle\LocaleBundle\DependencyInjection\Compiler\DefaultFallbackExtensionPass`` for the entity and the field inside the bundle class:
 
 .. code-block:: php
 
@@ -340,7 +322,7 @@ inside the bundle class:
         }
     }
 
-As the result, a proxy class is generated in the application cache: **cache/prod/oro_entities/Extend/Entity/EX_OroAcmeBundle_Acme.php**
+As the result, a proxy class is generated in the application cache: ``cache/prod/oro_entities/Extend/Entity/classes.php``.
 
 .. code-block:: php
 
