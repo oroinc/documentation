@@ -587,14 +587,6 @@ Links (User)
 
    <a href="https://www.infinitepay.de/" target="_blank">https://www.infinitepay.de/</a>
 
-.. |Wirecard Demo Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:demo_mode" target="_blank">Wirecard Demo Mode</a>
-
-.. |Wirecard Test Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:test_mode" target="_blank">Wirecard Test Mode</a>
-
 .. |https://www.apruve.com/| raw:: html
 
    <a href="https://www.apruve.com/" target="_blank">https://www.apruve.com/</a>
