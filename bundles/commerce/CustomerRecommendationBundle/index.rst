@@ -1,3 +1,6 @@
+.. _bundles--commerce--customer-recommendation:
+
+
 Customer Recommendation Bundle
 ==============================
 

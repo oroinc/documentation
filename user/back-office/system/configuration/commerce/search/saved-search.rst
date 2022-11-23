@@ -38,7 +38,7 @@ The cron command ``oro:cron:website-elasticsearch:saved-search:create-alerts`` r
 To configure saved search settings:
 
 1. Navigate to **System > Configuration** in the main menu.
-2. Select **Commerce > Search** in the menu to the left.
+2. Select **Commerce > Search > Saved Search** in the menu to the left.
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
