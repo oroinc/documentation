@@ -25,7 +25,7 @@ With this extension, you can sync the following data from Akeneo to OroCommerce:
 * Configurable products, simple products & all product data from supported attributes
 * Categories and category trees
 
-For the details on how to integrate Akeneo PIM Enterprise to OroCommerce Enterprise, read the |relevant Akeneo documentation|.
+For details on integrating Akeneo PIM Enterprise into OroCommerce Enterprise, read the |relevant Akeneo documentation|.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

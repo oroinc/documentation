@@ -5,14 +5,13 @@ ACL Manager
 
 ACL manager (`oro_security.acl.manager` service) is responsible for internal ACL operations and should be used when custom ACL operations are required.
 
-To check if ACL system is enabled in the current application, use the **isAclEnabled** function that returns a true or false result.
+To check if the ACL system is enabled in the current application, use the **isAclEnabled** function that returns a true or false result.
 
 **EXAMPLES OF ACL MANAGER USAGE**
 
-Setting VIEW and EDIT class-based permissions to `MyBundle:MyEntity` class for the Manager Role:
+Setting VIEW and EDIT class-based permissions to the `MyBundle:MyEntity` class for the Manager Role:
 
 .. code-block:: php
-
 
     use Oro\Bundle\SecurityBundle\Acl\Persistence\AclManager;
     ...
@@ -45,7 +44,6 @@ Granting `some_action_id` capability for the Manager Role:
 
 .. code-block:: php
 
-
     use Oro\Bundle\SecurityBundle\Acl\Persistence\AclManager;
     ...
     public function setAclManager(AclManager $manager)
@@ -74,7 +72,7 @@ Granting `some_action_id` capability for the Manager Role:
 
 The **getSid function** returns the security identity for the given parameter. Parameters of the function can be:
 
- - **string**. In this case security identity is taken form the role with the name set as a parameter;
+ - **string**. In this case, security identity is taken from the role with the name set as a parameter;
  - **RoleInterface**. Returns SID for the current role object
  - **UserInterface**.  Creates a user security identity from a UserInterface
  - **UserInterface**. Creates a user security identity from a TokenInterface
@@ -90,9 +88,9 @@ Examples:
  - getOid('Entity:AcmeBundle:SomeEntity')
  - getOid('Action:Some Action')
 
-The **getMaskBuilder** function gets the new instance of the mask builder which can be used to build a permission bitmask for an object with the given object identity.
+The **getMaskBuilder** function gets the new instance of the mask builder, which can be used to build a permission bitmask for an object with the given object identity.
 
-As one ACL extension can support several masks (each mask is stored in its own ACE; an example of ACL extension which supports several masks is the 'Entity' extension (see EntityAclExtension class) you need to provide any permission supported by the expected mask builder instance.
+As one ACL extension can support several masks, you need to provide any permission supported by the expected mask builder instance. Each mask is stored in its own ACE; an example of an ACL extension that supports several masks is the 'Entity' extension (see EntityAclExtension class).
 
 You can also omit the $permission argument. In this case, the default mask builder is returned.
 
@@ -100,48 +98,43 @@ For example, the following calls return the same mask builder:
 
 .. code-block:: php
 
-
    $manager->getMaskBuilder($manager->getOid('entity: AcmeBundle:AcmeEntity'))
    $manager->getMaskBuilder($manager->getOid('entity: AcmeBundle:AcmeEntity'), 'VIEW')
    $manager->getMaskBuilder($manager->getOid('entity: AcmeBundle:AcmeEntity'), 'DELETE')
 
+This is because the VIEW, CREATE, EDIT, DELETE and ASSIGN permissions are supported by the EntityMaskBuilder class, and it is the default mask builder for the 'Entity' extension.
 
-because VIEW, CREATE, EDIT, DELETE and ASSIGN permissions are supported by the EntityMaskBuilder class and it is the default mask builder for the 'Entity' extension.
-
-If you are sure that an ACL extension supports only one mask, you can omit the $permission argument as well.
+If you are sure that an ACL extension supports only one mask, you can also omit the $permission argument.
 
 For example, the following calls are identical:
 
 .. code-block:: php
 
-
    $manager->getMaskBuilder($manager->getOid('action: Acme Action'))
    $manager->getMaskBuilder($manager->getOid('entity: Acme Action'), 'EXECUTE')
 
-
 The **setPermission**  function updates or creates object-based or class-based ACE with the given attributes.
 
-* If the given object identity represents a domain object the object-based ACE is set, otherwise, a class-based ACE is set.
+* If the given object identity represents a domain object, the object-based ACE is set, otherwise, a class-based ACE is set.
 * If the given object identity represents a "root" ACL, an object-based ACE is set.
 
 .. code-block:: php
 
-
-   $manager->setPermission(
-       $sid,
-       $oid,
-       $mask
-   );
+    $manager->setPermission(
+        $sid,
+        $oid,
+        $mask
+    );
 
 The **setFieldPermission** function enables you to update or create an object-field-based or class-field-based ACE with the given attributes.
 
-If the given object identity represents a domain object an object-field-based ACE is set. Otherwise, a class-field-based ACE is set.
+If the given object identity represents a domain object, an object-field-based ACE is set. Otherwise, a class-field-based ACE is set.
 
-The **deletePermission** and **deleteFieldPermission** functions allow to delete object-based or class-based (deletePermission) and object-field-based or class-field-based (deleteFieldPermission) ACE with the given attributes.
+The **deletePermission** and **deleteFieldPermission** functions allow the deletion of object-based or class-based (deletePermission) and object-field-based or class-field-based (deleteFieldPermission) ACE with the given attributes.
 
 The **deleteAllPermissions** and **deleteAllFieldPermissions** functions deletes all object-based or class-based and object-field-based or class-field-based ACEs for the given security identity
 
-To get all the registered ACL extensions registered in system (now it is an entity and action extension), use the **getAllExtensions** function.
+To get all the registered ACL extensions registered in the system (now it is an entity and action extension), use the **getAllExtensions** function.
 
 After setting new ACL permissions to an object, save the changes using the **flush** function.
 
