@@ -27,7 +27,7 @@ To import a bulk of |imported_information|:
 
 2. Click **Import File** on the top right.
 
-3. In the **Import** dialog, click **Choose File**, select the .csv file you prepared, and then click **Import File**.
+3. In the **Import** dialog, click **Choose File** under the required tab, *Customer Users* or *Customer User Addresses*, depending on what data you are importing. Select the .csv file you prepared, and then click **Import File**.
 
 .. note:: Ensure that your .csv file is saved in the Unicode (UTF-8) encoding. Otherwise, the content of the file can be rendered improperly.
 
@@ -59,4 +59,4 @@ Follow the on-screen guidance for any additional actions. For example, for the i
 
 .. |item| replace:: customer users
 
-.. |image| image:: /user/img/customers/customer_users/import_customer_users.png
+.. |image| image:: /user/img/customers/customer_users/import-steps-customer-users.png
