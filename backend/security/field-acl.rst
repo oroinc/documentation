@@ -8,7 +8,7 @@ Field ACL allows checking access to an entity field and supports the following p
 Prepare the System for Field ACL
 --------------------------------
 
-By default, entity fields are not protected by ACL. The templates, datagrids and other parts of the system that use the entity that should be Field ACL protected, do not have such checks.
+By default, entity fields are not protected by ACL. The templates, datagrids, and other parts of the system that use the entity that should be Field ACL protected do not have such checks.
 
 Before enabling the support of the Field ACL for an entity, prepare the system parts that use the entity to use Field ACL.
 
@@ -28,12 +28,12 @@ The second parameter of this method should be an instance of |FieldVote|:
 
     $isGranted = $this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, 'fieldName'));
 
-As a result, the $isGranted variable contains the *true* value if access is granted, and the *false* value if it does not.
+As a result, the $isGranted variable contains the *true* value if access is granted and the *false* value if it does not.
 
-The $entity parameter should contain an instance of the entity that you want to check.
+The $entity parameter should contain an instance of the entity you want to check.
 
-If you have no entity instance but you know a class name, ID of the record, the owner and the organization IDs of this record, the |DomainObjectReference|] can be used as the domain object:
- 
+If you have no entity instance, but you know a class name, the ID of the record, the owner, and the organization IDs of this record, the |DomainObjectReference|] can be used as the domain object:
+
 .. code-block:: php
 
     // ....
@@ -50,9 +50,8 @@ Check Field ACL in TWIG Templates
 ---------------------------------
 
 Use the `is_granted` twig function to check grants in twig templates. To check the field, use the field name as the third parameter of the function:
- 
-.. code-block:: php
 
+.. code-block:: php
 
     {% if is_granted('VIEW', entity, 'fieldName') %}
         {# do some job #}
@@ -63,9 +62,9 @@ Use the `is_granted` twig function to check grants in twig templates. To check t
 Enable Support of Field ACL for an Entity
 -----------------------------------------
 
-To be able to manage field ACL, add the `field_acl_supported` attribute to the 'security' scope of the entity config.
+To manage field ACL, add the `field_acl_supported` attribute to the 'security' scope of the entity config.
 
-Enabling this attribute means that the system is prepared to check access to the entity fields.
+Enabling this attribute means the system is prepared to check access to the entity fields.
 
 You can achieve this with the Config annotation if you have access to both the entity and the process `oro:platform:update` command.
 
@@ -96,11 +95,9 @@ The following example is an illustration of the entity configuration:
      {
      ...
      }
- 
 
- 
 If you have no access to the entity to modify the Config annotation, set the `field_acl_supported` parameter with the migration:
- 
+
 .. code-block:: php
 
     namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
@@ -132,17 +129,17 @@ If you have no access to the entity to modify the Config annotation, set the `fi
 
 
 
-Enable Field ACL 
+Enable Field ACL
 ----------------
 
-Once the configuration is changed, the entity config page has two additional parameters: `Field Level ACL` and `Show Restricted`.
+Once the configuration is changed, the entity config page has two additional parameters: Field Level ACL and Show Restricted.
 
 .. note::
     Please do not enable these parameters from the code without enabling the `field_acl_supported` attribute for the entity.
 
-With the `Field Level ACL` parameter, the system manager can enable or disable Field ACL for the entity. 
+With the `Field Level ACL` parameter, the system manager can enable or disable Field ACL for the entity.
 
-When both *Show Restricted* and *Field ACL* options are enabled, but a user does not have access to the field, then this field is displayed in a read-only format on the create and edit pages.
+When both the *Show Restricted* and *Field ACL* options are enabled, but a user does not have access to the field, this field is displayed in a read-only format on the create and edit pages.
 
 Limit Permissions List
 ----------------------

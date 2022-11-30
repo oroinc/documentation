@@ -115,7 +115,6 @@ Backend Developer Guide is an essential resource for developers that provides co
    logging/index
    system-configuration/index
    configuration/index
-   components/index
    extend-crm/index
    extend-commerce/index
    third-party-extensions/index

@@ -198,6 +198,7 @@ CRM Bundles
    MakerBundle <extensions/MakerBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
    StripeBundle <extensions/StripeBundle/index>
+   CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
 
 
 .. include:: /include/include-links-seo.rst

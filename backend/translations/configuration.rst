@@ -12,9 +12,7 @@ Debug translator enables you to check and debug translations in the UI. To enabl
         debug_translator: true
 
 
-Additionally, refresh the backend and browser cache. All translated strings will then be wrapped into
-brackets, and untranslated strings will be wrapped into exclamation marks with dashes. Frontend translations
-have suffix "JS" to distinguish them from backend translations.
+Additionally, refresh the backend and browser cache. All translated strings will then be wrapped into brackets, and untranslated strings will be wrapped into exclamation marks with dashes. Frontend translations have suffix "JS" to distinguish them from backend translations.
 
 .. code-block:: none
 
@@ -28,10 +26,7 @@ have suffix "JS" to distinguish them from backend translations.
 Debug JS Translations
 ---------------------
 
-Debug JS translations allows to turn off on fly JS translations generation, it can
-slightly boost performance on slow hardware configurations and also makes the application more
-stable on Windows. If `kernel.debug` is set to `false`, the value of debug JS translations
-is ignored. To turn off JS translations generation, set option `js_translation.debug` to `false` in the config.yml file:
+Debugging JS translations allows to turn off on fly JS translations generation, it can slightly boost performance on slow hardware configurations and make the application more stable on Windows. If `kernel.debug` is set to `false`, the value of debugging JS translations is ignored. To turn off JS translations generation, set option `js_translation.debug` to `false` in the config.yml file:
 
 .. code-block:: yaml
 
@@ -40,7 +35,7 @@ is ignored. To turn off JS translations generation, set option `js_translation.d
             debug: false
 
 
-If you turned off JS translations generation, do it manually by executing the command below which dumps translations for use in JavaScript:
+If you turned off JS translations generation, do it manually by executing the command below, which dumps translations for use in JavaScript:
 
 .. code-block:: none
 

@@ -1,7 +1,14 @@
+:title: OroPlatform, System Aware Resolver, Oro Config Component
+
+.. meta::
+   :description: This resource type provides a way to resolve datagrid configs with system configs.
+
+.. _dev-components-system-aware-resolver:
+
 System Aware Resolver
 =====================
 
-The |SystemAwareResolver| class supports the following expressions:
+The ``SystemAwareResolver`` class supports the following expressions:
 
 - **%parameter%** - gets a parameter from the DI container
 - **$parameter$** - gets a parameter from the context
@@ -19,6 +26,3 @@ You can also use parameters inside expressions, for example:
 - **%acme.class_name%::myMethod()** - calls the static method without parameters
 - **Hello $user_name$**
 
-
-.. include:: /include/include-links-dev.rst
-   :start-after: begin

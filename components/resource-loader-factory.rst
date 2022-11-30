@@ -11,9 +11,9 @@ Resources Loader Factory
 This class provides methods for creating an instance of **CumulativeConfigLoader**, which allows you to load configuration files from any bundle or application level.
 
 Specification
-~~~~~~~~~~~~~
+-------------
 
-Resources Loader Factory provides methods ``CumulativeConfigLoaderFactory::create('acme_data' and  'Resources/config/oro/acme.yml')``.
+Resources Loader Factory provides the ``CumulativeConfigLoaderFactory::create('acme_data' and  'Resources/config/oro/acme.yml')`` method.
 
 This method prepares an instance of **CumulativeConfigLoader** with configured configuration loaders.
 Under the hood, the factory transforms the incoming path to configuration files with the ability to load configs from the application layer.
@@ -36,7 +36,7 @@ Under the hood, the factory transforms the incoming path to configuration files 
    ]
 
 Usage Example
-~~~~~~~~~~~~~
+-------------
 
 The following example shows how to create a new **CumulativeConfigLoader** instance using the ``CumulativeConfigLoaderFactory::create('acme_data', 'Resources/config/oro/acme.yml')`` static factory method on a simple configuration provider:
 

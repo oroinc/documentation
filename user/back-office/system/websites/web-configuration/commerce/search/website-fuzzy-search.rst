@@ -14,9 +14,9 @@ You can set up storefront error-tolerant (fuzzy) search in website search index 
 
 To configure storefront fuzzy search settings:
 
-1. Navigate to  **System > Websites** in the main menu.
+1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| more actions menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
-3. Select **Commerce > Search** in the menu to the left.
+3. Select **Commerce > Search > Fuzzy Search** in the menu to the left.
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 

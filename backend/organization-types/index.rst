@@ -1,7 +1,7 @@
 :title: Configure Restrictions and Limitations for Organizations
 
 .. meta::
-   :description: A guide how to add and configure organization types to provide a set of restrictions and limitations for organizations in the Enterprise editions of OroCommerce, OroCRM, and OroPlatform.
+   :description: A guide on how to add and configure organization types to provide a set of restrictions and limitations for organizations in the Enterprise editions of OroCommerce, OroCRM, and OroPlatform.
 
 .. _dev-organization-types:
 
@@ -38,14 +38,14 @@ To add an organization type:
 
 4. Rebuild the application cache via the ``php bin/console cache:clear`` command.
 
-5. To make sure that the new organization type was added successfully,
+5. To make sure that you added a new organization type successfully,
    run the ``php bin/console oro:organization-type:config:debug`` command.
 
 6. Make sure that the new organization type is available
    on the :ref:`Organization edit page in the back-office <user-management-organization-types>`.
 
 
-The full configuration options available in `Resources/config/oro/organization_types.yml` files are:
+The complete configuration options available in the `Resources/config/oro/organization_types.yml` files are:
 
 .. code-block:: yaml
 
@@ -60,7 +60,7 @@ The full configuration options available in `Resources/config/oro/organization_t
             # The description of an organization type.
             description:          ~ # Required
 
-            # The strategy how to handle the features.
+            # The strategy for how to handle the features.
             strategy:             exclude_list # One of "exclude_list"; "include_list"
 
             # The names of features that are enabled for an organization type.
@@ -72,7 +72,5 @@ The full configuration options available in `Resources/config/oro/organization_t
 You can also see this information by running the ``php bin/console oro:organization-type:config:dump-reference`` command.
 
 There are two strategies to handle features, ``exclude_list`` and ``include_list``.
-The ``exclude_list`` strategy is used by default and it grants access to all features that are not specified
-in the lists of enabled and disabled features.
-The ``include_list`` strategy denies access to all features that are not specified in the lists
-of enabled and disabled features.
+The ``exclude_list`` strategy is used by default, granting access to all features not specified in the lists of enabled and disabled features.
+The ``include_list`` strategy denies access to all features not specified in the lists of enabled and disabled features.

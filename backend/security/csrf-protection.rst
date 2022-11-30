@@ -3,22 +3,18 @@
 CSRF Protection
 ===============
 
-|Cross-Site Request Forgery (CSRF)| is an attack that forces an end user to execute unwanted actions on a web application
-in which they are currently authenticated.
+|Cross-Site Request Forgery (CSRF)| is an attack that forces an end user to execute unwanted actions on a web application in which they are currently authenticated.
 
 AJAX Request CSRF Protection
 ----------------------------
 
-To protect controllers against CSRF AJAX `@CsrfProtection` annotation should be used. This annotation may be used for the whole
-controller or for individual actions.
+To protect controllers against CSRF, use AJAX `@CsrfProtection` annotation. You can use it for the whole controller or individual actions.
 
-|Double Submit Cookie| technique used for AJAX request protection, each AJAX request must have a `X-CSRF-Header` header with a valid token value, this header is added by default to all AJAX requests.
-The current token value is stored in the cookie `_csrf` for HTTP connections and `https-_csrf` for HTTPS.
+|Double Submit Cookie| technique used for AJAX request protection, each AJAX request must have an `X-CSRF-Header` header with a valid token value, this header is added by default to all AJAX requests. The current token value is stored in the cookie `_csrf` for HTTP connections and `https-_csrf` for HTTPS.
 
 **Controller level protection**
 
 .. code-block:: php
-
 
     // ...
 
@@ -42,7 +38,6 @@ The current token value is stored in the cookie `_csrf` for HTTP connections and
 **Action level protection**
 
 .. code-block:: php
-
 
     // ...
 

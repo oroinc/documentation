@@ -587,14 +587,6 @@ Links (User)
 
    <a href="https://www.infinitepay.de/" target="_blank">https://www.infinitepay.de/</a>
 
-.. |Wirecard Demo Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:demo_mode" target="_blank">Wirecard Demo Mode</a>
-
-.. |Wirecard Test Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:test_mode" target="_blank">Wirecard Test Mode</a>
-
 .. |https://www.apruve.com/| raw:: html
 
    <a href="https://www.apruve.com/" target="_blank">https://www.apruve.com/</a>
@@ -817,7 +809,7 @@ Links (User)
 
 .. |the UPS website for more details| raw:: html
 
-   <a href="https://www.ups.com/us/en/help-center/packaging-and-supplies/weight-size.page" target="_blank">the UPS website for more details</a>
+   <a href="https://www.ups.com/us/en/shipping/order-supplies.page" target="_blank">the UPS website for more details</a>
 
 .. |the FedEx website for more details| raw:: html
 
