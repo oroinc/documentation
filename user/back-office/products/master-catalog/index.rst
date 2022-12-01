@@ -56,7 +56,7 @@ To create a master catalog category:
 
 6. In the **Products** section, select the items for the category you are creating. Use available filters to narrow your search and speed up the selection of the necessary product items. Each product you select can have a sort order associated with it that will define the default order in which the product will appear in the storefront. Be aware that for the sort order, 0 is the highest priority, and you can input any positive decimal number. Empty values will be sorted last.
 
-   .. hint:: The feature is available starting from OroCommerce Enterprise v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+   .. hint:: The feature is available starting from OroCommerce v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 .. _master-catalog-inventory:
 
