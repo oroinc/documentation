@@ -222,11 +222,11 @@ Product Collection is a filter-based segment that helps you display a custom and
    .. image:: /user/img/marketing/web_catalogs/ResetProducts.png
       :alt: Click Reset Products next to the tabs
 
-7. To define a sort order for products
+7. To define a sort order for products:
 
-   Each product selected in the All Added grid can have a sort order associated with it that will define the default order in which the product will appear in the storefront.
+   Each product selected in the All Added grid can have a sort order associated with it that will define the default order in which the product will appear in the storefront. Be aware that 0 is the highest priority, and you can input any positive decimal number. Empty values will be sorted last.
 
-   ..note:: 0 is the highest priority, and you can input any positive decimal number. Empty values will be sorted last.
+   .. hint:: The feature is available starting from OroCommerce Enterprise v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 8. This step applies only to the content nodes with more than one content variant.
 
