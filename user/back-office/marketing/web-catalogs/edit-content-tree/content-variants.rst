@@ -222,11 +222,17 @@ Product Collection is a filter-based segment that helps you display a custom and
    .. image:: /user/img/marketing/web_catalogs/ResetProducts.png
       :alt: Click Reset Products next to the tabs
 
-7. This step applies only to the content nodes with more than one content variant.
+7. To define a sort order for products:
+
+   Each product selected in the All Added grid can have a sort order associated with it that will define the default order in which the product will appear in the storefront. Be aware that 0 is the highest priority, and you can input any positive decimal number. Empty values will be sorted last.
+
+   .. hint:: The feature is available starting from OroCommerce v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+8. This step applies only to the content nodes with more than one content variant.
 
    When your collection is not selected as a default variant for the content node, you can define the condition when the product collection overrides the default content variant in the *Restrictions* section beneath the product collection preview. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
-8. Click **Save** when you have filled in the web catalog content node or keep adding the content variants.
+9. Click **Save** when you have filled in the web catalog content node or keep adding the content variants.
 
 .. _user-guide--marketing--web-catalog--default-content-variant:
 

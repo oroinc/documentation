@@ -353,9 +353,15 @@ Out of the box, the following indexation field groups are configured for the Pro
 
 - *main* - all values that affect the `all_text` fields  (ID, SKU, units, type, attribute, etc.) 
 
+- *category_sort_order* - product sort order in categories.
+
+- *collection_sort_order* - product sort order in collections.
+
 - *image* - product images.
 
-- *price* - product prices.
+- *inventory* - product inventory.
+
+- *pricing* - product prices.
 
 - *visibility* - product visibility.
 
