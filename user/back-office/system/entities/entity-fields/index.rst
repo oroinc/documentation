@@ -11,9 +11,9 @@ Fields are used to store details of entity records. For example, a 'street name'
 
 This topic describes how you can create custom entity fields, explains what basic and advanced entity field properties are available for them, and illustrates :ref:`examples <admin-guide-create-entity-fields-example>` of adding new fields to existing entities.
 
- .. note:: See a short demo on |how to create a custom field| or keep reading the step-by-step guidance below.
+.. note:: See a short demo on |how to create a custom field| or keep reading the step-by-step guidance below.
 
-   .. raw:: html
+  .. raw:: html
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/DwXQG9dcB0k" frameborder="0" allowfullscreen></iframe>   
 

@@ -288,6 +288,7 @@ Console Commands
 
      php bin/console oro:entity-extend:update --dry-run
 
+.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
 
 .. admonition:: Business Tip
 

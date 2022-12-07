@@ -271,6 +271,8 @@ Proceed to create the attribute as described below.
        :alt: The list of all product attributes
 
 
+.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
+
 Import Product Attributes
 -------------------------
 

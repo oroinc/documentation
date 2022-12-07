@@ -13,7 +13,7 @@ To create a new entity:
 1. Navigate to **System > Entities > Entity Management** in the main menu.    
 2. Click **Create Entity** on the top right of the page. 
 3. In the **General Information** section, provide the following information:
-    
+
    - **Name** --- Type the entity name. The name must be at least 5 characters long and contain only numbers and alphabetic symbols. The first symbol must be a letter. The name cannot be a |reserved SQL word|.
 
    .. caution:: The name must be unique for every custom entity created, otherwise partial update of the existing entity and failure of the schema update may occur.   
@@ -123,9 +123,12 @@ To create a new entity:
 
 8. Once you have saved the new entity, you can :ref:`add <admin-guide-create-entity-fields>` and :ref:`import fields <admin-guide-import-entity-fields>` to it. 
 
-9. After you have added fields to the entity, :ref:`update the schema <admin-guide-update-schema>`. 
+9. After you have added fields to the entity, :ref:`update the schema <admin-guide-update-schema>`.
 
-.. note:: You can view all entities under **System > Entities > Entity Management**. 
+You can view all entities under **System > Entities > Entity Management**.
+
+.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
+
 
 .. include:: /include/include-images.rst
    :start-after: begin
