@@ -94,6 +94,8 @@ The 'oro_attribute_create' route is responsible for creating a new attribute. At
 
 .. note:: Attributes created by the user are labeled as custom, while attributes created during migrations are labeled as a system. For system attributes, deleting is disabled.
 
+.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
+
 Attribute Families and Groups
 -----------------------------
 

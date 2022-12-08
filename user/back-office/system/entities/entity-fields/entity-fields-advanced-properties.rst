@@ -68,4 +68,6 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 4. Once all the information has been provided, click **Save and Close** on the top right.
 5. On the entity page, click **Update Schema** on the top right, if the storage type for the entity field has been set to *Table Column*.
 
+.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
+
 

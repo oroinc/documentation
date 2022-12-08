@@ -39,6 +39,9 @@ To delete a custom entity field:
 5. In the **Deletion Confirmation** dialog box, click **Yes**.
 6. :ref:`Update the schema <admin-guide-update-schema>` (if the storage type for the field is set to **Table Column**). 
 
+.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
+
+
 .. _admin-guide-import-entity-fields:
 
 Import Fields
