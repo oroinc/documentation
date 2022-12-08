@@ -10,13 +10,13 @@ JavaScript Compilation with Babel
 
 **Babel** processes JavaScript to make it compatible with older browsers. Because there are many asset files to process, resource consumption is high.
 
-If you have to support only the latest version of mainstream browsers, consider disabling Babel for the project by adding the below configuration to the config/config.yml file:
+If you have to support older version of browsers, consider enabling Babel for the project by adding the below configuration to the config/config.yml file:
 
 .. code-block:: yaml
    :caption: config/config.yml
 
    oro_asset:
-       disable_babel: true
+       with_babel: true
 
 .. _frontend-optimize-javascript-assets-enabled-layout-themes:
 

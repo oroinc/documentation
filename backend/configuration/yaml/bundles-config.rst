@@ -323,8 +323,8 @@ The default configuration for extension with alias "oro_asset":
 
     oro_asset:
 
-        # Permanently disable Babel
-        disable_babel:        true
+        # Permanently enable Babel, by default it is disabled
+        with_babel:           false
 
         # Path to NodeJs executable
         nodejs_path:          ~
