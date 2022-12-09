@@ -52,9 +52,9 @@ To create an order using a quick order form:
 
    c) To upload the file, click **Choose File**, navigate to the file location, select the file and click **Open**.
 
-      Import Validation will emerge to inform you whether products or their quantity qualify for the order and preview the line item and total price.
+      .. note:: If :ref:`Quick Order Form Optimization <user-guide--system-configuration--commerce-sales--quick-order-form>` is disabled, import validation will emerge to inform you whether products or their quantity qualify for the order and preview the line item and total price. If optimization is enabled, validation is skipped and the quick order fields are automatically filled in.
 
-      .. image:: /user/img/storefront/orders/VerifyOrder.png
+                .. image:: /user/img/storefront/orders/VerifyOrder.png
 
    d) Click **Add to Form** to finalize import. Validated items will add to the quick order form.
 
