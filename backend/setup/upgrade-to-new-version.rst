@@ -9,7 +9,7 @@
 Upgrade
 =======
 
-This guide explains how to upgrade OroCommerce, OroCRM or OroPlatform application to the next version.
+This guide explains how to upgrade OroCommerce, OroCRM, or OroPlatform application to the next version.
 
 An absolute path to the directory where an application is installed will be used in the guide and will
 be referred to as **<application-root-folder>** further in this topic.
@@ -21,7 +21,7 @@ be referred to as **<application-root-folder>** further in this topic.
 
 To retrieve a new version and upgrade your Oro application instance, execute the following steps:
 
-1. Make sure that there are no changes that require the database schema update.
+1. Make sure that no changes require the database schema update.
 
    .. code-block:: none
 
@@ -29,7 +29,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
    The platform update is possible only when the database schema is up-to-date.
 
-2. Go to the Oro application root folder and switch the application to the maintenance mode.
+2. Go to the Oro application root folder and switch the application to maintenance mode.
 
    .. code-block:: none
 
@@ -42,7 +42,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
        crontab -e
 
-   Comment this line  .
+   Comment this line.
 
    .. code-block:: text
 
@@ -56,19 +56,19 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
    .. note::
 
-       If you have any customization or third party extensions installed, make sure that:
-           - your changes to ``src/AppKernel.php`` file are merged to the new file.
-           - your changes to ``src/`` folder are merged and it contains the custom files.
-           - your changes to ``composer.json`` file are merged to the new file.
-           - your changes to ``packages.json`` file are merged to the new file.
-           - your changes to configuration files in ``config/`` folder are merged to the new files.
+       If you have any customization or third-party extensions installed, make sure that:
+           - your changes to the ``src/AppKernel.php`` file are merged to the new file.
+           - your changes to the ``src/`` folder are merged, and it contains the custom files.
+           - your changes to the ``composer.json`` file are merged into the new file.
+           - your changes to the ``packages.json`` file are merged to the new file.
+           - your changes to configuration files in the ``config/`` folder are merged to the new files.
 
    .. code-block:: none
 
        git pull
        git checkout <VERSION TO UPGRADE>
 
-7. Upgrade the composer dependency and set up the right owner to the retrieved files.
+7. Upgrade the composer dependency and set up the right owner for the retrieved files.
 
    .. code-block:: none
 
@@ -85,29 +85,28 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 10. Upgrade the platform.
 
-   .. code-block:: none
+    .. code-block:: none
 
-       php bin/console oro:platform:update --env=prod
+        php bin/console oro:platform:update --env=prod
 
-   .. note::
+    .. note::
 
-      To speed up the update process, consider using ``--schedule-search-reindexation`` or
-      ``--skip-search-reindexation`` option:
+       To speed up the update process, consider using ``--schedule-search-reindexation`` or
+       ``--skip-search-reindexation`` option:
 
-      * ``--schedule-search-reindexation`` --- postpone search reindexation process until
-        the message queue consumer is started (on step 12 below).
-      * ``--skip-search-reindexation`` --- skip search reindexation. Later, you can start it manually using commands
-        `oro:search:reindex` to update search index for the specified entities and `oro:website-search:reindex` to rebuild storefront search index.
-        See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
+       * ``--schedule-search-reindexation`` --- postpone the search reindexation process until the message queue consumer is started (on step 12 below).
+       * ``--skip-search-reindexation`` --- skip search reindexation. Later, you can start it manually using commands
+        `oro:search:reindex` to update the search index for the specified entities and `oro:website-search:reindex` to rebuild the storefront search index.
+         See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
 
-   .. note::
+    .. note::
 
-       When the following options are not provided, they are set up automatically for the ``test`` environment:
-           * --force
-           * --skip-translations
-           * --timeout=600
+        When the following options are not provided, they are set up automatically for the ``test`` environment:
+            * --force
+            * --skip-translations
+            * --timeout=600
 
-       The verbose mode is always set to debug in the ``test`` enviroment.
+        The verbose mode is always set to debug in the ``test`` environment.
 
 11. Remove the caches.
 
@@ -115,7 +114,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
         php bin/console cache:clear --env=prod
 
-    or, as alternative:
+    or, as an alternative:
 
     .. code-block:: none
 
@@ -148,8 +147,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
     .. note::
 
-       If PHP bytecode cache tools (e.g., opcache) are used, PHP-FPM (or Apache web server) should be restarted
-       after the uprgade to flush cached bytecode from the previous installation.
+       If PHP bytecode cache tools (e.g., opcache) are used, PHP-FPM (or Apache web server) should be restarted after the upgrade to flush cached bytecode from the previous installation.
 
 
 2. Download the Source Code Archive
@@ -157,7 +155,7 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 To retrieve a new version and upgrade your Oro application instance, please execute the following steps:
 
-1. Make sure that there are no changes that require the database schema update.
+1. Make sure that no changes require the database schema update.
 
    .. code-block:: none
 
@@ -165,7 +163,7 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
    The platform update is possible only when the database schema is up-to-date.
 
-2. Go to the Oro application root folder and switch the application to the maintenance mode.
+2. Go to the Oro application root folder and switch the application to maintenance mode.
 
    .. code-block:: none
 
@@ -194,18 +192,17 @@ To retrieve a new version and upgrade your Oro application instance, please exec
    * |Download OroCRM|
    * |Download OroPlatform|
 
-
-7. Unpack archive and overwrite existing system files.
+7. Unpack the archive and overwrite existing system files.
 
    .. note::
 
-      If you have any customization or third party extensions installed, make sure that:
-          - your changes to ``src/AppKernel.php`` file are merged to the new file.
-          - your changes to ``src/`` folder are merged and it contains the custom files.
-          - your changes to ``composer.json`` file are merged to the new file.
-          - your changes to ``package.json`` file are merged to the new file.
-          - your changes to configuration files in ``config/`` folder are merged to the new files.
-          - upgrade the composer dependency and set up right owner to the retrieved files.
+      If you have any customization or third-party extensions installed, make sure that:
+          - your changes to the ``src/AppKernel.php`` file are merged to the new file.
+          - your changes to the ``src/`` folder are merged, and it contains the custom files.
+          - your changes to the ``composer.json`` file are merged into the new file.
+          - your changes to the ``package.json`` file are merged into the new file.
+          - your changes to configuration files in the ``config/`` folder are merged to the new files.
+          - upgrade the composer dependency and set up the right owner for the retrieved files.
 
             .. code-block:: none
 
@@ -222,22 +219,22 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
 10. Upgrade the platform.
 
-   .. code-block:: none
+    .. code-block:: none
 
-       php bin/console oro:platform:update --env=prod
+        php bin/console oro:platform:update --env=prod
 
 11. Remove the caches.
 
-   .. code-block:: none
+    .. code-block:: none
 
-       php bin/console cache:clear --env=prod
+        php bin/console cache:clear --env=prod
 
-   or, as alternative:
+    or, as an alternative:
 
-   .. code-block:: none
+    .. code-block:: none
 
-       rm -rf var/cache/*
-       php bin/console cache:warmup --env=prod
+        rm -rf var/cache/*
+        php bin/console cache:warmup --env=prod
 
 12. Enable cron.
 
@@ -265,8 +262,7 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
     .. note::
 
-        If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
-        after the upgrade to flush cached bytecode from the previous installation.
+        If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted after the upgrade to flush cached bytecode from the previous installation.
 
 
 .. admonition:: Business Tip
@@ -279,4 +275,3 @@ To retrieve a new version and upgrade your Oro application instance, please exec
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
-

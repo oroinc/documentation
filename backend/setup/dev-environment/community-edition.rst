@@ -7,13 +7,12 @@ Environment Setup for Community Edition
 
 This topic provides a detailed description of the environment setup process for Community Edition of Oro applications.
 
-Before you proceed, please refer to the :ref:`System Requirements <system-requirements>` for the complete list of the recommended environmental components and their supported versions. If you are using the same environment and components, as described in the System Requirements, you can reuse the commands provided in this guide without modification. Otherwise, please adjust them to match the syntax supported by the tools of your choice.
+Before proceeding, please refer to the :ref:`System Requirements <system-requirements>` for the recommended environmental components and their supported versions. If you use the same environment and components described in the System Requirements, you can reuse the commands provided in this guide without modification. Otherwise, please adjust them to match the syntax supported by the tools of your choice.
 
 Prepare a Server with OS
 ------------------------
 
-Get a dedicated physical or virtual server with at least 4Gb RAM with the Oracle Linux v8 installed. Ensure that you
-can run processes as a *root* user or user with *sudo* permissions.
+Get a dedicated physical or virtual server with at least 4Gb RAM with the Oracle Linux v8 installed. Ensure that you can run processes as a *root* user or user with *sudo* permissions.
 
 Environment Setup
 -----------------
@@ -71,7 +70,8 @@ For the production environment, it is strongly recommended to keep *SELinux* ena
 
 .. warning:: The actual SELinux configuration depends on the real production server environment and should be configured by an experienced system administrator.
 
-In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode.
+In this guide, we are loosening the SELinux mode to simplify installation in the local and development environment by setting the permissive option for the **setenforce** mode.
+
 However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
 
 .. code-block:: bash
@@ -87,12 +87,9 @@ For security reasons, we recommend performing all Oro application-related proces
 * **Administrative user** (for example, oroadminuser) --- A user should be able to perform administration operations like application installation, update, etc.
 * **Application user** (for example, nginx) ---  A user should be able to perform runtime operations that require no changes in the application source code files.
 
-In this guide, to simplify installation in the local and development environment, we are loosening
-this requirement and use the superuser permissions to perform Oro application administrative tasks.
-However, for your staging or production environment, please adjust the commands that will follow in the next
-sections to run environment management commands as well as application install and update via a dedicated admin user.
+In this guide, to simplify installation in the local and development environment, we are loosening this requirement and using the superuser permissions to perform Oro application administrative tasks. However, for your staging or production environment, please adjust the commands that will follow in the next sections to run environment management commands as well as application install and update via a dedicated admin user.
 
-Commands for running the web server, php-fpm process, cron commands, background processes, etc., are executed via the dedicated *application user* (*nginx*). Reuse them without modification, if you keep the same username. Otherwise, adjust them accordingly.
+Commands for running the web server, php-fpm process, cron commands, background processes, etc., are executed via the dedicated *application user* (*nginx*). Reuse them without modification if you keep the same username. Otherwise, adjust them accordingly.
 
 Enable Installed Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -111,21 +108,19 @@ Prepare MySQL Database
 Change the Default MySQL Password for Root User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Log in to mysql CLI as the root user and change the password to a new secure one (for example, `P@ssword123`):
+Log in to MySQL CLI as the root user and change the password to a new secure one (for example, `P@ssword123`):
 
 .. code-block:: bash
 
    mysql -uroot
    ALTER USER 'root'@'localhost' IDENTIFIED BY 'P@ssword123';
 
-Replace `P@ssword123` with your secret password. Ensure it contains at least one upper case letter, one lower case letter,
-one digit, and one special character, and has a total length of at least 8 characters.
+Replace `P@ssword123` with your secret password. Ensure it contains at least one upper case letter, one lower case letter, one digit and one special character has a total length of at least 8 characters.
 
 Change the MySQL Server Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is recommended to use SSD to store the application data in the MySQL 8.X database. However, in case you do need to
-use the HDD, set the following configuration parameters in the **/etc/my.cnf** file to avoid performance issues:
+It is recommended to use SSD to store the application data in the MySQL 8.X database. However, if you need to use the HDD, set the following configuration parameters in the **/etc/my.cnf** file to avoid performance issues:
 
 .. code-block:: none
 
@@ -134,17 +129,14 @@ use the HDD, set the following configuration parameters in the **/etc/my.cnf** f
    wait_timeout = 28800
    bind-address = 127.0.0.1
 
-To minimize the risk of long compilations of SQL queries (which sometimes may take hours or even days;
-for details, see `MySQL documentation <https://dev.mysql.com/doc/refman/5.6/en/controlling-query-plan-evaluation.html>`_),
-set `optimizer_search_depth` to `0`:
+To minimize the risk of long compilations of SQL queries (which sometimes may take hours or even days; for details, see `MySQL documentation <https://dev.mysql.com/doc/refman/5.6/en/controlling-query-plan-evaluation.html>`_), set `optimizer_search_depth` to `0`:
 
 .. code-block:: none
 
    [mysqld]
    optimizer_search_depth = 0
 
-To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4` character
-set:
+To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4` character set:
 
 .. code-block:: none
 
@@ -165,7 +157,7 @@ Set the default authentication plugin to mysql_native_password:
    [mysqld]
    default-authentication-plugin=mysql_native_password
 
-For the changes to take effect, restart MySQL server by running:
+For the changes to take effect, restart the MySQL server by running:
 
 .. code-block:: bash
 
@@ -181,17 +173,14 @@ Create a Database for the Application and a Dedicated Database User
    GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' WITH GRANT OPTION;
    FLUSH PRIVILEGES;
 
-Replace `oro_user` with a new username and `P@ssword123` with a more secure password. Ensure that the password contains
-at least one upper case letter, one lower case letter, one digit, one special character, and has the total length of at
-least 8 characters.
+Replace `oro_user` with a new username and `P@ssword123` with a more secure password. Ensure that the password contains at least one upper case letter, one lower case letter, one digit, one special character, and a total length of at least 8 characters.
 
 Configure Web Server
 ^^^^^^^^^^^^^^^^^^^^
 
-For the production mode, it is strongly recommended to use the HTTPS protocol for the Oro application public websites, and reserve the HTTP mode for development and testing purposes only.
+For the production mode, it is strongly recommended to use the HTTPS protocol for the Oro application's public websites and reserve the HTTP mode for development and testing purposes only.
 
-The samples of Nginx configuration for HTTPS and HTTP mode are provided below. Update the
-`/etc/nginx/conf.d/default.conf` file with the content that matches the type of your environment.
+The samples of Nginx configuration for HTTPS and HTTP mode are provided below. Update the `/etc/nginx/conf.d/default.conf` file with the content that matches the type of your environment.
 
 **Sample nginx Configuration for HTTP Websites (Use in Development and Staging Environment Only)**
 
@@ -343,10 +332,9 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
 * Replace **<your-domain-name>** with the configured domain name that would be used for the Oro application.
 * Change *ssl_certificate_key* and *ssl_certificate* with the actual values of your active SSL certificate.
 
-Optionally, you can enable and configure |Apache PageSpeed module| for Nginx to improve
-web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.
+Optionally, you can enable and configure |Apache PageSpeed module| for Nginx to improve web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.
 
-.. note:: If you choose the Apache web server instead of Nginx one, the example of the web server configuration you can find in the :ref:`Web Server Configuration <installation--web-server-configuration>` article.
+.. note:: If you choose the Apache web server instead of the Nginx one, the example of the web server configuration you can find in the :ref:`Web Server Configuration <installation--web-server-configuration>` article.
 
 For the changes to take effect, restart `nginx` by running:
 
@@ -365,15 +353,14 @@ If you are going to use the Oro application in the local environment only, modif
 
 After this change, the <your-domain-name> URLs opened in the local environment are handled by the local webserver.
 
-To make your Oro application accessible from the remote locations, configure a DNS server to point your domain name to your server IP address.
+To make your Oro application accessible from remote locations, configure a DNS server to point your domain name to your server IP address.
 
 Configure PHP
 ^^^^^^^^^^^^^
 
 To configure PHP, perform the following changes in the configuration files:
 
-* In the `www.conf` file (*/etc/php-fpm.d/www.conf*) --- Change the user and the group
-  for PHP-FPM to *nginx* and set recommended values for other parameters.
+* In the `www.conf` file (*/etc/php-fpm.d/www.conf*) --- Change the user and the group for PHP-FPM to *nginx* and set recommended values for other parameters.
 
   .. code-block:: none
 
@@ -409,7 +396,7 @@ For the changes to take effect, restart PHP-FPM by running:
 Configure Storage For Import Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-During the import, product images and File entity field files can be imported by a path to an image or a file.
+Product images and File entity field files can be imported by a path to an image or a file during the import.
 
 This path can be either:
 
@@ -419,8 +406,7 @@ This path can be either:
 
 This path can be reconfigured with |Gaufrette| adapter configuration.
 
-For example, to change the path location, add a new configuration of the **import_files** |Gaufrette| adapter
-in the `Resources/config/oro/app.yml` file of your bundle:
+For example, to change the path location, add a new configuration of the **import_files** |Gaufrette| adapter in the `Resources/config/oro/app.yml` file of your bundle:
 
 .. code-block:: yaml
 
@@ -430,7 +416,7 @@ in the `Resources/config/oro/app.yml` file of your bundle:
                 local:
                     directory: '/new/path/to/import_files'
 
-Use Gaufrette filesystem abstraction layer as storage, this configuration can be changed to use any supported filesystem
+Use the Gaufrette filesystem abstraction layer as storage, this configuration can be changed to use any supported filesystem
 adapter supported by |Gaufrette| library.
 
 For example, the configuration to use :ref:`GridFS <bundle-docs-platform-gridfs-config-bundle>` storage can be the following:

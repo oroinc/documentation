@@ -17,7 +17,7 @@ Get Application Source Code
 
 There are eight base applications to choose from.
 
-Create your new Oro application project with composer by running one of commands below, depending on the base application you want to install:
+Create your new Oro application project with the composer by running one of the commands below, depending on the base application you want to install:
 
 .. code-block:: none
 
@@ -42,13 +42,10 @@ Create your new Oro application project with composer by running one of commands
 
 * This command creates a new directory called `my_project_name/` that contains an empty project. An absolute path to the directory will be used in the following steps and will be referred to as **<application-root-folder>** further in this topic.
 
-
 .. note::
-        Alternatively, you can download and unpack the archive with the application source code or use git instead of using composer. Please, refer to the dedicated article :ref:`Get the Oro Application Source Code <installation--get-files>` for more details.
+        Alternatively, you can download and unpack the archive with the application source code or use git instead of the composer. Please, refer to the dedicated article :ref:`Get the Oro Application Source Code <installation--get-files>` for more details.
 
-Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) that
-are saved into the ``config/parameters.yml`` file. You can find the description for every parameter in the
-:ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
+Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) saved into the ``config/parameters.yml`` file. You can find the description for every parameter in the :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
 
 Configure WebSocket Parameters
 ------------------------------
@@ -73,26 +70,23 @@ For more information on these parameters, see |OroSyncBundle documentation|.
 Configure File Storages
 -----------------------
 
-By default an application will be installed with local file systems as :ref:`File Storages <backend-file-storage>`
-with predefined system paths.
+By default, an application will be installed with local file systems as :ref:`File Storages <backend-file-storage>` with predefined system paths.
 
-To change this configuration, please follow the :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>`
-to lean how this configuration can be changed.
+To change this configuration, please follow the :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>` to learn how you can change this configuration.
 
 Configure Application For Media Storage as a Sub-Folder
 -------------------------------------------------------
 
 The application's default `public/media` folder can have many files.
 
-To make better use of the disk space, you can decide to move files to external storage (see :ref:`File Storages <backend-file-storage>` and :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>` topics to learn how to switch to the external storage), or use another volume or directory as a file storage.
+To make better use of the disk space, you can move files to an external storage or use another volume or directory as file storage. See :ref:`File Storages <backend-file-storage>` and :ref:`Adapters Configuration <backend-file-storage--adapters-configuration>` topics to learn how to switch to the external storage.
 
 If the customizer decides to use another volume or directory as file storage, they can do it in two ways:
 
 - with a symlink
 - by binding one directory path (the folder outside your web root) to another
 
-If using symlink, add an additional configuration of the `data_root` parameter of the LiipImagine bundle.
-For example, if you want files to be located in `/home/public/media` directory, add the following configuration:
+If you use a symlink, add an additional configuration of the `data_root` parameter of the LiipImagine bundle. For example, if you want files to be located in the `/home/public/media` directory, add the following configuration:
 
 .. code-block:: yaml
 
@@ -102,7 +96,7 @@ For example, if you want files to be located in `/home/public/media` directory, 
                 filesystem:
                     data_root: "/home/public"
 
-You can find more info about `data_root` parameter configuration in |LiipImagineBundle Data Roots Parameter| documentation.
+You can find more info about the `data_root` parameter configuration in |LiipImagineBundle Data Roots Parameter| documentation.
 
 
 Install Oro Application
@@ -116,8 +110,7 @@ To start the installation of your Oro application, run the following command:
 
 Follow the on-screen instructions in the console.
 
-.. note:: You will be prompted to choose the installation with or without demo data. If you discard demo data during installation,
-   you can install it later by running the following command:
+.. note:: You will be prompted to choose the installation with or without demo data. If you discard demo data during installation, you can install it later by running the following command:
 
    .. code-block:: none
 
@@ -135,7 +128,7 @@ Below application directories must be writable both by the web server and the co
 * public/media
 * public/js
 
-If your operation system supports ``setfacl`` utility, use the following script to determine your web server user and grant the needed permissions:
+If your operating system supports the ``setfacl`` utility, use the following script to determine your web server user and grant the needed permissions:
 
 .. code-block:: none
 
@@ -147,13 +140,12 @@ If your operation system supports ``setfacl`` utility, use the following script 
    sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX public/{media,js}
    sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX public/{media,js}
 
-.. note:: The first setfacl command sets permissions for future files and folders, while the second one sets permissions on the existing files and folders. Both of these commands assign permissions for the system user and the Apache user.
-   ``setfacl`` isn't available on NFS mount points. However, storing cache and logs over NFS is strongly discouraged for performance reasons.
+.. note:: The first setfacl command sets permissions for future files and folders, while the second sets permissions for the existing files and folders. Both commands assign permissions for the system user and the Apache user. Be aware that ``setfacl`` is not available on NFS mount points. However, storing cache and logs over NFS is strongly discouraged for performance reasons.
 
 Schedule Periodical Command Execution
 -------------------------------------
 
-To schedule execution of the *oro:cron* command every-minute, add the following line to crontab file:
+To schedule the execution of the *oro:cron* command every minute, add the following line to the crontab file:
 
 .. code-block:: none
 
@@ -167,9 +159,9 @@ Configure and Run Required Background Processes
 The required background processes are the following:
 
 * **message queue consumer** --- Performs resource-consuming tasks in the background.
-* **web socket server** --- Manages real-time messages between the application server and user's browser.
+* **web socket server** --- Manages real-time messages between the application server and the user's browser.
 
-It is crucial to keep these two background processes running. To maintain their constant availability, it is recommended to use |Supervisord| or another supervising tool.
+It is crucial to keep these two background processes running. To maintain their constant availability, using |Supervisord| or another supervising tool is recommended.
 
 To configure Supervisord, use your root privileges.
 
@@ -207,7 +199,7 @@ Add the following configuration sections to the */etc/supervisord.conf* config f
 Restart Supervisord
 ^^^^^^^^^^^^^^^^^^^
 
-To restart supervisor, run:
+To restart the supervisor, run:
 
 .. code-block:: none
 
@@ -236,9 +228,7 @@ You should see information similar to what is illustrated below:
 Configure OAuth Bundle
 ~~~~~~~~~~~~~~~~~~~~~~
 
-If you use an OAuth Bundle to authenticate with OAuth2 protocol to API resources, please follow
-the :ref:`OroOAuth2ServerBundle documentation <bundle-docs-platform-oauth2-server-bundle--configuration>`
-to lean how to configure the bundle, generate the encryption key and private and public keys.
+If you use an OAuth Bundle to authenticate with OAuth2 protocol to API resources, please follow the :ref:`OroOAuth2ServerBundle documentation <bundle-docs-platform-oauth2-server-bundle--configuration>` to learn how to configure the bundle and generate the encryption, private, and public keys.
 
 Congratulations! You've Successfully Installed Your Oro Application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

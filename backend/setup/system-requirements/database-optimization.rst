@@ -3,9 +3,6 @@
 MySQL Optimization
 ==================
 
-Overview
---------
-
 This article contains descriptions of some known issues and recipes that might help to get the best
 application performance.
 
@@ -89,10 +86,10 @@ put the following configuration into the **config/config.yml** file:
                 charset: utf8mb4
                 collate: utf8mb4_unicode_ci
 
-.. note:: If you use the version of MySQL that is older than 5.7, also add the `row_format: DYNAMIC` option to the
+.. note:: If you use a version of MySQL that is older than 5.7, also add the `row_format: DYNAMIC` option to the
     `default_table_options` section.
 
-For more details, please see the |Setting up the Database to be UTF8| article.
+Please see the |Setting up the Database to be UTF8| article for more details.
 
 
 Block Nested Loop (BNL) in MySQL 5.6 and later
@@ -100,10 +97,10 @@ Block Nested Loop (BNL) in MySQL 5.6 and later
 
 MySQL 5.6 has a lot of improvements in the query optimizer, but unfortunately, some queries work significantly
 slower than in MySQL 5.5. In case of large amounts of data in the database, it is possible to encounter performance issues
-related to the new query optimizer. One of the possible solutions might be disabling ``block_nested_loop`` option.
+related to the new query optimizer. One of the possible solutions might be disabling the ``block_nested_loop`` option.
 This can be achieved in two ways:
 
-    - If a modification of MySQL configuration file is granted, add the following under the ``mysqld`` section
+    - If a modification of the MySQL configuration file is granted, add the following under the ``mysqld`` section
 
       .. code-block:: cfg
 

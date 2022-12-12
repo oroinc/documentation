@@ -19,10 +19,10 @@ These methods are detailed below.
 Method 1: Create a Project with Composer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Make sure you are using PHP >=8.1 and have Composer installed. If you do not, use the Composer
+1. Make sure you use PHP >=8.1 and have Composer installed. If you do not, use the Composer
    installation process described in the |Composer installation documentation|.
 
-2. Create your new Oro application project with Composer by running one of commands below, depending on the base application you want to install:
+2. Create your new Oro application project with Composer by running one of the commands below, depending on the base application you want to install:
 
    .. code-block:: none
 
@@ -53,7 +53,7 @@ Method 1: Create a Project with Composer
 Method 2: Use the GitHub Repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Clone the Oro application GitHub repository by running one of commands below:
+1. Clone the Oro application GitHub repository by running one of the commands below:
 
    .. code-block:: none
 
@@ -76,7 +76,7 @@ Method 2: Use the GitHub Repository
 
    * Replace the ``5.0.0`` with the version to download.
 
-   * ``my_project_name`` is the directory to clone the application source files into.
+   * ``my_project_name`` is the directory into which you need to clone the application source files.
 
 2. Run the ``composer install`` command with ``--prefer-dist --no-dev`` parameter to install all Oro application
    dependencies:
@@ -105,11 +105,11 @@ Method 3: Download the Source Code Archive
    .. note:: You can also download the **virtual machine** to quickly :ref:`deploy the application in the virtual sandbox environment <virtual_machine_deployment>`.
 
    .. image:: /img/backend/setup/installation/download_orocommerce.png
-      :alt: Download the latest version of source code screen from the website
+      :alt: Download the latest version of the source code screen from the website
       :align: center
       :scale: 50%
 
-   Then extract the source files. For example, on a Linux based OS run:
+   Then extract the source files. For example, on a Linux-based OS run:
 
    .. code-block:: none
 
@@ -122,3 +122,4 @@ Method 3: Download the Source Code Archive
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
+
