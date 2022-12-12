@@ -53,6 +53,7 @@ You can add further configuration using the same method, such as allowed protoco
 Here is an example of how to allow attribute ``title`` for the ``img`` tag in secure (default) mode:
 
 .. code-block:: yaml
+
    oro_form:
        html_purifier_modes:
            default:
