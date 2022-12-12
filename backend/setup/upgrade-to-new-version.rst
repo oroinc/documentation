@@ -94,13 +94,14 @@ To retrieve a new version and upgrade your Oro application instance, execute the
        To speed up the update process, consider using ``--schedule-search-reindexation`` or ``--skip-search-reindexation`` option:
 
        * ``--schedule-search-reindexation`` --- postpone the search reindexation process until the message queue consumer is started (on step 12 below).
-       * ``--skip-search-reindexation`` --- skip search reindexation. Later, you can start it manually using commands
-        `oro:search:reindex` to update the search index for the specified entities and `oro:website-search:reindex` to rebuild the storefront search index.
+       * ``--skip-search-reindexation`` --- skip search reindexation. Later, you can start it manually using commands `oro:search:reindex` to update the search index for the specified entities and `oro:website-search:reindex` to rebuild the storefront search index.
+        
          See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
 
     .. note::
 
         When the following options are not provided, they are set up automatically for the ``test`` environment:
+        
             * --force
             * --skip-translations
             * --timeout=600
@@ -196,6 +197,7 @@ To retrieve a new version and upgrade your Oro application instance, please exec
    .. note::
 
       If you have any customization or third-party extensions installed, make sure that:
+      
           - your changes to the ``src/AppKernel.php`` file are merged to the new file.
           - your changes to the ``src/`` folder are merged, and it contains the custom files.
           - your changes to the ``composer.json`` file are merged into the new file.
