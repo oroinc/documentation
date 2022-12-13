@@ -597,3 +597,7 @@ Images
 .. |PaintBrush| raw:: html
 
    <i class="fas fa-paint-brush" aria-hidden="true"></i>
+
+.. |IcCapture| raw:: html
+
+   <i class="far fa-credit-card" aria-hidden="true"></i>

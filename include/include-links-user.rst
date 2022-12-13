@@ -896,3 +896,7 @@ Links (User)
 .. |purchaseGA4| raw:: html
 
    <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#purchase" target="_blank">purchase</a>
+
+.. |Stripe Integration| raw:: html
+
+   <a href="https://packagist.oroinc.com/#oro/commerce-stripe" target="_blank">Stripe Integration</a>

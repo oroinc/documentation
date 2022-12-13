@@ -18,6 +18,7 @@ Out-of-the-box, you can create an integration with the following third-party pro
 * :ref:`UPS <doc--integrations--ups>`
 * :ref:`FedEx <doc--integrations--fedex>`
 * :ref:`DPD <doc--integrations--dpd>`
+* :ref:`Multiple Shipping <doc--integrations--multi-shipping>`
 
 .. hint:: Check out |OroCommerce's Extensions Store| to download other shipping services that you can pair with your OroCommerce applications.
 
@@ -65,3 +66,4 @@ The shipping methods created due to this integration are no longer usable in Oro
    UPS Shipping Integration <ups>
    FedEx Shipping Integration <fedex>
    DPD Shipping Integration <dpd>
+   Multiple Shipping <multi-shipping>

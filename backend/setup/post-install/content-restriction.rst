@@ -19,8 +19,7 @@ There are two ways to do it:
 
 Create an app.yml file in a bundle of your choice, and change the content restrictions' mode.
 
-.. hint::
-         See :ref:`Add application configuration settings from any bundle <bundle-docs-platform-platform-bundle-add-config-settings>` for more information on adding settings to the application configuration from your bundle.
+.. hint:: See :ref:`Add application configuration settings from any bundle <bundle-docs-platform-platform-bundle-add-config-settings>` for more information on adding settings to the application configuration from your bundle.
 
 In the example below, `secure` mode has been changed to `selective`:
 

@@ -38,6 +38,7 @@ Check the following integrations that can be enabled/disabled and configured in 
   * :ref:`UPS <doc--integrations--ups>`
   * :ref:`FedEx <doc--integrations--fedex>`
   * :ref:`DPD <doc--integrations--dpd>`
+  * :ref:`Multiple Shipping <doc--integrations--multi-shipping>`
 
 * :ref:`Google Tag Manager Integration <gtm-ga-4-integration>`
 * :ref:`Dotdigital Integration <user-guide-dotmailer-overview>`

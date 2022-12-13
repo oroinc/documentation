@@ -84,6 +84,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Contacts <sys--conf--commerce--sales--contacts-website>`
     * :ref:`Checkout <user-guide--system-configuration--commerce-sales-checkout-website>`
     * :ref:`Orders History <website-commerce--configuration--sales-order-history>`
+    * :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping-website>`
     * :ref:`Quotes <sys--websites-quotes>`
 
   * Catalog
