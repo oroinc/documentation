@@ -69,6 +69,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Checkout <user-guide--system-configuration--commerce-sales-organization>`
     * :ref:`Request for Quote <user-guide--system-configuration--commerce-sales--rfq--organization>`
     * :ref:`Orders History <organization-commerce--configuration--sales-order-history>`
+    * :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping-org>`
     * :ref:`Quotes <sys--organization-quotes>`
     * :ref:`Promotions <sys--conf--commerce--sales--promotions-organization>`
 

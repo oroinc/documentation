@@ -938,3 +938,6 @@ Links (User)
 
    <a href="https://developers.google.com/analytics/devguides/collection/ua/gtm/enhanced-ecommerce#purchases" target="_blank">purchase</a>
 
+.. |Stripe Integration| raw:: html
+
+   <a href="https://packagist.oroinc.com/#oro/commerce-stripe" target="_blank">Stripe Integration</a>

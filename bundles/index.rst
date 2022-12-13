@@ -199,6 +199,8 @@ CRM Bundles
    MakerBundle <extensions/MakerBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
+   StripeBundle <extensions/StripeBundle/index>
+
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin

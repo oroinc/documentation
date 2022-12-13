@@ -85,6 +85,8 @@ To enable them for your application, you must activate one of the :ref:`default 
 .. image:: /user/img/concept-guides/checkout/checkout_workflow.png
    :alt: A list of available checkout workflows
 
+.. _checkout-guide-multi-page:
+
 **A multi-page checkout** is a standard default checkout. The whole checkout process is split into multiple steps to provide a customer with a clean, minimalistic design that gives the impression of the checkout process to be simple and fast.
 
 .. image:: /user/img/concept-guides/checkout/multi_page_checkout.png

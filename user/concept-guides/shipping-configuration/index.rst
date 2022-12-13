@@ -24,6 +24,8 @@ Shipping Integration
 
 **Shipping integrations** allow sellers to enable out-of-the-box and third-party shipping methods to offer shipping services when orders are placed through OroCommerce. For example you can integrate  UPS shipping functionality into your OroCommerce store which would add a number of UPS shipping services, such as UPS 2nd Day Air, UPS Standard, and others. Configuring integration with shipping provides, you can also add shipping services to customer quotes and manage them in the OroCommerce back-office.
 
+.. note:: You must have at least one shipping method available for your customers to allow them to proceed through the checkout. Without a shipping method, the buyer receives an error message asking them to contact the seller to complete the order.
+
 OroCommerce works with the following shipping methods out-of-the-box:
 
 * :ref:`Flat Rate <doc--integrations--flat-rate>`
@@ -46,7 +48,13 @@ OroCommerce works with the following shipping methods out-of-the-box:
 
   DPD is an international parcel delivery service. To set up a DPD integration, contact DPD support to receive credentials for the account activation.
 
-.. note:: You must have at least one shipping method available for your customers to allow them to proceed through the checkout. Without a shipping method, the buyer receives an error message asking them to contact the seller to complete the order.
+
+* :ref:`Multiple Shipping <user-guide--system-configuration--commerce-sales-multi-shipping>`
+
+  .. hint:: The Multiple Shipping feature is available starting from OroCommerce v5.0.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+  Multi shipping enables storefront customers to select different shipping methods for different line items. To set up a multi shipping integration, enable the functionality in the system configuration first.
+
 
 .. hint:: Check out |OroCommerce's Extensions Store| to download other shipping services that you can pair with your OroCommerce applications.
 

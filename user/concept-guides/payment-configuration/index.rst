@@ -60,11 +60,11 @@ OroCommerce works with the following payment methods:
 
 .. hint:: The default OroCommerce application includes the following payment methods out-of-the-box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extensions Store| to download other payment extensions that you can pair with your OroCommerce applications.
 
-..  :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`
+* :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`
 
-.. .. hint:: The Stripe payment service is available starting from Orocommerce v5.0.5. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The Stripe payment service is available starting from Orocommerce v5.0.8. To check which application version you are running, see the :ref:`system information <system-information>`.
 
-.. Stripe is an integrated suite of payment products that powers online payments and help companies detect and fight the fraud on the website.
+Stripe is an integrated suite of payment products that powers online payments and help companies detect and fight the fraud on the website. Stripe also supports order splitting, enabling you to capture, cancel, or refund (full or partially) payments for each sub-order separately.
 
 Payment Rules
 -------------

@@ -80,6 +80,7 @@ Learn how to enable the quick order form, promotions, guest shopping lists, esta
 * :ref:`Request for Quote <configuration--guide--commerce--configuration--sales-rfq>`
 * :ref:`Checkout <user-guide--system-configuration--commerce-sales-checkout>`
 * :ref:`Order History (Open Orders) <configuration--guide--commerce--configuration--sales-order-history>`
+* :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping>`
 * :ref:`Contacts <sys--conf--commerce--sales--contacts>`
 * :ref:`Quotes <sys--conf--commerce--guest--enable--guest_quotes>`
 * :ref:`Shopping List <configuration-shopping-list>`
