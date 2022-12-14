@@ -140,6 +140,10 @@ necessary organization to work with data in each one of them.
 
 When adding a new organization, remember to update the :ref:`organization's configuration settings <user-management-organizations>` (including its owner and a :ref:`warehouse <warehouses-organization>`).
 
+
+.. _user-guide-getting-started-switch-organization:
+
+
 Switching Between Organizations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

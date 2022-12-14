@@ -3,11 +3,10 @@
 
 .. _user-guide-user-management-login-attempts:
 
-Login Attempts
-==============
+Back-Office User Login Attempts
+===============================
 
-
-.. hint:: The feature is available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: Starting from v5.0.7, the Login Attempts page is available under the global :ref:`organization <user-guide-getting-started-switch-organization>` only, unless there are no organizations marked as global in the Oro application. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 To simplify investigation of any security-related incidents, the administrator can check the successful and unsuccessful
 login attempts.

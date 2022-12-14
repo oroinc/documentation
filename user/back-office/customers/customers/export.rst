@@ -8,7 +8,7 @@ Export Customers
 To export customer details in a .csv file:
 
 1. Navigate to **Customers > Customers** in the main menu.
-2. To export information on all customers, click **Export** on the top right and select the required option from the dropdown: **Export** (Customers) or **Export Customer Addresses**.
+2. To export information on all customers, click **Export** on the top right and select the required option from the dropdown: **Export** (Customers) or **Export Customer Addresses** (available since OroCommerce v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`).
 
    .. image:: /user/img/customers/customers/export-customers.png
       :alt: Export dropdown options
