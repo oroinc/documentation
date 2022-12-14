@@ -32,7 +32,7 @@ Infrastructure-related configuration parameters are stored in the *config/parame
 Default Configuration Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Default configuration options for the Oro application are defined in the ``config/parameters.yml.dist`` file. Some options have inline values, others refer to environment variables, therefore they can be set and changed in runtime without application cache rebuild. Default values for environment variables are provided at the end of the ``config/parameters.yml`` files, with the parameter names in a format ``env(ENVIRONMENT_VARIABLE_NAME)``.
+Default configuration options for the Oro application are defined in the ``config/parameters.yml.dist`` file. Some options have inline values, and others refer to environment variables, therefore they can be set and changed in runtime without application cache rebuild. Default values for environment variables are provided at the end of the ``config/parameters.yml`` files, with the parameter names in the format ``env(ENVIRONMENT_VARIABLE_NAME)``.
 
 .. code-block:: yaml
 
@@ -137,7 +137,7 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
 Environment Variables
 ^^^^^^^^^^^^^^^^^^^^^
 
-An environment variable is a variable whose value is set outside the application, typically through a functionality built into the operating system. You can find the list of all the infrastructure-related environment variables available in the application in the config/parameters.yml file.
+An environment variable is a variable with a value outside the application, typically through a functionality built into the operating system. You can find the list of all the infrastructure-related environment variables available in the application in the config/parameters.yml file.
 
 In the above parameters.yml file example, the ``database_driver`` parameter value is provided directly in the YAML file and cannot be changed in runtime without the application cache rebuild, while the ``database_host`` parameter can be set in runtime by the environment variable named ``ORO_DB_HOST``.
 

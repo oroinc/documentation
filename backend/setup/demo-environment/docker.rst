@@ -13,7 +13,7 @@ Prerequisite
 Run Application
 ---------------
 
-1. Download the repository with docker compose configuration file
+1. Download the repository with a docker-compose configuration file.
 
    .. code-block:: none
 
@@ -52,7 +52,7 @@ Run Application
 
       ORO_IMAGE=docker.io/oroinc/crm-application docker-compose up -d
 
-   You can also select a different tag (version). For example, set variable `ORO_APP_VERSION=5.0` in `.env` or in the command line.
+   You can also select a different tag (version). For example, set the variable `ORO_APP_VERSION=5.0` in `.env` or the command line.
 
    To track the logs from the php-fpm container, run `docker-compose logs -f php-fpm`. To get the list of containers, run: `docker-compose ps`.
 
@@ -67,7 +67,7 @@ Run Application
 Access the Mail Catcher
 -----------------------
 
-|Smtp service| is additionally launched so you could send emails from the application. It receives all mail and a web interface that enables you to view it and perform the required actions. The web interface for the mail catcher is available on port `8025`. You can open it by URL ``http://localhost:8025``.
+|Smtp service| is additionally launched so you can send emails from the application. It receives all mail and has a web interface that enables you to view it and perform the required actions. The web interface for the mail catcher is available on port `8025`. You can open it by URL ``http://localhost:8025``.
 
 Stop the Application
 --------------------
@@ -84,7 +84,7 @@ If you deployed the application before, pull up fresh images with `docker-compos
 About this Project
 ------------------
 
-This repository provides a Docker Compose configuration file (docker-compose.yaml) and demonstrate how you can run different applications and required services in containers. We provide images with the Community Edition of Oro applications in the public Docker Hub.
+This repository provides a Docker Compose configuration file (docker-compose.yaml) and demonstrates how you can run different applications and required services in containers. We provide images with the Community Edition of Oro applications in the public Docker Hub.
 
 .. important:: This deployment is NOT intended for a production environment.
 
@@ -95,8 +95,8 @@ This repository provides a Docker Compose configuration file (docker-compose.yam
 * OroPlatform Community Edition: |docker.io/oroinc/platform-application|
 * OroCommerce Community Edition for Germany: |docker.io/oroinc/commerce-crm-application-de|
 
-One image is used to run containers in several roles: web server, php-fpm, consumer, websocket server, cron service.
-All these services must be running, and MySQL database must be prepared for a full-fledged application.
+One image is used to run containers in several roles: web server, php-fpm, consumer, WebSocket server, and cron service.
+All these services must be running, and the MySQL database must be prepared for a full-fledged application.
 
 
 .. admonition:: Business Tip

@@ -125,7 +125,7 @@ If you are using Apache as your web server, you already have the necessary confi
 However, this configuration relies on the ``mod_deflate`` and ``mod_headers`` modules that are needed for the compression
 and caching to work. Ensure these modules are enabled in Apache configuration.
 
-1. To enable compression, ensure that ``mod_deflate`` module is loaded in your Apache config file as illustrated below:
+1. To enable compression, ensure that the ``mod_deflate`` module is loaded in your Apache config file as illustrated below:
 
    .. code-block:: none
 
@@ -133,20 +133,20 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
 
    .. note:: Apache configuration is usually located at ``/etc/apache2/httpd.conf``.
 
-   The out of the box configuration for the compression in the ``.htaccess`` file is following:
+   The out-of-the-box configuration for the compression in the ``.htaccess`` file is following:
 
    .. code-block:: none
 
-      <IfModule mod_deflate.c> 
-          AddOutputFilterByType DEFLATE text/html text/plain 
-          AddOutputFilterByType DEFLATE text/css 
-          AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript 
-          AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml 
-          AddOutputFilterByType DEFLATE image/x-icon 
-          AddOutputFilterByType DEFLATE image/svg+xml 
-          AddOutputFilterByType DEFLATE application/rss+xml 
-          AddOutputFilterByType DEFLATE application/x-font application/x-font-truetype application/x-font-ttf application/x-font-otf application/x-font-opentype application/vnd.ms-fontobject font/ttf font/otf font/opentype 
-          BrowserMatch \bMSIE !no-gzip !gzip-only-text/html 
+      <IfModule mod_deflate.c>
+          AddOutputFilterByType DEFLATE text/html text/plain
+          AddOutputFilterByType DEFLATE text/css
+          AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+          AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml
+          AddOutputFilterByType DEFLATE image/x-icon
+          AddOutputFilterByType DEFLATE image/svg+xml
+          AddOutputFilterByType DEFLATE application/rss+xml
+          AddOutputFilterByType DEFLATE application/x-font application/x-font-truetype application/x-font-ttf application/x-font-otf application/x-font-opentype application/vnd.ms-fontobject font/ttf font/otf font/opentype
+          BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
       </IfModule>
 
 2.  To install ``Pagespeed`` module for Apache, follow the guidance on |installing from Apache-only packages|.
@@ -165,21 +165,21 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
 
       LoadModule headers_module libexec/apache2/mod_headers.so
 
-   The out of the box configuration for caching in the ``.htaccess`` file is following:
+   The out-of-the-box configuration for caching in the ``.htaccess`` file is the following:
 
    .. code-block::xml
 
       <IfModule mod_headers.c>
-           # One week for css and js 
-          <filesMatch ".(css|js)$"> 
-              Header set Cache-Control "max-age=604800, public" 
-          </filesMatch>  
+           # One week for css and js
+          <filesMatch ".(css|js)$">
+              Header set Cache-Control "max-age=604800, public"
+          </filesMatch>
 
           # Three weeks for images, fonts, icons, video, audio etc.
-           <filesMatch ".(jpg|jpeg|gif|png|ico|tiff|woff|eot|ttf|svg|svgz|mp4|ogg|ogv|webm|swf|flv)$"> 
+           <filesMatch ".(jpg|jpeg|gif|png|ico|tiff|woff|eot|ttf|svg|svgz|mp4|ogg|ogv|webm|swf|flv)$">
               Header set Cache-Control "max-age=1814400, public"
-           </filesMatch> 
-      </IfModule> 
+           </filesMatch>
+      </IfModule>
 
 Optimize Elasticsearch
 ----------------------
@@ -204,7 +204,7 @@ To tune for indexing speed, you can try the following recommendations:
 
 See more information on optimizing indexing speed on |Elasticsearch website|.
 
-Also, keep in mind that it is not recommended to use Elasticsearch with MySQL, PostgreSQL, Redis and/or Rabbit on one server to avoid slow performance.
+Also, keep in mind that using Elasticsearch with MySQL, PostgreSQL, Redis and/or Rabbit on one server is not recommended to avoid slow performance.
 
 Optimize Redis
 --------------
@@ -257,11 +257,11 @@ You can find more information on memory optimization on |Redis website|.
 Optimize PostgreSQL
 -------------------
 
-The following recommendations that can highly improve PostgreSQL performance:
+The following recommendations can highly improve PostgreSQL performance:
 
 * Increase the *shared_buffers* value in postgresql.conf. The *shared_buffers* parameter defines how much dedicated memory PostgreSQL uses for the cache. The recommended value is 25% of your total machine RAM, but the value can be lower or higher depending on your system configuration. Try finding the right balance by altering the values.
 * Increase the *effective_cache_size* value in postgresql.conf. The parameter specifies the amount of memory available in the OS and PostgreSQL buffer caches. Usually, it should be more than 50% of the total memory. Otherwise, it may slow down the performance.
-* Increase the *work_mem* value, if you need to do complex sorting. But keep in mind that setting this parameter globally can cause significant memory usage. So it is recommended to modify the option at the session level.
+* Increase the *work_mem* value if you need to do complex sorting. But keep in mind that setting this parameter globally can cause significant memory usage. So it is recommended to modify the option at the session level.
 * Increase the *checkpoint_segments* value to make checkpoints less frequent and less resource-consuming.
 * Increase the *max_fsm_pages* and *max_fsm_relations* value. In a busy database, set the parameter to higher than 1000.
 * Reduce the *random_page_cost* value. It encourages the query optimizer to use random access index scans.
@@ -284,10 +284,10 @@ You can get better performance and minimize storage space by using some of the t
 
 2. Optimize at the hardware level. System bottlenecks typically arise from these sources:
 
-   * Disk seeks. To optimize seek time, distribute the data onto more than one disk.
-   * Disk reading and writing. When the disk is at the correct position, we need to read or write the data. With modern disks, one disk delivers at least 10–20MB/s throughput. This is easier to optimize than seeks because you can read in parallel from multiple disks.
-   * CPU cycles. Having large tables compared to the amount of memory is the most common limiting factor. But with small tables, speed is usually not the problem.
-   * Memory bandwidth. When the CPU needs more data than can fit in the CPU cache, the main memory bandwidth may become a bottleneck.
+   * Disk seeks. To optimize the seek time, distribute the data onto more than one disk.
+   * Disk reading and writing. When the disk is in the correct position, we need to read or write the data. With modern disks, one disk delivers at least 10–20MB/s throughput. This is easier to optimize than seeks because you can read in parallel from multiple disks.
+   * CPU cycles. The most common limiting factor is having large tables compared to the amount of memory. But with small tables, speed is usually not the problem.
+   * Memory bandwidth. The main memory bandwidth may become a bottleneck when the CPU needs more data than can fit in the CPU cache.
 
 More recommendations are available in :ref:`MySQL <mysql-optimization>` topic in Oro documentation.
 
@@ -319,7 +319,7 @@ You can make Symfony faster if you optimize your servers and applications:
      ; php.ini
      opcache.validate_timestamps=0
 
-  After each deploy, empty and regenerate the cache of OPcache.
+  After each deployment, empty and regenerate the cache of OPcache.
 
 * Configure the PHP realpath cache
 
@@ -340,7 +340,7 @@ You can make Symfony faster if you optimize your servers and applications:
 
      composer dump-autoload --optimize --no-dev --classmap-authoritative
 
-For more information on Symfony performance optimization, see the list of all recommendations on |Symfony website|.
+For more information on Symfony performance optimization, see the list of all recommendations on the |Symfony website|.
 
 Improve Doctrine Performance
 ----------------------------
@@ -356,17 +356,17 @@ There are several things you can do to improve Doctrine performance:
      $query->setFetchMode("MyProject\User", "address", \Doctrine\ORM\Mapping\ClassMetadata::FETCH_EAGER);
      $query->execute();
 
-More recommendations on improving Doctrine performance are available on |Doctrine website|.
+More recommendations on improving Doctrine performance are available on the |Doctrine website|.
 
 Optimize Message Queue Consumers
 --------------------------------
 
-MQ consumers may take up quite a lot of CPU time. To avoid this, consider moving consumers to a separate node, or have enough CPU cores in the main node.
+MQ consumers can take up a lot of CPU time. To avoid this, consider moving consumers to a separate node, or have enough CPU cores in the main node.
 
 Use Blackfire to Profile Requests
 ---------------------------------
 
-You can use |Blackfire| at any stage of application's lifecycle to gather data about the behavior of your current codebase, analyze profiles and optimize the code.
+You can use |Blackfire| at any stage of the application's lifecycle to gather data about the behavior of your current codebase, analyze profiles and optimize the code.
 
 Using Blackfire, you can find and fix performance issues by using the following methods:
 

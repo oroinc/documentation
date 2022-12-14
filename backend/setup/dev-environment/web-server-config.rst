@@ -31,7 +31,7 @@ Apache 2.4
         </VirtualHost>
 
 * Replace **<application-root-folder>** with the absolute path to the Oro application.
-* Replace **<your-domain-name>** with the configured domain name that is used for the Oro application.
+* Replace **<your-domain-name>** with the configured domain name used for the Oro application.
 
 .. note:: Please make sure mod_rewrite and mod_headers are enabled.
 
@@ -71,7 +71,7 @@ Nginx
         }
 
 * Replace **<application-root-folder>** with the absolute path to the Oro application.
-* Replace **<your-domain-name>** with the configured domain name that is used for the Oro application.
+* Replace **<your-domain-name>** with the configured domain name used for the Oro application.
 
 .. caution::
 
@@ -83,7 +83,7 @@ Nginx
 
 .. admonition:: Business Tip
 
-    Thinking to go digital? Explore our thorough platform comparison guide to narrow down your selection of |B2B eCommerce solutions|.
+    Thinking of going digital? Explore our thorough platform comparison guide to narrow down your selection of |B2B eCommerce solutions|.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

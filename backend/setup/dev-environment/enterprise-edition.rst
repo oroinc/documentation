@@ -123,8 +123,7 @@ For the production environment, it is strongly recommended to keep *SELinux* ena
 
 .. warning:: The actual SELinux configuration depends on the real production server environment and should be configured by an experienced system administrator.
 
-In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode.
-However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
+In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode. However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
 
 .. code-block:: bash
 
@@ -139,10 +138,7 @@ For security reasons, we recommend performing all Oro application-related proces
 * **Administrative user** (for example, oroadminuser) --- A user should be able to perform administration operations like application installation, update, etc.
 * **Application user** (for example, nginx) ---  A user should be able to perform runtime operations that require no changes in the application source code files.
 
-In this guide, to simplify installation in the local and development environment, we are loosening
-this requirement and use the superuser permissions to perform Oro application administrative tasks.
-However, for your staging or production environment, please adjust the commands that will follow in the next
-sections to run environment management commands as well as application install and update via a dedicated admin user.
+In this guide, to simplify installation in the local and development environment, we are loosening this requirement and use the superuser permissions to perform Oro application administrative tasks. However, for your staging or production environment, please adjust the commands that will follow in the next sections to run environment management commands as well as application install and update via a dedicated admin user.
 
 Commands for running the web server, php-fpm process, cron commands, background processes, etc., are executed via the dedicated *application user* (*nginx*). Reuse them without modification, if you keep the same username. Otherwise, adjust them accordingly.
 
@@ -191,8 +187,8 @@ To set the password for the *postgres* user to the new secure one, run the follo
 
 .. note:: You will be prompted to enter the new password.
 
-Create a Database for your Oro Application
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create a Database for the Oro Application
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To create the `oro` database that will be used by the Oro application, run the following commands:
 
@@ -208,8 +204,7 @@ Configure Web Server
 
 For the production mode, it is strongly recommend to use the HTTPS protocol for the Oro application public websites, and reserve the HTTP mode for development and testing purposes only.
 
-The samples of Nginx configuration for HTTPS and HTTP mode are provided below. Update the
-`/etc/nginx/conf.d/default.conf` file with the content that matches the type of your environment.
+The samples of Nginx configuration for HTTPS and HTTP mode are provided below. Update the `/etc/nginx/conf.d/default.conf` file with the content that matches the type of your environment.
 
 **Sample nginx Configuration for HTTP Websites (Use in Development and Staging Environment Only)**
 
@@ -361,8 +356,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
 * Replace **<your-domain-name>** with the configured domain name that would be used for the Oro application.
 * Change *ssl_certificate_key* and*ssl_certificate* with the actual values of your active SSL certificate.
 
-Optionally, you can enable and configure |Apache PageSpeed module| for Nginx to improve
-web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.
+Optionally, you can enable and configure |Apache PageSpeed module| for Nginx to improve web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.
 
 .. note:: If you choose the Apache web server instead of Nginx one, you can find an example of the web server configuration in the :ref:`Web Server Configuration <installation--web-server-configuration>` article.
 
@@ -384,8 +378,7 @@ Configure PHP
 
 To configure PHP, perform the following changes in the configuration files:
 
-* In the `www.conf` file (*/etc/php-fpm.d/www.conf*) --- Change the user and the group
-  for PHP-FPM to *nginx* and set recommended values for other parameters.
+* In the `www.conf` file (*/etc/php-fpm.d/www.conf*) --- Change the user and the group for PHP-FPM to *nginx* and set recommended values for other parameters.
 
   .. code-block:: none
 
@@ -490,8 +483,7 @@ This path can be either:
 
 This path can be reconfigured with |Gaufrette| adapter configuration.
 
-For example, to change the path location, add a new configuration of the **import_files** |Gaufrette| adapter
-in the `Resources/config/oro/app.yml` file of your bundle:
+For example, to change the path location, add a new configuration of the **import_files** |Gaufrette| adapter in the `Resources/config/oro/app.yml` file of your bundle:
 
 .. code-block:: yaml
 
@@ -501,8 +493,7 @@ in the `Resources/config/oro/app.yml` file of your bundle:
                 local:
                     directory: '/new/path/to/import_files'
 
-Use Gaufrette filesystem abstraction layer as storage, this configuration can be changed to use any supported filesystem
-adapter supported by |Gaufrette| library.
+Use Gaufrette filesystem abstraction layer as storage, this configuration can be changed to use any supported filesystem adapter supported by |Gaufrette| library.
 
 For example, the configuration to use the :ref:`GridFS <bundle-docs-platform-gridfs-config-bundle>` storage can be the following:
 

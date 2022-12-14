@@ -14,12 +14,12 @@ Use different default configurations based on the environment where the applicat
 
 Deployment type (``deployment_type``) is one of the options in **parameters.yml** file, and it is asked during ``composer install``.
 
-      .. code-block:: text
-         :caption: config/parameters.yml
+.. code-block:: text
+   :caption: config/parameters.yml
 
-            parameters:
-                # ...
-                deployment_type: null
+      parameters:
+          # ...
+          deployment_type: null
 
 To start using deployment type, change value ``deployment_type: <type>`` in *config/parameters.yml* and create a config file in *config/deployment/config_<type>.yml*.
 
@@ -27,19 +27,19 @@ This configuration will have the highest priority.
 
 For example:
 
-      .. code-block:: text
-         :caption: config/parameters.yml
+.. code-block:: text
+   :caption: config/parameters.yml
 
-                parameters:
-                    # ...
-                    deployment_type: local
+          parameters:
+              # ...
+              deployment_type: local
 
-      .. code-block:: text
-         :caption: config/deployment/config_local.yml
+.. code-block:: text
+   :caption: config/deployment/config_local.yml
 
-                monolog:
-                    handlers:
-                        # your additional monolog configuration
+          monolog:
+              handlers:
+                  # your additional monolog configuration
 
 
 .. note:: For more details on how to configure the environment type based application in the Cloud environment, please see the |related cloud documentation|.

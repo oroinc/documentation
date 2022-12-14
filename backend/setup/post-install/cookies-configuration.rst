@@ -7,13 +7,13 @@ Configure Cookies
 
 OroPlatform uses the following cookies:
 
-- **BAPID** - cookie that holds information about a logged in user;
+- **BAPID** - cookie that holds information about a logged-in user;
 - **BAPRM** - cookie that holds a remembered user (remember me functionality);
 - **_csrf** - cookie that holds a CSRF token.
 
 The storefront functionality adds the following cookies:
 
-- **OROSFID**  - cookie that holds information about a logged in customer user;
+- **OROSFID**  - cookie that holds information about a logged-in customer user;
 - **OROSFRM** - cookie that holds a remembered customer user (remember me functionality);
 - **customer_visitor** - cookie that holds customer visitor data.
 
@@ -22,7 +22,7 @@ All of these cookies are configured in different places.
 Back-Office Session Cookie
 --------------------------
 
-The back-office session cookie holds information about a logged in user in the platform application.
+The back-office session cookie holds information about a logged-in user in the platform application.
 
 This cookie's default name is **BAPID**.
 
@@ -40,7 +40,7 @@ in the `Resources/config/oro/app.yml` file in any bundle or in the `config/confi
             cookie_secure:    'auto'  # determines whether cookies should only be sent over secure connections
             cookie_samesite:  null    # prevents the browser from sending a cookie along with cross-site requests
 
-More info about available configuration options is available in the |Session configuration| documentation.
+More information about configuration options is available in the |Session configuration| documentation.
 
 Back-Office Remember Me Cookie
 ------------------------------
@@ -67,14 +67,14 @@ in the `Resources/config/oro/app.yml` file in any bundle or in the `config/confi
                     secure:    'auto'  # determines whether cookies should only be sent over secure connections
                     samesite:  null    # prevents the browser from sending cookie along with cross-site requests
 
-More info about available configuration options is available in the |Session configuration| documentation.
+More information about configuration options is available in the |Session configuration| documentation.
 
 CSRF Cookie
 -----------
 
 CSRF cookie holds the token that should be checked during requests.
 
-The name of cookie is **_csrf**. If your application uses SSL, the name of cookie is **https-_csrf**.
+The name of the cookie is **_csrf**. If your application uses SSL, the name is **https-_csrf**.
 
 This cookie can be configured in the `csrf_cookie` section of the Security bundle configuration
 in the `Resources/config/oro/app.yml` file in any bundle or in the `config/config.yml` file:
@@ -114,7 +114,7 @@ in the `Resources/config/oro/app.yml` file in any bundle or in the `config/confi
 
 .. note:: The `name` parameter value is defined and can be changed in the `config/config_prod.yml` file.
 
-If a parameter is absent or null, the value of the parameter is taken from the back-office session cookie.
+If a parameter is absent or null, the parameter's value is taken from the back-office session cookie.
 
 Storefront Remember Me Cookie
 ----------------------------------
@@ -141,12 +141,12 @@ in the `Resources/config/oro/app.yml` file in any bundle or in the `config/confi
                     secure:    'auto'  # determines whether cookies should only be sent over secure connections
                     samesite:  null    # prevents the browser from sending cookie along with cross-site requests
 
-More info about available configuration options is available in the |Remember Me configuration| documentation.
+More information about configuration options is available in the |Remember Me configuration| documentation.
 
 Customer Visitor Cookie
 -----------------------
 
-Customer visitor cookie is used in the storefront to store the data of a non-logged in user.
+A customer visitor cookie is used in the storefront to store the data of a non-logged-in user.
 
 This cookie's name is **customer_visitor**.
 
