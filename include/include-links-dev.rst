@@ -9,7 +9,7 @@ Links (Dev)
 
 .. |form types in the Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/book/forms.html" target="_blank">form types in the Symfony documentation</a>
+   <a href="https://symfony.com/doc/5.4/book/forms.html" target="_blank">form types in the Symfony documentation</a>
 
 .. |OroImportExportBundle| raw:: html
 
@@ -33,7 +33,7 @@ Links (Dev)
 
 .. |Symfony Serializer component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/serializer.html" target="_blank">Symfony Serializer component</a>
+   <a href="https://symfony.com/doc/5.4/components/serializer.html" target="_blank">Symfony Serializer component</a>
 
 .. |ItemWriterInterface| raw:: html
 
@@ -85,7 +85,7 @@ Links (Dev)
 
 .. |Symfony web server documentation| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/setup/web_server_configuration.html" target="_blank">Symfony web server documentation</a>
+   <a href="https://symfony.com/doc/5.4/setup/web_server_configuration.html" target="_blank">Symfony web server documentation</a>
 
 .. |Elasticsearch| raw:: html
 
@@ -529,7 +529,7 @@ Links (Dev)
 
 .. |Symfony website| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/performance.html" target="_blank">Symfony website</a>
+   <a href="https://symfony.com/doc/5.4/performance.html" target="_blank">Symfony website</a>
 
 .. |Doctrine website| raw:: html
 
@@ -549,11 +549,11 @@ Links (Dev)
 
 .. |semantic configurations| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/bundles/extension.html" target="_blank">semantic configurations</a>
+   <a href="https://symfony.com/doc/5.4/bundles/extension.html" target="_blank">semantic configurations</a>
 
 .. |bundle alias| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/bundles/best_practices.html#bundle-name" target="_blank">bundle alias</a>
+   <a href="https://symfony.com/doc/5.4/bundles/best_practices.html#bundle-name" target="_blank">bundle alias</a>
 
 .. |Amazon Machine Image (AMI)| raw:: html
 
@@ -601,7 +601,7 @@ Links (Dev)
 
 .. |Setting up the Database to be UTF8| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/doctrine.html#configuring-the-database" target="_blank">Setting up the Database to be UTF8</a>
+   <a href="https://symfony.com/doc/5.4/doctrine.html#configuring-the-database" target="_blank">Setting up the Database to be UTF8</a>
 
 .. |the other levels| raw:: html
 
@@ -665,7 +665,7 @@ Links (Dev)
 
 .. |Symfony versus Flat PHP: Why is Symfony better than just opening up a file and writing flat PHP?| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/introduction/from_flat_php_to_symfony.html" target="_blank">Symfony versus Flat PHP: Why is Symfony better than just opening up a file and writing flat PHP?</a>
+   <a href="https://symfony.com/doc/5.4/introduction/from_flat_php_to_symfony.html" target="_blank">Symfony versus Flat PHP: Why is Symfony better than just opening up a file and writing flat PHP?</a>
 
 .. |7 Good Reasons to Use Symfony Framework for Your Project| raw:: html
 
@@ -677,19 +677,19 @@ Links (Dev)
 
 .. |Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/index.html" target="_blank">Symfony documentation</a>
+   <a href="https://symfony.com/doc/5.4/index.html" target="_blank">Symfony documentation</a>
 
 .. |How to Configure Symfony to Work behind a Load Balancer or a Reverse Proxy| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/deployment/proxies.html" target="_blank">How to Configure Symfony to Work behind a Load Balancer or a Reverse Proxy</a>
+   <a href="https://symfony.com/doc/5.4/deployment/proxies.html" target="_blank">How to Configure Symfony to Work behind a Load Balancer or a Reverse Proxy</a>
 
 .. |Symfony applications| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/introduction/http_fundamentals.html#the-symfony-application-flow" target="_blank">Symfony applications </a>
+   <a href="https://symfony.com/doc/5.4/introduction/http_fundamentals.html#the-symfony-application-flow" target="_blank">Symfony applications </a>
 
 .. |Symfony Event Dispatcher| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/event_dispatcher.html" target="_blank">Symfony Event Dispatcher</a>
+   <a href="https://symfony.com/doc/5.4/event_dispatcher.html" target="_blank">Symfony Event Dispatcher</a>
 
 .. |Inversion of Control principle| raw:: html
 
@@ -697,19 +697,19 @@ Links (Dev)
 
 .. |Symfony's Service container| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/service_container.html" target="_blank">Symfony's Service container</a>
+   <a href="https://symfony.com/doc/5.4/service_container.html" target="_blank">Symfony's Service container</a>
 
 .. |Dependency Injection Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/dependency_injection.html" target="_blank">Dependency Injection Component</a>
+   <a href="https://symfony.com/doc/5.4/components/dependency_injection.html" target="_blank">Dependency Injection Component</a>
 
 .. |bundle system| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/bundles.html" target="_blank">bundle system</a>
+   <a href="https://symfony.com/doc/5.4/bundles.html" target="_blank">bundle system</a>
 
 .. |Flex| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/setup/flex.html" target="_blank">Flex</a>
+   <a href="https://symfony.com/doc/5.4/setup/flex.html" target="_blank">Flex</a>
 
 .. |recommends to consider Flex as an alpha up to 4th versions of Symfony| raw:: html
 
@@ -721,11 +721,11 @@ Links (Dev)
 
 .. |according to Symfony conventions| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/best_practices/configuration.html" target="_blank">according to Symfony conventions</a>
+   <a href="https://symfony.com/doc/5.4/best_practices/configuration.html" target="_blank">according to Symfony conventions</a>
 
 .. |Symfony Templating| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/templates.html" target="_blank">Symfony Templating</a>
+   <a href="https://symfony.com/doc/5.4/templates.html" target="_blank">Symfony Templating</a>
 
 .. |Layouts| raw:: html
 
@@ -737,7 +737,7 @@ Links (Dev)
 
 .. |Symfony Templating Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/templating.html" target="_blank">Symfony Templating Component</a>
+   <a href="https://symfony.com/doc/5.4/components/templating.html" target="_blank">Symfony Templating Component</a>
 
 .. |Role Based Access Control| raw:: html
 
@@ -745,7 +745,7 @@ Links (Dev)
 
 .. |Symfony Security Components| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/security.html" target="_blank">Symfony Security Components</a>
+   <a href="https://symfony.com/doc/5.4/components/security.html" target="_blank">Symfony Security Components</a>
 
 .. |Oro Doctrine Extensions| raw:: html
 
@@ -753,75 +753,75 @@ Links (Dev)
 
 .. |come with a command line interface tool| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/console.html" target="_blank">come with a command line interface tool</a>
+   <a href="https://symfony.com/doc/5.4/console.html" target="_blank">come with a command line interface tool</a>
 
 .. |Asset Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/asset.html" target="_blank">Asset Component</a>
+   <a href="https://symfony.com/doc/5.4/components/asset.html" target="_blank">Asset Component</a>
 
 .. |Console Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/console.html" target="_blank">Console Component</a>
+   <a href="https://symfony.com/doc/5.4/components/console.html" target="_blank">Console Component</a>
 
 .. |DependencyInjection Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/dependency_injection.html" target="_blank">DependencyInjection Component</a>
+   <a href="https://symfony.com/doc/5.4/components/dependency_injection.html" target="_blank">DependencyInjection Component</a>
 
 .. |EventDispatcher Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/event_dispatcher.html" target="_blank">EventDispatcher Component</a>
+   <a href="https://symfony.com/doc/5.4/components/event_dispatcher.html" target="_blank">EventDispatcher Component</a>
 
 .. |ExpressionLanguage Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/expression_language.html" target="_blank">ExpressionLanguage Component</a>
+   <a href="https://symfony.com/doc/5.4/components/expression_language.html" target="_blank">ExpressionLanguage Component</a>
 
 .. |Form Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/form.html" target="_blank">Form Component</a>
+   <a href="https://symfony.com/doc/5.4/components/form.html" target="_blank">Form Component</a>
 
 .. |HttpFoundation Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/http_foundation.html" target="_blank">The HttpFoundation Component</a>
+   <a href="https://symfony.com/doc/5.4/components/http_foundation.html" target="_blank">The HttpFoundation Component</a>
 
 .. |HttpKernel Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/http_kernel.html" target="_blank">HttpKernel Component</a>
+   <a href="https://symfony.com/doc/5.4/components/http_kernel.html" target="_blank">HttpKernel Component</a>
 
 .. |OptionsResolver Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/options_resolver.html">OptionsResolver Component</a>
+   <a href="https://symfony.com/doc/5.4/components/options_resolver.html">OptionsResolver Component</a>
 
 .. |PropertyAccess Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/property_access.html" target="_blank">PropertyAccess Component</a>
+   <a href="https://symfony.com/doc/5.4/components/property_access.html" target="_blank">PropertyAccess Component</a>
 
 .. |Routing Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/routing.html" target="_blank">Routing Component</a>
+   <a href="https://symfony.com/doc/5.4/components/routing.html" target="_blank">Routing Component</a>
 
 .. |Security Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/security.html" target="_blank">Security Component</a>
+   <a href="https://symfony.com/doc/5.4/components/security.html" target="_blank">Security Component</a>
 
 .. |Serializer Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/serializer.html" target="_blank">Serializer Component</a>
+   <a href="https://symfony.com/doc/5.4/components/serializer.html" target="_blank">Serializer Component</a>
 
 .. |Templating Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/templating.html" target="_blank">Templating Component</a>
+   <a href="https://symfony.com/doc/5.4/components/templating.html" target="_blank">Templating Component</a>
 
 .. |Translation Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/translation.html" target="_blank">Translation Component</a>
+   <a href="https://symfony.com/doc/5.4/components/translation.html" target="_blank">Translation Component</a>
 
 .. |Validator Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/validator.html" target="_blank">Validator Component</a>
+   <a href="https://symfony.com/doc/5.4/components/validator.html" target="_blank">Validator Component</a>
 
 .. |Yaml Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/yaml.html" target="_blank">Yaml Component</a>
+   <a href="https://symfony.com/doc/5.4/components/yaml.html" target="_blank">Yaml Component</a>
 
 .. |article| raw:: html
 
@@ -1129,7 +1129,7 @@ Links (Dev)
 
 .. |Symfony Validation Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/validation.html" target="_blank">Symfony Validation Component</a>
+   <a href="https://symfony.com/doc/5.4/validation.html" target="_blank">Symfony Validation Component</a>
 
 .. |ChainAdapter| raw:: html
 
@@ -1165,12 +1165,12 @@ Links (Dev)
 
 .. |validation constraints reference section| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/constraints.html" target="_blank">validation constraints reference section</a>
+   <a href="https://symfony.com/doc/5.4/reference/constraints.html" target="_blank">validation constraints reference section</a>
 
 
 .. |in the Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/forms/types.html" target="_blank">in the Symfony documentation</a>
+   <a href="https://symfony.com/doc/5.4/reference/forms/types.html" target="_blank">in the Symfony documentation</a>
 
 
 .. |Mailer configuration| raw:: html
@@ -1190,7 +1190,7 @@ Links (Dev)
 
 .. |Symfony Cookbook How to Register Event Listeners and Subscribers| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/cookbook/doctrine/event_listeners_subscribers.html" target="_blank">Symfony Cookbook How to Register Event Listeners and Subscribers</a>
+   <a href="https://symfony.com/doc/5.4/cookbook/doctrine/event_listeners_subscribers.html" target="_blank">Symfony Cookbook How to Register Event Listeners and Subscribers</a>
 
 .. |predefined validation constraints| raw:: html
 
@@ -1215,7 +1215,7 @@ Links (Dev)
 
 .. |Access Control Lists| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/security/acl.html" target="_blank">Access Control Lists</a>
+   <a href="https://symfony.com/doc/5.4/security/acl.html" target="_blank">Access Control Lists</a>
 
 .. |@Acl| raw:: html
 
@@ -1239,15 +1239,15 @@ Links (Dev)
 
 .. |Symfony Best Practices| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/best_practices/index.html" target="_blank">Symfony Best Practices</a>
+   <a href="https://symfony.com/doc/5.4/best_practices/index.html" target="_blank">Symfony Best Practices</a>
 
 .. |Symfony Bundle System| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/bundles.html" target="_blank">Symfony Bundle System</a>
+   <a href="https://symfony.com/doc/5.4/bundles.html" target="_blank">Symfony Bundle System</a>
 
 .. |Symfony Application Deployment| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/deployment.html" target="_blank">Symfony Application Deployment</a>
+   <a href="https://symfony.com/doc/5.4/deployment.html" target="_blank">Symfony Application Deployment</a>
 
 .. |composer.lock| raw:: html
 
@@ -1265,9 +1265,9 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html" target="_blank">@ParamConverter annotation</a>
 
-.. |https://symfony.com/doc/4.4/security/acl.html| raw:: html
+.. |https://symfony.com/doc/5.4/security/acl.html| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/security/acl.html" target="_blank">https://symfony.com/doc/4.4/security/acl.html</a>
+   <a href="https://symfony.com/doc/5.4/security/acl.html" target="_blank">https://symfony.com/doc/5.4/security/acl.html</a>
 
 .. |ISO 3166| raw:: html
 
@@ -1307,7 +1307,7 @@ Links (Dev)
 
 .. |Symfony Documentation1| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/translation.html" target="_blank">Symfony Documentation</a>
+   <a href="https://symfony.com/doc/5.4/translation.html" target="_blank">Symfony Documentation</a>
 
 .. |Gedmo/Translatable| raw:: html
 
@@ -1315,19 +1315,19 @@ Links (Dev)
 
 .. |in the official Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/setup/file_permissions.html" target="_blank">in the official Symfony documentation</a>
+   <a href="https://symfony.com/doc/5.4/setup/file_permissions.html" target="_blank">in the official Symfony documentation</a>
 
 .. |How to force routes to always use HTTPS or HTTP| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/routing.html" target="_blank">How to force routes to always use HTTPS or HTTP</a>
+   <a href="https://symfony.com/doc/5.4/routing.html" target="_blank">How to force routes to always use HTTPS or HTTP</a>
 
 .. |How to force HTTPS or HTTP for Different URLs| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/security/force_https.html" target="_blank">How to force HTTPS or HTTP for Different URLs</a>
+   <a href="https://symfony.com/doc/5.4/security/force_https.html" target="_blank">How to force HTTPS or HTTP for Different URLs</a>
 
 .. |session handler| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/http_foundation/session_configuration.html#save-handlers" target="_blank">session handler</a>
+   <a href="https://symfony.com/doc/5.4/components/http_foundation/session_configuration.html#save-handlers" target="_blank">session handler</a>
 
 .. |sessions| raw:: html
 
@@ -1339,11 +1339,11 @@ Links (Dev)
 
 .. |translations| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/translation.html" target="_blank">translations</a>
+   <a href="https://symfony.com/doc/5.4/components/translation.html" target="_blank">translations</a>
 
 .. |CSRF tokens| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/security/csrf.html" target="_blank">CSRF tokens</a>
+   <a href="https://symfony.com/doc/5.4/security/csrf.html" target="_blank">CSRF tokens</a>
 
 .. |OroCRM Extensions Store| raw:: html
 
@@ -1363,7 +1363,7 @@ Links (Dev)
 
 .. |Setting up or Fixing File Permissions| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/setup/file_permissions.html" target="_blank">Setting up or Fixing File Permissions</a>
+   <a href="https://symfony.com/doc/5.4/setup/file_permissions.html" target="_blank">Setting up or Fixing File Permissions</a>
 
 .. |AbstractMessageQueueAssertTrait| raw:: html
 
@@ -1847,7 +1847,7 @@ Links (Dev)
 
 .. |Creating and Using Templates article in a Symfony Documentation| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/templating.html" target="_blank">Creating and Using Templates article in a Symfony Documentation</a>
+   <a href="https://symfony.com/doc/5.4/templating.html" target="_blank">Creating and Using Templates article in a Symfony Documentation</a>
 
 .. |Twig official documentation| raw:: html
 
@@ -1895,7 +1895,7 @@ Links (Dev)
 
 .. |Symfony expression syntax| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/expression_language/syntax.html" target="_blank">Symfony expression syntax</a>
+   <a href="https://symfony.com/doc/5.4/components/expression_language/syntax.html" target="_blank">Symfony expression syntax</a>
 
 .. |DataGridBundle| raw:: html
 
@@ -1943,7 +1943,7 @@ Links (Dev)
 
 .. |Symfony Profiler| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/profiler.html" target="_blank">Symfony Profiler</a>
+   <a href="https://symfony.com/doc/5.4/profiler.html" target="_blank">Symfony Profiler</a>
 
 .. |Twig filters| raw:: html
 
@@ -1967,7 +1967,7 @@ Links (Dev)
 
 .. |Form Themes| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/form/form_themes.html" target="_blank">Form Themes</a>
+   <a href="https://symfony.com/doc/5.4/form/form_themes.html" target="_blank">Form Themes</a>
 
 .. |this block theme| raw:: html
 
@@ -2119,7 +2119,7 @@ Links (Dev)
 
 .. |Bundles| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/bundles.html" target="_blank">Bundles</a>
+   <a href="https://symfony.com/doc/5.4/bundles.html" target="_blank">Bundles</a>
 
 .. |Marketing| raw:: html
 
@@ -2415,7 +2415,7 @@ Links (Dev)
 
 .. |add your own sections| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/profiler/data_collector.html" target="_blank">add your own sections</a>
+   <a href="https://symfony.com/doc/5.4/profiler/data_collector.html" target="_blank">add your own sections</a>
 
 .. |OroCRM project| raw:: html
 
@@ -2555,7 +2555,7 @@ Links (Dev)
 
 .. |How to Override any Part of a Bundle| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/bundles/override.html#routing" target="_blank">How to Override any Part of a Bundle</a>
+   <a href="https://symfony.com/doc/5.4/bundles/override.html#routing" target="_blank">How to Override any Part of a Bundle</a>
 
 .. |How to use Bundle Inheritance to Override parts of a Bundle| raw:: html
 
@@ -2563,7 +2563,7 @@ Links (Dev)
 
 .. |best practices for bundle structure and bundle name| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/bundles/best_practices.html#bundle-name" target="_blank">best practices for bundle structure and bundle name</a>
+   <a href="https://symfony.com/doc/5.4/bundles/best_practices.html#bundle-name" target="_blank">best practices for bundle structure and bundle name</a>
 
 .. |Symfony profiler config icon| raw:: html
 
@@ -2571,15 +2571,15 @@ Links (Dev)
 
 .. |Symfony Best Practices for Structuring Bundles| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/bundles/best_practices.html" target="_blank">Symfony Best Practices for Structuring Bundles</a>
+   <a href="https://symfony.com/doc/5.4/bundles/best_practices.html" target="_blank">Symfony Best Practices for Structuring Bundles</a>
 
 .. |Symfony Framework Events| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/events.html" target="_blank">Symfony Framework Events</a>
+   <a href="https://symfony.com/doc/5.4/reference/events.html" target="_blank">Symfony Framework Events</a>
 
 .. |documentation concerning testing| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/testing.html#functional-tests" target="_blank">documentation concerning testing</a>
+   <a href="https://symfony.com/doc/5.4/testing.html#functional-tests" target="_blank">documentation concerning testing</a>
 
 .. |PHPUnit| raw:: html
 
@@ -2627,7 +2627,7 @@ Links (Dev)
 
 .. |DoctrineBundle Configuration| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/configuration/doctrine.html" target="_blank">DoctrineBundle Configuration</a>
+   <a href="https://symfony.com/doc/5.4/reference/configuration/doctrine.html" target="_blank">DoctrineBundle Configuration</a>
 
 .. |Explain Output| raw:: html
 
@@ -2671,7 +2671,7 @@ Links (Dev)
 
 .. |Symfony: DoctrineBundle Configuration| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/configuration/doctrine.html" target="_blank">Symfony: DoctrineBundle Configuration</a>
+   <a href="https://symfony.com/doc/5.4/reference/configuration/doctrine.html" target="_blank">Symfony: DoctrineBundle Configuration</a>
 
 .. |relevant ScopeBundle documentation| raw:: html
 
@@ -2727,7 +2727,7 @@ Links (Dev)
 
 .. |custom event listeners| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/event_dispatcher.html" target="_blank">custom event listeners</a>
+   <a href="https://symfony.com/doc/5.4/event_dispatcher.html" target="_blank">custom event listeners</a>
 
 .. |access control| raw:: html
 
@@ -3559,15 +3559,15 @@ Links (Dev)
 
 .. |How to use compiler passes| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/service_container/compiler_passes.html" target="_blank">How to use compiler passes</a>
+   <a href="https://symfony.com/doc/5.4/service_container/compiler_passes.html" target="_blank">How to use compiler passes</a>
 
 .. |How to decorate services| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/service_container/service_decoration.html" target="_blank">How to decorate services</a>
+   <a href="https://symfony.com/doc/5.4/service_container/service_decoration.html" target="_blank">How to decorate services</a>
 
 .. |Event dispatcher| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/event_dispatcher.html" target="_blank">Event dispatcher</a>
+   <a href="https://symfony.com/doc/5.4/event_dispatcher.html" target="_blank">Event dispatcher</a>
 
 .. |Introduction to Placeholders| raw:: html
 
@@ -3607,15 +3607,15 @@ Links (Dev)
 
 .. |Logging with Monolog Symfony doc| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/logging.html#logging-a-message" target="_blank">Logging with Monolog" Symfony doc</a>
+   <a href="https://symfony.com/doc/5.4/logging.html#logging-a-message" target="_blank">Logging with Monolog" Symfony doc</a>
 
 .. |verbosity levels| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/console/verbosity.html" target="_blank">verbosity levels</a>
+   <a href="https://symfony.com/doc/5.4/console/verbosity.html" target="_blank">verbosity levels</a>
 
 .. |Processors| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/logging/processors.html" target="_blank">Processors</a>
+   <a href="https://symfony.com/doc/5.4/logging/processors.html" target="_blank">Processors</a>
 
 .. |Monolog| raw:: html
 
@@ -3623,7 +3623,7 @@ Links (Dev)
 
 .. |related Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/logging.html#handlers-writing-logs-to-different-locations" target="_blank">related Symfony documentation</a>
+   <a href="https://symfony.com/doc/5.4/logging.html#handlers-writing-logs-to-different-locations" target="_blank">related Symfony documentation</a>
 
 .. |ELK Stack| raw:: html
 
@@ -3659,19 +3659,19 @@ Links (Dev)
 
 .. |Symfony "Logging with Monolog"| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/logging.html#logging-a-message" target="_blank">Symfony "Logging with Monolog"</a>
+   <a href="https://symfony.com/doc/5.4/logging.html#logging-a-message" target="_blank">Symfony "Logging with Monolog"</a>
 
 .. |Symfony Verbosity Levels| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/console/verbosity.html" target="_blank">Symfony Verbosity Levels</a>
+   <a href="https://symfony.com/doc/5.4/console/verbosity.html" target="_blank">Symfony Verbosity Levels</a>
 
 .. |Symfony Logging Processors| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/logging/processors.html" target="_blank">Symfony Logging Processors</a>
+   <a href="https://symfony.com/doc/5.4/logging/processors.html" target="_blank">Symfony Logging Processors</a>
 
 .. |Symfony Logging Handlers| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/logging.html#handlers-writing-logs-to-different-locations" target="_blank">Symfony Logging Handlers</a>
+   <a href="https://symfony.com/doc/5.4/logging.html#handlers-writing-logs-to-different-locations" target="_blank">Symfony Logging Handlers</a>
 
 .. |Google Stackdriver| raw:: html
 
@@ -3715,11 +3715,11 @@ Links (Dev)
 
 .. |Validation Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/validation.html" target="_blank">Validation Component</a>
+   <a href="https://symfony.com/doc/5.4/validation.html" target="_blank">Validation Component</a>
 
 .. |Forms Component| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/forms.html" target="_blank">Forms Component</a>
+   <a href="https://symfony.com/doc/5.4/forms.html" target="_blank">Forms Component</a>
 
 .. |CollectFormErrors| raw:: html
 
@@ -3783,7 +3783,7 @@ Links (Dev)
 
 .. |tag| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/service_container/tags.html" target="_blank">tag</a>
+   <a href="https://symfony.com/doc/5.4/service_container/tags.html" target="_blank">tag</a>
 
 .. |Api DoctrineHelper| raw:: html
 
@@ -3847,11 +3847,11 @@ Links (Dev)
 
 .. |common way| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/dic_tags.html#monolog-logger" target="_blank">common way</a>
+   <a href="https://symfony.com/doc/5.4/reference/dic_tags.html#monolog-logger" target="_blank">common way</a>
 
 .. |context1| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/configuration/security.html#firewall-context" target="_blank">context</a>
+   <a href="https://symfony.com/doc/5.4/reference/configuration/security.html#firewall-context" target="_blank">context</a>
 
 .. |Oro Packagist repository| raw:: html
 
@@ -4015,11 +4015,11 @@ Links (Dev)
 
 .. |Symfony AuthorizationCheckerInterface| raw:: html
 
-   <a href="https://github.com/symfony/symfony/blob/4.4/src/Symfony/Component/Security/Core/Authorization/AuthorizationCheckerInterface.php" target="_blank">Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface</a>
+   <a href="https://github.com/symfony/symfony/blob/5.4/src/Symfony/Component/Security/Core/Authorization/AuthorizationCheckerInterface.php" target="_blank">Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface</a>
 
 .. |Symfony FormTypeGuesserInterface| raw:: html
 
-   <a href="https://github.com/symfony/symfony/blob/4.4/src/Symfony/Component/Form/FormTypeGuesserInterface.php" target="_blank">Symfony\Component\Form\FormTypeGuesserInterface</a>
+   <a href="https://github.com/symfony/symfony/blob/5.4/src/Symfony/Component/Form/FormTypeGuesserInterface.php" target="_blank">Symfony\Component\Form\FormTypeGuesserInterface</a>
 
 .. |DoctrineTypeGuesser| raw:: html
 
@@ -4343,7 +4343,7 @@ Links (Dev)
 
 .. |Bundle Templates| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/templates.html#bundle-templates" target="_blank">Bundle Templates</a>
+   <a href="https://symfony.com/doc/5.4/templates.html#bundle-templates" target="_blank">Bundle Templates</a>
 
 .. |Google Cloud Marketplace| raw:: html
 
@@ -4980,15 +4980,15 @@ Links (Dev)
 
 .. |Cookie secure configuration| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/configuration/framework.html#cookie-secure" target="_blank">cookie secure configuration</a>
+   <a href="https://symfony.com/doc/5.4/reference/configuration/framework.html#cookie-secure" target="_blank">cookie secure configuration</a>
 
 .. |Session configuration| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/configuration/framework.html#session" target="_blank">cookie secure configuration</a>
+   <a href="https://symfony.com/doc/5.4/reference/configuration/framework.html#session" target="_blank">cookie secure configuration</a>
 
 .. |Remember Me configuration| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/configuration/framework.html#session" target="_blank">cookie secure configuration</a>
+   <a href="https://symfony.com/doc/5.4/reference/configuration/framework.html#session" target="_blank">cookie secure configuration</a>
 
 .. |nginx_cookie_flag_module| raw:: html
 
@@ -5189,7 +5189,7 @@ Links (Dev)
 
 .. |Symfony Monolog Documentation| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/logging.html#monolog" target="_blank">Symfony Monolog Documentation</a>
+   <a href="https://symfony.com/doc/5.4/logging.html#monolog" target="_blank">Symfony Monolog Documentation</a>
 
 .. |wildcard file mask| raw:: html
 
@@ -5593,7 +5593,7 @@ Links (Dev)
 
 .. |lazy services| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/service_container/lazy_services.html" target="_blank">lazy services</a>
+   <a href="https://symfony.com/doc/5.4/service_container/lazy_services.html" target="_blank">lazy services</a>
 
 .. |Event Listeners| raw:: html
 

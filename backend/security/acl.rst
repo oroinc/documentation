@@ -15,7 +15,7 @@ Access Control Lists are an essential part of the |Symfony Security Components|.
 
 .. hint:: You can find detailed information about Symfony ACL-based security model in the Symfony documentation:
 
-           * |https://symfony.com/doc/4.4/security/acl.html|
+           * |https://symfony.com/doc/5.4/security/acl.html|
 
 Access Levels
 ~~~~~~~~~~~~~
@@ -563,4 +563,3 @@ For the security token to ignore the preferable organization, for example, an AP
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
-

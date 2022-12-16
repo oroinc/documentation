@@ -8,7 +8,7 @@ Architecture Principles of Oro Applications
 Symfony Role in OroPlatform
 ---------------------------
 
-.. note:: We use |Symfony Framework| v. 4.4 LTS in Oro Applications v.4.x.
+.. note:: We use |Symfony Framework| v. 5.4 LTS in Oro Applications v.5.x.
 
 Symfony is the most mature PHP framework that provides a wide range of functions typical for any web application. Symfony takes care of numerous tasks, for instance:
 
@@ -86,7 +86,7 @@ For the bundle to be registered and enabled in Oro applications, it is sufficien
 
 .. code-block:: yaml
    :caption: src/Acme/DemoBundle/Resources/config/oro/bundles.yml
-   
+
         bundles:
             - { name: Acme\Bundle\DemoBundle\AcmeDemoBundle, priority: 70 }
 
@@ -132,7 +132,7 @@ For example, there are three ways in Oro applications to create navigation items
 
 .. code-block:: yaml
    :caption:  src/Acme/DemoBundle/Resources/config/oro/navigation.yml
-   
+
         menu_config:
             items:
                 new_menu_item:
@@ -241,4 +241,3 @@ You must be familiar with these components to work comfortably with Oro applicat
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
-
