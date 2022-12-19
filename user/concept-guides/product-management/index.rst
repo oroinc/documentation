@@ -116,7 +116,7 @@ On the product details page, you can configure the following options:
 * A :ref:`product image gallery <sys--commerce--product--product-images--gallery-slider-global>` that controls the way the product options are displayed on the product page. You can select whether to use popup or inline view for the image gallery.
 * A :ref:`related products block <sys--commerce--catalog--relate-products--main>` that binds similar products related to those currently browsed by the customer or those that complement each other, like the laptop and its accessories, a mouse, notebook bag or screen cleaning cloths.
 * An :ref:`up-sell products block <sys--commerce--catalog--upsell-products>` that binds products that should be promoted with the product selected by the customer, like more expensive alternatives of the model, upgrade options, additional parts. Taking the example of the laptop, that would be a laptop with a larger screen, better processor, or higher hard drive capacity than the customer planned to buy.
-* An :ref:`similar products block <sys--commerce--catalog--similar-products>` that automatically shows products similar to the current one, like similar laptops on the laptop page. The more common traits related laptop shares with the original laptop the higher it will in the list.
+* A :ref:`similar products block <sys--commerce--catalog--similar-products>` that automatically shows products similar to the current one, like similar laptops on the laptop page. The more common traits a similar laptop shares with the original laptop, the higher it is in the list.
 
 .. note:: Similar products are available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine.
 
