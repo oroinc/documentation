@@ -498,3 +498,8 @@ The "There are no users" message is shown for an empty grid and "No users were f
         acme:
             my_custom_empty_grid_message: 'There are no users'
             my_custom_empty_filtered_grid_message: 'No users were found to match your search. Try modifying your search criteria...'
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

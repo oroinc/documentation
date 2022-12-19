@@ -56,3 +56,8 @@ The grid manager (``oro_datagrid.datagrid.manager``) and twig functions can hand
 In other places, when dealing with a grid name, it is assumed that it does not contain a scope.
 
 The correct grid full name with a scope should match this pattern: /([\w\-]+\):([\w\-]+)/ , where the first group is pure grid name, and the second group is scope, for example: ``acme-demo-datagrid:some-scope``.
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

@@ -101,7 +101,7 @@ There is the option that allows to turn off Datagrid Settings over `datagrids.ym
             ...
             options:
                 toolbarOptions:
-                    datagridSettingsManager: false
+                    addDatagridSettingsManager: false
 
 .. _customizing-data-grid-in-orocommerce-frontend-widget:
 

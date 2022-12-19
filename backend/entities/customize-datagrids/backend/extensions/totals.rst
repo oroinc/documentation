@@ -66,3 +66,8 @@ The totals setting should be placed under the `totals` tree node.
     - if **hide_if_one_page** is true, then this total row is hidden on full data set.
     - if **disabled** is true, this total row is removed.
     - **divisor** if you need to divide the value by a number before rendering it to the user (**not required**)
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

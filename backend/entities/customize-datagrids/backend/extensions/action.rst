@@ -44,3 +44,8 @@ Navigate performs redirects by the given URL.
     action_name:
         type: navigate
         link: PROPERTY_WITH_URL  # required
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

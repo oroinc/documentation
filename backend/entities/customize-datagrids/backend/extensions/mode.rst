@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 Mode Extension
 ==============
 
@@ -17,3 +19,9 @@ This grid will be rendered and processed in the client mode:
         options:
             mode: client
         ...
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`
+

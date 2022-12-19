@@ -17,5 +17,10 @@ To enable field ACL protection for a column, use the ``field_acl`` section in a 
 
 Please note that only fields from the root entity of a datagrid's ORM query are now supported.
 
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
