@@ -35,7 +35,8 @@ services:
             - '@acme_fast_shipping.factory.method'
         tags:
             - { name: oro_shipping_method_provider }
-            - { name: doctrine.orm.entity_listener, entity: 'Oro\Bundle\IntegrationBundle\Entity\Channel', event: postLoad }
+            - { name: doctrine.orm.entity_listener, entity: 'Oro\Bundle\IntegrationBundle\Entity\Channel', method: registerShippingMethod, event: postLoad }
+            - { name: doctrine.orm.entity_listener, entity: 'Oro\Bundle\IntegrationBundle\Entity\Channel', method: registerShippingMethod, event: postPersist }
 
     acme_fast_shipping.form.type.fast_shipping_options:
         class: 'ACME\Bundle\FastShippingBundle\Form\Type\FastShippingMethodOptionsType'

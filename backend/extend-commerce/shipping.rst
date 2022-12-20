@@ -292,11 +292,11 @@ Add the Shipping Method Provider to the Services Container
 
 Append the following lines to <bundle_root>/Resources/config/services.yml under the services section:
 
-.. oro_integrity_check:: c742c079dbc22a6564197fd1e750fc6ed2cfe824
+.. oro_integrity_check:: d7bcb8d28e21553646c788837abd526a4c534eae
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 30-38
+       :lines: 30-39
 
 
 Create a Shipping Method Type
@@ -356,7 +356,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 40-45
+       :lines: 41-46
 
 
 Define Translation for the Shipping Method Form Options
@@ -397,7 +397,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 1,3-5,47-71
+       :lines: 1,3-5,48-72
 
 
 Add Actions
