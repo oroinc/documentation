@@ -29,7 +29,8 @@ The application setup guides provide the details on how to configure the environ
    post-install/index
    demo-data
    launch
-   upgrade-to-new-version
+   Upgrade <upgrade-to-new-version>
+   Deploy Changes <deploy-the-update>
    reinstall
 
 

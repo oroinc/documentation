@@ -207,4 +207,6 @@ Links (Cloud)
 
    <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#sanitized-backup" target="_blank">Sanitized Backup</a>
 
+.. |Upgrade| raw:: html
 
+   <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#upgrade" target="_blank">upgrade</a>
