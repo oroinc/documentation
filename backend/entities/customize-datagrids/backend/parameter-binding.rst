@@ -4,7 +4,7 @@ Parameter Binding
 =================
 
 Parameter binding is used to fill datasource with parameters from datagrid. For example,
-ref:`ORM datasource <customize--datagrids-datasource-orm>` works on top of Doctrine ORM and uses QueryBuilder to build a query to the database. Using the parameter binding option in the ORM datasource you can configure the mapping between the parameters of the datagrid and the query.
+:ref:`ORM datasource <customize--datagrids-datasource-orm>` works on top of Doctrine ORM and uses QueryBuilder to build a query to the database. Using the parameter binding option in the ORM datasource you can configure the mapping between the parameters of the datagrid and the query.
 
 Configuration Syntax
 --------------------
@@ -118,6 +118,12 @@ Parameter Binding Listener
 |DatasourceBindParametersListener| is responsible for running the binding of the datasource parameters. It checks whether the datasource implements |ParameterBinderInterface| and whether it has the ``bind_parameters`` option.
 
 If the grid configuration is applicable, then the parameters configuration specified in the ``bind_parameters`` is passed to the datasource method ``bindParameters``.
+
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

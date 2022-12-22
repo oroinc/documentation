@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _customize-datagrids-extensions-grid-views:
 
 Grid Views Extension
@@ -24,3 +26,8 @@ There are two ways to set a label for `All grid view`:
 If bundle name equals entity name, then entity name is skipped, e.g. for ``Oro\Bundle\TranslationBundle\Entity\Translation`` - `oro.translation.entity_grid_all_view_label`.
 
 Suppose the `allLabel` option is not specified, and the translation key is not translated. In that case, the label for All grid view is created by concatenating the `oro.datagrid.gridView.all` translation key and the entity name in the plural form, e.g., for the Contact entity in the English language, it is "All Contacts".
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

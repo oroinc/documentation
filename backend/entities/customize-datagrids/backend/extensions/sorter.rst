@@ -87,3 +87,8 @@ The sorters setting should be placed under the `sorters` tree node.
      * Customization can be done using the `apply_callback` options.
      * Column name should be equal to the name of the corresponding column.
      * Disable the sorter if it is defined but the column is disabled
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

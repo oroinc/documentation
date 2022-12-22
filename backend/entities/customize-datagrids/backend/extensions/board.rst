@@ -75,9 +75,7 @@ Datagrid Configuration Details
             key: value
         save_api_accessor: #Describes the way to send update request. Please see documentation for :ref:`oroui/js/tools/api-accessor <bundle-docs-platform-ui-bundle-apiaccessor>`.
 
+**Related Articles**
 
-
-
-
-
-
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

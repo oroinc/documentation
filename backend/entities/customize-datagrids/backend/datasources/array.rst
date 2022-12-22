@@ -86,4 +86,7 @@ Predefined columns can be defined using the following configuration:
                     first_column:
                         data_name: first_column
 
+**Related Articles**
 
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

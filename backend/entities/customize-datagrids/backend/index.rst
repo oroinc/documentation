@@ -41,6 +41,8 @@ For example:
                 query:
                     ....   # some query configuration
 
+.. _customizing-data-grid-datasource-as-service:
+
 Datasource as Service
 ~~~~~~~~~~~~~~~~~~~~~
 

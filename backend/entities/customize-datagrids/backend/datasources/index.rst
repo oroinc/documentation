@@ -110,3 +110,8 @@ You can protect a datasource with ACL by adding the ``acl_resource`` parameter u
 
    array
    orm
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

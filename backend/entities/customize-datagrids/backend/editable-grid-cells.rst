@@ -1,3 +1,7 @@
+:oro_show_local_toc: false
+
+.. _customize-datagrids-editable-datagrid-cells:
+
 Editable Datagrid Cells
 =======================
 
@@ -166,3 +170,8 @@ Below is an example of such a handler:
         $this->manager->flush();
     }
     ...
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

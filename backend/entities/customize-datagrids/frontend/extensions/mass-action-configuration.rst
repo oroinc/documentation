@@ -85,3 +85,8 @@ launcherMode: `text-only`
     <a class="action" href="#action_url">
         <%= label %>
     </a>
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`
