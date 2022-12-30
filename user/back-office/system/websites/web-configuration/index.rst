@@ -56,6 +56,10 @@ More information about the options available for each of the two categories is a
     * :ref:`Website Access <sys--conf--commerce--guest-access--website>`
     * :ref:`SEO <sys--conf--commerce--guest-seo--website>`
 
+  * Taxation
+
+    * :ref:`Shipping Tax <configuration--commerce--shipping-tax--website>`
+
   * Design
 
     * :ref:`Theme <configuration--commerce--design--theme--theme-settings--website>`
@@ -99,6 +103,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Saved Search <configuration--website-commerce--search--saved-search>`
     * :ref:`Fuzzy Search <configuration--website-commerce--search--fuzzy-search>`
     * :ref:`Search Synonyms <configuration--website-commerce--search--synonyms>`
+    * :ref:`Customer Recommendations <website-configuration--commerce--search--customer-recommendation>`
 
   * Orders
 

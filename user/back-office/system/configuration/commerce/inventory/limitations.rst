@@ -21,7 +21,7 @@ To change the default inventory quantity limitations:
       :class: with-border
       :alt: Global inventory limitations configuration settings
 
-   The following table describes the options available on the page:
+3. Customize any of the options by clearing the **Use Default** box next to the option and providing the updated quantity.
 
    +---------------------------+----------------------------------------------------------------------------------------------------------------------+
    | Name                      | Description                                                                                                          |
@@ -31,11 +31,6 @@ To change the default inventory quantity limitations:
    | Maximum Quantity To Order | Maximum quantity that buyer or sales person  may be the claim in the RFQ, customer order, quote, or a shopping list. |
    +---------------------------+----------------------------------------------------------------------------------------------------------------------+
 
-3. To customize any of these options:
 
-     a) Clear the **Use Default** box next to the option.
-     b) Type in the updated quantity.
 
 4. Click **Save**.
-
-.. comment FIXME Clarify Managed Inventory purpose. 

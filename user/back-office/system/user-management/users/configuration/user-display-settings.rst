@@ -21,89 +21,51 @@ In the Display section, you can configure the following display options for a pa
 
 4. Clear the **Use Organization** checkbox to change the organization-wide setting for the following options:
 
-   **User bar**
+5. In the **User Bar** section, configure the setting:
 
-   +--------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Field              | Description                                                                                                                      |
-   +====================+==================================================================================================================================+
-   | Show Recent Emails | Select this checkbox to display the recent emails on the user bar (they will appear next to the user name).                      |
-   |                    |                                                                                                                                  |
-   |                    | .. image:: /user/img/system/user_management/user_configuration_showemailsuserbar.png                                             |
-   |                    |    :alt: A recent emails icon displayed on the user bar                                                                          |
-   |                    |                                                                                                                                  |
-   +--------------------+----------------------------------------------------------------------------------------------------------------------------------+
+   * **Show Recent Emails** --- Enable the checkbox to display the recent emails on the user bar. They will appear next to the user name.
 
-   **Navigation bar**
+   .. image:: /user/img/system/user_management/user_configuration_showemailsuserbar.png
+      :alt: A recent emails icon displayed on the user bar
 
-   +----------+----------------------------------------------------------------------------------------------------+
-   | Field    | Description                                                                                        |
-   +==========+====================================================================================================+
-   | Position | Select whether the OroCommerce main menu will be positioned at the top of the page or on its left. |
-   +----------+----------------------------------------------------------------------------------------------------+
+6. In the **Navigation bar** section, configure the setting:
 
-   **Data Grid settings**
+   * **Position** --- Select whether the OroCommerce main menu will be positioned at the top of the page or on its left.
 
-   +---------------------------+----------------------------------------------------------------------------------------------------------------+
-   | Field                     | Description                                                                                                    |
-   +===========================+================================================================================================================+
-   | Items Per Page By Default | Select how many records will appear on one page of record grids.                                               |
-   +---------------------------+----------------------------------------------------------------------------------------------------------------+
-   | Lock Headers In Grids     | Select this checkbox to ensure that headers of a record grid will stay visible while you scroll.               |
-   +---------------------------+----------------------------------------------------------------------------------------------------------------+
-   | Record Pagination         | Select this checkbox to enable the user navigate to the previous or next grid record from a record view page.  |
-   |                           |                                                                                                                |
-   |                           | .. image:: /user/img/system/config_system/user_configuration_pagination.png                                    |
-   |                           |    :alt: A record pagination sample                                                                            |
-   |                           |                                                                                                                |
-   +---------------------------+----------------------------------------------------------------------------------------------------------------+
-   | Record Pagination Limit   | Type the maximum number of records that the user can navigate from a record view page.                         |
-   +---------------------------+----------------------------------------------------------------------------------------------------------------+
+7. In the **Data Grid Settings** section, configure the options to display all the record lists (grids) in the back-office:
 
-   **Activity lists**
+   * **Items Per Page By Default** --- Defines the number of items displayed on one page of the grid by default (every time you open the grid).
+   * **Lock Headers In Grids** --- Ensures that grid headers stay visible while you scroll.
+   * **Row Link Navigation** --- Enables the ability for the row in the grid to behave like a native link. By right-clicking on the item in the grid, you can open it in a new tab/window.
+   * **Record Pagination** --- Enables the user navigation to the previous or next grid record from a record view page.
+   * **Record Pagination Limit** --- Type the maximum number of records that the user can navigate from a record view page.
 
-   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | Field                     | Description                                                                                                                         |
-   +===========================+=====================================================================================================================================+
-   | Sort By Field             | Select whether to sort activity records by the date when they were created or by the date when they were updated for the last time. |
-   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | Sort Direction            | Select whether to sort records in the ascending or descending direction.                                                            |
-   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | Items Per Page By Default | Select how many records will appear on one page of the activity grids.                                                              |
-   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   .. image:: /user/img/system/config_system/user_configuration_pagination.png
+      :alt: A record pagination sample
+
+8. In the **Activity Lists** section, configure the options to display :ref:`activities <user-guide-activities>`.
+
+   * **Sort By Field** --- Select whether to sort activity records by the date when they were created or by the date when they were updated for the last time.
+   * **Sort Direction** --- Select whether to sort records in the ascending or descending direction.
+   * **Items Per Page By Default** --- Select how many records will appear on one page of the activity grids.
 
 
-   **WYSIWYG settings**
+9. In the **WYSIWYG Settings** section, enable the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` setting:
 
-   +-----------------------+-----------------------------------------------------------------------------------------------------------+
-   | Field                 | Description                                                                                               |
-   +=======================+===========================================================================================================+
-   | Enable WYSIWYG Editor | Select this checkbox to enable text formatting tools for emails, notes and comments.                      |
-   |                       |                                                                                                           |
-   |                       | .. image:: /user/img/system/config_system/user_configuration_wysiwyg.png                                  |
-   |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
-   |                       |                                                                                                           |
-   +-----------------------+-----------------------------------------------------------------------------------------------------------+
+   * **Enable WYSIWYG Editor** --- Select this checkbox to enable text formatting tools for emails, notes and comments.
 
-For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
+   .. image:: /user/img/system/config_system/user_configuration_wysiwyg.png
+      :alt: A formatting tool bar that enables editing a text for emails, notes, and comments
 
-   **Sidebar settings**
+10. In the **Sidebar Settings** section, enable or disable the left and/or right sidebar to keep your sticky notes and task lists:
 
-   +----------------------+-------------------------------------------------------------------------+
-   | Field                | Description                                                             |
-   +======================+=========================================================================+
-   | Enable Left Sidebar  | Select **Yes** to enable the user to see and utilize the left sidebar.  |
-   +----------------------+-------------------------------------------------------------------------+
-   | Enable Right Sidebar | Select **Yes** to enable the user to see and utilize the right sidebar. |
-   +----------------------+-------------------------------------------------------------------------+
+   * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and utilize the left sidebar.
+   * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and utilize the right sidebar.
 
-   **Reports settings**
+11. In the **Reports Settings** section, configure the following settings:
 
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
-   | Field                               | Description                                                                                                      |
-   +=====================================+==================================================================================================================+
-   | Display SQL In Reports And Segments | Select this checkbox to enable the user to review the SQL request sent to the system for a report or a segment.  |
-   |                                     |                                                                                                                  |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
+    * **Display SQL In Reports And Segments** --- Select this checkbox to enable the user to review the SQL request sent to the system for a report or a segment. This way, users can check if a report has been developed correctly.
+
 
    .. image:: /user/img/system/config_system/user_configuration_showsql.png
       :alt: A sample of the enabled display SQL field

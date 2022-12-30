@@ -5,12 +5,7 @@
 Configure Global Settings for Product Images
 ============================================
 
-On the Product Images configuration page, you can control the following settings:
-
-* `Image Watermark`_
-* `Image Preview on Product Listing Page`_
-* `Image Gallery`_
-
+On the Product Images configuration page, you can control the way images are previewed on product listing pages and configure whether to use popup or inline view for the image gallery.
 
 To configure the product image settings globally:
 
@@ -23,10 +18,7 @@ To configure the product image settings globally:
    .. image:: /user/img/system/config_commerce/product/ProductImages.png
       :alt: Global product image watermark configuration settings
 
-3. Customize any of the options by proceeding through the following steps:
-
-     a) Clear the **Use Default** checkbox next to the option.
-     b) Enable the required checkbox or enter the necessary file size and type information.
+3. To customize the option configuration, clear the **Use Default** checkbox next to the option and select the required value.
 
 4. In the **General** section, configure the following options:
 
@@ -37,10 +29,7 @@ To configure the product image settings globally:
 
 .. _sys--commerce--product--product-images:
 
-Image Watermark
----------------
-
-In the **Product Image Watermark** section, you can control the watermark that will appear on top of every image uploaded as part of product details on two levels, globally and :ref:`per website <sys--websites--commerce--product--product-images>`.
+5. In the **Product Image Watermark** section, you can control the watermark that will appear on top of every image uploaded as part of product details.
 
    * **File** — The image file with the watermark on a transparent background.
    * **Size** — The size of the watermark in percentage compared to the whole image.
@@ -49,45 +38,30 @@ In the **Product Image Watermark** section, you can control the watermark that w
 
 .. _sys--commerce--product--product-images--image-preview--global:
 
-Image Preview on Product Listing Page
--------------------------------------
-
-In the **Image Gallery Options** section, enable or disable product previews on product listing pages by simplifying product selection for customer. This can be done on three levels, globally, :ref:`per organization <sys--commerce--product--product-images--image-preview--organization>`, and :ref:`per website <sys--commerce--product--product-images--image-preview--website>`.
+6. In the **Image Gallery Options** section, enable or disable product previews on product listing pages by simplifying product selection for customer.
 
    .. image:: /user/img/system/config_commerce/product/ImagePreviewGlobal.png
-      :class: with-border
       :alt: Global image gallery options configuration settings
 
-When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
+   When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
 
    .. image:: /user/img/system/config_commerce/product/ImagePreviewEnabled.png
-      :class: with-border
       :alt: Illustration of the Enable Image Preview on Product Listing option in the storefront
 
-When **Enable Image Preview on Product Listing** is disabled, clicking on the product image on the product listing page in the storefront will open the product page.
+   When **Enable Image Preview on Product Listing** is disabled, clicking on the product image on the product listing page in the storefront will open the product page.
 
    .. image:: /user/img/system/config_commerce/product/ImagePreviewDisabled.png
-      :class: with-border
       :alt: Illustration of the Enable Image Preview on Product Listing option disabled
-
-   .. note:: By default, **Enable Image Preview on Product Listing** is enabled.
 
 .. _sys--commerce--product--product-images--gallery-slider-global:
 
-Image Gallery
--------------
+7. In the **Image Gallery Options** section, choose whether to use popup or inline view for the image gallery in the storefront.
 
-n the **Image Gallery Options** section, choose whether to use popup or inline view for the image gallery in the storefront.
+   .. image:: /user/img/system/config_commerce/product/ImageGallery.png
 
-.. hint:: This can be configured on three levels, globally, :ref:`per organization <sys--users--organization--commerce--products--gallery-slider>` and :ref:`per website <sys--websites--commerce--product--gallery-slider>`.
-
-.. image:: /user/img/system/config_commerce/product/ImageGallery.png
-   :class: with-border
-
-When **Popup Gallery on Product View** is enabled, image gallery in the storefront will take the following form:
+   When **Popup Gallery on Product View** is enabled, image gallery in the storefront will take the following form:
 
    .. image:: /user/img/system/config_commerce/product/ImageGalleryEnabled.png
-      :class: with-border
       :alt: Illustration of the Popup Gallery on Product View option in the storefront
 
    By clicking on the image, the pop up gallery will be displayed in the middle of the screen:
@@ -96,7 +70,7 @@ When **Popup Gallery on Product View** is enabled, image gallery in the storefro
       :class: with-border
       :alt: Displaying the popup gallery functionality
 
-When **Popup Gallery on Product View** is disabled, the image gallery will take the form of an inline view:
+   When **Popup Gallery on Product View** is disabled, the image gallery will take the form of an inline view:
 
    .. image:: /user/img/system/config_commerce/product/ImageGalleryDisabled.png
       :class: with-border
@@ -104,9 +78,8 @@ When **Popup Gallery on Product View** is disabled, the image gallery will take 
 
    Flick through the pictures in the gallery by pressing < or > arrows without leaving the product page.
 
-   .. note:: By default, **Popup Gallery on Product View** is enabled.
 
-5. Click **Save Settings**.
+8. Click **Save Settings**.
 
 
 

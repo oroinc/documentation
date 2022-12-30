@@ -23,7 +23,9 @@ To update the product unit settings:
       :alt: The product units configuration page
       :class: with-border
 
-The following options are available:
+3. To customize the option configuration, clear the **Use Default** checkbox next to the option and select the required value.
+
+4. The following options are available:
 
    * **Unit Rounding Type** -- An algorithm that is used to round the volume specified for this unit (ceil, floor, half down, or half up).
    * **Single Unit** -- When enabled, it limits the product unit to just one default value and restricts adding new product units. This setting must be enabled at the very beginning of the production mode, so that no additional units of quantity could be added to products. 
@@ -34,14 +36,9 @@ The following options are available:
    * **Default Primary Unit** -- The product unit that is shown by default in the website.
    * **Default Primary Unit Precision** -- The number of digits after the floating point that limits the Primary unit precision (e.g., 1 for 0.x, 2 for 0.xx, 3 for 0.xxx and so on).
 
-.. note:: Please keep in mind that when importing products into the application the *Product Single Unit Mode* setting is not checked. This means that even if the *Single Unit* setting is enabled, the admin can still create and import products with additional product units using API. In addition, if *Single Unit* is enabled and *Show Unit Code* is disabled, unit codes are not displayed anywhere, except for the product page and shopping list bucket.
+.. note:: Please keep in mind that when importing products into the application, the *Product Single Unit Mode* setting is not checked. This means that even if the *Single Unit* setting is enabled, the admin can still create and import products with additional product units using API. In addition, if *Single Unit* is enabled, and *Show Unit Code* is disabled, unit codes are not displayed anywhere, except for the product page and shopping list bucket.
 
-3. To customize any of these options:
-
-     a) Clear the **Use Default** checkbox next to the option.
-     b) Enter the updated quantity.
-
-4. Click **Save**.
+5. Click **Save**.
 
 **Related Articles**
 
