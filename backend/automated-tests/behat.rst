@@ -607,7 +607,8 @@ You can use references to the entities in both inline and |alice fixtures|.
 ``{BundlePath}\Tests\Behat\ReferenceRepositoryInitializer`` is used to create references for objects that already exist in the database.
 
 * It is prohibited to modify or add new entities within Initializer.
-* It should implement ``ReferenceRepositoryInitializerInterface`` and should not have dependencies.
+* It should implement ``ReferenceRepositoryInitializerInterface``.
+* It should be registered as the Behat container service in the ``{BundlePath}/Tests/Behat/services.yml`` file with the ``oro_behat.reference_repository_initializer`` tag.
 * To show all references, use the ``bin/behat --available-references`` command.
 
 The most commonly used references:
