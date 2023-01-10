@@ -54,9 +54,9 @@ OroCommerce works with the following payment methods:
 
   Ingenico ePayments' global payment platform extension for OroCommerce enables sellers to improve their payments experience by accepting online payments from customers in the OroCommerce storefront and manage all transactions in the OroCommerce back office.
 
-* :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
+..  :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
 
-  CyberSource is a payment gateway solution that allows merchants to safely accept and effectively process payments.
+.. CyberSource is a payment gateway solution that allows merchants to safely accept and effectively process payments.
 
 .. hint:: The default OroCommerce application includes the following payment methods out-of-the-box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extensions Store| to download other payment extensions that you can pair with your OroCommerce applications.
 

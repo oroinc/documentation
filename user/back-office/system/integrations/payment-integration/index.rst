@@ -42,9 +42,9 @@ You integrate OroCommerce with the following systems and services:
 * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`
 * :ref:`InfinitePay <user-guide--payment--payment-providers-overview--infinitepay>`
 * :ref:`Ingenico <user-guide--payment--payment-providers-overview--ingenico>`
-* :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
 * :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`
 
+.. :ref:` CyberSource <user-guide--payment--payment-providers-cybersource> `
 
 .. hint:: The default OroCommerce application includes the following payment methods out-of-the-box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extensions Store| to download other payment extensions that you can pair with your OroCommerce applications.
 
@@ -88,7 +88,7 @@ The payment methods that were based on this integration are no longer usable in 
    Authorize.Net Payments Services <authorizenet/index>
    InfinitePay Payment Service <infinitepay/index>
    Ingenico Payment Service <ingenico/index>
-   CyberSource Payment Service <cybersource/index>
    Stripe <stripe/index>
    Payments at Checkout <checkout/index>
 
+..  CyberSource Payment Service <cybersource/index>

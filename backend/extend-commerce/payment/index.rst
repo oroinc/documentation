@@ -509,8 +509,8 @@ Clear the application cache, open the user interface and try to submit an order.
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :hidden:
 
-   CyberSource Integration <cybersource>
+..   CyberSource Integration <cybersource>

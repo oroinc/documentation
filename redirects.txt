@@ -337,3 +337,5 @@ user/back-office/system/integrations/outlook/mapping /user/back-office/system/in
 user/back-office/system/configuration/system/integrations/outlook-settings-oro /user/back-office/system/configuration/system/integrations
 user/back-office/system/user-management/organizations/org-configuration/general-setup-org/integrations/organization-outlook /user/back-office/system/user-management/organizations/org-configuration/general-setup-org/integrations
 user/back-office/system/user-management/users/configuration/user-ms-outlook /user/back-office/system/user-management/users/configuration
+backend/extend-commerce/payment/cybersource /backend/extend-commerce/payment
+user/back-office/system/integrations/payment-integration/cybersource /user/back-office/system/integrations/payment-integration/
