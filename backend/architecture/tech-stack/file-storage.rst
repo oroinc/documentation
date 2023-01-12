@@ -274,6 +274,8 @@ For example, if you have configured ``my_public`` Gaufrette filesystem that uses
 
 In this example, the files are available via the ``http://your_domain/media/my_public/filename`` URIs.
 
+.. _backend-file-storage-access-to-data-via-stream-wrappers:
+
 Access to Data via Stream Wrappers
 ----------------------------------
 
@@ -291,6 +293,8 @@ You can use the read-only stream wrapper if you need to read data but do not kno
 For example, this case can be figured if the local adapter was used and the files were uploaded by someone other than the user that runs
 the application. By default, the wrapper is configured to use the ``gaufrette-readonly`` protocol.
 To get the full URL of a file use `getReadonlyFilePath()` method of the |FileManager| service.
+
+.. _backend-file-storage-migrate-data-command:
 
 Migrate Data Command
 --------------------
@@ -332,7 +336,7 @@ in your bundle and add it into the Bundle class:
     class MigrateFileStorageCommandCompilerPass implements CompilerPassInterface
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function process(ContainerBuilder $container)
         {
@@ -343,13 +347,36 @@ in your bundle and add it into the Bundle class:
                     'addMapping',
                     ['/var/some_path', 'some_filesystem']
                 )
-                // adds the filemanager service as 'some_filesystem' filesystem
+                // adds the file manager service as 'some_filesystem' filesystem
                 ->addMethodCall(
                     'addFileManager',
                     ['some_filesystem', new Reference('acme_your_bundle.file_manager')]
                 );
         }
     }
+
+
+.. _backend-file-storage-cleanup-lost-attachment-files-command:
+
+Cleanup Lost Attachment Files Command
+-------------------------------------
+
+When :ref:`GridFSConfigBundle <bundle-docs-platform-gridfs-config-bundle>` is installed, and |GridFS| is configured
+to :ref:`store attachment files <attachment-bundle-storage>`, you can use the ``oro:attachment:cleanup-gridfs-files``
+console command to check if any attachment file is left unlinked in the storage and to purge such files.
+
+To see the list of lost files, use this command with the ``--dry-run`` option:
+
+.. code-block:: bash
+
+   php bin/console oro:attachment:cleanup-gridfs-files --dry-run
+
+To purge lost files, use this command with the ``--force`` option:
+
+.. code-block:: bash
+
+   php bin/console oro:attachment:cleanup-gridfs-files --force
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

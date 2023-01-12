@@ -366,7 +366,21 @@ The default configuration for extension with alias "oro_attachment":
         processors_allowed:   true
         png_quality:          100
         jpeg_quality:         85
-        webp_strategy:        if_supported
+
+        # Strategy for converting uploaded images to WebP format.
+        webp_strategy:        if_supported # One of "for_all"; "if_supported"; "disabled"
+
+        # The configuration of the attachment cleanup command.
+        cleanup:
+
+            # The number of attachment files that can be loaded from the filesystem at once.
+            collect_attachment_files_batch_size: 20000
+
+            # The number of attachment entities that can be loaded from the database at once to check whether an attachment file is linked to an attachment entity.
+            load_existing_attachments_batch_size: 500
+
+            # The number of attachment entities that can be loaded from the database at once.
+            load_attachments_batch_size: 10000
 
 oro_batch
 _________
