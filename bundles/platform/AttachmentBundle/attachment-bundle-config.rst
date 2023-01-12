@@ -16,7 +16,6 @@ To add or remove available mime types, add changes to the ``upload_file_mime_typ
 
 .. code-block:: yaml
 
-
         oro_attachment:
             upload_file_mime_types:
                 - application/msword
@@ -130,6 +129,16 @@ Configure Storage
 -----------------
 
 OroAttachmentBundle uses |KnpGaufretteBundle| to provide a filesystem abstraction layer.
+
+The Gaufrette file system is used to store attachment files named as ``attachments`` and has the following
+configuration:
+
+.. code-block:: yaml
+
+        knp_gaufrette:
+            filesystems:
+                adapter: private
+                alias: attachments_filesystem
 
 Based on the default configuration, it stores files in a private storage
 (``var/data/attachment`` directory of your project if the local filesystem is used as storage).
@@ -341,7 +350,6 @@ To disable debug images, set the ``debug_images`` option to ``false`` in the con
 
 .. code-block:: yaml
 
-
        oro_attachment:
            debug_images: false
 
@@ -365,7 +373,6 @@ For proper work, you need the libraries whose versions correspond to the followi
 To configure additional libraries you need to add the following parameters to the parameters.yml:
 
 .. code-block:: yaml
-
 
    liip_imagine.pngquant.binary: /usr/bin/pngquant
    liip_imagine.jpegoptim.binary: /usr/bin/jpegoptim
