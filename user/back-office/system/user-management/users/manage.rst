@@ -114,12 +114,11 @@ Once the API key is generated, the user can execute API requests via the sandbox
 
 
 .. _doc-user-management-users-actions-change-password:
-.. _doc-user-management-users-actions-reset-password:
 
-Change/Reset User Passwords
----------------------------
+Change User Passwords
+---------------------
 
-You can change and reset the password for a specific user on their profile page in the **More Actions** menu:
+You can change the password for a specific user on their profile page in the **More Actions** menu:
 
  .. image:: /user/img/system/user_management/user_page_change_reset_password.png
 
@@ -131,17 +130,32 @@ You can change and reset the password for a specific user on their profile page 
 
      .. image:: /user/img/system/user_management/user_change_password.png
 
-   * Click |IcPassReset| **Reset Password** to send an email to the user with a new password.
+.. _doc-user-management-users-actions-reset-password:
 
-     .. image:: /user/img/system/user_management/user_reset_password.png
+Reset User Passwords
+--------------------
 
-     The user will not be able to log into the application until their password is changed. In this case, the user authentication status changes to **Password reset**. It will return to **Active** when the user changes the password.
+An administrator can request the customer user to change their password by clicking the **More Actions** menu on user profile page and selecting the |IcPassReset| **Reset Password** option:
 
-     .. image:: /user/img/system/user_management/user_password_reset.png
+.. image:: /user/img/system/user_management/user_page_change_reset_password.png
 
-.. note:: Alternatively, you can reset password for a specific user from the table of all users. For this, hover over the ellipsis menu at the end of the row of the selected user, and click **Reset Password**.
+The confirmation dialogue will be shown to confirm the reset of the user password.
+
+.. image:: /user/img/system/user_management/user_reset_password.png
+
+By clicking on the **Reset** button, a user will receive an email with a link to update their password. Users can only log into the application once their password is changed, in which case their password status changes to **Reset** in the back-office. The status switches to **Active** as soon as the customer user changes the password.
+
+.. image:: /user/img/system/user_management/user_password_reset.png
+
+.. note:: Alternatively, you can reset password for a specific user from the grid of all users. For this, hover over the ellipsis menu at the end of the row of the selected user, and click **Reset Password**.
 
      .. image:: /user/img/system/user_management/user_reset_password_from_grid.png
+
+You can change the email contents by updating the **force_reset_password** :ref:`email template <user-guide-using-emails-create-template>` of the User entity.
+
+The link in the email will have a refresh token to enable password change for a user. By default, this token and the reset password link in the email are valid for 24 hours from the moment the reset request is thrown.
+
+An administrator can change this ttl in the :ref:`configuration of the User bundle <yaml-bundles-configuration-reset-password>`.
 
 .. _doc-user-management-users-actions-reset-password-multiple:
 
@@ -155,7 +169,7 @@ When you suspect a security breach, you can reset passwords for multiple users a
 3. Click the ellipsis menu at the right end of the table header row and then click |IcPassReset| **Reset Password**.
 4. In the **Reset Password** dialog box, click **Reset**. The password reset links are sent to the primary email addresses of the selected users.
 
-.. important::  The users will not be able to log into the application until their passwords are changed. Note that user authentication statuses change to **Password reset**. They will return to **Active** when the users complete password change procedure.
+.. important:: The users will not be able to log into the application until their passwords are changed. Note that user authentication statuses change to **Password reset**. They will return to **Active** when the users complete password change procedure.
 
      .. image:: /user/img/system/user_management/users_mass_reset_passwords.png
 
@@ -167,7 +181,6 @@ Add OAuth Applications to a User
 .. include:: /user/back-office/system/user-management/oauth-app.rst
    :start-after: begin_oauth1
    :end-before: finish_oauth1
-
 
 Add an Application
 ^^^^^^^^^^^^^^^^^^
@@ -207,6 +220,10 @@ Use the generated Client ID and Client Secret to retrieve an access token to con
 
 .. note:: For the aggregated information on all OAuth applications created by users in the back-office, refer to the general :ref:`OAuth Applications <oauth-applications>` topic.
 
+**Related Articles**
+
+* :ref:`Password Change Policy <doc-user-management-users-actions-password-change-policy>`
+* :ref:`Password History Policy <user-guide--customers--customer-user-password-history-policy>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

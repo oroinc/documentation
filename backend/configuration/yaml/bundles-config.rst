@@ -1181,6 +1181,8 @@ The default configuration for extension with alias "oro_translation":
                     # The field name where the key is stored.
                     key_field_name:       ~
 
+.. _yaml-bundles-configuration-reset-password:
+
 oro_user
 ________
 
@@ -1190,6 +1192,7 @@ The default configuration for extension with alias "oro_user":
 
     oro_user:
         reset:
+            // Determine the reset password token ttl, sec
             ttl:                  86400
         privileges:
 
