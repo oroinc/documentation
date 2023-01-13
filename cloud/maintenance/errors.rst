@@ -3,7 +3,7 @@
 Error Processing and Log Monitoring
 ===================================
 
-Troubleshooting performance issues is not always straightforward, as many things can affect application performance, but proper monitoring practice prevents bugs from heavily impacting your production. We, therefore, recommend using Google Cloud Platform (GCP) Error Reporting and Logging management tools to identify slow application requests, analyze the root cause of the issues, and set up notifications for potential errors. These tools can help you build a powerful error-processing flow to keep quality standards high and minimize the number of errors that may slip into your production environment.
+Troubleshooting performance issues is not always straightforward, as many things can affect application performance, but proper monitoring practice prevents bugs from heavily impacting your production. We, therefore, recommend using |Google Cloud Platform (GCP)| |Error Reporting| and |Logs Explorer| tools to identify slow application requests, analyze the root cause of the issues, and set up notifications for potential errors. These tools can help you build a powerful error-processing flow to keep quality standards high and minimize the number of errors that may slip into your production environment.
 
 .. image:: /cloud/img/gcp/gcp-menu.png
    :alt: Error Reporting and Logging in GCP menu panel

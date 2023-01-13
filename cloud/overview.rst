@@ -9,7 +9,7 @@ Adoption of cloud platforms has skyrocketed due to their elasticity, security, a
 
 With full control over the resources and infrastructure configuration that cloud platforms offer today, one can hardly find any downsides of moving their business solutions from the private in-house infrastructure to the highly distributed and fault-tolerant global resources provided by the cloud niche leaders.
 
-Oro's cloud offering is based on Google Cloud Platform (GCP) which is used as Infrastructure-as-a-Service (IaaS) layer for OroCloud. GCP works well for OroCloud because it provides a flexible infrastructure that scales on-demand, end-to-end security, and a very competitive price. Google constantly expands their infrastructure by |opening new regions and enhancing the network|.
+Oro's cloud offering is based on |Google Cloud Platform (GCP)| which is used as Infrastructure-as-a-Service (IaaS) layer for OroCloud. GCP works well for OroCloud because it provides a flexible infrastructure that scales on-demand, end-to-end security, and a very competitive price. Google constantly expands their infrastructure by |opening new regions and enhancing the network|.
 
 .. note::
     See Google’s take on |Why Google Cloud|.

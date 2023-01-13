@@ -13,7 +13,7 @@ Architecture
 Google Cloud Platform
 ^^^^^^^^^^^^^^^^^^^^^
 
-Google Cloud Platform (GCP) is an Infrastructure as a Service (IaaS) provider with many data centers located all around the globe. To organize GCP resources for a particular OroCloud environment, the resources are grouped into a |GCP project|. Within a single project, resources are optimized for data transmission and communication within the same |region| and provide redundancy for high availability with redundant resources distributed among multiple zones.
+|Google Cloud Platform (GCP)| is an Infrastructure as a Service (IaaS) provider with many data centers located all around the globe. To organize GCP resources for a particular OroCloud environment, the resources are grouped into a |GCP project|. Within a single project, resources are optimized for data transmission and communication within the same |region| and provide redundancy for high availability with redundant resources distributed among multiple zones.
 
 GCP Data Centers
 ~~~~~~~~~~~~~~~~
