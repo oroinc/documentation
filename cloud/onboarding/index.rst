@@ -69,7 +69,7 @@ If you happen to require a system update or customization at a later time, you m
 Request Further Deployment and Configuration Services
 -----------------------------------------------------
 
-On top of deployment and configuration processes described in this topic, you may need to request our Support team to arrange implementation of other services and activities required before going live with your OroCloud solution. These activities may include:
+On top of deployment and configuration processes described in this topic, you may need to request our Support team using |Oro Inc. Partners Support > New Environment Request| to arrange implementation of other services and activities required before going live with your OroCloud solution. These activities may include:
 
 * Configuring basic authentication for your OroCloud instance
 * Configuring your back-office URL

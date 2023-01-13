@@ -143,7 +143,7 @@ Some options may also be omitted as they are added automatically:
 Application Configuration
 -------------------------
 
-There are two types of pages in Oro cloud, maintenance and error. Maintenance pages allow to determine the page you will see when you move the application into the maintenance mode. Error pages allow to redefine the standard pages that will be displayed in the event of the following errors:
+There are two types of pages in OroCloud, maintenance and error. Maintenance pages allow to determine the page you will see when you move the application into the maintenance mode. Error pages allow to redefine the standard pages that will be displayed in the event of the following errors:
 
 * Error 403 can be returned by the application itself when authorization is blocked, and by the web application firewall. 
 
@@ -153,7 +153,9 @@ There are two types of pages in Oro cloud, maintenance and error. Maintenance pa
 * Error 501 is returned when when service is not implemented and/or the application does not support the requested functionality
 * Error 502 is returned when the server is unavailable (for example, because of the outage).
 
-Custom maintenance page, error pages (403, 451, 501, 502), web backend prefix, and consumers debug mode can be configured as described below. Keep in mind that the web_backend_prefix parameter should start with "/" and should not end with "/", for instance '/admin':
+``error_pages_path`` is a dynamic error page directory configuration. The default location is the ``error_pages`` directory in a repository. File matching works with response codes and hosts, like 503.$host.html => 503.html => ``error_pages`` option value. Supported response codes are 403, 451, 501, 502, and 503.		
+
+Custom maintenance pages, error pages (403, 451, 501, 502), error pages path, web backend prefix, and consumer debug mode can be configured as described below. Keep in mind that the web_backend_prefix parameter must start with "/" but never end with "/" (for instance, '/admin'):
 
 .. code-block:: none
 
@@ -166,11 +168,12 @@ Custom maintenance page, error pages (403, 451, 501, 502), web backend prefix, a
           451: 'public/451.html'
           501: 'public/501.html'
           502: 'public/502.html'
+        error_pages_path: 'error_pages'
         web_backend_prefix: '/my_admin_console_prefix'
         consumers_debug_mode: true
 
 
-The ``maintenance_page`` and ``error_pages`` are relative paths to files in the application repository. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 30 minutes.
+The ``maintenance_page``, ``error_pages_path`` and ``error_pages`` are relative paths to files in the application repository. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 30 minutes.
 
 .. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to the Service Desk before making any changes. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``upgrade:source`` to apply changes.
 
@@ -185,10 +188,15 @@ Webserver configuration can be modified, as illustrated below:
     orocloud_options:
       webserver:
         header_x_frame: true
+        header_x_frame_app_control: true
         redirects_map:
           '/about_us_old': '/about'
           '/about_them_old': '/about_them'
           '/news/new_event' : 'https://corpsite.com/events/newest'
+        redirects_map_include:
+          - 'redirects/website1.yml'
+          - 'redirects/website2.yaml'
+          - '/mnt/ocom/app/redirects.yml'
         locations:
           'root':
             type: 'php'
@@ -256,7 +264,8 @@ Webserver configuration can be modified, as illustrated below:
           'ua':
             'allow' :
               - 'GoogleStackdriverMonitoring'
-              - 'Some Custom agent'
+              - 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0); 360Spider',
+              - 'Mozilla\/5\.0 \(compatible\;\ MSIE\ 9\.0;\ Windows\ NT 6\.1\;\ Trident\/5\.0\)\;\ 360Spider',
             'deny'  :
               - 'AcoiRobot'
               - 'Wget'
@@ -286,10 +295,14 @@ This configuration option enables you to setup redirects to the existing URLs of
 
 * **redirects_map** — the hash where the key is an old URL, and the value is a new URL.
 
+* **redirects_map_include** — list of YAML files with the hashes where the key is an old URL, and the value is a new URL (similar to ``redirects_map``).
+
 X Frame Header Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * **header_x_frame: true** — is the default value of the flag. In this case, OroCloud WAF adds the "X-Frame-Options: SAMEORIGIN" header when responding to the initial request. It makes it impossible to embed any OroCommerce site into iFrame at any site except itself to fulfill security requirements.
+
+* **header_x_frame_app_control: true** - Ignore "X-Frame-Options" header and allow application to decide if header is required.
 
 Some business cases require embedding the OroCloud site into the iFrame at other sites. You need to set the value to “false” : ``header_x_frame: false``.
 This prevents WAF from sending the “X-Frame-Options” header which allows embedding into any iFrame.
@@ -388,7 +401,8 @@ Source filtering rules are defined in the ``webserver`` section. This is the chi
           'ua':
             'allow' :
               - 'GoogleStackdriverMonitoring'
-              - 'Some Custom agent'
+              - 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0); 360Spider',
+              - 'Mozilla\/5\.0 \(compatible\;\ MSIE\ 9\.0;\ Windows\ NT 6\.1\;\ Trident\/5\.0\)\;\ 360Spider',
             'deny'  :
               - 'AcoiRobot'
               - 'Wget'
@@ -431,7 +445,7 @@ An example of the rule to deny requests from the defined countries:
 
 In this example, all requests from China and Russia are to be rejected.
 
-* ``ua`` --- The hash provides the ability to allow or deny requests from the specific user agents. A user agent is defined by the regexp string. There are two possible lists for this hash: ``allow`` and ``deny`` to allow or deny requests from the listed user agents correspondingly.
+* ``ua`` --- The hash provides the ability to allow or deny requests from the specific user agents. A user agent is defined by the regexp string. Scalar values are transformed to regexps automatically. There are two possible lists for this hash: ``allow`` and ``deny`` to allow or deny requests from the listed user agents.
 
 An example of the user agent rule:
 
@@ -440,14 +454,14 @@ An example of the user agent rule:
 
    'ua':
      'allow' :
-       - 'GoogleStackdriverMonitoring'
-       - 'Some Custom agent'
+        - 'GoogleStackdriverMonitoring'
+        - 'AdsBot-Google (+http://www.google.com/adsbot.html)'
      'deny'  :
        - 'AcoiRobot'
        - 'Wget'
 
 
-This example allows requests from the ``GoogleStackdriverMonitoring`` user agent and rejects all requests from ``AcoiRobot`` and ``Wget``.
+This example allows requests from the ``GoogleStackdriverMonitoring`` and ``AdsBot-Google`` user agents and rejects all requests from ``AcoiRobot`` and ``Wget``.
 
 
 * ``uri`` --- The hash provides the ability to allow requests to the specific URI and override the rules defined by other hashes in ``access_policy``. URI can be defined by standard regexp.
@@ -498,13 +512,115 @@ An example of the whitelist:
 
 .. code-block:: none
 
-
    limit_whitelist_uri:
      - '~(^/admin/test/(.*))'
 
 This rule allows the unlimited rate of requests to URI containing the /admin/test/ string.
 
 .. note:: Allowing access via WAF does not affect simultaneous connections limits. Use **limit_whitelist** or **limit_whitelist_uri** to set unlimited connectios for a client IP or URI on the server.
+
+Domain Configuration
+--------------------
+
+``webserver``-like configuration per domain:
+
+.. code-block:: none
+
+    orocloud_options:
+      domains:
+        oro-cloud.com:
+          locations_merge: true
+          maintenance_page: 'public/oro-cloud.html'
+          header_x_frame_app_control: true
+          redirects_map:
+            '/about_us_old': '/about'
+            '/about_them_old': '/about_them'
+          redirects_map_include:
+            - 'redirects/website1.yml'
+            - 'redirects/website2.yaml'
+            - '/mnt/ocom/app/redirects.yml'
+          locations:
+            'de':
+              type: 'php'
+              location: '/de'
+              fastcgi_param:
+                'WEBSITE': '$host/de'
+              allow:
+                - '127.0.0.1'
+                - '127.0.0.2'
+              deny:
+                - 'all'
+            'en':
+              type: 'php'
+              location: '/en'
+              fastcgi_param:
+                'WEBSITE': '$host/en'
+              allow:
+                - '127.0.0.1'
+                - '127.0.0.2'
+              deny:
+                - 'all'
+        example.com:
+          locations_merge: false
+          maintenance_page: 'public/example.html'
+          header_x_frame_app_control: true
+          redirects_map:
+            '/about_us_old': '/about'
+            '/about_them_old': '/about_them'
+          redirects_map_include:
+            - 'redirects/website3.yml'
+            - 'redirects/website4.yaml'
+            - '/mnt/ocom/app/redirects.yml'
+          locations:
+            'root':
+              type: 'php'
+              satisfy: any # Allow access if all (all) or at least one (any) access directive satisfied
+              location: '~ /index\.php(/|$)'
+              auth_basic_enable: true
+              auth_basic_userlist:
+                user1:
+                  ensure: 'present'
+                  password: 'password1'
+                user2:
+                  ensure: 'absent'
+                  password: 'password2'
+            'admin':
+              type: 'php'
+              satisfy: any # Allow access if all (all) or at least one (any) access directive satisfied
+              location: '~ /index\.php(/admin|$)'
+              auth_basic_enable: true
+              auth_basic_userlist:
+                user3:
+                  ensure: 'present'
+                  password: 'password1'
+                user4:
+                  ensure: 'absent'
+                  password: 'password2'
+              allow:
+                - '127.0.0.1'
+                - '127.0.0.2'
+              deny:
+                - 'all'
+            'de':
+              type: 'php'
+              location: '/de'
+              fastcgi_param:
+                'WEBSITE': '$host/de'
+              allow:
+                - '127.0.0.1'
+                - '127.0.0.2'
+              deny:
+                - 'all'
+            'en':
+              type: 'php'
+              location: '/en'
+              fastcgi_param:
+                'WEBSITE': '$host/en'
+              allow:
+                - '127.0.0.1'
+                - '127.0.0.2'
+              deny:
+                - 'all'
 
 Profiling Application Console Commands via Blackfire
 ----------------------------------------------------

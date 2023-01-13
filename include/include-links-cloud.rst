@@ -210,3 +210,27 @@ Links (Cloud)
 .. |Upgrade| raw:: html
 
    <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#upgrade" target="_blank">upgrade</a>
+
+.. |Oro Identity Portal| raw:: html
+
+   <a href="https://idp.oro.cloud" target="_blank">Oro Identity Portal</a>
+
+.. |Google Cloud Console > Compute Engine > VM instances| raw:: html
+
+   <a href="https://console.cloud.google.com/compute/instances" target="_blank">Google Cloud Console</a>
+
+.. |gcloud CLI| raw:: html
+
+   <a href="https://cloud.google.com/sdk/docs/install" target="_blank">gcloud CLI</a>
+
+.. |Oro Inc. Partners Support > New Environment Request| raw:: html
+
+   <a href="https://magecore.atlassian.net/servicedesk/customer/portal/3/group/7/create/251" target="_blank">Oro Inc. Partners Support > New Environment Request</a>
+
+.. |Google Cloud Platform (GCP)| raw:: html
+
+   <a href="https://cloud.google.com/docs/" target="_blank">Google Cloud Platform</a>
+
+.. |Error Reporting| raw:: html
+
+   <a href="https://console.cloud.google.com/errors" target="_blank">Error Reporting</a>
