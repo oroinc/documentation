@@ -43,25 +43,61 @@ Configure Login Attempts
 
 .. note:: This feature is only available in the Enterprise edition and is only applied to back-office users.
 
-
 .. csv-table::
   :widths: 10, 30 
 
   "**Enable Failed Logins Limit**","Specify whether you wish to enable failed logins limit. By default, the option is enabled."
   "**Max Login Attempts**","Specify the maximum number of failed login attempts. By default, the number is set to 10."
 
+.. _doc-user-management-users-actions-password-change-policy:
+
 Configure Password Change Policy
 --------------------------------
 
-.. note:: This feature is only available in the Enterprise edition and is only applied to back-office users.
+.. note:: This feature is available in the Platform Enterprise edition and is only applied to back-office users.
 
-.. csv-table::
-  :widths: 10, 30 
+You can enforce a password change policy to increase your application's security and request that your users change their passwords after a certain period.
 
-  "**Enable Password Change Policy**","Enable this option to mandate your users to change their passwords after a certain period. The option is disabled by default."
-  "**Maximum Password Age (Days)**","Specify the period of maximum password validity in days. By default, the number is set to 30."
-  "**Enable Password History Policy**","This setting determines the number of unique new passwords that must be associated with a user account before an old password can be reused. The option is disabled by default."
-  "**Enforce Password History**","The number of previous user passwords which the new password cannot match. The number is set to 12 by default."
+To enable the feature:
+
+1. Navigate to **System > Configuration** in the main menu.
+2. Select **System Configuration > General Setup > User Settings** in the menu to the left.
+3. Select the **Enable Password Change Policy** checkbox to enable the feature.
+4. By default, the password should be changed every 30 days. You can change the default number of days by toggling the option **Maximum Password Age (Days)**.
+
+.. image:: /user/img/system/user_management/password_change_policy.png
+
+Once the feature is enabled, users will receive email notifications 7, 3, and 1 days before the password expires with a link to change their password.
+Seven days before the password expires, the user will start getting flash notifications on each login, prompting them to change their password.
+
+.. image:: /user/img/system/user_management/expire_notification.png
+
+As soon as the password expires, the user will receive an email with the link to change the password. From that moment, they will only be able to log in if they have updated their password. In this case, the status of the user password in the back-office changes to **Expired**. It will return to **Active** once the user changes the password.
+
+You can change the contents of email notifications by updating the **user_expired_password** and **mandatory_password_change** :ref:`email template <user-guide-using-emails-create-template>` of the User entity.
+
+.. _doc-user-management-users-actions-password-history-policy:
+.. _user-guide--customers--customer-user-password-history-policy:
+
+Configure Password History Policy
+---------------------------------
+
+.. note:: This is a Platform Enterprise feature.
+
+You can enable the password history policy to prevent users from reusing the password they have already used previously.
+
+To enable the feature:
+
+1. Navigate to **System > Configuration** in the main menu.
+2. Select **System Configuration > General Setup > User Settings** in the menu to the left.
+3. Select the **Enable Password History Policy** checkbox to enable the feature.
+4. By default, the system collects the last 12 previously used passwords, but you can change this number by toggling the option **Enforce Password History Policy**.
+
+.. image:: /user/img/system/user_management/password_history_policy.png
+
+Once the feature is enabled, customer users will no longer be able to reuse their older passwords. If they try to, they will get the following message:
+
+.. image:: /user/img/system/user_management/password_history_used_password.png
 
 Configure Two-Factor Authentication
 -----------------------------------
