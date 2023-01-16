@@ -12,7 +12,7 @@ Oro Config Component provides additional resource types to the Symfony Config Co
 
 * Resource Types provide a way to configure a bundle from other bundles.
 * Resource Merge provides a way to merge configurations of some resource both from one or many bundles. Supports two strategies: replace and append.
-* System Aware Resolver allows to make your configuration files more dynamic. For example you can call service's methods, static methods, constants, context variables etc.
+* System Aware Resolver allows to make your configuration files more dynamic. For example, you can call service's methods, static methods, constants, context variables etc.
 
 .. toctree::
    :maxdepth: 1
