@@ -111,6 +111,15 @@ and task lists:
 
    This link will only be available if the View SQL query of a report/segment capability has been enabled for the role.
 
+.. _doc-configuration-display-settings-quick-actions:
+
+13. In the **Window Settings** section, configure the following settings:
+
+    * **Quick Create Actions** --- Select the preferred way to display the quick creation buttons form. The buttons with quick actions appear on the customer, customer user, and customer group view pages. When clicked, the form can be displayed in a new browser tab, a popup dialog window, or replace the current page.
+
+    .. image:: /user/img/system/config_system/quick-creation-buttons.png
+       :alt: Displaying quick action buttons on the customer view page
+
 
 .. include:: /include/include-images.rst
    :start-after: begin
