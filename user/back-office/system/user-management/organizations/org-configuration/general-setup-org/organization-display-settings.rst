@@ -117,5 +117,31 @@ To change any color in the set:
 .. image:: /user/img/system/config_system/user_configuration_showsql.png
    :alt: A sample of the enabled display sql field
 
+.. hint:: The Quick Action Buttons feature is available starting from OroCommerce v5.0.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+**Upcoming Changes**
+
++---------------------------------+-------------------------------------------------------------------------------------------------+
+| Field                           | Description                                                                                     |
++=================================+=================================================================================================+
+| Enable Quick Creation Buttons   | Select the option to add quick action buttons to the customer, customer user, and customer      |
+|                                 | group view pages.                                                                               |
+|                                 |                                                                                                 |
+|                                 |  .. image:: /user/img/system/config_system/quick-creation-buttons.png                           |
+|                                 |     :alt: Displaying quick action buttons on the customer view page                             |
++---------------------------------+-------------------------------------------------------------------------------------------------+
+
+
+**Window Settings**
+
++----------------------+-------------------------------------------------------------------------------------------------+
+| Field                | Description                                                                                     |
++======================+=================================================================================================+
+| Quick Create Actions | Select the preferred way to display the quick creation buttons form. The buttons with quick     |
+|                      | actions appear on the customer, customer user, and customer group view pages. When clicked, the |
+|                      | form can be displayed in a new browser tab, a popup dialog window, or replace the current page. |
+|                      |                                                                                                 |
++----------------------+-------------------------------------------------------------------------------------------------+
+
 .. include:: /include/include-images.rst
    :start-after: begin

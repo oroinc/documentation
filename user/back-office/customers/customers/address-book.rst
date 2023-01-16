@@ -7,7 +7,7 @@ Create an Address
 
 .. begin
 
-For customers, customer users contacts in Oro application, the address book allows to enter and view account address details.
+For customers, customer users, and contacts in Oro application, the address book allows to enter and view account address details.
 
 To add an address to the address book:
 
