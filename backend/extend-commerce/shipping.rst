@@ -276,27 +276,16 @@ To register the shipping method factory, append the following key-values to <bun
        :lines: 22-29
 
 
-Create a Shipping Method Provider
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For this, add the <bundle_root>/Method/FastShippingMethodProvider.php class with the following content:
-
-.. oro_integrity_check:: ba1dc2380ebab53a05b55540a2872514a85d8ddf
-
-   .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethodProvider.php
-       :language: php
-
-
-Add the Shipping Method Provider to the Services Container
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Register a Shipping Method Provider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Append the following lines to <bundle_root>/Resources/config/services.yml under the services section:
 
-.. oro_integrity_check:: d7bcb8d28e21553646c788837abd526a4c534eae
+.. oro_integrity_check:: dcdba9ab484294f6380c69936c39ee1c32836dfa
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 30-39
+       :lines: 30-37
 
 
 Create a Shipping Method Type
@@ -356,7 +345,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 41-46
+       :lines: 39-44
 
 
 Define Translation for the Shipping Method Form Options
@@ -397,7 +386,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 1,3-5,48-72
+       :lines: 1,3-5,46-70
 
 
 Add Actions
