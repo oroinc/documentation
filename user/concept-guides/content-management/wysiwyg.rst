@@ -41,6 +41,16 @@ The main parts of the editor help define the interface and the structure of your
 
 * **Content Templates** --- A list of :ref:`content templates <user-guide--landing-pages--marketing--content-templates>` grouped by the tags assigned to them. Templates serve as pre-designed content blocks that you can drag to the canvas and modify their fonts, styles, etc. as the page requires.
 
+    .. image:: /user/img/getting_started/wysiwyg/content-templates-block.png
+       :alt: The settings of the WYSIWYG content templates menu
+
+* **Settings** --- A group of settings that enable you to control the content outline and toggle the external markup mode. The external markup mode allows you to import a complex HTML code to the editor, preserving its formatting and styling.
+
+    .. image:: /user/img/getting_started/wysiwyg/settings-menu.png
+       :alt: The settings of the WYSIWYG settings menu
+
+
+
 WYSIWYG Functions
 -----------------
 
@@ -142,7 +152,7 @@ There are several options to embed some multimedia into the WYSIWYG editor, pres
 **Option 1**
 
 1. Drag the video, image, or map block to the canvas.
-2. Click |IcImport| Import on the top menu above the canvas to open the HTML editor.
+2. Click **</>** Source Code on the top menu above the canvas to open the HTML editor.
 3. Find the video block and wrap it in a <div> container.
 4. Save it by clicking **Import** in the popup bottom corner.
 
@@ -173,7 +183,7 @@ There are several options to embed some multimedia into the WYSIWYG editor, pres
 **Option 2**
 
 1. Drag the video, image, or map block to the canvas.
-2. Click |IcImport| Import on the top menu above the canvas to open the HTML editor.
+2. Click **</>** Source Code on the top menu above the canvas to open the HTML editor.
 3. Find the video block and wrap it in a <div> container with the `aspect-ratio` class, as follows:
 
 .. code-block:: html
@@ -324,7 +334,7 @@ To add a table to your web page, you need to drag the table block to the canvas 
 .. image:: /user/img/concept-guides/content-management/add_tables.png
    :alt: Placing three columns inside the existing one
 
-To insert/delete the rows and columns inside the table, click the required cell and select the action from the settings bar that appears next to the cell. Keep in mind that when a user adds the table markup (cell joints, complex tables) via the |IcUpload| **Import** icon, the setting might be affected.
+To insert/delete the rows and columns inside the table, click the required cell and select the action from the settings bar that appears next to the cell. Keep in mind that when a user adds the table markup (cell joints, complex tables) via the **</> Source Code** icon, the setting might be affected.
 
 .. image:: /user/img/concept-guides/content-management/table-settings.png
    :alt: Selecting the insert row before action from the cell's settings bar
@@ -409,15 +419,14 @@ You can set the individual formatting of your content for each display type (des
 Input or Edit HTML Code
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-If you are experienced at HTML coding, you can enter your own HTML code into the WYSIWYG editor via the import popup dialog.
+If you are experienced at HTML coding, you can enter your own HTML code into the WYSIWYG editor via the **</> Source Code** popup dialog. There, you can also edit the existing HTML code that was already applied to the canvas based on the created content.
+
+Click **Import** to apply the changes made to the code.
+
+Click **Export to ZIP** to create an HTML page based on the provided HTML code and export it to a ZIP file.
 
 .. image:: /user/img/concept-guides/content-management/input_html_code.png
    :alt: Input HTML code into the WYSIWYG editor via the import popup dialog
-
-You can also edit the existing HTML code that was already applied to the canvas based on the created content. For this, click the |IcUpload| icon on the toolbar from the right.
-
-.. image:: /user/img/concept-guides/content-management/edit_htm_code.png
-   :alt: Edit the existing HTML code via the popup dialog
 
 Input an HTML Code Fragment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -459,8 +468,10 @@ Disable the GrapeJs Style Manager
 
 If you are importing a complex HTML code to the editor and want to preserve its styling, you can disable the WYSIWYG built-in style manager to prevent GrapeJs from breaking those styles.
 
+ For that, you need to enable the external markup mode to import the required HTML code as is, with its initial formatting and styling.
 
- For that, click the **</>** icon on the toolbar. You will not be able to apply and customize styles of your content. Keep in mind that if you exit the external markup mode, the editor may change the source code and break the imported content markup and styles.
+ 1. Navigate to the **Settings** menu.
+ 2. Select the **Enable External Markup** checkbox. Keep in mind that you will not be able to apply and customize styles of your content. If you exit the external markup mode, the editor may change the source code and break the imported content markup and styles.
 
 
 .. image:: /user/img/concept-guides/content-management/external-markup-button.png
