@@ -1,3 +1,5 @@
+.. _dev-components-cumulative-resources:
+
 Cumulative Resources
 ====================
 
