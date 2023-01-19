@@ -4,8 +4,18 @@ Viewport Manager
 ================
 
 Viewport manager contains a collection of available screen types that can be used on the theme.
-It is also responsible for triggering event `viewport:change` through the mediator, when the type of the screen changes.
-It is possible to subscribe to event `viewport:change` in view and create a logic based on the viewport changes (for example, :ref:`DOM Relocation View <bundle-docs-commerce-customer-portal-frontend-bundle-dom>`).
+It is also responsible for triggering event ``viewport:change`` through the mediator, when the type of the screen changes.
+You can subscribe to the event ``viewport:change`` in the view and create a logic based on the viewport changes (for example, :ref:`DOM Relocation View <bundle-docs-commerce-customer-portal-frontend-bundle-dom>`).
+You can also subscribe to a specific event ``viewport:desktop``, ``viewport:tablet`` or any other registered media type in scss.
+Viewport manager has several public methods:
+
+- ``isApplicable(mediaTypes)``: the method accepts a string or an array of strings of media types as arguments.
+    - For example:
+        - ``viewportManager.isApplicable('tablet')``
+        - ``viewportManager.isApplicable('tablet', 'tablet-small')``
+        - ``viewportManager.isApplicable(['tablet', 'tablet-small'])``
+- ``getBreakpoints(context)``: returns an object with all registered breakpoints from css property ``--breakpoints``. You can pass the ``context`` of the document as an argument.
+- ``getMediaType(mediaType)``: returns ``MediaQueryList`` by ``mediaType`` argument.
 
 Screen Map
 ----------
@@ -39,114 +49,31 @@ By default these settings for list of screen types synchronized with scss breakp
         'mobile-big': '(max-width: ' +  $breakpoint-mobile-big + ')',
     );
 
-|Default scss breakpoints| are converted to the following array:
+|Default scss breakpoints| are converted to the following object:
 
 .. code-block:: javascript
 
 
-    screenMap: [
-        {
-            name: 'desktop',
-            min: 1100
-        },
-        {
-            name: 'tablet',
-            max: 1099
-        },
-        {
-            name: 'strict-tablet',
-            max: 1099,
-            min: 993
-        },
-        {
-            name: 'tablet-small',
-            max: 992
-        },
-        {
-            name: 'strict-tablet-small',
-            max: 992,
-            min: 641
-        },
-        {
-            name: 'mobile-big',
-            max: 767
-        },
-        {
-            name: 'strict-mobile-big',
-            max: 767,
-            min: 641,
-        },
-        {
-            name: 'mobile-landscape',
-            max: 640
-        },
-        {
-            name: 'strict-mobile-landscape',
-            max: 640,
-            min: 415
-        },
-        {
-            name: 'mobile',
-            max: 414
-        }
-    ]
+    mediaTypes: {
+        'desktop': '(min-width: 1100px)',
+        'tablet': '(max-width: 1099px)',
+        'strict-tablet': '(max-width: 1099px) and (min-width: 993px)',
+        'tablet-small': '(max-width: 992px)',
+        'strict-tablet-small': '(max-width: 992px) and (min-width: 641px)',
+        'mobile-big': '(max-width: 767px)',
+        'strict-mobile-big': '(max-width: 767px) and (min-width: 641px)',
+        'mobile-landscape': '(max-width: 640px)',
+        'strict-mobile-landscape': '(max-width: 640px) and (min-width: 415px)',
+        'mobile': '(max-width: 414px)'
+    }
 
 
 You can override these breakpoints :ref:`via scss variables <dev-doc-frontend-storefront-css-media-breakpoints>`.
 
-Overriding via js Module Config for a Theme
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This config has the highest priority:
-
-.. code-block:: none
-
-   {% import '@OroAsset/Asset.html.twig' as Asset %}
-   {{ Asset.js_modules_config({
-           'oroui/js/viewport-manager': {
-               screenMap: [
-                   {
-                       name: 'tablet',
-                       max: 640
-                   },
-                   {
-                       name: 'desktop',
-                       max: 1260
-                   },
-                   {
-                       name: 'desktop-hd',
-                       max: 1920
-                   }
-               ]
-           }
-   }); }}
-
-To delete an inherited screen type, set `skip: true` for a specific screen name:
-
-.. code-block:: none
-
-   {% import '@OroAsset/Asset.html.twig' as Asset %}
-   {{ Asset.js_modules_config({
-           'oroui/js/viewport-manager': {
-               screenMap: [
-                   {
-                       name: 'tablet',
-                       skip: true
-                   },
-                   {
-                       name: 'desktop',
-                       max: 1260
-                   }
-               ]
-           }
-       }
-   }); }}
-
-
-Screen Types
+Media Types
 ------------
 
-A screen type is used to describe a viewport size range; it provides an opportunity to describe the parameters like `name`, `max` size of the screen type.
+A media type is used to describe a named media query;
 
 For example:
 
@@ -154,30 +81,8 @@ For example:
 
 
     {
-        name: 'screen-type',
-        max: 1024
+        'screen-type': '(max-width: 1024px)'
     }
-
-name
-^^^^
-
-**Type:** String
-
-Set name for screen type.
-
-max
-^^^
-
-**Type:** Number
-
-Set max *viewport* size for screen type
-
-min
-^^^
-
-**Type:** Number
-
-Set min *viewport* size for screen type
 
 Events
 ------
@@ -185,17 +90,9 @@ Events
 viewport:change
 ^^^^^^^^^^^^^^^
 
-**Event Data:** Object
+**Event:** MediaQueryListEvent
 
-**Data Structure:**
-
-* **type:** Object
-
-Current viewport screen type.
-
-* **width:** Number
-
-Current viewport width.
+Media Query of the changed media type. Additionally contains a `mediaType` field with the name of the media type.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
