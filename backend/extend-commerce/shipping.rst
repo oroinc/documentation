@@ -281,7 +281,7 @@ Register a Shipping Method Provider
 
 Append the following lines to <bundle_root>/Resources/config/services.yml under the services section:
 
-.. oro_integrity_check:: dcdba9ab484294f6380c69936c39ee1c32836dfa
+.. oro_integrity_check:: 15cfbb964501ef9f2f6d221089bd240f04727d19
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
