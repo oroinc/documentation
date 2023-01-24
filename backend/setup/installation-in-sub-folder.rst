@@ -13,7 +13,7 @@ For the websites with dedicated domains, you may use the default OroCommerce ins
 
 To prepare files for the website located in the sub-directory (e.g., /uk), do the following:
 
-1. Copy index.php from *public* directory into the new location (e.g., web/uk/) and modify it to update the relative paths (e.g., adding extra */..* prefix to the path).
+1. Copy index.php from *public* directory into the new location (e.g., public/uk/) and modify it to update the relative paths (e.g., adding extra */..* prefix to the path).
 
    For example:
 
