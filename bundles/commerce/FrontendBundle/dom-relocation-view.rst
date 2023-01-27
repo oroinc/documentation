@@ -18,7 +18,7 @@ To move an element from one container to another on window resize, add ``data-do
          data-dom-relocation-options="{
             responsive: [
                 {
-                    viewport: {maxScreenType: 'tablet'},
+                    viewport: 'tablet',
                     moveTo: '#parent_container' // jQuery selector,
                     sibling: '#sibling_element' // jQuery selector,
                     prepend: true // Boolean,
@@ -45,13 +45,13 @@ Set multiple moveTo targets for different types of screens:
 
    responsive: [
        {
-           viewport: {maxScreenType: 'tablet'},
+           viewport: 'tablet',
            moveTo: '[data-target-example-1]', // jQuery selector
            sibling: '[data-target-example-1] > div:eq(2)', // jQuery selector
            prepend: true // Boolean
        },
        {
-           viewport: {maxScreenType: 'mobile'},
+           viewport: 'mobile',
            moveTo: '[data-target-example-2]', // jQuery selector
            prepend: true, // Boolean
            endpointClass: 'moved-to-parent' // String
@@ -96,4 +96,3 @@ endpointClass
 **Type:** String
 
 The css class added to an HTML element after it was moved.
-

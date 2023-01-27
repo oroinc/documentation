@@ -18,6 +18,21 @@ You can use OpenVPN to create a VPN tunnel to the OroCloud. First, |install the 
 
 Once the connection is established, you can access your OroCloud environment via SSH connection to the host you were provided. Use your personalized user details to log on to the server.
 
+Connect to the OroCloud Environment via SSH
+-------------------------------------------
+
+Configure password and SSH key using :ref:`SSH Access <public-identity-management-ssh>` and connect to VPN.
+
+There are multiple ways to connect using SSH:
+
+1. Use IP address and username provided by Oro Support Team.
+
+2. Get IP address from |Google Cloud Console > Compute Engine > VM instances|
+
+.. note:: Connection using SSH button (using external IP) is now allowed.
+
+3. Use |gcloud CLI| tool to list VMs `gcloud compute instances list` and connect `gcloud compute ssh ocom-yourproject-prod1-maint1 --internal-ip` to VMs.
+
 .. _sftp-access:
 
 Connect to the OroCloud Environment via SFTP

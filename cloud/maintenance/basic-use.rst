@@ -163,7 +163,11 @@ During the Oro application upgrade, the Oro cloud maintenance tool pulls the new
 
 To upgrade an Oro application, you can use the following modes:
 
-.. warning:: With the rolling upgrade, source upgrade the Oro application is not forced into the maintenance mode from the very beginning; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before and after the upgrade are compatible with the old and new database structure simultaneously. Usually, these are upgrades to minor versions.
+.. warning:: With the rolling upgrade, the source upgrade of the Oro application is not forced into maintenance mode; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before, and after the upgrade is simultaneously compatible with the old and new database structure. Usually, these are upgrades to minor versions.
+
+.. important:: Do not drop tables, columns, or entity fields, and do not alter columns or entity field types.
+
+.. important:: Upgrade commands remove patches applied using :ref:`orocloud-cli patch:apply <orocloud-maintenance-patches>` command. Use can confirm it interactively or using `--skip-check-patches` option.
 
 Upgrade With Downtime
 ~~~~~~~~~~~~~~~~~~~~~
@@ -186,10 +190,14 @@ This command executes the following operations:
 
 Once the cache warmup is complete, the maintenance mode is turned off, and the upgraded application is ready for use.
 
-Upgrade With Minimal Downtime (Rolling Upgrade)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upgrade Without Downtime (Rolling Upgrade)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To perform Oro application upgrade with minimal downtime, run the `upgrade:rolling` command:
+.. warning:: With the rolling upgrade the Oro application is not forced into the maintenance mode; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before and after the upgrade are compatible with the old and new database structure simultaneously. Usually, these are upgrades to minor versions.
+
+.. important:: Do not drop tables, columns, entity fields; do not alter columns, entity fields types, please.
+
+To perform Oro application upgrade without downtime, run the `upgrade:rolling` command:
 
 .. code-block:: none
 
@@ -197,7 +205,7 @@ To perform Oro application upgrade with minimal downtime, run the `upgrade:rolli
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file. Use a valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
 
-This command enables maintenance mode just for switching between the previous and new application versions (in most cases, this step takes up to 2 minutes). In the normal operation mode, this command executes the following operations:
+In the normal operation mode, this command executes the following operations:
 
 1. Checks out the code from a tag or branch of the configured repository
 #. Installs the external dependencies via the composer install
@@ -205,18 +213,20 @@ This command enables maintenance mode just for switching between the previous an
 #. Launches a `cache warmup`
 #. Restarts the related services (consumers, cron, WebSocket, etc).
 
-Upgrade With Minimal Downtime (Source Upgrade)
+Upgrade With Without Downtime (Source Upgrade)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To perform Oro application upgrade with minimal downtime, run the `upgrade:source` command:
+.. warning:: With the source upgrade, the Oro application is not forced into maintenance mode; it runs and stays available for users during the upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before, and after the upgrade is simultaneously compatible with the old and new database structure. Usually, these are upgrades to minor versions.
+
+.. important:: Do not drop tables, columns, and entity fields and do not alter columns or entity fields types.
+
+To perform Oro application upgrade without downtime, run the `upgrade:source` command:
 
 .. code-block:: none
 
     orocloud-cli upgrade:source
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file. Use a valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
-
-This command enables maintenance mode just for switching between the previous and new application versions (in most cases, this step takes up to 2 minutes).
 
 The purpose of this command is to deploy code changes (without updating dependencies) as quickly as possible.
 The difference between this command and the original upgrade:
@@ -822,17 +832,53 @@ To check consumers status, use the `service:status:consumer` command.
 
 The `host` parameter is optional. You can list services from specified job host only. If no parameter is specified,`all` is used by default.
 
+Maintenance Commands
+--------------------
+
+Maintenance commands enable you to turn on the maintenance mode for the webserver and services (consumers, cron, websocket).
+
+Oro Support Team will get a P1 notification after 1 hour of enabled maintenance mode. 
+You can set custom downtime duration and comment to avoid P1 escalation using the following options:
+
+.. code-block:: none
+
+    --downtime-duration[=DOWNTIME-DURATION]  (OPTIONAL) Downtime duration, by default 1 hour. Expected format: '{number}d{number}h{number}m'. Usage example: '1d3h15m' means 1 day 3 hours 15 minutes OR '30m' means 30 minutes.
+    --downtime-comment[=DOWNTIME-COMMENT]    Comment for provided custom downtime value. Required if [downtime-duration] provided. Wrap with double-quotes if contains spaces.
+
+Maintenance On
+~~~~~~~~~~~~~~
+
+To enable maintenance mode for the webserver and services (consumers, cron, websocket), use the `maintenance:on` command.
+
+
+.. code-block:: none
+
+    maintenance:on [--force]
+
+* `--force` is optional, it allows to skip execution confirmation.
+
+Maintenance Off
+~~~~~~~~~~~~~~~
+
+To disable maintenance mode for the webserver and services (consumers, cron, websocket), use the `maintenance:off` command.
+
+.. code-block:: none
+
+    maintenance:off [--force]
+
+* `--force` is optional, it allows to skip execution confirmation.
+
 Emergency Commands
 ------------------
 
-Emergency commands enable you to turn the maintenance mode on the application on and off without manipulations with services.
+Emergency commands enable you to turn the maintenance mode for the webserver without stopping services.
 
 Emergency On
 ~~~~~~~~~~~~
 
 The idea behind this command is that it does not block the infrastructure from changes that are rolling out continuously (unlike when you turn on the usual maintenance where the infrastructure is blocked from rolling out changes).
 
-To enable emergency maintenance mode of the application without manipulations with services, use the `emergency:on` command.
+To enable emergency mode for the webserver without stopping services, use the `emergency:on` command.
 
 .. code-block:: none
 
@@ -843,7 +889,7 @@ To enable emergency maintenance mode of the application without manipulations wi
 Emergency Off
 ~~~~~~~~~~~~~
 
-To disable emergency maintenance mode of the application without manipulations with services, use the `emergency:off` command.
+To disable emergency mode for the webserver, use the `emergency:off` command.
 
 .. code-block:: none
 

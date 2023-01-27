@@ -14,21 +14,22 @@ In the Customer section, you can manage the customers representing a group of bu
 
 Navigate to **Customers > Customers** in the main menu.
 
-.. .. image:: /user/img/customers/customers/Customers.png
-.. :alt: The list of all customers available in the system
-
 Hover over the |IcMore| **More Options** menu to the right of the necessary customer to perform the following actions:
 
 * |IcView| **View** customer details. Alternatively, click on the item to open its details page.
 * |IcEdit| **Edit** customer details.
-* |IcDelete| **Delete** existing customers.
+* |IcConfig| **Configure** customer settings.
 
 On the customer details page, you get access to the aggregated information about customer users' activities and eCommerce operations, such as requests for quotes, quotes, sales orders, and shopping lists.
 
-.. .. image:: /user/img/customers/customers/customers_details.png
-.. :alt: The details page of the selected customer
-
 You can also quickly get to the :ref:`customer organization structure <user-guide--customers--customers--organize>`, :ref:`an address book <user-guide--getting-started--address-book>` with a preview on the map, :ref:`customer users <user-guide--customers--customer-users>`, :ref:`price lists <user-guide--customers--customer-groups--pricelist>` enabled for the customer, and overview of :ref:`requests for quote <user-guide--sales--requests-for-quote>`, :ref:`sales orders <user-guide--sales--orders>`, :ref:`quotes <user-guide--sales--quotes>` created by and for customer users, and available :ref:`shopping lists <user-guide--sales--shopping-lists>`. Finally, you can get to a summary of activity from every operation triggered by the customer users.
+
+Quick action buttons enable you to create a new address, subsidiary, customer user, order, quote, and opportunity directly from the customer view page. Click the button to open the required form for data input. The form can be displayed in a new browser tab, a popup dialog window, or replace the current page, :ref:`depending on its system configuration <doc-configuration-display-settings-quick-actions>`.
+
+Alternatively, click **More Actions** at the top right and select the entity to be created from the customer view page.
+
+.. image:: /user/img/customers/customers/quick-buttons-customer.png
+   :alt: Displaying the quick action buttons on the customer view page
 
 .. _user-guide--customers--customers--organize:
 

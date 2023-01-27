@@ -630,6 +630,13 @@ type: ``boolean`` default: ``false``
 
 Set the flag to 'true' to display the datagrid on the frontend. If set to 'false', the datagrid will be hidden.
 
+requestMethod
+^^^^^^^^^^^^^
+
+type: ``string`` default: ``GET``
+
+Set the request method which will be used to load data via ajax.
+
 mass_actions
 ^^^^^^^^^^^^
 

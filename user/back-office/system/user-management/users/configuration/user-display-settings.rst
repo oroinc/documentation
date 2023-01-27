@@ -70,5 +70,14 @@ In the Display section, you can configure the following display options for a pa
    .. image:: /user/img/system/config_system/user_configuration_showsql.png
       :alt: A sample of the enabled display SQL field
 
+12. In the **Window Settings** section, configure the following settings:
+
+    * **Quick Create Actions** --- Select the preferred way to display the quick creation buttons form. The buttons with quick actions appear on the customer, customer user, and customer group view pages. When clicked, the form can be displayed in a new browser tab, a popup dialog window, or replace the current page.
+
+    .. image:: /user/img/system/config_system/quick-creation-buttons.png
+       :alt: Displaying quick action buttons on the customer view page
+
+
+
 .. include:: /include/include-images.rst
    :start-after: begin

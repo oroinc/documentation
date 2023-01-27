@@ -14,9 +14,12 @@ How to Add/Remove Environment Variables
     orocloud_options:
       application:
         env_vars:
-          'var1': 'value1'
-          'var1': 'value2'
-          'varN': 'valueN'
+          COMPOSER_AUTH:  '{"http-basic":{"example.org":{"username":"username","password":"password"}}'
+          COMPOSER_AUTH1: '{"gitlab-oauth":{"gitlab.example.org":"ThisTokenIsNotSoSecretChangeIt"},"gitlab-domains":["gitlab.example.org"]}'
+          COMPOSER_AUTH2: '{"gitlab-oauth":{"gitlab.com":"ThisTokenIsNotSoSecretChangeIt"}}'
+          COMPOSER_AUTH3: '{"gitlab-token":{"gitlab.example.org":"ThisTokenIsNotSoSecretChangeIt"},"gitlab-domains":["gitlab.example.org"]}'
+          COMPOSER_AUTH4: '{"gitlab-token":{"gitlab.com":"ThisTokenIsNotSoSecretChangeIt"}}'
+          COMPOSER_AUTH5: '{"github-oauth":{"github.com":"ThisTokenIsNotSoSecretChangeIt"}}'
 
 * **env_vars** — the hash where the key is an environment variable name, and the value is the environment variable value.
 

@@ -86,6 +86,57 @@ If the application was installed without demo data, the banner is disabled. Conf
 
 10. Click **Save Settings**.
 
+.. _user-guide--customers--customer-user-password-change-policy:
+
+Password Change Policy
+----------------------
+
+.. note:: This is a Commerce Enterprise feature.
+
+You can enforce a password change policy to increase your application's security and request that your customer users change their passwords after a certain period.
+
+To enable the feature per customer user:
+
+1. Navigate to **System > Configuration** in the main menu.
+2. Select **Commerce > Customer Users** in the menu to the left.
+3. Select the **Enable Password Change Policy** checkbox to enable the feature.
+4. By default, the password is changed every 30 days. You can change the default number of days by toggling the option **Maximum Password Age (Days)**.
+
+.. image:: /user/img/customers/customer_users/customer_user_password_change_policy.png
+
+Once the feature is enabled, customer users will receive email notifications 7, 3, and 1 days before the password expires with a link to change their password.
+
+Seven days before the password expires, the customer user will start getting flash notifications on each login, prompting them to change their password.
+
+.. image:: /user/img/customers/customer_users/customer_user_expire_notification.png
+
+As soon as the password expires, the customer user will receive an email with the link to change the password. From that moment, they will only be able to log in if they have updated their password. In this case, the status of the customer user password in the back-office changes to **Expired**. It will return to **Active** once the customer user changes the password.
+
+You can change the contents of email notifications by updating the **customer_user_expired_password** and **customer_user_mandatory_password_change**
+:ref:`email template <user-guide-using-emails-create-template>` of the Customer User entity.
+
+.. _configuration--guide--commerce--configuration--customer-user-password-change-policy:
+
+Password History Policy
+-----------------------
+
+.. note:: This is a Commerce Enterprise feature.
+
+You can enable the Password history policy to prevent customer users from reusing the password they have already used previously.
+
+To enable the feature:
+
+1. Navigate to **System > Configuration** in the main menu.
+2. Select **Commerce > Customer Users** in the menu to the left.
+3. Select the **Enable Password History Policy** checkbox to enable the feature.
+4. By default, the system collects the last 12 previously used passwords, but you can change this number by toggling the option **Enforce Password History Policy**.
+
+.. image:: /user/img/customers/customer_users/customer_user_password_history_policy.png
+
+Once the feature is enabled, customer users will no longer be able to reuse their older passwords. If they try to, they will get the following message:
+
+.. image:: /user/img/customers/customer_users/customer_user_password_history_used_password.png
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 

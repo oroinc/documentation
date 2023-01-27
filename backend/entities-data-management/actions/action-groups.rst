@@ -18,6 +18,8 @@ File `<bundleResourceRoot>/config/oro/actions.yml`
 
     action_groups:                                      # root node for action groups
         demo_flash_greetings_to:                        # name of action group
+            replace:                                    # (optional) the list of nodes that should be replaced during the overriding
+                - actions                               # node name
             parameters:                                 # parameters declaration node
                 what:                                   # name of the parameter
                     type: AcmeDemoBundle/String/Phrase  # (optional, default = any) type validation of parameter (available types: integer, string, boolean, array, double, object, PHP class)
