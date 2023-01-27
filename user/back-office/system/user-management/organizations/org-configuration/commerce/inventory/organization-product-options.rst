@@ -16,7 +16,8 @@ To customize the default product options per organization:
    .. image:: /user/img/system/user_management/org_configuration/inventory/product_options_org.png
       :alt: Product options configuration per organization
 
-   Here, you can manage both inventory and upcoming products options.
+4. To customize both inventory and upcoming products options, clear the **Use System** checkbox next to the option and select the required value.
+
 
    **Product Inventory Options**
 
@@ -37,10 +38,6 @@ To customize the default product options per organization:
 
    **Hide Labels Past Availability Date** - When enabled, the label for the upcoming products will be removed automatically once the availability date has passed. If the option is disabled, the label will remain displayed as long as the product is marked as upcoming regardless of its availability date.
 
-4. To customize any of these options:
-
-     a) Clear the **Use System** checkbox next to the option.
-     b) Select **Yes/No** for the flag-like options, and type in the updated value for the threshold-like options.
 
 5. Click **Save Settings**.
 

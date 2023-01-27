@@ -13,15 +13,13 @@ To change the default inventory quantity limitations per organization:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. In the **Quantity Limitations** section, provide the following details:
+4. Customize any of the options by clearing the **Use System** box next to the option and providing the updated quantity.
+
+5. In the **Quantity Limitations** section, provide the following details:
 
    * **Minimum Quantity To Order** --- Minimum quantity that buyer or sales person may be the claim in the RFQ, customer order, quote, or a shopping list.
    * **Maximum Quantity To Order** --- Maximum quantity that buyer or sales person  may be the claim in the RFQ, customer order, quote, or a shopping list.
 
-5. To customize any of these options:
-
-     a) Clear the **Use System** box next to the option.
-     b) Type in the updated quantity.
 
 6. Click **Save Settings**.
 

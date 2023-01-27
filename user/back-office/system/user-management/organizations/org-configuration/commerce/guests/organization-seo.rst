@@ -19,15 +19,17 @@ To configure the settings per organization:
 .. image:: /user/img/system/config_commerce/seo/org-seo-settings.png
    :alt: SEO settings configuration per organization
 
+4. Clear the **Use System** checkbox to change the system-wide settings.
 
-4. **Disable Product Microdata Without Prices** --- The setting disables Schema.org Microdata for products without prices. All products that do not have assigned prices contain Schema.org Microdata markup with a product schema without price information. Some search crawlers (e.g., Google) consider these products invalid and can exclude them from the search index. Select the checkbox to prevent products without prices from being blocked by search crawlers (available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`).
+5. In the **Schema.org** section, configure the following options:
 
-5. **Include Product Description** --- Select the checkbox to include product description into the Schema.org markup for products (available starting from v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`).
+   * **Disable Product Microdata Without Prices** --- The setting disables Schema.org Microdata for products without prices. All products that do not have assigned prices contain Schema.org Microdata markup with a product schema without price information. Some search crawlers (e.g., Google) consider these products invalid and can exclude them from the search index. Select the checkbox to prevent products without prices from being blocked by search crawlers (available starting from v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`).
 
-6. **Used Product Description Field** --- Select which product description field type will be used for the Schema.org description property from the dropdown. Available options are *Simplified [Long] Description*, *SEO Meta Description*, and *Simplified Short Description* (available starting from v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`).
+   * **Include Product Description** --- Select the checkbox to include product description into the Schema.org markup for products (available starting from v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`).
 
-7. Click **Save Settings**.
+   * **Used Product Description Field** --- Select which product description field type will be used for the Schema.org description property from the dropdown. Available options are *Simplified [Long] Description*, *SEO Meta Description*, and *Simplified Short Description* (available starting from v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`).
 
+6. Click **Save Settings**.
 
 
 .. include:: /include/include-images.rst

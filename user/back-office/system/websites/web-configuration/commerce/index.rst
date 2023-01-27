@@ -12,6 +12,7 @@ Learn how to configure commerce-specific settings for selected websites:
 
    Customer <customers/index>
    Guests <guests/index>
+   Taxation <taxation/index>
    Design <design/index>
    Product <product/index>
    Inventory <inventory/index>

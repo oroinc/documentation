@@ -125,6 +125,7 @@ To set a price attribute (e.g., Minimal Advertised Price) for a product:
 
    .. hint:: Fixed Product Shipping Cost is available starting from v5.0.2. To check which application version you are running, see the :ref:`system information <system-information>`.
 
+
 #. Provide the value per unit and currency.
 
 #. Click **Save**.
