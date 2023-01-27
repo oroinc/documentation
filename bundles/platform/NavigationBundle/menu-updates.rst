@@ -6,11 +6,11 @@ Menu Updates
 OroNavigationBundle introduces the mechanism called Menu Updates that gives the ability to create and modify menu items in different scopes using back-office UI.
 The architecture of this mechanism consists of:
 
-1. ``Oro\Bundle\CommerceMenuBundle\Entity\MenuUpdate`` entities that store the changes of menus.
-2. ``Oro\Bundle\NavigationBundle\Menu\MenuUpdateBuilder`` menu builder that applies menu updates for the current scope.
-3. ``Oro\Bundle\NavigationBundle\Provider\MenuUpdateProvider`` that provides menu updates for the current scope.
-4. ``Oro\Bundle\NavigationBundle\MenuUpdate\Applier\MenuUpdateApplier`` that applies each menu update.
-5. ``Oro\Bundle\NavigationBundle\MenuUpdate\Propagator\ToMenuItem\CompositePropagator`` that propagates the data stored in a MenuUpdate into the corresponding menu item.
+1. Entity class ``Oro\Bundle\CommerceMenuBundle\Entity\MenuUpdate`` to store the changes made to menu items.
+2. Menu builder ``Oro\Bundle\NavigationBundle\Menu\MenuUpdateBuilder`` that applies menu updates for the current scope.
+3. Menu updates provider ``Oro\Bundle\NavigationBundle\Provider\MenuUpdateProvider`` that provides menu updates for the current scope.
+4. Menu update applier ``Oro\Bundle\NavigationBundle\MenuUpdate\Applier\MenuUpdateApplier`` that applies each menu update.
+5. Menu-update-to-menu-item propagator ``Oro\Bundle\NavigationBundle\MenuUpdate\Propagator\ToMenuItem\CompositePropagator`` that propagates the data stored in a MenuUpdate into the corresponding menu item.
 
 
 Menu Update Scopes
