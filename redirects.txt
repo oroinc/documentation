@@ -339,3 +339,8 @@ user/back-office/system/user-management/organizations/org-configuration/general-
 user/back-office/system/user-management/users/configuration/user-ms-outlook /user/back-office/system/user-management/users/configuration
 backend/extend-commerce/payment/cybersource /backend/extend-commerce/payment
 user/back-office/system/integrations/payment-integration/cybersource /user/back-office/system/integrations/payment-integration/
+components/configuration-merger /bundles/components/configuration-merger.rst
+components/cumulative-resources /bundles/components/cumulative-resources.rst
+components/index /bundles/components/index.rst
+components/resource-loader-factory /bundles/components/resource-loader-factory.rst
+components/system-aware-resolver /bundles/components/system-aware-resolver.rst

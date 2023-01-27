@@ -5,12 +5,22 @@
 
 .. _bundle-docs:
 
-Oro Bundles
-===========
+Oro Bundles and Components
+==========================
 
 Bundles in Oro applications are a collection of files with the source code, configurations and additional assets organized in a conventional structure and providing ready-to-use functionality. Each Oro application comes with many prebuilt bundles organized in composer packages.
 
-This section extends the rest of the Developer Guide, providing insight into core bundles implementation architecture and infrequently customizable features, which is particularly useful for non-standard customizations for backend and frontend developers as many features are interconnected.
+This section extends the rest of the Developer Guide, providing insight into core bundles implementation architecture and infrequently customizable features, which is particularly useful for non-standard customizations for backend and frontend developers as many features are interconnected. It also covers the Oro Config Component that provides additional resource types to the Symfony Config Component infrastructure.
+
+Components
+----------
+
+Components documentation covers the Oro Config Component. It provides additional resource types to the Symfony Config Component infrastructure responsible for loading configurations from different data sources and optionally monitoring these data sources for changes.
+
+* :ref:`Resource Types <dev-components-cumulative-resources>` provide a way to configure a bundle from other bundles.
+* :ref:`Resource Merge <dev-components-configuration-merger>` provides a way to merge configurations of some resource both from one or many bundles. Supports two strategies: replace and append.
+* :ref:`System Aware Resolver <dev-components-system-aware-resolver>` allows to make your configuration files more dynamic. For example, you can call service's methods, static methods, constants, context variables etc.
+
 
 .. _bundle-docs-platform:
 
@@ -71,15 +81,13 @@ Extensions' Bundles
 
 Documentation that relates to extensions' bundles is collected below. You can download extensions from the |Oro Extensions Store Commerce|.
 
-
 .. csv-table::
 
-   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**"
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`"
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`"
-   "**D**","**I**","**P**"
-   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`"
-
+   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",""
+   "**D**","**I**","**P**",""
+   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
 
 CRM Bundles
 -----------
@@ -99,6 +107,7 @@ CRM Bundles
 .. toctree::
    :hidden:
 
+   Components <components/index>
    ActionBundle <platform/ActionBundle/index>
    ActivityBundle <platform/ActivityBundle/index>
    ActivityListBundle <platform/ActivityListBundle/index>
@@ -196,8 +205,8 @@ CRM Bundles
    DPDBundle <extensions/DPDBundle/index>
    GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
    InfinitePayBundle <extensions/InfinitePayBundle/index>
-   MakerBundle <extensions/MakerBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
+   MakerBundle <extensions/MakerBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
    StripeBundle <extensions/StripeBundle/index>
 

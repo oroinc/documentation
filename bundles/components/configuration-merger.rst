@@ -1,3 +1,5 @@
+.. _dev-components-configuration-merger:
+
 Configuration Merger
 ====================
 

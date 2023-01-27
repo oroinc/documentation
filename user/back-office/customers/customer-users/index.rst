@@ -8,7 +8,7 @@ Manage Customer Users in the Back-Office
 
 .. hint:: This section is part of the :ref:`Customer Management <concept-guide-customers>` topic that provides a general understanding of accounts, contacts, customers, and customer hierarchy available in Oro applications.
 
-:term:`Customer users <Customer User>` act on behalf of the company (i.e. customers in Oro context)  and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization.
+:term:`Customer users <Customer User>` act on behalf of the company (i.e. customers in Oro context) and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization.
 
 For customer user management, navigate to **Customers > Customer Users** in the main menu.
 
@@ -27,15 +27,25 @@ In Customer Users section, you can:
 
 .. note:: You can delegate this function to the customer who will access user and role management in the OroCommerce storefront (see the :ref:`Delegating Users and Role Management to the Customer <user-guide--customers--customer-user-delegate>` section for more information).
 
+.. hint:: The Quick Action Buttons feature is available starting from OroCommerce v5.0.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+
+Quick action buttons enable you to create a new address, order, and quote directly from the customer user view page. Click the button to open the required form for data input. The form can be displayed in a new browser tab, a popup dialog window, or replace the current page, :ref:`depending on its system configuration <doc-configuration-display-settings-quick-actions>`.
+
+Alternatively, click **More Actions** at the top right and select the entity to be created from the customer user view page.
+
+.. image:: /user/img/customers/customer_users/quick-buttons-customer-user.png
+   :alt: Displaying the quick action buttons on the customer user view page
+
 **Customer Account Confirmation**
 
 Upon registration, a customer user receives an email confirmation request. Once they follow up with the requested action, their account is marked as confirmed.
 
-.. image::/img/customers/customer_users/CustomerUsers.png
+.. image:: /user/img/customers/customer_users/CustomerUsers.png
    :alt: The list of confirmed accounts
 
 Hover over the |IcMore| **More Options** menu to the right of the necessary customer user to perform the following actions:
 
+* |IcBan| **Disable** a customer user.
 * |IcView| **View** customer user details. Alternatively, click on the item to open its details page.
 * |IcEdit| **Edit** customer user details.
 * |IcDelete| **Delete** existing customer users.

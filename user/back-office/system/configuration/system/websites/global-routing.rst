@@ -54,7 +54,7 @@ To change the default global routing settings:
       :align: center
       :alt: Global Direct URLs settings
 
-   * **Enable Direct URLs** - when enabled, the page URL is built using the page title (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
+   * **Enable Direct URLs** - when enabled, the page URL is built using the page slug (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
 
    * **Product URL Prefix** - the prefix that is appended to the product slug in the URL.
 
@@ -77,9 +77,9 @@ To change the default global routing settings:
 
      * When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
 
-     * When *Direct URL* is selected, the page URL is built using the page title (e.g. `/500-watt-work-light`).
+     * When *Direct URL* is selected, the page URL is built using the page slug (e.g. `/500-watt-work-light`).
 
-     .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
+     .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed. Switching from one setting to the other does not modify the data stored in the database, it only controls which data is used to as a canonical URL.
 
    * **Canonical URL Security Type** - this option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
 
