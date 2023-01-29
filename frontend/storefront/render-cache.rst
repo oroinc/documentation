@@ -392,12 +392,11 @@ You can use filesystem or Redis as a cache storage. By default, render
 cache uses filesystem cache storage.
 
 When using **Redis**, it is recommended to use a separate server for the
-render cache. To configure it, define ``redis_dsn_layout`` option in parameters.yml
+render cache. To configure it, define the ``ORO_REDIS_LAYOUT_DSN`` environment variable
 
-   .. code-block:: yaml
-      :caption: config/parameters.yml
+   .. code-block:: bash
 
-      redis_dsn_layout: 'redis://localhost/5'
+      ORO_REDIS_LAYOUT_DSN=redis://localhost/5
 
 Keep in mind that Redis configuration is not compatible with the
 filesystem cache storage. To enable filesystem storage back, remove the

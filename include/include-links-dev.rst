@@ -135,10 +135,6 @@ Links (Dev)
 
    <a href="https://ngrok.com" target="_blank">Ngrok</a>
 
-.. |MySQL| raw:: html
-
-   <a href="https://www.mysql.com/" target="_blank">MySQL</a>
-
 .. |Node.js| raw:: html
 
    <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
@@ -519,10 +515,6 @@ Links (Dev)
 
    <a href="https://wiki.postgresql.org/wiki/Performance_Optimization" target="_blank">PostgreSQL website</a>
 
-.. |Optimization| raw:: html
-
-   <a href="https://dev.mysql.com/doc/refman/5.7/en/optimization.html" target="_blank">Optimization</a>
-
 .. |Symfony website| raw:: html
 
    <a href="https://symfony.com/doc/5.4/performance.html" target="_blank">Symfony website</a>
@@ -582,26 +574,6 @@ Links (Dev)
 .. |Getting Started with Amazon EC2| raw:: html
 
    <a href="https://aws.amazon.com/ec2/getting-started/" target="_blank">Getting Started with Amazon EC2 </a>
-
-.. |optimizing InnoDB Disk I/O| raw:: html
-
-   <a href="https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-diskio.html" target="_blank">optimizing InnoDB Disk I/O</a>
-
-.. |Unicode Support| raw:: html
-
-   <a href="https://dev.mysql.com/doc/refman/5.7/en/charset-unicode.html" target="_blank">Unicode Support</a>
-
-.. |InnoDB File-Format Management| raw:: html
-
-   <a href="https://dev.mysql.com/doc/refman/5.7/en/innodb-file-format.html" target="_blank">InnoDB File-Format Management</a>
-
-.. |Setting up the Database to be UTF8| raw:: html
-
-   <a href="https://symfony.com/doc/5.4/doctrine.html#configuring-the-database" target="_blank">Setting up the Database to be UTF8</a>
-
-.. |the other levels| raw:: html
-
-   <a href="https://dev.mysql.com/doc/refman/5.5/en/charset-syntax.html" target="_blank">the other levels</a>
 
 .. |TaskBundle| raw:: html
 
@@ -2635,7 +2607,7 @@ Links (Dev)
 
 .. |Using Explain| raw:: html
 
-   <a href="https://www.postgresql.org/docs/current/static/using-explain.html" target="_blank">Using Explain</a>
+   <a href="https://www.postgresql.org/docs/current/using-explain.html" target="_blank">Using Explain</a>
 
 .. |extensions library| raw:: html
 
@@ -2657,10 +2629,6 @@ Links (Dev)
 
    <a href="https://tools.percona.com/wizard" target="_blank">Percona Configuration Wizard</a>
 
-.. |MySQL Documentation| raw:: html
-
-   <a href="https://dev.mysql.com/doc/" target="_blank">MySQL Documentation</a>
-
 .. |PostgreSQL Documentation| raw:: html
 
    <a href="https://www.postgresql.org/docs/" target="_blank">PostgreSQL Documentation</a>
@@ -2673,9 +2641,9 @@ Links (Dev)
 
    <a href="http://pgtune.leopard.in.ua/" target="_blank">PGTune - Configuration calculator for PostgreSQL</a>
 
-.. |Percona Configuration Wizard for MySQL| raw:: html
+.. |Percona Distribution for PostgreSQL| raw:: html
 
-   <a href="https://tools.percona.com/wizard/" target="_blank">Percona Configuration Wizard for MySQL</a>
+   <a href="https://www.percona.com/software/postgresql-distribution" target="_blank">Percona Distribution for PostgreSQL</a>
 
 .. |PostgreSQL Performance Optimization| raw:: html
 
@@ -3341,17 +3309,13 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Test/Functional/MessageProcessTrait.php" target="_blank">Oro\Bundle\MessageQueueBundle\Test\Functional\MessageQueueAssertTrait</a>
 
-.. |Shield| raw:: html
-
-   <a href="https://www.elastic.co/products/shield" target="_blank">Shield</a>
-
-.. |configuration section in the Elasticsearch documentation| raw:: html
-
-   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/configuration.html" target="_blank">configuration section in the Elasticsearch documentation</a>
-
 .. |Elasticsearch API documentation| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/index_management.html" target="_blank">Elasticsearch API documentation</a>
+
+.. |Configuration Environments in Symfony| raw:: html
+
+   <a href="https://symfony.com/doc/5.4/configuration.html#configuration-environments" target="_blank">Configuration Environments in Symfony</a>
 
 .. |Elasticsearch bulk API| raw:: html
 
@@ -3541,13 +3505,9 @@ Links (Dev)
 
    <a href="https://medium.com/hipages-engineering/scaling-elasticsearch-b63fa400ee9e" target="_blank">distributed search</a>
 
-.. |Both MySQL| raw:: html
+.. |PostgreSQL support replication| raw:: html
 
-   <a href="https://dev.mysql.com/doc/refman/5.7/en/replication.html" target="_blank">Both MySQL</a>
-
-.. |and PostgreSQL| raw:: html
-
-   <a href="https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling" target="_blank">and PostgreSQL</a>
+   <a href="https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling" target="_blank">PostgreSQL support replication</a>
 
 .. |Elasticsearch replicas| raw:: html
 
@@ -3892,14 +3852,6 @@ Links (Dev)
 .. |https://packagist.oroinc.com/explore/| raw:: html
 
    <a href="https://packagist.oroinc.com/" target="_blank">https://packagist.oroinc.com/explore/</a>
-
-.. |ft_min_word_len| raw:: html
-
-   <a href="http://dev.mysql.com/doc/refman/5.1/en/server-system-variables.html#sysvar_ft_min_word_len" target="_blank">ft_min_word_len</a>
-
-.. |change this value to 3| raw:: html
-
-   <a href="http://dev.mysql.com/doc/refman/5.1/en/fulltext-fine-tuning.html" target="_blank">change this value to 3</a>
 
 .. |Shovel plugin| raw:: html
 
@@ -4681,10 +4633,6 @@ Links (Dev)
 .. |Define a new client| raw:: html
 
    <a href="https://github.com/snc/SncRedisBundle/blob/3.2.2/Resources/doc/index.md#usage" target="_blank">Define a new client</a>
-
-.. |SncRedisBundle Documentation| raw:: html
-
-   <a href="https://github.com/snc/SncRedisBundle" target="_blank">SncRedisBundle Documentation</a>
 
 .. |Predis Documentation| raw:: html
 
@@ -6019,6 +5967,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/crm/blob/master/src/Oro/Bundle/ActivityContactBundle/Direction/DirectionProviderInterface.php" target="_blank">DirectionProviderInterface</a>
 
+.. |PostgreSQL Connection URI Reference| raw:: html
+
+   <a href="https://www.postgresql.org/docs/9.4/libpq-connect.html" target="_blank">PostgreSQL Connection URI Reference</a>
+
 .. |Sending Emails with Mailer| raw:: html
 
    <a href="https://symfony.com/doc/current/mailer.html#transport-setup" target="_blank">Sending Emails with Mailer</a>
@@ -6046,4 +5998,3 @@ Links (Dev)
 .. |official Elasticsearch documentation on search synonyms| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html#_solr_synonyms_2" target="_blank">official Elasticsearch documentation on search synonyms</a>
-

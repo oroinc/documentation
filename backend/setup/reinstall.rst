@@ -11,8 +11,7 @@ To reinstall your Oro application:
 1. Drop the database that was used for the previous installation attempt.
 2. Create a new database for new Oro application installation.
 3. Empty the *<installation directory>/var/cache/prod* and *<installation directory>/var/cache/session* directories.
-4. Clear the Installed option in the *config/parameters.yml* file and update the database name, if necessary.
-5. Launch the Oro application installation :ref:`via console in a silent mode <silent-installation>`.
+4. Launch the Oro application installation :ref:`via console in a silent mode <silent-installation>`.
 
 .. note:: The installation process terminates with a warning if the environment does not meet the system requirements. Fix the reported issue(s) and launch the installation again.
 

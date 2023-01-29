@@ -23,7 +23,7 @@ ORM entities in the WebsiteSearchBundle to store search index information:
 
 Each of these entities has its own table in the database. Four type-specific tables have relation to main entity table. Entities from the WebsiteSearchBundle use separate entity manager -- `search` -- and, as a consequence, separate connection to the database.
 
-ORM engine supports two DBMSes - Mysql and PostgreSQL. Each of these DBMSese has it's own driver class that encapsulates interaction and provides common interface to execute queries. Mysql driver is stored in `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\Driver\\PdoMysql`, PostgreSQL driver is stored in `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\Driver\\PdoPgsql` - both of these drivers extend similar drivers from SearchBundle and use the same approach to work with search index.
+ORM engine supports PostgreSQL DBMS. This DBMS has it's own driver class that encapsulates interaction and provides common interface to execute queries. PostgreSQL driver is stored in `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\Driver\\PdoPgsql` - this driver extend similar driver from SearchBundle and use the same approach to work with search index.
 
 The ORM engine has some advantages and disadvantages. One of the big advantages is that engine shares the same database with an application, so it can be backed up with the main data, and there is no need to set up separate search engine like Elasticsearch or Sphinx. With relational DBMSes, indexation happens faster.
 
@@ -32,7 +32,7 @@ On the other hand, the search via ORM fulltext search index is not that fast, es
 ORM Search
 ----------
 
-The ORM search engine is represented by the `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\OrmEngine` class. This engine proxies a search call to the appropriate DBMS driver (Mysql ot PostgreSQL) and converts result to the required format.
+The ORM search engine is represented by the `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\OrmEngine` class. This engine proxies a search call to the appropriate DBMS driver (PostgreSQL) and converts result to the required format.
 
 Let's check an example of a simple query. Here is the text representation of a search query:
 

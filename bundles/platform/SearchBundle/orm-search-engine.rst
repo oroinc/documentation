@@ -5,7 +5,7 @@ ORM Search Engine
 
 OroSearchBundle provides ORM search engine out of the box. It stores
 index data in DB tables and uses fulltext index to perform search.
-Bundle supports search index for both **MySQL** and **PostgreSQL** DBMS.
+Bundle supports search index for **PostgreSQL** DBMS.
 ORM engine is used by default.
 
 Configuration
@@ -39,7 +39,6 @@ implementation and generates valid SQL.
 
     parameters:
         oro_search.drivers:
-            pdo_mysql: Oro\Bundle\SearchBundle\Engine\Orm\PdoMysql
             pdo_pgsql: Oro\Bundle\SearchBundle\Engine\Orm\PdoPgsql
 
 Features
@@ -54,11 +53,6 @@ Configuration defines fulltext manager
 *Oro\\Bundle\\SearchBundle\\Engine\\FulltextIndexManager*
 that is used during installation and inside a special listener - it allows the
 system to create fulltext indexes bypassing Doctrine processing.
-
-**Note for MySQL driver:** MySQL has a lower limit to the string length
-for fulltext index called |ft_min_word_len|, i.e. if a string is
-shorter than this limit, the fulltext index will not be used. It is
-recommended to |change this value to 3|.
 
 
 .. include:: /include/include-links-dev.rst

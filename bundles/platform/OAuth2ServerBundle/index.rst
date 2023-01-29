@@ -54,7 +54,7 @@ The default configuration of OroOAuth2ServerBundle is illustrated below:
 
             # The string that is used to encrypt refresh token and authorization token payload.
             # How to generate an encryption key: https://oauth2.thephpleague.com/installation/#string-password
-            encryption_key: '%secret%'
+            encryption_key: '%kernel.secret%'
 
             # The configuration of CORS requests
             cors:

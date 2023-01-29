@@ -17,7 +17,7 @@ Website search index type: The entity is invisible to a current user. Please, ch
 Cannot Connect to Elasticsearch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Please, verify the credentials specified in the confing/parameters.yml file - host, port, index name, and authentication options. You can try to manually connect to the Elasticsearch server via the CLI curl command to make sure that you have access to it:
+Please, verify the credentials specified in the ``ORO_SEARCH_DSN`` environment variable - host, port, index name, and authentication options. You can try to manually connect to the Elasticsearch server via the CLI curl command to make sure that you have access to it:
 
 .. code-block:: yaml
 
@@ -34,7 +34,7 @@ Please, verify the credentials specified in the confing/parameters.yml file - ho
 Different Search Engines Return Different Results
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Implementation of the full-text search depends on a storage type, so different engines might return slightly different results, which is valid behavior. Oro applications may use three different full-text search algorithms - Mysql DBMS full-text search, PostgreSQL DBMS full-text search, or Elasticsearch full-text search.
+Implementation of the full-text search depends on a storage type, so different engines might return slightly different results, which is valid behavior. Oro applications may use two different full-text search algorithms - PostgreSQL DBMS full-text search, or Elasticsearch full-text search.
 
 Need to Reindex Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^

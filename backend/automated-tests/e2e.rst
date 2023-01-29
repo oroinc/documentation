@@ -42,19 +42,13 @@ Prerequisites
 
           .. code-block:: bash
 
-             rm -rf config/parameters.yml var/cache/prod
+             rm -rf var/cache/prod
              composer build-parameters -n
 
 Running Tests
 -------------
 
-1. To test a remote application, define the database server version in the config/parameters.yml file, so the application does not attempt to connect to the database:
-
-   .. code-block:: bash
-
-      composer set-param database_server_version=8
-
-2. Create a ``behat.yml`` file in the application folder. In this file, set the ``base_url`` option to the application URL to test.
+1. Create a ``behat.yml`` file in the application folder. In this file, set the ``base_url`` option to the application URL to test.
 
    .. code-block:: yaml
 
@@ -76,13 +70,13 @@ Running Tests
                               base_url: ~ # default is '%mink.base_url%/media/behat/'
                               auto_clear: false
 
-3. Start the ChromeDriver:
+2. Start the ChromeDriver:
 
    .. code-block:: bash
 
       chromedriver --url-base=wd/hub --port=4444
 
-4. You can now run behat tests with the skip-isolators option:
+3. You can now run behat tests with the skip-isolators option:
 
    .. code-block:: bash
 
@@ -92,7 +86,7 @@ Running Tests
 
 You can find Behat features provided by Oro that cover most application features by running the ``php bin/behat --available-features`` command. However, remember that most of them require data fixtures to be loaded to the database, so you cannot use them as-is for the end-to-end testing without the database connection to the tested application.
 
-.. note:: Some behat steps interact with application services. When testing the remote application, avoid using these steps or provide service connection details for the required services in the config/parameters.yml file to fulfill requirements for such step(s).
+.. note:: Some behat steps interact with application services. When testing the remote application, avoid using these steps or provide service connection details for the required services in the environment variables to fulfill requirements for such step(s).
 
 Running Tests with Data Fixtures
 --------------------------------
@@ -101,17 +95,11 @@ To test a feature, you often need different data loaded (users to log in, produc
 
 .. note:: Your local application source code must match the code of the tested application. Otherwise, you may face issues with the data load.
 
-1. Provide database credentials for the tested application to the config/parameters.yml file. E.g.:
+1. Provide database credentials for the tested application to the .app-env.local file. E.g.:
 
-   .. code-block:: yaml
+   .. code-block:: bash
 
-      parameters:
-          database_driver:        pdo_mysql
-          database_host:          10.0.0.1
-          database_port:          3306
-          database_name:          oro_db
-          database_user:          oro_db_user
-          database_password:      oro_db_pass
+      ORO_DB_DSN=postgres://oro_db_user:oro_db_pass@10.0.0.1:3306/oro_db
 
 2. Create a ``behat.yml`` file in the application folder. In this file, set the ``base_url`` option to the application URL to test.
 

@@ -364,7 +364,7 @@ The search index does not provide any additional logic to recognize that the ind
 ORM Search
 ^^^^^^^^^^
 
-ORM search engine uses DBMS as the main storage, and the ability to handle the unavilable state of storage depends on how it is organized in the used DBMS. |Both MySQL| |and PostgreSQL| support replication, which can be used to manage such a situation.
+ORM search engine uses DBMS as the main storage, and the ability to handle the unavilable state of storage depends on how it is organized in the used DBMS. |PostgreSQL support replication|, which can be used to manage such situation.
 If you have a search index in a separate DB, you can organize replication exclusively for this DB.
 
 Elasticsearch Search

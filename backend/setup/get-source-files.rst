@@ -86,8 +86,7 @@ Method 2: Use the GitHub Repository
        $ cd <application-root-folder>
        $ composer install --prefer-dist --no-dev
 
-   Note that you are prompted to enter the installation environment configuration options that are saved into the ``config/parameters.yml`` file.
-   You can find the description for every parameter in the :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
+   Note that you can find the description for every environment variable in the :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
 
 .. _platform-installation-download-archive:
 
@@ -118,7 +117,7 @@ Method 3: Download the Source Code Archive
 
 2. All required dependencies are already installed in the vendor folder in the extracted archive.
 
-   .. warning:: Unlike when cloning from the GitHub repository, you are not prompted to enter the configuration parameter values. Default values are used instead. If necessary, update the configuration parameters in the ``config/parameters.yml`` file once the command execution is complete.
+   .. warning:: If necessary, update the configuration parameters in the ``.env-app.local`` file once the command execution is complete.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
