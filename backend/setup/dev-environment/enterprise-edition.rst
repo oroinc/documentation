@@ -24,7 +24,7 @@ Enable Required Package Repositories
 To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.) required for OroCommerce Enterprise Edition application operation, use the following repositories:
 
 * Extra Packages for Enterprise Linux (EPEL) repository by |Red Hat|
-* Remi's PHP 8.1 RPM repository for Enterprise Linux 8
+* Remi's PHP 8.2 RPM repository for Enterprise Linux 8
 * Oro Public repository
 * Elasticsearch repository
 * Rabbitmq and rabbitmq-erlang repositories
@@ -34,7 +34,7 @@ Add the EPEL and remi repositories by running:
 .. code-block:: bash
 
    dnf -y install dnf-plugin-config-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:16 php:remi-8.1
+   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:16 php:remi-8.2
    dnf -y upgrade
 
 Add Oro public repository:

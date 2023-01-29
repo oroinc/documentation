@@ -134,9 +134,9 @@ specific PHP version for the project, go to the project root folder and run:
 
 .. code-block:: none
 
-   echo 8.1 > .php-version
+   echo 8.2 > .php-version
 
-This will switch the php version to 8.1 for Symfony Server and all the
+This will switch the php version to 8.2 for Symfony Server and all the
 console commands wrapped with ``symfony``.
 
 Run Message Consumer in the Background
