@@ -1,3 +1,5 @@
+.. _dev-cookbook-system-mq-consumer:
+
 Consumer
 ========
 
