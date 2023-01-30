@@ -3,11 +3,11 @@
 Menu Templates
 ==============
 
-OroCommerceMenuBundle introduces the ability to render menu items using different menu templates. Menu templates allow to customize the way menu item is displayed on the storefront. Menu template represents a set of layout updates specific for each menu template defined by a frontend theme developer.
+OroCommerceMenuBundle introduces the ability to render menu items using different menu templates. Menu templates allow to customize the way menu item is displayed in the storefront. Menu template represents a set of layout updates specific for each menu template defined by a frontend theme developer.
 
 .. note:: The name of the menu template used for each storefront menu item is specified under the extra option ``Oro\Bundle\CommerceMenuBundle\Entity\MenuUpdate::MENU_TEMPLATE`` that is set automatically based on the related menu updates.
 
-Available menu templates are collected from ``theme.yml`` configuration files across all themes and can be accessed by a developer using ``Oro\Bundle\CommerceMenuBundle\Provider\MenuTemplatesProvider`` provider. The configuration structure looks as following:
+Available menu templates are collected from ``theme.yml`` configuration files across all themes and can be accessed by a developer using the ``Oro\Bundle\CommerceMenuBundle\Provider\MenuTemplatesProvider`` provider. The configuration structure is illustrated below:
 
 .. code-block:: yaml
    :caption: Resources/views/layouts/default/theme.yml
@@ -20,7 +20,7 @@ Available menu templates are collected from ``theme.yml`` configuration files ac
                 label: 'Custom Tree'
                 template: 'custom_tree_1' # Optional setting that specifies the directory where the menu template layout updates are located. Fallbacks to menu template key if not set, i.e. "custom_tree".
 
-Though the Menu Template can be specified for each storefront menu item, out-of-the-box only top-level items of the :ref:`main navigation menu <bundle-docs-commerce-commerce-menu-bundle-main-navigation>`, as the most demanded, make use of menu templates. The decision whether to use menu templates in other menus lays on the storefront theme developers.
+Although a Menu Template can be specified for each storefront menu item, out-of-the-box only top-level items of the :ref:`main navigation menu <bundle-docs-commerce-commerce-menu-bundle-main-navigation>`, as the most demanded, make use of menu templates. Usually storefront theme developers judge whether they require menu templates in other menus. 
 
 Menu Item Renderer
 ------------------
