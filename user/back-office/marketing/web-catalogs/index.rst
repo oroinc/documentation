@@ -32,6 +32,7 @@ See the following topics for more details on how to create and manage web catalo
 * :ref:`Customize Web Catalog Contents for Localization, Customer or Customer Group <user-guide--marketing--web-catalog--customize>`
 * :ref:`Preview Web Catalog <user-guide--marketing--web-catalog--preview>`
 * :ref:`Build a Custom Web Catalog From Scratch (Example) <user-guide--marketing--web-catalog--sample>`
+* :ref:`Changing Storefront's Product Menu <concept-guide-web-catalog-change-storefront-menu>`
 * :ref:`Use Web Catalog Nodes as Root Nodes (Example) <user-guide--web-catalog-navigation-tool>`
 
 .. toctree::
