@@ -204,7 +204,7 @@ To tune for indexing speed, you can try the following recommendations:
 
 See more information on optimizing indexing speed on |Elasticsearch website|.
 
-Also, keep in mind that using Elasticsearch with MySQL, PostgreSQL, Redis and/or Rabbit on one server is not recommended to avoid slow performance.
+Also, keep in mind that using Elasticsearch with PostgreSQL, Redis and/or Rabbit on one server is not recommended to avoid slow performance.
 
 Optimize Redis
 --------------
@@ -267,31 +267,6 @@ The following recommendations can highly improve PostgreSQL performance:
 * Reduce the *random_page_cost* value. It encourages the query optimizer to use random access index scans.
 
 For more optimization configurations, see |PostgreSQL website|.
-
-Optimize MySQL
---------------
-
-You can get better performance and minimize storage space by using some of the techniques listed below.
-
-1. Optimize at the database level. Make sure that:
-
-  * Tables are structured properly, columns have the right data types.
-  * Right indexes are in place to make queries efficient.
-  * You are using the appropriate storage engine for each table.
-  * You use an appropriate row format.
-  * The application uses an appropriate locking strategy.
-  * All memory areas are used for caching sized correctly.
-
-2. Optimize at the hardware level. System bottlenecks typically arise from these sources:
-
-   * Disk seeks. To optimize the seek time, distribute the data onto more than one disk.
-   * Disk reading and writing. When the disk is in the correct position, we need to read or write the data. With modern disks, one disk delivers at least 10–20MB/s throughput. This is easier to optimize than seeks because you can read in parallel from multiple disks.
-   * CPU cycles. The most common limiting factor is having large tables compared to the amount of memory. But with small tables, speed is usually not the problem.
-   * Memory bandwidth. The main memory bandwidth may become a bottleneck when the CPU needs more data than can fit in the CPU cache.
-
-More recommendations are available in :ref:`MySQL <mysql-optimization>` topic in Oro documentation.
-
-For more information on performance optimization on MySQL website, see the |Optimization| section of the Reference Manual.
 
 Optimize Symfony
 ----------------

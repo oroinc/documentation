@@ -76,7 +76,7 @@ How to Use Logger
    You can use this approach when:
 
       * A form was submitted but the expected action was stopped which led to the exception.
-      * A system is not able to save the record to the database because of a MySQL error (for example, when you use a non-unique key).
+      * A system is not able to save the record to the database because of a PostgreSQL error (for example, when you use a non-unique key).
       * A system fails to send a message to the queue, or the queue does not respond.
       * A system fails to send an external request or a third-party API did not respond or responded with an unexpected message.
       * Etc.

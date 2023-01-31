@@ -24,7 +24,7 @@ Enable Required Package Repositories
 To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.) required for OroCommerce Enterprise Edition application operation, use the following repositories:
 
 * Extra Packages for Enterprise Linux (EPEL) repository by |Red Hat|
-* Remi's PHP 8.1 RPM repository for Enterprise Linux 8
+* Remi's PHP 8.2 RPM repository for Enterprise Linux 8
 * Oro Public repository
 * Elasticsearch repository
 * Rabbitmq and rabbitmq-erlang repositories
@@ -34,7 +34,7 @@ Add the EPEL and remi repositories by running:
 .. code-block:: bash
 
    dnf -y install dnf-plugin-config-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:16 php:remi-8.1
+   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:16 php:remi-8.2
    dnf -y upgrade
 
 Add Oro public repository:
@@ -142,62 +142,7 @@ In this guide, to simplify installation in the local and development environment
 
 Commands for running the web server, php-fpm process, cron commands, background processes, etc., are executed via the dedicated *application user* (*nginx*). Reuse them without modification, if you keep the same username. Otherwise, adjust them accordingly.
 
-Prepare PostgreSQL Database
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Initialize a PostgreSQL Database Cluster
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-   postgresql-setup --initdb
-
-Enable Password Protected PostgreSQL Authentication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-By default, PostgreSQL is configured to use `ident` authentication.
-
-To use the password-based authentication instead, replace the `ident` with the `md5` in the `pg_hba.conf` file.
-
-Open the file */var/lib/pgsql/data/pg_hba.conf* and change the following strings:
-
-.. code-block:: none
-
-   host    all             all             127.0.0.1/32            ident
-   host    all             all             ::1/128                 ident
-
-to match these ones:
-
-.. code-block:: none
-
-   host    all             all             127.0.0.1/32            md5
-   host    all             all             ::1/128                 md5
-
-Change the Password for the *postgres* User
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To set the password for the *postgres* user to the new secure one, run the following commands:
-
-.. code-block:: bash
-
-   systemctl start postgresql
-   su postgres
-   psql
-   \password
-
-.. note:: You will be prompted to enter the new password.
-
-Create a Database for the Oro Application
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To create the `oro` database that will be used by the Oro application, run the following commands:
-
-.. code-block:: bash
-
-   CREATE DATABASE oro;
-   \c oro
-   CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-   \q
+.. include:: ./prepare-postgresql.rst
 
 Configure Web Server
 ^^^^^^^^^^^^^^^^^^^^
@@ -320,7 +265,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
             fastcgi_param  HTTPS            on;
         }
 
-        # Websockets connection path (configured in config/parameters.yml)
+        # Websockets connection path (configured in .env-app.local)
         location /ws {
             reset_timedout_connection on;
 

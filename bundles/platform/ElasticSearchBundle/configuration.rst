@@ -8,34 +8,11 @@ Parameters
 
 If you have a running Elasticsearch server, the default settings are sufficient. The search engine automatically defines the client and index configuration and then creates the index. 
 
-If required, you can customize the Elasticsearch client settings. For this, modify the following parameters in file `config/parameters.yml`:
+If required, you can customize the Elasticsearch client settings. For this, modify the following environment variables:
 
 Basic parameters:
 
-* **search_engine_name** - An engine name, must be "elastic_search" for the Elasticsearch engine.
-* **search_engine_host** - A host name that the Elasticsearch should be connected to. Remember to specify the `https://` if you are going to use SSL.
-* **search_engine_port** - A port number that the Elasticsearch should use for connection.
-
-Auth parameters:
-
-* **search_engine_username** - A login for the HTTP Auth authentication.
-* **search_engine_password** - A password for HTTP Auth authentication.
-
-Index name:
-
-* **search_engine_index_prefix** - A prefix of all Elasticsearch indexes used to store data in.
-
-SSL Authentication:
-
-* **search_engine_ssl_verification** - A path to the `cacert.pem` certificate which is used to verify a node certificate.
-* **search_engine_ssl_cert** - A path to the client public certificate file.
-* **search_engine_ssl_cert_password** - A password for the certificate defined in the **search_engine_ssl_cert** parameter (optional).
-* **search_engine_ssl_key** - A path to the client private key file.
-* **search_engine_ssl_key_password** - A password for the key defined in the **search_engine_ssl_key** parameter (optional).
-
-You will likely need Shield installed in Elasticsearch for the Cluster SSL authentication to work. See the |Shield| topic for more information.
-
-For general information on configuring SSL certificates, see the ||configuration section in the Elasticsearch documentation||.
+* **search_engine_dsn** - An engine DSN, must be "elastic_search" for the Elasticsearch engine. For example, ``elastic-search://valid_user:valid_password@127.0.0.1:9200?prefix=oro_search``. The ``valid_user:valid_password@'`` DSN's part can be skipped if authentication is not enabled.
 
 If you need more specific Elasticsearch configuration, see the chapters below.
 
@@ -50,7 +27,7 @@ To configure your Elasticsearch engine, put the following configuration into the
         engine: "elastic_search"
 
 
-In this case, all the required settings will be taken from `config/parameters.yml` (see the [Parameters section](#parameters)).
+In this case, all the required settings will be taken from corresponding environment variables.
 Default configuration is defined at `Oro/Bundle/ElasticSearchBundle/Resources/config/oro/app.yml`.
 
 If you need to create a more transparent and detailed configuration, define the required settings directly in the `config/config.yml`.

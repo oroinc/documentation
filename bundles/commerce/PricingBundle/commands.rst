@@ -4,7 +4,7 @@ CLI Commands (PricingBundle)
 oro:price-lists:pl-storage-reorganize
 -------------------------------------
 
-The ``oro:price-lists:pl-storage-reorganize`` command reorganizes price list database tables to use or forgo sharding. After running this command, make sure to modify the *enable_price_sharding* option in config/parameters.yml to a matching value.
+The ``oro:price-lists:pl-storage-reorganize`` command reorganizes price list database tables to use or forgo sharding. After running this command, make sure to modify the *enable_price_sharding* parameter in config/config.yml to a matching value.
 
 Use ``--strategy=sharding`` to reorganize database tables using sharding for prices:
 

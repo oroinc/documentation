@@ -296,7 +296,7 @@ The following is an example of a message production using only a transport layer
     use Doctrine\DBAL\DriverManager;
 
     $doctrineConnection = DriverManager::getConnection(
-        ['url' => 'mysql://user:secret@localhost/mydb'],
+        ['url' => 'postgresql://user:secret@localhost/mydb'],
         new Configuration
     );
 
@@ -321,7 +321,7 @@ The following is an example of a message consuming using only a transport layer:
     use Doctrine\DBAL\DriverManager;
 
     $doctrineConnection = DriverManager::getConnection(
-        ['url' => 'mysql://user:secret@localhost/mydb'],
+        ['url' => 'postgresql://user:secret@localhost/mydb'],
         new Configuration
     );
 
@@ -368,7 +368,7 @@ The following is an example of a message consuming using a consumption layer:
     use Oro\Component\MessageQueue\Transport\Dbal\DbalConnection;
 
     $doctrineConnection = DriverManager::getConnection(
-        ['url' => 'mysql://user:secret@localhost/mydb'],
+        ['url' => 'postgresql://user:secret@localhost/mydb'],
         new Configuration
     );
 

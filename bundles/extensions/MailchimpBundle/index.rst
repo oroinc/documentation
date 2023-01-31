@@ -62,7 +62,7 @@ Segment export has four steps:
 
     To make marketing list members accepted without the merge vars values even when they are required, set the env variable ``oro_mailchimp.client.member_skip_merge_validation`` to *true*.
 
-     Place any env variable into the config/parameters.yml file.
+     Place any configuration variable into the config/config.yml file.
 
 Extended Merge Vars
 -------------------
