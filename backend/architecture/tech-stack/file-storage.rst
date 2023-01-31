@@ -132,6 +132,9 @@ Example:
 
    gaufrette_adapter.public: 'gridfs:mongodb://user:password@host1:27017,host2:27017/media'
 
+.. note::
+   ``mongodb://user:password@host1:27017,host2:27017`` part of the value pointed above can be replaced with container parameter that relies on environment variable. This provides an ability to switch between MongoDB GridFS storages in runtime. See an example in the ``config/parameters.yml.dist`` file in the application.
+
 .. _backend-file-storage-add-ability-to-configure-adapter-with-parameters.yml:
 
 Add Ability To Configure File System Adapter with parameters.yml

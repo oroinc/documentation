@@ -1008,7 +1008,7 @@ The default configuration for extension with alias "oro_oauth2_server":
             private_key:          '%kernel.project_dir%/var/oauth_private.key' # Example: /var/oauth/private.key
 
             # The string that is used to encrypt refresh token and authorization token payload. How to generate an encryption key: https://oauth2.thephpleague.com/installation/#string-password.
-            encryption_key:       '%secret%'
+            encryption_key:       '%kernel.secret%'
 
             # The configuration of CORS requests.
             cors:
@@ -1228,4 +1228,3 @@ The default configuration for extension with alias "oro_website_search":
     oro_website_search:
         engine:               orm
         engine_parameters:    []
-

@@ -4,7 +4,7 @@ Set up Environment for OroPlatform Based Application with Docker and Symfony Ser
 ===================================================================================
 
 During development, you can use Docker to run various application
-services (MySQL, Postgres, ElasticSearch, RabbitMQ, Redis and MailCatcher), but for
+services (Postgres, ElasticSearch, RabbitMQ, Redis and MailCatcher), but for
 simplicity, performance and reliability have PHP and NodeJS installed
 locally on a host machine.
 
@@ -73,7 +73,7 @@ Install the Application
 
 .. code-block:: none
 
-   composer set-parameters database_driver=pdo_pgsql search_engine_name=elastic_search message_queue_transport=amqp message_queue_transport_config="{host: '%env(ORO_MQ_HOST)%', port: '%env(ORO_MQ_PORT)%', user: '%env(ORO_MQ_USER)%', password: '%env(ORO_MQ_PASSWORD)%', vhost: '/'}" redis_dsn_cache='%env(ORO_REDIS_URL)%/1' redis_dsn_doctrine='%env(ORO_REDIS_URL)%/2'
+      composer set-parameters redis_dsn_cache='%env(ORO_REDIS_CACHE_DSN)%' redis_dsn_doctrine='%env(ORO_REDIS_DOCTRINE_DSN)%' redis_dsn_layout='%env(ORO_REDIS_LAYOUT_DSN)%'
 
 5. Install Oro application. This may take up to several minutes:
 
@@ -134,9 +134,9 @@ specific PHP version for the project, go to the project root folder and run:
 
 .. code-block:: none
 
-   echo 8.1 > .php-version
+   echo 8.2 > .php-version
 
-This will switch the php version to 8.1 for Symfony Server and all the
+This will switch the php version to 8.2 for Symfony Server and all the
 console commands wrapped with ``symfony``.
 
 Run Message Consumer in the Background
@@ -183,7 +183,7 @@ All application services are defined in the ``docker-compose.yml`` file.
 By default, the ``docker-compose.yml`` file shipped with an application has a
 set of recommended services for each application:
 
-* For community edition applications: **MySQL** and **MailCatcher**.
+* For community edition applications: **Postgres** and **MailCatcher**.
 * For enterprise edition applications: **Postgres**, **ElasticSearch**, **RabbitMQ**, **Redis** and **MailCatcher**.
 
 Override Docker Compose Configuration Locally
@@ -240,7 +240,7 @@ command:
 
 .. code-block:: none
 
-   composer set-parameters session_handler="snc_redis.session.handler" redis_dsn_session="%env(ORO_REDIS_URL)%/0"
+   composer set-parameters 'env(ORO_SESSION_DSN)'='%env(ORO_REDIS_SESSION_DSN)%'
 
 Troubleshooting
 ---------------
@@ -255,7 +255,7 @@ If the list is empty, run ``docker-compose up -d`` to start all the services.
 
 **An exception occured while establishing a connection to figure out your platform version**
 
-Make sure all the application services are up and healthy with ``docker-compose ps``. There should be ``pgsql`` or ``mysql`` service in the list.
+Make sure all the application services are up and healthy with ``docker-compose ps``. There should be ``pgsql`` service in the list.
 
 If the list is empty, run ``docker-compose up -d`` to start all the services.
 

@@ -45,25 +45,18 @@ Create your new Oro application project with the composer by running one of the 
 .. note::
         Alternatively, you can download and unpack the archive with the application source code or use git instead of the composer. Please, refer to the dedicated article :ref:`Get the Oro Application Source Code <installation--get-files>` for more details.
 
-Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) saved into the ``config/parameters.yml`` file. You can find the description for every parameter in the :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
-
 Configure WebSocket Parameters
 ------------------------------
 
-If you use HTTP mode for your Oro application website, keep the default values for the WebSocket-related parameters in the ``config/parameters.yml`` file.
+If you use HTTP mode for your Oro application website, keep the default values for the WebSocket-related parameters.
 
-If you use HTTPS mode, open the ``config/parameters.yml`` file and change the WebSocket-related parameters to match the following values:
+If you use HTTPS mode, set the WebSocket-related environment variables to match the following values:
 
 .. code-block:: none
 
-   websocket_bind_address:  0.0.0.0
-   websocket_bind_port:     8080
-   websocket_frontend_host: "*"
-   websocket_frontend_port: 443
-   websocket_frontend_path: "ws"
-   websocket_backend_host:  "*"
-   websocket_backend_port:  8080
-   websocket_backend_path:  ""
+   ORO_WEBSOCKET_SERVER_DSN=//0.0.0.0:8080
+   ORO_WEBSOCKET_FRONTEND_DSN=//*:443/ws
+   ORO_WEBSOCKET_BACKEND_DSN=tcp://127.0.0.1:8080
 
 For more information on these parameters, see |OroSyncBundle documentation|.
 

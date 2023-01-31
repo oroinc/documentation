@@ -96,7 +96,7 @@ This repository provides a Docker Compose configuration file (docker-compose.yam
 * OroCommerce Community Edition for Germany: |docker.io/oroinc/commerce-crm-application-de|
 
 One image is used to run containers in several roles: web server, php-fpm, consumer, WebSocket server, and cron service.
-All these services must be running, and the MySQL database must be prepared for a full-fledged application.
+All these services must be running, and the PostgreSQL database must be prepared for a full-fledged application.
 
 
 .. admonition:: Business Tip

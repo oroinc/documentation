@@ -18,7 +18,7 @@ Prepare a Database Dump
 
     .. code-block:: none
 
-       # make sure to adapt username and other params based on the values from your application's config/parameters.yml file
+       # make sure to adapt username and other params based on the values from your application's environment variables or .env-app.local file
        # you can omit --host and --port if you are using localhost and 5432 respectively
        pg_dump --no-owner --username=oro_db_user --host=localhost --port=5432 oro_db > /tmp/oro_db_dump.sql
 

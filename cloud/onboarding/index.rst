@@ -51,13 +51,13 @@ You can also fork and customize the Enterprise Edition of Oro's application sour
 Deploy OroCloud Environment and Application
 -------------------------------------------
 
-If you plan to deploy a custom Oro application from the forked or private repository, you will be requested to provide the custom repository address in ssh format (i.e. git@github.com:org/app.git), tag or branch that should be used for installation.
+If you plan to deploy a custom Oro application from the forked or private repository, you will be requested to provide the custom repository address in ssh format (i.e. git@github.com:org/app.git), tag, branch or commit that should be used for installation.
 
 .. note:: For customized installation, please ensure that your custom source code is fully functional and does not disrupt the application installation flow.
 
 The support team will generate SSH keys and will share a public key with you. This key should be added as a deployment key to your custom repository to authorize cloning the repository from the Oro application host in the cloud environment.
 
-Once all the necessary information is collected and the necessary access permissions are granted, the environment of the :ref:`standard configuration <cloud_architecture>` is prepared and the Oro application is installed using the repository, tag or branch you have specified, or with the latest LTS :ref:`released version <doc--community--release>` of the application if no customization is planned.
+Once all the necessary information is collected and the necessary access permissions are granted, the environment of the :ref:`standard configuration <cloud_architecture>` is prepared and the Oro application is installed using the repository, tag, branch or commit you have specified, or with the latest LTS :ref:`released version <doc--community--release>` of the application if no customization is planned.
 
 Once the installation is complete, the support team creates the first administrator in the Oro Application using the details collected during your onboarding.
 

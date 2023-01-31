@@ -15,7 +15,7 @@ Search index upgrade is part of the :ref:`application upgrade <upgrade-applicati
 So, once you have turned on maintenance mode through ``app/console lexik:maintenance:lock --env=prod``, you need to perform the following actions:
 
 1. |Stop old Elasticsearch|
-2. Modify credentials for search engine configuration in the `config/parameters.yml` file
+2. Modify credentials for search engine configuration in the corresponding environment variables
 3. |Start the Elasticsearch| 8.\* service.
 
 Proceed with the :ref:`standard upgrade procedure <upgrade-application>`.

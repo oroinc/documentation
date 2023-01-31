@@ -360,12 +360,12 @@ For proper work, you need the libraries whose versions correspond to the followi
 * pngquant >= 2.5.0
 * jpegoptim >= 1.4.0
 
-To configure additional libraries you need to add the following parameters to the parameters.yml:
+To configure additional libraries you need to set the following environment variables:
 
-.. code-block:: yaml
+.. code-block:: bash
 
-   liip_imagine.pngquant.binary: /usr/bin/pngquant
-   liip_imagine.jpegoptim.binary: /usr/bin/jpegoptim
+   ORO_PNGQUANT_BINARY=/usr/bin/pngquant
+   ORO_JPEGOPTIM_BINARY=/usr/bin/jpegoptim
 
 .. note::
          - Processors are external libraries, so they need to be installed separately.

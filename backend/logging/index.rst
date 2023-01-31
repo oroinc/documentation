@@ -125,11 +125,11 @@ Using Logger
 
     You can use this approach when:
 
-        * A form was submitted but the expected action was stopped which led to the exception.
-        * A system is not able to save the record to the database because of a MySQL error (for example, when you use a non-unique key).
-        * A system fails to send a message to the queue, or the queue does not respond.
-        * A system fails to send an external request or a third-party API did not respond or responded with an unexpected message.
-        * Etc.
+      * A form was submitted but the expected action was stopped which led to the exception.
+      * A system is not able to save the record to the database because of a PostgreSQL error (for example, when you use a non-unique key).
+      * A system fails to send a message to the queue, or the queue does not respond.
+      * A system fails to send an external request or a third-party API did not respond or responded with an unexpected message.
+      * Etc.
 
 #. Preserve the context. Always place your logging calls next to the actions it logs, in the same method or class. Avoid logging the operation progress, input, or outcome in the external class that triggers operation execution.
 #. It is recommended to use debug, info, notice, warning, error, critical, and alert methods defined in LoggerInterface with a specified log level instead of the log() method.

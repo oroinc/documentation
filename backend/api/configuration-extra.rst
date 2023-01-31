@@ -61,22 +61,22 @@ The |DescriptionsConfigExtra| is used to request human-readable descriptions of 
     {
         public const NAME = 'descriptions';
 
-        public function getName()
+        public function getName(): string
         {
             return self::NAME;
         }
 
-        public function configureContext(ConfigContext $context)
+        public function configureContext(ConfigContext $context): void
         {
             // no modifications of the ConfigContext are required
         }
 
-        public function isPropagable()
+        public function isPropagable(): bool
         {
             return false;
         }
 
-        public function getCacheKeyPart()
+        public function getCacheKeyPart(): ?string
         {
             return self::NAME;
         }

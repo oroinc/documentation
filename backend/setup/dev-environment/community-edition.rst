@@ -25,7 +25,7 @@ Add the EPEL and remi repositories by running:
 .. code-block:: bash
 
    dnf -y install dnf-plugin-config-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-   dnf -y module enable mysql:8.0 nodejs:16 php:remi-8.1
+   dnf -y module enable postgresql:13 nodejs:16 php:remi-8.2
    dnf -y upgrade
 
 Add Oro public repository:
@@ -41,12 +41,12 @@ Add Oro public repository:
     module_hotfixes=1
     __EOF__
 
-Install Nginx, NodeJS, PHP, MySQL Server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Install Nginx, NodeJS, PHP, PostgreSQL Server
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
-   dnf -y --setopt=install_weak_deps=False --best install pngquant jpegoptim findutils rsync glibc-langpack-en psmisc wget bzip2 unzip p7zip p7zip-plugins parallel patch nodejs npm git-core jq bc mysql-server php-common php-cli php-fpm php-opcache php-mbstring php-mysqlnd php-pgsql php-pdo php-json php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-sodium php-tidy php-imap php-pecl-zip php-pecl-mongodb
+   dnf -y --setopt=install_weak_deps=False --best install pngquant jpegoptim findutils rsync glibc-langpack-en psmisc wget bzip2 unzip p7zip p7zip-plugins parallel patch nodejs npm git-core jq bc postgresql postgresql-server postgresql-contrib php-common php-cli php-fpm php-opcache php-mbstring php-mysqlnd php-pgsql php-pdo php-json php-process php-ldap php-gd php-intl php-bcmath php-xml php-soap php-sodium php-tidy php-imap php-pecl-zip php-pecl-mongodb
    dnf -y --setopt=install_weak_deps=False --best --nogpgcheck install oro-nginx oro-nginx-mod-http-cache_purge oro-nginx-mod-http-cookie_flag oro-nginx-mod-http-geoip oro-nginx-mod-http-gridfs oro-nginx-mod-http-headers_more oro-nginx-mod-http-naxsi oro-nginx-mod-http-njs oro-nginx-mod-http-pagespeed oro-nginx-mod-http-sorted_querystring oro-nginx-mod-http-testcookie_access oro-nginx-mod-http-xslt-filter
 
 Install Composer
@@ -96,84 +96,13 @@ Enable Installed Services
 
 .. code-block:: bash
 
-   systemctl start mysqld php-fpm nginx
-   systemctl enable mysqld php-fpm nginx
+   systemctl start postgresql php-fpm nginx
+   systemctl enable postgresql php-fpm nginx
 
 Environment Configuration
 -------------------------
 
-Prepare MySQL Database
-^^^^^^^^^^^^^^^^^^^^^^
-
-Change the Default MySQL Password for Root User
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Log in to MySQL CLI as the root user and change the password to a new secure one (for example, `P@ssword123`):
-
-.. code-block:: bash
-
-   mysql -uroot
-   ALTER USER 'root'@'localhost' IDENTIFIED BY 'P@ssword123';
-
-Replace `P@ssword123` with your secret password. Ensure it contains at least one upper case letter, one lower case letter, one digit and one special character has a total length of at least 8 characters.
-
-Change the MySQL Server Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-It is recommended to use SSD to store the application data in the MySQL 8.X database. However, if you need to use the HDD, set the following configuration parameters in the **/etc/my.cnf** file to avoid performance issues:
-
-.. code-block:: none
-
-   [mysqld]
-   innodb_file_per_table = 0
-   wait_timeout = 28800
-   bind-address = 127.0.0.1
-
-To minimize the risk of long compilations of SQL queries (which sometimes may take hours or even days; for details, see `MySQL documentation <https://dev.mysql.com/doc/refman/5.6/en/controlling-query-plan-evaluation.html>`_), set `optimizer_search_depth` to `0`:
-
-.. code-block:: none
-
-   [mysqld]
-   optimizer_search_depth = 0
-
-To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4` character set:
-
-.. code-block:: none
-
-   [client]
-   default-character-set = utf8mb4
-
-   [mysql]
-   default-character-set = utf8mb4
-
-   [mysqld]
-   character-set-server = utf8mb4
-   collation-server = utf8mb4_unicode_ci
-
-Set the default authentication plugin to mysql_native_password:
-
-.. code-block:: none
-
-   [mysqld]
-   default-authentication-plugin=mysql_native_password
-
-For the changes to take effect, restart the MySQL server by running:
-
-.. code-block:: bash
-
-   systemctl restart mysqld
-
-Create a Database for the Application and a Dedicated Database User
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block::sql
-
-   CREATE DATABASE oro;
-   CREATE USER 'oro_user'@'localhost' IDENTIFIED BY 'P@ssword123';
-   GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' WITH GRANT OPTION;
-   FLUSH PRIVILEGES;
-
-Replace `oro_user` with a new username and `P@ssword123` with a more secure password. Ensure that the password contains at least one upper case letter, one lower case letter, one digit, one special character, and a total length of at least 8 characters.
+.. include:: ./prepare-postgresql.rst
 
 Configure Web Server
 ^^^^^^^^^^^^^^^^^^^^
@@ -296,7 +225,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
             fastcgi_param  HTTPS            on;
         }
 
-        # Websockets connection path (configured in config/parameters.yml)
+        # Websockets connection path (configured in the .env-app.local file)
         location /ws {
             reset_timedout_connection on;
 

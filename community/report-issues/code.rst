@@ -29,7 +29,7 @@ Providing the following information will increase the chances of your issue bein
     * Extensions you have installed and customizations, if any
     * Server operating system (Windows, Ubuntu, Oracle Linux, RHEL, Fedora, other Linux) version and bitness (32-bit, 64-bit)
     * PHP version
-    * Database (MySQL, PostgreSQL) version
+    * Database (PostgreSQL) version
     * Web-server (Apache, Nginx) version and how PHP is set up (as a module, or PHP-FPM)
     * Client operating system (Windows, Linux, MacOS, iOS, Android) version
     * Client browser and version

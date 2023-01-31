@@ -50,6 +50,9 @@ programmatically. In OroPlatform, this can be done by creating :ref:`fixture cla
         }
     }
 
+Console Commands
+----------------
+
 Use the ``oro:migration:data:load`` command to load all fixtures that have not been loaded yet:
 
 .. code-block:: none
@@ -80,7 +83,67 @@ The ``--exclude`` option will skip loading fixtures from the specified bundles:
 
     php bin/console oro:migration:data:load --exclude=<BundleOne> --exclude=<BundleTwo> --exclude=<BundleThree>
 
+Non-Default Object Managers and Reference Repositories in Fixtures
+------------------------------------------------------------------
 
+To create and reference entities managed by non-default object manager, extend your fixture class from  ``Oro\Bundle\TestFrameworkBundle\Test\DataFixtures\AbstractFixture``.
+
+.. note:: The default object manager is available as the load method argument.
+
+.. code-block:: php
+    :caption: src/Oro/Bundle/ConfigBundle/Tests/Functional/DataFixtures/LoadConfigValue.php
+
+    namespace Oro\Bundle\ConfigBundle\Tests\Functional\DataFixtures;
+
+    use Doctrine\Persistence\ObjectManager;
+    use Oro\Bundle\ConfigBundle\Entity\Config;
+    use Oro\Bundle\ConfigBundle\Entity\ConfigValue;
+    use Oro\Bundle\TestFrameworkBundle\Test\DataFixtures\AbstractFixture;
+    use Symfony\Component\Yaml\Yaml;
+
+    class LoadConfigValue extends AbstractFixture
+    {
+        const FILENAME = 'config_value.yml';
+
+        public function load(ObjectManager $manager)
+        {
+            $config = $this->getConfig(
+                $this->getObjectManagerForClass(Config::class)
+            );
+
+            $configValueObjectManager = $this->getObjectManagerForClass(ConfigValue::class);
+
+            foreach ($this->getConfigValuesData() as $name => $data) {
+                $configValue = new ConfigValue();
+                $configValue->setConfig($config)
+                    ->setName($name)
+                    ->setSection($data['section'])
+                    ->setValue($data['value']);
+
+                $configValueObjectManager->persist($configValue);
+                $this->setReference($name, $configValue);
+            }
+
+            $configValueObjectManager->flush();
+        }
+
+        /**
+         * @return array
+         */
+        protected function getConfigValuesData()
+        {
+            return Yaml::parse(file_get_contents(__DIR__.'/data/'.static::FILENAME));
+        }
+
+        /**
+         * @param ObjectManager $manager
+         * @return null|Config
+         */
+        protected function getConfig(ObjectManager $manager)
+        {
+            return $manager->getRepository(Config::class)->findOneBy([]);
+        }
+    }
 
 .. admonition:: Business Tip
 
