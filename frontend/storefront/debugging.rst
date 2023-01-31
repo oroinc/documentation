@@ -6,12 +6,14 @@ Frontend Developer Tools
 Symfony Profiler
 ----------------
 
-The **Layout** section of the **Symfony Profiler** page contains:
+The **Layout** section of the **Symfony Profiler** page contains all rendered layouts:
 
 .. figure:: /img/frontend/debugging/symfony_profiler_layout.png
     :alt: Symfony Profiler - Layout
 
     Symfony Profiler - Layout
+
+
 
 To see the Layout section, click the Layout icon on the Symfony Toolbar:
 

@@ -3,9 +3,7 @@
 .. _sys--conf--frontend-menus--all-products--global:
 
 Add All Products Page to Storefront Menus Globally
---------------------------------------------------
-
-.. begin_include
+==================================================
 
 Once the All Products page has been enabled in the system configuration :ref:`globally <sys--conf--commerce--catalog--special-pages--global>` or :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`, you can add it to a storefront menu on the system level (globally):
 
@@ -22,5 +20,3 @@ Once the All Products page has been enabled in the system configuration :ref:`gl
 #. Click **Save** on the top right of the page.
 
 The All Products page should now become available as part of the selected menu.
-
-.. finish_include

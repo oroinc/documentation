@@ -85,7 +85,7 @@ The **commerce_quick_access** menu provides links to the most frequently used pa
 Commerce_main_menu
 ^^^^^^^^^^^^^^^^^^
 
-**Commerce_main_menu** defines the static menu items that are appended to the main OroCommerce storefront menu. Generally, the leading part of the menu that a customer sees is build based on the master catalog categories or web catalog content nodes. The trailing part is composed of the **commerce_main_menu items**. If you need to add additional information that would not depend on the master or web catalog settings and restrictions, add them to the **commerce_main_menu**. It is useful for the sections with the general information, like the *About Company* page, or the *Contact Us* form, that can remain unchanged regardless if your site is accessed by a guest or registered user, via desktop, tablet or mobile.
+**Commerce_main_menu** is responsible for all items you see in main menu in your OroCommerce storefront. This menu mimics the structure of the web catalog or a master catalog (if web catalog is not connected) and enables you to make adjustments to the title, order or depths of the items. Here, you can update the menu items or add new ones without affecting the original master or web catalog.
 
 .. image:: /user/img/concept-guides/menus/commerce_main_menu_sample.png
    :alt: A sample of the commerce_main_menu in the storefront
@@ -217,7 +217,7 @@ In a nutshell, when editing the content of the selected menu item, click the |Ic
 * :ref:`Configure Storefront Menu in the Back-Office <backend-frontend-menus>`
 * :ref:`Configure Back-Office Menu in the Back-Office <doc-config-menus>`
 * :ref:`Configure Localizations, Languages, and Translations in the Back-Office <sys--config--sysconfig--general-setup--localization>`
-
+* :ref:`Changing Storefront's Product Menu <concept-guide-web-catalog-change-storefront-menu>`
 
 .. include:: /include/include-images.rst
    :start-after: begin

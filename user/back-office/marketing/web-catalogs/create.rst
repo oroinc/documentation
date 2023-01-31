@@ -45,6 +45,8 @@ To create a new web catalog:
 
 * :ref:`Build a Custom Web Catalog From Scratch (Example) <user-guide--marketing--web-catalog--sample>`
 
+* :ref:`Changing Storefront's Product Menu <concept-guide-web-catalog-change-storefront-menu>`
+
 * :ref:`Use Web Catalog Nodes as Root Nodes (Example) <user-guide--web-catalog-navigation-tool>`
 
 .. finish
