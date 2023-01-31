@@ -106,7 +106,6 @@ The following categories of settings are available for system configuration at o
     * :ref:`Sales Territories <sys--configuration--crm--sales-pipeline--sales-territories-organization>`
     * :ref:`Lead <leads-organization>`
     * :ref:`Opportunities <opportunities-organization>`
-    * Sales Process (Deprecated)
 
 **Related Topics**
 

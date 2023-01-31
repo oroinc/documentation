@@ -29,7 +29,7 @@ The `validation` command checks your configuration for syntax errors or wrong co
 
     orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml /mnt/ocom/app/www/orocloud_prod.yaml
 
-Valid changes are applied within 30 minutes or automatically during deployments.
+Valid changes are applied within 40 minutes or automatically during deployments.
 
 Use  the `help` command to get configuration details or configuration reference:
 
@@ -154,7 +154,7 @@ To deploy an Oro application in the OroCloud environment with default installati
 Upgrade
 -------
 
-During the Oro application upgrade, the Oro cloud maintenance tool pulls the new version of the application source code from the repository (either from a new tag or branch) and runs the `oro:platform:update` command to launch the upgrade and any data migrations.
+During the Oro application upgrade, the Oro cloud maintenance tool pulls the new version of the application source code from the repository (either from a new tag, branch or commit) and runs the `oro:platform:update` command to launch the upgrade and any data migrations.
 
 .. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
 
@@ -164,9 +164,7 @@ During the Oro application upgrade, the Oro cloud maintenance tool pulls the new
 
 To upgrade an Oro application, you can use the following modes:
 
-.. warning:: With the rolling upgrade, the source upgrade of the Oro application is not forced into maintenance mode; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before, and after the upgrade is simultaneously compatible with the old and new database structure. Usually, these are upgrades to minor versions.
-
-.. important:: Do not drop tables, columns, or entity fields, and do not alter columns or entity field types.
+.. warning:: With the rolling upgrade, the source upgrade of the Oro application is not forced into maintenance mode; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before, and after the upgrade is simultaneously compatible with the old and new database structure. Usually, these are upgrades to minor versions. Do not drop tables, columns, or entity fields, and do not alter columns or entity field types.
 
 .. important:: Upgrade commands remove patches applied using :ref:`orocloud-cli patch:apply <orocloud-maintenance-patches>` command. Use can confirm it interactively or using `--skip-check-patches` option.
 
@@ -179,15 +177,16 @@ To upgrade the Oro application, run the `upgrade` command:
 
     orocloud-cli upgrade
 
-.. note:: You will be prompted to enter a tag or branch to clone the application source file from. Use a valid tag or branch from the Oro application repository, for example, the |1.6| branch or the|1.6.1| tag.
+.. note:: You will be prompted to enter a tag, branch or commit to clone the application source file from. Use a valid tag, branch or commit from the Oro application repository, for example, the |1.6| branch, the|1.6.1| tag or the|d55c2f0| commit.
 
 This command executes the following operations:
 
 1. Enables the maintenance mode
-#. Checks out the application code from the provided tag or branch of the configured repository
+#. Stops the services (consumers, cron, websocket)
+#. Checks out the application code from the provided tag, branch or commit of the configured repository
 #. Installs the external dependencies via the composer install
-#. Performs oro:platform:update
-#. Launches a cache warmup
+#. Performs `oro:platform:update` including assets
+#. Warms up layout caches
 
 Once the cache warmup is complete, the maintenance mode is turned off, and the upgraded application is ready for use.
 
@@ -204,22 +203,23 @@ To perform Oro application upgrade without downtime, run the `upgrade:rolling` c
 
     orocloud-cli upgrade:rolling
 
-.. note:: You will be prompted to enter a tag or branch to clone the application source file. Use a valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
+.. note:: You will be prompted to enter a tag, branch or commit to clone the application source file. Use a valid tag, branch or commit from the Oro application repository (for example, the |1.6| branch, the |1.6.1| tag or the|d55c2f0| commit).
 
 In the normal operation mode, this command executes the following operations:
 
-1. Checks out the code from a tag or branch of the configured repository
+1. Checks out the code from a tag, branch or commit of the configured repository
 #. Installs the external dependencies via the composer install
-#. Performs `oro:platform:update`
-#. Launches a `cache warmup`
-#. Restarts the related services (consumers, cron, WebSocket, etc).
+#. Build assets
+#. Performs `oro:platform:update --skip-assets`
+#. Warmup layout caches
+#. Restarts the related services (consumers, cron, websocket).
 
-Upgrade With Without Downtime (Source Upgrade)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upgrade Without Downtime (Source Upgrade)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. warning:: With the source upgrade, the Oro application is not forced into maintenance mode; it runs and stays available for users during the upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before, and after the upgrade is simultaneously compatible with the old and new database structure. Usually, these are upgrades to minor versions.
+.. warning:: With the source upgrade, the Oro application is not forced into maintenance mode; it runs and stays available for users during the upgrade process. This method is safe only when the Doctrine metadata does not change during the upgrade, or the versions before, and after the upgrade is simultaneously compatible with the old and new database structure. Usually, these are upgrades to minor versions.
 
-.. important:: Do not drop tables, columns, and entity fields and do not alter columns or entity fields types.
+.. important:: Do not add new properties to existing Doctrine entities or new Doctrine entities.
 
 To perform Oro application upgrade without downtime, run the `upgrade:source` command:
 
@@ -227,16 +227,18 @@ To perform Oro application upgrade without downtime, run the `upgrade:source` co
 
     orocloud-cli upgrade:source
 
-.. note:: You will be prompted to enter a tag or branch to clone the application source file. Use a valid tag or branch from the Oro application repository (for example, the |1.6| branch or the |1.6.1| tag).
+.. note:: You will be prompted to enter a tag, branch or commit to clone the application source file. Use a valid tag, branch or commit from the Oro application repository (for example, the |1.6| branch, the |1.6.1| tag or the |d55c2f0| commit).
 
 The purpose of this command is to deploy code changes (without updating dependencies) as quickly as possible.
 The difference between this command and the original upgrade:
 
-1. It installs the external dependencies via the composer install
-#. oro:platform:update is not executed
-#. cache:clear is executed optionally (add option skip-cache-rebuild if you do not need to rebuild cache with the new release)
+1. Checks out the code from a tag, branch or commit of the configured repository
+#. Installs the external dependencies via the composer install
+#. Build assets
+#. Warmup layout caches
+#. Restarts the related services (consumers, cron, websocket).
 
-.. note:: even if the oro:platform:update command is not executed, the assets will be redeployed.
+.. note:: `oro:platform:update` is not executed.
 
 Backup
 ------
@@ -411,7 +413,6 @@ To display the command description and help, run the following:
     Options:
           --log=LOG                                Log to file
           --force                                  Force operation restoration; otherwise, confirmation is requested.
-          --skip-session-flush                     Skip session data flush.
           --skip-assets-rebuild                    Skip application assets rebuild after backup restore.
           --skip-cache-rebuild                     Skip application cache rebuild after backup restore.
       -h, --help                                   Display a help message
@@ -561,6 +562,15 @@ API Cache
 .. code-block:: none
 
     orocloud-cli app:cache:api
+
+Consumer
+~~~~~~~~
+
+:ref:`To run a consumer for a given queue for two minutes <dev-cookbook-system-mq-consumer>`, run:
+
+.. code-block:: none
+
+    orocloud-cli app:consumer oro.default
 
 Credentials Commands
 --------------------

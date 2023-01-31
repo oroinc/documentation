@@ -40,10 +40,13 @@ To configure multi shipping per website:
 
      * *Group Line Items By* --- Select if you want to group line items per ID, owner, category, brand, or parent product.
      * *Create Sub-Orders For Each Group* --- When enabled, in addition to the main order, the system will create respective sub-orders for each group of line items in the back-office. Storefront customers, however, will see only primary orders in their order history.
+
+8. In the **Order History Options** section, configure the following options:
+
      * *Show Sub-Orders In Order History* --- When enabled, customers can see only sub-orders in their order history. Primary orders will be hidden.
      * *Show Main Orders In Order History* --- When enabled, customers can see both the primary order and its sub-orders in their order history.
 
-8. Click **Save Settings**.
+9. Click **Save Settings**.
 
 .. important:: Once the integration is created, the next step is to :ref:`set up a shipping rule <sys--shipping-rules>` under **System > Shipping Rules** and add your integration to it to enable customers to select the desired shipping method at checkout.
 

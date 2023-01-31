@@ -45,74 +45,56 @@ To change the default customer user configuration settings globally:
 
    * **Customer Visitor Cookie Lifetime (Days)** --- Once the provided period expires, active customer visitor (anonymous user) sessions will be reset. Keep in mind that the uniqueness of email addresses and personal data is checked only for the registered users. It means that no two users can have identical personal information unless they are customer visitors (guest users). Multiple guest customers are allowed to have exactly the same data, including email addresses.
 
-6. In the **Login Attempts** section, configure the following options:
+.. _system-configuration-user-impersonation:
+
+6. In the **Login as Customer User** section, configure the option for customer users. Keep in mind that this feature is available in the Enterprise edition.
+
+   * **Enable Login As Customer User** --- The option enables back-office users with the **Login as Customer User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront and operate it as a specific customer user (i.e., impersonate a customer user). This option is disabled by default. User impersonation is also available at the :ref:`organization level <organization-user-impersonation>`.
+
+7. In the **Login Attempts** section, configure the following options:
 
    * **Enable Failed Logins Limit** --- Defines whether a user can be locked out when the max number of login attempts is reached. By default, the option is enabled.
    * **Max Login Attempts** --- The number of attempts within the login failure lockout interval that a user has to authenticate before they are locked out. By default, the number is set to 10.
    * **Login Failure Lockout Interval** --- The time in minutes in which failed login attempts are counted. If one failed login attempt is followed by the second failed attempt within this lockout interval, the failed login count starts. The user will be locked out if they reach the maximum number of failed login attempts. Set zero (0) to count failed login attempts globally. By default, it is set to 60 minutes.
    * **Account Lockout Time** --- The time in minutes that indicates how long the user has before they are locked out of the system if they reach the maximum number of failed login attempts. Set zero (0) to disable automatic unlock. By default, it is set to 60 minutes.
 
-7. In the **REST API** section, configure the following options:
+8. In the **REST API** section, configure the following options:
 
    * **Enable API Key Generation** --- Enable/disable automatic generation of API access keys for new customer users.
 
 
-.. _system-configuration-user-impersonation:
-
-Configure User Impersonation
-----------------------------
-
-.. csv-table::
-  :widths: 10, 30
-
-  "**Login as Customer User**","This option enables back-office users with the **Login as Customer User** :ref:`role capability <admin-capabilities>` assigned to them to temporarily sign into the OroCommerce storefront as a specific customer user (available for Enterprise edition applications). This option is disabled by default. User impersonation is also available at :ref:`organization level <organization-user-impersonation>`.
-
-                                    .. image:: /user/img/system/config_commerce/customer/user_impersonation.png
-                                       :alt: User impersonation config option"
-
 .. _configuration--guide--commerce--configuration--cookie-consents:
 
-Configure Cookie Consent Banner Settings
-----------------------------------------
+9. In the **Cookies Banner** section, you can enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time. This banner lets visitors know that their data is being collected and get their consent to use the data. The :ref:`CookieConsentBannerBundle <bundle-docs-commerce-cookie-consent-bundle>` allows to show such warning to the user.
 
-In the **Cookies Banner** section, you can enable a cookie consent banner. A cookie consent banner is the cookie warning that pops up on websites when a user visits the site for the first time. This banner lets visitors know that their data is being collected and get their consent to use the data.
+If the application was installed without demo data, the banner is disabled. Configure the following options to enable cookie consent banner on the global level:
 
-The :ref:`CookieConsentBannerBundle <bundle-docs-commerce-cookie-consent-bundle>` allows to show such warning to the user.
+   * **Show Banner** --- Select the checkbox to display the cookie consent banner to the website's visitor.
 
-If the application was installed without demo data, the banner is disabled. To configure cookie consent banner on the global level, take the following steps:
+     .. image:: /user/img/system/config_commerce/cookie_banner/banner-settings.png
+        :alt: Cookie consent banner config
 
-1. **Show Banner** --- Select the checkbox to display the cookie consent banner to the website's visitor.
+   * **Cookies Banner Text** --- Provide the message of the cookie banner. To edit the text for a specific language, click the language button and edit the text for the needed language.
 
-   .. image:: /user/img/system/config_commerce/cookie_banner/banner-settings.png
-      :alt: Cookie consent banner config
+     .. image:: /user/img/system/config_commerce/cookie_banner/text-language-button.png
+        :alt: Text language button
 
-2. **Cookies Banner Text** --- Provide the message of the cookie banner. To edit the text for a specific language, click the language button and edit the text for the needed language.
+   * **Landing Page** - Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
 
-   .. image:: /user/img/system/config_commerce/cookie_banner/text-language-button.png
-      :alt: Text language button
+     .. image:: /user/img/system/config_commerce/cookie_banner/cookie-banner-landing-page.png
+        :alt: Text language button
 
-3. **Landing Page** - Select the landing page with cookie policy of the application, if any. This landing page will be highlighted as a link on the banner. To translate the landing page title to the specific language, click the language button and edit the title as required.
-
-   .. image:: /user/img/system/config_commerce/cookie_banner/cookie-banner-landing-page.png
-      :alt: Text language button
-
-4. Click **Save Settings**.
 
 .. _user-guide--customers--customer-user-password-change-policy:
 
-Password Change Policy
-----------------------
+.. note:: **Password Change Policy** is a Commerce Enterprise feature.
 
-.. note:: This is a Commerce Enterprise feature.
+10. In the **Password change policy** section, configure the password change policy to increase your application's security:
 
-You can enforce a password change policy to increase your application's security and request that your customer users change their passwords after a certain period.
+    * **Enable Password Change Policy** --- Enable the option to force your customer users to change their passwords after a certain period.
 
-To enable the feature per customer user:
+   * **Maximum Password Age (Days)** --- Select the number of days after which the system will require a customer user to change their password. By default, the password is changed every 30 days.
 
-1. Navigate to **System > Configuration** in the main menu.
-2. Select **Commerce > Customer Users** in the menu to the left.
-3. Select the **Enable Password Change Policy** checkbox to enable the feature.
-4. By default, the password is changed every 30 days. You can change the default number of days by toggling the option **Maximum Password Age (Days)**.
 
 .. image:: /user/img/customers/customer_users/customer_user_password_change_policy.png
 
@@ -124,30 +106,24 @@ Seven days before the password expires, the customer user will start getting fla
 
 As soon as the password expires, the customer user will receive an email with the link to change the password. From that moment, they will only be able to log in if they have updated their password. In this case, the status of the customer user password in the back-office changes to **Expired**. It will return to **Active** once the customer user changes the password.
 
-You can change the contents of email notifications by updating the **customer_user_expired_password** and **customer_user_mandatory_password_change**
-:ref:`email template <user-guide-using-emails-create-template>` of the Customer User entity.
+You can change the contents of email notifications by updating the **customer_user_expired_password** and **customer_user_mandatory_password_change** :ref:`email template <user-guide-using-emails-create-template>` of the Customer User entity.
 
 .. _configuration--guide--commerce--configuration--customer-user-password-change-policy:
 
-Password History Policy
------------------------
 
-.. note:: This is a Commerce Enterprise feature.
+   * **Enable Password History Policy** --- Enable the option to prevent customer users from reusing the password they have already used previously.
 
-You can enable the Password history policy to prevent customer users from reusing the password they have already used previously.
+   * **Enforce Password History Policy** --- Provide the number of the previously used passwords for the system to record them and disable customer users from using any of them. By default, the system collects the last 12 previously used passwords.
 
-To enable the feature:
-
-1. Navigate to **System > Configuration** in the main menu.
-2. Select **Commerce > Customer Users** in the menu to the left.
-3. Select the **Enable Password History Policy** checkbox to enable the feature.
-4. By default, the system collects the last 12 previously used passwords, but you can change this number by toggling the option **Enforce Password History Policy**.
 
 .. image:: /user/img/customers/customer_users/customer_user_password_history_policy.png
 
 Once the feature is enabled, customer users will no longer be able to reuse their older passwords. If they try to, they will get the following message:
 
 .. image:: /user/img/customers/customer_users/customer_user_password_history_used_password.png
+
+11. Click **Save Settings**.
+
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

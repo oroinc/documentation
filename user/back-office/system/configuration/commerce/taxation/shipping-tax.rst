@@ -23,16 +23,12 @@ To change the shipping tax configuration:
       :class: with-border
       :alt: Global shipping tax configuration
 
-   The following options are available on the page:
+3. Clear the **Use Default** checkbox to change the system-wide setting.
 
-   * Tax Code - a tax identifier that in combination with :ref:`tax rules <tax-rules>` defines the tax rate that is applied for the shipping tax calculation.
+4. In the **Shipping Tax** section, configure the options:
 
-   * Shipping Rates Include Tax - select the box to avoid adding the calculated shipping tax to the shipping cost.
+   * **Tax Code** - Select the tax code (tax identifier) that in combination with :ref:`tax rules <tax-rules>` defines the tax rate that is applied for the shipping tax calculation.
 
-3. To customize any of these options:
+   * **Shipping Rates Include Tax** - Enable the checkbox to avoid charging taxes on shipping twice if the shipping rates provided by the shipping carrier(s) or entered manually in the back-office already include tax.
 
-     a) Clear the **Use Default** box next to the option.
-     b) Modify the tax code list: click **x** to remove the item, type in the new code value and press **Enter**.
-     c) Select/deselect the **Shipping Rates Include Tax** option.
-
-4. Click **Save**.
+5. Click **Save**.

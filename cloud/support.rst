@@ -128,7 +128,7 @@ The following checklist provides the typical activities that you need to perform
     * License key
     * Application version
     * Link to a custom repository in SSH format
-    * Tag or branch to deploy from
+    * Tag, branch or commit to deploy from
     * First and last name of admin contact
     * Email of admin contact", "2-3"
    "**Basic authentication configuration**", "Configuration of user access credentials for your OroCloud environment. **NOTE**: This configuration can be set up in the orocloud.yaml file without the Oro support team", "--","1-2"

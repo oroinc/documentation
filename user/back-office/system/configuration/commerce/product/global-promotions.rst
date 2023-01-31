@@ -37,7 +37,9 @@ Configure New Arrivals Globally
    .. image:: /user/img/system/config_commerce/product/NewArrivalsBlockSystemConfig.png
       :alt: Global new arrivals configuration
 
-3. In the **New Product Icons**, clear the **Use Default** checkbox and select *Yes* in the **Show on Product View** list to enable new product icons. To disable the icons, select *No*.
+3. To customize the option configuration, clear the **Use Default** checkbox next to the option and select the required value.
+
+4. In the **New Product Icons**, select *Yes* or *No* in the **Show on Product View** list to enable or disable new product icons.
 
     A new product icon will look differently for various layout options:
 
@@ -47,11 +49,15 @@ Configure New Arrivals Globally
        :class: with-border
        :alt: New product icon look for tiles
 
+    |
+
     * **For details**:
 
     .. image:: /user/img/system/config_commerce/product/NewArrivalsFrontstoreDetails.png
        :class: with-border
        :alt: New product icon look for details
+
+    |
 
     * **For compact details**:
 
@@ -72,6 +78,3 @@ Configure New Arrivals Globally
    .. note:: The block will be hidden if the number of items in the segment used for the block is less than the set value. For instance, if the set minimum number is 3 and the number of items in the segment is 2, you will not be able to see the block unless you add more items to the segment, or change the minimum value.
 
    * **Use Slider On Mobile** checkbox -- When the slider is enabled, the block occupies less screen space, while showing larger product images.
-
-.. note:: Clear the **Use Default** checkbox to change settings manually.
-
