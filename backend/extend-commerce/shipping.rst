@@ -217,7 +217,7 @@ Implement the Main Method
 
 To implement the main method, create the <bundle_root>/Method/FastShippingMethod.php class that implements two standard interfaces ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodInterface`` and ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodIconAwareInterface``:
 
-.. oro_integrity_check:: 6ee4e3d862013768e3f427be51e25dc96dd666c7
+.. oro_integrity_check:: da5d43b206697e5d8a13a77515374d15958c831f
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethod.php
        :language: php
@@ -295,7 +295,7 @@ Shipping method types define different specifics of the same shipping services. 
 
 To create a shipping method type, add the <bundle_root>/Method/FastShippingMethodType.php class with the following content:
 
-.. oro_integrity_check:: a49655845ecd626f4f6ffaffc6670c2ea58c26b7
+.. oro_integrity_check:: f15b08e0af6275397122c1127f58adf58aa9c77a
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethodType.php
        :language: php

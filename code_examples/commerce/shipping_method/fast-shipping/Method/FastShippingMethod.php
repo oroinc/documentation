@@ -8,34 +8,15 @@ use Oro\Bundle\ShippingBundle\Method\ShippingMethodTypeInterface;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 
 /**
- * Fast Shipping method class
+ * Represents Fast Shipping method.
  */
 class FastShippingMethod implements ShippingMethodInterface, ShippingMethodIconAwareInterface
 {
-    /**
-     * @var array
-     */
-    private $types;
-
-    /**
-     * @var string
-     */
-    private $label;
-
-    /**
-     * @var string|null
-     */
-    private $icon;
-
-    /**
-     * @var string
-     */
-    private $identifier;
-
-    /**
-     * @var bool
-     */
-    private $enabled;
+    private string $identifier;
+    private string $label;
+    private ?string $icon;
+    private bool $enabled;
+    private array $types;
 
     public function __construct(string $identifier, string $label, ?string $icon, bool $enabled, array $types)
     {
@@ -97,19 +78,15 @@ class FastShippingMethod implements ShippingMethodInterface, ShippingMethodIconA
     /**
      * {@inheritDoc}
      */
-    public function getType($type): ?ShippingMethodTypeInterface
+    public function getType(string $identifier): ?ShippingMethodTypeInterface
     {
-        if (array_key_exists($type, $this->types)) {
-            return $this->types[$type];
-        }
-
-        return null;
+        return $this->types[$identifier] ?? null;
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getOptionsConfigurationFormType(): string
+    public function getOptionsConfigurationFormType(): ?string
     {
         return HiddenType::class;
     }
