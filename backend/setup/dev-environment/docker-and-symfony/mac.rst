@@ -21,7 +21,7 @@ Environment Setup
       brew cask install docker
       open /Applications/Docker.app
 
-3. Install PHP 8.2, Composer, Node.js 16 and Docker Compose:
+3. Install PHP 8.2, Composer, Node.js 18 and Docker Compose:
 
    .. code-block:: none
 

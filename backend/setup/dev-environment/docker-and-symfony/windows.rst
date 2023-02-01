@@ -82,7 +82,7 @@ Environment Setup
       echo -e "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" | sudo tee -a  /etc/php/8.2/fpm/php.ini
       echo -e "memory_limit = 2048M" | sudo tee -a  /etc/php/8.2/cli/php.ini
 
-8. Install Node.js 16:
+8. Install Node.js 18:
 
    .. code-block:: none
 

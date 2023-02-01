@@ -24,12 +24,12 @@ Environment Setup
       echo -e "memory_limit = 2048M \nmax_input_time = 600 \nmax_execution_time = 600 \nrealpath_cache_size=4096K \nrealpath_cache_ttl=600 \nopcache.enable=1 \nopcache.enable_cli=0 \nopcache.memory_consumption=512 \nopcache.interned_strings_buffer=32 \nopcache.max_accelerated_files=32531 \nopcache.save_comments=1" | sudo tee -a  /etc/php/8.2/fpm/php.ini
       echo -e "memory_limit = 2048M" | sudo tee -a  /etc/php/8.2/cli/php.ini
 
-3. Install Node.js 16:
+3. Install Node.js 18:
 
    .. code-block:: none
 
       sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-      curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+      curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
       sudo apt -y install nodejs
 
 4. Install Docker and Docker Compose:

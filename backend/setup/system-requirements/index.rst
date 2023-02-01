@@ -82,11 +82,11 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * ldap                                            |
 |                   | * mongodb (to use OroGridFSConfigBundle)          |
 +-------------------+---------------------------------------------------+
-| *Database*        | * |PostgreSQL| 13.7                               |
+| *Database*        | * |PostgreSQL| 15.1                               |
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| 16 used for JS assets                 |
+| *Assets*          | * |Node.js| 18 used for JS assets                 |
 |                   |   minification and SCSS assets build.             |
 +-------------------+---------------------------------------------------+
 
@@ -102,11 +102,11 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
 +------------------+-----------------------------------------------------+
-| *Database*       | * |PostgreSQL| / |EnterpriseDB| 13.7                |
+| *Database*       | * |PostgreSQL| / |EnterpriseDB| 15.1                |
 +------------------+-----------------------------------------------------+
 | *Search Index*   | * |Elasticsearch| >=8.4.1, <9.0                     |
 +------------------+-----------------------------------------------------+
-| *Job Queue*      | * |RabbitMQ| 3.9.x                                  |
+| *Job Queue*      | * |RabbitMQ| 3.11.x                                 |
 +------------------+-----------------------------------------------------+
 
 .. _sys-requirements-postgre-config:

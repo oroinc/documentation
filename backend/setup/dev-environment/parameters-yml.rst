@@ -30,7 +30,7 @@ Default configuration options for the Oro application are defined in the ``confi
        # Some parameter values are not set from environment variables because Symfony service container build
        # depends on them. These parameter values cannot be changed in runtime without the application cache rebuild.
        web_backend_prefix: '/admin'
-       database_server_version: '13.7'
+       database_server_version: '15.1'
        secret: '%env(ORO_SECRET)%'
        database_dsn: '%env(ORO_DB_DSN)%'
        mailer_dsn: '%env(ORO_MAILER_DSN)%'

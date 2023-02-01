@@ -14,7 +14,7 @@ Every AMI (Amazon Machine Image) contains an installed Oro Application along wit
 
    "**OS**","CentOS 7"
    "**Web server**","Nginx v.1.12"
-   "**Database**","PostgreSQL 13.7"
+   "**Database**","PostgreSQL 15.1"
    "**PHP**","PHP-FPM and PHP CLI >=8.2"
    "**Other tools**","NodeJS v.16 or later, Git v.2.7, Composer v.2.0"
 

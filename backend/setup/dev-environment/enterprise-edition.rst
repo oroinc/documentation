@@ -359,7 +359,7 @@ Enable Required RabbitMQ Plugins
 .. code-block:: none
 
    pushd /usr/lib/rabbitmq/lib/rabbitmq_server-*/plugins/
-   wget -q https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/3.9.0/rabbitmq_delayed_message_exchange-3.9.0.ez
+   wget -q https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/3.11.1/rabbitmq_delayed_message_exchange-3.11.1.ez
    popd
    rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
    rabbitmq-plugins enable --offline rabbitmq_management
