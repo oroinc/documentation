@@ -162,15 +162,11 @@ For Cluster connections, use the following format:
 Note that in the above examples, the password and dbindex values are optional and should be replaced with the appropriate values for your configuration. Additionally, in cluster example you can add multiple hosts.
 
 And to enable the possibility of setting Redis connection configurations
-from environment variables, add the following lines to
-``config/parameters.yml``:
+from environment variables, run the following command:
 
-.. code:: yaml
+.. code:: bash
 
-   parameters:
-       redis_dsn_cache: '%env(ORO_REDIS_CACHE_DSN)%'
-       redis_dsn_doctrine: '%env(ORO_REDIS_DOCTRINE_DSN)%'
-       redis_dsn_layout: '%env(ORO_REDIS_LAYOUT_DSN)%'
+   composer set-parameters redis
 
 RabbitMQ Connection
 ~~~~~~~~~~~~~~~~~~~
@@ -210,14 +206,11 @@ Use:
    ORO_MONGODB_DSN_PRIVATE=mongodb://127.0.0.1:27017/private
 
 And to enable the possibility of setting MongoDB connection
-configurations from environment variables, add the following lines to
-``config/parameters.yml``:
+configurations from environment variables, run the following command:
 
-.. code:: yaml
+.. code:: bash
 
-   parameters:
-       gaufrette_adapter.public: 'gridfs:%env(ORO_MONGODB_DSN_PUBLIC)%'
-       gaufrette_adapter.private: 'gridfs:%env(ORO_MONGODB_DSN_PRIVATE)%'
+   composer set-parameters mongo
 
 Enterprise License, PNGQuant and JPEGOptim Libraries Paths
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

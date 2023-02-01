@@ -31,6 +31,7 @@ Default configuration options for the Oro application are defined in the ``confi
        # depends on them. These parameter values cannot be changed in runtime without the application cache rebuild.
        web_backend_prefix: '/admin'
        database_server_version: '13.7'
+       secret: '%env(ORO_SECRET)%'
        database_dsn: '%env(ORO_DB_DSN)%'
        mailer_dsn: '%env(ORO_MAILER_DSN)%'
        websocket_server_dsn: '%env(ORO_WEBSOCKET_SERVER_DSN)%' # The websocket server will listen on this address and port.
@@ -73,16 +74,14 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
 .. code-block:: yaml
 
    parameters:
-       secret: '%env(ORO_SECRET)%'
-
        # Enable GridFS support
-       #gaufrette_adapter.public: 'gridfs:%env(ORO_MONGODB_DSN_PUBLIC)%'
-       #gaufrette_adapter.private: 'gridfs:%env(ORO_MONGODB_DSN_PRIVATE)%'
+       gaufrette_adapter.public: 'gridfs:%env(ORO_MONGODB_DSN_PUBLIC)%'
+       gaufrette_adapter.private: 'gridfs:%env(ORO_MONGODB_DSN_PRIVATE)%'
 
        # Enable Redis support
-       #redis_dsn_cache: '%env(ORO_REDIS_CACHE_DSN)%'
-       #redis_dsn_doctrine: '%env(ORO_REDIS_DOCTRINE_DSN)%'
-       #redis_dsn_layout: '%env(ORO_REDIS_LAYOUT_DSN)%'
+       redis_dsn_cache: '%env(ORO_REDIS_CACHE_DSN)%'
+       redis_dsn_doctrine: '%env(ORO_REDIS_DOCTRINE_DSN)%'
+       redis_dsn_layout: '%env(ORO_REDIS_LAYOUT_DSN)%'
 
 Environment Variables
 ^^^^^^^^^^^^^^^^^^^^^

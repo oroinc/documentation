@@ -43,7 +43,6 @@ Prerequisites
           .. code-block:: bash
 
              rm -rf var/cache/prod
-             composer build-parameters -n
 
 Running Tests
 -------------
