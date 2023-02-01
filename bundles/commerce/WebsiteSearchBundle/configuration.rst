@@ -8,6 +8,7 @@ The system configuration of the website search bundle consists of the following 
 
 * **engine** (string, default value is `orm`) - name of the search engine that should be used in the application;
 * **engine_parameters** (array, empty by default) - additional parameters that are required to configure the engine. The default ORM engine does not require any parameters as it shared the database with the Oro application.
+* **indexer_batch_size** (integer, 100 by default, from 1 to 100) - a number of entities that are indexing batch by batch. The smaller the number, the less memory is used. However, a bigger number is more effective during indexation. It is recommended to use a small number when you have a large memory consumption issue.
 
 Here is an example of configuration that should be put to `config.yml` to enable custom search engine:
 
@@ -15,6 +16,7 @@ Here is an example of configuration that should be put to `config.yml` to enable
 
 
     oro_website_search:
+        indexer_batch_size: 50
         engine: 'custom'
         engine_parameters:
             host: '127.0.0.1'
