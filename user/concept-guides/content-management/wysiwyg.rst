@@ -154,7 +154,7 @@ There are several options to embed some multimedia into the WYSIWYG editor, pres
 1. Drag the video, image, or map block to the canvas.
 2. Click **</>** Source Code on the top menu above the canvas to open the HTML editor.
 3. Find the video block and wrap it in a <div> container.
-4. Save it by clicking **Import** in the popup bottom corner.
+4. Save it by clicking **Apply Changes** in the popup bottom corner.
 
 .. image:: /user/img/concept-guides/content-management/wrapping_video_in_div.png
    :alt: Illustrating the four steps mention above
@@ -217,7 +217,7 @@ There are several options to embed some multimedia into the WYSIWYG editor, pres
 .. image:: /user/img/concept-guides/content-management/adding_aspect_ratio_code_to_styles.png
    :alt: Adding the aspect ratio code to the style tag
 
-6. Click **Import**.
+6. Click **Apply Changes**.
 7. Click **Save**.
 
 Insert Images
@@ -421,9 +421,9 @@ Input or Edit HTML Code
 
 If you are experienced at HTML coding, you can enter your own HTML code into the WYSIWYG editor via the **</> Source Code** popup dialog. There, you can also edit the existing HTML code that was already applied to the canvas based on the created content.
 
-Click **Import** to apply the changes made to the code.
+Click **Apply Changes** to apply the changes made to the code.
 
-Click **Export to ZIP** to create an HTML page based on the provided HTML code and export it to a ZIP file.
+Click **Download** to create an HTML page based on the provided HTML code and export it to a ZIP file.
 
 .. image:: /user/img/concept-guides/content-management/input_html_code.png
    :alt: Input HTML code into the WYSIWYG editor via the import popup dialog
@@ -435,7 +435,7 @@ To insert a piece of HTML code anywhere on the web page:
 
 1. Drag the **</> Custom Code** block to the required place of your canvas.
 2. Enter the desired HTML code.
-3. Click **Import**.
+3. Click **Apply Changes**.
 
 .. image:: /user/img/concept-guides/content-management/insert_piece_of_htm_code.png
    :alt: Inserting a piece of HTML code into the web page
@@ -468,11 +468,10 @@ Disable the GrapeJs Style Manager
 
 If you are importing a complex HTML code to the editor and want to preserve its styling, you can disable the WYSIWYG built-in style manager to prevent GrapeJs from breaking those styles.
 
- For that, you need to enable the external markup mode to import the required HTML code as is, with its initial formatting and styling.
+For that, you need to enable the external markup mode to import the required HTML code as is, with its initial formatting and styling.
 
- 1. Navigate to the **Settings** menu.
- 2. Select the **Enable External Markup** checkbox. Keep in mind that you will not be able to apply and customize styles of your content. If you exit the external markup mode, the editor may change the source code and break the imported content markup and styles.
-
+1. Navigate to the **Settings** menu.
+2. Select the **Enable External Markup** checkbox. Keep in mind that you will not be able to apply and customize styles of your content. If you exit the external markup mode, the editor may change the source code and break the imported content markup and styles.
 
 .. image:: /user/img/concept-guides/content-management/external-markup-button.png
    :alt: Disable WYSIWYG style manager
