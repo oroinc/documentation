@@ -6,6 +6,8 @@
 Configure Localization Settings per User
 ========================================
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 To define the custom localization options for the particular user:
 
 1. Navigate to **System > User management > Users** in the main menu.

@@ -5,6 +5,8 @@
 Configure Localization Settings per Website
 ===========================================
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 To define the custom localization options for the particular website:
 
 1. Navigate to **System > Websites** in the main menu.

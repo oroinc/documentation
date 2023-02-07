@@ -6,13 +6,11 @@
 Configure Global Localization Settings
 ======================================
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 .. begin_1
 
 In the system configuration, you can define the localization options, such as system locale, primary location, address formatting method, system timezone, calendar year settings, temperature and wind speed units on the map. Furthermore, you can set the default language of the UI elements displayed in the storefront.
-
-.. include:: /user/concept-guides/localization/content-translation.rst
-   :start-after: begin_content_translation
-   :end-before: finish_content_translation
 
 .. hint:: The system configuration of the localization settings are available on four levels: globally, :ref:`per organization <config_guide--localization--organization-localization>`, :ref:`per website <sys--websites--sysconfig--general-setup--localization>`, and :ref:`per user <config_guide--localization--user-localization>`.
 
