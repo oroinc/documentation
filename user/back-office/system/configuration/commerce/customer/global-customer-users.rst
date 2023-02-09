@@ -87,7 +87,7 @@ If the application was installed without demo data, the banner is disabled. Conf
 
 .. _user-guide--customers--customer-user-password-change-policy:
 
-.. note:: **Password Change Policy** is a Commerce Enterprise feature.
+.. note:: **Password Change Policy** is a Commerce Enterprise feature and is available starting from v5.0.8. To check which application version you are running, see the :ref:`system information <system-information>`..
 
 10. In the **Password change policy** section, configure the password change policy to increase your application's security:
 

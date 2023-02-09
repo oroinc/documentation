@@ -6,7 +6,7 @@ Manage Stripe Payment Service in the Back-Office
 ================================================
 
 
-.. hint:: The Stripe payment service is available starting from Orocommerce v5.0.8. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: The Stripe payment service is available starting from OroСommerce v5.0.9. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 .. hint:: This section is part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides a general understanding of the payment concept in OroCommerce.
 
