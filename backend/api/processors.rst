@@ -30,9 +30,9 @@ To create a new processor, create a class that implements |ProcessorInterface| a
     class DoSomething implements ProcessorInterface
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
-        public function process(ContextInterface $context)
+        public function process(ContextInterface $context): void
         {
             /** @var Context $context */
 
@@ -60,7 +60,7 @@ An example:
 
 .. code-block:: php
 
-        public function process(ContextInterface $context)
+        public function process(ContextInterface $context): void
         {
             /** @var Context $context */
 
@@ -318,9 +318,9 @@ Below is an illustration of throwing an exception to demonstrate how a processor
         }
 
         /**
-         * {@inheritdoc}
+         * {@inheritDoc}
          */
-        public function process(ContextInterface $context)
+        public function process(ContextInterface $context): void
         {
             /** @var Context $context */
 
@@ -381,9 +381,9 @@ Another way to add an **Error** object to the context is helpful for validation 
     class ValidateEntityIdExists implements ProcessorInterface
     {
         /**
-         * {@inheritdoc}
+         * {@inheritDoc}
          */
-        public function process(ContextInterface $context)
+        public function process(ContextInterface $context): void
         {
             /** @var SingleItemContext $context */
 

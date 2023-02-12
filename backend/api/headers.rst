@@ -63,9 +63,9 @@ To add a custom key to the ``X-Include`` header:
             public const REQUEST_HEADER_VALUE = 'deletedCount';
 
             /**
-             * {@inheritdoc}
+             * {@inheritDoc}
              */
-            public function process(ContextInterface $context)
+            public function process(ContextInterface $context): void
             {
                 /** @var DeleteListContext $context */
 
@@ -109,9 +109,9 @@ To add a custom key to the ``X-Include`` header:
     class RemoveDeletedCountHeader implements ProcessorInterface
     {
         /**
-         * {@inheritdoc}
+         * {@inheritDoc}
          */
-        public function process(ContextInterface $context)
+        public function process(ContextInterface $context): void
         {
             /** @var DeleteListContext $context */
 

@@ -37,7 +37,7 @@ To create a new post processor, you need to do the following:
         /**
          * {@inheritDoc}
          */
-        public function process($value, array $options)
+        public function process(mixed $value, array $options): mixed
         {
         }
     }
@@ -67,7 +67,7 @@ To create a new post processor, you need to do the following:
         /**
          * {@inheritDoc}
          */
-        public function getConfigureCallbacks()
+        public function getConfigureCallbacks(): array
         {
             return [
                 'entities.entity.field'                 => function (NodeBuilder $node) {
