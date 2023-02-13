@@ -26,7 +26,7 @@ To configure the quick order form for registered and unregistered users per orga
 5. In the **Quick Order Form** section:
 
    * **Enable Quick Order Form** --- enable or disable the quick order form functionality for the registered users. By default the quick order form is enabled.
-   * **Enable Optimized Quick Order Form** --- enable optimized quick order form when you upload over 1000 products per order. By default, the optimized order form is disabled. The feature is available starting from OroCommerce Enterprise v5.0.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+   * **Enable Optimized Quick Order Form** --- enable optimized quick order form when you upload over 1000 products per order. By default, the optimized order form is disabled. The feature is available starting from OroCommerce Enterprise v5.0.8. To check which application version you are running, see the :ref:`system information <system-information>`.
 
 6. In the **Guest Quick Order Form** section, set whether guests are allowed to create a quick order form. By default, the guest quick order form is disabled.
 
