@@ -30,17 +30,15 @@ To register a business account and enable a checkout shipping integration with O
 
 1. Navigate to the |FedEx login| page.
 
-2. Click **Sign In** and then **Create Account**.
+2. Click **Sign Up or Log In** and then **Open an account**.
 
    .. image:: /user/img/system/integrations/FedEx/fedex_login_page.png
 
-3. Click **Business account benefits** to check out the rewarded benefits for your business and proceed to a business account creation.
+3. Click **Open an account** to register an account in several steps.
 
-   .. image:: /user/img/system/integrations/FedEx/fedex_business_account.png
+   .. image:: /user/img/system/integrations/FedEx/fedex_open_account.png
 
-4. Click **Open a business account** to complete the registration in several steps.
-
-5. Fill in the registration form with your personal contact information and a credit card number. Agree to the terms and conditions and check the benefits you can get at the final step.
+4. Fill in the registration form with your personal contact information and a credit card number. Select *Business* when choosing the shipping account type. Agree to the terms and conditions and check the benefits you can get at the final step.
 
    .. image:: /user/img/system/integrations/FedEx/fedex_account_registration.png
 
@@ -60,7 +58,7 @@ Once the registration is complete, you can now obtain the necessary test keys to
 
     .. image:: /user/img/system/integrations/FedEx/fedex_4_steps.png
 
-3. Click **Move to development** and then **Get your test key**.
+3. Under **Develop & Test**, click **Get Started** and then **Get your test key**.
 
 4. Confirm your contact information and accept the FedEx license to complete the registration process.
 
@@ -151,7 +149,7 @@ Once you have successfully configured the OroCommerce FedEx integration, and the
 
 4. Receive an email with the corresponding production keys from FedEx.
 
-5. Follow the steps described in the aforementioned Configure a FedEx Integration in OroCommerce section to set up the production integration between FedEx and OroCommerce.
+5. Follow the steps described in the aforementioned `Configure a FedEx Integration in OroCommerce`_ section to set up the production integration between FedEx and OroCommerce.
 
    .. important:: Make sure that the **Test Mode** checkbox is NOT selected as you are configuring the production integration.
 
