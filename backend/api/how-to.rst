@@ -660,17 +660,11 @@ The following steps describe how to create such API resources:
         {
             private ?string $name;
 
-            /**
-             * @return string|null
-             */
             public function getName(): ?string
             {
                 return $this->name;
             }
 
-            /**
-             * @param string|null $name
-             */
             public function setName(?string $name): void
             {
                 $this->name = $name;
