@@ -5,6 +5,8 @@
 Configure Localization Settings per Organization
 ================================================
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 To define the custom localization options for a particular organization:
 
 1. Navigate to **System > User management > Organizations** in the main menu.

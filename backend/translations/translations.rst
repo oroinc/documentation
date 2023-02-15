@@ -375,13 +375,12 @@ To retrieve a name for the `Localization`, it is enough to use the `getName()` m
 
 *Business User Documentation*
 
+* :ref:`Localization and Translation Concept Guide <concept-guide--localization-translation>`
 * :ref:`System Localizations and Translations <sys--config--sysconfig--general-setup--localization>`
 
-  * :ref:`Languages <localization--languages>`
-  * :ref:`Translations <localization--translations>`
-  * :ref:`Localizations <localization--localizations>`
-  * :ref:`Translate Content <content-translation>`
-  * :ref:`Translate Product Attribute Labels <localization--translations--labels>`
+    * :ref:`Languages <localization--languages>`
+    * :ref:`Translations <localization--translations>`
+    * :ref:`Localizations <localization--localizations>`
 
 *Media Library*
 

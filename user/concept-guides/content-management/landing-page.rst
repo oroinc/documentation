@@ -60,6 +60,7 @@ Additionally, OroCommerce’s landing pages can be added to a :ref:`web catalog 
 .. image:: /user/img/concept-guides/content-management/add_landing_page_to_web_catalog.png
    :alt: A sample of the Terms and Conditions landing page
 
+.. _concept-guide-localize-landing-page:
 
 Localize Landing Pages
 ----------------------
