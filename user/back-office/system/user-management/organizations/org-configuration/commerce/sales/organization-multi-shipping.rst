@@ -27,26 +27,20 @@ To configure multi shipping per organization:
 
 5. In the **General Options**, select **Enable Shipping Method Selection Per Line Item** to activate the multi-shipping functionality and display other related options.
 
-6. Once you enable multi shipping, you are prompted to create the related :ref:`multi shipping integration <doc--integrations--multi-shipping>` to allow customers select a preferred shipping method at checkout. To simplify the manual integration creation, click the **Create Multi Shipping Integration** button to create it automatically. After the integration is created, the note disappears.
-
-.. image:: /user/img/system/config_commerce/sales/multi-shipping-button-org.png
-   :alt: Global multi shipping configuration settings and a button for the automatic integration creation
-
-7. In the **Line Items Grouping Options**, configure the following options:
+6. In the **Line Items Grouping Options**, configure the following options:
 
    * **Enable Grouping Of Line Items During Checkout** --- When enabled, line items during checkout are displayed in groups divided by specific criteria (e.g., ID, category, brand, etc). This option may affect shipping rules and discount calculations (see other configuration options).
 
-     * *Group Line Items By* --- Select if you want to group line items per ID, owner, category, brand, or parent product.
+     * *Group Line Items By* --- Select if you want to group line items per ID, category, brand, or parent product.
      * *Create Sub-Orders For Each Group* --- When enabled, in addition to the main order, the system will create respective sub-orders for each group of line items in the back-office. Storefront customers, however, will see only primary orders in their order history.
 
-8. In the **Order History Options**, configure the following options:
+7. In the **Order History Options**, configure the following options:
 
      * *Show Sub-Orders In Order History* --- When enabled, customers can see only sub-orders in their order history. Primary orders will be hidden.
      * *Show Main Orders In Order History* --- When enabled, customers can see both the primary order and its sub-orders in their order history.
 
-9. Click **Save Settings**.
+8. Click **Save Settings**.
 
-.. important:: Once the integration is created, the next step is to :ref:`set up a shipping rule <sys--shipping-rules>` under **System > Shipping Rules** and add your integration to it to enable customers to select the desired shipping method at checkout.
 
 .. include:: /include/include-images.rst
    :start-after: begin
