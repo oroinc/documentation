@@ -142,6 +142,8 @@ The template that is responsible for displaying the form fields should extend th
     {# reuse the form theme provided with OroPlatform #}
     {% form_theme form with '@OroForm/Form/fields.html.twig' %}
 
+    {% import '@OroUI/macros.html.twig' as UI %}
+
     {# make the current task accessible with the task variable #}
     {% set task = form.vars.value %}
 
@@ -224,6 +226,7 @@ The base ``@OroUI/actions/index.html.twig`` template from the OroUIBundle that y
    :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/index.html.twig
 
     {% extends '@OroUI/actions/index.html.twig' %}
+    {% import '@OroUI/macros.html.twig' as UI %}
 
     {% set gridName = 'acme-tasks-grid' %}
     {% set pageTitle = 'Task' %}
