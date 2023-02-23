@@ -10,7 +10,7 @@ Detailed guidance is provided further in this article.
 Deploy the Solution
 -------------------
 
-1. Navigate to |Google Cloud Marketplace|, click **Explore Marketplace** and then search for your solution provided by Oro Inc.
+1. Navigate to |Google Cloud Marketplace|, click **Explore the marketplace** and then search for your solution provided by Oro Inc.
 
    .. image:: /img/backend/setup/gcp/oro_solution.png
       :alt: A page of the Oro solution
@@ -40,9 +40,9 @@ Access the Oro Application
 Use the generated credentials to access your Oro application:
 
 * **Site Address** --- a link to your Oro application storefront (only for OroCommerce).
-* **Admin URL** --- a link to your Oro application back-office
-* **Admin user** --- a username used to log into the admin panel (back-office)
-* **Admin password** - a password used to log into the admin panel (back-office)
+* **Admin URL** --- a link to your Oro application back-office.
+* **Admin user** --- a username used to log into the admin panel (back-office).
+* **Admin password** - a password used to log into the admin panel (back-office).
 
 Also, you can access the VM instance using SSH by clicking SSH and selecting the required option from the dropdown.
 
@@ -53,7 +53,6 @@ You can delete the deployment by clicking **Delete** on the upper left, next to 
 
 .. image:: /img/backend/setup/gcp/oro_solution_delete.png
    :alt: Delete the deployment
-
 
 
 
