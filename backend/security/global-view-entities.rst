@@ -12,6 +12,8 @@ A global view entity is helpful for cases when data created in one organization 
 If the entity is marked as a Global view, data created in the global organization will be available in non-global organizations along with
 the data created in this organization.
 
+In the datagrids for such entities, a new column called ``Organization`` is added displaying the name of the current organization if the entity was created within it and the string ``System-wide`` if the entity was created in the global organization.
+
 You can only view a global view entity from a non-global organization. It cannot be edited, deleted, or shared.
 
 Configuring an Entity as a Global View
