@@ -11,7 +11,7 @@ For a more flexible and secure evaluation experience, you can deploy a virtual m
 
 Before you proceed, ensure that VM VirtualBox v.6.1.x is installed in your local or corporate environment and is accessible.
 
-To download the virtual machine image on the |OroCommerce VM| or |OroCRM VM| website, click on the **download** link.
+To download the virtual machine image, navigate to the |OroCommerce VM| or |OroCRM VM| page and fill in the provided form with required data. The form submission triggers automatic VM file download.
 
    .. image:: /img/backend/setup/vb/download_image.png
       :alt: Download the OroCommerce virtual image
