@@ -177,7 +177,7 @@ The template that is responsible for displaying the form fields should extend th
             {{ parent() }}
         {% else %}
             {% set title = 'oro.ui.create_entity'|trans({ '%entityName%': 'Task' }) %}
-            {{ include('@OroUI/page_title_block.html.twig', { title: title }) %}
+            {{ include('@OroUI/page_title_block.html.twig', { title: title }) }}
         {% endif %}
     {% endblock pageHeader %}
 
