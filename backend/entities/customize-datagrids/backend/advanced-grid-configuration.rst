@@ -239,6 +239,7 @@ Example:
                     frontend_type: select
                     editable: true
                     choices: "@oro_entity_extend.enum_value_provider->getEnumChoicesByCode('user_status')"
+                    translatable_options: false
 
 
 Problem 5

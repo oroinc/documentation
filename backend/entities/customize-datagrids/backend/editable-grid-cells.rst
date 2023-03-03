@@ -54,6 +54,7 @@ Example of grid configuration:
                         enable: true # this cell will be editable
                     expanded: true # this cell will be rendered as radio buttons
                     choices: "@oro_entity_extend.enum_value_provider->getEnumChoicesByCode('cust_prod_visibility')"
+                    translatable_options: false
             options:
                 cellSelection:
                     dataField: id
