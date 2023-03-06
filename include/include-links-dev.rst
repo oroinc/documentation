@@ -1482,6 +1482,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/ApiBundle/Collection/QueryVisitorExpression/NotEndsWithComparisonExpression.php" target="_blank">NotEndsWithComparisonExpression</a>
 
+.. |EmptyValueComparisonExpression| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Collection/QueryVisitorExpression/EmptyValueComparisonExpression.php" target="_blank">EmptyValueComparisonExpression</a>
+
 .. |NestedTreeComparisonExpression| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/5.0/src/Oro/Bundle/ApiBundle/Collection/QueryVisitorExpression/NestedTreeComparisonExpression.php" target="_blank">NestedTreeComparisonExpression</a>
