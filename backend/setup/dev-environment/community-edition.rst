@@ -166,7 +166,7 @@ For the changes to take effect, restart the MySQL server by running:
 Create a Database for the Application and a Dedicated Database User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block::sql
+.. code-block:: sql
 
    CREATE DATABASE oro;
    CREATE USER 'oro_user'@'localhost' IDENTIFIED BY 'P@ssword123';
