@@ -56,6 +56,7 @@ By performance reasons the following operators are disabled out of the box:
 * ``!^`` (``not_starts_with``) - uses ``NOT LIKE text%`` to check that a field value does not start with the text
 * ``$`` (``ends_with``) - uses ``LIKE %text`` to check that a field value ends with the text
 * ``!$`` (``not_ends_with``) - uses ``NOT LIKE %text`` to check that a field value does not end with the text
+* N/A (``empty``) - uses logical OR operator to check that a field value is empty or ``null`` or to check that a field value is not empty and not ``null``
 
 To enable these operators, use ``operators`` option for filters in `Resources/config/oro/api.yml`, e.g.:
 
@@ -67,7 +68,7 @@ To enable these operators, use ``operators`` option for filters in `Resources/co
                 filters:
                     fields:
                         field1:
-                            operators: ['=', '!=', '*', '!*', '~', '!~', '^', '!^', '$', '!$']
+                            operators: ['=', '!=', '*', '!*', '~', '!~', '^', '!^', '$', '!$', 'empty']
 
 .. _case-insensitive-string-filter:
 

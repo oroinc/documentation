@@ -244,25 +244,6 @@ Click the link block again to display the **Style Manager** menu settings. In th
 .. image:: /user/img/concept-guides/content-management/insert_clickable_image_3.png
    :alt: Add the link to the link block in the Settings section under the Style Manager menu
 
-Manage Image Sources (Srcset)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To set or remove an image source (srcset) depending on media screen sizes (desktop, tablet, mobile, etc), click the image to display its menu settings. Click |IcConfig| to open the **Picture Sources Manager** menu and upload the required picture for the necessary screen size.
-
-.. image:: /user/img/concept-guides/content-management/picture-sources-manager.png
-   :alt: Pointing to the Picture Sources Manager icon in the image settings menu
-
-For that:
-1. Click **Add Source**.
-2. Select the picture from the list of available :ref:`DA records <digital-assets>`.
-3. Select the breakpoint (screen format) from **Media Query**. The field will be populated with the values default for the format. You can add as many formats as needed to display the picture properly on different screen sizes.
-4. Click **Save**.
-
-
-.. image:: /user/img/concept-guides/content-management/picture-source-manager-steps.png
-   :alt: Steps you Pointing to the Picture Sources Manager icon in the image settings menu
-
-
 
 Insert Files
 ^^^^^^^^^^^^
@@ -408,14 +389,6 @@ There are several ways to left-align, right-align, centre, or justify text, link
    :alt: Align the text to left
 
 
-Adapt Content to Different Displays
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can set the individual formatting of your content for each display type (desktop, tablet, and mobile), including different background colors, blocks dimension, text alignment, and other. For this, select the display type and customize the settings appropriately. View the results dynamically by switching from one display to another.
-
-.. image:: /user/img/concept-guides/content-management/adapt_content_to_display_type.png
-   :alt: Selecting the display format
-
 Input or Edit HTML Code
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -492,6 +465,113 @@ To add a :ref:`content template <user-guide--landing-pages--marketing--content-t
 
 .. image:: /user/img/marketing/content-templates/edit-content-template.png
    :alt: Illustrating the steps you need to take to start editing the selected content template
+
+
+Adapt Content to Different Displays
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+WYSIWYG builder enables you to create a responsive HTML landing page adaptable to different breakpoints (screen sizes). If you are not satisfied with the content representation on a certain breakpoint, you can set the individual formatting of your content for this particular screen size, including different background colors, block dimensions, text alignment, and others. For this, select the display type and customize the settings appropriately. View the results dynamically by switching from one display to another.
+
+The idea behind responsive content is that you have full control over different layouts of the same page. You can change images or hide content to make the page consistent for the target breakpoint. When a user lands on your website, they can see the appropriate view of the content based on their screen size.
+
+.. note:: The changes made to a particular breakpoint are applied to all other breakpoints with a smaller resolution, while higher resolution screens remain unaffected.
+
+.. image:: /user/img/concept-guides/content-management/adapt_content_to_display_type.png
+   :alt: Selecting the display format
+
+
+There are several rules on how to adapt the content.
+
+Adapt Text
+~~~~~~~~~~
+
+You can change the text alignment, font size, letter spacing, color of the text, and its background under the **Typography** and **Decorations** style manager menu of a particular screen size.
+
+Be aware that you **cannot** change the original text, font, or font style (bold, italics). You can hide the irrelevant text and show the appropriate one instead.
+
+.. image:: /user/img/concept-guides/content-management/adapt-text-to-screen-size.png
+   :alt: Illustrating different text formats and styles for the desktop and tablet breakpoints
+
+Adapt Tiles and Columns
+~~~~~~~~~~~~~~~~~~~~~~~
+
+To adjust the number of tiles and the gaps between them per screen size, click the Tiles block on your canvas, and configure the required settings under **Tiles Settings**.
+
+To adjust the number of columns, the gaps between them, and the column content alignment per screen size, click the Columns block on your canvas and configure the required settings under **Columns Settings**.
+
+
+.. image:: /user/img/concept-guides/content-management/adapt-columns.png
+   :alt: Illustrating the three-column and one-column block for the desktop and tablet breakpoints respectively
+
+Adapt Images
+~~~~~~~~~~~~
+
+To increase or reduce the image size per breakpoint, drag the sizing handle or use the **Dimension** menu to set the required size and margins of the image.
+
+To adjust the image positioning inside the block, use the **General** settings menu.
+
+To set a different image per breakpoint:
+
+1. Select a breakpoint.
+2. Click the image to display its menu settings. Click |IcConfig| to open the **Picture Sources Manager** menu to view all images per breakpoint.
+3. Click **Add Source**.
+4. Select the picture from the list of available :ref:`DA records <digital-assets>`.
+5. Select the breakpoint from **Media Query**. The field will be populated with the values default for the format. You can add as many formats as needed to display the picture properly on different screen sizes.
+6. Drag the images to prioritize the ones with the lowest dimension.
+7. Click **Save**.
+
+
+.. image:: /user/img/concept-guides/content-management/adapt-images-per-screen-size.gif
+   :alt: Small video tutorial on how to change the image per breakpoint
+
+Hide Content
+~~~~~~~~~~~~
+
+To hide a particular fragment of content:
+
+1. Select a breakpoint.
+2. Open the **Layer Manager** menu with a list of all available blocks for your canvas.
+3. Click the block to hide (text, content, quote, image, div, table, etc.), except for the tiles and columns.
+
+   Alternatively, click the required block on your canvas to open the Style Manager menu. Make sure you select the highest parent block, otherwise the block may not be hidden fully, and may break the content view.
+
+4. Open **General > Display** and select the **none** option to hide the block.
+
+.. image:: /user/img/concept-guides/content-management/adapt-table-per-screen-size.png
+   :alt: Illustrating a three-column table and a two-column table for the desktop and tablet breakpoints respectively
+
+Hide Columns and Tiles
+~~~~~~~~~~~~~~~~~~~~~~
+
+To hide a particular block of columns or tiles, you need to wrap it into the div container. Columns and tiles have a complicated structure, which can break the view if you take a puzzle out of the set, so it is possible to hide only the entire block, not a single object. To prevent WYSIWYG from breaking the formatting and styles of columns and tiles, you need to add a Div block to your layout and paste the block of tiles or columns inside it.
+
+For that:
+
+1. Select a breakpoint.
+2. Open the **Blocks** menu and drag the DIV Block from the menu to your canvas next to the block you want to hide.
+3. Click the block of tiles or columns. Make sure you select the highest parent block, otherwise the block may not be hidden fully, and may break the content view.
+4. Move the block of tiles or columns inside the Div block.
+5. Once the tiles or columns are wrapped into the div container, you can manage them similarly to any other content block.
+6. Open **General > Display** and select the **none** option to hide the block.
+7. The changes are applied to all screens with a smaller resolution, while higher resolution screens remain unaffected.
+
+.. image:: /user/img/concept-guides/content-management/hide-show-columns.gif
+   :alt: A video tutorial on how to wrap the column block into the div container and hide it on the tablet breakpoint while the desktop breakpoint remains unaffected
+
+Display Hidden Content
+~~~~~~~~~~~~~~~~~~~~~~
+
+To uncover the blocks of content, images, or columns that were hidden for a particular breakpoint:
+
+1. Select a breakpoint.
+2. Open the **Layer Manager** menu with a list of all available blocks for your canvas.
+3. Click the block that you want to uncover.
+4. The **none** option should have been selected for such block. It means that it is hidden for the particular breakpoint.
+5. Change **none** to **block** to reveal the content for the breakpoint.
+6. The changes are applied to all screens with a smaller resolution, while higher resolution screens remain unaffected.
+
+.. image:: /user/img/concept-guides/content-management/display-hidden-content.png
+   :alt: Steps that you need to perform to uncover the hidden block of content
 
 
 **Related Topics**
