@@ -151,7 +151,7 @@ Set up Services with DependencyInjection
 
 To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/ACMEFastShippingExtension.php with the following content:
 
-.. oro_integrity_check:: cf8a8b8654b7ec4b0b1ac1c3510f5b73db7f5ee5
+.. oro_integrity_check:: 90d8e529a201ea5ecd7e0ef281ce2f02872f8490
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/DependencyInjection/ACMEFastShippingExtension.php
        :language: php

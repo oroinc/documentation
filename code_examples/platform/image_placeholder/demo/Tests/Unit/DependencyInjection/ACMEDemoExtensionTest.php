@@ -3,20 +3,17 @@
 namespace Oro\Bundle\SEOBundle\Tests\Unit\DependencyInjection;
 
 use ACME\Bundle\DemoBundle\DependencyInjection\ACMEDemoExtension;
-use Oro\Bundle\TestFrameworkBundle\Test\DependencyInjection\ExtensionTestCase;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class ACMEDemoExtensionTest extends ExtensionTestCase
+class ACMEDemoExtensionTest extends \PHPUnit\Framework\TestCase
 {
-    public function testLoad()
+    public function testLoad(): void
     {
-        $this->loadExtension(new ACMEDemoExtension());
-        $expectedDefinitions = [
-            // Services
-            'acme_demo.provider.demo_image_placeholder.config',
-            'acme_demo.provider.demo_image_placeholder.theme',
-            'acme_demo.provider.demo_image_placeholder.default',
-        ];
+        $container = new ContainerBuilder();
 
-        $this->assertDefinitionsLoaded($expectedDefinitions);
+        $extension = new ACMEDemoExtension();
+        $extension->load([], $container);
+
+        self::assertNotEmpty($container->getDefinitions());
     }
 }

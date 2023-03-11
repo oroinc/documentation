@@ -48,9 +48,9 @@ For a load configuration files you need to create Service Container Extension. S
     class AcmeDemoExtension extends Extension
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
-       public function load(array $configs, ContainerBuilder $container)
+       public function load(array $configs, ContainerBuilder $container): void
         {
             $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
             // register services configuration

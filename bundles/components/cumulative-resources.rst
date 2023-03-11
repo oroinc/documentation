@@ -27,7 +27,10 @@ For example, to load configuration for your current bundle from the ``Resources\
 
     class AcmeSomeExtension extends Extension
     {
-        public function load(array $configs, ContainerBuilder $container)
+        /**
+         * {@inheritDoc}
+         */
+        public function load(array $configs, ContainerBuilder $container): void
         {
             // load configuration from acme.yml which can be located in any bundle
             $acmeConfig = [];
@@ -100,7 +103,10 @@ Load Configuration from Different File Types
 
     class AcmeSomeExtension extends Extension
     {
-        public function load(array $configs, ContainerBuilder $container)
+        /**
+         * {@inheritDoc}
+         */
+        public function load(array $configs, ContainerBuilder $container): void
         {
             $acmeConfig = [];
             $configLoader = new CumulativeConfigLoader(
@@ -125,7 +131,10 @@ Load Configuration Files from Different Folders
 
     class AcmeSomeExtension extends Extension
     {
-        public function load(array $configs, ContainerBuilder $container)
+        /**
+         * {@inheritDoc}
+         */
+        public function load(array $configs, ContainerBuilder $container): void
         {
             $acmeConfig = [];
             $configLoader = new CumulativeConfigLoader(

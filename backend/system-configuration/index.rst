@@ -90,10 +90,10 @@ After the tree is processed in the Extension class, pass configuration data to t
 
 .. code-block:: php
 
-     public function load(array $configs, ContainerBuilder $container)
+     public function load(array $configs, ContainerBuilder $container): void
      {
          // ....
-         $container->prependExtensionConfig($this->getAlias(), array_intersect_key($config, array_flip(['settings'])));
+         $container->prependExtensionConfig($this->getAlias(), SettingsBuilder::getSettings($config));
          // ...
      }
 

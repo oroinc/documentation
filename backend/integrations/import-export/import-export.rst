@@ -23,9 +23,9 @@ extension class in your bundle that loads the configuration file:
     class AcmeDemoExtension extends Extension
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
-        public function load(array $configs, ContainerBuilder $container)
+        public function load(array $configs, ContainerBuilder $container): void
         {
             $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
             $loader->load('importexport.yml');
@@ -87,7 +87,7 @@ fixtures:
     class TaskFixture extends AbstractTemplateRepository implements TemplateFixtureInterface
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         protected function createEntity($key): Task
         {
@@ -95,7 +95,7 @@ fixtures:
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function getEntityClass(): string
         {
@@ -103,7 +103,7 @@ fixtures:
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function getData()
         {
@@ -111,7 +111,7 @@ fixtures:
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function fillEntityData($key, $entity)
         {
@@ -1085,7 +1085,7 @@ To implement custom behavior of the import pop-up, you can extend the default **
     class CustomImportTypeExtension extends AbstractTypeExtension
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public static function getExtendedTypes(): iterable
         {
@@ -1093,7 +1093,7 @@ To implement custom behavior of the import pop-up, you can extend the default **
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function buildForm(FormBuilderInterface $builder, array $options): void
         {
@@ -1120,7 +1120,7 @@ Example of displaying the form with choice (radio buttons):
     class CustomExportTypeExtension extends AbstractTypeExtension
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public static function getExtendedTypes(): iterable
         {
@@ -1128,7 +1128,7 @@ Example of displaying the form with choice (radio buttons):
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function buildForm(FormBuilderInterface $builder, array $options): void
         {

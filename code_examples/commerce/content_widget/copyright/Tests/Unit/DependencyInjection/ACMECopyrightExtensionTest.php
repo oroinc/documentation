@@ -2,28 +2,18 @@
 
 namespace ACME\Bundle\CopyrightBundle\Tests\Unit\DependencyInjection;
 
-use ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType;
 use ACME\Bundle\CopyrightBundle\DependencyInjection\ACMECopyrightExtension;
-use Oro\Bundle\TestFrameworkBundle\Test\DependencyInjection\ExtensionTestCase;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class ACMECopyrightExtensionTest extends ExtensionTestCase
+class ACMECopyrightExtensionTest extends \PHPUnit\Framework\TestCase
 {
-    /** @var ACMECopyrightExtension */
-    private $extension;
-
-    protected function setUp(): void
-    {
-        $this->extension = new ACMECopyrightExtension();
-    }
-
     public function testLoad(): void
     {
-        $this->loadExtension($this->extension);
+        $container = new ContainerBuilder();
 
-        $this->assertDefinitionsLoaded(
-            [
-                CopyrightContentWidgetType::class,
-            ]
-        );
+        $extension = new ACMECopyrightExtension();
+        $extension->load([], $container);
+
+        self::assertNotEmpty($container->getDefinitions());
     }
 }

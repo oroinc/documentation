@@ -382,16 +382,16 @@ Extension and Configuration Moving
     class YourExtension extends Extension
     {
         /**
-         * {@inheritdoc}
-        */
+         * {@inheritDoc}
+         */
         public function load(array $configs, ContainerBuilder $container): void
         {
             $config = $this->processConfiguration(new YourConfigurationClass(), $configs);
-            $container->prependExtensionConfig($this->getAlias(), $config);
+            $container->prependExtensionConfig($this->getAlias(), SettingsBuilder::getSettings($config));
         }
 
         /**
-         * {@inheritdoc}
+         * {@inheritDoc}
          */
         public function getAlias(): string
         {
@@ -404,7 +404,7 @@ Extension and Configuration Moving
 .. code-block:: php
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     protected function build(ContainerBuilder $container)
     {
