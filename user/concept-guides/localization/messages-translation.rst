@@ -5,6 +5,8 @@
 Translate Labels, Options, and Messages
 =======================================
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 To translate any UI system element, label, or a popup message, you need to update its translation from within the Translations grid under the **System > Localization > Translations** main menu.
 
 Use the following filters to narrow down the search and locate the element's key.

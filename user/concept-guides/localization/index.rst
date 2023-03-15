@@ -11,6 +11,24 @@ Oro application supports localization process, enabling you to translate and ada
 
 In the Oro application, you can provide the translation for all the content elements of your storefront (e.g., product names, descriptions, catalog titles, SEO attributes, and product attribute labels, etc.) and localize everything beyond the text, such as system elements, UI labels, monetary values, time and date layout, measurements, numbers, etc.
 
+Prerequisites
+-------------
+
+To start configuring localization, language, and translation settings, ensure that:
+
+1. Your current organization is the global organization (for multi-organization application). The required user role has the permissions (*Organization* or *Global*) to manage localization, language, and translation settings.
+
+.. image:: /user/img/concept-guides/localization/global-access-levels.png
+
+2. Your current organization is a non-global organization (for multi-organization application). The required user role has the permissions (*Organization* or *Global*) to manage localization, language, and translation settings per your organization.
+
+.. image:: /user/img/concept-guides/localization/non-global-access.png
+
+3. If the application has no global organizations at all, or there is only one organization, the required user role must have the permissions with the *Organization* or *Global* access level to manage localization, language, and translation settings per this specific organization.
+
+.. hint:: For more information about multiple organizations and available access levels and permissions, see the :ref:`Configure Organizations in the Back-Office <user-management-organizations>` and :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guides.
+
+
 General Localization Process
 ----------------------------
 
