@@ -14,3 +14,4 @@ Learn how to configure search synonyms, saved search for the OroCommerce Enterpr
    Fuzzy Search <fuzzy-search>
    Search Synonyms <search-synonyms>
    Customer Recommendations <customer-recommendations>
+   Search Terms <search-terms>

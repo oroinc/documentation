@@ -94,4 +94,4 @@ To configure the price list priority and controlled merge for the customer group
    customer-group-price-lists
    customer-group-all-products-menus
    customer-group-frontend-menus
-   customer-group-customer-settings
+   customer-group-configuration/index

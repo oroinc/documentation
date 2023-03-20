@@ -10,3 +10,4 @@ Configure Search Settings per Website
    Fuzzy Search <website-fuzzy-search>
    Search Synonyms <website-search-synonyms>
    Customer Recommendations <website-customer-recom>
+   Search History <website-search-terms>

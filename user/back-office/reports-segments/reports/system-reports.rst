@@ -19,6 +19,7 @@ The following system reports are available out-of-the-box at the Oro application
    leads-reports
    opportunities-reports
    reports-bestselling
+   search-report
 
 
 .. include:: /include/include-images.rst
