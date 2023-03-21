@@ -18,9 +18,9 @@ To configure the search history settings per organization:
 
 4. You can enable or disable the following options (clear the **Use System** checkbox to customize the settings):
 
-   * **Enable Search History Feature** --- enables the :ref:`Search History feature <user-guide-search-search-history>`  that helps track your customers' searching activity, including the products users have searched for, the number of products found, etc. Additionally, the option enables :ref:`a Search Terms report <user-guide-search-terms-report>` that collects statistics on how many times a particular search term was used, the number of times that search term returned products, and the number of times it returned an empty result.
+   * **Enable Search History Reporting** --- enables the :ref:`Search History feature <user-guide-search-search-history>` globally to track your customers’ search activity in the storefront. The option also enables the :ref:`a Search Terms report <user-guide-search-terms-report>` that collects statistics on how many times a particular search term was used, the number of times that search term returned products, and the number of times it returned an empty result. When Enable Search History Reporting is disabled, the feature is removed from the main menu and grids, along with the Search Terms report.
 
-   * **Enable Global Search History** - enables the system to collect all statistics about the customers' search queries. Keep in mind that enabling this option may result in a large number of records being saved to the database on popular websites, so be careful when enabling this feature.
+   * **Enable Search History Collection** - depends on the Enable Search History Reporting option. When Enable Search History Collection is enabled, all search queries are logged into the database. This option allows enabling/disabling certain groups of visitors. For example, you can choose not to log requests from anonymous users by turning off this option at customer group level for Anonymous customers. Exercise care when enabling this option on popular websites as it may result in a large number of records saved to the database.
 
 5. Click **Save Settings**.
 
