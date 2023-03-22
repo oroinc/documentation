@@ -113,6 +113,46 @@ You can now use three environment variables with DSNs:
 
 Note that ``*`` means to listen to all hosts.
 
+Search Engine Connections
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Instead of using the following configuration in
+``config/parameters.yml``:
+
+.. code:: yaml
+
+   parameters:
+       # search engine configuration
+       search_engine_name:                 orm
+       search_engine_host:                 '%env(ORO_SEARCH_HOST)%'
+       search_engine_port:                 '%env(ORO_SEARCH_PORT)%'
+       search_engine_index_prefix:         '%env(ORO_SEARCH_INDEX_PREFIX)%'
+       search_engine_username:             '%env(ORO_SEARCH_USER)%'
+       search_engine_password:             '%env(ORO_SEARCH_PASSWORD)%'
+       search_engine_ssl_verification:     '%env(ORO_SEARCH_ENGINE_SSL_VERIFICATION)%'
+       search_engine_ssl_cert:             '%env(ORO_SEARCH_ENGINE_SSL_CERT)%'
+       search_engine_ssl_cert_password:    '%env(ORO_SEARCH_ENGINE_SSL_CERT_PASSWORD)%'
+       search_engine_ssl_key:              '%env(ORO_SEARCH_ENGINE_SSL_KEY)%'
+       search_engine_ssl_key_password:     '%env(ORO_SEARCH_ENGINE_SSL_KEY_PASSWORD)%'
+
+       # website search engine configuration
+       website_search_engine_index_prefix: '%env(ORO_SEARCH_WEBSITE_INDEX_PREFIX)%'
+
+You can now use two environment variables with DSNs:
+
+.. code:: bash
+
+   ORO_SEARCH_ENGINE_DSN=orm:?prefix=oro_search
+   ORO_WEBSITE_SEARCH_ENGINE_DSN=orm:?prefix=oro_website_search
+
+For elasticsearch search engine, use the following format:
+
+.. code:: bash
+
+   ORO_SEARCH_ENGINE_DSN=elastic-search://valid_user:valid_password@127.0.0.1:9200?prefix=oro_search
+
+Note that in the above examples, ``valid_user:valid_password@`` - DSNs part can be skipped if authentication is not enabled.
+
 Sessions Storage Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -256,10 +296,7 @@ The following parameters are read from environment variables as before:
 
 -  ``secret``
 -  ``mailer_dsn``
--  ``search_engine_dsn``
--  ``website_search_engine_dsn``
 -  ``tracking_data_folder``
 
 These parameters should be configured in the environment variables, such
-as ``ORO_SECRET``, ``ORO_MAILER_DSN``, ``ORO_SEARCH_ENGINE_DSN``,
-``ORO_WEBSITE_SEARCH_ENGINE_DSN`` and ``ORO_TRACKING_DATA_FOLDER``.
+as ``ORO_SECRET``, ``ORO_MAILER_DSN`` and ``ORO_TRACKING_DATA_FOLDER``.

@@ -6,6 +6,8 @@
 Translate Content
 -----------------
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 Provide Spelling for Required Language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -20,12 +20,16 @@ and register it as a service with tag ``oro_message_queue.topic``. You have to d
 
 .. note:: You can use ``Oro\Component\MessageQueue\Topic\AbstractTopic`` as the base class for a new topic.
 
+.. note:: If the processor subscribed to a topic is implemented with the creation of jobs, it is recommended to implement ``Oro\Component\MessageQueueueue\Topic\JobAwareTopicInterface`` for the topic.
+   Then you must declare the following method **createJobName**, which creates a unique job name in the topic.
+   With this implementation, the job is created immediately after the message is created.
+
 .. note:: You do not have to explicitly declare the topic as a tagged service if the ``autoconfigure`` service container setting is on.
 
 An example of an MQ topic:
 
 .. code-block:: php
-   :caption: Async/Topic/SendAutoResponseTopic.php
+   :caption: Oro/Bundle/EmailBundle/Async/Topic/SendAutoResponseTopic.php
 
     namespace Oro\Bundle\EmailBundle\Async\Topic;
 
@@ -66,6 +70,38 @@ An example of an MQ topic:
 
         Oro\Bundle\EmailBundle\Async\Topic\SendAutoResponsesTopic: ~
 
+An example of an MQ topic implement ``Oro\Component\MessageQueueueue\Topic\JobAwareTopicInterface``:
+
+.. code-block:: php
+   :caption:  Oro/Bundle/SEOBundle/Async/Topic/GenerateSitemapTopic.php
+
+   namespace Oro\Bundle\SEOBundle\Async\Topic;
+
+   use Oro\Component\MessageQueue\Topic\AbstractTopic;
+   use Oro\Component\MessageQueue\Topic\JobAwareTopicInterface;
+   use Symfony\Component\OptionsResolver\OptionsResolver;
+
+   class GenerateSitemapTopic extends AbstractTopic implements JobAwareTopicInterface
+   {
+       public static function getName(): string
+       {
+           return 'oro.seo.generate_sitemap';
+       }
+
+       public static function getDescription(): string
+       {
+           return 'Generates sitemaps for all websites';
+       }
+
+       public function configureMessageBody(OptionsResolver $resolver): void
+       {
+       }
+
+       public function createJobName($messageBody): string
+       {
+           return self::getName();
+       }
+   }
 
 Message Queue Topics Registry
 -----------------------------
