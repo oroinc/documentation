@@ -10,20 +10,23 @@ The bundle provides an entity and a web gui for :ref:`the jobs <op-structure--mq
 Jobs
 ----
 
-A message processor can be implemented with or without creating jobs.
+A :ref:`message processor <dev-guide-system-message-queue-architecture-processor>` can be implemented with or without creating jobs.
 
-There is no ideal criteria to help decide whether a job should be
-created or not. A developer should decide each time which approach is
-better in this case.
+A job is additional information about the message processing task added to the Oro application DB. It allows to view the information about the task (job) in the admin UI and to manage the job (view the status and cancel it) in the UI.
 
-Here are a few recommendations:
+There are no ideal criteria to help decide whether a job should be created or not. A developer should decide which approach is better in each particular case.
 
-Skip a job creation if:
+When to Create a Job
+^^^^^^^^^^^^^^^^^^^^
+
+Recommendations that may help you:
+
+**Do Not Create Jobs If:**
 
 -  There is an easy fast-executing action such as status changing etc.
 -  The action looks like an event listener.
 
-Always create jobs if:
+**Create jobs if:**
 
 -  The action is complicated and can be executed for a long time.
 -  There is a need to monitor execution status.
@@ -35,27 +38,6 @@ Always create jobs if:
    monitor the status of the whole task.
 
 Jobs are usually run with JobRunner.
-
-When to Create a Job
-^^^^^^^^^^^^^^^^^^^^
-
-A job is additional information about the message processing task added to the Oro application DB. It allows to view the information about the task (job) in the admin UI and to manage the job (view the status and cancel it) in the UI.
-
-
-A :ref:`message processor <dev-guide-system-message-queue-architecture-processor>` can be implemented with or without creating jobs, which means that you need to consider what the best approach is in each specific situations. However, below are a few recommendations to help you:
-
-**Do Not Create Jobs If:**
-
-* There is an easy fast-executing action, such as status changing etc.
-* The action looks like an event listener.
-
-**Create jobs if:**
-
-* The action is complicated and can be executed for a long time.
-* You need to monitor execution status.
-* You need to run an unique job, i.e. not to allow running a job with the same name until the previous job has finished.
-* You need to run a step-by-step action, i.e. the message flow must have several steps (tasks) which run one after another.
-* You need to split a job for a set of sub-jobs to run in parallel and monitor the status of the whole task.
 
 Structure
 ---------
@@ -77,9 +59,7 @@ Running Parallel Jobs
 
 **Flow to Run Parallel Jobs via Creating a Root Job and Child Jobs Using runUnique/createDelayed/runDelayed**
 
-This way of running parallel jobs is more appropriate than the previous
-one, although it is slightly more complicated. It is, however, the
-preferred way for the parallel processes implementation.
+This way of running parallel jobs is preferred for parallel process implementation.
 
 The task is the same as the previous one. We want to run two processes
 in parallel. We are also creating processors A, B and C but they are
@@ -211,6 +191,44 @@ Jobs are usually created and run with *\\Oro\\Component\\MessageQueue\\Job\\JobR
   *public function runUnique($ownerId, $name, \\Closure $runCallback)*
 
   Runs the *$runCallback*. It does not allow another job with the same name to run simultaneously.
+
+* **runUniqueByMessage**
+
+  *public function runUniqueByMessage(MessageInterface $message, \\Closure $runCallback)*
+
+  If the processor is subscribed to a topic that implements ``Oro\Component\MessageQueue\Topic\JobAwareTopicInterface``, this method is used. The usage of this method is recommended, compared to the method above.
+
+  With this implementation, the job is created immediately after the message is created.
+
+  **Example**:
+
+    .. code-block:: php
+
+        class MessageProcessor implements  MessageProcessorInterface, TopicSubscriberInterface
+            {
+                private JobRunner $jobRunner;
+
+                public static function getSubscribedTopics()
+                {
+                    return [NameTopic::getName()];
+                }
+
+                public function process(MessageInterface $message, SessionInterface $session)
+                {
+                    $data = $message->getBody();
+
+                    $result =$this->jobRunner->runUniqueByMessage(
+                        $message,
+                        function (JobRunner $runner, Job $job) use ($data) {
+                            // do your job
+
+                            return true; // if you want to ACK message or false to REJECT
+                        }
+                    );
+
+                    return $result ? self::ACK : self::REJECT;
+                }
+            }
 
 * **createDelayed**
 
