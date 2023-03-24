@@ -20,7 +20,7 @@ To configure the search history settings per customer:
 3. Select **Commerce > Search > Search Terms** in the menu to the left.
 4. In the Search History section, clear the **Use Customer Group** check box and configure the following option:
 
-   * **Enable Search History Collection** - depends on the Enable Search History Reporting option. When Enable Search History Collection is enabled, all search queries are logged into the database. This option allows enabling/disabling certain groups of visitors. For example, you can choose not to log requests from anonymous users by turning off this option at customer group level for Anonymous customers. Exercise care when enabling this option on popular websites as it may result in a large number of records saved to the database.
+   * **Enable Search History Collection** - depends on the :ref:`Enable Search History Reporting option <configuration--guide--commerce--configuration--search-history>`. When Enable Search History Collection is enabled, all search queries are logged into the database. This option allows enabling/disabling certain groups of visitors. For example, you can choose not to log requests from anonymous users by turning off this option at customer group level for Anonymous customers. Exercise care when enabling this option on popular websites as it may result in a large number of records saved to the database.
 
 5. Click **Save Settings**.
 
