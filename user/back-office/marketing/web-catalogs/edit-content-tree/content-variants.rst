@@ -222,11 +222,12 @@ Product Collection is a filter-based segment that helps you display a custom and
    .. image:: /user/img/marketing/web_catalogs/ResetProducts.png
       :alt: Click Reset Products next to the tabs
 
-7. To define a sort order for products
+7. To define a sort order for products:
 
-   Each product selected in the All Added grid can have a sort order associated with it that will define the default order in which the product will appear in the storefront.
+   Each product selected in the All Added grid can have a sort order associated with it that will define the default order in which the product will appear in the storefront. 0 is the highest priority, and you can input any positive decimal number. Empty values will be sorted last. You can also click on the **Manage Sort Order** button to be able to manage the sort order of products in the product collection in a separate pop-up window. Products with grey background have sorting number assigned. Product with white background have no sorting order. You can drag and drop the horizontal background separator up and down to apply or clear the sorting order. All changes made to the sorting order in this dialog window will be applied immediately.
 
-   ..note:: 0 is the highest priority, and you can input any positive decimal number. Empty values will be sorted last.
+   .. image:: /user/img/marketing/web_catalogs/manage-sort-order.png
+      :alt: Clicking the Manage Sort Order button opens a new pop-up window to bulk sort the products added to the product collection.
 
 8. This step applies only to the content nodes with more than one content variant.
 

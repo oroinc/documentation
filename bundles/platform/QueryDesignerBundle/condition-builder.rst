@@ -46,7 +46,7 @@ Usage Example
                 Conditions Group
             </li>
         </ul>
-        <div class="condition-container"></div>
+        <div class="condition-container" data-ignore-form-state-change></div>
     </div>
 
 The example above contains a list of available condition criteria and a container for the building process. Each criterion of the list should have a `data criteria` attribute which allows to distinguish them.
