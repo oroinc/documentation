@@ -13,7 +13,7 @@ Global routing configuration includes the following information:
 * Meaningful URL (e.g. `/product/view/4` vs `/500-watt-work-light`)
 
 .. note::
-    The website routing settings can be configured globally, per :ref:`organization <organization-config-website-routing>`, and per :ref:`website <sys--websites--sysconfig--websites--routing>`.
+    The website routing settings can be configured globally, per :ref:`organization <organization-config-website-routing>`, per :ref:`website <sys--websites--sysconfig--websites--routing>`, :ref:`customer group <user-guide--customer-groups--configuration--settings--routing>` and :ref:`customer <user-guide--customer--configuration--settings--routing>`.
 
 To change the default global routing settings:
 

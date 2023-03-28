@@ -104,6 +104,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Fuzzy Search <configuration--website-commerce--search--fuzzy-search>`
     * :ref:`Search Synonyms <configuration--website-commerce--search--synonyms>`
     * :ref:`Customer Recommendations <website-configuration--commerce--search--customer-recommendation>`
+    * :ref:`Search Terms <configuration--website-commerce--search--history>`
 
   * Orders
 

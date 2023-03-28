@@ -82,6 +82,7 @@ The following categories of settings are available for system configuration at o
   * Search
 
     * :ref:`Saved Search <organization-commerce--configuration--saved-search>`
+    * :ref:`Search Terms <organization-commerce--configuration--search-history>`
 
   * Taxation
 

@@ -109,6 +109,7 @@ Learn how to define the merchant country.
 * :ref:`Fuzzy Search <configuration--guide--commerce--configuration--fuzzy-search>`
 * :ref:`Search Synonyms <configuration--guide--commerce--search--synonyms>`
 * :ref:`Customer Recommendations <system-configuration--commerce--search--customer-recommendation>`
+* :ref:`Search Terms <configuration--guide--commerce--configuration--search-history>`
 
 :ref:`Orders <configuration--guide--commerce--configuration--order>`
 --------------------------------------------------------------------
