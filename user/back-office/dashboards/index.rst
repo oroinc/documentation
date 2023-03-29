@@ -21,6 +21,11 @@ Each sales rep, manager, and employee can create and manage their own custom das
 .. image:: /user/img/dashboards/dashboards_0.png
    :alt: Default dashboard
 
+
+By default, each dashboard consists of a set of widgets apart from custom scenarios when you want to use a third-party service to build dashboards. In this case, developers can add custom dashboard types. If the system have more than one dashboard type, new dashboards can be created with the given types. For more information, see :ref:`Add a New Dashboard Type <dev-dashboards-new-type>` in the developer guide.
+
+.. hint:: If you run the Oro Marketplace application, a seller dashboard will be automatically added to each seller organization when a new seller is created through a seller request.
+
 Click on the links below to learn how to work with dashboards and their widgets.
 
 .. toctree::

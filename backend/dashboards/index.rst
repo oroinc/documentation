@@ -87,3 +87,90 @@ The configured ``oro_dashboard_widget`` route refers to a controller action that
 .. tip::
 
     If your widget contains some more logic (e.g., calling some service and doing something with its result), you can create your own controller, configure a route for it, and then refer to this route with the ``route`` key in your widget configuration.
+
+.. _dev-dashboards-new-type:
+
+Adding New Dashboard Type
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default, each dashboard consists of a set of widgets, but there are cases when the dashboard should not be built from widgets. For example, when you want to use a third-party page as the dashboard for your application.
+
+To add a new dashboard type, register a new dashboard type and add a fixture that will add the new dashboard type to the list
+of available dashboard types.
+
+To register a new dashboard type, add a new config provider that implements the DashboardTypeConfigProviderInterface interface:
+
+.. code-block:: php
+
+   namespace Acme\DemoBundle\DashboardType;
+
+   use Oro\Bundle\DashboardBundle\DashboardType\DashboardTypeConfigProviderInterface;
+   use Oro\Bundle\DashboardBundle\Entity\Dashboard;
+
+   /**
+    * Defines my dashboard type.
+    */
+   class MyDashboardTypeConfigProvider implements DashboardTypeConfigProviderInterface
+   {
+       public const TYPE_NAME = 'my_type';
+
+       /**
+        * {@inheritDoc}
+        */
+       public function isSupported(?string $dashboardType): bool
+       {
+           return self::TYPE_NAME === $dashboardType;
+       }
+
+       /**
+        * {@inheritDoc}
+        */
+       public function getConfig(Dashboard $dashboard): array
+       {
+           return ['twig' => '@AcmeDemo/Index/default.html.twig'];
+       }
+   }
+
+In the example above, we added a provider that will return the ``@AcmeDemo/Index/default.html.twig`` twig template as the dashboard page.
+
+Next, register this provider with the ``oro_dashboard.dashboard_type.config.provider`` tag:
+
+.. code-block:: yaml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+
+    acme_demo.dashboard_type.config.provider.my_dashboard:
+        class: Acme\DemoBundle\DashboardType\MyDashboardTypeConfigProvider
+        tags:
+            - { name: oro_dashboard.dashboard_type.config.provider }
+
+The final step is the fixture that extends ``AbstractDashboardTypeFixture``. It adds the ``my_type`` dashboard type to the list of dashboard types:
+
+.. code-block:: php
+
+   namespace Acme\DemoBundle\Migrations\Data\ORM;
+
+   use Oro\Bundle\DashboardBundle\Migrations\Data\ORM\AbstractDashboardTypeFixture;
+
+   /**
+    * Adds my_type dashboard type to the list of available dashboard types.
+    */
+   class AddMyDashboardTypeFixture extends AbstractDashboardTypeFixture
+   {
+       /**
+        * {@inheritDoc}
+        */
+       protected function getDashboardTypeIdentifier(): string
+       {
+           return 'my_type';
+       }
+
+       /**
+        * {@inheritDoc}
+        */
+       protected function getDashboardTypeLabel(): string
+       {
+           return 'My type';
+       }
+   }
+
+After updating the platform, the ``my_type`` dashboard type with the label ``My type`` is displayed in the select box when creating a new dashboard page via the UI.
