@@ -275,6 +275,13 @@ Moreover, you can inject into the behat context dependencies from either behat o
 
 .. note:: Context service must be marked as public.
 
+Using Mocks in Testing
+~~~~~~~~~~~~~~~~~~~~~~
+
+Sometimes tests require mocks to simulate dependencies, such as an external web service or a custom application configuration for a payment method. To configure the application container for such testing, add the ``Tests/Behat/parameters.yml`` file in a bundle or modify the ``config/config_behat_test.yml`` at the application level.
+
+To run Behat tests that rely on a custom configuration, use the behat_test application environment and tag the tests with ``@behat-test-env``. This ensures that mocks are used for testing purposes only and that the production environment remains unaffected.
+
 Autoload Suites
 ^^^^^^^^^^^^^^^
 
@@ -332,6 +339,13 @@ Disable Feature Isolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can disable feature isolation by adding the ``--skip-isolators`` option to the bin/behat console command. As a result, the Behat no longer takes notice of the database, cache, and other layers' isolation. This means the application state is not restored to the initial state, and the result is preserved after the test.
+
+Disable Message Consumer Background Running
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To simulate production conditions more accurately during testing, you can disable the message consumer background running using the ``--do-not-run-consumer`` option in ``bin/behat``.
+
+Be aware that if you choose to use this option, the consumer will not be launched, and the application will not process any messages from the message queue. This could cause problems if you are testing functionality that relies on the timely processing of messages by the consumer.
 
 Page Object
 -----------
