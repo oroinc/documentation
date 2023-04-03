@@ -45,7 +45,7 @@ The example of the frontend permissions configuration for entity is provided bel
      *      }
      * )
      */
-     class SomeEntity extends ExtendSomeEntity
+     class SomeEntity implements ExtendEntityInterface
      {
          /**
           * @var Customer

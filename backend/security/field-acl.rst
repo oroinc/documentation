@@ -91,7 +91,7 @@ The following example is an illustration of the entity configuration:
      *      }
      * )
      */
-     class SomeEntity extends ExtendSomeEntity
+     class SomeEntity implements ExtendEntityInterface
      {
      ...
      }
@@ -146,7 +146,7 @@ Limit Permissions List
 
 A developer can limit the list of available permissions for the field with the `permissions` parameter in the Security scope.
 
-The permissions should be listed as the string with the `;` delimiter. 
+The permissions should be listed as the string with the `;` delimiter.
 
 For example:
 
@@ -155,7 +155,7 @@ For example:
      use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
      // ...
 
-     class SomeEntity extends ExtendSomeEntity
+     class SomeEntity implements ExtendEntityInterface
      {
      // ...
          /**
@@ -171,6 +171,6 @@ For example:
          protected $firstName;
      // ...
      }
- 
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
