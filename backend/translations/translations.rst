@@ -276,17 +276,19 @@ To use ``LocalizedFallbackValue`` for fields in the entity, make it extendable:
 
     namespace Acme\Bundle\DemoBundle\Entity;
 
-    use Acme\Bundle\DemoBundle\Model\ExtendSome;
     use Doctrine\Common\Collections\Collection;
     use Doctrine\ORM\Mapping as ORM;
+    use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface;
+    use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait;
     use Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue;
 
     /**
      * @ORM\Table(name="acme_demo_some")
      * @ORM\Entity()
      */
-    class Some extends ExtendSome
+    class Some implements ExtendEntityInterface
     {
+        use ExtendEntityTrait;
         /**
          * @var Collection|LocalizedFallbackValue[]
          *
@@ -308,32 +310,6 @@ To use ``LocalizedFallbackValue`` for fields in the entity, make it extendable:
         protected $names;
     }
 
-
-.. code-block:: php
-
-    namespace Acme\Bundle\DemoBundle\Model;
-
-    use Oro\Bundle\LocaleBundle\Entity\Localization;
-    use Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue;
-
-    /**
-     * @method LocalizedFallbackValue getName(Localization $localization = null)
-     * @method LocalizedFallbackValue getDefaultName()
-     * @method void setDefaultName(string $value)
-     */
-    class ExtendSome
-    {
-        /**
-         * Constructor
-         *
-         * The real implementation of this method is auto generated.
-         *
-         * IMPORTANT: If the derived class has own constructor it must call parent constructor.
-         */
-        public function __construct()
-        {
-        }
-    }
 
 Enable ``Oro\Bundle\LocaleBundle\DependencyInjection\Compiler\EntityFallbackFieldsStoragePass`` for the entity and the field
 inside the bundle class:
@@ -363,29 +339,6 @@ inside the bundle class:
             ]));
         }
     }
-
-As the result, a proxy class is generated in the application cache:
-``cache/prod/oro_entities/Extend/Entity/classes.php``
-
-.. code-block:: php
-
-    namespace Extend\Entity;
-
-    // ...
-    abstract class EX_AcmeDemoBundle_Some extends \Oro\Bundle\LocaleBundle\Model\ExtendFallback implements \Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface
-    {
-        // ...
-        /**
-         * @param \Oro\Bundle\LocaleBundle\Entity\Localization|null $localization
-         * @return \Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue|null
-         */
-        public function getTitle(\Oro\Bundle\LocaleBundle\Entity\Localization $localization = null)
-        {
-            return $this->getFallbackValue($this->titles, $localization);
-        }
-        // ...
-    }
-    // ...
 
 To be able to provide translations in the UI, use the following example of the form type:
 

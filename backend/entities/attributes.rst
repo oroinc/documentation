@@ -28,8 +28,10 @@ The following example illustrates enabling attributes for the *Product* entity:
      *  }
      * )
      */
-    class Product extends ExtendProduct implements AttributeFamilyAwareInterface
+    class Product implements AttributeFamilyAwareInterface
     {
+        // ...
+
         /**
          * @var AttributeFamily
          *
@@ -67,7 +69,7 @@ The following example illustrates enabling attributes for the *Product* entity:
             return $this->attributeFamily;
         }
 
-        ...
+        // ...
     }
 
 

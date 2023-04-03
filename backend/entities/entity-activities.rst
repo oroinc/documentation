@@ -59,31 +59,21 @@ Make an Entity an Activity
 
 To create an activity from your new entity, you need to make the entity extended and include it in the `activity` group.
 
-To make the entity extended, create a base abstract class. The name of this class should start with the `Extend` word and implement |ActivityInterface|.
+To make the entity extended, implement the ExtendEntityInterface using the ExtendEntityTrait. The class must also implement |ActivityInterface|.
 
 Here is an example:
 
 .. code-block:: php
 
-    namespace Oro\Bundle\EmailBundle\Model;
-
     use Oro\Bundle\ActivityBundle\Model\ActivityInterface;
     use Oro\Bundle\ActivityBundle\Model\ExtendActivity;
+    use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface;
+    use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait
 
-    class ExtendEmail implements ActivityInterface
+    class Email implements ActivityInterface, ExtendEntityInterface
     {
         use ExtendActivity;
-
-        /**
-         * Constructor
-         *
-         * The real implementation of this method is auto generated.
-         *
-         * IMPORTANT: If the derived class has own constructor it must call parent constructor.
-         */
-        public function __construct()
-        {
-        }
+        use ExtendEntityTrait;
     }
 
 
@@ -99,7 +89,7 @@ Use this class as the superclass for your entity. To include the entity in the `
      *  }
      * )
      */
-    class Email extends ExtendEmail
+    class Email implements ActivityInterface, ExtendEntityInterface
 
 
 Your entity is now recognized as the activity entity. To make sure that the activity is displayed correctly, you need to configure its UI.
@@ -202,7 +192,7 @@ Now, you need to bind the controller to your activity entity. Use ORO entity con
      *  }
      * )
      */
-    class Email extends ExtendEmail
+    class Email implements ActivityInterface, ExtendEntityInterface
 
 
 Please note that the example above contains the `route` attribute to specify the controller path and the `acl` attribute to set ACL restrictions.
@@ -323,7 +313,7 @@ activityLink.html.twig
      *  }
      * )
      */
-    class Email extends ExtendEmail
+    class Email implements ActivityInterface, ExtendEntityInterface
 
 .. _backend-entity-activities-configure-custom-grid:
 
@@ -345,7 +335,7 @@ If you want to define a context grid for an entity (e.g., User) in the activity 
      *     }
      * )
      */
-    class User extends ExtendUser
+    class User implements ExtendEntityInterface
 
 
 This option is used to recognize the grid for the entity with a higher priority than the `default` option.
