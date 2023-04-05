@@ -173,7 +173,7 @@ Please, see the :ref:`System Configuration <ref-format-system-configuration>` to
 [Oro] Customization Using Twig Placeholders
 """""""""""""""""""""""""""""""""""""""""""
 
-In the Oro application, you can use a new Twig template {placeholder} token/tag that triggers an event-like behavior when the template is rendered. For example, you can add new markup to the existing template generated at the vendor level and keep other parts of the template intact. Please, see the |Introduction to Placeholders| topic for more details.
+In the Oro application, you can use a new Twig template {placeholder} token/tag that triggers an event-like behavior when the template is rendered. For example, you can add new markup to the existing template generated at the vendor level and keep other parts of the template intact. Please, see the :ref:`Introduction to Placeholders <bundle-docs-platform-ui-bundle-twig-placeholders>` topic for more details.
 
 [Oro] Customization by Modifying the Database Schema
 """"""""""""""""""""""""""""""""""""""""""""""""""""
