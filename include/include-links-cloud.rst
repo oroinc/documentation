@@ -7,22 +7,6 @@ Links (Cloud)
 
 .. begin
 
-.. |Production Environment| raw:: html
-
-   <a href="https://doc.oroinc.com/cloud/environments/#production-environment" target="_blank">Production Environment</a>
-
-.. |Development Environment| raw:: html
-
-   <a href="https://doc.oroinc.com/cloud/environments/#development-environment" target="_blank">Development Environment</a>
-
-.. |Testing Environment| raw:: html
-
-   <a href="https://doc.oroinc.com/cloud/environments/#testing-environment" target="_blank">Testing Environment</a>
-
-.. |Staging Environment| raw:: html
-
-   <a href="https://doc.oroinc.com/cloud/environments/#staging-environment" target="_blank">Staging Environment</a>
-
 .. |Custom Fields| raw:: html
 
    <a href="https://cloud.google.com/logging/docs/view/overview#custom-fields" target="_blank">Custom Fields</a>
@@ -163,21 +147,9 @@ Links (Cloud)
 
    <a href="https://github.com/oroinc/orocommerce-application/commit/d55c2f0110a524546ba9be33098bc409d8617b8f" target="_blank">d55c2f0</a>
 
-.. |configured using orocloud.yaml file| raw:: html
-
-   <a href="https://doc.oroinc.com/cloud/maintenance/advanced-use/" target="_blank">configured using orocloud.yaml file</a>
-
 .. |Oro Inc. Support Desk| raw:: html
 
    <a href="https://magecore.atlassian.net/servicedesk/customer/portal/2" target="_blank">Oro Inc. Support Desk</a>
-
-.. |related documentation in the backend developer guide| raw:: html
-
-   <a href="https://doc.oroinc.com/backend/setup/dev-environment/environment-type-based-configuration/" target="_blank">related documentation in the backend developer guide</a>
-
-.. |related cloud documentation| raw:: html
-
-   <a href="https://doc.oroinc.com/cloud/maintenance/env-vars/" target="_blank">related cloud documentation</a>
 
 .. |GCP documentation| raw:: html
 
@@ -206,14 +178,6 @@ Links (Cloud)
 .. |https://github.com/FriendsOfPHP/security-advisories| raw:: html
 
    <a href="https://github.com/FriendsOfPHP/security-advisories" target="_blank">https://github.com/FriendsOfPHP/security-advisories</a>
-
-.. |Sanitized Backup| raw:: html
-
-   <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#sanitized-backup" target="_blank">Sanitized Backup</a>
-
-.. |Upgrade| raw:: html
-
-   <a href="https://doc.oroinc.com/cloud/maintenance/basic-use/#upgrade" target="_blank">upgrade</a>
 
 .. |Oro Identity Portal| raw:: html
 

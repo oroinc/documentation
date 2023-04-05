@@ -2,7 +2,7 @@ Configuration in Different Environments
 =======================================
 
 
-A typical OroCloud project has at least 2 environments: “prod” and “stage”. The OroCloud application can be |configured using orocloud.yaml file|.
+A typical OroCloud project has at least 2 environments: “prod” and “stage”. The OroCloud application can be :ref:`configured using orocloud.yaml file <orocloud-maintenance-advanced-use>`.
 
 Sometimes, a specific application configuration should be applied in one environment, but not in the other.
 For example, assuming HTTP Basic Auth should be enabled only for the application in the stage environment. Below you can find three possible approaches to cover this case.

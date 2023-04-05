@@ -1,3 +1,5 @@
+.. _setup-environment-variables:
+
 Managing Application Configuration with .env-app Files and Real Environment Variables in Oro
 ============================================================================================
 

@@ -42,7 +42,7 @@ Prepare a Database Dump
 
 3. OroCloud
 
-    Follow the |Sanitized Backup| documentation for more details.
+    Follow the :ref:`Sanitized Backup <orocloud-maintenance-use-sanitized-backup>` documentation for more details.
 
    .. code-block:: none
 
