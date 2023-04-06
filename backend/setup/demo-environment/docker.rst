@@ -8,12 +8,14 @@ Prerequisite
 
 |Install Docker| with |Docker Compose: Install|.
 
-.. note:: The application uses 80 and 8025 ports, so make sure that other services do not use them.
+.. note:: The application uses port 80, so make sure that other services do not use it.
 
 Run Application
 ---------------
 
 1. Download the repository with a docker-compose configuration file.
+
+   Check out the git repository
 
    .. code-block:: none
 
@@ -30,31 +32,40 @@ Run Application
 2. Run application containers
 
    The configuration is entirely predefined, and you can only change the name of the domain where the application will be located.
-   By default, it is `oro.demo`. If you need to change the domain, create an `.env` file with content `ORO_APP_DOMAIN=my-custom-domain.demo`.
+   By default, it is `oro.demo`. If you need to change the domain, create the `.env` file with content `ORO_APP_DOMAIN=my-custom-domain.demo`.
 
-   Run containers:
+   Run init service
 
    .. code-block:: none
 
-        docker-compose up -d
+       docker compose up restore
+
+   Alternatively, you can install the application from scratch. This will require more time and resources.
+
+   Run install service
+
+   .. code-block:: none
+
+      docker compose up install
+
+   You can run the application as soon as it is installed or initialized.
 
    The docker-compose will download the required images, create networks and run containers. Application `commerce-crm-application` is used by default.
    You can run other community applications, such as `crm-application`, `platform-application` or `commerce-crm-application-de`.
-   To select another application, set a different image in `.env` file, for example:
+   To select another application, set a different image in the `.env` file, for example:
 
    .. code-block:: none
 
       ORO_IMAGE=docker.io/oroinc/crm-application
 
-   Alternatively, you can set a variable before the docker-compose command without creating the `.env` file:
+
+   If you want to get the application in a different locale, add the contents of the file `.env-locale-de_DE` or `.env-locale-fr_FR` to `.env` and restart the restore service and application.
 
    .. code-block:: none
 
-      ORO_IMAGE=docker.io/oroinc/crm-application docker-compose up -d
+      cat .env-locale-de_DE >> .env
 
-   You can also select a different tag (version). For example, set the variable `ORO_APP_VERSION=5.0` in `.env` or the command line.
-
-   To track the logs from the php-fpm container, run `docker-compose logs -f php-fpm`. To get the list of containers, run: `docker-compose ps`.
+   To track the logs from the php-fpm-app container, run `docker compose logs -f php-fpm-app`. To get the list of containers, run `docker compose ps`.
 
 3. Add a record to file `/etc/hosts`
 
@@ -64,17 +75,19 @@ Run Application
 
 4. Open the application in a browser: ``http://oro.demo``.
 
+   To access the back-office, use `admin` as both login and password. To access the storefront, use the credentials of the predefined demo user roles. To log in as a buyer, use `BrandaJSanborn@example.org` both as your login and password. To log in as a manager, use `AmandaRCole@example.org` both as your login and password.
+
 Access the Mail Catcher
 -----------------------
 
-|Smtp service| is additionally launched so you can send emails from the application. It receives all mail and has a web interface that enables you to view it and perform the required actions. The web interface for the mail catcher is available on port `8025`. You can open it by URL ``http://localhost:8025``.
+|Smtp service| is additionally launched so you can send emails from the application. It receives all mail and has a web interface that enables you to view it and perform the required actions. The web interface for the mail catcher is available at the address http://oro.demo/mailcatcher.
 
 Stop the Application
 --------------------
 
-- To stop and remove all containers, use the following command: `docker-compose down`.
+- To stop and remove all containers, run `docker-compose down`.
 
-- To stop and remove all containers with the data saved in volumes, use the following command: `docker-compose down -v`.
+- To stop and remove all containers with the data saved in volumes, run `docker-compose down -v`.
 
 Troubleshooting
 ---------------
@@ -84,7 +97,7 @@ If you deployed the application before, pull up fresh images with `docker-compos
 About this Project
 ------------------
 
-This repository provides a Docker Compose configuration file (docker-compose.yaml) and demonstrates how you can run different applications and required services in containers. We provide images with the Community Edition of Oro applications in the public Docker Hub.
+This repository provides a Docker Compose configuration file (compose.yaml) and demonstrates how to run different applications and required services in containers. ro Inc. provides images with applications Community Edition in public Docker Hub.
 
 .. important:: This deployment is NOT intended for a production environment.
 
