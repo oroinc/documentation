@@ -51,6 +51,17 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
    :alt: Fuzzy search with 2 errors illustration
    :scale: 60%
 
+* :ref:`Search History <configuration--guide--commerce--configuration--search-history>` - If the feature is enabled, you can view a history of all searches performed by a customer user in the storefront under **Marketing > Search > Search History**. The grid includes information on all keywords entered by a user, the search result type (product autocomplete, product search, or empty), the number of products found (if applicable), the date and time of the search, the website where the search was performed, the localization used when the search was performed, and the name of the customer and customer user who performed the search (if applicable).
+
+  The option also enables a :ref:`Search Terms report <user-guide-search-terms-report>` that shows how frequently a specific search phrase was used, and whether the search query returned an empty result.
+
+  The feature can be configured on all levels: globally, :ref:`per organization <organization-commerce--configuration--search-history>`, :ref:`website <configuration--website-commerce--search--history>`, :ref:`customer group <user-guide--customer-groups--configuration--settings--search>`, and :ref:`customer <user-guide--customers--search--settings>`.
+
+
+.. image:: /user/img/marketing/search/search-items-grid.png
+   :alt: Search history grid in the back-office
+
+
 
 **Back-office-specific**
 
