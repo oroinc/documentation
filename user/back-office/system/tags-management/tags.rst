@@ -13,8 +13,8 @@ The following guide describes how you can configure :term:`tags <Tag>` in your O
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/RBY6dvZc55E" frameborder="0" allowfullscreen></iframe>
 
-Enable Tags
------------
+Enable Tags for Entity
+----------------------
 
 Prior to starting your work with tags, ensure that tagging is enabled for the required *entity*.
 
@@ -32,6 +32,7 @@ To enable tags for entities:
 4. Click **Save and Close**.
 
    .. note:: Please note that if you wish to disable tags for an entity, this will irreversibly erase all its existing tags.
+
 
 Create Tags
 -----------

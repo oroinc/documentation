@@ -111,6 +111,31 @@ Then you are able to manually render tags somewhere else in the entity view temp
     {{ UI.renderHtmlProperty('oro.tag.entity_plural_label'|trans, Tag.renderView(entity)) }}
     ...
 
+
+Tags Inline Editing
+-------------------
+
+Inline editing for tags in grid is enabled by default, but you can manage it manually in the datagrids.yml file.
+
+There are a few options how to disable inline editing for the tags in datagrid:
+
+1. Option ``inline_editing.enable`` should be equal to false.
+
+2. Option ``columns.tags.inline_editing.enable`` should be equal to false.
+
+Code Example:
+
+  .. code-block:: yaml
+
+      datagrids:
+          {grid-uid}:
+              # <grid configuration> goes here
+              columns:
+                  tags:
+                      inline_editing:
+                          enable: false
+
+
 .. toctree::
    :maxdepth: 1
 
