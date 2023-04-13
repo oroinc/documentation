@@ -30,6 +30,7 @@ The application setup guides provide the details on how to configure the environ
    demo-data
    launch
    Upgrade <upgrade-to-new-version>
+   Migrate from MySQL to PostgreSQL <mysql-to-postgresql>
    Deploy Changes <deploy-the-update>
    reinstall
 
