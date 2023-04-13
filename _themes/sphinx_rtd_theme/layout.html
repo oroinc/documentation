@@ -221,8 +221,7 @@
             {% endif %}
             <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
               {%- block document %}
-              <div itemprop="articleBody">
-                {% include "alert.html" %}
+              <div itemprop="articleBody">           
                   {% if layout_ns.documentation_types %}
                       {% for type in layout_ns.documentation_types.split(',') %}
                           {%- set type = type|trim -%}
