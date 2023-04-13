@@ -43,18 +43,22 @@ To configure the integration between Stripe and OroCommerce, follow the steps ou
    * **Short labels** - The payment method name/label that is shown in the order details in the OroCommerce back-office and storefront after the order is submitted. To translate the label into other languages, click on the icon next to the field.
    * **API Public Key** - An identifier that helps authenticate your account. It refers to **Publishable key** on the Stripe side. You must use separate keys for the test and production environments.
    * **API Secret Key** - A pre-shared key used to cipher payment information. It refers to **Secret key** on the Stripe side. You must use separate keys for the test and production environments.
-   * **Webhook Signing Secret** - A key that helps identify your webhook endpoints. Webhooks are used to notify the Oro application when an event happens in the Stripe account (e.g., capturing the payment).
+   * **Webhook Signing Secret** - A key that helps identify your webhook endpoints. Webhooks help synchronize actions and payment transactions between Oro and Stripe. They are used to notify the Oro application when an event happens in the Stripe account (e.g., capturing the payment).
 
      .. hint::
 
         To obtain the Signing secret:
 
-        1. Navigate to **Developers > Webhooks** in the Stripe dashboard and click **Add an endpoint**.
+        1. Navigate to **Developers > Webhooks** in the Stripe dashboard and click **Add an endpoint**. Endpoint is a unique URL of your Oro application that is created to receive and process data from Stripe in real-time. URL format should be: ``https://my_website_domain.com/stripe/handle-events``. You can use one endpoint to handle several different event types at once, or set up individual endpoints for specific events.
 
         .. image:: /user/img/system/integrations/stripe/creating-webhooks-steps.png
            :alt: 3 steps that instruct how to add a webhook endpoint
 
         2. Provide the endpoint URL and select the three events to listen to, **charge.refunded**, **payment_intent.canceled**, and **payment_intent.succeeded**. Keep in mind that Oro supports only these three events. Click **Add events**.
+
+        .. image:: /user/img/system/integrations/stripe/add-endpoint.png
+           :alt: Providing an endpoint and three events that Oro supports
+
         3. Click **Add endpoint** and copy the generated **Signing secret** to your Stripe integration creation field.
 
         .. image:: /user/img/system/integrations/stripe/signing-secret.png
