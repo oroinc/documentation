@@ -128,7 +128,10 @@ Learn how to provide your shipping origin address and shipping options.
 * :ref:`Shipping Origin <sys--conf--commerce--shipping--shipping-origin>`
 * :ref:`Shipping Options <sys--conf--commerce--shipping--shipping-options>`
 
+:ref:`Marketplace <configuration--guide--commerce--marketplace>`
+----------------------------------------------------------------
 
+* :ref:`General <configuration--commerce--marketplace--seller-global>`
 
 .. toctree::
    :titlesonly:
@@ -146,3 +149,4 @@ Learn how to provide your shipping origin address and shipping options.
    Search <search/index>
    Orders <orders/index>
    Shipping <shipping/index>
+   Marketplace <marketplace/index>

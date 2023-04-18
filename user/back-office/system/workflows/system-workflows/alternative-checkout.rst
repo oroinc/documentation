@@ -5,7 +5,7 @@
 Configure Alternative Checkout Workflow in the Back-Office
 ==========================================================
 
-.. note:: The alternative checkout workflow is available as a |demo extension| and should be installed separately.
+.. note:: The alternative checkout workflow is available as a |demo extension| and should be installed separately. Please be aware that it is not compatible with OroMarketplace.
 
 The Alternative Checkout workflow represents an **example** of the :ref:`checkout workflow <system--workflows--checkout-workflow>` customization. It is a :ref:`system workflow <user-guide--system--workflow-management-system-custom>` that defines the sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a user can go through when creating an order in the storefront.
 

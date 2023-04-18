@@ -1,6 +1,6 @@
 .. _concept-guide--inventory:
 
-:oro_documentation_types: OroCommerce
+:oro_documentation_types: OroCommerce, OroMarketplace
 
 Inventory and Warehouse Management Concept Guide
 ================================================

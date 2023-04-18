@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce
+:oro_documentation_types: OroCommerce, OroMarketplace
 
 .. _doc--products--before-you-begin:
 
