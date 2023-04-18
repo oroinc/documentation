@@ -1,6 +1,6 @@
-:oro_documentation_types: OroCRM, OroCommerce
+:oro_documentation_types: OroCRM, OroCommerce, OroMarketplace
 
-:title: OroCommerce and OroCRM Concept Guides
+:title: OroCommerce, OroCRM and OroMarketplace Concept Guides
 
 .. meta::
    :description: Key conceptual use cases and how-to guides
@@ -12,7 +12,7 @@ Concept Guides introduce you to the business logic behind comprehensive OroCRM a
 
 Complementary to the how-to approach of the Back-office section of the documentation, Concept Guides give you context and references to other how-to articles in the documentation.
 
-.. note:: When browsing documentation, be on the lookout for  |CommerceIcon|  and |CRMIcon|  application icons on the top right. They indicate whether described features and concepts are available in OroCRM, OroCommerce, or both applications.
+.. note:: When browsing documentation, be on the lookout for  |CommerceIcon|, |CRMIcon|, |MarketplaceIcon| and |Extension| icons on the top right. They indicate whether described features and concepts are available in OroCRM, OroCommerce, OroMarketplace, and whether they require extension installation.
 
 .. admonition:: Business Tip
 
@@ -23,6 +23,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
 
     <ul class="tag-cloud">
 
+      <li><a class="tag-important" href="marketplace/">OroMarketplace</a></li>
       <li><a class="" href="master-catalog/">Master Catalog Management</a></li>
       <li><a class="tag-very-important" href="content-management/web-catalog/">Web Catalog Management</a></li>
       <li><a class="" href="data-import/">Data Import</a></li>
@@ -54,6 +55,7 @@ Complementary to the how-to approach of the Back-office section of the documenta
    :titlesonly:
    :maxdepth: 1
 
+   OroMarketplace <marketplace/index>
    Master Catalog Management <master-catalog/index>
    Content Management <content-management/index>
    Data Import <data-import/index>

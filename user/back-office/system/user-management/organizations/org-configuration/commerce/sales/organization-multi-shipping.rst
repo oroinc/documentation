@@ -34,6 +34,9 @@ To configure multi shipping per organization:
      * *Group Line Items By* --- Select if you want to group line items per ID, category, brand, or parent product.
      * *Create Sub-Orders For Each Group* --- When enabled, in addition to the main order, the system will create respective sub-orders for each group of line items in the back-office. Storefront customers, however, will see only primary orders in their order history.
 
+    .. hint::
+        *Organization* option allows to split orders by seller represented as organizations in OroMarketplace. It is available only in the organization configuration settings of the global marketplace owner organization. See more in the :ref:`OroMarketplace Concept Guide <concept-guide-oro-marketplace>`.
+
 7. In the **Order History Options**, configure the following options:
 
      * *Show Sub-Orders In Order History* --- When enabled, customers can see only sub-orders in their order history. Primary orders will be hidden.

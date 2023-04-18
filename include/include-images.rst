@@ -558,6 +558,10 @@ Images
    :align: middle
    :alt: Available in OroCRM
 
+.. |MarketplaceIcon| image:: /user/img/doctypes/marketplace-icon-logo.png
+   :align: middle
+   :alt: Available in OroMarketplace
+
 .. |Extension| image:: /user/img/doctypes/extension-icon-logo.png
    :align: middle
    :alt: Extension is required
