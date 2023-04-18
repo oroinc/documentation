@@ -356,3 +356,4 @@ user/back-office/system/integrations/payment-integration/cybersource /user/back-
 user/back-office/customers/customer-groups/customer-group-customer-settings /user/back-office/customers/customer-groups/customer-group-configuration/commerce/product/customer-group-product-customer-settings
 user/back-office/customers/customers/customer-settings /user/back-office/customers/customers/customer-configuration/commerce/product/customer-product-settings
 backend/setup/dev-environment/environment-type-based-configuration /backend/setup/dev-environment/env-vars
+user/back-office/system/integrations/gtm-ga4 /user/back-office/system/integrations/gtm
