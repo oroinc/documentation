@@ -12,11 +12,11 @@ Every AMI (Amazon Machine Image) contains an installed Oro Application along wit
 .. csv-table::
    :widths: 10, 30
 
-   "**OS**","CentOS 7"
-   "**Web server**","Nginx v.1.12"
+   "**OS**","Oracle Linux 8"
+   "**Web server**","Nginx v.1.23"
    "**Database**","PostgreSQL 15.1"
    "**PHP**","PHP-FPM and PHP CLI >=8.2"
-   "**Other tools**","NodeJS v.16 or later, Git v.2.7, Composer v.2.0"
+   "**Other tools**","NodeJS v.18 or later, Git v.2.7, Composer v.2.14"
 
 .. note: This deployment configuration is suitable for development or testing environments and applications with relatively small data. For the description of the production environment for |oro_app_name| with large data, see the  `Scalable Oro Application setup using Amazon Web Services`_  article.
 
@@ -45,8 +45,6 @@ Installation Steps
    .. image:: /img/backend/setup/aws/aws_marketplace.png
 
 6. Select the required AMI from the list and click **Select** (e.g., OroCommerce Community Edition with Demo Data).
-
-   .. image:: /img/backend/setup/aws/oro_amis.png
 
    You are redirected to the selected AMI's description page with the application's information, a list of suitable EC2 instance types, and more.
 
@@ -113,7 +111,7 @@ To access the back-office of the application, use the URLs ``http://<PublicDNS>/
 Access with SSH
 ^^^^^^^^^^^^^^^
 
-To connect to the EC2 instance using SSH, use the key pair file that you have downloaded previously and the **centos** username.
+To connect to the EC2 instance using SSH, use the key pair file that you have downloaded previously and the **ec2-user** username.
 
 1. Change the directory to the one where the .pem key file is stored.
 
