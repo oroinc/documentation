@@ -104,7 +104,7 @@ To access your Oro application storefront, use the ``http://<PublicDNS>/`` or ``
 * *AmandaRCole@example.org* - a manager
 * *BrandaJSanborn@example.org* - a buyer
 
-To access the back-office of the application, use the URLs ``http://<PublicDNS>/admin`` or ``http://<PublicIP>/admin``. If you have deployed Oro VM with demo data, use **admin** as your login and password to access the back-office.
+To access the back-office of the application, use the URLs ``http://<PublicDNS>/admin`` or ``http://<PublicIP>/admin``. If you have deployed Oro VM with demo data, use admin as your login and password as Instance ID to access the back-office.
 
 .. note:: Optionally, you can set up a DNS service to put your domain name to the IP address, so your OroCommerce site will be accessible on your domain name URL.
 
