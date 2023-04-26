@@ -163,6 +163,16 @@ In our case it can be `new RouteData('frontend_blog_post_view', ['id' => $post->
 `ContentVariantTypeContentVariantTypeRegistry` is used to collect all content variant types.
 To render `Add Content Variant` dropdown button with all available content variants, `WebCatalogExtension` twig extension is used.
 
+Define form widget in template and list all needed fields for rendering. An example for `ProductPageContentVariantType` and its `ProductPageVariantType` form is
+
+.. code-block:: php
+
+
+    {% block oro_product_page_variant_widget %}
+      {{ form_row(form.productPageProduct) }}
+    {% endblock %}
+
+
 **4. Create Storefront API**
 
 If your content variant is represented by an ORM entity (like the blog post described in this example),
