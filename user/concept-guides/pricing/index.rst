@@ -1,6 +1,6 @@
 .. _user-guide--pricing:
 
-:oro_documentation_types: OroCommerce
+:oro_documentation_types: OroCommerce, OroMarketplace
 
 Price Management Concept Guide
 ==============================

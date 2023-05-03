@@ -83,7 +83,7 @@ Example:
     class MyConfigExtension extends AbstractConfigExtension
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function getConfigureCallbacks(): array
         {
@@ -95,7 +95,7 @@ Example:
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function getPreProcessCallbacks(): array
         {
@@ -108,7 +108,7 @@ Example:
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function getPostProcessCallbacks(): array
         {
@@ -143,7 +143,7 @@ An example of a simple configuration section:
     class MyConfiguration extends AbstractConfigurationSection
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function configure(NodeBuilder $node): void
         {
@@ -164,7 +164,7 @@ An example of a configuration section that other bundles can extend:
     class MyConfiguration extends AbstractConfigurationSection
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function configure(NodeBuilder $node): void
         {
@@ -192,9 +192,9 @@ An example of a configuration section loader:
     class MyConfigLoader extends AbstractConfigLoader
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
-        public function load(array $config)
+        public function load(array $config): mixed
         {
             $result = new MyConfigSection();
             foreach ($config as $key => $value) {
@@ -218,7 +218,7 @@ An example of a configuration extension:
     class MyConfigExtension extends AbstractConfigExtension
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function getEntityConfigurationSections(): array
         {
@@ -226,7 +226,7 @@ An example of a configuration extension:
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function getEntityConfigurationLoaders(): array
         {

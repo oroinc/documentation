@@ -24,6 +24,7 @@ To configure the product search settings per website:
 5. In the **Product Fulltext Search** section, configure the following options:
 
    * **Number of Products in Search Autocomplete** --- Maximum number of products shown in the storefront autocomplete dropdown.
+   * **Number of Categories in Search Autocomplete** --- Maximum number of categories shown in the storefront autocomplete dropdown.
    * **Allow Partial Product Search** --- When enabled, the customer can find a product in the global search and on quick order form using a substring inside a word. Enabling this option may have a performance impact on search behaviour.
 
 6. Click **Save Settings**.

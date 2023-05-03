@@ -34,7 +34,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | Web server configuration recommendations are well |
 |                   | described in |Symfony web server documentation|   |
 +-------------------+---------------------------------------------------+
-| *PHP*             | * |PHP| >=8.1                                     |
+| *PHP*             | * |PHP| >=8.2                                     |
 |                   | * PHP CLI, the same version as for the web server |
 +-------------------+---------------------------------------------------+
 | *PHP Settings*    | Few updates to default PHP configuration settings |
@@ -70,7 +70,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * mbstring                                        |
 |                   | * sodium                                          |
 |                   | * openssl                                         |
-|                   | * mysql                                           |
+|                   | * pgsql                                           |
 |                   | * pcre                                            |
 |                   | * simplexml                                       |
 |                   | * tokenizer                                       |
@@ -82,17 +82,15 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * ldap                                            |
 |                   | * mongodb (to use OroGridFSConfigBundle)          |
 +-------------------+---------------------------------------------------+
-| *Database*        | * |MySQL| 8.0                                     |
-|                   |                                                   |
-|                   | .. note:: The latest version of `mariaDB` may be  |
-|                   |    used at one's own risk. Oro applications are   |
-|                   |    not tested with `mariaDB`, and thus the correct|
-|                   |    operation cannot be guaranteed.                |
+| *Database*        | * |PostgreSQL| 15.1                               |
 +-------------------+---------------------------------------------------+
 | *Process Control* | * |Supervisor|  or alternative                    |
 +-------------------+---------------------------------------------------+
-| *Assets*          | * |Node.js| 16 used for JS assets                 |
-|                   |   minification and SCSS assets build.             |
+| *Assets*          | * |Node.js| >=18.14.0 <19                         |
+|                   | * |NPM| >=9.3.1 <10                               |
+|                   |                                                   |
+|                   | Used for JS assets minification and SCSS assets   |
+|                   | build.                                            |
 +-------------------+---------------------------------------------------+
 
 .. note::
@@ -107,11 +105,11 @@ Enterprise edition is built to support better scale and performance. It is compa
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
 +------------------+-----------------------------------------------------+
-| *Database*       | * |PostgreSQL| / |EnterpriseDB| 13.5                |
+| *Database*       | * |PostgreSQL| / |EnterpriseDB| 15.1                |
 +------------------+-----------------------------------------------------+
 | *Search Index*   | * |Elasticsearch| >=8.4.1, <9.0                     |
 +------------------+-----------------------------------------------------+
-| *Job Queue*      | * |RabbitMQ| 3.9.x                                  |
+| *Job Queue*      | * |RabbitMQ| 3.11.x                                 |
 +------------------+-----------------------------------------------------+
 
 .. _sys-requirements-postgre-config:
@@ -131,7 +129,6 @@ Optional recommendations
 
 * |Tidy PHP extension| should be installed to make sure that HTML is correctly converted into a text representation
 * |Redis| - could be used for more efficient application caching. Supported versions of Redis 6.2.
-* The performance of :ref:`MySQL can be optimized <mysql-optimization>` by adjusting the configuration
 * |PNGQuant| and |JPEGOptim| are used if it is necessary to optimize the image size in storage
 
 
@@ -168,4 +165,3 @@ Recommended and supported browsers are:
    :maxdepth: 1
 
    performance-optimization
-   database-optimization

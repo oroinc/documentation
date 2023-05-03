@@ -22,7 +22,7 @@ Once customer request for SSH connection fulfilled users receives an email with 
 Reset your password and add an SSH key using Oro Identity Portal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Open Oro Identity Portal and click **Forgot Password**.
+1. Open |Oro Identity Portal| and click **Forgot Password**.
 
    .. image:: /cloud/img/cloud/login_identity_portal.png
       :alt: Login page to the public identity management
@@ -77,3 +77,6 @@ Connect to the OroCloud Environment
 3. Use any SSH client of your choice to connect with your OroCloud environment IP or hostname. Your SSH username can be found in Oro Identity Portal; it is the same as the username for OpenVPN.
 
 .. finish_include
+
+.. include:: /include/include-links-cloud.rst
+   :start-after: begin

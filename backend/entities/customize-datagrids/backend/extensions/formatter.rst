@@ -175,3 +175,8 @@ To implement your own formatter:
 
 - Develop a class that implements ``PropertyInterface`` (there is also basic implementation in ``AbstractProperty``)
 - Register your formatter as a service tagged as ``{ name: oro_datagrid.extension.formatter.property, type: YOUR_TYPE }``
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

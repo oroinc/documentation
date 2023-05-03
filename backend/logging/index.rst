@@ -125,11 +125,11 @@ Using Logger
 
     You can use this approach when:
 
-        * A form was submitted but the expected action was stopped which led to the exception.
-        * A system is not able to save the record to the database because of a MySQL error (for example, when you use a non-unique key).
-        * A system fails to send a message to the queue, or the queue does not respond.
-        * A system fails to send an external request or a third-party API did not respond or responded with an unexpected message.
-        * Etc.
+      * A form was submitted but the expected action was stopped which led to the exception.
+      * A system is not able to save the record to the database because of a PostgreSQL error (for example, when you use a non-unique key).
+      * A system fails to send a message to the queue, or the queue does not respond.
+      * A system fails to send an external request or a third-party API did not respond or responded with an unexpected message.
+      * Etc.
 
 #. Preserve the context. Always place your logging calls next to the actions it logs, in the same method or class. Avoid logging the operation progress, input, or outcome in the external class that triggers operation execution.
 #. It is recommended to use debug, info, notice, warning, error, critical, and alert methods defined in LoggerInterface with a specified log level instead of the log() method.
@@ -305,11 +305,6 @@ Enable Logger Only on Dev Environment
 Usually it can be necessary for services that log with INFO and above levels and include logger, as the dependency will affect production performance.
 
 You should add the logger in the Decorator of the service and replace the original one with it in the container at CompilerPass based on the environment variable and logger availability. For example, check "Symfony\Component\Translation\LoggingTranslator" that replaces the original "Symfony\Component\Translation\Translator" in "Symfony\Bundle\FrameworkBundle\DependencyInjection\Compiler\LoggingTranslatorPass" based on the container parameter.
-
-Additional Information
-----------------------
-
-* |How to Do Application Logging Right|
 
 
 .. include:: /include/include-links-dev.rst

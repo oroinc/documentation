@@ -2,12 +2,13 @@
 
 namespace ACME\Bundle\WysiwygBundle\Entity;
 
-use ACME\Bundle\WysiwygBundle\Model\ExtendBlogPost;
 use Doctrine\ORM\Mapping as ORM;
 use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareInterface;
 use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareTrait;
 use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
 use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
+use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface;
+use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait;
 use Oro\Bundle\OrganizationBundle\Entity\OrganizationInterface;
 
 /**
@@ -34,9 +35,10 @@ use Oro\Bundle\OrganizationBundle\Entity\OrganizationInterface;
  *      }
  * )
  */
-class BlogPost extends ExtendBlogPost implements DatesAwareInterface
+class BlogPost implements DatesAwareInterface, ExtendEntityInterface
 {
     use DatesAwareTrait;
+    use ExtendEntityTrait;
 
     /**
      * @var null|int

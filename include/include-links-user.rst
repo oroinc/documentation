@@ -185,7 +185,7 @@ Links (User)
 
 .. |Symfony2 expression language| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/expression_language/syntax.html" target="_blank">Symfony2 expression language</a>
+   <a href="https://symfony.com/doc/5.4/components/expression_language/syntax.html" target="_blank">Symfony2 expression language</a>
 
 .. |how to create a new order from scratch| raw:: html
 
@@ -369,11 +369,11 @@ Links (User)
 
 .. |the Symfony Twig Extensions (URL)| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/twig_reference.html#url" target="_blank">the Symfony Twig Extensions (URL)</a>
+   <a href="https://symfony.com/doc/5.4/reference/twig_reference.html#url" target="_blank">the Symfony Twig Extensions (URL)</a>
 
 .. |the Symfony Twig Extensions (Path)| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/reference/twig_reference.html#path" target="_blank">the Symfony Twig Extensions (Path)</a>
+   <a href="https://symfony.com/doc/5.4/reference/twig_reference.html#path" target="_blank">the Symfony Twig Extensions (Path)</a>
 
 .. |default| raw:: html
 
@@ -587,14 +587,6 @@ Links (User)
 
    <a href="https://www.infinitepay.de/" target="_blank">https://www.infinitepay.de/</a>
 
-.. |Wirecard Demo Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:demo_mode" target="_blank">Wirecard Demo Mode</a>
-
-.. |Wirecard Test Mode| raw:: html
-
-   <a href="https://guides.wirecard.at/wcs:test_mode" target="_blank">Wirecard Test Mode</a>
-
 .. |https://www.apruve.com/| raw:: html
 
    <a href="https://www.apruve.com/" target="_blank">https://www.apruve.com/</a>
@@ -677,7 +669,7 @@ Links (User)
 
 .. |Symfony Expression Language| raw:: html
 
-   <a href="https://symfony.com/doc/4.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
+   <a href="https://symfony.com/doc/5.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
 
 .. |Resource Library Extension| raw:: html
 
@@ -817,7 +809,7 @@ Links (User)
 
 .. |the UPS website for more details| raw:: html
 
-   <a href="https://www.ups.com/us/en/help-center/packaging-and-supplies/weight-size.page" target="_blank">the UPS website for more details</a>
+   <a href="https://www.ups.com/us/en/shipping/order-supplies.page" target="_blank">the UPS website for more details</a>
 
 .. |the FedEx website for more details| raw:: html
 
@@ -855,7 +847,7 @@ Links (User)
 
 .. |Download the .json file (GA4)| raw:: html
 
-   <a href="http://academy.oroinc.com/wp-content/uploads/sites/21/2022/06/oroGa4Container.zip" target="_blank">Download the .json file</a>
+   <a href="https://academy.oroinc.com/wp-content/uploads/sites/21/2023/02/oroGa4Container-24-02-23.zip" target="_blank">Download the .json file</a>
 
 .. |Google Analytics 4 Event| raw:: html
 
@@ -904,3 +896,7 @@ Links (User)
 .. |purchaseGA4| raw:: html
 
    <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events#purchase" target="_blank">purchase</a>
+
+.. |Stripe Integration| raw:: html
+
+   <a href="https://packagist.oroinc.com/#oro/commerce-stripe" target="_blank">Stripe Integration</a>

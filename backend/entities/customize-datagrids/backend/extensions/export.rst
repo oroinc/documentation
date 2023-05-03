@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _customize-datagrids-extensions-export:
 
 Export Extension
@@ -48,6 +50,11 @@ The configuration can also influence performance by changing the value of the gr
                     csv:
                         label: oro.grid.export.csv
                         page_size: 500
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

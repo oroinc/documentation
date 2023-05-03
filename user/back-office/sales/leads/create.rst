@@ -19,9 +19,7 @@ To create a lead manually:
 
      - **New** - a newly created lead.
      - **Qualified** - a lead is recognized as valid as a result of the initial analysis (e.g., an interested person or organization behind the lead).
-     - **Disqualified** - a lead is recognized as invalid as a result of the initial analysis, e.g., no person or organization was found behind the lead).
-
-   * **Channel** --- Choose one of active :term:`channels <Channel>`, from which OroCRM will get information on this lead.
+     - **Disqualified** - a lead is recognized as invalid as a result of the initial analysis, e.g., no person or organization was found behind the lead). 
 
    The rest of the fields are optional.
 

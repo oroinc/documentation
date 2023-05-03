@@ -153,10 +153,9 @@ To enable this option, configure the target entity to identify all inheritance t
 
 The following is an example of the migration to enable the display of contact activity lists in the appropriate account:
 
-class InheritanceActivityTargets implements Migration, ActivityListExtensionAwareInterface
-
 .. code-block:: none
 
+    class InheritanceActivityTargets implements Migration, ActivityListExtensionAwareInterface
     {
         /** @var ActivityListExtension */
         protected $activityListExtension;

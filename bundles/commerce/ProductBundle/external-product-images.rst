@@ -13,69 +13,71 @@ Below you can find the example of how to manually switch to the externally store
 
 1. Create the migration that switches `attachment.is_stored_externally` entity field config to `true`:
 
-        .. code-block:: php
-            :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_0/EnableIsStoredExternallyForProductImage.php
+   .. code-block:: php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_0/EnableIsStoredExternallyForProductImage.php
 
-            namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
+       namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
 
-            use Doctrine\DBAL\Schema\Schema;
-            use Oro\Bundle\EntityConfigBundle\Migration\UpdateEntityConfigFieldValueQuery;
-            use Oro\Bundle\MigrationBundle\Migration\Migration;
-            use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-            use Oro\Bundle\ProductBundle\Entity\ProductImage;
+       use Doctrine\DBAL\Schema\Schema;
+       use Oro\Bundle\EntityConfigBundle\Migration\UpdateEntityConfigFieldValueQuery;
+       use Oro\Bundle\MigrationBundle\Migration\Migration;
+       use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+       use Oro\Bundle\ProductBundle\Entity\ProductImage;
 
-            class EnableIsStoredExternallyForProductImage implements Migration
-            {
-                /**
-                 * @inheritDoc
-                 */
-                public function up(Schema $schema, QueryBag $queries)
-                {
-                    $queries->addPostQuery(
-                        new UpdateEntityConfigFieldValueQuery(ProductImage::class, 'image', 'attachment', 'is_stored_externally', true)
-                    );
-                }
-            }
+       class EnableIsStoredExternallyForProductImage implements Migration
+       {
+           /**
+            * @inheritDoc
+            */
+           public function up(Schema $schema, QueryBag $queries)
+           {
+               $queries->addPostQuery(
+                   new UpdateEntityConfigFieldValueQuery(ProductImage::class, 'image', 'attachment', 'is_stored_externally', true)
+               );
+           }
+       }
+
+.. note:: This code works with the upgrade only. If you need it to work with installation, update these metadata with the data migration.
 
 2. Create the |form type extension| for the ``Oro\Bundle\ProductBundle\Form\Type\ProductImageType`` form type to toggle the `isExternalFile` form option:
 
-        .. code-block:: php
-            :caption: src/Acme/Bundle/DemoBundle/Form/Extension/ProductImageExtension.php
+   .. code-block:: php
+       :caption: src/Acme/Bundle/DemoBundle/Form/Extension/ProductImageExtension.php
 
-            namespace Acme\Bundle\DemoBundle\Form\Extension;
+       namespace Acme\Bundle\DemoBundle\Form\Extension;
 
-            use Oro\Bundle\AttachmentBundle\Form\Type\ImageType;
-            use Oro\Bundle\ProductBundle\Form\Type\ProductImageType;
-            use Symfony\Component\Form\AbstractTypeExtension;
-            use Symfony\Component\Form\FormBuilderInterface;
+       use Oro\Bundle\AttachmentBundle\Form\Type\ImageType;
+       use Oro\Bundle\ProductBundle\Form\Type\ProductImageType;
+       use Symfony\Component\Form\AbstractTypeExtension;
+       use Symfony\Component\Form\FormBuilderInterface;
 
-            class ProductImageExtension extends AbstractTypeExtension
-            {
-                /**
-                 * @inheritDoc
-                 */
-                public static function getExtendedTypes(): iterable
-                {
-                    return [ProductImageType::class];
-                }
+       class ProductImageExtension extends AbstractTypeExtension
+       {
+           /**
+            * @inheritDoc
+            */
+           public static function getExtendedTypes(): iterable
+           {
+               return [ProductImageType::class];
+           }
 
-                /**
-                 * @inheritDoc
-                 */
-                public function buildForm(FormBuilderInterface $builder, array $options): void
-                {
-                    $builder->add('image', ImageType::class, ['allowDelete' => false, 'isExternalFile' => true]);
-                }
-            }
+           /**
+            * @inheritDoc
+            */
+           public function buildForm(FormBuilderInterface $builder, array $options): void
+           {
+               $builder->add('image', ImageType::class, ['allowDelete' => false, 'isExternalFile' => true]);
+           }
+       }
 
-        .. code-block:: yaml
-            :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+   .. code-block:: yaml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
 
-            services:
-                acme.form.extension.product_image:
-                    class: Acme\Bundle\DemoBundle\Form\Extension\ProductImageExtension
-                    tags:
-                        - { name: form.type_extension }
+       services:
+           acme.form.extension.product_image:
+               class: Acme\Bundle\DemoBundle\Form\Extension\ProductImageExtension
+               tags:
+                   - { name: form.type_extension }
 
 .. note:: The product image field is system-owned, therefore you need to create a form extension as the product image field's options should be controlled explicitly by a developer. For the :ref:`custom extend fields <book-entities-extended-entities-add-fields>` added to a form automatically, form options are generated automatically so you do not have to create a form extension that toggles an option.
 

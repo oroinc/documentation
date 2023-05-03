@@ -220,6 +220,7 @@ After rendering of breadcrumbs block type, you should see menu labels separated 
 .. toctree::
    :hidden:
 
+   Menu Updates <menu-updates>
    Commands <commands>
 
 .. include:: /include/include-links-dev.rst

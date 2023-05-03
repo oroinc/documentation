@@ -3,30 +3,24 @@
 Introduction to Security in Oro Applications
 ============================================
 
-The :ref:`OroSecurityBundle <bundle-docs-platform-security-bundle>` sits on top of the Symfony security layer to reach protect your resources.
-This means that each user of your application is granted access to a particular subset of your
-company's resources. Coincidentally, they have to be prevented from accessing resources, access was
-not granted to them.
+The :ref:`OroSecurityBundle <bundle-docs-platform-security-bundle>` sits on top of the Symfony security layer to protect your resources.
+Each application user is granted access to a particular subset of your company's resources. Coincidentally, they have to be prevented from accessing resources when access was not granted to them.
 
 .. _backend-security-bundle-access-control-list:
 
 Access Control Lists
 ^^^^^^^^^^^^^^^^^^^^
 
-Access Control Lists are an essential part of the |Symfony Security Components|. They are leveraged
-by the OroSecurityBundle to fulfill the requirements of companies in the business context.
+Access Control Lists are an essential part of the |Symfony Security Components|. The OroSecurityBundle leverages them to fulfill the requirements of companies in the business context.
 
-.. hint:: You can find detailed information about Symfony ACL based security model in the Symfony documentation:
+.. hint:: You can find detailed information about Symfony ACL-based security model in the Symfony documentation:
 
-           * |https://symfony.com/doc/4.4/security/acl.html|
+           * |https://symfony.com/doc/5.4/security/acl.html|
 
 Access Levels
 ~~~~~~~~~~~~~
 
-Access can be granted to a user for a certain resource on several levels. The lowest level is
-the *User* level. Being on this level means that users can only access resources that have been
-assigned to them. At the other end of the hierarchy is the *Global* level. Users at this level have
-the permission to access all records within the whole system without exception. The security bundle
+Access can be granted to a user for a particular resource on several levels. The lowest level is the *User* level. Being on this level means that users can only access resources assigned to them. At the other end of the hierarchy is the *Global* level. Users at this level can access all records within the system without exception. The security bundle
 comes with the following five levels (ordered up from the bottom of the hierarchy):
 
 +-----------------+------------------+-----------------------------------------------------------+
@@ -56,12 +50,11 @@ comes with the following five levels (ordered up from the bottom of the hierarch
 |                 |                  |           equals organization.                            |
 +-----------------+------------------+-----------------------------------------------------------+
 
-Each record is associated with an owning organization. When a user logs into the system, they work in
-the scope of one of their organizations.
+Each record is associated with an owning organization. When a user logs into the system, they work in the scope of one of their organizations.
 
 .. note::
 
-    For all access levels, there is a class constant defined in the `Oro\\Bundle\\SecurityBundle\\Acl\\AccessLevel` class. Its value is shown in the *Constant* column.
+    For all access levels, a class constant is defined in the `Oro\\Bundle\\SecurityBundle\\Acl\\AccessLevel` class. Its value is shown in the *Constant* column.
 
     There are two special constants ``AccessLevel::UNKNOWN`` (unknown access level, should not be
     assigned to a user) and ``AccessLevel::NONE_LEVEL`` (globally deny access for the user).
@@ -99,7 +92,7 @@ do with the resource. Namely, the following permissions are supported for **enti
 
 .. seealso::
 
-    Read the official documentation for a first insight in the |usage of ACLs| examples.
+    Read the official documentation for a first insight into the |usage of ACLs| examples.
 
 The following permissions are supported for **fields**:
 
@@ -111,12 +104,11 @@ The following permissions are supported for **fields**:
 | ``EDIT``   | Whether or not a user is allowed to modify a field.                       |
 +------------+---------------------------------------------------------------------------+
 
-
 Ownership Type
 --------------
 
 Each ACL-protected entity must have an ownership type. Various entities can act as one, such as user business unit, organization.
-If the type of owner is not specified, but the entity is acl-protected, this type is called **None**.
+If the type of owner is not specified, but the entity is ACL-protected, this type is called **None**.
 The set of access levels available for permissions of this entity changes depending on the ownership type.
 
 The following table shows what access levels can be assigned depending on the entity's ownership type:
@@ -135,21 +127,19 @@ The following table shows what access levels can be assigned depending on the en
 
 Although ownership types uses the same concepts as an access level, their impact is different. For example:
 
-* The **None** ownership type gives the widest access to entity records. It means 'This record does not belong to any particular organization or business unit or user. Therefore, either all users can access it, or no one at all.'
-* The **None** access level completely restricts access to entity records. It says 'No one can perform this action on the entity'.
+* The **None** ownership type gives the broadest access to entity records. It means this record does not belong to any particular organization, business unit, or user. Therefore, all users can access it, or no one at all.'
+* The **None** access level completely restricts access to entity records, so no one can perform this action on the entity.
 
-Every record of a security protected entity with ownership type User, Business unit and Organization has an organization.
+Every record of a security-protected entity with ownership type User, Business Unit, and Organization has an organization.
 
-Keep in mind that as soon as the entity is created, its ownership type cannot be changed. Consequently, you cannot change the predefined ownership types of system entities (such as an account or a business unit).
+Remember that once the entity is created, you can no longer change its ownership type. Consequently, you cannot change the predefined ownership types of system entities (such as an account or a business unit).
 
 .. _backend-security-bundle-configure-entities:
 
 Configuring Permissions for Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To be able to protect access to your entities, you first have to configure which permissions
-can be granted for a user to them. Use the ``security`` scope in the ``defaultValues`` section of
-the ``@Config`` annotation:
+To be able to protect access to your entities, you first have to configure which permissions can be granted to a user to them. Use the ``security`` scope in the ``defaultValues`` section of the ``@Config`` annotation:
 
 .. code-block:: php
 
@@ -167,24 +157,20 @@ the ``@Config`` annotation:
      */
      class MyEntity
 
-.. note:: After changing ACL in the Config annotation, run the `oro:entity-config:update` command in console to apply changes.
+.. note:: After changing ACL in the Config annotation, run the `oro:entity-config:update` command in the console to apply changes.
 
 The **permissions** parameter is used to specify the access list for the entity. This parameter is optional.
-If it is not specified, or is "All", it is considered that the entity access to all available security permissions.
+If it is not specified, or is ``All``, it is considered that the entity access to all available security permissions.
 
-You can create your list of accesses. For example, string "VIEW;EDIT" will set viewing and editing permissions parameters for the entity.
+You can create your list of accesses. For example, string ``VIEW;EDIT`` will set viewing and editing permissions parameters for the entity.
 
 The **group_name** parameter is used to group entities by applications. It is used to split security into application scopes.
 
-The **category** parameter is used to categorise an entity. It is used to split entities by section on the role privileges edit page.
+The **category** parameter is used to categorize an entity. It is used to split entities by section on the role privileges edit page.
 
-By default (or when using the special ``ALL`` value for the ``permissions`` property as in the
-example above), any :ref:`available permission <permissions>` can be granted to a user on an
-entity. If you want to restrict the available permissions for an entity, you can list them
-separated explicitly. For example, you limit it to the ``VIEW`` and ``EDIT`` permissions:
+By default (or when using the special ``ALL`` value for the ``permissions`` property as in the example above), any :ref:`available permission <permissions>` can be granted to a user on an entity. If you want to restrict the available permissions for an entity, you can list them separated. For example, you limit it to the ``VIEW`` and ``EDIT`` permissions:
 
 .. code-block:: php-annotations
-
 
     /**
      * ...
@@ -197,17 +183,13 @@ separated explicitly. For example, you limit it to the ``VIEW`` and ``EDIT`` per
      */
 
 
-Once an entity is marked as ACL-protected, you need to specify an ownership type for it.
-It is done with the help of the ``ownership`` scope in the ``defaultValues`` section.
+Once an entity is marked as ACL-protected, you need to specify its ownership type. It is done with the help of the ``ownership`` scope in the ``defaultValues`` section.
 
-In this config, you should specify the ownership type that will be used for the entity, as well as
-the names of the columns in the database and fields that will be used to store the link to the owner
-of the record and the organization where this record was created.
+In this config, you should specify the ownership type that will be used for the entity, as well as the names of the columns in the database and fields that will be used to store the link to the owner of the record and the organization where this record was created.
 
 For example, the config will be the following for the USER owner type:
 
 .. code-block:: php-annotations
-
 
     /**
      * @Config(
@@ -226,7 +208,6 @@ For the business unit owner type:
 
 .. code-block:: php-annotations
 
-
     /**
      * @Config(
      *   defaultValues={
@@ -243,7 +224,6 @@ For the business unit owner type:
 For an Organization owner type, you can specify only the ``owner_field_name`` and ``owner_column_name``:
 
 .. code-block:: php-annotations
-
 
     /**
      * @Config(
@@ -263,22 +243,17 @@ For an Organization owner type, you can specify only the ``owner_field_name`` an
 Protecting Resources
 ^^^^^^^^^^^^^^^^^^^^
 
-After having configured which permissions a user can be granted to a particular entity, you have to
-make sure that the permissions are taken into account when checking if a user has access to a
-resource. Such check must be placed in the right places in the code.
+After configuring which permissions a user can be granted to a particular entity, you have to ensure that the permissions are considered when checking if a user has access to a resource. Such checks must be placed in the right places in the code.
 
 Restricting Access to Controller Methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let us assume that you have configured an entity to be protectable via ACLs. You have granted
-some of its objects to a set of users. Now you can control who can enter certain resources through
-the controller method. Restricting access can be done in two different ways:
+Suppose you have configured an entity to be protectable via ACLs. You have granted some of its objects to a set of users. Now you can control who can enter specific resources through the controller method. Restricting access can be done in two different ways:
 
-#. Use the ``@Acl`` annotation on a controller method, providing the entity class name and the
-    permission to check for:
+#. Use the ``@Acl`` annotation on a controller method, providing the entity class name and the permission to check for:
 
     .. code-block:: php-annotations
-        :caption: src/Acme/Bundle/DemoBundle/Controller/ProductController.php
+       :caption: src/Acme/Bundle/DemoBundle/Controller/ProductController.php
 
         namespace Acme\Bundle\DemoBundle\Controller;
 
@@ -301,14 +276,12 @@ the controller method. Restricting access can be done in two different ways:
             }
         }
 
-#. When you need to perform a particular check repeatedly, writing ``@Acl`` over and
-    over again becomes a tedious task. This becomes even a more serious issue when your requirements
-    change and you have to change a lot of ACLs.
+#. When you need to perform a particular check repeatedly, write ``@Acl`` repeatedly. This, however, is tedious, especially when your requirements change and you have to change a lot of ACLs.
 
-    The ACL configuration from the example above looks like this:
+   The ACL configuration from the example above looks like this:
 
-    .. code-block:: yaml
-        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
+   .. code-block:: yaml
+      :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
         acls:
             product_edit:
@@ -316,11 +289,10 @@ the controller method. Restricting access can be done in two different ways:
                 class: AcmeDemoBundle:Product
                 permission: EDIT
 
-    Annotation @AclAncestor enables you to reuse acl resources defined with the ACL annotation or described
-    in the acls.yml file. The name of the ACL resource is used as the parameter of this annotation:
+  Annotation @AclAncestor enables you to reuse ACL resources defined with the ACL annotation or described in the acls.yml file. The name of the ACL resource is used as the parameter of this annotation:
 
     .. code-block:: php-annotations
-        :caption: src/Acme/Bundle/DemoBundle/Controller/ProductController.php
+       :caption: src/Acme/Bundle/DemoBundle/Controller/ProductController.php
 
         namespace Acme\Bundle\DemoBundle\Controller;
 
@@ -338,12 +310,10 @@ the controller method. Restricting access can be done in two different ways:
             }
         }
 
-    Sometimes you want to protect a controller method coming from code that you do not control.
-    Therefore, you cannot add the ``@AclAncestor`` annotation to it. Use the ``bindings`` key in the
-    YAML configuration of your ACL to define which method(s) should be protected:
+  Sometimes you want to protect a controller method from code you do not control. Therefore, you cannot add the ``@AclAncestor`` annotation to it. Use the bindings key in the YAML configuration of your ACL to define which method(s) should be protected:
 
     .. code-block:: yaml
-        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
         acls:
             product_edit:
@@ -354,7 +324,7 @@ the controller method. Restricting access can be done in two different ways:
                     - { class: Acme\Bundle\DemoBundle\Controller\ProductController, method: editAction }
 
 
-    You can read detailed explanations for all available YAML configuration options :ref:`in the reference section <access-control-lists>`.
+  You can read detailed explanations for all available YAML configuration options :ref:`in the reference section <access-control-lists>`.
 
 **Using Param Converters**
 
@@ -383,12 +353,10 @@ You can protect a datasource with ACL by adding the acl_resource parameter under
 Protecting Custom DQL Queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When building custom DQL queries, you may want to reduce the result set being returned to
-the set of domain objects the user is granted access to. To achieve this, use the ACL helper
-provided by the OroSecurityBundle:
+When building custom DQL queries, reduce the result set being returned to the set of domain objects to which the user is granted access. To achieve this, use the ACL helper provided by the OroSecurityBundle:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Controller/DemoController.php
+   :caption: src/Acme/Bundle/DemoBundle/Controller/DemoController.php
 
     namespace Acme\Bundle\DemoBundle\Controller;
 
@@ -421,21 +389,17 @@ provided by the OroSecurityBundle:
         }
     }
 
-In this example, first, a query is built that selects all products from the database which are more
-expensive than ``19.99`` order by their price. Then, the query builder is passed to the ``apply()``
-method of the ``oro_security.acl_helper`` service. This service, an instance of the
-``Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper`` class, modifies the query only to the
-return entities the user has access to.
+In this example, a query is built that selects all products from the database that cost more than ``19.99``. Then, the query builder is passed to the ``apply()`` method of the ``oro_security.acl_helper`` service. This service, an instance of the ``Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper`` class modifies the query only to the return entities to which the user has access.
 
 Manual Access Checks
 ~~~~~~~~~~~~~~~~~~~~
 
-Sometimes it is not possible to do an ACL check in the controller using annotations due to additional conditions.
+Sometimes it is impossible to do an ACL check in the controller using annotations due to additional conditions.
 
 In this case, you can use the ``isGranted`` function:
 
 .. code-block:: php
-    :caption: src/Acme/Bundle/DemoBundle/Controller/DemoController.php
+   :caption: src/Acme/Bundle/DemoBundle/Controller/DemoController.php
 
     namespace Acme\Bundle\DemoBundle\Controller;
 
@@ -456,20 +420,19 @@ In this case, you can use the ``isGranted`` function:
         }
     }
 
-If you need to carry our an ACL check on an object that is not in the controller, use the ``isGranted`` method of the `security.authorization_checker` service.
+If you need to carry out an ACL check on an object not in the controller, use the ``isGranted`` method of the `security.authorization_checker` service.
 
-The `security.authorization_checker` service is a public service that is used to check whether an access to a resource is granted or denied. This service represents the |Authorization Checker|. The implementation of the Platform specific attributes and objects is in |AuthorizationChecker class|.
+The `security.authorization_checker` service is a public service used to check whether access to a resource is granted or denied. This service represents the |Authorization Checker|. The implementation of the Platform specific attributes and objects is in |AuthorizationChecker class|.
 
-The main entry point is `isGranted` method:
+The main entry point is the `isGranted` method:
 
 .. code-block:: php
 
-
    isGranted($attribute, $subject = null)
 
-**$attribute** can be a role name, permission name, an ACL annotation id, a string in format "permission;descriptor" (e.g., "VIEW;entity:Acme\DemoBundle\Entity\AcmeEntity" or "EXECUTE;action:acme_action") or some other identifiers depending on registered security voters.
+**$attribute** can be a role name, permission name, an ACL annotation id, a string in format ``permission;descriptor`` (e.g., ``VIEW;entity:Acme\DemoBundle\Entity\AcmeEntity`` or ``EXECUTE;action:acme_action``) or some other identifiers depending on registered security voters.
 
-**$object** can be an entity type descriptor (e.g., "entity:Acme/Bundle/DemoBundle/Entity/AcmeEntity" or  "action:some_action"), an entity object, instance of `ObjectIdentity`, `DomainObjectReference` or `DomainObjectWrapper`
+**$object** can be an entity type descriptor (e.g., ``entity:Acme/Bundle/DemoBundle/Entity/AcmeEntity`` or ``action:some_action``), an entity object, instance of `ObjectIdentity`, `DomainObjectReference` or `DomainObjectWrapper`
 
 **Examples**
 
@@ -508,23 +471,21 @@ For example, we are checking View permission to $myEntity object of MyEntity cla
 
     $this->authorizationChecker->isGranted('VIEW', $myEntity);
 
-the first ACL for `$myEntity` object is checked; if nothing is found, then it checks ACL for `MyEntity` class and if no records are found, finally checks the Default(root) permissions.
+The first ACL for `$myEntity` object is checked; if nothing is found, it checks the ACL for the `MyEntity` class. It checks the Default(root) permissions if no records are found.
 
-Also there are two additional authorization checkers that may be helpful is some cases:
+Two additional authorization checkers can also be helpful:
 
 * |ClassAuthorizationChecker|
 * |RequestAuthorizationChecker|
 
-Restricting Access to Non-Entity” Resources
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Restricting Access to Non-Entity Resources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes when you do not want to protect an entity but just want to allow or deny access to a
-certain part of your application. To achieve this, use the special ``action`` type for an ACL:
+Sometimes, you only want to allow or deny access to a specific part of your application without protecting an entity. To achieve this, use a particular ``action`` type for an ACL:
 
 .. configuration-block::
 
     .. code-block:: php-annotations
-
 
         // ...
 
@@ -550,14 +511,14 @@ certain part of your application. To achieve this, use the special ``action`` ty
 Manual Access Check on an Object Field
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Developer can check access to the given entity field by passing instance `FieldVote` class to the `isGranted` method of the |Authorization Checker|:
+The developer can check access to the given entity field by passing the instance `FieldVote` class to the `isGranted` method of the |Authorization Checker|:
 
 .. code-block:: php
 
     $entity = $repository->findOneBy('id' => 10);
 
     if (!$this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, '_field_name_'))) {
-        throw new AccessDeniedException('Access denided');
+        throw new AccessDeniedException('Access denied');
     } else {
         // access is granted
     }
@@ -565,9 +526,9 @@ Developer can check access to the given entity field by passing instance `FieldV
 Check ACL for Search Queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When collecting entities to search, information about the owner and the organization is added to the search index automatically.
+When collecting entities to search, information about the owner and the organization is automatically added to the search index.
 
-Every search query is ACL protected with Search ACL helper. This helper limits data with the current access levels for entities which are used in the query.
+Every search query is ACL protected with Search ACL helper. This helper limits data with the current access levels for entities used in the query.
 
 Organization Context
 ^^^^^^^^^^^^^^^^^^^^
@@ -577,17 +538,14 @@ they work in the scope of one of their organizations.
 
 In Enterprise editions, a user can be assigned to multiple organizations.
 
-During the login, if the security token supports organizations, then the current organization in the token is replaced
-with the preferred one. If a user logs into the system for the first time, the first available organization is used.
+During the login, if the security token supports organizations, then the current organization in the token is replaced with the preferred one. The first available organization is used if a user logs into the system for the first time.
 
 After the login, the user can switch their current organization.
 
-For the security token to ignore the preferable organization, for example an API token, add its class name
-to the `ignore_preferred_organization_tokens` parameter of the `OrganizationPro` bundle in the app.yml file
-of your bundle:
+For the security token to ignore the preferable organization, for example, an API token, add its class name to the  `ignore_preferred_organization_tokens` parameter of the `OrganizationPro` bundle in the app.yml file of your bundle:
 
 .. code-block:: yaml
-    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
 
     oro_organization_pro:
         ignore_preferred_organization_tokens:

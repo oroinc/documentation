@@ -22,14 +22,12 @@ Each email address can be connected to an entity object which is the owner of th
     ...
     use Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface;
 
-    class User extends ExtendUser implements
-        UserInterface,
-        \Serializable,
-        Taggable,
+    class User extends AbstractUser implements
         EmailOwnerInterface,
         EmailHolderInterface,
         FullNameInterface,
-        AdvancedApiUserInterface
+        AdvancedApiUserInterface,
+        ExtendEntityInterface
     {
         ...
     }

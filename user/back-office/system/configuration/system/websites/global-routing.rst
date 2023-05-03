@@ -13,7 +13,7 @@ Global routing configuration includes the following information:
 * Meaningful URL (e.g. `/product/view/4` vs `/500-watt-work-light`)
 
 .. note::
-    The website routing settings can be configured globally, per :ref:`organization <organization-config-website-routing>`, and per :ref:`website <sys--websites--sysconfig--websites--routing>`.
+    The website routing settings can be configured globally, per :ref:`organization <organization-config-website-routing>`, per :ref:`website <sys--websites--sysconfig--websites--routing>`, :ref:`customer group <user-guide--customer-groups--configuration--settings--routing>` and :ref:`customer <user-guide--customer--configuration--settings--routing>`.
 
 To change the default global routing settings:
 
@@ -47,6 +47,12 @@ To change the default global routing settings:
      .. image:: /user/img/system/config_system/visible_content_node.png
         :alt: The selected sub-menu nodes that will be visible in the storefront
 
+   * **Main Navigation Menu** - Select which :ref:`frontend menu <frontend-menus-overview>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
+
+     .. image:: /user/img/system/frontend_menu/main-navigation-menu.png
+        :scale: 35%
+        :alt: Illustration of how changing Main Navigation Menu affects the storefront
+
 4. In the **Direct URLs** section, configure the following settings:
 
    .. image:: /user/img/system/config_system/routing_direct_url.png
@@ -54,7 +60,7 @@ To change the default global routing settings:
       :align: center
       :alt: Global Direct URLs settings
 
-   * **Enable Direct URLs** - when enabled, the page URL is built using the page title (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
+   * **Enable Direct URLs** - when enabled, the page URL is built using the page slug (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
 
    * **Product URL Prefix** - the prefix that is appended to the product slug in the URL.
 
@@ -77,9 +83,9 @@ To change the default global routing settings:
 
      * When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
 
-     * When *Direct URL* is selected, the page URL is built using the page title (e.g. `/500-watt-work-light`).
+     * When *Direct URL* is selected, the page URL is built using the page slug (e.g. `/500-watt-work-light`).
 
-     .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
+     .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed. Switching from one setting to the other does not modify the data stored in the database, it only controls which data is used to as a canonical URL.
 
    * **Canonical URL Security Type** - this option defines which value should be used as a website base URL in the canonical link in the page meta keywords. Supported options: *Insecure* and *Secure*.
 

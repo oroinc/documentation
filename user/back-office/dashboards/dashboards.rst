@@ -9,6 +9,8 @@ Manage Dashboards in the Back-Office
 
 The dashboard is a default page you see after you log in. It is an adjustable view that may contain different information blocks (widgets), such as today’s calendar, recent calls, emails, quick launchpad, etc. You can have several dashboards that serve different purposes and switch between them.
 
+If you run the :ref:`OroMarketplace application <concept-guide-oro-marketplace>`, each seller organization additionally has a the ability to create Seller Dashboards that  demonstrate their organization's e-commerce statistics for orders revenue and count, product statistics, and top-selling items over time.
+
 Create a Dashboard
 ------------------
 
@@ -22,8 +24,11 @@ To create a dashboard:
       :alt: A form for creating a new dashboard
 
    * **Label** --- The name used to refer to the dashboard in the system.
-   * **Clone from** --- Choose an existing dashboard to be used as a base for a new one. If you want to create a dashboard from scratch, choose the *Blank Dashboard* option.
    * **Owner** --- Limits the list of users who can manage the dashboard to the users whose roles allow managing dashboards of the owner (e.g., the owner, members of the same business unit, head of the department, etc.)
+   * **Dashboard Type** --- Select whether the dashboard you are creating is of the :ref:`widget <user-guide--business-intelligence--widgets--explore>` (available with any Oro application) or :ref:`seller <concept-guide-oro-marketplace>` type (available for OroСommerce Enterprise).
+   * **Clone from** --- Choose an existing dashboard to be used as a base for a new one. If you want to create a dashboard from scratch, choose the *Blank Dashboard* option.  This field is available only for the *widget* dashboard type.
+
+If the system have more than one dashboard type, you can select the required type via the **Dashboard type** select box. The default type of dashboards is built from and called widgets.
 
 #. Click **Save and Close** on the top right.
 

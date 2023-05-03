@@ -21,7 +21,7 @@ To change the default inventory statuses:
       :class: with-border
       :alt: Inventory allowed statuses system configuration
 
-   The following table describes the options available on the page:
+3. Customize any of the options by clearing the **Use Default** box next to the option. Click on the inventory status to select/deselect it. Press Shift and click to select/deselect a range of items. Press Ctrl and click to select/deselect multiple items in no particular order.
 
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Name                                               | Description                                                                                                                      |
@@ -41,10 +41,6 @@ To change the default inventory statuses:
    | Management Console: Can Be Added To Shopping Lists | A sales person can add products with the selected inventory statuses to the Shopping Lists using OroCommerce back-office.        |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
-3. To customize the list of statuses for any of the aforementioned options:
-
-     a) Clear the **Use Default** box next to the option.
-     b) Click on the inventory status to select/deselect it. Press Shift and click to select/deselect a range of items. Press Ctrl and click to select/deselect multiple items in no particular order.
 
 4. Click **Save**.
 

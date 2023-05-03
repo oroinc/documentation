@@ -5,6 +5,8 @@
 Translate Product Attribute Labels and Options
 ==============================================
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 There are two ways to translate product attribute labels in OroCommerce:
 
 * By changing the source language to the target language for the label and then adding the label translation to the required attribute on its edit page.

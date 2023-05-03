@@ -10,6 +10,8 @@ Configure Global Checkout Settings
 
 .. hint:: This section is part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides a general understanding of single-page and multi-page checkout concepts.
 
+Checkout settings can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales-organization>` and :ref:`website <user-guide--system-configuration--commerce-sales-checkout-website>`.
+
 .. begin
 
 To configure checkout options globally:
@@ -28,14 +30,7 @@ To configure checkout options globally:
    a) **Allow Registration** ---  when the option is enabled, registration is allowed for customers on the checkout page.
    b) **Allow Checkout without Email Confirmation** --- when the option is enabled, customers proceed to the checkout immediately once registration details are provided. When this option is disabled, the checkout does not start until the user confirms their email address.
 
-   .. note:: By default, both options are *enabled*. However, they are only relevant when :ref:`guest checkout <user-guide--system-configuration--commerce-sales-checkout>` is enabled.
-
-   To disable the options:
-
-   a) Clear the **Use Default** checkbox.
-   b) Clear the **Allow Registration** and **Allow Checkout without Email Confirmation** checkboxes.
-
-#. In the **Guest Checkout** section, set whether guest checkout should be enabled or disabled.
+3. In the **Guest Checkout** section, set whether guest checkout should be enabled or disabled.
 
    Guest checkout allows unregistered customers proceed through the steps of the checkout similarly to registered customers, with the exception of needing to enter their data manually as there is no pre-filled information available in the checkout forms. They are also limited to 1 shopping list.
 
@@ -54,25 +49,17 @@ To configure checkout options globally:
                      "3. Use the quick order form.","3. View created quotes."
                      "4. Submit a request for quote.","4. Communicate with the manager through the website."
 
-   For complete guest checkout experience, it is recommended to enable guest shopping lists, guest quick order form and guest requests for quotes.
+   For complete guest checkout experience, it is recommended to enable guest shopping lists, guest quick order form, and guest requests for quotes.
 
-   .. hint:: Guest checkout can be configured on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales-organization>` and :ref:`website <user-guide--system-configuration--commerce-sales-checkout-website>`.
-
-   By default, guest checkout is disabled.
-
-   To enable it, clear *Use Default* and select the *Enable Guest Checkout* checkbox.
-
-   When the guest checkout is enabled, click **Save Settings** to display the additional **Guest Checkout Owner Settings** section.
-
-#. In the **Guest Checkout Owner Settings** section, select the default owner of the guest checkout. Depending on the roles and permissions of the owner, guest data (e.g. shopping lists) may or may not be viewed and managed by the users who are subordinated to the owner.
+4. In the **Guest Checkout Owner Settings** section, select the default owner of the guest checkout. Depending on the roles and permissions of the owner, guest data (e.g., shopping lists) may or may not be viewed and managed by the users who are subordinated to the owner.
 
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest checkout data, adjust permissions for the checkout entity in their roles accordingly.
 
-#. In the **Checkout Options** section, set the following option:
+5. In the **Checkout Options** section, set the following option:
 
    * **Maximum Line Items per Page** --- Set the number of line items to display on the checkout page. The provided value will be used as the implied maximum number of checkout line items to display at once. If the number of checkout line items exceeds this value, the "Show All Items" will no longer be available and this number will be shown as the maximum pager value.
 
-#. Click **Save Settings**.
+6. Click **Save Settings**.
 
 .. finish
 

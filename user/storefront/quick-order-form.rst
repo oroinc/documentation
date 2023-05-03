@@ -52,10 +52,6 @@ To create an order using a quick order form:
 
    c) To upload the file, click **Choose File**, navigate to the file location, select the file and click **Open**.
 
-      Import Validation will emerge to inform you whether products or their quantity qualify for the order and preview the line item and total price.
-
-      .. image:: /user/img/storefront/orders/VerifyOrder.png
-
    d) Click **Add to Form** to finalize import. Validated items will add to the quick order form.
 
 5. To complete the order, click **Create Order**.

@@ -54,17 +54,15 @@ OroCommerce works with the following payment methods:
 
   Ingenico ePayments' global payment platform extension for OroCommerce enables sellers to improve their payments experience by accepting online payments from customers in the OroCommerce storefront and manage all transactions in the OroCommerce back office.
 
-* :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
+..  :ref:`CyberSource <user-guide--payment--payment-providers-cybersource>`
 
-  CyberSource is a payment gateway solution that allows merchants to safely accept and effectively process payments.
+.. CyberSource is a payment gateway solution that allows merchants to safely accept and effectively process payments.
 
 .. hint:: The default OroCommerce application includes the following payment methods out-of-the-box: Check/Money Order, Payment Terms, and PayPal Payflow Gateway/PayPal Payment Pro. Check out |OroCommerce's Extensions Store| to download other payment extensions that you can pair with your OroCommerce applications.
 
 * :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`
 
-Stripe is an integrated suite of payment products that powers online payments and help companies detect and fight the fraud on the website.
-
-  .. important:: This feature is incomplete and is scheduled for release in version 5.1 LTS. See our :ref:`Release Process <doc--community--release>` page for more information on release dates and support cycle.
+Stripe is an integrated suite of payment products that powers online payments and help companies detect and fight the fraud on the website. Stripe also supports order splitting, enabling you to capture, cancel, or refund (full or partially)  payments for each sub-order separately.
 
 Payment Rules
 -------------

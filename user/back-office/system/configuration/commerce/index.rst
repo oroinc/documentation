@@ -80,6 +80,7 @@ Learn how to enable the quick order form, promotions, guest shopping lists, esta
 * :ref:`Request for Quote <configuration--guide--commerce--configuration--sales-rfq>`
 * :ref:`Checkout <user-guide--system-configuration--commerce-sales-checkout>`
 * :ref:`Order History (Open Orders) <configuration--guide--commerce--configuration--sales-order-history>`
+* :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping>`
 * :ref:`Contacts <sys--conf--commerce--sales--contacts>`
 * :ref:`Quotes <sys--conf--commerce--guest--enable--guest_quotes>`
 * :ref:`Shopping List <configuration-shopping-list>`
@@ -107,6 +108,8 @@ Learn how to define the merchant country.
 * :ref:`Saved Search <configuration--guide--commerce--configuration--saved-search>`
 * :ref:`Fuzzy Search <configuration--guide--commerce--configuration--fuzzy-search>`
 * :ref:`Search Synonyms <configuration--guide--commerce--search--synonyms>`
+* :ref:`Customer Recommendations <system-configuration--commerce--search--customer-recommendation>`
+* :ref:`Search Terms <configuration--guide--commerce--configuration--search-history>`
 
 :ref:`Orders <configuration--guide--commerce--configuration--order>`
 --------------------------------------------------------------------
@@ -125,7 +128,10 @@ Learn how to provide your shipping origin address and shipping options.
 * :ref:`Shipping Origin <sys--conf--commerce--shipping--shipping-origin>`
 * :ref:`Shipping Options <sys--conf--commerce--shipping--shipping-options>`
 
+:ref:`Marketplace <configuration--guide--commerce--marketplace>`
+----------------------------------------------------------------
 
+* :ref:`General <configuration--commerce--marketplace--seller-global>`
 
 .. toctree::
    :titlesonly:
@@ -143,3 +149,4 @@ Learn how to provide your shipping origin address and shipping options.
    Search <search/index>
    Orders <orders/index>
    Shipping <shipping/index>
+   Marketplace <marketplace/index>

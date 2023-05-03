@@ -6,7 +6,7 @@ WebSocket Connection Configuration
 To configure websockets for your Oro applications, perform the following tasks with Oro application configuration and environment:
 
 1. `Configure a Web Server`_ to ensure messages interaction between the WebSocket server and the clients.
-2. `Configure WebSocket-Related Application Parameters`_ to provide interaction URLs for clients.
+2. `Configure WebSocket-Related Environment Variables`_ to provide interaction URLs for clients.
 3. `Run the WebSocket Server`_ and make sure that it is always running.
 
 Configure a Web Server
@@ -80,73 +80,47 @@ In this configuration example, you should replace the following values:
 
 * **example.com** with your configured domain name.
 * **ssl_certificate_key** and **ssl_certificate** with the actual values of your active SSL certificate.
-* The **ws** value in the `location /ws` string with the value of the **frontend_path** option from your parameters.yml file.
-* **URL** and **port** in the `proxy_pass http://127.0.0.1:8080/` string with the actual values of the **backend_host** and **backend_port** parameters from your parameters.yml file.
+* The **ws** value in the `location /ws` string with the value of the **frontend_path** option from the ``ORO_WEBSOCKET_FRONTEND_DSN`` environment variable value.
+* **URL** and **port** in the `proxy_pass http://127.0.0.1:8080/` string with the actual values of the host and port defined in the ``ORO_WEBSOCKET_BACKEND_DSN`` environment variables.
 
-Configure WebSocket-Related Application Parameters
---------------------------------------------------
+Configure WebSocket-Related Environment Variables
+-------------------------------------------------
 
 Configure a Regular (WS) Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Set host, port and path (optional) for WebSocket server in the parameters.yml file:
+Set host, port and path (optional) for WebSocket server using environment variables or in the .env-app.local file:
 
 .. code-block:: yaml
 
-    websocket_bind_address:  0.0.0.0
-    websocket_bind_port:     8080
-    websocket_frontend_host: "*"
-    websocket_frontend_port: 8080
-    websocket_frontend_path: ""
-    websocket_backend_host:  "*"
-    websocket_backend_port:  8080
-    websocket_backend_path:  ""
-    websocket_backend_transport: "tcp"
-    websocket_backend_ssl_context_options: {}
+   ORO_WEBSOCKET_SERVER_DSN=//0.0.0.0:8080
+   ORO_WEBSOCKET_FRONTEND_DSN=//*:8080/ws
+   ORO_WEBSOCKET_BACKEND_DSN=tcp://127.0.0.1:8080
 
 Configure a Secure (SSL/WSS) Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Set WebSocket settings in the parameters.yml file: 
+Set WebSocket settings in the environment variables:
 
-.. code-block:: yaml
+.. code-block:: bash
 
-    websocket_bind_address:  0.0.0.0
-    websocket_bind_port:     8080
-    websocket_frontend_host: "*"
-    websocket_frontend_port: 443
-    websocket_frontend_path: "ws"
-    websocket_backend_host:  "*"
-    websocket_backend_port:  8080
-    websocket_backend_path:  ""
-    websocket_backend_transport: "tcp"
-    websocket_backend_ssl_context_options: {}
+   ORO_WEBSOCKET_SERVER_DSN=//0.0.0.0:8080
+   ORO_WEBSOCKET_FRONTEND_DSN=//*:443/ws
+   ORO_WEBSOCKET_BACKEND_DSN=tcp://127.0.0.1:8080
 
-If you want to make backend work under secure connection as well, change the corresponding parameters:
+If you want to make backend work under secure connection as well, change the corresponding DSN in the next way:
 
-.. code-block:: yaml
-    
-   websocket_backend_port: 443
-   websocket_backend_path: "ws"
-   websocket_backend_transport: "ssl"
+.. code-block:: bash
 
-If you use untrusted SSL certificate, configure the websocket_backend_ssl_context_options parameter with:
+   ORO_WEBSOCKET_BACKEND_DSN=ssl://*:443/ws
 
- .. code-block:: yaml
-     
-    websocket_backend_ssl_context_options:
-        verify_peer: false
-        verify_peer_name: false
+If you use untrusted SSL certificate, use the following DSN:
+
+ .. code-block:: bash
+
+   ORO_WEBSOCKET_BACKEND_DSN=ssl://*:443/ws?context_options[verify_peer]=false&context_options[verify_peer_name]=false
 
 .. warning:: Please keep in mind that having peer verification disabled is not recommended in production.
-
-Since WebSocket server is running as a service, there are three host:port pairs for configuration:
-
-* **websocket_bind_port** and **websocket_bind_address** specify the port and the address to which the WebSocket server connects on startup and waits for incoming requests. By default (0.0.0.0), it listens to all addresses on the machine.
-* **websocket_backend_port** and **websocket_backend_host**, **websocket_backend_path** specify the port and the address (websocket_backend_host plus websocket_backend_path URI) to which the application should connect (PHP). By default ("*"), it connects to address 127.0.0.1.
-* **websocket_frontend_port** and **websocket_frontend_host**, **websocket_backend_path** specify the port and the address (websocket_frontend_host plus websocket_backend_path URI) to which the browser should connect (JS). By default ("*"), it connects to the host specified in the browser.
-
-Instead of specifying all 3 sets of host:port parameters, it is possible to use the **websocket_host** and **websocket_port** fallback parameters, which will be used for any host or port that is not set explicitly.
 
 Run the WebSocket Server
 ------------------------

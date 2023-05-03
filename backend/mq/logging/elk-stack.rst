@@ -70,7 +70,7 @@ Using Filebeat
 --------------
 
 Filebeat helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files.
-Filebeat comes with internal modules (auditd, Apache, NGINX, System, MySQL, and more) that simplify the collection, parsing, and visualization of common log formats down to a single command.
+Filebeat comes with internal modules (auditd, Apache, NGINX, System, PostgreSQL, and more) that simplify the collection, parsing, and visualization of common log formats down to a single command.
 
 Filebeat configuration:
 

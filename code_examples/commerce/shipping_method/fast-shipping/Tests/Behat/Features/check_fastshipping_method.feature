@@ -1,4 +1,4 @@
-@container-incompatible
+@behat-test-env
 @fixture-OroPaymentTermBundle:PaymentTermIntegration.yml
 @fixture-ACMEFastShippingBundle:Checkout.yml
 Feature: Check FastShipping method

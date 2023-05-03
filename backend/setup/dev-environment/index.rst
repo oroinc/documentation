@@ -155,10 +155,11 @@ Please, follow the :ref:`How to Create a New Bundle <how-to-create-new-bundle>` 
    Enterprise Edition <enterprise-edition>
    Docker & Symfony Server <docker-and-symfony/index>
    Web Server Configuration <web-server-config>
-   Environment Types <environment-type-based-configuration>
-   parameters-yml
+   Configuration Parameters <parameters-yml>
+   Environment Variables <env-vars>
    Healthcheck and Data Monitoring <monitoring>
-   SetUp From Database Dump <setup-from-db-dump>
+   Setup From Database Dump <setup-from-db-dump>
+   Oro Devbox VM <orodevbox>
 
 
 .. include:: /include/include-links-dev.rst

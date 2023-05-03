@@ -58,7 +58,7 @@ To customize the following tax calculation settings that impact the way OroComme
 
    a) Configure how OroCommerce selects the core jurisdiction for which tax rules should be applied in a purchase order tax calculation. Tax jurisdiction may be defined by either shipping origin, billing address or shipping destination for your home state:
 
-     * For the origin-based jurisdiction, select **Shipping Origin** and define the default address in the Origin section below.
+     * For the origin-based jurisdiction, select **Origin** and define the default address in the Origin section below.
 
      * For the destination-based jurisdiction, select **Destination** and define the whether to use the shipping address or billing to as a reference for calculating the customers's local tax rate in the Destination field.
 

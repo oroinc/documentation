@@ -167,7 +167,7 @@ Data Filter (**filter**)
 Depending on the type of the filter, certain operators are allowed. For example, by default for integer filter type it
 is allowed to use eight operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, **\***, **!\***,
 for string filter type - only four: **=**, **!=**, **\***, **!\***.
-The operators **~**, **!~**, **^**, **!^**, **$**, **!$** are not allowed by default and should be enabled
+The operators **~**, **!~**, **^**, **!^**, **$**, **!$**, **empty** are not allowed by default and should be enabled
 by a developer who creates API resources.
 
 
@@ -255,6 +255,11 @@ by a developer who creates API resources.
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 | **!$**   | **not_ends_with**   | Not ends with         | %21%24      | | GET /api/users?filter[id]!$test HTTP/1.1                 |
 |          |                     | a text                |             | | GET /api/users?filter[id][not_ends_with]=test HTTP/1.1   |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+|          | **empty**           | Empty or is null,     |             | | GET /api/users?filter[id][empty]=yes HTTP/1.1            |
+|          |                     | e.g. an empty string  |             | | GET /api/users?filter[id][empty]=no HTTP/1.1             |
+|          |                     | or null, an empty     |             |                                                            |
+|          |                     | array or null         |             |                                                            |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 
 **Example of Using Operators to Filter Data**

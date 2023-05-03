@@ -151,7 +151,7 @@ Set up Services with DependencyInjection
 
 To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/ACMEFastShippingExtension.php with the following content:
 
-.. oro_integrity_check:: cf8a8b8654b7ec4b0b1ac1c3510f5b73db7f5ee5
+.. oro_integrity_check:: 90d8e529a201ea5ecd7e0ef281ce2f02872f8490
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/DependencyInjection/ACMEFastShippingExtension.php
        :language: php
@@ -217,7 +217,7 @@ Implement the Main Method
 
 To implement the main method, create the <bundle_root>/Method/FastShippingMethod.php class that implements two standard interfaces ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodInterface`` and ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodIconAwareInterface``:
 
-.. oro_integrity_check:: 6ee4e3d862013768e3f427be51e25dc96dd666c7
+.. oro_integrity_check:: da5d43b206697e5d8a13a77515374d15958c831f
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethod.php
        :language: php
@@ -258,7 +258,7 @@ This factory generates an individual configuration set for each instance of the 
 
 Create the <bundle_root>/Factory/FastShippingMethodFromChannelFactory.php class with the following content:
 
-.. oro_integrity_check:: bd8f0d53c1423ab9927f635ed24ef3ff7c9b8f56
+.. oro_integrity_check:: 9102dd20bd3b538481a413a070b4cd435dbdf3dd
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Factory/FastShippingMethodFromChannelFactory.php
        :language: php
@@ -276,27 +276,16 @@ To register the shipping method factory, append the following key-values to <bun
        :lines: 22-29
 
 
-Create a Shipping Method Provider
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For this, add the <bundle_root>/Method/FastShippingMethodProvider.php class with the following content:
-
-.. oro_integrity_check:: ba1dc2380ebab53a05b55540a2872514a85d8ddf
-
-   .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethodProvider.php
-       :language: php
-
-
-Add the Shipping Method Provider to the Services Container
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Register a Shipping Method Provider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Append the following lines to <bundle_root>/Resources/config/services.yml under the services section:
 
-.. oro_integrity_check:: c742c079dbc22a6564197fd1e750fc6ed2cfe824
+.. oro_integrity_check:: 15cfbb964501ef9f2f6d221089bd240f04727d19
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 30-38
+       :lines: 30-37
 
 
 Create a Shipping Method Type
@@ -306,7 +295,7 @@ Shipping method types define different specifics of the same shipping services. 
 
 To create a shipping method type, add the <bundle_root>/Method/FastShippingMethodType.php class with the following content:
 
-.. oro_integrity_check:: a49655845ecd626f4f6ffaffc6670c2ea58c26b7
+.. oro_integrity_check:: f15b08e0af6275397122c1127f58adf58aa9c77a
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethodType.php
        :language: php
@@ -356,7 +345,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 40-45
+       :lines: 39-44
 
 
 Define Translation for the Shipping Method Form Options
@@ -397,7 +386,7 @@ Append the following lines to <bundle_root>/Resources/config/services.yml under 
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Resources/config/services.yml
        :language: yaml
-       :lines: 1,3-5,47-71
+       :lines: 1,3-5,46-70
 
 
 Add Actions

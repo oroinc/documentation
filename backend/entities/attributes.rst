@@ -28,8 +28,10 @@ The following example illustrates enabling attributes for the *Product* entity:
      *  }
      * )
      */
-    class Product extends ExtendProduct implements AttributeFamilyAwareInterface
+    class Product implements AttributeFamilyAwareInterface
     {
+        // ...
+
         /**
          * @var AttributeFamily
          *
@@ -67,7 +69,7 @@ The following example illustrates enabling attributes for the *Product* entity:
             return $this->attributeFamily;
         }
 
-        ...
+        // ...
     }
 
 
@@ -93,6 +95,8 @@ You can add routes to the navigation tree to simplify access, like in the follow
 The 'oro_attribute_create' route is responsible for creating a new attribute. Attribute creation is split into two steps. In step 1, a user provides the attribute code used as a unique slug representation and attribute type (string, bigint, select, etc.) that defines the data that should be captured in the following step. In step 2, a user provides a label to display an attribute on the website (e.g., OroCommerce Web Store) and any other information that should be captured about the attribute. Oro application can store the attribute as a *serialized field* or as a *table column*. The type of storage is selected based on the attribute type (simple types vs. Select and Multi-Select), as well as the setting of the *Filterable* and *Sortable* options. The product attribute storage type is set to *table column* for the attribute with Select of Multi-Select data type and for an attribute of any type with Filterable or Sortable option enabled. This data type requires a reindex launched by the user when they click **Update schema** on the *All Product Attributes* page. This triggers the field to be physically created in the table.
 
 .. note:: Attributes created by the user are labeled as custom, while attributes created during migrations are labeled as a system. For system attributes, deleting is disabled.
+
+.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
 
 Attribute Families and Groups
 -----------------------------

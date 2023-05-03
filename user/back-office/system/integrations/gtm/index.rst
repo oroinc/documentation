@@ -373,7 +373,7 @@ The |view_item| tag signifies that a customer user has reviewed a product detail
 view_item_list
 """"""""""""""
 
-The |view_item_list| tag signifies that a customer user has looked over a list of products in a product block (top selling, featured, new arrivals, related, upsell).
+The |view_item_list| tag signifies that a customer user has looked over a list of products in a product block (top selling, featured, new arrivals, related, upsell, similar).
 
 **Tag Configuration**
 

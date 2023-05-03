@@ -7,6 +7,8 @@
 Configure Translations in the Back-Office
 =========================================
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 .. begin
 
 Translations are a collection of visual elements in the Oro application, like labels, information massages, notifications, alerts, workflow statuses, etc.

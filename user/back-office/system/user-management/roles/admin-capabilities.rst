@@ -36,7 +36,7 @@ In the Account Management section, the following capabilities are available:
 
 .. comment: Enables to change the existing payment term for the customer and its customer users.
 
-* **Login as Customer User** --- Enables a back-office user to access and operate the OroCommerce storefront as if they were logged in as a specific customer user.
+* **Login as Customer User** --- Enables a back-office user to access and operate the OroCommerce storefront as if they were logged in as a specific customer user. Keep in mind that this feature is available in the Enterprise edition.
 
   .. image:: /user/img/system/user_management/user-impersonation-button.png
      :alt: User impersonation button

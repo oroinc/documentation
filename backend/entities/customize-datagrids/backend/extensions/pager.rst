@@ -23,3 +23,8 @@ To activate this feature, use option "onePage":
                 pagination:
                     onePage: true
         ...
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

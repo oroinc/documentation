@@ -39,28 +39,15 @@ Test Environment Setup
 You need to configure the following parameters for the testing environment:
 
 1. Create a separate database for tests (e.g., add '_test' suffix):
-2. Set up host, port, and authentication parameters for the database, the mail server, and the web socket server in the parameters_test.yml file:
+2. Set up host, port, and authentication parameters for the database and the mail server in the .env-app.test.local file:
 
    For example:
 
-   .. code-block:: yaml
-      :caption: config/parameters_test.yml
+   .. code-block:: bash
+      :caption: .env-app.test.local
 
-       parameters:
-           database_host: 127.0.0.1
-           database_port: null
-           database_name: crm_test
-           database_user: root
-           database_password: null
-           mailer_transport: smtp
-           mailer_host: 127.0.0.1
-           mailer_port: null
-           mailer_encryption: null
-           mailer_user: null
-           mailer_password: null
-           session_handler: null
-           locale: en
-           secret: ThisTokenIsNotSoSecretChangeIt
+       ORO_DB_DSN=postgresql://root@127.0.0.1/crm_test
+       ORO_MAILER_DSN=smtp://127.0.0.1
 
 3. Install the application in the test environment:
 

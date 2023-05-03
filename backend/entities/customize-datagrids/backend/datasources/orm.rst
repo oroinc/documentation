@@ -162,5 +162,10 @@ Please keep in mind that ORM datasource uses the `Query Hint Resolver` service t
 
 .. hint:: See :ref:`Resolve ORM Query Hints <dev-entities-resolving-orm-query-hints>` for more information.
 
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

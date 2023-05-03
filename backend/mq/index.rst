@@ -37,12 +37,6 @@ For more information, see the following external resources:
 DBAL Transport
 --------------
 
-.. code-block:: yaml
-   :caption: config/parameters.yml
-
-        message_queue_transport: DBAL
-        message_queue_transport_config: ~
-
 :ref:`DBAL transport options <op-structure--mq--mq-bundle--dbal>`
 
 
@@ -124,39 +118,19 @@ It is recommended to use RabbitMQ, if possible.
 Options
 ~~~~~~~
 
-The config settings for the |default RabbitMQ Access Control settings| (a user named
+The application reads config settings (a user named
 guest with the default password of guest, granted full access to the /
-virtual host) are the following:
+virtual host) from the ``ORO_MQ_DSN`` environment variable. The format is as follow ``amqp://guest:guest@localhost:5672``.
+The default value for ``ORO_MQ_DSN`` environment variable is set in the config/config.yml file:
 
 .. code-block:: yaml
    :caption: config/config.yml
 
     oro_message_queue:
-      transport:
-        default: 'amqp'
-        amqp:
-            host: 'localhost'
-            port: '5672'
-            user: 'guest'
-            password: 'guest'
-            vhost: '/'
-
-We can also move the specified options to the ``parameters.yml``:
-
-.. code-block:: yaml
-   :caption: config/config.yml
-
-    oro_message_queue:
-        transport:
-            default: '%message_queue_transport%'
-            '%message_queue_transport%': '%message_queue_transport_config%'
         client: ~
-
-.. code-block:: yaml
-   :caption: config/parameters.yml
-
-        message_queue_transport: 'amqp'
-        message_queue_transport_config: { host: 'localhost', port: '5672', user: 'guest', password: 'guest', vhost: '/' }
+    parameters:
+        message_queue_transport_dsn: '%env(ORO_MQ_DSN)%'
+        env(ORO_MQ_DSN): 'dbal:'
 
 
 .. admonition:: Business Tip

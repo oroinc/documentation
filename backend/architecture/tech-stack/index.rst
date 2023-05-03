@@ -66,12 +66,11 @@ Supported web servers: |Apache| and |Nginx|
 Database and RDBMS
 ^^^^^^^^^^^^^^^^^^
 
-**Oro application** uses the **database** to store application data and uses the Doctrine database abstraction layer (DBAL) and object-relational mapper (ORM) to interact with the database. That enables out-of-the-box support of various databases enabled by Doctrine. On top of that, in the Oro application, Doctrine capabilities are extended with additional database functions in the |Oro Doctrine Extensions| library. Currently, the extended functions are supported for MySQL and PostgreSQL databases only.
+**Oro application** uses the **database** to store application data and uses the Doctrine database abstraction layer (DBAL) and object-relational mapper (ORM) to interact with the database. That enables out-of-the-box support of various databases enabled by Doctrine. On top of that, in the Oro application, Doctrine capabilities are extended with additional database functions in the |Oro Doctrine Extensions| library. Currently, the extended functions are supported for PostgreSQL database only.
 
 Supported RDBMs:
 
-* MySQL in CE and EE
-* PostgreSQL in EE only (for scalability)
+* PostgreSQL in CE and EE
 
 .. note:: For implementation details, see :ref:`Database System Component <op-structure--database>` topic for more information about the database component.
 

@@ -59,7 +59,7 @@ To set up a payment method integration with Apruve, perform the following steps:
 
 8. Copy the webhook URL to your clipboard and paste it into the **Notifications** section in the Apruve system. It enables Apruve to send you notifications regarding any activity performed via Apruve.
 
-    .. image:: /user/img/system/integrations/apruve/apruve_integration_3.1.png
+   .. image:: /user/img/system/integrations/apruve/apruve_integration_3.1.png
 
 Next, set up a payment rule that enables this payment method for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.
 

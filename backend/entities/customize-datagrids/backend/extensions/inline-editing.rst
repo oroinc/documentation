@@ -253,5 +253,10 @@ Supported Search API's for ``related-id-relation-editor-view``
 
 The list of supported search APIs is available in the :ref:`Search APIs section <bundle-docs-platform-form-bundle-search-apis>`.
 
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

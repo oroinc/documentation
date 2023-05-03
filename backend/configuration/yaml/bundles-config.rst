@@ -323,8 +323,8 @@ The default configuration for extension with alias "oro_asset":
 
     oro_asset:
 
-        # Permanently disable Babel
-        disable_babel:        true
+        # Permanently enable Babel, by default it is disabled
+        with_babel:           false
 
         # Path to NodeJs executable
         nodejs_path:          ~
@@ -366,7 +366,21 @@ The default configuration for extension with alias "oro_attachment":
         processors_allowed:   true
         png_quality:          100
         jpeg_quality:         85
-        webp_strategy:        if_supported
+
+        # Strategy for converting uploaded images to WebP format.
+        webp_strategy:        if_supported # One of "for_all"; "if_supported"; "disabled"
+
+        # The configuration of the attachment cleanup command.
+        cleanup:
+
+            # The number of attachment files that can be loaded from the filesystem at once.
+            collect_attachment_files_batch_size: 20000
+
+            # The number of attachment entities that can be loaded from the database at once to check whether an attachment file is linked to an attachment entity.
+            load_existing_attachments_batch_size: 500
+
+            # The number of attachment entities that can be loaded from the database at once.
+            load_attachments_batch_size: 10000
 
 oro_batch
 _________
@@ -994,7 +1008,7 @@ The default configuration for extension with alias "oro_oauth2_server":
             private_key:          '%kernel.project_dir%/var/oauth_private.key' # Example: /var/oauth/private.key
 
             # The string that is used to encrypt refresh token and authorization token payload. How to generate an encryption key: https://oauth2.thephpleague.com/installation/#string-password.
-            encryption_key:       '%secret%'
+            encryption_key:       '%kernel.secret%'
 
             # The configuration of CORS requests.
             cors:
@@ -1167,6 +1181,8 @@ The default configuration for extension with alias "oro_translation":
                     # The field name where the key is stored.
                     key_field_name:       ~
 
+.. _yaml-bundles-configuration-reset-password:
+
 oro_user
 ________
 
@@ -1176,6 +1192,7 @@ The default configuration for extension with alias "oro_user":
 
     oro_user:
         reset:
+            // Determine the reset password token ttl, sec
             ttl:                  86400
         privileges:
 
@@ -1211,4 +1228,3 @@ The default configuration for extension with alias "oro_website_search":
     oro_website_search:
         engine:               orm
         engine_parameters:    []
-

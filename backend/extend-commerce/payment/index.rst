@@ -98,7 +98,7 @@ Set up Services with DependencyInjection
 
 To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/CollectOnDeliveryExtension.php with the following content:
 
-.. oro_integrity_check:: 23b4a7074d71c77276cafda210dad234b18d1e5f
+.. oro_integrity_check:: 47fb4a3ecbd6c499fc126d070a8c9623e8553b9d
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/DependencyInjection/ACMECollectOnDeliveryExtension.php
       :language: php
@@ -509,8 +509,8 @@ Clear the application cache, open the user interface and try to submit an order.
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
-.. toctree::
+.. .. toctree::
    :maxdepth: 1
    :hidden:
 
-   CyberSource Integration <cybersource>
+..   CyberSource Integration <cybersource>

@@ -1,6 +1,6 @@
 .. _user-guide--consents:
 
-:oro_documentation_types: OroCommerce
+:oro_documentation_types: OroCommerce, OroMarketplace
 
 Consent Management Concept Guide
 ================================

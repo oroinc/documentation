@@ -11,7 +11,7 @@ Security
 Network Segmentation
 --------------------
 
-Resources of the OroCloud environment are isolated in the dedicated Google Cloud Platform project. The network for the production deployment is divided into the following two subnets:
+Resources of the OroCloud environment are isolated in the dedicated |Google Cloud Platform (GCP)| project. The network for the production deployment is divided into the following two subnets:
 
 * `Application subnet`_
 * `Maintenance DMZ subnet`_
@@ -71,7 +71,7 @@ See how to connect VPN in your operating system in the :ref:`Connect OroCloud VP
 DDoS Protection
 ---------------
 
-Google Cloud Platform provides a number of tools to prevent and defend against DDoS attacks.
+|Google Cloud Platform (GCP)| provides a number of tools to prevent and defend against DDoS attacks.
 See |GCP DDoS protection| for more details.
 
 

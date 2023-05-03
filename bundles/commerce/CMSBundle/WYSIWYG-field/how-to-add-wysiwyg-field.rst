@@ -72,7 +72,7 @@ To add a WYSIWYG field explicitly:
 .. code-block:: php
     :caption: src/Acme/WysiwygBundle/Entity/BlogPost.php
 
-    class BlogPost extends ExtendBlogPost implements DatesAwareInterface
+    class BlogPost implements DatesAwareInterface, ExtendEntityInterface
     {
         // ...
 

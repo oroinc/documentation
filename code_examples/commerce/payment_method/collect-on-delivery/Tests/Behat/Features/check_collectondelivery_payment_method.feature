@@ -1,4 +1,4 @@
-@container-incompatible
+@behat-test-env
 @fixture-OroFlatRateShippingBundle:FlatRateIntegration.yml
 @fixture-OroPaymentTermBundle:PaymentTermIntegration.yml
 @fixture-OroCheckoutBundle:Checkout.yml

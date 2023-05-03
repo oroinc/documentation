@@ -29,7 +29,7 @@ The example below illustrates creating a simple component, such as the one shown
 
 2. Install a react preset for Babel using the ``npm install @babel/preset-react --save-dev`` command.
 
-   .. important:: Since React uses JSX syntax, you must build with Babel. You can change the command parameters for building in ``package.json`` in the project. Use ``"watch": "webpack -w --progress"`` and ``"build": "webpack --mode=production"`` without ``--env skipBabel``.
+   .. important:: Since React uses JSX syntax, you must build with Babel. You can change the command parameters for building in ``package.json`` in the project. Use ``"watch": "npm run webpack -- -w --progress --env withBabel"`` and ``"build": "npm run webpack -- --mode=production --env withBabel"`` commands with additional ``withBabel`` option.
 
 3. Open your ``webpack.config.js`` and replace the existing code with the code below:
 

@@ -18,6 +18,21 @@ You can use OpenVPN to create a VPN tunnel to the OroCloud. First, |install the 
 
 Once the connection is established, you can access your OroCloud environment via SSH connection to the host you were provided. Use your personalized user details to log on to the server.
 
+Connect to the OroCloud Environment via SSH
+-------------------------------------------
+
+Configure password and SSH key using :ref:`SSH Access <public-identity-management-ssh>` and connect to VPN.
+
+There are multiple ways to connect using SSH:
+
+1. Use IP address and username provided by Oro Support Team.
+
+2. Get IP address from |Google Cloud Console > Compute Engine > VM instances|
+
+.. note:: Connection using SSH button (using external IP) is now allowed.
+
+3. Use |gcloud CLI| tool to list VMs `gcloud compute instances list` and connect `gcloud compute ssh ocom-yourproject-prod1-maint1 --internal-ip` to VMs.
+
 .. _sftp-access:
 
 Connect to the OroCloud Environment via SFTP
@@ -59,22 +74,13 @@ Manage Uploaded Data
 Once you uploaded data to you SFTP directory, you may need to move it to the destination location on your website.
 OroCloud maintenance agent supports the `media:upload` command for data transfer between your SFTP directory and your OroCommerce website. You can find a detailed description and usage examples :ref:`in the Media Upload <orocloud-maintenance-use-media-upload>` section of the OroCloud guide.
 
-Developers can allow the application to read / write directly from the SFTP directory using the environment variable defined in *composer.json*:
+Developers can allow the application to read / write directly from the SFTP directory using the environment variable defined in *parameters.yml(.dist)* or *config.yml*:
 
 .. code-block:: none
 
-
-    {
-        "extra": {
-            "incenteev-parameters": {
-                "env-map": {
-                    "sftp_root_path": "ORO_SFTP_ROOT_PATH"
-                }
-            }
-        }
-    }
-
-To refer this directory from the composer, your *parameters.yml.dist* file should include the same empty param `sftp_root_path: ~`. It will be transformed to the correct value during composer install in the cloud. As the result, you will receive a path in parameters.yml similar to `sftp_root_path: /path/to/sftp/dir/`.
+    parameters:
+        sftp_root_path: '%env(ORO_SFTP_ROOT_PATH)%'
+        env(ORO_SFTP_ROOT_PATH): null
 
 You can use it as any other parameter but remember to add a specific path to your user, i.e:
 

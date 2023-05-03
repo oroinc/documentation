@@ -190,6 +190,59 @@ The following table summarizes the difference between a master catalog and a web
 .. image:: /user/img/products/master_catalog/value_fallback.png
    :alt: Value Fallback illustration
 
+.. _concept-guide-web-catalog-change-storefront-menu:
+
+Changing Storefront's Product Menu
+----------------------------------
+
+Whether you use the master catalog or a web catalog to display your product collection on the website, you can further modify how your storefront menu looks by using the frontend menu.
+
+There are several :ref:`frontend menus <frontend-menus-overview>` that make up the navigation of the website storefront. The one that allows you to customize the main navigation menu in your storefront is called **commerce_main_menu**. It reflects the existing structure of your master catalog or :ref:`selected web catalog <user-guide--system--menu--menu-frontend>` and presents you with options to customize the name and position of its categories in the storefront without affecting the original master or web catalogs.
+
+.. image:: /user/img/concept-guides/menus/commerce_main_menu_sample.png
+   :alt: Illustration of the commerce_main_menu in the storefront
+
+.. hint:: Although **commerce_main_menu** is the default main navigation menu, it can be :ref:`changed in the system configuration <user-guide--marketing--web-catalog--enable-globally>`.
+
+Commerce_main_menu is located under **System > Frontend Menus**.
+
+.. image:: /user/img/system/frontend_menu/commerce-main-menu.png
+   :alt: Location of the menu associated with the main product menu in the storefront
+
+Here, categories in the tree to your left constitute the main menu your customers see on the website.
+
+When no :ref:`web catalog is connected <sys--config--sysconfig--websites--routing>`, **commerce_main_menu** is populated with the structure of the master catalog, and the target type of the system items is set to Category. When you connect a web catalog and define the navigation root, system menu items in the menu is set to Content Node.
+
+.. image:: /user/img/system/frontend_menu/master-vs-webcatalog-frontend-menu.png
+   :alt: The difference between the way commerce_main_menu looks when either the master or web catalog is connected
+
+You can modify *system* items (which are reflection of the items from web/master catalog), or :ref:`add new custom items altogether <user-guide--system--menu--menu-frontend--add-item>`. After you add a new item to a particular parent category, you can drag and drop it outside its parent up or down the tree.
+
+You can also add promo images to the menu and add links to them. In the screenshot below, the image is created as a new menu item with target type URI and placed 2 levels deep in the tree.
+
+.. image:: /user/img/system/frontend_menu/promo-image.png
+   :alt: Promo image at the bottom of the mega menu
+
+If you place such an image higher or lower than level 2, it will be displayed as a menu item, which means that you will only see the title of the menu item but not the image. This is the default behavior, and :ref:`customization is required <bundle-docs-commerce-commerce-menu-bundle-menu-templates>` if it needs changing for your business needs.
+
+.. image:: /user/img/system/frontend_menu/promo-image-no-preview.png
+   :alt: Promo image as a link without preview
+
+Synchronization with Original Web Catalog
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The tree displayed on the left-hand side of the main menu represents the structure of the navigation root of the content node from your selected web catalog (or the categories of the master catalog if a web catalog is not connected). The information copied from the web catalog is considered system information and can be modified only partially. For example, you can change the category title, but the target type, content node, and web catalog options will be disabled from editing. If you are :ref:`creating a new menu item <user-guide--system--menu--menu-frontend--add-item>` or updating an item you created previously, you can update any information without exception.
+
+Every item in the tree is synchronized with the web catalog until you manually update the item in the commerce_main_menu, in which case your changes have priority. The system will not overwrite them if the original menu item is updated in the web catalog.
+
+In the example below, we have changed the title of category New Arrivals to New In via commerce_main_menu. As you can see in the screenshot below, the category's name in the original web catalog is unchanged, and the storefront uses the title from the frontend menu.
+
+.. image:: /user/img/system/frontend_menu/sync-illustration.png
+   :alt: Illustration of the storefront menu when one of the titles is updated in commerce_main_menu
+
+Like with the change in the title, you can change the order of the menu items by dragging and dropping them under the required parent item without affecting the original web catalog. When you change the order of the items, your changes will have priority over any potential future changes in the web catalog order.
+
+
 Use Cases
 ---------
 
@@ -214,6 +267,7 @@ Keeping the structure of the master catalog in Products helps adhere to a unifie
 * :ref:`Manage Product Visibility <products--product-visibility>`
 * :ref:`Web Catalogs User Guide <user-guide--web-catalog>`
 * :ref:`Build a Custom Web Catalog From Scratch <user-guide--marketing--web-catalog--sample>`
+* :ref:`Add new menu items via Storefront Menus <user-guide--system--menu--menu-frontend--add-item>`
 * :ref:`Use Web Catalog Nodes as Root Nodes <user-guide--web-catalog-navigation-tool>`
 
 **Further Practice**

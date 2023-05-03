@@ -12,5 +12,6 @@ Configure Sales Settings per Website
    Contacts <website-sales-info>
    Checkout <website-guest-checkout>
    Orders History <website-open-orders>
+   Multi Shipping Options <website-multi-shipping>
    Quotes <website-quotes>
 

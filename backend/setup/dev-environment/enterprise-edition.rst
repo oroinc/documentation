@@ -24,7 +24,7 @@ Enable Required Package Repositories
 To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.) required for OroCommerce Enterprise Edition application operation, use the following repositories:
 
 * Extra Packages for Enterprise Linux (EPEL) repository by |Red Hat|
-* Remi's PHP 8.1 RPM repository for Enterprise Linux 8
+* Remi's PHP 8.2 RPM repository for Enterprise Linux 8
 * Oro Public repository
 * Elasticsearch repository
 * Rabbitmq and rabbitmq-erlang repositories
@@ -34,7 +34,7 @@ Add the EPEL and remi repositories by running:
 .. code-block:: bash
 
    dnf -y install dnf-plugin-config-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:16 php:remi-8.1
+   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:16 php:remi-8.2
    dnf -y upgrade
 
 Add Oro public repository:
@@ -123,8 +123,7 @@ For the production environment, it is strongly recommended to keep *SELinux* ena
 
 .. warning:: The actual SELinux configuration depends on the real production server environment and should be configured by an experienced system administrator.
 
-In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode.
-However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
+In this guide, to simplify installation in the local and development environment, we are loosening the SELinux mode by setting the permissive option for the **setenforce** mode. However, your environment configuration may differ. If that is the case, please adjust the commands that will follow in the next sections to match your configuration.
 
 .. code-block:: bash
 
@@ -139,77 +138,18 @@ For security reasons, we recommend performing all Oro application-related proces
 * **Administrative user** (for example, oroadminuser) --- A user should be able to perform administration operations like application installation, update, etc.
 * **Application user** (for example, nginx) ---  A user should be able to perform runtime operations that require no changes in the application source code files.
 
-In this guide, to simplify installation in the local and development environment, we are loosening
-this requirement and use the superuser permissions to perform Oro application administrative tasks.
-However, for your staging or production environment, please adjust the commands that will follow in the next
-sections to run environment management commands as well as application install and update via a dedicated admin user.
+In this guide, to simplify installation in the local and development environment, we are loosening this requirement and use the superuser permissions to perform Oro application administrative tasks. However, for your staging or production environment, please adjust the commands that will follow in the next sections to run environment management commands as well as application install and update via a dedicated admin user.
 
 Commands for running the web server, php-fpm process, cron commands, background processes, etc., are executed via the dedicated *application user* (*nginx*). Reuse them without modification, if you keep the same username. Otherwise, adjust them accordingly.
 
-Prepare PostgreSQL Database
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Initialize a PostgreSQL Database Cluster
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-   postgresql-setup --initdb
-
-Enable Password Protected PostgreSQL Authentication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-By default, PostgreSQL is configured to use `ident` authentication.
-
-To use the password-based authentication instead, replace the `ident` with the `md5` in the `pg_hba.conf` file.
-
-Open the file */var/lib/pgsql/data/pg_hba.conf* and change the following strings:
-
-.. code-block:: none
-
-   host    all             all             127.0.0.1/32            ident
-   host    all             all             ::1/128                 ident
-
-to match these ones:
-
-.. code-block:: none
-
-   host    all             all             127.0.0.1/32            md5
-   host    all             all             ::1/128                 md5
-
-Change the Password for the *postgres* User
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To set the password for the *postgres* user to the new secure one, run the following commands:
-
-.. code-block:: bash
-
-   systemctl start postgresql
-   su postgres
-   psql
-   \password
-
-.. note:: You will be prompted to enter the new password.
-
-Create a Database for your Oro Application
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To create the `oro` database that will be used by the Oro application, run the following commands:
-
-.. code-block:: bash
-
-   CREATE DATABASE oro;
-   \c oro
-   CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-   \q
+.. include:: ./prepare-postgresql.rst
 
 Configure Web Server
 ^^^^^^^^^^^^^^^^^^^^
 
 For the production mode, it is strongly recommend to use the HTTPS protocol for the Oro application public websites, and reserve the HTTP mode for development and testing purposes only.
 
-The samples of Nginx configuration for HTTPS and HTTP mode are provided below. Update the
-`/etc/nginx/conf.d/default.conf` file with the content that matches the type of your environment.
+The samples of Nginx configuration for HTTPS and HTTP mode are provided below. Update the `/etc/nginx/conf.d/default.conf` file with the content that matches the type of your environment.
 
 **Sample nginx Configuration for HTTP Websites (Use in Development and Staging Environment Only)**
 
@@ -325,7 +265,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
             fastcgi_param  HTTPS            on;
         }
 
-        # Websockets connection path (configured in config/parameters.yml)
+        # Websockets connection path (configured in .env-app.local)
         location /ws {
             reset_timedout_connection on;
 
@@ -361,8 +301,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
 * Replace **<your-domain-name>** with the configured domain name that would be used for the Oro application.
 * Change *ssl_certificate_key* and*ssl_certificate* with the actual values of your active SSL certificate.
 
-Optionally, you can enable and configure |Apache PageSpeed module| for Nginx to improve
-web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.
+Optionally, you can enable and configure |Apache PageSpeed module| for Nginx to improve web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.
 
 .. note:: If you choose the Apache web server instead of Nginx one, you can find an example of the web server configuration in the :ref:`Web Server Configuration <installation--web-server-configuration>` article.
 
@@ -384,8 +323,7 @@ Configure PHP
 
 To configure PHP, perform the following changes in the configuration files:
 
-* In the `www.conf` file (*/etc/php-fpm.d/www.conf*) --- Change the user and the group
-  for PHP-FPM to *nginx* and set recommended values for other parameters.
+* In the `www.conf` file (*/etc/php-fpm.d/www.conf*) --- Change the user and the group for PHP-FPM to *nginx* and set recommended values for other parameters.
 
   .. code-block:: none
 
@@ -421,7 +359,7 @@ Enable Required RabbitMQ Plugins
 .. code-block:: none
 
    pushd /usr/lib/rabbitmq/lib/rabbitmq_server-*/plugins/
-   wget -q https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/3.9.0/rabbitmq_delayed_message_exchange-3.9.0.ez
+   wget -q https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/3.11.1/rabbitmq_delayed_message_exchange-3.11.1.ez
    popd
    rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
    rabbitmq-plugins enable --offline rabbitmq_management
@@ -490,8 +428,7 @@ This path can be either:
 
 This path can be reconfigured with |Gaufrette| adapter configuration.
 
-For example, to change the path location, add a new configuration of the **import_files** |Gaufrette| adapter
-in the `Resources/config/oro/app.yml` file of your bundle:
+For example, to change the path location, add a new configuration of the **import_files** |Gaufrette| adapter in the `Resources/config/oro/app.yml` file of your bundle:
 
 .. code-block:: yaml
 
@@ -501,8 +438,7 @@ in the `Resources/config/oro/app.yml` file of your bundle:
                 local:
                     directory: '/new/path/to/import_files'
 
-Use Gaufrette filesystem abstraction layer as storage, this configuration can be changed to use any supported filesystem
-adapter supported by |Gaufrette| library.
+Use Gaufrette filesystem abstraction layer as storage, this configuration can be changed to use any supported filesystem adapter supported by |Gaufrette| library.
 
 For example, the configuration to use the :ref:`GridFS <bundle-docs-platform-gridfs-config-bundle>` storage can be the following:
 

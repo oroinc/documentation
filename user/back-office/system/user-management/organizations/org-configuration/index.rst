@@ -7,7 +7,7 @@ Configure Organization System Settings
 
 .. important:: Multi-organization management is only available in the Enterprise edition.
 
-You can configure available system settings on four configuration levels: system, organization, website and user.
+You can configure available system settings on four configuration levels: system (global), organization, website and user.
 
 On organization level, there are a number of options that you can configure specifically for the organization, but which will not affect system-wide configuration or configuration for a particular user.
 
@@ -69,6 +69,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Checkout <user-guide--system-configuration--commerce-sales-organization>`
     * :ref:`Request for Quote <user-guide--system-configuration--commerce-sales--rfq--organization>`
     * :ref:`Orders History <organization-commerce--configuration--sales-order-history>`
+    * :ref:`Multi Shipping Options <user-guide--system-configuration--commerce-sales-multi-shipping-org>`
     * :ref:`Quotes <sys--organization-quotes>`
     * :ref:`Promotions <sys--conf--commerce--sales--promotions-organization>`
 
@@ -81,6 +82,7 @@ The following categories of settings are available for system configuration at o
   * Search
 
     * :ref:`Saved Search <organization-commerce--configuration--saved-search>`
+    * :ref:`Search Terms <organization-commerce--configuration--search-history>`
 
   * Taxation
 
@@ -98,6 +100,10 @@ The following categories of settings are available for system configuration at o
     * :ref:`Product Options <sys--conf--commerce--inventory--product-options--organization>`
     * :ref:`Limitations <inventory-limitations-org>`
 
+  * Marketplace
+
+    * :ref:`General Marketplace Settings <configuration--commerce--marketplace--seller-organization>`
+
 * **CRM**
 
   * Sales Pipeline
@@ -105,7 +111,6 @@ The following categories of settings are available for system configuration at o
     * :ref:`Sales Territories <sys--configuration--crm--sales-pipeline--sales-territories-organization>`
     * :ref:`Lead <leads-organization>`
     * :ref:`Opportunities <opportunities-organization>`
-    * Sales Process (Deprecated)
 
 **Related Topics**
 

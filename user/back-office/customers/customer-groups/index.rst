@@ -9,14 +9,17 @@ Manage Customer Groups in the Back-Office
 
 In the Customer Group section, you can organize customers into groups and share the price lists, payment and tax-related settings between several customers.
 
-.. .. image:: /user/img/customers/customer_groups/CustomerGroups.png
-  .. :alt: The list of all customer groups
+On a customer group details page, you can:
 
-Hover over the |IcMore| **More Options** menu to the right of the necessary customer group to perform the following actions:
-
-* |IcView| **View** customer group details. Alternatively, click on the item to open its details page.
+* |IcConfig| **Edit Frontend Menu**
+* |IcConfig| **Configure** customer group settings.
 * |IcEdit| **Edit** customer group details.
 * |IcDelete| **Delete** existing customer groups.
+* **Add a note**
+* **Create a new customer**. Alternatively, use a quick action button under the **Customers** menu to create a new customer directly from the customer group page. The form for data input can be displayed in a new browser tab, a popup dialog window, or replace the current page, :ref:`depending on its system configuration <doc-configuration-display-settings-quick-actions>`.
+
+.. image:: /user/img/customers/customer_groups/quick-buttons-customer-group.png
+   :alt: Displaying the quick action buttons on the customer group view page
 
 .. _user-guide--customer-groups--create:
 
@@ -91,4 +94,4 @@ To configure the price list priority and controlled merge for the customer group
    customer-group-price-lists
    customer-group-all-products-menus
    customer-group-frontend-menus
-   customer-group-customer-settings
+   customer-group-configuration/index

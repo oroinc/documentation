@@ -18,14 +18,7 @@ To achieve this, configure a separate DBAL connection using `config/config.yml` 
         dbal:
             connections:
                 reports:
-                    driver:   '%database_driver%'
-                    host:     # slave database host or '%database_host%' if it is the same as master database
-                    port:     # slave database port or '%database_port%' if it is the same as master database
-                    dbname:   '%database_name%'
-                    user:     '%database_user%'
-                    password: '%database_password%'
-                    options:  '%database_driver_options%'
-                    charset:  '%database_charset%'
+                    url: # slave database url or '%database_dsn%' if it is the same as master database
 
     oro_report:
         dbal:

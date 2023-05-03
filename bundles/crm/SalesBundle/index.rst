@@ -109,6 +109,6 @@ Example:
      *      }
      * )
      */
-    class Customer extends ExtendCustomer
+    class Customer implements ExtendEntityInterface
     ...
 

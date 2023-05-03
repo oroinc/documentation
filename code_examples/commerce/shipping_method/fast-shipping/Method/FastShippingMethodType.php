@@ -8,8 +8,7 @@ use Oro\Bundle\ShippingBundle\Context\ShippingContextInterface;
 use Oro\Bundle\ShippingBundle\Method\ShippingMethodTypeInterface;
 
 /**
- * Fast Shipping method type
- * Contains logic of calculating shipping price
+ * Represents Fast Shipping method type.
  */
 class FastShippingMethodType implements ShippingMethodTypeInterface
 {
@@ -18,15 +17,8 @@ class FastShippingMethodType implements ShippingMethodTypeInterface
     private const WITHOUT_PRESENT_TYPE = 'without_present';
     private const WITH_PRESENT_TYPE = 'with_present';
 
-    /**
-     * @var string
-     */
-    private $label;
-
-    /**
-     * @var bool
-     */
-    private $isWithPresent;
+    private string $label;
+    private bool $isWithPresent;
 
     public function __construct(string $label, bool $isWithPresent)
     {
@@ -37,7 +29,7 @@ class FastShippingMethodType implements ShippingMethodTypeInterface
     /**
      * {@inheritDoc}
      */
-    public function getIdentifier()
+    public function getIdentifier(): string
     {
         return $this->isWithPresent ? self::WITH_PRESENT_TYPE : self::WITHOUT_PRESENT_TYPE;
     }
@@ -61,7 +53,7 @@ class FastShippingMethodType implements ShippingMethodTypeInterface
     /**
      * {@inheritDoc}
      */
-    public function getOptionsConfigurationFormType(): string
+    public function getOptionsConfigurationFormType(): ?string
     {
         return FastShippingMethodOptionsType::class;
     }
@@ -69,9 +61,12 @@ class FastShippingMethodType implements ShippingMethodTypeInterface
     /**
      * {@inheritDoc}
      */
-    public function calculatePrice(ShippingContextInterface $context, array $methodOptions, array $typeOptions): ?Price
-    {
-        $price = $typeOptions[static::PRICE_OPTION];
+    public function calculatePrice(
+        ShippingContextInterface $context,
+        array $methodOptions,
+        array $typeOptions
+    ): ?Price {
+        $price = $typeOptions[self::PRICE_OPTION];
 
         // Provide additional price calculation logic here if required.
 

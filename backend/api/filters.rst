@@ -38,6 +38,7 @@ All supported comparison types are listed in the following table:
    "not_starts_with","`!^`","Checks that a field value does not start with a filter value. The `NOT LIKE 'value%'` comparison is used. Supports only string fields. "
    "ends_with","`$`","Checks whether a field value ends with a filter value. The `LIKE '%value'` comparison is used. Supports only string fields."
    "not_ends_with","`!$`","Checks that a field value does not end with a filter value. The `NOT LIKE '%value'` comparison is used. Supports only string fields."
+   "empty","","Checks whether a field value is empty or `null` (if a filter value is `true`) or a field value is not empty and not `null` (if a filter value is `false`). Supports string and array fields."
 
 .. _web-api--existing-filters:
 
@@ -284,6 +285,7 @@ The following query expressions are implemented out-of-the-box:
     "NOT_STARTS_WITH","|NotStartsWithComparisonExpression|","NOT LIKE ``value%`` comparison"
     "ENDS_WITH","|EndsWithComparisonExpression|","LIKE ``%value`` comparison"
     "NOT_ENDS_WITH","|NotEndsWithComparisonExpression|","NOT LIKE ``%value`` comparison"
+    "EMPTY_VALUE","|EmptyValueComparisonExpression|","EQUAL TO empty value OR IS NULL and NOT EQUAL TO empty value AND NOT IS NULL comparisons"
     "NESTED_TREE","|NestedTreeComparisonExpression|","returns all child nodes for a given node depending on the nesting level"
     "NESTED_TREE_WITH_ROOT","|NestedTreeComparisonExpression|","returns a given node and all child nodes for this node depending on the nesting level"
 

@@ -20,7 +20,7 @@ To configure automatic order cancellation globally:
 
 3. In the **Order Automation** section:
 
-   a) Clear the **Use System** checkbox.
+   a) Clear the **Use Default** checkbox.
    b) Select the **Enable Automatic Order Cancellation** checkbox.
 
 #. Click **Save Settings**.

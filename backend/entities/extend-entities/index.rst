@@ -26,41 +26,17 @@ To solve this, you can use |EntityExtendBundle| which offers the following featu
 Make Entity Extended
 --------------------
 
-#. Create the *extend entity* class:
-
-   .. code-block:: php
-      :caption: src/Acme/Bundle/DemoBundle/Model/ExtendDocument.php
-
-      namespace Acme\Bundle\DemoBundle\Model;
-
-      class ExtendDocument
-      {
-          /**
-           * The real implementation of this method is auto generated.
-           *
-           * IMPORTANT: If the derived class has own constructor it must call parent constructor.
-           */
-          public function __construct()
-          {
-          }
-      }
-
-   The class name of an extended entity consists of two parts: Its name always **must** start with
-   ``Extend``. The suffix (here ``Document``) must be the name of your entity class.
-
-   The class itself is an empty skeleton. Its actual content will be generated dynamically in the
-   application cache.
-
-#. Let the *entity class* extend the *extend entity* class:
+#. Let the *entity class* implement the *ExtendEntityInterface* using the *ExtendEntityTrait*:
 
    .. code-block:: php
       :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
 
       namespace Acme\Bundle\DemoBundle\Entity;
 
-      use Acme\Bundle\DemoBundle\Model\ExtendDocument;
       use Doctrine\ORM\Mapping as ORM;
       use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+      use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface;
+      use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait;
 
       /**
        * Document entity
@@ -69,8 +45,9 @@ Make Entity Extended
        * @ORM\Table(name="acme_document")
        * @Config()
        */
-      class Document extends ExtendDocument
+      class Document implements ExtendEntityInterface
       {
+        use ExtendEntityTrait;
       }
 
 #. Add new fields using a migration script:
@@ -288,6 +265,14 @@ Console Commands
 
      php bin/console oro:entity-extend:update --dry-run
 
+.. warning:: Schema changes are permanent and cannot be easily rolled back. We recommend that developers back up data before any database schema change if changes have to be rolled back.
+
+.. admonition:: Business Tip
+
+    Looking for a way to leverage online commerce? Here's everything you need to know about a |B2B online marketplace| and what makes it work.
+
+
+
 .. toctree::
    :titlesonly:
    :maxdepth: 2
@@ -303,4 +288,6 @@ Console Commands
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 
+.. include:: /include/include-links-seo.rst
+   :start-after: begin
 

@@ -18,6 +18,11 @@ Not supported features:
 - data audit
 - usage of such fields in Doctrine query builder
 
+.. admonition:: Serialized Fields Access
+
+    Serialized fields are available as public class properties and handled by magic __get and __set methods in the entity. There are, therefore, no getters and setters for these fields.
+
+
 The Serialized Fields bundle adds a new field called Storage Type within New field creation page where you need to choose one of the two storage types:
 
 - The `Table Column` option enables to create custom field as usual;

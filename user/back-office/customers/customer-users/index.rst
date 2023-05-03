@@ -8,7 +8,7 @@ Manage Customer Users in the Back-Office
 
 .. hint:: This section is part of the :ref:`Customer Management <concept-guide-customers>` topic that provides a general understanding of accounts, contacts, customers, and customer hierarchy available in Oro applications.
 
-:term:`Customer users <Customer User>` act on behalf of the company (i.e., customers in Oro context)  and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization.
+:term:`Customer users <Customer User>` act on behalf of the company (i.e., customers in Oro context) and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization.
 
 In the main menu, navigate to **Customers > Customer Users** for customer management.
 
@@ -27,15 +27,24 @@ In the Customer Users section, you can:
 
 .. note:: You can delegate this function to the customer who will access user and role management in the OroCommerce storefront (see the :ref:`Delegating Users and Role Management to the Customer <user-guide--customers--customer-user-delegate>` section for more information).
 
+Quick action buttons enable you to create a new address, order, and quote directly from the customer user view page. Click the button to open the required form for data input. The form can be displayed in a new browser tab, a popup dialog window, or replace the current page, :ref:`depending on its system configuration <doc-configuration-display-settings-quick-actions>`.
+
+Alternatively, click **More Actions** at the top right and select the entity to be created from the customer user view page.
+
+.. image:: /user/img/customers/customer_users/quick-buttons-customer-user.png
+   :alt: Displaying the quick action buttons on the customer user view page
+
+
 **Customer Account Confirmation**
 
 Upon registration, a customer user receives an email confirmation request. Once they follow up with the requested action, their account is marked as confirmed.
 
-.. image::/img/customers/customer_users/CustomerUsers.png
+.. image:: /user/img/customers/customer_users/CustomerUsers.png
    :alt: The list of confirmed accounts
 
 Hover over the |IcMore| **More Options** menu to the right of the necessary customer user to perform the following actions:
 
+* |IcBan| **Disable** a customer user.
 * |IcView| **View** customer user details. Alternatively, click on the item to open its details page.
 * |IcEdit| **Edit** customer user details.
 * |IcDelete| **Delete** existing customer users.
@@ -107,7 +116,7 @@ You may want to delegate some of the customer user management capabilities to th
 Impersonate a Customer User
 ---------------------------
 
-.. hint:: This feature is available in the Enterprise edition starting from OroCommerce v4.1.0. To check which application version you are running, see the :ref:`system information <system-information>`.
+.. hint:: This feature is available in the Enterprise edition.
 
 For troubleshooting purposes, user impersonation allows back-office users with the **Login as Customer User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user. Such back-office user is redirected to the website assigned to the customer user they are impersonating (i.e., the website where the customer user registered).
 
@@ -131,6 +140,35 @@ The storefront session in impersonation mode opens in a new browser tab.
    :alt: Impersonation mode in the storefront
 
 To exit impersonation mode, click **Log out** in the blue banner.
+
+.. _user-guide--customers--customer-user-reset-password:
+
+Reset User Passwords
+--------------------
+
+An administrator can request the customer user to change their password by clicking the |IcPassReset| **Reset Password** button on the customer user's profile page:
+
+.. image:: /user/img/customers/customer_users/customer-user-reset-password-button.png
+
+A customer user will receive an email with the link to update their password.
+
+.. image:: /user/img/customers/customer_users/customer_user_reset_password.png
+
+When resetting their password, users can only log into the application once their password is changed, in which case their password status changes to **Reset** in the back-office. The status switches to **Active** as soon as the customer user changes the password.
+
+.. image:: /user/img/customers/customer_users/customer_user_password_reset.png
+
+Alternatively, you can reset the password for a specific customer user from the grid of all customer users. For this, hover over the ellipsis menu at the end of the row of the selected customer user, and click **Reset Password**.
+
+.. image:: /user/img/customers/customer_users/customer_user_reset_password_from_grid.png
+
+The same functionality is available for the storefront administrators.
+
+You can change the contents of the password change email by updating the **customer_user_force_reset_password** :ref:`email template <user-guide-using-emails-create-template>` of the Customer User entity.
+
+The link in the email will have a refresh token to enable password change for a customer user. By default, this token and the reset password link in the email are valid for 24 hours from the moment the reset request is thrown.
+
+An administrator can change this ttl in the :ref:`configuration of the Customer bundle <yaml-bundles-configuration-reset-password>`.
 
 .. _user-guide--customers--customer-users--oauth:
 
@@ -175,6 +213,11 @@ You can add as many applications as you need for any of your existing organizati
 Use the generated Client ID and Client Secret to retrieve an access token to connect to your Oro application.
 
 .. note:: For the aggregated information on all OAuth applications created by customer users in the back-office, refer to the general :ref:`Customer User OAuth Applications <customer-user-oauth-app>` topic.
+
+**Related Articles**
+
+* :ref:`Password Change Policy <user-guide--customers--customer-user-password-change-policy>`
+* :ref:`Password History Policy <configuration--guide--commerce--configuration--customer-user-password-change-policy>`
 
 
 .. include:: /include/include-images.rst

@@ -30,3 +30,8 @@ Toolbar options:
   - `default_per_page` - item per page by default
 
 - `pagination` - show or hide the pagination block and turn off the paginator extension.
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

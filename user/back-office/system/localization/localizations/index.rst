@@ -5,6 +5,8 @@
 Configure Localizations in the Back-Office
 ==========================================
 
+.. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
+
 .. begin
 
 Localization helps to bind the language and locale-specific formatting for smooth localization of the Oro system elements and messages visible to the user.

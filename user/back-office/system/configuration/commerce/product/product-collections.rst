@@ -23,29 +23,20 @@ To change the default product collections indexation frequency:
    .. image:: /user/img/system/config_commerce/product/product_collections_configuration.png
       :alt: Global product collection configuration settings
 
-   Here, you can set the indexation cron schedule and the mass action limit.
+3. To customize the option configuration, clear the **Use Default** checkbox next to the option and select the required value.
 
-3. To customize the Indexation Cron Schedule:
+4. In the **General** section, customize the following options:
 
-     a) Clear the **Use Default** box next to the option.
-     b) Select the desired frequency from the list.
+   **Indexation Cron Schedule** -- Select the desired frequency from the list.
 
-4. In the **Mass Action Limit** option, you can set the limited number of products that can be handled (added, deleted) using mass action. The option is only applicable to product collections (e.g., in web catalogs), and it does not refer to mass actions of other entities (e.g., products, customers, leads, etc). Keep in mind that this option is merely advisory, and it only notifies a user of the exceeded mass action limit. But you can force your action, going beyond the limit, if needed.
+   **Mass Action Limit** --- Set the limited number of products that can be handled (added, deleted) using mass action. The option is only applicable to product collections (e.g., in web catalogs), and it does not refer to mass actions of other entities (e.g., products, customers, leads, etc). Keep in mind that this option is merely advisory, and it only notifies a user of the exceeded mass action limit. But you can force your action, going beyond the limit, if needed.
 
     .. image:: /user/img/system/config_commerce/product/mass_action_limit_confirmation.png
        :alt: Confirmation dialog that appears if a user exceeds the mass action limit
 
-    To set the limit for mass actions:
+    **Enable Partial Indexation** --- Select the checkbox to enable partial indexation only for products that were added to or removed from the collection.
 
-       a) Clear the **Use Default** box next to the option.
-       b) Specify the number of products in product collections that can be handled when using mass action.
-
-5. To enable partial indexation only for products that were added to or removed from the collection.
-
-    a) Clear the **Use Default** box next to the option.
-    b) Select the **Enable Partial Indexation** option.
-
-6. Click **Save Settings**.
+5. Click **Save Settings**.
 
 
 .. include:: /include/include-images.rst

@@ -320,3 +320,8 @@ Next, implement the custom-type logic. The example below defines the required op
            return Request::METHOD_POST;
        }
    }
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

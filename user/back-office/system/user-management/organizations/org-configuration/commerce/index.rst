@@ -20,5 +20,6 @@ Learn how to configure commerce-specific settings:
    Taxation <taxation/index>
    Orders <orders/index>
    Inventory <inventory/index>
+   Marketplace <marketplace/index>
 
 

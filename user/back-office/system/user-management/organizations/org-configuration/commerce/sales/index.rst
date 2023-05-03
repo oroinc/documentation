@@ -12,5 +12,6 @@ Sales Configuration Settings per Organization
    Checkout <organization-guest-checkout>
    Request for Quote <organization-guest-rfq>
    Orders History <organization-orders-history>
+   Multi Shipping Options <organization-multi-shipping>
    Quotes <organization-quote>
    Promotions <organization-promotions>

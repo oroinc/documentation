@@ -558,6 +558,10 @@ Images
    :align: middle
    :alt: Available in OroCRM
 
+.. |MarketplaceIcon| image:: /user/img/doctypes/marketplace-icon-logo.png
+   :align: middle
+   :alt: Available in OroMarketplace
+
 .. |Extension| image:: /user/img/doctypes/extension-icon-logo.png
    :align: middle
    :alt: Extension is required
@@ -597,3 +601,7 @@ Images
 .. |PaintBrush| raw:: html
 
    <i class="fas fa-paint-brush" aria-hidden="true"></i>
+
+.. |IcCapture| raw:: html
+
+   <i class="far fa-credit-card" aria-hidden="true"></i>

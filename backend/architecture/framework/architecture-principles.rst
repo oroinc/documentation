@@ -8,7 +8,7 @@ Architecture Principles of Oro Applications
 Symfony Role in OroPlatform
 ---------------------------
 
-.. note:: We use |Symfony Framework| v. 4.4 LTS in Oro Applications v.4.x.
+.. note:: We use |Symfony Framework| v. 5.4 LTS in Oro Applications v.5.x.
 
 Symfony is the most mature PHP framework that provides a wide range of functions typical for any web application. Symfony takes care of numerous tasks, for instance:
 
@@ -108,7 +108,7 @@ Application Configuration
 
 Oro widely uses Symfony conventions to configure the application and specific features in YAML configuration files.
 
-On the application level (|according to Symfony conventions|), the configuration is divided into infrastructure-related (*config/parameters.yml*) and application-related (*config/config.yml* file).
+On the application level (|according to Symfony conventions|), the configuration is divided into infrastructure-related (*.env-app*) and application-related (*config/config.yml* file).
 
 On the bundle level, Oro applications have slight changes in the configuration technologies but a considerable shift in the role and purpose of the configuration files.
 
@@ -174,7 +174,7 @@ However, this RBAC system of Oro applications widely uses |Symfony Security Comp
 Databases Management (Doctrine ORM)
 -----------------------------------
 
-Oro applications support the storage of application data in relational databases, such as MySQL, MariaDB, PostgreSQL,
+Oro applications support the storage of application data in relational databases, such as PostgreSQL,
 EnterpriseDB. Support for these databases is provided by the |Doctrine| layer.
 
 Oro applications widely use all Doctrine features to manage the persistent data: Database Abstraction Layer,

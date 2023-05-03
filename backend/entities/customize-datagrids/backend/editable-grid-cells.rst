@@ -1,3 +1,7 @@
+:oro_show_local_toc: false
+
+.. _customize-datagrids-editable-datagrid-cells:
+
 Editable Datagrid Cells
 =======================
 
@@ -50,6 +54,7 @@ Example of grid configuration:
                         enable: true # this cell will be editable
                     expanded: true # this cell will be rendered as radio buttons
                     choices: "@oro_entity_extend.enum_value_provider->getEnumChoicesByCode('cust_prod_visibility')"
+                    translatable_options: false
             options:
                 cellSelection:
                     dataField: id
@@ -166,3 +171,8 @@ Below is an example of such a handler:
         $this->manager->flush();
     }
     ...
+
+**Related Articles**
+
+* :ref:`Datagrids <data-grids>`
+* :ref:`Datagrid Configuration Reference <reference-format-datagrids>`

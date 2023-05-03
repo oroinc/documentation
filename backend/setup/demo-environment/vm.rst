@@ -5,13 +5,13 @@ VM VirtualBox
 
 .. begin_virtual_machine_deployment
 
-For a more flexible and secure evaluation experience, you can deploy a virtual machine with Oro application demo instance in Oracle VM VirtualBox.
+For a more flexible and secure evaluation experience, you can deploy a virtual machine with the Oro application demo instance in Oracle VM VirtualBox.
 
 .. note:: OS X, Windows, and Linux-based operation systems support Oracle VM VirtualBox.
 
-Before you proceed, ensure that VM VirtualBox v.6.1.x is installed in your local or corporate environment and is accessible.
+Before you proceed, ensure that VM VirtualBox version 7.x is installed in your local or corporate environment and is accessible.
 
-To download the virtual machine image on the |OroCommerce VM| or |OroCRM VM| website click on the **download** link.
+To download the virtual machine image, navigate to the |OroCommerce VM| or |OroCRM VM| page and fill in the provided form with required data. The form submission triggers automatic VM file download.
 
    .. image:: /img/backend/setup/vb/download_image.png
       :alt: Download the OroCommerce virtual image
@@ -27,7 +27,7 @@ To import the virtual machine into VirtualBox:
 
 3. Locate the *.ova* file, select it, and click **Open**.
 
-   .. note:: In the virtual machine image, the latest released version of Oro application is deployed on the CentOS-7 OS that secures moderate resource consumption.
+   .. note:: In the virtual machine image, the latest released version of the Oro application is deployed on the Oracle Linux 8, which secures moderate resource consumption.
 
 4. Review the virtual appliance settings and modify resources to meet your server capabilities, if necessary. To do so, double-click on the item and type in the updated value.
 

@@ -5,12 +5,22 @@
 
 .. _bundle-docs:
 
-Oro Bundles
-===========
+Oro Bundles and Components
+==========================
 
 Bundles in Oro applications are a collection of files with the source code, configurations and additional assets organized in a conventional structure and providing ready-to-use functionality. Each Oro application comes with many prebuilt bundles organized in composer packages.
 
-This section extends the rest of the Developer Guide, providing insight into core bundles implementation architecture and infrequently customizable features, which is particularly useful for non-standard customizations for backend and frontend developers as many features are interconnected.
+This section extends the rest of the Developer Guide, providing insight into core bundles implementation architecture and infrequently customizable features, which is particularly useful for non-standard customizations for backend and frontend developers as many features are interconnected. It also covers the Oro Config Component that provides additional resource types to the Symfony Config Component infrastructure.
+
+Components
+----------
+
+Components documentation covers the Oro Config Component. It provides additional resource types to the Symfony Config Component infrastructure responsible for loading configurations from different data sources and optionally monitoring these data sources for changes.
+
+* :ref:`Resource Types <dev-components-cumulative-resources>` provide a way to configure a bundle from other bundles.
+* :ref:`Resource Merge <dev-components-configuration-merger>` provides a way to merge configurations of some resource both from one or many bundles. Supports two strategies: replace and append.
+* :ref:`System Aware Resolver <dev-components-system-aware-resolver>` allows to make your configuration files more dynamic. For example, you can call service's methods, static methods, constants, context variables etc.
+
 
 .. _bundle-docs-platform:
 
@@ -53,16 +63,16 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
 
 .. csv-table::
 
-   "**C**", ":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`", "**S**",""
-   ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`", "**O**", ":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`",""
-   ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`", ":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`", "**T**",""
-   ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`", "**P**", ":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`",""
-   ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`", ":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`", "**W**",""
-   ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`", ":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`", ":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`",""
-   ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`", ":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`", ":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`",""
-   "**F**", ":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`", ":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`",""
-   ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`", "**R**","",""
-   "**I**", ":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`","",""
+    "**C**","**I**","**S**"
+    ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`",":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`",":ref:`SellerDashboardBundle <bundle-docs-commerce-seller-dashboard-bundle>`"
+    ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`","**O**",":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
+    ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`","**T**"
+    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**P**",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
+    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`","**W**"
+    ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+    ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
+    "**F**","**R**",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
+    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`",""
 
 .. _bundle-docs-extensions:
 
@@ -73,12 +83,11 @@ Documentation that relates to extensions' bundles is collected below. You can do
 
 .. csv-table::
 
-   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**",""
-   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",""
-   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`","**P**",""
-   "**D**","**I**",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`","**S**"
-   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`",""
-
+   "**A**", ":ref:`DPDBundle <bundle-docs-extensions-dpd>`","**M**","**S**"
+   ":ref:`ApruveBundle <bundle-docs-extensions-apruve>`","**G**",":ref:`MailchimpBundle <bundle-docs-extensions-mailchimp>`",":ref:`StripeBundle <bundle-docs-extensions-stripe>`"
+   ":ref:`AuthorizeNetBundle <bundle-docs-extensions-authorizenet>`",":ref:`GoogleTagManagerBundle <bundle-docs-extensions-gtm>`",":ref:`MakerBundle <bundle-docs-extensions-maker>`",""
+   "**D**","**I**","**P**",""
+   ":ref:`DotmailerBundle <bundle-docs-extensions-dotdigital>`",":ref:`InfinitePayBundle <bundle-docs-extensions-infinitepay>`",":ref:`PaypalExpressBundle <bundle-docs-extensions-paypalexpress>`",""
 
 CRM Bundles
 -----------
@@ -98,6 +107,7 @@ CRM Bundles
 .. toctree::
    :hidden:
 
+   Components <components/index>
    ActionBundle <platform/ActionBundle/index>
    ActivityBundle <platform/ActivityBundle/index>
    ActivityListBundle <platform/ActivityListBundle/index>
@@ -171,6 +181,7 @@ CRM Bundles
    CheckoutBundle <commerce/CheckoutBundle/index>
    CMSBundle <commerce/CMSBundle/index>
    ConsentBundle <commerce/ConsentBundle/index>
+   CommerceMenuBundle <commerce/CommerceMenuBundle/index>
    CustomerBundle <commerce/CustomerBundle/index>
    FrontendBundle <commerce/FrontendBundle/index>
    InventoryBundle <commerce/InventoryBundle/index>
@@ -180,6 +191,7 @@ CRM Bundles
    PricingBundle <commerce/PricingBundle/index>
    ProductBundle <commerce/ProductBundle/index>
    RedirectBundle <commerce/RedirectBundle/index>
+   SellerDashboardBundle <commerce/SellerDashboardBundle/index>
    SEOBundle <commerce/SEOBundle/index>
    TaxBundle <commerce/TaxBundle/index>
    WebCatalogBundle <commerce/WebCatalogBundle/index>
@@ -196,8 +208,10 @@ CRM Bundles
    GoogleTagManagerBundle <extensions/GoogleTagManagerBundle/index>
    InfinitePayBundle <extensions/InfinitePayBundle/index>
    MailchimpBundle <extensions/MailchimpBundle/index>
+   MakerBundle <extensions/MakerBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
    StripeBundle <extensions/StripeBundle/index>
+   CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
 
 
 .. include:: /include/include-links-seo.rst

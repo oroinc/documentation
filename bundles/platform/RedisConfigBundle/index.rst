@@ -18,7 +18,6 @@ Resources
 
   * :ref:`Configure Redis Servers <bundle-docs-platform-redis-bundle--configure-servers>`
   * :ref:`Configure Application to Use Redis <bundle-docs-platform-redis-bundle--configuration>`
-  * |SncRedisBundle Documentation|
   * |Predis Documentation|
   * |Redis Sentinel Documentation|
   * |Redis Cluster Tutorial|

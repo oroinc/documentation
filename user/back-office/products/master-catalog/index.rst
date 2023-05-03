@@ -54,7 +54,10 @@ To create a master catalog category:
 
 5. In the **Long Description** section, provide a long default description of the category. Move from tab to tab to localize the description by setting the required fallback option. You can select whether to fall back to the default value, parent localization, or a custom value from the dropdown. When selecting the custom value, provide the localized version of the long description in the WYSIWYG field. For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
 
-6. In the **Products** section, select the items for the category you are creating. Use available filters to narrow your search and speed up the selection of the necessary product items.
+6. In the **Products** section, select the items for the category you are creating. Use available filters to narrow your search and speed up the selection of the necessary product items. Each product you select can have a sort order associated with it that will define the default order in which the product will appear in the storefront (0 is the highest priority). You can also click on the **Manage Sort Order** button to be able to manage the sort order of products in the category in a separate pop-up window. Products with grey background have sorting number assigned. Product with white background have no sorting order. You can drag and drop the horizontal background separator up and down to apply or clear the sorting order. All changes made to the sorting order in this dialog window will be applied immediately.
+
+   .. image:: /user/img/products/master_catalog/product-sort-order.png
+      :alt: Clicking the Manage Sort Order button opens a new pop-up window to bulk sort the products added to the product collection.
 
 .. _master-catalog-inventory:
 

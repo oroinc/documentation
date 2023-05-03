@@ -23,9 +23,7 @@ Supported Databases
 
 OroPlatform Community Edition (CE) is an open-source application designed for small organizations. OroPlatform Enterprise Edition (EE) is designed with scalability and performance in mind.
 
-OroPlatform CE officially supports only MySQL version 5.1 or higher.
-
-With OroPlatform EE, you can use either MySQL (5.1 or higher) or PostgreSQL (version 9.1 and higher, but PostgreSQL 10 is not currently supported because of |Doctrine Bug|; this may change once the bugfix is out).
+With OroPlatform CE or EE, you can use PostgreSQL 15.1.
 
 Configuration
 -------------
@@ -33,23 +31,15 @@ Configuration
 Connection
 ^^^^^^^^^^
 
-Database connection is configured using the following parameters placed in config/parameters.yml:
+Database connection is configured using the following environment variable:
 
 .. code-block:: text
 
-   database_driver: pdo_pgsql
-   database_host: 127.0.0.1
-   database_port: null
-   database_name: commerce_crm_ee
-   database_user: postgres
-   database_password: null
-   database_server_version: '9.6'
+   ORO_DB_DSN=postgresql://postgres@127.0.0.1/commerce_crm_ee?serverVersion=13
 
-Supported **database_driver** values are *pdo_pgsql* for PostgreSQL and *pdo_mysql* for MySQL.
-
-The **database_server_version** determines the DB engine version used in the application.
-This parameter will be mapped to the **server_version** parameter of the Doctrine configuration.
+This parameter will be mapped to the **url** parameter of the Doctrine configuration.
 See |Doctrine Configuration Reference| documentation for more information on this parameter.
+Also |PostgreSQL Connection URI Reference| documentation for more information about format.
 
 DBAL and ORM
 ^^^^^^^^^^^^
@@ -98,29 +88,9 @@ To choose optimal PostgreSQL configuration parameters, you can use the |PGTune| 
 
 The PGTune calculate configuration for PostgreSQL is based on the maximum performance for a given hardware configuration. However, it is not a silver bullet for the optimization settings of PostgreSQL. Many settings depend not only on the hardware configuration but also on the size of the database, the number of clients, and the complexity of queries. To optimally configure the database, consider all of these parameters.
 
-MySQL configuration can be optimized using |Percona Configuration Wizard|.
-
-Apply Percona best practices to achieve better MySQL database performance and avoid the time, complexity, and risk of customizing the my.cnf configuration on your own. Copy and paste the results of the Percona Configuration Wizard for MySQL into your my.cnf file.
-
 Sometimes OS read/writes can slow down the database server's performance, primarily if located on the same hard drive. Instead, we recommend using a separate hard drive (preferably an SSD) for the database service.
 
-MySQL
-^^^^^
 
-MySQL/MariaDB database table can sometimes crash because of an unexpected server shutdown, a sudden file system corruption, or during the copy operation when the database is still in use. You can use an open-source  ‘mysqlcheck‘ tool to automatically check, repair, and optimize databases of all tables in Linux.
-
-.. code-block:: text
-
-   # mysqlcheck -u root -p --auto-repair --check --optimize databasename
-
-You can use the mysqltuner tool to review a MySQL installation quickly and make adjustments to increase performance and stability.
-
-To download and run it, use the following set of commands:
-
-.. code-block:: text
-
-   # wget http://mysqltuner.pl mysqltuner.pl
-   # ./mysqltuner.pl
 
 PostgreSQL
 ^^^^^^^^^^
@@ -173,17 +143,16 @@ Logging aspects
 ---------------
 
 All logs must follow :ref:`Logging Conventions <community--contribute--logging-conventions>`. Logs should not contain sensitive data like credit card numbers, passwords, etc.
-Enable MySQL Slow query Logs for logging slow queries. This can help to determine issues with the database and help to debug them.
+Enable PostgreSQL Slow query Logs for logging slow queries. This can help to determine issues with the database and help to debug them.
 
 References
 ----------
 
-* |MySQL Documentation|
 * |PostgreSQL Documentation|
 * |Doctrine Extensions|
 * :ref:`Oro application system requirements <system-requirements>`
 * |PGTune - Configuration calculator for PostgreSQL|
-* |Percona Configuration Wizard for MySQL| (you might need to sign it to use the wizard)
+* |Percona Distribution for PostgreSQL|
 * |PostgreSQL Performance Optimization|
 * |PostgreSQL Tuner|
 * |Symfony: DoctrineBundle Configuration|

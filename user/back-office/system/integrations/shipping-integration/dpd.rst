@@ -79,7 +79,7 @@ Details of all :ref:`orders <user-guide--sales--orders>` submitted from the OroC
      :alt: Requesting dpd shipping label on the order view page
      :align: center
 
-* To request a new shipping label for the same package, click **Restransmit Request for DPD shipping label**. In this case, old data is wiped and substituted.
+* To request a new shipping label for the same package, click **Retransmit Request for DPD shipping label**. In this case, old data is wiped and substituted.
 
 * To download the shipping label, open the **Additional Information** tab on the order view page. You will find a .pdf attachment with the label positioned in the way you specified in the integration configuration.
 

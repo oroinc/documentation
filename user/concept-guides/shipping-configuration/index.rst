@@ -50,6 +50,10 @@ OroCommerce works with the following shipping methods out-of-the-box:
 
 .. hint:: Check out |OroCommerce's Extensions Store| to download other shipping services that you can pair with your OroCommerce applications.
 
+* :ref:`Multiple Shipping <user-guide--system-configuration--commerce-sales-multi-shipping>`
+
+  Multi shipping enables storefront customers to select different shipping methods for different line items. To set up a multi shipping integration, enable the functionality in the system configuration first.
+
 Shipping Rules
 --------------
 

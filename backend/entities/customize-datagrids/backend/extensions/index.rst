@@ -1,3 +1,5 @@
+:oro_show_local_toc: false
+
 .. _customize-datagrid-extensions:
 
 Extensions
@@ -18,6 +20,7 @@ Here is a list of already implemented extensions:
 - :ref:`Field ACL <customize-datagrids-extensions-acl>` - allow to protect entity fields with ACL
 - :ref:`Board <customize-datagrids-extensions-board>` - responsible for adding Kanban board views for datagrids
 - :ref:`Filter <backend-entities-filters-grid-extension>` - responsible for adding filtering and filter widgets to grid
+- :ref:`Organization Column <customize-datagrids-extensions-organization-column>` - responsible for adding the organization column if a user works in the global organization
 
 Customization
 -------------
@@ -44,3 +47,4 @@ To implement your extension:
    sorter
    toolbar
    totals
+   organization-column

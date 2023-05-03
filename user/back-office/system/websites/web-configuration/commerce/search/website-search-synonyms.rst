@@ -12,7 +12,7 @@ In OroCommerce Enterprise Edition, you can :ref:`create a synonym group <user-gu
 
 To enable synonyms per website:
 
-1. Navigate to  **System > Websites** in the main menu.
+1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| more actions menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Search > Search Synonyms** in the menu to the left.
 

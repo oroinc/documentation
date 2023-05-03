@@ -6,7 +6,7 @@ Website ElasticSearch Search Engine
 Data Storage
 ------------
 
-The Elasticsearch search engine uses multiple indexes (one per each website and entity) prefixed with parameter from *parameters.yml* file.
+The Elasticsearch search engine uses multiple indexes (one per each website and entity) prefixed with DSN path from the  *website_search_engine_dsn* container parameter.
 The Elasticsearch indexes structure is defined in the |index mapping|. The mapping contains list of indexes, types (one per index), fields, their declarations and additional index settings. The index contains custom settings, including analyzer and tokenizer, and mapping settings for all entities.
 
 The WebsiteElasticSearchBundle reads mapping configuration, defining the search index configuration, from `website_search.yml` files.

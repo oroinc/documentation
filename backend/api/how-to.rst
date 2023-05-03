@@ -56,6 +56,7 @@ By performance reasons the following operators are disabled out of the box:
 * ``!^`` (``not_starts_with``) - uses ``NOT LIKE text%`` to check that a field value does not start with the text
 * ``$`` (``ends_with``) - uses ``LIKE %text`` to check that a field value ends with the text
 * ``!$`` (``not_ends_with``) - uses ``NOT LIKE %text`` to check that a field value does not end with the text
+* N/A (``empty``) - uses logical OR operator to check that a field value is empty or ``null`` or to check that a field value is not empty and not ``null``
 
 To enable these operators, use ``operators`` option for filters in `Resources/config/oro/api.yml`, e.g.:
 
@@ -67,14 +68,14 @@ To enable these operators, use ``operators`` option for filters in `Resources/co
                 filters:
                     fields:
                         field1:
-                            operators: ['=', '!=', '*', '!*', '~', '!~', '^', '!^', '$', '!$']
+                            operators: ['=', '!=', '*', '!*', '~', '!~', '^', '!^', '$', '!$', 'empty']
 
 .. _case-insensitive-string-filter:
 
 Enable Case-insensitive String Filter
 -------------------------------------
 
-Depending on the |collation| settings of your database the case-insensitive filtering may be already enforced to be used on the database level. For example, if you are using MySQL database with ``utf8_unicode_ci`` collation you do not need to do anything to enable the case-insensitive filtering. But if the collation of your database or a particular field is not case-insensitive and you need to enable the case-insensitive filtering for this field, you can use ``case_insensitive`` option for a filter in `Resources/config/oro/api.yml`, e.g.:
+Depending on the |collation| settings of your database the case-insensitive filtering may be already enforced to be used on the database level. For example, if you are using PostgreSQL all collations are case-sensitive by default. But if the collation of your database or a particular field is not case-insensitive and you need to enable the case-insensitive filtering for this field, you can use ``case_insensitive`` option for a filter in `Resources/config/oro/api.yml`, e.g.:
 
 .. code-block:: yaml
 
@@ -660,17 +661,11 @@ The following steps describe how to create such API resources:
         {
             private ?string $name;
 
-            /**
-             * @return string|null
-             */
             public function getName(): ?string
             {
                 return $this->name;
             }
 
-            /**
-             * @param string|null $name
-             */
             public function setName(?string $name): void
             {
                 $this->name = $name;
@@ -731,9 +726,9 @@ The following steps describe how to create such API resources:
         class RegisterAccount implements ProcessorInterface
         {
             /**
-             * @inheritDoc
+             * {@inheritDoc}
              */
-            public function process(ContextInterface $context)
+            public function process(ContextInterface $context): void
             {
                 /** @var Account $account */
                 $account = $context->getResult();
@@ -810,14 +805,14 @@ To do this, you need to perform the following:
 
         class CheckErpRequestType implements ProcessorInterface
         {
-            private const REQUEST_HEADER_NAME  = 'X-Integration-Type';
+            private const REQUEST_HEADER_NAME = 'X-Integration-Type';
             private const REQUEST_HEADER_VALUE = 'ERP';
-            private const REQUEST_TYPE         = 'erp';
+            private const REQUEST_TYPE = 'erp';
 
             /**
-             * @inheritDoc
+             * {@inheritDoc}
              */
-            public function process(ContextInterface $context)
+            public function process(ContextInterface $context): void
             {
                 /** @var Context $context */
                 $requestType = $context->getRequestType();
@@ -911,16 +906,13 @@ To implement this approach, you need to perform the following:
         {
             private TokenAccessorInterface $tokenAccessor;
 
-            /**
-             * @param TokenAccessorInterface $tokenAccessor
-             */
             public function __construct(TokenAccessorInterface $tokenAccessor)
             {
                 $this->tokenAccessor = $tokenAccessor;
             }
 
             /**
-             * {@inheritdoc}
+             * {@inheritDoc}
              */
             public function getDescription(): string
             {
@@ -930,9 +922,9 @@ To implement this approach, you need to perform the following:
             }
 
             /**
-             * {@inheritdoc}
+             * {@inheritDoc}
              */
-            public function resolve()
+            public function resolve(): mixed
             {
                 $user = $this->tokenAccessor->getUser();
 
@@ -1000,9 +992,9 @@ For example, imagine that a "price" field need to be added to a product API. The
         class ComputeProductPriceField implements ProcessorInterface
         {
             /**
-             * @inheritDoc
+             * {@inheritDoc}
              */
-            public function process(ContextInterface $context)
+            public function process(ContextInterface $context): void
             {
                 /** @var CustomizeLoadedDataContext $context */
                 $data = $context->getData();
@@ -1123,23 +1115,21 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
      */
     class SetAccountContactsAssociationQuery implements ProcessorInterface
     {
-        protected DoctrineHelper $doctrineHelper;
+        private DoctrineHelper $doctrineHelper;
 
-        /**
-         * @param DoctrineHelper $doctrineHelper
-         */
         public function __construct(DoctrineHelper $doctrineHelper)
         {
             $this->doctrineHelper = $doctrineHelper;
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
-        public function process(ContextInterface $context)
+        public function process(ContextInterface $context): void
         {
             /** @var ConfigContext $context */
-            $definition    = $context->getResult();
+
+            $definition = $context->getResult();
             $contactsField = $definition->getField('contacts');
             if (null !== $contactsField
                 && !$contactsField->isExcluded()
@@ -1190,22 +1180,20 @@ To elaborate illustration further, let's add ``contacts`` relationship to the Ac
          */
         class BuildAccountContactsSubresourceQuery implements ProcessorInterface
         {
-            protected DoctrineHelper $doctrineHelper;
+            private DoctrineHelper $doctrineHelper;
 
-            /**
-             * @param DoctrineHelper $doctrineHelper
-             */
             public function __construct(DoctrineHelper $doctrineHelper)
             {
                 $this->doctrineHelper = $doctrineHelper;
             }
 
             /**
-             * @inheritDoc
+             * {@inheritDoc}
              */
-            public function process(ContextInterface $context)
+            public function process(ContextInterface $context): void
             {
                 /** @var SubresourceContext $context */
+
                 if ($context->hasQuery()) {
                     // a query is already built
                     return;
@@ -1269,11 +1257,12 @@ a new ``Acme\Bundle\DemoBundle\Entity\SomeEntity`` entity:
     class ValidateLabelField implements ProcessorInterface
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
-        public function process(ContextInterface $context)
+        public function process(ContextInterface $context): void
         {
             /** @var CustomizeFormDataContext $context */
+
             $form = $context->findFormField('label');
             if (null === $form) {
                 return;

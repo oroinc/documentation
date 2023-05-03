@@ -271,8 +271,8 @@ Adding global mediator listeners or listening to DOM events globally is used to 
     import mediator from 'oroui/js/mediator'; // Import mediator instance
 
      // Add mediator listener
-    mediator.on('viewport:change', viewport => {
-        console.log(viewport.width);
+    mediator.on('viewport:change', event => {
+        console.log(event);
     });
 
     // DOM events, listen page scroll

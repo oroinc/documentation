@@ -3,12 +3,12 @@
 Configurable Permissions
 ========================
 
-Users can manage the visibility of role permissions on View and Edit Role pages.
+Users can manage the visibility of role permissions on the View and Edit Role pages.
 
 Model
 -----
 
- **ConfigurablePermission** is  model that contains all data of the Configurable Permission. It has 3 public methods to check if a permission or a capability is configurable for this ConfigurablePermission:
+ **ConfigurablePermission** is a model that contains all data of the Configurable Permission. It has three public methods to check if permission or a capability is configurable for this ConfigurablePermission:
 
 - isEntityPermissionConfigurable($entityClass, $permission) - checks that permission $permission is configurable for entity class $entityClass;
 
@@ -19,19 +19,18 @@ Model
 Configuration
 -------------
 
-All Configurable Permissions are described in configuration file ``configurable_permissions.yml`` corresponded bundle.
+All Configurable Permissions are described in the configuration file ``configurable_permissions.yml`` of the corresponding bundle.
 
-It has 4 main options:
+It has four main options:
 
 - default (bool, by default = false) - all permissions for the Configurable Name configurable by default;
 - entities (array|bool) - the list of entity classes with permissions. If a value is boolean, it will be applied to all permissions for this entity class;
 - capabilities (array) - the list of capabilities;
 - workflows (array|bool) - the list of workflow permissions identities with permissions. If a value is boolean, it will be applied to all permissions for this identity.
 
-An example of a simple configurable permission configuration.
+An example of a simple configurable permission configuration:
 
 .. code-block:: none
-
 
     oro_configurable_permissions:
         some_name:                                                      # configurable permission name, will be used by filter
@@ -55,6 +54,6 @@ All configurations merge in the boot bundles order. The application collects con
 Merging uses simple rules:
 
 * if the node value is scalar, the value will be replaced
-* if the node value is array, this array will be complemented by the values from the second configuration
+* if the node value is an array, this array will be complemented by the values from the second configuration
 
 After this step, the application knows about all permissions and has only one configuration for each permission.

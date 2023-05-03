@@ -105,13 +105,11 @@ Application Configuration
 
 Use the default configuration for the application installed in the production mode.
 
-To test emails, install |Mailcatcher| and set up mailer_* options in the ``config/parameters.yml`` file:
+To test emails, install |Mailcatcher| and set up ORO_MAILER_DSN environment variable:
 
-.. code-block:: yaml
+.. code-block:: bash
 
-    mailer_transport: smtp
-    mailer_host: 127.0.0.1
-    mailer_port: 1025
+    ORO_MAILER_DSN=smtp://127.0.0.1:1025
 
 Behat framework uses the mailcatcher UI to assert emails. By default, the framework expects the mailcatcher UI at ``http://127.0.0.1:1080/``. To change the URL, provide the ``ORO_MAILER_WEB_URL`` environment variable.
 
@@ -277,6 +275,13 @@ Moreover, you can inject into the behat context dependencies from either behat o
 
 .. note:: Context service must be marked as public.
 
+Using Mocks in Testing
+~~~~~~~~~~~~~~~~~~~~~~
+
+Sometimes tests require mocks to simulate dependencies, such as an external web service or a custom application configuration for a payment method. To configure the application container for such testing, add the ``Tests/Behat/parameters.yml`` file in a bundle or modify the ``config/config_behat_test.yml`` at the application level.
+
+To run Behat tests that rely on a custom configuration, use the behat_test application environment and tag the tests with ``@behat-test-env``. This ensures that mocks are used for testing purposes only and that the production environment remains unaffected.
+
 Autoload Suites
 ^^^^^^^^^^^^^^^
 
@@ -334,6 +339,13 @@ Disable Feature Isolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can disable feature isolation by adding the ``--skip-isolators`` option to the bin/behat console command. As a result, the Behat no longer takes notice of the database, cache, and other layers' isolation. This means the application state is not restored to the initial state, and the result is preserved after the test.
+
+Disable Message Consumer Background Running
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To simulate production conditions more accurately during testing, you can disable the message consumer background running using the ``--do-not-run-consumer`` option in ``bin/behat``.
+
+Be aware that if you choose to use this option, the consumer will not be launched, and the application will not process any messages from the message queue. This could cause problems if you are testing functionality that relies on the timely processing of messages by the consumer.
 
 Page Object
 -----------
@@ -607,7 +619,8 @@ You can use references to the entities in both inline and |alice fixtures|.
 ``{BundlePath}\Tests\Behat\ReferenceRepositoryInitializer`` is used to create references for objects that already exist in the database.
 
 * It is prohibited to modify or add new entities within Initializer.
-* It should implement ``ReferenceRepositoryInitializerInterface`` and should not have dependencies.
+* It should implement ``ReferenceRepositoryInitializerInterface``.
+* It should be registered as the Behat container service in the ``{BundlePath}/Tests/Behat/services.yml`` file with the ``oro_behat.reference_repository_initializer`` tag.
 * To show all references, use the ``bin/behat --available-references`` command.
 
 The most commonly used references:
@@ -713,11 +726,12 @@ Create a tmpfs directory:
     sudo mkdir /var/tmpfs
     sudo mount -t tmpfs -o size=4G tmpfs /var/tmpfs
 
-Edit ``/etc/mysql/mysql.conf.d/mysqld.cnf``
+Edit ``/etc/postgresql/{version}/main/postgresql.conf``
 
 .. code-block:: ini
 
-    datadir = /var/tmpfs/mysql
+
+   data_directory = /var/tmpfs/postgresql/{version}/main
 
 Add new storage to ``/etc/fstab``:
 
@@ -725,18 +739,19 @@ Add new storage to ``/etc/fstab``:
 
     tmpfs  /var/tmpfs  tmpfs  nodev,nosuid,noexec,noatime,size=4G  0 0
 
-Copy MySQL to tmpfs:
+Copy PostgreSQL to tmpfs:
 
 .. code-block:: none
 
-    sudo service mysql stop
-    sudo cp -Rfp /var/lib/mysql /var/tmpfs
+   sudo service postgresql stop
+   sudo cp -Rfp /var/lib/postgresql /var/tmpfs
 
-We need to tell AppArmor to let MySQL write to the new directory by creating an alias between the default directory and the new location.
+We need to tell AppArmor to let PostgreSQL write to the new directory by creating an alias between the default directory and the new location.
 
 .. code-block:: none
 
-    echo "alias /var/lib/mysql/ -> /var/tmpfs/mysql," | sudo tee -a /etc/apparmor.d/tunables/alias
+
+   echo "alias /var/lib/postgresql/ -> /var/tmpfs/postgresql," | sudo tee -a /etc/apparmor.d/tunables/alias
 
 For the changes to take effect, restart AppArmor:
 
@@ -744,11 +759,11 @@ For the changes to take effect, restart AppArmor:
 
     sudo systemctl restart apparmor
 
-Now you can start MySQL again:
+Now you can start PostgreSQL again:
 
 .. code-block:: none
 
-    sudo service mysql start
+   sudo service postgresql start
 
 (optional) Create Startup Script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -757,26 +772,28 @@ After you restart the computer, all the data and the database structure get lost
 
 To prepare for auto-recovery using a startup script:
 
-1. Create a mysql_copy_tmpfs.sh in the bin directory (e.g. /usr/local/bin):
+1. Create a postgresql_copy_tmpfs.sh in the bin directory (e.g. /usr/local/bin):
 
     .. code-block:: none
 
-        #!/bin/bash
-        cp -Rfp /var/lib/mysql /var/tmpfs
 
-2. Create a unit configuration file */etc/systemd/system/mysql_copy_tmpfs.service* that will schedule priority of the service execution before the MySQL starts:
+      #!/bin/bash
+      cp -Rfp /var/lib/postgresql /var/tmpfs
+
+2. Create a unit configuration file */etc/systemd/system/postgresql_copy_tmpfs.service* that will schedule priority of the service execution before the PostgreSQL starts:
 
     .. code-block:: gherkin
 
-        [Unit]
-        Description=Copy mysql to tmpfs
-        Before=mysql.service
-        After=mount.target
 
-        [Service]
-        User=mysql
-        Type=oneshot
-        ExecStart=/bash/script/path/mysql_copy_tmpfs.sh
+      [Unit]
+      Description=Copy postgresql to tmpfs
+      Before=postgresql.service
+      After=mount.target
+
+      [Service]
+      User=postgresql
+      Type=oneshot
+      ExecStart=/bash/script/path/postgresql_copy_tmpfs.sh
 
         [Install]
         WantedBy=multi-user.target
@@ -785,7 +802,8 @@ To prepare for auto-recovery using a startup script:
 
     .. code-block:: none
 
-        systemctl enable mysql_copy_tmpfs.service
+
+      systemctl enable postgresql_copy_tmpfs.service
 
     It starts automatically after rebooting the machine.
 
