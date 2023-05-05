@@ -7,7 +7,7 @@ Oro Frontend Stylebook
 
  * When you modify your Oro application layout, you can copy the element`s source code to your custom form or page in the Oro application to preserve the overall look and feel consistency.
 
- * After you have modified your Oro application styles or layout, you can use the |StyleBook| to check how updated styles affect the UI elements (see Oro Styles Architecture and Styles Organization and Customization for more information on the UI customization).
+  * After you have modified your Oro application styles or layout, you can use the |StyleBook| to check how updated styles affect the UI elements (see :ref:`Oro Styles Architecture <dev-doc-frontend-css>`, :ref:`Styles Organization <dev-doc-frontend-css-frontend-styles-assets>`, and :ref:`Customization <storefront_customization_guide>` for more information on the UI customization).
 
 Most of the OroCommerce back-office and storefront UI elements are included and grouped into the following categories:
 

@@ -1,3 +1,5 @@
+.. _dev-doc-frontend-css-frontend-styles-assets:
+
 Styles Assets Organization
 ==========================
 
