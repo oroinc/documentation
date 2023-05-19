@@ -6002,3 +6002,74 @@ Links (Dev)
 .. |official Elasticsearch documentation on search synonyms| raw:: html
 
    <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html#_solr_synonyms_2" target="_blank">official Elasticsearch documentation on search synonyms</a>
+
+.. |OroCatalogBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/CatalogBundle" target="_blank">OroCatalogBundle</a>
+
+.. |OroCheckoutBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/CheckoutBundle" target="_blank">OroCheckoutBundle</a>
+
+.. |OroCMSBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/CMSBundle" target="_blank">OroCMSBundle</a>
+
+.. |OroCommerceMenuBundle| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/CommerceMenuBundle" target="_blank">OroCommerceMenuBundle</a>
+
+.. |OroCustomerBundle| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/CustomerBundle" target="_blank">OroCustomerBundle</a>
+
+.. |OroFrontendBundle| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/" target="_blank">OroFrontendBundle</a>
+
+.. |OroInventoryBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/InventoryBundle" target="_blank">OroInventoryBundle</a>
+
+.. |OroOrderBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/OrderBundle" target="_blank">OroOrderBundle</a>
+
+.. |OroPayPalBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/PayPalBundle" target="_blank">OroPayPalBundle</a>
+
+.. |OroPricingBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/PricingBundle" target="_blank">OroPricingBundle</a>
+
+.. |OroProductBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ProductBundle" target="_blank">OroProductBundle</a>
+
+.. |OroPromotionBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/PromotionBundle" target="_blank">OroPromotionBundle</a>
+
+.. |OroRedirectBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/RedirectBundle" target="_blank">OroRedirectBundle</a>
+
+.. |OroSEOBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/SEOBundle" target="_blank">OroSEOBundle</a>
+
+.. |OroTaxBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/TaxBundle" target="_blank">OroTaxBundle</a>
+
+.. |OroWebCatalogBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebCatalogBundle" target="_blank">OroWebCatalogBundle</a>
+
+.. |OroWebsiteSearchBundle| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebsiteSearchBundle" target="_blank">OroWebsiteSearchBundle</a>
+
+
+

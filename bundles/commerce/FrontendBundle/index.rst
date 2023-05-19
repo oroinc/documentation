@@ -5,7 +5,7 @@
 OroFrontendBundle
 =================
 
-OroFrontendBundle enables the storefront for interacting with customers in Oro application. The storefront complements the back-office UI that is available to the company employees only.
+|OroFrontendBundle| enables the storefront for interacting with customers in Oro application. The storefront complements the back-office UI that is available to the company employees only.
 
 .. hint::
     For information on Storefront REST API, please see a dedicated :ref:`topic <web-api--storefront>`.
