@@ -5,6 +5,8 @@
 OroSellerDashboardBundle
 ========================
 
+.. note:: This bundle is only available in the Enterprise edition.
+
 In enterprise edition, OroSellerDashboardBundle provides a Seller Dashboard type to the dashboards.
 The dashboard shows a pre-configured dashboard with e-commerce statistics like Orders number and revenue, products or top selling items.
 
@@ -111,7 +113,6 @@ to extend from ``AbstractChartDataProvider`` as it already contains commonly use
 
 .. code-block:: php
 
-    <?php
     namespace My\Bundle\SellerDashboardBundle\Provider;
     ...
     class MyChartDataProvider extends AbstractChartDataProvider implements ChartDataProviderInterface
@@ -138,7 +139,6 @@ initial state of the chart, e.g. ``Oro\Bundle\SellerDashboardBundle\Twig\OrderCh
 
 .. code-block:: php
 
-    <?php
 
     namespace My\Bundle\SellerDashboardBundle\Twig;
 

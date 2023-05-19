@@ -3,7 +3,7 @@
 OroPromotionBundle
 ==================
 
-This bundle adds coupon and promotion features to the OroCommerce application.
+|OroPromotionBundle| adds coupon and promotion features to the OroCommerce application.
 
 With this bundle, a back-office administrator can enable or disable these features in the system configuration UI. The bundle introduces UI in the back-office for sales representatives to create and manage coupons and promotions and apply promotions to the customer orders via special discounts and coupon codes. For the customer users on the storefront, it provides the ability to apply coupons to the orders and review the applied promotions and discounts.
 
@@ -186,3 +186,6 @@ Applied Promotions
 
 When saving the ``Oro\Bundle\OrderBundle\Entity\Order`` entity, all discounts from ``Oro\Bundle\PromotionBundle\Discount\DiscountContext`` are converted to ``Oro\Bundle\PromotionBundle\Entity\AppliedDiscount`` entities. In addition, based on the provided discount information, ``Oro\Bundle\PromotionBundle\Manager\AppliedPromotionManager`` creates ``Oro\Bundle\PromotionBundle\Entity\AppliedPromotion``. ``Oro\Bundle\PromotionBundle\Entity\AppliedPromotion`` stores promotions and their discounts in the state where they were at the time of use. So, even if a promotion was changed or deleted, you can use the old promotion configuration for discount calculation.
 To disable the saved ``Oro\Bundle\PromotionBundle\Entity\AppliedPromotion``, use ``Oro\Bundle\PromotionBundle\Discount\DisabledDiscountDecorator``, ``Oro\Bundle\PromotionBundle\Discount\DisabledDiscountContextDecorator``, ``Oro\Bundle\PromotionBundle\Discount\DisabledDiscountLineItemDecorator`` decorators that help ignore the discount that the applied promotion gives.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

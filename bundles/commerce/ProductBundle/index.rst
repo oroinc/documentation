@@ -5,7 +5,7 @@
 OroProductBundle
 ================
 
-OroProductBundle adds the Product entity to the OroCommerce application, provides UI for the OroCommerce back-office user to create and manage simple or configurable products and product brands, and enables the configuration of product presentation in the storefront via the system configuration menu.
+|OroProductBundle| adds the Product entity to the OroCommerce application, provides UI for the OroCommerce back-office user to create and manage simple or configurable products and product brands, and enables the configuration of product presentation in the storefront via the system configuration menu.
 
 Related Documentation
 ---------------------

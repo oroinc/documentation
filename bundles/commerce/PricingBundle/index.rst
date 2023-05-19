@@ -5,7 +5,7 @@
 OroPricingBundle
 ================
 
-OroPricingBundle introduces prices for products in OroCommerce.
+|OroPricingBundle| introduces prices for products in OroCommerce.
 
 For back-office users (e.g. sales representatives), the bundle enables the following actions:
 
@@ -28,3 +28,5 @@ Related Documentation
    Commands <commands>
 
 
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
