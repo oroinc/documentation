@@ -84,7 +84,7 @@ The |DescriptionsConfigExtra| is used to request human-readable descriptions of 
 
 Usually, configuration extras are added to the context by the ``InitializeConfigExtras`` processors, which belong to the ``initialize group``, e.g., the |InitializeConfigExtras| processor for the ``get`` action. However, the API documentation requires human-readable descriptions. Therefore, |DescriptionsConfigExtra| is added by |RestDocHandler|.
 
-The |CompleteDescriptions| processor adds entities, fields, and filter descriptions. This processor is registered as a service in |processors.get_config.yml|. Note that the processor tag contains the ``extra`` attribute with the ``descriptions&definition`` value. This means that the processor will be executed only if the extra configuration (in this case, ``description`` and ``definition``) were requested. For more details, see :ref:`processor conditions <web-api--processors>`.
+The |CompleteDescriptions| processor adds entities, fields, and filter descriptions. This processor is registered as a service in |processors.get_config.yml|. Note that the processor tag contains the ``extra`` attribute with the ``descriptions`` value. This means that the processor will be executed only if the extra configuration (in this case ``descriptions``) were requested. For more details, see :ref:`processor conditions <web-api--processors>`.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
