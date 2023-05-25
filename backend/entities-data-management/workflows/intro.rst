@@ -211,9 +211,9 @@ Workflow consists of several related entities.
 
 * **Workflow Item** is associated with the workflow and indirectly associated with Steps, Transitions and Attributes. It has its own state in the workflow data, the current step, and other data. The workflow item stores the entity identifier and the entity class that has an associated workflow.
 
-* **TransitionTriggerEvent** allows to perform a transition when during an entity event Doctrine triggers a corresponding event.
+* **TransitionEventTrigger** allows to perform a transition when during an entity event Doctrine triggers a corresponding event.
 
-* **TransitionTriggerCron** allows to perform a transition by cron definition.
+* **TransitionCronTrigger** allows to perform a transition by cron definition.
 
 
 .. include:: /include/include-links-dev.rst
