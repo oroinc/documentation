@@ -645,7 +645,7 @@ Links (User)
 
 .. |Download the .json file| raw:: html
 
-   <a href="https://oroinc.com/downloads/oro_container.zip" target="_blank">Download the .json file</a>
+   <a href="https://academy.oroinc.com/wp-content/uploads/sites/21/2023/05/oroUaContainer-24-05-23.zip" target="_blank">Download the .json file</a>
 
 .. |importgtm| raw:: html
 
@@ -842,7 +842,7 @@ Links (User)
 
 .. |Download the .json file (GA4)| raw:: html
 
-   <a href="http://academy.oroinc.com/wp-content/uploads/sites/21/2022/06/oroGa4Container.zip" target="_blank">Download the .json file</a>
+   <a href="https://academy.oroinc.com/wp-content/uploads/sites/21/2023/05/oroGa4Container-24-05-23.zip" target="_blank">Download the .json file</a>
 
 .. |Google Analytics 4 Event| raw:: html
 

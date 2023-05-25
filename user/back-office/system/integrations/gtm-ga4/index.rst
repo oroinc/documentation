@@ -527,7 +527,7 @@ The |purchaseGA4| tag signifies that a customer user has submitted an order.
 
 * **Trigger Type** --- Custom Event
 * **Event name** --- purchase
-* **This trigger fires on** --- All Custom Events
+* **This trigger fires on** --- Some Custom Events. For this trigger, add the following condition: *ecommerce.items > does not equal > undefined*.
 
 
 
