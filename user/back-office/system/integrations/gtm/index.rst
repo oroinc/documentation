@@ -447,7 +447,7 @@ To configure it correctly, provide the following tag, trigger, and variable conf
 
 * **Name** --- purchase
 * **Trigger Type** --- Custom Event
-* **The trigger fires on** --- All Custom Events
+* **The trigger fires on** --- Some Custom Events. For this trigger, add the following condition: *ecommerce.items > equals > undefined*.
 
 .. image:: /user/img/system/integrations/gtm/purchase.png
    :alt: purchase tag configuration details
