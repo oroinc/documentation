@@ -447,8 +447,7 @@ The |view_promotion| tag signifies that a customer user has reviewed a slider fr
 
 * **Trigger Type** --- Custom Event
 * **Event name** --- view_promotion
-* **This trigger fires on** --- All Custom Events
-
+* **This trigger fires on** --- Some Custom Events. For this trigger, add the following condition: *ecommerce.items > does not equal > undefined*.
 
 .. _gtm-ga4-purchase:
 
