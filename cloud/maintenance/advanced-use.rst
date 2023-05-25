@@ -62,6 +62,35 @@ With `orocloud.yaml` it is possible to override the following nodes:
         upgrade_commands: # Application commands which run during update process
           - 'oro:platform:update'
 
+**pre_upgrade_commands, post_upgrade_commands, pre_maintenance_commands, post_maintenance_commands**
+
+Set up notifications using :ref:`Maintenance mode notifications <bundle-docs-platform-notification-bundle>` for :ref:`Upgrades <orocloud-maintenance-use-upgrade>` and :ref:`Maintenance Mode <dev-cookbook-system-websockets-maintenance-mode>`.
+
+.. code-block:: yaml
+
+    ---
+    orocloud_options:
+      deployment:
+        # Executed after `oro:platform:update` dry-run check.
+        # Executed before `oro:platform:update --force` or customized `upgrade_commands` commands.
+        pre_upgrade_commands: 
+          - 'oro:maintenance-notification --message=Deploy\ start --subject=At\ UAT'
+
+        # Executed after `oro:platform:update` dry-run check.
+        # Executed before `oro:platform:update --force` or customized `upgrade_commands` commands, `oro:maintenance:lock` or `lexik:maintenance:lock` commands.
+        # Works with Upgrade With Downtime using `orocloud-cli upgrade` only.
+        pre_maintenance_commands:
+          - 'oro:maintenance-notification --message=Maintenance\ start --subject=At\ UAT'
+
+        # Executed after `oro:platform:update --force` or customized `upgrade_commands` commands, `oro:maintenance:unlock` or `lexik:maintenance:unlock` commands.
+        # Works with Upgrade With Downtime using `orocloud-cli upgrade` only.
+        post_maintenance_commands:
+          - 'oro:maintenance-notification --message=Maintenance\ finish --subject=At\ UAT'
+
+        # Executed after `oro:platform:update --force` or customized `upgrade_commands` commands and services start.
+        post_upgrade_commands:
+          - 'oro:maintenance-notification --message=Deploy\ finish --subject=At\ UAT'
+
 **git clone configuration**
 
 .. code-block:: yaml
