@@ -1,8 +1,9 @@
 .. _bundles--commerce--customer-recommendation:
 
-
-Customer Recommendation Bundle
+CustomerRecommendationBundle
 ==============================
+
+.. note:: This bundle is only available in the Enterprise edition.
 
 The bundle adds two features to boost full-text search results using customer history - by customer actions and by total product revenue.
 

@@ -3,7 +3,7 @@
 OroRedirectBundle
 =================
 
-OroRedirectBundle enables slug management for the product, category, brand, and landing pages in the OroCommerce storefront.
+|OroRedirectBundle| enables slug management for the product, category, brand, and landing pages in the OroCommerce storefront.
 
 The bundle enables OroCommerce management console administrators to configure automatic slug generation and related options in the system configuration UI. It also provides the ability for content managers to modify slugs manually for every sluggable page.
 
@@ -90,3 +90,5 @@ Sluggable URLs Matching
 In Oro, we have implemented an extension over the Symfony default routing logic to match Semantic URLs. System URLs are matched first, followed by semantic.
 To skip some URL from slug matching, skip the list by calling `addSkippedUrlPattern` of  the `oro_redirect.routing.matched_url_decision_maker` service.
 
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

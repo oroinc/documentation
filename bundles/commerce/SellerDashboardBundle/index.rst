@@ -5,6 +5,8 @@
 OroSellerDashboardBundle
 ========================
 
+.. note:: This bundle is only available in the Enterprise edition.
+
 In enterprise edition, OroSellerDashboardBundle provides a Seller Dashboard type to the dashboards.
 The dashboard shows a pre-configured dashboard with e-commerce statistics like Orders number and revenue, products or top selling items.
 
@@ -91,10 +93,10 @@ As an example, the period ``Year``:
 
 .. code-block:: html
 
-    <ul class="buttonwrapper">
+    <div class="btn-group">
         ...
-        <li id="year"><label>{{ 'Orosellerdashboard.period.year'|trans }}</label></li>
-    </ul>
+        <button class="btn" data-period="year">{{ 'oro.seller_dashboard.period.year'|trans }}</button>
+    </div>
 
 * in ``AbstractChartDataProvider`` is used in methods ``getIntervalsForPeriod`` and ``getDateRanges``
 * in ``seller-dashboard-component.js`` is used to display currently selected period and appropriate label and to perform chart data request.
@@ -111,7 +113,6 @@ to extend from ``AbstractChartDataProvider`` as it already contains commonly use
 
 .. code-block:: php
 
-    <?php
     namespace My\Bundle\SellerDashboardBundle\Provider;
     ...
     class MyChartDataProvider extends AbstractChartDataProvider implements ChartDataProviderInterface
@@ -138,7 +139,6 @@ initial state of the chart, e.g. ``Oro\Bundle\SellerDashboardBundle\Twig\OrderCh
 
 .. code-block:: php
 
-    <?php
 
     namespace My\Bundle\SellerDashboardBundle\Twig;
 

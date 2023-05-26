@@ -3,7 +3,7 @@
 OroCommerceMenuBundle
 =====================
 
-OroCommerceMenuBundle uses |OroNavigationBundle| features to enable navigation menus in the Oro application storefront and allows admin users to configure menu items on the global level (for the entire system), for individual customers and customer groups.
+|OroCommerceMenuBundle| uses |OroNavigationBundle| features to enable navigation menus in the Oro application storefront and allows admin users to configure menu items on the global level (for the entire system), for individual customers and customer groups.
 
 .. toctree::
    :hidden:

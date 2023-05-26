@@ -5,7 +5,7 @@
 OroWebsiteSearchBundle
 ======================
 
-OroWebsiteSearchBundle extends OroSearchBundle capabilities to provide search functionality for the OroCommerce storefront, and creates an additional search index for this purpose based on the scopes.
+|OroWebsiteSearchBundle| extends OroSearchBundle capabilities to provide search functionality for the OroCommerce storefront, and creates an additional search index for this purpose based on the scopes.
 
 It also enables developers to configure this search index in the YAML configuration files in the individual bundles.
 
@@ -26,6 +26,10 @@ Related Documentation
    orm-engine
    relevance-weight
    testing
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
+
 
 
 

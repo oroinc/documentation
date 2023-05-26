@@ -226,6 +226,19 @@ Every bundle has its dedicated test suite that can be run separately:
 
     bin/behat -s OroUserBundle
 
+Running Сonsumers
+~~~~~~~~~~~~~~~~~
+
+To run multiple consumers during behat tests, you can use the ``--consumers`` option in ``bin/behat``, which applies an integer argument, for example:
+
+.. code-block:: none
+
+    bin/behat --consumers=4
+
+By default, when the option is not specified, 2 consumers are run.
+
+If you want to disable the background running of the message viewer, see the information here :ref:`Disable Message Consumer Background Running <behat-disable-message-consumer>`.
+
 Architecture
 ------------
 
@@ -339,6 +352,8 @@ Disable Feature Isolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can disable feature isolation by adding the ``--skip-isolators`` option to the bin/behat console command. As a result, the Behat no longer takes notice of the database, cache, and other layers' isolation. This means the application state is not restored to the initial state, and the result is preserved after the test.
+
+.. _behat-disable-message-consumer:
 
 Disable Message Consumer Background Running
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
