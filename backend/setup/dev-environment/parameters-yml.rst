@@ -26,6 +26,7 @@ Infrastructure-related configuration parameters are stored in the *config/parame
 * The ``deployment_type`` value defines the :ref:`type of the environment <environment-type-based-configuration>` where the project was deployed.
 * The ``liip_imagine.jpegoptim.binary`` path to the |JpegOptimPostProcessor| library.
 * The ``liip_imagine.pngquant.binary`` path to the |PngquantPostProcessor| library.
+* The ``maintenance_lock_file_path`` value is used to override default path for the maintenance lock file in the system.
 
 .. _book-installation-github-clone-configuration-params--default:
 
