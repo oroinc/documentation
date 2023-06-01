@@ -107,6 +107,9 @@ Application-level Structure Changes
     |   |   |── workflows/
     |   |   |   |── workflows_import/                    # A directory of workflows that can be registered with an import directive.
     |   |   |   └── workflows.yml                        # All application-level workflows must be registered here.
+    |   |   |── websocket_routing/                       # Gos PubSub routing resources.
+    |   |   |   |── websocket_routing_config.yml
+    |   |   |   └── ...
     |   |   |── assets.yml                               # Assets for administration themes/layouts.
     |   |   |── jsmodules.yml                            # Js modules for administration themes/layouts.
     |   |   └── behat_services.yml                       # Behat services must be registered here.
