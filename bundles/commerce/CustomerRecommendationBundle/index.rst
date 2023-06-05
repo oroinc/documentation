@@ -1,7 +1,7 @@
 .. _bundles--commerce--customer-recommendation:
 
 CustomerRecommendationBundle
-==============================
+============================
 
 .. note:: This bundle is only available in the Enterprise edition.
 

@@ -295,10 +295,6 @@ Links (User)
 
    <a href="https://academy.oroinc.com/media-library/tags-taxonomies" target="_blank">how to create taxonomies</a>
 
-.. |OroCronBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CronBundle" target="_blank">OroCronBundle</a>
-
 .. |ImapBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImapBundle" target="_blank">ImapBundle</a>
@@ -482,10 +478,6 @@ Links (User)
 .. |OroMessageQueueComponent| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/MessageQueue" target="_blank">OroMessageQueueComponent</a>
-
-.. |OroMessageQueueBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MessageQueueBundle" target="_blank">OroMessageQueueBundle</a>
 
 .. |Crowdin| raw:: html
 

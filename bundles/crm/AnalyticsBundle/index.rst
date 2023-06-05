@@ -3,7 +3,7 @@
 OroAnalyticsBundle
 ==================
 
-OroAnalyticsBundle provides a framework for developers to enable analytical metrics in Oro applications.
+|OroAnalyticsBundle| provides a framework for developers to enable analytical metrics in Oro applications.
 
 The bundle implements the |RFM| metrics and enables users to configure the score for the metrics' parameters for various sales channels. It also enables users to see RFM metrics on the account and customer view pages or build custom reports based on the calculated RFM metrics data.
 

@@ -3,7 +3,7 @@
 OroSalesBundle
 ==============
 
-OroSalesBundle adds sales leads and sales opportunities entities to enable sales representative activities in Oro applications.
+|OroSalesBundle| adds sales leads and sales opportunities entities to enable sales representative activities in Oro applications.
 
 The bundle provides UI to manage these records and allows back-office administrators to enable and disable the functionality in the system configuration UI.
 
@@ -112,3 +112,5 @@ Example:
     class Customer implements ExtendEntityInterface
     ...
 
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

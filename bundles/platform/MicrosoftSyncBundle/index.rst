@@ -5,7 +5,7 @@
 OroMicrosoftSyncBundle
 ======================
 
-OroMicrosoftSyncBundle enables integration with Microsoft 365 in the Oro applications via |Microsoft Graph API|.
+|OroMicrosoftSyncBundle| enables integration with Microsoft 365 in the Oro applications via |Microsoft Graph API|.
 
 The bundle allows to synchronize calendar events and tasks between the Oro application and Microsoft 365.
 

@@ -5,7 +5,7 @@
 OroActionBundle
 ===============
 
-OroActionBundle enables the user interface actions definition and configuration using YAML configuration files.
+|OroActionBundle| enables the user interface actions definition and configuration using YAML configuration files.
 
 On top of the common :ref:`Action Component <bundle-docs-platform-action-bundle-action-component>` and OroPlatform in general, ActionBundle provides a way to bring more complex solutions in ORO based projects with reusable components of configuration.
 
@@ -19,3 +19,6 @@ Related Documentation
 * :ref:`Operations Configuration Reference <bundle-docs-platform-action-bundle-configuration-reference>`
 * :ref:`Actions and Conditions in Operations <bundle-docs-platform-action-bundle-action-component>`
 * :ref:`Operations (Actions) Console Commands <bundle-docs-platform-action-bundle-commands>`
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

@@ -3,7 +3,7 @@
 OroAssetBundle
 ==============
 
-OroAssetBundle adds the possibility to install project assets using webpack.
+|OroAssetBundle| adds the possibility to install project assets using webpack.
 
 Architecture
 ------------

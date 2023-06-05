@@ -5,7 +5,7 @@
 OroWorkflowBundle
 =================
 
-OroWorkflowBundle enables developers to incorporate business processes into the Oro applications by defining and managing conditional sequences of entity transformations in Workflows and Processes YAML configuration files.
+|OroWorkflowBundle| enables developers to incorporate business processes into the Oro applications by defining and managing conditional sequences of entity transformations in Workflows and Processes YAML configuration files.
 
 Related Documentation
 ---------------------

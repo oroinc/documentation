@@ -3,7 +3,7 @@
 Code Generator for OroPlatform-based Applications (OroMakerBundle)
 ==================================================================
 
-Oro Maker Bundle provides a set of generators that create basic code for your project blazing fast with deep utilization of Oro Platform functionality.
+|OroMakerBundle| provides a set of generators that create basic code for your project blazing fast with deep utilization of Oro Platform functionality.
 
 What Can Be Generated
 ---------------------
@@ -238,3 +238,6 @@ Complex Example
                         type: string
 
 `is_related_entity` indicates that the entity has no CRUD and is managed through the owning entity.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

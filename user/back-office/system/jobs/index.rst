@@ -38,3 +38,6 @@ in |OroMessageQueueComponent| and |OroMessageQueueBundle|.
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
