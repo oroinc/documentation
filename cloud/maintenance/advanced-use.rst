@@ -782,40 +782,6 @@ Please use the following conventions to design your `sanitize.update_*` strategy
   * `date` — Replaces the date values with the current date and time.
   * `attachment` — Replaces the attachment file content with a dummy blank image.
 
-Elasticsearch Synonyms Configuration
-------------------------------------
-
-.. note:: Please avoid simultaneous use of :ref:`search synonyms <bundle-docs-commerce-website-elasticsearch-bundle-synonyms>` and the method of adding synonyms described in this article, as this will lead to unpredictable behavior.
-
-To configure synonyms in Elasticsearch service, use the following field in orocloud.yaml:
-
-.. code-block:: none
-
-    orocloud_options:
-      elasticsearch:
-        synonyms:
-          'index_name1':
-            - 'foo, bar, baz'
-            - 'spam, eggs, meal'
-            - 'null, void'
-          'index_name2':
-            - 'Alice, Bob, Dave, John'
-
-You can use separate synonym lists for each index, or use '*' as index name in order to apply the same synonyms list to all indices.
-
-.. code-block:: none
-
-    orocloud_options:
-      elasticsearch:
-        synonyms:
-          '*':
-            - 'foo, bar, baz'
-            - 'spam, eggs, meal'
-            - 'null, void'
-            - 'Alice, Bob, Dave, John'
-
-.. note:: Please keep in mind that synonyms configuration will be not applied immediately. All changes made in orocloud.yaml require up to 40 minutes to apply. More details for synonyms usage may be found in |official Elasticsearch documentation|.
-
 Environments Data Synchronization
 ---------------------------------
 
