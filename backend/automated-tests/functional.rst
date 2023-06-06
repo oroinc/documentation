@@ -464,10 +464,10 @@ In this example, a user without sufficient permissions is trying to access a con
 .. code-block:: php
    :caption: src/Oro/Bundle/UserBundle/Tests/Functional/UsersTest
 
-    namespace Oro\Bundle\UserBundle\Tests\Functional;
+    namespace Oro\Bundle\UserBundle\Tests\Functional\Controller;
 
-    use Oro\Bundle\UserBundle\Tests\Functional\DataFixtures\LoadUserData;
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
+    use Oro\Bundle\UserBundle\Tests\Functional\DataFixtures\LoadUserData;
 
     /**
      * @outputBuffering enabled
@@ -477,7 +477,7 @@ In this example, a user without sufficient permissions is trying to access a con
         protected function setUp()
         {
             $this->initClient();
-            $this->loadFixtures(['Oro\Bundle\UserBundle\Tests\Functional\API\DataFixtures\LoadUserData']);
+            $this->loadFixtures([LoadUserData::class]);
         }
 
         public function testUsersIndex()
@@ -516,27 +516,23 @@ Here is an example of a fixture that adds a user without permissions:
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Persistence\ObjectManager;
-
-    use Symfony\Component\DependencyInjection\ContainerAwareInterface;
-    use Symfony\Component\DependencyInjection\ContainerInterface;
-
     use Oro\Bundle\UserBundle\Entity\Role;
     use Oro\Bundle\UserBundle\Entity\UserApi;
+    use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+    use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 
     class LoadUserData extends AbstractFixture implements ContainerAwareInterface
     {
-        const USER_NAME     = 'user_wo_permissions';
-        const USER_API_KEY  = 'user_api_key';
-        const USER_PASSWORD = 'user_password';
+        use ContainerAwareTrait;
 
-        private $container;
+        public const USER_NAME = 'user_wo_permissions';
+        public const USER_API_KEY = 'user_api_key';
+        public const USER_PASSWORD = 'user_password';
 
-        public function setContainer(ContainerInterface $container = null)
-        {
-            $this->container = $container;
-        }
-
-        public function load(ObjectManager $manager)
+        /**
+         * {@inheritDoc}
+         */
+        public function load(ObjectManager $manager): void
         {
             /** @var \Oro\Bundle\UserBundle\Entity\UserManager $userManager */
             $userManager = $this->container->get('oro_user.manager');
@@ -645,6 +641,7 @@ To test services or repositories, you can access the service container through t
     namespace Oro\Bundle\FooBarBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
+    use Oro\Bundle\UserBundle\Tests\Functional\DataFixtures\LoadFooBarData;
 
     class FooBarTest extends WebTestCase
     {
@@ -653,7 +650,7 @@ To test services or repositories, you can access the service container through t
         protected function setUp()
         {
             $this->initClient();
-            $this->loadFixtures(['Oro\Bundle\FooBarBundle\Tests\Functional\API\DataFixtures\LoadFooBarData']);
+            $this->loadFixtures([LoadFooBarData::class]);
             $this->repositoryOrService = $this->getContainer()->get('repository_or_service_id');
         }
 
