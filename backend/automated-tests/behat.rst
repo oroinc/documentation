@@ -930,15 +930,44 @@ Type the following command in your console:
 
     bin/behat -dl -s AcmeDemoBundle | grep "flash message"
 
-.. image:: /img/backend/tests/grep_flash_messages.png
-    :alt: Grep flash messages in the console
+
+.. code-block:: bash
+
+    $ bin/behat -dl -s OroUserBundle | grep "flash message"
+    OroUserBundle | Then /^(?:|I )follow "(?P<title>[^"]+)" link within flash message "(?P<message>([^"\\]|\\.)*)"$/
+    OroUserBundle | Then /^(?:|I )should see "(?P<title>[^"]+)" flash message$/
+    OroUserBundle | Then /^(?:|I )should see '(?P<title>[^']+)' flash message$/
+    OroUserBundle | Then /^(?:|I )should not see "(?P<title>[^"]+)" flash message$/
+    OroUserBundle | Then /^(?:|I )should not see '(?P<title>[^']+)' flash message$/
+    OroUserBundle | Then /^(?:|I )should see "(?P<title>[^"]+)" flash message and I close it$/
+    OroUserBundle | Then /^(?:|I )should see '(?P<title>[^']+)' flash message and I close it$/
+    OroUserBundle | Then /^(?:|I )close all flash messages$/
+    OroUserBundle | Then I should not see flash messages
+    OroUserBundle | Then /^(?:|I )should see only following flash messages:$/
+    OroUserBundle | Then /^(?:|I )should see following flash messages:$/
+    OroUserBundle | Then /^(?:|I )should see (Schema updated) flash message$/
+
 
 .. code-block:: none
 
     bin/behat -dl -s AcmeDemoBundle | grep "grid"
 
-.. image:: /img/backend/tests/grep_grid.png
-    :alt: Grep flash messages in the console
+
+.. code-block:: none
+
+    $ bin/behat -dl -s OroUserBundle | grep "grid"
+    OroUserBundle | Then /^I see that grid has scrollable header$/
+    OroUserBundle | Then /^I see that grid header is sticky$/
+    OroUserBundle | When /^I don't select any record from "(?P<gridName>[^"]+)"$/
+    OroUserBundle | Then I edit first record from grid:
+    OroUserBundle | Then /^(?:|I )should see following grid:$/
+    OroUserBundle | Then /^(?:|I )should see following "(?P<gridName>[^"]+)" grid:$/
+    OroUserBundle | Then /^(?:|I )should see following grid containing rows:$/
+    OroUserBundle | Then /^(?:|I )should see following "(?P<gridName>[^"]+)" grid containing rows:$/
+    OroUserBundle | Then /^(?:|I )should see following grid with exact columns order:$/
+    OroUserBundle | Then /^(?:|I )should see following "(?P<gridName>[^"]+)" grid with exact columns order:$/
+    OroUserBundle | Then /^It should be (?P<count>.+) columns in grid$/
+
 
 You can use the behat command-line interface only after you install the application.
 
