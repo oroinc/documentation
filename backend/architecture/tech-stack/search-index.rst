@@ -428,7 +428,7 @@ References
 * |Web Performance Tuning: 4.2. Latency and Throughput|
 * :ref:`Standard Search Index Type <search_index_db_from_md>`
 * :ref:`Elasticsearch support for Standard Index Type <elastic-search>`
-* |Website Search Index Type|
+* :ref:`Website Search Index Type <bundle-docs-commerce-website-search-bundle>`
 
 
 .. include:: /include/include-links-dev.rst

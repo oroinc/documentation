@@ -5,7 +5,7 @@
 OroMessageQueueBundle
 =====================
 
-OroMessageQueueBundle incorporates the OroMessageQueue component into OroPlatform and thereby provides message queue processing capabilities for all application components.
+|OroMessageQueueBundle| incorporates the OroMessageQueue component into OroPlatform and thereby provides message queue processing capabilities for all application components.
 
 Related Documentation
 ---------------------
@@ -31,3 +31,6 @@ Related Documentation
    :hidden:
 
    Commands <commands>
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

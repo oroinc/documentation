@@ -5,7 +5,7 @@
 OroEntityConfigBundle
 =====================
 
-OroEntityConfigBundle enables developers to define and configure the entities metadata in the YAML configuration files and provides the ability for the application users to set values of these metadata properties in the entity management UI.
+|OroEntityConfigBundle| enables developers to define and configure the entities metadata in the YAML configuration files and provides the ability for the application users to set values of these metadata properties in the entity management UI.
 
 Related Documentation
 ---------------------

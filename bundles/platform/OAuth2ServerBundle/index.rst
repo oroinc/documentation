@@ -8,7 +8,7 @@
 OroOAuth2ServerBundle
 =====================
 
-OroOAuth2ServerBundle provides OAuth 2.0 authorization and resource server capabilities implemented
+|OroOAuth2ServerBundle| provides OAuth 2.0 authorization and resource server capabilities implemented
 on top of |thephpleague/oauth2-server| library.
 
 Currently, Authorization Code, Client Credentials and Password grants are implemented.

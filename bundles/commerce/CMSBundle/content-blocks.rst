@@ -10,7 +10,7 @@ The `ContentBlock` entity fields consist of:
 .. csv-table::
 
    "`alias`","A unique identifier that can be used in the layout to :ref:`render a block <bundle-docs-commerce-cms-bundle-render-content-blocks>`."
-   "`scopes`","A collection of scopes that defines the conditions for the content block to be displayed. For more information, refer to the |ScopeBundle| documentation."
+   "`scopes`","A collection of scopes that defines the conditions for the content block to be displayed. For more information, refer to the |OroScopeBundle| documentation."
    "`titles`","A localized block title that can be rendered along with the scope."
    "`contentVariants`","A collection of the `TextContentVariant` entities. Each content variant has a scope that defines when it should be rendered. Only one content variant with the most suitable scope is rendered at a time. If there is no suitable content variant, the default one is rendered instead."
 

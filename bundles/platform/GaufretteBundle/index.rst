@@ -5,7 +5,7 @@
 OroGaufretteBundle
 ==================
 
-OroGaufretteBundle is a facade for KnpGaufretteBundle that enables a filesystem abstraction layer in the Oro applications and provides a simplified file manager service for media files.
+|OroGaufretteBundle| is a facade for KnpGaufretteBundle that enables a filesystem abstraction layer in the Oro applications and provides a simplified file manager service for media files.
 
 Related Documentation
 ---------------------

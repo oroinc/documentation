@@ -5,7 +5,7 @@
 OroActivityBundle
 =================
 
-OroActivityBundle helps classify certain entity types as activities and enables a special relation type between an entity and activities. Activity relations can be managed in the entity management UI and in the DB migration files.
+|OroActivityBundle| helps classify certain entity types as activities and enables a special relation type between an entity and activities. Activity relations can be managed in the entity management UI and in the DB migration files.
 
 Related Documentation
 ---------------------
@@ -22,3 +22,6 @@ Related Documentation
    :hidden:
 
    Commands <commands>
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

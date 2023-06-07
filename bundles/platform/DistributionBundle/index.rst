@@ -3,7 +3,7 @@
 OroDistributionBundle
 =====================
 
-OroDistributionBundle enables application bundles registration based on their YAML configuration files without changing the application files. It also provides CLI to manage Oro packages in the applications.
+|OroDistributionBundle| enables application bundles registration based on their YAML configuration files without changing the application files. It also provides CLI to manage Oro packages in the applications.
 
 Use the Bundle
 --------------

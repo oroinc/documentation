@@ -5,7 +5,7 @@
 OroEntityPaginationBundle
 =========================
 
-OroEntityPaginationBundle enables pagination UI for a collection of entities when these entities are part of a data set of a DataGrid.
+|OroEntityPaginationBundle| enables pagination UI for a collection of entities when these entities are part of a data set of a DataGrid.
 
 Related Documentation
 ---------------------
@@ -13,3 +13,6 @@ Related Documentation
 * :ref:`Enable Pagination <data-grids-entity-pagination>`
 * :ref:`Handle Pagination Process in System Configuration <data-grids-entity-pagination-sys-config>`
 * :ref:`Backend Pagination Processing <data-grids-entity-pagination-backend-processing>`
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

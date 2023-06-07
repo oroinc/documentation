@@ -5,7 +5,7 @@
 OroDataGridBundle
 =================
 
-OroDataGridBundle allows to define YAML configuration of data collection presentation in a grid form.
+|OroDataGridBundle| allows to define YAML configuration of data collection presentation in a grid form.
 
 Related Documentation
 ---------------------

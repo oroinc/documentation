@@ -5,7 +5,7 @@
 OroEmailBundle
 ==============
 
-OroEmailBundle introduces mailing functionality based on the |Symfony Mailer| component. It enables system and
+|OroEmailBundle| introduces mailing functionality based on the |Symfony Mailer| component. It enables system and
 user mailboxes in the application and provides the ability to synchronize mailboxes with mail servers,
 send emails from the application and use email templates.
 

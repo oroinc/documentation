@@ -5,7 +5,7 @@
 OroDraftBundle
 ==============
 
-OroDraftBundle allows to edit and publish a version of a Draftable entity record that will need more work in order to be finished.
+|OroDraftBundle| allows to edit and publish a version of a Draftable entity record that will need more work in order to be finished.
 
 Related Documentation
 ---------------------
@@ -25,3 +25,6 @@ Related Documentation
    how-to-use-draft-filter
    how-to-resolve-draft-conflicts
    how-to-use-draft-extension
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

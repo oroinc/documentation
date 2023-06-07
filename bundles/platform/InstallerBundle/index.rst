@@ -3,7 +3,7 @@
 OroInstallerBundle
 ==================
 
-OroInstallerBundle enables developers to install Oro applications in a prepared environment using the CLI and define activities for the installation process on a bundle level.
+|OroInstallerBundle| enables developers to install Oro applications in a prepared environment using the CLI and define activities for the installation process on a bundle level.
 
 For installation instructions, please see the :ref:`Installation <install-for-dev>` topic.
 
