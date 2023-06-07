@@ -6071,5 +6071,6 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebsiteSearchBundle" target="_blank">OroWebsiteSearchBundle</a>
 
+.. |OroShoppingListBundle| raw:: html
 
-
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ShoppingListBundle" target="_blank">ShoppingListBundle</a>
