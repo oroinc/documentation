@@ -121,6 +121,8 @@ Set WebSocket settings in the parameters.yml file:
     websocket_backend_path:  ""
     websocket_backend_transport: "tcp"
     websocket_backend_ssl_context_options: {}
+    websocket_frontend_user_agent: null
+    websocket_backend_user_agent: null
 
 If you want to make backend work under secure connection as well, change the corresponding parameters:
 
@@ -139,6 +141,13 @@ If you use untrusted SSL certificate, configure the websocket_backend_ssl_contex
         verify_peer_name: false
 
 .. warning:: Please keep in mind that having peer verification disabled is not recommended in production.
+
+If you use a custom User Agent identifier for internal WebSocket connections, change the corresponding parameters:
+
+.. code-block:: yaml
+
+    websocket_frontend_user_agent: 'user-agent/1.2.3'
+    websocket_backend_user_agent: 'user-agent/1.2.3'
 
 Since WebSocket server is running as a service, there are three host:port pairs for configuration:
 
