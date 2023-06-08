@@ -31,6 +31,7 @@ To create a GA4 property, navigate to your Google Analytics account.
 .. image:: /user/img/system/integrations/gtm/create-GA4-property-2.png
    :alt: Illustrating the steps to be followed to create a new GA4 property based on method 2
 
+.. note:: You can enable cross-domain tracking to be able to track user interactions across multiple domains using a single GA4 property. See the |Implement Cross-Domain Measurement| article on the Google website for more information.
 
 Set up a Data Stream
 ^^^^^^^^^^^^^^^^^^^^
@@ -513,6 +514,7 @@ Once the GTM integration is configured, you must connect it to the application i
 * :ref:`Enable the Google Tag Manager integration globally <system-configuration-integrations-google>`
 * :ref:`Enable the Google Tag Manager integration per organization <organization-google-settings>`
 * :ref:`Enable the Google Tag Manager integration per website <website-google-settings>`
+* |Implement Cross-Domain Measurement|
 
 
 

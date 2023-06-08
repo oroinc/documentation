@@ -21,6 +21,8 @@ To configure Google Tag Manager and Hangouts settings per organization:
 3. Click **System Configuration > Integrations > Google Settings** in the menu to the left.
 4. In **Google Tag Manager Settings**, clear the **Use System** checkbox and select a :ref:`Google Tag Manager Integration <gtm-ga-4-integration>` from the list to configure it for the application and enable data mapping.
 
+   .. note:: You can enable cross-domain tracking to be able to track user interactions across multiple domains using a single GA4 property. See the |Implement  Cross-Domain Measurement| article on the Google website for more information.
+
 5. In the **Google Hangouts** section, provide the following details:
 
    * **Enable For Emails** --- Check the box to enable Google Hangouts for emails.
@@ -31,4 +33,7 @@ By default, **Enable For Emails** and **Enable For Phones** are enabled.
 6. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin
