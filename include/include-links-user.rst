@@ -892,3 +892,8 @@ Links (User)
 .. |Stripe Integration| raw:: html
 
    <a href="https://packagist.oroinc.com/#oro/commerce-stripe" target="_blank">Stripe Integration</a>
+
+.. |Implement Cross-Domain Measurement| raw:: html
+
+   <a href="https://developers.google.com/tag-platform/devguides/cross-domain#when_to_implement_cross-domain_measurement" target="_blank">Implement Cross-Domain Measurement</a>
+
