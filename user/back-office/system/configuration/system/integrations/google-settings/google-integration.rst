@@ -33,7 +33,6 @@ To configure Google integration-related settings in the back-office:
 
 * :ref:`Configure Global Google Settings <admin-configuration-integrations-google>`
 * :ref:`Configure Google Single Sign On <user-guide-google-single-sign-on>`
-* :ref:`Set Up Voice and Video Calls via Hangouts <user-guide-hangouts>`
 * :ref:`Configure Google Tag Manager Integration <gtm-ga-4-integration>`
 
 .. include:: /include/include-links-user.rst

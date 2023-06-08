@@ -21,7 +21,7 @@ From the Page of All Events
 To add a calendar event when viewing a list of events:
 
 1. Navigate to **Activities > Calendar Events** in the main menu.
-2. On the page that opens, click **Create Calendar Event** on the top right. 
+2. On the page that opens, click **Create Calendar Event** on the top right.
 3. On the **Create Calendar Event** page, provide the following information:
 
    * **Owner** --- A user who is eligible to manage this event and who is responsible for it. The event appears in the calendar of the owner. By default, a person who is creating an event is selected as its owner. To change the owner, select another user from the list.
@@ -29,7 +29,7 @@ To add a calendar event when viewing a list of events:
    * **Description** --- Any details regarding the event: summary, agenda, etc. Use the embedded editor to format text, add images, links, etc.
 
      .. important:: Whether the embedded editor is available is specified in the configuration. If you have access to the **My Configuration** page, see the **WYSIWYG settings** section of the :ref:`Display Settings <doc-my-user-configuration-display>` description.
-     
+
        * If you do not have access to the page, contact your administrator, who can enable the editor at the organization level.
        * If you are an administrator, see the **WYSIWYG settings** section of the :ref:`System Display Settings <doc-configuration-display-settings>` description.
 
@@ -40,7 +40,7 @@ To add a calendar event when viewing a list of events:
 
    .. important:: The list of available colors is specified in the system configuration. Please contact your administrator if you want to change it. If you are an administrator, see the **Calendar settings** section of the :ref:`Display Settings <doc-configuration-display-settings>` description.
 
-   * **Add to ...** or **Calendar** --- You will see one of these additional settings if any system calendars are defined in the system: 
+   * **Add to ...** or **Calendar** --- You will see one of these additional settings if any system calendars are defined in the system:
 
      * The **Add to ...** option appears when only a single system calendar exists. When enabled, the event is added to the system calendar.
      * The **Calendar** list appears when several system calendars exist. Select the calendar from the list to move the event to it.
@@ -59,12 +59,6 @@ To add a calendar event when viewing a list of events:
 
      .. note:: In the Oro applications, an event start time is displayed adjusted according to the recipient's timezone settings both in notification emails and flash messages.  (That is, if the event is set to start at 7 a.m. in the organizational calendar that is run according to the New York time, the start time displayed in the reminder to the user in Tokio will be 8 p.m.)
 
-   * **Call via Hangout** --- Enable this option to plan a Google Hangout meeting for the calendar event. When enabled, a button that starts Hangout call appears on the event card and view page when viewed by the guest.
-
-     .. important:: For Hangouts calls to be possible, integration with Google services should be created. Contact your administrator or see :ref:`Google Integration Settings <admin-configuration-integrations-google>` for more information.
-
-     .. tip:: For more help on Hangouts calls, see |Hangouts Help| on google.com.
-
    * **Context** --- Select a record that has a meaningful relation to the event. Start entering a record name to quickly find the required user, and when the list of suggestions appears, click the required name to select it. The event is now linked to the selected item and is displayed in its **Activity** section.
 
    * **Start** --- Specify day and time when the event starts. Click the day field to select a day in the calendar dialog. Click the time field to select a time from the list. Alternatively, you can type in date and time values.
@@ -77,9 +71,9 @@ To add a calendar event when viewing a list of events:
 
    * **All-day event** --- Enable this option to reserve the whole day(s) for the event.
 
-   * **Repeat** --- Enable this option for a recurring event. Once you enable it, you can configure the event schedule. 
-     
-     * **Repeats**: Select how often the event repeats: daily, weekly, monthly, or yearly. 
+   * **Repeat** --- Enable this option for a recurring event. Once you enable it, you can configure the event schedule.
+
+     * **Repeats**: Select how often the event repeats: daily, weekly, monthly, or yearly.
      * **Ends**: Select when the event ends (never, after ... occurrences, by date).
 
 4. Click **Save and Close**.
@@ -93,7 +87,7 @@ To create a calendar event when viewing the related record (e.g., opportunity, c
 
    .. image:: /user/img/activities/events_actions_add_related0.png
       :alt: Creating a calendar event from the page of a related record
-    
+
 2. In the **Add Event** dialog box, specify event details, as described in the Create Calendar Event :ref:`From the Page of All Events <doc-activities-events-details>`  section above.
 
 3. Click **Save** on the top right.
@@ -114,7 +108,7 @@ To add calendar events on the **My Calendar** page or in the **Today's Calendar*
 2. Click the empty cell that represents the desired time period. If you are adding an event from the widget, you can alternatively click the **New Event** button on the top right of the widget.
 
 3. In the **Add Calendar Event** dialog box, specify the event details.
-  
+
 4. Click **Save**. The event appears in your calendar if you have specified yourself as an event owner or a guest.
 
 5. Refresh a page to update the widget after creating the new event.

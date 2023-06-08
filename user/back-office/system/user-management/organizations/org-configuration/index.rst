@@ -32,7 +32,6 @@ The following categories of settings are available for system configuration at o
 
   * Integrations
 
-    * :ref:`Google Settings <user-guide-hangouts-org>`
     * :ref:`Microsoft Settings <organization-configuration-microsoft>`
 
 

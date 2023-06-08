@@ -15,10 +15,6 @@ Links (User)
 
    <a href="https://academy.oroinc.com/media-library/create-manage-events-orocrm#play=lZKiS3TvXNU" target="_blank">how to create and manage events in your Oro application</a>
 
-.. |Hangouts Help| raw:: html
-
-   <a href="https://support.google.com/hangouts#topic=6386410" target="_blank">Hangouts Help</a>
-
 .. |how to create and manage tasks| raw:: html
 
    <a href="https://academy.oroinc.com/media-library/create-and-manage-tasks" target="_blank">how to create and manage tasks</a>
