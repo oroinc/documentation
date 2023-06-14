@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\CMSBundle\Entity;
+namespace Acme\Bundle\CMSBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Oro\Bundle\DraftBundle\Entity\DraftableInterface;
@@ -12,7 +12,7 @@ use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
 use Oro\Bundle\UserBundle\Entity\Ownership\UserAwareTrait;
 
 /**
- * Represents ACME Block
+ * Represents Acme Block
  *
  * @ORM\Table(name="acme_cms_block")
  * @ORM\Entity()

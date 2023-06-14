@@ -291,7 +291,7 @@ Invalid template:
     <table>
         <thead>
             <tr>
-                <th><strong>ACME</strong></th>
+                <th><strong>Acme</strong></th>
             </tr>
         </thead>
         {% for item in collection %}
@@ -316,7 +316,7 @@ Valid template:
     <table>
         <thead>
             <tr>
-                <th><strong>ACME</strong></th>
+                <th><strong>Acme</strong></th>
             </tr>
         </thead>
         <!--{% for item in collection %}-->

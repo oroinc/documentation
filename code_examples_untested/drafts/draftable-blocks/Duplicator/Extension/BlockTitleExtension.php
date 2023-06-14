@@ -1,10 +1,10 @@
 <?php
 
-namespace ACME\Bundle\CMSBundle\Duplicator\Extension;
+namespace Acme\Bundle\CMSBundle\Duplicator\Extension;
 
-use ACME\Bundle\CMSBundle\Duplicator\Filter\UniqueTitleFilter;
-use ACME\Bundle\CMSBundle\Duplicator\Matcher\BlockTitleMatcher;
-use ACME\Bundle\CMSBundle\Entity\Block;
+use Acme\Bundle\CMSBundle\Duplicator\Filter\UniqueTitleFilter;
+use Acme\Bundle\CMSBundle\Duplicator\Matcher\BlockTitleMatcher;
+use Acme\Bundle\CMSBundle\Entity\Block;
 use DeepCopy\Filter\Filter;
 use DeepCopy\Matcher\Matcher;
 use Oro\Bundle\DraftBundle\Duplicator\Extension\AbstractDuplicatorExtension;

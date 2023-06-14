@@ -16,39 +16,19 @@ The |entity class name provider| service is a "chain" service. It works by askin
 
 To create own provider just create a class implementing |EntityClassNameProviderInterface| and register it in DI container with the tag **oro_entity.class_name_provider**. You can also use the existing |abstract provider| as a superclass for your provider.
 
-.. code-block:: php
+.. oro_integrity_check:: f2eec7dccdd2ebc9e97138acec553d4e0172b6fc
 
-    namespace Acme\Bundle\DemoBundle\Provider;
+   .. literalinclude:: /code_examples/commerce/demo/Provider/AcmeClassNameProvider.php
+       :caption: src/Acme/Bundle/DemoBundle/Provider/AcmeClassNameProvider.php
+       :language: php
+       :lines: 3-35
 
-    use Oro\Bundle\EntityBundle\Provider\AbstractEntityClassNameProvider;
-    use Oro\Bundle\EntityBundle\Provider\EntityClassNameProviderInterface;
+.. oro_integrity_check:: 8895434b9b4194d7764a669ac25399169c151b75
 
-    class AcmeClassNameProvider extends AbstractEntityClassNameProvider implements EntityClassNameProviderInterface
-    {
-        /**
-         * @inheritDoc
-         */
-        public function getEntityClassName(string $entityClass): ?string
-        {
-            // add your implementation here
-        }
-
-        /**
-         * @inheritDoc
-         */
-        public function getEntityClassPluralName(string $entityClass): ?string
-        {
-            // add your implementation here
-        }
-    }
-
-.. code-block:: yaml
-
-    entity_class_name_provider.acme:
-        class: Acme\Bundle\DemoBundle\Provider\AcmeClassNameProvider
-        public: false
-        tags:
-            - { name: oro_entity.name_provider, priority: 100 }
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+       :language: yaml
+       :lines: 2, 97-104
 
 You can specify the priority to move the provider up or down the provider's chain. The bigger the priority number is, the earlier the provider will be executed. The priority value is optional and defaults to 0.
 

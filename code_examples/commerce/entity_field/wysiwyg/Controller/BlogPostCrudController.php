@@ -1,9 +1,9 @@
 <?php
 
-namespace ACME\Bundle\WysiwygBundle\Controller;
+namespace Acme\Bundle\WysiwygBundle\Controller;
 
-use ACME\Bundle\WysiwygBundle\Entity\BlogPost;
-use ACME\Bundle\WysiwygBundle\Form\Type\BlogPostType;
+use Acme\Bundle\WysiwygBundle\Entity\BlogPost;
+use Acme\Bundle\WysiwygBundle\Form\Type\BlogPostType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
 use Oro\Bundle\SecurityBundle\Annotation\Acl;
 use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
@@ -36,7 +36,7 @@ class BlogPostCrudController extends AbstractController
      * @Acl(
      *      id="acme_wysiwyg_blog_post_view",
      *      type="entity",
-     *      class="ACMEWysiwygBundle:BlogPost",
+     *      class="AcmeWysiwygBundle:BlogPost",
      *      permission="VIEW"
      * )
      */
@@ -47,11 +47,11 @@ class BlogPostCrudController extends AbstractController
 
     /**
      * @Route("/create", name="acme_wysiwyg_blog_post_create")
-     * @Template("@ACMEWysiwyg/BlogPostCrud/update.html.twig")
+     * @Template("@AcmeWysiwyg/BlogPostCrud/update.html.twig")
      * @Acl(
      *      id="acme_wysiwyg_blog_post_create",
      *      type="entity",
-     *      class="ACMEWysiwygBundle:BlogPost",
+     *      class="AcmeWysiwygBundle:BlogPost",
      *      permission="CREATE"
      * )
      *
@@ -68,7 +68,7 @@ class BlogPostCrudController extends AbstractController
      * @Acl(
      *      id="acme_wysiwyg_blog_post_update",
      *      type="entity",
-     *      class="ACMEWysiwygBundle:BlogPost",
+     *      class="AcmeWysiwygBundle:BlogPost",
      *      permission="EDIT"
      * )
      *

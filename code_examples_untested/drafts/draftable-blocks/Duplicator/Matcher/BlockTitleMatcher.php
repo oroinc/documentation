@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CMSBundle\Duplicator\Matcher;
+namespace Acme\Bundle\CMSBundle\Duplicator\Matcher;
 
-use ACME\Bundle\CMSBundle\Entity\Block;
+use Acme\Bundle\CMSBundle\Entity\Block;
 use DeepCopy\Matcher\Matcher;
 
 /**

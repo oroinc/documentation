@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Factory;
+namespace Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Factory;
 
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
 use Oro\Bundle\PaymentBundle\Method\PaymentMethodInterface;
 
 /**

@@ -1,0 +1,16 @@
+acls:
+    favorites_edit:
+        type: entity
+        class: AcmeDemoBundle:Favorite
+        permission: EDIT
+        bindings:
+            -   class: Acme\Bundle\DemoBundle\Controller\FavoritesController
+                method: newEditAction
+    protected_action:
+        type: action
+    acme_demo_sms_create:
+        type: entity
+        class: AcmeDemoBundle:Sms
+        permission: CREATE
+        group_name: ""
+        bindings: ~

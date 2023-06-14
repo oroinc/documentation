@@ -1,0 +1,40 @@
+{% extends '@OroUI/actions/view.html.twig' %}
+{% import '@OroUI/macros.html.twig' as UI %}
+{% import '@OroEntityConfig/macros.html.twig' as entityConfig %}
+
+{% oro_title_set({params : {"%title%": entity|oro_format_name|default('N/A'|trans) } }) %}
+
+{% block pageHeader %}
+    {% set breadcrumbs = {
+        'entity': entity,
+        'indexPath': path('acme_demo_doctrine_type_field_index'),
+        'indexLabel': 'acme.demo.doctrinetypefield.entity_plural_label'|trans,
+        'entityTitle': entity|oro_format_name|default('N/A'|trans)
+} %}
+
+    {{ parent() }}
+{% endblock pageHeader %}
+
+{% block content_data %}
+
+    {% set dataBlocks = [
+        {
+            'title': 'acme.demo.section.doctrine_type_field.general.label'|trans,
+            'subblocks': [
+                {
+                    'data' : [
+                        UI.renderProperty('acme.demo.doctrinetypefield.percent_field.label'|trans, entity.percentField ? entity.percentField|oro_format_percent : null),
+                        UI.renderProperty('acme.demo.doctrinetypefield.money_field.label'|trans, entity.moneyField ? entity.moneyField|oro_format_currency : null),
+                        UI.renderProperty('acme.demo.doctrinetypefield.duration_field.label'|trans, entity.durationField),
+                        entityConfig.renderDynamicFields(entity)
+                    ]
+                }
+            ]
+        },
+    ] %}
+
+    {% set id = 'acme-demo-doctrine-type-field-view' %}
+    {% set data = {'dataBlocks': dataBlocks} %}
+
+    {{ parent() }}
+{% endblock content_data %}

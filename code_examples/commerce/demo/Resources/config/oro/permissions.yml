@@ -1,0 +1,21 @@
+oro_permissions:
+    PERMISSION1:                                                    # permission name (should start with a letter, digit or underscore and only contain
+        # letters, digits, numbers, underscores ("_"), hyphens ("-") and colons (":")
+        label: Label for Permission 1                               # permission label
+        description: Permission 1 description                       # (optional) permission description
+        apply_to_all: false                                         # (by default = true) is permission apply to all entities by default
+        apply_to_entities:                                          # (optional) the list of entities to apply permission
+            - 'AcmeDemoBundle:Favorite'                             # entity class
+            - 'Acme\Bundle\DemoBundle\Entity\Question'
+        apply_to_interfaces:                                        # (optional) the list of interfaces to apply permission to the entities that implement these interfaces
+        #   - 'Acme\Bundle\DemoBundle\Entity\MyEntityInterface'     # entity interface
+        group_names:                                                # (by default = ['default]) the list of Groups
+            - default                                               # group name
+            - frontend
+    
+    PERMISSION2:
+        label: Label for Permission 2
+        description: Permission 2 description
+        exclude_entities:                                           # (optional) the list of entities to not apply permission
+            - 'AcmeDemoBundle:Priority'
+            - 'Acme\Bundle\DemoBundle\Entity\Document'

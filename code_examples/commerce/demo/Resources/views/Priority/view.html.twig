@@ -1,0 +1,59 @@
+{% extends '@OroUI/actions/view.html.twig' %}
+{% import '@OroUI/macros.html.twig' as UI %}
+{% import '@OroDataGrid/macros.html.twig' as dataGrid %}
+{% import '@OroEntityConfig/macros.html.twig' as entityConfig %}
+
+{% oro_title_set({params : {"%title%": entity|oro_format_name|default('N/A'|trans) } }) %}
+
+{% block pageHeader %}
+    {% set breadcrumbs = {
+        'entity': entity,
+        'indexPath': path('acme_demo_priority_index'),
+        'indexLabel': 'acme.demo.priority.entity_plural_label'|trans,
+        'entityTitle': entity|oro_format_name|default('N/A'|trans)
+} %}
+
+    {{ parent() }}
+{% endblock pageHeader %}
+
+{% block content_data %}
+
+    {% set dataBlocks = [
+        {
+            'title': 'acme.demo.section.priority.general.label'|trans,
+            'subblocks': [
+                {
+                    'data' : [
+                        UI.renderProperty('acme.demo.priority.label.label'|trans, entity.label),
+                        entityConfig.renderDynamicFields(entity)
+                    ]
+                }
+            ]
+        },
+        {
+            'title': 'acme.demo.priority.priority_documents.label'|trans,
+            'subblocks': [
+                {
+                    'data' : [
+                        dataGrid.renderGrid('acme-demo-document-grid-by-priority', { holder_entity_id: entity.id }, { cssClass: 'inner-grid' })
+                    ]
+                }
+            ]
+        },
+        {
+            'title': 'acme.demo.priority.priority_questions.label'|trans,
+            'subblocks': [
+                {
+                    'data' : [
+                        dataGrid.renderGrid('acme-demo-question-grid-by-priority', { holder_entity_id: entity.id }, { cssClass: 'inner-grid' })
+                    ]
+                }
+            ]
+        },
+    ] %}
+
+    {% set id = 'acme-demo-priority-view' %}
+    {% set data = {'dataBlocks': dataBlocks} %}
+
+    {{ parent() }}
+{% endblock content_data %}

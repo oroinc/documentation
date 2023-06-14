@@ -25,33 +25,11 @@ To make a fixture versioned, it must implement |VersionedFixtureInterface| and t
 
 Example:
 
-.. code-block:: php
+.. oro_integrity_check:: f721de3b496823dcae3adf15de9304d73f7b1886
 
-    namespace Acme\Bundle\DemoBundle\Migrations\DataFixtures\ORM;
-
-    use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Persistence\ObjectManager;
-
-    use Oro\Bundle\MigrationBundle\Fixture\VersionedFixtureInterface;
-
-    class LoadSomeDataFixture extends AbstractFixture implements VersionedFixtureInterface
-    {
-        /**
-         * @inheritDoc
-         */
-        public function getVersion()
-        {
-            return '1.0';
-        }
-
-        /**
-         * @inheritDoc
-         */
-        public function load(ObjectManager $manager)
-        {
-            // Here we can use fixture data code which will be run time after time
-        }
-    }
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadFavoritesData.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadFavoritesData.php
+       :language: php
 
 In this example, the fixture will be loaded, and version 1.0 will be saved as its current loaded version.
 
@@ -59,45 +37,11 @@ To have the possibility to load this fixture again, it must return a version gre
 
 If the fixture needs to know the last loaded version, it must implement |LoadedFixtureVersionAwareInterface| and the `setLoadedVersion` method:
 
-.. code-block:: php
+.. oro_integrity_check:: a3f152f6a4074223a7924deb65dee4f048cf3d7a
 
-    namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
-
-    use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Persistence\ObjectManager;
-    use Oro\Bundle\MigrationBundle\Fixture\LoadedFixtureVersionAwareInterface;
-    use Oro\Bundle\MigrationBundle\Fixture\VersionedFixtureInterface;
-
-    class LoadSomeDataFixture extends AbstractFixture
-        implements VersionedFixtureInterface, LoadedFixtureVersionAwareInterface
-    {
-        protected ?string $loadedVersion;
-
-        /**
-         * @inheritDoc
-         */
-        public function setLoadedVersion($version = null)
-        {
-            $this->loadedVersion = $version;
-        }
-
-        /**
-         * @inheritDoc
-         */
-        public function getVersion(): string
-        {
-            return '2.0';
-        }
-
-        /**
-         * @inheritDoc
-         */
-        public function load(ObjectManager $manager)
-        {
-            // Here we can check last loaded version and load data difference between last
-            // uploaded version and current version
-        }
-    }
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadVersionedFavoriteData.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadVersionedFavoriteData.php
+       :language: php
 
 Rename Fixtures
 ---------------
@@ -108,35 +52,11 @@ To prevent the fixture from loading again, this fixture must implement |RenamedF
 
 Example:
 
-.. code-block:: php
+.. oro_integrity_check:: fd8fb3fe1426d574f636b3992277a10496d27cae
 
-    namespace Acme\Bundle\DemoBundle\Migrations\DataFixtures\ORM;
-
-    use Doctrine\Common\DataFixtures\AbstractFixture;
-    use Doctrine\Persistence\ObjectManager;
-
-    use Oro\Bundle\MigrationBundle\Fixture\RenamedFixtureInterface;
-
-    class LoadSomeDataFixture extends AbstractFixture implements RenamedFixtureInterface
-    {
-        /**
-         * @inheritDoc
-         */
-        public function getPreviousClassNames(): array
-        {
-            return [
-                'Acme\Bundle\DemoBundle\Migrations\DataFixtures\ORM\PreviousClassNameOfDataFixture'
-            ];
-        }
-
-        /**
-         * @inheritDoc
-         */
-        public function load(ObjectManager $manager)
-        {
-            // Here we can use fixture data code which will be run once
-        }
-    }
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadRenamedFavoritesData.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadRenamedFavoritesData.php
+       :language: php
 
 .. include:: /include/include-links-dev.rst
     :start-after: begin

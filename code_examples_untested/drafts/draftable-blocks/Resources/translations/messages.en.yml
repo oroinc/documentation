@@ -1,13 +1,13 @@
 acme.cms:
     block:
-        entity_label: ACME Block
-        entity_plural_label: ACME Blocks
+        entity_label: Acme Block
+        entity_plural_label: Acme Blocks
         id.label: Id
         title.label: Title
         owner.label: Owner
         draft:
-            entity_label: ACME Block Draft
-            entity_plural_label: ACME Block Drafts
+            entity_label: Acme Block Draft
+            entity_plural_label: Acme Block Drafts
             owner.label: Owner
 
         content.label: Content
@@ -23,10 +23,10 @@ acme.cms:
         drafts: Drafts
 
     controller:
-        saved.message: ACME Block has been saved
+        saved.message: Acme Block has been saved
 
     menu:
-        management.label: ACME
+        management.label: Acme
 
     validators:
         unique_title_draft_message: Title already exists.

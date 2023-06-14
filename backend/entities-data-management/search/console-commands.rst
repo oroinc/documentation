@@ -14,14 +14,14 @@ Single entity indexation:
 
 .. code-block:: bash
 
-   php bin/console oro:search:index OroUserBundle:User 1
-    Started index update for entities.
+   php bin/console oro:search:index AcmeDemoBundle:Question 1
+   Started index update for entities.
 
 Multiple entities indexation:
 
 .. code-block:: bash
 
-    php bin/console oro:search:index "Oro\Bundle\ContactBundle\Entity\Contact" 1 2 3 4 5 6 7 8 9 10
+    php bin/console oro:search:index "Acme\Bundle\DemoBundle\Entity\Question" 1 2 3 4 5 6 7 8 9 10
     Started index update for entities.
 
 oro:search:reindex
@@ -42,8 +42,8 @@ Reindexation of one entity:
 
 .. code-block:: bash
 
-    php bin/console oro:search:reindex OroUserBundle:User
-    Started reindex task for "OroUserBundle:User" entity
+    php bin/console oro:search:reindex AcmeDemoBundle:Question
+    Started reindex task for "AcmeDemoBundle:Question" entity
 
 Typically, reindexation is performed immediately after the reindex command is issued. However, it can also be scheduled to be performed in the background by the Message Queue consumers.
 
@@ -57,7 +57,7 @@ Please use the following parameter to enable it:
 
     php bin/console oro:search:reindex --scheduled
 
-You can limit the reindexation to a specific entity with the ``--class`` option. Both the FQCN (Oro\\Bundle\\UserBundle\\Entity\\User) and short (OroUserBundle:User) class names are accepted:
+You can limit the reindexation to a specific entity with the ``--class`` option. Both the FQCN (Acme\\Bundle\\DemoBundle\\Entity\\Question) and short (AcmeDemoBundle:Question) class names are accepted:
 
 .. code-block:: none
 

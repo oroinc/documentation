@@ -1,10 +1,10 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Factory;
+namespace Acme\Bundle\FastShippingBundle\Factory;
 
-use ACME\Bundle\FastShippingBundle\Entity\FastShippingSettings;
-use ACME\Bundle\FastShippingBundle\Method\FastShippingMethod;
-use ACME\Bundle\FastShippingBundle\Method\FastShippingMethodType;
+use Acme\Bundle\FastShippingBundle\Entity\FastShippingSettings;
+use Acme\Bundle\FastShippingBundle\Method\FastShippingMethod;
+use Acme\Bundle\FastShippingBundle\Method\FastShippingMethodType;
 use Oro\Bundle\IntegrationBundle\Entity\Channel;
 use Oro\Bundle\IntegrationBundle\Generator\IntegrationIdentifierGeneratorInterface;
 use Oro\Bundle\IntegrationBundle\Provider\IntegrationIconProviderInterface;

@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\WysiwygBundle\Form\Type;
+namespace Acme\Bundle\WysiwygBundle\Form\Type;
 
-use ACME\Bundle\WysiwygBundle\Entity\BlogPost;
+use Acme\Bundle\WysiwygBundle\Entity\BlogPost;
 use Oro\Bundle\CMSBundle\Form\Type\WYSIWYGType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

@@ -1,0 +1,40 @@
+services:
+    _defaults:
+        public: true
+
+    Acme\Bundle\DemoBundle\Controller\PriorityController:
+        calls:
+            - [ 'setContainer', [ '@Psr\Container\ContainerInterface' ] ]
+        tags:
+            - { name: container.service_subscriber }
+
+    Acme\Bundle\DemoBundle\Controller\DocumentController:
+        calls:
+            - [ 'setContainer', [ '@Psr\Container\ContainerInterface' ] ]
+        tags:
+            - { name: container.service_subscriber }
+
+    Acme\Bundle\DemoBundle\Controller\QuestionController:
+        calls:
+            - [ 'setContainer', [ '@Psr\Container\ContainerInterface' ] ]
+        tags:
+            - { name: container.service_subscriber }
+
+    Acme\Bundle\DemoBundle\Controller\FavoriteController:
+        calls:
+            - [ 'setContainer', [ '@Psr\Container\ContainerInterface' ] ]
+        tags:
+            - { name: container.service_subscriber }
+
+    Acme\Bundle\DemoBundle\Controller\SmsController:
+        calls:
+            - [ 'setContainer', [ '@Psr\Container\ContainerInterface' ] ]
+        tags:
+            - { name: container.service_subscriber }
+
+    Acme\Bundle\DemoBundle\Controller\DoctrineTypeFieldController:
+        public: true
+        calls:
+            - [ 'setContainer', [ '@Psr\Container\ContainerInterface' ] ]
+        tags:
+            - { name: container.service_subscriber }

@@ -1,4 +1,4 @@
-ACME\Bundle\WysiwygBundle\Entity\BlogPost:
+Acme\Bundle\WysiwygBundle\Entity\BlogPost:
     properties:
         content:
             - Oro\Bundle\CMSBundle\Validator\Constraints\TwigContent: ~

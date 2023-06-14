@@ -1,2 +1,2 @@
 bundles:
-    - ACME\Bundle\CollectOnDeliveryBundle\ACMECollectOnDeliveryBundle
+    - Acme\Bundle\CollectOnDeliveryBundle\AcmeCollectOnDeliveryBundle

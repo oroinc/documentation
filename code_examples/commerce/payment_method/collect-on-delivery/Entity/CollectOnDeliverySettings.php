@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\Entity;
+namespace Acme\Bundle\CollectOnDeliveryBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\ParameterBag;
  * Entity with settings for Collect on delivery integration
  *
  * @ORM\Entity(
- *     repositoryClass="ACME\Bundle\CollectOnDeliveryBundle\Entity\Repository\CollectOnDeliverySettingsRepository"
+ *     repositoryClass="Acme\Bundle\CollectOnDeliveryBundle\Entity\Repository\CollectOnDeliverySettingsRepository"
  * )
  */
 class CollectOnDeliverySettings extends Transport

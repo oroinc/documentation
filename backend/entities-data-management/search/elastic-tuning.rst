@@ -49,36 +49,40 @@ OroCommerce 3.1
 
 Back-office (standard) index uses the **standard search** algorithm by default. There is a possibility to enable **language-optimized search** using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 6d47e7bb6564c4f345923c350478f97834bbdf7c
 
-    oro_search:
-        engine_parameters:
-            language_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 1, 3, 5
 
 The storefront (website) index uses a standard search algorithm by default. There is a possibility to enable language-optimized search using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 56b048ebf82ed3c5052f78616c5756962af5d895
 
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-55
 
-    oro_website_search:
-        engine_parameters:
-            language_optimization: true
 
 Storefront (website) index supports the possibility to **remove unused fields from the index** starting 3.1.20 using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 10a56c1ece92e43aebb8b89035aa4176e5737d6b
 
-    oro_website_search:
-        engine_parameters:
-            remove_unused_fulltext: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-54, 56
 
 Recommended configuration - use **standard search** algorithm for both indices, **remove unused fields from the index** for storefront index.
 
-.. code-block:: php
+.. oro_integrity_check:: 10a56c1ece92e43aebb8b89035aa4176e5737d6b
 
-    oro_website_search:
-        engine_parameters:
-            remove_unused_fulltext: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-54, 56
 
 You may use fine-tuning (see below) for both indices to decrease index size and lower CPU and memory load.
 
@@ -87,77 +91,85 @@ OroCommerce 4.1
 
 Back-office (standard) index uses the **standard search** algorithm by default. There is a possibility to enable **language-optimized search** using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 6d47e7bb6564c4f345923c350478f97834bbdf7c
 
-    oro_search:
-        engine_parameters:
-            language_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 1, 3, 5
 
 Back-office (standard) index also supports relevance optimized search starting 4.1.4 that can be enabled using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: f267ca5494c316fc89c4866678cbd4bfd289b909
 
-    oro_search:
-        engine_parameters:
-            relevance_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 1, 3, 6
 
 The storefront (website) index uses a standard search algorithm by default. There is a possibility to **enable language-optimized search** using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 56b048ebf82ed3c5052f78616c5756962af5d895
 
-    oro_website_search:
-        engine_parameters:
-            language_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-55
 
 Storefront (website) index supports the possibility to **remove unused fields from the index** starting 4.1.3 using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 10a56c1ece92e43aebb8b89035aa4176e5737d6b
 
-    oro_website_search:
-        engine_parameters:
-            remove_unused_fulltext: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-54, 56
 
 Storefront (website) index also supports **relevance optimized search** starting 4.1.4 that can be enabled using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 6d126765ad1846ea15c99a062dbce6e79315b5f4
 
-    oro_website_search:
-        engine_parameters:
-            relevance_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-54, 57
 
 Recommended configuration - use relevance optimized search algorithm for both indices, remove unused fields from the index for storefront index.
 
-.. code-block:: php
+.. oro_integrity_check:: f267ca5494c316fc89c4866678cbd4bfd289b909
 
-    oro_search:
-       engine_parameters:
-           relevance_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 1, 3, 6
 
-.. code-block:: php
+.. oro_integrity_check:: 30f960591387f090ad9be157a64ff16a704acae9
 
-    oro_website_search:
-       engine_parameters:
-           remove_unused_fulltext: true
-           relevance_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-54, 56-57
 
 OroCommerce 4.2
 ^^^^^^^^^^^^^^^
 
 The back-office (standard) index uses the **relevance optimized search** algorithm by default. There is a possibility to enable **language-optimized search** using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 6d47e7bb6564c4f345923c350478f97834bbdf7c
 
-    oro_search:
-        engine_parameters:
-            language_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 1, 3, 5
 
 Storefront (website) index uses a **relevance-optimized search** algorithm by default. There is a possibility to enable **language-optimized search** using the following configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 56b048ebf82ed3c5052f78616c5756962af5d895
 
-    oro_website_search:
-        engine_parameters:
-            language_optimization: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-55
 
 Storefront (website) includes optimization that **removes unused fields from the index** out-of-the-box.
 
@@ -174,118 +186,21 @@ Each change in the fine-tuning configuration requires index recreation and full 
 
 Here is an example of a custom configuration for the back-office (standard) index:
 
-.. code-block:: php
+.. oro_integrity_check:: 0715fcc0440bcbd72ca7d7a3f8a368ffe6b11c64
 
-   oro_search:
-    engine_parameters:
-        index:
-            prefix: '%search_engine_index_prefix%'
-            body:
-                settings:
-                    "analysis":
-                        "char_filter":
-                            "cleanup_characters":
-                                "type": "mapping"
-                                "mappings":
-                                    - "- => "
-                                    - "— => "
-                                    - "_ => "
-                                    - ". => "
-                                    - "/ => "
-                                    - "\\\\ => "
-                                    - ": => "
-                                    - "! => "
-                                    - "' => "
-                                    - "` => "
-                                    - "\" => "
-                        "filter":
-                            "substring":
-                                "type": "edgeNGram"
-                                "min_gram": "1"
-                                "max_gram": "100"
-                        "analyzer":
-                            "fulltext_search_analyzer":
-                                "filter":
-                                    - "lowercase"
-                                    - "unique"
-                                "char_filter":
-                                    - "cleanup_characters"
-                                "tokenizer": "whitespace"
-                            "fulltext_index_analyzer":
-                                "filter":
-                                    - "lowercase"
-                                    - "substring"
-                                    - "unique"
-                                "char_filter":
-                                    - "html_strip"
-                                    - "cleanup_characters"
-                                "tokenizer": "whitespace"
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 1, 3, 11-51
 
 The same can be done for the storefront (website) index:
 
-.. code-block:: php
+.. oro_integrity_check:: 603b1c9b1e9558d632727245caf2c2c826e39276
 
-    oro_website_search:
-        engine_parameters:
-            index:
-                prefix: '%website_search_engine_index_prefix%'
-                body:
-                    settings:
-                        "analysis":
-                            "char_filter":
-                                "cleanup_characters":
-                                    "type": "mapping"
-                                    "mappings":
-                                        - "- => "
-                                        - "— => "
-                                        - "_ => "
-                                        - ". => "
-                                        - "/ => "
-                                        - "\\\\ => "
-                                        - ": => "
-                                        - "; => "
-                                        - "! => "
-                                        - "' => "
-                                        - "` => "
-                                        - "\" => "
-                            "filter":
-                                "english_stop":
-                                    "type": "stop"
-                                    "stopwords": "_english_"
-                                "acme_stop":
-                                    "type": "stop"
-                                    "stopwords": [sea, acme, acmes, ocean, grain, sel]
-                                "substring":
-                                    "type": "edgeNGram"
-                                    "min_gram": "1"
-                                    "max_gram": "100"
-                                "acme_synonym":
-                                    "type": "synonym"
-                                    "synonyms":
-                                        - "jurassic acme => ancient" # real synonyms are dumped from DB
-                            "analyzer":
-                                "fulltext_search_analyzer":
-                                    "filter":
-                                        - "lowercase"
-                                        - "acme_synonym"
-                                        - "english_stop"
-                                        - "acme_stop"
-                                        - "unique"
-                                    "char_filter":
-                                        - "cleanup_characters"
-                                    "tokenizer": "whitespace"
-                                "fulltext_index_analyzer":
-                                    "filter":
-                                        - "lowercase"
-                                        - "acme_synonym"
-                                        - "english_stop"
-                                        - "acme_stop"
-                                        - "substring"
-                                        - "unique"
-                                    "char_filter":
-                                        - "html_strip"
-                                        - "cleanup_characters"
-                                    "tokenizer": "whitespace"
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: php
+        :lines: 53-54, 58-116
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

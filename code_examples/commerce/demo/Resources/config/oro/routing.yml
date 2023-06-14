@@ -1,0 +1,18 @@
+acme_demo:
+    resource: "@AcmeDemoBundle/Controller"
+    type: annotation
+    prefix: /demo
+
+acme_demo_api_delete_sms:
+    path: '/api/rest/{version}/smses/{id}.{_format}'
+    methods: [DELETE]
+    defaults:
+        _controller: 'Acme\Bundle\DemoBundle\Controller\Api\Rest\SmsController::deleteAction'
+        _format: json
+        version: latest
+    requirements:
+        id: \d+
+        _format: json|html
+        version: latest|v1
+    options:
+        expose: true

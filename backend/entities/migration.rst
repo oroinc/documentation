@@ -120,67 +120,12 @@ For example, let's assume we have migrations `v1_0`, `v1_1`, `v1_2`, `v1_3` and 
 
 Below is an example of an install migration file:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/AcmeDemoBundleInstaller.php
+.. oro_integrity_check:: 2f2674e8cf190884b309b5318184bd8e3e861756
 
-   namespace Acme\Bundle\DemoBundle\Migrations\Schema;
-
-   use Doctrine\DBAL\Schema\Schema;
-   use Oro\Bundle\MigrationBundle\Migration\Installation;
-   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-
-   class AcmeDemoBundleInstaller implements Installation
-   {
-       public function getMigrationVersion()
-       {
-           return 'v1_0';
-       }
-
-       public function up(Schema $schema, QueryBag $queries)
-       {
-           /** Tables generation **/
-           $this->createAcmeDocumentTable($schema);
-           $this->createDocumentPriorityTable($schema);
-
-           /** Foreign keys generation **/
-           $this->addAcmeDocumentForeignKeys($schema);
-       }
-
-       /**
-        * @param Schema $schema
-        * @return void
-        */
-       public function createAcmeDocumentTable(Schema $schema): void
-       {
-           $table = $schema->createTable('acme_document');
-           $table->addColumn('id', 'integer', ['autoincrement' => true]);
-           $table->addColumn('subject', 'string', ['length' => 255, 'notnull' => true]);
-           $table->addColumn('description', 'string', ['length' => 255, 'notnull' => true]);
-           $table->addColumn('due_date', 'datetime', ['comment' => '(DC2Type:datetime)']);
-           $table->addColumn('document_priority_id', 'integer', ['notnull' => false]);
-           $table->setPrimaryKey(['id']);
-       }
-
-       public function createDocumentPriorityTable(Schema $schema): void
-       {
-           $table = $schema->createTable('acme_document_priority');
-           $table->addColumn('id', 'integer', ['autoincrement' => true]);
-           $table->addColumn('label', 'string', []);
-           $table->setPrimaryKey(['id']);
-           $table->addUniqueIndex(['label'], 'uidx_label_doc');
-       }
-
-       protected function addAcmeDocumentForeignKeys(Schema $schema)
-       {
-           $table = $schema->getTable('acme_document');
-           $table->addForeignKeyConstraint(
-               $schema->getTable('acme_document_priority'),
-               ['document_priority_id'],
-               ['id'],
-               ['onUpdate' => null, 'onDelete' => 'SET NULL']
-           );
-       }
-   }
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/AcmeDemoBundleInstaller.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/AcmeDemoBundleInstaller.php
+       :language: php
+       :lines: 3-24, 29-31, 36-42, 47-57, 62-65, 129-137, 150, 236
 
 Create Versioned Schema Migrations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

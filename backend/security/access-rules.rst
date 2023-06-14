@@ -39,7 +39,8 @@ To find all possible options, see classes that implement |AccessRuleInterface|.
 Criteria Object
 ---------------
 
-The criteria hold the necessary information about the type of query being checked, the object that should be checked, the access level, additional options, and the expression that should be added to the query to limit access to the given object.
+The criteria hold the necessary information about the type of query being checked, the object that should be checked,
+the access level, additional options, and the expression that should be added to the query to limit access to the given object.
 
 Additional criteria options represent a list of parameters that you can use to modify the behavior of an access rule.
 
@@ -89,45 +90,22 @@ Add a New Access Rule
 
 To add a new access rule, create a new class that implements |AccessRuleInterface|, for example:
 
-.. code-block:: php
+.. oro_integrity_check:: bd4881386bf2c136097162fa66153cfd1af1a270
 
-    namespace Acme\Bundle\DemoBundle\AccessRule;
-
-    use Doctrine\Common\Util\ClassUtils;
-    use Oro\Bundle\SecurityBundle\AccessRule\AccessRuleInterface;
-    use Oro\Bundle\SecurityBundle\AccessRule\Criteria;
-    use Oro\Bundle\SecurityBundle\AccessRule\Expr\Comparison;
-    use Oro\Bundle\SecurityBundle\AccessRule\Expr\CompositeExpression;
-    use Oro\Bundle\SecurityBundle\AccessRule\Expr\Path;
-
-    class ContactAccessRule implements AccessRuleInterface
-    {
-        /**
-         * @inheritDoc
-         */
-        public function isApplicable(Criteria $criteria): bool
-        {
-            return true;
-        }
-
-        /**
-         * @inheritDoc
-         */
-        public function process(Criteria $criteria): void
-        {
-            $criteria->andExpression(new Comparison(new Path('source'), Comparison::EQ, 'call'));
-        }
-    }
+    .. literalinclude:: /code_examples/commerce/demo/AccessRule/FavoriteAccessRule.php
+        :caption: src/Acme/Bundle/DemoBundle/AccessRule/FavoriteAccessRule.php
+        :language: php
+        :lines: 1-25
 
 
 Next, the access rule class should be registered as a service with the `oro_security.access_rule` tag:
 
-.. code-block:: yaml
+.. oro_integrity_check:: df2d6ea592daa3a3bfd72b034a543d899fb9e841
 
-    acme_demo.access_rule.contact:
-        class: Acme\Bundle\DemoBundle\AccessRule\ContactAccessRule
-        tags:
-            - { name: oro_security.access_rule, type: ORM, entityClass: Acme\Bundle\DemoBundle\Entity\Contact }
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+        :language: yaml
+        :lines: 1, 66-69
 
 Here, the `type` and `entityClass` are options for the `oro_security.access_rule` tag used to define conditions when an access rule should be applied.
 

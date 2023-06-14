@@ -60,3 +60,11 @@ You can use this field type:
      * @ORM\Column(name="duration", type="duration")
      */
     protected $duration;
+
+
+**See Also**
+
+Oro Doctrine Extensions |Oro Doctrine Extensions|
+
+.. include:: /include/include-links-dev.rst
+    :start-after: begin

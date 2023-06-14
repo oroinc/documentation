@@ -1,10 +1,10 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Provider;
+namespace Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Provider;
 
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Provider\CollectOnDeliveryConfigProviderInterface;
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Factory\CollectOnDeliveryPaymentMethodFactoryInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Provider\CollectOnDeliveryConfigProviderInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Factory\CollectOnDeliveryPaymentMethodFactoryInterface;
 use Oro\Bundle\PaymentBundle\Method\Provider\AbstractPaymentMethodProvider;
 
 /**

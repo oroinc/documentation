@@ -1,0 +1,6 @@
+api:
+    entities:
+        Acme\Bundle\DemoBundle\Entity\Priority: ~
+        Acme\Bundle\DemoBundle\Entity\Document: ~
+        Acme\Bundle\DemoBundle\Entity\Question: ~
+        Acme\Bundle\DemoBundle\Entity\Sms: ~

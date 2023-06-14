@@ -1,0 +1,96 @@
+search:
+    Acme\Bundle\DemoBundle\Entity\Priority:
+        alias: acme_demo_priority
+        route:
+            name: acme_demo_priority_view
+            parameters:
+                id: id
+        search_template: '@AcmeDemo/PrioritysearchResult.html.twig'
+        fields:
+            -
+                name: label
+                target_type: text
+                target_fields:
+                    - label
+            -
+                name: priorityDocuments
+                relation_type: one-to-many
+                relation_fields:
+                    -
+                        name: subject
+                        target_type: text
+                        target_fields:
+                            - priorityDocumentSubject
+                    -
+                        name: description
+                        target_type: text
+                        target_fields:
+                            - priorityDocumentDescription
+            -
+                name: priorityQuestions
+                relation_type: one-to-many
+                relation_fields:
+                    -
+                        name: subject
+                        target_type: text
+                        target_fields:
+                            - priorityQuestionSubject
+                    -
+                        name: description
+                        target_type: text
+                        target_fields:
+                            - priorityQuestionDescription
+    Acme\Bundle\DemoBundle\Entity\Document:
+        alias: acme_demo_document
+        route:
+            name: acme_demo_document_view
+            parameters:
+                id: id
+        search_template: '@AcmeDemo/DocumentsearchResult.html.twig'
+        fields:
+            -
+                name: subject
+                target_type: text
+                target_fields:
+                    - subject
+            -
+                name: description
+                target_type: text
+                target_fields:
+                    - description
+            -
+                name: priority
+                relation_type: many-to-one
+                relation_fields:
+                    -
+                        name: label
+                        target_type: text
+                        target_fields:
+                            - priorityLabel
+    Acme\Bundle\DemoBundle\Entity\Question:
+        alias: acme_demo_question                                   # Alias for 'from' keyword in advanced search
+        route:
+            name: acme_demo_question_view                           # Route name to generate url link to the entity record
+            parameters:                                             # Array with parameters for route
+                id: id
+        search_template: '@AcmeDemo/QuestionsearchResult.html.twig' # Template to use in search result page for this entity type
+        fields:
+            -
+                name: subject                                       # Name of field in entity
+                target_type: text                                   # Type of virtual search field. Supported target types:
+                target_fields:
+                    - subject
+            -
+                name: description
+                target_type: text
+                target_fields:
+                    - description
+            -
+                name: priority
+                relation_type: many-to-one                           # Indicate that this field is relation field to another table.
+                relation_fields:                                     # Supported: one-to-one, many-to-many, one-to-many, many-to-one.
+                    -
+                        name: label                                 # related entity field name to index
+                        target_type: text                           # related entity field name type
+                        target_fields:                              # target fields to store field index
+                            - priorityLabel

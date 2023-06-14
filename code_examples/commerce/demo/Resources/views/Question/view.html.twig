@@ -1,0 +1,44 @@
+{% extends '@OroUI/actions/view.html.twig' %}
+{% import '@OroUI/macros.html.twig' as UI %}
+{% import '@OroEntityConfig/macros.html.twig' as entityConfig %}
+
+{% oro_title_set({params : {"%title%": entity|oro_format_name|default('N/A'|trans) } }) %}
+
+{% block pageHeader %}
+    {% set breadcrumbs = {
+        'entity': entity,
+        'indexPath': path('acme_demo_question_index'),
+        'indexLabel': 'acme.demo.question.entity_plural_label'|trans,
+        'entityTitle': entity|oro_format_name|default('N/A'|trans)
+} %}
+
+    {{ parent() }}
+{% endblock pageHeader %}
+
+{% block content_data %}
+
+    {% set dataBlocks = [
+        {
+            'title': 'acme.demo.section.question.general.label'|trans,
+            'subblocks': [
+                {
+                    'data' : [
+                        UI.renderProperty('acme.demo.question.subject.label'|trans, entity.subject),
+                        UI.renderProperty('acme.demo.question.description.label'|trans, entity.description),
+                        UI.renderProperty('acme.demo.question.due_date.label'|trans, entity.dueDate|oro_format_datetime),
+                        UI.renderHtmlProperty(
+                            'acme.demo.question.priority.label'|trans,
+                            UI.entityViewLink(entity.priority, entity.priority|oro_format_name|default('N/A'|trans), 'acme_demo_priority_view')
+                        ),
+                        entityConfig.renderDynamicFields(entity)
+                    ]
+                }
+            ]
+        },
+    ] %}
+
+    {% set id = 'acme-demo-question-view' %}
+    {% set data = {'dataBlocks': dataBlocks} %}
+
+    {{ parent() }}
+{% endblock content_data %}

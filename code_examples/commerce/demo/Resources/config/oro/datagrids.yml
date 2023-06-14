@@ -1,0 +1,752 @@
+datagrids:
+    acme-demo-priority-grid-base:
+        extended_entity_name: Acme\Bundle\DemoBundle\Entity\Priority
+        acl_resource: acme_demo_priority_view
+        mixins:
+            - acme-demo-common-user-ownership-datagrid-mixin
+        options:
+            entityHint: acme.demo.priority.entity_plural_label
+        properties:
+            id: ~
+        source:
+            type: orm
+            query:
+                select:
+                    - e.id
+                    - e.label
+                from:
+                    -
+                        table: Acme\Bundle\DemoBundle\Entity\Priority
+                        alias: e
+        columns:
+            label:
+                label: acme.demo.priority.label.label
+        sorters:
+            columns:
+                label:
+                    data_name: e.label
+        filters:
+            columns:
+                label:
+                    data_name: e.label
+                    type: string
+    acme-demo-priority-grid-select:
+        extends: acme-demo-priority-grid-base
+    acme-demo-priority-grid-base-with-view-link:
+        extends: acme-demo-priority-grid-base
+        properties:
+            view_link:
+                type: url
+                route: acme_demo_priority_view
+                params:
+                    - id
+        actions:
+            view:
+                type: navigate
+                label: oro.grid.action.view
+                link: view_link
+                icon: eye
+                acl_resource: acme_demo_priority_view
+                rowAction: true
+    acme-demo-priority-grid:
+        extends: acme-demo-priority-grid-base-with-view-link
+        options:
+            entity_pagination: true
+        source:
+            query:
+                select:
+                    - e.createdAt
+                    - e.updatedAt
+        columns:
+            createdAt:
+                label: oro.ui.created_at
+                frontend_type: datetime
+            updatedAt:
+                label: oro.ui.updated_at
+                frontend_type: datetime
+        sorters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                updatedAt:
+                    data_name: e.updatedAt
+        filters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                    type: datetime
+                updatedAt:
+                    data_name: e.updatedAt
+                    type: datetime
+    acme-demo-document-grid-base:
+        extended_entity_name: Acme\Bundle\DemoBundle\Entity\Document
+        acl_resource: acme_demo_document_view
+        mixins:
+            - acme-demo-common-user-ownership-datagrid-mixin
+        options:
+            entityHint: acme.demo.document.entity_plural_label
+        properties:
+            id: ~
+        source:
+            type: orm
+            query:
+                select:
+                    - e.id
+                    - e.subject
+                    - e.description
+                    - e.dueDate
+                    - 'priority.label as priorityTitle'
+                from:
+                    -
+                        table: Acme\Bundle\DemoBundle\Entity\Document
+                        alias: e
+                join:
+                    left:
+                        - { join: e.priority, alias: priority }
+        columns:
+            subject:
+                label: acme.demo.document.subject.label
+            description:
+                label: acme.demo.document.description.label
+            dueDate:
+                label: acme.demo.document.due_date.label
+                frontend_type: datetime
+            priorityTitle:
+                label: acme.demo.document.priority.label
+        sorters:
+            columns:
+                subject:
+                    data_name: e.subject
+                description:
+                    data_name: e.description
+                dueDate:
+                    data_name: e.dueDate
+                priorityTitle:
+                    data_name: priorityTitle
+        filters:
+            columns:
+                subject:
+                    data_name: e.subject
+                    type: string
+                description:
+                    data_name: e.description
+                    type: string
+                dueDate:
+                    data_name: e.dueDate
+                    type: datetime
+                priorityTitle:
+                    type: entity
+                    data_name: priority.id
+                    options:
+                        field_type: Symfony\Bridge\Doctrine\Form\Type\EntityType
+                        field_options: { class: Acme\Bundle\DemoBundle\Entity\Priority, choice_label: label }
+    acme-demo-document-grid-select:
+        extends: acme-demo-document-grid-base
+    acme-demo-document-grid-base-with-view-link:
+        extends: acme-demo-document-grid-base
+        properties:
+            view_link:
+                type: url
+                route: acme_demo_document_view
+                params:
+                    - id
+        actions:
+            view:
+                type: navigate
+                label: oro.grid.action.view
+                link: view_link
+                icon: eye
+                acl_resource: acme_demo_document_view
+                rowAction: true
+    acme-demo-document-grid-by-priority:
+        extends: acme-demo-document-grid-base-with-view-link
+        mass_actions:
+            delete:
+                disabled: true
+        source:
+            query:
+                where:
+                    and:
+                        - 'IDENTITY(e.priority) = :holder_entity_id'
+    acme-demo-document-grid:
+        extends: acme-demo-document-grid-base-with-view-link
+        options:
+            entity_pagination: true
+        source:
+            query:
+                select:
+                    - e.createdAt
+                    - e.updatedAt
+        columns:
+            createdAt:
+                label: oro.ui.created_at
+                frontend_type: datetime
+            updatedAt:
+                label: oro.ui.updated_at
+                frontend_type: datetime
+        sorters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                updatedAt:
+                    data_name: e.updatedAt
+        filters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                    type: datetime
+                updatedAt:
+                    data_name: e.updatedAt
+                    type: datetime
+    acme-demo-question-grid-base:
+        extended_entity_name: Acme\Bundle\DemoBundle\Entity\Question
+        acl_resource: acme_demo_question_view
+        # one or several mixins
+        mixins:
+            - acme-demo-common-user-ownership-datagrid-mixin
+        options:
+            entityHint: acme.demo.question.entity_plural_label
+        properties:
+            id: ~
+        source:
+            type: orm
+            query:
+                select:
+                    - e.id
+                    - e.subject
+                    - e.description
+                    - e.dueDate
+                    - 'priority.label as priorityTitle'
+                from:
+                    -
+                        table: Acme\Bundle\DemoBundle\Entity\Question
+                        alias: e
+                join:
+                    left:
+                        - { join: e.priority, alias: priority }
+        columns:
+            subject:
+                label: acme.demo.question.subject.label
+            description:
+                label: acme.demo.question.description.label
+            dueDate:
+                label: acme.demo.question.due_date.label
+                frontend_type: datetime
+            priorityTitle:
+                label: acme.demo.question.priority.label
+        sorters:
+            columns:
+                subject:
+                    data_name: e.subject
+                description:
+                    data_name: e.description
+                dueDate:
+                    data_name: e.dueDate
+                priorityTitle:
+                    data_name: priorityTitle
+            default:
+                dueDate: DESC
+        filters:
+            columns:
+                subject:
+                    data_name: e.subject
+                    type: string
+                description:
+                    data_name: e.description
+                    type: string
+                dueDate:
+                    data_name: e.dueDate
+                    type: datetime
+                priorityTitle:
+                    type: entity
+                    data_name: priority.id
+                    options:
+                        field_type: Symfony\Bridge\Doctrine\Form\Type\EntityType
+                        field_options: { class: Acme\Bundle\DemoBundle\Entity\Priority, choice_label: label }
+    acme-demo-question-grid-select:
+        extends: acme-demo-question-grid-base
+    acme-demo-question-grid-base-with-view-link:
+        extends: acme-demo-question-grid-base
+        properties:
+            view_link:
+                type: url
+                route: acme_demo_question_view
+                params:
+                    - id
+        actions:
+            view:
+                type: navigate
+                label: oro.grid.action.view
+                link: view_link
+                icon: eye
+                acl_resource: acme_demo_question_view
+                rowAction: true
+    acme-demo-question-grid-by-priority:
+        extends: acme-demo-question-grid-base-with-view-link
+        mass_actions:
+            delete:
+                disabled: true
+        source:
+            query:
+                where:
+                    and:
+                        - 'IDENTITY(e.priority) = :holder_entity_id'
+            bind_parameters:
+                # Get the "holder_entity_id" parameter from the datagrid
+                # and set its value to the "holder_entity_id" parameter in the datasource query
+                - holder_entity_id
+    acme-demo-question-grid:
+        extends: acme-demo-question-grid-base-with-view-link
+        options:
+            entity_pagination: true
+        source:
+            query:
+                select:
+                    - e.createdAt
+                    - e.updatedAt
+        columns:
+            createdAt:
+                label: oro.ui.created_at
+                frontend_type: datetime
+            updatedAt:
+                label: oro.ui.updated_at
+                frontend_type: datetime
+        sorters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                updatedAt:
+                    data_name: e.updatedAt
+        filters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                    type: datetime
+                updatedAt:
+                    data_name: e.updatedAt
+                    type: datetime
+    acme-demo-question-report:
+        pageTitle: acme.demo.question.page_title
+        source:
+            type: orm
+            acl_resource: oro_report_view
+            query:
+                select:
+                    - SUM(o.id) as value
+                    - COUNT(o.id) as total
+                    - o.subject
+                    - o.description
+                groupBy: o.dueDate
+                from:
+                    - { table: Acme\Bundle\DemoBundle\Entity\Question, alias: o }
+        properties:
+            subject: ~
+            description: ~
+        totals:
+            total:
+                extends: grand_total
+                per_page: true
+                hide_if_one_page: true
+                columns:
+                    total:
+                        label: acme.demo.question.total
+            grand_total:
+                columns:
+                    total:
+                        expr: COUNT( o.id )
+                    value:
+                        label: acme.demo.question.grand_total
+                        expr: SUM( o.id )
+                        formatter: number
+
+        columns:
+            subject: { label: acme.demo.question.subject.label }
+            description: { label: acme.demo.question.description.label }
+            total: { label: acme.demo.question.total, frontend_type: integer }
+            value: { label: acme.demo.question.grand_total, frontend_type: number }
+        sorters:
+            columns:
+                subject: { data_name: subject }
+                description: { data_name: description }
+                total: { data_name: total }
+                value: { data_name: value }
+        filters:
+            columns:
+                total:
+                    type: number
+                    data_name: total
+                    filter_by_having: true
+                value:
+                    type: number
+                    data_name: value
+                    filter_by_having: true
+                createdAt:
+                    type: date
+                    label: oro.ui.created_at
+                    data_name: o.createdAt
+        options:
+            entityHint: report data
+            export: true
+    acme-demo-search-question-grid:
+        source:
+            type: search
+            query:
+                select:
+                    - text.subject
+                    - text.description
+                from:
+                    - acme_demo_question
+        columns:
+            subject:
+                label: acme.demo.question.subject.label
+                data_name: subject
+            description:
+                label: acme.demo.question.description.label
+                data_name: description
+        sorters:
+            columns:
+                subject:
+                    data_name: subject
+                    type: string
+                description:
+                    data_name: description
+                    type: string
+            default:
+                name: ASC
+        filters:
+            columns:
+                quick_search:
+                    label: 'Quick search'
+                    type: string
+                    data_name: all_text
+                subject:
+                    type: string
+                    data_name: subject
+                description:
+                    type: string
+                    data_name: description
+        properties:
+            id: ~
+            subject: ~
+            description: ~
+        actions: [ ]
+    # configuration mixin with column, sorter and filter for an entity identifier
+    acme-demo-common-user-ownership-datagrid-mixin:
+        source:
+            query:
+                select:
+                    - CONCAT(ownerUser.firstName, ' ', ownerUser.lastName) as uOwnerName
+                join:
+                    left:
+                        # _root_entity__ alias that will be replaced by an alias of the root entity
+                        - { join: __root_entity__.owner, alias: ownerUser }
+        columns:
+            uOwnerName:
+                label: oro.user.entity_label
+        sorters:
+            columns:
+                uOwnerName:
+                    data_name: uOwnerName
+        filters:
+            columns:
+                uOwnerName:
+                    data_name: uOwnerName
+                    type: string
+
+    acme-demo-favorite-grid:
+        extended_entity_name: Acme\Bundle\DemoBundle\Entity\Favorite
+        properties:
+            id: ~
+        source:
+            type: orm
+            acl_resource: acme_favorite_permission
+            query:
+                select:
+                    - f.id as id
+                    - f.name as name
+                    - f.value as value
+                    - f.viewCount as viewCount
+                from:
+                    - { table: Acme\Bundle\DemoBundle\Entity\Favorite, alias: f }
+        columns:
+            id:
+                data_name: id
+            name:
+                label: acme.demo.favorite.name.label
+                data_name: name
+            value:
+                label: acme.demo.favorite.value.label
+                data_name: value
+            viewCount:
+                label: acme.demo.favorite.viewCount.label
+                data_name: viewCount
+        sorters:
+            columns:
+                id:
+                    data_name: id
+                name:
+                    data_name: name
+                    type: string
+                value:
+                    data_name: value
+                    type: string
+                viewCount:
+                    type: integer
+                    data_name: viewCount
+            default:
+                id: ASC
+        filters:
+            columns:
+                quick_search:
+                    label: 'Quick search'
+                    type: string
+                    data_name: all_text
+                name:
+                    type: string
+                    data_name: name
+                value:
+                    type: string
+                    data_name: value
+
+    acme-demo-sms-grid-base:
+        extended_entity_name: Acme\Bundle\DemoBundle\Entity\Sms
+        acl_resource: acme_demo_sms_view
+        options:
+            entityHint: acme.demo.sms.entity_plural_label
+            contexts:
+                enabled: true          # default `false`
+                column_name: contexts  # optional, column identifier, default is `contexts`
+                entity_name: ~         # optional, set the FQCN of the grid base entity if auto detection fails
+        properties:
+            id: ~
+        source:
+            type: orm
+            query:
+                select:
+                    - e.id
+                    - e.fromContact
+                    - e.toContact
+                    - CONCAT(ownerUser.firstName, ' ', ownerUser.lastName) as uOwnerName
+                from:
+                    -
+                        table: Acme\Bundle\DemoBundle\Entity\Sms
+                        alias: e
+                join:
+                    left:
+                        - { join: e.owner, alias: ownerUser }
+        columns:
+            fromContact:
+                label: acme.demo.sms.from_contact.label
+            toContact:
+                label: acme.demo.sms.to_contact.label
+            uOwnerName:
+                label: acme.demo.sms.owner.label
+            contexts:                                 # the column name defined in options
+                label: acme.demo.sms.contexts.label   # optional, default `oro.activity.contexts.column.label`
+                renderable: true                      # optional, default `true`
+        sorters:
+            columns:
+                fromContact:
+                    data_name: e.fromContact
+                toContact:
+                    data_name: e.toContact
+                uOwnerName:
+                    data_name: uOwnerName
+        filters:
+            columns:
+                fromContact:
+                    data_name: e.fromContact
+                    type: string
+                toContact:
+                    data_name: e.toContact
+                    type: string
+                uOwnerName:
+                    data_name: uOwnerName
+                    type: string
+    activity-sms-grid:
+        extends: acme-demo-sms-grid-base
+    acme-demo-sms-grid-base-with-view-link:
+        extends: acme-demo-sms-grid-base
+        properties:
+            view_link:
+                type: url
+                route: acme_demo_sms_view
+                params:
+                    - id
+        actions:
+            view:
+                type: navigate
+                label: oro.grid.action.view
+                link: view_link
+                icon: eye
+                acl_resource: acme_demo_sms_view
+                rowAction: true
+    acme-demo-sms-grid:
+        extends: acme-demo-sms-grid-base-with-view-link
+        options:
+            entity_pagination: true
+        source:
+            query:
+                select:
+                    - e.createdAt
+                    - e.updatedAt
+        columns:
+            createdAt:
+                label: oro.ui.created_at
+                frontend_type: datetime
+            updatedAt:
+                label: oro.ui.updated_at
+                frontend_type: datetime
+        sorters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                updatedAt:
+                    data_name: e.updatedAt
+        filters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                    type: datetime
+                updatedAt:
+                    data_name: e.updatedAt
+                    type: datetime
+    document-for-context-grid:
+        extended_entity_name: Acme\Bundle\DemoBundle\Entity\Document
+        acl_resource: acme_demo_document_view
+        mixins:
+            - acme-demo-common-user-ownership-datagrid-mixin
+        options:
+            entityHint: acme.demo.document.entity_plural_label
+        properties:
+            id: ~
+        source:
+            type: orm
+            query:
+                select:
+                    - e.id
+                    - e.subject
+                    - e.description
+                    - e.dueDate
+                from:
+                    -
+                        table: Acme\Bundle\DemoBundle\Entity\Document
+                        alias: e
+        columns:
+            subject:
+                label: acme.demo.document.subject.label
+            description:
+                label: acme.demo.document.description.label
+            dueDate:
+                label: acme.demo.document.due_date.label
+                frontend_type: datetime
+        sorters:
+            columns:
+                subject:
+                    data_name: e.subject
+                description:
+                    data_name: e.description
+                dueDate:
+                    data_name: e.dueDate
+        filters:
+            columns:
+                subject:
+                    data_name: e.subject
+                    type: string
+                description:
+                    data_name: e.description
+                    type: string
+                dueDate:
+                    data_name: e.dueDate
+                    type: datetime
+    acme-demo-doctrine-type-field-grid-base:
+        extended_entity_name: Acme\Bundle\DemoBundle\Entity\DoctrineTypeField
+        acl_resource: acme_demo_doctrine_type_field_view
+        options:
+            entityHint: acme.demo.doctrinetypefield.entity_plural_label
+        properties:
+            id: ~
+        source:
+            type: orm
+            query:
+                select:
+                    - e.id
+                    - e.percentField
+#                    - e.moneyField
+#                    - e.durationField
+                    - 'TRIM(CONCAT(COALESCE(CONCAT(CAST(ownerUser.namePrefix as string), '' ''), ''''), COALESCE(CONCAT(CAST(ownerUser.firstName as string), '' ''), ''''), COALESCE(CONCAT(CAST(ownerUser.middleName as string), '' ''), ''''), COALESCE(CONCAT(CAST(ownerUser.lastName as string), '' ''), ''''), COALESCE(CAST(ownerUser.nameSuffix as string), ''''))) as uOwnerName'
+                from:
+                    -
+                        table: Acme\Bundle\DemoBundle\Entity\DoctrineTypeField
+                        alias: e
+                join:
+                    left:
+                        - { join: e.owner, alias: ownerUser }
+        columns:
+            percentField:
+                label: acme.demo.doctrinetypefield.percent_field.label
+                frontend_type: percent
+            uOwnerName:
+                label: acme.demo.doctrinetypefield.owner.label
+        sorters:
+            columns:
+                percentField:
+                    data_name: e.percentField
+                uOwnerName:
+                    data_name: uOwnerName
+        filters:
+            columns:
+                percentField:
+                    data_name: e.percentField
+                    type: percent
+                uOwnerName:
+                    data_name: uOwnerName
+                    type: string
+    acme-demo-doctrine-type-field-grid-select:
+        extends: acme-demo-doctrine-type-field-grid-base
+    acme-demo-doctrine-type-field-grid-base-with-view-link:
+        extends: acme-demo-doctrine-type-field-grid-base
+        properties:
+            view_link:
+                type: url
+                route: acme_demo_doctrine_type_field_view
+                params:
+                    - id
+        actions:
+            view:
+                type: navigate
+                label: oro.grid.action.view
+                link: view_link
+                icon: eye
+                acl_resource: acme_demo_doctrine_type_field_view
+                rowAction: true
+    acme-demo-doctrine-type-field-grid:
+        extends: acme-demo-doctrine-type-field-grid-base-with-view-link
+        options:
+            entity_pagination: true
+        source:
+            query:
+                select:
+                    - e.createdAt
+                    - e.updatedAt
+        columns:
+            createdAt:
+                label: oro.ui.created_at
+                frontend_type: datetime
+            updatedAt:
+                label: oro.ui.updated_at
+                frontend_type: datetime
+        sorters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                updatedAt:
+                    data_name: e.updatedAt
+        filters:
+            columns:
+                createdAt:
+                    data_name: e.createdAt
+                    type: datetime
+                updatedAt:
+                    data_name: e.updatedAt
+                    type: datetime

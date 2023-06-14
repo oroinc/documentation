@@ -8,7 +8,7 @@ Intro
 
 To define your own entity image placeholder or redefine the existing one, use one of the following three options.
 
-All examples are illustrated for the Product entity, but you can do the same for any other entity. 
+All examples are illustrated for the Product entity, but you can do the same for any other entity.
 
 There are three services that enable you to set a placeholder for the image that is already defined in the system for the Product entity.
 
@@ -24,16 +24,16 @@ Perform the following steps to override DefaultImagePlaceholderProvider that is 
 
     .. oro_integrity_check:: f0c09880fa1116a4825ca0a82736b57c0e99f690
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
+        .. literalinclude:: ../../../code_examples/commerce/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 15-20
 
 
 2. Add your newly created service to the ``oro_product.provider.product_image_placeholder`` chain service.  You can do it via DI CompilerPass.
 
-    .. oro_integrity_check:: 58c6173a55e803851934184406a16d303bacfcb7
+    .. oro_integrity_check:: fbf1e57c3c7e9f4d2c890aafd7453e31eff7921e
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
+        .. literalinclude:: ../../../code_examples/commerce/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3-17, 19-20, 23-27
 
@@ -42,12 +42,10 @@ Pay attention to the way the chain works. It gets the first suitable value from 
 
 Make sure to insert CompilerPass to the bundle root file.
 
-    .. oro_integrity_check:: d83c325ff43f58942e660b11ceff64d6ecb6bed1
+    .. oro_integrity_check:: 2ce87a1dbd8b6b9769f11cc5ca91362bb1bb7926
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/ACMEDemoBundle.php
+        .. literalinclude:: ../../../code_examples/commerce/demo/AcmeDemoBundle.php
             :language: php
-            :lines: 3-21
-
 
 Theme Image Placeholder Provider
 --------------------------------
@@ -60,7 +58,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: 2ac24197d6a62119c91073a68605bbf727aa746c
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
+        .. literalinclude:: ../../../code_examples/commerce/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 9-14
 
@@ -69,7 +67,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: 7aaabbe519eb3d88a5e7d1c249b9de1ea95d0294
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
+        .. literalinclude:: ../../../code_examples/commerce/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3, 17-18, 20, 22, 24-25
 
@@ -78,7 +76,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: bb2a8417ea2afac9c33a17382665b4015f52d70a
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/theme.yml
+        .. literalinclude:: ../../../code_examples/commerce/demo/Resources/views/layouts/default/theme.yml
             :language: yaml
 
 
@@ -98,7 +96,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: e0f0d27a96b3445f8e63ccc7d993161cbda17f25
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
+        .. literalinclude:: ../../../code_examples/commerce/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 3-8
 
@@ -107,7 +105,7 @@ To do this, perform the following:
 
     .. oro_integrity_check:: ac8ab7028833306161b99ed116551edba5e9fc3c
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
+        .. literalinclude:: ../../../code_examples/commerce/demo/DependencyInjection/Compiler/ImagePlaceholderProviderPass.php
             :language: php
             :lines: 3, 17-18, 20, 21, 24-25
 
@@ -116,17 +114,17 @@ To do this, perform the following:
 TwigExtension and template examples
 -----------------------------------
 
-To use the providers we have created previously, we need to create TwigExtension that fetches the Product image in the appropriate dimension or, if the main image is unavailable, provides the placeholder instead. 
+To use the providers we have created previously, we need to create TwigExtension that fetches the Product image in the appropriate dimension or, if the main image is unavailable, provides the placeholder instead.
 
-    .. oro_integrity_check:: dab32e3102e47dfe2ac89159aee02a43c00fe9d8
+    .. oro_integrity_check:: 10cfcf84798a3aa78cdd5ec9cd25706b7fa0e37b
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Twig/ProductImageExtension.php
+        .. literalinclude:: ../../../code_examples/commerce/demo/Twig/ProductImageExtension.php
             :language: php
             :lines: 3-73
 
-    .. oro_integrity_check:: b42a7622dc5a2373180b0cda478dec1c01680895
+    .. oro_integrity_check:: 3c0bc2660a66ce70452225a42fb0240172114cd1
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/config/services.yml
+        .. literalinclude:: ../../../code_examples/commerce/demo/Resources/config/services.yml
             :language: yaml
             :lines: 1-2, 22-27
 
@@ -134,10 +132,10 @@ You can use Twig functions declared in the extension for your templates.
 
     .. oro_integrity_check:: efbb826d9642a8ba17afa98a7722d319788941b7
 
-        .. literalinclude:: ../../../code_examples/platform/image_placeholder/demo/Resources/views/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig
+        .. literalinclude:: ../../../code_examples/commerce/demo/Resources/views/layouts/default/imports/oro_product_list_item/oro_product_list_item.html.twig
             :language: html+twig
 
-            
-            
+
+
  .. include:: /include/include-links-dev.rst
    :start-after: begin

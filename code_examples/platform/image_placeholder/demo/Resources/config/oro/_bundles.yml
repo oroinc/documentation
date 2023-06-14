@@ -1,3 +1,0 @@
-# Resources/config/oro/bundles.yml
-bundles:
-    - ACME\Bundle\DemoBundle\ACMEDemoBundle

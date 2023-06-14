@@ -15,50 +15,11 @@ To add the option set field to an entity, you can use |ExtendExtension|.
 
 The following example illustrates how to do it:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_6/AddEnumFieldOroUser.php
+.. oro_integrity_check:: 92e3a924d0a94f1becf632583c14c1462f91f47d
 
-   namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_6;
-
-   use Doctrine\DBAL\Schema\Schema;
-   use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
-   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
-   use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
-   use Oro\Bundle\MigrationBundle\Migration\Migration;
-   use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-
-   class AddEnumFieldOroUser implements Migration, ExtendExtensionAwareInterface
-   {
-       protected ExtendExtension $extendExtension;
-
-       /**
-        * @inheritDoc
-        */
-       public function setExtendExtension(ExtendExtension $extendExtension)
-       {
-           $this->extendExtension = $extendExtension;
-       }
-
-       /**
-        * @inheritDoc
-        */
-       public function up(Schema $schema, QueryBag $queries)
-       {
-           $table = $schema->getTable('oro_user');
-           $this->extendExtension->addEnumField(
-               $schema,
-               $table,
-               'internal_rating', // field name
-               'user_internal_rating', // enum code
-               false, // only one option can be selected
-               false, // an administrator can add new options and remove existing ones
-               [
-                   'extend' => ['owner' => ExtendScope::OWNER_CUSTOM]
-               ]
-           );
-       }
-   }
-
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_3/AddEnumFieldOroUser.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_3/AddEnumFieldOroUser.php
+       :language: php
 
 Please mind the enum code parameter. Each option set should have code and be unique system-wide,
 and with length of no more than 21 characters (due to dynamic name generation and prefix).
@@ -66,45 +27,11 @@ The same principle applies to the field name. In the case above, it should be le
 
 To load a list of options, use data fixtures, for example:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadUserInternalRatingData.php
+.. oro_integrity_check:: 4eef7109a9344e967d329c3f1da2b552aade5796
 
-   namespace Acme\Bundle\DemoBundle\Migrations\Data\ORM;
-
-   use Doctrine\Common\DataFixtures\AbstractFixture;
-   use Doctrine\Persistence\ObjectManager;
-   use Oro\Bundle\EntityExtendBundle\Entity\Repository\EnumValueRepository;
-   use Oro\Bundle\EntityExtendBundle\Tools\ExtendHelper;
-
-   class LoadUserInternalRatingData extends AbstractFixture
-   {
-       protected array $data = [
-           '1' => true,
-           '2' => false,
-           '3' => false,
-           '4' => false,
-           '5' => false
-       ];
-
-       /**
-        * @inheritDoc
-        */
-       public function load(ObjectManager $manager)
-       {
-           $className = ExtendHelper::buildEnumValueClassName('user_internal_rating');
-
-           /** @var EnumValueRepository $enumRepo */
-           $enumRepo = $manager->getRepository($className);
-
-           $priority = 1;
-           foreach ($this->data as $name => $isDefault) {
-               $enumOption = $enumRepo->createEnumValue($name, $priority++, $isDefault);
-               $manager->persist($enumOption);
-           }
-
-           $manager->flush();
-       }
-   }
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadUserInternalRatingData.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadUserInternalRatingData.php
+       :language: php
 
 As you can see in this example, we use the **buildEnumValueClassName()** method to convert the option set code
 to the class name of an entity responsible for storing all options of this option set. It is important because

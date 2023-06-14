@@ -10,10 +10,10 @@ Example:
 .. code-block:: none
 
     $query = (new Query())
-            ->select('sku')
-            ->from('oro_search_product')
-            ->andWhere('all_data', '=', 'Functions', 'text')
-            ->orWhere('price', '>', 85, 'decimal');
+            ->select('subject')
+            ->from('acme_demo_question')
+            ->andWhere('priority_id', '=', 1', 'integer')
+            ->orWhere('priority_id', '>', 100, 'integer');
 
 The syntax of Query builder is close to Doctrine 2.
 

@@ -3,9 +3,9 @@
 CRUD Operations
 ===============
 
-To let the users create new tasks and edit existing ones, follow these steps:
+To let the users create new questions and edit existing ones, follow these steps:
 
-#. :ref:`Create a form type for the Task entity <cookbook-entity-form-type>`.
+#. :ref:`Create a form type for the Question entity <cookbook-entity-form-type>`.
 
 #. :ref:`Create a controller <cookbook-entity-controller>`.
 
@@ -19,42 +19,14 @@ The Form Type
 -------------
 
 First, you need to create a form type that makes it possible to let the user enter all the data
-needed to describe a task:
+needed to describe a question:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Form/TaskType.php
+.. oro_integrity_check:: fc1d68e2446d5cc1e6a31ee3437a54eca5ac7504
 
-   namespace Acme\Bundle\DemoBundle\Form;
-
-   use Symfony\Component\Form\AbstractType;
-   use Symfony\Component\Form\FormBuilderInterface;
-   use Symfony\Component\OptionsResolver\OptionsResolver;
-
-   class TaskType extends AbstractType
-   {
-       /**
-        * @inheritDoc
-        */
-       public function buildForm(FormBuilderInterface $builder, array $options)
-       {
-           $builder
-               ->add('subject')
-               ->add('description')
-               ->add('dueDate')
-               ->add('priority')
-           ;
-       }
-
-       /**
-        * @inheritDoc
-        */
-       public function configureOptions(OptionsResolver $resolver)
-       {
-           $resolver->setDefaults([
-               'data_class' => 'Acme\Bundle\DemoBundle\Entity\Task',
-           ]);
-       }
-   }
+   .. literalinclude:: /code_examples/commerce/demo/Form/Type/QuestionType.php
+       :caption: src/Acme/Bundle/DemoBundle/Form/Type/QuestionType.php
+       :language: php
+       :lines: 3-
 
 .. seealso:: Learn more about |form types in the Symfony documentation|.
 
@@ -63,68 +35,25 @@ needed to describe a task:
 The Controllers
 ---------------
 
-You then need to create a controller class that comes with two actions: one that is called when a new task should be created and one that can fetch an existing task to let the user modify its data:
+You then need to create a controller class that comes with two actions: one that is called when a new question should be created and one that can fetch an existing question to let the user modify its data:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
+.. oro_integrity_check:: de2ee9c384055edb1ffbec46a751ac8e81eb6045
 
-    namespace Acme\Bundle\DemoBundle\Controller;
+   .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
+       :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
+       :language: php
+       :lines: 3-52, 65-
 
-    use Acme\Bundle\DemoBundle\Entity\Task;
-    use Acme\Bundle\DemoBundle\Form\TaskType;
-    use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-    use Symfony\Component\HttpFoundation\Request;
-    use Symfony\Component\Routing\Annotation\Route;
-
-    /**
-     * @Route("/task")
-     */
-    class TaskController extends AbstractController
-    {
-        /**
-         * @Route("/create", name="acme_task_create")
-         * @Template("@AcmeDemo/Task/update.html.twig")
-         */
-        public function createAction(Request $request): array
-        {
-            return $this->update(new Task(), $request);
-        }
-
-        /**
-         * @Route("/edit/{id}", name="acme_task_update", requirements={"id"="\d+"})
-         * @Template("@AcmeDemo/Task/update.html.twig")
-         */
-        public function editAction(Task $task, Request $request): array
-        {
-            return $this->update($task, $request);
-        }
-
-        /**
-         * @param Task $task
-         * @param Request $request
-         * @return array
-         */
-        private function update(Task $task, Request $request): array
-        {
-            $form = $this->createForm(TaskType::class, $task);
-
-            return [
-                'entity' => $task,
-                'form'   => $form->createView(),
-            ];
-        }
-    }
 
 Then, make sure that the controller is loaded in your routing configuration so that Symfony knows
 which controller needs to be called for particular routes:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/routing.yml
+.. oro_integrity_check:: 286ae005d3a46e9359b8a167282c3b662af2161f
 
-    acme_task:
-        resource: '@AcmeDemoBundle/Controller/TaskController.php'
-        type: annotation
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/routing.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/routing.yml
+       :language: yaml
+       :lines: 1-4
 
 .. _cookbook-entity-template:
 
@@ -133,82 +62,11 @@ The Template
 
 The template that is responsible for displaying the form fields should extend the base template ``@OroUI/actions/update.html.twig`` from the OroUIBundle. This template defines some basic blocks that you can use. This way, your own forms will provide the same look and feel as the ones coming with OroPlatform:
 
-.. code-block:: none
-   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/update.html.twig
+.. oro_integrity_check:: 80a97568b7fa531c416275bd07fb836de0a0706b
 
-    {# extend the base template from the OroUIBundle #}
-    {% extends '@OroUI/actions/update.html.twig' %}
-
-    {# reuse the form theme provided with OroPlatform #}
-    {% form_theme form with '@OroForm/Form/fields.html.twig' %}
-
-    {% import '@OroUI/macros.html.twig' as UI %}
-
-    {# make the current task accessible with the task variable #}
-    {% set task = form.vars.value %}
-
-    {# choose the appropriate action depending on whether a task is created or modified #}
-    {# this variable needs to be named formAction as this is what the base template expects #}
-    {% if task.id %}
-        {% set formAction = path('app_task_update', { 'id': task.id }) %}
-    {% else %}
-        {% set formAction = path('app_task_create') %}
-    {% endif %}
-
-    {% block navButtons %}
-        {# the cancelButton() macro creates a button that discards the entered data and leads
-           the user to the linked controller #}
-        {{ UI.cancelButton(path('app_task_index')) }}
-
-        {# the dropdownSaveButton() macro offers a way to let the user select between different
-           options when saving an entity, the selected option will be passed to the controller
-           handling the request as an additional parameter #}
-        {{ UI.dropdownSaveButton({
-            'html': UI.saveAndCloseButton() ~ UI.saveAndStayButton()
-        }) }}
-    {% endblock navButtons %}
-
-    {% block pageHeader %}
-        {% if task.id %}
-            {% set breadcrumbs = {
-                'entity': task,
-                'indexPath': path('app_task_index'),
-                'indexLabel': 'Tasks',
-                'entityTitle': task.subject
-            } %}
-            {{ parent() }}
-        {% else %}
-            {% set title = 'oro.ui.create_entity'|trans({ '%entityName%': 'Task' }) %}
-            {{ include('@OroUI/page_title_block.html.twig', { title: title }) %}
-        {% endif %}
-    {% endblock pageHeader %}
-
-    {% block content_data %}
-        {% set id = 'task-edit' %}
-        {% set dataBlocks = [{
-                'title': 'General'|trans,
-                'class': 'active',
-                'subblocks': [{
-                    'title': '',
-                    'data': [
-                        form_row(form.subject),
-                        form_row(form.description),
-                        form_row(form.dueDate),
-                        form_row(form.priority),
-                    ]
-                }]
-            }]
-        %}
-
-        {# the data variable is a special variable that is used in the parent content_data block
-           to render the visual content "blocks" of a page #}
-        {% set data = {
-            'formErrors': form_errors(form) ? form_errors(form) : null,
-            'dataBlocks': dataBlocks,
-        } %}
-
-        {{ parent() }}
-    {% endblock content_data %}
+   .. literalinclude:: /code_examples/commerce/demo/Resources/views/Question/update.html.twig
+       :caption: src/Acme/Bundle/DemoBundle/Resources/views/Question/update.html.twig
+       :language: html
 
 
 .. _controller-entity-grid-create-edit-link:
@@ -216,45 +74,33 @@ The template that is responsible for displaying the form fields should extend th
 Linking the Data Grid
 ---------------------
 
-Finally, link both actions on the page that displays the list of tasks:
+Finally, link both actions on the page that displays the list of questions:
 
-**1. Add a link to create new tasks**
+**1. Add a link to create new questions**
 
-The base ``@OroUI/actions/index.html.twig`` template from the OroUIBundle that you :ref:`already used <cookbook-entities-grid-controller>` to embed the data grid comes with a pre-defined ``navButtons`` block, which you can use to add a button that links to the *create a task action*:
+The base ``@OroUI/actions/index.html.twig`` template from the OroUIBundle that you :ref:`already used <cookbook-entities-grid-controller>` to embed the data grid comes with a pre-defined ``navButtons`` block, which you can use to add a button that links to the *create a question action*:
 
-.. code-block:: html+jinja
-   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/index.html.twig
+.. oro_integrity_check:: cf823e20d28a039622d7093fd11cb3b4db831d82
 
-    {% extends '@OroUI/actions/index.html.twig' %}
-    {% import '@OroUI/macros.html.twig' as UI %}
+   .. literalinclude:: /code_examples/commerce/demo/Resources/views/Question/index.html.twig
+       :caption: src/Acme/Bundle/DemoBundle/Resources/views/Question/index.html.twig
+       :language: html
 
-    {% set gridName = 'acme-tasks-grid' %}
-    {% set pageTitle = 'Task' %}
+**2. Link question rows to the related update action**
 
-    {% block navButtons %}
-        <div class="btn-group">
-            {{ UI.addButton({
-                'path': path('app_task_create'),
-                'entity_label': 'Create a task',
-            }) }}
-        </div>
-    {% endblock %}
-
-**2. Link task rows to the related update action**
-
-To make it possible to modify each task, you need to define a property that describes how the URL of the update action is built, and then add this URL to the list of available actions in your data grid configuration:
+To make it possible to modify each question, you need to define a property that describes how the URL of the update action is built, and then add this URL to the list of available actions in your data grid configuration:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        acme-tasks-grid:
+        acme-demo-question:
             # ...
             properties:
                 id: ~
                 update_link:
                     type: url
-                    route: app_task_update
+                    route: acme_demo_question_update
                     params:
                         - id
                 # ...
@@ -271,23 +117,18 @@ To make it possible to modify each task, you need to define a property that desc
 Deleting Entities
 -----------------
 
-You can delete a task through the ``DELETE`` operation available for all entities by default or through the customized one. When running ``DELETE``, ensure that your entity has a route from the ``routeName`` option of the entity configuration.
+You can delete a question through the ``DELETE`` operation available for all entities by default or through the customized one. When running ``DELETE``, ensure that your entity has a route from the ``routeName`` option of the entity configuration.
 
 You can delete an entity through the :ref:`DELETE operation <bundle-docs-platform-action-bundle-default-operations>` which is enabled by default for all entities. To run the operation, you need to ensure that your entity has the ``routeName`` option of the entity configuration, which will be used as a route name to redirect a user after the ``DELETE`` operation (as in the example below).
 
-.. code-block:: php
 
-    /*
-     * @Config(
-     *      routeName="acme_task_index",
-     *      routeView="acme_task_view",
-     *      defaultValues={
-     *          "entity"={
-     *              "icon"="fa-tasks"
-     *          }
-     *      }
-     * )
-     */
+.. oro_integrity_check:: 708fa8bf0ced81c51b722ec53d6e2442abd06ea9
+
+   .. literalinclude:: /code_examples/commerce/demo/Entity/Question.php
+       :caption: src/Acme/Bundle/DemoBundle/Entity/Question.php
+       :language: php
+       :lines: 16, 25-27, 30, 38-40, 56-58
+
 
 See the sample configuration of the default ``DELETE`` operation in the |Actions| topic.
 

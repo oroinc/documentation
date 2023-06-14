@@ -9,8 +9,8 @@ features:
             - acme_wysiwyg_blog_post_create
             - acme_wysiwyg_blog_post_update
         entities:
-            - ACME\Bundle\WysiwygBundle\Entity\BlogPost
+            - Acme\Bundle\WysiwygBundle\Entity\BlogPost
         api_resources:
-            - [ACME\Bundle\WysiwygBundle\Entity\BlogPost, [create, update, delete, delete_list]]
+            - [Acme\Bundle\WysiwygBundle\Entity\BlogPost, [create, update, delete, delete_list]]
         navigation_items:
             - application_menu.system_tab.entities_list.blog_post_list

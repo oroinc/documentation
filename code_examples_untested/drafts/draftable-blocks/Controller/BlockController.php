@@ -1,9 +1,9 @@
 <?php
 
-namespace ACME\Bundle\CMSBundle\Controller;
+namespace Acme\Bundle\CMSBundle\Controller;
 
-use ACME\Bundle\CMSBundle\Entity\Block;
-use ACME\Bundle\CMSBundle\Form\Type\BlockType;
+use Acme\Bundle\CMSBundle\Entity\Block;
+use Acme\Bundle\CMSBundle\Form\Type\BlockType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
 use Oro\Bundle\SecurityBundle\Annotation\Acl;
 use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
- * ACME CMS Block controller
+ * Acme CMS Block controller
  */
 class BlockController extends AbstractController
 {
@@ -34,7 +34,7 @@ class BlockController extends AbstractController
      * @Acl(
      *      id="acme_cms_block_view",
      *      type="entity",
-     *      class="ACMECMSBundle:Block",
+     *      class="AcmeCMSBundle:Block",
      *      permission="VIEW"
      * )
      */
@@ -45,11 +45,11 @@ class BlockController extends AbstractController
 
     /**
      * @Route("/create", name="acme_cms_block_create")
-     * @Template("@ACMECMS/Block/update.html.twig")
+     * @Template("@AcmeCMS/Block/update.html.twig")
      * @Acl(
      *      id="acme_cms_block_create",
      *      type="entity",
-     *      class="ACMECMSBundle:Block",
+     *      class="AcmeCMSBundle:Block",
      *      permission="CREATE"
      * )
      */
@@ -66,7 +66,7 @@ class BlockController extends AbstractController
      * @Acl(
      *      id="acme_cms_block_update",
      *      type="entity",
-     *      class="ACMECMSBundle:Block",
+     *      class="AcmeCMSBundle:Block",
      *      permission="EDIT"
      * )
      */

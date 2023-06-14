@@ -16,22 +16,14 @@ Grid Configuration
 
 Suppose you have a grid configuration and a named parameter inside the `where` clause of its source query:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+.. oro_integrity_check:: c8828393becf1321ce5ce80d0ffc5f53fc98f13b
 
-    datagrids:
-        # ...
-        acme-tasks-grid:
-            # ...
-            source:
-                query:
-                    where:
-                        and:
-                        - task.relatedContact = :contactId
-            # ...
-        # ...
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 284, 289-293
 
-The goal is to set the :contactId parameter with the value from the request.
+The goal is to set the :holder_entity_id parameter with the value from the request.
 
 Solution 1: Grid Parameter Binding
 ----------------------------------
@@ -40,24 +32,31 @@ The easiest way (sufficient for most situations) is to use the parameter binding
 
 You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml`` using the following syntax:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+.. oro_integrity_check:: f2f4c1f49ca17d7b4a4c66ad9823987e91cd3d71
 
-    datagrids:
-        # ...
-        acme-tasks-grid:
-            # ...
-            source:
-                query:
-                    where:
-                        and:
-                        - task.relatedContact = :contactId
-                bind_parameters:
-                    # Get the "contactId" parameter from the datagrid
-                    # and set its value to the "contactId" parameter in the datasource query
-                    - contactId
-            # ...
-        # ...
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 284, 289-297
+
+The controller receives an entity "priority" and passes it to the view:
+
+.. oro_integrity_check:: 8e1c23d9a626d9401881c79122f108adef7b80cb
+
+   .. literalinclude:: /code_examples/commerce/demo/Controller/PriorityController.php
+       :caption: src/Acme/Bundle/DemoBundle/Controller/PriorityController.php
+       :language: php
+       :lines: 17, 20-23, 36-38, 45-51, 119
+
+In this example, the entity mapping page adds a grid with the data of the linked entity.
+The view passes the "holder_entity_id" parameter with the value "entity.id" to the grid:
+
+.. oro_integrity_check:: 5e3efaa6504563923a785a478d49c94d6b0a2534
+
+   .. literalinclude:: /code_examples/commerce/demo/Resources/views/Priority/view.html.twig
+       :caption: src/Acme/Bundle/DemoBundle/Resources/views/Priority/view.html.twig
+       :language: html
+       :lines: 3, 19-21, 43-53
 
 In case if names of the parameter in the grid and the query do not match, you can pass an associative array of parameters, where the key will be the name of the query parameter, and the value will match the name of the parameter in the grid:
 
@@ -65,64 +64,22 @@ In case if names of the parameter in the grid and the query do not match, you ca
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
 
     datagrids:
-        # ...
-        acme-tasks-grid:
-            # ...
+        acme-demo-question-grid-by-priority:
             source:
                 query:
                     where:
                         and:
-                        - task.relatedContact = :contactId
+                        - 'IDENTITY(e.priority) = :holder_entity_id'
                 bind_parameters:
-                    # Get the "relatedContactId" parameter from the datagrid
-                    # and set its value to the "contactId" parameter in the datasource query
-                    contactId: relatedContactId
+                    # Get the "priority" parameter from the datagrid
+                    # and set its value to the "holder_entity_id" parameter in the datasource query
+                    holder_entity_id: priority
             # ...
         # ...
-
 
 .. caution::
 
     A datasource must implement the |BindParametersInterface| to support the ``bind_parameters`` option.
-
-Next, pass the "relatedContactId " parameter to the grid. The controller receives a contact entity and passes it to the view:
-
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
-
-        namespace Acme\Bundle\DemoBundle\Controller;
-
-        use Oro\Bundle\ContactBundle\Entity\Contact;
-        use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-        use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-        use Symfony\Component\Routing\Annotation\Route;
-
-        class TaskController extends AbstractController
-        {
-            // ...
-
-            /**
-             * @Route("/contact/{id}/tasks", name="acme_task_contact_tasks", requirements={"id"="\d+"})
-             * @Template
-             */
-            public function contactTasksAction(Contact $contact)
-            {
-                return ['contact' => $contact];
-            }
-
-            // ...
-        }
-
-The view passes the "relatedContactId" parameter to the grid:
-
-.. code-block:: html+jinja
-   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/contactTasks.html.twig
-
-    {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
-
-    <div class="widget-content">
-        {{ dataGrid.renderGrid('acme-tasks-grid', {relatedContactId: contact.id}) }}
-    </div>
 
 Solution 2. Create Custom Event Listener
 ----------------------------------------
@@ -130,56 +87,37 @@ Solution 2. Create Custom Event Listener
 If the first example does not work for you ( for example, datasource does not support parameters binding, or  you need to implement additional logic before binding parameters), you can create a listener for the
 ``oro_datagrid.datagrid.build.after`` event and set the parameter for the source query in this listener:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/EventListener/ParameterListener.php
+.. oro_integrity_check:: 371351daec49ddf419ecb5b0aaac7657e027851d
 
-    namespace Acme\Bundle\DemoBundle\EventListener;
-
-    use Doctrine\ORM\QueryBuilder;
-
-    use Oro\Bundle\DataGridBundle\Datasource\Orm\OrmDatasource;
-    use Oro\Bundle\DataGridBundle\Event\BuildAfter;
-
-    class ParameterListener
-    {
-        protected $parameterName;
-        protected $requestParameterName;
-
-        public function __construct($parameterName, $requestParameterName = null)
-        {
-            $this->parameterName = $parameterName;
-            $this->requestParameterName = $requestParameterName ? $requestParameterName : $this->parameterName;
-        }
-
-        public function onBuildAfter(BuildAfter $event)
-        {
-            $datagrid   = $event->getDatagrid();
-            $datasource = $datagrid->getDatasource();
-            $parameters = $datagrid->getParameters();
-
-            if ($datasource instanceof OrmDatasource) {
-                /** @var QueryBuilder $queryBuilder */
-                $queryBuilder = $datasource->getQueryBuilder();
-
-                $queryBuilder->setParameter($this->parameterName, $parameters->get($this->requestParameterName));
-            }
-        }
-    }
+   .. literalinclude:: /code_examples/commerce/demo/EventListener/ParameterListener.php
+       :caption: src/Acme/Bundle/DemoBundle/EventListener/ParameterListener.php
+       :language: php
+       :lines: 3-34
 
 Register this listener in the container:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+.. oro_integrity_check:: 6e6cdf9eae3399e39fe76888ecbe3bfae6b3a4aa
 
-    services:
-        acme_task.event_listener.acme_tasks_grid_parameter_listener:
-            class: Acme\Bundle\DemoBundle\EventListener\ParameterListener
-            arguments:
-                - contactId
-            tags:
-                - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.after.acme-tasks-grid, method: onBuildAfter }
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+       :language: yaml
+       :lines: 2, 90-95
 
-Remember that you still need to pass the ``relatedContactId`` parameter to the grid from a Twig template (see the example in the previous solution).
+.. oro_integrity_check:: 710deb97c20a27a0106005b1c0d3eaf51d57727b
+
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 161, 166-170
+
+The view passes the "holder_entity_id" parameter with the value "entity.id" to the grid:
+
+.. oro_integrity_check:: 334fbddb121d48992723ba25d9fd7fc8f3b2deae
+
+   .. literalinclude:: /code_examples/commerce/demo/Resources/views/Priority/view.html.twig
+       :caption: src/Acme/Bundle/DemoBundle/Resources/views/Priority/view.html.twig
+       :language: html
+       :lines: 3, 19-21, 33-42
 
 References
 ----------

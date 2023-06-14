@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Method;
+namespace Acme\Bundle\FastShippingBundle\Method;
 
-use ACME\Bundle\FastShippingBundle\Form\Type\FastShippingMethodOptionsType;
+use Acme\Bundle\FastShippingBundle\Form\Type\FastShippingMethodOptionsType;
 use Oro\Bundle\CurrencyBundle\Entity\Price;
 use Oro\Bundle\ShippingBundle\Context\ShippingContextInterface;
 use Oro\Bundle\ShippingBundle\Method\ShippingMethodTypeInterface;

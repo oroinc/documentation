@@ -1,15 +1,15 @@
 parameters:
     acme_fast_shipping.integration.type: 'fast_shipping'
-    acme_fast_shipping.admin_view.method_template: '@@ACMEFastShipping/method/fastShippingMethodWithOptions.html.twig'
+    acme_fast_shipping.admin_view.method_template: '@@AcmeFastShipping/method/fastShippingMethodWithOptions.html.twig'
 
 services:
     acme_fast_shipping.integration.channel:
-        class: 'ACME\Bundle\FastShippingBundle\Integration\FastShippingChannelType'
+        class: 'Acme\Bundle\FastShippingBundle\Integration\FastShippingChannelType'
         tags:
             - { name: oro_integration.channel, type: '%acme_fast_shipping.integration.type%' }
 
     acme_fast_shipping.integration.transport:
-        class: 'ACME\Bundle\FastShippingBundle\Integration\FastShippingTransport'
+        class: 'Acme\Bundle\FastShippingBundle\Integration\FastShippingTransport'
         tags:
             - { name: oro_integration.transport, type: '%acme_fast_shipping.integration.type%', channel_type: '%acme_fast_shipping.integration.type%' }
 
@@ -20,7 +20,7 @@ services:
             - '%acme_fast_shipping.integration.type%'
 
     acme_fast_shipping.factory.method:
-        class: 'ACME\Bundle\FastShippingBundle\Factory\FastShippingMethodFromChannelFactory'
+        class: 'Acme\Bundle\FastShippingBundle\Factory\FastShippingMethodFromChannelFactory'
         arguments:
             - '@acme_fast_shipping.method.identifier_generator.method'
             - '@oro_locale.helper.localization'
@@ -37,7 +37,7 @@ services:
             - { name: oro_shipping_method_provider }
 
     acme_fast_shipping.form.type.fast_shipping_options:
-        class: 'ACME\Bundle\FastShippingBundle\Form\Type\FastShippingMethodOptionsType'
+        class: 'Acme\Bundle\FastShippingBundle\Form\Type\FastShippingMethodOptionsType'
         arguments:
             - '@oro_currency.rounding.price_rounding_service'
         tags:

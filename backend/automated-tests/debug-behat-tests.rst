@@ -19,14 +19,14 @@ How to Debug Behat Tests
 Enable Very Verbose Output
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can increase the output verbosity to see more details on what's going on by adding the ``-v``, ``-vv``, or ``-vvv`` option to ``bin/behat``.
+You can increase the output verbosity to see more details on what's going on by adding the ``-v``, ``-vv``, or ``-vvv`` option to ``php bin/behat``.
 This enables verbose, very verbose, or very very verbose output accordingly.
 
 - ``-v, --verbose[=VERBOSE]`` -- Increase verbosity of exceptions.
 
 .. code-block:: bash
 
-    bin/behat path/to/your.feature -vv
+    php bin/behat path/to/your.feature -vv
 
 Review Error Messages
 ^^^^^^^^^^^^^^^^^^^^^

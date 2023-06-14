@@ -1,11 +1,11 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Provider;
+namespace Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Provider;
 
-use ACME\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
-use ACME\Bundle\CollectOnDeliveryBundle\Entity\Repository\CollectOnDeliverySettingsRepository;
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Factory\CollectOnDeliveryConfigFactoryInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
+use Acme\Bundle\CollectOnDeliveryBundle\Entity\Repository\CollectOnDeliverySettingsRepository;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Factory\CollectOnDeliveryConfigFactoryInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Psr\Log\LoggerInterface;
 

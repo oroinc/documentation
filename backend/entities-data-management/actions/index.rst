@@ -20,111 +20,14 @@ Operation Configuration
 All operations can be described in the ``actions.yml`` configuration file under the corresponding bundle in the `config/oro` resource directory.
 Below is an example of a simple operation configuration that performs an execution logic with the MyEntity entity.
 
-.. code-block:: none
+.. oro_integrity_check:: 44fe2d774e42390c62957717d5d5addf8f342d06
 
-    operations:
-        acme_demo_expire_myentity_operation:                            # operation name
-            extends: entity_operation_base                              # (optional) parent operation if needed
-            replace:                                                    # (optional) the list of nodes that should be replaced in the parent operation
-                - frontend_options                                      # node name
-            label: aсme.demo.operations.myentity_operation              # label for operation button
-            enabled: true                                               # (optional, default = true) is operation enabled
-            substitute_operation:  entity_common_operation              # (optional) name of operation that must be substituted with current one if it appears
-            entities:                                                   # (optional) list of entity classes
-                - Acme\Bundle\DemoBundle\Entity\MyEntity                # entity class
-                - AcmeDemoBundle:MyEntity2
-            for_all_entities: false                                     # (optional, default = false) is operation match for all entities
-            exclude_entities: ['AcmeDemoBundle:MyEntity3']              # (optional) list of entities that must be ignored for this operation (useful with "for_all_entities" option)
-            routes:                                                     # (optional) list of routes
-                - acme_demo_myentity_view                               # route name
-            datagrids:                                                  # (optional) list of datagrids
-                - acme-demo-grid                                        # datagrid name
-            for_all_datagrids: false                                    # (optional, default = false) is operation available in all datagrids if any
-            exclude_datagrids: ['datagrid-demo']                        # (optional) list of datagrids that should never be matched by this operation in any context (useful with "for_all_datagrids" option)
-            groups: ['operations_on_acme_entities']                     # (optional) list of groups that can be assigned to operation (tagging mechanism) to be available or filtered among in usual code or templates
-            order: 10                                                   # (optional, default = 0) display order of operation button
-            acl_resource: acme_demo_myentity_view                       # (optional) ACL resource name that will be checked while checking that operation execution is allowed
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40-125
 
-            button_options:                                             # (optional) display options for operation button
-                icon: fa-clock-o                                         # (optional) class of button icon
-                class: btn                                              # (optional) class of button
-                group: aсme.demo.operation.demogroup.label              # (optional) group operation to drop-down on the label
-                template: customTemplate.html.twig                      # (optional) custom button template
-                page_component_module:                                  # (optional) js-component module
-                    acme/js/app/components/demo-component
-                page_component_options:                                 # (optional) js-component module options
-                    parameterName: parameterValue
-                data:                                                   # custom data attributes which will be added to button
-                    attributeName: attributeValue
-
-            frontend_options:                                           # (optional) display options for operation button
-                template: customDialogTemplate.html.twig                # (optional) custom template, can be used both for page or dialog
-                title: aсme.demo.operations.dialog.title                # (optional) custom title
-                title_parameters:
-                    %%some_param%%: $.paramValue
-                options:                                                # (optional) modal dialog options
-                    allowMaximize: true
-                    allowMinimize: true
-                    dblclick: maximize
-                    maximizedHeightDecreaseBy: minimize-bar
-                    width: 1000
-                show_dialog: true                                       # (optional, by default: true) if `false` - operation will be opened on page
-                confirmation: aсme.demo.operation_perform_confirm       # (optional) Confirmation message before start operation`s execution
-
-            attributes:                                                 # (optional) list of all existing attributes
-                demo_attr:                                              # attribute name
-                    label: Demo Field                                   # attribute label
-                    type: string                                        # attribute type
-                    property_path: data.demo                            # (optional if label and type are set) path to entity property, which helps to automatically defined attribute metadata, and will be mapped for that property
-                    options:                                            # attribute options
-                        class: \Acme\Bundle\DemoBundle\Model\MyModel    # (optional) entity class name, set if type is entity
-
-            datagrid_options:
-                mass_action_provider:                                   # (optional) service name, marked with "oro_action.datagrid.mass_action_provider" tag
-                    acme.action.datagrid.mass_action_provider           # and must implement Oro\Bundle\ActionBundle\Datagrid\Provider\MassActionProviderInterface
-                mass_action:                                            # (optional) configuration of datagrid mass action
-                    type: window
-                    label: acme.demo.mass_action.label
-                    icon: plus
-                    route: acme_demo_bundle_massaction
-                    frontend_options:
-                        title: acme.demo.mass_action.action.label
-                        dialogOptions:
-                            modal: true
-                            ...
-
-            form_options:                                               # (optional) parameters which will be passed to form dialog
-                attribute_fields:                                       # list of attribute fields which will be shown in dialog
-                    demo_attr:                                          # attribute name (must be configured in `attributes` block of action config)
-                        form_type: text                                 # needed type of current field
-                            options:                                    # list of form field options
-                                required: true                          # define this field as required
-                                constraints:                            # list of constraints
-                                    - NotBlank: ~                       # this field must be filled
-                attribute_default_values:                               # (optional) define default values for attributes
-                    demo_attr: $demo                                    # use attribute name and property path or simple string for attribute value
-
-            form_init:                                                  # (optional) any needed actions which will execute before showing form dialog
-                - '@assign_value':                                        # action alias
-                    conditions:                                         # (optional) conditions list to allow current action
-                        '@empty': $description                            # condition definition
-                    parameters: [$.demo_attr, 'Demo Data']              # parameters of current action
-
-            preactions:                                                 # (optional) any needed pre actions which will execute before pre conditions
-                - '@create_datetime':                                     # action alias
-                    attribute: $.date                                   # action parameters
-
-            preconditions:                                              # (optional) pre conditions for display Action button
-                - '@gt': [$updatedAt, $.date]                               # condition definition
-
-            conditions:                                                 # (optional) conditions for execution Action button
-                - '@equal': [$expired, false]                               # condition definition
-
-            actions:                                                    # (optional) any needed actions which will execute after clicking the button
-                - '@assign_value': [$expired, true]                       # action definition
-
-
-This configuration describes the operation that relates to the ``MyEntity`` entity. The button with the "adme.demo.myentity.operations.myentity_operation" label is displayed on the view page (acme_demo_myentity_view) of this entity (in case the 'updatedAt' field > new DateTime('now')). If the `expired` property of the entity = false, then clicking the button triggers the "assign_value" action that sets the 'expired' field to `true`. If `form_options` are specified, then the form dialog with attributes fields is displayed when clicking the button. The actions run only on the submit form.
+This configuration describes the operation that relates to the ``Question`` entity. The button with the "adme.demo.myentity.operations.myentity_operation" label is displayed on the view page (acme_demo_myentity_view) of this entity (in case the 'updatedAt' field > new DateTime('now')). If the `expired` property of the entity = false, then clicking the button triggers the "assign_value" action that sets the 'expired' field to `true`. If `form_options` are specified, then the form dialog with attributes fields is displayed when clicking the button. The actions run only on the submit form.
 
 Configuration Validation
 ------------------------
