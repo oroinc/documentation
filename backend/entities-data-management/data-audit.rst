@@ -21,60 +21,12 @@ DataAudit can only be enabled for Configurable entities. To add a property of an
 
 Example of annotation configuration:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Entity/Product.php
+.. oro_integrity_check:: a2ff0b21ef609e4b5730712bee5cd5af2ac749ef
 
-    namespace Acme\Bundle\DemoBundle\Entity;
-
-    use Doctrine\ORM\Mapping as ORM;
-
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
-
-    /**
-     * @ORM\Entity
-     * @Config( # entity default configuration
-     *      routeName="acme_product_index", # optional, used to represent entity instances count as link
-     *                                      # in EntityManagement UI
-     *      routeView="acme_product_view",  # optional
-     *      defaultValues={
-     *          "entity"={ # entity configuration scope 'entity'
-     *              "icon"="icon-product" # default icon class which will be used
-     *                                    # can be changed via UI
-     *          },
-     *          "dataaudit"={ # entity configuration scope 'dataaudit'
-     *              "auditable"=true # will enable dataaudit for this entity
-     *                               # if not specified will be false
-     *                               # but you will be able to enable audit via UI
-     *          },
-     *          # ...
-     *          # any other entity scope default configuration
-     *          # ...
-     *      }
-     * )
-     */
-    class Product
-    {
-        /**
-         * @ORM\Column(type="string")
-         */
-        private $title;
-
-        /**
-         * @ORM\Column(type="string")
-         * @ConfigField( # field default configuration
-         *      defaultValues={
-         *          "dataaudit"={
-         *              "auditable"=true
-         *          },
-         *          # ...
-         *          # any other entity scope default configuration
-         *          # ...
-         *      }
-         * )
-         */
-        private $price;
-    }
+    .. literalinclude:: /code_examples/commerce/demo/Entity/Question.php
+        :caption: src/Acme/Bundle/DemoBundle/Entity/Question.php
+        :language: php
+        :lines: 1-94, 208
 
 Every time a product's price is modified, the changes are logged in the database. The logging manager not only stores the data being modified but also logs a set of related information:
 
@@ -95,28 +47,16 @@ Additional Fields
 
 You can store additional fields in every entry of the audit log. There are no requirements for the type of data. If the object is passed to an array, it is properly sanitized and converted to the supported format. To clarify the need for additional fields, see the example below:
 
-Suppose you create an extension that integrates OroCRM with an external System A. This integration synchronizes Product entities between systems. However, the identifier of the Product entity is different in CRM (**id**) and System A (**system_id**). System A tracks changes in CRM calling API audit endpoint and matches Products on its side by system_id, so it will be helpful to attach this field to every response (for example, when a Product is removed). To make it happen, one can use "additional fields". The entity must implement *AuditAdditionalFieldsInterface*.
+Suppose you create an extension that integrates OroCRM with an external System A. This integration synchronizes Question entities between systems. However, the identifier of the Question entity is different in CRM (**id**) and System A (**subject**). System A tracks changes in CRM calling API audit endpoint and matches Questions on its side by subject, so it will be helpful to attach this field to every response (for example, when a Question is removed). To make it happen, one can use "additional fields". The entity must implement *AuditAdditionalFieldsInterface*.
 
 In our example, it can look like this:
 
-.. code-block:: php
+.. oro_integrity_check:: abcf9ebcab68a03a02fa1e3c2aed214a44a57ee1
 
-    namespace Acme\Bundle\DemoBundle\Entity;
-
-    use Oro\Bundle\DataAuditBundle\Entity\AuditAdditionalFieldsInterface;
-
-    class Product implements AuditAdditionalFieldsInterface
-    {
-        // rest of code
-
-        /**
-         * @inheritDoc
-         */
-        public function getAdditionalFields()
-        {
-            return ['system_id' => $this->getSystemId()];
-        }
-    }
+    .. literalinclude:: /code_examples/commerce/demo/Entity/Question.php
+        :caption: src/Acme/Bundle/DemoBundle/Entity/Question.php
+        :language: php
+        :lines: 1-4, 59-64, 201-208
 
 Segment
 -------
@@ -140,62 +80,21 @@ Add New Auditable Types
 
 To add new auditable types, register a new type in your bundle's boot method:
 
-.. code-block:: php
+.. oro_integrity_check:: de67d0647236839f08a8d5566116210e497b9e31
 
-    namespace Acme\Bundle\DemoBundle;
-
-    use Oro\Bundle\DataAuditBundle\Model\AuditFieldTypeRegistry;
-    use Symfony\Component\HttpKernel\Bundle\Bundle;
-
-    class AcmeDemoBundle extends Bundle
-    {
-        /**
-         * @inheritDoc
-         */
-        public function boot()
-        {
-            parent::boot(); // TODO: Change the autogenerated stub
-
-            /**
-             * You can also use AuditFieldTypeRegistry::overrideType to replace existing type
-             * But make sure you move old data into new columns
-             */
-            AuditFieldTypeRegistry::addType($doctrineType = 'datetimetz', $auditType = 'datetimetz');
-        }
-    }
+    .. literalinclude:: /code_examples/commerce/demo/AcmeDemoBundle.php
+        :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
+        :language: php
+        :lines: 1-29
 
 Next, create a migration that will add columns to the AuditField entity:
 
-.. code-block:: php
+.. oro_integrity_check:: 7dabf5bfd8c97943c712085d2bbdee2c85764fee
 
-    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_1;
-
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\DataAuditBundle\Migration\Extension\AuditFieldExtension;
-    use Oro\Bundle\DataAuditBundle\Migration\Extension\AuditFieldExtensionAwareInterface;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-
-    class MyMigration implements Migration, AuditFieldExtensionAwareInterface
-    {
-        private AuditFieldExtension $auditFieldExtension;
-
-        /**
-         * @inheritDoc
-         */
-        public function setAuditFieldExtension(AuditFieldExtension $extension)
-        {
-            $this->auditFieldExtension = $extension;
-        }
-
-        /**
-         * @inheritDoc
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $this->auditFieldExtension->addType($schema, $doctrineType = 'datetimetz', $auditType = 'datetimetz');
-        }
-    }
+    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_7/AddNewAuditFieldType.php
+        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_7/AddNewAuditFieldType.php
+        :language: php
+        :lines: 1-30
 
 
 To see the auditable option in the entity configuration, make sure your field type is in the allowed types here: **DataAuditBundle/Resources/config/oro/entity_config.yml**.

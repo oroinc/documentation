@@ -1,3 +1,4 @@
+@documentation
 @regression
 @ticket-BB-20137
 Feature: Check wysiwyg field migrations

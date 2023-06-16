@@ -12,20 +12,16 @@ System Configuration
 All configuration data is placed in the configuration under the alias
 ``oro_search``. Let us look at the configuration example:
 
-.. code-block:: yaml
+.. oro_integrity_check:: 46b5104de9eda349d6ba3e0ceb1620e166b895cd
 
-    oro_search:
-        engine: orm
-        engine_parameters:
-            # ...
-        log_queries: true
-        item_container_template: '@My/Search/itemContainer.html.twig'
-        entities_config:
-            # ...
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
+        :language: yaml
+        :lines: 1-8
 
 Description of parameters:
 
--  **engine**, default "orm" (converted to container parameter
+-  **engine_dsn**, default "orm" (converted to container parameter
    *oro\_search.engine*) - specifies the search engine name used to perform
    search and indexation (see section `Search Engine Configuration`_);
 -  **engine\_parameters** (converted to the container parameter
@@ -60,58 +56,29 @@ After this step, the application knows about all entity search configurations fr
 
 **Example**
 
-`Acme/Bundle/DemoBundle/Resources/config/oro/search.yml`:
+.. oro_integrity_check:: af2bef308e420166cf2c594bafa11929b8c41b4a
 
-.. code-block:: yaml
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/search.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/search.yml
+        :language: yaml
+        :lines: 70-87
 
-    search:
-        Acme\Bundle\DemoBundle\Entity\Tag:
-            alias:                          acme_tag
-            search_template:                '@AcmeDemo/Search/result.html.twig'
-            route:
-                name:                       acme_tag_search
-                parameters:
-                    id:                     id
-            fields:
-                -
-                    name:                   name
-                    target_type:            text
-                    target_fields:          [name]
 
-`Acme/Bundle/DemoBundle/Resources/config/search.yml`:
+.. oro_integrity_check:: fc2b25e02c2bf2b7d5bbc9328aede316667ed2bd
 
-.. code-block:: yaml
-
-    search:
-        Acme\Bundle\DemoBundle\Entity\Tag:
-            alias:                          acme_tag
-            fields:
-                -
-                    name:                   subject
-                    target_type:            text
-                    target_fields:          [subject]
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/search.yml
+        :caption: src/Acme/Bundle/NewDemoBundle/Resources/config/oro/search.yml
+        :language: yaml
+        :lines: 70-71, 77, 88-96
 
 Result:
 
-.. code-block:: yaml
+.. oro_integrity_check:: ed5f608eb16a17d843417573197e61ec569401e3
 
-    search:
-        Acme\Bundle\DemoBundle\Entity\Tag:
-            alias:                          acme_tag
-            search_template:                '@AcmeDemo/Search/result.html.twig'
-            route:
-                name:                       acme_tag_search
-                parameters:
-                    id:                     id
-            fields:
-                -
-                    name:                   name
-                    target_type:            text
-                    target_fields:          [name]
-                -
-                    name:                   subject
-                    target_type:            text
-                    target_fields:          [subject]
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/search.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/search.yml
+        :language: yaml
+        :lines: 70-96
 
 .. _db-search--configuration--entity-configuration:
 
@@ -126,48 +93,12 @@ Configuration is an array that contains info about the bundle name, entity name,
 
 Example:
 
-.. code-block:: yaml
+.. oro_integrity_check:: ed5f608eb16a17d843417573197e61ec569401e3
 
-    search:
-        Acme\Bundle\DemoBundle\Entity\Product:
-            alias: demo_product                                      # Alias for 'from' keyword in advanced search
-            search_template: '@AcmeDemo/result.html.twig'            # Template to use in search result page for this entity type
-            label: Demo products                                     # Label for entity to identify entity in search results
-            route:
-                name: acme_demo_search_product                       # Route name to generate url link to the entity record
-                parameters:                                          # Array with parameters for route
-                    id: id
-            mode: normal                                             # optional, default normal. Defines behavior for entities
-            fields:                                                  # dump reference or in class constants Oro\Bundle\SearchBundle\Query\Mode
-                -
-                    name: name                                       # Name of field in entity
-                    target_type: text                                # Type of virtual search field. Supported target types:
-                                                                     # text (string and text fields), integer, double, datetime
-                -
-                    name: description
-                    target_type: text
-                    target_fields: [description, another_index_name] # Array of virtual fields for entity field from 'name' parameter.
-                -
-                    name: manufacturer
-                    relation_type: many-to-one                       # Indicate that this field is relation field to another table.
-                                                                     # Supported: one-to-one, many-to-many, one-to-many, many-to-one.
-                    relation_fields:                                 # Array of fields from relation record we must to index.
-                        -
-                            name: name                               # related entity field name to index
-                            target_type: text                        # related entity field name type
-                            target_fields: [manufacturer, all_data]  # target fields to store field index
-                        -
-                            name: id
-                            target_type: integer
-                            target_fields: [manufacturer]
-                -
-                    name: categories
-                    relation_type: many-to-many
-                    relation_fields:
-                        -
-                            name: name
-                            target_type: text
-                            target_fields: [all_data]
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/search.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/search.yml
+        :language: yaml
+        :lines: 70-96
 
 Search Engine Configuration
 ---------------------------
@@ -197,85 +128,12 @@ The SearchBundle supplies a datasource that can be used interchangeably with the
 The following is an example of a DatagridBundle's configuration entry in the ``Resources/config/oro/datagrids.yml`` file that builds a simple user
 datagrid using search index data only:
 
+.. oro_integrity_check:: 5d315bae78991ab2bfaae3144d09cf7bab2fa3ed
 
-.. code-block:: yaml
-
-    datagrids:
-         user-search-grid:
-             source:
-                 type: search
-                 query:
-                     select:
-                         - text.username as name
-                         - text.email
-                     from:
-                         - oro_user
-             columns:
-                 name:
-                     label: oro.user.username.label
-                     data_name: name
-                 email:
-                     label: oro.user.email.label
-                     data_name: email
-             sorters:
-                 columns:
-                     name:
-                         data_name: username
-                         type: string
-                     email:
-                         data_name: email
-                         type: string
-                 default:
-                     name: ASC
-             filters:
-                 columns:
-                     quick_search:
-                         label: 'Quick search'
-                         type: string
-                         data_name: all_text
-                     name:
-                         type: string
-                         data_name: username
-                     email:
-                         type: string
-                         data_name: email
-             properties:
-                 id: ~
-                 view_link:
-                     type: url
-                     route: oro_user_view
-                     params:
-                         - id
-                 update_link:
-                     type: url
-                     route: oro_user_update
-                     params:
-                         - id
-                 delete_link:
-                     type: url
-                     route: oro_api_delete_user
-                     params:
-                         - id
-             actions:
-                 view:
-                     type:          navigate
-                     label:         oro.grid.action.view
-                     link:          view_link
-                     icon:          eye
-                     acl_resource:  oro_user_user_view
-                     rowAction:     true
-                 update:
-                     type:          navigate
-                     label:         oro.grid.action.update
-                     link:          update_link
-                     icon:          edit
-                     acl_resource:  oro_user_user_update
-                 delete:
-                     type:          delete
-                     label:         oro.grid.action.delete
-                     link:          delete_link
-                     icon:          trash
-                     acl_resource:  oro_user_user_delete
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+        :language: yaml
+        :lines: 390-432
 
 .. _Search Engine Configuration: #search-engine-configuration
 .. _Entity Configuration: #entity-configuration

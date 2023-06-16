@@ -1,0 +1,78 @@
+{% extends '@OroUI/actions/update.html.twig' %}
+
+{% oro_title_set({params : {'%title%': entity|oro_format_name|default('N/A'|trans), '%entityName%': 'acme.demo.sms.entity_label'|trans} }) %}
+
+{% set formAction = form.vars.value.id ? path('acme_demo_sms_update', { 'id': form.vars.value.id }) : path('acme_demo_sms_create')  %}
+
+{% block navButtons %}
+    {% import '@OroUI/macros.html.twig' as UI %}
+
+    {{ parent() }}
+
+    {{ UI.cancelButton(path('acme_demo_sms_index')) }}
+    {% set html = UI.saveAndCloseButton({
+        'route': 'acme_demo_sms_view',
+        'params': {'id': '$id'}
+    }) %}
+    {% if is_granted('acme_demo_sms_create') %}
+        {% set html = html ~ UI.saveAndNewButton({
+            'route': 'acme_demo_sms_create'
+        }) %}
+    {% endif %}
+    {% if entity.id or is_granted('acme_demo_sms_update') %}
+        {% set html = html ~ UI.saveAndStayButton({
+            'route': 'acme_demo_sms_update',
+            'params': {'id': '$id'}
+        }) %}
+    {% endif %}
+    {{ UI.dropdownSaveButton({'html': html}) }}
+{% endblock %}
+
+{% block pageHeader %}
+    {% if entity.id %}
+        {% set breadcrumbs = {
+            'entity':      entity,
+            'indexPath':   path('acme_demo_sms_index'),
+            'indexLabel': 'acme.demo.sms.entity_plural_label'|trans,
+            'entityTitle': entity|oro_format_name|default('N/A'|trans)
+        } %}
+        {{ parent() }}
+    {% else %}
+        {% set title = 'oro.ui.create_entity'|trans({'%entityName%': 'acme.demo.sms.entity_label'|trans}) %}
+        {% include '@OroUI/page_title_block.html.twig' with { title: title } %}
+    {% endif %}
+{% endblock pageHeader %}
+
+{% block stats %}
+    <li>{{ 'oro.ui.created_at'|trans }}: {{ entity.createdAt ? entity.createdAt|oro_format_datetime : 'N/A' }}</li>
+    <li>{{ 'oro.ui.updated_at'|trans }}: {{ entity.updatedAt ? entity.updatedAt|oro_format_datetime : 'N/A' }}</li>
+{% endblock stats %}
+
+{% block content_data %}
+    {% set dataBlocks = [
+        {
+            'title': 'acme.demo.section.sms.general.label'|trans,
+            'subblocks': [
+                {
+                    'data' : [
+                        form_row(form.fromContact),
+                        form_row(form.toContact),
+                        form_row(form.message),
+                    ]
+                }
+            ]
+        },
+    ] %}
+
+    {% set dataBlocks = dataBlocks|merge(oro_form_additional_data(form, 'Additional'|trans)) %}
+
+    {% set data = {
+        'formErrors': form_errors(form),
+        'dataBlocks': dataBlocks
+    }%}
+
+    <div class="responsive-form-inner">
+        {% set id = 'acme-demo-sms-edit' %}
+        {{ parent() }}
+    </div>
+{% endblock content_data %}

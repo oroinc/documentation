@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config;
+namespace Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config;
 
 use Oro\Bundle\PaymentBundle\Method\Config\PaymentConfigInterface;
 

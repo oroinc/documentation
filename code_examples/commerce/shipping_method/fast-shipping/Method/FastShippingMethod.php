@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Method;
+namespace Acme\Bundle\FastShippingBundle\Method;
 
 use Oro\Bundle\ShippingBundle\Method\ShippingMethodIconAwareInterface;
 use Oro\Bundle\ShippingBundle\Method\ShippingMethodInterface;

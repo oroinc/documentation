@@ -1,0 +1,40 @@
+{% extends '@OroUI/actions/view.html.twig' %}
+{% import '@OroUI/macros.html.twig' as UI %}
+{% import '@OroEntityConfig/macros.html.twig' as entityConfig %}
+
+{% oro_title_set({params : {"%title%": entity|oro_format_name|default('N/A'|trans) } }) %}
+
+{% block pageHeader %}
+    {% set breadcrumbs = {
+        'entity': entity,
+        'indexPath': path('acme_demo_sms_index'),
+        'indexLabel': 'acme.demo.sms.entity_plural_label'|trans,
+        'entityTitle': entity|oro_format_name|default('N/A'|trans)
+} %}
+
+    {{ parent() }}
+{% endblock pageHeader %}
+
+{% block content_data %}
+
+    {% set dataBlocks = [
+        {
+            'title': 'acme.demo.section.sms.general.label'|trans,
+            'subblocks': [
+                {
+                    'data' : [
+                        UI.renderProperty('acme.demo.sms.from_contact.label'|trans, entity.fromContact),
+                        UI.renderProperty('acme.demo.sms.to_contact.label'|trans, entity.toContact),
+                        UI.renderProperty('acme.demo.sms.message.label'|trans, entity.message),
+                        entityConfig.renderDynamicFields(entity)
+                    ]
+                }
+            ]
+        },
+    ] %}
+
+    {% set id = 'acme-demo-sms-view' %}
+    {% set data = {'dataBlocks': dataBlocks} %}
+
+    {{ parent() }}
+{% endblock content_data %}

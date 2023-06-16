@@ -32,7 +32,7 @@ To make the ``Document`` entity from the first part of the chapter configurable,
 
     /**
      * @ORM\Entity
-     * @ORM\Table(name="acme_document")
+     * @ORM\Table(name="acme_demo_document")
      * @Config
      */
     class Document
@@ -42,92 +42,24 @@ To make the ``Document`` entity from the first part of the chapter configurable,
 
 You can also change the default value of each configurable option using the ``defaultValues`` argument:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
+.. oro_integrity_check:: 215815e4064b0d0bb7e631051670aa47ed1c5280
 
-    namespace Acme\Bundle\DemoBundle\Entity;
-
-    use Doctrine\ORM\Mapping as ORM;
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-
-    /**
-     * @ORM\Entity
-     * @ORM\Table(name="acme_document")
-     * @Config(
-     *     defaultValues={
-     *         "acme_demo"={
-     *             "comment"="Our documents"
-     *         }
-     *     }
-     * )
-     */
-    class Document
-    {
-        // ...
-    }
+   .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
+       :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
+       :language: php
+       :lines: 3-5, 8, 16-19, 23-26, 31, 55-57, 64-66
 
 The ``@ConfigField`` Annotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Similar to the ``@Config`` annotation for entities, you can use the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField`` annotation to make properties of an entity configurable:
+Similar to the ``@Config`` annotation for entities, you can use the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField`` annotation to make properties of an entity configurable. Default values can be changed the same way as for the entity level:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
+.. oro_integrity_check:: a83cb02ddc60cfa23be7f9c166484d8987bfb87d
 
-    namespace Acme\Bundle\DemoBundle\Entity;
-
-    use Doctrine\ORM\Mapping as ORM;
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-
-    /**
-     * @ORM\Entity
-     * @ORM\Table(name="acme_document")
-     */
-    class Document
-    {
-        // ...
-
-        /**
-        * @ORM\Column(type="string", length=255)
-        * @ConfigField
-        */
-        protected $subject;
-
-        // ...
-    }
-
-You can change default values the same way as for the entity level:
-
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
-
-    namespace Acme\Bundle\DemoBundle\Entity;
-
-    use Doctrine\ORM\Mapping as ORM;
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-
-    /**
-     * @ORM\Entity
-     * @ORM\Table(name="acme_document")
-     */
-    class Document
-    {
-        // ...
-
-        /**
-        * @ORM\Column(type="string", length=255)
-        * @ConfigField(
-        *     "defaultValues"={
-        *         "acme_demo"={
-        *             "auditable"=true
-        *         }
-        *     }
-        * )
-        */
-        private $subject;
-
-        // ...
-    }
+   .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
+       :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
+       :language: php
+       :lines: 78, 87-98, 103-105, 78
 
 Console Commands
 ----------------

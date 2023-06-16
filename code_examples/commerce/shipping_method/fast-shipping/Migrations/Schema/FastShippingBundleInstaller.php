@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Migrations\Schema;
+namespace Acme\Bundle\FastShippingBundle\Migrations\Schema;
 
 use Doctrine\DBAL\Schema\Schema;
 use Oro\Bundle\MigrationBundle\Migration\Installation;

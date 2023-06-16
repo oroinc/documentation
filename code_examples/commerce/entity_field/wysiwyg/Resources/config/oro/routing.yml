@@ -1,4 +1,4 @@
 acme_wysiwyg_bundle:
-    resource:     "@ACMEWysiwygBundle/Controller"
+    resource:     "@AcmeWysiwygBundle/Controller"
     type:         annotation
     prefix:       /blog-post

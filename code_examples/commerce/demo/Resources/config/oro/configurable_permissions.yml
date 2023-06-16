@@ -1,0 +1,13 @@
+oro_configurable_permissions:
+    acme_favorite_permission:                                       # configurable permission name, will be used by filter
+        default: true                                               # is all permissions for this `some_name` configurable by default
+        entities:
+            Acme\Bundle\DemoBundle\Entity\Favorite:                 # entity class
+                VIEW: false                                         # deny permission `VIEW` for entity Favorites
+                CREATE: true                                        # show permission `CREATE` for entity Favorites
+                EDIT: true                                          # show permission `EDIT` for entity Favorites
+        capabilities:
+            oro_acme_some_capability: false                         # hide capability `oro_acme_some_capability` for `some_name`
+        workflows:
+            workflow1:
+                PERFORM_TRANSIT: false                              # hide permission `PERFORM_TRANSIT` for workflow `workflow1`

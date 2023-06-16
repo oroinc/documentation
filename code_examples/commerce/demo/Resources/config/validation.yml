@@ -1,0 +1,43 @@
+Acme\Bundle\DemoBundle\Entity\Priority:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: label
+    properties:
+        label:
+            -
+                NotBlank: ~
+Acme\Bundle\DemoBundle\Entity\Document:
+    properties:
+        subject:
+            -
+                NotBlank: ~
+            -
+                Length:
+                    min: 1
+                    max: 255
+                    allowEmptyString: false
+        description:
+            -
+                NotBlank: ~
+            -
+                Length:
+                    min: 1
+                    max: 255
+                    allowEmptyString: false
+Acme\Bundle\DemoBundle\Entity\Question:
+    properties:
+        subject:
+            -
+                NotBlank: ~
+            -
+                Length:
+                    min: 1
+                    max: 255
+                    allowEmptyString: false
+        description:
+            -
+                NotBlank: ~
+            -
+                Length:
+                    min: 1
+                    max: 255
+                    allowEmptyString: false

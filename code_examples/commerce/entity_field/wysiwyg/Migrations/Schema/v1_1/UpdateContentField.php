@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\WysiwygBundle\Migrations\Schema\v1_1;
+namespace Acme\Bundle\WysiwygBundle\Migrations\Schema\v1_1;
 
 use Doctrine\DBAL\Schema\Schema;
 use Oro\Bundle\CMSBundle\DBAL\Types\WYSIWYGType;

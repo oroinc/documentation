@@ -1,0 +1,21 @@
+{% extends '@OroUI/actions/index.html.twig' %}
+{% import '@OroUI/macros.html.twig' as UI %}
+{% set gridName = 'acme-demo-document-grid' %}
+{% set pageTitle = 'acme.demo.document.entity_plural_label'|trans %}
+
+{% block navButtons %}
+    {% import '@OroUI/macros.html.twig' as UI %}
+
+    {% include '@OroImportExport/ImportExport/buttons_from_configuration.html.twig' with {
+        'alias': 'acme_demo_document'
+    } %}
+
+    {% if is_granted('acme_demo_document_create') %}
+        <div class="btn-group">
+        {{ UI.addButton({
+            'path': path('acme_demo_document_create'),
+            'entity_label': 'acme.demo.document.entity_label'|trans
+        }) }}
+        </div>
+    {% endif %}
+{% endblock %}

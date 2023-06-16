@@ -22,34 +22,17 @@ possible to add permission globally for some groups (applications); all required
 
 An example of a simple permission configuration:
 
-.. code-block:: none
+.. oro_integrity_check:: e85951fa3c358f0eddbcde60810e243a703db4eb
 
-    oro_permissions:
-        PERMISSION1:                                                    # permission name (should start with a letter, digit or underscore and only contain
-                                                                        # letters, digits, numbers, underscores ("_"), hyphens ("-") and colons (":")
-            label: Label for Permission 1                               # permission label
-            description: Permission 1 description                       # (optional) permission description
-            apply_to_all: false                                         # (by default = true) is permission apply to all entities by default
-            apply_to_entities:                                          # (optional) the list of entities to apply permission
-                - 'AcmeDemoBundle:MyEntity1'                            # entity class
-                - 'Acme\Bundle\DemoBundle\Entity\MyEntity2'
-            apply_to_interfaces:                                        # (optional) the list of interfaces to apply permission to the entities that implement these interfaces
-                - 'Acme\Bundle\DemoBundle\Entity\MyEntity2Interface'    # entity interface
-            group_names:                                                # (by default = ['default]) the list of Groups
-                - default                                               # group name
-                - frontend
-
-        PERMISSION2:
-            label: Label for Permission 2
-            description: Permission 2 description
-            exclude_entities:                                           # (optional) the list of entities to not apply permission
-                - 'AcmeDemoBundle:MyEntity3'
-                - 'Acme\Bundle\DemoBundle\Entity\MyEntity4'
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/permissions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/permissions.yml
+        :language: yaml
+        :lines: 1-21
 
 This configuration describes 2 Permissions:
 
-1) Permission PERMISSION1 will be applied only to entities `MyEntity1` and `MyEntity2`. Allowed groups for that permission are `default` and `frontend`.
-2) Permission PERMISSION2 will be applied to all manageable entities, except for `MyEntity2` and `MyEntity3`. The allowed group for this permission is `default`.
+1) Permission PERMISSION1 will be applied only to entities `Favorites` and `Question`. Allowed groups for that permission are `default` and `frontend`.
+2) Permission PERMISSION2 will be applied to all manageable entities, except for `Priority` and `Document`. The allowed group for this permission is `default`.
 
 Configuration Merging
 ---------------------

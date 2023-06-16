@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Integration;
+namespace Acme\Bundle\FastShippingBundle\Integration;
 
 use Oro\Bundle\IntegrationBundle\Provider\ChannelInterface;
 use Oro\Bundle\IntegrationBundle\Provider\IconAwareIntegrationInterface;

@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Form\Type;
+namespace Acme\Bundle\FastShippingBundle\Form\Type;
 
-use ACME\Bundle\FastShippingBundle\Entity\FastShippingSettings;
+use Acme\Bundle\FastShippingBundle\Entity\FastShippingSettings;
 use Oro\Bundle\LocaleBundle\Form\Type\LocalizedFallbackValueCollectionType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

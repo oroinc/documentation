@@ -2,7 +2,7 @@ services:
     _defaults:
         public: true
 
-    ACME\Bundle\CMSBundle\Controller\BlockController:
+    Acme\Bundle\CMSBundle\Controller\BlockController:
         calls:
             - ['setContainer', ['@Psr\Container\ContainerInterface']]
         tags:

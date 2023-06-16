@@ -19,90 +19,35 @@ If you want to create a repository, create a new class extended from the appropr
 
 Here is an example of the search repository for the standard index type and its definition:
 
-.. code-block:: php
+.. oro_integrity_check:: 67891b2fb3e8583f857c01324d194705899a6793
 
-   namespace Oro\Bundle\UserBundle\Search;
+    .. literalinclude:: /code_examples/commerce/demo/Search/QuestionSearchRepository.php
+        :caption: src/Acme/Bundle/DemoBundle/Search/QuestionSearchRepository.php
+        :language: php
 
-   use Oro\Bundle\SearchBundle\Query\Criteria\Criteria;
-   use Oro\Bundle\SearchBundle\Query\Query;
-   use Oro\Bundle\SearchBundle\Query\SearchRepository;
 
-   /**
-    * Search repository used to extract user data from standard search index
-    */
-   class UserRepository extends SearchRepository
-   {
-       /**
-        * @param string $domain
-        * @return array
-        */
-       public function getUserIdsByEmailDomain($domain)
-       {
-           $elements = $this->createQuery()
-               ->addWhere(Criteria::expr()->like('email', $domain))
-               ->setMaxResults(Query::INFINITY)
-               ->getResult()
-               ->getElements();
+.. oro_integrity_check:: 5da74a4d2a26a38c1e018b4cdb19d961741806cb
 
-           $userIds = [];
-           foreach ($elements as $element) {
-               $userIds[] = $element->getRecordId();
-           }
-
-           return $userIds;
-       }
-   }
-
-.. code-block:: yaml
-
-   services:
-       oro_user.search.repository.user:
-           class: Oro\Bundle\UserBundle\Search\UserRepository
-           arguments:
-               - '@oro_search.query_factory'
-               - '@oro_search.provider.search_mapping'
-           calls:
-               - [setEntityName, ['Oro\Bundle\UserBundle\Entity\User']]
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+        :language: yaml
+        :lines: 1-2, 41-47
 
 And here is an example of the search repository for the website index type and its definition:
 
-.. code-block:: php
+.. oro_integrity_check:: 3d921bcf59ed0f1d6083d66f43fbcf8e9a841467
 
-   namespace Oro\Bundle\ProductBundle\Search;
+    .. literalinclude:: /code_examples/commerce/demo/Search/PriorityRepository.php
+        :caption: src/Acme/Bundle/DemoBundle/Search/PriorityRepository.php
+        :language: php
 
-   use Oro\Bundle\SearchBundle\Query\Criteria\Criteria;
-   use Oro\Bundle\SearchBundle\Query\SearchQueryInterface;
-   use Oro\Bundle\WebsiteSearchBundle\Query\WebsiteSearchRepository;
 
-   class ProductRepository extends WebsiteSearchRepository
-   {
-       /**
-        * @param array $skus
-        * @return SearchQueryInterface
-        */
-       public function getFilterSkuQuery($skus)
-       {
-           $searchQuery = $this->createQuery();
+.. oro_integrity_check:: 09a5b86fbfaa49005bd738fb075925dae9d53b4a
 
-           // Convert to uppercase for insensitive search
-           $upperCaseSkus = array_map("strtoupper", $skus);
-
-           $searchQuery
-               ->addSelect('sku')
-               ->addSelect('names_LOCALIZATION_ID as name')
-               ->addWhere(Criteria::expr()->in('sku_uppercase', $upperCaseSkus));
-
-           return $searchQuery;
-       }
-   }
-
-.. code-block:: yaml
-
-   oro_product.website_search.repository.product:
-       parent: oro_website_search.repository.abstract
-       class: Oro\Bundle\ProductBundle\Search\ProductRepository
-       calls:
-           - [setEntityName, ['Oro\Bundle\ProductBundle\Entity\Product']]
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+        :language: yaml
+        :lines: 1-2, 49-53
 
 Avoid Working Directly with the Search Engine and Search Indexer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

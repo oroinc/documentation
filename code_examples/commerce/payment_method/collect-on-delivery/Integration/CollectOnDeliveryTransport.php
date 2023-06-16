@@ -1,9 +1,9 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\Integration;
+namespace Acme\Bundle\CollectOnDeliveryBundle\Integration;
 
-use ACME\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
-use ACME\Bundle\CollectOnDeliveryBundle\Form\Type\CollectOnDeliverySettingsType;
+use Acme\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
+use Acme\Bundle\CollectOnDeliveryBundle\Form\Type\CollectOnDeliverySettingsType;
 use Oro\Bundle\IntegrationBundle\Entity\Transport;
 use Oro\Bundle\IntegrationBundle\Provider\TransportInterface;
 

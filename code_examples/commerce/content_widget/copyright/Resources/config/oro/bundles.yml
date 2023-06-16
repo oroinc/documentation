@@ -1,2 +1,2 @@
 bundles:
-    - ACME\Bundle\CopyrightBundle\ACMECopyrightBundle
+    - Acme\Bundle\CopyrightBundle\AcmeCopyrightBundle

@@ -9,7 +9,7 @@ oro_behat_extension:
           Short Label: 'oro_integration_channel_form[transport][shortLabels][values][default]'
 
   suites:
-    ACMECollectOnDeliveryBundle:
+    AcmeCollectOnDeliveryBundle:
       contexts:
         - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
         - Oro\Bundle\ApplicationBundle\Tests\Behat\Context\CommerceMainContext
@@ -21,4 +21,4 @@ oro_behat_extension:
         - Oro\Bundle\AttachmentBundle\Tests\Behat\Context\AttachmentImageContext
         - Oro\Bundle\ShoppingListBundle\Tests\Behat\Context\ShoppingListContext
       paths:
-        - '@ACMECollectOnDeliveryBundle/Tests/Behat/Features'
+        - '@AcmeCollectOnDeliveryBundle/Tests/Behat/Features'

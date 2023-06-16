@@ -23,98 +23,12 @@ Building a new report is as easy as defining a data grid. A data grid is a YAML 
 file called ``datagrids.yml`` in your bundle's ``Resources/config/oro`` directory. Take a look at the
 following example:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+.. oro_integrity_check:: d8bb0b0ff5aa46f4c86f9ef1d5c11760d7802db6
 
-    datagrids:
-        orocrm_report-opportunities-won_by_period:
-            pageTitle: orocrm.report.opportunities_won_by_period
-            source:
-                type: orm
-                acl_resource: oro_report_view
-                query:
-                    select:
-                        - CONCAT(MONTH(o.closeDate), ' / ', YEAR(o.closeDate)) as monthPeriod
-                        - CONCAT(QUARTER(o.closeDate), ' / ', YEAR(o.closeDate)) as quarterPeriod
-                        - YEAR(o.closeDate) as yearPeriod
-                        - SUM(o.closeRevenue) as value
-                        - COUNT(o.id) as cnt
-                    from:
-                        - { table: Oro\Bundle\SalesBundle\Entity\Opportunity, alias: o }
-                    join:
-                        inner:
-                            - { join: o.status, alias: s }
-                    groupBy: o.closeDate
-                    where:
-                        and:
-                            - s.name = 'won'
-                            - o.closeDate IS NOT NULL
-            properties:
-                monthPeriod: ~
-                quarterPeriod: ~
-                yearPeriod: ~
-            totals:
-                total:
-                    extends: grand_total
-                    per_page: true
-                    hide_if_one_page: true
-                    columns:
-                        period:
-                            label: oro.reportcrm.datagrid.columns.page_total
-                grand_total:
-                    columns:
-                        period:
-                            label: oro.reportcrm.datagrid.columns.grand_total
-                        cnt:
-                            expr: COUNT( o.id )
-                        value:
-                            expr: SUM( o.closeRevenue )
-                            formatter: currency
-
-            columns:
-                period:    { label: orocrm.report.datagrid.columns.period }
-                cnt:       { label: orocrm.report.datagrid.columns.number_won, frontend_type: integer }
-                value:     { label: orocrm.report.datagrid.columns.total_value, frontend_type: currency }
-            sorters:
-                columns:
-                    period:     { data_name: period }
-                    cnt:        { data_name: cnt }
-                    value:      { data_name: value }
-            filters:
-                columns:
-                    period:
-                        type: orocrm_period_filter
-                        data_name: period
-                        options:
-                            populate_default: false
-                            field_options:
-                                choices:
-                                    monthPeriod:    Monthly
-                                    quarterPeriod:  Quarterly
-                                    yearPeriod:     Yearly
-                    cnt:
-                        type: number
-                        data_name: cnt
-                        filter_by_having: true
-                    value:
-                        type: currency
-                        data_name: value
-                        filter_by_having: true
-                        options:
-                            data_type:    Oro\Bundle\FilterBundle\Form\Type\Filter\NumberFilterType::DATA_DECIMAL
-                    closeDate:
-                        type:        date
-                        label:       orocrm.report.datagrid.columns.close_date
-                        data_name:   o.closeDate
-                    createdAt:
-                        type:        date
-                        label:       orocrm.report.datagrid.columns.created_date
-                        data_name:   o.createdAt
-                default:
-                    period: { value: monthPeriod }
-            options:
-                entityHint: report data
-                export: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+        :language: yaml
+        :lines: 1, 328-389
 
 The definition of a data grid consists of the following sections:
 
@@ -133,8 +47,6 @@ The definition of a data grid consists of the following sections:
 
         You can learn more about other data source types and how to implement your own adapter in
         the :ref:`datasource documentation <customize--datagrids-datasource>`.
-
-``properties``
 
 ``totals``
 
@@ -188,26 +100,14 @@ To be able to access the new report, you can add a custom item to the *Reports &
 a configuration file named ``navigation.yml`` that is located in the ``Resources/config`` directory
 of your bundle:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
+.. oro_integrity_check:: 42759d571941f6c4c1dfaaf49e674cef52eeb674
 
-    menu_config:
-        items:
-            account_opportunity:
-                label: Accounts by opportunity
-                route: orocrm_report_index
-                routeParameters:
-                    reportGroupName: opportunities
-                    reportName:      won_by_period
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/navigation.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
+        :language: yaml
+        :lines: 1-3, 57-62, 102-108, 111
 
-        tree:
-            application_menu:
-                children:
-                    reports_tab:
-                        children:
-                            account_opportunity: ~
-
-The configuration of your new menu items is grouped under the ``oro_menu_config`` key. First, under the ``items`` key you create a new menu item which will be shown in the backend as *Accounts by Opportunity*. The report to be shown is selected by using the ``reportGroupName`` and ``reportName`` options in the ``routerParameters`` which refer to the report name as configured in :ref:`the example above <book-reports-configuration>`. Of course, you can add additional items if you have more custom reports.
+The configuration of your new menu items is grouped under the ``oro_menu_config`` key. First, under the ``items`` key you create a new menu item which will be shown in the backend as *Accounts by Opportunity*. The report to be shown is selected by using the ``reportGroupName`` and ``reportName`` options in the ``route_parameters`` which refer to the report name as configured in :ref:`the example above <book-reports-configuration>`. Of course, you can add additional items if you have more custom reports.
 
 Then, under the ``tree`` key you add the newly created item to the *Reports & Segments* tab of the application menu.
 

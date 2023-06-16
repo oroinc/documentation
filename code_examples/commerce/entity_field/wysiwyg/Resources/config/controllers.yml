@@ -2,7 +2,7 @@ services:
     _defaults:
         public: true
 
-    ACME\Bundle\WysiwygBundle\Controller\BlogPostCrudController:
+    Acme\Bundle\WysiwygBundle\Controller\BlogPostCrudController:
         calls:
             - ['setContainer', ['@Psr\Container\ContainerInterface']]
         tags:

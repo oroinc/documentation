@@ -23,7 +23,7 @@ To implement a new content widget, create a class that stores content widget typ
 
 .. code-block:: php
 
-    namespace ACME\Bundle\CopyrightBundle\ContentWidget;
+    namespace Acme\Bundle\CopyrightBundle\ContentWidget;
 
     use Oro\Bundle\CMSBundle\ContentWidget\AbstractContentWidgetType;
     use Oro\Bundle\CMSBundle\Entity\ContentWidget;
@@ -53,7 +53,7 @@ To implement a new content widget, create a class that stores content widget typ
 
         public function getDefaultTemplate(ContentWidget $contentWidget, Environment $twig): string
         {
-            return $twig->render('@ACMECopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings());
+            return $twig->render('@AcmeCopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings());
         }
     }
 
@@ -68,7 +68,7 @@ To implement a new content widget, create a class that stores content widget typ
 
    The form type has the following code:
 
-   .. oro_integrity_check:: d9257e8f8d3ebfe55c8d026867750288807d5e98
+   .. oro_integrity_check:: 8c45e0d6a8da1789cf7c20ca877519bf6731353d
 
        .. literalinclude:: /code_examples/commerce/content_widget/copyright/Form/Type/CopyrightContentWidgetType.php
            :language: php
@@ -80,13 +80,13 @@ It should be registered in a service container with the *oro_cms.content_widget.
 
 
     services:
-        ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType:
+        Acme\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType:
             tags:
                 - {name: 'oro_cms.content_widget.type'}
 
 .. note:: When |autoconfiguration| is enabled, tagging the service manually is unnecessary.
 
-   .. oro_integrity_check:: c5e6c446b6f4fe694b278a9ff2fd7ef75c2fefd2
+   .. oro_integrity_check:: bce4daba9b72d66d450f739c3bbb371278457a5e
 
        .. literalinclude:: /code_examples/commerce/content_widget/copyright/Resources/config/services.yml
            :language: yaml
@@ -136,7 +136,7 @@ Add translations to strings in the template.
 3.2 Implement the *getAdditionalInformationBlock* Method in the Content Widget Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 9f6a119139eda728feea25e073048c52a631e5ca
+.. oro_integrity_check:: aa669b63eddfdd7480c44e7dbb6bb40362a0237a
 
     .. literalinclude:: /code_examples/commerce/content_widget/copyright/ContentWidget/CopyrightContentWidgetType.php
         :language: php
@@ -147,7 +147,7 @@ Add translations to strings in the template.
 
     .. code-block:: php
 
-        namespace ACME\Bundle\CopyrightBundle\ContentWidget;
+        namespace Acme\Bundle\CopyrightBundle\ContentWidget;
 
         use Oro\Bundle\CMSBundle\ContentWidget\AbstractContentWidgetType;
         use Oro\Bundle\CMSBundle\Entity\ContentWidget;
@@ -167,7 +167,7 @@ Add translations to strings in the template.
                             [
                                 'data' => [
                                     $twig->render(
-                                        '@ACMECopyright/CopyrightContentWidget/acme_template1.html.twig',
+                                        '@AcmeCopyright/CopyrightContentWidget/acme_template1.html.twig',
                                         ['settings' => $contentWidget->getSettings()]
                                     ),
                                 ]
@@ -175,7 +175,7 @@ Add translations to strings in the template.
                             [
                                 'data' => [
                                     $twig->render(
-                                        '@ACMECopyright/CopyrightContentWidget/acme_template2.html.twig',
+                                        '@AcmeCopyright/CopyrightContentWidget/acme_template2.html.twig',
                                         ['settings' => $contentWidget->getSettings()]
                                     ),
                                 ]
@@ -188,7 +188,7 @@ Add translations to strings in the template.
                             [
                                 'data' => [
                                     $twig->render(
-                                        '@ACMECopyright/CopyrightContentWidget/acme_template3.html.twig',
+                                        '@AcmeCopyright/CopyrightContentWidget/acme_template3.html.twig',
                                         ['settings' => $contentWidget->getSettings()]
                                     ),
                                 ]
@@ -196,7 +196,7 @@ Add translations to strings in the template.
                             [
                                 'data' => [
                                     $twig->render(
-                                        '@ACMECopyright/CopyrightContentWidget/acme_template4.html.twig',
+                                        '@AcmeCopyright/CopyrightContentWidget/acme_template4.html.twig',
                                         ['settings' => $contentWidget->getSettings()]
                                     ),
                                 ]
@@ -214,7 +214,7 @@ Override *getWidgetData* method in the Content Widget Type.
 
 .. code-block:: php
 
-    namespace ACME\Bundle\CopyrightBundle\ContentWidget;
+    namespace Acme\Bundle\CopyrightBundle\ContentWidget;
 
     use Oro\Bundle\CMSBundle\ContentWidget\AbstractContentWidgetType;
     use Oro\Bundle\CMSBundle\Entity\ContentWidget;

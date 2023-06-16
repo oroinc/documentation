@@ -1,0 +1,6 @@
+Acme\Bundle\DemoBundle\Entity\Document:
+  document{1..8}:
+    organization: '@organization'
+    owner: '@admin'
+    subject: 'Document<current()>'
+    description: 'Description<current()>'
