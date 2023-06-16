@@ -56,7 +56,7 @@ After this step, the application knows about all entity search configurations fr
 
 **Example**
 
-.. oro_integrity_check:: af2bef308e420166cf2c594bafa11929b8c41b4a
+.. oro_integrity_check:: b906705708ea6778191a87666464e7d57fde297e
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/search.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/search.yml
@@ -64,16 +64,16 @@ After this step, the application knows about all entity search configurations fr
         :lines: 70-87
 
 
-.. oro_integrity_check:: fc2b25e02c2bf2b7d5bbc9328aede316667ed2bd
+.. oro_integrity_check:: 7777a9ae648a5b6332d4507d713043a53de99f79
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/search.yml
-        :caption: src/Acme/Bundle/NewDemoBundle/Resources/config/oro/search.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/search.yml
         :language: yaml
         :lines: 70-71, 77, 88-96
 
 Result:
 
-.. oro_integrity_check:: ed5f608eb16a17d843417573197e61ec569401e3
+.. oro_integrity_check:: 43fde20aa7f0a29fe6d3996423c95d4b694336c2
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/search.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/search.yml
@@ -93,7 +93,7 @@ Configuration is an array that contains info about the bundle name, entity name,
 
 Example:
 
-.. oro_integrity_check:: ed5f608eb16a17d843417573197e61ec569401e3
+.. oro_integrity_check:: 43fde20aa7f0a29fe6d3996423c95d4b694336c2
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/search.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/search.yml

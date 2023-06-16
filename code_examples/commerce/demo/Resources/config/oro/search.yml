@@ -5,7 +5,7 @@ search:
             name: acme_demo_priority_view
             parameters:
                 id: id
-        search_template: '@AcmeDemo/PrioritysearchResult.html.twig'
+        search_template: '@AcmeDemo/Priority/searchResult.html.twig'
         fields:
             -
                 name: label
@@ -46,7 +46,7 @@ search:
             name: acme_demo_document_view
             parameters:
                 id: id
-        search_template: '@AcmeDemo/DocumentsearchResult.html.twig'
+        search_template: '@AcmeDemo/Document/searchResult.html.twig'
         fields:
             -
                 name: subject
@@ -73,7 +73,7 @@ search:
             name: acme_demo_question_view                           # Route name to generate url link to the entity record
             parameters:                                             # Array with parameters for route
                 id: id
-        search_template: '@AcmeDemo/QuestionsearchResult.html.twig' # Template to use in search result page for this entity type
+        search_template: '@AcmeDemo/Question/searchResult.html.twig' # Template to use in search result page for this entity type
         fields:
             -
                 name: subject                                       # Name of field in entity
