@@ -15,25 +15,14 @@ In this case, Oro support is fully responsible for maintaining of the domain nam
 
 **2. Custom domain name with Oro supported SSL certificate.**
 
-You can use your branded URL in the domain zone of your company but delegate support of SSL certificate to Oro support team.
+You can use your branded URL in your company's domain zone but delegate SSL certificate support to the Oro support team.
+Standard OroCloud contract covers provisioning and support of SSL certificates for one domain. Any additional SSL certificates required for an additional domain name (e.g., in different country domain zones) must be contracted and billed.
 
-You need to add a new domain record to your DNS. Oro support team provides you with IP pointing to your new site in OroCloud.
+The Oro Support team will provision, configure and bear full responsibility for renewal or updating. From your side, you need to add a new domain record to your DNS. The Oro support team provides you with IP pointing to your new site in OroCloud.
 
-For this option, Oro needs the following information to provision SSL certificate for your new domain:
+.. note:: This option applies only to production and stage environments.
 
-* The full DNS name of your OroCloud site.
-* Country Name (2 letter code)
-* State or Province Name (full name)
-* Locality Name (e.g., city)
-* Organization Name (e.g., company)
-* Organizational Unit Name (e.g., section)
-* Email Address
-
-Once you provide this information and have DNS name added to your DNS record, Oro support team will provision, configure and bear full responsibility for renewing or updating the SSL certificate for your OroCloud site. During provisioning of SSL certificate, we will ask you to add TXT record to your DNS to confirm domain ownership.
-
-You should also reconfigure your application so it is not redirected to oro-cloud.com domain, as described in the :ref:`Global Routing Configuration <sys--config--sysconfig--websites--routing>` topic.
-
-Standard OroCloud contract covers provisioning and support of SSL certificate for one domain. Any additional SSL certificates required for an additional domain name (e.g. in different country domain zones) must be contracted and billed.
+You should also reconfigure your application so it is not redirected to the oro-cloud.com domain, as described in the :ref:`Global Routing Configuration <sys--config--sysconfig--websites--routing>` topic. To proceed with this option, please submit a support request to Oro Support Desk for further details.
 
 **3. Domain name and SSL certificate managed by the customer.**
 

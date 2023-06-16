@@ -168,6 +168,7 @@ Some options may also be omitted as they are added automatically:
           - 'command1'
           - 'command2'
 
+.. _orocloud-maintenance-advanced-use-application-config:
 
 Application Configuration
 -------------------------
@@ -335,6 +336,8 @@ X Frame Header Configuration
 
 Some business cases require embedding the OroCloud site into the iFrame at other sites. You need to set the value to “false” : ``header_x_frame: false``.
 This prevents WAF from sending the “X-Frame-Options” header which allows embedding into any iFrame.
+
+.. _orocloud-maintenance-advanced-use-locations-config:
 
 Locations Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -681,6 +684,8 @@ Profiling Application Using NewRelic
 ------------------------------------
 
 The ``newrelic_options`` configuration option allows you to configure NewRelic profiler (must be installed and configured per separate support request). Please, pay attention that the value of the license_key is provided as an example, and you need to use your actual license key there.
+
+.. _orocloud-maintenance-advanced-use-mail-settings:
 
 Mail Settings
 -------------
