@@ -327,6 +327,7 @@ Consider checking out the list of other classes below, as they can provide insig
 * |MetaPropertyFilter| - a filter used to request to add entity meta properties to the result or to perform some additional operations.
 * |AddMetaPropertyFilter| - a processor that adds the "meta" filter that is used to specify which entity meta properties should be returned or which additional operations should be performed.
 * |HandleMetaPropertyFilter| - a processor that handles the "meta" filter.
+* |ValidateMetaPropertyFilterSupported| - a processor that validates that the "meta" filter is supported and all requested meta properties are allowed.
 * |AddMetaProperties| - a processor that adds the configuration of meta properties requested via the "meta" filter.
 * |FieldsFilter| - a filter that is used to filter entity fields.
 * |AddFieldsFilter| - a processor that adds "fields" filters that are used to filter entity fields.

@@ -1422,6 +1422,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/5.1/src/Oro/Bundle/ApiBundle/Processor/Shared/HandleMetaPropertyFilter.php" target="_blank">HandleMetaPropertyFilter</a>
 
+.. |ValidateMetaPropertyFilterSupported| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/Shared/ValidateMetaPropertyFilterSupported.php" target="_blank">ValidateMetaPropertyFilterSupported</a>
+
 .. |AddMetaProperties| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/5.1/src/Oro/Bundle/ApiBundle/Processor/GetConfig/AddMetaProperties.php" target="_blank">AddMetaProperties</a>
