@@ -56,7 +56,6 @@ The required packages (dependencies) are listed in the following way:
    "require": {
         "oro/crm": "2.x-dev",
         "oro/platform-serialised-fields": "2.x-dev",
-        "oro/crm-hangouts-call-bundle": "2.x-dev",
         "oro/mailchimp": "2.x-dev",
         "oro/crm-dotmailer": "2.x-dev",
         "oro/crm-zendesk": "2.x-dev"

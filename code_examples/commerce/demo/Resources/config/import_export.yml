@@ -1,0 +1,109 @@
+services:
+    # Priority Import-Export services
+    acme.demo.importexport.data_converter.priority:
+        parent: oro_importexport.data_converter.configurable
+
+    acme.demo.importexport.strategy.priority.add_or_replace:
+        parent: oro_importexport.strategy.configurable_add_or_replace
+
+    acme.demo.importexport.processor.import.priority:
+        parent: oro_importexport.processor.import_abstract
+        calls:
+            - [ setDataConverter, [ '@acme.demo.importexport.data_converter.priority' ] ]
+            - [ setStrategy, [ '@acme.demo.importexport.strategy.priority.add_or_replace' ] ]
+        tags:
+            -   name: oro_importexport.processor
+                type: import
+                entity: 'Acme\Bundle\DemoBundle\Entity\Priority'
+                alias: acme_demo_priority
+            -   name: oro_importexport.processor
+                type: import_validation
+                entity: 'Acme\Bundle\DemoBundle\Entity\Priority'
+                alias: acme_demo_priority
+
+    acme.demo.importexport.processor.export.priority:
+        parent: oro_importexport.processor.export_abstract
+        calls:
+            - [ setDataConverter, [ '@acme.demo.importexport.data_converter.priority' ] ]
+        tags:
+            -   name: oro_importexport.processor
+                type: export
+                entity: 'Acme\Bundle\DemoBundle\Entity\Priority'
+                alias: acme_demo_priority
+
+    acme.demo.importexport.configuration_provider.priority:
+        class: 'Acme\Bundle\DemoBundle\ImportExport\Configuration\PriorityImportExportConfigurationProvider'
+        tags:
+            - { name: oro_importexport.configuration, alias: acme_demo_priority }
+    # Document Import-Export services
+    acme.demo.importexport.data_converter.document:
+        parent: oro_importexport.data_converter.configurable
+
+    acme.demo.importexport.strategy.document.add_or_replace:
+        parent: oro_importexport.strategy.configurable_add_or_replace
+
+    acme.demo.importexport.processor.import.document:
+        parent: oro_importexport.processor.import_abstract
+        calls:
+            - [ setDataConverter, [ '@acme.demo.importexport.data_converter.document' ] ]
+            - [ setStrategy, [ '@acme.demo.importexport.strategy.document.add_or_replace' ] ]
+        tags:
+            -   name: oro_importexport.processor
+                type: import
+                entity: 'Acme\Bundle\DemoBundle\Entity\Document'
+                alias: acme_demo_document
+            -   name: oro_importexport.processor
+                type: import_validation
+                entity: 'Acme\Bundle\DemoBundle\Entity\Document'
+                alias: acme_demo_document
+
+    acme.demo.importexport.processor.export.document:
+        parent: oro_importexport.processor.export_abstract
+        calls:
+            - [ setDataConverter, [ '@acme.demo.importexport.data_converter.document' ] ]
+        tags:
+            -   name: oro_importexport.processor
+                type: export
+                entity: 'Acme\Bundle\DemoBundle\Entity\Document'
+                alias: acme_demo_document
+
+    acme.demo.importexport.configuration_provider.document:
+        class: 'Acme\Bundle\DemoBundle\ImportExport\Configuration\DocumentImportExportConfigurationProvider'
+        tags:
+            - { name: oro_importexport.configuration, alias: acme_demo_document }
+    # Question Import-Export services
+    acme.demo.importexport.data_converter.question:
+        parent: oro_importexport.data_converter.configurable
+
+    acme.demo.importexport.strategy.question.add_or_replace:
+        parent: oro_importexport.strategy.configurable_add_or_replace
+
+    acme.demo.importexport.processor.import.question:
+        parent: oro_importexport.processor.import_abstract
+        calls:
+            - [ setDataConverter, [ '@acme.demo.importexport.data_converter.question' ] ]
+            - [ setStrategy, [ '@acme.demo.importexport.strategy.question.add_or_replace' ] ]
+        tags:
+            -   name: oro_importexport.processor
+                type: import
+                entity: 'Acme\Bundle\DemoBundle\Entity\Question'
+                alias: acme_demo_question
+            -   name: oro_importexport.processor
+                type: import_validation
+                entity: 'Acme\Bundle\DemoBundle\Entity\Question'
+                alias: acme_demo_question
+
+    acme.demo.importexport.processor.export.question:
+        parent: oro_importexport.processor.export_abstract
+        calls:
+            - [ setDataConverter, [ '@acme.demo.importexport.data_converter.question' ] ]
+        tags:
+            -   name: oro_importexport.processor
+                type: export
+                entity: 'Acme\Bundle\DemoBundle\Entity\Question'
+                alias: acme_demo_question
+
+    acme.demo.importexport.configuration_provider.question:
+        class: 'Acme\Bundle\DemoBundle\ImportExport\Configuration\QuestionImportExportConfigurationProvider'
+        tags:
+            - { name: oro_importexport.configuration, alias: acme_demo_question }

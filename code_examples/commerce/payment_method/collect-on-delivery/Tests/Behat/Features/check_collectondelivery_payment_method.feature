@@ -1,7 +1,8 @@
+@documentation
 @behat-test-env
 @fixture-OroFlatRateShippingBundle:FlatRateIntegration.yml
 @fixture-OroPaymentTermBundle:PaymentTermIntegration.yml
-@fixture-OroCheckoutBundle:Checkout.yml
+@fixture-OroCheckoutBundle:CheckoutCE.yml
 Feature: Check CollectOnDelivery payment method
   In order to be able to use CollectOnDelivery payment method
   As an administrator

@@ -107,6 +107,9 @@ Application-level Structure Changes
     |   |   |── workflows/
     |   |   |   |── workflows_import/                    # A directory of workflows that can be registered with an import directive.
     |   |   |   └── workflows.yml                        # All application-level workflows must be registered here.
+    |   |   |── websocket_routing/                       # Gos PubSub routing resources.
+    |   |   |   |── websocket_routing_config.yml
+    |   |   |   └── ...
     |   |   |── assets.yml                               # Assets for administration themes/layouts.
     |   |   |── jsmodules.yml                            # Js modules for administration themes/layouts.
     |   |   └── behat_services.yml                       # Behat services must be registered here.
@@ -425,6 +428,25 @@ Themes & Layouts
    -  Themes configuration: ``/templates/layouts/{your_theme_dir}/theme.yml``
    -  Layout assets configuration: ``/templates/layouts/{your_theme_dir}/config/assets.yml``
    -  Layout theme configuration: ``/templates/layouts/{your_theme_dir}/config/config.yml``
+
+Asset Handling in Application Development
+"""""""""""""""""""""""""""""""""""""""""
+
+If the build uses the image or any other asset, it is automatically copied to the public folder. Copying ensures that the assets are readily available and can be served to users without issues.
+
+However, in some scenarios where assets are not directly utilized within the build process, placing them directly in the public folder from the beginning is recommended. This approach eliminates the need for automatic copying since the assets are already in the correct location.
+
+To adhere to the best practices mentioned above, manually move the image or any other static asset to the public folder.
+
+Referencing Assets using the asset() Function in Twig
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Once the asset is placed in the public folder, you can reference it within your application using the asset() function in Twig. The asset() function provides a convenient way to generate the correct URL for the asset, allowing you to include it within your templates or code.
+
+.. code-block:: twig
+
+    {# the image lives at "public/images/example.jpg" #}
+    <img src="{{ asset('images/example.jpg') }}" alt="Example Image"/>
 
 Tests
 ~~~~~

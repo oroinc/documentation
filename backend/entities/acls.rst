@@ -16,28 +16,12 @@ Activating ACL Checks on your Entities
 
 To have your entity available in the admin UI to be able to assign permissions to your users, you have to enable ACLs for these entities using the ``@Config`` annotation:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Entity/Task.php
+.. oro_integrity_check:: 110c938986114723489141455b7582911694d0a2
 
-    namespace Acme\Bundle\DemoBundle\Entity;
-
-    use Doctrine\ORM\Mapping as ORM;
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-
-    /**
-     * @ORM\Entity
-     * @Config(
-     *     defaultValues={
-     *         "security"={
-     *             "type"="ACL",
-     *             "group_name"=""
-     *         }
-     *     }
-     * )
-     */
-    class Task
-    {
-    }
+   .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
+       :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
+       :language: php
+       :lines: 3-5, 8, 14-17, 21-25, 36-41, 45-47
 
 After you have done this and have cleared the cache, you can toggle all kinds of permission checks (``CREATE``, ``EDIT``, ``DELETE``, ``VIEW``, and ``ASSIGN``) in the user role management interface.
 
@@ -56,123 +40,44 @@ You have two options to define your custom access control lists:
 
 #. In your controller class, you can use the ``@Acl`` annotation:
 
-   .. code-block:: php
-      :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
+.. oro_integrity_check:: 4660c1cfd4499297e291773a0e77dbe0808245c9
 
-       namespace Acme\Bundle\DemoBundle\Controller;
-
-       use Acme\Bundle\DemoBundle\Entity\Task;
-       use Oro\Bundle\SecurityBundle\Annotation\Acl;
-       use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-       use Symfony\Component\HttpFoundation\Request;
-
-       class TaskController extends AbstractController
-       {
-           /**
-            * @Acl(
-            *   id="acme_task_view",
-            *   type="entity",
-            *   class="AcmeDemoBundle:Task",
-            *   permission="VIEW"
-            * )
-            */
-           public function indexAction()
-           {
-               // ...
-           }
-
-           /**
-            * @Acl(
-            *   id="acme_task_create",
-            *   type="entity",
-            *   class="AcmeDemoBundle:Task",
-            *   permission="CREATE"
-            * )
-            */
-           public function createAction(Request $request)
-           {
-               // ...
-           }
-
-           /**
-            * @Acl(
-            *   id="acme_task_edit",
-            *   type="entity",
-            *   class="AcmeDemoBundle:Task",
-            *   permission="EDIT"
-            * )
-            */
-           public function editAction(Task $task, Request $request)
-           {
-               // ...
-           }
-       }
+   .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
+       :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
+       :language: php
+       :lines: 3-6,11, 15-22, 33-47, 101
 
    Using the ``@Acl`` annotation does not only create new access control lists to which you can refer in other parts of your code, it also triggers the access decision manager when your actions are accessed by users and thus protect them from being accessed without the needed permissions.
 
 #. If you do not want to protect any controller methods or if you prefer to keep the definition of your ACLs separated from the application code, you can define them using some YAML config in a file named ``acls.yml``:
 
-   .. code-block:: yaml
-      :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
+.. oro_integrity_check:: 78315db4cdc128b0ee264f99fc4b40f203ac544f
 
-       acls:
-           acme_task_create:
-               type: entity
-               class: Acme\Bundle\DemoBundle\Entity\Task
-               permission: CREATE
-
-           acme_task_delete:
-               type: entity
-               class: Acme\Bundle\DemoBundle\Entity\Task
-               permission: DELETE
-
-           acme_task_edit:
-               type: entity
-               class: Acme\Bundle\DemoBundle\Entity\Task
-               permission: EDIT
-
-           acme_task_view:
-               type: entity
-               class: Acme\Bundle\DemoBundle\Entity\Task
-               permission: VIEW
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/acls.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
+       :language: yaml
+       :lines: 1-5
 
 .. sidebar:: Security Actions that Are not Related to an Entity
 
     You can also create access control lists that are only used to protect specific actions unrelated to an entity. To do that, set the type of the ACL to ``action`` instead of ``entity``:
 
-    .. code-block:: php
-        :caption: src/Acme/Bundle/DemoBundle/Controller/PageController.php
+    .. oro_integrity_check:: 644db109948b700dda808291059658ab7dc450ae
 
-        namespace Acme\Bundle\DemoBundle\Controller;
-
-        use Oro\Bundle\SecurityBundle\Annotation\Acl;
-        use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
-        class PageController extends AbstractController
-        {
-            /**
-             * @Acl(
-             *     id="acme_static_pages",
-             *     type="action"
-             * )
-             */
-            public function showAction()
-            {
-                // ...
-            }
-        }
+        .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
+            :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
+            :language: php
+            :lines: 3-6, 8, 11, 15-22, 69-92, 101
 
     When configuring the ACL using the YAML config format, you also have to set the controller to use the ``bindings`` option to bind the ACL:
 
-    .. code-block:: yaml
-       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
 
-        acls:
-            acme_static_pages:
-                type: action
-                bindings:
-                    class: Acme\Bundle\DemoBundle\Controller\PageController
-                    method: showAction
+    .. oro_integrity_check:: 9516d6b8fa825be74e48c89e0867d2fd2a66dce3
+
+        .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/acls.yml
+            :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
+            :language: yaml
+            :lines: 1-8
 
     .. seealso::
 

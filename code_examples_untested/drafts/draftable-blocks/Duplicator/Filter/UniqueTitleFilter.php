@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CMSBundle\Duplicator\Filter;
+namespace Acme\Bundle\CMSBundle\Duplicator\Filter;
 
-use ACME\Bundle\CMSBundle\Entity\Block;
+use Acme\Bundle\CMSBundle\Entity\Block;
 use Oro\Component\Duplicator\Filter\Filter;
 
 /**

@@ -1,0 +1,16 @@
+include:
+- '@AcmeDemoBundle:priority.yml'
+
+Acme\Bundle\DemoBundle\Entity\Question:
+    question1:
+        priority: '@normal'
+        organization: '@organization'
+        owner: '@admin'
+        subject: 'TestSubject1'
+        description: 'TestDescription1'
+    question2:
+        priority: '@high'
+        organization: '@organization'
+        owner: '@admin'
+        subject: 'TestSubject2'
+        description: 'TestDescription2'

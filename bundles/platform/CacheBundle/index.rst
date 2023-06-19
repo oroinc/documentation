@@ -8,7 +8,7 @@
 OroCacheBundle
 ==============
 
-OroCacheBundle introduces the configuration of the application data cache storage used by the application bundles
+|OroCacheBundle| introduces the configuration of the application data cache storage used by the application bundles
 for different cache types.
 
 .. _bundle-docs-platform-cache-bundle--data-cache-service:

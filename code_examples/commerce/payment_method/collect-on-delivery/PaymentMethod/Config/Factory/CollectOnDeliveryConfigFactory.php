@@ -1,9 +1,9 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Factory;
+namespace Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Factory;
 
-use ACME\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfig;
+use Acme\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfig;
 use Doctrine\Common\Collections\Collection;
 use Oro\Bundle\IntegrationBundle\Generator\IntegrationIdentifierGeneratorInterface;
 use Oro\Bundle\LocaleBundle\Helper\LocalizationHelper;

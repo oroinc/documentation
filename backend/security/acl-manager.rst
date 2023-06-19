@@ -11,64 +11,22 @@ To check if the ACL system is enabled in the current application, use the **isAc
 
 Setting VIEW and EDIT class-based permissions to the `MyBundle:MyEntity` class for the Manager Role:
 
-.. code-block:: php
+.. oro_integrity_check:: 77979bbdd628c16007699e2fde71e1c1a542d8f1
 
-    use Oro\Bundle\SecurityBundle\Acl\Persistence\AclManager;
-    // ...
-    public function setAclManager(AclManager $manager)
-    {
-        //Injecting Acl Manager
-        $this->manager = $manager;
-    }
-    // ...
-    public function setViewEditPermissions()
-    {
-        $sid = $manager->getSid('ROLE_MANAGER');
-        $oid = $manager->getOid('entity:MyBundle:MyEntity');
-        $builder = $manager->getMaskBuilder($oid);
-        //building necessary permissions mask, see Acl/Extension/EntityMaskBuilder class for a list of permission constants
-        $mask = $builder->add('VIEW_SYSTEM')->add('EDIT_SYSTEM')->get();
-
-        $manager->setPermission(
-            $sid,
-            $oid,
-            $mask
-        );
-        //saving permissions
-        $manager->flush();
-    }
-    // ...
+    .. literalinclude:: /code_examples/commerce/demo/Helper/AcmeAclManagerHelper.php
+        :caption: src/Acme/Bundle/DemoBundle/Helper/AcmeAclManagerHelper.php
+        :language: php
+        :lines: 14-35
 
 
 Granting `some_action_id` capability for the Manager Role:
 
-.. code-block:: php
+.. oro_integrity_check:: 0452eed4d4b4e6fa5df642e4c5ad3da0e69324a5
 
-    use Oro\Bundle\SecurityBundle\Acl\Persistence\AclManager;
-    // ...
-    public function setAclManager(AclManager $manager)
-    {
-        //Injecting Acl Manager
-        $this->manager = $manager;
-    }
-    // ...
-    public function setExecutePermissions()
-    {
-        $sid = $manager->getSid('ROLE_MANAGER');
-        $oid = $manager->getOid('action:some_action_id');
-        $builder = $manager->getMaskBuilder($oid);
-        //building necessary permissions mask, for actions only EXECUTE mask is currently available
-        $mask = $builder->add('EXECUTE')->get();
-
-        $manager->setPermission(
-            $sid,
-            $oid,
-            $mask
-        );
-        //saving permissions
-        $manager->flush();
-    }
-    //...
+    .. literalinclude:: /code_examples/commerce/demo/Helper/AcmeAclManagerHelper.php
+        :caption: src/Acme/Bundle/DemoBundle/Helper/AcmeAclManagerHelper.php
+        :language: php
+        :lines: 14-18, 37-52
 
 The **getSid function** returns the security identity for the given parameter. Parameters of the function can be:
 

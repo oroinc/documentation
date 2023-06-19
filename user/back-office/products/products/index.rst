@@ -52,10 +52,11 @@ Once you have created products, you can:
    :maxdepth: 1
    :hidden:
 
-   manage/index
    create-simple
    create-complex
    managing-product-visibility
+   Manage Product Grids <manage/index>
+   Manage Product Units <product-units/index>
+   Offer Product Recommendations <product-recommendations>
    import-products
    export-products
-   Product Units <product-units/index>

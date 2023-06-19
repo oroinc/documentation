@@ -27,11 +27,12 @@ To configure Google integration-related settings in the back-office:
 
 6. In the **Google Tag Manager Settings** section, clear the **Use Default** checkbox and select a :ref:`Google Tag Manager Integration <gtm-ga-4-integration>` from the list to configure it for the application and enable data mapping.
 
+.. note:: You can enable cross-domain tracking to be able to track user interactions across multiple domains using a single GA4 property. See the |Implement Cross-Domain Measurement| article on the Google website for more information.
+
 **Related Topics**
 
 * :ref:`Configure Global Google Settings <admin-configuration-integrations-google>`
 * :ref:`Configure Google Single Sign On <user-guide-google-single-sign-on>`
-* :ref:`Set Up Voice and Video Calls via Hangouts <user-guide-hangouts>`
 * :ref:`Configure Google Tag Manager Integration <gtm-ga-4-integration>`
 
 .. include:: /include/include-links-user.rst

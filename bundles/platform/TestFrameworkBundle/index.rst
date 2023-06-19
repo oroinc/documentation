@@ -5,7 +5,7 @@
 OroTestFrameworkBundle
 ======================
 
-OroTestFrameworkBundle uses Mink, Behat, Karma, Jasmin and other testing tools to provide the testing framework for all Oro application components. Its main functions:
+|OroTestFrameworkBundle| uses Mink, Behat, Karma, Jasmin and other testing tools to provide the testing framework for all Oro application components. Its main functions:
 
 * Provides the test framework functionality (SOAP/REST client, Custom TestCases, PageObjects for Selenium etc)
 * Contains the main entry point for the JS UnitTest runner

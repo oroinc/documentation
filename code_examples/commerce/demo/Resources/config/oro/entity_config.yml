@@ -1,0 +1,66 @@
+entity_config:
+  acme:                                 # a configuration scope name
+    entity:                             # a section describes an entity
+      items:                            # starts a description of entity attributes
+        demo_attr:                      # adds an attribute named 'demo_attr'
+          options:
+            default_value: 'Demo'       # sets the default value for 'demo_attr' attribute
+            translatable:  true         # means that value of this attribute is translation key
+              # and actual value should be taken from translation table
+            # or in twig via "|trans" filter
+            indexed:  true              # TRUE if an attribute should be filterable or sortable in a data grid
+            priority: 100
+          grid:                         # configure a data grid to display 'demo_attr' attribute
+            type:          string       # sets the attribute type
+            label:         'Demo Attr'  # sets the data grid column name
+            show_filter:   true         # the next three lines configure a filter for 'Demo Attr' column
+            filterable:    true
+            filter_type:   string
+            sortable:      true         # allows an administrator to sort rows clicks on 'Demo Attr' column
+          form:
+            type:          Symfony\Component\Form\Extension\Core\Type\TextType         # sets the attribute type
+            options:
+              block:     entity       # specifies in which block on the form this attribute should be displayed
+              label:     'Demo Attr'  # sets the label name
+  acme_demo:
+    entity:
+      items:
+        comment:
+          options:
+            default_value: ""
+            translatable: true
+            indexed: true
+          grid:
+            type: string
+            label: 'Comment'
+            show_filter: true
+            filterable: true
+            filter_type: string
+            sortable: true
+          form:
+            type: Symfony\Component\Form\Extension\Core\Type\TextType
+            options:
+              block: entity
+              label: 'Comment'
+    field:
+      items:
+        auditable:
+          options:
+            indexed: true
+            priority: 60
+          grid:
+            type: boolean
+            label: 'Auditable'
+            show_filter: false
+            filterable: true
+            filter_type: boolean
+            sortable: true
+            required: true
+          form:
+            type: Oro\Bundle\EntityConfigBundle\Form\Type\ChoiceType
+            options:
+              block: entity
+              label: 'Auditable'
+              choices:
+                No: false
+                Yes: true

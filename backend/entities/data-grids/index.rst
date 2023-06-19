@@ -23,50 +23,26 @@ Datasource
 
 The ``source`` option is used to configure a Doctrine query builder that is used to fetch the data to be displayed in the grid:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+.. oro_integrity_check:: 90acb801eb0fb98455a4793aea20a3bf774771b8
 
-    datagrids:
-        acme-tasks-grid:
-            source:
-                type: orm
-                query:
-                    select:
-                        - task.id
-                        - task.subject
-                        - task.description
-                        - task.dueDate
-                        - priority.label AS taskPriority
-                    from:
-                        - { table: Acme\Bundle\DemoBundle\Entity\Task, alias: task }
-                    join:
-                        left:
-                            - { join: task.priority, alias: priority }
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 201, 211-226
+
 
 Displayed Columns
 ~~~~~~~~~~~~~~~~~
 
 Then, the ``columns`` option needs to be used to configure how which data will be displayed:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+.. oro_integrity_check:: a91f59d77763d519625a07a4530f27bb524a0afb
 
-    datagrids:
-        acme-tasks-grid:
-            # ...
-            columns:
-                id:
-                    label: ID
-                    frontend_type: integer
-                subject:
-                    label: Subject
-                description:
-                    label: Description
-                dueDate:
-                    label: Due Date
-                    frontend_type: datetime
-                taskPriority:
-                    label: Priority
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 201, 227-236
+
 
 For each column, you can use the ``frontend_type`` option to customize how data will be displayed (by default, the data will be shown as is).
 
@@ -75,26 +51,13 @@ Column Sorters
 
 Use the ``sorters`` option to define on which columns' header the user can click to order by the data:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+.. oro_integrity_check:: dfa97ef5a864c0e80e465489c52d3add58bc546d
 
-    datagrids:
-        acme-tasks-grid:
-            # ...
-            sorters:
-                columns:
-                    id:
-                        data_name: task.id
-                    subject:
-                        data_name: task.subject
-                    description:
-                        data_name: task.description
-                    dueDate:
-                        data_name: task.dueDate
-                    taskPriority:
-                        data_name: priority.label
-                default:
-                    dueDate: DESC
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 201, 237-248
+
 
 Each key under ``sorters.columns`` refers to one displayed column. The ``data_name`` option is the term that will be used as the ``order by`` term in the Doctrine query.
 
@@ -107,98 +70,26 @@ Data filters are UI elements that allow the user to filter the data being displa
 
 * The ``data_name`` denotes the name of the property to filter and will be used as is to modify the datagrid's query builder.
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+.. oro_integrity_check:: 6664d2ac364e4362d88b8d906fad5e1f185e634d
 
-    datagrids:
-        acme-tasks-grid:
-            # ...
-            filters:
-                columns:
-                    id:
-                        type: number
-                        data_name: task.id
-                    subject:
-                        type: string
-                        data_name: task.subject
-                    description:
-                        type: string
-                        data_name: task.description
-                    dueDate:
-                        type: datetime
-                        data_name: task.dueDate
-                    taskPriority:
-                        type: string
-                        data_name: priority.label
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 201, 249-265
+
 
 Complete Datagrid Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The final datagrid configuration now looks like this:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+.. oro_integrity_check:: d63ee74f642febf4fc40751350b63bb3e0fc925f
 
-    datagrids:
-        acme-tasks-grid:
-            source:
-                type: orm
-                query:
-                    select:
-                        - task.id
-                        - task.subject
-                        - task.description
-                        - task.dueDate
-                        - priority.label AS taskPriority
-                    from:
-                        - { table: Acme\Bundle\DemoBundle\Entity\Task, alias: task }
-                    join:
-                        left:
-                            - { join: task.priority, alias: priority }
-            columns:
-                id:
-                    label: ID
-                    frontend_type: integer
-                subject:
-                    label: Subject
-                description:
-                    label: Description
-                dueDate:
-                    label: Due Date
-                    frontend_type: datetime
-                taskPriority:
-                    label: Priority
-            sorters:
-                columns:
-                    id:
-                        data_name: task.id
-                    subject:
-                        data_name: task.subject
-                    description:
-                        data_name: task.description
-                    dueDate:
-                        data_name: task.dueDate
-                    taskPriority:
-                        data_name: priority.label
-                default:
-                    dueDate: DESC
-            filters:
-                columns:
-                    id:
-                        type: number
-                        data_name: task.id
-                    subject:
-                        type: string
-                        data_name: task.subject
-                    description:
-                        type: string
-                        data_name: task.description
-                    dueDate:
-                        type: datetime
-                        data_name: task.dueDate
-                    taskPriority:
-                        type: string
-                        data_name: priority.label
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 201-202, 211-265
+
 
 .. _cookbook-entities-grid-controller:
 
@@ -207,39 +98,23 @@ Create the Controller and View
 
 To make your datagrid accessible, create a controller that the user can visit, which will serve as a view that renders the configured datagrid:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
+.. oro_integrity_check:: 785173eaf1ea0748fb1bfe470c6df3bea568ebd2
 
-    namespace Acme\Bundle\DemoBundle\Controller;
+   .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
+       :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
+       :language: php
+       :lines: 3-5, 10-11, 14, 16-17, 19-26, 28-34, 131
 
-    use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-    use Symfony\Component\Routing\Annotation\Route;
-
-    /**
-     * @Route("/task")
-     */
-    class TaskController extends AbstractController
-    {
-        /**
-         * @Route("/", name="acme_task_index")
-         * @Template()
-         */
-        public function indexAction(): array
-        {
-            return [];
-        }
-    }
 
 The view can be straightforward if you extend the ``@OroUI/actions/index.html.twig`` template:
 
-.. code-block:: html+jinja
-   :caption: src/Acme/Bundle/DemoBundle/Resources/views/Task/index.html.twig
+.. oro_integrity_check:: 1e81fd6f4418021e185e5e3856e9d04b18ca6ebd
 
-    {% extends '@OroUI/actions/index.html.twig' %}
+   .. literalinclude:: /code_examples/commerce/demo/Resources/views/Question/index.html.twig
+       :caption: src/Acme/Bundle/DemoBundle/Resources/views/Question/index.html.twig
+       :language: html
+       :lines: 1-4
 
-    {% set gridName = 'acme-tasks-grid' %}
-    {% set pageTitle = 'Task' %}
 
 Configure the name of your datagrid and the title you wish to be displayed. The base template from the OroUIBundle handles everything else.
 
@@ -250,18 +125,12 @@ Link to the Action
 
 At last, you need to make the action accessible by creating a menu item:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
+.. oro_integrity_check:: cf810415d2951190f99f8e2d31e5bcd0cbe8948e
 
-    menu_config:
-        items:
-            task_list:
-                label: Tasks
-                route: acme_task_index
-        tree:
-            application_menu:
-                children:
-                    task_list: ~
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/navigation.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
+       :language: yaml
+       :lines: 1-3, 34-36, 117-123, 126
 
 .. note::
 
@@ -287,40 +156,12 @@ Mixin is a datagrid that contains additional (common) information for use by oth
 
 **Configuration Syntax**
 
-.. code-block:: yaml
+.. oro_integrity_check:: 856263322fa542c66b58d5d52f1a4e5886e5dfdd
 
-    datagrids:
-
-        # configuration mixin with column, sorter and filter for an entity identifier
-        acme-demo-common-identifier-datagrid-mixin:
-            source:
-                type: orm
-                query:
-                    select:
-                        # alias that will be replaced by an alias of the root entity
-                        - __root_entity__.id as identifier
-            columns:
-                identifier:
-                    frontend_type: integer
-            sorters:
-                data_name: identifier
-            filters:
-                columns:
-                    identifier:
-                        type: number
-                        data_name: identifier
-
-        acme-demo-user-datagrid:
-            # one or several mixins
-            mixins:
-                - acme-demo-datagrid-mixin
-                - ...
-                - ...
-            source:
-                type: orm
-                query:
-                    from:
-                        { table: Acme\Bundle\DemoBundle\Entity\User, alias:u }
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 433-454, 201, 204-206, 211-213, 220-223
 
 **Related Articles**
 

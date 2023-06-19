@@ -1,0 +1,9 @@
+oro:
+    workflow:
+        acme_demo_introduction_flow:
+            label: 'Introduction flow'
+            step:
+                started:
+                    label: "Start flow"
+                processed:
+                    label: "Processed flow"

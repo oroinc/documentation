@@ -5,7 +5,7 @@
 OroEntityBundle
 ===============
 
-OroEntityBundle extends the Doctrine ORM functionality with additional field types and helpers. The bundle introduces entity aliases that enable the entity types reference in a shorter form.
+|OroEntityBundle| extends the Doctrine ORM functionality with additional field types and helpers. The bundle introduces entity aliases that enable the entity types reference in a shorter form.
 
 Related Documentation
 ---------------------

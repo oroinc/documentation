@@ -1,0 +1,125 @@
+action_groups: # root node for action groups
+    demo_flash_greetings_to: # name of action group
+        replace:                                    # (optional) the list of nodes that should be replaced during the overriding
+            - actions                               # node name
+        parameters: # parameters declaration node
+            what: # name of the parameter
+                type: AcmeDemoBundle/String/Phrase  # (optional, default = any) type validation of parameter (available types: integer, string, boolean, array, double, object, PHP class)
+                message: "Bad type"                 # (optional) message to be prompted if parameter validation failure met
+                default: "Hello"                    # (optional) default value for optional parameter, if not set then parameter `what` is required
+            who: ~                                  # set all defaults to parameter options (type: any)
+        conditions: # Condition expression
+            '@not_empty': [ $.who ]
+        actions: # list of actions that should be executed
+            -   '@call_service_method':
+                    service: type_guesser
+                    method: guess
+                    method_parameters: [ $.who ]          # as you can see, parameters are accessible from root $.<parameterName>
+                    attribute: $.typeOfWho
+            -   '@flash_message':
+                    message: '$.result[message]'
+                    type: 'info'
+                    message_parameters:
+                        param1: $.what
+                        param2: $.typeOfWho
+
+operations: # root elements
+    acme_demo_operation_base: # name of operation
+        label: 'Base acme demo operation'               # this value will be shown in UI for operation button
+        substitute_operation: some_operation            # configuration of 'some_operation' will be replaced by configuration of this operation
+        enabled: false                                  # operation is disabled, means not used in application
+        entities: # on view/edit pages of this entities operation button will be shown
+            - Acme\Bundle\DemoBundle\Entity\Priority    # entity class name
+        routes: # on pages with these routes operation button will be shown
+            - acme_demo_priority_view                    # route name
+        datagrids: # in listed datagrids operation icon will be shown
+            - acme-demo-question-grid                   # datagrid name
+        order: 5                                        # display order of operation button
+        acl_resource: acme_demo_priority_view
+
+    acme_demo_operation:                                # operation name
+        extends: acme_demo_operation_base               # (optional) parent operation if needed
+        label: 'Acme demo operation'                    # this value will be shown in UI for operation button
+        substitute_operation: some_operation            # configuration of 'some_operation' will be replaced by configuration of this operation
+        enabled: false                                  # operation is disabled, means not used in application
+        entities: # on view/edit pages of this entities operation button will be shown
+            - Acme\Bundle\DemoBundle\Entity\Question    # entity class name
+        routes: # on pages with these routes operation button will be shown
+            - acme_demo_priority_view                   # route name
+        datagrids: # in listed datagrids operation icon will be shown
+            - acme-demo-question-grid                   # datagrid name
+        order: 10                                       # display order of operation button
+        acl_resource: acme_demo_question_view           # ACL resource name that will be checked on preconditions step
+        button_options:                                 # (optional) display options for operation button
+            icon: fa-check                              # (optional) class of button icon
+            class: btn                                  # (optional) class of button
+            group: aсme.demo.operations.demogroup.label # (optional) group operation to drop-down on the label
+            template: '@OroAction/Operation/button.html.twig'   # (optional) custom button template
+            data:                                               # custom data attributes which will be added to button
+                param: value
+                customTitle: $.customTitle
+            page_component_module: acmedemo/js/app/components/demo-component
+            page_component_options:                                       # (optional) js-component module options
+                component_name: '[name$="[component]"]'
+                component_additional: '[name$="[additional]"]'
+        frontend_options:                                                 # (optional) display options for operation button
+            confirmation: aсme.demo.operations.operation_perform_confirm
+            template: '@OroAction/Operation/form.html.twig'               # (optional) custom template, can be used both for page or dialog
+            title: aсme.demo.operations.dialog.title                      # (optional) custom title
+            title_parameters:
+                '%%some_param%%': $.paramValue
+            options:                                                      # (optional) modal dialog options
+                allowMaximize: true
+                allowMinimize: true
+                dblclick: maximize
+                maximizedHeightDecreaseBy: minimize-bar
+                width: 500
+            show_dialog: true
+        attributes:                                                # (optional) list of all existing attributes
+            question:                                              # attribute name
+                label: 'Question'                                  # attribute label
+                type: entity                                       # attribute type
+                options:                                           # attribute options
+                    class: Acme\Bundle\DemoBundle\Entity\Question  # (optional) entity class name, set if type is entity
+            company_name:
+                label: 'Company name'
+                type: string
+            group_name:
+                property_path: user.group.name
+        datagrid_options:
+#            mass_action_provider:                             # (optional) service name, marked with "oro_action.datagrid.mass_action_provider" tag
+#                acme.action.datagrid.mass_action_provider     # and must implement Oro\Bundle\ActionBundle\Datagrid\Provider\MassActionProviderInterface
+            mass_action:                                       # (optional) configuration of datagrid mass action
+                type: window
+                label: acme.demo.mass_action.label
+                icon: plus
+                route: acme_demo_bundle_massaction
+                frontend_options:
+                    title: acme.demo.mass_action.action.label
+                    dialogOptions:
+                        modal: true
+            data:
+                type: import
+                importProcessor: 'acme_import_processor'
+                importJob: 'acme_import_from_csv'
+        form_options:                                                               # (optional) parameters which will be passed to form dialog
+            attribute_fields:                                                       # list of attribute fields which will be shown in dialog
+                question:                                                           # attribute name (must be configured in `attributes` block of action config)
+                    form_type: Symfony\Component\Form\Extension\Core\Type\TextType  # needed type of current field
+            attribute_default_values:                                     # (optional) define default values for attributes
+                question: $question                                       # use attribute name and property path or simple string for attribute value
+        preconditions:                                                    # (optional) pre-conditions for display Action button
+            '@equal': [ $name, 'John Dow' ]                               # condition definition
+        conditions:                                                       # (optional) conditions for execution Action button
+            '@not_empty': [ $group ]                                      # condition definition
+        preactions:                                                       # (optional) any needed pre actions which will execute before pre conditions
+            -   '@assign_value': [ $name, 'User Name' ]                   # action alias
+        form_init:                                                        # (optional) any needed actions which will execute before showing form dialog
+            -   '@assign_value': [ $group, 'Group Name' ]                 # action alias
+        actions:                                                          # (optional) any needed actions which will execute after click on th button
+            -   '@create_entity':                                         # action definition
+                    class: Acme\Bundle\DemoBundle\Entity\User
+                    attribute: $user
+                    data:
+                        name: $name
+                        group: $group

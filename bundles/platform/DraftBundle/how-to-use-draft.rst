@@ -25,7 +25,7 @@ Create an entity with 2 fields: **title** and **content** and implement the enti
 .. note::
     For simplicity, use the predefined ``DraftableTrait`` trait:
 
-.. oro_integrity_check:: 5478c2539e289c5908a39a31d4b8d5ee5dc3965c
+.. oro_integrity_check:: a4667286bd1e8e864473199b9eb5db6631580dbe
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Entity/Block.php
         :language: php
@@ -69,9 +69,9 @@ The fields responsible for the draft must match the interface and have the appro
 
 After you complete it, you will have the ``installer`` with the following content:
 
-.. oro_integrity_check:: 33c6caf87668281d138d3ee968bd615ff97889fb
+.. oro_integrity_check:: 6db6b35195c98b83244cdeaa69a06a05d593e354
 
-    .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Migrations/Schema/ACMECMSBundleInstaller.php
+    .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Migrations/Schema/AcmeCMSBundleInstaller.php
         :language: php
 
 
@@ -85,7 +85,7 @@ For more details on how to create a controller and navigation, see the following
 * :ref:`Entity controller <cookbook-entity-controller>`
 * :ref:`Navigation <doc-managing-app-menu>`
 
-.. oro_integrity_check:: 740441c2783feec3c23382a652118b7026fd1e42
+.. oro_integrity_check:: 21ba3205b9e81d319108264b296c5d095a314ea2
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Controller/BlockController.php
         :language: php
@@ -102,7 +102,7 @@ To manage the entity, we need to create a grid to display original and draft ent
 
 1. Create a grid for entities
 
-.. oro_integrity_check:: 5e8b4c3957cd572e7e83faabbb03c93415f1b070
+.. oro_integrity_check:: 3216c38a26940823a206b2dab9a94c5ae5be7866
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/datagrids.yml
         :language: php
@@ -129,7 +129,7 @@ Operations for the draft entities must be configured separately in ``action.yml`
 
 Follow the instructions provided in the :ref:`Work with Operations <bundle-docs-platform-action-bundle-operations>` topic.
 
-.. oro_integrity_check:: 4401fb14651162652e517d45aced91fbe9c8599b
+.. oro_integrity_check:: 4b839ccb2ec3673ff81e4849516938a5a77a15f9
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Resources/config/oro/actions.yml
         :language: php
@@ -144,7 +144,7 @@ Create a form type to handle the draft entity.
 
 Follow the instructions provided in the :ref:`The Form Type <cookbook-entity-form-type>` topic for more details.
 
-.. oro_integrity_check:: f3b1753fe15e852c4baa95f177def7be1a2ebbd3
+.. oro_integrity_check:: 18584cf7a86d66b721aa2e72c2efcb302151f400
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Form/Type/BlockType.php
         :language: php
@@ -166,7 +166,7 @@ Create a Filter
 
 ``Filter`` is a class that can modify the property value and be used in conjunction with ``Matcher``.
 
-.. oro_integrity_check:: 09bef5c13582568111d664616d4dc2e3b3a77d02
+.. oro_integrity_check:: 2fc54a3540d1c678237079e29d7e831eb173b815
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Filter/UniqueTitleFilter.php
         :language: php
@@ -177,7 +177,7 @@ Create a Matcher
 
 ``Matcher`` is a class that points to the field that ``Filter`` can work on. Matcher checks whether the specified field meets the criteria and applies the filter to this field.
 
-.. oro_integrity_check:: 8b45e8b9abde38dd19ff865a1054861b7b968f40
+.. oro_integrity_check:: fcd725204d0a8697a7cea602591e6e98e8867f30
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Matcher/BlockTitleMatcher.php
         :language: php
@@ -188,7 +188,7 @@ Create an Extension
 
 ``Extension`` is a class that combines the logic of ``Filter`` and ``Matcher``.
 
-.. oro_integrity_check:: 165b4537dbd1f1bd0da01e2a821e86f3e16f01a9
+.. oro_integrity_check:: 5fd37b0dbd79f44e3ce52fd35841d7110e7fd07c
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Duplicator/Extension/BlockTitleExtension.php
         :language: php

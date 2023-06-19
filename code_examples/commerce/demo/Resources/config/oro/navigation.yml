@@ -1,0 +1,169 @@
+navigation:
+    menu_config:
+        items:
+            acme_demo_priority_list:
+                label: acme.demo.priority.entity_plural_label
+                route: acme_demo_priority_index
+                extras:
+                    routes:
+                        - acme_demo_priority_index
+                        - acme_demo_priority_view
+                        - acme_demo_priority_create
+                        - acme_demo_priority_update
+            shortcut_acme_demo_priority_create:
+                label: acme.demo.shortcut.new_priority.label
+                route: acme_demo_priority_create
+            shortcut_acme_demo_priority_index:
+                label: acme.demo.shortcut.list_priorities.label
+                route: acme_demo_priority_index
+            acme_demo_document_list:
+                label: acme.demo.document.entity_plural_label
+                route: acme_demo_document_index
+                extras:
+                    routes:
+                        - acme_demo_document_index
+                        - acme_demo_document_view
+                        - acme_demo_document_create
+                        - acme_demo_document_update
+            shortcut_acme_demo_document_create:
+                label: acme.demo.shortcut.new_document.label
+                route: acme_demo_document_create
+            shortcut_acme_demo_document_index:
+                label: acme.demo.shortcut.list_documents.label
+                route: acme_demo_document_index
+            acme_demo_question_list:
+                label: acme.demo.question.entity_plural_label
+                route: acme_demo_question_index
+                extras:
+                    routes:
+                        - acme_demo_question_index
+                        - acme_demo_question_view
+                        - acme_demo_question_create
+                        - acme_demo_question_update
+            shortcut_acme_demo_question_create:
+                label: acme.demo.shortcut.new_question.label
+                route: acme_demo_question_create
+            shortcut_acme_demo_question_index:
+                label: acme.demo.shortcut.list_questions.label
+                route: acme_demo_question_index
+            acme_tab:
+                label: acme.organization_label
+                uri: '#'
+                extras:
+                    icon: fa-question
+            acme_demo_tab:
+                label: acme.demo.package_label
+                uri: '#'
+            acme_demo_questions_report:
+                label: acme.demo.question.entity_label
+                route: acme_demo_question_report
+                route_parameters:
+                    reportGroupName: questions
+                    reportName: question_report
+            acme_demo_favorite_list:
+                label: acme.demo.favorite.entity_plural_label
+                route: acme_demo_favorite_index
+                extras:
+                    routes:
+                        - acme_demo_favorite_index
+                        - acme_demo_priority_view
+            shortcut_acme_demo_favorite_index:
+                label: acme.demo.favorite.entity_plural_label
+                route: acme_demo_favorite_index
+            document_attributes_index:
+                label: acme.demo.menu.document_attributes
+                route: 'oro_attribute_index'
+                route_parameters:
+                    alias: 'document'
+                extras:
+                    routes: ['oro_attribute_*']
+            document_attribute_families:
+                label: acme.demo.menu.document_attribute_families
+                route: 'oro_attribute_family_index'
+                route_parameters:
+                    alias: 'document'
+                extras:
+                    routes: ['oro_attribute_family_*']
+            acme_demo_sms_list:
+                label: acme.demo.sms.entity_plural_label
+                route: acme_demo_sms_index
+                extras:
+                    routes:
+                        - acme_demo_sms_index
+                        - acme_demo_sms_view
+                        - acme_demo_sms_create
+                        - acme_demo_sms_update
+            shortcut_acme_demo_sms_create:
+                label: acme.demo.shortcut.new_sms.label
+                route: acme_demo_sms_create
+            shortcut_acme_demo_sms_index:
+                label: acme.demo.shortcut.list_sms.label
+                route: acme_demo_sms_index
+            acme_demo_doctrine_type_field_list:
+                label: acme.demo.doctrinetypefield.entity_plural_label
+                route: acme_demo_doctrine_type_field_index
+                extras:
+                    routes:
+                        - acme_demo_doctrine_type_field_index
+                        - acme_demo_doctrine_type_field_view
+                        - acme_demo_doctrine_type_field_create
+                        - acme_demo_doctrine_type_field_update
+            shortcut_acme_demo_doctrine_type_field_create:
+                label: acme.demo.shortcut.new_doctrine_type_field.label
+                route: acme_demo_doctrine_type_field_create
+            shortcut_acme_demo_doctrine_type_field_index:
+                label: acme.demo.shortcut.list_doctrine_type_fields.label
+                route: acme_demo_doctrine_type_field_index
+        tree:
+            application_menu:
+                children:
+                    acme_tab:
+                        children:
+                            acme_demo_tab:
+                                children:
+                                    acme_demo_priority_list: ~
+                                    acme_demo_document_list: ~
+                                    acme_demo_question_list: ~
+                                    acme_demo_favorite_list: ~
+                                    document_attributes_index: ~
+                                    document_attribute_families: ~
+                                    acme_demo_sms_list: ~
+                                    acme_demo_doctrine_type_field_list: ~
+                    reports_tab:
+                        children:
+                            acme_demo_questions_report: ~
+            shortcuts:
+                children:
+                    shortcut_acme_demo_priority_create: ~
+                    shortcut_acme_demo_priority_index: ~
+                    shortcut_acme_demo_document_create: ~
+                    shortcut_acme_demo_document_index: ~
+                    shortcut_acme_demo_question_create: ~
+                    shortcut_acme_demo_question_index: ~
+                    shortcut_acme_demo_favorite_index: ~
+                    shortcut_acme_demo_sms_create: ~
+                    shortcut_acme_demo_sms_index: ~
+                    shortcut_acme_demo_doctrine_type_field_create: ~
+                    shortcut_acme_demo_doctrine_type_field_index: ~
+    titles:
+        acme_demo_priority_index: ~
+        acme_demo_priority_create: oro.ui.create_entity
+        acme_demo_priority_view: '%title% - oro.ui.view'
+        acme_demo_priority_update: '%title% - oro.ui.edit'
+        acme_demo_document_index: ~
+        acme_demo_document_create: oro.ui.create_entity
+        acme_demo_document_view: '%title% - oro.ui.view'
+        acme_demo_document_update: '%title% - oro.ui.edit'
+        acme_demo_question_index: ~
+        acme_demo_question_create: oro.ui.create_entity
+        acme_demo_question_view: '%title% - oro.ui.view'
+        acme_demo_question_update: '%title% - oro.ui.edit'
+        acme_demo_favorite_index: ~
+        acme_demo_sms_index: ~
+        acme_demo_sms_create: oro.ui.create_entity
+        acme_demo_sms_view: '%title% - oro.ui.view'
+        acme_demo_sms_update: '%title% - oro.ui.edit'
+        acme_demo_doctrine_type_field_index: ~
+        acme_demo_doctrine_type_field_create: oro.ui.create_entity
+        acme_demo_doctrine_type_field_view: '%title% - oro.ui.view'
+        acme_demo_doctrine_type_field_update: '%title% - oro.ui.edit'

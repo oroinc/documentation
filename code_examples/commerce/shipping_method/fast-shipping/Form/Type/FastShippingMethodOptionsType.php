@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Form\Type;
+namespace Acme\Bundle\FastShippingBundle\Form\Type;
 
-use ACME\Bundle\FastShippingBundle\Method\FastShippingMethodType;
+use Acme\Bundle\FastShippingBundle\Method\FastShippingMethodType;
 use Oro\Bundle\CurrencyBundle\Rounding\RoundingServiceInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;

@@ -1,19 +1,19 @@
 @ticket-BB-17908
 @fixture-OroCMSBundle:AclDraftsUsers.yml
-Feature: ACME Block Drafts
+Feature: Acme Block Drafts
   To check the operation of the project
   As an administrator
   I need to create a draft and check base operations
 
-  Scenario: Create ACME Block
+  Scenario: Create Acme Block
     Given I login as administrator
-    When I go to ACME/ ACME Blocks
-    And I click "Create ACME Block"
-    And I fill "ACME Block Form" with:
+    When I go to Acme/ Acme Blocks
+    And I click "Create Acme Block"
+    And I fill "Acme Block Form" with:
       | Title   | Original title   |
       | Content | Original content |
     And I save and close form
-    Then I should see "ACME Block has been saved" flash message
+    Then I should see "Acme Block has been saved" flash message
 
   Scenario: Prepare draft
     When I click "Create draft"
@@ -24,14 +24,14 @@ Feature: ACME Block Drafts
       | cancelButton | Cancel                                                                                    |
     When I click "Yes" in confirmation dialogue
     Then I should see "Draft has been saved" flash message
-    When I fill "ACME Block Form" with:
+    When I fill "Acme Block Form" with:
       | Title   | Draft title   |
       | Content | Draft content |
     And I save and close form
-    Then I should see "ACME Block has been saved" flash message
+    Then I should see "Acme Block has been saved" flash message
 
   Scenario: Check draft grid actions
-    When I go to ACME/ ACME Blocks
+    When I go to Acme/ Acme Blocks
     And I click view "Original title" in grid
     Then I should see following grid:
       | Title       | Owner    |
@@ -47,18 +47,18 @@ Feature: ACME Block Drafts
     When I go to System/User Management/Roles
     And click edit "Administrator" in grid
     And select following permissions:
-      | ACME Block | Create Drafts:None | Delete All Drafts:None | Delete Own Drafts:None | Edit All Drafts:None | View All Drafts:None |
+      | Acme Block | Create Drafts:None | Delete All Drafts:None | Delete Own Drafts:None | Edit All Drafts:None | View All Drafts:None |
     And I save and close form
     Then should see "Role saved" flash message
 
   Scenario: Check permission
-    When I go to ACME/ ACME Blocks
+    When I go to Acme/ Acme Blocks
     And I click view "Original title" in grid
     Then I should not see "Create draft"
     And I should see following grid:
       | Title       | Owner    |
       | Draft title | John Doe |
-    And number of records in "ACME Block drafts Grid" should be 1
+    And number of records in "Acme Block drafts Grid" should be 1
     And I should see following actions for Draft title in grid:
       | View          |
       | Edit          |

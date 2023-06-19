@@ -1,6 +1,7 @@
+@documentation
 @behat-test-env
 @fixture-OroPaymentTermBundle:PaymentTermIntegration.yml
-@fixture-ACMEFastShippingBundle:Checkout.yml
+@fixture-AcmeFastShippingBundle:Checkout.yml
 Feature: Check FastShipping method
   In order to be able to use Fast Shipping shipping method
   As an administrator
@@ -32,7 +33,7 @@ Feature: Check FastShipping method
       | Sort Order | 1             |
       | Currency   | USD           |
       | Method     | Fast Shipping |
-    And fill "Fast Shipping Rule Form" with:
+    And fill "Fast Shipping Rule Doc Form" with:
       | With Present Enabled    | true |
       | With Present            | 15   |
       | Without Present Enabled | true |

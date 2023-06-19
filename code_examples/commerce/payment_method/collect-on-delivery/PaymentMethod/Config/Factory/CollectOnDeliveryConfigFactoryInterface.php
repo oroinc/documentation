@@ -1,9 +1,9 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Factory;
+namespace Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Factory;
 
-use ACME\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
 
 /**
  * Interface for Collect on delivery payment method config factory

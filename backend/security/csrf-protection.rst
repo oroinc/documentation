@@ -14,47 +14,22 @@ To protect controllers against CSRF, use AJAX `@CsrfProtection` annotation. You 
 
 **Controller level protection**
 
-.. code-block:: php
+.. oro_integrity_check:: 5685f88aa057c3bed3fc6714ffefd6f8aefb21e9
 
-    // ...
+    .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
+        :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
+        :language: php
+        :lines: 1-19, 42, 20-22, 101
 
-    use Oro\Bundle\SecurityBundle\Annotation\CsrfProtection;
-    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
-    /**
-     * @CsrfProtection
-     */
-    class AjaxController extends AbstractController
-    {
-        /**
-         * @Route("/ajax/change-stus/{statusName}", name="acme_ajax_change_status", methods={"POST"})
-         */
-        public function performAction($statusName)
-        {
-            // ...
-        }
-    }
 
 **Action level protection**
 
-.. code-block:: php
+.. oro_integrity_check:: a4bb9d3c221ea066e1c7ab7be4085160b98b2672
 
-    // ...
-
-    use Oro\Bundle\SecurityBundle\Annotation\CsrfProtection;
-    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
-    class AjaxController extends AbstractController
-    {
-        /**
-         * @Route("/ajax/change-stus/{statusName}", name="acme_ajax_change_status", methods={"POST"})
-         * @CsrfProtection
-         */
-        public function performAction($statusName)
-        {
-            // ...
-        }
-    }
+    .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
+        :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
+        :language: php
+        :lines: 1-4, 33-47, 101
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

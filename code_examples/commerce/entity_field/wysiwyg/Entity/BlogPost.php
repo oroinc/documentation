@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\WysiwygBundle\Entity;
+namespace Acme\Bundle\WysiwygBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareInterface;

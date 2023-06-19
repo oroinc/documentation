@@ -62,6 +62,35 @@ With `orocloud.yaml` it is possible to override the following nodes:
         upgrade_commands: # Application commands which run during update process
           - 'oro:platform:update'
 
+**pre_upgrade_commands, post_upgrade_commands, pre_maintenance_commands, post_maintenance_commands**
+
+Set up notifications using :ref:`Maintenance mode notifications <bundle-docs-platform-notification-bundle>` for :ref:`Upgrades <orocloud-maintenance-use-upgrade>` and :ref:`Maintenance Mode <dev-cookbook-system-websockets-maintenance-mode>`.
+
+.. code-block:: yaml
+
+    ---
+    orocloud_options:
+      deployment:
+        # Executed after `oro:platform:update` dry-run check.
+        # Executed before `oro:platform:update --force` or customized `upgrade_commands` commands.
+        pre_upgrade_commands: 
+          - 'oro:maintenance-notification --message=Deploy\ start --subject=At\ UAT'
+
+        # Executed after `oro:platform:update` dry-run check.
+        # Executed before `oro:platform:update --force` or customized `upgrade_commands` commands, `oro:maintenance:lock` or `lexik:maintenance:lock` commands.
+        # Works with Upgrade With Downtime using `orocloud-cli upgrade` only.
+        pre_maintenance_commands:
+          - 'oro:maintenance-notification --message=Maintenance\ start --subject=At\ UAT'
+
+        # Executed after `oro:platform:update --force` or customized `upgrade_commands` commands, `oro:maintenance:unlock` or `lexik:maintenance:unlock` commands.
+        # Works with Upgrade With Downtime using `orocloud-cli upgrade` only.
+        post_maintenance_commands:
+          - 'oro:maintenance-notification --message=Maintenance\ finish --subject=At\ UAT'
+
+        # Executed after `oro:platform:update --force` or customized `upgrade_commands` commands and services start.
+        post_upgrade_commands:
+          - 'oro:maintenance-notification --message=Deploy\ finish --subject=At\ UAT'
+
 **git clone configuration**
 
 .. code-block:: yaml
@@ -139,6 +168,7 @@ Some options may also be omitted as they are added automatically:
           - 'command1'
           - 'command2'
 
+.. _orocloud-maintenance-advanced-use-application-config:
 
 Application Configuration
 -------------------------
@@ -306,6 +336,8 @@ X Frame Header Configuration
 
 Some business cases require embedding the OroCloud site into the iFrame at other sites. You need to set the value to “false” : ``header_x_frame: false``.
 This prevents WAF from sending the “X-Frame-Options” header which allows embedding into any iFrame.
+
+.. _orocloud-maintenance-advanced-use-locations-config:
 
 Locations Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -653,6 +685,8 @@ Profiling Application Using NewRelic
 
 The ``newrelic_options`` configuration option allows you to configure NewRelic profiler (must be installed and configured per separate support request). Please, pay attention that the value of the license_key is provided as an example, and you need to use your actual license key there.
 
+.. _orocloud-maintenance-advanced-use-mail-settings:
+
 Mail Settings
 -------------
 
@@ -752,40 +786,6 @@ Please use the following conventions to design your `sanitize.update_*` strategy
   * `email` — Replaces the email with the sanitized version of the email. When the `sanitize.custom_email_domain` configuration parameter is provided in the `deployment.yml` or `orocloud.yaml` files, the email strategy replaces the real email domain with the custom one provided as `sanitize.custom_email_domain`. If the custom domain is not provided, the sanitized email will be generated randomly. For example, `example@example.com`.
   * `date` — Replaces the date values with the current date and time.
   * `attachment` — Replaces the attachment file content with a dummy blank image.
-
-Elasticsearch Synonyms Configuration
-------------------------------------
-
-.. note:: Please avoid simultaneous use of :ref:`search synonyms <bundle-docs-commerce-website-elasticsearch-bundle-synonyms>` and the method of adding synonyms described in this article, as this will lead to unpredictable behavior.
-
-To configure synonyms in Elasticsearch service, use the following field in orocloud.yaml:
-
-.. code-block:: none
-
-    orocloud_options:
-      elasticsearch:
-        synonyms:
-          'index_name1':
-            - 'foo, bar, baz'
-            - 'spam, eggs, meal'
-            - 'null, void'
-          'index_name2':
-            - 'Alice, Bob, Dave, John'
-
-You can use separate synonym lists for each index, or use '*' as index name in order to apply the same synonyms list to all indices.
-
-.. code-block:: none
-
-    orocloud_options:
-      elasticsearch:
-        synonyms:
-          '*':
-            - 'foo, bar, baz'
-            - 'spam, eggs, meal'
-            - 'null, void'
-            - 'Alice, Bob, Dave, John'
-
-.. note:: Please keep in mind that synonyms configuration will be not applied immediately. All changes made in orocloud.yaml require up to 40 minutes to apply. More details for synonyms usage may be found in |official Elasticsearch documentation|.
 
 Environments Data Synchronization
 ---------------------------------

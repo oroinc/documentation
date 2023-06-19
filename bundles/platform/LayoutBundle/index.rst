@@ -5,7 +5,7 @@
 OroLayoutBundle
 ===============
 
-OroLayoutBundle integrates the OroLayout Component into OroPlatform and enables layout themes definition and configuration which supports building layouts based on the configuration of other bundles.
+|OroLayoutBundle| integrates the OroLayout Component into OroPlatform and enables layout themes definition and configuration which supports building layouts based on the configuration of other bundles.
 
 Related Documentation
 ---------------------

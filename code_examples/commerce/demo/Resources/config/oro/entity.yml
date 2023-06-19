@@ -1,0 +1,5 @@
+oro_entity:
+  entity_aliases:
+    Acme\Bundle\DemoBundle\Entity\Document:
+      alias:        document
+      plural_alias: documents

@@ -1526,6 +1526,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/Shared/HandleMetaPropertyFilter.php" target="_blank">HandleMetaPropertyFilter</a>
 
+.. |ValidateMetaPropertyFilterSupported| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/Shared/ValidateMetaPropertyFilterSupported.php" target="_blank">ValidateMetaPropertyFilterSupported</a>
+
 .. |AddMetaProperties| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Processor/GetConfig/AddMetaProperties.php" target="_blank">AddMetaProperties</a>
@@ -1983,7 +1987,7 @@ Links (Dev)
 
 .. |Use OroDistributionBundle| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#usage" target="_blank">Use OroDistributionBundle</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle" target="_blank">Use OroDistributionBundle</a>
 
 .. |Autoload Bundle Routes| raw:: html
 
@@ -6071,6 +6075,250 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebsiteSearchBundle" target="_blank">OroWebsiteSearchBundle</a>
 
+.. |OroSalesBundle| raw:: html
+
+    <a href="https://github.com/oroinc/crm/tree/master/src/Oro/Bundle/SalesBundle" target="_blank">OroSalesBundle</a>
+
+.. |OroActivityContactBundle| raw:: html
+
+    <a href="https://github.com/oroinc/crm/tree/master/src/Oro/Bundle/ActivityContactBundle" target="_blank">OroActivityContactBundle</a>
+
+.. |OroAnalyticsBundle| raw:: html
+
+    <a href="https://github.com/oroinc/crm/tree/master/src/Oro/Bundle/AnalyticsBundle" target="_blank">OroAnalyticsBundle</a>
+
+.. |OroChannelBundle| raw:: html
+
+    <a href="https://github.com/oroinc/crm/tree/master/src/Oro/Bundle/ChannelBundle" target="_blank">OroChannelBundle</a>
+
+.. |OroInfinitePayBundle| raw:: html
+
+    <a href="https://github.com/oroinc/OroInfinitePayBundle" target="_blank">OroInfinitePayBundle</a>
+
+.. |OroMakerBundle| raw:: html
+
+    <a href="https://github.com/oroinc/maker" target="_blank">OroMakerBundle</a>
+
+.. |OroPayPalExpressBundle| raw:: html
+
+    <a href="https://github.com/oroinc/paypal-express" target="_blank">OroPayPalExpressBundle</a>
+
+.. |OroStripeBundle| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce-stripe" target="_blank">OroStripeBundle</a>
+
+.. |OroActionBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle" target="_blank">OroActionBundle</a>
+
+.. |OroActivityBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityBundle" target="_blank">OroActivityBundle</a>
+
+.. |OroActivityListBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle" target="_blank">OroActivityListBundle</a>
+
+.. |OroAddressBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle" target="_blank">OroAddressBundle</a>
+
+.. |OroApiBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle" target="_blank">OroApiBundle</a>
+
+.. |OroAssetBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AssetBundle" target="_blank">OroAssetBundle</a>
+
+.. |OroAttachmentBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle" target="_blank">OroAttachmentBundle</a>
+
+.. |OroCalendarBundle| raw:: html
+
+    <a href="https://github.com/oroinc/OroCalendarBundle" target="_blank">OroCalendarBundle</a>
+
+.. |OroChartBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ChartBundle" target="_blank">OroChartBundle</a>
+
+.. |OroCommentBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CommentBundle" target="_blank">OroCommentBundle</a>
+
+.. |OroCronBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CronBundle" target="_blank">OroCronBundle</a>
+
+.. |OroCurrencyBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CurrencyBundle" target="_blank">OroCurrencyBundle</a>
+
+.. |OroDashboardBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle" target="_blank">OroDashboardBundle</a>
+
+.. |OroDigitalAssetBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DigitalAssetBundle" target="_blank">OroDigitalAssetBundle</a>
+
+.. |OroDraftBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DraftBundle" target="_blank">OroDraftBundle</a>
+
+.. |OroEmailBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EmailBundle" target="_blank">OroEmailBundle</a>
+
+.. |OroEmbeddedFormBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle" target="_blank">OroEmbeddedFormBundle</a>
+
+.. |OroEntityConfigBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle" target="_blank">OroEntityConfigBundle</a>
+
+.. |OroEntityExtendBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle" target="_blank">OroEntityExtendBundle</a>
+
+.. |OroEntityMergeBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityMergeBundle" target="_blank">OroEntityMergeBundle</a>
+
+.. |OroEntityPaginationBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityPaginationBundle" target="_blank">OroEntityPaginationBundle</a>
+
+.. |OroEntitySerializedFieldsBundle| raw:: html
+
+    <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle" target="_blank">OroEntitySerializedFieldsBundle</a>
+
+.. |OroFeatureToggleBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FeatureToggleBundle" target="_blank">OroFeatureToggleBundle</a>
+
+.. |OroFilterBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FilterBundle" target="_blank">OroFilterBundle</a>
+
+.. |OroFormBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle" target="_blank">OroFormBundle</a>
+
+.. |OroGaufretteBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/GaufretteBundle" target="_blank">OroGaufretteBundle</a>
+
+.. |OroGridFSConfigBundle| raw:: html
+
+    <a href="https://github.com/oroinc/gridfs-config" target="_blank">OroGridFSConfigBundle</a>
+
+.. |OroImapBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImapBundle" target="_blank">OroImapBundle</a>
+
+.. |OroInstallerBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle" target="_blank">OroInstallerBundle</a>
+
+.. |OroLocaleBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle" target="_blank">OroLocaleBundle</a>
+
+.. |OroLoggerBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle" target="_blank">OroLoggerBundle</a>
+
+.. |OroMessageQueueBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MessageQueueBundle" target="_blank">OroMessageQueueBundle</a>
+
+.. |OroMicrosoftSyncBundle| raw:: html
+
+    <a href="https://github.com/oroinc/microsoft-sync" target="_blank">OroMicrosoftSyncBundle</a>
+
+.. |OroMigrationBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">OroMigrationBundle</a>
+
+.. |OroNotificationBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NotificationBundle" target="_blank">OroNotificationBundle</a>
+
+.. |OroOAuth2ServerBundle| raw:: html
+
+    <a href="https://github.com/oroinc/oauth2-server" target="_blank">OroOAuth2ServerBundle</a>
+
+.. |OroOrganizationBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/OrganizationBundle" target="_blank">OroOrganizationBundle</a>
+
+.. |OroQueryDesignerBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/QueryDesignerBundle" target="_blank">OroQueryDesignerBundle</a>
+
+.. |OroRedisConfigBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RedisConfigBundle" target="_blank">OroRedisConfigBundle</a>
+
+.. |OroReportBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ReportBundle" target="_blank">OroReportBundle</a>
+
+.. |OroScopeBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle" target="_blank">OroScopeBundle</a>
+
+.. |OroSearchBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle" target="_blank">OroSearchBundle</a>
+
+.. |OroSegmentBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SegmentBundle" target="_blank">OroSegmentBundle</a>
+
+.. |OroSidebarBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle" target="_blank">OroSidebarBundle</a>
+
+.. |OroTagBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TagBundle" target="_blank">OroTagBundle</a>
+
+.. |OroTestFrameworkBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TestFrameworkBundle" target="_blank">OroTestFrameworkBundle</a>
+
+.. |OroThemeBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ThemeBundle" target="_blank">OroThemeBundle</a>
+
+.. |OroTranslationBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle" target="_blank">OroTranslationBundle</a>
+
+.. |OroTwigInspector| raw:: html
+
+    <a href="https://github.com/oroinc/twig-inspector" target="_blank">OroTwigInspector</a>
+
+.. |OroWindowsBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WindowsBundle" target="_blank">OroWindowsBundle</a>
+
+.. |OroWorkflowBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WorkflowBundle" target="_blank">OroWorkflowBundle</a>
+
+.. |OroEntityBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle" target="_blank">OroEntityBundle</a>
+
+.. |OroCacheBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CacheBundle" target="_blank">OroCacheBundle</a>
+
 .. |OroShoppingListBundle| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ShoppingListBundle" target="_blank">ShoppingListBundle</a>
+    <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ShoppingListBundle" target="_blank">ShoppingListBundle</a>

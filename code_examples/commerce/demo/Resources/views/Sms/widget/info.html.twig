@@ -1,0 +1,23 @@
+{% import '@OroUI/macros.html.twig' as UI %}
+{% import '@OroActivity/macros.html.twig' as AC %}
+
+<div class="widget-content form-horizontal box-content row-fluid">
+    <div class="responsive-block">
+        {# Display contexts targets in the activity list item view #}
+        {% if renderContexts is defined and renderContexts %}
+            <div class="activity-context-activity-list">
+                {{ AC.activity_contexts(entity, target, true) }}
+            </div>
+        {% endif %}
+
+        {% set realFromContact = entity.fromContact %}
+
+        {{ UI.renderProperty('acme.demo.sms.sms_created_by'|trans, entity.getCreatedAt() | oro_format_datetime ) }}
+        {{ UI.renderProperty('acme.demo.sms.from_contact.label'|trans, realFromContact ) }}
+        {{ UI.renderProperty('acme.demo.sms.to_contact.label'|trans, entity.toContact ) }}
+    </div>
+    <div class="responsive-block">
+        <h5>{{'acme.demo.sms.message.label'| trans }}</h5>
+        <pre>{{ entity.message}}</pre>
+    </div>
+</div>

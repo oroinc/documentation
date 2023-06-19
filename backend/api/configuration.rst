@@ -218,13 +218,13 @@ The ``entities`` section describes the configuration of entities.
 
 *  **disable\_fieldset** *boolean* - Indicates whether one can request a restricted set of fields. In JSON:API, the |JSON:API: fields request parameter| is used to customize which fields to return. By default ``false``.
 
-*  **disable\_meta\_properties** *boolean* - The flag indicates whether requesting additional meta properties is disabled. By default ``false``.
+*  **disable\_meta\_properties** *string[]* or *boolean* - The names of additional meta properties a requesting of that are disabled or the flag that indicates whether requesting additional meta properties is disabled at all. By default ``false``.
 
 *  **disable\_partial\_load** *boolean* - The flag indicates whether using of |Doctrine partial objects| is disabled. By default ``false``. When using partial objects, the ``HINT_FORCE_PARTIAL_LOAD`` query hint is used together with them to avoid loading unneeded foreign keys.
 
 *  **hints** *array* - The |Doctrine query hints|. Each item can be a string or an array with ``name`` and ``value`` keys. The string value is a short form of ``[name: hint name]``.
 
-*  **inner\_join\_associations** *array* - A list of entity associations for which INNER JOIN should be used instead of LEFT JOIN. Use the ``dot`` notation to specify a path to a nested association, e.g., ``user.organization``. Each element in the path must be equal to the name of the existing property of an entity. This option can be used to optimize SQL query that is used to load data if some associations are mandatory and cannot be empty.
+*  **inner\_join\_associations** *string[]* - A list of entity associations for which INNER JOIN should be used instead of LEFT JOIN. Use the ``dot`` notation to specify a path to a nested association, e.g., ``user.organization``. Each element in the path must be equal to the name of the existing property of an entity. This option can be used to optimize SQL query that is used to load data if some associations are mandatory and cannot be empty.
 
 *  **identifier\_field\_names** *string[]* - The names of identifier fields of the entity. Use this option to override names set in a configuration file (for the API resource not based on the ORM entity) or retrieve from entity metadata (for ORM entities). This option is helpful when you do not want to use the primary key as an entity identifier in the API.
 
@@ -419,7 +419,7 @@ This section describes fields by which the result data can be filtered. It conta
    -  **collection** (boolean) - Indicates whether the filter represents a collection valued association. By default, ``false`` for filters by fields and *to-one* associations, and ``true`` for filters by *to-many* associations.
    -  **type** *string* - The filter type. By default, the filter type is equal to the **data\_type** property value.
    -  **options** *array* - The filter options.
-   -  **operators** *array* - A list of operators supported by the filter. By default, the list of operators depends on the filter type. For example a string filter supports **=** and **!=** operators, a number filter supports **=**, **!=**, **<**, **<=**, **>** and **>=** operators, etc. Use this parameter when you need to limit a list of supported operators.
+   -  **operators** *string[]* - A list of operators supported by the filter. By default, the list of operators depends on the filter type. For example a string filter supports **=** and **!=** operators, a number filter supports **=**, **!=**, **<**, **<=**, **>** and **>=** operators, etc. Use this parameter when you need to limit a list of supported operators.
 
 **Example:**
 
@@ -513,7 +513,7 @@ The ``actions`` configuration section enables you to specify action-specific opt
 
 *  **disable\_fieldset** *boolean* - The flag indicates whether requesting a restricted set of fields is disabled. In JSON:API, the |JSON:API: fields request parameter| can be used to customize which fields should be returned. By default ``false``.
 
-*  **disable\_meta\_properties** *boolean* - The flag indicates whether requesting additional meta properties is disabled. By default ``false``.
+*  **disable\_meta\_properties** *string[]* or *boolean* - The names of additional meta properties a requesting of that are disabled or the flag that indicates whether requesting additional meta properties is disabled at all. By default ``false``.
 
 *  **form\_type** *string* - The form type that should be used for the entity.
 

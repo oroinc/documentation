@@ -15,17 +15,17 @@ Create a Bundle
 
 First, create and enable the CollectOnDeliveryBundle bundle for your payment method as described in the :ref:`How to create a new bundle <how-to-create-new-bundle>` topic:
 
-1. In the /src/ACME/Bundle/CollectOnDeliveryBundle/ directory of your application, create class ACMECollectOnDeliveryBundle.php:
+1. In the /src/Acme/Bundle/CollectOnDeliveryBundle/ directory of your application, create class AcmeCollectOnDeliveryBundle.php:
 
-.. oro_integrity_check:: 5bfdbfa14e2c7e618ee83dadda54ca679b2bdd2f
+.. oro_integrity_check:: dc94f22b34299091d7cf4b8d32609ab8edef37f7
 
-   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/ACMECollectOnDeliveryBundle.php
+   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/AcmeCollectOnDeliveryBundle.php
        :language: php
 
 
 2. To enable the bundle, create Resources/config/oro/bundles.yml in the same directory, with the following content:
 
-.. oro_integrity_check:: a9388a277cefa62bf6bb745a93d13c1ba4b6ac89
+.. oro_integrity_check:: 82511b34e6e9d172964f913576e8bfe9ec490dd8
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/oro/bundles.yml
        :language: yaml
@@ -35,7 +35,7 @@ First, create and enable the CollectOnDeliveryBundle bundle for your payment met
 
 
 .. tip::
-   All the files and subdirectories mentioned in the following sections of this topic are to be added to the /src/ACME/Bundle/CollectOnDeliveryBundle/ directory of your application (referred to as **<bundle_root>**).
+   All the files and subdirectories mentioned in the following sections of this topic are to be added to the /src/Acme/Bundle/CollectOnDeliveryBundle/ directory of your application (referred to as **<bundle_root>**).
 
 Create a Payment Integration
 ----------------------------
@@ -45,7 +45,7 @@ Create an Entity to Store the Payment Method Settings
 
 Define an entity to store the configuration settings of the payment method in the database. To do this, create <bundle_root>/Entity/CollectOnDeliverySettings.php:
 
-.. oro_integrity_check:: 5b759e15f46f7218968a228e6cf572fdb794524f
+.. oro_integrity_check:: 880d42ab5e27a03e4b26861d35db91e25f6f4f5a
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Entity/CollectOnDeliverySettings.php
        :language: php
@@ -69,7 +69,7 @@ Create a Repository That Returns the Payment Method Settings
 
 The repository returns on request the configuration settings stored by the entity that you created in the previous step. To add the repository, create <bundle_root>/Entity/Repository/CollectOnDeliverySettingsRepository.php:
 
-.. oro_integrity_check:: b4c06eaa157f5b6915293e23e8d5bc986f8113e2
+.. oro_integrity_check:: 787efc2cd7ee15a312062e756dead80fe1616dd6
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Entity/Repository/CollectOnDeliverySettingsRepository.php
       :language: php
@@ -81,7 +81,7 @@ Create a User Interface Form for the Payment Method Integration
 
 When you add an integration via the user interface of the back-office, a form that contains the integration settings appears. In this step, implement the form. To do this, create <bundle_root>/Form/Type/CollectOnDeliverySettingsType.php:
 
-.. oro_integrity_check:: e07e171460cda237b2b6fddb24b745514c01c89b
+.. oro_integrity_check:: 35dfe7b6b71ba9f3769c75c2822c6905333f2583
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Form/Type/CollectOnDeliverySettingsType.php
       :language: php
@@ -98,9 +98,9 @@ Set up Services with DependencyInjection
 
 To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/CollectOnDeliveryExtension.php with the following content:
 
-.. oro_integrity_check:: 47fb4a3ecbd6c499fc126d070a8c9623e8553b9d
+.. oro_integrity_check:: 715fd7729c8bf9a67d0964301338b05c8edffb07
 
-   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/DependencyInjection/ACMECollectOnDeliveryExtension.php
+   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/DependencyInjection/AcmeCollectOnDeliveryExtension.php
       :language: php
 
 
@@ -123,7 +123,7 @@ Create the Integration Channel Type
 
 When you select the type of the integration on the user interface, you will see the name and the icon that you define in this step. To implement a channel type, create <bundle_root>/Integration/CollectOnDeliveryChannelType.php:
 
-.. oro_integrity_check:: 3c650bb3bb3f9119251e38199f7ae1a67e7aca61
+.. oro_integrity_check:: e9508bc51de6cc13c4e4e6553e41ddd27eccba2c
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Integration/CollectOnDeliveryChannelType.php
       :language: php
@@ -150,7 +150,7 @@ Create the Integration Transport
 
 A transport is generally responsible for how the data is obtained from the external system. While the Collect On Delivery method does not interact with external systems, you still need to define a transport and implement all methods of the TransportInterface for the integration to work properly. To add a transport, create <bundle_root>/Integration/CollectOnDeliveryTransport.php:
 
-.. oro_integrity_check:: 620736635a298f01a95a3bf2d9a314cc5e0f5a1c
+.. oro_integrity_check:: df71597905b6ba908430c12cb073f950a3d3be60
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Integration/CollectOnDeliveryTransport.php
       :language: php
@@ -162,7 +162,7 @@ Add the Channel Type and Transport to the Services Container
 
 To register the channel type and transport, append the following key-values to <bundle_root>/Resources/config/services.yml:
 
-.. oro_integrity_check:: 11317973bf62fff83b9dcb022736ef0b51fe6ec2
+.. oro_integrity_check:: 3dcc8ffbc42f9feb7c61fe143a81e3c9b36042fb
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
@@ -193,9 +193,9 @@ Follow the instructions provided in the :ref:`How to generate an installer <inst
 
  After you complete it, you will have the class <bundle_root>/Migrations/Schema/CollectOnDeliveryBundleInstaller.php with the following content:
 
-.. oro_integrity_check:: 16acc2bc4e6ddca5012ce3be42365e1f106b1674
+.. oro_integrity_check:: 0ee7753f59fdf53a8d30070c6ae6defed5cb66f4
 
-   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Migrations/Schema/ACMECollectOnDeliveryBundleInstaller.php
+   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Migrations/Schema/AcmeCollectOnDeliveryBundleInstaller.php
       :language: php
 
 Check That the Integration is Created Successfully
@@ -232,7 +232,7 @@ To add a payment method configuration factory, in the directory <bundle_root>/Pa
 Configuration Factory Interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 6af16a5db340c827ecca4d5f458703e863acba84
+.. oro_integrity_check:: 24b487efc69a53ed4104ce58f8b718cf5af2e317
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Factory/CollectOnDeliveryConfigFactoryInterface.php
       :language: php
@@ -240,7 +240,7 @@ Configuration Factory Interface
 Configuration Factory Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 67d77ca88f0c999bedf5cb2c46bb1667c12a916d
+.. oro_integrity_check:: 9f67c1e41556647b4b159ea5ad0765fb2375dbc7
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Factory/CollectOnDeliveryConfigFactory.php
       :language: php
@@ -256,7 +256,7 @@ To add a payment method configuration provider, in the directory <bundle_root>/P
 Configuration Provider Interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: a9f32bf9aadd1f1357dcb7d52e276bce85cd3fe4
+.. oro_integrity_check:: 4aef9b533bc1699390e02b1557ac8150f9613869
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Provider/CollectOnDeliveryConfigProviderInterface.php
       :language: php
@@ -264,7 +264,7 @@ Configuration Provider Interface
 Configuration Provider Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 8e856908d68443ab9949351deade1ce497fb5e85
+.. oro_integrity_check:: 4d7be2e8946e6d925205c0af656ae0961a61f6db
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/Provider/CollectOnDeliveryConfigProvider.php
       :language: php
@@ -277,7 +277,7 @@ In the <bundle_root>/PaymentMethod/Config directory, create the CollectOnDeliver
 Configuration Interface
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: a1b7ff82c732343b55b7165cca1d93a863178928
+.. oro_integrity_check:: f36dc4c1e0f15c7b074f21164ca2f17b6820d364
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/CollectOnDeliveryConfigInterface.php
       :language: php
@@ -285,7 +285,7 @@ Configuration Interface
 Configuration Class
 ~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: bd0aa5a4970d46a36d40fcddd648251879b0659c
+.. oro_integrity_check:: ee9c133a735cfc55580194734f8d7c8048b82922
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Config/CollectOnDeliveryConfig.php
       :language: php
@@ -295,7 +295,7 @@ Add the Payment Method Configuration Factory and Provider to the Services Contai
 
 To register the payment method configuration factory and provider, append the following key-values to <bundle_root>/Resources/config/services.yml:
 
-.. oro_integrity_check:: a22546d41515421337452208db88ece0fc8075d1
+.. oro_integrity_check:: 15d4cdc886e9f4e38264fc70497ae4bfe8672cff
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
@@ -311,7 +311,7 @@ To add a payment method view factory, in the directory <bundle_root>/PaymentMeth
 Payment Method View Factory Interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: a4dd15636be5316530f8e9ba387fb34b4e7203e4
+.. oro_integrity_check:: a7291fc2f423146c624c4bee3ef8d89b156b44f0
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Factory/CollectOnDeliveryViewFactoryInterface.php
       :language: php
@@ -319,7 +319,7 @@ Payment Method View Factory Interface
 Payment Method View Factory Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 3ad55614c75cb70f558c684ffdf3ddf4f230ec39
+.. oro_integrity_check:: 65a01f1214f91e9c055d0fe5b3a6b95bdb60f63f
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Factory/CollectOnDeliveryViewFactory.php
       :language: php
@@ -335,7 +335,7 @@ To add a payment method view provider, create <bundle_root>/PaymentMethod/View/P
 Payment Method View Provider Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 2cc7b1798e83e17e07f2613e1b1b3e6c0ff04045
+.. oro_integrity_check:: e74431f960a087340fdc983286847c8c3c2656e7
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/Provider/CollectOnDeliveryViewProvider.php
       :language: php
@@ -348,7 +348,7 @@ Finally, to implement the payment method view, create <bundle_root>/PaymentMetho
 Payment Method View Class
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 399d6ec2dd60ca618295e01b3a065e6b78589de4
+.. oro_integrity_check:: 508b6a87c2d0d7254d08c6a121ebec0de51fa306
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/View/CollectOnDeliveryView.php
       :language: php
@@ -358,7 +358,7 @@ Add the Payment Method View Factory and Provider to the Services Container
 
 To register the payment method view factory and provider, append the following key-values to <bundle_root>/Resources/config/services.yml:
 
-.. oro_integrity_check:: 631d7090e2b6e51c56e5360bb39d1ec2a618da34
+.. oro_integrity_check:: 5188b4a15cae43c3b2dcf4255e9582624bc89ac6
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
@@ -372,7 +372,7 @@ To add a payment method factory, in the directory <bundle_root>/PaymentMethod/Fa
 Factory Interface
 ~~~~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 7eba80dc430fb6c15dd3c0a06ad70166aafe8fb1
+.. oro_integrity_check:: 8a88232fe19970f817f7c1d0794b5947f7c0495f
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Factory/CollectOnDeliveryPaymentMethodFactoryInterface.php
       :language: php
@@ -380,7 +380,7 @@ Factory Interface
 Factory Class
 ~~~~~~~~~~~~~
 
-.. oro_integrity_check:: b52e9d91eea0f40b9acc713511e6ee9719fe0775
+.. oro_integrity_check:: a74dc197f93df490bb33fa78422f532f26cff812
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Factory/CollectOnDeliveryPaymentMethodFactory.php
       :language: php
@@ -393,7 +393,7 @@ To add a payment method provider, create <bundle_root>/PaymentMethod/Provider/Co
 Provider Class
 ~~~~~~~~~~~~~~
 
-.. oro_integrity_check:: 701f621ac837514bdb2e144abc8d46daddce4eb8
+.. oro_integrity_check:: 8ad66c0462337f36381c433763d18490910e1abe
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/Provider/CollectOnDeliveryMethodProvider.php
       :language: php
@@ -406,7 +406,7 @@ Now, implement the main method. To do this, create the <bundle_root>/PaymentMeth
 Class
 ~~~~~
 
-.. oro_integrity_check:: 30d6e4f46257eb1f02824cf6b3b04a13cae97e4d
+.. oro_integrity_check:: a1ddee3b146436211b4c3b8aed70a12b06bc4cdd
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/PaymentMethod/CollectOnDelivery.php
       :language: php
@@ -430,7 +430,7 @@ Add the Payment Method Factory and Provider to the Services Container
 
 To register the payment method main factory and provider, append the following key-values to <bundle_root>/Resources/config/services.yml:
 
-.. oro_integrity_check:: 57f6aeba3481bd3e03a76be36de4d5e67d017c8c
+.. oro_integrity_check:: 8ba39291fc1600cdf200e73b9e1263251982d9b0
 
   .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Resources/config/services.yml
      :language: yaml

@@ -6,397 +6,144 @@ Entity Activities
 Enable Activity Association Using Migrations
 --------------------------------------------
 
-Usually, an administrator provides a predefined set of associations between the activity entity and other entities. You can also create this association type using :ref:`migrations <backend-entities-migrations>`, if necessary.
+Usually, an administrator provides a predefined set of associations between the activity entity and other entities. If necessary, you can also create this association type using ref:`migrations <backend-entities-migrations>`.
 
 The following example illustrates how to do it:
 
-.. code-block:: php
+.. oro_integrity_check:: 15cccf00437467209b02914fb76185b4c1613e58
 
-    namespace Oro\Bundle\UserBundle\Migrations\Schema\v1_3;
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_10/AcmeDemoBundle.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_10/AcmeDemoBundle.php
+       :language: php
+       :lines: 3-36, 39-40
 
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-    use Oro\Bundle\ActivityBundle\Migration\Extension\ActivityExtension;
-    use Oro\Bundle\ActivityBundle\Migration\Extension\ActivityExtensionAwareInterface;
+.. _backend-entity-activities-add-widget-column:
 
-    class OroUserBundle implements Migration, ActivityExtensionAwareInterface
-    {
-        protected ActivityExtension $activityExtension;
-
-        /**
-         * {@inheritdoc}
-         */
-        public function setActivityExtension(ActivityExtension $activityExtension)
-        {
-            $this->activityExtension = $activityExtension;
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            self::addActivityAssociations($schema, $this->activityExtension);
-        }
-
-        /**
-         * Enables Email activity for User entity
-         *
-         * @param Schema            $schema
-         * @param ActivityExtension $activityExtension
-         */
-        public static function addActivityAssociations(Schema $schema, ActivityExtension $activityExtension)
-        {
-            $activityExtension->addActivityAssociation($schema, 'oro_email', 'oro_user', true);
-        }
-    }
-
-.. _backend-make-entity-activities:
-
-Make an Entity an Activity
---------------------------
-
-To create an activity from your new entity, you need to make the entity extended and include it in the `activity` group.
-
-To make the entity extended, implement the ExtendEntityInterface using the ExtendEntityTrait. The class must also implement |ActivityInterface|.
-
-Here is an example:
-
-.. code-block:: php
-
-    use Oro\Bundle\ActivityBundle\Model\ActivityInterface;
-    use Oro\Bundle\ActivityBundle\Model\ExtendActivity;
-    use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface;
-    use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait
-
-    class Email implements ActivityInterface, ExtendEntityInterface
-    {
-        use ExtendActivity;
-        use ExtendEntityTrait;
-    }
-
-
-Use this class as the superclass for your entity. To include the entity in the `activity` group, use the ORO entity configuration, for example:
-
-.. code-block:: php
-
-
-    /**
-     *  @Config(
-     *  defaultValues={
-     *      "grouping"={"groups"={"activity"}}
-     *  }
-     * )
-     */
-    class Email implements ActivityInterface, ExtendEntityInterface
-
-
-Your entity is now recognized as the activity entity. To make sure that the activity is displayed correctly, you need to configure its UI.
-
-.. _backend-make-entity-activities-working-with-activity-associations:
-
-Working with Activity Associations
-----------------------------------
-
-Activity associations are represented by
-:ref:`multiple many-to-many <book-entities-extended-entities-multi-target-associations-types>` associations.
-This is quite a complex type of associations, and to help work with activities, the |ActivityManager| class was created.
-
-This class provides the following functionality:
-
-* Check whether a specific type of entity has any activity associations.
-* Check whether a specific type of entity can be associated with a specific activity.
-* Get a list of entity types of all activity entities.
-* Get the list of fields responsible for storing activity associations for a specific type of activity entity.
-* Get a query builder that can be used for fetching a list of entities associated with a specific activity.
-* Get a list of fields responsible for storing activity associations for a specific type of entity.
-* Get a query builder that can be used to fetch a list of activity entities associated with a specific entity.
-* Get an array that contains info about all activity associations for a specific type of entity.
-* Get an array that contains info about all activity actions for a specific type of entity.
-* Add a filter by a specific entity to a query builder that is used to get a list of activities.
-* Associate an entity with an activity entity.
-* Remove an association between an entity and an activity entity.
-
-.. _backend-entity-activities-configure-ui:
-
-Configure UI for the Activity Entity
+Add a Widget to the Entity View Page
 ------------------------------------
 
-Before using the new activity entity within OroPlatform, you need to:
+OroActivityListBundle adds a widget to the entity view page. The widget displays a list of activities related to the entity record in chronological order. It also enables widget configuration in the system configuration section.
 
-* `Configure UI for Activity List Section`_
-* `Configure UI for an Activity Button`_
+You can add the following activities to other entities:
 
-Take a look at |all configuration options| for the activity scope before reading further.
+- Call
+- Task
+- Email
+- Calendar event
+- Notes
 
-Configure UI for Activity List Section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Visualization of the Activity list is defined as a widget block. It shows activities related to the entity record currently being viewed in a single list, with the ability to filter it by activity type (*multiselect*) and date (*daterange* filter).
 
-First, create a new action in your controller and a TWIG template responsible for rendering the list of your activities.
+Each activity row shows basic information: the activity type, who and when created and updated it. You can also access the full activity record with the help of the "expand" action. By default, it displays 10 records sorted by the Update date in descending order. You can change the limitation and sorting in the UI :ref:`via system configuration <bundle-docs-platform-activity-list-bundle-configuration>`.
 
-Keep in mind that:
+The widget is currently displayed in the *Activities* placeholder block on the view page of an entity.
 
-- The controller action must accept two parameters: `$entityClass` and `$entityId`.
-- The entity class name can be encoded to avoid routing collisions. That is why you need to use the `oro_entity.routing_helper` service to get the entity by its class name and id.
-- In the following example, the `activity-email-grid` datagrid is used to render the list of activities. This grid is defined in the *datagrids.yml* file:
+The following screenshot is an example of a widget on a contact page:
 
-.. code-block:: php
+.. image:: /img/bundles/ActivityListBundle/activities-widget-example.png
+   :alt: An example of a widget
 
-    /**
-     * This action is used to render the list of emails associated with the given entity
-     * on the view page of this entity
-     *
-     * @Route(
-     *      "/activity/view/{entityClass}/{entityId}",
-     *      name="oro_email_activity_view"
-     * )
-     *
-     * @AclAncestor("oro_email_email_view")
-     * @Template
-     */
-    public function activityAction($entityClass, $entityId)
+.. _backend-entity-activities-show-widget-on-specific-page:
+
+Show Widget and Its Button on a Specific Page
+---------------------------------------------
+
+Set entity annotation to show a widget and its button on specific pages.
+
+The widget can be displayed on the `view` and/or `update` pages. The list of allowed values is available in ``\Oro\Bundle\ActivityBundle\EntityConfig\ActivityScope``, for example:
+
+.. oro_integrity_check:: b3bb14d438cd767b89a604f8fa92f0dd0313f7f1
+
+   .. literalinclude:: /code_examples/commerce/demo/Entity/Priority.php
+       :caption: src/Acme/Bundle/DemoBundle/Entity/Priority.php
+       :language: php
+       :lines: 15, 27, 32, 58-64, 67-68, 72, 117
+
+The following screenshot is an example of a widget on a priority update page:
+
+.. image:: /img/bundles/ActivityListBundle/activities-widget-specific-page.png
+   :alt: An example showing a widget-specific page
+
+.. _bundle-docs-platform-activity-list-bundle-configuration:
+
+Change Sorting and Limitation in Configuration
+----------------------------------------------
+
+You can change sorting and limitation in the UI under **System > Configuration > Display Settings > Activity Lists**.
+
++---------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Option                    | Description                                                                                                        |
++===========================+====================================================================================================================+
+| Sort By Field             | Sorts activity records by the date when they were created or by the date when they were updated for the last time. |
++---------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Sort Direction            | Sorts records in the ascending or descending direction.                                                            |
++---------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Items Per Page By Default | Sets how many records appear on one page of the Activity section grids.                                            |
++---------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+.. image:: /img/bundles/ActivityListBundle/activity-lists-configuration.png
+   :alt: Activity list global configuration
+
+.. _bundle-docs-platform-activity-list-bundle-permissions:
+
+Configure Permissions
+---------------------
+
+Each activity entity must contain a provider (for example, *EmailActivityListProvider*) with the implemented *ActivityListProviderInterface* interface. The *ActivityList::getActivityOwners* method returns one or many ActivityOwner entities connected to their activity list entity.
+
+.. _bundle-docs-platform-activity-list-bundle-filter:
+
+Filter Activities in Segments
+-----------------------------
+
+ActivityListBundle extends OroSegmentBundle with the Activity filter type.
+
+This filter can be used to filter records if they:
+
+* have an activity with a value in the field (e.g., a Contact who has an activity "Email" where the subject of the email contains the text "Re:")
+* do not have an activity with a value in the field (e.g., Contact who does not have activity "Email" where the subject of the email contains text "Meeting")
+
+If you select only one activity type in the filter, you can filter based on any field of the activity.
+
+If you select more than one activity type in the filter, you can filter based on the fields "updatedAt" and "createdAt" of the selected activities.
+
+.. image:: /img/bundles/ActivityListBundle/activity-in-segment-filters.png
+   :alt: Activity widget in segment's filters
+
+.. _bundle-docs-platform-activity-list-bundle-inheritance:
+
+.. Need to test the example before publishing
+.. Add Inheritance of Activity Lists to the Target Entity
+.. ------------------------------------------------------
+
+.. You can add inheritance of activity lists to the target entity from some related inheritance target entities.
+.. It means that in target entities, you can see all activity list from the general entity and related entities.
+.. To enable this option, configure the target entity to identify all inheritance target entities: use migration extension to add all necessary configurations to the entity config.
+.. The following is an example of the migration to enable the display of contact activity lists in the appropriate account:
+
+.. .. code-block:: none
+.. class InheritanceActivityTargets implements Migration, ActivityListExtensionAwareInterface
     {
-        return [
-            'entity' => $this->get('oro_entity.routing_helper')->getEntity($entityClass, $entityId)
-        ];
+        /** @var ActivityListExtension */
+        protected $activityListExtension;
+        /** {@inheritdoc} */
+        public function setActivityListExtension(ActivityListExtension $activityListExtension)
+        {
+            $this->activityListExtension = $activityListExtension;
+        }
+        /** {@inheritdoc} */
+        public function up(Schema $schema, QueryBag $queries)
+        {
+            $activityListExtension->addInheritanceTargets($schema, 'orocrm_account', 'orocrm_contact', ['accounts']);
+        }
     }
 
+.. Method parameters:
+    .. * addInheritanceTargets(Schema $schema, $targetTableName, $inheritanceTableName, $path)
+    .. * string $targetTableName - Target entity table name
+    .. * string $inheritanceTableName - Inheritance entity table name
+    .. * string[] $path - Path of relations to target entity
 
-.. code-block:: twig
-
-
-    {% import '@OroDataGrid/macros.html.twig' as dataGrid %}
-
-    <div class="widget-content">
-        {{ dataGrid.renderGrid('activity-email-grid', {
-            entityClass: oro_class_name(entity, true),
-            entityId: entity.id
-        }) }}
-    </div>
-
-
-Now, you need to bind the controller to your activity entity. Use ORO entity configuration, for example:
-
-.. code-block:: php
-
-
-    /**
-     *  @Config(
-     *  defaultValues={
-     *      "grouping"={"groups"={"activity"}},
-     *      "activity"={
-     *          "route"="oro_email_activity_view",
-     *          "acl"="oro_email_email_view"
-     *      }
-     *  }
-     * )
-     */
-    class Email implements ActivityInterface, ExtendEntityInterface
-
-
-Please note that the example above contains the `route` attribute to specify the controller path and the `acl` attribute to set ACL restrictions.
-
-Configure UI for an Activity Button
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To add an activity button to the view page of the entity with the assigned activity:
-
-1. Create two TWIG templates responsible for rendering the button and the link in the dropdown menu. Please note that you should provide both templates because an action can be rendered either as a button or a link depending on the number of actions, UI theme, device (desktop/mobile), etc.
-
-Here is an example of TWIG templates:
-
-activityButton.html.twig
-
-.. code-block:: none
-
-
-    {{ UI.clientButton({
-        'dataUrl': path(
-            'oro_email_email_create', {
-                to: oro_get_email(entity),
-                entityClass: oro_class_name(entity, true),
-                entityId: entity.id
-        }) ,
-        'aCss': 'no-hash',
-        'iCss': 'fa-envelope',
-        'dataId': entity.id,
-        'label' : 'oro.email.send_email'|trans,
-        'widget' : {
-            'type' : 'dialog',
-            'multiple' : true,
-            'reload-grid-name' : 'activity-email-grid',
-            'options' : {
-                'alias': 'email-dialog',
-                'method': 'POST',
-                'dialogOptions' : {
-                    'title' : 'oro.email.send_email'|trans,
-                    'allowMaximize': true,
-                    'allowMinimize': true,
-                    'dblclick': 'maximize',
-                    'maximizedHeightDecreaseBy': 'minimize-bar',
-                    'width': 1000
-                }
-            }
-        }
-    }) }}
-
-
-activityLink.html.twig
-
-.. code-block:: none
-
-
-    {{ UI.clientLink({
-        'dataUrl': path(
-            'oro_email_email_create', {
-                to: oro_get_email(entity),
-                entityClass: oro_class_name(entity, true),
-                entityId: entity.id
-        }),
-        'aCss': 'no-hash',
-        'iCss': 'fa-envelope',
-        'dataId': entity.id,
-        'label' : 'oro.email.send_email'|trans,
-        'widget' : {
-            'type' : 'dialog',
-            'multiple' : true,
-            'reload-grid-name' : 'activity-email-grid',
-            'options' : {
-                'alias': 'email-dialog',
-                'method': 'POST',
-                'dialogOptions' : {
-                    'title' : 'oro.email.send_email'|trans,
-                    'allowMaximize': true,
-                    'allowMinimize': true,
-                    'dblclick': 'maximize',
-                    'maximizedHeightDecreaseBy': 'minimize-bar',
-                    'width': 1000
-                }
-            }
-        }
-    }) }}
-
-
-2. Register these templates in *placeholders.yml*, for example:
-
-.. code-block:: yaml
-
-
-    placeholders:
-    items:
-        oro_send_email_button:
-            template: '@@OroEmail/Email/activityButton.html.twig'
-            acl: oro_email_email_create
-        oro_send_email_link:
-            template: '@@OroEmail/Email/activityLink.html.twig'
-            acl: oro_email_email_create
-
-
-3. Bind the items declared in *placeholders.yml* to the activity entity using the `action_button_widget` and `action_link_widget` attributes.
-
- For example:
-
-.. code-block:: php
-
-
-    /**
-     *  @Config(
-     *  defaultValues={
-     *      "grouping"={"groups"={"activity"}},
-     *      "activity"={
-     *          "route"="oro_email_activity_view",
-     *          "acl"="oro_email_email_view",
-     *          "action_button_widget"="oro_send_email_button"
-     *          "action_link_widget"="oro_send_email_link"
-     *      }
-     *  }
-     * )
-     */
-    class Email implements ActivityInterface, ExtendEntityInterface
-
-.. _backend-entity-activities-configure-custom-grid:
-
-Configure Custom Grid for Activity Context Dialog
--------------------------------------------------
-
-If you want to define a context grid for an entity (e.g., User) in the activity context dialog, add the `context` option in the entity class `@Config` annotation, for example:
-
-.. code-block:: php
-
-
-    /**
-     * @Config(
-     *      defaultValues={
-     *          "grid"={
-     *              "default"="default-grid",
-     *              "context"="default-context-grid"
-     *          }
-     *     }
-     * )
-     */
-    class User implements ExtendEntityInterface
-
-
-This option is used to recognize the grid for the entity with a higher priority than the `default` option.
-If these options (`context` or `default`) are not defined for an entity, the grid does not appear in the context dialog.
-
-.. _backend-entity-activities-enable-context-column:
-
-Enable Contexts Column in Activity Entity Grids
------------------------------------------------
-
-For any activity entity grid, you can add a column that includes all context entities.
-
-Have a look at the following example of tasks configuration in *datagrids.yml*:
-
-.. code-block:: yaml
-
-    datagrids:
-        tasks-grid:
-            # extension configuration
-            options:
-                contexts:
-                    enabled: true          # default `false`
-                    column_name: contexts  # optional, column identifier, default is `contexts`
-                    entity_name: ~         # optional, set the FQCN of the grid base entity if auto detection fails
-
-
-This configuration creates a column named `contexts` and tries to detect the activity class name automatically. If, for some reason, it fails, you can specify an FQCN in the `entity_name` option.
-
-If you wish to configure the column, add a section with the name specified in the `column_name` option:
-
-.. code-block:: yaml
-
-    datagrids:
-        tasks-grid:
-            # column configuration
-            columns:
-                 contexts:                      # the column name defined in options
-                    label: oro.contexts.label   # optional, default `oro.activity.contexts.column.label`
-                    renderable: true            # optional, default `true`
-                    ...
-
-
-The column type is `twig` (unchangeable), so you can also specify `template`.
-
-The default one is |@OroActivity/Grid/Column/contexts.html.twig|.
-
-.. code-block:: twig
-
-    {% for item in value %}
-        {% spaceless %}
-            <span class="context-item">
-                <span class="{{ item.icon }}"></span>
-                {% if item.link %}
-                    <a href="{{ item.link }}" class="context-label">{{ item.title|trim }}</a>
-                {% else %}
-                    <span class="context-label">{{ item.title|trim }}</span>
-                {% endif %}
-            </span>
-        {% endspaceless %}
-        {{- not loop.last ? ', ' }}
-    {% endfor %}
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -3,7 +3,7 @@
 OroStripeBundle
 ===============
 
-OroStripeBundle provides Stripe payment service for card payments.
+|OroStripeBundle| provides Stripe payment service for card payments.
 
 Configuration
 -------------

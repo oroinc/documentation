@@ -35,117 +35,12 @@ Configuration
 
 All Workflow entities are described in the configuration. Below is an example of Workflow configuration that performs some action with `User` entity.
 
-.. code-block:: yaml
+.. oro_integrity_check:: 57ab879a97393017b71652ea6675d9536ef7e3d3
 
-
-    workflows:
-        example_user_flow:                            # name of the workflow
-            entity: Oro\Bundle\UserBundle\Entity\User # workflow related entity
-            entity_attribute: user                    # attribute name of current entity that can be used in configuration
-            start_step: started                       # step that will be assigned automatically to new entities
-            force_autostart: false                    # if `start_step` is defined: force start workflow on entity creation like from cli, message queue (without any filters like applications, scopes, features)
-            steps_display_ordered: true               # defines whether all steps will be shown on view page in steps widget
-            defaults:
-                active: true                          # active by default
-            exclusive_active_groups: [group_flow]     # active only single workflow for a specified groups
-            exclusive_record_groups:
-                - unique_run                          # only one started workflow for the `entity` from specified groups can exist at time
-            priority: 100                             # has priority of 100
-            applications: [ commerce ]                # web application availability level
-            scopes:
-                -                                     # definition of configuration for one scope
-                    scopeField1: 42                   # context for scope will have field `scopeField1` and entity with id `42`
-                -
-                    scopeField1: 42
-                    scopeField2: 3
-                    scopeField3: 77
-            steps:                                    # list of all existing steps in workflow
-                started:                              # step where user should enter firstname and lastname
-                    order: 10                         # order of step (ascending)
-                    allowed_transitions:              # list of allowed transition from this step
-                        - set_name                    # first name and last name should be entered on this transition
-                processed:                            # step where user can review entered data
-                    order: 20                         # steps will be shown in ascending
-                    allowed_transitions:              # order of step
-                       - add_email                    # new email should be added on this transition
-            attributes:                                           # list of all existing attributes in workflow
-                first_name:                                       # first name of a user
-                    property_path: user.firstName                 # path to entity property (automatically defined attribute metadata)
-                middle_name:                                      # middle name of a user
-                    property_path: user.middleName                # path to entity property (automatically defined attribute metadata)
-                last_name:                                        # last name of a user
-                    property_path: user.lastName                  # path to entity property (automatically defined attribute metadata)
-                email_string:                                     # email string temporary attribute
-                    type: string                                  # attribute type
-                email_entity:                                     # email entity temporary attribute
-                    type: entity                                  # attribute type
-                    options:                                      # attribute options
-                        class: Oro\Bundle\UserBundle\Entity\Email # entity class name
-
-            transitions:                                        # list of all existing transitions in workflow
-                set_name:                                       # transition from step "started" to "processed"
-                    step_to: processed                          # next step after transition performing
-                    transition_definition: set_name_definition  # link to definition of conditions and post actions
-                    form_options:                               # options which will be passed to form type of transition
-                        attribute_fields:                       # list of attribute fields which will be shown
-                            first_name:                         # attribute name
-                                options:                        # list of form field options
-                                    required: true              # define this field as required
-                                    constraints:                # list of constraints
-                                        - NotBlank: ~           # this field must be filled
-                            middle_name: ~                      # attribute name
-                            last_name:                          # attribute name
-                                options:                        # list of form field options
-                                    required: true              # define this field as required
-                                    constraints:                # list of constraints
-                                        - NotBlank: ~           # this field must be filled
-                    display_type: page                          # form will be opened in separate page
-                    destination_page: index                     # after submitting form will be opened index page of workflow`s related entity
-                add_email:                                      # transition from step "processed" to "processed" (self-transition)
-                    step_to: processed                          # next step after transition performing
-                    transition_definition: add_email_definition # link to definition of conditions and post actions
-                    form_options:                               # options which will be passed to form type of transition
-                        attribute_fields:                       # list of attribute fields which will be shown
-                            email_string:                       # attribute name
-                                options:                        # list of form field options
-                                    required: true              # define this field as required
-                                    constraints:                # list of constraints
-                                        - NotBlank: ~           # this field must be filled
-                                        - Email: ~              # field must contain valid email
-                schedule_transition:                                            # transition from step "processed" to "processed" (self-transition)
-                    step_to: processed                                          # next step after transition performing
-                    transition_definition: schedule_transition_definition       # link to definition of conditions and post actions
-                    triggers:                                                   # transition triggers
-                        -
-                            cron: '* * * * *'                                   # cron definition
-                            filter: "e.someStatus = 'OPEN'"                     # dql-filter
-                        -
-                            entity_class: Oro\Bundle\SaleBundle\Entity\Quote    # entity class
-                            event: update                                       # event type
-                            field: status                                       # updated field
-                            queued: false                                       # handle trigger not in queue
-                            relation: user                                      # relation to Workflow entity
-                            require: "entity.status = 'pending'"                # expression language condition
-            transition_definitions:                                   # list of all existing transition definitions
-                set_name_definition: []                               # definitions for transition "set_name", no extra conditions or actions here
-                add_email_definition:                                 # definition for transition "add_email"
-                    actions:                                          # list of action which will be performed after transition
-                        - '@create_entity':                           # create email entity
-                            class: Oro\Bundle\UserBundle\Entity\Email # entity class
-                            attribute: $email_entity                  # entity attribute that should store this entity
-                            data:                                     # data for creating entity
-                                email: $email_string                  # entered email
-                                user: $user                           # current user
-                        - '@call_method':                             # call specific method from entity class
-                            object: $user                             # object that should call method
-                            method: addEmail                          # method that should be called
-                            method_parameters:                        # parameters that will be passed to the called method
-                                [$email_entity]                       # add email from temporary attribute
-                        - '@unset_value':                             # unset temporary properties
-                                [$email_string, $email_entity]        # clear email string and entity
-                schedule_transition_definition:                       # definitions for transition "schedule_transition", no extra conditions or actions here
-                    actions:                                          # list of action which will be performed after transition
-                        - '@assign_value': [$user.status, 'processed']# change user's status
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/workflows.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/workflows.yml
+        :language: yaml
+        :lines: 1-101
 
 This configuration describes Workflow that includes two transitions - "set_name" and "add_email".
 
@@ -211,9 +106,9 @@ Workflow consists of several related entities.
 
 * **Workflow Item** is associated with the workflow and indirectly associated with Steps, Transitions and Attributes. It has its own state in the workflow data, the current step, and other data. The workflow item stores the entity identifier and the entity class that has an associated workflow.
 
-* **TransitionTriggerEvent** allows to perform a transition when during an entity event Doctrine triggers a corresponding event.
+* **TransitionEventTrigger** allows to perform a transition when during an entity event Doctrine triggers a corresponding event.
 
-* **TransitionTriggerCron** allows to perform a transition by cron definition.
+* **TransitionCronTrigger** allows to perform a transition by cron definition.
 
 
 .. include:: /include/include-links-dev.rst

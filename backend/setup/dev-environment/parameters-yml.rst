@@ -16,6 +16,7 @@ Infrastructure-related environment variable defaults are stored in the *.env-app
 * The ``ORO_ENTERPRISE_LICENCE`` value defines the project enterprise licence.
 * The ``ORO_JPEGOPTIM_BINARY`` path to the |JpegOptimPostProcessor| library.
 * The ``ORO_PNGQUANT_BINARY`` path to the |PngquantPostProcessor| library.
+* The ``ORO_MAINTENANCE_LOCK_FILE_PATH`` path to the maintenance lock file in the system.
 
 .. _book-installation-github-clone-configuration-params--default:
 
@@ -44,6 +45,7 @@ Default configuration options for the Oro application are defined in the ``confi
        liip_imagine.jpegoptim.binary: '%env(ORO_JPEGOPTIM_BINARY)%'
        liip_imagine.pngquant.binary: '%env(ORO_PNGQUANT_BINARY)%'
        tracking_data_folder: '%env(ORO_TRACKING_DATA_FOLDER)%'
+       maintenance_lock_file_path: '%env(resolve:ORO_MAINTENANCE_LOCK_FILE_PATH)%'
 
        env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
        env(ORO_DB_URL): 'postgresql://root@127.0.0.1/b2b_dev'
@@ -65,6 +67,7 @@ Default configuration options for the Oro application are defined in the ``confi
        env(ORO_REDIS_DOCTRINE_DSN): '%env(ORO_REDIS_URL)%/2'
        env(ORO_REDIS_LAYOUT_DSN): '%env(ORO_REDIS_URL)%/3'
        env(ORO_TRACKING_DATA_FOLDER): null
+       env(ORO_MAINTENANCE_LOCK_FILE_PATH): '%kernel.project_dir%/var/cache/maintenance_lock'
 
 Sample Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,0 +1,30 @@
+{% import '@OroUI/macros.html.twig' as UI %}
+
+{{ UI.clientButton({
+    'dataUrl': path(
+        'acme_demo_sms_create', {
+            entityClass: oro_class_name(entity, true),
+            entityId: entity.id
+        }),
+    'aCss': 'no-hash',
+    'iCss': 'fa-question',
+    'dataId': entity.id,
+    'label': 'acme.demo.sms.action.add'|trans,
+    'widget': {
+        'type': 'dialog',
+        'multiple': false,
+        'refresh-widget-alias': 'activity-list-widget',
+        'options': {
+            'alias': 'sms-dialog',
+            'dialogOptions': {
+                'title': 'acme.demo.sms.action.add'|trans,
+                'allowMaximize': true,
+                'allowMinimize': true,
+                'dblclick': 'maximize',
+                'maximizedHeightDecreaseBy': 'minimize-bar',
+                'width': 1000,
+                'minWidth': 'expanded'
+            }
+        }
+    }
+}) }}

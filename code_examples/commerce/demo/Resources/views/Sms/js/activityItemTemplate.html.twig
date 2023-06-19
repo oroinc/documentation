@@ -1,0 +1,65 @@
+{% extends '@OroActivityList/ActivityList/js/activityItemTemplate.html.twig' %}
+{% import '@OroActivity/macros.html.twig' as AC %}
+
+{% set entityClass = 'Acme\\Bundle\\DemoBundle\\Entity\\Sms' %}
+{% set entityName = oro_entity_config_value(entityClass, 'label')|trans %}
+
+{% block activityDetails %}
+    {{ entityName }}
+    <% var template = (verb == 'create')
+        ? {{ 'acme.demo.sms.sms_created_by'|trans|json_encode|raw }}
+        : {{ 'acme.demo.sms.sms_changed_by'|trans|json_encode|raw }};
+    %>
+    <%= _.template(template, { interpolate: /\{\{(.+?)\}\}/g })({
+        user: owner_url ? '<a class="user" href="' + owner_url + '">' +  _.escape(owner) + '</a>' :  '<span class="user">' + _.escape(owner) + '</span>',
+        date: '<i class="date">' + createdAt + '</i>',
+        editor: editor_url ? '<a class="user" href="' + editor_url + '">' +  _.escape(editor) + '</a>' : _.escape(editor),
+        editor_date: '<i class="date">' + updatedAt + '</i>'
+    }) %>
+{% endblock %}
+
+{% block activityActions %}
+    {% import '@OroActivity/macros.html.twig' as AC %}
+
+    {% set action %}
+        <% if (editable) { %>
+        {{ AC.activity_context_link() }}
+        <% } %>
+    {% endset %}
+    {% set actions = [action] %}
+
+    {% set action %}
+        <a href="<%- routing.generate('acme_demo_sms_view', {'id': relatedActivityId}) %>"
+           class="dropdown-item"
+           title="{{ 'acme.demo.sms.sms_view'|trans({'{{ entity }}': entityName}) }}"><span
+                    class="fa-eye hide-text" aria-hidden="true">{{ 'acme.demo.sms.sms_view'|trans({'{{ entity }}': entityName}) }}</span>
+            {{ 'acme.demo.sms.sms_view'|trans({'{{ entity }}': entityName}) }}
+        </a>
+    {% endset %}
+    {% set actions = actions|merge([action]) %}
+
+    {% set action %}
+        <% if (editable) { %>
+        <a href="#" class="dropdown-item action item-edit-button"
+           title="{{ 'acme.demo.sms.sms_update'|trans({'{{ entity }}': entityName}) }}"
+           data-action-extra-options="{{ {dialogOptions: {width: 1000}}|json_encode }}">
+            <span class="fa-pencil-square-o hide-text">{{ 'acme.demo.sms.sms_update'|trans({'{{ entity }}': entityName}) }}</span>
+            {{ 'acme.demo.sms.sms_update'|trans({'{{ entity }}': entityName}) }}
+        </a>
+        <% } %>
+    {% endset %}
+    {% set actions = actions|merge([action]) %}
+
+    {% set action %}
+        <% if (removable) { %>
+        <a href="#" class="dropdown-item action item-remove-button"
+           title="{{ 'acme.demo.sms.sms_delete'|trans({'{{ entity }}': entityName}) }}">
+            <span class="fa-trash-o hide-text" aria-hidden="true">{{ 'acme.demo.sms.sms_delete'|trans({'{{ entity }}': entityName}) }}</span>
+            {{ 'acme.demo.sms.sms_delete'|trans({'{{ entity }}': entityName}) }}
+        </a>
+        <% } %>
+    {% endset %}
+    {% set actions = actions|merge([action]) %}
+
+    {{ parent() }}
+{% endblock %}

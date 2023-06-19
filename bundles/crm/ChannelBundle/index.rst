@@ -3,7 +3,7 @@
 OroChannelBundle
 ================
 
-OroChannelBundle adds the Channel entity that represents the source of customer data into Oro applications and allows developers to define Channels types and specify the channel-related features in bundles YAML configuration files. It also provides UI for admin users to create and manage channels of the types defined by developers.
+|OroChannelBundle| adds the Channel entity that represents the source of customer data into Oro applications and allows developers to define Channels types and specify the channel-related features in bundles YAML configuration files. It also provides UI for admin users to create and manage channels of the types defined by developers.
 
 Entity Data Block
 -----------------
@@ -130,3 +130,6 @@ To display **Life time** on the page, use the `oro_channel_lifetime_value` twig 
 .. code-block:: twig
 
     Lifetime for {{ channel.name }}: {{ oro_channel_account_lifetime(account, channel)|oro_format_currency }}
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

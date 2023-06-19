@@ -5,7 +5,7 @@
 OroLoggerBundle
 ===============
 
-OroLoggerBundle extends the MonologBundle functionality and provides:
+|OroLoggerBundle| extends the MonologBundle functionality and provides:
 
 * Error logs email notifications
 * Ability to temporarily decrease log level

@@ -1,0 +1,120 @@
+oro_search:
+    engine_dsn: "orm:"
+    engine_parameters:
+        force_refresh: true
+        language_optimization: true
+        relevance_optimization: true
+        log_queries: false
+        #    item_container_template: '@My/Search/itemContainer.html.twig'
+        required_attributes: [ ]
+        required_plugins: [ ]
+        index:
+            body:
+                settings:
+                    "analysis":
+                        "char_filter":
+                            "cleanup_characters":
+                                "type": "mapping"
+                                "mappings":
+                                - "- => "
+                                - "— => "
+                                - "_ => "
+                                - ". => "
+                                - "/ => "
+                                - "\\\\ => "
+                                - ": => "
+                                - "! => "
+                                - "' => "
+                                - "` => "
+                                - "\" => "
+                        "filter":
+                            "substring":
+                                "type": "edge_ngram"
+                                "min_gram": "1"
+                                "max_gram": "100"
+                        "analyzer":
+                            "fulltext_search_analyzer":
+                                "filter":
+                                - "lowercase"
+                                - "unique"
+                                "char_filter":
+                                - "cleanup_characters"
+                                "tokenizer": "whitespace"
+                            "fulltext_index_analyzer":
+                                "filter":
+                                - "lowercase"
+                                - "substring"
+                                - "unique"
+                                "char_filter":
+                                - "html_strip"
+                                - "cleanup_characters"
+                                "tokenizer": "whitespace"
+
+oro_website_search:
+    engine_parameters:
+        language_optimization: true
+        remove_unused_fulltext: true
+        relevance_optimization: true
+        index:
+            body:
+                settings:
+                    "analysis":
+                        "char_filter":
+                            "cleanup_characters":
+                                "type": "mapping"
+                                "mappings":
+                                - "- => "
+                                - "— => "
+                                - "_ => "
+                                - ". => "
+                                - "/ => "
+                                - "\\\\ => "
+                                - ": => "
+                                - "; => "
+                                - "! => "
+                                - "' => "
+                                - "` => "
+                                - "\" => "
+                        "filter":
+                            "english_stop":
+                                "type": "stop"
+                                "stopwords": "_english_"
+                            "acme_stop":
+                                "type": "stop"
+                                "stopwords": [ sea, acme, acmes, ocean, grain, sel ]
+                            "substring":
+                                "type": "edge_ngram"
+                                "min_gram": "1"
+                                "max_gram": "100"
+                            "acme_synonym":
+                                "type": "synonym"
+                                "synonyms":
+                                - "jurassic acme => ancient" # real synonyms are dumped from DB
+                        "analyzer":
+                            "fulltext_search_analyzer":
+                                "filter":
+                                - "lowercase"
+                                - "acme_synonym"
+                                - "english_stop"
+                                - "acme_stop"
+                                - "unique"
+                                "char_filter":
+                                - "cleanup_characters"
+                                "tokenizer": "whitespace"
+                            "fulltext_index_analyzer":
+                                "filter":
+                                - "lowercase"
+                                - "acme_synonym"
+                                - "english_stop"
+                                - "acme_stop"
+                                - "substring"
+                                - "unique"
+                                "char_filter":
+                                    - "html_strip"
+                                    - "cleanup_characters"
+                                "tokenizer": "whitespace"
+            prefix: 'acme'
+
+oro_organization_pro:
+    ignore_preferred_organization_tokens:
+        - cme\Bundle\DemoBundle\Security\AcmeWsseToken

@@ -39,10 +39,10 @@ Make Entity Extended
       use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait;
 
       /**
-       * Document entity
+       * ORM Entity Document.
        *
        * @ORM\Entity()
-       * @ORM\Table(name="acme_document")
+       * @ORM\Table(name="acme_demo_document")
        * @Config()
        */
       class Document implements ExtendEntityInterface
@@ -52,37 +52,11 @@ Make Entity Extended
 
 #. Add new fields using a migration script:
 
-   .. code-block:: php
-      :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_3;
+.. oro_integrity_check:: ad35e3d8a8b994cc8d3bb633aeac6a568f5d0b7b
 
-      namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_3;
-
-      use Doctrine\DBAL\Schema\Schema;
-      use Oro\Bundle\EntityBundle\EntityConfig\DatagridScope;
-      use Oro\Bundle\MigrationBundle\Migration\Migration;
-      use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-      use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
-
-      class AddDocumentRatingColumn implements Migration
-      {
-
-          public function up(Schema $schema, QueryBag $queries)
-          {
-              $table = $schema->getTable('acme_document');
-              $table->addColumn(
-                  'document_rating',
-                  'string',
-                  ['oro_options' => [
-                      'extend' => [
-                          'is_extend' => true,
-                          'owner' => ExtendScope::OWNER_CUSTOM
-                      ],
-                      'entity' => ['label' => 'Hotel rating'],
-                      'datagrid' => ['is_visible' => DatagridScope::IS_VISIBLE_FALSE]
-                  ]]
-              );
-          }
-      }
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_1/AddDocumentRatingColumn.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_1/AddDocumentRatingColumn.php
+       :language: php
 
    The example above adds a new column ``document_rating``. The third parameter configures the column
    as an extended field. The ``ExtendScope::OWNER_CUSTOM`` owner in the ``oro_options`` key
@@ -133,33 +107,11 @@ As an illustration, we will use the User entity from a custom DemoBundle.
 To achieve this, add a new field ``partnerSince`` to store the date and time of when a contact joined your network.
 To add the field, create a migration:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_4/AddPartnerSinceToOroUser.php
+.. oro_integrity_check:: 08e7acbc1364c4ab62df9b4e6bc7b0f8686e37dc
 
-    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_4;
-
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-
-    class AddPartnerSinceToOroUser implements Migration
-    {
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $table = $schema->getTable('oro_user');
-            $table->addColumn('partner_since', 'datetime', [
-                'oro_options' => [
-                    'extend' => [
-                        'is_extend' => true,
-                        'owner' => ExtendScope::OWNER_CUSTOM,
-                        'nullable' => true,
-                        'on_delete' => 'SET NULL'
-                    ],
-                ],
-            ]);
-        }
-    }
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_2/AddPartnerSinceToOroUser.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_2/AddPartnerSinceToOroUser.php;
+       :language: php
 
 .. note::
    Please note that the entity that you add a new field to must have the ``@Config`` annotation

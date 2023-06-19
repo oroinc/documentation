@@ -31,6 +31,24 @@ There are two ways to pass the constraints:
 * use a compiler pass to add the 'addConstraints' call with the necessary constraint configuration
 * directly call the service
 
+For example:
+
+.. oro_integrity_check:: b20e4f00175c963b7b63e4b7f84352db8a16dbdd
+
+   .. literalinclude:: /code_examples/commerce/demo/DependencyInjection/Compiler/AcmeExtendValidationPass.php
+       :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/Compiler/AcmeExtendValidationPass.php
+       :language: php
+       :lines: 3-29
+
+Make sure to insert CompilerPass to the bundle root file.
+
+.. oro_integrity_check:: d258d55a419883f39277fdf5132a4a701fd66f17
+
+   .. literalinclude:: /code_examples/commerce/demo/AcmeDemoBundle.php
+       :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
+       :language: php
+       :lines: 4-5, 7, 9-20, 22, 28-29
+
 Keep in mind that all constraints defined here are applied to all extended fields with a corresponding type.
 
 

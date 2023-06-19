@@ -18,10 +18,10 @@ oro_behat_extension:
             locator: '//*[@name="acme_wysiwyg_blog_post[extraContent]"]'
             class: Oro\Bundle\CMSBundle\Tests\Behat\Element\WysiwygField
   suites:
-    ACMEWysiwygBundle:
+    AcmeWysiwygBundle:
       contexts:
         - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
         - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
         - Oro\Bundle\FormBundle\Tests\Behat\Context\FormContext
       paths:
-        - '@ACMEWysiwygBundle/Tests/Behat/Features'
+        - '@AcmeWysiwygBundle/Tests/Behat/Features'

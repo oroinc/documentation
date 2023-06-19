@@ -13,49 +13,33 @@ Suppose that pagination must be enabled for the User entity with an identifier c
 
 1. The datagrid must have an ``entity_pagination`` option in the configuration:
 
-.. code-block:: yaml
+.. oro_integrity_check:: 18eb9ca59e848c66a09bbd35013527781224cb3f
 
-    datagrids:
-        users-grid:
-            ...
-            options:
-                entity_pagination: true
-
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 298, 300-301
 
 2. The datagrid has an identifier column in the result:
 
-.. code-block:: yaml
+.. oro_integrity_check:: 2cb7694ed25ba284d07006d2e3b32d22752ecc39
 
-    datagrids:
-        users-grid:
-            ...
-            source:
-                ...
-                query:
-                    select:
-                        - u.id
-                        ...
-            properties:
-                id: ~
-
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 298, 209-215, 220-223
 
 3. The User view page route has an identifier column in route parameters:
 
-.. code-block:: php
+.. oro_integrity_check:: 9369d45d22b650abd28cf69ace894b96f0b06a39
 
-    class UserController extends Controller
-    {
-        /**
-         * @Route("/view/{id}", name="oro_user_view", requirements={"id"="\d+"})
-         * ...
-         */
-        public function viewAction(User $user)
-        {
-            ...
-        }
+   .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
+       :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
+       :language: php
+       :lines: 17, 20-23, 36-37, 45-51, 131
 
-        ...
-    }
+.. image:: /img/backend/entities/entity-pagination.png
+   :alt: Enable Entity Pagination
 
 .. _data-grids-entity-pagination-sys-config:
 

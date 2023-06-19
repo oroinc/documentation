@@ -93,10 +93,10 @@ As an example, the period ``Year``:
 
 .. code-block:: html
 
-    <ul class="buttonwrapper">
+    <div class="btn-group">
         ...
-        <li id="year"><label>{{ 'Orosellerdashboard.period.year'|trans }}</label></li>
-    </ul>
+        <button class="btn" data-period="year">{{ 'oro.seller_dashboard.period.year'|trans }}</button>
+    </div>
 
 * in ``AbstractChartDataProvider`` is used in methods ``getIntervalsForPeriod`` and ``getDateRanges``
 * in ``seller-dashboard-component.js`` is used to display currently selected period and appropriate label and to perform chart data request.

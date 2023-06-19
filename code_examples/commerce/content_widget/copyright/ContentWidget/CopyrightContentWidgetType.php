@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CopyrightBundle\ContentWidget;
+namespace Acme\Bundle\CopyrightBundle\ContentWidget;
 
-use ACME\Bundle\CopyrightBundle\Form\Type\CopyrightContentWidgetType as FormType;
+use Acme\Bundle\CopyrightBundle\Form\Type\CopyrightContentWidgetType as FormType;
 use Oro\Bundle\CMSBundle\ContentWidget\AbstractContentWidgetType;
 use Oro\Bundle\CMSBundle\Entity\ContentWidget;
 use Symfony\Component\Form\FormFactoryInterface;
@@ -36,7 +36,7 @@ class CopyrightContentWidgetType extends AbstractContentWidgetType
     protected function getAdditionalInformationBlock(ContentWidget $contentWidget, Environment $twig): string
     {
         return $twig->render(
-            '@ACMECopyright/CopyrightContentWidget/view.html.twig',
+            '@AcmeCopyright/CopyrightContentWidget/view.html.twig',
             ['settings' => $contentWidget->getSettings()]
         );
     }
@@ -54,7 +54,7 @@ class CopyrightContentWidgetType extends AbstractContentWidgetType
      */
     public function getDefaultTemplate(ContentWidget $contentWidget, Environment $twig): string
     {
-        return $twig->render('@ACMECopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings());
+        return $twig->render('@AcmeCopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings());
     }
 
     /**

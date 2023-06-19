@@ -5,7 +5,7 @@
 OroSegmentBundle
 ================
 
-OroSegmentBundle provides GUI for application users to create named sets of entity records called Segments. It also enables the application of existing segments as filtering conditions in query designers.
+|OroSegmentBundle| provides GUI for application users to create named sets of entity records called Segments. It also enables the application of existing segments as filtering conditions in query designers.
 
 Related Documentation
 ---------------------
@@ -14,3 +14,6 @@ Related Documentation
 * :ref:`Frontend Implementation <backend-segments-frontend-implementation>`
 * :ref:`Backend Implementation (Entities, Query Builder, Datagrid) <backend-segments-backend-implementation>`
 * :ref:`Use OroSegmentBundle (Example) <backend-segments-usage>`
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

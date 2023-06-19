@@ -5,7 +5,7 @@
 OroFeatureToggleBundle
 ======================
 
-OroFeatureToggleBundle provides the ability for the application users to enable or disable application features using the system configuration UI, and assists developers in managing the application flow, depending on the status of this feature.
+|OroFeatureToggleBundle| provides the ability for the application users to enable or disable application features using the system configuration UI, and assists developers in managing the application flow, depending on the status of this feature.
 
 Related Documentation
 ---------------------
@@ -19,3 +19,5 @@ Related Documentation
 * :ref:`Use Checker for Commands <feature-toggle-checker-for-commands>`
 
 
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

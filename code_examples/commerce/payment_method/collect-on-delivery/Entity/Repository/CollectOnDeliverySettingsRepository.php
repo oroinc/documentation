@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\Entity\Repository;
+namespace Acme\Bundle\CollectOnDeliveryBundle\Entity\Repository;
 
-use ACME\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
+use Acme\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
 use Doctrine\ORM\EntityRepository;
 
 /**

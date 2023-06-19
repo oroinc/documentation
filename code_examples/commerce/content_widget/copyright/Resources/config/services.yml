@@ -2,4 +2,4 @@ services:
     _defaults:
         autoconfigure: true
 
-    ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType: ~
+    Acme\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType: ~

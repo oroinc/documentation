@@ -1,0 +1,60 @@
+services:
+    Acme\Bundle\DemoBundle\Form\Type\PriorityCreateOrSelectType:
+        tags:
+            - { name: form.type, alias: acme_demo_priority_create_or_select_type }
+
+    Acme\Bundle\DemoBundle\Form\Type\DocumentCreateOrSelectType:
+        tags:
+            - { name: form.type, alias: acme_demo_document_create_or_select_type }
+
+    Acme\Bundle\DemoBundle\Form\Type\QuestionCreateOrSelectType:
+        tags:
+            - { name: form.type, alias: acme_demo_question_create_or_select_type }
+
+    Acme\Bundle\DemoBundle\Form\Type\PriorityType:
+        tags:
+            - { name: form.type, alias: acme_demo_priority_type }
+
+    Acme\Bundle\DemoBundle\Form\Type\DocumentType:
+        tags:
+            - { name: form.type, alias: acme_demo_document_type }
+
+    Acme\Bundle\DemoBundle\Form\Type\QuestionType:
+        tags:
+            - { name: form.type, alias: acme_demo_question_type }
+
+    acme.demo.form.autocomplete.priority.search_handler:
+        parent: oro_form.autocomplete.search_handler
+        arguments:
+            - 'Acme\Bundle\DemoBundle\Entity\Priority'
+            - ['label']
+        tags:
+            - { name: oro_form.autocomplete.search_handler, alias: acme_demo_priority, acl_resource: acme_demo_priority_view }
+
+    acme.demo.form.autocomplete.document.search_handler:
+        parent: oro_form.autocomplete.search_handler
+        arguments:
+            - 'Acme\Bundle\DemoBundle\Entity\Document'
+            - ['subject']
+        tags:
+            - { name: oro_form.autocomplete.search_handler, alias: acme_demo_document, acl_resource: acme_demo_document_view }
+
+    acme.demo.form.autocomplete.question.search_handler:
+        parent: oro_form.autocomplete.search_handler
+        arguments:
+            - 'Acme\Bundle\DemoBundle\Entity\Question'
+            - ['subject']
+        tags:
+            - { name: oro_form.autocomplete.search_handler, alias: acme_demo_question, acl_resource: acme_demo_question_view }
+
+    Acme\Bundle\DemoBundle\Form\Type\SmsType:
+        tags:
+            - { name: form.type, alias: acme_demo_sms_type }
+
+    Acme\Bundle\DemoBundle\Form\Type\DoctrineTypeFieldCreateOrSelectType:
+        tags:
+            - { name: form.type, alias: acme_demo_doctrine_type_field_create_or_select_type }
+
+    Acme\Bundle\DemoBundle\Form\Type\DoctrineTypeFieldType:
+        tags:
+            - { name: form.type, alias: acme_demo_doctrine_type_field_type }
