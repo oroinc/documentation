@@ -20,6 +20,8 @@ Related Documentation
    :maxdepth: 1
    :titlesonly:
 
+   getting-product-price
+   getting-product-line-item-price
    price-list-sharding
    optimize-index-and-price-calculation
    combined-price-lists

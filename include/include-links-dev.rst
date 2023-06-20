@@ -6319,3 +6319,6 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CacheBundle" target="_blank">OroCacheBundle</a>
 
+.. |OroShoppingListBundle| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ShoppingListBundle" target="_blank">ShoppingListBundle</a>
