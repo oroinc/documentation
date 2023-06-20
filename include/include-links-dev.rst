@@ -6139,3 +6139,6 @@ Links (Dev)
 
     <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md" target="_blank">Inspect with Built-in Dev Tools in a Browser</a>
 
+.. |OroShoppingListBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/5.1/src/Oro/Bundle/ShoppingListBundle" target="_blank">ShoppingListBundle</a>

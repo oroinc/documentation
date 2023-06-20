@@ -1,3 +1,5 @@
+.. _bundle-docs-commerce-pricing-bundle-price-storage:
+
 Price Storage
 =============
 
