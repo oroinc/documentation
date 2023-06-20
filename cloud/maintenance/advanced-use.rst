@@ -22,7 +22,7 @@ The `validation` command checks your configuration for syntax errors or wrong co
 
     orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml /mnt/ocom/app/www/orocloud_prod.yaml
 
-Valid changes are applied within 40 minutes or automatically during deployments.
+Valid changes are applied within 10 minutes or automatically during deployments.
 
 Use the `help` command to get configuration details or configuration reference:
 
@@ -203,7 +203,7 @@ Custom maintenance pages, error pages (403, 451, 501, 502), error pages path, we
         consumers_debug_mode: true
 
 
-The ``maintenance_page``, ``error_pages_path`` and ``error_pages`` are relative paths to files in the application repository. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 40 minutes.
+The ``maintenance_page``, ``error_pages_path`` and ``error_pages`` are relative paths to files in the application repository. When modified, changes are applied after the `deploy` or `upgrade` operation in approximately 10 minutes.
 
 .. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to the Service Desk before making any changes. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``upgrade:source`` to apply changes.
 

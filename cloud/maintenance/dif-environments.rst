@@ -7,6 +7,8 @@ A typical OroCloud project has at least 2 environments: “prod” and “stage�
 Sometimes, a specific application configuration should be applied in one environment, but not in the other.
 For example, assuming HTTP Basic Auth should be enabled only for the application in the stage environment. Below you can find three possible approaches to cover this case.
 
+.. _orocloud-diff-environments-environment-type-approach:
+
 Environment Type Approach
 -------------------------
 
@@ -48,8 +50,10 @@ and basic auth enabled in `dev` environment only using `orocloud_dev.yaml`:
                      ensure: present
                      password: pass
 
-Git Branches Approach
----------------------
+[Deprecated] Git Branches Approach
+----------------------------------
+
+.. important:: Migrate to Environment Type Approach, because of :ref:`Application Packages <orocloud-maintenance-use-upgrade>` feature conflicts.
 
 One of the solutions is to create different Git branches for different environments, taking the following steps:
 
@@ -78,8 +82,10 @@ One of the solutions is to create different Git branches for different environme
 
    This approach has some extra costs to maintain the additional branches in your repository. It is not always convenient if you prefer to use different tags for every new release.
 
-Composer Script Approach
-------------------------
+[Deprecated] Composer Script Approach
+-------------------------------------
+
+.. important:: Migrate to Environment Type Approach, because of :ref:`Application Packages <orocloud-maintenance-use-upgrade>` feature conflicts.
 
 You can solve this problem without adding new branches in the repository.
 

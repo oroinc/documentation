@@ -29,7 +29,7 @@ The `validation` command checks your configuration for syntax errors or wrong co
 
     orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml /mnt/ocom/app/www/orocloud_prod.yaml
 
-Valid changes are applied within 40 minutes or automatically during deployments.
+Valid changes are applied within 10 minutes or automatically during deployments.
 
 Use  the `help` command to get configuration details or configuration reference:
 
@@ -149,6 +149,101 @@ To deploy an Oro application in the OroCloud environment with default installati
 .. note:: If the application is already deployed, the command execution is restricted. Please contact the OroCloud or Oro Support team in case a full re-deploy from scratch is required.
 
 .. _orocloud-maintenance-use-upgrade:
+
+[New] Application Packages
+--------------------------
+
+You can use prebuilt application packages to upgrade Oro applications in OroCloud.
+Prebuilt application packages are shared between different environment types (dev, stag, uat, prod) of a single project.
+
+.. important:: Migrate to :ref:`Environment Type Approach <orocloud-diff-environments-environment-type-approach>`, other approaches are not supported by Application Packages feature.
+
+The following commands are available for Oro applications of versions 5.0 and above:
+
+.. code-block:: bash
+
+    app
+      app:package:build          Build application package for deployment.
+      app:package:deploy         Deploy prebuilt application package.
+      app:package:list           List application packages available for deployment .
+      app:package:upgrade        Build and deploy application package.
+
+Using prebuilt application packages speeds up the upgrade of applications (vanilla OroCommerce 5.1 LTS, exncluding custom migrations):
+
+* `orocloud-cli upgrade --reference=[git reference]` takes 1300 seconds with 800 seconds of maintenance mode.
+* `orocloud-cli app:package:upgrade [git reference]` takes 750 seconds with 230 seconds of maintenance mode.
+* `orocloud-cli app:package:deploy [package]` takes 400 seconds with 230 seconds of maintenance mode using bre-build package from the step above.
+
+To create an application package, run the `orocloud-cli app:package:build [git reference]` command:
+
+.. code-block:: bash
+
+    Application package harborio.oro.cloud/ocom-proj-dev1-reg1/orocommerce:5_1_0 is ready.
+
+Prebuilt application packages contain vendor packages, assets and other files and folders required for application runtime.
+
+To list available application packages, run the `orocloud-cli app:package:list` command:
+
+.. code-block:: bash
+
+    [user@ocom-proj-prod1-maint1 ~]$ orocloud-cli app:package:list
+    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+-------+
+    | Created At          | Environment              | Package                                                                                       | Label |
+    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+-------+
+    | 2023-03-21 20:37:28 | ocom-proj-uat1-reg1      | harborio.oro.cloud/ocom-proj-uat1-reg1/orocommerce:5_0_9                                      |       |
+    | 2023-01-18 22:12:56 | ocom-proj-dev1-reg1      | harborio.oro.cloud/ocom-proj-dev1-reg1/orocommerce:5_0_8                                      |       |
+    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+-------+
+
+To install an application packages, run the `orocloud-cli app:package:deploy [package] [--rolling] [--source]` command:
+
+* `orocloud-cli app:package:deploy [package]` equal to `orocloud-cli upgrade`.
+* `orocloud-cli app:package:deploy --rolling [package]` equal to `orocloud-cli upgrade:rolling`.
+* `orocloud-cli app:package:deploy --source [package]` `orocloud-cli upgrade:source`.
+
+To create and install an application packages at the same time, run the `orocloud-cli app:package:upgrade [git reference] [--rolling] [--source]` command:
+
+* `orocloud-cli app:package:upgrade [git reference]` equal to `orocloud-cli upgrade`.
+* `orocloud-cli app:package:upgrade --rolling [git reference]` equal to `orocloud-cli upgrade:rolling`.
+* `orocloud-cli app:package:upgrade --source [git reference]` `orocloud-cli upgrade:source`.
+
+
+Examples:
+
+
+.. code-block:: bash
+
+    # at ocom-proj-stag1
+
+    $ orocloud-cli app:package:build 5.1.0 --label=GA\ Release
+
+    $ orocloud-cli app:package:list
+    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+------------+
+    | Created At          | Environment              | Package                                                                                       | Label      |
+    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+------------+
+    | 2023-03-21 20:37:28 | ocom-proj-stag1-reg1     | harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0                                     | GA Release |
+
+    $ orocloud-cli app:package:deploy --rolling harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0
+
+    # later at ocom-proj-prod1
+
+    $ orocloud-cli app:package:deploy --rolling harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0
+
+
+.. code-block:: bash
+
+    # at ocom-proj-stag1
+
+    $ orocloud-cli app:package:upgrade --rolling 5.1.0 --label=GA\ Release
+
+    $ orocloud-cli app:package:list
+    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+------------+
+    | Created At          | Environment              | Package                                                                                       | Label      |
+    +---------------------+--------------------------+-----------------------------------------------------------------------------------------------+------------+
+    | 2023-03-21 20:37:28 | ocom-proj-stag1-reg1     | harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0                                     | GA Release |
+
+    # later at ocom-proj-prod1
+
+    $ orocloud-cli app:package:deploy --rolling harborio.oro.cloud/ocom-proj-stag1-reg1/orocommerce:5_1_0
 
 Upgrade
 -------
@@ -480,7 +575,7 @@ Application Commands
 Custom Commands
 ~~~~~~~~~~~~~~~
 
-Run application commands via `app:console`, for example:
+Run application commands via `orocloud-cli app:console`, for example:
 
 .. code-block:: none
 
@@ -496,10 +591,10 @@ If a command contains quotes and is wrapped in the same quotes type, the inner q
 
 .. code-block:: none
 
-    orocloud-cli app:console "oro:user:list --roles=\"Sales Manager\""
+    orocloud-cli app:console "oro:user:list --roles=Sales\ Manager"
 
 
-By default, the `app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g., to monitor command execution in real-time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
+By default, the `orocloud-cli app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g., to monitor command execution in real-time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
 
 .. code-block:: none
 
@@ -511,7 +606,7 @@ Schema Update
 
 .. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
 
-Sometimes you may require to perform schema update operations. To do this, use the `app:schema:update` command:
+Sometimes you may require to perform schema update operations. To do this, use the `orocloud-cli app:schema:update` command:
 
 .. code-block:: none
 
