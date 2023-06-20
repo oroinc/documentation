@@ -195,6 +195,7 @@ CRM Bundles
    RedirectBundle <commerce/RedirectBundle/index>
    SellerDashboardBundle <commerce/SellerDashboardBundle/index>
    SEOBundle <commerce/SEOBundle/index>
+   ShoppingListBundle <commerce/ShoppingListBundle/index>
    TaxBundle <commerce/TaxBundle/index>
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
