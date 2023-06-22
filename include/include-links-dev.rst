@@ -2631,7 +2631,15 @@ Links (Dev)
 
 .. |5.1 branch| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">5.1 branch</a>
+   <a href="https://github.com/oroinc/orocommerce-application/tree/5.1" target="_blank">5.1 branch</a>
+
+.. |5.2 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/5.2" target="_blank">5.2 branch</a>
+
+.. |6.0 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">6.0 branch</a>
 
 .. |OroPackagist| raw:: html
 
