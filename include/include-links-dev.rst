@@ -2866,6 +2866,15 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/MigrationBundle#create-own-extensions-for-database-structure-migrations" target="_blank">Create an Extensions for Database Structure Migrations</a>
 
+
+.. |5.2 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/5.2" target="_blank">5.2 branch</a>
+
+.. |6.0 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">6.0 branch</a>
+
 .. |Use Data Fixtures| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/MigrationBundle#data-fixtures" target="_blank">Use Data Fixtures</a>
