@@ -708,16 +708,17 @@ The ``subresources`` configuration section enables you to provide options for su
                         target_type: collection
                         actions:
                             get_subresource:
-                                description: Get entities that might be associated with the email
+                                description: Retrieve entities that might be associated with the email
                             get_relationship: false
                             update_relationship: false
                             add_relationship: false
                             delete_relationship: false
                         filters:
                             fields:
-                                exclude-current-user:
-                                    description: Indicates whether the current user should be excluded from the result.
-                                    data_type: boolean
+                                searchText:
+                                    data_type: string
+                                    operators: [ '=' ]
+                                    property_path: _
 
 
 
