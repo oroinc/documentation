@@ -23,7 +23,7 @@ The application setup guides provide the details on how to configure the environ
    system-requirements/index
    Development Environment <dev-environment/index>
    demo-environment/index
-   Jenkins CI/CD <jenkins-ci-cd>
+   Jenkins CI <jenkins>
    get-source-files
    installation
    installation-in-sub-folder

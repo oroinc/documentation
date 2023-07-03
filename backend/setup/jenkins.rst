@@ -1,11 +1,11 @@
 .. _dev-guide-continuous-integration:
 
-Jenkins CI/CD (Jenkins Continuous Integration / Continuous Deployment)
-======================================================================
+Jenkins CI (Continuous Integration)
+===================================
 
 Jenkins is a widely used open-source automation server that provides a robust platform for continuous integration and continuous delivery (CI/CD) processes. It offers a flexible and extensible architecture, allowing developers to automate various tasks and streamline their software development workflows. To further enhance the accessibility and ease of deploying Jenkins, Oro offers a tool that allows users to build Jenkins locally using Docker Compose and Jenkins Configuration as Code in order to work with Oro products.
 
-With this new capability, you can run Jenkins CI in a container, enabling quick and easy deployment of ORO's CI/CD environment. Whether you want to test your applications locally or use them as a reference to deploy Jenkins on your servers, this approach simplifies the setup process and ensures consistency across different environments.
+With this new capability, you can run Jenkins CI in a container, enabling quick and easy deployment of Oro's CI/CD environment. Whether you want to test your applications locally or use them as a reference to deploy Jenkins on your servers, this approach simplifies the setup process and ensures consistency across different environments.
 
 To get started, you must install Docker and the Docker Compose plugin. While you can use any operating system with Docker support, we recommend using a Linux-based OS for optimal performance and compatibility.
 
@@ -81,9 +81,9 @@ Out of the box, we provide two default jobs to exemplify the functionality of Je
 
 * **Oro Commerce Application**: This job demonstrates a more comprehensive pipeline by executing a Jenkinsfile from the repository located at ``https://github.com/oroinc/orocommerce-application.git``. The job clones the repository's 5.1.0 tag, builds the application, creates runtime, test, init, and init-test images, and performs code style and unit tests. The Jenkinsfile also provides an example of running functional and behat tests (commented out). You can explore this job at ``http://localhost:8080/job/orocommerce-application``.
 
-.. note:: Docker service is used on the host where Jenkins is deployed, i.e. Jenkins has the capability to manage Docker on the host machine. As a result of Jenkins' operations, Docker images are uploaded to the host and instances are created directly on the host. To view the Docker instances created by Jenkins, run ``docker ps -a``. To view the Docker images, run ``docker image ls``.
+.. note:: Docker service is used on the host where Jenkins is deployed, i.e., Jenkins has the capability to manage Docker on the host machine. As a result of Jenkins' operations, Docker images are uploaded to the host and instances are created directly on the host. To view the Docker instances created by Jenkins, run ``docker ps -a``. To view the Docker images, run ``docker image ls``.
 
-Building Jenkins locally offers numerous benefits to developers and organizations alike. It streamlines the setup process, reduces dependency issues, and ensures consistent environments across different systems. Moreover, it enables easy local testing and experimentation, allowing developers to fine-tune their CI/CD workflows before deploying them to production servers.
+Building Jenkins locally offers numerous benefits to developers and organizations alike. It streamlines the setup process, reduces dependency issues, and ensures consistent environments across different systems. Moreover, it enables easy local testing and experimentation, allowing developers to fine-tune their CI workflows before deploying them to production servers.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
