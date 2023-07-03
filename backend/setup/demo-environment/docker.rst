@@ -94,10 +94,10 @@ Troubleshooting
 
 If you deployed the application before, pull up fresh images with `docker-compose pull`.
 
-About this Project
+About This Project
 ------------------
 
-This repository provides a Docker Compose configuration file (compose.yaml) and demonstrates how to run different applications and required services in containers. ro Inc. provides images with applications Community Edition in public Docker Hub.
+This repository provides a Docker Compose configuration file (compose.yaml) and demonstrates how to run different applications and required services in containers.Oro Inc. provides images with applications Community Edition in public Docker Hub.
 
 .. important:: This deployment is NOT intended for a production environment.
 
