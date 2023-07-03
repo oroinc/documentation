@@ -1,7 +1,7 @@
 .. _dev-guide-development-practice-setup-dev-env:
 .. _doc--dev-env-best-practices:
 
-Set up Development Environment for OroPlatform Based Application
+Set Up Development Environment for OroPlatform Based Application
 ================================================================
 
 To set up the development environment for Oro applications customization tasks, please follow the steps outlined in the sections below.

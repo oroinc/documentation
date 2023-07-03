@@ -6330,3 +6330,31 @@ Links (Dev)
 .. |OroShoppingListBundle| raw:: html
 
     <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ShoppingListBundle" target="_blank">ShoppingListBundle</a>
+
+.. |docker-build| raw:: html
+
+    <a href="https://github.com/oroinc/docker-build" target="_blank">docker-build</a>
+
+.. |jenkins| raw:: html
+
+    <a href="https://github.com/oroinc/docker-build/jenkins/README.md" target="_blank">jenkins</a>
+
+.. |GitHub Branch Source Plugin| raw:: html
+
+    <a href="https://github.com/jenkinsci/github-branch-source-plugin/blob/master/docs/github-app.adoc" target="_blank">GitHub Branch Source Plugin</a>
+
+.. |GCP| raw:: html
+
+    <a href="https://cloud.google.com/iam/docs/service-account-creds" target="_blank">GCP</a>
+
+.. |Credentials Plugin| raw:: html
+
+    <a href="https://github.com/jenkinsci/configuration-as-code-plugin/blob/master/demos/credentials/README.md" target="_blank">Credentials Plugin</a>
+
+.. |Handling Secrets| raw:: html
+
+    <a href="https://github.com/jenkinsci/configuration-as-code-plugin/blob/master/docs/features/secrets.adoc" target="_blank">Handling Secrets</a>
+
+.. |GitLab Branch Source Plugin| raw:: html
+
+    <a href="https://plugins.jenkins.io/gitlab-branch-source/" target="_blank">GitLab Branch Source Plugin</a>
