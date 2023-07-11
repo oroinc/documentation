@@ -5,7 +5,7 @@
 Configure End-to-End Access in Context in the Back-Office
 =========================================================
 
-We are going to illustrate how to configure access in |oro_application| on a simple example of AMCE company that consists of two organizations (ACME Manufacturing and ACME Services). We will focus on the ACME Services organization that has two regional divisions, one in the USA and the other one in the EU. Each of these two divisions has smaller subdivisions. In the USA these are *Los Angeles*, *Dallas* and *New York*, and in the EU it is *Western Europe* and *Eastern Europe*.
+We are going to illustrate how to configure access in |oro_application| on a simple example of ACME company that consists of two organizations (ACME Manufacturing and ACME Services). We will focus on the ACME Services organization that has two regional divisions, one in the USA and the other one in the EU. Each of these two divisions has smaller subdivisions. In the USA these are *Los Angeles*, *Dallas* and *New York*, and in the EU it is *Western Europe* and *Eastern Europe*.
 
 .. image:: /user/img/system/user_management/sales_structure.png
 
@@ -119,7 +119,7 @@ A sales director has access to all company accounts.
 Work with Multiple Organizations
 --------------------------------
 
-The marketing department in AMCE handles campaigns for both ACME Manufacturing and ACME Services organizations.
+The marketing department in ACME handles campaigns for both ACME Manufacturing and ACME Services organizations.
 
 Jill, who is a marketing team manager, monitors two organizations and is given access to both of them.
 

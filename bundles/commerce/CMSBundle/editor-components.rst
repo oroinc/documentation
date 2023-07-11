@@ -268,7 +268,7 @@ Static Properties
 .. csv-table::
 
    "`type`","String","Required","Define the component type name"
-   "`priority`","Number","Optional","Define the priority order to apply the component type. It is iportant when creating a type from a parent type"
+   "`priority`","Number","Optional","Define the priority order to apply the component type. It is important when creating a type from a parent type"
 
 Methods
 -------

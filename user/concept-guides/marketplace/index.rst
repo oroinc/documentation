@@ -97,7 +97,9 @@ In OroMarketplace, price lists are managed per organization so that vendors can 
 Orders and Shipping
 -------------------
 
-Marketplace owners can configure shipping integrations and shipping rules for all sellers and per seller so proper :ref:`shipping fees are calculated <user-guide--system-configuration--commerce-sales-multi-shipping>` based on seller needs and warehouse data. When a buyer submits an order with items sold by different vendors with different shipping options, their order is split into one parent order and sub-orders in the back-office. Each respective seller receives their portion of the order and is responsible for shipping the items sold to the buyer. The marketplace owner organization has the record of the source parent order containing information about its suborders per seller, line items, payment details, etc.
+Marketplace owners can configure shipping integrations and shipping rules for all sellers and per seller so proper :ref:`shipping fees are calculated <user-guide--system-configuration--commerce-sales-multi-shipping>` based on seller needs and warehouse data. The default shipping methods are *Fixed Product Shipping Cost* and *Flat Rate Shipping* with 0 value, which are created automatically after seller's registration. Sellers can then adjust the amount as needed.
+
+When a buyer submits an order with items sold by different vendors with different shipping options, their order is split into one parent order and sub-orders in the back-office. Each respective seller receives their portion of the order and is responsible for shipping the items sold to the buyer. The marketplace owner organization has the record of the source parent order containing information about its suborders per seller, line items, payment details, etc.
 
 .. image:: /user/img/concept-guides/marketplace/orders-split-by-sellers.png
    :alt: Orders split by seller in the back-office
