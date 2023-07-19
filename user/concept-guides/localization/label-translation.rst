@@ -2,22 +2,12 @@
 
 :oro_documentation_types: OroCommerce
 
-Translate Product Attribute Labels and Options
-==============================================
+Translate Product Attribute Options
+===================================
 
 .. hint:: This section is part of the :ref:`Localization and Translation <concept-guide--localization-translation>` concept guide that provides a general understanding of the localization and translation processes in OroCommerce.
 
-There are two ways to translate product attribute labels in OroCommerce:
-
-* By changing the source language to the target language for the label and then adding the label translation to the required attribute on its edit page.
-* By updating the attribute label translation directly on the Translations page.
-
-You may find option 1 less time consuming and more straightforward. However, with option 2, you can search for any attribute labels or entity fields within a single Translations table.
-
-Method 1
---------
-
-To translate a product attribute label from English into the required language, change the default language first:
+To translate a product attribute option from English into the required language, change the default language first:
 
 1. Navigate to **System > Configuration > System Configuration > General Setup > Localization** in the main menu.
 2. In the **Localization Settings**, select the required localization from the list to add to **Enabled Localizations**.
@@ -69,47 +59,5 @@ The product attribute label and it options are updated in the storefront.
    .. image:: /user/img/system/localization/labels/label_updated.png
       :alt: Updated product attribute label in the storefront
 
-Method 2
---------
 
-To translate a product attribute label from within the Translations grid, navigate to **System > Localization > Translations** in the main menu.
-
-**If the attribute has been created in a language other than English, use the following filters to narrow down the search and locate the attribute label key:**
-
-* **Languages** --- The language in which the attribute was created
-* **Translated Value** --- [Attribute Name] or its part, e.g, demo_attribute
-* **English Translation** -- Not available
-
-  .. note:: Please note that when an attribute is created under a non-English localization, the English translation is absent.
-
-* **Key** --- oro.product.
-
-  All product attribute labels start with *oro.product.* and include the name of the attribute (often with underscores). You are looking for the key that ends with a *label*. For example, oro.product.deutsch_demo_attribute.label
-
-* **Domain** --- messages
-
-  .. image:: /user/img/system/localization/labels/filtered_attributes.png
-     :alt: Filtered attributes
-
-Once you locate the key, you can use it to translate the label into any selected language using the following filters:
-
-* **Languages** --- All (or selected)
-* **Key** --- [Your Key] e.g. oro.product.deutsch_demo_attribute.label
-
-  .. image:: /user/img/system/localization/labels/translations_all_languages.png
-     :alt: Translating the filtered label
-
-**If the attribute has been created in English, use the following filters to narrow down the search and locate the attribute label key:**
-
-* **English Translation** --- [Attribute Name], e.g, english_demo_attribute
-* **Language** --- English
-
-  .. image:: /user/img/system/localization/labels/english_attr_label_located_translations_grid.png
-     :alt: Locating the key for the label
-
-Once you locate the key, you can use it to translate the label into any selected language using the Key filter:
-
-* **Key** --- [Your Key] e.g. oro.product.english_demo_attribute.label
-
-  .. image:: /user/img/system/localization/labels/english_pr_att_translation_grid.png
-     :alt: Translating the label from English using the key filter
+.. note:: To translate any UI system element, label, or a popup message, read the :ref:`related documentation <localization--translations--messages>`.
