@@ -283,7 +283,7 @@ Import Product Attributes
 **Related Topics**
 
 * :ref:`Using product attributes in product families <product--product-families--product-attribute-in-families>`
-* :ref:`Translate Product Attribute Labels <localization--translations--labels>`
+* :ref:`Translate Product Attribute Options <localization--translations--labels>`
 
 .. toctree::
    :hidden:
