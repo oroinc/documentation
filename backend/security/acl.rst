@@ -442,7 +442,7 @@ For the security token to ignore the preferable organization, for example, an AP
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/app.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/app.yml
         :language: yaml
-        :lines: 118-120
+        :lines: 96-98
 
 .. admonition:: Business Tip
 
