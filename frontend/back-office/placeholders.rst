@@ -99,7 +99,7 @@ You can override the configuration defined in the ``placeholders.yml`` file in `
 
 Also, you can override the placeholders configuration in another ``placeholders.yml`` file defined in a bundle with a higher priority.
 
-Find more examples in |placeholders.yml files defined in OroPlatform bundles|.
+Find more examples in placeholders.yml files defined in OroPlatform bundles.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
