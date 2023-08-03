@@ -4394,14 +4394,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/WorkflowBundle/Processor/Context/TransitionContext.php" target="_blank">TransitionContext</a>
 
-.. |CheckoutLineItems| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Entity/CheckoutLineItem.php" target="_blank">CheckoutLineItems</a>
-
-.. |CheckoutLineItemConverterInterface| raw:: html
-
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Model/CheckoutLineItemConverterInterface.php" target="_blank">CheckoutLineItemConverterInterface</a>
-
 .. |OroBundleCustomerBundleSecurityTokenAnonymousCustomerUserToken| raw:: html
 
    <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Security/Token/AnonymousCustomerUserToken.php" target="_blank">Oro\Bundle\CustomerBundle\Security\Token\AnonymousCustomerUserToken</a>
