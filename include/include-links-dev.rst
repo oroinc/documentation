@@ -1829,10 +1829,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector</a>
 
-.. |placeholders.yml files defined in OroPlatform bundles| raw:: html
-
-   <a href="https://github.com/search?q=repo%3Aoroinc%2Fplatform+filename%3Aplaceholders.yml&type=Code" target="_blank">placeholders.yml files defined in OroPlatform bundles</a>
-
 .. |Creating and Using Templates article in a Symfony Documentation| raw:: html
 
    <a href="https://symfony.com/doc/5.4/templating.html" target="_blank">Creating and Using Templates article in a Symfony Documentation</a>
