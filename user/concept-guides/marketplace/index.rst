@@ -90,7 +90,7 @@ You can associate each product with a specific :ref:`product brand <user-guide--
 Pricing Management
 ------------------
 
-As OroMarketplace has integrated OroCommerce, it has the advantage of using its dynamic pricing engine that automates price configuration and calculation. OroMarketplace pricing functionality enables vendors to quickly set up and customize different price lists for specific customers, customer groups, and websites and build aggregated price lists with any amount of price attributes, tiers, or currencies.
+As OroMarketplace has integrated OroCommerce, it has the advantage of using its dynamic pricing engine that automates price configuration and calculation. OroMarketplace pricing functionality enables vendors to quickly set up and customize different price lists for specific customers, customer groups, and websites and build aggregated price lists with any amount of price attributes, tiers, or currencies. Vendors can use the price attribute as a base value for manually or automatically generated price lists.
 
 In OroMarketplace, price lists are managed per organization so that vendors can diversify price offerings by personalizing prices according to specific strategies, customer accounts, order quantities, or other factors.
 
