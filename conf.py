@@ -391,6 +391,7 @@ scv_build_args_per_version = {
     '3.1': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
     '4.1': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
     '4.2': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
+    '5.0': ('-D', 'exclude_patterns=cloud', '-D', 'html_additional_pages.index=redirect.html'),
 }
 
 # Generate sitemap.xml file only for current version (see ext.sitemap),
