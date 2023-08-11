@@ -3,7 +3,7 @@
 Shopping List in the Storefront
 ===============================
 
-A shopping list on a storefront is a controller action templated by :ref:`layout engine <dev-doc-frontend-layouts-layout>` and displaying a **shopping list line items datagrid**. A shopping list in the storefront is presented by two routes and two datagrids:
+A shopping list page on a storefront is a controller action templated by :ref:`layout engine <dev-doc-frontend-layouts-layout>` and displaying a **shopping list line items datagrid**. A shopping list in the storefront is presented by two routes and two datagrids:
 
 - **oro_shopping_list_frontend_view** route with the `frontend-customer-user-shopping-list-grid` datagrid represents the "view" version of a shopping list
 - **oro_shopping_list_frontend_update** route with the `frontend-customer-user-shopping-list-edit-grid` datagrid represents the "edit" version of a shopping list.
