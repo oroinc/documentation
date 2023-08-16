@@ -131,3 +131,9 @@ After performing the necessary actions, the behat script continues to run.
 Run tests only locally and for debugging purposes.
 
 Debugging behat tests is an essential skill for ensuring the reliability and effectiveness of your BDD test suite.
+
+.. hint:: The screenshots created during failed Behat tests include the cursor the last position mouse when moving the mouse around, except for situations when there are alerts on the page. This helps identify where the failure occurred, making it quicker to take corrective action.
+
+    .. image:: /img/backend/tests/cursor_position_at_failed_behat_tests.png
+        :scale: 55
+        :alt: Cursor position at failed behat tests
