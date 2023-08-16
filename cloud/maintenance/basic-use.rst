@@ -580,26 +580,27 @@ Run application commands via `orocloud-cli app:console`, for example:
 .. code-block:: none
 
     orocloud-cli app:console oro:user:list
+    orocloud-cli app:console oro:search:reindex
 
 To pass a command that contains arguments or options, wrap the command in quotes.
 
 .. code-block:: none
 
     orocloud-cli app:console "oro:user:list --all"
+    orocloud-cli app:console 'oro:search:reindex --scheduled OroUserBundle:User'
 
-If a command contains quotes and is wrapped in the same quotes type, the inner quotes must be escaped with  ``\``.
-
-.. code-block:: none
-
-    orocloud-cli app:console "oro:user:list --roles=Sales\ Manager"
-
-
-By default, the `orocloud-cli app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g., to monitor command execution in real-time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
+Spaces and backslashes must be escaped with  ``\``.
 
 .. code-block:: none
 
-    orocloud-cli app:console -vvv "oro:user:list"
-
+    orocloud-cli app:console "oro:user:list --roles=Sale\ Manager"
+    orocloud-cli app:console "oro:user:list --roles='Sale Manager'"
+    orocloud-cli app:console "oro:user:list --roles=\"Sale Manager\""
+    orocloud-cli app:console 'oro:user:list --roles=Sale\ Manager'
+    orocloud-cli app:console 'oro:user:list --roles="Sale Manager"'
+    orocloud-cli app:console 'oro:search:reindex Oro\Bundle\UserBundle\Entity\User'
+    orocloud-cli app:console "oro:search:reindex Oro\\Bundle\\UserBundle\\Entity\\User"
+    orocloud-cli app:console "oro:search:reindex Oro\Bundle\UserBundle\Entity\User"
 
 Schema Update
 ~~~~~~~~~~~~~
