@@ -243,7 +243,7 @@ Webserver configuration can be modified, as illustrated below:
           'admin':
             type: 'php'
             satisfy: any # Allow access if all (all) or at least one (any) access directive satisfied
-            location: '~ /index\.php(/admin|$)'
+            location: '~ /index\.php/admin(/|$)'
             auth_basic_enable: true
             auth_basic_userlist:
               user3:
@@ -621,7 +621,7 @@ Domain Configuration
             'admin':
               type: 'php'
               satisfy: any # Allow access if all (all) or at least one (any) access directive satisfied
-              location: '~ /index\.php(/admin|$)'
+              location: '~ /index\.php/admin(/|$)'
               auth_basic_enable: true
               auth_basic_userlist:
                 user3:
