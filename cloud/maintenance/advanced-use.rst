@@ -6,7 +6,7 @@ Advanced Configuration
 Deployment and Maintenance Configuration
 ----------------------------------------
 
-To modify configuration options for maintenance agent, you need to have the `orocloud.yaml` file placed in the application root. If the application is not yet deployed, modifications can also be made in `/mnt/(ocom|ocrm)/app/orocloud.yaml`.
+To modify configuration options for maintenance agent, you need to have the `orocloud.yaml` file placed in Git repository root directory. If the application is not yet deployed, modifications can also be made in `/mnt/(ocom|ocrm)/app/orocloud.yaml`.
 
 The `validation` command checks your configuration for syntax errors or wrong configuration values. Use the `files` argument to check custom files or multiple files merge result:
 
@@ -325,7 +325,58 @@ This configuration option enables you to setup redirects to the existing URLs of
 
 * **redirects_map** — the hash where the key is an old URL, and the value is a new URL.
 
+Examples, applicable both for `redirects_map` values and those which are listed in `redirects_map_include` files:
+
+.. code-block:: none
+
+    orocloud_options:
+      webserver:
+        redirects_map:
+          # Simple examples that don't envolve using special characters other than `/`.
+          /us: /us/
+          /gb: /gb/
+          /news/new_event: https://corpsite.com/events/newest
+
+
+          # Examples of using special characters without wrapping values with `"` or `'` characters.
+          /about'old: /about
+          /about(old): /about
+          
+          # Regular expression example with a simple capturing group and backreference.
+          ~/about(\d[a-z]): /about#$1
+          
+          # Regular expression example with named capturing group and backreference.
+          ~/about-(?<suffix>[[:alpha:]]*): /about#$suffix
+
+
+          # Examples of values wrapped with `"` or `'` characters.
+          # Wrapping values in the examples bellow is required because of `{` character within the values.
+          
+          # Value wrapped with `"` character requires to escape `'` character with `'` character itself.
+          '"~/about''\d{1}$"': /about
+          '"~/about''(\d{3})$"': /about#$1
+          
+          # Value wrapped with `'` character requires to escape '`' character with `\\` characters and `\` character with `\` character itself.
+          "'~/about\\'\\d{2}$'": /about
+
 * **redirects_map_include** — list of YAML files with the hashes where the key is an old URL, and the value is a new URL (similar to ``redirects_map``).
+
+Examples:
+
+.. code-block:: none
+
+    orocloud_options:
+      webserver:
+        redirects_map_include:
+          # Values with relative paths are relative to Git repository root directory.
+          - 'redirects/redirects.yml'
+
+          # Values with absolute paths are environment-specific.
+          - '/mnt/ocom/app/redirects.yml'
+
+Old URL values in redirects are case insensitive and must not contain duplicates.
+
+When modified, changes are applied after the `deploy` or `upgrade` operation in approximately 10 minutes
 
 X Frame Header Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
