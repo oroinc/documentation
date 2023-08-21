@@ -29,7 +29,7 @@ The Activities topic introduces you to the following types of activities:
 * :ref:`Contact Requests <user-guide-activities-requests>`
 * :ref:`Cases <doc-activities-overview-cases>`
 * :ref:`Calendar Events <doc-activities-events>`
-* :ref:`Emails <user-guide-using-emails>`
+* :ref:`Emails <activities-emails>`
 
 **Related Content:**
 
@@ -43,6 +43,7 @@ The Activities topic introduces you to the following types of activities:
    :hidden:
    :maxdepth: 1
 
+   Emails <emails/index>
    Tasks <tasks/index>
    Calls <calls/index>
    Contact Requests <contact-requests/index>

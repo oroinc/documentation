@@ -1,10 +1,10 @@
 .. _oroconnector-for-microsoft-outlook:
 
-OroConnector Add-on for Outlook
+OroConnector Add-in for Outlook
 ===============================
 
 
-The OroConnector add-on is a valuable tool for users of the Enterprise Oro applications. With its integration with email clients, this add-on provides effortless access to critical information, enhancing collaboration and increased efficiency. The OroConnector eliminates the need for time-consuming switching between applications, streamlining workflow processes, and improving productivity. Its seamless integration with your email client makes it a game-changer for Oro users, providing a more convenient and streamlined workflow.
+The OroConnector add-in is a valuable tool for users of the Enterprise Oro applications. With its integration with email clients, this add-in provides effortless access to critical information, enhancing collaboration and increased efficiency. The OroConnector eliminates the need for time-consuming switching between applications, streamlining workflow processes, and improving productivity. Its seamless integration with your email client makes it a game-changer for Oro users, providing a more convenient and streamlined workflow.
 
 Prerequisites
 -------------
@@ -14,11 +14,11 @@ To work with OroConnector, you need to have a Outlook account, be an Oro applica
 Connect
 -------
 
-Once OroConnector has been installed in your mail client, a new icon will appear in the side panel, indicating that the add-on is ready for use.
+Once OroConnector has been installed in your mail client, a new icon will appear in the side panel, indicating that the add-in is ready for use.
 
-To connect the add-on to your Oro application:
+To connect the add-in to your Oro application:
 
-1. Open the OroConnector add-on by clicking on the Oro icon.
+1. Open the OroConnector add-in by clicking on the Oro icon.
 2. Click **Connect**.
 3. Provide valid Oro credentials to log in to your Oro application.
 
@@ -49,7 +49,7 @@ The connector's menu offers the following actions:
 Search & Context
 ----------------
 
-Once you have completed the setup process, OroConnector is available for you to start your search for the necessary information and add or remove context from the add-on.
+Once you have completed the setup process, OroConnector is available for you to start your search for the necessary information and add or remove context from the add-in.
 
 In Oro applications, context is a piece of information relevant to a particular user, task, or process within the application. When an OroConnector user opens an email thread in their mail client, they can see Oro entities related to that particular email and retrieve the latest context of the conversation. Context search is performed by the *From/To/CC/BCC* fields of the email being viewed.
 

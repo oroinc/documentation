@@ -83,6 +83,8 @@ To compose a new email:
 1. On the page of all emails, click **Compose** on the top right.
 2. Provide the following information on the page that opens:
 
+.. _email-fields:
+
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**          | **Description**                                                                                                                                                                                                                       |
 +====================+=======================================================================================================================================================================================================================================+
@@ -147,6 +149,7 @@ You can save several of such emails as drafts.
 .. image:: /user/img/getting_started/user_menu/several_minimized_emails.jpg
    :alt: Several unfinished emails appear as minimized windows
 
+.. _email-actions:
 
 View Emails
 -----------

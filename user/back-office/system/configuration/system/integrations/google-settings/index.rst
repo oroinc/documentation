@@ -44,6 +44,5 @@ Click the relevant topic below to start configuring the required setting:
 
    Google Integration <google-integration>
    Google Single Sign On <google-single-sign-on>
-   OroConnector for Gmail <oroconnector-gmail>
 
 
