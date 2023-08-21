@@ -27,9 +27,9 @@ To learn how to set up a system mailbox, see :ref:`Configure System Mailbox Glob
 Personal Emails
 ---------------
 
-Oro supports synchronization with your email provider using IMAP, meaning you can receive and review emails directly from the Oro application. Oro also supports connection to your SMTP server, which allows you to send emails from the Oro user interface without jumping back and forth between tabs. If you use :ref:`Gmail <oroconnector-for-google-workspace>` and :ref:`Outlook <oroconnector-for-microsoft-outlook>`, you can also use OroConnector with your Oro Enterprise application, which allows you to sync data from the Oro application directly to your email client. You can set up your personal email box by navigating to your settings under **Your Name > My Configuration**.
+Oro supports synchronization with your email provider using IMAP, meaning you can receive and review emails directly from the Oro application. Oro also supports connection to your SMTP server, which allows you to send emails from the Oro user interface without jumping back and forth between tabs. You can set up your personal email box by navigating to your settings under **Your Name > My Configuration**. If you use Gmail or Outlook, you can also use OroConnector with your Oro Enterprise application, which allows you to sync data from the Oro application directly to your email client.
 
-To learn how to set up a personal email via IMAP and SMTP, see :ref:`Configure Email Settings per User <my_email_configuration>`.
+To learn how to set up a personal email via IMAP and SMTP, see :ref:`Configure Email Settings per User <my_email_configuration>`. To learn how to use OroConnector, see OroConnector user guide for :ref:`Gmail <oroconnector-for-google-workspace>` or :ref:`Outlook <oroconnector-for-microsoft-outlook>`.
 
 Sending and Receiving Emails
 ----------------------------
