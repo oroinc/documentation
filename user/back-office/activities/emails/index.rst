@@ -67,6 +67,15 @@ OroCommerce links email communications with specific entities like customers, or
 
 To learn how to create custom reports using data from emails, see :ref:`Manage System and Custom Reports <user-guide-reports>`.
 
+**Related Topics**:
+
+* :ref:`My Emails <user-guide-using-emails>`
+* :ref:`Configure Email Settings per User <my_email_configuration>`
+* :ref:`Configure System Mailbox Globally <admin-configuration-email-configuration-global>`
+* :ref:`Configure Email Notification Rules <user-guide-using-emails-notifications>`
+* :ref:`Manage System and Custom Reports <user-guide-reports>`
+* :ref:`OroConnector for Gmail <oroconnector-for-google-workspace>`
+* :ref:`OroConnector for Outlook <oroconnector-for-microsoft-outlook>`
 
 .. toctree::
    :hidden:
