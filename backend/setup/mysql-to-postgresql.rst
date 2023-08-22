@@ -29,6 +29,7 @@ is a sample migration config that can be used for this process:
    LOAD DATABASE
        FROM      mysql://dbuser:dbpass@localhost:3306/old_db_name
        INTO postgresql://dbuser:dbpass@localhost:5432/new_db_name
+       WITH prefetch rows = 10000
    alter schema 'old_db_name' rename to 'public'
    CAST type datetime to timestamp /*(DC2Type:datetime)*/ drop default drop not null using zero-dates-to-null,
    type int with extra auto_increment when (< precision 12) to serial drop typemod,
