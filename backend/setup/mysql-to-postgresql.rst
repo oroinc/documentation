@@ -32,6 +32,7 @@ is a sample migration config that can be used for this process:
        WITH prefetch rows = 10000
    alter schema 'old_db_name' rename to 'public'
    CAST type datetime to timestamp /*(DC2Type:datetime)*/ drop default drop not null using zero-dates-to-null,
+   type int with extra auto_increment to serial drop typemod,
    type int with extra auto_increment when (< precision 12) to serial drop typemod,
    type int with extra auto_increment when (>= 12 precision) to bigserial drop typemod,
    type int when (< precision 12) to int drop typemod,
