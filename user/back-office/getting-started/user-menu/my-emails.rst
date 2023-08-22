@@ -17,9 +17,9 @@ It is also possible to configure auto-actions and auto-responses. For example, w
 Oro also provides a feature of auto-assignment to contacts, thanks to which new emails synced into the application are automatically linked to contacts if the email addresses of these contacts appear in the correspondence.
 
 
-   See a short demo on |how to create and manage emails|, or keep reading the step-by-step guidance below.
+ See a short demo on |how to create and manage emails|, or keep reading the step-by-step guidance below.
 
-   .. raw:: html
+  .. raw:: html
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
 
@@ -82,6 +82,8 @@ To compose a new email:
 
 1. On the page of all emails, click **Compose** on the top right.
 2. Provide the following information on the page that opens:
+
+.. _email-fields:
 
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**          | **Description**                                                                                                                                                                                                                       |
@@ -147,6 +149,7 @@ You can save several of such emails as drafts.
 .. image:: /user/img/getting_started/user_menu/several_minimized_emails.jpg
    :alt: Several unfinished emails appear as minimized windows
 
+.. _email-actions:
 
 View Emails
 -----------

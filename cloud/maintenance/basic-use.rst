@@ -150,8 +150,8 @@ To deploy an Oro application in the OroCloud environment with default installati
 
 .. _orocloud-maintenance-use-upgrade:
 
-[New] Application Packages
---------------------------
+Application Packages
+--------------------
 
 You can use prebuilt application packages to upgrade Oro applications in OroCloud.
 Prebuilt application packages are shared between different environment types (dev, stag, uat, prod) of a single project.
@@ -168,7 +168,7 @@ The following commands are available for Oro applications of versions 5.0 and ab
       app:package:list           List application packages available for deployment .
       app:package:upgrade        Build and deploy application package.
 
-Using prebuilt application packages speeds up the upgrade of applications (vanilla OroCommerce 5.1 LTS, exncluding custom migrations):
+Using prebuilt application packages speeds up the upgrade of applications (vanilla OroCommerce 5.1 LTS, excluding custom migrations):
 
 * `orocloud-cli upgrade --reference=[git reference]` takes 1300 seconds with 800 seconds of maintenance mode.
 * `orocloud-cli app:package:upgrade [git reference]` takes 750 seconds with 230 seconds of maintenance mode.
