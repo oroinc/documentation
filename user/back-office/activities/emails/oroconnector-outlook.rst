@@ -22,12 +22,12 @@ To connect the add-in to your Oro application:
 2. Click **Connect**.
 3. Provide valid Oro credentials to log in to your Oro application.
 
-   .. image:: /user/img/system/config_system/connector-outlook/login-cred.png
+   .. image:: /user/img/activities/connector-outlook/login-cred.png
       :align: center
 
 4. Click **Grant** to allow the connector to access information from the Oro application.
 
-   .. image:: /user/img/system/config_system/connector-outlook/grant.png
+   .. image:: /user/img/activities/connector-outlook/grant.png
       :align: center
 
 Manage OroConnector Menu
@@ -42,7 +42,7 @@ The connector's menu offers the following actions:
    "**Refresh**","Update the connector."
    "**Manage Add-on**","Access the connector's settings. This option is only available to the organization's administrator who installed the connector."
 
-.. image:: /user/img/system/config_system/connector-outlook/addon-menu.png
+.. image:: /user/img/activities/connector-outlook/addon-menu.png
    :align: center
    :scale: 70%
 
@@ -69,13 +69,13 @@ By default, the following data is passed from your Oro application to the connec
 
 To begin your search, type a query into the search bar and click Enter. If the search returns many entities, click **Load More** to view all available search results.
 
-.. image:: /user/img/system/config_system/connector-outlook/search-result.png
+.. image:: /user/img/activities/connector-outlook/search-result.png
    :align: center
    :scale: 70%
 
 .. hint:: OroConnector will also give you prompts if there is an association with an entity, for example *Could Be Related To* or *In Context Of*.
 
-          .. image:: /user/img/system/config_system/connector-outlook/in-context-of-association.png
+          .. image:: /user/img/activities/connector-outlook/in-context-of-association.png
              :align: center
              :scale: 70%
 
@@ -88,7 +88,7 @@ Click on the desired entity from the search results to view its details. Here, y
 
   To view an entity you found in the OroConnector in the Oro application, click Open. You will be redirected to the view page of this entity on the Oro side.
 
-   .. image:: /user/img/system/config_system/connector-outlook/add-open-buttons.png
+   .. image:: /user/img/activities/connector-outlook/add-open-buttons.png
       :align: center
       :scale: 70%
 
@@ -103,7 +103,7 @@ Click on the desired entity from the search results to view its details. Here, y
   Removing context in the OroConnector removes it on the Oro application side as well. To disconnect entities from the email thread as its context, click **Remove Context** on the details page of the entity.
 
 
-  .. image:: /user/img/system/config_system/connector-outlook/remove.png
+  .. image:: /user/img/activities/connector-outlook/remove.png
      :align: center
      :scale: 70%
 

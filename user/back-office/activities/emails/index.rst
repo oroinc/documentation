@@ -7,7 +7,7 @@ Connecting your mailbox with OroCommerce streamlines communication, efficiently 
 
 * **Data Synchronization** --- When you set up your mailbox in Oro applications, the platform establishes a connection between your email account and the relevant data in your Oro instance. This synchronization links emails exchanged with customers, suppliers, and partners to corresponding records in the platform.
 
-* **Contextual Linking** --- Oro links incoming and outgoing emails to specific entities such as customers, orders, leads, opportunities, etc. This contextual linking ensures that communication-related to a particular customer, order, or transaction is easily accessible from within the respective record's details. You can also add notes and comments to email threads, facilitating collaboration among team members who may need to access and respond to the same emails.
+* **Contextual Linking** --- Oro links incoming and outgoing emails to specific entities such as customers, orders, leads, opportunities, etc. This contextual linking ensures that communication related to a particular customer, order, or transaction is easily accessible from within the respective record's details. You can also add notes and comments to email threads, facilitating collaboration among team members who may need to access and respond to the same emails.
 
 * **Customer Engagement** --- Emails sent to and received from customers are associated with their respective customer profiles. This link provides a comprehensive communication history, enabling you to understand the context of interactions and offer personalized service.
 
@@ -28,6 +28,10 @@ Personal Emails
 ---------------
 
 Oro supports synchronization with your email provider using IMAP, meaning you can receive and review emails directly from the Oro application. Oro also supports connection to your SMTP server, which allows you to send emails from the Oro user interface without jumping back and forth between tabs. You can set up your personal email box by navigating to your settings under **Your Name > My Configuration**. If you use Gmail or Outlook, you can also use OroConnector with your Oro Enterprise application, which allows you to sync data from the Oro application directly to your email client.
+
+
+.. image:: /user/img/activities/connectors.png
+   :alt: Illustration of OroConnector for Gmail and Outlook
 
 To learn how to set up a personal email via IMAP and SMTP, see :ref:`Configure Email Settings per User <my_email_configuration>`. To learn how to use OroConnector, see OroConnector user guide for :ref:`Gmail <oroconnector-for-google-workspace>` or :ref:`Outlook <oroconnector-for-microsoft-outlook>`.
 
@@ -62,6 +66,7 @@ To learn how to create and manage email templates, see :ref:`Configure Email Tem
 Automation and Triggers
 -----------------------
 
+Notification rules in OroCommerce are predefined conditions that trigger automatic notifications or emails based on specific events or changes within the system. These rules are designed to keep users informed in real time. For instance, when the order status changes to "shipped," a notification rule can automatically email the customer with tracking information. Whenever an automatic email notification is sent out, it has to follow a specific :ref:`notification template <user-guide-using-emails-create-template>` created beforehand that gives it style and content.
 Notification rules in OroCommerce are predefined conditions that trigger automatic notifications or emails based on specific events or changes within the system. These rules are designed to keep users informed in real time. For instance, when the order status changes to "shipped," a notification rule can automatically email the customer with tracking information. Whenever an automatic email notification is sent out, it has to follow a specific :ref:`notification template <user-guide-using-emails-create-template>` created beforehand that gives it style and content.
 
 To learn how to work with notification rules, see :ref:`Configure Email Notification Rules <user-guide-using-emails-notifications>`.
