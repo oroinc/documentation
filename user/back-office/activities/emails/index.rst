@@ -31,6 +31,9 @@ Oro supports synchronization with your email provider using IMAP, meaning you ca
 
 To learn how to set up a personal email via IMAP and SMTP, see :ref:`Configure Email Settings per User <my_email_configuration>`. To learn how to use OroConnector, see OroConnector user guide for :ref:`Gmail <oroconnector-for-google-workspace>` or :ref:`Outlook <oroconnector-for-microsoft-outlook>`.
 
+.. image:: /user/img/activities/my-config-emails.png
+   :alt: Email settings under user configuration
+
 Sending and Receiving Emails
 ----------------------------
 
@@ -53,17 +56,23 @@ You can create and use predefined email designs for various communication purpos
 
 To learn how to create and manage email templates, see :ref:`Configure Email Templates <user-guide-using-emails-create-template>`.
 
+.. image:: /user/img/system/emails/templates/email_template_create.png
+   :alt: Creating an image template
+
 Automation and Triggers
 -----------------------
 
-:ref:`Notification rules <user-guide-using-emails-notifications>` in OroCommerce are predefined conditions that trigger automatic notifications or emails based on specific events or changes within the system. These rules are designed to keep users informed in real time. For instance, when the order status changes to "shipped," a notification rule can automatically email the customer with tracking information. Whenever an automatic email notification is sent out, it has to follow a specific :ref:`notification template <user-guide-using-emails-create-template>` created beforehand that gives it style and content.
+Notification rules in OroCommerce are predefined conditions that trigger automatic notifications or emails based on specific events or changes within the system. These rules are designed to keep users informed in real time. For instance, when the order status changes to "shipped," a notification rule can automatically email the customer with tracking information. Whenever an automatic email notification is sent out, it has to follow a specific :ref:`notification template <user-guide-using-emails-create-template>` created beforehand that gives it style and content.
 
 To learn how to work with notification rules, see :ref:`Configure Email Notification Rules <user-guide-using-emails-notifications>`.
+
+.. image:: /user/img/activities/notification-rule.png
+   :alt: Notification rule edit page
 
 Analytics and Tracking
 ----------------------
 
-OroCommerce links email communications with specific entities like customers, orders, or leads. When you send or receive emails related to these entities, OroCommerce keeps track of them and maintains a history of email interactions. You can use this information to create :ref:`custom reports <user-guide-reports>` or use email-related data to segment your customer base for targeted marketing campaigns.
+OroCommerce links email communications with specific :ref:`entities <entities-management>` like customers, orders, or leads. When you send or receive emails related to these entities, OroCommerce keeps track of them and maintains a history of email interactions. You can use this information to create :ref:`custom reports <user-guide-reports>` or use email-related data to segment your customer base for targeted marketing campaigns.
 
 To learn how to create custom reports using data from emails, see :ref:`Manage System and Custom Reports <user-guide-reports>`.
 
