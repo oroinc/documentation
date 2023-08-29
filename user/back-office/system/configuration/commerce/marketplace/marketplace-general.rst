@@ -19,21 +19,23 @@ To configure marketplace settings globally:
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. In the **Seller Name** section:
+3. Clear the **Use Default** checkbox to change the system-wide setting.
 
-   a) Clear the **Use Default** checkbox.
-   b) Select the **Enable Display Seller Name** checkbox to show the seller's name on the storefront website.
+4. In the **Product Family** section (available starting from v5.1.2):
 
-.. image:: /user/img/concept-guides/marketplace/seller-name.png
-   :alt: Seller's name enabled and displayed in the storefront
+   * Enable the **Use Global Organization Product Family** to use product families from the Global organization. The creation of product families per seller will be restricted.
 
-4. In the **Seller Registration** section:
+5. In the **Seller Name** section:
 
-   a) Clear the **Use Default** checkbox.
-   b) Select the **Enable Seller Registration** checkbox to activate the ability for sellers to register with your marketplace online.
-   c) When registration is enabled, you can select the owner of the seller's request and select the :ref:`consents <user-guide--consents>` to be displayed in the Seller Registration form on the storefront website. Enabling this option also adds the :ref:`Seller Registration workflow <system--workflows--seller-registration-flow>` to the list of workflows under **System > Workflows**.
+   * Enable the **Display Seller Name** checkbox to show the seller's name on the storefront website.
+
+6. In the **Seller Registration** section:
+
+   * Select the **Enable Seller Registration** checkbox to activate the ability for sellers to register with your marketplace online.
+
+   When registration is enabled, you can select the owner of the seller's request and select the :ref:`consents <user-guide--consents>` to be displayed in the Seller Registration form on the storefront website. Enabling this option also adds the :ref:`Seller Registration workflow <system--workflows--seller-registration-flow>` to the list of workflows under **System > Workflows**.
 
 .. image:: /user/img/concept-guides/marketplace/seller-registration.png
    :alt: Seller Registration button in the storefront
 
-5. Click **Save Settings**.
+7. Click **Save Settings**.
