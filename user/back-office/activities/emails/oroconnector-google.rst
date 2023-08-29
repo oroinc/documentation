@@ -1,7 +1,9 @@
+:orphan:
+
 .. _oroconnector-for-google-workspace:
 
-OroConnector Add-on for Gmail
-=============================
+OroConnector Add-on for Google Workspace
+========================================
 
 The OroConnector add-on is a valuable tool for users of the Enterprise Oro applications. With its integration with email clients, this add-on provides effortless access to critical information, enhancing collaboration and increased efficiency. The OroConnector eliminates the need for time-consuming switching between applications, streamlining workflow processes, and improving productivity. Its seamless integration with your email client makes it a game-changer for Oro users, providing a more convenient and streamlined workflow.
 

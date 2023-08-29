@@ -1,7 +1,9 @@
-.. _oroconnector-for-microsoft-outlook:
+:orphan:
 
-OroConnector Add-in for Outlook
-===============================
+.. _oroconnector-for-microsoft:
+
+OroConnector Add-in for Microsoft 365
+=====================================
 
 
 The OroConnector add-in is a valuable tool for users of the Enterprise Oro applications. With its integration with email clients, this add-in provides effortless access to critical information, enhancing collaboration and increased efficiency. The OroConnector eliminates the need for time-consuming switching between applications, streamlining workflow processes, and improving productivity. Its seamless integration with your email client makes it a game-changer for Oro users, providing a more convenient and streamlined workflow.

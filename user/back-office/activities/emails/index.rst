@@ -11,7 +11,7 @@ Connecting your mailbox with OroCommerce streamlines communication, efficiently 
 
 * **Customer Engagement** --- Emails sent to and received from customers are associated with their respective customer profiles. This link provides a comprehensive communication history, enabling you to understand the context of interactions and offer personalized service.
 
-* **Streamlined Communication** --- By centralizing email communication in the Oro application, your team can easily collaborate on customer inquiries, orders, and issues. This prevents information silos and improves response time. For Gmail and Outlook users, Oro Enterprise also offers an OroConnector add-on to eliminate the need for time-consuming switching between email applications and OroCommerce. OroConnector sync data directly into your Gmail or Outlook interface, allowing you to view, respond to, and take actions on emails while having instant access to Oro records.
+* **Streamlined Communication** --- By centralizing email communication in the Oro application, your team can easily collaborate on customer inquiries, orders, and issues. This prevents information silos and improves response time. For Google Workspace and Microsoft 365 users, Oro Enterprise also offers an OroConnector add-on to eliminate the need for time-consuming switching between email applications and OroCommerce. OroConnector sync data directly into your Gmail or Outlook interface, allowing you to view, respond to, and take actions on emails while having instant access to Oro records.
 
 * **Automation and Triggers** --- Oro's email integration enables you to set up automated triggers and notifications based on specific events. For instance, an email can be automatically sent to a customer when their order status changes or to your team when a new lead is generated.
 
@@ -33,7 +33,7 @@ Oro supports synchronization with your email provider using IMAP, meaning you ca
 .. image:: /user/img/activities/connectors.png
    :alt: Illustration of OroConnector for Gmail and Outlook
 
-To learn how to set up a personal email via IMAP and SMTP, see :ref:`Configure Email Settings per User <my_email_configuration>`. To learn how to use OroConnector, see OroConnector user guide for :ref:`Gmail <oroconnector-for-google-workspace>` or :ref:`Outlook <oroconnector-for-microsoft-outlook>`.
+To learn how to set up a personal email via IMAP and SMTP, see :ref:`Configure Email Settings per User <my_email_configuration>`. To learn how to use OroConnector, see OroConnector user guide for :ref:`Google Workspace <oroconnector-for-google-workspace>` or :ref:`Microsoft 365 <oroconnector-for-microsoft>`.
 
 .. image:: /user/img/activities/my-config-emails.png
    :alt: Email settings under user configuration
@@ -88,12 +88,5 @@ To learn how to create custom reports using data from emails, see :ref:`Manage S
 * :ref:`Configure System Mailbox Globally <admin-configuration-email-configuration-global>`
 * :ref:`Configure Email Notification Rules <user-guide-using-emails-notifications>`
 * :ref:`Manage System and Custom Reports <user-guide-reports>`
-* :ref:`OroConnector for Gmail <oroconnector-for-google-workspace>`
-* :ref:`OroConnector for Outlook <oroconnector-for-microsoft-outlook>`
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   oroconnector-gmail
-   oroconnector-outlook
+* :ref:`OroConnector for Google Workspace <oroconnector-for-google-workspace>`
+* :ref:`OroConnector for Microsoft 365 <oroconnector-for-microsoft>`
