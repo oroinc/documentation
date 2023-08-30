@@ -84,7 +84,7 @@ The ``--npm-install`` option can be used to reinstall npm dependencies in vendor
 
     php bin/console oro:assets:build --npm-install
 
-The ``--skip-css``, ``--skip-js``, ``--skip-babel``, ``--skip-sourcemap`` and ``--skip-rtl`` options allow to skip building CSS and JavaScript files, skip transpiling Javascript with Babel, skip building sourcemaps and skip building RTL styles respectively:
+The ``--skip-css``, ``--skip-js``, ``--skip-babel``, ``--skip-sourcemap``, ``--skip-rtl`` and ``--skip-svg`` options allow to skip building CSS and JavaScript files, skip transpiling Javascript with Babel, skip building sourcemaps, skip building RTL styles and skip building SVG sprite respectively:
 
 .. code-block:: none
 
@@ -105,6 +105,10 @@ The ``--skip-css``, ``--skip-js``, ``--skip-babel``, ``--skip-sourcemap`` and ``
 .. code-block:: none
 
     php bin/console oro:assets:build --skip-rtl
+
+.. code-block:: none
+
+    php bin/console oro:assets:build --skip-svg
 
 The ``--analyze`` option can be used to run BundleAnalyzerPlugin:
 
