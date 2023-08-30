@@ -357,5 +357,5 @@ user/back-office/customers/customer-groups/customer-group-customer-settings /use
 user/back-office/customers/customers/customer-settings /user/back-office/customers/customers/customer-configuration/commerce/product/customer-product-settings
 backend/setup/dev-environment/environment-type-based-configuration /backend/setup/dev-environment/env-vars
 user/back-office/system/integrations/gtm-ga4 /user/back-office/system/integrations/gtm
-user/back-office/system/configuration/system/integrations/microsoft-settings/oroconnector-outlook /user/back-office/activities/emails/oroconnector-outlook
-user/back-office/system/configuration/system/integrations/google-settings/oroconnector-gmail /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-gmail
+user/back-office/system/configuration/system/integrations/microsoft-settings/oroconnector-outlook /user/back-office/activities/emails/oroconnector-microsoft
+user/back-office/system/configuration/system/integrations/google-settings/oroconnector-gmail /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-google
