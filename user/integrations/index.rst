@@ -18,7 +18,7 @@ Pre-built integrations provide a turnkey solution to seamlessly connect with ser
 
 On the other hand, Oro also empowers users to create custom integrations tailored to their specific needs. Custom integrations can be built to integrate with any required system, allowing businesses to connect Oro with their unique set of applications, databases, or external services, ensuring a highly adaptable and scalable integration environment.
 
- Whether leveraging pre-built integrations or crafting custom ones, Oro offers a flexible approach to meet diverse integration requirements.
+Whether leveraging pre-built integrations or crafting custom ones, Oro offers a flexible approach to meet diverse integration requirements.
 
 
 
@@ -50,4 +50,5 @@ On the other hand, Oro also empowers users to create custom integrations tailore
    :hidden:
 
    payment/index
+   Salesforce <salesforce>
 
