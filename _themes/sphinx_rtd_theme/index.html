@@ -82,6 +82,7 @@
   <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/' + style, 1) }}?{{ oro_assets_timestamp }}" type="text/css" charset="utf-8" />
   <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/pygments.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
   <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/redesign.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/header.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
   {%- for css in css_files %}
     {%- if css|attr("rel") %}
   <link rel="{{ css.rel }}" href="{{ pathto(('' if '://' in css.filename else link_prefix) ~ css.filename, 1) }}?{{ oro_assets_timestamp }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
@@ -118,6 +119,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/jquery.scrollbar.min.js', 1) }}?{{ oro_assets_timestamp }}"></script>
   <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/index.js', 1) }}?{{ oro_assets_timestamp }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/header.js', 1) }}?{{ oro_assets_timestamp }}"></script>
 </head>
 
 <body class="wy-body-for-nav">
