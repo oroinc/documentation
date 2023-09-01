@@ -180,7 +180,7 @@ In the example above, paths to files (such as js, twig, yaml, and others) are fo
 
                 <div class="search-container">
                     <input type="text" class="input search" placeholder="Search items...">
-                    <button class="btn btn--plain ml-3 clear-field hide">
+                    <button class="btn btn--text ml-3 clear-field hide">
                         <span class="fa-close" aria-hidden="true"></span>
                     </button>
                 </div>
