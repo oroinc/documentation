@@ -1564,9 +1564,6 @@ body {
     .page-header .logo {
         margin-right: 10px;
     }
-    #searchbox {
-        width: 260px;
-    }
     .header-search {
         float: left;
         margin: 10px 0 0;
@@ -1669,9 +1666,6 @@ body {
     }
     .page-header .logo {
         margin-right: 20px;
-    }
-    #searchbox {
-        width: 350px;
     }
     .header-search .search_text {
         padding-left: 50px;
@@ -2009,7 +2003,6 @@ body {
         margin-right: 15px;
     }
     #searchbox {
-        width: 320px;
         display: block;
     }
     .header-search .search_text {
@@ -2142,9 +2135,6 @@ body {
 @media only screen and (min-width: 1200px) {
     .page-header .logo {
         margin-right: 30px;
-    }
-    #searchbox {
-        width: 350px;
     }
     .top-navigation > ul > li >a {
         padding: 5px 32px 0;
