@@ -228,6 +228,10 @@ The ``entities`` section describes the configuration of entities.
 
 *  **identifier\_field\_names** *string[]* - The names of identifier fields of the entity. Use this option to override names set in a configuration file (for the API resource not based on the ORM entity) or retrieve from entity metadata (for ORM entities). This option is helpful when you do not want to use the primary key as an entity identifier in the API.
 
+*  **identifier\_description** *string* - A human-readable description of the API resource identifier. Used in auto-generated documentation only.
+
+*  **upsert** *array* - The configuration of the upsert operation. For details, see :ref:`Configure Upsert Operation <configure-upsert-operation>`.
+
 *  **form\_type** *string* - The form type to use for the entity in the :ref:`create <create-action>` and :ref:`update <update-action>` actions. By default the ``Symfony\Component\Form\Extension\Core\Type\FormType`` form type is used.
 
 *  **form\_options** *array* - The form options to use for the entity in the :ref:`create <create-action>` and :ref:`update <update-action>` actions.
@@ -266,6 +270,8 @@ By default, the following form options are set:
                     - { name: HINT_FORCE_PARTIAL_LOAD, value: false }
                     - { name: HINT_CUSTOM_OUTPUT_WALKER, value: 'Acme\Bundle\DemoBundle\AST_Walker_Class'}
                 excluded: false
+                upsert:
+                    add: [ 'field1' ]
                 form_type: Acme\Bundle\DemoBundle\Api\Form\Type\SomeEntityType
                 form_options:
                     validation_groups: ['Default', 'api', 'my_group']
@@ -617,7 +623,7 @@ Add an additional status code for the ``delete`` action:
                 actions:
                     delete:
                         status_codes:
-                            '417': 'Returned when expectations failed'
+                            417: 'Returned when expectations failed'
 
 or
 
@@ -629,7 +635,7 @@ or
                 actions:
                     delete:
                         status_codes:
-                            '417':
+                            417:
                                 description: 'Returned when expectations failed'
 
 Remove the existing status code for the ``delete`` action:
@@ -642,7 +648,7 @@ Remove the existing status code for the ``delete`` action:
                 actions:
                     delete:
                         status_codes:
-                            '417': false
+                            417: false
 
 or
 
@@ -654,7 +660,7 @@ or
                 actions:
                     delete:
                         status_codes:
-                            '417':
+                            417:
                                 exclude: true
 
 Exclude a field for the ``update`` action:

@@ -60,6 +60,36 @@ To mark records that should be updated, use the ``update`` meta property:
 See :ref:`Creating and Updating Related Resources with Primary API Resource <web-services-api--create-update-related-resources>`
 for more details about this meta property.
 
+To mark records that should be updated when they exist in the database or created when they do not exist, use the ``upsert`` meta property:
+
+.. code-block:: none
+
+    {
+       "data": [
+          {
+              "meta": {
+                "upsert": true
+              },
+              "type": "entityType",
+              "id": 1,
+              "attributes": {...},
+              "relationships": {...}
+          },
+          {
+              "meta": {
+                "upsert": true
+              },
+              "type": "entityType",
+              "id": 2,
+              "attributes": {...},
+              "relationships": {...}
+           }
+       ]
+    }
+
+See :ref:`Creating Resource or Updating Existing Resource via Single API Request <web-services-api--upsert-operation>`
+for more details about this meta property.
+
 Included Items
 --------------
 

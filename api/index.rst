@@ -48,6 +48,7 @@ Find more information about Web API in the following topics:
    resource-fields
    filters
    create-update-related-resources
+   upsert-operation
    client-requirements
    batch-api
 
