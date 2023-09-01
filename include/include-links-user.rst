@@ -893,3 +893,7 @@ Links (User)
 
    <a href="https://developers.google.com/tag-platform/devguides/cross-domain#when_to_implement_cross-domain_measurement" target="_blank">Implement Cross-Domain Measurement</a>
 
+.. |Salesforce Oro Integration extension| raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/salesforce-oro-integration/" target="_blank">Salesforce Oro Integration extension</a>
+
