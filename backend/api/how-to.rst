@@ -708,6 +708,16 @@ You can also exclude the ``id`` field (primary key) if you do not want to expose
                     id:
                         exclude: true
 
+The default description for all resource identifiers is "The unique identifier of a resource.". If you need another description, specify it using the ``identifier_description`` option, e.g.:
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                identifier_field_names: ['uuid']
+                identifier_description: 'The unique identifier of a resource. It is a UUID value.'
+
 .. _api-for-entity-wo-id:
 
 Enable API for an Entity Without Identifier

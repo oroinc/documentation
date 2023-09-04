@@ -879,7 +879,7 @@ This action is executed when the following |ApiEvents| are dispatched:
     "post_submit","This event is dispatched at the very end of the Form::submit()."
     "pre_validate","This event is dispatched at the end of the form submitting process, just before data validation. It can be used to final form data correcting after all listeners, except data validation listener, are executed and all relationships between submitted data are set."
     "post_validate","This event is dispatched at the end of the form submitting process, just after data validation. It can be used to finalize the form after all listeners, including the data validation listener, are executed. E.g. it can be used to correct form validation result."
-    "pre_flush_data","This event is dispatched after the database transaction is open but before data are flushed into the database."
+    "pre_flush_data","This event is dispatched after the database transaction is open but before data are flushed into the database. Do not call EntityManager::persist() and EntityManager::remove() during handling of this event, use addAdditionalEntity() and addAdditionalEntityToRemove() methods of the context instead."
     "post_flush_data","This event is dispatched after data are successfully flushed into the database but before the database transaction is committed."
     "post_save_data","This event is dispatched after data are successfully flushed into the database, and the database transaction is committed. It can be used to perform some not crucial operations after data are saved into the database. It means that failure of these operations will not roll back data saved into the database."
 
