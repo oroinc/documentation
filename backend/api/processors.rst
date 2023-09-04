@@ -337,7 +337,7 @@ Below is an illustration of throwing an exception to demonstrate how a processor
 
             $config = $context->getConfig();
             if (null === $config) {
-                // an entity configuration does not exist
+                // only configured API resources are supported
                 return;
             }
 

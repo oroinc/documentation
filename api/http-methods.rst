@@ -28,7 +28,7 @@ Below is a table summarizing HTTP methods available in Oro API and their return 
 |             |                |                                                |                                              |
 |             |                | 400(Bad Request) if no filter is specified.    | 404 (Not Found), if ID not found or invalid. |
 +-------------+----------------+------------------------------------------------+----------------------------------------------+
-| PUT         | Update/Replace | **not implemented**                            | **not implemented**                          |
+| PUT         | Create/Replace | **not implemented**                            | **not implemented**                          |
 +-------------+----------------+------------------------------------------------+----------------------------------------------+
 
 

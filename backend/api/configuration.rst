@@ -271,7 +271,7 @@ By default, the following form options are set:
                     - { name: HINT_CUSTOM_OUTPUT_WALKER, value: 'Acme\Bundle\DemoBundle\AST_Walker_Class'}
                 excluded: false
                 upsert:
-                    add: [ 'field1' ]
+                    add: [['field1']]
                 form_type: Acme\Bundle\DemoBundle\Api\Form\Type\SomeEntityType
                 form_options:
                     validation_groups: ['Default', 'api', 'my_group']
@@ -286,7 +286,7 @@ This section describes the configuration of entity fields.
 
 *  **exclude** *boolean* - Indicates whether the field should be excluded. This property is described above in the `"exclude" option <#exclude-option>`__ section.
 
-*  **description** *string* - A human-readable description of the field or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
+*  **description** *string* - A human-readable description of the field. Used in auto-generated documentation only.
 
 *  **property\_path** *string* - The property path to reach the fields' value. Can be used to rename the field or to access a field of the related entity. Use the ``dot`` notation to separate property names in the path, e.g. ``user.firstName``. Each property name must be equal to the name of an existing property of an entity. The ``_`` value can be used if a field value is not mapped to any property of an entity, e.g., for computed fields.
 
@@ -417,7 +417,7 @@ This section describes fields by which the result data can be filtered. It conta
 -  **fields** This section describes a configuration of each field that can be used to filter the result data. Each filter can have the following properties:
 
    -  **exclude** *boolean* - Indicates whether filtering by this field should be disabled. By default ``false``.
-   -  **description** *string* - A human-readable description of the filter or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
+   -  **description** *string* - A human-readable description of the filter. Used in auto-generated documentation only.
    -  **property\_path** *string* - The property path to reach the fields' value. The same way as above in `fields <#fields-configuration-section>`__ configuration section.
    -  **data\_type** *string* - The data type of the filter value. Can be ``boolean``, ``integer``, ``string``, etc.
    -  **allow\_array** *boolean* - Indicates whether the filter can contains several values. By default, ``false`` for ``string``, ``boolean``, ``datetime``, ``date``, ``time`` fields, and ``true`` for other fields.
@@ -503,7 +503,7 @@ The ``actions`` configuration section enables you to specify action-specific opt
 
 *  **description** *string* - A short human-readable description of an API resource. Used in auto-generated documentation only.
 
-*  **documentation** *string* - Detailed documentation of an API resource or a link to the :ref:`documentation resource <web-api--doc>`. Used in auto-generated documentation only.
+*  **documentation** *string* - Detailed documentation of an API resource. Used in auto-generated documentation only.
 
 *  **acl\_resource** *string* - The name of an ACL resource used to protect an entity in scope of this action. Set to ``null`` to disable access checks.
 
@@ -520,6 +520,8 @@ The ``actions`` configuration section enables you to specify action-specific opt
 *  **disable\_fieldset** *boolean* - The flag indicates whether requesting a restricted set of fields is disabled. In JSON:API, the |JSON:API: fields request parameter| can be used to customize which fields should be returned. By default ``false``.
 
 *  **disable\_meta\_properties** *string[]* or *boolean* - The names of additional meta properties a requesting of that are disabled or the flag that indicates whether requesting additional meta properties is disabled at all. By default ``false``.
+
+*  **upsert** *array* - The configuration of the upsert operation. For details, see :ref:`Configure Upsert Operation <configure-upsert-operation>`.
 
 *  **form\_type** *string* - The form type that should be used for the entity.
 
