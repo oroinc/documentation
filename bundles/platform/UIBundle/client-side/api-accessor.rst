@@ -49,7 +49,7 @@ Extends :ref:`BaseClass <bundle-docs-platform-ui-bundle-baseclass>`:
    "options.headers","`Object`","Optional. Allows to provide additional http headers"
    "options.default_route_parameters","`Object`","Optional. Provides default parameters for route, this defaults will be merged the `urlParameters` to get url"
    "options.route_parameters_rename_map`","`Object`","Optional. Allows to rename incoming parameters, which came into send() function, to proper names. Please provide here an object with following structure: `{<old-name>: <new-name>, ...}`"
-   "options.query_parameter_names","`Array.&lt;string&gt;`","Optional. Array of parameter names to put into query string (e.g. `?<parameter-name>=<value>&<parameter-name>=<value>`). (The reason of adding this argument is that FOSRestBundle doesn’t provides acceptable query parameters for client usage, so it is required to specify list of them)"
+   "options.query_parameter_names","`Array.string`","Optional. Array of parameter names to put into query string (e.g. `?<parameter-name>=<value>&<parameter-name>=<value>`). (The reason of adding this argument is that FOSRestBundle doesn’t provides acceptable query parameters for client usage, so it is required to specify list of them)"
 
 apiAccessor.initialize(options)
 -------------------------------
