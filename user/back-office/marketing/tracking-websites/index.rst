@@ -112,7 +112,7 @@ This is a code pre-implemented for an average website:
             _paq.push(['trackPageView']);
 
             (function() {
-                var u="http://an.average.website.com/";
+                var u="http://crm.dev/";
                 _paq.push(['setTrackerUrl', u+'tracking.php']);
                 _paq.push(['setSiteId', 'ANAWERAGEWEBSITE']);
                 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
