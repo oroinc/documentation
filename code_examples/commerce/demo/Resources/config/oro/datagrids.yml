@@ -478,7 +478,7 @@ datagrids:
                 label: acme.demo.favorite.value.label
                 data_name: value
             viewCount:
-                label: acme.demo.favorite.viewCount.label
+                label: acme.demo.favorite.view_count.label
                 data_name: viewCount
         sorters:
             columns:
@@ -507,6 +507,7 @@ datagrids:
                 value:
                     type: string
                     data_name: value
+        views_list: '@acme_demo.favorite_view_list'
 
     acme-demo-sms-grid-base:
         extended_entity_name: Acme\Bundle\DemoBundle\Entity\Sms
