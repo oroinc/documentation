@@ -102,3 +102,9 @@ services:
             - '@Doctrine\Inflector\Inflector'
         tags:
             - { name: oro_entity.class_name_provider, priority: 100 }
+
+    acme_demo.favorite_view_list:
+        class: Acme\Bundle\DemoBundle\Datagrid\FavoriteViewList
+        public: true
+        arguments:
+            - '@translator'

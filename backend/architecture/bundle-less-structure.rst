@@ -456,3 +456,17 @@ Tests
 3. Behat tests should be placed in ``/src/Test/Behat/``.
 
    - Configuration for Behat services: ``/config/oro/behat_services.yml``
+
+   - Example of loading fixtures in behat test:
+
+      .. code-block:: gherkin
+
+        @fixture-app:payment_rules.yml
+
+        Feature: Payment Rules
+            Scenario: Creating Payment Rule
+                Given I login as administrator
+                When I go to System/ Payment Rules
+                And I click "Create Payment Rule"
+                Then I fill "Payment Rule Form" with:
+                  | Method | PayPal |

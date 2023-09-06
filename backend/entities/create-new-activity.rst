@@ -93,7 +93,7 @@ Keep in mind that:
    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
        :language: yaml
-       :lines: 1, 566-567
+       :lines: 1, 567-568
 
 
 Now, you need to bind the controller to your activity entity. Use ORO entity configuration, for example:
@@ -192,7 +192,7 @@ Have a look at the following example of sms configuration in *datagrids.yml*:
    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
        :language: yaml
-       :lines: 1, 511, 514, 516-519
+       :lines: 1, 512, 515, 517-520
 
 
 This configuration creates a column named `contexts` and tries to detect the activity class name automatically. If, for some reason, it fails, you can specify an FQCN in the `entity_name` option.
@@ -204,7 +204,7 @@ If you wish to configure the column, add a section with the name specified in th
    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
        :language: yaml
-       :lines: 1, 511, 537, 544-546
+       :lines: 1, 512, 538, 545-547
 
 
 .. image:: /img/bundles/ActivityListBundle/activities-enable-context-column.png
