@@ -91,6 +91,10 @@ acme:
             view_count.label: 'View Count'
             customLabel: 'Custom Action'
             protectedCsrfLabel: 'Protected CSRF Action'
+            datagrid:
+                views:
+                    first_example_view_label: 'First Example View'
+                    second_example_view_label: 'Second Example View'
         sms:
             entity_label: Sms
             entity_plural_label: SMS messages

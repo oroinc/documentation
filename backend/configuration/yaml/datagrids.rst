@@ -1652,6 +1652,20 @@ board
 
 See for more information :ref:`Board Extension <customize-datagrids-extensions-board>`.
 
+views_list
+----------
+
+Provides the ability to add a list of grid views. Adds filters and sorters from the grid view to the parameters' filters.
+
+.. oro_integrity_check:: 18b05c6eeee9ded2308428e4146501132e27b546
+
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 456, 510
+
+See :ref:`View List <customize-datagrids-views-list>` for more information.
+
 **Related Article**
 
 * :ref:`Datagrids <data-grids>`
