@@ -819,6 +819,10 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/ComparisonFilter.php" target="_blank">ComparisonFilter</a>
 
+.. |StringComparisonFilter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/StringComparisonFilter.php" target="_blank">StringComparisonFilter</a>
+
 .. |FieldFilterInterface| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Filter/FieldFilterInterface.php" target="_blank">FieldFilterInterface</a>
