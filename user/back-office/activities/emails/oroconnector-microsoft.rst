@@ -1,5 +1,3 @@
-:orphan:
-
 .. _oroconnector-for-microsoft:
 
 OroConnector Add-in for Microsoft 365

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _oroconnector-for-google-workspace:
 
 OroConnector Add-on for Google Workspace

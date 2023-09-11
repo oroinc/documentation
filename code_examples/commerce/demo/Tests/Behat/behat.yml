@@ -21,6 +21,8 @@ oro_behat_extension:
     PriorityQuestionGrid:
       class: Oro\Bundle\DataGridBundle\Tests\Behat\Element\Grid
       selector: 'div[data-page-component-name="acme-demo-question-grid-by-priority"]'
+    View Icon:
+      selector: '.grid-view-icon'
 
   suites:
     AcmeDemoBundle:

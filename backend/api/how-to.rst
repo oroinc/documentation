@@ -614,6 +614,72 @@ Here is an example of the `Resources/config/oro/routing.yml` configuration file:
             group: rest_api
             override_path: '%oro_api.rest.prefix%userprofile/{id}'
 
+.. _configure-upsert-operation:
+
+Configure Upsert Operation
+--------------------------
+
+By default, :ref:`the upsert operation <web-services-api--upsert-operation>` is enabled for API resources based on
+ORM entities that have no auto-generated identifier or have unique database indexes.
+
+If the upsert operation is enabled for an API resource by default, but you need to disable it, use
+the "upsert" configuration option in `Resources/config/oro/api.yml` :
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                upsert: false
+
+or
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                upsert:
+                    disable: true
+
+If the upsert operation is disabled for an API resource by default, it can be enabled in `Resources/config/oro/api.yml`
+by specifying the field(s) that can be used to identify a resource:
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                upsert:
+                    add: [['field1'], ['field2', 'field3']]
+
+If you need to disable identification of a resource by some field(s), you can use "remove" option:
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                upsert:
+                    remove: [['field4'], ['field5', 'field6']]
+
+Also the identification field(s) can be completely replaced:
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                upsert:
+                    replace: [['field7'], ['field8', 'field9']]
+
+To check which entities support the upsert operation,
+the :ref:`oro:api:dump <oroapidump-command>` command with ``--upsert`` option can be used:
+
+.. code-block:: none
+
+    php bin/console oro:api:dump --upsert
+
 .. _using-a-non-primary-key-to-identify-an-entity:
 
 Using a Non-Primary Key to Identify an Entity
@@ -641,6 +707,16 @@ You can also exclude the ``id`` field (primary key) if you do not want to expose
                 fields:
                     id:
                         exclude: true
+
+The default description for all resource identifiers is "The unique identifier of a resource.". If you need another description, specify it using the ``identifier_description`` option, e.g.:
+
+.. code-block:: yaml
+
+    api:
+        entities:
+            Acme\Bundle\DemoBundle\Entity\SomeEntity:
+                identifier_field_names: ['uuid']
+                identifier_description: 'The unique identifier of a resource. It is a UUID value.'
 
 .. _api-for-entity-wo-id:
 
@@ -1250,6 +1326,7 @@ a new ``Acme\Bundle\DemoBundle\Entity\SomeEntity`` entity:
 
     use Oro\Bundle\ApiBundle\Form\FormUtil;
     use Oro\Bundle\ApiBundle\Processor\CustomizeFormData\CustomizeFormDataContext;
+    use Oro\Bundle\ApiBundle\Request\ApiAction;
     use Oro\Component\ChainProcessor\ContextInterface;
     use Oro\Component\ChainProcessor\ProcessorInterface;
     use Symfony\Component\Validator\Constraints\NotBlank;
@@ -1268,7 +1345,7 @@ a new ``Acme\Bundle\DemoBundle\Entity\SomeEntity`` entity:
                 return;
             }
 
-            if ($context->getParentAction() === 'create' && !$form->isSubmitted()) {
+            if ($context->getParentAction() === ApiAction::CREATE && !$form->isSubmitted()) {
                 FormUtil::addFormConstraintViolation($form, new NotBlank());
             }
 

@@ -28,7 +28,7 @@ Below is a table summarizing HTTP methods available in Oro API and their return 
 |             |                |                                                |                                              |
 |             |                | 400(Bad Request) if no filter is specified.    | 404 (Not Found), if ID not found or invalid. |
 +-------------+----------------+------------------------------------------------+----------------------------------------------+
-| PUT         | Update/Replace | **not implemented**                            | **not implemented**                          |
+| PUT         | Create/Replace | **not implemented**                            | **not implemented**                          |
 +-------------+----------------+------------------------------------------------+----------------------------------------------+
 
 
@@ -100,6 +100,10 @@ On successful creation, HTTP response code 201 is returned.
     It is possible to create both primary and related API resources via a single API request. For details, see the
     :ref:`Creating and Updating Related Resources with Primary API Resource <web-services-api--create-update-related-resources>` section.
 
+.. note::
+    For some resources, you can create a resource (if it did not already exist) or update it (if it does) via a single API request.
+    For details, see the :ref:`Creating Resource or Updating Existing Resource via Single API Request <web-services-api--upsert-operation>` section.
+
 
 .. _web-services-api--http-methods--patch:
 
@@ -119,6 +123,10 @@ server should be modified to produce a new version.
 
 .. note::
     For details, see the :ref:`Creating and Updating Related Resources with Primary API Resource <web-services-api--create-update-related-resources>` section.
+
+.. note::
+    For some resources, you can create a resource (if it did not already exist) or update it (if it does) via a single API request.
+    For details, see the :ref:`Creating Resource or Updating Existing Resource via Single API Request <web-services-api--upsert-operation>` section.
 
 
 .. _web-services-api--http-methods--delete:
