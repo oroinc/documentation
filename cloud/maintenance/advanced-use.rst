@@ -403,6 +403,8 @@ This configuration option is used to manage locations.
       * `all` - all conditions must be met for the specific location (logical ``and``)
       * `any` - any condition can be met for the specific location (logical ``or``)
 
+      .. note:: When ``auth_basic_enable`` is set to true, the ``satisfy`` directive is automatically configured as *any*. This ensures that authentication is allowed based on any of the specified conditions, including IP whitelisting.
+
    * `location` — location URI. The value may have regular expressions and modifiers, as it is used in the Nginx location directive.
    * `fastcgi_param` — the hash for php-specific custom variables.
    * `auth_basic_enable` — a boolean trigger for HTTP basic authentication.
