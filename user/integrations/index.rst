@@ -50,7 +50,6 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
    :hidden:
 
    payment/index
+
    shipping/index
    Salesforce <salesforce>
-   shipping/index
-

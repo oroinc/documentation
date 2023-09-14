@@ -24,5 +24,3 @@ Oro offers a selection of pre-built payment integrations, providing businesses w
    Apruve <apruve>
    CyberSource <cybersource>
    InfinitePay <infinitepay>
-
-
