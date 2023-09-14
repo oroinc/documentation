@@ -394,7 +394,7 @@ during deserialization).
 
 .. sidebar:: Normalizers in OroPlatform
 
-    OroPlatform provides two normalizers for :phpclass:`DateTime` objects
+    OroPlatform provides two normalizers for |DateTime| objects
     and collections:
 
     * The ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\DateTimeNormalizer``;

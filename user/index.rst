@@ -32,7 +32,8 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 .. raw:: html
 
    <h2><a href="integrations/">Integrations</a></h2>
-   <p>Oro Integrations documentation provides information on the types of integrations that Oro applications support and can be integrated with to streamline data exchange and enhance operational efficiency.</p>
+   <p>Oro Integrations documentation provides information on the types of integrations Oro applications support and can be integrated with to streamline data exchange and enhance operational efficiency.</p>
+
 
 .. raw:: html
 
