@@ -11,15 +11,18 @@ Oro offers a selection of pre-built payment integrations, providing businesses w
 * :ref:`Paypal Services <integrations-payment-paypal>`
 * :ref:`Authorize.NET <integrations-payment-authorize>`
 * :ref:`Apruve <integrations-payment-apruve>`
+* :ref:`CyberSource <integrations-payment-cybersource>`
 * :ref:`InfinitePay <integrations-payment-infinitepay>`
 
 .. toctree::
    :hidden:
    :maxdepth: 1
 
-   stripe
-   paypal-services
-   authorize
-   apruve
-   infinitepay
+   Stripe <stripe>
+   Paypal <paypal-services>
+   Authorize <authorize>
+   Apruve <apruve>
+   CyberSource <cybersource>
+   InfinitePay <infinitepay>
+
 

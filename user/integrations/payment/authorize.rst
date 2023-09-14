@@ -1,7 +1,7 @@
 .. _integrations-payment-authorize:
 
 Integration with Authorize.Net
-================================
+==============================
 
 OroCommerce offers seamless integration with Authorize.Net, one of the leading payment gateway providers, to facilitate secure and efficient online payment processing for B2B eCommerce businesses. This integration allows OroCommerce users to offer their customers a wide range of payment options, enabling smooth transactions while maintaining the highest level of data security.
 
@@ -64,7 +64,7 @@ During integration, OroCommerce and Authorize.Net exchange essential transaction
 Exchanged Fields
 ^^^^^^^^^^^^^^^^
 
-Standard fields typically passed between OroCommerce and Authorize.Net during integration :
+Standard fields typically passed between OroCommerce and Authorize.Net during integration:
 
 **Fields Passed from OroCommerce to Authorize.Net:**
 
