@@ -67,7 +67,7 @@ Default configuration options for the Oro application are defined in the ``confi
        env(ORO_REDIS_DOCTRINE_DSN): '%env(ORO_REDIS_URL)%/2'
        env(ORO_REDIS_LAYOUT_DSN): '%env(ORO_REDIS_URL)%/3'
        env(ORO_TRACKING_DATA_FOLDER): null
-       env(ORO_MAINTENANCE_LOCK_FILE_PATH): '%kernel.project_dir%/var/cache/maintenance_lock'
+       env(ORO_MAINTENANCE_LOCK_FILE_PATH): '%kernel.project_dir%/var/maintenance/maintenance_lock'
 
 Sample Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
