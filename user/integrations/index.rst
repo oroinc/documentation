@@ -51,4 +51,5 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
 
    payment/index
    Salesforce <salesforce>
+   shipping/index
 
