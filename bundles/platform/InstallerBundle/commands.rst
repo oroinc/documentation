@@ -77,6 +77,12 @@ The --skip-download-translations and --skip-translations options can be used to 
 
     php bin/console oro:install --skip-translations
 
+The ``--default-currency`` option can be used to specify default currency:
+
+.. code-block:: none
+
+    php bin/console oro:install --default-currency=EUR
+
 The ``--drop-database`` option should be provided when reinstalling the application from scratch on top of the existing database that needs to be wiped out first, or otherwise the installation will fail:
 
 .. code-block:: none

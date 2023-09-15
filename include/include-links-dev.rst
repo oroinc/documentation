@@ -6350,3 +6350,8 @@ Links (Dev)
 .. |GitLab Branch Source Plugin| raw:: html
 
     <a href="https://plugins.jenkins.io/gitlab-branch-source/" target="_blank">GitLab Branch Source Plugin</a>
+
+.. |DateTime| raw:: html
+
+    <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>
+
