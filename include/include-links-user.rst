@@ -841,6 +841,11 @@ Links (User)
 
    <a href="https://academy.oroinc.com/wp-content/uploads/sites/21/2023/05/oroGa4Container-24-05-23.zip" target="_blank">Download the .json file</a>
 
+.. |Download the .json file (GA4)1| raw:: html
+
+   <a href="http://academy.oroinc.com/wp-content/uploads/sites/21/2023/09/oroGa4Container-14-09-23.zip" target="_blank">Download the .json file</a>
+
+
 .. |Google Analytics 4 Event| raw:: html
 
    <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events" target="_blank">Google Analytics 4 Event</a>
