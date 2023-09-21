@@ -20,12 +20,12 @@ Operation Configuration
 All operations can be described in the ``actions.yml`` configuration file under the corresponding bundle in the `config/oro` resource directory.
 Below is an example of a simple operation configuration that performs an execution logic with the MyEntity entity.
 
-.. oro_integrity_check:: 44fe2d774e42390c62957717d5d5addf8f342d06
+.. oro_integrity_check:: 4718b0fdea5cbb2fb4b8bcbff6046ccc514a2821
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
         :language: yaml
-        :lines: 26, 40-125
+        :lines: 26, 40-126
 
 This configuration describes the operation that relates to the ``Question`` entity. The button with the "adme.demo.myentity.operations.myentity_operation" label is displayed on the view page (acme_demo_myentity_view) of this entity (in case the 'updatedAt' field > new DateTime('now')). If the `expired` property of the entity = false, then clicking the button triggers the "assign_value" action that sets the 'expired' field to `true`. If `form_options` are specified, then the form dialog with attributes fields is displayed when clicking the button. The actions run only on the submit form.
 
