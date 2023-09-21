@@ -54,3 +54,4 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
    shipping/index
    Salesforce <salesforce>
    GS1 <gs1>
+   ERP <erp/index>
