@@ -381,12 +381,12 @@ When modified, changes are applied after the `deploy` or `upgrade` operation in 
 X Frame Header Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **header_x_frame: true** — is the default value of the flag. In this case, OroCloud WAF adds the "X-Frame-Options: SAMEORIGIN" header when responding to the initial request. It makes it impossible to embed any OroCommerce site into iFrame at any site except itself to fulfill security requirements.
+* **header_x_frame: true** — is the default value of the flag, configured in the Webserver configuration section. In this case, OroCloud WAF adds the “X-Frame-Options: SAMEORIGIN” header when responding to the initial request. It makes it impossible to embed any OroCommerce site into iFrame at any site except itself to fulfill security requirements.
 
-* **header_x_frame_app_control: true** - Ignore "X-Frame-Options" header and allow application to decide if header is required.
+* **header_x_frame_app_control: true** - Ignore the “X-Frame-Options” header and allow the application to decide if the header is required. It can be configured in the Webserver or Domain configuration section. Configuration in the domain section takes priority over the webserver section.
 
-Some business cases require embedding the OroCloud site into the iFrame at other sites. You need to set the value to “false” : ``header_x_frame: false``.
-This prevents WAF from sending the “X-Frame-Options” header which allows embedding into any iFrame.
+Some business cases require embedding the OroCloud site into the iFrame at other sites, in which case you must set the value to “false”: ``header_x_frame: false``.
+This prevents WAF from sending the “X-Frame-Options” header, which allows embedding into any iFrame.
 
 .. _orocloud-maintenance-advanced-use-locations-config:
 
