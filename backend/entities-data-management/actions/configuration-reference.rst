@@ -80,7 +80,7 @@ A single operation configuration has the following properties:
 
 * **substitute_operation** - *string* - The name of the operation that can be replaced (e.g., substituted) by the current one.
 
-* **enabled** - *boolean* - A flag that defines whether this operation is enabled. Disabled operations are used in applications.
+* **enabled** - *boolean or variable* - A flag that defines whether this operation is enabled. Disabled operations passed with variable value are used in applications. Boolean type is used when there is no preactions that determine operation status. If your operation status depends on preactions then use variable as value for the status. Take into account that disabled operations by variable value are slower, because there is need to execute all preactions before set and check the status value.
 
 * **page_reload** - *boolean* - By default, it is set to *true*. A flag that defines whether this operation should reload the page after execution. It applies when redirect url or datagrid is not specified inside the *actions* block.
 
@@ -125,7 +125,7 @@ A single operation configuration has the following properties:
 Example
 ^^^^^^^
 
-.. oro_integrity_check:: 1d891fce9577cf539bbcc4b67dfc0e617f5f92d3
+.. oro_integrity_check:: 4d1f28c1718c2582e8ee10e3b6354eb2401c7910
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
@@ -355,12 +355,12 @@ Similarly to conditions, the alias of action starts from the `@` symbol and must
 Example
 ^^^^^^^
 
-.. oro_integrity_check:: 96c08ab7641ed8d9ad79c73e4e120a6a30426e0f
+.. oro_integrity_check:: 46a42709509ad6e5a243ff19513f8520781dea1d
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
         :language: yaml
-        :lines: 26, 40, 115-125
+        :lines: 26, 40, 115-126
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

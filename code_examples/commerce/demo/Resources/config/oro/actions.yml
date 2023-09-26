@@ -41,7 +41,7 @@ operations: # root elements
         extends: acme_demo_operation_base               # (optional) parent operation if needed
         label: 'Acme demo operation'                    # this value will be shown in UI for operation button
         substitute_operation: some_operation            # configuration of 'some_operation' will be replaced by configuration of this operation
-        enabled: false                                  # operation is disabled, means not used in application
+        enabled: $variable                              # operation status will be determined later, means used in application, but button is disabled on front-end if status will be false
         entities: # on view/edit pages of this entities operation button will be shown
             - Acme\Bundle\DemoBundle\Entity\Question    # entity class name
         routes: # on pages with these routes operation button will be shown
@@ -114,6 +114,7 @@ operations: # root elements
             '@not_empty': [ $group ]                                      # condition definition
         preactions:                                                       # (optional) any needed pre actions which will execute before pre conditions
             -   '@assign_value': [ $name, 'User Name' ]                   # action alias
+            -   '@assign_value': [ $variable, true ]                      # preaction that determines value for enabled
         form_init:                                                        # (optional) any needed actions which will execute before showing form dialog
             -   '@assign_value': [ $group, 'Group Name' ]                 # action alias
         actions:                                                          # (optional) any needed actions which will execute after click on th button
