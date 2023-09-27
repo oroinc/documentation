@@ -36,7 +36,7 @@ Feature: Check user extend field
       | Doc6 OneToManyUnidirectRel   | N/A   |
       | Doc7 OneToManyBidirectRel    | N/A   |
       | Doc8 OneToManyBidirectWRel   | N/A   |
-    And I click "Edit profile"
+    And I click "Entity Edit Button"
     And I fill form with:
       | Partner Since              | <Date:Jul 01, 2022> |
       | Internal Rating            | 5                   |
