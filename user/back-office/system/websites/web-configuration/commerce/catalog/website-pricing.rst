@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _pricing-currency-website:
 .. _sys--websites--sysconfig--currency:
 

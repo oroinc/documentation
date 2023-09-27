@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--system-configuration--commerce-sales-shopping-list-per-website:
 .. _user-guide--system-configuration--commerce-sales-shopping-list--mass-action--website:
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-google-single-sign-on:
 
 Configure Google Single Sign-On in the Back-Office
@@ -91,7 +89,7 @@ Oro Application Side
 Configure Google Single Sign-On
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To configure the integration with Google Single Sign-On in your OroCRM or OroCommerce application:
+To configure the integration with Google Single Sign-On in your Oro application:
 
 1. Navigate to **System > Configuration > Integrations > Google Settings** in the main menu.
 2. Make sure that the information in the **Google Integration Settings** and **OAuth 2.0 for Gmail emails sync** is filled as described in the :ref:`Configure Google Integration Settings <system-configuration-integrations-google>` topic.

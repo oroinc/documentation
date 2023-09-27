@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--payment--general:
 
 Configure Global General Payment Settings (Merchant Location)

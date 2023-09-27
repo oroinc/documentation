@@ -1,7 +1,7 @@
-:title: OroCommerce, OroCRM, OroPlatform Architecture Developer Guide
+:title: Oro Application Architecture Developer Guide
 
 .. meta::
-   :description: Fundamentals of the OroCommerce, OroCRM, and OroPlatform applications architecture for the backend developers
+   :description: Fundamentals of the Oro applications architecture for the backend developers
 
 .. _architecture-guide:
 
@@ -23,7 +23,7 @@ With these out-of-the-box benefits, developers can focus on implementing their u
 Oro Licensing
 ~~~~~~~~~~~~~
 
-Community versions of OroCRM and OroCommerce are distributed under the |OSL-3.0| license. The community edition of OroPlatform is distributed under the |MIT| license. Enterprise editions of OroCRM, OroCommerce, and OroPlatform are distributed under a custom End User License Agreement.
+Community versions of Oro applications are distributed under the |OSL-3.0| license. The community edition of OroPlatform is distributed under the |MIT| license. Enterprise editions of Oro applications are distributed under a custom End User License Agreement.
 
 .. _architecture-overview:
 

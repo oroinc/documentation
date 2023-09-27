@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _view-and-filter-product-prices:
 
 Manage Product Pricing

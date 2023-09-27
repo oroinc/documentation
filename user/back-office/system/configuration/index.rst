@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _mc-system-configuration:
 
 Global Configuration Settings
@@ -18,8 +16,6 @@ Based on the level where configuration has taken place, settings can fall back t
 * :ref:`Customer <user-guide--customers--customer-settings>` settings fall back to the :ref:`customer group settings <user-guide--customer-groups--customer-settings>`.
 
 .. image:: /user/img/system/configuration/ConfigLevels.png
-   :align: center
-   :scale: 95%
    :alt: A fallback pattern of the configuration levels
 
 Be aware that:

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _display-settings--website:
 
 Configure Display Settings per Website

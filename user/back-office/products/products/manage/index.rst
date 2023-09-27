@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _doc--products--characteristics:
 .. _doc--products--actions--view-list:
 

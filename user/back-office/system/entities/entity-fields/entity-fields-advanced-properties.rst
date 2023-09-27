@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-guide-create-entity-fields-advanced:
 
 Advanced Entity Field Properties

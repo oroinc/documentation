@@ -1,4 +1,4 @@
-:title: OroCommerce, OroCRM, OroPlatform Environment Setup for Community Edition
+:title: Oro Application Environment Setup for Community Edition
 
 .. _environment-setup-community:
 

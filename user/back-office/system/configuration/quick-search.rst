@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--system-configuration--quick-search:
 
 Configuration Quick Search

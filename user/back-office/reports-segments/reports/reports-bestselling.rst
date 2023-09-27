@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _best-selling-products-reports:
 
 Best Selling Products Report

@@ -354,7 +354,7 @@ Types of Functional Tests
 Testing Controllers
 ^^^^^^^^^^^^^^^^^^^
 
-Have a look at an example of a controller test from OroCRM:
+Have a look at an example of a controller test from an Oro application:
 
 .. code-block:: php
    :caption: src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php

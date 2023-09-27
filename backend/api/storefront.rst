@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _web-api--storefront:
 
 Storefront REST API

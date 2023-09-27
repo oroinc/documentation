@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--system--tags-management:
 .. _admin-guide-tag-management:
 

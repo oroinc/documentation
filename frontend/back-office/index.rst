@@ -1,7 +1,7 @@
 .. index::
     pair: Customization; Themes
 
-:title: OroCommerce, OroCRM, OroPlatform Back-Office Design Customization Guide
+:title: Oro Application Back-Office Design Customization Guide
 
 .. meta::
    :description: Practical guides on developing and customizing the OroCommerce back-office design for the frontend developers
@@ -11,7 +11,7 @@
 Back-Office Customization
 =========================
 
-**OroCommerce back-office, OroCRM, and OroPlatform** are single-page applications (SPA) with a mix of server-rendered content with Twig templating engine and client rendered content with Underscore.js. You can customize it with themes, override SCSS Styles, Twig, and Underscore.js templates and extend parts of a page with placeholders.
+**Oro application back-office** is a single-page application (SPA) with a mix of server-rendered content with Twig templating engine and client rendered content with Underscore.js. You can customize it with themes, override SCSS Styles, Twig, and Underscore.js templates and extend parts of a page with placeholders.
 
 .. image:: /user/img/dashboards/dashboards_0.png
 

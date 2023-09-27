@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--commerce--product--product-units:
 
 Configure Global Product Unit Settings

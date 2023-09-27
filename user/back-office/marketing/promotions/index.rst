@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Manage Promotions and Coupons in the Back-Office
 ================================================
 

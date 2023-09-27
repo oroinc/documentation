@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--search--synonyms:
 
 Configure Global Synonym Search Settings

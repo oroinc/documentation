@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _organization-google-settings:
 
 Configure Google Settings per Organization

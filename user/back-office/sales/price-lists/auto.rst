@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--pricing--price-list-auto:
 
 Generate a Product Price Automatically

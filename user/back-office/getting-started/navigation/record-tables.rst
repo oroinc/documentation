@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-grids:
 .. _doc-grids-open-grid: 
 .. _doc-grids-grid-page:
@@ -73,7 +71,7 @@ The tables not only display record data but also contain links to the pages of t
 
 #. |IcFilter| **Filters** --- Use to show/hide filters to select specific items to be displayed in the table. More information on filters is provided in the Filters section below.
 
-.. note:: The default settings define whether to paginate data in tables, how many items to show per page, and what maximum number of pages can be shown. They also define whether the top of the table is locked so you can see the page name, data headers, etc., when you scroll. Usually, these settings are defined by the system administrator for the whole OroCRM/OroCommerce application.
+.. note:: The default settings define whether to paginate data in tables, how many items to show per page, and what maximum number of pages can be shown. They also define whether the top of the table is locked so you can see the page name, data headers, etc., when you scroll. Usually, these settings are defined by the system administrator for the whole Oro application.
 
 .. _doc-grids-actions-filters:
 .. _doc-grids-actions-filters-showhide:

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--prerequisites--infinitepay:
 
 Prerequisites for InfinitePay Integration in the Back-Office

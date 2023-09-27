@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--customer--contact-request-organization:
 
 Configure Contact Request Settings per Organization

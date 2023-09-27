@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-guide-create-entity-fields-example:
 
 Examples of Creating Custom Entity Fields

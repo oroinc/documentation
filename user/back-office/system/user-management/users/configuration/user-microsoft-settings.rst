@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-configuration-microsoft-settings:
 
 Configure Microsoft Settings per User

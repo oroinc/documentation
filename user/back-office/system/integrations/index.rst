@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-integrations:
 
 Configure Integrations in the Back-Office

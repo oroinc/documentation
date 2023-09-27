@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-integrations-azure-oauth:
 
 Configure Microsoft 365 OAuth Integration (Azure Active Directory Application)

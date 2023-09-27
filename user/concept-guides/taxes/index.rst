@@ -1,7 +1,5 @@
 .. _concept-guide--taxes:
 
-:oro_documentation_types: OroCommerce
-
 Tax Management Concept Guide
 ============================
 
@@ -76,7 +74,6 @@ OroCommerce enables you to create a required :ref:`customer tax code <user-guide
 
 .. image:: /user/img/concept-guides/taxes/customer_tax_code_examples.png
    :alt: Illustration of applying customer tax codes to a customer
-   :scale: 70%
 
 * **Taxable and non-taxable products**
 
@@ -86,7 +83,6 @@ With OroCommerce, you can create a :ref:`product tax code label <taxes--product-
 
 .. image:: /user/img/concept-guides/taxes/product_tax_code_examples.png
    :alt: Illustration of applying product tax codes to a product
-   :scale: 70%
 
 * **Digital products**
 
@@ -156,7 +152,6 @@ Let's outline the steps that you need to take to configure the tax settings for 
 
            .. image:: /user/img/concept-guides/taxes/price_include_feature_toggle.png
               :alt: Toggle the feature to include or exclude the tax from product prices
-              :scale: 60%
 
 When the **tax is excluded**, all customers see the same *initial price of the product before taxes*. The tax is calculated and applied to the order at checkout based on the customer's shipping address (in our case).
 

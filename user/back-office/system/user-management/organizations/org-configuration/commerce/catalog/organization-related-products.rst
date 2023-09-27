@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--users--organization--commerce--catalog--related-products:
 
 Configure Related Items Settings per Organization

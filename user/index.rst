@@ -1,4 +1,4 @@
-:title: OroCommerce and OroCRM User Documentation
+:title: OroCommerce User Documentation
 
 .. meta::
    :description: Concept guides, back-office, and storefront user documentation
@@ -8,7 +8,7 @@
 User Documentation
 ==================
 
-Oro Online User Documentation is an aggregated and structured knowledge base of information on OroCRM and OroCommerce applications. It is designed for all business users work who with the application UI.
+Oro Online User Documentation is an aggregated and structured knowledge base of information on OroCommerce application. It is designed for all business users work who with the application UI.
 
 Oro User Documentation is split into four sections, each delivering user-specific content in different ways:
 
@@ -21,8 +21,6 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 
    <h2><a href="back-office/">Back-Office</a></h2>
    <p>Back-office documentation contains how-to topics grouped into sections that mirror the structure of back-office user interface.</p>
-
-.. note:: All section under Back-Office are relevant to OroCommerce application users. However, be aware that not all topics are relevant to OroCRM application. If you are an OroCRM user, please check what features are available in your installed OroCRM application, and search the documentation topics that correspond to your OroCRM menu layout.
 
 .. raw:: html
 
@@ -38,7 +36,7 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 .. raw:: html
 
    <h2><a href="glossary/">Glossary</a></h2>
-   <p>Glossary is an alphabetical list of OroCRM and OroCommerce terms used throughout the documentation.</p>
+   <p>Glossary is an alphabetical list of OroCommerce terms used throughout the documentation.</p>
 
 .. admonition:: Business Tip
 

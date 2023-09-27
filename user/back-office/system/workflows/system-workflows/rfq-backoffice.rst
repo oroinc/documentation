@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _system--workflows--rfq-backoffice-workflow:
 .. _system--workflows--rfq-backoffice-workflow-illustration:
 

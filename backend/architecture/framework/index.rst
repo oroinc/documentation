@@ -88,7 +88,7 @@ Related Cookbook Articles
 * :ref:`Create Custom Oro Application <dev-cookbook-create-custom-oro-application>`
 * :ref:`Create a Simple CRUD <dev-cookbook-framework-create-simple-crud>`
 * :ref:`How to Create a New Bundle <dev-cookbook-framework-how-to-create-new-bundle>`
-* :ref:`How to Add an Extension to the OroCRM Extensions Store <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
+* :ref:`How to Add an Extension to the Oro Extensions Store <dev-cookbook-framework-how-to-add-extension-to-marketplace>`
 * :ref:`How to Manage OroPlatform Extensions <dev-cookbook-framework-how-to-manage-extensions>`
 
 .. toctree::

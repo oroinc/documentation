@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _website-google-settings:
 
 Configure Google Setting per Website

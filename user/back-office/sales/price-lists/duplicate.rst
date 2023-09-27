@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--pricing--duplicate-price-lists:
 
 Duplicate a Price List

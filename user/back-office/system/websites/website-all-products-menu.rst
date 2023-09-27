@@ -1,6 +1,3 @@
-:oro_documentation_types: OroCommerce
-
-
 .. _sys--users--organization--menus--all-products--website:
 
 Add All Products Page to Frontend Menus per Website

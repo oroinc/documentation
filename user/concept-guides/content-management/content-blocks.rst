@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _concept-guide-content-blocks:
 
 Content Block Management Concept Guide

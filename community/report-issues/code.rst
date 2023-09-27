@@ -54,7 +54,7 @@ Example of a Well Defined Issue
 
 **Actual Result**: Country, street, city and zip/postal code fields are mandatory in the new form.
 
-**Environment**: OroCRM 1.10.8, Win10 64x, FireFox 50.1.0
+**Environment**: Win10 64x, FireFox 50.1.0
 
 **Screenshot**:
 

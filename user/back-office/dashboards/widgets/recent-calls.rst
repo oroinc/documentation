@@ -1,6 +1,5 @@
 .. _user-guide--business-intelligence--widgets--recent--calls:
 
-:oro_documentation_types: OroCRM, OroCommerce
 :oro_show_local_toc: false
 
 Recent Calls

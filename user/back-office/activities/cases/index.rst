@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-activities-overview-cases:
 
 Manage Cases in the Back-Office

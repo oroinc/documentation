@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Export Tax Rates
 ----------------
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--taxes--customer_tax_codes:
 
 Manage Customer Tax Codes in the Back-Office

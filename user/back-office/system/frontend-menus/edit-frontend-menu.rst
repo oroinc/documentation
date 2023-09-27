@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--system--menu--menu-frontend:
 
 Change a Storefront Menu

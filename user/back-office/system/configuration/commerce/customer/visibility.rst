@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys-config--configuration--commerce--customers--visibility:
 .. _user-guide--customers--configuration--visibility:
 

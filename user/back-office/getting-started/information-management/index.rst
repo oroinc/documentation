@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-data-management-basics-entities:
 .. _user-guide-data-management-basics:
 

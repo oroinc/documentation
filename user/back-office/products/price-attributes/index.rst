@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--products--price-attributes:
 
 Manage Price Attributes in the Back-Office

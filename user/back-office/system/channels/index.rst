@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-channels:
 .. _user-guide-channel-guide-type:
 .. _user-guide-channel-guide-entities:
@@ -9,7 +7,7 @@
 Configure Channels in the Back-Office
 =====================================
 
-Today, successful businesses usually have more than one sales website. These may be different online stores, business-to-business enterprises, or business-to-customer outlets. Moreover, different customers and sales-related data can be received from various survey-campaigns or memberships in clubs, funds, charity events, etc. Gaining a full understanding of all the information you receive from each of these sources, along with all the individual customer information you collect from various other sources, becomes crucial. With OroCRM's channels, you can do both with minimum effort.
+Today, successful businesses usually have more than one sales website. These may be different online stores, business-to-business enterprises, or business-to-customer outlets. Moreover, different customers and sales-related data can be received from various survey-campaigns or memberships in clubs, funds, charity events, etc. Gaining a full understanding of all the information you receive from each of these sources, along with all the individual customer information you collect from various other sources, becomes crucial. With channels, you can do both with minimum effort.
 
 Each channel record represents one source of customer-related data.
 
@@ -31,7 +29,7 @@ To create a channel:
    * **Name** --- A meaningful name used to refer to the channel in the system.
    * **Channel Type** --- A type that defines a set of default rules and settings used for the channel.
 
-   .. important:: Extending OroCRM with new channel types is a proven practice, and it can be customized subject to your specific needs and goals.
+   .. important:: Extending your Oro application with new channel types is a proven practice, and it can be customized subject to your specific needs and goals.
 
    The information collected from a channel is represented by the :ref:`entities <doc-entities>` assigned to the channel and their related entities.
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-guide-contact-reasons:
 
 Configure Contact Reasons in the Back-Office

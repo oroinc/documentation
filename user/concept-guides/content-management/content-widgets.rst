@@ -1,5 +1,4 @@
 :oro_show_local_toc: false
-:oro_documentation_types: OroCommerce
 
 .. _concept-guide-content-widgets:
 

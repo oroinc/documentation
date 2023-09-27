@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-zendesk-integration:
 .. _user-guide-zendesk-channel-integration-synchronization:
 
@@ -8,7 +6,7 @@ Configure Zendesk Integration in the Back-Office
 
 Oro applications support out of the box integration with Zendesk, enabling you to load data from your Zendesk account and process it in the Oro application. This article describes how to define and edit the integration and synchronization settings.
 
-.. hint:: While Zendesk integration capabilities are pre-implemented, OroCRM and OroCommerce can be integrated with different third-party systems.
+.. hint:: While Zendesk integration capabilities are pre-implemented, Oro application can be integrated with different third-party systems.
 
 Generate API token in Zendesk
 -----------------------------
@@ -123,7 +121,7 @@ follows:
    :header-rows: 1
  
    * - Zendesk
-     - OroCRM/OroCommerce
+     - Oro application
     
    * - Low
      - Low
@@ -144,7 +142,7 @@ follows:
    :header-rows: 1
  
    * - Zendesk
-     - OroCRM/OroCommerce
+     - Oro application
     
    * - New
      - Open
@@ -166,7 +164,7 @@ For each case created as a result of synchronization with Zendesk, a ticket is c
 The following field values are defined as follows:
   
 .. csv-table::
-  :header: "OroCRM/OroCommerce Ticket Field", "Description"
+  :header: "Oro Application Ticket Field", "Description"
   :widths: 15, 40
 
   "Ticket Number","Zendesk ticket number. Used to 
@@ -191,7 +189,7 @@ The following field values are defined as follows:
       matches the email of the Oro application Contact 'Steven Spielberg,' the **Submitter** field in the ticket will be
       filled with the value 'Steven Spielberg').
   
-  - If the ticket has been submitted to Zendesk by an agent or administrator, OroCRM/OroCommerce :term:`User` record
+  - If the ticket has been submitted to Zendesk by an agent or administrator, Oro :term:`User` record
     is tied to it, as follows: 
 
     - The email address of the submitter is checked against primary emails of the Oro application :term:`User` records:
@@ -206,7 +204,7 @@ The following field values are defined as follows:
       - If there is no matching email, the integration owner is mapped to the **Assignee** field value.
 
   "
-  "Requester","An OroCRM/OroCommerce :term:`Contact` record is tied to it, as follows:
+  "Requester","An Oro application :term:`Contact` record is tied to it, as follows:
 
   - The email address of the requester in Zendesk is checked against primary emails of the Oro application :term:`Contact` records:
 
@@ -244,7 +242,7 @@ The case fields are mapped to the Zendesk ticket fields as follows:
    :widths: 10 30
    :header-rows: 1
  
-   * - OroCRM/OroCommerce
+   * - Oro application
      - Zendesk
     
    * - Low
@@ -263,7 +261,7 @@ The case fields are mapped to the Zendesk ticket fields as follows:
    :widths: 10 30
    :header-rows: 1
  
-   * - OroCRM/OroCommerce
+   * - Oro application
      - Zendesk
     
    * - Open
