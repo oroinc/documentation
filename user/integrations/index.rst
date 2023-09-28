@@ -52,7 +52,7 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
    payment/index
    shipping/index
    ERP <erp/index>
+   Marketing <marketing/index>
+   PIM <PIM/index>
    Salesforce <salesforce>
    GS1 <gs1>
-   ERP <erp/index>
-   Marketing <marketing/index>
