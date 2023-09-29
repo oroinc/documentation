@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _warehouses-organization:
 
 Configure Warehouse Settings per Organization

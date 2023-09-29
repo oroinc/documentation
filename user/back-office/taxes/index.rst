@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 :title: Taxes Management in the OroCommerce Back-Office
 
 .. meta::

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _frontend-menus-customer-group:
 
 Customize Frontend Menus per Customer Group

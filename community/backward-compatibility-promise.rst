@@ -1,7 +1,7 @@
 :title: Our Backward Compatibility Promise
 
 .. meta::
-   :description: OroCommerce, OroCRM and OroPlatform backward compatibility promise
+   :description: Oro application backward compatibility promise
 
 .. _doc--community--backward-compatibility:
 

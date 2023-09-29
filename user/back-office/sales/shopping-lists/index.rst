@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--sales--shopping-lists:
 
 Manage Shopping Lists in the Back-Office

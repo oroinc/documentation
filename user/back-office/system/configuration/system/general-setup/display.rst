@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _configuration--general-setup--display-settings:
 
 Configure Global Display Settings

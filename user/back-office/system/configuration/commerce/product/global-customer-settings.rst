@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--commerce--product--customer-settings:
 
 Configure Global Customer Settings for Product Data Export

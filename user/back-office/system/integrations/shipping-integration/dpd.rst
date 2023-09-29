@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce, Extension
+:oro_documentation_types: Extension
 
 .. _doc--integrations--dpd:
 

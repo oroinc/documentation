@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-mc-integration:
 
 Configure Mailchimp Integration in the Back-Office

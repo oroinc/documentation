@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--taxes--link-a-tax-code_to_a_product:
 
 Link a Tax Code to a Product

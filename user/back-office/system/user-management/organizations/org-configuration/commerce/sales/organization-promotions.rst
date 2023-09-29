@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--sales--promotions-organization:
 
 Configure Promotions Settings per Organization

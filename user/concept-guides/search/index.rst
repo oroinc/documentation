@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-getting-started-search:
 
 Search Functions
@@ -31,25 +29,21 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 
 .. image:: /user/img/concept-guides/search/global-search-boost.png
    :alt: Global search boost in action
-   :scale: 60%
 
 * :ref:`Search Autocomplete <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates predictions based on searches that you start to type. It shows up-to-date product information, such as SKU, name, price, and inventory status. You can set the number of products to be displayed in the storefront search result dropdown on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
 
 .. image:: /user/img/concept-guides/search/storefront-autocomplete.png
    :alt: Search autocomplete illustration
-   :scale: 60%
 
 * :ref:`Saved Search <my-account-saved-search>` - The feature is available in the OroCommerce Enterprise edition. It enables customer users to save their search queries, view these saved search queries under the Saved Searches menu in the customer user account. You can also configure the registered customers to receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock. The configuration is available on the :ref:`global <configuration--guide--commerce--configuration--saved-search>`, :ref:`organization <organization-commerce--configuration--saved-search>`, and :ref:`website <configuration--website-commerce--search--saved-search>` levels.
 
 .. image:: /user/img/concept-guides/search/saved-search.png
    :alt: Saved search illustration
-   :scale: 60%
 
 * :ref:`Fuzzy Search in the Storefront <configuration--guide--commerce--configuration--fuzzy-search>` - The feature is available in the OroCommerce Enterprise edition. Fuzzy searches help you find relevant results even when the search terms are misspelled. When enabled, it searches for the text that matches the term closely instead of exactly. You can set the number of errors in each word the application can ignore or set a threshold for the error-tolerant search usage. The configuration is available on the global and :ref:`website <configuration--website-commerce--search--fuzzy-search>` levels.
 
 .. image:: /user/img/concept-guides/search/fuzzy-search-storefront.png
    :alt: Fuzzy search with 2 errors illustration
-   :scale: 60%
 
 * :ref:`Search History <configuration--guide--commerce--configuration--search-history>` - If the feature is enabled, you can view a history of all searches performed by a customer user in the storefront under **Marketing > Search > Search History**. The grid includes information on all keywords entered by a user, the search result type (product autocomplete, product search, or empty), the number of products found (if applicable), the date and time of the search, the website where the search was performed, the localization used when the search was performed, and the name of the customer and customer user who performed the search (if applicable).
 

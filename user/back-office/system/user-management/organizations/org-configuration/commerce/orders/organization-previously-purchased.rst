@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--commerce--orders--previously-purchased--org:
 
 Configure Purchase History Settings per Organization

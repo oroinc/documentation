@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-reports:
 
 Manage System and Custom Reports in the Back-Office

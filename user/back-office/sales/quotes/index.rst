@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--sales--quotes:
 
 Manage Quotes in the Back-Office

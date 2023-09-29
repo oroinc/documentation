@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--configuration--product-search:
 
 Configure Global Settings for Product Search

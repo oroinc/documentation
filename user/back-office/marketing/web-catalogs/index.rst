@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--web-catalog:
 
 Manage Web Catalogs in the Back-Office

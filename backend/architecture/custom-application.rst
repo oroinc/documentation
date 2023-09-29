@@ -9,21 +9,19 @@ Custom Oro Application
 
 No two businesses are alike. This motto is part of Oro's product philosophy, which is why flexibility is one of
 the fundamental principles driving architecture. Depending on what you are planning to build, you can
-create your custom application with minimum functions starting either with |OroPlatform|, or |OroCRM|, or
-|OroCommerce| application as a baseline. No matter what is your starting point, there is no difference
-in the customization process.
+create your custom application with minimum functions starting with the |OroCommerce| application as a baseline.
 
 Application Repository and Installation
 ---------------------------------------
 
 Before you start working on a new project, it is essential to have a version control system in place.
-The easiest way to start is to |fork application repository| of |OroPlatform|, |OroCRM| or |OroCommerce| on GitHub.
+The easiest way to start is to |fork application repository| of |OroCommerce| on GitHub.
 
 Once code repository is ready, please follow :ref:`installation <installation>` instructions.
 
 .. note::
 
-    A newly created application repository should be used instead of the |https://github.com/orocrm/crm-application.git|
+    A newly created application repository should be used instead of the |https://github.com/oroinc/orocommerce-application.git|
 
 You can use development mode to work on customizations when your application is up and running. To warm up the
 application cache in development mode, please run:
@@ -33,7 +31,7 @@ application cache in development mode, please run:
         php bin/console cache:clear --env=dev
 
 To access the application in development mode, add `index_dev.php` to the base URL
-(example: ``http://orocrm.example.com/index_dev.php``).
+(example: ``http://orocommerce.example.com/index_dev.php``).
 
 .. _application-custom-code:
 
@@ -41,7 +39,7 @@ Application Custom Code
 -----------------------
 
 Oro application structure is based on |Symfony Standard Edition| and we highly recommend to follow
-|Symfony Best Practices| for any custom application you build on top of OroPlatform, OroCRM, or OroCommerce.
+|Symfony Best Practices| for any custom application you build on top OroCommerce.
 
 In the root folder of your application, there is an `src` folder. Use it as a working directory
 for your custom project and put your custom code there. Like in Symfony applications, all custom code in the Oro application

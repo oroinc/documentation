@@ -1,9 +1,7 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
-:title: Customers Management in the OroCommerce and OroCRM Back-Office
+:title: Customers Management in the Oro Application Back-Office
 
 .. meta::
-   :description: Extensive documentation on accounts, contacts, customers, customer groups, customer users, and user roles management for the OroCommerce and OroCRM back-office users
+   :description: Extensive documentation on accounts, contacts, customers, customer groups, customer users, and user roles management for the Oro Application back-office users
 
 .. _user-guide--customer-entities:
 
@@ -12,14 +10,10 @@ Manage Customer Entities in the Back-Office
 
 .. hint:: This section is part of the :ref:`Customer Management <concept-guide-customers>` topic that provides a general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
 
-In the applications where an integration between Commerce and CRM is configured, the Customer menu contains references to entities from both applications:
-
 .. image:: /user/img/customers/accounts/customers_menu.png
    :alt: The entities under the customer menu
 
-*Account* and *Contact* come from CRM, while *Customers* and *Customer Users* come from Commerce.
-
-Below is an illustration of the account hierarchy where CRM-related concepts are marked grey, and Commerce-related concepts are marked white.
+Below is an illustration of the account hierarchy in Oro application.
 
 .. image:: /user/img/customers/accounts/account_customer_schema.png
    :width: 50%

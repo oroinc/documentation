@@ -51,7 +51,6 @@ Behat can integrate with debugging tools like Xdebug or Zend Debugger. By config
 An example of setting up a debugging environment:
 
 .. image:: /img/backend/tests/behat_configuration.png
-    :scale: 70
     :alt: Behat configuration
 
 Running a Group of Behat Tests
@@ -60,7 +59,6 @@ Running a Group of Behat Tests
 You can also run a group of tests. For this purpose, mark them with the right tag (for example, @failed-behat-test) and run the test with it.
 
 .. image:: /img/backend/tests/behat_configuration_with_tag.png
-    :scale: 73
     :alt: Behat configuration with tag
 
 Taking Screenshots
@@ -135,5 +133,4 @@ Debugging behat tests is an essential skill for ensuring the reliability and eff
 .. hint:: The screenshots created during failed Behat tests include the cursor the last position mouse when moving the mouse around, except for situations when there are alerts on the page. This helps identify where the failure occurred, making it quicker to take corrective action.
 
     .. image:: /img/backend/tests/cursor_position_at_failed_behat_tests.png
-        :scale: 55
         :alt: Cursor position at failed behat tests

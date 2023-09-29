@@ -1,4 +1,4 @@
-:title: OroCommerce, OroCRM, OroPlatform Environment Setup for Enterprise Edition
+:title: Oro Application Environment Setup for Enterprise Edition
 
 .. _environment-setup-enterprise:
 

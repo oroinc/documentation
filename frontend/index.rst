@@ -1,4 +1,4 @@
-:title: OroCommerce, OroCRM, OroPlatform Frontend Developer Documentation
+:title: Oro Application Frontend Developer Documentation
 
 .. meta::
    :description: Instructions in the storefront and back-office themes customization for the frontend developers
@@ -13,7 +13,7 @@ This documentation provides instruction on how to customize OroPlatform-based ap
 There are two types of themes:
 
  - :ref:`Storefront themes <dev-doc-frontend-storefront>` used for OroCommerce storefront
- - :ref:`Back-Office themes <dev-doc-frontend-back-office-theming>` used for OroCommerce back-office, OroPlatform, and OroCRM
+ - :ref:`Back-Office themes <dev-doc-frontend-back-office-theming>` used for Oro application back-office
 
 .. hint:: Back-office themes cannot be used in the storefront and vice-versa.
 

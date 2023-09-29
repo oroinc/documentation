@@ -1,7 +1,5 @@
 .. _getting-started--navigation:
 
-:oro_documentation_types: OroCRM, OroCommerce
-
 Navigation
 ==========
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Configure General Setup Settings per Website
 ============================================
 

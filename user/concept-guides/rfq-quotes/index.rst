@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _concept-guide-rfq-quotes:
 
 RFQ and Quote Management Concept Guide

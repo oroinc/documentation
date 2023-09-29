@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--master-catalog:
 .. _user-guide--products--master-catalog:
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-intro-log-in-edit-profile:
 
 Manage User Menu in the Back-Office

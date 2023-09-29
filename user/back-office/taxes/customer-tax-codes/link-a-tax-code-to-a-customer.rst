@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--taxes--link-a-tax-code-to-a-customer:
 
 Link a Tax Code to a Customer or Customer Group

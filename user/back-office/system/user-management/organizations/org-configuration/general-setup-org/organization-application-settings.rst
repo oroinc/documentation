@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-configuration-application-org:
 
 Configure Application Settings per Organization

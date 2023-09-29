@@ -993,7 +993,7 @@ Where:
 Sanitizing Configuration
 ------------------------
 
-Regardless of application type (OroCommerce or OroCRM), each has its own default sanitize rules (`sanitize.method.rawsql` and `sanitize.method.update`). However, you can add your own rules, remove a specific default rule, or completely override them.
+Regardless of the Oro application type, each has its own default sanitize rules (`sanitize.method.rawsql` and `sanitize.method.update`). However, you can add your own rules, remove a specific default rule, or completely override them.
 
 The sanitize configuration is grouped under the `sanitize` node and supports the following sanitize methods:
 

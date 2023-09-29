@@ -11,7 +11,7 @@ Related Documentation
 ---------------------
 
 * :ref:`Message Queue Jobs and Transport Configuration <op-structure--mq>`
-* :ref:`Message Queue Component in Oro Application <op-structure--mq--complete>`
+* :ref:`Message Queue Component in the Oro Application <op-structure--mq--complete>`
 * :ref:`DBAL Transport Options and Limitations <op-structure--mq--mq-bundle--dbal>`
 * :ref:`AmqpMessageQueue Component (Enterprise Edition Only) <op-structure--mq--rabbitmq--intro>`
 * :ref:`RabbitMQ Transport (via AmqpOroMessageQueue Bundle) <op-structure--mq--rabbitmq>`

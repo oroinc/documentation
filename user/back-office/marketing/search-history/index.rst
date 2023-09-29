@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-search-search-history:
 
 Manage Search History in the Back-Office

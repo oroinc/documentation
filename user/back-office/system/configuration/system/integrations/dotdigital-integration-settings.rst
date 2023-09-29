@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM
+
 :oro_show_local_toc: false
 
 .. _admin-configuration-dotmailer-integration-settings:

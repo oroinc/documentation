@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--pricing--multiple--currencies:
 
 Manage Prices in Multiple Currencies

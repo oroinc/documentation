@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--website--edit--price-lists:
 
 Configure Price Lists per Website

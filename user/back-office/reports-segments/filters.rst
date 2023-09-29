@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--business-intelligence--filters-management:
 .. _user-guide-getting-started-filters:
 .. _user-guide-filters-management:

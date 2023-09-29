@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--organization-quotes:
 
 Configure Quote Settings per Organization

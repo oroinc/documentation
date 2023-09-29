@@ -1,15 +1,16 @@
-:title: Extending OroCommerce
+:title: Extending Oro Application
 
 .. meta::
-   :description: Best practices on extending the OroCommerce functionality on the Oro applications
+   :description: Best practices on extending the Oro application functionality
 
 .. _dev-extend-commerce:
 
-Extending OroCommerce
-=====================
+Extending Oro Application
+=========================
 
 .. toctree::
    :maxdepth: 1
 
    payment/index
    shipping
+   how-to-co-install-applications

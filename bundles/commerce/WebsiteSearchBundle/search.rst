@@ -4,7 +4,7 @@ Perform Search
 Search Engine
 -------------
 
-Search engine is an entry point in Oro application that is used to perform search request. Search engine implements  `Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface` interface with one method - `search(Query $query, array $context = [])`.
+Search engine is an entry point in the Oro application that is used to perform search request. Search engine implements  `Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface` interface with one method - `search(Query $query, array $context = [])`.
 
 This method accepts a low level query object (`Oro\\Bundle\\SearchBundle\\Query\Query`), sends a request to the search engine and returns result object (`Oro\\Bundle\\SearchBundle\\Query\Result`). The `$context` variable may be used to pass additional parameters specific for the search engines. A default website search engine is accessible via the `oro_website_search.engine` service.
 

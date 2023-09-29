@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-ldap-integration:
 
 Configure LDAP Integration in the Back-Office

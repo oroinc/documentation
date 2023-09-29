@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 Create a User in the Back-Office
 ================================
 

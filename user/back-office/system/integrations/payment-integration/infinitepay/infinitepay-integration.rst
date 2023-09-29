@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--integrations--manage-integrations--infinitepay:
 
 Configure InfinitePay Payment Method Integration in the Back-Office

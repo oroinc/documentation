@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-management-groups:
 
 Configure User Groups in the Back-Office

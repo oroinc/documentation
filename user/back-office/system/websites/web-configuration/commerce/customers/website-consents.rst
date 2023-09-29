@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _admin--guide--commerce--configuration--customers--consents--enable--website:
 
 Enable Consents Settings per Website

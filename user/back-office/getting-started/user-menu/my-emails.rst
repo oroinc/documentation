@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-my-oro-emails:
 .. _user-guide-using-emails:
 .. _doc-activities-emails-actions-compose:

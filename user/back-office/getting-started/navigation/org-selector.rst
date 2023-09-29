@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-getting-started-company-structure:
 
 
@@ -46,13 +44,13 @@ The corporate structure is essential, as it defines the scope of the user’s ta
 business application, the Oro application, provides tools to reflect the corporate structure typically.
 
 
-How Corporate Structure is Reflected in OroCommerce and OroCRM
---------------------------------------------------------------
+How Corporate Structure is Reflected in Oro Application
+-------------------------------------------------------
 
 Business Units
 ^^^^^^^^^^^^^^
 
-In OroCommerce and OroCRM, every business, division, or team of any kind can be represented by a business unit. The units can be
+In Oro application, every business, division, or team of any kind can be represented by a business unit. The units can be
 hierarchically organized in a tree-like structure that reflects the actual subordination of the organization.
 
 So, for example, to represent the hierarchy of the above-mentioned telecom in California, we need to create two business
@@ -102,7 +100,7 @@ Please refer to the Access and permissions section for more details.
 Organizations
 ^^^^^^^^^^^^^
 
-In addition to the business unit hierarchy, OroCommerce and OroCRM Enterprise Editions provide the ability to create several
+In addition to the business unit hierarchy, Oro application Enterprise Editions provide the ability to create several
 Organizations. Organizations may be described as large business units, independent enough in their operations to
 require a high degree of separation and customization. Organizations provide a much higher degree of separation - every
 organization in the Oro application is basically a business in its own right. They might have their own hierarchies of business
@@ -157,7 +155,7 @@ Working with the Global Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Global Organization provides users with simultaneous access to all the records of all the organizations they are
-assigned to. There cannot be more than one global organization in OroCommerce and OroCRM.
+assigned to. There cannot be more than one global organization in Oro application.
 
 All grids will have an additional *"Organization"* column when working in a global organization. The *"Organization"* field is displayed for each record viewed. The organization field is not editable.
 

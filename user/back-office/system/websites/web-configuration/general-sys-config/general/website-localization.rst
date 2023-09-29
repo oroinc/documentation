@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--websites--sysconfig--general-setup--localization:
 
 Configure Localization Settings per Website

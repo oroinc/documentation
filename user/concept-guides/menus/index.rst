@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _menu-management-concept-guide:
 
 Storefront and Back-Office Menu Management Concept Guide
@@ -23,7 +21,6 @@ As a visual reference, we have used the default OroCommerce theme to illustrate 
 
   .. image:: /user/img/concept-guides/websites/frontend_menu.png
      :alt: Illustrate all available storefront menu items in the storefront
-     :scale: 70%
 
 |
 

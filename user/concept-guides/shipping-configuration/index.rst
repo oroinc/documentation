@@ -1,8 +1,6 @@
 .. _admin-guide--shipping:
 .. _user-guide--shipping:
 
-:oro_documentation_types: OroCommerce
-
 Shipping Configuration Concept Guide
 ====================================
 

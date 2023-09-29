@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _frontend-menus-website:
 
 Customize Frontend Menus per Website

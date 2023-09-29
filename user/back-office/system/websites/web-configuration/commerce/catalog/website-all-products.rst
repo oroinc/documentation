@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--catalog--special-pages--website:
 
 Configure All Products Page per Website

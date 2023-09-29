@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Move an Order Through Its Lifecycle
 ===================================
 

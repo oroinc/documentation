@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--users--organization--commerce--products--search:
 
 Configure Product Search Settings per Organization

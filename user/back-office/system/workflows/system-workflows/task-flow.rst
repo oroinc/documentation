@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc--workflows--task-flow:
 
 Configure Task Flow in the Back-Office

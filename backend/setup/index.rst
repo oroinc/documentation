@@ -1,4 +1,4 @@
-:title: OroCommerce, OroCRM, OroPlatform Environment Setup Configuration and Installation
+:title: Oro Application Environment Setup Configuration and Installation
 
 .. meta::
    :description: Core concepts of the Oro application setup and upgrading requirements for the backend developers

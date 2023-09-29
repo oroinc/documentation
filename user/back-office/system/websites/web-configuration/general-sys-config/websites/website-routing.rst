@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--websites--sysconfig--websites--routing:
 .. _user-guide--marketing--web-catalog--enable-per-website:
 

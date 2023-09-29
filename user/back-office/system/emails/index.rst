@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-guide-email-configuration:
 
 Configure Emails in the Back-Office

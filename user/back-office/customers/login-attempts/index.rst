@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--customers--customer-login-attempts:
 
 Customer User Login Attempts

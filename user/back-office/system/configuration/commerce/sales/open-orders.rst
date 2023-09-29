@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--configuration--sales-order-history:
 
 Configure Global Order History Settings (Open Orders)

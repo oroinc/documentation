@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _system--user-mngm--organization--configuration--commerce--customers--customer-users:
 
 Configure Customer User Settings per Organization

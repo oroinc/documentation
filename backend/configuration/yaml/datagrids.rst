@@ -540,7 +540,7 @@ min_length
 
 type: ``integer`` default: ``0``
 
-Specify the minimum length of the search string. When the search string length is below the limit, OroCRM shows a validation message to the user and ignores the filter value.
+Specify the minimum length of the search string. When the search string length is below the limit, Oro application shows a validation message to the user and ignores the filter value.
 
 order
 ~~~~~

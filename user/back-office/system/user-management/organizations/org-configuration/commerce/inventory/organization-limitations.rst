@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _inventory-limitations-org:
 
 Configure Quantity Limitation Settings per Organization

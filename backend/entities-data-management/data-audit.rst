@@ -47,7 +47,7 @@ Additional Fields
 
 You can store additional fields in every entry of the audit log. There are no requirements for the type of data. If the object is passed to an array, it is properly sanitized and converted to the supported format. To clarify the need for additional fields, see the example below:
 
-Suppose you create an extension that integrates OroCRM with an external System A. This integration synchronizes Question entities between systems. However, the identifier of the Question entity is different in CRM (**id**) and System A (**subject**). System A tracks changes in CRM calling API audit endpoint and matches Questions on its side by subject, so it will be helpful to attach this field to every response (for example, when a Question is removed). To make it happen, one can use "additional fields". The entity must implement *AuditAdditionalFieldsInterface*.
+Suppose you create an extension that integrates Oro application with an external System A. This integration synchronizes Question entities between systems. However, the identifier of the Question entity is different in Oro application (**id**) and System A (**subject**). System A tracks changes in Oro application calling API audit endpoint and matches Questions on its side by subject, so it will be helpful to attach this field to every response (for example, when a Question is removed). To make it happen, one can use "additional fields". The entity must implement *AuditAdditionalFieldsInterface*.
 
 In our example, it can look like this:
 

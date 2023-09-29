@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _import-customer-users:
 
 Import Customer User Details

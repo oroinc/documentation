@@ -1,9 +1,7 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
-:title: Reports and Segments Management in the OroCommerce and OroCRM Back-Office
+:title: Reports and Segments Management in the Oro Application Back-Office
 
 .. meta::
-   :description: Instructions on reports and flexible data segments configuration and management for the OroCommerce and OroCRM back-office users
+   :description: Instructions on reports and flexible data segments configuration and management for the Oro application back-office users
 
 
 Manage Reports and Segments in the Back-Office

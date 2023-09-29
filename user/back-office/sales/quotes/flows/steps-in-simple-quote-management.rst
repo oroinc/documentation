@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _simple-quote-management-steps:
 
 Simple Quote Management: Steps and Transitions

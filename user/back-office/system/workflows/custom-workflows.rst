@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc--workflows--actions--custom:
 
 Manage Custom Workflows in the Back-Office

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--customer-groups:
 
 Manage Customer Groups in the Back-Office

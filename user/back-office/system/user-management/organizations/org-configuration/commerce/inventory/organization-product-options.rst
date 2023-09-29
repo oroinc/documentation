@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--inventory--product-options--organization:
 
 Configure Product Options Settings per Organization

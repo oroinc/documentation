@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. begin_multi_currency_opportunities
 
 Multi-Currency Opportunities

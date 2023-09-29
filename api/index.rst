@@ -1,6 +1,6 @@
 :oro_show_local_toc: false
 
-:title: OroCommerce and OroCRM Web API Development
+:title: Oro Application Web API Development
 
 .. meta::
    :description: WebAPI engine architecture and backend developer guides

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _doc-website-configuration:
 .. _user-guide--system-websites--configure-website:
 

@@ -13,37 +13,31 @@ Environment Setup
 2. Install |Windows Terminal|. It is not required to use a Windows Terminal/Powershell but we recommend using it as it comes with the built-in WSL integration. Please make sure that you run your windows terminal as an administrator. You may be prompted to reboot your PC after installation.
 
    .. image:: /img/backend/setup/wsl/terminal-successfull-installation.png
-      :scale: 110%
       :alt: An example of a successful installation of Windows Terminal
 
    If you encounter an error during installation, please follow the link provided in the terminal to troubleshoot the issue or refer to the |official Microsoft WSL documentation|:
 
    .. image:: /img/backend/setup/wsl/terminal-error.png
-      :scale: 140%
       :alt: An example of an error during terminal installation
 
    Once rebooted, create a new NIX username and password to log into Ubuntu.
 
    .. image:: /img/backend/setup/wsl/logged-in-ubuntu.png
-      :scale: 140%
       :alt: An example of terminal messages displayed once you log into ubuntu
 
    To switch to Ubuntu on your Windows Powershell, click on the dropdown next to the **+** tab and select Ubuntu from the list.
 
    .. image:: /img/backend/setup/wsl/powershell-ubuntu-dropdown-list.png
-      :scale: 110%
       :alt: Ubuntu option in the Powershell dropdown
 
    To avoid switching to Ubuntu manually every time, you can set up your Windows Powershell to run Ubuntu by default on startup. For this, navigate to your Windows settings > Startup and change the **Default Profile** to *Ubuntu*, as illustrated in the screenshot below:
 
    .. image:: /img/backend/setup/wsl/ubuntu-on-powershell.png
-      :scale: 80%
       :alt: Change default terminal profile to Ubuntu
 
    As WSL integration does not always work well with the Windows file system, go to the Linux file system by typing in ``cd`` in the terminal:
 
    .. image:: /img/backend/setup/wsl/switch-to-linux-filesystem.png
-      :scale: 109%
       :alt: An example of switching to the Linux file system
 
 3. Install |Docker Desktop for Windows|. During installation, make sure that the checkbox for *Install required Windows components for WSL 2* is selected. Reboot your PC once the installation is finished.
@@ -127,7 +121,6 @@ Environment Setup
     Run in Ubuntu ``ip addr | grep eth0`` to see the IP address of the WSL 2 virtual machine.
 
     .. image:: /img/backend/setup/wsl/ip-addr-ubuntu.png
-       :scale: 110%
        :alt: IP address of WSL 2 virtual machine
 
     Map WSL 2 port to the internal host ``netsh interface portproxy add v4tov4 listenport=8000 listenaddress=0.0.0.0 connectport=8000 connectaddress=172.22.33.170``.
@@ -135,27 +128,21 @@ Environment Setup
     Configure Windows Defender Firewall, as illustrated below:
 
     .. image:: /img/backend/setup/wsl/firewall-1.png
-       :scale: 100%
        :alt: Configure Windows Defender Firewall step 1
 
     .. image:: /img/backend/setup/wsl/firewall-2.png
-       :scale: 100%
        :alt: Configure Windows Defender Firewall step 2
 
     .. image:: /img/backend/setup/wsl/firewall-3.png
-       :scale: 100%
        :alt: Configure Windows Defender Firewall step 3
 
     .. image:: /img/backend/setup/wsl/firewall-4.png
-       :scale: 100%
        :alt: Configure Windows Defender Firewall step 4
 
     .. image:: /img/backend/setup/wsl/firewall-5.png
-       :scale: 100%
        :alt: Configure Windows Defender Firewall step 5
 
     .. image:: /img/backend/setup/wsl/firewall-6.png
-       :scale: 100%
        :alt: Configure Windows Defender Firewall step 6
 
 12. Restart the terminal and the web browser to get them ready.

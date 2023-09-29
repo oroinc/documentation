@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--guest-seo--global:
 
 Configure Global SEO Settings

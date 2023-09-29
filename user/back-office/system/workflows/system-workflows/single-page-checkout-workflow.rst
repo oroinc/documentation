@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _system--workflows--single-page-checkout:
 
 Configure Single Page Checkout Workflow in the Back-Office

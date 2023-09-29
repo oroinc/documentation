@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _doc--integrations--fedex:
 
 Configure FedEx Shipping Integration in the Back-Office

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--marketing--web-catalog--node--visibility:
 .. _user-guide--marketing--web-catalog--content--visibility:
 .. _user-guide--marketing--web-catalog--customize:

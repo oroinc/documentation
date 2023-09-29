@@ -1,4 +1,4 @@
-:title: Entities Management in OroCommerce, OroCRM, OroPlatform
+:title: Entities Management in Oro Application
 
 .. meta::
    :description: A step by step tutorial for entities management in the Oro applications for the backend developers

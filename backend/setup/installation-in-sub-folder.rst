@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _system-websites--prepare-to-host-a-website-in-the-domain-sub-folder:
 
 Installation in Sub-Folder

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--taxes--tax-configuration:
 
 Configure Global Tax Calculation Settings

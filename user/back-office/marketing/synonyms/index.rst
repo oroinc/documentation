@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide-search-synonyms:
 
 Create Storefront Search Synonyms

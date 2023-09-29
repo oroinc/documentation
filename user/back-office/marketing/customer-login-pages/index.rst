@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _customer-login-pages:
 
 Manage Customer Login Pages in the Back-Office

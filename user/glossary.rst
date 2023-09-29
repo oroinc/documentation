@@ -1,7 +1,7 @@
-:title: OroCommerce and OroCRM Glossary
+:title: OroCommerce Glossary
 
 .. meta::
-   :description: An alphabetical list of OroCRM and OroCommerce terms with definitions
+   :description: An alphabetical list of OroCommerce terms with definitions
 
 .. _glossary:
 
@@ -31,9 +31,6 @@ Glossary
 
    OroCommerce
       An open-source B2B Commerce solution with built in sales interaction tools for a commerce business.
-
-   OroCRM
-      An open-source CRM with built in marketing automation tools for a commerce business.
    
    Customer 
       A system :term:`entity <Entity>`. Customers represent businesses, companies or divisions who buy products using the storefront.

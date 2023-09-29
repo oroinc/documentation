@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-capabilities:
 
 Configure Entity and System Capabilities in the Back-Office
@@ -11,7 +9,7 @@ Access to different capabilities in the back-office depends on the capabilities 
 
 You can enable or disable entity-specific and system-specific capabilities in the **Entity** section when creating or updating a role in your application, as illustrated below:
 
-.. warning:: Keep in mind that capabilities available in your instance depend on the Oro application installed (for example, OroCRM has fewer capabilities than OroCommerce).
+.. warning:: Keep in mind that capabilities available in your instance depend on the Oro application installed.
 
 .. image:: /user/img/system/user_management/all_capabilities.png
 

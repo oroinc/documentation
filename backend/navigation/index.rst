@@ -1,4 +1,4 @@
-:title: Backend Navigation Customization of OroCommerce, OroCRM, OroPlatform
+:title: Backend Navigation Customization of Oro Application
 
 .. meta::
    :description: Menus, breadcrumbs, and titles customization manual for the backend developers
@@ -12,7 +12,7 @@ Navigation
 Menus
 -----
 
-The OroPlatform and the OroCRM come with a rich user interface. You can access every application part by browsing the provided navigation items.
+Oro Applications come with a rich user interface. You can access every application part by browsing the provided navigation items.
 
 OroPlatform leverages the famous |KnpMenuBundle| to provide highly customizable menus. You can add your own menu items to access your project-specific interfaces or even replace existing items.
 

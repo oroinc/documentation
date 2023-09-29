@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--commerce--design--theme--theme-settings--website:
 
 Configure Theme Settings per Website

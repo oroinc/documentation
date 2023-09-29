@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--shipping-order:
 
 Add a Shipping Tracking Number to the Order

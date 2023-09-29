@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--inventory--manage-levels:
 
 Manage Inventory Levels in the Back-Office

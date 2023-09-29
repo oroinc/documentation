@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _system-configuration-integrations-google:
 .. _admin-configuration-integrations-google-gmail-oauth:
 

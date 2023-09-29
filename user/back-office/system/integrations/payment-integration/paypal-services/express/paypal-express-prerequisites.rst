@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--prerequisites--paypal-express:
 
 Prerequisites for PayPal Express Services Integration

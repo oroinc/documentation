@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-activities-events:
 
 Create and Manage Calendar Events in the Back-Office
@@ -11,7 +9,7 @@ Create and Manage Calendar Events in the Back-Office
    create-calendar-event
    manage-calendar-event
 
-In the Oro application, you can create and monitor planned activities as calendar events. These planned activities may be linked to the related data in Oro application (e.g., a demo may be linked to the opportunity in OroCRM and to the request for a quote in OroCommerce).
+In the Oro application, you can create and monitor planned activities as calendar events. These planned activities may be linked to the related data in Oro application (e.g., a demo may be linked to the opportunity and request for a quote).
 
 .. note:: You can also see a short demo on |how to create and manage events in your Oro application| or continue reading the guidance below.
 

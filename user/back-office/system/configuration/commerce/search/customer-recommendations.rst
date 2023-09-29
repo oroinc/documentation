@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _system-configuration--commerce--search--customer-recommendation:
 
 Configure Global Customer Recommendations Settings

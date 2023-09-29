@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-mailchimp-campaign:
 
 Send an Email Campaign via Mailchimp
@@ -84,7 +82,7 @@ To create an audience on the Mailchimp side:
 Oro Side
 ^^^^^^^^
 
-To upload subscribers from OroCRM into the newly created Mailchimp audience, synchronize the applications:
+To upload subscribers from the Oro application into the newly created Mailchimp audience, synchronize the applications:
 
 1. Open Oro application.
 #. Navigate to **System > Manage Integrations** in the main menu.
@@ -220,7 +218,7 @@ wish to promote your email in social media, select **Connect to Twitter** or **C
 Receive Campaign Statistics on the Oro Side
 -------------------------------------------
 
-Once you have sent out your email campaign in Mailchimp, information about your email campaign should have been exported to OroCRM.
+Once you have sent out your email campaign in Mailchimp, information about your email campaign should have been exported to the Oro application.
 
 As soon as export has been completed, your email campaign should appear in **Marketing > Email Campaigns.** By clicking on your recent campaign,
 you will be able to see subscriber activity statistics, such as the number of clicks, bounces, opens, etc. Numbers in each column for each contact define the number of times an action has been performed, e.g., 2 opened, 1 click, 1 unsubscribe. These statistics will help you understand the outcome of your campaign and let you filter contacts for the next one.
@@ -228,7 +226,7 @@ you will be able to see subscriber activity statistics, such as the number of cl
 .. image:: /user/img/marketing/marketing/mailchimp/o_email_campaign_info.jpg
    :alt: Receive campaign statistics on the Oro application side
 
-.. note:: Please note that sometimes Mailchimp's summary information may not match the OroCRM summary in the same report. This may happen because one set of statistics comes from Mailchimp directly. The other is generated as we receive specific reporting data back about recipients.
+.. note:: Please note that sometimes Mailchimp's summary information may not match the Oro application summary in the same report. This may happen because one set of statistics comes from Mailchimp directly. The other is generated as we receive specific reporting data back about recipients.
 
 For instance, if you need to exclude customers who did not open your email from the next campaign, go to **Marketing > Marketing List> Create New Marketing List.** Fill in the mandatory fields, remembering to include at least one contact column below.
 

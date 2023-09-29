@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--configuration--search-history:
 
 Configure Global Search History Settings

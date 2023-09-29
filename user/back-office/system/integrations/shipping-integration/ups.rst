@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _doc--integrations--ups:
 
 Configure UPS Shipping Integration in the Back-Office

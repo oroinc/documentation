@@ -1,7 +1,5 @@
 .. _user-guide-reports-accepted-consents:
 
-:oro_documentation_types: OroCommerce
-
 Reports with Accepted Consents
 ==============================
 

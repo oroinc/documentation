@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _system--workflows--quote--understanding:
 
 Configure Quote Workflows in the Back-Office

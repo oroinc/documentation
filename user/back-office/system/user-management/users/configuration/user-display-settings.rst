@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-my-user-configuration-display:
 
 Configure Display Settings per User

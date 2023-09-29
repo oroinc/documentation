@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _config_guide--localization--organization-localization:
 
 Configure Localization Settings per Organization

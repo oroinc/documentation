@@ -1,7 +1,5 @@
 .. _user-guide--consents--localizing-consents:
 
-:oro_documentation_types: OroCommerce
-
 Localize Consents
 -----------------
 

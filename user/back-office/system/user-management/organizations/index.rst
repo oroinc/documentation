@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-management-organizations:
 .. _user-ee-multi-org:
 .. _user-ee-multi-org-system:

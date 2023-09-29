@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _tax-rules:
 
 Manage Tax Rules in the Back-Office

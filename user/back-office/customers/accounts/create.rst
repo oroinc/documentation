@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM
-
 .. _user-guide-accounts-create:
 
 Create an Account

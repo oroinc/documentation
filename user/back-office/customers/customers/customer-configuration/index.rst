@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--customers--configuration--settings:
 
 Configure Settings per Customer

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _admin-configuration-application-website:
 
 Configure Application Settings per Website

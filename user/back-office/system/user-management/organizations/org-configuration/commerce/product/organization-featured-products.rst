@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--users--organization--commerce--products--featured-products:
 
 Configure Settings for Featured Product per Organization

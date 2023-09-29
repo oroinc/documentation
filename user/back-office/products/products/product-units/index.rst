@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--products--product-units-in-use:
 
 Manage Product Units in the Back-Office

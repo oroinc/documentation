@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _import-taxes:
 
 Import Taxes Rates

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 :orphan:
 
 .. not yet implemented. Should stay orphan for now.

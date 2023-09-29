@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-my-profile-oauth:
 
 Add OAuth Applications under My User Menu

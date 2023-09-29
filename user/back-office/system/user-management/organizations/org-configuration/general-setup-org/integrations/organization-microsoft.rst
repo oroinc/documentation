@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _organization-configuration-microsoft:
 
 Configure Microsoft Settings per Organization

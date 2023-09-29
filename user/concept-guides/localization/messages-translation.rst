@@ -1,7 +1,5 @@
 .. _localization--translations--messages:
 
-:oro_documentation_types: OroCommerce
-
 Translate Labels, Options, and Messages
 =======================================
 

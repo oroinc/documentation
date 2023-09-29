@@ -1,7 +1,7 @@
 :title: Configure Restrictions and Limitations for Organizations
 
 .. meta::
-   :description: A guide on how to add and configure organization types to provide a set of restrictions and limitations for organizations in the Enterprise editions of OroCommerce, OroCRM, and OroPlatform.
+   :description: A guide on how to add and configure organization types to provide a set of restrictions and limitations for organizations in the Enterprise editions of Oro applications.
 
 .. _dev-organization-types:
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-user-management-users-actions:
 .. _doc-user-management-users-actions-create:
 .. _user-management-users:

@@ -1,9 +1,7 @@
-:oro_documentation_types: OroPlatform, OroCRM, OroCommerce, OroMarketplace
-
-:title: OroCommerce, OroCRM and OroMarketplace Integrations Documentation
+:title: OroCommerce and OroMarketplace Integrations Documentation
 
 .. meta::
-   :description: Integrations documentation for the OroCommerce, OroCRM and OroMarketplace users
+   :description: Integrations documentation for the Oro application and OroMarketplace users
 
 Integrations
 ============

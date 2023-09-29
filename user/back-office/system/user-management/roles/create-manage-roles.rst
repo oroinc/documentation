@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-user-management-permissions-roles--interface:
 .. _user-guide-user-management-permissions-roles--actions:
 

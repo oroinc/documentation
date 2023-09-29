@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--configuration--payment-method-integration--payment-actions:
 
 Payment Actions

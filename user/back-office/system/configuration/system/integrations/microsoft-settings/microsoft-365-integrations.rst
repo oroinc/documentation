@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-integrations-microsoft:
 
 Configure Microsoft 365 Integration in the Back-Office

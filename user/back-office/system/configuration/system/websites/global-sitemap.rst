@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _sys--config--sysconfig--websites--sitemap:
 
 Configure Global Sitemap Settings

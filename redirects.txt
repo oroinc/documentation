@@ -361,3 +361,6 @@ user/back-office/system/configuration/system/integrations/microsoft-settings/oro
 user/back-office/system/configuration/system/integrations/google-settings/oroconnector-gmail /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-google
 user/back-office/activities/emails/oroconnector-gmail/ /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-google
 user/back-office/activities/emails/oroconnector-outlook/ /user/back-office/activities/emails/oroconnector-microsoft
+orocrm-2.6-2.3-2.0-1.12.rst/ /community/release-process
+backend/extend-crm/how-to-co-install-applications /backend/extend-commerce/how-to-co-install-applications
+backend/extend-crm/index /backend/extend-commerce/how-to-co-install-applications

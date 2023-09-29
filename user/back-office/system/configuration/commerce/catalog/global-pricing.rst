@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--config--commerce--catalog--pricing:
 .. _pricing-configuration:
 

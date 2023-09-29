@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _checkout-management-concept-guide:
 
 Checkout Configuration Concept Guide

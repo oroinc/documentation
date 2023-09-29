@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--business-intelligence--reports--reports-examples:
 
 Reports in Use

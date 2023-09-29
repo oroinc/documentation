@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--taxes--us:
 
 Configure Global Settings for US Sales Tax (Digital Products)

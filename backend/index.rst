@@ -79,7 +79,6 @@ Backend Developer Guide is an essential resource for developers that provides co
       <li><a class="" href="system-configuration/">System Configuration</a></li>
       <li><a class="tag-very-important" href="configuration/">Configuration Reference</a></li>
       <li><a class="" href="automated-tests/">Automated Tests</a></li>
-      <li><a class="" href="extend-crm/">Extending OroCRM</a></li>
       <li><a class="tag-important" href="extend-commerce/">Extending OroCommerce</a></li>
       <li><a class="tag-very-important" href="api/">API Developer Guide</a></li>
       <li><a class="" href="organization-types/">Organization Types</a></li>
@@ -115,7 +114,6 @@ Backend Developer Guide is an essential resource for developers that provides co
    logging/index
    system-configuration/index
    configuration/index
-   extend-crm/index
    extend-commerce/index
    third-party-extensions/index
    automated-tests/index

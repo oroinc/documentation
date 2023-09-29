@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--system--tags-management-tags:
 
 Configure Tags in the Back-Office

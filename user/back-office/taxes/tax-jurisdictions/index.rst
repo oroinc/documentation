@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _taxes--tax-jurisdiction:
 
 Manage Tax Jurisdictions in the Back-Office

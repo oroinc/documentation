@@ -201,7 +201,7 @@ Once your customization is ready, you can publish it in a dedicated repository t
 Customize via UI
 ^^^^^^^^^^^^^^^^
 
-For data model and business process customization, Oro applications provide the entity and workflow management tools in the web UI (e.g., OroCRM and OroCommerce back-office). You can use these tools for quick updates of the existing data structure, for example, to add a new field to the existing entity data, change the value options, etc.) and enable easy and fast prototyping, for example, for A/B testing of new business process automation.
+For data model and business process customization, Oro applications provide the entity and workflow management tools in the web UI (e.g., OroCommerce back-office). You can use these tools for quick updates of the existing data structure, for example, to add a new field to the existing entity data, change the value options, etc.) and enable easy and fast prototyping, for example, for A/B testing of new business process automation.
 
 .. warning:: Results of the customization via UI are stored in the database. Porting such customization from staging to the production environment happens on the database level using data migration. Compared to programmatic customization, customization via UI lacks versioning and portability. Please consider using the source code level customization to keep the upgrade process simple.
 

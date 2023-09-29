@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-configuration-user-settings:
 
 Configure Global User Settings

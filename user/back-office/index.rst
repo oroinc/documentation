@@ -1,20 +1,16 @@
-:oro_documentation_types: OroCRM, OroCommerce, OroMarketplace
-
-:title: OroCommerce, OroCRM and OroMarketplace Back-Office User Documentation
+:title: Oro Application Back-Office User Documentation
 
 .. meta::
-   :description: Back-office manuals for the OroCommerce, OroCRM and OroMarketplace users
+   :description: Back-office manuals for the Oro application and OroMarketplace users
 
 Back-Office
 ===========
 
-Back-office is a primary management tool in OroCommerce and OroCRM that allows managers to perform all essential activities related to their eCommerce business, such as updating product lines, managing customers and sales, setting up taxes, running marketing campaigns, managing web store content, reporting, administering user roles, and other.
+Back-office is a primary management tool in Oro applications that allows managers to perform all essential activities related to their eCommerce business, such as updating product lines, managing customers and sales, setting up taxes, running marketing campaigns, managing web store content, reporting, administering user roles, and other.
 
 Back-office places a great emphasis on an intuitive UI to help organize data, streamline typical back-office workflows, and enable maximum transparency for managers. In line with this approach, the back-office documentation section **mirrors the structure of the application UI** to enable quicker orientation in the content.
 
-.. note:: Depending on whether you work exclusively with OroCRM or OroCommerce, you may require to search a different collection of chapters within documentation. Find application-specific sections in the tag clouds below. If you work with the OroCommerce plus OroCRM edition, search all available chapters in the menu to your left.
-
-          When browsing documentation, be on the lookout for  |CommerceIcon|  ,  |CRMIcon| , |MarketplaceIcon| and |Extension|  application icons on the top right. They indicate whether described features and concepts are available in OroCRM, OroCommerce, OroMarketplace, and whether they require extension installation.
+When browsing documentation, be on the lookout for |MarketplaceIcon| and |Extension| application icons on the top right. They indicate whether described features and concepts are available in OroMarketplace, and whether they require extension installation.
 
 .. raw:: html
 
@@ -40,26 +36,6 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
           <li><a class="" href="system/integrations/payment-integration/">Payment Integrations</a></li>
           <li><a class="tag-very-important" href="system/websites/">Websites</a></li>
           <li><a class="" href="system/frontend-menus/">Frontend Menus</a></li>
-       </ul>
-
-
-.. raw:: html
-
-    <h2>OroCRM</h2>
-
-       <ul class="tag-cloud">
-
-          <li><a class="tag-very-important" href="customers/accounts/">Accounts</a></li>
-          <li><a class="" href="customers/business-customers/">Business Customers</a></li>
-          <li><a class="tag-important" href="customers/contacts/">Contacts</a></li>
-          <li><a class="" href="marketing/email-campaigns/">Email Campaigns</a></li>
-          <li><a class="" href="marketing/marketing-campaigns/">Marketing Campaigns</a></li>
-          <li><a class="tag-very-important" href="marketing/marketing-lists/">Marketing Lists</a></li>
-          <li><a class="" href="marketing/tracking-websites/">Tracking Websites</a></li>
-          <li><a class="tag-important" href="sales/leads/">Leads</a></li>
-          <li><a class="tag-very-important" href="sales/opportunities/">Opportunities</a></li>
-          <li><a class="" href="system/integrations/zendesk-integration/">Zendesk Integration</a></li>
-          <li><a class="tag-important" href="system/integrations/dotdigital/">Dotdigital Integration</a></li>
        </ul>
 
 

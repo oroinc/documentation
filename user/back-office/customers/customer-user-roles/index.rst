@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--customers--customer-user-roles:
 
 Manage Customer User Roles in the Back-Office

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--customer-groups--configuration--settings--routing:
 
 Configure Routing Settings per Customer Group

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--marketing--web-catalog--preview:
 
 Preview Web Catalog
@@ -37,7 +35,6 @@ To illustrate the example, let's consider the case where you run two businesses 
 
      .. image:: /user/img/marketing/web_catalogs/lighting_products_restrictions.png
         :alt: Restrictions set fot the lighting products content node
-        :scale: 60%
 
 When previewing this page, you need to set the same restrictions in the configuration panel to see how the page will be rendered in the storefront:
 

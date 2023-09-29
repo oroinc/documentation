@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _concept-guide-customers-permissions:
 
 Customer Permissions Concept Guide

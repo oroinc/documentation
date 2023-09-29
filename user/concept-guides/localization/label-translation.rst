@@ -1,7 +1,5 @@
 .. _localization--translations--labels:
 
-:oro_documentation_types: OroCommerce
-
 Translate Product Attribute Options
 ===================================
 

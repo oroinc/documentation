@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-management-organization-create:
 
 Create an Organization in the Back-Office

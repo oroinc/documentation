@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _website-management-concept-guide:
 
 Multi-Website Configuration Concept Guide
@@ -26,7 +24,6 @@ In a multi-org environment, each organization may have one or several websites. 
 
  .. image:: /user/img/concept-guides/websites/Oro_organization.png
     :alt: A list of websites created within one organization
-    :scale: 60%
 
 The settings that are shared across the websites are the following:
 
@@ -45,7 +42,6 @@ This may be useful in the following cases:
 
     .. image:: /user/img/concept-guides/websites/us_website_vs_germany_website.png
        :alt: Different product catalog for the US and German websites
-       :scale: 60%
 
     .. hint:: Check out the Web Catalog Visibility guide to learn more on :ref:`web catalog visibility restrictions <user-guide--marketing--web-catalog--node--visibility>`.
 
@@ -61,7 +57,6 @@ This may be useful in the following cases:
 
     .. image:: /user/img/concept-guides/websites/select_your_country.png
        :alt: An example of a geo-specific website
-       :scale: 80%
 
     While you can create multiple localizations to support content translation into different languages (e.g., Spanish, French, Russian, German), you can also create another localization for the same language with the same formatting to enable the additional translation of the UI system elements and content to the required language.
 
@@ -133,13 +128,11 @@ The storefront navigation is highly customizable via the :ref:`Frontend Menus <d
 
 .. image:: /user/img/concept-guides/websites/website_navigation.png
    :alt: A list of menu items in Frontend menu
-   :scale: 100%
 
 All the visuals represented in the storefront are specific to each website. Go through the available menus to adapt content to particular audience and localization. You can enable or disable menu items for a particular customer, website, or mobile device by setting related conditions.
 
 .. image:: /user/img/concept-guides/websites/frontend_menu.png
    :alt: Illustrate all available frontend menu items in the storefront
-   :scale: 70%
 
 
 Web Catalogs per Website
@@ -169,7 +162,6 @@ For instance, your subdivision in the US has received a batch of defective produ
 
 .. image:: /user/img/concept-guides/websites/product_visibility_restrictions.png
    :alt: Illustrate products visibility on different websites
-   :scale: 80%
 
 
 Price Lists per Website
@@ -188,7 +180,6 @@ OroCommerce supports tracking your :ref:`inventory data <user-guide--inventory>`
 
 .. image:: /user/img/concept-guides/websites/product_inventory_per_website.png
    :alt: Illustrate the way the product quantity is changed due to different warehouse settings
-   :scale: 60%
 
 Shipping and Payment per Website
 --------------------------------
@@ -199,7 +190,6 @@ With OroCommerce, you can either share the same payment and shipping methods acr
 
 .. image:: /user/img/concept-guides/websites/payment_options_per_website.png
    :alt: Different payment options for different websites
-   :scale: 80%
 
 
 **Related Topics**

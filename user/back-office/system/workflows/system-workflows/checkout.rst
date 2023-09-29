@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _system--workflows--checkout-workflow:
 
 Configure Checkout Workflow in the Back-Office

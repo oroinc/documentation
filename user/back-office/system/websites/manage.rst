@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--system-websites--manage-websites:
 
 Manage a Website in the Back-Office

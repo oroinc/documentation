@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc--workflows--backoffice-quote-flow-with-approvals:
 .. _system--workflows--quote-backoffice-workflow:
 

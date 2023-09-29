@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--guest-access--website:
 
 Configure Guest Website Access Settings per Website

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _configuration-integrations-microsoft:
 
 Configure Global Microsoft Settings

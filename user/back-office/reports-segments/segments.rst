@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--business-intelligence--filters-segments:
 
 Manage Segments in the Back-Office

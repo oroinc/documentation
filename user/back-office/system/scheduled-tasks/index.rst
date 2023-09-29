@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 Configure Scheduled Tasks in the Back-Office
 ============================================
 

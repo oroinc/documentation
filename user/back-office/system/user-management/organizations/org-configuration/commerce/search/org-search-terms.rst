@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _organization-commerce--configuration--search-history:
 
 Configure Search History Settings per Organization

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _concept-guide-data-import:
 
 Data Import Concept Guide
@@ -37,15 +35,22 @@ Logical Import Sequence
 
 Out-of-the-box, the import is enabled for the following types of data:
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| * **OroCommerce**                                                                                                                                                    |
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Products, Product Attributes, Product Images, Price Attributes Data, Price Lists, Inventory Levels, Customers, Customer Users, Master Catalog, Tax Rules, Tax Rates. |
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| * **OroCRM**                                                                                                                                                         |
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Leads, Opportunities, Accounts, Contacts, Business Customers                                                                                                         |
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Products
+* Product Attributes
+* Product Images
+* Price Attributes Data
+* Price Lists
+* Inventory Levels
+* Customers
+* Customer Users
+* Master Catalog
+* Tax Rules
+* Tax Rates
+* Leads
+* Opportunities
+* Accounts
+* Contacts
+* Business Customers
 
 You should not experience any import issues if you follow the steps outlined in the section above and make sure that the content you are uploading follows the import guidelines.
 We are going to provide several examples of logical data import sequence that you can follow when working with your Oro application.
@@ -90,7 +95,6 @@ Customer users are linked to their customers, which is why importing customers a
 
 .. image:: /user/img/concept-guides/import/customers-import-sequences.png
    :alt: Customer Import Sequence
-   :scale: 60%
 
 .. hint::
     For more information on customers, see :ref:`Customer Permissions <concept-guide-customers-permissions>` and :ref:`Customer Management <concept-guide-customers>` concept guides, and :ref:`Managing Customer Entities in the Back-Office <user-guide--customer-entities>` user guide.
@@ -105,7 +109,6 @@ You can import inventory information once the application has all the products t
 
 .. image:: /user/img/concept-guides/import/inventory-import-sequence.png
    :alt: Customer Import Sequence
-   :scale: 60%
 
 You can either upload inventory statuses only or detailed inventory levels based on the inventory templates that you can download from the import dialog.
 

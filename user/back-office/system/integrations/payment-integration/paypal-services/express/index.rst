@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _config-guide--payment--paypal-express:
 
 Configure PayPal Express Integration in the Back-Office

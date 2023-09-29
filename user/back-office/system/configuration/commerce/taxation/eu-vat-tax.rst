@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--taxes--eu:
 
 Configure Global Settings for EU VAT Tax (Digital Products)

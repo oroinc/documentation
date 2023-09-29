@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--sales--orders:
 
 Manage Orders in the Back-Office

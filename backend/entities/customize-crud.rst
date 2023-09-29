@@ -24,7 +24,7 @@ For example, let's add a new text field to the product edit and view screens fro
 Prerequisites
 ^^^^^^^^^^^^^
 
-Before writing code, create a new bundle in your application. If you are not familiar with the bundle creation process yet,  check :ref:`how to create a new bundle in OroPlatform, OroCRM, or OroCommerce <how-to-create-new-bundle>`. If you have already created a bundle for your app customizations, you are good to go and can reuse it in other tutorials as well.
+Before writing code, create a new bundle in your application. If you are not familiar with the bundle creation process yet,  check :ref:`how to create a new bundle in your Oro application <how-to-create-new-bundle>`. If you have already created a bundle for your app customizations, you are good to go and can reuse it in other tutorials as well.
 
 Custom Data Entity
 ~~~~~~~~~~~~~~~~~~

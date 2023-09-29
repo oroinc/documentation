@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-calendars:
 
 Configure System Calendars in the Back-Office

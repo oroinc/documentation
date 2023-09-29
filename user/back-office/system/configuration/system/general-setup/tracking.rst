@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-configuration-tracking-settings:
 .. _admin-configuration-tracking:
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--integrations--manage-integrations--payment-methods:
 
 Configure Payment Method Integration in the Back-Office

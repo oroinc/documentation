@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _mc-system-wf:
 .. _user-guide--system--workflow-management:
 .. _doc--system--workflow-management:

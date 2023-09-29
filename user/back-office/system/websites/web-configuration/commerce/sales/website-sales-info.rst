@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--sales--contacts-website:
 
 Configure Settings for Contacts per Website (Sales Rep Information)

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--payment-providers-overview--paypal:
 
 Configure Multiple PayPal Payment Services in the Back-Office

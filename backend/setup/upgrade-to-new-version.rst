@@ -1,4 +1,4 @@
-:title: Upgrade OroCommerce, OroCRM or OroPlatform application
+:title: Upgrade Oro Application
 
 .. index::
     single: Upgrade
@@ -9,7 +9,7 @@
 Upgrade the Application to the Next Version
 ===========================================
 
-This guide explains how to upgrade OroCommerce, OroCRM, or OroPlatform application to the next version in a development environment.
+This guide explains how to upgrade Oro application to the next version in a development environment.
 
 An absolute path to the directory where an application is installed will be used in the guide and will
 be referred to as **<application-root-folder>** further in this topic.

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-dotmailer-configuration:
 .. _user-guide-dotmailer-configuration--dotmailer-side:
 
@@ -11,7 +9,7 @@ Configure Dotdigital Integration in the Back-Office
 Create API Managed User on the Dotdigital Side
 ----------------------------------------------
 
-To configure integration with OroCRM and OroCommerce on the Dotdigital side, create **an API managed user**:
+To configure integration with an Oro application on the Dotdigital side, create **an API managed user**:
 
 1. Log in to Dotdigital.
 2. Navigate to **Settings > Access**.

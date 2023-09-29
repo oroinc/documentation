@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _warehouses-website:
 
 Configure Warehouse Settings per Website

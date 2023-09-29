@@ -1,4 +1,4 @@
-:title: OroCommerce, OroCRM, OroPlatform JavaScript Architecture
+:title: Oro Application JavaScript Architecture
 
 .. meta::
    :description: Extensive documentation on the JavaScript web applications architecture for the frontend developers
@@ -8,7 +8,7 @@
 JavaScript Architecture
 =======================
 
-Client-side architecture of OroPlatform, OroCRM, and OroCommerce is built on |Chaplin| architecture for JavaScript Web applications based on the |Backbone.js| library).
+Client-side architecture of Oro application is built on |Chaplin| architecture for JavaScript Web applications based on the |Backbone.js| library).
 
 The Backbone provides little structure above simple routing, individual models,
 views and their binding. Chaplin addresses these limitations by providing

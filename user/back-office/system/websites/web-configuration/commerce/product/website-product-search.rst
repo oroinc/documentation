@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--websites--commerce--products--search:
 
 Configure Product Search Settings per Website

@@ -1,7 +1,5 @@
 .. _user-guide--business-intelligence--widgets--explore:
 
-:oro_documentation_types: OroCRM, OroCommerce
-
 Manage Widgets in the Back-Office
 =================================
 

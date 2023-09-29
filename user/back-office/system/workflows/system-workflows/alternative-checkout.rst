@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _system--workflows--alternative-checkout-workflow:
 
 Configure Alternative Checkout Workflow in the Back-Office

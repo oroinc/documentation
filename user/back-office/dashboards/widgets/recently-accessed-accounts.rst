@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--recently-accessed-accounts:
 
-:oro_documentation_types: OroCRM
+
 :oro_show_local_toc: false
 
 Recently Accessed Account

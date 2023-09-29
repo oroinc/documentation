@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--configuration--catalog--filters-sorters--website:
 
 Configure Filters and Sorters Settings per Website

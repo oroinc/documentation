@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-activities-calls:
 .. _doc-activities-overview-calls:
 

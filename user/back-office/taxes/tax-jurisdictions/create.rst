@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _taxes--tax-jurisdiction-create:
 
 Create a Tax Jurisdiction

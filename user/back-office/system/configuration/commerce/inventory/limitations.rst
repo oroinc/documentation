@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--configuration--inventory--limitations:
 
 Configure Global Inventory Quantity Limitations Settings

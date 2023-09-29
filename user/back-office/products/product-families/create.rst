@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _product--product-families--create:
 
 Create a New Product Family
