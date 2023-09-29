@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--frontend-menus--all-products--global:
 
 Add All Products Page to Storefront Menus Globally

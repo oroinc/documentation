@@ -28,7 +28,7 @@ Sample applications: |OroCRM|, |OroCommerce|, |OroPlatform|.
 
 A **package** repository contains a module that groups a set of ready-to-use features, usually those related to a particular business subdomain, and may be included in any Oro application. To enable an Oro package in the Oro application, add it as a dependency/prerequisite before you start the Oro application installation. As long as the Oro application uses the Symfony framework, packages may contain |Bundles|.
 
-For example, the |Marketing| package is, by default, enabled in OroCRM and OroCommerce applications.
+For example, the |Marketing| package is, by default, enabled in Oro applications.
 
 A component repository contains the source code of the reusable development module that enables a set of commonly used functions that you can use as third-party libraries without the Oro application. Rather than a complete business feature, the Oro component can handle generic functionality that is not bound to the business domain. Component repositories are typically published as read-only subtree distributions of independent package bundles or components.
 

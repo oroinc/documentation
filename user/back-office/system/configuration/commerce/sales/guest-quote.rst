@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--guest--enable--guest_quotes:
 
 Configure Global Settings for Quotes

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _products--product-visibility:
 
 Manage Product Visibility

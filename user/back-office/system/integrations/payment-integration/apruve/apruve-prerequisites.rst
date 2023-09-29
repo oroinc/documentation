@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--prerequisites--apruve:
 
 Prerequisites for Apruve Services Integration in the Back-Office

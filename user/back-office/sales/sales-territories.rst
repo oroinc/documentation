@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM
-
 .. _user-guide-territories:
 
 Manage Sales Territories in the Back-Office

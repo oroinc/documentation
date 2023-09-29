@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _upload-settings--website:
 
 Configure Upload Settings per Website

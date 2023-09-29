@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _taxes--product-tax-code:
 
 Manage Product Tax Codes in the Back-Office

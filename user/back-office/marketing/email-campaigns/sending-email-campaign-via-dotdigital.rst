@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-dotmailer-campaign:
 
 Send Email Campaign via Dotdigital
@@ -57,8 +55,8 @@ As an illustration, let us create a new **Address Book** on the Dotdigital side.
 
 Next, upload contacts from the Oro application into our newly created address book in Dotdigital. For the Oro application to see this address book:
 
-1. Go back to OroCRM/OroCommerce.
-2.  Navigate to **System > Manage Integrations**.
+1. Go back to the Oro application.
+2. Navigate to **System > Manage Integrations**.
 3. Select your Dotdigital integration.
 4. Click **Schedule Sync** in the top right corner.
 
@@ -87,7 +85,7 @@ You can map contacts from the Oro marketing list into your Dotdigital address bo
 
    * **Synchronize** --- Start sync between the marketing list and the address book manually.
    * **Refresh Data Fields** --- Manually mark all updated marketing lists to ensure data fields data is up to date in Dotdigital after the next synchronization.
-   * **Connection Settings** --- Change connection or integration for the current marketing list in OroCRM.
+   * **Connection Settings** --- Change connection or integration for the current marketing list in the Oro application.
    * **Disconnect** --- Disconnect the list from the segment.
 
    .. image:: /user/img/marketing/marketing/dotdigital/dotdigital_connected_new.png

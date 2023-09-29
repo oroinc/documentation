@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-activities-events-actions-add-detailed:
 .. _doc-activities-events-actions-add-fromgrid:
 .. _doc-activities-events-information:
@@ -47,7 +45,7 @@ To add a calendar event when viewing a list of events:
 
    * **Guests** --- People invited to the event inside and outside your company. Click the field to add Oro user to the event. To add a person outside your company as a guest, type their email address in the field. The number of guests is not limited. The event appears in the calendar of every invited Oro users. To cancel the invitation, click the **x** icon next to the guest name.
 
-   * **Reminders** --- A notification about the upcoming event. Click **+Add** to configure when and how OroCommerce and OroCRM remind the participants about the event:
+   * **Reminders** --- A notification about the upcoming event. Click **+Add** to configure when and how Oro application remind the participants about the event:
 
      * Specify the type of the notification: whether to show a flash message in the Oro application or send the notification email.
      * Select the time units in which the time lag between a reminder and the event is measured: minutes, hours, days, or weeks.

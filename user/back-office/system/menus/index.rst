@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-config-menus:
 .. _doc-my-user-menus:
 
@@ -8,7 +6,7 @@ Configure Back-Office Menus
 
 .. hint:: This section is part of the :ref:`Storefront and Back-Office Menu Management Concept Guide <menu-management-concept-guide>` topic that provides a general understanding of the available storefront and back-office menu types and their management in Oro applications.
 
-In this section, you will learn how to edit and configure the menu for the OroCommerce and OroCRM back-office.
+In this section, you will learn how to edit and configure the menu for the Oro application back-office.
 
 All the menus for the Oro back-office are located in the main menu under **System > Menus**.
 
@@ -76,7 +74,7 @@ To customize one of the back-office menus (e.g., application_menu or usermenu) f
 Back-Office Menus Management
 ----------------------------
 
-A back-office menu may be multi-level like, for example, a default OroCRM and OroCommerce back-office main menu. The child menu items are nested under parent menu items (e.g., **Accounts**, **Contacts**, **Customers**, and others are nested under **Customers**).
+A back-office menu may be multi-level like, for example, a default Oro application back-office main menu. The child menu items are nested under parent menu items (e.g., **Accounts**, **Contacts**, **Customers**, and others are nested under **Customers**).
 
 .. image:: /user/img/system/menus/menus_general.png
 
@@ -84,7 +82,7 @@ Menu items on the same level of hierarchy may be visually separated by a divider
 
 .. image:: /user/img/system/menus/user_menu_divider.png
 
-.. note:: Some menus do not support displaying dividers (on a particular level in the tree, or in general). For example, if you add a divider to the top level of OroCRM and OroCommerce back-office main menu (**application_menu**), the divider is not displayed.
+.. note:: Some menus do not support displaying dividers (on a particular level in the tree, or in general). For example, if you add a divider to the top level of Oro application back-office main menu (**application_menu**), the divider is not displayed.
 
    .. image:: /user/img/system/menus/ApplicationMenu.png
 

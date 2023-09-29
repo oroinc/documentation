@@ -1125,9 +1125,9 @@ Links (Dev)
 
    <a href="https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file" target="_blank">composer.lock</a>
 
-.. |https://github.com/orocrm/crm-application.git| raw:: html
+.. |https://github.com/oroinc/orocommerce-application.git| raw:: html
 
-   <a href="https://github.com/orocrm/crm-application.git" target="_blank">https://github.com/orocrm/crm-application.git</a>
+   <a href="https://github.com/oroinc/orocommerce-application.git" target="_blank">https://github.com/oroinc/orocommerce-application.git</a>
 
 .. |usage of ACLs| raw:: html
 

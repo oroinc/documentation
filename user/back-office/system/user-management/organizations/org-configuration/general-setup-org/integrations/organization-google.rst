@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-hangouts-org:
 .. _organization-google-settings:
 

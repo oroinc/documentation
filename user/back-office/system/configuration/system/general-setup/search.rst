@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _configuration--system-configuration--general-setup-sysconfig--search-global:
 
 Configure Global Back-Office Fuzzy Search Settings

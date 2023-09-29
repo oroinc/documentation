@@ -1,4 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
 :oro_show_local_toc: false
 
 .. _user-guide-dotmailer-single-sign-on:
@@ -6,7 +5,7 @@
 Configure Dotdigital Single Sign-on in the Back-Office
 ======================================================
 
-|Single sign-on| allows to enter Dotdigital account from within your OroCRM and OroCommerce applications.
+|Single sign-on| allows to enter Dotdigital account from within your Oro applications.
 
 To be able to use single sign-on:
 

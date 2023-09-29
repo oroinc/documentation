@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--web-catalog-navigation-tool:
 
 Use Web Catalog Nodes as Root Nodes (Example)

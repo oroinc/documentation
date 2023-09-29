@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--websites--commerce--catalog--related-products:
 
 Configure Related Product Settings per Website

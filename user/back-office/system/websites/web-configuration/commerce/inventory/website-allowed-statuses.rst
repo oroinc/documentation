@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _allowed-statuses-website:
 
 Configure Allowed Statuses Settings per Website

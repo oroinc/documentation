@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _import-price-lists:
 
 Import Prices Into the Price List

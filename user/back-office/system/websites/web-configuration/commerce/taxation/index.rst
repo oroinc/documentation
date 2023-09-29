@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Configure Taxation Settings per Website
 =======================================
 

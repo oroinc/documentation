@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--website-commerce--search--fuzzy-search:
 
 Configure Storefront Fuzzy Search Settings per Website

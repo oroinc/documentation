@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _organization-config-website-routing:
 
 Configure Website Routing Settings per Organization

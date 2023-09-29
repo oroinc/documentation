@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-system-channel-entities-business-customer:
 
 Manage Business Customers in the Back-Office
@@ -73,11 +71,6 @@ The following actions can be performed with business customer records:
 .. image:: /user/img/customers/business_customers/business_customers_viewpage.png
    :alt: The page of a specific business customer
 
-.. .. hint::    :ref:`Custom Reports <user-guide-reports>` can be added to analyze details of business customers in OroCRM.   :ref:`Workflows <doc--system--workflow-management>` can be created to define rules and guidelines on possible actions/updates of business customers in the system.
-
-
-.. BCrLOwnerClear| image:: /user/img/buttons/BCrLOwnerClear.png
-   :align: middle
 
 .. include:: /include/include-images.rst
    :start-after: begin

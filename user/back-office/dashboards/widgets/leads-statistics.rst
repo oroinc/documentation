@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--leads-statistics:
 
-:oro_documentation_types: OroCRM
+
 :oro_show_local_toc: false
 
 Leads Statistics

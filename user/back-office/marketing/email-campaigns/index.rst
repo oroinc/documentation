@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-email-campaigns:
 
 Manage Email Campaigns in the Back-Office

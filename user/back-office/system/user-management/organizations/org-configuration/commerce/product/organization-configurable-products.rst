@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _config-guide--landing-commerce--products--configurable-products--organization:
 
 Configure Settings for Configurable Products per Organization

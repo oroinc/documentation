@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--system-configuration--commerce-sales--quick-order-form--global:
 .. _user-guide--system-configuration--commerce-sales--quick-order-form:
 

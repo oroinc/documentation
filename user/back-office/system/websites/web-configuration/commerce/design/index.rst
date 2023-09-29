@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Configure Design Settings per Website
 =====================================
 

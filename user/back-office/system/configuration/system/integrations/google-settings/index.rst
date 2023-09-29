@@ -1,11 +1,9 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-configuration-integrations-google:
 
 Configure Global Google Settings
 ================================
 
-All Oro application editions support the integration with Google. With its help, you can configure Google single sign-on to enable users with the same Google account email address and OroCRM/Commerce primary email address to log in only once in a session. Additionally, you can configure OAuth2 with Google for email synchronization, set up Google Hangouts calls, and configure Google Tag Manager settings.
+All Oro application editions support the integration with Google. With its help, you can configure Google single sign-on to enable users with the same Google account email address and Oro application primary email address to log in only once in a session. Additionally, you can configure OAuth2 with Google for email synchronization, set up Google Hangouts calls, and configure Google Tag Manager settings.
 
 .. note::
 

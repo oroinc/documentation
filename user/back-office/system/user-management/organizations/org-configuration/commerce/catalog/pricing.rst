@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--configuration--catalog--pricing--organization:
 
 Configure Pricing Settings per Organization

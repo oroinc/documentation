@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-guide--workflows--contact-request-wf:
 
 Configure Contact Request Workflow in the Back-Office

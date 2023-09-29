@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--payment-providers-overview--payment-term:
 
 Manage Payment Terms in the Back-Office

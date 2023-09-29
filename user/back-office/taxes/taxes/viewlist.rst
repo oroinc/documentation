@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 View and Filter Tax Rates
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

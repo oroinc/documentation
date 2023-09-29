@@ -21,7 +21,6 @@ The following diagram illustrates the structure of PaypalExpressBundle, with the
 
 .. image:: /img/bundles/PaypalExpressBundle/structure.png
   :alt: The diagram illustrating the structure of paypalbundle
-  :scale: 50%
 
 The example Anti-Corruption Layer depends on PayPal SDK.
 

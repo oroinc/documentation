@@ -1,4 +1,3 @@
-:oro_documentation_types: OroCommerce
 :oro_show_local_toc: false
 
 .. _concept-guide--localization-translation:

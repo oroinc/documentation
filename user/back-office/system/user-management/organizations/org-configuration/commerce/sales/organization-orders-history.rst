@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _organization-commerce--configuration--sales-order-history:
 
 Configure Order History Settings (Open Orders) per Organization

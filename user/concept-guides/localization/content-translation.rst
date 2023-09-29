@@ -1,8 +1,6 @@
 .. _content-translation:
 .. _sys--config--sysconfig--general-setup--language-settings:
 
-:oro_documentation_types: OroCommerce
-
 Translate Content
 -----------------
 

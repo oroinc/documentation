@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--system-configuration--commerce-sales-checkout-website:
 .. _user-guide--system-configuration--commerce-sales-checkout-registration--web:
 

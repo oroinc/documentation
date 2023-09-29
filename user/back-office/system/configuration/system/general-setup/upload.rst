@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _configuration-guide--system-configuration--general-setup-sysconfig--upload-settings:
 .. _admin-configuration-upload-settings:
 .. _configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-globally:

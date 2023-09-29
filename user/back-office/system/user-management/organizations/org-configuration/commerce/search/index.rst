@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Configure Search Settings per Organization
 ==========================================
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _configuration--general-setup--display-settings--organization:
 
 Configure Display Settings per Organization
