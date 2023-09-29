@@ -17,16 +17,12 @@ First you need to specify name and namespace of your bundle. Symfony framework a
 Let us assume that we want to create the AcmeDemoBundle and put it under the namespace ``Acme\Bundle\DemoBundle``
 in the ``/src`` directory. We need to create the corresponding directory structure and the bundle file with the following content:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
+.. oro_integrity_check:: 4afa3f69d42ea8e610dee77c76cafa70ef615d1c
 
-    namespace Acme\Bundle\DemoBundle;
-
-    use Symfony\Component\HttpKernel\Bundle\Bundle;
-
-    class AcmeDemoBundle extends Bundle
-    {
-    }
+   .. literalinclude:: /code_examples/commerce/demo/AcmeDemoBundle.php
+       :caption: src/Acme/Bundle/DemoBundle/AcmeDemoBundle.php
+       :language: php
+       :lines: 4-5, 7, 11-13, 29
 
 Basically, it is a regular Symfony bundle. The only difference is in the way it will be enabled (see chapter `Enable a Bundle`_).
 
@@ -35,29 +31,12 @@ Create a Bundle Service Container Extension
 
 For a load configuration files you need to create Service Container Extension. See |Symfony Configuration Files|
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/AcmeDemoExtension.php
+.. oro_integrity_check:: 84bf73fc7101136310d0986bc40e96c04f0ac867
 
-    namespace Acme\Bundle\DemoBundle\DependencyInjection;
-
-    use Symfony\Component\Config\FileLocator;
-    use Symfony\Component\DependencyInjection\ContainerBuilder;
-    use Symfony\Component\DependencyInjection\Extension\Extension;
-    use Symfony\Component\DependencyInjection\Loader;
-
-    class AcmeDemoExtension extends Extension
-    {
-        /**
-         * {@inheritDoc}
-         */
-       public function load(array $configs, ContainerBuilder $container): void
-        {
-            $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
-            // register services configuration
-            $loader->load('services.yml');
-            // register other configurations in the same way
-        }
-    }
+   .. literalinclude:: /code_examples/commerce/demo/DependencyInjection/AcmeDemoExtension.php
+       :caption: src/Acme/Bundle/DemoBundle/DependencyInjection/AcmeDemoExtension.php
+       :language: php
+       :lines: 4-18, 25-26
 
 Create basic ``Resources/config/services.yml`` for define service parameters. See |Symfony Service Parameters|
 
@@ -111,11 +90,12 @@ Now you have all the required files to enable the new bundle. To enable the bund
 
 #. Create a Resources/config/oro/bundles.yml file with the following content:
 
-   .. code-block:: yaml
-      :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
+.. oro_integrity_check:: dd88c5c8abe0268ea4699f1cd0adc2cb0e681774
 
-       bundles:
-           - Acme\Bundle\DemoBundle\AcmeDemoBundle
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/bundles.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/bundles.yml
+       :language: yaml
+       :lines: 2-3
 
    This file provides a list of bundles to register. All such files are automatically parsed to load the required bundles.
 

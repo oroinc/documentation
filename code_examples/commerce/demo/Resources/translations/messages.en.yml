@@ -1,0 +1,149 @@
+acme:
+    demo:
+        package_label: Demo
+        priority:
+            entity_label: Priority
+            entity_plural_label: Priorities
+            entity_grid_all_view_label: 'All %entity_plural_label%'
+            id.label: ID
+            label.label: Label
+            priority_documents.label: 'Priority Documents'
+            priority_questions.label: 'Priority Questions'
+            owner.label: Owner
+            organization.label: Organization
+            priority_report: 'Priority Report'
+            total: 'Total'
+            grand_total: 'Grand Total'
+        menu:
+            priorities: Priorities
+            documents: Documents
+            questions: Questions
+            document_attributes: Document Attributes
+            document_attribute_families: Document Families
+            doctrine_type_fields: 'Doctrine Type Fields'
+        shortcut:
+            new_priority.label: 'Create new Priority'
+            list_priorities.label: 'Show Priorities'
+            new_document.label: 'Create new Document'
+            list_documents.label: 'Show Documents'
+            new_question.label: 'Create new Question'
+            list_questions.label: 'Show Questions'
+            new_doctrine_type_field.label: 'Create new Doctrine Type Field'
+            list_doctrine_type_fields.label: 'Show Doctrine Type Fields'
+        section:
+            priority:
+                general.label: General
+            document:
+                general.label: General
+            question:
+                general.label: General
+            sms:
+                general.label: General
+            doctrine_type_field:
+                general.label: General
+        controller:
+            priority:
+                saved.message: 'Priority has been saved'
+            document:
+                saved.message: 'Document has been saved'
+            question:
+                saved.message: 'Question has been saved'
+            doctrine_type_field:
+                saved.message: 'Doctrine Type Field has been saved'
+        document:
+            entity_label: Document
+            entity_plural_label: Documents
+            entity_grid_all_view_label: 'All %entity_plural_label%'
+            id.label: ID
+            subject.label: Subject
+            description.label: Description
+            due_date.label: 'Due Date'
+            priority.label: Priority
+            acme_demo_priority.label: Priority
+            owner.label: Owner
+            organization.label: Organization
+            attribute_family.label: Document Family
+            attribute_family.plural_label: Document Families
+        question:
+            entity_label: Question
+            entity_plural_label: Questions
+            entity_grid_all_view_label: 'All %entity_plural_label%'
+            id.label: ID
+            subject.label: Subject
+            description.label: Description
+            due_date.label: 'Due Date'
+            priority.label: Priority
+            acme_demo_priority.label: Priority
+            owner.label: Owner
+            organization.label: Organization
+            page_title: 'Questions Report'
+            total: 'Total'
+            grand_total: 'Grand Total'
+        favorite:
+            entity_label: 'Favorites'
+            entity_plural_label: 'Favorites'
+            entity_grid_all_view_label: 'All %entity_plural_label%'
+            id.label: ID
+            name.label: 'Name'
+            value.label: 'Value'
+            owner.label: Owner
+            organization.label: Organization
+            view_count.label: 'View Count'
+            customLabel: 'Custom Action'
+            protectedCsrfLabel: 'Protected CSRF Action'
+            datagrid:
+                views:
+                    first_example_view_label: 'First Example View'
+                    second_example_view_label: 'Second Example View'
+        sms:
+            entity_label: Sms
+            entity_plural_label: SMS messages
+            entity_grid_all_view_label: 'All %entity_plural_label%'
+            id.label: ID
+            from_contact.label: 'From Contact'
+            to_contact.label: 'To Contact'
+            message.label: Message
+            owner.label: Owner
+            organization.label: Organization
+            contexts.label: Contexts
+            action.add:          Send sms
+            sms_created_by:      added by {{ user }}
+            sms_changed_by:      added by {{ user }}, updated by {{ editor }}
+            sms_view:            View {{ entity }}
+            sms_update:          Update {{ entity }}
+            sms_delete:          Delete {{ entity }}
+            sms_saved:           Sms saved
+        doctrinetypefield:
+            entity_label: 'Doctrine Type Field'
+            entity_plural_label: 'Doctrine Type Fields'
+            entity_grid_all_view_label: 'All %entity_plural_label%'
+            id.label: ID
+            percent_field.label: 'Percent Field'
+            money_field.label: 'Money Field'
+            duration_field.label: 'Duration Field'
+            owner.label: Owner
+            organization.label: Organization
+    organization_label: Acme
+extend:
+    entity:
+        customentity:
+            entity_label: 'CustomEntity'
+            entity_plural_label: 'CustomEntities'
+            entity_grid_all_view_label: 'All %entity_plural_label%'
+            users.label: Users
+Partner since: Partner since
+Internal rating: Internal rating
+name: Name
+Doc1 ManyToOneUnidirectRel: Doc1 ManyToOneUnidirectRel
+Doc2 ManyToOneBidirectRel: Doc2 ManyToOneBidirectRel
+Doc3 ManyToManyUnidirectRel: Doc3 ManyToManyUnidirectRel
+Doc4 ManyToManyUnidirectWRel: Doc4 ManyToManyUnidirectWRel
+Doc5 OneToManyUnidirectRel: Doc5 OneToManyUnidirectRel
+Doc6 OneToManyUnidirectRel: Doc6 OneToManyUnidirectRel
+Doc7 OneToManyBidirectRel: Doc7 OneToManyBidirectRel
+Doc8 OneToManyBidirectWRel: Doc8 OneToManyBidirectWRel
+My serialized field: My serialized field
+Users8 OneToManyBidirectWRel: Users8 OneToManyBidirectWRel
+Document rating: Document rating
+Users2 ManyToOneBidirectRel: Users2 ManyToOneBidirectRel
+Users7 OneToManyBidirectRel: Users7 OneToManyBidirectRel

@@ -5,7 +5,7 @@
 OroSidebarBundle
 ================
 
-OroSidebarBundle adds sidebars to the desktop version of the Oro application management UI and allows application users to enable or disable this feature in the system configuration menu.
+|OroSidebarBundle| adds sidebars to the desktop version of the Oro application management UI and allows application users to enable or disable this feature in the system configuration menu.
 
 The bundle enables developers to create sidebar widgets as Javascript modules and configure their default values in the YAML configuration files.
 

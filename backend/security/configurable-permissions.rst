@@ -30,21 +30,12 @@ It has four main options:
 
 An example of a simple configurable permission configuration:
 
-.. code-block:: none
+.. oro_integrity_check:: a9d9b0788a1bc9a4882ee60617231aea3fc9d7be
 
-    oro_configurable_permissions:
-        some_name:                                                      # configurable permission name, will be used by filter
-            default: true                                               # is all permissions for this `some_name` configurable by default
-            entities:
-                Oro\Bundle\CalendarBundle\Entity\Calendar:              # entity class
-                    CREATE: false                                       # hide permission `CREATE` for entity Calendar
-                    EDIT: true                                          # show permission `EDIT` for entity Calendar
-            capabilities:
-                oro_acme_some_capability: false                         # hide capability `oro_acme_some_capability` for `some_name`
-            workflows:
-                workflow1:
-                    PERFORM_TRANSIT: false                              # hide permission `PERFORM_TRANSIT` for workflow `workflow1`
-
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/configurable_permissions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/configurable_permissions.yml
+        :language: yaml
+        :lines: 1-13
 
 Configuration Merging
 ---------------------

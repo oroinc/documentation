@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\Form\Type;
+namespace Acme\Bundle\CollectOnDeliveryBundle\Form\Type;
 
-use ACME\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
+use Acme\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
 use Oro\Bundle\LocaleBundle\Form\Type\LocalizedFallbackValueCollectionType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

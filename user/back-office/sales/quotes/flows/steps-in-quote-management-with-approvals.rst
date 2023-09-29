@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _quote-management-with-approvals-steps:
 
 Quote Management with Approvals: Steps and Transitions

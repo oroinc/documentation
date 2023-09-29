@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _organization-commerce--configuration--taxation:
 
 Configure Tax Calculation Setting per Organization

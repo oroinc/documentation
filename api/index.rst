@@ -1,6 +1,6 @@
 :oro_show_local_toc: false
 
-:title: OroCommerce and OroCRM Web API Development
+:title: Oro Application Web API Development
 
 .. meta::
    :description: WebAPI engine architecture and backend developer guides
@@ -48,6 +48,7 @@ Find more information about Web API in the following topics:
    resource-fields
    filters
    create-update-related-resources
+   upsert-operation
    client-requirements
    batch-api
 

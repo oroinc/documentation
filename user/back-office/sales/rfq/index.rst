@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--sales--requests-for-quote:
 
 Manage Request for Quotes (RFQ) in the Back-Office

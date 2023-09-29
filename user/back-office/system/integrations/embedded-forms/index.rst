@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-embedded-forms:
 
 Configure Embedded Forms in the Back-Office

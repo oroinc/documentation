@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Configure Guest Access Settings per Organization
 ================================================
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace ACME\Bundle\CopyrightBundle\Tests\Unit\ContentWidget;
+namespace Acme\Bundle\CopyrightBundle\Tests\Unit\ContentWidget;
 
-use ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType;
-use ACME\Bundle\CopyrightBundle\Form\Type\CopyrightContentWidgetType as FormType;
+use Acme\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType;
+use Acme\Bundle\CopyrightBundle\Form\Type\CopyrightContentWidgetType as FormType;
 use Oro\Bundle\CMSBundle\Entity\ContentWidget;
 use Symfony\Component\Form\Forms;
 use Twig\Environment;
@@ -51,7 +51,7 @@ class CopyrightContentWidgetTypeTest extends \PHPUnit\Framework\TestCase
         $twig = $this->createMock(Environment::class);
         $twig->expects($this->once())
             ->method('render')
-            ->with('@ACMECopyright/CopyrightContentWidget/view.html.twig', ['settings' => []])
+            ->with('@AcmeCopyright/CopyrightContentWidget/view.html.twig', ['settings' => []])
             ->willReturn('rendered template');
 
         $this->assertEquals(
@@ -73,7 +73,7 @@ class CopyrightContentWidgetTypeTest extends \PHPUnit\Framework\TestCase
         $twig = $this->createMock(Environment::class);
         $twig->expects($this->once())
             ->method('render')
-            ->with('@ACMECopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings())
+            ->with('@AcmeCopyright/CopyrightContentWidget/widget.html.twig', $contentWidget->getSettings())
             ->willReturn('rendered template');
 
         $this->assertEquals('rendered template', $this->contentWidgetType->getDefaultTemplate($contentWidget, $twig));

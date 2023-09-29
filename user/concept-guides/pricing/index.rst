@@ -1,6 +1,6 @@
 .. _user-guide--pricing:
 
-:oro_documentation_types: OroCommerce, OroMarketplace
+:oro_documentation_types: OroMarketplace
 
 Price Management Concept Guide
 ==============================
@@ -85,7 +85,6 @@ When diving deeper into the price tiers of the three assigned price lists, we ca
 
 .. image:: /user/img/concept-guides/prices/lamp_minimal_prices.png
    :alt: View all prices per tier for the lumen headlamp configured based on the selected minimal prices strategy
-   :scale: 100%
 
 Merge by Priority
 ^^^^^^^^^^^^^^^^^
@@ -108,13 +107,11 @@ Based on the price lists priority that you have set for Customer A, the lumen he
 
    .. image:: /user/img/concept-guides/prices/merge_by_priority_example1.png
       :alt: View all prices per tier for the lumen headlamp provided that the Stock Clearance PL is prioritized
-      :scale: 80%
 
 2. Change the priority dragging the *Customer A PL* up to display the prices with 15% discounts as defined by the contract with Customer A.
 
    .. image:: /user/img/concept-guides/prices/merge_by_priority_example2.png
       :alt: View all prices per tier for the lumen headlamp provided that the Customer A PL is prioritized
-      :scale: 80%
 
 **Merge Allowed**
 
@@ -124,7 +121,6 @@ If we enable the Merge Allowed option for all price lists available for the Cust
 
 .. image:: /user/img/concept-guides/prices/merge_by_priority_example3.png
    :alt: View all prices per tier for the lumen headlamp provided that Merge Allowed is enabled for all three price lists
-   :scale: 80%
 
 Price Lists
 -----------

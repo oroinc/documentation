@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--guest-access--global:
 .. _sys--conf--commerce--guest--enable--access:
 

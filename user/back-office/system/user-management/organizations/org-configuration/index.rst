@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-organization-configuration:
 
 Configure Organization System Settings
@@ -32,7 +30,6 @@ The following categories of settings are available for system configuration at o
 
   * Integrations
 
-    * :ref:`Google Settings <user-guide-hangouts-org>`
     * :ref:`Microsoft Settings <organization-configuration-microsoft>`
 
 

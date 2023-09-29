@@ -5,7 +5,7 @@
 OroLocaleBundle
 ===============
 
-OroLocaleBundle enables the locale management and a data localization support.
+|OroLocaleBundle| enables the locale management and a data localization support.
 
 This bundle provides the next localization tools:
 

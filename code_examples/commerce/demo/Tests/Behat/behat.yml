@@ -1,0 +1,39 @@
+oro_behat_extension:
+  elements:
+    Document Form:
+      selector: 'form[name="document"]'
+      class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+      options:
+        mapping:
+          Due Date: 'document[dueDate]'
+    Question Form:
+      selector: 'form[name="question"]'
+      class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+      options:
+        mapping:
+          Due Date: 'question[dueDate]'
+    Document Context Grid:
+      class: Oro\Bundle\DataGridBundle\Tests\Behat\Element\Grid
+      selector: 'div[data-page-component-name="document-for-context-grid"]'
+    PriorityDocumentGrid:
+      class: Oro\Bundle\DataGridBundle\Tests\Behat\Element\Grid
+      selector: 'div[data-page-component-name="acme-demo-document-grid-by-priority"]'
+    PriorityQuestionGrid:
+      class: Oro\Bundle\DataGridBundle\Tests\Behat\Element\Grid
+      selector: 'div[data-page-component-name="acme-demo-question-grid-by-priority"]'
+    View Icon:
+      selector: '.grid-view-icon'
+
+  suites:
+    AcmeDemoBundle:
+      contexts:
+        - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
+        - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\FixturesContext
+        - Oro\Bundle\ConfigBundle\Tests\Behat\Context\FeatureContext
+        - Oro\Bundle\DataGridBundle\Tests\Behat\Context\GridContext
+        - Oro\Bundle\FormBundle\Tests\Behat\Context\FormContext
+        - Oro\Bundle\SearchBundle\Tests\Behat\Context\SearchContext
+        - Oro\Bundle\SecurityBundle\Tests\Behat\Context\ACLContext
+        - Oro\Bundle\ActivityListBundle\Tests\Behat\Context\ActivityContext
+      paths:
+        - '@AcmeDemoBundle/Tests/Behat/Features'

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-marketing-campaigns:
 
 Manage Marketing Campaigns in the Back-Office

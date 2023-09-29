@@ -1,4 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
 :oro_show_local_toc: false
 
 .. _book-job-execution:
@@ -37,4 +36,7 @@ Documentation on Message Queue implementation, including information on messages
 in |OroMessageQueueComponent| and |OroMessageQueueBundle|.
 
 .. include:: /include/include-links-user.rst
+   :start-after: begin
+
+.. include:: /include/include-links-dev.rst
    :start-after: begin

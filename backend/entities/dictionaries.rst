@@ -29,16 +29,12 @@ If you have a group of entities that can be classified as a dictionary but are n
 
 2. Register your provider service in the DI container by the following tag: ``oro_entity.dictionary_value_list_provider``:
 
-.. code-block:: yaml
+.. oro_integrity_check:: 70776a22fa8836f3d19325b2704827a29de3223b
 
-    oro_entity.dictionary_value_list_provider.default:
-        class: Oro\Bundle\EntityBundle\Provider\DictionaryValueListProvider
-        public: false
-        arguments:
-            - '@oro_entity_config.config_manager'
-            - '@doctrine'
-        tags:
-            - { name: oro_entity.dictionary_value_list_provider, priority: -100 }
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+        :language: yaml
+        :lines: 1-3, 71-78
 
 .. note:: Please note that you can specify the priority for the dictionary value list provider. The bigger the priority number is, the earlier the provider will be executed.
 

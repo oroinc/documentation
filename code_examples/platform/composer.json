@@ -10,16 +10,11 @@
             "homepage": "http://www.orocrm.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "ACME\\Bundle\\DemoBundle\\": "image_placeholder/demo/"
-        }
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-            "dev-master": "5.1-dev"
+            "dev-master": "6.0-dev"
         }
     }
 }

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--configuration--payment-method-integration--authorizenet-details:
 
 Configure Authorize.Net Integration in the Back-Office
@@ -36,7 +34,7 @@ To set up integration with Authorize.Net, complete the following:
    * **API Login ID** --- An identifier that helps authenticate your account on the Authorize.Net payment gateway.
    * **Transaction Key** --- A secret key that helps secure transactions to and from the Authorize.Net payment gateway.
    * **Check Credentials** --- Click the button to make sure that the provided credentials are valid.
-   * **Client Key** --- A public key that helps secure transactions to and from the Authorize.Net payment gateway.
+   * **Client (Signature) Key** --- A public signature key that helps secure transactions to and from the Authorize.Net payment gateway.
    * **Require CVV Entry** --- When this checkbox is selected, a buyer is prompted to enter a CVV code during checkout.
 
      .. important:: Select this checkbox only if you turned on the Card Code Verification (CCV) security feature on your Authorize.Net merchant interface. If a card code is not required, hiding the CVV field from buyers helps them keep their card code safe.

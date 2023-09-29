@@ -5,7 +5,7 @@
 OroMigrationBundle
 ==================
 
-OroMigrationBundle extends DBAL (database abstraction layer) and provides the ability for developers to manage and deploy changes in the Oro application database schema programmatically in a consistent, structured way using Migrations and Fixtures classes.
+|OroMigrationBundle| extends DBAL (database abstraction layer) and provides the ability for developers to manage and deploy changes in the Oro application database schema programmatically in a consistent, structured way using Migrations and Fixtures classes.
 
 Related Documentation
 ---------------------

@@ -316,7 +316,8 @@ user/back-office/system/integrations/azure-oauth /user/back-office/system/config
 user/back-office/system/configuration/commerce/customer/cookie-consent-banner /user/back-office/system/configuration/commerce/customer/global-customer-users
 user/back-office/system/configuration/system/integrations/google-integration-settings /user/back-office/system/configuration/system/integrations/google-settings/index
 user/back-office/system/integrations/google/index /user/back-office/system/configuration/system/integrations/google-settings/index
-user/back-office/system/integrations/google/hangouts /user/back-office/system/configuration/system/integrations/google-settings/hangouts
+user/back-office/system/integrations/google/hangouts /user/back-office/system/configuration/system/integrations/google-settings/index
+user/back-office/system/configuration/system/integrations/google-settings/hangouts /user/back-office/system/configuration/system/integrations/google-settings/index
 user/back-office/system/integrations/google/google-single-sign-on /user/back-office/system/configuration/system/integrations/google-settings/google-single-sign-on
 user/back-office/system/integrations/dotmailer/index /user/back-office/system/integrations/dotdigital/index
 user/back-office/system/integrations/dotmailer/dotmailer-configuration /user/back-office/system/integrations/dotdigital/dotdigital-configuration
@@ -356,3 +357,10 @@ user/back-office/system/integrations/payment-integration/cybersource /user/back-
 user/back-office/customers/customer-groups/customer-group-customer-settings /user/back-office/customers/customer-groups/customer-group-configuration/commerce/product/customer-group-product-customer-settings
 user/back-office/customers/customers/customer-settings /user/back-office/customers/customers/customer-configuration/commerce/product/customer-product-settings
 user/back-office/system/integrations/gtm-ga4 /user/back-office/system/integrations/gtm
+user/back-office/system/configuration/system/integrations/microsoft-settings/oroconnector-outlook /user/back-office/activities/emails/oroconnector-microsoft
+user/back-office/system/configuration/system/integrations/google-settings/oroconnector-gmail /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-google
+user/back-office/activities/emails/oroconnector-gmail/ /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-google
+user/back-office/activities/emails/oroconnector-outlook/ /user/back-office/activities/emails/oroconnector-microsoft
+orocrm-2.6-2.3-2.0-1.12.rst/ /community/release-process
+backend/extend-crm/how-to-co-install-applications /backend/extend-commerce/how-to-co-install-applications
+backend/extend-crm/index /backend/extend-commerce/how-to-co-install-applications

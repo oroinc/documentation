@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _sys--config--sysconfig--general-setup--currency:
 .. _admin-configuration-currency:
 
@@ -35,12 +33,12 @@ Currency configuration allows to:
 
 Think of a US-based business that is shipping certain goods to the UK. Its base currency is US dollars, which means that this is the currency that its business’s turnover is usually in. The contract between the US and the UK companies, however, is to be signed in British pounds for the total value of £20 000. When creating a new opportunity for the mentioned contract, a sales manager of the US company would need to add the **Budget Amount** in pounds rather than dollars.
 
-With OroCRM Enterprise multi-currency feature, the system can make the necessary recalculations of this budget amount into the base currency for you. This means that if you enter the amount of £20 000 into the Budget Amount field, this value will be converted into your base currency and constitute $25 050, as illustrated in the screenshot below. This conversion is calculated according to the currency rate, determined beforehand.
+With the Oro application Enterprise multi-currency feature, the system can make the necessary recalculations of this budget amount into the base currency for you. This means that if you enter the amount of £20 000 into the Budget Amount field, this value will be converted into your base currency and constitute $25 050, as illustrated in the screenshot below. This conversion is calculated according to the currency rate, determined beforehand.
 
 .. image:: /user/img/system/config_system/budget_recalculated1.png
    :alt: The price is recalculated while selecting a currency
 
-.. note:: So far, opportunity is the only OroCRM entity to have received multi-currency functionality out-of-the-box.
+.. note:: So far, opportunity is the only Oro application entity to have received multi-currency functionality out-of-the-box.
 
 With this example in mind, let us have a look at how you can configure your currencies and rates.
 

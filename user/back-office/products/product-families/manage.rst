@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _product--product-families--product-attribute-in-families:
 
 Manage Product Attributes in Product Families

@@ -1,7 +1,7 @@
-:title: OroPlatform, OroCRM and OroCommerce Bundles Documentation
+:title: Oro Application Bundles Documentation
 
 .. meta::
-   :description: A list of OroPlatform, OroCRM and OroCommerce bundles
+   :description: A list of Oro application bundles
 
 .. _bundle-docs:
 
@@ -66,11 +66,12 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
     "**C**","**I**","**S**"
     ":ref:`CatalogBundle <bundle-docs-commerce-catalog-bundle>`",":ref:`InventoryBundle <bundle-docs-commerce-inventory-bundle>`",":ref:`SellerDashboardBundle <bundle-docs-commerce-seller-dashboard-bundle>`"
     ":ref:`CheckoutBundle <bundle-docs-commerce-checkout-bundle>`","**O**",":ref:`SEOBundle <bundle-docs-commerce-seo-bundle>`"
-    ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`","**T**"
-    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**P**",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
-    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`","**W**"
-    ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
-    ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
+    ":ref:`CMSBundle <bundle-docs-commerce-cms-bundle>`",":ref:`OrderBundle <bundle-docs-commerce-order-bundle>`",":ref:`ShoppingListBundle <bundle-docs-commerce-shopping-list-bundle>`"
+    ":ref:`ConsentBundle <bundle-docs-commerce-consent-bundle>`","**P**","**T**"
+    ":ref:`CommerceMenuBundle <bundle-docs-commerce-commerce-menu-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`",":ref:`TaxBundle <bundle-docs-commerce-tax-bundle>`"
+    ":ref:`CookieConsentBundle <bundle-docs-commerce-cookie-consent-bundle>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`","**W**"
+    ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
+    ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
     "**F**","**R**",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
     ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`",""
 
@@ -119,7 +120,6 @@ CRM Bundles
    CacheBundle <platform/CacheBundle/index>
    CalendarBundle <platform/CalendarBundle/index>
    ChartBundle <platform/ChartBundle/index>
-   CookieConsentBundle <commerce/CookieConsentBundle/index>
    CommentBundle <platform/CommentBundle/index>
    ConfigBundle <platform/ConfigBundle/index>
    CronBundle <platform/CronBundle/index>
@@ -182,17 +182,20 @@ CRM Bundles
    CMSBundle <commerce/CMSBundle/index>
    ConsentBundle <commerce/ConsentBundle/index>
    CommerceMenuBundle <commerce/CommerceMenuBundle/index>
+   CookieConsentBundle <commerce/CookieConsentBundle/index>
    CustomerBundle <commerce/CustomerBundle/index>
+   CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
    FrontendBundle <commerce/FrontendBundle/index>
    InventoryBundle <commerce/InventoryBundle/index>
    OrderBundle <commerce/OrderBundle/index>
    PayPalBundle <commerce/PayPalBundle/index>
-   PromotionBundle <commerce/PromotionBundle/index>
    PricingBundle <commerce/PricingBundle/index>
+   PromotionBundle <commerce/PromotionBundle/index>
    ProductBundle <commerce/ProductBundle/index>
    RedirectBundle <commerce/RedirectBundle/index>
    SellerDashboardBundle <commerce/SellerDashboardBundle/index>
    SEOBundle <commerce/SEOBundle/index>
+   ShoppingListBundle <commerce/ShoppingListBundle/index>
    TaxBundle <commerce/TaxBundle/index>
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
@@ -211,7 +214,6 @@ CRM Bundles
    MakerBundle <extensions/MakerBundle/index>
    PaypalExpressBundle <extensions/PaypalExpressBundle/index>
    StripeBundle <extensions/StripeBundle/index>
-   CustomerRecommendationBundle <commerce/CustomerRecommendationBundle/index>
 
 
 .. include:: /include/include-links-seo.rst

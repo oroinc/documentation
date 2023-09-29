@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--payment--payment-providers-stripe--overview:
 
 Manage Stripe Payment Service in the Back-Office
@@ -7,13 +5,13 @@ Manage Stripe Payment Service in the Back-Office
 
 .. hint:: This section is part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides a general understanding of the payment concept in OroCommerce.
 
-Stripe is a payment service provider that helps accept online payments from customers in the OroCommerce storefront and manage all transactions in the OroCommerce back-office. It also provides a solution to expose suspicious and fraudulent behavior and fight it on the website. Stripe also supports order splitting, enabling you to capture, cancel, or refund (fully or partially)  payments for each sub-order separately.
+Stripe is a payment service provider that helps accept online payments from customers in the OroCommerce storefront. It supports order splitting, enabling you to capture, cancel, or refund (fully or partially) payments for each sub-order separately. Stripe also provides a solution to identify potential fraudulent activity and prevent placement of fraudulent orders. 
 
 
 Integration Prerequisites
 -------------------------
 
-.. note:: Stripe Integration, comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the |Stripe Integration| package.
+.. note:: Stripe Integration comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the |Stripe Integration| package.
 
 To start using Stripe with the OroCommerce application:
 

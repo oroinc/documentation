@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _getting-started-wysiwyg-editor-field:
 
 WYSIWYG Editor

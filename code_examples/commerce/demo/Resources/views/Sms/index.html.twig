@@ -1,0 +1,21 @@
+{% extends '@OroUI/actions/index.html.twig' %}
+{% import '@OroUI/macros.html.twig' as UI %}
+{% set gridName = 'acme-demo-sms-grid' %}
+{% set pageTitle = 'acme.demo.sms.entity_plural_label'|trans %}
+
+{% block navButtons %}
+    {% import '@OroUI/macros.html.twig' as UI %}
+
+    {% include '@OroImportExport/ImportExport/buttons_from_configuration.html.twig' with {
+        'alias': 'acme_demo_sms'
+    } %}
+
+    {% if is_granted('acme_demo_sms_create') %}
+        <div class="btn-group">
+        {{ UI.addButton({
+            'path': path('acme_demo_sms_create'),
+            'entity_label': 'acme.demo.sms.entity_label'|trans
+        }) }}
+        </div>
+    {% endif %}
+{% endblock %}

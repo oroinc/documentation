@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _configuration--guide--system--configuration--websites:
 
 Configure Global Websites Settings

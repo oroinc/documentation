@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _products--product-families:
 
 Manage Product Families in the Back-Office

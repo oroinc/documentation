@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--inventory--manage--externally:
 
 Export Inventory Levels and Statuses

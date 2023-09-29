@@ -1,0 +1,23 @@
+{% extends '@OroUI/actions/index.html.twig' %}
+{% import '@OroUI/macros.html.twig' as UI %}
+{% set gridName = 'acme-demo-favorite-grid' %}
+{% set pageTitle = 'acme.demo.favorite.entity_plural_label'|trans %}
+
+{% block navButtons %}
+    {% import '@OroUI/macros.html.twig' as UI %}
+
+    {% if is_granted('acme_demo_favorite_new_edit') %}
+        <div class="btn-group">
+            {{ UI.addButton({
+                'path': path('acme_demo_favorite_new_edit'),
+                'entity_label': 'acme.demo.favorite.customLabel'|trans
+            }) }}
+        </div>
+        <div class="btn-group">
+            {{ UI.addButton({
+                'path': path('acme_demo_favorite_protected'),
+                'entity_label': 'acme.demo.favorite.protectedCsrfLabel'|trans
+            }) }}
+        </div>
+    {% endif %}
+{% endblock %}

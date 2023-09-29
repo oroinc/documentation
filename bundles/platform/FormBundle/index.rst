@@ -5,7 +5,7 @@
 OroFormBundle
 =============
 
-OroFormBundle implements a set of form types and validation rules for the application data entry. The bundle allows to reuse specialized form elements and improves the data entry experience.
+|OroFormBundle| implements a set of form types and validation rules for the application data entry. The bundle allows to reuse specialized form elements and improves the data entry experience.
 
 Related Documentation
 ---------------------
@@ -25,3 +25,6 @@ Related Documentation
    InlineEditableViewComponent <inline-editable-view-component>
    editor/index
    search-apis
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

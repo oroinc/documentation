@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _mc-customers-export:
 
 Export Customers

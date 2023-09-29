@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 Configure Scheduled Tasks in the Back-Office
 ============================================
 
@@ -25,6 +23,6 @@ On the page, you can see the list of scheduled commands with their names, schedu
 .. image:: /user/img/system/scheduled_tasks/scheduled_tasks.png
     :alt: Scheduled Tasks UI page
 
-.. include:: /include/include-links-user.rst
+.. include:: /include/include-links-dev.rst
    :start-after: begin
 

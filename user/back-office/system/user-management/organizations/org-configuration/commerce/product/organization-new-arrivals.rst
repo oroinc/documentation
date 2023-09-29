@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--users--organization--commerce--products--new-arrivals:
 .. _sys--commerce--product--new-arrivals-block-organization:
 

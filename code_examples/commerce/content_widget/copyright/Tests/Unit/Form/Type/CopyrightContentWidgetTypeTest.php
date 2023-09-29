@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CopyrightBundle\Tests\Unit\Form\Type;
+namespace Acme\Bundle\CopyrightBundle\Tests\Unit\Form\Type;
 
-use ACME\Bundle\CopyrightBundle\Form\Type\CopyrightContentWidgetType;
+use Acme\Bundle\CopyrightBundle\Form\Type\CopyrightContentWidgetType;
 use Oro\Component\Testing\Unit\FormIntegrationTestCase;
 
 class CopyrightContentWidgetTypeTest extends FormIntegrationTestCase

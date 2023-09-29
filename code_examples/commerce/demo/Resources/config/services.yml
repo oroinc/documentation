@@ -1,0 +1,110 @@
+# Resources/config/services.yml
+services:
+
+    acme_demo.provider.demo_image_placeholder.config:
+       parent: oro_layout.provider.image_placeholder.config.abstract
+       public: false
+       arguments:
+           - 'acme_demo.provider.demo_image_placeholder.config.param'
+
+    acme_demo.provider.demo_image_placeholder.theme:
+       parent: oro_layout.provider.image_placeholder.theme.abstract
+       public: false
+       arguments:
+           - 'product'
+
+    acme_demo.provider.demo_image_placeholder.default:
+        parent: oro_layout.provider.image_placeholder.default.abstract
+        public: false
+        arguments:
+            - '/bundles/acmedemo/images/demo_placeholder_default.png'
+
+    acme_demo.twig.product_image_extension:
+        class: Acme\Bundle\DemoBundle\Twig\ProductImageExtension
+        arguments:
+            - '@oro_platform.twig.service_locator'
+        tags:
+            - { name: twig.extension }
+
+    Acme\Bundle\DemoBundle\EntityConfig\AcmeEntityConfiguration:
+        tags:
+            - oro_entity_config.validation.entity_config
+
+    Acme\Bundle\DemoBundle\EntityConfig\AcmeDemoEntityConfiguration:
+        tags:
+            - oro_entity_config.validation.entity_config
+
+    Acme\Bundle\DemoBundle\EntityConfig\AcmeDemoFieldConfiguration:
+        tags:
+            - oro_entity_config.validation.entity_config
+
+    acme_demo.search.repository.question:
+        class: Acme\Bundle\DemoBundle\Search\QuestionSearchRepository
+        arguments:
+            - '@oro_search.query_factory'
+            - '@oro_search.provider.search_mapping'
+        calls:
+            - [ setEntityName, [ 'Acme\Bundle\DemoBundle\Entity\Question' ] ]
+
+    acme_demo.search.repository.priority:
+        class: Acme\Bundle\DemoBundle\Search\PriorityRepository
+        parent: oro_website_search.repository.abstract
+        calls:
+            - [ setEntityName, [ 'Acme\Bundle\DemoBundle\Entity\Priority' ] ]
+
+    # Validator
+    acme_demo.validator.acme_custom_grid_field_validator:
+        class: Acme\Bundle\DemoBundle\Validator\CustomGridFieldValidator
+        arguments:
+            - '@property_accessor'
+        tags:
+            - { name: oro_entity.custom_grid_field_validator, entity_name: Acme_Bundle_DemoBundle_Entity_Priority }
+
+    acme_demo.acl.manager.helper:
+        class: Acme\Bundle\DemoBundle\Helper\AcmeAclManagerHelper
+
+    acme_demo.acl.access_rule.favorite:
+        class: Acme\Bundle\DemoBundle\AccessRule\FavoriteAccessRule
+        tags:
+            - { name: oro_security.access_rule, type: ORM, entityClass: Acme\Bundle\DemoBundle\Entity\Favorite }
+
+    acme_demo.dictionary_value_list_provider:
+        class: Acme\Bundle\DemoBundle\Provider\AcmeDictionaryValueListProvider
+        public: false
+        arguments:
+            - '@oro_entity_config.config_manager'
+            - '@doctrine'
+        tags:
+            - { name: oro_entity.dictionary_value_list_provider, priority: 200 }
+
+    acme_demo_sms.activity_list.provider:
+        class: Acme\Bundle\DemoBundle\Provider\SmsActivityListProvider
+        arguments:
+            - "@oro_entity.doctrine_helper"
+            - "@oro_security.owner.entity_owner_accessor.link"
+            - "@oro_activity.association_helper"
+            - "@oro_comment.association_helper"
+        tags:
+            - { name: oro_activity_list.provider, class: Acme\Bundle\DemoBundle\Entity\Sms, priority: 10 }
+
+    acme_demo.event_listener.acme_priorities_grid_parameter_listener:
+        class: Acme\Bundle\DemoBundle\EventListener\ParameterListener
+        arguments:
+            - holder_entity_id
+        tags:
+            - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.after.acme-demo-document-grid-by-priority, method: onBuildAfter }
+
+    acme_demo.priority_entity_name_provider:
+        class: Acme\Bundle\DemoBundle\Provider\AcmeClassNameProvider
+        arguments:
+            - "@oro_entity_config.config_manager"
+            - "@translator"
+            - '@Doctrine\Inflector\Inflector'
+        tags:
+            - { name: oro_entity.class_name_provider, priority: 100 }
+
+    acme_demo.favorite_view_list:
+        class: Acme\Bundle\DemoBundle\Datagrid\FavoriteViewList
+        public: true
+        arguments:
+            - '@translator'

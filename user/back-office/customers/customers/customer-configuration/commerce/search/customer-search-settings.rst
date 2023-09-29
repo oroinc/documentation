@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--customers--search--settings:
 
 Configure Search History Settings per Customer

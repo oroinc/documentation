@@ -1,0 +1,44 @@
+{% extends '@OroUI/actions/view.html.twig' %}
+{% import '@OroUI/macros.html.twig' as UI %}
+{% import '@OroEntityConfig/macros.html.twig' as entityConfig %}
+
+{% oro_title_set({params : {"%title%": entity|oro_format_name|default('N/A'|trans) } }) %}
+
+{% block pageHeader %}
+    {% set breadcrumbs = {
+        'entity': entity,
+        'indexPath': path('acme_demo_document_index'),
+        'indexLabel': 'acme.demo.document.entity_plural_label'|trans,
+        'entityTitle': entity|oro_format_name|default('N/A'|trans)
+} %}
+
+    {{ parent() }}
+{% endblock pageHeader %}
+
+{% block content_data %}
+
+    {% set dataBlocks = [
+        {
+            'title': 'acme.demo.section.document.general.label'|trans,
+            'subblocks': [
+                {
+                    'data' : [
+                        UI.renderProperty('acme.demo.document.subject.label'|trans, entity.subject),
+                        UI.renderProperty('acme.demo.document.description.label'|trans, entity.description),
+                        UI.renderProperty('acme.demo.document.due_date.label'|trans, entity.dueDate|oro_format_datetime),
+                        UI.renderHtmlProperty(
+                            'acme.demo.document.priority.label'|trans,
+                            UI.entityViewLink(entity.priority, entity.priority|oro_format_name|default('N/A'|trans), 'acme_demo_priority_view')
+                        ),
+                        entityConfig.renderDynamicFields(entity)
+                    ]
+                }
+            ]
+        },
+    ] %}
+
+    {% set id = 'acme-demo-document-view' %}
+    {% set data = {'dataBlocks': dataBlocks} %}
+
+    {{ parent() }}
+{% endblock content_data %}

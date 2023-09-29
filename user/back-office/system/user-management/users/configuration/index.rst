@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-my-user-configuration:
 .. _doc-user-management-users-actions-configure:
 .. _doc-my-user-configuration-general:

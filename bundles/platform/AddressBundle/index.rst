@@ -3,7 +3,7 @@
 OroAddressBundle
 ================
 
-OroAddressBundle introduces the base entity and interfaces for addresses and address-related entities such as a country, a region, a phone, and an email. It also provides a dictionary with country region codes and names.
+|OroAddressBundle| introduces the base entity and interfaces for addresses and address-related entities such as a country, a region, a phone, and an email. It also provides a dictionary with country region codes and names.
 
 .. _bundle-docs-platform-address-bundle-address-type:
 

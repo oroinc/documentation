@@ -31,13 +31,12 @@ This can help avoid naming conflicts or make entity aliases more readable or use
 
 You can explicitly define aliases for a specific entity in the ``entity_aliases`` section of ``Resources/config/oro/entity.yml``:
 
-.. code-block:: yaml
+.. oro_integrity_check:: c9a9b55bb894fcc23f21f5a2612d6127768ed5c5
 
-    oro_entity:
-        entity_aliases:
-            Oro\Component\MessageQueue\Job:
-                alias:        job
-                plural_alias: jobs
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/entity.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/entity.yml
+       :language: yaml
+       :lines: 1-5
 
 To exclude certain entities from the alias generation process, for example, some internal entities, you can add the ``entity_alias_exclusions`` section:
 

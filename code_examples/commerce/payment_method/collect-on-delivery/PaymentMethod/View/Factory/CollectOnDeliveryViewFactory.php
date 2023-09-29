@@ -1,9 +1,9 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\View\Factory;
+namespace Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\View\Factory;
 
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\View\CollectOnDeliveryView;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\View\CollectOnDeliveryView;
 
 /**
  * Factory for creating views of Collect on delivery payment method

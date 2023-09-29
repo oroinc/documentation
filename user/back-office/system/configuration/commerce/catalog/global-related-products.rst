@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--commerce--catalog--relate-products--main:
 .. _sys--commerce--catalog--relate-products:
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--shipping--shipping-options:
 .. _user-guide--shipping--product-shipping-info:
 

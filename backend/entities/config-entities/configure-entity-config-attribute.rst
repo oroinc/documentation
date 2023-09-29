@@ -9,64 +9,35 @@ You can use configuration to define a new entity config attribute:
 
 Example:
 
-.. code-block:: php
-   :caption: src/Acme/Bundle/DemoBundle/EntityConfig/AcmeDemoAttrEntityConfiguration.php
+.. oro_integrity_check:: bfe144b9354c836439419947d40e44853c63f00c
 
-   namespace Acme\Bundle\DemoBundle\EntityConfig;
+   .. literalinclude:: /code_examples/commerce/demo/EntityConfig/AcmeEntityConfiguration.php
+       :caption: src/Acme/Bundle/DemoBundle/EntityConfig/AcmeEntityConfiguration.php
+       :language: php
 
-   use Oro\Bundle\EntityConfigBundle\EntityConfig\EntityConfigInterface;
-   use Symfony\Component\Config\Definition\Builder\NodeBuilder;
-
-   class AcmeDemoAttrEntityConfiguration implements EntityConfigInterface
-   {
-
-       /**
-        * @inheritDoc
-        */
-       public function getSectionName(): string
-       {
-           return 'acme';
-       }
-
-       /**
-        * @inheritDoc
-        */
-       public function configure(NodeBuilder $nodeBuilder): void
-       {
-           $nodeBuilder
-               ->scalarNode('demo_attr')
-               ->info('`string` demo attribute description.')
-               ->defaultNull()
-               ->end()
-           ;
-       }
-   }
 
 2. Add this class to ``services.yml`` with tag ``oro_entity_config.validation.entity_config``.
 
 Example:
 
-.. code-block:: yaml
+.. oro_integrity_check:: 0e49f1f3a5f2286cbbc9e1105636ceb92f85e217
 
-     Acme\Bundle\DemoBundle\EntityConfig\AcmeDemoAttrEntityConfiguration:
-       tags:
-         - oro_entity_config.validation.entity_config
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/services.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/services.yml
+       :language: yaml
+       :lines: 2, 29-31
 
 Add Settings to entity_config.yml
 ---------------------------------
 
 To illustrate how you can add metadata to an entity, add the following YAML file (this file must be located in ``[BundleName]/Resources/config/oro/entity_config.yml``):
 
-.. code-block:: yaml
+.. oro_integrity_check:: 44a787d6e0ceff70c64a1deced1f0da9a1260e42
 
-    entity_config:
-        acme:                                      # a configuration scope name
-            entity:                                # a section describes an entity
-                items:                             # starts a description of entity attributes
-                    demo_attr:                     # adds an attribute named 'demo_attr'
-                        options:
-                            priority: 100
-                            indexed:  true
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/entity_config.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/entity_config.yml
+       :language: yaml
+       :lines: 1-6, 11-12
 
 This configuration adds the 'demo_attr' attribute with the 'Demo' value to all configurable entities. The configurable entity is an entity marked with the `@Config` annotation. This code also automatically adds a service named **oro_entity_config.provider.acme** into the DI container. You can use this service to get the value of a particular entity's 'demo_attr' attribute.
 
@@ -92,23 +63,12 @@ An example how to get a value of a configuration attribute:
 
 If you want to set a value different than the default one for some entity, write it in the `@Config` annotation for this entity. For example:
 
-.. code-block:: php
+.. oro_integrity_check:: 0124d3ee31817b8ca7e23280f550875ec2b5df9b
 
-    /**
-     * @ORM\Entity
-     * @Config(
-     *  defaultValues={
-     *      "acme"={
-     *          "demo_attr"="MyValue"
-     *      }
-     *  }
-     * )
-     */
-    class MyEntity
-    {
-        ...
-    }
-
+   .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
+       :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
+       :language: php
+       :lines: 3-5, 8, 16-18, 23-26, 31, 58-60, 64-66
 
 The result is demonstrated in the following code:
 
@@ -130,31 +90,12 @@ The result is demonstrated in the following code:
 
 Essentially, it is all you need to add metadata to any entity. But in most cases, you want to allow an administrator to manage your attribute in UI. To accomplish this, let's change the YAML file the following way:
 
-.. code-block:: yaml
+.. oro_integrity_check:: bf81121d34a84c2158c6f10b27f89d0f48eeb0c4
 
-    entity_config:
-        acme:                                           # a configuration scope name
-            entity:                                     # a section describes an entity
-                items:                                  # starts a description of entity attributes
-                    demo_attr:                          # adds an attribute named 'demo_attr'
-                        options:
-                            default_value: 'Demo'       # sets the default value for 'demo_attr' attribute
-                            translatable:  true         # means that value of this attribute is translation key
-                                                        # and actual value should be taken from translation table
-                                                        # or in twig via "|trans" filter
-                            indexed:       true         # TRUE if an attribute should be filterable or sortable in a data grid
-                        grid:                           # configure a data grid to display 'demo_attr' attribute
-                            type:          string       # sets the attribute type
-                            label:         'Demo Attr'  # sets the data grid column name
-                            show_filter:   true         # the next three lines configure a filter for 'Demo Attr' column
-                            filterable:    true
-                            filter_type:   string
-                            sortable:      true         # allows an administrator to sort rows clicks on 'Demo Attr' column
-                        form:
-                            type:          text         # sets the attribute type
-                            options:
-                                block:     entity       # specifies in which block on the form this attribute should be displayed
-                                label:     'Demo Attr'  # sets the label name
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/entity_config.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/entity_config.yml
+       :language: yaml
+       :lines: 1-23
 
 Now you can go to System > Entities in the back-office. The 'Demo Attr' column should be displayed in the grid. Click Edit on any entity to open the edit entity form. The 'Demo Attr' field should be displayed there.
 

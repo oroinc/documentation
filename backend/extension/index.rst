@@ -1,7 +1,7 @@
-:title: Bundles and Extensions Management in OroCommerce, OroCRM, OroPlatform
+:title: Bundles and Extensions Management in Oro Application
 
 .. meta::
-   :description: Bundles and extensions management guides for the OroCommerce, OroCRM, OroPlatform backend developers
+   :description: Bundles and extensions management guides for the Oro Application backend developers
 
 .. _dev-guide-bundles-extensions:
 

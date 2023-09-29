@@ -5,7 +5,7 @@
 OroPayPalExpressBundle
 ======================
 
-This extension provides an implementation of PayPal Express payment integration that can be used in European countries (please check the PayPal website in your country to confirm the availability of PayPal Express in your country).
+|OroPayPalExpressBundle| provides an implementation of PayPal Express payment integration that can be used in European countries (please check the PayPal website in your country to confirm the availability of PayPal Express in your country).
 
 Overview
 --------
@@ -21,7 +21,6 @@ The following diagram illustrates the structure of PaypalExpressBundle, with the
 
 .. image:: /img/bundles/PaypalExpressBundle/structure.png
   :alt: The diagram illustrating the structure of paypalbundle
-  :scale: 50%
 
 The example Anti-Corruption Layer depends on PayPal SDK.
 

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _accessibility-concept-guide:
 
 E-Commerce Accessibility
@@ -48,15 +46,12 @@ Adaptive Page Magnification
 You can use CTRL + / CTRL - to control the webpage size. We made sure that our design neatly adapts to magnification, with text, images, and menus adjusting depending on the chosen level of magnification. Below are examples of 100%, 125%, and 175% magnification.
 
 .. image:: /user/img/concept-guides/accessibility/zoom100.png
-   :scale: 35%
    :alt: 100% page magnification
 
 .. image:: /user/img/concept-guides/accessibility/zoom125.png
-   :scale: 35%
    :alt: 125% page magnification
 
 .. image:: /user/img/concept-guides/accessibility/zoom175.png
-   :scale: 35%
    :alt: 175% magnification
 
 Search Autocomplete

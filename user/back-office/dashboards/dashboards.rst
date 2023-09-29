@@ -2,8 +2,6 @@
 .. _user-guide--business-intelligence--widgets:
 .. _user-guide-dashboards:
 
-:oro_documentation_types: OroCRM, OroCommerce
-
 Manage Dashboards in the Back-Office
 ====================================
 

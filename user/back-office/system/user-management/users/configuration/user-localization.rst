@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _config_guide--localization--user-localization:
 .. _doc-my-user-configuration-localization:
 

@@ -21,14 +21,12 @@ Configuration must be placed in the Resources/config/oro/actions.yml file. For e
 
 **Example - actions.yml**
 
-.. code-block:: yaml
+.. oro_integrity_check:: ee4610820935dcfea73113f64a58a61267f9b474
 
-   operations:
-       acme_demo_operation:
-           label:  Demo Operation
-           entities:
-               - Acme\Bundle\DemoBundle\Entity\User
-           ...
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26-28, 31-32
 
 Configuration Loading
 ---------------------
@@ -75,92 +73,64 @@ The root element of the configuration is *operations*. The operations are define
 A single operation configuration has the following properties:
 
 * **name** - *string* - An operation should have a unique name in the scope of all application.
-    
+
 * **extends** - *string* - An operation name that is used by configuration as a basis for the current operation.
-    
+
 * **label** - *string* - This value is shown in the UI.
-    
+
 * **substitute_operation** - *string* - The name of the operation that can be replaced (e.g., substituted) by the current one.
-    
-* **enabled** - *boolean* - A flag that defines whether this operation is enabled. Disabled operations are used in applications.
-    
+
+* **enabled** - *boolean or variable* - A flag that defines whether this operation is enabled. Disabled operations passed with variable value are used in applications. Boolean type is used when there is no preactions that determine operation status. If your operation status depends on preactions then use variable as value for the status. Take into account that disabled operations by variable value are slower, because there is need to execute all preactions before set and check the status value.
+
 * **page_reload** - *boolean* - By default, it is set to *true*. A flag that defines whether this operation should reload the page after execution. It applies when redirect url or datagrid is not specified inside the *actions* block.
-    
+
 * **entities** - *array* - An array of entity class names. Operation button is shown on the view/edit pages of the entities.
-    
+
 * **for_all_entities** - *boolean* - The boolean flag that determines whether the current operation matches the selected entities if any.
-    
+
 * **exclude_entities** - *array* - The list of entities that should be excluded from matching against current operation.
-    
+
 * **routes** - *array* - The operation button displayed on the pages where the route is mentioned.
-    
+
 * **groups** - *array* - Defines an array of group names to use with the current operation and behaves the same way as operation tagging. It is the easiest way to select the required group of operations for custom approaches.
-    
+
 * **datagrids** - *array* - The operation icon displayed as a datagrid-action in the listed datagrids.
-    
+
 * **for_all_datagrids** - *boolean* - The flag that determines whether the current operation matches all the selected datagrids, if any.
-    
+
 * **exclude_datagrids** - *array* - Defines a list of datagrid names which should be excluded from matching against the current operation.
-    
+
 * **order** - *integer* - The parameter that specifies the display order of operation buttons.
-    
+
 * **acl_resource** - *string* - The operation button is shown only if a user has the expected permissions.
-    
+
 * **frontend_options** - Contains configuration for Frontend Options.
-    
+
 * **preactions** - Contains configuration for actions which are performed before preconditions.
-    
+
 * **preconditions** - Contains configuration for Preconditions.
-    
+
 * **attributes** - Contains configuration for Attributes.
-    
+
 * **datagrid_options** - Contains configuration for Datagrid Options.
-    
+
 * **form_options** - Contains configuration for Transitions.
-    
+
 * **form_init** - Contains configuration for Form Init Actions.
-    
+
 * **conditions** - Contains configuration for Conditions.
-    
+
 * **actions** - Contains configuration for Actions.
 
 Example
 ^^^^^^^
 
-.. code-block:: php
+.. oro_integrity_check:: 4d1f28c1718c2582e8ee10e3b6354eb2401c7910
 
-   operations:                                             # root elements
-       demo_operation:                                     # name of operation
-           extends: demo_operation_base                    # base operation name
-           label: acme.demo.operations.myentity_operation  # this value will be shown in UI for operation button
-           substitute_operation: some_operation            # configuration of 'some_operation' will be replaced by configuration of this operation
-           enabled: false                                  # operation is disabled, means not used in application
-           entities:                                       # on view/edit pages of this entities operation button will be shown
-               - Acme\Bundle\DemoBundle\Entity\MyEntity    # entity class name
-           routes:                                         # on pages with these routes operation button will be shown
-               - acme_demo_action_view                     # route name
-           datagrids                                       # in listed datagrids operation icon will be shown
-               - acme-demo-grid                            # datagrid name
-           order: 10                                       # display order of operation button
-           acl_resource: acme_demo_action_view             # ACL resource name that will be checked on preconditions step
-           frontend_options:                               # configuration for Frontend Options
-                                                           # ...
-           preactions:                                     # configuration for Preactions
-                                                           # ...
-           preconditions:                                  # configuration for Preconditions
-                                                           # ...
-           attributes:                                     # configuration for Attributes
-                                                           # ...
-           datagrid_options:                               # configuration for Datagrid Options
-                                                           # ...
-           form_options:                                   # configuration for Form Options
-                                                           # ...
-           form_init:                                      # configuration for Form Init Actions
-                                                           # ...
-           conditions:                                     # configuration for Conditions
-                                                           # ...
-           actions:                                        # configuration for Actions
-                                                           # ...
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40-112
 
 Matching and Filter Mechanism
 -----------------------------
@@ -202,39 +172,28 @@ Button Options enable to change an operation button style, override a button tem
 Button Options configuration has the following options:
 
 * **icon** - *string* - CSS class the operation button icon.
-    
+
 * **class** - *string* - CSS class applied to the operation button.
-    
+
 * **group** - *string* - Name of operation button menu. The operation button is part of a dropdown buttons menu with a label (specified group). All operations within the same group are shown in a dropdown button html menu.
-    
+
 * **template** - *string* - This option provides the possibility to override the button template. Should be extended from `@OroAction/Operation/button.html.twig`.
-    
+
 * **data** - *array* - This option provides possibility to add data-attributes to the button tag or dynamic attributes for datagrid action.
-    
+
 * **page_component_module** - *string* - Name of js-component module for the operation-button (attribute *data-page-component-module*).
-    
+
 * **page_component_options** - *array* - List of options of js-component module for the operation-button (attribute *data-page-component-options*).
 
 Example
 ^^^^^^^
 
-.. code-block:: php
+.. oro_integrity_check:: d30aa1713833eb0f603ce384402e0e41d044aab9
 
-   operations:
-       demo_operation:
-           # ...
-           button_options:
-               icon: fa-check
-               class: btn
-               group: aсme.demo.operations.demogroup.label
-               template: '@OroAction/Operation/button.html.twig'
-               data:
-                   param: value
-                   customTitle: $.customTitle
-               page_component_module: acmedemo/js/app/components/demo-component
-               page_component_options:
-                   component_name: '[name$="[component]"]'
-                   component_additional: '[name$="[additional]"]'
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40, 53-64
 
 Frontend Options Configuration
 ------------------------------
@@ -244,38 +203,26 @@ Frontend Options enable you to override an operation dialog, page template, or t
 Frontend Options configuration has the following options:
 
 * **template** - *string* - You can set custom operation dialog template. Should be extended from `@OroAction/Operation/form.html.twig`.
-    
+
 * **title** - *string* - Custom title of operation dialog window.
-    
+
 * **title_parameters** - *array* - Parameter for replacing placeholders from the title. The operation data can be used.
-    
+
 * **options** - *array* - Parameters related to widget component with the following options: *allowMaximize*, *allowMinimize*, *dblclick*, *maximizedHeightDecreaseBy*, *width*, etc.
-    
+
 * **confirmation** - *string* - You can show a confirmation message before starting the operation execution. Translate constant should be available for JS and placed in `jsmessages.*.yml`.
-    
+
 * **show_dialog** - *boolean* - By default, this value is `true`. It means that during the operation execution a modal dialog with a form is displayed if the form parameters are set. Otherwise a separate page (like an entity update page) with a form is displayed instead.
 
 Example
 ^^^^^^^
 
-.. code-block:: php
+.. oro_integrity_check:: a4af9bdfab091ec9f9ae3a3125ba3841d9fafd60
 
-   operations:
-       demo_operation:
-           # ...
-           frontend_options:
-               confirmation: aсme.demo.operations.operation_perform_confirm
-               template: '@OroAction/Operation/form.html.twig'
-               title: aсme.demo.operations.dialog.title
-               title_parameters:
-                   %%some_param%%: $.paramValue
-               options:
-                   allowMaximize: true
-                   allowMinimize: true
-                   dblclick: maximize
-                   maximizedHeightDecreaseBy: minimize-bar
-                   width: 500
-               show_dialog: true
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40, 65-77
 
 Attributes Configuration
 ------------------------
@@ -286,7 +233,7 @@ Single attribute can be described with the following configuration:
 
 * **unique name** - Attributes should have a unique name in scope of Operation that they belong to. Form configuration references
     attributes by this value.
-    
+
 * **type** - *string* - Type of attribute. The following types are supported:
 
   * **boolean**
@@ -298,11 +245,11 @@ Single attribute can be described with the following configuration:
   * **array** - Elements of array should be scalars or objects that support serialization/deserialization.
   * **object** - Object should support serialization/deserialization, the "class" option is required for this type.
   * **entity** - Doctrine entity, the "class" option is required, and it must be a Doctrine manageable class.
-        
+
 * **label** - *string* - Label can be shown in the UI.
-    
+
 * **property_path** - *string* - Used to work with attribute value by reference and specifies path to data storage. If property path is specified then all other attribute properties except name are optional. They can be automatically determined based on the last element (field) of the property path.
-    
+
 * **options** - Options of an attribute. Currently the following options are supported:
 
   * **class** - *string* - Fully qualified class name. Enabled only when typing either entity or object.
@@ -312,22 +259,12 @@ Single attribute can be described with the following configuration:
 Example
 ^^^^^^^
 
-.. code-block:: php
+.. oro_integrity_check:: b92678bab83c6749344d70f588c3072b8caf9492
 
-   operations:
-       demo_operation:
-           # ...
-           attributes:
-               user:
-                   label: 'User'
-                   type: entity
-                   options:
-                       class: Oro\Bundle\UserBundle\Entity\User
-               company_name:
-                   label: 'Company name'
-                   type: string
-               group_name:
-                   property_path: user.group.name
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40, 78-88
 
 Datagrid Options Configuration
 ------------------------------
@@ -337,9 +274,9 @@ Datagrid options enable to define options of datagrid mass operation. They provi
 Single datagrid options can be described with the following configuration:
 
 * **mass_action_provider** - *string* - Service name. This service must be marked with the `oro_action.datagrid.mass_action_provider` tag. Also it must implement Oro\\Bundle\\ActionBundle\\Datagrid\\Provider\\MassActionProviderInterface. The "getActions" method of this provider must return array of mass action configurations.
-    
+
 * **mass_action** - *array* - Mass action configuration. See the datagrid documentation.
-    
+
 * **data** - *array* - This option provides possibility to add static attributes to datagrid action. See the datagrid documentation.
 
 .. note:: Keep in mind that only one parameter, either "mass_action_provider" or "mass_action", can be used.
@@ -347,29 +284,12 @@ Single datagrid options can be described with the following configuration:
 Example
 ^^^^^^^
 
-.. code-block:: php
+.. oro_integrity_check:: e1860f86c94c8399284e20933004d05dbf42a9a9
 
-   operations:
-       demo_operation:
-           # ...
-           datagrid_options:
-               mass_action_provider:
-                   acme.action.datagrid.mass_action_provider
-               mass_action:
-                   type: window
-                   label: acme.demo.mass_action.label
-                   icon: plus
-                   route: acme_demo_bundle_massaction
-                   frontend_options:
-                       title: acme.demo.mass_action.action.label
-                       dialogOptions:
-                           modal: true
-                           ...
-               data:
-                   type: import
-                   importProcessor: 'acme_import_processor'
-                   importJob: 'acme_import_from_csv'
-
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40, 89-104
 
 Form Options Configuration
 --------------------------
@@ -379,33 +299,24 @@ These options are passed to form type of operation. They contain options for for
 Single form configuration is described with the following configuration:
 
 * **attribute_fields** - *array* - List of attributes with their options. All attributes specified in this configuration must be included in the attribute configuration.
-    
+
 * **attribute_default_values** - *array* - List of default values for attributes. These values are shown in the operation form once it is loaded.
 
 Example
 ^^^^^^^
 
-.. code-block:: php
+.. oro_integrity_check:: 12cacbb76c5e6b96a72023a4e4fc44641b54774d
 
-   operations:
-       demo_operation:
-           # ...
-           form_options:
-               attribute_fields:
-                   demo_attr:
-                       form_type: Symfony\Component\Form\Extension\Core\Type\TextType
-                           options:
-                               required: true
-                               constraints:
-                                   - NotBlank: ~
-               attribute_default_values:
-                   demo_attr: $demo
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40, 105-110
 
 Preconditions and Conditions Configuration
 ------------------------------------------
 
 * **preconditions** - Configuration of preconditions that must be satisfied to enable the operation button displaying.
-    
+
 * **conditions** - Configuration of Conditions that must be satisfied to enable the operation.
 
 It declares a tree structure of conditions that are applied on the Action Data to check if the Operation could be performed. Single condition configuration contains alias, a unique name of a condition, and options.
@@ -423,24 +334,20 @@ Also, it is possible to refer to any property of Action Data using the `$.` pref
 Example
 ^^^^^^^
 
-.. code-block:: php
+.. oro_integrity_check:: fe01ff9b68148df920a521f4b81a715fb4296587
 
-   operations:
-       demo_operation:
-           # ...
-           preconditions:
-               @equal: [$name, 'John Dow']
-           conditions:
-               @not_empty: [$group]
-
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40, 111-114
 
 Preactions, Form Init Actions and Actions Configuration
 -------------------------------------------------------
 
 * **preactions** - Configuration of preactions that can be performed before preconditions, conditions, form init actions, and actions. It can be used to prepare some data in Action Data that will be used in the preconditions validation.
-    
+
 * **form_init** - Configuration of Form Init Actions that can be performed in Action Data before conditions and actions. One of the possible init operations usage scenario is to fill attributes with default values which will be used in operation form if any.
-    
+
 * **actions** - Configuration of actions that must be performed after all previous steps are completed. This is the main operation step that must contain operation logic. It will be performed only after conditions are qualified.
 
 Similarly to conditions, the alias of action starts from the `@` symbol and must refer to registered actions. For example, the `@assign_value` refers to the action which set specified value to attribute in Action Data.
@@ -448,23 +355,12 @@ Similarly to conditions, the alias of action starts from the `@` symbol and must
 Example
 ^^^^^^^
 
-.. code-block:: yaml
+.. oro_integrity_check:: 46a42709509ad6e5a243ff19513f8520781dea1d
 
-    operations:
-        demo_operation:
-            # ...
-            preactions:
-                - '@assign_value': [$name, 'User Name']
-            form_init:
-                - '@assign_value': [$group, 'Group Name']
-            actions:
-                - '@create_entity':
-                    class: Acme\Bundle\DemoBundle\Entity\User
-                    attribute: $user
-                    data:
-                        name: $name
-                        group: $group
-
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 26, 40, 115-126
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

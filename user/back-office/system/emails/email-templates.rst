@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-email-template:
 .. _user-guide-email-templates-create:
 .. _user-guide-using-emails-create-template:
@@ -14,18 +12,18 @@ Create a New Email Template
 
 1. Navigate to **System > Emails > Templates**.
 2. Click **Create Template**.
-   
+
    .. image:: /user/img/system/emails/templates/email_template_create.png
       :alt: A template creation page
 
 3. Define the general settings for the template.
 
    The following fields are mandatory and must be defined:
-  
+
    * **Template Name** --- Name used to refer to the template in the system.
    * **Type** --- Use html or plain text.
    * **Owner** --- Limits the list of users that can manage the template, subject to the :ref:`access and permission settings <user-guide-user-management-permissions>`.
- 
+
    Optional field **Entity Name** is used to define an :term:`entity <Entity>`, variables whereof can be used in the template. If no entity name is defined, only system variables are available.
 
    .. important:: If you want to use the template for :ref:`autoresponses <admin-configuration-system-mailboxes-autoresponse>`, the **Entity Name** field value should be **Email**.
@@ -75,7 +73,7 @@ The full list of these functions is the following:
         <table>
             <thead>
                 <tr>
-                    <th><strong>ACME</strong></th>
+                    <th><strong>Acme</strong></th>
                 </tr>
             </thead>
             {% for item in collection %}
@@ -100,7 +98,7 @@ The full list of these functions is the following:
         <table>
             <thead>
                 <tr>
-                    <th><strong>ACME</strong></th>
+                    <th><strong>Acme</strong></th>
                 </tr>
             </thead>
             <!--{% for item in collection %}-->

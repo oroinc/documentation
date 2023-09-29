@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CMSBundle\Form\Type;
+namespace Acme\Bundle\CMSBundle\Form\Type;
 
-use ACME\Bundle\CMSBundle\Entity\Block;
+use Acme\Bundle\CMSBundle\Entity\Block;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;

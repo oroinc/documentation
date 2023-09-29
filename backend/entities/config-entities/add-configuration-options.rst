@@ -6,51 +6,12 @@ To add new configuration options:
 
 1. Define the options that you want to be configurable. You can create new options per bundle, which means a bundle can extend the available options. To add new options, create the ``entity_config.yml`` file in your bundle as follows:
 
-.. code-block:: yaml
-   :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/entity_config.yml
+.. oro_integrity_check:: 6527b34a51fb2d9ca4cf7291f68cd33adc2b924d
 
-    entity_config:
-        acme_demo:
-            entity:
-                items:
-                    comment:
-                        options:
-                            default_value: ""
-                            translatable:  true
-                            indexed:       true
-                        grid:
-                            type:        string
-                            label:       Comment
-                            show_filter: true
-                            filterable:  true
-                            filter_type: string
-                            sortable:    true
-                        form:
-                            type: text
-                            options:
-                                block: entity
-                                label: Comment
-            field:
-                items:
-                    auditable:
-                        options:
-                            indexed:  true
-                            priority: 60
-                        grid:
-                            type:        boolean
-                            label:       'Auditable'
-                            show_filter: false
-                            filterable:  true
-                            filter_type: boolean
-                            sortable:    true
-                            required:    true
-                        form:
-                            type: choice
-                            options:
-                                block:       entity
-                                label:       'Auditable'
-                                choices:     ['No', 'Yes']
-                                empty_value: false
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/entity_config.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/entity_config.yml
+       :language: yaml
+       :lines: 1, 25-66
 
 The key used in the first level of the entity configuration is a custom identifier used to create a kind of namespace for the additional options. For each scope, a different service is created (its name follows the schema ``oro_entity_config.provider.<scope>``). For example, the service name for
 the options configured in the example above is ``oro_entity_config.provider.acme_demo``. It is an instance of the ``Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider`` class.
@@ -172,15 +133,12 @@ The values the user enters when editing additional entity attributes are stored 
 
 For example, it is required for fields to be visible in grids in the System > Entities section and have a filter or allow sorting in this grid. In this case, you can mark a field as indexed. For example:
 
-.. code-block:: yaml
+.. oro_integrity_check:: 12db1bf3a5f6f9c07b9f4343c94ddcfb43b7df65
 
-    entity_config:
-        acme:
-            entity:
-                items:
-                    demo_attr:
-                        options:
-                            indexed: true
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/entity_config.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/entity_config.yml
+       :language: yaml
+       :lines: 1-6, 11
 
 When you do this, a copy of this attribute will be stored in the `oro_entity_config_index_value` table (and kept synchronized if a value is changed). As a result, you can write SQL query like this:
 

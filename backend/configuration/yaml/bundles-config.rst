@@ -696,23 +696,6 @@ The default configuration for extension with alias "oro_google_tag_manager":
             # Number of product items in each batch for sending to GTM
             batch_size:           30
 
-oro_hangouts_call
-_________________
-
-The default configuration for extension with alias "oro_hangouts_call":
-
-.. code-block:: yaml
-
-    oro_hangouts_call:
-        initial_apps:
-
-            # Prototype
-            -
-                app_id:               ~ # Required
-                app_type:             ROOM_APP
-                app_name:             ~
-                base_path:            ~
-
 oro_health_check
 ________________
 

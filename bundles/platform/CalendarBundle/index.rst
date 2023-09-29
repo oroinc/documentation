@@ -3,7 +3,7 @@
 OroCalendarBundle
 =================
 
-OroCalendarBundle enables a Calendar feature and related functionality in Oro applications.
+|OroCalendarBundle| enables a Calendar feature and related functionality in Oro applications.
 
 .. image:: /img/bundles/CalendarBundle/example.png
    :alt: Calendar in the back-office
@@ -30,4 +30,7 @@ This bundle integrates the jQuery FullCalendar plugin into OroPlatform and provi
    attendees
 
 .. include:: /include/include-links-seo.rst
+   :start-after: begin
+
+.. include:: /include/include-links-dev.rst
    :start-after: begin

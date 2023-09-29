@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 :orphan:
 
 .. _user-guide--page-templates:

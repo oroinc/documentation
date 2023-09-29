@@ -64,14 +64,14 @@ Example:
 .. code-block:: none
 
     @Config(
-     ....
-     defaultValues={
-     ...
-     "merge"={
-     "enable"=true,
-     "max_entities_count"=5
-     }
-     }
+         ....
+         defaultValues={
+             ...
+             "merge"={
+                 "enable"=true,
+                 "max_entities_count"=5
+             }
+         }
     )
 
 Fields Level Configuration

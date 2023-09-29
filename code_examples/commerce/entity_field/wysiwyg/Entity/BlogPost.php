@@ -1,8 +1,9 @@
 <?php
 
-namespace ACME\Bundle\WysiwygBundle\Entity;
+namespace Acme\Bundle\WysiwygBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Extend\Entity\Autocomplete\ACMEWysiwygBundle_Entity_BlogPost;
 use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareInterface;
 use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareTrait;
 use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
@@ -34,6 +35,7 @@ use Oro\Bundle\OrganizationBundle\Entity\OrganizationInterface;
  *          }
  *      }
  * )
+ * @mixin ACMEWysiwygBundle_Entity_BlogPost
  */
 class BlogPost implements DatesAwareInterface, ExtendEntityInterface
 {

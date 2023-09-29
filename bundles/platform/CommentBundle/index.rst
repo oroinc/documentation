@@ -5,7 +5,7 @@
 OroCommentBundle
 ================
 
-OroCommentBundle adds the Comments functionality which can be used with the application entities.
+|OroCommentBundle| adds the Comments functionality which can be used with the application entities.
 
 
 Enable Comments for an Entity

@@ -15,10 +15,6 @@ Links (User)
 
    <a href="https://academy.oroinc.com/media-library/create-manage-events-orocrm#play=lZKiS3TvXNU" target="_blank">how to create and manage events in your Oro application</a>
 
-.. |Hangouts Help| raw:: html
-
-   <a href="https://support.google.com/hangouts#topic=6386410" target="_blank">Hangouts Help</a>
-
 .. |how to create and manage tasks| raw:: html
 
    <a href="https://academy.oroinc.com/media-library/create-and-manage-tasks" target="_blank">how to create and manage tasks</a>
@@ -295,10 +291,6 @@ Links (User)
 
    <a href="https://academy.oroinc.com/media-library/tags-taxonomies" target="_blank">how to create taxonomies</a>
 
-.. |OroCronBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CronBundle" target="_blank">OroCronBundle</a>
-
 .. |ImapBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImapBundle" target="_blank">ImapBundle</a>
@@ -482,10 +474,6 @@ Links (User)
 .. |OroMessageQueueComponent| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/MessageQueue" target="_blank">OroMessageQueueComponent</a>
-
-.. |OroMessageQueueBundle| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MessageQueueBundle" target="_blank">OroMessageQueueBundle</a>
 
 .. |Crowdin| raw:: html
 
@@ -849,6 +837,11 @@ Links (User)
 
    <a href="https://academy.oroinc.com/wp-content/uploads/sites/21/2023/05/oroGa4Container-24-05-23.zip" target="_blank">Download the .json file</a>
 
+.. |Download the .json file (GA4)1| raw:: html
+
+   <a href="http://academy.oroinc.com/wp-content/uploads/sites/21/2023/09/oroGa4Container-14-09-23.zip" target="_blank">Download the .json file</a>
+
+
 .. |Google Analytics 4 Event| raw:: html
 
    <a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events" target="_blank">Google Analytics 4 Event</a>
@@ -900,3 +893,12 @@ Links (User)
 .. |Stripe Integration| raw:: html
 
    <a href="https://packagist.oroinc.com/#oro/commerce-stripe" target="_blank">Stripe Integration</a>
+
+.. |Implement Cross-Domain Measurement| raw:: html
+
+   <a href="https://developers.google.com/tag-platform/devguides/cross-domain#when_to_implement_cross-domain_measurement" target="_blank">Implement Cross-Domain Measurement</a>
+
+.. |Salesforce Oro Integration extension| raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/salesforce-oro-integration/" target="_blank">Salesforce Oro Integration extension</a>
+

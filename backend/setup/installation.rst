@@ -1,4 +1,4 @@
-:title: OroCommerce, OroCRM, OroPlatform Installation
+:title: Oro Application Installation
 
 .. _installation:
 .. _install-for-dev:

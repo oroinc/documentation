@@ -1,4 +1,4 @@
-:title: Entities Management in OroCommerce, OroCRM, OroPlatform
+:title: Entities Management in Oro Application
 
 .. meta::
    :description: A step by step tutorial for entities management in the Oro applications for the backend developers
@@ -26,6 +26,7 @@ In the sections below, you can learn the key things you can come across when wor
    custom-field-validation
    entity-aliases
    entity-activities
+   create-new-activity
    entity-fallback
    entity-manager
    entity-names

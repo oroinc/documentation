@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _quote--create-from-scratch:
 
 Create a Quote From Scratch

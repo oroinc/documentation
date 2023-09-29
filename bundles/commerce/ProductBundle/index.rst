@@ -15,6 +15,7 @@ Related Documentation
 
    actions
    product-attributes
+   product-kits
    product-unit-formatting
    product-variant-search
    related-items

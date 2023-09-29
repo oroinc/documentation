@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--web-catalog-edit-content-tree:
 
 Edit a Web Catalog Content Tree

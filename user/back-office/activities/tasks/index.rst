@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-activities-tasks:
 .. _doc-activities-overview-tasks:
 .. _doc-activities-tasks-actions-add:

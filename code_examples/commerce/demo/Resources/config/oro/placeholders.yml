@@ -1,0 +1,9 @@
+placeholders:
+    items:
+        acme_demo_add_sms_button:
+            template: '@@AcmeDemo/Sms/activityButton.html.twig'
+            acl: acme_demo_sms_create
+
+        acme_demo_add_sms_link:
+            template: '@@AcmeDemo/Sms/activityLink.html.twig'
+            acl: acme_demo_sms_create

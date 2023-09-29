@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-access-oro-cannot-log-in:
 
 Troubleshoot Login Issues

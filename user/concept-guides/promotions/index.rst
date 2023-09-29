@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _concept-guides--promotion-management:
 
 Promotion Management Concept Guide

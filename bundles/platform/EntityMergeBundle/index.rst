@@ -5,7 +5,7 @@
 OroEntityMergeBundle
 ====================
 
-OroEntityMergeBundle enables application users to merge several entity records into one using a wizard in the application UI.
+|OroEntityMergeBundle| enables application users to merge several entity records into one using a wizard in the application UI.
 
 Related Documentation
 ---------------------

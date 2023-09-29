@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--payment-rules:
 
 Configure Payment Rules in the Back-Office

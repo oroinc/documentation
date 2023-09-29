@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _configuration-integrations-microsoft:
 
 Configure Global Microsoft Settings
@@ -32,7 +30,6 @@ Click the relevant topic below to start configuring the required setting:
    Microsoft 365 OAuth (Azure Active Directory Application) <microsoft-oauth-azure>
    Microsoft 365 Single Sign-On <microsoft-single-sign-on>
    Microsoft 365 Integrations <microsoft-365-integrations>
-
 
 
 

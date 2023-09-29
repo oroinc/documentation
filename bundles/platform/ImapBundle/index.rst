@@ -3,7 +3,7 @@
 OroImapBundle
 =============
 
-OroImapBundle enables the data synchronization between local user mailboxes provided by OroEmailBundle and remote
+|OroImapBundle| enables the data synchronization between local user mailboxes provided by OroEmailBundle and remote
 email servers using the capabilities of the IMAP protocol.
 
 Related Documentation
@@ -16,3 +16,6 @@ Related Documentation
    synchronization
    providers
    user-email-origin-transport
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

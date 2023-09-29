@@ -1,6 +1,6 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Entity;
+namespace Acme\Bundle\FastShippingBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;

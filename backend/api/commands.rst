@@ -49,6 +49,8 @@ To work only with the specified |API documentation views| use the ``--view`` opt
 
     php bin/console oro:api:doc:cache:clear --view=rest_json_api
 
+.. _oroapidump-command:
+
 oro:api:dump
 ------------
 
@@ -84,11 +86,23 @@ or
 
     php bin/console oro:api:dump users --sub-resources
 
-To get all entities that are not accessible via the API, see the ``--not-accessible`` option:
+To get all entities that are not accessible via the API, use the ``--not-accessible`` option:
 
 .. code-block:: none
 
     php bin/console oro:api:dump --not-accessible
+
+To get all entities that support a specific API action, use the ``--action`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:dump --action=update_list
+
+To get all entities that support :ref:`the upsert operation <web-services-api--upsert-operation>`, use the ``--upsert`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:dump --upsert
 
 .. _oroapidebug:
 
@@ -170,6 +184,8 @@ The ``--request-type`` option can limit the scope to the specified request type(
 
     php bin/console oro:api:debug --request-type=any other options and arguments
 
+.. _oroapiconfigdump-command:
+
 oro:api:config:dump
 -------------------
 
@@ -223,6 +239,8 @@ You can pass multiple options:
 
     php bin/console oro:api:config:dump users --extra=sorters --extra=descriptions --extra=filters --extra="Acme\Bundle\DemoBundle\Config\MyConfigExtra"
 
+.. _oroapimetadatadump-command:
+
 oro:api:metadata:dump
 ---------------------
 
@@ -258,6 +276,8 @@ To include the HATEOAS links to the metadata, use the ``--hateoas`` option:
 
     php bin/console oro:api:metadata:dump --hateoas <entity>
 
+.. _oroapiconfigdumpreference-command:
+
 oro:api:config:dump-reference
 -----------------------------
 
@@ -274,6 +294,8 @@ You can use the ``--max-nesting-level`` option to limit the depth of nesting tar
     php bin/console oro:api:config:dump-reference --max-nesting-level=<number>
 
 .. _web-api--commands--oro-cron-api-async_operations-cleanup:
+
+.. _orocronapiasyncoperationscleanup-command:
 
 oro:cron:api:async_operations:cleanup
 -------------------------------------

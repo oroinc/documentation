@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-configuration-email-configuration-global:
 .. _user-guide-email-admin:
 .. _doc-email-configuration:
@@ -158,8 +156,8 @@ To configure a system mailbox globally:
 6. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox.
 
    * *Do Nothing* --- No actions are performed. Letters are saved in the mailbox.
-   * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in OroCRM.
-   * *Convert To Case* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Case record will be created in OroCRM.
+   * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in the Oro application.
+   * *Convert To Case* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Case record will be created in the Oro application.
 
    As an example, we have selected the **Convert To Lead** option. Once the action has been selected, define which user will own the records and choose the source of your leads in the **Source** field.
 

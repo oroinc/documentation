@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CMSBundle\Validator\Constraints;
+namespace Acme\Bundle\CMSBundle\Validator\Constraints;
 
-use ACME\Bundle\CMSBundle\Entity\Block;
+use Acme\Bundle\CMSBundle\Entity\Block;
 use Doctrine\Persistence\ManagerRegistry;
 use Oro\Bundle\DraftBundle\Manager\DraftableFilterManager;
 use Symfony\Component\Validator\Constraint;

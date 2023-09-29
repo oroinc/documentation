@@ -1,9 +1,9 @@
 <?php
 
-namespace ACME\Bundle\FastShippingBundle\Integration;
+namespace Acme\Bundle\FastShippingBundle\Integration;
 
-use ACME\Bundle\FastShippingBundle\Entity\FastShippingSettings;
-use ACME\Bundle\FastShippingBundle\Form\Type\FastShippingTransportSettingsType;
+use Acme\Bundle\FastShippingBundle\Entity\FastShippingSettings;
+use Acme\Bundle\FastShippingBundle\Form\Type\FastShippingTransportSettingsType;
 use Oro\Bundle\IntegrationBundle\Entity\Transport;
 use Oro\Bundle\IntegrationBundle\Provider\TransportInterface;
 use Symfony\Component\HttpFoundation\ParameterBag;

@@ -1,7 +1,5 @@
 .. _system-websites-create:
 
-:oro_documentation_types: OroCommerce
-
 Create a Website in the Back-Office
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

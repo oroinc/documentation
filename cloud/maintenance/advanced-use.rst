@@ -6,7 +6,7 @@ Advanced Configuration
 Deployment and Maintenance Configuration
 ----------------------------------------
 
-To modify configuration options for maintenance agent, you need to have the `orocloud.yaml` file placed in the application root. If the application is not yet deployed, modifications can also be made in `/mnt/(ocom|ocrm)/app/orocloud.yaml`.
+To modify configuration options for maintenance agent, you need to have the `orocloud.yaml` file placed in Git repository root directory. If the application is not yet deployed, modifications can also be made in `/mnt/(ocom|ocrm)/app/orocloud.yaml`.
 
 The `validation` command checks your configuration for syntax errors or wrong configuration values. Use the `files` argument to check custom files or multiple files merge result:
 
@@ -22,7 +22,7 @@ The `validation` command checks your configuration for syntax errors or wrong co
 
     orocloud-cli config:validate /mnt/ocom/app/orocloud.yaml /mnt/ocom/app/www/orocloud.yaml /mnt/ocom/app/www/orocloud_prod.yaml
 
-Valid changes are applied within 40 minutes or automatically during deployments.
+Valid changes are applied within 10 minutes or automatically during deployments.
 
 Use the `help` command to get configuration details or configuration reference:
 
@@ -168,6 +168,7 @@ Some options may also be omitted as they are added automatically:
           - 'command1'
           - 'command2'
 
+.. _orocloud-maintenance-advanced-use-application-config:
 
 Application Configuration
 -------------------------
@@ -202,7 +203,7 @@ Custom maintenance pages, error pages (403, 451, 501, 502), error pages path, we
         consumers_debug_mode: true
 
 
-The ``maintenance_page``, ``error_pages_path`` and ``error_pages`` are relative paths to files in the application repository. When modified, changes are applied after the `deploy` | `upgrade` operation in approximately 40 minutes.
+The ``maintenance_page``, ``error_pages_path`` and ``error_pages`` are relative paths to files in the application repository. When modified, changes are applied after the `deploy` or `upgrade` operation in approximately 10 minutes.
 
 .. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to the Service Desk before making any changes. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``upgrade:source`` to apply changes.
 
@@ -242,7 +243,7 @@ Webserver configuration can be modified, as illustrated below:
           'admin':
             type: 'php'
             satisfy: any # Allow access if all (all) or at least one (any) access directive satisfied
-            location: '~ /index\.php(/admin|$)'
+            location: '~ /index\.php/admin(/|$)'
             auth_basic_enable: true
             auth_basic_userlist:
               user3:
@@ -324,17 +325,70 @@ This configuration option enables you to setup redirects to the existing URLs of
 
 * **redirects_map** — the hash where the key is an old URL, and the value is a new URL.
 
+Examples, applicable both for `redirects_map` values and those which are listed in `redirects_map_include` files:
+
+.. code-block:: none
+
+    orocloud_options:
+      webserver:
+        redirects_map:
+          # Simple examples that don't envolve using special characters other than `/`.
+          /us: /us/
+          /gb: /gb/
+          /news/new_event: https://corpsite.com/events/newest
+
+
+          # Examples of using special characters without wrapping values with `"` or `'` characters.
+          /about'old: /about
+          /about(old): /about
+          
+          # Regular expression example with a simple capturing group and backreference.
+          ~/about(\d[a-z]): /about#$1
+          
+          # Regular expression example with named capturing group and backreference.
+          ~/about-(?<suffix>[[:alpha:]]*): /about#$suffix
+
+
+          # Examples of values wrapped with `"` or `'` characters.
+          # Wrapping values in the examples bellow is required because of `{` character within the values.
+          
+          # Value wrapped with `"` character requires to escape `'` character with `'` character itself.
+          '"~/about''\d{1}$"': /about
+          '"~/about''(\d{3})$"': /about#$1
+          
+          # Value wrapped with `'` character requires to escape '`' character with `\\` characters and `\` character with `\` character itself.
+          "'~/about\\'\\d{2}$'": /about
+
 * **redirects_map_include** — list of YAML files with the hashes where the key is an old URL, and the value is a new URL (similar to ``redirects_map``).
+
+Examples:
+
+.. code-block:: none
+
+    orocloud_options:
+      webserver:
+        redirects_map_include:
+          # Values with relative paths are relative to Git repository root directory.
+          - 'redirects/redirects.yml'
+
+          # Values with absolute paths are environment-specific.
+          - '/mnt/ocom/app/redirects.yml'
+
+Old URL values in redirects are case insensitive and must not contain duplicates.
+
+When modified, changes are applied after the `deploy` or `upgrade` operation in approximately 10 minutes
 
 X Frame Header Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **header_x_frame: true** — is the default value of the flag. In this case, OroCloud WAF adds the "X-Frame-Options: SAMEORIGIN" header when responding to the initial request. It makes it impossible to embed any OroCommerce site into iFrame at any site except itself to fulfill security requirements.
+* **header_x_frame: true** — is the default value of the flag, configured in the Webserver configuration section. In this case, OroCloud WAF adds the “X-Frame-Options: SAMEORIGIN” header when responding to the initial request. It makes it impossible to embed any OroCommerce site into iFrame at any site except itself to fulfill security requirements.
 
-* **header_x_frame_app_control: true** - Ignore "X-Frame-Options" header and allow application to decide if header is required.
+* **header_x_frame_app_control: true** - Ignore the “X-Frame-Options” header and allow the application to decide if the header is required. It can be configured in the Webserver or Domain configuration section. Configuration in the domain section takes priority over the webserver section.
 
-Some business cases require embedding the OroCloud site into the iFrame at other sites. You need to set the value to “false” : ``header_x_frame: false``.
-This prevents WAF from sending the “X-Frame-Options” header which allows embedding into any iFrame.
+Some business cases require embedding the OroCloud site into the iFrame at other sites, in which case you must set the value to “false”: ``header_x_frame: false``.
+This prevents WAF from sending the “X-Frame-Options” header, which allows embedding into any iFrame.
+
+.. _orocloud-maintenance-advanced-use-locations-config:
 
 Locations Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -348,6 +402,8 @@ This configuration option is used to manage locations.
 
       * `all` - all conditions must be met for the specific location (logical ``and``)
       * `any` - any condition can be met for the specific location (logical ``or``)
+
+        .. note:: When ``auth_basic_enable`` is set to true, the ``satisfy`` directive is automatically configured as *any*. This ensures that authentication is allowed based on any of the specified conditions, including IP whitelisting.
 
    * `location` — location URI. The value may have regular expressions and modifiers, as it is used in the Nginx location directive.
    * `fastcgi_param` — the hash for php-specific custom variables.
@@ -382,12 +438,237 @@ This layer is responsible for filtering HTTP requests depending on their sources
 * Countries
 * User Agents
 
-The rules used by this firewall are defined in the ``access_policy`` section of the `orocloud.yaml` file and are explained below. The HTTP request dropped at this layer of protection has HTTP status 451 which is “Unavailable For Legal Reasons”.
+The rules used by this firewall are defined in the ``access_policy`` section of the `orocloud.yaml` file and are explained below. The HTTP request dropped at this layer of protection has HTTP status 451, which is “Unavailable For Legal Reasons”.
 
 Robot Detection
 """""""""""""""
 
-The application drops requests from the user agents which do not support JS effectively protecting from the simple robots. Any request from a client (browser, robot, etc.), which do not support cookies and JS, is dropped with HTTP status 451, and this client is redirected to the error page. It is possible to whitelist specific user agents using the rules described below.
+The application drops requests from the user agents that do not support JS effectively protecting from the simple robots. Any request from a client (browser, robot, etc.) which do not support cookies and JS is dropped with HTTP status 451, and this client is redirected to the error page. It is possible to whitelist specific user agents using the rules described below.
+
+The IP addresses of the search engines, which cannot pass the WAF test cookie module, are whitelisted to allow the exchange of information between the Oro application and these platforms, facilitating accurate search results. See the complete list of IP addresses below:
+
+.. code-block:: none
+
+   # OroInc monitoring IP list
+      - '35.246.191.79' # puppet-prod1-mon1
+      - '35.239.98.170' # puppet-prod2-mon1
+      # Alexa Bot IP Addresses
+      - '204.236.235.245'
+      - '75.101.186.145'
+      # Baidu Bot IP Addresses
+      - '180.76.15.0/24'
+      - '119.63.196.0/24'
+      - '115.239.212.0/24'
+      - '119.63.199.0/24'
+      - '122.81.208.0/22'
+      - '123.125.71.0/24'
+      - '180.76.4.0/24'
+      - '180.76.5.0/24'
+      - '180.76.6.0/24'
+      - '185.10.104.0/24'
+      - '220.181.108.0/24'
+      - '220.181.51.0/24'
+      - '111.13.202.0/24'
+      - '123.125.67.144/29'
+      - '123.125.67.152/31'
+      - '61.135.169.0/24'
+      - '123.125.68.68/30'
+      - '123.125.68.72/29'
+      - '123.125.68.80/28'
+      - '123.125.68.96/30'
+      - '202.46.48.0/20'
+      - '220.181.38.0/24'
+      - '123.125.68.80/30'
+      - '123.125.68.84/31'
+      - '123.125.68.0/24'
+      # Bing Bot IP Addresses
+      - '65.52.104.0/24'
+      - '65.52.108.0/22'
+      - '65.55.24.0/24'
+      - '65.55.52.0/24'
+      - '65.55.55.0/24'
+      - '65.55.213.0/24'
+      - '65.55.217.0/24'
+      - '131.253.24.0/22'
+      - '131.253.46.0/23'
+      - '40.77.167.0/24'
+      - '199.30.27.0/24'
+      - '157.55.16.0/23'
+      - '157.55.18.0/24'
+      - '157.55.32.0/22'
+      - '157.55.36.0/24'
+      - '157.55.48.0/24'
+      - '157.55.109.0/24'
+      - '157.55.110.40/29'
+      - '157.55.110.48/28'
+      - '157.56.92.0/24'
+      - '157.56.93.0/24'
+      - '157.56.94.0/23'
+      - '157.56.229.0/24'
+      - '199.30.16.0/24'
+      - '207.46.12.0/23'
+      - '207.46.192.0/24'
+      - '207.46.195.0/24'
+      - '207.46.199.0/24'
+      - '207.46.204.0/24'
+      - '157.55.39.0/24'
+      # Duckduck Bot IP Addresses
+      - '46.51.197.88'
+      - '46.51.197.89'
+      - '50.18.192.250'
+      - '50.18.192.251'
+      - '107.21.1.61'
+      - '176.34.131.233'
+      - '176.34.135.167'
+      - '184.72.106.52'
+      - '184.72.115.86'
+      # Facebook Bot IP Addresses
+      - '31.13.107.0/24'
+      - '31.13.109.0/24'
+      - '31.13.200.0/24'
+      - '66.220.144.0/20'
+      - '69.63.189.0/24'
+      - '69.63.190.0/24'
+      - '69.171.224.0/20'
+      - '69.171.240.0/21'
+      - '69.171.248.0/24'
+      - '173.252.73.0/24'
+      - '173.252.74.0/24'
+      - '173.252.77.0/24'
+      - '173.252.100.0/22'
+      - '173.252.104.0/21'
+      - '173.252.112.0/24'
+      - '2a03:2880:10::/48'
+      - '2a03:2880:11::/48'
+      - '2a03:2880:20::/48'
+      - '2a03:2880:1010::/48'
+      - '2a03:2880:1020::/48'
+      - '2a03:2880:2020::/48'
+      - '2a03:2880:2050::/48'
+      - '2a03:2880:2040::/48'
+      - '2a03:2880:2110::/48'
+      - '2a03:2880:2130::/48'
+      - '2a03:2880:3010::/48'
+      - '2a03:2880:3020::/48'
+      # Google Bot IP Addresses
+      - '203.208.60.0/24'
+      - '66.249.64.0/20'
+      - '72.14.199.0/24'
+      - '209.85.238.0/24'
+      - '66.249.90.0/24'
+      - '66.249.91.0/24'
+      - '66.249.92.0/24'
+      - '2001:4860:4801:1::/64'
+      - '2001:4860:4801:2::/64'
+      - '2001:4860:4801:3::/64'
+      - '2001:4860:4801:4::/64'
+      - '2001:4860:4801:5::/64'
+      - '2001:4860:4801:6::/64'
+      - '2001:4860:4801:7::/64'
+      - '2001:4860:4801:8::/64'
+      - '2001:4860:4801:9::/64'
+      - '2001:4860:4801:a::/64'
+      - '2001:4860:4801:b::/64'
+      - '2001:4860:4801:c::/64'
+      - '2001:4860:4801:d::/64'
+      - '2001:4860:4801:e::/64'
+      - '2001:4860:4801:2001::/64'
+      - '2001:4860:4801:2002::/64'
+      # Sogou Bot IP Addresses
+      - '220.181.125.0/24'
+      - '123.126.51.64/27'
+      - '123.126.51.96/28'
+      - '123.126.68.25'
+      - '61.135.189.74'
+      - '61.135.189.75'
+      # Yahoo Bot IP Addresses
+      - '67.195.37.0/24'
+      - '67.195.50.0/24'
+      - '67.195.110.0/24'
+      - '67.195.111.0/24'
+      - '67.195.112.0/23'
+      - '67.195.114.0/24'
+      - '67.195.115.0/24'
+      - '68.180.224.0/21'
+      - '72.30.132.0/24'
+      - '72.30.142.0/24'
+      - '72.30.161.0/24'
+      - '72.30.196.0/24'
+      - '72.30.198.0/24'
+      - '74.6.254.0/24'
+      - '74.6.8.0/24'
+      - '74.6.13.0/24'
+      - '74.6.17.0/24'
+      - '74.6.18.0/24'
+      - '74.6.22.0/24'
+      - '74.6.27.0/24'
+      - '98.137.72.0/24'
+      - '98.137.206.0/24'
+      - '98.137.207.0/24'
+      - '98.139.168.0/24'
+      - '114.111.95.0/24'
+      - '124.83.159.0/24'
+      - '124.83.179.0/24'
+      - '124.83.223.0/24'
+      - '183.79.63.0/24'
+      - '183.79.92.0/24'
+      - '203.216.255.0/24'
+      - '211.14.11.0/24'
+      # Yandex Bot IP Addresses
+      - '100.43.90.0/24'
+      - '37.9.115.0/24'
+      - '37.140.165.0/24'
+      - '77.88.22.0/25'
+      - '77.88.29.0/24'
+      - '77.88.31.0/24'
+      - '77.88.59.0/24'
+      - '84.201.146.0/24'
+      - '84.201.148.0/24'
+      - '84.201.149.0/24'
+      - '87.250.243.0/24'
+      - '87.250.253.0/24'
+      - '93.158.147.0/24'
+      - '93.158.148.0/24'
+      - '93.158.151.0/24'
+      - '93.158.153.0/32'
+      - '95.108.128.0/24'
+      - '95.108.138.0/24'
+      - '95.108.150.0/23'
+      - '95.108.158.0/24'
+      - '95.108.156.0/24'
+      - '95.108.188.128/25'
+      - '95.108.234.0/24'
+      - '95.108.248.0/24'
+      - '100.43.80.0/24'
+      - '130.193.62.0/24'
+      - '141.8.153.0/24'
+      - '178.154.165.0/24'
+      - '178.154.166.128/25'
+      - '178.154.173.29'
+      - '178.154.200.158'
+      - '178.154.202.0/24'
+      - '178.154.205.0/24'
+      - '178.154.239.0/24'
+      - '178.154.243.0/24'
+      - '37.9.84.253'
+      - '199.21.99.99'
+      - '178.154.162.29'
+      - '178.154.203.251'
+      - '178.154.211.250'
+      - '95.108.246.252'
+      - '5.45.254.0/24'
+      - '5.255.253.0/24'
+      - '37.140.141.0/24'
+      - '37.140.188.0/24'
+      - '100.43.81.0/24'
+      - '100.43.85.0/24'
+      - '100.43.91.0/24'
+      - '199.21.99.0/24'
+      # Youdao Bot IP Addresses
+      - '61.135.249.200/29'
+      - '61.135.249.208/28'
+      # Symantec Corporation IP
+      - '168.149.144.12'
 
 Rate Limiting Request
 ~~~~~~~~~~~~~~~~~~~~~
@@ -618,7 +899,7 @@ Domain Configuration
             'admin':
               type: 'php'
               satisfy: any # Allow access if all (all) or at least one (any) access directive satisfied
-              location: '~ /index\.php(/admin|$)'
+              location: '~ /index\.php/admin(/|$)'
               auth_basic_enable: true
               auth_basic_userlist:
                 user3:
@@ -682,6 +963,8 @@ Profiling Application Using NewRelic
 
 The ``newrelic_options`` configuration option allows you to configure NewRelic profiler (must be installed and configured per separate support request). Please, pay attention that the value of the license_key is provided as an example, and you need to use your actual license key there.
 
+.. _orocloud-maintenance-advanced-use-mail-settings:
+
 Mail Settings
 -------------
 
@@ -710,7 +993,7 @@ Where:
 Sanitizing Configuration
 ------------------------
 
-Regardless of application type (OroCommerce or OroCRM), each has its own default sanitize rules (`sanitize.method.rawsql` and `sanitize.method.update`). However, you can add your own rules, remove a specific default rule, or completely override them.
+Regardless of the Oro application type, each has its own default sanitize rules (`sanitize.method.rawsql` and `sanitize.method.update`). However, you can add your own rules, remove a specific default rule, or completely override them.
 
 The sanitize configuration is grouped under the `sanitize` node and supports the following sanitize methods:
 
@@ -781,40 +1064,6 @@ Please use the following conventions to design your `sanitize.update_*` strategy
   * `email` — Replaces the email with the sanitized version of the email. When the `sanitize.custom_email_domain` configuration parameter is provided in the `deployment.yml` or `orocloud.yaml` files, the email strategy replaces the real email domain with the custom one provided as `sanitize.custom_email_domain`. If the custom domain is not provided, the sanitized email will be generated randomly. For example, `example@example.com`.
   * `date` — Replaces the date values with the current date and time.
   * `attachment` — Replaces the attachment file content with a dummy blank image.
-
-Elasticsearch Synonyms Configuration
-------------------------------------
-
-.. note:: Please avoid simultaneous use of :ref:`search synonyms <bundle-docs-commerce-website-elasticsearch-bundle-synonyms>` and the method of adding synonyms described in this article, as this will lead to unpredictable behavior.
-
-To configure synonyms in Elasticsearch service, use the following field in orocloud.yaml:
-
-.. code-block:: none
-
-    orocloud_options:
-      elasticsearch:
-        synonyms:
-          'index_name1':
-            - 'foo, bar, baz'
-            - 'spam, eggs, meal'
-            - 'null, void'
-          'index_name2':
-            - 'Alice, Bob, Dave, John'
-
-You can use separate synonym lists for each index, or use '*' as index name in order to apply the same synonyms list to all indices.
-
-.. code-block:: none
-
-    orocloud_options:
-      elasticsearch:
-        synonyms:
-          '*':
-            - 'foo, bar, baz'
-            - 'spam, eggs, meal'
-            - 'null, void'
-            - 'Alice, Bob, Dave, John'
-
-.. note:: Please keep in mind that synonyms configuration will be not applied immediately. All changes made in orocloud.yaml require up to 40 minutes to apply. More details for synonyms usage may be found in |official Elasticsearch documentation|.
 
 Environments Data Synchronization
 ---------------------------------

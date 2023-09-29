@@ -1,11 +1,11 @@
-:oro_documentation_types: OroCRM, OroCommerce, Extension
+:oro_documentation_types: Extension
 
 .. _gtm-ga-4-integration:
 
 Configure Google Tag Manager Integration in the Back-Office
 ===========================================================
 
-.. hint:: Google Universal Analytics is deprecated on July 1, 2023 and is replaced with Google Analytics 4.
+.. hint:: The **Google tag** has automatically replaced the **Google Analytics: GA4 Configuration tag** since September, 2023. GA4 event tags stay the same.
 
 Integration between your Oro application and |Google Tag Manager| enables you to add tracking tags to your OroCommerce web store pages and collect information on customer behavior, purchases, product clicks, page views, etc. All this information can subsequently be shared with Google Analytics 4 (GA4), enabling you to monitor various user interactions with products on your website. This can help you get a complete picture of on-page visitor behavior, how well your marketing strategies work, and how to target your audience better.
 
@@ -25,38 +25,39 @@ To create a GA4 property, navigate to your Google Analytics account.
 1. Click |IcConfig| **Admin** on the bottom left.
 2. Click **+ Create Property** under the **Property** column.
 3. Provide a name for the property, select the reporting time zone and the currency. Keep in mind that Google Analytics tracks only one currency at a time. This means that if, for example, your default currency is set to **US Dollar**, but you have a multi-currency web store (available for the Enterprise edition only), a purchase of 100EUR will be tracked in the converted dollar amount of 107USD (depending on the currency rate that day).
-4. Click **Next**. Select your industry category and business size.
+4. Click **Next**. Select your industry category, business size, and choose your business objectives.
 5. Click **Create**.
 
-.. image:: /user/img/system/integrations/gtm/create-GA4-property-2.png
-   :alt: Illustrating the steps to be followed to create a new GA4 property based on method 2
-
+.. image:: /user/img/system/integrations/gtm/create-GA4property.png
+   :alt: Illustrating the steps to be followed to create a new GA4 property
 
 Set up a Data Stream
 ^^^^^^^^^^^^^^^^^^^^
 
-Once you created a property, the next step is to set up a data stream to start collecting data.
+Once you created a property, the next step is to add a data collection tag to start collecting data.
 
-1. In your **Admin** menu, make sure you have selected the required property under the **Property** column.
-2. Click **Data Streams** and select the platform (Web, Android app, or IOS app) to add a data stream. You can add as many data streams as required.
+1. For Web, provide the URL of your website (e.g., "mywebsite.com") and a stream name. Click **Create stream**.
+2. For IOS app or Android app, add the Android package name, the app name, or the App Store ID, then click **Register app**. Follow the provided instructions to finish the configuration of data streams.
 
 .. image:: /user/img/system/integrations/gtm/add-data-stream.png
    :alt: Illustrating the steps to be performed to add a data stream
 
-3. For Web, provide the URL of your website (e.g., "mywebsite.com") and a stream name. Click **Create stream**.
-4. For IOS app or Android app, add the Android package name, the app name, or the App Store ID, then click **Register app**. Follow the provided instructions to finish the configuration of data streams.
-
-Once a data stream is set, add tags to your web pages via Google Tag Manager.
+Once a data stream is set, configure tag settings for your web pages via Google Tag Manager.
 
 .. image:: /user/img/system/integrations/gtm/data-stream-details.png
    :alt: Illustrating the data stream details page
 
 .. _data-stream-measurement-id:
 
-.. hint:: Keep the Measurement ID at hand, as you will need it when configuring tags in Google Tag Manager.
+.. hint:: Keep the Measurement ID or Google tag at hand, as you will need it when configuring tags in Google Tag Manager.
 
-            .. image:: /user/img/system/integrations/gtm/data-stream-measurement-id.png
-               :alt: Highlighting the data stream's measurement ID
+            .. image:: /user/img/system/integrations/gtm/google-tags.png
+               :alt: Highlighting the data stream's measurement ID and a google tag
+
+If you have skipped the step of setting up the data stream or want to add more streams, you can do that under your **Admin** menu. Make sure you have selected the required property under the **Property** column and click **Data Streams** to select the required platform (Web, Android app, or IOS app).
+
+.. image:: /user/img/system/integrations/gtm/add-data-stream-admin.png
+   :alt: Illustrating the steps to be performed to add a data stream
 
 
 On the Google Tag Manager Side
@@ -80,18 +81,18 @@ Or
 Option 1: Import a Container
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We have prepared a .json file with a container that includes pre-configured tags to simplify your tag configuration process. You need to import this file into your Google Tag Manager account and substitute the dummy Measurement ID in the **GA4 var** variable with the data stream's Measurement ID of your Google Analytics 4 account.
+We have prepared a .json file with a container that includes pre-configured tags to simplify your tag configuration process. You need to import this file into your Google Tag Manager account and substitute the dummy Google tag in the **GA4 var** variable with the Google tag ID of your Google Analytics 4 account.
 
 For that:
 
-1. |Download the .json file (GA4)| with a pre-configured container.
+1. |Download the .json file (GA4)1| with a pre-configured container.
 #. Save and extract the archive on your computer.
 #. In your Google Tag Manager account, navigate to **Admin > Import Container**.
 
 .. image:: /user/img/system/integrations/gtm/import-container.png
    :alt: Import container in GTM
 
-#. Click **Choose container file** to import the extracted .json file. The file contains 12 tags, 11 triggers, and 11 variables.
+#. Click **Choose container file** to import the extracted .json file. The file contains 12 tags, 11 triggers, and 12 variables.
 #. Choose the workspace and |importgtm| option.
 #. Click **Confirm** to start file import.
 
@@ -99,20 +100,19 @@ For that:
    :alt: Confirm container import
 
 
-The container that you have imported contains a dummy data stream's Measurement ID for the **GA4 var** variable. You need to change the ID to be able to transfer correct data to Google Analytics 4.
+The container that you have imported contains a dummy Google Tag ID for the **GA4 var** variable. You need to change the ID to be able to transfer correct data to Google Analytics 4.
 
-To change the measurement ID for the imported variable:
+To change the Google Tag ID for the imported variable:
 
 1. In your Google Tag Manager Account, click **Variables** in the menu to the left.
 2. In the **User-Defined Variables** section, click **GA4 var** to open its configuration page.
-3. Click the **Edit** icon.
 
 .. image:: /user/img/system/integrations/gtm/edit-GA4-var-tag.png
    :alt: Edit imported variable configuration
 
-4. Provide the :ref:`measurement ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern instead of the dummy number.
-5. Click **Save** to save variable settings.
-6. Click **Submit** and then **Publish** on the top right to apply the changes.
+3. Substitute the dummy number with the corresponding :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern.
+4. Click **Save** to save variable settings.
+5. Click **Submit** and then **Publish** on the top right to apply the changes.
 
 .. _ga4-ga-tag-table:
 
@@ -137,28 +137,28 @@ Except for the GA4 tag, the imported container also includes several pre-configu
 Option 2: Create Tags Manually
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Google Tag Manager enables you to create one of the two tags that are passed to Google Analytics 4. Those are **Google Analytics: GA4 Configuration** as the principal configuration tag and **Google Analytics: GA4 Event**, which enables you to track custom events.
+Google Tag Manager enables you to create one of the two tags that are passed to Google Analytics 4. Those are **Google Tag** as the principal configuration tag and **Google Analytics: GA4 Event**, which enables you to track custom events.
 
-To create a **Google Analytics: GA4 Configuration** tag:
+To create **Google Tag**:
 
 1. Navigate to the left menu of the Workspace page and click **Tags > New**.
 2. Click **Tag Configuration**.
-3. Select **Google Analytics: GA4 Configuration** from the tag list.
-4. Enter the :ref:`measurement ID <data-stream-measurement-id>` of your Google Analytics data stream.
-5. Optionally, add the parameters to configure the **Fields to Set**, **User Properties**, and **Advanced Settings** fields.
+3. Select **Google Tag** from the list.
+4. Enter the :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream.
+5. Optionally, add the configuration parameters that update your tag's behavior, default event parameters to be used for all events measured by your Google tag, or configure advanced settings.
 6. Click **Triggering** and select the necessary events that would fire the tag when they occur.
 7. Save the tag configuration and publish it.
 
-.. image:: /user/img/system/integrations/gtm/configure-GA4-tag.png
-   :alt: The steps to be performed to configure a GA4 tag
+.. image:: /user/img/system/integrations/gtm/configure-google-tag.png
+   :alt: The steps to be performed to configure a Google tag
 
 
 To create a **Google Analytics: GA4 Event** tag for custom events:
 
 1. Navigate to the left menu of the Workspace page and click **Tags > New**.
 2. Click **Tag Configuration**.
-3. Select **Google Analytics: GA4 Event** from the tag list.
-4. For **Configuration Tag**, select the *GA4 tag* configuration tag you have just created.
+3. Select **Google Analytics > Google Analytics: GA4 Event** from the tag list.
+4. For **Measurement ID**, provide the corresponding :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern.
 5. For **Event Name**, provide the name for the event (e.g., add_to_cart). See the |Google Analytics 4 Event| developer documentation for the list of recommended event parameters.
 6. Under **Event Parameters**, click **Add Row**, and provide a name and a value for the parameter. Add as many parameters as required for a particular event. See the |Google Analytics 4 Event| developer documentation for the list of recommended event parameters.
 7. Optionally, add the parameters to configure the **User Properties** and **Advanced Settings** fields.
@@ -180,7 +180,7 @@ The |add_to_cart| tag signifies that a customer user has added an item to a shop
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- add_to_cart
 * **Event Parameters**
 
@@ -208,7 +208,7 @@ The |remove_from_cart| tag signifies that a customer user has removed an item fr
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- remove_from_cart
 * **Event Parameters**
 
@@ -236,7 +236,7 @@ The |begin_checkout| tag signifies that a customer user has started a checkout p
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- begin_checkout
 * **Event Parameters**
 
@@ -264,7 +264,7 @@ The |add_shipping_info| tag signifies that a customer user has selected a shippi
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- add_shipping_info
 * **Event Parameters**
 
@@ -293,7 +293,7 @@ The |add_payment_info| tag signifies that a customer user has selected a payment
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- add_payment_info
 * **Event Parameters**
 
@@ -322,7 +322,7 @@ The |select_item| tag signifies that a customer user has clicked a product.
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- select_item
 * **Event Parameters**
 
@@ -349,7 +349,7 @@ The |view_item| tag signifies that a customer user has reviewed a product detail
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- view_item
 * **Event Parameters**
 
@@ -377,7 +377,7 @@ The |view_item_list| tag signifies that a customer user has looked over a list o
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- view_item_list
 * **Event Parameters**
 
@@ -405,7 +405,7 @@ The |select_promotion| tag signifies that a customer user has clicked a slider f
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- select_promotion
 * **Event Parameters**
 
@@ -432,7 +432,7 @@ The |view_promotion| tag signifies that a customer user has reviewed a slider fr
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- view_promotion
 * **Event Parameters**
 
@@ -458,7 +458,7 @@ The |purchaseGA4| tag signifies that a customer user has submitted an order.
 
 **Tag Configuration**
 
-* **Configuration Tag** --- GA4 tag (refers to your **Google Analytics: GA4 Configuration** tag)
+* **Measurement ID** --- refers to :ref:`Google Tag ID <data-stream-measurement-id>` of your Google Analytics data stream that follows the **G-XXXXX** pattern or **{{GA4 var}}**.
 * **Event Name** --- purchase
 * **Event Parameters**
 
@@ -513,6 +513,7 @@ Once the GTM integration is configured, you must connect it to the application i
 * :ref:`Enable the Google Tag Manager integration globally <system-configuration-integrations-google>`
 * :ref:`Enable the Google Tag Manager integration per organization <organization-google-settings>`
 * :ref:`Enable the Google Tag Manager integration per website <website-google-settings>`
+* |Implement Cross-Domain Measurement|
 
 
 

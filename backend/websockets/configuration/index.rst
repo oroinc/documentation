@@ -122,6 +122,16 @@ If you use untrusted SSL certificate, use the following DSN:
 
 .. warning:: Please keep in mind that having peer verification disabled is not recommended in production.
 
+Configure a User Agent for Internal WebSocket Connections
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you use a custom User Agent identifier for internal WebSocket connections, use the following DSN:
+
+.. code-block:: bash
+
+   ORO_WEBSOCKET_FRONTEND_DSN=//*:443/ws?user_agent=user-agent%2F1.2.3
+   ORO_WEBSOCKET_BACKEND_DSN=tcp://127.0.0.1:8080?user_agent=user-agent%2F1.2.3
+
 Run the WebSocket Server
 ------------------------
 

@@ -198,7 +198,7 @@ To run ChromeDriver in the background, append the ampersand symbol (&) to the en
 Run Tests
 ~~~~~~~~~
 
-Before you begin, familiarize yourself with behat arguments and options. Run ``bin/behat --help`` for a detailed description.
+Before you begin, familiarize yourself with behat arguments and options. Run ``php bin/behat --help`` for a detailed description.
 
 When the Oro application is installed without demo data and is running, and the ChromeDriver is running, you can start running the behat tests by feature from the root of the application. You can use one of the following commands.
 
@@ -206,34 +206,34 @@ Run the feature test scenario:
 
 .. code-block:: none
 
-    bin/behat vendor/oro/platform/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature -vvv
+    php bin/behat vendor/oro/platform/src/Oro/Bundle/UserBundle/Tests/Behat/Features/login.feature -vvv
 
 Preview all available feature steps:
 
 .. code-block:: none
 
-    bin/behat -dl -s OroUserBundle
+    php bin/behat -dl -s OroUserBundle
 
 View steps with full description and examples:
 
 .. code-block:: none
 
-    bin/behat -di -s OroUserBundle
+    php bin/behat -di -s OroUserBundle
 
 Every bundle has its dedicated test suite that can be run separately:
 
 .. code-block:: none
 
-    bin/behat -s OroUserBundle
+    php bin/behat -s OroUserBundle
 
 Running Сonsumers
 ~~~~~~~~~~~~~~~~~
 
-To run multiple consumers during behat tests, you can use the ``--consumers`` option in ``bin/behat``, which applies an integer argument, for example:
+To run multiple consumers during behat tests, you can use the ``--consumers`` option in ``php bin/behat``, which applies an integer argument, for example:
 
 .. code-block:: none
 
-    bin/behat --consumers=4
+    php bin/behat --consumers=4
 
 By default, when the option is not specified, 2 consumers are run.
 
@@ -358,7 +358,7 @@ You can disable feature isolation by adding the ``--skip-isolators`` option to t
 Disable Message Consumer Background Running
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To simulate production conditions more accurately during testing, you can disable the message consumer background running using the ``--do-not-run-consumer`` option in ``bin/behat``.
+To simulate production conditions more accurately during testing, you can disable the message consumer background running using the ``--do-not-run-consumer`` option in ``php bin/behat``.
 
 Be aware that if you choose to use this option, the consumer will not be launched, and the application will not process any messages from the message queue. This could cause problems if you are testing functionality that relies on the timely processing of messages by the consumer.
 
@@ -636,7 +636,7 @@ You can use references to the entities in both inline and |alice fixtures|.
 * It is prohibited to modify or add new entities within Initializer.
 * It should implement ``ReferenceRepositoryInitializerInterface``.
 * It should be registered as the Behat container service in the ``{BundlePath}/Tests/Behat/services.yml`` file with the ``oro_behat.reference_repository_initializer`` tag.
-* To show all references, use the ``bin/behat --available-references`` command.
+* To show all references, use the ``php bin/behat --available-references`` command.
 
 The most commonly used references:
 
@@ -654,7 +654,7 @@ You can try:
 
 .. code-block:: none
 
-    bin/behat --dry-run
+    php bin/behat --dry-run
 
 This can be useful in case you are unsure that you have declared all the necessary context for your feature.
 OroBehatExtension enhances this feature and adds extra functionality.
@@ -884,7 +884,7 @@ A quick way to do so is to dry-run your feature tests. In the console, run the f
 
 .. code-block:: none
 
-    bin/behat path/to/your.feature --dry-run --append-snippets --snippets-type=regex
+    php bin/behat path/to/your.feature --dry-run --append-snippets --snippets-type=regex
 
 The feature is executed in the *--dry-run* mode, and at the final stage of execution, you are prompted to add undefined steps mock implementation to one of the existing contexts.
 
@@ -928,17 +928,46 @@ Type the following command in your console:
 
 .. code-block:: none
 
-    bin/behat -dl -s AcmeDemoBundle | grep "flash message"
+    php bin/behat -dl -s AcmeDemoBundle | grep "flash message"
 
-.. image:: /img/backend/tests/grep_flash_messages.png
-    :alt: Grep flash messages in the console
+
+.. code-block:: bash
+
+    $ php bin/behat -dl -s OroUserBundle | grep "flash message"
+    OroUserBundle | Then /^(?:|I )follow "(?P<title>[^"]+)" link within flash message "(?P<message>([^"\\]|\\.)*)"$/
+    OroUserBundle | Then /^(?:|I )should see "(?P<title>[^"]+)" flash message$/
+    OroUserBundle | Then /^(?:|I )should see '(?P<title>[^']+)' flash message$/
+    OroUserBundle | Then /^(?:|I )should not see "(?P<title>[^"]+)" flash message$/
+    OroUserBundle | Then /^(?:|I )should not see '(?P<title>[^']+)' flash message$/
+    OroUserBundle | Then /^(?:|I )should see "(?P<title>[^"]+)" flash message and I close it$/
+    OroUserBundle | Then /^(?:|I )should see '(?P<title>[^']+)' flash message and I close it$/
+    OroUserBundle | Then /^(?:|I )close all flash messages$/
+    OroUserBundle | Then I should not see flash messages
+    OroUserBundle | Then /^(?:|I )should see only following flash messages:$/
+    OroUserBundle | Then /^(?:|I )should see following flash messages:$/
+    OroUserBundle | Then /^(?:|I )should see (Schema updated) flash message$/
+
 
 .. code-block:: none
 
-    bin/behat -dl -s AcmeDemoBundle | grep "grid"
+    php bin/behat -dl -s AcmeDemoBundle | grep "grid"
 
-.. image:: /img/backend/tests/grep_grid.png
-    :alt: Grep flash messages in the console
+
+.. code-block:: none
+
+    $ php bin/behat -dl -s OroUserBundle | grep "grid"
+    OroUserBundle | Then /^I see that grid has scrollable header$/
+    OroUserBundle | Then /^I see that grid header is sticky$/
+    OroUserBundle | When /^I don't select any record from "(?P<gridName>[^"]+)"$/
+    OroUserBundle | Then I edit first record from grid:
+    OroUserBundle | Then /^(?:|I )should see following grid:$/
+    OroUserBundle | Then /^(?:|I )should see following "(?P<gridName>[^"]+)" grid:$/
+    OroUserBundle | Then /^(?:|I )should see following grid containing rows:$/
+    OroUserBundle | Then /^(?:|I )should see following "(?P<gridName>[^"]+)" grid containing rows:$/
+    OroUserBundle | Then /^(?:|I )should see following grid with exact columns order:$/
+    OroUserBundle | Then /^(?:|I )should see following "(?P<gridName>[^"]+)" grid with exact columns order:$/
+    OroUserBundle | Then /^It should be (?P<count>.+) columns in grid$/
+
 
 You can use the behat command-line interface only after you install the application.
 

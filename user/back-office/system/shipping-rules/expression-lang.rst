@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. payment_expressions_begin
 
 .. _payment-shipping-expression-lang:
@@ -105,6 +103,8 @@ Collections
 
 * **customer.users** is a collection of customer users that belong to the customer the order is submitted for.
 
+* **lineItems[X].kitItemLineItems** is a collection of product kit item line items (products kit items, products and their quantity, units, price) that are being ordered.
+
 lineItems Collection
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -113,6 +113,7 @@ lineItems Collection
   .. note:: Use the items with LineItem prefix when processing the lineItems collection using .any() and .all() expressions. Alternatively, address the item in the collection directly, e.g. lineItems[1].product.sku.
 
 * lineItem.product.id *int*
+* lineItem.product.type *string*
 * lineItem.product.sku *string*
 * lineItem.product.primaryUnitPrecision.id *int*
 * lineItem.product.primaryUnitPrecision.precision *int*
@@ -130,6 +131,8 @@ lineItems Collection
 * lineItem.dimensions.value.height *float*
 * lineItem.dimensions.unit.code *string*
 * lineItem.product.unitPrecisions **collection**
+* lineItem.kitItemLineItems **collection**
+* lineItem.checksum *string*
 
 To find the whole list of fields available for:
 
@@ -144,7 +147,7 @@ lineItems[X].product.unitPrecisions Collection
 
 **Attributes**
 
-  .. note:: Use the items with unitPrecision prefix when processing the unitPrecisions collection using LineItem.product.unitPrecisions.any() and LineItem.product.unitPrecisions.all() expressions. Alternatively, address the item in the collection directly, e.g. LineItem.product.unitPrecisions[1].unit.code.
+  .. note:: Use the items with unitPrecision prefix when processing the unitPrecisions collection using lineItem.product.unitPrecisions.any() and lineItem.product.unitPrecisions.all() expressions. Alternatively, address the item in the collection directly, e.g. lineItem.product.unitPrecisions[1].unit.code.
 
   - unitPrecision.unit.code *string*
   - unitPrecision.precision *int*
@@ -155,7 +158,7 @@ lineItems[X].product.inventoryLevels Collection
 
 **Attributes**
 
-  .. note:: Use the items with inventoryLevel prefix when processing the inventoryLevels collection using LineItem.product.inventoryLevels.any() and LineItem.product.inventoryLevels.all() expressions.  Alternatively, address the item in the collection directly, e.g. LineItem.product.inventoryLevels[1].warehouse.id.
+  .. note:: Use the items with inventoryLevel prefix when processing the inventoryLevels collection using lineItem.product.inventoryLevels.any() and lineItem.product.inventoryLevels.all() expressions. Alternatively, address the item in the collection directly, e.g. lineItem.product.inventoryLevels[1].warehouse.id.
 
   * inventoryLevel.id *int*
   * inventoryLevel.quantity *int*
@@ -165,6 +168,31 @@ lineItems[X].product.inventoryLevels Collection
   * inventoryLevel.warehouse.id *int*
   * inventoryLevel.warehouse.name *string*
 
+lineItems[X].kitItemLineItems Collection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. note:: Use the items with kitItemLineItem prefix when processing the kitItemLineItems collection using lineItem.kitItemLineItems.any() and lineItem.kitItemLineItems.all() expressions. Alternatively, address the item in the collection directly, e.g. lineItem.kitItemLineItems[1].product.sku.
+
+* kitItemLineItem.kitItem.id *int*
+* kitItemLineItem.kitItem.defaultLabel *string*
+* kitItemLineItem.kitItem.optional *bool*
+* kitItemLineItem.kitItem.sortOrder *int*
+* kitItemLineItem.kitItem.minimumQuantity *float*
+* kitItemLineItem.kitItem.maximumQuantity *float*
+* kitItemLineItem.product.id *int*
+* kitItemLineItem.product.sku *string*
+* kitItemLineItem.product.primaryUnitPrecision.id *int*
+* kitItemLineItem.product.primaryUnitPrecision.precision *int*
+* kitItemLineItem.product.primaryUnitPrecision.sell *bool*
+* kitItemLineItem.product.category.id *int*
+* kitItemLineItem.product.inventoryLevels **collection**
+* kitItemLineItem.product.unitPrecisions **collection**
+* kitItemLineItem.productUnit.code *string*
+* kitItemLineItem.quantity *float*
+* kitItemLineItem.price.value *float*
+* kitItemLineItem.price.currency *string*
+
+To find the whole list of fields available for *kitItem*, navigate to System > Entities > Entity Management > Product Kit Item. For more details on the entity fields management, see the :ref:`Manage Entity Fields <admin-guide-manage-entity-fields>` topic.
 
 customer.users Collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -295,6 +323,44 @@ In the example, for every line item, the following condition is verified to be t
 Inside the loop, OroCommerce checks every inventory level to find the one that is related to the warehouse A and verify the remaining conditions to evaluate the quantity is enough, like the following:
 
 `inventoryLevel.productUnitPrecision.unit.code = lineItem.productUnit.code`
+
+
+Here's another example that may be helpful for those who want to work with product kit line items. This expression does the same thing as the previous one but also checks if a product line item is a kit. If it is, it verifies that all the products in the kit are available in the requested quantity in the designated warehouse.
+
+.. code-block:: none
+
+
+    ...
+
+    lineItems.all(
+      lineItem.product.inventoryLevels.any(
+        inventoryLevel.warehouse.name = 'Additional Warehouse'
+          and
+        inventoryLevel.quantity >= lineItem.quantity
+          and
+        inventoryLevel.productUnitPrecision.unit.code = lineItem.productUnit.code
+          and
+        inventoryLevel.productUnitPrecision.sell
+      )
+        and
+      (
+        lineItem.product.type != 'kit'
+          or
+        lineItem.kitItemLineItems.all(
+          kitItemLineItem.product.inventoryLevels.any(
+            inventoryLevel.warehouse.name = 'Product Kits Warehouse'
+              and
+            inventoryLevel.quantity >= kitItemLineItem.quantity
+              and
+            inventoryLevel.productUnitPrecision.unit.code = kitItemLineItem.productUnit.code
+              and
+            inventoryLevel.productUnitPrecision.sell
+          )
+        )
+      )
+    )
+
+    ...
 
 
 .. payment_expressions_end

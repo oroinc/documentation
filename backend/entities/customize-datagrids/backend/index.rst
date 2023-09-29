@@ -247,6 +247,7 @@ The grid can be extended in several ways:
    :maxdepth: 1
 
    scopes
+   Views List <views-list>
    datasources/index
    parameter-binding
    extensions/index

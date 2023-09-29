@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--pricing--schedule-price-adjustments:
 
 Schedule Price Adjustments

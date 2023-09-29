@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _doc-activities-events-actions-view-detailed:
 .. _doc-activities-events-actions-comment-detailed:
 .. _doc-activities-events-actions-context-detailed:
@@ -12,14 +10,13 @@
 .. _doc-activities-events-actions-contextadd:
 .. _doc-activities-events-actions-comment:
 .. _doc-activities-events-actions-respond:
-.. _doc-activities-events-actions-hangout:
 
 Manage Calendar Events
 ----------------------
 
 In your Oro application, you can manage calendar events from the following pages:
 
-.. contents:: :local: 
+.. contents:: :local:
 
 Please, note that:
 
@@ -32,7 +29,7 @@ From the Page of All Calendar Events
 To manage a specific calendar event from the page of all calendar events:
 
 1. Navigate to **Activities > Calendar Events** in the main menu.
-2. Click the |IcEllipsisH| **More Options** menu at the end of the corresponding calendar event row and select one of the following actions: 
+2. Click the |IcEllipsisH| **More Options** menu at the end of the corresponding calendar event row and select one of the following actions:
 
    * **V** Accept / **X** Decline
    * **?** Accept Tentatively
@@ -41,7 +38,6 @@ To manage a specific calendar event from the page of all calendar events:
    * |IcDelete| Delete
 
    .. image:: /user/img/activities/ManageCalendarEventsPage.png
-      :scale: 50%
       :alt: The actions available for a calendar event on the calendar event's grid
 
 From the Calendar Event Page
@@ -52,7 +48,7 @@ To edit, delete, add context or comment to a specific calendar event from its pa
 1. Navigate to **Activities > Calendar Events** in the main menu.
 2. Click once on the required event to open it.
 3. Select the necessary actions.
-4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event. 
+4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event.
 
 From the Page of a Related Record
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -66,7 +62,7 @@ Records that are specified in a calendar event context have this event displayed
    .. image:: /user/img/activities/CalendarEventRelatedRecord.png
       :alt: The actions available for the calendar event from the page of a related record
 
-4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event. 
+4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event.
 
 From My Calendar
 ^^^^^^^^^^^^^^^^

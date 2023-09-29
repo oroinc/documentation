@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _admin-configuration-system-mailboxes-website:
 
 Configure Email Settings per Website

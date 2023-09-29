@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _export-products:
 .. _doc--products--actions--export:
 

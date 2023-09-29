@@ -1,9 +1,7 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
-:title: Activities Management in the OroCommerce and OroCRM Back-Office
+:title: Activities Management in the Oro Application Back-Office
 
 .. meta::
-   :description: Tasks, calls, cases, calendar events, and contact requests management guides for the OroCommerce and OroCRM back-office users
+   :description: Tasks, calls, cases, calendar events, and contact requests management guides for the Oro application back-office users
 
 .. _user-guide-productivity-tools:
 .. _user-guide-activities:
@@ -29,7 +27,7 @@ The Activities topic introduces you to the following types of activities:
 * :ref:`Contact Requests <user-guide-activities-requests>`
 * :ref:`Cases <doc-activities-overview-cases>`
 * :ref:`Calendar Events <doc-activities-events>`
-* :ref:`Emails <user-guide-using-emails>`
+* :ref:`Emails <activities-emails>`
 
 **Related Content:**
 
@@ -43,6 +41,7 @@ The Activities topic introduces you to the following types of activities:
    :hidden:
    :maxdepth: 1
 
+   Emails <emails/index>
    Tasks <tasks/index>
    Calls <calls/index>
    Contact Requests <contact-requests/index>

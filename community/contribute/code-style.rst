@@ -5,7 +5,7 @@ Code Style
 
 Code style is a set of conventions about how to write code. It is introduced for easier understanding of the large codebase by the wide-spread Oro community.
 
-The following code styles are used in OroCommerce, OroCRM, OroPlatform and other Oro products.
+The following code styles are used in Oro applications.
 
 PHP Code Style
 ^^^^^^^^^^^^^^

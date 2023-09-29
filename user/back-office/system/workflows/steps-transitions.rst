@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--system--workflow-management-steps-transitions:
 
 Configure Workflow Steps, Transitions, and Attributes in the Back-Office

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _localization--localizations:
 
 Configure Localizations in the Back-Office

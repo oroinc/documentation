@@ -125,7 +125,7 @@ FieldFilterInterface Interface
 
 The |FieldFilterInterface| is a marker interface that filters applied to a field must implement.
 
-Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |CompositeIdentifierFilter|, |AssociationCompositeIdentifierFilter|, |NestedTreeFilter|, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |StringComparisonFilter|, |CompositeIdentifierFilter|, |AssociationCompositeIdentifierFilter|, |NestedTreeFilter|, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
 
 .. _fieldawarefilterinterface:
 
@@ -134,7 +134,7 @@ FieldAwareFilterInterface Interface
 
 Filters that are applied to a field and need to know the field name. must implement the |FieldAwareFilterInterface| interface.
 
-Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter|, |PrimaryFieldFilter| and |AssociationCompositeIdentifierFilter|.
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |StringComparisonFilter|, |ExtendedAssociationFilter|, |PrimaryFieldFilter| and |AssociationCompositeIdentifierFilter|.
 
 .. _collectionawarefilterinterface:
 
@@ -143,7 +143,7 @@ CollectionAwareFilterInterface Interface
 
 Filters that can handle a collection valued association must implement the |CollectionAwareFilterInterface| interface.
 
-Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
+Examples of such filters are :ref:`ComparisonFilter <comparisonfilter-filter>`, |StringComparisonFilter|, |ExtendedAssociationFilter| and |PrimaryFieldFilter|.
 
 .. _configawarefilterinterface:
 
@@ -206,6 +206,7 @@ The |StandaloneFilter| is the base class for filters you can use independently o
 Examples of such filters are:
 
 * :ref:`ComparisonFilter <comparisonfilter-filter>`
+* |StringComparisonFilter|
 * |ExtendedAssociationFilter|
 * |CompositeIdentifierFilter|
 * |AssociationCompositeIdentifierFilter|
@@ -327,6 +328,7 @@ Consider checking out the list of other classes below, as they can provide insig
 * |MetaPropertyFilter| - a filter used to request to add entity meta properties to the result or to perform some additional operations.
 * |AddMetaPropertyFilter| - a processor that adds the "meta" filter that is used to specify which entity meta properties should be returned or which additional operations should be performed.
 * |HandleMetaPropertyFilter| - a processor that handles the "meta" filter.
+* |ValidateMetaPropertyFilterSupported| - a processor that validates that the "meta" filter is supported and all requested meta properties are allowed.
 * |AddMetaProperties| - a processor that adds the configuration of meta properties requested via the "meta" filter.
 * |FieldsFilter| - a filter that is used to filter entity fields.
 * |AddFieldsFilter| - a processor that adds "fields" filters that are used to filter entity fields.

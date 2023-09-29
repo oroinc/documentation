@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _customer-user-oauth-app:
 
 Manage Customer User OAuth Applications in the Back-Office

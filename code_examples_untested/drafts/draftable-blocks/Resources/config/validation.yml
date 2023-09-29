@@ -1,7 +1,7 @@
-ACME\Bundle\CMSBundle\Entity\Block:
+Acme\Bundle\CMSBundle\Entity\Block:
     properties:
         title:
-            - ACME\Bundle\CMSBundle\Validator\Constraints\UniqueTitleDraft: ~
+            - Acme\Bundle\CMSBundle\Validator\Constraints\UniqueTitleDraft: ~
             - NotBlank: ~
             - Length:
                   max: 255

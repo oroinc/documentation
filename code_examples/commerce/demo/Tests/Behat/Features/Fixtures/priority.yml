@@ -1,0 +1,13 @@
+Acme\Bundle\DemoBundle\Entity\Priority:
+  low:
+    organization: '@organization'
+    owner: '@admin'
+    label: 'low'
+  normal:
+    organization: '@organization'
+    owner: '@admin'
+    label: 'normal'
+  high:
+    organization: '@organization'
+    owner: '@admin'
+    label: 'high'

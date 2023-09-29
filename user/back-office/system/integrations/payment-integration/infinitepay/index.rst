@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce, Extension
+:oro_documentation_types: Extension
 :oro_show_local_toc: false
 
 .. _user-guide--payment--payment-providers-overview--infinitepay:

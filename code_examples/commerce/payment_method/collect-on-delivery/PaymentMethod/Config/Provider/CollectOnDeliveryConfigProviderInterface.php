@@ -1,8 +1,8 @@
 <?php
 
-namespace ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Provider;
+namespace Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\Provider;
 
-use ACME\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
+use Acme\Bundle\CollectOnDeliveryBundle\PaymentMethod\Config\CollectOnDeliveryConfigInterface;
 
 /**
  * Interface for config provider which allows to get configs based on payment method identifier

@@ -47,8 +47,8 @@ Then, install the extension's Composer package using the Composer ``require`` co
 
 .. note:: Find the required extension name on the extension view page on the Oro Extensions Store website.
 
-          .. image:: /img/backend/extension/extension_name.png
-             :alt: Classes of OroImportExportBundle
+.. image:: /img/backend/extension/extension_name.png
+   :alt: Classes of OroImportExportBundle
 
 Next, remove old cache:
 

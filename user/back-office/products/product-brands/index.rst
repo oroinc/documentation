@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce, OroMarketplace
+:oro_documentation_types: OroMarketplace
 
 .. _user-guide--product-brands:
 

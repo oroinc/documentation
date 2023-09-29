@@ -1,4 +1,3 @@
-:oro_documentation_types: OroCommerce
 :oro_show_local_toc: false
 
 .. _concept-guide--localization-translation:
@@ -54,7 +53,7 @@ To translate the Oro application's storefront and back-office to a desired langu
 
 * :ref:`Translate Content <content-translation>`
 * :ref:`Translate UI Labels, Options, and Messages <localization--translations--messages>`
-* :ref:`Translate Product Attribute Labels <localization--translations--labels>`
+* :ref:`Translate Product Attribute Options <localization--translations--labels>`
 * :ref:`Translate Content Blocks <user-guide--landing-pages--marketing--content-blocks--translation>`
 * :ref:`Translate Landing Pages <concept-guide-localize-landing-page>`
 * :ref:`Translate Consents <user-guide--consents--localizing-consents>`

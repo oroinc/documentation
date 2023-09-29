@@ -1,0 +1,18 @@
+services:
+    acme_demo_sms.form.handler.sms_api:
+        class: Acme\Bundle\DemoBundle\Form\Handler\SmsApiHandler
+        public: true
+        arguments:
+            - '@form.factory'
+            - '@request_stack'
+            - '@doctrine.orm.entity_manager'
+        tags:
+            - { name: oro_form.form.handler, alias: acme_demo_sms.form.handler.sms_api }
+
+    acme_demo_sms.manager.api:
+        class: Oro\Bundle\SoapBundle\Entity\Manager\ApiEntityManager
+        public: true
+        parent: oro_soap.manager.entity_manager.abstract
+        arguments:
+            - 'Acme\Bundle\DemoBundle\Entity\Sms'
+            - '@doctrine.orm.entity_manager'

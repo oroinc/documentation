@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-management-organization-manage:
 
 Manage Organizations in the Back-Office

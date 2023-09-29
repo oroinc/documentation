@@ -12,35 +12,12 @@ Parameters are accessible in actions as the root node of contextual data (e.g., 
 Action Group Configuration
 --------------------------
 
-File `<bundleResourceRoot>/config/oro/actions.yml`
+.. oro_integrity_check:: c99c6e9f1a933e282f068ef1fcf559e3a7113ee0
 
-.. code-block:: none
-
-    action_groups:                                      # root node for action groups
-        demo_flash_greetings_to:                        # name of action group
-            replace:                                    # (optional) the list of nodes that should be replaced during the overriding
-                - actions                               # node name
-            parameters:                                 # parameters declaration node
-                what:                                   # name of the parameter
-                    type: AcmeDemoBundle/String/Phrase  # (optional, default = any) type validation of parameter (available types: integer, string, boolean, array, double, object, PHP class)
-                    message: "Bad type"                 # (optional) message to be prompted if parameter validation failure met
-                    default: "Hello"                    # (optional) default value for optional parameter, if not set then parameter `what` is required
-                who: ~                                  # set all defaults to parameter options (type: any)
-            conditions:                                 # Condition expression
-                @not_empty: [$.who]
-            actions:                                    # list of actions that should be executed
-                - '@call_service_method':
-                    service: type_guesser
-                    method: guess
-                    method_parameters: [$.who]          # as you can see, parameters are accessible from root $.<parameterName>
-                    attribute: $.typeOfWho
-                - '@flash_message':
-                    message: "%param1%, %param2%!"
-                    type: 'info'
-                    message_parameters:
-                        param1: $.what
-                        param2: $.typeOfWho
-
+    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
+        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
+        :language: yaml
+        :lines: 1-24
 
 Next, run this action_group as follows:
 

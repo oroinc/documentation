@@ -1,11 +1,11 @@
-:oro_documentation_types: OroCommerce, OroMarketplace
+:oro_documentation_types: OroMarketplace
 
 .. _concept-guide-oro-marketplace:
 
 OroMarketplace Concept Guide
 ============================
 
-OroMarketplace is a powerful open-source digital B2B marketplace solution for businesses that want to build a marketplace for their own industry and expand by adding additional sellers or suppliers. Unlike most marketplace platforms, it is specifically designed for the B2B sector, enabling distributors, retailers, brands, or manufacturers to sell physical goods and services to other businesses. OroMarketplace is based on OroCommerce Enterprise with in-build OroCRM, which allows for handling all storefront and back-office components and automating B2B processes using various workflows.
+OroMarketplace is a powerful open-source digital B2B marketplace solution for businesses that want to build a marketplace for their own industry and expand by adding additional sellers or suppliers. Unlike most marketplace platforms, it is specifically designed for the B2B sector, enabling distributors, retailers, brands, or manufacturers to sell physical goods and services to other businesses. OroMarketplace is based on OroCommerce Enterprise, which allows for handling all storefront and back-office components and automating B2B processes using various workflows.
 
 Organizations
 -------------
@@ -90,14 +90,16 @@ You can associate each product with a specific :ref:`product brand <user-guide--
 Pricing Management
 ------------------
 
-As OroMarketplace has integrated OroCommerce, it has the advantage of using its dynamic pricing engine that automates price configuration and calculation. OroMarketplace pricing functionality enables vendors to quickly set up and customize different price lists for specific customers, customer groups, and websites and build aggregated price lists with any amount of price attributes, tiers, or currencies.
+As OroMarketplace has integrated OroCommerce, it has the advantage of using its dynamic pricing engine that automates price configuration and calculation. OroMarketplace pricing functionality enables vendors to quickly set up and customize different price lists for specific customers, customer groups, and websites and build aggregated price lists with any amount of price attributes, tiers, or currencies. Vendors can use the price attribute as a base value for manually or automatically generated price lists.
 
 In OroMarketplace, price lists are managed per organization so that vendors can diversify price offerings by personalizing prices according to specific strategies, customer accounts, order quantities, or other factors.
 
 Orders and Shipping
 -------------------
 
-Marketplace owners can configure shipping integrations and shipping rules for all sellers and per seller so proper :ref:`shipping fees are calculated <user-guide--system-configuration--commerce-sales-multi-shipping>` based on seller needs and warehouse data. When a buyer submits an order with items sold by different vendors with different shipping options, their order is split into one parent order and sub-orders in the back-office. Each respective seller receives their portion of the order and is responsible for shipping the items sold to the buyer. The marketplace owner organization has the record of the source parent order containing information about its suborders per seller, line items, payment details, etc.
+Marketplace owners can configure shipping integrations and shipping rules for all sellers and per seller so proper :ref:`shipping fees are calculated <user-guide--system-configuration--commerce-sales-multi-shipping>` based on seller needs and warehouse data. The default shipping methods are *Fixed Product Shipping Cost* and *Flat Rate Shipping* with 0 value, which are created automatically after seller's registration. Sellers can then adjust the amount as needed.
+
+When a buyer submits an order with items sold by different vendors with different shipping options, their order is split into one parent order and sub-orders in the back-office. Each respective seller receives their portion of the order and is responsible for shipping the items sold to the buyer. The marketplace owner organization has the record of the source parent order containing information about its suborders per seller, line items, payment details, etc.
 
 .. image:: /user/img/concept-guides/marketplace/orders-split-by-sellers.png
    :alt: Orders split by seller in the back-office

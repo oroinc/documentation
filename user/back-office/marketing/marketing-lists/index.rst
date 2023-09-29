@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-marketing-lists:
 
 Manage Marketing Lists in the Back-Office

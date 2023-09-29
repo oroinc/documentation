@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--commerce--orders--order-creation--global:
 .. _configuration--commerce--orders-create:
 

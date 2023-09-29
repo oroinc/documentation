@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--configuration--promotions:
 .. _user-guide--new-products:
 .. _sys--commerce--product--new-arrivals:

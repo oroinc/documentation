@@ -19,14 +19,12 @@ In PHP code, access to the field is provided by the `isGranted` method of the `s
 
 The second parameter of this method should be an instance of |FieldVote|:
 
-.. code-block:: php
+.. oro_integrity_check:: 58dc39bf0c629cf49c93c3df32d3ecc71c7b0db5
 
-    // ....
-    use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
-    use Symfony\Component\Security\Acl\Voter\FieldVote;
-    // ...
-
-    $isGranted = $this->authorizationChecker->isGranted('VIEW', new FieldVote($entity, 'fieldName'));
+    .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
+        :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
+        :language: php
+        :lines: 49-67
 
 As a result, the $isGranted variable contains the *true* value if access is granted and the *false* value if it does not.
 
@@ -70,64 +68,21 @@ You can achieve this with the Config annotation if you have access to both the e
 
 The following example is an illustration of the entity configuration:
 
-.. code-block:: php
+.. oro_integrity_check:: 33f10f51cdffe6870410ad29743879314d30c42c
 
-     /**
-     * @ORM\Entity()
-     * @Config(
-     *      defaultValues={
-     *          "ownership"={
-     *              "owner_type"="USER",
-     *              "owner_field_name"="owner",
-     *              "owner_column_name"="user_owner_id",
-     *              "organization_field_name"="organization",
-     *              "organization_column_name"="organization_id"
-     *          },
-     *          "security"={
-     *              "type"="ACL",
-     *              "group_name"="",
-     *              "field_acl_supported"="true"
-     *          },
-     *      }
-     * )
-     */
-     class SomeEntity implements ExtendEntityInterface
-     {
-     ...
-     }
+    .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
+        :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
+        :language: php
+        :lines: 1-52, 135
 
 If you have no access to the entity to modify the Config annotation, set the `field_acl_supported` parameter with the migration:
 
-.. code-block:: php
+.. oro_integrity_check:: 751dd18f13a127dd9b15bf133176078b5d314d80
 
-    namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
-
-    use Doctrine\DBAL\Schema\Schema;
-
-    use Oro\Bundle\EntityConfigBundle\Migration\UpdateEntityConfigEntityValueQuery;
-
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-
-    class TurnFieldAclSupportForEntity implements Migration
-    {
-        /**
-         * {@inheritdoc}
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $queries->addQuery(
-                new UpdateEntityConfigEntityValueQuery(
-                    'Acme\Bundle\DemoBundle\Entity\SomeEntity',
-                    'security',
-                    'field_acl_supported',
-                    true
-                )
-            );
-        }
-    }
-
-
+    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_8/TurnFieldAclSupportForFavorites.php
+        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_8/TurnFieldAclSupportForFavorites.php
+        :language: php
+        :lines: 1-27
 
 Enable Field ACL
 ----------------
@@ -150,27 +105,13 @@ The permissions should be listed as the string with the `;` delimiter.
 
 For example:
 
-.. code-block:: php
+.. oro_integrity_check:: 7d297450d614c9509526c1fbb29181ee5d76928a
 
-     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
-     // ...
+    .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
+        :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
+        :language: php
+        :lines: 1-52, 84-98, 135
 
-     class SomeEntity implements ExtendEntityInterface
-     {
-     // ...
-         /**
-          * @ORM\Column()
-          * @ConfigField(
-          *      defaultValues={
-          *          "security"={
-          *              "permissions"="VIEW;CREATE",
-          *          },
-          *      }
-          * )
-          */
-         protected $firstName;
-     // ...
-     }
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

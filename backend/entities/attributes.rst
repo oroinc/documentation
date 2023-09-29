@@ -10,68 +10,26 @@ Enabling Attributes for an Entity
 
 You can enable attributes for any extendable and configurable entity by doing the following:
 
-1. Add @Config annotation to the class with the 'attributes' scope and add key 'has_attributes' set to `true`.
+1. Add @Config annotation to the class with the 'attribute' scope and add key 'has_attributes' set to `true`.
 2. Add the **attributeFamily** field with many-to-one relation to ``Oro\Bundle\EntityConfigBundle\Attribute\Entity\AttributeFamily``. Make the field configurable, activate import if necessary, and add migration.
 3. Implement **AttributeFamilyAwareInterface** and accessors for the **attributeFamily** field.
 
-The following example illustrates enabling attributes for the *Product* entity:
+The following example illustrates enabling attributes for the *Document* entity:
 
-.. code-block:: php
+.. oro_integrity_check:: 05fc69c929e7d7f85267aed5400a29356e30b0d4
 
-    /**
-     * @ORM\Entity
-     * @Config(
-     *  defaultValues={
-     *      "attributes"={
-     *          "has_attributes"=true
-     *      }
-     *  }
-     * )
-     */
-    class Product implements AttributeFamilyAwareInterface
-    {
-        // ...
+   .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
+       :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
+       :language: php
+       :lines: 17-19, 26, 31, 61-69, 78, 73, 78, 212-244
 
-        /**
-         * @var AttributeFamily
-         *
-         * @ORM\ManyToOne(targetEntity="Oro\Bundle\EntityConfigBundle\Attribute\Entity\AttributeFamily")
-         * @ORM\JoinColumn(name="attribute_family_id", referencedColumnName="id", onDelete="RESTRICT")
-         * @ConfigField(
-         *      defaultValues={
-         *          "dataaudit"={
-         *              "auditable"=false
-         *          },
-         *          "importexport"={
-         *              "order"=10
-         *          }
-         *      }
-         *  )
-         */
-        protected $attributeFamily;
 
-        /**
-         * @param AttributeFamily $attributeFamily
-         * @return $this
-         */
-        public function setAttributeFamily(AttributeFamily $attributeFamily)
-        {
-            $this->attributeFamily = $attributeFamily;
+.. oro_integrity_check:: 0886c56aac30782ed1ef4e9df7c3accd2253e3f8
 
-            return $this;
-        }
-
-        /**
-         * @return AttributeFamily
-         */
-        public function getAttributeFamily()
-        {
-            return $this->attributeFamily;
-        }
-
-        // ...
-    }
-
+   .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_9/AddAttributeFamilyField.php
+       :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_9/AddAttributeFamilyField.php
+       :language: php
+       :lines: 3-32
 
 .. note:: Remember to clear cache and update configuration after these changes.
 
@@ -82,15 +40,13 @@ After enabling attributes for an entity, you can use routes - *oro_attribute_ind
 
 You can add routes to the navigation tree to simplify access, like in the following example:
 
-.. code-block:: yaml
+.. oro_integrity_check:: a8cd11ff80b2ac52cc0316fcc3ab66c37a463fe3
 
-    product_attributes_index:
-        label: 'oro.product.menu.product_attributes'
-        route: 'oro_attribute_index'
-        route_parameters:
-            alias: 'product'
-        extras:
-            routes: ['oro_attribute_*']
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/navigation.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/navigation.yml
+       :language: yaml
+       :lines: 73-86
+
 
 The 'oro_attribute_create' route is responsible for creating a new attribute. Attribute creation is split into two steps. In step 1, a user provides the attribute code used as a unique slug representation and attribute type (string, bigint, select, etc.) that defines the data that should be captured in the following step. In step 2, a user provides a label to display an attribute on the website (e.g., OroCommerce Web Store) and any other information that should be captured about the attribute. Oro application can store the attribute as a *serialized field* or as a *table column*. The type of storage is selected based on the attribute type (simple types vs. Select and Multi-Select), as well as the setting of the *Filterable* and *Sortable* options. The product attribute storage type is set to *table column* for the attribute with Select of Multi-Select data type and for an attribute of any type with Filterable or Sortable option enabled. This data type requires a reindex launched by the user when they click **Update schema** on the *All Product Attributes* page. This triggers the field to be physically created in the table.
 
@@ -107,3 +63,5 @@ Attribute ACL
 -------------
 
 Attributes provide supplementary logic that helps extend entity fields marked as attributes despite limited access to the entity management.
+
+.. note:: Next, you can modify the shape of the Document so that there are several steps when creating the entity. For example, you can use OroProductBundle.

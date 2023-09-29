@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys-config--commerce--sales--promotions:
 
 Configure Global Promotions Settings

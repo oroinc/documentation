@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--customers--customer-groups--all-products:
 
 Add All Products Page to Frontend Menus per Customer Group

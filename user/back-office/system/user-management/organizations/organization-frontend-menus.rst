@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _frontend-menu-organization:
 
 Customize Menus per Organization

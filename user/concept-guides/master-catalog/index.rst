@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCommerce, OroMarketplace
+:oro_documentation_types: OroMarketplace
 
 .. _concept-guide-master-catalog:
 

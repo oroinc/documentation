@@ -5,7 +5,7 @@
 OroUIBundle
 ===========
 
-OroUIBundle defines the architecture of the front-end part of Oro application and provides tools that ensure coordinated work of the architecture parts.
+|OroUIBundle| defines the architecture of the front-end part of Oro application and provides tools that ensure coordinated work of the architecture parts.
 
 Configuration Settings
 ----------------------

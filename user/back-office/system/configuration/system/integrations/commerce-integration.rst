@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-commerce-integration:
 .. _user-guide-commerce-integration-accounts:
 

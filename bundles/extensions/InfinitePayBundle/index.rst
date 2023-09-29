@@ -3,7 +3,7 @@
 OroInfinitePayBundle
 ====================
 
-OroInfinitePayBundle adds |Infinite Pay| |integration| into Oro applications.
+|OroInfinitePayBundle| adds |Infinite Pay| |integration| into Oro applications.
 
 The bundle helps admin users to enable and configure Infinite Pay |payment method| for customer orders, and therefore allows customers to pay for orders with Invoices attested by Infinite Pay service.
 

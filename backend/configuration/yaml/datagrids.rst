@@ -540,7 +540,7 @@ min_length
 
 type: ``integer`` default: ``0``
 
-Specify the minimum length of the search string. When the search string length is below the limit, OroCRM shows a validation message to the user and ignores the filter value.
+Specify the minimum length of the search string. When the search string length is below the limit, Oro application shows a validation message to the user and ignores the filter value.
 
 order
 ~~~~~
@@ -1651,6 +1651,20 @@ board
         save_api_accessor: #Describes the way to send update request. Please see documentation for :ref:`oroui/js/tools/api-accessor <bundle-docs-platform-ui-bundle-apiaccessor>`.
 
 See for more information :ref:`Board Extension <customize-datagrids-extensions-board>`.
+
+views_list
+----------
+
+Provides the ability to add a list of grid views. Adds filters and sorters from the grid view to the parameters' filters.
+
+.. oro_integrity_check:: 18b05c6eeee9ded2308428e4146501132e27b546
+
+   .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/datagrids.yml
+       :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/datagrids.yml
+       :language: yaml
+       :lines: 1, 456, 510
+
+See :ref:`View List <customize-datagrids-views-list>`  for more information.
 
 **Related Article**
 
