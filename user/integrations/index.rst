@@ -52,5 +52,5 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
    ERP <erp/index>
    Marketing <marketing/index>
    PIM <PIM/index>
-   Salesforce <salesforce>
+   CRM <crm/index>  
    GS1 <gs1>
