@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _inventory-limitations-website:
 
 Configure Inventory Quantity Limitations Setting per Website

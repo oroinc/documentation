@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _mc-sales-quotes-wf:
 
 Use Quotes Workflows

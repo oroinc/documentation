@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _b2c-solution-management-concept-guide:
 
 B2C Websites in OroCommerce Concept Guide
@@ -24,7 +22,6 @@ To try out the OroCommerce application in a test mode and to experience the bene
 
 .. image:: /user/img/concept-guides/b2c/commerce_demo.png
    :alt: A log-in page to a B2B and B2C demo store
-   :scale: 50 %
 
 
 Three Multichannel eCommerce Strategies
@@ -69,7 +66,6 @@ Depending on the visitor who landed on your website, registered B2B or guest B2C
 
 .. image:: /user/img/concept-guides/b2c/B2B_vs_B2C_option.png
    :alt: Different product pricing and additional options for B2B and B2C
-   :scale: 60 %
 
 The following settings can be customized per customer:
 
@@ -122,7 +118,6 @@ You can also create another localization for the same language (for instance, *E
 
 .. image:: /user/img/concept-guides/b2c/diff_local.png
    :alt: Different website look for the English-B2B and English-B2C localizations
-   :scale: 50%
 
 .. hint:: For more details on how to localize the content of your website, check out the :ref:`Localizations, Languages, and Translations <sys--config--sysconfig--general-setup--localization>` topic.
 

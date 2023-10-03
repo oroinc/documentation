@@ -31,14 +31,14 @@ When the  application is ready to be released, follow the two steps outlined bel
 
 1. Build assets locally:
 
-   - For OroCommerce & OroCRM v3.1.4 and higher run:
+   - For OroCommerce v3.1.4 and higher run:
 
      .. code-block:: none
 
         php bin/console oro:assets:install --env=prod
         php bin/console oro:translations:dump --env=prod
 
-   - For OroCommerce & OroCRM from v3.1.0 to v3.1.4 run:
+   - For OroCommerce from v3.1.0 to v3.1.4 run:
 
      .. code-block:: none
 
@@ -48,7 +48,7 @@ When the  application is ready to be released, follow the two steps outlined bel
         php bin/console oro:localization:dump --env=prod
         php bin/console oro:translation:dump --env=prod
 
-   - For the OroCommerce v1.6 & OroCRM v2.6 run:
+   - For the OroCommerce v1.6 run:
 
      .. code-block:: none
 
@@ -66,13 +66,13 @@ When the  application is ready to be released, follow the two steps outlined bel
 
 2. Add built assets to the git repository.
 
-   In OroCommerce and OroCRM 4.1 and higher, built assets are placed in the `public/` folder. By default, they are added into the .gitignore file and not tracked by git.
+   In OroCommerce 4.1 and higher, built assets are placed in the `public/` folder. By default, they are added into the .gitignore file and not tracked by git.
 
    If you want to add them to the git repository, you have two options:
 
    - Remove the following lines for the .gitignore file to track changes on the built assets:
 
-        - For OroCommerce & OroCRM 4.2:
+        - For OroCommerce 4.2:
 
           .. code-block:: none
 
@@ -80,7 +80,7 @@ When the  application is ready to be released, follow the two steps outlined bel
              /public/build
              /public/media/js
 
-        - For OroCommerce & OroCRM 4.1:
+        - For OroCommerce 4.1:
 
           .. code-block:: none
 
@@ -89,7 +89,7 @@ When the  application is ready to be released, follow the two steps outlined bel
              /public/layout-build
              /public/media/js
 
-        - For OroCommerce & OroCRM 3.1:
+        - For OroCommerce 3.1:
 
           .. code-block:: none
 
@@ -97,7 +97,7 @@ When the  application is ready to be released, follow the two steps outlined bel
              /public/js
              /public/media/js
 
-        - For OroCommerce 1.6 & OroCRM 2.6:
+        - For OroCommerce 1.6:
 
           .. code-block:: none
 
@@ -108,25 +108,25 @@ When the  application is ready to be released, follow the two steps outlined bel
 
    - Force the addition of the built assets to the git repository when they are ready.
 
-        - For OroCommerce & OroCRM 4.2:
+        - For OroCommerce 4.2:
 
           .. code-block:: none
 
              git add -f public/build public/js/oro.locale_data.js public/media/js
 
-        - For OroCommerce & OroCRM 4.1:
+        - For OroCommerce 4.1:
 
           .. code-block:: none
 
              git add -f public/build public/layout-build public/js/oro.locale_data.js public/media/js
 
-        - For OroCommerce & OroCRM 3.1:
+        - For OroCommerce 3.1:
 
           .. code-block:: none
 
              git add -f public/css public/js public/media/js
 
-        - For OroCommerce 1.6 & OroCRM 2.6:
+        - For OroCommerce 1.6:
 
           .. code-block:: none
 

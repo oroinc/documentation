@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--prerequisites--authorizenet:
 
 Prerequisites for Authorize.Net Integration in the Back-Office

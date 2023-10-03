@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--website-commerce--search--saved-search:
 
 Configure Saved Search Settings per Website

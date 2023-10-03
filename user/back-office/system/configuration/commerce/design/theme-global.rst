@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--commerce--design--theme--theme-settings--globally:
 .. _configuration--commerce--design--theme--page-templates:
 .. _configuration--commerce--design--theme--filter-settings:

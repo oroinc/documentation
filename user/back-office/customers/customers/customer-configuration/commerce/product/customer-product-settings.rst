@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--customers--customer-settings:
 
 Configure Product Data Export per Customer

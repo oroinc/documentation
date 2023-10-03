@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _configuration--guide--system--configuration--integrations:
 
 Configure Global Integration Settings

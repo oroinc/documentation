@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--landing-pages--marketing--content-blocks:
 
 .. begin 

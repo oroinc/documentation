@@ -1,9 +1,7 @@
-:oro_documentation_types: OroPlatform, OroCRM, OroCommerce, OroMarketplace
-
-:title: OroCommerce, OroCRM and OroMarketplace Integrations Documentation
+:title: OroCommerce and OroMarketplace Integrations Documentation
 
 .. meta::
-   :description: Integrations documentation for the OroCommerce, OroCRM and OroMarketplace users
+   :description: Integrations documentation for the Oro application and OroMarketplace users
 
 Integrations
 ============
@@ -50,8 +48,9 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
    :hidden:
 
    payment/index
-
    shipping/index
-   Salesforce <salesforce>
-   GS1 <gs1>
    ERP <erp/index>
+   Marketing <marketing/index>
+   PIM <PIM/index>
+   CRM <crm/index>  
+   GS1 <gs1>

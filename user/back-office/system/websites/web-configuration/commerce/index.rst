@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 Commerce Configuration Settings per Website
 ===========================================
 

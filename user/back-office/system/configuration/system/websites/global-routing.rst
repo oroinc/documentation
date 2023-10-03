@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _sys--config--sysconfig--websites--routing:
 .. _user-guide--marketing--web-catalog--enable-globally:
 
@@ -22,8 +20,6 @@ To change the default global routing settings:
 3. In the **General** section, define the following options:
 
    .. image:: /user/img/system/config_system/routing_general.png
-      :scale: 80%
-      :align: center
       :alt: Global website routing settings
 
    * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
@@ -56,8 +52,6 @@ To change the default global routing settings:
 4. In the **Direct URLs** section, configure the following settings:
 
    .. image:: /user/img/system/config_system/routing_direct_url.png
-      :scale: 80%
-      :align: center
       :alt: Global Direct URLs settings
 
    * **Enable Direct URLs** - when enabled, the page URL is built using the page slug (e.g., `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g., `/product/view/4`).
@@ -75,8 +69,6 @@ To change the default global routing settings:
 5. In the **Canonical URLs** section, configure the following parameters:
 
    .. image:: /user/img/system/config_system/routing_canonical_url.png
-      :scale: 80%
-      :align: center
       :alt: Global Canonical URLs settings
 
    * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
@@ -100,8 +92,6 @@ To change the default global routing settings:
 6. In **Website Matchers**, configure the following parameters to identify the visitors of your website through various tracking options:
 
    .. image:: /user/img/system/config_system/routing_website_matchers.png
-      :scale: 80%
-      :align: center
       :alt: Global website matchers configuration
 
    .. note:: The Website Matchers feature is only available in the Enterprise edition.

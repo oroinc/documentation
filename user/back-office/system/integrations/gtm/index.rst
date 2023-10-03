@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM, OroCommerce, Extension
+:oro_documentation_types: Extension
 
 .. _gtm-ga-4-integration:
 

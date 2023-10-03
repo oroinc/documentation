@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _sys--conf--commerce--sales--contacts-user:
 
 Configure Settings for Contacts per User (Sales Rep Information)

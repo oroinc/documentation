@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--conf--commerce--customer--contact-request-global:
 
 Configure Global Contact Requests Settings

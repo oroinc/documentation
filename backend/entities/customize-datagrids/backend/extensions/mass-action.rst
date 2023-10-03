@@ -247,7 +247,6 @@ Alternatively, you can configure a mass action with operations. See :ref:`Operat
 6. View results on the ``/admin/users`` page.
 
     .. image:: /img/backend/entities/datagrid_mass_action_grid.png
-       :scale: 100%
        :alt: Mass action button on a grid toolbar
 
 Register Custom Mass Action Type

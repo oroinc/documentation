@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-management-bu:
 
 Configure Business Units in the Back-Office

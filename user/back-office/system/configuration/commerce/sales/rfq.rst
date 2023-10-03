@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _configuration--guide--commerce--configuration--sales-rfq:
 .. _user-guide--system-configuration--commerce-sales--rfq:
 .. _sys--conf--commerce--sales--rfq-notifications--general:

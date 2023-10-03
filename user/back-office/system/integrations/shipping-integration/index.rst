@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--integrations--manage-integrations--ups--flat-rate:
 .. _user-guide--shipping--configuration--common-details:
 

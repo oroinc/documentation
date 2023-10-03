@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--websites--sysconfig--websites--sitemap:
 
 Configure Sitemap Settings per Website

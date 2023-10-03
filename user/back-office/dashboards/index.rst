@@ -1,9 +1,7 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
-:title: OroCommerce and OroCRM Back-Office Dashboards
+:title: Oro Application Back-Office Dashboards
 
 .. meta::
-   :description: Instructions on the OroCommerce and OroCRM dashboard features and their widgets management
+   :description: Instructions on the Oro Application dashboard features and their widgets management
 
 .. _user-guide--business-intelligence:
 .. _business-intelligence:

@@ -43,7 +43,7 @@ We only accept extensions under OSL-3 or MIT licenses.
 Adding an Extension
 -------------------
 
-To be able to add an extension you have to be logged in to tho OroCRM Extensions Store website. The Add Extension page
+To be able to add an extension you have to be logged in to the Oro Extensions Store website. The Add Extension page
 can be reached via the user menu in the top right corner of the page or via link on the My Marketplace page.
 
 First thing you have to do is to choose an extension type: paid or free.

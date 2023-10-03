@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _website-configuration--commerce--search--customer-recommendation:
 
 Configure Customer Recommendations Settings per Website

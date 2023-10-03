@@ -1,4 +1,3 @@
-:oro_documentation_types: OroCommerce
 :oro_show_local_toc: false
 
 :title: Product Information Management in the OroCommerce Back-Office

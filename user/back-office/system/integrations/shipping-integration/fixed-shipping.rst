@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _doc-integration-fixed-shipping-cost:
 
 Configure Fixed Product Shipping Cost Integration in the Back-Office

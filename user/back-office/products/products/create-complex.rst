@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _products--products--create-config-product:
 
 Create a Configurable Product

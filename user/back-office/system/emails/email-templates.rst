@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-email-template:
 .. _user-guide-email-templates-create:
 .. _user-guide-using-emails-create-template:

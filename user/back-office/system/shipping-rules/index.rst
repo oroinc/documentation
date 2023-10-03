@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--shipping-rules:
 
 Configure Shipping Rules in the Back-Office

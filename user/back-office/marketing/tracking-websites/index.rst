@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-marketing-tracking:
 
 .. updated on 18 October 2018

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _doc--integrations--flat-rate:
 
 Configure Flat Rate Shipping Integration in the Back-Office

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide--payment--payment-providers-stripe--overview:
 
 Manage Stripe Payment Service in the Back-Office

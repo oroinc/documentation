@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--leads-list:
 
-:oro_documentation_types: OroCRM
+
 :oro_show_local_toc: false
 
 Leads List

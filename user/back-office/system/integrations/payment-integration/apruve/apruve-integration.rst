@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--payment--configuration--payment-method-integration--apruve:
 
 Configure Apruve Payment Method Integration in the Back-Office

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-guide-manage-entity-fields:
 
 Manage Entity Fields

@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _products--product-attributes:
 
 Manage Product Attributes in the Back-Office

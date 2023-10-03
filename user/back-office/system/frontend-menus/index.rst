@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _backend-frontend-menus:
 .. _frontend-menus-overview:
 .. _doc--system--menu--config-levels--frontend-menus:

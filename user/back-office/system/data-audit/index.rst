@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-guide-data-audit:
 .. _user-guide-data-audit:
 

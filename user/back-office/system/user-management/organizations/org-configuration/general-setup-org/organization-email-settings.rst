@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _admin-configuration-email-configuration-organization:
 
 Configure Settings for Email Configuration per Organization
@@ -86,8 +84,8 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
 8. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox. 
 
    * *Do Nothing* --- No actions are performed. Letters are saved in the mailbox.
-   * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in OroCRM.
-   * *Convert To Case* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Case record will be created in OroCRM.
+   * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in the Oro application.
+   * *Convert To Case* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Case record will be created in the Oro application.
  
    .. note:: Options in the Source field should be defined in advance. This can be done through the entity manager in **System > Entities > Entity Management > Lead > Source**.
 

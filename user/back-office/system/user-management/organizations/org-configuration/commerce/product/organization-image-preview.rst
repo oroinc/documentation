@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--commerce--product--product-images--image-preview--organization:
 .. _sys--users--organization--commerce--products--gallery-slider:
 

@@ -1,11 +1,11 @@
-:title: Upgrade OroCommerce, OroCRM or OroPlatform application
+:title: Upgrade Oro Application
 
 .. _deploy-the-update:
 
 Deploy Application Changes to a New Environment (Testing or Production)
 =======================================================================
 
-This guide explains how to deploy changes for OroCommerce, OroCRM, or OroPlatform.
+This guide explains how to deploy changes for Oro applications.
 
 .. hint:: The instructions below will help you update a self-hosted application instance. If your application is hosted on OroCloud, follow the OroCloud guide to run the automated |Upgrade|.
 

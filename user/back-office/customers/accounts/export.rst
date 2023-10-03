@@ -1,4 +1,3 @@
-:oro_documentation_types: OroCRM
 
 .. _mc-customers-accounts-export:
 

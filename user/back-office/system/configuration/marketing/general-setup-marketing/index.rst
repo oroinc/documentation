@@ -1,4 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
 :oro_show_local_toc: false
 
 .. _configuration--guide--marketing--configuration--general-setup:

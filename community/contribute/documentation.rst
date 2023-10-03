@@ -20,7 +20,7 @@ Before submitting your documentation changes in a pull request, please sign our 
 Fork Documentation Project
 --------------------------
 
-If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our |OroPlatform,OroCRM and OroCommerce documentation| repository and allow for the creation and submission of a new pull request with your modifications once you are done editing.
+If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our |Oro documentation| repository and allow for the creation and submission of a new pull request with your modifications once you are done editing.
 
 For large volume of  updates, fixes, and enhancements please use the following process: 
 
@@ -300,7 +300,7 @@ Preview:
 
 
     .. csv-table::
-       :header: "**OroCRM Field**","**Outlook Field**"
+       :header: "**OroCommerce Field**","**Outlook Field**"
        :widths: 20, 20
 
        "Subject","Subject"
@@ -310,7 +310,7 @@ Preview:
 Preview
 
     .. csv-table::
-       :header: "**OroCRM Field**","**Outlook Field**"
+       :header: "**OroCommerce Field**","**Outlook Field**"
        :widths: 20, 20
 
        "Subject","Subject"

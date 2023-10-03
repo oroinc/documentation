@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _user-guide--sales--guest-quotes:
 
 Send a Guest Quote

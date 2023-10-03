@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-user-management-permissions-roles--examples:
 
 Configure End-to-End Access in Context in the Back-Office

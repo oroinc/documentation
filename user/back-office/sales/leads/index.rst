@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _user-guide-system-channel-entities-leads:
 
 Manage Leads in the Back-Office

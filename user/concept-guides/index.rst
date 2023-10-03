@@ -1,6 +1,4 @@
-:oro_documentation_types: OroCRM, OroCommerce, OroMarketplace
-
-:title: OroCommerce, OroCRM and OroMarketplace Concept Guides
+:title: OroCommerce and OroMarketplace Concept Guides
 
 .. meta::
    :description: Key conceptual use cases and how-to guides
@@ -8,11 +6,11 @@
 Concept Guides
 ==============
 
-Concept Guides introduce you to the business logic behind comprehensive OroCRM and OroCommerce concepts. They aggregate information, explore various use-cases and serve as reference points to the feature-based documentation under Back-Office and Commerce Storefront.
+Concept Guides introduce you to the business logic behind comprehensive Oro application concepts. They aggregate information, explore various use-cases and serve as reference points to the feature-based documentation under Back-Office and Commerce Storefront.
 
 Complementary to the how-to approach of the Back-office section of the documentation, Concept Guides give you context and references to other how-to articles in the documentation.
 
-.. note:: When browsing documentation, be on the lookout for  |CommerceIcon|, |CRMIcon|, |MarketplaceIcon| and |Extension| icons on the top right. They indicate whether described features and concepts are available in OroCRM, OroCommerce, OroMarketplace, and whether they require extension installation.
+.. note:: When browsing documentation, be on the lookout for |MarketplaceIcon| and |Extension| icons on the top right. They indicate whether described features and concepts are available in Oro Marketplace, and whether they require extension installation.
 
 .. admonition:: Business Tip
 

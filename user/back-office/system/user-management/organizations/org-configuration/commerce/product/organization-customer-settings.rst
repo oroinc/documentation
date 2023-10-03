@@ -1,5 +1,3 @@
-:oro_documentation_types: OroCommerce
-
 .. _sys--users--organization--commerce--products--customer-settings:
 
 Configure Customer Settings for Product Data Export per Organization

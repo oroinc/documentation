@@ -1,6 +1,6 @@
 .. _user-guide--widgets--sales-orders-volume:
 
-:oro_documentation_types: OroCRM
+
 :oro_show_local_toc: false
 
 Sales Orders Volume

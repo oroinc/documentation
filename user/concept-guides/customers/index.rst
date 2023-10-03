@@ -1,13 +1,11 @@
-:oro_documentation_types: OroCRM, OroCommerce
-
 .. _concept-guide-customers:
 
 Customer Management Concept Guide
 =================================
 
-The power of commerce is in building strong relationships between customers and businesses. One of the most crucial ingredients that helps improve this bond is the database of existing and potential customers that businesses use to communicate with them or address a required issue in a proper and timely manner. That is where Oro applications come in hand. OroCommerce and OroCRM applications provide the ability to manage your customers from different perspectives, storing customers’ contact information, their entire purchase history, lifetime sales value, marketing activity, references to leads and opportunities in one easily accessible place. Having a single location for this aggregated information reduces the time spent on customer management.
+The power of commerce is in building strong relationships between customers and businesses. One of the most crucial ingredients that helps improve this bond is the database of existing and potential customers that businesses use to communicate with them or address a required issue in a proper and timely manner. That is where Oro applications come in hand. Oro applications provide the ability to manage your customers from different perspectives, storing customers’ contact information, their entire purchase history, lifetime sales value, marketing activity, references to leads and opportunities in one easily accessible place. Having a single location for this aggregated information reduces the time spent on customer management.
 
-To work with customers in Oro, you need to understand how Oro represents customers, which CRM and Commerce-specific entities they include, how these entities differ and interconnect. You need to distinguish the main concepts of customers and customer users, customer groups and roles, accounts and contacts to ensure that the necessary information is displayed to the correct person. This also enables you to track information about companies and people and keep it up-to-date.  In the sections below, we are going to explain it all in detail.
+To work with customers in Oro, you need to understand how Oro represents customers, which entities they include, how these entities differ and interconnect. You need to distinguish the main concepts of customers and customer users, customer groups and roles, accounts and contacts to ensure that the necessary information is displayed to the correct person. This also enables you to track information about companies and people and keep it up-to-date. In the sections below, we are going to explain it all in detail.
 
 Customer Management Entities
 ----------------------------
@@ -22,24 +20,22 @@ In Oro applications, people and businesses are represented by the following enti
 
 These are located under **Customers** in the main menu of the application but the availability of these entities depends on the type of application you use and your role permissions.
 
-In the applications where both CRM and Commerce integrations are configured, the **Customers** menu includes the entities from both applications, where *Accounts* and *Contacts* refer to CRM and *Customers* and *Customer Users* refer to Commerce.
-
 .. image:: /user/img/concept-guides/customers/customers_menu.png
    :alt: Customers menu
    :align: center
 
 :term:`Accounts <Account>` and :term:`customers <Customer>` are businesses, while :term:`contacts <Contact>` and :term:`customer users <Customer User>` are individuals who act on behalf of the company.
 
-When Commerce and CRM are installed separately, you can track application-specific customer and user data independently. When both are integrated into one application, you receive additional options to source and retrieve customer and user with the ability to use either CRM or Commerce modules separately, if necessary. It is convenient when within one organization you have employees who work either exclusively with OroCRM or OroCommerce features. In both cases, you have the ability to aggregate and track information about companies and people.
+You can track information about companies and people within one application.
 
 Specifics of Each Customer Entity
 ---------------------------------
 
-Even though the information in Accounts, Contacts, and Customers may seem similar, there is a significant difference that shows the advantage of using CRM and Commerce together.
+Even though the information in Accounts, Contacts, and Customers may seem similar, there is a significant difference that shows the advantage of their usage.
 
-An **account** aggregates data from all channels (CRM, Commerce, or others) and all sources (e.g., Contacts, Business Customers, Commerce Customers) providing a 360-degree view of all the information about the company. All interactions with a particular customer are displayed on a single page where you can also track sales through opportunities.
+An **account** aggregates data from all channels and all sources (e.g., Contacts, Business Customers, Commerce Customers) providing a 360-degree view of all the information about the company. All interactions with a particular customer are displayed on a single page where you can also track sales through opportunities.
 
-A **contact** is a CRM concept that is used to associate a person with a specific account. It contains personal information of every contact, their position in the company, address information, and other related data.
+A **contact** is used to associate a person with a specific account. It contains personal information of every contact, their position in the company, address information, and other related data.
 
 The main difference between a **contact** and a **customer user** is that a contact represents a person who may not use the Commerce segment (for example, the CEO of a company who does not buy anything personally).
 
