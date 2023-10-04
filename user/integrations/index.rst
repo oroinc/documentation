@@ -53,4 +53,4 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
    Marketing <marketing/index>
    PIM <PIM/index>
    CRM <crm/index>  
-   GS1 <gs1>
+   More <misc/index>

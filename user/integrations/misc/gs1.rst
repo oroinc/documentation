@@ -1,4 +1,4 @@
-.. _integrations-pim-gs1:
+.. _integrations-misc-gs1:
 
 Integration with GS1
 ====================

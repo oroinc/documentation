@@ -13,5 +13,5 @@ Below is a list of CRM solutions OroCommerce integrates with:
 .. toctree::
    :hidden:
 
-   orocrm
-   salesforce
+   OroCRM <orocrm>
+   Salesforce <salesforce>

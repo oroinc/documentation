@@ -25,7 +25,7 @@ To customize the following tax calculation settings that impact the way OroComme
 
 4. In the **Tax Provider** section, select the required tax provider. The **Built-in Table Rates** option is the default one that specifies that you use the OroCommerce tax management functionality. You can also use an external tax management and compliance system, like AvaTax or Vertex, as a tax provider with some customization. In such case, select your custom tax management system.
 
-5. In the **Calculator** section, select whether to pply taxes per single item in the purchase order or per total for the requested amount of the items of same kind. This may minimize roundoff accumulated error and guard you and your customers against over or under paying.
+5. In the **Calculator** section, select whether to apply taxes per single item in the purchase order or per total for the requested amount of the items of same kind. This may minimize roundoff accumulated error and guard you and your customers against over or under paying.
 
    a) For the **Start Calculation With** option, specify the formula for tax calculation. Tax is calculated either for a unit price or for a product total price. The formula for *Unit price* is:
 
