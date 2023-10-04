@@ -18,4 +18,3 @@ OroCommerce seamlessly integrates with leading shipping service providers, empow
    DPD <dpd-service>
    UPS <ups>
    Fedex <fedex>
-
