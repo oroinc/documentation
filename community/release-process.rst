@@ -33,46 +33,46 @@ Oro Team works on OroCommerce using a time-based schedule, with an LTS version c
 
 .. note::
 
-   **LTS** versions of OroCommerce Enterprise Edition are actively maintained for 18 months after the release, and security fixes are released for 18 more months.
+   **LTS** versions of OroCommerce Enterprise Edition are supported for 36 months from the date of the release.
 
 Below is the approximate schedule of the currently maintained/supported and planned upcoming releases and support timelines of OroCommerce Enterprise Edition until 2025. Please take into account that the numbering of planned major and minor versions is subject to change.
 
-+--------------------------------+-------------------+-------------------------+-----------------------+
-| OroCommerce Enterprise Edition | Release Date      | Active Maintenance ends | Security Support ends |
-+================================+===================+=========================+=======================+
-| **4.1 LTS**                    | *January 2020*    | *June 2021*             | *January 2023*        |
-+--------------------------------+-------------------+-------------------------+-----------------------+
-| **4.2 LTS**                    | **January 2021**  | **June 2022**           | **January 2024**      |
-+--------------------------------+-------------------+-------------------------+-----------------------+
-| **5.0 LTS**                    | **January 2022**  | **June 2023**           | **January 2025**      |
-+--------------------------------+-------------------+-------------------------+-----------------------+
-| **5.1 LTS**                    | **March 2023**    | **August 2024**         | **March 2026**        |
-+--------------------------------+-------------------+-------------------------+-----------------------+
-| 6.0 Beta                       | November 2023     | N/A                     | N/A                   |
-+--------------------------------+-------------------+-------------------------+-----------------------+
-| 6.0 RC                         | January 2024      | N/A                     | N/A                   |
-+--------------------------------+-------------------+-------------------------+-----------------------+
-| **6.0 LTS**                    | **March 2024**    | **August 2025**         | **March 2027**        |
-+--------------------------------+-------------------+-------------------------+-----------------------+
++--------------------------------+-------------------+-----------------------+
+| OroCommerce Enterprise Edition | Release Date      | Support ends          |
++================================+===================+=======================+
+| **4.1 LTS**                    | *January 2020*    | *January 2023*        |
++--------------------------------+-------------------+-----------------------+
+| **4.2 LTS**                    | **January 2021**  | **January 2024**      |
++--------------------------------+-------------------+-----------------------+
+| **5.0 LTS**                    | **January 2022**  | **January 2025**      |
++--------------------------------+-------------------+-----------------------+
+| **5.1 LTS**                    | **March 2023**    | **March 2026**        |
++--------------------------------+-------------------+-----------------------+
+| 6.0 Beta                       | November 2023     | N/A                   |
++--------------------------------+-------------------+-----------------------+
+| 6.0 RC                         | January 2024      | N/A                   |
++--------------------------------+-------------------+-----------------------+
+| **6.0 LTS**                    | **March 2024**    | **March 2027**        |
++--------------------------------+-------------------+-----------------------+
 
 Upgrade Recommendations
 -----------------------
 
 For long-term stability, we recommend upgrading from an LTS version to the next LTS version to take your time to adopt new features. Apply patch releases that become available for your LTS version to stay current and receive continued support without needing to upgrade frequently.
 
-Upgrade to the newest preview version once it is available only if you are an enterprise partner or an extension developer and want to ensure that your extensions and customizations are tested in combination with all new features before the next LTS release.
+Upgrade to the newest preview version once it is available only if you are an enterprise partner or an extension developer and want to ensure that your extensions and customizations are tested in combination with the new features before the next LTS release.
 
 If you are planning to start a new project in 2024 and it is scheduled to **go live after March 2024**, we recommend starting the development on the most recent available release in the 6.0 series to immediately utilize and benefit from new features as soon as they are introduced. You will need to ultimately **upgrade to the 6.0 LTS version before going live** with the project.
 
 OroCommerce Community Edition Releases
 --------------------------------------
 
-Oro Team produces patch releases for an **LTS** version of OroCommerce Community Edition only until the next LTS version is released.
+Oro Team produces patch releases for an **LTS** version of OroCommerce Community Edition only until the next LTS version is released (typically 12 months).
 
 Community developers and users have access to the following two product branches:
 
 - **Stable** – |5.1 branch| points to the latest LTS version. Use this branch for testing and deployment. To benefit from the latest features, fixes, and security updates, upgrade to the next patch release tag or LTS release tag as soon as they are available.
-- **Development** – |6.0 branch| points to the latest available commit and is updated frequently. This branch should be used **only by the developers and contributors** who actively follow the project progress on GitHub. This branch is not considered stable and is not recommended for production use.
+- **Development** – |6.0 branch| points to the latest published commit and is updated frequently. This branch should be used **only by the developers and contributors** who actively follow the project progress on GitHub. This branch is not considered stable and is not recommended for production use.
 
 +-------------------------------+-------------------+--------------------------------+
 | OroCommerce Community Edition | Release Date      | Patch Releases Available Until |
