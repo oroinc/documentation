@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _concept-guide-oro-marketplace:
 
 OroMarketplace Concept Guide

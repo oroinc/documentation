@@ -1,7 +1,7 @@
-:title: OroCommerce and OroMarketplace Integrations Documentation
+:title: OroCommerce Integrations Documentation
 
 .. meta::
-   :description: Integrations documentation for the Oro application and OroMarketplace users
+   :description: Integrations documentation for the Oro application users
 
 Integrations
 ============

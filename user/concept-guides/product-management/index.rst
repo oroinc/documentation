@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _concept-guides--product-management:
 
 Product Management Concept Guide

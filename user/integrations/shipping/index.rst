@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _integrations-shipping:
 
 Shipping Integrations
