@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _doc--products--before-you-begin:
 
 Manage Products in the Back-Office

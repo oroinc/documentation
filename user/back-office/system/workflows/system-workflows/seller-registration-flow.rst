@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _system--workflows--seller-registration-flow:
 
 Configure Seller Registration Request Workflow in the Back-Office

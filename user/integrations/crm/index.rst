@@ -8,10 +8,12 @@ Integrating with CRM solutions can benefit businesses in various ways. By connec
 Below is a list of CRM solutions OroCommerce integrates with:
 
 * :ref:`OroCRM <integrations-orocrm>`
-* :Ref:`Salesforce <integrations-crm-salesforce>`
+* :ref:`Salesforce <integrations-crm-salesforce>`
+* :ref:`Zendesk <integrations-crm-zendesk>`
 
 .. toctree::
    :hidden:
 
    OroCRM <orocrm>
    Salesforce <salesforce>
+   Zendesk <zendesk>

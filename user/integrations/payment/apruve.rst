@@ -14,29 +14,17 @@ Key Apruve Features
 
 Here is an overview of the key Apruve features that OroCommerce supports:
 
-**Flexible Credit Solutions**
+* **Flexible Credit Solutions**: Apruve provides a variety of credit options to OroCommerce customers, such as net terms, lines of credit, and installment payments. This flexibility empowers customers to make purchases without immediate payment, improving cash flow for both buyers and sellers.
 
-Apruve provides a variety of credit options to OroCommerce customers, such as net terms, lines of credit, and installment payments. This flexibility empowers customers to make purchases without immediate payment, improving cash flow for both buyers and sellers.
+* **Automated Credit Approval**: OroCommerce integrates with Apruve's credit approval system, enabling real-time credit checks and automatic approval for eligible buyers.
 
-**Automated Credit Approval**
+* **Secure B2B Credit Network**: OroCommerce integration with Apruve ensures secure and reliable credit transactions between businesses within the platform's B2B credit network. Apruve assumes the credit risk by underwriting all approved orders.
 
-OroCommerce integrates with Apruve's credit approval system, enabling real-time credit checks and automatic approval for eligible buyers.
+* **Seamless Buyer Experience**: The integration of OroCommerce with Apruve makes the checkout process faster and more efficient for customers. The need for manual credit checks and lengthy approval procedures is eliminated, resulting in a smoother buying journey.
 
-**Secure B2B Credit Network**
+* **Fast Payments**: Apruve enables OroCommerce sellers to receive payment within 24 hours of invoice generation, even when offering credit terms to customers.
 
-OroCommerce integration with Apruve ensures secure and reliable credit transactions between businesses within the platform's B2B credit network. Apruve assumes the credit risk by underwriting all approved orders.
-
-**Seamless Buyer Experience**
-
-The integration of OroCommerce with Apruve makes the checkout process faster and more efficient for customers. The need for manual credit checks and lengthy approval procedures is eliminated, resulting in a smoother buying journey.
-
-**Fast Payments**
-
-Apruve enables OroCommerce sellers to receive payment within 24 hours of invoice generation, even when offering credit terms to customers.
-
-**Invoicing and Payment Management**
-
-Apruve manages invoicing and payment processing, making it easier for the OroCommerce sellers to receive payments and track transactions.
+* **Invoicing and Payment Management**: Apruve manages invoicing and payment processing, making it easier for the OroCommerce sellers to receive payments and track transactions.
 
 
 Exchanged General Data

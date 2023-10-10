@@ -12,38 +12,32 @@ Key Mailchimp Features
 
 Here is an overview of the key Mailchimp features that OroCommerce supports:
 
-**Audience Synchronization**
+* **Audience Synchronization:** OroCommerce can synchronize customer data with Mailchimp's audience lists, enabling targeted and personalized marketing campaigns. This ensures that marketing efforts are directed towards the right audience segments, based on criteria such as purchase history, demographics, and user behavior.
 
-OroCommerce can synchronize customer data with Mailchimp's audience lists, enabling targeted and personalized marketing campaigns. This ensures that marketing efforts are directed towards the right audience segments, based on criteria such as purchase history, demographics, and user behavior.
+* **Email Campaign Creation:** Mailchimp offers an intuitive drag-and-drop email builder that allows users to design visually appealing and responsive email campaigns without the need for coding skills.
 
-**Email Campaign Creation**
+* **Automation:** Mailchimp's automation features enable OroCommerce users to set up automated email series or workflows. These can include welcome emails, abandoned cart reminders, product recommendations, and post-purchase follow-ups.
 
-Mailchimp offers an intuitive drag-and-drop email builder that allows users to design visually appealing and responsive email campaigns without the need for coding skills.
-
-**Automation**
-
-Mailchimp's automation features enable OroCommerce users to set up automated email series or workflows. These can include welcome emails, abandoned cart reminders, product recommendations, and post-purchase follow-ups.
-
-**Improved Analytics and Insights**
-
-OroCommerce and Mailchimp integration provides access to comprehensive analytics and reporting tools. Businesses can track the performance of their email campaigns, measure customer engagement (e.g., open rates, click-through rates, conversion rates, and subscriber engagement), and gain valuable insights for their marketing strategies.
+* **Improved Analytics and Insights:** OroCommerce and Mailchimp integration provides access to comprehensive analytics and reporting tools. Businesses can track the performance of their email campaigns, measure customer engagement (e.g., open rates, click-through rates, conversion rates, and subscriber engagement), and gain valuable insights for their marketing strategies.
 
 
 Exchanged Fields
 ----------------
 
-The fields passed from OroCommerce to Mailchimp, and vice versa provide essential information on various marketing-related  information. They typically include:
+The fields passed from OroCommerce to Mailchimp, and vice versa provide essential information on various marketing-related information. They typically include:
 
 **From OroCommerce to Mailchimp:**
 
 .. csv-table::
 
-   "Contact Information","Customer's contact information related, such as email, first and last name, phone number"
+   "Contact Information","Customer's contact information, such as email, first and last name, phone number"
    "Customer Segmentation","Tags or Labels for segmentation purposes"
 
 **From Mailchimp to OroCommerce:**
 
-   "Contact Information","Customer's contact information related, such as email, first and last name, phone number"
+.. csv-table::
+
+   "Contact Information","Customer's contact information, such as email, first and last name, phone number"
    "Customer Segmentation","Tags or Labels for segmentation purposes"
    "Campaign Engagement Data","Information about whether emails were opened by recipients, data on links clicked within emails, and whether recipients took desired actions (e.g., making a purchase) after interacting with an email"
    "Subscribe and Unsubscribe Data","Data on customers who have subscribed or unsubscribed from email communications"

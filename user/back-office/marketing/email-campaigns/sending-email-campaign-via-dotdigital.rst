@@ -148,8 +148,7 @@ Receive Campaign Statistics on the Oro Side
 
 Once you have sent out your email campaign in Dotdigital, information about your email campaign should have been exported to your Oro application.
 
-As soon as the export is complete, your email campaign should appear in **Marketing > Email Campaigns**. By clicking on your recent campaign, you can see subscriber activity statistics, such as the number of clicks, bounces, opens, etc. Numbers in each column for each contact define the number of times an action has been performed, e.g., 2
-opens, 1 click, 1 unsubscribe.
+As soon as the export is complete, your email campaign should appear in **Marketing > Email Campaigns**. By clicking on your recent campaign, you can see subscriber activity statistics, such as the number of clicks, bounces, opens, etc. Numbers in each column for each contact define the number of times an action has been performed, e.g., 2 opens, 1 click, 1 unsubscribe.
 
 These statistics will help you understand the outcome of your campaign and let you filter contacts for the next one.
 

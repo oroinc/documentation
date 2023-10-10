@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _user-guide--sales--seller-registration-requests:
 
 Manage Seller Registration Requests in the Back-Office

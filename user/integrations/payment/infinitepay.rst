@@ -10,41 +10,23 @@ InfinitePay is a comprehensive payment solution designed to offer protection aga
 Key InfinitePay Features
 ------------------------
 
-**Payment Protection**
+* **Payment Protection**: InfinitePay offers 100% failure protection for B2B and B2C online shops, safeguarding against payment defaults. This protection ensures that businesses are covered in case customers fail to make payments.
 
-InfinitePay offers 100% failure protection for B2B and B2C online shops, safeguarding against payment defaults. This protection ensures that businesses are covered in case customers fail to make payments.
+* **Diverse Payment Methods**: InfinitePay supports various payment methods, including purchase on account, direct debit, and installment payments. This flexibility allows OroCommerce to cater to different customer preferences and needs.
 
-**Diverse Payment Methods**
+* **Global Coverage**: InfinitePay provides coverage in over 30 countries, including the USA, Canada, Mexico, most EU countries, the DACH region, and other global markets. This enables businesses to expand their reach and offer secure payments to a wider customer base.
 
-InfinitePay supports various payment methods, including purchase on account, direct debit, and installment payments. This flexibility allows OroCommerce to cater to different customer preferences and needs.
+* **Automated Processes**: InfinitePay offers automated order-to-cash processes, including order confirmations, invoice dispatch, payment processing, and dunning. These processes streamline operations and reduce manual administrative tasks.
 
-**Global Coverage**
+* **Risk Mitigation**: InfinitePay's risk control and protection against non-payment reduce the financial risk for businesses. This is especially crucial for larger transactions or long payment cycles.
 
-InfinitePay provides coverage in over 30 countries, including the USA, Canada, Mexico, most EU countries, the DACH region, and other global markets. This enables businesses to expand their reach and offer secure payments to a wider customer base.
+* **Real-Time Customer Identification**: InfinitePay facilitates real-time identification of customers, enhancing the efficiency of the purchase process and customer experience.
 
-**Automated Processes**
+* **Customization and Flexibility**: InfinitePay offers flexibility in terms of the number of installments, payment terms, and collection processes. This customization caters to individual business needs.
 
-InfinitePay offers automated order-to-cash processes, including order confirmations, invoice dispatch, payment processing, and dunning. These processes streamline operations and reduce manual administrative tasks.
+* **Direct Debit Handling**: InfinitePay's handling of returned direct debits reduces the cost risk for online shops, ensuring smoother financial operations.
 
-**Risk Mitigation**
-
-InfinitePay's risk control and protection against non-payment reduce the financial risk for businesses. This is especially crucial for larger transactions or long payment cycles.
-
-**Real-Time Customer Identification**
-
-InfinitePay facilitates real-time identification of customers, enhancing the efficiency of the purchase process and customer experience.
-
-**Customization and Flexibility**
-
-InfinitePay offers flexibility in terms of the number of installments, payment terms, and collection processes. This customization caters to individual business needs.
-
-**Direct Debit Handling**
-
-InfinitePay's handling of returned direct debits reduces the cost risk for online shops, ensuring smoother financial operations.
-
-**Integrated Debt Collection**
-
-With an in-house debt collection company, InfinitePay offers integrated debt collection services, facilitating efficient recovery of outstanding payments.
+* **Integrated Debt Collection**: With an in-house debt collection company, InfinitePay offers integrated debt collection services, facilitating efficient recovery of outstanding payments.
 
 Exchanged General Data
 ----------------------

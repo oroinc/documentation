@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _configuration--commerce--marketplace--seller-global:
 
 Configure Global Seller Name and Registration Settings

@@ -1,4 +1,4 @@
-:title: OroCommerce and OroMarketplace Concept Guides
+:title: OroCommerce Concept Guides
 
 .. meta::
    :description: Key conceptual use cases and how-to guides
@@ -10,7 +10,7 @@ Concept Guides introduce you to the business logic behind comprehensive Oro appl
 
 Complementary to the how-to approach of the Back-office section of the documentation, Concept Guides give you context and references to other how-to articles in the documentation.
 
-.. note:: When browsing documentation, be on the lookout for |MarketplaceIcon| and |Extension| icons on the top right. They indicate whether described features and concepts are available in Oro Marketplace, and whether they require extension installation.
+.. note:: When browsing documentation, be on the lookout for the |Extension| icon on the top right. It indicates whether the features require extension installation.
 
 .. admonition:: Business Tip
 
