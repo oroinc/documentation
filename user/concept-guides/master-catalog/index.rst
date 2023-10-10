@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _concept-guide-master-catalog:
 
 Master Catalog Management Concept Guide

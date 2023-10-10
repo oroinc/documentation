@@ -1,9 +1,6 @@
 .. _dev--extend--how-to-publish-extension-on-the-marketplace:
 .. _dev-cookbook-framework-how-to-add-extension-to-marketplace:
 
-.. index::
-    single: Marketplace; Add an Extension
-
 Add an Extension to Oro Extensions Store
 ========================================
 

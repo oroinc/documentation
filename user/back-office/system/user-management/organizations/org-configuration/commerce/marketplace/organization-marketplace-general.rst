@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _configuration--commerce--marketplace--seller-organization:
 
 Configure Marketplace Settings per Organization

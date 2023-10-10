@@ -9,6 +9,7 @@ Below is the list of platforms OroCommerce integrates with:
 
 * :ref:`HubSpot <integrations-marketing-hubspot>`
 * :ref:`Mailchimp <integrations-marketing-mailchimp>`
+* :ref:`Dotdigital <integrations-marketing-dotdigital>`
 
 
 .. toctree::
@@ -16,3 +17,4 @@ Below is the list of platforms OroCommerce integrates with:
 
    HubSpot <hubspot>
    Mailchimp <mailchimp>
+   Dotdigital <dotdigital>
