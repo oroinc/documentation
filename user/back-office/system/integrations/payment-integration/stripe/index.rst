@@ -7,6 +7,12 @@ Manage Stripe Payment Service in the Back-Office
 
 Stripe is a payment service provider that helps accept online payments from customers in the OroCommerce storefront. It supports order splitting, enabling you to capture, cancel, or refund (fully or partially) payments for each sub-order separately. Stripe also provides a solution to identify potential fraudulent activity and prevent placement of fraudulent orders. 
 
+.. note::
+    See a short demo on |how to configure integration with Stripe| or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CUjmniejCQU?si=xuUwGKosDUQbsgRZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Integration Prerequisites
 -------------------------
