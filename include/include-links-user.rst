@@ -839,7 +839,7 @@ Links (User)
 
 .. |Download the .json file (GA4)1| raw:: html
 
-   <a href="http://academy.oroinc.com/wp-content/uploads/sites/21/2023/09/oroGa4Container-14-09-23.zip" target="_blank">Download the .json file</a>
+   <a href="https://academy.oroinc.com/wp-content/uploads/sites/21/2023/09/oroGa4Container-14-09-23.zip" target="_blank">Download the .json file</a>
 
 
 .. |Google Analytics 4 Event| raw:: html
