@@ -52,5 +52,6 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
    ERP <erp/index>
    Marketing <marketing/index>
    PIM <PIM/index>
-   CRM <crm/index>  
+   CRM <crm/index>
+   Customer Support <customer-support/index>
    More <misc/index>

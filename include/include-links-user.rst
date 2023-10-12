@@ -906,3 +906,6 @@ Links (User)
 
    <a href="https://extensions.oroinc.com/orocommerce/extension/salesforce-oro-integration/" target="_blank">Salesforce Oro Integration extension</a>
 
+.. |how to configure integration with Stripe| raw:: html
+
+   <a href="https://www.youtube.com/watch?v=CUjmniejCQU" target="_blank">how to configure integration with Stripe</a>
