@@ -18,7 +18,7 @@ Environment Setup
 
    .. code-block:: bash
 
-      brew cask install docker
+      brew install --cask docker
       open /Applications/Docker.app
 
 3. Install PHP 7.4, Composer, Node.js 14 and Docker Compose:
