@@ -9,11 +9,9 @@ Below is a list of CRM solutions OroCommerce integrates with:
 
 * :ref:`OroCRM <integrations-orocrm>`
 * :ref:`Salesforce <integrations-crm-salesforce>`
-* :ref:`Zendesk <integrations-crm-zendesk>`
 
 .. toctree::
    :hidden:
 
    OroCRM <orocrm>
    Salesforce <salesforce>
-   Zendesk <zendesk>

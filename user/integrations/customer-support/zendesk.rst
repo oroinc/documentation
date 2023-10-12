@@ -1,4 +1,4 @@
-.. _integrations-crm-zendesk:
+.. _integrations-customer-support-zendesk:
 
 Integration with Zendesk
 ========================
