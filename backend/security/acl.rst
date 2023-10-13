@@ -482,8 +482,6 @@ Restricting Access to Non-Entity Resources
 
 Sometimes, you only want to allow or deny access to a specific part of your application without protecting an entity. To achieve this, use a particular ``action`` type for an ACL:
 
-.. configuration-block::
-
     .. code-block:: php-annotations
 
         // ...
