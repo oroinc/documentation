@@ -6051,3 +6051,7 @@ Links (Dev)
 .. |OroCloud| raw:: html
 
    <a href="https://doc.oroinc.com/cloud/" target="_blank">OroCloud</a>
+
+.. |DateTime| raw:: html
+
+   <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>
