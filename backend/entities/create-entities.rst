@@ -319,9 +319,7 @@ Organizing migrations is relatively simple if you follow the basic conventions b
 
 .. note::
 
-    The names of the schema version directories are compared to each other using PHP's
-    :phpfunction:`version_compare` function. Therefore, it is a good practice to name them  following the ``v1_0``,
-    ``v2_0`` pattern.
+    The names of the schema version directories are compared to each other using PHP's |version_compare| function. Therefore, it is a good practice to name them  following the ``v1_0``, ``v2_0`` pattern.
 
 When migration to a particular schema version is performed, all migration classes from the corresponding directory are evaluated. Then,  the contents of their ``up()`` method is executed. A class is treated as a migration class when it implements the ``Oro\Bundle\MigrationBundle\Migration\Migration`` interface.
 
@@ -367,3 +365,6 @@ This command checks for present migration versions that are currently not reflec
     You can use the ``--dry-run`` option to see what is going to be executed and you can use the
     ``--bundles`` option to perform migrations only for a subset of all available bundles (use
     ``--exclude`` for a bundle blacklist instead). You can also get more information about each query with the ``--show-queries`` option.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

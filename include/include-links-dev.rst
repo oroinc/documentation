@@ -5963,3 +5963,11 @@ Links (Dev)
 .. |SystemAwareResolver| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/4.2/src/Oro/Component/Config/Resolver/SystemAwareResolver.php" target="_blank">SystemAwareResolver</a>
+
+.. |version_compare| raw:: html
+
+   <a href="https://www.php.net/manual/en/function.version-compare.php" target="_blank">version_compare</a>
+
+.. |DateTime| raw:: html
+
+   <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>
