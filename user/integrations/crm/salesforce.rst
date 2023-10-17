@@ -1,4 +1,4 @@
-.. _integrations-salesforce:
+.. _integrations-crm-salesforce:
 
 Integration with Salesforce
 ===========================

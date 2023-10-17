@@ -359,8 +359,11 @@ user/back-office/customers/customers/customer-settings /user/back-office/custome
 user/back-office/system/integrations/gtm-ga4 /user/back-office/system/integrations/gtm
 user/back-office/system/configuration/system/integrations/microsoft-settings/oroconnector-outlook /user/back-office/activities/emails/oroconnector-microsoft
 user/back-office/system/configuration/system/integrations/google-settings/oroconnector-gmail /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-google
-user/back-office/activities/emails/oroconnector-gmail/ /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-google
-user/back-office/activities/emails/oroconnector-outlook/ /user/back-office/activities/emails/oroconnector-microsoft
-orocrm-2.6-2.3-2.0-1.12.rst/ /community/release-process
+user/back-office/activities/emails/oroconnector-gmail /user/back-office/system/configuration/system/integrations/google-settings/oroconnector-google
+user/back-office/activities/emails/oroconnector-outlook /user/back-office/activities/emails/oroconnector-microsoft
+user/integrations/salesforce /user/integrations/crm/salesforce
+orocrm-2.6-2.3-2.0-1.12 /community/release-process
 backend/extend-crm/how-to-co-install-applications /backend/extend-commerce/how-to-co-install-applications
 backend/extend-crm/index /backend/extend-commerce/how-to-co-install-applications
+user/integrations/gs1 /user/integrations/misc/gs1
+user/integrations/crm/zendesk /user/integrations/customer-support/zendesk

@@ -40,7 +40,7 @@ The connector's menu offers the following actions:
    "**About**","Read more information about the connector."
    "**Disconnect**","End the connection with the connector."
    "**Refresh**","Update the connector."
-   "**Manage Add-on**","Access the connector's settings. This option is only available to the organization's administrator who installed the connector."
+   "**Manage Add-in**","Access the connector's settings. This option is only available to the organization's administrator who installed the connector."
 
 .. image:: /user/img/activities/connector-outlook/addon-menu.png
    :align: center

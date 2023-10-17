@@ -8,9 +8,13 @@ Marketing plays an important role in the success of B2B businesses, they provide
 Below is the list of platforms OroCommerce integrates with:
 
 * :ref:`HubSpot <integrations-marketing-hubspot>`
+* :ref:`Mailchimp <integrations-marketing-mailchimp>`
+* :ref:`Dotdigital <integrations-marketing-dotdigital>`
 
 
 .. toctree::
    :hidden:
 
    HubSpot <hubspot>
+   Mailchimp <mailchimp>
+   Dotdigital <dotdigital>

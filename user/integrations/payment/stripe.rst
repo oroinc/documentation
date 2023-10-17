@@ -12,17 +12,11 @@ Key Stripe Features
 
 Here is an overview of the key Stripe features that OroCommerce supports:
 
-**Stripe Payment Support**:
+* **Stripe Payment Support**: Stripe is a comprehensive payment solution that allows you to accept payments directly on your website. It supports a wide range of payment methods, including major credit cards, digital wallets like Apple Pay and Google Pay, and localized payment methods across different countries. The integration ensures a seamless checkout experience, enabling customers to enter their payment information directly on your OroCommerce website without being redirected to an external payment page.
 
-Stripe is a comprehensive payment solution that allows you to accept payments directly on your website. It supports a wide range of payment methods, including major credit cards, digital wallets like Apple Pay and Google Pay, and localized payment methods across different countries. The integration ensures a seamless checkout experience, enabling customers to enter their payment information directly on your OroCommerce website without being redirected to an external payment page.
+* **Stripe Connect**: Stripe Connect is a flexible platform that enables businesses to create and manage multi-vendor transactions, making it an ideal solution for the OroCommerce marketplace scenarios. The integration helps facilitate payments between buyers and sellers, splitting and distributing the payments among multiple connected accounts.
 
-**Stripe Connect**:
-
-Stripe Connect is a flexible platform that enables businesses to create and manage multi-vendor transactions, making it an ideal solution for the OroCommerce marketplace scenarios. The integration helps facilitate payments between buyers and sellers, splitting and distributing the payments among multiple connected accounts.
-
-**Stripe Radar**:
-
-Stripe Radar is a machine learning-based system that helps identify and prevent fraudulent activities in real time. By integrating Stripe Radar into OroCommerce, you can leverage its powerful fraud detection capabilities to protect your business from fraudulent activities.
+* **Stripe Radar**: Stripe Radar is a machine learning-based system that helps identify and prevent fraudulent activities in real time. By integrating Stripe Radar into OroCommerce, you can leverage its powerful fraud detection capabilities to protect your business from fraudulent activities.
 
 To ensure that Stripe can collect and analyze data from various customer interactions throughout their browsing and purchasing journey (e.g., the time spent on pages, mouse movements, and the number of times they interact with certain elements), you must select the **User Monitoring** checkbox when configuring the Stripe integration. It allows Stripe to load the Stripe.js script on all storefront pages of your OroCommerce website, which collects the data seamlessly in the background without affecting the customer's experience.
 

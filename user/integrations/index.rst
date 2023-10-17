@@ -1,7 +1,7 @@
-:title: OroCommerce and OroMarketplace Integrations Documentation
+:title: OroCommerce Integrations Documentation
 
 .. meta::
-   :description: Integrations documentation for the Oro application and OroMarketplace users
+   :description: Integrations documentation for the Oro application users
 
 Integrations
 ============
@@ -52,5 +52,6 @@ Whether leveraging pre-built integrations or crafting custom ones, Oro offers a 
    ERP <erp/index>
    Marketing <marketing/index>
    PIM <PIM/index>
-   Salesforce <salesforce>
-   GS1 <gs1>
+   CRM <crm/index>
+   Customer Support <customer-support/index>
+   More <misc/index>
