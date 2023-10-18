@@ -437,7 +437,7 @@ Browse class *Oro\\Bundle\\WorkflowBundle\\Model\\AttributeAssembler* for more d
                 options:
                     class: Oro\Bundle\AccountBundle\Entity\Account
             send_email:
-                type: checkbox
+                type: boolean
                 options:
                     virtual: true
             new_company_name:
@@ -460,13 +460,13 @@ You can enable a user to modify attributes of the record during transitions. To 
         phone_call:
             # ...
             attributes:
-                    phone_call:                             # The workflow attribute.
+                phone_call:                             # The workflow attribute.
                     type: entity
                     options:
                         class: Acme\Bundle\DemoBundle\Entity\PhoneCall
-                    call_timeout:                           # The workflow attribute.
+                call_timeout:                           # The workflow attribute.
                     type: integer
-                    call_successful:                        # The workflow attribute.
+                call_successful:                        # The workflow attribute.
                     type: boolean
                 conversation_successful:
                     type: boolean
