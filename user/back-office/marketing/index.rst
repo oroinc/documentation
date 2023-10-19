@@ -4,49 +4,57 @@
    :description: Marketing campaigns, promotions, and web catalog management guides for the Oro application back-office users
 
 .. _user-guide-marketing:
+.. _user-guide-marketing-automation:
 
 Manage Marketing Activities in the Back-Office
 ==============================================
 
-The Marketing Menu in the Oro application provides access tools for managing the following marketing activities:
+In Oro applications, you can manage, perform, and track the results of your marketing activities, like email campaigns and website activities tracking.
 
-* :ref:`Marketing lists <user-guide-marketing-lists>`
-* :ref:`Email Campaigns <user-guide-email-campaigns>`
-* :ref:`Campaign <user-guide-marketing-campaigns>`
-* :ref:`Promotions <user-guide--marketing--promotions>`
-* :ref:`Coupons <user-guide--marketing--promotions--coupons>`
-* :ref:`Tracking Websites <user-guide-marketing-tracking>`
-* :ref:`Web catalog <user-guide--web-catalog-create>`
-* :ref:`Landing page <user-guide--landing-pages>`
-* :ref:`Content Blocks <user-guide--landing-pages--marketing--content-blocks>`
-* :ref:`Customer Login Pages <customer-login-pages>`
-* :ref:`Content Widgets <user-guide--landing-pages--marketing--content-widgets>`
-* :ref:`Digital Assets <digital-assets>`
-* :ref:`Search Synonyms <user-guide-search-synonyms>`
-* :ref:`Search Terms <user-guide-search-search-history>`
+You can integrate with the external services (Mailchimp and Dotdigital) and synchronize marketing campaign configuration and results between these services and Oro application.
 
+In Oro application and external systems, you can launch marketing campaigns distributed via email to the custom group of contacts. The custom group is generated as :ref:`marketing list <user-guide-marketing-lists>`.
 
-:ref:`Marketing lists <user-guide-marketing-lists>` are lists of contacts segmented according to conditions that are defined for bulk emailing or telephone outreach. In your Oro application, virtually every entity is available as a marketing list target. For instance, marketing lists can be created based on accounts (primary email of a default contact is used) or, if you are using OroCommerce, from customer users, quotes, orders, and shopping lists.
+Once the marketing efforts get their results, you can monitor the collected marketing information in the context of the customers, leads, and many more perspectives
 
-Marketing lists can be used to synchronize with subscribers lists in :ref:`Mailchimp <user-guide-mc-integration>`, and once the integration is configured, :ref:`send an email campaign via Mailchimp <user-guide-mailchimp-campaign>`.
+.. note:: Enable or disable marketing automation in Oro application via the :ref:`system configuration <marketing-system-configuration>`.
 
-Also, the Oro application supports out-of-the-box integration with :ref:`Dotdigital <user-guide-dm-integration>`, allowing you to map the marketing lists to address books in Dotdigital, use your address books to :ref:`send an email campaign via Dotdigital <user-guide-dotmailer-campaign>`, and :ref:`manage Dotdigital data fields and mappings <user-guide-dotmailer-data-fields>`.
+Via Oro Application
+-------------------
 
-:ref:`Email Campaigns <user-guide-email-campaigns>` can be generated and sent in your Oro application without the involvement of external marketing automation applications. This means that once you have defined the rules for a :ref:`marketing list <user-guide-marketing-lists>` generation and have created an :ref:`email template <user-guide-email-template>`, you can easily set up an email campaign within which all the contacts on the list will receive personalized emails in compliance with the campaign. You can then collect statistics for such campaigns and :ref:`create reports <user-guide-reports>`.
+In Oro application, you can use the following marketing tools:
 
-:ref:`Campaign <user-guide-marketing-campaigns>` records in the Oro application are used to define general details of the marketing activity and monitor its flow and results. You can include any number of email campaigns and :ref:`tracking website records <user-guide-marketing-tracking>` into one marketing campaign and get the complete picture to evaluate the campaign efficiency.
+* **Marketing Lists** --- Group email data into a target :ref:`marketing list <user-guide-marketing-lists>`. It may be automatically generated using flexible filters and may contain any record with an email information, like leads or customer users.
+* **Marketing Campaign** --- Track statistics of the marketing efforts related to the same :ref:`marketing campaign <user-guide-marketing-campaigns>`.
+* **Email Campaigns** --- Schedule or send an email campaign that uses a marketing list as a target audience and may optionally be related to the existing marketing campaign and monitor the results.
+* **Website Tracking** --- Generate a javascript :ref:`tracking code <user-guide-marketing-tracking>` that may be embedded in your or third-party websites to track users activity that brings valuable insight into your customer needs and your marketing efforts.
 
-:ref:`Promotions <user-guide--marketing--promotions>` are the part of marketing communication in your Oro application. In this section, you will learn how to create promotions to enable sellers to apply various discounts to their orders, generate personalized discount :ref:`coupons <user-guide--marketing--promotions--coupons>`, and build a strategic schedule for promotions.
+.. note:: Configure tracking settings in Oro application via the :ref:`system configuration <admin-configuration-tracking>`.
 
-With the Oro :ref:`Tracking Websites <user-guide-marketing-tracking>` functionality, you can learn how many users have visited your website from links within a specific marketing campaign and what these users' actions at the site were.
+Via Dotdigital
+--------------
 
-:ref:`Web catalog <user-guide--web-catalog-create>` helps present the products in a personalized way that fits your target audience and improves their purchase experience. Keep in mind that if no web catalog is enabled for your website, the structure of the :ref:`master catalog <user-guide--master-catalog>` will be used in the storefront.
+.. include:: /user/back-office/system/integrations/dotdigital/index.rst
+   :start-after: begin_include
+   :end-before: finish_include
 
-:ref:`Landing page <user-guide--landing-pages>` is a section of a website accessible by clicking or being directed from a hyperlink. This is often the first page customers land on when they arrive at the storefront.
+Via Mailchimp
+-------------
 
-:ref:`Content Blocks <user-guide--landing-pages--marketing--content-blocks>` enable you to display generic information on your website by customizing the pages with different content.
+Oro application supports out of the box integration with Mailchimp, allowing you to do the following:
 
-In the storefront, you can also customize the content of :ref:`Customer Login Page <customer-login-pages>`.
+* Map the :ref:`Marketing Lists <user-guide-marketing-lists>` as segments in Mailchimp and keep them synchronized.
+* Use existing segments in Mailchimp and import them to Oro application.
+* Schedule importing statistics of the Mailchimp campaigns into Oro Application.
+
+To use Mailchimp with Oro application, ensure that all the necessary integration steps are complete. See :ref:`Mailchimp Integration <user-guide-mc-integration>` for more information.
+
+After the integration is configured, you can :ref:`Send Email Campaign via Mailchimp <user-guide-mailchimp-campaign>`.
+
+.. automation_finish
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 .. toctree::
    :maxdepth: 2

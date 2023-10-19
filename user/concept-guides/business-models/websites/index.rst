@@ -1,7 +1,7 @@
 .. _website-management-concept-guide:
 
-Multi-Website Configuration Concept Guide
-=========================================
+Multiple Websites Concept Guide
+===============================
 
 .. important:: Multi-website management is available for the Enterprise edition only.
 
