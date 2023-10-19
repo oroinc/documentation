@@ -258,11 +258,17 @@ or
 
     php bin/console oro:api:metadata:dump users
 
-To display the entity metadata used for a particular action, use the ``--action`` option (please note that the default value for this option is ``get``):
+To display the entity metadata used for a particular action, use the ``--action`` option (please note that the default value for this option is ``get_list``):
 
 .. code-block:: none
 
     php bin/console oro:api:metadata:dump users --action=update
+
+You can also use the ``--parentAction`` and the ``--action`` options together to display the entity metadata used for an action executed as part of another action. For example, to display the entity metadata used for the ``get`` action executed as part of the ``create`` action, use the following command:
+
+.. code-block:: none
+
+    php bin/console oro:api:metadata:dump users --action=get --parentAction=create
 
 To display the entity metadata used for a particular request type, use the ``--request-type`` option:
 
