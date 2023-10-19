@@ -1,7 +1,7 @@
 .. _concept-guide-oro-marketplace:
 
-OroMarketplace Concept Guide
-============================
+Marketplace Concept Guide
+=========================
 
 OroMarketplace is a powerful open-source digital B2B marketplace solution for businesses that want to build a marketplace for their own industry and expand by adding additional sellers or suppliers. Unlike most marketplace platforms, it is specifically designed for the B2B sector, enabling distributors, retailers, brands, or manufacturers to sell physical goods and services to other businesses. OroMarketplace is based on OroCommerce Enterprise, which allows for handling all storefront and back-office components and automating B2B processes using various workflows.
 
