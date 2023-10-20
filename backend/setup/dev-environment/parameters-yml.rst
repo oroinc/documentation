@@ -17,6 +17,8 @@ Infrastructure-related environment variable defaults are stored in the *.env-app
 * The ``ORO_JPEGOPTIM_BINARY`` path to the |JpegOptimPostProcessor| library.
 * The ``ORO_PNGQUANT_BINARY`` path to the |PngquantPostProcessor| library.
 * The ``ORO_MAINTENANCE_LOCK_FILE_PATH`` path to the maintenance lock file in the system.
+* The ``ORO_OAUTH_PUBLIC_KEY_PATH`` path to the OAuth public key.
+* The ``ORO_OAUTH_PRIVATE_KEY_PATH`` path to the OAuth private key.
 
 .. _book-installation-github-clone-configuration-params--default:
 
@@ -46,6 +48,8 @@ Default configuration options for the Oro application are defined in the ``confi
        liip_imagine.pngquant.binary: '%env(ORO_PNGQUANT_BINARY)%'
        tracking_data_folder: '%env(ORO_TRACKING_DATA_FOLDER)%'
        maintenance_lock_file_path: '%env(resolve:ORO_MAINTENANCE_LOCK_FILE_PATH)%'
+       oauth2_public_key: '%env(resolve:ORO_OAUTH_PUBLIC_KEY_PATH)%'
+       oauth2_private_key: '%env(resolve:ORO_OAUTH_PRIVATE_KEY_PATH)%'
 
        env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
        env(ORO_DB_URL): 'postgresql://root@127.0.0.1/b2b_dev'
@@ -68,6 +72,8 @@ Default configuration options for the Oro application are defined in the ``confi
        env(ORO_REDIS_LAYOUT_DSN): '%env(ORO_REDIS_URL)%/3'
        env(ORO_TRACKING_DATA_FOLDER): null
        env(ORO_MAINTENANCE_LOCK_FILE_PATH): '%kernel.project_dir%/var/maintenance/maintenance_lock'
+       env(ORO_OAUTH_PUBLIC_KEY_PATH): '%kernel.project_dir%/var/oauth_public.key'
+       env(ORO_OAUTH_PRIVATE_KEY_PATH): '%kernel.project_dir%/var/oauth_private.key'
 
 Sample Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
