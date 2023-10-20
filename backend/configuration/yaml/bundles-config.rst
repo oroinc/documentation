@@ -466,10 +466,28 @@ The default configuration for extension with alias "oro_customer":
 .. code-block:: yaml
 
     oro_customer:
+        reset:
+            ttl:                  86400
         visitor_session:
             cookie_secure:        auto # One of true; false; "auto"
             cookie_httponly:      true
             cookie_samesite:      lax # One of null; "lax"; "strict"; "none"
+        login_sources:
+
+            # Prototype
+            name:
+                label:                ~
+                code:                 ~
+
+        # The configuration of API for the storefront.
+        frontend_api:
+
+            # The list of entities that should be available for non-authenticated visitors.
+            non_authenticated_visitors_api_resources:
+
+                # Example:
+                - Acme\AppBundle\Entity\Product
+
 
 oro_email
 _________

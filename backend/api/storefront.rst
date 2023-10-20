@@ -21,6 +21,15 @@ All approaches described in :ref:`API Developer Guide <web-api>` are applicable 
 - for API functional tests, use ``Oro\Bundle\FrontendBundle\Tests\Functional\Api\FrontendRestJsonApiTestCase`` instead of
   ``Oro\Bundle\ApiBundle\Tests\Functional\RestJsonApiTestCase``. By default, all API requests are executed by an anonymous user. To execute them by the customer user with administrative permissions, use the  ``Oro\Bundle\CustomerBundle\Tests\Functional\Api\Frontend\DataFixtures\LoadAdminCustomerUserData`` data fixture and add the ``$this->loadFixtures([LoadAdminCustomerUserData::class]);`` in ``setUp()`` method of your test class. To execute the test by the customer user with buyer permissions, you can use the ``Oro\Bundle\CustomerBundle\Tests\Functional\Api\Frontend\DataFixtures\LoadBuyerCustomerUserData`` data fixture.
 
+When :ref:`Public Storefront API <admin-configuration-application>` is enabled some API resources can be used by non-authenticated visitors. The list of such resources is configured by developers by ``oro_customer / frontend_api / non_authenticated_visitors_api_resources`` in `Resources/config/oro/app.yml`, for example:
+
+.. code-block:: yaml
+
+    oro_customer:
+        frontend_api:
+            non_authenticated_visitors_api_resources:
+                - Acme\Bundle\DemoBundle\Entity\SomeEntity
+
 Additional notes:
 
 - You can use the |SetWebsite| processor to assign an entity to the current website.

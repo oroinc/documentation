@@ -84,7 +84,13 @@ or
 
     php bin/console oro:api:dump users --sub-resources
 
-To get all entities that are not accessible via the API, see the ``--not-accessible`` option:
+To get all entities that are accessible via the API, use the ``--accessible`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:dump --accessible
+
+To get all entities that are not accessible via the API, use the ``--not-accessible`` option:
 
 .. code-block:: none
 

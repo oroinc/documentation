@@ -18,11 +18,13 @@ In this section, you can configure the storefront Web API feature availability f
 
 4. Clear the **Use Organization** checkbox to change the organization-wide setting.
 
-5. In the **Web API** section, select whether to enable or disable the storefront API feature for your application by setting the **Enable Storefront API** option.
+5. In the **Web API** section, select whether to enable or disable the storefront API feature for a website by setting the **Enable Storefront API** option.
 
    .. note:: The back-office API feature can be toggled on the :ref:`global <admin-configuration-application>` and :ref:`organization <admin-configuration-application-org>` levels, while the storefront API configuration is available on three levels - globally, per organization, and per website.
 
-6. Click **Save Settings**.
+6. If the storefront API is enabled, you can select the **Enable Guest Storefront API** option to grant access to some storefront API resources of a website to non-authenticated visitors.
+
+7. Click **Save Settings**.
 
 .. include:: /include/include-images.rst
    :start-after: begin
