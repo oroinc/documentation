@@ -31,6 +31,7 @@ The Getting Started guide explains generic concepts and details of Oro applicati
    User Menu <user-menu/index>
    navigation/index
    information-management/index
+   accessibility/index
 
 
 

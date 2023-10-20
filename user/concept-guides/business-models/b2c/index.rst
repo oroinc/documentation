@@ -1,14 +1,14 @@
 .. _b2c-solution-management-concept-guide:
 
-B2C Websites in OroCommerce Concept Guide
-=========================================
+B2C Website Concept Guide
+=========================
 
 The B2C (business-to-consumer) business model is a marketing strategy that is based on the transactions between a seller (business) and an individual customer (consumer). The B2C e-commerce refers to the online commerce transaction made from a company website with an online catalog.
 
 Most consumers are now familiar with the B2C e-commerce, as it facilitates online shopping, providing the convenience of buying clothes, products, food, electronics, or services through the Internet.
 
-B2C VS B2B: Spot the Difference
--------------------------------
+B2C VS B2B
+----------
 
 The B2B eCommerce, which stands for business-to-business, is primarily focused on selling products or services to other businesses. This process is more complex in terms of negotiations, establishing long-term partnerships, scopes, and cost, as it involves transactions between manufacturers and wholesalers, wholesalers and retailers, and multiple industries, each with different needs and purchasing processes. It goes in contrast with the B2C approach, where buyers usually make spontaneous purchases.
 
