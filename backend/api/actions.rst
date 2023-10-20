@@ -691,6 +691,7 @@ This action has the following processor groups:
     "data_security_check","Checking whether access to the loaded data is granted.","--"
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","--"
+    "normalize_data","Converting the resulting relationship into an array.","--"
     "finalize","Adding the required response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
@@ -729,6 +730,7 @@ This action has the following processor groups:
     "data_security_check","Checking whether access to the loaded data is granted.","--"
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","--"
+    "normalize_data","Converting the resulting relationship into an array.","--"
     "finalize","Adding the required response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
@@ -772,6 +774,7 @@ This action has the following processor groups:
     "data_security_check","Checking whether access to the loaded data is granted.","--"
     "transform_data","Building a Symfony Form and using it to transform and validate the request data.","--"
     "save_data","Persisting an entity.","--"
+    "normalize_data","Converting the resulting relationship into an array.","--"
     "finalize","Adding the required response headers.","--"
     "normalize_result","Building the action result.","The processors from this group are executed even if a processor from previous groups throws an exception. For implementation details, see |NormalizeResultActionProcessor|."
 
