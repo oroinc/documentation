@@ -908,3 +908,8 @@ Links (User)
 .. |how to configure integration with Stripe| raw:: html
 
    <a href="https://www.youtube.com/watch?v=CUjmniejCQU" target="_blank">how to configure integration with Stripe</a>
+
+.. |yaml file of the ProductBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/5.1/src/Oro/Bundle/ProductBundle/Resources/config/oro/app.yml" target="_blank">yaml file of the ProductBundle</a>
+
