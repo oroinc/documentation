@@ -1,10 +1,10 @@
 .. _doc--products--characteristics:
 .. _doc--products--actions--view-list:
 
-Products Grid
-=============
+Product Grid
+============
 
-In this section, you will learn how to control and manage product information displayed in the grid.
+In this section, you will learn how to control and manage product information displayed in the product grid.
 
 In the main menu, navigate to **Products > Products**. The product list opens.
 

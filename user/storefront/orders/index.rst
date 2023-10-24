@@ -25,6 +25,7 @@ After you submit an order, it becomes available in the :ref:`Order History <my-a
 
    Create an Order <create>
    Order via Matrix Form <matrix-form>
+   Order a Kit <kits>
    Re-Order Products <reorder>
 
 .. include:: /include/include-images.rst
