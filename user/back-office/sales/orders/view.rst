@@ -91,7 +91,10 @@ The product information visible by default is the following:
    "**PRICE**", "Agreed price for the individual product unit."
    "**SHIP BY**", "The date before this product must be shipped."
 
-.. For information on configuring visible fields, the number of items per page, etc., see the :ref:`Grids <doc-grids>` topic.
+If an order contains :ref:`product kit(s) <products--products--create-product-kit>`, each individual item will contain a link to its view page in the back-office.
+
+.. image:: /user/img/products/products/kits/kit-in-bo-orders.png
+   :alt: Product kit in the Line Items section of the order view page with links to each item in the kit
 
 **Shipping Information**
 

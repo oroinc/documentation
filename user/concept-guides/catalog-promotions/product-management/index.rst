@@ -46,10 +46,10 @@ All the product components are used when creating simple and configurable produc
    :alt: Product filters in the storefront
    :align: center
 
-Simple vs Configurable Products
--------------------------------
+Simple vs Configurable Products vs Kits
+---------------------------------------
 
-In OroCommerce, products can be of two types, simple and configurable. The product type selected at the first step of product creation in the back-office determines the way product information is used and managed in OroCommerce.
+In OroCommerce, products can be of three types, simple, configurable and kits. The product type selected at the first step of product creation in the back-office determines the way product information is used and managed in OroCommerce.
 
 **Simple products** are physical items that exist in a basic, single variation. Their qualifiers, such as color or size, cannot be modified meaning customers cannot select the same product with slightly different characteristics. Simple products have a unique SKU and serve as ‘building blocks’ for configurable products. You can manage the inventory information and the price for a simple product.
 
@@ -74,6 +74,13 @@ To purchase multiple product variants in one order, use a :ref:`matrix order for
 .. image:: /user/img/concept-guides/products/matrix_popup.png
    :alt: Matrix form in the storefront illustrating variations of a usb drive
    :align: center
+
+A **product kit** is an assortment of products, each with their individual SKUs. Each product in this assortment bundle can be mandatory or optional for the buyers to buy in order to proceed though the checkout. An example of a product kit would be a lamp with a selection of optional accessories or services for it, such as spare bulbs of different wattage or warranty.
+
+.. image:: /user/img/products/products/kits/kit-front.png
+   :alt: Product kits in the storefront
+
+.. warning:: Please be aware that the Product Kits feature is still in development and some functionality is incomplete.
 
 Products in a Multi-Org Application
 -----------------------------------
@@ -138,7 +145,7 @@ As you can see, with OroCommerce you can create an appealing and functional prod
 **Related Articles**
 
 * :ref:`Products User Guide <doc--products>`
-* :ref:`Product-Related Settings in System Configuration <configuration--products>`.
+* :ref:`Product-Related Settings in System Configuration <configuration--products>`
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin

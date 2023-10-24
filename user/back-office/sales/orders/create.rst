@@ -14,7 +14,7 @@ Create an Order from Scratch
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ztwuz7NX1Y4" frameborder="0" allowfullscreen></iframe>
 
-To create a new order from scratch:
+To create a new order from the back-office:
 
 1. Navigate to **Sales > Orders** in the main menu.
 2. Click **Create Order** at the top right of the page.
