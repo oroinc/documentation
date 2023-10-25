@@ -43,24 +43,6 @@ You can update the product watermark settings, enable image preview and configur
      .. image:: /user/img/system/websites/web_configuration/ImagePreviewDisabledWebsite.png
         :class: with-border
 
-8. When **Popup Gallery on Product View** is enabled, image gallery in the storefront takes the following form:
-
-   .. image:: /user/img/system/websites/web_configuration/ImageGalleryWebsiteEnabled1.png
-      :class: with-border
-
-   By clicking on the image, the pop up gallery is displayed in the middle of the screen:
-
-   .. image:: /user/img/system/websites/web_configuration/ImageGalleryWebsiteEnabled2.png
-      :class: with-border
-
-9. When **Popup Gallery on Product View** is disabled, the image gallery takes the form of an inline view:
-
-   .. image::/img/system/websites/web_configuration/ImageGalleryWebsiteDisabled.png
-      :class: with-border
-
-   Flick through the pictures in the gallery by pressing < or > arrows without leaving the product page.
-
-
 .. finish
 
 .. include:: /include/include-images.rst

@@ -53,31 +53,7 @@ To configure the product image settings globally:
 
 .. _sys--commerce--product--product-images--gallery-slider-global:
 
-7. In the **Image Gallery Options** section, choose whether to use popup or inline view for the image gallery in the storefront.
-
-   .. image:: /user/img/system/config_commerce/product/ImageGallery.png
-
-   When **Popup Gallery on Product View** is enabled, image gallery in the storefront will take the following form:
-
-   .. image:: /user/img/system/config_commerce/product/ImageGalleryEnabled.png
-      :alt: Illustration of the Popup Gallery on Product View option in the storefront
-
-   By clicking on the image, the pop up gallery will be displayed in the middle of the screen:
-
-   .. image:: /user/img/system/config_commerce/product/ImageGalleryEnabled2.png
-      :class: with-border
-      :alt: Displaying the popup gallery functionality
-
-   When **Popup Gallery on Product View** is disabled, the image gallery will take the form of an inline view:
-
-   .. image:: /user/img/system/config_commerce/product/ImageGalleryDisabled.png
-      :class: with-border
-      :alt: Displaying the popup gallery functionality if the feature is disabled
-
-   Flick through the pictures in the gallery by pressing < or > arrows without leaving the product page.
-
-
-8. Click **Save Settings**.
+7. Click **Save Settings**.
 
 
 
