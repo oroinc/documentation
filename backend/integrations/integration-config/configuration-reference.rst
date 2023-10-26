@@ -10,7 +10,7 @@ Channel Type Definition
 **Channel** - an instance of the configured channel type with enabled connectors.
 
 The responsibility of a **channel** is to split transport/connectors into groups by a third party application type.
-To define you own channel type, create a class that implements `Oro\\Bundle\\IntegrationBundle\\Provider\\ChannelInterface` and then register it as a service with the `oro_integration.channel` tag with a unique `type` key.
+To define you own channel type, create a class that implements ``Oro\Bundle\IntegrationBundle\Provider\ChannelInterface`` and then register it as a service with the ``oro_integration.channel`` tag with a unique ``type`` key.
 
 **Example**
 
@@ -22,7 +22,7 @@ To define you own channel type, create a class that implements `Oro\\Bundle\\Int
             - { name: oro_integration.channel, type: presta_shop }
 
 The integration type can also bring an icon that will be shown in the type selector. For this purposes, the type class should implement
-`Oro\\Bundle\\IntegrationBundle\\Provider\\IconAwareIntegrationInterface` and method `getIcon()` should return a valid path to the image
+``Oro\Bundle\IntegrationBundle\Provider\IconAwareIntegrationInterface`` and method ``getIcon()`` should return a valid path to the image
 for Symfony assets helper.
 
 Transport Definition
@@ -31,7 +31,7 @@ Transport Definition
 The responsibility of **transport** is providing communication between the connector and the channel, it should perform read/write operations to the third
 party systems.
 
-To define you own transport, create a class that implements `Oro\\Bundle\\IntegrationBundle\\Provider\\TransportInterface` and register it as a service with the `oro_integration.transport` tag that contains a unique `type` key and a `channel_type` key that shows what channel type it can be used for.
+To define you own transport, create a class that implements ``Oro\Bundle\IntegrationBundle\Provider\TransportInterface`` and register it as a service with the ``oro_integration.transport`` tag that contains a unique ``type`` key and a ``channel_type`` key that shows what channel type it can be used for.
 
 **Example**
 
@@ -47,7 +47,7 @@ Connector Definition
 
 **Channel connector** is responsible for bringing data in and defining compatible channel types.
 
-To define you own connector, create a class that implements `Oro\\Bundle\\IntegrationBundle\\Provider\\ConnectorInterface` and register it as a service with the `oro_integration.connector` tag that contains a `type` key (unique for the channel) and a `channel_type` key that shows what channel type it can be used for.
+To define you own connector, create a class that implements ``Oro\Bundle\IntegrationBundle\Provider\ConnectorInterface`` and register it as a service with the ``oro_integration.connector`` tag that contains a ``type`` key (unique for the channel) and a ``channel_type`` key that shows what channel type it can be used for.
 
 **Example**
 

@@ -4,7 +4,7 @@ Gaufrette
 =========
 
 The ImportExport bundle uses |Gaufrette| for the file storage.
-The Gaufrette configuration is stored in `Resources/config/oro/app.yml`.
+The Gaufrette configuration is stored in ``Resources/config/oro/app.yml``.
 
 By default, the ImportExport bundle configured to use the private :ref:`File Storage <backend-file-storage>`.
 
@@ -16,7 +16,6 @@ This configuration allows to use Amazon S3 cloud service for the importing and e
 **Example**
 
 .. code-block:: php
-
 
     services:
         aws_s3.client:
