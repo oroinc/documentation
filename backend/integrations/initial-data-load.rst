@@ -3,7 +3,7 @@
 Initial Data Loading
 ====================
 
-Initial data loading for Oro applications often involves populating your application's database with predefined data. This can be done using SQL queries and data fixtures. It's a good practice to store your fixtures and SQL scripts in version control systems (e.g., Git) so that you can easily track changes to your initial data and share it with your development team.
+Initial data loading for Oro applications often involves populating your application's database with predefined data. This can be done using SQL queries and data fixtures. It's a good practice to store your fixtures and SQL scripts in version control systems (e.g., Git) to easily track changes to your initial data and share it with your development team.
 
 Loading Initial Data with SQL Queries
 -------------------------------------
@@ -24,7 +24,7 @@ You can execute these SQL queries using a database client or by running SQL scri
 
 Pros:
 
-* SQL queries give you fine-grained control over data insertion, allowing you to specify exact values, relationships, and constraints. This is useful when you need to perform complex data manipulations during the loading process.
+* SQL queries give you fine-grained control over data insertion, allowing you to specify exact values, relationships, and constraints. This is useful when performing complex data manipulations during the loading process.
 
 * SQL queries are highly efficient, making them a valuable tool for quickly loading data from external sources in real-time situations.
 
@@ -32,7 +32,7 @@ Pros:
 
 Cons:
 
-* When inserting data using SQL script, application events will not be triggered, which may result in inconsistent data or incomplete related entities. Therefore, when writing SQL code, developers must comprehend all potential consequences of data manipulation and ensure related entities are correctly filled in or required commands are executed to manually update search indexes or to recalculate related metrics.
+* When inserting data using SQL script, application events will not be triggered, which may result in inconsistent data or incomplete related entities. Therefore, when writing SQL code, you must be aware of all potential consequences of data manipulation and ensure related entities are correctly filled in or required commands are executed to update search indexes manually or to recalculate related metrics.
 
 * Writing and maintaining SQL scripts for data loading can be complex, especially for entities with a large amount of fields and complex relationships.
 
@@ -84,14 +84,14 @@ Pros:
 
 * Fixtures can be reused in multiple environments (e.g., development, testing, production), saving time and effort.
 
-* Fixtures can be version-controlled, making it easy to track changes and collaborate with others.
+* Fixtures can be version-controlled, making tracking changes and collaborating with others easy.
 
 * Data validation is automatically triggered upon loading the fixture, and all system events are subsequently initiated.
 
 Cons:
 
-* Fixtures may be slower to load compared to optimized SQL scripts, particularly when dealing with large datasets.
+* Fixtures may be slower to load than optimized SQL scripts, mainly when dealing with large datasets.
 
-* Developer must be familiar with the data fixtures framework.
+* You must be familiar with the data fixtures framework.
 
-* Sometimes it is necessary to manually trigger events or directly call services to ensure all data is properly filled and processed.
+* Sometimes, triggering events manually or directly calling services is necessary to ensure all data is appropriately filled and processed.

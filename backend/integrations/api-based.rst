@@ -3,14 +3,14 @@
 API-Based Integration
 =====================
 
-:ref:`Oro API <web-api>` provides an extensive range of features for developers to implement varying scenarios. The API serves not only as a communication channel between the frontend and backend but also as a starting point to build integrations with third-party platforms. API-based integration is a flexible and powerful way to connect different applications, allowing them to work together and share data in a controlled and efficient manner.
+:ref:`Oro API <web-api>` provides an extensive range of features for developers to implement varying scenarios. The API serves as a communication channel between the front and backend and as a starting point to build integrations with third-party platforms. API-based integration is a flexible and powerful way to connect different applications, allowing them to work together and share data in a controlled and efficient manner.
 
 When using an API for integration, the developer should evaluate which entities and fields require synchronization, define a conflict resolution strategy, and verify the ability to execute these requirements through the API.
 
 Middleware Pattern Overview
 ---------------------------
 
-When utilizing an API, a third-party system has the option to directly push or pull data through the API. Alternatively, the system can opt for a middleware approach. Middleware is software that serves as an intermediary layer between various applications or components of a software system, facilitating communication and data exchange between them. It plays a vital role in modern software architecture, allowing for interoperability, scalability, and flexibility in distributed systems. It standardizes communication, enabling diverse software components to interact without having to comprehend each other's underlying technologies.
+When utilizing an API, a third-party system can directly push or pull data through the API. Alternatively, the system can opt for a middleware approach. Middleware is software that serves as an intermediary layer between various applications or components of a software system, facilitating communication and data exchange between them. It plays a vital role in modern software architecture, allowing for interoperability, scalability, and flexibility in distributed systems. It standardizes communication, enabling diverse software components to interact without having to comprehend each other's underlying technologies.
 
 .. image:: /img/backend/integrations/api-based/middleware-diagram.svg
    :align: center

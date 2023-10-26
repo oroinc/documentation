@@ -10,7 +10,7 @@ Integrations
 
 Application integration is a layer that allows you to migrate your data or enable communication between two systems.
 
-The topics below provide in-depth information about integrations' concepts and components to help you get started with creating your integrations.
+The topics below provide in-depth information about integrations' concepts and components to help you start creating your integrations.
 
 Choose the model of transferring data to build your integration flow:
 
@@ -26,27 +26,27 @@ Choose the model of transferring data to build your integration flow:
 Comparison of Integration Approaches
 ------------------------------------
 
-The selection of the integration approach relies on the particular needs of the systems being integrated, along with factors including capacity of data, real-time needs, and available technical knowledge.
+The selection of the integration approach relies on the particular needs of the integrated systems, along with factors including capacity of data, real-time needs, and available technical knowledge.
 
 OroIntegrationBundle-Based
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This approach provides means to achieve a seamless integration with third-party systems. This is the only way to integrate payment and shipping methods.
+This approach provides a means to achieve seamless integration with third-party systems. This is the only way to integrate payment and shipping methods.
 
-Native application extensions provide a seamless user experience, as they are integrated directly into the existing application. Integration can be fully configured and controlled within the Oro application's user interface. In many cases, you can achieve real-time interactions and data synchronization. This integration can also handle system events internally and immediately initiate synchronization of data upon occurrence.
+Native application extensions provide a seamless user experience, as they are integrated directly into the existing application. Integration can be fully configured and controlled within the Oro application's user interface. In many cases, you can achieve real-time interactions and data synchronization. This integration can also handle system events internally and immediately initiate data synchronization upon occurrence.
 
-Extending a native application allows you to leverage existing features and functionalities and help you benefit from the security features and user access control.
+Extending a native application allows you to leverage existing features and functionalities and helps you benefit from the security features and user access control.
 
 .. hint:: **Things to Consider**: Developing native extensions can be time-consuming and may require specialized knowledge. Regular updates and maintenance are necessary to keep the extension aligned with the application's updates.
 
 Import/Export-Based
 ^^^^^^^^^^^^^^^^^^^
 
-Import-Export based approach allows to integrate third-party systems based on the files-exchange pattern. It makes integrating systems with different technologies and data formats easier. You do not need to know a lot about each system, only the export format, import format, and data transformation logic. Import-export integration is typically easy to set up and maintain, which makes it accessible to non-Oro developers. You can also schedule imports and exports to automate data transfer.
+The Import/Export-based approach allows you to integrate third-party systems based on the file-exchange pattern. It makes integrating systems with different technologies and data formats easier. You only need to know a little about each system: the export format, import format, and data transformation logic. Import-export integration is typically easy to set up and maintain, which makes it accessible to non-Oro developers. You can also schedule imports and exports to automate data transfer.
 
 .. hint::  **Things to Consider:**
 
-           * Import-Export processes may introduce latency, especially when dealing with large datasets or frequent updates.
+           * Import/Export processes may introduce latency, especially when dealing with large datasets or frequent updates.
            * Data loss or duplication can occur if the import/export process is not managed carefully.
            * Complex data mapping and transformation may require additional tools or custom development.
            * Not all entities have import-export functionality, therefore, custom development will be necessary for those entities.
@@ -56,7 +56,7 @@ Import-Export based approach allows to integrate third-party systems based on th
 API-Based
 ^^^^^^^^^
 
-API-based integrations are comparable to import-export based ones with regards to data exchange, making it simpler to integrate systems with varying technologies and data formats. Extensive knowledge of each system is not necessary, as long as you are familiar with the API standard and data structure.
+API-based integrations are comparable to import/export based ones regarding data exchange, making it more straightforward to integrate systems with varying technologies and data formats. Extensive knowledge of each system is not required as long as you are familiar with the API standard and data structure.
 
 When using an API, developers can choose a middleware approach. This simplifies the integration of different systems, protocols, and technologies by offering a smooth interface for application communication. This helps facilitate inter-application communication and enables the coordination and exchange of data. Middleware can also distribute workloads and horizontally scale applications to handle increased data amounts.
 
