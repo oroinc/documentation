@@ -27,9 +27,26 @@ To configure email settings per organization:
      * *Signature Content* --- Specify the text and formatting of your signature. By default, the email signature body is empty.
      * *Append Signature to Email Body* --- Define whether a signature must be added automatically or manually.
 
-   * **Email Threads** --- **Display Email Conversations As** and **Display Emails In Activity Lists As** define how emails and replies are displayed to the users, as threads or separately. Two options are available: threaded and non-threaded.
+4. Under **Email Threads**, select how to display emails and replies to users, either as threads or separately.
 
-   * **SMTP Settings** --- SMTP protocol allows sending email messages. Click **Check SMTP Connection** once you provide the following details:
+   * **Display Email Conversations As** --- Defines the user's email representation under **My Emails**.
+
+   .. image:: /user/img/system/config_system/threaded_emails.png
+      :alt: A sample of an email with the threaded option selected
+
+   .. image:: /user/img/system/config_system/non-threaded-emails.png
+        :alt: A sample of an email with the non-threaded option selected
+
+
+   * **Display Emails In Activity Lists As** --- Defines how emails and replies are displayed under the **Activity** menu of a selected record.
+
+     .. image:: /user/img/system/config_system/threaded_email_activities.png
+        :alt: A sample of an email with the threaded option selected
+
+     .. image:: /user/img/system/config_system/non_threaded_email_activities.png
+        :alt: A sample of an email with the non-threaded option selected
+
+5. Under **SMTP Settings**, configure the SMTP protocol that allows sending email messages. Click **Check SMTP Connection** once you provide the following details:
 
      * *Host* --- SMTP Host name, e.g. smtp.gmail.com
      * *Port* --- SMTP Port number, e.g. 465
@@ -37,11 +54,11 @@ To configure email settings per organization:
      * *Username* --- Your email address
      * *Password* --- The password for your email address
 
-   * **HTML in templates** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows pasting any HTML code into a template or an email body editor without tag stripping.
+6. Under **HTML in templates**, enable or disable HTML Purifier. Disabling HTML Purifier allows pasting any HTML code into a template or an email body editor without tag stripping.
    
-   * **System Mailboxes** --- A :ref:`system mailbox <admin-configuration-system-mailboxes>` allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**. 
+7. Under **System Mailboxes**, configure a :ref:`system mailbox <admin-configuration-system-mailboxes>` that allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**.
 
-4. Click **Save Settings**.
+8. Click **Save Settings**.
 
 .. _admin-configuration-system-mailboxes-organization:
 

@@ -78,7 +78,24 @@ On the **Email Configuration** page, define options applied to all the emails in
 
   |
 
-3. **Email Threads** --- **Display Email Conversations As** and **Display Emails In Activity Lists As** define how emails and replies are displayed to the users, as threads or separately. Two options are available: threaded and non-threaded.
+3. Under **Email Threads**, select how to display emails and replies to users, either as threads or separately.
+
+   * **Display Email Conversations As** --- Defines the user's email representation under **My Emails**.
+
+   .. image:: /user/img/system/config_system/threaded_emails.png
+      :alt: A sample of an email with the threaded option selected
+
+   .. image:: /user/img/system/config_system/non-threaded-emails.png
+        :alt: A sample of an email with the non-threaded option selected
+
+
+   * **Display Emails In Activity Lists As** --- Defines how emails and replies are displayed under the **Activity** menu of a selected record.
+
+     .. image:: /user/img/system/config_system/threaded_email_activities.png
+        :alt: A sample of an email with the threaded option selected
+
+     .. image:: /user/img/system/config_system/non_threaded_email_activities.png
+        :alt: A sample of an email with the non-threaded option selected
  
 4. **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the dropdown. The settings can be changed to have **Reply all** displayed at the top.
 

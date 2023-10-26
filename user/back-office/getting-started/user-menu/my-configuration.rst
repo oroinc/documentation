@@ -28,194 +28,171 @@ In the Localization section, you can configure the following localization and ma
 .. image:: /user/img/getting_started/user_menu/my_user_config_localization.png
    :alt: Localization options available on the user level
 
-**Location options**
+1. In the **Location Options** section, provide:
 
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Field                      | Description                                                                                                                                                                     |
-+============================+=================================================================================================================================================================================+
-| Primary Location           | Select the country which will be considered the user's primary location. The addresses the user sees on the interface will be formatted according to the rules of this country. |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Format Address Per Country | When this option is selected, addresses will be formatted according to the rules of their countries. Otherwise, the primary location formatting will be applied.                |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Timezone                   | Select the timezone for the user location. All dates and times will be displayed according to the specified timezone.                                                           |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   * **Primary Location** and **Format Address Per Country** --- Define the address formatting to be applied.
 
-**Map options**
+     If *Format Address Per Country* is enabled and the country-specific formatting is enabled for the instance, the address will be displayed in compliance with the rules specified for the country.
+     For example, if the chosen country is China, the address is displayed as follows:
 
-+------------------+----------------------------------------------------------------------------------------+
-| Field            | Description                                                                            |
-+==================+========================================================================================+
-| Temperature Unit | Select the temperature unit. These settings will be applied to the weather on the map. |
-+------------------+----------------------------------------------------------------------------------------+
-| Wind Speed Unit  | Select the wind speed unit.                                                            |
-+------------------+----------------------------------------------------------------------------------------+
+     * *ZIP code*
+     * *Country*
+     * *State, City*
+     * *Street*
+     * *First and Last name*
 
-**Localization settings**
+     whereas, for the US it is:
 
-+----------------------+-------------------------------------------------------------------------------------------+
-| Field                | Description                                                                               |
-+======================+===========================================================================================+
-| Default Localization | The default language of the back-office and storefront UI for the current website.        |
-+----------------------+-------------------------------------------------------------------------------------------+
+     * *First and Last name*
+     * *Street name*
+     * *CITY NAME, STATE CODE, COUNTRY, ZIP code*
+
+     Otherwise, the *Primary Location* formatting is applied.
+
+   * **Timezone** --- Defines the timezone to be applied for all the time settings defined in the instance. If the time-zone is changed, all the time settings (e.g. due dates of :ref:`tasks <doc-activities-tasks>`), time of reminders, etc. change correspondingly. The default value is(UTC -08:00) America/Los Angeles.
+
+2. In the **Map Settings**, select the **Temperature Unit** and **Wind Speed Unit** to display the weather on the map. The default values are Fahrenheit and miles per hour (MPH).
+
+   .. image:: /user/img/system/config_system/localization_map.png
+
+3. In the **Localization Settings**, provide:
+
+   * **Default Localization** --- The default language of the back-office and storefront UI for the current website. The list of available languages depends on the localizations added on the global level.
+
 
 Update Display Settings
 -----------------------
 
 In the Display section, you can configure the following display options:
 
-**User bar**
+1. In the **User Bar** section, configure the setting:
 
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------+
-| Field              | Description                                                                                                                        |
-+====================+====================================================================================================================================+
-| Show Recent Emails | Select this checkbox to display the recent emails on the user bar (they will appear next to the user name).                        |
-|                    |                                                                                                                                    |
-|                    | .. image:: /user/img/getting_started/user_menu/user_configuration_showemailsuserbar.png                                            |
-|                    |    :alt: A recent emails icon displayed on the user bar                                                                            |
-|                    |                                                                                                                                    |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------+
+   * **Show Recent Emails** --- Enable the checkbox to display the recent emails on the user bar. They will appear next to the user name.
 
-**Navigation bar**
+   .. image:: /user/img/system/user_management/user_configuration_showemailsuserbar.png
+      :alt: A recent emails icon displayed on the user bar
 
-+----------+-------------------------------------------------------------------------------------------------------+
-| Field    | Description                                                                                           |
-+==========+=======================================================================================================+
-| Position | Select whether the application's main menu will be positioned at the top of the page or on its left.  |
-+----------+-------------------------------------------------------------------------------------------------------+
+2. In the **Navigation bar** section, configure the setting:
 
-**Data Grid settings**
+   * **Position** --- Select whether the OroCommerce main menu will be positioned at the top of the page or on its left.
 
-+---------------------------+-------------------------------------------------------------------------------------------------------------------+
-| Field                     | Description                                                                                                       |
-+===========================+===================================================================================================================+
-| Items Per Page By Default | Select how many records will appear on one page of record grids.                                                  |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------+
-| Lock Headers In Grids     | Select this checkbox to ensure that headers of a record grid will stay visible while you scroll.                  |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------+
-| Record Pagination         | Select this checkbox to enable the user to navigate to the previous or next grid record from a record view page.  |
-|                           |                                                                                                                   |
-|                           | .. image:: /user/img/getting_started/user_menu/user_configuration_pagination.png                                  |
-|                           |    :alt: A record pagination sample                                                                               |
-|                           |                                                                                                                   |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------+
-| Record Pagination Limit   | Type the maximum number of records the user can navigate from a record view page.                                 |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------+
+3. In the **Data Grid Settings** section, configure the options to display all the record lists (grids) in the back-office:
 
-**Activity lists**
+   * **Items Per Page By Default** --- Defines the number of items displayed on one page of the grid by default (every time you open the grid).
+   * **Lock Headers In Grids** --- Ensures that grid headers stay visible while you scroll.
+   * **Record Pagination** --- Enables the user navigation to the previous or next grid record from a record view page.
+   * **Record Pagination Limit** --- Type the maximum number of records that the user can navigate from a record view page.
 
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Field                     | Description                                                                                                                         |
-+===========================+=====================================================================================================================================+
-| Sort By Field             | Select whether to sort activity records by the date when they were created or by the date when they were updated for the last time. |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Sort Direction            | Select whether to sort records in the ascending or descending direction.                                                            |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Items Per Page By Default | Select how many records will appear on one page of the activity grids.                                                              |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   .. image:: /user/img/getting_started/user_menu/user_configuration_pagination.png
+      :alt: A record pagination sample
 
-**WYSIWYG settings**
+4. In the **Activity Lists** section, configure the options to display :ref:`activities <user-guide-activities>`.
 
-+-----------------------+-----------------------------------------------------------------------------------------------------------+
-| Field                 | Description                                                                                               |
-+=======================+===========================================================================================================+
-| Enable WYSIWYG Editor | Select this checkbox to enable text formatting tools for emails, notes, and comments.                     |
-|                       |                                                                                                           |
-|                       | .. image:: /user/img/getting_started/user_menu/user_configuration_wysiwyg.png                             |
-|                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
-|                       |                                                                                                           |
-+-----------------------+-----------------------------------------------------------------------------------------------------------+
+   * **Sort By Field** --- Select whether to sort activity records by the date when they were created or by the date when they were updated for the last time.
+   * **Sort Direction** --- Select whether to sort records in the ascending or descending direction.
+   * **Items Per Page By Default** --- Select how many records will appear on one page of the activity grids.
 
-For more details on WYSIWYG management, see the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` topic.
 
-**Sidebar settings**
+5. In the **WYSIWYG Settings** section, enable the :ref:`WYSIWYG Editor <getting-started-wysiwyg-editor-field>` setting:
 
-+----------------------+-------------------------------------------------------------------------+
-| Field                | Description                                                             |
-+======================+=========================================================================+
-| Enable Left Sidebar  | Select **Yes** to enable the user to see and utilize the left sidebar.  |
-+----------------------+-------------------------------------------------------------------------+
-| Enable Right Sidebar | Select **Yes** to enable the user to see and utilize the right sidebar. |
-+----------------------+-------------------------------------------------------------------------+
+   * **Enable WYSIWYG Editor** --- Select this checkbox to enable text formatting tools for emails, notes and comments.
 
-**Reports settings**
+   .. image:: /user/img/system/config_system/user_configuration_wysiwyg.png
+      :alt: A formatting tool bar that enables editing a text for emails, notes, and comments
 
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------+
-| Field                               | Description                                                                                                      |
-+=====================================+==================================================================================================================+
-| Display SQL In Reports And Segments | Select this checkbox to enable the user to review the SQL request sent to the system for a report or a segment.  |
-|                                     |                                                                                                                  |
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------+
+6. In the **Sidebar Settings** section, enable or disable the left and/or right sidebar to keep your sticky notes and task lists:
 
-.. image:: /user/img/getting_started/user_menu/user_configuration_showsql.png
-   :alt: A sample of the enabled display SQL field
+   * **Enable Left Sidebar** --- Select **Yes** to enable the user to see and utilize the left sidebar.
+   * **Enable Right Sidebar** --- Select **Yes** to enable the user to see and utilize the right sidebar.
+
+7. In the **Reports Settings** section, configure the following settings:
+
+    * **Display SQL In Reports And Segments** --- Select this checkbox to enable the user to review the SQL request sent to the system for a report or a segment. This way, users can check if a report has been developed correctly.
+
+
+   .. image:: /user/img/system/config_system/user_configuration_showsql.png
+      :alt: A sample of the enabled display SQL field
+
+8. In the **Window Settings** section, configure the following settings:
+
+    * **Quick Create Actions** --- Select the preferred way to display the quick creation buttons form. The buttons with quick actions appear on the customer, customer user, and customer group view pages. When clicked, the form can be displayed in a new browser tab, a popup dialog window, or replace the current page.
+
+    .. image:: /user/img/system/config_system/quick-creation-buttons.png
+       :alt: Displaying quick action buttons on the customer view page
 
 .. finish_display_set_user
 
 Update Email Configuration Options
 ----------------------------------
 
-In the Email Configuration section, you can configure the following email-related options:
+On the **Email Configuration** page, define the email-related options.
 
-**Signature**
+1. **Signature** --- Add a signature to the emails.
 
-+--------------------------------+--------------------------------------------------------------------------+
-| Field                          | Description                                                              |
-+================================+==========================================================================+
-| Signature Content              | Type the signature to be appended to the user's emails.                  |
-+--------------------------------+--------------------------------------------------------------------------+
-| Append Signature To Email Body | Select whether the signature must be appended automatically or manually. |
-+--------------------------------+--------------------------------------------------------------------------+
+   * *Signature Content* --- Specify the text and formatting of your signature. Bby default, the email signature body is empty.
+   * *Append Signature to Email Body* --- Define whether a signature must be added automatically or manually.
 
-**Email synchronization settings**
+2. **Email Synchronization Settings** --- provide details to configure your personal mailbox. Select one of the options below:
 
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Field                             | Description                                                                                                                                                                              |
-+===================================+==========================================================================================================================================================================================+
-| Enable IMAP                       | Select this checkbox to enable the IMAP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that allow you to configure IMAP settings will appear.    |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| IMAP Host                         | Available only when **Enable IMAP** is selected. Enter the hostname of your IMAP server, e.g., imap.gmail.com.                                                                           |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| IMAP Port                         | Available only when **Enable IMAP** is selected. Enter a port that IMAP uses, e.g., 993.                                                                                                 |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Encryption                        | Available only when **Enable IMAP** is selected. Select the type of encryption: **SSL** or **TLS**.                                                                                      |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Enable SMTP                       | Select this checkbox to enable the SMTP synchronization of the user's remote mailbox with their Oro mailbox. Additional fields that allow you to configure SMTP settings will appear.    |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| SMTP Host                         | Available only when **Enable SMTP** is selected. Enter the hostname of your SMTP server, e.g., imap.gmail.com.                                                                           |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| SMTP Port                         | Available only when **Enable SMTP** is selected. Enter a port that SMTP uses, e.g., 993.                                                                                                 |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Encryption                        | Available only when **Enable SMTP** is selected. Select the type of encryption: **SSL** or **TLS**.                                                                                      |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| User                              | Enter a username used to access the mailbox on the configured server. For example, for Gmail, an email address server as a username: alanwise@gmail.com                                  |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Password                          | Enter the password to a user's mailbox.                                                                                                                                                  |
-+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   .. note:: Please be aware that if the Account Type value has changed, a new mailbox will be registered, and all data from the currently configured mailbox will be lost. However, if the Account Type value has changed from or to the **Other** type, a new mailbox will *not* be registered, and all data from the currently configured mailbox will stay. This helps migrate existing mailboxes from the basic IMAP configuration to Microsoft or Gmail.
 
-Click **Check Connection/Retrieve Folders** to check whether the specified synchronization settings are correct and to retrieve the current folder structure of the user's remote mailbox.
+   * **Account Type: Gmail** is available when the application is integrated with Google and :ref:`OAuth 2.0 for email sync <admin-configuration-integrations-google-gmail-oauth>`  is enabled.
 
-**Email Threads**
-
-+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Field                                            | Description                                                                                                                                                                                        |
-+==================================================+====================================================================================================================================================================================================+
-| Display Email Conversations As                   | Select whether to visually group original emails with replies to them or show all emails separately.                                                                                               |
-+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Display Email Conversations In Activity Lists As | Select whether to visually group original emails with replies in the **Activities** sections of the record view pages or show all emails separately.                                               |
-+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+     * *Connected Account* --- The account connected to Gmail. Click **Retrieve Folders** to load folders from the connected account.
 
 
-**Reply**
+   * **Account Type: Office 365** is available when the application is integrated with :ref:`Microsoft 365 OAuth <user-guide-integrations-azure-oauth>`.
 
-+----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Field                | Description                                                                                                                                                                                              |
-+======================+==========================================================================================================================================================================================================+
-| Default Reply Button | Select which button will be default for replying to emails: **Reply** or **Reply All**. The other button will continue to be available in the **Reply** menu, and it will not be on the top of the list. |
-|                      |                                                                                                                                                                                                          |
-|                      | .. image:: /user/img/getting_started/user_menu/reply_selector.png                                                                                                                                        |
-|                      |    :alt: Selecting the default button for replying to emails                                                                                                                                             |
-|                      |                                                                                                                                                                                                          |
-+----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+     * *Connected Account* --- The account connected to Microsoft 365. Click **Retrieve Folders** to load folders from the connected account.
+
+   .. image:: /user/img/system/integrations/microsoft/office-365-email-sync.png
+      :alt: Email synchronization settings for Microsoft 365
+
+   * **Account Type: Other**:
+
+     * *Enable IMAP* --- Select the checkbox to enable retrieving email messages
+     * *IMAP Host* --- Provide the IMAP Host, e.g. imap.gmail.com
+     * *IMAP Port* --- Provide the IMAP Port, e.g. 993
+     * *Encryption* --- Select the encryption type, SSL or TLS.
+     * *Enable SMTP* --- Select the checkbox to enable sending messages
+     * *SMTP Host* --- Provide the SMTP host, e.g. smtp.gmail.com
+     * *SMTP Port* --- Provide the SMTP port, e.g. 587
+     * *Encryption* --- Select the encryption type, SSL or TLS.
+     * *User* --- Provide your email address
+     * *Password* --- Provide your password
+
+     Click **Check Connection/Retrieve Folders**. After successful connection, a list of folders will be loaded. Check the folders that you wish to be synchronized (e.g., Inbox).
+
+     As an example, we have synchronized a Gmail mailbox with your Oro application, having previously turned on **access for less secure apps**. More details on how to synchronize your Gmail and turn on access for less secured apps can be found in the |Use IMAP to check Gmail| and |Less secure apps & your Google Account| topics.
+
+  |
+
+   .. image:: /user/img/system/user_management/personabox_imap_smtp.jpg
+      :alt: Email synchronization settings configuration on the user level
+
+  |
+
+3. Under **Email Threads**, select how to display emails and replies to users, either as threads or separately.
+
+   * **Display Email Conversations As** --- Defines the user's email representation under **My Emails**.
+
+   .. image:: /user/img/system/config_system/threaded_emails.png
+      :alt: A sample of an email with the threaded option selected
+
+   .. image:: /user/img/system/config_system/non-threaded-emails.png
+        :alt: A sample of an email with the non-threaded option selected
+
+
+   * **Display Emails In Activity Lists As** --- Defines how emails and replies are displayed under the **Activity** menu of a selected record.
+
+     .. image:: /user/img/system/config_system/threaded_email_activities.png
+        :alt: A sample of an email with the threaded option selected
+
+     .. image:: /user/img/system/config_system/non_threaded_email_activities.png
+        :alt: A sample of an email with the non-threaded option selected
+
+4. **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the dropdown. The settings can be changed to have **Reply all** displayed at the top.
+
 
 Update Contact Information
 --------------------------
@@ -236,4 +213,7 @@ For more information on how to configure the contact information visible to the 
 * :ref:`Log Out <doc-log-out>`
 
 .. include:: /include/include-images.rst
+   :start-after: begin
+
+.. include:: /include/include-links-user.rst
    :start-after: begin

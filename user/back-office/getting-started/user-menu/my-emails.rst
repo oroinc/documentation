@@ -83,52 +83,34 @@ To compose a new email:
 
 .. _email-fields:
 
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Field**          | **Description**                                                                                                                                                                                                                       |
-+====================+=======================================================================================================================================================================================================================================+
-| **From**           | The **From** field should contain the sender's email address. Note that the primary email address is used as a default value and additional addresses are available in the selector for the **From** field.                           |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **To**             | The **To** field should contain the email(s) of the recipient(s). You can add more than one email to the field.                                                                                                                       |
-|                    | **Cc:** Clicking **Cc** (carbon copy) will prompt a new field to appear to include more recipients to the emails whom the sender wishes to *publicly* inform of the message. Such recipients will be visible to all other recipients. |
-|                    | **Bcc:** Clicking **Bcc** (blind carbon copy) will prompt a new field to appear to include those recipients whom the sender wishes to inform of the email *discreetly*. Such recipients are not visible to anyone.                    |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Subject**        | Short, descriptive outline of the email message displayed in the recipients' mailbox.                                                                                                                                                 |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Apply Template** | You can apply a pre-configured template for your email. More information on email template configuration can be found In the :ref:`corresponding <user-guide-email-template>` section of this guide.                                  |
-|                    |  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific :ref:`roles and permissions <user-guide-user-management-permissions-roles>` defined in the system configuration.            |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Type**           | Select the type of the message to be sent:                                                                                                                                                                                            |
-|                    | **HTML:** The email will be coded so that the text is formatted and images are added.                                                                                                                                                 |
-|                    | **Plain:** The email will contain plain text with no formatting or unique layout options.                                                                                                                                             |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Body**           | Enter the text of your email.                                                                                                                                                                                                         |
-|                    | You can customize your email text using the following features:                                                                                                                                                                       |
-|                    | -  Bold, Italic, Underline styles                                                                                                                                                                                                     |
-|                    | -  Text color                                                                                                                                                                                                                         |
-|                    | -  Background color                                                                                                                                                                                                                   |
-|                    | -  Bullet List                                                                                                                                                                                                                        |
-|                    | -  Numbered List                                                                                                                                                                                                                      |
-|                    | -  Insert/Edit link                                                                                                                                                                                                                   |
-|                    | -  Source Code                                                                                                                                                                                                                        |
-|                    | -  Image Embed Upload                                                                                                                                                                                                                 |
-|                    | -  Fullscreen view                                                                                                                                                                                                                    |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Add Signature**  | The signature may be added to any email you write in the Oro application. Your organization settings define whether the signature will be added automatically or manually.                                                            |
-|                    | If you have a signature configured, you can add it by clicking **Add Signature**. For example:                                                                                                                                        |
-|                    | -                                                                                                                                                                                                                                     |
-|                    | John Doe, VP                                                                                                                                                                                                                          |
-|                    | Example Inc.                                                                                                                                                                                                                          |
-|                    | t.: 0786756465                                                                                                                                                                                                                        |
-|                    | e.: john.doe@example.com                                                                                                                                                                                                              |
-|                    | For more information, see **Add Signature To Your Email** section of this guide.                                                                                                                                                      |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Attach a file**  | You can attach a file from your PC or a related record.                                                                                                                                                                               |
-|                    | Click **From a Record** to re-use an attachment from another email in the thread or to choose an attachment assigned to the records.                                                                                                  |
-|                    | Click **Upload** and select the necessary file to be uploaded from your computer as an attachment to your email.                                                                                                                      |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Contexts**       | Context is any record or records that ha(s)ve meaningful relation to an email conversation. When you add context of a record to the email conversation, it will be displayed in the **Activity** section of that record’s page.       |
-|                    | **Note**: If an email has been created from an entity record view page (e.g., from a lead’s page), this record will be added as a context automatically.                                                                              |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* **From** --- The sender's email address (the primary email address is used as a default value).
+
+* **To** --- The email(s) of the recipient(s). You can add more than one email to the field. Clicking **Cc** (carbon copy) will prompt a new field to appear to include more recipients to the emails whom the sender wishes to *publicly* inform of the message. Such recipients will be visible to all other recipients. Clicking **Bcc** (blind carbon copy) will prompt a new field to appear to include those recipients whom the sender wishes to inform of the email *discreetly*. Such recipients are not visible to anyone.
+
+* **Subject** --- Short, descriptive outline of the email message displayed in the recipients' mailbox.
+
+* **Apply Template** --- You can apply a pre-configured template for your email. More information on email template configuration can be found in the :ref:`corresponding <user-guide-email-template>` section of this guide. Keep in mind that the ability to view and add email templates from the dropdown list depends on specific :ref:`roles and permissions <user-guide-user-management-permissions-roles>` defined in the system configuration.
+
+* **Type** --- Select the type of the message to be sent:
+
+  * **HTML:** The email will be coded so that the text is formatted and images are added.                                                            * **Plain:** The email will contain plain text with no formatting or unique layout options.
+
+* **Body** --- Enter the text of your email. You can customize your email text using the following features:
+
+  - Bold, Italic, Underline styles                                                                                                                   - Text color                                                                                                                                       - Background color                                                                                                                                 - Bullet List                                                                                                                                      - Numbered List                                                                                                                                    - Insert/Edit link                                                                                                                                 - Source Code                                                                                                                                      - Image Embed Upload                                                                                                                               - Fullscreen view
+
+* **Add Signature** --- The signature may be added to any email you write in the Oro application. Your organization settings define whether the signature will be added automatically or manually. If you have a signature configured, you can add it by clicking **Add Signature**.
+
+* **Attach a file** --- You can attach a file from your PC or a related record. Click **From a Record** to re-use an attachment from another email in the thread or to choose an attachment assigned to the records. Click **Upload** and select the necessary file to be uploaded from your computer as an attachment to your email.
+
+* **Contexts** --- Context is any record or records that ha(s)ve meaningful relation to an email conversation (e.g., contacts, customer users, accounts, leads, opportunities, rfqs, etc). When you add context of a record to the email conversation, it will be displayed on top of your email details page or under the **Activity** section of the added record’s page. **Note**: If an email has been created from an entity record view page (e.g., from a lead’s page), this record will be added as a context automatically.
+
+.. image:: /user/img/getting_started/user_menu/context-in-emails.png
+   :alt: Context is displayed on top of user's email details page
+
+.. image:: /user/img/getting_started/user_menu/context-under-activity.png
+   :alt: Context is displayed under the Activity section of the customer user's page
+
 
 3. Click **Send** to send your email.
 

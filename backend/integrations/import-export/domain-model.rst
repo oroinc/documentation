@@ -3,6 +3,65 @@
 Domain Model
 ============
 
+Message Queue
+-------------
+
+Import Processors
+^^^^^^^^^^^^^^^^^
+
+**Class**
+
+Oro\\Bundle\\ImportExportBundle\\Async\\Import\\PreImportMessageProcessor
+
+**Description:**
+
+Processes messages sent to Oro\\Bundle\\ImportExportBundle\\Async\\Topic\\PreImportTopic.
+
+Responsible for dividing the import process into independent jobs, each processing its own data chunk for parallel execution. Sends email notifications to the user in case of any import errors.
+
+**Class**
+
+Oro\\Bundle\\ImportExportBundle\\Async\\Import\\ImportMessageProcessor
+
+**Description:**
+
+Processes messages sent to Oro\\Bundle\\ImportExportBundle\\Async\\Topic\\ImportTopic.
+
+Responsible for processing an individual import job with its own data chunk.
+
+Export Processors
+^^^^^^^^^^^^^^^^^
+
+**Class**
+
+Oro\\Bundle\\ImportExportBundle\\Async\\Export\\PreExportMessageProcessor
+
+**Description:**
+
+Processes messages sent to Oro\\Bundle\\ImportExportBundle\\Async\\Topic\\PreExportTopic.
+
+Responsible for creating messages and generating a list of records for export, which will be used in a child job. Responsible for executing the primary export job.
+
+**Class**
+
+Oro\\Bundle\\ImportExportBundle\\Async\\Export\\ExportMessageProcessor
+
+**Description:**
+
+Processes messages sent to Oro\\Bundle\\ImportExportBundle\\Async\\Topic\\ExportTopic.
+
+Responsible for processing an individual export job with its own data chunk.
+
+**Class**
+
+Oro\\Bundle\\ImportExportBundle\\Async\\Export\\PostExportMessageProcessor
+
+**Description:**
+
+Processes messages sent to Oro\\Bundle\\ImportExportBundle\\Async\\Topic\\PostExportTopic.
+
+This processor finalizes the batch export process by merging all exported data chunks and sends an email notification upon completion.
+
 Job
 ---
 
@@ -85,13 +144,13 @@ Oro\\Bundle\\ImportExportBundle\\Context\\StepExecutionProxyContext
 
 **Description:**
 
-StepExecutionProxyContext is a wrapper of the Oro\\Bundle\\BatchBundle\\Entity\\StepExecution instance from OroBatchBundle.
+StepExecutionProxyContext is a wrapper of the ``Oro\Bundle\BatchBundle\Entity\StepExecution`` instance from OroBatchBundle.
 
 **Oro\\Bundle\\BatchBundle\\Entity\\StepExecution**
 
-The instance of this class can store the data of step execution, such as a number of records that were read/written, errors, exceptions, warnings, and an execution context (Oro\\Bundle\\BatchBundle\\Item\\ExecutionContext) as well as the abstract data generated during the execution.
+The instance of this class can store the data of step execution, such as a number of records that were read/written, errors, exceptions, warnings, and an execution context (``Oro\Bundle\BatchBundle\Item\ExecutionContext``) as well as the abstract data generated during the execution.
 
-As the import/export domain has its own terms, ContextInterface expands the Oro\\Bundle\\BatchBundle\\Entity\\StepExecution interface and separates its clients from OroBatchBundle.
+As the import/export domain has its own terms, ContextInterface expands the ``Oro\Bundle\BatchBundle\Entity\StepExecution`` interface and separates its clients from OroBatchBundle.
 
 Context Registry
 ^^^^^^^^^^^^^^^^

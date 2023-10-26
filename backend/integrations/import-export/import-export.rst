@@ -229,7 +229,6 @@ The import algorithm being performed is (in pseudocode):
 
 .. code-block:: text
 
-
     Process job:
       - Process step 1:
         - loop
@@ -334,7 +333,6 @@ The export algorithm being performed is (in pseudocode):
 
 .. code-block:: text
 
-
     Process job:
       - Process step 1:
         - loop
@@ -372,7 +370,6 @@ during deserialization).
     method:
 
     .. code-block:: php
-
 
         if ($data[$fieldName] !== null
             && ($this->fieldHelper->isRelation($field) || $this->fieldHelper->isDateTimeField($field))
@@ -419,7 +416,6 @@ Alternatively, you can describe the field configuration in your entity directly
 using ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField``:
 
 .. code-block:: php
-
 
      /**
       * @ConfigField(
@@ -576,7 +572,6 @@ Generally, you should implement both interfaces if you need to add both import a
 
 .. code-block:: php
 
-
    namespace Oro\Bundle\ContactBundle\ImportExport\Serializer\Normalizer;
 
    use Oro\Bundle\ImportExportBundle\Serializer\Normalizer\ConfigurableEntityNormalizer;
@@ -617,7 +612,6 @@ The serializer of OroImportExportBundle should be aware of its normalizer. To ma
 
 .. code-block:: yaml
 
-
    services:
        orocrm_contact.importexport.normalizer.group:
            class: Oro\Bundle\ContactBundle\ImportExport\Serializer\Normalizer\GroupNormalizer
@@ -635,7 +629,6 @@ The data converter is responsible for converting the header of the import/export
 **Example Of a Custom Data Converter**
 
 .. code-block:: php
-
 
     namespace Oro\Bundle\ContactBundle\ImportExport\Converter;
 
@@ -666,7 +659,6 @@ The data converter is responsible for converting the header of the import/export
 
 .. code-block:: yaml
 
-
     services:
         oro_contact.importexport.data_converter.group:
             parent: oro_importexport.data_converter.configurable
@@ -678,7 +670,6 @@ Export Processor
 Once the normalizers are registered and the data converter is available, you can configure the export settings using the DI configuration.
 
 .. code-block:: yaml
-
 
     services:
         oro_contact.importexport.processor.export_group:
@@ -694,7 +685,6 @@ There is a controller in OroImportExportBundle that is used to request a CSV fil
 Now, if you send a request to the **/export/instant/orocrm_contact_group** URL  you will receive a response with the URL of the exported file results and some additional information:
 
 .. code-block:: json
-
 
     {
         "success":true,
@@ -712,7 +702,6 @@ The strategy is a class that is responsible for the import logic processing, suc
 **Example of the Import Strategy**
 
 .. code-block:: php
-
 
     namespace Oro\Bundle\ContactBundle\ImportExport\Strategy;
 
@@ -744,7 +733,6 @@ Also, you can use [rows postponing](rows-postponing.md) in the strategy .
 
 .. code-block:: yaml
 
-
     services:
         oro_contact.importexport.strategy.contact.add_or_replace:
             class: Oro\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrReplaceStrategy
@@ -758,7 +746,6 @@ Once the normalizers are registered, the data converter is available, and the st
 
 .. code-block:: yaml
 
-
     services:
         # Import processor
         oro_contact.importexport.processor.import_group:
@@ -771,7 +758,7 @@ Once the normalizers are registered, the data converter is available, and the st
                 - { name: oro_importexport.processor, type: import_validation, entity: 'Oro\Bundle\ContactBundle\Entity\Contact', alias: orocrm_contact.add_or_replace_group }
 
 
-Note, that the import requires a processor for import validation as in the example above.
+Keep in mind the import requires a processor for import validation as in the example above.
 
 The import can be done in three steps.
 
@@ -789,7 +776,6 @@ The fixture implementation is based on the default import/export process.
 **Create class:**
 
 .. code-block:: php
-
 
     namespace Oro\Bundle\ContactBundle\ImportExport\TemplateFixture;
 
@@ -842,7 +828,6 @@ The fixture implementation is based on the default import/export process.
 
 .. code-block:: yaml
 
-
     services:
         oro_contact.importexport.template_fixture.contact:
             class: Oro\Bundle\ContactBundle\ImportExport\TemplateFixture\ContactFixture
@@ -854,7 +839,6 @@ The fixture implementation is based on the default import/export process.
 
 .. code-block:: yaml
 
-
     oro_contact.importexport.template_fixture.data_converter.contact:
         parent: oro_importexport.data_converter.template_fixture.configurable
 
@@ -862,7 +846,6 @@ The fixture implementation is based on the default import/export process.
 **Define export processor:**
 
 .. code-block:: yaml
-
 
     oro_contact.importexport.processor.export_template:
         parent: oro_importexport.processor.export_abstract
@@ -911,7 +894,6 @@ Import:
 
 .. code-block:: twig
 
-
     {% include '@OroImportExport/ImportExport/buttons.html.twig' with {
         entity_class: entity_class,
         exportJob: 'your_custom_entity_class_export_to_csv',
@@ -930,7 +912,6 @@ In order to display import/export buttons for several entities, you need to crea
 providers for each entity with options, described in the beginning of the section:
 
 .. code-block:: php
-
 
     namespace Oro\Bundle\ProductBundle\ImportExport\Configuration;
 
@@ -980,11 +961,10 @@ providers for each entity with options, described in the beginning of the sectio
     }
 
 
-Provider's service should have a tag with the name `oro_importexport.configuration` and some alias.
+Provider's service should have a tag with the name ``oro_importexport.configuration`` and some alias.
 The alias is used to group import/export buttons with different configurations on one page:
 
 .. code-block:: yaml
-
 
     oro_product.importexport.configuration_provider.product:
         class: Oro\Bundle\ProductBundle\ImportExport\Configuration\ProductImportExportConfigurationProvider
@@ -998,7 +978,6 @@ To show all import/export buttons on a page, which are defined by configuration 
 include following template:
 
 .. code-block:: twig
-
 
     {% include '@OroImportExport/ImportExport/buttons_from_configuration.html.twig' with {
         'alias': 'oro_product_index'
@@ -1028,7 +1007,6 @@ The same thing is applicable for the export of the templates used for the import
 
 .. code-block:: yaml
 
-
     oro.importexport.processor.export.some_type:
         parent: oro_importexport.processor.export_abstract
         calls:
@@ -1048,7 +1026,6 @@ The same thing is applicable for the export of the templates used for the import
 
 .. code-block:: yaml
 
-
    #messages.en.yml
    oro.importexport.export.oro_some_type: Some export type
    oro.importexport.export.oro_another_type: Some other export type
@@ -1057,7 +1034,6 @@ The same thing is applicable for the export of the templates used for the import
 In this case, you have to specify the processors that can be used as selected options in the pop-up. On the import/export buttons configuration, specify the processors as array, like in the example bellow (**exportProcessors** and/or **exportTemplateProcessors**):
 
 .. code-block:: twig
-
 
     {% include '@OroImportExport/ImportExport/buttons.html.twig' with {
         ...
@@ -1136,6 +1112,28 @@ Example of displaying the form with choice (radio buttons):
         }
     }
 
+
+Import CSV Files via CLI
+------------------------
+
+OroPlatform provides the CLI command ``oro:import:csv`` that allows to import records from the specified CSV file.
+
+.. code-block:: none
+
+    $ php bin/console oro:import:csv --help
+    Usage:
+        oro:import:file [options] [--] <file>
+        oro:import:file --email=<email> --jobName=<job> --processor=<processor> <file>
+        oro:import:file --validation --email=<email> --jobName=<job> --processor=<processor> <file>
+
+    Arguments:
+        file                    File name, to import CSV data from
+
+    Options:
+        --jobName=JOBNAME      Import job name
+        --processor=PROCESSOR  Import processor name
+        --validation           Only validate data instead of import
+        --email=EMAIL          Email to send the import log to
 
 Storage Configuration
 ---------------------

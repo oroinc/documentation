@@ -3,7 +3,7 @@
 Import and Export
 =================
 
-OroImportExportBundle allows developers to enable UI for the application users to export entity records to files, import them back to the application, and configure the import/export options for entity fields in the entity management UI. Import/export capabilities in Oro applications are available for the most critical features where the daily operations generate high data load.
+The OroImportExportBundle allows developers to enable a UI for application users and a CLI command for administrators to export entity records to files, import them back into the application, and configure the import/export options for entity fields in the entity management UI. Import/export capabilities in Oro applications are available for the most critical features where daily operations generate high data loads.
 
 To learn more about import and export capabilities and how to use them, please see the topics below:
 

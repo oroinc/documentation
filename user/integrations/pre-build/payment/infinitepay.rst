@@ -1,3 +1,5 @@
+:oro_documentation_types: Extension
+
 .. _integrations-payment-infinitepay:
 
 Integration with InfinitePay Payment Service

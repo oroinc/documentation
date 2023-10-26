@@ -1,5 +1,5 @@
-Configuration
-=============
+Oro Integration Bundle
+======================
 
 OroPlatform provides means to achieve a seamless integration of third-party systems through the |OroIntegrationBundle|.
 
