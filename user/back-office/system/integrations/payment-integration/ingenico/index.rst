@@ -35,7 +35,7 @@ To configure the integration between Ingenico and OroCommerce, follow the steps 
 
    * **Payment Action** - (Only applicable to credit/debit cards) Select the action from the drop-down list:
 
-     * *Final Authorization* - The payment creation results in an authorization that is ready for capture. Final authorizations cannot reversed and need to be captured for the full amount within 7 days.
+     * *Final Authorization* - The payment creation results in an authorization that is ready for capture. Final authorizations cannot be reversed and need to be captured for the full amount within 7 days.
 
      * *Pre-Authorization* - The payment creation results in a pre-authorization that is ready for capture. Pre-authorizations can be reversed and can be captured within 30 days. The capture amount can be lower than the authorized amount.
 

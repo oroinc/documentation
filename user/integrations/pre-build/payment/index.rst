@@ -11,6 +11,7 @@ Oro offers a selection of payment integrations, providing businesses with a wide
 * :ref:`Apruve <integrations-payment-apruve>`
 * :ref:`CyberSource <integrations-payment-cybersource>`
 * :ref:`InfinitePay <integrations-payment-infinitepay>`
+* :ref:`Ingenico <integrations-payment-ingenico>`
 
 .. toctree::
    :hidden:
@@ -22,3 +23,4 @@ Oro offers a selection of payment integrations, providing businesses with a wide
    Apruve <apruve>
    CyberSource <cybersource>
    InfinitePay <infinitepay>
+   Ingenico <ingenico>

@@ -1,3 +1,5 @@
+:oro_documentation_types: Extension
+
 .. _integrations-payment-stripe:
 
 Integration with Stripe Payment Service
