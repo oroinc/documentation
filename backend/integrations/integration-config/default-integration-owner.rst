@@ -7,7 +7,7 @@ You can define the owner for related entities on the integration level.
 The default user owner setting included into the integration configuration and should be configured during the integration creation.
 
 Also **OroIntegrationBundle** brings a helper that can be used by the import process to perform the population of the integration owner.
-It is registered as service `oro_integration.helper.default_owner_helper` and can be easily used as dependency.
+It is registered as service ``oro_integration.helper.default_owner_helper`` and can be easily used as dependency.
 
 **Usage Example:**
 

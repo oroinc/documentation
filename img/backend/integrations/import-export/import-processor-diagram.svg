@@ -1,0 +1,421 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="782" height="400"><style xmlns="http://www.w3.org/1999/xhtml"></style><defs/><g transform="translate(0,0)"><path fill="none" stroke="none" stroke-dasharray="undefined" vector-effect="non-scaling-stroke"/><g><rect fill="#FFFFFF" stroke="none" x="0" y="0" width="782" height="400"/></g><g data-width="19" data-height="295" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,120.5,67.63344316309718)"><g><g transform="translate(0,0) scale(0.19,2.95)"><g><path fill="#FFFFFF" stroke="#000000" stroke-dasharray="1.7976931348623157e+308" vector-effect="non-scaling-stroke" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10"/><g transform="scale(5.2631578947368425,0.3389830508474576)"/></g></g></g></g><g data-width="120" data-height="20.5" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,70,9.633443163097184)"><g><g transform="translate(0,0) scale(1.2,0.205)"><g><path fill="#f5f5f5" stroke="#000000" stroke-dasharray="1.7976931348623157e+308" vector-effect="non-scaling-stroke" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10"/><g transform="scale(0.8333333333333334,4.878048780487805)"/></g></g></g></g><g transform="matrix(1,0,0,1,72,12)"><foreignObject width="116" height="21"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_a9d3a52c-6418-43dd-b56a-a126d92244af" class="gliffy-text gliffy-graphic gliffy-rte-text na9d3a52c-6418-43dd-b56a-a126d92244af gliffy_node_a9d3a52c-6418-43dd-b56a-a126d92244af" style="width: 116px; height: 20.5px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 3; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 14px; font-weight: bold; text-decoration: underline; line-height: 16.5px;">ItemProcessor</span></p></div>
+                </foreignObject></g><g data-width="120" data-height="37.36961710520674" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,70,30.133443163097184)"><g><g transform="translate(0,0) scale(1.2,0.3736961710520674)"><g><path fill="#000000" stroke="#000000" stroke-dasharray="5,2" vector-effect="non-scaling-stroke" d="M 50 0 L 50 100" stroke-miterlimit="10"/><g transform="scale(0.8333333333333334,2.675970688125325)"/></g></g></g></g><g data-width="120" data-height="20.5" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,470,10.939283173777937)"><g><g transform="translate(0,0) scale(1.2,0.205)"><g><path fill="#FFFFFF" stroke="#000000" stroke-dasharray="1.7976931348623157e+308" vector-effect="non-scaling-stroke" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10"/><g transform="scale(0.8333333333333334,4.878048780487805)"/></g></g></g></g><g transform="matrix(1,0,0,1,472,13)"><foreignObject width="116" height="21"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_4ba52e0c-692d-403a-838c-df2fe198033b" class="gliffy-text gliffy-graphic gliffy-rte-text n4ba52e0c-692d-403a-838c-df2fe198033b gliffy_node_4ba52e0c-692d-403a-838c-df2fe198033b" style="width: 116px; height: 20.5px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 7; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 14px; font-weight: bold; text-decoration: underline; line-height: 16.5px;">Serializer</span></p></div>
+                </foreignObject></g><g data-width="120" data-height="250.57080736860712" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,470,31.439283173777937)"><g><g transform="translate(0,0) scale(1.2,2.5057080736860713)"><g><path fill="#000000" stroke="#000000" stroke-dasharray="5,2" vector-effect="non-scaling-stroke" d="M 50 0 L 50 100" stroke-miterlimit="10"/><g transform="scale(0.8333333333333334,0.39908878871469267)"/></g></g></g></g><g data-width="120" data-height="20.5" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,640,11.297500126519367)"><g><g transform="translate(0,0) scale(1.2,0.205)"><g><path fill="#FFFFFF" stroke="#000000" stroke-dasharray="1.7976931348623157e+308" vector-effect="non-scaling-stroke" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10"/><g transform="scale(0.8333333333333334,4.878048780487805)"/></g></g></g></g><g transform="matrix(1,0,0,1,642,13)"><foreignObject width="116" height="21"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_54236081-8334-4f03-8ae9-f42e70167f46" class="gliffy-text gliffy-graphic gliffy-rte-text n54236081-8334-4f03-8ae9-f42e70167f46 gliffy_node_54236081-8334-4f03-8ae9-f42e70167f46" style="width: 116px; height: 20.5px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 11; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 14px; font-weight: bold; text-decoration: underline; line-height: 16.5px;">Strategy</span></p></div>
+                </foreignObject></g><g data-width="120" data-height="330.57550082695474" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,640,31.797500126519367)"><g><g transform="translate(0,0) scale(1.2,3.3057550082695473)"><g><path fill="#000000" stroke="#000000" stroke-dasharray="5,2" vector-effect="non-scaling-stroke" d="M 50 0 L 50 100" stroke-miterlimit="10"/><g transform="scale(0.8333333333333334,0.3025027557996401)"/></g></g></g></g><g data-layerId="Udu4WteXnBCz" transform="matrix(1,0,0,1,5,50)"><image width="145" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAAA8CAYAAABmWlgTAAAAAXNSR0IArs4c6QAAAilJREFUeF7t2j1KA1EUhuFzIURIaW0hgiOuzBWIMS7AuZDG1sbWdbgCbRRTaGllJUJ+SK6MEczPRBm+Yk6S13pycua9jyYag/FFAbFAEB/PwylgIAKBXABEckIGgAgDcgEQyQkZACIMyAVAJCdkAIgwIBcAkZyQASDCgFwARHJCBoAIA3IBEMkJGQAiDMgFQCQnZACIMCAXAJGckAEgwoBcAERyQgaACANyARDJCRkAIocGerF5nJ0NnxyuVroSiByeVIHIJqFrIcSs3b9zuOLcSiByeEI/iB6/Vwvh1sbjmF2M7h2uOl3R62LbvNccot8Q18ksHp0PXry1AZG3EzGzFYimmwbrtibNfK/z8e5ldRB5OYmZPWYRFQeUlnf8NEvxcHeYhxMb1X0LIKr7BEqevwxRSsXbo6WL3yxYzNqDqzpvQ0LUu9wp+Sap83Y277kXfxIVwUsO7dlSiFmnf1NHARDVUb3Cc248ogotuLRCga16OavQhUsrFOCNdYVYXFpe4M9f8ZN1W8av+Nj5p8CqPzY2GyHfP+2/egsovbH2djObss/ixx4NG+cH7dGD1/sDkcOT4QNYh4eybivxryDrdmLsKxfg5UxOyAAQYUAuACI5IQNAhAG5AIjkhAwAEQbkAiCSEzIARBiQC4BITsgAEGFALgAiOSEDQIQBuQCI5IQMABEG5AIgkhMyAEQYkAuASE7IABBhQC4AIjkhA0CEAbkAiOSEDPgCYKZ+PaQO8QYAAAAASUVORK5CYII=" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,22,60)"><foreignObject width="86" height="31"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_9fb6225c-0a6e-4041-bd73-ff7e6d04b83d" class="gliffy-text gliffy-graphic gliffy-rte-text n9fb6225c-0a6e-4041-bd73-ff7e6d04b83d gliffy_node_9fb6225c-0a6e-4041-bd73-ff7e6d04b83d" style="width: 86px; height: 31px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 14; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 13px; text-decoration: none; color: #312101;"><span style="text-decoration: none; line-height: 15.5px;">process(item)</span></span></p></div>
+                </foreignObject></g><g data-width="19" data-height="60" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,520.5,190)"><g><g transform="translate(0,0) scale(0.19,0.6)"><g><path fill="#FFFFFF" stroke="#000000" stroke-dasharray="1.7976931348623157e+308" vector-effect="non-scaling-stroke" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10"/><g transform="scale(5.2631578947368425,1.6666666666666667)"/></g></g></g></g><g data-layerId="Udu4WteXnBCz" transform="matrix(1,0,0,1,109.5,206.00000000000006)"><image width="426" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaoAAAA8CAYAAAA3x/4cAAAAAXNSR0IArs4c6QAAA7xJREFUeF7t3D9vDWAUB+DzVmhZDCaDQZpUjCQSA0NvLEZDv4hFu5m0vgGxWQw+g83mE/jT1UiIhAb3FaLJJa2bqsR5c56O7b3NOc/v3P7Spm0LbwQIECBAILFASzyb0QgQIECAQCgqR0CAAAECqQUUVep4DEeAAAECisoNECBAgEBqAUWVOh7DESBAgICicgMECBAgkFpAUaWOx3AECBAgoKjcAAECBAikFlBUqeMxHAECBAgoKjdAgAABAqkFFFXqeAxHgAABAorKDRAgQIBAagFFlToewxEgQICAonIDBAgQIJBaQFGljsdwBAgQIKCo3AABAgQIpBZQVKnjMRwBAgQIKCo3QIAAAQKpBRRV6ngMR4AAAQKKyg0QIECAQGoBRZU6HsMRIECAgKJyAwQIECCQWmDootreipPL6/EutbDhCBAgQOBQAsMV1evbceLDscVJW4jVHjFZWd+5cCgBTyZAgACB1AJDFFW/H0dfvV2c9GlMorXViH5pV/X44s6pMzfjTWplwxEgQIDAXwukLaoe0bY3l1anEZPW+vXe4+LMll8i+sMj0e8tb3x+9tfbeyIBAgQIpBdIV1TP7yxdjYhrrfW1iDi/K9giPkb0xwtt4cHy+qen6WUNSIAAAQL/RCBFUb28e/xy/zq90SPWWouzM5u9by0eT1t7dO7Wpyf/ZGOfhAABAgSGEvhvRfV8a+lK633tRzlFnP5d7ftg/Q+UKxs7v8z+YnPxTw+fG4rPx2/ukcw8wL24F/eyv8Ber4/f33cQP0X1U8sXHl94DvLCcS/uxb0UKKrZFf3o7yAn77EECBCoJfDfvqPaj9kvU9Q6QNsSIEBgnkC6otod2K+nz4vOxwkQIFBDIG1RzfL7g98ax2hLAgQI7CUwRFHNDu5fKDlkAgQI1BIYrqhm4/FPaWsdq20JEKgpMHRR1YzM1gQIEKgloKhq5W1bAgQIDCegqIaLzMAECBCoJaCoauVtWwIECAwnoKiGi8zABAgQqCWgqGrlbVsCBAgMJ6CohovMwAQIEKgloKhq5W1bAgQIDCegqIaLzMAECBCoJaCoauVtWwIECAwnoKiGi8zABAgQqCWgqGrlbVsCBAgMJ6CohovMwAQIEKgloKhq5W1bAgQIDCegqIaLzMAECBCoJaCoauVtWwIECAwnoKiGi8zABAgQqCWgqGrlbVsCBAgMJ6CohovMwAQIEKgloKhq5W1bAgQIDCegqIaLzMAECBCoJaCoauVtWwIECAwnoKiGi8zABAgQqCXwDYc3FExiqPTMAAAAAElFTkSuQmCC" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,142,110)"><foreignObject width="186" height="16"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_6d3467bd-5857-4b36-a4df-4ea37d80dc78" class="gliffy-text gliffy-graphic gliffy-rte-text n6d3467bd-5857-4b36-a4df-4ea37d80dc78 gliffy_node_6d3467bd-5857-4b36-a4df-4ea37d80dc78" style="width: 186px; height: 15.5px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 17; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 13px; text-decoration: none; color: #312101;"><span style="text-decoration: none; line-height: 15.5px;">convertToImportFormat(item)</span></span></p></div>
+                </foreignObject></g><g data-layerId="Udu4WteXnBCz" transform="matrix(1,0,0,1,125,100)"><image width="235" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAAA8CAYAAACHMU1CAAAAAXNSR0IArs4c6QAAAtNJREFUeF7t2zFuE1EQBuC3UmSklNQUCAkjTsYJECYcAK+UhpaGlnNwAmhApICSigohOYmSRQ5IBMdBsjzP+yb5XG/mzX4zf+zYTlc8CBBIIdCl6FKTBAgUYbUEBJIICGuSQWmTgLDaAQJJBIQ1yaC0SUBY7QCBJALCmmRQ2iQgrHaAQBIBYU0yKG0SEFY7QCCJgLAmGZQ2CQirHSCQREBYkwxKmwSE1Q4QSCIgrEkGpU0CwmoHCCQRENYkg9ImAWG1AwSSCAhrkkFpk4Cw2gECSQSENcmgtElAWO3ArRU46iePp89OPmUBENYsk9JnuMAyrOW8Oyxd109ni3fhBwQXFNZgUOXyCPwJ68eLjrvubTk766cvTt+3egfC2upk9FVd4J+w/j3t9VBK/+j58ZfqDWx4gLBuCObymyNwTVh/32BXDvfPJ/N7Bz++t3LHwtrKJPSxc4HLYV0GYbjawc9Shv7h3ZN596Sc7rzBlQOFdewJOH80gXVhHYbln69XWvpWutJPZ8evRmv24sl+i8fRyztrfhltUdCPEhhJYPWZdbnYa8LxuQxdPz1YvBmjTWEdQ92ZzQnc+LA2J64hAhsI3KqXwRu4uJRAcwLeYGpuJBoisF7gvx/dDOVwv/joxu4QaELgui9FTPa6+f2ni69NNHmpia3eYGrtZvRDYBOB1a8b7pWz+YPZ6YdNauzyWmHdpbazmhLwRf6mxqEZAtcL+Bc520GAQBUBL4OrsCpKIF5AWONNVSRQRUBYq7AqSiBeQFjjTVUkUEVAWKuwKkogXkBY401VJFBFQFirsCpKIF5AWONNVSRQRUBYq7AqSiBeQFjjTVUkUEVAWKuwKkogXkBY401VJFBFQFirsCpKIF5AWONNVSRQRUBYq7AqSiBeQFjjTVUkUEVAWKuwKkogXkBY401VJFBFQFirsCpKIF5AWONNVSRQRUBYq7AqSiBe4BfQS349aFYepgAAAABJRU5ErkJggg==" transform="translate(0,0)"/></g><g data-layerId="Udu4WteXnBCz" transform="matrix(1,0,0,1,109.5,124)"><image width="235" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAAA8CAYAAACHMU1CAAAAAXNSR0IArs4c6QAABJ9JREFUeF7tmU1vG1UUht9z5zrjlq81G1QIxERiA1IlFhRjw6ZISLDInn/R2CzaglKne5BArOimi/wGaCVYwRIJmtCwQuwQohRhe+7cg8ZOYFxVSUPSOif3jRT5I+Pxe573PnOdRMAvEiABEwTEREqGJAESAGXlIiABIwQoq5GiGJMEKCvXAAkYIUBZjRTFmCRAWbkGSMAIAcpqpCjGJAHKyjVAAkYIUFYjRTEmCVBWrgESMEKAshopijFJgLJyDZCAEQKU1UhRjEkClJVrgASMEKCsRopiTBKgrFwDJGCEAGU1UhRjkgBl5RogASMEKKuRohiTBCgr1wAJGCFAWY0UxZgkQFm5BkjACAHKaqQoxiQBk7JuDvLnRKWtiO1Wf/w+aySBFAiYkfX2IH9eVdpRYlsgbQDPVAVFN3ryxQv4M4WyOGPaBI61rLc+ylvi0XaQ1xX6LoDHduoKgF7LoJ8u9orv0q6Q06dC4NjJunV1YRmx+oiLdwR4e7cIAf4GdMOJ+3xxdfhNKgVxThKoOTB/GD+sLbzknZwHZAXQs7VEd0SwEUWuty4Mv5x/UiYggfkRmNvOujlonBW4FQDV95l7EVTBdA8uS73RTPatQa4KBAcU1S0gQUQL1eo+AgQFavcFElRjqdVxQFjqjd6ov93WIL9xmFqWeqNO/fU/redfaURQQfV+BQRBY5URBRCD6jRHlV2mxwRVlFXOKv8L/eHF+vk21xYuHSZf64PxzOuP+nw/DpozPA+adbk3vFl/zVGfb/NK85zLpCiLEJxU60ZC9CgzkVCIhFCi9OKCdy7kmQvj8Z3yboZwOkf45TeUncuTdfVIv+Yn63rzNVFdUWBFgKcPOvX9ZD3oOerH83z5XtfGfdGS34Px06iX771Q7gt354C5yTqz61w99aqW8b2JuIJn//2ZYlshG0D8otUf39prqBsX4c8A/tTjyP4q4cfxCZ9r9IVG771mQdV7hY9QXyp85jRzgI/qJ8+1+sOvH+qVfK35psvUK+ClyhDREIV3zmWxugW8Qr0qvAgy2X0MeAC+1R9/eJid1TlojJDd28PurPud76g/mTyE892cMFZpAOohU87Vc1HRkJ3H0+dk0g2AxrQ/+P97cTIv68wivNI8B+AtEa0+Hi/Xfrn+PkKvqxt/zH/VPOi1mMedJALHYme9H1AFZHvQ7ESgK6LnVfHKfzuufKsOn7RWh9dOUhmchQT2InBsZa2H1s/QuP173tWILkQ69b8YK7DY6o1+Zs0kcNIJmJC1XsKvl3D67kLeFYeOAt2l1dHLJ70kzkcCFQFzstZr217HU4ur+INVkkAKBEzLmkJBnJEEan9kJQwSIAELBLizWmiJGUnA+u+sbJAEUiLAnTWltjmraQKU1XR9DJ8SAcqaUtuc1TQBymq6PoZPiQBlTaltzmqaAGU1XR/Dp0SAsqbUNmc1TYCymq6P4VMiQFlTapuzmiZAWU3Xx/ApEaCsKbXNWU0ToKym62P4lAhQ1pTa5qymCVBW0/UxfEoEKGtKbXNW0wQoq+n6GD4lApQ1pbY5q2kClNV0fQyfEgHKmlLbnNU0gX8ApUVtTEEjluEAAAAASUVORK5CYII=" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,183,162)"><foreignObject width="105" height="28"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_4751f510-90ca-40f0-8fbb-8a3d30cdfc88" class="gliffy-text gliffy-graphic gliffy-rte-text n4751f510-90ca-40f0-8fbb-8a3d30cdfc88 gliffy_node_4751f510-90ca-40f0-8fbb-8a3d30cdfc88" style="width: 105px; height: 28px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 20; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 12px; color: #312101; line-height: 14px;">convertedItem<span style="text-decoration: none;"><br /></span></span></p></div>
+                </foreignObject></g><g data-width="120" data-height="20.5" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,279.5,11.129738809295247)"><g><g transform="translate(0,0) scale(1.2,0.205)"><g><path fill="#ffffff" stroke="#000000" stroke-dasharray="1.7976931348623157e+308" vector-effect="non-scaling-stroke" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10"/><g transform="scale(0.8333333333333334,4.878048780487805)"/></g></g></g></g><g transform="matrix(1,0,0,1,282,13)"><foreignObject width="116" height="21"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_eb443e92-faf5-46d7-a287-a58bc1ef2b8a" class="gliffy-text gliffy-graphic gliffy-rte-text neb443e92-faf5-46d7-a287-a58bc1ef2b8a gliffy_node_eb443e92-faf5-46d7-a287-a58bc1ef2b8a" style="width: 116px; height: 20.5px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 23; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 14px; font-weight: bold; text-decoration: underline; line-height: 16.5px;">DataConverter</span></p></div>
+                </foreignObject></g><g data-width="120" data-height="249.5854190532262" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,279.5,31.629738809295247)"><g><g transform="translate(0,0) scale(1.2,2.495854190532262)"><g><path fill="#000000" stroke="#000000" stroke-dasharray="5,2" vector-effect="non-scaling-stroke" d="M 50 0 L 50 100" stroke-miterlimit="10"/><g transform="scale(0.8333333333333334,0.40066443135716256)"/></g></g></g></g><g data-width="19" data-height="54.67066269219456" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,330,117.75)"><g><g transform="translate(0,0) scale(0.19,0.5467066269219456)"><g><path fill="#FFFFFF" stroke="#000000" stroke-dasharray="1.7976931348623157e+308" vector-effect="non-scaling-stroke" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10"/><g transform="scale(5.2631578947368425,1.829134586551796)"/></g></g></g></g><g data-layerId="Udu4WteXnBCz" transform="matrix(1,0,0,1,125,180)"><image width="425" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAakAAAA8CAYAAADc8EUfAAAAAXNSR0IArs4c6QAAA29JREFUeF7t3Ttuk0EUBeCZNFCyBSSnYUMshZdQlCr2AiipaJCoKKGhpaGgoUgKGhZA6cTCRhEPEYWAlNjOnZMvff659zsjHTmynd78ECBAgACBogK96FzGIkCAAAECTUm5BAQIECBQVkBJlY3GYAQIECCgpNwBAgQIECgroKTKRmMwAgQIEFBS7gABAgQIlBVQUmWjMRgBAgQIKCl3gAABAgTKCiipstEYjAABAgSUlDtAgAABAmUFlFTZaAxGgAABAkrKHSBAgACBsgJKqmw0BiNAgAABJeUOECBAgEBZASVVNhqDESBAgICScgcIECBAoKyAkiobjcEIECBAQEm5AwQIECBQVkBJlY3GYAQIECCgpNwBAgQIECgroKTKRmMwAgQIEFBS7gABAgRumMDnvXbn7n77OsLaSmqElMxIgACBNQocHdx+2dry42R+Muv7bbnGR6/9UUpq7aQeSIAAgdoCpyW1aqv7rbUvvbfp7sPjZ1UnVlJVkzEXAQIENiTwR0n9OuFTX/Xp7uP5iw0deenHKqlL0/lFAgQIjCnwl5L6ucjq/Y9XVievq2ympKokYQ4CBAhsSeBMSZ22wOrcwW93dvp08mD+bksjXXiMkrruBJxPgACBLQtc/Erq7CC9tVe9LWeTR4sPWx7x93FXKqnDg1vn+/e6NnEuAQIECGxEoPf2fLFos3tPj482csA/Hqqkti3uPAIECAwmMGxJDeZsXAIECBBord2YP/dJmwABAgTGE/jfGyd6b2/6tz6bPPHGifHSNTEBAgQGF/AW9MEDND4BAgSSBXyYNzlduxEgQGBwAV+LNHiAxidAgECygC+YTU7XbgQIEBhcwL/qGDxA4xMgQIBADYErfZi3xgqmIECAAIFUASWVmqy9CBAgECCgpAJCtAIBAgRSBZRUarL2IkCAQICAkgoI0QoECBBIFVBSqcnaiwABAgECSiogRCsQIEAgVUBJpSZrLwIECAQIKKmAEK1AgACBVAEllZqsvQgQIBAgoKQCQrQCAQIEUgWUVGqy9iJAgECAgJIKCNEKBAgQSBVQUqnJ2osAAQIBAkoqIEQrECBAIFVASaUmay8CBAgECCipgBCtQIAAgVQBJZWarL0IECAQIKCkAkK0AgECBFIFlFRqsvYiQIBAgICSCgjRCgQIEEgV+A62y389JDic3QAAAABJRU5ErkJggg==" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,342,190)"><foreignObject width="176" height="28"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_0f4c75a6-cf99-4728-9a79-b6555de906e0" class="gliffy-text gliffy-graphic gliffy-rte-text n0f4c75a6-cf99-4728-9a79-b6555de906e0 gliffy_node_0f4c75a6-cf99-4728-9a79-b6555de906e0" style="width: 176px; height: 28px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 27; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 12px; text-decoration: none; color: #312101;"><span style="text-decoration: none; line-height: 14px;">denormalize(convertedItem)</span></span></p></div>
+                </foreignObject></g><g transform="matrix(1,0,0,1,382,243)"><foreignObject width="95" height="14"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_e50d4884-ff2f-44cc-8eb5-81cb16742094" class="gliffy-text gliffy-graphic gliffy-rte-text ne50d4884-ff2f-44cc-8eb5-81cb16742094 gliffy_node_e50d4884-ff2f-44cc-8eb5-81cb16742094" style="width: 95px; height: 14px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 28; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 12px; text-decoration: none; color: #312101;"><span style="text-decoration: none; line-height: 14px;">object</span></span></p></div>
+                </foreignObject></g><g data-layerId="Udu4WteXnBCz" transform="matrix(1,0,0,1,124.5,272)"><image width="596" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlQAAAA8CAYAAACgoCQ3AAAAAXNSR0IArs4c6QAACc5JREFUeF7t3UuPHFcVwPFzqvoxtrG9iLLIAgkReywcXl+GL8ICmHiBLOTMjDcIwRYRCXYskfIRWCHE068JrJC8MJGIIZ6e6e466NxHdXVP28Ipo7mV+fdoUq6uOrfO/d1K55yaSaLCCwEEEEAAAQQQQKCXgPaKJhgBBBBAAAEEEEBAKKi4CRBAAAEEEEAAgZ4CFFQ9AQlHAAEEEEAAAQQoqLgHEEAAAQQQQACBngIUVD0BCUcAAQQQQAABBCiouAcQQAABBBBAAIGeAhRUPQEJRwABBBBAAAEEKKi4BxBAAAEEEEAAgZ4CFFQ9AQlHAAEEEEAAAQQoqLgHEEAAAQQQQACBngIUVD0BCUcAAQQQQAABBCiouAcQQAABBBBAAIGeAhRUPQEJRwABBBBAAAEEKKi4BxBAAAEEEEAAgZ4CFFQ9AQlHAAEEEEAAAQQoqLgHEEAAAQQQQACBngIUVD0BCUcAAQQQQAABBCiouAcQQAABBBBAAIGeAhRUPQEJRwABBBBAAAEEKKi4BxBAAAEEEEAAgZ4CFFQ9AQlHAAEEEEAAAQQoqLgHEEAAAQQQQKA4gcf706/e2jv5e3GJvSQhCqqhrBR5IoAAAgggcIEEjn40fbcZyYdisn/r/ZOPSp86BVXpK0R+CCCAAAIIXECBj/enNxqRI5+6ivxmodXB135w/NtSKSioSl0Z8kIAAQQQQOACC/zt/vTmcilPugQq9kurZH/3+6cPS6OhoCptRcgHAQQQQAABBOThB9PdWuXxVgqTn06s3v/KnRdPS6HqVVA92Z+aqJh/qYqZ/yntp63P0/K3iZh29sP7KqamZiGuMVH1cfzx3qvjOmP5uO114xXjvogPdfaam7HxPNFO/jEfDfOK4zVtPjE3DWP7m3n++boeW5mkOa1yW40VrcI1Nzx8zGqLZcwt/NWaM9dsQi6eSZXmnG1jbjHOTRoPDuarvHK+/n67hm7UWcuXxflInq9/RbO8pul6krLdck0/dz1WQ47ZLl/Tc6oqMWnEpFrl6Od1c477ass0R4+rO3MKc6vEqjROzLkJOec8lg6XjtedOeW5xTw05tGI1ZXYchluqDY3v2YYO50jlVqdc2/EFiIyWjvuY6mN8vm1mC3FrF7YKMXN5yLm7zdi43Re2F+qjdvzo5G/L6fp/KWGfR9vMorHGh97pDZdiNlYzMJW7fhYZGcs1szjfrMQa8Zql+dizUTN0vbKqZjtqDUnz+1TEVnOxK5dEmuOxZaXxRYvxJZfEnv7M7HlNbHFp2KLt8RufCL2VxGZPRX79ztizx6Ifee2mNxt/x4t5XORPBBAoACBR4fTW1Ujj0IquVoJ/9BNL5W5mB5cms72v/xdOT7vlPsXVOc9A66PAAJfDAGas2KaM2/MckO6anxjw5Ibnc1GMjdVm41OujnPND/dBiw0TRuN32YDGpot8aZ7vXn387o5rRrS2Eh2G8bc6ITmzF+vaNBiQxYa/NAseeOUG742h9TohUaLBu2NN2iLnfHNWqrfrX3AedXSLariwWcqsn9z7+TH5/lh2KugCg+Sfij66weib98WvfpUdOcd0fdE5OO3REefiI6ui9bPRZ9dEa3/Izq6LFq/EK0uiT4/Fq13RKuZ6PXr10Rnpp9NRKtTUx2vtsdz02okqr4di87mojoyveT3d3hf9MS3C9OqFtWlqNaip4u41aWlrehpJTrxuHTOPGwtxlSi0oguqtUYkt+XkfhY7X4juqwsnO9x2oj619K3aX80Elk0tnbcn8Es/cwUl7cxzrT23NLxJuWT8/Jz8p/z1s+ppfKVaMcM5/m+f/ylbZO24g/d/COpih+T+bjHh+eDaZw8h1WcXyd8oITz2nHa/fD8LBj4uJavJ6KVX6z7nq7O3TaW5+DpbRsr5xzj1q+5OSfPPTz77OQSH37Gbw3flT8eCTl3x2ssOW3OJ+cWHmiuxsrjNT5mxyFIuasvUXrf93MOeZseyoacVsfSurbr5I9MV7mGnFMeOc4H2Bzfj7W5blkj904fBGfm5HHrOYUHufHeqqo0J3/EfHZO2+YYrtO5N0Pcan3O87OQayOAQGEC67VT+plO+3BqW10lR2K6v/v+7BfnMZVeBdV5JMw1EUDgiynwOg1adUX0n69o0OrpVb0qIv9Lg+YN2WxkWqUGbCc1aicbDZosROdbGrTcnIVGrRadewOXmjJJDd4iNXCxIRuFBswbt5HHtI2T6eIVDZo3XB63THHdBmBbs+UNX2702iK/c70c7w1ePh4bvirG5by84I1Pc9bej83WqvHw2PBeim0bsE6TmYvn2OzkYtpCXN7PzVS32G4bQwk/nF9rBPN5qyZsvfFo8+rGxd/ZCMX81uYtF/15TiE2NhLhK77Wmg1LuZ1pBHMTm+M2mt3Nxiw3SWH83Oh5/7ul8dtsZFZj+W9sxEZpFbey22wYc+PXeqTGbjO3tQar2yCmpiw3Xy+b07bmLDZZ4flkaNS7c1KR2kQuv8Yn3iMRPdzdm334GjFv7FQKqjdGyUAIIIAAAggg8KYEjj6Y3DZV/9XLVMJu/XGfH/tHJXJ4Y+/kZ2/q2p9nHAqqz6NGDAIIIIAAAgj8XwWODibvmelf/CLrP/BLlzX5l1Z2+Kvj0/t378Z/A+o8XxRU56nPtRFAAAEEEEBgq8CDe5Ovjyr98+ZBE1mo6KHOZvdv3pXnpfBRUJWyEuSBAAIIIIAAAq3Aw4PJN2rTP22Q/GTS1Icl/fencn4UVNy8CCCAAAIIIFCcwKN7k29Wlf7REzOVn48qOXz3eyfhf0VT4ouCqsRVIScEEEAAAQQuuMDjg/G3Kqv35s3y/u0789+XzkFBVfoKkR8CCCCAAAIXUODJvfG3d+/M/zCUqVNQDWWlyBMBBBBAAAEEihWgoCp2aUgMAQQQQAABBIYiQEE1lJUiTwQQQAABBBAoVoCCqtilITEEEEAAAQQQGIoABdVQVoo8EUAAAQQQQKBYAQqqYpeGxBBAAAEEEEBgKAIUVENZKfJEAAEEEEAAgWIFKKiKXRoSQwABBBBAAIGhCFBQDWWlyBMBBBBAAAEEihWgoCp2aUgMAQQQQAABBIYiQEE1lJUiTwQQQAABBBAoVoCCqtilITEEEEAAAQQQGIoABdVQVoo8EUAAAQQQQKBYAQqqYpeGxBBAAAEEEEBgKAIUVENZKfJEAAEEEEAAgWIFKKiKXRoSQwABBBBAAIGhCFBQDWWlyBMBBBBAAAEEihWgoCp2aUgMAQQQQAABBIYiQEE1lJUiTwQQQAABBBAoVoCCqtilITEEEEAAAQQQGIoABdVQVoo8EUAAAQQQQKBYAQqqYpeGxBBAAAEEEEBgKAL/BdA9Z4if1og1AAAAAElFTkSuQmCC" transform="translate(0,0)"/></g><g data-width="19" data-height="50" data-layerId="Udu4WteXnBCz" transform="translate(0.5,0.5) matrix(1,0,0,1,690.5,289.63344316309724)"><g><g transform="translate(0,0) scale(0.19,0.5)"><g><path fill="#FFFFFF" stroke="#000000" stroke-dasharray="1.7976931348623157e+308" vector-effect="non-scaling-stroke" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10"/><g transform="scale(5.2631578947368425,2)"/></g></g></g></g><g transform="matrix(1,0,0,1,517,283)"><foreignObject width="146" height="14"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_286a28e7-d0f7-4b43-b80c-5ec977f80853" class="gliffy-text gliffy-graphic gliffy-rte-text n286a28e7-d0f7-4b43-b80c-5ec977f80853 gliffy_node_286a28e7-d0f7-4b43-b80c-5ec977f80853" style="width: 146px; height: 14px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 31; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 12px; text-decoration: none; color: #312101;"><span style="text-decoration: none; line-height: 14px;">process(object)</span></span></p></div>
+                </foreignObject></g><g data-layerId="Udu4WteXnBCz" transform="matrix(1,0,0,1,109.49637024789024,298.99999999999983)"><image width="596" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlQAAAA8CAYAAACgoCQ3AAAAAXNSR0IArs4c6QAABItJREFUeF7t3bFq01EUB+BzK5rWxcHJwUEKFUcFwUGHBhdHh7yIi+3mZOsbKG4uDn0GNzefoGpXR0URbFFzRSHwV5QSbiDn2q9j2xt+9zsn4QctSQlfBAgQIECAAAECTQKl6bTDBAgQIECAAAECoVBZAgIECBAgQIBAo4BC1QjoOAECBAgQIEBAobIDBAgQIECAAIFGAYWqEdBxAgQIECBAgIBCZQcIECBAgAABAo0CClUjoOMECBAgQIAAAYXKDhAgQIAAAQIEGgUUqkZAxwkQIECAAAECCpUdIECAAAECBAg0CihUjYCOEyBAgAABAgQUKjtAgAABAgQIEGgUUKgaAR0nQIAAAQIECChUdoAAAQIECBAg0CigUDUCOk6AAAECBAgQUKjsAAECBAgQIECgUUChagR0nAABAgQIECCgUNkBAgQIECBAgECjgELVCOg4AQIECBAgQEChsgMECBAgQIAAgUYBhaoR0HECBAgQIECAgEJlBwgQIECAAAECjQLdFqqD3Ti3vhUfG+/vOAECBAgQIECgWaCrQvXuQZz9fGY0LiuxWSPGG1tHV5sFPAABAgQIECBAoFEgfaGqT+L02w+jcZ3GOErZjKjXZ3deGx2dv3gv3jcaOE6AAAECBAgQaBJIWahqRDnYWd2cRoxLqXdqjWuDW36LqM9ORX28vv31VdPtHSZAgAABAgQILEAgVaHaf7h6KyJul1InEXFldr8S8SWi7q2UlafrW4cvF3BvD0GAAAECBAgQWJjA0gvVm0drN+r36d0aMSklLg1u9qmU2JuW8vzy/cMXC7uxByJAgAABAgQILFhgKYVqf3f1Zql18qtERVz4804/Q9XBNze2j37L+XpnNPzx3CQej988S2Nf7It9+beA54fnx//8/JjnbgpVRCho86xMhBdQL6DzbIx9sS/2RSGdCfT2ejDP7i6lUA0D+pPfPOPyuwQIECBAgEBGgaUXqiGKf0rPuCIyESBAgAABAscJpCpUs7DeNuG4sfk5AQIECBAgkEkgZaEaAnljz0zrIgsBAgQIECDwN4H0hWoY2kfPWGICBAgQIEAgo0BXhWoI6MORM66TTAQIECBA4GQKdFuoTua43JoAAQIECBDIKKBQZZyKTAQIECBAgEBXAgpVV+MSlgABAgQIEMgooFBlnIpMBAgQIECAQFcCClVX4xKWAAECBAgQyCigUGWcikwECBAgQIBAVwIKVVfjEpYAAQIECBDIKKBQZZyKTAQIECBAgEBXAgpVV+MSlgABAgQIEMgooFBlnIpMBAgQIECAQFcCClVX4xKWAAECBAgQyCigUGWcikwECBAgQIBAVwIKVVfjEpYAAQIECBDIKKBQZZyKTAQIECBAgEBXAgpVV+MSlgABAgQIEMgooFBlnIpMBAgQIECAQFcCClVX4xKWAAECBAgQyCigUGWcikwECBAgQIBAVwIKVVfjEpYAAQIECBDIKKBQZZyKTAQIECBAgEBXAgpVV+MSlgABAgQIEMgooFBlnIpMBAgQIECAQFcCClVX4xKWAAECBAgQyCjwA3+5VExFJHx1AAAAAElFTkSuQmCC" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,542,340)"><foreignObject width="95" height="14"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_48e31ca6-134c-4c9f-92ac-30387308ee6f" class="gliffy-text gliffy-graphic gliffy-rte-text n48e31ca6-134c-4c9f-92ac-30387308ee6f gliffy_node_48e31ca6-134c-4c9f-92ac-30387308ee6f" style="width: 95px; height: 14px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 33; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 12px; text-decoration: none; color: #312101;"><span style="text-decoration: none; line-height: 14px;">object</span></span></p></div>
+                </foreignObject></g><g data-layerId="Udu4WteXnBCz" transform="matrix(1,0,0,1,-10,320)"><image width="145" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAAA8CAYAAABmWlgTAAAAAXNSR0IArs4c6QAAAlNJREFUeF7t2bFqU2EYxvHnjWjSLg5ODg4SqDi2IDjokIOLo0NupIvp5mTqHVS6dXHINbi5eQVVuzoqimCDNq8oBo4iCc1zaL6D/87nPDnfPz9I24T4oYBZIMz7uZ0CAhEI7AIgshMyACIM2AVAZCdkAEQYsAuAyE7IAIgwYBcAkZ2QARBhwC4AIjshAyDCgF0ARHZCBkCEAbsAiOyEDIAIA3YBENkJGQARBuwCILITMgAiDNgFQGQnZABEGLALtBrRyb6u9kf6ZFdgwCrQOkTvn2jzy5VuFR0NUqq2RtNtqwA32wVagSif6/K7j90qZ6oUMZDyzvzkG93ptRu7+mCXYGDlAsUiSilOxr3BTKoi8mGmdmqn/C7l0SXlQX/v2+uVT8+NjRQoDtHx0959SQ8icijp9vyUIX2VctKJzmF/dPqqkdMz0kiBIhC9fbZxN89mj1IaRuhm7WSfIzSZRby49fj0ZSMnZqTxAmtDdLzfuxeZw19wpOt/n+zng+WC427tTf949jfj7qLLl4b73/eWBlpwAYh+xwHR6ozWhqj+yHycrf4GlnBnEYjqIfjFugQW53uG4hDNH58/8c/3Rq7z6mIR1aPwz8Z1Eln+2q1AVD8GX3ssf1Mv+orWIaoH4gvYi+by79drNaIyEvIUIMKAXQBEdkIGQIQBuwCI7IQMgAgDdgEQ2QkZABEG7AIgshMyACIM2AVAZCdkAEQYsAuAyE7IAIgwYBcAkZ2QARBhwC4AIjshAyDCgF0ARHZCBkCEAbsAiOyEDIAIA3YBENkJGfgBwD6cPYOe6Y8AAAAASUVORK5CYII=" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,24,356)"><foreignObject width="95" height="14"><style>
+                    .gliffy-rte-text {
+                        margin:0 0;
+                        padding:0 0;
+                        border: 0 none;
+                        line-height:normal;
+                        color:black;
+                        background-color:transparent;
+                        text-align:center;
+                    }
+
+                    .gliffy-rte-text p {
+                        line-height: 0px;
+                        white-space:normal;
+                        word-wrap: break-word;
+                        margin: 0 0;
+                        padding: 0 0;
+                        border: 0 none;
+                        font-size:12px;
+                        font-family:Arial;
+                    }
+
+                    /*otherwise we want to fix the color to blue*/
+                    .gliffy-rte-text p a {
+                        color: #0000FF;
+                        text-decoration: underline;
+                    }
+
+                    .gliffy-rte-text p a span {
+                        /*this !important is actually required.
+                        We need to override the text-decoration property that tinyMCE shoves into the span*/
+                        text-decoration: underline !important;
+                    }
+                </style>
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="gliffy_node_2de96c40-9891-4bc4-b7a0-0d5596175b21" class="gliffy-text gliffy-graphic gliffy-rte-text n2de96c40-9891-4bc4-b7a0-0d5596175b21 gliffy_node_2de96c40-9891-4bc4-b7a0-0d5596175b21" style="width: 95px; height: 14px; visibility: visible; overflow: visible; margin: 0px; padding: 0px; background-color: transparent; transform: none; transform-origin: 0px 0px; top: 0px; left: 0px; z-index: 35; position: static;"><p style="text-align: center;"><span style="font-family: Arial; font-size: 12px; text-decoration: none; color: #312101;"><span style="text-decoration: none; line-height: 14px;">object</span></span></p></div>
+                </foreignObject></g></g></svg>
