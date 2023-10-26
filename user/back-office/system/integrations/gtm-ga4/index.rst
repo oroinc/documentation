@@ -234,6 +234,7 @@ The |add_to_cart| tag signifies that a customer user has added an item to a shop
    :widths: 20, 20
 
    "currency","{{ecommerce.currency}}"
+   "value","{{ecommerce.value}}"
    "items","{{ecommerce.items}}"
 
 
@@ -262,6 +263,7 @@ The |remove_from_cart| tag signifies that a customer user has removed an item fr
    :widths: 20, 20
 
    "currency","{{ecommerce.currency}}"
+   "value","{{ecommerce.value}}"
    "items","{{ecommerce.items}}"
 
 
@@ -290,6 +292,7 @@ The |begin_checkout| tag signifies that a customer user has started a checkout p
    :widths: 20, 20
 
    "currency","{{ecommerce.currency}}"
+   "value","{{ecommerce.value}}"
    "items","{{ecommerce.items}}"
 
 
@@ -318,6 +321,7 @@ The |add_shipping_info| tag signifies that a customer user has selected a shippi
    :widths: 20, 20
 
    "currency","{{ecommerce.currency}}"
+   "value","{{ecommerce.value}}"
    "items","{{ecommerce.items}}"
    "shipping_tier","{{ecommerce.shipping_tier}}"
 
@@ -347,6 +351,7 @@ The |add_payment_info| tag signifies that a customer user has selected a payment
    :widths: 20, 20
 
    "currency","{{ecommerce.currency}}"
+   "value","{{ecommerce.value}}"
    "items","{{ecommerce.items}}"
    "payment_type","{{ecommerce.payment_type}}"
 
@@ -403,6 +408,7 @@ The |view_item| tag signifies that a customer user has reviewed a product detail
    :widths: 20, 20
 
    "currency","{{ecommerce.currency}}"
+   "value","{{ecommerce.value}}"
    "items","{{ecommerce.items}}"
 
 
@@ -513,6 +519,7 @@ The |purchaseGA4| tag signifies that a customer user has submitted an order.
    :widths: 20, 20
 
    "currency","{{ecommerce.currency}}"
+   "value","{{ecommerce.value}}"
    "items","{{ecommerce.items}}"
    "transaction_id","{{ecommerce.transaction_id}}"
    "affiliation","{{ecommerce.affiliation}}"
