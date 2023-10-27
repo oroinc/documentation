@@ -633,7 +633,7 @@ Links (User)
 
 .. |Download the .json file| raw:: html
 
-   <a href="https://oroinc.com/downloads/oro_container.zip" target="_blank">Download the .json file</a>
+   <a href="https://oroinc.com/wp-content/uploads/2023/10/oroGa4Container-25-10-23.zip" target="_blank">Download the .json file</a>
 
 .. |importgtm| raw:: html
 
