@@ -3,6 +3,8 @@
 Integration with Salesforce
 ===========================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 OroCommerce offers integration with Salesforce, a widely used customer relationship management (CRM) platform. It enables Salesforce merchants to use OroCommerce for their online stores and allows customers to easily access and purchase items through the Oro storefront.
 
 The integration between OroCommerce and Salesforce is powered by the Prefect middleware, connecting and facilitating communication between the two platforms. Available as of OroCommerce version 5.1 LTS, the Salesforce integration comes as an OroCommerce extension and requires :ref:`installation <cookbook-extensions-composer>`. For more information, see |Salesforce Oro Integration extension|.

@@ -3,6 +3,8 @@
 Integration with Paypal Services
 ================================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 Supported Paypal Services
 -------------------------
 

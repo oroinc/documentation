@@ -5,6 +5,8 @@
 Integration with Stripe Payment Service
 =======================================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 Stripe is a leading online payment processing platform that enables businesses to accept credit card payments and other forms of online transactions securely and efficiently. Integrating Stripe with OroCommerce allows businesses to use the powerful features and capabilities of Stripe within their OroCommerce website, streamlining the payment process for customers and merchants alike.
 
 .. note:: Stripe Integration comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the |Stripe Integration| package.

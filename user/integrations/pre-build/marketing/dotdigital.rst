@@ -3,6 +3,8 @@
 Integration with Dotdigital
 ===========================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 Dotdigital is a marketing automation platform that empowers businesses to engage, convert, and retain customers across multiple channels. With its wide array of features, Dotdigital facilitates personalized and targeted marketing campaigns, email automation, SMS marketing, social media engagement, and customer data analysis.
 
 For OroCommerce users, integrating with Dotdigital presents a host of benefits that enhance the ecommerce operations and customer engagement strategies.
@@ -64,5 +66,7 @@ By implementing these security measures, OroCommerce and Dotdigital integration 
 
 * :ref:`Configure Dotdigital Integration in the Back-Office <user-guide-dotmailer-overview>`
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 

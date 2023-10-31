@@ -3,6 +3,8 @@
 Integration with the DPD Service
 ================================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 Supported DPD Services
 ----------------------
 
@@ -95,3 +97,6 @@ OroCommerce and DPD prioritize the security and protection of sensitive data dur
 - **Regular Security Audits:** Both OroCommerce and DPD conduct regular security audits and vulnerability assessments to identify and address potential security risks.
 
 By implementing these security measures, OroCommerce and DPD integration ensures a safe and secure shipping and fulfillment process, providing merchants and customers with peace of mind during their transactions.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
