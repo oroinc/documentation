@@ -906,3 +906,14 @@ Links (User)
 
    <a href="https://www.youtube.com/watch?v=CUjmniejCQU" target="_blank">how to configure integration with Stripe</a>
 
+.. |Google Retail Recommendations| raw:: html
+
+   <a href="https://cloud.google.com/retail/docs" target="_blank">Google Retail Recommendations</a>
+
+.. |contact our support team|  raw:: html
+
+   <a href="https://oroinc.com/contact-us/" target="_blank">contact our support team</a>
+
+.. |extensions store|  raw:: html
+
+   <a href="https://extensions.oroinc.com/" target="_blank">extensions store</a>
