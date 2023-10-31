@@ -19,7 +19,7 @@ On the other hand, Oro also empowers users to create custom integrations tailore
     <h2>Pre-Built Integrations</h2>
 
        <ul class="tag-cloud">
-          <li><a class="tag-important" href="/pre-build/crm">CRM Integrations</a></li>
+          <li><a class="tag-important" href="/pre-build/crm">CRM and Marketplace Integrations</a></li>
           <li><a class="tag-important" href="/pre-build/customer-support">Customer Support Integrations</a></li>
           <li><a class="tag-important" href="/pre-build/erp">ERP Integrations</a></li>
           <li><a class="tag-very-important" href="pre-built/marketing">Marketing Integrations</a></li>
