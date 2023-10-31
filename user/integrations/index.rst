@@ -1,14 +1,12 @@
-:title: OroCommerce and OroMarketplace Integrations Documentation
+:title: OroCommerce Integrations Documentation
 
 .. meta::
-   :description: Integrations documentation for the Oro application and OroMarketplace users
+   :description: Integrations documentation for the Oro application users
 
 Integrations
 ============
 
-.. warning:: Please be aware that the Integrations section of documentation is in progress of writing and the information currently provided here may be incomplete or subject to change.
-
-Welcome to the Integrations documentation, comprehensive and detailed information on the diverse range of integration options offered by Oro. Whether you are interested in ready-made connections using the Oro's out-of-the-box integrations or want to create custom integrations just for your business, this section is your go-to resource.
+At Oro, we understand that every business is unique, and that is why we offer a wide range of integration options to cater to your specific needs. Our integration capabilities are flexible, and can be customized to meet the requirements of your business.
 
 Oro offers a comprehensive integration framework that encompasses two distinct types: pre-built integrations and custom integrations.
 
@@ -16,41 +14,32 @@ Pre-built integrations provide a turnkey solution to seamlessly connect with ser
 
 On the other hand, Oro also empowers users to create custom integrations tailored to their specific needs. Custom integrations can be built to integrate with any required system, allowing businesses to connect Oro with their unique set of applications, databases, or external services, ensuring a highly adaptable and scalable integration environment.
 
-Whether leveraging pre-built integrations or crafting custom ones, Oro offers a flexible approach to meet diverse integration requirements.
-
-
-
-.. .. raw:: html
+.. raw:: html
 
     <h2>Pre-Built Integrations</h2>
 
        <ul class="tag-cloud">
-          <li><a class="tag-important" href="payment/index">Payment</a></li>
-          <li><a class="tag-important" href="sales/quotes/">Shipping</a></li>
-          <li><a class="tag-important" href="sales/rfq/">CRM</a></li>
-          <li><a class="tag-very-important" href="sales/orders/">Search</a></li>
-          <li><a class="" href="sales/price-lists/">CPQ</a></li>
-          <li><a class="" href="sales/payment-terms/">Marketing</a></li>
-          <li><a class="tag-important" href="customers/customers/">Other</a></li>
+          <li><a class="tag-important" href="/pre-build/crm">CRM and Marketplace Integrations</a></li>
+          <li><a class="tag-important" href="/pre-build/customer-support">Customer Support Integrations</a></li>
+          <li><a class="tag-important" href="/pre-build/erp">ERP Integrations</a></li>
+          <li><a class="tag-very-important" href="pre-built/marketing">Marketing Integrations</a></li>
+          <li><a class="" href="pre-built/payment">Payment Integrations</a></li>
+          <li><a class="" href="pre-built/shipping">Shipping Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/PIM">PIM Integrations</a></li>
+          <li><a class="tag-important" href="/pre-build/misc">Miscellaneous Integrations</a></li>
        </ul>
 
-.. .. raw:: html
+.. raw:: html
 
     <h2>Custom Integrations</h2>
 
        <ul class="tag-cloud">
-          <li><a class="tag-important" href="payment/index">Import/Export</a></li>
-          <li><a class="" href="sales/quotes/">File Exchange</a></li>
-          <li><a class="tag-important" href="sales/rfq/">API</a></li>
+          <li><a class="tag-important" href="custom/api-integrations">Oro API</a></li>
+          <li><a class="" href="custom/import-export-integration">Import and Export</a></li>
        </ul>
 
 .. toctree::
    :hidden:
 
-   payment/index
-   shipping/index
-   ERP <erp/index>
-   Marketing <marketing/index>
-   PIM <PIM/index>
-   CRM <crm/index>  
-   GS1 <gs1>
+   Pre-Built <pre-build/index>
+   Custom <custom/index>

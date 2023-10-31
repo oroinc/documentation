@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _configuration--guide--commerce--marketplace:
 
 Configure Global Marketplace Settings

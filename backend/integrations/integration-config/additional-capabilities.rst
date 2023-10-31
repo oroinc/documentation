@@ -10,7 +10,7 @@ That's might be useful for example when integration supports multiple modes(upda
 date of last synchronization or another example if your connector supports renew download it's useful to store current state.
 
 To use this feature your connector class should extends ``Oro\Bundle\IntegrationBundle\Provider\AbstractConnector``,
-and then methods `addStatusData` and `getStatusData` will be available.
+and then methods ``addStatusData`` and ``getStatusData`` will be available.
 
 **Example:**
 

@@ -278,19 +278,42 @@ To add a new config scope:
         class TestScopeManager extends AbstractScopeManager
         {
             /**
-             * @inheritDoc
+             * {@inheritDoc}
              */
             public function getScopedEntityName(): string
             {
-                return 'test'; //scope entity name
+                return 'test'; // scope entity name
             }
 
             /**
-             * @inheritDoc
+             * {@inheritDoc}
              */
-            public function getScopeId(): ?int
+            public function getScopeId(): int
             {
                 return 0; // scope entity id (can be different for different cases)
+            }
+
+            /**
+             * {@inheritDoc}
+             */
+            public function setScopeId(?int $scopeId): void
+            {
+            }
+
+            /**
+             * {@inheritDoc}
+             */
+            protected function isSupportedScopeEntity(object $entity): bool
+            {
+                return false;
+            }
+
+            /**
+             * {@inheritDoc}
+             */
+            protected function getScopeEntityIdValue(object $entity): int
+            {
+                throw new \LogicException(sprintf('"%s" is not supported.', ClassUtils::getClass($entity)));
             }
         }
 

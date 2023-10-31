@@ -55,6 +55,27 @@ You need to configure the following parameters for the testing environment:
 
        $ php bin/console oro:install --env=test
 
+   .. hint:: As functional tests rely on exact values, test environments do not support install command options. If you need to modify these options, you'll need to adjust the ``oro_test_framework.install_options`` configuration to closely match your desired option.
+      Configuration file example:
+
+      .. code-block:: yaml
+         :caption: config/config.yml
+
+         oro_test_framework:
+           install_options:
+             user_name: admin
+             user_email: admin@example.com
+             user_firstname: John
+             user_lastname: Doe
+             user_password: admin
+             sample_data: false
+             organization_name: OroInc
+             application_url: http://localhost/
+             skip_translations: true
+             timeout: 600
+             language: en
+             formatting_code: en_US
+
    .. note::
 
        When the following options are not provided, they are set up automatically for the ``test`` environment:

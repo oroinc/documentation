@@ -1,5 +1,3 @@
-:oro_documentation_types: OroMarketplace
-
 .. _doc--products--before-you-begin:
 
 Manage Products in the Back-Office
@@ -27,15 +25,20 @@ With this information in mind, here are the references to the elements that need
 Create Your Products
 --------------------
 
-Next, you can proceed to create products. You can create two types of products in OroCommerce, :term:`simple <Simple Product>` and :term:`configurable <Configurable Product>`.
+.. warning:: Please be aware that the Product Kits feature is still in development and some functionality is incomplete.
+
+Next, you can proceed to create products. You can create three types of products in OroCommerce, :term:`simple <Simple Product>`, :term:`configurable <Configurable Product>`, and a :term:`product kit <Product Kit>`.
 
 Simple products are physical items that exist in a primary, single variation. Their qualifiers, such as color or size, cannot be modified, meaning customers cannot select the same product with slightly different characteristics. Simple products have a unique SKU and serve as ‘building blocks’ for configurable products.
 
 Unlike a simple product, a configurable product is an item available in multiple variations. Customers ‘configure’ the product in terms of its color, size, or any other applicable parameters according to buying needs. A configurable product with all its different attributes (e.g., size and color variations) is displayed in the storefront as a matrix ordering form.
 
+A product kit is an assortment of products, each with their individual SKUs. Each product in this assortment bundle can be mandatory or optional for the buyers to buy in order to proceed though the checkout. An example of a product kit would be a lamp with a selection of optional accessories for it, such as spare bulbs of different wattage.
+
 * :ref:`Create a simple product <products--products--create-simple-product>`
 * :ref:`Create a configurable product <products--products--create-config-product>`
 * :ref:`Set up a matrix form and variations of a configurable product <config-guide--landing-commerce--products--configurable-products>`
+* :ref:`Create a product kit <products--products--create-product-kit>`
 
 Control Your Products
 ---------------------
@@ -54,6 +57,7 @@ Once you have created products, you can:
 
    create-simple
    create-complex
+   create-kit
    managing-product-visibility
    Manage Product Grids <manage/index>
    Manage Product Units <product-units/index>

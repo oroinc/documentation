@@ -21,8 +21,8 @@ You can view details of your application settings and control the Web API featur
 
    * **Enable API** --- enables the back-office API feature for your application.
    * **Enable Storefront API** --- enables the storefront API feature for your application.
+   * **Enable Guest Storefront API** --- grants access to some storefront API resources of your application to non-authenticated visitors. This option is available when the storefront API feature is enabled.
 
    .. note:: The back-office API feature can be toggled on the global and :ref:`organization <admin-configuration-application-org>` levels, while the storefront API configuration is available on three levels - globally, per organization, and per :ref:`website <admin-configuration-application-website>`.
 
 4. Click **Save Settings**.
-   

@@ -633,7 +633,7 @@ Links (User)
 
 .. |Download the .json file| raw:: html
 
-   <a href="https://oroinc.com/downloads/oro_container.zip" target="_blank">Download the .json file</a>
+   <a href="https://oroinc.com/wp-content/uploads/2023/10/oroGa4Container-25-10-23.zip" target="_blank">Download the .json file</a>
 
 .. |importgtm| raw:: html
 
@@ -839,7 +839,7 @@ Links (User)
 
 .. |Download the .json file (GA4)1| raw:: html
 
-   <a href="http://academy.oroinc.com/wp-content/uploads/sites/21/2023/09/oroGa4Container-14-09-23.zip" target="_blank">Download the .json file</a>
+   <a href="https://academy.oroinc.com/wp-content/uploads/sites/21/2023/09/oroGa4Container-14-09-23.zip" target="_blank">Download the .json file</a>
 
 
 .. |Google Analytics 4 Event| raw:: html
@@ -902,3 +902,18 @@ Links (User)
 
    <a href="https://extensions.oroinc.com/orocommerce/extension/salesforce-oro-integration/" target="_blank">Salesforce Oro Integration extension</a>
 
+.. |how to configure integration with Stripe| raw:: html
+
+   <a href="https://www.youtube.com/watch?v=CUjmniejCQU" target="_blank">how to configure integration with Stripe</a>
+
+.. |Google Retail Recommendations| raw:: html
+
+   <a href="https://cloud.google.com/retail/docs" target="_blank">Google Retail Recommendations</a>
+
+.. |contact our support team|  raw:: html
+
+   <a href="https://oroinc.com/contact-us/" target="_blank">contact our support team</a>
+
+.. |extensions store|  raw:: html
+
+   <a href="https://extensions.oroinc.com/" target="_blank">extensions store</a>
