@@ -36,7 +36,6 @@ Security Measures
 
 OroCRM includes various security measures to protect sensitive customer data and ensure the platform's overall security. These measures help safeguard against data breaches, unauthorized access, and other security threats. Here are some of the security measures typically implemented in OroCRM:
 
-
 1. **Authentication and Authorization:**
 
    * *User authentication:* OroCRM supports strong authentication mechanisms, including multi-factor authentication (MFA), to ensure only authorized users can access the system.

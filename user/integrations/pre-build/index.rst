@@ -13,6 +13,6 @@ Oro's prebuilt integrations offer a ready-made solution to effortlessly link wit
    ERP <erp/index>
    Marketing <marketing/index>
    PIM <PIM/index>
-   CRM <crm/index>
+   CRM & Marketplace <crm/index>
    Customer Support <customer-support/index>
    More <misc/index>
