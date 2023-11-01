@@ -10,24 +10,7 @@ Oro supports integration with |Google Retail Recommendations|, allowing you to t
 Collected Events
 ----------------
 
-Data sourced from productCatalogs and userEvents is used to create a recommendation model, which is then used for placement on the required pages.
-
-The integration sends the following data from Oro to Google Retail Cloud for productCatalogs and userEvents from product, shopping list and checkout pages:
-
-=====================  =======================================
-     userEvents            productCatalog
-=====================  =======================================
-Customer ID              Product Name
-Product ID               Product Type
-Product Quantity         Product Category
-Shopping List ID         Product Default Short Description
-Product price            Brand
-Order total              Quantity
-Tax amount               Product Price
-                         Product attributes
-=====================  =======================================
-
-Google Retail uses real-time events to generate recommendations and search results. Different events can be collected on all or some pages of the website. Below is a list of event types that you can record when users browse your website (userEvents):
+Google Retail uses real-time events to generate recommendations and search results. Different events can be collected on all or some pages of the website. Below is a list of event types obtained from `productCatalogs` and `userEvents` that you can record when users browse your website:
 
 * add-to-cart
 * category-page-view
@@ -37,10 +20,24 @@ Google Retail uses real-time events to generate recommendations and search resul
 * search
 * shopping-cart-page-view
 
-These collected events are used to help build a range of recommendation models.
+These collected events are used to help build a range of recommendation models. These models are used to place the recommended products on the relevant pages of the website.
 
 .. image:: /user/img/integrations/google-ai-user-events.png
    :alt: User events and models on the Google side
+
+When integrated, Oro sends certain data to Google Retail Cloud. The data are collected from productCatalogs and userEvents and include information from product, shopping list and checkout pages:
+
+.. csv-table::
+   :header: "userEvents", "productCatalog"
+
+    "Customer ID","Product Name"
+    "Product ID", "Product Type"
+    "Product Quantity","Product Category"
+    "Shopping List ID","Product Default Short Description"
+    "Product price","Brand"
+    "Order total","Quantity"
+    "Tax amount","Product Price"
+    "","Product attributes"
 
 Recommendation Models
 ---------------------
@@ -72,3 +69,4 @@ Once trained, these models can be added to various pages of your website such as
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
+
