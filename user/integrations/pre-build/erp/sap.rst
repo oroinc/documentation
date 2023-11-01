@@ -3,6 +3,8 @@
 SAP Integration
 ===============
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 Supported Services
 ------------------
 
@@ -60,3 +62,7 @@ Several security measures are typically implemented to secure this integration:
 * **Access Limited by IP Address:** Restricting access to the integration endpoints based on IP addresses adds an additional layer of security. This means that only specific IP addresses or ranges can connect to the integration interfaces. Unauthorized IP addresses are blocked, reducing the risk of unauthorized access and potential threats from external sources.
 
 * **SFTP (Secure File Transfer Protocol):** SFTP is often used for secure data file transfers during integration. It ensures that data files are securely transmitted between OroCommerce and SAP, preventing data leakage or interception during file exchange. SFTP encrypts data both in transit and at rest, further enhancing the overall security of data transfer.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+

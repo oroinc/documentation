@@ -3,6 +3,8 @@
 Integration with Zendesk
 ========================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 Zendesk is a globally recognized, cloud-based customer service and engagement platform designed to streamline interactions between businesses and their customers. It offers a comprehensive suite of tools that enable organizations to provide personalized customer service across various communication channels, and address the issues that customers face in an efficient and timely manner.
 
 The integration of Zendesk with OroCommerce offers a multitude of benefits for businesses operating in the e-commerce sector.
@@ -57,3 +59,6 @@ OroCommerce and Zendesk prioritize the security and protection of sensitive data
 **Related Articles**
 
 * :ref:`Configure Zendesk Integration in the Back-Office <user-guide-zendesk-integration>`
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
