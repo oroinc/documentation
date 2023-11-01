@@ -3,6 +3,8 @@
 Integration with Avatax
 =======================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 AvaTax is a tax compliance and automation software solution provided by Avalara, designed to simplify and automate the calculation and management of sales and use taxes. When integrated with OroCommerce, it automatically calculates taxes and up-to-date tax rates for your store.
 
 .. image:: /user/img/integrations/tax-provider.png
@@ -72,3 +74,6 @@ The security measures taken by OroCommerce during the integration with AvaTax ar
 * **Monitoring and Logging:** OroCommerce implements monitoring and logging capabilities to track integration activities. This includes monitoring for unusual or unauthorized access attempts and logging integration-related events for auditing and analysis.
 
 * **Security Patching and Updates:** OroCommerce keeps its software components up to date with security patches and updates, and it regularly reviews security advisories to apply patches promptly and address known vulnerabilities.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin

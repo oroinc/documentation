@@ -8,6 +8,7 @@ OroCommerce offers a versatile and dynamic ecosystem of integrations that extend
 * :ref:`GS1 <integrations-misc-gs1>`
 * :ref:`Avatax <integrations-misc-avatax>`
 
+
 .. toctree::
    :hidden:
 

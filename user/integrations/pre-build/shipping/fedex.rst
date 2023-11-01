@@ -3,6 +3,8 @@
 Integration with FedEx Shipping Service
 =======================================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 FedEx is a multinational courier delivery services company, known for its comprehensive suite of shipping and logistics solutions. The  services range from express parcel delivery to freight transportation, providing options tailored to the diverse needs of e-commerce businesses.
 
 Key FedEx Features
@@ -105,6 +107,9 @@ By implementing these security measures, OroCommerce and FedEx integration ensur
 
 * :ref:`Shipping Configuration Concept Guide <admin-guide--shipping>`
 * :ref:`Configure FedEx Shipping Integration in the Back-Office <doc--integrations--fedex>`
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 
 

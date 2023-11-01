@@ -3,6 +3,8 @@
 Integration with UPS Services
 =============================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 OroCommerce offers integration with UPS (United Parcel Service), a global package delivery service designed to meet the diverse shipping needs of businesses. Integration with UPS allows businesses to automate the shipping process and enables OroCommerce to calculate accurate shipping rates based on package dimensions, weight, destination, and the selected UPS service. It also allows customers to track their shipments in real-time.
 
 Supported UPS Services
@@ -91,3 +93,6 @@ UPS Data Security Measures:
 * **Compliance and Auditing:** UPS may undergo regular security audits and compliance assessments to meet industry and regulatory security standards.
 
 * **Data Retention Policies:** UPS typically follows data retention policies that dictate how long customer data is stored. This helps in minimizing the risk associated with long-term storage of sensitive information.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin

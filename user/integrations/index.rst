@@ -19,12 +19,13 @@ On the other hand, Oro also empowers users to create custom integrations tailore
     <h2>Pre-Built Integrations</h2>
 
        <ul class="tag-cloud">
+          <li><a class="tag-important" href="/pre-build/ai">AI Integrations</a></li>
           <li><a class="tag-important" href="/pre-build/crm">CRM and Marketplace Integrations</a></li>
           <li><a class="tag-important" href="/pre-build/customer-support">Customer Support Integrations</a></li>
           <li><a class="tag-important" href="/pre-build/erp">ERP Integrations</a></li>
-          <li><a class="tag-very-important" href="pre-built/marketing">Marketing Integrations</a></li>
-          <li><a class="" href="pre-built/payment">Payment Integrations</a></li>
-          <li><a class="" href="pre-built/shipping">Shipping Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/marketing">Marketing Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/payment">Payment Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/shipping">Shipping Integrations</a></li>
           <li><a class="tag-important" href="pre-built/PIM">PIM Integrations</a></li>
           <li><a class="tag-important" href="/pre-build/misc">Miscellaneous Integrations</a></li>
        </ul>
@@ -35,11 +36,17 @@ On the other hand, Oro also empowers users to create custom integrations tailore
 
        <ul class="tag-cloud">
           <li><a class="tag-important" href="custom/api-integrations">Oro API</a></li>
-          <li><a class="" href="custom/import-export-integration">Import and Export</a></li>
+          <li><a class="tag-important" href="custom/import-export-integration">Import and Export</a></li>
+          <li><a class="tag-important" href="custom/integrationbundle">OroIntegrationBundle</a></li>
        </ul>
+
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
 
 .. toctree::
    :hidden:
 
    Pre-Built <pre-build/index>
    Custom <custom/index>
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin

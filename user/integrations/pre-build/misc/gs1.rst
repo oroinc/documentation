@@ -3,6 +3,8 @@
 Integration with GS1
 ====================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 GS1 is a global organization that develops and maintains supply chain and business communication standards. Their standards are used for uniquely identifying products, services, and locations. GS1 standards include the GTIN (Global Trade Item Number) for products and GLN (Global Location Number) for locations. These standards help businesses ensure data accuracy, traceability, and efficiency.
 
 Integrating GS1 with OroCommerce enables seamless synchronization of product data. GS1 standards ensure that product information is consistent and accurate, reducing data entry errors and discrepancies. This streamlines the process of adding and updating product information in OroCommerce.
@@ -26,3 +28,6 @@ Security is paramount during the integration between GS1 and OroCommerce to prot
 * **HTTPS:** HTTPS is an essential security measure that ensures secure communication between OroCommerce and GS1 by encrypting data exchanged between them. HTTPS uses encryption protocols like SSL/TLS to encrypt the data transmitted between the OroCommerce server and GS1's systems. This encryption ensures it remains unreadable and secure even if data is intercepted. In addition, HTTPS verifies the identity of the server using digital certificates. This ensures that OroCommerce is connecting to a legitimate GS1 server.
 
 * **Username and Password Authentication:** Username and password authentication is a standard method for securing access to APIs and systems during integration. Usernames and passwords act as access credentials, allowing OroCommerce to authenticate itself when connecting to GS1's systems. Authentication ensures only authorized users or systems can access GS1's data or services. Unauthorized access is prevented.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
