@@ -147,6 +147,9 @@ Glossary
    Product Attribute
       A product attribute is a special type of custom field in the product details. For product attributes, OroCommerce enables you to manage and group attributes that are unique to a special product family. By adding the product attributes only to the product families they fit, you can limit the product data to the necessary characteristics.
 
+   Product Kit
+      A product kit is a type of a product that represents a grouping of items or services that you can sell together as a bundle (the Product Kits feature is still in development and some functionality is incomplete).
+
    Price Attribute
       Price attributes are custom parameters, like manufacturer’s suggested retail price (MSRP) or minimum advertised price (MAP), that may be needed as input information for your retail price listed on the website. Price attributes help you extend the product options with any custom value related to the price formation.
 

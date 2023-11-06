@@ -52,7 +52,7 @@ The datagrid displays the following details:
         .. note:: The cause of update may be alert resolving, subsequent occurrence of the same alert."
       "**USER**","relation","The first and last names of the user who performed the operation (optional)."
       "**MESSAGE**","text","The error or exception message that describes the cause of the occurred alert (optional)."
-      "**SOURCE**","string","The source of the alert, usually related to bundle name, integration name, CLI command, MQ job, e.g., `MicrosoftSync`, `GoogleIntegration`, `price-lists:recalculation`, etc.
+      "**SOURCE**","string","The source of the alert, usually related to bundle name, integration name, CLI command, MQ job, e.g., ``MicrosoftSync``, ``GoogleIntegration``, ``price-lists:recalculation``, etc.
 
         .. note:: It is recommended to name the source as the bundle name that is responsible for the integration or job implementation, e.g., MycrosoftSync, GoogleIntegration, Pricing. "
       "**RESOURCE**","string","The resource that is involved during integration or job execution.
@@ -61,8 +61,8 @@ The datagrid displays the following details:
 
         .. note:: It is recommended to name the resource as the entity name or to use FQCN that is related to the integration or job that caused an alert, e.g., Tasks, Calendars, Calendar Event, User, PriceList."
       "**ALERT TYPE**","string","Specifies the type of the alert (e.g., auth, sync, etc). Based on the alert type (error, warning, notice), the corresponding flash message is shown to a user."
-      "**OPERATION**","string","Describes the operation that has caused the alert (optional). For instance, the value for integration operation can be `import`, `export`, etc."
-      "**STEP**","string","Describes the logical part of the operation where the error has been detected, e.g., `get_list`, `get`, `map`, `save`, `load`, etc. Usually, it is used to specify the alert cause more precisely for further issue investigation."
+      "**OPERATION**","string","Describes the operation that has caused the alert (optional). For instance, the value for integration operation can be ``import``, ``export``, etc."
+      "**STEP**","string","Describes the logical part of the operation where the error has been detected, e.g., ``get_list``, ``get``, ``map``, ``save``, ``load``, etc. Usually, it is used to specify the alert cause more precisely for further issue investigation."
       "**ITEM ID**","integer","The identifier of the specific resource (Entity) item, e.g., Task id or CalendarEvent id, etc. (optional).
 
         .. note:: The value can be empty, as in the case with the Exception triggered on the step when entity id is not defined"

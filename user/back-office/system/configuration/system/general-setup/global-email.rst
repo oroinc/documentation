@@ -34,22 +34,31 @@ To configure email settings globally:
      * *Signature Content* --- Specify the text and formatting of your signature. By default, the email signature body is empty.
      * *Append Signature to Email Body* --- Define whether a signature must be added automatically or manually.
 
-   * **Email Threads** --- **Display Email Conversations As** and **Display Emails In Activity Lists As** define how emails and replies are displayed to the users, as threads or separately. Two options are available: threaded and non-threaded.
+4. Under **Email Threads**, select how to display emails and replies to users, either as threads or separately.
+
+   * **Display Email Conversations As** --- Defines the user's email representation under **My Emails**.
+
+   .. image:: /user/img/system/config_system/threaded_emails.png
+      :alt: A sample of an email with the threaded option selected
+
+   .. image:: /user/img/system/config_system/non-threaded-emails.png
+        :alt: A sample of an email with the non-threaded option selected
+
+
+   * **Display Emails In Activity Lists As** --- Defines how emails and replies are displayed under the **Activity** menu of a selected record.
 
      .. image:: /user/img/system/config_system/threaded_email_activities.png
         :alt: A sample of an email with the threaded option selected
 
-
-
-     .. image:: /user/img/system/config_system/non_threaded_activities.png
+     .. image:: /user/img/system/config_system/non_threaded_email_activities.png
         :alt: A sample of an email with the non-threaded option selected
 
-   * **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the dropdown. The settings can be changed to have **Reply all** displayed at the top.
+5. Under **Reply**, define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the dropdown. The settings can be changed to have **Reply all** displayed at the top.
 
      .. image:: /user/img/system/config_system/reply.png
         :alt: Selecting the default reply option
 
-   * **Attachments** --- Configure the following attachment options:
+6. Under **Attachments**, configure the following attachment options:
 
      * *Maximum Attachment Size, Mb* --- Set the maximum attachment size in Mb. Attachments that exceed the defined size will not be uploaded. You can remove size limitations by setting the size to 0.
      * *Enable Attachment Sync* --- Enable loading attachments on email sync. 
@@ -57,7 +66,7 @@ To configure email settings globally:
      * *Remove Large Attachments* --- Click the button to add a job to the queue to remove all attachments exceeding the defined size from the system. 
      * *Attachments Preview Limit* --- Set a limit to show preview for attachments (a thumbnail for images and a big file icon for other files). Set the preview limit to 0 if you wish to see a list with file names only.
 
-  * **SMTP Settings** --- SMTP protocol allows to send email messages. Click **Check SMTP Connection** once you provide the following details:
+7. Under **SMTP Settings**, configure the SMTP protocol that allows to send email messages. Click **Check SMTP Connection** once you provide the following details:
 
      * *Host* --- SMTP Host name, e.g. smtp.gmail.com
      * *Port* --- SMTP Port number, e.g. 465
@@ -65,19 +74,20 @@ To configure email settings globally:
      * *Username* --- Your email address
      * *Password* --- The password for your email address
 
-  * **HTML in templates** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows to paste any HTML code into a template or an email body editor without tag stripping.
+8. Under **HTML in templates**, enable or disable HTML Purifier. Disabling HTML Purifier allows to paste any HTML code into a template or an email body editor without tag stripping.
 
-  * **Notification Rules** --- Defines the rules that will be applied by default to a notification generated in the application. You can define the **Sender Email** and **Sender Name** to be used.
+9. Under **Notification Rules**, defines the rules that will be applied by default to a notification generated in the application. You can define the **Sender Email** and **Sender Name** to be used.
 
-  * **Maintenance Notifications** --- Provide the following details to set up maintenance notifications:
+10. Under **Maintenance Notifications**, provide the following details to set up maintenance notifications:
 
      * *Email Template* --- Select the default template for maintenance notifications from the list. 
      * *Recipients* --- Leave this field empty to send maintenance notification emails to all active users. To send notifications only to selected users, add their email addresses separated by semicolon (;).
-  * **Campaign** --- Defines the rules that will be applied by default to emails generated as part of marketing campaigns in the application. You can define the **Sender Email** and **Sender Name**.
 
-  * **System Mailboxes** --- A :ref:`system mailbox <admin-configuration-system-mailboxes>` allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**.
+11. Under **Campaign**, define the rules that will be applied by default to emails generated as part of marketing campaigns in the application. You can define the **Sender Email** and **Sender Name**.
 
-4. Click **Save Settings**.
+12. Under **System Mailboxes**, configure your :ref:`system mailbox <admin-configuration-system-mailboxes>` that allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**.
+
+13. Click **Save Settings**.
 
 .. _admin-configuration-system-mailboxes-global:
 .. _admin-configuration-system-mailboxes:

@@ -10,13 +10,13 @@ Out of the box, import and export is enabled for the following types of data:
 +==================+====================+================+
 | Products         | Leads              | Emails         |
 +------------------+--------------------+----------------+
-| Price lists      | Opportunities      | Integrations   |
+| Product Prices   | Opportunities      | Integrations   |
 +------------------+--------------------+----------------+
-| Inventory levels | Accounts           | Localizations  |
+| Price Attributes | Accounts           | Localizations  |
 +------------------+--------------------+----------------+
-|                  | Contacts           | Languages      |
+| Categories       | Contacts           | Languages      |
 +------------------+--------------------+----------------+
-|                  | Business Customers | Users          |
+| Inventory levels | Business Customers | Users          |
 +------------------+--------------------+----------------+
 |                  |                    | Organizations  |
 +------------------+--------------------+----------------+

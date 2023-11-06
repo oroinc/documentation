@@ -41,25 +41,6 @@ In the Product Images section of Commerce configuration settings, you can contro
 
     .. note:: When **Use System** checkbox is enabled, system settings are applied.
 
-**Popup Gallery on Product View**
-
-   * When **Popup Gallery on Product View** is enabled, image gallery in the storefront will take the following form:
-
-     .. image::/img/system/user_management/org_configuration/products/ImageGalleryOrganizationEnabled.png
-        :class: with-border
-
-     By clicking on the image, the pop up gallery will be displayed in the middle of the screen:
-
-     .. image:: /user/img/system/user_management/org_configuration/products/ImageGalleryOrganizationEnabled2.png
-        :class: with-border
-
-   * When **Popup Gallery on Product View** is disabled, the image gallery will take the form of an inline view:
-
-     .. image:: /user/img/system/user_management/org_configuration/products/ImageGalleryOrganizationDisabled.png
-        :class: with-border
-
-     Flick through the pictures in the gallery by pressing < or > arrows without leaving the product page.
-
 7. Click **Save**.
 
 .. finish

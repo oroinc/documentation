@@ -102,18 +102,7 @@ Promotions Filtration
 Flow and Filter Types
 ^^^^^^^^^^^^^^^^^^^^^
 
-When promotions are calculated, the list of applicable promotions is received with the help of ``Oro\Bundle\PromotionBundle\Provider\PromotionProvider``. To get only suitable promotions, filters are used. By default, they are the following:
-
-- ``Oro\Bundle\RuleBundle\RuleFiltration\EnabledRuleFiltrationServiceDecorator`` - filters enabled promotions
-- ``Oro\Bundle\PromotionBundle\RuleFiltration\DuplicateFiltrationService`` - filters promotions that are already used to avoid duplications
-- ``Oro\Bundle\PromotionBundle\RuleFiltration\ScopeFiltrationService`` - filters promotions with appropriate scopes
-- ``Oro\Bundle\RuleBundle\RuleFiltration\ExpressionLanguageRuleFiltrationServiceDecorator`` - filters promotions if their expressions are evaluated as true
-- ``Oro\Bundle\PromotionBundle\RuleFiltration\CurrencyFiltrationService`` - filters promotions by currency
-- ``Oro\Bundle\PromotionBundle\RuleFiltration\ScheduleFiltrationService`` - filters promotions with actual schedules
-- ``Oro\Bundle\PromotionBundle\RuleFiltration\CouponFiltrationService`` - filters promotions that have the `useCoupons` flag by applied coupons from context
-- ``Oro\Bundle\PromotionBundle\RuleFiltration\MatchingItemsFiltrationService`` - filters promotions if some of their products match line items' products given from context
-- ``Oro\Bundle\PromotionBundle\RuleFiltration\ShippingFiltrationService`` - filters shipping promotions by given shipping method from context
-- ``Oro\Bundle\RuleBundle\RuleFiltration\StopProcessingRuleFiltrationServiceDecorator`` - filters out successors of promotion with the `Stop Further Rule Processing` flag set, note that promotions are sorted by `Sort Order`
+When promotions are calculated, the list of applicable promotions is received with the help of ``Oro\Bundle\PromotionBundle\Provider\PromotionProvider``. To get only suitable promotions, filters that implement ``Oro\Bundle\RuleBundle\RuleFiltration\RuleFiltrationServiceInterface`` are used.
 
 Context Data Converters
 ^^^^^^^^^^^^^^^^^^^^^^^

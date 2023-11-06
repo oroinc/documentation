@@ -205,22 +205,17 @@ bundle to use it.
         }
     }
 
-***Tip:** You can use AmqpMessageQueueBundle to register the factory automatically*
+.. tip:: You can use AmqpMessageQueueBundle to register the factory automatically
 
-The config:
+You can use the ``ORO_MQ_DSN`` environment variable:
 
-.. code-block:: yaml
-   :caption: config/config.yml
+.. code:: bash
 
-    oro_message_queue:
-        transport:
-            default: 'amqp'
-            amqp:
-              host: '127.0.0.1'
-              port: 5672
-              user: 'guest'
-              password: 'guest'
-              vhost: '/'
+   ORO_MQ_DSN=amqp://guest:guest@localhost:5672/%2Fmaster
+
+When configuring a virtual host (vhost), ensure that the vhost is URL encoded.
+If no vhost is provided, the default value of ``/`` is used.
+For example, if the vhost is ``/master``, the corresponding url encoded vhost value is ``%2Fmaster``, and if the vhost is ``master``,the url encoded value is ``master``.
 
 
 RabbitMQ Useful Hints

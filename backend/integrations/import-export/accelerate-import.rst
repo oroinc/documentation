@@ -40,52 +40,34 @@ that allows to import records from the specified CSV file.
 
     $ php bin/console oro:import:csv --help
     Usage:
-     oro:import:csv [--validation-processor="..."] [--processor="..."] file
+        oro:import:file [options] [--] <file>
+        oro:import:file --email=<email> --jobName=<job> --processor=<processor> <file>
+        oro:import:file --validation --email=<email> --jobName=<job> --processor=<processor> <file>
 
     Arguments:
-     file                    File name, to import CSV data from
+        file                    File name, to import CSV data from
 
     Options:
-     --validation-processor  Name of the processor for the entity data validation contained in the CSV
-     --processor             Name of the processor for the entity data contained in the CSV
+        --jobName=JOBNAME      Import job name
+        --processor=PROCESSOR  Import processor name
+        --validation           Only validate data instead of import
+        --email=EMAIL          Email to send the import log to
 
 Here is a small example of its usage:
 
 .. code-block:: none
 
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv
+    $ php bin/console oro:import:csv --email=test@test.com ~/Contact_2000.csv
     Choose Processor:
-      [0 ] orocrm_contact.add_or_replace
-      [1 ] orocrm_contact.add
-      [2 ] orocrm_account.add_or_replace
-      [3 ] oro_tracking.processor.data
-      [4 ] orocrm_sales_lead.add_or_replace
-      [5 ] orocrm_sales_opportunity.add_or_replace
-      [6 ] orocrm_sales_b2bcustomer
-    > 1
-    Choose Validation Processor:
-      [0] orocrm_contact.add_or_replace
-      [1] orocrm_contact.add
-      [2] orocrm_account.add_or_replace
-      [3] orocrm_sales_lead.add_or_replace
-      [4] orocrm_sales_opportunity.add_or_replace
-      [5] orocrm_sales_b2bcustomer
-    > 1
-    +---------------+-------+
-    | Results       | Count |
-    +---------------+-------+
-    | errors        | 0     |
-    | process       | 2000  |
-    | read          | 2000  |
-    | add           | 2000  |
-    | replace       | 0     |
-    | update        | 0     |
-    | delete        | 0     |
-    | error_entries | 0     |
-    +---------------+-------+
-    Do you want to proceed [yes]?
-    File was successfully imported.
+      [0] oro_contact.add_or_replace
+      [1] oro_contact.add
+    > 0
+    Choose Job:
+      [0] entity_import_from_csv
+      [1] category_import_from_csv
+    > 0
+    Scheduled successfully. The result will be sent to the email
 
 
 Perform Import in the Prod Environment
@@ -98,7 +80,7 @@ the ``--env=prod`` option to your import command:
 .. code-block:: none
 
 
-    php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
+    $ php bin/console oro:import:csv --email=test@test.com ~/Contact_2000.csv --env=prod
 
 
 Skip Import File Validation
@@ -111,20 +93,8 @@ import can be performed without it. To do so, start the import command in no int
 .. code-block:: none
 
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
-    +---------------+-------+
-    | Results       | Count |
-    +---------------+-------+
-    | errors        | 0     |
-    | process       | 2000  |
-    | read          | 2000  |
-    | add           | 2000  |
-    | replace       | 0     |
-    | update        | 0     |
-    | delete        | 0     |
-    | error_entries | 0     |
-    +---------------+-------+
-    File was successfully imported.
+    $ php bin/console oro:import:csv ~/Contact_2000.csv --email=test@test.com --processor=oro_contact.add --jobName=entity_import_from_csv --no-interaction --env=prod
+    Scheduled successfully. The result will be sent to the email
 
 .. hint::
 
