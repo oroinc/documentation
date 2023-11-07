@@ -8,7 +8,7 @@ OroCommerce offers a versatile and dynamic ecosystem of integrations that extend
 * :ref:`GS1 <integrations-misc-gs1>`
 * :ref:`Avatax <integrations-misc-avatax>`
 * :ref:`Google Looker Studio <integrations-google-reporting>`
-
+* :ref:`Hawksearch <integrations-search-hawksearch>`
 
 .. toctree::
    :hidden:
@@ -16,3 +16,4 @@ OroCommerce offers a versatile and dynamic ecosystem of integrations that extend
    GS1 <gs1>
    Avatax <avatax>
    Google Looker Studio <google-reporting>
+   Hawksearch <hawksearch>
