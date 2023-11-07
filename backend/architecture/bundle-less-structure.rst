@@ -417,7 +417,7 @@ Extension and Configuration Moving
 Themes & Layouts
 ~~~~~~~~~~~~~~~~
 
-1. Assets for themes should be moved to ``/src/assets/{your_theme_dir}/``.
+1. Assets for themes should be moved to ``/assets/{your_theme_dir}/``.
 2. Admin theme configuration:
 
    - ``/config/oro/assets.yml``
@@ -434,7 +434,7 @@ Asset Handling in Application Development
 
 If the build uses the image or any other asset, it is automatically copied to the public folder. Copying ensures that the assets are readily available and can be served to users without issues.
 
-However, in some scenarios where assets are not directly utilized within the build process, placing them directly in the public folder from the beginning is recommended. This approach eliminates the need for automatic copying since the assets are already in the correct location.
+However, in some scenarios where assets are not directly utilized within the webpack build process, placing them directly in the public folder from the beginning is recommended. This approach eliminates the need for automatic copying since the assets are already in the correct location.
 
 To adhere to the best practices mentioned above, manually move the image or any other static asset to the public folder.
 
