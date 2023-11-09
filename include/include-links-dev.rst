@@ -6370,3 +6370,9 @@ Links (Dev)
 .. |Prefect| raw:: html
 
     <a href="https://www.prefect.io/" target="_blank">Prefect</a>
+
+.. |Oro Devbox| raw:: html
+
+    <a href="https://console.cloud.google.com/marketplace/product/oro-inc-public/orodevbox" target="_blank">Oro Devbox</a>
+
+
