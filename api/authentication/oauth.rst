@@ -15,7 +15,7 @@ while providing specific authorization flows for web applications, desktop appli
 and living room devices.
 
 It is implemented by the :ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>` that supports
-|OAuth 2.0 Authorization Code Grant|, |OAuth 2.0 Client Credentials Grant| and |OAuth 2.0 Password Grant|.
+|OAuth 2.0 Authorization Code Grant| (with PKCE extention), |OAuth 2.0 Client Credentials Grant| and |OAuth 2.0 Password Grant|.
 
 For more details, see :ref:`Manage OAuth Applications <oauth-applications>`
 and :ref:`Manage Customer User OAuth Applications <customer-user-oauth-app>`.

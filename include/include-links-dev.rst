@@ -6167,6 +6167,18 @@ Links (Dev)
 
     <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>
 
+.. |PKCE extention (RFC 7636)| raw:: html
+
+    <a href="https://datatracker.ietf.org/doc/html/rfc7636" target="_blank">PKCE extention (RFC 7636)</a>
+
+.. |Code challenge generation rules| raw:: html
+
+    <a href="https://datatracker.ietf.org/doc/html/rfc7636#section-4.2" target="_blank">Code challenge generation rules</a>
+
+.. |RFC 6749| raw:: html
+
+    <a href="https://datatracker.ietf.org/doc/html/rfc6749#section-2.1" target="_blank">RFC 6749</a>
+
 .. |Prefect| raw:: html
 
     <a href="https://www.prefect.io/" target="_blank">Prefect</a>
