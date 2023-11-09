@@ -10,7 +10,7 @@ Detailed guidance is provided further in this article.
 Deploy the Solution
 -------------------
 
-1. Navigate to |Google Cloud Marketplace|, click **Explore the marketplace** and then search for the Oro Devbox solution provided by Oro Inc.
+1. Navigate to |Google Cloud Marketplace|, click **Explore the marketplace** and then search for the |Oro Devbox| solution provided by Oro Inc.
 
 2. Click **Launch on Compute Engine**.
 
