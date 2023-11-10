@@ -378,7 +378,7 @@ user/concept-guides/data-import /user/concept-guides/administration/data-import
 user/concept-guides/guests /user/concept-guides/administration/guests
 user/concept-guides/inventory /user/concept-guides/catalog-promotions/inventory
 user/concept-guides/localization /user/concept-guides/administration/localization
-user/concept-guides/marketing-automation /user/back-office/marketing/index.rst
+user/concept-guides/marketing-automation /user/back-office/marketing/index
 user/concept-guides/marketplace /user/concept-guides/business-models/marketplace
 user/concept-guides/master-catalog /user/concept-guides/catalog-promotions/master-catalog
 user/concept-guides/menus /user/concept-guides/administration/menus

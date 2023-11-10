@@ -80,7 +80,7 @@ A **product kit** is an assortment of products, each with their individual SKUs.
 .. image:: /user/img/products/products/kits/kit-front.png
    :alt: Product kits in the storefront
 
-.. warning:: Please be aware that the Product Kits feature is still in development and some functionality is incomplete.
+.. note:: Product Kits in the back-office are available as of 5.1LTS. Product Kits in the storefront are available as of 5.1.3. By default, the product kits feature is disabled for v.5.1 but you can enable it with developer assistance in the |yaml file of the ProductBundle|.
 
 Products in a Multi-Org Application
 -----------------------------------
@@ -146,6 +146,9 @@ As you can see, with OroCommerce you can create an appealing and functional prod
 
 * :ref:`Products User Guide <doc--products>`
 * :ref:`Product-Related Settings in System Configuration <configuration--products>`
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin

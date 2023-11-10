@@ -3,6 +3,8 @@
 Order a Product Kit in the Storefront
 =====================================
 
+.. note:: Product Kits in the back-office are available as of 5.1LTS. Product Kits in the storefront are available as of 5.1.3. By default, the product kits feature is disabled for v.5.1 but you can enable it with developer assistance in the |yaml file of the ProductBundle|.
+
 You can select which items to add to the product kit you are purchasing in the storefront. The items available as part of the kit are pre-configured in the back-office, but you can select optional items that you would like to purchase.
 
 To configure a product kit in the storefront, click **Configure and Add to Shopping List** on its product page.
@@ -28,3 +30,6 @@ This information will be preserved in the details of the order under **Order His
 
 .. image:: /user/img/products/products/kits/kit-order-history.png
    :alt: Order containing a product kit in the Order History
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin

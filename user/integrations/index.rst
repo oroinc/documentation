@@ -27,6 +27,7 @@ On the other hand, Oro also empowers users to create custom integrations tailore
           <li><a class="tag-important" href="pre-built/payment">Payment Integrations</a></li>
           <li><a class="tag-important" href="pre-built/shipping">Shipping Integrations</a></li>
           <li><a class="tag-important" href="pre-built/PIM">PIM Integrations</a></li>
+          <li><a class="tag-important" href="pre-built/procurement">E-Procurement Integrations</a></li>
           <li><a class="tag-important" href="/pre-build/misc">Miscellaneous Integrations</a></li>
        </ul>
 

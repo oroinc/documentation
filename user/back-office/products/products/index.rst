@@ -35,6 +35,8 @@ Unlike a simple product, a configurable product is an item available in multiple
 
 A product kit is an assortment of products, each with their individual SKUs. Each product in this assortment bundle can be mandatory or optional for the buyers to buy in order to proceed though the checkout. An example of a product kit would be a lamp with a selection of optional accessories for it, such as spare bulbs of different wattage.
 
+.. note:: Product Kits in the back-office are available as of 5.1LTS. Product Kits in the storefront are available as of 5.1.3. By default, the product kits feature is disabled for v.5.1 but you can enable it with developer assistance in the |yaml file of the ProductBundle|.
+
 * :ref:`Create a simple product <products--products--create-simple-product>`
 * :ref:`Create a configurable product <products--products--create-config-product>`
 * :ref:`Set up a matrix form and variations of a configurable product <config-guide--landing-commerce--products--configurable-products>`
@@ -50,6 +52,9 @@ Once you have created products, you can:
 * Learn how to manage your product quantities and product prices in the :ref:`Manage the product inventory quantity <doc--products--actions--manage-inventory>` and :ref:`Manage product pricing <view-and-filter-product-prices>` topics.
 
 .. finish_product_configuration
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 .. toctree::
    :maxdepth: 1
