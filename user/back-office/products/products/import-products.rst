@@ -17,9 +17,10 @@ Import Products
 
    .. csv-table::
       :class: large-table
-      :header: "sku","attributeFamily.code","status","type","inventory_status.id","primaryUnitPrecision.unit.code","primaryUnitPrecision.precision","primaryUnitPrecision.conversionRate","primaryUnitPrecision.sell","additionalUnitPrecisions:0:unit:code","additionalUnitPrecisions:0:precision","additionalUnitPrecisions:0:conversionRate","additionalUnitPrecisions:0:sell","names.default.value","shortDescriptions.default.value","descriptions.default.value","featured","metaDescriptions.default.value","slugPrototypes.default.value","category.default.title"
+      :header: "sku","attributeFamily.code","status","type","inventory_status.id","primaryUnitPrecision.unit.code","primaryUnitPrecision.precision","primaryUnitPrecision.conversionRate","primaryUnitPrecision.sell","additionalUnitPrecisions:0:unit:code","additionalUnitPrecisions:0:precision","additionalUnitPrecisions:0:conversionRate","additionalUnitPrecisions:0:sell","names.default.value","shortDescriptions.default.value","descriptions.default.value","featured","kitItems","metaDescriptions.default.value","slugPrototypes.default.value","category.default.title"
 
-      "sku_001","default_family","enabled","simple","in_stock","kg",3,1,1,"item",0,5,1,"Product Name","Product Short Description","system",1,"defaultMetaDescription","lumen-item","Category Name"
+      "sku_001","default_family","enabled","simple","in_stock","kg",3,1,1,"item",0,5,1,"Product Name","Product Short Description","system",1,,"defaultMetaDescription","lumen-item","Category Name"
+      "sku_001","default_family","enabled","kit","in_stock","set",1,1,1,"item",0,5,1,"Product Kit","Product Kit Short Description","system",1,"label=“Base Unit”,optional=false,products=5TJ23,min_qty=1,max_qty=1,unit=set id=,label=“Barcode Scanner”,optional=false,products=6VC22|7TY55,min_qty=1,max_qty=1,unit=item id=3,label=“Additional Unit”,optional=false,products=22C22|4PJ19|Y4Y55,min_qty=1,max_qty=1,unit=item","defaultMetaDescription","lumen-item","Category Name"
 
 To import a bulk of product information:
 
@@ -39,6 +40,8 @@ To import a bulk of product information:
 5. **Launch import:** After successful validation, click **Import File**.
 
 6. Click **Cancel** to decline the import.
+
+.. note:: During import *kitItems* column is handled only for product type *kit*, for other product types non-empty value produce an import error. The *kitItems* may describe one or more kit items in a special format. Look at the example in the product bulk import template section. Also, use double quotes for the whole phrase and escape the sensitive symbols *(',",\\)* from the *label* part of *kitItems* column, for example: *label=",My, =Escaped= \"Kit\" \'Item\'"*.
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
