@@ -36,9 +36,9 @@ On the other hand, Oro also empowers users to create custom integrations tailore
     <h2>Custom Integrations</h2>
 
        <ul class="tag-cloud">
-          <li><a class="tag-important" href="custom/api-integrations.html">Oro API</a></li>
-          <li><a class="tag-important" href="custom/import-export-integration.html">Import and Export</a></li>
-          <li><a class="tag-important" href="custom/integrationbundle.html">OroIntegrationBundle</a></li>
+          <li><a class="tag-important" href="custom/api-integrations/">Oro API</a></li>
+          <li><a class="tag-important" href="custom/import-export-integration/">Import and Export</a></li>
+          <li><a class="tag-important" href="custom/integrationbundle/">OroIntegrationBundle</a></li>
        </ul>
 
 .. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
