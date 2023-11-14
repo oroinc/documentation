@@ -17,9 +17,10 @@ Export Product Information
 
    .. csv-table::
       :class: large-table
-      :header: "sku","attributeFamily.code","status","type","inventory_status.id","primaryUnitPrecision.unit.code","primaryUnitPrecision.precision","primaryUnitPrecision.conversionRate","primaryUnitPrecision.sell","additionalUnitPrecisions:0:unit:code","additionalUnitPrecisions:0:precision","additionalUnitPrecisions:0:conversionRate","additionalUnitPrecisions:0:sell","names.default.value","shortDescriptions.default.value","descriptions.default.value","featured","metaDescriptions.default.value","slugPrototypes.default.value","category.default.title"
+      :header: "sku","attributeFamily.code","status","type","inventory_status.id","primaryUnitPrecision.unit.code","primaryUnitPrecision.precision","primaryUnitPrecision.conversionRate","primaryUnitPrecision.sell","additionalUnitPrecisions:0:unit:code","additionalUnitPrecisions:0:precision","additionalUnitPrecisions:0:conversionRate","additionalUnitPrecisions:0:sell","names.default.value","shortDescriptions.default.value","descriptions.default.value","featured","kitItems","metaDescriptions.default.value","slugPrototypes.default.value","category.default.title"
 
-      "sku_001","default_family","enabled","simple","in_stock","kg",3,1,1,"item",0,5,1,"Product Name","Product Short Description","system",1,"defaultMetaDescription","lumen-item","Category Name"
+      "sku_001","default_family","enabled","simple","in_stock","kg",3,1,1,"item",0,5,1,"Product Name","Product Short Description","system",1,,"defaultMetaDescription","lumen-item","Category Name"
+      "sku_002","default_family","enabled","kit","in_stock","set",1,1,1,"item",0,5,1,"Product Kit","Product Kit Short Description","system",1,"id=1,label=“Base Unit”,optional=false,products=5TJ23|2RW93|1TB10,min_qty=1,max_qty=1,unit=set id=2,label=“Barcode Scanner”,optional=false,products=6VC22|4PJ19|7TY55,min_qty=1,max_qty=1,unit=item","defaultMetaDescription","lumen-item","Category Name"
 
 **Example of a filtered products export template**
 
