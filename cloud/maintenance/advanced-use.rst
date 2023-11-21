@@ -180,7 +180,7 @@ There are two types of pages in OroCloud, maintenance and error. Maintenance pag
   .. note:: This status also can also be returned by nginx when the requested URL is forbidden or by the OroCommerce application itself. These pages are mananged by ngnix and the  application respectively.
 
 * Error 451 appears when requests are blocked by the firewall if they do not fit access policy, for example, when a request is coming from a forbidden IP address (see `OroCloud WAF Configuration`_ section for more information)
-* Error 501 is returned when when service is not implemented and/or the application does not support the requested functionality
+* Error 501 is returned when service is not implemented and/or the application does not support the requested functionality
 * Error 502 is returned when the server is unavailable (for example, because of the outage).
 
 ``error_pages_path`` is a dynamic error page directory configuration. The default location is the ``error_pages`` directory in a repository. File matching works with response codes and hosts, like 503.$host.html => 503.html => ``error_pages`` option value. Supported response codes are 403, 451, 501, 502, and 503.		

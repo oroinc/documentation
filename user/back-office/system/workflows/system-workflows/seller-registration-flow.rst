@@ -7,7 +7,7 @@ Configure Seller Registration Request Workflow in the Back-Office
 
 In OroMarketplace, :ref:`enabling the seller registration feature <configuration--commerce--marketplace--seller-global>` in the system or organization configuration settings, triggers the addition and activation of the Seller Registration Request workflow. It is responsible for adding steps to the seller registration request view page in the marketplace owner organization that help progress the requests of potential vendors to join the marketplace.
 
-.. note:: The Seller Registration workflow supports seller requests only from the  global organization.
+.. note:: The Seller Registration workflow supports seller requests only from the global organization.
 
 .. image:: /user/img/concept-guides/marketplace/seller-registration-flow-buttons.png
    :alt: Seller registration flow steps in the back-office
