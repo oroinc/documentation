@@ -25,7 +25,7 @@ Workflow Steps and Transitions
 
 **Draft**
 
-Products created outside the global organization are **Disabled* by default and have the workflow in **Draft** status. In this status, users can edit products and submit them for approval by the global administrator.
+Products created outside the global organization are *Disabled* by default and have the workflow in **Draft** status. In this status, users can edit products and submit them for approval by the global administrator.
 
 .. image:: /user/img/system/workflows/seller-product-approval/seller-product-flow-draft.png
    :alt: Newly created product is in Draft workflow status
