@@ -2,14 +2,14 @@
 .. _doc--products--actions--import:
 
 Import Product Information
---------------------------
+==========================
 
 .. hint:: This section is part of the :ref:`Data Import <concept-guide-data-import>` concept guide topic that provides guidelines on import operations in Oro applications.
 
 The **Import File** option helps import a large bulk of product information into the product catalog using the .csv file.
 
 Import Products
-^^^^^^^^^^^^^^^
+---------------
 
 **Example of a product bulk import template**
 
@@ -17,9 +17,13 @@ Import Products
 
    .. csv-table::
       :class: large-table
-      :header: "sku","attributeFamily.code","status","type","inventory_status.id","primaryUnitPrecision.unit.code","primaryUnitPrecision.precision","primaryUnitPrecision.conversionRate","primaryUnitPrecision.sell","additionalUnitPrecisions:0:unit:code","additionalUnitPrecisions:0:precision","additionalUnitPrecisions:0:conversionRate","additionalUnitPrecisions:0:sell","names.default.value","shortDescriptions.default.value","descriptions.default.value","featured","metaDescriptions.default.value","slugPrototypes.default.value","category.default.title"
+      :header: "sku","attributeFamily.code","status","type", "inventory_status.id","primaryUnitPrecision.unit.code","primaryUnitPrecision.precision","primaryUnitPrecision.conversionRate","primaryUnitPrecision.sell","additionalUnitPrecisions:0:unit:code","additionalUnitPrecisions:0:precision","additionalUnitPrecisions:0:conversionRate","additionalUnitPrecisions:0:sell","names.default.value","shortDescriptions.default.value","descriptions.default.value","featured","metaDescriptions.default.value","slugPrototypes.default.value","category.default.title", "Kit Items"
 
-      "sku_001","default_family","enabled","simple","in_stock","kg",3,1,1,"item",0,5,1,"Product Name","Product Short Description","system",1,"defaultMetaDescription","lumen-item","Category Name"
+      "sku_001","default_family","enabled","simple","in_stock","kg",3,1,1,"item",0,5,1,"Product Name","Product Short Description","system",1,"defaultMetaDescription","lumen-item","Category Name", ""
+      "sku_002","default_family","enabled","kit","out_of_stock","set",3,1,1,"set",0,5,1,"Product Name","Product Short Description","system",1,"defaultMetaDescription","touchscreen-pos-system","Category Name", "
+      id=,label=“Additional Unit”,optional=false,products=sku_001,min_qty=,max_qty=,unit=item
+      id=,label=“Base Unit”,optional=true,products=sku_001|sku_002,min_qty=1,max_qty=2,unit=item
+       "
 
 To import a bulk of product information:
 
@@ -42,10 +46,40 @@ To import a bulk of product information:
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. An email message with the import status is also delivered to your mailbox.
 
+Product Kit Data
+^^^^^^^^^^^^^^^^
+
+The following formats of kitItems are possible (with or without the ID parameter):
+
+.. code-block:: text
+
+   id=43,label=“Barcode Scanner”,optional=false,products=6VC22|4PJ19|7TY55,min_qty=1,max_qty=1,unit=item
+   label=“Receipt Printer(s)”,optional=true,products=8DO33,min_qty=1,max_qty=,unit=item
+
+If any additional custom parameters are added, a validation error will occur.
+
+Depending on the ID and whether the product already exists in the Oro application, different logic may be required to import products from kitItems.
+
+* A new product and kitItems with empty IDs will create a new product with new kitItems.
+* A new product and kitItems with IDs will create a new product with new kitItems (ignoring kitItems IDs).
+* An existing product in Oro and kitItems with empty IDs will update the product and replace the entire kitItems collection.
+* An existing product in Oro and kitItems with IDs belonging to this product will update the product with kitItems.
+* An existing product in Oro and kitItems with IDs that do not belong to this product will result in a validation error.
+
+The type of data that can be used as `value` for the provided parameters:
+
+* `ID` is optional. Allowed values are `empty` or `integer`.
+* `label` is a mandatory field. Allowed values are `non-empty string`. It is recommended to use double quotes (e.g., "Base unit"). Although it is not mandatory for a simple label, using quotes is preferable to ensure correct functionality. If special characters like quotes are required in the label, you must use quotes and escape, e.g., label=",My, =Escaped= \"Kit\" \'Item\'".
+* `optional` is optional. The default value is false. Allowed values are `true, false, yes, no, 1, 0`.
+* `products` is mandatory. SKU of products should be listed separated by a delimiter \|\.
+* `min_qty, max_qty` are optional. The default value is empty (null). Allowed values are `expected empty value` or `float (1, 0, 1.0, 0.0)`. Integer values are converted to float. Float must use a dot as a decimal separator, as using a comma will result in an error.
+* `unit` is mandatory. A validation error will occur if no unit code is provided.
+
+
 .. _user-guide-import-product-images:
 
 Import Product Images
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 Make sure to upload the image files for the related products to the appropriate location according to the configuration
 of the ``import_product_images`` Gaufrette filesystem. By default, it is configured to use the ``{PROJECT}/var/data/import_files``
@@ -98,7 +132,7 @@ Once your file is ready, click **Choose File** and select the prepared comma-sep
 .. _user-guide-import-related-products:
 
 Import Related Products
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 The **Import Related Products** option enables you to import SKUs of related products.
 
@@ -132,7 +166,7 @@ To import a bulk of related products:
 .. _user-guide-import-product-price-attributes:
 
 Import Product Price Attributes Data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------
 
 **Example of a product price attributes data import template**
 

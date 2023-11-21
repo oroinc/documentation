@@ -217,7 +217,7 @@ Implement the Main Method
 
 To implement the main method, create the <bundle_root>/Method/FastShippingMethod.php class that implements two standard interfaces ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodInterface`` and ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodIconAwareInterface``:
 
-.. oro_integrity_check:: d86e1355a5db4fae05a450e72a30e60dd91cb511
+.. oro_integrity_check:: 7a2199d46c14bfc0132b77d248f88cb8ad4818eb
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Method/FastShippingMethod.php
        :language: php
@@ -226,7 +226,8 @@ To implement the main method, create the <bundle_root>/Method/FastShippingMethod
 The methods are the following:
 
 * ``getIdentifier`` --- Provides a unique identifier of the shipping method in the scope of the Oro application.
-* ``getLabel`` --- Returns the shipping method's label that appears on the shipping rule edit page. It can also be a Symfony translated message.
+* ``getName`` --- Returns the shipping method's name that appears on the shipping rule edit page.
+* ``getLabel`` --- Returns the shipping method's label that appears on the shipping method step on checkout. It can also be a Symfony translated message.
 * ``getIcon`` --- Returns the icon that appears on the shipping rule edit page.
 * ``isEnabled`` --- Defines, whether the integration of the shipping method is enabled by default.
 * ``isGrouped`` --- Defines how shipping method's types appear in the shipping method configuration on the user interface. If set to ``true``, the types appear in the table where each line contains the **Active** checkbox that enables users to enable individual shipping method types for a particular shipping method configuration.
@@ -258,7 +259,7 @@ This factory generates an individual configuration set for each instance of the 
 
 Create the <bundle_root>/Factory/FastShippingMethodFromChannelFactory.php class with the following content:
 
-.. oro_integrity_check:: 62c5b8d8d40841ffa7b525cbc19c11aba05a24c2
+.. oro_integrity_check:: da26c247ece0164adba6c605e24efebe09ecc0dc
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Factory/FastShippingMethodFromChannelFactory.php
        :language: php

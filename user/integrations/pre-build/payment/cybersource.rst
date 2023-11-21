@@ -3,9 +3,11 @@
 Integration with CyberSource
 ============================
 
-.. note:: This integration is currently supported up to version 5.0 LTS.
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
 
 The OroCommerce and CyberSource integration facilitates the exchange of crucial data between the two platforms during the payment process. CyberSource acts as the payment gateway, handling secure payment processing, fraud detection, and payment authorization.
+
+.. note:: This integration is currently supported up to version 5.0 LTS.
 
 Supported CyberSource Services
 ------------------------------
@@ -74,5 +76,8 @@ CyberSource Security Measures:
 * **Transaction Monitoring:** CyberSource monitors transactions in real-time for suspicious activities, allowing merchants to respond promptly to any potential security threats.
 
 * **Encryption:** CyberSource uses encryption to protect data in transit and at rest, minimizing the risk of unauthorized access.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 

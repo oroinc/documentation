@@ -3,6 +3,8 @@
 Integration with OroCRM
 =======================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 OroCRM, a vital component of the OroSuite, is an open-source Customer Relationship Management (CRM) system designed to empower businesses with comprehensive customer insights and relationship management capabilities. OroCRM is specifically designed with a focus on B2B customer relationship management. This means it includes features and tools that cater to the unique needs and complexities of B2B relationships, such as account and management. It seamlessly integrates with OroCommerce, our robust B2B eCommerce platform, to provide a unified solution for managing customer interactions, sales, marketing, and analytics.
 
 Supported Features
@@ -53,3 +55,6 @@ OroCRM includes various security measures to protect sensitive customer data and
 5. **Data Audit**: OroCRM includes data auditing capabilities to record user activities and system events. This audit trail is useful for monitoring and investigating security incidents.
 
 6. **Account Lockout Mechanism**: OroCRM incorporates an account lockout mechanism designed to thwart brute force attacks. The system monitors login attempts when an attacker repeatedly attempts to gain unauthorized access by guessing a user's password. The user's account is temporarily locked or suspended after a predetermined number of unsuccessful login attempts within a specified timeframe. This proactive approach helps prevent malicious actors from compromising user accounts through brute force attacks.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin

@@ -8,8 +8,10 @@ Enterprise Resource Planning (ERP) systems play an important role in modern busi
 Below is a list of ERP integrations Oro applications support:
 
 * :ref:`SAP (B1 and ECC) <integrations-erp-sap>`
+* :ref:`Epicor Prophet 21 <integrations-erp-epicor>`
 
 .. toctree::
    :hidden:
 
    sap
+   epicor

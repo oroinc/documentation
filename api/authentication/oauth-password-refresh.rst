@@ -19,7 +19,7 @@ Follow the next steps to get a new token:
 
    * `grant_type` with the value ``refresh_token``
    * `client_id` with the client identifier
-   * `client_secret` with the client’s secret
+   * `client_secret` with the client’s secret. Can be skipped for public clients
    * `refresh_token` with the refresh token that was returned with an access token
 
 4. Receive response from the authorization server with a JSON object containing the following properties:

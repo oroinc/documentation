@@ -3,6 +3,8 @@
 Integration with Mailchimp
 ==========================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 Mailchimp is a widely recognized marketing automation platform that specializes in email marketing, audience management, and customer engagement. It provides businesses and organizations with a comprehensive set of tools to create, send, and analyze email campaigns, making it a go-to solution for companies of all sizes and industries.
 
 The integration with Mailchimp presents a valuable opportunity for OroCommerce to enhance ecommerce operations and unlock multiple significant advantages.
@@ -61,4 +63,7 @@ By implementing these security measures, OroCommerce and Mailchimp integration e
 **Related Articles**
 
 * :ref:`Configure Mailchimp Integration in the Back-Office <user-guide-mc-integration>`
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 

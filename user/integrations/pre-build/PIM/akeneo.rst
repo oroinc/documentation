@@ -3,6 +3,8 @@
 Integration with Akeneo
 =======================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 OroCommerce offers integration with Akeneo, a Product Information Management (PIM) system that helps businesses efficiently manage and organize their product data.
 
 Supported Features
@@ -51,3 +53,6 @@ To ensure security of sensitive customer and product data during the integration
 * **HTTPS Encryption:** The communication between OroCommerce and Akeneo should be encrypted using HTTPS (Hypertext Transfer Protocol Secure). This encryption ensures that data transmitted between the two systems is protected from interception or eavesdropping by unauthorized parties.
 
 * **Password Encryption:** Passwords used for user authentication and access control are securely encrypted to protect user accounts and ensure that plaintext passwords are not stored.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
