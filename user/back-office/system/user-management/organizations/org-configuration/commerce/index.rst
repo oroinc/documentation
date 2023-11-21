@@ -10,13 +10,13 @@ Learn how to configure commerce-specific settings:
 
    Guests <guests/index>
    Customers <customers/index>
+   Taxation <taxation/index>
    Design <design/index>
    Product <product/index>
    Sales <sales/index>
    Catalog <catalog/index>
-   Search <search/index>
-   Taxation <taxation/index>
    Orders <orders/index>
+   Search <search/index>
    Inventory <inventory/index>
    Marketplace <marketplace/index>
 
