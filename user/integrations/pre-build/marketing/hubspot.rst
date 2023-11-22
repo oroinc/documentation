@@ -3,6 +3,8 @@
 Integration with Hubspot
 ========================
 
+.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+
 HubSpot is a platform that combines marketing and sales tools, allowing businesses to create custom marketing campaigns, automate sales processes and effectively nurture leads. OroCommerce provides integration with HubSpot to help align sales and marketing teams in a business, as well as facilitating practical marketing activities and lead segmentation planning.
 
 .. image:: /user/img/integrations/hubspot-lead-page.png
@@ -79,3 +81,6 @@ To ensure the security of OroCommerce and HubSpot integration, various measures 
 - **HTTPS (Hypertext Transfer Protocol Secure):** All data exchanges between the two systems occur over secure HTTPS connections. HTTPS encrypts the data in transit, making it almost impossible for unauthorized parties to intercept or tamper with the information being exchanged.
 
 - **Authentication Token:** Authentication tokens act as digital keys that verify the identity of the systems and users accessing the integration. Only authorized parties with valid authentication tokens can initiate and maintain communication, preventing unauthorized access to sensitive data.
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin

@@ -53,7 +53,7 @@ Datagrid Configuration Details
 
 - plugin (Optional): Specifies the plugin realization. Default ``orodatagrid/js/app/plugins/grid-component/board-appearance-plugin``
 
-- board_vew (Optional): Specifies the view for kanban board. Default ``orodatagrid/js/app/views/board/board-view``
+- board_view (Optional): Specifies the view for kanban board. Default ``orodatagrid/js/app/views/board/board-view``
 
 - card_view (Required): Specifies the view for kanban card.
 

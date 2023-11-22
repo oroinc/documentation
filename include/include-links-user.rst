@@ -906,6 +906,10 @@ Links (User)
 
    <a href="https://www.youtube.com/watch?v=CUjmniejCQU" target="_blank">how to configure integration with Stripe</a>
 
+.. |Seller Product Approval workflow extension| raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/seller-product-approval-workflow/" target="_blank">Seller Product Approval workflow extension</a>
+
 .. |Google Retail Recommendations| raw:: html
 
    <a href="https://cloud.google.com/retail/docs" target="_blank">Google Retail Recommendations</a>
@@ -917,3 +921,5 @@ Links (User)
 .. |extensions store|  raw:: html
 
    <a href="https://extensions.oroinc.com/" target="_blank">extensions store</a>
+
+

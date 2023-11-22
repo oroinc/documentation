@@ -1,41 +1,40 @@
 .. _frontend--rtl-support:
 
-Right to Left UI Support
+Right-to-Left UI Support
 ========================
 
-Oro provides support for Right to Left User Interface development.
+Oro provides support for right-to-left user interface development.
 
-To enable it, make sure you:
+To enable it, make sure you have:
 
-- Enabled RTL support for selected localization.
-- Marked a theme as RTL ready.
-- Checked if custom markup and styles with JS need additional improvements.
+- Enabled RTL support for selected localizations.
+- Marked a theme as RTL-ready.
+- Checked if custom markup and styles with JS needed additional improvements.
 
 Enable RTL
 ----------
 
-The localization entity now has a checkbox **Enable RTL Mode**, which need to be selected.
+To enable RTL, select the **Enable RTL Mode** checkbox when creating a new localization under **System > Localization > Localizations**.
 
-.. image:: /img/frontend/rtl-support/localization-configuration.png
+.. image:: /img/frontend/rtl-support/rtl-support.png
    :alt: Enabled RTL support for a Localization
 
 Configure Theme
 ---------------
 
-Layout and back-office themes configuration have option ``rtl_support`` that has to be enabled.
-It affects the styles build process. An additional style file is created with the `rtl` annex in naming (``*.rtl.css``).
+Layout and back-office themes configuration have the ``rtl_support`` option that has to be enabled. It affects the style-building process. An additional style file is created with the `rtl` annex in the name (``*.rtl.css``).
 
 * :ref:`Layout theming definition <dev-doc-frontend-layouts-theming-definition>`
 * |Admin theme configuration|
 
-Out-of-the-box, the ``default`` Layout theme and ``oro`` back-office theme have RTL support enabled.
+Out-of-the-box, the ``Default`` layout theme and ``Oro`` back-office theme have RTL support enabled.
 
-But not all declared style inputs need to be processed with RTLCSS processor.
-Often third-party libraries support RTL out-of-the-box and their styles already account for text direction (``[dir="rtl"]``).
+However, not all declared style inputs need to be processed with RTLCSS processor.
+Often, third-party libraries support RTL out-of-the-box and their styles already account for text direction (``[dir="rtl"]``).
 
-The following is a white list of style inputs (`auto_rtl_inputs`) that have to be processed.
+The following is an allowlist of style inputs (`auto_rtl_inputs`) that have to be processed.
 
-By default, all styles from Oro bundles are auto processed:
+By default, all styles from Oro bundles are auto-processed:
 
 .. code-block:: yaml
    :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/assets.yml
@@ -43,7 +42,7 @@ By default, all styles from Oro bundles are auto processed:
     auto_rtl_inputs:
         - 'bundles/oro*/**'
 
-This list needs to be extended with a specific |wildcard file mask| to enable auto processing for a custom style.
+This list needs to be extended with a specific |wildcard file mask| to enable auto-processing for a custom style.
 See :ref:`Load Style Files from the Bundle <bundle-docs-platform-asset-bundle-load-css-from-bundle>` for more information.
 
 Develop

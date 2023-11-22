@@ -3,11 +3,23 @@
 Authorization Code Grant Type
 =============================
 
+The :ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>` supports confidential and public clients.
+
+According to |RFC 6749|, confidential clients are capable of maintaining the confidentiality of their credentials
+(e.g., client implemented on a secure server with restricted access to the client credentials), or capable of secure
+client authentication using other means. Public clients are incapable of maintaining the confidentiality of their
+credentials (e.g., clients executing on the device used by the resource owner, such as an installed native application or a web
+browser-based application), and incapable of secure client authentication via any other means.
+
+:ref:`OroOAuth2ServerBundle <bundle-docs-platform-oauth2-server-bundle>` supports |PKCE extention (RFC 7636)|
+to the Authorization Code flow to prevent CSRF and authorization code injection attacks.
+
 Obtain the Authorization Code
 -----------------------------
 
 The client application redirects the user to the authorization server.
 For storefront application, this redirect should be send to the ``https://yourapplication/oauth2-token/authorize`` URL.
+
 If the Commerce application is installed, then for the back-office application, the redirect should be send to the
 ``https://yourapplication/{backend_prefix}/oauth2-token/authorize`` URL, where {backend_prefix} is the current backend prefix
 (by default, it is `admin`). Otherwise, the redirect is sent to the ``https://yourapplication/oauth2-token/authorize`` URL.
@@ -18,7 +30,32 @@ The request should have the following parameters in the query string:
    * `client_id` with the client identifier
    * `redirect_uri` with the client redirect URI. This parameter is optional, but if it is not sent, the user will be redirected to a pre-registered redirect URI.
 
-The user is then asked to log in to the authorization server and approve the client.
+**Example**
+
+.. code-block:: http
+
+
+    GET /oauth2-token?response_type=code&client_id=your_client_identifier&redirect_uri=https://your_redirect_uri.com HTTP/1.1
+
+
+For the public clients, request must and for confidential clients can use the `code_challenge` parameter when obtaining the authorization code
+and the `code_verifier` parameter when generating a token request.
+
+The code challenge must be generated with S256 code challenge method according to |Code challenge generation rules| and the parameter `code_challenge_method` with value 'S256' must be part of the request.
+
+**Example**
+
+.. code-block:: http
+
+
+    GET /oauth2-token?response_type=code&client_id=your_client_identifier&redirect_uri=https://your_redirect_uri.com&code_challenge=your_code_challenge&code_challenge_method=S256 HTTP/1.1
+
+
+The user is then asked to log in to the authorization server.
+
+After a successful log in, the user will be redirected to approve the client page.
+
+If the application was created with the `Skip User Consent` option, the approve client page will not be shown and client will be approved automatically.
 
 Once the user approves the client, they are redirected from the authorization server to the client’s redirect URI with the following parameters in the query string:
 
@@ -42,9 +79,10 @@ To configure the authentication via the authorization code grant type and to ret
 
    * `grant_type` with the value ``authorization_code``
    * `client_id` with the client’s ID
-   * `client_secret` with the client’s secret ID
+   * `client_secret` with the client’s secret ID. This parameter can be skipped for public clients
    * `redirect_uri` with the same redirect URI the user was redirect back to
-   * `code` with the authorization code from the query string.
+   * `code` with the authorization code from the query string
+   * `code_verifier` with the string that has been used when obtaining the Authorization Code. The parameter can be skipped for confidential clients if `code_challenge` was not used.
 
 4. Receive response from the authorization server with a JSON object containing the following properties:
 
@@ -64,7 +102,7 @@ Request
     POST /oauth2-token HTTP/1.1
     Content-Type: application/json
 
-Request Body
+Request Body for confidential client
 
 .. code-block:: json
 
@@ -75,6 +113,19 @@ Request Body
         "client_secret": "your client secret",
         "redirect_uri": "redirect URI the user was redirect back to",
         "code": "your authorization code"
+    }
+
+Request Body for public client
+
+.. code-block:: json
+
+
+    {
+        "grant_type": "authorization_code",
+        "client_id": "your client identifier",
+        "redirect_uri": "redirect URI the user was redirect back to",
+        "code": "your authorization code",
+        "code_verifier": "code verifier string that was used to generate code challenge"
     }
 
 Response Body
@@ -101,3 +152,6 @@ An example of an API request:
     Authorization: Bearer your access token
 
 .. note:: Access tokens for back-office and storefront API are not interchangeable. If you attempt to request data for the storefront API with a token generated for the back-office application, access will be denied.
+
+.. include:: /include/include-links-dev.rst
+   :start-after: begin

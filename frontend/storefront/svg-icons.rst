@@ -19,7 +19,7 @@ In TWIG
 .. code-block:: twig
 
     {% import '@OroFrontend/layouts/renderIcon.html.twig' as renderIcon %}
-    {{ renderIcon.icon({id: 'add-note'}) }}
+    {{ renderIcon.icon({name: 'add-note'}) }}
 
 In HTML Templates
 ^^^^^^^^^^^^^^^^^
@@ -28,7 +28,7 @@ In HTML Templates
 
     <% let orofrontend = _.macros('orofrontend') %>
         <%= orofrontend.renderIcon({
-        id: 'add-note'
+        name: 'add-note'
     }) %>
 
 In JS
@@ -39,7 +39,7 @@ In JS
     import _ from 'underscore';
 
      const icon = _.macros('orofrontend::renderIcon')({
-        id: 'add-note'
+        name: 'add-note'
     });
 
 Adding New Icons to SVG Sprite
