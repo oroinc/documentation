@@ -9,6 +9,7 @@ OroCommerce offers a versatile and dynamic ecosystem of integrations that extend
 * :ref:`Avatax <integrations-misc-avatax>`
 * :ref:`Google Looker Studio <integrations-google-reporting>`
 * :ref:`Hawksearch <integrations-search-hawksearch>`
+* :ref:`Marello <integrations-mics-marello>`
 
 .. toctree::
    :hidden:
@@ -17,3 +18,4 @@ OroCommerce offers a versatile and dynamic ecosystem of integrations that extend
    Avatax <avatax>
    Google Looker Studio <google-reporting>
    Hawksearch <hawksearch>
+   Marello <marello>
