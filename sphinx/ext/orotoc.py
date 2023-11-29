@@ -78,7 +78,7 @@ def get_local_toc_for(builder, docname, maxdepth=-1):
     toctree = TocTree(env)
     try:
         toc = env.tocs[docname].deepcopy()
-        toctree._toctree_prune(toc, 2, maxdepth)
+        #toctree._toctree_prune(toc, 2, maxdepth)
     except KeyError:
         # the document does not exist anymore: return a dummy node that
         # renders to nothing
@@ -139,3 +139,8 @@ def get_toctree_for(builder, docname, **kwargs):
 
 def setup(app):
     app.connect('html-page-context', html_page_context)
+
+    return {
+        'parallel_read_safe': True,
+        'parallel_write_safe': True,
+    }

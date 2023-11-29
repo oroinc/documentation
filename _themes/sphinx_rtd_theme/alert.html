@@ -1,9 +1,28 @@
-<div class="admonition important">
-    <p class="first admonition-title">Important</p>
-    <p class="last">
-        You are browsing the documentation for version 4.2 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained. Read <a href="{{ theme_canonical_url }}{{ pathto('/' + pagename) }}"> version 5.1 (the latest LTS version) </a> of the Oro documentation to get the updated information.
-    </p>
-    <p class="last">
-        See our <a href="https://doc.oroinc.com/community/release-process/#orocommerce-and-orocrm-enterprise-edition-releases-and-support-cycle" target="_blank">Release Process documentation</a> for more information on the currently supported and upcoming releases.
-    </p>
-</div>
+{%- if current_version %}
+    {%- if current_version.release != '' %}
+        {%- if current_version.release == 'master' %}
+            {%- set you_are_browsing = "You are browsing upcoming documentation for version 6.0 of OroCommerce, OroCRM, and OroPlatform, scheduled for release in 2024." %}
+        {%- endif %}
+        {%- if current_version.release == '5.0' %}
+            {%- set you_are_browsing = "You are browsing documentation for version 5.0 of OroCommerce, OroCRM, and OroPlatform, maintained until August 2024 and supported until March 2026." %}
+        {%- endif %}
+        {%- if current_version.release == '4.2' %}
+            {%- set you_are_browsing = "You are browsing the documentation for version 4.2 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
+        {%- endif %}
+        {%- if current_version.release == '4.1' %}
+            {%- set you_are_browsing = "You are browsing the documentation for version 4.1 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
+        {%- endif %}
+        {%- if current_version.release == '3.1' %}
+            {%- set you_are_browsing = "You are browsing the documentation for version 3.1 of OroCommerce, OroCRM and OroPlatform, which is no longer maintained." %}
+        {%- endif %}
+        <div class="admonition important">
+            <p class="first admonition-title">Important</p>
+            <p class="last">
+                {{ you_are_browsing }} Read <a href="{{ theme_canonical_url }}{{ pathto('/' + pagename) }}"> version 5.1 (the latest LTS version) </a> of the Oro documentation to get up-to-date information.
+            </p>
+            <p class="last">
+                See our <a href="https://doc.oroinc.com/community/release-process/#orocommerce-and-orocrm-enterprise-edition-releases-and-support-cycle" target="_blank">Release Process documentation</a> for more information on the currently supported and upcoming releases.
+            </p>
+        </div>
+    {%- endif %}
+{%- endif %}
