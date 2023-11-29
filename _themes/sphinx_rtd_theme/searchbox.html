@@ -8,24 +8,24 @@
     :license: BSD, see LICENSE for details.
 #}
 {%- if pagename != "search" and builder != "singlehtml" %}
-<div id="searchbox" role="search">
-<!--    <form class="search" action="{{ pathto('search') }}" method="get">-->
-    <form class="search">
-        <div class="search-container">
-            <input class="search_text" type="text" placeholder="Search documentation" name="q" />
-            <span class="icon-submit">
-                <i class="fa fa-search search-complete__icon" aria-hidden="true"></i>
-            </span>
+<div id="searchbox" class="search">
+    <form style="display: none;" role="search" method="get" action="" data-hs-cf-bound="true">
+        <div class="field-search form-inline">
+            <input type="submit" value="Search the site">
+            <div class="ep-autosuggest-container">
+                <input type="text" class="search-form" name="q" placeholder="Search documentation" >
+                <div class="ep-autosuggest">
+                    <ul class="autosuggest-list" role="listbox"></ul>
+                </div>
+            </div>
         </div>
-        <input type="hidden" name="check_keywords" value="yes" />
-        <input type="hidden" name="area" value="default" />
     </form>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 {% set algoliaOptions = '{hitsPerPage: 10}' %}
-{% if oro_current_version %}
-    {% set algoliaOptions = "{ 'facetFilters': [\"version:" ~ oro_current_version ~ "\"], hitsPerPage: 10 }" %}
+{% if current_version %}
+    {% set algoliaOptions = "{ 'facetFilters': [\"version:" ~ current_version.version ~ "\"], hitsPerPage: 10 }" %}
 {% endif %}
 <script>
     docsearch({

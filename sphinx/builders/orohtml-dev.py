@@ -8,7 +8,7 @@
 """
 import sphinx
 
-from sphinx.builders.html import DirectoryHTMLBuilder
+from sphinx.builders.dirhtml import DirectoryHTMLBuilder
 
 
 class OroHTMLDevBuilder(DirectoryHTMLBuilder):

@@ -45,6 +45,11 @@ def setup(app):
     app.sitemap_links = []
     app.locales = []
 
+    return {
+        'parallel_read_safe': True,
+        'parallel_write_safe': True,
+    }
+
 
 def get_locales(app, exception):
     for locale_dir in app.builder.config.locale_dirs:
@@ -83,30 +88,30 @@ def create_sitemap(app, exception):
 
     get_locales(app, exception)
 
-    # Check that it's a SCV build by checking that SCV option is exist
-    is_scv_build = hasattr(app, 'scv_is_root')
-    is_scv_root_build = is_scv_build and app.scv_is_root
+    # Check release
+    if hasattr(app.builder.config, 'release'):
+        release = app.builder.config.release
 
-    # Build sitemap for default sphinx-build call
-    if is_scv_build and not is_scv_root_build:
-        if not hasattr(app, 'scv_oro_current_version'):
-            print("sphinx-sitemap warning: Can not determine current version for SCV build. Sitemap not built.")
-            return
-
+    # Build sitemap if this is root release or if building for other versions is enabled in config
+    if release and release != '':
         if app.builder.config.oro_sitemap_build_only_for_current is True:
             print("sphinx-sitemap info: Build only root version is enabled in config. "
                   "Sitemap not built for this version.")
             return
 
-        version = app.scv_oro_current_version + '/'
+        version = app.builder.config.release + '/'        
     else:
         version = ''
 
     for link in app.sitemap_links:
         url = ET.SubElement(root, "url")
         if app.builder.config.language is not None:
-            ET.SubElement(url, "loc").text = site_url + \
-                                             app.builder.config.language + '/' + version + link
+            if app.builder.config.language == 'en':
+                lang_pref = ''
+            else:
+                lang_pref = app.builder.config.language + '/'
+
+            ET.SubElement(url, "loc").text = site_url + lang_pref + version + link
             if len(app.locales) > 0:
                 for lang in app.locales:
                     linktag = ET.SubElement(
