@@ -56,3 +56,9 @@ The availability of a *product kit* depends on its *product kit items* that rely
 - *product kit* becomes `enabled` when at least one product from its non-optional *product kit items* is `enabled`;
 - *product kit* becomes `Out of Stock` when all products from its non-optional *product kit items* are not `In Stock`;
 - *product kit* becomes `In Stock` when at least one product from its non-optional *product kit items* is `In Stock`.
+
+Product Kit Search
+------------------
+
+Products with the type `kit` can be found by values of searchable attributes of products with the type `simple` which are related to this Product Kit.
+The `all_text` field of the back-office and storefront indexes for Product Kits contains attribute values related to `simple` products.
