@@ -33,20 +33,7 @@ from pygments.lexers.html import HtmlLexer
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 # https://github.com/nyergler/hieroglyph
 #https://pypi.python.org/pypi/sphinxcontrib-images
-extensions = [
-    'sphinxcontrib.phpdomain',
-    'sphinxcontrib.jquery',
-    'sphinx_multiversion',
-    'oro.integrity_check',
-    'builders.orohtml',
-    'builders.orohtml-dev',
-    'ext.orotoc',
-    'ext.assets-timestamp',
-    'ext.sitemap',
-    # Disable generating of sitemapindex.xml
-#    'ext.sitemap-index',
-    'ext.redirects',
-]
+extensions = []
 
 spelling_lang='en_US'
 spelling_word_list_filename='spelling_wordlist.txt'
@@ -96,7 +83,10 @@ release = 'master'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # exclude_patterns = ['_build', 'completeReference/overview', 'sphinx', '_themes', 'backend', 'bundles', 'cloud', 'community', 'developer', 'frontend', 'user']
-exclude_patterns = ['_build', 'completeReference/overview', 'sphinx', '_themes']
+exclude_patterns = ['_build', 'completeReference/overview', 'sphinx', '_themes'
+                    #,'api', 'backend', 'bundles', 'community'
+                    #, 'developer', 'frontend', 'platform', 'user'
+                    ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -192,13 +182,13 @@ html_title = "OroCommerce, OroCRM and OroPlatform Documentation"
 # hidden for local preview: , 'relations.html', 'searchbox.html'
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-html_additional_pages = {'index': 'index.html', '404': 'error-page.html'}
+# html_additional_pages = {'index': 'index.html', '404': 'error-page.html'}
 
 # A list of paths that contain extra files not directly related to the documentation, such as robots.txt or .htaccess.
 # Relative paths are taken as relative to the configuration directory. They are copied to the output directory.
 # They will overwrite any existing file of the same name.
 # As these files are not meant to be built, they are automatically excluded from source files.
-html_extra_path = ['robots.txt']
+# html_extra_path = ['robots.txt']
 
 # If false, no module index is generated.
 #html_domain_indices = True
@@ -234,18 +224,18 @@ html_copy_source = False
 # Disable permalinks
 html_add_permalinks = ''
 
-def setup(app):
-    app.add_css_file('https://use.fontawesome.com/releases/v5.2.0/css/all.css')
-#    app.add_stylesheet('css/custom.css')
+# def setup(app):
+#     app.add_css_file('https://use.fontawesome.com/releases/v5.2.0/css/all.css')
+#     app.add_stylesheet('css/custom.css')
 
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
@@ -376,13 +366,11 @@ redirects_file = 'redirects.txt'
 
 # ORO settings
 # Sphinx multiversion config
-# We don't use tags for versions. At least for now. 
-# According to the documentation we need to set this variable to None, but it throw warning
-# I have used this workaround https://github.com/Holzhaus/sphinx-multiversion/issues/47#issuecomment-1520562048 
-smv_tag_whitelist = 'a^'
+# We don't use tags for versions. At least for now
+smv_tag_whitelist = None
 # By default will set to None. We need to owerwrite this in CLI parameters
 smv_branch_whitelist = r'^(stage/3.1|stage/4.1|stage/5.0|stage/5.1|stage/master)$'
-smv_remote_whitelist = r'^(origin)$'
+# smv_branch_whitelist = None
 # Get release name as dir name. For current version release must be set to '' (empty string)
 smv_outputdir_format = '{config.release}'
 
