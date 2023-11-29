@@ -7,13 +7,13 @@
 """
 import sphinx
 
-from sphinx.builders.html import DirectoryHTMLBuilder
+from sphinx.builders.dirhtml import DirectoryHTMLBuilder
 
 
 class OroHTMLBuilder(DirectoryHTMLBuilder):
     name = 'orohtml'
     search = False  # Disable search for oro
-    out_suffix = ''
+    out_suffix = '.html'
     link_suffix = ''
 
 
