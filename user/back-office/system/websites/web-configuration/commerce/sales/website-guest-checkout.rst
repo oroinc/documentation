@@ -38,6 +38,9 @@ Configure Checkout Settings per Website
 
    * **Maximum Line Items per Page** --- Set the number of line items to display on the checkout page. The provided value will be used as the implied maximum number of checkout line items to display at once. If the number of checkout line items exceeds this value, the "Show All Items" will no longer be available and this number will be shown as the maximum pager value.
 
+   * **Apple Pay Domain Verification** (available starting from OroCommerce v5.0.14) --- Apple Pay in offered as part of the integration with :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`. Domain verification is one of the required prerequisites for Apple Pay to work. Whether Apple Pay will be offered as a payment option during checkout depends on what payment integrations are allowed on a specific website by the :ref:`payment rules <sys--payment-rules>`.
+
+
 9. Click **Save Settings**.
 
 .. include:: /include/include-images.rst

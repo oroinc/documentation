@@ -43,6 +43,8 @@ To configure checkout settings per organization:
 
    * **Start New Checkout If Shopping List Items Changed** --- If this option is enabled, and the content of the shopping list has changed, an attempt to resume the checkout process from the shopping list view page will result in restarting the checkout process.  The setting is available starting from OroCommerce v5.0.3. To check which application version you are running, see the :ref:`system information <system-information>`.
 
+   * **Apple Pay Domain Verification** (available starting from OroCommerce v5.0.14) --- Apple Pay in offered as part of the integration with :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`. Domain verification is one of the required prerequisites for Apple Pay to work. Whether Apple Pay will be offered as a payment option during checkout depends on what payment integrations are allowed on a specific website by the :ref:`payment rules <sys--payment-rules>`.
+
 9. Click **Save Settings**.
 
 .. include:: /include/include-images.rst

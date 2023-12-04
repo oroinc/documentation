@@ -44,6 +44,11 @@ To configure the integration between Stripe and OroCommerce, follow the steps ou
    * **Name** - Provide the payment method name that is shown as an option for payment configuration in the OroCommerce back-office.
    * **Labels** - The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the icon next to the field.
    * **Short labels** - The payment method name/label that is shown in the order details in the OroCommerce back-office and storefront after the order is submitted. To translate the label into other languages, click on the icon next to the field.
+   * **Apple Pay/Google Pay Labels** (available starting from OroCommerce v5.0.14) - This label is used at checkout in the storefront, and in the order history and payment rules in the back-office for the optional Apple Pay/Google Pay payment method. When using Apple Pay, please make sure to upload the Apple Pay domain verification file in the configuration of the website(s) where Apple Pay will be used (see :ref:`Apple Pay Domain Verification <user-guide--system-configuration--commerce-sales-checkout-website>`). Please note that Apple Pay is a payment method exclusive to the Safari browser and Google Pay is exclusive for the Chrome browser.
+
+     .. image:: /user/img/system/integrations/stripe/stripe-apple-google-pay.png
+        :alt: ApplePay and Google Pay payment method on the checkout page in the storefront
+
    * **API Public Key** - An identifier that helps authenticate your account. It refers to **Publishable key** on the Stripe side. You must use separate keys for the test and production environments.
    * **API Secret Key** - A pre-shared key used to cipher payment information. It refers to **Secret key** on the Stripe side. You must use separate keys for the test and production environments.
    * **Webhook Signing Secret** - A key that helps identify your webhook endpoints. Webhooks are used to notify the Oro application when an event happens in the Stripe account (e.g., capturing the payment).
