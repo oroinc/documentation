@@ -49,6 +49,9 @@ To import a bulk of product information:
 Product Kit Data
 ^^^^^^^^^^^^^^^^
 
+.. note:: Product Kits in the back-office are available as of 5.1LTS. Product Kits in the storefront are available as of 5.1.3. By default, the product kits feature is disabled for v.5.1 but you can enable it with developer assistance in the |yaml file of the ProductBundle|.
+
+
 The following formats of kitItems are possible (with or without the ID parameter):
 
 .. code-block:: text
