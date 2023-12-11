@@ -310,3 +310,23 @@ For example:
     {{ entity.content | oro_html_sanitize | render_content }}
 
 
+
+Display Label for Content Widget in Layout
+------------------------------------------
+
+Make sure that you have completed the data for the `labels` field of the content widget. Then, in layout, you will have the next variables `defaultLabel` and `labels`.
+You can display these variables in the following ways:
+
+.. code-block:: xml
+
+    layout:
+        actions:
+            - '@setOption':
+                id: layoutBlockId
+                optionName: label
+                optionValue:
+                    '=data["defaultLabel"]'
+                    # or
+                    '=data["locale"].getLocalizedValue(data["labels"])'
+
+    ...
