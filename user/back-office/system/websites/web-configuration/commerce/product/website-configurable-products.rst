@@ -35,9 +35,6 @@ To configure a matrix form view for a particular case:
 
     * **Popup Matrix Form** --- The option triggers a popup matrix form upon clicking the **Update Shopping List** button. Once the popup displays, a customer can select multiple simple products at a time.
 
-    * **Group Single Products** --- The option is available only for the shopping list view. It extracts the single products which were sent to the shopping list from the configurable product matrix.
-
-
 3. For **Product Views**, the options will look the following:
 
     .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_page.png
@@ -46,11 +43,7 @@ To configure a matrix form view for a particular case:
 
     .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_listing.png
 
-5. For **Shopping Lists**:
-
-    .. image:: /user/img/system/config_commerce/product/matrix_form_view_in_shipping_lists.png
-
-6. **Allow To Add Empty Products** --- If enabled, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use Organization** checkbox next to the option and then the checkbox of the option itself.
+5. **Allow To Add Empty Products** --- If enabled, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use Organization** checkbox next to the option and then the checkbox of the option itself.
 
 Variations
 ----------
