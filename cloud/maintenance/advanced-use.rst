@@ -124,7 +124,9 @@ Some options may also be omitted as they are added automatically:
 * The `--no-interaction (-n)` option will be ignored because it is added automatically during the `deploy` | `upgrade` command.
 * The `-v|vv|vvv, --verbose` option will be used (if specified) with a higher priority than the same option in the `deploy` | `upgrade` command, e.g. ``orocloud-cli deploy -vv``.
 
-**after_composer_install_commands**
+**[Deprecated] after_composer_install_commands**
+
+.. important:: Please avoid using it as it is incompatible with the :ref:`Application Packages Approach <orocloud-maintenance-use-upgrade>`.
 
 .. code-block:: yaml
 

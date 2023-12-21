@@ -8,21 +8,84 @@ Apply Patches During Deployment
 
 To unify the process of applying patches during application deployment, the maintenance agent is configured to do it once the code is deployed and the composer install is completed.
 
-.. code-block:: yaml
-
-    deployment:
-        after_composer_install_commands:
-           - bash -c 'if [[ -d patch ]]; then ls patch | grep ".patch$" | xargs -I{} bash -c "patch -p0 < patch/{}"; fi'
-
-If you need to apply patches to the application, create a patch directory in the root repository location and insert in it appropriate files with the ".patch". extension
+If you need to apply patches to the application, create a `patch` directory in the root repository location and insert in it appropriate files with the `.patch` extension
 
 Keep in mind that if your application supports patch application on its own (for example via a specific bundle), you need to make sure there are no conflicts between these approaches and the same patch is not applied twice.  
 
-..note:: Use the following command to make sure that the patch is correct and can be applied before deploying it into the production:
+.. note:: Use the following command to make sure that the patch is correct and can be applied before deploying it into the production:
 
 .. code-block:: bash
 
    patch -p0 < patch/file.patch
+
+Composer Patches by CWeagans
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This plugin provides a more controlled way to apply patches compared to the method described earlier.
+
+Before installation, add the plugin to the list of allowed plugins in `composer.json` in the `config.allow-plugins` section:
+
+.. code-block:: bash
+
+   {
+      ...
+      "config": {
+         ...
+         "allow-plugins": {
+            "cweagans/composer-patches": true,
+            ...
+         }
+      },
+      ...
+   }
+
+Installing the plugin is a straightforward process that involves installing a composer package within the project. Installation of the plugin itself is a simple composer package installation within the project:
+
+.. code-block:: bash
+
+   composer require cweagans/composer-patches
+
+After installation, the plugin can be configured via `composer.json` to apply patches during deployment.
+
+.. code-block:: bash
+
+   {
+     ...
+     "extra": {
+       "composer-exit-on-patch-failure": true,
+       "enable-patching": true,
+       "patches": {
+         "oro/platform": {
+            "Patch description": "patches/oro/platform/platform_patch_to_apply.patch",
+            ...
+         },
+         ...
+      }
+      ...
+   }
+
+The `patches` node defines the `patches` group by package or project name, and `oro/platform` is the example value with no logic.
+
+The easiest and most common way to group items is to briefly describe the patch and the patch path relative to the project's file root. Every patch must reference the affected files as a relative path to the project's files root.
+
+Once you add and configure patches, it is essential to regenerate the corresponding `packages.lock.json` file.
+
+.. code-block:: bash
+
+   composer patches-relock
+
+.. note::
+        If a file other than `composer.json` is used, then a corresponding `[composer_json_filename]-package.lock.json` file will be created for it. It can be helpful to use composer files that are specifically tailored to different environments, such as `composer-stage.json` or `composer-uat.json`.
+
+To ensure that patches are applied correctly, use the following command:
+
+.. code-block:: bash
+
+   composer patches-repatch
+
+Please commit all lock files to the repository when all patches function correctly.
+
+.. note:: To get additional details, please visit the project's official website and refer to the |Composer Patches| plugin documentation.
 
 Apply Patches to a Deployed Application
 ---------------------------------------
@@ -47,7 +110,6 @@ Use the following commands to work with patches:
 * **patch:view** - shows the content of the specified patch, requires the full path to the patch file as an argument.
 
 .. code-block:: none
-
 
    [ ~]$ orocloud-cli patch:view /mnt/ocom/app/persistent_shared/patch/20211016150803/test.patch
    ➤ Executing task patch:view
@@ -87,3 +149,6 @@ Usage examples:
   .. code-block:: bash
 
      orocloud-cli patch:revert /mnt/ocom/app/persistent_shared/patch/20211016150803/test.patch --force
+
+.. include:: /include/include-links-cloud.rst
+   :start-after: begin
