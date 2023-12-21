@@ -28,6 +28,7 @@ You can find more in-depth information on all Oro sales tools below:
    Payment Terms <payment-terms/index>
    Sales Territories <sales-territories>
    Seller Registration Requests <seller-registration-requests/index>
+   Product Prices Debug <prices-debug>
 
 
 

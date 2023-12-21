@@ -142,6 +142,11 @@ Application
 
   .. image:: /user/img/system/user_management/sys_config.png
 
+* **Debug Prices** -- Enables a user to access the Product Prices Debug menu under Sales to understand how prices for a particular product are created, what the current prices are for a given customer and website, and what the prices will be for a specific date.
+
+  .. image:: /user/img/sales/prices-debug/prices-debug-ACL.png
+     :alt: Illustration of the permission that enables Pricing Debug Menu
+
 * **Assign/Unassign Tags** --- Enables a user to assign/unassign :ref:`tags <admin-guide-tag-management>` to records.
 * **Connect to Mailchimp** --- Enables a user to map the contents of a marketing list in |oro_application| to use a segment of the subscribers list in :ref:`Mailchimp <user-guide-mailchimp-campaign>`. When the capability is enabled, the **Connect to Mailchimp** button appears on the page of the selected marketing list. Make sure that the integration between |oro_application| and :ref:`Mailchimp is configured <user-guide-mc-integration>` for the capability to work.
 
