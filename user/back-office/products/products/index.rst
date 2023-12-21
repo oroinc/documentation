@@ -25,8 +25,6 @@ With this information in mind, here are the references to the elements that need
 Create Your Products
 --------------------
 
-.. warning:: Please be aware that the Product Kits feature is still in development and some functionality is incomplete.
-
 Next, you can proceed to create products. You can create three types of products in OroCommerce, :term:`simple <Simple Product>`, :term:`configurable <Configurable Product>`, and a :term:`product kit <Product Kit>`.
 
 Simple products are physical items that exist in a primary, single variation. Their qualifiers, such as color or size, cannot be modified, meaning customers cannot select the same product with slightly different characteristics. Simple products have a unique SKU and serve as ‘building blocks’ for configurable products.

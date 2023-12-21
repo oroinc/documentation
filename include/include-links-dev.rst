@@ -811,6 +811,14 @@ Links (Dev)
 
    <a href="https://github.com/nelmio/NelmioApiDocBundle" target="_blank">NelmioApiDocBundle</a>
 
+.. |NelmioSecurityBundle| raw:: html
+
+   <a href="https://github.com/nelmio/NelmioSecurityBundle" target="_blank">NelmioSecurityBundle</a>
+
+.. |Permissions-Policy| raw:: html
+
+   <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy" target="_blank">Permissions-Policy</a>
+
 .. |FormUtil class| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Form/FormUtil.php" target="_blank">FormUtil class</a>
