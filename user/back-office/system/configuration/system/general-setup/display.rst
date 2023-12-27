@@ -118,6 +118,14 @@ and task lists:
     .. image:: /user/img/system/config_system/quick-creation-buttons.png
        :alt: Displaying quick action buttons on the customer view page
 
+14. In the **Email Template Editor Settings** section, configure the following settings (available starting from OroCommerce v5.1.5):
+
+    * **Use Localization Names In Email Template Editor** --- Select the option to enable the email template editor to use localization names instead of localization titles on the form tabs, which will allow users to easily distinguish localizations when there are more than one localization with the same title. It will become the default email editor behavior in future versions.
+
+
+    .. image:: /user/img/system/config_system/localization-names-vs-titles.png
+       :alt: Displaying the difference between localization names and localization titles on the email template form tabs
+
 
 .. include:: /include/include-images.rst
    :start-after: begin
