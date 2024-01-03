@@ -15,41 +15,21 @@ Notes could be enabled for the entity in the same way as for any other Activity 
     namespace Oro\Bundle\AccountBundle\Migrations\Schema\v1_1;
 
     use Doctrine\DBAL\Schema\Schema;
-
-    use Oro\Bundle\ActivityBundle\Migration\Extension\ActivityExtension;
     use Oro\Bundle\ActivityBundle\Migration\Extension\ActivityExtensionAwareInterface;
+    use Oro\Bundle\ActivityBundle\Migration\Extension\ActivityExtensionAwareTrait;
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
     class OroAccountBundle implements Migration, ActivityExtensionAwareInterface
     {
-        /**
-         * @var ActivityExtension
-         */
-        protected $activityExtension;
+        use ActivityExtensionAwareTrait;
 
         /**
-         * {@inheritdoc}
+         * {@inheritDoc}
          */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            $this->addNoteAssociations($schema);
-        }
-
-        /**
-         * Enable notes for Account entity
-         */
-        protected function addNoteAssociations(Schema $schema)
+        public function up(Schema $schema, QueryBag $queries): void
         {
             $this->activityExtension->addActivityAssociation($schema, 'oro_note', 'orocrm_account');
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function setActivityExtension(ActivityExtension $activityExtension)
-        {
-            $this->activityExtension = $activityExtension;
         }
     }
 
