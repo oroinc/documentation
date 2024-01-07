@@ -228,7 +228,7 @@ After that, your entity is ready to be the owning side of an association, but yo
                                 block:          associations
                                 required:       true
                                 label:          oro.note.enabled
-                                association_class: 'OroNoteBundle:Note'
+                                association_class: 'Oro\Bundle\NoteBundle\Entity\Note'
 
                     # this attribute can be used to prohibit changing the note association state (no matter whether
                     # it is enabled or not) for the entity

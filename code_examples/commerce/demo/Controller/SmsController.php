@@ -40,7 +40,7 @@ class SmsController extends AbstractController
         return $this->render(
             '@AcmeDemo/Sms/activity.html.twig',
             [
-                'entity' => $this->get(EntityRoutingHelper::class)->getEntity($entityClass, $entityId),
+                'entity' => $this->container->get(EntityRoutingHelper::class)->getEntity($entityClass, $entityId),
             ]
         );
     }
@@ -76,7 +76,7 @@ class SmsController extends AbstractController
      */
     protected function getTargetEntity(Request $request)
     {
-        $entityRoutingHelper = $this->get(EntityRoutingHelper::class);
+        $entityRoutingHelper = $this->container->get(EntityRoutingHelper::class);
         $targetEntityClass = $entityRoutingHelper->getEntityClassName($request, 'targetActivityClass');
         $targetEntityId = $entityRoutingHelper->getEntityId($request, 'targetActivityId');
         if (!$targetEntityClass || !$targetEntityId) {
@@ -100,7 +100,7 @@ class SmsController extends AbstractController
      */
     public function createAction(Request $request): array|RedirectResponse
     {
-        $createMessage = $this->get(TranslatorInterface::class)->trans(
+        $createMessage = $this->container->get(TranslatorInterface::class)->trans(
             'acme.demo.controller.sms.saved.message'
         );
 
@@ -121,7 +121,7 @@ class SmsController extends AbstractController
      */
     public function updateAction(Sms $entity, Request $request): array|RedirectResponse
     {
-        $updateMessage = $this->get(TranslatorInterface::class)->trans(
+        $updateMessage = $this->container->get(TranslatorInterface::class)->trans(
             'acme.demo.controller.sms.saved.message'
         );
 
@@ -162,7 +162,7 @@ class SmsController extends AbstractController
         Request $request,
         string $message = ''
     ): array|RedirectResponse {
-        return $this->get(UpdateHandlerFacade::class)->update(
+        return $this->container->get(UpdateHandlerFacade::class)->update(
             $entity,
             $this->createForm(SmsType::class, $entity),
             $message,
@@ -171,7 +171,7 @@ class SmsController extends AbstractController
         );
     }
 
-    public static function getSubscribedServices()
+    public static function getSubscribedServices(): array
     {
         return array_merge(
             parent::getSubscribedServices(),

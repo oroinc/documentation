@@ -18,7 +18,7 @@ use Symfony\Component\Form\FormEvents;
  * Form type extension that adds product options field to "product create/update" form
  * and persist the value to the database
  */
-class ProductOptionsFormTypeExtension extends AbstractTypeExtension
+abstract class ProductOptionsFormTypeExtension extends AbstractTypeExtension
 {
     const PRODUCT_OPTIONS_FIELD_NAME = 'productOptions';
 

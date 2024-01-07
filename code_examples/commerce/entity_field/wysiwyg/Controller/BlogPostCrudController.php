@@ -36,7 +36,7 @@ class BlogPostCrudController extends AbstractController
      * @Acl(
      *      id="acme_wysiwyg_blog_post_view",
      *      type="entity",
-     *      class="AcmeWysiwygBundle:BlogPost",
+     *      class="Acme\Bundle\WysiwygBundle\Entity\BlogPost",
      *      permission="VIEW"
      * )
      */
@@ -51,7 +51,7 @@ class BlogPostCrudController extends AbstractController
      * @Acl(
      *      id="acme_wysiwyg_blog_post_create",
      *      type="entity",
-     *      class="AcmeWysiwygBundle:BlogPost",
+     *      class="Acme\Bundle\WysiwygBundle\Entity\BlogPost",
      *      permission="CREATE"
      * )
      *
@@ -68,7 +68,7 @@ class BlogPostCrudController extends AbstractController
      * @Acl(
      *      id="acme_wysiwyg_blog_post_update",
      *      type="entity",
-     *      class="AcmeWysiwygBundle:BlogPost",
+     *      class="Acme\Bundle\WysiwygBundle\Entity\BlogPost",
      *      permission="EDIT"
      * )
      *
@@ -84,11 +84,11 @@ class BlogPostCrudController extends AbstractController
      */
     protected function update(Request $request, BlogPost $blogPost)
     {
-        return $this->get(UpdateHandlerFacade::class)
+        return $this->container->get(UpdateHandlerFacade::class)
             ->update(
                 $blogPost,
                 $this->createForm(BlogPostType::class, $blogPost),
-                $this->get(TranslatorInterface::class)->trans('acme.wysiwyg.blogpost.message.saved'),
+                $this->container->get(TranslatorInterface::class)->trans('acme.wysiwyg.blogpost.message.saved'),
                 $request,
                 null,
                 function (BlogPost $blogPost, FormInterface $form, Request $request) {

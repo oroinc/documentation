@@ -234,7 +234,7 @@ Suppose you have configured an entity to be protectable via ACLs. You have grant
 
 #. Use the ``@Acl`` annotation on a controller method, providing the entity class name and the permission to check for:
 
-.. oro_integrity_check:: bf7a00b931181708905d38d703f76fbd49ddef8a
+.. oro_integrity_check:: 7f774b6fa27aa54fa168f5bf99b0a124ed1830f0
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -245,7 +245,7 @@ Suppose you have configured an entity to be protectable via ACLs. You have grant
 
    The ACL configuration from the example above looks like this:
 
-.. oro_integrity_check:: cb692e7627216ee24d706ec632146093c930d95b
+.. oro_integrity_check:: 0dbbb1351e3031ef6794ab99daeef705351547f2
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/acls.yml
         :caption: src/Acme/Bundle/DemoBundle/config/oro/acls.yml
@@ -254,7 +254,7 @@ Suppose you have configured an entity to be protectable via ACLs. You have grant
 
   Annotation @AclAncestor enables you to reuse ACL resources defined with the ACL annotation or described in the acls.yml file. The name of the ACL resource is used as the parameter of this annotation:
 
-.. oro_integrity_check:: 1b8daf231c0885aef65cf4b4bd6ec3f8882aee93
+.. oro_integrity_check:: 4c7b1f9014fb80cdf7ddc6af988c478970a5f4f4
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -263,7 +263,7 @@ Suppose you have configured an entity to be protectable via ACLs. You have grant
 
   Sometimes you want to protect a controller method from code you do not control. Therefore, you cannot add the ``@AclAncestor`` annotation to it. Use the bindings key in the YAML configuration of your ACL to define which method(s) should be protected:
 
-.. oro_integrity_check:: 92483e7e887360ca891595114b3e2af7c6d528ab
+.. oro_integrity_check:: 2851bb1508ab6f4f85833d9387df75d4da10c6bc
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/acls.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
@@ -302,7 +302,7 @@ Protecting Custom DQL Queries
 
 When building custom DQL queries, reduce the result set being returned to the set of domain objects to which the user is granted access. To achieve this, use the ACL helper provided by the OroSecurityBundle:
 
-.. oro_integrity_check:: 06ddc0588d5fad6e37f07382123718858f8c6a20
+.. oro_integrity_check:: 9271edfa10d820ab24244b3a54b55e4d312626cc
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -319,7 +319,7 @@ Sometimes it is impossible to do an ACL check in the controller using annotation
 
 In this case, you can use the ``isGranted`` function:
 
-.. oro_integrity_check:: 1dd5634b01723daefacc71e4ace3c2915624a4b9
+.. oro_integrity_check:: 7d5e1f8e3b984fd99cb137c63c34b5b1f397b0e7
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -389,7 +389,7 @@ Restricting Access to Non-Entity Resources
 
 Sometimes, you only want to allow or deny access to a specific part of your application without protecting an entity. To achieve this, use a particular ``action`` type for an ACL:
 
-.. oro_integrity_check:: 4189c9c7a4df63411aef8ff1fff82adce5e0c9fa
+.. oro_integrity_check:: b82716928f5c34e750dd8d4f72d504bee3f42eb4
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -408,7 +408,7 @@ Manual Access Check on an Object Field
 
 The developer can check access to the given entity field by passing the instance `FieldVote` class to the `isGranted` method of the |Authorization Checker|:
 
-.. oro_integrity_check:: 58dc39bf0c629cf49c93c3df32d3ecc71c7b0db5
+.. oro_integrity_check:: 4be27a5276684111e8b742407a6fd637d2ed27de
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php

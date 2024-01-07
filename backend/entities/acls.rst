@@ -40,7 +40,7 @@ You have two options to define your custom access control lists:
 
 #. In your controller class, you can use the ``@Acl`` annotation:
 
-.. oro_integrity_check:: 4660c1cfd4499297e291773a0e77dbe0808245c9
+.. oro_integrity_check:: 4c6fdb6f2ec393977193350656f13338538be56a
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -51,7 +51,7 @@ You have two options to define your custom access control lists:
 
 #. If you do not want to protect any controller methods or if you prefer to keep the definition of your ACLs separated from the application code, you can define them using some YAML config in a file named ``acls.yml``:
 
-.. oro_integrity_check:: 78315db4cdc128b0ee264f99fc4b40f203ac544f
+.. oro_integrity_check:: 11dd922ddd03e38486a01f9339578373c3b7bc0f
 
    .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/acls.yml
        :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
@@ -62,7 +62,7 @@ You have two options to define your custom access control lists:
 
     You can also create access control lists that are only used to protect specific actions unrelated to an entity. To do that, set the type of the ACL to ``action`` instead of ``entity``:
 
-    .. oro_integrity_check:: 644db109948b700dda808291059658ab7dc450ae
+    .. oro_integrity_check:: e6049b4194f0256d9fd0c16719f8b5e2e5a9a2a7
 
         .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
             :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
@@ -72,7 +72,7 @@ You have two options to define your custom access control lists:
     When configuring the ACL using the YAML config format, you also have to set the controller to use the ``bindings`` option to bind the ACL:
 
 
-    .. oro_integrity_check:: 9516d6b8fa825be74e48c89e0867d2fd2a66dce3
+    .. oro_integrity_check:: 1bd0fdc96c7d20caadec64d7fe339712b294333d
 
         .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/acls.yml
             :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/acls.yml
