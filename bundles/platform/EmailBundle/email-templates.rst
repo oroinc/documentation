@@ -11,11 +11,9 @@ To achieve this, add a fixture in the ``SomeBundle\Migrations\Data\ORM`` folder 
     class DataFixtureName extends AbstractEmailFixture
     {
         /**
-         * Return path to email templates
-         *
-         * @return string
+         * {@inheritDoc}
          */
-        public function getEmailsDir()
+        public function getEmailsDir(): string
         {
             return __DIR__ . DIRECTORY_SEPARATOR . '../data/emails';
         }

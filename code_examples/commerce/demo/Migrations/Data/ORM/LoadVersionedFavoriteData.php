@@ -12,40 +12,36 @@ use Oro\Bundle\OrganizationBundle\Entity\Organization;
 /**
  * Load versioned favorites data.
  */
-class LoadVersionedFavoriteData extends AbstractFixture implements VersionedFixtureInterface, LoadedFixtureVersionAwareInterface
+class LoadVersionedFavoriteData extends AbstractFixture implements
+    VersionedFixtureInterface,
+    LoadedFixtureVersionAwareInterface
 {
-    protected string|null $currentDBVersion = null;
-
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
-    public function setLoadedVersion($version = null)
-    {
-        $this->currentDBVersion = $version;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getVersion()
+    public function getVersion(): string
     {
         return '2.0';
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
-    public function load(ObjectManager $manager)
+    public function setLoadedVersion($version = null): void
     {
-        $organization = $manager->getRepository(Organization::class)->getFirst();
+    }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function load(ObjectManager $manager): void
+    {
         $newFavorite = new Favorite();
         $newFavorite->setName('Last favorite');
         $newFavorite->setValue('Last favorite value');
         $newFavorite->setViewCount(18);
-        $newFavorite->setOrganization($organization);
+        $newFavorite->setOrganization($manager->getRepository(Organization::class)->getFirst());
         $manager->persist($newFavorite);
-
         $manager->flush();
     }
 }
