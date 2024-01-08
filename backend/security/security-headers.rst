@@ -9,7 +9,7 @@ NelmioSecurityBundle
 --------------------
 
 The |NelmioSecurityBundle| provides additional security features for your Symfony application.
-This bundle allows to define next security headers:
+This bundle allows to define the following security headers:
 
 * Content-Security-Policy (CSP) - Defines a set of rules that control which resources (e.g., scripts, stylesheets, images) a web page is allowed to load.
 
@@ -26,10 +26,10 @@ This bundle allows to define next security headers:
 OroSecurityBundle
 -----------------
 
-In addition to a wide range of security headers supported by the NelmioSecurityBundle OroSecurityBundle provides ability to set the |Permissions-Policy| header.
+In addition to a wide range of security headers supported by the NelmioSecurityBundle, OroSecurityBundle provides ability to set the |Permissions-Policy| header.
 
 .. code-block:: yaml
-    :caption: config/config.yml
+   :caption: config/config.yml
 
     oro_security:
         permissions_policy:

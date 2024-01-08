@@ -142,7 +142,7 @@ Application
 
   .. image:: /user/img/system/user_management/sys_config.png
 
-* **Debug Prices** -- Enables a user to access the Product Prices Debug menu under Sales to understand how prices for a particular product are created, what the current prices are for a given customer and website, and what the prices will be for a specific date.
+* **Debug Prices** -- Enables a user to access the Price Calculation Details menu under Sales to understand how prices for a particular product are created, what the current prices are for a given customer and website, and what the prices will be for a specific date.
 
   .. image:: /user/img/sales/prices-debug/prices-debug-ACL.png
      :alt: Illustration of the permission that enables Pricing Debug Menu
