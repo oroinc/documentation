@@ -36,6 +36,8 @@ Read more in the following topics below:
 
 * :ref:`Global View Entities <backend-security-bundle-global-view-entities>`
 
+* :ref:`Security Response Headers <backend-security-bundle-security-headers>`
+
 .. toctree::
    :titlesonly:
    :hidden:
@@ -50,3 +52,4 @@ Read more in the following topics below:
    custom-listeners
    example
    global-view-entities
+   security-headers
