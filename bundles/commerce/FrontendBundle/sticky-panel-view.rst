@@ -1,120 +1,91 @@
 
-Sticky Panel View
-=================
+Sticky Element View
+===================
 
-The sticky panel is used to display some elements when they leave the window view port.
-A sticky panel is always visible, so elements that can be moved to the panel are always visible, too.
+The sticky element uses a CSS approach with `position: sticky`.
+A sticky element is always visible while its parent container is visible.
 
-How to Usage
-------------
+Usage
+-----
 
-To be able to show an element on the sticky panel, add the `data-sticky` attribute to this element
+To show an element as sticky:
+
+* add the `sticky` CSS class and set the `sticky—top` or `sticky—bottom` position;
+* add the `data-sticky` attribute to this element to enable JavaScript to track sticky elements and improve experience with the native `position: sticky` functionality.
 
 .. code-block:: html
 
 
-    <div id="flash-messages" class="notification" data-sticky></div>
+    <div id="flash-messages" class="notification sticky sticky--top" data-sticky></div>
 
 Customization
---------------
+-------------
 
-**Add a class to an element in the sticky panel**
+**Add a class to an element in the sticky state**
 
 Add the `toggleClass` option to the `data-sticky` attribute:
 
 .. code-block:: html
 
 
-    <div id="flash-messages" class="notification"
+    <div id="flash-messages" class="notification sticky sticky--top"
          data-sticky='{"toggleClass": "notification--medium"}'>
     </div>
 
-**Add an element placeholder to the sticky panel**
+**Add a namespace**
 
-Add a placeholder using the layout update:
-
-.. code-block:: yaml
-
-
-    - '@add':
-        id: sticky_element_notification
-        parentId: sticky_panel_content
-        blockType: container
-
-Add a placeholder template
-
-.. code-block:: twig
-
-
-    {% block _sticky_element_notification_widget %}
-        {% set attr = layout_attr_defaults(attr, {
-            'id': 'sticky-element-notification'
-        }) %}
-        <div {{ block('block_attributes') }}></div>
-    {% endblock %}
-
-Add the `placeholderId` option to the `data-sticky` attribute:
+Add the `namespace` option to the `data-sticky` attribute:
 
 .. code-block:: html
 
 
-    <div id="flash-messages" class="notification"
-         data-sticky='{"placeholderId": "sticky-element-notification"}'>
+    <div id="flash-messages" class="notification sticky sticky--top"
+         data-sticky='{"namespace": "notification"}'>
     </div>
 
-**Always show an element in the sticky panel**
+JavaScript creates and updates several global CSS variables. The variables can be used in any CSS style to improve the sticky element behavior. 
 
-Move an element to the sticky panel using the layout update:
+According to the provided `namespace`, JavaScript creates:
 
-.. code-block:: yaml
+ - `--sticky-notification-element-height` --- current element height in `px`
+ - `--sticky-notification-offset-top`|`--sticky-notification-offset-bottom` --- show top offset from the top or bottom of the viewport
+ - `--sticky-notification-element-offset-top` - it sum of `--sticky-notification-element-height` and `--sticky-notification-offset-top`  --- to define a bottom point of the element
+
+**Add a group indicator**
+
+Add the `group` option to the `data-sticky` attribute:
+
+.. code-block:: html
 
 
-    - '@move':
-        id: notification
-        parentId: sticky_element_notification
+    <div id="flash-messages" class="notification sticky sticky--bottom"
+         data-sticky='{"namespace": "notification", "group": "bottom"}'>
+    </div>
+
+JS starts making offset and other calculations from the viewport bottom. 
 
 Several Sticky Panels
 ---------------------
 
-To create a custom sticky panel on the page, do the following: 
+1. Create several sticky elements.
+2. Set the `sentinel` property to the first one. This property determines which element should overlap to determine when the current element has reached its bottom destination. It also creates the CSS variable `--sticky-notification-group-offset-y` when the element overlaps with the sentinel.
 
-- Import sticky panel to the layout and define the namespace for a new sticky block.
-
-.. code-block:: yaml
-
-
-     imports:
-         -
-             id: sticky_panel
-             root: page_container
-             namespace: top
-
-- Each sticky panel should have its own name. You should define it with `@setOption`
- 
-.. code-block:: yaml
-
-
-    - '@setOption':
-        id: top_sticky_panel
-        optionName: sticky_name
-        optionValue: top-sticky-panel
-
-- The `stick_to` option should be set to one of the following values: top (by default), bottom. This value defines the position calculation algorithm. 
-
-.. code-block:: yaml
-
-
-    - '@setOption':
-        id: top_sticky_panel
-        optionName: stick_to
-     optionValue: bottom
-
-- When a new panel has been added to the page, customize the page elements that will use it. Add the `data-sticky-target` attribute with a sticky name.
- 
 .. code-block:: html
 
 
-    <div id="flash-messages" class="notification" data-sticky-target="top-sticky-panel"
-        data-sticky='{"placeholderId": "sticky-element-notification"}'>
+    <div id="flash-messages" class="notification sticky sticky--top"
+         data-sticky='{"namespace": "notification", "sentinel": "toolbar}'>
     </div>
 
+    <div id="toolbar" class="toolbar sticky sticky--top"
+         data-sticky='{"namespace": "toolbar"}'>
+    </div>
+
+Example Usage. This example hides the notification element when it reaches the toolbar. The user will only see the toolbar.
+
+.. code-block:: css
+
+
+    .toolbar, .notification {
+        transform: translateY(calc(var(--sticky-notification-group-offset-y, 0) * -1));
+    }
