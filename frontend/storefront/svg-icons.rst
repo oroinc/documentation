@@ -18,7 +18,7 @@ In TWIG
 
 .. code-block:: twig
 
-    {% import '@OroFrontend/layouts/renderIcon.html.twig' as renderIcon %}
+    {% import '@OroUI/layouts/renderIcon.html.twig' as renderIcon %}
     {{ renderIcon.icon({name: 'add-note'}) }}
 
 In HTML Templates
@@ -26,10 +26,10 @@ In HTML Templates
 
 .. code-block:: none
 
-    <% let orofrontend = _.macros('orofrontend') %>
-        <%= orofrontend.renderIcon({
-        name: 'add-note'
-    }) %>
+   <% let oroui = _.macros('oroui') %>
+   <%= oroui.renderIcon({
+       name: 'add-note'
+   }) %>
 
 In JS
 ^^^^^
@@ -38,7 +38,7 @@ In JS
 
     import _ from 'underscore';
 
-     const icon = _.macros('orofrontend::renderIcon')({
+     const icon = _.macros('oroui::renderIcon')({
         name: 'add-note'
     });
 
