@@ -43,7 +43,7 @@ class SmsController extends RestController
      */
     public function getManager()
     {
-        return $this->get('acme_demo_sms.manager.api');
+        return $this->container->get('acme_demo_sms.manager.api');
     }
 
     /**
@@ -51,6 +51,6 @@ class SmsController extends RestController
      */
     public function getFormHandler()
     {
-        return $this->get('acme_demo_sms.form.handler.sms_api');
+        return $this->container->get('acme_demo_sms.form.handler.sms_api');
     }
 }

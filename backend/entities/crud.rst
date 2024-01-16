@@ -37,7 +37,7 @@ The Controllers
 
 You then need to create a controller class that comes with two actions: one that is called when a new question should be created and one that can fetch an existing question to let the user modify its data:
 
-.. oro_integrity_check:: de2ee9c384055edb1ffbec46a751ac8e81eb6045
+.. oro_integrity_check:: ce3d90657c58db4922a9c978f8c74cef226df9ab
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php

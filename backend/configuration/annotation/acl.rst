@@ -16,7 +16,7 @@ that is annotation with this ACL accordingly:
      * @Acl(
      *     id="user_user_view",
      *     type="entity",
-     *     class="OroUserBundle:User",
+     *     class="Oro\Bundle\UserBundle\Entity\User",
      *     permission="VIEW"
      * )
      */

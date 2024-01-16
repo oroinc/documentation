@@ -80,4 +80,4 @@ Specify a mapping for the added `relevance_weight` field in the `Resources/confi
             type: decimal
 
 
-Finally, clear the cache using the ``php bin/console cache:clear --env=prod`` command and trigger reindexation of the required entity using the ``php bin/console oro:website-search:reindex --class=OroProductBundle:Product --env=prod`` command.
+Finally, clear the cache using the ``php bin/console cache:clear --env=prod`` command and trigger reindexation of the required entity using the ``php bin/console oro:website-search:reindex --class="Oro\Bundle\ProductBundle\Entity\Product" --env=prod`` command.

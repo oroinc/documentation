@@ -56,7 +56,7 @@ Environment Setup
 
 5. Log into Ubuntu 20.04 LTS using Windows Terminal. All the below commands will be executed in it.
 
-6. Install PHP 8.2 with all required extensions to Ubuntu 20.04 LTS:
+6. Install PHP 8.3 with all required extensions to Ubuntu 20.04 LTS:
 
    .. hint::  It is recommended to run all commands one by one to make sure they exit successfully and avoid missing potential warnings. If you have unreliable connection leading to command failure, please rerun it.
 
@@ -65,7 +65,7 @@ Environment Setup
       sudo apt install software-properties-common
       sudo add-apt-repository -y ppa:ondrej/php
       sudo apt update
-      sudo apt -y install php8.2 php8.2-fpm php8.2-cli php8.2-pdo php8.2-mysqlnd php8.2-xml php8.2-soap php8.2-gd php8.2-zip php8.2-intl php8.2-mbstring php8.2-opcache php8.2-curl php8.2-bcmath php8.2-ldap php8.2-pgsql php8.2-dev php8.2-mongodb
+      sudo apt -y install php8.3 php8.3-fpm php8.3-cli php8.3-pdo php8.3-mysqlnd php8.3-xml php8.3-soap php8.3-gd php8.3-zip php8.3-intl php8.3-mbstring php8.3-opcache php8.3-curl php8.3-bcmath php8.3-ldap php8.3-pgsql php8.3-dev php8.3-mongodb
 
   You will be prompted to type in your password as you are running the commands as a sudo user.
 

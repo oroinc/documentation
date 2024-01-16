@@ -707,6 +707,10 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/5.4/components/templating.html" target="_blank">Symfony Templating Component</a>
 
+.. |Role Based Access Control In Symfony| raw:: html
+
+   <a href="https://symfony.com/doc/6.3/security/access_control.html" target="_blank">Role Based Access Control In Symfony</a>
+
 .. |Role Based Access Control| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/Role-based_access_control" target="_blank">Role Based Access Control</a>
@@ -5607,9 +5611,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/QueryDesignerBundle/Resources/config/oro/query_designer.yml" target="_blank">By default</a>
 
-.. |PHP 8.2| raw:: html
+.. |PHP 8.3| raw:: html
 
-   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP 8.2</a>
+   <a href="https://www.php.net/manual/en/install.php" target="_blank">PHP 8.3</a>
 
 .. |Composer| raw:: html
 

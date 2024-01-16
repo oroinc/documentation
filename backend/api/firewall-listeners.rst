@@ -14,12 +14,12 @@ To be able to configure listeners for a disabled API feature, use the following 
         api_firewalls:
             api_wsse_secured: # firewall name
                 feature_name: web_api
-                feature_firewall_listeners: # list of listeners that should be disabled when the feature specified in feature_name option is disabled
-                    - Oro\Bundle\WsseAuthenticationBundle\Security\Http\Firewall\WsseAuthenticationListener
+                feature_firewall_authenticators: # list of authenticators that should be disabled when the feature specified in feature_name option is disabled
+                    - Oro\Bundle\WsseAuthenticationBundle\Security\Core\Authentication\WsseAuthenticator
             wsse_secured:
                 feature_name: web_api
-                feature_firewall_listeners:
-                    - Oro\Bundle\WsseAuthenticationBundle\Security\Http\Firewall\WsseAuthenticationListener
+                feature_firewall_authenticators:
+                    - Oro\Bundle\WsseAuthenticationBundle\Security\Core\Authentication\WsseAuthenticator
             api_options:
                 feature_name: web_api
 

@@ -64,7 +64,7 @@ class DoctrineTypeFieldController extends AbstractController
      */
     public function createAction(Request $request): array|RedirectResponse
     {
-        $createMessage = $this->get(TranslatorInterface::class)->trans(
+        $createMessage = $this->container->get(TranslatorInterface::class)->trans(
             'acme.demo.controller.doctrine_type_field.saved.message'
         );
 
@@ -85,7 +85,7 @@ class DoctrineTypeFieldController extends AbstractController
      */
     public function updateAction(DoctrineTypeField $entity, Request $request): array|RedirectResponse
     {
-        $updateMessage = $this->get(TranslatorInterface::class)->trans(
+        $updateMessage = $this->container->get(TranslatorInterface::class)->trans(
             'acme.demo.controller.doctrine_type_field.saved.message'
         );
 
@@ -97,7 +97,7 @@ class DoctrineTypeFieldController extends AbstractController
         Request $request,
         string $message = ''
     ): array|RedirectResponse {
-        return $this->get(UpdateHandlerFacade::class)->update(
+        return $this->container->get(UpdateHandlerFacade::class)->update(
             $entity,
             $this->createForm(DoctrineTypeFieldType::class, $entity),
             $message,
@@ -106,7 +106,7 @@ class DoctrineTypeFieldController extends AbstractController
         );
     }
 
-    public static function getSubscribedServices()
+    public static function getSubscribedServices(): array
     {
         return array_merge(
             parent::getSubscribedServices(),

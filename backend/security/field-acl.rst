@@ -19,7 +19,7 @@ In PHP code, access to the field is provided by the `isGranted` method of the `s
 
 The second parameter of this method should be an instance of |FieldVote|:
 
-.. oro_integrity_check:: 58dc39bf0c629cf49c93c3df32d3ecc71c7b0db5
+.. oro_integrity_check:: 4be27a5276684111e8b742407a6fd637d2ed27de
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php

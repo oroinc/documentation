@@ -19,6 +19,7 @@ Read more in the following topics below:
   * :ref:`Access Control Lists <backend-security-bundle-access-control-list>`
   * :ref:`Permissions for Entities <backend-security-bundle-configure-entities>`
   * :ref:`Protecting Resources <backend-security-bundle-protect-resources>`
+  * :ref:`Role Based Access Control <backend-security-bundle-role-access-control>`
 
 * :ref:`Access Levels and Ownership Illustration <backend-security-bundle-example>`
 
@@ -50,6 +51,7 @@ Read more in the following topics below:
    configurable-permissions
    csrf-protection
    access-rules
+   role-based-access-control
    custom-listeners
    example
    global-view-entities

@@ -34,10 +34,10 @@ First, the `applicable` attribute describes rules, and then a filter is used. In
 
 - `type` - field data type
 - `field` - field name
-- `entity` - entity name, for example ``OroUserBundle:User`` or ``Oro\Bundle\UserBundle\Entity\User``
+- `entity` - entity name, for example ``Oro\Bundle\UserBundle\Entity\User``
 - `identifier` - true/false, check if the field is the primary key
 
-For instance, if you need to use a special filter for the `name` field of the `User` entity, you can use the following applicable condition: `{entity: OroUserBundle:User, field: name}`.
+For instance, if you need to use a special filter for the `name` field of the `User` entity, you can use the following applicable condition: `{entity: Oro\Bundle\UserBundle\Entity\User, field: name}`.
 The `type` attribute sets the identifier of a filter UI control. To find all existing controls, run the following command:
 
 .. code-block:: php
@@ -76,7 +76,7 @@ Each item in the `exclude` array can have the following attributes:
 
 - `type` - field data type
 - `field` - field name
-- `entity` - entity name, for example ``OroUserBundle:User`` or ``Oro\Bundle\UserBundle\Entity\User``
+- `entity` - entity name, for example ``Oro\Bundle\UserBundle\Entity\User``
 - `identifier` - true/false, check if the field is the primary key
 
 Aggregating Functions Configuration
@@ -103,8 +103,8 @@ Each item in the `applicable` array can have the following attributes:
 
 - `type` - field data type
 - `field` - field name
-- `entity` - entity name, for example ``OroUserBundle:User`` or ``Oro\Bundle\UserBundle\Entity\User``
-- `parent_entity` - the name of parent entity, for example ``OroUserBundle:User`` or ``Oro\Bundle\UserBundle\Entity\User``
+- `entity` - entity name, for example ``Oro\Bundle\UserBundle\Entity\User``
+- `parent_entity` - the name of parent entity, for example ``Oro\Bundle\UserBundle\Entity\User``
 - `identifier` - true/false, check if the field is the primary key
 
 Dump Reference Structure

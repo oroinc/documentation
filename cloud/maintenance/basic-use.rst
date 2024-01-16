@@ -587,7 +587,7 @@ To pass a command that contains arguments or options, wrap the command in quotes
 .. code-block:: none
 
     orocloud-cli app:console "oro:user:list --all"
-    orocloud-cli app:console 'oro:search:reindex --scheduled OroUserBundle:User'
+    orocloud-cli app:console 'oro:search:reindex --scheduled Oro\Bundle\UserBundle\Entity\User'
 
 Spaces and backslashes must be escaped with  ``\``.
 
@@ -943,7 +943,7 @@ Maintenance Commands
 
 Maintenance commands enable you to turn on the maintenance mode for the webserver and services (consumers, cron, websocket).
 
-Oro Support Team will get a P1 notification after 1 hour of enabled maintenance mode. 
+Oro Support Team will get a P1 notification after 1 hour of enabled maintenance mode.
 You can set custom downtime duration and comment to avoid P1 escalation using the following options:
 
 .. code-block:: none

@@ -92,7 +92,7 @@ Each calendar event has a `recurrence` field. This is a dictionary containing fi
     </tr>
     </table>
 
-Usually, for recurring events, only one entity of OroCalendarBundle:CalendarEvent is created with reference to the entity of OroCalendarBundle:Recurrence. When an API request with a date range is sent to the server, it dynamically expands each recurring event into occurrences of this recurring event. Each occurrence event will have the same data as the original recurring event, but with `start` and `end` dates dynamically calculated.
+Usually, for recurring events, only one entity of Oro\Bundle\CalendarBundle\Entity\CalendarEvent is created with reference to the entity of Oro\Bundle\CalendarBundle\Entity\Recurrence. When an API request with a date range is sent to the server, it dynamically expands each recurring event into occurrences of this recurring event. Each occurrence event will have the same data as the original recurring event, but with `start` and `end` dates dynamically calculated.
 
 Exceptions
 ----------
