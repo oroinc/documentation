@@ -107,6 +107,10 @@ You may adjust this procedure according to your needs, but keep in mind that you
 .. note::
     Remember to :ref:`create a dump of Standard Search Index <standard-elasticsearch-dump>`
 
+
+.. hint:: See the :ref:`Indexation process <search_index_overview--indexation-process>` documentation for more details on synchronous and asynchronous (scheduled) indexation.
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin
 

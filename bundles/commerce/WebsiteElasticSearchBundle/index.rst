@@ -5,6 +5,8 @@
 OroWebsiteElasticSearchBundle
 =============================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 .. note:: This bundle is only available in the Enterprise edition.
 
 OroWebsiteElasticSearchBundle enables support of the |Elasticsearch| engine for the search functionality on the OroCommerce Enterprise application storefront.

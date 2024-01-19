@@ -5,14 +5,16 @@
 OroSearchBundle
 ===============
 
-OroSearchBundle enables the full-text search feature for the Oro applications users and enables the advanced query language usage to build structured queries in the search UI.
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
+|OroSearchBundle| enables the full-text search feature for the Oro applications users and enables the advanced query language usage to build structured queries in the search UI.
 
 The bundle provides the ability for developers to use different search engines, setup configuration for search engines and indexation options for every application entity in the YAML configuration files. It also performs indexation of entire application data, particular entities or even specific entity records using CLI tools.
 
 Related Documentation
 ---------------------
 
-* :ref:`Introduction to Search Index <search_index_overview>`
+* :ref:`Search Index Concept <search_index_overview>`
 * :ref:`Configure Search <db-search--configuration>`
 * :ref:`Search Bundle Console Commands <search_index_db_from_md--console-commands>`
 * :ref:`Postpone or Skip Reindexation <bundle-docs-commerce-website-search-bundle-platform-update>`
@@ -26,6 +28,8 @@ Related Documentation
 .. toctree::
    :hidden:
 
+   configuration
+   console-commands
    orm-search-engine
    relevance-weight
    date-time-formatter

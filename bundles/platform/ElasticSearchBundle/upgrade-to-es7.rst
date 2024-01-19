@@ -111,5 +111,9 @@ You may adjust this procedure according to your needs, but keep in mind that you
 * create index dump **before** upgrading to 4.+ and ensure that old Elasticsearch service is running at this time;
 * create and upload index dump during maintenance mode to avoid data loss.
 
+
+.. hint:: See the :ref:`Indexation process <search_index_overview--indexation-process>` documentation for more details on synchronous and asynchronous (scheduled) indexation.
+
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

@@ -1,7 +1,9 @@
 .. _bundles-commerce-website-search-indexation:
 
-Indexation Process
-==================
+WebsiteSearch Indexation Process
+================================
+
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
 
 Trigger Reindexation
 --------------------
@@ -17,6 +19,8 @@ This class contains the following parameters that specify the scope of the entit
 * **$classesNames** - list of entity class names that have to be reindexed. When no classes are provided, all entities from the search index are reindexed;
 * **$ids** - list of entity identifiers that has to be reindexed. When no IDs are provided, all entities of the specified classes are reindexed;
 * **$scheduled** (default `true`) - boolean flag that defines whether reindexation has to be scheduled (asynchronous) or immediate (synchronous).
+* **$fieldGroups** - list of entity groups that needs to be reindexed. Data in the index is split into groups, and it is possible to reindex only particular groups(s) to reduce the load on the application and engine. This approach is called partial indexation. Partial indexation is a good option both for synchronous and asynchronous indexation when you need to update one, or multiple field groups. Supported field groups are: main, collection_sort_order, image, category_sort_order, visibility, pricing, order, customer_recommendation_action, customer_recommendation_revenue, inventory (multiple values allowed).
+
 
 For example:
 
@@ -168,11 +172,11 @@ Asynchronous Search Indexer
 
 The website search supports two types of indexation: immediate (synchronous) and scheduled (asynchronous). Regular indexer works synchronously, so you have to wait until indexation is finished. Asynchronous indexer sends a message to the Message Queue to process it later by workers.
 
-Default asynchronous indexer is implemented in the `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer` class and is accessible via the `oro_website_search.async.indexer` service. To trigger asynchronous indexation, set **$scheduled** parameter to `true`.
+Default asynchronous indexer is implemented in the `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer` class and is accessible via the `oro_website_search.async.indexer` service. To trigger asynchronous indexation, you should trigger ReindexationRequestEvent event and set **$scheduled** parameter to `true`.
 
 Asynchronous indexer is using `Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncMessaging\\ReindexMessageGranularizer` to split message per entity and websiteId. What the request message granularizer does:
 
-* on 1 indexation request message to handle entity `Product` within all websites `[1, 2, 3, 4, 5]` it splits the message into 5 different smaller messages, that allows handling each `Product` entity with each websiteId separately
+* on 1 indexation request message to handle entity `Product` within all websites `[1, 2, 3, 4, 5]` it splits the message into 5 separate groups, that allows handling each `Product` entity with each websiteId separately
 
 * on messages that contain large amounts of entityIds, it splits entityIds table into smaller chunks, for example 1000 entityIds will be split into 10 messages with 100 entityIds each  
 
@@ -234,6 +238,9 @@ Below is an example of the index listener for the index structure above:
 
         public function onWebsiteSearchIndex(IndexEntityEvent $event)
         {
+             if (!$this->hasContextFieldGroup($event->getContext(), 'main')) {
+            return;
+
             // get current website ID
             $websiteId = $this->websiteContextManager->getWebsiteId($event->getContext());
             if (!$websiteId) {
@@ -337,6 +344,10 @@ And here is what search index might contain after the indexation:
         }
     }
 
+
+.. _bundles-commerce-website-search-indexation-partial:
+
+
 Partial Indexation
 ------------------
 
@@ -347,7 +358,7 @@ Partial indexation is a feature that reduces the load on the engine by updating 
 Index Groups
 ^^^^^^^^^^^^
 
-The index is divided into groups, which include specific fields that should be used in the update process.
+The index is divided into groups (``$fieldGroups``), each group includes specific fields that should be used in the update process.
 
 Out of the box, the following indexation field groups are configured for the Product entity:
 

@@ -121,7 +121,7 @@ Supported search index providers:
 * :ref:`DB full-text search <search_index_db_from_md>` in CE and EE
 * :ref:`Elastic Search <elastic-search>` in EE only
 
-.. note:: For implementation details, see :ref:`Search Index <search_index_overview>` topic for more information about the search index component.
+.. note:: For implementation details, see :ref:`Search Index Concept <search_index_overview>` topic for more information about the search index component.
 
 Notes on Deployment Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -139,7 +139,7 @@ All systems and elements of the Oro application may be hosted on their own dedic
 * :ref:`File Storage <backend-file-storage>`
 * :ref:`Session Storage <backend-session-storage>`
 * :ref:`Message Queue <op-structure--mq--index>`
-* :ref:`Search Index <search_index_overview>`
+* :ref:`Search Index Concept <search_index_overview>`
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin
@@ -153,4 +153,4 @@ All systems and elements of the Oro application may be hosted on their own dedic
    file-storage
    session-storage
    message-queue
-   search-index
+   search/index
