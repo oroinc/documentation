@@ -4,7 +4,7 @@
 Manage Address Book in the Storefront
 =====================================
 
-The following information covers the **Address Book** section of the **Account** menu in OroCommerce storefront.
+The following information covers the **Address Book** section of the **Account** menu in the OroCommerce storefront.
 
 .. begin
 
@@ -21,7 +21,7 @@ The address book has two sections:
 .. image:: /user/img/storefront/profile/MyProfileAddressBooks.png
 
 .. note::
-   Depending in the storefront settings, the address book lists may appear in the compact format with a map displayed on the right:
+   Depending on the storefront settings, the address book lists may appear in the compact format with a map displayed on the right. Please be aware that a valid Google API key is required to display maps in the storefront. Please see :ref:`the back-office settings <system-configuration-integrations-google>` for more information.
 
    .. image:: /user/img/storefront/profile/address_book_compact.png
       :width: 40%
