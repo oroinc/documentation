@@ -42,7 +42,7 @@ The details provided in the registration form are immediately displayed in the O
 .. image:: /user/img/concept-guides/marketplace/seller-registration-request-wf.png
    :alt: Seller registration workflow
 
-A person responsible for registration in the marketplace owner organization can then :ref:`start processing the request <user-guide--sales--seller-registration-requests>`, accept it immediately, or decline it using the back-office :ref:`Seller Registration Request workflow <system--workflows--seller-registration-flow>`. Once accepted, the vendor will be assigned a username and receive access to their own newly created seller organization in OroMarketplace. At each step of registration, :ref:`an email <user-guide-email-template>` is sent to the seller informing them about the progress of his application.
+A person responsible for registration in the marketplace owner organization can then :ref:`start processing the request <user-guide--sales--seller-registration-requests>`, accept it immediately, or decline it using the back-office :ref:`Seller Registration Request workflow <system--workflows--seller-registration-flow>`. Once accepted, the vendor will be assigned a username and receive access to their own newly created seller organization in OroMarketplace. At each step of registration, :ref:`an email <user-guide-email-template>` is sent to the seller informing them about the progress of their application.
 
 .. image:: /user/img/concept-guides/marketplace/email-templates.png
    :alt: Email templates for the seller registration process
