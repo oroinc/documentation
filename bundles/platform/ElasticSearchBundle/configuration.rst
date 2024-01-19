@@ -1,6 +1,8 @@
 ElasticSearch Configuration
 ===========================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 This bundle provides you with the opportunity to configure search engine for your needs.
 
 Parameters
@@ -151,6 +153,8 @@ Elasticsearch is an asynchronous search engine, which means that data might be a
 
 
 Pay attention that synchronous indexation is slower than asynchronous because application has to wait for reindexation to finish after every reindexation request.
+
+.. hint:: See the :ref:`Indexation process <search_index_overview--indexation-process>` documentation for more details on synchronous and asynchronous (scheduled) indexation.
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

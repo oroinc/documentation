@@ -5,6 +5,8 @@
 Console Commands
 ================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 OroWebsiteSearchBundle provides commands to interact with search index.
 
 oro:website-search:reindex
@@ -30,7 +32,11 @@ To reindex only a certain website and specific entity, use the --website-id and 
 
     $ php bin/console oro:website-search:reindex --website-id 1 --class OroUserBundle:User
 
-Normally, reindexation is performed immediately after the reindex command is issued. However, it can also be scheduled to be performed in the background by the Message Queue consumers.
+
+oro:website-search:reindex --scheduled
+--------------------------------------
+
+Reindexation can also be scheduled to be performed in the background by the Message Queue consumers.
 
 Advantages of this mode:
 
