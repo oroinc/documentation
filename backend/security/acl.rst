@@ -84,7 +84,8 @@ do with the resource. Namely, the following permissions are supported for **enti
 |            | permission is only evaluated when an entity is edited.                    |
 +------------+---------------------------------------------------------------------------+
 | ``SHARE``  | Whether or not a user is allowed to assign a record to another user.      |
-|            | Only works on entities' view pages.                                       |
+|            | Only works on entities' view pages if the feature                         |
+|            | :ref:`is enabled <admin-configuration-user-settings-share>`.              |
 |            |                                                                           |
 |            | .. note:: This permission is available only in Enterprise editions.       |
 |            |                                                                           |
