@@ -15,7 +15,7 @@ Access Control Lists are an essential part of the |Symfony Security Components|.
 
 .. hint:: You can find detailed information about Symfony ACL-based security model in the Symfony documentation:
 
-           * |https://symfony.com/doc/5.4/security/acl.html|
+           * |https://github.com/symfony/acl-bundle/blob/main/src/Resources/doc/index.rst|
 
 Access Levels
 ~~~~~~~~~~~~~
