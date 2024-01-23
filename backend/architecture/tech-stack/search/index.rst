@@ -1,8 +1,8 @@
 .. _search_index_overview:
 .. _search_index_db_from_md:
 
-Search Index Concept
-====================
+Search Index
+============
 
 The search index component is responsible for interaction with a different search engine and the search index storage inside it.
 
