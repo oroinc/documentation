@@ -8,15 +8,34 @@ OroMarketplace is a powerful open-source digital B2B marketplace solution for bu
 Organizations
 -------------
 
-In OroMarketplace, :ref:`organizations <user-management-organizations>` represent different vendors. You can create as many vendors as necessary via back-office, assigning them an organization type. It defines what features are available for a particular organization. By default, there are two organization types, General and Marketplace Seller, however, organization types are configurable on the developer level, where any set of features or restrictions can be added to match any business criteria and any seller. The general ownership type allows access to all application functionality without any restrictions, while Marketplace Seller type has limitations and offers only essential functionality that vendors might need, such as access to their orders and inventory, restricting them from viewing irrelevant or sensitive data.
+Sellers vs Operator
+^^^^^^^^^^^^^^^^^^^
+
+OroMarketplace operates with a model where there is one central marketplace operator and multiple sellers.
+
+:term:`A marketplace seller <Marketplace Seller>` can be either an individual or a company that sells products or services on the platform. OroMarketplace offers a platform that enables these sellers to manage their product listings and handle orders. Each seller can have multiple users associated with their operations on the platform, including individuals with different roles and responsibilities such as sales reps, product managers, and customer support reps. It is possible to create any number of sellers via the back-office.
+
+On the other hand, :term:`a marketplace operator <Marketplace Operator>` owns and manages the overall operation and infrastructure of the marketplace platform for the marketplace seller(s). Users associated with the marketplace operator are responsible for providing an environment that enables sellers to list their products or services and facilitates transactions with buyers. These users usually include individuals or roles responsible for managing and administering the overall functionality of the marketplace platform, such as platform administrators, technical support, and user account managers.
+
+Sellers and the Operator in OroMarketplace are represented by :ref:`organizations <user-management-organizations>`.
+
+Types of Organizations
+^^^^^^^^^^^^^^^^^^^^^^
+
+OroMarketplace uses organization types to differentiate between Marketplace Seller organizations and the Marketplace Operator, and define what features are available for a particular organization. By default, there are two organization types, **General** and **Marketplace Seller**.
+
+* The **General** organization type allows access to all application functionality without any restrictions.
+* The **Marketplace Seller** type has limitations and offers only essential functionality that sellers might need, such as access to their orders and inventory, restricting them from viewing irrelevant or sensitive data.
 
 .. image:: /user/img/concept-guides/marketplace/general-vs-marketplace-seller-org-type.png
-   :alt: Illustration of how marketplace seller ownership type restricts features and menus for vendors
+   :alt: Illustration of how marketplace seller ownership type restricts features and menus for sellers
 
-Marketplace owner organization must have a **global** access level to create a seller organization and view records of other sellers. It must also be of the *General* type to access all application functionality without restrictions.
+Marketplace Operator must be of the **General** organization type to access all application functionality without restrictions. It must also have a **global** :ref:`access level <user-guide-user-management-permissions-ownership-type--access-levels>` to create a seller organization and view records of other sellers. Please be aware that the Oro application can have only one organization with global access level.
 
 .. image:: /user/img/concept-guides/marketplace/global-access-marketplace-owner.png
    :alt: Marketplace owner has global access level and is of General type
+
+.. important:: Although there are two default organization types out-of-the-box, more custom organization types can be configured by the developer to advance and customize specific implementation needs. New custom organization types can have any set of features or restrictions added to match any business criteria.
 
 Seller Registration
 -------------------
@@ -32,7 +51,7 @@ In scenario one, the system creates a Marketplace seller admin, inventory and wa
 Registering via Storefront
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Prospective vendors looking to sell via the marketplace can submit a registration form online on the marketplace website.
+Prospective sellers looking to sell via the marketplace can submit a registration form online on the marketplace website.
 
 .. image:: /user/img/concept-guides/marketplace/seller-registration-storefront.png
    :alt: Seller registration button in the storefront
@@ -42,7 +61,7 @@ The details provided in the registration form are immediately displayed in the O
 .. image:: /user/img/concept-guides/marketplace/seller-registration-request-wf.png
    :alt: Seller registration workflow
 
-A person responsible for registration in the marketplace owner organization can then :ref:`start processing the request <user-guide--sales--seller-registration-requests>`, accept it immediately, or decline it using the back-office :ref:`Seller Registration Request workflow <system--workflows--seller-registration-flow>`. Once accepted, the vendor will be assigned a username and receive access to their own newly created seller organization in OroMarketplace. At each step of registration, :ref:`an email <user-guide-email-template>` is sent to the seller informing them about the progress of their application.
+A person responsible for registration in the marketplace owner organization (marketplace operator) can then :ref:`start processing the request <user-guide--sales--seller-registration-requests>`, accept it immediately, or decline it using the back-office :ref:`Seller Registration Request workflow <system--workflows--seller-registration-flow>`. Once accepted, the seller will be assigned a username and receive access to their own newly created seller organization in OroMarketplace. At each step of registration, :ref:`an email <user-guide-email-template>` is sent to the seller informing them about the progress of his application.
 
 .. image:: /user/img/concept-guides/marketplace/email-templates.png
    :alt: Email templates for the seller registration process
@@ -65,7 +84,7 @@ Dashboards are typically the first thing merchants see when they log in to the b
 Products and Brands
 -------------------
 
-:ref:`Master Catalog <concept-guide-master-catalog>` is a tree structure that helps organize products into categories. Administrators of the marketplace owner organization manage a single global master catalog, the structure of which is subsequently shared with all sellers. This way, the products that vendors add from their organization are classified based on existing categories. Sellers cannot affect the structure of the global master catalog. Should they need to place products in a category that does not yet exist, they can always reach out to the manager of the global catalog for assistance. Similarly, if the marketplace owner uses a :ref:`web catalog <concept-guide-web-catalog>` to organize products in the storefront, sellers from other organizations cannot affect its structure. It is possible to display products in the storefront by the seller via the web catalog feature. For this, add a condition to a web catalog content variant to filter products by organization attributes of your choice (e.g., name).
+:ref:`Master Catalog <concept-guide-master-catalog>` is a tree structure that helps organize products into categories. Administrators of the marketplace owner organization manage a single global master catalog, the structure of which is subsequently shared with all sellers. This way, the products that sellers add from their organization are classified based on existing categories. Sellers cannot affect the structure of the global master catalog. Should they need to place products in a category that does not yet exist, they can always reach out to the manager of the global catalog for assistance. Similarly, if the marketplace owner uses a :ref:`web catalog <concept-guide-web-catalog>` to organize products in the storefront, sellers from other organizations cannot affect its structure. It is possible to display products in the storefront by the seller via the web catalog feature. For this, add a condition to a web catalog content variant to filter products by organization attributes of your choice (e.g., name).
 
 .. image:: /user/img/concept-guides/marketplace/sort-by-seller.png
    :alt: Configuring a product collection to display items from specific sellers
@@ -88,16 +107,16 @@ You can associate each product with a specific :ref:`product brand <user-guide--
 Pricing Management
 ------------------
 
-As OroMarketplace has integrated OroCommerce, it has the advantage of using its dynamic pricing engine that automates price configuration and calculation. OroMarketplace pricing functionality enables vendors to quickly set up and customize different price lists for specific customers, customer groups, and websites and build aggregated price lists with any amount of price attributes, tiers, or currencies. Vendors can use the price attribute as a base value for manually or automatically generated price lists.
+As OroMarketplace has integrated OroCommerce, it has the advantage of using its dynamic pricing engine that automates price configuration and calculation. OroMarketplace pricing functionality enables sellers to quickly set up and customize different price lists for specific customers, customer groups, and websites and build aggregated price lists with any amount of price attributes, tiers, or currencies. Sellers can use the price attribute as a base value for manually or automatically generated price lists.
 
-In OroMarketplace, price lists are managed per organization so that vendors can diversify price offerings by personalizing prices according to specific strategies, customer accounts, order quantities, or other factors.
+In OroMarketplace, price lists are managed per organization so that sellers can diversify price offerings by personalizing prices according to specific strategies, customer accounts, order quantities, or other factors.
 
 Orders and Shipping
 -------------------
 
 Marketplace owners can configure shipping integrations and shipping rules for all sellers and per seller so proper :ref:`shipping fees are calculated <user-guide--system-configuration--commerce-sales-multi-shipping>` based on seller needs and warehouse data. The default shipping methods are *Fixed Product Shipping Cost* and *Flat Rate Shipping* with 0 value, which are created automatically after seller's registration. Sellers can then adjust the amount as needed.
 
-When a buyer submits an order with items sold by different vendors with different shipping options, their order is split into one parent order and sub-orders in the back-office. Each respective seller receives their portion of the order and is responsible for shipping the items sold to the buyer. The marketplace owner organization has the record of the source parent order containing information about its suborders per seller, line items, payment details, etc.
+When a buyer submits an order with items sold by different sellers with different shipping options, their order is split into one parent order and sub-orders in the back-office. Each respective seller receives their portion of the order and is responsible for shipping the items sold to the buyer. The marketplace owner organization has the record of the source parent order containing information about its suborders per seller, line items, payment details, etc.
 
 .. image:: /user/img/concept-guides/marketplace/orders-split-by-sellers.png
    :alt: Orders split by seller in the back-office
