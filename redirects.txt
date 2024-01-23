@@ -425,6 +425,8 @@ user/back-office/system/integrations/payment-integration/wirecard/wirecard-integ
 user/back-office/code-ui-translations /community/contribute/code-ui-translations
 user/back-office/system/localization/intro /user/back-office/system/localization/index
 search /user/concept-guides/catalog-promotions/search/index
+user/integrations/pre-build/misc/google-reporting /user/integrations/pre-build/reporting/google-reporting
+user/integrations/pre-build/misc/power-bi /user/integrations/pre-build/reporting/power-bi
 bundles/commerce/WebsiteSearchBundle/website-search /backend/architecture/tech-stack/search/index
 bundles/commerce/WebsiteSearchBundle/platform-update /backend/architecture/tech-stack/search/index
 backend/architecture/tech-stack/search-index /backend/architecture/tech-stack/search/index
