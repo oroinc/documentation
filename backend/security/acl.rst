@@ -15,7 +15,7 @@ Access Control Lists are an essential part of the |Symfony Security Components|.
 
 .. hint:: You can find detailed information about Symfony ACL-based security model in the Symfony documentation:
 
-           * |https://symfony.com/doc/5.4/security/acl.html|
+           * |https://github.com/symfony/acl-bundle/blob/main/src/Resources/doc/index.rst|
 
 Access Levels
 ~~~~~~~~~~~~~
@@ -84,7 +84,8 @@ do with the resource. Namely, the following permissions are supported for **enti
 |            | permission is only evaluated when an entity is edited.                    |
 +------------+---------------------------------------------------------------------------+
 | ``SHARE``  | Whether or not a user is allowed to assign a record to another user.      |
-|            | Only works on entities' view pages.                                       |
+|            | Only works on entities' view pages if the feature                         |
+|            | :ref:`is enabled <admin-configuration-user-settings-share>`.              |
 |            |                                                                           |
 |            | .. note:: This permission is available only in Enterprise editions.       |
 |            |                                                                           |

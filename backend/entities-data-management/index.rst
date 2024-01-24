@@ -15,7 +15,6 @@ This topic describes the elements of entities data management and their configur
 
    data-fixtures
    reports-and-segments
-   search/index
    workflows/index
    actions/index
    processes

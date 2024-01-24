@@ -425,3 +425,16 @@ user/back-office/system/integrations/payment-integration/wirecard/wirecard-integ
 user/back-office/code-ui-translations /community/contribute/code-ui-translations
 user/back-office/system/localization/intro /user/back-office/system/localization/index
 search /user/concept-guides/catalog-promotions/search/index
+user/integrations/pre-build/misc/google-reporting /user/integrations/pre-build/reporting/google-reporting
+user/integrations/pre-build/misc/power-bi /user/integrations/pre-build/reporting/power-bi
+bundles/commerce/WebsiteSearchBundle/website-search /backend/architecture/tech-stack/search/index
+bundles/commerce/WebsiteSearchBundle/platform-update /backend/architecture/tech-stack/search/index
+backend/architecture/tech-stack/search-index /backend/architecture/tech-stack/search/index
+backend/entities-data-management/search/index /backend/architecture/tech-stack/search/index
+backend/entities-data-management/search/console-commands /bundles/platform/SearchBundle/console-commands
+backend/entities-data-management/search/configuration /bundles/platform/SearchBundle/configuration
+backend/entities-data-management/search/best-practices /backend/architecture/tech-stack/search/best-practices
+backend/entities-data-management/search/elastic-tuning /backend/architecture/tech-stack/search/elastic-tuning
+backend/entities-data-management/search/fuzzy-search /backend/architecture/tech-stack/search/fuzzy-search
+backend/entities-data-management/search/query-builder /backend/architecture/tech-stack/search/query-builder
+backend/entities-data-management/search/troubleshooting /backend/architecture/tech-stack/search/troubleshooting

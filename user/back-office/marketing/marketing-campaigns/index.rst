@@ -165,7 +165,7 @@ Hover over the |IcMore| **More Options** menu to the right of the required track
 Share a Marketing Campaign
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: Sharing records is available in the Enterprise edition applications.
+.. note:: Sharing records is available in the Enterprise edition applications and :ref:`if the feature is enabled in the back-office configuration settings <admin-configuration-user-settings-share>`.
 
 To share a marketing campaign with other Oro application user:
 

@@ -3,6 +3,8 @@
 ORM Search Engine
 =================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 OroSearchBundle provides ORM search engine out of the box. It stores
 index data in DB tables and uses fulltext index to perform search.
 Bundle supports search index for **PostgreSQL** DBMS.

@@ -275,8 +275,8 @@ The default configuration for extension with alias "oro_api":
                 # The name of the feature.
                 feature_name:         ~
 
-                # The list of security firewall listeners that should be removed if the feature is disabled.
-                feature_firewall_listeners: []
+                # The list of security firewall authenticators that should be removed if the feature is disabled.
+                feature_firewall_authenticators: []
 
         # The Batch API configuration.
         batch_api:

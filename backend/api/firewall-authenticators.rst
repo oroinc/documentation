@@ -1,12 +1,12 @@
-.. _web-api--firewall-listeners:
+.. _web-api--firewall-authenticators:
 
-Configure Feature Depended Firewall Listeners
-=============================================
+Configure Feature Depended Firewall Authenticators
+==================================================
 
 API can be enabled or disabled via the system configuration. When the API is disabled, the API-related security firewalls
-should not use some authorization listeners, for example, WSSE and OAuth authorization should be disabled.
+should not use some authorization authenticators, for example, WSSE and OAuth authorization should be disabled.
 
-To be able to configure listeners for a disabled API feature, use the following configuration:
+To be able to configure authenticators for a disabled API feature, use the following configuration:
 
 .. code-block:: yaml
 

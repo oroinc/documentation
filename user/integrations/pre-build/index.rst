@@ -17,4 +17,5 @@ Oro's prebuilt integrations offer a ready-made solution to effortlessly link wit
    Customer Support <customer-support/index>
    AI <ai/index>
    E-Procurement <procurement/index>
+   Reporting and Business Intelligence <reporting/index>
    More <misc/index>
