@@ -31,5 +31,7 @@ then you have to recreate indices and trigger full indexation manually:
     php bin/console oro:elasticsearch:create-standard-indexes --env=prod
     php bin/console oro:search:reindex --env=prod --scheduled
 
+.. hint:: See the :ref:`Indexation process <search_index_overview--indexation-process>` documentation for more details on synchronous and asynchronous (scheduled) indexation.
+
 .. include:: /include/include-links-dev.rst
    :start-after: begin

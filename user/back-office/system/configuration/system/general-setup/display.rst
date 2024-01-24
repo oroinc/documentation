@@ -91,7 +91,7 @@ and task lists:
 
 11. In the **Map Settings** section, configure the map preview settings:
 
-    * **Enable Map Preview** --- Select whether to show the location on a map when a customer views an address in the storefront. This option does not affect maps in the back-office.
+    * **Enable Map Preview** --- Select whether to show the location on a map when a customer views an address in the storefront. This option does not affect maps in the back-office. Please be aware that a valid Google API key is required to display maps in the storefront. Please see :ref:`the back-office settings <system-configuration-integrations-google>` for more information.
 
     .. image:: /user/img/system/config_system/map_settings_map.png
        :alt: Preview the map in a customer account address book menu in th storefront
