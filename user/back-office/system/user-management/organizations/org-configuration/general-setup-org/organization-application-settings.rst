@@ -22,7 +22,7 @@ To change the default settings per organization:
 
    * **Enable API** --- enables the back-office API feature for an organization.
    * **Enable Storefront API** --- enables the storefront API feature for an organization.
-   * **Enable Guest Storefront API** --- grants access to some storefront API resources of an organization to non-authenticated visitors. This option is available when the storefront API feature is enabled.
+   * **Enable Guest Storefront API** --- grants access to some storefront API resources of an organization to non-authenticated visitors (available starting from v5.1.3). This option is activated when the storefront API feature is enabled.
 
    .. note:: The back-office API feature can be toggled on the :ref:`global <admin-configuration-application>` and organization levels, while the storefront API configuration is available on three levels - globally, per organization, and per :ref:`website <admin-configuration-application-website>`.
 

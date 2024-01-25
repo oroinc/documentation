@@ -62,7 +62,7 @@ The availability of a *product kit* depends on its *product kit items* that rely
 Product Kit Search
 ------------------
 
-Products with the type `kit` can be found by values of searchable attributes of products with the type `simple` which are related to this Product Kit.
+Products with the type `kit` can be found by values of searchable attributes of products with the type `simple` which are related to this Product Kit (available starting from v5.1.4).
 The `all_text` field of the back-office and storefront indexes for Product Kits contains attribute values related to `simple` products.
 
 
