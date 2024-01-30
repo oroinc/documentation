@@ -82,7 +82,7 @@ You can review the history of a specific record if you have the corresponding pe
 Share Records
 -------------
 
-.. note:: Sharing records is available in the Enterprise edition applications.
+.. note:: Sharing records is available in the Enterprise edition applications and can be enabled for users in the :ref:`back-office configuration settings <admin-configuration-user-settings-share>`.
 
 Sharing records is convenient when you need assistance from other system users who might have no access to the related record. For example, suppose there is a task related to an opportunity that a person from a marketing team should perform. Still, the marketing associates have no access to the opportunity records. In that case, the sales manager can share the record with a specific user (or group of users).
 

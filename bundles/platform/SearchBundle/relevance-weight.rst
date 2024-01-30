@@ -3,6 +3,8 @@
 Search Relevance Weight
 =======================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 This article describes the purpose of search relevance weigh and provides two ways to customize this relevance in the **standard search index**.
 
 Search relevance weight (also called search weight or search relevance) is a positive decimal number that affects the order of search results. It is used as a multiplier for the original relevance calculated by the search engine. The original search relevance may differ depending on the search query and additional conditions. The multiplier enables a developer to change the original search relevance which in turn changes the order of the results.

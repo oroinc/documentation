@@ -1,6 +1,8 @@
 Website ElasticSearch Configuration
 ===================================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 Parameters
 ----------
 
@@ -91,3 +93,5 @@ parameters:
 
 
 Keep in mind that synchronous indexation is slower than asynchronous because application has to wait for reindexation to finish after every reindexation request.
+
+.. hint:: See the :ref:`Indexation process <search_index_overview--indexation-process>` documentation for more details on synchronous and asynchronous (scheduled) indexation.

@@ -1,3 +1,7 @@
+{%- set version_pref = "" %}
+{%- if current_version and current_version.release != '' %}
+    {%- set version_pref = "/" + current_version.release %}
+{%- endif %}
 <header id="header" class="header globalMenu">
     <nav class="header__nav">
         <div class="header__nav-global">
@@ -27,40 +31,10 @@
                                alt="OroDocumentation"></noscript>
             </a>
 
-            <div id="searchbox" class="search">
-                <form style="display: none;" class="wpcf7" role="search" method="get"
-                      action="https://oroinc.com/b2b-ecommerce/" data-hs-cf-bound="true">
-                    <div class="field-search form-inline">
-                        <input type="submit" value="Search the site">
-                        <div class="ep-autosuggest-container"><input type="text" class="search-form" title="Search"
-                                                                     value="" name="s"
-                                                                     placeholder="Search documentation"
-                                                                     autocomplete="off">
-                            <div class="ep-autosuggest">
-                                <ul class="autosuggest-list" role="listbox"></ul>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+            <div class="header-search">
+                {% include "searchbox.html" %}
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-            {% set algoliaOptions = '{hitsPerPage: 10}' %}
-            {% if oro_current_version %}
-                {% set algoliaOptions = "{ 'facetFilters': [\"version:" ~ oro_current_version ~ "\"], hitsPerPage: 10 }" %}
-            {% endif %}
-            <script>
-                docsearch({
-                    appId: '71PYJZ7X87',
-                    apiKey: '92194359ed33b2b76a70c7f8f305a8f0',
-                    indexName: 'oroinc',
-                    inputSelector: '#searchbox input[type=text]',
-                    algoliaOptions: {{ algoliaOptions }},
-                    debug: false
-                });
-            </script>
-
-            <script type="text/javascript"
-                    src="{{ pathto(link_prefix ~ '_static/js/searchbox.js', 1) }}?{{ oro_assets_timestamp }}"></script>
+            
             <div class="top-bar">
                 <div class="textwidget"></div>
                 <div class="contact-link">
@@ -362,7 +336,7 @@
                     <a href="https://oroinc.com/">Back to Oro Inc</a>
                 </li>
                 <li class="header__menu-parent ">
-                    <a href="https://doc.oroinc.com/user/" class="header__menu-children ">Users</a>
+                    <a href="{{ version_pref }}/user/" class="header__menu-children ">Users</a>
                     <div class="header__menu-wrapper">
                         <div class="header__menu-box">
                             <div class="header__menu-item">
@@ -377,23 +351,25 @@
                                             <div class="header__menu-item">
                                                 <ul class="header__menu-list">
                                                     <li>
-                                                        <a href="/user/concept-guides/" class=" header__menu-link">Concept
+                                                        <a href="{{ version_pref }}/user/concept-guides/" class=" header__menu-link">Concept
                                                             Guides</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/user/back-office/" class=" header__menu-link">Back-Office</a>
+                                                        <a href="{{ version_pref }}/user/back-office/" class=" header__menu-link">Back-Office</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/user/storefront/" class=" header__menu-link">Commerce
+                                                        <a href="{{ version_pref }}/user/storefront/" class=" header__menu-link">Commerce
                                                             Storefront</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/user/glossary/"
+                                                        <a href="{{ version_pref }}/user/glossary/"
                                                            class=" header__menu-link">Glossary</a>
                                                     </li>
+                                                    {%- if version_pref != '/5.0' %}
                                                     <li>
-                                                        <a href="/master/user/integrations/" class=" header__menu-link">Integrations</a>
+                                                        <a href="{{ version_pref }}/user/integrations/" class=" header__menu-link">Integrations</a>
                                                     </li>
+                                                    {%- endif %}
                                                 </ul>
                                             </div>
                                         </div>
@@ -411,23 +387,23 @@
                                 <div class="header__menu-box-list">
                                     <ul class="header__menu-list">
                                         <li>
-                                            <a href="/backend/" class=" header__menu-link">Backend Developer
+                                            <a href="{{ version_pref }}/backend/" class=" header__menu-link">Backend Developer
                                                 Guide</a>
                                         </li>
                                         <li>
-                                            <a href="/frontend/" class=" header__menu-link">Frontend
+                                            <a href="{{ version_pref }}/frontend/" class=" header__menu-link">Frontend
                                                 Developer Guide</a>
                                         </li>
                                         <li>
-                                            <a href="/bundles/" class=" header__menu-link">Bundles &
+                                            <a href="{{ version_pref }}/bundles/" class=" header__menu-link">Bundles &
                                                 Components</a>
                                         </li>
                                         <li>
-                                            <a href="/api/" class=" header__menu-link">Web Services API
+                                            <a href="{{ version_pref }}/api/" class=" header__menu-link">Web Services API
                                                 Guide</a>
                                         </li>
                                         <li>
-                                            <a href="/community/" class=" header__menu-link">Community
+                                            <a href="{{ version_pref }}/community/" class=" header__menu-link">Community
                                                 Guide</a>
                                         </li>
                                     </ul>
@@ -438,7 +414,7 @@
                 </li>
 
                 <li class="header__menu-parent">
-                    <a href="https://doc.oroinc.com/cloud/" class="header__menu-children">Cloud Administrators</a>
+                    <a href="{{ version_pref }}/cloud/" class="header__menu-children">Cloud Administrators</a>
                     <div class="header__menu-wrapper list-col-2">
                         <div class="header__menu-box">
                             <div class="header__menu-item">
@@ -453,31 +429,31 @@
                                             <div class="header__menu-item">
                                                 <ul class="header__menu-list">
                                                     <li>
-                                                        <a href="/cloud/architecture/" class=" header__menu-link">Architecture</a>
+                                                        <a href="https://doc.oroinc.com/cloud/architecture/" class=" header__menu-link">Architecture</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/cloud/environments/" class=" header__menu-link">Environment
+                                                        <a href="https://doc.oroinc.com/cloud/environments/" class=" header__menu-link">Environment
                                                             Types</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/cloud/security/"
+                                                        <a href="https://doc.oroinc.com/cloud/security/"
                                                            class=" header__menu-link">Security</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/cloud/monitoring/" class=" header__menu-link">Monitoring</a>
+                                                        <a href="https://doc.oroinc.com/cloud/monitoring/" class=" header__menu-link">Monitoring</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/cloud/onboarding/" class=" header__menu-link">Onboarding</a>
+                                                        <a href="https://doc.oroinc.com/cloud/onboarding/" class=" header__menu-link">Onboarding</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/cloud/connect-vpn/" class=" header__menu-link">VPN
+                                                        <a href="https://doc.oroinc.com/cloud/connect-vpn/" class=" header__menu-link">VPN
                                                             Connection</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/cloud/maintenance/" class=" header__menu-link">Maintenance</a>
+                                                        <a href="https://doc.oroinc.com/cloud/maintenance/" class=" header__menu-link">Maintenance</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/cloud/support/" class=" header__menu-link">Support</a>
+                                                        <a href="https://doc.oroinc.com/cloud/support/" class=" header__menu-link">Support</a>
                                                     </li>
                                                 </ul>
                                             </div>

@@ -168,28 +168,18 @@ It is possible to create an image or a file field via :ref:`migrations <backend-
 
 .. code-block:: php
 
-
        namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
 
        use Doctrine\DBAL\Schema\Schema;
 
-       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtension;
        use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareInterface;
+       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareTrait;
        use Oro\Bundle\MigrationBundle\Migration\Migration;
        use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
        class AcmeDemoBundle implements Migration, AttachmentExtensionAwareInterface
        {
-           /** @var AttachmentExtension */
-           protected $attachmentExtension;
-
-           /**
-            * {@inheritdoc}
-            */
-           public function setAttachmentExtension(AttachmentExtension $attachmentExtension)
-           {
-               $this->attachmentExtension = $attachmentExtension;
-           }
+           use AttachmentExtensionAwareTrait;
 
            /**
             * {@inheritdoc}
@@ -213,27 +203,17 @@ Also, you can enable attachments for an entity, e.g.,:
 
 .. code-block:: php
 
-
-
        namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_0;
 
        use Doctrine\DBAL\Schema\Schema;
+       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareInterface;
+       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareTrait;
        use Oro\Bundle\MigrationBundle\Migration\Migration;
        use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtension;
-       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareInterface;
 
        class AcmeDemoBundle implements Migration, AttachmentExtensionAwareInterface
        {
-           protected AttachmentExtension $attachmentExtension;
-
-           /**
-            * {@inheritdoc}
-            */
-           public function setAttachmentExtension(AttachmentExtension $attachmentExtension)
-           {
-               $this->attachmentExtension = $attachmentExtension;
-           }
+           use AttachmentExtensionAwareTrait;
 
            /**
             * {@inheritdoc}
@@ -253,28 +233,18 @@ An example of creating MultiImage and MultiFile fields using migration using Att
 
 .. code-block:: php
 
-
        namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_1;
 
        use Doctrine\DBAL\Schema\Schema;
 
-       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtension;
        use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareInterface;
+       use Oro\Bundle\AttachmentBundle\Migration\Extension\AttachmentExtensionAwareTrait;
        use Oro\Bundle\MigrationBundle\Migration\Migration;
        use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
        class AcmeDemoBundle implements Migration, AttachmentExtensionAwareInterface
        {
-           /** @var AttachmentExtension */
-           protected $attachmentExtension;
-
-           /**
-            * {@inheritdoc}
-            */
-           public function setAttachmentExtension(AttachmentExtension $attachmentExtension)
-           {
-               $this->attachmentExtension = $attachmentExtension;
-           }
+           use AttachmentExtensionAwareTrait;
 
            /**
             * {@inheritdoc}

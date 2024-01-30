@@ -1,9 +1,8 @@
 .. _search_index_overview:
+.. _search_index_db_from_md:
 
 Search Index
 ============
-
-.. begin_search_intro
 
 The search index component is responsible for interaction with a different search engine and the search index storage inside it.
 
@@ -15,11 +14,15 @@ In the Oro application, the search engine can:
 * extract additional data from the search index
 * calculate aggregated values
 
-.. finish_search_intro
 
 In this section, you will learn about the following concepts related to the search index.
 
-.. note:: For developer's documentation, see implementation specifics of the :ref:`Elasticsearch <elastic-search>` and :ref:`ORM-based <search_index_db_from_md>` search index as well as :ref:`Search Index Developer Guide <search_index_db_from_md>`. Keep reading for a more high-level conceptual overview.
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+.. note:: For developer's documentation, see implementation specifics of the :ref:`Elasticsearch <elastic-search>` and :ref:`ORM-based <search_index_db_from_md>` search index, and the :ref:`OroSearchBundle <bundle-docs-platform-search-bundle>` and :ref:`OroWebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>` documentation for search index configuration.
+
 
 Main Concepts
 -------------
@@ -43,49 +46,60 @@ The following diagram shows described structure:
 Index Types
 -----------
 
-Oro applications use two types of indexes that use standard interfaces.
+Oro applications use two types of indexes (standard and website) that use standard interfaces.
 
 Common Interfaces
 ^^^^^^^^^^^^^^^^^
 
 Standard interfaces are used in all index types to provide a high-level abstraction for functionality that works with any type of search index (e.g., datagrids).
 
-* **Search engine interface** Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface is used to perform search requests to a search index.
-* **Search indexer interface** Oro\\Bundle\\SearchBundle\\Engine\\IndexerInterface is used for indexation, i.e. to change state of a search index (save data, remove data, reset index).
+* **Search engine interface** ``Oro\\Bundle\\SearchBundle\\Engine\\EngineInterface`` is used to perform search requests to a search index.
+* **Search indexer interface** ``Oro\\Bundle\\SearchBundle\\Engine\\IndexerInterface`` is used for indexation, i.e., to change state of a search index (save data, remove data, reset index).
 
 Standard Index Type
 ^^^^^^^^^^^^^^^^^^^
+
+.. note:: The main logic of this index type is stored inside the :ref:`OroSearchBundle <bundle-docs-platform-search-bundle>` in the platform package.
 
 The standard index type (sometimes called the default index type or backend index type) is used in all applications based on OroPlatform. Each entity is represented by one plain entity alias and contains plain field names to represent data assigned directly to the primary entity or data from the related entities.
 
 The standard index type triggers the following events:
 
-* oro_search.mapping_config - during the mapping collection process, used to alter mapping information;
-* oro_search.prepare_entity_map - during the indexation process, triggered for each entity, used to change data stored inside the index;
-* oro_search.before_search - before the search request, used to change search request before its execution;
-* oro_search.prepare_result_item - after the extraction of documents from the search index, used to populate additional information (entity objects, URLs, etc.).
+* **oro_search.mapping_config** - during the mapping collection process, used to alter mapping information;
+* **oro_search.prepare_entity_map** - during the indexation process, triggered for each entity, used to change data stored inside the index;
+* **oro_search.before_search** - before the search request, used to change search request before its execution;
+* **oro_search.prepare_result_item** - after the extraction of documents from the search index, used to populate additional information (entity objects, URLs, etc.).
 
 The standard index type performs indexation on an entity level, triggering each entity's indexation process. Search field values can be calculated automatically based on the defined search mapping. Each search document contains one all-text field value calculated automatically as a concatenation of all text entity field values. Each field might have several values. In this case, it will be represented as an array, and comparison operations will iterate over all of them. During the reindexation, the entities being reindexed are not available for search.
 
-Search mapping can be stored inside any bundle at the file Resources/config/oro/search.yml. Engine-specific services have to be defined at file Resources/config/oro/search_engine/<engine>.yml. The main logic of this index type is stored inside the OroSearchBundle in the platform package.
+Search mapping can be stored inside any bundle in the ``Resources/config/oro/search.yml`` file. Engine-specific services have to be defined in the ``Resources/config/oro/search_engine/<engine>.yml`` file.
+
 
 Website Index Type
 ^^^^^^^^^^^^^^^^^^
 
-The website index type (sometimes called the frontend index type) is used only in the OroCommerce application; this application uses the standard index type in the backend part and the website index type in the frontend part of the application. Each entity is represented by one alias with an optional search placeholder (e.g., oro_product_WEBSITE_IT), so each website might have its own entity alias (e.g., oro_product_1 and oro_product_2). Entity fields might also contain search placeholders (e.g., name_LOCALIZATION_ID), so each field might have several values depending on the provided placeholders (e.g., name_1, name_2, and name_3).
+.. note:: The main logic of this index type is stored inside the :ref:`OroWebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>` in the commerce package.
+
+The website index type (sometimes called the frontend index type) is used only in the OroCommerce application. The main purpose of the website search is to provide the customer with the ability to use search functionality at the application frontend. Website search should be used only at frontend because of its nature - the data is stored by websites (i.e., each website has its own scope in the storage) and some frontend-specific values (like localization) are necessary for the frontend search use cases - e.g., user should have a possibility to search data only using one specific localization.
+
+Data for the website search index is collected and stored by websites and entity types. It means that each entity for each website has its own scope in the storage, and as a consequence, these scopes are independent and can be handled separately. For example, a developer might ask to reindex only specific entity for a specific website, and this change does not affect any other entity at the specified website or any other website data.
+
+Engine data collection is event based, so any bundle can mix its own information to search index. As a consequence, some entities in the index might contain information that is not related directly, but is still valuable to search by related areas.
+
+Each entity is represented by one alias with an optional search placeholder (e.g., oro_product_WEBSITE_IT), so each website might have its own entity alias (e.g., oro_product_1 and oro_product_2). Entity fields might also contain search placeholders (e.g., name_LOCALIZATION_ID), so each field might have several values depending on the provided placeholders (e.g., name_1, name_2, and name_3).
 
 Website index type triggers the following events:
 
-* oro_website_search.reindexation_request - triggers the reindexation process for the specified scope of entities;
-* oro_website_search.event.website_search_mapping.configuration - during the mapping collection process, used to alter mapping information;
-* oro_website_search.event.collect_context - before the indexation, used to collect context which will be used during the indexation;
-* oro_website_search.event.restrict_index_entity - during the indexation for all entities, used to decrease the number of entities that have to be indexed;
-* oro_website_search.event.restrict_index_entity.<alias> - during the indexation for the specific entity, used to decrease amount of specific entities that has to be indexed (pay attention that <alias> is a standard entity alias, not search entity alias);
-* oro_website_search.event.index_entity - during the indexation for all entities, used to collect data to put into the search index;
-* oro_website_search.event.index_entity.<alias> - during the indexation for the specific entity, used to collect data for a specific entity to put into search index (pay attention that <alias> is a standard entity alias, not search entity alias);
-* oro_website_search.before_search - before the search request, used to change the request before its execution.
+* **oro_website_search.reindexation_request** - triggers the reindexation process for the specified scope of entities;
+* **oro_website_search.event.website_search_mapping.configuration** - during the mapping collection process, used to alter mapping information;
+* **oro_website_search.event.collect_context** - before the indexation, used to collect context which will be used during the indexation;
+* **oro_website_search.event.restrict_index_entity** - during the indexation for all entities, used to decrease the number of entities that have to be indexed;
+* **oro_website_search.event.restrict_index_entity.<alias>** - during the indexation for the specific entity, used to decrease amount of specific entities that has to be indexed (pay attention that <alias> is a standard entity alias, not search entity alias);
+* **oro_website_search.event.index_entity** - during the indexation for all entities, used to collect data to put into the search index;
+* **oro_website_search.event.index_entity.<alias>** - during the indexation for the specific entity, used to collect data for a specific entity to put into search index (pay attention that <alias> is a standard entity alias, not search entity alias);
+* **oro_website_search.before_search** - before the search request, used to change the request before its execution.
 
-Website index type performs reindexation on an entity batch level, triggering the indexation process for a batch of entities (default batch size is 100). Search field values must be calculated and set manually in a listener to the oro_website_search.event.index_entity event. Each search document contains all-text fields for each available localization (all_text_LOCALIZATION_ID) and one all-text field that includes values from all localizations, and values are calculated automatically based on a flag set during the indexation (i.e., a developer may specify what exact values should be in all-text field value). Each field without a placeholder must have only one value. During reindexation, entities being reindexed are available with the old (outdated) data.
+Website index type performs reindexation on an entity batch level, triggering the indexation process for a batch of entities (default batch size is 100). Search field values must be calculated and set manually in a listener to the ``oro_website_search.event.index_entity event``. Each search document contains all-text fields for each available localization (all_text_LOCALIZATION_ID) and one all-text field that includes values from all localizations, and values are calculated automatically based on a flag set during the indexation (i.e., a developer may specify what exact values should be in all-text field value). Each field without a placeholder must have only one value. During reindexation, entities being reindexed are available with the old (outdated) data.
 
 Placeholders are defined in code in classes that implement ``Oro\Bundle\WebsiteSearchBundle\Placeholder\PlaceholderInterface``. Here are the most commonly used placeholders (pay attention that there are more of them in a code):
 
@@ -95,7 +109,19 @@ Placeholders are defined in code in classes that implement ``Oro\Bundle\WebsiteS
 * CURRENCY - string identifier of a current currency
 * CPL_ID - integer identifier of a current combined price list
 
-Search mapping can be stored inside any bundle at the file Resources/config/oro/website_search.yml. Engine-specific services have to be defined at file Resources/config/oro/website_search_engine/<engine>.yml. The main logic of this index type is stored inside the OroWebsiteSearchBundle in the commerce package.
+Search mapping can be stored inside any bundle in the ``Resources/config/oro/website_search.yml`` file. Engine-specific services have to be defined in the ``Resources/config/oro/website_search_engine/<engine>.yml`` file.
+
+By design, website indexation supports both synchronous and asynchronous operation (refer to the `Indexation Process`_ section below). When triggering reindexation, you can define whether it should run in the synchronous or asynchronous mode. During the asynchronous reindexation, the appropriate message is put to the message queue and is processed by the consumer later by reindexing the required scope of entities.
+
+
+WebsiteSearchBundle VS SearchBundle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The main difference between SearchBundle and WebsiteSearchBundle is the way index is stored. The website (frontend) index storage is separated from the platform index storage and may be moved to a separate server and thus may be properly scaled.
+
+Next important difference is in the information they control. The platform index handles the backend information (e.g., back-office), and the website index contains information about the frontend (e.g., storefront). As a consequence, platform index is usually smaller and the search and indexation speed is well balanced, while frontend index trades off the indexation speed for a faster search.
+
+Though indexation might be a little slower comparing to backend index, frontend index is more flexible in terms of extendability. It is event based, and there are several events that allow to customize different parts of search and indexation.
 
 Supported Search Engines
 ------------------------
@@ -135,6 +161,8 @@ There are four supported entity field value data types:
 * integer (used to represent boolean values)
 * decimal
 * datetime (used to represent date values)
+
+.. note:: See more details on a plain data structure with indexed data, localized data, and configuration examples in the :ref:`Search Index Structure <bundle-docs-platform-search-bundle-search-index-structure>` topic.
 
 ORM Search
 ^^^^^^^^^^
@@ -291,13 +319,20 @@ All these engines accept low-level query and execution context as an argument an
 Indexation Process
 ------------------
 
+OroCommerce provides two types of data synchronization: *scheduled (asynchronous)* and *immediate (synchronous)*. Scheduled synchronization is suitable for entities whose changes are not critical, and they can be applied with the acceptable delay period, or there are tons of heavy data that need to be indexed separately to avoid affecting the website performance. Immediate or synchronous data indexation involves immediate updates to the index as soon as the underlying data changes, such as inventory, or payment updates.
+
 Asynchronous Indexation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Most of the indexation operations are performed asynchronously using a message queue. The advantage of this approach is that a user does not wait until the indexation is finished to see the response from the application. Asynchronous indexations can also be performed in parallel to speed up the overall indexation process. The disadvantage is that indexation may happen with a delay; the delay time depends on the number of consumers, server hardware, and queue length.
+Most of the indexation operations are performed asynchronously using a :ref:`message queue <op-structure--mq--index>`.
+
+The advantage of this approach is that a user does not wait until the indexation is finished to see the response from the application. Asynchronous indexations can also be performed in parallel to speed up the overall indexation process. The disadvantage is that indexation may happen with a delay; the delay time depends on the number of consumers, server hardware, and queue length.
+
 Every time an entity represented by a document in a search index is changed, a new message with the entity class and entity identifier is generated and sent to the message queue. Then, the message queue consumer receives this message and runs an appropriate message processor that performs real indexation and changes in the search index.
-Remember that parallel indexation is possible only if several message queue consumers are running; each consumer can run indexation. The higher the number of consumers running, the more indexations can be performed in parallel.
-All automatically triggered reindexations are processed asynchronously.
+
+Remember that parallel indexation is possible only if several message queue consumers are running; each consumer can run indexation. The higher the number of consumers running, the more indexations can be performed in parallel. All automatically triggered reindexations are processed asynchronously.
+
+Default asynchronous indexer is implemented in the ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer`` class and is accessible via the `oro_website_search.async.indexer` service. To trigger asynchronous indexation, you should trigger ReindexationRequestEvent event and set the **$Scheduled** parameter to ``true``.
 
 Synchronous Indexation
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -307,24 +342,140 @@ Although asynchronous processing is very convenient for a user, sometimes it mig
 Triggering Reindexation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Both standard and website index types automatically trigger the reindexation process when entity data or related configuration is changed.
+From the Code
+~~~~~~~~~~~~~
 
-Standard search index type provides CLI command oro:search:reindex that can be used to manually trigger full reindexation of all entities or only entities of a specific class. It has a flag called scheduled to run indexation asynchronously. Here are :ref:`some examples of how to work with this command <search_index_db_from_md--console-commands>`.
-
-The website search index type provides a similar CLI command called oro:website-search:reindex, used to manually trigger full reindexation of all entities, only entities of a specific class or entities for a specific website. It also has a flag called scheduled to run indexation asynchronously. Here are :ref:`some examples of how to work with the  oro:website-search:reindex command <website-search-bundle-console-commands>`.
-
-The website search index type provides an event called oro_website_search.reindexation_request to manually trigger the reindexation process for the specified entities. It uses the event class ``Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent`` which accepts boolean parameter $scheduled to specify whether indexation has to be asynchronous (default behavior) or synchronous. Here are :ref:`some event triggering examples <bundles-commerce-website-search-indexation>`.
+The website search index type provides an event called ``oro_website_search.reindexation_request`` to manually trigger the reindexation process for the specified entities. It uses the event class ``Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent`` which accepts the ``$Scheduled`` boolean parameter to specify whether indexation has to be asynchronous (default behavior, TRUE) or synchronous (FALSE).
 
 Both standard and website search index types have synchronous and asynchronous indexers that trigger the corresponding indexation type. All following indexers implement the same standard indexer interface ``Oro\Bundle\SearchBundle\Engine\IndexerInterface``:
 
-* standard asynchronous indexer - Oro\\Bundle\\SearchBundle\\Async\\Indexer, service ID is oro_search.async.indexer
-* standard synchronous ORM indexer - Oro\\Bundle\\SearchBundle\\Engine\\OrmIndexer, service ID is oro_search.search.engine.indexer
-* standard synchronous Elasticsearch - Oro\\Bundle\\ElasticSearchBundle\\Engine\\ElasticSearchIndexer, service ID is oro_search.search.engine.indexer
-* website asynchronous indexer - Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer, service ID is oro_website_search.async.indexer
-* website ORM indexer - Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\OrmIndexer, service ID is oro_website_search.indexer
-* website Elasticsearch indexer - Oro\\Bundle\\WebsiteElasticSearchBundle\\Engine\\ElasticSearchIndexer, service ID is oro_website_search.indexer
+**Standard search indexer**
+
+* **standard asynchronous indexer** - ``Oro\\Bundle\\SearchBundle\\Async\\Indexer``, service ID is ``oro_search.async.indexer``. The indexer is used to redirect indexation request to message queue.
+* **standard synchronous ORM indexer** - ``Oro\\Bundle\\SearchBundle\\Engine\\OrmIndexer``, service ID is ``oro_search.search.engine.indexer``.
+* **standard synchronous Elasticsearch** - ``Oro\\Bundle\\ElasticSearchBundle\\Engine\\ElasticSearchIndexer``, service ID is ``oro_search.search.engine.indexer``.
+
+**Website search indexer**
+
+* **website asynchronous indexer** - ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer``, service ID is ``oro_website_search.async.indexer``. The indexer is used to redirect indexation request to message queue.
+* **website ORM indexer** - ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\ORM\\OrmIndexer``, service ID is ``oro_website_search.indexer``.
+* **website Elasticsearch indexer** - ``Oro\\Bundle\\WebsiteElasticSearchBundle\\Engine\\ElasticSearchIndexer``, service ID is ``oro_website_search.indexer``.
 
 All these indexers accept entities of an entity class that has to be reindexed.
+
+**Granularized asynchronous indexation**
+
+All asynchronous indexers (``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncIndexer``) are using the ``Oro\\Bundle\\WebsiteSearchBundle\\Engine\\AsyncMessaging\\ReindexMessageGranularizer`` class to automatically split the request message in chunks per entity and websiteId.
+
+The granulizer does the following:
+
+* To handle the `Product` entity within all websites `[1, 2, 3, 4, 5]`, the granularizer splits the message into 5 separate groups, that allows handling each `Product` entity with each websiteId separately.
+
+* To handle requests that contain large amounts of entityIds, the granularizer splits entityIds table into smaller chunks, for example 1000 entityIds will be split into 10 messages with 100 entityIds each.
+
+
+.. note:: For more event triggering examples, see the :ref:`Website Search Indexation <bundles-commerce-website-search-indexation>` article.
+
+
+From the CLI
+~~~~~~~~~~~~
+
+Both standard and website index types automatically trigger the reindexation process when entity data or related configuration is changed. Reindexation can take a lot of time for a significant amount of data, so running it by schedule (e.g., once a day) is recommended.
+
+**Synchronously**
+
+Search index type provides CLI command that can be used to manually (synchronously) trigger full reindexation of all entities or only entities of a specific class.
+
+Standard search index command:
+
+.. code-block:: php
+
+    php bin/console oro:search:reindex
+
+Website search index command:
+
+.. code-block:: php
+
+    php bin/console oro:website-search:reindex
+
+
+**Asynchronously**
+
+Reindexation can also be scheduled to be performed in the background by the message queue consumers (asynchronous reindexation). You will need a configured message queue and at least one running consumer worker to use this mode.
+
+You need to use the ``scheduled`` parameter to run indexation asynchronously.
+
+Standard search index command:
+
+.. code-block:: php
+
+    php bin/console oro:search:reindex --scheduled
+
+Website search index command:
+
+.. code-block:: php
+
+    php bin/console oro:website-search:reindex --scheduled
+
+
+.. note:: For more console code examples, see the :ref:`Standard search index console commands <search_index_db_from_md--console-commands>` and :ref:`Website search index console commands <website-search-bundle-console-commands>` articles.
+
+
+Partial Indexation
+^^^^^^^^^^^^^^^^^^
+
+Partial indexation is a feature that reduces the load on the engine by updating the index partially. The index is divided into groups  (``$fieldGroups``), each group includes specific fields that should be used in the update process. Partial indexation is a good option both for synchronous and asynchronous indexation when you need to update one, or multiple field groups without affecting others (e.g., product prices).
+
+Supported field groups are: main, collection_sort_order, image, category_sort_order, visibility, pricing, order, customer_recommendation_action, customer_recommendation_revenue, inventory (multiple values allowed).
+
+.. note:: For more partial indexation code examples, see the :ref:`Website search partial indexation commands <bundles-commerce-website-search-indexation-partial>` articles.
+
+.. _bundle-docs-commerce-website-search-bundle-platform-update:
+
+Schedule or Skip Reindexation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When you execute ``oro:platform:update`` command as part of update process, it performs full reindexation of all the affected entities in the foreground.
+
+To avoid this, you can use the ``--schedule-search-reindexation`` and ``--skip-search-reindexation`` options that were added to the ``oro:platform:update`` command by the SearchBundle and were extended by the WebsiteSearchBundle to also affect the Website search index:
+
+* ``--schedule-search-reindexation``
+
+This option allows you to postpone full reindexation. In this case, the reindexation command will be added into the message queue and will be executed later, when message queue consumers will be started.
+
+* ``--skip-search-reindexation``
+
+This option allows to completely skip reindexation during the update process.
+
+Force Reindexation
+^^^^^^^^^^^^^^^^^^
+
+If, after customizations, upgrades, and code modifications, the ElasticSearch index structure remains unchanged or only new fields are added, it is sufficient to initiate the indexing process only.
+
+If the changes affect the ElasticSearch index structure (ElasticSearch mapping), you must recreate index and force full indexation. The ES index must be filled with new data from scratch to save them into a new index structure.
+
+For that, you need to:
+
+1. Recreate the index data to make a new empty structure with no data.
+
+2. Force full indexation to fill the empty structure with new data and new structure.
+
+You can do it using the following commands for the back-office (standard) index:
+
+.. code-block:: bash
+
+    php bin/console cache:clear --env=prod
+    php bin/console oro:elasticsearch:create-standard-indexes --env=prod
+    php bin/console oro:search:reindex --env=prod --scheduled
+
+The same can be done for the storefront (website) index using commands:
+
+.. code-block:: bash
+
+    php bin/console cache:clear --env=prod
+    php bin/console oro:website-elasticsearch:create-website-indexes --env=prod
+    php bin/console oro:website-search:reindex --env=prod --scheduled
+
 
 ACL Restrictions
 ----------------
@@ -429,6 +580,20 @@ References
 * :ref:`Standard Search Index Type <search_index_db_from_md>`
 * :ref:`Elasticsearch support for Standard Index Type <elastic-search>`
 * |Website Search Index Type|
+
+
+
+
+**Table of Contents**
+
+.. toctree::
+   :maxdepth: 1
+
+   query-builder
+   best-practices
+   elastic-tuning
+   fuzzy-search
+   troubleshooting
 
 
 .. include:: /include/include-links-dev.rst

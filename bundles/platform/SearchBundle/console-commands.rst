@@ -3,6 +3,9 @@
 Console Commands
 ================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
+
 OroSearchBundle provides several console commands to interact with the search index.
 
 oro:search:index
@@ -14,7 +17,7 @@ Single entity indexation:
 
 .. code-block:: bash
 
-   php bin/console oro:search:index AcmeDemoBundle:Question 1
+   php bin/console oro:search:index "Acme\Bundle\DemoBundle\Entity\Question" 1
    Started index update for entities.
 
 Multiple entities indexation:
@@ -42,12 +45,19 @@ Reindexation of one entity:
 
 .. code-block:: bash
 
-    php bin/console oro:search:reindex AcmeDemoBundle:Question
-    Started reindex task for "AcmeDemoBundle:Question" entity
+    php bin/console oro:search:reindex "Acme\Bundle\DemoBundle\Entity\Question"
+    Started reindex task for "Acme\Bundle\DemoBundle\Entity\Question" entity
 
-Typically, reindexation is performed immediately after the reindex command is issued. However, it can also be scheduled to be performed in the background by the Message Queue consumers.
+oro:search:reindex --scheduled
+------------------------------
 
-Advantages of this mode: \* asynchronous \* can be multithreaded \* scalable
+Reindexation can also be scheduled to be performed in the background by the Message Queue consumers (asynchronous reindexation).
+
+Advantages of the scheduled mode are:
+
+* asynchronous
+* can be multithreaded
+* scalable
 
 You will need a configured Message Queue and at least one running consumer worker to use this mode.
 
@@ -57,7 +67,7 @@ Please use the following parameter to enable it:
 
     php bin/console oro:search:reindex --scheduled
 
-You can limit the reindexation to a specific entity with the ``--class`` option. Both the FQCN (Acme\\Bundle\\DemoBundle\\Entity\\Question) and short (AcmeDemoBundle:Question) class names are accepted:
+You can limit the reindexation to a specific entity with the ``--class`` option. The FQCN (Acme\\Bundle\\DemoBundle\\Entity\\Question) class names are accepted:
 
 .. code-block:: none
 

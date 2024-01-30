@@ -10,6 +10,7 @@ Below is the list of platforms OroCommerce integrates with:
 * :ref:`HubSpot <integrations-marketing-hubspot>`
 * :ref:`Mailchimp <integrations-marketing-mailchimp>`
 * :ref:`Dotdigital <integrations-marketing-dotdigital>`
+* :ref:`Google Analytics <integrations-marketing-google-analytics>`
 
 
 .. toctree::
@@ -18,3 +19,4 @@ Below is the list of platforms OroCommerce integrates with:
    HubSpot <hubspot>
    Mailchimp <mailchimp>
    Dotdigital <dotdigital>
+   Google Analytics <google-analytics>

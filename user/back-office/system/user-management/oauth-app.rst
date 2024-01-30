@@ -3,10 +3,10 @@
 Configure OAuth Applications for Users in the Back-Office
 ---------------------------------------------------------
 
- The section contains the list of all OAuth applications created for users in the back-office. You can view and manage the existing OAuth applications, create new applications selecting the necessary grant type depending on your business needs, either client credentials or a password.
+The section contains the list of all OAuth applications created for users in the back-office. You can view and manage the existing OAuth applications, create new applications selecting the necessary grant type depending on your business needs, either client credentials or a password.
 
-   .. image:: /user/img/system/user_management/oauth/oauth_app_list.png
-      :alt: A list of all existing oauth applications
+.. image:: /user/img/system/user_management/oauth/oauth_app_list.png
+   :alt: A list of all existing oauth applications
 
 Overview
 ^^^^^^^^
@@ -14,7 +14,6 @@ Overview
 .. begin_oauth1
 
 Oro applications support OAuth 2.0 credentials authorization grant type to enable connection of third-party applications to the web API. To connect a third-party application, you need to add it and configure its pre-generated credentials in the back-office of your Oro application. These credentials are managed on user level which enables generation of different credentials for various applications across multiple organizations (the multi-org functionality is only available in the Enterprise edition).
-
 
 Starting Conditions
 ^^^^^^^^^^^^^^^^^^^
@@ -38,7 +37,7 @@ To create a new OAuth application in the back-office:
 2. Click **Create OAuth Application** on the top right of the screen.
 3. Provide the following details on the page that opens:
 
-    |image_app_create|
+   |image_app_create|
 
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to. This field is displayed to users with access to multiple organizations (available for the Enterprise edition only).
    * **Application Name** --- Provide a meaningful name for the application you are adding.
@@ -55,7 +54,7 @@ A corresponding notification is sent to the primary email address of the user, t
 
 Once the application is created, you are provided with a Client ID and a Client Secret. Click on the |IcCopy| icon to copy the credentials to the clipboard.
 
- |image_credentials|
+|image_credentials|
 
 .. important:: For security reasons, the Client Secret is displayed only once -- immediately after you have created a new application. You cannot view the Client Secret anywhere in the application once you close this dialog, so make sure you save it somewhere safe so you can access it later.
 

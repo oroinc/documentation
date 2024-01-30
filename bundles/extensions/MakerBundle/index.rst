@@ -96,7 +96,7 @@ In the same section, you can also disable the generation of:
 
 Use the `label` option to define a custom entity label.
 
-The only requirement for the Entity is to have `fields`. The field section starts with the field name as a key of the section. Each field must containa  `type`.
+The only requirement for the Entity is to have `fields`. The field section starts with the field name as a key of the section. Each field must contains  `type`.
 
 Supported field types:
 

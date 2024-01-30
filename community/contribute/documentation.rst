@@ -74,7 +74,7 @@ Sample file structure:
             - email.rst
             - LDAP.rst
         + api
-            -firewall-listeners.rst
+            -firewall-authenticators.rst
             -request-types.rst
 
     - index.rst

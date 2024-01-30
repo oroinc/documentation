@@ -1135,8 +1135,8 @@ table
 
 type: ``string``
 
-The entity class name or the entity alias in the ``BundleName:EntityName`` notation (for example,
-``AcmeDemoBundle:User``).
+The entity class name or the entity alias in the ``Acme\Bundle\DemoBundle\Entity\MyEntity`` notation (for example,
+``Acme\Bundle\DemoBundle\Entity\User``).
 
 alias
 """""

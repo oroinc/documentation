@@ -7,14 +7,26 @@
 """
 import sphinx
 
-from sphinx.builders.html import DirectoryHTMLBuilder
+from sphinx.builders.dirhtml import DirectoryHTMLBuilder
+from sphinx.util.osutil import SEP, os_path
+from os import path
 
 
 class OroHTMLBuilder(DirectoryHTMLBuilder):
     name = 'orohtml'
     search = False  # Disable search for oro
-    out_suffix = ''
+    out_suffix = '.html'
     link_suffix = ''
+
+    def get_outfilename(self, pagename: str) -> str:
+        if pagename == 'index' or pagename.endswith(SEP + 'index') or pagename == '404':
+            outfilename = path.join(self.outdir, os_path(pagename) +
+                                    self.out_suffix)
+        else:
+            outfilename = path.join(self.outdir, os_path(pagename),
+                                    'index' + self.out_suffix)
+
+        return outfilename
 
 
 def setup(app):

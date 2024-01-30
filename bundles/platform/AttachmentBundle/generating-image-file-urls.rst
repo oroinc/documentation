@@ -246,7 +246,7 @@ with a class that implements the ``Oro\Bundle\AttachmentBundle\Provider\FileName
         private function getCategoryTitle(Product $product): ?string
         {
             /** @var CategoryRepository $repository */
-            $repository = $this->doctrineHelper->getEntityRepository('OroCatalogBundle:Category');
+            $repository = $this->doctrineHelper->getEntityRepository('Oro\Bundle\CatalogBundle\Entity\Category');
             $category   = $repository->findOneByProduct($product);
 
             if ($category instanceof Category) {

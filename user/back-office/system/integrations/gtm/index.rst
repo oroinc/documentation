@@ -59,6 +59,7 @@ If you have skipped the step of setting up the data stream or want to add more s
 .. image:: /user/img/system/integrations/gtm/add-data-stream-admin.png
    :alt: Illustrating the steps to be performed to add a data stream
 
+.. _gtm-ga-4-integration--create-tags:
 
 On the Google Tag Manager Side
 ------------------------------

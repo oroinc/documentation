@@ -181,7 +181,7 @@ Links (User)
 
 .. |Symfony2 expression language| raw:: html
 
-   <a href="https://symfony.com/doc/5.4/components/expression_language/syntax.html" target="_blank">Symfony2 expression language</a>
+   <a href="https://symfony.com/doc/6.4/components/expression_language/syntax.html" target="_blank">Symfony2 expression language</a>
 
 .. |how to create a new order from scratch| raw:: html
 
@@ -361,11 +361,11 @@ Links (User)
 
 .. |the Symfony Twig Extensions (URL)| raw:: html
 
-   <a href="https://symfony.com/doc/5.4/reference/twig_reference.html#url" target="_blank">the Symfony Twig Extensions (URL)</a>
+   <a href="https://symfony.com/doc/6.4/reference/twig_reference.html#url" target="_blank">the Symfony Twig Extensions (URL)</a>
 
 .. |the Symfony Twig Extensions (Path)| raw:: html
 
-   <a href="https://symfony.com/doc/5.4/reference/twig_reference.html#path" target="_blank">the Symfony Twig Extensions (Path)</a>
+   <a href="https://symfony.com/doc/6.4/reference/twig_reference.html#path" target="_blank">the Symfony Twig Extensions (Path)</a>
 
 .. |default| raw:: html
 
@@ -657,7 +657,7 @@ Links (User)
 
 .. |Symfony Expression Language| raw:: html
 
-   <a href="https://symfony.com/doc/5.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
+   <a href="https://symfony.com/doc/6.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
 
 .. |Resource Library Extension| raw:: html
 
@@ -922,4 +922,7 @@ Links (User)
 
    <a href="https://extensions.oroinc.com/" target="_blank">extensions store</a>
 
+.. |Get Started with Tableau|  raw:: html
+
+   <a href="https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm" target="_blank">Get Started with Tableau</a>
 

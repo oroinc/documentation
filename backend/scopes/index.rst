@@ -69,16 +69,11 @@ To add criteria to the scope, extend the scope entity using migration, as shown 
         use ScopeExtensionAwareTrait;
 
         /**
-         * {@inheritdoc}
+         * {@inheritDoc}
          */
-        public function up(Schema $schema, QueryBag $queries)
+        public function up(Schema $schema, QueryBag $queries): void
         {
-            $this->scopeExtension->addScopeAssociation(
-                $schema,
-                'customer',
-                OroCustomerBundleInstaller::ORO_CUSTOMER_TABLE_NAME,
-                'name'
-            );
+            $this->scopeExtension->addScopeAssociation($schema, 'customer', 'oro_customer', 'name');
         }
     }
 

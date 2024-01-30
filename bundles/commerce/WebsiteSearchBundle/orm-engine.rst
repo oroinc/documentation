@@ -3,6 +3,9 @@
 ORM Search Engine
 =================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
+
 ORM engine is a default search engine provided out of the box by WebsiteSearchBundle. This engine uses Doctrine ORM entities as a storage, so all data is stored in a relational DBMS. ORM search index shares the same database with an application. To perform fulltext search index uses DBMS fulltext search index.
 
 ORM Data Storage

@@ -32,9 +32,9 @@ To provide mail templates, create Twig templates for the desired format (namely 
     class EmailTemplatesFixture extends AbstractEmailFixture
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
-        public function getEmailsDir()
+        public function getEmailsDir(): string
         {
             return $this->container
                 ->get('kernel')

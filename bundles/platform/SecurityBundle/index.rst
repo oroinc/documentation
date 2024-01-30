@@ -25,6 +25,7 @@ Related Documentation
   * :ref:`Field ACL <backend-security-bundle-field-acl>`
   * :ref:`Custom Listeners <backend-security-bundle-listeners>`
   * :ref:`Access Rules <backend-security-bundle-access-rules>`
+  * :ref:`HTTP Security Response Headers <backend-security-bundle-security-headers>`
 
 * Custom and Configurable Permissions
 
