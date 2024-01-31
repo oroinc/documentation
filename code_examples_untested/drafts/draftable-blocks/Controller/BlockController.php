@@ -34,7 +34,7 @@ class BlockController extends AbstractController
      * @Acl(
      *      id="acme_cms_block_view",
      *      type="entity",
-     *      class="AcmeCMSBundle:Block",
+     *      class="Acme\Bundle\CMSBundle\Entity\Block",
      *      permission="VIEW"
      * )
      */
@@ -49,7 +49,7 @@ class BlockController extends AbstractController
      * @Acl(
      *      id="acme_cms_block_create",
      *      type="entity",
-     *      class="AcmeCMSBundle:Block",
+     *      class="Acme\Bundle\CMSBundle\Entity\Block",
      *      permission="CREATE"
      * )
      */
@@ -66,7 +66,7 @@ class BlockController extends AbstractController
      * @Acl(
      *      id="acme_cms_block_update",
      *      type="entity",
-     *      class="AcmeCMSBundle:Block",
+     *      class="Acme\Bundle\CMSBundle\Entity\Block",
      *      permission="EDIT"
      * )
      */
@@ -78,10 +78,10 @@ class BlockController extends AbstractController
     protected function update(Block $block): array|RedirectResponse
     {
 
-        return $this->get(UpdateHandlerFacade::class)->handleUpdate(
+        return $this->container->get(UpdateHandlerFacade::class)->handleUpdate(
             $block,
             $this->createForm(BlockType::class, $block),
-            $this->get(TranslatorInterface::class)->trans('acme.cms.controller.saved.message')
+            $this->container->get(TranslatorInterface::class)->trans('acme.cms.controller.saved.message')
         );
     }
 

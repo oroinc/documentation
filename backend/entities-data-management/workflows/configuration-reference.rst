@@ -649,7 +649,7 @@ Summarizing all the above, a step has the following configuration:
 Transitions Configuration
 -------------------------
 
-Transitions change the current step of the Workflow Item when it is performed. It also uses Transition Definition to check if it is allowed and to perform Post Actions.
+Transitions change the current step of the Workflow Item when it is performed. It also uses Transition Definition to check if the transition is allowed and to perform actions.
 
 Transition configuration has the following options:
 
@@ -764,14 +764,14 @@ Define how the workflow transition name will appear on the user interface and th
 Transition Definition Configuration
 -----------------------------------
 
-Transition Definition is used by Transition to check Pre Conditions and Conditions, to perform Init Action and Post Actions.
+Transition Definition is used by transition to check conditions and perform actions.
 
 The transition definition configuration has the following options.
 
-* **preactions** - Configuration of Pre Actions that must be performed before Pre Conditions check.
-* **preconditions** - Configuration of Pre Conditions that must be satisfied to allow displaying transition.
-* **conditions** - Configuration of Conditions that must be satisfied to allow transition.
-* **actions** - Configuration of Post Actions that must be performed after transit to the next step will be performed.
+* **preactions** - Configuration of Pre-Actions that must be performed before Pre-Conditions check.
+* **preconditions** - Configuration of Pre-Conditions that must be satisfied to allow displaying the transition button.
+* **conditions** - Configuration of Conditions that must be satisfied to allow performing an action.
+* **actions** - Configuration of Actions that are performed after conditions are successfully qualified.
 
 **Example**
 
@@ -782,11 +782,11 @@ The transition definition configuration has the following options.
             # ...
             transition_definitions:
                 connected_definition: # Try to make call connected
-                    # Set timeout value
-                    preactions:
+                      # Set timeout value
+                      preactions:
                         - '@assign_value': [$call_timeout, 120]
                         - '@increment_value': [$call_attempt]
-                    # Check that timeout is set
+                      # Check that timeout is set
                     conditions:
                         @not_blank: [$call_timeout]
                     # Set call_successfull = true
@@ -951,14 +951,12 @@ It is also possible to refer to any property of Workflow Item using "$." prefix.
                                         - '@greater': [$call_timeout, 0]
 
 
-Pre, Post and Init Actions
---------------------------
+Pre-Actions and Regular Actions
+-------------------------------
 
-Pre Action, Post Actions, and Init Action configuration complements Transition Definition configuration. Pre Actions are performed BEFORE the Pre Conditions are qualified.
+Pre-action and Regular Action configuration complements Transition Definition configuration. Pre-actions are performed BEFORE the preconditions are qualified.
 
-Post Actions are performed during the transition AFTER conditions are qualified, and the current Step of Workflow Item is changed to the corresponding one (step_to option) in the Transition.
-
-Init Actions can be performed before the transition. One of the possible init actions usage scenarios is to fill the Workflow Item with default values, which will be used by the Transition form if it exists.
+Regular actions are performed during the transition AFTER conditions are qualified, and the current step of workflow item is changed to the corresponding one (step_to option) in the Transition.
 
 Action configuration consists of an alias of Action (which is a unique name of Action) and options (if such are required).
 

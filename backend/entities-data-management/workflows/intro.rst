@@ -8,7 +8,7 @@ Principle
 
 An entity can have assigned workflows. It means that an entity view page has a list of passed steps and allowed transition buttons. When a user clicks a button with the start transition (and submits a transition form if it exists), then in the background, a new instance of a workflow item of a specific Workflow is created.
 
-Each step has a list of allowed transitions, and each transition has a list of conditions that define whether this transition can be performed with a specific workflow item state. If transition is allowed, then the user can perform it. If the transition has Init Actions, they are executed before the transition. If the transition has Post Actions, then these Post Actions are performed right after the transition. So, the user can move the entity through the steps of a workflow until they reach the final step where Workflow finishes.
+Each step has a list of allowed transitions, and each transition has a list of conditions that define whether this transition can be performed with a specific workflow item state. If transition is allowed, then the user can perform it. If the transition has Actions, then these Actions are performed right after the transition. So, the user can move the entity through the steps of a workflow until they reach the final step where Workflow finishes.
 
 A workflow does not always need to have the final step, and the user can perform transitions until they are allowed.
 
@@ -94,11 +94,11 @@ Workflow consists of several related entities.
 
 * **Attribute** is an entity that represents one value in the workflow item, used to render the field value on a step form. Attribute knows about its type (string, object, entity etc.) and additional options. Attribute contains name.
 
-* **Transition** is an action that changes the current step of the workflow item (i.e., moves it from one step to another). The transition is allowed if its conditions are satisfied. Before the transition is performed, *Init Actions* are executed; and after the transition is performed, *Post Actions* are executed. A transition can be used as a start transition; it means that this transition starts the Workflow and creates a new instance of the workflow item. Transitions optionally can have a form. In this case, this form is shown to user when the transition button is clicked. The transition contains name and some additional options. Optionally, the transition can contain a form with a list of attributes.
+* **Transition** is an action that changes the current step of the workflow item (i.e., moves it from one step to another). The transition is allowed if its conditions are satisfied. Pre-actions are executed before the transition is performed; and Actions are executed after the transition is performed. A transition can be used as a start transition. It means that this transition starts the Workflow and creates a new instance of the workflow item. Transitions optionally can have a form. In this case, this form is shown to user when the transition button is clicked. The transition contains name and some additional options. Optionally, the transition can contain a form with a list of attributes.
 
 * **Condition** defines whether a specific transition is allowed with the specified input data. Conditions can be nested.
 
-* **Actions** are assigned to the transition and executed when the transition is performed. There are two kinds of actions: Init Action and Post Actions. The difference between them is that Init Actions are executed before the Transition and Post Actions are executed after the transition. Actions can be used to manage entities (create, find), manipulate attributes (e.g., assign values) and perform any other action.
+* **Actions** are assigned to the transition and executed when the transition is performed. There are two kinds of actions: Pre-Actions and Actions. The difference between them is that Pre-Actions are executed before the Transition, and Actions are executed after the transition. Actions can be used to manage entities (create, find), manipulate attributes (e.g., assign values) and perform any other action.
 
 * **Workflow** aggregates steps, attributes, and transitions. A workflow is a model that does not have its own state but it can be referred by the workflow items.
 

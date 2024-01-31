@@ -74,7 +74,7 @@ things more accessible by providing the |@Acl| annotation that you can use to de
      * @Acl(
      *     id="acme_demo.blog_post_view",
      *     type="entity",
-     *     class="AcmeDemoBundle:BlogPost",
+     *     class="Acme\Bundle\WysiwygBundle\Entity\BlogPost",
      *     permission="VIEW"
      * )
      */

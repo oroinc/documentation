@@ -62,7 +62,7 @@ Configuration
                 start_call:
                     is_start: true                         # this transition used to start new workflow
                     step_to: start_conversation            # next step after transition performing
-                    transition_definition: create_call     # link to definition of conditions and post actions
+                    transition_definition: create_call     # link to definition of conditions and actions
                     init_context_attribute: init_source    # name of variable which contains init context
                     init_entities:                         # list of view page entities where will be displayed transition button
                         - 'Oro\Bundle\UserBundle\Entity\User'

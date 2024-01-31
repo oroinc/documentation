@@ -15,7 +15,6 @@ The following example illustrates how to do it:
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_10/AcmeDemoBundle.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_10/AcmeDemoBundle.php
        :language: php
-       :lines: 3-36, 39-40
 
 .. _backend-entity-activities-add-widget-column:
 

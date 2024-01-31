@@ -8,7 +8,7 @@ Architecture Principles of Oro Applications
 Symfony Role in OroPlatform
 ---------------------------
 
-.. note:: We use |Symfony Framework| v. 5.4 LTS in Oro Applications v.5.x.
+.. note:: We use |Symfony Framework| v. 6.4 LTS in Oro Applications v.5.x.
 
 Symfony is the most mature PHP framework that provides a wide range of functions typical for any web application. Symfony takes care of numerous tasks, for instance:
 

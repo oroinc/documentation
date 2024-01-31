@@ -1,6 +1,8 @@
 Testing
 =======
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 Trait |WebsiteSearchExtensionTrait| сontains methods which help reindex data in test if required.
 
 Example of usage:

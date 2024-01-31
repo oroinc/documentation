@@ -726,16 +726,16 @@ This is an example of how you can write an integration test for a class that use
             return [
                 'simple' => [
                     'queryBuilder' => self::createQueryBuilder($em)
-                        ->from('OroUserBundle:User', 'u')
+                        ->from('Oro\Bundle\UserBundle\Entity\User', 'u')
                         ->select(['u.id', 'u.username']),
-                    'expectedDQL' => 'SELECT u.id FROM OroUserBundle:User u'
+                    'expectedDQL' => 'SELECT u.id FROM Oro\Bundle\UserBundle\Entity\User u'
                 ],
                 'group_test' => [
                     'queryBuilder' => self::createQueryBuilder($em)
-                        ->from('OroUserBundle:User', 'u')
+                        ->from('Oro\Bundle\UserBundle\Entity\User', 'u')
                         ->select(['u.id', 'u.username as uName'])
                         ->groupBy('uName'),
-                    'expectedDQL' => 'SELECT u.id, u.username as uName FROM OroUserBundle:User u GROUP BY uName'
+                    'expectedDQL' => 'SELECT u.id, u.username as uName FROM Oro\Bundle\UserBundle\Entity\User u GROUP BY uName'
                 ]
             );
         }

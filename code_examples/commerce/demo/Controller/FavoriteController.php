@@ -3,6 +3,7 @@
 namespace Acme\Bundle\DemoBundle\Controller;
 
 use Acme\Bundle\DemoBundle\Entity\Favorite;
+use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;
 use Oro\Bundle\SecurityBundle\Annotation\Acl;
 use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
 use Oro\Bundle\SecurityBundle\Annotation\CsrfProtection;
@@ -36,7 +37,7 @@ class FavoriteController extends AbstractController
      * @Acl(
      *   id="acme_demo_favorite_custom",
      *   type="entity",
-     *   class="AcmeDemoBundle:Favorite",
+     *   class="Acme\Bundle\DemoBundle\Entity\Favorite",
      *   permission="VIEW"
      * )
      * @CsrfProtection()
@@ -77,7 +78,9 @@ class FavoriteController extends AbstractController
      */
     public function protectedAction()
     {
-        $repository = $this->container->get('doctrine')->getRepository(Favorite::class);
+        $repository = $this->container->get(DoctrineHelper::class)
+            ->getEntityManager(Favorite::class)
+            ->getRepository(Favorite::class);
         $queryBuilder = $repository
             ->createQueryBuilder('f')
             ->where('f.viewCount > :viewCount')
@@ -95,7 +98,7 @@ class FavoriteController extends AbstractController
     {
         return array_merge(
             parent::getSubscribedServices(),
-            [AclHelper::class]
+            [AclHelper::class, DoctrineHelper::class]
         );
     }
 }

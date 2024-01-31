@@ -3,6 +3,8 @@
 DateTimeFormatter
 =================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 Class |DateTimeFormatter|.
 
 Please use this class if you need format \DateTime object to |string by specific format|.

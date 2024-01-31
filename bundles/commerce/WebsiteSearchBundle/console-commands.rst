@@ -5,6 +5,8 @@
 Console Commands
 ================
 
+.. hint:: See the :ref:`Search Index <search_index_overview>` documentation to get a more high-level understanding of the search index concept in the Oro application.
+
 OroWebsiteSearchBundle provides commands to interact with search index.
 
 oro:website-search:reindex
@@ -28,9 +30,13 @@ To reindex only a certain website and specific entity, use the --website-id and 
 .. code-block:: bash
 
 
-    $ php bin/console oro:website-search:reindex --website-id 1 --class OroUserBundle:User
+    $ php bin/console oro:website-search:reindex --website-id=1 --class="Oro\Bundle\UserBundle\Entity\User"
 
-Normally, reindexation is performed immediately after the reindex command is issued. However, it can also be scheduled to be performed in the background by the Message Queue consumers.
+
+oro:website-search:reindex --scheduled
+--------------------------------------
+
+Reindexation can also be scheduled to be performed in the background by the Message Queue consumers.
 
 Advantages of this mode:
 
@@ -48,7 +54,7 @@ Please use the following parameter to run a scheduled, background indexation :
 
 This command will not directly run indexation - it will immediately quit, putting a reindex request to the Queue. The process itself will be performed in the background by the consumers.
 
-In order to smoothly scale indexation of big volumes, we supplied another parameter - **product-id**, that controls the granulation of reindexation. 
+In order to smoothly scale indexation of big volumes, we supplied another parameter - **product-id**, that controls the granulation of reindexation.
 
 You can specify a range of IDs of products to be reindexed, for example:
 
@@ -59,7 +65,7 @@ You can specify a range of IDs of products to be reindexed, for example:
 The parameter also supports ID range splitting.
 
 Let's assume we have a very large database of 5M products and want to distribute load nicely among a set of 32 message consumers. In order to do this, we could tell the reindexer to split the products between workers in 1000-product sets:
- 
+
 .. code-block:: php
 
     php bin/console oro:website-search:reindex --scheduled --product-id=1-5000000/1000

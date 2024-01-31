@@ -14,7 +14,6 @@ Acme\Bundle\DemoBundle\Entity\Document:
                 Length:
                     min: 1
                     max: 255
-                    allowEmptyString: false
         description:
             -
                 NotBlank: ~
@@ -22,7 +21,6 @@ Acme\Bundle\DemoBundle\Entity\Document:
                 Length:
                     min: 1
                     max: 255
-                    allowEmptyString: false
 Acme\Bundle\DemoBundle\Entity\Question:
     properties:
         subject:
@@ -32,7 +30,6 @@ Acme\Bundle\DemoBundle\Entity\Question:
                 Length:
                     min: 1
                     max: 255
-                    allowEmptyString: false
         description:
             -
                 NotBlank: ~
@@ -40,4 +37,3 @@ Acme\Bundle\DemoBundle\Entity\Question:
                 Length:
                     min: 1
                     max: 255
-                    allowEmptyString: false

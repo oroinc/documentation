@@ -10,6 +10,13 @@
 {# Prefix for all links in template. It allows to make links absolute from the root with '/'  #}
 {%- set link_prefix = '' %}
 
+{%- if current_version and current_version.release != '' %}
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/"/>
+  </head>
+</html>
+{%- else %}
 <!DOCTYPE html>
 <html class="no-js" lang="{{ lang_attr }}" >
 <head>
@@ -19,9 +26,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Welcome to Oro Documentation"/>
   <meta property="og:type" content="website" />
-  {% if theme_canonical_url and oro_current_version and versions %}
-      <meta property="og:image" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/_static/images/OroDocs.png', 1) }}" />
-      <meta property="og:url" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/' + pagename) }}"/>
+  {% if theme_canonical_url and current_version %}
+      <meta property="og:image" content="{{ theme_canonical_url }}{{ '' if current_version.release == '' else '/' ~ current_version.release }}{{ pathto('/_static/images/OroDocs.png', 1) }}" />
+      <meta property="og:url" content="{{ theme_canonical_url }}{{ '' if current_version.release == '' else '/' ~ current_version.release }}{{ pathto('/' + pagename) }}"/>
   {% endif %}
   <meta property="og:site_name" content="Oro Documentation" />
   <meta property="og:description" content="Find everything you need to use and develop your OroCommerce, OroCRM, and OroPlatform application"/>
@@ -79,21 +86,17 @@
 
   {# CSS #}
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/' + style, 1) }}?{{ oro_assets_timestamp }}" type="text/css" charset="utf-8" />
-  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/pygments.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
-  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/redesign.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
-  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/header.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
+    
   {%- for css in css_files %}
-    {%- if css|attr("rel") %}
-  <link rel="{{ css.rel }}" href="{{ pathto(('' if '://' in css.filename else link_prefix) ~ css.filename, 1) }}?{{ oro_assets_timestamp }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
-    {%- else %}
-  <link rel="stylesheet" href="{{ pathto(('' if '://' in css else link_prefix) ~ css, 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
-    {%- endif %}
+    {{ css_tag(css) }}
   {%- endfor %}
 
   {%- for cssfile in extra_css_files %}
-    <link rel="stylesheet" href="{{ pathto(link_prefix ~ cssfile, 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
-  {%- endfor %}
+    {{ css_tag(cssfile) }}
+  {%- endfor -%}
+
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/redesign.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/header.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
 
   {%- block linktags %}
     {%- if hasdoc('about') %}
@@ -176,3 +179,4 @@
   </a>
 </body>
 </html>
+{% endif %}

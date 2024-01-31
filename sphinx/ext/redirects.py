@@ -21,6 +21,7 @@
 import os
 
 from sphinx.util import logging
+from pprint import pprint
 
 TEMPLATE = """<html>
   <head><meta http-equiv="refresh" content="0; url=%s"/></head>
@@ -48,11 +49,15 @@ def generate_redirects(app):
             redirected_directory = os.path.dirname(redirected_filename)
             if not os.path.exists(redirected_directory):
                 os.makedirs(redirected_directory)
-
             with open(redirected_filename, 'w') as f:
-                f.write(TEMPLATE % get_target_uri(to_path))
+                f.write(TEMPLATE % get_target_uri(to_path).replace('//','/'))
 
 
 def setup(app):
     app.add_config_value('redirects_file', 'redirects', 'env')
     app.connect('builder-inited', generate_redirects)
+
+    return {
+        'parallel_read_safe': True,
+        'parallel_write_safe': True,
+    }

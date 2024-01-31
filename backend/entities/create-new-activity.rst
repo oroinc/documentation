@@ -73,7 +73,7 @@ Keep in mind that:
 - The entity class name can be encoded to avoid routing collisions. That is why you need to use the `oro_entity.routing_helper` service to get the entity by its class name and id.
 - In the following example, the `activity-sms-grid` datagrid is used to render the list of activities. This grid is defined in the *datagrids.yml* file:
 
-.. oro_integrity_check:: 305ac96e804fded05aeee04e9d2cc7457fd4099a
+.. oro_integrity_check:: c7e63f1c0788808db95801cc16f8e76ab25aeded
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
@@ -273,7 +273,7 @@ View an Activity in the Activity list
 
 Create a view action in your controller and a TWIG template.
 
-.. oro_integrity_check:: badcbe0e0e7ad2d73f2715b7863b6cfebee572b8
+.. oro_integrity_check:: 06f0e1df5a2934ea33a937531a2501a6aec4857b
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
@@ -292,7 +292,7 @@ Edit an Activity in the Activity List
 
 Define the update action in your controller.
 
-.. oro_integrity_check:: 2dd16f7c2c45c3af13d51a8a6ed38e287163ec8f
+.. oro_integrity_check:: c2dc25bc7d1adfff0dd6cf4740250b9346a82a53
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
