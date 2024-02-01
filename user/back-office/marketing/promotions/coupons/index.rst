@@ -49,7 +49,7 @@ To create a new coupon:
    * **Promotion** --- Select the promotion that the coupon should relate to, or click |IcBars| to load the list of promotions to choose from. Please note that only promotions with the **Triggered by** option set to *Coupons and Conditions* will be displayed on the list of available promotions. If there are no promotions to link the coupon to, they can be created and added to the coupon later.
    * **Enabled** --- Enable the checkbox to activate the coupon. To deactivate it, clear the checkbox.
    * **Uses Per Coupon** --- Enter the number of times that the coupon may be used.
-   * **Uses Per Person** --- Enter the number of times a specific customer can use the coupon.
+   * **Uses Per Person** --- Enter the number of times a specific customer user can use the coupon.
    * **Valid From/Until** --- Provide the expiration date and time for the coupon.
 
 4. Click **Save**.
@@ -72,7 +72,7 @@ To generate new coupons:
    * **Promotion** --- Select the promotion that the coupon should relate to, or click |IcBars| to load the list of promotions to choose from. Please note that only promotions with the *Triggered by* :ref:`option <user-guide--marketing--promotions--create>` set to *Coupons and Conditions* will be displayed on the list of available promotions.
    * **Enabled** --- Enable the checkbox to activate the coupons.
    * **Uses Per Coupon** --- Enter the number of times the coupon can be used.
-   * **Uses Per Person** --- Enter the number of times a specific customer can use the coupon.
+   * **Uses Per Person** --- Enter the number of times a specific customer user can use the coupon.
    * **Valid From/Until** --- Provide the expiration date and time for the coupon.
    * **Owner** --- Select the business unit responsible for the coupon.
    * **Coupon Quantity** --- Specify the number of coupons to be automatically generated.
