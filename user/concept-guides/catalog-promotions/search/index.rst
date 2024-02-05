@@ -64,7 +64,6 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 
 .. image:: /user/img/concept-guides/search/search-by-entity.png
    :alt: Difference between the regular search and search by entity
-   :scale: 60%
 
 .. _user-guide-getting-started-search-tag:
 
@@ -72,7 +71,6 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 
 .. image:: /user/img/concept-guides/search/search-by-tag.png
    :alt: Difference between the regular search and search by entity
-   :scale: 60%
 
 * :ref:`Quick Search <user-guide--system-configuration--quick-search>` - The intelligent search feature is located in the configuration panel on the left (on all configuration levels). It helps you locate the specific configuration option instantly by keywords. It narrows down the query when you start typing the key letters and displays real-time search results.
 

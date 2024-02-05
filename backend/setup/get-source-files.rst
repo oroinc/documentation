@@ -95,7 +95,7 @@ Method 2: Use the GitHub Repository
 Method 3: Download the Source Code Archive
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Download the latest version of the application source code from the download section on |the website|:
+1. Download the latest version of the application source code from the download section on |the website| (you may be required to fill in a form to request access):
 
    * |Download OroCommerce|
    * |Download OroCRM|
@@ -104,11 +104,6 @@ Method 3: Download the Source Code Archive
    Click the **download zip**, **download tar.gz**, or **download tar.bz2** link to download the archive.
 
    .. note:: You can also download the **virtual machine** to quickly :ref:`deploy the application in the virtual sandbox environment <virtual_machine_deployment>`.
-
-   .. image:: /img/backend/setup/installation/download_orocommerce.png
-      :alt: Download the latest version of the source code screen from the website
-      :align: center
-      :scale: 50%
 
    Then extract the source files. For example, on a Linux-based OS run:
 

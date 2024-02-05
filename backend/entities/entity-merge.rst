@@ -222,5 +222,6 @@ Dependencies
 The following diagram shows dependencies among EntityMergeBundle classes (click on the image to zoom):
 
 .. image:: /img/backend/entities/entity_merge_class_diagramm.png
-   :scale: 60%
+   :align: center
+   :scale: 40%
    :alt: Dependencies among EntityMergeBundle classes

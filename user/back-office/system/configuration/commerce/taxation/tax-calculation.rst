@@ -7,7 +7,7 @@ Configure Global Tax Calculation Settings
 
 By default, OroCommerce calculates tax using a rate defined in the built-in tax rule for the default shipping origin address.
 
-To customize the following tax calculation settings that impact the way OroCommerce implies tax in the order or quote, perform the following steps:
+To customize the following tax calculation settings that impact the way OroCommerce implies tax to orders, perform the following steps:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Taxation > Tax Calculation** in the menu to the left.
@@ -16,7 +16,6 @@ To customize the following tax calculation settings that impact the way OroComme
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 .. image:: /user/img/system/config_commerce/taxation/TaxCalculation.png
-   :scale: 60%
    :alt: Global tax calculation configuration
 
 .. note:: Remember to clear the **Use default** checkbox before setting a custom option.

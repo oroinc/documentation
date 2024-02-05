@@ -11,9 +11,8 @@ Supported Paypal Services
 PayPal is a globally recognized online payments platform that enables businesses and individuals to securely send and receive payments over the internet. With its extensive reach and trusted reputation, PayPal has become a popular payment solution for millions of users worldwide. At OroCommerce, we recognize the significance of offering versatile payment options to our customers, and integrating PayPal into our platform allows you to leverage its robust services to streamline your payment processes.
 
 .. image:: /user/img/system/integrations/paypal/paypal-supported-services-2.png
-   :scale: 50%
-   :align: center
    :alt: Graph illustrating Paypal services that OroCommerce integrates with
+   :align: center
 
 Here is an overview of the key PayPal services that OroCommerce integrates with:
 
@@ -40,7 +39,6 @@ Data Exchange
 -------------
 
 .. image:: /user/img/system/integrations/paypal/paypal-data-exhange-graph.png
-   :scale: 50%
    :align: center
    :alt: Graph showing which data Paypal and CroCommerce exchange during integration
 
