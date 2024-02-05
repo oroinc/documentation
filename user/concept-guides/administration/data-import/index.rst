@@ -28,7 +28,6 @@ That is why it is essential to:
 .. image:: /user/img/concept-guides/import/import-steps.png
    :alt: Data import steps
    :align: center
-   :scale: 40%
 
 Logical Import Sequence
 -----------------------

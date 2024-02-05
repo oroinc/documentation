@@ -50,7 +50,6 @@ Every request is different. You can use the default OroCommerce RFQ form which s
 
 .. image:: /user/img/concept-guides/rfq/RFQ_template.png
    :alt: A default RFQ template
-   :scale: 70%
 
 With an RFQ, buyers select the items they are interested in, adjust their quantities, and offer the prices they are willing to pay.
 
@@ -91,7 +90,6 @@ To make the most of an RFQ-friendly store, make sure you enable all related feat
 
   .. image:: /user/img/concept-guides/rfq/RFQ_workflow.png
      :alt: View the additional RFQ options appeared after enabling the RFQ management flow workflow
-     :scale: 60%
 
 * **RFQ Submission Flow Workflow**
 
@@ -99,10 +97,8 @@ To make the most of an RFQ-friendly store, make sure you enable all related feat
 
   .. image:: /user/img/concept-guides/rfq/RFQ_submission_wf.png
      :alt: View the status of the submitted RFQ's both in the back-office and storefront
-     :scale: 60%
 
   If these two default RFQ workflows do not fully cover your business needs, you can always modify them through customization or create your own in the :ref:`system configuration <mc-system-wf>` in the back-office.
-
 
 Quote: Seller's Response and Price Offer
 ----------------------------------------
@@ -119,8 +115,6 @@ With OroCommerce, you can automate the process of generating and sending quotes 
 
 .. image:: /user/img/concept-guides/rfq/quote_form.png
    :alt: A default quote template
-   :scale: 50%
-
 
 Every quote has a **free-form entry** that lets you manually input any extra service or product that is not showcased on your website. This form is mainly used to offer additional services to the purchased products, such as additional software installation, warranty extension, assistance with assembly or installation, and so on.
 
@@ -138,7 +132,6 @@ To get the most benefits out of the OroCommerce quote functionality, make sure t
 
   .. image:: /user/img/concept-guides/rfq/quote_configuration.png
      :alt: View the Quotes section in the storefront that appears after enabling quotes in the back-office configuration
-     :scale: 60%
 
 * **Guest Quote**
 

@@ -239,7 +239,6 @@ Proceed to create the attribute as described below.
     4.  On the entity variables list on the right, find the attribute and click on it to add to the template.
 
         .. image:: /user/img/products/product_attributes/AttributeInTemplate.png
-           :scale: 50%
            :alt: Add the attribute from the entity variables list to the email template
            "
    "**Add To Grid Settings**","The option controls the availability and display of the product attribute in the products grid:
