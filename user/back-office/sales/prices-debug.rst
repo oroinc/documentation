@@ -3,6 +3,8 @@
 Price Calculation Details
 =========================
 
+.. note:: The Price Calculation Details feature is available in OroCommerce as of version 5.1.6.
+
 The pricing engine includes various features such as price schedules and rule-based generated prices. Price lists can be assigned to different entities and then merged by the pricing strategy. The combination of these features can lead to additional complexity, making it difficult to understand how prices for a particular product are created, what the current prices are for a given customer and website, and what the prices will be for a specific date.
 
 The Price Calculation Details feature helps obtain information about:
