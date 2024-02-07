@@ -5829,7 +5829,7 @@ Links (Dev)
 
 .. |OroCommerceMenuBundle| raw:: html
 
-   <a href="https://github.com/oroinc/customer-portal/tree/5.1src/Oro/Bundle/CommerceMenuBundle" target="_blank">OroCommerceMenuBundle</a>
+   <a href="https://github.com/oroinc/customer-portal/tree/5.1/src/Oro/Bundle/CommerceMenuBundle" target="_blank">OroCommerceMenuBundle</a>
 
 .. |OroCustomerBundle| raw:: html
 

@@ -7,6 +7,12 @@ A search function on your website provides a seamless experience for your visito
 
 Your website may have a vast database with numerous pages and information, making it harder for users to locate the required information. With this in mind, Oro has developed a helpful search utility to help customers query that database and find the material quickly.
 
+.. note:: See a short demo on how OroCommerce's advanced search features can enhance the B2B ecommerce experience for both sellers and buyers.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SqKn5xKjs0g?si=q0x0dG2hNzDmhUi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 You can find the search bar:
 
 * in the header and menu of the storefront
