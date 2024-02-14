@@ -23,7 +23,7 @@ If you have to support older version of browsers, consider enabling Babel for th
 Enabled Layout Themes
 ---------------------
 
-Layout themes in OroCommerce can extend each other, but to avoid side effects during the build, every layout theme in the OroCommerce application is fully isolated. Therefore, the build time and resource consumption directly depend on the number of enabled themes. All the available themes are enabled out of the box, including the three default ones (blank, default, and custom). In most cases, the default themes are unnecessary in a custom application with its own themes and custom CSS and JavaScript.
+Layout themes in OroCommerce can extend each other, but to avoid side effects during the build, every layout theme in the OroCommerce application is fully isolated. Therefore, the build time and resource consumption directly depend on the number of enabled themes. All the available themes are enabled out-of the-box. In most cases, the default themes are unnecessary in a custom application with its own themes and custom CSS and JavaScript.
 
 To build only the themes that are in use and disable the rest, provide the list of enabled themes by adding the following configuration to the config/config.yml file:
 
