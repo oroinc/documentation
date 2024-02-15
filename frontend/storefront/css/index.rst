@@ -266,7 +266,7 @@ In the main file of the custom theme, we have:
 Themes Settings and Useful Recommendation
 -----------------------------------------
 
-1. Main styles for the **default theme**:
+1. Main styles for the **Refreshing Teal**:
    package/platform/src/Oro/Bundle/UIBundle/Resources/public/default/scss/
 
    -  mixins:
@@ -278,7 +278,7 @@ Themes Settings and Useful Recommendation
    -  color pallet:
       package/platform/src/Oro/Bundle/UIBundle/Resources/public/default/scss/settings/\_colors.scss
 
-2. Form styles for **default theme**:
+2. Form styles for **Refreshing Teal**:
    package/platform/src/Oro/Bundle/FormBundle/Resources/public/default/scss
 
 **Related Topics**

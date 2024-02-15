@@ -13,17 +13,15 @@ The **Layout** section of the **Symfony Profiler** page contains all rendered la
 
     Symfony Profiler - Layout
 
-
-
 To see the Layout section, click the Layout icon on the Symfony Toolbar:
 
 .. image:: /img/frontend/developer_toolbar_layout_icon.png
     :alt: Layout developer toolbar
 
-Layout updates in the default theme can be added to:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Layout Updates
+^^^^^^^^^^^^^^
 
-Suggestions, where to place layout updates for the active theme, to apply them to the current page, widget container or to all the pages.
+The layout can be updated for a particular theme, specific pages, or widget containers.
 
 .. _dev-doc-frontend-layouts-debugging-layout-tree:
 

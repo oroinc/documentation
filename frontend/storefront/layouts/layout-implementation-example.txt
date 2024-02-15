@@ -370,7 +370,7 @@ example
 Please note that the file is placed in the route specific folder and as
 the result will be executed only for the `demo_layout_test` route.
 
-In our default theme we have a two-column layout, however, for our
+In our Refreshing Teal theme we have a two-column layout, however, for our
 example page we want one column. We are going to remove the `left_panel` block
 and change the class for the `main_container`:
 

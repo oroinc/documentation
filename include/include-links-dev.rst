@@ -4117,10 +4117,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/views/Layout/php" target="_blank">src/Oro/Bundle/LayoutBundle/Resources/views/Layout/php</a>
 
-.. |default theme| raw:: html
-
-   <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/FrontendBundle/Resources/views/layouts/default" target="_blank">default theme</a>
-
 .. |Context::getHash| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout/ContextInterface.php#L94" target="_blank">Context::getHash</a>
