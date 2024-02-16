@@ -107,7 +107,6 @@ Keep in mind that the **featured_menu** is different from the :ref:`featured pro
 
 .. image:: /user/img/concept-guides/menus/featured_menu_vs_segment.png
    :alt: Featured menu vs featured segment
-   :scale: 50%
 
 Customer_usermenu
 ^^^^^^^^^^^^^^^^^

@@ -82,7 +82,6 @@ To create a new content widget:
 
      .. image:: /user/img/marketing/content_widgets/injected-widget.png
         :alt: Contact us widget embedded in tabbed content widget
-        :scale: 40%
 
 4. Once you have provided all widget-specific details, click **Save and Close**.
 

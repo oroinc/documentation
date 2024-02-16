@@ -34,7 +34,7 @@ Add the EPEL and remi repositories by running:
 .. code-block:: bash
 
    dnf -y install dnf-plugin-config-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:16 php:remi-8.3
+   dnf -y module enable postgresql:13 redis:remi-6.2 nodejs:20 php:remi-8.3
    dnf -y upgrade
 
 Add Oro public repository:

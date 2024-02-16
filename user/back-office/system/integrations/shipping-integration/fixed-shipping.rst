@@ -34,7 +34,6 @@ Next, set up a shipping rule via the :ref:`Shipping Rules Configuration <sys--sh
 .. hint:: Fixed Product Shipping Cost Method and its configuration through :ref:`a shipping rule <shipping-rule-fixed-product-shipping-cost>` can work in conjunction with the values defined in the :ref:`Shipping Cost price attribute <products--shipping-options-price-attribute>`. For example, if the shipping cost for a product is set to $2.70 and the surcharge configured for the Fixed Shipping Cost shipping method is $3, then the shipping charge at checkout will equate to $5.70.
 
             .. image:: /user/img/products/price_attributes/shipping-cost-price-attribute-with-integration.png
-               :scale: 42%
                :alt: Illustration of how shipping cost set for the price attribute works on combination with the surcharge defined in the fixed product shipping cost integration
 
 

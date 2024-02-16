@@ -36,7 +36,6 @@ and then populating them with child (content) nodes:
 * Lighting & Electrical: *Lightning, Home Electrical, Smart Home*
 
 .. image:: /user/img/concept-guides/web-catalog/bo-sf-child-nodes.png
-   :scale: 60%
    :align: center
    :alt: Child menu items in back-office vs storefront
 
@@ -47,7 +46,6 @@ Each of these nodes can have more child categories:
 * Smart Home: *Voice Assistants, Cameras, Heating, Doorbells*
 
 .. image:: /user/img/concept-guides/web-catalog/bo-sf-further-child-nodes.png
-   :scale: 60%
    :align: center
    :alt: Deeper child menu items in back-office vs storefront
 

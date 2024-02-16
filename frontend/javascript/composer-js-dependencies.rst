@@ -15,7 +15,7 @@ Minimum Requirements
 
 The following software is required for `composer` to install JS dependencies:
 
- - |Node.js|, version 18
+ - |Node.js|, version 20
  - |NPM|
 
 .. hint:: For instructions on how to install **Node.js**, navigate to the |Node.js official website|.

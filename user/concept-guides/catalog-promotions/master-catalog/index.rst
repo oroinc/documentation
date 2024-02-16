@@ -24,7 +24,6 @@ Consider each available organization in your OroCommerce application as an umbre
 
 .. image:: /user/img/products/master_catalog/mc_multi-org.png
    :align: center
-   :scale: 60%
    :alt: Illustration of a multi-org application
 
 Master VS Web Catalog

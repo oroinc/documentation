@@ -48,9 +48,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 
    * **Show on View** --- If set to *Yes*, the field is displayed on record view pages.
    * **Exportable** --- If set to *Yes*, the value of this field will be present in the :ref:`product data export file in the storefront <sys--commerce--product--customer-settings>`.
-   * **Priority** --- Defines an order of custom fields on entity record view, edit, and create pages, and on the respective grid.
-
-      Custom fields are always displayed one after another, usually below the system fields. If no priority is defined or the defined priority is 0, the fields will be displayed in the order in which they have been added to the system. The fields with a higher priority (a bigger value) will be displayed before the fields with a lower priority.
+   * **Priority** --- Defines an order of custom fields on entity record view, edit, and create pages, and on the respective grid. Custom fields are always displayed one after another, usually below the system fields. If no priority is defined or the defined priority is 0, the fields will be displayed in the order in which they have been added to the system. The fields with a higher priority (a bigger value) will be displayed before the fields with a lower priority.
 
    * **Searchable** --- If set to *Yes*, the entities can be found using the :ref:`search <user-guide-getting-started-search>` by values of this field.
    * **Global Search Boost** --- Available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine. This option enables you to :ref:`boost <bundle-docs-commerce-website-elastic-search-bundle-attributes-boost>` the value of the field during search. By default, the boost for sku is set to 5, for names to 3, meaning that the searchable word is first searched among SKUs, then names, etc. The option works for searchable attributes only.
