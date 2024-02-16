@@ -141,7 +141,6 @@ Category settings, in turn, can fall back to the parent category (if there is an
 
 .. image:: /user/img/concept-guides/inventory/product_options_fallback_screens.png
    :alt: Screenshots to illustrate the inventory options fallback logic
-   :scale: 40%
 
 In other words, if you set the inventory options for the whole system, but your organization has a different configuration, the latter prevails. In case a website has its custom configuration, it overrides both the organization and global settings. Master catalog configuration overrides the website, organization, and global settings. An individual configuration set per product overrides the configuration set on all the aforementioned levels.
 

@@ -11,14 +11,13 @@ To create a new synonym group:
 2. Click **Create Search Synonym**.
 3. Fill in the following details:
 
-   * Owner --- the owner of the synonym being created. This field is only displayed in the global organization.
-   * Websites --- a list of websites where the synonym is to be used. Hold ctrl to select more than one website.
-   * Synonyms --- a list of comma-separated synonyms, for example, good, excellent. Arrow notation can be used to define unidirectional synonyms: excellent => good.
+   * **Owner** --- the owner of the synonym being created. This field is only displayed in the global organization.
+   * **Websites** --- a list of websites where the synonym is to be used. Hold ctrl to select more than one website.
+   * **Synonyms** --- a list of comma-separated synonyms, for example, good, excellent. Arrow notation can be used to define unidirectional synonyms: excellent => good.
 
 4. Click **Save**.
 
 .. image:: /user/img/marketing/search/synonym-search-back-office-storefront-example.png
-   :scale: 50%
    :alt: Illustration of how search synonyms configured in the back-office work in the storefront
 
 **Related Content**:
