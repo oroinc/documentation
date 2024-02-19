@@ -761,7 +761,7 @@ Links (User)
 
 .. |CAN-SPAM| raw:: html
 
-   <a href="https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business" target="_blank">CAN-SPAM</a>
+   <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank">CAN-SPAM</a>
 
 .. |COPPA| raw:: html
 

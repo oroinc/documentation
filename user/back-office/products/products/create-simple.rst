@@ -61,7 +61,7 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
         You can delete the unnecessary unit of quantity by clicking the |IcClose| **Delete** icon next to it.
 
-   #) In the **Tax Code** list, select the :ref:`product tax code <taxes--product-tax-code>` that defines the percentage of tax that can be included in the purchase order during the checkout.
+   #) In the **Tax Code** list, select the :ref:`product tax code <taxes--product-tax-code>` that defines the percentage of tax that can be included in the purchase order during the checkout. Each product must have the related product tax code for proper tax calculation. In terms of product kits, taxes are applied to the product kit and all its kit line items individually.
 
       The tax calculation process depends on the tax jurisdiction that you decided to use in OroCommerce and other tax calculation options.
 
