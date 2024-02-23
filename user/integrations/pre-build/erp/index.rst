@@ -9,9 +9,11 @@ Below is a list of ERP integrations Oro applications support:
 
 * :ref:`SAP (B1 and ECC) <integrations-erp-sap>`
 * :ref:`Epicor Prophet 21 <integrations-erp-epicor>`
+* :ref:`Eclipse <integrations-erp-eclipse>`
 
 .. toctree::
    :hidden:
 
    sap
    epicor
+   eclipse

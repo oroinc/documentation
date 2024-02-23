@@ -143,6 +143,7 @@ primary_domain = 'php'
 # a list of builtin themes.
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = ["_themes", ]
+html_permalinks_icon = '&nbsp;'
 # html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
