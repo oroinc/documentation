@@ -2,8 +2,9 @@
 
 namespace Acme\Bundle\DemoBundle\Controller\Api\Rest;
 
+use Acme\Bundle\DemoBundle\Entity\Sms;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
-use Oro\Bundle\SecurityBundle\Annotation\Acl;
+use Oro\Bundle\SecurityBundle\Attribute\Acl;
 use Oro\Bundle\SoapBundle\Controller\Api\FormAwareInterface;
 use Oro\Bundle\SoapBundle\Controller\Api\Rest\RestController;
 use Oro\Bundle\SoapBundle\Entity\Manager\ApiEntityManager;
@@ -23,14 +24,9 @@ class SmsController extends RestController
      *      description="Delete sms",
      *      resource=true
      * )
-     * @Acl(
-     *      id="acme_demo_sms_delete",
-     *      type="entity",
-     *      permission="DELETE",
-     *      class="Acme\Bundle\DemoBundle\Entity\Sms"
-     * )
      * @return Response
      */
+    #[Acl(id: 'acme_demo_sms_delete', type: 'entity', permission: 'DELETE', class: Sms::class)]
     public function deleteAction(int $id)
     {
         return $this->handleDeleteRequest($id);

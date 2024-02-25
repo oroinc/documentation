@@ -5,8 +5,8 @@ namespace Acme\Bundle\DemoBundle\Controller;
 use Acme\Bundle\DemoBundle\Entity\DoctrineTypeField;
 use Acme\Bundle\DemoBundle\Form\Type\DoctrineTypeFieldType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
-use Oro\Bundle\SecurityBundle\Annotation\Acl;
-use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
+use Oro\Bundle\SecurityBundle\Attribute\Acl;
+use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -16,16 +16,13 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * Contains CRUD actions for DoctrineTypeField
- *
- * @Route("/doctrine_type_field", name="acme_demo_doctrine_type_field_")
  */
+#[Route(path: '/doctrine_type_field', name: 'acme_demo_doctrine_type_field_')]
 class DoctrineTypeFieldController extends AbstractController
 {
-    /**
-     * @Route("/", name="index")
-     * @Template
-     * @AclAncestor("acme_demo_doctrine_type_field_view")
-     */
+    #[Route(path: '/', name: 'index')]
+    #[Template]
+    #[AclAncestor('acme_demo_doctrine_type_field_view')]
     public function indexAction(): array
     {
         return [
@@ -33,16 +30,9 @@ class DoctrineTypeFieldController extends AbstractController
         ];
     }
 
-    /**
-     * @Route("/view/{id}", name="view", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_demo_doctrine_type_field_view",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\DoctrineTypeField",
-     *      permission="VIEW"
-     * )
-     */
+    #[Route(path: '/view/{id}', name: 'view', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_demo_doctrine_type_field_view', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\DoctrineTypeField', permission: 'VIEW')]
     public function viewAction(DoctrineTypeField $entity): array
     {
         return [
@@ -52,16 +42,10 @@ class DoctrineTypeFieldController extends AbstractController
 
     /**
      * Create DoctrineTypeField
-     *
-     * @Route("/create", name="create", options={"expose"=true})
-     * @Template("@AcmeDemo/DoctrineTypeField/update.html.twig")
-     * @Acl(
-     *      id="acme_demo_doctrine_type_field_create",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\DoctrineTypeField",
-     *      permission="CREATE"
-     * )
      */
+    #[Route(path: '/create', name: 'create', options: ['expose' => true])]
+    #[Template('@AcmeDemo/DoctrineTypeField/update.html.twig')]
+    #[Acl(id: 'acme_demo_doctrine_type_field_create', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\DoctrineTypeField', permission: 'CREATE')]
     public function createAction(Request $request): array|RedirectResponse
     {
         $createMessage = $this->container->get(TranslatorInterface::class)->trans(
@@ -73,16 +57,10 @@ class DoctrineTypeFieldController extends AbstractController
 
     /**
      * Edit DoctrineTypeField form
-     *
-     * @Route("/update/{id}", name="update", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_demo_doctrine_type_field_update",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\DoctrineTypeField",
-     *      permission="EDIT"
-     * )
      */
+    #[Route(path: '/update/{id}', name: 'update', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_demo_doctrine_type_field_update', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\DoctrineTypeField', permission: 'EDIT')]
     public function updateAction(DoctrineTypeField $entity, Request $request): array|RedirectResponse
     {
         $updateMessage = $this->container->get(TranslatorInterface::class)->trans(
