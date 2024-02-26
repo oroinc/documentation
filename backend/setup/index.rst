@@ -15,7 +15,6 @@ The application setup guides provide the details on how to configure the environ
     Explore our |B2B eCommerce platform comparison| page to comprehensively review and narrow down your options.
 
 
-
 .. toctree::
    :titlesonly:
    :maxdepth: 1
