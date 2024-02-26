@@ -8,34 +8,30 @@ use Oro\Bundle\ProductBundle\Model\ProductHolderInterface;
 
 /**
  * Entity to product options value
- *
- * @ORM\Table(name="oro_bpe_prod_opts")
- * @ORM\Entity
  */
+#[ORM\Entity]
+#[ORM\Table(name: 'oro_bpe_prod_opts')]
 class ProductOptions implements ProductHolderInterface
 {
     /**
      * @var integer
-     *
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
+    #[ORM\Id]
+    #[ORM\Column(type: 'integer')]
+    #[ORM\GeneratedValue(strategy: 'AUTO')]
     protected $id;
 
     /**
      * @var Product
-     *
-     * @ORM\ManyToOne(targetEntity="Oro\Bundle\ProductBundle\Entity\Product")
-     * @ORM\JoinColumn(name="product_id", referencedColumnName="id", nullable=false, onDelete="CASCADE")
      */
+    #[ORM\ManyToOne(targetEntity: 'Oro\Bundle\ProductBundle\Entity\Product')]
+    #[ORM\JoinColumn(name: 'product_id', referencedColumnName: 'id', nullable: false, onDelete: 'CASCADE')]
     protected $product;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="value", type="text")
      */
+    #[ORM\Column(name: 'value', type: 'text')]
     protected $value;
 
     // ..... Getters & Setters implementations .....

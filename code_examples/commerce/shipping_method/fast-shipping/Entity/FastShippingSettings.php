@@ -11,29 +11,17 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
  * Entity with settings for Fast Shipping integration
- *
- * @ORM\Entity
  */
+#[ORM\Entity]
 class FastShippingSettings extends Transport
 {
     /**
      * @var Collection|LocalizedFallbackValue[]
-     *
-     * @ORM\ManyToMany(
-     *      targetEntity="Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue",
-     *      cascade={"ALL"},
-     *      orphanRemoval=true
-     * )
-     * @ORM\JoinTable(
-     *      name="acme_fast_ship_transport_label",
-     *      joinColumns={
-     *          @ORM\JoinColumn(name="transport_id", referencedColumnName="id", onDelete="CASCADE")
-     *      },
-     *      inverseJoinColumns={
-     *          @ORM\JoinColumn(name="localized_value_id", referencedColumnName="id", onDelete="CASCADE", unique=true)
-     *      }
-     * )
      */
+    #[ORM\ManyToMany(targetEntity: LocalizedFallbackValue::class, cascade: ['ALL'], orphanRemoval: true)]
+    #[ORM\JoinTable(name: 'acme_fast_ship_transport_label')]
+    #[ORM\JoinColumn(name: 'transport_id', referencedColumnName: 'id', onDelete: 'CASCADE')]
+    #[ORM\InverseJoinColumn(name: 'localized_value_id', referencedColumnName: 'id', onDelete: 'CASCADE', unique: true)]
     private $labels;
 
     /**

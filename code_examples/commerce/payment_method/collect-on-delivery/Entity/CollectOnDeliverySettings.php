@@ -2,6 +2,7 @@
 
 namespace Acme\Bundle\CollectOnDeliveryBundle\Entity;
 
+use Acme\Bundle\CollectOnDeliveryBundle\Entity\Repository\CollectOnDeliverySettingsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -11,51 +12,26 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
  * Entity with settings for Collect on delivery integration
- *
- * @ORM\Entity(
- *     repositoryClass="Acme\Bundle\CollectOnDeliveryBundle\Entity\Repository\CollectOnDeliverySettingsRepository"
- * )
  */
+#[ORM\Entity(repositoryClass: CollectOnDeliverySettingsRepository::class)]
 class CollectOnDeliverySettings extends Transport
 {
     /**
      * @var Collection|LocalizedFallbackValue[]
-     *
-     * @ORM\ManyToMany(
-     *      targetEntity="Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue",
-     *      cascade={"ALL"},
-     *      orphanRemoval=true
-     * )
-     * @ORM\JoinTable(
-     *      name="acme_coll_on_deliv_trans_label",
-     *      joinColumns={
-     *          @ORM\JoinColumn(name="transport_id", referencedColumnName="id", onDelete="CASCADE")
-     *      },
-     *      inverseJoinColumns={
-     *          @ORM\JoinColumn(name="localized_value_id", referencedColumnName="id", onDelete="CASCADE", unique=true)
-     *      }
-     * )
      */
+    #[ORM\ManyToMany(targetEntity: 'Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue', cascade: ['ALL'], orphanRemoval: true)]
+    #[ORM\JoinTable(name: 'acme_coll_on_deliv_trans_label')]
+    #[ORM\JoinColumn(name: 'transport_id', referencedColumnName: 'id', onDelete: 'CASCADE')]
+    #[ORM\InverseJoinColumn(name: 'localized_value_id', referencedColumnName: 'id', onDelete: 'CASCADE', unique: true)]
     private $labels;
 
     /**
      * @var Collection|LocalizedFallbackValue[]
-     *
-     * @ORM\ManyToMany(
-     *      targetEntity="Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue",
-     *      cascade={"ALL"},
-     *      orphanRemoval=true
-     * )
-     * @ORM\JoinTable(
-     *      name="acme_coll_on_deliv_short_label",
-     *      joinColumns={
-     *          @ORM\JoinColumn(name="transport_id", referencedColumnName="id", onDelete="CASCADE")
-     *      },
-     *      inverseJoinColumns={
-     *          @ORM\JoinColumn(name="localized_value_id", referencedColumnName="id", onDelete="CASCADE", unique=true)
-     *      }
-     * )
      */
+    #[ORM\ManyToMany(targetEntity: 'Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue', cascade: ['ALL'], orphanRemoval: true)]
+    #[ORM\JoinTable(name: 'acme_coll_on_deliv_short_label')]
+    #[ORM\JoinColumn(name: 'transport_id', referencedColumnName: 'id', onDelete: 'CASCADE')]
+    #[ORM\InverseJoinColumn(name: 'localized_value_id', referencedColumnName: 'id', onDelete: 'CASCADE', unique: true)]
     private $shortLabels;
 
     /**

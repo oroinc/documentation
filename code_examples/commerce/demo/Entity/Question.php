@@ -6,8 +6,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Oro\Bundle\DataAuditBundle\Entity\AuditAdditionalFieldsInterface;
 use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareInterface;
 use Oro\Bundle\EntityBundle\EntityProperty\DatesAwareTrait;
-use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
+use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
+use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
 use Oro\Bundle\OrganizationBundle\Entity\OrganizationAwareInterface;
 use Oro\Bundle\UserBundle\Entity\Ownership\AuditableUserAwareTrait;
 use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface;
@@ -15,47 +15,32 @@ use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait;
 
 /**
  * ORM Entity Question.
- *
- * @ORM\Entity(
- *     repositoryClass="Acme\Bundle\DemoBundle\Entity\Repository\QuestionRepository"
- * )
- * @ORM\Table(
- *     name="acme_demo_question"
- * )
- * @Config(
- *     routeName="acme_demo_question_index",
- *     routeView="acme_demo_question_view",
- *     routeCreate="acme_demo_question_create",
- *     routeUpdate="acme_demo_question_update",
- *     defaultValues={
- *         "form"={
- *             "form_type"="Acme\Bundle\DemoBundle\Form\Type\QuestionCreateOrSelectType",
- *             "grid_name"="acme-demo-question-grid-select"
- *         },
- *         "grid"={
- *             "default"="acme-demo-question-grid-select"
- *         },
- *         "entity"={
- *             "icon"="fa-question"
- *         },
- *         "ownership"={
- *             "owner_type"="USER",
- *             "owner_field_name"="owner",
- *             "owner_column_name"="user_owner_id",
- *             "organization_field_name"="organization",
- *             "organization_column_name"="organization_id"
- *         },
- *         "security"={
- *             "type"="ACL",
- *             "group_name"="",
- *             "category"=""
- *         },
- *         "dataaudit"={
- *             "auditable"=true
- *         }
- *     }
- * )
  */
+#[ORM\Entity(repositoryClass: 'Acme\Bundle\DemoBundle\Entity\Repository\QuestionRepository')]
+#[ORM\Table(name: 'acme_demo_question')]
+#[Config(
+    routeName: 'acme_demo_question_index',
+    routeView: 'acme_demo_question_view',
+    routeCreate: 'acme_demo_question_create',
+    routeUpdate: 'acme_demo_question_update',
+    defaultValues: [
+        'form' => [
+            'form_type' => 'Acme\Bundle\DemoBundle\Form\Type\QuestionCreateOrSelectType',
+            'grid_name' => 'acme-demo-question-grid-select'
+        ],
+        'grid' => ['default' => 'acme-demo-question-grid-select'],
+        'entity' => ['icon' => 'fa-question'],
+        'ownership' => [
+            'owner_type' => 'USER',
+            'owner_field_name' => 'owner',
+            'owner_column_name' => 'user_owner_id',
+            'organization_field_name' => 'organization',
+            'organization_column_name' => 'organization_id'
+        ],
+        'security' => ['type' => 'ACL', 'group_name' => '', 'category' => ''],
+        'dataaudit' => ['auditable' => true]
+    ]
+)]
 class Question implements
     DatesAwareInterface,
     OrganizationAwareInterface,
@@ -66,83 +51,26 @@ class Question implements
     use AuditableUserAwareTrait;
     use ExtendEntityTrait;
 
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: 'integer')]
     private $id;
 
-    /**
-     * @ORM\Column(
-     *     name="subject",
-     *     type="string",
-     *     length=255,
-     *     nullable=false
-     * )
-     * @ConfigField(
-     *     defaultValues={
-     *         "dataaudit"={
-     *             "auditable"=true
-     *         },
-     *         "importexport"={
-     *             "identity"=true
-     *         }
-     *     }
-     * )
-     */
+    #[ORM\Column(name: 'subject', type: 'string', length: 255, nullable: false)]
+    #[ConfigField(defaultValues: ['dataaudit' => ['auditable' => true], 'importexport' => ['identity' => true]])]
     private $subject;
 
-    /**
-     * @ORM\Column(
-     *     name="description",
-     *     type="string",
-     *     length=255,
-     *     nullable=false
-     * )
-     * @ConfigField(
-     *     defaultValues={
-     *         "dataaudit"={
-     *             "auditable"=true
-     *         }
-     *     }
-     * )
-     */
+    #[ORM\Column(name: 'description', type: 'string', length: 255, nullable: false)]
+    #[ConfigField(defaultValues: ['dataaudit' => ['auditable' => true]])]
     private $description;
 
-    /**
-     * @ORM\Column(
-     *     name="due_date",
-     *     type="datetime",
-     *     nullable=true
-     * )
-     * @ConfigField(
-     *     defaultValues={
-     *         "dataaudit"={
-     *             "auditable"=true
-     *         }
-     *     }
-     * )
-     */
+    #[ORM\Column(name: 'due_date', type: 'datetime', nullable: true)]
+    #[ConfigField(defaultValues: ['dataaudit' => ['auditable' => true]])]
     private $dueDate;
 
-    /**
-     * @ORM\ManyToOne(
-     *     targetEntity="Acme\Bundle\DemoBundle\Entity\Priority"
-     * )
-     * @ORM\JoinColumn(
-     *     name="priority_id",
-     *     nullable=true,
-     *     onDelete="SET NULL"
-     * )
-     * @ConfigField(
-     *     defaultValues={
-     *         "dataaudit"={
-     *             "auditable"=true
-     *         }
-     *     }
-     * )
-     */
+    #[ORM\ManyToOne(targetEntity: 'Acme\Bundle\DemoBundle\Entity\Priority')]
+    #[ORM\JoinColumn(name: 'priority_id', nullable: true, onDelete: 'SET NULL')]
+    #[ConfigField(defaultValues: ['dataaudit' => ['auditable' => true]])]
     private $priority;
 
     public function getId(): ?int
