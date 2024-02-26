@@ -1,7 +1,7 @@
 .. _backend-security-bundle-role-access-control:
 
 Access Control
-============
+==============
 
 Symfony has builtin security capability to easily filter url patterns by user roles, defining an `access_control` list in the security configuration context. See |Role Based Access Control In Symfony| for details.
 
@@ -12,12 +12,13 @@ As this list can be extended by bundles, it's important to be aware of the final
 Because of this, in oro you cannot put access_control rules in the ``security`` configuration extension, but you must put them in ``oro_security`` context (in the same format).
 
 Example:
-    .. code-block:: yaml
 
-        # config/config.yaml
-        oro_security:
-            access_control:
-                - { path: ^%web_backend_prefix%/contact$, roles: ANY_ROLE }
+.. code-block:: yaml
+
+    # config/config.yaml
+    oro_security:
+        access_control:
+            - { path: ^%web_backend_prefix%/contact$, roles: ANY_ROLE }
 
 By default, the final rule list is sorted in the following order:
 
@@ -30,9 +31,10 @@ By default, the final rule list is sorted in the following order:
             access_control:
                 - { path: ^%web_backend_prefix%/contact$, roles: security_yml_ROLE }
 
-* 2. list merged from vendor bundles in bundle loading order
+* 2. List merged from vendor bundles in bundle loading order
 
     .. code-block:: yaml
+
         # AclBundle/Resources/config/app.yml (5th. loaded bundle in kernel)
         oro_security:
             access_control:
@@ -43,7 +45,7 @@ By default, the final rule list is sorted in the following order:
             access_control:
                 - { path: ^%web_backend_prefix%/contact$, roles: activity_contact_bundle_ROLE }
 
-* 3. list merged from src folder
+* 3. List merged from src folder
 
     .. code-block:: yaml
 
@@ -59,9 +61,13 @@ By default, if there is no value set for a rule, it will default to 0, so if you
 In the example above, the final list will look like the following.
 
     .. code-block:: yaml
+
         - { path: ^%web_backend_prefix%/contact$, roles: src_folder_ROLE }
         - { path: ^%web_backend_prefix%/contact$, roles: security_yml_ROLE }
         - { path: ^%web_backend_prefix%/contact$, roles: acl_bundle_ROLE }
         - { path: ^%web_backend_prefix%/contact$, roles: activity_contact_bundle_ROLE }
 
 Request coming for URL ``^%web_backend_prefix%/contact`` will be checked for role ``src_folder_ROLE``, because it was moved up for it's priority of 20.
+
+.. include:: /include/include-links-dev.rst
+    :start-after: begin

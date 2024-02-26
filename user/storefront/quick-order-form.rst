@@ -23,7 +23,7 @@ Input Order Details Manually
 
 2. You can also search the product by name, in which case, you need to select it from the suggestions list when the product appears there.
 
-.. image:: /user/img/storefront/orders/QuickOrderFormSKU.pn
+.. image:: /user/img/storefront/orders/QuickOrderFormSKU.png
    :alt: Selecting a product from the suggestion dropdown list as you start typing a product name
 
 3. Click **+Add More Rows** to provide details for more than five items.

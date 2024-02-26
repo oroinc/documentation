@@ -50,6 +50,9 @@ a:focus {
     text-decoration: none;
     color: #243f90;
 }
+.text-center{
+    text-align: center;
+}
 .rst-content .toc-backref {
     color: #252525;
     text-decoration: none;
