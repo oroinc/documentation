@@ -17,6 +17,10 @@ Attributes Supported in Shipping and Payment Rule Expressions
 Attributes
 ^^^^^^^^^^
 
+**Shipping**
+
+* shippingMethod *string*
+
 **Financial**
 
 * paymentMethod *string*
