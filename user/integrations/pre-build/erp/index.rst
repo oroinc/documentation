@@ -12,6 +12,8 @@ Below is a list of ERP integrations Oro applications support:
 * :ref:`Oracle JD Edwards ERP <integrations-erp-oracle-jd-edwards>`
 * :ref:`Eclipse <integrations-erp-eclipse>`
 
+.. note::
+    We understand that there are no one-size-fits-all solutions in the world of B2B e-commerce. While we endeavor to provide a wide array of ready-to-use turnkey integration solutions, the complexity and unique dynamics of certain integrations and the distinctiveness of your environment and business goals may require a tailored approach and customization. Please |get in touch with us| to explore the integration options we offer and receive a quote.
 
 .. toctree::
    :hidden:
@@ -20,4 +22,8 @@ Below is a list of ERP integrations Oro applications support:
    Epicor Prophet <epicor>
    Oracle JD Edwards <jd-edwards>
    Eclipse <eclipse>
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin
+
 
