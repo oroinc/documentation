@@ -19,7 +19,7 @@ Application Setup and Configuration
                     <div class="icon">
                         <img src="../../_static/images/icon-demo.png" width="35px">
                     </div>
-                    <div class="text-center;">
+                    <div class="text-center">
                         <h2>Demo Environment </h2>
                     </div>
                         <p>Follow the steps in the topics below to set up a demo environment with the help of a service of your choice.</p>
@@ -36,7 +36,7 @@ Application Setup and Configuration
                     <div class="icon">
                         <img src="../../_static/images/web.svg" width="90px">
                     </div>
-                    <div class="text-center;">
+                    <div class="text-center">
                          <h2>Dev Environment</h2>
                     </div>
                         <p>Ensure you meet server and client-side recommendations and learn how to set up the environment.</p>
@@ -52,7 +52,7 @@ Application Setup and Configuration
                     <div class="icon">
                         <img src="../../_static/images/icon-cloud.png" width="35px">
                     </div>
-                    <div class="text-center;">
+                    <div class="text-center">
                          <h2>Cloud Environment</h2>
                     </div>
                         <p>Learn how to run Oro applications in the Google Cloud Platform infrastructure and its services.</p>
@@ -69,7 +69,7 @@ Application Setup and Configuration
                     <div class="icon">
                          <img src="../../_static/images/upgrade.png" width="40px">
                     </div>
-                    <div class="text-center;">
+                    <div class="text-center">
                         <h2>Deploy & Upgrade</h2>
                     </div>
                         <p>Configure development and production environments, install and upgrade them to a new version.</p>
@@ -82,7 +82,7 @@ Application Setup and Configuration
                     <div class="icon">
                         <img src="../../_static/images/interface.svg" width="75px">
                     </div>
-                    <div class="text-center;">
+                    <div class="text-center">
                         <h2>Launch</h2>
                     </div>
                         <p>When development is complete, check out recommendations for all stages of the development.</p>
@@ -98,7 +98,7 @@ Application Setup and Configuration
                     <div class="icon">
                         <img src="../../_static/images/business-and-finance.svg" width="80px">
                     </div>
-                    <div class="text-center;">
+                    <div class="text-center">
                          <h2>Learn More</h2>
                     </div>
                         <p>Check out other articles on working with, configuring, and installing the Oro applications:</p>
