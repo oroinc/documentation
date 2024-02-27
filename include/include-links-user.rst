@@ -925,6 +925,10 @@ Links (User)
 
    <a href="https://oroinc.com/contact-us/" target="_blank">contact our support team</a>
 
+.. |get in touch with us|  raw:: html
+
+   <a href="https://oroinc.com/contact-us/" target="_blank">get in touch with us</a>
+
 .. |extensions store|  raw:: html
 
    <a href="https://extensions.oroinc.com/" target="_blank">extensions store</a>

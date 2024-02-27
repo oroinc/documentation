@@ -45,6 +45,8 @@ During the integration between OroCommerce and SAP, various types of data are ex
 
 * **Orders and Statuses:** OroCommerce receives order data and order statuses from SAP, allowing for a real-time view of order progress and providing customers with timely updates on their orders.
 
+.. note:: The integration features and data exchanged may vary depending on your personalized integration solution. For more information or to get a quote, please |contact our support team|.
+
 Integration with OroCommerce API
 --------------------------------
 

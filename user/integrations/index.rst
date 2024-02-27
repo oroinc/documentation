@@ -10,7 +10,7 @@ At Oro, we understand that every business is unique, and that is why we offer a 
 
 Oro offers a comprehensive integration framework that encompasses two distinct types: pre-built integrations and custom integrations.
 
-Pre-built integrations provide a turnkey solution to seamlessly connect with services within the commerce ecosystem, providing out-of-the-box connectivity to popular platforms, such as payment gateways, shipping providers, CRM systems, and more. These integrations come pre-configured, enabling quick and effortless setup, without the complexities of custom development.
+Pre-built integrations provide a turnkey solution to seamlessly connect with services within the commerce ecosystem, providing easy connectivity to popular platforms, such as payment gateways, shipping providers, CRM systems, and more. Most of these integrations come pre-configured, enabling quick and effortless setup, without the complexities of custom development.
 
 On the other hand, Oro also empowers users to create custom integrations tailored to their specific needs. Custom integrations can be built to integrate with any required system, allowing businesses to connect Oro with their unique set of applications, databases, or external services, ensuring a highly adaptable and scalable integration environment.
 
