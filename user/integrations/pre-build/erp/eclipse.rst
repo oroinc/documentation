@@ -33,7 +33,7 @@ Depending on your business needs and customization requirements, OroCommerce and
 
    "Product Prices","Eclipse ERP provides the OroCommerce system with customer-specific product price information, ensuring that the displayed prices in the CRM application align perfectly with those in the Eclipse ERP system."
    "Inventory quantity","OroCommerce receives real-time product inventory updates from Eclipse ERP, facilitating precise stock management and preventing issues like stockouts or overstock situations."
-   "Order Information","Eclipse calculates the total order amount based on product line item price, product line item quantity, unit of measure, shipping and billing addresses provided by a customer user.
+   "Order Information","Eclipse calculates the total order amount based on product line item price, product line item quantity, unit of measure, shipping and billing addresses provided by a customer user."
    "Customer Part Number","A unique customer user identifier associated with a product within the Oro application. This identifier allows customers to have a personalized reference to products in addition to the standard product information."
 
 Data Security

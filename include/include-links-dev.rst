@@ -6187,4 +6187,15 @@ Links (Dev)
 
     <a href="https://console.cloud.google.com/marketplace/product/oro-inc-public/orodevbox" target="_blank">Oro Devbox</a>
 
+.. |Symfony ACL-based security model| raw:: html
+
+    <a href="https://github.com/symfony/acl-bundle/blob/main/src/Resources/doc/index.rst" target="_blank">Symfony ACL-based security model</a>
+
+.. |NelmioSecurityBundle| raw:: html
+
+   <a href="https://github.com/nelmio/NelmioSecurityBundle" target="_blank">NelmioSecurityBundle</a>
+
+.. |Permissions-Policy| raw:: html
+
+   <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy" target="_blank">Permissions-Policy</a>
 

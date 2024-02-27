@@ -13,9 +13,7 @@ Access Control Lists
 
 Access Control Lists are an essential part of the |Symfony Security Components|. The OroSecurityBundle leverages them to fulfill the requirements of companies in the business context.
 
-.. hint:: You can find detailed information about Symfony ACL-based security model in the Symfony documentation:
-
-           * |https://symfony.com/doc/5.4/security/acl.html|
+.. hint:: You can find detailed information about |Symfony ACL-based security model| in the Symfony documentation.
 
 Access Levels
 ~~~~~~~~~~~~~
