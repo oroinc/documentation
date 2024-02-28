@@ -6376,6 +6376,13 @@ Links (Dev)
 
     <a href="https://console.cloud.google.com/marketplace/product/oro-inc-public/orodevbox" target="_blank">Oro Devbox</a>
 
+.. |ExtendEntityTrait| raw:: html
+
+    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Entity/ExtendEntityTrait.php" target="_blank">ExtendEntityTrait</a>
+
+.. |AbstractAssociationEntityFieldExtension| raw:: html
+
+    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/EntityExtend/AbstractAssociationEntityFieldExtension.php" target="_blank">AbstractAssociationEntityFieldExtension</a>
 
 .. |Symfony ACL-based security model| raw:: html
 
