@@ -223,19 +223,15 @@ For example, if you want to prohibit creating comments for an entity, set the **
     namespace Acme\Bundle\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
 
-    /**
-     * @ORM\Entity
-     * @ORM\Table(name="acme_my_entity")
-     * @Config(
-     *      defaultValues={
-     *          "activity"={
-     *              "immutable"=true
-     *          }
-     *      }
-     * )
-     */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'acme_my_entity')]
+    #[Config(
+        defaultValues: [
+            'activity' => ['immutable' => true]
+        ]
+    )]
     class MyEntity
     {
     }

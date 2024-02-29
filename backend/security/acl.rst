@@ -138,14 +138,14 @@ Remember that once the entity is created, you can no longer change its ownership
 Configuring Permissions for Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To be able to protect access to your entities, you first have to configure which permissions can be granted to a user to them. Use the ``security`` scope in the ``defaultValues`` section of the ``@Config`` annotation:
+To be able to protect access to your entities, you first have to configure which permissions can be granted to a user to them. Use the ``security`` scope in the ``defaultValues`` section of the ``#[Config]`` attribute:
 
-.. oro_integrity_check:: fb8474e8e60746445c47ecffa50c805c058e1d7f
+.. oro_integrity_check:: fe693de67967f5e5dcbef9df036a882bb6b0654e
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
         :language: php
-        :lines: 24-25, 36-41, 45-46
+        :lines: 20-21, 30, 31-33
 
 .. note:: After changing ACL in the Config annotation, run the `oro:entity-config:update` command in the console to apply changes.
 
@@ -162,15 +162,13 @@ By default (or when using the special ``ALL`` value for the ``permissions`` prop
 
 .. code-block:: php-annotations
 
-    /**
-     * ...
-     *     "security"={
-     *       "type"="ACL",
-     *       "permissions"="VIEW;EDIT",
-     *       "group_name"="DemoGroup"
-     *     }
-     * ...
-     */
+        ...
+            'security' => [
+                'type' => 'ACL',
+                'permissions' => 'VIEW;EDIT',
+                'group_name' => 'DemoGroup',
+            ]
+        ...
 
 Once an entity is marked as ACL-protected, you need to specify its ownership type. It is done with the help of the ``ownership`` scope in the ``defaultValues`` section.
 
@@ -178,44 +176,44 @@ In this config, you should specify the ownership type that will be used for the 
 
 For example, the config will be the following for the USER owner type:
 
-.. oro_integrity_check:: 6d0716a66ff510f2803640d56c0b6fe84320a637
+.. oro_integrity_check:: 162f32ed7d60b10d99259761b0638597d4881adf
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
         :language: php
-        :lines: 24-32, 45-46
+        :lines: 20-28, 32-33
 
 For the business unit owner type:
 
 .. code-block:: php-annotations
 
-    /**
-     * @Config(
-     *   defaultValues={
-     *     ...
-     *     "ownership"={
-     *       "owner_type"="BUSINESS_UNIT",
-     *       "owner_field_name"="owner",
-     *       "owner_column_name"="owner_id",
-     *       "organization_field_name"="organization",
-     *       "organization_column_name"="organization_id"
-     *   }
-     * )
+    #[Config(
+        defaultValues: [
+            ...
+            'ownership' => [
+                'owner_type' => 'BUSINESS_UNIT',
+                'owner_field_name' => 'owner',
+                'owner_column_name' => 'owner_id',
+                'organization_field_name' => 'organization',
+                'organization_column_name' => 'organization_id'
+            ]
+        ]
+    )]
 
 For an Organization owner type, you can specify only the ``owner_field_name`` and ``owner_column_name``:
 
 .. code-block:: php-annotations
 
-    /**
-     * @Config(
-     *   defaultValues={
-     *     ...
-     *     "ownership"={
-     *       "owner_type"="ORGANIZATION",
-     *       "owner_field_name"="owner",
-     *       "owner_column_name"="owner_id"
-     *   }
-     * )
+    #[Config(
+        defaultValues: [
+            ...
+            'ownership' => [
+                'owner_type' => 'ORGANIZATION',
+                'owner_field_name' => 'owner',
+                'owner_column_name' => 'owner_id'
+            ]
+        ]
+    )]
 
 .. important:: For the User and Business Unit ownership types, organization fields are **mandatory**.
 
@@ -231,36 +229,36 @@ Restricting Access to Controller Methods
 
 Suppose you have configured an entity to be protectable via ACLs. You have granted some of its objects to a set of users. Now you can control who can enter specific resources through the controller method. Restricting access can be done in two different ways:
 
-#. Use the ``@Acl`` annotation on a controller method, providing the entity class name and the permission to check for:
+#. Use the ``#[Acl]`` attribute on a controller method, providing the entity class name and the permission to check for:
 
-.. oro_integrity_check:: 7f774b6fa27aa54fa168f5bf99b0a124ed1830f0
+.. oro_integrity_check:: 289ba9e63a2e20b189700991e20a2dbf67f64cd0
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-31, 101
+        :lines: 1-29, 92
 
-#. When you need to perform a particular check repeatedly, write ``@Acl`` repeatedly. This, however, is tedious, especially when your requirements change and you have to change a lot of ACLs.
+#. When you need to perform a particular check repeatedly, write ``#[Acl]`` repeatedly. This, however, is tedious, especially when your requirements change and you have to change a lot of ACLs.
 
    The ACL configuration from the example above looks like this:
 
-.. oro_integrity_check:: 0dbbb1351e3031ef6794ab99daeef705351547f2
+.. oro_integrity_check:: a90d207ee6b06730683ccba4c994d2daa7f1c98c
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/acls.yml
         :caption: src/Acme/Bundle/DemoBundle/config/oro/acls.yml
         :language: yaml
         :lines: 1-5
 
-  Annotation @AclAncestor enables you to reuse ACL resources defined with the ACL annotation or described in the acls.yml file. The name of the ACL resource is used as the parameter of this annotation:
+  Attribute #[AclAncestor] enables you to reuse ACL resources defined with the ACL attribute or described in the acls.yml file. The name of the ACL resource is used as the parameter of this attribute:
 
-.. oro_integrity_check:: 4c7b1f9014fb80cdf7ddc6af988c478970a5f4f4
+.. oro_integrity_check:: 3edd40e1934c7c592eb31b7e296f0010606b382b
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-22, 50-67, 101
+        :lines: 1-22, 45-61, 92
 
-  Sometimes you want to protect a controller method from code you do not control. Therefore, you cannot add the ``@AclAncestor`` annotation to it. Use the bindings key in the YAML configuration of your ACL to define which method(s) should be protected:
+  Sometimes you want to protect a controller method from code you do not control. Therefore, you cannot add the ``#[AclAncestor]`` attribute to it. Use the bindings key in the YAML configuration of your ACL to define which method(s) should be protected:
 
 .. oro_integrity_check:: 2851bb1508ab6f4f85833d9387df75d4da10c6bc
 
@@ -301,12 +299,12 @@ Protecting Custom DQL Queries
 
 When building custom DQL queries, reduce the result set being returned to the set of domain objects to which the user is granted access. To achieve this, use the ACL helper provided by the OroSecurityBundle:
 
-.. oro_integrity_check:: 9271edfa10d820ab24244b3a54b55e4d312626cc
+.. oro_integrity_check:: 053cf9d151fbfc634d2f3cd95daff684d9284a15
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-22, 69-92, 101
+        :lines: 1-22, 63-83, 92
 
 
 In this example, a query is built that selects all products from the database that cost more than ``19.99``. Then, the query builder is passed to the ``apply()`` method of the ``oro_security.acl_helper`` service. This service, an instance of the ``Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper`` class modifies the query only to the return entities to which the user has access.
@@ -318,12 +316,12 @@ Sometimes it is impossible to do an ACL check in the controller using annotation
 
 In this case, you can use the ``isGranted`` function:
 
-.. oro_integrity_check:: 7d5e1f8e3b984fd99cb137c63c34b5b1f397b0e7
+.. oro_integrity_check:: af42382c89659c8df432e62b59a589436ff603f9
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 1-22, 49-64, 101
+        :lines: 1-22, 45-61, 92
 
 If you need to carry out an ACL check on an object not in the controller, use the ``isGranted`` method of the `security.authorization_checker` service.
 
@@ -388,12 +386,12 @@ Restricting Access to Non-Entity Resources
 
 Sometimes, you only want to allow or deny access to a specific part of your application without protecting an entity. To achieve this, use a particular ``action`` type for an ACL:
 
-.. oro_integrity_check:: b82716928f5c34e750dd8d4f72d504bee3f42eb4
+.. oro_integrity_check:: b1e151643b09b3e4ad44140a6c3a37af8362b1b5
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 69-92
+        :lines: 63-83
 
 .. oro_integrity_check:: 396975d9c16edb0077204098f734423658f5ea0c
 
@@ -407,12 +405,12 @@ Manual Access Check on an Object Field
 
 The developer can check access to the given entity field by passing the instance `FieldVote` class to the `isGranted` method of the |Authorization Checker|:
 
-.. oro_integrity_check:: 4be27a5276684111e8b742407a6fd637d2ed27de
+.. oro_integrity_check:: 0c7bc2a11bf80cc0cd62ca4bf0b27c9dfbd1905b
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 49-67
+        :lines: 45-61
 
 
 Check ACL for Search Queries

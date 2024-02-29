@@ -137,11 +137,11 @@ NavigationBundle helps to manage page titles for all routes and supports titles 
         route_name_2: "Edit %parameter% record"
         route_name_3: "Static title"
 
-The title can be defined with annotation together with route annotation:
+The title can be defined with attribute together with route attribute:
 
 .. code-block:: none
 
-   @TitleTemplate("Route title with %parameter%")
+   #[TitleTemplate('Route title with %parameter%')]
 
 
 Render Menus

@@ -30,8 +30,8 @@ Entity Configuration
             demo_scope:
                 # ...
 
-    This scope is later referred to with the ``defaultValues`` option of the ``@Config`` and
-    ``@ConfigField`` annotations.
+    This scope is later referred to with the ``defaultValues`` option of the ``#[Config]`` and
+    ``#[ConfigField]`` attributes.
 
 Example of 'Entity' Scope Configuration
 ---------------------------------------
@@ -106,8 +106,8 @@ Example of 'Entity' Scope Configuration
 
 **type**: ``map``
 
-Options defined under the ``entity`` key can be applied on the class level using the ``@Config``
-annotation. Refer to the :ref:`field option <reference-entity-config-field-items>` to define config
+Options defined under the ``entity`` key can be applied on the class level using the ``#[Config]``
+attribute. Refer to the :ref:`field option <reference-entity-config-field-items>` to define config
 options that can be applied to individual class properties.
 
 ``form``

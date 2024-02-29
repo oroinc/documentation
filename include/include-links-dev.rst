@@ -1209,13 +1209,13 @@ Links (Dev)
 
    <a href="https://symfony.com/doc/6.4/security/acl.html" target="_blank">Access Control Lists</a>
 
-.. |@Acl| raw:: html
+.. |#[Acl]| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Annotation/Acl.php" target="_blank">@Acl</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Annotation/Acl.php" target="_blank">#[Acl]</a>
 
-.. |@AclAncestor| raw:: html
+.. |#[AclAncestor]| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Annotation/AclAncestor.php" target="_blank">@AclAncestor</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SecurityBundle/Annotation/AclAncestor.php" target="_blank">#[AclAncestor]</a>
 
 .. |Oro Extensions Store Commerce| raw:: html
 
@@ -5111,9 +5111,9 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Migration/OroOptions.php" target="_blank">OroOptions</a>
 
-.. |@ConfigField| raw:: html
+.. |#[ConfigField]| raw:: html
 
-   <a href="https://doc.oroinc.com/backend/configuration/annotation/config-field" target="_blank">@ConfigField</a>
+   <a href="https://doc.oroinc.com/backend/configuration/annotation/config-field" target="_blank">#[ConfigField]</a>
 
 
 .. |AssociationManager| raw:: html

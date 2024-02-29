@@ -19,12 +19,12 @@ In PHP code, access to the field is provided by the `isGranted` method of the `s
 
 The second parameter of this method should be an instance of |FieldVote|:
 
-.. oro_integrity_check:: 4be27a5276684111e8b742407a6fd637d2ed27de
+.. oro_integrity_check:: 0c7bc2a11bf80cc0cd62ca4bf0b27c9dfbd1905b
 
     .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
         :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
         :language: php
-        :lines: 49-67
+        :lines: 45-61
 
 As a result, the $isGranted variable contains the *true* value if access is granted and the *false* value if it does not.
 
@@ -68,12 +68,12 @@ You can achieve this with the Config annotation if you have access to both the e
 
 The following example is an illustration of the entity configuration:
 
-.. oro_integrity_check:: 33f10f51cdffe6870410ad29743879314d30c42c
+.. oro_integrity_check:: 40c6278664e7bc22c3c94c76a2624e7c5e7d0b9b
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
         :language: php
-        :lines: 1-52, 135
+        :lines: 1-38, 93
 
 If you have no access to the entity to modify the Config annotation, set the `field_acl_supported` parameter with the migration:
 
@@ -105,12 +105,12 @@ The permissions should be listed as the string with the `;` delimiter.
 
 For example:
 
-.. oro_integrity_check:: 7d297450d614c9509526c1fbb29181ee5d76928a
+.. oro_integrity_check:: 209af7c4b4dd1f646fbb784d91b657f27b6d5438
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
         :language: php
-        :lines: 1-52, 84-98, 135
+        :lines: 1-38, 54-56, 93
 
 
 .. include:: /include/include-links-dev.rst

@@ -14,14 +14,14 @@ Using ACLs you can granularly grant access to your entities. Doing so requires t
 Activating ACL Checks on your Entities
 --------------------------------------
 
-To have your entity available in the admin UI to be able to assign permissions to your users, you have to enable ACLs for these entities using the ``@Config`` annotation:
+To have your entity available in the admin UI to be able to assign permissions to your users, you have to enable ACLs for these entities using the ``#[Config]`` attribute:
 
-.. oro_integrity_check:: 110c938986114723489141455b7582911694d0a2
+.. oro_integrity_check:: 3720c1dd7b67c0568edbd4ad8e6229b593e7effc
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Favorite.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Favorite.php
        :language: php
-       :lines: 3-5, 8, 14-17, 21-25, 36-41, 45-47
+       :lines: 3-5, 8, 14-17, 19-33
 
 After you have done this and have cleared the cache, you can toggle all kinds of permission checks (``CREATE``, ``EDIT``, ``DELETE``, ``VIEW``, and ``ASSIGN``) in the user role management interface.
 
@@ -38,16 +38,16 @@ You have two options to define your custom access control lists:
 
 .. _cookbook-entity-acl-controller:
 
-#. In your controller class, you can use the ``@Acl`` annotation:
+#. In your controller class, you can use the ``#[Acl]`` attribute:
 
-.. oro_integrity_check:: 4c6fdb6f2ec393977193350656f13338538be56a
+.. oro_integrity_check:: c114191b4c9b1bf34b370dfdf661502ae48fb788
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
        :language: php
-       :lines: 3-6,11, 15-22, 33-47, 101
+       :lines: 3-5, 7, 9, 11, 13, 16-22, 31-43, 92
 
-   Using the ``@Acl`` annotation does not only create new access control lists to which you can refer in other parts of your code, it also triggers the access decision manager when your actions are accessed by users and thus protect them from being accessed without the needed permissions.
+   Using the ``#[Acl]`` attribute does not only create new access control lists to which you can refer in other parts of your code, it also triggers the access decision manager when your actions are accessed by users and thus protect them from being accessed without the needed permissions.
 
 #. If you do not want to protect any controller methods or if you prefer to keep the definition of your ACLs separated from the application code, you can define them using some YAML config in a file named ``acls.yml``:
 
@@ -62,12 +62,12 @@ You have two options to define your custom access control lists:
 
     You can also create access control lists that are only used to protect specific actions unrelated to an entity. To do that, set the type of the ACL to ``action`` instead of ``entity``:
 
-    .. oro_integrity_check:: e6049b4194f0256d9fd0c16719f8b5e2e5a9a2a7
+    .. oro_integrity_check:: f09516f5ac3a7b7a4ef50b054f3fb27ec3979a41
 
         .. literalinclude:: /code_examples/commerce/demo/Controller/FavoriteController.php
             :caption: src/Acme/Bundle/DemoBundle/Controller/FavoriteController.php
             :language: php
-            :lines: 3-6, 8, 11, 15-22, 69-92, 101
+            :lines: 3-5, 7, 9, 11, 13, 16-22, 63-83, 92
 
     When configuring the ACL using the YAML config format, you also have to set the controller to use the ``bindings`` option to bind the ACL:
 
@@ -81,8 +81,8 @@ You have two options to define your custom access control lists:
 
     .. seealso::
 
-        All configuration options are explained in full details in the :ref:`@Acl <acl>`,
-        :ref:`@AclAncestor <acl-ancestor>`, and :ref:`ACL YAML format <access-control-lists>`
+        All configuration options are explained in full details in the :ref:`#[Acl] <acl>`,
+        :ref:`#[AclAncestor] <acl-ancestor>`, and :ref:`ACL YAML format <access-control-lists>`
         reference.
 
 .. _coobook-entities-acl-check:
@@ -146,7 +146,7 @@ Use the ``acl_resource_id`` option to hide navigation items from users who are n
 Protecting Controllers Referring to Existing ACLs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can define new ACLs as :ref:`shown above <cookbook-entity-acl-controller>` and protect your controllers with them in a single step using the ``@Acl`` annotation. However, you can also refer to an existing access control list using the ``@AclAncestor`` annotation:
+You can define new ACLs as :ref:`shown above <cookbook-entity-acl-controller>` and protect your controllers with them in a single step using the ``#[Acl]`` attribute. However, you can also refer to an existing access control list using the ``#[AclAncestor]`` attribute:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Controller/TaskController.php
@@ -154,14 +154,12 @@ You can define new ACLs as :ref:`shown above <cookbook-entity-acl-controller>` a
     namespace Acme\Bundle\DemoBundle\Controller;
 
     use Acme\Bundle\DemoBundle\Entity\Task;
-    use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
+    use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
     class TaskController extends AbstractController
     {
-        /**
-         * @AclAncestor("acme_task_view")
-         */
+        #[AclAncestor('acme_task_view')]
         public function viewAction(Task $task)
         {
             // ...

@@ -38,7 +38,7 @@ class SmsController extends AbstractController
         );
     }
 
-    #[Route(path: '/widget/info/{id}', name: 'acme_demo_sms_widget_info', options: ['expose' => true], requirements: ['id' => '\d+'])]
+    #[Route(path: '/widget/info/{id}', name: 'acme_demo_sms_widget_info', requirements: ['id' => '\d+'], options: ['expose' => true])]
     #[Template('@AcmeDemo/Sms/widget/info.html.twig')]
     #[AclAncestor('acme_demo_sms_view')]
     public function infoAction(Request $request, Sms $entity): array

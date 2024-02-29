@@ -10,7 +10,7 @@ Usually, an administrator provides a predefined set of associations between the 
 
 The following example illustrates how to do it:
 
-.. oro_integrity_check:: 15cccf00437467209b02914fb76185b4c1613e58
+.. oro_integrity_check:: a0b5e3bef79390a7f74e5f1fed6c20cf2ddcda51
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_10/AcmeDemoBundle.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_10/AcmeDemoBundle.php
@@ -51,12 +51,12 @@ Set entity annotation to show a widget and its button on specific pages.
 
 The widget can be displayed on the `view` and/or `update` pages. The list of allowed values is available in ``\Oro\Bundle\ActivityBundle\EntityConfig\ActivityScope``, for example:
 
-.. oro_integrity_check:: b3bb14d438cd767b89a604f8fa92f0dd0313f7f1
+.. oro_integrity_check:: 55b3078a602e6105cf7b640cae4255b825ccce92
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Priority.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Priority.php
        :language: php
-       :lines: 15, 27, 32, 58-64, 67-68, 72, 117
+       :lines: 21, 26, 42-45, 48-49, 53, 79
 
 The following screenshot is an example of a widget on a priority update page:
 

@@ -2,13 +2,13 @@
 
 .. _backend-configuration-annotation-config-field:
 
-@ConfigField
-============
+#[ConfigField]
+==============
 
-This annotation is used to configure default values for properties of configurable entity classes.
+This attribute is used to configure default values for properties of configurable entity classes.
 
-Options
--------
+Arguments
+---------
 
 .. _annotation-config-field-default-values:
 
@@ -21,19 +21,15 @@ Configures default values for particular config options on a per property basis:
 
 
     // ...
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
 
     class User
     {
-        /**
-         * @ConfigField(
-         *      defaultValues={
-         *          "dataaudit"={
-         *              "auditable"=true
-         *          }
-         *      }
-         * )
-         */
+        #[ConfigField(
+            defaultValues: [
+                "dataaudit" => ["auditable" => true]
+            ]
+        )]
         private $username;
     }
 

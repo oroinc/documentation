@@ -118,26 +118,22 @@ Below is an example of an entity that must work with ``Gedmo/Translatable`` for 
     use Gedmo\Mapping\Annotation as Gedmo;
     use Gedmo\Translatable\Translatable;
 
-    /**
-     * @ORM\Table("acme_demo_country")
-     * @ORM\Entity()
-     * @Gedmo\TranslationEntity(class="Acme\Bundle\DemoBundle\Entity\CountryTranslation")
-     */
+    #[ORM\Entity]
+    #[ORM\Table('acme_demo_country')]
+    #[Gedmo\TranslationEntity(class: 'Acme\Bundle\DemoBundle\Entity\CountryTranslation')]
     class Country implements Translatable
     {
         /**
          * @var string
-         *
-         * @ORM\Column(name="name", type="string", length=255)
-         * @Gedmo\Translatable
          */
+        #[ORM\Column(name: 'name', type: 'string', length: 255)]
+        #[Gedmo\Translatable]
         protected string $name;
 
         /**
          * @var string
-         *
-         * @Gedmo\Locale
          */
+        #[Gedmo\Locale]
         protected string $locale;
 
         /**
@@ -185,17 +181,14 @@ Also, ``Gedmo/Translatable`` requires a dictionary with all translations for the
     use Doctrine\ORM\Mapping as ORM;
     use Gedmo\Translatable\Entity\MappedSuperclass\AbstractTranslation;
 
-    /**
-     * @ORM\Table(name="oro_acme_country_trans")
-     * @ORM\Entity()
-     */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'oro_acme_country_trans')]
     class CountryTranslation extends AbstractTranslation
     {
         /**
          * @var string
-         *
-         * @ORM\Column(type="string", length=255)
          */
+        #[ORM\Column(type: 'string', length: 255)]
         protected $content;
     }
 
@@ -282,31 +275,32 @@ To use ``LocalizedFallbackValue`` for fields in the entity, make it extendable:
     use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait;
     use Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue;
 
-    /**
-     * @ORM\Table(name="acme_demo_some")
-     * @ORM\Entity()
-     */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'acme_demo_some')]
     class Some implements ExtendEntityInterface
     {
         use ExtendEntityTrait;
+
         /**
          * @var Collection|LocalizedFallbackValue[]
-         *
-         * @ORM\ManyToMany(
-         *      targetEntity="Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue",
-         *      cascade={"ALL"},
-         *      orphanRemoval=true
-         * )
-         * @ORM\JoinTable(
-         *      name="acme_demo_some_name",
-         *      joinColumns={
-         *          @ORM\JoinColumn(name="some_id", referencedColumnName="id", onDelete="CASCADE")
-         *      },
-         *      inverseJoinColumns={
-         *          @ORM\JoinColumn(name="localized_value_id", referencedColumnName="id", onDelete="CASCADE", unique=true)
-         *      }
-         * )
          */
+        #[ORM\ManyToMany(
+            targetEntity: 'Oro\Bundle\LocaleBundle\Entity\LocalizedFallbackValue',
+            cascade: ['ALL'],
+            orphanRemoval: true
+        )]
+        #[ORM\JoinTable(name: 'acme_demo_some_name')]
+        #[ORM\JoinColumn(
+            name: 'some_id',
+            referencedColumnName: 'id',
+            onDelete: 'CASCADE'
+        )]
+        #[ORM\inverseJoinColumn(
+            name: 'localized_value_id',
+            referencedColumnName: 'id',
+            unique: true,
+            onDelete: 'CASCADE'
+        )]
         protected $names;
     }
 

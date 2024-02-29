@@ -11,23 +11,19 @@ Developers can also configure tags for every entity in the entity configuration 
 Entity Configuration
 --------------------
 
-Tags can only be enabled for Configurable entities. To enable tags for an entity, use the `@Config` annotation, e.g.:
+Tags can only be enabled for Configurable entities. To enable tags for an entity, use the `#[Config]` attribute, e.g.:
 
 .. code-block:: php
 
-    /**
     ...
-     * @Config(
-     *      defaultValues={
-     *          ...
-     *          "tag"={
-     *              "enabled"=true
-     *          }
-     *          ...
-     *      }
-     * )
+    #[Config(
+        defaultValues: [
+            ...
+            'tag' => ['enabled' => true]
+            ...
+        ]
+    )]
     ...
-     */
 
 Tags can also be enabled/disabled for an entity in the UI **System > Entities > Entity Management** (attribute `Tagging`).
 
@@ -81,24 +77,24 @@ Tags in Views
 
 By default Tags field is automatically added as the last element in the last sub-block of the first block in entity views.
 
-To disable this behavior set `enableDefaultRendering` option to _false_ in the entity `@Config` annotation
+To disable this behavior set `enableDefaultRendering` option to _false_ in the entity `#[Config]` attribute
 
 .. code-block:: php
 
-    /**
-    ...
-     * @Config(
-     *      defaultValues={
-     *          ...
-     *          "tag"={
-     *              "enabled"=true,
-     *              "enableDefaultRendering"=false
-     *          }
-     *          ...
-     *      }
-     * )
     ...
      */
+    ...
+    #[Config(
+        defaultValues: [
+            ...
+            'tag' => [
+                'enabled' => true,
+                'enableDefaultRendering' => false
+            ]
+            ...
+        ]
+    )]
+    ...
 
 
 Then you are able to manually render tags somewhere else in the entity view template.

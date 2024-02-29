@@ -14,16 +14,16 @@ Here is an example:
    .. literalinclude:: /code_examples/commerce/demo/Entity/Sms.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Sms.php
        :language: php
-       :lines: 6-7, 12-13, 16, 62, 65-67, 70-72, 174
+       :lines: 6-7, 12-13, 16, 47, 50-52, 55-57, 115
 
 Use this class as the superclass for your entity. To include the entity in the `activity` group, use the ORO entity configuration, for example:
 
-.. oro_integrity_check:: a6d1de57841fb7beccf07fec1809ea50b68dbdfe
+.. oro_integrity_check:: 91efeee6669cc3888532f27da461c91762424547
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Sms.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Sms.php
        :language: php
-       :lines: 17, 26, 31, 50-52, 59-62, 65-67, 72, 174
+       :lines: 22, 27, 38, 45-46, 47, 50-52, 57, 115
 
 Your entity is now recognized as the activity entity. To make sure that the activity is displayed correctly, you need to configure its UI.
 
@@ -73,12 +73,12 @@ Keep in mind that:
 - The entity class name can be encoded to avoid routing collisions. That is why you need to use the `oro_entity.routing_helper` service to get the entity by its class name and id.
 - In the following example, the `activity-sms-grid` datagrid is used to render the list of activities. This grid is defined in the *datagrids.yml* file:
 
-.. oro_integrity_check:: c7e63f1c0788808db95801cc16f8e76ab25aeded
+.. oro_integrity_check:: f5cddc2010bf95efd54a63646e095ba55cda2e5b
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
        :language: php
-       :lines: 26-46
+       :lines: 25-39
 
 
 .. oro_integrity_check:: 2010a0bebda816961f23a8676dbd73b7a0303cd8
@@ -98,12 +98,12 @@ Keep in mind that:
 
 Now, you need to bind the controller to your activity entity. Use ORO entity configuration, for example:
 
-.. oro_integrity_check:: 4aff96a272f7593d444945156bd665f5d1828df7
+.. oro_integrity_check:: e807ff993f400108b2d9396f3db268e559de07eb
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Sms.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Sms.php
        :language: php
-       :lines: 17, 26, 31, 50-55, 58-62, 65-67, 72, 174
+       :lines: 22, 27, 38-41, 44-47, 50-52, 57, 115
 
 
 Please note that the example above contains the `route` attribute to specify the controller path and the `acl` attribute to set ACL restrictions.
@@ -143,12 +143,12 @@ Here is an example of TWIG templates:
 
 3. Bind the items declared in *placeholders.yml* to the activity entity using the `action_button_widget` and `action_link_widget` attributes, for example:
 
-.. oro_integrity_check:: 6af4ac9f461765f00fab62bcd43d15db86c8d5cb
+.. oro_integrity_check:: 4df292b91b0f5f7cec6211948b1027c5862330c0
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Sms.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Sms.php
        :language: php
-       :lines: 17, 26, 31, 50-62, 65-67, 72, 174
+       :lines: 22, 27, 38-47, 50-52, 57, 115
 
 The following screenshot is an example of new activity from the view page:
 
@@ -161,14 +161,14 @@ The following screenshot is an example of new activity from the view page:
 Configure Custom Grid for Activity Context Dialog
 -------------------------------------------------
 
-If you want to define a context grid for an entity (e.g., Document) in the activity context dialog, add the `context` option in the entity class `@Config` annotation, for example:
+If you want to define a context grid for an entity (e.g., Document) in the activity context dialog, add the `context` option in the entity class `#[Config]` attribute, for example:
 
-.. oro_integrity_check:: 0b7685b7d3d4bb56be9b5cea238767ca5f4ac5cc
+.. oro_integrity_check:: 2a2ff5e5ea4095e9701c6947f332cf1e710c78a7
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
        :language: php
-       :lines: 17, 26, 36-38, 64-66
+       :lines: 22, 27, 32-35, 48-49
 
 This option is used to recognize the grid for the entity with a higher priority than the `default` option.
 If these options (`context` or `default`) are not defined for an entity, the grid does not appear in the context dialog.
@@ -273,12 +273,12 @@ View an Activity in the Activity list
 
 Create a view action in your controller and a TWIG template.
 
-.. oro_integrity_check:: 06f0e1df5a2934ea33a937531a2501a6aec4857b
+.. oro_integrity_check:: 41fca72a41f4165cf349181619ffa7c5d93e3310
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
        :language: php
-       :lines: 48-87
+       :lines: 41-73
 
 .. oro_integrity_check:: 55962f6c4d5a758a5a71678f08661ddbad4f86fc
 
@@ -292,12 +292,12 @@ Edit an Activity in the Activity List
 
 Define the update action in your controller.
 
-.. oro_integrity_check:: c2dc25bc7d1adfff0dd6cf4740250b9346a82a53
+.. oro_integrity_check:: aff1eb334254910e55130ce2b46346d9a1a6e3b3
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/SmsController.php
        :language: php
-       :lines: 110-129
+       :lines: 90-103
 
 Delete an Activity in the Activity List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -306,12 +306,12 @@ Example of implementing the deletion of an activity from an activity list on a p
 
 Create a controller. Here is an example of the controller:
 
-.. oro_integrity_check:: 18a3280763ef64abd9b68c45806f3c7e93db82a3
+.. oro_integrity_check:: 16a3175fb0b2d6545c28185cd1608463c300c540
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/Api/Rest/SmsController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/Api/Rest/SmsController.php
        :language: php
-       :lines: 3-56
+       :lines: 3-52
 
 Register the created controller.
 

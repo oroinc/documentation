@@ -122,7 +122,7 @@ Resolve Destination Page
 
 **Options:**
 
-- destination / 0 - the route name specified in the `@Config` annotation of an entity
+- destination / 0 - the route name specified in the `#[Config]` attribute of an entity
 - entity / 1 - (optional) property path of the original entity (by default, equals to `entity`)
 - attribute / 2 - (optional) target property path where the action results are saved (by default, equals to `redirectUrl`)
 

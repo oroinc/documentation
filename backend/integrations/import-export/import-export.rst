@@ -413,19 +413,18 @@ field helper to process the fields:
 
 You can configure your fields in the UI under *System* / *Entities* / *Entity Management*.
 Alternatively, you can describe the field configuration in your entity directly
-using ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField``:
+using ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField``:
 
 .. code-block:: php
 
-     /**
-      * @ConfigField(
-      *      defaultValues={
-      *          "importexport"={
-      *              "order"=200,
-      *              "full"=true
-      *          }
-      *      }
-      */
+    #[ConfigField(
+        defaultValues: [
+            'importexport' => [
+                'order' => 200,
+                'full' => true
+            ]
+        ]
+    )]
 
 You can use the following options:
 
@@ -447,7 +446,7 @@ You can use the following options:
 |              | interface, but can only be set using annotations.                 |
 +--------------+-------------------------------------------------------------------+
 
-.. note:: You can check the :ref:`@ConfigField <annotation-config-field-importexport>` section for more information.
+.. note:: You can check the :ref:`#[ConfigField] <annotation-config-field-importexport>` section for more information.
 
 Import One-To-Many Relations
 ----------------------------

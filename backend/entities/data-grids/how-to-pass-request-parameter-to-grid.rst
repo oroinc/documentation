@@ -41,12 +41,12 @@ You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml
 
 The controller receives an entity "priority" and passes it to the view:
 
-.. oro_integrity_check:: 8e1c23d9a626d9401881c79122f108adef7b80cb
+.. oro_integrity_check:: 661e8ddd093d2460f35b400e4a3101bacc252fbf
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/PriorityController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/PriorityController.php
        :language: php
-       :lines: 17, 20-23, 36-38, 45-51, 119
+       :lines: 20-22, 33-34, 36-41, 97
 
 In this example, the entity mapping page adds a grid with the data of the linked entity.
 The view passes the "holder_entity_id" parameter with the value "entity.id" to the grid:

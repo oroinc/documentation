@@ -63,16 +63,16 @@ Example:
 
 .. code-block:: none
 
-    @Config(
+    #[Config(
          ....
-         defaultValues={
+        defaultValues: [
              ...
-             "merge"={
-                 "enable"=true,
-                 "max_entities_count"=5
-             }
-         }
-    )
+            'merge' => [
+                'enable' => true,
+                'max_entities_count' => 5
+            ]
+        ]
+    )]
 
 Fields Level Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -152,10 +152,8 @@ Example:
     {
          ...
 
-        /**
-         * @ORM\Column(type="string", length=255)
-         * @ConfigField(defaultValues={"merge"={"enable"=true}})
-         */
+        #[ORM\Column(type: 'string', length: 255)]
+        #[ConfigField(defaultValues: ['merge' => ['enable' => true]])]
         protected $name;
 
 Mass Action Configuration

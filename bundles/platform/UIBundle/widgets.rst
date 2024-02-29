@@ -40,7 +40,7 @@ Widgets
 -------
 
 Widget is any controller/action or static content rendered inside the widget container.
-@Template annotation supports the ``_widgetContainer`` request variable, based on which an appropriate template is chosen by the following rule:
+#[Template] attribute supports the ``_widgetContainer`` request variable, based on which an appropriate template is chosen by the following rule:
 
 ``<widgetContainer>/<action>.<format>.<templateEngine> (dialog/example.html.twig)``.
 

@@ -11,19 +11,16 @@ This option is used to configure a custom column header. A field label is used b
 .. code-block:: php
 
 
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
 
     /**
      * @var string
-     *
-     * @ConfigField(
-     *      defaultValues={
-     *          "importexport"={
-     *              "header"="Custom field"
-     *          }
-     *      }
-     * )
      */
+    #[ConfigField(
+        defaultValues: [
+            'importexport' => ['header' => 'Customfield']
+        ]
+    )]
     protected $field;
 
 Order
@@ -34,19 +31,16 @@ This option is used to configure a custom column order.
 .. code-block:: php
 
 
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
 
     /**
      * @var string
-     *
-     * @ConfigField(
-     *      defaultValues={
-     *          "importexport"={
-     *              "order"=100
-     *          }
-     *      }
-     * )
      */
+    #[ConfigField(
+        defaultValues: [
+            'importexport' => ['order' => 100]
+        ]
+    )]
     protected $field;
 
 Identity
@@ -57,19 +51,16 @@ The fields with this option are used to identify (search) the entity. It is poss
 .. code-block:: php
 
 
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
 
     /**
      * @var string
-     *
-     * @ConfigField(
-     *      defaultValues={
-     *          "importexport"={
-     *              "identity"=true
-     *          }
-     *      }
-     * )
      */
+    #[ConfigField(
+        defaultValues: [
+            'importexport' => ['identity' => true]
+        ]
+    )]
     protected $field;
 
 Excluded
@@ -80,19 +71,16 @@ The fields with this option cannot be exported.
 .. code-block:: php
 
 
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
 
     /**
      * @var string
-     *
-     * @ConfigField(
-     *      defaultValues={
-     *          "importexport"={
-     *              "excluded"=true
-     *          }
-     *      }
-     * )
      */
+    #[ConfigField(
+        defaultValues: [
+            'importexport' => ['excluded' => true]
+        ]
+    )]
     protected $field;
 
 
@@ -105,19 +93,16 @@ If **full** is set to *false* (the default value), only the fields with an ident
 .. code-block:: php
 
 
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField;
 
     /**
      * @var string
-     *
-     * @ConfigField(
-     *      defaultValues={
-     *          "importexport"={
-     *              "full"=true
-     *          }
-     *      }
-     * )
      */
+    #[ConfigField(
+        defaultValues: [
+            'importexport' => ['full' => true]
+        ]
+    )]
     protected $field;
 
 

@@ -34,17 +34,16 @@ Make Entity Extended
       namespace Acme\Bundle\DemoBundle\Entity;
 
       use Doctrine\ORM\Mapping as ORM;
-      use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+      use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
       use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityInterface;
       use Oro\Bundle\EntityExtendBundle\Entity\ExtendEntityTrait;
 
       /**
        * ORM Entity Document.
-       *
-       * @ORM\Entity()
-       * @ORM\Table(name="acme_demo_document")
-       * @Config()
        */
+      #[ORM\Entity]
+      #[ORM\Table(name: 'acme_demo_document')]
+      #[Config]
       class Document implements ExtendEntityInterface
       {
         use ExtendEntityTrait;
@@ -114,7 +113,7 @@ To add the field, create a migration:
        :language: php
 
 .. note::
-   Please note that the entity that you add a new field to must have the ``@Config`` annotation
+   Please note that the entity that you add a new field to must have the ``#[Config]`` attribute
    and should extend an Extend class.
 
 The important part in this migration (which is different from common Doctrine migrations) is the ``oro_options`` key.
@@ -148,7 +147,7 @@ The ``owner`` attribute can have the following values:
 * ``ExtendScope::OWNER_SYSTEM``--- Nothing is rendered automatically, and the developer must explicitly specify how to show the field in different parts of the system (grids, forms, views, etc.).
 
 .. note::
-   For more default attribute set settings for Extend Entities, see |@ConfigField|.
+   For more default attribute set settings for Extend Entities, see |#[ConfigField]|.
 
 .. _book-entities-extended-entities-add-enum-fields:
 

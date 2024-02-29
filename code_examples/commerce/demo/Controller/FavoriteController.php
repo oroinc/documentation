@@ -31,7 +31,12 @@ class FavoriteController extends AbstractController
     #[Route(path: '/custom', name: 'custom')]
     #[CsrfProtection]
     #[Template('@AcmeDemo/Favorite/index.html.twig')]
-    #[Acl(id: 'acme_demo_favorite_custom', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Favorite', permission: 'VIEW')]
+    #[Acl(
+        id: 'acme_demo_favorite_custom',
+        type: 'entity',
+        class: 'Acme\Bundle\DemoBundle\Entity\Favorite',
+        permission: 'VIEW'
+    )]
     public function customAction(): array
     {
         return ['entity_class' => Favorite::class];

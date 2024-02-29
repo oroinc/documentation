@@ -1,6 +1,6 @@
 .. _backend-configuration-annotation-config:
 
-Annotations
+Attributes
 ===========
 
 .. toctree::

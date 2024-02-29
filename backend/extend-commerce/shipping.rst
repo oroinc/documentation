@@ -47,7 +47,7 @@ Create an Entity to Store the Shipping Method Settings
 
 Define an entity that to store the configuration settings of the shipping method in the database. To do this, create <bundle_root>/Entity/FastShippingSettings.php:
 
-.. oro_integrity_check:: 95a116e546c786562adbf3cb4f86bad0eb262815
+.. oro_integrity_check:: a6addacaae45af316843c96efc7becaa2551d9f8
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Entity/FastShippingSettings.php
        :language: php
@@ -58,11 +58,11 @@ As you can see from the code above, the only necessary parameter defined for the
 .. important::
    When naming DB columns, make sure that the name does not exceed 31 symbols. Pay attention to the ``acme_fast_ship_transport_label`` name in the following extract:
 
-.. oro_integrity_check:: 2e0369cfb93bfabfbccfc9253bb0f08ab12c0e47
+.. oro_integrity_check:: 63d062d2c1f5aa703be722b93631602bd996b5d3
 
    .. literalinclude:: /code_examples/commerce/shipping_method/fast-shipping/Entity/FastShippingSettings.php
        :language: php
-       :lines: 27-35
+       :lines: 21-24
 
 
 Create a User Interface Form for the Shipping Method Integration

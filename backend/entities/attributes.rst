@@ -10,18 +10,18 @@ Enabling Attributes for an Entity
 
 You can enable attributes for any extendable and configurable entity by doing the following:
 
-1. Add @Config annotation to the class with the 'attribute' scope and add key 'has_attributes' set to `true`.
+1. Add #[Config] attribute to the class with the 'attribute' scope and add key 'has_attributes' set to `true`.
 2. Add the **attributeFamily** field with many-to-one relation to ``Oro\Bundle\EntityConfigBundle\Attribute\Entity\AttributeFamily``. Make the field configurable, activate import if necessary, and add migration.
 3. Implement **AttributeFamilyAwareInterface** and accessors for the **attributeFamily** field.
 
 The following example illustrates enabling attributes for the *Document* entity:
 
-.. oro_integrity_check:: 05fc69c929e7d7f85267aed5400a29356e30b0d4
+.. oro_integrity_check:: 9587929fbbaf94d8484efd24a1062fce78ebc24b
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
        :language: php
-       :lines: 17-19, 26, 31, 61-69, 78, 73, 78, 212-244
+       :lines: 17-19, 22, 27, 47-51, 60, 55, 60, 136-158
 
 
 .. oro_integrity_check:: 0886c56aac30782ed1ef4e9df7c3accd2253e3f8

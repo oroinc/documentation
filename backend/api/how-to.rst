@@ -1120,9 +1120,7 @@ Let's use the following schema of entities to illustrate how to use a custom que
 
 .. code-block:: php
 
-    /**
-     * @ORM\OneToMany(targetEntity="AccountContactLink", mappedBy="account")
-     */
+    #[ORM\OneToMany(mappedBy: 'account', targetEntity: 'AccountContactLink')]
     private $contactLinks;
 
 
@@ -1130,9 +1128,7 @@ Let's use the following schema of entities to illustrate how to use a custom que
 
 .. code-block:: php
 
-    /**
-     * @ORM\OneToMany(targetEntity="AccountContactLink", mappedBy="contact")
-     */
+    #[ORM\OneToMany(mappedBy: 'contact', targetEntity: 'AccountContactLink')]
     private $accountLinks;
 
 
@@ -1140,19 +1136,13 @@ Let's use the following schema of entities to illustrate how to use a custom que
 
 .. code-block:: php
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Account", inversedBy="contactLinks")
-     */
+    #[ORM\ManyToOne(targetEntity: 'Account', inversedBy: 'contactLinks')]
     private $account;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Contact", inversedBy="accountLinks")
-     */
+    #[ORM\ManyToOne(targetEntity: 'Contact', inversedBy: 'accountLinks')]
     private $contact;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=false, options={"default"=true})
-     */
+    #[ORM\Column(type: 'boolean', nullable: false, options: ['default' => true])]
     private $enabled = true;
 
 This schema represents a many-to-many association between the Account and Contact entities but with an additional attribute for each associated record (e.g., attribute ``enabled`` in the example above).

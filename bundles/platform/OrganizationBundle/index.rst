@@ -18,25 +18,26 @@ Entity Ownership
 
 Each entity can have one of 3 ownership types defined: User, Business Unit, or Organization.
 
-Ownership type is stored in entity config and can be defined through entity class annotation:
+Ownership type is stored in entity config and can be defined through entity class attribute:
 
 .. code-block:: php
 
-    /**
-        ...
-     * @Configurable(
-     *  defaultValues={
-     *      "entity"={"label"="User", "plural_label"="Users"},
-     *      "ownership"={
-     *          "owner_type"="BUSINESS_UNIT",
-     *          "owner_field_name"="owner",
-     *          "owner_column_name"="business_unit_owner_id"
-     *      }
-     *  }
-     * )
-        ...
-     */
-     class User
+    ...
+    #[Config(
+        defaultValues: [
+            'entity' => [
+                'label' => 'User',
+                'plural_label' => 'Users'
+            ],
+            'ownership' => [
+                'owner_type' => 'BUSINESS_UNIT',
+                'owner_field_name' => 'owner',
+                'owner_column_name' => 'business_unit_owner_id'
+            ]
+        ]
+    )]
+    ...
+    class User
 
 Available Ownership Types
 -------------------------

@@ -167,11 +167,11 @@ Titles
         route_name_3: "Static title"
 
 
-The title can be defined with an annotation together with route annotation:
+The title can be defined with an attribute together with route attribute:
 
 .. code-block:: none
 
-    @TitleTemplate("Route title with %parameter%")
+    #[TitleTemplate('Route title with %parameter%')]
 
 
 .. include:: /include/include-links-dev.rst

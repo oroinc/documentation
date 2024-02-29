@@ -1,32 +1,30 @@
 .. _acl:
 
-@Acl
-====
+#[Acl]
+======
 
-The ``@Acl`` annotation is used to create a new access control list and to protect the controller
-that is annotation with this ACL accordingly:
+The ``#[Acl]`` attribute is used to create a new access control list and to protect the controller
+that is attribute with this ACL accordingly:
 
 .. code-block:: php
 
 
     // ...
-    use Oro\Bundle\SecurityBundle\Annotation\Acl;
+    use Oro\Bundle\SecurityBundle\Attribute\Acl;
 
-    /**
-     * @Acl(
-     *     id="user_user_view",
-     *     type="entity",
-     *     class="Oro\Bundle\UserBundle\Entity\User",
-     *     permission="VIEW"
-     * )
-     */
+    #[Acl(
+        id="user_user_view",
+        type="entity",
+        class="Oro\Bundle\UserBundle\Entity\User",
+        permission="VIEW"
+    )]
     public function demoAction()
     {
         // ...
     }
 
-Options
--------
+Arguments
+---------
 
 ``class``
 ~~~~~~~~~
@@ -37,7 +35,7 @@ When the `type`_ option is set to ``entity``, the fully qualified class name con
 ``class`` option is used to decide whether or not the ACL has to be evaluated when checking if a
 user has access to a certain class. If the given action is annotated with the |ParamConverter|
 parameter, and the class of this parameter is the same as the class parameter from the ACL
-annotation, the check will be done on the object level (check if the user has access to the given
+attribute, the check will be done on the object level (check if the user has access to the given
 object).
 
 ``group``
@@ -50,7 +48,7 @@ ACLs can optionally be grouped. A group is identified by its name.
 ``id``
 ~~~~~~
 
-A unique identifier that is used, for example, to reference an access control list with the :ref:`@AclAncestor annotation <acl-ancestor>`.
+A unique identifier that is used, for example, to reference an access control list with the :ref:`#[AclAncestor] attribute <acl-ancestor>`.
 
 ``label``
 ~~~~~~~~~

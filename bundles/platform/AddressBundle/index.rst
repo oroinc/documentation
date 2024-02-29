@@ -26,14 +26,11 @@ It has the "types" property and methods to work with it, but you need to define 
 
     /**
      * @var Collection
-     *
-     * @ORM\ManyToMany(targetEntity="Oro\Bundle\AddressBundle\Entity\AddressType")
-     * @ORM\JoinTable(
-     *     name="orocrm_contact_address_to_address_type",
-     *     joinColumns={@ORM\JoinColumn(name="contact_address_id", referencedColumnName="id")},
-     *     inverseJoinColumns={@ORM\JoinColumn(name="type_name", referencedColumnName="name")}
-     * )
      **/
+    #[ORM\ManyToMany(targetEntity: 'Oro\Bundle\AddressBundle\Entity\AddressType')]
+    #[ORM\JoinTable(name: 'orocrm_contact_address_to_address_type')]
+    #[ORM\JoinColumn(name: 'contact_address_id', referencedColumnName: 'id')]
+    #[ORM\inverseJoinColumn(name: 'type_name', referencedColumnName: 'name')]
     protected $types;
 
 Address Entities

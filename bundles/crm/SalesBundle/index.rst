@@ -95,20 +95,15 @@ Example:
 
 .. code-block:: bash
 
-    /**
-     * @ORM\Entity()
-     * @ORM\Table(name="your_customer")
-     *
-     * @Config(
-     *      routeCreate="your_customer_entity_create",
-     *      defaultValues={
-     *          "grid"={
-     *              "default"="your-customer-select-grid"
-     *          },
-    ...
-     *      }
-     * )
-     */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'your_customer')]
+    #[Config(
+        routeCreate: 'your_customer_entity_create',
+        defaultValues: [
+            'grid' => ['default' => 'your-customer-select-grid']
+            ...
+        ]
+    )]
     class Customer implements ExtendEntityInterface
     ...
 
