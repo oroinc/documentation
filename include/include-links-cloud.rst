@@ -202,3 +202,7 @@ Links (Cloud)
 .. |Error Reporting| raw:: html
 
    <a href="https://console.cloud.google.com/errors" target="_blank">Error Reporting</a>
+
+.. |Composer Patches| raw:: html
+
+   <a href="https://github.com/cweagans/composer-patches/blob/1.x/README.md" target="_blank">Composer Patches</a>
