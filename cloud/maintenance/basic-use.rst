@@ -719,6 +719,12 @@ To download a file from the `private` adapter, use:
 
     orocloud-cli media:download --adapter=private attachments/61b0871967033945666770.jpeg
 
+To download full file backup from any adapter, use:
+
+.. code-block:: none
+
+    orocloud-cli media:dump private
+
 Media Upload
 ~~~~~~~~~~~~
 
