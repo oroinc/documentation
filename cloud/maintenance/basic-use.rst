@@ -620,14 +620,13 @@ Application Cache
 
 .. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
 
-Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache with downtime. This command does the following:
+Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache. If a :ref:`prebuilt application package <orocloud-maintenance-use-upgrade>` has been used to upgrade Oro applications in OroCloud the command is performed without downtime. This command does the following:
 
 * Stops `Consumer` and `Cron` jobs
 * Prepares `Redis` cache storage
 * Clears and warms up the application cache
 * Switches `Redis` storage
-* Restarts `PHP FPM`
-* Starts `Consumer` and `Cron`.
+* Starts `Consumer` and `Cron` jobs
 
 .. code-block:: none
 
