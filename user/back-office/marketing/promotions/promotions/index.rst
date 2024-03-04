@@ -16,6 +16,8 @@ In OroCommerce, you can:
 * Add and generate :ref:`coupons <user-guide--marketing--promotions--coupons>`
 * Manage discounts in placed :ref:`orders <user-guide--sales--orders>` and view them in :ref:`shopping lists <user-guide--sales--shopping-lists>` in the back-office.
 
+.. note:: OroMarketplace sellers have the capability to create their own promotions and coupons within their respective stores. This feature can be toggled in the system configuration :ref:`at the global level <configuration--commerce--marketplace--seller-global>`. However, sellers do not have the ability to manipulate the Restrictions and Expression fields or add segments in the advanced products filter.
+
 The following topics will delve into how to view, create, and manage promotions in your Oro application:
 
 * :ref:`Configure Promotions <sys-config--commerce--sales--promotions>`

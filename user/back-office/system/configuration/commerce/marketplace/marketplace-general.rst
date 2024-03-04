@@ -36,4 +36,14 @@ To configure marketplace settings globally:
 .. image:: /user/img/concept-guides/marketplace/seller-registration.png
    :alt: Seller Registration button in the storefront
 
-7. Click **Save Settings**.
+7. In the **Promotions** section:
+
+   * Select the **Enable Seller Promotions** option to enable sellers to have the capability to create their own :ref:`promotions and coupons <concept-guide-oro-marketplace-promotions>` within their respective stores. This option is enabled by default. To further activate the promotion functionality, make sure that the following :ref:`options <user-guide--system-configuration--commerce-sales-multi-shipping>` are enabled:
+
+     * **System Configuration > Commerce > Sales > Multi Shipping Options > Enable Shipping Method Selection Per Line Item**
+     * **System Configuration > Commerce > Sales > Multi Shipping Options > Enable Grouping Of Line Items During Checkout**
+     * **System Configuration > Commerce > Sales > Multi Shipping Options > Create Sub-Orders For Each Group**
+
+    In addition, please ensure that the **Group Line Items By** option under **System Configuration > Commerce > Sales > Multi Shipping Options** is set to *Organization*.
+
+8. Click **Save Settings**.
