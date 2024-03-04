@@ -18,3 +18,13 @@ To disable this column and filter, use the ``hide_organization_column`` paramete
             ...
             options:
                 hide_organization_column: true
+
+When a grid is used on create or edit pages, the column and filter are not added by default. To add them, use the "show_organization_column_on_edit" parameter in the "options" section of the datagrid declaration.
+
+.. code-block:: yaml
+
+    datagrids:
+        some-datagrid:
+            ...
+            options:
+                show_organization_column_on_edit: true

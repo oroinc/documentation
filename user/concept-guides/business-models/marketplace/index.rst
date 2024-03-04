@@ -128,6 +128,14 @@ For the orders to be split by seller (i.e., organization), a person responsible 
 
 If a seller decides against using multi-shipping and the multi shipping feature is disabled for a seller organization, the marketplace owner must add the seller's warehouse to the list of enabled warehouses in the system configuration, so buyers could proceed through the checkout and place their orders online.
 
+.. _concept-guide-oro-marketplace-promotions:
+
+Promotions
+----------
+
+As of OroMarketplace version 5.1.7, sellers have the capability to create their own promotions and coupons within their respective stores under **Marketing > Promotions** in the main menu. This feature can be toggled in the system configuration :ref:`at the global level <configuration--commerce--marketplace--seller-global>`. However, sellers do not have the ability to manipulate the Restrictions and Expression fields or add segments in the advanced products filter.
+
+
 **Related Articles**
 
 * :ref:`Seller Registration Requests <user-guide--sales--seller-registration-requests>`
