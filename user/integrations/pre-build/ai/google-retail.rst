@@ -3,7 +3,7 @@
 Integration with Google Retail Recommendations
 ==============================================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Oro supports integration with |Google Retail Recommendations|, allowing you to take advantage of the Google Retail API and Recommendation AI models. With its help, you can offer personalized product recommendations to your customers based on their browsing history and preferences.
 

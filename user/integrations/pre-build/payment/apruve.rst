@@ -5,7 +5,7 @@
 Integration with Apruve Payment Service
 =======================================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Apruve, a B2B credit management service, offers a credit line for buyers, streamlining the entire credit approval and financing process for OroCommerce sellers. Through the integration of Apruve with OroCommerce, businesses can optimize their payment processes, provide credit options, and elevate the overall purchasing experience for their customers.
 

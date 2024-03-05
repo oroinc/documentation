@@ -3,7 +3,7 @@
 Integration with Hubspot
 ========================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 HubSpot is a platform that combines marketing and sales tools, allowing businesses to create custom marketing campaigns, automate sales processes and effectively nurture leads. OroCommerce provides integration with HubSpot to help align sales and marketing teams in a business, as well as facilitating practical marketing activities and lead segmentation planning.
 

@@ -3,7 +3,7 @@
 Integration with Mailchimp
 ==========================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Mailchimp is a widely recognized marketing automation platform that specializes in email marketing, audience management, and customer engagement. It provides businesses and organizations with a comprehensive set of tools to create, send, and analyze email campaigns, making it a go-to solution for companies of all sizes and industries.
 

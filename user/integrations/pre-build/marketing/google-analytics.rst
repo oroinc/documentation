@@ -3,7 +3,7 @@
 Integration with Google Analytics
 =================================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Google Analytics is a powerful web analytics service offered by Google to help businesses track and analyze their website traffic. The tool provides useful information on user demographics, interests, and real-time data on website activity. By utilizing this data, businesses can make informed decisions, improve their marketing strategies, and enhance the overall user experience.
 

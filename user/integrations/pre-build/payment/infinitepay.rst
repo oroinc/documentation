@@ -5,7 +5,7 @@
 Integration with InfinitePay Payment Service
 ============================================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 InfinitePay is a comprehensive payment solution designed to offer protection against bad debts for eCommerce merchants. It provides a range of payment methods (e.g., invoice, direct debit) for orders up to 50K Euro or even more and is tailored for both B2B and B2C online shops, offering 100% failure protection for orders. In situations where a customer faces challenges meeting the bill's deadline, InfinitePay steps in to manage the due receivables. InfinitePay covers a wide geographical scope, providing security against payment defaults in over 30 countries.
 

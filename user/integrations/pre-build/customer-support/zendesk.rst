@@ -3,7 +3,7 @@
 Integration with Zendesk
 ========================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Zendesk is a globally recognized, cloud-based customer service and engagement platform designed to streamline interactions between businesses and their customers. It offers a comprehensive suite of tools that enable organizations to provide personalized customer service across various communication channels, and address the issues that customers face in an efficient and timely manner.
 

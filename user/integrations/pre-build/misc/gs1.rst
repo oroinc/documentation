@@ -3,7 +3,7 @@
 Integration with GS1
 ====================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 GS1 is a global organization that develops and maintains supply chain and business communication standards. Their standards are used for uniquely identifying products, services, and locations. GS1 standards include the GTIN (Global Trade Item Number) for products and GLN (Global Location Number) for locations. These standards help businesses ensure data accuracy, traceability, and efficiency.
 

@@ -3,7 +3,7 @@
 Integration with OroMarketplace
 ===============================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 OroMarketplace is a flexible e-commerce marketplace platform designed to enable businesses to create and manage online marketplaces. It provides the foundation and tools necessary to build and operate B2B marketplaces, connecting multiple sellers with potential buyers in a single digital marketplace environment. OroMarketplace is based on OroCommerce Enterprise and has a built-in CRM, which allows for handling all storefront and back-office components and automating B2B processes using various workflows.
 

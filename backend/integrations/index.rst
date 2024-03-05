@@ -28,6 +28,8 @@ Comparison of Integration Approaches
 
 The selection of the integration approach relies on the particular needs of the integrated systems, along with factors including capacity of data, real-time needs, and available technical knowledge.
 
+.. _dev-integrations--integrationbundle-based:
+
 OroIntegrationBundle-Based
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
