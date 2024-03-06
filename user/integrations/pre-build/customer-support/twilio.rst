@@ -3,7 +3,7 @@
 Integration with Twilio
 =======================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Twilio is a cloud-based communication platform that helps businesses to integrate different communication channels into their systems and applications. This integration allows for better customer engagement and interaction. OroCommerce leverages Twilio Flex for live chat conversations and Twilio Programmable Messaging for SMS/MMS to enable businesses to reach their customers through multiple communication channels. In addition, OroCommerce uses its existing email synchronization functionality to synchronize emails, online chats, and SMS/MMS messages into one aggregated Contact Center > Conversations grid in the OroCommerce back-office. This centralization of all communication channels enables businesses to manage all customer interactions in one place.
 

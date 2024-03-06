@@ -3,7 +3,7 @@
 Integration with CyberSource
 ============================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 The OroCommerce and CyberSource integration facilitates the exchange of crucial data between the two platforms during the payment process. CyberSource acts as the payment gateway, handling secure payment processing, fraud detection, and payment authorization.
 

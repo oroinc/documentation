@@ -3,7 +3,7 @@
 Integration with Marello
 ========================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Oro offers integration with Marello, an open-source order management system built on the OroPlatform. The integration allows business owners to utilize their OroCommerce online store as a SalesChannel within Marello (Enterprise). As Marello is built on the OroPlatform, all its features can work within the same user interface.
 

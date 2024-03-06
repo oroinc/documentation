@@ -3,7 +3,7 @@
 Integration with Avatax
 =======================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 AvaTax is a tax compliance and automation software solution provided by Avalara, designed to simplify and automate the calculation and management of sales and use taxes. When integrated with OroCommerce, it automatically calculates taxes and up-to-date tax rates for your store.
 

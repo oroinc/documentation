@@ -3,7 +3,7 @@
 Integration with Akeneo
 =======================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 OroCommerce offers integration with Akeneo, a Product Information Management (PIM) system that helps businesses efficiently manage and organize their product data.
 

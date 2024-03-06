@@ -3,7 +3,7 @@
 Integration with OroCRM
 =======================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 OroCRM, a vital component of the OroSuite, is an open-source Customer Relationship Management (CRM) system designed to empower businesses with comprehensive customer insights and relationship management capabilities. OroCRM is specifically designed with a focus on B2B customer relationship management. This means it includes features and tools that cater to the unique needs and complexities of B2B relationships, such as account and management. It seamlessly integrates with OroCommerce, our robust B2B eCommerce platform, to provide a unified solution for managing customer interactions, sales, marketing, and analytics.
 

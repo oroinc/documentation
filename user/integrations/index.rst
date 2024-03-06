@@ -42,7 +42,7 @@ On the other hand, Oro also empowers users to create custom integrations tailore
           <li><a class="tag-important" href="custom/integrationbundle/">OroIntegrationBundle</a></li>
        </ul>
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 .. toctree::
    :hidden:

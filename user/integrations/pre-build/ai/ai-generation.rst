@@ -3,7 +3,7 @@
 Integration with AI Clients: Open AI and Vertex AI
 ==================================================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Oro offers integration with AI services to generate content for product descriptions, landing pages, content blocks, master catalog categories, and emails. Integration brings several benefits, including improved SEO with high-quality, unique content, significant time savings in content creation, and enhanced user experiences through more informative and engaging product descriptions on the website.
 

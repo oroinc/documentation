@@ -3,7 +3,7 @@
 Integration with Eclipse
 ========================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Eclipse ERP is a real-time accounting software designed for wholesale distributors, offering various features such as order fulfillment, inventory control, accounting, purchasing, and sales.
 
@@ -18,7 +18,7 @@ The integration with Eclipse ERP removes the need for duplicating data and doing
 Data Exchange
 -------------
 
-Depending on your business needs and customization requirements, OroCommerce and Eclipse exchange the following data:
+Depending on your business needs and customization requirements, OroCommerce and Eclipse can exchange a variety of data:
 
 **Data passed from OroCommerce to Eclipse:**
 

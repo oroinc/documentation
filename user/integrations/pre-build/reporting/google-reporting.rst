@@ -3,7 +3,7 @@
 Integration with Google Looker Studio
 =====================================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Oro offers integration with Google Looker (former Google Data Studio), a data visualization tool that allows you to compile reports from different sources in one place.
 
