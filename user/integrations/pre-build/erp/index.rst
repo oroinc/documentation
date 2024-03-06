@@ -12,6 +12,7 @@ Below is a list of ERP integrations Oro applications support:
 * :ref:`Oracle JD Edwards ERP <integrations-erp-oracle-jd-edwards>`
 * :ref:`Eclipse <integrations-erp-eclipse>`
 * :ref:`MDS <integrations-erp-mds>`
+* :ref:`Sage X3 <integrations-erp-sage>`
 
 
 .. note::
@@ -25,6 +26,7 @@ Below is a list of ERP integrations Oro applications support:
    Oracle JD Edwards <jd-edwards>
    Eclipse <eclipse>
    MDS <mds>
+   Sage X3 <sage>
 
 
 .. include:: /include/include-links-user.rst
