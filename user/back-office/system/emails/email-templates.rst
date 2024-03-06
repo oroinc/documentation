@@ -371,7 +371,7 @@ oro_order_shipping_method_label (OroCommerce only)
 .. code-block:: php
 
 
-    oro_order_shipping_method_label(string $shippingMethod, string $shippingMethodType)
+    oro_order_shipping_method_label(?string $shippingMethod, ?string $shippingMethodType, ?Organization $organization = null)
 
 **Description:** Returns the translated label of the order`s shipping method.
 
@@ -382,7 +382,7 @@ oro_order_shipping_method_label (OroCommerce only)
 .. code-block:: twig
 
 
-    {% set shipping_method = oro_order_shipping_method_label(entity.shippingMethod, entity.shippingMethodType) %}
+    {% set shipping_method = oro_order_shipping_method_label(entity.shippingMethod, entity.shippingMethodType, entity.organization) %}
     <strong>Shipping Method: </strong>{{ shipping_method }}<br/>
 
 rfp_products (OroCommerce Only)

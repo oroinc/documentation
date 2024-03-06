@@ -6,7 +6,7 @@
 Configure Global Multiple Shipping Settings
 ===========================================
 
-For standard :ref:`multi-step checkout <checkout-guide-multi-page>`, you can configure different line item grouping for the storefront checkout, as well as enable storefront customers to select different shipping methods for different line items. In addition, you can enable sub-orders to be created for each group of line items.
+For standard :ref:`multi-step checkout <checkout-guide-multi-page>`, you can configure different line item grouping for the storefront checkout, as well as enable storefront customers to select different shipping methods for different line items or different groups of line items. In addition, you can enable sub-orders to be created for each group of line items.
 
 .. image:: /user/img/system/config_commerce/sales/multi-shipping-storefront.png
    :alt: Displaying order line items grouped by category at checkout
@@ -23,7 +23,10 @@ To configure multi shipping globally:
 
 3. To update any of the options, clear the **Use Default** checkbox first.
 
-4. In the **General Options**, select **Enable Shipping Method Selection Per Line Item** to activate the multi-shipping functionality and display other related options.
+4. In the **General Options**, select **Enable Shipping Method Selection Per Line Item** to enable selection of shipping method per line items.
+
+   .. note::
+       If the option is disabled, but the **Enable Grouping Of Line Items During Checkout** option is enabled, the selection of shipping method will be available per each group of line items.
 
 5. In the **Line Items Grouping Options**, configure the following options:
 
