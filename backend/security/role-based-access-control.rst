@@ -22,37 +22,37 @@ Example:
 
 By default, the final rule list is sorted in the following order:
 
-* 1. Application level configuration (config.yml, security.yml, etc.)
+1. Application level configuration (config.yml, security.yml, etc.)
 
-    .. code-block:: yaml
+.. code-block:: yaml
 
-        # config/config.yaml
-        oro_security:
-            access_control:
-                - { path: ^%web_backend_prefix%/contact$, roles: security_yml_ROLE }
+    # config/config.yaml
+    oro_security:
+        access_control:
+            - { path: ^%web_backend_prefix%/contact$, roles: security_yml_ROLE }
 
-* 2. The list merged from vendor bundles in the bundle loading order
+2. The list merged from vendor bundles in the bundle loading order
 
-    .. code-block:: yaml
+.. code-block:: yaml
 
-        # AclBundle/Resources/config/app.yml (5th. loaded bundle in kernel)
-        oro_security:
-            access_control:
-                - { path: ^%web_backend_prefix%/contact$, roles: acl_bundle_ROLE }
+    # AclBundle/Resources/config/app.yml (5th. loaded bundle in kernel)
+    oro_security:
+        access_control:
+            - { path: ^%web_backend_prefix%/contact$, roles: acl_bundle_ROLE }
 
-        # OroActivityContactBundle/Resources/config/app.yml (61st. loaded bundle in kernel)
-        oro_security:
-            access_control:
-                - { path: ^%web_backend_prefix%/contact$, roles: activity_contact_bundle_ROLE }
+    # OroActivityContactBundle/Resources/config/app.yml (61st. loaded bundle in kernel)
+    oro_security:
+        access_control:
+            - { path: ^%web_backend_prefix%/contact$, roles: activity_contact_bundle_ROLE }
 
-* 3. The list merged from the src folder
+3. The list merged from the src folder
 
-    .. code-block:: yaml
+.. code-block:: yaml
 
-        # src/Resources/config/app.yml
-        oro_security:
-            access_control:
-                - { path: ^%web_backend_prefix%/contact$, roles: src_folder_ROLE, priority: 20 }
+    # src/Resources/config/app.yml
+    oro_security:
+        access_control:
+            - { path: ^%web_backend_prefix%/contact$, roles: src_folder_ROLE, priority: 20 }
 
 If you want to override a rule and move to the top of the rule list which is going to be checked, you can use the ``priority`` flag.
 
@@ -60,12 +60,12 @@ By default, if there is no value set for a rule, it will default to 0, so if you
 
 In the example above, the final list will look like the following.
 
-    .. code-block:: yaml
+.. code-block:: yaml
 
-        - { path: ^%web_backend_prefix%/contact$, roles: src_folder_ROLE }
-        - { path: ^%web_backend_prefix%/contact$, roles: security_yml_ROLE }
-        - { path: ^%web_backend_prefix%/contact$, roles: acl_bundle_ROLE }
-        - { path: ^%web_backend_prefix%/contact$, roles: activity_contact_bundle_ROLE }
+    - { path: ^%web_backend_prefix%/contact$, roles: src_folder_ROLE }
+    - { path: ^%web_backend_prefix%/contact$, roles: security_yml_ROLE }
+    - { path: ^%web_backend_prefix%/contact$, roles: acl_bundle_ROLE }
+    - { path: ^%web_backend_prefix%/contact$, roles: activity_contact_bundle_ROLE }
 
 The request coming for URL ``^%web_backend_prefix%/contact`` will be checked for role ``src_folder_ROLE`` because it was moved up for its priority of 20.
 

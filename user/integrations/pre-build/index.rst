@@ -25,4 +25,3 @@ Oro’s prebuilt integrations offer a ready-made solution to effortlessly link w
 
 .. include:: /include/include-links-user.rst
    :start-after: begin
-v
