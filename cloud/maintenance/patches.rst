@@ -42,7 +42,7 @@ It's important to remember that patches must reference the patched file by relat
 
 For example, suggest that the `patches/oro/platform/readme_doc_comment.patch` patch file given above adds a simple comment to the `oro/platform` package readme file:
 
-.. code-block:: patch
+.. code-block:: none
 
    --- README.md
    +++ README.md
