@@ -45,7 +45,7 @@ Create an Entity to Store the Payment Method Settings
 
 Define an entity to store the configuration settings of the payment method in the database. To do this, create <bundle_root>/Entity/CollectOnDeliverySettings.php:
 
-.. oro_integrity_check:: 880d42ab5e27a03e4b26861d35db91e25f6f4f5a
+.. oro_integrity_check:: 0cfef6ea37b8aec0c10c35caf005ce399464393d
 
    .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Entity/CollectOnDeliverySettings.php
        :language: php
@@ -56,11 +56,11 @@ As you can see from the code above, the only two necessary parameters are define
 .. important::
    When naming DB columns, make sure that the name does not exceed 31 symbols. Pay attention to the acme_coll_on_deliv_short_label name in the following extract:
 
-   .. oro_integrity_check:: e60794598ebf99259295cb4563e5e36017094c32
+   .. oro_integrity_check:: a5b7bf74335fe96ef1df75b173e04be7f6eff6ce
 
       .. literalinclude:: /code_examples/commerce/payment_method/collect-on-delivery/Entity/CollectOnDeliverySettings.php
          :language: php
-         :lines: 49-57
+         :lines: 23-25
 
 
 

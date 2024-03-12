@@ -50,6 +50,7 @@ Default configuration options for the Oro application are defined in the ``confi
        maintenance_lock_file_path: '%env(resolve:ORO_MAINTENANCE_LOCK_FILE_PATH)%'
        oauth2_public_key: '%env(resolve:ORO_OAUTH_PUBLIC_KEY_PATH)%'
        oauth2_private_key: '%env(resolve:ORO_OAUTH_PRIVATE_KEY_PATH)%'
+       log_path: '%env(resolve:ORO_LOG_PATH)%'
 
        env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
        env(ORO_DB_URL): 'postgresql://root@127.0.0.1/b2b_dev'
@@ -74,6 +75,7 @@ Default configuration options for the Oro application are defined in the ``confi
        env(ORO_MAINTENANCE_LOCK_FILE_PATH): '%kernel.project_dir%/var/maintenance/maintenance_lock'
        env(ORO_OAUTH_PUBLIC_KEY_PATH): '%kernel.project_dir%/var/oauth_public.key'
        env(ORO_OAUTH_PRIVATE_KEY_PATH): '%kernel.project_dir%/var/oauth_private.key'
+       env(ORO_LOG_PATH): "%kernel.logs_dir%/%kernel.environment%.log"
 
 Sample Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

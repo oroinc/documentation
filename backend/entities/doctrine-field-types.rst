@@ -13,9 +13,8 @@ You can use this field type:
 
     /**
      * @var decimal
-     *
-     * @ORM\Column(name="tax_amount", type="money")
      */
+    #[ORM\Column(name: 'tax_amount', type: 'money')]
     protected $taxAmount;
 
 The **percent** field type allows storing percent data. It is an alias to float type.
@@ -26,9 +25,8 @@ You can use this field type:
 
     /**
      * @var float
-     *
-     * @ORM\Column(name="percent_field", type="percent")
      */
+    #[ORM\Column(name: 'percent_field', type: 'percent')]
     protected $percentField;
 
 These two data types are available in extended fields. You can create new fields with these types. Additionally, on view and edit pages and in grids, these fields will be automatically formatted with currency or percent formatters.
@@ -43,9 +41,8 @@ You can use this field type:
 
     /**
      * @var \Oro\Component\Config\Common\ConfigObject
-     *
-     * @ORM\Column(name="map_config", type="config_object")
      */
+    #[ORM\Column(name: 'map_config', type: 'config_object')]
     protected $mapConfigField;
 
 The **duration** field type allows storing time duration in seconds. It is an alias for an integer type.
@@ -56,9 +53,8 @@ You can use this field type:
 
     /**
      * @var int
-     *
-     * @ORM\Column(name="duration", type="duration")
      */
+    #[ORM\Column(name: 'duration', type: 'duration')]
     protected $duration;
 
 

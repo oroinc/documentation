@@ -210,3 +210,9 @@ Glossary
 
    Marketplace
       OroMarketplace is an open-source comprehensive solution for marketplaces with built-in OroCommerce Enterprise.
+
+   Marketplace Seller
+      A marketplace seller is a person or company that sells products or services on the OroMarketplace platform. Every marketplace seller can have multiple users associated with the their operations on the platform.
+
+   Marketplace Operator
+      A marketplace operator is an organization that owns and manages the overall operation and infrastructure of the marketplace platform for marketplace seller(s).

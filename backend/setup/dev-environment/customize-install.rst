@@ -39,7 +39,7 @@ A migration is a class which implements the ``Oro\Bundle\MigrationBundle\Migrati
         }
     }
 
-.. note:: Entity metadata in the PHP entity classes (annotations) should exactly match what the schema migration is doing. If you create a migration that modifies the type, length, or another property of an existing entity field, please remember to make the same change in the PHP entity class annotations.
+.. note:: Entity metadata in the PHP entity classes (attributes) should exactly match what the schema migration is doing. If you create a migration that modifies the type, length, or another property of an existing entity field, please remember to make the same change in the PHP entity class attributes.
 
 In the ``Oro\Bundle\MigrationBundle\Migration\Migration::up``, you can modify the database schema and/or add additional SQL queries executed before and after the schema changes.
 

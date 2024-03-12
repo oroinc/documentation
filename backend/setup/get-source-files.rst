@@ -19,7 +19,7 @@ These methods are detailed below.
 Method 1: Create a Project with Composer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Make sure you use PHP >=8.2 and have Composer installed. If you do not, use the Composer
+1. Make sure you use PHP >=8.3 and have Composer installed. If you do not, use the Composer
    installation process described in the |Composer installation documentation|.
 
 2. Create your new Oro application project with Composer by running one of the commands below, depending on the base application you want to install:
@@ -95,7 +95,7 @@ Method 2: Use the GitHub Repository
 Method 3: Download the Source Code Archive
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Download the latest version of the application source code from the download section on |the website|:
+1. Download the latest version of the application source code from the download section on |the website| (you may be required to fill in a form to request access):
 
    * |Download OroCommerce|
    * |Download OroCRM|
@@ -104,11 +104,6 @@ Method 3: Download the Source Code Archive
    Click the **download zip**, **download tar.gz**, or **download tar.bz2** link to download the archive.
 
    .. note:: You can also download the **virtual machine** to quickly :ref:`deploy the application in the virtual sandbox environment <virtual_machine_deployment>`.
-
-   .. image:: /img/backend/setup/installation/download_orocommerce.png
-      :alt: Download the latest version of the source code screen from the website
-      :align: center
-      :scale: 50%
 
    Then extract the source files. For example, on a Linux-based OS run:
 

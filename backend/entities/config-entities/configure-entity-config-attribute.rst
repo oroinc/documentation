@@ -39,7 +39,7 @@ To illustrate how you can add metadata to an entity, add the following YAML file
        :language: yaml
        :lines: 1-6, 11-12
 
-This configuration adds the 'demo_attr' attribute with the 'Demo' value to all configurable entities. The configurable entity is an entity marked with the `@Config` annotation. This code also automatically adds a service named **oro_entity_config.provider.acme** into the DI container. You can use this service to get the value of a particular entity's 'demo_attr' attribute.
+This configuration adds the 'demo_attr' attribute with the 'Demo' value to all configurable entities. The configurable entity is an entity marked with the `#[Config]` attribute. This code also automatically adds a service named **oro_entity_config.provider.acme** into the DI container. You can use this service to get the value of a particular entity's 'demo_attr' attribute.
 
 To apply this change, execute the **oro:entity-config:update** command that updates configuration data for entities:
 
@@ -61,14 +61,14 @@ An example how to get a value of a configuration attribute:
         // the value of $demoAttr variable will be 'Demo'
         $demoAttr = $acmeConfigProvider->getConfig('Acme\Bundle\DemoBundle\Entity\Document')->get('demo_attr');
 
-If you want to set a value different than the default one for some entity, write it in the `@Config` annotation for this entity. For example:
+If you want to set a value different than the default one for some entity, write it in the `#[Config]` attribute for this entity. For example:
 
-.. oro_integrity_check:: 0124d3ee31817b8ca7e23280f550875ec2b5df9b
+.. oro_integrity_check:: fa229915513ac32a63f454d44eef468f3c2b1fb7
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
        :language: php
-       :lines: 3-5, 8, 16-18, 23-26, 31, 58-60, 64-66
+       :lines: 3-5, 8, 16-19, 21-22, 27, 46, 48-49
 
 The result is demonstrated in the following code:
 

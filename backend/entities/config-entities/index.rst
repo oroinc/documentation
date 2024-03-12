@@ -10,17 +10,17 @@ Configure Entities and Their Fields
 
 Entities will not be configurable by default. They must be tagged as configurable entities to let the system apply entity config options to them:
 
-* The @Config annotation is used to enable entity-level configuration for an entity.
-* Use the @ConfigField annotation to enable config options for selected fields.
+* The #[Config] attribute is used to enable entity-level configuration for an entity.
+* Use the #[ConfigField] attribute to enable config options for selected fields.
 
 .. tip::
 
     The bundles from OroPlatform offer a large set of predefined options that you can use in your entities to configure them and control their behavior. Take a look at the ``entity_config.yml`` files that can be found in many bundles and read their dedicated documentation.
 
-The ``@Config`` Annotation
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+The ``#[Config]`` Attribute
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To make the ``Document`` entity from the first part of the chapter configurable, import the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config`` annotation and use it in the class docblock:
+To make the ``Document`` entity from the first part of the chapter configurable, import the ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config`` attribute and use it:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
@@ -28,13 +28,11 @@ To make the ``Document`` entity from the first part of the chapter configurable,
     namespace Acme\Bundle\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
 
-    /**
-     * @ORM\Entity
-     * @ORM\Table(name="acme_demo_document")
-     * @Config
-     */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'acme_demo_document')]
+    #[Config]
     class Document
     {
         // ...
@@ -42,24 +40,24 @@ To make the ``Document`` entity from the first part of the chapter configurable,
 
 You can also change the default value of each configurable option using the ``defaultValues`` argument:
 
-.. oro_integrity_check:: 215815e4064b0d0bb7e631051670aa47ed1c5280
+.. oro_integrity_check:: ce5366c579b82e206bd949ccb9dec59117dbb0f9
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
        :language: php
-       :lines: 3-5, 8, 16-19, 23-26, 31, 55-57, 64-66
+       :lines: 3-5, 8, 16-19, 21-22, 27, 45, 48-49
 
-The ``@ConfigField`` Annotation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The ``#[ConfigField]`` Attribute
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Similar to the ``@Config`` annotation for entities, you can use the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField`` annotation to make properties of an entity configurable. Default values can be changed the same way as for the entity level:
+Similar to the ``#[Config]`` attribute for entities, you can use the ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField`` attribute to make properties of an entity configurable. Default values can be changed the same way as for the entity level:
 
-.. oro_integrity_check:: a83cb02ddc60cfa23be7f9c166484d8987bfb87d
+.. oro_integrity_check:: 87d66dfb91dac696f1cfc3dd66a43f1980641633
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Document.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Document.php
        :language: php
-       :lines: 78, 87-98, 103-105, 78
+       :lines: 60, 66-68, 60
 
 Console Commands
 ----------------

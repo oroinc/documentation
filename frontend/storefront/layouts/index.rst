@@ -258,25 +258,23 @@ Please, refer to the |Symfony expression syntax| documentation for a more detail
 Use Layouts with the Controller
 -------------------------------
 
-Add ``@Layout`` annotation to the controller:
+Add ``#[Layout]`` attribute to the controller:
 
 .. code-block:: diff
 
    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
    use Symfony\Component\Routing\Annotation\Route;
-   use Oro\Bundle\LayoutBundle\Annotation\Layout;
+   use Oro\Bundle\LayoutBundle\Attribute\Layout;
 
-   class UserController extends AbstractController
-   {
-       /**
-        * @Route("/test", name="demo_layout_test", options={"frontend"=true})
-        * @Layout
-        */
-       public function testAction()
-       {
-           return [];
-       }
-   }
+    class UserController extends AbstractController
+    {
+        #[Route(path: '/test', name: 'demo_layout_test', options: ['frontend' => true])]
+        #[Layout]
+        public function testAction()
+        {
+            return [];
+        }
+    }
 
 To render the content on a new page, create layout update yml files for
 the new route in ``Resources/views/layouts/{theme_name}/{route_name}``.

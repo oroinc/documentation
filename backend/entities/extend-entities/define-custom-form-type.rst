@@ -148,21 +148,19 @@ There are a few ways to define a custom form type and form options for a particu
 
     Select it according to what you need to achieve.
 
-#. Using annotation to a field or a related entity (if an extended field is an association)
+#. Using attribute to a field or a related entity (if an extended field is an association)
 
     .. code-block:: php
 
-        /*
-         * @Config(
-         *      defaultValues={
-                    ...
-         *          "form"={
-         *              "form_type"="Oro\Bundle\UserBundle\Form\Type\UserSelectType",
-         *              "form_option"="{option1: ..., ...}"
-         *          }
-         *      }
-         * )
-         */
+        #[Config(
+            defaultValues: [
+                ...
+                'form' => [
+                    'form_type' => 'Oro\Bundle\UserBundle\Form\Type\UserSelectType',
+                    'form_option' => ['option1' => ..., ...]
+                ]
+            ]
+        )]
 
 
 .. include:: /include/include-links-dev.rst

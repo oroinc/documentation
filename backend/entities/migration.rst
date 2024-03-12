@@ -220,20 +220,12 @@ You cannot always use standard Doctrine methods to modify the database structure
     use Doctrine\DBAL\Schema\Schema;
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;
-    use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtension;
     use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtensionAwareInterface;
+    use Oro\Bundle\MigrationBundle\Migration\Extension\RenameExtensionAwareTrait;
 
     class TestRenameTable implements Migration, RenameExtensionAwareInterface
     {
-       protected RenameExtension $renameExtension;
-
-       /**
-        * @inheritDoc
-        */
-       public function setRenameExtension(RenameExtension $renameExtension)
-       {
-           $this->renameExtension = $renameExtension;
-       }
+        use RenameExtensionAwareTrait;
 
        public function up(Schema $schema, QueryBag $queries)
        {
@@ -362,16 +354,11 @@ To create your own extension:
         namespace Acme\Bundle\DemoBundle\Migration\Extension;
 
         /**
-         * MyExtensionAwareInterface should be implemented by migrations that depend on a MyExtension.
+         * This interface should be implemented by migrations that depend on {@see MyExtension}.
          */
         interface MyExtensionAwareInterface
         {
-            /**
-             * Sets the MyExtension
-             *
-             * @param MyExtension $myExtension
-             */
-            public function setMyExtension(MyExtension $myExtension);
+            public function setMyExtension(MyExtension $myExtension): void;
         }
 
 3. Register an extension in the dependency container. For example:

@@ -12,6 +12,7 @@ Learn the key options for setting up products in your Oro application, as well a
 * :ref:`Featured Products <sys--commerce--product--featured-products--main>`
 * :ref:`Promotions <configuration--guide--commerce--configuration--promotions>`
 * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products>`
+* :ref:`Seller Product Approval Workflow <system-configuration--commerce--product--seller-product-approval-workflow>`
 * :ref:`Product Collections <configuration--guide--commerce--configuration--product-collections>`
 * :ref:`Customer Settings <sys--commerce--product--customer-settings>`
 
@@ -26,5 +27,6 @@ Learn the key options for setting up products in your Oro application, as well a
    Featured Products <global-featured-products>
    Promotions <global-promotions>
    Configurable Products <global-configurable-products>
+   Seller Product Approval Workflow <seller-product-approval-flow>
    Product Collections <product-collections>
    Customer Settings <global-customer-settings>

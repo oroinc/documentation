@@ -23,6 +23,10 @@ oro_behat_extension:
       selector: 'div[data-page-component-name="acme-demo-question-grid-by-priority"]'
     View Icon:
       selector: '.grid-view-icon'
+    Start acme demo b2b quote backoffice flow transition:
+      selector: 'a[aria-label="Start oro.workflow.acme_demo_b2b_quote_backoffice_flow.label row action"]'
+    Process acme demo b2b quote backoffice flow transition:
+      selector: 'a[aria-label="oro.workflow.acme_demo_b2b_quote_backoffice_flow.transition.to_processed.label row action"]'
 
   suites:
     AcmeDemoBundle:
@@ -35,5 +39,6 @@ oro_behat_extension:
         - Oro\Bundle\SearchBundle\Tests\Behat\Context\SearchContext
         - Oro\Bundle\SecurityBundle\Tests\Behat\Context\ACLContext
         - Oro\Bundle\ActivityListBundle\Tests\Behat\Context\ActivityContext
+        - Oro\Bundle\NavigationBundle\Tests\Behat\Context\ScrollspyContext
       paths:
         - '@AcmeDemoBundle/Tests/Behat/Features'

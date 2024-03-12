@@ -20,6 +20,16 @@ Configure Email Settings
 
   "**Case-Insensitive Email Addresses**","If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled. Be noted that the setting is only applied to back-office users. The identical option for customer users is managed :ref:`here <sys-config--configuration--commerce--customers--customer-users>`"
 
+.. _admin-configuration-user-settings-share:
+
+Configure Sharing Records
+--------------------------
+
+.. csv-table::
+  :header: "Option", "Description"
+  :widths: 10, 30
+
+  "Allow Sharing","If this option is enabled, users are allowed to share entities in the Oro application back-office."
 
 Configure Password Restrictions
 -------------------------------

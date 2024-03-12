@@ -173,25 +173,26 @@ To add a new dashboard defined in the dashboards.yml file (as described above) t
 
     namespace Oro\Bundle\DashboardBundle\Migrations\Data\ORM;
 
+    use Doctrine\Common\DataFixtures\DependentFixtureInterface;
     use Doctrine\Persistence\ObjectManager;
     use Oro\Bundle\DashboardBundle\Migrations\Data\ORM\AbstractDashboardFixture;
-    use Doctrine\Common\DataFixtures\DependentFixtureInterface;
+    use Oro\Bundle\UserBundle\Migrations\Data\ORM\LoadAdminUserData;
 
     class LoadDashboardData extends AbstractDashboardFixture implements DependentFixtureInterface
     {
         /**
-         * {@inheritdoc}
+         * {@inheritDoc}
          */
-        public function getDependencies()
+        public function getDependencies(): array
         {
             // we need admin user as a dashboard owner
-            return ['Oro\Bundle\UserBundle\Migrations\Data\ORM\LoadAdminUserData'];
+            return [LoadAdminUserData::class];
         }
 
         /**
-         * {@inheritdoc}
+         * {@inheritDoc}
          */
-        public function load(ObjectManager $manager)
+        public function load(ObjectManager $manager): void
         {
             // create new dashboard
             $dashboard = $this->createAdminDashboardModel(

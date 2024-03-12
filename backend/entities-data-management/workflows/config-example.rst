@@ -62,7 +62,7 @@ Configuration
                 start_call:
                     is_start: true                         # this transition used to start new workflow
                     step_to: start_conversation            # next step after transition performing
-                    transition_definition: create_call     # link to definition of conditions and post actions
+                    transition_definition: create_call     # link to definition of conditions and actions
                     init_context_attribute: init_source    # name of variable which contains init context
                     init_entities:                         # list of view page entities where will be displayed transition button
                         - 'Oro\Bundle\UserBundle\Entity\User'
@@ -198,37 +198,25 @@ PhoneCall Entity
     use Doctrine\Common\Collections\ArrayCollection;
     use Doctrine\ORM\Mapping as ORM;
 
-    /**
-     * @ORM\Table(name="acme_demo_phone_call")
-     * @ORM\Entity
-     */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'acme_demo_phone_call')]
     class PhoneCall
     {
-        /**
-         * @ORM\Column(name="id", type="integer")
-         * @ORM\Id
-         * @ORM\GeneratedValue(strategy="AUTO")
-         */
+        #[ORM\Id]
+        #[ORM\Column(name: 'id', type: 'integer')]
+        #[ORM\GeneratedValue(strategy: 'AUTO')]
         private $id;
 
-        /**
-         * @ORM\Column(name="number", type="string", length=255)
-         */
+        #[ORM\Column(name: 'number', type: 'string', length: 255)]
         private $number;
 
-        /**
-         * @ORM\Column(name="name", type="string", length=255, nullable=true)
-         */
+        #[ORM\Column(name: 'name', type: 'string', length: 255, nullable: true)]
         private $name;
 
-        /**
-         * @ORM\Column(name="description", type="text", nullable=true)
-         */
+        #[ORM\Column(name: 'description', type: 'text', nullable: true)]
         private $description;
 
-        /**
-         * @ORM\OneToMany(targetEntity="PhoneConversation", mappedBy="call")
-         **/
+        #[ORM\OneToMany(targetEntity: 'PhoneConversation', mappedBy: 'call')]
         private $conversations;
 
         public function __construct()
@@ -291,38 +279,26 @@ PhoneConversation Entity
 
     use Doctrine\ORM\Mapping as ORM;
 
-    /**
-     * @ORM\Table(name="acme_demo_phone_conversation")
-     * @ORM\Entity
-     */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'acme_demo_phone_conversation')]
     class PhoneConversation
     {
-        /**
-         * @ORM\Column(name="id", type="integer")
-         * @ORM\Id
-         * @ORM\GeneratedValue(strategy="AUTO")
-         */
+        #[ORM\Id]
+        #[ORM\Column(name: 'id', type: 'integer')]
+        #[ORM\GeneratedValue(strategy: 'AUTO')]
         private $id;
 
-        /**
-         * @ORM\ManyToOne(targetEntity="PhoneCall", inversedBy="conversations")
-         * @ORM\JoinColumn(name="call_id", referencedColumnName="id")
-         */
+        #[ORM\ManyToOne(targetEntity: 'PhoneCall', inversedBy: 'conversations')]
+        #[ORM\JoinColumn(name: 'call_id', referencedColumnName: 'id')]
         private $call;
 
-        /**
-         * @ORM\Column(name="result", type="string", length=255, nullable=true)
-         */
+        #[ORM\Column(name: 'result', type: 'string', length: 255, nullable: true)]
         private $result;
 
-        /**
-         * @ORM\Column(name="comment", type="string", length=255, nullable=true)
-         */
+        #[ORM\Column(name: 'comment', type: 'string', length: 255, nullable: true)]
         private $comment;
 
-        /**
-         * @ORM\Column(name="successful", type="boolean", nullable=true)
-         */
+        #[ORM\Column(name: 'successful', type: 'boolean', nullable: true)]
         private $successful;
 
         public function getId()

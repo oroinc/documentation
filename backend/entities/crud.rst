@@ -37,12 +37,12 @@ The Controllers
 
 You then need to create a controller class that comes with two actions: one that is called when a new question should be created and one that can fetch an existing question to let the user modify its data:
 
-.. oro_integrity_check:: de2ee9c384055edb1ffbec46a751ac8e81eb6045
+.. oro_integrity_check:: 11bd1de1b8da7e7da78b11707342f76d98c86a3e
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
        :language: php
-       :lines: 3-52, 65-
+       :lines: 3-41, 52-
 
 
 Then, make sure that the controller is loaded in your routing configuration so that Symfony knows
@@ -122,12 +122,12 @@ You can delete a question through the ``DELETE`` operation available for all ent
 You can delete an entity through the :ref:`DELETE operation <bundle-docs-platform-action-bundle-default-operations>` which is enabled by default for all entities. To run the operation, you need to ensure that your entity has the ``routeName`` option of the entity configuration, which will be used as a route name to redirect a user after the ``DELETE`` operation (as in the example below).
 
 
-.. oro_integrity_check:: 708fa8bf0ced81c51b722ec53d6e2442abd06ea9
+.. oro_integrity_check:: e62086d76ecb2047bae3ea096b82d64977f365da
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/Question.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/Question.php
        :language: php
-       :lines: 16, 25-27, 30, 38-40, 56-58
+       :lines: 21-23, 26, 32, 42-43
 
 
 See the sample configuration of the default ``DELETE`` operation in the |Actions| topic.

@@ -47,20 +47,13 @@ To create a new content widget:
 
    * **Contact Us Form** - Enables you to add a standard Contact Us form.
 
-    .. image:: /user/img/marketing/content_widgets/contact_us.png
-       :alt: Contact us content widget form
+     .. image:: /user/img/marketing/content_widgets/contact_us.png
+        :alt: Contact us content widget form
 
-   * **Image Slider** - Enables you to configure and add an image slider.
+   * **Image Slider** - Enables you to add an image slider with multiple images, configure slider options and style each slide. To configure the image slider, you can select the number of slides to show or scroll, enable or disable autoplay and control its speed in milliseconds, select whether to display dots and/or arrows at the bottom of the image slider in the storefront, control how the slide images are positioned and scaled, and enable or disable infinite scroll. To add slides, click **Add** at the bottom of the *Slides* section. You can customize each slide by setting its sort order, URL, target window, ALT text, text alignment, header and text for the image. You can choose different image sizes based on screen size (extra large, large, medium, small).
 
-    .. image:: /user/img/marketing/content_widgets/image_slider_1.png
-       :alt: Image slider content widget form
-
-    |
-
-    .. note:: You can add as many slides as necessary by clicking **Add** at the bottom of the *Slides* section.
-
-            .. image:: /user/img/marketing/content_widgets/image_slider_2.png
-               :alt: Image slider content widget form
+     .. image:: /user/img/marketing/content_widgets/image_slider_1.png
+        :alt: Image slider content widget form
 
     |
 
@@ -89,7 +82,6 @@ To create a new content widget:
 
      .. image:: /user/img/marketing/content_widgets/injected-widget.png
         :alt: Contact us widget embedded in tabbed content widget
-        :scale: 40%
 
 4. Once you have provided all widget-specific details, click **Save and Close**.
 

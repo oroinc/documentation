@@ -30,14 +30,14 @@ and then methods ``addStatusData`` and ``getStatusData`` will be available.
         if (null !== $item && !$this->getSourceIterator()->valid()) {
             $this->addStatusData('lastItemUpdatedAt', $item['updated_at']);
         }
-        
+
         return $item;
     }
     // ...
 
 
     // retrieve data from status
-    $status = $this->container->get('doctrine')->getRepository('OroIntegrationBundle:Channel')
+    $status = $this->container->get('doctrine')->getRepository('Oro\Bundle\IntegrationBundle\Entity\Channel')
         ->getLastStatusForConnector($channel, $this->getType(), Status::STATUS_COMPLETED);
     /** @var array **/
     $data = $status->getData();

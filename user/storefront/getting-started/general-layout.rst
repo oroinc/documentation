@@ -43,7 +43,7 @@ User Menu is located on the top left of the page and contains the following sect
 
 **For a user that has signed in:**
 
-1. The name of the signed in user, e.g. *Signed in as: Amanda Cole*.
+1. The name of the signed in user, e.g. *Amanda Cole*.
 2. A link to the user account.
 3. The **Sign Out** button.
 

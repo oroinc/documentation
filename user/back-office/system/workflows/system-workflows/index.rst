@@ -51,6 +51,9 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
 
 * :ref:`Seller Registration Workflow for OroMarketplace <system--workflows--seller-registration-flow>`
 
+* :ref:`Seller Product Approval Workflow <system--workflows--seller-product-approval-workflow>`
+
+
 .. toctree::
    :maxdepth: 1
    :hidden:
@@ -65,6 +68,7 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
    Unqualified Sales Lead Workflow <unqualified-lead>
    Contact Request Workflow <contact-request-wf>
    Seller Registration Request Workflow <seller-registration-flow>
+   Seller Product Approval Workflow <seller-product-approval>
 
 .. include:: /include/include-images.rst
    :start-after: begin

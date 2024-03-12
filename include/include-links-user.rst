@@ -181,7 +181,7 @@ Links (User)
 
 .. |Symfony2 expression language| raw:: html
 
-   <a href="https://symfony.com/doc/5.4/components/expression_language/syntax.html" target="_blank">Symfony2 expression language</a>
+   <a href="https://symfony.com/doc/6.4/components/expression_language/syntax.html" target="_blank">Symfony2 expression language</a>
 
 .. |how to create a new order from scratch| raw:: html
 
@@ -361,11 +361,11 @@ Links (User)
 
 .. |the Symfony Twig Extensions (URL)| raw:: html
 
-   <a href="https://symfony.com/doc/5.4/reference/twig_reference.html#url" target="_blank">the Symfony Twig Extensions (URL)</a>
+   <a href="https://symfony.com/doc/6.4/reference/twig_reference.html#url" target="_blank">the Symfony Twig Extensions (URL)</a>
 
 .. |the Symfony Twig Extensions (Path)| raw:: html
 
-   <a href="https://symfony.com/doc/5.4/reference/twig_reference.html#path" target="_blank">the Symfony Twig Extensions (Path)</a>
+   <a href="https://symfony.com/doc/6.4/reference/twig_reference.html#path" target="_blank">the Symfony Twig Extensions (Path)</a>
 
 .. |default| raw:: html
 
@@ -657,7 +657,7 @@ Links (User)
 
 .. |Symfony Expression Language| raw:: html
 
-   <a href="https://symfony.com/doc/5.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
+   <a href="https://symfony.com/doc/6.4/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
 
 .. |Resource Library Extension| raw:: html
 
@@ -761,7 +761,7 @@ Links (User)
 
 .. |CAN-SPAM| raw:: html
 
-   <a href="https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business" target="_blank">CAN-SPAM</a>
+   <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank">CAN-SPAM</a>
 
 .. |COPPA| raw:: html
 
@@ -906,6 +906,10 @@ Links (User)
 
    <a href="https://www.youtube.com/watch?v=CUjmniejCQU" target="_blank">how to configure integration with Stripe</a>
 
+.. |Seller Product Approval workflow extension| raw:: html
+
+   <a href="https://extensions.oroinc.com/orocommerce/extension/seller-product-approval-workflow/" target="_blank">Seller Product Approval workflow extension</a>
+
 .. |Google Retail Recommendations| raw:: html
 
    <a href="https://cloud.google.com/retail/docs" target="_blank">Google Retail Recommendations</a>
@@ -914,7 +918,15 @@ Links (User)
 
    <a href="https://oroinc.com/contact-us/" target="_blank">contact our support team</a>
 
+.. |get in touch with us|  raw:: html
+
+   <a href="https://oroinc.com/contact-us/" target="_blank">get in touch with us</a>
+
 .. |extensions store|  raw:: html
 
    <a href="https://extensions.oroinc.com/" target="_blank">extensions store</a>
+
+.. |Get Started with Tableau|  raw:: html
+
+   <a href="https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm" target="_blank">Get Started with Tableau</a>
 

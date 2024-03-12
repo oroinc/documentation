@@ -148,8 +148,7 @@ Built-in OroCommerce Themes
 
 Out-of-the-box, the OroCommerce application comes with two predefined storefront themes: default, and custom.
 
-* **The default theme** is a fully featured theme that provides the complete look and feel for the OroCommerce storefront UI out-of-the-box.
-* **The custom theme** is a sample that illustrates how to build your own custom theme.
+* **The Refreshing Teal theme** is a fully featured theme that provides the complete look and feel for the OroCommerce storefront UI out-of-the-box.
 
 The *default* theme is aimed to be *base for any* :ref:`customizations <storefront_customization_guide>`.
 

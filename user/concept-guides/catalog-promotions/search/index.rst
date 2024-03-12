@@ -7,6 +7,12 @@ A search function on your website provides a seamless experience for your visito
 
 Your website may have a vast database with numerous pages and information, making it harder for users to locate the required information. With this in mind, Oro has developed a helpful search utility to help customers query that database and find the material quickly.
 
+.. note:: See a short demo on how OroCommerce's advanced search features can enhance the B2B ecommerce experience for both sellers and buyers.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SqKn5xKjs0g?si=q0x0dG2hNzDmhUi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 You can find the search bar:
 
 * in the header and menu of the storefront
@@ -64,7 +70,6 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 
 .. image:: /user/img/concept-guides/search/search-by-entity.png
    :alt: Difference between the regular search and search by entity
-   :scale: 60%
 
 .. _user-guide-getting-started-search-tag:
 
@@ -72,7 +77,6 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 
 .. image:: /user/img/concept-guides/search/search-by-tag.png
    :alt: Difference between the regular search and search by entity
-   :scale: 60%
 
 * :ref:`Quick Search <user-guide--system-configuration--quick-search>` - The intelligent search feature is located in the configuration panel on the left (on all configuration levels). It helps you locate the specific configuration option instantly by keywords. It narrows down the query when you start typing the key letters and displays real-time search results.
 

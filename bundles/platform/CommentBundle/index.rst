@@ -18,39 +18,21 @@ Usually, you do not need to provide a predefined set of associations between the
     namespace Acme\Bundle\DemoBundle\Migrations\Schema\v1_5;
 
     use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\CommentBundle\Migration\Extension\CommentExtension;
     use Oro\Bundle\CommentBundle\Migration\Extension\CommentExtensionAwareInterface;
+    use Oro\Bundle\CommentBundle\Migration\Extension\CommentExtensionAwareTrait;
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-    class AddCommentAssociation  implements Migration, CommentExtensionAwareInterface
+    class AddCommentAssociation implements Migration, CommentExtensionAwareInterface
     {
-        protected CommentExtension $commentExtension;
+        use CommentExtensionAwareTrait;
 
         /**
-         * @inheritDoc
-         */
-        public function setCommentExtension(CommentExtension $commentExtension): void
-        {
-            $this->commentExtension = $commentExtension;
-        }
-
-        /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         public function up(Schema $schema, QueryBag $queries)
         {
-            self::addComment($schema, $this->comment);
-        }
-
-        /**
-         * @param Schema $schema
-         * @param CommentExtension $commentExtension
-         * @return void
-         */
-        public static function addComment(Schema $schema, CommentExtension $commentExtension): void
-        {
-            $commentExtension->addCommentAssociation($schema, 'acme_demo_entity');
+            $this->commentExtension->addCommentAssociation($schema, 'acme_demo_entity');
         }
     }
 

@@ -234,7 +234,7 @@ body.js-menu-open2:before {
 @media (min-width: 1600px) {
   .header__nav-global,
   .header__nav-product {
-    max-width: 1200px;
+    max-width: 1630px;
     margin: 0 auto;
   }
 }
@@ -420,7 +420,7 @@ header .search .field-search input[type="text"] {
   color: #352E31;
   width: 100%;
   padding-left: 42px;
-  padding-right: 40px;
+  padding-right: 10px;
   margin-left: auto;
   border-radius: 0;
   font-size: 14px;
@@ -3833,4 +3833,8 @@ header .search .field-search .ep-autosuggest-container {
 }
 .image-reference {
   display: inline-block;
+}
+.algolia-autocomplete .algolia-docsearch-suggestion--title {
+  font-size: 14px;
+  line-height: 20px;
 }

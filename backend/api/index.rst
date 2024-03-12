@@ -24,7 +24,7 @@ By default, only custom entities, dictionaries, and enumerations are accessible 
 
    commands
    security
-   firewall-listeners
+   firewall-authenticators
    configuration-general
    configuration
    configuration-extra

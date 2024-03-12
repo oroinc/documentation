@@ -30,19 +30,14 @@ To configure the storefront theme options globally:
 
 3. In the **Theme Settings** section, configure the following options:
 
-   * **Theme** --- select the theme from the list. The theme controls general design of the storefront that defines its look and feel. *Default* and *custom* themes are available out-of-the-box for the storefront.
+   * **Theme** --- select the theme from the list. The theme controls general design of the storefront that defines its look and feel.
 
-   For example, this is how the address book looks in the storefront for the default and custom themes:
+   For example, this is how the address book looks in the storefront for the default:
 
-     **Default theme**
+     **Refreshing Teal Theme**
 
      .. image:: /user/img/system/config_commerce/design/MyProfileAddressBooks.png
-        :alt: A sample of the Address Book menu in the storefront if the default theme is enabled
-
-     **Custom theme**
-
-     .. image:: /user/img/system/config_commerce/design/address_book_compact.png
-        :alt: A sample of the Address Book menu in the storefront if the custom theme is enabled
+        :alt: A sample of the Address Book menu in the storefront if the Refreshing Teal Theme is enabled
 
    * **Product Image Placeholder** --- select the image file that will appear on the product listing and product view pages for the products that have no associated images to avoid a blank image page.
 

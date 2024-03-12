@@ -49,6 +49,7 @@ the internal search engine of OroPlatform. A fully working example can look like
                 -
                     name: description
                     target_type: text
+                    target_fulltext: false
                     target_fields: [description, another_index_name]  parameter.
                 -
                     name: manufacturer
@@ -57,6 +58,7 @@ the internal search engine of OroPlatform. A fully working example can look like
                         -
                             name: name
                             target_type: text
+                            target_fulltext: false
                             target_fields: [manufacturer, all_data]
                         -
                             name: id
@@ -69,6 +71,7 @@ the internal search engine of OroPlatform. A fully working example can look like
                         -
                             name: name
                             target_type: text
+                            target_fulltext: false
                             target_fields: [all_data]
 
 ``alias``
@@ -156,6 +159,13 @@ the name as the field's name (i.e. what is specified under the ``name`` key).
 
 The type of the virtual search field (possible values are ``datetime``, ``double``, ``integer``,
 and ``text``). This option is required.
+
+``target_fulltext``
+~~~~~~~~~~~~~~~~~~~
+
+**type**: ``string``
+
+If ``target_fulltext`` option is set to false then target fields will not support fulltext search.
 
 ``label``
 ---------

@@ -63,16 +63,16 @@ Example:
 
 .. code-block:: none
 
-    @Config(
+    #[Config(
          ....
-         defaultValues={
+        defaultValues: [
              ...
-             "merge"={
-                 "enable"=true,
-                 "max_entities_count"=5
-             }
-         }
-    )
+            'merge' => [
+                'enable' => true,
+                'max_entities_count' => 5
+            ]
+        ]
+    )]
 
 Fields Level Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -152,10 +152,8 @@ Example:
     {
          ...
 
-        /**
-         * @ORM\Column(type="string", length=255)
-         * @ConfigField(defaultValues={"merge"={"enable"=true}})
-         */
+        #[ORM\Column(type: 'string', length: 255)]
+        #[ConfigField(defaultValues: ['merge' => ['enable' => true]])]
         protected $name;
 
 Mass Action Configuration
@@ -222,5 +220,6 @@ Dependencies
 The following diagram shows dependencies among EntityMergeBundle classes (click on the image to zoom):
 
 .. image:: /img/backend/entities/entity_merge_class_diagramm.png
-   :scale: 60%
+   :align: center
+   :scale: 40%
    :alt: Dependencies among EntityMergeBundle classes

@@ -11,7 +11,7 @@ It is a good idea to create product :ref:`categories <user-guide--master-catalog
    :alt: The default product options details page
 
 .. hint::
-    In OroMarketplace, organizations are represented by sellers. While they can see the master catalog's structure and place their products into its categories, they cannot affect it, as the master catalog predefined by the administrator of the marketplace owner organization. For more information, see the :ref:`Marketplace Concept Guide <concept-guide-oro-marketplace>`.
+    In OroMarketplace, organizations are represented by sellers. While they can see the master catalog's structure and place their products into its categories, they cannot affect it, as the master catalog is predefined by the administrator of the marketplace owner organization. For more information, see the :ref:`Marketplace Concept Guide <concept-guide-oro-marketplace>`.
 
 Master Catalog in a Multi-Org Application
 -----------------------------------------
@@ -24,7 +24,6 @@ Consider each available organization in your OroCommerce application as an umbre
 
 .. image:: /user/img/products/master_catalog/mc_multi-org.png
    :align: center
-   :scale: 60%
    :alt: Illustration of a multi-org application
 
 Master VS Web Catalog

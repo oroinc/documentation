@@ -168,11 +168,9 @@ Add a Menu Item
   The steps are illustrated below:
 
   .. image:: /user/img/system/frontend_menu/frontend_menu_11.png
-     :scale: 50%
      :alt: The steps you need to take to enable the About section to customers with configured taxes in the storefront
 
   .. image:: /user/img/system/frontend_menu/frontend_menu_12.png
-     :scale: 50%
      :alt: The steps you need to take to disable the About section to customers with configured taxes in the storefront
 
 * **Target Window** --- determines the way to open the linked document or URI. Select *Same Window* option to open it in the current browser window. Select *New Window* to open it in a new browser tab.

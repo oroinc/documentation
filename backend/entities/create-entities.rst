@@ -19,58 +19,41 @@ A document comprises a brief subject, a more verbose description, a due date, an
 
     /**
      * ORM Entity Document.
-     *
-     * @ORM\Entity()
-     * @ORM\Table(name="acme_demo_document")
      */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'acme_demo_document')]
     class Document
     {
-       /**
-        * @ORM\Id
-        * @ORM\GeneratedValue
-        * @ORM\Column(type="integer")
-        */
+       #[ORM\Id]
+       #[ORM\GeneratedValue]
+       #[ORM\Column(type: 'integer')]
        private $id;
 
-       /**
-        * @ORM\Column(
-        *     name="subject",
-        *     type="string",
-        *     length=255,
-        *     nullable=false
-        * )
-        */
+       #[ORM\Column(
+           name: 'subject',
+           type: 'string',
+           length: 255,
+           nullable: false
+       )]
        private $subject;
 
-       /**
-        * @ORM\Column(
-        *     name="description",
-        *     type="string",
-        *     length=255,
-        *     nullable=false
-        * )
-        */
+       #[ORM\Column(
+           name: 'description',
+           type: 'string',
+           length: 255,
+           nullable: false
+       )]
        private $description;
 
-       /**
-        * @ORM\Column(
-        *     name="due_date",
-        *     type="datetime",
-        *     nullable=true
-        * )
-        */
+       #[ORM\Column(
+           name: 'due_date',
+           type: 'datetime',
+           nullable: true
+       )]
        private $dueDate;
 
-       /**
-        * @ORM\ManyToOne(
-        *     targetEntity="Acme\Bundle\DemoBundle\Entity\Priority"
-        * )
-        * @ORM\JoinColumn(
-        *     name="priority_id",
-        *     nullable=true,
-        *     onDelete="SET NULL"
-        * )
-        */
+       #[ORM\ManyToOne(targetEntity: 'Acme\Bundle\DemoBundle\Entity\Priority')]
+       #[ORM\JoinColumn(name: 'priority_id', nullable: true, onDelete: 'SET NULL')]
        private $priority;
 
        public function getId(): ?int
@@ -138,27 +121,22 @@ Users should be able to create and change priorities through the user interface,
 
     /**
      * ORM Entity Priority.
-     *
-     * @ORM\Entity()
-     * @ORM\Table(name="acme_demo_priority")
      */
+    #[ORM\Entity]
+    #[ORM\Table(name: 'acme_demo_priority')]
     class Priority
     {
-       /**
-        * @ORM\Id
-        * @ORM\GeneratedValue
-        * @ORM\Column(type="integer")
-        */
+       #[ORM\Id]
+       #[ORM\GeneratedValue]
+       #[ORM\Column(type: 'integer')]
        private $id;
 
-       /**
-        * @ORM\Column(
-        *     name="label",
-        *     type="string",
-        *     length=255,
-        *     nullable=false
-        * )
-        */
+       #[ORM\Column(
+          name: 'label',
+          type: 'string',
+          length: 255,
+          nullable: false
+       )]
        private $label;
 
        public function getId(): ?int

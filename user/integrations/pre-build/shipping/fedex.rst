@@ -3,7 +3,7 @@
 Integration with FedEx Shipping Service
 =======================================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 FedEx is a multinational courier delivery services company, known for its comprehensive suite of shipping and logistics solutions. The  services range from express parcel delivery to freight transportation, providing options tailored to the diverse needs of e-commerce businesses.
 

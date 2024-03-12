@@ -1135,8 +1135,8 @@ table
 
 type: ``string``
 
-The entity class name or the entity alias in the ``BundleName:EntityName`` notation (for example,
-``AcmeDemoBundle:User``).
+The entity class name or the entity alias in the ``Acme\Bundle\DemoBundle\Entity\MyEntity`` notation (for example,
+``Acme\Bundle\DemoBundle\Entity\User``).
 
 alias
 """""
@@ -1634,7 +1634,7 @@ board
 
 - default_column (Optional): Specifies a column ID to show entities with no value set for group_by ``property``. By default, the first column will be used.
 - plugin (Optional): Specifies the plugin realization. Default ``orodatagrid/js/app/plugins/grid-component/board-appearance-plugin``
-- board_vew (Optional): Specifies the view for kanban board. Default ``orodatagrid/js/app/views/board/board-view``
+- board_view (Optional): Specifies the view for kanban board. Default ``orodatagrid/js/app/views/board/board-view``
 - card_view (Required): Specifies the view for kanban card.
 - column_header_view (Optional): Specifies the view for board column header. Default ``orodatagrid/js/app/views/board/column-header-view``
 - column_view (Optional): Specifies the view for board column. Default ``orodatagrid/js/app/views/board/column-view``

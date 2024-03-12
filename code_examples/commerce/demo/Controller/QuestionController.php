@@ -5,8 +5,8 @@ namespace Acme\Bundle\DemoBundle\Controller;
 use Acme\Bundle\DemoBundle\Entity\Question;
 use Acme\Bundle\DemoBundle\Form\Type\QuestionType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
-use Oro\Bundle\SecurityBundle\Annotation\Acl;
-use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
+use Oro\Bundle\SecurityBundle\Attribute\Acl;
+use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -16,16 +16,13 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * Contains CRUD actions for Question
- *
- * @Route("/question", name="acme_demo_question_")
  */
+#[Route(path: '/question', name: 'acme_demo_question_')]
 class QuestionController extends AbstractController
 {
-    /**
-     * @Route("/", name="index")
-     * @Template
-     * @AclAncestor("acme_demo_question_view")
-     */
+    #[Route(path: '/', name: 'index')]
+    #[Template]
+    #[AclAncestor('acme_demo_question_view')]
     public function indexAction(): array
     {
         return [
@@ -33,16 +30,9 @@ class QuestionController extends AbstractController
         ];
     }
 
-    /**
-     * @Route("/view/{id}", name="view", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_demo_question_view",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\Question",
-     *      permission="VIEW"
-     * )
-     */
+    #[Route(path: '/view/{id}', name: 'view', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_demo_question_view', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Question', permission: 'VIEW')]
     public function viewAction(Question $entity): array
     {
         return [
@@ -50,11 +40,9 @@ class QuestionController extends AbstractController
         ];
     }
 
-    /**
-     * @Route("/report", name="report")
-     * @Template
-     * @AclAncestor("acme_demo_question_report")
-     */
+    #[Route(path: '/report', name: 'report')]
+    #[Template]
+    #[AclAncestor('acme_demo_question_report')]
     public function reportAction(): array
     {
         return [
@@ -64,19 +52,13 @@ class QuestionController extends AbstractController
 
     /**
      * Create Question
-     *
-     * @Route("/create", name="create", options={"expose"=true})
-     * @Template("@AcmeDemo/Question/update.html.twig")
-     * @Acl(
-     *      id="acme_demo_question_create",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\Question",
-     *      permission="CREATE"
-     * )
      */
+    #[Route(path: '/create', name: 'create', options: ['expose' => true])]
+    #[Template('@AcmeDemo/Question/update.html.twig')]
+    #[Acl(id: 'acme_demo_question_create', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Question', permission: 'CREATE')]
     public function createAction(Request $request): array|RedirectResponse
     {
-        $createMessage = $this->get(TranslatorInterface::class)->trans(
+        $createMessage = $this->container->get(TranslatorInterface::class)->trans(
             'acme.demo.controller.question.saved.message'
         );
 
@@ -85,19 +67,13 @@ class QuestionController extends AbstractController
 
     /**
      * Edit Question form
-     *
-     * @Route("/update/{id}", name="update", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_demo_question_update",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\Question",
-     *      permission="EDIT"
-     * )
      */
+    #[Route(path: '/update/{id}', name: 'update', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_demo_question_update', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Question', permission: 'EDIT')]
     public function updateAction(Question $entity, Request $request): array|RedirectResponse
     {
-        $updateMessage = $this->get(TranslatorInterface::class)->trans(
+        $updateMessage = $this->container->get(TranslatorInterface::class)->trans(
             'acme.demo.controller.question.saved.message'
         );
 
@@ -109,7 +85,7 @@ class QuestionController extends AbstractController
         Request $request,
         string $message = ''
     ): array|RedirectResponse {
-        return $this->get(UpdateHandlerFacade::class)->update(
+        return $this->container->get(UpdateHandlerFacade::class)->update(
             $entity,
             $this->createForm(QuestionType::class, $entity),
             $message,
@@ -118,7 +94,7 @@ class QuestionController extends AbstractController
         );
     }
 
-    public static function getSubscribedServices()
+    public static function getSubscribedServices(): array
     {
         return array_merge(
             parent::getSubscribedServices(),

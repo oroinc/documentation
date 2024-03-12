@@ -5,7 +5,7 @@
 Integration with Ingenico Payment Service
 =========================================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Ingenico is a well-known company specialized in providing payment solutions and services to businesses and organizations around the world. Ingenico enables businesses of all sizes to securely and efficiently process a wide range of payment methods, from credit and debit cards to contactless and mobile payments.
 

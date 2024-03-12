@@ -4,30 +4,32 @@ Entity Fallback Values
 ======================
 
 You can set up an entity field to fall back to a different entity's field value.
-To set up such a field, add it to the entity as a property (or create a migration for adding it), and add a @ConfigField annotation and Doctrine association to |EntityFieldFallbackValue| (or array configuration in migration) like the following configuration:
+To set up such a field, add it to the entity as a property (or create a migration for adding it), and add a #[ConfigField] attribute and Doctrine association to |EntityFieldFallbackValue| (or array configuration in migration) like the following configuration:
 
 .. code-block:: php
 
     /**
      * @var EntityFieldFallbackValue
-     *
-     * @ORM\OneToOne(targetEntity="Oro\Bundle\EntityBundle\Entity\EntityFieldFallbackValue", cascade={"All"})
-     * @ORM\JoinColumn(name="some_field_name_fallback_id", referencedColumnName="id", onDelete="SET NULL")
-     * @ConfigField(
-     *     defaultValues={
-     *          "fallback": {
-     *              "fallbackList": {
-     *                  "someFallbackId" : {
-     *                      "fieldName": "someFieldName"
-     *                  },
-     *                  "systemConfig": {
-     *                      "configName": "oro_entity.some_configuration_name"
-     *                  }
-     *              }
-     *          }
-     *     }
-     * )
      */
+    #[ORM\OneToOne(
+        targetEntity: 'Oro\Bundle\EntityBundle\Entity\EntityFieldFallbackValue',
+        cascade: ['All']
+    )]
+    #[ORM\JoinColumn(
+        name: 'some_field_name_fallback_id',
+        referencedColumnName: 'id',
+        onDelete: 'SET NULL'
+    )]
+    #[ConfigField(
+        defaultValues: [
+            'fallback' => [
+                'fallbackList' => [
+                    'someFallbackId' => ['fieldName' => 'someFieldName'],
+                    'systemConfig' => ['configName' => 'oro_entity.some_configuration_name']
+                ]
+            ]
+        ]
+    )]
     protected $someFieldName;
 
 An example of adding a field by migration:
@@ -97,7 +99,7 @@ To fallback to a new entity field, you need to create a new fallback provider, e
             - { name: oro_entity.fallback_provider, id: systemConfig }
 
 Extend the parent ``oro_entity.fallback.provider.abstract_provider`` service, inject some dependencies, and tag it with
-`oro_entity.fallback_provider` as tag name, and `systemConfig` as id (this id will go into the @ConfigField `fallbackList` configuration as fallback name.
+`oro_entity.fallback_provider` as tag name, and `systemConfig` as id (this id will go into the #[ConfigField] `fallbackList` configuration as fallback name.
 The provider will then need to implement `getFallbackHolderEntity`, which defines how to access the parent fallback entity, `getFallbackLabel`, which is used for translating the fallback name,
 and optionally, the function `isFallbackSupported`, which can add some conditions on whether the fallback should appear as an option on the UI for a specific instance.
 

@@ -303,6 +303,19 @@ To add a div block with a particular content element to your page:
    :alt: Inspecting the HTML code which displays wrapping the inserted text and image blocks into the div container
 
 
+Add Icons
+^^^^^^^^^
+
+To add an icon to your page:
+
+1. Drag the Icon block under the UI Components section to the required place on your canvas.
+2. Select the required icon from the popup dialog. Use the search bar to locate the icon faster.
+3. Configure the icon the way you require (adjust size, style, color, or replace the icon) under the Style Manager menu.
+
+.. image:: /user/img/concept-guides/content-management/icon_components.png
+   :alt: Inserting an icon to the canvas and adjusting the settings
+
+
 .. _wysiwyg-add-tables:
 
 Add Tables

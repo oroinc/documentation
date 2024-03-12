@@ -5,8 +5,8 @@ namespace Acme\Bundle\DemoBundle\Controller;
 use Acme\Bundle\DemoBundle\Entity\Priority;
 use Acme\Bundle\DemoBundle\Form\Type\PriorityType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
-use Oro\Bundle\SecurityBundle\Annotation\Acl;
-use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
+use Oro\Bundle\SecurityBundle\Attribute\Acl;
+use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -16,16 +16,13 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * Contains CRUD actions for Priority
- *
- * @Route("/priority", name="acme_demo_priority_")
  */
+#[Route(path: '/priority', name: 'acme_demo_priority_')]
 class PriorityController extends AbstractController
 {
-    /**
-     * @Route("/", name="index")
-     * @Template
-     * @AclAncestor("acme_demo_priority_view")
-     */
+    #[Route(path: '/', name: 'index')]
+    #[Template]
+    #[AclAncestor('acme_demo_priority_view')]
     public function indexAction(): array
     {
         return [
@@ -33,16 +30,9 @@ class PriorityController extends AbstractController
         ];
     }
 
-    /**
-     * @Route("/view/{id}", name="view", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_demo_priority_view",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\Priority",
-     *      permission="VIEW"
-     * )
-     */
+    #[Route(path: '/view/{id}', name: 'view', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_demo_priority_view', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Priority', permission: 'VIEW')]
     public function viewAction(Priority $entity): array
     {
         return [
@@ -52,19 +42,13 @@ class PriorityController extends AbstractController
 
     /**
      * Create Priority
-     *
-     * @Route("/create", name="create", options={"expose"=true})
-     * @Template("@AcmeDemo/Priority/update.html.twig")
-     * @Acl(
-     *      id="acme_demo_priority_create",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\Priority",
-     *      permission="CREATE"
-     * )
      */
+    #[Route(path: '/create', name: 'create', options: ['expose' => true])]
+    #[Template('@AcmeDemo/Priority/update.html.twig')]
+    #[Acl(id: 'acme_demo_priority_create', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Priority', permission: 'CREATE')]
     public function createAction(Request $request): array|RedirectResponse
     {
-        $createMessage = $this->get(TranslatorInterface::class)->trans(
+        $createMessage = $this->container->get(TranslatorInterface::class)->trans(
             'acme.demo.controller.priority.saved.message'
         );
 
@@ -73,19 +57,13 @@ class PriorityController extends AbstractController
 
     /**
      * Edit Priority form
-     *
-     * @Route("/update/{id}", name="update", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_demo_priority_update",
-     *      type="entity",
-     *      class="Acme\Bundle\DemoBundle\Entity\Priority",
-     *      permission="EDIT"
-     * )
      */
+    #[Route(path: '/update/{id}', name: 'update', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_demo_priority_update', type: 'entity', class: 'Acme\Bundle\DemoBundle\Entity\Priority', permission: 'EDIT')]
     public function updateAction(Priority $entity, Request $request): array|RedirectResponse
     {
-        $updateMessage = $this->get(TranslatorInterface::class)->trans(
+        $updateMessage = $this->container->get(TranslatorInterface::class)->trans(
             'acme.demo.controller.priority.saved.message'
         );
 
@@ -97,7 +75,7 @@ class PriorityController extends AbstractController
         Request $request,
         string $message = ''
     ): array|RedirectResponse {
-        return $this->get(UpdateHandlerFacade::class)->update(
+        return $this->container->get(UpdateHandlerFacade::class)->update(
             $entity,
             $this->createForm(PriorityType::class, $entity),
             $message,
@@ -106,7 +84,7 @@ class PriorityController extends AbstractController
         );
     }
 
-    public static function getSubscribedServices()
+    public static function getSubscribedServices(): array
     {
         return array_merge(
             parent::getSubscribedServices(),

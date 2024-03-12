@@ -5,8 +5,8 @@ namespace Acme\Bundle\WysiwygBundle\Controller;
 use Acme\Bundle\WysiwygBundle\Entity\BlogPost;
 use Acme\Bundle\WysiwygBundle\Form\Type\BlogPostType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
-use Oro\Bundle\SecurityBundle\Annotation\Acl;
-use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
+use Oro\Bundle\SecurityBundle\Attribute\Acl;
+use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\FormInterface;
@@ -20,60 +20,41 @@ use Symfony\Contracts\Translation\TranslatorInterface;
  */
 class BlogPostCrudController extends AbstractController
 {
-    /**
-     * @Route("/", name="acme_wysiwyg_blog_post_index")
-     * @Template
-     * @AclAncestor("acme_wysiwyg_blog_post_view")
-     */
+    #[Route(path: '/', name: 'acme_wysiwyg_blog_post_index')]
+    #[Template]
+    #[AclAncestor('acme_wysiwyg_blog_post_view')]
     public function indexAction(): array
     {
         return ['entity_class' => BlogPost::class];
     }
 
-    /**
-     * @Route("/view/{id}", name="acme_wysiwyg_blog_post_view", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_wysiwyg_blog_post_view",
-     *      type="entity",
-     *      class="AcmeWysiwygBundle:BlogPost",
-     *      permission="VIEW"
-     * )
-     */
+    #[Route(path: '/view/{id}', name: 'acme_wysiwyg_blog_post_view', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_wysiwyg_blog_post_view', type: 'entity', class: 'Acme\Bundle\WysiwygBundle\Entity\BlogPost', permission: 'VIEW')]
     public function viewAction(BlogPost $blogPost): array
     {
         return ['entity' => $blogPost];
     }
 
     /**
-     * @Route("/create", name="acme_wysiwyg_blog_post_create")
-     * @Template("@AcmeWysiwyg/BlogPostCrud/update.html.twig")
-     * @Acl(
-     *      id="acme_wysiwyg_blog_post_create",
-     *      type="entity",
-     *      class="AcmeWysiwygBundle:BlogPost",
-     *      permission="CREATE"
-     * )
      *
      * @return array|Response
      */
+    #[Route(path: '/create', name: 'acme_wysiwyg_blog_post_create')]
+    #[Template('@AcmeWysiwyg/BlogPostCrud/update.html.twig')]
+    #[Acl(id: 'acme_wysiwyg_blog_post_create', type: 'entity', class: 'Acme\Bundle\WysiwygBundle\Entity\BlogPost', permission: 'CREATE')]
     public function createAction(Request $request)
     {
         return $this->update($request, new BlogPost());
     }
 
     /**
-     * @Route("/update/{id}", name="acme_wysiwyg_blog_post_update", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_wysiwyg_blog_post_update",
-     *      type="entity",
-     *      class="AcmeWysiwygBundle:BlogPost",
-     *      permission="EDIT"
-     * )
      *
      * @return array|Response
      */
+    #[Route(path: '/update/{id}', name: 'acme_wysiwyg_blog_post_update', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_wysiwyg_blog_post_update', type: 'entity', class: 'Acme\Bundle\WysiwygBundle\Entity\BlogPost', permission: 'EDIT')]
     public function updateAction(Request $request, BlogPost $blogPost)
     {
         return $this->update($request, $blogPost);
@@ -84,11 +65,11 @@ class BlogPostCrudController extends AbstractController
      */
     protected function update(Request $request, BlogPost $blogPost)
     {
-        return $this->get(UpdateHandlerFacade::class)
+        return $this->container->get(UpdateHandlerFacade::class)
             ->update(
                 $blogPost,
                 $this->createForm(BlogPostType::class, $blogPost),
-                $this->get(TranslatorInterface::class)->trans('acme.wysiwyg.blogpost.message.saved'),
+                $this->container->get(TranslatorInterface::class)->trans('acme.wysiwyg.blogpost.message.saved'),
                 $request,
                 null,
                 function (BlogPost $blogPost, FormInterface $form, Request $request) {

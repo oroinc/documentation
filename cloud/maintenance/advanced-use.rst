@@ -124,7 +124,9 @@ Some options may also be omitted as they are added automatically:
 * The `--no-interaction (-n)` option will be ignored because it is added automatically during the `deploy` | `upgrade` command.
 * The `-v|vv|vvv, --verbose` option will be used (if specified) with a higher priority than the same option in the `deploy` | `upgrade` command, e.g. ``orocloud-cli deploy -vv``.
 
-**after_composer_install_commands**
+**[Deprecated] after_composer_install_commands**
+
+.. important:: Please avoid using it as it is incompatible with the :ref:`Application Packages Approach <orocloud-maintenance-use-upgrade>`.
 
 .. code-block:: yaml
 
@@ -180,7 +182,7 @@ There are two types of pages in OroCloud, maintenance and error. Maintenance pag
   .. note:: This status also can also be returned by nginx when the requested URL is forbidden or by the OroCommerce application itself. These pages are mananged by ngnix and the  application respectively.
 
 * Error 451 appears when requests are blocked by the firewall if they do not fit access policy, for example, when a request is coming from a forbidden IP address (see `OroCloud WAF Configuration`_ section for more information)
-* Error 501 is returned when when service is not implemented and/or the application does not support the requested functionality
+* Error 501 is returned when service is not implemented and/or the application does not support the requested functionality
 * Error 502 is returned when the server is unavailable (for example, because of the outage).
 
 ``error_pages_path`` is a dynamic error page directory configuration. The default location is the ``error_pages`` directory in a repository. File matching works with response codes and hosts, like 503.$host.html => 503.html => ``error_pages`` option value. Supported response codes are 403, 451, 501, 502, and 503.		

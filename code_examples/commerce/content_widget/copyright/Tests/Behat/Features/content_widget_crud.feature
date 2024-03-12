@@ -45,9 +45,9 @@ Feature: Content Widget CRUD
 
   Scenario: Check content widgets datagrid
     When go to Marketing/ Content Widgets
-    Then there is 3 records in grid
+    Then there is 5 records in grid
     And I should see following grid:
-      | Name       | Description             |      Type | Layout |
+      | Name       | Description             | Type      | Layout |
       | copyright1 | copyright1_description2 | Copyright |        |
     And It should be 6 columns in grid
     And I should see "Created At" column in grid

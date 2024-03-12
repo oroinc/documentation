@@ -6,7 +6,7 @@ To synchronize personal emails using the Oro application, users must configure t
 During the synchronization, the Oro application loads emails from the user's inbox and outbox folders using the following algorithm:
 
 - If their mailbox is synchronized for the first time, the Oro application loads only the emails sent and received in the past year.
-- Only emails in the folders that are enabled for synchronization in the :ref:`User Configuration settings <user-guide-using-emails-view>` are synchronized. To check the settings, click **My Configuration** under your name on the top right on the back-office, and navigate to **System Configuration > General Setup > Email Configuration >Email Synchronization Settings**.
+- Only emails in the folders that are enabled for synchronization in the :ref:`User Configuration settings <user-guide-using-emails-view>` are synchronized. To check the settings, click **My Configuration** under your name on the top right in the back-office, and navigate to **System Configuration > General Setup > Email Configuration >Email Synchronization Settings**.
 - When an empty folder is deleted from the email server, it gets deleted in the Oro application during the synchronization via IMAP. Folders with the existing emails that have already been synchronized remain intact and are kept by Oro.
 - When the synchronization settings change, folders are synchronized automatically, but not the emails.
 

@@ -3,7 +3,7 @@
 Integration with UPS Services
 =============================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 OroCommerce offers integration with UPS (United Parcel Service), a global package delivery service designed to meet the diverse shipping needs of businesses. Integration with UPS allows businesses to automate the shipping process and enables OroCommerce to calculate accurate shipping rates based on package dimensions, weight, destination, and the selected UPS service. It also allows customers to track their shipments in real-time.
 

@@ -400,15 +400,13 @@ To add a new config scope:
 
     .. code-block:: php
 
-        /**
-         * @Route(
-         *      "/test-config-route/{activeGroup}/{activeSubGroup}",
-         *      name="test_config",
-         *      requirements={"id"="\d+"},
-         *      defaults={"activeGroup" = null, "activeSubGroup" = null}
-         * )
-         * @Template()
-         */
+        #[Route(
+            path: '/test-config-route/{activeGroup}/{activeSubGroup}',
+            name: 'test_config',
+            requirements: ['id' => '\d+'],
+            defaults: ['activeGroup' => null, 'activeSubGroup' => null]
+        )]
+        #[Template]
         public function testConfigAction(Request $request, $activeGroup = null, $activeSubGroup = null)
         {
             $provider = $this->get('acme_demo.provider.form_provider.test');

@@ -3,7 +3,7 @@
 Integration with Dotdigital
 ===========================
 
-.. hint:: Please |contact our support team| for more information on available integration options, or check out our |extensions store|.
+.. hint:: Please |contact our support team| for more information on available integration options. You can also visit our |extensions store| to explore other integrations and extensions.
 
 Dotdigital is a marketing automation platform that empowers businesses to engage, convert, and retain customers across multiple channels. With its wide array of features, Dotdigital facilitates personalized and targeted marketing campaigns, email automation, SMS marketing, social media engagement, and customer data analysis.
 

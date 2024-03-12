@@ -413,19 +413,18 @@ field helper to process the fields:
 
 You can configure your fields in the UI under *System* / *Entities* / *Entity Management*.
 Alternatively, you can describe the field configuration in your entity directly
-using ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField``:
+using ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField``:
 
 .. code-block:: php
 
-     /**
-      * @ConfigField(
-      *      defaultValues={
-      *          "importexport"={
-      *              "order"=200,
-      *              "full"=true
-      *          }
-      *      }
-      */
+    #[ConfigField(
+        defaultValues: [
+            'importexport' => [
+                'order' => 200,
+                'full' => true
+            ]
+        ]
+    )]
 
 You can use the following options:
 
@@ -447,7 +446,7 @@ You can use the following options:
 |              | interface, but can only be set using annotations.                 |
 +--------------+-------------------------------------------------------------------+
 
-.. note:: You can check the :ref:`@ConfigField <annotation-config-field-importexport>` section for more information.
+.. note:: You can check the :ref:`#[ConfigField] <annotation-config-field-importexport>` section for more information.
 
 Import One-To-Many Relations
 ----------------------------
@@ -1153,3 +1152,47 @@ Both filesystems can be changed with the configuration of the :ref:`File Storage
 
 .. include:: /include/include-links-dev.rst
     :start-after: begin
+
+
+Troubleshooting Problems
+------------------------
+
+.. note:: Be careful when adding new relations to the entity and using them for importing. In case no valid data the possible situation of losing the related collections which located deeper than 1st level. This is due to the fact that the ``Oro\Bundle\ImportExportBundle\Field\RelatedEntityStateHelper`` class handles only the first level of collections in the ``rememberAlteredCollectionsItems`` method. For example, how it was fixed for ``Oro\Bundle\ProductBundle\Entity\ProductKitItem::$products`` in ``Oro\Bundle\ProductBundle\ImportExport\Strategy\ProductStrategy::invalidateEntity`` and ``Oro\Bundle\ProductBundle\ImportExport\Strategy\ProductStrategy::importEntityFields``.
+
+.. code-block:: php
+
+    namespace Oro\Bundle\ProductBundle\ImportExport\Strategy;
+
+    use Oro\Bundle\BatchBundle\Item\Support\ClosableInterface;
+    use Oro\Bundle\LocaleBundle\ImportExport\Strategy\LocalizedFallbackValueAwareStrategy;
+    use Oro\Bundle\ProductBundle\Entity\ProductKitItem;
+
+    class ProductStrategy extends LocalizedFallbackValueAwareStrategy implements ClosableInterface
+    {
+        protected function importEntityFields($entity, $existingEntity, $isFullData, $entityIsRelation, $itemData)
+        {
+            // Ensures that ProductKitItem which does not belong to Product will not be changed.
+            if ($existingEntity instanceof ProductKitItem &&
+                $this->processingEntity->getId() !== $existingEntity->getProductKit()->getId()
+            ) {
+                return $existingEntity;
+            }
+
+            return parent::importEntityFields($entity, $existingEntity, $isFullData, $entityIsRelation, $itemData);
+        }
+
+        protected function invalidateEntity($entity)
+        {
+            if ($entity->isKit()) {
+                $kitItemsCollection = $entity->getKitItems();
+                // Ensures that ProductKitItem related entities are detached when a product is invalidated and detached.
+                if ($kitItemsCollection instanceof PersistentCollection) {
+                    foreach ($kitItemsCollection->getSnapshot() as $kitItem) {
+                        $this->relatedEntityStateHelper->rememberAlteredCollectionsItems($kitItem);
+                    }
+                }
+            }
+
+            parent::invalidateEntity($entity);
+        }
+    }

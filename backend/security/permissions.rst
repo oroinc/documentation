@@ -22,7 +22,7 @@ possible to add permission globally for some groups (applications); all required
 
 An example of a simple permission configuration:
 
-.. oro_integrity_check:: e85951fa3c358f0eddbcde60810e243a703db4eb
+.. oro_integrity_check:: f8fb5c6f6dc4abd908bc19cf21fff9588335185a
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/permissions.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/permissions.yml

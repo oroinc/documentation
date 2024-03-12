@@ -38,7 +38,7 @@ Let's also make the entity compliant with the |ProductHolderInterface|, so it wi
 .. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Entity/ProductOptions.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Entity/ProductOptions.php
     :language: php
-    :lines: 1-9, 12-41, 106
+    :lines: 1-22, 30-37, 102
 
 
 Installation And Migrations

@@ -7,10 +7,13 @@ OroCommerce offers a versatile and dynamic ecosystem of integrations that extend
 
 * :ref:`GS1 <integrations-misc-gs1>`
 * :ref:`Avatax <integrations-misc-avatax>`
-
+* :ref:`Hawksearch <integrations-search-hawksearch>`
+* :ref:`Marello <integrations-mics-marello>`
 
 .. toctree::
    :hidden:
 
    GS1 <gs1>
    Avatax <avatax>
+   Hawksearch <hawksearch>
+   Marello <marello>

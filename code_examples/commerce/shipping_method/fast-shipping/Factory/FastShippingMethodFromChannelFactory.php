@@ -45,6 +45,7 @@ class FastShippingMethodFromChannelFactory implements IntegrationShippingMethodF
 
         return new FastShippingMethod(
             $this->identifierGenerator->generateIdentifier($channel),
+            $channel->getName(),
             (string)$this->localizationHelper->getLocalizedValue($transport->getLabels()),
             $this->integrationIconProvider->getIcon($channel),
             $channel->isEnabled(),

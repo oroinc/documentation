@@ -27,43 +27,39 @@ The example of the frontend permissions configuration for entity is provided bel
 
 .. code-block:: php
 
-     /**
-     * @ORM\Entity()
-     * @Config(
-     *      defaultValues={
-     *          "ownership"={
-     *              "frontend_owner_type"="FRONTEND_USER",
-     *              "frontend_owner_field_name"="customerUser",
-     *              "frontend_owner_column_name"="customer_user_id",
-     *              "frontend_customer_field_name"="customer",
-     *              "frontend_customer_column_name"="customer_id"
-     *          },
-     *          "security"={
-     *              "type"="ACL",
-     *              "group_name"="commerce",
-     *          },
-     *      }
-     * )
-     */
-     class SomeEntity implements ExtendEntityInterface
-     {
-         /**
-          * @var Customer
-          *
-          * @ORM\ManyToOne(targetEntity="Oro\Bundle\CustomerBundle\Entity\Customer")
-          * @ORM\JoinColumn(name="customer_id", referencedColumnName="id", onDelete="SET NULL")
-          */
-         protected $customer;
+    #[ORM\Entity]
+    #[Config(
+        defaultValues: [
+            'ownership' => [
+                'frontend_owner_type' => 'FRONTEND_USER',
+                'frontend_owner_field_name' => 'customerUser',
+                'frontend_owner_column_name' => 'customer_user_id',
+                'frontend_customer_field_name' => 'customer',
+                'frontend_customer_column_name' => 'customer_id'
+            ],
+            'security' => [
+                'type' => 'ACL',
+                'group_name' => 'commerce'
+            ]
+        ]
+    )]
+    class SomeEntity implements ExtendEntityInterface
+    {
+        /**
+         * @var Customer
+         */
+        #[ORM\ManyToOne(targetEntity: 'Oro\Bundle\CustomerBundle\Entity\Customer')]
+        #[ORM\JoinColumn(name: 'customer_id', referencedColumnName: 'id', onDelete: 'SET NULL')]
+        protected $customer;
 
-         /**
-          * @var CustomerUser
-          *
-          * @ORM\ManyToOne(targetEntity="Oro\Bundle\CustomerBundle\Entity\CustomerUser")
-          * @ORM\JoinColumn(name="customer_user_id", referencedColumnName="id", nullable=true, onDelete="SET NULL")
-          */
-         protected $customerUser;
-     ...
-     }
+        /**
+         * @var CustomerUser
+         */
+        #[ORM\ManyToOne(targetEntity: 'Oro\Bundle\CustomerBundle\Entity\CustomerUser')]
+        #[ORM\JoinColumn(name: 'customer_user_id', referencedColumnName: 'id', nullable: true, onDelete: 'SET NULL')]
+        protected $customerUser;
+        ...
+    }
 
 
 Configure Anonymous Customer User
@@ -74,18 +70,19 @@ Anonymous customer user functionality consists of the sections below.
 AnonymousCustomerUserToken
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|OroBundleCustomerBundleSecurityTokenAnonymousCustomerUserToken| is the token class that is extended from ``AnonymousToken``. It is tied with the ``CustomerVisitor`` entity class which persisted anonymous customer user data for later use. Besides it, the token stores the info taken from the ``visitor_id`` and ``session_id`` cookies. When the token is initialized for the first time, it is filled with the ``Anonymous Customer User`` string to provide compatibility with Symfony security system.
+|OroBundleCustomerBundleSecurityTokenAnonymousCustomerUserToken| is the token class that is extended from ``AnonymousToken``. It is tied with the ``CustomerVisitor`` entity class which persisted anonymous customer user data for later use. Besides it, the token stores the info taken from the ``visitor_id`` and ``session_id`` cookies.
 
 .. code-block:: php
 
 
     $token = new AnonymousCustomerUserToken(
-        'Anonymous Customer User',
-        [$currentWebsite->getGuestRole()->getRole()]
+            $customerVisitor, //instanceof UserInterface
+            $this->rolesProvider->getRoles(), // optional - array of roles
+            $organization // optional - an organization
     );
 
 
-The AnonymousCustomerUserToken is created in the ``authenticate`` method of :ref:`AnonymousCustomerUserAuthenticationProvider <customerbundle-authentication-provider>`.
+The ``AnonymousCustomerUserToken`` is created in the ``createToken`` method of |OroBundleCustomerBundleSecurityAnonymousCustomerUserAuthenticator|.
 
 CustomerVisitor Entity
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -95,7 +92,7 @@ The |OroBundleCustomerBundleEntityCustomerVisitor| class has the following prope
 * id
 * lastVisit - tracks guest last visit datetime
 * sessionId - a unique identifier
-* customerUser - one-to-one relation to ``CustomerUser`` entity. Used to retrieve the customer info from the token. For such cases, the `Guest Customer User`_ term is used, because it is not a "true" user.
+* customerUser - one-to-one relation to ``CustomerUser`` entity. Used to retrieve the customer info from the token.
 
 The session id property is generated through Doctrine ``PrePersist`` Lifecycle Event:
 
@@ -104,14 +101,31 @@ The session id property is generated through Doctrine ``PrePersist`` Lifecycle E
 
     $this->sessionId = bin2hex(random_bytes(10));
 
+.. _customerbundle-authenticator:
 
-Listener
-^^^^^^^^
+Authenticator
+^^^^^^^^^^^^^
 
-The |OroBundleCustomerBundleSecurityFirewallAnonymousCustomerUserAuthenticationListener| class listens requests on the firewall and calls |OroBundleCustomerBundleSecurityAnonymousCustomerUserAuthenticationProvider| using the ``handle`` method.
+.. note:: See |OroBundleCustomerBundleSecurityAnonymousCustomerUserHowToWriteACustomAuthenticator| for more details on the custom authenticator.
 
-The listener checks the token, and if it is the instance of ``AnonymousCustomerUserToken``, sets a visitor Id and a session Id taken from the ``customer_visitor`` cookie to the token.
-If the authentication of ``AnonymousCustomerUserToken`` object is successful, you need to update cookie using the lifetime parameter, ``oro_customer.customer_visitor_cookie_lifetime_days``. By default, this param is 30 days, and it is accessible through the System > Configuration > Commerce > Customer > Customer User section on the global and organization levels:
+
+The |OroBundleCustomerBundleSecurityAnonymousCustomerUserAuthenticator| class represents a significant evolution in the authentication process of the storefront's anonymous users in Symfony 6.4. This class replaces the traditional combination of a Listener and an Authentication Provider, streamlining the process with advanced techniques and new methodologies.
+
+
+Functionality and Workflow
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. **Support Check**: The **supports(Request $request): bool** method determines if the current request should be authenticated as a customer visitor. This involves checking the request type and the presence of an existing token in the token storage.
+2. **Authentication Process**: The **authenticate(Request $request): Passport** method is responsible for the core authentication process. It retrieves the current website and its associated organization, ensuring that they are valid and exist. It then creates an ``AnonymousSelfValidatingPassport`` with an ``AnonymousCustomerUserBadge``, which is built using the credentials from the customer visitor cookie.
+3. **Token Creation**: The **createToken(Passport $passport, string $firewallName): TokenInterface** method generates an ``AnonymousCustomerUserToken``. This token is populated with user, roles, organization data, and holds a ``CustomerVisitor`` object. It ensures the token is saved in the token storage for future use.
+4. **Authentication Success and Failure**: The methods **onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): ?Response** and **onAuthenticationFailure(Request $request, AuthenticationException $exception): ?Response** handle the outcomes of the authentication process, logging the appropriate information.
+5. **Credential Management**: The **saveCredentials(Request $request, Passport $passport): void** method manages the credentials, setting the necessary attributes and cookie information in the request.
+6. **Visitor Authentication**: The **getVisitor(string $credentials): CustomerVisitor** method is a crucial component of the authenticator. It decodes the credentials and retrieves or creates a ``CustomerVisitor`` entity using the ``CustomerVisitorManager``.
+
+This authenticator integrates seamlessly with Symfony's security system, offering a more efficient and streamlined approach to handling anonymous customer user authentication. The use of badges, passports, and a modernized token system enhances the security and robustness of the process, aligning it with contemporary web application standards.
+
+If the authentication of ``AnonymousCustomerUserToken`` object is successful, you need to update cookie using the lifetime parameter, ``oro_customer.customer_visitor_cookie_lifetime_days``.
+By default, this param is 30 days, and it is accessible through the :ref:`System > Configuration > Commerce > Customer > Customer User <sys-config--configuration--commerce--customers--customer-users>` section on the global and organization levels:
 
 .. code-block:: php
 
@@ -135,17 +149,10 @@ If the authentication of ``AnonymousCustomerUserToken`` object is successful, yo
 
 The |OroBundleCustomerBundleSecurityListenerCustomerVisitorCookieResponseListener| listens ``kernel.response`` events. If the request has an ``_security_customer_visitor_cookie`` attribute, it sets a cookie to it.
 
-.. _customerbundle-authentication-provider:
-
-Authentication Provider
-^^^^^^^^^^^^^^^^^^^^^^^
-
-The ``authenticate`` method of the |OroBundleCustomerBundleSecurityAnonymousCustomerUserAuthenticationProvider| class  verifies ``AnonymousCustomerUserToken``. The |OroBundleCustomerBundleEntityCustomerVisitorManager| class finds the ``CustomerVisitor`` entity using the ``visitor_id`` and ``session_id`` key fields and creates or updates the ``CustomerVisitor`` entity if it was created earlier. As a result, the ``AnonymousCustomerUserToken`` object is created and is populated with user, roles, and organization data, and holds the ``CustomerVisitor`` object.
-
 AnonymousCustomerUserFactory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The |OroBundleCustomerBundleDependencyInjectionSecurityAnonymousCustomerUserFactory| class ties |listener| and |provider|.
+The |OroBundleCustomerBundleDependencyInjectionSecurityAnonymousCustomerUserFactory| class ties |OroBundleCustomerBundleSecurityAnonymousCustomerUserAuthenticator|.
 Also, it defines the ``update_latency`` configuration option. It helps prevent sending too many requests to the database when updating the ``lastVisit`` datetime of the ``AnonymousCustomerUser`` entity. Its default value is set in the DI container and is expressed in seconds:
 
 .. code-block:: yaml

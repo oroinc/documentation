@@ -118,7 +118,6 @@ To set a price attribute (e.g., Minimal Advertised Price) for a product:
    Shipping cost can work in conjunction with a shipping method, such as :ref:`Fixed Shipping Cost <doc-integration-fixed-shipping-cost>`. For example, if the shipping cost for a product is set to $2.70 and the surcharge configured for the Fixed Shipping Cost shipping method is $3, then the shipping charge at checkout will equate to $5.70.
 
    .. image:: /user/img/products/price_attributes/shipping-cost-price-attribute-with-integration.png
-      :scale: 42%
       :alt: Illustration of how shipping cost set for the price attribute works in combination with the surcharge defined in the fixed product shipping cost integration
 
 #. Provide the value per unit and currency.

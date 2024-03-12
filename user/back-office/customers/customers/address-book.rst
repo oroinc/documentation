@@ -56,6 +56,8 @@ It is possible to add more addresses to the same account. If you have more than 
 .. image:: /user/img/customers/customers/acc_address_correspondin_map.png
    :alt: Click an address to trigger the map that corresponds to the selected address
 
+Please be aware that a valid Google API key is required to display maps in the storefront. Please see :ref:`the back-office settings <system-configuration-integrations-google>` for more information.
+
 Manage an Address
 -----------------
 

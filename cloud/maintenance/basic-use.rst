@@ -587,7 +587,7 @@ To pass a command that contains arguments or options, wrap the command in quotes
 .. code-block:: none
 
     orocloud-cli app:console "oro:user:list --all"
-    orocloud-cli app:console 'oro:search:reindex --scheduled OroUserBundle:User'
+    orocloud-cli app:console 'oro:search:reindex --scheduled Oro\Bundle\UserBundle\Entity\User'
 
 Spaces and backslashes must be escaped with  ``\``.
 
@@ -620,14 +620,13 @@ Application Cache
 
 .. note:: Be aware that only those consumers that ran before the upgrade will run afterward.
 
-Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache with downtime. This command does the following:
+Sometimes you may require to clear the application cache (for example, after applying a patch or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache. If a :ref:`prebuilt application package <orocloud-maintenance-use-upgrade>` has been used to upgrade Oro applications in OroCloud the command is performed without downtime. This command does the following:
 
 * Stops `Consumer` and `Cron` jobs
 * Prepares `Redis` cache storage
 * Clears and warms up the application cache
 * Switches `Redis` storage
-* Restarts `PHP FPM`
-* Starts `Consumer` and `Cron`.
+* Starts `Consumer` and `Cron` jobs
 
 .. code-block:: none
 
@@ -719,6 +718,12 @@ To download a file from the `private` adapter, use:
 .. code-block:: none
 
     orocloud-cli media:download --adapter=private attachments/61b0871967033945666770.jpeg
+
+To download full file backup from any adapter, use:
+
+.. code-block:: none
+
+    orocloud-cli media:dump private
 
 Media Upload
 ~~~~~~~~~~~~
@@ -943,7 +948,7 @@ Maintenance Commands
 
 Maintenance commands enable you to turn on the maintenance mode for the webserver and services (consumers, cron, websocket).
 
-Oro Support Team will get a P1 notification after 1 hour of enabled maintenance mode. 
+Oro Support Team will get a P1 notification after 1 hour of enabled maintenance mode.
 You can set custom downtime duration and comment to avoid P1 escalation using the following options:
 
 .. code-block:: none

@@ -31,12 +31,12 @@ Suppose that pagination must be enabled for the User entity with an identifier c
 
 3. The User view page route has an identifier column in route parameters:
 
-.. oro_integrity_check:: 9369d45d22b650abd28cf69ace894b96f0b06a39
+.. oro_integrity_check:: 4c094237ad80c0c56859c1fa915b6e2821e9bf0f
 
    .. literalinclude:: /code_examples/commerce/demo/Controller/QuestionController.php
        :caption: src/Acme/Bundle/DemoBundle/Controller/QuestionController.php
        :language: php
-       :lines: 17, 20-23, 36-37, 45-51, 131
+       :lines: 20-22, 33, 36-41, 107
 
 .. image:: /img/backend/entities/entity-pagination.png
    :alt: Enable Entity Pagination

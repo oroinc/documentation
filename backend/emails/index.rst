@@ -32,9 +32,9 @@ To provide mail templates, create Twig templates for the desired format (namely 
     class EmailTemplatesFixture extends AbstractEmailFixture
     {
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
-        public function getEmailsDir()
+        public function getEmailsDir(): string
         {
             return $this->container
                 ->get('kernel')
@@ -306,26 +306,18 @@ Sample ``Email`` entity:
     use Doctrine\ORM\Mapping as ORM;
     use Oro\Bundle\EmailBundle\Entity\EmailInterface;
 
-    /**
-     * @ORM\Entity()
-     */
+    #[ORM\Entity]
     class ApplicantEmail implements EmailInterface
     {
-        /**
-         * @ORM\Id
-         * @ORM\Column(type="integer", name="id")
-         * @ORM\GeneratedValue(strategy="AUTO")
-         */
+        #[ORM\Id]
+        #[ORM\Column(name: 'id', type: 'integer')]
+        #[ORM\GeneratedValue(strategy: 'AUTO')]
         private $id;
 
-        /**
-         * @ORM\Column(type="string", length=255)
-         */
+        #[ORM\Column(type: 'string', length: 255)]
         private $email;
 
-        /**
-         * @ORM\ManyToOne(targetEntity="Applicant", inversedBy="emails")
-         */
+        #[ORM\ManyToOne(targetEntity: 'Applicant', inversedBy: 'emails')]
         private $applicant;
 
         /**
@@ -392,31 +384,27 @@ For the ``Applicant`` entity, the implementation should be similar to the follow
     use Doctrine\ORM\Mapping as ORM;
     use Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface;
 
-    /**
-     * @ORM\Entity()
-     */
+    #[ORM\Entity]
     class Applicant implements EmailOwnerInterface
     {
-        /**
-         * @ORM\Id
-         * @ORM\Column(type="integer", name="id")
-         * @ORM\GeneratedValue(strategy="AUTO")
-         */
+        #[ORM\Id]
+        #[ORM\Column(name: 'id', type: 'integer')]
+        #[ORM\GeneratedValue(strategy: 'AUTO')]
         private $id;
 
-        /**
-         * @ORM\OneToMany(targetEntity="ApplicantEmail", mappedBy="applicant", orphanRemoval=true, cascade={"persist"})
-         */
+        #[ORM\OneToMany(
+            mappedBy: 'applicant',
+            targetEntity: 'ApplicantEmail',
+            cascade: ['persist'],
+            orphanRemoval: true
+        )]
         private $emails;
 
-        /**
-         * @ORM\Column(type="string", length=255)
-         */
+        #[ORM\Column(type: 'string', length: 255)]
         private $firstName;
 
-        /**
-         * @ORM\Column(type="string", length=255)
-         */
+        #[ORM\Column(type: 'string', length: 255)]
+        private $lastName;
         private $lastName;
 
         /**

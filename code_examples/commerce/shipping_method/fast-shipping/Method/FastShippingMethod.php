@@ -13,14 +13,22 @@ use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 class FastShippingMethod implements ShippingMethodInterface, ShippingMethodIconAwareInterface
 {
     private string $identifier;
+    private string $name;
     private string $label;
     private ?string $icon;
     private bool $enabled;
     private array $types;
 
-    public function __construct(string $identifier, string $label, ?string $icon, bool $enabled, array $types)
-    {
+    public function __construct(
+        string $identifier,
+        string $name,
+        string $label,
+        ?string $icon,
+        bool $enabled,
+        array $types
+    ) {
         $this->identifier = $identifier;
+        $this->name = $name;
         $this->label = $label;
         $this->icon = $icon;
         $this->enabled = $enabled;
@@ -49,6 +57,11 @@ class FastShippingMethod implements ShippingMethodInterface, ShippingMethodIconA
     public function isEnabled(): bool
     {
         return $this->enabled;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
     }
 
     /**

@@ -1,12 +1,12 @@
-.. _annotation-config:
+.. _attribute-config:
 
-@Config
-=======
+#[Config]
+=========
 
-This annotation is used to configure default values for configurable entity classes.
+This attribute is used to configure default values for configurable entity classes.
 
-Options
--------
+Arguments
+---------
 
 ``defaultValues``
 ^^^^^^^^^^^^^^^^^
@@ -16,17 +16,13 @@ Configures default values for particular config options on a per property basis:
 .. code-block:: php
 
     // ...
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
 
-    /**
-     * @Config(
-     *      defaultValues={
-     *          "dataaudit"={
-     *              "auditable"=true
-     *          }
-     *      }
-     * )
-     */
+    #[Config(
+        defaultValues: [
+            "dataaudit" => ["auditable" => true]
+        ]
+    )]
     class User
     {
         // ...
@@ -391,13 +387,11 @@ The route name of the view that shows the datagrid of available records:
 .. code-block:: php
 
     // ...
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
 
-    /**
-     * @Config(
-     *      routeName="oro_user_index"
-     * )
-     */
+    #[Config(
+        routeName: "oro_user_index"
+    )]
     class User
     {
         // ...
@@ -412,13 +406,11 @@ The route name of a controller that shows a particular object:
 .. code-block:: php
 
     // ...
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
 
-    /**
-     * @Config(
-     *      routeView="oro_user_view"
-     * )
-     */
+    #[Config(
+        routeView: "oro_user_view"
+    )]
     class User
     {
         // ...
@@ -432,13 +424,11 @@ The route name of a controller that creates an object:
 .. code-block:: php
 
     // ...
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
 
-    /**
-     * @Config(
-     *      routeCreate="oro_user_create"
-     * )
-     */
+    #[Config(
+        routeCreate: "oro_user_create"
+    )]
     class User
     {
         // ...
@@ -453,13 +443,11 @@ The route name of controller action that updates an object:
 .. code-block:: php
 
     // ...
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config;
 
-    /**
-     * @Config(
-     *      routeUpdate="oro_user_update"
-     * )
-     */
+    #[Config(
+        routeUpdate: "oro_user_update"
+    )]
     class User
     {
         // ...

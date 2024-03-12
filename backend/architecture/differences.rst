@@ -59,44 +59,40 @@ Access Control Lists
 --------------------
 
 |Access Control Lists| (ACLs) usually involve working with the ACL provider, object identities, ACEs, the mask builder, etc. OroPlatform makes
-things more accessible by providing the |@Acl| annotation that you can use to define an ACL and protect a controller in a single step:
+things more accessible by providing the |#[Acl]| attribute that you can use to define an ACL and protect a controller in a single step:
 
 .. code-block:: php
    :caption: src/Acme/Bundle/DemoBundle/Controller/BlogController.php
 
     namespace Acme\Bundle\DemoBundle\Controller;
 
-    use Oro\Bundle\SecurityBundle\Annotation\Acl;
+    use Oro\Bundle\SecurityBundle\Attribute\Acl;
 
     // ...
 
-    /**
-     * @Acl(
-     *     id="acme_demo.blog_post_view",
-     *     type="entity",
-     *     class="AcmeDemoBundle:BlogPost",
-     *     permission="VIEW"
-     * )
-     */
+    #[Acl(
+        id: 'acme_demo.blog_post_view',
+        type: 'entity',
+        class: 'Acme\Bundle\WysiwygBundle\Entity\BlogPost',
+        permission: 'VIEW'
+    )]
     public function indexAction()
     {
         // ...
     }
 
-Furthermore, once an ACL has been defined, you can reuse it using the |@AclAncestor| annotation:
+Furthermore, once an ACL has been defined, you can reuse it using the |#[AclAncestor]| attribute:
 
 .. code-block:: php
     :caption: src/Acme/Bundle/DemoBundle/Controller/BlogController.php
 
     namespace Acme\Bundle\DemoBundle\Controller;
 
-    use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
+    use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
 
     // ...
 
-    /**
-     * @AclAncestor("acme_demo.blog_post_view")
-     */
+    #[AclAncestor('acme_demo.blog_post_view')]
     public function postAction()
     {
         // ...

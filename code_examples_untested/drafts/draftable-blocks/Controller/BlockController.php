@@ -5,8 +5,8 @@ namespace Acme\Bundle\CMSBundle\Controller;
 use Acme\Bundle\CMSBundle\Entity\Block;
 use Acme\Bundle\CMSBundle\Form\Type\BlockType;
 use Oro\Bundle\FormBundle\Model\UpdateHandlerFacade;
-use Oro\Bundle\SecurityBundle\Annotation\Acl;
-use Oro\Bundle\SecurityBundle\Annotation\AclAncestor;
+use Oro\Bundle\SecurityBundle\Attribute\Acl;
+use Oro\Bundle\SecurityBundle\Attribute\AclAncestor;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -18,41 +18,25 @@ use Symfony\Contracts\Translation\TranslatorInterface;
  */
 class BlockController extends AbstractController
 {
-    /**
-     * @Route("/", name="acme_cms_block_index")
-     * @Template
-     * @AclAncestor("acme_cms_block_view")
-     */
+    #[Route(path: '/', name: 'acme_cms_block_index')]
+    #[Template]
+    #[AclAncestor('acme_cms_block_view')]
     public function indexAction(): array
     {
         return ['entity_class' => Block::class];
     }
 
-    /**
-     * @Route("/view/{id}", name="acme_cms_block_view", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_cms_block_view",
-     *      type="entity",
-     *      class="AcmeCMSBundle:Block",
-     *      permission="VIEW"
-     * )
-     */
+    #[Route(path: '/view/{id}', name: 'acme_cms_block_view', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_cms_block_view', type: 'entity', class: 'Acme\Bundle\CMSBundle\Entity\Block', permission: 'VIEW')]
     public function viewAction(Block $block): array
     {
         return ['entity' => $block];
     }
 
-    /**
-     * @Route("/create", name="acme_cms_block_create")
-     * @Template("@AcmeCMS/Block/update.html.twig")
-     * @Acl(
-     *      id="acme_cms_block_create",
-     *      type="entity",
-     *      class="AcmeCMSBundle:Block",
-     *      permission="CREATE"
-     * )
-     */
+    #[Route(path: '/create', name: 'acme_cms_block_create')]
+    #[Template('@AcmeCMS/Block/update.html.twig')]
+    #[Acl(id: 'acme_cms_block_create', type: 'entity', class: 'Acme\Bundle\CMSBundle\Entity\Block', permission: 'CREATE')]
     public function createAction(): array|RedirectResponse
     {
         $block = new Block();
@@ -60,16 +44,9 @@ class BlockController extends AbstractController
         return $this->update($block);
     }
 
-    /**
-     * @Route("/update/{id}", name="acme_cms_block_update", requirements={"id"="\d+"})
-     * @Template
-     * @Acl(
-     *      id="acme_cms_block_update",
-     *      type="entity",
-     *      class="AcmeCMSBundle:Block",
-     *      permission="EDIT"
-     * )
-     */
+    #[Route(path: '/update/{id}', name: 'acme_cms_block_update', requirements: ['id' => '\d+'])]
+    #[Template]
+    #[Acl(id: 'acme_cms_block_update', type: 'entity', class: 'Acme\Bundle\CMSBundle\Entity\Block', permission: 'EDIT')]
     public function updateAction(Block $block): array|RedirectResponse
     {
         return $this->update($block);
@@ -78,10 +55,10 @@ class BlockController extends AbstractController
     protected function update(Block $block): array|RedirectResponse
     {
 
-        return $this->get(UpdateHandlerFacade::class)->handleUpdate(
+        return $this->container->get(UpdateHandlerFacade::class)->handleUpdate(
             $block,
             $this->createForm(BlockType::class, $block),
-            $this->get(TranslatorInterface::class)->trans('acme.cms.controller.saved.message')
+            $this->container->get(TranslatorInterface::class)->trans('acme.cms.controller.saved.message')
         );
     }
 

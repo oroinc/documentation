@@ -76,33 +76,15 @@ To add a WYSIWYG field explicitly:
     {
         // ...
 
-        /**
-         * @ORM\Column(name="extra_content", type="wysiwyg", nullable=true)
-         * @ConfigField(
-         *      defaultValues={
-         *          "attachment"={
-         *              "acl_protected"=false
-         *          }
-         *      }
-         * )
-         */
+        #[ORM\Column(name: 'extra_content', type: 'wysiwyg', nullable: true)]
+        #[ConfigField(defaultValues: ['attachment' => ['acl_protected' => false]])]
         protected $extraContent;
 
-        /**
-         * @ORM\Column(name="extra_content_style", type="wysiwyg_style", nullable=true)
-         * @ConfigField(
-         *      defaultValues={
-         *          "attachment"={
-         *              "acl_protected"=false
-         *          }
-         *      }
-         * )
-         */
+        #[ORM\Column(name: 'extra_content_style', type: 'wysiwyg_style', nullable: true)]
+        #[ConfigField(defaultValues: ['attachment' => ['acl_protected' => false]])]
         protected $extraContentStyle;
 
-        /**
-         * @ORM\Column(name="extra_content_properties", type="wysiwyg_properties", nullable=true)
-         */
+        #[ORM\Column(name: 'extra_content_properties', type: 'wysiwyg_properties', nullable: true)]
         protected $extraContentProperties;
 
         public function getExtraContent(): ?string

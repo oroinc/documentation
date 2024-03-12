@@ -1,7 +1,7 @@
 .. _user-guide--taxes--org--promotions:
 
-Tax Calculation
-===============
+Configure Tax Calculation per Organization
+==========================================
 
 .. note:: This Tax Calculation configuration option is also available on the :ref:`global <user-guide--taxes--tax-configuration>` level.
 

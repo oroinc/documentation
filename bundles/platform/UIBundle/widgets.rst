@@ -40,14 +40,18 @@ Widgets
 -------
 
 Widget is any controller/action or static content rendered inside the widget container.
-@Template annotation supports the ``\_widgetContainer`` request variable, based on which an appropriate template is chosen by the following rule:
+#[Template] attribute supports the ``_widgetContainer`` request variable, based on which an appropriate template is chosen by the following rule:
 
-``\<widgetContainer\>/\<action\>.\<format\>.\<templateEngine\> (dialog/example.html.twig)``.
+``<widgetContainer>/<action>.<format>.<templateEngine> (dialog/example.html.twig)``.
 
-When no template for a specific container is found, the ``widget/\<action\>.\<format\>.\<templateEngine\> (widget/example.html.twig)`` template is rendered.
+When no template for a specific container is found, the ``widget/<action>.<format>.<templateEngine> (widget/example.html.twig)`` template is rendered.
 
 If no such template is found, then the default template for action is rendered (example.html.twig).
 Widgets may be rendered with twig function ``oro_widget_render($options)``.
+
+Twig template for the widget content must have a ``div`` element with class ``widget-content`` as its root element for the widget to work properly with other elements on the page:
+
+``<div class="widget-content">``
 
 Frontend Widget Container
 -------------------------
@@ -60,7 +64,7 @@ so you can use all Backbone views features, like events. You need to place widge
 Widget container adds AJAX handling for included form. A widget container provides the functionality for actions with different action areas.
 All form actions are moved to the **adopted** actions section if they are placed in an element with class **widget-actions**.
 
-Widget container adds ``\_widgetContainer=\<widgetContainerType\>&\_wid=\<widgetIdentifier\>`` to all requests.
+Widget container adds ``_widgetContainer=<widgetContainerType>&_wid=<widgetIdentifier>`` to all requests.
 
 * **\_widgetContainer** variable is used to determine the proper template for the current container;
 
@@ -299,7 +303,7 @@ Frontend Widget Manager
 Responsibilities
 ^^^^^^^^^^^^^^^^
 
-Widget manager is a mediator that allow different parts of system, including widgets them self, interact with widget
+Widget manager is a mediator that allow different parts of system, including widgets themselves, interact with widget
 container instances by unique widget identifier or by widget alias. Widget manager contains registry of all widget
 container instances present on page.  Widget instance registering/removing performed automatically on widget\_initialize/widget\_remove events.
 

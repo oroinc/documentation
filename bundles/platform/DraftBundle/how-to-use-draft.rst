@@ -25,7 +25,7 @@ Create an entity with 2 fields: **title** and **content** and implement the enti
 .. note::
     For simplicity, use the predefined ``DraftableTrait`` trait:
 
-.. oro_integrity_check:: a4667286bd1e8e864473199b9eb5db6631580dbe
+.. oro_integrity_check:: 9950ebf55c027833061bd606238982ecdaa59b2a
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Entity/Block.php
         :language: php
@@ -35,11 +35,11 @@ Then, add the entity configuration to the **title** and **content** fields. The 
 
 Follow the instructions provided in the :ref:`Configure Entities <book-entities-entity-configuration>` topic.
 
-.. oro_integrity_check:: 9e6561168be7845f40da59f1e99965e27fa214bf
+.. oro_integrity_check:: 85387d83bdab20ca132d7fda720078b888ebdfa5
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Entity/Block.php
         :language: php
-        :lines: 55-82
+        :lines: 49-61
 
 
 .. important::
@@ -85,7 +85,7 @@ For more details on how to create a controller and navigation, see the following
 * :ref:`Entity controller <cookbook-entity-controller>`
 * :ref:`Navigation <doc-managing-app-menu>`
 
-.. oro_integrity_check:: 21ba3205b9e81d319108264b296c5d095a314ea2
+.. oro_integrity_check:: b2a3154fc5ba1245f613d65997656b272f9f084a
 
     .. literalinclude:: ../../../code_examples_untested/drafts/draftable-blocks/Controller/BlockController.php
         :language: php

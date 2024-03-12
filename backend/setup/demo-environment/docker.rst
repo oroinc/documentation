@@ -48,7 +48,11 @@ Run Application
 
       docker compose up install
 
-   You can run the application as soon as it is installed or initialized.
+   You can run the application as soon as it is installed or initialized:
+
+   .. code-block:: none
+
+      docker compose up application
 
    The docker-compose will download the required images, create networks and run containers. Application `commerce-crm-application` is used by default.
    You can run other community applications, such as `crm-application`, `platform-application` or `commerce-crm-application-de`.

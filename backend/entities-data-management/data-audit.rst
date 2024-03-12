@@ -9,7 +9,7 @@ The |OroDataAuditBundle| leverages the Loggable |Doctrine extension1|
 Entity Configuration
 --------------------
 
-DataAudit can only be enabled for Configurable entities. To add a property of an entity to the changelog, enable the audit for the entity itself and specify some fields you want to be logged. To achieve this, use the ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config`` and ``Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField`` annotations for the entity.
+DataAudit can only be enabled for Configurable entities. To add a property of an entity to the changelog, enable the audit for the entity itself and specify some fields you want to be logged. To achieve this, use the ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\Config`` and ``Oro\Bundle\EntityConfigBundle\Metadata\Attribute\ConfigField`` attributes for the entity.
 
 .. caution::
 
@@ -19,14 +19,14 @@ DataAudit can only be enabled for Configurable entities. To add a property of an
 
     An audit can be enabled/disabled per an entire entity or for separate fields in the UI under *System* / *Entities* / *EntityManagement* (attribute  *Auditable*).
 
-Example of annotation configuration:
+Example of attribute configuration:
 
-.. oro_integrity_check:: a2ff0b21ef609e4b5730712bee5cd5af2ac749ef
+.. oro_integrity_check:: be5fa99c7eea5357f8c1dab27a409e8966888688
 
     .. literalinclude:: /code_examples/commerce/demo/Entity/Question.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Question.php
         :language: php
-        :lines: 1-94, 208
+        :lines: 1-61, 136
 
 Every time a product's price is modified, the changes are logged in the database. The logging manager not only stores the data being modified but also logs a set of related information:
 
@@ -56,7 +56,7 @@ In our example, it can look like this:
     .. literalinclude:: /code_examples/commerce/demo/Entity/Question.php
         :caption: src/Acme/Bundle/DemoBundle/Entity/Question.php
         :language: php
-        :lines: 1-4, 59-64, 201-208
+        :lines: 1-4, 44-49, 129-136
 
 Segment
 -------
@@ -89,12 +89,12 @@ To add new auditable types, register a new type in your bundle's boot method:
 
 Next, create a migration that will add columns to the AuditField entity:
 
-.. oro_integrity_check:: 7dabf5bfd8c97943c712085d2bbdee2c85764fee
+.. oro_integrity_check:: 8c74b4e5e14eb55055674c7c2e5edc9da3a91801
 
     .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/v1_7/AddNewAuditFieldType.php
         :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/v1_7/AddNewAuditFieldType.php
         :language: php
-        :lines: 1-30
+        :lines: 1-22
 
 
 To see the auditable option in the entity configuration, make sure your field type is in the allowed types here: **DataAuditBundle/Resources/config/oro/entity_config.yml**.

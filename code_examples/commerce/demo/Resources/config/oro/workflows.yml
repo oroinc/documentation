@@ -99,3 +99,39 @@ workflows:
             schedule_transition_definition:                       # definitions for transition "schedule_transition", no extra conditions or actions here
                 actions:                                          # list of action which will be performed after transition
                     - '@assign_value': [$user.status, 'processed']# change user's status
+
+    acme_demo_b2b_quote_backoffice_flow:
+        entity: Oro\Bundle\SaleBundle\Entity\Quote
+        entity_attribute: quote
+        defaults:
+            active: true
+        datagrids: [ 'customer-view-quote-grid' ]
+        applications: [ default ]
+        steps_display_ordered: true
+        start_step: started
+        steps:
+            started:
+                allowed_transitions:
+                    - to_processed
+            processed:
+                allowed_transitions:
+                    - to_finish
+        transitions:
+            to_processed:
+                step_to: processed
+                transition_definition: transition_definition
+                frontend_options:
+                    icon: 'fa-bell'
+                display_type: dialog
+            to_finish:
+                step_to: processed
+                transition_definition: transition_definition
+                frontend_options:
+                    icon: 'fa-bell'
+                display_type: dialog
+        transition_definitions:
+            transition_definition:
+                actions:
+                    - '@flash_message':
+                          message: 'Workflow was transited'
+                          type: 'success'
