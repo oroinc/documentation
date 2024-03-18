@@ -50,7 +50,7 @@ To update the related product settings per website:
 
 .. _sys--websites--commerce--catalog--similar-products:
 
-.. note:: **Similar Products** are available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine.
+.. note:: **Similar Products** and **Similar Products in Shopping Lists** are available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine.
 
 7. In the **Similar Products** section, the following options are available:
 
@@ -67,8 +67,22 @@ To update the related product settings per website:
    * **Product Category Parent Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
    * **Product Category 2nd Level Parent Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
 
+8. In the **Similar Products in Shopping Lists**, the following options are available:
 
-8. Click **Save**.
+   * **Enable Similar Products in Shopping Lists** -- Enabling this option add a block of Similar Products to the shopping list page.
+   * **Maximum Items** --- A limit of similar products that are shown to a buyer on the shopping list page.
+   * **Minimum Items** --- The minimum number of similar products that may be shown to the buyer on the shopping list page..
+   * **Show Add Button** --- Enables a buyer to order a similar product directly from the shopping list page.
+   * **Use Slider On Mobile** --- When enabled, one similar product is displayed below the main product information. Other similar products are accessible using the horizontal slider. Click < and > to slide through the similar products.
+   * **Product Name Boost** --- A boost factor for the product name, the boost is applied for each matched word. Leave the field empty to disable the boost.
+   * **Product Category Boost** --- A boost factor for the product category. Leave the field empty to disable the boost.
+   * **Product Category Parent Boost** --- A boost factor for the parent of a product category. Leave the field empty to disable the boost.
+   * **Product Category 2nd Level Parent Boost** --- A boost factor for the second level parent of a product category. Leave the field empty to disable the boost.
+
+   .. image:: /user/img/system/config_commerce/catalog/sl-similar-products.png
+      :alt: Illustration of the Similar Products block on the shopping list page
+
+9. Click **Save**.
 
 .. include:: /include/include-images.rst
    :start-after: begin
