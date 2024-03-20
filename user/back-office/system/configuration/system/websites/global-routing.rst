@@ -26,7 +26,7 @@ To change the default global routing settings:
 
    * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
 
-   * **Create Redirects** - this option defines a strategy for creating redirects when the URL building rules change. Supported options: *Ask*, *Never*, *Always*.
+   * **Create Redirects** - This option defines a strategy for creating redirects when the URL building rules change. Supported options: *Ask*, *Never*, *Always*.
 
      When *Ask* is selected, OroCommerce prompts to confirm redirect creation on every change.
 
@@ -34,11 +34,9 @@ To change the default global routing settings:
 
      When *Always* is selected, the redirects are created by default.
 
-   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
+   * **Web Catalog** - When you add a web catalog, it populates the main menu and sub-menus of the OroCommerce storefront. If there is no web catalog available, the structure of the master catalog is used to fill the storefront menu. Once you add a web catalog, click **Save Settings** to prompt the system to show you a detailed content tree of the selected web catalog under the **Navigation Root** field.
 
-   Once you decide on the Web Catalog, click **Save Settings**, and the detailed content tree of the selected web catalog appears under the **Navigation Root** field.
-
-   * **Navigation Root** - select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
+   * **Navigation Root** - This option is available only if a web catalog has been added. Here, you can select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
 
      .. image:: /user/img/system/config_system/visible_content_node.png
         :alt: The selected sub-menu nodes that will be visible in the storefront
@@ -48,6 +46,8 @@ To change the default global routing settings:
      .. image:: /user/img/system/frontend_menu/main-navigation-menu.png
         :scale: 35%
         :alt: Illustration of how changing Main Navigation Menu affects the storefront
+
+  * **Homepage** - When no web catalog is available, you can choose any of the available landing pages as your homepage. Please note that on clean installations of Oro applications, the default homepage is blank.
 
 4. In the **Direct URLs** section, configure the following settings:
 

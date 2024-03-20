@@ -15,7 +15,7 @@ This section provides an overview of the content node types and guidance on thei
 Add a System Page
 -----------------
 
-The system page is one of the standard pre-designed pages of the OroCommerce storefront (e.g., Requests for Quotes, Open Orders).
+The system page is one of the standard pre-designed pages of the OroCommerce storefront (e.g., Homepage, Requests for Quotes, Open Orders).
 
 To add a system page to the menu in the OroCommerce storefront:
 
@@ -141,11 +141,11 @@ To add a landing page node to the menu in the OroCommerce storefront:
 
 #. Select the existing landing page from the list. To use search, start typing the keywords in the box to search for the necessary page. To use filtering, click on the **bars**, and select the filtering conditions in the *Manage filters* section. Alternatively, you can create a new landing page:
 
-   #) Click **+** to the right from the Landing page list.
-
-      The Create Landing Page pops up.
+   #) To create a new landing page, click **+** to the right from the Landing page list.
 
    #) Fill in the landing page details and contents as described :ref:`here <user-guide--landing-pages-create>`.
+
+   Enable option **Do not render Title** if you do not want to the title of the landing page to be displayed in the storefront.
 
 #. This step applies only to the content nodes with more than one content variant.
 

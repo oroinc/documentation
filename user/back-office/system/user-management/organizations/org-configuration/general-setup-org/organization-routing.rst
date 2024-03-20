@@ -13,7 +13,13 @@ To change the default currency settings per organization:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-4. Remove the **Use System** to deselect the **Prefer Self-Contained Web Catalog Canonical URLs** option for the organization. When this option is disabled, the canonical URLs point to the direct URLs of the underlying content types if they are available. This option is enabled by default.
+4. In the **General** section, define the following options:
+
+   * **Main Navigation Menu** - Select which :ref:`frontend menu <frontend-menus-overview>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
+
+  * **Homepage** - When no web catalog is available, you can choose any of the available landing pages as your homepage. Please note that on clean installations of Oro applications, the default homepage is blank.
+
+  * **Prefer Self-Contained Web Catalog Canonical URLs** - This option is enabled by default. When disabled, the canonical URLs point to the direct URLs of the underlying content types if they are available. This option is available only when a web catalog is used as storefront menu.
 
    .. image:: /user/img/system/user_management/org_configuration/websites/self-contained-url.png
       :alt: Routing configuration at organization level displaying option Prefer Self-Contained Web Catalog Canonical URLs

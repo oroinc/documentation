@@ -16,7 +16,7 @@ Each application can have a different set of widget types depending on the custo
 
 * **An Image Slider** --- a content widget that enables you to add multiple image slides and configure their visual representation by setting the number of slides to be displayed, adding and formatting text, and setting alignment options.
 
-  .. image:: /user/img/concept-guides/content-management/slider1.gif
+  .. image:: /user/img/concept-guides/content-management/image-slider.gif
      :alt: A sample of the Terms and Conditions landing page
 
 * **A Contact Us form** --- a standard Contact Us form that you can insert into any website page. The form is predefined by the system, so any changes or modifications to the form require developer's assistance.

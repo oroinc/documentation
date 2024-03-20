@@ -477,6 +477,11 @@ To add a :ref:`content template <user-guide--landing-pages--marketing--content-t
 .. image:: /user/img/marketing/content-templates/edit-content-template.png
    :alt: Illustrating the steps you need to take to start editing the selected content template
 
+.. tip:: With the **Featured Categories** template, you can configure the properly styled tiled content, which is easily adapted to various screen breakpoints.
+
+.. image:: /user/img/marketing/content-templates/adaptable-featured-categories.png
+   :alt: Illustrating the Featured Categories template adaptation for various screen breakpoints
+
 
 Adapt Content to Different Displays
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -95,19 +95,6 @@ The **commerce_footer_links** menu defines the structure of the links located in
 .. image:: /user/img/concept-guides/menus/commerce_footer_links_sample.png
    :alt: A sample of the commerce_footer_links menu in the storefront
 
-Featured_menu
-^^^^^^^^^^^^^
-
-**Featured_menu** provides the possibility to include the necessary information as a separate block to the featured menu on the OroCommerce homepage. Usually, the menu is used to highlight the latest promotions, featured categories, or items to attract the customers' attention to the critical information.
-
-.. image:: /user/img/concept-guides/menus/featured_menu_sample.png
-   :alt: A sample of the featured_menu in the storefront
-
-Keep in mind that the **featured_menu** is different from the :ref:`featured products segment <products--featured-products>`. While the featured products segment is intended to store only the products and categories that are marked as featured, the featured menu is designed to offer any other information that you want to emphasize.
-
-.. image:: /user/img/concept-guides/menus/featured_menu_vs_segment.png
-   :alt: Featured menu vs featured segment
-
 Customer_usermenu
 ^^^^^^^^^^^^^^^^^
 

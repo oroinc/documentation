@@ -64,23 +64,23 @@ To create a new content widget:
 
     |
 
-   * **Product Segment** - Enables you to add a product segment content widget, configure how many max and min items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Only segments with type *Product* are listed in the **Segment** field dropdown. You can modify an existing :ref:`segment <user-guide--business-intelligence--filters-segments>` or create a new one under **Reports&Segments > Manage Segments**.
+   * **Product Segment** - Enables you to add a product segment content widget to your website page. Only segments with type *Product* are listed in the **Segment** field dropdown. You can modify an existing :ref:`segment <user-guide--business-intelligence--filters-segments>` or create a new one under **Reports & Segments > Manage Segments**. You can add a label to be displayed above the list of the products, configure the max and min number of items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Additionally, you can enable or disable autoplay and control its speed in milliseconds, select whether to display dots and/or arrows at the bottom of the product segment and on touchscreens, enable or disable infinite scroll.
 
      .. image:: /user/img/marketing/content_widgets/product-segment.png
-        :alt: A product mini block form
+        :alt: A product segment form
 
     |
 
    * **Tabbed Content** - Enables you to add content to your storefront website in a form of tabs or an accordion.
 
-     .. image:: /user/img/marketing/content_widgets/tabs-vs-accordion.png
+     .. image:: /user/img/marketing/content_widgets/tabs-vs-accordion-new.png
         :alt: Tabbed vs Accordion view of tabbed content widget
 
     |
 
      Tabbed content widget uses the :ref:`WYSIWYG editor <getting-started-wysiwyg-editor-field>` which enables you to inject other content widget(s), such as a contact us form, into your current tabbed content widget.
 
-     .. image:: /user/img/marketing/content_widgets/injected-widget.png
+     .. image:: /user/img/marketing/content_widgets/injected-widget-new.png
         :alt: Contact us widget embedded in tabbed content widget
 
 4. Once you have provided all widget-specific details, click **Save and Close**.
