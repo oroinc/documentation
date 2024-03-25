@@ -68,7 +68,7 @@ You can perform the following actions for each of the addresses listed here:
 * Edit |IcPencil|
 * Delete |IcDelete|
 
-To :ref:`manage default addresses in the address book <frontstore-guide--company-address>`, click **Manage Addresses** on the bottom of the section.
+To :ref:`manage default addresses in the address book <frontstore-guide--company-address>`, click **Go to Personal Addresses**.
 
 .. hint:: You can also open the address book by clicking **Address Book** in the menu on the left.
 
@@ -171,5 +171,3 @@ To decline the :ref:`consent <frontstore-guide--profile-consents>` that you have
 
 
 .. finish
-
-
