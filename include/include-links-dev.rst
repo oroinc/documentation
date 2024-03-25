@@ -5055,10 +5055,6 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/DoctrineUtils/ORM/QueryWalkerHintProviderInterface.php" target="_blank">QueryWalkerHintProviderInterface</a>
 
-.. |entity-structure-data-provider.js| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/public/js/app/services/entity-structure-data-provider.js" target="_blank">entity-structure-data-provider.js</a>
-
 .. |abstract provider| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Provider/AbstractEntityClassNameProvider.php" target="_blank">abstract provider</a>
@@ -5468,13 +5464,33 @@ Links (Dev)
 
    <a href="http://underscorejs.org/" target="_blank">underscore.js</a>
 
+.. |oroentity/js/app/services/entity-structure-data-provider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EntityBundle/Resources/public/js/app/services/entity-structure-data-provider.js" target="_blank">oroentity/js/app/services/entity-structure-data-provider</a>
+
 .. |oroform/js/expression-editor-util| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/expression-editor-util.js" target="_blank">oroform/js/expression-editor-util</a>
 
+.. |oroform/js/expression-operand-type-validator| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/expression-operand-type-validator.js" target="_blank">oroform/js/expression-operand-type-validator</a>
+
 .. |oroform/js/app/views/expression-editor-view| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/app/views/expression-editor-view.js" target="_blank">oroform/js/app/views/expression-editor-view</a>
+
+.. |oroform/js/app/components/expression-editor-component| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FormBundle/Resources/public/js/app/components/expression-editor-component.js" target="_blank">oroform/js/app/components/expression-editor-component</a>
+
+.. |oroexpressionlanguage/js/extend/expression-language| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ExpressionLanguageBundle/Resources/public/js/extend/expression-language.js" target="_blank">oroexpressionlanguage/js/extend/expression-language</a>
+
+.. |oroexpressionlanguage/js/ast-node-wrapper| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ExpressionLanguageBundle/Resources/public/js/ast-node-wrapper.js" target="_blank">oroexpressionlanguage/js/ast-node-wrapper</a>
 
 .. |TinyMCE| raw:: html
 
