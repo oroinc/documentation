@@ -9,3 +9,4 @@ Configure Search Settings per Website
    Search Synonyms <website-search-synonyms>
    Customer Recommendations <website-customer-recom>
    Search History <website-search-terms>
+   Search Stop Words <website-stop-words>

@@ -13,3 +13,4 @@ Learn how to configure search synonyms, saved search for the OroCommerce Enterpr
    Search Synonyms <search-synonyms>
    Customer Recommendations <customer-recommendations>
    Search Terms <search-terms>
+   Stop Words <stop-words>
