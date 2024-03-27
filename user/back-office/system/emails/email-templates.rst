@@ -652,3 +652,32 @@ To enable the email template fallback to the parent localization, select the **U
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
+
+
+.. _contextualize-email-templates:
+
+
+Contextualize Email Templates
+-----------------------------
+
+To contextualize your email templates and have different designs by website, you can use the following extension system.
+
+**In your email template:**
+
+.. code-block:: twig
+
+
+    {% extends oro_get_email_template('base_storefront') %}
+
+The website is detected automatically from the related entity of an email template. If you need to override it you can use the additional context argument:
+
+.. code-block:: twig
+
+
+    {% extends oro_get_email_template('base', { website: entity.website }) %}
+
+**In the backend:**
+
+There is an email template named `base` that contains a common markup. You can clone this template and specify another website in `Website` field to make your modifications differently for each website.
+
+.. note:: A few existing templates already use this extension principle, and they will integrate the changes for any website you choose to customize.
