@@ -69,7 +69,7 @@ class Sms implements
     private $toContact;
 
     #[ORM\Column(name: 'message', type: 'text', nullable: true)]
-    #[ConfigField(defaultValues: ['dataaudit' => ['auditable' => true]])]
+    #[ConfigField(defaultValues: ['dataaudit' => ['auditable' => true], 'sanitize' => ['rule' => 'str_reverse']])]
     private $message;
 
     public function getId(): ?int

@@ -47,6 +47,7 @@ In the sections below, you can learn the key things you can come across when wor
    attachments
    customize-crud
    fixtures
+   sanitize
 
 .. include:: /include/include-links-dev.rst
    :start-after: begin

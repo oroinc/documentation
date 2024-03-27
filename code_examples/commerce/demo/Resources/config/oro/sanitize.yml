@@ -1,0 +1,28 @@
+oro_sanitize:
+    raw_sqls:
+        - '-- Sample comment as unbound raw SQL'
+    entity:
+        acme_blog_post: truncate
+        # example of specifying an entity class
+        Acme\Bundle\DemoBundle\Entity\Document:
+            fields:
+                subject: 
+                    rule: md5
+                    rule_options:
+                        length: 10
+                # example of specifying a field name but not a column name
+                dueDate: date
+        acme_demo_question:
+            raw_sqls:
+                - DELETE FROM "acme_demo_question" WHERE "created_at" < (NOW() - INTERVAL '5 days')
+            fields:
+                subject:
+                    raw_sqls:
+                        - 'UPDATE "acme_demo_question" SET "subject"=SUBSTRING(MD5("subject" || RANDOM()::TEXT) FROM 1 FOR 10)'
+                due_date: date
+        acme_demo_sms:
+            rule: keep_last_rows
+            rule_options:
+                rows_count: 3
+            fields:
+                message: str_reverse

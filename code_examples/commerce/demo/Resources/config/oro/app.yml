@@ -96,3 +96,9 @@ oro_website_search:
 oro_organization_pro:
     ignore_preferred_organization_tokens:
         - cme\Bundle\DemoBundle\Security\AcmeWsseToken
+
+oro_sanitize:
+    # Custom email domain for the 'email' sanitizing rule
+    custom_email_domain: example.com
+    # Digits mask for the 'generic_phone' sanitizing rule. The default value is shown
+    generic_phone_mask: (XXX) XXX-XXXX

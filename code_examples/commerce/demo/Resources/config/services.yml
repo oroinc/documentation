@@ -108,3 +108,25 @@ services:
         public: true
         arguments:
             - '@translator'
+
+    acme_demo.sanitize.entity_rule.keep_last_processor:
+        class: Acme\Bundle\DemoBundle\Sanitize\RuleProcessor\Entity\KeepLastRowsProcessor
+        arguments:
+            - '@doctrine.dbal.default_connection'
+        tags:
+            - { name: 'oro_sanitize.entity_rule.processor'}
+
+    acme_demo.sanitize.field_rule.reverse_processor:
+        class: Acme\Bundle\DemoBundle\Sanitize\RuleProcessor\Field\ReverseProcessor
+        parent: oro_sanitize.field_rule.generic_processor
+        tags:
+            - { name: 'oro_sanitize.field_rule.processor' }
+
+    acme_demo.sanitize.field_rule.toll_free_phone_processor:
+        class: Oro\Bundle\SanitizeBundle\RuleProcessor\Field\WrappedProcessor
+        arguments:
+            - '@Oro\Bundle\SanitizeBundle\RuleProcessor\Field\DigitsMaskProcessor'
+        calls:
+            - ['setOptions', [{mask: '1 (800) XXX-XXX-XXXX'}]]
+        tags:
+            - { name: 'oro_sanitize.field_rule.processor', processor_name: 'toll_free_phone' }

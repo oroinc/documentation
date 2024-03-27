@@ -110,6 +110,9 @@ Application-level Structure Changes
     |   |   |── websocket_routing/                       # Gos PubSub routing resources.
     |   |   |   |── websocket_routing_config.yml
     |   |   |   └── ...
+    |   |   |── sanitize                                 # Sanitizing rules configuration 
+    |   |   |   |── sanitize_config.yml
+    |   |   |   └── ...
     |   |   |── assets.yml                               # Assets for administration themes/layouts.
     |   |   |── jsmodules.yml                            # Js modules for administration themes/layouts.
     |   |   └── behat_services.yml                       # Behat services must be registered here.
