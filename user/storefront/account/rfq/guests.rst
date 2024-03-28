@@ -6,7 +6,7 @@ Create a Guest RFQ in the Storefront
 
 .. begin
 
-In the Oro application, guest customers can create a request for a quote for the items they are interested in purchasing without the need to register.
+In the Oro application, guest customers can create a request for a quote for the items they are interested in purchasing without the need to register, if :ref:`this option was configured in the back-office <sys--conf--commerce--guest--enable--guest_quotes>`.
 
 Guest RFQs can be created from the shopping list and a quick order form.
 
@@ -21,15 +21,15 @@ To create a guest RFQ from the shopping list:
 
    .. image:: /user/img/storefront/rfq/GuestItemAddedtoSL.png
 
-2. In the top right corner, click **Shopping List** to open the shopping list page and view your item(s).
+2. In the top right corner, hover over the shopping list widget and click **Open List** to view your item(s).
 
    .. image:: /user/img/storefront/rfq/GuestSLButton.png
 
-3. Click **Request Quote** on the top right of the page, or select this option from the drop-down list of the **Create Order** button at the bottom of the page.
+3. Click |IcChevronDown| next to the **Create Order** button to reveal the **RequestQuote** button.
 
    .. image:: /user/img/storefront/rfq/GuestCreateRFQButtons.png
 
-4. Provide information on the RFQ in the emerged form.
+4. Provide information on the RFQ form.
 
    In the Request a Quote section, enter:
 
@@ -46,30 +46,21 @@ To create a guest RFQ from the shopping list:
    In the Products section, you can:
 
    * Edit the item by clicking |IcPencil| at the end of the product item row.
-
-     .. image:: /user/img/storefront/rfq/GuestEditProductInRFQ.png
-
    * Delete the item by clicking |IcDelete| at the end of the product row.
    * Add another product by clicking **+Add Another Product**
-
-   .. image:: /user/img/storefront/rfq/GuestRFQForm.png
 
    In the Data Protection section, you may be required to accept mandatory consents to process your personal information. If the consent is not accepted, you cannot submit the RFQ.
 
 .. image:: /user/img/storefront/rfq/rfq_data_protection.png
 
-5. Click **Submit Request** to submit your RFQ.
-
-   You should receive a confirmation email with your request details.
-
-   .. image:: /user/img/storefront/rfq/GuestConfirmationDetails.png
+5. Click **Submit Request** to submit your RFQ. You should receive a confirmation email with your request details.
 
 From the Quick Order Form
 -------------------------
 
 To create an RFQ from the quick order form:
 
-1. Click **Quick Order Form** in the top right corner of the page.
+1. Click on the **Quick Order** widget in the top navigation bar.
 
    .. image:: /user/img/storefront/orders/GuestQuickOrderButton.png
 
@@ -95,23 +86,13 @@ To create an RFQ from the quick order form:
    In the Products section, you can:
 
    * Edit the item by clicking |IcPencil| at the end of the product item row.
-
-     .. image:: /user/img/storefront/rfq/GuestEditProductInRFQ.png
-
    * Delete the item by clicking |IcDelete| at the end of the product row.
    * Add another product by clicking **+Add Another Product**
 
-   .. image:: /user/img/storefront/rfq/GuestRFQForm.png
-
    In the Data Protection section, you may be required to accept mandatory consents to process your personal information. If the consent is not accepted, you cannot submit the RFQ.
-
-   .. image:: /user/img/storefront/orders/data_protection_quick_order_form.png
     
-5. Click **Submit Request** to submit your RFQ.
+5. Click **Submit Request** to submit your RFQ. You should receive a confirmation email with your request details.
 
-   You should receive a confirmation email with your request details.
-
-   .. image:: /user/img/storefront/rfq/GuestConfirmationDetails.png
 
 .. finish
 

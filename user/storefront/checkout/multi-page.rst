@@ -23,9 +23,6 @@ Navigate through Multi Page Checkout in the Storefront
 
    To use billing information for shipping, select the **Use billing address** checkbox.
 
-   .. image:: /user/img/system/workflows/checkout/UseBillingAddressBox.png
-
-
 #. Click **Continue** to proceed to the next step.
 
 **Step 3: Shipping Method**
@@ -82,7 +79,6 @@ Navigate through Multi Page Checkout in the Storefront
    * Click |IcEditInline| next to the step that you want to edit. In this case, *all the changes made at the later steps will be preserved*.
 
      .. image:: /user/img/system/workflows/checkout/EditInfo.png
-        :width: 20%
 
 .. tip::
 

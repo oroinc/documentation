@@ -8,10 +8,7 @@ The following information covers the **Address Book** section of the **Account**
 
 .. begin
 
-To open the address book:
-
-1. Click **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>` on the top left of the page.
-2. Under **Account**, Click **Address Book**.
+To open the address book, click **Address Book** under **My Profile** in the top navigation bar.
 
 The address book has two sections:
 
@@ -22,9 +19,6 @@ The address book has two sections:
 
 .. note::
    Depending on the storefront settings, the address book lists may appear in the compact format with a map displayed on the right. Please be aware that a valid Google API key is required to display maps in the storefront. Please see :ref:`the back-office settings <system-configuration-integrations-google>` for more information.
-
-   .. image:: /user/img/storefront/profile/address_book_compact.png
-      :width: 40%
 
 .. _frontstore-guide--address-book--manage:
 .. _frontstore-guide--company-address:

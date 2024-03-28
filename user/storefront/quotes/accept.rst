@@ -3,9 +3,9 @@
 Accept a Quote in the Storefront
 ================================
 
-When you receive a quote, you can accept it and submit the order:
+You can view and manage quotes in the user account. When you receive a quote, you can accept it and submit the order:
 
-1. On the All Quotes page, click on the necessary quote.
+1. Click on a quote to open its details.
 2. Review the quote details, then scroll down to the bottom, and click |IcPencil| **Accept and Submit to Order** on the bottom right of the page.
 
 .. image:: /user/img/storefront/quotes/AccepQuoteNew.png

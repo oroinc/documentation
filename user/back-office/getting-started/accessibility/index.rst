@@ -15,7 +15,7 @@ Not everyone can use a mouse to browse the website, so we provided a logical and
 .. image:: /user/img/concept-guides/accessibility/skip-to-main-content.png
    :alt: Button Skip to Main Content that appears when you click TAB for the first time and initiate assistive keyboard navigation
 
-Watch for visual focus indicators: you can use the Tab key for elements that light up in blue and the arrow keys for elements that are highlighted in yellow. You can open menus and dropdown elements using Enter or down-arrow keys, and close menus, dropdowns, and popups with the Esc key.
+Watch for visual focus indicators: you can use the Tab key for elements that light up in blue and the arrow keys for elements that are highlighted in yellow. You can open menus and dropdown elements using Enter, Space or down-arrow keys, and close menus, dropdowns, and popups with the Esc key.
 
 .. image:: /user/img/concept-guides/accessibility/blue-tab_yellow-arrows.png
    :alt: Blue for tab element vs yellow for arrows

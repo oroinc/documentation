@@ -53,7 +53,7 @@ In OroCommerce, products can be of three types, simple, configurable and kits. T
 
 **Simple products** are physical items that exist in a basic, single variation. Their qualifiers, such as color or size, cannot be modified meaning customers cannot select the same product with slightly different characteristics. Simple products have a unique SKU and serve as ‘building blocks’ for configurable products. You can manage the inventory information and the price for a simple product.
 
-.. image:: /user/img/concept-guides/products/SimpleProductScreenFrontStore.png
+.. image:: /user/img/concept-guides/products/simple-product.png
    :alt: An example of a simple product displayed in the storefront
    :align: center
 
@@ -65,7 +65,7 @@ However, in the back-office, configurable products are more sophisticated. A con
    :alt: Both configurable and simple products are illustrated in the products grid
    :align: center
 
-For example, a USB flash drive may be available in various colors and capacity (e.g., Red USB drive 64 GB, Red USB drive 256 GB, Green USB drive 128 GB, Black USB drive 64 GB). In this case, the generic USB flash drive is a configurable product, Red USB drive 64 GB, Red USB drive 256 GB, Green USB drive 128 GB, and Black USB drive 64 GB are product variants (created as simple products), and *color* and *capacity* are configurable attributes in the generic USB flash drive.
+For example, a USB flash drive may be available in various colors and capacity (e.g., Red USB drive 64 GB, Red USB drive 256 GB, White USB drive 128 GB, Black USB drive 64 GB). In this case, the generic USB flash drive is a configurable product, Red USB drive 64 GB, Red USB drive 256 GB, White USB drive 128 GB, and Black USB drive 64 GB are product variants (created as simple products), and *color* and *capacity* are configurable attributes in the generic USB flash drive.
 
 A configurable attribute is one of the product attributes that are used to distinguish product variants of the same configurable product. There should be at least one configurable attribute specified for the configurable product in order to enable the customer to perform product variant selection.
 
@@ -77,7 +77,7 @@ To purchase multiple product variants in one order, use a :ref:`matrix order for
 
 A **product kit** is an assortment of products, each with their individual SKUs. Each product in this assortment bundle can be mandatory or optional for the buyers to buy in order to proceed though the checkout. An example of a product kit would be a lamp with a selection of optional accessories or services for it, such as spare bulbs of different wattage or warranty.
 
-.. image:: /user/img/products/products/kits/kit-front.png
+.. image:: /user/img/concept-guides/products/kit-front.png
    :alt: Product kits in the storefront
 
 .. warning:: Please be aware that the Product Kits feature is still in development and some functionality is incomplete.

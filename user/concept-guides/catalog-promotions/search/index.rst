@@ -51,6 +51,11 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 .. image:: /user/img/concept-guides/search/fuzzy-search-storefront.png
    :alt: Fuzzy search with 2 errors illustration
 
+* :ref:`Search Synonyms in the Storefront <user-guide-search-synonyms>` - The feature is available in the OroCommerce Enterprise edition. You can create a group of synonyms so that when a user searches for a word from this group in the OroCommerce storefront, the system would return results for all the synonyms in this group. Synonym management can be enabled :ref:`globally <configuration--guide--commerce--search--synonyms>` and :ref:`per website <configuration--website-commerce--search--synonyms>` in the system configuration, and subsequently managed through **Marketing > Search > Search Synonyms** in the main menu.
+
+.. image:: /user/img/concept-guides/search/search-synonyms-storefront.png
+   :alt: Search synonyms illustration
+
 * :ref:`Search History <configuration--guide--commerce--configuration--search-history>` - If the feature is enabled, you can view a history of all searches performed by a customer user in the storefront under **Marketing > Search > Search History**. The grid includes information on all keywords entered by a user, the search result type (product autocomplete, product search, or empty), the number of products found (if applicable), the date and time of the search, the website where the search was performed, the localization used when the search was performed, and the name of the customer and customer user who performed the search (if applicable).
 
   The option also enables a :ref:`Search Terms report <user-guide-search-terms-report>` that shows how frequently a specific search phrase was used, and whether the search query returned an empty result.

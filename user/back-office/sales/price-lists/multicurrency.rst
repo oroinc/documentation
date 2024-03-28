@@ -33,30 +33,18 @@ View Price in Specific Currency in the Storefront
 
 By default, prices in the OroCommerce storefront are shown in the default currency.
 
-.. image:: /user/img/sales/pricelist/price_currency_change1.png
-   :class: with-border
-   :alt: Display prices for the lumen headlamp in USD in the storefront
-
 However, you may select a different currency with a currency selector on the top right.
 
 .. image::  /user/img/sales/pricelist/currency_on_the_front_store.png
    :alt: Switching between currencies in the storefront
 
 After the new currency is selected, product prices automatically adjust to show the unit prices in the selected currency.
+ When the price list does not contain the price for the product in the selected currency, the price information is absent. You can still add the product to the shopping list and request a quote to clarify the pricing in the specific currency.
 
-.. note:: When the price list does not contain the price for the product in the selected currency, the price information is missing. You can still add the product to the shopping list and request a quote to clarify the pricing in the specific currency.
+**Related Topics**:
 
-**Sample: Prices in Euro are Provided**
-
-.. image:: /user/img/sales/pricelist/price_currency_change2.png
-   :class: with-border
-   :alt: Display the prices in Euro for the lumen headlamp product
-
-**Sample: Prices in Euro are Missing**
-
-.. image:: /user/img/sales/pricelist/price_currency_change_no_price_in_selected_currency.png
-   :class: with-border
-   :alt: Display the lumen headlamp product without prices as it doesn't support prices in USD
+* :ref:`Configure Currency Exchange Rate <sys--config--sysconfig--general-setup--currency>`
+* :ref:`Configure Pricing Settings <sys--config--commerce--catalog--pricing>`
 
 
 .. include:: /include/include-images.rst

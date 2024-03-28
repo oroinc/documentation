@@ -59,21 +59,26 @@ Steps and Transitions
 
 The QMF consists of the following steps and transitions:
 
-1. Steps:
-
-   a) Draft
-   b) Sent to Customer
-   c) Closed
-   d) Deleted
-
-2. Transitions:
-
-   a) For **Draft**: Edit, Clone, Delete, Send to Customer
-   b) For **Sent to Customer**: Cancel, Expire, Delete, Create New Quote, Accept, Decline, Declined by Customer
-   c) For **Closed**: Reopen
-   d) For **Deleted**: Undelete
-
-.. image:: /user/img/system/workflows/workflows/QBW_steps_transitions_table.png
++-----------------+----------------------------------+---------------------------+
+|Steps            |  Transitions                     |     Post-Transition Steps |
++=================+==================================+===========================+
+|Draft            | * Edit                           |     * Draft               |
+|                 | * Clone                          |     * Draft               |
+|                 | * Delete                         |     * Deleted             |
+|                 | * Send to Customer               |     * Sent to Customer    |
++-----------------+----------------------------------+---------------------------+
+|Sent to Customer | * Cancel                         |     * Closed              |
+|                 | * Expire                         |     * Closed              |
+|                 | * Delete                         |     * Deleted             |
+|                 | * Create New Quote               |     * Sent to Customer    |
+|                 | * Accept                         |     * Closed              |
+|                 | * Decline                        |     * Closed              |
+|                 | * Declined by Customer           |     * Closed              |
++-----------------+----------------------------------+---------------------------+
+|Closed           | * Reopen                         |     * Closed              |
++-----------------+----------------------------------+---------------------------+
+|Deleted          | * Undelete                       |     * Draft               |
++-----------------+----------------------------------+---------------------------+
 
 .. note:: Please note that Accepted and Declined transitions for the Sent to Customer step are automatically triggered by the changes of customer statuses and they do not, therefore, take the form of buttons in the interface.
 

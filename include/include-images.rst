@@ -605,3 +605,52 @@ Images
 .. |IcCapture| raw:: html
 
    <i class="far fa-credit-card" aria-hidden="true"></i>
+
+.. |IcBookmarkSolid| raw:: html
+
+   <i class="fas fa-bookmark" aria-hidden="true"></i>
+
+.. |IcBookmarkOutline| raw:: html
+
+   <i class="far fa-bookmark" aria-hidden="true"></i>
+
+.. |IcChevronUp| raw:: html
+
+   <i class="fas fa-chevron-up" aria-hidden="true"></i>
+
+.. |IcShoppingList| raw:: html
+
+   <i class="far fa-clipboard" aria-hidden="true"></i>
+
+.. |IcQuickOrderForm| raw:: html
+
+   <i class="fas fa-bolt" aria-hidden="true"></i>
+
+.. |IcFeatured| raw:: html
+
+   <i class="far fa-star" aria-hidden="true"></i>
+
+.. |IcNewArrivals| raw:: html
+
+   <i class="fas fa-award" aria-hidden="true"></i>
+
+.. |IcAddtoShoppingList| raw:: html
+
+   <i class="far fa-plus-square" aria-hidden="true"></i>
+
+.. |IcReassign| raw:: html
+
+   <i class="far fa-user" aria-hidden="true"></i>
+
+.. |IcMoveUp| raw:: html
+
+   <i class="fas fa-level-up-alt" aria-hidden="true"></i>
+
+.. |IcRefreshNew| raw:: html
+
+   <i class="fas fa-redo" aria-hidden="true"></i>
+
+.. |IcRequestQuote| raw:: html
+
+   <i class="fas fa-redo" aria-hidden="true"></i>
+

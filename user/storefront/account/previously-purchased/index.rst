@@ -3,7 +3,7 @@
 Manage Previously Purchased Products in the Storefront
 ======================================================
 
-The Previously Purchased Products page displays the products that were recently purchased by customer users. In the storefront, this page is nested under the **Previous Purchased** section of the **Account** menu.
+The Previously Purchased Products page displays the products that were recently purchased by customer users. In the storefront, this page is nested under the **Previous Purchased** section of the user menu.
 
 .. image:: /user/img/storefront/previously_purchased/PreviouslyPurchased.png
 

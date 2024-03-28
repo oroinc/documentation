@@ -7,7 +7,7 @@ Navigate through Guest Checkout in the Storefront
 
 .. hint:: This section is part of the :ref:`Checkout Configuration Concept Guide <checkout-management-concept-guide>` topic that provides a general understanding of single-page and multi-page checkout concepts.
 
-In the Oro storefront, :ref:`guest customers <sys--conf--commerce--guest>` can place orders similarly to registered users. They are, however, limited to just one shopping list.
+In the Oro storefront, :ref:`guest customers <sys--conf--commerce--guest>` can place orders similarly to registered users, if guest access is enabled and configured in the :ref:`back-office <configuration--guide--commerce--configuration--sales>`. They are, however, limited to just one shopping list.
 
 Unauthenticated customers can proceed to the checkout through:
 
@@ -16,8 +16,8 @@ Unauthenticated customers can proceed to the checkout through:
 
 At the checkout, guest customers can:
 
-* Login if they have forgotten to do this before placing items in the shopping list.
-* Create an account.
+* Login if they have forgotten to do this before placing items in the shopping list
+* Create an account
 
 .. _frontstore-guide--orders-checkout--sample--guest:
 
@@ -27,7 +27,6 @@ Sample Guest Checkout
 ---------------------
 
 As an illustration, let us follow the steps of the checkout as an unauthenticated user. The following example has registration options available at the checkout. However, please keep in mind, that your website configuration may be different and registration options may be unavailable.
-
 
 1. Add selected items to the shopping list.
 
@@ -43,22 +42,12 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
 4. The following options are available on the page that opens:
 
+    .. image:: /user/img/storefront/orders/SampleGuestCheckout5.png
+
    * Sign in
-
-     .. image:: /user/img/storefront/orders/SampleGuestCheckout5.png
-
    * Create and Account
-
-     .. image:: /user/img/storefront/orders/SampleGuestCheckout6.png
-
    * Forgot Your Password
-
-     .. image:: /user/img/storefront/orders/SampleGuestCheckout7.png
-
    * Continue as a Guest
-
-     .. image:: /user/img/storefront/orders/SampleGuestCheckout4.png
-
 
 5. Click **Continue as a Guest**.
 
@@ -85,7 +74,6 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
 9. To complete registration, open your mailbox and check the registration confirmation email.
 
-   .. image:: /user/img/storefront/orders/SampleGuestCheckout10.png
 
 **Related Articles**
 

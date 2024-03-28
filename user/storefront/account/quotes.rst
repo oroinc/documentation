@@ -3,15 +3,9 @@
 Manage Quotes in the Storefront
 ===============================
 
-The Quotes section provides the details on all your created and submitted quotes. Here, you can negotiate with sales representatives on requesting a better price, more convenient quantities and additional services, view, accept, and submit an order based on the offered prices and conditions.
+The Quotes section provides the details on all your created and submitted quotes. Here, you can negotiate with sales representatives on requesting a better price, more convenient quantities and additional services, view, accept, and submit an order based on the offered prices and conditions. In the storefront, this page is nested under the **Quotes** section of the user menu.
 
 .. image:: /user/img/storefront/quotes/my_account_quotes.png
-
-To open the **Quotes** menu:
-
-1. Click **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>` on the top left of the page.
-2. Under **Account**, click **Quotes**.
-
 
 The All Quotes page contains the following information:
 

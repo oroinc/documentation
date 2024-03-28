@@ -27,7 +27,7 @@ To add a piece of tracking information about the shipping to the order:
 
 #. Click **Save**.
 
-After the tracking information for shipping has been provided, it becomes available to the buyer in the storefront.
+After the tracking information for shipping has been provided, it becomes available to the buyer in their storefront account in the order information.
 
 .. image:: /user/img/sales/orders/ShippingTrackingFront.png
    :alt: Display the shipping tracking number in the Order History section of the customer account menu in the storefront

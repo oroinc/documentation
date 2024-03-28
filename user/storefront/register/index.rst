@@ -6,12 +6,10 @@
 .. _frontstore-guide--getting-started:
 .. _frontstore-guide--getting-started-overview:
 
-How to Register and Sign In to OroCommerce Storefront
-=====================================================
+How to Register and Log In to OroCommerce Storefront
+====================================================
 
-The following guide gives you an overview of the first steps you need to take to start working with the store. These include registration, signing in, and requesting a new password.
-
-Click the links below to learn more about each topic.
+The guide provides an overview of the first steps to start working with the store, including registration, sign-in, and password reset:
 
 * :ref:`Create an account <frontstore-guide--getting-started-overview-create-account>` --- navigates you through the steps of creating an account in your OroCommerce web store.
 * :ref:`Sign in <frontstore-guide--getting-started-overview-sign-in>` --- illustrates the signing in process
@@ -25,5 +23,5 @@ Click the links below to learn more about each topic.
    :hidden:
 
    Create Account <create-account>
-   Sign In <sign-in>
+   Log In <sign-in>
    Forgot Password <forgot-password>

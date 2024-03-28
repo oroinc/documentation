@@ -43,7 +43,7 @@ To configure filters and sorting options globally:
     .. image:: /user/img/system/config_commerce/catalog/filters_and_sorters_storefront.png
        :alt: The storefront product page illustrating the Default Filter Panel State configuration
 
-    * **Filter Panel Position** --- enables to select the required position of the filter bar in the storefront. There are two options available:
+    * **Filter Panel Position** --- enables to select the required position of the filter bar in the storefront product grids. There are two options available:
 
      When *Top* (default) is selected, the filter bar is displayed on the top of the product listing page.
 
