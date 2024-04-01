@@ -11,10 +11,7 @@ Provide Spelling for Required Language
 
 .. begin_content_translation
 
-You can provide the translation for all content elements of your storefront (e.g., product names, descriptions, catalog titles, SEO attributes, etc.) using inline content translation available for most of the text fields.
-
-.. image:: /user/img/concept-guides/localization/content-translation-example.png
-
+You can provide the translation for all content elements of your storefront and back-office (e.g., product names, descriptions, catalog titles, SEO attributes, etc.) using inline content translation available for most of the text fields.
 
 For that:
 
@@ -26,13 +23,13 @@ For that:
 
 4. Click the |IcTranslations| **Translations** icon next to the required content element to provide spelling for different languages.
 
-.. image:: /user/img/concept-guides/localization/content_translation.png
+.. image:: /user/img/concept-guides/localization/content-translation-example.png
    :alt: Click the translations icon next to the Titles to provide spelling for different languages
 
 The corresponding content translation is displayed in the storefront upon selecting this localization.
 
-.. image:: /user/img/concept-guides/localization/translation_frontstore.png
-   :alt: View the content translated to German when the German localization is selected in the storefront
+.. image:: /user/img/concept-guides/b2c/dif_localization.png
+   :alt: View the content translated to French when the French localization is selected in the storefront
 
 .. finish_content_translation
 

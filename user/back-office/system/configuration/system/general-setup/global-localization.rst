@@ -8,7 +8,7 @@ Configure Global Localization Settings
 
 .. begin_1
 
-In the system configuration, you can define the localization options, such as system locale, primary location, address formatting method, system timezone, calendar year settings, temperature and wind speed units on the map. Furthermore, you can set the default language of the UI elements displayed in the storefront.
+In the system configuration, you can define the localization options, such as system locale, primary location, address formatting method, system timezone, calendar year settings, temperature and wind speed units on the map. Furthermore, you can set the default language of the UI elements displayed in the storefront and in the back-office.
 
 .. hint:: The system configuration of the localization settings are available on four levels: globally, :ref:`per organization <config_guide--localization--organization-localization>`, :ref:`per website <sys--websites--sysconfig--general-setup--localization>`, and :ref:`per user <config_guide--localization--user-localization>`.
 
@@ -61,7 +61,7 @@ To configure localization settings globally:
 
 5. In the **Localization Settings**, provide:
 
-   * **Default Localization** --- The default language of the back-office and storefront UI. The list of available languages depends on the localizations added to the **Enabled Localizations** list.
+   * **Default Localization** --- The default localization of the back-office and storefront UI. The list of available languages depends on the localizations added to the **Enabled Localizations** list.
    * **Enabled Localizations** --- The list of localizations is generated automatically based on the data preconfigured in the **System > Localization > Localizations** menu.
 
      All supported localizations added to this list are displayed in the language switcher in the storefront.
