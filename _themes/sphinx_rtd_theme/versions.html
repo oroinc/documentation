@@ -2,7 +2,7 @@
 <div class="switcher-container">
     <strong class="doc-title">Version:</strong>
     <div class="documentation-version-switcher">
-        <div class="version">{{ current_version.name }}{{ ' (latest)' if '6.0' == current_version.name }}</div>
+        <div class="version">{{ '6.1 (dev)' if current_version.name == 'master' }}{{ current_version.name if current_version.name != 'master' }}{{ ' (latest)' if '6.0' == current_version.name }}</div>
         <ul class="documentation-version">
             {%- if versions.branches %}
                 {%- for item in versions.branches %}
