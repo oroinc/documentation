@@ -8,15 +8,15 @@ In OroCommerce, :term:`shopping lists <Shopping List>` are much more than a list
 
 .. _frontstore-guide--shopping-lists-create:
 
-In the storefront, shopping lists are located in the Shopping Lists section under the My Account menu and in the shopping list widget in the top right corner, where it can be easily spotted.
+You can reach shopping lists under the the user name menu in the top navigation bar or in the shopping list widget in the top right corner.
 
 .. image:: /user/img/storefront/shopping_lists/shopping_lists_location.png
    :alt: Two locations of the shopping lists
 
-Shopping Lists Section
-----------------------
+Shopping Lists Under Account Menu
+---------------------------------
 
-The Shopping Lists section under the My Account menu stores all the information about current shopping lists that the customer user has access to. By default, the page is preconfigured to display only the shopping lists that the user owns, but you can always reset the filter and select the required conditions. The user can view and update the shopping lists, provided that they have the :ref:`appropriate permissions <frontstore-guide-roles>` enabled.
+The Shopping Lists section in the user account stores all the information about current shopping lists that the customer user has access to. By default, the page is preconfigured to display only the shopping lists that the user owns, but you can always reset the filter and select the required conditions. The user can view and update the shopping lists, provided that they have the :ref:`appropriate permissions <frontstore-guide-roles>` enabled.
 
 .. image:: /user/img/storefront/shopping_lists/new_shopping_list_section.png
    :alt: A new shopping list section under the My Account menu in the storefront

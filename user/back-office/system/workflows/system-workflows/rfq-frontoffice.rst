@@ -76,19 +76,22 @@ Steps and Transitions
 
 The RFQ Submission Flow consists of the following steps and transitions:
 
-1. Steps:
-   
-   a) Submitted
-   b) Requires Attention
-   c) Cancelled
-   
-2. Transitions:
-   
-   a) For **Submitted**: Cancel, Decline, Request More Information
-   b) For **Requires Attention**: Cancel, Decline, Provide More Information
-   c) For **Cancelled**: Resubmit, Reopen
-
-.. image:: /user/img/system/workflows/rfq/frontoffice/RFQFrontOfficeTable.png
++-----------------+---------------------+---------------------------+
+|Steps            |  Transitions        |     Post-Transition Steps |
++=================+=====================+===========================+
+|Submitted        | * Cancel            |     * Canceled            |
+|                 | * Decline           |     * Canceled            |
+|                 | * Request More Info |     * Requires Attention  |
+|                 | * Cancel            |     * Canceled            |
+|                 | * Delete            |     * Deleted             |
++-----------------+---------------------+---------------------------+
+|Requires         | * Cancel            |    * Canceled             |
+|Attention        | * Declined          |    * Canceled             |
+|                 | * Provide More Info |    * Submitted            |
++-----------------+---------------------+---------------------------+
+| Canceled        |  * Resubmit         |    * Canceled             |
+|                 |  * Reopen           |    * Submit               |
++-----------------+---------------------+---------------------------+
 
 .. note:: Please note that the Request For Information, Reopen and Decline transitions are visible only in the back-office for the sales personnel.
 

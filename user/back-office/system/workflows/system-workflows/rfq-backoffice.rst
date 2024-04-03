@@ -78,28 +78,37 @@ Steps and Transitions
 ^^^^^^^^^^^^^^^^^^^^^
 
 RFQ Management Flow consists of the following steps and transitions:
-
-1. Steps:
-
-	a) Open
-	b) More Information Requested
-	c) Processed
-	d) Declined
-	e) Cancelled
-	f) Deleted
-   
-2. Transitions:
-   
-	a) For **Open**: Mark as Processed, Request More Information, Decline, Cancel, Delete.
-	b) For **More Information Requested**: Cancel, Delete, Info Provided.
-	c) For **Processed**: Delete.
-	d) For **Declined**: Cancel, Delete, Reprocess.
-	e) For **Cancelled**: Delete, Reprocess.
-	f) For **Deleted**: Undelete.
 	
 .. note:: Please note that the Info Provided transition for the More Information Requested step is automatically triggered and it does not, therefore, take the form of a button in the interface.
 
-.. image:: /user/img/system/workflows/rfq/backoffice/RQF_steps_transitions_table.png
+
++-----------------+----------------------------------+---------------------------+
+|Steps            |  Transitions                     |     Post-Transition Steps |
++=================+==================================+===========================+
+|Open             | * Mark as Processed              |     * Processed           |
+|                 | * Requires More Information      |     * Canceled            |
+|                 | * Decline                        |     * Declined            |
+|                 | * Cancel                         |     * Canceled            |
+|                 | * Delete                         |     * Deleted             |
++-----------------+----------------------------------+---------------------------+
+|More Information | * Cancel                         |     * Canceled            |
+|Requested        | * Delete                         |     * Deleted             |
+|                 | * Information Provided           |     * Open                |
++-----------------+----------------------------------+---------------------------+
+|Processed        | * Delete                         |     * Deleted             |
++-----------------+----------------------------------+---------------------------+
+|Declined         | * Cancel                         |     * Canceled            |
+|                 | * Delete                         |     * Deleted             |
+|                 | * Reprocess                      |     * Open                |
++-----------------+----------------------------------+---------------------------+
+| Canceled        |  * Delete                        |    * Deleted              |
+|                 |  * Reprocess                     |    * Open                 |
++-----------------+----------------------------------+---------------------------+
+|Deleted          | * Undelete                       |    * Canceled             |
+|                 |                                  |    * Open                 |
+|                 |                                  |    * More Information     |
+|                 |                                  |      Requested            |
++-----------------+----------------------------------+---------------------------+
 
 .. note:: Steps that follow the **Undelete** transition depend on the internal and/or customer statuses prior to deletion:
 	

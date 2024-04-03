@@ -22,8 +22,8 @@ In the back-office, a web catalog consists of the **content tree** (the catalog 
 
 A good first step when it comes to building a web catalog is creating the root content node, followed by adding the **first level menu items** that represent menu headers, for example:
 
-* Outdoor & Garden
 * Building & Hardware
+* Outdoor & Garden
 * Lighting & Electrical
 
 .. image:: /user/img/concept-guides/web-catalog/bo-sf-nodes.png
@@ -31,22 +31,20 @@ A good first step when it comes to building a web catalog is creating the root c
 
 and then populating them with child (content) nodes:
 
-* Outdoor & Garden: *Garden Furniture, Garden Tools, Fencing*
 * Building & Hardware: *Building Supplies, Doors & Windows, Timber & Sheet Materials*
+* Outdoor & Garden: *Garden Furniture, Garden Tools, Fencing*
 * Lighting & Electrical: *Lightning, Home Electrical, Smart Home*
 
 .. image:: /user/img/concept-guides/web-catalog/bo-sf-child-nodes.png
-   :align: center
    :alt: Child menu items in back-office vs storefront
 
 Each of these nodes can have more child categories:
 
-* Fencing: *Fence panels, Garden Gates, Gravel Boards*
 * Timber & Sheet Materials: *Timber Cladding, Skirting Boards, Decorative Mouldings*
+* Fencing: *Fence panels, Garden Gates, Gravel Boards*
 * Smart Home: *Voice Assistants, Cameras, Heating, Doorbells*
 
 .. image:: /user/img/concept-guides/web-catalog/bo-sf-further-child-nodes.png
-   :align: center
    :alt: Deeper child menu items in back-office vs storefront
 
 .. hint:: In addition to the catalog items, the main storefront menu can also contain static custom menu items, such as Contact Us or About. These custom menu items are not part of either master catalog or web catalog and can be moved to a different section of your storefront. Please see the :ref:`documentation on frontend menu items <backend-frontend-menus>` to learn more.
@@ -74,15 +72,11 @@ You can configure more than one content variant per node, in case you want to di
 .. image:: /user/img/concept-guides/web-catalog/restrictions.png
    :alt: Visibility restrictions for content variant
 
-You can also control which section of the web catalog to display on your website. By configuring a **navigation root**, you select relevant categories that you want to be included, instead of the whole web catalog content tree. For example, build the main menu starting from the *Smart Home*  content node and its child nodes.
+You can also control which section of the web catalog to display on your website. By configuring a **navigation root**, you select relevant categories that you want to be included, rather than displaying the entire content tree of the web catalog. For example, build the main menu starting from the *Building & Hardware* content node and its child nodes. More on the storefront menu configuration are described in the `Changing Storefront's Product Menu`_ section below.
 
-.. image:: /user/img/concept-guides/web-catalog/nav-root.png
-   :alt: Configuring a navigation root to display a segment of a web catalog
+.. image:: /user/img/concept-guides/web-catalog/nav-root-system-config.png
+   :alt: Illustrating that storefront menu is built based on the navigation root settings configured from the system configuration
 
-You can use the nodes excluded from the main menu. For example, create a category and add it as a separate block in the storefront homepage as part of the :ref:`featured menu <menu-management-concept-guide>`. This block can lead to a product listing page with a number of discounted items with the product listing page not be part of the main menu and will only be available via a link from the new featured menu block on the homepage (e.g., Special Offers).
-
-.. image:: /user/img/concept-guides/web-catalog/featured-menu-nav-root.png
-   :alt: A segment of web catalog added to featured menu in the storefront
 
 Web Catalogs in a Multi-Org Application
 ---------------------------------------
@@ -195,34 +189,40 @@ Whether you use the master catalog or a web catalog to display your product coll
 
 There are several :ref:`frontend menus <frontend-menus-overview>` that make up the navigation of the website storefront. The one that allows you to customize the main navigation menu in your storefront is called **commerce_main_menu**. It reflects the existing structure of your master catalog or :ref:`selected web catalog <user-guide--system--menu--menu-frontend>` and presents you with options to customize the name and position of its categories in the storefront without affecting the original master or web catalogs.
 
-.. image:: /user/img/concept-guides/menus/commerce_main_menu_sample.png
-   :alt: Illustration of the commerce_main_menu in the storefront
-
-.. hint:: Although **commerce_main_menu** is the default main navigation menu, it can be :ref:`changed in the system configuration <user-guide--marketing--web-catalog--enable-globally>`.
-
 Commerce_main_menu is located under **System > Frontend Menus**.
 
-.. image:: /user/img/system/frontend_menu/commerce-main-menu.png
+.. image:: /user/img/concept-guides/web-catalog/commerce-main-menu.png
    :alt: Location of the menu associated with the main product menu in the storefront
 
 Here, categories in the tree to your left constitute the main menu your customers see on the website.
 
 When no :ref:`web catalog is connected <sys--config--sysconfig--websites--routing>`, **commerce_main_menu** is populated with the structure of the master catalog, and the target type of the system items is set to Category. When you connect a web catalog and define the navigation root, system menu items in the menu is set to Content Node.
 
-.. image:: /user/img/system/frontend_menu/master-vs-webcatalog-frontend-menu.png
+.. image:: /user/img/concept-guides/web-catalog/master-vs-webcatalog-frontend-menu.png
    :alt: The difference between the way commerce_main_menu looks when either the master or web catalog is connected
 
 You can modify *system* items (which are reflection of the items from web/master catalog), or :ref:`add new custom items altogether <user-guide--system--menu--menu-frontend--add-item>`. After you add a new item to a particular parent category, you can drag and drop it outside its parent up or down the tree.
 
+.. note:: Keep in mind that, initially, the system takes the default values from the :ref:`routing settings <sys--config--sysconfig--websites--routing>` in the system configuration. However, once a user adjusts the values in the **commerce_main_menu**, the system starts adhering to these modified values, subsequently updating the storefront menu accordingly. This way, the menu configured to start from the *Building & Hardware* content node set in the system configuration will be overridden with the *Smart Home* content node set in the **commerce_main_menu**.
+
+  .. image:: /user/img/concept-guides/web-catalog/nav-root-system-config.png
+     :alt: Illustrating that the navigation root configured from the Frontend menu supersedes the one set under system configuration.
+
+
 You can also add promo images to the menu and add links to them. In the screenshot below, the image is created as a new menu item with target type URI and placed 2 levels deep in the tree.
 
-.. image:: /user/img/system/frontend_menu/promo-image.png
+.. image:: /user/img/concept-guides/web-catalog/promo-image.png
    :alt: Promo image at the bottom of the mega menu
 
-If you place such an image higher or lower than level 2, it will be displayed as a menu item, which means that you will only see the title of the menu item but not the image. This is the default behavior, and :ref:`customization is required <bundle-docs-commerce-commerce-menu-bundle-menu-templates>` if it needs changing for your business needs.
+However, if you place such an image higher or lower than level 2, it will be displayed as a menu item, which means that you will only see the title of the menu item but not the image. This is the default behavior, and :ref:`customization is required <bundle-docs-commerce-commerce-menu-bundle-menu-templates>` if it needs changing for your business needs.
 
-.. image:: /user/img/system/frontend_menu/promo-image-no-preview.png
+.. image:: /user/img/concept-guides/web-catalog/promo-image-no-preview.png
    :alt: Promo image as a link without preview
+
+You can use the nodes excluded from the main menu. For example, create a category or content node (e.g., Promotions) with a number of discounted items and with the product listing page not be part of the main menu. Then add it to the :ref:`featured menu <menu-management-concept-guide>` block and enable the block for the storefront header as part of the **Top Navigation Menu** or **Quick Access Button** setting in the :ref:`system configuration <configuration--commerce--design--theme>`.
+
+.. image:: /user/img/concept-guides/web-catalog/featured-menu-nav-root.png
+   :alt: A segment of web catalog added to featured menu in the storefront
 
 Synchronization with Original Web Catalog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -231,9 +231,9 @@ The tree displayed on the left-hand side of the main menu represents the structu
 
 Every item in the tree is synchronized with the web catalog until you manually update the item in the commerce_main_menu, in which case your changes have priority. The system will not overwrite them if the original menu item is updated in the web catalog.
 
-In the example below, we have changed the title of category New Arrivals to New In via commerce_main_menu. As you can see in the screenshot below, the category's name in the original web catalog is unchanged, and the storefront uses the title from the frontend menu.
+In the example below, we have changed the title of category *Building Supplies* to *Construction Materials* via commerce_main_menu. As you can see in the screenshot below, the category's name in the original web catalog is unchanged, and the storefront uses the title from the frontend menu.
 
-.. image:: /user/img/system/frontend_menu/sync-illustration.png
+.. image:: /user/img/concept-guides/web-catalog/sync-illustration.png
    :alt: Illustration of the storefront menu when one of the titles is updated in commerce_main_menu
 
 Like with the change in the title, you can change the order of the menu items by dragging and dropping them under the required parent item without affecting the original web catalog. When you change the order of the items, your changes will have priority over any potential future changes in the web catalog order.
@@ -250,7 +250,6 @@ As no business is alike, OroCommerce can be easily adapted to your business proc
 One of the common ways approach catalogs is to section the main menu into Products and Brands, where both of these items are built through the web catalog. Products in this case fully mirror the structure of the master catalog, while Brands categorize and filter all product collection based on the brand names.
 
 .. image:: /user/img/concept-guides/web-catalog/products-brands.png
-   :align: center
    :alt: Products and brands in the main menu of the storefront
 
 Keeping the structure of the master catalog in Products helps adhere to a unified organization strategy, but using a web catalog as the tool for publication helps reuse existing products for Brands. This would not be possible via standard master catalog publication, as in the master catalog products can only be used once.

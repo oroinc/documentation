@@ -73,7 +73,7 @@ Use Filters
 
 A number of :ref:`filters <user-guide-filters-management>` is displayed on the Create Territory page. Each filter corresponds to the entity for which the territory has been enabled. Setting conditions to the filter of a specific entity adds a territory to its records. For instance, if you enable territories for leads, a Lead filter will become available in the Create Territory form. When you set conditions to the Lead filter, a territory will be added to the records of leads.
 
-.. image:: /user/img/sales/sales_territories/filters.png
+.. image:: /user/img/sales/sales_territories/filters1.png
    :alt: Display the filter possibilities in the storefront
 
 .. note::

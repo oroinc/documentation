@@ -88,7 +88,7 @@ Configuration Sequence
 
 .. image:: /user/img/concept-guides/payment/payment-configuration-diagram.png
    :alt: Payment Configuration Diagram
-   :align: center
+
 
 **Related Topics**
 

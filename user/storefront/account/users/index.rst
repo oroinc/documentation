@@ -7,15 +7,12 @@ This section provides information on how you can manage your organization users 
 
 The storefront user, role and permissions provide users with access to data and the ability to perform tasks based on their business responsibilities and the company guidelines. The ability to do this is crucial for both the buyer and the seller, as it helps support the various operations of their businesses. OroCommerce comes out of the box with the capabilities to allow buyers and sellers to specify the exact roles and permissions each user requires in order to do their job as efficiently as possible, eliminate mistakes and save money.
 
-To locate users:
-
-1. Navigate to **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>`.
-2. Click **Users** in the menu on the left.
+You can access the list of storefront users in the menu under your profile name in the top navigation bar.
 
 .. image:: /user/img/storefront/users_roles/Users.png
    :alt: Navigation path to the Users section
 
-On the All Users page, you can view and edit the existing users, or create new ones.
+You can view and edit existing users, or create new ones.
 
 .. note:: Please note that the ability to edit your account information depends on the permissions that correspond to your role. These are defined by the administrator.
 
@@ -26,23 +23,23 @@ The Users grid shows the following data:
 * Email Address
 * Enabled
 * Confirmed
-* Locked
-* More Actions (View, Edit, Enable/Disable, Delete, Unlock).
+* Reset Password
+* User Actions (View, Edit, Enable/Disable, Delete).
 
 .. image:: /user/img/storefront/users_roles/users-actions.png
    :alt: Display the actions that a user can perform from the Users section
 
-Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
+You also have the ability to:
 
 1. Refresh the view table: click |IcRefresh| to update the view table.
 2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-3. Table settings: click |IcSettings| to define which columns to show in the table.
-4. :ref:`Filters <frontstore-guide--navigation-filters>`.
+3. Manage table settings: click |IcSettings| to define which columns to show in the table.
+4. Manage :ref:`filters <frontstore-guide--navigation-filters>`.
 
 Customer User View Page
 -----------------------
 
-The Customer User View Page has the name of the selected user in the page header.
+The :ref:`Customer User <user-guide--customers--customer-users>` page has the name of the selected user in the page header.
 
 .. image:: /user/img/storefront/users_roles/CustomerUser.png
 
@@ -72,6 +69,8 @@ A form will emerge with the following data to provide:
 * Confirm Password
 * Generate Password checkbox
 * Roles: administrator/buyer checkboxes
+
+.. image:: /user/img/storefront/users_roles/create-user.png
 
 .. include:: /include/include-images.rst
    :start-after: begin

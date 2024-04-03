@@ -11,10 +11,7 @@ The **Re-Order** option triggers a new checkout using the items from an existing
 
 To proceed with re-ordering:
 
-1. Navigate to **Orders** in the Quick Access Menu, or click **Account** and then click **Order History** in the git menu on the left.
-
-   .. image:: /user/img/storefront/orders/reorder_1.png
-
+1. Open **Order History** in the user menu.
 3. Select the order which you want to re-order from the **All Past Orders** section. The section contains a list of all the orders submitted previously.
 
 4. Click **Re-Order** on the right to open the **Checkout** page.

@@ -10,8 +10,8 @@ Out-of-the-box, OroCommerce comes with a Combined Price List (CPL) functionality
 
 If you operate a business without complex pricing, or use an external third-party pricing system to generate and manage prices outside of OroCommerce, you can :ref:`switch from the default CPL pricing to a simpler Flat pricing <dev-guide-setup-flat-pricing>`. To use the Flat pricing feature, your system administrator should enable it via the console, not the UI. The pricing configuration page will then have only the General, Pricing Rounding, Price List, and Display Currency settings.
 
-   .. image:: /user/img/system/config_commerce/catalog/flat-pricing-enabed-config.png
-      :alt: Pricing configuration page when flat pricing is enabled
+.. image:: /user/img/system/config_commerce/catalog/flat-pricing-enabed-config.png
+   :alt: Pricing configuration page when flat pricing is enabled
 
 The pricing settings are configured globally, per :ref:`organization <configuration--guide--commerce--configuration--catalog--pricing--organization>`, and per :ref:`website <pricing-currency-website>`.
 

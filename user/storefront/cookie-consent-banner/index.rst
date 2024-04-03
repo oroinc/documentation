@@ -20,7 +20,7 @@ The :ref:`CookieConsentBannerBundle <bundle-docs-commerce-cookie-consent-bundle>
 
 The banner consist of the description about cookie usage at the site and buttons:
 
- - **Yes, Access**. By clicking this button, the banner closes, the consent saves for the visitor and during navigation, the banner will not be shown to the user.
+ - **Yes, Accept**. By clicking this button, the banner closes, the consent saves for the visitor and during navigation, the banner will not be shown to the user.
  - Configured button. By default is **Cookie Policy**. Configured link to CMS page where user can read the policy of cookie usage of current site.
 
 .. finish

@@ -3,9 +3,7 @@
 Manage Payment Profiles (Authorize.Net Customer Profiles) in the Storefront
 ===========================================================================
 
-When checking out using a credit card or |eCheck|, a customer is presented with the option to store the payment method for future use. This information is stored in your OroCommerce account as an Authorize.Net customer profile. A customer who has a previously saved profile is presented with the option for seamless subsequent checkouts without having to re-enter their payment data. Once you log into your account in the OroCommerce storefront, you can view and manage payment and address information stored within Customer Profiles, as well as add new credit cards and bank accounts.
-
-To locate the information in your customer profile, navigate to **Account > Manage Payment Profiles**.
+When checking out using a credit card or |eCheck|, a customer is presented with the option to store the payment method for future use. This information is stored in your OroCommerce account as an Authorize.Net customer profile. A customer who has a previously saved profile is presented with the option for seamless subsequent checkouts without having to re-enter their payment data. Once you log into your account in the OroCommerce storefront, you can view and manage payment and address information stored within Customer Profiles in the user menu, as well as add new credit cards and bank accounts.
 
 .. image:: /user/img/storefront/cim/manage_payment_profiles.png
    :alt: Manage Customer Payment Information section in the storefront account
@@ -22,10 +20,10 @@ Add a New Credit Card
 To create a new credit card payment profile:
 
 1. On the Manage Payment Profiles page, click **+Add New Credit Card** on the right.
-2. In the **New Payment Profile** form, provide the following details:
 
-   .. image:: /user/img/storefront/cim/add_new_credit_card.png
-      :alt: Add a new credit card payment profile
+   .. image:: /user/img/storefront/cim/manage_payment_profiles2.png
+
+2. In the **New Payment Profile** form, provide the following details:
 
    * **Name** --- Provide the name for the account.
    * **Credit Card Number** --- Provide the card number (without spaces).
@@ -57,9 +55,6 @@ To add a new card during the checkout:
 
 3. To save the details of the card for the future use, select the **Save Payment Details** checkbox.
 
-   .. image:: /user/img/storefront/cim/card_form_fillied_in_checkout.png
-      :alt: Credit card form filled in during checkout
-
    When you place the order, this card is saved in your account in the **Manage Payment Profiles** section as a non-default card.
 
    .. image:: /user/img/storefront/cim/new_card_from_checkou_saved_to_account.png
@@ -70,18 +65,12 @@ Manage a Credit Card Profile
 
 * To edit a credit card, click |IcPencil| **Edit** at the end of the row of the selected profile.
 
-  .. image:: /user/img/storefront/cim/update_payment_profile.png
+  .. image:: /user/img/storefront/cim/edit-cim.png
      :alt: Edit payment profile info
 
   To update card information, select the **Update Credit Card Information** checkbox and provide new information in the credit card form.
 
-  .. image:: /user/img/storefront/cim/update_credit_card_info.png
-     :alt: Update credit card payment details
-
 * To delete credit card, click |IcDelete| **Delete** at the end of the row of the selected profile. Click **Yes** in the confirmation dialog.
-
-  .. image:: /user/img/storefront/cim/delete_credit_card.png
-     :alt: Delete a credit card profile
 
 Add a New Bank Account
 ----------------------

@@ -22,7 +22,6 @@ These are located under **Customers** in the main menu of the application but th
 
 .. image:: /user/img/concept-guides/customers/customers_menu.png
    :alt: Customers menu
-   :align: center
 
 :term:`Accounts <Account>` and :term:`customers <Customer>` are businesses, while :term:`contacts <Contact>` and :term:`customer users <Customer User>` are individuals who act on behalf of the company.
 

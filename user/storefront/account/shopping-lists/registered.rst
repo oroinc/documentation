@@ -44,20 +44,15 @@ Shopping lists can be created using several flows.
 
 **Flow 5**
 
-1. Open :ref:`Matrix Ordering Form <frontstore-guide--orders-matrix>`.
+Configurable products (products that have many variations) can be purchased either via an :ref:`inline or pop-up matrix form <config-guide--landing-commerce--products--configurable-products>`. You can create a new shopping list next to **Add to Shopping Lst** by clicking on the drop-down icon |IcChevronDown| and then **Create Shopping List**.
 
-.. image:: /user/img/storefront/orders/HatProductPage.png
+Pop-up Matrix Form:
 
-2. Enter the number of items for each category.
+.. image:: /user/img/storefront/shopping_lists/pop-up-matrix.png
 
-.. image:: /user/img/storefront/orders/MatrixForm.png
+Inline Matrix Form:
 
-4. Click on the drop-down icon |IcChevronDown| located in the **Add to** button next to each product.
-5. Select **Create New Shopping List**.
-
-.. image:: /user/img/storefront/orders/MatrixFormShoppngList.png
-
-7. Give the list a name and click **Create**.
+.. image:: /user/img/storefront/shopping_lists/inline-matrix.png
 
 **Flow 6**
 
@@ -76,16 +71,10 @@ Duplicate the already existing shopping list to make multiple similar orders:
 
 Create a new shopping list when selecting multiple products using mass action on the product listing page.
 
-1. Select the required items by clicking **Select Item**.
-
-   .. note:: **Select Item** can be placed under or next to the item depending on the :ref:`display options <frontstore-guide--navigation-display-options>`.
-
-2. Click **Choose Action** on the top left next to the **Sort by** option.
+1. Select the required items one by one, or click **Select All on Page**.
+2. Click |IcChevronUp| next to **Add to Shopping List** and click **Create New Shopping List** from the drop-down.
 
    .. image:: /user/img/storefront/navigation/MassActionProductListing.png
-
-3. Click **Create New Shopping List**.
-4. Give the list a name and click **Create**.
 
 .. _frontstore-guide--shopping-lists-view:
 
@@ -130,14 +119,10 @@ To edit the shopping list name from within its view page:
 
 2. Enter a new name and click **Save**.
 
-.. image:: /user/img/storefront/shopping_lists/SHEditName2.png
-
 To delete the shopping list:
 
 1. Click the |IcMore| **More Options** menu at the end of the list header row and then |IcDelete| Delete.
 2. Confirm the deletion by clicking **Yes, Delete** in the confirmation window.
-
-.. image:: /user/img/storefront/shopping_lists/SHDelete.png
 
 To create an order from the shopping list:
 

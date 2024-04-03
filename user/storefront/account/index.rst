@@ -8,7 +8,7 @@
 Manage My Account Menu in the Storefront
 ========================================
 
-When you sign into your OroCommerce account, you can view and manage your personal contact information, billing and shipping addresses, monitor the status of your orders, quotes, and requests for quote. It is all possible from the **My Account** menu page.
+When you sign into your OroCommerce account, you can view and manage your personal contact information, billing and shipping addresses, monitor the status of your orders, quotes, and requests for quote.
 
 .. image:: /user/img/storefront/profile/my_account_menu.png
 

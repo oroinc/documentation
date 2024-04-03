@@ -15,8 +15,6 @@ In the single page checkout, you can see how far along in the checkout you are, 
 
   1. Enter billing information for the order by selecting an existing address from the address book, or creating a new one.
 
-     Selecting the **Ship to this address** checkbox will allow you to use the provided billing address for shipping.
-
   2.  Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
 
 

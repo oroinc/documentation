@@ -105,10 +105,6 @@ Now you can perform the following actions with an RFQ in the back-office:
 
 Once a customer submits the RFQ in the storefront, it becomes immediately available in the RFQ back-office in the *Open* status.
 
-.. image:: /user/img/sales/rfq/rfq_12.png
-   :class: with-border
-   :alt: Display the RFQ with the customer status Submitted in the storefront
-
 .. image:: /user/img/sales/rfq/rfq_13.png
    :class: with-border
    :alt: Display the RFQ with the internal status Open in the back-office

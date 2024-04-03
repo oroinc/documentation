@@ -3,24 +3,15 @@
 Manage My Profile in the Storefront
 ===================================
 
-
-The following information covers the **My Profile** section of the **Account** menu.
-
 .. _frontstore-guide--profile-overview:
 
 .. begin
 
-To open your profile:
+Once you are logged in to the OroCommerce storefront, you can access your profile by clicking on your name in the top navigation bar, and selecting **My Profile** from the dropdown.
 
-1. Click **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>` on the top left of the page.
-2. Under **Account**, click **My Profile**.
+My Profile has two sections, Account Info and Default Addresses.
 
-My Profile has two sections:
-
-* Account Info
-* Default Addresses
-
-   .. image:: /user/img/storefront/profile/MyProfilePage.png
+.. image:: /user/img/storefront/profile/MyProfilePage.png
 
 .. _frontstore-guide--profile-account:
 
@@ -34,6 +25,7 @@ In the **Account Info** section you can view the following details:
 * Role
 * Company
 * Status
+* Password Status
 * Data protection (consents)
 
 To edit the profile, click |IcPencil| next to **Account Info**.
@@ -52,7 +44,6 @@ In editing mode, you can amend the following details:
 * Birthday
 * Password
 * Data protection (accept or revoke mandatory or optional consents to process personal data)
-
 
 .. image:: /user/img/storefront/profile/MyProfilePageEdit.png
 
@@ -83,7 +74,7 @@ Data Protection
 
 .. hint:: Read more on this topic in :ref:`Data Protection and Consent Management <user-guide--consents>`.
 
-To comply with the :ref:`data protection regulations (such as CPPA, GDPR, etc.) <user-guide--consents>`, you need to be to provide your explicit consent to the application to process your personal data. All available consents are located in your profile under **Account Info**.
+To comply with the :ref:`data protection regulations (such as CPPA, GDPR, etc.) <user-guide--consents>`, explicit consent for the application to process your personal data may be required. All applicable consents are located under **My Profile** in the **Account Info** section.
 
 Consents can be mandatory and optional:
 
@@ -100,9 +91,9 @@ The following key rules apply to consents in OroCommerce:
 
 * **Consents are informed**
 
-  You can be aware of how exactly your data is going to be processed and shared, and what marketing communications you can expect once you provide your consent. Therefore, you can view all your accepted and pending consents (and their detailed description) in your profile under **Account > My Profile > Account Info** in the storefront.
+  You can be aware of how exactly your data is going to be processed and shared, and what marketing communications you can expect once you provide your consent. Therefore, you can view all your accepted and pending consents (and their detailed description) in your profile under **My Profile > Account Info** in the storefront.
 
-  .. image:: /user/img/storefront/profile/data_protection_my_profile.png
+  .. image:: /user/img/storefront/profile/MyProfilePage.png
 
 * **Consents can be revoked**
 
@@ -120,51 +111,28 @@ You can be asked to accept consents when:
 * :ref:`Registering (creating and account in the OroCommerce store) <frontstore-guide--getting-started-overview-create-account>`
 * :ref:`When editing <frontstore-guide--profile-account>` your profile under **Account Info > Data Protection**
 * :ref:`When requesting a quote <frontstore-guide--rfq>`
+* At checkout
 
-.. comment: :ref:`At the first step of the checkout <>`
+You can accept a :ref:`consent <frontstore-guide--profile-consents>` from the page of your profile, by clicking |IcEdit| **Edit** next to the **Account Info** section.
 
-To accept a :ref:`consent <frontstore-guide--profile-consents>` from the page of your profile:
+.. note:: You can view the description of the available consents in the **Account Info** by clicking on the consent links. The |ConsentDeclined| icon indicates that the consent has not been accepted, while the |IcActivate| indicated that it has been read, understood and accepted.
 
-1. Click **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>` on the top left of the page.
-2. Under **Account**, click **My Profile**.
+In the **Data Protection** section, select the checkbox next to the consent that you want to accept. At this point you are prompted to read the text of the consent. Click **Accept** to agree to the terms of the consent and Click **Save** on the bottom left.
 
-   .. image:: /user/img/storefront/profile/accept_consent.png
+.. image:: /user/img/storefront/profile/revoke_consent.png
 
-3. Click |IcEdit| **Edit** next to the **Account Info** section.
-
-   .. note:: You can view the description of the available consents in the **Account Info** by clicking on the consent links. The |ConsentDeclined| icon indicates that the consent has not been accepted, while the |IcActivate| indicated that it has been read, understood and accepted.
-
-4. In the **Data Protection** section, select the checkbox next to the consent that you want to accept. At this point you are prompted to read the text of the consent.
-
-   .. image:: /user/img/storefront/profile/accept_consent_explicitly.png
-
-5. Click **Accept** to agree to the terms of the consent.
-
-   .. image:: /user/img/storefront/profile/accept_consent_form_my_profile.png
-
-6. Click **Save** on the bottom left.
+.. image:: /user/img/storefront/profile/explicit_accept_consent.png
 
 .. _frontstore-guide--profile-consents--revoke:
 
 Revoke a Consent
 ~~~~~~~~~~~~~~~~
 
-To decline the :ref:`consent <frontstore-guide--profile-consents>` that you have previously accepted:
+You can decline the :ref:`consent <frontstore-guide--profile-consents>` that you have previously accepted, by clicking |IcEdit| **Edit** next to the **Account Info** section.
 
-1. Click **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>` on the top left of the page.
-2. Under **Account**, click **My Profile**.
+.. note:: You can view the description of the available consents in the **Account Info** section by clicking on the consent links. The |ConsentDeclined| icon indicates that the consent has not been accepted, while the |IcActivate| indicated that it has been read, understood and accepted.
 
-   .. image:: /user/img/storefront/profile/data_protection_section_my_profile_consent_accepted.png
-
-3. Click |IcEdit| **Edit** next to the **Account Info** section.
-
-   .. note:: You can view the description of the available consents in the **Account Info** section by clicking on the consent links. The |ConsentDeclined| icon indicates that the consent has not been accepted, while the |IcActivate| indicated that it has been read, understood and accepted.
-
-4. In the **Data Protection** section, clear the checkbox next to the consent that you want to revoke.
-5. Click **Save** on the bottom left of the page.
-6. Confirm that you wish to decline the consent by clicking **Yes, Save**. You will be automatically redirected to the page of your profile.
-
-.. comment: Double check the button. Should be changed into No, Cancel and Yes, Decline
+In the **Data Protection** section, clear the checkbox next to the consent that you want to revoke and click **Save** on the bottom left of the page.
 
 .. include:: /include/include-images.rst
    :start-after: begin

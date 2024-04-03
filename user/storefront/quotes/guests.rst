@@ -7,6 +7,8 @@ Send Guest Quotes from the Storefront
 
 Non-authenticated users can request a quote for the items they are interested in without registering in the storefront, and then receive a quote from the sales representative in the form of a direct link to the provided email address.
 
+.. hint:: This capability is controlled :ref:`in the back-office settings <sys--conf--commerce--guest--enable--guest_quotes>`.
+
 To request a quote in the storefront:
 
 1. Add the required items to the shopping list.
@@ -14,10 +16,6 @@ To request a quote in the storefront:
 3. Fill in the details of the quote, such the first and last names, email address, company name, etc.
 4. Click **Submit Request** once the details are provided.
 5. Once the sales representative has processed your request, they email you their quote to the address you provided.
-
-   .. image:: /user/img/storefront/quotes/guest_quote_received.png
-      :alt: Guest quotes received through email
-
 6. Click on the link in the email to open the quote.
 
    .. image:: /user/img/storefront/quotes/guest_quote_link.png

@@ -7,14 +7,9 @@ Manage Requests for Quote in the Storefront
 
 To negotiate with the sales person (e.g. on a better price, more convenient quantities and additional services), you can request a quote. Both registered and guest users can create :term:`RFQs <Request for Quote>` in the Oro storefront.
 
-To reach RFQ menu:
-
-1. Navigate to **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>`.
-2. Click **Request for Quote** in the menu on the left.
+Registered users can view all existing Requests for Quote or create new ones in their storefront account by clicking Requests for Quote in the user menu in the top navigation bar.
 
 .. image:: /user/img/storefront/rfq/RFQ.png
-
-On the All Requests for Quote page, you can view the existing RFQs, or create new ones.
 
 RFQ Grid
 --------
@@ -62,7 +57,7 @@ You can print the selected RFQ by clicking **Print RFQ**  on the top right of th
 
 .. image:: /user/img/storefront/rfq/PrintRFQ.png
 
-You can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of the view page.
+If an RFQ was previously cancelled, you can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of the view page.
 
 .. image:: /user/img/storefront/rfq/RFQResubmitNew.png
 

@@ -15,7 +15,7 @@ To create a guest quote from the received RFQ:
 2. Click once on the required RFQ to open its page.
 3. Click **Create Quote** on the top right.
 
-   .. image:: /user/img/sales/quotes/create_quote_from_rfq_guest.png
+   .. image::/user/img/storefront/quotes/create_quote_from_rfq_guest.png
       :alt: Create a new quote from an RFQ
 
 4. Amend quote details as necessary, and click **Save and Close** once done.

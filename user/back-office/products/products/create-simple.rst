@@ -76,7 +76,7 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
    Then, select whether to show the image as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove the image, click the |IcClose| **Delete** icon next to it.
 
-11. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the drop-down.
+11. In the **Design** section, select the :ref:`page template <configuration--commerce--design--theme>` from the drop-down.
 
    .. image:: /user/img/products/products/SimpleProductDesign.png
       :alt: The list of available page templates in the dropdown of the Page Template field

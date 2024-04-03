@@ -5,8 +5,8 @@ Manage Common Controls in the Storefront
 
 .. _frontstore-guide--navigation-tables:
 
-Tables
-------
+Tables (Grids)
+--------------
 
 Views in the form of tables can be considered the most commonly used UI elements in Oro applications. They are interactive, as they not only display data about specific store records but contain links to these records’ pages. Views are also configurable – so you can adjust the appearance and contents of the tables to your taste and needs.
 
@@ -16,10 +16,10 @@ Such tables represent aggregated views of data and store records, making it easy
 
 .. _frontstore-guide--navigation-location-trail:
 
-Location Trail
---------------
+Location Trail (Breadcrumbs)
+----------------------------
 
-In the top left corner of the view page, you can see where the current page is located in the menu. The name of the selected view table is usually located in the row below.
+You can trace where the current page is located in the menu in the breadcrumbs under the top navigation bar.
 
 .. image:: /user/img/storefront/navigation/GridLocationName.png
 
@@ -28,29 +28,21 @@ In the top left corner of the view page, you can see where the current page is l
 Display Options
 ---------------
 
+**Views**
+
+When browsing the website, buyers have the flexibility to choose how they view content, with three distinct options available: gallery view |IcTiles|, list view |IcDetails|, or compact view |IcCompactDetails|.
+
 .. image:: /user/img/storefront/navigation/GridPages.png
 
 **Sorting**
 
-Sorting options are located on the left of the view page under the view table name below the :ref:`filter <frontstore-guide--navigation-filters>`. They allow sorting records alphabetically, by price, relevance, or other attributes related to the products displayed on the page you are viewing.
+Buyers can sort records alphabetically, by price, relevance, or other attributes related to the products displayed on the page you are viewing.
 
 .. image:: /user/img/storefront/navigation/DispayOptionsSorting.png
 
-**Layout**
-
-Layout options are located on the far right under the view table name.
-
-.. image:: /user/img/storefront/navigation/DispayLayoutOptions.png
-
-The following layout options are available:
-
-* Tiles: |IcTiles|
-* Details: |IcDetails|
-* Compact Details: |IcCompactDetails|
-
 **Page Navigation**
 
-If you have a lot of records, they all may not fit on one data page. In this case, use the pager block in the center above the view table.
+If you have many records, they all may not fit on one data page. In this case, use the pager block in the center above the view table.
 
 In the pager block, you can see the page that you are currently on, the total number of data pages and the total number of records in the view table.
 
@@ -72,22 +64,26 @@ Tables can be viewed, saved as new ones, shared, renamed, set as default and del
 
 1. To view the list of available tables: click on the |IcChevronDown| arrow next to the table name.
 
-  .. image:: /user/img/storefront/navigation/SavedView.png
+   .. image:: /user/img/storefront/navigation/SavedView.png
 
 2. To save a table as a new one: click **Save as New**.
 
-    * **Enter New List Name**: Define a name of the new view table.
-    * **Set as Default**: Select this checkbox to set the new table as the default one.
-    * **Add**: Click **Add** to add a new saved view table.
-    * **Cancel**: Click **Cancel** to exit.
+   * **Enter New List Name**: Define a name of the new view table.
+   * **Set as Default**: Select this checkbox to set the new table as the default one.
+   * **Add**: Click **Add** to add a new saved view table.
+   * **Cancel**: Click **Cancel** to exit.
 
-    .. image:: /user/img/storefront/navigation/SaveViewAsDefault.png
+   .. image:: /user/img/storefront/navigation/SaveViewAsDefault.png
 
-3. To share the selected saved view: click |IcShareWithOthers|
-4. To unshare the selected saved view: click |IcUnshare|
-5. To set the selected saved view as default: click |IcTiles|
-6. To rename the selected saved view: click |IcPencil|
-7. To delete the selected saved view: click |IcDelete|
+   The following actions are available for saved view:
+
+   * share the selected saved view: |IcBookmarkOutline|
+   * unshare the selected saved view: |IcBookmarkSolid|
+   * set the selected saved view as default: |IcTiles|
+   * rename the selected saved view: |IcPencil|
+   * delete the selected saved view: |IcDelete|
+
+   .. image:: /user/img/storefront/navigation/saved-view-actions.png
 
 .. _frontstore-guide--navigation-action-buttons:
 
@@ -128,33 +124,25 @@ The following actions are available for filters:
 
    .. note:: Note that not all filters may be visible by default.
 
-2. To add, remove, search or reset filters, click |Bplus| and perform the required action.
-
-   .. image:: /user/img/storefront/navigation/FiltersAdd.png
-
-3. To apply a filter, click on its button in the bar and select the required option from the dropdown list.
+2. To apply a filter, click on its button in the bar and select the required option from the dropdown list.
 
    .. image:: /user/img/storefront/navigation/FiltersSelect.png
 
    .. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list
 
-      .. image:: /user/img/storefront/navigation/FiltersSelectOneAttribute.png
+      .. .. image:: /user/img/storefront/navigation/FiltersSelectOneAttribute.png
 
       or remain visible but disabled :ref:`depending on the website configuration <configuration--guide--commerce--configuration--catalog--filters-sorters>` when no items matching selected attributes in filters were found.
 
-      .. image:: /user/img/storefront/navigation/dont_change_initial_filter_state.png
+      .. .. image:: /user/img/storefront/navigation/dont_change_initial_filter_state.png
 
-4. Another way to apply a filter is to click on its button and specify your query in the control that appears. Note that filter controls might look different depending on the type of data you are going to filter — whether it is textual, numeric, date or option set.
-
-   .. image:: /user/img/storefront/navigation/FilterExample.png
-
-   After the filter is applied, its query will appear in the control, so you can easily recall how you have filtered the data.
+4. Another way to apply a filter is to click on its button and specify your query in the control that appears. Note that filter controls might look different depending on the type of data you are going to filter — whether it is textual, numeric, date or option set. After the filter is applied, its query will appear in the control, so you can easily recall how you have filtered the data.
 
    .. image:: /user/img/storefront/navigation/FiltersApplied.png
 
-Filter controls may be hidden at all if there are no related products on the displayed page.
+.. Filter controls may be hidden at all if there are no related products on the displayed page.
 
-   .. image:: /user/img/storefront/navigation/FiltersDisabled.png
+   .. .. image:: /user/img/storefront/navigation/FiltersDisabled.png
 
 5. To remove a filter, click on a cross **x** after the query.
 
@@ -164,11 +152,6 @@ Filter controls may be hidden at all if there are no related products on the dis
 
           .. image:: /user/img/system/config_commerce/catalog/filters_panel_position_sidebar.png
              :alt: The storefront product page illustrating the filter in the left sidebar
-
-The following example is an illustration of filters in action:
-
-.. image:: /user/img/storefront/navigation/Filters.gif
-   :alt: Illustration of how to work with filters in the storefront
 
 .. _frontstore-guide--navigation-table-options:
 
@@ -193,29 +176,7 @@ In the storefront, mass delete action is available in the **Address book** and *
 
 .. image:: /user/img/storefront/mass_actions/mass_actions_1.png
 
-To use mass delete action in the storefront, you need to :ref:`sign into the account <frontstore-guide--getting-started-overview-sign-in>` and proceed with the next steps:
-
-1. Navigate to the account page by clicking **Account** at the top.
-
-.. image:: /user/img/storefront/mass_actions/mass_actions_3.png
-
-2. Click the **Address book** section.
-
-   The following page with the list of customer addresses displays:
-
-   .. image:: /user/img/storefront/mass_actions/mass_actions_4.png
-
-3. To select multiple customer addresses, click |Bdropdown| in the left corner of the list header.
-
-   * The **All** option enables to select all the addresses available under this section.
-   * The **All visible** option enables to select only the addresses visible on the page you are currently viewing.
-   * The **None** option enables to deselect all the addresses which were selected previously.
-
-   .. image:: /user/img/storefront/mass_actions/mass_actions_5.png
-
-4. Hover over the |IcMore| **More Options** menu at the end of the list header and click |IcDelete| **Delete** to delete multiple addresses at a time.
-
-   .. image:: /user/img/storefront/mass_actions/mass_actions_6.png
+To use mass delete action in the storefront, you need to :ref:`be logged into the storefront account <frontstore-guide--getting-started-overview-sign-in>`.
 
 .. _frontstore-guide--navigation-search:
 
@@ -244,10 +205,6 @@ To save a search result:
 
 1. Use the search bar to look for a product name, SKU, keyword, etc.
 2. When the search results are displayed, click the **Save** icon on the top right. Make sure that the panel with filters is open.
-
-   .. image:: /user/img/storefront/navigation/saved-search.png
-      :alt: Saved search icon in the Filters panel
-
 3. Select the checkboxes for *New Product* and/or *Inventory Status* if you want to receive notifications.
 4. Click **Add**. Your search query is now saved under **My Account > Saved Search**.
 
@@ -259,52 +216,41 @@ To save a search result:
 Product Data Export
 -------------------
 
-Registered customer users can export products, their prices, and price tiers into a .csv file from the storefront product collection and search results pages.
+Registered customer users can export products, their prices, and price tiers into a .csv file from the storefront product collection and search results pages, if option *Product Grid Export* is enabled in the :ref:`back-office settings <sys--commerce--product--customer-settings>`.
 
 To download a product data .csv file:
 
-1. Click on the download icon on the right next to the items per page and filters.
+1. Click on the download icon on the top right of the product grid.
 
    .. image:: /user/img/storefront/navigation/export.png
       :alt: Export product data from the storefront product collection page
 
 2. Check your inbox for instructions on how to download the file.
 
-   .. image:: /user/img/storefront/navigation/export-download.png
-      :alt: Download export results
-
 .. _frontstore-guide--navigation-product-price:
 
-Your Price and Listed Price
----------------------------
+Product Price
+-------------
 
-Products in the storefront have two types of price displayed, Your Price and Listed Price.
-
-.. image:: /user/img/products/products/your_listed_pricing_equal.png
-     :alt: Your price and listed price are the same in the storefront
-
-Listed Price is the price set for each available product unit and their variation of quantity (tiers). Your Price is Listed price under your current tier pricing configuration.
+In the storefront, price per item may change depending on the number of items you want to purchase where in the :ref:`price tier <user-guide--pricing--price-list-manual>` the quantity falls.
 
 Suppose we have one product in the default price list with the following price tiers set in the back-office:
 
-* 1 item - $1
-* 10 items - $0.80
-* 100 items - $0.50
-* 1000 items - $0.30
+* 1 item - $76.79
+* 10 items - $72.95
+* 20 items - $69.11
+* 50 items - $65.2
+* 100 items - $61.43
 
 .. image:: /user/img/storefront/navigation/product-tiers-df-pl.png
    :alt: Illustration of price tiers for one product
 
 This means that product price per 1 item will change depending on how many items a buyer wants to purchase. The more they purchase, the cheaper the price per item is going to be in this scenario. The following image illustrates how price tiers are going to be displayed for a user in the storefront.
 
-.. image:: /user/img/storefront/navigation/price-tiers-product-listing.png
-   :alt: Illustration of price tiers in the storefront
-
-When a buyer tries to  change the quantity of the items, this triggers change in Your Price.
+When a buyer tries to  change the quantity of the items, this triggers change in the price per item.
 
 .. image:: /user/img/storefront/navigation/your-listed-price.gif
    :alt: Illustration of the price change after when a user changes product quantity
-
 
 .. include:: /include/include-images.rst
    :start-after: begin

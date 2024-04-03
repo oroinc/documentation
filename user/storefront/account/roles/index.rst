@@ -5,10 +5,7 @@ Manage Roles in the Storefront
 
 Roles are predefined sets of permissions. In the Roles section, you can view, edit and create new roles to define the level of permissions and access to the actions and data in OroCommerce storefront for the users of a specific role.
 
-To locate roles:
-
-1. Navigate to **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>`.
-2. Click **Roles** in the menu on the left.
+You can access the list of storefront roles in the menu under your profile name in the top navigation bar.
 
 .. image:: /user/img/storefront/users_roles/Roles.png
 
@@ -80,8 +77,6 @@ The following permissions are available:
   - Corporate (All Levels)."
 
 With the Customer User Role you can manage the following access- and permissions-related settings and capabilities:
-
-.. image:: /user/img/storefront/users_roles/AccessPermissions.png
 
 .. csv-table::
   :header: "Field", "Entities", "Capabilities (Checkboxes)"
