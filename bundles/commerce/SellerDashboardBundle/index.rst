@@ -72,7 +72,7 @@ Main Classes
 Dashboard
 ---------
 
-The `Seller Dashboard` is represented by a twig template, see `Oro\Bundle\SellerDashboardBundle\Resources\views\Index\default.html.twig`.
+The `Seller Dashboard` is represented by a twig template, see `@OroSellerDashboard/Index/default.html.twig`.
 
 Date periods
 ------------

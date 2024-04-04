@@ -17,6 +17,7 @@ Related Documentation
    :maxdepth: 1
 
    configuration
+   email-templates
    frontend-access
    mass-action-grid-setup
    sticky-panel-view

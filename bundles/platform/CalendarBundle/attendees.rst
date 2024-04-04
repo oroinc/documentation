@@ -2,7 +2,7 @@ Attendees
 =========
 
 An attendee entity represents a guest of `OroCalendarEvent:Event` and association with a related entity.
-The only supported related entity at the moment is `Oro\Bundle\UserBundle\Entity\User`. Attendee is associated with `Oro\Bundle\UserBundle\Entity\User` based on the matching logic. In the UI, attendees of an event are displayed with the label `Guests`.
+The only supported related entity at the moment is ``Oro\Bundle\UserBundle\Entity\User``. Attendee is associated with ``Oro\Bundle\UserBundle\Entity\User`` based on the matching logic. In the UI, attendees of an event are displayed with the label `Guests`.
 
 Fields
 ------
@@ -11,7 +11,7 @@ The attendee entity has the following fields:
 
 * `email` - String. An email of the attendee. This field cannot be blank in the API request if `displayName` is empty.
 * `displayName` - String. The name of the attendee is used to display it on the view. This field cannot be blank in the API request if `email` is empty.
-* `user` - A relation to `Oro\Bundle\UserBundle\Entity\User`. This field is not available in the API create/update requests.
+* `user` - A relation to ``Oro\Bundle\UserBundle\Entity\User``. This field is not available in the API create/update requests.
 * `calendarEvent` - A relation to `OroCalendarEvent:Event`.  This field is required in persistence and not available in the API.
 * `status` - Enum. The default values are: `none`, `accepted`, `declined`, `tentative`. In addition to the API, a user can change this value from the view page of `OroCalendarEvent:Event`.
 * `type` - Enum. Default values are: `organizer`, `optional`, `required`. At the moment there is no business logic related to this field.
@@ -19,7 +19,7 @@ The attendee entity has the following fields:
 Matching Logic
 --------------
 
-This logic uses the email of `OroCalendarEvent:Attendee` to find `Oro\Bundle\UserBundle\Entity\User` with the same email and organization.
+This logic uses the email of `OroCalendarEvent:Attendee` to find ``Oro\Bundle\UserBundle\Entity\User`` with the same email and organization.
 
 Notification logic
 ------------------
@@ -51,7 +51,7 @@ In API DELETE request, you can pass the parameter `notifyAttendees`. For example
 AttendeeRelationManager
 -----------------------
 
-Class ``Oro\Bundle\CalendarBundle\Manager\AttendeeManager`` is responsible for maintaining the entity's relation to other entities like `Oro\Bundle\UserBundle\Entity\User`.
+Class ``Oro\Bundle\CalendarBundle\Manager\AttendeeManager`` is responsible for maintaining the entity's relation to other entities like ``Oro\Bundle\UserBundle\Entity\User``.
 
 API Example
 -----------
@@ -108,7 +108,7 @@ For example:
                 "userId": null
               }
 
-Note that in this example, the first attendee has property `userId`. It means this instance of `Oro\Bundle\CalendarBundle\Entity\Attendee` is bound to `Oro\Bundle\UserBundle\Entity\User` in the application. In the meantime, the last attendee is not bound to any user in the application.
+Note that in this example, the first attendee has property `userId`. It means this instance of ``Oro\Bundle\CalendarBundle\Entity\Attendee`` is bound to ``Oro\Bundle\UserBundle\Entity\User`` in the application. In the meantime, the last attendee is not bound to any user in the application.
 
 POST Query Example
 ^^^^^^^^^^^^^^^^^^
