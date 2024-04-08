@@ -76,9 +76,6 @@ To create or configure the content node in the web catalog:
    .. image:: /user/img/marketing/web_catalogs/InheritParent.png
       :alt: clear the Inherit Parent box
 
-   .. image:: /user/img/marketing/web_catalogs/InheritParentOff.png
-      :alt: Additional restriction settings appear when clearing the Inherit Parent box
-
 #) In the *Content Variants* section, add the default content item to be displayed in the OroCommerce storefront when the node-level restriction conditions are met:
 
   * Select the type of content to be displayed in the storefront from the list on the right.

@@ -177,22 +177,6 @@ System Configuration
 
 System configuration is managed as a code via the configuration management tool (Puppet).
 
-Installed Software
-~~~~~~~~~~~~~~~~~~
-
-Oracle Linux OS
-Nginx
-PHP
-PostgreSQL
-Redis
-Elasticsearch
-
-
-.. admonition:: Business Tip
-
-    Looking for a new |B2B marketplace solution|? Become familiar with online B2B marketplaces and how they create value for your business.
-
-
 **What’s Next**
 
 * OroCloud :ref:`security <cloud_security>`
@@ -202,6 +186,9 @@ Elasticsearch
 * Information on how OroCloud team :ref:`handles incidents <cloud_monitoring>`
 * Technical :ref:`support <cloud_support>` service details (exclusions, priorities, SLA, etc).
 
+.. admonition:: Business Tip
+
+    Looking for a new |B2B marketplace solution|? Become familiar with online B2B marketplaces and how they create value for your business.
 
 .. toctree::
    :hidden:

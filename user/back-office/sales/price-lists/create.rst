@@ -12,17 +12,13 @@ Create a Price List
 
 To create a new price list:
 
-1. Navigate to **Sales > Price Lists** using the main menu.
-
-   .. image:: /user/img/sales/pricelist/PriceLists.png
-      :class: with-border
-      :alt: The list of all price lists available in the system
-
-2. Click **Create Price List**. The following page opens:
+1. Navigate to **Sales > Price Lists** using the main menu, and click **Create Price List**.
 
    .. image:: /user/img/sales/pricelist/PriceListsCreate.png
       :class: with-border
       :alt: The create price list page
+
+2. If you have more than one organization in the application, select the organization for which you are creating the price list.
 
 3. In the **General** section, provide the following information:
 
@@ -39,14 +35,12 @@ To create a new price list:
       Click *Choose a date* to open a calendar and pick the date.
 
       .. image:: /user/img/sales/pricelist/PriceListsCreate_general_schedule.png
-         :width: 40%
          :class: with-border
          :alt: Scheduling a date to activate the price list
 
       Click *time* and select the activation or deactivation time from the list. Alternatively, type it in and press **Enter**.
 
       .. image:: /user/img/sales/pricelist/PriceListsCreate_general_schedule_time.png
-         :width: 50%
          :class: with-border
          :alt: Scheduling time to activate the price list
 
