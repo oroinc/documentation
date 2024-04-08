@@ -10,11 +10,6 @@ Scheduled price activation helps eliminate the unwanted pressure of price manage
 To schedule price activation and deactivation:
 
 1. Navigate to **Sales > Price Lists** in the main menu.
-
-   .. image:: /user/img/sales/pricelist/PriceLists.png
-      :class: with-border
-      :alt: The list of all price lists
-
 2. Click the |IcMore| **More Options** menu to the right of the required price list and then click the |IcEdit| **Edit** icon to start editing price list details.
 
 3. In the **General** section, next to the **Schedule**, add a timetable for price list activation and deactivation:

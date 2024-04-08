@@ -3,7 +3,7 @@
 Configure Search Stop Words Settings per Website
 ================================================
 
-.. note:: You can configure search stop words :ref:`globally <configuration--guide--commerce--configuration--stop-words>`and per website.
+.. note:: You can configure search stop words :ref:`globally <configuration--guide--commerce--configuration--stop-words>` and per website.
 
 To configure search stop words settings per website:
 

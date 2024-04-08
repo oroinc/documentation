@@ -18,13 +18,13 @@ To start previewing a selected node, follow the steps outlined below:
 
 3. Select the content node to preview and click |IcPreview| **Preview** on the top right.
 
-    .. image:: /user/img/marketing/web_catalogs/web_catalog_preview.png
-       :alt: Clicking Preview on the top right of the Lighting  Products content node
+   .. image:: /user/img/marketing/web_catalogs/web_catalog_preview.png
+      :alt: Clicking Preview on the top right of the Lighting  Products content node
 
 4. The storefront page of the related content node opens in the preview mode in a new tab. The mode allows you to browse other pages as well. The configuration panel on the top of the page enables you to switch between websites, localizations, customer groups, and customers to ensure that the page is displayed correctly, based on different restriction scopes.
 
-    .. image:: /user/img/marketing/web_catalogs/preview_mode.png
-       :alt: Configuration panel in the storefront
+   .. image:: /user/img/marketing/web_catalogs/preview_mode.png
+      :alt: Configuration panel in the storefront
 
 5. If you want to adjust any settings and preview the results, you need to save these settings first.
 
@@ -33,25 +33,25 @@ To illustrate the example, let's consider the case where you run two businesses 
 * The Lighting Products category page is visible for all customers, customer groups, and localizations of the US website.
 * The related landing page is visible for all wholesale customers of the Canada website.
 
-     .. image:: /user/img/marketing/web_catalogs/lighting_products_restrictions.png
-        :alt: Restrictions set fot the lighting products content node
+  .. image:: /user/img/marketing/web_catalogs/lighting_products_restrictions.png
+     :alt: Restrictions set fot the lighting products content node
 
 When previewing this page, you need to set the same restrictions in the configuration panel to see how the page will be rendered in the storefront:
 
 * for the US website
 
-   .. image:: /user/img/marketing/web_catalogs/US_storefront_preview.png
-      :alt: Restrictions set fot the lighting products content node
+  .. image:: /user/img/marketing/web_catalogs/US_storefront_preview.png
+     :alt: Restrictions set fot the lighting products content node
 
 * for the Canada website
 
-   .. image:: /user/img/marketing/web_catalogs/Canada_storefront_preview.png
-      :alt: Restrictions set fot the lighting products content node
+  .. image:: /user/img/marketing/web_catalogs/Canada_storefront_preview.png
+     :alt: Restrictions set fot the lighting products content node
 
 * If the web catalog page is not visible within the applied restrictions, the customers will see the 404 error.
 
-    .. image:: /user/img/marketing/web_catalogs/404_error.png
-       :alt: Restrictions set fot the lighting products content node
+  .. image:: /user/img/marketing/web_catalogs/404_error.png
+     :alt: Restrictions set fot the lighting products content node
 
 
 .. include:: /include/include-images.rst

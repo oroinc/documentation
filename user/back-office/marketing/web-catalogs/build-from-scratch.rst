@@ -74,15 +74,17 @@ This way, we create all the required second-level menus.
 
 Each of such levels can be populated with more levels, or nodes, if necessary, and each node can have a page (:ref:`system <user-guide--marketing--web-catalog--content-variant-system-page>`, :ref:`landing <user-guide--marketing--web-catalog--content-variant-landing page>`, :ref:`product <user-guide--marketing--web-catalog--content-variant-product-page>`), a :ref:`product collection <user-guide--marketing--web-catalog--content-variant-product-collection>`, or a :ref:`category <user-guide--marketing--web-catalog--content-variant-category>` mapped into it.
 
-.. note:: You can drag the existing content nodes to a different position within the content tree on the left of the page, as illustrated below:
-
-.. image:: /user/img/marketing/web_catalogs/DragDropNode.png
-   :alt: Dragging the existing content nodes to a different position within the content tree
-   :class: with-border
-
 Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-per-website>`), you will be able to see it in the storefront.
 
-.. image:: /user/img/marketing/web_catalogs/use_case/NodesFrontStore.gif
+.. note:: You can drag the existing content nodes to a different position within the content tree on the left of the page, as illustrated below:
+
+          .. image:: /user/img/marketing/web_catalogs/DragDropNode.png
+            :alt: Dragging the existing content nodes to a different position within the content tree
+            :class: with-border
+
+
+
+.. .. image:: /user/img/marketing/web_catalogs/use_case/NodesFrontStore.gif
    :alt: Illustrating all content nodes created under the Web Catalog 2017 in the storefront
 
 **Related Articles**
