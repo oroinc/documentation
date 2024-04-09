@@ -13,7 +13,7 @@ Once the All Products page has been enabled in the system configuration :ref:`gl
 
    .. image:: /user/img/products/all_products_page/AllProductsOrganizationEditMenu.png
 
-4. Click once on the menu to which you will add the All Products page.
+4. Click on the menu to which you will add the All Products page.
 5. Click **Create Menu Item** on the top right of the page.
 #. In the **Title** field, type in the label for the menu item.
 #. In the **URI** field, specify */catalog/allproducts*.

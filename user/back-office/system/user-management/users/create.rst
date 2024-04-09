@@ -84,7 +84,7 @@ To create a new user in the Oro application:
 
 Once the user is created, it becomes available in the table of all users under **System > User Management > Users**:
 
-1. To view details of a specific user, click once on the user name in the table to open their page.
+1. To view details of a specific user, click on the user name in the table to open their page.
 2. To edit details of a specific user, click |IcEdit| in the ellipsis menu at the end of the row of the selected user. Alternatively, open the page of the user and click **Edit** on the top right.
 
    .. image:: /user/img/system/user_management/user_edit.png

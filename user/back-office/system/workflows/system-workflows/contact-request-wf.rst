@@ -20,7 +20,7 @@ To enable the workflow:
     .. .. image:: /admin_guide/img/workflows/contact_request_activate_from_grid.png
        :alt: Activate contact request workflow from that table of all workflows
 
-   Alternatively, click once on the workflow to open its page, and on the workflow page click |IcActivate| **Activate** on the top right.
+   Alternatively, click on the workflow to open its page, and on the workflow page click |IcActivate| **Activate** on the top right.
 
    .. .. image:: /admin_guide/img/workflows/contact_request_wf_page.png
       :alt: Activate contact request workflow from its page
@@ -42,7 +42,7 @@ To deactivate the workflow:
 1. Navigate to **System > Workflows** in the main menu.
 2. Hover over the more options menu at the end of the workflow row in the table of all workflows, and click |IcDeactivate| **Deactivate**.
 
-   Alternatively, click once on the workflow to open its page, and on the workflow page click |IcDeactivate| **Deactivate** on the top right.
+   Alternatively, click on the workflow to open its page, and on the workflow page click |IcDeactivate| **Deactivate** on the top right.
 
 When the workflow is disabled, the Contact Request workflow transitions are absent from the contact request page. 
 

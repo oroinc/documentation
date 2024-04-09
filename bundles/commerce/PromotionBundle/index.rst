@@ -5,7 +5,7 @@ OroPromotionBundle
 
 |OroPromotionBundle| adds coupon and promotion features to the OroCommerce application.
 
-With this bundle, a back-office administrator can enable or disable these features in the system configuration UI. The bundle introduces UI in the back-office for sales representatives to create and manage coupons and promotions and apply promotions to the customer orders via special discounts and coupon codes. For the customer users on the storefront, it provides the ability to apply coupons to the orders and review the applied promotions and discounts.
+With this bundle, a back-office administrator can enable or disable these features in the system configuration UI. The bundle introduces UI in the back-office for sales representatives to create and manage coupons and promotions and apply promotions to the customer orders via special discounts and coupon codes. For the customer users in the storefront, it provides the ability to apply coupons to the orders and review the applied promotions and discounts.
 
 Discounts
 ---------

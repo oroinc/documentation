@@ -46,7 +46,7 @@ From the Calendar Event Page
 To edit, delete, add context or comment to a specific calendar event from its page:
 
 1. Navigate to **Activities > Calendar Events** in the main menu.
-2. Click once on the required event to open it.
+2. Click on the required event to open it.
 3. Select the necessary actions.
 4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event.
 

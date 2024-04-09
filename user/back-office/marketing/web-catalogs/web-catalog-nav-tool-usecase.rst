@@ -51,13 +51,16 @@ Step 3: Add a Frontend Menu Item
 We are now going to add the newly created content node with New Arrivals to the quick access menu, next to the Quick Order Button. You can, of course, add it to any other relevant menu of the storefront theme.
 
 1. Navigate to **System > Frontend Menus** in the main menu.
+
 #. Click once on the *commerce_quick_access_refreshing_teal* item to open its page.
+
 #. Click **Create Menu Item**.
 
    .. note:: See the :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` topic for more information on frontend menu configuration.
 
 #. Name the menu item, set the Target Type to **Content Node**, and click on the new node (New Arrivals) in the tree to select it.
 #. Click **Save**.
+
 
 .. image:: /user/img/marketing/web_catalogs/navigation_root/add-node-to-menu-item.png
 

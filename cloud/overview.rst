@@ -28,7 +28,7 @@ With OroCloud, you get the following package of services:
 The following benefits come along:
 
 * Ease of use -- With OroCloud, you can focus on your business and save time and money on the in-house infrastructure technical support. OroCloud manages the application environment as part of the service, but we also offer a customized application maintenance service.
-* Security -- OroCloud has been |PCI-DSS certified| since December 2017 and is scheduled for yearly reassessment and renewal. This means that every resource that the OroCloud environment uses -- the servers, network, software, and configuration -- comply with the |PCI DSS Shared Responsibility GCP v31| . See |How GCP smoothed our path to PCI-DSS compliance| for more details.
+* Security -- OroCloud has been |PCI-DSS certified| since December 2017 and is scheduled for yearly reassessment and renewal. This means that every resource that the OroCloud environment uses -- the servers, network, software, and configuration -- comply with the |PCI DSS Shared Responsibility GCP v4.0| . See |How GCP smoothed our path to PCI-DSS compliance| for more details.
 * Reliability -- OroCloud is based on the highly reliable cloud platform and supports high-availability and fault-tolerant deployments out-of-the-box and comes with 24x7 technical support for P1 issues.
 
 .. note:: Download the |OroCloud Commitments to GDPR| document to find out about the standards and best practices adopted by Oro Inc to support :ref:`GDPR requirements <user-guide--consents>`.

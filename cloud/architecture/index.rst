@@ -115,7 +115,7 @@ You can get the list of available backups and restore to the specific recovery p
 Encryption
 ~~~~~~~~~~
 
-The backed up data is encrypted using AES-256 keys. The Retention policy for daily backups are retained for one week. Backups created on Sunday are retained for one year and they serve as weekly backups.
+The backed up data is encrypted using AES-256 keys.
 
 RTO
 ~~~

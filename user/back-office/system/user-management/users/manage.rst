@@ -10,7 +10,7 @@ Enable/Disable a User
 To enable or disable a user in the Oro application:
 
 1. Navigate to **System > User Management > Users**.
-2. In record table, click once on the name of the selected user to open their page.
+2. In record table, click on the name of the selected user to open their page.
 
 3. On page of the selected user, click |IcActivate| **Enable User**/ |IcBan| **Disable User** on the top right.
 
@@ -101,7 +101,7 @@ Generate an API Key for a User
 Integration with third-party software sometimes requires API access to the Oro application. A user can generate an API key to grant access to the required API while protecting their password from being disclosed to the third party.
 
 1. Navigate to **System > User Management > Users** in the main menu.
-2. On the page of all users, click once on the selected user to open their page.
+2. On the page of all users, click on the selected user to open their page.
 3. In the **General Information**, click **Generate Key** next to the **API Key** field.
 
    .. image:: /user/img/system/user_management/users_generate_api_key.png
@@ -121,7 +121,7 @@ You can change the password for a specific user on their profile page in the **M
  .. image:: /user/img/system/user_management/user_page_change_reset_password.png
 
 1. Navigate to **System > User Management > Users**.
-2. On the page of all users, click once on the selected user to open their page.
+2. On the page of all users, click on the selected user to open their page.
 3. On the user page, click **More Actions** on the top right.
 
    * Click |IcChangePassword| **Change Password** to open a new dialog and provide a new password. Alternatively, you can click the **Suggest Password** link to generate a secure random password. To see / hide  the entered password, click the |IcShow| **Show**/|IcHide| **Hide** icon next to the **New password** field. Once a new password is provided, a reset password email is sent to this user.

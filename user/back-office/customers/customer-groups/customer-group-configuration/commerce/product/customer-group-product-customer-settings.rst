@@ -19,7 +19,7 @@ To configure product data export settings per customer group:
 .. image:: /user/img/customers/customer_groups/customer-group-config.png
    :alt: Configuration settings for a customer group
 
-3. Select **Commerce > Products > Customer Settings** in the menu to the left.
+3. Select **Commerce > Product > Customer Settings** in the menu to the left.
 
 .. image:: /user/img/customers/customer_groups/customer-settings-config.png
    :alt: Product data export configuration options on customer group level

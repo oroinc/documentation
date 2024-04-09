@@ -61,9 +61,9 @@ For this, first enable the All Products page in the system:
 Next, add the page to the quick access menu:
 
 1. Navigate to **System > Websites**.
-2. Click once on the *Europe* website to open its page.
+2. Click on the *Europe* website to open its page.
 3. On the website page, click |IcConfig| **Edit Frontend Menu** to start editing the configuration.
-4. Click once on the commerce_quick_access menu.
+4. Click on the commerce_quick_access menu.
 
    .. image:: /user/img/products/all_products_page/SampleAllProducts5.png
 

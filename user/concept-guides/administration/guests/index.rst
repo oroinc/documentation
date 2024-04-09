@@ -90,10 +90,10 @@ You can manage this behavior in several ways:
 .. hint::
     If you experience issues with visibility configuration, make sure you read the following **visibility rules** and check if your settings are not overridden by other configuration with a higher priority:
 
-         * The website visibility may be configured individually for each website. The visibility configured for a particular website has priority over the default website visibility.
-         * The product visibility has priority over the category visibility. If the product is visible, but the category is hidden, the product is still visible.
-         * The category visibility has a higher priority than the parent category.
-         * The customer group visibility overrides visibility for a customer within the same website.
+    * The website visibility may be configured individually for each website. The visibility configured for a particular website has priority over the default website visibility.
+    * The product visibility has priority over the category visibility. If the product is visible, but the category is hidden, the product is still visible.
+    * The category visibility has a higher priority than the parent category.
+    * The customer group visibility overrides visibility for a customer within the same website.
 
 Guest Pricing
 -------------

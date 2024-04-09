@@ -18,7 +18,7 @@ The address book has two sections:
 .. image:: /user/img/storefront/profile/MyProfileAddressBooks.png
 
 .. note::
-   Depending on the storefront settings, the address book lists may appear in the compact format with a map displayed on the right. Please be aware that a valid Google API key is required to display maps in the storefront. Please see :ref:`the back-office settings <system-configuration-integrations-google>` for more information.
+   Depending in the storefront settings, the address book lists may appear in the compact format with a map displayed on the right. Please be aware that a valid Google API key is required to display maps in the storefront. Please see :ref:`the back-office settings <system-configuration-integrations-google>` for more information.
 
 .. _frontstore-guide--address-book--manage:
 .. _frontstore-guide--company-address:

@@ -73,7 +73,7 @@ Links (Cloud)
 
 .. |ISO 50001| raw:: html
 
-   <a href="http://www.iso.org/iso/home/standards/management-standards/iso50001.html" target="_blank">ISO 50001</a>
+   <a href="https://www.iso.org/iso-50001-energy-management.html" target="_blank">ISO 50001</a>
 
 .. |GCP project| raw:: html
 
@@ -85,7 +85,7 @@ Links (Cloud)
 
 .. |Data center locations| raw:: html
 
-   <a href="https://www.google.com/about/datacenters/inside/locations/index.html" target="_blank">Data center locations</a>
+   <a href="https://www.google.com/about/datacenters/locations/" target="_blank">Data center locations</a>
 
 .. |Google Cloud Load Balancing| raw:: html
 
@@ -101,7 +101,7 @@ Links (Cloud)
 
 .. |Redis Sentinel Documentation| raw:: html
 
-   <a href="https://redis.io/topics/sentinel" target="_blank">Redis Sentinel Documentation</a>
+   <a href="https://redis.io/docs/management/sentinel/" target="_blank">Redis Sentinel Documentation</a>
 
 .. |BeeGFS| raw:: html
 
@@ -123,13 +123,13 @@ Links (Cloud)
 
    <a href="https://cloud.google.com/security/compliance/pci-dss/" target="_blank">PCI-DSS certified</a>
 
-.. |PCI DSS Shared Responsibility GCP v31| raw:: html
+.. |PCI DSS Shared Responsibility GCP v4.0| raw:: html
 
-   <a href="https://cloud.google.com/files/PCI_DSS_Shared_Responsibility_GCP_v31.pdf" target="_blank">PCI DSS Shared Responsibility GCP v31</a>
+   <a href="https://services.google.com/fh/files/misc/gcp_pci_dss_v4_responsibility_matrix.pdf" target="_blank">PCI DSS Shared Responsibility GCP v4.0</a>
 
 .. |How GCP smoothed our path to PCI-DSS compliance| raw:: html
 
-   <a href="https://cloudplatform.googleblog.com/2018/04/Oro-How-GCP-smoothed-our-path-to-PCI-DSS-compliance.html" target="_blank">How GCP smoothed our path to PCI-DSS compliance</a>
+   <a href="https://cloud.google.com/blog/products/gcp/oro-how-gcp-smoothed-our-path-to-pci-dss-compliance/" target="_blank">How GCP smoothed our path to PCI-DSS compliance</a>
 
 .. |OroCloud Commitments to GDPR| raw:: html
 
