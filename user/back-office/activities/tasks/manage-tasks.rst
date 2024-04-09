@@ -35,7 +35,7 @@ From the Task Page
 To manage a specific task from its page:
 
 1. Navigate to **Activities > Tasks** in the main menu.
-2. Click once on the required task to open it.
+2. Click on the required task to open it.
 3. Here, you can, share the task, add context, edit or delete the existing task, send an email, or add a comment.
 
 .. image:: /user/img/activities/ManageTasksTaskPage.png

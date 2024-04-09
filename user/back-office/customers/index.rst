@@ -10,7 +10,7 @@ Manage Customer Entities in the Back-Office
 
 .. hint:: This section is part of the :ref:`Customer Management <concept-guide-customers>` topic that provides a general understanding of accounts, contacts, customers and customer hierarchy available in Oro applications.
 
-.. image:: /user/img/customers/accounts/customers_menu.png
+.. image:: /user/img/concept-guides/customers/customers_menu.png
    :alt: The entities under the customer menu
 
 Below is an illustration of the account hierarchy in Oro application.

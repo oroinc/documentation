@@ -47,10 +47,10 @@ Each of these nodes can have more child categories:
 .. image:: /user/img/concept-guides/web-catalog/bo-sf-further-child-nodes.png
    :alt: Deeper child menu items in back-office vs storefront
 
-.. hint:: In addition to the catalog items, the main storefront menu can also contain static custom menu items, such as Contact Us or About. These custom menu items are not part of either master catalog or web catalog and can be moved to a different section of your storefront. Please see the :ref:`documentation on frontend menu items <backend-frontend-menus>` to learn more.
+.. hint:: In addition to the catalog items, the main storefront menu can also contain static custom menu items, such as Contact Us or About. These custom menu items are part of *commerce_main_menu* and can be moved to a different section of your storefront. Please see the :ref:`documentation on frontend menu items <backend-frontend-menus>` to learn more.
 
-        .. image:: /user/img/concept-guides/web-catalog/catalog-vs-custom-menu.png
-           :alt: Catalog-based VS custom menu in the storefront
+        .. image:: /user/img/concept-guides/web-catalog/commerce-main-menu-sf.png
+           :alt: Commerce-main-menu in the storefront
 
 Every child node must be populated with :ref:`content variants <user-guide--marketing--web-catalog--content-variant>`. **Content variants** are the types of pages that you add to the content node. These pages can be of the following types:
 
@@ -72,7 +72,7 @@ You can configure more than one content variant per node, in case you want to di
 .. image:: /user/img/concept-guides/web-catalog/restrictions.png
    :alt: Visibility restrictions for content variant
 
-You can also control which section of the web catalog to display on your website. By configuring a **navigation root**, you select relevant categories that you want to be included, rather than displaying the entire content tree of the web catalog. For example, build the main menu starting from the *Building & Hardware* content node and its child nodes. More on the storefront menu configuration are described in the `Changing Storefront's Product Menu`_ section below.
+You can also control which section of the web catalog to display on your website. By configuring a **navigation root**, you select relevant categories that you want to be included, rather than displaying the entire content tree of the web catalog. For example, build the main menu starting from the *Building & Hardware* content node and its child nodes. More in the storefront menu configuration are described in the `Changing Storefront's Product Menu`_ section below.
 
 .. image:: /user/img/concept-guides/web-catalog/nav-root-system-config.png
    :alt: Illustrating that storefront menu is built based on the navigation root settings configured from the system configuration

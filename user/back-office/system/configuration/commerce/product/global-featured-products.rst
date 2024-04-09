@@ -2,12 +2,14 @@
 .. _sys--commerce--product--featured-products--main:
 .. _sys--commerce--product--featured-products:
 
-Configure Global Settings for Featured Products
-===============================================
+Configure Global Settings for Featured Products (Default Theme)
+===============================================================
+
+.. important:: The configuration applies to Default 5.1 Theme and earlier versions. To configure the featured products block for the Refreshing Teal theme, please refer to the :ref:`related documentation <concept-guides--product-management--featured-products>`.
 
 You can mark some of the products as featured to display them in the Featured Products block on the main landing page (home page) in the storefront.
 
-.. image:: /user/img/system/config_commerce/product/featured-product-segment.png
+.. image:: /user/img/system/config_commerce/product/FeatruedProducts.png
    :alt: The way featured products are displayed in the storefront
 
 You can control which segment is used to store featured products globally, :ref:`per organization <sys--users--organization--commerce--products--featured-products>` and :ref:`per website <sys--websites--commerce--products--featured-products>`.

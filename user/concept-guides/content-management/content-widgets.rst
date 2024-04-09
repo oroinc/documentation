@@ -29,7 +29,7 @@ Each application can have a different set of widget types depending on the custo
   .. image:: /user/img/concept-guides/content-management/product_mini_block.png
      :alt: A sample of the Terms and Conditions landing page
 
-* **A Product Segment** --- a block with a certain product segment, either New Arrivals, Featured Products, or All Products that you can insert to your landing page or content block. This content widget enables you to configure the number of items to be displayed in the block, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront.
+* **A Product Segment** --- a block with a certain product segment, either New Arrivals, Featured Products, or All Products that you can insert to your landing page or content block. This content widget enables you to add a label to be displayed above the list of the products, configure the max and min number of items to show, whether to use slider on mobile, and show the **Add to Shopping List** button in the storefront. Additionally, you can enable or disable autoplay and control its speed in milliseconds, select whether to display dots and/or arrows at the bottom of the product segment and on touchscreens, enable or disable infinite scroll.
 
   .. hint:: Check out the :ref:`Manage Segments in the Back-Office <user-guide--business-intelligence--filters-segments>` guide to learn how to create new segments or modify the existing ones so that they can appear in the widget.
 

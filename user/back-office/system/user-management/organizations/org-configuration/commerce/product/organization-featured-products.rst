@@ -1,7 +1,9 @@
 .. _sys--users--organization--commerce--products--featured-products:
 
-Configure Settings for Featured Product per Organization
-========================================================
+Configure Settings for Featured Product per Organization (Default Theme)
+========================================================================
+
+.. important:: The configuration applies to Default 5.1 Theme and earlier versions. To configure the featured products block for the Refreshing Teal theme, please refer to the :ref:`related documentation <concept-guides--product-management--featured-products>`.
 
 You can control which segment is used to store featured products :ref:`globally <products--featured-products>`, per organization, and :ref:`per website <sys--websites--commerce--products--featured-products>`.
 

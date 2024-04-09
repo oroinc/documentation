@@ -59,6 +59,5 @@ Once you have created products, you can:
    managing-product-visibility
    Manage Product Grids <manage/index>
    Manage Product Units <product-units/index>
-   Offer Product Recommendations <product-recommendations>
    import-products
    export-products

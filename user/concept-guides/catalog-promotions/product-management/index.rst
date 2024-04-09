@@ -116,24 +116,109 @@ The products that appear on the home page of the OroCommerce storefront are cust
    :alt: Visual representation of products on the home page
    :align: center
 
-On the product details page, you can configure the following options:
+You can configure the :ref:`All Products page <sys--conf--commerce--catalog--special-pages>` to display all available products from the master catalog grouped by categories.
 
-* A :ref:`product image gallery <sys--commerce--product--product-images--gallery-slider-global>` that controls the way the product options are displayed on the product page. You can select whether to use popup or inline view for the image gallery.
-* A :ref:`related products block <sys--commerce--catalog--relate-products--main>` that binds similar products related to those currently browsed by the customer or those that complement each other, like the laptop and its accessories, a mouse, notebook bag or screen cleaning cloths.
-* An :ref:`up-sell products block <sys--commerce--catalog--upsell-products>` that binds products that should be promoted with the product selected by the customer, like more expensive alternatives of the model, upgrade options, additional parts. Taking the example of the laptop, that would be a laptop with a larger screen, better processor, or higher hard drive capacity than the customer planned to buy.
-* A :ref:`similar products block <sys--commerce--catalog--similar-products>` that automatically shows products similar to the current one, like similar laptops on the laptop page. The more common traits a similar laptop shares with the original laptop, the higher it is in the list.
-
-.. note:: Similar products are available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine.
-
-.. image:: /user/img/concept-guides/products/highlight_products_details_page.png
-   :alt: Visual representation of products on the product details page
-   :align: center
-
-You can configure the :ref:`All Products page <sys--conf--commerce--catalog--special-pages>` to display all available products from the master catalog grouped by categories. Here, you can also customize the :ref:`image preview on product listing page <sys--commerce--product--product-images--image-preview--global>` to see the product image gallery instead of the product page when clicking on the image in the product listing.
+You can also customize the :ref:`image preview on product listing page <sys--commerce--product--product-images--image-preview--global>` to see the product image gallery instead of the product page when clicking on the image in the product listing.
 
 .. image:: /user/img/concept-guides/products/all_product_page_storefront.png
-   :alt: Visual representation of products on the product details page
+   :alt: Visual representation of products on the product listing page
    :align: center
+
+
+.. _user-guide--products--recommendations:
+
+Product Recommendations
+-----------------------
+
+OroCommerce understands the importance of providing personalized and relevant product suggestions to customers, which is why it offers sellers the ability to enhance the shopping experience and increase sales through the use of product recommendations. There are:
+
+ * similar products
+ * related products
+ * up-sell products
+ * featured products
+
+By leveraging these product recommendation features, OroCommerce empowers sellers to curate a personalized shopping experience that engages customers and drives conversions. Through targeted suggestions and strategic promotions, sellers can increase customer satisfaction, boost sales, and foster long-term loyalty.
+
+Similar Products
+^^^^^^^^^^^^^^^^
+
+.. note:: Similar Products are available for the OroCommerce Enterprise edition if Elasticsearch is used as the search engine.
+
+The Similar Products feature is designed to assist sellers in showcasing products on the product view page that are similar or complementary to the one currently being viewed by a customer. Based on the information stored in the search index, OroCommerce intelligently identifies and displays similar products, encouraging customers to explore additional options that align with their interests.
+
+You can enable and configure the Similar Products feature in the system configuration :ref:`globally <sys--commerce--catalog--relate-products>`, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>`. For example, you can enable buyers to add a similar product to the shopping list directly from the product view page where the recommendation appears or toggle the minimum and maximum number of products displayed on the page.
+
+.. image:: /user/img/concept-guides/products/similar-products.png
+   :alt: Illustration of similar product recommendations in the back-office and storefront
+
+Related Products
+^^^^^^^^^^^^^^^^
+
+The Related Products feature allows sellers to showcase a curated selection of products closely associated with the item a customer is currently viewing. OroCommerce identifies and presents related products that align with the customer's interests and preferences, guiding them towards products they may have otherwise overlooked.
+
+By strategically selecting and displaying related products, sellers can encourage customers to explore additional offerings, discover new items, and make informed purchase decisions.
+
+You can enable and configure the Related Products feature in the system configuration :ref:`globally <sys--commerce--catalog--relate-products>`, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>`. For example, you can ensure that related products are automatically linked to each other, enhancing the effectiveness of product recommendations. So if a customer is viewing the standing lamp, they will see the lightning bulb as a suggested related product. Similarly, if a customer is viewing the lightning bulb, they will also see the standing lamp as a related item.
+
+You can also control whether customers can add a related item to the shopping list directly from the view page of the product they are browsing.
+
+.. image:: /user/img/concept-guides/products/related-products-config.png
+   :alt: Global related items configuration
+
+Up-Sell Products
+^^^^^^^^^^^^^^^^
+
+This feature allows sellers to leverage customers' buying intent by suggesting higher-priced or upgraded alternatives to the product they are currently viewing on the product view page. By strategically showcasing products that offer additional features, improved quality, or enhanced functionality, sellers can encourage customers to consider upgrading their purchase, ultimately increasing the average order value and maximizing revenue.
+
+The Up-sell feature enables sellers to tap into the customer's desire for a better product or an elevated shopping experience. By presenting a more premium option, sellers can cater to varying customer needs and preferences while simultaneously boosting their sales performance.
+
+You can enable and configure the up-sell product feature options :ref:`globally <sys--commerce--catalog--relate-products>`, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>`.
+
+.. image:: /user/img/concept-guides/products/up-sell-config.png
+   :alt: Illustration of the related and up-sell products segments in the storefront
+
+.. _concept-guides--product-management--featured-products:
+
+Featured Products
+^^^^^^^^^^^^^^^^^
+
+.. note:: The Featured Products block is implemented differently for the Refreshing Teal and Default themes.
+
+The featured products feature provides sellers with an opportunity to highlight specific products in their website's storefront. This feature allows for strategic placement of products that are popular, on sale, or aligned with current marketing campaigns, effectively capturing the attention of customers as soon as they land on the website.
+
+To add the featured products block to any storefront page, you need to:
+
+**Refreshing Teal**
+
+1. Mark the selected products as featured in the **General** section of the **Products > Products** main menu by setting **Is Featured** to *Yes*.
+
+.. image:: /user/img/concept-guides/products/is-featured.png
+   :alt: Toggling the Is Featured setting to Yes.
+
+2. Create a featured products segment to include all products that you have marked as featured under **Reports & Segments > Manage Segments** as described in the :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
+
+.. image:: /user/img/concept-guides/products/featured-segment.png
+   :alt: Creating a segment with a list of all products marked as featured
+
+3. Create a :ref:`product segment content widget <content-widgets-product-segment>` to include the featured products segment that you have configured in Step 2.
+
+.. image:: /user/img/concept-guides/products/featured-products-content-widget.png
+   :alt: Creating a product segment content widget with the featured products selected for segment
+
+4. Once you save the content widget, you can now place it to the required location in the :ref:`WYSIWYG <getting-started-wysiwyg-editor-field>` field of your landing page or content block.
+
+.. image:: /user/img/concept-guides/products/featured-products-content-widget-wysiwyg.png
+   :alt:  Adding a block content widget to a WYSIWYG field
+
+**Default 5.1 and earlier versions**
+
+1. Complete the configuration described in Step 1 and 2 of the Refreshing Teal theme.
+
+2. Once the segment is ready, you can connect it to the storefront website via the system configuration on the :ref:`global <sys--commerce--product--featured-products>`, :ref:`organization <sys--users--organization--commerce--products--featured-products>`, or :ref:`website <sys--websites--commerce--products--featured-products>` levels.
+
+.. image:: /user/img/concept-guides/products/connect-segment-to-storefront.png
+   :alt: Connecting the featured segment to the storefront
+
 
 As you can see, with OroCommerce you can create an appealing and functional product pages that are the key to sales in online stores of all kinds.
 

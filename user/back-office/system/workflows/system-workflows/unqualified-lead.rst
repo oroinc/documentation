@@ -15,7 +15,7 @@ To enable the workflow:
    .. image:: /user/img/system/workflows/unqualified_sales_lead_activate_from_grid.png
       :alt: Activate unqualified sales lead workflow from the table of all workflows
 
-   Alternatively, click once on the workflow to open its page, and on the workflow page click |IcActivate| **Activate** on the top right.
+   Alternatively, click on the workflow to open its page, and on the workflow page click |IcActivate| **Activate** on the top right.
 
    .. image:: /user/img/system/workflows/unqualified_sales_lead_wf.png
       :alt: Unqualified sales lead workflow screen under system > workflows in the main menu
@@ -37,7 +37,7 @@ To deactivate the workflow:
    .. image:: /user/img/system/workflows/unqualified_sales_lead_deactivate_from_grid.png
       :alt: Deactivate unqualified sales lead workflow from the table of all workflows
 
-   Alternatively, click once on the workflow to open its page, and on the workflow page click |IcDeactivate| **Deactivate** on the top right.
+   Alternatively, click on the workflow to open its page, and on the workflow page click |IcDeactivate| **Deactivate** on the top right.
 
    .. image:: /user/img/system/workflows/deactivate_unqualified_sales_lead_workflow_wf_page.png
       :alt: Deactivate unqualified sales lead workflow from its page

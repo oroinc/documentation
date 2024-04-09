@@ -25,13 +25,13 @@ To configure marketplace settings globally:
 
 5. In the **Seller Name** section:
 
-   * Enable the **Display Seller Name** checkbox to show the seller's name on the storefront website.
+   * Enable the **Display Seller Name** checkbox to show the seller's name in the storefront website.
 
 6. In the **Seller Registration** section:
 
    * Select the **Enable Seller Registration** checkbox to activate the ability for sellers to register with your marketplace online.
 
-   When registration is enabled, you can select the owner of the seller's request and select the :ref:`consents <user-guide--consents>` to be displayed in the Seller Registration form on the storefront website. Enabling this option also adds the :ref:`Seller Registration workflow <system--workflows--seller-registration-flow>` to the list of workflows under **System > Workflows**.
+   When registration is enabled, you can select the owner of the seller's request and select the :ref:`consents <user-guide--consents>` to be displayed in the Seller Registration form in the storefront website. Enabling this option also adds the :ref:`Seller Registration workflow <system--workflows--seller-registration-flow>` to the list of workflows under **System > Workflows**.
 
 .. image:: /user/img/concept-guides/marketplace/seller-registration.png
    :alt: Seller Registration button in the storefront

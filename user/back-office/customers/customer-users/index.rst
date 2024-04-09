@@ -183,7 +183,7 @@ Add an Application
 To add a new OAuth application for a customer user in the back-office:
 
 1. Navigate to **Customers > Customer Users** in the main menu.
-2. Click once on the name of your selected customer user to open their details page.
+2. Click on the name of your selected customer user to open their details page.
 3. In the **OAuth Applications** section, click **Add Application** and provide the following details in the pop-up dialog:
 
    * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to.

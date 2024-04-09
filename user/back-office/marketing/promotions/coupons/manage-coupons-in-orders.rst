@@ -16,7 +16,7 @@ View Coupon Codes
 To view the coupon codes that apply to the selected order:
 
 1. Navigate to **Sales > Orders** in the main menu.
-2. Click once to open the required order to open it.
+2. Click to open the required order to open it.
 3. Click **Promotions and Discounts** to open the section.
 4. Under **All Promotions** on the left of the section, click |IcView| at the end of the coupon code row.
 
@@ -34,7 +34,7 @@ Add Coupons Through the Order Page
 To add a coupon code to the required order from its page:
 
 1. Navigate to **Sales > Orders** in the main menu.
-2. Click once to open the required order to open it.
+2. Click to open the required order to open it.
 3. Click **Add Coupon Code** on the top right of the order page.
 
    .. image:: /user/img/marketing/coupons/AddCouponToOrder.png

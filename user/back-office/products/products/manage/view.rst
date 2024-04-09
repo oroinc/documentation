@@ -56,7 +56,7 @@ General
    "**SKU**","The :term:`stock keeping unit <Stock keeping unit (SKU)>` that helps identify the product and track it in inventory."
    "**Name**","The product's name as it appears in the user interface."
    "**Type**", "Whether it is a simple product or product that has variants (configurable) --- i.e., unites several simple products. An example of a configurable product is a pair of scissors with either red or green handles."
-   "**Is Featured**", "Whether the product is included in the featured products listing."
+   "**Is Featured**", "Select whether the product is featured. The field is mandatory. To add the featured products block with all the products marked as featured to the website's storefront, please refer to the :ref:`featured products <concept-guides--product-management--featured-products>` documentation."
    "**New Arrival**", "Whether the product is included in the listing of new arrivals. When set to *Yes*, the product is highlighted in the storefront."
    "**Brand**", "The :ref:`brand <user-guide--product-brands>` that the product belongs to."
    "**Tax Code**", "The code that helps identify what taxes to apply to the product."

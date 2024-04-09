@@ -56,7 +56,7 @@ Add Embedded Forms to Your Site
 To add the necessary embedded form to your website:
 
 1. Navigate to **System > Integrations > Embedded Forms** in the main menu.
-2. Click once on the form to open its details page.
+2. Click on the form to open its details page.
 3. In the **Get Code** section, copy the provided code and paste it to the required section of your website.
 
 .. image:: /user/img/system/integrations/emb_form/emb_form_code.png

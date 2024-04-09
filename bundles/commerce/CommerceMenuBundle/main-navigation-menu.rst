@@ -3,7 +3,7 @@
 Main Navigation Menu
 =====================
 
-The main navigation menu that is displayed on the storefront is rendered within `main_menu` layout block that is present on all pages. The name of the main navigation menu is fetched from the system configuration - `oro_commerce_menu.main_navigation_menu` that has a default value - `commerce_main_menu`.
+The main navigation menu that is displayed in the storefront is rendered within `main_menu` layout block that is present on all pages. The name of the main navigation menu is fetched from the system configuration - `oro_commerce_menu.main_navigation_menu` that has a default value - `commerce_main_menu`.
 
 .. note:: `commerce_main_menu` is originally declared in the ``@OroCommerceMenuBundle/Resources/config/oro/navigation.yml``.
 
