@@ -12,14 +12,16 @@ A navigation menu of an e-commerce website has a lot in common with the shelving
 
 Catering to the needs of your business, OroCommerce offers a useful solution to build the menu of your choice. The application provides several pre-configured menu items out-of-the-box that you can customize to fit your criteria. With the storefront and back-office menu functionality, you can personalize and optimize your site navigation for the convenient usage by customers in the storefront and administrators in the back-office.
 
+.. note:: Currently, Frontend Menus include menu items for both **Refreshing Teal** and **version 5.1 and below** to support all versions of OroCommerce.
+
 .. image:: /user/img/concept-guides/menus/menus_overview_new.png
    :alt: The lists of the default storefront and back-office menu items
 
-As a visual reference, we have used the default OroCommerce theme to illustrate how the menu items are represented
+As a visual reference, we have used the Refreshing Teal theme to illustrate how the menu items can be represented.
 
 * **in the storefront**
 
-  .. image:: /user/img/concept-guides/websites/frontend_menu.png
+  .. image:: /user/img/concept-guides/menus/frontend_menu_refreshing_teal.png
      :alt: Illustrate all available storefront menu items in the storefront
 
 |
@@ -49,6 +51,12 @@ You can configure each of the following menu elements on five different levels: 
 .. image:: /user/img/concept-guides/menus/frontend_menu_fallback.png
    :alt: Storefront menu fallback logic
 
+Once you have configured the menu items, you can add them to the selected :ref:`theme configuration <back-office-theme-configuration>` of your website, placing them anywhere in the storefront header.
+
+.. image:: /user/img/concept-guides/menus/theme-configurations.png
+   :alt: Selecting a menu item under Theme configuration
+
+
 Frontend_menu
 ^^^^^^^^^^^^^
 
@@ -63,26 +71,50 @@ However, keep in mind that the breadcrumbs on the product listing page and the p
    :alt: A sample of the breadcrumbs composed based on the structure of a web catalog
 
 
-Commerce_top_nav
-^^^^^^^^^^^^^^^^
+Commerce_top_nav (Version 5.1 and Below)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The **commerce_top_nav** menu indicates the links that appear at the top right of your website's page header. If your customers need to reach your business, add the links to live chat. If they are looking for your store locations, add that. Whatever is important to you can be added to the header.
+The **commerce_top_nav** menu indicates the links that appear at the top right of your website's page header. If your customers need to reach your business, add the links to live chat. If they are looking for your store locations, add that. Whatever is important to you can be added to the header. The menu visibility in the storefront for 5.1 and earlier versions of OroCommerce is configured by its *Hide/Show* button.
 
-.. image:: /user/img/concept-guides/menus/commerce_top_nav_sample1.png
-   :alt: A sample of the commerce_top_nav menu in the storefront
+.. image:: /user/img/concept-guides/menus/commerce_top_nav.png
+   :alt: A sample of the commerce_top_nav in the back-office
 
-Commerce_quick_access
-^^^^^^^^^^^^^^^^^^^^^
+
+Commerce_top_nav_refreshing_teal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The **commerce_top_nav_refreshing_teal** menu indicates the links that appear in your website's page header. If your customers need to reach your business, add the links to live chat. If they are looking for your store locations, add that. Whatever is important to you can be added to the header.
+
+You can then choose the place in the header where to locate your menu under :ref:`theme configuration <back-office-theme-configuration>`.
+
+.. image:: /user/img/concept-guides/menus/commerce_top_nav_refreshing_teal_menu.png
+   :alt: A sample of the commerce_top_nav_refreshing_teal in the storefront
+
+
+Commerce_quick_access (Version 5.1 and Below)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The **commerce_quick_access** menu provides links to the most frequently used pages or important actions for the customers to quickly locate them within your website.
 
-.. image:: /user/img/concept-guides/menus/commerce_quick_access_sample1.png
-   :alt: A sample of the commerce_quick_access menu in the storefront
+.. image:: /user/img/concept-guides/menus/commerce_quick_access.png
+   :alt: A sample of the commerce_quick_access in the back-office
+
+Commerce_quick_access_refreshing_teal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The **commerce_quick_access_refreshing_teal** menu provides links to the most frequently used pages or important actions for the customers to quickly locate them within your website.
+
+You can choose the place in the header where to locate your menu under :ref:`theme configuration <back-office-theme-configuration>`.
+
+.. image:: /user/img/concept-guides/menus/commerce_quick_access_refreshing_teal.png
+   :alt: A sample of the commerce_quick_access in the back-office
 
 Commerce_main_menu
 ^^^^^^^^^^^^^^^^^^
 
-**Commerce_main_menu** is responsible for all items you see in main menu in your OroCommerce storefront. This menu mimics the structure of the web catalog or a master catalog (if web catalog is not connected) and enables you to make adjustments to the title, order or depths of the items. Here, you can update the menu items or add new ones without affecting the original master or web catalog.
+**Commerce_main_menu** is responsible for all items you see in main menu in your OroCommerce storefront. This menu mimics the structure of the web catalog or a master catalog (if web catalog is not connected) selected in the :ref:`system configuration <sys--config--sysconfig--websites--routing>` and enables you to make adjustments to the title, order or depths of the items. Here, you can update the menu items or add new ones without affecting the original master or web catalog.
+
+.. note:: Keep in mind that, initially, the system takes the default values from the :ref:`routing settings <sys--config--sysconfig--websites--routing>` in the system configuration. However, once a user adjusts the values in the **commerce_main_menu**, the system starts adhering to these modified values, subsequently updating the storefront menu accordingly.
 
 .. image:: /user/img/concept-guides/menus/commerce_main_menu_sample.png
    :alt: A sample of the commerce_main_menu in the storefront
@@ -95,21 +127,50 @@ The **commerce_footer_links** menu defines the structure of the links located in
 .. image:: /user/img/concept-guides/menus/commerce_footer_links_sample.png
    :alt: A sample of the commerce_footer_links menu in the storefront
 
-Customer_usermenu
-^^^^^^^^^^^^^^^^^
+Featured_menu (Version 5.1 and Below)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Customer_usermenu** is a storefront user menu that appears at the top right of the website's page header and defines what a customer will see within this menu. The menu look can either be concise (displaying all menu items in one raw)  or expanded (displaying the full list of menu subitems in a popup). The way it is shown in the storefront can be customized under the **Theme Settings** configuration on the :ref:`global <configuration--commerce--design--theme--theme-settings--globally>`, :ref:`organization <configuration--commerce--design--theme--theme-settings--organization>`, and :ref:`website levels <configuration--commerce--design--theme--theme-settings--website>`.
+**Featured_menu** provides the possibility to include the necessary information as a separate block to the featured menu on the OroCommerce homepage. Usually, the menu is used to highlight the latest promotions, featured categories, or items to attract the customers’ attention to the critical information. The menu is hardcoded for 5.1 and earlier versions of OroCommerce, while the users of the Refreshing Teal theme can customize the menu as required.
+
+Featured_menu
+^^^^^^^^^^^^^
+
+**Featured_menu** provides the possibility to include the necessary information as a separate featured block to the OroCommerce storefront header. Usually, the menu is used to highlight the latest promotions, featured categories, or items to attract the customers’ attention to the critical information.
+
+You can use the nodes excluded from the main menu. For example, create a category or content node (e.g., Promotions) with a number of discounted items and with the product listing page not be part of the main menu. Then add it to **featured menu** and place it anywhere in the storefront header under the :ref:`theme configuration <back-office-theme-configuration>`.
+
+.. image:: /user/img/concept-guides/web-catalog/featured-menu-nav-root.png
+   :alt: A segment of web catalog added to featured menu in the storefront
+
+.. note:: Keep in mind that **featured_menu** is different from the :ref:`featured products segment <concept-guides--product-management--featured-products>`. While the featured products segment is intended to store only the products and categories that are marked as featured, the featured menu is designed to offer any other information that you want to emphasize.
+
+.. image:: /user/img/concept-guides/menus/featured_menu_vs_segment.png
+   :alt: A sample of the featured_menu and a featured product segment in the storefront
+
+Customer_usermenu (Version 5.1 and Below)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Customer_usermenu** is a storefront user menu that appears at the top right of the website's page header and defines what a customer will see within this menu. The menu look can either be concise (displaying all menu items in one raw) or expanded (displaying the full list of menu subitems in a popup). The way it is shown in the storefront can be customized under the **Theme Settings** configuration on the :ref:`global <configuration--commerce--design--theme>`, :ref:`organization <configuration--commerce--design--theme--theme-settings--organization>`, and :ref:`website levels <configuration--commerce--design--theme--theme-settings--website>`.
 
 .. image:: /user/img/concept-guides/menus/customer_usermenu_sample.png
    :alt: A sample of the customer_usermenu in the storefront
 
-Oro_customer_menu
-^^^^^^^^^^^^^^^^^
+Oro_customer_menu (Version 5.1 and Below)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Oro_customer_menu** defines the menu items that would populate the **Account** section of the user menu.
 
 .. image:: /user/img/concept-guides/menus/oro_customer_menu_sample.png
-   :alt: A sample of the oro_customer_menu in the storefront
+   :alt: A sample of the oro_customer_menu in the back-office
+
+
+Oro_customer_menu_refreshing_teal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Oro_customer_menu_refreshing_teal** defines the menu items that would populate the **My Account** section of the user menu.
+
+.. image:: /user/img/concept-guides/menus/oro_customer_menu_refreshing_teal.png
+   :alt: A sample of the oro_customer_menu_refreshing_teal in the storefront
 
 
 |

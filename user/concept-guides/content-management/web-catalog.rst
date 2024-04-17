@@ -205,7 +205,7 @@ You can modify *system* items (which are reflection of the items from web/master
 
 .. note:: Keep in mind that, initially, the system takes the default values from the :ref:`routing settings <sys--config--sysconfig--websites--routing>` in the system configuration. However, once a user adjusts the values in the **commerce_main_menu**, the system starts adhering to these modified values, subsequently updating the storefront menu accordingly. This way, the menu configured to start from the *Building & Hardware* content node set in the system configuration will be overridden with the *Smart Home* content node set in the **commerce_main_menu**.
 
-  .. image:: /user/img/concept-guides/web-catalog/nav-root-system-config.png
+  .. image:: /user/img/concept-guides/web-catalog/nav-root-options.png
      :alt: Illustrating that the navigation root configured from the Frontend menu supersedes the one set under system configuration.
 
 
@@ -219,7 +219,7 @@ However, if you place such an image higher or lower than level 2, it will be dis
 .. image:: /user/img/concept-guides/web-catalog/promo-image-no-preview.png
    :alt: Promo image as a link without preview
 
-You can use the nodes excluded from the main menu. For example, create a category or content node (e.g., Promotions) with a number of discounted items and with the product listing page not be part of the main menu. Then add it to the :ref:`featured menu <menu-management-concept-guide>` block and enable the block for the storefront header as part of the **Top Navigation Menu** or **Quick Access Button** setting in the :ref:`system configuration <configuration--commerce--design--theme>`.
+You can use the nodes excluded from the main menu. For example, create a category or content node (e.g., Promotions) with a number of discounted items and with the product listing page not be part of the main menu. Then add it to the :ref:`featured menu <menu-management-concept-guide>` block and place it anywhere in the storefront header under the :ref:`theme configuration <back-office-theme-configuration>`.
 
 .. image:: /user/img/concept-guides/web-catalog/featured-menu-nav-root.png
    :alt: A segment of web catalog added to featured menu in the storefront
