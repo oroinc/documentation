@@ -3,6 +3,9 @@
 Order a Product Kit in the Storefront
 =====================================
 
+.. hint:: This section is part of the :ref:`Product Kits <concept-guides--product-management-kits>` concept guide that provides a general understanding of the product kits concept in OroCommerce.
+
+
 You can select which items to add to your product kit in the storefront. The items available as part of the kit are pre-configured in the back-office, but you can select optional items you would like to purchase.
 
 To configure a product kit in the storefront, click **Configure and Add to Shopping List** on its product page.

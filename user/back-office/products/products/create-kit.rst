@@ -54,3 +54,9 @@ To create a new product kit:
 
           .. image:: /user/img/products/products/kits/item-only-for-kits.png
              :alt: Standalone product hidden and can only by purchased in a product kit
+
+**Related Topics**
+
+* :ref:`Product Kits Concept Guide <concept-guides--product-management-kits>`
+* :ref:`Tax Calculation in Kits <bundle-docs-commerce-tax-bundle-kits>`
+

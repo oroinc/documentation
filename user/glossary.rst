@@ -187,13 +187,14 @@ Glossary
       A fixed fee that is charged for a shipping service. A flat rate is used to specify one specific price to ship orders. This fee remains the same for everyone in all cases.
 
    Tier Price
-      A price determined by the system for the specified product quantity. Price tiers for a selected product can be derived from the same price list, or from the different price lists if they allow price merge. For example, you set the following prices in the price list:
+        In OroCommerce, a price tier refers to a pricing structure that allows businesses to offer different prices for products based on the quantity of products purchased. For instance, customers may receive a lower price per unit if they buy in bulk. In this case, if product price per item is provided for the purchase of one item, ten items, and fifty items, and a buyer orders 20 items, the price per item applied will be based on the rate for ten items.
+        Price tiers for a selected product can be derived from the same price list, or from the different price lists if they allow price merge. For example, you set the following prices in the price list:
 
-      .. image:: /user/img/glossary/price_per_tier.png
+       .. image:: /user/img/glossary/price_per_tier.png
 
-      * If you buy 9 or less item, it would cost you $44.99 for 1 item
-      * If you buy from 10 to 19 items, the price per item is lowered to $42.74 per item
-      * If you buy from 20 to 49 items, the price per item is lowered further to $40.49, and so on
+       * If you buy 9 or less item, it would cost you $44.99 for 1 item
+       * If you buy from 10 to 19 items, the price per item is lowered to $42.74 per item
+       * If you buy from 20 to 49 items, the price per item is lowered further to $40.49, and so on
 
    Listed Price
       The pricing assigned to the available product units and their variations of quantity.

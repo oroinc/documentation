@@ -24,7 +24,6 @@ To add a product price in the price list:
 2. Click on the price list to which you would like to add the price.
 
 3. Click **+ Add Product Price**.
-   The **Add Product Price** dialog appears.
 
    .. image:: /user/img/sales/pricelist/prices_for_price_list.png
       :alt: Add product prices in the opened popup dialog
@@ -33,9 +32,7 @@ To add a product price in the price list:
 
 #. Specify the quantity to identify the tier of quantity that the price should apply to.
 
-   To illustrate how price tiers work, let us consider the following example:
-
-   When the product prices in USD are provided for one item, ten items, and fifty items, and a buyer orders 20 items, they will see the price provided for ten items.
+   .. note:: In OroCommerce, a tier (quantity) price refers to a pricing structure that allows businesses to offer different prices for products based on the quantity of products purchased. For instance, customers may receive a lower price per unit if they buy in bulk. In this case, if product price per item is provided for the purchase of one item, ten items, and fifty items, and a buyer orders 20 items, the price per item applied will be based on the rate for ten items.
 
 #. Select the unit of quantity for the price.
 

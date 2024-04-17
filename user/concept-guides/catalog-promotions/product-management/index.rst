@@ -46,6 +46,8 @@ All the product components are used when creating simple and configurable produc
    :alt: Product filters in the storefront
    :align: center
 
+.. _concept-guides--product-management-types:
+
 Simple vs Configurable Products vs Kits
 ---------------------------------------
 
@@ -80,7 +82,7 @@ A **product kit** is an assortment of products, each with their individual SKUs.
 .. image:: /user/img/concept-guides/products/kit-front.png
    :alt: Product kits in the storefront
 
-.. warning:: Please be aware that the Product Kits feature is still in development and some functionality is incomplete.
+.. note:: Check out the :ref:`Product Kits Concept Guide <concept-guides--product-management-kits>` for more information on product kits.
 
 Products in a Multi-Org Application
 -----------------------------------
@@ -222,15 +224,22 @@ To add the featured products block to any storefront page, you need to:
 
 As you can see, with OroCommerce you can create an appealing and functional product pages that are the key to sales in online stores of all kinds.
 
-
-.. admonition:: Business Tip
-
-   |What is B2B eCommerce| and how it can benefit your business? You'll find answers to this and other commerce-related questions in our guide.
-
 **Related Articles**
 
+* :ref:`Product Kits <concept-guides--product-management-kits>`
 * :ref:`Products User Guide <doc--products>`
 * :ref:`Product-Related Settings in System Configuration <configuration--products>`
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   Product Kits <kits-concept>
+
+
+.. admonition:: Business Tip
+
+   |What is B2B eCommerce| and how it can benefit your business? You'll find answers to this and other commerce-related questions in our guide.

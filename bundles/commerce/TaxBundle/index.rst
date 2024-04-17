@@ -92,6 +92,7 @@ You can add your own custom tax logic with custom tax provider.
 
 3. Navigate to the admin panel under System > Configuration > Commerce > Taxation > Tax Calculation and chose your own custom **Tax Provider** in the dropdown list.
 
+.. _bundle-docs-commerce-tax-bundle-kits:
 
 Calculate Taxes for Product Kits
 --------------------------------
