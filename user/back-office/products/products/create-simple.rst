@@ -74,7 +74,7 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
 
 10. In the **Image** section, add a new image to the product by clicking **+Add Image** and then **Choose Image**. You can either upload a new image or select the required one from the list of available :ref:`digital assets <digital-assets>` records.
 
-   Then, select whether to show the image as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove the image, click the |IcClose| **Delete** icon next to it.
+   Then, select whether to show the image as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures displayed in the gallery on the product details page). All three categories can be selected at the same time for the main image. To remove the image, click the |IcClose| **Delete** icon next to it.
 
 11. In the **Design** section, select the :ref:`page template <configuration--commerce--design--theme>` from the drop-down.
 
@@ -102,12 +102,12 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
       "**Highlight Low Inventory**","This option defines if low inventory for products is displayed in the storefront."
       "**Inventory Threshold**","A minimum quantity of the product treated as In stock. When a product quantity drops below this value, the product inventory status becomes Out Of Stock."
       "**Low Inventory Threshold**","The minimum stock level defined for the product. Reaching the defined level will trigger a warning message to the buyer in the storefront."
-      "**Backorders**","A flag that indicates whether OroCommerce accepts backorders (EE feature). When set to *Yes*, buyers and salespeople can order products in quantities not currently available in the warehouses. The remaining portion of the order will be sustained until the product is back in stock."
+      "**Backorders**","A flag that indicates whether OroCommerce accepts backorders (EE feature). When set to *Yes*, buyers and sale teams can order products in quantities not currently available in the warehouses. The remaining portion of the order will be sustained until the product is back in stock."
       "**Decrement Inventory**","A flag that indicates whether OroCommerce decrements inventory upon order. A product quantity can become negative when both **Decrement Inventory** and **Backorders** are enabled."
       "**Minimum Quantity to Order**","A minimum quantity that a buyer or salesperson can claim in the RFQ, customer order, quote, or a shopping list."
       "**Maximum Quantity to Order**","A maximum quantity that a buyer or salesperson can claim in the RFQ, customer order, :ref:`quote <user-guide--sales--quotes>`, or a shopping list."
-      "**Is Upcoming**","This option informs a customer that the product of the selected category is not in stock currently but will be available later. When set to *Yes*, an additional **Availability Date** is displayed. To remove the upcoming products label, set the option to *No* or customize the required behavior in the :ref:`system configuration <upcoming-products-config>`."
-      "**Availability Date**","The date which indicates the exact date and time since the selected product will be available in stock."
+      "**Is Upcoming**","This option informs a customer that the product of the selected category is not currently in stock but will be available later. When set to *Yes*, an additional **Availability Date** is displayed. To remove the upcoming products label, set the option to *No* or customize the required behavior in the :ref:`system configuration <upcoming-products-config>`."
+      "**Availability Date**","The date which indicates the exact date and time when the selected product will be restocked."
 
    .. finish_inventory
 
