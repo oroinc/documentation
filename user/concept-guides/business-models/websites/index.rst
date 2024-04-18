@@ -131,7 +131,7 @@ The storefront navigation is highly customizable via the :ref:`Frontend Menus <d
 
 All the visuals represented in the storefront are specific to each website. Go through the available menus to adapt content to particular audience and localization. You can enable or disable menu items for a particular customer, website, or mobile device by setting related conditions.
 
-.. image:: /user/img/concept-guides/websites/frontend_menu.png
+.. image:: /user/img/concept-guides/websites/frontend_menu_refreshing_teal.png
    :alt: Illustrate all available frontend menu items in the storefront
 
 

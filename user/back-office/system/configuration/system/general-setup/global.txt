@@ -45,7 +45,7 @@ The following categories of settings are available for system configuration (fol
 
   * Design
 
-    * :ref:`Theme <configuration--commerce--design--theme--theme-settings--globally>`
+    * :ref:`Theme <configuration--commerce--design--theme>`
 
   * Guests
 

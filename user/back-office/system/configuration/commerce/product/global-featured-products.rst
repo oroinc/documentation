@@ -2,10 +2,10 @@
 .. _sys--commerce--product--featured-products--main:
 .. _sys--commerce--product--featured-products:
 
-Configure Global Settings for Featured Products (Default Theme)
-===============================================================
+Configure Global Settings for Featured Products (Version 5.1 and Below)
+=======================================================================
 
-.. important:: The configuration applies to Default 5.1 Theme and earlier versions. To configure the featured products block for the Refreshing Teal theme, please refer to the :ref:`related documentation <concept-guides--product-management--featured-products>`.
+.. important:: The configuration applies to OroCommerce version 5.1 and below. To configure the featured products block for the **Refreshing Teal** theme, please refer to the :ref:`related documentation <concept-guides--product-management--featured-products>`.
 
 You can mark some of the products as featured to display them in the Featured Products block on the main landing page (home page) in the storefront.
 

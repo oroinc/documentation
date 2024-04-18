@@ -184,9 +184,15 @@ You can enable and configure the up-sell product feature options :ref:`globally 
 Featured Products
 ^^^^^^^^^^^^^^^^^
 
-.. note:: The Featured Products block is implemented differently for the Refreshing Teal and Default themes.
+.. note:: The Featured Products block is implemented differently for **Refreshing Teal** theme and **5.1 or earlier versions** of OroCommerce.
 
 The featured products feature provides sellers with an opportunity to highlight specific products in their website's storefront. This feature allows for strategic placement of products that are popular, on sale, or aligned with current marketing campaigns, effectively capturing the attention of customers as soon as they land on the website.
+
+.. note:: Keep in mind that **featured products segment** is different from the :ref:`featured_menu <menu-management-concept-guide>`. While the featured products segment is intended to store only the products and categories that are marked as featured, the featured menu is designed to offer any other information that you want to emphasize.
+
+   .. image:: /user/img/concept-guides/menus/featured_menu_vs_segment.png
+      :alt: A sample of the featured_menu and a featured product segment in the storefront
+
 
 To add the featured products block to any storefront page, you need to:
 
@@ -212,7 +218,7 @@ To add the featured products block to any storefront page, you need to:
 .. image:: /user/img/concept-guides/products/featured-products-content-widget-wysiwyg.png
    :alt:  Adding a block content widget to a WYSIWYG field
 
-**Default 5.1 and earlier versions**
+**OroCommerce version 5.1 and below**
 
 1. Complete the configuration described in Step 1 and 2 of the Refreshing Teal theme.
 

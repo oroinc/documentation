@@ -3,7 +3,7 @@
 Manage General Layout in the Storefront
 =======================================
 
-The screenshots in this guide are provided for illustration purposes only and use the default demo design. The layout, design and functionality of your application may be different. Elements such the the way product menu is displayed, the availability of the quick access menu and quick links are configured in the back-office :ref:`theme settings <configuration--commerce--design--theme>`.
+The screenshots in this guide are provided for illustration purposes only and use the default demo design. The layout, design and functionality of your application may be different. Elements such the the way product menu is displayed, the availability of the quick access menu and quick links are configured in the back-office :ref:`theme configuration <back-office-theme-configuration>` settings.
 
 .. _frontstore-guide--navigation-top:
 
@@ -34,7 +34,7 @@ User Menu is displayed for authenticated users only, and provides quick access t
 
  .. image:: /user/img/storefront/navigation/user-menu.png
 
-Unauthenticated users with will an option to either log in or sign up for an account instead.
+Unauthenticated users will have an option to either log in or sign up for an account instead.
 
 .. image:: /user/img/storefront/orders/GuestQuickOrderButton.png
 
@@ -43,7 +43,7 @@ Unauthenticated users with will an option to either log in or sign up for an acc
 Product Catalog (Main Menu)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The main navigation menu can either be rendered separately to provide easy access to its top level items on the devices with sufficient screen width, or it can be combined with other navigational elements in the "hamburger" menu. This is configured in the back-office :ref:`theme settings <configuration--commerce--design--theme>`.
+The main navigation menu can either be rendered separately to provide easy access to its top level items on the devices with sufficient screen width, or it can be combined with other navigational elements in the "hamburger" menu. This is configured in the back-office :ref:`theme configuration <back-office-theme-configuration>` settings.
 
 .. image:: /user/img/storefront/navigation/GeneralLayoutMainMenu.png
 

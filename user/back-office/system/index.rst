@@ -13,6 +13,7 @@ The **System** menu of the back-office contains post-install configuration setti
 
 * :ref:`Configuration <mc-system-configuration>` --- Manage system settings and settings specific for CRM, Commerce and marketing features.
 * :ref:`User Management <user-guide-user-management>` --- Configure user, role and access management in the application and determine levels of access to data.
+* :ref:`Theme Configuration <back-office-theme-configuration>` --- Configure and customize storefront look and feel.
 * :ref:`Contact Reasons <admin-guide-contact-reasons>` --- Manage contact reasons used to categorize contact requests submitted through your website.
 * :ref:`Contact Groups <contact_groups>` --- Create and manage contact groups.
 * :ref:`Emails <admin-guide-email-configuration>` --- Create and manage templates, notification rules and maintenance notifications.
@@ -55,6 +56,7 @@ Oro applications enable you to configure system settings on four configuration l
 
    Configuration <configuration/index>
    User Management <user-management/index>
+   Theme Configuration <theme-configuration/index>
    Contact Reasons <contact-reasons/index>
    Contact Groups <contact-groups/index>
    Emails <emails/index>
