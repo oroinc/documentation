@@ -54,9 +54,12 @@ To configure email settings per organization:
      * *Username* --- Your email address
      * *Password* --- The password for your email address
 
-6. Under **HTML in templates**, enable or disable HTML Purifier. Disabling HTML Purifier allows pasting any HTML code into a template or an email body editor without tag stripping.
+6. Under **HTML in templates**, configure the following:
    
-7. Under **System Mailboxes**, configure a :ref:`system mailbox <admin-configuration-system-mailboxes>` that allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**.
+     * **Enable HTML Purifier** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows you to paste any HTML code into a template or an email body editor without tag stripping.
+     * **Enable WYSIWYG For Email Templates** --- Enable or disable the WYSIWYG editor for email templates. Remember that the WYSIWYG editor does not support variables provided by the default base email template. Enabling the WYSIWYG editor may break existing email templates.
+   
+7. Under **System Mailboxes**, configure a :ref:`system mailbox <admin-configuration-system-mailboxes>` that allows people who do not have access to the company mailbox addresses to write to the company. To add a new system mailbox, click **Add Mailbox**.
 
 8. Click **Save Settings**.
 
@@ -92,9 +95,9 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
    * *User* --- Provide your email address
    * *Password* --- Provide your password
 
-7. Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the checkboxes next to the folders you wish to synchronize.
+7. Click **Check Connection/Retrieve Folders**. After a successful connection, a list of available folders is displayed. Select the checkboxes next to the folders you wish to synchronize.
 
-   .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail, are provided on the |Google support page|.
+   .. hint:: Detailed instructions on the way to set up IMAP and SMTP connection in Gmail are provided on the |Google support page|.
 
    .. hint:: To enable connection, select the checkbox next to |Allow Access for Less Secure Apps Box|.
 
