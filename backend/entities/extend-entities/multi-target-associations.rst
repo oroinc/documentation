@@ -155,12 +155,13 @@ To create association, create extension that extends ``AbstractAssociationEntity
     {
         protected function isApplicable(EntityFieldProcessTransport $transport): bool
         {
-            return $transport->getClass() === Comment::class;
+            return $transport->getClass() === Comment::class
+                && AssociationNameGenerator::extractAssociationKind($transport->getName()) === $this->getRelationKind();
         }
 
         protected function getRelationKind(): ?string
         {
-            return null;
+            return 'comment';
         }
 
         protected function getRelationType(): string
