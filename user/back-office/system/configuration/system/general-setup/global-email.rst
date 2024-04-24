@@ -64,7 +64,7 @@ To configure email settings globally:
      * *Enable Attachment Sync* --- Enable loading attachments on email sync. 
      * *Maximum Sync Attachment Size (Mb)* --- Set the maximum sync attachment size in Mb. Attachments that exceed the defined size will not be downloaded. You can remove size limitations by setting the size to 0.
      * *Remove Large Attachments* --- Click the button to add a job to the queue to remove all attachments exceeding the defined size from the system. 
-     * *Attachments Preview Limit* --- Set a limit to show preview for attachments (a thumbnail for images and a big file icon for other files). Set the preview limit to 0 if you wish to see a list with file names only.
+     * *Attachments Preview Limit* --- Set a limit to show a preview for attachments (a thumbnail for images and a big file icon for other files). Set the preview limit to 0 if you wish to see a list with file names only.
 
 7. Under **SMTP Settings**, configure the SMTP protocol that allows to send email messages. Click **Check SMTP Connection** once you provide the following details:
 
@@ -74,9 +74,12 @@ To configure email settings globally:
      * *Username* --- Your email address
      * *Password* --- The password for your email address
 
-8. Under **HTML in templates**, enable or disable HTML Purifier. Disabling HTML Purifier allows to paste any HTML code into a template or an email body editor without tag stripping.
+8. Under **HTML in templates**, configure the following:
 
-9. Under **Notification Rules**, defines the rules that will be applied by default to a notification generated in the application. You can define the **Sender Email** and **Sender Name** to be used.
+     * **Enable HTML Purifier** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows you to paste any HTML code into a template or an email body editor without tag stripping.
+     * **Enable WYSIWYG For Email Templates** --- Enable or disable the WYSIWYG editor for email templates. Remember that the WYSIWYG editor does not support variables provided by the default base email template. Enabling the WYSIWYG editor may break existing email templates.
+
+9. Under **Notification Rules**, define the rules that will be applied by default to a notification generated in the application. You can define the **Sender Email** and **Sender Name** to be used.
 
 10. Under **Maintenance Notifications**, provide the following details to set up maintenance notifications:
 
@@ -85,7 +88,7 @@ To configure email settings globally:
 
 11. Under **Campaign**, define the rules that will be applied by default to emails generated as part of marketing campaigns in the application. You can define the **Sender Email** and **Sender Name**.
 
-12. Under **System Mailboxes**, configure your :ref:`system mailbox <admin-configuration-system-mailboxes>` that allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**.
+12. Under **System Mailboxes**, configure your :ref:`system mailbox <admin-configuration-system-mailboxes>` that allows people who do not have access to the company mailbox addresses to write to the company. To add a new system mailbox, click **Add Mailbox**.
 
 13. Click **Save Settings**.
 
@@ -96,11 +99,11 @@ To configure email settings globally:
 Configure a System Mailbox
 --------------------------
 
-System mailbox allows people who do not have access to the company mailbox addresses write to the company.
+System mailbox allows people who do not have access to the company mailbox addresses to write to the company.
 
 You can create several system mailboxes. For example, this can be a mailbox for support requests, business proposals, or order requests.
 
-You can define and modify the list of Oro users who have access to each of these mailboxes, automatically turn letters into cases or leads, and set-up auto-responses.
+You can define and modify the list of Oro users who have access to each of these mailboxes, automatically turn letters into cases or leads, and set up auto-responses.
 
 You can create a system mailbox on two levels, globally and :ref:`per organization <admin-configuration-system-mailboxes-organization>`.
 
@@ -153,9 +156,9 @@ To configure a system mailbox globally:
      * *User* --- Provide your email address
      * *Password* --- Provide your password
 
-    Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the checkboxes next to the folders you wish to synchronize. In the example below, synchronization has been done for a Gmail mailbox. The INBOX folder will be synchronized.
+    Click **Check Connection/Retrieve Folders**. After a successful connection, a list of available folders is displayed. Select the checkboxes next to the folders you wish to synchronize. In the example below, synchronization has been done for a Gmail mailbox. The INBOX folder will be synchronized.
 
-   .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail are provided on the |Google support page|.
+   .. hint:: Detailed instructions on the way to set up IMAP and SMTP connection in Gmail are provided on the |Google support page|.
 
    .. hint:: To enable connection, select the checkbox next to |Allow Access for Less Secure Apps Box|.
 
