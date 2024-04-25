@@ -4217,10 +4217,6 @@ Links (Dev)
 
    <a href="https://github.com/sketch-hq/sketch-image-compressor" target="_blank">Sketch Image Compressor</a>
 
-.. |OroCommerce Storefront Style Guide on GitHub| raw:: html
-
-   <a href="https://github.com/oroinc/OroCommerceStorefrontStyleGuide" target="_blank">OroCommerce Storefront Style Guide on GitHub</a>
-
 .. |Behavior Driven Development framework| raw:: html
 
    <a href="https://docs.behat.org/en/v3.0/" target="_blank">Behavior Driven Development framework</a>
@@ -4963,9 +4959,9 @@ Links (Dev)
 
    <a href="https://github.com/AirisX/nginx_cookie_flag_module" target="_blank">nginx_cookie_flag_module</a>
 
-.. |download and view the Sketch file here| raw:: html
+.. |view the Figma file here| raw:: html
 
-   <a href="https://www.sketch.com/s/64628847-8616-403f-90f7-c95d6dde467c" target="_blank">download and view the Sketch file here</a>
+   <a href="https://www.figma.com/file/Qg0bgINujN0bF2rFAkJADw/Storefront-Style-Guide-6.0?type=design&node-id=482%3A9320&mode=design&t=QGP0o71fNJIViopM-1" target="_blank">view the Figma file here</a>
 
 .. |standard Elasticsearch wildcard query| raw:: html
 
@@ -6403,3 +6399,20 @@ Links (Dev)
 .. |Symfony ACL-based security model| raw:: html
 
     <a href="https://github.com/symfony/acl-bundle/blob/main/src/Resources/doc/index.rst" target="_blank">Symfony ACL-based security model</a>
+
+.. |Feather Icons| raw:: html
+
+    <a href="https://github.com/feathericons/feather" target="_blank">Feather Icons</a>
+
+.. |Figma account| raw:: html
+
+    <a href="https://www.figma.com/signup" target="_blank">Figma account</a>
+
+.. |Style Guide| raw:: html
+
+    <a href="https://hive.oroinc.com/wp-content/uploads/sites/21/2024/04/Storefront-Style-Guide-6.0.zip" target="_blank">Style Guide</a>
+
+.. |Design Mockups| raw:: html
+
+    <a href="static.oroinc.com/doc/design-mockups-6.0.fig" target="_blank">Design Mockups</a>
+

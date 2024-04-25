@@ -439,3 +439,15 @@ backend/entities-data-management/search/fuzzy-search /backend/architecture/tech-
 backend/entities-data-management/search/query-builder /backend/architecture/tech-stack/search/query-builder
 backend/entities-data-management/search/troubleshooting /backend/architecture/tech-stack/search/troubleshooting
 user/back-office/products/products/product-recommendations /user/concept-guides/catalog-promotions/product-management/index
+----frontend/storefront-design/storefront-style-guide/design-customization/ui-elements /frontend/storefront-design/storefront-style-guide/design-customization/components
+frontend/storefront-design /frontend/storefront-style-guide/index
+frontend/storefront-style-guide/quick-start /frontend/storefront-style-guide/index
+frontend/storefront-style-guide/responsive-approach /frontend/storefront-style-guide/index
+frontend/storefront-style-guide/tips-tricks /frontend/storefront-style-guide/index
+frontend/storefront-style-guide/principles/atoms /frontend/storefront-style-guide/index
+frontend/storefront-style-guide/principles/molecules /frontend/storefront-style-guide/index
+frontend/storefront-style-guide/principles/organisms /frontend/storefront-style-guide/index
+frontend/storefront-style-guide/principles/pages /frontend/storefront-style-guide/index
+frontend/storefront-style-guide/principles/templates /frontend/storefront-style-guide/index
+frontend/storefront-design/storefront-style-guide/design-customization/colors /frontend/storefront-style-guide/index
+frontend/storefront-design/storefront-style-guide/design-customization/ui-elements /frontend/storefront-style-guide/index
