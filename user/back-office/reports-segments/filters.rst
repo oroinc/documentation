@@ -10,6 +10,13 @@ Filters are always created for the records of a specific type (:term:`entity <En
 
 This section will help you learn the basics of filtering expressions and their elements.
 
+To create a proper entity filter condition, you can use either the visual or expression editor. Visual editor enables you to drag and drop the appropriate filter option to the text area and select the required values from the list, while the expression editor enables you to enter criteria into the text area with the help of the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free.
+
+To switch between the editors, click the appropriate button at the bottom right of the Filters section.
+
+.. image:: /user/img/reports/visual-vs-expression-editor.png
+   :alt: Visual vs expression editor
+
 Filter Options
 --------------
 
