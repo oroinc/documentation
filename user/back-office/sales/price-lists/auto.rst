@@ -28,7 +28,10 @@ To automatically generate a price list in OroCommerce:
 
 #. Start editing the required price list or click **Create Price List** to create a new one.
 
-#. In the **Product Assignment** section, set up the product list. To complete this, in the **Rule** field, enter criteria to filter products in the catalog with the |Symfony2 expression language|.
+#. In the **Product Assignment** section, set up the product list. To complete this, in the **Rule** field, insert criteria into the text area to filter products in the catalog with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free.
+
+   .. image:: /user/img/sales/pricelist/advanced-query-builder.png
+      :alt: The advanced query builder in the Product Assignment section
 
    For example, to include all products in categories 1 and 5, use the following expression:
 
@@ -73,7 +76,7 @@ To automatically generate a price list in OroCommerce:
 
    a. In the **Price for Quantity**, enter the quantity, select a product unit, and the currency to which the rule will be applied.
 
-   b. In the **Calculate As** field, enter a price formula.
+   b. In the **Calculate As** field, insert a price formula into the text area with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free.
 
       For example:
 
@@ -116,7 +119,7 @@ To automatically generate a price list in OroCommerce:
 
       In this expression, the (price formula) may contain product and product-related items properties of the numeric type, numbers and arithmetic operations.
 
-   c. In the **Condition** field, enter a product filtering expression.
+   c. In the **Condition** field, insert a product filtering expression into the text area into the text area with the |Symfony2 expression language| and the operators from the left. The system validates the expression syntax to make sure it is error-free.
 
       For example, you have decided to set the price of 99 USD only for the products from category 1. Then you have entered *99* in the **Calculate As** field (see step a. the first example. In the **Condition** field, enter the following expression:
 
