@@ -49,6 +49,50 @@ To work only with the specified |API documentation views| use the ``--view`` opt
 
     php bin/console oro:api:doc:cache:clear --view=rest_json_api
 
+.. _oroapidocopenapidump-command:
+
+oro:api:doc:open-api:dump
+-------------------------
+
+This command dumps API documentation in OpenAPI format.
+
+The ``--view`` option is required and it is used to specify one of |API documentation views| for which OpenAPI specification should be dumped:
+
+.. code-block:: none
+
+    php bin/console oro:api:doc:open-api:dump --view=rest_json_api
+
+By default, OpenAPI specification is dumped in JSON. To dump it in another format, use the ``--format`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:doc:open-api:dump --view=rest_json_api --format=json-pretty
+    php bin/console oro:api:doc:open-api:dump --view=rest_json_api --format=yaml
+
+To skip validation of the generated OpenAPI specification, use the  ``--no-validation`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:doc:open-api:dump --view=rest_json_api --no-validation
+
+To generate OpenAPI specification only for the specified entities,  use the ``--entity`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:doc:open-api:dump --view=rest_json_api --entity=countries --entity=regions
+
+To provide a title of the OpenAPI specification, use the ``--title`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:doc:open-api:dump --view=rest_json_api --title="My API"
+
+To provide a URL where live API is served, use the ``--server-url`` option:
+
+.. code-block:: none
+
+    php bin/console oro:api:doc:open-api:dump --view=rest_json_api --server-url=https://example.com
+
 .. _oroapidump-command:
 
 oro:api:dump
