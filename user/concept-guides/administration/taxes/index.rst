@@ -155,19 +155,19 @@ Let's outline the steps that you need to take to configure the tax settings for 
 
 When the **tax is excluded**, all customers see the same *initial price of the product before taxes*. The tax is calculated and applied to the order at checkout based on the customer's shipping address (in our case).
 
-So, the customer from Los Angeles who is going to submit the order for $169.58 has to pay additionally their local sales tax rate of 9.5% ($16.11) for the order total as all items in the order are taxable.
+So, the customer from Los Angeles who is going to submit the order for $441.57 has to pay additionally their local sales tax rate of 9.5% ($41.95) for the order total as all items in the order are taxable.
 
 .. image:: /user/img/concept-guides/taxes/LA_customer_order.png
    :alt: The LA customer's order summary with original product prices and taxes applied separately
 
-As for the customer from Galeton, Colorado, they have to pay an extra $4.92, based on the Galeton's local tax rate of 2.9%.
+As for the customer from Galeton, Colorado, they have to pay an extra $12.81, based on the Galeton's local tax rate of 2.9%.
 
 .. image:: /user/img/concept-guides/taxes/Galeton_customer_order.png
    :alt: The Galeton customer's order summary with original product prices and taxes applied separately
 
 Sometimes, you may prefer to **include the taxes** to the product prices and display the *final price* to your customers when they browse the storefront. In this case, you have to create related price lists that would reflect the prices with taxes per each customer individually, depending on their local tax rates.
 
-With this configuration, the order of your LA customer would look as illustrated in the picture below, where the tax is just displayed as a reference and is not charged twice. The tax ($16.11) and total order amount ($169.58) remain the same as in the order with the taxes that are excluded from product prices.
+With this configuration, the order of your LA customer would look as illustrated in the picture below, where the tax is just displayed as a reference and is not charged twice. The tax ($41.95) and total order amount ($483.53) remain the same as in the order with the taxes that are excluded from product prices.
 
 .. image:: /user/img/concept-guides/taxes/LA_customer_order_include_tax.png
    :alt: The LA customer's order summary where the product prices include taxes

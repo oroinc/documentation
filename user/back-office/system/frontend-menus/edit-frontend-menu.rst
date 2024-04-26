@@ -155,6 +155,8 @@ Add a Menu Item
 
   * The *config_value('some_identifier')* function limits visibility of the corresponding menu item upon specifying certain value instead of *'some_identifier'*.
 
+.. note:: The conditions use |Symfony Expression Language|, so you can use ``&&, II, and, or`` and many other operators to combine several conditions.
+
   As an example, let us make the **About** section in the storefront visible to customers with configured taxes. For this, we need to:
 
   a) Customize the *config_value('some_identifier')* function with the required value instead of *some_identifier*. In our case, it is the *oro_tax.tax_enable* value.

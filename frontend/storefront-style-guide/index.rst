@@ -118,8 +118,7 @@ The structure of the OroCommerce UI is based on the Atomic Design approach, whic
 * :ref:`Templates <principles-templates>` - help place components in the layout and demonstrate the content structure underlying the design
 * :ref:`Pages <principles-pages>` - help apply real content to templates displaying the final interface
 
-.. image:: /img/frontend/storefront-design/Principles.jpg
-   :align: center
+.. image:: /img/frontend/storefront-design/Principles.png
    :alt: Principle of the atomic design approach
 
 .. _principles-atoms:
@@ -134,8 +133,8 @@ For instance, a button atom has properties such as background color, form, title
 Atoms provide a foundation for all basic styles. Therefore, they can serve as a valuable reference material while designing and implementing a user interface in OroCommerce.
 
 .. image:: /img/frontend/storefront-design/Atoms.png
-   :align: center
    :alt: Illustration of the atom properties
+
 
 .. _principles-molecules:
 
@@ -165,8 +164,8 @@ Taking the OroCommerce Storefront as an example, the header comprises various mo
 
 An organism is a self-contained, isolated interface element that can function independently.
 
- .. image:: /img/frontend/storefront-design/Organisms.png
-    :alt: Illustration of the organism properties
+.. image:: /img/frontend/storefront-design/Organisms.png
+   :alt: Illustration of the organism properties
 
 .. _principles-templates:
 
