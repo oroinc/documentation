@@ -39,9 +39,6 @@ The **Re-Order** link displayed within the All Past Orders grid is the most stra
 
 All information about ongoing checkouts is compiled and stored under the Order History section of your Account menu. Keep in mind that only registered users have access to the menu and are able to trace the checkout progress of both their own checkouts and the checkouts initiated by other users from their organization (provided that the :ref:`permission to do so is added to the customer user's role <user-guide--customers--customer-user-roles>`).
 
-.. image:: /user/img/concept-guides/checkout/compiled_order_info.png
-   :alt: Compiled info about ongoing checkouts under the Order History section of your Account menu
-
 Here, you can check the following details:
 
 * who initiated the checkout
@@ -116,7 +113,7 @@ A guest checkout provides unregistered users with several options:
 
 * skip the account creation step at all and submit an order as a guest
 
-.. image:: /user/img/storefront/orders/SampleGuestCheckout9.png
+.. image:: /user/img/concept-guides/checkout/SampleGuestCheckout9.png
    :alt: Creating an account at the Order Review step
 
 .. hint:: For more details on how to proceed through the guest checkout process in the storefront, refer to the :ref:`Guest Checkout <frontstore-guide--orders-checkout--guest>` section.

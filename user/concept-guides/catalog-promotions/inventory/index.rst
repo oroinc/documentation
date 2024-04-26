@@ -118,9 +118,6 @@ It is vital for businesses to know the final count of their inventory, and that 
 
 To control the number of a product that a buyer can claim in the RFQ, quote, or purchase in a single order, you can set the related quantity limitations on different levels, :ref:`global <configuration--guide--commerce--configuration--inventory--limitations>`, :ref:`per organization <inventory-limitations-org>`, :ref:`per website <inventory-limitations-website>`, :ref:`per product <create-simple-product-inventory>`, and :ref:`per master catalog category <master-catalog-inventory>`
 
-.. image:: /user/img/system/config_commerce/inventory/limitations.png
-   :alt: Global inventory limitations configuration settings
-
 .. image:: /user/img/concept-guides/inventory/quantity_limitations.png
    :alt: Display the quantity limitations label in the storefront
 
