@@ -6414,5 +6414,5 @@ Links (Dev)
 
 .. |Design Mockups| raw:: html
 
-    <a href="static.oroinc.com/doc/design-mockups-6.0.fig" target="_blank">Design Mockups</a>
+    <a href="https://static.oroinc.com/doc/design-mockups-6.0.fig" target="_blank">Design Mockups</a>
 
