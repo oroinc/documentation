@@ -194,3 +194,6 @@ Subject to the conjunction with the rest of the conditions, the list will now in
  - Only the records from the segment that correspond to the rest of the conditions (**AND** is used).
 
  - The records that correspond to the rest of the conditions and the segment (**OR** is used).
+
+.. include:: /include/include-links-user.rst
+   :start-after: begin

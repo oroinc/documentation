@@ -244,6 +244,8 @@ Toggle Item Visibility
 
 5. **Reset a Menu** --- To reset any customization changes and roll back to the menu that is provided out-of-the-box in the Oro application, click a menu name in the left panel. Click **Reset** on the top right. In the **Reset Confirmation** dialog box, click **Yes, Reset**. Reload the page to see changes.
 
+.. include:: /include/include-links-user.rst
+   :start-after: begin
 
 .. include:: /include/include-images.rst
    :start-after: begin
