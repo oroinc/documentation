@@ -35,7 +35,7 @@ The request should have the following parameters in the query string:
 .. code-block:: http
 
 
-    GET /oauth2-token?response_type=code&client_id=your_client_identifier&redirect_uri=https://your_redirect_uri.com HTTP/1.1
+    GET /oauth2-token/authorize?response_type=code&client_id=your_client_identifier&redirect_uri=https://your_redirect_uri.com HTTP/1.1
 
 
 For the public clients, request must and for confidential clients can use the `code_challenge` parameter when obtaining the authorization code
@@ -48,7 +48,7 @@ The code challenge must be generated with S256 code challenge method according t
 .. code-block:: http
 
 
-    GET /oauth2-token?response_type=code&client_id=your_client_identifier&redirect_uri=https://your_redirect_uri.com&code_challenge=your_code_challenge&code_challenge_method=S256 HTTP/1.1
+    GET /oauth2-token/authorize?response_type=code&client_id=your_client_identifier&redirect_uri=https://your_redirect_uri.com&code_challenge=your_code_challenge&code_challenge_method=S256 HTTP/1.1
 
 
 The user is then asked to log in to the authorization server.
