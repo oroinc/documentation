@@ -5,51 +5,25 @@
 Oro Frontend Stylebook
 ======================
 
-|Oro StyleBook| is a UI elements and components library that helps developers and designers use the recommended templates to build or customize the Oro application pages. The information in the UI library may be used in two different ways.
+OroCommerce 6.0 LTS has introduced a brand new Refreshing Teal storefront theme that gives a modern and fresh look. This theme includes a fully editable homepage with configurable content templates and widgets, an improved and retina-optimized slider, product segment widgets and more. The new theme has been designed to improve accessibility and internationalization, making navigation, search, and checkout experiences better, while also ensuring optimal performance.
 
- * When you modify your Oro application layout, you can copy the element`s source code to your custom form or page in the Oro application to preserve the overall look and feel consistency.
+To help you create your custom Storefront theme design, we compiled two files, the |Style Guide| and |Design Mockups|. To access these files, you need a |Figma account| with a Professional, Organization, or Enterprise plan. This will allow you to connect the library file to your working design files.
 
- * After you have modified your Oro application styles or layout, you can use the |StyleBook| to check how updated styles affect the UI elements (see :ref:`Oro Styles Architecture <dev-doc-frontend-css>`, :ref:`Styles Organization <dev-doc-frontend-css-frontend-styles-assets>`, and :ref:`Customization <storefront_customization_guide>` for more information on the UI customization).
+This |Style Guide| contains:
 
-Most of the OroCommerce back-office and storefront UI elements are included and grouped into the following categories:
+* **Styles** with instructions on how to use them (colors, shadows and typography). You can change the styles to fit your company identity, publish library updates to your design work Figma file, and these styles will automatically be updated in every instance on every page that uses them.
 
-General Look and Feel
----------------------
+* **Ready-to-go UI components**, from the simple ones (e.g., |Feather Icons|, buttons) to the compound ones (e.g., product cards) that are built with auto layouts and according to :ref:`the atomic approach <frontend--design--atomic-approach>`.
 
-.. image:: /img/frontend/stylebook/general_look_feel.png
-   :alt: The general look and feel section of the frontend stylebook
+|Design Mockups| encompass all primary screens and page components, allowing for customizable design alterations.
 
-Form Elements
--------------
+.. image:: /img/frontend/storefront-design/Colors.png
+   :alt: Color palette in style guide
 
-.. image:: /img/frontend/stylebook/form_elements.png
-   :alt: The form elements section of the frontend stylebook
-
-Grid Elements
--------------
-
-.. image:: /img/frontend/stylebook/grid_elements.png
-   :alt: The grid elements section of the frontend stylebook
-
-JS Components
--------------
-
-.. image:: /img/frontend/stylebook/js_component.png
-   :alt: The JS components section of the frontend stylebook
-
-.. hint::
-
-       * Use the tabs at the top of the page to switch between the categories.
-       * In the category, use the elements navigation tree on the left to jump to the element`s description, preview, and a code sample.
+For more information, see the :ref:`Storefront Design: Style Guide <frontend--design-customization>`.
 
 
-.. admonition:: Business Tip
-
-   If you want to get more insights into |B2B commerce| and its differences to B2C, check out our comprehensive guide on this topic.
 
 
 .. include:: /include/include-links-dev.rst
-   :start-after: begin
-
-.. include:: /include/include-links-seo.rst
    :start-after: begin

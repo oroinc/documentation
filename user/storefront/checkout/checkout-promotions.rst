@@ -7,7 +7,7 @@ Customers can redeem coupons that are connected to specific promotions once they
 
 To redeem a coupon:
 
-1. Click **I have a Coupon Code** on the bottom left of the **Order Summary** section at the checkout.
+1. Click **I have a Coupon Code** at the checkout.
 
    .. image:: /user/img/storefront/orders/CouponCodeCheckout.png
 
