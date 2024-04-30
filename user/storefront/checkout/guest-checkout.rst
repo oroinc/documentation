@@ -32,15 +32,11 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout1.png
 
-2. Navigate to **Shopping List** on the top right of the page, and click **View Details**.
+2. Navigate to **Shopping List** on the top right of the page, and click Click **Create Order**.
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout2.png
 
-3. Click **Create Order**.
-
-   .. image:: /user/img/storefront/orders/SampleGuestCheckout3.png
-
-4. The following options are available on the page that opens:
+#. The following options are available on the page that opens:
 
     .. image:: /user/img/storefront/orders/SampleGuestCheckout5.png
 
@@ -49,18 +45,15 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
    * Forgot Your Password
    * Continue as a Guest
 
-5. Click **Continue as a Guest**.
+#. Click **Continue as a Guest**.
 
    .. note:: You will have another chance to register during order review.
 
-6. Fill in the billing and shipping information, as well as select the shipping method and provide payment details.
+#. Fill in the billing and shipping information, as well as select the shipping method and provide payment details.
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout8.png
 
-7. At the **Order Review** step, the following options are enabled by default:
-
-   * Delete this shopping list after submitting the order.
-   * Save my data and create an account.
+#. At the **Order Review** step, you can save the provided details and create an account.
 
    As **Save my data and create an account** is enabled, you can provide your credentials for a quick registration:
 
@@ -70,9 +63,9 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
    .. image:: /user/img/storefront/orders/SampleGuestCheckout9.png
 
-8. Click **Submit Order**.
+#. Click **Submit Order**.
 
-9. To complete registration, open your mailbox and check the registration confirmation email.
+#. To complete registration, open your mailbox and check the registration confirmation email.
 
 
 **Related Articles**

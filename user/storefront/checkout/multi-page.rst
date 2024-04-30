@@ -31,7 +31,7 @@ Navigate through Multi Page Checkout in the Storefront
 
    .. image:: /user/img/system/workflows/checkout/Shipping_Info.png
 
-   .. note:: If shipping discounts apply to the order, this will be displayed in the totals.
+   .. note:: If shipping discounts apply to the order, this will be displayed in the summary.
 
              .. image:: /user/img/marketing/promotions/ShippingDiscountFront.png
 
