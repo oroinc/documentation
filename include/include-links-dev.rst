@@ -6416,3 +6416,10 @@ Links (Dev)
 
     <a href="https://static.oroinc.com/doc/design-mockups-6.0.fig" target="_blank">Design Mockups</a>
 
+.. |DeleteProductSuggestionsProcessor| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebsiteSearchSuggestionBundle/Async/DeleteProductSuggestionsProcessor.php" target="_blank">DeleteProductSuggestionsProcessor</a>
+
+.. |WebsiteSearchSuggestionBundle| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebsiteSearchSuggestionBundle/" target="_blank">WebsiteSearchSuggestionBundle</a>

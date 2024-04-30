@@ -653,4 +653,3 @@ Images
 .. |IcRequestQuote| raw:: html
 
    <i class="fas fa-redo" aria-hidden="true"></i>
-

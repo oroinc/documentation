@@ -73,7 +73,7 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
     ":ref:`CustomerBundle <bundle-docs-commerce-customer-portal-customer-bundle>`",":ref:`PayPalBundle <bundle-docs-commerce-paypal-bundle>`",":ref:`WebCatalogBundle <bundle-docs-commerce-webcatalog-bundle>`"
     ":ref:`CustomerRecommendationBundle <bundles--commerce--customer-recommendation>`",":ref:`PricingBundle <bundle-docs-commerce-pricing-bundle>`",":ref:`WebsiteElasticSearchBundle <bundle-docs-commerce-website-elastic-search-bundle>`"
     "**F**",":ref:`ProductBundle <bundle-docs-commerce-product-bundle>`",":ref:`WebsiteSearchBundle <bundle-docs-commerce-website-search-bundle>`"
-    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",""
+    ":ref:`FrontendBundle <bundle-docs-commerce-customer-portal-frontend-bundle>`",":ref:`PromotionBundle <bundle-docs-platform-promotion-bundle>`",":ref:`WebsiteSearchSuggestionBundle <bundle-docs-commerce-website-search-suggestions-bundle>`"
     "","**R**",""
     "",":ref:`RedirectBundle <bundle-docs-commerce-redireect-bundle>`",""
 
@@ -203,6 +203,7 @@ CRM Bundles
    WebCatalogBundle <commerce/WebCatalogBundle/index>
    WebsiteElasticSearchBundle <commerce/WebsiteElasticSearchBundle/index>
    WebsiteSearchBundle <commerce/WebsiteSearchBundle/index>
+   WebsiteSearchSuggestionBundle <commerce/WebsiteSearchSuggestionBundle/index>
    ActivityContactBundle <crm/ActivityContactBundle/index>
    AnalyticsBundle <crm/AnalyticsBundle/index>
    ChannelBundle <crm/ChannelBundle/index>
