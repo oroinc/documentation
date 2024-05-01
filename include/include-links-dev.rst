@@ -6199,3 +6199,10 @@ Links (Dev)
 
    <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy" target="_blank">Permissions-Policy</a>
 
+.. |DeleteProductSuggestionsProcessor| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce/tree/5.1/src/Oro/Bundle/WebsiteSearchSuggestionBundle/Async/DeleteProductSuggestionsProcessor.php" target="_blank">DeleteProductSuggestionsProcessor</a>
+
+.. |WebsiteSearchSuggestionBundle| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce/tree/5.1/src/Oro/Bundle/WebsiteSearchSuggestionBundle/" target="_blank">WebsiteSearchSuggestionBundle</a>

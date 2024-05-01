@@ -936,4 +936,3 @@ Links (User)
 .. |Get Started with Tableau|  raw:: html
 
    <a href="https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm" target="_blank">Get Started with Tableau</a>
-
