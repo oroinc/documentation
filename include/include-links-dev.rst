@@ -6410,7 +6410,7 @@ Links (Dev)
 
 .. |Style Guide| raw:: html
 
-    <a href="https://hive.oroinc.com/wp-content/uploads/sites/21/2024/04/Storefront-Style-Guide-6.0.zip" target="_blank">Style Guide</a>
+    <a href="https://static.oroinc.com/doc/storefront-style-guide-6.0.fig" target="_blank">Style Guide</a>
 
 .. |Design Mockups| raw:: html
 
