@@ -37,6 +37,7 @@ The OroCommerce storefront design architecture has some differences from the bac
     css/index
     javascript
     layouts/index
+    theme-configuration
     templates
     images
     Customization How-To Guides <how-to/index>
