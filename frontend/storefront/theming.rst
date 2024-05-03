@@ -13,7 +13,7 @@ Files that the theme consists of are :ref:`layout updates <dev-doc-frontend-layo
 
 Out-of-the-box, OroCommerce comes with :ref:`two themes: default, custom <dev-doc-frontend-layouts-theming>`.
 
-We recommend creating your own theme if you want to customize out-of-the-box OroCommerce storefront. To create your own theme, you have to choose one of the three base themes as the parent for your own.
+We recommend creating your own theme if you want to customize an out-of-the-box OroCommerce storefront. To create your own theme, you have to choose one of the three base themes as the parent for your own.
 
 You can customize the core themes, but creating your own theme will enable you to switch to the core themes with a few clicks conveniently.
 
@@ -37,29 +37,34 @@ The theme folder name becomes the theme ID.
 The **theme configuration file** should be placed in the theme folder and named **theme.yml**, for example,
 `DemoBundle/Resources/views/layouts/first_theme/theme.yml`.
 
-The **allowed options in the theme configuration** file is the following:
+The **allowed options in the theme configuration** file are the following:
 
-+---------------+------------------------------+-----------------------+
-| Option        | Description                  | Required              |
-+===============+==============================+=======================+
-| `label`       | The label displayed in       | yes                   |
-|               | the theme management UI.     |                       |
-+---------------+------------------------------+-----------------------+
-| `logo`        | The logo displayed           | no                    |
-|               | in the UI.                   |                       |
-+---------------+------------------------------+-----------------------+
-| `parent`      | Parent theme identifier      | no                    |
-+---------------+------------------------------+-----------------------+
-| `groups`      | Group name or names for      | no                    |
-|               | which it is applicable. Use  |                       |
-|               | ``commerce`` group for an    |                       |
-|               | OroCommerce application      |                       |
-+---------------+------------------------------+-----------------------+
-| `rtl_support` | Defines whether Theme        | no                    |
-|               | supports RTL and additional  |                       |
-|               | \*.rtl.css\ files            |                       |
-|               | have to be build             |                       |
-+---------------+------------------------------+-----------------------+
++-----------------+------------------------------+---------------------+
+| Option          | Description                  | Required            |
++=================+==============================+=====================+
+| `label`         | The label displayed in       | yes                 |
+|                 | the theme management UI.     |                     |
++-----------------+------------------------------+---------------------+
+| `logo`          | The logo displayed           | no                  |
+|                 | in the UI.                   |                     |
++-----------------+------------------------------+---------------------+
+| `parent`        | Parent theme identifier      | no                  |
++-----------------+------------------------------+---------------------+
+| `groups`        | Group name or names for      | no                  |
+|                 | which it is applicable. Use  |                     |
+|                 | ``commerce`` group for an    |                     |
+|                 | OroCommerce application      |                     |
++-----------------+------------------------------+---------------------+
+| `rtl_support`   | Defines whether Theme        | no                  |
+|                 | supports RTL and additional  |                     |
+|                 | \*.rtl.css\ files            |                     |
+|                 | have to be build             |                     |
++-----------------+------------------------------+---------------------+
+| `configuration` | Defines theme configuration  | no                  |
+|                 | options that give theme      |                     |
+|                 | developers more possibility  |                     |
+|                 | for configurable storefront  |                     |
++-----------------+------------------------------+---------------------+
 
 **Example:**
 
@@ -71,9 +76,23 @@ The **allowed options in the theme configuration** file is the following:
     parent: default
     groups: [ commerce ]
     rtl_support: true
-
+    configuration:
+        sections:
+            header:
+                label: Header
+                options:
+                    header_menu:
+                        label: Header Menu
+                        type: checkbox
+                        default: unchecked
+                        previews:
+                            checked: 'path/to/image/checked.png'
+                            unchecked: 'path/to/image/unchecked.png'
 
 where ``first_name`` is a unique theme identifier.
+
+.. seealso::
+    :ref:`theme configuration <dev-doc-frontend-theme-configuration>` reference for more detailed information.
 
 Enable the Theme
 ----------------
@@ -107,9 +126,9 @@ where ``first_theme`` is the theme folder name.
 From UI
 ^^^^^^^
 
-To change the theme from the back-office, refer to :ref:`Theme <configuration--commerce--design--theme>` section.
+To change the theme configuration from the back-office, refer to the :ref:`Theme Configuration <back-office-theme-configuration>` documentation. To enable the required theme configuration, refer to the theme system settings on the necessary level: :ref:`globally <configuration--commerce--design--theme>`, :ref:`per organization <configuration--commerce--design--theme--theme-settings--organization>` or :ref:`website <configuration--commerce--design--theme--theme-settings--website>`.
 
-To get the full configuration reference, run the ``oro:layout:config:dump-reference`` command which dumps the reference structure for `Resources/views/layouts/THEME_NAME/theme.yml`:
+To get a complete configuration reference, run the ``oro:layout:config:dump-reference`` command, which dumps the reference structure for `Resources/views/layouts/THEME_NAME/theme.yml`:
 
 .. code-block:: none
 
