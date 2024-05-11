@@ -54,8 +54,8 @@ Add Stylesheets with SCSS
       #DemoBundle/Resources/views/layouts/first_theme/config/assets.yml
       styles:
        inputs:
-           - bundles/demo/scss/logo.scss
-           - bundles/demo/scss/settings/_colors.scss
+           - 'bundles/demobundle/first_theme/scss/settings/global-settings.scss'
+           - 'bundles/demobundle/first_theme/scss/components/logo.scss'
        output: css/styles.css
 
 *  Run the ``bin/console oro:assets:build first_theme --watch`` command to process and combine SCSS files in  ``first_theme``.
@@ -81,21 +81,23 @@ To define and modify the layout tree, use **actions** organized into layout upda
 *  ``@move``
 *  etc.
 
-1. Let's add a slogan block just after the logo for all the existing pages:
+1. Let's add a slogan block just after the header for all the existing pages:
 
 .. code-block:: yaml
 
    #DemoBundle/Resources/views/layouts/first_theme/slogan.yml
    layout:
-    actions:
-        - '@add':
-              parentId: middle_bar_logo
-              id: slogan
-              blockType: text
-              options:
-                  text: Website Slogan!
+        actions:
+            - '@add':
+                id: slogan
+                parentId: page_main_content
+                siblingId: page_main_header
+                prepend: false
+                blockType: text
+                options:
+                    text: Website Slogan!
 
-2. And change the structure of a product display page. Remove images, move block with title and SKU to another place and add a css class to the SKU attribute. To apply layout updates to a single page, we need to place them in a folder with the route name inside a theme. For a product display page, the route name is `oro_product_frontend_product_view`:
+2. And change the structure of a product display page. Remove Related products, move block with title and SKU to another place and add a css class to the SKU attribute. To apply layout updates to a single page, we need to place them in a folder with the route name inside a theme. For a product display page, the route name is `oro_product_frontend_product_view`:
 
 .. code-block:: yaml
 
@@ -106,7 +108,7 @@ To define and modify the layout tree, use **actions** organized into layout upda
                  id: product_view_primary_container
                  parentId: page_title_container
            - '@remove':
-                 id: product_view_primary_wrapper
+                 id: product_view_related_products_container
            - '@setOption':
                  id: product_view_attribute_group_general_attribute_text_sku
                  optionName: attr.class
@@ -155,7 +157,7 @@ To override the template, we need to create a block theme twig file in the same 
    layout:
        actions:
            - '@setBlockTheme':
-                 themes: sku.html.twig
+                 themes: '@DemoBundle/layouts/first_theme/oro_product_frontend_product_view/product.html.twig'
            # ...
 
 

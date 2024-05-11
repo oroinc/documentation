@@ -9,11 +9,11 @@ presentation for a group of pages. You can think of a **theme** as the skin for 
 Files that the theme consists of are :ref:`layout updates <dev-doc-frontend-layouts-layout-updates>`,
 **styles**, **scripts**, and anything else related to the look and feel of the page.
 
-Out-of-the-box, OroCommerce comes with :ref:`two themes: default, custom <dev-doc-frontend-layouts-theming>`.
+Out-of-the-box, OroCommerce comes with :ref:`one(default) theme: default <dev-doc-frontend-layouts-theming>`.
 
-We recommend creating your own theme if you want to customize an out-of-the-box OroCommerce storefront. To create your own theme, you have to choose one of the three base themes as the parent for your own.
+We recommend creating your own theme if you want to customize an out-of-the-box OroCommerce storefront. To create your own theme, you have to choose the default theme as the parent for your own.
 
-You can customize the core themes, but creating your own theme will enable you to switch to the core themes with a few clicks conveniently.
+You can customize the core theme, but creating your own theme will enable you to switch to the core theme with a few clicks conveniently.
 
 .. _dev-doc-frontend-layouts-theming-definition:
 
@@ -45,6 +45,10 @@ The **allowed options in the theme configuration** file are the following:
 +-----------------+------------------------------+---------------------+
 | `logo`          | The logo displayed           | no                  |
 |                 | in the UI.                   |                     |
++-----------------+------------------------------+---------------------+
+| `logo_small`    | The small logo is displayed  | no                  |
+|                 | on small screens in the UI   |                     |
+|                 | and also in a burger menu.   |                     |
 +-----------------+------------------------------+---------------------+
 | `parent`        | Parent theme identifier      | no                  |
 +-----------------+------------------------------+---------------------+
@@ -143,10 +147,11 @@ This is a typical theme directory structure, where `AcmeDemoBundle` is a bundle 
 
    DemoBundle/
      Resources/
-       public/                  # Files that will be copied to
-         scss/                  # `public/bundles` folder in an application
-         js/
-         images/
+       public/                  # Files that will be copied to `public/bundles` folder in an application
+         first_theme
+           scss/
+           js/
+           images/
        views/
          layouts/
            first_theme/         # Theme name
@@ -156,8 +161,8 @@ This is a typical theme directory structure, where `AcmeDemoBundle` is a bundle 
                jsmodules.yml    # JS modules configuration
              layout_update1.yml # Layout updates applied for all the pages
              layout_update2.yml
-             oro_shopping_list_frontend_view/ # Layout updates applied only for
-               layout_update.yml              # `oro_shopping_list_frontend_view` route
+             oro_shopping_list_frontend_view/ # Layout updates applied only for `oro_shopping_list_frontend_view` route
+               layout_update.yml
              ...
 
 .. _dev-doc-frontend-layouts-theming-orocommerce-themes:
@@ -165,9 +170,7 @@ This is a typical theme directory structure, where `AcmeDemoBundle` is a bundle 
 Built-in OroCommerce Themes
 ---------------------------
 
-Out-of-the-box, the OroCommerce application comes with two predefined storefront themes: default, and custom.
+Out-of-the-box, the OroCommerce application comes with one predefined default storefront theme.
 
-* **The Refreshing Teal theme** is a fully featured theme that provides the complete look and feel for the OroCommerce storefront UI out-of-the-box.
-
-The *default* theme is aimed to be *base for any* :ref:`customizations <storefront_customization_guide>`.
+* **The Refreshing Teal theme** is a fully featured **default** theme that provides the complete look and feel for the OroCommerce storefront UI out-of-the-box. Also this theme is aimed to be *base for any* :ref:`customizations <storefront_customization_guide>`.
 

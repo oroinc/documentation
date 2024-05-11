@@ -10,31 +10,33 @@ How to Change the Color Scheme of the Storefront
 
 To change the color scheme:
 
-1. Create your own list of colors and merge it with ``$color-palette`` using the ``map_merge($map1, $map2)`` SASS function.
+1. Create your own list of colors and merge it with ``$color-palette`` using the ``map.merge($map1, $map2)`` SASS function.
     This way, your color scheme will rewrite or extend the already existing $color-palette.
 
     .. code-block:: scss
+
+        @use 'sass:map';
 
         $theme-color-palette: (
             'primary': (
                 'main': #37435c,
             ),
             'secondary': (
-                'main': #fcb91d,
+                'c1': #fcb91d,
             ),
-            'additional': (
-                'ultra': #fff
+            'neutral': (
+                'grey2': #dadada
             )
         ) !default;
 
-        $color-palette: map_merge($color-palette, $theme-color-palette);
+        $color-palette: map.merge($color-palette, $theme-color-palette);
 
-2. To get the color you need, use the ``get-color($palette, $key);`` function.
+2. To get the color you need, use the ``get-var-color($palette, $key);`` function.
 
     .. code-block:: scss
 
         .input {
-            color: get-color('secondary', 'main');
+            color: get-var-color('neutral', 'grey2');
         }
 
 3. Run the following console commands to publish the changes:

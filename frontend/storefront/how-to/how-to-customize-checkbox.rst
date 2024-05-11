@@ -8,56 +8,47 @@ To customize checkboxes, change the following base variables:
 .. code-block:: scss
 
     // Variables for both checkbox and radio
-    $checkbox-background: get-color('additional', 'ultra') !default;
-    $checkbox-size: 16px !default;
-    $checkbox-size-var: var(--checkbox-size, #{$checkbox-size}) !default;
-    $checkbox-border: 1px solid get-color('additional', 'dark') !default;
-    $checkbox-color: get-color('additional', 'ultra') !default;
-    $checkbox-border-radius: 3px !default;
+    $checkbox-background: get-var-color('neutral', 'white-100');
+    $checkbox-size: 16px;
+    $checkbox-size-var: var(--checkbox-size, #{$checkbox-size});
+    $checkbox-border: 1px solid get-var-color('neutral', 'grey3');
+    $checkbox-color: get-var-color('neutral', 'white-100');
+    $checkbox-border-radius: 3px;
 
     // Variables for checkbox icon
-    $checkbox-icon-size: 10px !default;
-    $checkbox-icon-line-height: 1 !default;
-    $checkbox-icon-checked: $fa-var-check !default;
-    $checkbox-icon-indeterminate: $fa-var-minus !default;
-    $checkbox-icon-place-self: center !default;
-    $checkbox-icon-opacity: 0 !default;
-    $checkbox-icon-opacity-checked: 1 !default;
+    $checkbox-icon-size: 16px;
+    $checkbox-icon-line-height: 1;
+    $checkbox-icon-checked: url('data:image/svg+xml;utf8, <svg>...</svg>');
+    $checkbox-icon-indeterminate: url('data:image/svg+xml;utf8, <svg>...</svg>');
+    $checkbox-icon-place-self: center;
+    $checkbox-icon-opacity: 0;
+    $checkbox-icon-opacity-checked: 1;
 
     // Checked
-    $checkbox-background-checked: get-color('ui', 'focus') !default;
-    $checkbox-border-color-checked: $base-ui-element-border-color-focus !default;
+    $checkbox-background-checked: get-var-color('primary', 'main');
+    $checkbox-border-color-checked: get-var-color('primary', 'main');
 
     // Indeterminate
-    $checkbox-background-indeterminate: get-color('ui', 'focus') !default;
-    $checkbox-border-color-indeterminate: $base-ui-element-border-color-focus !default;
+    $checkbox-background-indeterminate: get-var-color('primary', 'main');
+    $checkbox-border-color-indeterminate: get-var-color('primary', 'main');
 
     // Hover
-    $checkbox-border-color-hover: get-color('additional', 'dark') !default;
-
-    // Focus
-    $checkbox-border-color-focus: $base-ui-element-border-color-focus !default;
-    $checkbox-box-shadow-focus: $base-ui-element-focus-style !default;
+    $checkbox-background-hover: get-var-color('primary', 'hover');
+    $checkbox-border-color-hover: get-var-color('primary', 'hover');
 
     // Disable
-    $checkbox-border-color-disabled: get-color('additional', 'light') !default;
-    $checkbox-background-checked-disabled: get-color('additional', 'base') !default;
-    $checkbox-border-color-checked-disabled: get-color('additional', 'light') !default;
-    $checkbox-color-disabled: get-color('additional', 'middle') !default;
-    $checkbox-opacity-disabled: .55 !default;
+    $checkbox-border-color-disabled:get-var-color('neutral', 'grey2');
+    $checkbox-background-checked-disabled: get-var-color('neutral', 'grey1');
+    $checkbox-border-color-checked-disabled: get-var-color('neutral', 'grey2');
+    $checkbox-color-disabled: get-var-color('text', 'disabled');
 
     // Variables for radio
-    $checkbox-radio-border: 1px solid get-color('additional', 'middle') !default;
-    $checkbox-radio-border-radius: 50% !default;
+    $checkbox-radio-border-radius: 50%;
 
-    $checkbox-radio-icon-content: '' !default;
-    $checkbox-radio-icon-background-checked: get-color('ui', 'focus') !default;
-    $checkbox-radio-icon-size: 10px !default;
-    $checkbox-radio-icon-border-radius: 50% !default;
-
-    // Focus
-    $checkbox-radio-border-color-focus: transparent !default;
-    $checkbox-radio-border-color-checked-focus: get-color('ui', 'focus') !default;
+    $checkbox-radio-icon-content: '';
+    $checkbox-radio-icon-background-checked: get-var-color('primary', 'main');
+    $checkbox-radio-icon-size: 12px;
+    $checkbox-radio-icon-border-radius: 50%;
 
 Change Checkbox Size
 -----------------------
@@ -78,32 +69,29 @@ To change the base checkbox color, update the following variables:
 .. code-block:: scss
 
     // Checked
-    $checkbox-background-checked: get-color('ui', 'focus') !default;
-    $checkbox-border-color-checked: $base-ui-element-border-color-focus !default;
+    $checkbox-background-checked: get-var-color('primary', 'main');
+    $checkbox-border-color-checked: get-var-color('primary', 'main');
 
     // Indeterminate
-    $checkbox-background-indeterminate: get-color('ui', 'focus') !default;
-    $checkbox-border-color-indeterminate: $base-ui-element-border-color-focus !default;
+    $checkbox-background-indeterminate: get-var-color('primary', 'main');
+    $checkbox-border-color-indeterminate: get-var-color('primary', 'main');
 
     // Hover
-    $checkbox-border-color-hover: get-color('additional', 'dark') !default;
-
-    // Focus
-    $checkbox-border-color-focus: $base-ui-element-border-color-focus !default;
-    $checkbox-box-shadow-focus: $base-ui-element-focus-style !default;
+    $checkbox-background-hover: get-var-color('primary', 'hover');
+    $checkbox-border-color-hover: get-var-color('primary', 'hover');
 
     // Disable
-    $checkbox-border-color-disabled: get-color('additional', 'light') !default;
-    $checkbox-background-checked-disabled: get-color('additional', 'base') !default;
-    $checkbox-border-color-checked-disabled: get-color('additional', 'light') !default;
+    $checkbox-border-color-disabled: get-var-color('neutral', 'grey2');
+    $checkbox-background-checked-disabled: get-var-color('neutral', 'grey1');
+    $checkbox-border-color-checked-disabled: get-var-color('neutral', 'grey2');
 
 To change colors dynamically, use the same approach as with the checkbox size using the css-variable.
 
 .. code-block:: scss
 
     // Checked
-    $checkbox-background-checked: var(--checkbox-skin-color, get-color('ui', 'focus')) !default;
-    $checkbox-border-color-checked: var(--checkbox-skin-color, #{$base-ui-element-border-color-focus}) !default;
+    $checkbox-background-checked: var(--checkbox-skin-color, get-var-color('primary', 'main'));
+    $checkbox-border-color-checked: var(--checkbox-skin-color, get-var-color('primary', 'main'));
 
 You can then change the color dynamically via JavaScript by setting the value of the css-variable:
 

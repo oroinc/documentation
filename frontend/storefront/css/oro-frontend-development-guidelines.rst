@@ -535,12 +535,12 @@ styles only for a specific type of device in the future.
 
     .block {
         width: 50%;
-        padding: 10px;
+        padding: spacing('md');
 
-        background-color: get-color('additional', 'middle');
+        background-color: get-var-color('neutral', 'dark');
 
         &__element {
-            font-size: 12px;
+            font-size: $base-font-size--xs;
         }
     }
 
@@ -552,10 +552,10 @@ styles only for a specific type of device in the future.
 
     @include breakpoint('mobile') {
         .block {
-            padding: 15px;
+            padding: spacing('sm');
 
             &__element {
-                font-size: 15px;
+                font-size: $base-font-size--large;
             }
         }
     }
@@ -566,24 +566,24 @@ styles only for a specific type of device in the future.
 
     .block {
         width: 50%;
-        padding: 10px;
+        padding: spacing('md');
 
-        background-color: get-color('additional', 'middle');
+        background-color: get-var-color('neutral', 'dark');;
 
         @include breakpoint('tablet') {
             width: 100%;
         }
 
         @include breakpoint('mobile') {
-            padding: 15px;
+            padding: spacing('sm');
         }
 
         &__element {
-            font-size: 12px;
+            font-size: $base-font-size--large;
 
             // STOP!
             @include breakpoint('mobile') {
-                font-size: 15px;
+                font-size: $base-font-size;
             }
         }
     }
@@ -591,27 +591,33 @@ styles only for a specific type of device in the future.
 Work with Colors
 ^^^^^^^^^^^^^^^^
 
-To work with a color, use the **get-color()** function which returns a color
-from a predefined color scheme.
+To work with a color, use:
+ * **get-color($color-palette, $color-key)**: returns a color from a predefined color scheme;
+ * **get-var-color($color-palette, $color-key)**: returns a color from a predefined color scheme with CSS variable syntax. This allows you to easily change the color for different themes, such as a dark theme.
 
 Example:
 
 .. code-block:: none
 
     .block {
-        border-color: get-color('additional', 'light');
-        color: get-color('primary', 'main');
+        border-color: get-color('neutral', 'white-50');
+        color: get-var-color('neutral', 'dark');
     }
 
-If you need darker, lighter or more transparent color, use the native Sass
-functions: **darken()**, **lighten()**, **transparentize()**, etc.
+If you need darker, lighter or more transparent color, use the native |sass:color functions|
+**color.scale()**, **color.adjust()**, etc.
 
 .. code-block:: none
 
+    @use 'sass:color';
+
     .block {
-        background-color: transparentize(get-color('primary', 'main'), .8);
-        border-color: darken(get-color('additional', 'light'), 10%);
-        color: lighten(get-color('primary', 'main'), 10%);
+        // Makes color more transparent
+        background-color: color.scale(get-color('neutral', 'focus'), $alpha: -60%);
+        // Makes color more darken
+        border-color: color.adjust(get-var-color('neutral', 'dark'), $lightness: -10%);
+        // Makes color more lighten
+        color: color.adjust(get-var-color('neutral', 'dark'), $lightness: 10%);
     }
 
 Group Properties
@@ -640,9 +646,12 @@ use: `vertical-align`, `overflow`, `clear`, `resize`,
 .. code-block:: none
 
     // variables
-    $element-color: #000 !default;
-    $element-font: 12px !default;
-    $element-line-height: 1.2 !default;
+    $element-color: get-var-color('text', 'primary'); !default;
+    $element-border: 10px solid get-var-color('neutral', 'grey2') !default;
+    $element-background: get-var-color('neutral', 'dark') !default;
+    $element-color: get-var-color('text', 'inverse'); !default;
+    $element-font: $base-font-size--xs !default;
+    $element-line-height: $base-line-height !default;
 
 .. code-block:: none
 
@@ -656,8 +665,8 @@ use: `vertical-align`, `overflow`, `clear`, `resize`,
         // block model
         width: 100px;
         height: 100px;
-        margin: 10px;
-        padding: 10px 20px;
+        margin: spacing('sm');
+        padding: spacing('md') spacing('sm');
 
         // typography
         font-size: $element-font;
@@ -665,8 +674,8 @@ use: `vertical-align`, `overflow`, `clear`, `resize`,
         text-align: center;
 
         // visualization
-        border: 10px solid #333;
-        background: red;
+        border: $element-border;
+        background: $element-background;
         color: $element-color;
 
         // other
@@ -675,7 +684,7 @@ use: `vertical-align`, `overflow`, `clear`, `resize`,
 
         // mixins
         // grouping @includes at the end makes it easier to read the entire selector.
-        @include clearfix;
+        @include ellipsis();
     }
 
 **Unacceptable**
@@ -706,9 +715,9 @@ Use @extend Directive
 .. code-block:: none
 
     $default-size: 400px !default;
-    $default-offset: 10px auto !default;
-    $default-inner-offset: 15px !default;
-    $default-background: #dadada !default;
+    $default-offset: spacing('sm') auto !default;
+    $default-inner-offset: spacing('base') !default;
+    $default-background: get-var-color('neutral', 'dark') !default;
 
     %dialog {
         width: $default-size;
@@ -787,96 +796,46 @@ Use the logical number of modifiers for the element.
 
 The Main Mixins and Functions
 -----------------------------
+Out-of-the-box, OroCommerce offers offers a wide range of helper utilities to handle common layout challenges, including clearing **floats**,
+positioning **pseudo-elements**, managing **z-index** stacking, and applying styles based on **media** queries, rtc.
+The entire list of available mixins and functions see in |StyleBook General Look and Feel|.
 
-Helper to clear inner floats.
+Using the helper to clear **inner floats**.
 
 .. code-block:: none
 
-    @mixin clearfix {
-        &:after {
-            content: '';
-
-            display: block;
-
-            clear: both;
-        }
-    }
-
-    // use
     .block {
         @include clearfix;
     }
 
-Helper for the positioning of pseudo-elements.
+Using the helper for the positioning of **pseudo-elements**.
+
+.. code-block:: none
+    .block::after {
+        @include after;
+    }
+
+Using the helper function for managing **z-index** stacking
 
 .. code-block:: none
 
-    @mixin after {
-        content: '';
-
-        position: absolute;
-
-        display: block;
-    }
-
-    // use
-    .block {
-        //...
-
-        &:after {
-            @include after;
-        }
-    }
-
-Helper function for organizing z-index
-
-.. code-block:: none
-
-    @function z($layer) {
-        $layers: (
-            'base': 1,
-            'fixed': 50,
-            'dropdown': 100,
-            'popup': 150,
-            'hidden': -1
-        );
-
-        $z-index: map-get($layers, $layer);
-        @return $z-index;
-    }
-
-    // use
     .dialog {
-        //...
-
         z-index: z('popup') + 1;
 
-        &-overley {
-            //...
-
+        &-overlay {
             z-index: z('popup');
         }
     }
 
-Helper mixin for organizing @media rules
+Using the helper mixin for organizing **media** queries
 
 .. code-block:: none
-
-    @mixin breakpoint($type) {
-        $breakpoints: (
-            'large': '(max-width: ' + #{$breakpoint-large} + ')',
-            'tablet': '(max-width: ' + #{$breakpoint-tablet} + ')',
-            'mobile': '(max-width: ' + #{$breakpoint-mobile} + ')'
-        );
-
-        @media #{map-get($breakpoints, $type)} {
-            @content;
-        }
-    }
-    // use
-
     @include breakpoint('tablet') {
         // styles for tablet version
+    }
+
+    @include breakpoint('mobile') {
+        // styles for mobile version
     }
 
 Best Practices
@@ -884,47 +843,44 @@ Best Practices
 
 .. code-block:: none
 
-    $block-font-title: Tahoma, sans-serif; !default;
-    $block-offset: 10px !default;
+    $block-font-title: get-font-name('main'),'helvetica', arial, sans-serif !default;
+    $block-offset: spacing('md') !default;
 
 .. code-block:: none
 
     .block {
-        @include clearfix;
+        display: flex;
+        flex-wrap: wrap;
 
         &:hover {
-            background-color: get-color('secondary', 'light');
+            background-color: get-color('secondary', 'c1');
         }
 
         &__element {
-            float: left;
             width: 25%;
-            padding-left: $list-offset * 2;
+            padding-left: $base-ui-element-offset * 2;
 
-            font-size: 14px;
+            font-size: $base-font-size--s;
 
             @extend %transition;
 
             &:hover {
-                border-color: get-color('additional', 'middle');
+                border-color: get-color('additional', 'c2');
             }
 
             // compound class
             &-title {
-                margin-bottom: $list-offset;
-
-                font-family: $list-font-title;
-                font-size: 22px;
+                font-size: $base-font-size--large;
                 line-height: 1.1;
             }
 
             &--first {
-                padding-left: 0;
+                padding-left: inset;
             }
         }
 
         &__content {
-            padding: $list-offset ($list-offset * 2);
+            padding: $base-ui-element-offset;
         }
 
         // State written &. (the active state of the menu item, for example).
@@ -939,9 +895,9 @@ Best Practices
             width: 100%;
 
             &__content {
-                padding: $list-offset * 2;
+                padding: spacing('md');
 
-                font-size: 15px;
+                font-size: $base-font-size--large;
             }
         }
     }
@@ -954,7 +910,7 @@ Best Practices
                 &-title {
                     margin-bottom: 0;
 
-                    font-size: 25px;
+                    font-size: $base-font-size--large * 1.5;
                 }
             }
         }
