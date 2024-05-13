@@ -62,6 +62,8 @@ To update fonts, merge ``$theme-fonts`` with your ``$theme-custom-fonts``.
 
 .. code-block:: scss
 
+    @use 'sass:map';
+
     $theme-custom-fonts: (
         'main': (
             'family': 'Lato',
@@ -92,7 +94,7 @@ To update fonts, merge ``$theme-fonts`` with your ``$theme-custom-fonts``.
         )
     );
 
-    $theme-fonts: map_merge($theme-fonts, $theme-custom-fonts);
+    $theme-fonts: map.merge($theme-fonts, $theme-custom-fonts);
 
 Additional Tools for Overriding Fonts
 -------------------------------------
@@ -151,28 +153,24 @@ To change the font size and line height, override the following variables:
 
 .. code-block:: scss
 
-    // Offsets;
+    // Fonts sizes
 
-    // Font families
     $base-font: get-font-name('main');
+    $base-font-size: 14px !default;
+    $base-font-size--large: 18px !default;
+    $base-font-size--s: 12px !default;
+    $base-font-size--xs: 10px !default;
+    $base-line-height: 1.2 !default;
 
-    // Font sizes
-    $base-font-size: 14px;
-    $base-font-size--large: 16px;
-    $base-font-size--xs: 11px;
-    $base-font-size--s: 13px;
-    $base-font-size--m: 20px;
-    $base-font-size--l: 23px;
-    $base-font-size--xl: 26px;
-    $base-line-height: 1.35;
+    $base-font-weight: font-weight('normal') !default;
 
 .. important:: In all cases above, you have to run the following console commands to publish the changes:
 
-               .. code-block:: none
+   .. code-block:: none
 
-                    php bin/console cache:clear
-                    php bin/console assets:install --symlink
-                    php bin/console oro:assets:build
+        php bin/console cache:clear
+        php bin/console assets:install --symlink
+        php bin/console oro:assets:build
 
 Recommendations for Optimizing Fonts
 ------------------------------------
@@ -227,6 +225,8 @@ You can split the font into Unicode subsets. For example, you can use |glyphhang
 
 .. code-block:: scss
 
+    @use 'sass:map';
+
     $theme-custom-fonts: (
         'font-awesome': (
             'family': 'FontAwesome',
@@ -241,7 +241,7 @@ You can split the font into Unicode subsets. For example, you can use |glyphhang
         ),
     );
 
-    $theme-fonts: map_merge($theme-fonts, $theme-custom-fonts);
+    $theme-fonts: map.merge($theme-fonts, $theme-custom-fonts);
 
 4. Create/Update path to the font in the preload link:
 

@@ -16,9 +16,8 @@ Replace Favicons
 
 1. Place new storefront favicon images into your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/favicons/``):
 
-    The main favicon image:
-
-    - Resources/public/default/favicons/favicon.ico
+    The **main favicon** image is located in the application folder `public/favicon.ico`. Simply replace it with yours and ensure that your favicon has the same name as the original:
+    Also, specify the **main favicon image** in your :ref:`theme configuration file <dev-doc-frontend-layouts-theming-definition>`:
 
     Additional favicon images and a |web app manifest file| with specified icons:
 
@@ -154,17 +153,16 @@ Replace Favicons
         php bin/console assets:install --symlink
 
 
-Replace a Logo
+Replace Logos
 --------------
 
-1. Place a new logo image to your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/images/logo.svg``).
-
-2. Specify the main favicon image in your :ref:`theme configuration file <dev-doc-frontend-layouts-theming-definition>`:
+1. Place a new logo images to your bundle`s public assets folder (e.g., ``Resources/public/{your_theme_id}/images/logo.svg``).
 
     .. code-block:: yaml
         :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
         logo: '@AcmeDemoBundle/Resources/public/default/logo/logo.svg'
+        logo_small: '@AcmeDemoBundle/Resources/public/default/logo/small_logo.svg'
 
     or
 
@@ -172,6 +170,7 @@ Replace a Logo
         :caption: src/Acme/Bundle/DemoBundle/Resources/views/layouts/{your_theme_id}/theme.yml
 
         logo: 'bundles/{your_theme_id}/images/logo/logo.svg'
+        logo_small: 'bundles/{your_theme_id}/images/logo/small_logo.svg'
 
 
 .. admonition:: Business Tip

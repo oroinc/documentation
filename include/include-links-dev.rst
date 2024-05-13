@@ -1873,9 +1873,17 @@ Links (Dev)
 
    <a href="https://demo.orocommerce.com/style-book/" target="_blank">StyleBook</a>
 
+.. |StyleBook General Look and Feel| raw:: html
+
+      <a href="https://demo.orocommerce.com/style-book/configs/" target="_blank">StyleBook General Look and Feel</a>
+
 .. |SASS| raw:: html
 
    <a href="http://sass-lang.com/" target="_blank">SASS</a>
+
+.. |sass:color functions| raw:: html
+
+   <a href="https://sass-lang.com/documentation/modules/color/" target="_blank">sass:color functions</a>
 
 .. |web app manifest file| raw:: html
 

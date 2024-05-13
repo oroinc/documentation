@@ -15,17 +15,11 @@ Front UI in core Oro applications is based on the Oro UI library, which, in its 
 Oro applications use the |SCSS| extension and a preprocessor to define CSS.
 
 OroCommerce project is composed of bundles. Each bundle has its
-own set of CSS related to a particular bundle. Additionally, OroCommerce
-project has two :ref:`themes <dev-doc-frontend-layouts-theming>` which are **default**, and **custom**.
-
+own set of CSS related to a particular bundle.
 SCSS files as other template assets (images as javascripts) and :ref:`layout update files <dev-doc-frontend-layouts-layout-updates>` are grouped into
-:ref:`themes <dev-doc-frontend-layouts-theming>`. Out-of-the-box, the OroCommerce application comes with two
-:ref:`themes <dev-doc-frontend-layouts-theming-orocommerce-themes>`, **default**, and **custom**.
-
-1. **default** - a fully developed theme and recommended for customizations. It
-   has basic @mixins, @functions, variables, color palette, typography, settings and dependencies.
-
-2. **custom** - a modified **default** theme
+:ref:`themes <dev-doc-frontend-layouts-theming>`. Out-of-the-box, the OroCommerce application comes with one
+:ref:`theme <dev-doc-frontend-layouts-theming-orocommerce-themes>`, **default**. It is a fully developed theme and recommended for customizations, and
+has basic @mixins, @functions, variables, color palette, typography, settings and dependencies.
 
 .. _dev-doc-frontend-css-theme-structure:
 
@@ -66,29 +60,19 @@ An example of the three folders structure (e.g., the ``BundleName/Resources/view
         page-footer-config.scss
         page-header-config.scss
         page-title-config.scss
-    styles.scss
-
-.. code-block:: scss
-    :caption: BundleName/Resources/views/layouts/{theme_name}/scss/styles.scss
-
-    @import 'components/page-container';
-    @import 'components/page-header';
-    @import 'components/page-content';
-    @import 'components/page-footer';
-    @import 'components/page-title';
 
 .. code-block:: yaml
     :caption: BundleName/Resources/views/layouts/{theme_name}/config/assets.yml
 
     css:
         inputs:
-            - 'bundles/orofrontend/default/scss/settings/global-settings.scss'
-            - 'bundles/orofrontend/default/scss/variables/base-config.scss'
-            - 'bundles/orofrontend/default/scss/variables/page-container-config.scss'
-            - 'bundles/orofrontend/default/scss/variables/page-header-config.scss'
-            - 'bundles/orofrontend/default/scss/variables/page-content-config.scss'
-            - 'bundles/orofrontend/default/scss/variables/page-footer-config.scss'
-            - 'bundles/orofrontend/default/scss/variables/page-title-config.scss'
+            - 'bundles/{your_bundle}/{theme_name}/scss/settings/global-settings.scss'
+            - 'bundles/{your_bundle}/{theme_name}scss/variables/base-config.scss'
+            - 'bundles/{your_bundle}/{theme_name}/scss/variables/page-container-config.scss'
+            - 'bundles/{your_bundle}/{theme_name}/scss/variables/page-header-config.scss'
+            - 'bundles/{your_bundle}/{theme_name}scss/variables/page-content-config.scss'
+            - 'bundles/{your_bundle}/{theme_name}scss/variables/page-footer-config.scss'
+            - 'bundles/{your_bundle}/{theme_name}scss/variables/page-title-config.scss'
             # You can import Sass modules from node_modules.
             # Just prepend them with a ~ to tell Webpack that this is not a relative import.
             # See: https://webpack.js.org/loaders/sass-loader/#resolving-import-at-rules
@@ -106,14 +90,13 @@ Example:
 .. code-block:: scss
     :caption: application/commerce/public/build/{theme_name}/css/styles.css.scss
 
-    @import "../bundles/orofrontend/default/scss/settings/global-settings.scss";
-    @import "../bundles/orofrontend/default/scss/variables/base-config.scss";
-    @import "../bundles/orofrontend/default/css/variables/page-container-config.scss";
-    @import "../bundles/orofrontend/default/scss/variables/page-header-config.scss";
-    @import "../bundles/orofrontend/default/scss/variables/page-content-config.scss";
-    @import "../bundles/orofrontend/default/scss/variables/page-footer-config.scss";
-    @import "../bundles/orofrontend/default/scss/variables/page-title-config.scss";
-    @import "../bundles/orocms/default/scss/styles.scss";
+    @import "../bundles/{your_bundle}/{theme_name}/scss/settings/global-settings.scss";
+    @import "../bundles/{your_bundle}/{theme_name}/scss/variables/base-config.scss";
+    @import "../bundles/{your_bundle}/{theme_name}/css/variables/page-container-config.scss";
+    @import "../bundles/{your_bundle}/{theme_name}/scss/variables/page-header-config.scss";
+    @import "../bundles/{your_bundle}/{theme_name}/variables/page-content-config.scss";
+    @import "../bundles/{your_bundle}/{theme_name}/variables/page-footer-config.scss";
+    @import "../bundles/{your_bundle}/{theme_name}/variables/page-title-config.scss";
     @import "~prismjs/themes/prism-coy.css";
 
 This structure enables us to change styles for components on a bundle
@@ -180,7 +163,7 @@ Theme Extending
 In order to inherit one theme from another, define the parent
 theme in the :ref:`theme.yml <dev-doc-frontend-layouts-theming-definition>` file.
 
-For example, if you need to inherit the **custom** theme from *default*, perform the following:
+For example, if you need to inherit the **your_theme** theme from *default*, perform the following:
 
 .. code-block:: yaml
     :caption: /theme.yml
@@ -190,7 +173,7 @@ For example, if you need to inherit the **custom** theme from *default*, perform
 It enables you to inherit all styles from the parent theme and have access to all mixins, variables, etc. from the parent one.
 
 Here is an example of using the **custom** theme. The aim is to change the global settings and the appearance of form elements. For this, we create theme folders and several scss files in the corresponding bundles
-(FrontEndBundle, FormBundle).
+(**FrontEndBundle**, **FormBundle**).
 
 .. code-block:: none
     :caption: CustomThemeBundle/Resources/public/FrontendBundle/scss/
@@ -204,66 +187,40 @@ Here is an example of using the **custom** theme. The aim is to change the globa
     :caption: CustomThemeBundle/Resources/views/layouts/custom/config/assets.yml
 
         inputs:
-            - 'bundles/orocustomtheme/FrontendBundle/scss/settings/main/global-settings.scss'
+            - 'bundles/orocustomtheme/FrontendBundle/scss/settings/global-settings.scss'
 
-            - 'bundles/orocustomtheme/FrontendBundle/scss/variables/page-main-config.scss'
+            - 'bundles/orocustomtheme/FrontendBundle/scss/variables/breadcrumbs-config.scss'
+
+            - 'bundles/orocustomtheme/Resources/public/FormBundle/Resources/public/custom/scss/header.scss'
         output: 'css/styles.css'
 
 .. code-block:: none
-    :caption: FormBundle/Resources/public/default/scss/
+    :caption: CustomThemeBundle/Resources/public/FormBundle/Resources/public/custom/scss/
 
     components/
         header.scss
-    settings/main/
+    settings/
         global-settings.scss
     variables/
         breadcrumbs-config.scss
-    styles.scss
 
 Update and add new variables for this component
 
 .. code-block:: scss
-    :caption: breadcrumbs-config.scss
+    :caption: CustomThemeBundle/Resources/public/FormBundle/Resources/public/custom/scss/breadcrumbs-config.scss
 
-    $breadcrumbs-offset: 12px 0; // update the variable's value with custom theme
+    $breadcrumbs-link-color: get-color('text', 'link'); // update the variable's value with custom one
 
 Add missing styles for this component
 
 .. code-block:: none
-    :caption: header.scss
+    :caption: CustomThemeBundle/Resources/public/FormBundle/Resources/public/custom/scss/header.scss
 
     @include breakpoint('tablet') {
         .page-header {
-            .middlebar {
-                &__right {
-                    display: block;
-                }
-            }
+            padding: spacing('base');
         }
     }
-
-.. code-block:: scss
-    :caption: styles.scss
-
-        @import './components/header';
-
-In the main file of the custom theme, we have:
-
-.. code-block:: none
-    :caption: application/commerce/public/build/default/styles.css.scss
-
-    @import "../bundles/oroui/default/scss/settings/global-settings";
-
-    // Update global setting for main styles
-    @import "../bundles/orocustomtheme/FrontendBundle/scss/settings/main/global-settings";
-
-    *// Update setting from global components*
-    @import "../bundles/orofrontend/default/scss/variables/page-main-config"
-    @import "../bundles/orocustomtheme/FrontendBundle/scss/variables/page-main-config"
-
-    *// Update styles for page-main component*
-    @import "../bundles/orofrontend/default/scss/styles";
-    @import "../bundles/orocustomtheme/FrontendBundle/scss/styles";
 
 Themes Settings and Useful Recommendation
 -----------------------------------------
