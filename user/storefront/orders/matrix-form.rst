@@ -11,26 +11,26 @@ Depending on the configuration:
 
    * on a product page:
 
-   .. image:: /user/img/system/config_commerce/product/matrix_product_view.png
+   .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_page.png
+      :alt: Different matrix form view options displayed on the product page in the storefront
 
    * on the product listing:
 
-   .. image:: /user/img/system/config_commerce/product/matrix_product_listing.png
+   .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_listing.png
+      :alt: Different matrix form view options displayed on the product listing page in the storefront
 
    * on a shopping list page:
 
    .. image:: /user/img/system/config_commerce/product/matrix_shopping_list.png
+      :alt: Different matrix form view options displayed on the product shopping list page in the storefront
 
-   * as a popup when clicking the **Update Shopping List** button on the product page.
-
-   .. image:: /user/img/system/config_commerce/product/matrix_popup.png
 
 2. Enter the number of items for each category.
 3. Click **Add to Shopping List** on the bottom right of the matrix ordering form. Alternatively, select the shopping list to add the items to, or create a new shopping list by clicking |IcChevronDown| and selecting your option.
 
-   .. image:: /user/img/storefront/orders/matrix_form_frontend.png
+   .. image:: /user/img/system/config_commerce/product/matrix_add_to_shopping_list.png
 
-However, please keep in mind, that your website configuration may be different and the matrix form may be unavailable.
+However, please keep in mind, that your website configuration may be different, and the matrix form may be unavailable.
 
 .. include:: /include/include-images.rst
    :start-after: begin

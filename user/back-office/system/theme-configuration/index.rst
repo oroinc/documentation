@@ -67,6 +67,10 @@ To configure your current storefront theme:
 
    * **Page Template** --- Select the product page template from the list. A page template is used to render the product page in the storefront by default, unless the template is overridden in the product details. Available options are *Tabs* and *Wide*.
 
+     **Default Template**:
+
+     .. image:: /user/img/system/theme-configuration/default-page-template.png
+
      **Tabs (Additional Attribute Groups Are Displayed In Tabs)**:
 
      .. image:: /user/img/system/theme-configuration/tabbed-page-template.png
@@ -74,6 +78,9 @@ To configure your current storefront theme:
      **Wide (Additional Attribute Groups Are Displayed In Collapse One Below Another For Full Page Width)**:
 
      .. image:: /user/img/system/theme-configuration/wide-page-template.png
+
+
+   * **Display Price Tiers As** --- Select a multi or single unit table. A multi-unit table shows price tiers for all product units in the same table, which might not work well for products with many units or when quantity tiers are not aligned between units. Single-unit table shows price tiers only for the currently selected unit.
 
    * **Filter Panel Position** --- Specify where the filter panel should be represented in the storefront. Available options are *Top* and *Sidebar*.
 

@@ -65,13 +65,13 @@ To configure the required settings for simple products variations:
 
    **Everywhere** --- With this option selected, all the simple products are displayed together with the configurable one on a product page, product listing, and a shopping list page.
 
-     .. image:: /user/img/system/config_commerce/product/display_simple_variations.png
-        :alt: A storefront product listing page displaying both configurable product and its variations
+   .. image:: /user/img/system/config_commerce/product/display_simple_variations.png
+      :alt: A storefront product listing page displaying both configurable product and its variations
 
    **Hide Completely** --- The option hides all the simple products that belong to the configurable one on the product listing and search results pages enabling a customer to select only the configurable one.
 
-      .. image:: /user/img/system/config_commerce/product/hide_simple_variations.png
-        :alt: A storefront product listing page displaying only the configurable product without variations
+   .. image:: /user/img/system/config_commerce/product/hide_simple_variations.png
+      :alt: A storefront product listing page displaying only the configurable product without variations
 
    **Hide from the catalog and search** --- The option hides all the simple products that belong to the configurable one on the product listing and search results pages. However, a customer can still order a required product variant through a quick order form or an RFQ even if such product is not displayed individually in the product catalog.
 

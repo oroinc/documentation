@@ -4,7 +4,7 @@
 Configure Guest Website Access Settings per Organization
 ========================================================
 
-.. hint:: Read more on this topic in :ref:`Guest Access <sys--conf--commerce--guest>`.
+.. hint:: This section is part of the :ref:`Guest Functions <concept-guides--product-management>` topic that provides a general understanding of the guest access concept in OroCommerce.
 
 .. note:: Guest access can be enabled :ref:`globally <sys--conf--commerce--guest-access--global>`, per organization, and :ref:`per website <sys--conf--commerce--guest-access--website>`.
 

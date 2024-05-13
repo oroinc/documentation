@@ -3,6 +3,8 @@
 Configure Product Search Settings per Organization
 ==================================================
 
+.. note:: The Product Search feature can be configured on the :ref:`global <configuration--guide--commerce--configuration--product-search>`, organization, and :ref:`website <sys--websites--commerce--products--search>` levels.
+
 To configure the product search settings per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
@@ -31,6 +33,11 @@ To configure the product search settings per organization:
    * **Number Of Automatically Suggested Phrases In Search Autocomplete** --- The maximum number of suggestions displayed in the storefront autocomplete dropdown.
 
 7. Click **Save Settings**.
+
+**Related Topics**
+
+* :ref:`Search Functions Concept Guide <user-guide-getting-started-search>`.
+
 
 .. include:: /include/include-images.rst
    :start-after: begin

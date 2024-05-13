@@ -4,7 +4,7 @@
 Configure Global Related Items Settings
 =======================================
 
-.. hint:: Read more on this topic in :ref:`Products <doc--products>`.
+.. hint:: This section is part of the :ref:`Product Recommendations <user-guide--products--recommendations>` topic that provides a general understanding of personalized and relevant product suggestions concept in OroCommerce.
 
 In the Related Items section, you can configure the system settings for related, up-sell, and similar products. These settings may apply globally, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per :ref:`website <sys--websites--commerce--catalog--related-products>`.
 

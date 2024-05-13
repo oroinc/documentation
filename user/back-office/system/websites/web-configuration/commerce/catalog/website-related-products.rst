@@ -3,6 +3,8 @@
 Configure Related Product Settings per Website
 ==============================================
 
+.. hint:: This section is part of the :ref:`Product Recommendations <user-guide--products--recommendations>` topic that provides a general understanding of personalized and relevant product suggestions concept in OroCommerce.
+
 In the Related Items section, you can configure the settings for related, up-sell, and similar products for a particular website. These settings may apply :ref:`globally <sys--commerce--catalog--relate-products--main>`, per :ref:`organization <sys--users--organization--commerce--catalog--related-products>`, and per website.
 
 .. note:: Before configuring the related items settings, add the required related and up-sell products to the desired products as described in the :ref:`Add Related Items <products--related-items>` topic. Similar products are displayed automatically following the similar product calculation algorithm.

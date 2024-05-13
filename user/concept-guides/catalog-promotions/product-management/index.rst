@@ -109,8 +109,8 @@ When the required number of products has been created or imported, you can furth
 The products that appear on the home page of the OroCommerce storefront are customized through the configuration settings of:
 
 * A :ref:`master catalog <user-guide--master-catalog>` or a :ref:`web catalog <user-guide--web-catalog>` that organize all existing products in your store by categories.
-* A :ref:`featured products segment <products--featured-products>` that displays the selected products on the crowded paths of you website.
-* A :ref:`new arrivals segment <sys--commerce--product--new-arrivals-block-global>` that showcases a few new products of your store that you want to promote.
+* A :ref:`featured products segment <concept-guides--product-management--featured-products>` that displays the selected products on the crowded paths of you website.
+* A :ref:`new arrivals segment <concept-guides--product-management--new-arrivals-products>` that showcases a few new products of your store that you want to promote.
 * A :ref:`new product icon <sys--commerce--product--new-arrivals>` that highlights the products as new.
 * A :ref:`product image watermark <configuration--guide--commerce--configuration--product-images>` that can be added on top of the images for the selected products.
 
@@ -120,7 +120,7 @@ The products that appear on the home page of the OroCommerce storefront are cust
 
 You can configure the :ref:`All Products page <sys--conf--commerce--catalog--special-pages>` to display all available products from the master catalog grouped by categories.
 
-You can also customize the :ref:`image preview on product listing page <sys--commerce--product--product-images--image-preview--global>` to see the product image gallery instead of the product page when clicking on the image in the product listing.
+You can also enable the :ref:`image preview on product listing page <sys--commerce--product--product-images--image-preview--global>` to see the product image gallery when clicking on the |ZoomIc| icon on a product image in the storefront.
 
 .. image:: /user/img/concept-guides/products/all_product_page_storefront.png
    :alt: Visual representation of products on the product listing page
@@ -228,6 +228,46 @@ To add the featured products block to any storefront page, you need to:
    :alt: Connecting the featured segment to the storefront
 
 
+.. _concept-guides--product-management--new-arrivals-products:
+
+New Arrivals Products
+^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: The New Arrivals Products block is implemented differently for **Refreshing Teal** theme and **5.1 or earlier versions** of OroCommerce.
+
+The new arrivals products feature provides sellers with an opportunity to highlight new products in their website's storefront, effectively capturing the attention of customers as soon as they land on the website.
+
+To add the new arrivals products block to any storefront page, you need to:
+
+**Refreshing Teal**
+
+1. Mark the selected products as new arrivals in the **General** section of the **Products > Products** main menu by setting **Is New Arrival** to *Yes*.
+
+.. image:: /user/img/concept-guides/products/new-arrivals.png
+   :alt: Toggling the New Arrival setting to Yes.
+
+2. Create a new arrivals products segment to include all products that you have marked as new arrival under **Reports & Segments > Manage Segments** as described in the :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
+
+3. Create a :ref:`product segment content widget <content-widgets-product-segment>` to include the new arrival products segment that you have configured in Step 2.
+
+.. image:: /user/img/concept-guides/products/new-arrivals-products-content-widget.png
+   :alt: Creating a product segment content widget with the new arrival products selected for segment
+
+4. Once you save the content widget, you can now place it to the required location in the :ref:`WYSIWYG <getting-started-wysiwyg-editor-field>` field of your landing page or content block.
+
+.. image:: /user/img/concept-guides/products/new-arrivals-products-content-widget-wysiwyg.png
+   :alt:  Adding a block content widget to a WYSIWYG field
+
+**OroCommerce version 5.1 and below**
+
+1. Complete the configuration described in Step 1 and 2 of the Refreshing Teal theme.
+
+2. Once the segment is ready, you can connect it to the storefront website via the system configuration on the :ref:`global <configuration--guide--commerce--configuration--promotions>`, :ref:`organization <sys--users--organization--commerce--products--new-arrivals>`, or :ref:`website <sys--websites--commerce--products--new-arrivals>` levels.
+
+.. image:: /user/img/concept-guides/products/connect-new-arrivals-segment-to-storefront.png
+   :alt: Connecting the new arrivals segment to the storefront
+
+
 As you can see, with OroCommerce you can create an appealing and functional product pages that are the key to sales in online stores of all kinds.
 
 **Related Articles**
@@ -237,6 +277,9 @@ As you can see, with OroCommerce you can create an appealing and functional prod
 * :ref:`Product-Related Settings in System Configuration <configuration--products>`
 
 .. include:: /include/include-links-seo.rst
+   :start-after: begin
+
+.. include:: /include/include-images.rst
    :start-after: begin
 
 .. toctree::

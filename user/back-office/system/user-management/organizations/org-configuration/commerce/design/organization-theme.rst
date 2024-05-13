@@ -21,9 +21,7 @@ In your Oro application, you can control and customize the storefront look and f
 
    * **Category Image Placeholder** --- select the image file to be applied to the category that has no associated image. The image is usually used in various category widgets.
 
-   * **Display Price Tiers As** --- Select a multi or single unit table. A multi-unit table shows price tiers for all product units in the same table, which might not work well for products with many units or when quantity tiers are not aligned between units. Single-unit table shows price tiers only for the currently selected unit.
-
-5. In the **Page Templates** section, select the product page template from the list. Available options are *Default*, *Tabs*, *Wide*.
+ 5. In the **Page Templates** section, select the product page template from the list. Available options are *Default*, *Tabs*, *Wide*.
 
    .. important:: The Page Templates configuration applies to OroCommerce version 5.1 and below. To configure the setting for the **Refreshing Teal** theme, please refer to the :ref:`theme configuration <back-office-theme-configuration>` documentation.
 

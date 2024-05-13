@@ -3,6 +3,8 @@
 Configure Product Search Settings per Website
 =============================================
 
+.. note:: The Product Search feature can be configured on the :ref:`global <configuration--guide--commerce--configuration--product-search>`, :ref:`organization <sys--users--organization--commerce--products--search>`, and website levels.
+
 To configure the product search settings per website:
 
 1. Navigate to  **System > Websites** in the main menu.
@@ -30,6 +32,12 @@ To configure the product search settings per website:
    * **Number Of Automatically Suggested Phrases In Search Autocomplete** --- The maximum number of suggestions displayed in the storefront autocomplete dropdown.
 
 7. Click **Save Settings**.
+
+
+**Related Topics**
+
+* :ref:`Search Functions Concept Guide <user-guide-getting-started-search>`.
+
 
 .. include:: /include/include-images.rst
    :start-after: begin

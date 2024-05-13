@@ -35,11 +35,13 @@ To configure a matrix form view for a particular case:
 
 3. For **Product Views**, the options will look the following:
 
-    .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_page.png
+   .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_page.png
+       :alt: Different matrix form view options displayed on the product page in the storefront
 
 4. For **Product Listings**:
 
     .. image:: /user/img/system/config_commerce/product/matrix_view_on_product_listing.png
+       :alt: Different matrix form view options displayed on the product listing page in the storefront
 
 5. **Allow To Add Empty Products** --- If enabled, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use Organization** checkbox next to the option and then the checkbox of the option itself.
 
@@ -58,11 +60,13 @@ To configure the required settings for simple products variations:
 
    **Everywhere** --- With this option selected, all the simple products are displayed together with the configurable one on a product page, product listing, and a shopping list page.
 
-     .. image:: /user/img/system/config_commerce/product/display_simple_variations.png
+   .. image:: /user/img/system/config_commerce/product/display_simple_variations.png
+      :alt: A storefront product listing page displaying both configurable product and its variations
 
    **Hide Completely** --- The option hides all the simple products that belong to the configurable one on the product listing and search results pages enabling a customer to select only the configurable one.
 
-      .. image:: /user/img/system/config_commerce/product/hide_simple_variations.png
+   .. image:: /user/img/system/config_commerce/product/hide_simple_variations.png
+      :alt: A storefront product listing page displaying only the configurable product without variations
 
    **Hide from the catalog and search** --- The option hides all the simple products that belong to the configurable one on the product listing and search results pages. However, a customer can still order a required product variant through a quick order form or an RFQ even if such product is not displayed individually in the product catalog.
 

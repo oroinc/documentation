@@ -36,25 +36,19 @@ To configure the product image settings globally:
 
 .. _sys--commerce--product--product-images--image-preview--global:
 
-6. In the **Image Gallery Options** section, enable or disable product previews on product listing pages by simplifying product selection for customer.
+6. In the **Image Gallery Options** section, enable or disable product preview on product listing pages in the storefront.
 
    .. image:: /user/img/system/config_commerce/product/ImagePreviewGlobal.png
       :alt: Global image gallery options configuration settings
 
-   When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
+   **Enable Image Preview on Product Listing** - Enable the option to add the |ZoomIc| icon to the product image on the product listing page in the storefront which will open a pop up image gallery once clicked.
 
-   .. image:: /user/img/system/config_commerce/product/ImagePreviewEnabled.png
-      :alt: Illustration of the Enable Image Preview on Product Listing option in the storefront
-
-   When **Enable Image Preview on Product Listing** is disabled, clicking on the product image on the product listing page in the storefront will open the product page.
-
-   .. image:: /user/img/system/config_commerce/product/ImagePreviewDisabled.png
-      :alt: Illustration of the Enable Image Preview on Product Listing option disabled
-
-.. _sys--commerce--product--product-images--gallery-slider-global:
+    .. image:: /user/img/system/config_commerce/product/ImagePreviewStorefront.png
+      :alt: Illustration of the Enable Image Preview on Product Listing option in the storefront being enabled and disabled
 
 7. Click **Save Settings**.
 
 
-
+.. include:: /include/include-images.rst
+   :start-after: begin
 
