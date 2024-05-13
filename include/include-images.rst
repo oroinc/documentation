@@ -653,3 +653,7 @@ Images
 .. |IcRequestQuote| raw:: html
 
    <i class="fas fa-redo" aria-hidden="true"></i>
+
+.. |ZoomIc| raw:: html
+
+   <i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i>

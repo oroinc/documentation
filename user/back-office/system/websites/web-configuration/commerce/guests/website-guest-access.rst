@@ -3,6 +3,8 @@
 Configure Guest Website Access Settings per Website
 ===================================================
 
+.. hint:: This section is part of the :ref:`Guest Functions <concept-guides--product-management>` topic that provides a general understanding of the guest access concept in OroCommerce.
+
 To enable guest access per website:
 
 1. Navigate to **System > Websites**.

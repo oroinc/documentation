@@ -25,19 +25,15 @@ In the Product Images section of Commerce configuration settings, you can contro
    For example, the name of the file is **coffee_maker/bosch_#RND123.jpg**, the system-generated hash value is "media/cache/attachment/product_gallery_main/5bae287538.jpg". If the option is enabled, the file name will be displayed in the storefront as follows "media/cache/attachment/product_gallery_main/5bae287538-coffee-maker-bosch-RND123.jpg"
 
 
-6. In the **Image Gallery Options** section, enable or disable the required options.
+6. In the **Image Gallery Options** section, enable or disable product preview on product listing pages in the storefront.
 
-**Enable Image Preview on Product Listing**:
+   .. image:: /user/img/system/config_commerce/product/ImagePreviewGlobal.png
+      :alt: Global image gallery options configuration settings
 
-   * When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
+   **Enable Image Preview on Product Listing** - Enable the option to add the |ZoomIc| icon to the product image on the product listing page in the storefront which will open a pop up image gallery once clicked.
 
-     .. image:: /user/img/system/user_management/org_configuration/products/ImagePreviewOrgEnabled.png
-       :class: with-border
-
-   * When **Enable Image Preview on Product Listing** is disabled, clicking on the product image on the product listing page in the storefront will open the product page.
-
-    .. image:: /user/img/system/user_management/org_configuration/products/ImagePreviewOrgDisabled.png
-       :class: with-border
+    .. image:: /user/img/system/config_commerce/product/ImagePreviewStorefront.png
+      :alt: Illustration of the Enable Image Preview on Product Listing option in the storefront being enabled and disabled
 
     .. note:: When **Use System** checkbox is enabled, system settings are applied.
 

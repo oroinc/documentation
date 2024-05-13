@@ -36,10 +36,20 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 .. image:: /user/img/concept-guides/search/global-search-boost.png
    :alt: Global search boost in action
 
-* :ref:`Search Autocomplete <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates predictions based on searches that you start to type. It shows up-to-date product information, such as SKU, name, price, and inventory status. You can set the number of products to be displayed in the storefront search result dropdown on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
+* :ref:`Search Autocomplete <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates predictions based on searches that you start to type. It shows up-to-date product information, such as SKU, name, price, and inventory status. You can set the number of products and product categories to be displayed in the storefront search result dropdown on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
 
 .. image:: /user/img/concept-guides/search/storefront-autocomplete.png
    :alt: Search autocomplete illustration
+
+* ref:`Partial Product Search <configuration--guide--commerce--configuration--product-search>` - is a dynamic feature that allows customers to locate products through the global search and on the quick order form by simply inputting a fragment of the product name or description. With this feature, users can efficiently find products even when they only have a portion of the product's name or description in mind. This can significantly improve the user experience, streamlining the process of product discovery and selection. You can toggle the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
+
+.. image:: /user/img/concept-guides/search/partial-product-search.png
+   :alt: Partial Product Search illustration
+
+* ref:`Automatic Phrase Suggestions <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates suggested phrases as users type their search queries. By presenting users with these automatic suggestions, the feature helps guide them towards more accurate and relevant search results, reducing the likelihood of misspellings or ambiguous queries. You can also provide the number of suggested phrases to users. You can configure the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
+
+.. image:: /user/img/concept-guides/search/phrase-suggestions.png
+   :alt: Automatic Phrase Suggestions illustration
 
 * :ref:`Saved Search <my-account-saved-search>` - The feature is available in the OroCommerce Enterprise edition. It enables customer users to save their search queries, view these saved search queries under the Saved Searches menu in the customer user account. You can also configure the registered customers to receive notifications when a new product falls under the search conditions and when products from the search query result are back in stock. The configuration is available on the :ref:`global <configuration--guide--commerce--configuration--saved-search>`, :ref:`organization <organization-commerce--configuration--saved-search>`, and :ref:`website <configuration--website-commerce--search--saved-search>` levels.
 

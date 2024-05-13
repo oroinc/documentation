@@ -42,6 +42,7 @@ The default offsets for each multiplier are the following:
 To change all offsets, simply assign any value you want to the ``$base-spacing`` variable.
 
 .. code-block:: scss
+
      $base-spacing: 12px !default
 
 To update or add a specific multiplier, merge ``$spacing-multipliers`` with your ``$custom-spacing-multipliers``.

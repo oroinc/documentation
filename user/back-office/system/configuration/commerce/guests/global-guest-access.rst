@@ -6,6 +6,8 @@ Configure Global Website Access Settings
 
 .. begin
 
+.. hint:: This section is part of the :ref:`Guest Functions <sys--conf--commerce--guest>` topic that provides a general understanding of the guest access concept in OroCommerce.
+
 To prevent non-registered customers from accessing the OroCommerce storefront, you can disable website access by non-authenticated visitors. This can be done globally, :ref:`per organization <sys--conf--commerce--guest-access--org>` and :ref:`per website <sys--conf--commerce--guest-access--website>`:
 
 When guest access is disabled:

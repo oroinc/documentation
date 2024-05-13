@@ -41,10 +41,9 @@ To change the default global routing settings:
      .. image:: /user/img/system/config_system/visible_content_node.png
         :alt: The selected sub-menu nodes that will be visible in the storefront
 
-   * **Main Navigation Menu** - Select which :ref:`frontend menu <frontend-menus-overview>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
+   * **Main Navigation Menu** - Select which :ref:`frontend menu <menu-management-concept-guide>` will represent the :ref:`main menu <frontstore-guide--navigation-main-menu>` in the storefront.
 
      .. image:: /user/img/system/frontend_menu/main-navigation-menu.png
-        :scale: 35%
         :alt: Illustration of how changing Main Navigation Menu affects the storefront
 
   * **Homepage** - When no web catalog is available, you can choose any of the available landing pages as your homepage. Please note that on clean installations of Oro applications, the default homepage is blank.

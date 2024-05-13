@@ -94,7 +94,7 @@ To include configs in the resulting ``styles.css`` file, add them  to the ``asse
 
 The resulting ``styles.css`` file is the following:
 
-.. code-block:: css
+.. code-block:: none
 
    .input {
        padding: spacing('md') spacing('sm');

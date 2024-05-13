@@ -811,6 +811,7 @@ Using the helper to clear **inner floats**.
 Using the helper for the positioning of **pseudo-elements**.
 
 .. code-block:: none
+
     .block::after {
         @include after;
     }
@@ -830,6 +831,7 @@ Using the helper function for managing **z-index** stacking
 Using the helper mixin for organizing **media** queries
 
 .. code-block:: none
+
     @include breakpoint('tablet') {
         // styles for tablet version
     }

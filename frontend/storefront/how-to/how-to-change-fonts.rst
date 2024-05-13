@@ -221,7 +221,8 @@ You can split the font into Unicode subsets. For example, you can use |glyphhang
 
 3. Upload the of the new fonts and configure ``typography`` by overriding the default ``font-awesome`` section ``_typography.scss`` in your custom ``typography`` config:
 
-.. code-block:: scss
+.. code-block:: none
+
     @use 'sass:map';
 
     $theme-custom-fonts: (

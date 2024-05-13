@@ -4,10 +4,31 @@
 Configure Settings for Product Promotions per Organization
 ==========================================================
 
-In the Promotions section of Commerce configuration settings, you can enable new product icons and configure the new arrivals block for the storefront per organization. You can also enable them :ref:`globally <configuration--guide--commerce--configuration--promotions>` and :ref:`per website <sys--websites--commerce--products--new-arrivals>`.
+The Promotions configuration settings can be enabled :ref:`globally <configuration--guide--commerce--configuration--promotions>`, per organization, and :ref:`website <sys--websites--commerce--products--new-arrivals>`.
+
+
+Enable New Product Icons per Organization
+-----------------------------------------
+
+On the Product Promotions configuration page, you can enable **New** product icon to be displayed on the product details page.
+
+1. Navigate to **System > User Management > Organizations** in the main menu.
+2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click the |IcConfig| **Configuration** icon to start editing the configuration.
+3. Select **Commerce > Product > Promotions** in the menu to the left.
+4. To customize the option configuration, clear the **Use System** checkbox to override the system-wide configuration.
+5. In the **New Product Icons** section, select *Yes* or *No* in the **Show on Product View** list to enable or disable new product icon on the product details page.
+
+.. image:: /user/img/system/config_commerce/product/new-product-icon.png
+   :alt: A new icon is displayed on the product details page
+
+
+Configure New Arrivals per Organization (Version 5.1 and Below)
+---------------------------------------------------------------
+
+.. important:: The configuration applies to OroCommerce version 5.1 and below. To configure the new arrivals products block for the **Refreshing Teal** theme, please refer to the :ref:`related documentation <concept-guides--product-management--new-arrivals-products>`.
 
 Prerequisites
--------------
+^^^^^^^^^^^^^
 
 Before enabling the new product icons and new arrivals segment, make sure you have performed the following actions:
 
@@ -15,8 +36,9 @@ Before enabling the new product icons and new arrivals segment, make sure you ha
 
 2. Create a new arrivals segment under **Reports & Segments > Manage Segments** as described in the :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
 
-Configure New Arrivals per Organization
----------------------------------------
+
+Configuration
+^^^^^^^^^^^^^
 
 To set up the new arrivals icons and segment per organization:
 
@@ -30,9 +52,7 @@ To set up the new arrivals icons and segment per organization:
    .. image:: /user/img/system/user_management/org_configuration/products/NewArrivalsBlockOrg.png
       :alt: New arrivals configuration per organization
 
-4. In the **New Product Icons**, clear the **Use System** checkbox and select *Yes* in the **Show on Product View** list to enable new product icons. To disable the icons, select *No*.
-
-5. In the **New Arrivals** section provide the following information:
+4. In the **New Arrivals** section provide the following information:
 
    * **Product Segment** -- Select the segment that will include the items to be featured in the **New Arrivals** block.
 
@@ -45,7 +65,7 @@ To set up the new arrivals icons and segment per organization:
 
    * **Use Slider On Mobile** -- When the slider is enabled, the block occupies less screen space, while showing larger product images.
 
-6. Click **Save Settings**.
+5. Click **Save Settings**.
 
 
 .. include:: /include/include-images.rst

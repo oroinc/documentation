@@ -3,6 +3,8 @@
 Configure Related Items Settings per Organization
 =================================================
 
+.. hint:: This section is part of the :ref:`Product Recommendations <user-guide--products--recommendations>` topic that provides a general understanding of personalized and relevant product suggestions concept in OroCommerce.
+
 In the Related Items section, you can configure the settings for related, up-sell, and similar products for a particular organization. These settings may apply :ref:`globally <sys--commerce--catalog--relate-products--main>`, per organization,  and per :ref:`website <sys--websites--commerce--catalog--related-products>`.
 
 .. note:: Before configuring the related items settings, add the required related and up-sell products to the desired products as described in the :ref:`Add Related Items <products--related-items>` topic. Similar products are displayed automatically following the similar product calculation algorithm.
