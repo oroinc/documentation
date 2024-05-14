@@ -831,6 +831,25 @@ If source file extension is not allowed, the appropriate notification is display
 
 .. important:: Once you have uploaded the images via FTP/SFTP and moved them to the right location for the image import, please run :ref:`images import via the UI <user-guide-import-product-images>`, as this assigns the images to the products and makes them available in the asset library.
 
+Media Delete
+~~~~~~~~~~~~
+
+This command removes the file or files within the designated folder recursively using the provided destination.
+
+To delete a file from the `uploads` destination, use
+
+.. code-block:: none
+
+    orocloud-cli media:delete --adapter=uploads consents.pdf
+
+To delete folder files from the `uploads` destination recursively, use
+
+.. code-block:: none
+
+    orocloud-cli media:delete --adapter=uploads consent_documents
+
+In both cases, the information about deleted files is revealed during the execution of the command.
+
 RabbitMQ Commands
 -----------------
 
