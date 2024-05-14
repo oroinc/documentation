@@ -205,7 +205,9 @@ Custom maintenance pages, error pages (403, 451, 501, 502), error pages path, we
         consumers_debug_mode: true
 
 
-The ``maintenance_page``, ``error_pages_path`` and ``error_pages`` are relative paths to files in the application repository. When modified, changes are applied after the `deploy` or `upgrade` operation in approximately 10 minutes.
+The ``maintenance_page``, ``error_pages_path`` and ``error_pages`` are relative paths to files in the application repository.
+
+Valid changes are applied within 10 minutes or automatically during deployments.
 
 .. note:: Changing the ``web_backend_prefix`` value without notifying the Cloud team can break the back-office of the application. Make sure you create a request to the Service Desk before making any changes. You can also change the value without creating a request. In this case, you should wait for approximately 30 min and then, run ``upgrade:source`` to apply changes.
 
@@ -378,7 +380,7 @@ Examples:
 
 Old URL values in redirects are case insensitive and must not contain duplicates.
 
-When modified, changes are applied after the `deploy` or `upgrade` operation in approximately 10 minutes
+Valid changes are applied within 10 minutes or automatically during deployments.
 
 X Frame Header Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
