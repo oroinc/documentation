@@ -20,7 +20,7 @@ Operation Configuration
 All operations can be described in the ``actions.yml`` configuration file under the corresponding bundle in the `config/oro` resource directory.
 Below is an example of a simple operation configuration that performs an execution logic with the MyEntity entity.
 
-.. oro_integrity_check:: 4718b0fdea5cbb2fb4b8bcbff6046ccc514a2821
+.. oro_integrity_check:: b2be0a9d4c3b964079173bed30eb4460c5be11ac
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
