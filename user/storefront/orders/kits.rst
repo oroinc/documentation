@@ -35,7 +35,7 @@ This information will be preserved in the order details under **Order History** 
 
 .. note::
 
-      Remember that you will not be able to сomplete a :ref:`quick order form <frontstore-guide--orders-quick-order>` if you have a product kit in your order, as product kits require configuration that the quick order form does not support. You can still proceed to the checkout via a shopping list or create a quote.
+      Remember that you will not be able to complete a :ref:`quick order form <frontstore-guide--orders-quick-order>` if you have a product kit in your order, as product kits require configuration that the quick order form does not support. You can still proceed to the checkout via a shopping list or create a quote.
 
       .. image:: /user/img/storefront/orders/product-kits-in-quick-order-form.png
          :alt: Display the disabled Create Order button when the product kit item

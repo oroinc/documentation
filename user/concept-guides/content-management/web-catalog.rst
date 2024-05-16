@@ -129,7 +129,7 @@ The following table summarizes the difference between a master catalog and a web
    :header: "Master Catalog","Web Catalog","Notes"
    :widths: 5, 5, 30
 
-   "store.com/ [categories]","store.com/ [nodes]","A link to the same product can have two different URL addresses, depending on whether a master catalog (store.com/category/subсategory...) or a web catalog category (store.com/2nd-level-node/3rd-level-node) has been connected to a storefront page."
+   "store.com/ [categories]","store.com/ [nodes]","A link to the same product can have two different URL addresses, depending on whether a master catalog (store.com/category/subcategory...) or a web catalog category (store.com/2nd-level-node/3rd-level-node) has been connected to a storefront page."
 
 .. csv-table:: Personalization
    :header: "Master Catalog","Web Catalog","Notes"

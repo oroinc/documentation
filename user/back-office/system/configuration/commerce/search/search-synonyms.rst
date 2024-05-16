@@ -12,7 +12,7 @@ To enable synonyms globally:
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. Сlear the **Use Default** checkbox.
+3. Clear the **Use Default** checkbox.
 4. Select the **Enable Search Synonyms** checkbox to add the ability to search for synonyms during the full-text search in the storefront.
 5. Click **Save Settings**.
 

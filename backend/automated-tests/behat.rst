@@ -226,7 +226,7 @@ Every bundle has its dedicated test suite that can be run separately:
 
     php bin/behat -s OroUserBundle
 
-Running Сonsumers
+Running Consumers
 ~~~~~~~~~~~~~~~~~
 
 To run multiple consumers during behat tests, you can use the ``--consumers`` option in ``php bin/behat``, which applies an integer argument, for example:

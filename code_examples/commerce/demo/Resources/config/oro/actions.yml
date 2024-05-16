@@ -53,7 +53,7 @@ operations: # root elements
         button_options:                                 # (optional) display options for operation button
             icon: fa-check                              # (optional) class of button icon
             class: btn                                  # (optional) class of button
-            group: aсme.demo.operations.demogroup.label # (optional) group operation to drop-down on the label
+            group: acme.demo.operations.demogroup.label # (optional) group operation to drop-down on the label
             template: '@OroAction/Operation/button.html.twig'   # (optional) custom button template
             data:                                               # custom data attributes which will be added to button
                 param: value
@@ -63,9 +63,9 @@ operations: # root elements
                 component_name: '[name$="[component]"]'
                 component_additional: '[name$="[additional]"]'
         frontend_options:                                                 # (optional) display options for operation button
-            confirmation: aсme.demo.operations.operation_perform_confirm
+            confirmation: acme.demo.operations.operation_perform_confirm
             template: '@OroAction/Operation/form.html.twig'               # (optional) custom template, can be used both for page or dialog
-            title: aсme.demo.operations.dialog.title                      # (optional) custom title
+            title: acme.demo.operations.dialog.title                      # (optional) custom title
             title_parameters:
                 '%%some_param%%': $.paramValue
             options:                                                      # (optional) modal dialog options

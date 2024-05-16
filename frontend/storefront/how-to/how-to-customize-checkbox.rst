@@ -1,6 +1,6 @@
 .. _how-to-customize-checkbox:
 
-How to Сustomize Сheckboxes
+How to Customize Checkboxes
 ===========================
 
 To customize checkboxes, change the following base variables:
