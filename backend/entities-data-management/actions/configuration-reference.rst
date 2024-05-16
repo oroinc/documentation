@@ -125,7 +125,7 @@ A single operation configuration has the following properties:
 Example
 ^^^^^^^
 
-.. oro_integrity_check:: 4d1f28c1718c2582e8ee10e3b6354eb2401c7910
+.. oro_integrity_check:: 23106c4ff0f63c6ca5ab7a1c79baa292a4f859e8
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
@@ -188,7 +188,7 @@ Button Options configuration has the following options:
 Example
 ^^^^^^^
 
-.. oro_integrity_check:: d30aa1713833eb0f603ce384402e0e41d044aab9
+.. oro_integrity_check:: 0abbebce34c45dd2eeae86a89395cc61aad58d55
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
@@ -217,7 +217,7 @@ Frontend Options configuration has the following options:
 Example
 ^^^^^^^
 
-.. oro_integrity_check:: a4af9bdfab091ec9f9ae3a3125ba3841d9fafd60
+.. oro_integrity_check:: ce2da4623b97b6c7780553b40bb379cfc848eec9
 
     .. literalinclude:: /code_examples/commerce/demo/Resources/config/oro/actions.yml
         :caption: src/Acme/Bundle/DemoBundle/Resources/config/oro/actions.yml
