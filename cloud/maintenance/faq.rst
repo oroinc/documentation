@@ -30,7 +30,7 @@ How do I know what OroCloud operation does?
 
 You can run any OroCloud command in verbose mode via the -vvv option. With this option, OroCloud commands will echo the commands being executed into the console output.
 
-How сan I find supported options for each command?
+How can I find supported options for each command?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can run any OroCloud command with the help option (--help or -h) to see the command options documentation.

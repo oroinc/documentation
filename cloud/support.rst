@@ -148,7 +148,7 @@ The following checklist provides the typical activities that you need to perform
     * User's first and last name
     * Email
     * Company","1-2"
-   "**Message queue configuration**", "Сonfiguration of message queues for your OroCloud environment to ensure optimal system performance, for example by segregating messages on pricing calculation and reindexation into a separate message queue with its own consumers. Read more about how we configure message queues for local environments at :ref:`Configure Message Queue with RabbitMQ for Production <op-structure--mq--rabbitmq--configure>`", "Message queue configuration preferences","1-2"
+   "**Message queue configuration**", "Configuration of message queues for your OroCloud environment to ensure optimal system performance, for example by segregating messages on pricing calculation and reindexation into a separate message queue with its own consumers. Read more about how we configure message queues for local environments at :ref:`Configure Message Queue with RabbitMQ for Production <op-structure--mq--rabbitmq--configure>`", "Message queue configuration preferences","1-2"
    "**Resources configuration**", "Configuration of the application based on the estimated volume of data and media files to ensure optimal system performance", "
     * Expected data volume
     * Overall number of consumers and queues

@@ -17,7 +17,7 @@ To display a list of tasks on the dashboard with the most recent tasks:
 
 #. :ref:`Create a Twig template <cookbook-entities-dashboard-template>` that renders the grid.
 
-#. :ref:`Сonfigure <cookbook-entities-dashboard-config>` the dashboard widget by telling it which template to render.
+#. :ref:`Configure <cookbook-entities-dashboard-config>` the dashboard widget by telling it which template to render.
 
 .. _cookbook-entities-dashboard-grid:
 

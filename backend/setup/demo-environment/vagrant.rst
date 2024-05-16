@@ -185,7 +185,7 @@ the Vagrantfile. The default credentials are *dbuser:DBP@ssword123*.
 
 To access the database from the host machine, configure and use the SSH connection to the guest machine database server, as described in the `SSH Access to the Virtual Machine`_ section above.
 
-Vagrant Сommands
+Vagrant Commands
 ^^^^^^^^^^^^^^^^
 
 * `vagrant up` -- Creates and configures the virtual machine according to the Vagrantfile. Unless `vagrant destroy` has been launched on consecutive runs, `vagrant up` powers on the virtual machine. The provisioning script defined in the `config.vm.provision` variable in the Vagrantfile is run only once.

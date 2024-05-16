@@ -30,7 +30,7 @@ The following categories of settings are available for system configuration (fol
     * :ref:`Routing <sys--config--sysconfig--websites--routing>`
     * :ref:`Sitemap <sys--config--sysconfig--websites--sitemap>`
 
-* :ref:`Commerce Сonfiguration <configuration--guide--commerce--configuration>`
+* :ref:`Commerce Configuration <configuration--guide--commerce--configuration>`
 
   * Catalog
 

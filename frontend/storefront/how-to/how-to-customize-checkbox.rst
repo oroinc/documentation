@@ -2,7 +2,7 @@
 
 .. warning:: The documentation you are viewing is accurate for OroCommerce version 5.1 and below. An updated guide for version 6.0 will be available soon.
 
-How to Сustomize Сheckboxes
+How to Customize Checkboxes
 ===========================
 
 To customize checkboxes, change the following base variables:

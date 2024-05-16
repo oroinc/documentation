@@ -15,7 +15,7 @@ To configure the search stop words settings globally:
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. Сlear the **Use Default** checkbox.
+3. Clear the **Use Default** checkbox.
 4. Provide a list of stop words that you want to be ignored by the search engine in the OroCommerce storefront to improve the quality of the search results.
 5. Click **Save Settings**.
 
