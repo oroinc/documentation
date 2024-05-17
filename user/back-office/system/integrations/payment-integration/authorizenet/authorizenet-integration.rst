@@ -52,19 +52,19 @@ To set up integration with Authorize.Net, complete the following:
    * **Bank Account Types** --- Bank account types to be available for the eCheck checkout (e.g., a savings or checking account).
    * **Confirmation Text** --- The confirmation text provided in this field is displayed to the user when they choose eCheck as a payment option.
 
-   .. image:: /user/img/system/integrations/authorizenet/echeck_confirmation_text.png
+   .. image:: /user/img/storefront/cim/new_bank_account_at_checkout.png
       :alt: eCheck payment method at checkout
 
 7. In the **CIM** section, provide the following information:
 
-   .. image:: /user/img/system/integrations/authorizenet/cim_form_management_console.png
+   .. image:: /user/img/storefront/cim/manage_payment_profiles2.png
       :alt: CIM section in the back-office
 
    * **Enable CIM** --- Click this checkbox to enable |Customer Information Manager Integration|. When the integration is enabled, the :ref:`Manage Payment Profiles <frontstore-guide--cim>` section is added to the Account menu in the storefront.
 
    * **CIM Websites** --- Select the websites for which you wish to enable Customer Information Manager integration.
 
-   .. image:: /user/img/system/integrations/authorizenet/cim_storefront_account.png
+   .. image:: /user/img/storefront/cim/manage_payment_profiles2.png
       :alt: Manage Payment Profiles section in the storefront
 
 6. In the **Advanced Settings** section provide the following information:

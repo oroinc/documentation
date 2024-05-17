@@ -33,14 +33,14 @@ To configure multi shipping globally:
    .. image:: /user/img/system/config_commerce/sales/multi-shipping-global.png
       :alt: Global multi shipping configuration settings
 
-   * **Enable Grouping Of Line Items During Checkout** --- When enabled, line items during checkout are displayed in groups divided by specific criteria (e.g., ID, category, brand, organization etc). This option may affect shipping rules and discount calculations (see other configuration options).
+* **Enable Grouping Of Line Items During Checkout** --- When enabled, line items during checkout are displayed in groups divided by specific criteria (e.g., ID, category, brand, organization etc). This option may affect shipping rules and discount calculations (see other configuration options).
 
-     * *Group Line Items By* --- Select if you want to group line items per ID, category, brand, or parent product.
-     * *Create Sub-Orders For Each Group* --- When enabled, in addition to the main order, the system will create respective sub-orders for each group of line items in the back-office. Storefront customers, however, will see only primary orders in their order history.
+   * *Group Line Items By* --- Select if you want to group line items per ID, category, brand, or parent product.
+   * *Create Sub-Orders For Each Group* --- When enabled, in addition to the main order, the system will create respective sub-orders for each group of line items in the back-office. Storefront customers, however, will see only primary orders in their order history.
 
 6. In the **Order History Options** section, configure the following options:
 
-     * *Show Sub-Orders In Order History* --- When enabled, customers can see only sub-orders in their order history. Primary orders will be hidden.
-     * *Show Main Orders In Order History* --- When enabled, customers can see both the primary order and its sub-orders in their order history.
+   * *Show Sub-Orders In Order History* --- When enabled, customers can see only sub-orders in their order history. Primary orders will be hidden.
+   * *Show Main Orders In Order History* --- When enabled, customers can see both the primary order and its sub-orders in their order history.
 
 7. Click **Save Settings**.

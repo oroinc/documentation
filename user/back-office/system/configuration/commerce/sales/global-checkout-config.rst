@@ -28,12 +28,12 @@ To configure checkout options globally:
 
    * **Maximum Line Items per Page** --- Set the number of line items to display on the checkout page. The provided value will be used as the implied maximum number of checkout line items to display at once. If the number of checkout line items exceeds this value, the "Show All Items" will no longer be available and this number will be shown as the maximum pager value.
 
-   * **Apple Pay Domain Verification** --- Apple Pay in offered as part of the integration with :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`. Domain verification is one of the required prerequisites for Apple Pay to work. Whether Apple Pay will be offered as a payment option during checkout depends on what payment integrations are allowed on a specific website by the :ref:`payment rules <sys--payment-rules>`.
+   * **Apple Pay Domain Verification** --- Apple Pay is offered as part of the integration with :ref:`Stripe <user-guide--payment--payment-providers-stripe--overview>`. Domain verification is one of the required prerequisites for Apple Pay to work. Whether Apple Pay will be offered as a payment option during checkout depends on what payment integrations are allowed on a specific website by the :ref:`payment rules <sys--payment-rules>`.
 
 4. In the **Customer Users Registration** section, configure checkout options for the registered users:
 
-   a) **Allow Registration** ---  when the option is enabled, registration is allowed for customers on the checkout page.
-   b) **Allow Checkout without Email Confirmation** --- when the option is enabled, customers proceed to the checkout immediately once registration details are provided. When this option is disabled, the checkout does not start until the user confirms their email address.
+   * **Allow Registration** ---  when the option is enabled, registration is allowed for customers on the checkout page.
+   * **Allow Checkout without Email Confirmation** --- when the option is enabled, customers proceed to the checkout immediately once registration details are provided. When this option is disabled, the checkout does not start until the user confirms their email address.
 
 5. In the **Guest Checkout** section, set whether guest checkout should be enabled or disabled.
 

@@ -44,7 +44,7 @@ Storefront Menu Components
 The storefront menu functionality consists of several components that are supplied with the necessary settings to make up the navigation of your website storefront and to enable visitors to know where they are, where they can go, and where they have already been. You can :ref:`modify the default configuration <user-guide--system--menu--menu-frontend>` to add new menu items, exclude some items from the specific devices, set visibility conditions to certain customer groups, or according to particular config values.
 
 .. image:: /user/img/concept-guides/menus/frontend_menu_list.png
-   :alt: A list of all available storefront menu items in the storefront
+   :alt: A list of all available storefront menu items
 
 You can configure each of the following menu elements on five different levels: :ref:`global <frontend-menu-globally>`, :ref:`organization <frontend-menu-organization>`, :ref:`website <frontend-menus-website>`, :ref:`customer group <frontend-menus-customer-group>`, and a :ref:`customer <frontend-menus-customer>`. Always keep an eye on the fallback logic, which means that the values set on a lower level (e.g., customer level) would always prevail and override the configuration set on the higher level.
 

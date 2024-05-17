@@ -40,7 +40,7 @@ To configure the request for quote settings globally:
    * the owner of the customer user
    * the owner of the customer
 
-   For the aforementioned parties the options are the following:
+For the aforementioned parties the options are the following:
 
    * Select **Always** to notify the related entity each time an RFQ is submitted.
    * Select **If user has no sales reps assigned** to notify the related entity only in case they do not have any assigned sales representatives.

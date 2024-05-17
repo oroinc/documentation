@@ -3,6 +3,8 @@
 Configure Global Search Stop Words Settings
 ===========================================
 
+.. hint:: Read :ref:`Search Functions Concept Guide <user-guide-getting-started-search>` to get a general understanding of the search functionality in OroCommerce.
+
 .. note:: You can configure search stop words globally and per :ref:`website <configuration--website-commerce--search--stop-words>`.
 
 .. image:: /user/img/system/config_commerce/search/stop-words-global-config.png
