@@ -12,5 +12,6 @@ oro_behat_extension:
         - Oro\Bundle\NavigationBundle\Tests\Behat\Context\FeatureContext
         - Oro\Bundle\FormBundle\Tests\Behat\Context\WysiwygContext
         - Oro\Bundle\CMSBundle\Tests\Behat\Context\FeatureContext
+        - Oro\Bundle\ApplicationBundle\Tests\Behat\Context\CommerceMainContext
       paths:
         - '@AcmeCopyrightBundle/Tests/Behat/Features'
