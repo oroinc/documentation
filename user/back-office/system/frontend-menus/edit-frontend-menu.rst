@@ -5,8 +5,8 @@ Change a Storefront Menu
 
 To update the storefront menu contents, navigate to **System > Frontend Menus** in the main menu and click the menu name or the |IcView| View icon in the corresponding row of the storefront menu list.
 
-.. image:: /user/img/system/frontend_menu/frontend_menu_1.png
-   :alt: A lust of available storefront menu items
+.. image:: /user/img/concept-guides/menus/frontend_menu_list.png
+   :alt: A list of all available storefront menu items
 
 On the page that opens, the menu item tree is displayed in the left panel. The center is reserved for the menu item configuration.
 

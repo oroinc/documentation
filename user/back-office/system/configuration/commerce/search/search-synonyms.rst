@@ -3,6 +3,9 @@
 Configure Global Synonym Search Settings
 ========================================
 
+.. hint:: Read :ref:`Search Functions Concept Guide <user-guide-getting-started-search>` to get a general understanding of the search functionality in OroCommerce.
+
+
 In OroCommerce Enterprise Edition, you can :ref:`create a synonym group <user-guide-search-synonyms>` where a search for one word from this group in the OroCommerce storefront would return results for all the synonyms in this group. Synonym management is enabled globally and :ref:`per website <configuration--website-commerce--search--synonyms>` in the system configuration, and subsequently managed through **Marketing > Search > Search Synonyms** in the main menu.
 
 To enable synonyms globally:

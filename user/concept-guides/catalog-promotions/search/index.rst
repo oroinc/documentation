@@ -41,12 +41,12 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 .. image:: /user/img/concept-guides/search/storefront-autocomplete.png
    :alt: Search autocomplete illustration
 
-* ref:`Partial Product Search <configuration--guide--commerce--configuration--product-search>` - is a dynamic feature that allows customers to locate products through the global search and on the quick order form by simply inputting a fragment of the product name or description. With this feature, users can efficiently find products even when they only have a portion of the product's name or description in mind. This can significantly improve the user experience, streamlining the process of product discovery and selection. You can toggle the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
+* :ref:`Partial Product Search <configuration--guide--commerce--configuration--product-search>` - is a dynamic feature that allows customers to locate products through the global search and on the quick order form by simply inputting a fragment of the product name or description. With this feature, users can efficiently find products even when they only have a portion of the product's name or description in mind. This can significantly improve the user experience, streamlining the process of product discovery and selection. You can toggle the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
 
 .. image:: /user/img/concept-guides/search/partial-product-search.png
    :alt: Partial Product Search illustration
 
-* ref:`Automatic Phrase Suggestions <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates suggested phrases as users type their search queries. By presenting users with these automatic suggestions, the feature helps guide them towards more accurate and relevant search results, reducing the likelihood of misspellings or ambiguous queries. You can also provide the number of suggested phrases to users. You can configure the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
+* :ref:`Automatic Phrase Suggestions <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates suggested phrases as users type their search queries. By presenting users with these automatic suggestions, the feature helps guide them towards more accurate and relevant search results, reducing the likelihood of misspellings or ambiguous queries. You can also provide the number of suggested phrases to users. You can configure the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
 
 .. image:: /user/img/concept-guides/search/phrase-suggestions.png
    :alt: Automatic Phrase Suggestions illustration
@@ -75,6 +75,11 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 
 .. image:: /user/img/marketing/search/search-items-grid.png
    :alt: Search history grid in the back-office
+
+* :ref:`Stop Words <configuration--guide--commerce--configuration--stop-words>` - Provide a list of stop words that you want to be ignored by the search engine in the OroCommerce storefront to improve the quality of the search results. The feature can be configured globally and :ref:`per website <configuration--website-commerce--search--stop-words>`.
+
+.. image:: /user/img/system/config_commerce/search/stop-words-global-config.png
+   :alt: Global configuration settings for stop words in the storefront
 
 
 

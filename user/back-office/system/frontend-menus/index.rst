@@ -10,10 +10,15 @@ Configure Storefront Menus in the Back-Office
 
 Storefront menu in OroCommerce allows users to navigate your website and easily access product collections, their account, shopping cart, and other essential information. There are several types of menus available for the storefront, described in the :ref:`Storefront Menu Components section <menu-management-concept-guide>`.
 
-.. image:: /user/img/system/frontend_menu/frontend_menu_1.png
-   :alt: A list of all storefront menu items
+.. image:: /user/img/concept-guides/menus/frontend_menu_list.png
+   :alt: A list of all available storefront menu items
 
-You can customize the way your storefront menus look globally (see below), per organization, per website, per customer, and per customer group.
+To learn how to configure them on other levels, follow the links below:
+
+* :ref:`Customize Storefront Menus per Organization <frontend-menu-organization>`
+* :ref:`Customize Storefront Menus per Website <frontend-menus-website>`
+* :ref:`Customize Storefront Menus per Customer <frontend-menus-customer>`
+* :ref:`Customize Storefront Menus per Customer Group <frontend-menus-customer-group>`
 
 To configure a default storefront menu globally:
 
@@ -22,12 +27,7 @@ To configure a default storefront menu globally:
 3. Update the menu contents following the guidelines provided in the :ref:`Edit a Storefront Menu <user-guide--system--menu--menu-frontend>` section.
    The changes apply automatically.
 
-To learn how to configure them on other levels, follow the links below:
 
-* :ref:`Customize Storefront Menus per Organization <frontend-menu-organization>`
-* :ref:`Customize Storefront Menus per Website <frontend-menus-website>`
-* :ref:`Customize Storefront Menus per Customer <frontend-menus-customer>`
-* :ref:`Customize Storefront Menus per Customer Group <frontend-menus-customer-group>`
 
 Configure Permissions to Customize Storefront Menus
 ---------------------------------------------------

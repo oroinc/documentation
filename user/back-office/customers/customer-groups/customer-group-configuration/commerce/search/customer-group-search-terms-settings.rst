@@ -3,6 +3,8 @@
 Configure Search History Settings per Customer Group
 ====================================================
 
+.. hint:: Read :ref:`Search Functions Concept Guide <user-guide-getting-started-search>` to get a general understanding of the search functionality in OroCommerce.
+
 .. note:: You can configure search history globally, :ref:`per organization <organization-commerce--configuration--search-history>`, :ref:`website <configuration--website-commerce--search--history>`, customer group, or :ref:`customer <user-guide--customers--search--settings>`.
 
 Search History enables users to view a history of all searches performed in the storefront.

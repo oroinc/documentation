@@ -3,6 +3,9 @@
 Configure Search History Settings per Website
 =============================================
 
+.. hint:: Read :ref:`Search Functions Concept Guide <user-guide-getting-started-search>` to get a general understanding of the search functionality in OroCommerce.
+
+
 .. note:: You can configure search history :ref:`globally <configuration--guide--commerce--configuration--search-history>`,:ref:`per organization <organization-commerce--configuration--search-history>`, :ref:`customer group <user-guide--customer-groups--configuration--settings--search>`, or :ref:`customer <user-guide--customers--search--settings>`.
 
 To configure the search history settings per website:
