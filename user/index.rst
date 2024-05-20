@@ -10,33 +10,58 @@ User Documentation
 
 Oro Online User Documentation is an aggregated and structured knowledge base of information on OroCommerce application. It is designed for all business users work who with the application UI.
 
-Oro User Documentation is split into four sections, each delivering user-specific content in different ways:
+Oro User Documentation is split into five sections, each delivering user-specific content in different ways:
 
 .. raw:: html
 
-   <h2><a href="concept-guides/">Concept Guides</a></h2>
-   <p>Concept Guides provide overviews of features and use-cases, help out with a general understanding of large topics.</p>
+    <ul class="icons-list">
+        <li>
+            <div class="icon">
+                <img src="../_static/images/business-and-finance.svg" alt="" role="presentation">
+            </div>
+            <div class="items-body">
+                <p class="first"><a class="reference internal" href="concept-guides/"><span class="std std-ref">Concept Guides</span></a></p>
+                <p>Concept Guides provide overviews of features and use-cases, help out with a general understanding of large topics.</p>
+            </div>
+        </li>
+        <li>
+            <div class="icon">
+                <img src="../_static/images/interface.svg" alt="" role="presentation">
+            </div>
+            <div class="items-body">
+                <p class="first"><a class="reference internal" href="back-office/"><span class="std std-ref">Back-Office</span></a></p>
+                <p>Back-office documentation contains how-to topics grouped into sections that mirror the structure of back-office user interface.</p>
+            </div>
+        </li>
+        <li>
+            <div class="icon">
+                <img src="../_static/images/icon-demo.png" alt="" role="presentation">
+            </div>
+            <div class="items-body">
+                <p class="first"><a class="reference internal" href="storefront/"><span class="std std-ref">Commerce Storefront</span></a></p>
+                <p>Commerce Storefront documentation illustrates how to navigate, browse, and interact with the default OroCommerce storefront.</p>
+            </div>
+        </li>
+        <li>
+            <div class="icon">
+                <img src="../_static/images/web.svg" alt="" role="presentation">
+            </div>
+            <div class="items-body">
+                <p class="first"><a class="reference internal" href="integrations/"><span class="std std-ref">Integrations</span></a></p>
+                <p>Oro Integrations documentation provides information on the types of integrations Oro applications support and can be integrated with to streamline data exchange and enhance operational efficiency.</p>
+            </div>
+        </li>
+        <li>
+            <div class="icon">
+                <img src="../_static/images/communication.svg" alt="" role="presentation">
+            </div>
+            <div class="items-body">
+                <p class="first"><a class="reference internal" href="glossary/"><span class="std std-ref">Glossary</span></a></p>
+                <p>Glossary is an alphabetical list of OroCommerce terms used throughout the documentation.</p>
+            </div>
+        </li>
+    </ul>
 
-.. raw:: html
-
-   <h2><a href="back-office/">Back-Office</a></h2>
-   <p>Back-office documentation contains how-to topics grouped into sections that mirror the structure of back-office user interface.</p>
-
-.. raw:: html
-
-   <h2><a href="storefront/">Commerce Storefront</a></h2>
-   <p>Commerce Storefront documentation illustrates how to navigate, browse, and interact with the default OroCommerce storefront.</p>
-
-.. raw:: html
-
-   <h2><a href="integrations/">Integrations</a></h2>
-   <p>Oro Integrations documentation provides information on the types of integrations Oro applications support and can be integrated with to streamline data exchange and enhance operational efficiency.</p>
-
-
-.. raw:: html
-
-   <h2><a href="glossary/">Glossary</a></h2>
-   <p>Glossary is an alphabetical list of OroCommerce terms used throughout the documentation.</p>
 
 .. admonition:: Business Tip
 
@@ -57,7 +82,3 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
-
-
-
-
