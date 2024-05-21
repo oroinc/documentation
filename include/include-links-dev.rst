@@ -6056,6 +6056,11 @@ Links (Dev)
 
    <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>
 
+.. |OroWebsiteSearchBundle| raw:: html
+
+    <a href="https://github.com/oroinc/orocommerce/tree/5.0/src/Oro/Bundle/WebsiteSearchBundle" target="_blank">OroWebsiteSearchBundle</a>
+
 .. |OroSearchBundle| raw:: html
 
     <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/SearchBundle" target="_blank">OroSearchBundle</a>
+
