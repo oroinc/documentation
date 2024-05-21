@@ -1,62 +1,63 @@
 Backend Developer Guide
 =======================
 
-Backend Developer Guide is an essential resource for developers that provides comprehensive documentation on how to install, customize, and maintain Oro applications by making the relevant code-level changes. Navigate the guide to learn how to configure Oro applications to accomplish a broad range of tasks required for organizations to run the business and interact with customers successfully.
+Backend Developer Guide is an essential resource for developers that provides comprehensive documentation on how to install, customize, and maintain Oro applications by making the relevant code-level changes. Use the menu on the left to navigate the guide and learn how to configure Oro applications to accomplish a broad range of tasks required for organizations to run the business and interact with customers successfully.
 
 .. raw:: html
 
-    <div class="guideline guideline--backend">
-      <div class="guideline__item">
-          <div>
-            <h2>Setup</h2>
+   <div class="showcase-section">
+          <div class="showcase-section-heading">
           </div>
-          <div style="overflow: hidden;width: 70%;height:100%;text-align: left">
-          <p>Configure dev and prod environments for Oro applications, install and upgrade them to a new version.</p>
-               <ul class="guideline__list">
-                   <li><a class="reference internal" href="setup/system-requirements/">System Requirements</a></li>
-                   <li><a class="reference internal" href="setup/dev-environment/">Dev Environment</a></li>
-                   <li><a class="reference internal" href="setup/demo-environment/">Demo Environment</a></li>
-                   <li><a class="reference internal" href="setup/installation/">Installation</a></li>
-                   <li><a class="reference internal" href="setup/upgrade-to-new-version/">Upgrade</a></li>
-                   <li><a class="reference internal" href="setup/reinstall/">Reinstall</a></li>
-                </ul>
-          </div>
-      </div>
+          <div class="showcase-section-body">
+              <ul class="grid-list">
+                  <li>
+                      <div class="text-center">
+                          <h2>Setup</h2>
+                      </div>
+                          <p>Configure dev and prod environments for Oro applications, install and upgrade them to a new version.</p>
+                          <ul class="guideline__list">
+                                           <li><a class="reference internal" href="setup/system-requirements/">System Requirements</a></li>
+                                           <li><a class="reference internal" href="setup/dev-environment/">Dev Environment</a></li>
+                                           <li><a class="reference internal" href="setup/demo-environment/">Demo Environment</a></li>
+                                           <li><a class="reference internal" href="setup/installation/">Installation</a></li>
+                                           <li><a class="reference internal" href="setup/upgrade-to-new-version/">Upgrade</a></li>
+                                           <li><a class="reference internal" href="setup/reinstall/">Reinstall</a></li>
+                                     </ul>
+                  </li>
+                  <li>
+                      <div class="text-center">
+                           <h2>Entities</h2>
+                      </div>
+                          <p>Ensure you meet server and client-side recommendations and learn how to set up the environment.</p>
+                          <ul class="guideline__list">
+                                   <li><a class="reference internal" href="entities/create-entities/">Create Entities</a></li>
+                                   <li><a class="reference internal" href="entities/extend-entities/">Extend Entities</a></li>
+                                   <li><a class="reference internal" href="entities/config-entities/">Configure Entities</a></li>
+                                   <li><a class="reference internal" href="entities/crud/">CRUD Operations</a></li>
+                                   <li><a class="reference internal" href="entities/data-grids/">Data Grids</a></li>
+                                   <li><a class="reference internal" href="entities/acls/">Access Permissions</a></li>
+                          </ul>
+                  </li>
+                 <li>
+                      <div class="text-center">
+                           <h2>Entity Data</h2>
+                      </div>
+                          <p>Learn how to run Oro applications in the Google Cloud Platform infrastructure and its services.</p>
+                          <ul class="guideline__list">
+                               <li><a class="reference internal" href="entities-data-management/data-fixtures/">Fixtures</a></li>
+                               <li><a class="reference internal" href="entities-data-management/reports-and-segments/">Reports & Segments</a></li>
+                               <li><a class="reference internal" href="architecture/tech-stack/search/">Search Index</a></li>
+                               <li><a class="reference internal" href="entities-data-management/workflows/">Workflows</a></li>
+                               <li><a class="reference internal" href="entities-data-management/operations/">Operations (Actions)</a></li>
+                               <li><a class="reference internal" href="entities-data-management/data-audit/">Data Audit</a></li>
+                            </ul>
+                  </li>
+              </ul>
+        </div>
+        <div class="showcase-section-footer">
+        </div>
+    </div>
 
-      <div class="guideline__item" >
-          <div>
-            <h2>Entities</h2>
-          </div>
-          <div style="overflow: hidden;width: 70%;height:100%;text-align: left">
-               <p>Create, configure and manage entities, create CRUD for particular entities, and protect them using access level permissions.</p>
-               <ul class="guideline__list">
-                   <li><a class="reference internal" href="entities/create-entities/">Create Entities</a></li>
-                   <li><a class="reference internal" href="entities/extend-entities/">Extend Entities</a></li>
-                   <li><a class="reference internal" href="entities/config-entities/">Configure Entities</a></li>
-                   <li><a class="reference internal" href="entities/crud/">CRUD Operations</a></li>
-                   <li><a class="reference internal" href="entities/data-grids/">Data Grids</a></li>
-                   <li><a class="reference internal" href="entities/acls/">Access Permissions</a></li>
-               </ul>
-          </div>
-      </div>
-
-        <div class="guideline__item" >
-                  <div>
-                    <h2>Entity Data</h2>
-                  </div>
-                  <div style="overflow: hidden;width: 70%;height:100%;text-align: left">
-                       <p>Configure entity-related reports, integration of business processes, workflows, data audit, search index.</p>
-                       <ul class="guideline__list">
-                           <li><a class="reference internal" href="entities-data-management/data-fixtures/">Fixtures</a></li>
-                           <li><a class="reference internal" href="entities-data-management/reports-and-segments/">Reports & Segments</a></li>
-                           <li><a class="reference internal" href="entities-data-management/search/">Search Index</a></li>
-                           <li><a class="reference internal" href="entities-data-management/workflows/">Workflows</a></li>
-                           <li><a class="reference internal" href="entities-data-management/operations/">Operations (Actions)</a></li>
-                           <li><a class="reference internal" href="entities-data-management/data-audit/">Data Audit</a></li>
-                       </ul>
-                  </div>
-              </div>
-   </div>
 
    <h2>Guides</h2>
 
