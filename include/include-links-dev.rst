@@ -6055,3 +6055,7 @@ Links (Dev)
 .. |DateTime| raw:: html
 
    <a href="https://www.php.net/manual/en/class.datetime.php" target="_blank">DateTime</a>
+
+.. |OroSearchBundle| raw:: html
+
+    <a href="https://github.com/oroinc/platform/tree/5.0/src/Oro/Bundle/SearchBundle" target="_blank">OroSearchBundle</a>
