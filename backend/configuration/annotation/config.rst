@@ -368,6 +368,22 @@ This attribute is set up for the tag entity.
 
 * **enableDefaultRendering** *boolean* - indicates whether to use default rendering of tags in entity view pages. If FALSE tags will not be rendered automatically and allows to use custom rendering logic. By default ``true``.
 
+``entity_management``
+~~~~~~~~~~~~~~~~~~~~~
+
+This attribute is used to enable or disable the ability to edit an entity and its fields in the Entity Management menu in the back-office. When disabled, the buttons for managing the entity and its fields are hidden, leaving only the ability to view its structure.
+
+* **enabled** *boolean* - indicates whether an entity can be managed in the back-office. By default, it is set to ``true``.
+
+Example:
+
+.. oro_integrity_check:: 3655407d4ccf9a06b86b2728b7438ad8d3419e03
+
+   .. literalinclude:: /code_examples/commerce/demo/Entity/NotManageableEntity.php
+       :caption: src/Acme/Bundle/DemoBundle/Entity/NotManageableEntity.php
+       :language: php
+       :lines: 3-4, 6-9, 10-13, 15-17, 22-27, 56-57
+
 ``territory``
 ~~~~~~~~~~~~~
 
