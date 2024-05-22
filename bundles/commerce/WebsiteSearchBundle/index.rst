@@ -27,5 +27,7 @@ Related Documentation
    relevance-weight
    testing
 
+.. include:: /include/include-links-dev.rst
+   :start-after: begin
 
 
