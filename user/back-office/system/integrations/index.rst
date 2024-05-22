@@ -49,6 +49,10 @@ Check the following integrations that can be enabled/disabled and configured in 
 
   * :ref:`Embedded Forms <admin-embedded-forms>`
 
+* OpenAPI Specifications
+
+  * :ref:`OpenAPI Specifications <admin-openapi-specifications>`
+
 
 .. toctree::
    :hidden:
@@ -61,3 +65,4 @@ Check the following integrations that can be enabled/disabled and configured in 
    Zendesk Integration <zendesk-integration>
    LDAP Integration <ldap-integration>
    Embedded Forms <embedded-forms/index>
+   OpenAPI Specifications <openapi-specifications/index>

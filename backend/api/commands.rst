@@ -93,6 +93,17 @@ To provide a URL where live API is served, use the ``--server-url`` option:
 
     php bin/console oro:api:doc:open-api:dump --view=rest_json_api --server-url=https://example.com
 
+.. _oroapidocopenapischedulerenew-command:
+
+oro:api:doc:open-api:schedule-renew
+-----------------------------------
+
+This command schedules the renewal of all :ref:`OpenAPI specifications <admin-openapi-specifications>`.
+
+.. code-block:: none
+
+    php bin/console oro:api:doc:open-api:schedule-renew
+
 .. _oroapidump-command:
 
 oro:api:dump

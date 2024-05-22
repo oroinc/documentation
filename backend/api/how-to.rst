@@ -928,7 +928,20 @@ To do this, you need to perform the following:
                 - { name: oro.api.processor, action: options, group: initialize, priority: 250 }
 
 
-7. Execute the ``cache:clear`` command to apply the changes and the ``oro:api:doc:cache:clear`` command to build API Sandbox.
+7. Add a localizable name and description for the new API type to `Resources/translations/messages.en.yml` that will be used by :ref:`OpenAPI management UI <admin-openapi-specifications>`:
+
+
+    .. code-block:: yaml
+
+       oro:
+           api:
+               open_api:
+                   views:
+                       erp_rest_json_api:
+                           label: JSON:API (ERP Integration)
+                           description: Backoffice REST API that is used by ERP integration.
+
+8. Execute the ``cache:clear`` command to apply the changes and the ``oro:api:doc:cache:clear`` command to build API Sandbox.
 
 That is all. Now, you can open :ref:`API Sandbox <web-services-api--sandbox>` and check that it has the ``ERP Integration`` link at the top. Click on this link and try to perform any API request.
 
