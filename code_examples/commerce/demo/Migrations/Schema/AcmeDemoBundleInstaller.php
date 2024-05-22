@@ -33,6 +33,7 @@ class AcmeDemoBundleInstaller implements
         $this->addAcmeDemoFavoriteForeignKeys($schema);
         $this->addAcmeDemoSmsForeignKeys($schema);
         $this->addAcmeDemoDoctrineTypeFieldForeignKeys($schema);
+        $this->addAcmeDemoNotManageableEntity($schema);
     }
 
     private function createAcmeDemoPriorityTable(Schema $schema): void
@@ -232,5 +233,13 @@ class AcmeDemoBundleInstaller implements
             ['id'],
             ['onUpdate' => null, 'onDelete' => 'SET NULL']
         );
+    }
+
+    private function addAcmeDemoNotManageableEntity(Schema $schema): void
+    {
+        $table = $schema->createTable('acme_demo_not_manageable_entity');
+        $table->addColumn('id', 'integer', ['autoincrement' => true]);
+        $table->addColumn('name', 'string', ['length' => 255]);
+        $table->setPrimaryKey(['id']);
     }
 }
