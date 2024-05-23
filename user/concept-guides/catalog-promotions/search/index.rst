@@ -46,7 +46,7 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 .. image:: /user/img/concept-guides/search/partial-product-search.png
    :alt: Partial Product Search illustration
 
-* :ref:`Automatic Phrase Suggestions <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates suggested phrases as users type their search queries. By presenting users with these automatic suggestions, the feature helps guide them towards more accurate and relevant search results, reducing the likelihood of misspellings or ambiguous queries. You can also provide the number of suggested phrases to users. You can configure the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
+* :ref:`Automatic Phrase Suggestions <configuration--guide--commerce--configuration--product-search>` - The intuitive feature is available starting from OroCommerce v6.0.1. It generates suggested phrases as users type their search queries. By presenting users with these automatic suggestions, the feature helps guide them towards more accurate and relevant search results, reducing the likelihood of misspellings or ambiguous queries. You can also provide the number of suggested phrases to users. You can configure the option on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
 
 .. image:: /user/img/concept-guides/search/phrase-suggestions.png
    :alt: Automatic Phrase Suggestions illustration

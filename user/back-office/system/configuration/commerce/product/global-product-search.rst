@@ -35,7 +35,7 @@ To configure the product search settings globally:
      .. image:: /user/img/concept-guides/search/partial-product-search.png
         :alt: Partial Product Search illustration
 
-5. In the **Automatic Phrase Suggestions** section, configure the following options:
+5. In the **Automatic Phrase Suggestions** section (available starting from OroCommerce v6.0.1), configure the following options:
 
    * **Enable Automatic Phrase Suggestions in Search Autocomplete** --- Select the checkbox to enable displaying suggestions in the storefront.
    * **Number Of Automatically Suggested Phrases In Search Autocomplete** --- The maximum number of suggestions displayed in the storefront autocomplete dropdown.

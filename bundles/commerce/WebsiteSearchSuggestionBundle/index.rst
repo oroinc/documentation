@@ -3,6 +3,8 @@
 WebsiteSearchSuggestionBundle
 =============================
 
+.. hint:: |WebsiteSearchSuggestionBundle| is available starting from OroCommerce v6.0.1. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 |WebsiteSearchSuggestionBundle| implements an autocomplete search feature that displays suggestions related to the search string during a product search.
 
 Entities
@@ -20,6 +22,7 @@ This bundle contains the following new entities:
 
 Configuration
 -------------
+
 The bundle adds a new feature oro_website_search_suggestion that allows to enable or disable displaying suggestions in the storefront for users.
 The bundle also adds a new configuration option **Number Of Automatically Suggested Phrases In Search Autocomplete** under **System Configuration > Commerce > Product  > Product Search > Automatic Phrase Suggestions** in the back-office. This setting controls the maximum number of product search autocomplete suggestions displayed in the storefront. If set to zero, the suggestions will not appear.
 

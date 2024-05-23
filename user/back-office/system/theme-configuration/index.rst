@@ -3,6 +3,8 @@
 Theme Configuration
 ===================
 
+.. hint:: Theme Configuration is available starting from OroCommerce v6.0.1. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 Theme configuration enables you to manage your website's storefront look and feel, customize menus in the header, select the way the main navigation menu is displayed, choose the layout for the product page details, etc.
 
 .. note:: To customize the storefront theme for 5.1 and earlier versions of OroCommerce, please refer to the :ref:`theme system configuration <configuration--commerce--design--theme>` settings.
