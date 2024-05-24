@@ -3,6 +3,8 @@
 WebsiteSearchSuggestionBundle
 =============================
 
+.. hint:: |WebsiteSearchSuggestionBundle| is available starting from OroCommerce v5.1.7. To check which application version you are running, see the :ref:`system information <system-information>`.
+
 |WebsiteSearchSuggestionBundle| implements an autocomplete search feature that displays suggestions related to the search string during a product search.
 
 Entities

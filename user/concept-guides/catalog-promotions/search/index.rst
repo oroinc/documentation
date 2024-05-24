@@ -36,7 +36,7 @@ Several out-of-the-box functions enhance the effectiveness and speed of the sear
 .. image:: /user/img/concept-guides/search/global-search-boost.png
    :alt: Global search boost in action
 
-* :ref:`Search Autocomplete <configuration--guide--commerce--configuration--product-search>` - The intuitive feature generates predictions based on searches that you start to type. It shows up-to-date product information, such as SKU, name, price, and inventory status. You can set the number of products to be displayed in the storefront search result dropdown on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
+* :ref:`Search Autocomplete <configuration--guide--commerce--configuration--product-search>` - The intuitive feature is available as of OroCommerce v5.1.7. It generates predictions based on searches that you start to type. It shows up-to-date product information, such as SKU, name, price, and inventory status. You can set the number of products to be displayed in the storefront search result dropdown on the global, :ref:`organization <sys--users--organization--commerce--products--search>`, and :ref:`website <sys--websites--commerce--products--search>` levels.
 
 .. image:: /user/img/concept-guides/search/storefront-autocomplete.png
    :alt: Search autocomplete illustration
