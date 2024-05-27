@@ -123,6 +123,10 @@ acme:
             duration_field.label: 'Duration Field'
             owner.label: Owner
             organization.label: Organization
+        notmanageableentity:
+            entity_label: 'Not Manageable Entity'
+            entity_plural_label: 'Not Manageable Entity'
+            entity_grid_all_view_label: 'All %entity_plural_label%'
     organization_label: Acme
 extend:
     entity:
