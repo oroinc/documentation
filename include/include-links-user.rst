@@ -799,6 +799,10 @@ Links (User)
 
    <a href="https://www.ups.com/us/en/shipping/order-supplies.page" target="_blank">the UPS website for more details</a>
 
+.. |UPS Migration Guide| raw:: html
+
+    <a href="https://developer.ups.com/oauth-developer-guide?loc=en_US" target="_blank">UPS Migration Guide</a>
+
 .. |the FedEx website for more details| raw:: html
 
    <a href="https://www.fedex.com/content/dam/fedex/us-united-states/services/GrlPkgGuidelines_fxcom.pdf" target="_blank">the FedEx website for more details</a>

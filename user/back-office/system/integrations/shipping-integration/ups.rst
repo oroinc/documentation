@@ -21,8 +21,8 @@ First, ensure you have |registered with UPS.com| and have opened a UPS Account w
 
 Next:
 
-1. Log in to the |ups.com|.
-2. Navigate to the |UPS Developer Kit| in the **Support > Technology Support** section.
+1. Log in to |ups.com|.
+2. Navigate to |UPS Developer Kit| in the **Support > Technology Support** section.
 3. |Request an access key| (e.g., 5F235F292A54F51F).
 
 Please, ensure that you have requested separate access keys for your test and production environments.
@@ -36,12 +36,12 @@ To enable communication with UPS in order to request the shipping cost estimate 
 
 1. Navigate to the **Manage Integrations** page by clicking **System > Integrations > Manage Integrations** in the main menu.
 
-2. Click **Create Integration** and select UPS as integration type:
+2. Click **Create Integration** and select **UPS** as integration type:
 
    .. image:: /user/img/system/integrations/CreateUPSIntegration.png
       :class: with-border
 
-3. Type in the *Common Integration Details*:
+3. Type in **Basic Information**:
 
 * **Name** – the shipping method name that is shown as an option for shipping configuration in the OroCommerce back-office.
 * **Label** – the shipping method name/label that is shown as a shipping option for the buyer in the OroCommerce storefront on the checkout.
@@ -58,7 +58,15 @@ To enable communication with UPS in order to request the shipping cost estimate 
 
       Never enable the Test Mode for the UPS integration on your production instance of OroCommerce.
 
-5. Provide the UPS connection details: API user, password, and API key to connect. Click **Check UPS Connection** to ensure UPS API is accessible.
+5. Provide the UPS connection details: *OAuth Client Id* and *OAuth Client Secret* to connect. Click **Check UPS Connection** to ensure UPS API is accessible.
+
+    .. note:: For the case when you update existing integration, you may see the additional deprecated **API user (Deprecated)**, **API Password (Deprecated)**, and **API Key (Deprecated)** fields.
+
+       Please follow the |UPS Migration Guide| to finalize the migration to OAuth authentication.
+
+       .. image:: /user/img/system/integrations/UpdateUPSIntegration.png
+
+    .. warning:: As of June 2024, you will no longer be able to transact with UPS APIs using an access key for authentication and are required to update your security model to OAuth 2.0
 
 6. Provide the UPS service account details:
 
