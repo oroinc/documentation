@@ -3589,6 +3589,14 @@ Links (Dev)
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle#introduction-to-placeholders" target="_blank">Introduction to Placeholders</a>
 
+.. |automated tests| raw:: html
+
+   <a href="https://doc.oroinc.com/backend/automated-tests/" target="_blank">automated tests</a>
+
+.. |Code > Reformat Code| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/reformat-and-rearrange-code.html" target="_blank">Code > Reformat Code</a>
+
 .. |functional tests| raw:: html
 
    <a href="https://oroinc.com/doc/orocrm/current/book/functional-tests" target="_blank">functional tests</a>

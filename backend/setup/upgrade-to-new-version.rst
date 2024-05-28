@@ -11,6 +11,8 @@ Upgrade the Application to the Next Version
 
 This guide explains how to upgrade Oro application to the next version in a development environment.
 
+.. tip:: If you are looking for specific instructions on upgrading the source code itself, please refer to our detailed guide on :ref:`Upgrading the Source Code to v6.0 <upgrade-to-6>`.
+
 An absolute path to the directory where an application is installed will be used in the guide and will
 be referred to as **<application-root-folder>** further in this topic.
 
@@ -54,88 +56,13 @@ To retrieve a new version and upgrade your Oro application instance, execute the
 
 6. Create backups of your Database and Code.
 
-7. Get changes.
+7. Checkout the next application version's source code. The code is usually stored in a git repository, and stable release versions are marked with git tags.
 
-   **If You Checkout from the GitHub Repository:**
+   .. code-block:: none
 
-   Pull changes from the Oro application GitHub repository.
+      git fetch --tags
+      git checkout <tag-name>
 
-
-   * Add the corresponding ORO application repository as an additional remote by running one of commands below. In the example the new remote name is `oro`.
-
-     .. code-block:: bash
-
-        # OroCommerce Community Edition
-        git remote add oro git@github.com:oroinc/orocommerce-application.git
-        # OroCommerce Enterprise Edition
-        git remote add oro git@github.com:oroinc/orocommerce-enterprise-application.git
-        # OroCRM Community Edition
-        git remote add oro git@github.com:oroinc/crm-application.git
-        # OroCRM Enterprise Edition
-        git remote add oro git@github.com:oroinc/crm-enterprise-application.git
-        # OroPlatform Community Edition
-        git remote add oro git@github.com:oroinc/platform-application.git
-        # OroCommerce Community Edition for Germany
-        git remote add oro git@github.com:oroinc/orocommerce-application-de.git
-        # OroCommerce Enterprise Edition for Germany
-        git remote add oro git@github.com:oroinc/orocommerce-enterprise-application-de.git
-        # OroCommerce Enterprise Edition (without CRM)
-        git remote add oro git@github.com:oroinc/orocommerce-enterprise-nocrm-application.git
-
-
-   * Fetch tags from the corresponding ORO application repository
-
-     .. code-block:: bash
-
-        git fetch oro --tags
-
-   * Checkout the new branch that will contain the code of the upgraded application to the next version
-
-     .. code-block:: bash
-
-        git checkout -b feature/upgrade
-
-   * Merge changes from the corresponding ORO application repository to the new branch
-
-     .. code-block:: bash
-
-        git merge 5.0.7 --allow-unrelated-histories
-
-     Replace ``5.0.7`` with the version you upgrade the application to.
-
-   * Resolve conflicts if needed and commit changes
-
-     .. note::
-
-        If you have any customization or third-party extensions installed, make sure that:
-            - your changes to the ``src/AppKernel.php`` file are merged to the new file.
-            - your changes to the ``src/`` folder are merged, and it contains the custom files.
-            - your changes to the ``composer.json`` file are merged into the new file.
-            - your changes to the ``packages.json`` file are merged to the new file.
-            - your changes to configuration files in the ``config/`` folder are merged to the new files.
-
-     .. code-block:: bash
-
-        git commit
-
-   **If You Download the Source Code Archive:**
-
-   Download the latest version of the application source code from the download section on |the website|:
-
-   * |Download OroCommerce|
-   * |Download OroCRM|
-   * |Download OroPlatform|
-
-   |
-
-   .. note::
-
-      If you have any customization or third-party extensions installed, make sure that:
-          - your changes to the ``src/AppKernel.php`` file are merged to the new file.
-          - your changes to the ``src/`` folder are merged, and it contains the custom files.
-          - your changes to the ``composer.json`` file are merged into the new file.
-          - your changes to the ``packages.json`` file are merged to the new file.
-          - your changes to configuration files in the ``config/`` folder are merged to the new files.
 
 8. Remove old caches.
 
