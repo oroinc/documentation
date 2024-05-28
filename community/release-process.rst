@@ -33,7 +33,7 @@ Oro Team works on OroCommerce using a time-based schedule, with an LTS version c
 
 .. note::
 
-   **LTS** versions of OroCommerce Enterprise Edition are supported for 36 months from the date of the release.
+   **LTS** versions of OroCommerce Enterprise Edition are supported for 36 months from the date of the release. Oro’s Extended Coverage is a service that prolongs the life of an OroCommerce LTS version by 24 months up to a total of 5 years. This offering will lengthen the service period of all critical product patches and security fixes for their respective LTS version. If you're an existing OroCommerce customer, contact your Customer Success Manager to learn more.
 
 Below is the approximate schedule of the currently maintained/supported and planned upcoming releases and support timelines of OroCommerce Enterprise Edition. Please take into account that the numbering of planned major and minor versions is subject to change.
 
