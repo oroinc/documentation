@@ -2355,7 +2355,11 @@ Links (Dev)
 
 .. |6.0 branch| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">6.0 branch</a>
+   <a href="https://github.com/oroinc/orocommerce-application/tree/6.0" target="_blank">6.0 branch</a>
+
+.. |6.1 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/master" target="_blank">6.1 branch</a>
 
 .. |Composer installation documentation| raw:: html
 
