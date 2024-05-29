@@ -74,6 +74,7 @@ Application Setup and Configuration
                     </div>
                         <p>Configure development and production environments, install and upgrade them to a new version.</p>
                          <ul class="guideline__list">
+                                      <li><a class="reference internal" href="upgrade-source-code/">Upgrade Source Code</a></li>
                                       <li><a class="reference internal" href="upgrade-to-new-version/">Upgrade Application</a></li>
                                       <li><a class="reference internal" href="deploy-the-update/">Deploy Changes</a></li>
                          </ul>
@@ -135,7 +136,8 @@ Application Setup and Configuration
    post-install/index
    demo-data
    launch
-   Upgrade <upgrade-to-new-version>
+   Upgrade Source Code <upgrade-source-code>
+   Upgrade Application <upgrade-to-new-version>
    Deploy Changes <deploy-the-update>
    reinstall
 
