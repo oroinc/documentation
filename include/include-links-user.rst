@@ -507,6 +507,10 @@ Links (User)
 
    <a href="https://www.fedex.com/en-us/home.html" target="_blank">FedEx login</a>
 
+.. |FedEx step-to-step guide| raw:: html
+
+   <a href="https://developer.fedex.com/api/en-us/get-started.html#step3" target="_blank">FedEx step-to-step guide</a>
+
 .. |FedEx Web Services| raw:: html
 
    <a href="https://www.fedex.com/us/developer/web-services/index.html">FedEx Web Services</a>
