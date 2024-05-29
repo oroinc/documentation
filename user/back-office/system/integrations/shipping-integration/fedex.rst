@@ -21,7 +21,7 @@ This section describes the steps that are necessary to expose FedEx as a shippin
 Prepare for Integration
 -----------------------
 
-Before adding FedEx as a shipping method in OroCommerce, you need to create a FedEx business account and obtain a dedicated shipping account number and a meter number via the official FedEx website.
+Before adding FedEx as a shipping method in OroCommerce, you need to create a FedEx business account and obtain a dedicated shipping account number and API keys via the official FedEx website.
 
 Create a FedEx Business Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -30,11 +30,11 @@ To register a business account and enable a checkout shipping integration with O
 
 1. Navigate to the |FedEx login| page.
 
-2. Click **Sign In** and then **Create Account**.
+2. Click **Sign Up or Log In** and then **Open an account**.
 
    .. image:: /user/img/system/integrations/FedEx/fedex_login_page.png
 
-3. Click **Business account benefits** to check out the rewarded benefits for your business and proceed to a business account creation.
+3. Click **Open an account** to register an account in several steps.
 
    .. image:: /user/img/system/integrations/FedEx/fedex_business_account.png
 
@@ -49,27 +49,16 @@ Obtain a Set of Testing Credentials
 
 Once the registration is complete, you can now obtain the necessary test keys to set up the integration between FedEx and OroCommerce and make sure the integration is working properly.
 
-1. Navigate to the |FedEx Web Services| page.
+Follow the official |FedEx step-to-step guide|, the *Create organization* and *Create API project* sections,
+to get the test credentials.
 
-2. Complete the four steps required by FedEx to test the integration:
+As result, you will have
 
-   * Read the documentation.
-   * Request the testing credentials and test the integration.
-   * Certify the OroCommerce application with FedEx.
-   * Receive new production credentials to replace your current test ones and move to production.
+   .. image:: /user/img/system/integrations/FedEx/fedex_api_project.png
 
-    .. image:: /user/img/system/integrations/FedEx/fedex_4_steps.png
-
-3. Click **Move to development** and then **Get your test key**.
-
-4. Confirm your contact information and accept the FedEx license to complete the registration process.
-
-5. Receive an email with the corresponding test credentials:
-
-   * Key
-   * Password
-   * Account ID
-   * Meter Number
+   * **Project API Key** in the API KEY field
+   * **Project API Secret Key** in the SECRET KEY field
+   * **Shipping Account Number** in the ACCOUNT field
 
 Configure a FedEx Integration in OroCommerce
 --------------------------------------------
@@ -78,7 +67,7 @@ Configure a FedEx Integration in OroCommerce
 
 To enable the integration with FedEx in order to request the shipping cost estimation and/or request the shipping services:
 
-1. Navigate **System > Integrations > Manage Integrations** in the main menu.
+1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
 
 2. Click **Create Integration**.
 
@@ -93,7 +82,7 @@ To enable the integration with FedEx in order to request the shipping cost estim
 
 Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-5. Set the **Test Mode** check box into the necessary state. Enable it if you are using the test FedEx access key and disable for the production access.
+5. Set the **Test Mode** checkbox into the necessary state. Enable it if you are using the test FedEx access key and disable for the production access.
 
    .. note:: For security reasons, it is critically important to use the mode that matches your environment and the FedEx access key type.
 
@@ -105,18 +94,15 @@ Click the |IcTranslations| **Translations** icon to provide spelling for differe
 
 6. Provide the connection credentials which you have received from FedEx:
 
-   * User Credential Key - is the authentication key provided by FedEx and used for accessing your FedEx account.
-   * User Credential Password - is the production password provided by FedEx.
-   * Shipping Account Number - is the account ID provided by FedEx.
-   * Meter Number - is the meter number provided by FedEx.
+   * Project API Key
+   * Project API Secret Key
+   * Shipping Account Number
 
 7. Select the available pickup type that applies to the deliveries for the shipping methods via this integration:
 
-   * Regular Pickup - enables you to schedule a regular delivery pickup if you deal with a large volume of shipments.
-   * Request Courier - with this type selected, you can request a FedEx courier to come and pick up the shipments.
-   * Drop Box - requires you to deliver the shipments to your closest FedEx drop box.
-   * Business Service Center - requires you to deliver the shipments to your local FedEx business service center.
-   * Station - requires you to deliver the shipments to your local FedEx station.
+   * FedEx will be contacted to request a pickup.
+   * Shipment will be dropped off at a FedEx Location.
+   * Shipment will be picked up as part of a regular scheduled pickup.
 
 8. Select a unit of weight to use for the shipping price calculation: a pound or kilogram.
 
@@ -141,19 +127,22 @@ Obtain a Set of Production Credentials
 
 Once you have successfully configured the OroCommerce FedEx integration, and the connection to the test environment is working properly, you can move to a production stage and request a new set of credentials.
 
-1. Navigate to the |FedEx Web Services| page.
+To get production credentials, follow the official |FedEx step-to-step guide|, the *Create organization* and *Create API project* sections.
 
-2. Click the **Move to production** link and then **Get Production Key** to load another registration form page.
+After obtaining production credentials, follow the steps described in the aforementioned `Configure a FedEx Integration in OroCommerce`_ section to set up the production integration between FedEx and OroCommerce.
 
-3. Complete the form and accept the agreement to continue.
+  .. important:: Make sure that the **Test Mode** checkbox is NOT selected as you are configuring the production integration.
 
-   .. image:: /user/img/system/integrations/FedEx/fedex_production_key.png
+Update the FedEx Integration From the Previous Version
+------------------------------------------------------
 
-4. Receive an email with the corresponding production keys from FedEx.
+The previous version of the FedEx Shipping Integration used the SOAP API to communicate between Oro and FedEx.
 
-5. Follow the steps described in the aforementioned Configure a FedEx Integration in OroCommerce section to set up the production integration between FedEx and OroCommerce.
+As of May 15, 2024, the SOAP API is deprecated, and FedEx offers to switch to a new REST API which uses OAuth Authorization.
 
-   .. important:: Make sure that the **Test Mode** check box is NOT selected as you are configuring the production integration.
+If you have the configured integration for the old API, this integration will still be working until FedEx cancels it.
+
+That is why, when you check or update the existing integration, you will see the old fields marked as deprecated. To update the integration, input new credentials.
 
 
 **Related Topics**
