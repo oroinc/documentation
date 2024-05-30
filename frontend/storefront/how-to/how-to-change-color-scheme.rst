@@ -1,6 +1,6 @@
 .. _dev-doc-frontend-storefront-css-color-scheme:
 
-.. warning:: The documentation you are viewing is accurate for OroCommerce version 5.1 and below. An updated guide for version 6.0 will be available soon.
+
 
 How to Change the Color Scheme of the Storefront
 ================================================

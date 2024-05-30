@@ -1,6 +1,6 @@
 .. _dev-doc-frontend-layouts-returning-custom-status-code:
 
-.. warning:: The documentation you are viewing is accurate for OroCommerce version 5.1 and below. An updated guide for version 6.0 will be available soon.
+
 
 Returning a Custom Status Code
 ==============================

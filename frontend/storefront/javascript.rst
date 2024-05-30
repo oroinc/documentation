@@ -1,6 +1,6 @@
 :oro_show_local_toc: false
 
-.. warning:: The documentation you are viewing is accurate for OroCommerce version 5.1 and below. An updated guide for version 6.0 will be available soon.
+
 
 JavaScript
 ==========

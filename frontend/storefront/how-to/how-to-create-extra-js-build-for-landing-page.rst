@@ -1,6 +1,6 @@
 .. _how-to-create-extra-js-build-for-landing-page:
 
-.. warning:: The documentation you are viewing is accurate for OroCommerce version 5.1 and below. An updated guide for version 6.0 will be available soon.
+
 
 How to Create Extra JS Build for a Landing Page
 ===============================================
