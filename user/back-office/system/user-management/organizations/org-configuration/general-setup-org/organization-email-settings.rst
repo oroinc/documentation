@@ -57,7 +57,7 @@ To configure email settings per organization:
 6. Under **HTML in templates**, configure the following:
    
      * **Enable HTML Purifier** --- Enable or disable HTML Purifier. Disabling HTML Purifier allows you to paste any HTML code into a template or an email body editor without tag stripping.
-     * **Enable WYSIWYG For Email Templates** --- Enable or disable the WYSIWYG editor for email templates. Remember that the WYSIWYG editor does not support variables provided by the default base email template. Enabling the WYSIWYG editor may break existing email templates.
+     * **Enable WYSIWYG For Email Templates** --- Enable or disable the WYSIWYG editor for :ref:`email templates <admin-guide-email-configuration>`. Remember that the WYSIWYG editor does not support variables provided by the default base email template. Enabling the WYSIWYG editor may break existing email templates.
    
 7. Under **System Mailboxes**, configure a :ref:`system mailbox <admin-configuration-system-mailboxes>` that allows people who do not have access to the company mailbox addresses to write to the company. To add a new system mailbox, click **Add Mailbox**.
 

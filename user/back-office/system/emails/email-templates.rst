@@ -20,38 +20,84 @@ Create a New Email Template
 
    The following fields are mandatory and must be defined:
 
+   * **Owner** --- Limits the list of users that can manage the template, subject to the :ref:`access and permission settings <user-guide-user-management-permissions>`.
    * **Template Name** --- Name used to refer to the template in the system.
    * **Type** --- Use html or plain text.
-   * **Owner** --- Limits the list of users that can manage the template, subject to the :ref:`access and permission settings <user-guide-user-management-permissions>`.
+   * **Entity Name** --- The field is optional and is used to define an :term:`entity <Entity>`, variables whereof can be used in the template. If no entity name is defined, only system variables are available.
 
-   Optional field **Entity Name** is used to define an :term:`entity <Entity>`, variables whereof can be used in the template. If no entity name is defined, only system variables are available.
+     .. important:: If you want to use the template for :ref:`autoresponses <admin-configuration-system-mailboxes-autoresponse>`, the **Entity Name** field value should be **Email**.
 
-   .. important:: If you want to use the template for :ref:`autoresponses <admin-configuration-system-mailboxes-autoresponse>`, the **Entity Name** field value should be **Email**.
+   * **Website** --- Choose a website for which this template applies, or leave it blank if the template should be applicable to all websites. To apply this template customization to a different website, clone the template and define the necessary website. Ensure the original template name remains unchanged for the template to work correctly.
 
-4. Define the email template. Click on the necessary variable to add it to the text box.
+4. Under **Template Data**, define the email template. Click on the necessary variable to add it to the text box.
 
    .. image:: /user/img/system/emails/templates/email_template_ex.png
       :alt: A sample of an email template
 
-   .. note:: In the example below, the template contains a link to the website page composed with a piece of :ref:`tracking code <user-guide-how-to-track>`. Every time a user follows the link, visit event will be tracked for the campaign.
+   .. note:: If you prefer working with email templates via the WYSIWYG editor, you can enable it :ref:`globally <admin-configuration-email-configuration-global>` or :ref:`per organization <admin-configuration-email-configuration-organization>`. However, remember that the WYSIWYG editor is incompatible with the default base email template. Enabling it may break existing email templates and prevent them from being saved. Therefore, it is disabled by default.
 
-5. Click **Preview** to check your template.
+5. Click **Save** to apply the changes.
 
-   .. image:: /user/img/system/emails/templates/email_template_preview.png
-      :alt: Preview of an email template
+6. You can delete |IcDelete|, edit |IcEdit|, and clone |IcClone| email templates on the page of all templates.
 
-6. Click **Save** if you are satisfied with the preview.
-
-.. _user-guide-email-templates-actions:
-
-.. note:: You can delete |IcDelete|, edit |IcEdit|, and clone |IcClone| email templates on the page of all templates.
-
-          .. image:: /user/img/system/emails/templates/email_template_actions.png
-             :alt: View a list of templates with three options available: edit, clone, delete
+   .. image:: /user/img/system/emails/templates/email_template_actions.png
+      :alt: View a list of templates with three options available: edit, clone, delete
 
 .. important:: Keep in mind that the ability to view, edit, clone, or delete email templates depends on specific roles and permissions defined in the system configuration. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide.
 
-.. hint:: If you want to track the user-activity related to the emails sent within the email campaign, add a piece of :ref:`tracking website <user-guide-marketing-tracking>` code to the email template.
+
+.. _reuse-base-email-template:
+
+Inherit Base Email Template
+---------------------------
+
+Email template inheritance allows developers to maintain common styles and foundational markup in a single **base template**, which can then be extended or modified for different email types without repetitive copying and pasting. This base template includes common styles, headers, footers, and foundational markup, ensuring consistency across different emails. Users or frontend developers can manage the base template; the system will first search for it by name among user-managed templates, and if not found, will check the storefront theme.
+
+You can have multiple base templates with different designs within the system, specified through a special markup tag, for instance:
+
+.. code-block:: twig
+
+   {% extends oro_get_email_template('base_storefront') %}
+
+where ``base_storefront`` is a name of the base email template whose styles and markup you want to re-use.
+
+Here is the OroCommerce's default **base_storefront** email template that contains a common markup.
+
+.. image:: /user/img/system/emails/templates/base_storefront_email_template.png
+   :alt: Preview of the default base_storefront email template
+
+Several existing templates already use this inheritance principle with the mentioned code block:
+
+.. code-block:: twig
+
+   {% extends oro_get_email_template('base_storefront') %}
+
+.. image:: /user/img/system/emails/templates/inheritance_system_for_welcome_email_template.png
+   :alt: Preview of the default welcome email template that uses the inheritance principle
+
+The website from which the request is sent is detected automatically from the related entity of an email template. If you need to specify the website, you can use the additional context argument:
+
+.. code-block:: twig
+
+    {% extends oro_get_email_template('base', { website: entity.website }) %}
+
+While using inheritance, the text or HTML should only be within the blocks defined in the parent template, for example:
+
+.. code-block:: twig
+
+   {% extends oro_get_email_template('base_storefront') %}
+   No tags or text are allowed
+
+   {% block content %}
+   Any text or code is allowed
+   {% endblock %}
+
+   No tags, text or code are allowed
+
+
+.. note:: The WYSIWYG editor is incompatible with the inherited email templates. Enabling it may break existing email templates and prevent them from being saved. Therefore, it is disabled by default.
+
+
 
 .. _user-guide-view-emails-template-variables:
 
@@ -630,11 +676,6 @@ To create email templates for different localizations, even the inactive ones, m
 
 To enable the email template fallback to the parent localization, select the **Use <localization> (Parent Localization)** checkbox. If the localization does not have a parent, you can enable fallback to the default template value.
 
-.. .. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
-   :align: middle
-
-.. .. |BCrLOwnerClear| image:: ../../img/buttons/BCrLOwnerClear.png
-   :align: middle
 
 
 .. admonition:: Business Tip
@@ -654,30 +695,3 @@ To enable the email template fallback to the parent localization, select the **U
    :start-after: begin
 
 
-.. _contextualize-email-templates:
-
-
-Contextualize Email Templates
------------------------------
-
-To contextualize your email templates and have different designs by website, you can use the following extension system.
-
-**In your email template:**
-
-.. code-block:: twig
-
-
-    {% extends oro_get_email_template('base_storefront') %}
-
-The website is detected automatically from the related entity of an email template. If you need to override it you can use the additional context argument:
-
-.. code-block:: twig
-
-
-    {% extends oro_get_email_template('base', { website: entity.website }) %}
-
-**In the backend:**
-
-There is an email template named `base` that contains a common markup. You can clone this template and specify another website in `Website` field to make your modifications differently for each website.
-
-.. note:: A few existing templates already use this extension principle, and they will integrate the changes for any website you choose to customize.
