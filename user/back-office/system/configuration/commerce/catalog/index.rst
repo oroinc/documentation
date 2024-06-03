@@ -8,7 +8,6 @@ Learn how to configure price lists, price selection strategies and pricing round
 * :ref:`Pricing <sys--config--commerce--catalog--pricing>`
 * :ref:`Related Items <sys--commerce--catalog--relate-products--main>`
 * :ref:`Filters and Sorters <configuration--guide--commerce--configuration--catalog--filters-sorters>`
-* :ref:`Special Pages <sys--conf--commerce--catalog--special-pages--global>`
 
 .. toctree::
    :titlesonly:

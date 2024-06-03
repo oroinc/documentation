@@ -72,6 +72,5 @@ After the integration is configured, you can :ref:`Send Email Campaign via Mailc
    Customer Login Pages <customer-login-pages/index>
    Content Widgets <content-widgets/index>
    Digital Assets <digital-assets/index>
-   Search Synonyms <synonyms/index>
-   Search Terms <search-history/index>
+   Search <search/index>
 
