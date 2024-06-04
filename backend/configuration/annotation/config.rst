@@ -382,6 +382,7 @@ This attribute is used to enable or disable the ability to edit an entity and it
 Example:
 
 .. code-block:: php
+
     // ...
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
 
