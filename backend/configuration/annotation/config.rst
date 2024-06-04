@@ -382,7 +382,7 @@ Example:
    .. literalinclude:: /code_examples/commerce/demo/Entity/NotManageableEntity.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/NotManageableEntity.php
        :language: php
-       :lines: 3-4, 6-9, 10-13, 15-17, 22-27, 56-57
+       :lines: 3-4, 6-9, 10-13, 15-17, 22-27, 56
 
 ``territory``
 ~~~~~~~~~~~~~
