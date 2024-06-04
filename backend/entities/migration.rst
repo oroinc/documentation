@@ -120,7 +120,7 @@ For example, let's assume we have migrations `v1_0`, `v1_1`, `v1_2`, `v1_3` and 
 
 Below is an example of an install migration file:
 
-.. oro_integrity_check:: 2f2674e8cf190884b309b5318184bd8e3e861756
+.. oro_integrity_check:: 90b861330576af375d08e31240acbda642ec2cf7
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Schema/AcmeDemoBundleInstaller.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Schema/AcmeDemoBundleInstaller.php
