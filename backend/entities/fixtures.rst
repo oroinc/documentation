@@ -25,7 +25,7 @@ To make a fixture versioned, it must implement |VersionedFixtureInterface| and t
 
 Example:
 
-.. oro_integrity_check:: f721de3b496823dcae3adf15de9304d73f7b1886
+.. oro_integrity_check:: 1c6c93f353e62c51b376f2b5713e0c6077f9aecb
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadFavoritesData.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadFavoritesData.php
@@ -37,7 +37,7 @@ To have the possibility to load this fixture again, it must return a version gre
 
 If the fixture needs to know the last loaded version, it must implement |LoadedFixtureVersionAwareInterface| and the `setLoadedVersion` method:
 
-.. oro_integrity_check:: a3f152f6a4074223a7924deb65dee4f048cf3d7a
+.. oro_integrity_check:: afa53eebb4e20da1e9da2e009847c293d0559f69
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadVersionedFavoriteData.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadVersionedFavoriteData.php
@@ -52,7 +52,7 @@ To prevent the fixture from loading again, this fixture must implement |RenamedF
 
 Example:
 
-.. oro_integrity_check:: fd8fb3fe1426d574f636b3992277a10496d27cae
+.. oro_integrity_check:: d34adf7a11f4afded2cd5156795def1903e254dc
 
    .. literalinclude:: /code_examples/commerce/demo/Migrations/Data/ORM/LoadRenamedFavoritesData.php
        :caption: src/Acme/Bundle/DemoBundle/Migrations/Data/ORM/LoadRenamedFavoritesData.php

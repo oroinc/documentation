@@ -381,12 +381,12 @@ This attribute is used to enable or disable the ability to edit an entity and it
 
 Example:
 
-.. oro_integrity_check:: 3655407d4ccf9a06b86b2728b7438ad8d3419e03
+.. oro_integrity_check:: 5f6248807b383fb651e63de5008e46307cf554b5
 
    .. literalinclude:: /code_examples/commerce/demo/Entity/NotManageableEntity.php
        :caption: src/Acme/Bundle/DemoBundle/Entity/NotManageableEntity.php
        :language: php
-       :lines: 3-4, 6-9, 10-13, 15-17, 22-27, 56-57
+       :lines: 3-4, 6-9, 10-13, 15-17, 22-27, 56
 
 ``territory``
 ~~~~~~~~~~~~~
