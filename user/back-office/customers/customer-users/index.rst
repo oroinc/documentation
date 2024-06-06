@@ -111,12 +111,14 @@ You may want to delegate some of the customer user management capabilities to th
 .. image:: /user/img/customers/customer_user_roles/CustomerUserRolesManageAccounts_cust.png
    :alt: The list of account management capabilities
 
+.. _user-guide--customers--customer-user-impersonate:
+
 Impersonate a Customer User
 ---------------------------
 
 .. hint:: This feature is available in the Enterprise edition.
 
-For troubleshooting purposes, user impersonation allows back-office users with the **Login as Customer User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user. Such back-office user is redirected to the website assigned to the customer user they are impersonating (i.e., the website where the customer user registered).
+For troubleshooting purposes or to place orders on behalf of a customer user, you can use user impersonation to allow back-office users with the **Login as Customer User** :ref:`role capability <admin-capabilities>` to access and operate the OroCommerce storefront as if they were logged in as a specific customer user. Such back-office user is redirected to the website assigned to the customer user they are impersonating (i.e., the website where the customer user registered).
 
 .. hint:: Before proceeding, make sure this feature is enabled in the system configuration :ref:`globally <system-configuration-user-impersonation>` or :ref:`per organization <organization-user-impersonation>`.
 
@@ -138,6 +140,15 @@ The storefront session in impersonation mode opens in a new browser tab.
    :alt: Impersonation mode in the storefront
 
 To exit impersonation mode, click **Log out** in the blue banner.
+
+.. note:: If a back-office user placed an order on behalf of the customer user, this will be reflected on the order view page in the storefront with the following note: *This order was created on your behalf by a member of our staff.*
+
+          .. image:: /user/img/storefront/orders/order-impersonated.png
+             :alt: An order view page with a note saying "This order was created on your behalf by a member of our staff".
+
+          In the back-office you can view who created the order on the order view page and in the grid.
+
+          .. image:: /user/img/customers/customer_user_roles/created-by.png
 
 .. _user-guide--customers--customer-user-reset-password:
 

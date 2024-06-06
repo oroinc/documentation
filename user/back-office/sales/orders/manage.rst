@@ -29,6 +29,7 @@ The following information about orders is available:
 * **Source Document** --- If the order has been created from an RFQ, quote, or another order, this field contains a link to the corresponding record. If the order has been created from scratch (in the back-office) or the quick order form (in the storefront), the field shows 'N/A'.
 * **Discount** --- The total of all discounts applied to the order.
 * **Created At** --- The date and time the order was created.
+* **Created By** --- The name of the user who created an order on behalf of a customer user, either via the back-office or :ref:`customer user impersonation <user-guide--customers--customer-user-impersonate>` in the storefront.
 * **Updated At** --- The date and time when the order was last updated.
 * **Payment Term** --- The terms and conditions for order payment. For more information, see :ref:`Payment Terms Integration <sys--integrations--manage-integrations--payment-term>`.
 * **Warehouse** --- The warehouse that the goods are shipped from.
