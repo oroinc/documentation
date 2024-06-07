@@ -21,7 +21,12 @@ The following information about orders is available:
 * **Total** --- The final amount due for the order. Includes all the additional costs (like shipping costs), taxes or discounts.
 * **Customer** --- The customer that made the order.
 * **Customer User** --- The customer user that made an order on behalf of the customer.
-* **Internal Status** --- The order status is visible only in the back-office. See the :ref:`description of internal statuses <doc--orders--statuses--internal>`.
+* **Internal Status** --- The order status is managed only in the back-office. See the :ref:`description of internal statuses <doc--orders--statuses--internal>`.
+* **Status** --- An external order status displayed next to the order number in the title. This status is managed by an external system and visible when :ref:`Enable External Status Management <sys--commerce--orders--status-management>` configuration option is enabled in the system configuration, and status options are created for the order status entity field via :ref:`entity management <entities-management>`. When enabled, this external order status will be visible in the Order History grid and on the order view page in the storefront user :ref:`account <my-account-order-history>`. If disabled, Internal Status will be displayed instead. Please be aware that the external order status is managed via the order REST API.
+
+.. image:: /user/img/sales/orders/external-order-status.png
+   :alt: Illustration of external order status on the order view page and on the order status entity field page with sample options.
+
 * **Owner** --- The back-office user who is responsible for the order.
 * **Payment Status** --- Whether the order is already paid in full, the payment for the order is authorized, etc.
 * **Payment Method** --- The payment method selected to pay for the order.

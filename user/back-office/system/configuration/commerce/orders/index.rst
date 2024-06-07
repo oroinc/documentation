@@ -8,6 +8,7 @@ Learn how to define how open orders should be displayed in the storefront.
 * :ref:`Order Automation <configuration--commerce--orders>`
 * :ref:`Order Creation <configuration--commerce--orders-create>`
 * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
+* :ref:`Order Status Management <sys--commerce--orders--status-management>`
 
 .. toctree::
    :titlesonly:
@@ -17,3 +18,4 @@ Learn how to define how open orders should be displayed in the storefront.
    Order Automation <global-order-automation>
    Order Creation <global-order-creation>
    Purchase History <global-previously-purchased>
+   Order Status Management <global-order-status-management>
