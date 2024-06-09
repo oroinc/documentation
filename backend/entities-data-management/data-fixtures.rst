@@ -23,7 +23,7 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
     php bin/console oro:migration:data:load
 
-The fixtures type ("main", or "demo") can be specified with the ``--fixtures-type=<type>`` option. For example, you can create data fixtures that should only be loaded when you want to to present your application with some demo data. To do so place your data fixture classes in the ``Migrations/Data/Demo/ORM`` subdirectory of your bundle and use the ``--fixtures-type`` option of the ``oro:migration:data:load`` command to indicate that the demo data should be loaded:
+The fixtures type ("main", or "demo") can be specified with the ``--fixtures-type=<type>`` option. For example, you can create data fixtures that should only be loaded when you want to present your application with some demo data. To do so, place your data fixture classes in the ``Migrations/Data/Demo/ORM`` subdirectory of your bundle and use the ``--fixtures-type`` option of the ``oro:migration:data:load`` command to indicate that the demo data should be loaded:
 
 .. code-block:: none
 
