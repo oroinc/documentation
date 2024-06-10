@@ -148,7 +148,7 @@ To exit impersonation mode, click **Log out** in the blue banner.
 
           In the back-office you can view who created the order on the order view page and in the grid.
 
-          .. image:: /user/img/customers/customer_user_roles/created-by.png
+          .. image:: /user/img/customers/customer_users/created-by.png
 
 .. _user-guide--customers--customer-user-reset-password:
 
