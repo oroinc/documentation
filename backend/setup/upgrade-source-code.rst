@@ -183,9 +183,9 @@ Another significant change that requires manual intervention is the upgrade of t
 `symfony/security component architecture <https://github.com/oroinc/platform/blob/6.0.0/CHANGELOG.md#security-changes>`_
 . For a comprehensive list of changes, please refer to the relevant guides corresponding to the base application you are using.
 
-- https://github.c/oroinc/platform-application/blob/master/UPGRADE.md
+- https://github.com/oroinc/platform-application/blob/master/UPGRADE.md
 
-- https://github.com/oroiomnc/crm-application/blob/master/UPGRADE.md
+- https://github.com/oroinc/crm-application/blob/master/UPGRADE.md
 
 - https://github.com/oroinc/crm-enterprise-application/blob/master/UPGRADE.md
 
