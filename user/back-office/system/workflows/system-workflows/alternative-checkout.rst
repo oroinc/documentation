@@ -44,7 +44,7 @@ As an illustration, we are going to proceed through the steps of the Alternative
    :start-after: start_checkout_sample_0
    :end-before: finish_checkout_sample_0
 
-.. |create_order_img| image:: /user/img/system/workflows/alternative_checkout/ACF_CreateOrderButton.png
+.. image:: /user/img/system/workflows/alternative_checkout/ACF_CreateOrderButton.png
    :alt: Shopping list with option to create order and proceed to checkout
 
 .. check the conditions
@@ -52,10 +52,17 @@ As an illustration, we are going to proceed through the steps of the Alternative
 Step 1: Agreements
 ^^^^^^^^^^^^^^^^^^
 
-At the Agreements step, you are required to accept all mandatory consents to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
+At the Agreements step, you are required to accept all mandatory :ref:`consents <system-consent-management>` to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
 
-  .. image:: /user/img/system/workflows/alternative_checkout/storefront_step_agreements_bluethooth.png
-     :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
+.. important:: Keep in mind that for the Agreements section to be displayed in the checkout, you need to :ref:`add the necessary consents to the list of enabled consents <admin--guide--commerce--configuration--customers--consents--enable--globally>` in the system configuration.
+
+
+.. image:: /user/img/system/workflows/alternative_checkout/storefront_step_agreements_alt.png
+   :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
+
+.. image:: /user/img/system/workflows/alternative_checkout/storefront_step_agreements_alt_accepted.png
+   :alt:  Accept a mandatory consent on the agreements step
+
 
 Once the consent is accepted, click **Continue** to proceed through the checkout.
 
@@ -105,21 +112,21 @@ Step 6: Order Review
    :start-after: start_checkout_sample_alt5
    :end-before: finish_checkout_sample_alt5
 
+If the order amount exceeds the predefined threshold, you will need to request a manager's approval.
+
 .. image:: /user/img/system/workflows/alternative_checkout/ACF_OrderReview.png
-   :alt: The page of the order in the back-office, once the order is submitted
+   :alt: The order review step at the checkout (alternative checkout)
 
 Step 7: Request Approval
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Since the order amount exceeds the threshold of $5000, manager approval is required to submit the order.
+Since the order amount exceeds the threshold of $5000, manager approval is required.
 
 .. image:: /user/img/system/workflows/alternative_checkout/ACF_RequestApproval.png
 
 Order Approval will remain pending until the manager approves it.
 
 .. image:: /user/img/system/workflows/alternative_checkout/ACF_ApprovalPending.png
-
-.. comment: currently alternative checkout wf works with customer users under customer with ID 4
 
 Step 8: Approve Order
 ^^^^^^^^^^^^^^^^^^^^^
@@ -128,6 +135,8 @@ The manager can approve the order by navigating to Orders, selecting the require
 At this point, the manager can submit the order themselves, or let the employee handle the order:
 
 .. image:: /user/img/system/workflows/alternative_checkout/ACF_ApproveOrder.png
+
+.. image:: /user/img/system/workflows/alternative_checkout/ACF_ApproveOrder(part2).png
 
 Once submitted, the order will be received and dealt with by the sales team.
 
