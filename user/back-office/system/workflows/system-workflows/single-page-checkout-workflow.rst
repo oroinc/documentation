@@ -10,7 +10,7 @@ Overview
 
 In your Oro application, you can control the way the checkout is displayed to customers in the storefront. By default, each checkout step is displayed on a new page. However, by activating the Single Page Checkout workflow in the back-office, you can make all steps fit one page. This will make the checkout process easier and quicker for customers, since they will be able to see how far along in the checkout they are, and how many fields are left to complete it.
 
-.. image:: /user/img/system/workflows/single_page_checkout/SampleFlow2.png
+.. image:: /user/img/system/workflows/single_page_checkout/SampleFlow.png
    :alt: Illustration of single page checkout in the storefront
 
 To reach the Single Page Checkout workflow:
@@ -51,6 +51,8 @@ As an illustration let us go through the sample flow to see the Single Page Chec
    * Billing Information
    * Shipping Information
    * Order Summary (including *Agreements*)
+
+   .. important:: Keep in mind that for the Agreements section to be displayed in the checkout, you need to :ref:`add the necessary consents to the list of enabled consents <admin--guide--commerce--configuration--customers--consents--enable--globally>` in the system configuration.
 
    .. image:: /user/img/system/workflows/single_page_checkout/SampleFlow2.png
       :alt: Illustration of single page checkout in the storefront
