@@ -3,7 +3,7 @@
 View Order Internal Statuses
 ============================
 
-An internal status is a status visible only in the back-office.
+An internal status is a status managed only in the back-office.
 
 An order can have the following internal statuses:
 

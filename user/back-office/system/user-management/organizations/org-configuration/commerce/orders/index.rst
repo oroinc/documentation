@@ -7,3 +7,4 @@ Configure Order Settings per Organization
    Order Automation <organization-order-automation>
    Order Creation <organization-order-creation>
    Purchase History <organization-previously-purchased>
+   Order Status Management <organization-order-status-management>

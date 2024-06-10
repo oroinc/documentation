@@ -59,7 +59,7 @@ This section is for order details, such as who created the order or to which web
    "**Subtotal**","The amount due for items in the order. Does not include additional costs, taxes, discounts."
    "**Customer**","The customer that made the order."
    "**Customer User**","The customer user that created an order on behalf of their customer."
-   "**Internal Status**","The order status visible only in the back-office. See the :ref:`description of internal statuses <doc--orders--statuses--internal>`."
+   "**Internal Status**","The order status is managed only in the back-office. See the :ref:`description of internal statuses <doc--orders--statuses--internal>`."
    "**Do Not Ship Later Than**","The date on which the order expires."
    "**Source Document**","If the order has been created from an RFQ, quote, or another order, this field contains a link to the corresponding record. If the order was created from scratch (in the back-office) or through the quick order form (in the storefront), the field shows 'N/A'."
    "* **Created By**","The name of the user who created an order on behalf of a customer user, either via the back-office or :ref:`customer user impersonation <user-guide--customers--customer-user-impersonate>` in the storefront."
