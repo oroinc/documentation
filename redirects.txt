@@ -450,3 +450,5 @@ frontend/storefront-style-guide/principles/pages /frontend/storefront-style-guid
 frontend/storefront-style-guide/principles/templates /frontend/storefront-style-guide/index
 frontend/storefront-design/storefront-style-guide/design-customization/colors /frontend/storefront-style-guide/index
 frontend/storefront-design/storefront-style-guide/design-customization/ui-elements /frontend/storefront-style-guide/index
+user/back-office/marketing/search-history /user/back-office/marketing/search
+user/back-office/marketing/synonyms /user/back-office/marketing/search
