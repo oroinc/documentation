@@ -1,7 +1,7 @@
 .. _user-guide-getting-started-search:
 
-Search Functions
-================
+Search Functions Concept Guide
+==============================
 
 A search function on your website provides a seamless experience for your visitors. Giving customers the ability to find the information they are looking for quickly is a key ingredient for creating a user-friendly website.
 
