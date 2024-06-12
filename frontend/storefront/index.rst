@@ -42,6 +42,7 @@ The OroCommerce storefront design architecture has some differences from the bac
     Customization How-To Guides <how-to/index>
     render-cache
     debugging
+    Optimize Assets Build <optimize-build>
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin

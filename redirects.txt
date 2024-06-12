@@ -441,3 +441,4 @@ backend/entities-data-management/search/troubleshooting /backend/architecture/te
 user/back-office/products/products/product-recommendations /user/concept-guides/catalog-promotions/product-management/index
 user/back-office/marketing/search-history /user/back-office/marketing/search
 user/back-office/marketing/synonyms /user/back-office/marketing/search
+frontend/optimize-build /frontend/storefront/optimize-build
