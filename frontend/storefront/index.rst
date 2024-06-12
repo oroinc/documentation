@@ -46,6 +46,7 @@ The OroCommerce storefront design architecture has some differences from the bac
     render-cache
     debugging
     svg-icons
+    Optimize Assets Build <optimize-build>
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin

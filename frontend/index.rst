@@ -34,13 +34,11 @@ All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-java
     :hidden:
     :maxdepth: 1
 
+    Storefront Design <storefront-style-guide/index>
     storefront/index
-    storefront-style-guide/index
-    back-office/index
     javascript/index
+    back-office/index
     rtl-support
-    Optimize Assets Build <optimize-build>
-
 
 .. include:: /include/include-links-seo.rst
    :start-after: begin
