@@ -357,3 +357,4 @@ backend/entities-data-management/search/elastic-tuning /backend/architecture/tec
 backend/entities-data-management/search/fuzzy-search /backend/architecture/tech-stack/search/fuzzy-search
 backend/entities-data-management/search/query-builder /backend/architecture/tech-stack/search/query-builder
 backend/entities-data-management/search/troubleshooting /backend/architecture/tech-stack/search/troubleshooting
+frontend/optimize-build /frontend/storefront/optimize-build
