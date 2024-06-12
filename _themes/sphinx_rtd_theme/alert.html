@@ -21,7 +21,18 @@
         <div class="admonition important">
             <p class="first admonition-title">Important</p>
             <p class="last">
-                {{ you_are_browsing }} Read the documentation for <a href="{{ theme_canonical_url }}{{ pathto('/' + pagename) }}">version 6.0 (the latest LTS version)</a> to get up-to-date information.
+                {%- if versions.branches %}
+                    {%- for item in versions.branches %}
+                        {%- if 'maintenance/6.0' == item.name or '6.0' == item.name  %}
+                            {%- if 'index.html' in item.url %}
+                                {% set url = item.url | replace('/index.html', '/') %}
+                            {%- else %}
+                                {% set url = item.url | replace('.html', '/') %}
+                            {%- endif %}
+                            {{ you_are_browsing }} Read the documentation for <a href="/{{ url | replace('../', '') }}">version 6.0 (the latest LTS version)</a> to get up-to-date information.
+                        {%- endif %}
+                    {%- endfor %}
+                {%- endif %}
             </p>
             <p class="last">
                 See our <a href="https://doc.oroinc.com/community/release-process/#orocommerce-and-orocrm-enterprise-edition-releases-and-support-cycle" target="_blank">Release Process documentation</a> for more information on the currently supported and upcoming releases.
