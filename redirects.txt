@@ -452,3 +452,4 @@ frontend/storefront-design/storefront-style-guide/design-customization/colors /f
 frontend/storefront-design/storefront-style-guide/design-customization/ui-elements /frontend/storefront-style-guide/index
 user/back-office/marketing/search-history /user/back-office/marketing/search
 user/back-office/marketing/synonyms /user/back-office/marketing/search
+frontend/optimize-build /frontend/storefront/optimize-build
