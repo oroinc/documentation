@@ -64,6 +64,11 @@ The default configuration of OroOAuth2ServerBundle is illustrated below:
                 # The list of origins that are allowed to send CORS requests
                 allow_origins: [] # Example: ['https://foo.com', 'https://bar.com']
 
+                # The list of headers that are allowed to send by CORS requests.
+                # This option specifies a list of headers that are sent
+                # in the "Access-Control-Allow-Headers" response header of CORS preflight requests
+                allow_headers: [] # Example: ['X-Foo', 'X-Bar']
+
         resource_server:
 
             # The full path to the public key file that is used to verify JWT tokens.
