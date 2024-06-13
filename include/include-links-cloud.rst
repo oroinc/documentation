@@ -173,7 +173,7 @@ Links (Cloud)
 
 .. |related documentation in the backend developer guide| raw:: html
 
-   <a href="https://doc.oroinc.com/backend/setup/dev-environment/environment-type-based-configuration/" target="_blank">related documentation in the backend developer guide</a>
+   <a href="https://doc.oroinc.com/backend/setup/dev-environment/env-vars/" target="_blank">related documentation in the backend developer guide</a>
 
 .. |related cloud documentation| raw:: html
 
