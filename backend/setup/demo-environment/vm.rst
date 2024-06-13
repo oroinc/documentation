@@ -7,7 +7,7 @@ VM VirtualBox
 
 For a more flexible and secure evaluation experience, you can deploy a virtual machine with the Oro application demo instance in Oracle VM VirtualBox.
 
-.. note:: OS X, Windows, and Linux-based operation systems support Oracle VM VirtualBox.
+.. note:: OS X, Windows, and Linux-based operation systems support Oracle VM VirtualBox. Currently, OroCommerce's public virtual machines (VMs) are designed and optimized for Intel processors, and are not yet compatible with ARM-based processors, including Apple's chips. However, we look forward to potential future enhancements. Users are encouraged to use supported processors for the best experience with our VMs.
 
 Before you proceed, ensure that VM VirtualBox version 7.x is installed in your local or corporate environment and is accessible.
 
