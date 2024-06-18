@@ -13,7 +13,7 @@ Prerequisite
 Run Application
 ---------------
 
-1. Download the repository with a docker-compose configuration file.
+1. Download the repository with a ``docker-compose.yml`` configuration file.
 
    .. code-block:: none
 
@@ -38,7 +38,7 @@ Run Application
 
         docker-compose up -d
 
-   The docker-compose will download the required images, create networks and run containers. Application `commerce-crm-application` is used by default.
+   The docker compose will download the required images, create networks and run containers. Application `commerce-crm-application` is used by default.
    You can run other community applications, such as `crm-application`, `platform-application` or `commerce-crm-application-de`.
    To select another application, set a different image in `.env` file, for example:
 
@@ -72,9 +72,9 @@ Access the Mail Catcher
 Stop the Application
 --------------------
 
-- To stop and remove all containers, use the following command: `docker-compose down`.
+- To stop and remove all containers, run `docker compose down`.
 
-- To stop and remove all containers with the data saved in volumes, use the following command: `docker-compose down -v`.
+- To stop and remove all containers with the data saved in volumes, run `docker compose down -v`.
 
 Troubleshooting
 ---------------
