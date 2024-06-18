@@ -36,7 +36,7 @@ Environment Setup
 
    .. code-block:: none
 
-      sudo apt -y install docker.io docker-compose
+      sudo apt -y install docker.io docker-compose-plugin
       sudo usermod -aG docker $(whoami)
       sudo systemctl enable --now docker
 

@@ -22,7 +22,7 @@ Fork Documentation Project
 
 If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our |Oro documentation| repository and allow for the creation and submission of a new pull request with your modifications once you are done editing.
 
-For large volume of  updates, fixes, and enhancements please use the following process: 
+For large volume of  updates, fixes, and enhancements please use the following process:
 
 #. |Fork| a documentation repository.
 
@@ -33,7 +33,7 @@ For large volume of  updates, fixes, and enhancements please use the following p
 #. Build and test the documentation before submitting a pull request to be sure you haven't accidentally introduced any layout or formatting issues.
 
    - To build documentation, set up a local build environment by installing |Docker| and |Docker Compose|.
-   - To test your changes before you commit them, run ``docker-compose up`` in the documentation folder.
+   - To test your changes before you commit them, run ``docker compose up`` in the documentation folder.
 
    Check the generated documentation in the ``_build/html`` directory.
 
@@ -129,7 +129,7 @@ To form a bullet list, start the line with \*, +, or \- followed by whitespace:
 
         - Item C
         - Item D
-          
+
             + Item E
             + Item F
 
@@ -140,7 +140,7 @@ Preview:
 
     - Item C
     - Item D
-          
+
             + Item E
             + Item F
 
@@ -345,8 +345,8 @@ Add a New Topic
 4. To link a topic to the global documentation table of contents:
 
     a) Identify the best location for the reference to your new topic in the documentation structure.
-    b) Move the newly created file to the selected folder. 
-    c) Append the relative document name (without the rst extension) to the toctree definition in the potential parent topic. 
+    b) Move the newly created file to the selected folder.
+    c) Append the relative document name (without the rst extension) to the toctree definition in the potential parent topic.
 
 For example, when we create a new topic with additional information about price list management in the *additional-pricelist-management-info.rst* file. To include it into the document structure at the **user/back-office/sales/price-lists** level, we'll update the *index.rst* file in the *user/back-office/sales/price-lists* directory like in the following example:
 
