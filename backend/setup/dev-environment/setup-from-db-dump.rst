@@ -31,13 +31,13 @@ Prepare a Database Dump
        # oro_db - oro database
        docker exec commerce-crm-ee_pgsql_1 pg_dump --no-owner -U oro_db_user oro_db > /tmp/oro_db_dump.sql
 
-3. Default docker-compose.yml setup
+3. Default ``docker-compose.yml`` setup
 
     .. code-block:: none
 
        # oro_db_user - oro database user
        # oro_db - oro database
-       docker exec $(docker-compose ps -q pgsql) pg_dump --no-owner -U oro_db_user oro_db > /tmp/oro_db_dump.sql
+       docker exec $(docker compose ps -q pgsql) pg_dump --no-owner -U oro_db_user oro_db > /tmp/oro_db_dump.sql
 
 
 3. OroCloud
@@ -111,23 +111,23 @@ Restore a Database Dump
        docker exec commerce-crm-ee_pgsql_1 psql -U oro_db_user -d oro_db -c "CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";"
        cat /tmp/oro_db_dump.sql | docker exec -i commerce-crm-ee_pgsql_1 psql -U oro_db_user oro_db
 
-3. Default docker-compose.yml setup
+3. Default ``docker-compose.yml`` setup
 
     .. code-block:: none
 
        # oro_db_user - oro database user
        # oro_db - oro database
        # Recreate containers in order to kill all the active db sessions
-       docker-compose stop pgsql # or docker-compose down
-       docker-compose up -d
+       docker compose stop pgsql # or docker compose down
+       docker compose up -d
 
        # drop an old db first
-       docker exec $(docker-compose ps -q pgsql) psql -U oro_db_user -d postgres -c "DROP DATABASE oro_db;"
+       docker exec $(docker compose ps -q pgsql) psql -U oro_db_user -d postgres -c "DROP DATABASE oro_db;"
 
        # and recreate a fresh db
-       docker exec $(docker-compose ps -q pgsql) psql -U oro_db_user -d postgres -c "CREATE DATABASE oro_db;"
-       docker exec $(docker-compose ps -q pgsql) psql -U oro_db_user -d oro_db -c "CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";"
-       cat /tmp/oro_db_dump.sql | docker exec -i $(docker-compose ps -q pgsql) psql -U oro_db_user oro_db
+       docker exec $(docker compose ps -q pgsql) psql -U oro_db_user -d postgres -c "CREATE DATABASE oro_db;"
+       docker exec $(docker compose ps -q pgsql) psql -U oro_db_user -d oro_db -c "CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";"
+       cat /tmp/oro_db_dump.sql | docker exec -i $(docker compose ps -q pgsql) psql -U oro_db_user oro_db
 
 Prepare Application
 -------------------
