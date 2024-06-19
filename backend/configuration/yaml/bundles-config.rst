@@ -1116,6 +1116,26 @@ The default configuration for extension with alias "oro_paypal":
     oro_paypal:
         allowed_ips:          []
 
+oro_query_designer
+__________________
+
+The default configuration for extension with alias "oro_query_designer":
+
+.. code-block:: yaml
+
+    oro_query_designer:
+
+        # The configuration of entities whose associations can be used in the query designer without expanding their fields.
+        collapsed_associations:
+
+            # Example:
+            # Acme\AppBundle\Entity\User: { virtual_fields: [id], search_fields: [firstName, lastName] }
+
+            # Prototype
+            class:
+                virtual_fields:       []
+                search_fields:        []
+
 oro_report
 __________
 
